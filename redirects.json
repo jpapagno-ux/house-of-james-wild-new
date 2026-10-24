@@ -1,15 +1,87 @@
 [
-  { "source": "/land", "destination": "/stays?by=land", "permanent": true },
-  { "source": "/water", "destination": "/voyages", "permanent": true },
-  { "source": "/region/:region", "destination": "/destinations/:region", "permanent": true },
-  { "source": "/find-your-itinerary", "destination": "/overland", "permanent": true },
-  { "source": "/memoirs", "destination": "/journal", "permanent": true },
-  { "source": "/memoirs/:slug", "destination": "/journal/:slug", "permanent": true },
-  { "source": "/team", "destination": "/about/team", "permanent": true },
-  { "source": "/about", "destination": "/about/founder", "permanent": true },
-  { "source": "/booking-process", "destination": "/plan", "permanent": true },
-  { "source": "/ai-itinerary", "destination": "/plan/iggi", "permanent": true },
-  { "source": "/workshops", "destination": "/plan/workshops", "permanent": true },
-  { "source": "/agents-influencers", "destination": "/advisors", "permanent": true },
-  { "source": "/contact", "destination": "/plan", "permanent": true }
+  {
+    "source": "/land",
+    "destination": "/stays?by=land",
+    "permanent": true
+  },
+  {
+    "source": "/water",
+    "destination": "/voyages",
+    "permanent": true
+  },
+  {
+    "source": "/region/:region",
+    "destination": "/destinations/:region",
+    "permanent": true
+  },
+  {
+    "source": "/find-your-itinerary",
+    "destination": "/overland",
+    "permanent": true
+  },
+  {
+    "source": "/memoirs",
+    "destination": "/journal",
+    "permanent": true
+  },
+  {
+    "source": "/memoirs/:slug",
+    "destination": "/journal/:slug",
+    "permanent": true
+  },
+  {
+    "source": "/team",
+    "destination": "/about/team",
+    "permanent": true
+  },
+  {
+    "source": "/about",
+    "destination": "/about/founder",
+    "permanent": true
+  },
+  {
+    "source": "/booking-process",
+    "destination": "/plan",
+    "permanent": true
+  },
+  {
+    "source": "/ai-itinerary",
+    "destination": "/plan/iggi",
+    "permanent": true
+  },
+  {
+    "source": "/workshops",
+    "destination": "/plan/workshops",
+    "permanent": true
+  },
+  {
+    "source": "/agents-influencers",
+    "destination": "/advisors",
+    "permanent": true
+  },
+  {
+    "source": "/contact",
+    "destination": "/plan",
+    "permanent": true
+  },
+  {
+    "source": "/destinations/africa/seychelles-find-your-wild-in-the-indian-ocean",
+    "destination": "/destinations/africa/seychelles",
+    "permanent": true
+  },
+  {
+    "source": "/country/seychelles-find-your-wild-in-the-indian-ocean",
+    "destination": "/destinations/africa/seychelles",
+    "permanent": true
+  },
+  {
+    "source": "/destinations/africa/masai-mara",
+    "destination": "/destinations/africa/kenya",
+    "permanent": true
+  },
+  {
+    "source": "/country/masai-mara",
+    "destination": "/destinations/africa/kenya",
+    "permanent": true
+  }
 ]

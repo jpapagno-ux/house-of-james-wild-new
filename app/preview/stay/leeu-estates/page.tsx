@@ -1,5 +1,8 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { LiveRates } from "@/components/record/Pricing";
+import { GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
+import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
+import { zaOthers } from "@/lib/content/preview/za-ledger";
 import { CardRail, FounderStamp, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, WhyChose, type Room } from "@/components/record/Sections";
 import { buildMetadata } from "@/lib/seo";
 
@@ -43,12 +46,13 @@ export default function LeeuEstatesPreview() {
       <main id="main">
         <RecordHero
           image={{ url: `${B44}/9cf531c35_a37c8b73b_69d153067a3dcbb4cc167d9d_6d3a1ea3.webp`, alt: "Leeu Estates: the manor house and gardens beneath the Franschhoek mountains" }}
-          eyebrow="Franschhoek Valley · Western Cape · STY-2026-000148"
+          eyebrow="Wild & Co Stays · Franschhoek Valley · Western Cape · STY-2026-000148"
           title="Leeu Estates"
           tagline="Where vineyard luxury, culinary excellence, and meaningful escape meet beneath the mountains of the Cape Winelands."
           stamp={<FounderStamp kind="Founder inspected" year={2026} size={140} />}
+          glance={<GlanceBar glance={{ price: { amount: "US$1,589", basis: "live · per night, 17–20 Nov · Studio Room" }, facts: [["Best months", "October to April"], ["The estate", "Rooms, suites & whole houses"], ["Fly into", "Cape Town (CPT) · 55 min"]], cta: { label: "Check live rates", href: "#live-rates" } }} />}
         />
-        <RecordNav items={[["Overview", "overview"], ["Why we chose it", "why"], ["Live rates", "live-rates"], ["Rooms", "rooms"], ["Cottages & houses", "houses"], ["The collection", "collection"]]} />
+        <RecordNav items={[["In short", "overview"], ["Why we chose it", "why"], ["Live rates", "live-rates"], ["Rooms", "rooms"], ["Cottages & houses", "houses"], ["Location", "location"], ["The collection", "collection"]]} cta="Check live rates" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <Overview
             quote="Come for the wine. Stay for the stillness. Leave transformed by the landscape."
@@ -81,6 +85,8 @@ export default function LeeuEstatesPreview() {
           />
           <RoomsLedger id="rooms" title="Rooms & Suites in the Manor" intro="Every room category on file with its registry “from” price. The live mark shows the room the engine priced for the search above." rooms={ROOMS} footnote="Registry “from” prices are in South African rand (ZAR) per room, per night. The live band above quotes the engine in US dollars for your exact dates." />
           <RoomsLedger id="houses" eyebrow="Taken whole · Gatherings" title="Cottages & Houses for the Family" rooms={HOUSES} icon="tree-ring" footnote="Whole-property rates in ZAR per night. Bedrooms and sleeping plans are confirmed with your quote." />
+          <LocationBlock chart={CHART_SOUTH_AFRICA} name="Leeu Estates" pin={{ lat: -33.9156, lng: 19.1127 }} others={zaOthers("Leeu Estates")} heading="Franschhoek, Cape Winelands"
+            rows={[["Area", "Franschhoek Valley, Western Cape, South Africa"], ["Coordinates", "33° 54′ 56″ S, 19° 06′ 46″ E"], ["Airport", "Cape Town International (CPT)"], ["Getting there", "About 55 minutes by road from Cape Town airport."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
           <CardRail id="collection" eyebrow="More from the Leeu Collection" title="The Rest of the Collection" cards={[
             { name: "Leeu House", href: "/stays/leeu-house", image: `${B44}/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg`, meta: "Franschhoek village", line: "A handful of rooms with the village at the door." },
             { name: "Le Quartier Français", href: "/stays/le-quartier-francais", meta: "Franschhoek", line: "The original Leeu house in the village." },
@@ -91,6 +97,7 @@ export default function LeeuEstatesPreview() {
           </PreviewNote>
         </div>
       </main>
+      <RecordActionBar price="US$1,589" basis="/ night, live" cta="Live rates" />
     </>
   );
 }

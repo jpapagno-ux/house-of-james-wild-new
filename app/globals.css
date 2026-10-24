@@ -37,6 +37,10 @@
     transition: background 0.2s ease, color 0.2s ease;
   }
   .ledger-btn:hover { background: #8B2525; color: #F4F1ED; }
+  .ledger-btn--solid { background: #8B2525; color: #F4F1ED; padding: 12px 22px; }
+  .ledger-btn--solid:hover { background: #6E1C1C; border-color: #6E1C1C; }
+  .ledger-btn-ghost { color: #2D2A26; font-family: 'EB Garamond', Georgia, serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
+  .ledger-btn-ghost:hover { color: #8B2525; border-color: #8B2525; }
 }
 
 /* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */

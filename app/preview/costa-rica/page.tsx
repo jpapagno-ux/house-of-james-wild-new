@@ -6,6 +6,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import { Reveal } from "@/components/ledger/Motion";
 import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart from "@/components/destination/LedgerChart";
+import Compass from "@/components/destination/Compass";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import { CHART_COSTA_RICA, projectCostaRica } from "@/lib/charts/costa-rica";
 import { COSTA_RICA as D } from "@/lib/content/preview/costa-rica";
@@ -152,6 +153,9 @@ export default function CostaRicaPreview() {
           </Reveal>
 
           {/* Featured stays */}
+          {/* The Compass: who, which Costa Rica, when → shortlist, hidden place, hand-over */}
+          <Compass country={D.name} stays={stays.map((x) => ({ slug: x.slug, name: x.name, kind: x.kind, area: x.area, tagline: x.tagline, bestMonths: x.bestMonths, image: x.image }))} advisorHref="/advisors?country=costa-rica" />
+
           <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow">Featured stays · from Wild Earth Stays</p>
             <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {D.name}</h2>
@@ -219,7 +223,7 @@ export default function CostaRicaPreview() {
                 </div>
               </div>
               <p className="mt-4 text-[15px] ledger-muted">The advisor feed fills this panel from the library: each advisor&rsquo;s profile, the countries they know and how to reach them.</p>
-              <Link href="/plan" className="ledger-btn mt-5">Plan {D.name} with James</Link>
+              <div className="mt-5 flex flex-wrap items-center gap-4"><Link href="/plan" className="ledger-btn">Plan {D.name} with James</Link><a href="#compass" className="ledger-btn-ghost">Or take the Compass</a></div>
             </div>
             <div className="ledger-paper p-6 md:p-8 h-full">
               <p className="ledger-eyebrow ledger-crimson">Travel Notes</p>

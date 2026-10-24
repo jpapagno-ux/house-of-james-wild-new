@@ -4,7 +4,11 @@ import { ArrowRight, BedDouble, Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { Reveal } from "@/components/ledger/Motion";
 import { FieldIcon } from "@/components/ledger/FieldIcon";
-import { Conservation, Experiences, Features, GalleryStrip, Overview, Practical, PreviewNote, RecordHero, RecordNav, SectionHead, WhyChose } from "@/components/record/Sections";
+import { CardRail, Conservation, Experiences, Features, IncludedLists, Overview, Practical, PreviewNote, RecordHero, RecordNav, SectionHead, WhyChose, type RecordCard } from "@/components/record/Sections";
+import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
+import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
+import { zaOthers } from "@/lib/content/preview/za-ledger";
+import { ZA_FAVOURITES } from "@/lib/content/preview/za-favourites";
 import { SAMPLE_LONDOLOZI as L } from "@/lib/content/preview/londolozi";
 import { buildMetadata } from "@/lib/seo";
 
@@ -39,13 +43,28 @@ const CAMPS: { slug: string; name: string; summary: string; units: string; image
   ] },
 ];
 
+// Experience + Feature records (library, imported from wildearthstays.com).
+// Two Feature records are unfinished ("Need Text") and are left out.
+const EXPERIENCES: RecordCard[] = [
+  { name: "Game Drives", meta: "Dawn & after dark", image: `${CDN}/6840fe7f8412447d2b246a3c_Londolozi-Safari2.webp`, alt: "Leopard sighting on a Londolozi game drive", body: "Expert guides reveal the reserve's wildlife, early morning or after dark, with close, unhurried encounters with lions, leopards, elephants and more." },
+  { name: "Photographic Lab", meta: "Studio · On camp", image: `${CDN}/6840fd2a3473bb1dbe01f706_Londolozi-Photo-Studio.webp`, alt: "The Londolozi photographic studio", body: "Print your favourite photographs on canvas, or rent cameras and get expert advice for the perfect shot." },
+  { name: "Healing House", meta: "Wellness", image: `${CDN}/6840fbf74c78174aee61ca70_Londolozi-Healing-House.webp`, alt: "The Healing House at Londolozi", body: "Deep rest, nourishing food, forest walks, spa treatments and yoga on your private deck." },
+  { name: "Village Experience", meta: "Community", image: `${CDN}/6840ff2006093bb70a48a198_Londolozi-Village-Experience.webp`, alt: "Community projects in the Londolozi village", body: "Meet the people who call this wilderness home and see how conservation and culture thrive together." },
+];
+const FEATURES: RecordCard[] = [
+  { name: "Cuisine", meta: "Boma to bush", image: `${CDN}/684100764c78174aee63a887_Londolozi-Cuisine%20(1).webp`, alt: "Dining on deck at Londolozi", body: "From boma feasts to safari stops: on deck, communal and in open bush settings." },
+  { name: "Interconnecting Suites", meta: "Families", image: `${CDN}/68410091da9d44fe53210425_Londolozi-Founders-Camp-Family-Suite-7-Elsa-Young-Low-Res-copy.webp`, alt: "Family suite at Founders Camp, Londolozi", body: "Family-friendly suites that connect, at Founders Camp." },
+  { name: "Luxury Family Safari", meta: "Children welcome", image: `${CDN}/68410113c92ddbc6ab50f61d_Londolozi-Kid-Safari%20(1).webp`, alt: "Children on safari at Londolozi" },
+];
+
 export default function LondoloziPreview() {
   return (
     <>
       <SiteHeader overlay />
       <main id="main">
-        <RecordHero image={L.hero} eyebrow={`Wild & Co Safaris · Sabi Sand Game Reserve · ${L.ledgerId}`} title={L.name} tagline="Four camps, private suites and family villas on one reserve" />
-        <RecordNav items={[["Overview", "overview"], ["The camps", "camps"], ["Why we chose it", "why"], ["On safari", "experiences"], ["Only here", "features"], ["Conservation", "conservation"], ["Practical", "practical"]]} />
+        <RecordHero image={L.hero} eyebrow={`Wild & Co Safaris · Sabi Sand Game Reserve · ${L.ledgerId}`} title={L.name} tagline="Four camps, private suites and family villas on one reserve"
+          glance={<GlanceBar glance={{ price: { amount: "US$1,386", basis: "per person, per night · Varty Camp" }, facts: [["Best months", "May to October"], ["The reserve", "5 camps + private villas"], ["Fly into", "Kruger Mpumalanga (MQP)"]], photos: L.gallery.length, cta: { label: "Choose a camp", href: "#camps" } }} />} />
+        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["The camps", "camps"], ["Reserve rates", "rates"], ["On safari", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["Practical", "practical"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <Overview
             quote={L.introQuote}
@@ -54,7 +73,10 @@ export default function LondoloziPreview() {
             paragraphs={L.overview}
           />
 
-          {/* The camps: each a child stay with its own rooms */}
+          <GalleryMosaic images={L.gallery} title={L.name} />
+          <WhyChose eyebrow={L.whyStay.eyebrow} title={L.whyStay.title} blocks={L.whyStay.paragraphs.map((b) => ({ body: b }))} image={{ url: L.whyStay.image, alt: L.whyStay.imageAlt }}
+            status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · no founder visit filed, so no founder stamp</p>} />
+          {/* Core · the camps: each a child stay with its own rooms */}
           <section id="camps" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32">
             <SectionHead eyebrow="The camps · each with its own page" title="Five Camps, One Reserve" intro="Choose the camp first, then the room. Each camp has its own character, rooms, rates and host, and its own page in the Ledger." icon="tree-ring" />
             <nav aria-label="Camps" className="mt-6 flex flex-wrap gap-2">
@@ -103,19 +125,27 @@ export default function LondoloziPreview() {
             </div>
           </section>
 
-          <WhyChose eyebrow={L.whyStay.eyebrow} title={L.whyStay.title} blocks={L.whyStay.paragraphs.map((b) => ({ body: b }))} image={{ url: L.whyStay.image, alt: L.whyStay.imageAlt }}
-            status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · no founder visit filed, so no founder stamp</p>} />
-          <Experiences eyebrow="On safari" title="What the Reserve Programs" items={L.adventures.bullets.map((b) => ({ name: b }))} icon="mountain-sun" />
-          <Features title={L.onlyHere.title} eyebrow="Only here" body={L.onlyHere.paragraphs[0]} icon="sun" />
+          {/* Core · what every camp rate carries */}
+          <section id="rates" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32">
+            <SectionHead eyebrow="Reserve rates · per person, per night" title="What a Londolozi Rate Includes" intro="Every camp is priced per person, per night, fully inclusive of the safari. The lines below apply to all five camps; each camp page adds its own." />
+            <div className="mt-6"><IncludedLists included={["All meals and local drinks", "Two game drives a day with a ranger and Shangaan tracker", "Guided bush walks", "Laundry and Wi-Fi", "Road transfers from the Londolozi airstrip"]} excluded={["Flights to the Londolozi airstrip or MQP", "Sabi Sand conservation levy (paid on arrival)", "Premium wines and spirits", "Healing House treatments", "Gratuities"]} /></div>
+            <p className="mt-5 text-[13px] ledger-muted max-w-3xl">Sample lines to confirm against the Londolozi rate sheet. Live registry rates, re-verified at enquiry, never &ldquo;on request&rdquo;.</p>
+          </section>
+          <Experiences eyebrow="On safari" title="Four Ways to Spend a Day Here" intro="The drives come first, always. The rest of the day is yours." items={EXPERIENCES} icon="mountain-sun" />
+          <Features eyebrow="Reserve features" title="What Makes the Reserve" cards={FEATURES} onlyHere={{ title: L.onlyHere.title, paragraphs: L.onlyHere.paragraphs.slice(0, 2) }} icon="frond" />
+          <LocationBlock chart={CHART_SOUTH_AFRICA} name="Londolozi" pin={{ lat: -24.801461, lng: 31.498252 }} others={zaOthers("Londolozi Reserve")} heading="Sabi Sand, beside the Kruger"
+            rows={[["Reserve", "Sabi Sand Game Reserve, Mpumalanga, South Africa"], ["Coordinates", "-24.801461, 31.498252"], ["Airports", "Kruger Mpumalanga (MQP) for the western sector, Skukuza for the south, Hoedspruit Eastgate for the north"], ["Getting there", "Fly to MQP or Skukuza and transfer by road, or take a light aircraft to the Londolozi airstrip."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
           <Conservation eyebrow={L.sustainability.eyebrow} title={L.sustainability.titleA} subtitle={L.sustainability.titleB} intro={L.sustainability.intro} body={L.sustainability.body} image={{ url: L.adventures.image, alt: L.adventures.imageAlt }} />
-          <GalleryStrip images={L.gallery} />
           <Practical rows={L.practical as [string, string][]} />
+          <CardRail id="favourites" eyebrow="James's favourites in South Africa" title="Where James Would Go Back" cards={ZA_FAVOURITES} />
           <PreviewNote>
             <p>The five camps live in the library today as room records under the reserve; filing each as its own child stay (approved) gives every camp its own page, host and offers. The Private Granite Suites and Private Villas have duplicate placeholder room records to tidy.</p>
-            <p>The reserve&rsquo;s own hero image field is corrupted in the library, so the hero uses the first gallery image.</p>
+            <p>The reserve&rsquo;s own hero image field is corrupted in the library, so the hero uses the first gallery image. No host is filed for Londolozi, so the host panel is switched off; no FAQs are on file, so the practical ledger closes the page. &ldquo;Included / not included&rdquo; lines are samples to confirm.</p>
+            <p>Two Londolozi Feature records are unfinished (&ldquo;Need Text&rdquo;), so three features show.</p>
           </PreviewNote>
         </div>
       </main>
+      <RecordActionBar price="US$1,386" basis="pp / night" />
     </>
   );
 }

@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 export default function MobileActionBar() {
   const item = "flex flex-col items-center justify-center gap-1 ledger-eyebrow !text-[9.5px] !text-ink";
   return (
-    <nav aria-label="Quick actions" className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-paper/95 backdrop-blur border-t ledger-border pb-[env(safe-area-inset-bottom)]">
+    <nav aria-label="Quick actions" className="lg:hidden [body:has(#record-bar)_&]:hidden fixed bottom-0 inset-x-0 z-30 bg-paper/95 backdrop-blur border-t ledger-border pb-[env(safe-area-inset-bottom)]">
       <ul className="grid grid-cols-4 h-14">
         <li><Link href="/stays" className={item}><BedDouble className="w-5 h-5" strokeWidth={1.25} />Stays</Link></li>
         <li><Link href="/destinations" className={item}><Compass className="w-5 h-5" strokeWidth={1.25} />Destinations</Link></li>

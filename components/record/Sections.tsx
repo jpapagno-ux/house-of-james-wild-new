@@ -29,19 +29,22 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 }
 
 /* Hero ----------------------------------------------------------------- */
-export function RecordHero({ image, eyebrow, title, tagline, stamp, height = "h-[82svh] min-h-[580px]" }: { image: Img; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; height?: string }) {
+export function RecordHero({ image, eyebrow, title, tagline, stamp, glance, height = "h-[82svh] min-h-[620px]" }: { image: Img; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; height?: string }) {
   return (
     <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
       <Image src={image.url} alt={image.alt} fill priority sizes="100vw" className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
-      <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end justify-between gap-8 pb-14">
-        <div>
-          <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
-          <h1 className="ledger-display text-5xl md:text-7xl mt-3 leading-[1.05]">{title}</h1>
-          {tagline && <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
+      <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
+        <div className="flex items-end justify-between gap-8">
+          <div>
+            <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
+            <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
+            {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
+          </div>
+          {stamp && <div className="hidden md:block shrink-0 rounded-full bg-paper/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]">{stamp}</div>}
         </div>
-        {stamp && <div className="hidden md:block shrink-0 rounded-full bg-paper/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]">{stamp}</div>}
+        {glance && <div className="mt-7">{glance}</div>}
       </div>
       <div id="hero-end" className="absolute bottom-0" />
     </section>
@@ -56,11 +59,13 @@ export function FounderStamp({ kind, year, volume = "stays", size = 132 }: { kin
 export function RecordNav({ items, cta = "Enquire" }: { items: [string, string][]; cta?: string }) {
   return (
     <nav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[105px] z-30">
-      <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6 overflow-x-auto whitespace-nowrap">
-        {items.map(([label, id]) => (
-          <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{label}</a>
-        ))}
-        <Link href="/plan" className="ml-auto ledger-btn !h-8 !px-4 shrink-0">{cta}</Link>
+      <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
+        <div className="flex-1 min-w-0 flex items-center gap-5 xl:gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,black_92%,transparent)]">
+          {items.map(([label, id]) => (
+            <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{label}</a>
+          ))}
+        </div>
+        <Link href="/plan" className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0">{cta}</Link>
       </div>
     </nav>
   );
@@ -76,7 +81,12 @@ export function Overview({ quote, answer, facts, paragraphs }: { quote?: string;
           <p className="ledger-eyebrow ledger-crimson">In short</p>
           <p className="mt-2 text-[17px] leading-relaxed">{answer}</p>
         </section>
-        {paragraphs?.map((p) => <p key={p.slice(0, 24)} className="mt-5 text-[16px] leading-relaxed ledger-muted">{p}</p>)}
+        {paragraphs && paragraphs.length > 0 && (
+          <details className="mt-6 group border-t ledger-rule pt-4">
+            <summary className="cursor-pointer list-none ledger-eyebrow ledger-crimson flex items-center gap-3">Read the full entry <span className="group-open:rotate-45 transition-transform text-lg leading-none">+</span></summary>
+            {paragraphs.map((p) => <p key={p.slice(0, 24)} className="mt-4 text-[16px] leading-relaxed ledger-muted">{p}</p>)}
+          </details>
+        )}
       </div>
       <dl className="border-t ledger-rule text-[15px] ledger-paper px-5">
         {facts.map(([k, v]) => (
@@ -121,10 +131,10 @@ export function WhyChose({ id = "why", eyebrow = "Why it earned its place", titl
 }
 
 /* Rooms -------------------------------------------------------------------- */
-export type Room = { name: string; image?: string | null; sleeps?: number | string | null; beds?: string | null; size?: number | null; units?: number | null; plunge?: boolean; price?: number | null; currency?: string; basis?: string; note?: string; included?: string[]; live?: boolean };
+export type Room = { name: string; image?: string | null; sleeps?: number | string | null; beds?: string | null; size?: number | null; units?: number | null; plunge?: boolean; price?: number | null; currency?: string; basis?: string; note?: string; included?: string[]; excluded?: string[]; live?: boolean };
 const money = (n: number, c = "USD") => (c === "ZAR" ? `R${n.toLocaleString("en-US")}` : `US$${n.toLocaleString("en-US")}`);
 
-export function RoomsLedger({ id = "rooms", eyebrow = "Rooms & suites", title, intro, rooms, icon = "tree-ring", footnote }: { id?: string; eyebrow?: string; title: string; intro?: string; rooms: Room[]; icon?: FieldIconName; footnote?: string }) {
+export function RoomsLedger({ id = "rooms", eyebrow = "Rooms & suites", title, intro, rooms, icon = "tree-ring", footnote, unit = "room" }: { id?: string; eyebrow?: string; title: string; intro?: string; rooms: Room[]; icon?: FieldIconName; footnote?: string; unit?: string }) {
   return (
     <section id={id} className={SECTION}>
       <SectionHead eyebrow={eyebrow} title={title} icon={icon} intro={intro} />
@@ -160,13 +170,18 @@ export function RoomsLedger({ id = "rooms", eyebrow = "Rooms & suites", title, i
                   {r.note && <p className="mt-4 ledger-hand text-xl leading-snug">{r.note}</p>}
                   {r.included && r.included.length > 0 && (
                     <details className="mt-4 border-t ledger-border pt-3 group">
-                      <summary className="cursor-pointer list-none ledger-eyebrow ledger-crimson flex items-center justify-between">What&rsquo;s included <span className="group-open:rotate-45 transition-transform text-lg leading-none">+</span></summary>
+                      <summary className="cursor-pointer list-none ledger-eyebrow ledger-crimson flex items-center justify-between">Included{r.excluded?.length ? " · not included" : ""} <span className="group-open:rotate-45 transition-transform text-lg leading-none">+</span></summary>
                       <ul className="mt-3 grid sm:grid-cols-2 gap-x-4 gap-y-1.5 text-[13.5px]">
                         {r.included.map((x) => <li key={x} className="flex gap-2"><Check className="w-3.5 h-3.5 mt-1 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}
                       </ul>
+                      {r.excluded && r.excluded.length > 0 && (
+                        <ul className="mt-3 pt-3 border-t ledger-rule grid sm:grid-cols-2 gap-x-4 gap-y-1.5 text-[13.5px] ledger-muted">
+                          {r.excluded.map((x) => <li key={x} className="flex gap-2"><X className="w-3.5 h-3.5 mt-1 shrink-0" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}
+                        </ul>
+                      )}
                     </details>
                   )}
-                  <div className="mt-auto pt-5"><Link href="/plan" className="ledger-btn">Enquire about this room</Link></div>
+                  <div className="mt-auto pt-5"><Link href="/plan" className="ledger-btn">Enquire about this {unit}</Link></div>
                 </div>
               </article>
             </Reveal>

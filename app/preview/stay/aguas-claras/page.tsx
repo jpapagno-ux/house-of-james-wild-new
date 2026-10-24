@@ -1,10 +1,10 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import HostPanel from "@/components/record/HostPanel";
-import LedgerChart from "@/components/destination/LedgerChart";
+import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { OfferCard } from "@/components/record/Pricing";
-import { CardRail, Conservation, Experiences, Features, GalleryStrip, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, WhyChose, type RecordCard, type Room } from "@/components/record/Sections";
-import { CHART_COSTA_RICA, projectCostaRica } from "@/lib/charts/costa-rica";
+import { CardRail, Conservation, Experiences, Features, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, WhyChose, type RecordCard, type Room } from "@/components/record/Sections";
+import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { SAMPLE_AGUAS as A } from "@/lib/content/preview/aguas-claras";
 import { SAMPLE_STAY_PROMOTION as P } from "@/lib/content/preview/promotion-aguas";
 import { COSTA_RICA } from "@/lib/content/preview/costa-rica";
@@ -19,11 +19,13 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({ title: "Aguas Claras, Playa Chiquita: Vetted Caribbean Hideaway (preview)", description: "Preview of the James Wild & Co stay template.", path: "/preview/stay/aguas-claras", noindex: true });
 
 const INCLUDED = ["A-la-carte breakfast", "High-speed WiFi", "Concierge & tour planning", "Beach bicycles", "Daily housekeeping & turndown", "Pool, yoga shala & gardens", "DaLime Beach Club via private gate", "Theme nights, bonfires, yoga & Afro-Caribbean experiences", "Organic toiletries, robes", "A/C & ceiling fans"];
+// Sample "not included" lines, to confirm against the partner rate sheet.
+const EXCLUDED = ["Lunch and dinner", "Airport transfers", "Spa treatments", "Guided tours and excursions", "Taxes and service (13%)"];
 const ROOMS: Room[] = [
-  { name: "Pavlova Suites", image: A.rooms[0].image, sleeps: 2, beds: "1 King (1 of 6 has 2 doubles)", size: 30, units: 6, price: 460, included: INCLUDED },
-  { name: "1-Bedroom Bungalow", image: A.rooms[1].image, sleeps: 2, beds: "1 King or 2 Singles", size: 50, units: 3, price: 610, included: INCLUDED },
-  { name: "2-Bedroom Luxury Bungalow", image: A.rooms[3].image, sleeps: 4, beds: "1 King & 2 Singles", units: 10, price: 953, included: INCLUDED },
-  { name: "2-Bedroom Deluxe Bungalow", image: A.rooms[2].image, sleeps: 4, beds: "1 King + 2 Singles, 2 en-suites", size: 74, units: 2, plunge: true, price: 1100, included: INCLUDED },
+  { name: "Pavlova Suites", image: A.rooms[0].image, sleeps: 2, beds: "1 King (1 of 6 has 2 doubles)", size: 30, units: 6, price: 460, included: INCLUDED, excluded: EXCLUDED },
+  { name: "1-Bedroom Bungalow", image: A.rooms[1].image, sleeps: 2, beds: "1 King or 2 Singles", size: 50, units: 3, price: 610, included: INCLUDED, excluded: EXCLUDED },
+  { name: "2-Bedroom Luxury Bungalow", image: A.rooms[3].image, sleeps: 4, beds: "1 King & 2 Singles", units: 10, price: 953, included: INCLUDED, excluded: EXCLUDED },
+  { name: "2-Bedroom Deluxe Bungalow", image: A.rooms[2].image, sleeps: 4, beds: "1 King + 2 Singles, 2 en-suites", size: 74, units: 2, plunge: true, price: 1100, included: INCLUDED, excluded: EXCLUDED },
 ];
 const G = A.gallery;
 // Library records (Experience / Feature collections, imported from
@@ -42,31 +44,41 @@ const FEATURES: RecordCard[] = [
   { name: "Beach Days", meta: "Included", image: `${WF}/6835e39917e50c7293c6983b_DALIMEFOODS_B_-200-41.jpg`, alt: "Beach chairs on Playa Chiquita", body: "Chill by the ocean with complimentary beach chairs, and a bike to get you there." },
 ];
 
-const p = projectCostaRica(9.643245, -82.720328);
 const nearby = COSTA_RICA.ledger.items.filter((s) => s.slug !== "aguas-claras" && s.image && s.tagline);
+const others = COSTA_RICA.ledger.items.filter((s) => s.lat != null && s.slug !== "aguas-claras").map((s) => ({ lat: s.lat as number, lng: s.lng as number }));
 
 export default function AguasClarasPreview() {
   const offer = P.card;
+  const photos = [{ url: A.hero.url, alt: A.hero.alt }, ...G];
   return (
     <>
       <SiteHeader overlay />
       <main id="main">
-        <RecordHero image={{ url: A.hero.url, alt: A.hero.alt }} eyebrow={`${A.ledger.location} · ${A.ledger.id}`} title={A.ledger.name} tagline={A.ledger.tagline} />
-        <RecordNav items={[["Overview", "overview"], ["Why we chose it", "why"], ["Rooms", "rooms"], ["Offer", "offer"], ["Experiences", "experiences"], ["Features", "features"], ["Conservation", "conservation"], ["Meet your host", "host"], ["Map", "map"], ["FAQ", "faq-heading"]]} />
+        {/* 01 · Hero + glance: name, place, price, best months, size, the two actions */}
+        <RecordHero image={{ url: A.hero.url, alt: A.hero.alt }} eyebrow={`Wild & Co Stays · ${A.ledger.location} · ${A.ledger.id}`} title={A.ledger.name} tagline={A.ledger.tagline}
+          glance={<GlanceBar glance={{ price: { amount: "US$460", basis: "per room, per night" }, facts: [["Best months", "May to November"], ["The stay", "12 rooms · on the beach"], ["Fly into", "San José (SJO)"]], photos: photos.length }} />} />
+        {/* 02 · Sticky record nav */}
+        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["Rooms & rates", "rooms"], ["Offer", "offer"], ["Experiences", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["Host", "host"], ["FAQ", "faq-heading"]]} cta="Check your dates" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          {/* 03 · In short (the answer block) */}
           <Overview
             quote={A.ledger.introQuote}
-            answer="Aguas Claras is a 12-room art-filled hideaway directly on Playa Chiquita, near Puerto Viejo on Costa Rica's south Caribbean coast. Rooms run from Pavlova suites to two-bedroom bungalows with plunge pools, from US$460 a night. Best May to November; fly into San José (SJO)."
-            facts={[["Ledger ID", A.ledger.id], ["Type", "Boutique hotel · 12 rooms"], ["Best months", "May to November"], ["Fly into", "San José (SJO)"], ["From", "US$460 per room, per night"], ["Best for", "Honeymoon · family · solo · adventure"]]}
+            answer="Aguas Claras is a 12-room art-filled hideaway directly on Playa Chiquita, near Puerto Viejo on Costa Rica's south Caribbean coast. Rooms run from Pavlova suites to two-bedroom bungalows with plunge pools, from US$460 a night with breakfast. Best May to November; fly into San José (SJO)."
+            facts={[["Ledger ID", A.ledger.id], ["Type", "Boutique hotel · 12 rooms"], ["Best months", "May to November"], ["Fly into", "San José (SJO)"], ["From", "US$460 per room, per night"], ["Rates", "Fixed · partner rate sheet"], ["Best for", "Honeymoon · family · solo · adventure"]]}
             paragraphs={A.staysContent}
           />
+          {/* 04 · Photos */}
+          <GalleryMosaic images={photos} title={A.ledger.name} />
+          {/* 05 · Why James chose it */}
           <WhyChose
             title="Why Aguas Claras Is in the Ledger"
             status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · in the Ledger since August 2026 · no founder visit filed yet, so no founder stamp</p>}
             blocks={A.whyStay}
             image={{ url: G[3].url, alt: G[3].alt }}
           />
-          <RoomsLedger title="Four Ways to Stay on Playa Chiquita" intro="Every room category on file, with its published “from” price per room, per night. Per-room seasonal prices will sit in the same place." rooms={ROOMS} footnote="“From” prices are the published rates in the house rate registry (USD, per room, per night, before tax). Your dates are quoted live before anything is booked." />
+          {/* 06 · Core: rooms & rates, with what's included and not */}
+          <RoomsLedger title="Four Ways to Stay on Playa Chiquita" intro="Every room category on file, with its published “from” price per room, per night, and what the rate does and doesn't carry." rooms={ROOMS} footnote="Fixed rates from the partner rate sheet (USD, per room, per night, before tax). Your dates are quoted live before anything is booked." />
+          {/* 07 · Offer (switch on in the library) */}
           <OfferCard
             offer={{
               id: "WAN-2026-014",
@@ -84,47 +96,30 @@ export default function AguasClarasPreview() {
               exclusive: "Stay five nights or more and the house adds one more night, with our compliments. (Sample line for the exclusive field.)",
             }}
           />
+          {/* 08 · Experiences (max 4) */}
           <Experiences title="Four Ways to Spend a Day Here" intro="Reef in the morning, refuge trails after lunch, the beach club after dark. Four picks from the experiences on file for Aguas Claras." items={EXPERIENCES} icon="wave" />
+          {/* 09 · Features (max 4) + only here */}
           <Features title="What Makes the Stay" body={A.features.body} cards={FEATURES} onlyHere={{ title: A.onlyHere.title, paragraphs: A.onlyHere.paragraphs }} icon="coral" />
+          {/* 10 · Location & getting there */}
+          <LocationBlock chart={CHART_COSTA_RICA} name="Aguas Claras" pin={{ lat: 9.643245, lng: -82.720328 }} others={others} heading="Playa Chiquita, South Caribbean Coast"
+            rows={[["Address", A.facts.address], ["Coordinates", A.facts.coordinates], ["Airport", A.facts.airportName], ["Getting there", A.facts.airportDirections]]} note="Faint pins are the other stays in the Ledger in Costa Rica." />
+          {/* 11 · Conservation */}
           <Conservation eyebrow="People + planet" title={`${A.peoplePlanet.titleA} ${A.peoplePlanet.titleItalic} ${A.peoplePlanet.titleB}`} intro={A.peoplePlanet.intro} body={A.peoplePlanet.body} />
-          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10">
-            <HostPanel state="not_linking" stayName={A.ledger.name} />
-          </div>
-
-          {/* Location map */}
-          <section id="map" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start" aria-labelledby="map-heading">
-            <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
-              <LedgerChart title="Where Aguas Claras sits in Costa Rica" />
-              <svg viewBox={`0 0 ${CHART_COSTA_RICA.width} ${CHART_COSTA_RICA.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">
-                {COSTA_RICA.ledger.items.filter((s) => s.lat != null && s.slug !== "aguas-claras").map((s) => { const q = projectCostaRica(s.lat as number, s.lng as number); return <circle key={s.id} cx={q.x} cy={q.y} r="6" fill="#8B2525" fillOpacity="0.3" stroke="#F4F1ED" strokeWidth="2" />; })}
-                <circle cx={p.x} cy={p.y} r="30" fill="none" stroke="#8B2525" strokeWidth="2" className="ledger-pin-pulse" />
-                <circle cx={p.x} cy={p.y} r="12" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" />
-                <text x={p.x - 20} y={p.y - 24} textAnchor="end" fontFamily="'Playfair Display', serif" fontSize="22" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">Aguas Claras</text>
-              </svg>
-            </div>
-            <div>
-              <p className="ledger-eyebrow">Location</p>
-              <h2 id="map-heading" className="ledger-display text-[1.75rem] md:text-3xl mt-2">Playa Chiquita, South Caribbean Coast</h2>
-              <dl className="mt-5 border-t ledger-rule text-[15px]">
-                {[["Address", A.facts.address], ["Coordinates", A.facts.coordinates], ["Airport", A.facts.airportName], ["Getting there", A.facts.airportDirections]].map(([k, v]) => (
-                  <div key={k} className="py-3 border-b ledger-rule"><dt className="ledger-eyebrow">{k}</dt><dd className="mt-1">{v}</dd></div>
-                ))}
-              </dl>
-              <p className="mt-4 text-[13px] ledger-muted">Faint pins are the other stays in the Ledger in Costa Rica.</p>
-            </div>
-          </section>
-
-          <CardRail id="nearby" eyebrow="James's favourites & more in Costa Rica" title="Also in the Ledger in Costa Rica" cards={nearby.map((s) => ({ name: s.name, href: `/stays/${s.slug}`, image: s.image, meta: `${s.kind}${s.area ? ` · ${s.area}` : ""}`, line: s.tagline }))} />
-          <GalleryStrip images={G.slice(0, 9)} />
+          {/* 12 · Meet your host (switch) */}
+          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state="not_linking" stayName={A.ledger.name} /></div>
+          {/* 13 · FAQ */}
           <FaqBlock faqs={A.faqs.map((f) => ({ q: f.question, a: f.answer }))} title="Questions About Aguas Claras" />
+          {/* 14 · More from the brand / James's favourites nearby */}
+          <CardRail id="nearby" eyebrow="James's favourites & more in Costa Rica" title="Also in the Ledger in Costa Rica" cards={nearby.map((s) => ({ name: s.name, href: `/stays/${s.slug}`, image: s.image, meta: `${s.kind}${s.area ? ` · ${s.area}` : ""}`, line: s.tagline }))} />
 
           <PreviewNote>
-            <p>The Time Rewarded offer (WAN-2026-014) is switched off in the library; it&rsquo;s shown here so you can review it. The exclusive line is a sample.</p>
-            <p>Experiences and features are the library&rsquo;s own records (8 experiences and 5 features on file; four of each shown). They are matched to Aguas Claras by name only, because their stay links are empty, and several reuse the same photo, so the four were picked to avoid repeats. No founder favourites are filed in Costa Rica, so the rail shows the other Costa Rica stays.</p>
+            <p>The Time Rewarded offer (WAN-2026-014) is switched off in the library; it&rsquo;s shown here so you can review it. The exclusive line and the &ldquo;not included&rdquo; room lines are samples to confirm against the rate sheet.</p>
+            <p>Experiences and features are the library&rsquo;s own records (8 experiences and 5 features on file; four of each shown). They are matched to Aguas Claras by name only, because their stay links are empty. No founder favourites are filed in Costa Rica, so the rail shows the other Costa Rica stays.</p>
             <p>The library holds two Pavlova Suites records (US$460 and US$475); the page uses the fuller one. The duplicate needs removing.</p>
           </PreviewNote>
         </div>
       </main>
+      <RecordActionBar price="US$460" basis="/ night" cta="Check dates" />
     </>
   );
 }

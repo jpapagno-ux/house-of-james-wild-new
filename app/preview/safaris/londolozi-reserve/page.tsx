@@ -1,10 +1,11 @@
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BedDouble, Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { Reveal } from "@/components/ledger/Motion";
 import { FieldIcon } from "@/components/ledger/FieldIcon";
-import { CardRail, Conservation, Experiences, Features, IncludedLists, Overview, Practical, PreviewNote, RecordHero, RecordNav, SectionHead, WhyChose, type RecordCard } from "@/components/record/Sections";
+import { CardRail, Conservation, Experiences, Features, IncludedLists, Overview, PreviewNote, RecordHero, RecordNav, SectionHead, WhyChose, type RecordCard } from "@/components/record/Sections";
 import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { zaOthers } from "@/lib/content/preview/za-ledger";
@@ -64,12 +65,13 @@ export default function LondoloziPreview() {
       <main id="main">
         <RecordHero image={L.hero} eyebrow={`Wild & Co Safaris · Sabi Sand Game Reserve · ${L.ledgerId}`} title={L.name} tagline="Four camps, private suites and family villas on one reserve"
           glance={<GlanceBar glance={{ price: { amount: "US$1,386", basis: "per person, per night · Varty Camp" }, facts: [["Best months", "May to October"], ["The reserve", "5 camps + private villas"], ["Fly into", "Kruger Mpumalanga (MQP)"]], photos: L.gallery.length, cta: { label: "Choose a camp", href: "#camps" } }} />} />
-        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["The camps", "camps"], ["Reserve rates", "rates"], ["On safari", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["Practical", "practical"]]} cta="Enquire" />
+        <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["The camps", "camps"], ["Reserve rates", "rates"], ["On safari", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["James's favourites", "favourites"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, { name: "South Africa", path: "/destinations/africa/south-africa" }, { name: "Londolozi Reserve", path: "/safaris/londolozi-reserve" }]} /></div>
           <Overview
             quote={L.introQuote}
             answer="Londolozi is a private reserve in South Africa's Sabi Sand, famous for leopard, with five camps under one name: Varty, Founders, Tree, Pioneer and the Private Granite Suites, plus exclusive-use family villas. Rates run from US$1,386 per person per night at Varty Camp. Best May to October."
-            facts={[["Reserve ledger", L.ledgerId], ["Location", "Sabi Sand · South Africa"], ["Camps", "5 camps + private villas"], ["From", "US$1,386 per person, per night"], ["Best months", "May to October"], ["Fly into", "Kruger Mpumalanga (MQP) or Skukuza"]]}
+            facts={[["Reserve ledger", L.ledgerId], ["Location", "Sabi Sand · South Africa"], ["Camps", "5 camps + private villas"], ]}
             paragraphs={L.overview}
           />
 
@@ -134,9 +136,8 @@ export default function LondoloziPreview() {
           <Experiences eyebrow="On safari" title="Four Ways to Spend a Day Here" intro="The drives come first, always. The rest of the day is yours." items={EXPERIENCES} icon="mountain-sun" />
           <Features eyebrow="Reserve features" title="What Makes the Reserve" cards={FEATURES} onlyHere={{ title: L.onlyHere.title, paragraphs: L.onlyHere.paragraphs.slice(0, 2) }} icon="frond" />
           <LocationBlock chart={CHART_SOUTH_AFRICA} name="Londolozi" pin={{ lat: -24.801461, lng: 31.498252 }} others={zaOthers("Londolozi Reserve")} heading="Sabi Sand, beside the Kruger"
-            rows={[["Reserve", "Sabi Sand Game Reserve, Mpumalanga, South Africa"], ["Coordinates", "-24.801461, 31.498252"], ["Airports", "Kruger Mpumalanga (MQP) for the western sector, Skukuza for the south, Hoedspruit Eastgate for the north"], ["Getting there", "Fly to MQP or Skukuza and transfer by road, or take a light aircraft to the Londolozi airstrip."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
+            rows={[["Reserve", "Sabi Sand Game Reserve, Mpumalanga, South Africa"], ["Coordinates", "-24.801461, 31.498252"], ["Airports", "Kruger Mpumalanga (MQP) for the western sector, Skukuza for the south, Hoedspruit Eastgate for the north"], ["Getting there", "Fly to MQP or Skukuza and transfer by road, or take a light aircraft to the Londolozi airstrip."], ["When to go", "May to October, the dry season: sparse bush and animals at the waterholes, so leopard sightings come more often."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
           <Conservation eyebrow={L.sustainability.eyebrow} title={L.sustainability.titleA} subtitle={L.sustainability.titleB} intro={L.sustainability.intro} body={L.sustainability.body} image={{ url: L.adventures.image, alt: L.adventures.imageAlt }} />
-          <Practical rows={L.practical as [string, string][]} />
           <CardRail id="favourites" eyebrow="James's favourites in South Africa" title="Where James Would Go Back" cards={ZA_FAVOURITES} />
           <PreviewNote>
             <p>The five camps live in the library today as room records under the reserve; filing each as its own child stay (approved) gives every camp its own page, host and offers. The Private Granite Suites and Private Villas have duplicate placeholder room records to tidy.</p>

@@ -67,7 +67,6 @@ export const VOLUMES: MegaMenu[] = [
       { label: "By water", href: "/stays?by=water" },
       { label: "New to the Ledger", href: "/stays/new" },
       { label: "Stay longer, pay less", href: "/stays/promos" },
-      { label: "All stays", href: "/stays" },
     ],
     ledger: [],
   },
@@ -76,10 +75,9 @@ export const VOLUMES: MegaMenu[] = [
     href: "/safaris",
     intro: "Camps by reserve, from the Sabi Sand to the Okavango.",
     browse: [
-      { label: "By reserve", href: "/safaris" },
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
-      { label: "Planning a safari", href: "/plan" },
+      { label: "Ask Crux, the safari guide", href: "https://wildcosafaris.com" },
     ],
     ledger: [],
   },
@@ -88,7 +86,6 @@ export const VOLUMES: MegaMenu[] = [
     href: "/gatherings",
     intro: "Family residences for the generations who travel together.",
     browse: [
-      { label: "Family residences", href: "/gatherings" },
       { label: "Celebrations", href: "/gatherings?for=celebrations" },
       { label: "Multigenerational", href: "/gatherings?for=multigenerational" },
     ],
@@ -99,7 +96,6 @@ export const VOLUMES: MegaMenu[] = [
     href: "/voyages",
     intro: "Small ships and sailing yachts, never the big ones.",
     browse: [
-      { label: "By ship", href: "/voyages" },
       { label: "Departures 2027–2028", href: "/voyages/departures" },
       { label: "Charter a whole yacht", href: "/voyages/charter" },
       { label: "Polar", href: "/voyages?region=polar" },
@@ -113,7 +109,6 @@ export const VOLUMES: MegaMenu[] = [
     href: "/overland",
     intro: "Land routes James designed, with what to expect and what to avoid.",
     browse: [
-      { label: "All routes", href: "/overland" },
       { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
       { label: "Designed by James", href: "/overland?stamp=designed" },
     ],
@@ -136,7 +131,7 @@ export const REGIONS: Region[] = [
   { label: "South America", slug: "south-america", href: "/destinations/south-america", countries: [{ label: "Argentina", href: "/destinations/south-america/argentina" }, { label: "Chile & Easter Island", href: "/destinations/south-america/chile" }, { label: "Ecuador & Galapagos", href: "/destinations/south-america/ecuador-galapagos" }, { label: "Peru", href: "/destinations/south-america/peru" }] },
   { label: "Europe", slug: "europe", href: "/destinations/europe", countries: [{ label: "Greece", href: "/destinations/europe/greece" }, { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" }] },
   { label: "Polar: Antarctica", slug: "polar-antarctica", href: "/destinations/polar-antarctica", countries: [] },
-  { label: "Polar: Arctic", slug: "polar-arctic", href: "/destinations/polar-arctic", countries: [{ label: "Arctic Cruises", href: "/destinations/polar-arctic/arctic-cruises" }, { label: "Iceland", href: "/destinations/polar-arctic/iceland" }] },
+  { label: "Polar: Arctic", slug: "polar-arctic", href: "/destinations/polar-arctic", countries: [{ label: "Iceland", href: "/destinations/polar-arctic/iceland" }] },
 ];
 
 export const MAIN_EXTRA: NavLink[] = [
@@ -152,7 +147,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     title: "The House",
     links: [
       { label: "The Ledger", href: "/the-ledger" },
-      { label: "About James", href: "/about/founder" },
+      { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },
       { label: "Philosophy", href: "/about/philosophy" },
       { label: "Journal", href: "/journal" },
@@ -165,7 +160,8 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
   {
     title: "Before You Go",
     links: [
-      { label: "Plan a Journey", href: "/plan" },
+      { label: "Plan with James", href: "/plan" },
+      { label: "The Compass", href: "/compass" },
       { label: "Find an advisor", href: "/advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
       { label: "Live workshops", href: "/plan/workshops" },

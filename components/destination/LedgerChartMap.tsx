@@ -91,7 +91,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
   return (
     <div className="grid lg:grid-cols-[1.55fr_1fr] gap-6 items-start">
       <div className="relative">
-        <div ref={box} className={`ledger-chart relative border ledger-rule overflow-hidden bg-[#E4EEEC] ${drawn ? "is-drawn" : ""}`}>
+        <div ref={box} className={`ledger-chart relative border ledger-rule overflow-hidden bg-coast-mist ${drawn ? "is-drawn" : ""}`}>
           {chart}
           <svg viewBox={`0 0 ${width} ${height}`} className="absolute inset-0 w-full h-full" role="group" aria-label={`Stays pinned on the ${country} map`}>
             {drawn &&
@@ -180,7 +180,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
                         {i.x == null ? " · not yet pinned" : ""}
                         {i.isNew ? " · new" : ""}
                       </span>
-                      {i.offer && <span className="mt-1 inline-block border border-[#94512F] text-[#94512F] px-1.5 text-[10px] uppercase tracking-[0.14em]">Time Rewarded</span>}
+                      {i.offer && <span className="mt-1 inline-block border border-rust text-rust px-1.5 text-[10px] uppercase tracking-[0.14em]">Time Rewarded</span>}
                     </span>
                   </Link>
                 </li>

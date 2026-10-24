@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { LiveRates } from "@/components/record/Pricing";
 import { GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
@@ -52,12 +53,13 @@ export default function LeeuEstatesPreview() {
           stamp={<FounderStamp kind="Founder inspected" year={2026} size={140} />}
           glance={<GlanceBar glance={{ price: { amount: "US$1,589", basis: "live · per night, 17–20 Nov · Studio Room" }, facts: [["Best months", "October to April"], ["The estate", "Rooms, suites & whole houses"], ["Fly into", "Cape Town (CPT) · 55 min"]], cta: { label: "Check live rates", href: "#live-rates" } }} />}
         />
-        <RecordNav items={[["In short", "overview"], ["Why we chose it", "why"], ["Live rates", "live-rates"], ["Rooms", "rooms"], ["Cottages & houses", "houses"], ["Location", "location"], ["The collection", "collection"]]} cta="Check live rates" />
+        <RecordNav items={[["Why we chose it", "why"], ["Live rates", "live-rates"], ["Rooms", "rooms"], ["Cottages & houses", "houses"], ["Location", "location"], ["The collection", "collection"]]} cta="Check live rates" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, { name: "South Africa", path: "/destinations/africa/south-africa" }, { name: "Leeu Estates", path: "/stays/leeu-estates" }]} /></div>
           <Overview
             quote="Come for the wine. Stay for the stillness. Leave transformed by the landscape."
             answer="Leeu Estates is a vineyard estate in the Franschhoek Valley, about 55 minutes from Cape Town airport, with rooms and suites in the manor and whole cottages and houses for families. James inspected it in May 2026. Best October to April. Live rates come straight from the booking engine for your dates."
-            facts={[["Ledger ID", "STY-2026-000148"], ["Type", "Vineyard estate · rooms, suites, cottages, houses"], ["Best months", "October to April"], ["Fly into", "Cape Town (CPT)"], ["Founder", "Inspected & approved · May 2026"], ["Rates", "Live from the booking engine"]]}
+            facts={[["Ledger ID", "STY-2026-000148"], ["Type", "Vineyard estate · rooms, suites, cottages, houses"], ["Founder", "Inspected & approved · May 2026"], ["Rates", "Live from the booking engine"]]}
           />
           <WhyChose
             title="Escape into the Heart of the Winelands"

@@ -1,7 +1,8 @@
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { KeyRound, Sparkles } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import HostPanel from "@/components/record/HostPanel";
-import { CardRail, Conservation, Experiences, IncludedLists, Overview, Practical, PreviewNote, RecordHero, RecordNav, RoomsLedger, SectionHead, WhyChose, type RecordCard } from "@/components/record/Sections";
+import { CardRail, Conservation, Experiences, IncludedLists, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, SectionHead, WhyChose, type RecordCard } from "@/components/record/Sections";
 import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { zaOthers } from "@/lib/content/preview/za-ledger";
@@ -33,12 +34,13 @@ export default function MorukuruPreview() {
       <main id="main">
         <RecordHero image={M.hero} eyebrow={`Wild & Co Gatherings · Madikwe Game Reserve · ${M.ledgerId}`} title={M.name} tagline={M.subtitle}
           glance={<GlanceBar glance={{ price: { amount: "US$4,500", basis: "whole house, per night · up to 10" }, facts: [["Best months", "March to May"], ["The house", "5 bedrooms · staff of 8"], ["Fly into", "Johannesburg (JNB)"]], photos: M.gallery.length, cta: { label: "Enquire for the house", href: "/plan" } }} />} />
-        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["The house", "house"], ["Bedrooms", "rooms"], ["The rate", "rate"], ["Days for every age", "experiences"], ["Location", "location"], ["Conservation", "conservation"], ["Host", "host"], ["Practical", "practical"]]} cta="Enquire" />
+        <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["The house", "house"], ["Bedrooms", "rooms"], ["The rate", "rate"], ["Days for every age", "experiences"], ["Location", "location"], ["Conservation", "conservation"], ["Host", "host"], ["James's favourites", "favourites"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Gatherings", path: "/gatherings" }, { name: "South Africa", path: "/destinations/africa/south-africa" }, { name: "Morukuru Farm House", path: "/gatherings/morukuru-farm-house" }]} /></div>
           <Overview
             quote={M.introQuote}
             answer="Morukuru Farm House is a five-bedroom safari home in South Africa's malaria-free Madikwe Game Reserve, taken whole by one family or group of up to ten, with a staff of eight and a private vehicle and guide. From US$4,500 a night for the whole house. Best March to May and September to November."
-            facts={[["Residence ledger", M.ledgerId], ["The house", "5 bedrooms · up to 10 guests"], ["Staff", "Fully staffed (8)"], ["Children & elders", "Child- and elderly-friendly"], ["From", "US$4,500 per night, whole house"], ["Power", "100% solar, off-grid"]]}
+            facts={[["Residence ledger", M.ledgerId], ["The house", "5 bedrooms · up to 10 guests"], ["Staff", "Fully staffed (8)"], ["Children & elders", "Child- and elderly-friendly"], ["Power", "100% solar, off-grid"]]}
           />
 
           <GalleryMosaic images={M.gallery} title={M.name} />
@@ -79,7 +81,7 @@ export default function MorukuruPreview() {
           </section>
           <Experiences eyebrow="Days for every age" title="Four Ways to Spend a Day Here" intro="Planned around the generations: walks sized for children, dinner in the boma, a night out under the stars." items={EXPERIENCES} icon="mountain-sun" />
           <LocationBlock chart={CHART_SOUTH_AFRICA} name="Morukuru" pin={{ lat: -24.801461, lng: 26.408333 }} others={zaOthers("Morukuru Farm House")} heading="Madikwe, Malaria-Free Big Five Country"
-            rows={[["Address", "Madikwe Game Reserve, North West Province, South Africa"], ["Coordinates", "-24.801461, 26.408333"], ["Airports", "O.R. Tambo (JNB) and Lanseria (HLA)"], ["Getting there", "From Johannesburg, a 4-hour scenic drive or a short Federal Air flight to Madikwe. Self-drive also possible, ideally in an SUV."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
+            rows={[["Address", "Madikwe Game Reserve, North West Province, South Africa"], ["Coordinates", "-24.801461, 26.408333"], ["Airports", "O.R. Tambo (JNB) and Lanseria (HLA)"], ["Getting there", "From Johannesburg, a 4-hour scenic drive or a short Federal Air flight to Madikwe. Self-drive also possible, ideally in an SUV."], ["When to go", "March to May and September to November, when animals gather at the water and the days are comfortable for viewing."]]} note="Faint pins are the other stays in the Ledger in South Africa." />
 
           <Conservation eyebrow={M.sustainability.eyebrow} title={M.sustainability.titleA} subtitle={M.sustainability.titleB} intro={M.sustainability.intro} body={M.sustainability.body} image={{ url: M.adventures.image, alt: M.adventures.imageAlt }} />
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10">
@@ -96,7 +98,6 @@ export default function MorukuruPreview() {
             />
           </div>
 
-          <Practical rows={M.practical as [string, string][]} />
           <CardRail id="favourites" eyebrow="James's favourites in South Africa" title="Where James Would Go Back" cards={ZA_FAVOURITES} />
           <PreviewNote>
             <p>No founder stay is filed, so no founder stamp; the host mark appears once the library records whether James met Rinse in person. Rinse has no headshot on file yet.</p>

@@ -1,3 +1,4 @@
+import type { RecordKind } from "@/lib/ledger/urls";
 // Home page content, ported from the approved Base44 sample
 // (/sample-house-home, Ledger direction). Copy is James's voice and is
 // pending his final sign-off. Rules applied in the port:
@@ -89,14 +90,14 @@ export const HOME = {
     // status/statusDate mirror the Stay record in the library (24 Oct 2026).
     // None of these seven carries a house_status yet, so no mark prints.
     entries: [
-      { name: "Lion Sands Reserve", id: "STY-2026-290658", slug: "lion-sands", status: null, statusDate: null, line: "Ivory Lodge on the Sabie River, where the Sabi Sand meets the Kruger.", image: { url: `${B44}/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif`, alt: "Lion Sands Reserve: riverside safari lodge in the Sabi Sand, South Africa" } },
+      { name: "Lion Sands Reserve", id: "STY-2026-290658", slug: "lion-sands", kind: "reserve", status: null, statusDate: null, line: "Ivory Lodge on the Sabie River, where the Sabi Sand meets the Kruger.", image: { url: `${B44}/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif`, alt: "Lion Sands Reserve: riverside safari lodge in the Sabi Sand, South Africa" } },
       { name: "Monwana Thornybush", id: "STY-2026-000171", slug: "monwana-thornybush", status: null, statusDate: null, line: "Big Five luxury in the wild Thornybush.", image: { url: `${B44}/ceda73052_67149f1a3_6930486e36272055f8bc2739_monwana-thornybush-exterior.jpg`, alt: "Monwana lodge exterior in the Thornybush Game Reserve, South Africa" } },
       { name: "Kirkman's Kamp", id: "STY-2026-000293", slug: "tengile-mala-mala-kirkmans-kamp", status: null, statusDate: null, line: "Historic safari charm overlooking one of Africa's great wildlife landscapes.", image: { url: `${B44}/c636dd862_5ce4e7daf_6a511c21d736e3f6fb85883e_Kirkmans-kamp.jpg`, alt: "Kirkman's Kamp: 1920s homestead veranda on the Mala Mala reserve, South Africa" } },
       { name: "Ellerman House", id: "STY-2026-000075", slug: "ellerman-house", status: null, statusDate: null, line: "Clifftop Cape Town, the house to begin or end a safari in.", image: { url: `${B44}/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg`, alt: "Aerial view of Ellerman House on the cliffs above Bantry Bay, Cape Town" } },
       { name: "Vahine Private Island", id: "STY-2026-000213", slug: "pearl-resort-vahine-private-island", status: null, statusDate: null, line: "A hidden motu off Taha'a, in the lagoon of French Polynesia.", image: { url: `${B44}/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif`, alt: "Beach suite on Vahine Private Island in the Taha'a lagoon, French Polynesia" } },
-      { name: "Tswalu Reserve", id: "STY-2026-138258", slug: "tswalu-reserve", status: null, statusDate: null, line: "The Kalahari, restored: red dunes, meerkats and regeneration at scale.", image: { url: `${B44}/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif`, alt: "Tswalu Kalahari Reserve: red dunes and camelthorn trees at dusk, South Africa" } },
+      { name: "Tswalu Reserve", id: "STY-2026-138258", slug: "tswalu-reserve", kind: "reserve", status: null, statusDate: null, line: "The Kalahari, restored: red dunes, meerkats and regeneration at scale.", image: { url: `${B44}/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif`, alt: "Tswalu Kalahari Reserve: red dunes and camelthorn trees at dusk, South Africa" } },
       { name: "Leeu House", id: "STY-2026-000149", slug: "leeu-house", status: null, statusDate: null, line: "A village-side Winelands house in Franschhoek, for the family to gather in.", image: { url: `${B44}/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg`, alt: "The entrance garden at Leeu House, Franschhoek, with mountains above the village" } },
-    ] as { name: string; id: string; slug: string; status: HouseStatus | null; statusDate: string | null; line: string; image: Img }[],
+    ] as { name: string; id: string; slug: string; kind?: RecordKind; status: HouseStatus | null; statusDate: string | null; line: string; image: Img }[],
   },
 
   overland: {

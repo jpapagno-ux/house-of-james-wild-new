@@ -31,24 +31,24 @@ export type Offer = {
 export function OfferCard({ offer }: { offer: Offer }) {
   return (
     <section id="offer" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="offer-heading">
-      <div className="border-2 border-[#94512F]/70 bg-[#F7EFE6] grid lg:grid-cols-[1fr_1.25fr]">
-        <div className="relative min-h-[260px] border-b lg:border-b-0 lg:border-r border-[#94512F]/40">
+      <div className="border-2 border-rust/70 bg-rust-wash grid lg:grid-cols-[1fr_1.25fr]">
+        <div className="relative min-h-[260px] border-b lg:border-b-0 lg:border-r border-rust/40">
           <Image src={offer.image.url} alt={offer.image.alt} fill sizes="(min-width: 1024px) 480px, 100vw" className="object-cover" />
-          <span className="absolute top-4 left-4 bg-[#94512F] text-paper px-3 py-1.5 ledger-eyebrow !text-paper !text-[10.5px]">Time Rewarded</span>
+          <span className="absolute top-4 left-4 bg-rust text-paper px-3 py-1.5 ledger-eyebrow !text-paper !text-[10.5px]">Time Rewarded</span>
         </div>
         <div className="p-6 md:p-8">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <p className="ledger-eyebrow !text-[#94512F]">Worth Another Night&trade; · {offer.id}</p>
+            <p className="ledger-eyebrow !text-rust">Worth Another Night&trade; · {offer.id}</p>
             <p className="ledger-eyebrow">Book by {offer.bookBy}</p>
           </div>
           <h2 id="offer-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-3 leading-tight">{offer.title}</h2>
-          <p className="ledger-display italic text-lg mt-2 text-[#94512F]">{offer.statement}</p>
+          <p className="ledger-display italic text-lg mt-2 text-rust">{offer.statement}</p>
           <ul className="mt-5 grid sm:grid-cols-2 gap-3">
             {offer.options.map((o) => (
-              <li key={o.nights} className="border border-[#94512F]/40 bg-paper p-4">
+              <li key={o.nights} className="border border-rust/40 bg-paper p-4">
                 <p className="ledger-display text-2xl">{o.nights}</p>
                 <p className="text-[15px] mt-0.5">{o.title}</p>
-                {o.note && <p className="ledger-eyebrow !text-[#94512F] mt-1">{o.note}</p>}
+                {o.note && <p className="ledger-eyebrow !text-rust mt-1">{o.note}</p>}
               </li>
             ))}
           </ul>
@@ -56,12 +56,12 @@ export function OfferCard({ offer }: { offer: Offer }) {
             <p className="mt-4 border-l-2 border-crimson pl-3 text-[15px]"><span className="ledger-eyebrow ledger-crimson block">Only through James Wild &amp; Co</span>{offer.exclusive}</p>
           )}
           <div className="mt-5 grid sm:grid-cols-2 gap-5 text-[14px]">
-            <ul className="space-y-1.5">{offer.included.map((x) => <li key={x} className="flex gap-2"><Check className="w-4 h-4 mt-0.5 shrink-0 text-[#94512F]" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}</ul>
+            <ul className="space-y-1.5">{offer.included.map((x) => <li key={x} className="flex gap-2"><Check className="w-4 h-4 mt-0.5 shrink-0 text-rust" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}</ul>
             <ul className="space-y-1.5 ledger-muted">{offer.excluded.slice(0, 4).map((x) => <li key={x} className="flex gap-2"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}</ul>
           </div>
           <p className="mt-5 text-[12.5px] ledger-muted">{offer.terms}</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/plan" className="ledger-btn !border-[#94512F] !text-[#94512F] hover:!bg-[#94512F] hover:!text-paper">Choose your stay &amp; enquire</Link>
+            <Link href="/plan" className="ledger-btn !border-rust !text-rust hover:!bg-rust hover:!text-paper">Choose your stay &amp; enquire</Link>
             <Link href="/stays/promos" className="text-[15px] underline underline-offset-4 self-center">All offers</Link>
           </div>
         </div>

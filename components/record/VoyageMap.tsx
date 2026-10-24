@@ -19,7 +19,7 @@ export default function VoyageMap({ stops, title }: { stops: Stop[]; title: stri
     }, {}),
   );
   return (
-    <figure className="ledger-chart is-drawn border ledger-rule bg-[#E4EEEC]">
+    <figure className="ledger-chart is-drawn border ledger-rule bg-coast-mist">
       <svg viewBox={`0 0 ${C.width} ${C.height}`} className="block w-full h-auto" role="img" aria-label={title}>
         <defs>
           <pattern id="sea-hatch-ra" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="8" stroke="rgba(34,101,110,0.10)" strokeWidth="1" /></pattern>

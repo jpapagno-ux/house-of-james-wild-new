@@ -26,7 +26,7 @@ export function GET() {
     ...REGIONS.map((r) => `- [${r.label}](${absoluteUrl(r.href)})`),
     "",
     "## Plan",
-    `- [Plan a Journey](${absoluteUrl("/plan")})`,
+    `- [Plan with James](${absoluteUrl("/plan")})`,
     `- Phone: ${SITE.phone.display}`,
     "",
   ];

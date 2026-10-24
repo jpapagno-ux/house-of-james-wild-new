@@ -9,6 +9,7 @@ import { HOME } from "@/lib/content/home";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { statusLine } from "@/lib/ledger/status";
 import { REGIONS, SITE } from "@/lib/site";
+import { recordHref } from "@/lib/ledger/urls";
 
 // The home page sections, ported from the Base44 sample. All server-rendered:
 // every word and link is in the HTML. Motion comes from the small client
@@ -193,7 +194,7 @@ export function SignatureShelf() {
           return (
             <li key={e.id}>
               <Reveal delay={(i % 3) * 0.08} className="h-full">
-                <Link href={`/stays/${e.slug}`} className="group h-full border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300">
+                <Link href={recordHref(e.kind ?? "stay", e.slug)} className="group h-full border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300">
                   <div className="relative aspect-[4/3] w-full border-b ledger-rule overflow-hidden">
                     <Image src={e.image.url} alt={e.image.alt} fill sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-700" />
                   </div>

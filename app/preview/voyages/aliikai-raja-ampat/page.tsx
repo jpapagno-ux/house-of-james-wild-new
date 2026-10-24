@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import Image from "next/image";
 import Link from "next/link";
 import { Anchor, CalendarRange, Ship, Users } from "lucide-react";
@@ -55,12 +56,13 @@ export default function AliikaiPreview() {
       <main id="main">
         <RecordHero image={V.hero} eyebrow={`Wild & Co Voyages · Aliikai · ${V.ledgerId}`} title={V.name} tagline="Ten days aboard a hand-built phinisi through Raja Ampat's reefs and limestone islands" stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
           glance={<GlanceBar glance={{ price: { amount: "US$4,830", basis: "per person, per voyage · shared cabin" }, facts: [["The voyage", "10 days · 9 nights"], ["Departures", "Fixed dates 2027 & 2028"], ["Embark", "Sorong, West Papua"]], photos: S.gallery.length + 1, cta: { label: "See departures", href: "#departures" } }} />} />
-        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["Day by day", "days"], ["Departures", "departures"], ["Cabins", "cabins"], ["The fare", "included"], ["Experiences", "experiences"], ["Features", "features"], ["The ship", "ship"], ["FAQ", "faq-heading"]]} cta="Enquire" />
+        <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["Day by day", "days"], ["Departures", "departures"], ["Cabins", "cabins"], ["The fare", "included"], ["Experiences", "experiences"], ["Features", "features"], ["The ship", "ship"], ["FAQ", "faq-heading"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: "/voyages/aliikai" }, { name: "10 Day Raja Ampat North", path: "/voyages/aliikai/10-day-raja-ampat-north" }]} /></div>
           <Overview
             quote={V.introQuote}
             answer="Aliikai's 10 Day Raja Ampat North sails from Sorong through the Dampier Strait to Wayag and back, nine nights aboard a 40-metre wooden phinisi with seven cabins and a crew of thirteen. From US$4,830 per person in a shared cabin, all meals, guided diving and snorkelling included. Best October to April. James sailed Raja Ampat aboard Aliikai in November 2024."
-            facts={V.meta as [string, string][]}
+            facts={(V.meta as [string, string][]).filter(([k]) => !["Duration", "Embarkation", "Disembarkation"].includes(k))}
             paragraphs={V.overview}
           />
 

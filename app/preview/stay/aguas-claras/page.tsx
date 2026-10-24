@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import HostPanel from "@/components/record/HostPanel";
@@ -58,13 +59,14 @@ export default function AguasClarasPreview() {
         <RecordHero image={{ url: A.hero.url, alt: A.hero.alt }} eyebrow={`Wild & Co Stays · ${A.ledger.location} · ${A.ledger.id}`} title={A.ledger.name} tagline={A.ledger.tagline}
           glance={<GlanceBar glance={{ price: { amount: "US$460", basis: "per room, per night" }, facts: [["Best months", "May to November"], ["The stay", "12 rooms · on the beach"], ["Fly into", "San José (SJO)"]], photos: photos.length }} />} />
         {/* 02 · Sticky record nav */}
-        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Why we chose it", "why"], ["Rooms & rates", "rooms"], ["Offer", "offer"], ["Experiences", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["Host", "host"], ["FAQ", "faq-heading"]]} cta="Check your dates" />
+        <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["Rooms & rates", "rooms"], ["Offer", "offer"], ["Experiences", "experiences"], ["Features", "features"], ["Location", "location"], ["Conservation", "conservation"], ["Host", "host"], ["FAQ", "faq-heading"]]} cta="Check your dates" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {/* 03 · In short (the answer block) */}
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, { name: "Costa Rica", path: "/destinations/central-america/costa-rica" }, { name: "Aguas Claras", path: "/stays/aguas-claras" }]} /></div>
           <Overview
             quote={A.ledger.introQuote}
             answer="Aguas Claras is a 12-room art-filled hideaway directly on Playa Chiquita, near Puerto Viejo on Costa Rica's south Caribbean coast. Rooms run from Pavlova suites to two-bedroom bungalows with plunge pools, from US$460 a night with breakfast. Best May to November; fly into San José (SJO)."
-            facts={[["Ledger ID", A.ledger.id], ["Type", "Boutique hotel · 12 rooms"], ["Best months", "May to November"], ["Fly into", "San José (SJO)"], ["From", "US$460 per room, per night"], ["Rates", "Fixed · partner rate sheet"], ["Best for", "Honeymoon · family · solo · adventure"]]}
+            facts={[["Ledger ID", A.ledger.id], ["Type", "Boutique hotel · 12 rooms"], ["Rates", "Fixed · partner rate sheet"], ["Best for", "Honeymoon · family · solo · adventure"]]}
             paragraphs={A.staysContent}
           />
           {/* 04 · Photos */}
@@ -74,7 +76,7 @@ export default function AguasClarasPreview() {
             title="Why Aguas Claras Is in the Ledger"
             status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · in the Ledger since August 2026 · no founder visit filed yet, so no founder stamp</p>}
             blocks={A.whyStay}
-            image={{ url: G[3].url, alt: G[3].alt }}
+            image={{ url: G[5].url, alt: G[5].alt }}
           />
           {/* 06 · Core: rooms & rates, with what's included and not */}
           <RoomsLedger title="Four Ways to Stay on Playa Chiquita" intro="Every room category on file, with its published “from” price per room, per night, and what the rate does and doesn't carry." rooms={ROOMS} footnote="Fixed rates from the partner rate sheet (USD, per room, per night, before tax). Your dates are quoted live before anything is booked." />

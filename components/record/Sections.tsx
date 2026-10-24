@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight, BedDouble, Check, Leaf, Maximize2, Users, Waves, X } from "lucide-react";
 import { Reveal } from "@/components/ledger/Motion";
+import AnswerBlock from "@/components/ledger/AnswerBlock";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import { Stamp, type Volume } from "@/components/ledger/Marks";
 import type { LedgerStampKind } from "@/lib/ledger/status";
@@ -77,10 +78,7 @@ export function Overview({ quote, answer, facts, paragraphs }: { quote?: string;
     <section id="overview" className="pt-12 md:pt-16 scroll-mt-32 grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
       <div>
         {quote && <p className="ledger-display italic text-2xl md:text-3xl leading-snug">&ldquo;{quote}&rdquo;</p>}
-        <section aria-label="In short" className="border-l-2 border-crimson pl-5 mt-8">
-          <p className="ledger-eyebrow ledger-crimson">In short</p>
-          <p className="mt-2 text-[17px] leading-relaxed">{answer}</p>
-        </section>
+        <AnswerBlock>{answer}</AnswerBlock>
         {paragraphs && paragraphs.length > 0 && (
           <details className="mt-6 group border-t ledger-rule pt-4">
             <summary className="cursor-pointer list-none ledger-eyebrow ledger-crimson flex items-center gap-3">Read the full entry <span className="group-open:rotate-45 transition-transform text-lg leading-none">+</span></summary>
@@ -279,33 +277,17 @@ function OnlyHere({ title, paragraphs }: { title: string; paragraphs: string[] }
 /* Conservation ------------------------------------------------------------------ */
 export function Conservation({ id = "conservation", eyebrow, title, subtitle, intro, body, image }: { id?: string; eyebrow: string; title: string; subtitle?: string; intro?: string; body: string; image?: Img }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 bg-[#E4EEEC] -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
+    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 bg-coast-mist -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
       <div className={`grid ${image ? "lg:grid-cols-[1.3fr_1fr]" : ""} gap-10 items-center`}>
         <div>
-          <p className="ledger-eyebrow !text-[#22656E] flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {eyebrow}</p>
-          <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2 text-[#1d4f56]">{title}</h2>
-          {subtitle && <p className="ledger-display italic text-lg md:text-xl mt-1 text-[#22656E]">{subtitle}</p>}
+          <p className="ledger-eyebrow !text-coast flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {eyebrow}</p>
+          <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2 text-coast-deep">{title}</h2>
+          {subtitle && <p className="ledger-display italic text-lg md:text-xl mt-1 text-coast">{subtitle}</p>}
           {intro && <p className="mt-5 ledger-display italic text-[18px] leading-relaxed text-ink/80">{intro}</p>}
           <p className="mt-4 text-[16px] leading-relaxed">{body}</p>
         </div>
-        {image && <div className="relative aspect-[4/3] border border-[#22656E]/30"><Image src={image.url} alt={image.alt} fill sizes="(min-width: 1024px) 440px, 100vw" className="object-cover" /></div>}
+        {image && <div className="relative aspect-[4/3] border border-coast/30"><Image src={image.url} alt={image.alt} fill sizes="(min-width: 1024px) 440px, 100vw" className="object-cover" /></div>}
       </div>
-    </section>
-  );
-}
-
-/* Gallery strip (horizontal scroll) -------------------------------------------- */
-export function GalleryStrip({ images, id = "gallery" }: { images: Img[]; id?: string }) {
-  return (
-    <section id={id} className="mt-16 md:mt-20 scroll-mt-32" aria-label="Gallery">
-      <ul className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 -mx-5 px-5 md:mx-0 md:px-0">
-        {images.map((g) => (
-          <li key={g.url} className="snap-start shrink-0 w-[78%] sm:w-[46%] lg:w-[31%]">
-            <div className="relative aspect-[4/3] border ledger-border"><Image src={g.url} alt={g.alt} fill sizes="(min-width: 1024px) 360px, 78vw" className="object-cover" /></div>
-            <p className="mt-2 text-[12.5px] ledger-muted">{g.alt.split(":").slice(1).join(":").trim() || g.alt}</p>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }

@@ -2,6 +2,8 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import Compass from "@/components/destination/Compass";
+import AnswerBlock from "@/components/ledger/AnswerBlock";
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { COSTA_RICA } from "@/lib/content/preview/costa-rica";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
@@ -42,12 +44,10 @@ export default function CompassPage() {
       <SiteHeader />
       <main id="main" className="pt-6 md:pt-10">
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="mb-5"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "The Compass", path: "/compass" }]} /></div>
           <Compass global stays={stays} advisorHref="/advisors" />
 
-          <section aria-label="In short" className="mt-14 border-l-2 border-crimson pl-5 max-w-3xl">
-            <p className="ledger-eyebrow ledger-crimson">In short</p>
-            <p className="mt-2 text-[17px] leading-relaxed">The James Wild Compass is a free trip finder from James Wild &amp; Co. Answer a few questions and it reads the Ledger of places James has vetted, suggests stays and a draft route, holds back one place he doesn&rsquo;t publish, and hands you to James or an advisor to finish the trip.</p>
-          </section>
+          <div className="mt-14"><AnswerBlock>The James Wild Compass is a free trip finder from James Wild &amp; Co. Answer a few questions and it reads the Ledger of places James has vetted, suggests stays and a draft route, holds back one place he doesn&rsquo;t publish, and hands you to James or an advisor to finish the trip.</AnswerBlock></div>
 
           <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="weighs-heading">
             <p className="ledger-eyebrow">How it reads you</p>

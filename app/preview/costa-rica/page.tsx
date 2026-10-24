@@ -99,7 +99,7 @@ export default function CostaRicaPreview() {
         </HeroSlider>
 
         {/* Region sub-navigation */}
-        <nav aria-label={`${D.region.name} destinations`} className="border-b ledger-rule bg-paper sticky top-[72px] z-30">
+        <nav aria-label={`${D.region.name} destinations`} className="border-b ledger-rule bg-paper sticky top-[72px] lg:top-[105px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6 overflow-x-auto whitespace-nowrap">
             <Link href="/destinations" className="ledger-eyebrow hover:ledger-crimson">Destinations</Link>
             <span className="ledger-eyebrow" aria-hidden="true">›</span>

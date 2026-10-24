@@ -69,7 +69,7 @@ export default function StayHostPreview() {
         </section>
 
         {/* Record sub-navigation */}
-        <nav aria-label="On this page" className="border-b ledger-rule bg-paper sticky top-[72px] z-30">
+        <nav aria-label="On this page" className="border-b ledger-rule bg-paper sticky top-[72px] lg:top-[105px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6 overflow-x-auto whitespace-nowrap">
             {SECTIONS.map((s) => (
               <a key={s} href={s === "Meet your host" ? "#host" : `#${s.toLowerCase()}`} className={`ledger-eyebrow hover:ledger-crimson ${s === "Meet your host" ? "ledger-crimson border-b border-crimson pb-0.5" : ""}`}>{s}</a>

@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "*.supabase.co" },
       { protocol: "https", hostname: "res.cloudinary.com" },
       { protocol: "https", hostname: "cdn.prod.website-files.com" },
+      // Ledger images hosted by the Base44 library (moving to Supabase storage).
+      { protocol: "https", hostname: "base44.app" },
     ],
   },
   async redirects() {

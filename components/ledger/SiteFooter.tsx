@@ -11,7 +11,7 @@ export default function SiteFooter() {
         <div className="max-w-ledger mx-auto px-5 md:px-10 py-12 md:py-14 grid md:grid-cols-[1fr_auto] gap-6 items-center">
           <div>
             <p className="ledger-eyebrow ledger-crimson">Every journey begins with a conversation</p>
-            <p className="ledger-display text-2xl md:text-3xl mt-2">Plan with James Wild &amp; Co.</p>
+            <p className="ledger-display text-2xl md:text-3xl mt-2">Tell me where you&rsquo;ve always meant to go.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href={PLAN_CTA.href} className="ledger-btn">{PLAN_CTA.label}</Link>

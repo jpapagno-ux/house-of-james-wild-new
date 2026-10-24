@@ -44,3 +44,8 @@
 .ledger-stamp.in { animation: ledger-press .3s ease-out; }
 @keyframes ledger-press { from { transform: rotate(-8deg) scale(1.15); opacity: 0; } to { transform: rotate(-8deg) scale(1); opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .ledger-stamp.in { animation: none; } }
+
+/* Places marquee on the home page (decorative, aria-hidden) */
+@keyframes ledger-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ledger-marquee { animation: ledger-marquee 70s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .ledger-marquee { animation: none; } }

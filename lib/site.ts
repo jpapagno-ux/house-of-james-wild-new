@@ -51,8 +51,8 @@ export type MegaMenu = {
 // Utility row: trust and contact, above the main bar.
 export const UTILITY_NAV: NavLink[] = [
   { label: "The Ledger", href: "/the-ledger" },
-  { label: "About James", href: "/about/founder" },
-  { label: "Advisors & Partners", href: "/advisors" },
+  { label: "Meet James", href: "/about/founder" },
+  { label: "For Advisors", href: "/for-advisors" },
 ];
 
 // Main bar: the five volumes, then Destinations and Journal.
@@ -140,7 +140,7 @@ export const MAIN_EXTRA: NavLink[] = [
   { label: "Journal", href: "/journal" },
 ];
 
-export const PLAN_CTA: NavLink = { label: "Plan a Journey", href: "/plan" };
+export const PLAN_CTA: NavLink = { label: "Plan with James", href: "/plan" };
 
 // Footer: four columns over the credentials strip.
 export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
@@ -159,9 +159,10 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     links: VOLUMES.map((v) => ({ label: v.label, href: v.href })),
   },
   {
-    title: "Plan",
+    title: "Before You Go",
     links: [
       { label: "Plan a Journey", href: "/plan" },
+      { label: "Find an advisor", href: "/advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
       { label: "Live workshops", href: "/plan/workshops" },
       { label: "FAQ", href: "/faq" },
@@ -171,7 +172,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
   {
     title: "For the trade",
     links: [
-      { label: "Advisors & influencers", href: "/advisors" },
+      { label: "For advisors", href: "/for-advisors" },
       { label: "Partner resources", href: "/partners" },
       { label: "Wild Earth Portfolio", href: "/wild-earth-portfolio" },
     ],

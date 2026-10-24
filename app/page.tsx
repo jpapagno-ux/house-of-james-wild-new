@@ -1,55 +1,100 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
-import AnswerBlock from "@/components/ledger/AnswerBlock";
-import OverlandStamp from "@/components/ledger/OverlandStamp";
-import { Reveal, StampPress } from "@/components/ledger/Motion";
-import { buildMetadata } from "@/lib/seo";
-import { VOLUMES } from "@/lib/site";
+import FaqBlock from "@/components/ledger/FaqBlock";
+import JsonLd from "@/components/ledger/JsonLd";
+import FilmHero from "@/components/home/FilmHero";
+import {
+  FilmSection,
+  HouseJournal,
+  HouseStandard,
+  HouseStory,
+  JamesNote,
+  LedgerTally,
+  OverlandRoutes,
+  PlacesMarquee,
+  SignatureShelf,
+  Stewards,
+  VolumeDoors,
+} from "@/components/home/Sections";
+import { HOME } from "@/lib/content/home";
+import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import { graph, ids, touristTrip } from "@/lib/schema";
 
-// Step 2 placeholder home: proves the shell (header, footer, tokens, motion,
-// stamp, schema) on a preview. Replaced in step 3 by the approved Base44 home
-// page: film hero, quote card, volume doors, Overland routes, film, FAQ.
-export const metadata = buildMetadata({
-  title: "James Wild & Co | Vetted Safaris, Stays & Voyages",
-  description:
-    "A founder-led travel house exploring since 1982. Safaris, stays, family residences, small-ship voyages and overland routes, each vetted in person and filed in the Ledger.",
-  path: "/",
-  noindex: true,
-});
+// Page 1 of Site map v1: the home page, ported from the approved Base44
+// sample. Four acts, in the order a first-time reader asks:
+//   the hook   film hero + quote card · the Ledger counted · places marquee
+//   the story  forty-four years, kept in one Ledger (+ the answer block)
+//   the offer  the five volumes
+//   the proof  house standard · signature shelf · Overland routes · the film
+//   go deeper  journal hubs · James's note · FAQ (FAQPage schema) · stewards
+// Organization, founder and WebSite schema come from the root layout.
+
+export const metadata = {
+  ...buildMetadata({
+    title: HOME.seo.title,
+    description: HOME.seo.description,
+    path: "/",
+    image: { url: HOME.hero.loop.poster, alt: HOME.hero.loop.label },
+  }),
+  title: { absolute: HOME.seo.title },
+};
+
+const pageSchema = graph(
+  {
+    "@type": "WebPage",
+    "@id": absoluteUrl("/#webpage"),
+    url: absoluteUrl("/"),
+    name: HOME.seo.title,
+    description: HOME.seo.answer,
+    isPartOf: { "@id": ids.website },
+    about: { "@id": ids.house },
+    primaryImageOfPage: HOME.hero.loop.poster,
+    speakable: { "@type": "SpeakableSpecification", cssSelector: ["#story-heading", "[aria-label='In short'] p"] },
+  },
+  {
+    "@type": "ItemList",
+    "@id": absoluteUrl("/#volumes"),
+    name: "The five volumes of James Wild & Co",
+    itemListElement: HOME.volumes.map((v, i) => ({ "@type": "ListItem", position: i + 1, name: v.name, url: absoluteUrl(v.path) })),
+  },
+  {
+    "@type": "ItemList",
+    "@id": absoluteUrl("/#overland"),
+    name: "Overland Expeditions by James",
+    itemListElement: HOME.overland.routes.map((r, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: touristTrip({
+        path: `/overland/${r.slug}`,
+        name: `${r.name}: ${r.subtitle}`,
+        description: r.expect.join("; "),
+        stays: r.stays.filter(([, slug]) => slug).map(([name, slug]) => ({ name, path: `/stays/${slug}` })),
+      }),
+    })),
+  },
+);
 
 export default function Home() {
   return (
     <>
-      <SiteHeader />
-      <main id="main" className="max-w-ledger mx-auto px-5 md:px-10 pt-14">
-        <p className="ledger-eyebrow ledger-crimson">Build step 2 · the shell · not for publication</p>
-        <h1 className="ledger-display text-4xl md:text-6xl mt-4 leading-tight max-w-4xl">
-          Vetted Safaris, Stays &amp; Voyages — Designed from 44 Years on the Road
-        </h1>
-        <AnswerBlock>
-          James Wild &amp; Co is a founder-led travel house in Miami, shaped by 44 years of exploring since 1982. Its five
-          volumes — Stays, Safaris, Gatherings, Voyages and Overland — hold only places and routes vetted in person, each
-          filed in the Ledger under a permanent ID.
-        </AnswerBlock>
-
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          {VOLUMES.map((v, i) => (
-            <li key={v.href}>
-              <Reveal delay={i * 0.08} className="h-full">
-                <a href={v.href} className="relative block h-full overflow-hidden ledger-paper border ledger-border p-5 hover:-translate-y-1 transition-transform">
-                  <p className="ledger-eyebrow">Volume {String(i + 1).padStart(2, "0")}</p>
-                  <p className="ledger-display text-2xl mt-1">{v.label}</p>
-                  <p className="mt-3 text-[15px] ledger-muted">{v.intro}</p>
-                  {v.label === "Overland" && (
-                    <StampPress className="absolute top-2 right-2 w-16 h-16 rounded-full bg-paper p-1 shadow">
-                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1983" className="w-full h-full" />
-                    </StampPress>
-                  )}
-                </a>
-              </Reveal>
-            </li>
-          ))}
-        </ul>
+      <SiteHeader overlay />
+      <main id="main">
+        <FilmHero {...HOME.hero} />
+        <LedgerTally />
+        <PlacesMarquee />
+        <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <HouseStory />
+          <VolumeDoors />
+          <HouseStandard />
+          <SignatureShelf />
+          <OverlandRoutes />
+          <FilmSection />
+          <HouseJournal />
+          <JamesNote />
+          <FaqBlock faqs={HOME.faqs} title="Questions, Answered" />
+        </div>
+        <Stewards />
       </main>
+      <JsonLd data={pageSchema} />
     </>
   );
 }

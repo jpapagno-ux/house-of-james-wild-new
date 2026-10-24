@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
+@layer base {
+  html { scroll-behavior: smooth; overflow-x: clip; }
+  body { background: #F4F1ED; color: #2D2A26; font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  :focus-visible { outline: 2px solid #8B2525; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+}
+
+@layer components {
+  .ledger-page { background: #F4F1ED; color: #2D2A26; }
+  .ledger-card { background: #EAE6DF; }
+  .ledger-paper { background: #EAE6DF; box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
+  .ledger-crimson { color: #8B2525; }
+  .ledger-crimson-border { border-color: #8B2525; }
+  .ledger-border { border-color: rgba(45, 42, 38, 0.16); }
+  .ledger-rule { border-color: rgba(45, 42, 38, 0.28); }
+  .ledger-muted { color: rgba(45, 42, 38, 0.68); }
+  .ledger-display { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+  .ledger-body { font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; }
+  .ledger-hand { font-family: 'Caveat', cursive; }
+  .ledger-eyebrow {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: rgba(45, 42, 38, 0.55);
+  }
+  .ledger-btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    border: 1px solid #8B2525; color: #8B2525;
+    font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 9px 18px; background: transparent; cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .ledger-btn:hover { background: #8B2525; color: #F4F1ED; }
+}

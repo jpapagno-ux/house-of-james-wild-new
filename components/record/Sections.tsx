@@ -179,19 +179,25 @@ export function RoomsLedger({ id = "rooms", eyebrow = "Rooms & suites", title, i
 }
 
 /* Experiences (cards) -------------------------------------------------------- */
-export function Experiences({ id = "experiences", eyebrow = "Local experiences", title, intro, items, icon = "mountain-sun" }: { id?: string; eyebrow?: string; title: string; intro?: string; items: { name: string; meta?: string; body?: string; image?: string | null }[]; icon?: FieldIconName }) {
+/** House rule: a record page shows at most four experiences and four
+ *  features, picked from the Experience / Feature collections. */
+export const MAX_PER_RECORD = 4;
+export type RecordCard = { name: string; meta?: string; body?: string; image?: string | null; alt?: string };
+
+export function Experiences({ id = "experiences", eyebrow = "Local experiences", title, intro, items, icon = "mountain-sun" }: { id?: string; eyebrow?: string; title: string; intro?: string; items: RecordCard[]; icon?: FieldIconName }) {
+  const list = items.slice(0, MAX_PER_RECORD);
   return (
     <section id={id} className={SECTION}>
       <SectionHead eyebrow={eyebrow} title={title} icon={icon} intro={intro} />
-      <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {items.map((x, i) => (
+      <ul className={`mt-8 grid gap-5 sm:grid-cols-2 ${list.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3"}`}>
+        {list.map((x, i) => (
           <li key={x.name}>
-            <Reveal delay={(i % 3) * 0.07} className="h-full">
+            <Reveal delay={(i % 4) * 0.07} className="h-full">
               <article className="h-full border ledger-border bg-paper flex flex-col">
-                {x.image && <div className="relative aspect-[4/3] border-b ledger-rule"><Image src={x.image} alt={x.name} fill sizes="(min-width: 1024px) 360px, 50vw" className="object-cover" /></div>}
+                {x.image && <div className="relative aspect-[4/5] border-b ledger-rule"><Image src={x.image} alt={x.alt || x.name} fill sizes="(min-width: 1024px) 300px, 50vw" className="object-cover" /><span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">{String(i + 1).padStart(2, "0")}</span></div>}
                 <div className="p-5">
                   {x.meta && <p className="ledger-eyebrow ledger-crimson">{x.meta}</p>}
-                  <h3 className="ledger-display text-xl mt-1">{x.name}</h3>
+                  <h3 className="ledger-display text-xl mt-1 leading-snug">{x.name}</h3>
                   {x.body && <p className="mt-2 text-[15px] leading-relaxed ledger-muted">{x.body}</p>}
                 </div>
               </article>
@@ -204,28 +210,54 @@ export function Experiences({ id = "experiences", eyebrow = "Local experiences",
 }
 
 /* Features + only here --------------------------------------------------------- */
-export function Features({ id = "features", eyebrow = "Stay features", title, items, body, onlyHere, icon = "frond" }: { id?: string; eyebrow?: string; title: string; items?: string[]; body?: string; onlyHere?: { title: string; paragraphs: string[] }; icon?: FieldIconName }) {
+export function Features({ id = "features", eyebrow = "Stay features", title, items, cards, body, onlyHere, icon = "frond" }: { id?: string; eyebrow?: string; title: string; items?: string[]; cards?: RecordCard[]; body?: string; onlyHere?: { title: string; paragraphs: string[] }; icon?: FieldIconName }) {
+  const list = cards?.slice(0, MAX_PER_RECORD);
   return (
     <section id={id} className={SECTION}>
-      <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
+      <div className={`grid ${list ? "" : "lg:grid-cols-[1.2fr_1fr]"} gap-10 items-start`}>
         <div>
           <SectionHead eyebrow={eyebrow} title={title} icon={icon} />
-          {body && <p className="mt-4 text-[16px] leading-relaxed ledger-muted">{body}</p>}
+          {body && <p className="mt-4 text-[16px] leading-relaxed ledger-muted max-w-3xl">{body}</p>}
           {items && (
             <ul className="mt-5 border-t ledger-rule">
-              {items.map((x) => <li key={x} className="py-3 border-b ledger-rule flex gap-3 text-[16px]"><Check className="w-4 h-4 mt-1 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}
+              {items.slice(0, MAX_PER_RECORD).map((x) => <li key={x} className="py-3 border-b ledger-rule flex gap-3 text-[16px]"><Check className="w-4 h-4 mt-1 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{x}</li>)}
             </ul>
           )}
         </div>
-        {onlyHere && (
-          <aside className="ledger-paper border ledger-border p-6 md:p-8 -rotate-[0.4deg]">
-            <div className="flex items-center gap-3"><FieldIcon name="sun" height={28} className="ledger-crimson" /><p className="ledger-eyebrow ledger-crimson">Only here</p></div>
-            <h3 className="ledger-display text-2xl mt-2">{onlyHere.title}</h3>
-            {onlyHere.paragraphs.map((p) => <p key={p.slice(0, 20)} className="mt-3 text-[15px] leading-relaxed">{p}</p>)}
-          </aside>
+        {list && (
+          <div className="grid lg:grid-cols-[1.6fr_1fr] gap-8 items-start">
+            <ul className="grid sm:grid-cols-2 gap-5">
+              {list.map((x, i) => (
+                <li key={x.name}>
+                  <Reveal delay={(i % 2) * 0.07} className="h-full">
+                    <article className="h-full grid grid-cols-[120px_1fr] md:grid-cols-[140px_1fr] border ledger-border bg-paper">
+                      <div className="relative border-r ledger-rule min-h-[150px]">{x.image && <Image src={x.image} alt={x.alt || x.name} fill sizes="140px" className="object-cover" />}</div>
+                      <div className="p-4">
+                        <p className="ledger-eyebrow ledger-crimson flex items-center gap-1.5"><Check className="w-3.5 h-3.5" strokeWidth={2} aria-hidden="true" />{x.meta || "Feature"}</p>
+                        <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
+                        {x.body && <p className="mt-1.5 text-[14px] leading-relaxed ledger-muted">{x.body}</p>}
+                      </div>
+                    </article>
+                  </Reveal>
+                </li>
+              ))}
+            </ul>
+            {onlyHere && <OnlyHere {...onlyHere} />}
+          </div>
         )}
+        {!list && onlyHere && <OnlyHere {...onlyHere} />}
       </div>
     </section>
+  );
+}
+
+function OnlyHere({ title, paragraphs }: { title: string; paragraphs: string[] }) {
+  return (
+    <aside className="ledger-paper border ledger-border p-6 md:p-8 -rotate-[0.4deg]">
+      <div className="flex items-center gap-3"><FieldIcon name="sun" height={28} className="ledger-crimson" /><p className="ledger-eyebrow ledger-crimson">Only here</p></div>
+      <h3 className="ledger-display text-2xl mt-2">{title}</h3>
+      {paragraphs.map((p) => <p key={p.slice(0, 20)} className="mt-3 text-[15px] leading-relaxed">{p}</p>)}
+    </aside>
   );
 }
 

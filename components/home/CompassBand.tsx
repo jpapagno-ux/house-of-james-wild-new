@@ -13,8 +13,8 @@ const DOORS = [
 
 export default function CompassBand() {
   return (
-    <section className="mt-16 md:mt-24 bg-ink text-paper -mx-5 md:mx-0 px-5 md:px-12 py-12 md:py-14 relative overflow-hidden" aria-labelledby="compass-band-heading">
-      <div className="pointer-events-none absolute inset-3 md:inset-4 border border-white/15" aria-hidden="true" />
+    <section className="mt-16 md:mt-24 text-paper bg-[#2D2A26] bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%),radial-gradient(70%_60%_at_0%_100%,rgba(139,37,37,0.28),transparent_60%)] -mx-5 md:mx-0 px-5 md:px-12 py-12 md:py-14 relative overflow-hidden" aria-labelledby="compass-band-heading">
+      <div className="pointer-events-none absolute inset-3 md:inset-4 border border-[#A9D3D6]/20" aria-hidden="true" />
       <div className="relative grid lg:grid-cols-[1fr_auto] gap-10 items-center">
         <div>
           <p className="ledger-eyebrow !text-white/70">The James Wild Compass</p>
@@ -32,7 +32,7 @@ export default function CompassBand() {
         <p className="ledger-eyebrow !text-white/60">Where are you drawn?</p>
         <div className="mt-3 grid grid-cols-2 lg:grid-cols-4 gap-2">
           {DOORS.map(([label, id]) => (
-            <Link key={id} href={`/compass?drawn=${id}#compass`} className="border border-white/25 hover:border-white px-4 py-3 ledger-display text-[17px] flex items-center justify-between gap-3">{label}<ArrowRight className="w-4 h-4 shrink-0" strokeWidth={1.5} aria-hidden="true" /></Link>
+            <Link key={id} href={`/compass?drawn=${id}#compass`} className="border border-[#A9D3D6]/30 hover:border-[#E8A598] px-4 py-3 ledger-display text-[17px] flex items-center justify-between gap-3">{label}<ArrowRight className="w-4 h-4 shrink-0" strokeWidth={1.5} aria-hidden="true" /></Link>
           ))}
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-5">

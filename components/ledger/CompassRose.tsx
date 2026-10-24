@@ -3,8 +3,8 @@
 export default function CompassRose({ bearing = 20, className = "" }: { bearing?: number; className?: string }) {
   return (
     <svg viewBox="-60 -60 120 120" className={className} aria-hidden="true">
-      <circle r="54" fill="none" stroke="rgba(244,241,237,0.25)" />
-      <circle r="44" fill="none" stroke="rgba(244,241,237,0.12)" strokeDasharray="1 3" />
+      <circle r="54" fill="none" stroke="rgba(169,211,214,0.5)" />
+      <circle r="44" fill="rgba(34,101,110,0.18)" stroke="rgba(169,211,214,0.3)" strokeDasharray="1 3" />
       {[0, 45, 90, 135, 180, 225, 270, 315].map((a) => (
         <path key={a} d={a % 90 === 0 ? "M0 -50 L5 -8 L0 0 L-5 -8 Z" : "M0 -34 L3.5 -6 L0 0 L-3.5 -6 Z"} transform={`rotate(${a})`} fill={a % 90 === 0 ? "rgba(244,241,237,0.85)" : "rgba(244,241,237,0.4)"} />
       ))}

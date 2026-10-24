@@ -3,11 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, CalendarClock, Lock, MessageCircle, PenLine, RotateCcw, Route as RouteIcon, Sparkles, UserRound } from "lucide-react";
+import { ArrowRight, CalendarClock, Lock, X, MessageCircle, PenLine, RotateCcw, Route as RouteIcon, Sparkles, UserRound } from "lucide-react";
 import LedgerChart from "@/components/destination/LedgerChart";
 import { CHART_COSTA_RICA, projectCostaRica } from "@/lib/charts/costa-rica";
 import { DRAFT_TYPES, REGIONS, SEASONS, TRAVELLERS, fitsSeason, type Region, type Season, type Traveller } from "@/lib/content/preview/costa-rica-compass";
 import { MUSTS, NODES, ROUTES, fmtTransfer, type Leg, type MustDo, type NodeId, type Route } from "@/lib/content/preview/costa-rica-routes";
+import { AVOID_BY_ROUTE, avoidsFor } from "@/lib/content/preview/costa-rica-avoids";
 
 // The James Wild Compass. On a destination page it opens with the country
 // set; on /compass it starts one question earlier ("Where are you drawn?").
@@ -47,8 +48,8 @@ const DRAWN: { id: string; label: string; line: string; bearing: number; places:
 function Rose({ bearing }: { bearing: number | null }) {
   return (
     <svg viewBox="-60 -60 120 120" className="w-full h-full" aria-hidden="true">
-      <circle r="54" fill="none" stroke="rgba(244,241,237,0.25)" />
-      <circle r="44" fill="none" stroke="rgba(244,241,237,0.12)" strokeDasharray="1 3" />
+      <circle r="54" fill="none" stroke="rgba(169,211,214,0.5)" />
+      <circle r="44" fill="rgba(34,101,110,0.18)" stroke="rgba(169,211,214,0.3)" strokeDasharray="1 3" />
       {[0, 45, 90, 135, 180, 225, 270, 315].map((a) => (
         <path key={a} d={a % 90 === 0 ? "M0 -50 L5 -8 L0 0 L-5 -8 Z" : "M0 -34 L3.5 -6 L0 0 L-3.5 -6 Z"} transform={`rotate(${a})`} fill={a % 90 === 0 ? "rgba(244,241,237,0.85)" : "rgba(244,241,237,0.4)"} />
       ))}
@@ -64,7 +65,7 @@ function Rose({ bearing }: { bearing: number | null }) {
 
 function Chip({ on, onClick, children, sub }: { on: boolean; onClick: () => void; children: React.ReactNode; sub?: string }) {
   return (
-    <button type="button" onClick={onClick} aria-pressed={on} className={`text-left border px-4 py-3 transition-colors ${on ? "bg-paper text-ink border-paper" : "border-white/25 text-paper hover:border-white/60"}`}>
+    <button type="button" onClick={onClick} aria-pressed={on} className={`text-left border px-4 py-3 transition-colors ${on ? "bg-paper text-ink border-paper" : "border-[#A9D3D6]/30 text-paper hover:border-[#E8A598]"}`}>
       <span className="block ledger-display text-[17px] leading-snug">{children}</span>
       {sub && <span className={`hidden sm:block text-[12.5px] mt-0.5 ${on ? "ledger-muted" : "text-white/60"}`}>{sub}</span>}
     </button>
@@ -162,8 +163,8 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
   const Heading = global ? "h1" : "h2";
 
   return (
-    <section id="compass" className={`${global ? "" : "mt-16 md:mt-24"} scroll-mt-32 bg-ink text-paper -mx-5 md:mx-0 px-5 md:px-12 py-12 md:py-16 relative overflow-hidden`} aria-labelledby="compass-heading">
-      <div className="pointer-events-none absolute inset-3 md:inset-4 border border-white/15" aria-hidden="true" />
+    <section id="compass" className={`${global ? "" : "mt-16 md:mt-24"} scroll-mt-32 text-paper -mx-5 md:mx-0 px-5 md:px-12 pt-12 md:pt-16 pb-12 relative overflow-hidden bg-[#2D2A26] bg-[radial-gradient(90%_70%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%),radial-gradient(70%_50%_at_0%_100%,rgba(139,37,37,0.28),transparent_60%)]`} aria-labelledby="compass-heading">
+      <div className="pointer-events-none absolute inset-3 md:inset-4 border border-[#A9D3D6]/20" aria-hidden="true" />
       <div className="relative grid lg:grid-cols-[1fr_260px] gap-10 items-start">
         <div>
           <p className="ledger-eyebrow !text-white/70">{global ? "The James Wild Compass · a few questions, one reading" : `The ${country} Compass · three questions, one reading`}</p>
@@ -256,9 +257,26 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
           </div>
           {picks.length === 0 && <p className="mt-4 text-white/70">Nothing in the Ledger fits all three yet. Send the reading and James will answer it himself.</p>}
 
+          {/* Field notes: what the house would avoid, for this reading */}
+          <aside className="mt-8 bg-[#EAE6DF] text-ink p-6 md:p-7 -rotate-[0.35deg] shadow-[0_8px_30px_rgba(0,0,0,0.35)] relative" aria-label="What we'd avoid">
+            <span className="absolute -top-3 left-8 w-24 h-6 bg-[#E4EEEC]/90 rotate-[-3deg]" aria-hidden="true" />
+            <div className="flex flex-wrap items-baseline justify-between gap-3">
+              <p className="ledger-eyebrow ledger-crimson">Field notes · what James Wild &amp; Co avoids</p>
+              <p className="ledger-hand text-xl text-[#22656E]">learned the long way, so you don&rsquo;t have to</p>
+            </div>
+            <ul className="mt-4 grid md:grid-cols-3 gap-5">
+              {avoidsFor(where as Region | "any", when as Season | "any", who as Traveller).map((a) => (
+                <li key={a.avoid} className="border-t ledger-rule pt-3">
+                  <p className="flex gap-2 ledger-display text-[17px] leading-snug"><X className="w-4 h-4 mt-1 shrink-0 ledger-crimson" strokeWidth={2} aria-hidden="true" /><span><span className="sr-only">Avoid: </span>{a.avoid}</span></p>
+                  <p className="mt-1.5 ledger-hand text-[21px] leading-snug text-[#1d4f56]">{a.instead}</p>
+                </li>
+              ))}
+            </ul>
+          </aside>
+
           {/* Build the journey */}
-          <div id="compass-journey" className="mt-14 border-t border-white/20 pt-10">
-            <p className={`ledger-eyebrow ${HL} flex items-center gap-2`}><RouteIcon className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Build the journey · from the Overland routes</p>
+          <div id="compass-journey" className="mt-14 -mx-5 md:-mx-12 px-5 md:px-12 py-10 md:py-12 bg-[#1d4f56] bg-[repeating-linear-gradient(-35deg,rgba(255,255,255,0.035)_0_1px,transparent_1px_9px)] border-y border-[#22656E]">
+            <p className="ledger-eyebrow !text-[#A9D3D6] flex items-center gap-2"><RouteIcon className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Build the journey · from the Overland routes</p>
             <h3 className="ledger-display text-2xl md:text-4xl mt-2">Turn the Reading Into a Route</h3>
             <p className="mt-3 text-[15.5px] text-white/70 max-w-2xl">Four more answers and the Compass drafts a route: the regions in order, a vetted stay for each, and the time between them. James finishes it with you.</p>
             <div className="mt-7 grid md:grid-cols-2 lg:grid-cols-[1fr_1fr_1.6fr_1fr] gap-6">
@@ -308,6 +326,12 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
                           })}
                           <li className="sm:col-span-2 text-[12.5px] ledger-muted pl-10">{r.end === "osa" ? "Fly home from Puerto Jiménez via San José." : fmtTransfer(legs[legs.length - 1].at, "sjo")?.replace("from", "back to San José from")}</li>
                         </ol>
+                        {AVOID_BY_ROUTE[r.id] && (
+                          <div className="mx-5 mb-5 bg-[#E4EEEC] border-l-2 border-crimson px-4 py-3">
+                            <p className="ledger-eyebrow ledger-crimson">Field note · avoid</p>
+                            <p className="mt-1 text-[14.5px]"><span className="ledger-display">{AVOID_BY_ROUTE[r.id].avoid}</span> <span className="ledger-hand text-[19px] text-[#1d4f56]">{AVOID_BY_ROUTE[r.id].instead}</span></p>
+                          </div>
+                        )}
                       </div>
                       <div className="mt-auto p-5 border-t ledger-rule flex flex-wrap items-center gap-3">
                         <Link href={enquire(r.id)} className="ledger-btn ledger-btn--solid" data-event="compass_route_enquire">Send this journey</Link>
@@ -322,16 +346,16 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
           </div>
 
           {/* The hand-over */}
-          <div className="mt-12 grid md:grid-cols-3 gap-4">
+          <div className="mt-10 grid md:grid-cols-3 gap-4">
             <Link href={enquire()} className="bg-[#8B2525] hover:bg-[#6E1C1C] transition-colors p-5 flex items-start gap-3" data-event="compass_enquire">
               <PenLine className="w-5 h-5 mt-0.5 shrink-0" strokeWidth={1.5} aria-hidden="true" />
               <span><span className="block ledger-display text-xl">Send my reading</span><span className="block text-[13.5px] text-white/80 mt-1">Your shortlist, your route and the hidden place, answered by James personally.</span></span>
             </Link>
-            <a href={CALL_URL} className="border border-white/30 hover:border-white p-5 flex items-start gap-3" data-event="compass_call">
+            <a href={CALL_URL} className="border border-[#A9D3D6]/40 hover:border-[#A9D3D6] p-5 flex items-start gap-3" data-event="compass_call">
               <CalendarClock className="w-5 h-5 mt-0.5 shrink-0" strokeWidth={1.5} aria-hidden="true" />
               <span><span className="block ledger-display text-xl">Book a call with James</span><span className="block text-[13.5px] text-white/70 mt-1">Twenty minutes, your reading on the table.</span></span>
             </a>
-            <Link href={advisorHref} className="border border-white/30 hover:border-white p-5 flex items-start gap-3" data-event="compass_advisor">
+            <Link href={advisorHref} className="border border-[#A9D3D6]/40 hover:border-[#A9D3D6] p-5 flex items-start gap-3" data-event="compass_advisor">
               <UserRound className="w-5 h-5 mt-0.5 shrink-0" strokeWidth={1.5} aria-hidden="true" />
               <span><span className="block ledger-display text-xl">Choose an advisor</span><span className="block text-[13.5px] text-white/70 mt-1">Advisors who know {country}, or keep the one you already have.</span></span>
             </Link>

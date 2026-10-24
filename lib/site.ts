@@ -99,6 +99,8 @@ export const VOLUMES: MegaMenu[] = [
     intro: "Small ships and sailing yachts, never the big ones.",
     browse: [
       { label: "By ship", href: "/voyages" },
+      { label: "Departures 2027–2028", href: "/voyages/departures" },
+      { label: "Charter a whole yacht", href: "/voyages/charter" },
       { label: "Polar", href: "/voyages?region=polar" },
       { label: "Islands", href: "/voyages?region=islands" },
       { label: "Sailing yachts", href: "/voyages?type=yacht" },

@@ -50,6 +50,7 @@ export type MegaMenu = {
 
 // Utility row: trust and contact, above the main bar.
 export const UTILITY_NAV: NavLink[] = [
+  { label: "The Compass", href: "/compass" },
   { label: "The Ledger", href: "/the-ledger" },
   { label: "Meet James", href: "/about/founder" },
   { label: "For Advisors", href: "/for-advisors" },

@@ -2,9 +2,9 @@
 // which Costa Rica, when) read the Ledger and return a shortlist, a held-back
 // hidden place and three ways to hand over to a person.
 //
-// Traveller types per stay are DRAFTS (2–3 each, approved to be drafted on
-// 24 Oct 2026) awaiting James's sign-off; they become Stay.best_for in the
-// library once approved. Regions group the Ledger's own area names.
+// Traveller types per stay: approved by James 24 Oct 2026 and filed as
+// Stay.best_for (wellness waits for the Stay enum). Regions group the
+// Ledger's own area names.
 
 export type Traveller = "honeymoon" | "family" | "adventure" | "wildlife" | "wellness" | "solo";
 export type Region = "volcano" | "cloud" | "caribbean" | "pacific" | "river";
@@ -33,7 +33,7 @@ export const SEASONS: { id: Season; label: string; line: string }[] = [
   { id: "green", label: "May to November", line: "Green season: fewer people, the Caribbean at its best" },
 ];
 
-// Draft traveller types (slug → types). Awaiting approval.
+// Approved traveller types (slug → types).
 export const DRAFT_TYPES: Record<string, Traveller[]> = {
   "aguas-claras": ["honeymoon", "family", "solo"],
   "amor-arenal": ["honeymoon", "wellness"],

@@ -2,6 +2,7 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
+import CompassBand from "@/components/home/CompassBand";
 import {
   FilmSection,
   HouseJournal,
@@ -83,6 +84,7 @@ export default function Home() {
         <PlacesMarquee />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <HouseStory />
+          <CompassBand />
           <VolumeDoors />
           <HouseStandard />
           <SignatureShelf />

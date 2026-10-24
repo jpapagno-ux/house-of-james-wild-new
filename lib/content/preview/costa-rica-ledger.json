@@ -1,0 +1,214 @@
+{
+ "snapshot": "2026-10-24",
+ "items": [
+  {
+   "id": "6a85bfb37f6eb35689bff8b5",
+   "name": "Aguas Claras",
+   "slug": "aguas-claras",
+   "ledgerId": "STY-2026-000006",
+   "kind": "Hotel",
+   "tagline": "Artful Caribbean hideaway on Playa Chiquita",
+   "bestMonths": "May–Nov",
+   "lat": 9.643245,
+   "lng": -82.720328,
+   "area": "South Caribbean Coast",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
+   "created": "2026-08-19T14:37:39.557000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8bc",
+   "name": "Amor Arenal",
+   "slug": "amor-arenal",
+   "ledgerId": "STY-2026-000013",
+   "kind": "Hotel",
+   "tagline": "Jungle Intimacy, Volcano Views",
+   "bestMonths": "December to April",
+   "lat": 10.5125,
+   "lng": -84.6925,
+   "area": "Arenal & La Fortuna",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/82e39722d_fa5a2d772_68d951c7fe6e143996ff061f_07dafdee.avif",
+   "created": "2026-08-19T14:37:39.557000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c4",
+   "name": "Arenal Springs Camp by Nayara",
+   "slug": "arenal-springs-camp-by-nayara",
+   "ledgerId": "STY-2026-000021",
+   "kind": "Camp",
+   "tagline": "Where lush rainforest meets private plunge‑pool luxury under the volcano’s gaze.",
+   "bestMonths": "December–April",
+   "lat": 10.4711,
+   "lng": -84.6441,
+   "area": "Arenal & La Fortuna",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.",
+   "created": "2026-08-19T14:37:39.557000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c5",
+   "name": "Arenas Del Mar Resort",
+   "slug": "arenas-del-mar-resort",
+   "ledgerId": "STY-2026-000022",
+   "kind": "Resort",
+   "tagline": "Where rainforest, wildlife, and the Pacific Ocean meet in perfect harmony.",
+   "bestMonths": "December–April & July–August",
+   "lat": 9.4018,
+   "lng": -84.1655,
+   "area": "Manuel Antonio",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/f7fef1137_e77c39766_6a33b2260d0c6d3eb5f502dc_9dae54cf.webp",
+   "created": "2026-08-19T14:37:39.557000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff939",
+   "name": "Kura Boutique Resort",
+   "slug": "kura-boutique-resort",
+   "ledgerId": "STY-2026-000138",
+   "kind": "Resort",
+   "tagline": "An adults-only rainforest sanctuary suspended between jungle and ocean.",
+   "bestMonths": "December–April & July–August",
+   "lat": 9.1686,
+   "lng": -83.7398,
+   "area": "Costa Ballena",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/8a119d498_73f956145_6a33a770c92adf24ef3a82a7_photo-gallery-32-Relaxing-at-the-Pool-3.jpg",
+   "created": "2026-08-19T14:37:39.559000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93f",
+   "name": "Lapa Rios Lodge",
+   "slug": "lapa-rios-lodge",
+   "ledgerId": "STY-2026-000144",
+   "kind": "Lodge",
+   "tagline": "Rainforest Wild, Ocean Close",
+   "bestMonths": "December–April",
+   "lat": 8.4243,
+   "lng": -83.302,
+   "area": "Osa Peninsula",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/b9592cd63_9c4b191c5_697c95f55345b812fe4cbb48_Lapa-Rios.webp",
+   "created": "2026-08-19T14:37:39.559000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff964",
+   "name": "Nayara Gardens",
+   "slug": "nayara-gardens",
+   "ledgerId": "STY-2026-000181",
+   "kind": "Hotel",
+   "tagline": "Luxury rainforest living beneath Costa Rica’s iconic Arenal Volcano.",
+   "bestMonths": "December–April",
+   "lat": 10.4925,
+   "lng": -84.6739,
+   "area": "Arenal & La Fortuna",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp",
+   "created": "2026-08-19T14:37:39.560000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff966",
+   "name": "Nayara Tented Camp",
+   "slug": "nayara-tented-camp",
+   "ledgerId": "STY-2026-000183",
+   "kind": "Camp",
+   "tagline": "Safari-style rainforest luxury beneath Costa Rica’s Arenal Volcano.",
+   "bestMonths": "December–April",
+   "lat": 10.4927,
+   "lng": -84.6741,
+   "area": "Arenal & La Fortuna",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/e8df2c2e3_bf665885c_6a1f3d748a1e0715bb30166b_6a14bb2dbd7f9a491f3beefd_our-resorts-gardens-h-1jpg.web",
+   "created": "2026-08-19T14:37:39.560000"
+  },
+  {
+   "id": "6a899f05971d64c73c5417c1",
+   "name": "Noah Forest by Tifakara",
+   "slug": "noah-forest-by-tifakara",
+   "ledgerId": "STY-2026-506087",
+   "kind": "Lodge",
+   "tagline": "Reconnect with yourself in the rainforest, where river sounds, wildlife and Arenal Volcano create the backdrop.",
+   "bestMonths": "December–April",
+   "lat": 10.480337,
+   "lng": -84.636103,
+   "area": "Arenal & La Fortuna",
+   "image": null,
+   "created": "2026-08-22T13:07:17.892000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97d",
+   "name": "Pacuare Lodge",
+   "slug": "pacuare-lodge",
+   "ledgerId": "STY-2026-000206",
+   "kind": "Lodge",
+   "tagline": "Wild Luxury by the River",
+   "bestMonths": "December–April",
+   "lat": 10.1821,
+   "lng": -83.6048,
+   "area": "Pacuare River",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/5829030fb_7167f76bf_697cc5c05df524de05820911_Pacuare-Hero-image.jpg",
+   "created": "2026-08-19T14:37:39.560000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99c",
+   "name": "Senda Monteverde Lodge",
+   "slug": "senda-monteverde-lodge",
+   "ledgerId": "STY-2026-000237",
+   "kind": "Lodge",
+   "tagline": "A luxury cloud forest sanctuary immersed in Costa Rica's most magical ecosystem.",
+   "bestMonths": "December–May",
+   "lat": 10.3096,
+   "lng": -84.8218,
+   "area": "Monteverde Cloud Forest",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled.webp",
+   "created": "2026-08-19T14:37:39.560000"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9cf",
+   "name": "Tabacón Thermal Resort & Spa",
+   "slug": "tabacon-thermal-resort-spa",
+   "ledgerId": "STY-2026-000288",
+   "kind": "Resort",
+   "tagline": "Follow the living water back to yourself.",
+   "bestMonths": "January–December",
+   "lat": 10.4916133,
+   "lng": -84.7220382,
+   "area": "Arenal & La Fortuna",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/b7955e5bc_8dd852bd3_6a738de121f7657770e2252a_3-hotel-aerial.jpg",
+   "created": "2026-08-19T14:37:39.561000"
+  },
+  {
+   "id": "6a89a1a6695188166ffccdbf",
+   "name": "The Art Villa",
+   "slug": "the-art-villa",
+   "ledgerId": "STY-2026-391539",
+   "kind": "Villa",
+   "tagline": "Architecture Hidden in the Jungle",
+   "bestMonths": "December to April",
+   "lat": 9.1884,
+   "lng": -83.7315,
+   "area": "Costa Ballena",
+   "image": "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/9a44dceae_95aa4624e_6931ff6a5dd754fcdc13243b_3_4-1.jpg",
+   "created": "2026-08-22T13:18:30.839000"
+  }
+ ],
+ "notes": [
+  [
+   "Aguas Claras 2",
+   "STY-2026-995591",
+   "Parked as coming soon (duplicate)"
+  ],
+  [
+   "Boluntiku Hotel",
+   "STY-2026-000044",
+   "Incomplete record: no coordinates, tagline or address yet"
+  ],
+  [
+   "Coco Costa Rica",
+   "STY-2026-000062",
+   "Incomplete record: no coordinates, tagline or address yet"
+  ],
+  [
+   "Isla Palenque Resort",
+   "STY-2026-000117",
+   "Address is in Panama; linked to Costa Rica by mistake"
+  ],
+  [
+   "The Atelier Villa",
+   "STY-2026-207076",
+   "Incomplete record: no coordinates, tagline or address yet"
+  ]
+ ]
+}

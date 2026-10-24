@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, ArrowUpRight, Phone } from "lucide-react";
+import { Menu, X, ArrowUpRight, Phone, Search } from "lucide-react";
+import SearchPanel from "./SearchPanel";
 import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, VOLUMES, type MegaMenu } from "@/lib/site";
 
 // SiteHeader — utility row + main bar with the five volumes.
@@ -88,6 +89,21 @@ function DestinationsMenu({ light }: { light: boolean }) {
 export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
   const [solid, setSolid] = useState(!overlay);
   const [open, setOpen] = useState(false);
+  const [searching, setSearching] = useState(false);
+
+  // "/" or Ctrl/⌘+K opens search from anywhere (not while typing in a field).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const t = e.target as HTMLElement;
+      const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable);
+      if ((e.key === "/" && !typing) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k")) {
+        e.preventDefault();
+        setSearching(true);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   useEffect(() => {
     if (!overlay) return;
@@ -140,7 +156,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">
-          <ul className="flex items-center gap-6">
+          <ul className="flex items-center gap-5 xl:gap-6">
             {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
             <DestinationsMenu light={light} />
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
@@ -150,9 +166,19 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         </nav>
 
         <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setSearching(true)}
+            className={`inline-flex items-center gap-2 h-10 px-3 lg:px-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
+            aria-label="Search the Ledger"
+          >
+            <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
+            <span className="hidden 2xl:inline ledger-eyebrow !text-[10.5px] !text-current">Search</span>
+            <kbd className="hidden 2xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">/</kbd>
+          </button>
           <Link
             href={PLAN_CTA.href}
-            className={`hidden sm:inline-flex items-center h-10 px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
+            className={`hidden sm:inline-flex items-center whitespace-nowrap h-10 px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
               light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-crimson !text-crimson hover:bg-crimson hover:!text-paper"
             }`}
           >
@@ -165,9 +191,14 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       </div>
 
     </header>
+      <SearchPanel open={searching} onClose={() => setSearching(false)} />
       {/* Mobile menu: full screen, volumes first */}
       <div className={`lg:hidden fixed inset-x-0 top-[72px] bottom-0 z-40 ledger-page overflow-y-auto transition-opacity duration-300 ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}>
         <nav aria-label="Mobile" className="px-5 py-6 text-ink">
+          <button type="button" onClick={() => { setOpen(false); setSearching(true); }} className="w-full flex items-center gap-3 h-12 px-4 border ledger-rule mb-6 text-left">
+            <Search className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
+            <span className="ledger-muted text-[16px]">Search stays, camps, ships, countries</span>
+          </button>
           <p className="ledger-eyebrow ledger-crimson">The five volumes</p>
           <ul className="mt-3 border-t ledger-rule">
             {VOLUMES.map((v) => (

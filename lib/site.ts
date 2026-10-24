@@ -64,6 +64,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By land", href: "/stays?by=land" },
       { label: "By water", href: "/stays?by=water" },
+      { label: "New to the Ledger", href: "/stays/new" },
       { label: "Stay longer, pay less", href: "/stays/promos" },
       { label: "All stays", href: "/stays" },
     ],

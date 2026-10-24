@@ -16,6 +16,8 @@
   "dependencies": {
     "@fontsource/caveat": "^5.2.5",
     "@fontsource/eb-garamond": "^5.2.5",
+    "@fontsource/ibm-plex-mono": "^5.2.5",
+    "@fontsource/mrs-saint-delafield": "^5.2.5",
     "@fontsource/playfair-display": "^5.2.5",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.468.0",

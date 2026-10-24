@@ -60,13 +60,25 @@ function DestinationsMenu({ light }: { light: boolean }) {
         Destinations
       </Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute right-0 top-full pt-2 z-50">
-        <div className="w-[420px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] p-6 text-ink">
-          <p className="ledger-eyebrow ledger-crimson">The ten regions</p>
-          <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1.5">
+        <div className="w-[860px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] p-6 text-ink">
+          <div className="flex items-baseline justify-between">
+            <p className="ledger-eyebrow ledger-crimson">The ten regions and their countries</p>
+            <Link href="/destinations" className="ledger-eyebrow hover:ledger-crimson">All destinations</Link>
+          </div>
+          <div className="mt-4 grid grid-cols-5 gap-x-6 gap-y-5">
             {REGIONS.map((r) => (
-              <li key={r.href}><Link href={r.href} className="text-[15px] hover:ledger-crimson">{r.label}</Link></li>
+              <div key={r.href}>
+                <Link href={r.href} className="ledger-display text-[16px] hover:ledger-crimson">{r.label}</Link>
+                {r.countries.length > 0 && (
+                  <ul className="mt-1.5 space-y-1">
+                    {r.countries.map((c) => (
+                      <li key={c.href}><Link href={c.href} className="text-[14px] ledger-muted hover:ledger-crimson">{c.label}</Link></li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </li>

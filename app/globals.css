@@ -38,3 +38,9 @@
   }
   .ledger-btn:hover { background: #8B2525; color: #F4F1ED; }
 }
+
+/* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */
+.ledger-stamp { transform: rotate(-8deg); }
+.ledger-stamp.in { animation: ledger-press .3s ease-out; }
+@keyframes ledger-press { from { transform: rotate(-8deg) scale(1.15); opacity: 0; } to { transform: rotate(-8deg) scale(1); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .ledger-stamp.in { animation: none; } }

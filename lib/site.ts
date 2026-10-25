@@ -183,8 +183,9 @@ export const LEGAL_NAV: NavLink[] = [
   { label: "Privacy", href: "/legal/privacy" },
 ];
 
-// Routes that exist in the current step. The sitemap lists only these, so it
-// never advertises a page that is not built yet. Grows step by step.
+// Pages that are built AND indexable. The sitemap lists only these. Built
+// pages awaiting sign-off stay noindex and off this list (see lib/routes.ts
+// for the link guard's BUILT list). Grows step by step.
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
 ];

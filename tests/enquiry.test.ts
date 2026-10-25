@@ -1,0 +1,11 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { validateEnquiry } from "../lib/enquiry.ts";
+
+const base = { name: "Ana Ruiz", email: "ana@example.com", adults: 2, children: 0, interests: [], contact: "email" as const, hasAdvisor: false, travelNotes: false, context: {}, where: "Costa Rica" };
+
+test("a complete email enquiry passes", () => assert.deepEqual(validateEnquiry(base), {}));
+test("a call needs a phone number", () => assert.ok(validateEnquiry({ ...base, contact: "phone" }).phone));
+test("price-builder context counts as a destination", () => assert.deepEqual(validateEnquiry({ ...base, where: "", context: { trip: "Two Oceans, One Volcano" } }), {}));
+test("bad email and missing name are caught", () => { const e = validateEnquiry({ ...base, name: "", email: "ana@" }); assert.ok(e.name && e.email); });
+test("an outside advisor needs details", () => assert.ok(validateEnquiry({ ...base, hasAdvisor: true }).advisorDetails));

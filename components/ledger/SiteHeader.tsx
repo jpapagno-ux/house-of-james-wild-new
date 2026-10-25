@@ -4,7 +4,15 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight, Phone, Search } from "lucide-react";
 import SearchPanel from "./SearchPanel";
-import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, VOLUMES, type MegaMenu } from "@/lib/site";
+import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
+import { GUARD_ON, isBuilt, live } from "@/lib/routes";
+
+// Link guard: in production only built pages appear in the menus.
+const VOLUMES = live(ALL_VOLUMES).map((v) => ({ ...v, browse: live(v.browse), ledger: live(v.ledger) }));
+const REGIONS = live(ALL_REGIONS).map((r) => ({ ...r, countries: live(r.countries) }));
+const UTILITY_NAV = live(ALL_UTILITY);
+const MAIN_EXTRA = live(ALL_EXTRA);
+const SHOW_DESTINATIONS = !GUARD_ON || isBuilt("/destinations");
 
 // SiteHeader — utility row + main bar with the five volumes.
 // overlay: the header floats transparent over a full-screen hero (home film)
@@ -158,7 +166,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         <nav aria-label="Main" className="hidden lg:block">
           <ul className="flex items-center gap-5 xl:gap-6">
             {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
-            <DestinationsMenu light={light} />
+            {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
               <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}

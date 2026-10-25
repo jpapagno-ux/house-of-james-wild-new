@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FOOTER_COLUMNS, LEGAL_NAV, PLAN_CTA, SITE } from "@/lib/site";
+import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, SITE } from "@/lib/site";
+import { live } from "@/lib/routes";
+
+// Link guard: in production only built pages are listed; empty columns drop.
+const FOOTER_COLUMNS = ALL_COLUMNS.map((c) => ({ ...c, links: live(c.links) })).filter((c) => c.links.length);
+const LEGAL_NAV = live(ALL_LEGAL);
 
 // SiteFooter — a closing call to plan, four link columns, then the
 // credentials strip. Name, address and phone match the Organization schema.

@@ -7,6 +7,8 @@ import { Reveal } from "@/components/ledger/Motion";
 import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart from "@/components/destination/LedgerChart";
 import Compass from "@/components/destination/Compass";
+import Journeys from "@/components/destination/Journeys";
+import { journeysFor } from "@/lib/content/preview/journeys";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import { CHART_COSTA_RICA, projectCostaRica } from "@/lib/charts/costa-rica";
 import { COSTA_RICA as D } from "@/lib/content/preview/costa-rica";
@@ -114,7 +116,7 @@ export default function CostaRicaPreview() {
               ),
             )}
             <span className="ml-auto hidden md:flex items-center gap-5">
-              {[["The map", "the-map"], ["Stays", "stays"], ["Story", "story"], ["Plan", "plan"]].map(([l, id]) => (
+              {[["The map", "the-map"], ["Compass", "compass"], ["Journeys", "journeys"], ["Stays", "stays"], ["Story", "story"], ["Plan", "plan"]].map(([l, id]) => (
                 <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>
               ))}
             </span>
@@ -155,6 +157,9 @@ export default function CostaRicaPreview() {
           {/* Featured stays */}
           {/* The Compass: who, which Costa Rica, when → shortlist, hidden place, hand-over */}
           <Compass country={D.name} stays={stays.map((x) => ({ slug: x.slug, name: x.name, kind: x.kind, area: x.area, tagline: x.tagline, bestMonths: x.bestMonths, image: x.image }))} advisorHref="/advisors?country=costa-rica" />
+
+          {/* Journeys & voyages: one card per Overland route or voyage filed for the country */}
+          <Journeys country={D.name} journeys={journeysFor("costa-rica")} chart={CHART_COSTA_RICA} />
 
           <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow">Featured stays · from Wild Earth Stays</p>

@@ -33,12 +33,80 @@ export const BUILT: string[] = [
   "/destinations/oceania",
   "/destinations/south-america",
   "/destinations/europe",
+  "/destinations/central-america/costa-rica",
+  "/destinations/africa/south-africa",
   "/destinations/polar-arctic",
   "/journal",
   "/legal/terms",
   "/legal/privacy",
   "/legal/booking-conditions",
 ];
+
+// BEGIN GENERATED STAYS (scripts/export-stays.py rewrites this list)
+export const STAY_SLUGS: string[] = [
+  "aguas-claras",
+  "amor-arenal",
+  "arenal-springs-camp-by-nayara",
+  "arenas-del-mar-resort",
+  "babylonstoren",
+  "camp-hwange-muddy-teak",
+  "cape-cadogan-boutique-hotel",
+  "cheetah-plains",
+  "coot-club",
+  "dulini-daunara-lodge",
+  "dulini-leadwood-lodge",
+  "dulini-moya-lodge",
+  "dulini-river-lodge",
+  "ellerman-house",
+  "gorongosa-safaris",
+  "grootbos-private-nature-reserve",
+  "gwe-gwe-beach-lodge",
+  "isla-palenque-resort",
+  "kura-boutique-resort",
+  "kwande-private-game-reserve",
+  "la-cle",
+  "la-residence",
+  "lales-camp-expeditions",
+  "lalibela-reserve",
+  "lapa-rios-lodge",
+  "le-quartier-francais",
+  "leeu-estates",
+  "leeu-house",
+  "lekkerwater-dehoop",
+  "leopard-hills",
+  "lion-sands",
+  "londolozi-reserve",
+  "madikwe",
+  "monwana-thornybush",
+  "morukuru-farm-house",
+  "nayara-gardens",
+  "nayara-tented-camp",
+  "ngala-safari-lodge-by-beyond",
+  "pacuare-lodge",
+  "pearl-resort-vahine-private-island",
+  "phinda-homestead-by-and-beyond",
+  "pods-camp-bay",
+  "royal-malewane",
+  "samara-karoo-reserve",
+  "senda-monteverde-lodge",
+  "singita-boulders",
+  "singita-castleton",
+  "singita-ebony",
+  "singita-ebony-villa",
+  "singita-lebombo",
+  "singita-lebombo-villa",
+  "singita-sweni",
+  "tabacon-thermal-resort-spa",
+  "tanda-tula",
+  "tengile-mala-mala-camp",
+  "tengile-mala-mala-kirkmans-kamp",
+  "tengile-mala-mala-rattrays-lodge",
+  "tengile-mala-mala-sable-camp",
+  "tengile-river-lodge-by-mala-mala",
+  "the-art-villa",
+  "tswalu-reserve",
+];
+// END GENERATED STAYS
 
 export const GUARD_ON = process.env.NEXT_PUBLIC_LINK_GUARD === "on" || process.env.NEXT_PUBLIC_VERCEL_ENV === "production";
 
@@ -52,6 +120,7 @@ export function isBuilt(href: string): boolean {
   if (/^(https?:|mailto:|tel:)/.test(href)) return true;
   const path = href.split(/[?#]/)[0].replace(/\/$/, "") || "/";
   if (href.split("#")[0].includes("?") && !QUERY_AWARE.includes(path)) return false;
+  if (path.startsWith("/stays/")) return STAY_SLUGS.includes(path.slice(7));
   return BUILT.some((b) => (b.endsWith("/*") ? path.startsWith(b.slice(0, -1)) : b === path));
 }
 

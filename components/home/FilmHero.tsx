@@ -2,14 +2,16 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { Play } from "lucide-react";
 
 // FilmHero — the top of the home page: the Wild Earth Stays film loops
 // full-screen, muted and inline. The poster is rendered first as a priority
 // next/image (the LCP element), and the video fades in over it once it can
 // play, so the film never delays first paint. The H1, calls to action and a
-// rotating quote card filed like a Ledger entry sit over it.
+// rotating quote sit over it; the quote has no card (25 Oct 2026), just a
+// hairline and white type, so the film shows through.
 // Reduced motion → poster only, quotes don't rotate.
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -24,7 +26,7 @@ type Props = {
 };
 
 export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#film" }: Props) {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const [q, setQ] = useState(0);
   const [ready, setReady] = useState(false);
 
@@ -81,20 +83,20 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
 
           {/* Rotating quotes, filed like Ledger entries */}
           <motion.figure
-            className="relative hidden sm:block bg-paper/95 text-ink p-5 md:p-7 shadow-[0_8px_30px_rgba(0,0,0,0.25)] rotate-[0.6deg]"
+            className="relative hidden sm:block text-white pl-6 md:pl-8 border-l border-white/40 max-w-[480px] lg:ml-auto"
             initial={reduce ? false : { opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, ease: EASE, delay: 0.35 }}
           >
-            <div className="flex items-center justify-between border-b ledger-rule pb-2">
-              <span className="ledger-eyebrow ledger-crimson">From the Ledger</span>
-              <span className="ledger-eyebrow">No. {String(q + 1).padStart(2, "0")} / {String(quotes.length).padStart(2, "0")}</span>
+            <div className="flex items-center justify-between gap-6">
+              <span className="ledger-eyebrow !text-white/80">From the Ledger</span>
+              <span className="ledger-eyebrow !text-white/60">No. {String(q + 1).padStart(2, "0")} / {String(quotes.length).padStart(2, "0")}</span>
             </div>
             <div className="relative min-h-[120px] md:min-h-[140px] mt-3 md:mt-4" aria-live="polite">
               <AnimatePresence mode="wait">
                 <motion.div key={q} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -12 }} transition={{ duration: 0.6, ease: EASE }}>
-                  <blockquote className="ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.text}&rdquo;</blockquote>
-                  <figcaption className="mt-2 md:mt-3 ledger-eyebrow">{quote.by}</figcaption>
+                  <blockquote className="ledger-display italic text-xl md:text-[1.7rem] leading-snug drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">&ldquo;{quote.text}&rdquo;</blockquote>
+                  <figcaption className="mt-2 md:mt-3 ledger-eyebrow !text-white/75">{quote.by}</figcaption>
                 </motion.div>
               </AnimatePresence>
             </div>
@@ -106,11 +108,11 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
                   aria-label={`Show quote ${i + 1}`}
                   aria-pressed={i === q}
                   onClick={() => setQ(i)}
-                  className={`h-[3px] transition-all duration-500 ${i === q ? "w-8 bg-crimson" : "w-4 bg-ink/25 hover:bg-ink/50"}`}
+                  className={`h-[3px] transition-all duration-500 ${i === q ? "w-8 bg-white" : "w-4 bg-white/35 hover:bg-white/60"}`}
                 />
               ))}
             </div>
-            <Image src="/brand/jwco-hare-240.png" alt="" aria-hidden="true" width={96} height={96} className="absolute -top-10 -right-6 w-24 h-24 object-contain rotate-[-10deg] opacity-90" />
+            <Image src="/brand/jwco-hare-cream-240.png" alt="" aria-hidden="true" width={80} height={80} className="absolute -top-24 right-0 w-20 h-20 object-contain rotate-[-10deg] opacity-80" />
           </motion.figure>
         </div>
       </div>

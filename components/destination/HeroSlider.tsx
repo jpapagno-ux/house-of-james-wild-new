@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // HeroSlider — the full-screen photo hero on every region and country page.
@@ -17,7 +18,7 @@ export type Slide = { src: string; alt: string; caption?: string };
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export default function HeroSlider({ slides, interval = 6500, label, children }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode }) {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
   const touch = useRef<number | null>(null);

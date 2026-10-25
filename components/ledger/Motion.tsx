@@ -1,7 +1,8 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion, useReducedMotion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 // The house's scroll language, ported from the Base44 sample: sections settle
 // in, stamps press down, a crimson hairline tracks reading. Only opacity and
@@ -11,7 +12,7 @@ import { motion, useReducedMotion, useScroll, useSpring } from "framer-motion";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 export function Reveal({ children, delay = 0, y = 28, className = "" }: { children: ReactNode; delay?: number; y?: number; className?: string }) {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   if (reduce) return <div className={className}>{children}</div>;
   return (
     <motion.div
@@ -27,7 +28,7 @@ export function Reveal({ children, delay = 0, y = 28, className = "" }: { childr
 }
 
 export function StampPress({ children, className = "", delay = 0.15 }: { children: ReactNode; className?: string; delay?: number }) {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   if (reduce) return <div className={className}>{children}</div>;
   return (
     <motion.div
@@ -43,7 +44,7 @@ export function StampPress({ children, className = "", delay = 0.15 }: { childre
 }
 
 export function ScrollProgress() {
-  const reduce = useReducedMotion();
+  const reduce = useReducedMotionSafe();
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 });
   if (reduce) return null;

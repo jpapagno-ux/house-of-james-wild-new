@@ -14,8 +14,8 @@ export default function WhenToGo({ place, rows, airports, transfers }: { place: 
     <section id="when" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="when-heading">
       <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><CalendarDays className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> When to go &amp; getting there</p>
       <h2 id="when-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Months, and the Way In</h2>
-      <div className="mt-7 grid lg:grid-cols-[1.5fr_1fr] gap-10 items-start">
-        <div className="overflow-x-auto">
+      <div className="mt-7 grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-10 items-start">
+        <div className="relative min-w-0 overflow-x-auto">
           <table className="w-full min-w-[560px] text-[13px] border-separate border-spacing-[3px]">
             <caption className="sr-only">Best, good and wettest months by area in {place}</caption>
             <thead><tr><th className="text-left ledger-eyebrow font-normal pr-3">Area</th>{M.map((m, i) => <th key={i} scope="col" className="ledger-eyebrow font-normal w-8"><abbr title={MONTH_NAMES[i]} className="no-underline">{m}</abbr></th>)}</tr></thead>

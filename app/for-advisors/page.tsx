@@ -54,7 +54,7 @@ export default function ForAdvisorsPage() {
 
           <section className="mt-14 md:mt-20" aria-labelledby="compare-heading">
             <SectionHead eyebrow="The comparison, filed plainly" title="Why Advisors Choose the Desk" id="compare-heading" />
-            <div className="mt-6 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
+            <div className="relative mt-6 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
               <table className="w-full min-w-[620px] text-[15px]">
                 <thead><tr className="text-left"><th className="w-[18%] pb-3" /><th className="ledger-eyebrow pb-3 font-normal w-[36%]">A typical advisor network</th><th className="ledger-eyebrow ledger-crimson pb-3 font-normal">James Wild &amp; Co</th></tr></thead>
                 <tbody>{a.compare.map(([k, them, us]) => <tr key={k} className="border-t ledger-border align-top"><th scope="row" className="py-3.5 pr-4 text-left ledger-display font-normal text-[1.05rem]">{k}</th><td className="py-3.5 pr-4 ledger-muted">{them}</td><td className="py-3.5">{us}</td></tr>)}</tbody>

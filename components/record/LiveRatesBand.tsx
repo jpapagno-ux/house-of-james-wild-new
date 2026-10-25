@@ -17,7 +17,8 @@ const iso = (d: Date) => d.toISOString().slice(0, 10);
 function defaults() { const a = new Date(); a.setDate(a.getDate() + 45); const b = new Date(a); b.setDate(b.getDate() + 3); return { checkIn: iso(a), checkOut: iso(b) }; }
 
 export default function LiveRatesBand({ property, name }: { property: string; name: string }) {
-  const [q, setQ] = useState({ ...defaults(), adults: 2 });
+  const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
+  const [today, setToday] = useState("");
   const [state, setState] = useState<"loading" | "ok" | "none" | "error">("loading");
   const [res, setRes] = useState<Result | null>(null);
   const [engine, setEngine] = useState("");
@@ -34,7 +35,7 @@ export default function LiveRatesBand({ property, name }: { property: string; na
     } catch { setState("error"); }
   }, [property]);
 
-  useEffect(() => { run(q); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => { const d = { ...defaults(), adults: 2 }; setToday(iso(new Date())); setQ(d); run(d); }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const fmt = (n: number, c = "USD") => `${c === "USD" ? "US$" : `${c} `}${n.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
   const fetched = res ? new Date(res.fetchedAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : "";
@@ -46,7 +47,7 @@ export default function LiveRatesBand({ property, name }: { property: string; na
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">The booking engine&rsquo;s own price for your dates and party, refreshed every 15 minutes. The house confirms every quote before anything is booked.</p>
       <div className="mt-6 border ledger-border bg-paper">
         <form className="flex flex-wrap items-end gap-4 px-5 py-4 border-b ledger-rule bg-paper-card/60" onSubmit={(e) => { e.preventDefault(); run(q); }}>
-          <label className="block"><span className="ledger-eyebrow flex items-center gap-1.5"><CalendarDays className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Check-in</span><input type="date" value={q.checkIn} min={iso(new Date())} onChange={(e) => setQ({ ...q, checkIn: e.target.value })} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]" /></label>
+          <label className="block"><span className="ledger-eyebrow flex items-center gap-1.5"><CalendarDays className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Check-in</span><input type="date" value={q.checkIn} min={today || undefined} onChange={(e) => setQ({ ...q, checkIn: e.target.value })} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]" /></label>
           <label className="block"><span className="ledger-eyebrow">Check-out</span><input type="date" value={q.checkOut} min={q.checkIn} onChange={(e) => setQ({ ...q, checkOut: e.target.value })} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]" /></label>
           <label className="block"><span className="ledger-eyebrow flex items-center gap-1.5"><Users className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Adults</span><select value={q.adults} onChange={(e) => setQ({ ...q, adults: Number(e.target.value) })} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]">{[1, 2, 3, 4, 5, 6, 8, 10].map((n) => <option key={n}>{n}</option>)}</select></label>
           <button type="submit" className="ledger-btn inline-flex items-center gap-2"><RefreshCcw className={`w-3.5 h-3.5 ${state === "loading" ? "animate-spin" : ""}`} strokeWidth={1.5} aria-hidden="true" /> Update search</button>

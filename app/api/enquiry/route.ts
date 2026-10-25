@@ -10,8 +10,7 @@ import { enquiryEmail } from "@/lib/enquiry-email";
 //
 // Env (Vercel → Settings → Environment Variables):
 //   RESEND_API_KEY       from resend.com, after jameswildco.com is verified
-//   ENQUIRY_FROM         e.g. "James Wild & Co <enquiries@jameswildco.com>"
-//   ENQUIRY_TRIPS_TO     main inbox for trip enquiries (until set in lib/inbox.ts)
+//   ENQUIRY_FROM         optional; defaults to "James Wild & Co <hello@jameswildco.com>"
 //   ENQUIRY_LIVE         "on" to start sending
 
 export async function POST(req: Request) {
@@ -30,7 +29,7 @@ export async function POST(req: Request) {
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: process.env.ENQUIRY_FROM ?? "James Wild & Co <enquiries@jameswildco.com>", to: [to], reply_to: body.email, subject: mail.subject, text: mail.text, html: mail.html }),
+    body: JSON.stringify({ from: process.env.ENQUIRY_FROM ?? "James Wild & Co <hello@jameswildco.com>", to: [to], reply_to: body.email, subject: mail.subject, text: mail.text, html: mail.html }),
   });
   if (!res.ok) {
     console.error("enquiry: resend failed", res.status, await res.text().catch(() => ""));

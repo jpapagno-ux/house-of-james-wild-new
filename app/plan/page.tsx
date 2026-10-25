@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import Link from "next/link";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
@@ -46,6 +46,7 @@ export default function PlanPage() {
               </div>
               <div className="mt-8 border-t ledger-rule pt-5 space-y-3 text-[16px]">
                 <a href={`tel:${SITE.phone.tel}`} className="flex items-center gap-3 hover:ledger-crimson"><Phone className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {SITE.phone.display}</a>
+                {SITE.email && <a href={`mailto:${SITE.email}`} className="flex items-center gap-3 hover:ledger-crimson"><Mail className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {SITE.email}</a>}
                 <Link href="/plan/iggi" className="flex items-center gap-3 hover:ledger-crimson"><MessageCircle className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Quick question? Meet Iggi (coming soon)</Link>
                 <Link href="/compass" className="block ledger-btn-ghost w-fit">Not sure where yet? Take the Compass</Link>
               </div>
@@ -99,7 +100,7 @@ export default function PlanPage() {
           <FaqBlock faqs={p.faqs} title="Planning, answered" />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "ContactPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Plan your journey with James Wild & Co", about: { "@id": ids.house } }, { "@type": "TravelAgency", "@id": ids.house, contactPoint: { "@type": "ContactPoint", telephone: SITE.phone.tel, contactType: "reservations", areaServed: "Worldwide", availableLanguage: ["English"] } })} />
+      <JsonLd data={graph({ "@type": "ContactPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Plan your journey with James Wild & Co", about: { "@id": ids.house } }, { "@type": "TravelAgency", "@id": ids.house, contactPoint: { "@type": "ContactPoint", telephone: SITE.phone.tel, email: SITE.email ?? undefined, contactType: "reservations", areaServed: "Worldwide", availableLanguage: ["English"] } })} />
     </>
   );
 }

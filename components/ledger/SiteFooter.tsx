@@ -20,6 +20,7 @@ export default function SiteFooter() {
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href={PLAN_CTA.href} className="ledger-btn">{PLAN_CTA.label}</Link>
+            {SITE.email && <a href={`mailto:${SITE.email}`} className="ledger-btn !normal-case !tracking-normal">{SITE.email}</a>}
             <a href={`tel:${SITE.phone.tel}`} className="ledger-btn">{SITE.phone.display}</a>
           </div>
         </div>

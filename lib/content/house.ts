@@ -66,7 +66,7 @@ export const LEDGER = {
     { word: "Once in a lifetime", why: "Go back. James does. That's what the Founder favorite stamp is for." },
     { word: "Curated", why: "Museums curate. We vet. There's a difference, and it involves mosquito nets." },
   ],
-  folio: "Under the Ledger sits the Traveller Folio: each journey gets its own ID, so the house travels with you along the way and you come home to a digital folio of the trip, kept on your own shelf for years.",
+  folio: "Under the Ledger sits the Traveller Folio: each journey gets its own Folio ID, so the house travels with you along the way. Bookings, confirmations and live updates on the road come from myfolio@jameswildco.com under that ID, and you come home to a digital folio of the trip, kept on your own shelf for years.",
   jamesNote: "If I haven't slept in it, sailed it or walked it, or sent someone I'd trust with my own family, it isn't in the Ledger. That's not a policy. It's just how I've always done it.",
   faqs: [
     { q: "What is the James Wild & Co Ledger?", a: "The house's record of every stay, reserve, residence, vessel and route it recommends. Each entry has a permanent Ledger ID and a dated mark showing how the house knows it: stayed, inspected, returned to, or vetted through a named partner." },

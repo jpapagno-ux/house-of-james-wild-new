@@ -31,6 +31,7 @@ export default function FounderPage() {
   const person = {
     ...founder(),
     alternateName: ["James Wild", SITE.founder.alternateName],
+    email: SITE.founder.email,
     description: f.answer,
     image: IMG.dominical.url,
     knowsAbout: ["Safari design", "Small-ship voyages", "Sailing", "Scuba diving", "Surf travel", "Costa Rica", "Botswana", "South Africa", "Raja Ampat", "French Polynesia", "Antarctica"],
@@ -92,7 +93,8 @@ export default function FounderPage() {
             <div>
               <SectionHead eyebrow="Filed under his name" title="Forty-Four Years, on the Record" id="cred-heading" />
               <ul className="mt-6 space-y-2.5 text-[17px]">{f.credentials.map((c) => <li key={c} className="flex gap-3"><span className="ledger-crimson" aria-hidden="true">✦</span>{c}</li>)}</ul>
-              <p className="mt-5 text-[14px] ledger-muted">The house: {SITE.credentials.map((c) => `${c.label} ${c.value}`).join(" · ")}</p>
+              <p className="mt-6 text-[17px]">Write to James: <a href={`mailto:${SITE.founder.email}`} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">{SITE.founder.email}</a></p>
+              <p className="mt-3 text-[14px] ledger-muted">The house: {SITE.credentials.map((c) => `${c.label} ${c.value}`).join(" · ")}</p>
             </div>
             <Reveal><PullQuote text={f.closingQuote} /></Reveal>
           </section>

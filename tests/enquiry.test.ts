@@ -14,7 +14,7 @@ import { inboxFor } from "../lib/inbox.ts";
 test("advisor applications and partner submissions go to advisors@", () => {
   assert.equal(inboxFor({ context: { from: "advisor-application" } }), "advisors@jameswildco.com");
   assert.equal(inboxFor({ context: { from: "partner" } }), "advisors@jameswildco.com");
-  assert.equal(inboxFor({ context: {} }), null);
+  assert.equal(inboxFor({ context: {} }), "hello@jameswildco.com");
 });
 
 import { enquiryEmail } from "../lib/enquiry-email.ts";
@@ -25,3 +25,9 @@ test("the house email carries the context and escapes user text", () => {
   assert.ok(m.html.includes("&lt;b&gt;hi&lt;/b&gt;") && !m.html.includes("<b>hi</b>"));
 });
 test("advisor applications are labelled", () => assert.match(enquiryEmail({ ...base, context: { from: "advisor-application" } }).subject, /^Advisor application/));
+
+import { INBOXES, folioSubject } from "../lib/inbox.ts";
+test("Folio email comes from myfolio@ and carries the traveller's ID", () => {
+  assert.equal(INBOXES.folio, "myfolio@jameswildco.com");
+  assert.equal(folioSubject("JWC-2027-000123", "Booking confirmed"), "Booking confirmed · Folio JWC-2027-000123");
+});

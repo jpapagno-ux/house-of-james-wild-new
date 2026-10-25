@@ -23,7 +23,7 @@ export const LEGAL: LegalDoc[] = [
       { h: "Acceptable use", p: ["Please don't misuse the site: no attempts to break its security, overload it, scrape it at scale, or submit false enquiries."] },
       { h: "Liability", p: ["To the extent the law allows, the site is provided “as is”, and the house is not liable for indirect or consequential loss arising from use of the site. Nothing in these terms limits liability that cannot be limited by law. [Counsel to set the cap and governing wording.]"] },
       { h: "Governing law", p: ["These terms are governed by the laws of the State of Florida, USA, and disputes are subject to the courts of [Miami-Dade County], Florida. [Counsel to confirm venue, arbitration and consumer carve-outs.]"] },
-      { h: "Changes and contact", p: ["We may update these terms; the date at the top shows the latest version. Questions: [house email], 1.800.419.7000."] },
+      { h: "Changes and contact", p: ["We may update these terms; the date at the top shows the latest version. Questions: hello@jameswildco.com, 1.800.419.7000."] },
     ],
   },
   {
@@ -38,10 +38,10 @@ export const LEGAL: LegalDoc[] = [
       { h: "Your Iggi and Compass conversations", p: ["If you choose to send your Compass reading or the useful parts of an Iggi chat with your enquiry, we receive that content and treat it like the rest of your enquiry. [Counsel and the Iggi provider to confirm retention and processing terms before launch.]"] },
       { h: "Who we share it with", p: ["The suppliers delivering your trip (properties, operators, guides, airlines, ground handlers), insurers if you buy cover through us, our host-agency and technology providers acting on our instructions, your own advisor if you ask us to coordinate with them, and authorities where the law requires. Suppliers may be outside the United States."] },
       { h: "How long we keep it", p: ["Enquiries that don't become bookings: [24 months]. Booking records: as long as tax and seller-of-travel rules require, typically [7 years]. Then we delete or anonymise it."] },
-      { h: "Your choices and rights", p: ["You can ask to see, correct or delete your information, or to stop marketing, by writing to [house email]. Depending on where you live (for example California, or the EU and UK), you may have further rights, including to know what we hold and to object to certain uses. We'll respond within the time the law sets."] },
+      { h: "Your choices and rights", p: ["You can ask to see, correct or delete your information, or to stop marketing, by writing to hello@jameswildco.com. Depending on where you live (for example California, or the EU and UK), you may have further rights, including to know what we hold and to object to certain uses. We'll respond within the time the law sets."] },
       { h: "Children", p: ["We collect information about children only from their parent or guardian, and only what a booking needs."] },
       { h: "Security", p: ["We use reputable providers, encryption in transit and access controls. No system is perfectly secure; if something goes wrong that affects you, we'll tell you as the law requires."] },
-      { h: "Contact", p: ["[Legal entity name] trading as James Wild & Co, Miami, Florida, USA. [house email] · 1.800.419.7000."] },
+      { h: "Contact", p: ["[Legal entity name] trading as James Wild & Co, Miami, Florida, USA. hello@jameswildco.com · 1.800.419.7000."] },
     ],
   },
   {
@@ -51,7 +51,7 @@ export const LEGAL: LegalDoc[] = [
     description: "The conditions that apply when you book a journey with James Wild & Co.",
     sections: [
       { h: "Our role", p: ["James Wild & Co acts as a seller of travel and, depending on the arrangement, as agent for the suppliers who provide your travel services, or as the wholesaler who packages them. Your quote and confirmation say which applies. Each supplier's own terms also apply to its services, and we'll give you the key ones before you book."] },
-      { h: "Quotes and confirmation", p: ["An enquiry, a quote, an Iggi answer or a price-builder estimate is not a booking. Your booking is confirmed only when we've received your signed or accepted booking form and the required deposit, and we've issued written confirmation. Please check every detail on it, including names exactly as on passports, and tell us of any error within [48 hours]."] },
+      { h: "Quotes and confirmation", p: ["An enquiry, a quote, an Iggi answer or a price-builder estimate is not a booking. Your booking is confirmed only when we've received your signed or accepted booking form and the required deposit, and we've issued written confirmation. Please check every detail on it, including names exactly as on passports, and tell us of any error within [48 hours].", "Your booking is given a Traveller Folio ID. Booking documents, payment reminders and updates during your journey come from myfolio@jameswildco.com and carry that ID; please quote it when you write to us."] },
       { h: "Prices", p: ["Prices are in US dollars, per person, based on two people sharing (double occupancy), unless stated. Single, child and extra-person rates are quoted separately. Taxes are shown in your quote. [Counsel to confirm the basis of the 7% tax shown in the price builder.] Prices can change before confirmation; after confirmation they change only for reasons set out in your supplier's terms, such as government taxes or fuel surcharges, which we'll explain."] },
       { h: "Deposit and balance", p: ["A deposit of US$500 per person is due to confirm, unless your quote states a higher supplier deposit (some safari camps, yachts and expedition ships require more). The balance is due [90 days] before departure, or earlier where a supplier requires. If the balance isn't paid on time we may cancel and apply cancellation charges."] },
       { h: "Changes by you", p: ["Ask us and we'll try. Changes depend on supplier availability and may carry supplier charges plus a house amendment fee of [US$__ per change]."] },

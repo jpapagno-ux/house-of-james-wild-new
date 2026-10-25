@@ -18,13 +18,15 @@ export const SITE = {
     name: "James Papagno",
     alternateName: "James",
     jobTitle: "Founder & Chief Expedition Officer",
+    email: "james@jameswildco.com", // James's own address, shown on Meet James
   },
   exploringSince: "1982",
   designingSince: "1983",
   safariSince: "2011",
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
-  // Email addresses are being defined; add here once confirmed.
-  email: null as string | null,
+  // hello@ is the house address: customer enquiries, Travel Notes and all
+  // campaign email (James, 25 Oct 2026). Sending runs through Resend.
+  email: "hello@jameswildco.com" as string | null,
   inboxes: INBOXES, // see lib/inbox.ts
   address: { locality: "Miami", region: "FL", country: "US" },
   credentials: [

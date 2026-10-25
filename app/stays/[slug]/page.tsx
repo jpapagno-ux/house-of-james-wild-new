@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, FounderStamp, Overview, RecordHero, RecordNav, WhyChose } from "@/components/record/Sections";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
+import FullFrame from "@/components/record/FullFrame";
+import { FULL_FRAME } from "@/lib/content/stay-media";
 import PlanBand from "@/components/destination/PlanBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
@@ -58,12 +60,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: `${s.name}${i ? `, photograph ${i + 1}` : ""}${s.country ? `, ${s.country}` : ""}` }));
   const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
-  const nav: [string, string][] = [["Overview", "overview"], ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.why.length ? [["Why it's here", "why"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ["Plan", "plan"]];
+  const nav: [string, string][] = [["Overview", "overview"], ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.why.length ? [["Why it's here", "why"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ["Plan", "plan"]];
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   return (
     <>
       <SiteHeader overlay />
-      <main id="main">
+      <main id="main" className="overflow-x-clip">
         <RecordHero image={images[0]} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best for", bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
@@ -74,6 +76,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
           {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
           {s.why.length > 0 && <WhyChose title={`Why ${s.name} Is in the Ledger`} blocks={s.why.map((w) => ({ title: w.title ?? undefined, body: w.body }))} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} />}
+          {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {(s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {(s.experiences.items.length > 0 || s.experiences.paras.length > 0) && <Features id="experiences" eyebrow="Experiences" title="What You'll Do" icon="mountain-sun" items={s.experiences.items.length ? s.experiences.items : undefined} body={s.experiences.paras[0]} />}
           {(s.features.items.length > 0 || s.features.paras.length > 0) && <Features id="features" eyebrow="Stay features" title="What Sets It Apart" icon="frond" items={s.features.items.length ? s.features.items : undefined} body={s.features.paras[0]} />}

@@ -1,6 +1,7 @@
 // Stays, from the Ledger export (scripts/export-stays.py → stays.json).
 // A stay gets its own page only when it has a hero photo and some content.
 import data from "./stays.json";
+import { HERO_OVERRIDE } from "./stay-media";
 
 type Block = { paras: string[]; items: string[] };
 export type StayData = {
@@ -15,7 +16,7 @@ export type StayData = {
 const has = (b: Block) => b.paras.length > 0 || b.items.length > 0;
 export const pageReady = (s: StayData) => !!s.hero && (has(s.rooms) || has(s.features) || s.why.length > 0 || s.onlyHere.length > 0);
 
-export const STAYS: StayData[] = data.stays as StayData[];
+export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => (HERO_OVERRIDE[s.slug] ? { ...s, hero: HERO_OVERRIDE[s.slug] } : s));
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);

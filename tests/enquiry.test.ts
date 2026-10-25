@@ -16,3 +16,12 @@ test("advisor applications and partner submissions go to advisors@", () => {
   assert.equal(inboxFor({ context: { from: "partner" } }), "advisors@jameswildco.com");
   assert.equal(inboxFor({ context: {} }), null);
 });
+
+import { enquiryEmail } from "../lib/enquiry-email.ts";
+test("the house email carries the context and escapes user text", () => {
+  const m = enquiryEmail({ ...base, message: "<b>hi</b>", context: { trip: "Two Oceans, One Volcano", estimate: "22614", advisor: "kristina-larson" } });
+  assert.match(m.subject, /^Trip enquiry: Ana Ruiz · Two Oceans, One Volcano/);
+  assert.match(m.text, /Estimate: US\$22,614/);
+  assert.ok(m.html.includes("&lt;b&gt;hi&lt;/b&gt;") && !m.html.includes("<b>hi</b>"));
+});
+test("advisor applications are labelled", () => assert.match(enquiryEmail({ ...base, context: { from: "advisor-application" } }).subject, /^Advisor application/));

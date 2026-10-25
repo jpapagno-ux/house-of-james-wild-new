@@ -1,3 +1,5 @@
+import { INBOXES } from "./inbox";
+
 // The house configuration: one place for the name, domain, contact details,
 // credentials and every navigation list. Header, footer, schema, sitemap and
 // llms.txt all read from here, so the name, address and phone match
@@ -23,13 +25,7 @@ export const SITE = {
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
   // Email addresses are being defined; add here once confirmed.
   email: null as string | null,
-  // Where each kind of enquiry is delivered at launch (James, 25 Oct 2026).
-  // Trip enquiries wait for the main house address.
-  inboxes: {
-    advisors: "advisors@jameswildco.com", // advisor applications
-    partners: "advisors@jameswildco.com", // partner submissions
-    trips: null as string | null,
-  },
+  inboxes: INBOXES, // see lib/inbox.ts
   address: { locality: "Miami", region: "FL", country: "US" },
   credentials: [
     { label: "Florida Seller of Travel", value: "ST45327" },

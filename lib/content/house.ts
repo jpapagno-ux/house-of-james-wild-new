@@ -78,7 +78,8 @@ export const LEDGER = {
 };
 
 // ── /for-advisors ───────────────────────────────────────────────────────────
-// Terms are the legacy published plan, carried over for James to confirm.
+// Terms confirmed by James, 25 Oct 2026: 70% split, US$249/yr or US$49/mo,
+// clients stay the advisor's (firm policy). Applications: advisors@jameswildco.com.
 export const FOR_ADVISORS = {
   eyebrow: "For the trade · Advisors wanted",
   title: "The Desk Is Open: Become a James Wild & Co Travel Advisor",
@@ -91,6 +92,7 @@ export const FOR_ADVISORS = {
     ["The Ledger", "Vetted entries with permanent IDs"],
     ["The split", "70% of booking commission to you"],
     ["The fee", "US$249 a year, or US$49 a month"],
+    ["Your clients", "Stay yours. Always."],
   ] as [string, string][],
   why: [
     "An advisor network will issue you an ID in an afternoon: a portal, a split, a starter course. It's a fast way into the trade, and a slow way to stand out in it, because everyone gets the same thing.",
@@ -105,6 +107,7 @@ export const FOR_ADVISORS = {
   terms: [
     ["Your share", "70% of every booking commission"],
     ["Membership", "US$249 a year, or US$49 a month, no lock-in"],
+    ["Your clients", "Yours, always. A firm house policy"],
     ["The house's share", "30%, which funds the Ledger, rate checks, Iggi and James's ongoing vetting"],
   ] as [string, string][],
   tools: [
@@ -126,7 +129,7 @@ export const FOR_ADVISORS = {
     { q: "How does the 70% commission split work?", a: "You keep 70% of the booking commission you earn. Membership is US$249 a year or US$49 a month. The house's 30% funds the Ledger, rate checks, Iggi and James's ongoing vetting." },
     { q: "Do I need experience to join?", a: "No. New advisors are trained on the method itself. Experienced advisors are just as welcome; the Ledger gives your expertise an edge you can prove." },
     { q: "Is James Wild & Co a host agency?", a: "Yes. It's a wholesaler and a hybrid host agency, so advisors can plan and book under the house with its relationships and Ledger behind them." },
-    { q: "Can I keep my own clients and brand?", a: "Yes. Your clients stay yours. You plan and book through the house and can show your own advisor card and profile." },
+    { q: "Can I keep my own clients and brand?", a: "Yes, and that policy is firm: your clients stay yours, always. You plan and book through the house and show your own advisor card and profile." },
     { q: "Do you book safaris too?", a: "Yes. African safaris run through Wild & Co Safaris, the house's safari booking platform, with partner guides on the ground." },
   ],
 };

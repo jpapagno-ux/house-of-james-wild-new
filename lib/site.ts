@@ -23,6 +23,13 @@ export const SITE = {
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
   // Email addresses are being defined; add here once confirmed.
   email: null as string | null,
+  // Where each kind of enquiry is delivered at launch (James, 25 Oct 2026).
+  // Trip enquiries wait for the main house address.
+  inboxes: {
+    advisors: "advisors@jameswildco.com", // advisor applications
+    partners: "advisors@jameswildco.com", // partner submissions
+    trips: null as string | null,
+  },
   address: { locality: "Miami", region: "FL", country: "US" },
   credentials: [
     { label: "Florida Seller of Travel", value: "ST45327" },

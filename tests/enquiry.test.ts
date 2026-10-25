@@ -9,3 +9,10 @@ test("a call needs a phone number", () => assert.ok(validateEnquiry({ ...base, c
 test("price-builder context counts as a destination", () => assert.deepEqual(validateEnquiry({ ...base, where: "", context: { trip: "Two Oceans, One Volcano" } }), {}));
 test("bad email and missing name are caught", () => { const e = validateEnquiry({ ...base, name: "", email: "ana@" }); assert.ok(e.name && e.email); });
 test("an outside advisor needs details", () => assert.ok(validateEnquiry({ ...base, hasAdvisor: true }).advisorDetails));
+
+import { inboxFor } from "../lib/inbox.ts";
+test("advisor applications and partner submissions go to advisors@", () => {
+  assert.equal(inboxFor({ context: { from: "advisor-application" } }), "advisors@jameswildco.com");
+  assert.equal(inboxFor({ context: { from: "partner" } }), "advisors@jameswildco.com");
+  assert.equal(inboxFor({ context: {} }), null);
+});

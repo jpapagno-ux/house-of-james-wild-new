@@ -57,7 +57,7 @@ export function FounderStamp({ kind, year, volume = "stays", size = 132 }: { kin
 }
 
 /* In-page navigation ------------------------------------------------------ */
-export function RecordNav({ items, cta = "Enquire" }: { items: [string, string][]; cta?: string }) {
+export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan" }: { items: [string, string][]; cta?: string; ctaHref?: string }) {
   return (
     <nav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[105px] z-30">
       <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
@@ -66,7 +66,7 @@ export function RecordNav({ items, cta = "Enquire" }: { items: [string, string][
             <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{label}</a>
           ))}
         </div>
-        <Link href="/plan" className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0">{cta}</Link>
+        <Link href={ctaHref} className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0">{cta}</Link>
       </div>
     </nav>
   );

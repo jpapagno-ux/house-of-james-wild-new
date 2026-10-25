@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       // Ledger images hosted by the Base44 library (moving to Supabase storage).
       { protocol: "https", hostname: "base44.app" },
       { protocol: "https", hostname: "media.base44.com" },
+      { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
   async redirects() {

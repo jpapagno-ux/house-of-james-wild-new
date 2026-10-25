@@ -8,6 +8,10 @@ import { Features, FounderStamp, Overview, RecordHero, RecordNav, WhyChose } fro
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import FullFrame from "@/components/record/FullFrame";
 import { FULL_FRAME } from "@/lib/content/stay-media";
+import { PRICED } from "@/lib/content/priced-stays";
+import Inclusions from "@/components/booking/Inclusions";
+import StayFilm from "@/components/booking/StayFilm";
+import BookingPanel from "@/components/booking/BookingPanel";
 import PlanBand from "@/components/destination/PlanBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
@@ -60,7 +64,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: `${s.name}${i ? `, photograph ${i + 1}` : ""}${s.country ? `, ${s.country}` : ""}` }));
   const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
-  const nav: [string, string][] = [["Overview", "overview"], ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.why.length ? [["Why it's here", "why"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ["Plan", "plan"]];
+  const priced = s.engine ? PRICED[s.slug] : undefined;
+  const planHref = `/plan?trip=${encodeURIComponent(s.name)}`;
+  const baseNav: [string, string][] = [["Overview", "overview"], ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.why.length ? [["Why it's here", "why"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ["Plan", "plan"]];
+  const nav: [string, string][] = priced
+    ? [["Overview", "overview"], ["Included", "included"], ...(priced.video ? [["Film", "film"] as [string, string]] : []), ["Rooms & rates", "rates"], ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ["Plan", "plan"]]
+    : baseNav;
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   return (
     <>
@@ -68,16 +77,22 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <main id="main" className="overflow-x-clip">
         <RecordHero image={images[0]} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
-          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best for", bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
-        <RecordNav items={nav} cta="Plan this stay" />
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best for", bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
+        <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={s.onlyHere} />
-          {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
-          {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
+          {priced ? <>
+            <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
+            {priced.video && <StayFilm id={priced.video.id} title={priced.video.title} name={s.name} planHref={planHref} />}
+            <BookingPanel property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
+          </> : <>
+            {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
+            {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
+          </>}
           {s.why.length > 0 && <WhyChose title={`Why ${s.name} Is in the Ledger`} blocks={s.why.map((w) => ({ title: w.title ?? undefined, body: w.body }))} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} />}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
-          {(s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
+          {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {(s.experiences.items.length > 0 || s.experiences.paras.length > 0) && <Features id="experiences" eyebrow="Experiences" title="What You'll Do" icon="mountain-sun" items={s.experiences.items.length ? s.experiences.items : undefined} body={s.experiences.paras[0]} />}
           {(s.features.items.length > 0 || s.features.paras.length > 0) && <Features id="features" eyebrow="Stay features" title="What Sets It Apart" icon="frond" items={s.features.items.length ? s.features.items : undefined} body={s.features.paras[0]} />}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} />}
@@ -99,6 +114,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <PlanBand place={s.name} compassHref="/compass" />
         </div>
       </main>
+      {priced?.video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: priced.video.title, description: `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${priced.video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${priced.video.id}`, contentUrl: `https://www.youtube.com/watch?v=${priced.video.id}`, uploadDate: "2026-10-25" }} />}
       <JsonLd data={graph(lodging({ path, name: s.name, description: answer, image: images.slice(0, 4).map((i) => i.url.startsWith("/") ? absoluteUrl(i.url) : i.url), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }))} />
     </>
   );

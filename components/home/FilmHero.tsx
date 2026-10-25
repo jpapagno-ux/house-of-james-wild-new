@@ -38,7 +38,7 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
 
   return (
     <section className="relative h-[100svh] min-h-[620px] overflow-hidden bg-ink text-white" aria-label="Welcome">
-      <Image src={loop.poster} alt={loop.label} fill priority sizes="100vw" className="object-cover" />
+      <Image src={loop.poster} alt={loop.label} fill priority quality={85} sizes="100vw" className="object-cover" />
       {!reduce && (
         <video
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${ready ? "opacity-100" : "opacity-0"}`}

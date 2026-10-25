@@ -390,7 +390,7 @@ export function Stewards() {
   const s = HOME.stewards;
   return (
     <section className="relative mt-20 md:mt-28 -mb-20 h-[80vh] min-h-[520px] overflow-hidden bg-[#123332]" aria-labelledby="stewards-heading">
-      <Image src={s.image.url} alt={s.image.alt} fill sizes="100vw" className="object-cover opacity-70" />
+      <Image src={s.image.url} alt={s.image.alt} fill sizes="100vw" quality={85} className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#123332]/90 via-[#123332]/50 to-transparent" />
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex items-center">
         <Reveal className="max-w-2xl text-white">

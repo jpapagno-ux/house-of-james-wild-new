@@ -40,7 +40,7 @@ export default function HouseFilm({ title, caption, youtubeId, poster, posterAlt
         </video>
       ) : (
         <button type="button" onClick={() => setPlaying(true)} className="group absolute inset-0 w-full h-full text-left" aria-label={`Play the film: ${title}`}>
-          <Image src={poster} alt={posterAlt} fill sizes="(min-width: 1152px) 1152px, 100vw" className="object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.02] transition duration-700" />
+          <Image src={poster} alt={posterAlt} fill sizes="(min-width: 1152px) 1152px, 100vw" quality={85} className="object-cover group-hover:scale-[1.02] transition duration-700" />
           <span className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
           <span className="absolute inset-0 flex items-center justify-center">
             <span className="w-20 h-20 md:w-24 md:h-24 rounded-full border border-white/80 bg-black/30 backdrop-blur-sm flex items-center justify-center group-hover:scale-105 transition-transform">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import MiniSearch from "minisearch";
 import { ArrowRight, MessageCircle, Search, X } from "lucide-react";
@@ -11,7 +12,8 @@ import { ArrowRight, MessageCircle, Search, X } from "lucide-react";
 // tagline). It loads the first time the panel opens (~19 KB compressed), then
 // every keystroke is answered in the browser. Names are matched with prefix
 // and typo tolerance ("londolozzi" finds Londolozi). Traveller-type chips
-// filter the same index. No result → Ask Iggi, and Plan with James is always
+// filter the same index. Under the link guard, a result whose page isn't
+// built yet opens the planning form with that place filled in. No result → Ask Iggi, and Plan with James is always
 // the last row.
 
 type Item = { t: "stay" | "destination" | "route"; n: string; u: string; k: string; p: string | null; r: string | null; f: string[]; g: string | null };
@@ -156,7 +158,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
                   <ul>
                     {g.items.map((d) => (
                       <li key={d.id}>
-                        <Link href={d.u} onClick={close} className="group flex items-baseline justify-between gap-4 py-2.5 border-b ledger-border hover:bg-paper-card/60 -mx-2 px-2">
+                        <Link href={isBuilt(d.u) || !GUARD_ON ? d.u : `/plan?q=${encodeURIComponent(d.n)}`} onClick={close} className="group flex items-baseline justify-between gap-4 py-2.5 border-b ledger-border hover:bg-paper-card/60 -mx-2 px-2">
                           <span>
                             <span className="ledger-display text-[17px] group-hover:ledger-crimson">{d.n}</span>
                             {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5">{d.g}</span>}

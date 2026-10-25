@@ -11,7 +11,7 @@ import type { RecordKind } from "@/lib/ledger/urls";
 import type { HouseStatus } from "@/lib/ledger/status";
 
 const HOME_CDN = "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5";
-const B44 = "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474";
+const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
 // Licensed Getty Images (web and marketing, no credit line) in Cloudinary.
 const GETTY = (id: string, w = 1200, h = 900) =>
   `https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,g_auto,w_${w},h_${h},f_auto,q_auto/GettyImages-${id}.jpg`;
@@ -34,7 +34,9 @@ export const HOME = {
     loop: {
       mp4: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_mp4.mp4`,
       webm: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_webm.webm`,
-      poster: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_poster.0000000.jpg`,
+      // The film's own opening frame was only 1280×720 and looked soft full
+      // screen; this is the same frame AI-upscaled in Cloudinary (25 Oct 2026).
+      poster: "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg",
       label: "Wild Earth Stays film: wild places by land and by water",
     },
     quotes: [
@@ -90,12 +92,12 @@ export const HOME = {
     // status/statusDate mirror the Stay record in the library (24 Oct 2026).
     // None of these seven carries a house_status yet, so no mark prints.
     entries: [
-      { name: "Lion Sands Reserve", id: "STY-2026-290658", slug: "lion-sands", kind: "reserve", status: null, statusDate: null, line: "Ivory Lodge on the Sabie River, where the Sabi Sand meets the Kruger.", image: { url: `${B44}/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif`, alt: "Lion Sands Reserve: riverside safari lodge in the Sabi Sand, South Africa" } },
+      { name: "Lion Sands Reserve", id: "STY-2026-290658", slug: "lion-sands", kind: "reserve", status: null, statusDate: null, line: "Ivory Lodge on the Sabie River, where the Sabi Sand meets the Kruger.", image: { url: `/img/b44/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif`, alt: "Lion Sands Reserve: riverside safari lodge in the Sabi Sand, South Africa" } },
       { name: "Monwana Thornybush", id: "STY-2026-000171", slug: "monwana-thornybush", status: null, statusDate: null, line: "Big Five luxury in the wild Thornybush.", image: { url: `${B44}/ceda73052_67149f1a3_6930486e36272055f8bc2739_monwana-thornybush-exterior.jpg`, alt: "Monwana lodge exterior in the Thornybush Game Reserve, South Africa" } },
       { name: "Kirkman's Kamp", id: "STY-2026-000293", slug: "tengile-mala-mala-kirkmans-kamp", status: null, statusDate: null, line: "Historic safari charm overlooking one of Africa's great wildlife landscapes.", image: { url: `${B44}/c636dd862_5ce4e7daf_6a511c21d736e3f6fb85883e_Kirkmans-kamp.jpg`, alt: "Kirkman's Kamp: 1920s homestead veranda on the Mala Mala reserve, South Africa" } },
       { name: "Ellerman House", id: "STY-2026-000075", slug: "ellerman-house", status: null, statusDate: null, line: "Clifftop Cape Town, the house to begin or end a safari in.", image: { url: `${B44}/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg`, alt: "Aerial view of Ellerman House on the cliffs above Bantry Bay, Cape Town" } },
-      { name: "Vahine Private Island", id: "STY-2026-000213", slug: "pearl-resort-vahine-private-island", status: null, statusDate: null, line: "A hidden motu off Taha'a, in the lagoon of French Polynesia.", image: { url: `${B44}/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif`, alt: "Beach suite on Vahine Private Island in the Taha'a lagoon, French Polynesia" } },
-      { name: "Tswalu Reserve", id: "STY-2026-138258", slug: "tswalu-reserve", kind: "reserve", status: null, statusDate: null, line: "The Kalahari, restored: red dunes, meerkats and regeneration at scale.", image: { url: `${B44}/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif`, alt: "Tswalu Kalahari Reserve: red dunes and camelthorn trees at dusk, South Africa" } },
+      { name: "Vahine Private Island", id: "STY-2026-000213", slug: "pearl-resort-vahine-private-island", status: null, statusDate: null, line: "A hidden motu off Taha'a, in the lagoon of French Polynesia.", image: { url: `/img/b44/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif`, alt: "Beach suite on Vahine Private Island in the Taha'a lagoon, French Polynesia" } },
+      { name: "Tswalu Reserve", id: "STY-2026-138258", slug: "tswalu-reserve", kind: "reserve", status: null, statusDate: null, line: "The Kalahari, restored: red dunes, meerkats and regeneration at scale.", image: { url: `/img/b44/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif`, alt: "Tswalu Kalahari Reserve: red dunes and camelthorn trees at dusk, South Africa" } },
       { name: "Leeu House", id: "STY-2026-000149", slug: "leeu-house", status: null, statusDate: null, line: "A village-side Winelands house in Franschhoek, for the family to gather in.", image: { url: `${B44}/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg`, alt: "The entrance garden at Leeu House, Franschhoek, with mountains above the village" } },
     ] as { name: string; id: string; slug: string; kind?: RecordKind; status: HouseStatus | null; statusDate: string | null; line: string; image: Img }[],
   },
@@ -171,7 +173,7 @@ export const HOME = {
     line: "This is more than a journey. It's a chance to move with the pulse of the Earth itself.",
     text: "Each hand-selected place invites you to see the world from new angles, forge lasting connections, and honour the wild places that sustain us.",
     cta: { label: "Rules of the road", href: "/about#rules" },
-    image: { url: `${HOME_CDN}/67c0ba1451873b039065af7f_gorillas-nest-rwanda-africa.avif`, alt: "Forest canopy at One&Only Gorilla's Nest, Rwanda" },
+    image: { url: `${B44}/34e0bc491_9d2a33296_686c0769972f273ca2734419_OO_GorillasNest_Exterior_Nest_141_MASTER_HR.jpg`, alt: "A nest suite at One&Only Gorilla's Nest, set in the forest, Rwanda" },
     caption: "One&Only Gorilla's Nest · Rwanda",
   },
 

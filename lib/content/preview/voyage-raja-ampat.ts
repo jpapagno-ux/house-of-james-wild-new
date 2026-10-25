@@ -3,7 +3,7 @@
 // Editorial gaps are filled for design purposes only; day-by-day detail and
 // rates are pending fact-check before any Webflow template rebuild.
 
-export const STAMP_URL = "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/e248c138e_stamp-transparent.png";
+export const STAMP_URL = "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e248c138e_stamp-transparent.png";
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 

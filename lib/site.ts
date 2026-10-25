@@ -151,6 +151,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
   {
     title: "The House",
     links: [
+      { label: "About the house", href: "/about" },
       { label: "The Ledger", href: "/the-ledger" },
       { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },

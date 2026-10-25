@@ -34,14 +34,14 @@ function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
             <Link href={v.href} className="ledger-btn mt-5">Enter {v.label}</Link>
           </div>
           <div className="space-y-4">
-            <div>
+            {v.browse.length > 0 && <div>
               <p className="ledger-eyebrow">Browse</p>
               <ul className="mt-2 space-y-1.5">
                 {v.browse.map((l) => (
                   <li key={l.href}><Link href={l.href} className="text-[15px] hover:ledger-crimson">{l.label}</Link></li>
                 ))}
               </ul>
-            </div>
+            </div>}
             {v.ledger.length > 0 && (
               <div>
                 <p className="ledger-eyebrow">From the Ledger</p>
@@ -63,6 +63,9 @@ function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
 }
 
 function DestinationsMenu({ light }: { light: boolean }) {
+  // Until region pages are built, the live site shows Destinations as a plain
+  // link to the hub (an empty dropdown would help no one).
+  if (!REGIONS.length) return <li><Link href="/destinations" className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>Destinations</Link></li>;
   return (
     <li className="group relative">
       <Link href="/destinations" className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>

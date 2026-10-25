@@ -21,11 +21,11 @@ export const SAMPLE_STAY_PROMOTION = {
     tagline: "Stay Long Enough for the Caribbean to Slow You Down.",
     images: [
       {
-        url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
+        url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
         alt: "Aguas Claras pool at dusk, fringed by tropical greenery",
       },
       {
-        url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3.avif",
+        url: "/img/b44/623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3.avif",
         alt: "Aguas Claras bungalow exteriors amid lush gardens",
       },
     ],

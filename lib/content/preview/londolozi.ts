@@ -23,7 +23,7 @@ export const SAMPLE_LONDOLOZI = {
   hero: {
     // The hero_image_url field on file is corrupted (truncated filename), so
     // the reserve hero uses the first CMS gallery plate — an existing image.
-    url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
+    url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
     alt: "Londolozi Reserve: thatched camp buildings beneath trees along the Sand River, Sabi Sand",
   },
   overview: [
@@ -80,7 +80,7 @@ export const SAMPLE_LONDOLOZI = {
       "Wellness & health",
       "Honeymoon & couples",
     ],
-    image: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_.jpg",
+    image: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_.jpg",
     imageAlt: "Londolozi Reserve: views over the bush from Tree Camp at golden hour",
   },
   onlyHere: {
@@ -109,14 +109,14 @@ export const SAMPLE_LONDOLOZI = {
     body: "As one of Africa's first certified ecotourism destinations, Londolozi leads the way in regenerative tourism, where luxury meets responsibility and every stay contributes to the health of the land, the wildlife, and the local communities. Once degraded farmland, Londolozi has been restored into thriving wilderness over the past 90+ years. Game drives are led by trained naturalists and trackers who prioritize animal welfare, maintain safe distances, and avoid stress to wildlife. All five camps operate with solar power systems, reducing reliance on fossil fuels.",
   },
   gallery: [
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/39ba130c1_e1f290e07_683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck_20_1_.jpg", alt: "Londolozi Private Granite Suites: pool deck above the river" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/cdf86ead6_674f9b2b6_683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar_20_1_.jpg", alt: "Londolozi Private Granite Suites: the bar" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/3b33103f1_66aced96b_683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom_20_1_.jpg", alt: "Londolozi Private Granite Suites: main room interior" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/df5a72e77_3e04e1114_683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room_20_1_.jpg", alt: "Londolozi Varty Camp: superior chalet room" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/2cfca10df_198af2b8e_683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool_20_1_.jpg", alt: "Londolozi Varty Camp: standard chalet with private pool" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg", alt: "Londolozi Varty Camp: main lounge area" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg", alt: "Londolozi Varty Camp: overlook above the Sand River" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/0e1af2e53_f0f9fd16c_683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining_20_1_.jpg", alt: "Londolozi Tree Camp: dining under the canopy" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/39ba130c1_e1f290e07_683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck_20_1_.jpg", alt: "Londolozi Private Granite Suites: pool deck above the river" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cdf86ead6_674f9b2b6_683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar_20_1_.jpg", alt: "Londolozi Private Granite Suites: the bar" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3b33103f1_66aced96b_683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom_20_1_.jpg", alt: "Londolozi Private Granite Suites: main room interior" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/df5a72e77_3e04e1114_683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room_20_1_.jpg", alt: "Londolozi Varty Camp: superior chalet room" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2cfca10df_198af2b8e_683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool_20_1_.jpg", alt: "Londolozi Varty Camp: standard chalet with private pool" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg", alt: "Londolozi Varty Camp: main lounge area" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg", alt: "Londolozi Varty Camp: overlook above the Sand River" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e1af2e53_f0f9fd16c_683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining_20_1_.jpg", alt: "Londolozi Tree Camp: dining under the canopy" },
   ],
   practical: [
     ["Location", "Sabi Sand Game Reserve · South Africa"],

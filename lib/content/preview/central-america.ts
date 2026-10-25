@@ -5,7 +5,7 @@ import { COSTA_RICA } from "./costa-rica";
 import type { Door } from "@/components/destination/Doors";
 
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
-const B44 = "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474";
+const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
 const cr = COSTA_RICA.ledger.items;
 
 export const CENTRAL_AMERICA = {

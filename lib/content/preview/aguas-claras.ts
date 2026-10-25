@@ -17,21 +17,21 @@ export const SAMPLE_AGUAS = {
     bestFor: ["honeymoon", "family", "adventure", "luxury", "solo"],
   },
   hero: {
-    url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
+    url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
     alt: "Aguas Claras — the hotel's tropical beachfront setting on Playa Chiquita, Costa Rica.",
   },
   gallery: [
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3.avif", alt: "Aguas Claras gallery — bungalow exteriors amid lush gardens." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/d8822aaaf_f1d672c79_67f97e533d937286ae5ea126_4_hac_carousel-1.avif", alt: "Aguas Claras gallery — artist-filled bungalow interiors." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/b63507c3d_3abd23d1d_67f97e534317c8d8339ff492_4_hac_carousel-2.avif", alt: "Aguas Claras gallery — handcrafted furnishings and original artworks." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060.jpg", alt: "Playa Chiquita — the beach at Aguas Claras' doorstep." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/8745303d9_e9e810600_6835e7103e72084545ff7a02_Coral_0049.jpg", alt: "Coral reef — snorkeling waters off the Caribbean coast." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/fd792ada9_d905149a8_6835e61ccd632780526016f2_Restaurante_0002.jpg", alt: "Papaya restaurant — locally inspired cuisine at Aguas Claras." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030.jpg", alt: "Beach days — calm coves for swimming and snorkeling." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/e38dac028_b546c67da_6835e66ca51a698394bb6fdb_Restaurante_0009.jpg", alt: "Papaya restaurant — dining beneath tropical greenery." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/a510d7ed4_cda97a4a7_6835e85d43c72e9535c8459f_Restaurante_0020_20_1_.jpg", alt: "Papaya restaurant — regional flavors and fresh local sourcing." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025.jpg", alt: "Playa Chiquita — the shoreline steps from the bungalows." },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/5715af5f6_1ab0dce1b_6835e8d98e514a571bbb2a0d_Restaurante_0031.jpg", alt: "Papaya restaurant — the dining room at Aguas Claras." }
+    { url: "/img/b44/623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3.avif", alt: "Aguas Claras gallery — bungalow exteriors amid lush gardens." },
+    { url: "/img/b44/d8822aaaf_f1d672c79_67f97e533d937286ae5ea126_4_hac_carousel-1.avif", alt: "Aguas Claras gallery — artist-filled bungalow interiors." },
+    { url: "/img/b44/b63507c3d_3abd23d1d_67f97e534317c8d8339ff492_4_hac_carousel-2.avif", alt: "Aguas Claras gallery — handcrafted furnishings and original artworks." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060.jpg", alt: "Playa Chiquita — the beach at Aguas Claras' doorstep." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8745303d9_e9e810600_6835e7103e72084545ff7a02_Coral_0049.jpg", alt: "Coral reef — snorkeling waters off the Caribbean coast." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fd792ada9_d905149a8_6835e61ccd632780526016f2_Restaurante_0002.jpg", alt: "Papaya restaurant — locally inspired cuisine at Aguas Claras." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030.jpg", alt: "Beach days — calm coves for swimming and snorkeling." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e38dac028_b546c67da_6835e66ca51a698394bb6fdb_Restaurante_0009.jpg", alt: "Papaya restaurant — dining beneath tropical greenery." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a510d7ed4_cda97a4a7_6835e85d43c72e9535c8459f_Restaurante_0020_20_1_.jpg", alt: "Papaya restaurant — regional flavors and fresh local sourcing." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025.jpg", alt: "Playa Chiquita — the shoreline steps from the bungalows." },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5715af5f6_1ab0dce1b_6835e8d98e514a571bbb2a0d_Restaurante_0031.jpg", alt: "Papaya restaurant — the dining room at Aguas Claras." }
   ],
   staysContent: [
     "Set on the sand of Playa Chiquita, Aguas Claras is an intimate, 12-room retreat that feels handcrafted rather than staged. Curated bungalows and Pavlova suites open to sea breezes and original artworks, each room furnished with locally made pieces and natural materials that reference the region's Afro-Caribbean heritage.",

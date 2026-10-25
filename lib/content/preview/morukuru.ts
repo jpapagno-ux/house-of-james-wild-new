@@ -22,7 +22,7 @@ export const SAMPLE_MORUKURU = {
     ["Rates", "Live registry · from US$4,500 per night"],
   ],
   hero: {
-    url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/293f3bdae_2f3e395df_68ae14d4259cf380a761ef79_lunch-outside-on-the.jpg",
+    url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/293f3bdae_2f3e395df_68ae14d4259cf380a761ef79_lunch-outside-on-the.jpg",
     alt: "Morukuru Farm House: long lunch table set under trees on the residence lawn in the Madikwe bush",
   },
   rate: {
@@ -78,14 +78,14 @@ export const SAMPLE_MORUKURU = {
     body: "Morukuru Farm House stands as a beacon of sustainable luxury in South Africa's Madikwe Game Reserve. Designed to operate 100% off-grid, the property runs entirely on solar power, minimizing environmental impact without compromising guest comfort. As part of the Morukuru Family, the Farm House supports local conservation initiatives and community upliftment through the Morukuru Goodwill Foundation. Guests contribute directly to meaningful projects in education, wildlife protection, and sustainable development with every stay.",
   },
   gallery: [
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma.jpg", alt: "Morukuru Farm House: the boma fire circle set for starlit dining" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view.jpg", alt: "Morukuru Farm House: contemporary African homestead exterior" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/f78cee54e_fb1415e43_683f310fd9479473be31672b_Morukuru_20Farm_20House_20-_20bedroom.jpg", alt: "Morukuru Farm House: residence bedroom with en-suite comforts" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/271a2cb0f_1af13c825_683f3111a2d6323598c2464b_Morukuru_20Farm_20House_20-_20bedroom-patio.jpg", alt: "Morukuru Farm House: bedroom patio opening onto the bush" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/a026f7756_2903fee1a_683f31166bf32ab408778838_Morukuru_20Farm_20House_20-_20bathroom-en-suite.jpg", alt: "Morukuru Farm House: en-suite bathroom" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/6286ca2a7_fcf53a865_683f3119d139b93acfcfae36_Morukuru_20Farm_20House_20-_20bar_20and_20living.jpg", alt: "Morukuru Farm House: bar and living room" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck.jpg", alt: "Morukuru Farm House: the viewing deck overlooking Madikwe" },
-    { url: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah.jpg", alt: "Morukuru Farm House: bedroom and private verandah" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma.jpg", alt: "Morukuru Farm House: the boma fire circle set for starlit dining" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view.jpg", alt: "Morukuru Farm House: contemporary African homestead exterior" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f78cee54e_fb1415e43_683f310fd9479473be31672b_Morukuru_20Farm_20House_20-_20bedroom.jpg", alt: "Morukuru Farm House: residence bedroom with en-suite comforts" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271a2cb0f_1af13c825_683f3111a2d6323598c2464b_Morukuru_20Farm_20House_20-_20bedroom-patio.jpg", alt: "Morukuru Farm House: bedroom patio opening onto the bush" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a026f7756_2903fee1a_683f31166bf32ab408778838_Morukuru_20Farm_20House_20-_20bathroom-en-suite.jpg", alt: "Morukuru Farm House: en-suite bathroom" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6286ca2a7_fcf53a865_683f3119d139b93acfcfae36_Morukuru_20Farm_20House_20-_20bar_20and_20living.jpg", alt: "Morukuru Farm House: bar and living room" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck.jpg", alt: "Morukuru Farm House: the viewing deck overlooking Madikwe" },
+    { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah.jpg", alt: "Morukuru Farm House: bedroom and private verandah" },
   ],
   practical: [
     ["Residence", "5-bedroom exclusive-use home · up to 10 guests"],

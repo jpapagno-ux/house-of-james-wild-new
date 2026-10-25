@@ -6,7 +6,7 @@
 
 export const SAMPLE_GATHERINGS_LEEU = {
   images: {
-    hero: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg",
+    hero: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg",
     heroAlt: "The entrance garden at Leeu House, Franschhoek, with mountains above the village",
     plate: "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a284118a334b2be1969ffa8_6454e8177ced6-02%20(3).jpg",
     plateAlt: "A quiet corner of Leeu House among the gardens of Franschhoek village",
@@ -235,7 +235,7 @@ export const SAMPLE_GATHERINGS_LEEU = {
     excludedLabel: "What's excluded",
     footnote: "Prices refresh with the engine's dynamic pricing and change with dates, occupancy and season. Rooms without a live mark are priced from the CMS rate registry; our team confirms every quote in the Ledger before anything is booked.",
     errorNote: "The booking desk could not be reached, showing baseline rates.",
-    fallbackImage: "https://base44.app/api/apps/6a7932161e9318dca1f24474/files/mp/public/6a7932161e9318dca1f24474/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg",
+    fallbackImage: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg",
     rooms: [
       { name: "Classic Room", baseline: 765, bed: "King or twin", sleeps: "Sleeps 1-2", note: "The entry to the house. Classic rooms, king or twin, refined Cape interiors.", image: "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6ab165b1384151e5a67745fd_d23fbcdf.avif", alt: "A sitting corner of a Leeu House suite with Cape-inspired interiors",
         included: ["Bed-and-breakfast plan", "Complimentary Great Heart wine tasting per stay", "WiFi and the house art collection", "House concierge for Gatherings planning"],

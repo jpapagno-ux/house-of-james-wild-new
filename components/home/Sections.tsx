@@ -10,6 +10,7 @@ import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { statusLine } from "@/lib/ledger/status";
 import { REGIONS, SITE } from "@/lib/site";
 import { recordHref } from "@/lib/ledger/urls";
+import SafeLink, { GuardLink } from "@/components/ledger/SafeLink";
 
 // The home page sections, ported from the Base44 sample. All server-rendered:
 // every word and link is in the HTML. Motion comes from the small client
@@ -194,7 +195,7 @@ export function SignatureShelf() {
           return (
             <li key={e.id}>
               <Reveal delay={(i % 3) * 0.08} className="h-full">
-                <Link href={recordHref(e.kind ?? "stay", e.slug)} className="group h-full border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300">
+                <GuardLink as="div" href={recordHref(e.kind ?? "stay", e.slug)} className="group h-full border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300">
                   <div className="relative aspect-[4/3] w-full border-b ledger-rule overflow-hidden">
                     <Image src={e.image.url} alt={e.image.alt} fill sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-700" />
                   </div>
@@ -209,7 +210,7 @@ export function SignatureShelf() {
                       View the entry <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
                     </span>
                   </div>
-                </Link>
+                </GuardLink>
               </Reveal>
             </li>
           );
@@ -289,9 +290,9 @@ export function OverlandRoutes() {
                     {x.stays.map(([name, slug]) => (
                       <li key={name}>
                         {slug ? (
-                          <Link href={`/stays/${slug}`} className="inline-flex items-center gap-1.5 border ledger-border px-2.5 py-1 text-[14px] hover:ledger-crimson">
+                          <GuardLink href={`/stays/${slug}`} className="inline-flex items-center gap-1.5 border ledger-border px-2.5 py-1 text-[14px] hover:ledger-crimson">
                             <BedDouble className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> {name}
-                          </Link>
+                          </GuardLink>
                         ) : (
                           <span className="inline-flex items-center gap-1.5 border border-dashed ledger-border px-2.5 py-1 text-[14px] ledger-muted">
                             <BedDouble className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> {name} · coming soon
@@ -304,7 +305,7 @@ export function OverlandRoutes() {
                 <p className={`mt-5 border-t ledger-rule pt-4 leading-relaxed ${"noteIsQuote" in x && x.noteIsQuote ? "ledger-hand text-2xl" : "text-[15px] ledger-muted"}`}>
                   {"noteIsQuote" in x && x.noteIsQuote ? <>&ldquo;{x.note}&rdquo; — J.W.</> : x.note}
                 </p>
-                <Link href={recordHref("route", x.slug, x.country)} className="ledger-btn mt-5">View the route</Link>
+                <SafeLink href={recordHref("route", x.slug, x.country)} className="ledger-btn mt-5">View the route</SafeLink>
               </div>
             </article>
           </Reveal>
@@ -359,7 +360,7 @@ export function HouseJournal() {
               </div>
               <h3 className="ledger-display text-xl mt-3">{item.title}</h3>
               <p className="mt-2 text-[16px] leading-relaxed ledger-muted flex-1">{item.line}</p>
-              <Link href={item.href} className="ledger-btn mt-5 self-start">{item.cta}</Link>
+              <SafeLink href={item.href} className="ledger-btn mt-5 self-start">{item.cta}</SafeLink>
             </article>
           );
         })}

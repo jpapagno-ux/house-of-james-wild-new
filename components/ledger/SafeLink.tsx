@@ -10,3 +10,11 @@ export default function SafeLink({ fallback = null, ...props }: ComponentProps<t
   if (GUARD_ON && !isBuilt(href)) return <>{fallback}</>;
   return <Link {...props} />;
 }
+
+// GuardLink: like SafeLink, but keeps the content. When the page isn't
+// built (production), it renders the same box without the link, so cards
+// and chips keep their layout and simply stop being clickable.
+export function GuardLink({ as: Tag = "span", href, className, children }: { as?: "span" | "div"; href: string; className?: string; children: React.ReactNode }) {
+  if (GUARD_ON && !isBuilt(href)) return <Tag className={className}>{children}</Tag>;
+  return <Link href={href} className={className}>{children}</Link>;
+}

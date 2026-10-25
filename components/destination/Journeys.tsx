@@ -5,6 +5,7 @@ import LedgerChart, { projectOn, type ChartData } from "@/components/destination
 import OverlandStamp from "@/components/ledger/OverlandStamp";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Stamp } from "@/components/ledger/Marks";
+import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { graph, touristTrip } from "@/lib/schema";
 import type { Journey } from "@/lib/content/preview/journeys";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
@@ -18,6 +19,12 @@ const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "sou
 // per small-ship voyage filed for the country, linked to its own page. Routes
 // draw their own mini route on the country's Ledger chart when one exists.
 // Renders nothing when a destination has none yet.
+
+// Link guard: a card links only when its page is built (always in previews).
+function Wrap({ linked, href, event, children }: { linked: boolean; href: string; event: string; children: React.ReactNode }) {
+  const cls = "group h-full bg-paper border ledger-border flex flex-col";
+  return linked ? <Link href={href} className={`${cls} hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300`} data-event={event}>{children}</Link> : <article className={cls}>{children}</article>;
+}
 
 function MiniRoute({ chart, stops, title }: { chart: ChartData; stops: { lat: number; lng: number }[]; title: string }) {
   const pts = stops.map((s) => projectOn(chart, s.lat, s.lng));
@@ -34,11 +41,12 @@ function MiniRoute({ chart, stops, title }: { chart: ChartData; stops: { lat: nu
   );
 }
 
-function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartData }) {
+export function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartData }) {
   const isRoute = j.kind === "route";
   const chart = (j.chartKey && CHARTS[j.chartKey]) || fallback;
+  const linked = !GUARD_ON || isBuilt(j.href);
   return (
-    <Link href={j.href} className="group h-full bg-paper border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300" data-event={isRoute ? "destination_route_open" : "destination_voyage_open"}>
+    <Wrap linked={linked} href={j.href} event={isRoute ? "destination_route_open" : "destination_voyage_open"}>
       <div className="relative border-b ledger-rule overflow-hidden">
         {isRoute && j.stops && chart ? (
           <MiniRoute chart={chart} stops={j.stops} title={j.title} />
@@ -65,9 +73,9 @@ function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartData }) 
         </dl>
         {j.price && <p className="mt-3"><span className="ledger-eyebrow">From </span><span className="ledger-display text-xl ledger-crimson">US${j.price.amount.toLocaleString("en-US")}</span> <span className="text-[12px] ledger-muted">{j.price.basis}</span></p>}
         {j.status === "house_approved" && <p className="mt-3 text-[12.5px] ledger-muted">House route · approved by James{j.statusYear ? `, ${j.statusYear}` : ""}</p>}
-        <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-[15px] group-hover:gap-2.5 transition-all">{isRoute ? "Open the route" : "Open the voyage"} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>
+        {linked ? <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-[15px] group-hover:gap-2.5 transition-all">{isRoute ? "Open the route" : "Open the voyage"} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span> : <span className="mt-auto pt-4 ledger-eyebrow">{isRoute ? "Route page coming soon" : "Voyage page coming soon"}</span>}
       </div>
-    </Link>
+    </Wrap>
   );
 }
 

@@ -19,6 +19,16 @@ export const BUILT: string[] = [
   "/the-ledger",
   "/for-advisors",
   "/partners",
+  "/stays",
+  "/safaris",
+  "/gatherings",
+  "/voyages",
+  "/overland",
+  "/destinations",
+  "/journal",
+  "/legal/terms",
+  "/legal/privacy",
+  "/legal/booking-conditions",
 ];
 
 export const GUARD_ON = process.env.NEXT_PUBLIC_LINK_GUARD === "on" || process.env.NEXT_PUBLIC_VERCEL_ENV === "production";

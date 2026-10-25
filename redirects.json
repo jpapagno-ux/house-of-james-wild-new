@@ -83,5 +83,10 @@
     "source": "/country/masai-mara",
     "destination": "/destinations/africa/kenya",
     "permanent": true
+  },
+  {
+    "source": "/about/philosophy",
+    "destination": "/about#rules",
+    "permanent": true
   }
 ]

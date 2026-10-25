@@ -149,7 +149,6 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
       { label: "The Ledger", href: "/the-ledger" },
       { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },
-      { label: "Philosophy", href: "/about/philosophy" },
       { label: "Journal", href: "/journal" },
     ],
   },
@@ -162,7 +161,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     links: [
       { label: "Plan with James", href: "/plan" },
       { label: "The Compass", href: "/compass" },
-      { label: "Find an advisor", href: "/advisors" },
+      { label: "Find an advisor", href: "/about/team#advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
       { label: "Live workshops", href: "/plan/workshops" },
       { label: "FAQ", href: "/faq" },

@@ -45,7 +45,7 @@ export default function CompassPage() {
       <main id="main" className="pt-6 md:pt-10">
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="mb-5"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "The Compass", path: "/compass" }]} /></div>
-          <Compass global stays={stays} advisorHref="/advisors" />
+          <Compass global stays={stays} advisorHref="/about/team#advisors" />
 
           <div className="mt-14"><AnswerBlock>The James Wild Compass is a free trip finder from James Wild &amp; Co. Answer a few questions and it reads the Ledger of places James has vetted, suggests stays and a draft route, holds back one place he doesn&rsquo;t publish, and hands you to James or an advisor to finish the trip.</AnswerBlock></div>
 

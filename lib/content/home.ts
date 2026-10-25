@@ -170,7 +170,7 @@ export const HOME = {
     eyebrow: "We're stewards of nature",
     line: "This is more than a journey. It's a chance to move with the pulse of the Earth itself.",
     text: "Each hand-selected place invites you to see the world from new angles, forge lasting connections, and honour the wild places that sustain us.",
-    cta: { label: "Our philosophy", href: "/about/philosophy" },
+    cta: { label: "Rules of the road", href: "/about#rules" },
     image: { url: `${HOME_CDN}/67c0ba1451873b039065af7f_gorillas-nest-rwanda-africa.avif`, alt: "Forest canopy at One&Only Gorilla's Nest, Rwanda" },
     caption: "One&Only Gorilla's Nest · Rwanda",
   },

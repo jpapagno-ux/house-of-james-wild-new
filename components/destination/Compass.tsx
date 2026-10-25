@@ -82,7 +82,7 @@ function shapeLegs(route: Route, len: Length, pace: Pace): Leg[] {
   return legs;
 }
 
-export default function Compass({ country = "Costa Rica", stays, advisorHref = "/advisors", global = false }: { country?: string; stays: CompassStay[]; advisorHref?: string; global?: boolean }) {
+export default function Compass({ country = "Costa Rica", stays, advisorHref = "/about/team#advisors", global = false }: { country?: string; stays: CompassStay[]; advisorHref?: string; global?: boolean }) {
   // step 0 (global only)
   const [drawn, setDrawn] = useState<string | null>(null);
   const [place, setPlace] = useState<string | null>(global ? null : country);

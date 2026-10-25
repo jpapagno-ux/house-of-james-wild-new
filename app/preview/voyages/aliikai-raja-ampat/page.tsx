@@ -58,7 +58,7 @@ export default function AliikaiPreview() {
           glance={<GlanceBar glance={{ price: { amount: "US$4,830", basis: "per person, per voyage · shared cabin" }, facts: [["The voyage", "10 days · 9 nights"], ["Departures", "Fixed dates 2027 & 2028"], ["Embark", "Sorong, West Papua"]], photos: S.gallery.length + 1, cta: { label: "See departures", href: "#departures" } }} />} />
         <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["Day by day", "days"], ["Departures", "departures"], ["Cabins", "cabins"], ["The fare", "included"], ["Experiences", "experiences"], ["Features", "features"], ["The ship", "ship"], ["FAQ", "faq-heading"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: "/voyages/aliikai" }, { name: "10 Day Raja Ampat North", path: "/voyages/aliikai/10-day-raja-ampat-north" }]} /></div>
+          <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Raja Ampat", path: "/voyages/raja-ampat" }, { name: "Aliikai · 10 Day Raja Ampat North", path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north" }]} /></div>
           <Overview
             quote={V.introQuote}
             answer="Aliikai's 10 Day Raja Ampat North sails from Sorong through the Dampier Strait to Wayag and back, nine nights aboard a 40-metre wooden phinisi with seven cabins and a crew of thirteen. From US$4,830 per person in a shared cabin, all meals, guided diving and snorkelling included. Best October to April. James sailed Raja Ampat aboard Aliikai in November 2024."
@@ -147,9 +147,9 @@ export default function AliikaiPreview() {
 
           <FaqBlock faqs={V.faqs} title="Questions About This Voyage" />
           <CardRail id="voyages" eyebrow="More aboard Aliikai" title="Other Voyages on This Ship" cards={[
-            { name: "8 Day Raja Ampat and Misool", href: "/voyages/aliikai/8-day-raja-ampat-and-misool", image: `${CDN}/688bbf8a7042a78a88b3ef8f_688a5bbc507a2e6ee6261154_Misool-Raja-Ampat.jpeg`, meta: "8 days · from Sorong", line: "From US$4,430 per person" },
-            { name: "7 Day Komodo Island Cruise", href: "/voyages/aliikai/7-day-komodo-island-cruise", image: `${CDN}/68b3519787f35d2c5ca2e318_MER.snorkeling.1.jones.shimlock.webp`, meta: "7 days · from Labuan Bajo" },
-            { name: "5 Day Komodo Island", href: "/voyages/aliikai/5-day-komodo-island", image: `${CDN}/688bbf9afeaf925f3e461130_685713a1a135f9b5004dfc47_Aliikai-LabuanBajo-harbor.webp`, meta: "5 days · from Labuan Bajo", line: "From US$3,795 per person" },
+            { name: "8 Day Raja Ampat and Misool", href: "/voyages/raja-ampat/aliikai-8-day-raja-ampat-and-misool", image: `${CDN}/688bbf8a7042a78a88b3ef8f_688a5bbc507a2e6ee6261154_Misool-Raja-Ampat.jpeg`, meta: "8 days · from Sorong", line: "From US$4,430 per person" },
+            { name: "7 Day Komodo Island Cruise", href: "/voyages/komodo/aliikai-7-day-komodo-island-cruise", image: `${CDN}/68b3519787f35d2c5ca2e318_MER.snorkeling.1.jones.shimlock.webp`, meta: "7 days · from Labuan Bajo" },
+            { name: "5 Day Komodo Island", href: "/voyages/komodo/aliikai-5-day-komodo-island", image: `${CDN}/688bbf9afeaf925f3e461130_685713a1a135f9b5004dfc47_Aliikai-LabuanBajo-harbor.webp`, meta: "5 days · from Labuan Bajo", line: "From US$3,795 per person" },
           ]} />
           <PreviewNote>
             <p>The founder stamp reflects James&rsquo;s November 2024 voyage; the library&rsquo;s voyage status is still &ldquo;unclassified&rdquo; and needs setting so the stamp is drawn from the Ledger.</p>

@@ -109,7 +109,7 @@ export const HOME = {
       "Field tested means James has travelled the route or its camps himself, with the year shown. Designed by James means he built the route; the stays on it are vetted by the house.",
     routes: [
       {
-        name: "Grand Kwando Botswana", slug: "grand-kwando-botswana", subtitle: "Lagoon, Lebala, Splash and Tau Pan", ledgerId: "ITN-LAND-2026-713648",
+        name: "Grand Kwando Botswana", slug: "grand-kwando-botswana", country: "botswana", subtitle: "Lagoon, Lebala, Splash and Tau Pan", ledgerId: "ITN-LAND-2026-713648",
         tested: true, year: 2012,
         facts: [["Length", "13 days · 12 nights"], ["Route", "Maun to Maun"], ["Style", "Private guided, light aircraft"], ["Best months", "May to October"]] as [string, string][],
         expect: ["Predator action along the shady banks of the Kwando River", "Huge elephant herds moving through the Linyanti marshes", "Stargazing from a high dune in the Central Kalahari"],
@@ -119,7 +119,7 @@ export const HOME = {
         image: { url: GETTY("1201436116"), alt: "Elephants walking among drowned trees above still water at last light" },
       },
       {
-        name: "Kalahari & Salt Pans", slug: "kalahari-salt-pans", subtitle: "Tau Pan and Nxai Pan", ledgerId: "ITN-LAND-2026-664245",
+        name: "Kalahari & Salt Pans", slug: "kalahari-and-salt-pans-tau-pan-nxai-pan", country: "botswana", subtitle: "Tau Pan and Nxai Pan", ledgerId: "ITN-LAND-2026-664245",
         tested: true, year: 2012,
         facts: [["Length", "8 days · 7 nights"], ["Route", "Maun to Maun"], ["Style", "Private guided"], ["Best months", "Dec–Apr herds · May–Oct predators"]] as [string, string][],
         expect: ["Endless horizons from the raised decks of Tau Pan", "Walking the ancient sands with San Bushman guides", "The centuries-old baobabs of Nxai Pan"],
@@ -129,7 +129,7 @@ export const HOME = {
         image: { url: GETTY("813447208"), alt: "A maned male lion resting in warm late light, gazing across the bush" },
       },
       {
-        name: "North by Northwest", slug: "north-by-northwest", subtitle: "Ireland self-drive, Dublin to Shannon", ledgerId: "ITN-LAND-2026-IRE003",
+        name: "North by Northwest", slug: "north-by-northwest-ireland", country: "ireland", subtitle: "Ireland self-drive, Dublin to Shannon", ledgerId: "ITN-LAND-2026-IRE003",
         tested: false, year: undefined,
         facts: [["Length", "11 days · 10 nights"], ["Route", "Dublin to Shannon"], ["Style", "Self-drive"], ["Best months", "April to October"]] as [string, string][],
         expect: ["Estate life and woodland paths in County Monaghan", "Donegal's high cliffs and uncrowded roads", "An Atlantic island stay on Achill, then Connemara's layered light"],

@@ -304,7 +304,7 @@ export function OverlandRoutes() {
                 <p className={`mt-5 border-t ledger-rule pt-4 leading-relaxed ${"noteIsQuote" in x && x.noteIsQuote ? "ledger-hand text-2xl" : "text-[15px] ledger-muted"}`}>
                   {"noteIsQuote" in x && x.noteIsQuote ? <>&ldquo;{x.note}&rdquo; — J.W.</> : x.note}
                 </p>
-                <Link href={`/overland/${x.slug}`} className="ledger-btn mt-5">View the route</Link>
+                <Link href={recordHref("route", x.slug, x.country)} className="ledger-btn mt-5">View the route</Link>
               </div>
             </article>
           </Reveal>

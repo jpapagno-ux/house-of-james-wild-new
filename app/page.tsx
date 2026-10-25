@@ -19,6 +19,7 @@ import {
 import { HOME } from "@/lib/content/home";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids, touristTrip } from "@/lib/schema";
+import { recordHref } from "@/lib/ledger/urls";
 
 // Page 1 of Site map v1: the home page, ported from the approved Base44
 // sample. Four acts, in the order a first-time reader asks:
@@ -65,7 +66,7 @@ const pageSchema = graph(
       "@type": "ListItem",
       position: i + 1,
       item: touristTrip({
-        path: `/overland/${r.slug}`,
+        path: recordHref("route", r.slug, r.country),
         name: `${r.name}: ${r.subtitle}`,
         description: r.expect.join("; "),
         stays: r.stays.filter(([, slug]) => slug).map(([name, slug]) => ({ name, path: `/stays/${slug}` })),

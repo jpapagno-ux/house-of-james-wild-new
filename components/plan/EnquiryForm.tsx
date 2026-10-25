@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Check, Minus, Plus } from "lucide-react";
 import { ADVISORS } from "@/lib/content/advisors";
@@ -149,7 +150,7 @@ export default function EnquiryForm() {
 
       <div className="border-t ledger-rule pt-6 flex flex-col sm:flex-row sm:items-center gap-4">
         <button type="submit" disabled={state === "sending"} className="ledger-btn ledger-btn--solid justify-center disabled:opacity-60">{state === "sending" ? "Sending…" : f.contact === "email" ? `Send to ${advisor ? advisor.firstName : "James"}` : "Request my call"}</button>
-        <p className="text-[14px] ledger-muted">Nothing is booked until you&rsquo;ve seen and approved a quote. We use your details only to plan your trip. <a href="/legal/privacy" className="underline">Privacy</a></p>
+        <p className="text-[14px] ledger-muted">Nothing is booked until you&rsquo;ve seen and approved a quote. We use your details only to plan your trip. <Link href="/legal/privacy" className="underline">Privacy</Link></p>
       </div>
       {state === "failed" && <p role="alert" className="text-crimson text-[15px]">Something went wrong sending that. Please check the highlighted fields, or call 1.800.419.7000.</p>}
     </form>

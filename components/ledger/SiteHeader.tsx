@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Menu, X, ArrowUpRight, Phone, Search } from "lucide-react";
+import { Menu, X, Phone, Search } from "lucide-react";
 import SearchPanel from "./SearchPanel";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
@@ -152,10 +152,6 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{l.label}</Link>
           ))}
           <a href={`tel:${SITE.phone.tel}`} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{SITE.phone.display}</a>
-          <a href={SITE.booking.url} className={`ledger-eyebrow !text-[10px] inline-flex items-center gap-1 hover:opacity-60 ${light ? "!text-white/85" : ""}`}>
-            {SITE.booking.label} <ArrowUpRight className="w-3 h-3" strokeWidth={1.5} aria-hidden="true" />
-            <span className="sr-only">(opens the booking site)</span>
-          </a>
         </div>
       </div>
 

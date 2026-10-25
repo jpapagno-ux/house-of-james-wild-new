@@ -34,6 +34,8 @@ export const SITE = {
     { label: "IATA", value: "10783883" },
   ],
   memberships: ["IATAN", "CLIA", "The Long Run", "Reef Ball Foundation"],
+  // Old Find Your Wild booking site, removed from the top bar 25 Oct 2026;
+  // live pricing now runs on stay pages (components/record/Pricing.tsx).
   booking: { label: "Find Your Wild", url: "https://book.wildearthstays.com" },
   social: [
     { label: "Instagram", url: "https://www.instagram.com/wild_earth_stays/" },

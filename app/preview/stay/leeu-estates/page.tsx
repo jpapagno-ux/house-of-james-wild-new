@@ -1,6 +1,6 @@
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { LiveRates } from "@/components/record/Pricing";
+import LiveRatesBand from "@/components/record/LiveRatesBand";
 import { GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { zaOthers } from "@/lib/content/preview/za-ledger";
@@ -38,7 +38,6 @@ const HOUSES: Room[] = [
   { name: "Protea House", image: `${CDN}/6a8a3075cde8ad4e63d9cad0_6a23534aedffd313268a6846_6229c3d7be399-04.jpeg`, price: 70000, ...WHOLE },
 ];
 
-const ENGINE = "https://book.wildearthstays.com/en/property/leeu-estates-resorts?checkIn=2026-11-17&checkOut=2026-11-20&adults=2&children=0&infants=0&currency=USD&rooms=1";
 
 export default function LeeuEstatesPreview() {
   return (
@@ -70,21 +69,7 @@ export default function LeeuEstatesPreview() {
               { title: "Rooms to whole houses", body: "Classic rooms through executive suites in the manor, and cottages and houses taken whole for the family." },
             ]}
           />
-          <LiveRates
-            snap={{
-              property: "leeu-estates-resorts",
-              checkIn: "2026-11-17",
-              checkOut: "2026-11-20",
-              nights: 3,
-              guests: 2,
-              fetchedAt: "24 Oct 2026, 2:50 pm ET",
-              engineUrl: ENGINE,
-              rows: [
-                { room: "Studio Room", plan: "Length of Stay Discount", total: 4768.05, note: "15% off for 3 nights or more · flexible days" },
-                { room: "Studio Room", plan: "Best Available Rate", total: 5609.49, note: "Flexible days" },
-              ],
-            }}
-          />
+          <LiveRatesBand property="leeu-estates-resorts" name="Leeu Estates" />
           <RoomsLedger id="rooms" title="Rooms & Suites in the Manor" intro="Every room category on file with its registry “from” price. The live mark shows the room the engine priced for the search above." rooms={ROOMS} footnote="Registry “from” prices are in South African rand (ZAR) per room, per night. The live band above quotes the engine in US dollars for your exact dates." />
           <RoomsLedger id="houses" eyebrow="Taken whole · Gatherings" title="Cottages & Houses for the Family" rooms={HOUSES} icon="tree-ring" footnote="Whole-property rates in ZAR per night. Bedrooms and sleeping plans are confirmed with your quote." />
           <LocationBlock chart={CHART_SOUTH_AFRICA} name="Leeu Estates" pin={{ lat: -33.9156, lng: 19.1127 }} others={zaOthers("Leeu Estates")} heading="Franschhoek, Cape Winelands"
@@ -94,7 +79,7 @@ export default function LeeuEstatesPreview() {
             { name: "Le Quartier Français", href: "/stays/le-quartier-francais", meta: "Franschhoek", line: "The original Leeu house in the village." },
           ]} />
           <PreviewNote>
-            <p>The live band is a real reading of the booking engine taken on 24 October for 17–20 November, 2 guests; only the Studio Room was available for those dates. On the live site it updates as the guest changes dates.</p>
+            <p>The live band reads the booking engine (Tag Albie) through /api/rates for the dates and party the guest picks, cached 15 minutes. It opens 45 days out for 3 nights, 2 adults.</p>
             <p>Library fixes: room prices are mixed (ZAR on most, one Studio Room record in USD at 1,387, a duplicate). The founder status (inspected, May 2026) needs setting on the record so the stamp is drawn from the Ledger. Le Quartier Français has no image on file in this preview.</p>
           </PreviewNote>
         </div>

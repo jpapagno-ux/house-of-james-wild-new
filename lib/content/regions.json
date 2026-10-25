@@ -1,0 +1,1341 @@
+{
+ "exportedOn": "2026-10-25",
+ "regions": [
+  {
+   "slug": "africa",
+   "name": "Africa",
+   "tagline": "Africa: Vast Landscapes, Precise Experiences",
+   "intro": [
+    "Africa unfolds in theatre-scale landscapes and minute, life-rich corners: from migration-staged grasslands to coral-fringed atolls. It is a continent where carefully curated travel meets raw, unmediated nature and refined hospitality.",
+    "Here the terrain writes the itinerary, from sweeping savannahs that stage seasonal dramas to narrow river channels where hippo pods and birds concentrate in astonishing numbers. Travellers can combine a private-concession safari, a gorilla trek and a marine interlude in one trip with a coherence that only regional planning and expert guiding provide.",
+    "Because ecosystems vary so widely, the best journeys are deliberately specific: select migration corridors for prolonged viewing, private concessions for exclusive guiding and sightings, or island clusters for coral reefs and warm-water diving. Wild & Co Safaris designs layered itineraries that balance conservation-minded access, local knowledge and high-touch hospitality to turn those choices into purposeful, place-based journeys."
+   ],
+   "heading": "Africa: Vast Landscapes, Precise Experiences",
+   "highlightsTitle": "Africa Awaits. Make It Epic. Make It Yours.",
+   "highlights": [
+    {
+     "title": "Wildlife & Conservation",
+     "text": "Africa remains unmatched for sustained, close-up wildlife encounters: watch large-scale seasonal movements, track elephant and lion in private concessions, or join conservation-linked projects that contribute directly to protection on the ground. Choose experienced guides and camps that prioritise animal welfare and long-term habitat stewardship."
+    },
+    {
+     "title": "Eco-Luxury Camps & Private Lodges",
+     "text": "Accommodation is both access and ethos: intimate tented suites, private villas and low-impact camps place guests within striking distance of wildlife while minimizing footprint. Many properties operate with community partnerships or concession models, so a stay can simultaneously offer privacy, refined service and measurable local benefit."
+    },
+    {
+     "title": "Marine & Island Escapes",
+     "text": "Complement land-based safaris with warm-water experiences: snorkel coral gardens, dive offshore reefs, or island-hop to secluded beaches. Marine itineraries bring different rhythms and wildlife, from reef-building corals and vibrant reef fish to seasonal whale and dolphin movements."
+    },
+    {
+     "title": "Active & Overland Adventures",
+     "text": "For travellers who prefer momentum, guided walking safaris, mokoro and canoe excursions through delta channels, multi-day overland journeys and high-altitude treks provide both physical challenge and intimate encounters with habitat and species. Active travel often reveals micro-habitats and natural histories that vehicle-based trips miss."
+    },
+    {
+     "title": "Culture & Community Connections",
+     "text": "Meaningful cultural encounters work best when built on respect and reciprocity: meet pastoral and coastal communities, visit artisan collectives, and support conservation projects where storytelling is paired with tangible local benefit. These human connections deepen context for wildlife sightings and leave a positive footprint for host communities."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682565decef52d640fea87e9_shutterstock_2434151437.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b3595a2c4eee4a81846fa3_jeepsafari.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b3593d28aa2dc316c96ae8_elephantstand.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b359a60df9b051ac00c8ba_serengetibaloon.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b359e6743143296756d047_lionstare.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b359686214850d347da32c_leopardtree.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68b35983fdedba29db5502f0_lionrock.jpeg"
+   ],
+   "facts": {
+    "best_months": "Varies by subregion. East and southern Africa: broadly May to October for dry-season wildlife viewing and migration highlights. West and Central Africa: drier months typically fall between November and March. Indian Ocean islands and coastal areas have distinct windows for diving and calm seas, so check specific island seasons when planning.",
+    "who_its_for": "Travelers who prioritise wildlife and marine encounters, active and overland experiences, refined eco-luxury stays, and meaningful community or conservation engagement. Suitable for couples, families and specialist groups seeking photographic, educational or conservation-focused journeys.",
+    "signature_experiences": "Witnessing large migration corridors and seasonal concentrations of wildlife, gorilla and chimpanzee trekking in Albertine Rift forests, mokoro and canoe excursions through delta channels, private-concession game drives with expert trackers, warm-water snorkeling and diving on Indian Ocean reefs, and community-led cultural exchanges that pair storytelling with tangible local benefit.",
+    "how_to_get_there": "International gateways include Johannesburg, Nairobi, Addis Ababa, Cape Town, Casablanca and Dakar, among others, with onward regional flights to domestic hubs. Many safari camps and island lodges require short scheduled or charter flights from these hubs, followed by road transfers, so itineraries usually combine long-haul air with light-aircraft connections."
+   },
+   "faqs": [
+    {
+     "q": "When is the best time to visit Africa?",
+     "a": "Best time depends on the subregion: East and southern Africa typically offer excellent wildlife viewing in the dry season, roughly May to October, while West and parts of Central Africa have drier windows between November and March; marine conditions and island seasons vary by archipelago and activity."
+    },
+    {
+     "q": "Is Africa safe for travelers?",
+     "a": "Safety varies by country and locality: many safari and island destinations have well-established tourism infrastructures and secure lodges, while urban and border areas can present different risks. Standard precautions, up-to-date travel advice and local guidance from operators will reduce exposure and ensure safer travel."
+    },
+    {
+     "q": "How many days do you need in Africa?",
+     "a": "A typical immersive safari or island combined itinerary starts at 8 to 10 days to allow meaningful wildlife viewing and relaxed travel between destinations. Shorter trips can focus on a single ecosystem, while two-week journeys permit multi-region combinations and deeper cultural engagement."
+    },
+    {
+     "q": "What is Africa famous for?",
+     "a": "Africa is renowned for large mammal migrations and close-range safari encounters, high-biodiversity and endemic species, varied marine habitats, and storied landscapes from river deltas to volcanic highlands. The continent is also noted for diverse cultural traditions and conservation innovations."
+    },
+    {
+     "q": "Do I need visas and vaccinations to travel in Africa?",
+     "a": "Visa and vaccination requirements are country-specific: many African destinations require proof of yellow fever vaccination for travelers arriving from certain countries, and visas range from visa-on-arrival to pre-approved electronic visas. Check official embassy guidance and consult a travel clinic well before departure."
+    },
+    {
+     "q": "What should I pack for a safari and marine combination trip?",
+     "a": "Pack neutral, lightweight clothing for daytime game drives, a warm layer for cool early mornings and evenings, good walking shoes, a sun hat and reef-safe sunscreen for marine outings. Bring binoculars and a camera with a versatile zoom for wildlife photography; lodges typically provide laundry and basic safari gear guidance."
+    }
+   ],
+   "countries": [
+    {
+     "name": "Botswana",
+     "slug": "botswana",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/67bf4e881229243bdd1d6261_botswana.avif",
+     "line": "Flooded wetlands, golden savannas, and remote desert pans come together in a landscape shaped by pure wilderness.",
+     "stays": 53,
+     "bestMonths": "May to October — the dry winter season delivers the best game viewing as animals concentrate around water sources, and the annual floodwaters peak between June and August, enabling spectacular mokoro and boat-based safaris through flooded channels and lily-covered lagoons.",
+     "reviewed": false
+    },
+    {
+     "name": "Kenya",
+     "slug": "kenya",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250c4de4b92a50427e2eab_b3f5ceb0-db2a-4b39-accb-822c055663d0.jpg",
+     "line": "Acacia dotted savannas, towering escarpments, and sweeping rift valley lakes define a landscape filled with life and movement.",
+     "stays": 36,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Madagascar",
+     "slug": "madagascar",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630966bbd3ea24c5cbf93d_MadagascarMain.jpg",
+     "line": "Baobab avenues, rainforest canopies, and coastlines edged in turquoise create a landscape unlike anywhere else on Earth.",
+     "stays": 2,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Namibia",
+     "slug": "namibia",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/67bf4e3b4d4417c3e6aa9d23_namibia.avif",
+     "line": "Cinematic desert dunes, stark coastlines, and endless horizons create a landscape defined by silence and sculptural beauty.",
+     "stays": 14,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Rwanda",
+     "slug": "rwanda",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/686305ac9d4b43215b3a0973_rwandaHero1.jpg",
+     "line": "Verdant hills, mist swept mountains, and dense forest create an atmosphere both serene and powerful.",
+     "stays": 10,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Seychelles",
+     "slug": "seychelles",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630a4fb0cfb705acfda11f_seychelleshero1.jpg",
+     "line": "Every stay in Seychelles is handpicked for its harmony with the land and sea, from eco resorts framed by lush jungle canopies to villas with ocean panoramas that fade…",
+     "stays": 3,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "South Africa",
+     "slug": "south-africa",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a86e5f120e922c3d605e835_68659439d6a02991b1610a80_GettyImages-813447208.jpeg",
+     "line": "From fynbos‑clad coasts and whale‑watching bays to Big Five savannas and world‑class vineyards, South Africa stitches dramatic landscapes with refined hospitality.",
+     "stays": 58,
+     "bestMonths": "May through October is peak safari season in Kruger and private reserves: dry conditions, sparse vegetation, and reliable game viewing around waterholes. The Western Cape and Winelands are best from November through April, when conditions are warm and dry. Whale watching along the Southern Cape coast peaks from July through October.",
+     "reviewed": false
+    },
+    {
+     "name": "Tanzania",
+     "slug": "tanzania",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68681865704da54a0960dd4e_TanzaniaJeepSunset.jpg",
+     "line": "From the Serengeti plains to the volcanic landscapes of the Crater Highlands and the turquoise shores of the Indian Ocean, the country offers remarkable diversity.",
+     "stays": 37,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Zambia",
+     "slug": "zambia",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/686306a0a5613ab1cd9a33e5_GettyImages-2170832274.jpg",
+     "line": "Wide rivers, misty waterfalls, and wildlife rich plains define this soulful corner of Africa.",
+     "stays": 19,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Zimbabwe",
+     "slug": "zimbabwe",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6863058a5cc6acdb060b3c2c_ZimHero1.jpg",
+     "line": "Sweeping savannas, riverfront woodlands, and dramatic landscapes shape a country rich in natural heritage.",
+     "stays": 9,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Kwando 4 Rivers",
+     "slug": "kwando-4-rivers",
+     "ledgerId": "STY-2026-155403",
+     "tagline": "Exclusive, game-rich wilderness in the northern Delta.",
+     "image": "https://okavangodelta.com/wp-content/uploads/2022/10/4-Rivers-Camp-Room-View-1.jpg",
+     "country": "Botswana",
+     "status": "founder_visited",
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Kwando Kwara",
+     "slug": "kwando-kwara",
+     "ledgerId": "STY-2026-608379",
+     "tagline": "The complete Delta experience in prime wilderness.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/407dd46f9_generated_image.png",
+     "country": "Botswana",
+     "status": "founder_visited",
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Cottars 1920 Camp",
+     "slug": "cottars-1920-camp",
+     "ledgerId": "STY-2026-000066",
+     "tagline": "Vintage luxury safari where legacy, wildlife, and community thrive together.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a7d23947_099e385f6_685eebc62619755c7ab080d0_CottarsBushVilla_20-_20Deck.jpg",
+     "country": "Kenya",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Ellerman House",
+     "slug": "ellerman-house",
+     "ledgerId": "STY-2026-000075",
+     "tagline": "Where South African soul meets clifftop luxury and unforgettable experiences.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg",
+     "country": "South Africa",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Leeu Estates",
+     "slug": "leeu-estates",
+     "ledgerId": "STY-2026-000148",
+     "tagline": "Where vineyard luxury, culinary excellence, and meaningful escape meet beneath the mountains of the Cape Winelands.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9cf531c35_a37c8b73b_69d153067a3dcbb4cc167d9d_6d3a1ea3.webp",
+     "country": "South Africa",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Singita Faru Faru Lodge",
+     "slug": "singita-faru-faru-lodge",
+     "ledgerId": "STY-2026-000248",
+     "tagline": "Bush meets beach, wild meets wonder",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5ee3efdde_83502c8c3_6989eb9c4dd5b0282758a039_Singita_20Faru_20Faru_20Lodge_20-_20Exterior_20and_20Ma.",
+     "country": "Tanzania",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "& Beyond Sossusvlei Desert Lodge",
+     "slug": "beyond-sussuvlei-desert-lodge",
+     "ledgerId": "STY-2026-000002",
+     "tagline": "Luxury among the dunes and stars",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dcfb4f00c_83b32277b_691f1487c4bf1e354aa4763a_beyond-sussuvlei-desert-lodge.jpg",
+     "country": "Namibia",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "&Beyond Benguerra Island",
+     "slug": "benguerra-island-by-and-beyond",
+     "ledgerId": "STY-2026-000004",
+     "tagline": "Where turquoise waters meet barefoot luxury",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ffee16147_f5df0bd87_691ee869b223aeba002e33a9_benguerra-island-by-and-beyond.png",
+     "country": "Tanzania",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 241,
+   "reviewed": true,
+   "ready": true
+  },
+  {
+   "slug": "asia",
+   "name": "Asia",
+   "tagline": "Eco-luxury stays, wellness retreats, and wild adventures across mountains, jungle, and sea",
+   "intro": [
+    "From jagged Himalayan ridgelines to jade-green rice terraces and sapphire island seas, Asia is a continent of contrasts and deep traditions that reward slow exploration and daring escapes.",
+    "Now is the time to travel Asia, where centuries-old temples, coastal archipelagos, and high mountain passes form a single invitation to explore. Journey from Himalayan trails used by pilgrims to boutique wellness sanctuaries in Bali and Thailand, and from bustling cultural capitals to remote islands fringed by coral.",
+    "Every trip balances immersion and ease: stay in discreet eco-luxury lodges tucked into rainforest, wake to surf and salt air on private beaches, or move deliberately through historic streets and temple complexes. Expect carefully curated experiences that connect you to landscape, tradition, and local conservation initiatives without sacrificing refinement."
+   ],
+   "heading": "Eco-luxury stays, wellness retreats, and wild adventures across mountains, jungle, and sea.",
+   "highlightsTitle": "Asia Awaits: Islands, Culture, Mountains and Marine Worlds.",
+   "highlights": [
+    {
+     "title": "Eco-Luxury & Wellness",
+     "text": "Choose boutique jungle retreats, beachfront sanctuaries, and minimalist mountain lodges that prioritize sustainable design, locally sourced cuisine, and restorative wellness programs rooted in regional traditions such as Ayurveda and Balinese spa therapies."
+    },
+    {
+     "title": "Island Cruises & Coastal Explorations",
+     "text": "Voyage among limestone cliffs, coral-fringed atolls, and tiny fishing isles by private yacht or traditional phinisi, with opportunities to anchor in secluded coves, explore sea caves, and visit coastal villages by longboat."
+    },
+    {
+     "title": "Marine Adventures & Water Sports",
+     "text": "Asia’s warm tropical seas offer world-class diving, snorkeling on vibrant reefs, and surf at both famous breaks and little-known coves; marine-focused itineraries also include responsible encounters with manta rays and sea turtles."
+    },
+    {
+     "title": "Cultural Immersion",
+     "text": "Walk ancient temple circuits, shop aromatic street markets, learn regional crafts with local artisans, and dine on seasonal regional cuisine, each experience designed to deepen cultural understanding while supporting local communities."
+    },
+    {
+     "title": "Wildland Treks & Mountain Lodges",
+     "text": "Trek classic Himalayan foothills and lesser-known jungle trails, sleep in well-appointed lodges that emphasize low-impact hospitality, and seek rare wildlife sightings in protected reserves with expert local guides."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc8c9e3ff39156804ee13_GettyImages-1396833399.jpeg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc1121d5788f95bce03a8_GettyImages-1459589031.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc11263998c4a6a1e55db_GettyImages-1483214019.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc19e95c7991bf7ecdca4_GettyImages-642291399.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc03a7a4029d62518363c_GettyImages-1820810060.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdbfde3d85b2271372e7b3_GettyImages-1396833399%20(1).jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68bdc1afe3de2ad6cefd1140_GettyImages-1278741283.jpeg"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Cambodia",
+     "slug": "cambodia",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68257078c8cdf01f7fa148aa_Shintamani-Box-Image-1920x1080.jpg",
+     "line": "Sacred temples, riverfront villages, and dense jungle create a landscape shaped by history and quiet mystique.",
+     "stays": 3,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Indonesia",
+     "slug": "indonesia",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/67bf4e584d4417c3e6aab8b7_indonesia.avif",
+     "line": "Volcanic peaks, emerald rice terraces, and island dotted seas create a world rich in colour and cultural depth.",
+     "stays": 30,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Maldives",
+     "slug": "maldives",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6825550e2118430705d277f7_GettyImages-1170961707.jpg",
+     "line": "A constellation of coral islands floats in crystal clear waters, each ringed by soft white sand and vibrant reef.",
+     "stays": 10,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Philippines",
+     "slug": "philippines",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e2be54f1c1aee1326c5d27_Philippines%20-%20Feature%20Image.jpg",
+     "line": "Over seven thousand islands create a world of turquoise lagoons, limestone cliffs, and palm fringed shores.",
+     "stays": 1,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Thailand",
+     "slug": "thailand",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630aca093165a773828482_ThailandMainHero2.jpg",
+     "line": "Emerald jungle, golden temples, limestone cliffs, and island dotted seas create a landscape alive with colour and contrast.",
+     "stays": 9,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Aliikai Voyage",
+     "slug": "aliikai-voyage",
+     "ledgerId": "STY-2026-882896",
+     "tagline": "\"Sail Beyond the Ordinary – Discover Indonesia’s Wild Beauty Aboard Aliikai\"",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c99dcfd88_5c03b83a1_684789da9f8783e259dcc5c8_Aliikai-Boat-Exterior3.webp",
+     "country": "Indonesia",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Amandari",
+     "slug": "amandari",
+     "ledgerId": "STY-2026-000008",
+     "tagline": "A secluded Balinese village retreat above the Ayung River valley.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7c86c3ec1_75eb0474c_684c2e7d2ab7ef348722b04a_soori-bali-home-offers-2.jpg",
+     "country": "Indonesia",
+     "status": "unclassified",
+     "statusDate": "",
+     "reserveChild": false
+    },
+    {
+     "name": "Anantara Bophut Koh Samui Resort",
+     "slug": "anantara-bophut-koh-samui-resort",
+     "ledgerId": "STY-2026-000014",
+     "tagline": "Thai Island Bliss, Where Adventure Meets Tranquility",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a213a222f_471847200_697a968a193a85d008462519_b0043613.avif",
+     "country": "Thailand",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Anantara Chiang Mai Resort",
+     "slug": "anantara-chiang-mai-resort",
+     "ledgerId": "STY-2026-000015",
+     "tagline": "Riverfront Serenity, Timeless Chiang Mai",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/53a5ac815_efe1f022e_697a94fe5417b2419891930f_0f949810.avif",
+     "country": "Thailand",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Cardamom Tented Camp",
+     "slug": "cardamom-tented-camp",
+     "ledgerId": "STY-2026-000053",
+     "tagline": "Your Stay Keeps the Forest Standing",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2ad6f4286_7bd29bb43_6968ba74c08351e1ca7e72cc_cardamom-tented-camp-hero.webp",
+     "country": "Cambodia",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "JA Manufaru Maldives",
+     "slug": "ja-manufaru-maldives",
+     "ledgerId": "STY-2026-000120",
+     "tagline": "Secluded Splendor – Authentic Island Luxury at the Edge of the World",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f31157fec_b9999ad3b_685db52b855bdf3477c4c856_hero-image-JAmanufaru.jpg",
+     "country": "Maldives",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Kudadoo Private Island",
+     "slug": "kudadoo-private-island",
+     "ledgerId": "STY-2026-000137",
+     "tagline": "\"Where 'Anything. Anytime. Anywhere.' becomes your daily rhythm.\"",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9bafab5c_2cfcc8661_68e2c150b534a5ce616e9da6_Kudadoo_Private_Island_Aerial.avif",
+     "country": "Maldives",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Nay Palad Hideaway",
+     "slug": "nay-palad-hideaway",
+     "ledgerId": "STY-2026-000179",
+     "tagline": "Barefoot Luxury, Island Spirit",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb8b4a572_1a6380771_69714c14c9bcc8f1b08a482b_d1eabb9bjpg.avif",
+     "country": "Philippines",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 53,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "usa-canada",
+   "name": "USA & Canada",
+   "tagline": "Luxury wilderness lodges, national park adventures, and iconic journeys across North America",
+   "intro": [
+    "From the Rocky Mountains and glacier lakes to coastal escapes, wildlife encounters, and unforgettable road journeys, North America with James Wild & Co is where wilderness, culture, and adventure come together.",
+    "Now is the time to explore the USA and Canada, where soaring mountains, ancient forests, rugged coastlines, and vibrant cities create journeys unlike anywhere else on earth.",
+    "Travelers can experience the Canadian Rockies, discover the national parks of the American West, watch bears and whales in the wild, and stay in carefully selected lodges that bring comfort closer to nature."
+   ],
+   "heading": "Luxury wilderness lodges, national park adventures, and iconic journeys across North America.",
+   "highlightsTitle": "USA & Canada Awaits: Wild Landscapes, Legendary Roads and Great Lakes",
+   "highlights": [
+    {
+     "title": "Luxury Wilderness Lodges",
+     "text": "Stay in boutique mountain lodges, lakeside retreats, luxury ranches, and wilderness resorts where comfort and nature come together."
+    },
+    {
+     "title": "National Parks & Scenic Landscapes",
+     "text": "Discover the Canadian Rockies, Yellowstone, Yosemite, Glacier National Park, Banff, Jasper, and other breathtaking destinations known for their unforgettable scenery."
+    },
+    {
+     "title": "Wildlife Encounters",
+     "text": "Observe bears, moose, elk, wolves, whales, bison, and other remarkable wildlife in their natural habitats across forests, mountains, and coastlines."
+    },
+    {
+     "title": "Coastal Escapes",
+     "text": "Explore the rugged Pacific Coast, cruise through Alaska's spectacular fjords, discover charming coastal towns, and experience breathtaking ocean views from shore to sea."
+    },
+    {
+     "title": "Adventure Awaits",
+     "text": "Hike mountain trails, paddle crystal-clear lakes, kayak alongside glaciers, ride scenic railways, and experience the incredible beauty of USA & Canada's great outdoors."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68d937d98c82b343e33d4af8_USAMontanaHero.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d41c26f9f5a00740ca1ed_Moab-Arches-National-Park-scaled.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d41c26332c517ac848691_amangiri-desert-firepit-view-utah.jpeg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d41c24fff68eb8db3631c_Sip-to-Sky.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d4648af5a1341b3a7976e_half-dome-yosemite-national-park-california.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d46fcdbb0afeeb35ff8a8_osemite-valley-merced-river-california.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d476ad92a05d6cb94f731_bryce-canyon-national-park-hoodoos-utah.jpg"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Arizona",
+     "slug": "arizona",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6930656833b3b0fbb846baae_istockphoto-1446839386-612x612.jpg",
+     "line": "Warm desert light sculpts red rock amphitheaters, saguaro-studded valleys, and vast skies that feel endless.",
+     "stays": 2,
+     "bestMonths": "March to May and September to November for mild temperatures and clear light; winter is pleasant in lower deserts while summer is hot with a brief monsoon season in July and August.",
+     "reviewed": true
+    },
+    {
+     "name": "California",
+     "slug": "california",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68e0016338de08e07debcf55_California.avif",
+     "line": "A state of sweeping contrasts: wind-sculpted coastlines, ancient redwood cathedrals, high alpine lakes, and stark desert basins.",
+     "stays": 3,
+     "bestMonths": "April to May and September to November for mild weather and fewer crowds; summer for high-country access and coastal activities; winter for Sierra snow and southern mild climates.",
+     "reviewed": true
+    },
+    {
+     "name": "Montana",
+     "slug": "montana",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68d937d98c82b343e33d4af8_USAMontanaHero.jpg",
+     "line": "Mountain peaks, clear rivers, and sweeping valleys embody the quiet grandeur of the northern Rockies.",
+     "stays": 3,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Utah",
+     "slug": "utah",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/693063cf22fab59be682959d_shutterstock_2658318999.jpg",
+     "line": "Stone towers, arches, and canyons carved by centuries of wind and water create landscapes that feel sculptural and ancient.",
+     "stays": 6,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Wyoming",
+     "slug": "wyoming",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/693064cd40db16bf2441240a_shutterstock_2141668821.jpg",
+     "line": "Open prairies, dramatic peaks, and vast skies shape a land where nature feels both untamed and serene.",
+     "stays": 1,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Alila Ventana Big Sur",
+     "slug": "alila-ventana-big-sur",
+     "ledgerId": "STY-2026-000007",
+     "tagline": "“Wild Elegance by the Pacific”",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d4eee5937_f01b22e6e_68e013c78909a9fc6d7217cf_Alila_Ventana_Big_Sur_Exterior2.avif",
+     "country": "California",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Ambiente™ Sedona",
+     "slug": "ambiente-tm-sedona",
+     "ledgerId": "STY-2026-000012",
+     "tagline": "Luxury designed around the landscape, not around the building.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8226fbe04_28ec1c046_6a4fbc43e18286d3522fbd60_Ambiente-Pool-Hero.jpg",
+     "country": "Arizona",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Open Sky",
+     "slug": "open-sky",
+     "ledgerId": "STY-2026-000203",
+     "tagline": "Luxury beneath the vast desert sky.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/11a41c3d1_dbb235167_6a4fcd2856f136a4ba703579_Open-Sky.jpg",
+     "country": "Utah",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Paws Up Resort",
+     "slug": "paws-up-resort",
+     "ledgerId": "STY-2026-000208",
+     "tagline": "“Where Big Sky Meets Bespoke Wilderness”",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a5351c618_ee1e8f944_68d984448b0892e0117a9209_PawsUpResort_Exterior.avif",
+     "country": "Montana",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Post Ranch Inn",
+     "slug": "post-ranch-inn",
+     "ledgerId": "STY-2026-000217",
+     "tagline": "Where the Pacific meets profound stillness.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ab9f7cc88_1cee9cf7d_6a4fd146d2ac026a03241922_Post-Ranch-Inn-Sun-Set.avif",
+     "country": "California",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Under Canvas Bryce Canyon",
+     "slug": "under-canvas-brtce-canyon",
+     "ledgerId": "STY-2026-000316",
+     "tagline": "Safari-inspired luxury camping beside the iconic hoodoos of Bryce Canyon National Park.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b06f593cb_a9ba60e50_6a7cd96bde844204b6c9eb0c_Under_20Canvas_20Bryce_20Canyon_20Hero.jpg",
+     "country": "Utah",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 15,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "central-america",
+   "name": "Central America",
+   "tagline": "Central America Awaits: Wild, Vibrant, Transformative",
+   "intro": [
+    "From rainforest canopies and ancient ruins to volcanic peaks, coral reefs, and secluded beaches, Central America with James Wild & Co is where nature, culture, and adventure come together.",
+    "Now is the time to discover Central America, where lush rainforests, vibrant wildlife, pristine coastlines, and rich cultural traditions create extraordinary experiences.",
+    "Travelers can explore the cloud forests of Costa Rica, uncover the ancient wonders of Guatemala, dive the crystal-clear waters of Belize, and unwind in boutique eco-lodges that bring comfort closer to nature."
+   ],
+   "heading": "Eco-luxury stays, rainforest adventures, and unforgettable journeys.",
+   "highlightsTitle": "Central America Awaits. Rainforests, Reefs & Remarkable Adventures.",
+   "highlights": [
+    {
+     "title": "Eco-Luxury Stays",
+     "text": "Stay in boutique jungle lodges, beachfront retreats, and nature-inspired escapes designed to immerse you in the region's extraordinary landscapes."
+    },
+    {
+     "title": "Wildlife Encounters",
+     "text": "Spot sloths, toucans, scarlet macaws, sea turtles, monkeys, and vibrant marine life in some of the world's richest ecosystems."
+    },
+    {
+     "title": "Cultural Discoveries",
+     "text": "Experience the traditions of Indigenous communities, explore colorful colonial towns, and uncover the stories of the ancient Maya."
+    },
+    {
+     "title": "Coastal Escapes",
+     "text": "Relax on white sand beaches, sail across turquoise waters, snorkel coral reefs, and discover hidden islands along both the Caribbean and Pacific coasts."
+    },
+    {
+     "title": "Adventure Awaits",
+     "text": "Hike volcanoes, zipline through cloud forests, kayak tropical rivers, surf world-class waves, or dive beneath the surface of the Belize Barrier Reef."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682509a054e5689f9892c0fb_GettyImages-1204864484.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d7fd4e5f3fd836f33973b_arenas-del-mar-beachfront-rainforest-resort-costa-rica.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d7fd3a873e10c1510f047_casa-cavada.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d7fd3685ceff7c09c24d0_islas-secas-panama.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d801d9821aaf2ad855d26_Two-beaches-two-pools-Arenas-del-Mar-Beach-and-Rainforest-Resort.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4ebc3183c1b1dba72689cf_luxury-coastal-resort-aerial-view.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4ebc322ebbdda902e9fd0d_waterfall-natural-pool-rainforest.avif"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Belize",
+     "slug": "belize",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68255840f3cf49a9b92d7770_GettyImages-2203385205.jpg",
+     "line": "Belize rewards travelers who do more than one thing well.",
+     "stays": 14,
+     "bestMonths": null,
+     "reviewed": true
+    },
+    {
+     "name": "Costa Rica",
+     "slug": "costa-rica",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6863018671b62ea7c452cea0_CostaRicaMAHero1.jpg",
+     "line": "Cloud forests, volcanic slopes, and wildlife filled jungles create a landscape alive with natural energy.",
+     "stays": 17,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Panama",
+     "slug": "panama",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682509a054e5689f9892c0fb_GettyImages-1204864484.jpg",
+     "line": "Where rainforest meets ocean, the country shifts from pristine Pacific beaches to Caribbean islands and biodiverse jungle.",
+     "stays": 3,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Aguas Claras",
+     "slug": "aguas-claras",
+     "ledgerId": "STY-2026-000006",
+     "tagline": "Artful Caribbean hideaway on Playa Chiquita",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
+     "country": "Costa Rica",
+     "status": "unclassified",
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Amor Arenal",
+     "slug": "amor-arenal",
+     "ledgerId": "STY-2026-000013",
+     "tagline": "Jungle Intimacy, Volcano Views",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82e39722d_fa5a2d772_68d951c7fe6e143996ff061f_07dafdee.avif",
+     "country": "Costa Rica",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Blancaneaux Lodge",
+     "slug": "blancaneaux-lodge",
+     "ledgerId": "STY-2026-827152",
+     "tagline": "A rainforest hideaway shaped by rivers, waterfalls, and Maya heritage.",
+     "image": "https://thecoppolahideaways.com/wp-content/uploads/2023/08/BL-Hero-1.jpg",
+     "country": "Belize",
+     "status": "unclassified",
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Blue Reef",
+     "slug": "blue-reef",
+     "ledgerId": "STY-2026-137933",
+     "tagline": "A Belize resort shaped by the pull of the Caribbean Sea.",
+     "image": "https://www.bluereefbeach.com/wp-content/uploads/2023/05/hero-beach.jpg",
+     "country": "Belize",
+     "status": "unclassified",
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Isla Secas",
+     "slug": "isla-secas",
+     "ledgerId": "STY-2026-000118",
+     "tagline": "A Private Island for Nature and Escape",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a06ad2a60_e405209d4_69f1c2e93b417f4de707f382_10.jpg",
+     "country": "Panama",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Nayara Bocas del Toro",
+     "slug": "nayara-bocas-del-toro",
+     "ledgerId": "STY-2026-559654",
+     "tagline": "Private overwater luxury hidden within Panama’s Caribbean islands.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0efab3708_f78bbb00f_6a14b8d2cfe2fe2ae2880a70_our-resorts-bocas-h-1jpg.webp",
+     "country": "Panama",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 34,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "caribbean-mexico",
+   "name": "Caribbean & Mexico",
+   "tagline": "Caribbean & Mexico Awaits: Sun, Soul, Transformative",
+   "intro": [
+    "From turquoise waters and white sand beaches to ancient ruins, lush jungles, and vibrant cultures, the Caribbean and Mexico with James Wild & Co is where relaxation, adventure, and discovery come together.",
+    "Now is the time to discover the Caribbean and Mexico, where crystal-clear seas, tropical islands, ancient civilizations, and rich local traditions create journeys filled with beauty and wonder.",
+    "Travelers can unwind in boutique beachfront retreats, explore the Mayan wonders of Mexico, snorkel vibrant coral reefs, sail between idyllic islands, and experience the warmth of Caribbean hospitality."
+   ],
+   "heading": "Beachfront escapes, eco-luxury stays, and unforgettable coastal adventures.",
+   "highlightsTitle": "Caribbean & Mexico Awaits. Islands, Culture & Coastal Wonder.",
+   "highlights": [
+    {
+     "title": "Beachfront Stays",
+     "text": "Discover boutique resorts, luxury villas, eco-retreats, and secluded hideaways where comfort meets the beauty of the coast."
+    },
+    {
+     "title": "Nature & Marine Life",
+     "text": "Snorkel vibrant coral reefs, swim in crystal-clear cenotes, spot sea turtles, dolphins, and tropical marine life, or explore lush jungles filled with native wildlife."
+    },
+    {
+     "title": "Culture & Heritage",
+     "text": "Walk through ancient Mayan cities, wander colorful colonial streets, and experience local traditions, cuisine, and music that bring every destination to life."
+    },
+    {
+     "title": "Island Escapes",
+     "text": "Sail between tropical islands, relax on powder-soft beaches, and discover hidden coves surrounded by turquoise waters."
+    },
+    {
+     "title": "Adventure Awaits",
+     "text": "Dive beneath the Caribbean Sea, kayak through mangroves, hike jungle trails, explore underground caves, or set sail into unforgettable sunsets."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682509b9a60d8d65e7c3badd_GettyImages-1467093070.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6af9a1d9c142d1ecaa80_Aerial-Conrad-Tulum-PoolBeach.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6af9f1178d1c25624e93_beach-front.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6af9959482bb644332c4_016-121_Final-1-1.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6b43903c6536a26d2789_hotel-esencia-beachfront-riviera-maya-mexico.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6af8959482bb6443329d_Aerial-Conrad-Tulum-PoolBeach-4.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d6b43c734ed375be9239c_hotel-esencia-beach-riviera-maya-mexico.jpg"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Mexico",
+     "slug": "mexico",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630b9e3097f5b87a99934e_MexicoHero1.jpg",
+     "line": "From vibrant coastlines to jungle wrapped cenotes and mountain highlands, the landscape reveals countless expressions of beauty.",
+     "stays": 23,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Be Tulum",
+     "slug": "be-tulum",
+     "ledgerId": "STY-2026-000036",
+     "tagline": "Barefoot luxury where jungle tranquility meets the Caribbean Sea.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/443e033cd_056411c40_682f2ffe35dc4f105ef78444_6b2bqM0tPEEz7VwLHj6BtOtlVg.webp",
+     "country": "Mexico",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Conrad Tulum Riviera Maya",
+     "slug": "conrad-tulum-riviera-maya",
+     "ledgerId": "STY-2026-000064",
+     "tagline": "Modern Riviera Maya luxury immersed in nature, wellness and unforgettable coastal adventures.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b0a556aa3_862932200_6a4fc17a5d5c3a6da07ee4f0_Aerial-Conrad-Tulum-PoolBeach.webp",
+     "country": "Mexico",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 23,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "oceania",
+   "name": "Oceania",
+   "tagline": "Oceania Awaits: Wild, Remote, Transformative",
+   "intro": [
+    "From ancient rainforests and rugged coastlines to coral reefs, alpine peaks, and island escapes, Oceania is where nature, culture, and adventure come together.",
+    "Now is the time to discover Oceania, where dramatic landscapes, unique wildlife, and crystal-clear waters create journeys unlike anywhere else on earth.",
+    "Explore the ancient landscapes of Australia, experience the breathtaking beauty of New Zealand, discover the vibrant reefs of the South Pacific, and unwind in boutique lodges and island retreats surrounded by nature."
+   ],
+   "heading": "Luxury wilderness lodges, coastal escapes, and unforgettable adventures across land and sea.",
+   "highlightsTitle": "Oceania Awaits. Islands, Wilderness & Endless Horizons.",
+   "highlights": [
+    {
+     "title": "Luxury Lodges & Island Retreats",
+     "text": "Stay in boutique wilderness lodges, beachfront villas, eco-retreats, and private island escapes where comfort meets the natural world."
+    },
+    {
+     "title": "Wildlife Encounters",
+     "text": "Discover kangaroos, koalas, kiwi, dolphins, whales, penguins, and extraordinary marine life found nowhere else on earth."
+    },
+    {
+     "title": "Coastal Escapes",
+     "text": "Explore the Great Barrier Reef, the fjords of New Zealand, secluded islands, and spectacular coastlines surrounded by turquoise waters."
+    },
+    {
+     "title": "Cultural Encounters",
+     "text": "Experience the rich traditions of Māori and Aboriginal communities through meaningful experiences that celebrate heritage, storytelling, and connection to Country."
+    },
+    {
+     "title": "Adventure Awaits",
+     "text": "Hike alpine trails, kayak through pristine fjords, dive vibrant coral reefs, cruise breathtaking coastlines, or watch the sunrise over ancient landscapes that inspire every journey."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6824ef4305d58495fdf7c4ad_GettyImages-631151269.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d659d59c89ab511353a01_the-brando-tetiaroa-atoll-french-polynesia-aerial.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d659907434cadf8b6d10a_DUNE.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d659be02461a9ce08ee2d_Letahaa-aerial-view.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d65992a7ed147b484b1bf_longitude131-room-view.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e968e27bd0b2152b10601_Turtle-Island-Fiji-private-island.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e968edfdefa32155d0205_maori-rock-carvings-lake-taupo.webp"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Australia",
+     "slug": "australia",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250916bef0bcef9e168487_GettyImages-1486555219.jpg",
+     "line": "From red deserts and sculpted gorges to coral gardens and eucalyptus‑fringed coastlines, Australia is a continent of singular ecosystems and scale.",
+     "stays": 5,
+     "bestMonths": "September to November and March to May provide broadly mild weather and lower crowds for much of the country; the northern wet season runs roughly November to April, making the dry winter months preferable for tropical regions and Kimberley expeditions.",
+     "reviewed": true
+    },
+    {
+     "name": "Fiji",
+     "slug": "fiji",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6862fca8f35cf39042677fa1_FijiHero.jpg",
+     "line": "Turquoise waters, soft coral reefs, and palm lined shores create a landscape shaped by warmth and gentle rhythm.",
+     "stays": 8,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "New Zealand",
+     "slug": "new-zealand",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9b1771f0d9b76ac0dfc_gettyimages-200533529-001-170667a.jpg",
+     "line": "Glacial fjords, alpine ranges, rolling farmland, and luminous lakes create a landscape brimming with majesty.",
+     "stays": 4,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Tahiti",
+     "slug": "tahiti",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+     "line": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour.",
+     "stays": 8,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Pearl Resort Vahine Private Island",
+     "slug": "pearl-resort-vahine-private-island",
+     "ledgerId": "STY-2026-000213",
+     "tagline": "A hidden private island sanctuary where simplicity and luxury exist in perfect balance.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif",
+     "country": "Tahiti",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Beckon Capella Lodge",
+     "slug": "beckon-capella-lodge",
+     "ledgerId": "STY-2026-000037",
+     "tagline": "Australia's most exclusive island escape where barefoot luxury meets World Heritage wilderness.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8b96af4e8_24467b472_6a4fbe933031db7ec7cd8426_overlooking-view.jpg",
+     "country": "Australia",
+     "status": "unclassified",
+     "statusDate": "",
+     "reserveChild": false
+    },
+    {
+     "name": "Le Taha'a",
+     "slug": "la-tahaa",
+     "ledgerId": "STY-2026-000146",
+     "tagline": "“Where the lagoon meets luxury and nature whispers your name”",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/820c47752_01171d195_68dd6194c1307bfa2b873d83_aerial-view-le-taha-a.avif",
+     "country": "Tahiti",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Six Senses Fiji",
+     "slug": "six-senses-fiji",
+     "ledgerId": "STY-2026-000265",
+     "tagline": "A private South Pacific sanctuary where sustainability, wellness, and ocean adventure live in perfect balance.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dae665db4_4efca2fcd_68d59a98a3594cd40f12298f_360a4fd0.webp",
+     "country": "Fiji",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Tahi",
+     "slug": "tahi",
+     "ledgerId": "STY-2026-000289",
+     "tagline": "Where Regeneration Meets Relaxation",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cbceb65c_8fc4536b7_6968a54c4819b6c17fff714e_1_2BTahi_2Bthe_2Bplace.webp",
+     "country": "New Zealand",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Lindis Lodge",
+     "slug": "lindis-lodge",
+     "ledgerId": "STY-2026-000154",
+     "tagline": null,
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1aaccc748_b0caaedb4_6a4fc95255a24ce112c4ee16_the-lindis.jpg",
+     "country": "New Zealand",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 25,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "south-america",
+   "name": "South America",
+   "tagline": "South America Awaits: Wild, Vibrant, Transformative",
+   "intro": [
+    "From the Amazon rainforest and soaring Andes to vibrant cities, ancient civilizations, and breathtaking coastlines, South America is where nature, culture, and adventure come together.",
+    "Now is the time to discover South America, where dramatic landscapes, remarkable wildlife, and rich cultural heritage create journeys unlike anywhere else on earth.",
+    "Explore the Amazon Rainforest, hike through the Andes, discover the ancient wonders of Peru, experience the vibrant spirit of Argentina and Brazil, and unwind in boutique lodges surrounded by nature."
+   ],
+   "heading": "Luxury wilderness lodges, cultural discoveries, and unforgettable adventures.",
+   "highlightsTitle": "Ancient Wonders, Wild Landscapes & Timeless Adventure.",
+   "highlights": [
+    {
+     "title": "Luxury Lodges & Nature Retreats",
+     "text": "Stay in boutique rainforest lodges, luxury vineyards, mountain retreats, and eco-lodges designed to immerse you in spectacular natural surroundings."
+    },
+    {
+     "title": "Wildlife Encounters",
+     "text": "Discover jaguars, giant otters, llamas, alpacas, condors, penguins, pink river dolphins, and extraordinary wildlife across the continent's diverse ecosystems."
+    },
+    {
+     "title": "Cultural Encounters",
+     "text": "Explore the legacy of the Inca, wander colorful colonial towns, and experience the traditions, music, and cuisine that make South America so distinctive."
+    },
+    {
+     "title": "Coastal & Natural Wonders",
+     "text": "Journey through Patagonia, the Atacama Desert, the Galápagos, the Amazon, and the breathtaking fjords and waterfalls that define the continent's wild beauty."
+    },
+    {
+     "title": "Adventure Awaits",
+     "text": "Trek to Machu Picchu, cruise the Amazon, hike through Patagonia, explore glaciers, kayak pristine lakes, or discover hidden valleys and ancient trails."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682566aaf5d14c323e890639_Patagonia_cabalgata2.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d7b21bde7b8cb4c2ad997_Madre%20de%20Dios%20River.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d7b2162e3472d81c31360_Inkaterra-Hacienda-Urubamba_Main_House.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a1d684ff07736707c9c61ca_Gallery-Three-Towers-Hike.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4d8d1651c1f79dd56c00d0_explora-atacama-desert-landscape.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a35431b03f4315cf8ba0455_b277563a.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e943fae0174375a4daca3_rainforest-luxury-lodge-aerial-view.webp"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Argentina",
+     "slug": "argentina",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69ebee3612361132311bffac_Arentina%20-%20Feature.jpg",
+     "line": "From blue-ice glaciers and wind-swept pampas to vineyard-draped foothills and thunderous waterfalls, Argentina is a country of grand contrasts.",
+     "stays": 6,
+     "bestMonths": "October to April for general travel, November to March for Patagonia, March to April for Mendoza’s grape harvest and milder autumn weather.",
+     "reviewed": true
+    },
+    {
+     "name": "Chile & Easter Island",
+     "slug": "chile",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6838ebcc1edd683dfb69c0ec_gettyimages-2021001729-170667a.jpg",
+     "line": "From the driest deserts on Earth to ice-carved fjords and a singular Polynesian culture, Chile and Easter Island offer landscapes and histories that feel entirely their…",
+     "stays": 12,
+     "bestMonths": "Patagonia: October to April for milder conditions and longer days. Atacama: clear skies year-round, with particularly stable stargazing in the cooler, dry months. Easter Island: October to March for warmer weather and cultural activity, with February hosting the Tapati Rapa Nui festival in many years.",
+     "reviewed": true
+    },
+    {
+     "name": "Ecuador & Galapagos",
+     "slug": "ecuador-galapagos",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6829ce6292753bf25262f7ac_IMG_0008.JPG",
+     "line": "Andean peaks, cloud forests, and volcanic islands form a landscape shaped by dramatic geography and rare wildlife.",
+     "stays": 14,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Peru",
+     "slug": "peru",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69ea51de0f902e017d227264_Peru%20-%20Feature.jpg",
+     "line": "High Andean peaks, cloud forests, coastal desert, and rich cultural heritage define this multifaceted land.",
+     "stays": 10,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "& Beyond Vira Vira",
+     "slug": "beyond-vira-vira-lodge",
+     "ledgerId": "STY-2026-000360",
+     "tagline": "Nature, adventure, and flavor in the heart of Chile",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/848b56dd7_eac5b9f26_691ed97f0cc30bc98c6847da_beyond-vira-vira-lodge.jpg",
+     "country": "Chile & Easter Island",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Alya Catamaran Galapagos",
+     "slug": "alya-catamaran-galapagos",
+     "ledgerId": "STY-2026-784861",
+     "tagline": "Galaxy Alya Catamaran offers an intimate, luxury‑oriented cruising experience through the wild beauty of the Galápagos Islands.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fd82a7cbf_31ca6f8af_693a04943145a646fc8f39fb_Alya_20card.jpg",
+     "country": "Ecuador & Galapagos",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Amazon Field Station by Inkaterra",
+     "slug": "amazon-field-station-byinkaterra",
+     "ledgerId": "STY-2026-846378",
+     "tagline": "Where rainforest science and soul-level discovery meet.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/aa45e4aba_58d2927d9_6a14d8ae055d5e1b0d131e61_IGFS01_HEADER_nuevo.jpg",
+     "country": "Peru",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Awasi Iguazu",
+     "slug": "iguazu",
+     "ledgerId": "STY-2026-014316",
+     "tagline": "Private rainforest luxury beside the legendary Iguazú Falls.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4ea8be787_2200c6ac4_6a14b16d9efcbfa94f0e5307_iguazu-pagination-1.avif",
+     "country": "Argentina",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Awasi Mendoza",
+     "slug": "awasi-mendoza",
+     "ledgerId": "STY-2026-669559",
+     "tagline": "Private wine-country luxury beneath the Andes Mountains.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/86393f7ac_e877de73a_6a14ad0961f74c25a617d99b_mendoza-full.avif",
+     "country": "Argentina",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Awasi Patagonia",
+     "slug": "awasi-patagonia",
+     "ledgerId": "STY-2026-000027",
+     "tagline": "Private Patagonia crafted for travelers seeking wilderness without compromise.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f30d857f8_51b367563_6a149ab565babcd5dc581ed1_AWASI-PATAGONIA-DEZ-2025-255-2048x1365.jpg",
+     "country": "Chile & Easter Island",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "Ecoventura Evolve Yacht",
+     "slug": "ecoventura-evolve-yacht",
+     "ledgerId": "STY-2026-077085",
+     "tagline": "“Luxury afloat in the wild, journey deep, tread lightly.”",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4fc61043f_8d7886f98_68e3f571b44a1e96aed29153_origin-theory-evolve-ship.avif",
+     "country": "Ecuador & Galapagos",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "El MaPi by Inkaterra",
+     "slug": "el-mapi-byinkaterra",
+     "ledgerId": "STY-2026-000073",
+     "tagline": "A contemporary sanctuary at the gateway to Machu Picchu.",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c372701fd_2c447ec55_6a14ceccac8b2cc6c5d75ed1_HEADER_EM_ROOM2_nuevo.jpg",
+     "country": "Peru",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 42,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "europe",
+   "name": "Europe",
+   "tagline": "Where Timeless Beauty, Culture, and Curated Journeys Come Alive. Your Europe story is waiting",
+   "intro": [
+    "Let’s create it together.",
+    "Europe is where history, art, cuisine and landscapes converge in a way that no other region can rival. From medieval hilltop towns to Mediterranean islands glowing gold at sunset, every corner carries centuries of story. This is not simply a trip. It is a passage into heritage, beauty, and the soul of a continent.",
+    "Europe invites you to slow down. Wander. Taste. Explore. Let its cities inspire you and its coastlines restore you. Europe Awaits. Choose your path. Make it unforgettable. Make it yours.",
+    "Your Europe story begins here. Not with packaged sightseeing but with thoughtfully curated journeys crafted around your style of travel. James Wild & Co brings together intimate boutique hotels, castle retreats, vineyard villas, and small-ship journeys across the seas that shaped Western civilization."
+   ],
+   "heading": "Timeless. Cultural. Endlessly Captivating.",
+   "highlightsTitle": "Where Europe Captures the Imagination",
+   "highlights": [
+    {
+     "title": "Cultural Capitals & Hidden Cities",
+     "text": "Open-air museums of the modern world, Paris, Rome, Lisbon, Vienna, and quieter gems like Ljubljana, Porto or Valletta, where culture thrives at a slower pace."
+    },
+    {
+     "title": "Mediterranean Escapes",
+     "text": "Seaside sanctuaries across Greece, Italy, Spain, Malta and Croatia offer sun-soaked living, cliffside villas, and the signature glow of the Mediterranean’s golden hour."
+    },
+    {
+     "title": "Epicurean Journeys",
+     "text": "From Michelin stars to rustic farm dinners, Europe is where food tells the story of place. Tuscany, Provence, the Basque Coast, the Douro Valley, each delivers its own culinary world."
+    },
+    {
+     "title": "Iconic Landscapes",
+     "text": "Hike the Dolomites. Sail Norwegian fjords. Explore Iceland’s volcanic wonders. Europe’s landscapes are as diverse as they are breathtaking."
+    },
+    {
+     "title": "Boutique Stays & Heritage Homes",
+     "text": "Sleep in castle hotels, vineyard estates, restored farmhouses, clifftop villas and design-forward boutique lodges, all handpicked for authenticity and character."
+    }
+   ],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec68e5c3bf4a2d3c0badf_EuropeCroatiaHero1.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e90a6416b68cff881f265_luxury-clifftop-coastal-resort-mediterranean.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e90a66363e424d3143df3_turquoise-coastal-cove-mediterranean.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e90a66a366d5d6301ea02_northern-lights-geothermal-lagoon-iceland.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e90a6bfa0dffa38806c00_katikies-hotel-santorini.jpg",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e90a6ed7c023d091b0faf_luxury-cliffside-beach-resort.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a4e91e76a366d5d6302b6b1_skiing-in-the-swiss-alps-winter-adventure.avif"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Greece",
+     "slug": "greece",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6838cb11546a2a02b5708831_santorini-oia-sadie-teper-jbxbza3dwbi-unsplash.webp",
+     "line": "Whitewashed villages, olive groves, and crystal blue waters set a scene both iconic and serene.",
+     "stays": 2,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Katikies Villa Santorini",
+     "slug": "katikies-santorina",
+     "ledgerId": "STY-2026-000127",
+     "tagline": null,
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/84f38d16e_c7bede8d4_6838cb17ed668f6532f2d2de_katikies-mykonos-hotel_q1a0563_2.jpg",
+     "country": "Greece",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 2,
+   "reviewed": false,
+   "ready": true
+  },
+  {
+   "slug": "polar-antarctica",
+   "name": "Polar: Antarctica",
+   "tagline": "Extraordinary journeys across the White Continent",
+   "intro": [
+    "Earth’s last great wilderness awaits. Towering glaciers, incredible wildlife, endless ice and some of the world’s most exclusive journeys combine to create an expedition unlike anywhere else. Explore Antarctica by luxury expedition ship or fly directly into the continent for one of the rarest travel experiences on Earth.",
+    "Discover Antarctica through carefully curated expedition cruises and one of the world’s most exclusive land experiences.",
+    "Watch thousands of penguins gather along untouched coastlines, kayak beneath towering icebergs, cruise beside whales and seals or fly directly into Antarctica’s frozen interior. Every journey is designed to immerse you in one of Earth’s most pristine environments."
+   ],
+   "heading": "Extraordinary journeys across the White Continent.",
+   "highlightsTitle": "",
+   "highlights": [],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58012a5b95af64522cf53b_Wildlife-Antarctica.webp",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58021f106d021df848c3de_Antarctica-Neko-Harbour.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58021ed2812887a9185340_HX%20(Hurtigruten%20Expeditions).webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58021ee7e96c2d94b66d16_orne-harbour-antarctica.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58021e7eac7b7c6eead236_drake-passage-antarctica.webp",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58021ee9f065e18165826f_damoy_point_antarctica.webp"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [],
+   "featured": [],
+   "stayCount": 0,
+   "reviewed": false,
+   "ready": false
+  },
+  {
+   "slug": "polar-arctic",
+   "name": "Polar: Arctic",
+   "tagline": "Where Ice, Wildlife and Endless Light Call You Into the Wild",
+   "intro": [
+    "The Arctic is a world shaped by ice, wildlife and endless horizons. From Greenland’s immense fjords and Svalbard’s polar wilderness to Iceland, Arctic Norway and Canada’s remote northern shores, every journey offers a rare connection to one of Earth’s last great wild places.",
+    "Journey beyond the familiar into a landscape of drifting sea ice, towering glaciers and wildlife found nowhere else on Earth. Explore by land through remote Arctic lodges and wilderness camps, or by water aboard carefully selected small expedition ships."
+   ],
+   "heading": "Where Ice, Wildlife and Endless Light Call You Into the Wild",
+   "highlightsTitle": "",
+   "highlights": [],
+   "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685fe4921caa887d5c53408a_ArtcticHero1.jpg",
+   "gallery": [
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58032f9a909e8a770eba0b_Guests-explore-Dundas-Harbour.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58032fc9ebc8ccce15c279_SpitsHighlights.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a58032f0b0f7b53b3195f9e_Polar-Bear.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a580390b3d12a7e0d4250ec_croker-bay-canadianarctic.avif",
+    "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a5803905d48d1679df83957_landscape.avif"
+   ],
+   "facts": {},
+   "faqs": [],
+   "countries": [
+    {
+     "name": "Arctic Cruises",
+     "slug": "arctic-cruises",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6862fd41b0cfb705acf64f87_GettyImages-2191939156.jpg",
+     "line": "Polar deserts, drifting ice, and coastal tundra create a landscape shaped by silence and northern light.",
+     "stays": 1,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
+     "name": "Iceland",
+     "slug": "iceland",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec7121e5c0ccae937f58d_IcelandHero1.jpg",
+     "line": "Waterfalls, volcanic fields, geothermal pools, and black sand beaches create a dramatic canvas of fire and ice.",
+     "stays": 1,
+     "bestMonths": null,
+     "reviewed": false
+    }
+   ],
+   "featured": [
+    {
+     "name": "Secret Atlas Cruises ",
+     "slug": "secret-atlas-cruises",
+     "ledgerId": "STY-2026-354388",
+     "tagline": "Explore the Hidden Coves of Greenland",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c269d6e20_3ff0d1463_686bf0550e346edc935846d2_GreenlandCaveHero.jpg",
+     "country": "Arctic Cruises",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    },
+    {
+     "name": "The Retreat At Blue Lagoon",
+     "slug": "the-retreat-at-blue-lagoon",
+     "ledgerId": "STY-2026-000302",
+     "tagline": "“Where lava field meets liquid sanctuary”",
+     "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6d98181c_f491d8460_68dea6de1fe6ebf33f0ef2f6_the-retreat-at-blue-lagoon-overview.avif",
+     "country": "Iceland",
+     "status": null,
+     "statusDate": null,
+     "reserveChild": false
+    }
+   ],
+   "stayCount": 2,
+   "reviewed": false,
+   "ready": true
+  }
+ ]
+}

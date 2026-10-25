@@ -28,7 +28,7 @@ export const HOME = {
   },
 
   hero: {
-    eyebrow: "The House of James Wild & Co · Since 1982",
+    eyebrow: "The House of James Wild & Co · Exploring Since 1982",
     h1: "Vetted Safaris, Stays & Voyages",
     sub: "Designed from 44 years on the road. Every place vetted in person.",
     loop: {

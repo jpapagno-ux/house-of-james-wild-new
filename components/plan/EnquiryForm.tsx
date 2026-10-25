@@ -12,6 +12,13 @@ import { BUDGETS, CALL_TIMES, INTERESTS, validateEnquiry, type Enquiry } from "@
 // back as "Your starting point", so nobody retypes what they've chosen.
 // One form covers email replies and call requests.
 
+const FROM_LABEL: Record<string, string> = {
+  iggi: "Picking up from your chat with Iggi.",
+  compass: "Picking up from your Compass reading.",
+  "advisor-application": "Advisor application: tell us who you are, who you serve and where you know best. The desk will reply.",
+  partner: "Partner submission: tell us about your place, who makes it special and what a traveller will understand after time with you.",
+};
+
 const field = "w-full bg-paper border ledger-border px-3 py-2.5 text-[16px] outline-none focus:border-crimson";
 const label = "ledger-eyebrow block mb-1.5";
 
@@ -96,7 +103,7 @@ export default function EnquiryForm() {
               {ctx.estimate && <p className="text-[14px] mt-0.5">Estimate from the price builder: <strong>US${Number(ctx.estimate).toLocaleString("en-US")}</strong> <span className="ledger-muted">(example prices)</span></p>}
             </div>
           )}
-          {ctx.from && !ctx.trip && <p className="text-[15px]">Picking up from {ctx.from === "iggi" ? "your chat with Iggi" : ctx.from === "compass" ? "your Compass reading" : ctx.from}.</p>}
+          {ctx.from && !ctx.trip && <p className="text-[15px]">{FROM_LABEL[ctx.from] ?? "Picking up where you left off."}</p>}
         </div>
       )}
 

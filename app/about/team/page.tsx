@@ -7,12 +7,14 @@ import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { Icon } from "@/components/ledger/Marks";
 import { HouseLinks, PlanClose } from "@/components/about/Parts";
-import { ADVISORS, TEAM } from "@/lib/content/advisors";
+import { ADVISORS, FIELD_PARTNERS, TEAM } from "@/lib/content/advisors";
+import Image from "next/image";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
 // /about/team: the house's one team page, and the advisor directory ("Find
-// an advisor" points here). Hero › in short › advisor cards › match me ›
+// an advisor" points here). Hero › in short › advisor cards › in the field
+// with us (partner guides, studio, content) › match me ›
 // join the house (new advisors) › FAQ › more about the house › plan. Noindex until titles and photos are
 // approved.
 
@@ -43,6 +45,25 @@ export default function TeamPage() {
             <h2 id="advisors-heading" className="sr-only">Advisors</h2>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {ADVISORS.map((a, i) => <li key={a.slug}><AdvisorCard a={a} n={i + 1} /></li>)}
+            </ul>
+          </section>
+
+          <section className="mt-16 md:mt-20 border-t ledger-rule pt-8" aria-labelledby="field-heading">
+            <p className="ledger-eyebrow ledger-crimson">In the field with us</p>
+            <h2 id="field-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Guides, Makers and Storytellers</h2>
+            <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">Not booking advisors, but people the house travels and works with. Safari guides appear with their own affiliation; safaris are booked through Wild &amp; Co Safaris.</p>
+            <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              {FIELD_PARTNERS.map((p) => (
+                <li key={p.name} className="grid grid-cols-[84px_1fr] gap-4 items-start">
+                  <span className="relative w-[84px] h-[84px] rounded-full overflow-hidden bg-paper-card"><Image src={p.portrait.url} alt={p.portrait.alt} fill sizes="84px" className="object-cover" /></span>
+                  <div>
+                    <h3 className="ledger-display text-[1.2rem] leading-tight">{p.name}</h3>
+                    <p className="ledger-eyebrow mt-1">{p.role}</p>
+                    <p className="text-[13px] ledger-crimson mt-0.5">{p.href ? <a href={p.href} className="hover:underline">{p.org}</a> : p.org}</p>
+                    <p className="mt-2 text-[14.5px] ledger-muted leading-snug">{p.line}</p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </section>
 

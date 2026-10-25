@@ -10,8 +10,8 @@
 // your own, leave days unplanned, plan last minute, mistakes). All copy is
 // pending his sign-off; the pages stay noindex until then.
 //
-// Fixes against the samples: "Exploring since 1982" (never "founded" or
-// "established" 1982); first Eleuthera trip 1982 per the memoir (the About
+// Fixes against the samples: always "Exploring since 1982" (the samples
+// said "Established"); first Eleuthera trip 1982 per the memoir (the About
 // sample said 1981); title "Chief Expedition Officer" (the Founder sample said
 // "Exploration"). No em dashes in public copy.
 
@@ -145,7 +145,7 @@ export const FOUNDER = {
     { year: "2025", place: "Taha'a & Punta Mita", line: "Vahine Private Island vetted on Taha'a. Casa Koko in Punta Mita, the host met, and a swim with whale sharks." },
     { year: "2026", place: "South Africa & Botswana", line: "Monwana, Lion Sands Ivory Lodge, Kirkman's Kamp, DumaTau, Mombo and Qorokwe, plus Jaci's and every Leeu Estates house." },
   ],
-  next: { label: "Around the next corner", line: "Namibia's Skeleton Coast and Sossusvlei, diving Palawan, and the train from Hanoi to Son Doong, the world's largest cave." },
+  next: { label: "Around the next corner", line: "Namibia's Skeleton Coast and Sossusvlei, diving Palawan, Thailand, the Azores, Greenland and Ireland." },
   credentials: [
     "Founder & Chief Expedition Officer, James Wild & Co",
     "IATAN member since 1990",

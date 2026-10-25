@@ -16,6 +16,9 @@ export const BUILT: string[] = [
   "/about/founder",
   "/about/team",
   "/advisors/*", // profiles; each is generated only when a bio is on file
+  "/the-ledger",
+  "/for-advisors",
+  "/partners",
 ];
 
 export const GUARD_ON = process.env.NEXT_PUBLIC_LINK_GUARD === "on" || process.env.NEXT_PUBLIC_VERCEL_ENV === "production";

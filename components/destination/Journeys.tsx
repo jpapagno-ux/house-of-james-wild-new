@@ -7,6 +7,12 @@ import JsonLd from "@/components/ledger/JsonLd";
 import { Stamp } from "@/components/ledger/Marks";
 import { graph, touristTrip } from "@/lib/schema";
 import type { Journey } from "@/lib/content/preview/journeys";
+import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
+import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
+import { CHART_CENTRAL_AMERICA } from "@/lib/charts/central-america";
+
+// Each route draws on its own country's chart; a page-level chart is the fallback.
+const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA, "central-america": CHART_CENTRAL_AMERICA };
 
 // Journeys & voyages on a destination page: one card per Overland route and
 // per small-ship voyage filed for the country, linked to its own page. Routes
@@ -28,8 +34,9 @@ function MiniRoute({ chart, stops, title }: { chart: ChartData; stops: { lat: nu
   );
 }
 
-function JourneyCard({ j, chart }: { j: Journey; chart?: ChartData }) {
+function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartData }) {
   const isRoute = j.kind === "route";
+  const chart = (j.chartKey && CHARTS[j.chartKey]) || fallback;
   return (
     <Link href={j.href} className="group h-full bg-paper border ledger-border flex flex-col hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300" data-event={isRoute ? "destination_route_open" : "destination_voyage_open"}>
       <div className="relative border-b ledger-rule overflow-hidden">

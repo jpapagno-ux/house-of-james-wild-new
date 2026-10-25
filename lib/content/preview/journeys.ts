@@ -26,7 +26,8 @@ export type Journey = {
   status?: "founder_traveled" | "house_approved" | null;
   statusYear?: number | null;
   price?: { amount: number; basis: string } | null;
-  stops?: { lat: number; lng: number }[]; // draws the mini route map when the destination has a chart
+  stops?: { lat: number; lng: number }[]; // draws the mini route map on the country's chart
+  chartKey?: "costa-rica" | "south-africa" | "central-america";
   contentStatus: "approved" | "published" | "needs_review" | "none";
 };
 
@@ -36,9 +37,9 @@ const n = (...ids: (keyof typeof NODES)[]) => ids.map((i) => ({ lat: NODES[i].la
 
 const RAW: Record<string, Journey[]> = {
   "costa-rica": [
-    { kind: "route", ledgerId: "ITN-LAND-2026-418207", title: "The Classic", eyebrow: "Volcano, cloud forest and the Pacific", nights: 8, line: "San José → Arenal → Monteverde → Manuel Antonio", bestMonths: "December to April", href: recordHref("route", "costa-rica-the-classic"), status: "house_approved", statusYear: 2026, stops: n("sjo", "arenal", "monteverde", "manuel", "sjo"), contentStatus: "approved" },
-    { kind: "route", ledgerId: "ITN-LAND-2026-733519", title: "Two Coasts", eyebrow: "Caribbean, river and volcano", nights: 10, line: "San José → South Caribbean → Pacuare River → Arenal → Costa Ballena", bestMonths: "February to April, or September and October", href: recordHref("route", "costa-rica-two-coasts"), status: "house_approved", statusYear: 2026, stops: n("sjo", "caribbean", "pacuare", "arenal", "ballena", "sjo"), contentStatus: "approved" },
-    { kind: "route", ledgerId: "ITN-LAND-2026-562084", title: "Wild Osa", eyebrow: "Volcano to the wildest peninsula", nights: 9, line: "San José → Arenal → Costa Ballena → Osa Peninsula", bestMonths: "December to April", href: recordHref("route", "costa-rica-wild-osa"), status: "house_approved", statusYear: 2026, stops: n("sjo", "arenal", "ballena", "osa"), contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-418207", title: "The Classic", eyebrow: "Volcano, cloud forest and the Pacific", nights: 8, line: "San José → Arenal → Monteverde → Manuel Antonio", bestMonths: "December to April", href: recordHref("route", "costa-rica-the-classic"), status: "house_approved", statusYear: 2026, stops: n("sjo", "arenal", "monteverde", "manuel", "sjo"), chartKey: "costa-rica", contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-733519", title: "Two Coasts", eyebrow: "Caribbean, river and volcano", nights: 10, line: "San José → South Caribbean → Pacuare River → Arenal → Costa Ballena", bestMonths: "February to April, or September and October", href: recordHref("route", "costa-rica-two-coasts"), status: "house_approved", statusYear: 2026, stops: n("sjo", "caribbean", "pacuare", "arenal", "ballena", "sjo"), chartKey: "costa-rica", contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-562084", title: "Wild Osa", eyebrow: "Volcano to the wildest peninsula", nights: 9, line: "San José → Arenal → Costa Ballena → Osa Peninsula", bestMonths: "December to April", href: recordHref("route", "costa-rica-wild-osa"), status: "house_approved", statusYear: 2026, stops: n("sjo", "arenal", "ballena", "osa"), chartKey: "costa-rica", contentStatus: "approved" },
   ],
   indonesia: [
     { kind: "voyage", ledgerId: "ITN-VSL-2026-302558", title: "10 Day Raja Ampat North", eyebrow: "Aliikai · Raja Ampat", nights: 9, line: "Sorong → Wayag → Sorong", bestMonths: "October to April", href: recordHref("voyage", "10-day-raja-ampat-north", "aliikai"), image: `${CDN}/68bf434cfbdffdbeebf4a0a7_Raja%20Hero%20Main.JPG`, status: "founder_traveled", statusYear: 2024, price: { amount: 4830, basis: "per person, per voyage" }, contentStatus: "approved" },

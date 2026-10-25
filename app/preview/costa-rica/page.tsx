@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CalendarDays, Mail, MapPin, Plane } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Reveal } from "@/components/ledger/Motion";
@@ -8,6 +8,10 @@ import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart from "@/components/destination/LedgerChart";
 import Compass from "@/components/destination/Compass";
 import Journeys from "@/components/destination/Journeys";
+import Doors from "@/components/destination/Doors";
+import PlanBand from "@/components/destination/PlanBand";
+import WhenToGo from "@/components/destination/WhenToGo";
+import { CENTRAL_AMERICA as R } from "@/lib/content/preview/central-america";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import { CHART_COSTA_RICA, projectCostaRica } from "@/lib/charts/costa-rica";
@@ -16,11 +20,11 @@ import { isNewToLedger } from "@/lib/ledger/categories";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { breadcrumbs, graph } from "@/lib/schema";
 
-// Preview of the country destination template (step 8), built on a snapshot
-// of the Costa Rica Ledger. Same order as the Base44 sample: hero slider →
-// region sub-nav → the Ledger chart map + legend, directly under the hero →
-// answer block → featured stays by area → James's note → the country story →
-// advisor + Travel Notes. Kept out of search (noindex) like every preview.
+// Preview of the COUNTRY destination template, on a snapshot of the Costa
+// Rica Ledger. Final order: hero slider + counts → region/country bar with
+// jump links → the Ledger chart map → in short → the Compass → journeys &
+// voyages → stays → James's note → the story → when to go & getting there →
+// plan (advisors + Travel Notes) → also in the region. Noindex as a preview.
 
 const path = `/destinations/${D.region.slug}/${D.slug}`;
 const SNAP = Date.parse("2026-10-24T12:00:00Z");
@@ -116,7 +120,7 @@ export default function CostaRicaPreview() {
               ),
             )}
             <span className="ml-auto hidden md:flex items-center gap-5">
-              {[["The map", "the-map"], ["Compass", "compass"], ["Journeys", "journeys"], ["Stays", "stays"], ["Story", "story"], ["Plan", "plan"]].map(([l, id]) => (
+              {[["The map", "the-map"], ["Compass", "compass"], ["Journeys", "journeys"], ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]].map(([l, id]) => (
                 <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>
               ))}
             </span>
@@ -216,37 +220,14 @@ export default function CostaRicaPreview() {
             </div>
           </section>
 
-          {/* Plan: advisor + Travel Notes */}
-          <section id="plan" className="mt-20 md:mt-28 grid md:grid-cols-2 gap-6 scroll-mt-32 border-t ledger-rule pt-10" aria-label={`Plan ${D.name}`}>
-            <div className="ledger-paper p-6 md:p-8 h-full">
-              <p className="ledger-eyebrow ledger-crimson">Advisors who know {D.name}</p>
-              <div className="mt-4 flex items-center gap-4">
-                <span className="w-16 h-16 rounded-full border ledger-rule flex items-center justify-center ledger-display text-2xl ledger-muted" aria-hidden="true">JP</span>
-                <div>
-                  <p className="ledger-display text-xl">James Papagno</p>
-                  <p className="ledger-eyebrow">Founder &amp; Chief Expedition Officer</p>
-                </div>
-              </div>
-              <p className="mt-4 text-[15px] ledger-muted">The advisor feed fills this panel from the library: each advisor&rsquo;s profile, the countries they know and how to reach them.</p>
-              <div className="mt-5 flex flex-wrap items-center gap-4"><Link href="/plan" className="ledger-btn">Plan {D.name} with James</Link><a href="#compass" className="ledger-btn-ghost">Or take the Compass</a></div>
-            </div>
-            <div className="ledger-paper p-6 md:p-8 h-full">
-              <p className="ledger-eyebrow ledger-crimson">Travel Notes</p>
-              <p className="ledger-display text-2xl mt-2">Hear when we file something new in {D.name}.</p>
-              <p className="mt-3 text-[15px] ledger-muted">New stays and ships before they&rsquo;re announced, plus the stay-longer offers. One letter a month.</p>
-              <form className="mt-6 flex gap-2" action="/travel-notes">
-                <label htmlFor="tn-email" className="sr-only">Email address</label>
-                <input id="tn-email" name="email" type="email" placeholder="Your email" className="flex-1 min-w-0 bg-paper border ledger-border px-3 py-2 text-[16px] outline-none focus:border-crimson" />
-                <button type="submit" className="ledger-btn inline-flex items-center gap-2"><Mail className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Join</button>
-              </form>
-            </div>
-          </section>
+          {/* When to go & getting there */}
+          <WhenToGo place={D.name} rows={R.months.slice(0, 2)} airports={R.airports.slice(0, 2)} transfers={R.transfers} />
 
-          <div className="mt-10 grid sm:grid-cols-3 gap-4 text-[14px]">
-            <p className="flex items-center gap-2 ledger-muted"><CalendarDays className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Most stays suggest December to April</p>
-            <p className="flex items-center gap-2 ledger-muted"><Plane className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Fly into San José (SJO) or Liberia (LIR)</p>
-            <p className="flex items-center gap-2 ledger-muted"><MapPin className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> {stays.length} stays · 0 vessels · 0 residences</p>
-          </div>
+          {/* Plan: advisor + Travel Notes */}
+          <PlanBand place={D.name} />
+
+          {/* Also in the region */}
+          <Doors id="also" eyebrow={`Also in ${D.region.name}`} title={`Beyond ${D.name}`} intro="Belize is a short flight north; Panama is next door. Pair either with Costa Rica, or start there." doors={R.doors.filter((d) => d.name !== D.name)} />
 
           {/* Preview only: records held back by the Ledger gate */}
           <section className="mt-14 border border-dashed border-crimson/50 p-5 md:p-6">

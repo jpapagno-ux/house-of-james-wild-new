@@ -133,7 +133,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
             </section>
           )}
-          {verdict && <VerdictCard name={s.name} v={verdict} />}
+          {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} />}
           <TalkToUs name={s.name} planHref={planHref} />
           {host.state !== "off" && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} /></div>}
           <PlanBand place={s.name} compassHref="/compass" />

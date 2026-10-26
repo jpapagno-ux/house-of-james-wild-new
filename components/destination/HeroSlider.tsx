@@ -77,7 +77,7 @@ export default function HeroSlider({ slides, interval = 6500, label, children, h
         return (
           <div key={x.src} className="absolute inset-0 transition-opacity duration-[1400ms] ease-[cubic-bezier(.22,1,.36,1)]" style={{ opacity: on ? 1 : 0, zIndex: on ? 1 : 0 }} aria-hidden={!on}>
             <motion.div className="absolute inset-0" initial={false} animate={{ scale: on && !reduce ? 1 : 1.08 }} transition={{ duration: on ? interval / 1000 + 1.5 : 0, ease: "linear" }}>
-              <Image src={x.src} alt={on ? x.alt : ""} fill priority={k === 0} loading={k === 0 ? undefined : "eager"} sizes="(max-width: 768px) 140vw, 110vw" quality={82} className="object-cover" onLoad={() => setLoaded((m) => (m.has(k) ? m : new Set(m).add(k)))} />
+              <Image src={x.src} alt={on ? x.alt : ""} fill priority={k === 0} loading={k === 0 ? undefined : "eager"} sizes="(max-width: 768px) 140vw, 110vw" quality={85} className="object-cover" onLoad={() => setLoaded((m) => (m.has(k) ? m : new Set(m).add(k)))} />
             </motion.div>
           </div>
         );

@@ -1095,5 +1095,16 @@
     }
    ]
   }
- ]
+ ],
+ "stamp": {
+  "tint": "#D9BF85",
+  "tintName": "Dry-forest straw",
+  "label": "Why this route",
+  "where": "Costa Rica",
+  "sub": "Since 1991",
+  "when": "Field tested since 1991",
+  "nudge": "why this route",
+  "script": "Every wrong turn, already taken. JW",
+  "cta": "Read why this route ↓"
+ }
 }

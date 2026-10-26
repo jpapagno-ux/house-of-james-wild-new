@@ -1290,5 +1290,16 @@
     }
    ]
   }
- ]
+ ],
+ "stamp": {
+  "tint": "#46B3AC",
+  "tintName": "Lagoon turquoise",
+  "label": "Why this voyage",
+  "where": "Raja Ampat",
+  "sub": "Sailed 2024",
+  "when": "Sailed November 2024",
+  "nudge": "why this voyage",
+  "script": "Sailed it. Would again. JW",
+  "cta": "Read why this voyage ↓"
+ }
 }

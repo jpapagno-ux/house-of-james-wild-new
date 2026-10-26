@@ -11,16 +11,18 @@ import PostMark from "./PostMark";
 // ?mark=post|tag|stamp|note.
 export type MarkStyle = "post" | "tag" | "stamp" | "note";
 type P = { line: string; where: string; when: string; style: MarkStyle; image?: string; script?: string; label?: string; href?: string };
+// Journeys and voyages: the stamp inked in a colour from the destination's palette, with its own ring, nudge and link.
+type StampExtra = { tint?: string; sub?: string; nudge?: string; cta?: string };
 
-function Stamp({ line, where, when, script, label = "The verdict", href = "#verdict" }: Omit<P, "style">) {
+export function Stamp({ line, where, when, script, label = "The verdict", href = "#verdict", tint = "#fff3ea", sub, nudge, cta }: Omit<P, "style"> & StampExtra) {
   const [open, setOpen] = useState(false);
   const [seen, setSeen] = useState(false);
   const year = when.match(/\d{4}/)?.[0] ?? when;
   return (
     <div className="absolute left-4 md:left-auto md:right-10 top-[112px] md:top-[220px] z-20">
       <button type="button" onClick={() => { setOpen((o) => !o); setSeen(true); }} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
-        className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform text-[#fff3ea]"
-        style={{ boxShadow: "inset 0 0 0 3px rgba(255,243,234,.95), inset 0 0 0 7px transparent, inset 0 0 0 8.5px rgba(255,243,234,.8)", filter: "drop-shadow(0 1px 2px rgba(0,0,0,.55))" }}>
+        className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform"
+        style={{ color: tint, boxShadow: `inset 0 0 0 3px ${tint}, inset 0 0 0 7px transparent, inset 0 0 0 8.5px ${tint}cc`, filter: "drop-shadow(0 1px 2px rgba(0,0,0,.65))" }}>
         <svg viewBox="0 0 132 132" className="absolute inset-0 w-full h-full" aria-hidden="true">
           <defs><path id="sr" d="M66 66 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" /><filter id="worn"><feTurbulence baseFrequency="1.4" numOctaves="1" seed="3" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter></defs>
           <g filter="url(#worn)" fill="currentColor" style={{ fontFamily: "ui-monospace, monospace" }}>
@@ -28,18 +30,18 @@ function Stamp({ line, where, when, script, label = "The verdict", href = "#verd
             <text x="66" y="60" textAnchor="middle" fontSize="24" style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }}>JW</text>
             <line x1="40" y1="68" x2="92" y2="68" stroke="currentColor" strokeWidth="1" />
             <text x="66" y="81" textAnchor="middle" fontSize="8" letterSpacing="1.5">{where.toUpperCase().slice(0, 16)}</text>
-            <text x="66" y="92" textAnchor="middle" fontSize="8" letterSpacing="1.5">{year}</text>
+            <text x="66" y="92" textAnchor="middle" fontSize="8" letterSpacing="1.5">{(sub ?? year).toUpperCase()}</text>
           </g>
         </svg>
       </button>
       {!open && !seen && (
-        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[74px] top-[70px] md:left-auto md:right-[116px] md:top-[98px] flex md:flex-row-reverse items-end gap-0.5 text-[#fff3ea] drop-shadow-[0_1px_2px_rgba(0,0,0,.85)]" aria-label={`Read ${label === "The verdict" ? "the founder's take" : "the note from the house"}`}>
+        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[74px] top-[70px] md:left-auto md:right-[116px] md:top-[98px] flex md:flex-row-reverse items-end gap-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,.85)]" style={{ color: tint }} aria-label={`Read ${nudge ?? (label === "The verdict" ? "the founder's take" : "the note from the house")}`}>
           {/* hand-drawn arrow: its tip sits on the stamp's lower edge (up-left on phones, up-right on desktop) */}
           <svg viewBox="0 0 44 40" className="w-9 h-8 md:w-11 md:h-10 -scale-x-100 md:scale-x-100 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M3 37 C 14 36, 30 28, 39 5" />
             <path d="M31 8 L 39.5 4 L 41 13" />
           </svg>
-          <span className="mb-[-6px] text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{label === "The verdict" ? "the founder's take" : "a note from the house"}</span>
+          <span className="mb-[-6px] text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{nudge ?? (label === "The verdict" ? "the founder's take" : "a note from the house")}</span>
         </button>
       )}
       {open && (
@@ -47,7 +49,7 @@ function Stamp({ line, where, when, script, label = "The verdict", href = "#verd
           <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where} · {when}</p>
           {script && <p className="mt-2 text-[15px] text-[#3b2716] -rotate-[2deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{script}</p>}
           <p className="mt-2 ledger-display italic text-[1rem] leading-snug">&ldquo;{line}&rdquo;</p>
-          <a href={href} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">{href === "#verdict" ? "Read the full note ↓" : "Read why it's here ↓"}</a>
+          <a href={href} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">{cta ?? (href === "#verdict" ? "Read the full note ↓" : "Read why it's here ↓")}</a>
         </div>
       )}
     </div>

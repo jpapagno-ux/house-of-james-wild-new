@@ -13,6 +13,7 @@ import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists } from "@/components/record/Sections";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
+import { Stamp } from "@/components/notes/HeroMark";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -329,8 +330,10 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
       <SiteHeader overlay />
       <main id="main">
         <header className="relative min-h-[78svh] flex items-end text-paper" style={hero ? undefined : { background: T.slides[0].bg }}>
-          {hero ? <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" /> : <span className="absolute top-28 right-5 md:right-10 font-mono text-[10px] tracking-[0.14em] bg-ink/40 px-2 py-1">{T.herolabel}</span>}
+          {hero ? <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" /> : <span className="absolute bottom-3 right-3 md:top-28 md:bottom-auto md:right-10 font-mono text-[10px] tracking-[0.14em] bg-ink/40 px-2 py-1">{T.herolabel}</span>}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
+          {/* The spinning stamp, inked in the destination's palette; tap for James's note on why this trip is on file. */}
+          {T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
           <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
             <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
             <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>
@@ -338,7 +341,6 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
             <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-paper/30 pt-5 max-w-4xl">
               {T.herofacts.map(([k, v]) => <div key={k}><dt className="text-[11px] tracking-[0.16em] uppercase text-paper/70">{k}</dt><dd className="ledger-display text-[17px] mt-1">{v}</dd></div>)}
             </dl>
-            <p className="mt-6 inline-flex items-center gap-3 border border-paper/50 px-3 py-2"><span className="ledger-display italic text-[15px] leading-tight" dangerouslySetInnerHTML={{ __html: T.mark1 }} /><span className="font-mono text-[10px] tracking-[0.14em] uppercase text-paper/80">{T.mark2}</span></p>
           </div>
         </header>
         <RecordNav items={nav} cta={voyage ? "Ask about dates" : "Plan this journey"} ctaHref="#enquire" />

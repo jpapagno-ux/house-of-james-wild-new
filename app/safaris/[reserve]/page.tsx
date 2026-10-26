@@ -135,11 +135,12 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
             <p className="mt-3 text-[13px] ledger-muted">From rates are the registry&rsquo;s US-dollar rates per person, per night for camps; residences are taken whole. The house confirms every rate with your quote.</p>
           </section>
 
+          {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
           <TalkToUs name={r.name} planHref={planHref} />
-          {host.state !== "off" && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} /></div>}
+          {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
         </div>
       </main>

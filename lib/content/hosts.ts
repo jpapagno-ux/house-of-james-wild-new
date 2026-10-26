@@ -6,11 +6,59 @@
 // host calls, or "off" to hide the card.
 import type { Host, HostConnect } from "@/components/record/HostPanel";
 
+// Group connect: a live call with the host or manager, a James Wild & Co
+// advisor and up to six travellers. GROUP_CONNECT_ON switches every group card
+// at once; set a record's state to "off" (or "not_linking") to switch one.
+export const GROUP_CONNECT_ON = true;
+
+// PLACEHOLDER until James's live Calendly group event is set.
+const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
+
+// SAMPLE host cards (sample: true): roles only, no names, until each property
+// confirms who takes the call. Topics come from the Ledger record.
 export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
-  // "stay:leeu-estates": { state: "available", host: { name: "…", role: "…", topics: […], calendlyUrl: "…" } },
+  "stay:leeu-estates": { state: "available", host: {
+    name: "Leeu Estates Guest Relations", role: "Your host · Franschhoek", sample: true, seats: 6,
+    tz: "Africa/Johannesburg", place: "Franschhoek", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=leeu-estates`,
+    topics: [
+      "The rooms side by side, Classic to Executive Suite with Terrace to Terroir Cottage, and which suits your party",
+      "What the rate includes and what's extra: the spa, La Petite Colombe, the wine studio",
+      "Your dates against the best months (October to April) and harvest season",
+      "Getting there: about 60 to 75 minutes by car from Cape Town International",
+      "Children, celebrations, dietary needs, and anything that keeps you up at night",
+    ],
+  } },
+  "stay:aguas-claras": { state: "available", host: {
+    name: "Aguas Claras Front of House", role: "Your host · Playa Chiquita", sample: true, seats: 6,
+    tz: "America/Costa_Rica", place: "Playa Chiquita", zoneLabel: "Costa Rica time (UTC−6, no daylight saving)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=aguas-claras`,
+    topics: [
+      "Twelve rooms on the sand: which bungalow or suite fits your group, and which have plunge pools",
+      "Full board or not: Papaya restaurant, the Dalime beach club and what's included",
+      "Your dates against the best months (May to November)",
+      "Getting there: a domestic flight to Limón, a private driver from SJO, or a helicopter",
+      "Snorkelling, surf lessons, naturalist walks: what to book ahead and what to leave loose",
+    ],
+  } },
+  "voyage:aliikai": { state: "available", host: {
+    name: "Aliikai Cruise Director", role: "Your host · aboard Aliikai, Raja Ampat", sample: true, seats: 6,
+    tz: "Asia/Jayapura", place: "Raja Ampat", zoneLabel: "Eastern Indonesia Time (UTC+9)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=aliikai`,
+    topics: [
+      "The seven cabins and the whole-yacht charter: who sleeps where",
+      "The route, the season and what the sea does that month",
+      "Diving, snorkelling and shore days: levels, kit and what's included",
+      "Getting to the boat: flights into Sorong and the transfer",
+      "Food, children aboard, and anything the crew should know before you sail",
+    ],
+  } },
 };
 
-export const hostFor = (key: string) => HOSTS[key] ?? { state: "not_linking" as HostConnect };
+export const hostFor = (key: string) => {
+  const h = HOSTS[key] ?? { state: "not_linking" as HostConnect };
+  return !GROUP_CONNECT_ON && h.state === "available" ? { state: "not_linking" as HostConnect } : h;
+};
 
 // Films on file (Stay.brand_video_link) or supplied by James. Everything else
 // gets the placeholder slot.

@@ -2,6 +2,7 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import HostPanel from "@/components/record/HostPanel";
+import { hostFor } from "@/lib/content/hosts";
 import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { OfferCard } from "@/components/record/Pricing";
 import { CardRail, Conservation, Experiences, Features, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, WhyChose, type RecordCard, type Room } from "@/components/record/Sections";
@@ -80,6 +81,7 @@ export default function AguasClarasPreview() {
           />
           {/* 06 · Core: rooms & rates, with what's included and not */}
           <RoomsLedger title="Four Ways to Stay on Playa Chiquita" intro="Every room category on file, with its published “from” price per room, per night, and what the rate does and doesn't carry." rooms={ROOMS} footnote="Fixed rates from the partner rate sheet (USD, per room, per night, before tax). Your dates are quoted live before anything is booked." />
+          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={hostFor("stay:aguas-claras").state} host={hostFor("stay:aguas-claras").host} stayName={A.ledger.name} /></div>
           {/* 07 · Offer (switch on in the library) */}
           <OfferCard
             offer={{
@@ -108,7 +110,6 @@ export default function AguasClarasPreview() {
           {/* 11 · Conservation */}
           <Conservation eyebrow="People + planet" title={`${A.peoplePlanet.titleA} ${A.peoplePlanet.titleItalic} ${A.peoplePlanet.titleB}`} intro={A.peoplePlanet.intro} body={A.peoplePlanet.body} />
           {/* 12 · Meet your host (switch) */}
-          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state="not_linking" stayName={A.ledger.name} /></div>
           {/* 13 · FAQ */}
           <FaqBlock faqs={A.faqs.map((f) => ({ q: f.question, a: f.answer }))} title="Questions About Aguas Claras" />
           {/* 14 · More from the brand / James's favourites nearby */}

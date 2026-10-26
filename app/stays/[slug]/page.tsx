@@ -7,6 +7,8 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import FullFrame from "@/components/record/FullFrame";
+import ImageAccordion from "@/components/record/ImageAccordion";
+import { momentsFor } from "@/lib/content/stay-moments";
 import { FULL_FRAME } from "@/lib/content/stay-media";
 import { PRICED } from "@/lib/content/priced-stays";
 import Inclusions from "@/components/booking/Inclusions";
@@ -94,9 +96,11 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     { q: `How do I book ${s.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked.` },
   ];
   const overviewParas = s.why.length ? s.onlyHere : s.onlyHere.slice(2);
-  const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
+  const apart = momentsFor(s.slug, s.features.items.slice(0, 8), images.slice(1));
+  const days = momentsFor(s.slug, s.experiences.items.slice(0, 8), images.slice(1), 3);
+  const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
   const nav: [string, string][] = priced
-    ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["Included", "included"], ["Rooms & rates", "rates"], ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
+    ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["Included", "included"], ["Rooms & rates", "rates"], ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   return (
@@ -111,6 +115,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
+          {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={s.features.paras[0] ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
+          {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={s.experiences.paras[0] ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
+          {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
+          {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" icon="mountain-sun" body={s.experiences.paras[0]} />}
           {priced ? <>
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
             <BookingPanel property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
@@ -120,8 +128,6 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
-          {(s.experiences.items.length > 0 || s.experiences.paras.length > 0) && <Features id="experiences" eyebrow="Experiences" title="What You'll Do" icon="mountain-sun" items={s.experiences.items.length ? s.experiences.items : undefined} body={s.experiences.paras[0]} />}
-          {(s.features.items.length > 0 || s.features.paras.length > 0) && <Features id="features" eyebrow="Stay features" title="What Sets It Apart" icon="frond" items={s.features.items.length ? s.features.items : undefined} body={s.features.paras[0]} />}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} />}
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
@@ -148,7 +154,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <ContactPill name={s.name} planHref={planHref} />
       {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: video.title, description: `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25" }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
-      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => i.url.startsWith("/") ? absoluteUrl(i.url) : i.url), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
+      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => i.url.startsWith("/") ? absoluteUrl(i.url) : i.url), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
     </>
   );
 }

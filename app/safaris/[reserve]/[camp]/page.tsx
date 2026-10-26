@@ -6,18 +6,20 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
 import SuiteCards from "@/components/reserve/SuiteCards";
+import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
+import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
-import { GalleryMosaic, GlanceBar } from "@/components/record/Frame";
+import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { CardRail, Features, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { KIND_LABEL, RESERVES, campBySlug, campReady, campStatus, reserveBySlug, usd } from "@/lib/content/reserves";
 import { stampForStatus } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
-import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
 // CAMP template (/safaris/[reserve]/[camp]): a lodge, camp or residence
@@ -39,7 +41,7 @@ function load(reserve: string, camp: string) {
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string; camp: string }> }) {
   const p = await params; const x = load(p.reserve, p.camp);
   if (!x) return {};
-  return buildMetadata({ title: `${x.c.name}, ${x.r.name}: Suites & Rates | James Wild & Co Safaris`, description: `${x.c.name} on ${x.r.name}, ${x.r.area}. ${(x.c.intro || x.c.description).slice(0, 110)}`, path: `/safaris/${x.r.slug}/${x.c.slug}`, image: x.c.hero ? { url: x.c.hero, alt: x.c.name } : undefined, noindex: true });
+  return buildMetadata({ title: fitTitle([`${x.c.name}, ${x.r.name}: Suites & Rates`, `${x.c.name}, ${x.r.name}`, `${x.c.name}, ${x.r.name.replace(/ Reserve$/, "")}`, `${x.c.name}: Suites & Rates`, x.c.name]), description: `${x.c.name} on ${x.r.name}, ${x.r.area}. ${(x.c.intro || x.c.description).slice(0, 110)}`, path: `/safaris/${x.r.slug}/${x.c.slug}`, image: x.c.hero ? { url: x.c.hero, alt: x.c.name } : undefined, noindex: true });
 }
 
 export default async function CampPage({ params }: { params: Promise<{ reserve: string; camp: string }> }) {
@@ -66,6 +68,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   const faqs = [
     ...(c.rooms.length ? [{ q: `What suites does ${c.name} have?`, a: c.rooms.map((m) => `${m.name}${m.capacity ? ` (sleeps ${m.capacity})` : ""}${m.from ? `, from ${usd(m.from)}${/exclusive use/i.test(m.name) ? " as filed" : " per person per night"}` : ""}`).join("; ") + "." }] : []),
     { q: `Which reserve is ${c.name} on?`, a: `${r.name}, in the ${r.area}, ${r.stay.country ?? "South Africa"}. The reserve also holds ${siblings.map((o) => o.name).join(", ") || "other camps"}.` },
+    { q: `How do I book ${c.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms the suite, dates and rates before anything is booked, through Wild & Co Safaris.` },
     ...(r.stay.airport ? [{ q: `How do you get to ${c.name}?`, a: `Fly into ${r.stay.airport}.${r.stay.airportDirections ? ` ${r.stay.airportDirections}` : ""}` }] : []),
   ];
   return (
@@ -76,7 +79,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} volume="safaris" /> : undefined}
           glance={<GlanceBar glance={{ ...(c.fromRate ? { price: { amount: usd(c.fromRate), basis: c.kind === "camp" ? "from, per person per night" : "from, as filed" } } : {}), facts: [["Reserve", r.name], ["Suites", units || "Ask James"], ["Best months", r.stay.bestMonths ?? "Ask James"]], cta: { label: "See the suites", href: "#suites" } }} />} />
-        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(c.rooms.length ? [["Suites", "suites"] as [string, string]] : []), ...(c.features.length || c.experiences.length ? [["The camp", "features"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(siblings.length ? [["Other camps", "other-camps"] as [string, string]] : []), ["Plan", "plan"]]} cta={`Plan ${c.name}`} ctaHref={`/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(c.rooms.length ? [["Suites", "suites"] as [string, string]] : []), ...(c.features.length || c.experiences.length ? [["The camp", "features"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(r.stay.coords ? [["Location", "location"] as [string, string]] : []), ...(siblings.length ? [["Other camps", "other-camps"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]} cta={`Plan ${c.name}`} ctaHref={`/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <p className="mt-6 inline-flex flex-wrap items-center gap-2 border ledger-border px-3 py-2 text-[14px]"><span className="ledger-eyebrow ledger-crimson">Part of {r.name}</span><Link href={rpath} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">See all {r.camps.length} camps on the reserve</Link></p>
@@ -91,12 +94,16 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           )}
           {(c.features.length > 0 || c.experiences.length > 0) && <Features id="features" eyebrow="The camp" title={`What Sets ${c.name} Apart`} icon="frond" items={[...c.features, ...c.experiences].slice(0, 12)} />}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
+          {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="Same Reserve, Different Front Door" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}
           <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} />
+          <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
         </div>
       </main>
+      <ContactBar name={c.name} planHref={planHref} from={c.fromRate ? `${usd(c.fromRate)}${c.kind === "camp" ? " pp/night" : ""}` : undefined} />
+      <ContactPill name={c.name} planHref={planHref} />
       <JsonLd data={graph({ "@type": c.kind === "residence" ? "LodgingBusiness" : "Resort", "@id": absoluteUrl(`${path}#stay`), name: c.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [c.hero].filter(Boolean), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [c.name, r.name, "safari", ...suited].join(", ") } : {}), containedInPlace: { "@id": absoluteUrl(`${rpath}#reserve`), "@type": "TouristAttraction", name: r.name, url: absoluteUrl(rpath) }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)}${c.kind === "camp" ? " per person per night" : ""}` } : {}), publisher: { "@id": ids.house }, ...(c.rooms.length ? { containsPlace: c.rooms.map((m) => ({ "@type": "Suite", name: m.name, ...(m.capacity ? { occupancy: { "@type": "QuantitativeValue", maxValue: m.capacity } } : {}), ...(m.beds ? { bed: m.beds } : {}) })) } : {}) })} />
     </>
   );

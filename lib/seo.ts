@@ -19,8 +19,24 @@ type PageMeta = {
 
 // One builder for every page: title pattern, canonical, Open Graph, Twitter,
 // robots. Pages call buildMetadata() from generateMetadata().
-export function buildMetadata({ title, description, path, image, type = "website", noindex }: PageMeta): Metadata {
+// The root layout appends " | James Wild & Co" (18 characters), so a page
+// title has 47 characters before it crosses Google's ~65-character display.
+const SUFFIX = 18, MAX_TITLE = 65, MAX_DESC = 158;
+/** The fullest title variant that still fits in search results. */
+export function fitTitle(variants: string[]): string {
+  return variants.find((v) => v.length + SUFFIX <= MAX_TITLE) ?? variants[variants.length - 1];
+}
+/** Trim a description to ~158 characters at a sentence, else a word. */
+export function fitDescription(d: string): string {
+  if (d.length <= MAX_DESC) return d;
+  const cut = d.slice(0, MAX_DESC);
+  const dot = cut.lastIndexOf(". ");
+  return dot > 90 ? cut.slice(0, dot + 1) : `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:]$/, "")}…`;
+}
+
+export function buildMetadata({ title, description: raw, path, image, type = "website", noindex }: PageMeta): Metadata {
   const url = absoluteUrl(path);
+  const description = fitDescription(raw);
   const index = isIndexable && !noindex;
   return {
     title,

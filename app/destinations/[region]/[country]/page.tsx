@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const c = countryBySlug(p.region, p.country);
   if (!c) return {};
   const n = staysIn(c.slug).filter(pageReady).length;
-  return buildMetadata({ title: `${c.name}: ${n} Vetted Stays, Routes and When to Go | James Wild & Co`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted stays mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
+  return buildMetadata({ title: `${c.name}: ${n} Vetted Stays, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted stays mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
 }
 
 export default async function CountryPage({ params }: { params: Promise<{ region: string; country: string }> }) {

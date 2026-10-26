@@ -16,7 +16,7 @@ export function generateStaticParams() { return LEGAL.map((d) => ({ doc: d.slug 
 export async function generateMetadata({ params }: { params: Promise<{ doc: string }> }) {
   const d = legalBySlug((await params).doc);
   if (!d) return {};
-  return buildMetadata({ title: `${d.title} | James Wild & Co`, description: d.description, path: `/legal/${d.slug}`, noindex: true });
+  return buildMetadata({ title: `${d.title}`, description: d.description, path: `/legal/${d.slug}`, noindex: true });
 }
 
 export default async function LegalPage({ params }: { params: Promise<{ doc: string }> }) {

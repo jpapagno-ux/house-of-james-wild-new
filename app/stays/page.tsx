@@ -12,7 +12,7 @@ import { graph } from "@/lib/schema";
 // land / by water, region, setting) fills from the Ledger export.
 const PATH = "/stays";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Vetted Luxury Stays: Lodges, Camps, Islands and Houses | James Wild & Co", description: `${LEDGER_COUNTS.stays} live stays in the James Wild & Co Ledger: lodges, camps, islands and houses vetted in person, each with a permanent Ledger ID.`, path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "Vetted Luxury Stays: Lodges, Camps, Islands and Houses", description: `${LEDGER_COUNTS.stays} live stays in the James Wild & Co Ledger: lodges, camps, islands and houses vetted in person, each with a permanent Ledger ID.`, path: PATH, noindex: true });
 
 export default function StaysHub() {
   const items = HOME.shelf.entries;

@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   const r = regionBySlug((await params).region);
   if (!r) return {};
   return buildMetadata({
-    title: `${r.name}: Vetted Stays, Countries and Routes | James Wild & Co`,
+    title: `${r.name}: Vetted Stays, Countries and Routes`,
     description: `${r.name} in the James Wild & Co Ledger: ${r.stayCount} live stays across ${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"}${r.countries.length ? ` (${r.countries.map((c) => c.name).join(", ")})` : ""}, each vetted and filed under a permanent Ledger ID.`.slice(0, 300),
     path: `/destinations/${r.slug}`,
     image: r.hero ? { url: r.hero, alt: `${r.name} with James Wild & Co` } : undefined,

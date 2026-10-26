@@ -8,6 +8,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import CampLedger, { type CampCard } from "@/components/reserve/CampLedger";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
+import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
@@ -18,7 +19,7 @@ import { KIND_LABEL, RESERVES, campReady, campStatus, reserveBySlug, reserveFrom
 import { stampForStatus, statusLine } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
-import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
 // RESERVE template (/safaris/[reserve]): the parent page for an African
@@ -46,7 +47,7 @@ const answerFor = (r: Reserve) => {
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string }> }) {
   const r = reserveBySlug((await params).reserve);
   if (!r) return {};
-  return buildMetadata({ title: `${r.name}: Lodges, Camps & Residences | James Wild & Co Safaris`, description: answerFor(r).slice(0, 158), path: `/safaris/${r.slug}`, image: r.stay.hero ? { url: r.stay.hero, alt: r.name } : undefined, noindex: true });
+  return buildMetadata({ title: fitTitle([`${r.name}: Lodges, Camps & Residences`, `${r.name}: Camps & Rates`, `${r.name} Safari Camps`, r.name]), description: answerFor(r).slice(0, 158), path: `/safaris/${r.slug}`, image: r.stay.hero ? { url: r.stay.hero, alt: r.name } : undefined, noindex: true });
 }
 
 export default async function ReservePage({ params }: { params: Promise<{ reserve: string }> }) {
@@ -76,6 +77,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
     ...(from ? [{ q: `How much does ${r.name} cost?`, a: `Registry rates start from ${usd(from)} per person, per night at ${r.camps.find((c) => c.fromRate === from)?.name ?? "the reserve"}, and rise by camp and suite. The house confirms every rate with your quote.` }] : []),
     ...(r.stay.bestMonths ? [{ q: `When is the best time to visit ${r.name}?`, a: `${r.stay.bestMonths}.${r.stay.bestMonthsNote ? ` ${r.stay.bestMonthsNote}` : ""}` }] : []),
     ...(r.stay.airport ? [{ q: `How do you get to ${r.name}?`, a: `Fly into ${r.stay.airport}.${r.stay.airportDirections ? ` ${r.stay.airportDirections}` : ""}` }] : []),
+    { q: `How do I book ${r.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor matches you to the right camp and confirms dates and rates before anything is booked, through Wild & Co Safaris.` },
   ];
   const signature = (c: Reserve["camps"][number]) => c.features[0] ?? c.experiences[0] ?? "";
   return (
@@ -85,7 +87,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
         <RecordHero slides={slides} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
-        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["On the reserve", "experiences"], ["Location", "location"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["On the reserve", "experiences"], ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={why[0]?.title ?? `Why ${r.name} Earned Its Page`} blocks={why.map((w, i) => ({ title: i === 0 && why[0]?.title ? null : w.title, body: w.body }))} paragraphs={why.length ? [] : r.stay.onlyHere.slice(0, 2)} suited={suited} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} name={r.name} video={VIDEOS[`reserve:${r.slug}`] ?? null} poster={slides[1]?.url ?? r.stay.hero} planHref={planHref} />
@@ -127,10 +129,13 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
+          <TalkToUs name={r.name} planHref={planHref} />
           {host.state !== "off" && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
         </div>
       </main>
+      <ContactBar name={r.name} planHref={planHref} from={from ? `${usd(from)} pp/night` : undefined} />
+      <ContactPill name={r.name} planHref={planHref} />
       <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter(campReady).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(`${path}/${c.slug}`), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
     </>
   );

@@ -17,7 +17,7 @@ import { hostFor } from "@/lib/content/hosts";
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
 //   overland: map · experiences · overview · who it suits · day by day · stays · included · price · film · faq · related · enquire
-//   voyage:   map · overview · who · days · experiences · vessel & cabins · included · dates · price · film · faq · related · enquire
+//   voyage:   vessel & cabins · map · in short · dates & rates · sailed by the founder · who · days · experiences · the fare · price · meet the crew · faq · related · enquire (James, 26 Oct)
 // The live house map (MapLibre) loads over an engraved figure that is in the
 // HTML from the start, so search engines and no-JS readers get the route too.
 // Anything still in [square brackets] is shown, marked, until it is confirmed.
@@ -54,7 +54,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
   const dayNo = (n: string) => parseInt(n.replace(/\D/g, ""), 10);
 
   const nav: [string, string][] = voyage
-    ? [["The voyage", "route"], ["Overview", "overview"], ["Who it suits", "suits"], ["Day by day", "days"], ["Experiences", "experiences"], ["Aliikai", "vessel"], ["The fare", "included"], ["Departures", "departures"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
+    ? [["The vessel", "vessel"], ["Cabins", "cabins"], ["The voyage", "route"], ["In short", "overview"], ["Dates & rates", "departures"], ["Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["Experiences", "experiences"], ["The fare", "included"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
     : [["The route", "route"], ["Experiences", "experiences"], ["Overview", "overview"], ["Who it suits", "suits"], ["Day by day", "days"], ["The stays", "stays"], ["Included", "included"], ["Price", "price"], ["FAQ", "faq-heading"]];
 
   /* ---------- sections ---------- */
@@ -321,7 +321,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
   );
 
   const order = voyage
-    ? [Map, Overview, Suits, Days, Experiences, Vessel, Included, Departures, Price, Founder, HostBlock]
+    ? [Vessel, Map, Overview, Departures, Founder, Suits, Days, Experiences, Included, Price, HostBlock]
     : [Map, Experiences, Overview, Suits, Days, Stays, Included, Price, Founder];
 
   return (

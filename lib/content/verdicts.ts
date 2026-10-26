@@ -1,5 +1,6 @@
-// The Verdict: James's own words on a place, from his field notes (dictated
-// 26 Oct 2026, lightly edited for punctuation only). Only places James has
+// The Verdict: advisory and witty, in James Wild's voice, the seasoned
+// traveller's call on a place (rewritten 26 Oct 2026 from James's field
+// notes so it advises rather than reminisces). Only places James has
 // stayed get a verdict; the card stays off everywhere else.
 export type VerdictTag = "Worth your time?" | "Look closer" | "After dark" | "Unexpected beauty" | "Curiosity" | "The dead end";
 export type Verdict = { where: string; when: string; text: string[]; tags: VerdictTag[]; signoff?: string };
@@ -8,11 +9,12 @@ export type Verdict = { where: string; when: string; text: string[]; tags: Verdi
 export const SIGNOFFS = ["Never look back. Time is on your side."];
 
 export const VERDICTS: Record<string, Verdict> = {
-  "stay:leeu-estates": { where: "Franschhoek", when: "May 2026", tags: ["Worth your time?"], text: ["Come as you are. They have mastered the art of service. Great view, great food.", "What a wonderful place to begin a journey."] },
-  "stay:monwana-thornybush": { where: "Thornybush", when: "May 2026", tags: ["Worth your time?", "After dark"], text: ["Tucked away in the Thornybush, and we really enjoyed this place: the wildlife, the guides, the service, the ambiance.", "That large bar to come home to every night was worth it, worth every moment. One of our favourite stays in Africa."] },
-  "camp:lion-sands/ivory-lodge": { where: "Lion Sands, on the Sabie River", when: "May 2026", tags: ["After dark", "Worth your time?"], text: ["Set along the river: the service, the food. We even had a great time celebrating with other couples who were on their honeymoon.", "We were not on our honeymoon, and we enjoyed a fine party with new friends made along the way. Great service."] },
-  "stay:tengile-mala-mala-kirkmans-kamp": { where: "MalaMala, Sabi Sand", when: "May 2026", tags: ["Look closer"], text: ["You feel like you're in old Africa. The views, the people, the guides, the area.", "They are the masters of the heritage safari. We greatly enjoyed it."] },
-  "stay:ellerman-house": { where: "Cape Town", when: "2026", tags: ["Unexpected beauty", "Worth your time?"], text: ["The epitome of absolutely beautiful views, and five-star, white-glove service. All the hosts, all the staff, very attentive.", "It was the highlight of our Cape Town visit."] },
-  "stay:tswalu-reserve": { where: "The Kalahari", when: "2012", tags: ["Unexpected beauty", "Curiosity"], text: ["Wow. Silence and grandeur amongst this amazing, untouched landscape, sitting there for all to view. I was mesmerised. That was the moment I fell in love with Africa.", "And along the way I met Joffers. We have been friends ever since, and together we created Wild & Co Safaris, an alliance built on our love, respect and care for the wildlife and the nature Africa offers. An awe-inspiring place."] },
+  "stay:leeu-estates": { where: "Franschhoek", when: "May 2026", tags: ["Worth your time?"], text: ["Come as you are. Leeu has turned service into an art form, and the view does the rest of the talking.", "The food is the real reason to linger. Begin a Cape journey here; just know everything after it will be measured against breakfast."] },
+  "stay:monwana-thornybush": { where: "Thornybush", when: "May 2026", tags: ["Worth your time?", "After dark"], text: ["Tucked away in the Thornybush, Monwana gets the safari trinity right: the wildlife, the guides, the service.", "Then there's the bar, the long kind you come home to after the evening drive. Plan on using it. One for anyone's shortlist of Africa's best."] },
+  "camp:lion-sands/ivory-lodge": { where: "Lion Sands, Sabie River", when: "May 2026", tags: ["After dark", "Worth your time?"], text: ["Book it for the river; stay for the service and the kitchen.", "Half the guests seem to be on honeymoon. You needn't be. The sundowners taste just as good when you've been married a while."] },
+  "stay:tengile-mala-mala-kirkmans-kamp": { where: "MalaMala, Sabi Sand", when: "May 2026", tags: ["Look closer"], text: ["If you want old Africa rather than a polished impression of it, this is the address.", "Heritage safari, done by people who mean it: the views, the guides, the whole unhurried rhythm. Pack the khaki; you'll feel underdressed without it."] },
+  "stay:ellerman-house": { where: "Cape Town", when: "2026", tags: ["Unexpected beauty", "Worth your time?"], text: ["A view that makes the rest of Cape Town look like the warm-up act, and white-glove service from a staff that notices before you ask.", "Make it your base. Everything else in the city starts to feel like a day trip."] },
+  "stay:tswalu-reserve": { where: "The Kalahari", when: "2012", tags: ["Unexpected beauty", "Curiosity"], text: ["Go for the silence. Tswalu is the Kalahari untouched, laid out for anyone patient enough to sit and look.", "Fair warning: people fall in love with Africa here and never quite recover. Ask James how he knows."] },
 };
+
 export const verdictFor = (key: string) => VERDICTS[key];

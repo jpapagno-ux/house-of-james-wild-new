@@ -1,0 +1,1340 @@
+{
+ "_note": "Hand-picked hero slides (place and people first, rooms left to the rooms section) and captioned full-frame photographs per stay. Edit here; the photo ledger (data/photo-ledger.csv) tracks what each stay still needs.",
+ "stays": {
+  "monwana-thornybush": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-villa-pool-elephants",
+     "alt": "Monwana Thornybush, South Africa: photograph 1"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-fire-pit",
+     "alt": "Monwana Thornybush, South Africa: fireside, as the light goes"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-safari-drive",
+     "alt": "Monwana Thornybush, South Africa: photograph 3"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/young-rangers-waterhole-monwana",
+     "alt": "Monwana Thornybush, South Africa: photograph 4"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-dining-deck",
+     "alt": "Monwana Thornybush, South Africa: dinner laid out on the deck"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-fire-pit",
+     "alt": "Monwana Thornybush: fireside, as the light goes",
+     "caption": "Fireside, as the light goes"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/monwana-dining-deck",
+     "alt": "Monwana Thornybush: dinner laid out on the deck",
+     "caption": "Dinner laid out on the deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/elephant-thornybush-monwana",
+     "alt": "Monwana Thornybush: elephant at close quarters",
+     "caption": "Elephant at close quarters"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/monwana-thornybush/owls-monwana",
+     "alt": "Monwana Thornybush: two owlets, keeping watch",
+     "caption": "Two owlets, keeping watch"
+    }
+   ]
+  },
+  "cheetah-plains": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6d518e382_cde5a61ca_68818d3a312ae98641653633_Mapogo_20Villa.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas, South Africa: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c0b4edbed_97326bf2b_68818c858dd09a96cc4a49ef_Karula_20Pool_20Deck.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas, South Africa: under the tree, as the light goes"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f1c88546_7afcdebd6_68818c8b530c4384c7bb9f08_Karula_20Entrance.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas, South Africa: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/034297835_26d0d7770_68818f155608232816cab004_Mvula_20Pool_20Deck.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas, South Africa: the pool deck at sunset"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/961db55a5_82d690916_68818e1a81843fe0469adbf4_Mvula_20Boma_20Dinner.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas, South Africa: dinner set outside at dusk"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c0b4edbed_97326bf2b_68818c858dd09a96cc4a49ef_Karula_20Pool_20Deck.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas: under the tree, as the light goes",
+     "caption": "Under the tree, as the light goes"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/034297835_26d0d7770_68818f155608232816cab004_Mvula_20Pool_20Deck.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas: the pool deck at sunset",
+     "caption": "The pool deck at sunset"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/961db55a5_82d690916_68818e1a81843fe0469adbf4_Mvula_20Boma_20Dinner.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas: dinner set outside at dusk",
+     "caption": "Dinner set outside at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/816a70f68_b3b6c15c3_68818e18660285d2c647a62f_Mvula_20Formal_20Lounge.webp",
+     "alt": "Cheetah Plains Eco‑Luxury Private Villas: the lounge, open to the bush",
+     "caption": "The lounge, open to the bush"
+    }
+   ]
+  },
+  "lalibela-reserve": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3f86c1fdf_8b52cacc6_688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa, South Africa: the camp from the air, tucked into the valley"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b3b49ee94_2dba371db_688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa, South Africa: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d63280581_7f8658f84_688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa, South Africa: lantern-lit steps at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f969f8de_5b053f155_688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa, South Africa: around the fire pit, valley view"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a43d2be8d_cb1e2aeaa_688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3f86c1fdf_8b52cacc6_688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa: the camp from the air, tucked into the valley",
+     "caption": "The camp from the air, tucked into the valley"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d63280581_7f8658f84_688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa: lantern-lit steps at dusk",
+     "caption": "Lantern-lit steps at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f969f8de_5b053f155_688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa: around the fire pit, valley view",
+     "caption": "Around the fire pit, valley view"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1feed142_f9806b9c4_688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio.webp",
+     "alt": "Lalibela Reserve Eastern Cape South Africa: the deck above the valley",
+     "caption": "The deck above the valley"
+    }
+   ]
+  },
+  "leopard-hills": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8d8acd923_d87e3c47d_6a17f92b6a10ed608c502f29_Leopard_Hills_Aerial_DRP09_04-1351x900.jpg",
+     "alt": "Leopard Hills Private Game Reserve, South Africa: the waterhole from above"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9598d349_72b664b5c_6a17fac846bd08018fd88301_leopard-hills-mvr-2024-accommodation-suite-02-1350x900.",
+     "alt": "Leopard Hills Private Game Reserve, South Africa: elephants at the waterhole, from the pool deck"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/985a716bd_ba8514e3c_6a17fa696fa0aacf36c8abd4_leopard-hills-mvr-2024-safari-dining-bush-breakfast-08-.",
+     "alt": "Leopard Hills Private Game Reserve, South Africa: breakfast under the trees"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6dd943987_eb9f85156_6a17fa28070156fbb2a36309_Leopard_Hills_Suite_Deck_DRP09_04-1900x1140-1-1500x900.",
+     "alt": "Leopard Hills Private Game Reserve, South Africa: plunge pool over the bush"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b93d4d00e_143766583_6a17fac8bd29472343b1b537_leopard-hills-mvr-2024-accommodation-suite-27-1350x900.",
+     "alt": "Leopard Hills Private Game Reserve, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9598d349_72b664b5c_6a17fac846bd08018fd88301_leopard-hills-mvr-2024-accommodation-suite-02-1350x900.",
+     "alt": "Leopard Hills Private Game Reserve: elephants at the waterhole, from the pool deck",
+     "caption": "Elephants at the waterhole, from the pool deck"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8d8acd923_d87e3c47d_6a17f92b6a10ed608c502f29_Leopard_Hills_Aerial_DRP09_04-1351x900.jpg",
+     "alt": "Leopard Hills Private Game Reserve: the waterhole from above",
+     "caption": "The waterhole from above"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/985a716bd_ba8514e3c_6a17fa696fa0aacf36c8abd4_leopard-hills-mvr-2024-safari-dining-bush-breakfast-08-.",
+     "alt": "Leopard Hills Private Game Reserve: breakfast under the trees",
+     "caption": "Breakfast under the trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6dd943987_eb9f85156_6a17fa28070156fbb2a36309_Leopard_Hills_Suite_Deck_DRP09_04-1900x1140-1-1500x900.",
+     "alt": "Leopard Hills Private Game Reserve: plunge pool over the bush",
+     "caption": "Plunge pool over the bush"
+    }
+   ]
+  },
+  "londolozi-reserve": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
+     "alt": "Londolozi Reserve, South Africa: above the riverine forest"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg",
+     "alt": "Londolozi Reserve, South Africa: the deck under the big trees"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681cbfa0b_d1752420d_682dcf2de25f02c9a0908c21_Londolozi__2018_Londolozi-Game-Reserve_-Private-Granite.",
+     "alt": "Londolozi Reserve, South Africa: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg",
+     "alt": "Londolozi Reserve, South Africa: the thatched dining deck"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_.jpg",
+     "alt": "Londolozi Reserve, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
+     "alt": "Londolozi Reserve: above the riverine forest",
+     "caption": "Above the riverine forest"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg",
+     "alt": "Londolozi Reserve: the deck under the big trees",
+     "caption": "The deck under the big trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg",
+     "alt": "Londolozi Reserve: the thatched dining deck",
+     "caption": "The thatched dining deck"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/19f194a5f_877070f71_683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView_20_1_.",
+     "alt": "Londolozi Reserve: lounge, pool and bush beyond",
+     "caption": "Lounge, pool and bush beyond"
+    }
+   ]
+  },
+  "singita-lebombo": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5d7be1cd7_e42300c68_69cf60dd9424466442730b8a_Singita_20Lebombo_20Lodge_Exterior_20of_20Suite_Ross_20.",
+     "alt": "Singita Lebombo Lodge, South Africa: glass and timber in the treetops"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4bd342f41_bfabc9587_6985e598fb6944a8d78fdec7_SKNP_ROOM_Lebombo_Lodge_Private_Villa_Sleep_Out_Bed_Ros.",
+     "alt": "Singita Lebombo Lodge, South Africa: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0a1010775_eb93b3a3a_69cf61f872f045ad34c38e20_SingitaLebomboLodge_SuiteOutdoorBed.jpg",
+     "alt": "Singita Lebombo Lodge, South Africa: a daybed above the river"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a9e9af913_08c79c99a_69cf5cb4ffabe444bda165b7_SingitaLebomboLodge_SwimmingPools_AdriaanLouw_1.jpg",
+     "alt": "Singita Lebombo Lodge, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bc2ba8d3f_c30288586_69cf6359aa61db8960c102b1_Singita_20Lebombo_20Lodge_Guests_20on_20walkway_Ross_20.",
+     "alt": "Singita Lebombo Lodge, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5d7be1cd7_e42300c68_69cf60dd9424466442730b8a_Singita_20Lebombo_20Lodge_Exterior_20of_20Suite_Ross_20.",
+     "alt": "Singita Lebombo Lodge: glass and timber in the treetops",
+     "caption": "Glass and timber in the treetops"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0a1010775_eb93b3a3a_69cf61f872f045ad34c38e20_SingitaLebomboLodge_SuiteOutdoorBed.jpg",
+     "alt": "Singita Lebombo Lodge: a daybed above the river",
+     "caption": "A daybed above the river"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ec5c9b279_8ac42c863_69ce46d95a7d3c9c479af898_SingitaLebomboLodge_FireBomaNight.jpg",
+     "alt": "Singita Lebombo Lodge: round the fire at dusk",
+     "caption": "Round the fire at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34d1ca46d_bd544bbb6_69cf60fef6af99d03a8fc3a8_Singita_20Lebombo_20Lodge_Main_20Lodge_20Lounge_20and_2.",
+     "alt": "Singita Lebombo Lodge: morning light on the walkways",
+     "caption": "Morning light on the walkways"
+    }
+   ]
+  },
+  "tswalu-reserve": {
+   "hero": [
+    {
+     "url": "/img/b44/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif",
+     "alt": "Tswalu Reserve Kalahari, South Africa: the tents as night comes on"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0b042dd0_1893e5640_688836dac4bbad742f33ce64_Tswalu_20Kalahari_20-_20Tarkuni.jpg",
+     "alt": "Tswalu Reserve Kalahari, South Africa: the boma from above"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f106ad525_152fa0e24_68883d30382be55d549a9548_Tswalu_20Kalahari_20-_20Loapi_20deck.jpg",
+     "alt": "Tswalu Reserve Kalahari, South Africa: a daybed facing the Kalahari hills"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/338971afe_741225972_688838432ac356e47a556d3f_Tswalu_Motse_Pool.jpg",
+     "alt": "Tswalu Reserve Kalahari, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4285c4934_adc3640b2_688838434a395ce3ebabd100_Tswalu_Motse_Daybed.jpg",
+     "alt": "Tswalu Reserve Kalahari, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "/img/b44/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif",
+     "alt": "Tswalu Reserve Kalahari: the tents as night comes on",
+     "caption": "The tents as night comes on"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0b042dd0_1893e5640_688836dac4bbad742f33ce64_Tswalu_20Kalahari_20-_20Tarkuni.jpg",
+     "alt": "Tswalu Reserve Kalahari: the boma from above",
+     "caption": "The boma from above"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f106ad525_152fa0e24_68883d30382be55d549a9548_Tswalu_20Kalahari_20-_20Loapi_20deck.jpg",
+     "alt": "Tswalu Reserve Kalahari: a daybed facing the Kalahari hills",
+     "caption": "A daybed facing the Kalahari hills"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b90d4c5c_a10995e49_6888384377fcbd5f339e451d_Tswalu_Motse_Walkway.jpg",
+     "alt": "Tswalu Reserve Kalahari: the lantern-lit walkway",
+     "caption": "The lantern-lit walkway"
+    }
+   ]
+  },
+  "cape-cadogan-boutique-hotel": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/802303089_15d8b4d2d_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel, South Africa: under Table Mountain"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6b8801416_f93ad77aa_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel, South Africa: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a0d509745_b27ac00e3_694b02c47d53be7e8c9772e2_Upper_20Union_20Restaurant_20-_20Outside_20Dining_20-_2.",
+     "alt": "Cape Cadogan Boutique Hotel, South Africa: the courtyard after dark"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9d9b34eb_b2c7b0801_694b031806ac9fea2ec05f85_Cape_20Cadog_20an_20Exterior_2027_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1fe7bb436_6fabfad56_694b03a5a52dcfef39e1e0d1_CC_20Exterior_20and_20Pool-20jpg_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/802303089_15d8b4d2d_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel: under Table Mountain",
+     "caption": "Under Table Mountain"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a0d509745_b27ac00e3_694b02c47d53be7e8c9772e2_Upper_20Union_20Restaurant_20-_20Outside_20Dining_20-_2.",
+     "alt": "Cape Cadogan Boutique Hotel: the courtyard after dark",
+     "caption": "The courtyard after dark"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1ca75f51d_0d099053a_694aff37d53eb30dc6b48a04_CC_20Residence_20Kitchen-19jpg_20-_20Medium.webp",
+     "alt": "Cape Cadogan Boutique Hotel: the plunge pool and terrace",
+     "caption": "The plunge pool and terrace"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0adbd0fb3_b68c8d49b_694b03a5a7d3ece077044cea_Cape_20Cadogan_20Boutique_20Hotel_20General_20Area_2033.",
+     "alt": "Cape Cadogan Boutique Hotel: the drawing room",
+     "caption": "The drawing room"
+    }
+   ]
+  },
+  "la-cle": {
+   "hero": [
+    {
+     "url": "/img/b44/2fbc4fa98_d2b518ad4_69d14aef16077934f9b31e7b_2bd25adc.avif",
+     "alt": "La Cle South Africa, South Africa: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5dfa2a570_d71b7fa06_69d8aa54352dc7b3db254dcf_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+     "alt": "La Cle South Africa, South Africa: from the kitchen to the pool"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9bf271131_c2e4de4b1_69d8b1291b17712e38677277_LA_20CL_C3_89_20-_20La_20Cl_C3_A9_20Lodge_20-_20Lounge_.",
+     "alt": "La Cle South Africa, South Africa: the lounge, open to the garden"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6b910d29_8e437b1c2_69d8aa6180d573dbe58fe7d0_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+     "alt": "La Cle South Africa, South Africa: the kitchen table"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f892f05df_a4e3884f1_69d8aac94a5f06d5b744590d_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+     "alt": "La Cle South Africa, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9bf271131_c2e4de4b1_69d8b1291b17712e38677277_LA_20CL_C3_89_20-_20La_20Cl_C3_A9_20Lodge_20-_20Lounge_.",
+     "alt": "La Cle South Africa: the lounge, open to the garden",
+     "caption": "The lounge, open to the garden"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5dfa2a570_d71b7fa06_69d8aa54352dc7b3db254dcf_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+     "alt": "La Cle South Africa: from the kitchen to the pool",
+     "caption": "From the kitchen to the pool"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6b910d29_8e437b1c2_69d8aa6180d573dbe58fe7d0_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+     "alt": "La Cle South Africa: the kitchen table",
+     "caption": "The kitchen table"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1d6ed8882_5c9bdb88e_69d8b112d84c5c651f767468_LA_20CL_C3_89_20-_20La_20Cl_C3_A9_20Lodge_20-_20Cozy_20.",
+     "alt": "La Cle South Africa: the library corner",
+     "caption": "The library corner"
+    }
+   ]
+  },
+  "singita-sweni": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8ac98c054_20228f062_6985d4978da27e6c46678ab0_SKNP_Sweni_Landscape_River_Adriaan_Louw.webp",
+     "alt": "Singita Sweni Lodge, South Africa: the river below the lodge"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/27a7cbb58_d47c6f050_698b29c5a8c4b35c2dfb9d51__DSC5419.webp",
+     "alt": "Singita Sweni Lodge, South Africa: open to the bush"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/808cbcd00_8c999ef55_698b29c5df07b4ad70004fc7_Singita-Sweni-Lodge-Outdoor-sleeping.webp",
+     "alt": "Singita Sweni Lodge, South Africa: a netted daybed in the late sun"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47fc67462_987bbfce3_698b29c54e6a31e021a6a05e_Singita-Sweni-Lodge-Suite-exterior-interior.webp",
+     "alt": "Singita Sweni Lodge, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b5da0cf02_c85d2827b_69ce34d0e16faa9a954b204c_SingitaSweni_RoomView.jpg",
+     "alt": "Singita Sweni Lodge, South Africa: glass walls in the riverine trees"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8ac98c054_20228f062_6985d4978da27e6c46678ab0_SKNP_Sweni_Landscape_River_Adriaan_Louw.webp",
+     "alt": "Singita Sweni Lodge: the river below the lodge",
+     "caption": "The river below the lodge"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b5da0cf02_c85d2827b_69ce34d0e16faa9a954b204c_SingitaSweni_RoomView.jpg",
+     "alt": "Singita Sweni Lodge: glass walls in the riverine trees",
+     "caption": "Glass walls in the riverine trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/808cbcd00_8c999ef55_698b29c5df07b4ad70004fc7_Singita-Sweni-Lodge-Outdoor-sleeping.webp",
+     "alt": "Singita Sweni Lodge: a netted daybed in the late sun",
+     "caption": "A netted daybed in the late sun"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/27a7cbb58_d47c6f050_698b29c5a8c4b35c2dfb9d51__DSC5419.webp",
+     "alt": "Singita Sweni Lodge: open to the bush",
+     "caption": "Open to the bush"
+    }
+   ]
+  },
+  "ellerman-house": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg",
+     "alt": "Ellerman House Cape Town, South Africa: the Atlantic at sundown"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34f1c8e06_52680f0f9_694b0ebccc2fad7ac7a3142e_Ellerman_House_Exterior.jpg",
+     "alt": "Ellerman House Cape Town, South Africa: the house and terraces at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47851c04d_58273fd12_694b0ee3fbda8620f785633d_Ellerman_House_View.jpg",
+     "alt": "Ellerman House Cape Town, South Africa: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271ef56bb_8512946e7_694b11a9212ec6a0aee995df_Ellerman_House_Dining.jpg",
+     "alt": "Ellerman House Cape Town, South Africa: a table at the window"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cba6ff11c_2623a8b85_694b0ee3b3f5f6003a2ba5c0_Ellerman_House_Lounge.jpg",
+     "alt": "Ellerman House Cape Town, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg",
+     "alt": "Ellerman House Cape Town: the Atlantic at sundown",
+     "caption": "The Atlantic at sundown"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34f1c8e06_52680f0f9_694b0ebccc2fad7ac7a3142e_Ellerman_House_Exterior.jpg",
+     "alt": "Ellerman House Cape Town: the house and terraces at dusk",
+     "caption": "The house and terraces at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271ef56bb_8512946e7_694b11a9212ec6a0aee995df_Ellerman_House_Dining.jpg",
+     "alt": "Ellerman House Cape Town: a table at the window",
+     "caption": "A table at the window"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2534113a7_a0d3d4385_694b10705b7c0eb8703ee112_Ellerman_House_Wine_Cellar.jpg",
+     "alt": "Ellerman House Cape Town: the wine gallery",
+     "caption": "The wine gallery"
+    }
+   ]
+  },
+  "morukuru-farm-house": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view.jpg",
+     "alt": "Morukuru Farm House, South Africa: the farm house at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma.jpg",
+     "alt": "Morukuru Farm House, South Africa: lanterns in the courtyard tree"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck.jpg",
+     "alt": "Morukuru Farm House, South Africa: dinner on the deck as the sun goes"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/293f3bdae_2f3e395df_68ae14d4259cf380a761ef79_lunch-outside-on-the.jpg",
+     "alt": "Morukuru Farm House, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah.jpg",
+     "alt": "Morukuru Farm House, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck.jpg",
+     "alt": "Morukuru Farm House: dinner on the deck as the sun goes",
+     "caption": "Dinner on the deck as the sun goes"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma.jpg",
+     "alt": "Morukuru Farm House: lanterns in the courtyard tree",
+     "caption": "Lanterns in the courtyard tree"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view.jpg",
+     "alt": "Morukuru Farm House: the farm house at dusk",
+     "caption": "The farm house at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271a2cb0f_1af13c825_683f3111a2d6323598c2464b_Morukuru_20Farm_20House_20-_20bedroom-patio.jpg",
+     "alt": "Morukuru Farm House: a suite on the bush",
+     "caption": "A suite on the bush"
+    }
+   ]
+  },
+  "ngala-safari-lodge-by-beyond": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/301472440_1bf9b77a5_6942909e4d2140c1851a2362_South-Africa-Ngala-Safari-Lodge-Outdoor-view-of-evening.",
+     "alt": "Ngala Safari Lodge by &Beyond, South Africa: dinner by the pool at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/08b54136d_3245ced35_69cb6a760398a7eb1ee038eb_South-Africa-Ngala-Safari-Lodge-boma-dining-lantern.jpg",
+     "alt": "Ngala Safari Lodge by &Beyond, South Africa: the boma, lantern-lit"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fca4f8e26_f9c8f8b1a_691f03a1655e9ee4ff173c20_ngala-safari-lodge-by-and-beyond.jpg",
+     "alt": "Ngala Safari Lodge by &Beyond, South Africa: a suite and its plunge pool"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/574ab014e_86b930645_69cb72111b59e6b9956aceb9_South-Africa-Ngala-Safari-Lodge-Family-Villa_20deck_20v.",
+     "alt": "Ngala Safari Lodge by &Beyond, South Africa: the pool deck in the bush"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/570db7aa5_4ebd86158_69cb69aa9dad32dc15977615_South-Africa-Ngala-Safari-Lodge-View-of-outdoor-bar.jpg",
+     "alt": "Ngala Safari Lodge by &Beyond, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/301472440_1bf9b77a5_6942909e4d2140c1851a2362_South-Africa-Ngala-Safari-Lodge-Outdoor-view-of-evening.",
+     "alt": "Ngala Safari Lodge by &Beyond: dinner by the pool at dusk",
+     "caption": "Dinner by the pool at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/08b54136d_3245ced35_69cb6a760398a7eb1ee038eb_South-Africa-Ngala-Safari-Lodge-boma-dining-lantern.jpg",
+     "alt": "Ngala Safari Lodge by &Beyond: the boma, lantern-lit",
+     "caption": "The boma, lantern-lit"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/574ab014e_86b930645_69cb72111b59e6b9956aceb9_South-Africa-Ngala-Safari-Lodge-Family-Villa_20deck_20v.",
+     "alt": "Ngala Safari Lodge by &Beyond: the pool deck in the bush",
+     "caption": "The pool deck in the bush"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fca4f8e26_f9c8f8b1a_691f03a1655e9ee4ff173c20_ngala-safari-lodge-by-and-beyond.jpg",
+     "alt": "Ngala Safari Lodge by &Beyond: a suite and its plunge pool",
+     "caption": "A suite and its plunge pool"
+    }
+   ]
+  },
+  "singita-ebony": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper.jpg",
+     "alt": "Singita Ebony Lodge South Africa, South Africa: the deck above the river"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/07ff1e779_5eb201b5c_69d3c43fa65b9c9966e9e67f_Singita_20Ebony_20Lodge_Deck_20at_20Sunset_Ross_20Coupe.",
+     "alt": "Singita Ebony Lodge South Africa, South Africa: lamplight over the river"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ff88d7e7c_b677968db_69d3cb6dcf711eac6e466fd6_Singita_20Ebony_20Lodge_Dining_20Deck_Ross_20Couper.jpg",
+     "alt": "Singita Ebony Lodge South Africa, South Africa: late sun on the terrace"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ddf05d404_147f194f4_69d3c054677c510562b181fc_SingitaEbonyLodge_Pool1.jpg",
+     "alt": "Singita Ebony Lodge South Africa, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/17c60ebdd_3698a3099_69d3c7458e35c653b60e9a16_SingitaEbonyLodge_ExteriorSuiteDeck_EmmaJackson.jpg",
+     "alt": "Singita Ebony Lodge South Africa, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper.jpg",
+     "alt": "Singita Ebony Lodge South Africa: the deck above the river",
+     "caption": "The deck above the river"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/07ff1e779_5eb201b5c_69d3c43fa65b9c9966e9e67f_Singita_20Ebony_20Lodge_Deck_20at_20Sunset_Ross_20Coupe.",
+     "alt": "Singita Ebony Lodge South Africa: lamplight over the river",
+     "caption": "Lamplight over the river"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ff88d7e7c_b677968db_69d3cb6dcf711eac6e466fd6_Singita_20Ebony_20Lodge_Dining_20Deck_Ross_20Couper.jpg",
+     "alt": "Singita Ebony Lodge South Africa: late sun on the terrace",
+     "caption": "Late sun on the terrace"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e4eb2c96_e34186a4b_69d3ca616b02a5f34698fdcf_SingitaEbonyLodge_MainLoungeandFireplace_RossCouper.jpg",
+     "alt": "Singita Ebony Lodge South Africa: the lounge, fire lit",
+     "caption": "The lounge, fire lit"
+    }
+   ]
+  },
+  "kwande-private-game-reserve": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/66d3ea9b8_6efc93a63_69fdb43b2e2ec14d02809ba0_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Aerial-124-1-.",
+     "alt": "Kwandwe Private Game Reserve, South Africa: sunrise over the valley"
+    },
+    {
+     "url": "/img/b44/8b3640ac4_7b3c751ee_69fdc249a6268fabbe88684f_Fort-House16.avif",
+     "alt": "Kwandwe Private Game Reserve, South Africa: the lounge, framed by the view"
+    },
+    {
+     "url": "/img/b44/4984d196b_edbd4fc1e_69fdc3521b023a69b631ff68_MMM8465-3.avif",
+     "alt": "Kwandwe Private Game Reserve, South Africa: dinner on the deck after dark"
+    },
+    {
+     "url": "/img/b44/ca833fc0e_ad34e169a_69fdc3523906db07ec2b8202_MMM8608.avif",
+     "alt": "Kwandwe Private Game Reserve, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bb22fda10_2aac34dd4_69fdc352f8c75d10e44430b6_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Deep-soaking-.",
+     "alt": "Kwandwe Private Game Reserve, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/66d3ea9b8_6efc93a63_69fdb43b2e2ec14d02809ba0_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Aerial-124-1-.",
+     "alt": "Kwandwe Private Game Reserve: sunrise over the valley",
+     "caption": "Sunrise over the valley"
+    },
+    {
+     "src": "/img/b44/4984d196b_edbd4fc1e_69fdc3521b023a69b631ff68_MMM8465-3.avif",
+     "alt": "Kwandwe Private Game Reserve: dinner on the deck after dark",
+     "caption": "Dinner on the deck after dark"
+    },
+    {
+     "src": "/img/b44/8b3640ac4_7b3c751ee_69fdc249a6268fabbe88684f_Fort-House16.avif",
+     "alt": "Kwandwe Private Game Reserve: the lounge, framed by the view",
+     "caption": "The lounge, framed by the view"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/720301928_bbdbc3109_69fdc35296e6be40cc556d95_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Dining-table-.",
+     "alt": "Kwandwe Private Game Reserve: fireside dinner",
+     "caption": "Fireside dinner"
+    }
+   ]
+  },
+  "lion-sands": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/597868105_86ad58e9e_6833b86790c60fba011752cf_Tinyeletei_20Treehouse_20_1_.jpg",
+     "alt": "Lion Sands Reserve, South Africa: photograph 1"
+    },
+    {
+     "url": "/img/b44/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif",
+     "alt": "Lion Sands Reserve, South Africa: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_.jpg",
+     "alt": "Lion Sands Reserve, South Africa: a drinks stop in the bush"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.",
+     "alt": "Lion Sands Reserve, South Africa: photograph 4"
+    },
+    {
+     "url": "/img/b44/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
+     "alt": "Lion Sands Reserve, South Africa: rhino and calf"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1.jpg",
+     "alt": "Lion Sands Reserve: the fire deck, lantern-lit",
+     "caption": "The fire deck, lantern-lit"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae53a68fb_bb7b63fcc_6833b696b37e3f9a4432c9bb_Akita_20Female_20Kruger.jpg",
+     "alt": "Lion Sands Reserve: leopard in the tree",
+     "caption": "Leopard in the tree"
+    },
+    {
+     "src": "/img/b44/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
+     "alt": "Lion Sands Reserve: rhino and calf",
+     "caption": "Rhino and calf"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_.jpg",
+     "alt": "Lion Sands Reserve: a drinks stop in the bush",
+     "caption": "A drinks stop in the bush"
+    }
+   ]
+  },
+  "singita-boulders": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/31234e196_ebe695485_69cf6cc1a54b83280e24ed80_Singita_20Boulders_20Lodge_Meditation_20on_20Suite_20De.",
+     "alt": "Singita Boulders Lodge, South Africa: morning stillness by the pool"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0c31713de_919f11340_69cf6c575a16676b30421895_Singita_20Boulders_20Lodge_Bush_20Suite_Ross_20Couper.j",
+     "alt": "Singita Boulders Lodge, South Africa: the lodge among the trees"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e2b5a9049_3c6ebf498_6985eed23a2ece9bb5e2b850__DSC0397.webp",
+     "alt": "Singita Boulders Lodge, South Africa: a plunge pool under the trees"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b33f9c716_80ac67848_69cf70352224b2c3b7563d5e_SingitaBouldersLodge_SuitePool.jpg",
+     "alt": "Singita Boulders Lodge, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9e3d32934_bc75fc7bd_69cf6ce24d6baf6c1010eba9_SingitaBouldersLodge_FoodandWine.jpg",
+     "alt": "Singita Boulders Lodge, South Africa: in the kitchen with the team"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/31234e196_ebe695485_69cf6cc1a54b83280e24ed80_Singita_20Boulders_20Lodge_Meditation_20on_20Suite_20De.",
+     "alt": "Singita Boulders Lodge: morning stillness by the pool",
+     "caption": "Morning stillness by the pool"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0c31713de_919f11340_69cf6c575a16676b30421895_Singita_20Boulders_20Lodge_Bush_20Suite_Ross_20Couper.j",
+     "alt": "Singita Boulders Lodge: the lodge among the trees",
+     "caption": "The lodge among the trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e2b5a9049_3c6ebf498_6985eed23a2ece9bb5e2b850__DSC0397.webp",
+     "alt": "Singita Boulders Lodge: a plunge pool under the trees",
+     "caption": "A plunge pool under the trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9e3d32934_bc75fc7bd_69cf6ce24d6baf6c1010eba9_SingitaBouldersLodge_FoodandWine.jpg",
+     "alt": "Singita Boulders Lodge: in the kitchen with the team",
+     "caption": "In the kitchen with the team"
+    }
+   ]
+  },
+  "singita-castleton": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2a9f106b6_38da82060_69cf69f000a61aa09f7edeb6_Singita_20Castleton_Boma_20Dinner.jpg",
+     "alt": "Singita Castleton, South Africa: the fire is lit, the table is laid"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/440a195bc_40dba4e58_6985eb1225bd365a2a01e8c6_Singita_20Castleton_20_1_.webp",
+     "alt": "Singita Castleton, South Africa: the lawn and the old farmhouse"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7ec6baa8b_526b8039d_69cf69b4d79c72d6ce663be3_Singita_20Castleton_Tennis_20Courts_20and_20Wellness_20.",
+     "alt": "Singita Castleton, South Africa: morning sun through the trees"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/79f02afeb_6250c3f07_69cf6999c5f82c3079694419_Singita_20Castleton_Verandah.jpg",
+     "alt": "Singita Castleton, South Africa: the veranda lounge"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/04a4dd5e5_76fecaa46_699c4f2d4f4b5912e5a8368f_Singita-Castleton-Bedroom-scaled.webp",
+     "alt": "Singita Castleton, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2a9f106b6_38da82060_69cf69f000a61aa09f7edeb6_Singita_20Castleton_Boma_20Dinner.jpg",
+     "alt": "Singita Castleton: the fire is lit, the table is laid",
+     "caption": "The fire is lit, the table is laid"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/440a195bc_40dba4e58_6985eb1225bd365a2a01e8c6_Singita_20Castleton_20_1_.webp",
+     "alt": "Singita Castleton: the lawn and the old farmhouse",
+     "caption": "The lawn and the old farmhouse"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7ec6baa8b_526b8039d_69cf69b4d79c72d6ce663be3_Singita_20Castleton_Tennis_20Courts_20and_20Wellness_20.",
+     "alt": "Singita Castleton: morning sun through the trees",
+     "caption": "Morning sun through the trees"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/79f02afeb_6250c3f07_69cf6999c5f82c3079694419_Singita_20Castleton_Verandah.jpg",
+     "alt": "Singita Castleton: the veranda lounge",
+     "caption": "The veranda lounge"
+    }
+   ]
+  },
+  "tanda-tula": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c214c917d_16cf79734_69b161c3fd9144c0b811f61a_Tanda_Tula-034-copy.jpg",
+     "alt": "Tanda Tula, South Africa: dinner in the dry riverbed"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9025e272b_21f0c3c71_69b1614e9a294642bf543fde_The-Tanda-Tula-Experience-X-Skillie-_40-Kikitography_46.",
+     "alt": "Tanda Tula, South Africa: elephants at the waterhole"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/684e63163_042d0b91c_69b16440cc5b92db9dfef04c_tanda-tula-living-spaces_1welcome1_web.jpg",
+     "alt": "Tanda Tula, South Africa: late sun on the path in"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d83bbeccb_e0cee387f_69b16f840175a8f8cc3129fd_Copy-of-Copy-of-AMP_4356.jpg",
+     "alt": "Tanda Tula, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0bd19da83_1e1e3d291_696135ed80a9c107ab765b59_TANDA_20TULA_20-_20Safari_20Camp_20-_20Family_20suites_.",
+     "alt": "Tanda Tula, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c214c917d_16cf79734_69b161c3fd9144c0b811f61a_Tanda_Tula-034-copy.jpg",
+     "alt": "Tanda Tula: dinner in the dry riverbed",
+     "caption": "Dinner in the dry riverbed"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9025e272b_21f0c3c71_69b1614e9a294642bf543fde_The-Tanda-Tula-Experience-X-Skillie-_40-Kikitography_46.",
+     "alt": "Tanda Tula: elephants at the waterhole",
+     "caption": "Elephants at the waterhole"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/709086a72_95bf7372d_69b163fc880d04361ca94916_The-Tanda-Tula-Experience_189.jpg",
+     "alt": "Tanda Tula: the boma at night",
+     "caption": "The boma at night"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/684e63163_042d0b91c_69b16440cc5b92db9dfef04c_tanda-tula-living-spaces_1welcome1_web.jpg",
+     "alt": "Tanda Tula: late sun on the path in",
+     "caption": "Late sun on the path in"
+    }
+   ]
+  },
+  "phinda-homestead-by-and-beyond": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ecf1a8dd7_e0e5a8c1c_6841a2155a189971caf9612b_South-Africa-Phinda-Homestead-Guest-area-pool-loungers-.",
+     "alt": "Phinda Homestead by &Beyond, South Africa: the homestead as night falls"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c14e929c2_2db543e0e_69ccb74374b91913854abe85_South-Africa-Phinda-Homestead-Guest-area-pool-guest.jpg",
+     "alt": "Phinda Homestead by &Beyond, South Africa: an elephant drops by the pool"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2ad5bb05_cda3d3b83_69ccb6e5e6c022ada12c034f_Phinda-Homestead-Guest-area.jpg",
+     "alt": "Phinda Homestead by &Beyond, South Africa: the boma at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1843c88b6_294ddb23f_69ccb7c7f529723b967fd9e9_South-Africa-Phinda-Mountain-Lodge-Outdoor_20Sleeping.j",
+     "alt": "Phinda Homestead by &Beyond, South Africa: beds under the stars"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2baa22ec8_f54b9345c_69cb7784d79618f31c224af7_South-Africa-Phinda-Homestead-Guest-area-lounge.jpg",
+     "alt": "Phinda Homestead by &Beyond, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c14e929c2_2db543e0e_69ccb74374b91913854abe85_South-Africa-Phinda-Homestead-Guest-area-pool-guest.jpg",
+     "alt": "Phinda Homestead by &Beyond: an elephant drops by the pool",
+     "caption": "An elephant drops by the pool"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2ad5bb05_cda3d3b83_69ccb6e5e6c022ada12c034f_Phinda-Homestead-Guest-area.jpg",
+     "alt": "Phinda Homestead by &Beyond: the boma at dusk",
+     "caption": "The boma at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1843c88b6_294ddb23f_69ccb7c7f529723b967fd9e9_South-Africa-Phinda-Mountain-Lodge-Outdoor_20Sleeping.j",
+     "alt": "Phinda Homestead by &Beyond: beds under the stars",
+     "caption": "Beds under the stars"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ecf1a8dd7_e0e5a8c1c_6841a2155a189971caf9612b_South-Africa-Phinda-Homestead-Guest-area-pool-loungers-.",
+     "alt": "Phinda Homestead by &Beyond: the homestead as night falls",
+     "caption": "The homestead as night falls"
+    }
+   ]
+  },
+  "royal-malewane": {
+   "hero": [
+    {
+     "url": "/img/b44/aa6b37a21_18158c8d5_69d157181b48b72def1b99cc_1bdfbb52-1.avif",
+     "alt": "Royal Malewane, South Africa: lanterns and armchairs under the trees"
+    },
+    {
+     "url": "/img/b44/66024db93_760d17536_69d1573f7fff2bf853da546f_b0463743.avif",
+     "alt": "Royal Malewane, South Africa: the pool at blue hour"
+    },
+    {
+     "url": "/img/b44/9df5aa837_a994aabd7_69d1573ff03dd689a3bfce77_3c0ae5f0.avif",
+     "alt": "Royal Malewane, South Africa: the pool in the garden"
+    },
+    {
+     "url": "/img/b44/ee5880651_46bfb0e22_69d1573fedeb09d8a8484787_0e9c1151.avif",
+     "alt": "Royal Malewane, South Africa: champagne on the veranda"
+    },
+    {
+     "url": "/img/b44/36dca67c4_597023608_69d1573fdd780f23a261dcfd_fc8560ec.avif",
+     "alt": "Royal Malewane, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "/img/b44/aa6b37a21_18158c8d5_69d157181b48b72def1b99cc_1bdfbb52-1.avif",
+     "alt": "Royal Malewane: lanterns and armchairs under the trees",
+     "caption": "Lanterns and armchairs under the trees"
+    },
+    {
+     "src": "/img/b44/66024db93_760d17536_69d1573f7fff2bf853da546f_b0463743.avif",
+     "alt": "Royal Malewane: the pool at blue hour",
+     "caption": "The pool at blue hour"
+    },
+    {
+     "src": "/img/b44/9df5aa837_a994aabd7_69d1573ff03dd689a3bfce77_3c0ae5f0.avif",
+     "alt": "Royal Malewane: the pool in the garden",
+     "caption": "The pool in the garden"
+    },
+    {
+     "src": "/img/b44/ee5880651_46bfb0e22_69d1573fedeb09d8a8484787_0e9c1151.avif",
+     "alt": "Royal Malewane: champagne on the veranda",
+     "caption": "Champagne on the veranda"
+    }
+   ]
+  },
+  "senda-monteverde-lodge": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica, Costa Rica: the pools in the forest"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b85569aa_22d0a67f6_6a3c15555bc1a5f0646befa0_10-Experience-Learn-Connect-_-Relax.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica, Costa Rica: evening on the terrace"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4283d16a6_c5c90f7ae_6a3c1555df0c3f2d004199b8_23-Room-to-Relax.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica, Costa Rica: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cf87ec4de_29a7ce55b_6a3c1555b41ee5d11f6e7af5_28-A-Place-to-Unwind.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica, Costa Rica: morning coffee in the cloud forest"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica, Costa Rica: the balcony view"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b85569aa_22d0a67f6_6a3c15555bc1a5f0646befa0_10-Experience-Learn-Connect-_-Relax.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica: evening on the terrace",
+     "caption": "Evening on the terrace"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cf87ec4de_29a7ce55b_6a3c1555b41ee5d11f6e7af5_28-A-Place-to-Unwind.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica: morning coffee in the cloud forest",
+     "caption": "Morning coffee in the cloud forest"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica: the pools in the forest",
+     "caption": "The pools in the forest"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By.webp",
+     "alt": "Senda Monteverde Lodge Costa Rica: the balcony view",
+     "caption": "The balcony view"
+    }
+   ]
+  },
+  "singita-lebombo-villa": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8762a5ee7_437ff8bff_6985d5a3ce7a29399c08b3fe_Landscape___River_and_Pans___Singita_Kruger_National_Pa.",
+     "alt": "Singita Lebombo Villa, South Africa: the river below the villa"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7f9e072b7_633649cce_698d8604a9e911c2d13adf2c_Singita-Lebombo-Lodge-Suite-view-interior.webp",
+     "alt": "Singita Lebombo Villa, South Africa: a netted daybed above the river"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f06ac1fc9_f6f30db0b_698d86090a496852ed602d89_Singita-Lebombo-Lodge-Suite-Interior-exterior-2.webp",
+     "alt": "Singita Lebombo Villa, South Africa: open to the view"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5aa380865_e230da97d_698d86045ea6ea703281e419_Suite-Interior-Exterior-_-Singits-Lebombo-Lodge-_-Singi.",
+     "alt": "Singita Lebombo Villa, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5c1f8759e_79320bd15_698d86041e238be74af97079_Singita-Lebombo-Lodge-Suite-balcony.webp",
+     "alt": "Singita Lebombo Villa, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8762a5ee7_437ff8bff_6985d5a3ce7a29399c08b3fe_Landscape___River_and_Pans___Singita_Kruger_National_Pa.",
+     "alt": "Singita Lebombo Villa: the river below the villa",
+     "caption": "The river below the villa"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7f9e072b7_633649cce_698d8604a9e911c2d13adf2c_Singita-Lebombo-Lodge-Suite-view-interior.webp",
+     "alt": "Singita Lebombo Villa: a netted daybed above the river",
+     "caption": "A netted daybed above the river"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f06ac1fc9_f6f30db0b_698d86090a496852ed602d89_Singita-Lebombo-Lodge-Suite-Interior-exterior-2.webp",
+     "alt": "Singita Lebombo Villa: open to the view",
+     "caption": "Open to the view"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4b7ccada0_cd99ead0c_698d860451a9d01d90606a7b__DSC1187.webp",
+     "alt": "Singita Lebombo Villa: the living room",
+     "caption": "The living room"
+    }
+   ]
+  },
+  "arenas-del-mar-resort": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f7fef1137_e77c39766_6a33b2260d0c6d3eb5f502dc_9dae54cf.webp",
+     "alt": "Arenas Del Mar Resort Costa Rica, Costa Rica: rainforest down to the beach"
+    },
+    {
+     "url": "/img/b44/6116bbd50_f0a5be029_6a33b2f0d1081f84feb24dc1_568dd087.avif",
+     "alt": "Arenas Del Mar Resort Costa Rica, Costa Rica: morning view of the bay"
+    },
+    {
+     "url": "/img/b44/2dd28ae0c_735f7405c_6a33b2f0c109ff8d4e396660_77c0a673.avif",
+     "alt": "Arenas Del Mar Resort Costa Rica, Costa Rica: the terrace and its plunge pool"
+    },
+    {
+     "url": "/img/b44/edc0729db_aed4735d8_6a33b2f084637db7d000128c_2ab15c9c.avif",
+     "alt": "Arenas Del Mar Resort Costa Rica, Costa Rica: photograph 4"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f7fef1137_e77c39766_6a33b2260d0c6d3eb5f502dc_9dae54cf.webp",
+     "alt": "Arenas Del Mar Resort Costa Rica: rainforest down to the beach",
+     "caption": "Rainforest down to the beach"
+    },
+    {
+     "src": "/img/b44/6116bbd50_f0a5be029_6a33b2f0d1081f84feb24dc1_568dd087.avif",
+     "alt": "Arenas Del Mar Resort Costa Rica: morning view of the bay",
+     "caption": "Morning view of the bay"
+    },
+    {
+     "src": "/img/b44/2dd28ae0c_735f7405c_6a33b2f0c109ff8d4e396660_77c0a673.avif",
+     "alt": "Arenas Del Mar Resort Costa Rica: the terrace and its plunge pool",
+     "caption": "The terrace and its plunge pool"
+    }
+   ]
+  },
+  "grootbos-private-nature-reserve": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e272c994_24fe3d887_69a577c76a3bd64adee119f2_grootbos-villa-2-exterior-16.jpg",
+     "alt": "Grootbos Private Nature Reserve, South Africa: the pool above the fynbos"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c680578c6_85d08be17_69a57567fe7560355e4ab2a4_intricate-stonework-and-thatch-roof-define-garden-lodge.",
+     "alt": "Grootbos Private Nature Reserve, South Africa: thatch and stone at dusk"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7a8053d1_e180ed836_69a5770aa4641f453e487e38_web-grootbos-accommodation-villa-exterior-01.jpg",
+     "alt": "Grootbos Private Nature Reserve, South Africa: the lodge from above"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/804d1db38_90693fe36_69a574f9970e4982f150b394_grootbos-web-garden-lodge-lounge.jpg",
+     "alt": "Grootbos Private Nature Reserve, South Africa: the lodge lounge"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8be97ca88_17b60870f_69a57602b7bc1c0146439b54_grootbos-web-forest-lodge-accommodation-suite-bedroom.j",
+     "alt": "Grootbos Private Nature Reserve, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e272c994_24fe3d887_69a577c76a3bd64adee119f2_grootbos-villa-2-exterior-16.jpg",
+     "alt": "Grootbos Private Nature Reserve: the pool above the fynbos",
+     "caption": "The pool above the fynbos"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c680578c6_85d08be17_69a57567fe7560355e4ab2a4_intricate-stonework-and-thatch-roof-define-garden-lodge.",
+     "alt": "Grootbos Private Nature Reserve: thatch and stone at dusk",
+     "caption": "Thatch and stone at dusk"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/804d1db38_90693fe36_69a574f9970e4982f150b394_grootbos-web-garden-lodge-lounge.jpg",
+     "alt": "Grootbos Private Nature Reserve: the lodge lounge",
+     "caption": "The lodge lounge"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7a8053d1_e180ed836_69a5770aa4641f453e487e38_web-grootbos-accommodation-villa-exterior-01.jpg",
+     "alt": "Grootbos Private Nature Reserve: the lodge from above",
+     "caption": "The lodge from above"
+    }
+   ]
+  },
+  "nayara-gardens": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway, Costa Rica: arenal over the gardens"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7d4b82d22_ad15dfd73_6a350f644340b50bc731a477_d5ac07fe.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway, Costa Rica: a window full of rainforest"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/659803932_528d1da49_6a350f62e16a19b5fb968e6c_7c7f0472.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway, Costa Rica: the terrace in the trees"
+    },
+    {
+     "url": "/img/b44/b09745625_884285c6e_6a350f67c039057ad72e7542_eda80ea5.avif",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway, Costa Rica: photograph 4"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway: arenal over the gardens",
+     "caption": "Arenal over the gardens"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7d4b82d22_ad15dfd73_6a350f644340b50bc731a477_d5ac07fe.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway: a window full of rainforest",
+     "caption": "A window full of rainforest"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/659803932_528d1da49_6a350f62e16a19b5fb968e6c_7c7f0472.webp",
+     "alt": "Nayara Gardens Arenal Rainforest Hideaway: the terrace in the trees",
+     "caption": "The terrace in the trees"
+    }
+   ]
+  },
+  "pacuare-lodge": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d02af815f_0f00d8d4b_697cca3f921f492eb4bcd58d_canopy-suite-aerial-view.webp",
+     "alt": "Pacuare Lodge, Costa Rica: the lodge from above"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2fb432d1f_33c53028f_697cca3ab935e1a24a7882ab_canopy-suite.webp",
+     "alt": "Pacuare Lodge, Costa Rica: the canopy suite in the treetops"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/324fcaac2_98e6f966c_697cc97f1a0de2abc8be6e65_jaguar-villa.webp",
+     "alt": "Pacuare Lodge, Costa Rica: across the bridge to the pool"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d30cacabf_002369afa_697cc89a28f3c62eb3616205_linda-vista-suite.webp",
+     "alt": "Pacuare Lodge, Costa Rica: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5df5ae751_0a5753300_697cc7eef803dba34e707653_River-Suite-laybed.webp",
+     "alt": "Pacuare Lodge, Costa Rica: the terrace, facing the forest"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2fb432d1f_33c53028f_697cca3ab935e1a24a7882ab_canopy-suite.webp",
+     "alt": "Pacuare Lodge: the canopy suite in the treetops",
+     "caption": "The canopy suite in the treetops"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/324fcaac2_98e6f966c_697cc97f1a0de2abc8be6e65_jaguar-villa.webp",
+     "alt": "Pacuare Lodge: across the bridge to the pool",
+     "caption": "Across the bridge to the pool"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5df5ae751_0a5753300_697cc7eef803dba34e707653_River-Suite-laybed.webp",
+     "alt": "Pacuare Lodge: the terrace, facing the forest",
+     "caption": "The terrace, facing the forest"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d02af815f_0f00d8d4b_697cca3f921f492eb4bcd58d_canopy-suite-aerial-view.webp",
+     "alt": "Pacuare Lodge: the lodge from above",
+     "caption": "The lodge from above"
+    }
+   ]
+  },
+  "singita-ebony-villa": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/94a5a77f7_58a6997dd_68493228f79fbc8094055093_Singita_20Ebony_20Villa_Sand_20River_20View.jpg",
+     "alt": "Singita Ebony Villa, South Africa: the river at first light"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ebf40d034_fb374e927_69cf771866a1a280d45c4fdd_Singita_20Ebony_20Villa_Pool_20and_20Exterior_20View.jp",
+     "alt": "Singita Ebony Villa, South Africa: the pool deck over the river"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4758de260_a89be0f4d_69cf7739c5eeb6033d0cb01b_Singita_20Ebony_20Villa_Pool_20Patio_20and_20view_20of_.",
+     "alt": "Singita Ebony Villa, South Africa: late sun on the deck"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/153af79ab_7a5321004_699d6f3a5d088afa8c9f7334_Ebony_lodge_exterior.webp",
+     "alt": "Singita Ebony Villa, South Africa: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b7b19ee3e_a0d25cee0_6985f309e7d65f5eca2b62ac_Singita-Ebony-Lodge_Exterior-Suite-Deck_Emma-Jackson-sc.",
+     "alt": "Singita Ebony Villa, South Africa: photograph 5"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/94a5a77f7_58a6997dd_68493228f79fbc8094055093_Singita_20Ebony_20Villa_Sand_20River_20View.jpg",
+     "alt": "Singita Ebony Villa: the river at first light",
+     "caption": "The river at first light"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ebf40d034_fb374e927_69cf771866a1a280d45c4fdd_Singita_20Ebony_20Villa_Pool_20and_20Exterior_20View.jp",
+     "alt": "Singita Ebony Villa: the pool deck over the river",
+     "caption": "The pool deck over the river"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4758de260_a89be0f4d_69cf7739c5eeb6033d0cb01b_Singita_20Ebony_20Villa_Pool_20Patio_20and_20view_20of_.",
+     "alt": "Singita Ebony Villa: late sun on the deck",
+     "caption": "Late sun on the deck"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c12055a81_60e92d267_699d6f3aaa862b409f51bdaf__SSS_WILDLIFE_Ebony_Lodge_Fireplace_Ross_Couper_A1A7480.",
+     "alt": "Singita Ebony Villa: the lounge, fire lit",
+     "caption": "The lounge, fire lit"
+    }
+   ]
+  },
+  "la-residence": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/42e43bd54_c1bd724be_69d15519ccf130f3f7ab50e5_60e42a01.webp",
+     "alt": "La Residence, South Africa: the estate in the Franschhoek Valley"
+    },
+    {
+     "url": "/img/b44/602b811ae_49aee9677_69d1553272ae6e8cacdfbc8b_e5cac4fc.avif",
+     "alt": "La Residence, South Africa: a bath with a valley view"
+    },
+    {
+     "url": "/img/b44/35f6be086_faa9fb9ad_69d1553204ef5c4eff9153f6_0a18e1c6.avif",
+     "alt": "La Residence, South Africa: the suite, chandeliers and all"
+    },
+    {
+     "url": "/img/b44/3715a0eab_b3f251dd8_69d155327852a7b927686e2b_3327a19a.avif",
+     "alt": "La Residence, South Africa: photograph 4"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/42e43bd54_c1bd724be_69d15519ccf130f3f7ab50e5_60e42a01.webp",
+     "alt": "La Residence: the estate in the Franschhoek Valley",
+     "caption": "The estate in the Franschhoek Valley"
+    },
+    {
+     "src": "/img/b44/602b811ae_49aee9677_69d1553272ae6e8cacdfbc8b_e5cac4fc.avif",
+     "alt": "La Residence: a bath with a valley view",
+     "caption": "A bath with a valley view"
+    },
+    {
+     "src": "/img/b44/35f6be086_faa9fb9ad_69d1553204ef5c4eff9153f6_0a18e1c6.avif",
+     "alt": "La Residence: the suite, chandeliers and all",
+     "caption": "The suite, chandeliers and all"
+    }
+   ]
+  },
+  "samara-karoo-reserve": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9475aecb3_ea2697af9_6979d68d6c0362af285bcd54_Samara-plains-camp-dining-mess-tent-honest-work-maike-m.",
+     "alt": "Samara Karoo Reserve, South Africa: dinner laid out on the Karoo"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/727b45176_d2b152f06_6979d8919ff87de5aad81ff3_karoo-amenities.webp",
+     "alt": "Samara Karoo Reserve, South Africa: fireside in the lounge"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f9c37532_8ef3ea9ca_6979d892ff64bd4e33c5b3da_Karoo-suite-slider-img.webp",
+     "alt": "Samara Karoo Reserve, South Africa: photograph 3"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9475aecb3_ea2697af9_6979d68d6c0362af285bcd54_Samara-plains-camp-dining-mess-tent-honest-work-maike-m.",
+     "alt": "Samara Karoo Reserve: dinner laid out on the Karoo",
+     "caption": "Dinner laid out on the Karoo"
+    },
+    {
+     "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/727b45176_d2b152f06_6979d8919ff87de5aad81ff3_karoo-amenities.webp",
+     "alt": "Samara Karoo Reserve: fireside in the lounge",
+     "caption": "Fireside in the lounge"
+    }
+   ]
+  }
+ }
+}

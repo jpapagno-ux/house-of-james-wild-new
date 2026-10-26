@@ -7,7 +7,10 @@ const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
 const LEEU = "wildco/south-africa/leeu-estates-franschhoek";
 const big = (id: string, upscale = false) => `${CLD}/${upscale ? "e_upscale/" : ""}c_limit,w_2560/q_auto:good/f_jpg/${id}`;
 
-export type FullFrame = { src: string; alt: string; caption: string };
+import photos from "./stay-photos.json";
+
+// pos: CSS object-position, for photos whose subject sits off-centre.
+export type FullFrame = { src: string; alt: string; caption: string; pos?: string };
 
 // The library's Pacuare hero is 400×500, which pixelates as a full-screen
 // slide; this is the lodge's canopy-suite aerial, upscaled.
@@ -15,10 +18,10 @@ export const HERO_OVERRIDE: Record<string, string> = {
   "pacuare-lodge": big("jwco/site/stays/pacuare-lodge-canopy-aerial", true),
 };
 
-export const FULL_FRAME: Record<string, FullFrame[]> = {
+const HAND: Record<string, FullFrame[]> = {
   "leeu-estates": [
     { src: big(`${LEEU}/leeu-estates-manor-house-morning`, true), alt: "Leeu Estates: the Manor House and gardens in morning light", caption: "The Manor House, first light" },
-    { src: big(`${LEEU}/leeu-estates-manor-house-deck-sundowners`, true), alt: "Leeu Estates: sundowners on the Manor House deck", caption: "Sundowners on the deck" },
+    { src: big(`${LEEU}/leeu-estates-manor-house-deck-sundowners`, true), alt: "Leeu Estates: sundowners on the Manor House deck", caption: "Sundowners on the deck", pos: "50% 80%" },
     { src: big(`${LEEU}/mullineux-leeu-wine-studio`, true), alt: "Leeu Estates: the Mullineux & Leeu wine studio", caption: "The way in to the wine studio" },
     { src: big(`${LEEU}/leeu-spa-lily-pond`, true), alt: "Leeu Estates: the spa lily pond above the valley", caption: "The spa, over the valley" },
   ],
@@ -28,4 +31,11 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
     { src: `${B44}/40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030.jpg`, alt: "Aguas Claras: the beach and the forest behind it", caption: "Beach in front, forest behind" },
     { src: `${B44}/a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025.jpg`, alt: "Aguas Claras: the shoreline in front of the hotel", caption: "The shoreline out front" },
   ],
+};
+
+// Hand-written sets above win; every other stay with photos picked in
+// stay-photos.json gets its full frames from there.
+export const FULL_FRAME: Record<string, FullFrame[]> = {
+  ...Object.fromEntries(Object.entries(photos.stays as Record<string, { frames: FullFrame[] }>).filter(([, v]) => v.frames.length).map(([k, v]) => [k, v.frames])),
+  ...HAND,
 };

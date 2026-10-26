@@ -1,0 +1,4100 @@
+{
+ "note": "Photo ledger for every live stay: what is on file, sizes, what is in use, and what is still needed. images[] lists every library photo with its pixel size, for migration to Supabase/Base44/Cloudinary.",
+ "generated": "2026-10-26",
+ "stays": [
+  {
+   "slug": "arenas-del-mar-resort",
+   "name": "Arenas Del Mar Resort Costa Rica",
+   "country": "Costa Rica",
+   "page": "/stays/arenas-del-mar-resort",
+   "photos_on_file": 5,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 5,
+   "low_under_1000": 0,
+   "landscape_1200plus": 5,
+   "hero_photo_size": "1200x899",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 4,
+   "full_frames": 3,
+   "ai_upscaled_in_use": 4,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "nayara-gardens",
+   "name": "Nayara Gardens Arenal Rainforest Hideaway",
+   "country": "Costa Rica",
+   "page": "/stays/nayara-gardens",
+   "photos_on_file": 5,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 4,
+   "low_under_1000": 0,
+   "landscape_1200plus": 5,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 4,
+   "full_frames": 3,
+   "ai_upscaled_in_use": 3,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "pacuare-lodge",
+   "name": "Pacuare Lodge",
+   "country": "Costa Rica",
+   "page": "/stays/pacuare-lodge",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 5,
+   "low_under_1000": 1,
+   "landscape_1200plus": 5,
+   "hero_photo_size": "400x500",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 5,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "senda-monteverde-lodge",
+   "name": "Senda Monteverde Lodge Costa Rica",
+   "country": "Costa Rica",
+   "page": "/stays/senda-monteverde-lodge",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 5,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 6,
+   "hero_photo_size": "2560x1440",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "cape-cadogan-boutique-hotel",
+   "name": "Cape Cadogan Boutique Hotel",
+   "country": "South Africa",
+   "page": "/stays/cape-cadogan-boutique-hotel",
+   "photos_on_file": 10,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 10,
+   "low_under_1000": 0,
+   "landscape_1200plus": 10,
+   "hero_photo_size": "1200x800",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 7,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "cheetah-plains",
+   "name": "Cheetah Plains Eco‑Luxury Private Villas",
+   "country": "South Africa",
+   "page": "/stays/cheetah-plains",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 11,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1920x1367",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "ellerman-house",
+   "name": "Ellerman House Cape Town",
+   "country": "South Africa",
+   "page": "/stays/ellerman-house",
+   "photos_on_file": 9,
+   "hi_res_1600plus": 9,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 9,
+   "hero_photo_size": "1930x1285",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "grootbos-private-nature-reserve",
+   "name": "Grootbos Private Nature Reserve",
+   "country": "South Africa",
+   "page": "/stays/grootbos-private-nature-reserve",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 5,
+   "mid_1000_1599": 0,
+   "low_under_1000": 1,
+   "landscape_1200plus": 5,
+   "hero_photo_size": "750x500",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "kwande-private-game-reserve",
+   "name": "Kwandwe Private Game Reserve",
+   "country": "South Africa",
+   "page": "/stays/kwande-private-game-reserve",
+   "photos_on_file": 8,
+   "hi_res_1600plus": 8,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 8,
+   "hero_photo_size": "2560x1706",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "la-cle",
+   "name": "La Cle South Africa",
+   "country": "South Africa",
+   "page": "/stays/la-cle",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 5,
+   "mid_1000_1599": 5,
+   "low_under_1000": 1,
+   "landscape_1200plus": 10,
+   "hero_photo_size": "1200x800",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 1,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "la-residence",
+   "name": "La Residence",
+   "country": "South Africa",
+   "page": "/stays/la-residence",
+   "photos_on_file": 4,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 4,
+   "low_under_1000": 0,
+   "landscape_1200plus": 4,
+   "hero_photo_size": "1200x674",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 4,
+   "full_frames": 3,
+   "ai_upscaled_in_use": 4,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "lalibela-reserve",
+   "name": "Lalibela Reserve Eastern Cape South Africa",
+   "country": "South Africa",
+   "page": "/stays/lalibela-reserve",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 11,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1920x1440",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "leeu-estates",
+   "name": "Leeu Estates Franschhoek",
+   "country": "South Africa",
+   "page": "/stays/leeu-estates",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "1200x799",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "wildco/south-africa/leeu-estates-franschhoek",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "leopard-hills",
+   "name": "Leopard Hills Private Game Reserve",
+   "country": "South Africa",
+   "page": "/stays/leopard-hills",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 11,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1351x900",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 5,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "lion-sands",
+   "name": "Lion Sands Reserve",
+   "country": "South Africa",
+   "page": "/stays/lion-sands",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 9,
+   "mid_1000_1599": 1,
+   "low_under_1000": 1,
+   "landscape_1200plus": 8,
+   "hero_photo_size": "1920x1282",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "londolozi-reserve",
+   "name": "Londolozi Reserve",
+   "country": "South Africa",
+   "page": "/stays/londolozi-reserve",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 11,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "monwana-thornybush",
+   "name": "Monwana Thornybush",
+   "country": "South Africa",
+   "page": "/stays/monwana-thornybush",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 1,
+   "cloudinary_folder": "wildco/south-africa/monwana-thornybush",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "morukuru-farm-house",
+   "name": "Morukuru Farm House",
+   "country": "South Africa",
+   "page": "/stays/morukuru-farm-house",
+   "photos_on_file": 9,
+   "hi_res_1600plus": 7,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 9,
+   "hero_photo_size": "1400x933",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 2,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "ngala-safari-lodge-by-beyond",
+   "name": "Ngala Safari Lodge by &Beyond",
+   "country": "South Africa",
+   "page": "/stays/ngala-safari-lodge-by-beyond",
+   "photos_on_file": 9,
+   "hi_res_1600plus": 8,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 9,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 1,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "phinda-homestead-by-and-beyond",
+   "name": "Phinda Homestead by &Beyond",
+   "country": "South Africa",
+   "page": "/stays/phinda-homestead-by-and-beyond",
+   "photos_on_file": 8,
+   "hi_res_1600plus": 8,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 7,
+   "hero_photo_size": "1920x1620",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "royal-malewane",
+   "name": "Royal Malewane",
+   "country": "South Africa",
+   "page": "/stays/royal-malewane",
+   "photos_on_file": 7,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 7,
+   "low_under_1000": 0,
+   "landscape_1200plus": 6,
+   "hero_photo_size": "1200x801",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 5,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-boulders",
+   "name": "Singita Boulders Lodge",
+   "country": "South Africa",
+   "page": "/stays/singita-boulders",
+   "photos_on_file": 8,
+   "hi_res_1600plus": 4,
+   "mid_1000_1599": 4,
+   "low_under_1000": 0,
+   "landscape_1200plus": 8,
+   "hero_photo_size": "1600x1070",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 2,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-castleton",
+   "name": "Singita Castleton",
+   "country": "South Africa",
+   "page": "/stays/singita-castleton",
+   "photos_on_file": 8,
+   "hi_res_1600plus": 8,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 8,
+   "hero_photo_size": "1600x1068",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-ebony",
+   "name": "Singita Ebony Lodge South Africa",
+   "country": "South Africa",
+   "page": "/stays/singita-ebony",
+   "photos_on_file": 9,
+   "hi_res_1600plus": 4,
+   "mid_1000_1599": 5,
+   "low_under_1000": 0,
+   "landscape_1200plus": 9,
+   "hero_photo_size": "2880x1920",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 4,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-ebony-villa",
+   "name": "Singita Ebony Villa",
+   "country": "South Africa",
+   "page": "/stays/singita-ebony-villa",
+   "photos_on_file": 7,
+   "hi_res_1600plus": 5,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 5,
+   "hero_photo_size": "1920x1280",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 2,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-lebombo",
+   "name": "Singita Lebombo Lodge",
+   "country": "South Africa",
+   "page": "/stays/singita-lebombo",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 4,
+   "mid_1000_1599": 7,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1860x1240",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 3,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-lebombo-villa",
+   "name": "Singita Lebombo Villa",
+   "country": "South Africa",
+   "page": "/stays/singita-lebombo-villa",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 6,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 6,
+   "hero_photo_size": "1998x1330",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "singita-sweni",
+   "name": "Singita Sweni Lodge",
+   "country": "South Africa",
+   "page": "/stays/singita-sweni",
+   "photos_on_file": 10,
+   "hi_res_1600plus": 9,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 10,
+   "hero_photo_size": "1860x1232",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 1,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "tanda-tula",
+   "name": "Tanda Tula",
+   "country": "South Africa",
+   "page": "/stays/tanda-tula",
+   "photos_on_file": 8,
+   "hi_res_1600plus": 8,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 8,
+   "hero_photo_size": "1920x1281",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "tswalu-reserve",
+   "name": "Tswalu Reserve Kalahari",
+   "country": "South Africa",
+   "page": "/stays/tswalu-reserve",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 11,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 11,
+   "hero_photo_size": "1920x1280",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 5,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Leeu view: live",
+   "next_step": "Review captions; swap any photo you dislike"
+  },
+  {
+   "slug": "aguas-claras",
+   "name": "Aguas Claras",
+   "country": "Costa Rica",
+   "page": "/stays/aguas-claras",
+   "photos_on_file": 11,
+   "hi_res_1600plus": 11,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 10,
+   "hero_photo_size": "1920x1280",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 4,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Ready to pick",
+   "next_step": "Enough photos on file; pick hero + full frames"
+  },
+  {
+   "slug": "samara-karoo-reserve",
+   "name": "Samara Karoo Reserve",
+   "country": "South Africa",
+   "page": "/stays/samara-karoo-reserve",
+   "photos_on_file": 4,
+   "hi_res_1600plus": 4,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 4,
+   "hero_photo_size": "2000x1333",
+   "hero_slides": "hand-picked",
+   "hero_slide_count": 3,
+   "full_frames": 2,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Ready to pick",
+   "next_step": "Enough photos on file; pick hero + full frames"
+  },
+  {
+   "slug": "amor-arenal",
+   "name": "Amor Arenal",
+   "country": "Costa Rica",
+   "page": "/stays/amor-arenal",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "1200x800",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 2 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "arenal-springs-camp-by-nayara",
+   "name": "Arenal Springs Camp by Nayara",
+   "country": "Costa Rica",
+   "page": "/stays/arenal-springs-camp-by-nayara",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "coco-costa-rica",
+   "name": "Coco Costa Rica",
+   "country": "Costa Rica",
+   "page": "/stays/coco-costa-rica",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 1,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "798x1064",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "kura-boutique-resort",
+   "name": "Kura Boutique Hotel",
+   "country": "Costa Rica",
+   "page": "/stays/kura-boutique-resort",
+   "photos_on_file": 7,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 5,
+   "low_under_1000": 2,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1024x683",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 7 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "lapa-rios-lodge",
+   "name": "Lapa Rios Lodge",
+   "country": "Costa Rica",
+   "page": "/stays/lapa-rios-lodge",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1200x800",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "nayara-tented-camp",
+   "name": "Nayara Tented Camp",
+   "country": "Costa Rica",
+   "page": "/stays/nayara-tented-camp",
+   "photos_on_file": 5,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 4,
+   "low_under_1000": 1,
+   "landscape_1200plus": 3,
+   "hero_photo_size": "944x588",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 5 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tabacon-thermal-resort-spa",
+   "name": "Tabacón Thermal Resort & Spa",
+   "country": "Costa Rica",
+   "page": "/stays/tabacon-thermal-resort-spa",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 2,
+   "mid_1000_1599": 4,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "1920x1295",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 6 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "the-art-villa",
+   "name": "The Art Villa",
+   "country": "Costa Rica",
+   "page": "/stays/the-art-villa",
+   "photos_on_file": 9,
+   "hi_res_1600plus": 7,
+   "mid_1000_1599": 0,
+   "low_under_1000": 2,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "798x1064",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 9 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "the-atelier-villa",
+   "name": "The Atelier Villa",
+   "country": "Costa Rica",
+   "page": "/stays/the-atelier-villa",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 1,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "798x1064",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "lales-camp-expeditions",
+   "name": "Lale’s Camp & Expeditions",
+   "country": "Madagascar",
+   "page": "/stays/lales-camp-expeditions",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "2560x853",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "gorongosa-safaris",
+   "name": "Gorongosa Safaris Mozambique",
+   "country": "Mozambique",
+   "page": "/stays/gorongosa-safaris",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "2560x853",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "isla-palenque-resort",
+   "name": "Isla Palenque Resort",
+   "country": "Panama",
+   "page": "/stays/isla-palenque-resort",
+   "photos_on_file": 7,
+   "hi_res_1600plus": 2,
+   "mid_1000_1599": 5,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "2560x1707",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 7 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "babylonstoren",
+   "name": "Babylonstoren",
+   "country": "South Africa",
+   "page": "/stays/babylonstoren",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1400x931",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "coot-club",
+   "name": "Coot Club",
+   "country": "South Africa",
+   "page": "/stays/coot-club",
+   "photos_on_file": 6,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 6,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1440x1267",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 6 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "dulini-daunara-lodge",
+   "name": "Dulini Daunara Lodge",
+   "country": "South Africa",
+   "page": "/stays/dulini-daunara-lodge",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 1,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "951x630",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "dulini-leadwood-lodge",
+   "name": "Dulini Leadwood Lodge",
+   "country": "South Africa",
+   "page": "/stays/dulini-leadwood-lodge",
+   "photos_on_file": 5,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 5,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1024x682",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 5 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "dulini-moya-lodge",
+   "name": "Dulini Moya Lodge",
+   "country": "South Africa",
+   "page": "/stays/dulini-moya-lodge",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1134x713",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 2 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "dulini-river-lodge",
+   "name": "Dulini River Lodge",
+   "country": "South Africa",
+   "page": "/stays/dulini-river-lodge",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 2,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1134x713",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 2 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "gwe-gwe-beach-lodge",
+   "name": "Gwe Gwe Beach Lodge",
+   "country": "South Africa",
+   "page": "/stays/gwe-gwe-beach-lodge",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1100x733",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "le-quartier-francais",
+   "name": "Le Quartier Francais South Africa",
+   "country": "South Africa",
+   "page": "/stays/le-quartier-francais",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "1920x700",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 2 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "leeu-house",
+   "name": "Leeu House South Africa",
+   "country": "South Africa",
+   "page": "/stays/leeu-house",
+   "photos_on_file": 2,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 2,
+   "hero_photo_size": "1920x700",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 2 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "lekkerwater-dehoop",
+   "name": "Lekkerwater Beach Lodge",
+   "country": "South Africa",
+   "page": "/stays/lekkerwater-dehoop",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "1100x733",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "madikwe",
+   "name": "Madikwe Game Reserve",
+   "country": "South Africa",
+   "page": "/stays/madikwe",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1800x696",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "pods-camp-bay",
+   "name": "Pods Camp Bay",
+   "country": "South Africa",
+   "page": "/stays/pods-camp-bay",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1200x799",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "seseka-thornybush",
+   "name": "Seseke Tented Camp Thornybush Reserve",
+   "country": "South Africa",
+   "page": "/stays/seseka-thornybush",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1200x801",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "sirai-house",
+   "name": "Sirai House Laikipia Kenya",
+   "country": "South Africa",
+   "page": "/stays/sirai-house",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1800x1200",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tengile-mala-mala-kirkmans-kamp",
+   "name": "Tengile Mala Mala Kirkman's Kamp",
+   "country": "South Africa",
+   "page": "/stays/tengile-mala-mala-kirkmans-kamp",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "2730x1820",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tengile-mala-mala-rattrays-lodge",
+   "name": "Tengile Mala Mala Rattray's Lodge",
+   "country": "South Africa",
+   "page": "/stays/tengile-mala-mala-rattrays-lodge",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1400x788",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tengile-mala-mala-sable-camp",
+   "name": "Tengile Mala Mala Sable Camp",
+   "country": "South Africa",
+   "page": "/stays/tengile-mala-mala-sable-camp",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "2000x1333",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tengile-mala-mala-camp",
+   "name": "Tengile MalaMala Camp",
+   "country": "South Africa",
+   "page": "/stays/tengile-mala-mala-camp",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1400x933",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "tengile-river-lodge-by-mala-mala",
+   "name": "Tengile River Lodge by Mala Mala",
+   "country": "South Africa",
+   "page": "/stays/tengile-river-lodge-by-mala-mala",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "thornybush-reserve",
+   "name": "Thornybush Reserve",
+   "country": "South Africa",
+   "page": "/stays/thornybush-reserve",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1920x1080",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "pearl-resort-vahine-private-island",
+   "name": "Pearl Resort Vahine Private Island",
+   "country": "Tahiti",
+   "page": "/stays/pearl-resort-vahine-private-island",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 1,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "1200x675",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "camp-hwange-muddy-teak",
+   "name": "Camp Hwange & Muddy Teak",
+   "country": "Zimbabwe",
+   "page": "/stays/camp-hwange-muddy-teak",
+   "photos_on_file": 1,
+   "hi_res_1600plus": 1,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 1,
+   "hero_photo_size": "2560x853",
+   "hero_slides": "auto (library order)",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "Needs photos",
+   "next_step": "Has 1 usable; need 8-12 landscape (2000px+), incl. 4 for full frames"
+  },
+  {
+   "slug": "boluntiku-hotel",
+   "name": "Boluntiku Hotel",
+   "country": "Costa Rica",
+   "page": "/stays/boluntiku-hotel",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "noah-forest-by-tifakara",
+   "name": "Noah’s Forest by Tifakara",
+   "country": "Costa Rica",
+   "page": "/stays/noah-forest-by-tifakara",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "birkenhead-house",
+   "name": "Birkenhead House",
+   "country": "South Africa",
+   "page": "/stays/birkenhead-house",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "gwe-gwe-beach",
+   "name": "Gwe Gwe Beach",
+   "country": "South Africa",
+   "page": "/stays/gwe-gwe-beach",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "hermanus-private-residences",
+   "name": "Hermanus Private Residences",
+   "country": "South Africa",
+   "page": "/stays/hermanus-private-residences",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "jabulani",
+   "name": "Jabulani",
+   "country": "South Africa",
+   "page": "/stays/jabulani",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "kruger-shalati",
+   "name": "Kruger Shalati",
+   "country": "South Africa",
+   "page": "/stays/kruger-shalati",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "lepogo-lodges",
+   "name": "Lepogo Lodges",
+   "country": "South Africa",
+   "page": "/stays/lepogo-lodges",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "sashwa",
+   "name": "Sashwa River of Stars",
+   "country": "South Africa",
+   "page": "/stays/sashwa",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  },
+  {
+   "slug": "the-silo-hotel",
+   "name": "The Silo Hotel",
+   "country": "South Africa",
+   "page": "/stays/the-silo-hotel",
+   "photos_on_file": 0,
+   "hi_res_1600plus": 0,
+   "mid_1000_1599": 0,
+   "low_under_1000": 0,
+   "landscape_1200plus": 0,
+   "hero_photo_size": "",
+   "hero_slides": "none",
+   "hero_slide_count": 0,
+   "full_frames": 0,
+   "ai_upscaled_in_use": 0,
+   "cloudinary_folder": "",
+   "status": "No photos",
+   "next_step": "Get 8-12 landscape photos from the property (2000px+), place and people first"
+  }
+ ],
+ "images": [
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3.avif",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d8822aaaf_f1d672c79_67f97e533d937286ae5ea126_4_hac_carousel-1.avif",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b63507c3d_3abd23d1d_67f97e534317c8d8339ff492_4_hac_carousel-2.avif",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060.jpg",
+   "width": 5000,
+   "height": 3333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8745303d9_e9e810600_6835e7103e72084545ff7a02_Coral_0049.jpg",
+   "width": 1980,
+   "height": 1320,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fd792ada9_d905149a8_6835e61ccd632780526016f2_Restaurante_0002.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e38dac028_b546c67da_6835e66ca51a698394bb6fdb_Restaurante_0009.jpg",
+   "width": 1980,
+   "height": 2970,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a510d7ed4_cda97a4a7_6835e85d43c72e9535c8459f_Restaurante_0020_20_1_.jpg",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "aguas-claras",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025.jpg",
+   "width": 1920,
+   "height": 1438,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "amor-arenal",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82e39722d_fa5a2d772_68d951c7fe6e143996ff061f_07dafdee.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/663863394d6f"
+  },
+  {
+   "stay": "amor-arenal",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2af5567ef_9a2f1d5e5_68d951d31ef5efa57fa7f12d_8bd3e8e2.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/f78a4c78b195"
+  },
+  {
+   "stay": "arenal-springs-camp-by-nayara",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "arenas-del-mar-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f7fef1137_e77c39766_6a33b2260d0c6d3eb5f502dc_9dae54cf.webp",
+   "width": 1200,
+   "height": 899,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/aec72d36bf69"
+  },
+  {
+   "stay": "arenas-del-mar-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/edc0729db_aed4735d8_6a33b2f084637db7d000128c_2ab15c9c.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/247b70174329"
+  },
+  {
+   "stay": "arenas-del-mar-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2e82b21c0_8e75d1023_6a33b2f0c5ec20dfddf818a4_9d41fda9.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "arenas-del-mar-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2dd28ae0c_735f7405c_6a33b2f0c109ff8d4e396660_77c0a673.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/2dd28ae0c_735f7405c_6a33b2f0c109ff8d4e396660_77c0a673"
+  },
+  {
+   "stay": "arenas-del-mar-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6116bbd50_f0a5be029_6a33b2f0d1081f84feb24dc1_568dd087.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/6116bbd50_f0a5be029_6a33b2f0d1081f84feb24dc1_568dd087"
+  },
+  {
+   "stay": "babylonstoren",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7e335a13e_75608d470_6926f793cda01c98fa9d40c4_32_babylonstoren_yatzer-1-1400x931.jpg",
+   "width": 1400,
+   "height": 931,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/3a911e81fbfb"
+  },
+  {
+   "stay": "camp-hwange-muddy-teak",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0aee714bf_36a6b6428_6a05027fc59ae19ecfdebb6f_Camp-Hwange-Muddy-Teak-Banner-scaled.jpg",
+   "width": 2560,
+   "height": 853,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6b8801416_f93ad77aa_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/266bf81cc81c"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/88a842d23_786f7f675_694b0142079028a3e98ec068_Cape_20Cadogan_20-_20Stable_20Suites_20-_20Bedroom_201_.",
+   "width": 1200,
+   "height": 536,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/48f28d312_685e37f4d_694b00dc84b33f80354f1ee1_Cape_20Cadogan-Luxury_20Room_201_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1fe7bb436_6fabfad56_694b03a5a52dcfef39e1e0d1_CC_20Exterior_20and_20Pool-20jpg_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/1fe7bb436_6fabfad56_694b03a5a52dcfef39e1e0d1_CC_20Exterior_20and_20Pool-20jpg_20-_20Medium"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1ca75f51d_0d099053a_694aff37d53eb30dc6b48a04_CC_20Residence_20Kitchen-19jpg_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/1ca75f51d_0d099053a_694aff37d53eb30dc6b48a04_CC_20Residence_20Kitchen-19jpg_20-_20Medium"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0adbd0fb3_b68c8d49b_694b03a5a7d3ece077044cea_Cape_20Cadogan_20Boutique_20Hotel_20General_20Area_2033.",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/cape-cadogan-general-33"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/802303089_15d8b4d2d_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/802303089_15d8b4d2d_694b03710198dec40e2c586a_Cape_20Cadogan_20Exterior_2028_20-_20Medium"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3965ebe45_7805ef28b_694b03a5d655d2cb1bcbf16d_Cape_20Cadogan_20Boutique_20Hotel_20-_20Exterior_204_20.",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/e4bce3858b90"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9d9b34eb_b2c7b0801_694b031806ac9fea2ec05f85_Cape_20Cadog_20an_20Exterior_2027_20-_20Medium.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/e9d9b34eb_b2c7b0801_694b031806ac9fea2ec05f85_Cape_20Cadog_20an_20Exterior_2027_20-_20Medium"
+  },
+  {
+   "stay": "cape-cadogan-boutique-hotel",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a0d509745_b27ac00e3_694b02c47d53be7e8c9772e2_Upper_20Union_20Restaurant_20-_20Outside_20Dining_20-_2.",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/cape-cadogan-upper-union-outside-dining"
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6d518e382_cde5a61ca_68818d3a312ae98641653633_Mapogo_20Villa.webp",
+   "width": 1920,
+   "height": 1367,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f1c88546_7afcdebd6_68818c8b530c4384c7bb9f08_Karula_20Entrance.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c0b4edbed_97326bf2b_68818c858dd09a96cc4a49ef_Karula_20Pool_20Deck.webp",
+   "width": 1920,
+   "height": 1582,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/314b89a2f_05229f907_68818d3a312ae98641653633_Mapogo_20Villa.webp",
+   "width": 1920,
+   "height": 1367,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/034297835_26d0d7770_68818f155608232816cab004_Mvula_20Pool_20Deck.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e13a457d9_f9834ef0a_68818ea13ac1422bb8a8933c_Mvula_20Bedroom.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a137ecde4_5fb0d0103_68818eb3232f0202434e3660_Cheetahplains_mapogo_bedroom.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3f12fd012_9e4969f71_68818e155c4227683d1eaf96_Mvula_20Dining_20and_20Bar.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/816a70f68_b3b6c15c3_68818e18660285d2c647a62f_Mvula_20Formal_20Lounge.webp",
+   "width": 1920,
+   "height": 1284,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/961db55a5_82d690916_68818e1a81843fe0469adbf4_Mvula_20Boma_20Dinner.webp",
+   "width": 1920,
+   "height": 1281,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "cheetah-plains",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2c0ce8215_b1cc7391c_68818d42e0ecad9671ec4f3d_Mapogo_20Formal_20Lounge_20Fireplace_20.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "coco-costa-rica",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/60b6915dc_8605d34a2_69320063946516435a7ea662_Image.jpg",
+   "width": 798,
+   "height": 1064,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/12340c5c4_a4065551d_69b15defff072efbbc8a3a56_Port-Boathouse-Coot-club6.jpg",
+   "width": 1440,
+   "height": 1267,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/e5155e45cd9e"
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4c8b812e6_17c17aaae_69b15f260e516e3aa4fb9334_1-1.jpg",
+   "width": 1440,
+   "height": 1267,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/31495c9b408d"
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/695d79b66_10a7501a1_69b15f26898a97d3163d7f9a_2-1.jpg",
+   "width": 1440,
+   "height": 1267,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/af548d8a5_f0db608a0_69b15f25b7046c9a1024824d_3-1.jpg",
+   "width": 1440,
+   "height": 1267,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fb37f9e3c_dd04fd09f_69b15f26cca72f75698cb434_Port-Boathouse-Coot-club5.jpg",
+   "width": 1440,
+   "height": 1267,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "coot-club",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2a59d1d1e_5cab49936_69b15f264cd19a6d89e1a901_Port-Coot-Club-Bathroom.jpg",
+   "width": 1441,
+   "height": 1260,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "dulini-daunara-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c5e1d835d_f4ba7791b_6a2ad77b73d7c53e1825a0b3_b18f51d2091c312f0ce980dc0799e0860d349308.avif",
+   "width": 951,
+   "height": 630,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/95b30dbe4944"
+  },
+  {
+   "stay": "dulini-leadwood-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f97c06e6_9b9ff07ce_6a4fc3edf28f7c3e0b3de410_leadwood-lodge.jpg",
+   "width": 1024,
+   "height": 682,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/c5c1e85cfd45"
+  },
+  {
+   "stay": "dulini-leadwood-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6fbb5683a_0ac8c03c5_693dd2dcf2775c0ae3befbc5_a6bc44_714f31c5f3ca4cd7afef248df0dfadfe_mv2.avif",
+   "width": 1053,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/580784a6669c"
+  },
+  {
+   "stay": "dulini-leadwood-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c84169f69_3a93f937a_693dd2f1b661bfc99729b335_a6bc44_f4f017921dc04f63a81d325e2cf85895_mv2.avif",
+   "width": 1069,
+   "height": 712,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "dulini-leadwood-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37f58be8b_fe280cfba_693dd2f1c2d2d06d8efc927f_a6bc44_1cd84a2c420348bcbb5d2c8527091f2f_mv2.avif",
+   "width": 1069,
+   "height": 712,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "dulini-leadwood-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a1d75fc1c_8dd009b1d_693dd2d22105e6cbeff79925_67d1c5_bc703493f08140509082c370e0269173_mv2.avif",
+   "width": 1069,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "dulini-moya-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e8ac8715_b256f5637_693dd205ed64c5b7e2fa1192_67d1c5_4045b7bae9a0422eba3a0a0762944cb7_mv2.avif",
+   "width": 1134,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/b33934326fce"
+  },
+  {
+   "stay": "dulini-moya-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/16464bf20_7603e808c_693dd205ed64c5b7e2fa1192_67d1c5_4045b7bae9a0422eba3a0a0762944cb7_mv2.avif",
+   "width": 1134,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "dulini-river-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/07dbc9135_1a396a21e_693dd205ed64c5b7e2fa1192_67d1c5_4045b7bae9a0422eba3a0a0762944cb7_mv2.avif",
+   "width": 1134,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/14b70ed983dd"
+  },
+  {
+   "stay": "dulini-river-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d03797f70_046ed0114_693dd205ed64c5b7e2fa1192_67d1c5_4045b7bae9a0422eba3a0a0762944cb7_mv2.avif",
+   "width": 1134,
+   "height": 713,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg",
+   "width": 1930,
+   "height": 1285,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7fb0449dc_606a56761_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg",
+   "width": 1930,
+   "height": 1285,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34f1c8e06_52680f0f9_694b0ebccc2fad7ac7a3142e_Ellerman_House_Exterior.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cba6ff11c_2623a8b85_694b0ee3b3f5f6003a2ba5c0_Ellerman_House_Lounge.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47851c04d_58273fd12_694b0ee3fbda8620f785633d_Ellerman_House_View.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2d0eefc7_74e8b959e_694b0f0ff35ddeab6f3886bc_Ellerman_House_Spa.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cec4097ac_dae8b3011_694b0f25f703099825b3e3d5_Ellerman_House_Bar.jpg",
+   "width": 1930,
+   "height": 1234,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271ef56bb_8512946e7_694b11a9212ec6a0aee995df_Ellerman_House_Dining.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ellerman-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2534113a7_a0d3d4385_694b10705b7c0eb8703ee112_Ellerman_House_Wine_Cellar.jpg",
+   "width": 1930,
+   "height": 1286,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "gorongosa-safaris",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6b0496dd2_eed28bddb_6a04c4c62efd1011cc8a04ef_Gorongosa-Banner-scaled.jpg",
+   "width": 2560,
+   "height": 853,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/36b678cab_7a65f2b65_69a19f9b788b5c3c11a1b86a_grootbos-accommodation.jpg",
+   "width": 750,
+   "height": 500,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e272c994_24fe3d887_69a577c76a3bd64adee119f2_grootbos-villa-2-exterior-16.jpg",
+   "width": 1920,
+   "height": 1278,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8be97ca88_17b60870f_69a57602b7bc1c0146439b54_grootbos-web-forest-lodge-accommodation-suite-bedroom.j",
+   "width": 2500,
+   "height": 1666,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/804d1db38_90693fe36_69a574f9970e4982f150b394_grootbos-web-garden-lodge-lounge.jpg",
+   "width": 2500,
+   "height": 1664,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c680578c6_85d08be17_69a57567fe7560355e4ab2a4_intricate-stonework-and-thatch-roof-define-garden-lodge.",
+   "width": 2048,
+   "height": 1024,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "grootbos-private-nature-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7a8053d1_e180ed836_69a5770aa4641f453e487e38_web-grootbos-accommodation-villa-exterior-01.jpg",
+   "width": 2000,
+   "height": 1334,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "gwe-gwe-beach-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b83fb0b4e_735804a3a_692d9980c8d476bdbf775601_Gallery-1100x733_0011_Aerial-1.webp",
+   "width": 1100,
+   "height": 733,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/9ac4ea21376e"
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/becf98b6b_e1faa873b_6a2fc055791c16ac71707941_BEACHFRONTCASITAS-SLIDER1-1-scaled.jpeg",
+   "width": 2560,
+   "height": 1707,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/560e40c5f_4885921cf_6a2fc1a2752df329aafb85e4_ISLANDWELLNESS-SLIDER1-1.jpeg",
+   "width": 2341,
+   "height": 2341,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f17070d67_45e4b78a8_6a2fc1a2cc99f44812be852e_IslaPalenque.webp",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2afda1856_00d14cccb_6a2fc1a2044dd4646dd67c04_Pool.jpg",
+   "width": 1000,
+   "height": 751,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/097a4ce592dd"
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bdf18bf9d_6ec82569e_6a2fc1a21ba387f55686bb5a_Relax-into-the-Rainforest-Rhythm.jpg",
+   "width": 1000,
+   "height": 751,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4ff6e0764_f37d1cb8f_6a2fc1a21769e3b3269e929b_Rooms-with-a-View.jpg",
+   "width": 1000,
+   "height": 751,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "isla-palenque-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/59b86a530_78a5770de_6a2fc1a23ad899f6ecc381ad_Steps-from-the-Beach-1.jpg",
+   "width": 1000,
+   "height": 751,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a119d498_73f956145_6a33a770c92adf24ef3a82a7_photo-gallery-32-Relaxing-at-the-Pool-3.jpg",
+   "width": 1024,
+   "height": 683,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/4f7bf3546922"
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ed6795bfa_7bb2f70ba_6a33a857957e26af29724494_photo-gallery-46-Junior-Suite-2.jpg",
+   "width": 1024,
+   "height": 683,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5ad01056d_623a3f3cf_6a33a85b3cfb698e0c97da5d_photo-gallery-20-Suite-2.jpg",
+   "width": 1024,
+   "height": 683,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3c1a01d3c_b8a5899b5_6a33a860d1081f84feaa6da8_photo-gallery-27-Rooftop-1.jpg",
+   "width": 683,
+   "height": 1024,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d33dafe84_3de5260fb_6a33a7c40345e6b43321d0d2_photo-gallery-41-Master-Suite-2.jpg",
+   "width": 1024,
+   "height": 683,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/228cdb148_e3a068a26_6a33a7a29f44bac8b7533a35_photo-gallery-33-Relaxing-at-the-Pool-2.jpg",
+   "width": 1024,
+   "height": 683,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/54502c86bc14"
+  },
+  {
+   "stay": "kura-boutique-resort",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/66e537825_69c59a3e4_6a33a8a66946260a107ae9e1_photo-gallery-23-Spa-3.jpg",
+   "width": 683,
+   "height": 1024,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/66d3ea9b8_6efc93a63_69fdb43b2e2ec14d02809ba0_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Aerial-124-1-.",
+   "width": 2560,
+   "height": 1706,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9ff6aeb8_fda52004c_69fdc3525c8f8a44d986911a_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Bedroom-013-3.",
+   "width": 2560,
+   "height": 1810,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8b3640ac4_7b3c751ee_69fdc249a6268fabbe88684f_Fort-House16.avif",
+   "width": 2000,
+   "height": 1293,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bb22fda10_2aac34dd4_69fdc352f8c75d10e44430b6_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Deep-soaking-.",
+   "width": 2560,
+   "height": 1706,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/720301928_bbdbc3109_69fdc35296e6be40cc556d95_KWANDWE-PRIVATE-GAME-RESERVE-Melton-Manor-Dining-table-.",
+   "width": 2560,
+   "height": 1707,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/baab07bca_e4a11a09c_69fdc352dcb6f1f5d8f50dfa_MMM8033.avif",
+   "width": 2000,
+   "height": 1331,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ca833fc0e_ad34e169a_69fdc3523906db07ec2b8202_MMM8608.avif",
+   "width": 2000,
+   "height": 1331,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "kwande-private-game-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4984d196b_edbd4fc1e_69fdc3521b023a69b631ff68_MMM8465-3.avif",
+   "width": 2000,
+   "height": 1331,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2fbc4fa98_d2b518ad4_69d14aef16077934f9b31e7b_2bd25adc.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/eb9a2c438cce"
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/00d98912a_f3c96de24_69d8b273b8e07f2628552bc7_LACL-LaClLodge-Livingareawithafire.JPG",
+   "width": 1500,
+   "height": 1001,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/f8d51b7bba96"
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6e88db6a5_0fa9cae74_69d8b273426d42c86af69b17_LACL-LaClLodge-Decorativedetailsinthefoyer.JPG",
+   "width": 1500,
+   "height": 1001,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6b910d29_8e437b1c2_69d8aa6180d573dbe58fe7d0_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+   "width": 2560,
+   "height": 1707,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/af1dd9cb3_de54eaf78_69d8a7bacaf384d2c4331c91_LACLE-LaClVillage-Grange-En-suiteBathroom.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5dfa2a570_d71b7fa06_69d8aa54352dc7b3db254dcf_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+   "width": 2560,
+   "height": 1706,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9bf271131_c2e4de4b1_69d8b1291b17712e38677277_LA_20CL_C3_89_20-_20La_20Cl_C3_A9_20Lodge_20-_20Lounge_.",
+   "width": 5012,
+   "height": 3341,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fa13a23a6_8839b9754_69d894da5b6ce38f3fa86dbb_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Domain_20-.",
+   "width": 800,
+   "height": 536,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f892f05df_a4e3884f1_69d8aac94a5f06d5b744590d_LA_20CLE_20-_20La_20Cl_C3_A9_20Village_20-_20Galerie_20.",
+   "width": 3822,
+   "height": 2539,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1d6ed8882_5c9bdb88e_69d8b112d84c5c651f767468_LA_20CL_C3_89_20-_20La_20Cl_C3_A9_20Lodge_20-_20Cozy_20.",
+   "width": 5162,
+   "height": 3441,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-cle",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6e55915ca_81c11557d_69d8aaeafae203613d6c11ce_LACLE-LaClVillage-Galerie-En-suitebathroom.jpg",
+   "width": 1500,
+   "height": 998,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "la-residence",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/42e43bd54_c1bd724be_69d15519ccf130f3f7ab50e5_60e42a01.webp",
+   "width": 1200,
+   "height": 674,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/c0d8184f1a24"
+  },
+  {
+   "stay": "la-residence",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/602b811ae_49aee9677_69d1553272ae6e8cacdfbc8b_e5cac4fc.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/b93a7228dc1a"
+  },
+  {
+   "stay": "la-residence",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/35f6be086_faa9fb9ad_69d1553204ef5c4eff9153f6_0a18e1c6.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/35f6be086_faa9fb9ad_69d1553204ef5c4eff9153f6_0a18e1c6"
+  },
+  {
+   "stay": "la-residence",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3715a0eab_b3f251dd8_69d155327852a7b927686e2b_3327a19a.avif",
+   "width": 1200,
+   "height": 701,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/3715a0eab_b3f251dd8_69d155327852a7b927686e2b_3327a19a"
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3251b8987_a7c3251be_688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d63280581_7f8658f84_688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/06fd6fa6b_7a5db0146_688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b3b49ee94_2dba371db_688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d14ea904c_b1e6b6f1c_688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3f86c1fdf_8b52cacc6_688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f969f8de_5b053f155_688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2.webp",
+   "width": 1920,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a43d2be8d_cb1e2aeaa_688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8719d62cf_e4e189bdc_688fe9f9629a2784c13325be_Lalibela_Kichaka_Livingroom2.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/93b1f04c8_a1f9e6ba0_688fe90e5b562db6bb680638_Lalibela_Inzolo_Livingroom.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lalibela-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1feed142_f9806b9c4_688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio.webp",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lapa-rios-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b9592cd63_9c4b191c5_697c95f55345b812fe4cbb48_Lapa-Rios.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/78b00c907f30"
+  },
+  {
+   "stay": "le-quartier-francais",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e04851cdc_b4d2e8028_6a2310f4ef59a2da1dc0d1c3_5f2d4da0cec24-banner-01.jpg",
+   "width": 1920,
+   "height": 700,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "le-quartier-francais",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f9ff123b1_3037249a0_69d15316ccff214dd1cf3759_1ca898bd.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/303be6a8b425"
+  },
+  {
+   "stay": "leeu-estates",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9cf531c35_a37c8b73b_69d153067a3dcbb4cc167d9d_6d3a1ea3.webp",
+   "width": 1200,
+   "height": 799,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/ba4108aaeaa2"
+  },
+  {
+   "stay": "leeu-estates",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/10e20a668_fbfca6cc2_69d15316ccff214dd1cf3759_1ca898bd.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leeu-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg",
+   "width": 1920,
+   "height": 700,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leeu-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a9b96114_2c3fb2696_69d15316ccff214dd1cf3759_1ca898bd.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lekkerwater-dehoop",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fc4662064_2e1b2b64f_692eda4582bc10b883e4b4a3_Gallery-1100x733_0010_03-Lekkerwater.webp",
+   "width": 1100,
+   "height": 733,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/27792d3e47f8"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8d8acd923_d87e3c47d_6a17f92b6a10ed608c502f29_Leopard_Hills_Aerial_DRP09_04-1351x900.jpg",
+   "width": 1351,
+   "height": 900,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/f770a3b6cb21"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6dd943987_eb9f85156_6a17fa28070156fbb2a36309_Leopard_Hills_Suite_Deck_DRP09_04-1900x1140-1-1500x900.",
+   "width": 1500,
+   "height": 900,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/fb32fca3ce7c"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/985a716bd_ba8514e3c_6a17fa696fa0aacf36c8abd4_leopard-hills-mvr-2024-safari-dining-bush-breakfast-08-.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/leopard-hills-bush-breakfast-08"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e33c21643_6b528f85a_6a17fac89f26e0be24b0d3dd_leopard-hills-mvr-2024-accommodation-suite-15-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9598d349_72b664b5c_6a17fac846bd08018fd88301_leopard-hills-mvr-2024-accommodation-suite-02-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/leopard-hills-suite-02"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1b0d512ec_aa661d76c_6a17fac8ca04802859a49891_leopard-hills-mvr-2024-accommodation-suite-07-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/408f80456_f86c6487b_6a17fac86f7069ecbc1e2b73_leopard-hills-mvr-2024-accommodation-suite-13-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/df6b28fef_1873f14ab_6a17fac8299ebed0396c6e16_leopard-hills-mvr-2024-accommodation-suite-23-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b93d4d00e_143766583_6a17fac8bd29472343b1b537_leopard-hills-mvr-2024-accommodation-suite-27-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/leopard-hills-suite-27"
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b3c094704_324a32d64_6a17fac86e860fb6f2d42657_leopard-hills-mvr-2024-accommodation-suite-24-1350x900.",
+   "width": 1350,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "leopard-hills",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5d2d7d1fb_362babe43_6a17fac80994d0963661aa62_leopard-hills-mvr-2024-accommodation-suite-21-1349x900.",
+   "width": 1349,
+   "height": 900,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif",
+   "width": 1920,
+   "height": 1282,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae53a68fb_bb7b63fcc_6833b696b37e3f9a4432c9bb_Akita_20Female_20Kruger.jpg",
+   "width": 2397,
+   "height": 2996,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a19e01159_46336d9b2_684827d2599f8a52c4468548_Lion_20Sands_20_River_20Lodge_3__20Luxury_20Suite_Twin_.",
+   "width": 1920,
+   "height": 1223,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681249520_e60be0071_6833b6168ae6ec31a572a5e2_Lion_20Sands_Safari_4_Game_20Drive-3.jpg",
+   "width": 1335,
+   "height": 2000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/597868105_86ad58e9e_6833b86790c60fba011752cf_Tinyeletei_20Treehouse_20_1_.jpg",
+   "width": 6720,
+   "height": 4480,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9880cb4f3_e5bfb4e83_6833b651d24c86c11207d288_Lion_20Sands_Safari_4_Bush_20Walk-3.jpg",
+   "width": 708,
+   "height": 1064,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/06f2e4be8_278fdbab5_68350c0f7aca266b0957ceab_IVORY_20FISH_20EAGLE_20OUTSIDE_20SHOWER.jpg",
+   "width": 6720,
+   "height": 4480,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.",
+   "width": 1920,
+   "height": 1281,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_.jpg",
+   "width": 6582,
+   "height": 4388,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lion-sands",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1.jpg",
+   "width": 6720,
+   "height": 4480,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681cbfa0b_d1752420d_682dcf2de25f02c9a0908c21_Londolozi__2018_Londolozi-Game-Reserve_-Private-Granite.",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/19f194a5f_877070f71_683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView_20_1_.",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/39ba130c1_e1f290e07_683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck_20_1_.jpg",
+   "width": 1920,
+   "height": 1078,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cdf86ead6_674f9b2b6_683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar_20_1_.jpg",
+   "width": 1920,
+   "height": 1262,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3b33103f1_66aced96b_683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom_20_1_.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/df5a72e77_3e04e1114_683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room_20_1_.jpg",
+   "width": 1920,
+   "height": 1282,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2cfca10df_198af2b8e_683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool_20_1_.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg",
+   "width": 1920,
+   "height": 1295,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "londolozi-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "madikwe",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ba95066f2_54a108329_69bd2e3dc69e8abe6870a01f_home-page-top.webp",
+   "width": 1800,
+   "height": 696,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "monwana-thornybush",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ceda73052_67149f1a3_6930486e36272055f8bc2739_monwana-thornybush-exterior.jpg",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/293f3bdae_2f3e395df_68ae14d4259cf380a761ef79_lunch-outside-on-the.jpg",
+   "width": 1400,
+   "height": 933,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/d026717e2b0d"
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view.jpg",
+   "width": 1920,
+   "height": 1245,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f78cee54e_fb1415e43_683f310fd9479473be31672b_Morukuru_20Farm_20House_20-_20bedroom.jpg",
+   "width": 1920,
+   "height": 1274,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/271a2cb0f_1af13c825_683f3111a2d6323598c2464b_Morukuru_20Farm_20House_20-_20bedroom-patio.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a026f7756_2903fee1a_683f31166bf32ab408778838_Morukuru_20Farm_20House_20-_20bathroom-en-suite.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6286ca2a7_fcf53a865_683f3119d139b93acfcfae36_Morukuru_20Farm_20House_20-_20bar_20and_20living.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "morukuru-farm-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah.jpg",
+   "width": 1400,
+   "height": 933,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah"
+  },
+  {
+   "stay": "nayara-gardens",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "nayara-gardens",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3236e2148_9b49bf727_6a350f602a6cdc3d3f948d77_f38c1e8d.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/61f03c72b32a"
+  },
+  {
+   "stay": "nayara-gardens",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7d4b82d22_ad15dfd73_6a350f644340b50bc731a477_d5ac07fe.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/7d4b82d22_ad15dfd73_6a350f644340b50bc731a477_d5ac07fe"
+  },
+  {
+   "stay": "nayara-gardens",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b09745625_884285c6e_6a350f67c039057ad72e7542_eda80ea5.avif",
+   "width": 1200,
+   "height": 675,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/b09745625_884285c6e_6a350f67c039057ad72e7542_eda80ea5"
+  },
+  {
+   "stay": "nayara-gardens",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/659803932_528d1da49_6a350f62e16a19b5fb968e6c_7c7f0472.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/659803932_528d1da49_6a350f62e16a19b5fb968e6c_7c7f0472"
+  },
+  {
+   "stay": "nayara-tented-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e8df2c2e3_bf665885c_6a1f3d748a1e0715bb30166b_6a14bb2dbd7f9a491f3beefd_our-resorts-gardens-h-1jpg.web",
+   "width": 944,
+   "height": 588,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/c0a9d0c9a0da"
+  },
+  {
+   "stay": "nayara-tented-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/69a678699_62f139cf5_6a3534904706410b85c4422d_a4c499c2.webp",
+   "width": 1200,
+   "height": 753,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/a6161dc8e9a6"
+  },
+  {
+   "stay": "nayara-tented-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1d903eebb_c72ad729e_6a3534971cf47d89bba51887_d746c634.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "nayara-tented-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9c783a0b9_715a2d2ef_6a3534925fc639a7970696ee_8a9e7a67.webp",
+   "width": 1200,
+   "height": 1799,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "nayara-tented-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5dc13ca4e_c339c415e_6a35349ec71d7a486689e451_b09342b0.avif",
+   "width": 1200,
+   "height": 776,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fca4f8e26_f9c8f8b1a_691f03a1655e9ee4ff173c20_ngala-safari-lodge-by-and-beyond.jpg",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/301472440_1bf9b77a5_6942909e4d2140c1851a2362_South-Africa-Ngala-Safari-Lodge-Outdoor-view-of-evening.",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c0b19a074_b6eacfc54_69cb69806a94d0b9cd9bc021_South-Africa-Ngala-Safari-Lodge_20Family.jpg",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/570db7aa5_4ebd86158_69cb69aa9dad32dc15977615_South-Africa-Ngala-Safari-Lodge-View-of-outdoor-bar.jpg",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/87c23fd19_6342a8d70_69cb69db6425d81175343402_South-Africa-Ngala-Safari-Lodge-cottage-bedroom.jpg",
+   "width": 3000,
+   "height": 1910,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/08b54136d_3245ced35_69cb6a760398a7eb1ee038eb_South-Africa-Ngala-Safari-Lodge-boma-dining-lantern.jpg",
+   "width": 1500,
+   "height": 1001,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/08b54136d_3245ced35_69cb6a760398a7eb1ee038eb_South-Africa-Ngala-Safari-Lodge-boma-dining-lantern"
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/243ba8bb3_b624da555_69cb6bf5399466318301fbb2_South-Africa-Ngala-Safari-Lodge-Family-Villa-bedroom.jp",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/574ab014e_86b930645_69cb72111b59e6b9956aceb9_South-Africa-Ngala-Safari-Lodge-Family-Villa_20deck_20v.",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "ngala-safari-lodge-by-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7bcfc6dc9_8748253bb_69cb6ff33f1e806322db93ac_South-Africa-Ngala-Safari_20Lodge_20cottage_20verandah.",
+   "width": 3000,
+   "height": 2002,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5829030fb_7167f76bf_697cc5c05df524de05820911_Pacuare-Hero-image.jpg",
+   "width": 400,
+   "height": 500,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d02af815f_0f00d8d4b_697cca3f921f492eb4bcd58d_canopy-suite-aerial-view.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/347f5f9ca93f"
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2fb432d1f_33c53028f_697cca3ab935e1a24a7882ab_canopy-suite.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/2fb432d1f_33c53028f_697cca3ab935e1a24a7882ab_canopy-suite"
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/324fcaac2_98e6f966c_697cc97f1a0de2abc8be6e65_jaguar-villa.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/324fcaac2_98e6f966c_697cc97f1a0de2abc8be6e65_jaguar-villa"
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d30cacabf_002369afa_697cc89a28f3c62eb3616205_linda-vista-suite.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/d30cacabf_002369afa_697cc89a28f3c62eb3616205_linda-vista-suite"
+  },
+  {
+   "stay": "pacuare-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5df5ae751_0a5753300_697cc7eef803dba34e707653_River-Suite-laybed.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/5df5ae751_0a5753300_697cc7eef803dba34e707653_River-Suite-laybed"
+  },
+  {
+   "stay": "pearl-resort-vahine-private-island",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif",
+   "width": 1200,
+   "height": 675,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/3ae7248536c2"
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ecf1a8dd7_e0e5a8c1c_6841a2155a189971caf9612b_South-Africa-Phinda-Homestead-Guest-area-pool-loungers-.",
+   "width": 1920,
+   "height": 1620,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2baa22ec8_f54b9345c_69cb7784d79618f31c224af7_South-Africa-Phinda-Homestead-Guest-area-lounge.jpg",
+   "width": 3000,
+   "height": 1925,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1cb864ab_ea61f951c_69cb77cd4188464f6234dbe4_South-Africa-Phinda-Homestead-Rooms-Suites-bathroom.jpg",
+   "width": 3000,
+   "height": 1922,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2b93bf4f7_ede28eaf0_69ccb6bf2532abd158a8c25e_South-Africa-Phinda-Homestead-Guest.jpg",
+   "width": 3000,
+   "height": 2002,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2ad5bb05_cda3d3b83_69ccb6e5e6c022ada12c034f_Phinda-Homestead-Guest-area.jpg",
+   "width": 3000,
+   "height": 2002,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c14e929c2_2db543e0e_69ccb74374b91913854abe85_South-Africa-Phinda-Homestead-Guest-area-pool-guest.jpg",
+   "width": 3000,
+   "height": 2002,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/42b6a48f8_092c8df2e_69ccb772af83f16acf6c98bd_Phinda_20Homestead_20Guest_20area_20gym.jpg",
+   "width": 3000,
+   "height": 2002,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "phinda-homestead-by-and-beyond",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1843c88b6_294ddb23f_69ccb7c7f529723b967fd9e9_South-Africa-Phinda-Mountain-Lodge-Outdoor_20Sleeping.j",
+   "width": 3000,
+   "height": 2000,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "pods-camp-bay",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/96403f687_3a5c20339_6931720e061d8cbaa4a5d0ee_POD-Hotel.webp",
+   "width": 1200,
+   "height": 799,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/206b3bb0bced"
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/aa6b37a21_18158c8d5_69d157181b48b72def1b99cc_1bdfbb52-1.avif",
+   "width": 1200,
+   "height": 801,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/5f68608ce82e"
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9df5aa837_a994aabd7_69d1573ff03dd689a3bfce77_3c0ae5f0.avif",
+   "width": 1200,
+   "height": 801,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/690d7acf7767"
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/66024db93_760d17536_69d1573f7fff2bf853da546f_b0463743.avif",
+   "width": 1200,
+   "height": 1212,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/66024db93_760d17536_69d1573f7fff2bf853da546f_b0463743"
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ee5880651_46bfb0e22_69d1573fedeb09d8a8484787_0e9c1151.avif",
+   "width": 1200,
+   "height": 801,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/ee5880651_46bfb0e22_69d1573fedeb09d8a8484787_0e9c1151"
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5ae116372_d6ff4b790_69d1573fbe081b9432e097cb_ba6ab252.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e114988fd_71b35ce73_69d1573f1e14cd492e7d90b2_7d333f99.avif",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "royal-malewane",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/36dca67c4_597023608_69d1573fdd780f23a261dcfd_fc8560ec.avif",
+   "width": 1200,
+   "height": 695,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/36dca67c4_597023608_69d1573fdd780f23a261dcfd_fc8560ec"
+  },
+  {
+   "stay": "samara-karoo-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9475aecb3_ea2697af9_6979d68d6c0362af285bcd54_Samara-plains-camp-dining-mess-tent-honest-work-maike-m.",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "samara-karoo-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/727b45176_d2b152f06_6979d8919ff87de5aad81ff3_karoo-amenities.webp",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "samara-karoo-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/53c1f2830_bec364547_6979d8917501c190be3b406f_karoo-sleeps-guests.webp",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "samara-karoo-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f9c37532_8ef3ea9ca_6979d892ff64bd4e33c5b3da_Karoo-suite-slider-img.webp",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled.webp",
+   "width": 2560,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4283d16a6_c5c90f7ae_6a3c1555df0c3f2d004199b8_23-Room-to-Relax.webp",
+   "width": 2880,
+   "height": 1920,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b85569aa_22d0a67f6_6a3c15555bc1a5f0646befa0_10-Experience-Learn-Connect-_-Relax.webp",
+   "width": 2880,
+   "height": 1920,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By.webp",
+   "width": 2881,
+   "height": 1921,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3558dfead_3f875c71f_6a3c155532926bb03be3cd37_A_DANI_SPACES0709.webp",
+   "width": 1200,
+   "height": 800,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "senda-monteverde-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cf87ec4de_29a7ce55b_6a3c1555b41ee5d11f6e7af5_28-A-Place-to-Unwind.webp",
+   "width": 2880,
+   "height": 1921,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "seseka-thornybush",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/639f68bc3_f2c72ca8e_68d598fb8c62cd764b79f24a_1869335c.webp",
+   "width": 1200,
+   "height": 801,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e2b5a9049_3c6ebf498_6985eed23a2ece9bb5e2b850__DSC0397.webp",
+   "width": 1600,
+   "height": 1070,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b33f9c716_80ac67848_69cf70352224b2c3b7563d5e_SingitaBouldersLodge_SuitePool.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/1f9f3b761520"
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e18339d12_3f60cf9c3_69cf6f9ed50cf3c90ea4d41a_SingitaBouldersLodge_MainLounge_AdriaanLouw.jpg",
+   "width": 1500,
+   "height": 994,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0c31713de_919f11340_69cf6c575a16676b30421895_Singita_20Boulders_20Lodge_Bush_20Suite_Ross_20Couper.j",
+   "width": 2560,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/31234e196_ebe695485_69cf6cc1a54b83280e24ed80_Singita_20Boulders_20Lodge_Meditation_20on_20Suite_20De.",
+   "width": 4704,
+   "height": 3136,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4a5e2e857_fad2fde5a_69cf6fbd12aae166fd9b2bf4_SingitaBouldersLodge_RiverSuiteBedroomwithwhitechair_Ad.",
+   "width": 1500,
+   "height": 994,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9e3d32934_bc75fc7bd_69cf6ce24d6baf6c1010eba9_SingitaBouldersLodge_FoodandWine.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/9e3d32934_bc75fc7bd_69cf6ce24d6baf6c1010eba9_SingitaBouldersLodge_FoodandWine"
+  },
+  {
+   "stay": "singita-boulders",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/19fd2ec03_231207cd8_69cf710f80a9bbbe1129c34e_SSS_LODGE_Boulders_Lodge_Fitness_Centre_Ross_Couper_AR5.",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/440a195bc_40dba4e58_6985eb1225bd365a2a01e8c6_Singita_20Castleton_20_1_.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb8296b5c_32dd7c378_699c4f34aa8ab3549fc9f019_Singita_20Castleton_20_4_.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1f6fc804b_0c363640b_699c4f348ea150c4a337280f_Singita_20Castleton_20_5_.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7ff33a2cf_917d8affe_699c4f34e225f859a4738860_Singita-Castleton-Bathroom-scaled.webp",
+   "width": 1600,
+   "height": 1025,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/04a4dd5e5_76fecaa46_699c4f2d4f4b5912e5a8368f_Singita-Castleton-Bedroom-scaled.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2a9f106b6_38da82060_69cf69f000a61aa09f7edeb6_Singita_20Castleton_Boma_20Dinner.jpg",
+   "width": 2560,
+   "height": 1707,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/79f02afeb_6250c3f07_69cf6999c5f82c3079694419_Singita_20Castleton_Verandah.jpg",
+   "width": 2560,
+   "height": 1225,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-castleton",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7ec6baa8b_526b8039d_69cf69b4d79c72d6ce663be3_Singita_20Castleton_Tennis_20Courts_20and_20Wellness_20.",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/55ef8e4ee_3073893b6_68632606a61d2c28ff4d06d2_705e0c0592440c7ca5452b9829ddedab114ced70.jpg",
+   "width": 2880,
+   "height": 1920,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ddf05d404_147f194f4_69d3c054677c510562b181fc_SingitaEbonyLodge_Pool1.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/cddbdc9f760c"
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/07ff1e779_5eb201b5c_69d3c43fa65b9c9966e9e67f_Singita_20Ebony_20Lodge_Deck_20at_20Sunset_Ross_20Coupe.",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/17c60ebdd_3698a3099_69d3c7458e35c653b60e9a16_SingitaEbonyLodge_ExteriorSuiteDeck_EmmaJackson.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/17c60ebdd_3698a3099_69d3c7458e35c653b60e9a16_SingitaEbonyLodge_ExteriorSuiteDeck_EmmaJackson"
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper"
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d2a7accdc_eb86ca6d9_69d3bcf757167d960c599eeb_Singita_20Ebony_20Lodge_Wine_20Cellar.jpg",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ff88d7e7c_b677968db_69d3cb6dcf711eac6e466fd6_Singita_20Ebony_20Lodge_Dining_20Deck_Ross_20Couper.jpg",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5fd87b326_56e07676b_69d3ca7f473ac7c7135e502a_SingitaEbonyLodge_BathroomInterior_EmmaJackson.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e4eb2c96_e34186a4b_69d3ca616b02a5f34698fdcf_SingitaEbonyLodge_MainLoungeandFireplace_RossCouper.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/5e4eb2c96_e34186a4b_69d3ca616b02a5f34698fdcf_SingitaEbonyLodge_MainLoungeandFireplace_RossCouper"
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/94a5a77f7_58a6997dd_68493228f79fbc8094055093_Singita_20Ebony_20Villa_Sand_20River_20View.jpg",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c12055a81_60e92d267_699d6f3aaa862b409f51bdaf__SSS_WILDLIFE_Ebony_Lodge_Fireplace_Ross_Couper_A1A7480.",
+   "width": 1000,
+   "height": 667,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/d9bd64303e4d"
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/153af79ab_7a5321004_699d6f3a5d088afa8c9f7334_Ebony_lodge_exterior.webp",
+   "width": 1000,
+   "height": 667,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/153af79ab_7a5321004_699d6f3a5d088afa8c9f7334_Ebony_lodge_exterior"
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b7b19ee3e_a0d25cee0_6985f309e7d65f5eca2b62ac_Singita-Ebony-Lodge_Exterior-Suite-Deck_Emma-Jackson-sc.",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d74906c7c_19d11ae16_699d6f3af6f5e8d696572750_Singita-Ebony-Lodge_Suite-Interior_Emma-Jackson-scaled.",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ebf40d034_fb374e927_69cf771866a1a280d45c4fdd_Singita_20Ebony_20Villa_Pool_20and_20Exterior_20View.jp",
+   "width": 2560,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-ebony-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4758de260_a89be0f4d_69cf7739c5eeb6033d0cb01b_Singita_20Ebony_20Villa_Pool_20Patio_20and_20view_20of_.",
+   "width": 2560,
+   "height": 1440,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4bd342f41_bfabc9587_6985e598fb6944a8d78fdec7_SKNP_ROOM_Lebombo_Lodge_Private_Villa_Sleep_Out_Bed_Ros.",
+   "width": 1860,
+   "height": 1240,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a9e9af913_08c79c99a_69cf5cb4ffabe444bda165b7_SingitaLebomboLodge_SwimmingPools_AdriaanLouw_1.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/8a41d5dd52d9"
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/280411607_9007ca73c_69cf59dbf40ca7bca06309f4_SingitaLebomboLodge_Poolarea.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/836e728e8_b8242aae9_69cf57ef58a5bd1706a4d59d_SingitaLebomboLodge_SunsetPool.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0a1010775_eb93b3a3a_69cf61f872f045ad34c38e20_SingitaLebomboLodge_SuiteOutdoorBed.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/0a1010775_eb93b3a3a_69cf61f872f045ad34c38e20_SingitaLebomboLodge_SuiteOutdoorBed"
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/107320bd7_393a7e5d8_69cf5e8499d85298ffb0d08a_SingitaLebomboLodge_SuiteLounge.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34d1ca46d_bd544bbb6_69cf60fef6af99d03a8fc3a8_Singita_20Lebombo_20Lodge_Main_20Lodge_20Lounge_20and_2.",
+   "width": 2560,
+   "height": 1707,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5d7be1cd7_e42300c68_69cf60dd9424466442730b8a_Singita_20Lebombo_20Lodge_Exterior_20of_20Suite_Ross_20.",
+   "width": 2000,
+   "height": 1124,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/98a177172_5d1955063_69ce3fac357cf2cfcb2db38a_SingitaLebomboLodge_MainLodge.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ec5c9b279_8ac42c863_69ce46d95a7d3c9c479af898_SingitaLebomboLodge_FireBomaNight.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/ec5c9b279_8ac42c863_69ce46d95a7d3c9c479af898_SingitaLebomboLodge_FireBomaNight"
+  },
+  {
+   "stay": "singita-lebombo",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bc2ba8d3f_c30288586_69cf6359aa61db8960c102b1_Singita_20Lebombo_20Lodge_Guests_20on_20walkway_Ross_20.",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8762a5ee7_437ff8bff_6985d5a3ce7a29399c08b3fe_Landscape___River_and_Pans___Singita_Kruger_National_Pa.",
+   "width": 1998,
+   "height": 1330,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4b7ccada0_cd99ead0c_698d860451a9d01d90606a7b__DSC1187.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5c1f8759e_79320bd15_698d86041e238be74af97079_Singita-Lebombo-Lodge-Suite-balcony.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f06ac1fc9_f6f30db0b_698d86090a496852ed602d89_Singita-Lebombo-Lodge-Suite-Interior-exterior-2.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7f9e072b7_633649cce_698d8604a9e911c2d13adf2c_Singita-Lebombo-Lodge-Suite-view-interior.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-lebombo-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5aa380865_e230da97d_698d86045ea6ea703281e419_Suite-Interior-Exterior-_-Singits-Lebombo-Lodge-_-Singi.",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8ac98c054_20228f062_6985d4978da27e6c46678ab0_SKNP_Sweni_Landscape_River_Adriaan_Louw.webp",
+   "width": 1860,
+   "height": 1232,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/27a7cbb58_d47c6f050_698b29c5a8c4b35c2dfb9d51__DSC5419.webp",
+   "width": 1600,
+   "height": 1070,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1b01f19e4_6ab01aa53_698b29c63cfed24e61e0e66d__DSC5716.webp",
+   "width": 1600,
+   "height": 1070,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/808cbcd00_8c999ef55_698b29c5df07b4ad70004fc7_Singita-Sweni-Lodge-Outdoor-sleeping.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ce5e33ab5_2a47dcd5a_698b29c5a073be8faa33bb46_Singita-Sweni-Lodge-Pool-Suite-Interior1.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/df1b67bb4_a12b0ffd6_698b29c5c1bb98ec4f794363_Singita-Sweni-Lodge-Sleeping-outside.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ac86185fd_035b1b1b2_698b29c55f5ea60243b72ab1_Singita-Sweni-Lodge-Suite-Bathroom.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4b61edac3_e200d1ed4_698b29c51b1f205e45a97342_Singita-Sweni-Lodge-Suite-detail-2.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47fc67462_987bbfce3_698b29c54e6a31e021a6a05e_Singita-Sweni-Lodge-Suite-exterior-interior.webp",
+   "width": 1600,
+   "height": 1068,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "singita-sweni",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b5da0cf02_c85d2827b_69ce34d0e16faa9a954b204c_SingitaSweni_RoomView.jpg",
+   "width": 1500,
+   "height": 1000,
+   "used_as": "hero",
+   "cloudinary_upscaled": "jwco/site/upscaled/b5da0cf02_c85d2827b_69ce34d0e16faa9a954b204c_SingitaSweni_RoomView"
+  },
+  {
+   "stay": "sirai-house",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c7ee447cc_b3f65d860_6904bc581279a75df149d0fa_LibraryMainHouse.jpg",
+   "width": 1800,
+   "height": 1200,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b7955e5bc_8dd852bd3_6a738de121f7657770e2252a_3-hotel-aerial.jpg",
+   "width": 1920,
+   "height": 1295,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e44e10d48_904ff7331_6a738e8ec6417882681f9c49_honeymoon-suite-with-plunge-pool.jpg",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1808c57b_c9709605f_6a738d3a2d83b9e061cb4eb4_Orchid_20Room_20Two_20Queen_20Beds_202.jpg",
+   "width": 1140,
+   "height": 641,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3b6669f0e_19ec8f81b_6a738cd093abf3527ffab2e6_Orchid_20Room_20King_20Bed_203.jpg",
+   "width": 1140,
+   "height": 641,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a30403bd_ef36a0a81_6a738bfe2d83b9e061ca7f1a_Volcano_20View_20Suite_202.jpg",
+   "width": 1140,
+   "height": 641,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tabacon-thermal-resort-spa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/411b5733d_69a0094b3_6a738cc5e975099bfb645f31_Orchid_20Room_20King_20Bed.jpg",
+   "width": 1140,
+   "height": 641,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0bd19da83_1e1e3d291_696135ed80a9c107ab765b59_TANDA_20TULA_20-_20Safari_20Camp_20-_20Family_20suites_.",
+   "width": 1920,
+   "height": 1281,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b9d158f7f_480540e28_6961361a0016a7ecf021ee09_TANDA_20TULA_20-_20Safari_20Camp_20-_20Safari_20Suites_.",
+   "width": 1920,
+   "height": 1281,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d707e6043_b92733e59_69b162c4d6f298d3323368c1_Copy-of-AMP_3973_web.jpg",
+   "width": 2000,
+   "height": 990,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d83bbeccb_e0cee387f_69b16f840175a8f8cc3129fd_Copy-of-Copy-of-AMP_4356.jpg",
+   "width": 2000,
+   "height": 1335,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c214c917d_16cf79734_69b161c3fd9144c0b811f61a_Tanda_Tula-034-copy.jpg",
+   "width": 2000,
+   "height": 1335,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/684e63163_042d0b91c_69b16440cc5b92db9dfef04c_tanda-tula-living-spaces_1welcome1_web.jpg",
+   "width": 1646,
+   "height": 1097,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/709086a72_95bf7372d_69b163fc880d04361ca94916_The-Tanda-Tula-Experience_189.jpg",
+   "width": 2048,
+   "height": 1365,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tanda-tula",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9025e272b_21f0c3c71_69b1614e9a294642bf543fde_The-Tanda-Tula-Experience-X-Skillie-_40-Kikitography_46.",
+   "width": 2048,
+   "height": 1365,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tengile-mala-mala-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7904f480e_56147864c_6a5119931283f83a3ca4961a_malamala-camp.jpg",
+   "width": 1400,
+   "height": 933,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/6619e6cd929c"
+  },
+  {
+   "stay": "tengile-mala-mala-kirkmans-kamp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c636dd862_5ce4e7daf_6a511c21d736e3f6fb85883e_Kirkmans-kamp.jpg",
+   "width": 2730,
+   "height": 1820,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tengile-mala-mala-rattrays-lodge",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/db88aa2a3_9dc411d57_6a511cd5422b67a1ffacf7dc_malamala-rattray-s-camp.jpg",
+   "width": 1400,
+   "height": 788,
+   "used_as": "",
+   "cloudinary_upscaled": "jwco/site/upscaled/9d63c69a5e34"
+  },
+  {
+   "stay": "tengile-mala-mala-sable-camp",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f01d9356f_f1d6e3fb1_6a511e791d3940fb1b198739_sable-camp.jpg",
+   "width": 2000,
+   "height": 1333,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tengile-river-lodge-by-mala-mala",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44296e67d_9acaa06f6_691ed4282f77a7b1637ebb82_beyond-tengile-river-lodge.jpg",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a44dceae_95aa4624e_6931ff6a5dd754fcdc13243b_3_4-1.jpg",
+   "width": 798,
+   "height": 1064,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a6b543346_ced3918a6_6a183d407e01cbae8bf0d74c_3_4-15.jpg",
+   "width": 514,
+   "height": 686,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ab1cc35e4_16df1b27a_6a183d027db7a603d725eb9a_4_3-3.jpg",
+   "width": 1838,
+   "height": 1392,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0a3966f10_a7853de30_6a183e09c21a92c4ea4767c5_13-scaled.jpg",
+   "width": 2069,
+   "height": 2560,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8fc9e652a_d8e287ae6_6a18370f2d8f5c730d8d4ce5_DSC04389-Edit-scaled.jpg",
+   "width": 2048,
+   "height": 2560,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/328860b9c_3e426d7f9_6a1836e6bd77904753478b4c_DSC06391-Edit-1-scaled.jpg",
+   "width": 2048,
+   "height": 2560,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9ca055046_03dbd50c9_6a183d40ab51cfb24810ba24_Formafatal_ArtVillas_Atelier_BoysPlayNice_44.jpg",
+   "width": 1818,
+   "height": 2000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fd9935e20_764516192_6a183d400624d039fd146c1b_Formafatal_ArtVillas_Atelier_BoysPlayNice_60.jpg",
+   "width": 1752,
+   "height": 2000,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-art-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bd1ddd25c_b3b8e2e3e_6a18372c390d07357c48baa1_Photo_6619885_DJI_749_jpg_5536140_0_2022929172312_photo.",
+   "width": 2560,
+   "height": 1920,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "the-atelier-villa",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/56cf3ba95_dd7be0bfc_6931ff6a5dd754fcdc13243b_3_4-1.jpg",
+   "width": 798,
+   "height": 1064,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "thornybush-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7222ae51e_d0b6c2b97_682dce9137e43a8c270e294e_Copy_20of_20Thornybush_20Game_20Lodge_20-_20Main_20Area.",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif",
+   "width": 1920,
+   "height": 1280,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6202f7887_aca1eec3a_68883d1a47bc9cc220b08a42_Loapi_20FirePit_20at_20Dusk_20-_20Andrew_20Morgan.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/278cb0feb_33a5ad5db_68883d25f7d080537b1869bd_Loapi_20Lounge_20at_20Dusk_20-_20Andrew_20Morgan.jpg",
+   "width": 1621,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/325270122_32895f822_68883d234e7e5c66e342fb34_Loapi_20bedroom_202_20-_20Andrew_20Morgan.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f106ad525_152fa0e24_68883d30382be55d549a9548_Tswalu_20Kalahari_20-_20Loapi_20deck.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9036ae6ff_7b2c1dc64_68883843e7bd92c984b44f02_Tswalu_Motse_Patio.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4285c4934_adc3640b2_688838434a395ce3ebabd100_Tswalu_Motse_Daybed.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/338971afe_741225972_688838432ac356e47a556d3f_Tswalu_Motse_Pool.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bb0da11de_e0c313dbc_68883832cdbfec3e1e45a219_Tswalu_Motse_Suite.jpg",
+   "width": 1666,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b90d4c5c_a10995e49_6888384377fcbd5f339e451d_Tswalu_Motse_Walkway.jpg",
+   "width": 1620,
+   "height": 1080,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "tswalu-reserve",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0b042dd0_1893e5640_688836dac4bbad742f33ce64_Tswalu_20Kalahari_20-_20Tarkuni.jpg",
+   "width": 1920,
+   "height": 1080,
+   "used_as": "hero",
+   "cloudinary_upscaled": ""
+  },
+  {
+   "stay": "lales-camp-expeditions",
+   "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/da6b14754_c2368f17c_6a063c3e0d62648b0390ff55_Lales-Camp-Banner-3-scaled.jpg",
+   "width": 2560,
+   "height": 853,
+   "used_as": "",
+   "cloudinary_upscaled": ""
+  }
+ ]
+}

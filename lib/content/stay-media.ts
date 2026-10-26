@@ -17,10 +17,10 @@ export const HERO_OVERRIDE: Record<string, string> = {
 
 export const FULL_FRAME: Record<string, FullFrame[]> = {
   "leeu-estates": [
-    { src: big(`${LEEU}/leeu-estates-franschhoek-01`), alt: "Leeu Estates: vineyards and the Franschhoek mountains", caption: "The estate, under the Franschhoek mountains" },
-    { src: big(`${LEEU}/leeu-estates-manor-house-aerial-franschhoek`, true), alt: "Leeu Estates: the manor house from the air", caption: "The manor house from the air" },
-    { src: big(`${LEEU}/leeu-estates-franschhoek-02`), alt: "Leeu Estates: the vineyard estate", caption: "Vineyard, estate and mountain" },
-    { src: big(`${LEEU}/leeu-estates-franschhoek-03`), alt: "Leeu Estates in the Franschhoek Valley", caption: "The Franschhoek Valley" },
+    { src: big(`${LEEU}/leeu-estates-manor-house-morning`, true), alt: "Leeu Estates: the Manor House and gardens in morning light", caption: "The Manor House, first light" },
+    { src: big(`${LEEU}/leeu-estates-manor-house-deck-sundowners`, true), alt: "Leeu Estates: sundowners on the Manor House deck", caption: "Sundowners on the deck" },
+    { src: big(`${LEEU}/mullineux-leeu-wine-studio`, true), alt: "Leeu Estates: the Mullineux & Leeu wine studio", caption: "The way in to the wine studio" },
+    { src: big(`${LEEU}/leeu-spa-lily-pond`, true), alt: "Leeu Estates: the spa lily pond above the valley", caption: "The spa, over the valley" },
   ],
   "aguas-claras": [
     { src: `${B44}/5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060.jpg`, alt: "Aguas Claras: the beach on Costa Rica's south Caribbean coast", caption: "The beach on the south Caribbean coast" },

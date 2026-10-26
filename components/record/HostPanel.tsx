@@ -47,7 +47,7 @@ export default function HostPanel({ state, host, stayName }: { state: HostConnec
         <p className="ledger-eyebrow ledger-crimson">Meet your host</p>
         <h2 id="host-heading" className="ledger-display text-2xl md:text-3xl mt-2">Speak with the house instead.</h2>
         <p className="mt-4 text-[16px] leading-relaxed max-w-2xl">
-          The team at {stayName} isn&rsquo;t taking calls through us yet. James and the house know it first-hand and will answer your questions about the rooms, the days and the dates.
+          The team at {stayName} isn&rsquo;t taking calls through us yet, so the house takes the call instead: rooms, the shape of the days, the dates that work and the ones that don&rsquo;t. Bring your questions; we&rsquo;ll bring straight answers.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <a href={HOUSE_CALENDLY} className="ledger-btn inline-flex items-center gap-2" data-event="host_call_click" data-host-state="not_linking">

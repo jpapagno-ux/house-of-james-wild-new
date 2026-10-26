@@ -22,20 +22,20 @@ function loadApi(): Promise<YTNs> {
   });
 }
 
-export default function StayFilm({ id, title, name, planHref }: { id: string; title: string; name: string; planHref: string }) {
+export default function StayFilm({ id, title, name, planHref, bare = false }: { id: string; title: string; name: string; planHref: string; bare?: boolean }) {
   const [state, setState] = useState<"poster" | "playing" | "ended">("poster");
   const [thumb, setThumb] = useState("maxresdefault");
   const host = useRef<HTMLDivElement>(null);
-  const player = useRef<YTPlayer | null>(null);
+  const yt = useRef<YTPlayer | null>(null);
 
   useEffect(() => {
-    if (state !== "playing" || player.current || !host.current) return;
+    if (state !== "playing" || yt.current || !host.current) return;
     let live = true;
     loadApi().then((YT) => {
       if (!live || !host.current) return;
       const el = document.createElement("div");
       host.current.appendChild(el);
-      player.current = new YT.Player(el, {
+      yt.current = new YT.Player(el, {
         videoId: id, host: "https://www.youtube-nocookie.com",
         playerVars: { autoplay: 1, rel: 0, modestbranding: 1, playsinline: 1, iv_load_policy: 3 },
         events: { onStateChange: (e: { data: number }) => { if (e.data === YT.PlayerState.ENDED) setState("ended"); } },
@@ -44,15 +44,12 @@ export default function StayFilm({ id, title, name, planHref }: { id: string; ti
     return () => { live = false; };
   }, [state, id]);
 
-  useEffect(() => () => player.current?.destroy(), []);
+  useEffect(() => () => yt.current?.destroy(), []);
 
-  const replay = () => { player.current?.seekTo(0); player.current?.playVideo(); setState("playing"); };
+  const replay = () => { yt.current?.seekTo(0); yt.current?.playVideo(); setState("playing"); };
 
-  return (
-    <section id="film" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="film-heading">
-      <p className="ledger-eyebrow ledger-crimson">The film</p>
-      <h2 id="film-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">{name}, in Motion</h2>
-      <div className="mt-6 relative aspect-video bg-ink overflow-hidden border ledger-border">
+  const player = (
+      <div className={`${bare ? "" : "mt-6 "}relative aspect-video bg-ink overflow-hidden border ledger-border`}>
         <div ref={host} className="absolute inset-0 [&>iframe]:w-full [&>iframe]:h-full" />
         {state === "poster" && (
           <button type="button" onClick={() => setState("playing")} className="group absolute inset-0 w-full h-full text-white" aria-label={`Play the film: ${title}`}>
@@ -75,6 +72,13 @@ export default function StayFilm({ id, title, name, planHref }: { id: string; ti
           </div>
         )}
       </div>
+  );
+  if (bare) return player;
+  return (
+    <section id="film" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="film-heading">
+      <p className="ledger-eyebrow ledger-crimson">The film</p>
+      <h2 id="film-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">{name}, in Motion</h2>
+      {player}
     </section>
   );
 }

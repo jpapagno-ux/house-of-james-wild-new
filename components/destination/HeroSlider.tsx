@@ -17,7 +17,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export type Slide = { src: string; alt: string; caption?: string };
 const EASE = [0.22, 1, 0.36, 1] as const;
 
-export default function HeroSlider({ slides, interval = 6500, label, children }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode }) {
+export default function HeroSlider({ slides, interval = 6500, label, children, height = "h-[100svh] min-h-[620px]", controls = "bottom" }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode; height?: string; controls?: "bottom" | "top" }) {
   const reduce = useReducedMotionSafe();
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -42,7 +42,7 @@ export default function HeroSlider({ slides, interval = 6500, label, children }:
 
   return (
     <section
-      className="relative h-[100svh] min-h-[620px] overflow-hidden bg-ink text-white"
+      className={`relative ${height} overflow-hidden bg-ink text-white`}
       aria-roledescription="carousel"
       aria-label={label}
       onMouseEnter={() => setPaused(true)}
@@ -58,7 +58,7 @@ export default function HeroSlider({ slides, interval = 6500, label, children }:
       <AnimatePresence initial={false}>
         <motion.div key={s.src} className="absolute inset-0" initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: EASE }}>
           <motion.div className="absolute inset-0" initial={reduce ? false : { scale: 1.12 }} animate={{ scale: 1 }} transition={{ duration: interval / 1000 + 1.5, ease: "linear" }}>
-            <Image src={s.src} alt={s.alt} fill priority={i === 0} sizes="100vw" className="object-cover" />
+            <Image src={s.src} alt={s.alt} fill priority={i === 0} sizes="100vw" quality={85} className="object-cover" />
           </motion.div>
         </motion.div>
       </AnimatePresence>
@@ -69,7 +69,7 @@ export default function HeroSlider({ slides, interval = 6500, label, children }:
       <div className="relative h-full">{children}</div>
 
       {n > 1 && !reduce && (
-        <div className="absolute right-6 md:right-12 bottom-8 md:bottom-12 flex items-center gap-4">
+        <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-10 ${controls === "top" ? "top-[92px] lg:top-[128px]" : "bottom-8 md:bottom-12"}`}>
           <span className="ledger-eyebrow !text-white/85 tabular-nums" aria-live="polite">
             {String(i + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}
           </span>

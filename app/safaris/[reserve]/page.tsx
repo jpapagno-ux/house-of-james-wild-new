@@ -7,7 +7,12 @@ import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
 import CampLedger, { type CampCard } from "@/components/reserve/CampLedger";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
-import { Features, Overview, RecordHero, RecordNav, SectionHead, WhyChose } from "@/components/record/Sections";
+import { Features, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
+import WhyFilm from "@/components/record/WhyFilm";
+import HostPanel from "@/components/record/HostPanel";
+import { heroSlides } from "@/lib/content/hero-sets";
+import { hostFor, VIDEOS } from "@/lib/content/hosts";
+import { suitedTo } from "@/lib/ledger/travel-types";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { KIND_LABEL, RESERVES, campReady, campStatus, reserveBySlug, reserveFrom, usd, type Reserve } from "@/lib/content/reserves";
 import { stampForStatus, statusLine } from "@/lib/ledger/status";
@@ -29,10 +34,13 @@ import { graph, ids } from "@/lib/schema";
 export const dynamicParams = false;
 export function generateStaticParams() { return RESERVES.map((r) => ({ reserve: r.slug })); }
 
+const WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+const suitedFor = (r: Reserve) => suitedTo([r.stay.tagline, r.stay.quote, ...r.stay.why.map((w) => w.body), ...r.stay.onlyHere, ...r.stay.experiences.items, ...r.stay.features.items, ...r.camps.flatMap((c) => [c.intro, c.description, ...c.features, ...c.experiences, ...c.rooms.map((m) => m.name)])].filter(Boolean).join(" "), [], 5);
+
 const answerFor = (r: Reserve) => {
   const lodges = r.camps.filter((c) => c.kind === "camp").length, private_ = r.camps.length - lodges;
   const from = reserveFrom(r);
-  return `${r.name} is a private reserve in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under ${r.rsv}. It holds ${lodges} ${lodges === 1 ? "lodge" : "lodges and camps"}${private_ ? ` and ${private_} private ${private_ === 1 ? "residence or suite" : "residences and suites"}` : ""}, each with its own page.${from ? ` Registry rates start from ${usd(from)} per person, per night.` : ""}${r.stay.bestMonths ? ` Best months: ${r.stay.bestMonths}.` : ""}${r.stay.airport ? ` Fly into ${r.stay.airport}.` : ""} Plan it with James or an advisor through Wild & Co Safaris.`;
+  return `${r.name} is a private reserve in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under ${r.rsv}. It holds ${lodges} ${lodges === 1 ? "lodge" : "lodges and camps"}${private_ ? ` and ${private_} private ${private_ === 1 ? "residence or suite" : "residences and suites"}` : ""}, each with its own page.${from ? ` Registry rates start from ${usd(from)} per person, per night.` : ""}${r.stay.bestMonths ? ` Best months: ${r.stay.bestMonths}.` : ""}${r.stay.airport ? ` Fly into ${r.stay.airport}.` : ""} ${suitedFor(r).length ? `Best suited to ${suitedFor(r).join(", ").toLowerCase()}. ` : ""}Plan it with James or an advisor through Wild & Co Safaris.`;
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string }> }) {
@@ -50,6 +58,11 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const lodges = r.camps.filter((c) => c.kind === "camp").length;
   const from = reserveFrom(r);
   const answer = answerFor(r);
+  const suited = suitedFor(r);
+  const slides = heroSlides(`reserve:${r.slug}`, r.name, r.area);
+  const host = hostFor(`reserve:${r.slug}`);
+  const planHref = `/plan?trip=${encodeURIComponent(r.name)}`;
+  const why = r.stay.why;
   const cards: CampCard[] = r.camps.map((c) => {
     const st = campStatus(r, c);
     const units = c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "";
@@ -69,21 +82,22 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
+        <RecordHero slides={slides} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
-        <RecordNav items={[["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["Why it's here", "why"], ["On the reserve", "experiences"], ["Location", "location"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["On the reserve", "experiences"], ["Location", "location"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
+          <WhyFilm title={why[0]?.title ?? `Why ${r.name} Earned Its Page`} blocks={why.map((w, i) => ({ title: i === 0 && why[0]?.title ? null : w.title, body: w.body }))} paragraphs={why.length ? [] : r.stay.onlyHere.slice(0, 2)} suited={suited} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} name={r.name} video={VIDEOS[`reserve:${r.slug}`] ?? null} poster={slides[1]?.url ?? r.stay.hero} planHref={planHref} />
           <Overview quote={r.stay.quote ?? undefined} answer={answer} facts={facts} paragraphs={r.stay.onlyHere} />
 
           <section id="camps" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="camps-heading">
-            <SectionHead eyebrow={`The camps · ${r.camps.length} on the Ledger`} title={`Where to Stay on ${r.name}`} icon="tree-ring" intro="One reserve, several ways in. Each lodge, camp and residence is filed on its own, with its own suites, rates and photographs. Choose by the company you keep." />
+            <SectionHead eyebrow={`The camps · ${r.camps.length} on the Ledger`} title={`${WORDS[r.camps.length] ?? r.camps.length} Ways to Wake Up on ${r.name}`} icon="tree-ring" intro="Same reserve, different front doors. Each lodge, camp and residence is filed on its own, with its own suites, rates and photographs. Pick by who’s coming, how private you like it, and how early you’re willing to get up for the morning drive." />
             <CampLedger reserve={r.name} camps={cards} />
           </section>
 
           <section id="compare" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="compare-heading">
-            <p className="ledger-eyebrow ledger-crimson">Side by side</p>
+            <p className="ledger-eyebrow ledger-crimson">Side by side, no brochure-speak</p>
             <h2 id="compare-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Camps of {r.name}, Compared</h2>
             <div className="relative mt-6 overflow-x-auto">
               <table className="w-full min-w-[720px] text-[14.5px]">
@@ -109,15 +123,15 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
             <p className="mt-3 text-[13px] ledger-muted">From rates are the registry&rsquo;s US-dollar rates per person, per night for camps; residences are taken whole. The house confirms every rate with your quote.</p>
           </section>
 
-          {r.stay.why.length > 0 && <WhyChose title={`Why ${r.name} Is in the Ledger`} blocks={r.stay.why.map((w) => ({ title: w.title ?? undefined, body: w.body }))} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} />}
-          {(r.stay.experiences.items.length > 0 || r.stay.features.items.length > 0) && <Features id="experiences" eyebrow="On the reserve" title={`What You'll Do on ${r.name}`} icon="mountain-sun" items={[...r.stay.experiences.items, ...r.stay.features.items].slice(0, 12)} body={r.stay.experiences.paras[0] ?? r.stay.features.paras[0]} />}
+          {(r.stay.experiences.items.length > 0 || r.stay.features.items.length > 0) && <Features id="experiences" eyebrow="On the reserve" title={`What Fills the Days on ${r.name}`} icon="mountain-sun" items={[...r.stay.experiences.items, ...r.stay.features.items].slice(0, 12)} body={r.stay.experiences.paras[0] ?? r.stay.features.paras[0]} />}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
-          <FaqBlock faqs={faqs} title={`${r.name}: Quick Answers`} />
+          <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
+          {host.state !== "off" && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
         </div>
       </main>
-      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: [r.stay.hero], identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter(campReady).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(`${path}/${c.slug}`), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
+      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter(campReady).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(`${path}/${c.slug}`), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
     </>
   );
 }

@@ -14,16 +14,17 @@ type P = { line: string; where: string; when: string; style: MarkStyle; image?: 
 
 function Stamp({ line, where, when, script, label = "The verdict", href = "#verdict" }: Omit<P, "style">) {
   const [open, setOpen] = useState(false);
+  const [seen, setSeen] = useState(false);
   const year = when.match(/\d{4}/)?.[0] ?? when;
   return (
     <div className="absolute left-4 md:left-auto md:right-10 top-[112px] md:top-[220px] z-20">
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
+      <button type="button" onClick={() => { setOpen((o) => !o); setSeen(true); }} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
         className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform text-[#fff3ea]"
         style={{ boxShadow: "inset 0 0 0 3px rgba(255,243,234,.95), inset 0 0 0 7px transparent, inset 0 0 0 8.5px rgba(255,243,234,.8)", filter: "drop-shadow(0 1px 2px rgba(0,0,0,.55))" }}>
         <svg viewBox="0 0 132 132" className="absolute inset-0 w-full h-full" aria-hidden="true">
           <defs><path id="sr" d="M66 66 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" /><filter id="worn"><feTurbulence baseFrequency="1.4" numOctaves="1" seed="3" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter></defs>
           <g filter="url(#worn)" fill="currentColor" style={{ fontFamily: "ui-monospace, monospace" }}>
-            <text fontSize="9.5" letterSpacing="2.6"><textPath href="#sr" startOffset="0">{`JAMES WILD & CO · ${label.toUpperCase()} ·`}</textPath></text>
+            <g className="jw-spin"><text fontSize="9.5" letterSpacing="2.6"><textPath href="#sr" startOffset="0">{`JAMES WILD & CO · ${label.toUpperCase()} ·`}</textPath></text></g>
             <text x="66" y="60" textAnchor="middle" fontSize="24" style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }}>JW</text>
             <line x1="40" y1="68" x2="92" y2="68" stroke="currentColor" strokeWidth="1" />
             <text x="66" y="81" textAnchor="middle" fontSize="8" letterSpacing="1.5">{where.toUpperCase().slice(0, 16)}</text>
@@ -31,6 +32,15 @@ function Stamp({ line, where, when, script, label = "The verdict", href = "#verd
           </g>
         </svg>
       </button>
+      {!open && !seen && (
+        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[58px] md:left-auto md:right-[86px] top-[86px] md:top-[124px] flex items-start gap-1 text-[#fff3ea] drop-shadow-[0_1px_2px_rgba(0,0,0,.8)] pointer-events-auto" aria-label={`Read ${label === "The verdict" ? "the founder's take" : "the note from the house"}`}>
+          <svg viewBox="0 0 46 40" className="w-9 h-8 md:w-11 md:h-10 -scale-x-100 md:scale-x-100 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
+            <path d="M42 36 C 30 34, 14 30, 8 8" />
+            <path d="M3 14 L 8 7 L 13 13" />
+          </svg>
+          <span className="mt-5 md:mt-6 text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{label === "The verdict" ? "the founder's take" : "a note from the house"}</span>
+        </button>
+      )}
       {open && (
         <div className="absolute left-0 md:left-auto md:right-0 top-[100px] md:top-[140px] w-[260px] md:w-[290px] bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
           <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where} · {when}</p>

@@ -6,8 +6,10 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
 import CampLedger, { type CampCard } from "@/components/reserve/CampLedger";
+import ImageAccordion from "@/components/record/ImageAccordion";
+import { momentsFor } from "@/lib/content/stay-moments";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
-import { Features, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
+import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
 import HostPanel from "@/components/record/HostPanel";
@@ -76,6 +78,8 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const facts: [string, string][] = [["Ledger ID", r.rsv], ["Reserve", `${r.area} · ${r.province}`], ["On the reserve", `${lodges} ${lodges === 1 ? "lodge" : "lodges & camps"}${r.camps.length > lodges ? ` · ${r.camps.length - lodges} private` : ""}`], ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ["Booked through", "Wild & Co Safaris"]];
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path }];
   const images = (r.stay.gallery ?? []).filter(Boolean).slice(0, 10).map((u, i) => ({ url: u, alt: `${r.name}, photograph ${i + 1}` }));
+  const apart = momentsFor(`reserve:${r.slug}`, r.stay.features.items.slice(0, 8), images.slice(1));
+  const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items.slice(0, 8), images.slice(1), 3);
   const faqs = [
     { q: `How many lodges and camps are on ${r.name}?`, a: `${r.camps.length} on the Ledger: ${r.camps.map((c) => c.name).join(", ")}. Each has its own page with its suites and rates.` },
     ...(from ? [{ q: `How much does ${r.name} cost?`, a: `Registry rates start from ${usd(from)} per person, per night at ${r.camps.find((c) => c.fromRate === from)?.name ?? "the reserve"}, and rise by camp and suite. The house confirms every rate with your quote.` }] : []),
@@ -91,12 +95,14 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
         <RecordHero slides={slides} tag={markOn(`reserve:${r.slug}`) ? <HeroMark style="stamp" image={slides[1]?.url ?? r.stay.hero} script={note.script} line={note.line} where={r.area} when={yearOf(r.rsv)} label="From the house" href="#why" /> : undefined} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
-        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["On the reserve", "experiences"], ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["The camps", "camps"], ["Compare", "compare"], ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={why[0]?.title ?? `Why ${r.name} Earned Its Page`} blocks={why.map((w, i) => ({ title: i === 0 && why[0]?.title ? null : w.title, body: w.body }))} paragraphs={why.length ? [] : r.stay.onlyHere.slice(0, 2)} suited={suited} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} name={r.name} video={VIDEOS[`reserve:${r.slug}`] ?? null} poster={slides[1]?.url ?? r.stay.hero} planHref={planHref} />
           <Overview quote={r.stay.quote ?? undefined} answer={answer} facts={facts} paragraphs={r.stay.onlyHere} />
 
+          {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
+          {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           <section id="camps" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="camps-heading">
             <SectionHead eyebrow={`The camps · ${r.camps.length} on the Ledger`} title={`${WORDS[r.camps.length] ?? r.camps.length} Ways to Wake Up on ${r.name}`} icon="tree-ring" intro="Same reserve, different front doors. Each lodge, camp and residence is filed on its own, with its own suites, rates and photographs. Pick by who’s coming, how private you like it, and how early you’re willing to get up for the morning drive." />
             <CampLedger reserve={r.name} camps={cards} />
@@ -129,7 +135,6 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
             <p className="mt-3 text-[13px] ledger-muted">From rates are the registry&rsquo;s US-dollar rates per person, per night for camps; residences are taken whole. The house confirms every rate with your quote.</p>
           </section>
 
-          {(r.stay.experiences.items.length > 0 || r.stay.features.items.length > 0) && <Features id="experiences" eyebrow="On the reserve" title={`What Fills the Days on ${r.name}`} icon="mountain-sun" items={[...r.stay.experiences.items, ...r.stay.features.items].slice(0, 12)} body={r.stay.experiences.paras[0] ?? r.stay.features.paras[0]} />}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />

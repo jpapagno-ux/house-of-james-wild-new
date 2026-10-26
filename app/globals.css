@@ -71,3 +71,11 @@
   .ledger-chart .chart-fade { opacity: 1; transition: none; }
   .ledger-pin-drop, .ledger-pin-pulse { animation: none; }
 }
+
+/* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
+@keyframes jw-spin { to { transform: rotate(360deg); } }
+@keyframes jw-nudge { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-3px, -5px); } }
+.jw-spin { transform-box: view-box; transform-origin: 50% 50%; animation: jw-spin 40s linear infinite; }
+button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-state: paused; }
+.jw-nudge { animation: jw-nudge 2.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; } }

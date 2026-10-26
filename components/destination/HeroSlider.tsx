@@ -16,7 +16,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export type Slide = { src: string; alt: string; caption?: string };
 
-export default function HeroSlider({ slides, interval = 6500, label, children, height = "h-[100svh] min-h-[620px]", controls = "bottom" }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode; height?: string; controls?: "bottom" | "top" }) {
+export default function HeroSlider({ slides, interval = 4500, label, children, height = "h-[100svh] min-h-[620px]", controls = "bottom" }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode; height?: string; controls?: "bottom" | "top" }) {
   const reduce = useReducedMotionSafe();
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);

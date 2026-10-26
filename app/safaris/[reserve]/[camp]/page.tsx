@@ -1,3 +1,5 @@
+import ImageAccordion from "@/components/record/ImageAccordion";
+import { momentsFor } from "@/lib/content/stay-moments";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -20,7 +22,7 @@ import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
-import { CardRail, Features, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
+import { CardRail, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { KIND_LABEL, RESERVES, campBySlug, campReady, campStatus, reserveBySlug, usd } from "@/lib/content/reserves";
 import { stampForStatus } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
@@ -72,6 +74,8 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path: rpath }, { name: c.name, path }];
   const siblings = r.camps.filter((o) => o.slug !== c.slug && campReady(o));
   const images = c.gallery.map((u, i) => ({ url: u, alt: `${c.name}, ${r.name}, photograph ${i + 1}` }));
+  const apart = momentsFor(`camp:${r.slug}/${c.slug}`, c.features.slice(0, 8), images.slice(1));
+  const days = momentsFor(`camp:${r.slug}/${c.slug}`, c.experiences.slice(0, 8), images.slice(1), 3);
   const paragraphs = [c.intro, c.description].filter((t, i, a) => t && t.length > 40 && !(i === 1 && a[0] && t.startsWith(a[0].slice(0, 40))));
   const faqs = [
     ...(c.rooms.length ? [{ q: `What suites does ${c.name} have?`, a: c.rooms.map((m) => `${m.name}${m.capacity ? ` (sleeps ${m.capacity})` : ""}${m.from ? `, from ${usd(m.from)}${/exclusive use/i.test(m.name) ? " as filed" : " per person per night"}` : ""}`).join("; ") + "." }] : []),
@@ -87,12 +91,14 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} volume="safaris" /> : undefined}
           glance={<GlanceBar glance={{ ...(c.fromRate ? { price: { amount: usd(c.fromRate), basis: c.kind === "camp" ? "from, per person per night" : "from, as filed" } } : {}), facts: [["Reserve", r.name], ["Suites", units || "Ask James"], ["Best months", r.stay.bestMonths ?? "Ask James"]], cta: { label: "See the suites", href: "#suites" } }} />} />
-        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(c.rooms.length ? [["Suites", "suites"] as [string, string]] : []), ...(c.features.length || c.experiences.length ? [["The camp", "features"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(r.stay.coords ? [["Location", "location"] as [string, string]] : []), ...(siblings.length ? [["Other camps", "other-camps"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]} cta={`Plan ${c.name}`} ctaHref={`/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(c.rooms.length ? [["Suites", "suites"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(r.stay.coords ? [["Location", "location"] as [string, string]] : []), ...(siblings.length ? [["Other camps", "other-camps"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]} cta={`Plan ${c.name}`} ctaHref={`/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <p className="mt-6 inline-flex flex-wrap items-center gap-2 border ledger-border px-3 py-2 text-[14px]"><span className="ledger-eyebrow ledger-crimson">Part of {r.name}</span><Link href={rpath} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">See all {r.camps.length} camps on the reserve</Link></p>
           <WhyFilm title={`Why ${c.name} Earns Its Place on ${r.name}`} paragraphs={paragraphs.length ? paragraphs : [answer]} suited={suited} status={st ? <p className="ledger-eyebrow ledger-crimson">{st.line}</p> : null} name={c.name} video={VIDEOS[`camp:${r.slug}/${c.slug}`] ?? null} poster={slides[1]?.url ?? c.hero} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview answer={answer} facts={facts} />
+          {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
+          {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           {c.rooms.length > 0 && (
             <section id="suites" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="suites-heading">
               <SectionHead eyebrow={`Suites · ${c.rooms.length} ${c.rooms.length === 1 ? "type" : "types"}`} title={`Where You'll Sleep at ${c.name}`} icon="tree-ring" />
@@ -100,7 +106,6 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
               <p className="mt-3 text-[13px] ledger-muted">Registry rates in US dollars. The house confirms every rate, inclusions and park fees with your quote.</p>
             </section>
           )}
-          {(c.features.length > 0 || c.experiences.length > 0) && <Features id="features" eyebrow="The camp" title={`What Sets ${c.name} Apart`} icon="frond" items={[...c.features, ...c.experiences].slice(0, 12)} />}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="Same Reserve, Different Front Door" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}

@@ -14,9 +14,9 @@ import BookingPanel from "@/components/booking/BookingPanel";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
-import LuggageTag from "@/components/notes/LuggageTag";
+import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
-import { verdictFor } from "@/lib/content/verdicts";
+import { HERO_MARK, verdictFor } from "@/lib/content/verdicts";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
@@ -100,7 +100,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={images[0]} slides={slides} tag={verdict ? <LuggageTag line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+        <RecordHero image={images[0]} slides={slides} tag={verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "tag"} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />

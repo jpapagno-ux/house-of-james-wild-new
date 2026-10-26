@@ -35,3 +35,9 @@ export const VERDICTS: Record<string, Verdict> = {
 };
 
 export const verdictFor = (key: string) => VERDICTS[key];
+
+// The hero mark style per page while James compares: tag, stamp or note.
+export const HERO_MARK: Record<string, "tag" | "stamp" | "note"> = {
+  "stay:leeu-estates": "note", "stay:monwana-thornybush": "stamp", "camp:lion-sands/ivory-lodge": "tag",
+  "stay:tengile-mala-mala-kirkmans-kamp": "stamp", "stay:ellerman-house": "note", "stay:tswalu-reserve": "tag",
+};

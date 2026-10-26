@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -15,7 +15,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Reduced motion → the first photo, still.
 
 export type Slide = { src: string; alt: string; caption?: string };
-const EASE = [0.22, 1, 0.36, 1] as const;
 
 export default function HeroSlider({ slides, interval = 6500, label, children, height = "h-[100svh] min-h-[620px]", controls = "bottom" }: { slides: Slide[]; interval?: number; label: string; children?: ReactNode; height?: string; controls?: "bottom" | "top" }) {
   const reduce = useReducedMotionSafe();
@@ -24,12 +23,26 @@ export default function HeroSlider({ slides, interval = 6500, label, children, h
   const touch = useRef<number | null>(null);
   const n = slides.length;
   const go = useCallback((d: number) => setI((x) => (x + d + n) % n), [n]);
+  const [loaded, setLoaded] = useState<Set<number>>(() => new Set([0]));
+  // The photo on screen: the chosen one once it has arrived, else the last one shown.
+  const [shown, setShown] = useState(0);
+  useEffect(() => { if (loaded.has(i)) setShown(i); }, [i, loaded]);
+  // Current and next slide are always mounted, so the next photo is fetched ahead.
+  const [mounted, setMounted] = useState<Set<number>>(() => new Set([0, 1]));
+  useEffect(() => {
+    setMounted((m) => {
+      const want = [i, (i + 1) % Math.max(n, 1)];
+      return want.every((k) => m.has(k)) ? m : new Set([...m, ...want]);
+    });
+  }, [i, n]);
 
   useEffect(() => {
     if (reduce || paused || n < 2) return;
+    // Hold on this photo until the next has arrived.
+    if (!loaded.has((i + 1) % n)) return;
     const t = setTimeout(() => go(1), interval);
     return () => clearTimeout(t);
-  }, [i, paused, reduce, n, interval, go]);
+  }, [i, paused, reduce, n, interval, go, loaded]);
 
   useEffect(() => {
     const onVis = () => setPaused(document.hidden);
@@ -55,13 +68,20 @@ export default function HeroSlider({ slides, interval = 6500, label, children, h
         touch.current = null;
       }}
     >
-      <AnimatePresence initial={false}>
-        <motion.div key={s.src} className="absolute inset-0" initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.4, ease: EASE }}>
-          <motion.div className="absolute inset-0" initial={reduce ? false : { scale: 1.12 }} animate={{ scale: 1 }} transition={{ duration: interval / 1000 + 1.5, ease: "linear" }}>
-            <Image src={s.src} alt={s.alt} fill priority={i === 0} sizes="100vw" quality={85} className="object-cover" />
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
+      {/* Every slide stays mounted once it has been fetched, stacked; only the
+          current one is opaque. The next photo loads while this one shows, and
+          the slider waits for it, so a slide never fades in to black. */}
+      {slides.map((x, k) => {
+        if (reduce ? k !== 0 : !mounted.has(k)) return null;
+        const on = k === (reduce ? 0 : shown);
+        return (
+          <div key={x.src} className="absolute inset-0 transition-opacity duration-[1400ms] ease-[cubic-bezier(.22,1,.36,1)]" style={{ opacity: on ? 1 : 0, zIndex: on ? 1 : 0 }} aria-hidden={!on}>
+            <motion.div className="absolute inset-0" initial={false} animate={{ scale: on && !reduce ? 1 : 1.08 }} transition={{ duration: on ? interval / 1000 + 1.5 : 0, ease: "linear" }}>
+              <Image src={x.src} alt={on ? x.alt : ""} fill priority={k === 0} loading={k === 0 ? undefined : "eager"} sizes="(max-width: 768px) 140vw, 110vw" quality={82} className="object-cover" onLoad={() => setLoaded((m) => (m.has(k) ? m : new Set(m).add(k)))} />
+            </motion.div>
+          </div>
+        );
+      })}
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/5 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />

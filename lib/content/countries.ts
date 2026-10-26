@@ -14,6 +14,7 @@ export type CountryData = {
   airports: [string, string][]; transfers: [string, string][];
   compass?: boolean; liveRates?: { stay: string; property: string; name: string; line: string };
   flyInto: string; bestShort: string;
+  postcard?: import("@/components/notes/Postcard").PostcardData;
 };
 
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
@@ -45,6 +46,14 @@ export const COUNTRIES: CountryData[] = [
     airports: [["San José (SJO)", "The central valley; every Costa Rica route starts or ends here"], ["Liberia (LIR)", "Closer to Arenal and the north"]],
     transfers: [["SJO → Arenal", "3 hours by road"], ["SJO → Manuel Antonio", "3 hours, or a 25-minute flight"], ["SJO → Osa Peninsula", "50-minute flight"], ["SJO → South Caribbean", "4 hours by road"]],
     compass: true, flyInto: "SJO · LIR", bestShort: "Dec–Apr",
+    postcard: {
+      image: `${WF}/6863018671b62ea7c452cea0_CostaRicaMAHero1.jpg`, alt: "Costa Rica: rainforest, volcano and the Pacific coast",
+      front: { eyebrow: "Greetings from Costa Rica · Route ITN-LAND-2026-418207", title: "The Classic", line: "Volcano, cloud forest, then the Pacific to dry off." },
+      greeting: "Dear traveller,",
+      note: ["Eight nights, three climates, one very patient sloth. Arenal for the volcano, Monteverde for the cloud forest, Manuel Antonio to sit still and let the ocean do the talking.", "Go December to April. Pack for rain anyway. And leave one afternoon with nothing in it; that's usually when Costa Rica shows off."],
+      to: ["Your name here", "Wherever you're dreaming from", "Planned with James Wild & Co."],
+      postmark: { place: "San José · CR", date: "26 Oct 2026" }, stampLabel: "Pura vida",
+    },
   },
   {
     slug: "south-africa", name: "South Africa", region: "africa", regionName: "Africa",

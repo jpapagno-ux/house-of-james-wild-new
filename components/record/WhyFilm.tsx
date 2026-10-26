@@ -4,8 +4,8 @@ import VideoSlot from "@/components/booking/VideoSlot";
 // The opening block under every record hero: why the place is in the Ledger
 // (left) beside its film (right), with the travel types it suits best.
 // Why first, because that's the question everyone actually has.
-export default function WhyFilm({ eyebrow = "Why it's in the Ledger", title, paragraphs, blocks, suited, status, name, video, poster, planHref }: {
-  eyebrow?: string; title: string; paragraphs?: string[]; blocks?: { title?: string | null; body: string }[]; suited: string[]; status?: ReactNode; name: string; video?: { id: string; title: string } | null; poster?: string | null; planHref: string;
+export default function WhyFilm({ eyebrow = "Why it's in the Ledger", title, paragraphs, blocks, suited, status, name, video, poster, planHref, note }: {
+  eyebrow?: string; title: string; paragraphs?: string[]; blocks?: { title?: string | null; body: string }[]; suited: string[]; status?: ReactNode; name: string; video?: { id: string; title: string } | null; poster?: string | null; planHref: string; note?: ReactNode;
 }) {
   return (
     <section id="why" className="pt-10 md:pt-14 scroll-mt-32 grid lg:grid-cols-[1fr_1.05fr] gap-8 lg:gap-12 items-start" aria-labelledby="why-heading">
@@ -24,7 +24,7 @@ export default function WhyFilm({ eyebrow = "Why it's in the Ledger", title, par
           </div>
         )}
       </div>
-      <div id="film" className="scroll-mt-32"><VideoSlot name={name} video={video} poster={poster} planHref={planHref} /></div>
+      <div><div id="film" className="scroll-mt-32"><VideoSlot name={name} video={video} poster={poster} planHref={planHref} /></div>{note}</div>
     </section>
   );
 }

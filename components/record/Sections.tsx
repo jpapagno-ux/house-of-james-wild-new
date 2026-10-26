@@ -31,9 +31,10 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 }
 
 /* Hero ----------------------------------------------------------------- */
-export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; height?: string }) {
+export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; height?: string }) {
   const body = (
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
+        {tag}
         <div className="flex items-end justify-between gap-8">
           <div>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>

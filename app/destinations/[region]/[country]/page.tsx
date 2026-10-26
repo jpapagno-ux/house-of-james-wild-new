@@ -13,6 +13,7 @@ import LedgerChart, { projectOn, type ChartData } from "@/components/destination
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import Compass from "@/components/destination/Compass";
 import Journeys from "@/components/destination/Journeys";
+import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
@@ -141,6 +142,17 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           <Journeys country={c.name} journeys={journeys} chart={chart} />
+          {c.postcard && (
+            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
+              <div>
+                <p className="ledger-eyebrow ledger-crimson">From the house, by return</p>
+                <h2 id="postcard-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">Every Enquiry Gets a Reply Worth Keeping</h2>
+                <p className="mt-4 text-[16px] leading-relaxed">Ask about a route and the answer comes back like this: the photograph on the front, the plan on the back in plain English, initialled by James. It works on a phone, in an inbox and, for the sentimental, on the fridge.</p>
+                <a href={`/plan?trip=${encodeURIComponent(`${c.name} · ${c.postcard.front.title}`)}`} className="mt-6 inline-block ledger-btn">Ask about {c.postcard.front.title}</a>
+              </div>
+              <Postcard p={c.postcard} sample />
+            </section>
+          )}
 
           <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>

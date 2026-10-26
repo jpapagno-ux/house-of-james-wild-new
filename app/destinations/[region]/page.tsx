@@ -4,6 +4,10 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
+import LedgerCounter from "@/components/destination/LedgerCounter";
+import PlaceNote from "@/components/destination/PlaceNote";
+import { REGION_NOTES } from "@/lib/content/place-notes";
+import { regionCounts } from "@/lib/content/ledger-counts";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -80,7 +84,13 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: r.name, path }]} /></div>
-          <div className="mt-6"><AnswerBlock>{answer}</AnswerBlock></div>
+          <div className="mt-6 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
+            <div>
+              <AnswerBlock>{answer}</AnswerBlock>
+              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount)} />
+            </div>
+            {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
+          </div>
 
           {(r.intro.length > 0 || r.gallery.length > 0) && (
             <section className="mt-12 md:mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-start" aria-labelledby="region-heading">

@@ -4,6 +4,10 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
+import LedgerCounter from "@/components/destination/LedgerCounter";
+import PlaceNote from "@/components/destination/PlaceNote";
+import { COUNTRY_NOTES } from "@/lib/content/place-notes";
+import { countryCounts } from "@/lib/content/ledger-counts";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -120,8 +124,14 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           </section>
 
           <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
-            <AnswerBlock>{answer}</AnswerBlock>
-            <p className="text-[16px] leading-relaxed ledger-muted md:pt-8">{c.leading}</p>
+            <div>
+              <AnswerBlock>{answer}</AnswerBlock>
+              <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />
+            </div>
+            <div className="md:pt-8 space-y-8">
+              {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
+              <p className="text-[16px] leading-relaxed ledger-muted">{c.leading}</p>
+            </div>
           </Reveal>
 
           {c.compass && <Compass country={c.name} stays={pages.map((x) => ({ slug: x.slug, name: x.name, kind: x.category ?? "stay", area: null, tagline: x.tagline ?? "", bestMonths: x.bestMonths ?? "", image: x.hero }))} advisorHref="/about/team#advisors" />}

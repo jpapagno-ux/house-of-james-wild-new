@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CalendarClock, ListChecks, Users } from "lucide-react";
 import TimeBridge from "./TimeBridge";
+import FadeNote from "./FadeNote";
 import Signature from "./Signature";
 
 // HostPanel — "Meet Your Host" on every record page (stay, camp, ship,
@@ -16,6 +17,17 @@ import Signature from "./Signature";
 // met_in_person field. Email and phone are private and never rendered.
 
 export type HostConnect = "available" | "not_linking" | "off";
+export type HostKind = "stay" | "lodge" | "camp" | "residence" | "reserve" | "vessel";
+
+// The same group call, worded for where the traveller is looking.
+const KIND: Record<HostKind, { eyebrow: string; headline: string; who: string; people: string }> = {
+  stay:      { eyebrow: "Group connect · live with the host",       headline: "Meet the people before you send the money.",          who: "Your host",                      people: "the people who'll actually look after you" },
+  lodge:     { eyebrow: "Group connect · live from the lodge",      headline: "Meet the lodge before you send the money.",           who: "The lodge manager",              people: "the manager and the team who'll run your days" },
+  camp:      { eyebrow: "Group connect · live from camp",           headline: "Meet the camp before you send the money.",            who: "The camp manager or head guide", people: "the manager and the guides who'll be in the vehicle with you" },
+  residence: { eyebrow: "Group connect · live from the house",      headline: "Meet the house before you send the money.",           who: "The house manager",              people: "the house manager and the staff who'll run the house for you" },
+  reserve:   { eyebrow: "Group connect · live from the reserve",    headline: "Meet the people on the ground before you send the money.", who: "Someone on the reserve",   people: "the people on the ground who know every camp on the reserve" },
+  vessel:    { eyebrow: "Group connect · live from the boat",       headline: "Meet the crew before you send the money.",            who: "The captain or cruise director", people: "the crew you'll be living alongside at sea" },
+};
 export type Host = {
   name: string;
   role: string;
@@ -48,7 +60,7 @@ function Portrait({ host, size = 112 }: { host: Pick<Host, "name" | "role" | "ph
   );
 }
 
-export default function HostPanel({ state, host, stayName }: { state: HostConnect; host?: Host; stayName: string }) {
+export default function HostPanel({ state, host, stayName, kind = "stay" }: { state: HostConnect; host?: Host; stayName: string; kind?: HostKind }) {
   if (state === "off") return null;
 
   if (state === "not_linking" || !host) {
@@ -70,14 +82,15 @@ export default function HostPanel({ state, host, stayName }: { state: HostConnec
   }
 
   const seats = host.seats ?? 6;
+  const k = KIND[kind];
   return (
     <section id="host" className="scroll-mt-32" aria-labelledby="host-heading">
       <div className="grid lg:grid-cols-[1.05fr_1fr] gap-8 lg:gap-12 items-start">
         <div>
-          <p className="ledger-eyebrow ledger-crimson">Group connect · live with the host</p>
-          <h2 id="host-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight text-balance">Meet the people before you send the money.</h2>
+          <p className="ledger-eyebrow ledger-crimson">{k.eyebrow}</p>
+          <h2 id="host-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight text-balance">{k.headline}</h2>
           <blockquote className="mt-5 border-l-2 border-crimson pl-4">
-            <p className="ledger-display italic text-[1.1rem] md:text-[1.25rem] leading-relaxed">&ldquo;One call with the people who&rsquo;ll actually look after you beats three weeks of emails. It takes a little extra effort to set up. That&rsquo;s exactly why it works.&rdquo;</p>
+            <p className="ledger-display italic text-[1.1rem] md:text-[1.25rem] leading-relaxed">&ldquo;One call with {k.people} beats three weeks of emails. It takes a little extra effort to set up. That&rsquo;s exactly why it works.&rdquo;</p>
             <footer className="mt-2 flex items-center gap-3 text-[13px] ledger-muted"><Signature className="w-14" /> James Wild</footer>
           </blockquote>
           <div className="mt-7 flex items-center gap-5">
@@ -101,7 +114,7 @@ export default function HostPanel({ state, host, stayName }: { state: HostConnec
           <div className="mt-6">
             <p className="ledger-eyebrow flex items-center gap-2"><Users className="w-3.5 h-3.5 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Who&rsquo;s on the call</p>
             <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-3 text-[14px]">
-              <span className="flex items-center gap-2"><span className="w-7 h-7 rounded-full bg-crimson text-paper flex items-center justify-center text-[11px]" aria-hidden="true">H</span>Your host</span>
+              <span className="flex items-center gap-2"><span className="w-7 h-7 rounded-full bg-crimson text-paper flex items-center justify-center text-[11px]" aria-hidden="true">H</span>{k.who}</span>
               <span className="flex items-center gap-2"><span className="w-7 h-7 rounded-full bg-ink text-paper flex items-center justify-center ledger-display text-[11px]" aria-hidden="true">JW</span>A James Wild &amp; Co advisor</span>
               <span className="flex items-center gap-2"><span className="flex -space-x-1.5" aria-hidden="true">{Array.from({ length: seats }, (_, i) => <span key={i} className="w-5 h-5 rounded-full border border-ink/40 bg-paper" />)}</span>Up to {seats} of you</span>
             </div>
@@ -113,6 +126,7 @@ export default function HostPanel({ state, host, stayName }: { state: HostConnec
             </a>
             <span className="text-[13px] ledger-muted">Calendly · 30–45 minutes · video · no obligation to book</span>
           </div>
+          <FadeNote>The best way to decide. Ask anything; watch how they answer. — JW</FadeNote>
         </div>
         <div className="ledger-paper border ledger-border p-6 md:p-7">
           <p className="ledger-eyebrow flex items-center gap-2"><ListChecks className="w-3.5 h-3.5 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Start with the facts</p>

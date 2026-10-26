@@ -7,7 +7,11 @@
 import type { Host, HostConnect } from "@/components/record/HostPanel";
 
 // Group connect: a live call with the host or manager, a James Wild & Co
-// advisor and up to six travellers. GROUP_CONNECT_ON switches every group card
+// advisor and up to six travellers. It runs on every record type once the
+// partner asks for it and we switch it on: stays ("stay:<slug>"), lodges,
+// camps and residences / homesteads on a reserve ("camp:<reserve>/<camp>"),
+// reserves ("reserve:<slug>") and vessels ("voyage:<vessel>"). The card's
+// wording follows the record type (host, camp manager, house manager, crew). GROUP_CONNECT_ON switches every group card
 // at once; set a record's state to "off" (or "not_linking") to switch one.
 export const GROUP_CONNECT_ON = true;
 

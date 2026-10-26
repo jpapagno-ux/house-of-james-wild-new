@@ -133,7 +133,7 @@ export default function AliikaiPreview() {
           <Experiences eyebrow="Off the boat" title="Four Ways to Spend a Day Aboard" intro="The crew plans each day around the water: reef in the morning, an island in the afternoon." items={EXPERIENCES} icon="wave" />
           <Features eyebrow="Voyage features" title="What Makes the Voyage" cards={FEATURES} onlyHere={{ title: "Only aboard Aliikai", paragraphs: S.onlyHere.slice(0, 2) }} icon="coral" />
           {/* The ship */}
-          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={hostFor("voyage:aliikai").state} host={hostFor("voyage:aliikai").host} stayName="Aliikai" /></div>
+          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={hostFor("voyage:aliikai").state} host={hostFor("voyage:aliikai").host} stayName="Aliikai" kind="vessel" /></div>
           <section id="ship" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
             <div>
               <div className="flex items-center gap-2"><Ship className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /><p className="ledger-eyebrow">{S.ship.eyebrow}</p></div>

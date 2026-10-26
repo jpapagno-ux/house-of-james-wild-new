@@ -74,8 +74,10 @@
 
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
 @keyframes jw-spin { to { transform: rotate(360deg); } }
-@keyframes jw-nudge { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-3px, -5px); } }
+@keyframes jw-nudge { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(var(--jw-bx, -3px), -4px); } }
 .jw-spin { transform-box: view-box; transform-origin: 50% 50%; animation: jw-spin 40s linear infinite; }
 button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-state: paused; }
-.jw-nudge { animation: jw-nudge 2.6s ease-in-out infinite; }
-@media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; } }
+@keyframes jw-fade { from { opacity: 0; transform: translate(calc(var(--jw-bx, -3px) * -2), 6px); } to { opacity: 1; transform: translate(0, 0); } }
+@media (min-width: 768px) { .jw-nudge { --jw-bx: 3px; } }
+.jw-nudge { opacity: 0; animation: jw-fade .9s ease-out 1.4s forwards, jw-nudge 2.6s ease-in-out 2.4s infinite; }
+@media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; opacity: 1; } }

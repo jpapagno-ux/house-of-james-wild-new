@@ -33,12 +33,13 @@ function Stamp({ line, where, when, script, label = "The verdict", href = "#verd
         </svg>
       </button>
       {!open && !seen && (
-        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[58px] md:left-auto md:right-[86px] top-[86px] md:top-[124px] flex items-start gap-1 text-[#fff3ea] drop-shadow-[0_1px_2px_rgba(0,0,0,.8)] pointer-events-auto" aria-label={`Read ${label === "The verdict" ? "the founder's take" : "the note from the house"}`}>
-          <svg viewBox="0 0 46 40" className="w-9 h-8 md:w-11 md:h-10 -scale-x-100 md:scale-x-100 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
-            <path d="M42 36 C 30 34, 14 30, 8 8" />
-            <path d="M3 14 L 8 7 L 13 13" />
+        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[74px] top-[70px] md:left-auto md:right-[116px] md:top-[98px] flex md:flex-row-reverse items-end gap-0.5 text-[#fff3ea] drop-shadow-[0_1px_2px_rgba(0,0,0,.85)]" aria-label={`Read ${label === "The verdict" ? "the founder's take" : "the note from the house"}`}>
+          {/* hand-drawn arrow: its tip sits on the stamp's lower edge (up-left on phones, up-right on desktop) */}
+          <svg viewBox="0 0 44 40" className="w-9 h-8 md:w-11 md:h-10 -scale-x-100 md:scale-x-100 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M3 37 C 14 36, 30 28, 39 5" />
+            <path d="M31 8 L 39.5 4 L 41 13" />
           </svg>
-          <span className="mt-5 md:mt-6 text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{label === "The verdict" ? "the founder's take" : "a note from the house"}</span>
+          <span className="mb-[-6px] text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{label === "The verdict" ? "the founder's take" : "a note from the house"}</span>
         </button>
       )}
       {open && (

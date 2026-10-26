@@ -10,20 +10,20 @@ import PostMark from "./PostMark";
 // James's hand). Preview any style on any verdict page with
 // ?mark=post|tag|stamp|note.
 export type MarkStyle = "post" | "tag" | "stamp" | "note";
-type P = { line: string; where: string; when: string; style: MarkStyle; image?: string; script?: string };
+type P = { line: string; where: string; when: string; style: MarkStyle; image?: string; script?: string; label?: string; href?: string };
 
-function Stamp({ line, where, when }: Omit<P, "style">) {
+function Stamp({ line, where, when, script, label = "The verdict", href = "#verdict" }: Omit<P, "style">) {
   const [open, setOpen] = useState(false);
   const year = when.match(/\d{4}/)?.[0] ?? when;
   return (
     <div className="absolute left-4 md:left-auto md:right-10 top-[112px] md:top-[220px] z-20">
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label="James Wild & Co verdict stamp: tap to read"
+      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
         className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform text-[#fff3ea]"
         style={{ boxShadow: "inset 0 0 0 3px rgba(255,243,234,.95), inset 0 0 0 7px transparent, inset 0 0 0 8.5px rgba(255,243,234,.8)", filter: "drop-shadow(0 1px 2px rgba(0,0,0,.55))" }}>
         <svg viewBox="0 0 132 132" className="absolute inset-0 w-full h-full" aria-hidden="true">
           <defs><path id="sr" d="M66 66 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" /><filter id="worn"><feTurbulence baseFrequency="1.4" numOctaves="1" seed="3" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter></defs>
           <g filter="url(#worn)" fill="currentColor" style={{ fontFamily: "ui-monospace, monospace" }}>
-            <text fontSize="9.5" letterSpacing="2.6"><textPath href="#sr" startOffset="0">JAMES WILD &amp; CO · THE VERDICT ·</textPath></text>
+            <text fontSize="9.5" letterSpacing="2.6"><textPath href="#sr" startOffset="0">{`JAMES WILD & CO · ${label.toUpperCase()} ·`}</textPath></text>
             <text x="66" y="60" textAnchor="middle" fontSize="24" style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }}>JW</text>
             <line x1="40" y1="68" x2="92" y2="68" stroke="currentColor" strokeWidth="1" />
             <text x="66" y="81" textAnchor="middle" fontSize="8" letterSpacing="1.5">{where.toUpperCase().slice(0, 16)}</text>
@@ -33,9 +33,10 @@ function Stamp({ line, where, when }: Omit<P, "style">) {
       </button>
       {open && (
         <div className="absolute left-0 md:left-auto md:right-0 top-[100px] md:top-[140px] w-[260px] md:w-[290px] bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
-          <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">The verdict · {where} · {when}</p>
+          <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where} · {when}</p>
+          {script && <p className="mt-2 text-[15px] text-[#3b2716] -rotate-[2deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{script}</p>}
           <p className="mt-2 ledger-display italic text-[1rem] leading-snug">&ldquo;{line}&rdquo;</p>
-          <a href="#verdict" className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">Read the full note ↓</a>
+          <a href={href} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">{href === "#verdict" ? "Read the full note ↓" : "Read why it's here ↓"}</a>
         </div>
       )}
     </div>
@@ -61,7 +62,7 @@ function TapedNote({ line, where, when }: Omit<P, "style">) {
 export default function HeroMark(p: P) {
   const [style, setStyle] = useState<MarkStyle>(p.style);
   useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "post" || m === "tag" || m === "stamp" || m === "note") setStyle(m); }, []);
-  if (style === "post") return <PostMark line={p.line} where={p.where} when={p.when} image={p.image} script={p.script ?? "Worth your time. JW"} />;
+  if (style === "post") return <PostMark line={p.line} where={p.where} when={p.when} image={p.image} script={p.script ?? "Worth your time. JW"} label={p.label} href={p.href} />;
   if (style === "stamp") return <Stamp {...p} />;
   if (style === "note") return <TapedNote {...p} />;
   return <LuggageTag {...p} />;

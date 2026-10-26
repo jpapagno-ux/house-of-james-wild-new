@@ -17,6 +17,8 @@ import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
 import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
+import { markOn, yearOf } from "@/lib/content/hero-marks";
+import { houseNote } from "@/lib/ledger/house-notes";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
@@ -80,6 +82,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const video = VIDEOS[`stay:${s.slug}`] ?? priced?.video ?? null;
   const host = hostFor(`stay:${s.slug}`);
   const verdict = verdictFor(`stay:${s.slug}`);
+  const note = houseNote({ key: `stay:${s.slug}`, name: s.name, bestMonths: s.bestMonths, airport: s.airport, suited, rooms: s.rooms.items });
   const whyTitle = s.why[0]?.title ?? `Why ${s.name} Made the Cut`;
   const whyBlocks = s.why.length ? s.why.map((w, i) => ({ title: i === 0 && s.why[0]?.title ? null : w.title, body: w.body })) : [];
   const whyParas = s.why.length ? [] : (s.onlyHere.length ? s.onlyHere.slice(0, 2) : [s.tagline].filter(Boolean) as string[]);
@@ -100,7 +103,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={images[0]} slides={slides} tag={verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "post"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+        <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />

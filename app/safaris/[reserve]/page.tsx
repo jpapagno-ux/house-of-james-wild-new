@@ -14,6 +14,9 @@ import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
+import HeroMark from "@/components/notes/HeroMark";
+import { markOn, yearOf } from "@/lib/content/hero-marks";
+import { houseNote } from "@/lib/ledger/house-notes";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { KIND_LABEL, RESERVES, campReady, campStatus, reserveBySlug, reserveFrom, usd, type Reserve } from "@/lib/content/reserves";
 import { stampForStatus, statusLine } from "@/lib/ledger/status";
@@ -64,6 +67,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const host = hostFor(`reserve:${r.slug}`);
   const planHref = `/plan?trip=${encodeURIComponent(r.name)}`;
   const why = r.stay.why;
+  const note = houseNote({ key: `reserve:${r.slug}`, name: r.name, bestMonths: r.stay.bestMonths, airport: r.stay.airport, suited, rooms: r.camps.map((c) => c.name) });
   const cards: CampCard[] = r.camps.map((c) => {
     const st = campStatus(r, c);
     const units = c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "";
@@ -84,7 +88,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero slides={slides} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
+        <RecordHero slides={slides} tag={markOn(`reserve:${r.slug}`) ? <HeroMark style="stamp" image={slides[1]?.url ?? r.stay.hero} script={note.script} line={note.line} where={r.area} when={yearOf(r.rsv)} label="From the house" href="#why" /> : undefined} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
         <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ["The camps", "camps"], ["Compare", "compare"], ["On the reserve", "experiences"], ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />

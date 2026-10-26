@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import HouseStamp from "./HouseStamp";
 import { useState } from "react";
 import { RotateCw } from "lucide-react";
 import Signature from "@/components/record/Signature";
@@ -41,13 +42,7 @@ export default function Postcard({ p, sample = false }: { p: PostcardData; sampl
               <span className="mt-auto pt-1"><Signature className="w-20 md:w-28" /></span>
             </span>
             <span className="relative order-1 sm:order-none h-[96px] sm:h-auto sm:border-l border-b sm:border-b-0 border-[#d9cfbd] sm:pl-4 md:pl-6 flex flex-col">
-              <span className="self-end relative w-[62px] h-[76px] md:w-[74px] md:h-[90px] p-[5px] bg-[#fdfcf8] [mask:radial-gradient(circle_at_4px_4px,transparent_2.5px,#000_3px)_-4px_-4px/8px_8px] shadow-sm">
-                <span className="relative block w-full h-full overflow-hidden"><Image src={p.image} alt="" fill sizes="80px" className="object-cover saturate-[.8]" /></span>
-                <span className="absolute bottom-1.5 inset-x-0 text-center font-mono text-[7.5px] tracking-[0.12em] uppercase text-white drop-shadow">{p.stampLabel}</span>
-              </span>
-              <span className="absolute right-20 sm:right-10 md:right-14 top-1 sm:top-6 md:top-8 w-[84px] h-[84px] md:w-[104px] md:h-[104px] rounded-full border-2 border-[#8b3a2e]/55 text-[#8b3a2e]/75 flex flex-col items-center justify-center rotate-[-14deg] font-mono text-[8px] md:text-[9px] tracking-[0.14em] uppercase text-center leading-tight" aria-label={`Postmarked ${p.postmark.place}, ${p.postmark.date}`}>
-                <span>{p.postmark.place}</span><span className="my-1 w-12 border-t border-[#8b3a2e]/50" /><span>{p.postmark.date}</span><span className="mt-0.5 opacity-80">JW & Co.</span>
-              </span>
+              <span className="relative self-stretch h-[86px] md:h-[118px] shrink-0"><HouseStamp image={p.image} label={p.stampLabel} place={p.postmark.place} date={p.postmark.date} /></span>
               <span className="hidden sm:block mt-auto space-y-2.5 pb-1">
                 {p.to.map((l, i) => <span key={i} className="block border-b border-[#cfc3ad] pb-1 ledger-display italic text-[0.85rem] md:text-[1rem] text-[#5c4a38]">{l}</span>)}
               </span>

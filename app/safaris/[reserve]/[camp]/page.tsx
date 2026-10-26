@@ -12,6 +12,8 @@ import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
 import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
+import { markOn, yearOf } from "@/lib/content/hero-marks";
+import { houseNote } from "@/lib/ledger/house-notes";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
@@ -63,6 +65,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   const slides = heroSlides(`camp:${r.slug}/${c.slug}`, c.name, r.name);
   const host = hostFor(`camp:${r.slug}/${c.slug}`);
   const verdict = verdictFor(`camp:${r.slug}/${c.slug}`);
+  const note = houseNote({ key: `camp:${r.slug}/${c.slug}`, name: c.name, bestMonths: r.stay.bestMonths, airport: r.stay.airport, suited, rooms: c.rooms.map((m) => m.name) });
   const planHref = `/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`;
   const answer = `${c.name} is a ${KIND_LABEL[c.kind].toLowerCase()} on ${r.name} in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under the reserve's ${r.rsv}.${units ? ` ${units}.` : ""}${c.fromRate ? ` Registry rates start from ${usd(c.fromRate)}${c.kind === "camp" ? " per person, per night" : " as filed"}.` : ""}${r.stay.bestMonths ? ` Best months on the reserve: ${r.stay.bestMonths}.` : ""}${st ? ` ${st.line}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : ""} Plan it with James or an advisor through Wild & Co Safaris.`;
   const facts: [string, string][] = [["Reserve", `${r.name} · ${r.rsv}`], ["Type", KIND_LABEL[c.kind]], ...(units ? [["Suites", units] as [string, string]] : []), ...(caps.length ? [["Sleeps", Math.min(...caps) === Math.max(...caps) ? `${caps[0]} per suite` : `${Math.min(...caps)}–${Math.max(...caps)} per suite`] as [string, string]] : []), ...(c.fromRate ? [["From", `${usd(c.fromRate)} ${c.kind === "camp" ? "pp / night" : "as filed"}`] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : []), ...(st ? [["The Ledger", `${stamp} · ${st.date.slice(0, 4)}`] as [string, string]] : [])];
@@ -80,7 +83,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero slides={slides} tag={verdict ? <HeroMark style={HERO_MARK[`camp:${r.slug}/${c.slug}`] ?? "post"} image={slides[1]?.url ?? c.hero ?? undefined} script={SCRIPT[`camp:${r.slug}/${c.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
+        <RecordHero slides={slides} tag={markOn(`camp:${r.slug}/${c.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`camp:${r.slug}/${c.slug}`] ?? "stamp"} image={slides[1]?.url ?? c.hero ?? undefined} script={SCRIPT[`camp:${r.slug}/${c.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? c.hero ?? undefined} script={note.script} line={note.line} where={r.name.replace(/ Reserve$/, "")} when={yearOf(r.rsv)} label="From the house" href="#why" />) : undefined} image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} volume="safaris" /> : undefined}
           glance={<GlanceBar glance={{ ...(c.fromRate ? { price: { amount: usd(c.fromRate), basis: c.kind === "camp" ? "from, per person per night" : "from, as filed" } } : {}), facts: [["Reserve", r.name], ["Suites", units || "Ask James"], ["Best months", r.stay.bestMonths ?? "Ask James"]], cta: { label: "See the suites", href: "#suites" } }} />} />

@@ -13,7 +13,7 @@ import { useState } from "react";
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"];
 const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
-export default function PostMark({ line, where, when, image, script }: { line: string; where: string; when: string; image?: string; script: string }) {
+export default function PostMark({ line, where, when, image, script, label = "The verdict", href = "#verdict" }: { line: string; where: string; when: string; image?: string; script: string; label?: string; href?: string }) {
   const [open, setOpen] = useState(false);
   const year = when.match(/\d{4}/)?.[0] ?? "";
   const m = MONTHS.findIndex((x) => when.toLowerCase().startsWith(x));
@@ -22,7 +22,7 @@ export default function PostMark({ line, where, when, image, script }: { line: s
   const ink = "#fbf3e6";
   return (
     <div className="absolute left-3 md:left-auto md:right-10 top-[78px] md:top-[200px] z-20 select-none">
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`The verdict, postmarked ${where} ${when}: tap to read`} className="group relative block w-[196px] h-[136px] md:w-[290px] md:h-[200px] text-left">
+      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`${label}, postmarked ${where} ${when}: tap to read`} className="group relative block w-[196px] h-[136px] md:w-[290px] md:h-[200px] text-left">
         {/* the house stamp */}
         <span className="absolute right-1 top-1 w-[80px] h-[96px] md:w-[116px] md:h-[140px] rotate-[5deg] group-hover:rotate-[2deg] transition-transform drop-shadow-[0_4px_8px_rgba(0,0,0,.45)]"
           style={{ background: "#f6efdf", padding: 5, WebkitMask: "radial-gradient(circle, transparent 3px, #000 3.4px) -5px -5px / 10px 10px, linear-gradient(#000 0 0) content-box", WebkitMaskComposite: "source-over", mask: "radial-gradient(circle, transparent 3px, #000 3.4px) -5px -5px / 10px 10px, linear-gradient(#000 0 0) content-box", maskComposite: "add" }}>
@@ -48,7 +48,7 @@ export default function PostMark({ line, where, when, image, script }: { line: s
             <circle cx="78" cy="92" r="40" strokeWidth="1.4" />
             <g fill={ink} stroke="none" style={{ fontFamily: "'IBM Plex Mono', ui-monospace, monospace" }}>
               <text fontSize="11" letterSpacing="3"><textPath href="#pm-top" startOffset="50%" textAnchor="middle">{place}</textPath></text>
-              <text fontSize="10" letterSpacing="3" dy="9"><textPath href="#pm-bot" startOffset="50%" textAnchor="middle">THE VERDICT</textPath></text>
+              <text fontSize="10" letterSpacing="3" dy="9"><textPath href="#pm-bot" startOffset="50%" textAnchor="middle">{label.toUpperCase()}</textPath></text>
               <text x="78" y="88" textAnchor="middle" fontSize="15" letterSpacing="1.5">{date}</text>
               <text x="78" y="104" textAnchor="middle" fontSize="8" letterSpacing="2.2">JW &amp; CO</text>
             </g>
@@ -60,9 +60,9 @@ export default function PostMark({ line, where, when, image, script }: { line: s
       </button>
       {open && (
         <div className="absolute left-0 md:left-auto md:right-0 top-[150px] md:top-[212px] w-[260px] md:w-[300px] bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
-          <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">The verdict · {where} · {when}</p>
+          <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where}</p>
           <p className="mt-2 ledger-display italic text-[1rem] leading-snug">&ldquo;{line}&rdquo;</p>
-          <a href="#verdict" className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">Read the full note ↓</a>
+          <a href={href} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">{href === "#verdict" ? "Read the full note ↓" : "Why it's in the Ledger ↓"}</a>
         </div>
       )}
     </div>

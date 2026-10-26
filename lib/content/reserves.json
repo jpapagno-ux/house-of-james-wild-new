@@ -1,0 +1,1291 @@
+{
+ "exportedOn": "2026-10-25",
+ "reserves": [
+  {
+   "slug": "lion-sands",
+   "name": "Lion Sands Reserve",
+   "rsv": "RSV-2026-000006",
+   "area": "Sabi Sand & Kruger",
+   "province": "Mpumalanga",
+   "stay": {
+    "ledgerId": "STY-2026-290658",
+    "tagline": "Safaris Beyond Time",
+    "quote": "Experience the beauty of Lion Sands Game Reserve, where every moment invites you to reconnect with nature, with others, and with yourself.",
+    "hero": "/img/b44/ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands.avif",
+    "gallery": [
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae53a68fb_bb7b63fcc_6833b696b37e3f9a4432c9bb_Akita_20Female_20Kruger.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a19e01159_46336d9b2_684827d2599f8a52c4468548_Lion_20Sands_20_River_20Lodge_3__20Luxury_20Suite_Twin_.",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681249520_e60be0071_6833b6168ae6ec31a572a5e2_Lion_20Sands_Safari_4_Game_20Drive-3.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/597868105_86ad58e9e_6833b86790c60fba011752cf_Tinyeletei_20Treehouse_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9880cb4f3_e5bfb4e83_6833b651d24c86c11207d288_Lion_20Sands_Safari_4_Bush_20Walk-3.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/06f2e4be8_278fdbab5_68350c0f7aca266b0957ceab_IVORY_20FISH_20EAGLE_20OUTSIDE_20SHOWER.jpg",
+     "/img/b44/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1.jpg"
+    ],
+    "bestMonths": "May – September",
+    "bestMonthsNote": "Wildlife viewing is the best during the dry winter season spanning from May - Sept.",
+    "airport": "Skukuza Airport",
+    "airportDirections": "A road transfer from the airport delivers guests to Lion Sands Game Reserve in a short game drive.",
+    "coords": {
+     "lat": -24.9723,
+     "lng": 31.5312
+    },
+    "why": [
+     {
+      "title": null,
+      "body": "Explore 4 luxury lodges & 2 private residences that blend seamlessly in the environment."
+     },
+     {
+      "title": null,
+      "body": "Stay within 6.5 miles of exclusive river frontage on the perennial Sabie River attracting a diversity of wildlife. Welcome this beautiful world, where the most amazing family of people will take care of your every heartfelt need."
+     }
+    ],
+    "experiences": {
+     "paras": [],
+     "items": [
+      "Safaris Big 5",
+      "Guided Bush Walks",
+      "Game Drives",
+      "Tree Houses",
+      "Family Adventures"
+     ]
+    },
+    "features": {
+     "paras": [],
+     "items": [
+      "Wellness Spa + Gym",
+      "Bush Dining + Cuisine",
+      "Family Owned",
+      "Conservation Focused"
+     ]
+    },
+    "onlyHere": [],
+    "country": "South Africa",
+    "countrySlug": "south-africa",
+    "regionSlug": "africa",
+    "status": null,
+    "statusDate": null
+   },
+   "camps": [
+    {
+     "slug": "ivory-lodge",
+     "name": "Ivory Lodge",
+     "key": "Ivory Lodge",
+     "kind": "camp",
+     "intro": "Where Nature and Luxury Become One",
+     "description": "At Ivory Lodge, eight exclusive suites offer the ultimate in privacy and comfort, each with a private lounge, deck, and plunge pool overlooking the wild riverscape. \n\n Every detail — from your favorite wine stocked in your maxi bar to personalized safari experiences — is tailored just for you.",
+     "units": [
+      "8 Luxury Suites",
+      "Fish Eagle Residence"
+     ],
+     "features": [
+      "Treehouses",
+      "Community Experience",
+      "Private Suite Pool",
+      "Morning Bush Walk",
+      "Stargazing",
+      "Night Game Drives",
+      "All Inclusive",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives–Night & Day",
+      "Private Deck & Pool",
+      "Celebration Venue",
+      "Fine Dining | Kosher Dining",
+      "Artist Residency"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54ed5d0deacdc769b3_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Pool%202%20-%20Medium.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac5413a80aed9c786fbd_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Evening%20pool%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54aa861da6b9c8b9ff_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%202%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac545c3a3652f404f766_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%203%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54959ffd820b821274_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Bedroom%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54ed5d0deacdc769b3_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Pool%202%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54fdf8703497327a1b_Lion%20Sands%20Ivory%20Lodge%20-%20%20Couple%20Suite%20Pool%20-%20Medium.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Ivory Suite",
+       "capacity": 2,
+       "quantity": 8,
+       "beds": "King Bed",
+       "from": 3420,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac5413a80aed9c786fbd_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Evening%20pool%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54aa861da6b9c8b9ff_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%202%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac545c3a3652f404f766_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%203%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54959ffd820b821274_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Bedroom%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54ed5d0deacdc769b3_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Pool%202%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54fdf8703497327a1b_Lion%20Sands%20Ivory%20Lodge%20-%20%20Couple%20Suite%20Pool%20-%20Medium.webp"
+       ]
+      }
+     ],
+     "fromRate": 3420
+    },
+    {
+     "slug": "river-lodge",
+     "name": "River Lodge",
+     "key": "River Lodge",
+     "kind": "camp",
+     "intro": "Appreciate River Lodge’s bright, contemporary charm, blending luxury with tradition for a connection-rich safari.",
+     "description": "Discover the soul of Africa at Lion Sands River Lodge, nestled along the Sabie River in the world renowned Sabi Sands Game Reserve.\nWith just 18 luxury suites, the lodge offers an exclusive and deeply personal safari experience surrounded by breathtaking wilderness.\nWatch the Big Five from your private deck, embark on guided bush walks, and immerse yourself in the rhythms of the wild. Natural beauty flows through every moment, from serene riverside views to starlit boma feasts.\n\"At Lion Sands River Lodge, you don’t just visit the wild, you become part of it,\" says James Papagno. \"It is a place that touches your soul and calls you back to nature.\"",
+     "units": [
+      "8 Luxury Rooms",
+      "6 Superior Luxury Rooms",
+      "3 River Suites",
+      "1 Family River Suite"
+     ],
+     "features": [
+      "Treehouse",
+      "Creative Lab",
+      "Fitness Centre",
+      "Fine Dining",
+      "Wellness + Spa",
+      "Pool",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives",
+      "Safaris",
+      "Celebration Venue",
+      "Fine Dining",
+      "Bush Walk",
+      "Community"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6848271b4fafe5adcc668e9c_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior%20(1).jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834569a9251463dbd3d1ea8_Lion%20Sands_River_Lodge_Facilities_Guest%20Dining%20Area.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834577180fc86c5306ef9b1_LionSandsRiver_March25_Dining1.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457b20d5d23498fbf3538_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge%20mornings.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457bd54781cb3a7d8c6f4_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge-1.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457c60cc8d9df68b669b7_Lion%20Sands%20River%20Lodge%20Food-2.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457d03b1765fb446b403a_Lion%20Sands%20River%20Lodge%20Fire%20deck-1.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457d69a5b8729adda8967_Lion%20Sands%20River%20Lodge%20Creative%20Lab.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457dd6f2d874afef26a3a_Lion%20Sands%20River%20Lodge%20Boma.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457eb69d733fb26e67309_Rocky%20Ridge%20Female-1.JPG"
+     ],
+     "rooms": [
+      {
+       "name": "Luxury Room",
+       "capacity": 2,
+       "quantity": 8,
+       "beds": "Double Bed",
+       "from": 1943,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834592be8494a181bab4d8f_Lion%20Sands%20_River%20Lodge_3_%20Luxury%20Suite_Twin%20Bedroom%20Setup.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834593b9771cd4eddaad5d9_Lion%20sands%20River%20Lodge%20River%20Suite%20Lounge.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683459416b7c0a7860953843_Lion%20Sands%20River%20Lodge%20Luxury%20room.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683459510ead5a5fe929c872_Lion%20Sands%20River%20Lodge%20River%20suite%20bedroom.jpg"
+       ]
+      },
+      {
+       "name": "Superior Luxury Room",
+       "capacity": 2,
+       "quantity": 8,
+       "beds": "King Bed",
+       "from": 2137,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a1df137f47c4d3a37ed_Lion%20Sands%20_River%20Lodge_3_Superior%20Luxury%20Suite_En-Suite%20Bathroom.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a234092738789138f7f_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Bedroom%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a29fa89d167db5f2f42_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a30506f0d5b6f484f07_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Suite%20.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a392ab3a50d23946d0b_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Outside%20deck.jpg"
+       ]
+      },
+      {
+       "name": "Luxury River Suite",
+       "capacity": 2,
+       "quantity": 3,
+       "beds": "King Bed",
+       "from": 2498,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834592be8494a181bab4d8f_Lion%20Sands%20_River%20Lodge_3_%20Luxury%20Suite_Twin%20Bedroom%20Setup.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345c63bea8f3207185d09a_Lion%20Sands%20_River%20Lodge_3_River%20Suite_Bedroom%20Interior%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a1df137f47c4d3a37ed_Lion%20Sands%20_River%20Lodge_3_Superior%20Luxury%20Suite_En-Suite%20Bathroom.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345c763271258ec8a382b6_Lion%20Sands%20River%20Lodge%20River%20Suite-1.jpg"
+       ]
+      },
+      {
+       "name": "Family River Suite",
+       "capacity": 4,
+       "quantity": 1,
+       "beds": "King Bed + 3/4 Beds",
+       "from": 2998,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834b7804f8ddd95c2e6bf12_family-river-suite-overview-1.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834592be8494a181bab4d8f_Lion%20Sands%20_River%20Lodge_3_%20Luxury%20Suite_Twin%20Bedroom%20Setup.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345c63bea8f3207185d09a_Lion%20Sands%20_River%20Lodge_3_River%20Suite_Bedroom%20Interior%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68345a1df137f47c4d3a37ed_Lion%20Sands%20_River%20Lodge_3_Superior%20Luxury%20Suite_En-Suite%20Bathroom.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834b7c1cc57f497a02d5670_LionSandsRiver_March25_Suite%20from%20River04.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834b7d60d720074134258c9_LionSandsRiver_March25_Suite_from_River05_preview_maxWidth_1600_maxHeight_1600.jpg"
+       ]
+      }
+     ],
+     "fromRate": 1943
+    },
+    {
+     "slug": "narina-lodge",
+     "name": "Narina Lodge",
+     "key": "Narina Lodge",
+     "kind": "camp",
+     "intro": "Discover Lion Sands Narina Lodge, Elevated among 100-year-old trees along the Sabi River, this exclusive lodge offers private plunge pools, wooden walkways, and breathtaking views of the bush veld. Experience refined safari living, unforgettable game drives, and an intimate connection to nature.",
+     "description": "Stay at Lion Sands Narina Lodge, featuring just nine private suites elevated above the Sabi River in South Africa’s Kruger National Park.Enjoy plunge pools, sweeping bushveld views, and intimate Big Five safari experiences.Soak up the simple pleasures of life and the deep connection with the river and nature. Living feels easy here.Narina Lodge lets you feel Africa’s soul in absolute comfort.",
+     "units": [
+      "9 Luxury Suites"
+     ],
+     "features": [
+      "Tinyeleti Treehouse",
+      "Boma Dinner",
+      "Creative Photo Lab",
+      "Wellness Spa",
+      "Private Pool Suite & Deck",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives",
+      "Community Experience",
+      "Morning Bush Walk",
+      "Stargazing",
+      "Celebration Venue",
+      "Fine Dining"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1f321fa55acdfeea0d0_Lion%20Sands%20Narina%20Lodge%20FRONT%20ENTRANCE%20-%20Medium.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fadfb9ce7cd4f68ce2_Lion%20Sands%20Narina%20Lodge%20ELEPHANT%20CROSSING%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fab4526091f728b6bf_Lion%20Sands%20Narina%20Lodge%20FIRE%20deck%20EVENING%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1f321fa55acdfeea0d0_Lion%20Sands%20Narina%20Lodge%20FRONT%20ENTRANCE%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fac8f2e524c4678dc9_Lion%20Sands%20Narina%20Lodge%20LOUNGERS%203%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fa559b89e28edeab86_Lion%20Sands_Narina%20Lodge_2_Guest%20Area%20Views%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fa5ccd4f4cac0f5c0d_Lion%20Sands_Narina%20Lodge_2_Guest%20Lounge%20Area%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fa0edebabe4f725d2d_Lion%20Sands_Narina%20Lodge_2_Lodge%20Views-1%20-%20Medium.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Narina Suite",
+       "capacity": 2,
+       "quantity": 9,
+       "beds": "Double Bed",
+       "from": 2230,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18d20769f82c8034959_Lion%20Sands_Narina%20Lodge_3_Suite_Views%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18d77bc201f21e991a0_Lion%20Sands%20Narina%20%20Lodge%20Suite%20BEDROOM%20OPTION%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18db4526091f728a1b3_Lion%20Sands%20Narina%20Lodge%20ROOM%20EXTERIOR%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18d4d6aa4e2735197be_Lion%20Sands%20Narina%20Lodge%20Suite%20WIDE%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18e3a0f4d65b7837067_Lion%20Sands_Narina%20Lodge_3_Suite_Bathroom-2%20-%20Medium.webp"
+       ]
+      }
+     ],
+     "fromRate": 2230
+    },
+    {
+     "slug": "tinga-lodge",
+     "name": "Tinga Lodge",
+     "key": "Tinga Lodge",
+     "kind": "camp",
+     "intro": "Tinga Lodge brings back the soul of old world safaris with a new level of comfort. It’s a place where you’ll not just see the wild, you’ll feel a part of it.",
+     "description": "River Facing Luxury at Lion Sands Tinga Lodge Discover nine elegant suites overlooking the Sabie River, where vintage safari style meets modern luxury. Each suite offers a private deck and plunge pool, perfect for watching hippos, elephants, and giraffes pass by.Unwind in your riverside sanctuary, then connect via elevated walkways to the main lodge with its spa, bar lounge, pool, and open air boma.At night, fall asleep to the soothing sounds of the African bush, a true Big 5 safari experience in the heart of Sabi Sand Reserve.",
+     "units": [
+      "9 Suites",
+      "Hinkwenu Residence"
+     ],
+     "features": [
+      "Tinyeleti Treehouse: Overnight Bush Experience",
+      "Community Experience",
+      "Mack & Madi Kids Adventure",
+      "Private Suite Pool",
+      "Fine Dining",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives",
+      "Walking Safaris",
+      "Celebrations & Honeymoons",
+      "Morning Bush Walk",
+      "Stargazing",
+      "Kids Venue"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f88fd26ad74ba7b03_Lion%20Sands%20Tinga%20Lodge%20arrival%20safari%20vehicles%20-%20Medium.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f88fd26ad74ba7b03_Lion%20Sands%20Tinga%20Lodge%20arrival%20safari%20vehicles%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f575dca03a5a33e90_Lion%20sands%20Tinga%20Lodge%20Bar%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4fb65601920f91d3b0_Lion%20Sands%20Tinga%20Lodge%20Bush%20stop%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f9e392e85df51b427_Lion%20Sands%20Tinga%20Lodge%20fire%20deck%20morning%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4ff583e3b6695619a9_Lion%20Sands%20Tinga%20Lodge%20Main%20lodge%20veranda%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f224ce8193c468598_Lion%20Sands%20Tinga%20Lodge%20pool%20service%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f4b44a6c548548e33_Lion%20Sands%20Tinga%20Main%20Lodge1-1%20-%20Medium.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Tinga Suite",
+       "capacity": 2,
+       "quantity": 9,
+       "beds": "King Bed",
+       "from": 2924,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae73969db5ff6a100996_Lion%20Sands%20Tinga%20Lodge%20Suite1%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88fb3592288cf8a50b_Lion%20Sands%20Tinga%20Lodge%20Suite%20bedroom%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88fe990240c25b95b2_Lion%20Sands%20Tinga%20Lodge%20Suite%20outside%20deck%20loungers%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae8854f3043c3efcdeeb_TINGA%20SUITE-%20PRIVATE%20DECK%20AND%20PLUNGE%20POOL-1%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae8ac3485a0ff6f8c58c_Lion%20Sands%20Tinga%20Lodge%20suite%20triple%20setup6%20-%20Medium.webp"
+       ]
+      }
+     ],
+     "fromRate": 2924
+    },
+    {
+     "slug": "fish-eagle-residence",
+     "name": "Fish Eagle Residence",
+     "key": "Fish Eagle Residence",
+     "kind": "residence",
+     "intro": "A private safari retreat on the Sabie River with exclusive game drives, a personal service team, and front-row wildlife views",
+     "description": "Tucked deep along the Sabi River, Fish Eagle Residence is your private gateway to Africa’s soul. Here, nature comes to you, with elephants drinking at the river and birds carving the sky, while you savor every moment from your own secluded sanctuary. \nWith private air access and a hidden entrance, your days are yours to shape. Drift between sunrise safaris, barefoot bush walks, quiet family meals, refreshing swims in the 10 m lap pool, and wellness rituals set to the sounds of the wild. \nYour personal team, including a concierge, chef, butler, and field guide, ensures every detail is effortless. At Fish Eagle Residence, time slows, nature breathes, and you rediscover the luxury of simply being.",
+     "units": [
+      "One Luxury Villa"
+     ],
+     "features": [
+      "Treehouses",
+      "Community Experience",
+      "Private Suite Pool",
+      "Morning Bush Walk",
+      "Stargazing",
+      "Night Game Drives",
+      "All Inclusive",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives – Night & Day",
+      "Private Deck & Pool",
+      "Celebration Venue",
+      "Fine Dining | Kosher Dining",
+      "Artist Residency"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fa08569e115b84b08_Fish%20Eagle%20Residence%20-%20Drone%20view%203%20-%20July%202025%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2ff6dad159249fbaac_Fish%20Eagle%20Residence%20-%20Lounge%202%20-%20July%202025%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2f11a85677e0bec96f_Fish%20Eagle%20Residence%20-%20Outside%20Lounge%20-%20July%202025%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fd23e3fc83ec1086e_Fish%20Eagle%20Residence%20-%20Pool%20View%20-%20Medium.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2f7e281e3bd96f859a_Fish%20Eagle%20Residence%20-%20Suite%201%20-%20Bedroom%20-%20Medium.webp"
+     ],
+     "rooms": [
+      {
+       "name": "The Residence, exclusive use",
+       "capacity": 6,
+       "quantity": 1,
+       "beds": "2 Queen Beds / 1 Twin Bed",
+       "from": 11845,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fa08569e115b84b08_Fish%20Eagle%20Residence%20-%20Drone%20view%203%20-%20July%202025%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2ff6dad159249fbaac_Fish%20Eagle%20Residence%20-%20Lounge%202%20-%20July%202025%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2f11a85677e0bec96f_Fish%20Eagle%20Residence%20-%20Outside%20Lounge%20-%20July%202025%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fd23e3fc83ec1086e_Fish%20Eagle%20Residence%20-%20Pool%20View%20-%20Medium.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2f7e281e3bd96f859a_Fish%20Eagle%20Residence%20-%20Suite%201%20-%20Bedroom%20-%20Medium.webp"
+       ]
+      }
+     ],
+     "fromRate": 11845
+    },
+    {
+     "slug": "hinkwenu-residence",
+     "name": "Hinkwenu Residence",
+     "key": "Hinkwenu Residence",
+     "kind": "residence",
+     "intro": "A private safari retreat on the Sabie River with exclusive game drives, a personal service team, and front-row wildlife views",
+     "description": "Tucked deep along the Sabi River, Hinkwenu Residence is your private gateway to Africa’s soul. Here, nature comes to you, with elephants drinking at the river and birds carving the sky, while you savor every moment from your own secluded sanctuary. \nWith private air access and a hidden entrance, your days are yours to shape. Drift between sunrise safaris, barefoot bush walks, quiet family meals, refreshing swims in the 10 m lap pool, and wellness rituals set to the sounds of the wild. \nYour personal team, including a concierge, chef, butler, and field guide, ensures every detail is effortless. At Hinkwenu Residence, time slows, nature breathes, and you rediscover the luxury of simply being.",
+     "units": [
+      "One Luxury Villa"
+     ],
+     "features": [
+      "Treehouses",
+      "Community Experience",
+      "Private Suite Pool",
+      "Morning Bush Walk",
+      "Stargazing",
+      "Night Game Drives",
+      "All Inclusive",
+      "Wi-Fi"
+     ],
+     "experiences": [
+      "Game Drives – Night & Day",
+      "Private Deck & Pool",
+      "Celebration Venue",
+      "Fine Dining | Kosher Dining",
+      "Artist Residency"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a9db6d138c557a0998_Lion%20Sands%20Hinkwenu%20Residence2%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a9b2fec276ad9c8930_Lion%20Sands%20Hinkwenu%20Residence3%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a992250d7e9501e840_Lion%20sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bathroom%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a95cae7eaba9925905_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bedroom%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a93b0326fa7d954c72_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20Lounge%20-%20Medium.png",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a911a85677e0bfbb5e_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20outside%20veranda%20-%20Medium.png"
+     ],
+     "rooms": [],
+     "fromRate": null
+    }
+   ]
+  },
+  {
+   "slug": "londolozi-reserve",
+   "name": "Londolozi Reserve",
+   "rsv": "RSV-2026-000007",
+   "area": "Sabi Sand",
+   "province": "Mpumalanga",
+   "stay": {
+    "ledgerId": "STY-2026-115702",
+    "tagline": "\"Londolozi: Where Wild Africa Awakens the Soul\"",
+    "quote": "The camps & villas of the Londolozi Reserve offers an harmonious blend of heritage and luxury, providing guests with an authentic safari experience deeply rooted in family tradition and a profound connection to the land.",
+    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681cbfa0b_d1752420d_682dcf2de25f02c9a0908c21_Londolozi__2018_Londolozi-Game-Reserve_-Private-Granite.",
+    "gallery": [
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/19f194a5f_877070f71_683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView_20_1_.",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/39ba130c1_e1f290e07_683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cdf86ead6_674f9b2b6_683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3b33103f1_66aced96b_683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/df5a72e77_3e04e1114_683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2cfca10df_198af2b8e_683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_.jpg"
+    ],
+    "bestMonths": "May - October | Dry Season",
+    "bestMonthsNote": "May to October - Dry Season / Prime Safari Time These cooler, drier months are widely considered the best time to visit Londolozi for exceptional wildlife viewing. Here's why:\nUnmatched Wildlife Sightings. Vegetation is sparse, and animals gather around waterholes, making them easier to spot. Leopard sightings are more frequent.",
+    "airport": "Kruger Mpumalanga International Airport",
+    "airportDirections": "In short there are three major airport serving the Sabi Sands: Kruger Mpumalanga International Airport (for lodges in the western sector) Skukuza Airport (for lodges in the southern sector) Hoedspruit Eastgate Airport (for lodges in the northern sector) We are happy to assist with road transfers from any of these airports to your lodge (only in combination with a confirmed reservation).",
+    "coords": {
+     "lat": -24.801461,
+     "lng": 31.498252
+    },
+    "why": [
+     {
+      "title": "A Spiritual Return to the Wild - An Original",
+      "body": "Londolozi is not just a safari destination. It’s a spiritual return to the wild, a sanctuary where nature, luxury, and legacy converge to offer something truly rare: deep, personal transformation. You're not just witnessing the wild. You’re becoming part of it."
+     }
+    ],
+    "experiences": {
+     "paras": [],
+     "items": [
+      "Family & Generational Experiences",
+      "Safari Game Drives - Big 5",
+      "Conservation & Eco Mindfullness",
+      "Photo Lab",
+      "Wellness & Health",
+      "Honeymoon & Couples"
+     ]
+    },
+    "features": {
+     "paras": [
+      "Camps and Villas thoughtfully cater to both families and couples, featuring private heated plunge pools, open-air bathtubs, and interconnected suite options. Designed with a strong focus on togetherness, each space reflects Londolozi’s deep commitment to family and community."
+     ],
+     "items": []
+    },
+    "onlyHere": [
+     "At Londolozi, safari is a journey of self-discovery, offering unmatched leopard sightings, soulful wellness experiences, and camps with unique character. Rooted in a legacy of conservation and storytelling, each stay supports sustainability and empowers local communities. Where luxury meets purpose in the wild. Each of the distinctive, soulful camps has its own unique vibe, thoughtfully designed to reflect the rhythm of the land."
+    ],
+    "country": "South Africa",
+    "countrySlug": "south-africa",
+    "regionSlug": "africa",
+    "status": "unclassified",
+    "statusDate": null
+   },
+   "camps": [
+    {
+     "slug": "founders-camp",
+     "name": "Founders Camp",
+     "key": "Founders Camp",
+     "kind": "camp",
+     "intro": "Londolozi Founders Camp is a family-friendly luxury safari lodge in South Africa’s Sabi Sand Game Reserve, offering river-view chalets and unforgettable Big Five game drives. Set under ancient ebony trees, this camp blends heritage and comfort, making it ideal for families, couples, and multi-generational travelers.",
+     "description": "Londolozi Founders Camp is a family friendly luxury safari lodge in South Africa’s Sabi Sand Game Reserve, offering river view chalets and unforgettable Big Five game drives. Set under ancient ebony trees, this camp blends heritage and comfort, making it ideal for families, couples, and multi generational travelers. With inter leading suites, private decks, daily yoga, and immersive bush experiences, guests enjoy close wildlife encounters, thoughtful hospitality, and a deep sense of connection to nature, making it a soulful, accessible safari for all ages.",
+     "units": [
+      "Superior Family Chalet",
+      "Superior Chalets",
+      "Family Chalets"
+     ],
+     "features": [
+      "Family-friendly with interleading chalets",
+      "Riverside views of the Sand River",
+      "Daily yoga classes under a 500-year-old ebony tree",
+      "Rich history and connection to Londolozi's origins"
+     ],
+     "experiences": [
+      "Game Drives: Twice daily in open Land Rovers",
+      "Nature Walks: Guided walks exploring the bush",
+      "Yoga: Daily classes on the riverside deck",
+      "Children’s Program: Cubs Den with educational activities"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f465a9e39c1540516b179_Londolozi-Founders-Camp-Main-Area-Long-Shot-2-Elsa-Young-Low-Res-copy.jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f465a9e39c1540516b179_Londolozi-Founders-Camp-Main-Area-Long-Shot-2-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f465ae77fd06ec4f40465_Londolozi-Founders-Camp-Main-Area-5-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4670dec22995f1ef4130_Londolozi-Founders-Camp-Main-Area-10-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ad06863802f245c34a_Londolozi-Founders-Camp-Family-Suite-1-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ab7d4ba6b703f3ec0f_Londolozi-Founders-Camp-Family-Suite-7-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45aa513e5ea52e445948_Londolozi-Founders-Camp-Family-Suite-9-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ab98d1ce1a79239713_Londolozi-Founders-Camp-Family-Suite-20-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f450b8db3706e081d48c2_Londolozi-Founders-Camp-Superior-Chalet-2-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f467050b6557054d438d4_Londolozi-Founders-Camp-Superior-Chalet-5-Elsa-Young-Low-Res-copy.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f450b88f07e479833aebc_Londolozi-Founders-Camp-Superior-Chalet-9-Elsa-Young-Low-Res-copy.jpg"
+     ],
+     "rooms": [
+      {
+       "name": "Family Chalet",
+       "capacity": 4,
+       "quantity": 3,
+       "beds": "King Bed",
+       "from": 1692,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45aa513e5ea52e445948_Londolozi-Founders-Camp-Family-Suite-9-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ab7d4ba6b703f3ec0f_Londolozi-Founders-Camp-Family-Suite-7-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f495d8729cf962d5537cf_Londolozi-Founders-Cap-Family-Suite-Study-Room.jpg"
+       ]
+      },
+      {
+       "name": "Superior Chalet",
+       "capacity": 2,
+       "quantity": 6,
+       "beds": "King Bed",
+       "from": 1942,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f450b8db3706e081d48c2_Londolozi-Founders-Camp-Superior-Chalet-2-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4670a9f7be4723c6904a_Londolozi-Founders-Camp-Superior-Chalet-Exterior-1-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f467050b6557054d438d4_Londolozi-Founders-Camp-Superior-Chalet-5-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f450b88f07e479833aebc_Londolozi-Founders-Camp-Superior-Chalet-9-Elsa-Young-Low-Res-copy.jpg"
+       ]
+      },
+      {
+       "name": "Superior Family Chalet",
+       "capacity": 4,
+       "quantity": 1,
+       "beds": "King Bed",
+       "from": 1942,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ab98d1ce1a79239713_Londolozi-Founders-Camp-Family-Suite-20-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45aa513e5ea52e445948_Londolozi-Founders-Camp-Family-Suite-9-Elsa-Young-Low-Res-copy.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f45ab7d4ba6b703f3ec0f_Londolozi-Founders-Camp-Family-Suite-7-Elsa-Young-Low-Res-copy.jpg"
+       ]
+      }
+     ],
+     "fromRate": 1692
+    },
+    {
+     "slug": "varty-camp",
+     "name": "Varty Camp",
+     "key": "Varty Camp",
+     "kind": "camp",
+     "intro": "Varty Camp is the original heart of Londolozi, where a century-old campfire still burns in tribute to the land’s legacy. Nestled along the Sand River, this iconic family-friendly safari camp features timber-decked chalets with private pools, outdoor showers, and shaded forest views. Interleading rooms welcome children aged six and up, making it ideal for families.",
+     "description": "Varty Camp is the original heart of Londolozi, where a century-old campfire still burns in tribute to the land’s legacy. Nestled along the Sand River, this iconic family-friendly safari camp features timber-decked chalets with private pools, outdoor showers, and shaded forest views. Interleading rooms welcome children aged six and up, making it ideal for families. The camp blends heritage and nature with wellness offerings like the Healing House, a gym, a photographic studio, and the historic Sparta Camp.",
+     "units": [
+      "2 Superior Chalets",
+      "8 Standard Chalets"
+     ],
+     "features": [
+      "Historic significance as Londolozi's original camp",
+      "Family-friendly accommodations with interleading chalets",
+      "Private plunge pools and timber decks overlooking riverine bush",
+      "Access to wellness facilities including Healing House and yoga deck",
+      "Photographic studio for capturing and editing wildlife moments",
+      "Rich cultural experiences and community engagement opportunities"
+     ],
+     "experiences": [
+      "Game Drives: Twice daily in open Land Rovers with experienced rangers and trackers",
+      "Nature Walks: Guided walks exploring the bush",
+      "Yoga: Daily classes on the riverside deck",
+      "Healing House: Wellness treatments and therapies",
+      "Photographic Studio: Editing sessions and equipment rental",
+      "Cultural Visits: Engage with local communities and learn about their traditions"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior%20(1).jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f58162a53e7038f335349_Londolozi-Varty-Camp-Mainarea3%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f595ddec22995f1fba1b9_Londolozi-Varty-Camp-Mainarea2%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9f7be4723d2b7e7_Londolozi-Varty-Camp-Superior-Chalet-Room2%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9b475056a15cb6d_Londolozi-Varty-Camp-Superior-Chalet-Deck%20(1).jpg"
+     ],
+     "rooms": [
+      {
+       "name": "Chalet",
+       "capacity": 2,
+       "quantity": 8,
+       "beds": "King Bed",
+       "from": 1386,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6840f39d2a50f01d82e07c7d_Londolozi-Varty-Camp-Standard-Chalet-Pool.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f59c2bca2b94185c43a03_Londolozi-Varty-Camp-Standard-Chalet-Room%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f59c25977bd8d0d197de6_Londolozi-Varty-Camp-Standard-Chalet-Bathroom%20(1).jpg"
+       ]
+      },
+      {
+       "name": "Superior Chalet",
+       "capacity": 2,
+       "quantity": 2,
+       "beds": "King Bed",
+       "from": 1691,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6840f3cbff2858237f576654_Londolozi-Varty-Camp-Superior-Chalet-Room2.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9f7be4723d2b7e7_Londolozi-Varty-Camp-Superior-Chalet-Room2%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f598ca9b475056a15cb6d_Londolozi-Varty-Camp-Superior-Chalet-Deck%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f59a1277668bb1513ca32_Londolozi-Varty-Camp-Superior-Chalet-Bathroom%20(1).jpg"
+       ]
+      }
+     ],
+     "fromRate": 1386
+    },
+    {
+     "slug": "tree-camp",
+     "name": "Tree Camp",
+     "key": "Tree Camp",
+     "kind": "camp",
+     "intro": "",
+     "description": "Londolozi Tree Camp is an ultra-luxury safari lodge set high in the treetops of South Africa’s Sabi Sand Game Reserve, offering a serene and romantic retreat for discerning travelers. With just six exclusive suites, each featuring private plunge pools, elegant interiors, and elevated views of the Sand River, Tree Camp promises unmatched privacy and style. Known for extraordinary leopard sightings, world-class game drives, and tranquil wellness experiences, it is ideal for couples and honeymooners seeking a sophisticated safari escape. The camp does not accommodate children under the age of 16",
+     "units": [
+      "Tree Camp Suites"
+     ],
+     "features": [
+      "Six exclusive suites nestled among ancient leadwood trees",
+      "Private plunge pools and outdoor showers with river views",
+      "Elegant interiors featuring Ralph Lauren design elements",
+      "Elevated walkways connecting suites and main areas",
+      "Access to wellness facilities and photographic studio",
+      "Ideal for romantic getaways and intimate gatherings"
+     ],
+     "experiences": [
+      "Game Drives: Twice daily in open Land Rovers with experienced rangers and trackers",
+      "Nature Walks: Guided walks exploring the bush",
+      "Yoga: Daily classes on the riverside deck",
+      "Healing House: Wellness treatments and therapies",
+      "Photographic Studio: Editing sessions and equipment rental",
+      "Cultural Visits: Engage with local communities and learn about their traditions"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f42ee134ebd745b276031_londo_treecamp9%20(1).jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f42ee134ebd745b276031_londo_treecamp9%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f42ee01d74a4247c2776c_londo_treecamp13%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52e352e6b29ac59f078a_Londolozi-Tree-Camp-room.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52eaa9f7be4723ce32c3_londo_treecamp_suite3%20(1).jpg"
+     ],
+     "rooms": [
+      {
+       "name": "Tree Camp Suite",
+       "capacity": 2,
+       "quantity": 6,
+       "beds": "King",
+       "from": 2385,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f5309ed9923cc8f215f91_Londolozi-Tree-Camp-room%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52eaa9f7be4723ce32c3_londo_treecamp_suite3%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f5309533f44311ff4a044_londo_treecamp_suite21%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f5309f89bd93dc039ba54_Londolozi-Tree-Camp-Shower%20(1).jpg"
+       ]
+      }
+     ],
+     "fromRate": 2385
+    },
+    {
+     "slug": "pioneer-camp",
+     "name": "Pioneer Camp",
+     "key": "Pioneer Camp",
+     "kind": "camp",
+     "intro": "Londolozi Pioneer Camp offers a private, ultra-luxury safari experience in the heart of South Africa’s Sabi Sand Game Reserve. With just three exclusive suites, this secluded camp is ideal for families or couples seeking personalized service, stunning river views, and deep immersion in the wild. Enjoy private plunge pools, outdoor showers, and glass walkways connecting the suites—all surrounded by ancient ebony trees.",
+     "description": "Londolozi Pioneer Camp offers a private, ultra luxury safari experience in the heart of South Africa’s Sabi Sand Game Reserve. With just three exclusive suites, this secluded camp is ideal for families or couples seeking personalized service, stunning river views, and deep immersion in the wild. Enjoy private plunge pools, outdoor showers, and glass walkways connecting the suites, all surrounded by ancient ebony trees. Pioneer Camp blends modern comfort with Londolozi’s rich conservation legacy, offering unmatched game viewing, including frequent leopard sightings, wellness treatments, and access to a photographic studio.",
+     "units": [
+      "Pioneer Suites",
+      "Private River Views"
+     ],
+     "features": [
+      "Secluded setting among 500-year-old ebony trees",
+      "Three exclusive suites with river views",
+      "Interconnected suites via glass sky walkways",
+      "Interactive kitchen and explorer lounge",
+      "Ideal for multi-generational families or romantic getaways",
+      "Access to wellness facilities and photographic studio"
+     ],
+     "experiences": [
+      "Game Drives",
+      "Nature Walks",
+      "Yoga",
+      "Healing House",
+      "Photographic Studio",
+      "Cultural Visits"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c9d49e0448d675f50_Londolozi-Pioneer-Camp-extension.jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c2ee52d8254370f6e_Londolozi-Pioneer-Camp-extension2.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c9d49e0448d675f50_Londolozi-Pioneer-Camp-extension.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c25cb90b783f4bc70_Londolozi-Pioneer-Camp-Entrance.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2cebcae2dd628bf53c_Londolozi-Pioneer-Camp-maindeck.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c98d1ce1a79299124_Londolozi-Pioneer-Camp-maindeck2.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2cc4c90c3044495005_Londolozi-Pioneer-Camp-maindeck3.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2cbca2b94185be17e9_Londolozi-Pioneer-Camp-room3.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c0bf59753a2383308_Londolozi-Pioneer-Camp-pool.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c134ebd745b2ee67b_Londolozi-Pioneer-Camp-room.jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2d4a692fe5bc57212f_Londolozi-Pioneer-Camp-room2.jpg"
+     ],
+     "rooms": [
+      {
+       "name": "Pioneer Suite",
+       "capacity": 2,
+       "quantity": 3,
+       "beds": "King",
+       "from": 2385,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2d4a692fe5bc57212f_Londolozi-Pioneer-Camp-room2.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f505dbca2b94185bed238_Londolozi-pioneer-camp-privatepool.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f505d8d6c3ac7ba9893a1_Londolozi-pioneer-camp-room-bathroom.jpg"
+       ]
+      }
+     ],
+     "fromRate": 2385
+    },
+    {
+     "slug": "private-granite-suites",
+     "name": "Private Granite Suites",
+     "key": "Private Granite Suites",
+     "kind": "suite",
+     "intro": "",
+     "description": "Londolozi’s Private Granite Suites offer an exclusive, ultra-luxury safari experience in the heart of South Africa’s Sabi Sand Game Reserve. Designed for discerning travelers and honeymooners, these three private suites feature seamless indoor-outdoor living, bold granite finishes, riverfront plunge pools, and outdoor bathtubs with panoramic wildlife views. With award-winning game drives, gourmet dining, and personalized service, the Granite Suites provide a secluded, elegant retreat immersed in nature. Ideal for private bookings or romantic escapes.",
+     "units": [
+      "Granite Suite"
+     ],
+     "features": [
+      "Features:Private heated swimming pool",
+      "Outdoor river-view bath",
+      "Indoor and outdoor showers",
+      "Air-conditioning and mosquito net",
+      "Minibar and outdoor sala",
+      "Wi-Fi access",
+      "Inclusions:All meals, teas, and coffees",
+      "Soft drinks, house wines, local spirits, and beers",
+      "Two daily game drives and nature walks",
+      "Transfers to/from Londolozi airstrip",
+      "Emergency medical evacuation insurance",
+      "Laundry services",
+      "Exclusions:Conservation fees and gate fees",
+      "Premium wines and spirits",
+      "Spa treatments",
+      "Taxes: VAT included; conservation fee of R958 per person per night applies"
+     ],
+     "experiences": [],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6840f2f57842218cbc43ebad_Londolozi-Private-Granite-Suite-PoolDeck.jpg",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f684b468620cdf876f47a_Londolozi-Private-Granite-Suite-MainArea3%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f67e4ca0bfbb6204abd29_Londolozi-Private-Granite-Suite-Mainroom2%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f684b55e9715b08cb1ea0_Londolozi-Private-Granite-Suite-Room%20(1).jpg",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f684bcd0897e07db94c7c_Londolozi-Private-Granite-Suite-Bathroom%20(1).jpg"
+     ],
+     "rooms": [
+      {
+       "name": "Private Granite Suite",
+       "capacity": 2,
+       "quantity": 3,
+       "beds": "King",
+       "from": 3000,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6840f2592d09da9f31ff0b69_Londolozi-Private-Granite-Suite-Mainroom%20(1).webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f684b55e9715b08cb1ea0_Londolozi-Private-Granite-Suite-Room%20(1).jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck%20(1).jpg"
+       ]
+      }
+     ],
+     "fromRate": 3000
+    },
+    {
+     "slug": "private-villas",
+     "name": "Private Villas",
+     "key": "Private Villas",
+     "kind": "residence",
+     "intro": "Whether you're celebrating a special occasion or craving space to reconnect, Londolozi’s private villas combine refined design, wild luxury, and deep immersion in nature—creating a safari retreat like no other. Pioneer Homestead Villa Many families have come and visited Londolozi’s Pioneer Homestead looking for privacy and exclusive use of a home in Africa. The wonderful thing about Pioneer Homestead is that, because it has only three suites, private and exclusive use is easy and very popular for groups of friends travelling together and multi-generational families.",
+     "description": "Londolozi’s Private Villas offer exclusive-use safari experiences in South Africa’s iconic Sabi Sand Game Reserve, perfect for families, couples, or small groups seeking total privacy. From the ultra-luxurious Granite Suites overlooking the Sand River to the heritage-rich Pioneer Camp with interconnecting skywalks, each villa provides private plunge pools, personalized service, and world-class game drives.",
+     "units": [
+      "Pioneer Homestead Family Villa"
+     ],
+     "features": [
+      "Unmatched Privacy:Secluded riverfront or forest settings",
+      "Private decks with heated plunge pools",
+      "Outdoor bathtubs and showers with nature views",
+      "Elegant Safari Design:Contemporary interiors with natural stone, wood, and luxury finishes",
+      "Expansive glass walls and sky walkways (Pioneer Camp)",
+      "Sophisticated yet soulful atmosphere inspired by nature"
+     ],
+     "experiences": [
+      "Tailored Experiences:Personalized game drives with private ranger & tracker",
+      "Custom dining experiences (in-villa or bush meals)",
+      "Dedicated butler and private hospitality team"
+     ],
+     "hero": null,
+     "gallery": [],
+     "rooms": [],
+     "fromRate": null
+    }
+   ]
+  },
+  {
+   "slug": "lalibela-reserve",
+   "name": "Lalibela Reserve",
+   "rsv": "RSV-2026-000005",
+   "area": "Eastern Cape",
+   "province": "Eastern Cape",
+   "stay": {
+    "ledgerId": "STY-2026-641215",
+    "tagline": "Big‑Five Wilderness, Refined by Soul.",
+    "quote": "Venture into a wild canvas where every sunrise and star-lit evening rekindle your spirit. This is Lalibela.",
+    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3251b8987_a7c3251be_688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+    "gallery": [
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d63280581_7f8658f84_688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/06fd6fa6b_7a5db0146_688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b3b49ee94_2dba371db_688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d14ea904c_b1e6b6f1c_688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3f86c1fdf_8b52cacc6_688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2f969f8de_5b053f155_688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a43d2be8d_cb1e2aeaa_688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8719d62cf_e4e189bdc_688fe9f9629a2784c13325be_Lalibela_Kichaka_Livingroom2.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/93b1f04c8_a1f9e6ba0_688fe90e5b562db6bb680638_Lalibela_Inzolo_Livingroom.webp",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1feed142_f9806b9c4_688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio.webp"
+    ],
+    "bestMonths": "April - October",
+    "bestMonthsNote": "Dry months with optimal wildlife viewing attracted to waterholes, crisp sunny days, and clearer skies for game-spotting and star-gazing.",
+    "airport": "25. Airport name Port Elizabeth International Airport (PLZ); also accessible via Gqeberha.",
+    "airportDirections": "From PLZ, head 80 km (about 1 hr 10 min) via N2 toward Grahamstown, then turn off at Bushman’s River and follow signs to Lalibela. Port Elizabeth is the preferred gateway.",
+    "coords": {
+     "lat": -33.470578,
+     "lng": 26.25462
+    },
+    "why": [
+     {
+      "title": "Rooted in Wild, Evolved by Heart",
+      "body": "Lalibela invites you into a living conservation story. From rewilding former farms to nurturing wildlife corridors and human resilience. Ideal for families seeking discovery, couples craving romance in the bush, wellness-focused guests drawn to peaceful spas and starry skies, conservation-minded travelers, and solo explorers hungry for soul‑stirring immersion."
+     }
+    ],
+    "experiences": {
+     "paras": [],
+     "items": [
+      "Open-vehicle Big‑Five safaris at dawn and dusk",
+      "Guided bush-walks revealing the micro‑wildlife",
+      "Night safaris under starlit skies",
+      "Birdwatching – including Knysna turaco & Loerie",
+      "Starlit boma dinners beside crackling fires",
+      "Wellness moments at spa & rim-flow pools",
+      ""
+     ]
+    },
+    "features": {
+     "paras": [],
+     "items": [
+      "Malaria-free wilderness in 10,500 ha reserve",
+      "All tourism profits reinvested in conservation & communities",
+      "Zero‑plastic policy & invasive‑tree eradication",
+      "Exclusive wildlife encounters, no public roads inside",
+      "Private plunging pools & alfresco showers",
+      "Personalized service from expert community guides",
+      ""
+     ]
+    },
+    "onlyHere": [
+     "Whether you’re a honeymoon couple gazing from your plunge pool, a family tracing wildlife tracks, an adventurous solo traveler pursuing lions at first light, or a multigenerational group celebrating together. Lalibela blends wild heart with deep soul. You’ll carry the feeling of this place long after your journey ends."
+    ],
+    "country": "South Africa",
+    "countrySlug": "south-africa",
+    "regionSlug": "africa",
+    "status": null,
+    "statusDate": null
+   },
+   "camps": [
+    {
+     "slug": "marks-camp",
+     "name": "Mark's Camp",
+     "key": "Marks Camp",
+     "kind": "camp",
+     "intro": "Family-friendly and relaxed, Mark’s Camp offers eight stone-and-thatch chalets—including four family suites—",
+     "description": "The camp is surrounded by indigenous bush and close to a busy waterhole. With a child-friendly safari program and interleading rooms, it’s ideal for families or first-time safari travelers.",
+     "units": [
+      "4 Standard Chalets (King or Twin)",
+      "4 Family Chalets (partitioned for parents + kids)",
+      "Total: 8 rooms (18 adults + 8 children)"
+     ],
+     "features": [
+      "Family-Friendly Safari Lodge",
+      "Relaxed Safari Atmosphere",
+      "Waterhole Views Near Camp"
+     ],
+     "experiences": [
+      "Kid-Friendly Game Drives",
+      "Elephant Sightings by the Pool",
+      "Wildlife Education for Young Explorers"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2ae20d6bf229be0bc9_Lalibela_MarksCamp_Aerial.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2fcf1bd5a5f8675931_Lalibela_MarksCamp_LivingRoom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb31ed5de26a2b6642e6_Lalibela_MarksCamp_Pool.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb35e8da3b98ba1a7cbe_Lalibela_MarksCamps_bedroom.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Standard Chalet",
+       "capacity": 2,
+       "quantity": 4,
+       "beds": "King Bed",
+       "from": 1100,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c23898d21bab806cde338c_LalibelaReserve_MarksCamp_StandardChalet_Bedroom2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238a1fdb7362aa8ee82ec_LalibelaReserve_MarksCamp_StandardChalet_Bedroom.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238a5aad088c05b607ea0_LalibelaReserve_MarksCamp_StandardChalet_Patio.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238a909086bfb97a7752d_LalibelaReserve_MarksCamp_StandardChalet_Bathroom.webp"
+       ]
+      },
+      {
+       "name": "Family Chalet",
+       "capacity": 5,
+       "quantity": 4,
+       "beds": "King + Bunk/Sofa Bed",
+       "from": 1350,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238b7656583fd7738f10b_LalibelaReserve_MarksCamp_FamilyChalet_Bedroom.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238bf1ffbfdc0af7922d7_LalibelaReserve_MarksCamp_FamilyChalet_Bedroom2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238c32cb1301d48f51584_LalibelaReserve_MarksCamp_FamilyChalet_Patio.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c238cba23cda3fb1ed5afc_LalibelaReserve_MarksCamp_FamilyChalet_Bathroom.webp"
+       ]
+      }
+     ],
+     "fromRate": 1100
+    },
+    {
+     "slug": "kichaka-lodge",
+     "name": "Kichaka Lodge",
+     "key": "Kichaka Lodge",
+     "kind": "camp",
+     "intro": "Set on the edge of a waterhole, Kichaka Lodge features ten elegant suites with heated plunge pools and floor-to-ceiling views of the African bush.",
+     "description": "Kichaka Lodge is a modern, five-star safari experience with gourmet dining & personalized service. Ideal for honeymooners or luxury-seeking couples who want to combine romance with wildlife adventure.",
+     "units": [
+      "10 Luxury Suites with Plunge Pools (King or Twin)",
+      "Total: 10 rooms (Up to 20 guests)"
+     ],
+     "features": [
+      "Suites with Heated Plunge Pools",
+      "Contemporary Five-Star Comfort",
+      "Waterhole Views from Every Suite"
+     ],
+     "experiences": [
+      "Private Wildlife Sightings from Your Deck",
+      "Sunset Drinks Overlooking the Wild",
+      "All-Day Safari Luxury and Fine Dining"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe9f33dce1d45ad8151ab_Lalibela_Kichaka_Livingroom.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe9f33dce1d45ad8151ab_Lalibela_Kichaka_Livingroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe9f9629a2784c13325be_Lalibela_Kichaka_Livingroom2.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe9fb06f1da9ab67c50d1_Lalibela_Kichaka_Livingroom3.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe9feeba9abb3d747fa49_Lalibela_Kichaka_Bedroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fea005c4238978404ed10_Lalibela_Kichaka_Pool.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fea0293d0d395be11cf08_Lalibela_Kichaka_Bathroom.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Water Facing Suite",
+       "capacity": 2,
+       "quantity": 3,
+       "beds": "King Bed",
+       "from": 1486,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fac5458cf0ec3153eaa_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fb0516b464d431b3b0d_LalibelaReserve_Kichaka_WaterFacingSuite_Interior.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fb344bd3e87f3e87400_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fbaf410b23dc7912118_LalibelaReserve_Kichaka_WaterFacingSuite_Bathroom.webp"
+       ]
+      },
+      {
+       "name": "Bush Facing Suite",
+       "capacity": 2,
+       "quantity": 7,
+       "beds": "King Bed",
+       "from": 1486,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fec05c4abe7abfb3196_LalibelaReserve_Kichaka_BushFacingSuite_Interior.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22ff5dcac5e3e3e04f5db_LalibelaReserve_Kichaka_BushFacingSuite_Exterior.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22ff8e7664349e4a8aeb1_LalibelaReserve_Kichaka_BushFacingSuite_Bedroom.webp"
+       ]
+      }
+     ],
+     "fromRate": 1486
+    },
+    {
+     "slug": "lentaba-lodge",
+     "name": "Lentaba Lodge",
+     "key": "Lentaba Lodge",
+     "kind": "camp",
+     "intro": "Perched on a hillside overlooking a game-rich valley, Lentaba Lodge features ten classic thatched chalets—designed for immersive comfort.",
+     "description": "The lodge offers sweeping views, elevated dining, and relaxed luxury in the heart of the reserve. A great fit for couples or small groups who value privacy with an African ambiance.",
+     "units": [
+      "5 Luxury Chalets (bath and shower)",
+      "5 Classic Chalets (shower only)",
+      "Total: 10 rooms (Up to 20 guests)"
+     ],
+     "features": [
+      "Classic Thatched Chalet Style",
+      "Elevated Dining with Valley Views",
+      "Blend of Luxury and Authentic Safari"
+     ],
+     "experiences": [
+      "Morning Game Drives into Five Biomes",
+      "Dining with Wildlife Views",
+      "Quiet Evenings on Your Private Deck"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fedad13351d8f49ae29ed_Lalibela_Lentaba_Aerial.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fedad13351d8f49ae29ed_Lalibela_Lentaba_Aerial.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fee5d579ab2c38f5fe219_Lalibela_Lentaba_Diningroom%20(1).webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fedc0c4cd195a472b7849_Lalibela_Lentaba_Bedroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fedc306978f9a77e14857_Lalibela_Lentaba_Pool.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fedc514a2a015107ac67b_Lalibela_Lentaba_Bathroom.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Classic Chalet",
+       "capacity": 2,
+       "quantity": 5,
+       "beds": "King Bed",
+       "from": 1050,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22c7222171894d3fc72bc_classic_room_at_lentaba_lodge_2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22c7b79015061a65cfaa5_classic_room_at_lentaba_lodge1.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22c85c120bf9b2723c55d_lentaba_classic_room_31.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22c85e51aad3c7ba16733_lentaba_classic_bathroom_1.webp"
+       ]
+      },
+      {
+       "name": "Luxury Chalet",
+       "capacity": 2,
+       "quantity": 5,
+       "beds": "King Bed",
+       "from": 1180,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22e16d1949f0985631b7a_lentaba_luxury_room_2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22e1eb1d5cfb99ce310ec_lentaba_luxury_room_deck2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22e2f70a8ebff5751e734_bathroom_in_luxury_suite_at_lentaba_lodge_-__lalibela_game_reserve.webp"
+       ]
+      }
+     ],
+     "fromRate": 1050
+    },
+    {
+     "slug": "inzolo-lodge",
+     "name": "Inzolo Lodge",
+     "key": "Inzolo Lodge",
+     "kind": "camp",
+     "intro": "Tucked away in a quiet valley, Inzolo Lodge offers just four secluded suites that blend harmoniously with the surrounding landscape.",
+     "description": "Each suite opens to a private deck with floor-to-ceiling windows, offering unobstructed views of the wilderness. Designed for those seeking silence, solitude, and an intimate connection with nature.",
+     "units": [
+      "4 Suites (King or Twin)",
+      "Total: 4 rooms (Up to 8 guests)"
+     ],
+     "features": [
+      "Hidden Valley Seclusion",
+      "Panoramic Glass Wall Suites",
+      "Perfect for Couples or Solo Travelers"
+     ],
+     "experiences": [
+      "Birdwatching from Bed",
+      "Guided Walks in Untouched Terrain",
+      "Immersive Solitude in the Bush"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe90910ca253520d320a9_Lalibela_Inzolo_Bedroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe90e5b562db6bb680638_Lalibela_Inzolo_Livingroom.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Luxury Chalet",
+       "capacity": 2,
+       "quantity": 5,
+       "beds": "5 King Beds",
+       "from": 800,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c235e6f60a8e254a48e72e_LalibelaReserve_InzoloLodge_LuxuryChalet_Patio.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c235f62b7952f8b5cf77b7_LalibelaReserve_InzoloLodge_LuxuryChalet_Bedroom2.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c235f9110b28f925a236e4_LalibelaReserve_InzoloLodge_LuxuryChalet_Bedroom.jpg",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c235fb790f305f02f4d8d0_LalibelaReserve_InzoloLodge_LuxuryChalet_View.jpg"
+       ]
+      }
+     ],
+     "fromRate": 800
+    },
+    {
+     "slug": "tree-tops-safari-lodge",
+     "name": "Tree Tops Safari Lodge",
+     "key": "Tree Tops Safari Lodge",
+     "kind": "camp",
+     "intro": "Suspended among indigenous trees, Tree Tops Safari Lodge offers elevated tented suites with panoramic bush views and private decks.",
+     "description": "Designed for couples and solo travelers seeking intimacy and quiet, it’s an eco-luxury escape that brings the sounds and sights of the wild right to your door. A true forest-canopy retreat within a Big Five safari setting.",
+     "units": [
+      "5 Luxury Tented Suites (King or Twin)",
+      "Total: 5 rooms (Up to 10 guests)",
+      "Note: Adult only Lodge"
+     ],
+     "features": [
+      "Elevated Tented Suites in the Forest",
+      "Adults-Only Tranquility and Romance",
+      "Eco-Friendly Canvas Design"
+     ],
+     "experiences": [
+      "Wake to Birdsongs and Wild Views",
+      "Intimate Bush Walks from Your Doorstep",
+      "Safari Sundowners on Your Private Deck"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff28f1be3bee992452c_Lalibela_TreeTops_Bedroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff276417cc8ac6ee4cc_Lalibela_TreeTops_Patio.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff2cad39483c4f9321c_Lalibela_TreeTops_Bar.webp"
+     ],
+     "rooms": [
+      {
+       "name": "Canvas Canopy Suite",
+       "capacity": 2,
+       "quantity": 5,
+       "beds": "King Bed",
+       "from": 720,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c23190027a15f8d13e96ef_LalibelaReserve_TreetopsSafariLodge_View.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c2319b398347ad60181611_LalibelaReserve_TreetopsSafariLodge_Exterior.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c2319edd6f986c2f07572b_LalibelaReserve_TreetopsSafariLodge_Bedroom.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c231a376ac4a32172b4eac_LalibelaReserve_TreetopsSafariLodge_Bedroom2.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c231a6476ced96f8997cb0_LalibelaReserve_TreetopsSafariLodge_Bathroom.webp"
+       ]
+      }
+     ],
+     "fromRate": 720
+    },
+    {
+     "slug": "mills-manor-residence",
+     "name": "Mills Manor Residence",
+     "key": "Mills Manor Residence",
+     "kind": "residence",
+     "intro": "Mills Manor blends heritage elegance with exclusive safari access. With five air-conditioned en-suite rooms, a private pool, and dedicated staff,",
+     "description": "The Mills Manors Private Residence offers total seclusion in the heart of the Eastern Cape bush. Ideal for multi-generational travel or milestone celebrations in a malaria-free Big Five reserve.",
+     "units": [
+      "3 King Rooms",
+      "2 Twin/King Convertible Rooms",
+      "Total: 5 rooms (Up to 10 guests, exclusive-use only)"
+     ],
+     "features": [
+      "Exclusive-Use Private Villa",
+      "Heritage-Style Safari Luxury",
+      "Ideal for Multi-Generational Travel"
+     ],
+     "experiences": [
+      "Private Game Drives on Your Schedule",
+      "Bush Dining with Private Chef and Staff",
+      "Wildlife Viewing from Your Own Veranda"
+     ],
+     "hero": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+     "gallery": [
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec1df24d1d18757823b6_Lalibela_MillsManor_Bedroom.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec1f128cc445e989f97c_Lalibela_MillsManor_Bedroom2.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec214dc52340eecc2759_Lalibela_MillsManor_Bedroom3.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec258b894497a0dfee29_Lalibela_MillsManor_Pool.webp",
+      "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec2877516719c3de25b0_Lalibela_MillsManor_Bathroom.webp"
+     ],
+     "rooms": [
+      {
+       "name": "The Manor, exclusive use",
+       "capacity": 10,
+       "quantity": null,
+       "beds": "5 King Beds",
+       "from": 4700,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c2341dffdad795ac86b8bf_LalibelaReserve_MillsManor_Bedroom.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c23426804a059c3db9db44_LalibelaReserve_MillsManor_View.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c2342e6696296e4944240e_LalibelaReserve_MillsManor_Entrance.webp",
+        "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c2343007e28150fa59f1bc_LalibelaReserve_MillsManor_Bathroom.webp"
+       ]
+      }
+     ],
+     "fromRate": 4700
+    }
+   ]
+  }
+ ]
+}

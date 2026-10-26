@@ -3,6 +3,9 @@
 // /safaris, residences under /gatherings, routes under /overland/[country]
 // and voyages under /voyages/[waters] (audit addendum, 25 Oct 2026); ships
 // have their own page at /voyages/ships/[ship]. Slugs are the library's own.
+// Reserves filed as Stay records in the library live at /safaris/[reserve].
+export const RESERVE_SLUGS = ["lion-sands", "londolozi-reserve", "lalibela-reserve"];
+
 export type RecordKind = "stay" | "reserve" | "camp" | "residence" | "ship" | "voyage" | "route";
 
 export function recordHref(kind: RecordKind, slug: string, parent?: string) {
@@ -13,6 +16,6 @@ export function recordHref(kind: RecordKind, slug: string, parent?: string) {
     case "ship": return `/voyages/ships/${slug}`;
     case "voyage": return `/voyages/${parent}/${slug}`; // parent = the waters, e.g. raja-ampat
     case "route": return `/overland/${parent}/${slug}`; // parent = the country
-    default: return `/stays/${slug}`;
+    default: return RESERVE_SLUGS.includes(slug) ? `/safaris/${slug}` : `/stays/${slug}`;
   }
 }

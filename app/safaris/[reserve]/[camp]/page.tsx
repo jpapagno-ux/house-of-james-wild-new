@@ -1,0 +1,93 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import SiteHeader from "@/components/ledger/SiteHeader";
+import Breadcrumbs from "@/components/ledger/Breadcrumbs";
+import FaqBlock from "@/components/ledger/FaqBlock";
+import JsonLd from "@/components/ledger/JsonLd";
+import PlanBand from "@/components/destination/PlanBand";
+import SuiteCards from "@/components/reserve/SuiteCards";
+import { GalleryMosaic, GlanceBar } from "@/components/record/Frame";
+import { CardRail, Features, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
+import { KIND_LABEL, RESERVES, campBySlug, campReady, campStatus, reserveBySlug, usd } from "@/lib/content/reserves";
+import { stampForStatus } from "@/lib/ledger/status";
+import { regionBySlug } from "@/lib/content/regions";
+import { isBuilt } from "@/lib/routes";
+import { absoluteUrl, buildMetadata } from "@/lib/seo";
+import { graph, ids } from "@/lib/schema";
+
+// CAMP template (/safaris/[reserve]/[camp]): a lodge, camp or residence
+// inside a reserve, on its own page and always tied to its parent.
+//   hero (+ founder mark) › nav › breadcrumbs: Safaris › country › reserve › camp
+//   overview (answer, the camp's own words, facts incl. the parent reserve)
+//   SUITES: card per suite with photo strip, sleeps, beds, from rate
+//   features + experiences › gallery › the other camps on the reserve › plan
+
+export const dynamicParams = false;
+export function generateStaticParams() { return RESERVES.flatMap((r) => r.camps.filter(campReady).map((c) => ({ reserve: r.slug, camp: c.slug }))); }
+
+function load(reserve: string, camp: string) {
+  const r = reserveBySlug(reserve);
+  const c = r ? campBySlug(r, camp) : undefined;
+  return r && c ? { r, c } : null;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ reserve: string; camp: string }> }) {
+  const p = await params; const x = load(p.reserve, p.camp);
+  if (!x) return {};
+  return buildMetadata({ title: `${x.c.name}, ${x.r.name}: Suites & Rates | James Wild & Co Safaris`, description: `${x.c.name} on ${x.r.name}, ${x.r.area}. ${(x.c.intro || x.c.description).slice(0, 110)}`, path: `/safaris/${x.r.slug}/${x.c.slug}`, image: x.c.hero ? { url: x.c.hero, alt: x.c.name } : undefined, noindex: true });
+}
+
+export default async function CampPage({ params }: { params: Promise<{ reserve: string; camp: string }> }) {
+  const p = await params; const x = load(p.reserve, p.camp);
+  if (!x) notFound();
+  const { r, c } = x;
+  const path = `/safaris/${r.slug}/${c.slug}`, rpath = `/safaris/${r.slug}`;
+  const region = r.stay.regionSlug ? regionBySlug(r.stay.regionSlug) : undefined;
+  const countryPath = region && r.stay.countrySlug ? `/destinations/${region.slug}/${r.stay.countrySlug}` : null;
+  const st = campStatus(r, c);
+  const stamp = st ? stampForStatus(st.status) : null;
+  const units = c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "";
+  const caps = c.rooms.map((m) => m.capacity).filter(Boolean) as number[];
+  const answer = `${c.name} is a ${KIND_LABEL[c.kind].toLowerCase()} on ${r.name} in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under the reserve's ${r.rsv}.${units ? ` ${units}.` : ""}${c.fromRate ? ` Registry rates start from ${usd(c.fromRate)}${c.kind === "camp" ? " per person, per night" : " as filed"}.` : ""}${r.stay.bestMonths ? ` Best months on the reserve: ${r.stay.bestMonths}.` : ""}${st ? ` ${st.line}.` : ""} Plan it with James or an advisor through Wild & Co Safaris.`;
+  const facts: [string, string][] = [["Reserve", `${r.name} · ${r.rsv}`], ["Type", KIND_LABEL[c.kind]], ...(units ? [["Suites", units] as [string, string]] : []), ...(caps.length ? [["Sleeps", Math.min(...caps) === Math.max(...caps) ? `${caps[0]} per suite` : `${Math.min(...caps)}–${Math.max(...caps)} per suite`] as [string, string]] : []), ...(c.fromRate ? [["From", `${usd(c.fromRate)} ${c.kind === "camp" ? "pp / night" : "as filed"}`] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ...(st ? [["The Ledger", `${stamp} · ${st.date.slice(0, 4)}`] as [string, string]] : [])];
+  const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path: rpath }, { name: c.name, path }];
+  const siblings = r.camps.filter((o) => o.slug !== c.slug && campReady(o));
+  const images = c.gallery.map((u, i) => ({ url: u, alt: `${c.name}, ${r.name}, photograph ${i + 1}` }));
+  const paragraphs = [c.intro, c.description].filter((t, i, a) => t && t.length > 40 && !(i === 1 && a[0] && t.startsWith(a[0].slice(0, 40))));
+  const faqs = [
+    ...(c.rooms.length ? [{ q: `What suites does ${c.name} have?`, a: c.rooms.map((m) => `${m.name}${m.capacity ? ` (sleeps ${m.capacity})` : ""}${m.from ? `, from ${usd(m.from)}${/exclusive use/i.test(m.name) ? " as filed" : " per person per night"}` : ""}`).join("; ") + "." }] : []),
+    { q: `Which reserve is ${c.name} on?`, a: `${r.name}, in the ${r.area}, ${r.stay.country ?? "South Africa"}. The reserve also holds ${siblings.map((o) => o.name).join(", ") || "other camps"}.` },
+    ...(r.stay.airport ? [{ q: `How do you get to ${c.name}?`, a: `Fly into ${r.stay.airport}.${r.stay.airportDirections ? ` ${r.stay.airportDirections}` : ""}` }] : []),
+  ];
+  return (
+    <>
+      <SiteHeader overlay />
+      <main id="main" className="overflow-x-clip">
+        <RecordHero image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
+          eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
+          stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} volume="safaris" /> : undefined}
+          glance={<GlanceBar glance={{ ...(c.fromRate ? { price: { amount: usd(c.fromRate), basis: c.kind === "camp" ? "from, per person per night" : "from, as filed" } } : {}), facts: [["Reserve", r.name], ["Suites", units || "Ask James"], ["Best months", r.stay.bestMonths ?? "Ask James"]], cta: { label: "See the suites", href: "#suites" } }} />} />
+        <RecordNav items={[["Overview", "overview"], ...(c.rooms.length ? [["Suites", "suites"] as [string, string]] : []), ...(c.features.length || c.experiences.length ? [["The camp", "features"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(siblings.length ? [["Other camps", "other-camps"] as [string, string]] : []), ["Plan", "plan"]]} cta={`Plan ${c.name}`} ctaHref={`/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`} />
+        <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <div className="pt-6"><Breadcrumbs trail={trail} /></div>
+          <p className="mt-6 inline-flex flex-wrap items-center gap-2 border ledger-border px-3 py-2 text-[14px]"><span className="ledger-eyebrow ledger-crimson">Part of {r.name}</span><Link href={rpath} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">See all {r.camps.length} camps on the reserve</Link></p>
+          {st && <p className="mt-3 ledger-eyebrow ledger-crimson">{st.line}</p>}
+          <Overview answer={answer} facts={facts} paragraphs={paragraphs} />
+          {c.rooms.length > 0 && (
+            <section id="suites" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="suites-heading">
+              <SectionHead eyebrow={`Suites · ${c.rooms.length} ${c.rooms.length === 1 ? "type" : "types"}`} title={`Where You'll Sleep at ${c.name}`} icon="tree-ring" />
+              <SuiteCards camp={c.name} reserve={r.name} rooms={c.rooms} />
+              <p className="mt-3 text-[13px] ledger-muted">Registry rates in US dollars. The house confirms every rate, inclusions and park fees with your quote.</p>
+            </section>
+          )}
+          {(c.features.length > 0 || c.experiences.length > 0) && <Features id="features" eyebrow="The camp" title={`What Sets ${c.name} Apart`} icon="frond" items={[...c.features, ...c.experiences].slice(0, 12)} />}
+          {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
+          {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="The Other Camps on the Reserve" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}
+          <FaqBlock faqs={faqs} title={`${c.name}: Quick Answers`} />
+          <div id="plan" className="scroll-mt-32"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
+        </div>
+      </main>
+      <JsonLd data={graph({ "@type": c.kind === "residence" ? "LodgingBusiness" : "Resort", "@id": absoluteUrl(`${path}#stay`), name: c.name, url: absoluteUrl(path), description: answer, image: [c.hero, ...c.gallery.slice(0, 3)].filter(Boolean), containedInPlace: { "@id": absoluteUrl(`${rpath}#reserve`), "@type": "TouristAttraction", name: r.name, url: absoluteUrl(rpath) }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)}${c.kind === "camp" ? " per person per night" : ""}` } : {}), publisher: { "@id": ids.house }, ...(c.rooms.length ? { containsPlace: c.rooms.map((m) => ({ "@type": "Suite", name: m.name, ...(m.capacity ? { occupancy: { "@type": "QuantitativeValue", maxValue: m.capacity } } : {}), ...(m.beds ? { bed: m.beds } : {}) })) } : {}) })} />
+    </>
+  );
+}

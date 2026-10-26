@@ -1,0 +1,32 @@
+// Reserves: the parent page for an African reserve and the camps, lodges and
+// residences inside it. Built by scripts/export-reserves.py from the library's
+// Room records (camps = is_parent_stay, suites assigned by name) plus the
+// reserve's Stay record. Founder marks follow lib/ledger/status.ts.
+import data from "./reserves.json";
+import type { HouseStatus } from "@/lib/ledger/status";
+
+export type ReserveRoom = { name: string; capacity: number | null; quantity: number | null; beds: string | null; from: number | null; currency: string; basis: string | null; photos: string[] };
+export type ReserveCamp = { slug: string; name: string; key: string; kind: "camp" | "residence" | "suite"; intro: string; description: string; units: string[]; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; rooms: ReserveRoom[]; fromRate: number | null };
+type Block = { title?: string | null; body: string };
+export type ReserveStay = { ledgerId: string | null; tagline: string | null; quote: string | null; hero: string | null; gallery: string[]; bestMonths: string | null; bestMonthsNote: string | null; airport: string | null; airportDirections: string | null; coords: { lat: number; lng: number } | null; why: Block[]; experiences: { items: string[]; paras: string[] }; features: { items: string[]; paras: string[] }; onlyHere: string[]; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null };
+export type Reserve = { slug: string; name: string; rsv: string; area: string; province: string; stay: ReserveStay; camps: ReserveCamp[] };
+
+export const RESERVES = data.reserves as unknown as Reserve[];
+export const reserveBySlug = (slug: string) => RESERVES.find((r) => r.slug === slug);
+
+// A camp gets its own page when it has a photograph to lead with.
+export const campReady = (c: ReserveCamp) => !!c.hero;
+export const campBySlug = (r: Reserve, slug: string) => r.camps.find((c) => c.slug === slug && campReady(c));
+
+// Founder status per camp. The library holds house_status on Stay records
+// only; camps are Room records, so a status James has stated is kept here
+// until the field exists on the camp record.
+//   Ivory Lodge: stayed and vetted May 2026, "a five-star favourite" (James, 25 Oct 2026)
+export const CAMP_STATUS: Record<string, { status: HouseStatus; date: string; line: string }> = {
+  "lion-sands/ivory-lodge": { status: "founder_visited", date: "2026-05", line: "James stayed at Ivory Lodge in May 2026 and calls it a five-star favourite" },
+};
+export const campStatus = (r: Reserve, c: ReserveCamp) => CAMP_STATUS[`${r.slug}/${c.slug}`];
+
+export const KIND_LABEL: Record<ReserveCamp["kind"], string> = { camp: "Lodge & camp", residence: "Private residence", suite: "Private suite" };
+export const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
+export const reserveFrom = (r: Reserve) => { const f = r.camps.flatMap((c) => c.rooms.filter((m) => m.from && c.kind === "camp").map((m) => m.from as number)); return f.length ? Math.min(...f) : null; };

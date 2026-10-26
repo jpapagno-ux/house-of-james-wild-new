@@ -83,5 +83,20 @@
     "source": "/about/philosophy",
     "destination": "/about#rules",
     "permanent": true
+  },
+  {
+    "source": "/stays/lion-sands",
+    "destination": "/safaris/lion-sands",
+    "permanent": true
+  },
+  {
+    "source": "/stays/londolozi-reserve",
+    "destination": "/safaris/londolozi-reserve",
+    "permanent": true
+  },
+  {
+    "source": "/stays/lalibela-reserve",
+    "destination": "/safaris/lalibela-reserve",
+    "permanent": true
   }
 ]

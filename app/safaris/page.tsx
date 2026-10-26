@@ -8,6 +8,7 @@ import { HOME } from "@/lib/content/home";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { recordHref } from "@/lib/ledger/urls";
 import { REGIONS, VOLUMES } from "@/lib/site";
+import { RESERVES, reserveFrom, usd } from "@/lib/content/reserves";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
@@ -28,6 +29,9 @@ export default function SafarisHub() {
       <HubShell name="Safaris" path={PATH} eyebrow="Volume 02 · Safaris" title="Africa's Reserves and Camps, Vetted Since 2011" intro={V.intro} browse={V.browse}
         answer="James Wild & Co's Safaris volume files African reserves and the camps inside them, from South Africa's Sabi Sand and Thornybush to Botswana's Okavango and Kalahari. James has designed safaris since 2011. Safaris are planned with James or an advisor and booked through Wild & Co Safaris, the house's safari platform, with partner guides on the ground."
         filling="Each reserve page lists its camps as their own Ledger entries; the reserve and camp pages fill from the Ledger export.">
+        <HubSection eyebrow="Reserves · each with its own camps" title="The Reserves" id="reserves-h">
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{RESERVES.filter((r) => r.stay.hero).map((r) => <li key={r.slug}><RecordCard name={r.name} id={r.rsv} line={`${r.camps.length} camps & residences · ${r.area}${reserveFrom(r) ? ` · from ${usd(reserveFrom(r)!)} pp/night` : ""}`} image={{ url: r.stay.hero as string, alt: `${r.name}, ${r.area}` }} href={`/safaris/${r.slug}`} /></li>)}</ul>
+        </HubSection>
         <HubSection eyebrow="From the Ledger" title="Reserves and Camps" id="camps-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{camps.map((s) => <li key={s.id}><RecordCard name={s.name} id={s.id} line={s.line} image={s.image} href={recordHref(s.kind ?? "stay", s.slug)} /></li>)}</ul>
         </HubSection>

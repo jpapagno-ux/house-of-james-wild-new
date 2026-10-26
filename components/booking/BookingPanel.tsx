@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowUpRight, BedDouble, CalendarDays, Check, ChevronLeft, ChevronRight, RefreshCcw, Users, X } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { ArrowUpRight, BedDouble, CalendarDays, Check, RefreshCcw, Users, X } from "lucide-react";
 import type { RatePlan } from "@/lib/rates";
 import type { PricedRoom } from "@/lib/content/priced-stays";
+import Carousel from "./Carousel";
 
 // The booking panel for stays with live pricing. One search (dates, guests)
 // prices every room from the engine; each room is a card with its own photo
@@ -22,28 +23,6 @@ const usd = (n: number) => `US$${Math.round(n).toLocaleString("en-US")}`;
 const zar = (n: number) => `R${n.toLocaleString("en-US")}`;
 const nice = (d: string) => (d ? new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "");
 const PLAN_NOTE: Record<string, string> = { "Best Available Rate": "Flexible rate", "Length of Stay Discount": "Stay longer, pay less" };
-
-function Carousel({ photos, name }: { photos: string[]; name: string }) {
-  const ref = useRef<HTMLUListElement>(null);
-  const [i, setI] = useState(0);
-  const go = (d: number) => { const el = ref.current; if (!el) return; const n = Math.max(0, Math.min(photos.length - 1, i + d)); el.scrollTo({ left: n * el.clientWidth, behavior: "smooth" }); };
-  return (
-    <div className="relative group/c">
-      <ul ref={ref} onScroll={(e) => setI(Math.round(e.currentTarget.scrollLeft / e.currentTarget.clientWidth))} className="flex overflow-x-auto snap-x snap-mandatory [scrollbar-width:none] aspect-[4/3] bg-paper-card" aria-label={`${name} photographs`}>
-        {photos.map((src, k) => (
-          <li key={src} className="relative shrink-0 w-full h-full snap-start">
-            <Image src={src} alt={`${name}, photograph ${k + 1} of ${photos.length}`} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
-          </li>
-        ))}
-      </ul>
-      {photos.length > 1 && <>
-        <button type="button" onClick={() => go(-1)} disabled={i === 0} aria-label="Previous photograph" className="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-paper/90 flex items-center justify-center disabled:opacity-0 md:opacity-0 md:group-hover/c:opacity-100 transition-opacity"><ChevronLeft className="w-4 h-4" strokeWidth={1.5} /></button>
-        <button type="button" onClick={() => go(1)} disabled={i === photos.length - 1} aria-label="Next photograph" className="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-paper/90 flex items-center justify-center disabled:opacity-0 md:opacity-0 md:group-hover/c:opacity-100 transition-opacity"><ChevronRight className="w-4 h-4" strokeWidth={1.5} /></button>
-        <span className="absolute right-2 bottom-2 px-2 py-0.5 bg-black/55 text-white text-[12px] tabular-nums">{i + 1} / {photos.length}</span>
-      </>}
-    </div>
-  );
-}
 
 function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose }: { pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
   const [done, setDone] = useState(false);

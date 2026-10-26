@@ -8,7 +8,7 @@ import type { Count } from "@/components/destination/LedgerCounter";
 // Residences: private villas, homesteads and farm houses filed as stays, plus
 // residences on a reserve.
 const RESIDENCE = /\b(villa|villas|homestead|farm house|residence)\b/i;
-const isResidence = (name: string, category: string | null) => RESIDENCE.test(name) && !/^la residence$/i.test(name.trim()) && category !== "hotel-only";
+export const isResidence = (name: string, category: string | null) => RESIDENCE.test(name) && !/^la residence$/i.test(name.trim()) && category !== "hotel-only";
 
 export function countryCounts(slug: string): Count[] {
   const stays = staysIn(slug);

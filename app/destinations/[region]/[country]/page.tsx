@@ -8,7 +8,8 @@ import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
 import PlaceNote from "@/components/destination/PlaceNote";
 import { COUNTRY_NOTES } from "@/lib/content/place-notes";
-import { countryCounts } from "@/lib/content/ledger-counts";
+import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
+import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -70,8 +71,13 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const journeys = journeysFor(c.slug);
   const items: MapItem[] = all.filter((s) => s.coords).map((s) => {
     const q = projectOn(chart, s.coords!.lat, s.coords!.lng);
-    return { id: s.slug, category: "stay", name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
+    return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
   });
+  for (const r of RESERVES.filter((x) => x.stay.countrySlug === c.slug && x.stay.coords)) {
+    const q = projectOn(chart, r.stay.coords!.lat, r.stay.coords!.lng);
+    items.push({ id: `reserve-${r.slug}`, category: "reserve", name: r.name, kind: `${r.camps.length} camps & residences`, href: `/safaris/${r.slug}`, x: q.x, y: q.y, area: r.area, bestMonths: r.stay.bestMonths ?? undefined });
+  }
+  const tally = (k: MapItem["category"]) => items.filter((i) => i.category === k).length;
   const slides: Slide[] = [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }, ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
@@ -121,7 +127,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James.</p>
             </div>
-            <LedgerChartMap country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: items.length, vessel: 0, residence: 0, reserve: 0 }} />
+            <LedgerChartMap legend={c.slug === "south-africa" ? "top-left" : "bottom-left"} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
           </section>
 
           <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">

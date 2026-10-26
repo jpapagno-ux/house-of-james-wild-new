@@ -4,7 +4,8 @@ import data from "./upscaled.json";
 // Cloudinary and delivered through its AI upscaler (e_upscale) and auto
 // improve (e_improve). Anything below 900px wide is dropped from hero slides
 // instead: there isn't enough picture to rescue.
-const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/";
+// Capped at 1200px before the 4x upscale so the result stays inside the plan's 25-megapixel limit.
+const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/";
 const MAP = data.map as Record<string, string>;
 const DROP = new Set(data.drop as string[]);
 

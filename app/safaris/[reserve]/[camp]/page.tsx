@@ -17,7 +17,8 @@ import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
-import HostPanel from "@/components/record/HostPanel";
+import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
@@ -116,6 +117,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
         </div>
+        {host.state === "available" && host.host && <CallingCard who={HOST_KIND[c.kind === "residence" ? "residence" : "camp"].who} seats={host.host.seats} />}
       </main>
       <ContactBar name={c.name} planHref={planHref} from={c.fromRate ? `${usd(c.fromRate)}${c.kind === "camp" ? " pp/night" : ""}` : undefined} />
       <ContactPill name={c.name} planHref={planHref} />

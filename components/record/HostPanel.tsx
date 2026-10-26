@@ -20,7 +20,7 @@ export type HostConnect = "available" | "not_linking" | "off";
 export type HostKind = "stay" | "lodge" | "camp" | "residence" | "reserve" | "vessel";
 
 // The same group call, worded for where the traveller is looking.
-const KIND: Record<HostKind, { eyebrow: string; headline: string; who: string; people: string }> = {
+export const KIND: Record<HostKind, { eyebrow: string; headline: string; who: string; people: string }> = {
   stay:      { eyebrow: "Group connect · live with the host",       headline: "Meet the people before you send the money.",          who: "Your host",                      people: "the people who'll actually look after you" },
   lodge:     { eyebrow: "Group connect · live from the lodge",      headline: "Meet the lodge before you send the money.",           who: "The lodge manager",              people: "the manager and the team who'll run your days" },
   camp:      { eyebrow: "Group connect · live from camp",           headline: "Meet the camp before you send the money.",            who: "The camp manager or head guide", people: "the manager and the guides who'll be in the vehicle with you" },

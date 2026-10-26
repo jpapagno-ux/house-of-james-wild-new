@@ -21,7 +21,8 @@ import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
 import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
-import HostPanel from "@/components/record/HostPanel";
+import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
@@ -122,7 +123,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" icon="mountain-sun" body={s.experiences.paras[0]} />}
           {priced ? <>
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
-            <BookingPanel property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
+            <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>
             {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
             {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
@@ -152,6 +153,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           <PlanBand place={s.name} compassHref="/compass" />
         </div>
+        {hostEarly && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={host.host?.seats} />}
       </main>
       <ContactBar name={s.name} planHref={planHref} />
       <ContactPill name={s.name} planHref={planHref} />

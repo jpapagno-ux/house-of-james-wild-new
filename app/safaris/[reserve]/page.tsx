@@ -12,7 +12,8 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
-import HostPanel from "@/components/record/HostPanel";
+import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { suitedTo } from "@/lib/ledger/travel-types";
@@ -143,6 +144,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
         </div>
+        {host.state === "available" && host.host && <CallingCard who={HOST_KIND["reserve"].who} seats={host.host.seats} />}
       </main>
       <ContactBar name={r.name} planHref={planHref} from={from ? `${usd(from)} pp/night` : undefined} />
       <ContactPill name={r.name} planHref={planHref} />

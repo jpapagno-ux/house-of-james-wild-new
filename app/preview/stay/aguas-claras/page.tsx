@@ -1,7 +1,8 @@
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
-import HostPanel from "@/components/record/HostPanel";
+import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import CallingCard from "@/components/record/CallingCard";
 import { hostFor } from "@/lib/content/hosts";
 import { GalleryMosaic, GlanceBar, LocationBlock, RecordActionBar } from "@/components/record/Frame";
 import { OfferCard } from "@/components/record/Pricing";
@@ -121,6 +122,7 @@ export default function AguasClarasPreview() {
             <p>The library holds two Pavlova Suites records (US$460 and US$475); the page uses the fuller one. The duplicate needs removing.</p>
           </PreviewNote>
         </div>
+        {hostFor("stay:aguas-claras").state === "available" && <CallingCard who={HOST_KIND.stay.who} />}
       </main>
       <RecordActionBar price="US$460" basis="/ night" cta="Check dates" />
     </>

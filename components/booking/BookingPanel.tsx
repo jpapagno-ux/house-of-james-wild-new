@@ -24,7 +24,7 @@ const zar = (n: number) => `R${n.toLocaleString("en-US")}`;
 const nice = (d: string) => (d ? new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "");
 const PLAN_NOTE: Record<string, string> = { "Best Available Rate": "Flexible rate", "Length of Stay Discount": "Stay longer, pay less" };
 
-function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose }: { pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
+function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose, hostHref }: { hostHref?: string; pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
   const [done, setDone] = useState(false);
   const [f, setF] = useState({ name: "", email: "", phone: "" });
   const ok = f.name.trim().length > 1 && /.+@.+\..+/.test(f.email);
@@ -58,6 +58,7 @@ function Checkout({ pick, q, nights, name, included, excluded, policies, engine,
               <p className="ledger-eyebrow">Lead traveller</p>
               {(["name", "email", "phone"] as const).map((k) => <label key={k} className="block"><span className="text-[13px] ledger-muted capitalize">{k === "phone" ? "Phone (optional)" : k}</span><input type={k === "email" ? "email" : k === "phone" ? "tel" : "text"} required={k !== "phone"} value={f[k]} onChange={(e) => setF({ ...f, [k]: e.target.value })} className="mt-1 w-full bg-paper border ledger-border px-3 py-2 text-[16px]" autoComplete={k === "name" ? "name" : k} /></label>)}
               <button type="submit" disabled={!ok} className="ledger-btn w-full justify-center mt-2 disabled:opacity-50">Book now · sample</button>
+              {hostHref && <a href={hostHref} onClick={onClose} className="text-center text-[15px] text-[#3b2716] -rotate-[1deg] hover:text-crimson" style={{ fontFamily: "'Homemade Apple', cursive" }} data-event="booking_host_click">Not sure yet? Meet the host first ↓</a>}
               <p className="text-[12.5px] ledger-muted">Sample checkout for the team: nothing is charged or sent. Live, this creates a Folio request to myfolio@jameswildco.com and the house confirms with the estate before any payment.</p>
             </form>
           </div>
@@ -78,7 +79,7 @@ function Checkout({ pick, q, nights, name, included, excluded, policies, engine,
   );
 }
 
-export default function BookingPanel({ property, name, rooms, included, excluded, policies }: { property: string; name: string; rooms: PricedRoom[]; included: string[]; excluded: string[]; policies: string[] }) {
+export default function BookingPanel({ property, name, rooms, included, excluded, policies, hostHref }: { property: string; name: string; rooms: PricedRoom[]; included: string[]; excluded: string[]; policies: string[]; hostHref?: string }) {
   const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
   const [today, setToday] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "ok" | "none" | "error">("idle");
@@ -176,7 +177,7 @@ export default function BookingPanel({ property, name, rooms, included, excluded
       </ul>
       <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Live prices are the engine&rsquo;s totals for your dates in US dollars, before tax, refreshed every 15 minutes. Registry rates are the estate&rsquo;s published nightly rates in South African rand. {engine && <a href={engine} className="underline underline-offset-2" data-event="booking_outbound">Open the booking engine</a>}</p>
 
-      {pick && res && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine={engine} onClose={() => setPick(null)} />}
+      {pick && res && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine={engine} hostHref={hostHref} onClose={() => setPick(null)} />}
     </section>
   );
 }

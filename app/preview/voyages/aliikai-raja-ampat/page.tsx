@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Anchor, CalendarRange, Ship, Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
-import HostPanel from "@/components/record/HostPanel";
+import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import CallingCard from "@/components/record/CallingCard";
 import { hostFor } from "@/lib/content/hosts";
 import VoyageMap, { type Stop } from "@/components/record/VoyageMap";
 import { CardRail, Experiences, Features, FounderStamp, IncludedLists, Overview, PreviewNote, RecordHero, RecordNav, RoomsLedger, SectionHead, WhyChose, type RecordCard, type Room } from "@/components/record/Sections";
@@ -157,6 +158,7 @@ export default function AliikaiPreview() {
             <p>No day has coordinates on file, so the map uses approximate positions. All four voyages share the Raja Ampat hero image, including the Komodo ones, and the 7 Day Komodo &ldquo;from&rdquo; price (US$12,000) looks like a charter rate; both need checking. &ldquo;Not included&rdquo; lines are sample lines to confirm. The 2027/2028 departures are empty on file and need the Aliikai rate sheet.</p>
           </PreviewNote>
         </div>
+        {hostFor("voyage:aliikai").state === "available" && <CallingCard who={HOST_KIND.vessel.who} />}
       </main>
       <RecordActionBar price="US$4,830" basis="pp / voyage" cta="Departures" />
     </>

@@ -88,3 +88,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-ring { transform-origin: 50% 60%; animation: jw-ring 3.6s ease-in-out infinite; }
 .jw-ripple { animation: jw-ripple 3.6s ease-out infinite; }
 @media (prefers-reduced-motion: reduce) { .jw-ring, .jw-ripple { animation: none; } .jw-ripple { opacity: 0; } }
+
+/* Route pages: copy still to confirm, and photo frames waiting for a photo */
+.jw-flag { background: #F1E2B8; color: #5E3F22; padding: 0 0.2em; border-radius: 1px; }
+.jw-ph { background-color: #E4DED3; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }

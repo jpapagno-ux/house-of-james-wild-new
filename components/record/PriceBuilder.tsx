@@ -13,16 +13,17 @@ import { priceTrip, usd, DEPOSIT_PP, TAX_RATE } from "@/lib/pricing";
 export type PriceOption = { id: string; label: string; pp: number; detail?: string };
 export type PriceAddOn = { id: string; label: string; pp: number; detail?: string };
 
-export default function PriceBuilder({ kind, options, addOns, defaultTravellers = 2, maxTravellers = 12, contactHref = "/plan", tripName }: {
+export default function PriceBuilder({ kind, options, addOns, defaultOption, defaultTravellers = 2, maxTravellers = 12, contactHref = "/plan", tripName }: {
   kind: "journey" | "voyage";
   options: PriceOption[];
   addOns: PriceAddOn[];
+  defaultOption?: string;
   defaultTravellers?: number;
   maxTravellers?: number;
   contactHref?: string;
   tripName: string;
 }) {
-  const [opt, setOpt] = useState(options[0]?.id);
+  const [opt, setOpt] = useState(defaultOption ?? options[0]?.id);
   const [n, setN] = useState(defaultTravellers);
   const [extras, setExtras] = useState<string[]>([]);
   const option = options.find((o) => o.id === opt) ?? options[0];

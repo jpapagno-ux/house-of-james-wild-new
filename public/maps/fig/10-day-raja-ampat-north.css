@@ -1,0 +1,83 @@
+.rm-tnorth .sea{fill:#EEF2EE}
+.rm-tnorth .grat{fill:none;stroke:#CFD8D4;stroke-width:1}
+.rm-tnorth .near{fill:#DFDCD3;stroke:rgba(30,42,48,0.35);stroke-width:.8}
+.rm-tnorth .home{fill:#E9E3D3}
+.rm-tnorth .coast{fill:none;stroke:#1E2A30;stroke-width:1.2;stroke-linejoin:round}
+.rm-tnorth .reef{fill:none;stroke:#DFDCD3;stroke-width:16;stroke-linejoin:round;opacity:.32}
+.rm-tnorth .lake{fill:#EEF2EE;stroke:#7E9BA3;stroke-width:.8}
+.rm-tnorth .mist{fill:#FCFAF5;opacity:.6}
+.rm-tnorth .sea-l{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:26px;fill:#5E7F88;letter-spacing:.06em}
+.rm-tnorth .sea-s{font-size:18px}
+.rm-tnorth .reg{font-family:'IBM Plex Mono',monospace;font-size:12px;fill:rgba(30,42,48,0.62);letter-spacing:.14em}
+.rm-tnorth .place{font-family:'Playfair Display',Georgia,serif;font-size:20px;fill:#1E2A30;paint-order:stroke;stroke:#FBF8F1;stroke-width:5px;stroke-linejoin:round}
+.rm-tnorth .pin{fill:#A2442A;stroke:#FBF8F1;stroke-width:3}
+.rm-tnorth .pin.end{fill:#1E2A30}
+.rm-tnorth .key{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;fill:#FBF8F1;text-anchor:middle}
+.rm-tnorth .ghost{fill:none;stroke:rgba(162,68,42,0.45);stroke-width:1.3;stroke-dasharray:2 6}
+.rm-tnorth .leg{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.rm-tnorth .plane{stroke:#1E2A30;stroke-width:2.4;stroke-dasharray:10 8}
+.rm-tnorth .boat{stroke:#7E9BA3;stroke-width:3.6;stroke-dasharray:1.5 7}
+.rm-tnorth .road,.rm-tnorth .transfer{stroke:#A2442A;stroke-width:3.4}
+.rm-tnorth .sail{stroke:#7E9BA3;stroke-width:2.6;stroke-dasharray:9 7}
+.rm-tnorth .plane,.rm-tnorth .boat,.rm-tnorth .road,.rm-tnorth .sail{stroke:#A2442A;stroke-width:2.6}
+.rm-tnorth .plane{stroke-dasharray:8 6}
+.rm-tnorth .boat{stroke-dasharray:1.5 6}
+.rm-tnorth .road,.rm-tnorth .transfer{stroke-dasharray:1.6 4.2}
+.rm-tnorth .sail{stroke-dasharray:5.7 3.6}
+.rm-tnorth .transfer{stroke:#A2442A;stroke-width:2.6}
+.rm-tnorth .ghost{stroke:rgba(162,68,42,0.45);stroke-width:1.6;stroke-dasharray:.3 6;stroke-linecap:round}
+.rm-tnorth .pin{fill:#FBF8F1;stroke:#A2442A;stroke-width:1.5}
+.rm-tnorth .pin.end{fill:#FBF8F1}
+.rm-tnorth .pinon{fill:#A2442A}
+.rm-tnorth .key{font-size:10px;font-weight:700;fill:#A2442A}
+.rm-tnorth .keyon{fill:#FBF8F1}
+.rm-tnorth .place{font-family:'Libre Caslon Text','Playfair Display',Georgia,serif;font-size:14px;fill:#1E2A30;stroke:#FBF8F1;stroke-width:4px}
+.rm-tnorth .sea-l{font-size:20px;fill:#5E7F88}
+.rm-tnorth .reg{fill:rgba(30,42,48,0.6)}
+.rm-tnorth .volc{fill:#382F2F}
+.rm-tnorth .glow{fill:#C2702F;opacity:.25;animation:rm-tnorth-glow 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes rm-tnorth-glow{50%{opacity:.45;transform:scale(1.3)}}
+.rm-tnorth .mk{fill:none;stroke:#fff;stroke-width:22;stroke-dasharray:1;stroke-dashoffset:1;animation-duration:18s;animation-iteration-count:infinite}
+.rm-tnorth .pf{opacity:0;animation-duration:18s;animation-iteration-count:infinite}
+.rm-tnorth .mk-l1{animation-name:rm-tnorth-d-l1;animation-timing-function:ease-in-out}
+@keyframes rm-tnorth-d-l1{0%,4.0%{stroke-dashoffset:1}5.96%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l2{animation-name:rm-tnorth-d-l2;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l2{0%,5.96%{stroke-dashoffset:1}19.25%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l3{animation-name:rm-tnorth-d-l3;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l3{0%,19.25%{stroke-dashoffset:1}23.29%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l4{animation-name:rm-tnorth-d-l4;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l4{0%,23.29%{stroke-dashoffset:1}25.24%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l5{animation-name:rm-tnorth-d-l5;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l5{0%,25.24%{stroke-dashoffset:1}32.99%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l6{animation-name:rm-tnorth-d-l6;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l6{0%,32.99%{stroke-dashoffset:1}49.24%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l7{animation-name:rm-tnorth-d-l7;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l7{0%,49.24%{stroke-dashoffset:1}56.97%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l8{animation-name:rm-tnorth-d-l8;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l8{0%,56.97%{stroke-dashoffset:1}67.96%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l9{animation-name:rm-tnorth-d-l9;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l9{0%,67.96%{stroke-dashoffset:1}69.91%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l10{animation-name:rm-tnorth-d-l10;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l10{0%,69.91%{stroke-dashoffset:1}75.68%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .mk-l11{animation-name:rm-tnorth-d-l11;animation-timing-function:linear}
+@keyframes rm-tnorth-d-l11{0%,75.68%{stroke-dashoffset:1}86.0%,95%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rm-tnorth .pf-k2{animation-name:rm-tnorth-f-k2}
+@keyframes rm-tnorth-f-k2{0%,18.25%{opacity:0}20.25%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k3{animation-name:rm-tnorth-f-k3}
+@keyframes rm-tnorth-f-k3{0%,22.29%{opacity:0}24.29%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k4{animation-name:rm-tnorth-f-k4}
+@keyframes rm-tnorth-f-k4{0%,24.24%{opacity:0}26.24%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k5{animation-name:rm-tnorth-f-k5}
+@keyframes rm-tnorth-f-k5{0%,31.99%{opacity:0}33.99%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k6{animation-name:rm-tnorth-f-k6}
+@keyframes rm-tnorth-f-k6{0%,48.24%{opacity:0}50.24%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k7{animation-name:rm-tnorth-f-k7}
+@keyframes rm-tnorth-f-k7{0%,55.97%{opacity:0}57.97%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k8{animation-name:rm-tnorth-f-k8}
+@keyframes rm-tnorth-f-k8{0%,66.96%{opacity:0}68.96%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k9{animation-name:rm-tnorth-f-k9}
+@keyframes rm-tnorth-f-k9{0%,68.91%{opacity:0}70.91%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .pf-k10{animation-name:rm-tnorth-f-k10}
+@keyframes rm-tnorth-f-k10{0%,74.68%{opacity:0}76.68%,95%{opacity:1}100%{opacity:0}}
+.rm-tnorth .ship path{fill:#1E2A30;stroke:#FBF8F1;stroke-width:2.5;paint-order:stroke}
+@media (prefers-reduced-motion: reduce){.rm-tnorth .mk{animation:none;stroke-dashoffset:0}.rm-tnorth .pf{animation:none;opacity:1}.rm-tnorth .glow{animation:none}.rm-tnorth .ship{display:none}}

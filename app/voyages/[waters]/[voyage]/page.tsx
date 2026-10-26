@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import TripPage from "@/components/journey/TripPage";
-import { byPath, mapHtml, paramsFor, tripMetadata, TRIP_IMAGES } from "@/lib/content/trip-pages";
+import { byPath, mapHtml, paramsFor, tripMetadata, TRIP_IMAGES, TRIP_SLIDES } from "@/lib/content/trip-pages";
 
 // /voyages/<waters>/<voyage> — a voyage by ship, with the vessel on the same page.
 export const dynamicParams = false;
@@ -13,5 +13,5 @@ export default async function VoyageRoute({ params }: P) {
   const t = byPath(`/voyages/${waters}/${voyage}`);
   if (!t) notFound();
   const m = TRIP_IMAGES[t.id] ?? { images: {} };
-  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} host={{ key: "voyage:aliikai", name: "Aliikai", kind: "vessel" }} />;
+  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} host={{ key: "voyage:aliikai", name: "Aliikai", kind: "vessel" }} />;
 }

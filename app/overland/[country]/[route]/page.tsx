@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import TripPage from "@/components/journey/TripPage";
-import { byPath, mapHtml, paramsFor, tripMetadata, TRIP_IMAGES } from "@/lib/content/trip-pages";
+import { byPath, mapHtml, paramsFor, tripMetadata, TRIP_IMAGES, TRIP_SLIDES } from "@/lib/content/trip-pages";
 
 // /overland/<country>/<route> — a land journey James designed.
 export const dynamicParams = false;
@@ -13,5 +13,5 @@ export default async function OverlandRoute({ params }: P) {
   const t = byPath(`/overland/${country}/${route}`);
   if (!t) notFound();
   const m = TRIP_IMAGES[t.id] ?? { images: {} };
-  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} />;
+  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} />;
 }

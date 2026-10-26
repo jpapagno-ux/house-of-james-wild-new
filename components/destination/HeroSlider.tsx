@@ -83,13 +83,14 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
         );
       })}
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/5 to-black/75" />
-      <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-b from-black/50 via-black/5 to-black/75" />
+      <div className="pointer-events-none absolute inset-3 md:inset-5 z-[2] border border-white/25" aria-hidden="true" />
 
-      <div className="relative h-full">{children}</div>
+      {/* Above the slides (the showing slide sits at z-index 1) so the title and stamp are never covered. */}
+      <div className="relative z-[3] h-full">{children}</div>
 
       {n > 1 && !reduce && (
-        <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-10 ${controls === "top" ? "top-[92px] lg:top-[128px]" : "bottom-8 md:bottom-12"}`}>
+        <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-[4] ${controls === "top" ? "top-[92px] lg:top-[128px]" : "bottom-8 md:bottom-12"}`}>
           <span className="ledger-eyebrow !text-white/85 tabular-nums" aria-live="polite">
             {String(i + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}
           </span>
@@ -107,7 +108,7 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
         </div>
       )}
 
-      {s.caption && <p className="absolute left-6 md:left-12 bottom-3 md:bottom-6 ledger-eyebrow !text-white/70 !text-[9.5px]">{s.caption}</p>}
+      {s.caption && <p className="absolute z-[3] left-6 md:left-12 bottom-3 md:bottom-6 ledger-eyebrow !text-white/70 !text-[9.5px]">{s.caption}</p>}
 
       {n > 1 && !reduce && (
         <motion.div

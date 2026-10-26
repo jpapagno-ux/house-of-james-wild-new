@@ -10,7 +10,9 @@ import PriceBuilder from "@/components/record/PriceBuilder";
 import Signature from "@/components/record/Signature";
 import HostPanel, { KIND as HOST_KIND, type HostKind } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
-import { RecordNav, SectionHead, IncludedLists } from "@/components/record/Sections";
+import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
+import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
+import { usd } from "@/lib/pricing";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
@@ -44,7 +46,7 @@ function Sec({ id, children, className = "" }: { id: string; children: ReactNode
   return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 ${className}`}>{children}</section>;
 }
 
-export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; host?: { key: string; name: string; kind: HostKind } }) {
+export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind } }) {
   const voyage = T.kind === "voyage";
   const mapId = `jwmap-${T.id}`;
   const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? "/voyages" : "/destinations/central-america/costa-rica", T.seo.path][i] }));
@@ -55,8 +57,18 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
   const dayNo = (n: string) => parseInt(n.replace(/\D/g, ""), 10);
 
   const nav: [string, string][] = voyage
-    ? [["The vessel", "vessel"], ["Cabins", "cabins"], ["The voyage", "route"], ["In short", "overview"], ["Dates & rates", "departures"], ["Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["Experiences", "experiences"], ["The fare", "included"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
-    : [["The route", "route"], ["Experiences", "experiences"], ["Overview", "overview"], ["Who it suits", "suits"], ["Day by day", "days"], ["The stays", "stays"], ["Included", "included"], ["Price", "price"], ["FAQ", "faq-heading"]];
+    ? [["The vessel", "vessel"], ["In short", "overview"], ["The voyage", "route"], ["Dates & rates", "departures"], ["Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
+    : [["In short", "overview"], ["The route", "route"], ["Experiences", "experiences"], ["Who it suits", "suits"], ["Day by day", "days"], ["Included", "included"], ["The stays", "stays"], ["Price", "price"], ["The founder", "founder"], ["FAQ", "faq-heading"]];
+
+  // "From" price: the lowest per-person option on file, with what it's based on.
+  const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
+  const def = T.calc.opts[(T.calc as { opt0?: number }).opt0 ?? 0];
+  const route = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i).join(" → ");
+  const DayIcon = ({ d }: { d: (typeof T.days)[number] }) => {
+    const t = `${d.move} ${d.line} ${d.acts}`.toLowerCase();
+    const I = /plane|flight|fly|airport/.test(t) ? Plane : /boat|canal|tender/.test(t) ? Ship : /4×4|drive|road|driver|car/.test(t) ? Car : /dive|snorkel|manta|reef|coral/.test(t) ? Fish : /volcano|peak|lookout|climb|trek|hike|waterfall/.test(t) ? Mountain : /forest|cloud|jungle|bird/.test(t) ? Trees : /surf|beach|kayak|swim/.test(t) ? Waves : voyage ? Anchor : Trees;
+    return <I className="w-5 h-5" strokeWidth={1.5} aria-hidden="true" />;
+  };
 
   /* ---------- sections ---------- */
   const Map = (
@@ -124,32 +136,38 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
 
   const Days = (
     <Sec id="days">
-      <SectionHead eyebrow={`${T.dayeyebrow} · ${T.sub.split("·").slice(0, 2).join("·").trim()}`} title={T.daytitle} icon="wave" intro={voyage ? "Each day as the crew sails it. Weather, tides and the mantas shape the order." : "Each day as James would drive it. Tap a day to see it on the map."} />
-      <ol className="mt-8 relative border-l-2 border-crimson/30 ml-3">
-        {T.days.map((d) => (
-          <li key={d.n} className="relative pl-7 md:pl-10 pb-10 last:pb-0">
-            <span className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-paper border-2 border-crimson" aria-hidden="true" />
-            {d.head && d.stageName && <p className="ledger-eyebrow ledger-crimson mb-2">{d.stage} · {d.stageName} · <span className="ledger-muted">{d.stageMeta}</span>{d.mark ? <span className="ml-2 italic normal-case tracking-normal font-serif text-[14px] text-ink">“{d.mark}”</span> : null}</p>}
-            <div className="grid md:grid-cols-[1.5fr_1fr] gap-5 items-start">
+      <SectionHead eyebrow={`${T.dayeyebrow} · ${T.sub.split("·").slice(0, 2).join("·").trim()}`} title={T.daytitle} icon="wave" intro={voyage ? "Each day as the crew sails it. Weather, tides and the mantas shape the order. Open a day for the detail." : "Each day as James would drive it. Open a day for the detail, or send it to the map."} />
+      <div className="mt-8 border-t ledger-border">
+        {T.days.map((d, i) => (
+          <div key={d.n}>
+          {d.head && d.stageName && <p className="ledger-eyebrow ledger-crimson pt-6 pb-1">{d.stage} · {d.stageName} · <span className="ledger-muted">{d.stageMeta}</span>{d.mark ? <span className="ml-2 italic normal-case tracking-normal font-serif text-[14px] text-ink">“{d.mark}”</span> : null}</p>}
+          <details className="group border-b ledger-border" open={i === 0}>
+            <summary className="cursor-pointer list-none flex items-center gap-4 py-4 [&::-webkit-details-marker]:hidden">
+              <span className="w-10 h-10 shrink-0 rounded-full border ledger-border flex items-center justify-center ledger-crimson group-open:bg-crimson group-open:text-paper group-open:border-crimson transition-colors"><DayIcon d={d} /></span>
+              <span className="flex-1 min-w-0">
+                <span className="font-mono text-[11px] tracking-[0.14em] ledger-muted">{d.n}</span>
+                <span className="block ledger-display text-[19px] md:text-[22px] leading-snug">{d.title}</span>
+                <span className="block text-[13.5px] italic ledger-muted truncate">{d.line}</span>
+              </span>
+              <ChevronDown className="w-5 h-5 shrink-0 ledger-muted transition-transform group-open:rotate-180" strokeWidth={1.5} aria-hidden="true" />
+            </summary>
+            <div className="pb-6 pl-0 md:pl-14 grid md:grid-cols-[1.5fr_1fr] gap-5 items-start">
               <div>
-                <button type="button" data-jw-day={dayNo(d.n)} data-jw-for={mapId} className="text-left group">
-                  <span className="font-mono text-[11px] tracking-[0.14em] ledger-muted">{d.n}</span>
-                  <span className="block ledger-display text-[22px] md:text-2xl group-hover:ledger-crimson">{d.title}</span>
-                </button>
-                <p className="text-[14px] italic ledger-muted">{d.line}</p>
-                <p className="mt-3 text-[16px] leading-relaxed"><Fx t={d.body} /></p>
+                <p className="text-[16px] leading-relaxed"><Fx t={d.body} /></p>
                 <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[14px]">
                   <dt className="ledger-eyebrow">{T.staylabel}</dt><dd><Fx t={d.stay} /></dd>
                   <dt className="ledger-eyebrow">Meals</dt><dd><Fx t={d.meals} /></dd>
                   <dt className="ledger-eyebrow">{T.movelabel}</dt><dd>{d.move}</dd>
                   <dt className="ledger-eyebrow">Doing</dt><dd>{d.acts}</dd>
                 </dl>
+                <button type="button" data-jw-day={dayNo(d.n)} data-jw-for={mapId} className="mt-4 ledger-btn-ghost">Show on the map ↑</button>
               </div>
               <Ph img={images[d.img]} label={d.img} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 100vw, 30vw" />
             </div>
-          </li>
+          </details>
+          </div>
         ))}
-      </ol>
+      </div>
     </Sec>
   );
 
@@ -321,29 +339,47 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
     </section>
   );
 
+  const Summary = (
+    <section aria-label="The trip at a glance" className="border-b ledger-rule bg-paper-card">
+      <div className="max-w-ledger mx-auto px-5 md:px-10 py-6 md:py-7 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div className="min-w-0">
+          <p className="ledger-display text-[18px] md:text-[21px] leading-snug">{T.slides[0].line}</p>
+          <p className="mt-1 text-[13.5px] ledger-muted">{route}</p>
+          <dl className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-3">
+            {T.herofacts.map(([k, v]) => <div key={k}><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5">{v}</dd></div>)}
+          </dl>
+          {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
+        </div>
+        <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
+          <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{!T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>
+          <div className="flex flex-wrap gap-3"><a href="#price" className="ledger-btn ledger-btn--solid !py-2.5">Build your price</a><a href={voyage ? "#departures" : "#days"} className="ledger-btn !py-2.5">{voyage ? "See dates" : "Day by day"}</a></div>
+        </div>
+      </div>
+    </section>
+  );
+
   const order = voyage
-    ? [Vessel, Map, Overview, Departures, Founder, Suits, Days, Experiences, Included, Price, HostBlock]
-    : [Map, Experiences, Overview, Suits, Days, Stays, Included, Price, Founder];
+    ? [Vessel, Overview, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
+    : [Overview, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
   return (
     <>
       <SiteHeader overlay />
       <main id="main">
-        <header className="relative min-h-[78svh] flex items-end text-paper" style={hero ? undefined : { background: T.slides[0].bg }}>
-          {hero ? <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" /> : <span className="absolute bottom-3 right-3 md:top-28 md:bottom-auto md:right-10 font-mono text-[10px] tracking-[0.14em] bg-ink/40 px-2 py-1">{T.herolabel}</span>}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
-          {/* The spinning stamp, inked in the destination's palette; tap for James's note on why this trip is on file. */}
-          {T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
-          <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
-            <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
-            <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>
-            <p className="mt-3 text-lg md:text-xl max-w-2xl">{T.sub}</p>
-            {T.bestFor && <p className="mt-2 text-[13px] tracking-[0.16em] uppercase text-paper/85">Best for · <span className="ledger-display normal-case tracking-normal italic text-[17px] text-paper">{T.bestFor.who}</span></p>}
-            <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-paper/30 pt-5 max-w-4xl">
-              {T.herofacts.map(([k, v]) => <div key={k}><dt className="text-[11px] tracking-[0.16em] uppercase text-paper/70">{k}</dt><dd className="ledger-display text-[17px] mt-1">{v}</dd></div>)}
-            </dl>
-          </div>
-        </header>
+        {slides.length ? (
+          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} tag={<>{/* The spinning stamp, inked in the destination's palette */}{T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
+        ) : (
+          <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
+            {T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
+            <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
+              <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
+              <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>
+              <p className="mt-3 text-lg md:text-xl max-w-2xl">{T.sub}</p>
+            </div>
+          </header>
+        )}
+        {Summary}
         <RecordNav items={nav} cta={voyage ? "Ask about dates" : "Plan this journey"} ctaHref="#enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16">
           <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>

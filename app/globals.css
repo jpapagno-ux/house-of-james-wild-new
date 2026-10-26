@@ -81,3 +81,10 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 @media (min-width: 768px) { .jw-nudge { --jw-bx: 3px; } }
 .jw-nudge { opacity: 0; animation: jw-fade .9s ease-out 1.4s forwards, jw-nudge 2.6s ease-in-out 2.4s infinite; }
 @media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; opacity: 1; } }
+
+/* The ringing phone on the group-call prompts: a short ring every few seconds, and a ripple. */
+@keyframes jw-ring { 0%, 64%, 100% { transform: rotate(0); } 68% { transform: rotate(-14deg); } 72% { transform: rotate(12deg); } 76% { transform: rotate(-10deg); } 80% { transform: rotate(8deg); } 84% { transform: rotate(-4deg); } 88% { transform: rotate(0); } }
+@keyframes jw-ripple { 0%, 60% { opacity: 0; transform: scale(1); } 66% { opacity: .7; } 100% { opacity: 0; transform: scale(1.55); } }
+.jw-ring { transform-origin: 50% 60%; animation: jw-ring 3.6s ease-in-out infinite; }
+.jw-ripple { animation: jw-ripple 3.6s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .jw-ring, .jw-ripple { animation: none; } .jw-ripple { opacity: 0; } }

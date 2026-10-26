@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CalendarClock, ListChecks, Users } from "lucide-react";
+import { CalendarClock, ListChecks, PhoneCall, Users } from "lucide-react";
 import TimeBridge from "./TimeBridge";
 import FadeNote from "./FadeNote";
 import Signature from "./Signature";
@@ -122,7 +122,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
           </div>
           <div className="mt-7 flex flex-wrap items-center gap-4">
             <a href={host.calendlyUrl} className="ledger-btn inline-flex items-center gap-2 !bg-crimson !text-paper hover:!bg-ink hover:!border-ink" data-event="host_call_click" data-host-state="available" data-call="group">
-              <CalendarClock className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Book the group call
+              <span className="relative inline-flex" aria-hidden="true"><span className="jw-ripple absolute -inset-1 rounded-full border border-paper/70" /><PhoneCall className="jw-ring w-4 h-4" strokeWidth={1.7} /></span> Book the group call
             </a>
             <span className="text-[13px] ledger-muted">Calendly · 30–45 minutes · video · no obligation to book</span>
           </div>

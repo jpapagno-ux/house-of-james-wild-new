@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { PhoneCall, X } from "lucide-react";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 // A calling card that slides in while the traveller is reading the rates,
@@ -51,7 +51,10 @@ export default function CallingCard({ who, seats = 6, watch = ["rates", "rooms",
           <span aria-hidden="true" className="absolute -top-2.5 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#efe6cf]/85 rotate-[3deg] shadow-sm" />
           <button type="button" onClick={close} aria-label="Dismiss" className="absolute top-1.5 right-1.5 w-8 h-8 flex items-center justify-center text-[#6f655b] hover:text-[#2b2622]"><X className="w-4 h-4" strokeWidth={1.5} /></button>
           <div className="flex items-start gap-3 pr-6">
-            <span aria-hidden="true" className="hidden lg:flex shrink-0 w-12 h-12 rounded-full border-2 border-crimson/70 text-crimson items-center justify-center rotate-[-14deg] ledger-display italic text-[15px]">JW</span>
+            <span aria-hidden="true" className="relative shrink-0 w-11 h-11 lg:w-12 lg:h-12 rounded-full bg-crimson text-[#fdfcf8] flex items-center justify-center shadow-[0_4px_12px_-4px_rgba(139,42,42,.7)]">
+              <span className="jw-ripple absolute inset-0 rounded-full border-2 border-crimson" />
+              <PhoneCall className="jw-ring w-5 h-5" strokeWidth={1.6} />
+            </span>
             <div className="min-w-0">
               <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">Before you book</p>
               <p className="mt-1 text-[17px] lg:text-[19px] leading-tight text-[#3b2716] -rotate-[1.5deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>Meet them first.</p>

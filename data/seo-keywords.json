@@ -1,0 +1,40 @@
+{
+ "note": "Search check per destination and trip, done before each page is built or tuned. Keyword volumes come from Semrush when the account has API units; until then, the live search results pages (who ranks, what they call it, what people ask) set the wording.",
+ "checked": "2026-10-26",
+ "pages": {
+  "/overland/costa-rica/two-oceans-one-volcano": {
+   "best_for": "First-timers",
+   "targets": [
+    "12 day Costa Rica itinerary",
+    "Costa Rica coast to coast itinerary",
+    "Costa Rica itinerary for first timers",
+    "how many days in Costa Rica",
+    "best time to visit Costa Rica"
+   ],
+   "serp_notes": "Results are led by tour operators' '12 days in Costa Rica' and 'coast to coast' itineraries and 'how many days should you spend in Costa Rica' guides; families and first-timers are the common framing.",
+   "sources": [
+    "https://kimkim.com/c/12-days-in-costa-rica-5-unique-itinerary-ideas",
+    "https://kimkim.com/c/13-days-in-costa-rica-5-unique-itinerary-ideas",
+    "https://www.kimkim.com/c/how-many-days-should-you-spend-in-costa-rica",
+    "https://www.audleytravel.com/ca/costa-rica/tours/classic-costa-rica"
+   ]
+  },
+  "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north": {
+   "best_for": "Divers and snorkellers",
+   "targets": [
+    "Raja Ampat liveaboard",
+    "Raja Ampat cruise",
+    "Raja Ampat phinisi",
+    "Wayag Raja Ampat",
+    "best time to visit Raja Ampat"
+   ],
+   "serp_notes": "'Liveaboard' is the term the results use, ahead of 'voyage' or 'cruise'; 'best time to visit Raja Ampat' and non-diver questions are the common follow-ups.",
+   "sources": [
+    "https://www.kimkim.com/c/indonesia-sail-the-raja-ampat-archipelago-10-days",
+    "https://www.bluewaterdivetravel.com/liveaboard-destination/raja-ampat-liveaboards",
+    "https://www.responsibletravel.com/holidays/raja-ampat/travel-guide/best-time-to-visit-raja-ampat",
+    "https://www.dive-the-world.com/posts/raja-ampat/diving-in-raja-ampat-liveaboards-resorts-guide.php"
+   ]
+  }
+ }
+}

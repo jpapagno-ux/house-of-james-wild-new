@@ -87,7 +87,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
       <SectionHead eyebrow="In short" title={T.overview_title} icon="sun" />
       <div className="mt-6 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-start">
         <div>
-          <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}</p>
+          <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}{T.bestFor && ` Best suited to ${T.bestFor.who.toLowerCase()}.`}</p>
           <blockquote className="mt-6 border-l-2 border-crimson pl-5 ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.replace(/^"|"$/g, "")}&rdquo;<span className="block not-italic text-[14px] ledger-muted mt-2 font-serif">— James Wild</span></blockquote>
         </div>
         <dl className="ledger-paper border ledger-border p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[14.5px]">
@@ -109,8 +109,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
     <Sec id="suits">
       <SectionHead eyebrow="Who it suits" title={voyage ? "Who Should Sail This" : "Who This Route Is For"} icon="tree-ring" />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {T.suits.map(([who, wit, why]) => (
-          <li key={who} className="border ledger-border p-5"><p className="ledger-eyebrow ledger-crimson">{who}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
+        {[...T.suits].sort((a, b) => Number(b[0] === T.bestFor?.who) - Number(a[0] === T.bestFor?.who)).map(([who, wit, why]) => (
+          <li key={who} className={`border p-5 ${who === T.bestFor?.who ? "border-crimson bg-paper-card" : "ledger-border"}`}><p className="ledger-eyebrow ledger-crimson">{who}{who === T.bestFor?.who && <span className="ml-2 border border-crimson px-1.5 py-0.5 text-[9.5px]">Best suited</span>}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
         ))}
       </ul>
       {T.twice?.length > 0 && (
@@ -338,6 +338,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, host }: 
             <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
             <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>
             <p className="mt-3 text-lg md:text-xl max-w-2xl">{T.sub}</p>
+            {T.bestFor && <p className="mt-2 text-[13px] tracking-[0.16em] uppercase text-paper/85">Best for · <span className="ledger-display normal-case tracking-normal italic text-[17px] text-paper">{T.bestFor.who}</span></p>}
             <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 border-t border-paper/30 pt-5 max-w-4xl">
               {T.herofacts.map(([k, v]) => <div key={k}><dt className="text-[11px] tracking-[0.16em] uppercase text-paper/70">{k}</dt><dd className="ledger-display text-[17px] mt-1">{v}</dd></div>)}
             </dl>

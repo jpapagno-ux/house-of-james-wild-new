@@ -391,6 +391,10 @@
    "Green turtles nest from July to October, and October brings the hatchlings. December to April is the dry season, best for sunshine and easy roads."
   ],
   [
+   "When is the best time to do this Costa Rica itinerary?",
+   "December to April is the dry season, best for sunshine and easy roads. Come July to October for the green turtles nesting at Tortuguero, with hatchlings in October."
+  ],
+  [
    "Is this itinerary good for families?",
    "Yes. It was built for first-timers and families. Minimum ages for some activities and lodges apply [confirm per property]."
   ],
@@ -888,7 +892,14 @@
  "seo": {
   "path": "/overland/costa-rica/two-oceans-one-volcano",
   "title": "12-Day Costa Rica Itinerary: Two Oceans, One Volcano",
-  "description": "Tortuguero, Arenal, Monteverde and Nosara in 12 days, Caribbean to Pacific by small plane and private driver. Designed by James Wild & Co."
+  "description": "12 days in Costa Rica, coast to coast: Tortuguero, Arenal, Monteverde and Nosara by small plane and private driver. Best for first-timers. Designed by James Wild & Co.",
+  "keywords": [
+   "12 day Costa Rica itinerary",
+   "Costa Rica coast to coast itinerary",
+   "Costa Rica itinerary for first timers",
+   "Tortuguero Arenal Monteverde itinerary",
+   "how many days in Costa Rica"
+  ]
  },
  "prices_final": false,
  "booking_live": false,
@@ -902,11 +913,7 @@
    "url": "https://www.jameswildco.com/overland/costa-rica/two-oceans-one-volcano",
    "description": "Two Oceans, One Volcano is a 12-day Costa Rica itinerary from James Wild & Co.: three nights in Tortuguero on the Caribbean, three at Arenal Volcano, two in the Monteverde cloud forest and three in Nosara on the Pacific. You fly from San José to Tortuguero, travel the rest by private driver, and fly home from Liberia.",
    "touristType": [
-    "First-timers",
-    "Families with children",
-    "Three generations",
-    "Couples",
-    "Wildlife lovers"
+    "First-timers"
    ],
    "provider": {
     "@type": "TravelAgency",
@@ -1106,5 +1113,9 @@
   "nudge": "why this route",
   "script": "Every wrong turn, already taken. JW",
   "cta": "Read why this route ↓"
+ },
+ "bestFor": {
+  "who": "First-timers",
+  "why": "The whole country in twelve days, with one flight to skip the longest drive."
  }
 }

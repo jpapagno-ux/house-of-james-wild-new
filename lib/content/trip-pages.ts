@@ -17,7 +17,7 @@ export function mapHtml(t: Trip) {
 }
 
 export function tripMetadata(t: Trip): Metadata {
-  return buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, noindex: !t.prices_final });
+  return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, noindex: !t.prices_final }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
 }
 
 // Library photos (Aliikai's owner images, imported from wildearthstays.com),

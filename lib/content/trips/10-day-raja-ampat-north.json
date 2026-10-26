@@ -452,7 +452,7 @@
    "US$4,830 per person for a shared cabin in the 2026/27 season, based on double occupancy, including all meals, guided diving and snorkelling, water sports and Sorong transfers. 2027 and 2028 rates are posted with the departures."
   ],
   [
-   "When does the voyage sail?",
+   "When is the best time to sail Raja Ampat?",
    "On fixed departures in 2027 and 2028, during the Raja Ampat season from about October to April, when the seas are calmest and the visibility is at its best."
   ],
   [
@@ -460,7 +460,7 @@
    "Yes. Some cabins take two; family cabins take three to four, so a family can share one cabin [confirm minimum ages for diving]."
   ],
   [
-   "Do I need to dive?",
+   "Is a Raja Ampat liveaboard good for non-divers?",
    "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers [confirm courses aboard]."
   ],
   [
@@ -990,8 +990,15 @@
  "dep_note": "Cabins sleep two, and family cabins take three to four. Private charter of the whole vessel is quoted by sailing year.",
  "seo": {
   "path": "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
-  "title": "Raja Ampat 10-Day Voyage Aboard Aliikai, a Phinisi",
-  "description": "Ten days round Raja Ampat's northern reefs aboard the phinisi Aliikai: mantas, Wayag and guided diving. Cabins for 2, family cabins for 3–4."
+  "title": "10-Day Raja Ampat Liveaboard Cruise Aboard Aliikai",
+  "description": "A 10-day Raja Ampat liveaboard aboard the phinisi Aliikai: Wayag, the mantas at Arborek and guided diving. Best for divers and snorkellers. Cabins for 2, family cabins for 3–4.",
+  "keywords": [
+   "Raja Ampat liveaboard",
+   "Raja Ampat cruise",
+   "Raja Ampat phinisi",
+   "Wayag Raja Ampat",
+   "best time to visit Raja Ampat"
+  ]
  },
  "prices_final": false,
  "booking_live": false,
@@ -1005,11 +1012,7 @@
    "url": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
    "description": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. Fixed departures sail in 2027 and 2028.",
    "touristType": [
-    "Divers and snorkellers",
-    "Couples",
-    "Families",
-    "Photographers",
-    "First-time sailors"
+    "Divers and snorkellers"
    ],
    "provider": {
     "@type": "TravelAgency",
@@ -1301,5 +1304,9 @@
   "nudge": "why this voyage",
   "script": "Sailed it. Would again. JW",
   "cta": "Read why this voyage ↓"
+ },
+ "bestFor": {
+  "who": "Divers and snorkellers",
+  "why": "Guided diving with Nitrox, and snorkelling every day for those who stay on top."
  }
 }

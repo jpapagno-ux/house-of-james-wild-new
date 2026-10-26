@@ -9,7 +9,7 @@ export type TripImg = { url: string; alt: string };
 type Row = [string, string];
 export type Trip = {
   id: string; kind: "overland" | "voyage"; h1: string; sub: string; crumbs: string[];
-  seo: { path: string; title: string; description: string };
+  seo: { path: string; title: string; description: string; keywords?: string[] };
   answer: string; quote: string; ledgerline: string; overview_title: string;
   meta: Row[]; herofacts: Row[]; herolabel: string; mark1: string; mark2: string;
   slides: { kicker: string; title: string; line: string; photo: string; bg: string }[];
@@ -36,6 +36,7 @@ export type Trip = {
   ctaline: string; ctabtn: string;
   prices_final: boolean; booking_live: boolean;
   jsonld: Record<string, unknown>[];
+  bestFor?: { who: string; why: string };
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
 };
 

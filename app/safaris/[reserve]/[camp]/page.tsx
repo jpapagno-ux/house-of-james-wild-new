@@ -75,8 +75,8 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path: rpath }, { name: c.name, path }];
   const siblings = r.camps.filter((o) => o.slug !== c.slug && campReady(o));
   const images = c.gallery.map((u, i) => ({ url: u, alt: `${c.name}, ${r.name}, photograph ${i + 1}` }));
-  const apart = momentsFor(`camp:${r.slug}/${c.slug}`, c.features.slice(0, 8), images.slice(1));
-  const days = momentsFor(`camp:${r.slug}/${c.slug}`, c.experiences.slice(0, 8), images.slice(1), 3, apart);
+  const apart = momentsFor(`camp:${r.slug}/${c.slug}`, c.features, images.slice(1));
+  const days = momentsFor(`camp:${r.slug}/${c.slug}`, c.experiences, images.slice(1), 3, apart);
   const paragraphs = [c.intro, c.description].filter((t, i, a) => t && t.length > 40 && !(i === 1 && a[0] && t.startsWith(a[0].slice(0, 40))));
   const faqs = [
     ...(c.rooms.length ? [{ q: `What suites does ${c.name} have?`, a: c.rooms.map((m) => `${m.name}${m.capacity ? ` (sleeps ${m.capacity})` : ""}${m.from ? `, from ${usd(m.from)}${/exclusive use/i.test(m.name) ? " as filed" : " per person per night"}` : ""}`).join("; ") + "." }] : []),

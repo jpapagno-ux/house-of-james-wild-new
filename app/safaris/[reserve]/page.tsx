@@ -79,8 +79,8 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const facts: [string, string][] = [["Ledger ID", r.rsv], ["Reserve", `${r.area} · ${r.province}`], ["On the reserve", `${lodges} ${lodges === 1 ? "lodge" : "lodges & camps"}${r.camps.length > lodges ? ` · ${r.camps.length - lodges} private` : ""}`], ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ["Booked through", "Wild & Co Safaris"]];
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path }];
   const images = (r.stay.gallery ?? []).filter(Boolean).slice(0, 10).map((u, i) => ({ url: u, alt: `${r.name}, photograph ${i + 1}` }));
-  const apart = momentsFor(`reserve:${r.slug}`, r.stay.features.items.slice(0, 8), images.slice(1));
-  const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items.slice(0, 8), images.slice(1), 3, apart);
+  const apart = momentsFor(`reserve:${r.slug}`, r.stay.features.items, images.slice(1));
+  const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items, images.slice(1), 3, apart);
   const faqs = [
     { q: `How many lodges and camps are on ${r.name}?`, a: `${r.camps.length} on the Ledger: ${r.camps.map((c) => c.name).join(", ")}. Each has its own page with its suites and rates.` },
     ...(from ? [{ q: `How much does ${r.name} cost?`, a: `Registry rates start from ${usd(from)} per person, per night at ${r.camps.find((c) => c.fromRate === from)?.name ?? "the reserve"}, and rise by camp and suite. The house confirms every rate with your quote.` }] : []),

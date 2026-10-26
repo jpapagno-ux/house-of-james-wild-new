@@ -93,8 +93,33 @@ export const MOMENTS: Record<string, Moment[]> = {
   ],
 };
 
-export function momentsFor(slug: string, items: string[], fallback: { url: string; alt: string }[], offset = 0, taken: { note?: string }[] = []) {
+// The six rows travellers care about most, in this order, per section.
+// "apart" = What sets it apart, "days" = How to fill the days.
+const PICKS: Record<string, { apart?: RegExp[]; days?: RegExp[] }> = {
+  "leeu-estates": { apart: [/estate setting/i, /dining/i, /spa/i, /wine/i, /gallery/i, /complimentary/i] },
+  "monwana-thornybush": { days: [/game drives/i, /bush walks/i, /photographic/i, /bush dining/i, /wellness/i, /stargazing/i] },
+  "tengile-mala-mala-kirkmans-kamp": { apart: [/1920s|homestead/i, /sand river/i, /wildlife viewing/i, /verandah|veranda/i, /suites/i, /family/i] },
+  "camp:lion-sands/ivory-lodge": { apart: [/suite pool/i, /treehouse/i, /night game/i, /bush walk/i, /all inclusive/i, /stargazing/i] },
+  "ellerman-house": { apart: [/villa|exclusiv/i, /\bart\b/i, /wine/i, /dining/i, /spa|garden/i, /bar roc/i] },
+};
+// Rows travellers rarely choose a place for sink to the bottom.
+const LOW = /wi-?fi|internet|parking|laundry|housekeeping|air.?con|room service|24.?hour|front desk|concierge|transfer/i;
+export const MAX_ROWS = 6;
+
+/** Pick the top six rows: James's order where set, else rows with a photo and note first, everyday amenities last. */
+export function topRows(slug: string, items: string[], section: "apart" | "days") {
+  const pick = PICKS[slug]?.[section];
   const list = MOMENTS[slug] ?? [];
+  const score = (t: string, i: number) => {
+    if (pick) { const p = pick.findIndex((r) => r.test(t)); if (p >= 0) return p; }
+    return 100 + (LOW.test(t) ? 200 : 0) + (list.some((m) => m.match.test(t)) ? 0 : 50) + i;
+  };
+  return items.map((t, i) => ({ t, s: score(t, i) })).sort((a, b) => a.s - b.s).slice(0, MAX_ROWS).map((x) => x.t);
+}
+
+export function momentsFor(slug: string, rows: string[], fallback: { url: string; alt: string }[], offset = 0, taken: { note?: string }[] = []) {
+  const list = MOMENTS[slug] ?? [];
+  const items = topRows(slug, rows, taken.length ? "days" : "apart");
   // entries already shown in the other section are skipped, so the two sections never repeat a note
   const used = new Set<number>(list.map((m, j) => (taken.some((t) => t.note && t.note === m.note) ? j : -1)).filter((j) => j >= 0));
   return items.map((title, k) => {

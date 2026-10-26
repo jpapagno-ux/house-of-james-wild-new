@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeroSlider from "@/components/destination/HeroSlider";
+import { heroReady, sharpen } from "@/lib/content/sharpen";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight, BedDouble, Check, Leaf, Maximize2, Users, Waves, X } from "lucide-react";
@@ -46,12 +47,13 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
         {glance && <div className="mt-7">{glance}</div>}
       </div>
   );
-  if (slides && slides.length > 1) {
-    return <HeroSlider slides={slides.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;
+  const ready = slides ? heroReady(slides) : undefined;
+  if (ready && ready.length > 1) {
+    return <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;
   }
   return (
     <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
-      <Image src={image.url} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
+      <Image src={sharpen(image.url)} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
       {body}

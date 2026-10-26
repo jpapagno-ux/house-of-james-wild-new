@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
+import { sharpen, tooSmall } from "@/lib/content/sharpen";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
 import PlaceNote from "@/components/destination/PlaceNote";
@@ -71,7 +72,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
     const q = projectOn(chart, s.coords!.lat, s.coords!.lng);
     return { id: s.slug, category: "stay", name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
   });
-  const slides: Slide[] = [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }, ...featured.filter((s) => s.hero).slice(0, 5).map((s) => ({ src: s.hero as string, alt: `${s.name}, ${c.name}`, caption: s.name }))];
+  const slides: Slide[] = [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }, ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));

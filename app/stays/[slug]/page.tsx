@@ -97,8 +97,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     { q: `How do I book ${s.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked.` },
   ];
   const overviewParas = s.why.length ? s.onlyHere : s.onlyHere.slice(2);
-  const apart = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras).slice(0, 8), images.slice(1));
-  const days = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras).slice(0, 8), images.slice(1), 3, apart);
+  const apart = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), images.slice(1));
+  const days = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), images.slice(1), 3, apart);
   const hostEarly = host.state === "available" && !!host.host;
   const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
   const nav: [string, string][] = priced

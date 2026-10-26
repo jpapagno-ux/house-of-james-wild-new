@@ -1,5 +1,5 @@
 // A note from James for every region and country page, shown beside the
-// "In short" answer. DRAFTED in James Wild's voice for his sign-off. Costa
+// "In short" answer, in James Wild's voice; approved by James 2026-10-26. Costa
 // Rica and the Caribbean (the Bahamas) carry origin notes: that's where the
 // house began. When a Captain's Log post exists for a place, add it as `blog`
 // and the note links to it.

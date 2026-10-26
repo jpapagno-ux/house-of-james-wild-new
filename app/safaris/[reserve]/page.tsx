@@ -80,7 +80,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path }];
   const images = (r.stay.gallery ?? []).filter(Boolean).slice(0, 10).map((u, i) => ({ url: u, alt: `${r.name}, photograph ${i + 1}` }));
   const apart = momentsFor(`reserve:${r.slug}`, r.stay.features.items.slice(0, 8), images.slice(1));
-  const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items.slice(0, 8), images.slice(1), 3);
+  const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items.slice(0, 8), images.slice(1), 3, apart);
   const faqs = [
     { q: `How many lodges and camps are on ${r.name}?`, a: `${r.camps.length} on the Ledger: ${r.camps.map((c) => c.name).join(", ")}. Each has its own page with its suites and rates.` },
     ...(from ? [{ q: `How much does ${r.name} cost?`, a: `Registry rates start from ${usd(from)} per person, per night at ${r.camps.find((c) => c.fromRate === from)?.name ?? "the reserve"}, and rise by camp and suite. The house confirms every rate with your quote.` }] : []),

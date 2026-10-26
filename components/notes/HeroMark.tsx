@@ -2,13 +2,15 @@
 
 import { useEffect, useState } from "react";
 import LuggageTag from "./LuggageTag";
+import PostMark from "./PostMark";
 
 // The verdict's mark on the hero, in one of three styles while James
 // chooses: the luggage tag, a rubber stamp pressed onto the photograph, or a
-// small taped note. Each opens to the verdict's first line. Preview any style
-// on any verdict page with ?mark=tag|stamp|note.
-export type MarkStyle = "tag" | "stamp" | "note";
-type P = { line: string; where: string; when: string; style: MarkStyle };
+// small taped note, or the postmark (stamp, cancellation and a line in
+// James's hand). Preview any style on any verdict page with
+// ?mark=post|tag|stamp|note.
+export type MarkStyle = "post" | "tag" | "stamp" | "note";
+type P = { line: string; where: string; when: string; style: MarkStyle; image?: string; script?: string };
 
 function Stamp({ line, where, when }: Omit<P, "style">) {
   const [open, setOpen] = useState(false);
@@ -58,7 +60,8 @@ function TapedNote({ line, where, when }: Omit<P, "style">) {
 
 export default function HeroMark(p: P) {
   const [style, setStyle] = useState<MarkStyle>(p.style);
-  useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "tag" || m === "stamp" || m === "note") setStyle(m); }, []);
+  useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "post" || m === "tag" || m === "stamp" || m === "note") setStyle(m); }, []);
+  if (style === "post") return <PostMark line={p.line} where={p.where} when={p.when} image={p.image} script={p.script ?? "Worth your time. JW"} />;
   if (style === "stamp") return <Stamp {...p} />;
   if (style === "note") return <TapedNote {...p} />;
   return <LuggageTag {...p} />;

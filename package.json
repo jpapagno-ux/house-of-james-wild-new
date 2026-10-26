@@ -2,7 +2,7 @@
   "name": "house-of-james-wild",
   "version": "0.1.0",
   "private": true,
-  "description": "House of James Wild & Co \u2014 jameswildco.com. Home of Wild Earth Stays.",
+  "description": "House of James Wild & Co — jameswildco.com. Home of Wild Earth Stays.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +17,7 @@
   "dependencies": {
     "@fontsource/caveat": "^5.2.5",
     "@fontsource/eb-garamond": "^5.2.5",
+    "@fontsource/homemade-apple": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.2.5",
     "@fontsource/mrs-saint-delafield": "^5.2.5",
     "@fontsource/playfair-display": "^5.2.5",

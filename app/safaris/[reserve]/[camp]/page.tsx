@@ -11,7 +11,7 @@ import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
-import { HERO_MARK, verdictFor } from "@/lib/content/verdicts";
+import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import HostPanel from "@/components/record/HostPanel";
 import { heroSlides } from "@/lib/content/hero-sets";
@@ -80,7 +80,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
     <>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero slides={slides} tag={verdict ? <HeroMark style={HERO_MARK[`camp:${r.slug}/${c.slug}`] ?? "tag"} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
+        <RecordHero slides={slides} tag={verdict ? <HeroMark style={HERO_MARK[`camp:${r.slug}/${c.slug}`] ?? "post"} image={slides[1]?.url ?? c.hero ?? undefined} script={SCRIPT[`camp:${r.slug}/${c.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} volume="safaris" /> : undefined}
           glance={<GlanceBar glance={{ ...(c.fromRate ? { price: { amount: usd(c.fromRate), basis: c.kind === "camp" ? "from, per person per night" : "from, as filed" } } : {}), facts: [["Reserve", r.name], ["Suites", units || "Ask James"], ["Best months", r.stay.bestMonths ?? "Ask James"]], cta: { label: "See the suites", href: "#suites" } }} />} />

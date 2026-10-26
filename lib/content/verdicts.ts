@@ -37,7 +37,13 @@ export const VERDICTS: Record<string, Verdict> = {
 export const verdictFor = (key: string) => VERDICTS[key];
 
 // The hero mark style per page while James compares: tag, stamp or note.
-export const HERO_MARK: Record<string, "tag" | "stamp" | "note"> = {
-  "stay:leeu-estates": "note", "stay:monwana-thornybush": "stamp", "camp:lion-sands/ivory-lodge": "tag",
-  "stay:tengile-mala-mala-kirkmans-kamp": "stamp", "stay:ellerman-house": "note", "stay:tswalu-reserve": "tag",
+export const HERO_MARK: Record<string, "post" | "tag" | "stamp" | "note"> = {};
+// The line in James's hand under the postmark, one per place.
+export const SCRIPT: Record<string, string> = {
+  "stay:leeu-estates": "Come as you are. JW",
+  "stay:monwana-thornybush": "Mind the bar. JW",
+  "camp:lion-sands/ivory-lodge": "For the river. JW",
+  "stay:tengile-mala-mala-kirkmans-kamp": "Old Africa. JW",
+  "stay:ellerman-house": "Make it your base. JW",
+  "stay:tswalu-reserve": "Go for the silence. JW",
 };

@@ -9,6 +9,7 @@ import "@fontsource/eb-garamond/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/500.css";
 import "@fontsource/mrs-saint-delafield/400.css";
+import "@fontsource/homemade-apple/latin-400.css";
 import "@fontsource/caveat/500.css";
 import "./globals.css";
 import JsonLd from "@/components/ledger/JsonLd";

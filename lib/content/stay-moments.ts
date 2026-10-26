@@ -3,7 +3,8 @@
 // Matched by the row's wording; rows with no match borrow from the stay's own photographs.
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
-const pic = (id: string) => `${CLD}/e_upscale/c_fill,ar_16:10,w_1600/q_auto:good/f_jpg/${id}`;
+// e_upscale only for originals under 4.2 megapixels (the wide panoramas are big enough already)
+const pic = (id: string, up = true) => `${CLD}/${up ? "e_upscale/" : ""}c_fill,ar_16:10,w_1600/q_auto:good/f_jpg/${id}`;
 const LEEU = "wildco/south-africa/leeu-estates-franschhoek";
 
 type Moment = { match: RegExp; image: string; alt: string; note?: string };
@@ -19,7 +20,7 @@ export const MOMENTS: Record<string, Moment[]> = {
     { match: /garden/i, image: pic(`${LEEU}/leeu-locally-grown-gardens`), alt: "Harvesting in the kitchen gardens at Leeu Estates", note: "Walk the kitchen gardens in the morning and you'll recognise dinner." },
     { match: /franschhoek exploration|explor/i, image: pic(`${LEEU}/leeu-estates-manor-house-aerial-franschhoek`), alt: "Leeu Estates and the Franschhoek valley from the air", note: "The village is five minutes away. Go once, then come back to the lawn." },
     { match: /estate setting/i, image: pic(`${LEEU}/leeu-estates-manor-house-morning`), alt: "The Leeu Estates Manor House in morning light", note: "A working wine estate under the mountains, not a hotel pretending to be one." },
-    { match: /country house|boutique/i, image: pic(`${LEEU}/leeu-estates-franschhoek-02`), alt: "The Manor House lounge and bar at Leeu Estates", note: "It runs like a private house: they learn your name and your drink by day two." },
+    { match: /country house|boutique/i, image: pic(`${LEEU}/leeu-estates-franschhoek-02`, false), alt: "The Manor House lounge and bar at Leeu Estates", note: "It runs like a private house: they learn your name and your drink by day two." },
     { match: /views/i, image: pic(`${LEEU}/leeu-estates-franschhoek-04`), alt: "The Leeu Estates lawn under the Franschhoek peaks", note: "Every chair faces the mountains. Choose one and stay put." },
     { match: /complimentary|experiences/i, image: pic(`${LEEU}/leeu-estates-manor-house-deck-sundowners`), alt: "Sundowners on the Manor House deck at Leeu Estates", note: "The estate experiences come with the room. Say yes to most of them." },
   ],

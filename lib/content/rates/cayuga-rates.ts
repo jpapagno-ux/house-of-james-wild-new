@@ -34,3 +34,21 @@ export function routeHotelCost(stays: Record<string, number>, w: RateWindow, use
   for (const [slug, nights] of Object.entries(stays)) { const r = w.rates[slug]?.[use]; if (r == null) return null; t += r * nights; }
   return Math.round(t);
 }
+
+// Room types and public rack rates per night, 2 adults, from each hotel's own
+// booking page for 11–14 May 2027 (read 27 Oct 2026). Before tax: Costa Rica
+// adds 13% government sales tax, Isla Palenque (Panama) 10%. "now" = after the
+// hotel's own promotion. Breakfast: included at Senda, Arenas del Mar and most
+// Aguas Claras rooms; not shown for Kura or Isla Palenque [confirm].
+export const CAYUGA_ROOMS_MAY_2027: Record<string, { promo?: string; tax: number; rooms: { name: string; sleeps: number; list: number; now: number }[] }> = {
+  "senda-monteverde-lodge": { promo: "Stay 2 nights, the 3rd on us", tax: 0.13, rooms: [
+    { name: "Superior Room", sleeps: 2, list: 395, now: 263.33 }, { name: "Junior Suite", sleeps: 3, list: 475, now: 316.67 }, { name: "Premium Suite", sleeps: 3, list: 555, now: 370 } ] },
+  "kura-boutique-resort": { promo: "Early Bird 10% off", tax: 0.13, rooms: [
+    { name: "Junior", sleeps: 2, list: 895, now: 805.5 }, { name: "Suite", sleeps: 2, list: 1020, now: 918 }, { name: "Deluxe (plunge pool)", sleeps: 2, list: 1190, now: 1071 }, { name: "Master (plunge pool)", sleeps: 2, list: 1370, now: 1233 } ] },
+  "arenas-del-mar-resort": { promo: "Stay 5 nights, pay 4 (5-night stays)", tax: 0.13, rooms: [
+    { name: "Ocean Breeze Superior", sleeps: 2, list: 680, now: 680 }, { name: "Ocean View Superior", sleeps: 2, list: 705, now: 705 }, { name: "Ocean Breeze Suite", sleeps: 4, list: 895, now: 895 }, { name: "Ocean View Premium Suite", sleeps: 4, list: 1080, now: 1080 }, { name: "Playitas Suite", sleeps: 8, list: 1405, now: 1405 } ] },
+  "isla-palenque-resort": { promo: "Stay 5 nights, pay 4 (5-night stays)", tax: 0.1, rooms: [
+    { name: "Beachfront Casita", sleeps: 4, list: 1155, now: 1155 }, { name: "Beachfront Villa Estate", sleeps: 14, list: 3190, now: 3190 } ] },
+  "aguas-claras": { promo: "Early Bird 10% off", tax: 0.13, rooms: [
+    { name: "Pavlova Suite", sleeps: 2, list: 400, now: 360 }, { name: "1-Bedroom Bungalow", sleeps: 2, list: 495, now: 445.5 }, { name: "Bungalow Suite", sleeps: 2, list: 550, now: 495 }, { name: "2-Bedroom Bungalow", sleeps: 4, list: 790, now: 711 }, { name: "Two Bedroom Deluxe Bungalow", sleeps: 4, list: 880, now: 792 } ] },
+};

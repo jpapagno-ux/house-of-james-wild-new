@@ -5,6 +5,9 @@ import { TRIPS, type Trip, type TripImg } from "./trips";
 import { buildMetadata } from "@/lib/seo";
 import { SAMPLE_ALIIKAI } from "./preview/aliikai";
 
+// Photos: TRIP_IMAGES below, plus any "images" map in the trip's own JSON, keyed by
+// the photo label (days, lodges), the experience name or the feature title. Add one
+// and it appears in its place on the page; labels without one keep the marked frame.
 // Page plumbing for the route pages: which trip lives at which URL, the map
 // figure, photos already in the library, and metadata. Pages stay noindex
 // until James marks prices final (trip.prices_final).
@@ -63,9 +66,14 @@ export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string
     hero: SAMPLE_ALIIKAI.hero,
     images: {
       "PHOTO · ALIIKAI AT SORONG": SAMPLE_ALIIKAI.hero,
-      "PHOTO · KRI REEF": A.reef,
+      "PHOTO · KRI REEF": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/raja-ampat-indonesia/destination/diver-fusiliers-reef", alt: "A diver among fusiliers on a Raja Ampat reef" },
+      "PHOTO · WOFOH CORAL WALL": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/home-hero/03-over-under-reef", alt: "A Raja Ampat reef and island, above and below the water" },
+      "A handcrafted phinisi": SAMPLE_ALIIKAI.hero,
+      "Dive deck with Nitrox": A.dive,
+      "Kayaks and paddleboards": A.sup,
+      "Dining on deck": A.deck,
       "PHOTO · PENEMU LOOKOUT": A.trek,
-      "PHOTO · WAYAG KARSTS": A.islands,
+      "PHOTO · WAYAG KARSTS": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/home-hero/02-raja-ampat-lagoons", alt: "The Wayag lagoons and karst islands from above" },
       "PHOTO · FAREWELL ON DECK": A.deck,
       "The Wayag peak": A.islands,
       "Guided diving with Nitrox": A.dive,
@@ -74,5 +82,12 @@ export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string
       "Dinner on deck": A.deck,
     },
   },
-  "two-oceans-one-volcano": { images: {} },
+  "two-oceans-one-volcano": {
+    images: {
+      "PHOTO · ARENAL FROM THE ROAD": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp", alt: "Arenal Volcano over the rainforest, Costa Rica" },
+      "Villa plunge pool": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.", alt: "Nayara Springs: a pool among the rainforest flowers" },
+      "PHOTO · CLOUD FOREST": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By.webp", alt: "The Monteverde cloud forest from a balcony" },
+      "PHOTO · PLAYA GUIONES AT SUNSET": { url: "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6863018671b62ea7c452cea0_CostaRicaMAHero1.jpg", alt: "Sunset over Costa Rica's Pacific coast" },
+    },
+  },
 };

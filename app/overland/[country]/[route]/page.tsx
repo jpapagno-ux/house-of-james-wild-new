@@ -13,5 +13,5 @@ export default async function OverlandRoute({ params }: P) {
   const t = byPath(`/overland/${country}/${route}`);
   if (!t) notFound();
   const m = TRIP_IMAGES[t.id] ?? { images: {} };
-  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} />;
+  return <TripPage trip={t} mapHtml={mapHtml(t)} images={{ ...m.images, ...(t.images ?? {}) }} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} />;
 }

@@ -36,6 +36,7 @@ export type Trip = {
   ctaline: string; ctabtn: string;
   prices_final: boolean; booking_live: boolean;
   jsonld: Record<string, unknown>[];
+  images?: Record<string, TripImg>;
   bestFor?: { who: string; why: string };
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
 };

@@ -13,5 +13,5 @@ export default async function VoyageRoute({ params }: P) {
   const t = byPath(`/voyages/${waters}/${voyage}`);
   if (!t) notFound();
   const m = TRIP_IMAGES[t.id] ?? { images: {} };
-  return <TripPage trip={t} mapHtml={mapHtml(t)} images={m.images} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} host={{ key: "voyage:aliikai", name: "Aliikai", kind: "vessel" }} />;
+  return <TripPage trip={t} mapHtml={mapHtml(t)} images={{ ...m.images, ...(t.images ?? {}) }} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} host={{ key: "voyage:aliikai", name: "Aliikai", kind: "vessel" }} />;
 }

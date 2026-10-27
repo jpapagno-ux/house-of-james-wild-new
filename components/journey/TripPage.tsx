@@ -13,6 +13,7 @@ import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
 import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
 import { usd } from "@/lib/pricing";
+import ExpandAll from "./ExpandAll";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
@@ -64,6 +65,13 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
   const def = T.calc.opts[(T.calc as { opt0?: number }).opt0 ?? 0];
   const route = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i).join(" → ");
+  // James's note for a day: the lodge's line on the first day there (overland),
+  // or the experience filed for that day (voyage).
+  const noteFor = (d: (typeof T.days)[number]) => {
+    const n = dayNo(d.n);
+    if (!voyage) return d.head ? T.lodges?.find((l) => l.name === d.stay)?.james : undefined;
+    return T.experiences.find((e) => e.james && new RegExp(`Days? ${n}\\b`).test(e.line ?? ""))?.james;
+  };
   const DayIcon = ({ d }: { d: (typeof T.days)[number] }) => {
     const t = `${d.move} ${d.line} ${d.acts}`.toLowerCase();
     const I = /plane|flight|fly|airport/.test(t) ? Plane : /boat|canal|tender/.test(t) ? Ship : /4×4|drive|road|driver|car/.test(t) ? Car : /dive|snorkel|manta|reef|coral/.test(t) ? Fish : /volcano|peak|lookout|climb|trek|hike|waterfall/.test(t) ? Mountain : /forest|cloud|jungle|bird/.test(t) ? Trees : /surf|beach|kayak|swim/.test(t) ? Waves : voyage ? Anchor : Trees;
@@ -137,21 +145,22 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Days = (
     <Sec id="days">
       <SectionHead eyebrow={`${T.dayeyebrow} · ${T.sub.split("·").slice(0, 2).join("·").trim()}`} title={T.daytitle} icon="wave" intro={voyage ? "Each day as the crew sails it. Weather, tides and the mantas shape the order. Open a day for the detail." : "Each day as James would drive it. Open a day for the detail, or send it to the map."} />
-      <div className="mt-8 border-t ledger-border">
+      <div className="mt-6 flex justify-end"><ExpandAll target="days-list" /></div>
+      <div id="days-list" className="mt-3 space-y-2">
         {T.days.map((d, i) => (
           <div key={d.n}>
           {d.head && d.stageName && <p className="ledger-eyebrow ledger-crimson pt-6 pb-1">{d.stage} · {d.stageName} · <span className="ledger-muted">{d.stageMeta}</span>{d.mark ? <span className="ml-2 italic normal-case tracking-normal font-serif text-[14px] text-ink">“{d.mark}”</span> : null}</p>}
-          <details className="group border-b ledger-border" open={i === 0}>
-            <summary className="cursor-pointer list-none flex items-center gap-4 py-4 [&::-webkit-details-marker]:hidden">
+          <details className="group border ledger-border open:border-crimson/50 open:bg-paper-card transition-colors" open={i === 0}>
+            <summary className="cursor-pointer list-none flex items-center gap-4 px-4 md:px-5 py-4 hover:bg-paper-card [&::-webkit-details-marker]:hidden">
               <span className="w-10 h-10 shrink-0 rounded-full border ledger-border flex items-center justify-center ledger-crimson group-open:bg-crimson group-open:text-paper group-open:border-crimson transition-colors"><DayIcon d={d} /></span>
               <span className="flex-1 min-w-0">
                 <span className="font-mono text-[11px] tracking-[0.14em] ledger-muted">{d.n}</span>
                 <span className="block ledger-display text-[19px] md:text-[22px] leading-snug">{d.title}</span>
-                <span className="block text-[13.5px] italic ledger-muted truncate">{d.line}</span>
+                <span className="block text-[13.5px] italic ledger-muted truncate">{d.line}{d.stay && d.stay !== "—" ? ` · ${d.stay.replace(/\s*·\s*\[[^\]]+\]/, "")}` : ""}</span>
               </span>
-              <ChevronDown className="w-5 h-5 shrink-0 ledger-muted transition-transform group-open:rotate-180" strokeWidth={1.5} aria-hidden="true" />
+              <span className="hidden sm:inline text-[10.5px] tracking-[0.16em] uppercase ledger-muted group-open:hidden">Open day</span><ChevronDown className="w-5 h-5 shrink-0 ledger-crimson transition-transform group-open:rotate-180" strokeWidth={1.5} aria-hidden="true" />
             </summary>
-            <div className="pb-6 pl-0 md:pl-14 grid md:grid-cols-[1.5fr_1fr] gap-5 items-start">
+            <div className="px-4 md:px-5 pb-6 md:pl-[76px] grid md:grid-cols-[1.5fr_1fr] gap-5 items-start">
               <div>
                 <p className="text-[16px] leading-relaxed"><Fx t={d.body} /></p>
                 <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[14px]">
@@ -160,6 +169,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
                   <dt className="ledger-eyebrow">{T.movelabel}</dt><dd>{d.move}</dd>
                   <dt className="ledger-eyebrow">Doing</dt><dd>{d.acts}</dd>
                 </dl>
+                {noteFor(d) && <p className="mt-4 italic text-[15px] border-l-2 border-crimson pl-3">&ldquo;{noteFor(d)}&rdquo; <span className="not-italic ledger-muted text-[13px]">— James</span></p>}
                 <button type="button" data-jw-day={dayNo(d.n)} data-jw-for={mapId} className="mt-4 ledger-btn-ghost">Show on the map ↑</button>
               </div>
               <Ph img={images[d.img]} label={d.img} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 100vw, 30vw" />
@@ -192,11 +202,14 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       ) : (
         <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {T.experiences.map((e) => (
-            <li key={e.title} className="border ledger-border p-5">
+            <li key={e.title} className="border ledger-border">
+              {images[e.title ?? ""] && <Ph img={images[e.title ?? ""]} label={e.title ?? ""} className="aspect-[16/10] w-full" sizes="(max-width: 768px) 100vw, 33vw" />}
+              <div className="p-5">
               <p className="ledger-eyebrow ledger-crimson">{e.kicker}</p>
               <h3 className="ledger-display text-[20px] mt-1">{e.title}</h3>
               <p className="mt-2 text-[15px] leading-relaxed">{e.info}</p>
               <p className="mt-3 text-[12.5px] ledger-muted">{[e.dur, e.incl, e.season].filter(Boolean).join(" · ")}</p>
+              </div>
             </li>
           ))}
         </ul>
@@ -240,7 +253,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           {T.vessel.facts.map(([k, v]) => <div key={k} className="contents"><dt className="ledger-muted">{k}</dt><dd><Fx t={v} /></dd></div>)}
         </dl>
         <ul className="grid gap-3 sm:grid-cols-2">
-          {T.features.map(([, t, l]) => <li key={t} className="border ledger-border p-4"><p className="ledger-display text-[17px]">{t}</p><p className="text-[14px] ledger-muted"><Fx t={l} /></p></li>)}
+          {T.features.map(([, t, l]) => <li key={t} className="border ledger-border">{images[t] && <Ph img={images[t]} label={t} className="aspect-[16/10] w-full" sizes="(max-width: 768px) 100vw, 25vw" />}<div className="p-4"><p className="ledger-display text-[17px]">{t}</p><p className="text-[14px] ledger-muted"><Fx t={l} /></p></div></li>)}
         </ul>
       </div>
       <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32">The cabins</h3>

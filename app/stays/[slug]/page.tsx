@@ -14,7 +14,7 @@ import { FULL_FRAME } from "@/lib/content/stay-media";
 import { PRICED } from "@/lib/content/priced-stays";
 import Inclusions from "@/components/booking/Inclusions";
 import BookingPanel from "@/components/booking/BookingPanel";
-import SaveToFolio from "@/components/booking-live/SaveToFolio";
+import StayActions from "@/components/booking-live/StayActions";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
@@ -124,7 +124,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
-          <SaveToFolio slug={s.slug} name={s.name} />
+          <StayActions slug={s.slug} name={s.name} />
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} className="mt-10 max-w-3xl" />}

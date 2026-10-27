@@ -124,3 +124,25 @@ export function safeNext(next: string | null | undefined): string {
   if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return "/account";
   return /^\/(account|stays)(\/[a-z0-9\-/]*)?(\?[\w=&%-]*)?$/i.test(next) ? next : "/account";
 }
+
+export type SearchInput = { slug: string; arrival: string; departure: string; adults: number; childAges: number[]; promoCode: string | null; room: string | null; plan: string | null };
+
+/** POST /api/v1/availability/search and /api/v1/quotes — dates and occupancy are required before any price. */
+export function parseSearch(body: unknown, needRoom = false): Result<SearchInput> {
+  if (!isObj(body)) return fail("invalid_input", "Body must be a JSON object");
+  const bad = only(body, ["property", "arrival", "departure", "adults", "childAges", "promoCode", "room", "plan"]); if (bad) return bad;
+  const slug = typeof body.property === "string" ? body.property.toLowerCase() : "";
+  if (!SLUG.test(slug)) return fail("invalid_input", "property must be a stay slug");
+  if (!isValidDate(body.arrival) || !isValidDate(body.departure)) return fail("invalid_input", "Choose arrival and departure dates");
+  if ((body.departure as string) <= (body.arrival as string)) return fail("invalid_input", "Departure must be after arrival");
+  const adults = typeof body.adults === "number" && Number.isInteger(body.adults) ? body.adults : NaN;
+  if (!(adults >= 1 && adults <= 12)) return fail("invalid_input", "Adults must be 1 to 12");
+  const kids = body.childAges ?? [];
+  if (!Array.isArray(kids) || kids.length > 8 || kids.some((a) => !Number.isInteger(a) || (a as number) < 0 || (a as number) > 17)) return fail("invalid_input", "Child ages must be 0 to 17");
+  const promo = body.promoCode == null || body.promoCode === "" ? null : typeof body.promoCode === "string" && /^[A-Z0-9-]{2,30}$/i.test(body.promoCode) ? body.promoCode.toUpperCase() : undefined;
+  if (promo === undefined) return fail("invalid_input", "That offer code isn't valid");
+  const code = (v: unknown) => (typeof v === "string" && /^[a-z0-9-]{1,60}$/.test(v) ? v : null);
+  const room = code(body.room), plan = code(body.plan);
+  if (needRoom && (!room || !plan)) return fail("invalid_input", "Choose a room and rate");
+  return { ok: true, value: { slug, arrival: body.arrival as string, departure: body.departure as string, adults, childAges: kids as number[], promoCode: promo, room, plan } };
+}

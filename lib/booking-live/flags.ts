@@ -7,8 +7,10 @@
 //   NEXT_PUBLIC_BOOKING_LIVE_ACCOUNTS  /account pages, sign-in, /api/v1/me/*
 //   NEXT_PUBLIC_BOOKING_LIVE_SAVE      "Save to My Folio" on stay pages (needs ACCOUNTS)
 //   NEXT_PUBLIC_BOOKING_LIVE_SHARE     shared Folios and invitations (needs ACCOUNTS)
+// Phase 2
+//   NEXT_PUBLIC_BOOKING_LIVE_QUOTES    Check Availability, contracted-card quotes, Request to Reserve (needs ACCOUNTS)
 
-export type FlagName = "accounts" | "save" | "share";
+export type FlagName = "accounts" | "save" | "share" | "quotes";
 
 type Env = Record<string, string | undefined>;
 
@@ -19,6 +21,7 @@ export function readFlags(env: Env) {
     accounts,
     save: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_SAVE"),
     share: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_SHARE"),
+    quotes: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_QUOTES"),
   } satisfies Record<FlagName, boolean>;
 }
 
@@ -27,6 +30,7 @@ export const FLAGS = readFlags({
   NEXT_PUBLIC_BOOKING_LIVE_ACCOUNTS: process.env.NEXT_PUBLIC_BOOKING_LIVE_ACCOUNTS,
   NEXT_PUBLIC_BOOKING_LIVE_SAVE: process.env.NEXT_PUBLIC_BOOKING_LIVE_SAVE,
   NEXT_PUBLIC_BOOKING_LIVE_SHARE: process.env.NEXT_PUBLIC_BOOKING_LIVE_SHARE,
+  NEXT_PUBLIC_BOOKING_LIVE_QUOTES: process.env.NEXT_PUBLIC_BOOKING_LIVE_QUOTES,
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });

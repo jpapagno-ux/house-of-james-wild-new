@@ -4,17 +4,17 @@ import { supabaseBrowser } from "@/lib/booking-live/supabase/browser";
 
 // Passwordless sign-in: the traveler enters an email, Supabase sends a
 // one-time link that returns through /auth/callback to `next`.
-export default function SignInForm({ next, linkError }: { next: string; linkError: boolean }) {
+export default function SignInForm({ next, linkError }: { next: string; linkError: "link" | "device" | null }) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [message, setMessage] = useState(linkError ? "That sign-in link has expired or was already used. Send a fresh one." : "");
+  const [message, setMessage] = useState(linkError === "device" ? "Open the sign-in link on the same device and browser you requested it from, or send a fresh link." : linkError ? "That sign-in link has expired or was already used. Send a fresh one." : "");
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setState("sending");
     const redirect = `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`;
     const { error } = await supabaseBrowser().auth.signInWithOtp({ email: email.trim(), options: { emailRedirectTo: redirect, shouldCreateUser: true } });
-    if (error) { setState("error"); setMessage(error.status === 429 ? "Too many links requested. Wait a minute and try again." : "We couldn't send the link. Check the address and try again."); return; }
+    if (error) { setState("error"); setMessage(error.status === 429 ? "Too many sign-in emails just now. Please wait a while and use the newest link you received." : "We couldn't send the link. Check the address and try again."); return; }
     setState("sent");
   }
 

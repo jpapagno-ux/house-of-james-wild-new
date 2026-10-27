@@ -20,10 +20,24 @@ test("Voyage: Family cabin × 4 + Sorong night → US$19,431, deposit US$2,000",
   assert.equal(r.balance, 17431);
 });
 
-test("tax is 7% of the subtotal, rounded to the dollar", () => {
+test("Florida sales tax: 7% added on top of the subtotal, rounded to the dollar", () => {
   const r = priceTrip({ optionPP: 1000, addOnsPP: [], travellers: 2 });
   assert.equal(r.subtotal, 2000);
-  assert.equal(r.tax, 140);
+  assert.equal(r.tax, 0); // no local tax unless the rate excludes it
+  assert.equal(r.flTax, 140);
   assert.equal(r.total, 2140);
   assert.equal(r.perPerson, 1070);
+});
+
+test("local tax first, then 7% Florida sales tax on subtotal + local tax", () => {
+  // e.g. a rate that excludes a 13% local tax
+  const r = priceTrip({ optionPP: 1000, addOnsPP: [], travellers: 2, taxRate: 0.13 });
+  assert.equal(r.tax, 260);
+  assert.equal(r.flTax, 158); // 7% of 2,260 = 158.2
+  assert.equal(r.total, 2418);
+});
+
+test("deposit and balance always add back to the total", () => {
+  const r = priceTrip({ optionPP: 4390, addOnsPP: [150], travellers: 4, taxRate: 0.13 });
+  assert.equal(r.deposit + r.balance, r.total);
 });

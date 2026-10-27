@@ -68,6 +68,8 @@ export const BUILT: string[] = [
   "/journal",
   "/journal/monwana-couples-first-safari",
   "/journal/africa-inspired-wild-and-co-safaris",
+  "/journal/cayuga-collection-sustainable-luxury",
+  "/collections/cayuga-collection",
   "/workshops",
   "/legal/terms",
   "/legal/privacy",

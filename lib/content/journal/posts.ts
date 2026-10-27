@@ -8,6 +8,8 @@
 // notes to the team are removed, and "James Wild & Co should" reads "we".
 import { MONWANA_BODY } from "./monwana-couples-first-safari";
 import { AFRICA_BODY } from "./africa-inspired-wild-and-co-safaris";
+import { CAYUGA_BODY } from "./cayuga-collection-sustainable-luxury";
+import { cayugaImg as cy } from "../collections/cayuga";
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 // Full-resolution delivery: AI upscale for anything under ~2400px wide, then
@@ -56,6 +58,69 @@ export type JournalPost = {
 };
 
 export const POSTS: Record<string, JournalPost> = {
+  "cayuga-collection-sustainable-luxury": {
+    slug: "cayuga-collection-sustainable-luxury",
+    ledgerId: "WED-2026-000007",
+    shelf: "Field notes",
+    title: "What the Cayuga Collection Gets Right About Sustainable Luxury",
+    seoTitle: "Cayuga Collection: Sustainable Luxury Hotels in Central America",
+    description: "James Papagno on the Cayuga Collection's seven sustainable boutique hotels in Costa Rica, Panama, Nicaragua and Guatemala, which suits whom, and how to judge a hotel's green claims.",
+    dek: "More than three decades in Central America taught me what a sustainable hotel should actually prove. Here is what Cayuga gets right, which of its seven hotels suits whom, and what to ask before you book.",
+    answer: "The Cayuga Collection is seven independently owned boutique hotels in Costa Rica, Panama, Nicaragua and Guatemala, launched in 2003 by Andrea Bonilla and Hans Pfister. What it gets right is people: local teams, year-round jobs, local sourcing and fewer single-use plastics, with each hotel keeping its own sense of place. Pair two or three, three or four nights each.",
+    place: "Costa Rica · Panama · Nicaragua · Guatemala",
+    published: "2026-09-22",
+    modified: "2026-10-27",
+    hero: { url: cy("arenas-del-mar/arenas-del-mar-01"), alt: "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air", w: 1200, h: 899 },
+    body: CAYUGA_BODY,
+    figures: [
+      { after: "lead", layout: "bleed", images: [{ url: cy("aguas-claras/aguas-claras-11"), alt: "The Caribbean coast and reef near Playa Chiquita from the air", w: 1920, h: 1438, caption: "Costa Rica's Caribbean coast, near Aguas Claras.", credit: "Aguas Claras" }] },
+      { after: "why-i-ve-followed-hans-pfister-since-1994", layout: "wide", images: [{ url: cy("gallery/experiences-04", false), alt: "A team of guides and hotel staff walking together outdoors at Senda Monteverde", w: 2560, h: 1707, caption: "The people are the point: the team at Senda Monteverde.", credit: "Cayuga Collection" }] },
+      { after: "what-is-the-cayuga-collection", layout: "pair", images: [
+        { url: cy("aguas-claras/aguas-claras-02"), alt: "A wooden Caribbean-style cottage among banana leaves at Aguas Claras", w: 1920, h: 1280, caption: "Aguas Claras feels like the Caribbean coast.", credit: "Aguas Claras" },
+        { url: cy("senda-monteverde/senda-monteverde-06", false), alt: "A guest with coffee on a balcony in the cloud forest at Senda Monteverde", w: 2880, h: 1921, caption: "Senda feels rooted in the cloud forest.", credit: "Senda Monteverde" },
+      ] },
+      { after: "what-does-sustainable-luxury-mean-here", layout: "wide", images: [{ url: cy("isla-palenque/isla-palenque-03"), alt: "A thatched open pavilion in the island forest on Isla Palenque", w: 1500, h: 1000, caption: "Built light, in the forest, on Isla Palenque.", credit: "Isla Palenque" }] },
+      { after: "why-cayuga-s-focus-on-people-matters", layout: "pair", images: [
+        { url: cy("gallery/people-05"), alt: "Two naturalist guides with a telescope on a forest trail at Senda Monteverde", w: 1200, h: 800, caption: "A guide who knows the forest personally.", credit: "Cayuga Collection" },
+        { url: cy("gallery/people-15"), alt: "A boat captain smiling beside the water at Isla Palenque", w: 1200, h: 800, caption: "A career built without leaving home, on Isla Palenque.", credit: "Cayuga Collection" },
+      ] },
+      { after: "how-should-you-combine-the-properties", layout: "pair", images: [
+        { url: cy("gallery/wildlife-04", false), alt: "A resplendent quetzal in flight among cloud-forest trees at Senda Monteverde", w: 2560, h: 1707, caption: "A quetzal in the cloud forest above Senda.", credit: "Cayuga Collection" },
+        { url: cy("gallery/beachfront-05", false), alt: "A mother and small child playing in the surf at sunset at Arenas del Mar", w: 1712, h: 2560, caption: "Then the beach at Manuel Antonio.", credit: "Cayuga Collection" },
+      ] },
+      { after: "which-cayuga-hotel-fits-which-traveler", layout: "bleed", images: [{ url: cy("kura/kura-06"), alt: "Kura's infinity pool deck looking over the Pacific", w: 1024, h: 683, caption: "Kura, above Uvita: adults only, and the Pacific to yourself.", credit: "Kura" }] },
+      { after: "why-central-america-still-matters-to-me", layout: "bleed", images: [{ url: cy("aguas-claras/aguas-claras-05", false), alt: "A swimmer in a clear tide pool on the reef at Playa Chiquita", w: 5000, h: 3333, caption: "The reef at Playa Chiquita, at low tide.", credit: "Aguas Claras" }] },
+    ],
+    pull: { text: "Luxury becomes more meaningful when the people who welcome you and the place that holds you are both better for your having stayed.", after: "planning-a-cayuga-journey" },
+    close: "James Papagno",
+    faqTitle: "Questions About the Cayuga Collection",
+    planPlace: "Central America",
+    faqs: [
+      { q: "How many hotels are currently in the Cayuga Collection?", a: "Cayuga's current official hotel page presents seven properties across Costa Rica, Panama, Nicaragua and Guatemala. Collection membership can change, so confirm the current roster before booking." },
+      { q: "Which Cayuga hotel is best for a honeymoon?", a: "Kura is the clearest adults-only choice for privacy and ocean views. Aguas Claras can suit couples drawn to art and Caribbean culture, while Isla Palenque offers a more remote island experience." },
+      { q: "Which Cayuga hotels are best for families?", a: "Arenas del Mar is a strong first choice for an accessible Costa Rica family trip. Senda Monteverde can suit active families, and Isla Palenque works for those wanting nature and island time. Always confirm current age and room-occupancy policies." },
+      { q: "Can I combine several Cayuga properties?", a: "Yes. Two contrasting properties in one country usually create the best-paced journey. Allow at least three nights in each and account for road, boat or domestic-flight connections." },
+      { q: "How long has James Papagno known the Cayuga Collection's founders?", a: "James has followed co-founder Hans Pfister's work since 1994, from his early days selling Central American lodges, and has watched Hans and Andrea Bonilla build the Cayuga Collection since it launched in 2003." },
+      { q: "Does the Cayuga Collection have special offers in 2026?", a: "Yes. Each hotel has one offer for travel from 13 April to 19 December 2026, from stay 3 nights, pay 2 at Senda Monteverde, Bolontiku and Jicaro to stay 5, pay 4 at Isla Palenque and Arenas del Mar. Terms can change, so we confirm them before booking." },
+      { q: "How can I verify whether a hotel is genuinely sustainable?", a: "Look beyond marketing language. Ask about local employment, wastewater, energy, food sourcing, plastic use, habitat protection, community partnerships and independent certification. Clear, specific answers are more useful than broad claims." },
+    ],
+    stays: [
+      { slug: "arenas-del-mar-resort", name: "Arenas del Mar", line: "Manuel Antonio, Costa Rica", note: "Rainforest beside the beach. Families and first-timers.", image: { url: cy("arenas-del-mar/arenas-del-mar-04"), alt: "A suite with a daybed and an outdoor plunge pool at Arenas del Mar", w: 1200, h: 800 } },
+      { slug: "kura-boutique-resort", name: "Kura", line: "Uvita, Costa Rica", note: "Adults only, above the Pacific. Couples and honeymooners.", image: { url: cy("kura/kura-01"), alt: "A guest in Kura's infinity pool above the Pacific coast at Uvita", w: 1024, h: 683 } },
+      { slug: "senda-monteverde-lodge", name: "Senda Monteverde", line: "Monteverde, Costa Rica", note: "Cloud forest. Curious travellers and birders.", image: { url: cy("senda-monteverde/senda-monteverde-01", false), alt: "Senda Monteverde's hot pools set in the cloud forest, from above", w: 2560, h: 1440 } },
+      { slug: "aguas-claras", name: "Aguas Claras", line: "Playa Chiquita, Costa Rica", note: "The Caribbean coast. Couples and creative travellers.", image: { url: cy("aguas-claras/aguas-claras-01"), alt: "The pool among tropical gardens below the main house at Aguas Claras at dusk", w: 1920, h: 1280 } },
+      { slug: "isla-palenque-resort", name: "Isla Palenque", line: "Gulf of Chiriquí, Panama", note: "A private island. Families and couples.", image: { url: cy("isla-palenque/isla-palenque-05"), alt: "An open-sided thatched lounge looking through palms to the sea on Isla Palenque", w: 1000, h: 751 } },
+    ],
+    links: [
+      { label: "The Cayuga Collection", href: "/collections/cayuga-collection", line: "All seven hotels, who each suits and how to pair them." },
+      { label: "Costa Rica", href: "/destinations/central-america/costa-rica", line: "Where the house began: every Costa Rica stay in the Ledger." },
+      { label: "Two Oceans, One Volcano", href: "/overland/costa-rica/two-oceans-one-volcano", line: "James's Costa Rica route, coast to coast." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road, Central America since the early days." },
+    ],
+    keywords: ["sustainable luxury hotels Central America", "Cayuga Collection hotels", "sustainable hotels Costa Rica", "eco luxury Central America", "sustainable boutique hotels", "Cayuga Collection Costa Rica", "Kura Uvita", "Arenas del Mar", "Senda Monteverde", "Isla Palenque"],
+    about: ["Cayuga Collection", "Sustainable luxury hotels", "Costa Rica", "Central America"],
+    oldUrl: "/memoir/james-papagno-on-the-cayuga-collection-and-central-americas-sustainable-travel-renaissance",
+  },
   "africa-inspired-wild-and-co-safaris": {
     slug: "africa-inspired-wild-and-co-safaris",
     ledgerId: "WED-2026-000002",

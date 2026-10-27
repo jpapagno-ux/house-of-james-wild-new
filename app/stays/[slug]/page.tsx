@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
@@ -39,6 +40,7 @@ import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
 import { sessionsFor } from "@/lib/content/workshops";
+import { collectionForStay, offerForStay } from "@/lib/content/collections/cayuga";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -144,6 +146,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
               <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
+            </section>
+          )}
+          {collectionForStay(s.slug) && (
+            <section aria-label="Part of a collection" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div><p className="ledger-eyebrow ledger-crimson">Part of a collection</p><p className="ledger-display text-[1.5rem] mt-1">{s.name} is one of seven Cayuga Collection hotels</p><p className="mt-1 text-[15px] ledger-muted">Sustainably run boutique hotels across Costa Rica, Panama, Nicaragua and Guatemala, and how to pair them.</p>{offerForStay(s.slug) && <p className="mt-3 text-[15.5px]"><span className="ledger-eyebrow ledger-crimson mr-2">{offerForStay(s.slug)!.program}</span>{offerForStay(s.slug)!.headline}, travel {offerForStay(s.slug)!.travel}.</p>}</div>
+              <Link href={offerForStay(s.slug) ? `${collectionForStay(s.slug)!.path}#offers` : collectionForStay(s.slug)!.path} className="ledger-btn self-start md:self-center">{offerForStay(s.slug) ? "See the offer" : "See the collection"}</Link>
             </section>
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />

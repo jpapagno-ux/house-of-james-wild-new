@@ -59,7 +59,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const dayNo = (n: string) => parseInt(n.replace(/\D/g, ""), 10);
 
   const nav: [string, string][] = voyage
-    ? [["The vessel", "vessel"], ["In short", "overview"], ["The voyage", "route"], ["Dates & rates", "departures"], ["Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
+    ? [["The vessel", "vessel"], ["In short", "overview"], ["The voyage", "route"], ["Dates & rates", "departures"], [T.founder.navLabel ?? "Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
     : [["In short", "overview"], ["The route", "route"], ["Experiences", "experiences"], ["Who it suits", "suits"], ["Day by day", "days"], ["Included", "included"], ["The stays", "stays"], ["Price", "price"], ["The founder", "founder"], ["FAQ", "faq-heading"]];
 
   // "From" price: the lowest per-person option on file, with what it's based on.
@@ -82,17 +82,26 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   /* ---------- sections ---------- */
   const Map = (
     <Sec id="route">
-      <SectionHead eyebrow={T.map_eyebrow} title={T.map_title} icon={voyage ? "wave" : "mountain-sun"} intro={voyage ? "Tap a day in the log and the chart sails there. Every stay and launch nearby is drawn in, so you can see what else is close." : "Tap a day below and the map flies there. Every stay the Ledger holds nearby is drawn in, so you can see what else is close."} />
+      <SectionHead eyebrow={T.map_eyebrow} title={T.map_title} icon={voyage ? "wave" : "mountain-sun"} intro={!mapHtml ? "The stops in order. The engraved chart for these waters is on the way." : voyage ? "Tap a day in the log and the chart sails there. Every stay and launch nearby is drawn in, so you can see what else is close." : "Tap a day below and the map flies there. Every stay the Ledger holds nearby is drawn in, so you can see what else is close."} />
       <p className="mt-2 font-mono text-[11px] tracking-[0.12em] ledger-muted">{T.map_coord}</p>
-      <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
-      <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />
-      <div className="mt-6" dangerouslySetInnerHTML={{ __html: mapHtml }} />
+      {mapHtml ? (
+        <>
+          <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
+          <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />
+          <div className="mt-6" dangerouslySetInnerHTML={{ __html: mapHtml }} />
+        </>
+      ) : (
+        // No chart engraved for these waters yet: the stops still list in order below.
+        <div className="mt-6 jw-ph aspect-[16/9] md:aspect-[21/6] flex items-center justify-center text-center px-6" role="img" aria-label={`Chart to come: ${route}`}>
+          <span className="bg-paper/85 px-3 py-2"><span className="block font-mono text-[11px] tracking-[0.14em] uppercase">The chart is being engraved</span><span className="block ledger-display text-[17px] mt-1">{route}</span></span>
+        </div>
+      )}
       <ol className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3" aria-label="Stops in order">
         {T.side.map(([k, name, when, move]) => {
-          const d = k === "S" ? 1 : k === "E" ? (voyage ? 10 : 12) : voyage ? parseInt(k, 10) : parseInt(when.replace(/\D+/g, " ").trim().split(" ")[0] || "1", 10);
+          const d = k === "S" ? 1 : k === "E" ? (voyage ? T.days.length : 12) : voyage ? parseInt(k, 10) : parseInt(when.replace(/\D+/g, " ").trim().split(" ")[0] || "1", 10);
           return (
             <li key={k + name}>
-              <button type="button" data-jw-day={d} data-jw-for={mapId} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3">
+              <button type="button" data-jw-day={mapHtml ? d : undefined} data-jw-for={mapHtml ? mapId : undefined} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3">
                 <span className="ledger-display ledger-crimson text-lg w-6 shrink-0">{k}</span>
                 <span><span className="ledger-display text-[17px]">{name}</span> <span className="ledger-muted text-[13px]">· {when}</span><span className="block text-[13px] ledger-muted">{move}</span></span>
               </button>
@@ -171,7 +180,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
                   <dt className="ledger-eyebrow">Doing</dt><dd>{d.acts}</dd>
                 </dl>
                 {noteFor(d) && <p className="mt-4 italic text-[15px] border-l-2 border-crimson pl-3">&ldquo;{noteFor(d)}&rdquo; <span className="not-italic ledger-muted text-[13px]">— James</span></p>}
-                <button type="button" data-jw-day={dayNo(d.n)} data-jw-for={mapId} className="mt-4 ledger-btn-ghost">Show on the map ↑</button>
+                {mapHtml && <button type="button" data-jw-day={dayNo(d.n)} data-jw-for={mapId} className="mt-4 ledger-btn-ghost">Show on the map ↑</button>}
               </div>
               <Ph img={images[d.img]} label={d.img} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 100vw, 30vw" />
             </div>

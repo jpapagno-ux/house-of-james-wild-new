@@ -23,6 +23,7 @@ export const BUILT: string[] = [
   // Journeys and voyages from James's route files (lib/content/trips)
   "/overland/costa-rica/two-oceans-one-volcano",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
+  "/voyages/komodo/aliikai-5-day-komodo-island",
   "/safaris",
   // Reserves and their camps (scripts/export-reserves.py)
   "/safaris/lion-sands",

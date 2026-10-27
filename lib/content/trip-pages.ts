@@ -15,8 +15,10 @@ import { SAMPLE_ALIIKAI } from "./preview/aliikai";
 export const byPath = (p: string): Trip | undefined => Object.values(TRIPS).find((t) => t.seo.path === p);
 export const paramsFor = (kind: Trip["kind"]) => Object.values(TRIPS).filter((t) => t.kind === kind).map((t) => t.seo.path.split("/").filter(Boolean).slice(1));
 
+// Empty when the waters have no engraved chart yet; the page then lists the stops without the map.
 export function mapHtml(t: Trip) {
-  return fs.readFileSync(path.join(process.cwd(), "lib/content/trips", `${t.id}.map.html`), "utf8");
+  const f = path.join(process.cwd(), "lib/content/trips", `${t.id}.map.html`);
+  return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : "";
 }
 
 export function tripMetadata(t: Trip): Metadata {
@@ -40,6 +42,7 @@ const A = {
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/";
 // Tortuga Lodge's own photos (tortugalodge.com), re-hosted on Cloudinary and delivered through AI upscale + auto improve.
 const TL = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/costa-rica/tortuga-lodge/";
+const KOM = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/komodo/";
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474/";
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/";
 
@@ -47,6 +50,14 @@ const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/";
 // originals where the house has them; Costa Rica has none for this route yet,
 // so its slides come from the country page and the route's stays in the library.
 export const TRIP_SLIDES: Record<string, TripImg[]> = {
+  // Aliikai's own Komodo photos (wildearthstays.com library), re-hosted on Cloudinary with AI upscale + improve.
+  "5-day-komodo-island": [
+    { url: `${KOM}padar-island-aerial`, alt: "Padar Island's ridges and crescent bays from the air, Komodo National Park" },
+    { url: `${KOM}pink-beach`, alt: "A small boat in the shallows off the pink sand of a Komodo beach" },
+    { url: `${KOM}tatawa-diving`, alt: "A diver over a coral reef full of fish at Tatawa, Komodo" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DJI_0472-1", alt: "Aliikai under full sail from the air" },
+    { url: `${KOM}labuan-bajo-harbour`, alt: "Labuan Bajo harbour, Flores, with boats at anchor in turquoise water" },
+  ],
   "10-day-raja-ampat-north": [
     { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DJI_0472-1", alt: "Aliikai under full sail from the air" },
     { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Raja Ampat: the Wayag lagoons and karst islands from above" },
@@ -65,6 +76,17 @@ export const TRIP_SLIDES: Record<string, TripImg[]> = {
 };
 
 export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string, TripImg> }> = {
+  "5-day-komodo-island": {
+    images: {
+      "PHOTO · LABUAN BAJO HARBOUR": { url: `${KOM}labuan-bajo-harbour`, alt: "Labuan Bajo harbour, Flores, with boats at anchor in turquoise water" },
+      "PHOTO · PADAR FROM ABOVE": { url: `${KOM}padar-island-aerial`, alt: "Padar Island's ridges and crescent bays from the air" },
+      "PHOTO · PINK BEACH": { url: `${KOM}pink-beach`, alt: "A small boat in the shallows off the pink sand of a Komodo beach" },
+      "PHOTO · ALIIKAI AT ANCHOR": { url: `${KOM}surfboard-lagoon`, alt: "A guest on a board in calm turquoise water, Aliikai at anchor beyond" },
+      "The Padar climb": { url: `${KOM}padar-island-aerial`, alt: "Padar Island's three bays from above" },
+      "Pink Beach": { url: `${KOM}pink-beach`, alt: "Pink sand and clear shallows on Komodo" },
+      "Mantas at Manta Point": { url: `${KOM}tatawa-diving`, alt: "A diver over a Komodo reef full of fish" },
+    },
+  },
   "10-day-raja-ampat-north": {
     hero: SAMPLE_ALIIKAI.hero,
     images: {

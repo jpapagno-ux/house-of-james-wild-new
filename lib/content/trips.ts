@@ -1,6 +1,7 @@
 import type { TagInfo } from "@/components/notes/VoyageTag";
 import land from "./trips/two-oceans-one-volcano.json";
 import voyage from "./trips/10-day-raja-ampat-north.json";
+import komodo5 from "./trips/5-day-komodo-island.json";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
 // the content of one route page plus its JSON-LD; the live map's route lives
@@ -34,7 +35,7 @@ export type Trip = {
   dates_head: [string, string, string];
   departures?: { source?: string; groups: { name: string; nights: string; this?: boolean; sailings: { date: string; nights: number; price: number; status: string }[] }[] };
   dep_route?: string; dep_cta?: string; dep_season?: string; dep_note?: string;
-  founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string };
+  founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string; navLabel?: string };
   approve: { title: string; seal_bottom: string; seal_mark: string; why: string[]; quote: string };
   faqs: Row[]; reltitle: string; related: [string, string, string][];
   ctaline: string; ctabtn: string;
@@ -49,4 +50,5 @@ export type Trip = {
 export const TRIPS: Record<string, Trip> = {
   "two-oceans-one-volcano": land as unknown as Trip,
   "10-day-raja-ampat-north": voyage as unknown as Trip,
+  "5-day-komodo-island": komodo5 as unknown as Trip,
 };

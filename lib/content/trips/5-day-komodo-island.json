@@ -1,0 +1,1477 @@
+{
+ "id": "5-day-komodo-island",
+ "kind": "voyage",
+ "title": "5 Day Komodo Island · voyage",
+ "h1": "5 Day Komodo Island",
+ "h1note": "H1 · title tag: 5-Day Komodo Liveaboard Cruise Aboard Aliikai [DRAFT]",
+ "sub": "5 Days · 4 Nights · Aboard Aliikai, Komodo National Park, Indonesia",
+ "crumbs": [
+  "Home",
+  "Voyages",
+  "Komodo",
+  "5 Day Komodo Island"
+ ],
+ "year0": "2027",
+ "endkeys": [
+  "1",
+  "5"
+ ],
+ "ledgerline": "The Voyage Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-VSL-2026-417445</span>",
+ "meta": [
+  [
+   "Ledger ID",
+   "ITN-VSL-2026-417445"
+  ],
+  [
+   "Vessel",
+   "Aliikai · handcrafted phinisi"
+  ],
+  [
+   "Waters",
+   "Komodo National Park, Flores · Indonesia"
+  ],
+  [
+   "Duration",
+   "5 days / 4 nights"
+  ],
+  [
+   "Embark · Disembark",
+   "Labuan Bajo · Labuan Bajo"
+  ],
+  [
+   "Departures",
+   "Fixed dates · 15 and 22 September 2027"
+  ],
+  [
+   "Cabins",
+   "7 cabins · for 2, the bow cabin for 3"
+  ],
+  [
+   "Season",
+   "Aliikai sails Komodo May to September"
+  ],
+  [
+   "Vetted by",
+   "James Wild · sailed Aliikai in Raja Ampat, November 2024"
+  ]
+ ],
+ "herofacts": [
+  [
+   "Duration",
+   "5 days · 4 nights"
+  ],
+  [
+   "Vessel",
+   "Aliikai · phinisi"
+  ],
+  [
+   "From",
+   "Labuan Bajo, return"
+  ],
+  [
+   "2027 sailings",
+   "15 · 22 Sep"
+  ]
+ ],
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "herolabel": "HERO PHOTO · PADAR ISLAND FROM THE AIR",
+ "heroalt": "Padar Island's ridges and crescent bays from the air",
+ "quote": "\"Five days, four nights and more dragons than you'll want to stand next to.\"",
+ "answer": "5 Day Komodo Island is a four-night voyage aboard Aliikai, a handcrafted phinisi, from Labuan Bajo through Indonesia's Komodo National Park: Sebayur, Gili Lawa, the mantas at Manta Point and Karang Makassar, the climb up Padar, Pink Beach, the Komodo dragons on Rinca and the flying foxes of Kalong at dusk. All meals, guided diving and snorkelling, kayaks and paddleboards are included. In 2027 it sails on 15 and 22 September, from US$3,400 per person plus 11% tax.",
+ "overview_title": "Dragons, mantas and a pink beach, in five days",
+ "striptitle": "Five days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#123B55"
+  ],
+  [
+   "D2",
+   "#2F8A86"
+  ],
+  [
+   "D3",
+   "#1E5F73"
+  ],
+  [
+   "D4",
+   "#A2442A"
+  ],
+  [
+   "D5",
+   "#14211F"
+  ]
+ ],
+ "stripcols": "repeat(5, minmax(0, 1fr))",
+ "strip_labels": [
+  "Sebayur",
+  "Gili Lawa",
+  "Manta Point · Padar",
+  "Pink Beach · Rinca",
+  "Labuan Bajo"
+ ],
+ "side": [
+  [
+   "1",
+   "Labuan Bajo",
+   "Day 1",
+   "Board · sail for Sebayur"
+  ],
+  [
+   "1",
+   "Sebayur",
+   "Day 1",
+   "Snorkel · dive · beach"
+  ],
+  [
+   "2",
+   "Gili Lawa",
+   "Day 2",
+   "The lookout hike"
+  ],
+  [
+   "3",
+   "Manta Point",
+   "Day 3",
+   "Mantas · Karang Makassar"
+  ],
+  [
+   "3",
+   "Padar",
+   "Day 3",
+   "The ridge at sunset"
+  ],
+  [
+   "4",
+   "Pink Beach",
+   "Day 4",
+   "Kayak · snorkel"
+  ],
+  [
+   "4",
+   "Rinca",
+   "Day 4",
+   "Komodo dragons"
+  ],
+  [
+   "4",
+   "Kalong",
+   "Day 4",
+   "Flying foxes at dusk"
+  ],
+  [
+   "5",
+   "Labuan Bajo",
+   "Day 5",
+   "Disembark"
+  ]
+ ],
+ "map_eyebrow": "The voyage, charted",
+ "map_title": "Four nights round Komodo National Park",
+ "map_coord": "8°29′S 119°53′E · ITN-VSL-2026-417445",
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Voyage Log",
+ "staylabel": "Aboard",
+ "movelabel": "Anchorage",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Labuan Bajo to Sebayur",
+   "line": "Embarkation",
+   "body": "Welcome aboard in Labuan Bajo harbour, and out to the twin islands of Sebayur Besar and Sebayur Kecil. The rest of the day is for the water: dive or snorkel the reefs around the islands, a stretch on the beach, and a short trek if the tide allows. Dinner al fresco, under more stars than Labuan Bajo lets you see.",
+   "stay": "Aliikai · your cabin",
+   "meals": "All meals aboard",
+   "move": "Sebayur Besar & Kecil",
+   "acts": "Board · dive or snorkel · beach · trek",
+   "img": "PHOTO · LABUAN BAJO HARBOUR",
+   "imgAlt": "Labuan Bajo harbour, Flores, with boats at anchor in turquoise water",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 02",
+   "title": "Gili Lawa",
+   "line": "The lookout",
+   "body": "A whole day for Gili Lawa Darat and Gili Lawa Laut. After breakfast, ashore for the hike to the lookout and the view over the bay. The rest of the day is yours: beach, kayak, paddleboard, snorkel, or dive the sites around the islands. Lunch and dinner aboard.",
+   "stay": "Aliikai · your cabin",
+   "meals": "All meals aboard",
+   "move": "Gili Lawa Darat & Laut",
+   "acts": "Lookout hike · kayak · paddleboard · dive",
+   "img": "PHOTO · GILI LAWA LOOKOUT",
+   "imgAlt": "The lookout over Gili Lawa's bay",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "Manta Point, Karang Makassar and Padar",
+   "line": "Mantas, then the ridge",
+   "body": "The morning at Manta Point, snorkelling or diving with the mantas, then Karang Makassar, a sandbar in turquoise water. Lunch aboard as Aliikai sails to Padar. In the afternoon, the climb to the top of Padar for the view over its three bays, then time to snorkel or dive before dinner on deck.",
+   "stay": "Aliikai · your cabin",
+   "meals": "All meals aboard",
+   "move": "Manta Point · Padar",
+   "acts": "Mantas · sandbar · Padar climb · snorkel",
+   "img": "PHOTO · PADAR FROM ABOVE",
+   "imgAlt": "Padar Island's ridges and crescent bays from the air",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "Pink Beach, Rinca and Kalong",
+   "line": "The dragons",
+   "body": "Breakfast on deck, then ashore at Pink Beach for the sand, a kayak or paddleboard, and the reef just off it. Lunch aboard on the way to Rinca, where a park ranger briefs you and walks you out to see the Komodo dragons where they live. Back aboard for dinner and sundowners off Kalong, as the flying foxes leave the mangroves at dusk.",
+   "stay": "Aliikai · your cabin",
+   "meals": "All meals aboard",
+   "move": "Pink Beach · Rinca · Kalong",
+   "acts": "Pink Beach · Komodo dragons · flying foxes",
+   "img": "PHOTO · PINK BEACH",
+   "imgAlt": "A small boat in the shallows off the pink sand of a Komodo beach",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "Labuan Bajo",
+   "line": "Disembarkation",
+   "body": "Breakfast aboard, then the crew takes you to Labuan Bajo airport for your flight on.",
+   "stay": "Aliikai · your cabin",
+   "meals": "Breakfast aboard",
+   "move": "Labuan Bajo",
+   "acts": "Disembark · airport",
+   "img": "PHOTO · ALIIKAI AT ANCHOR",
+   "imgAlt": "Aliikai at anchor in calm turquoise water",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "exp_title": "In the water, ashore and on deck",
+ "experiences": [
+  {
+   "name": "Komodo dragons on Rinca",
+   "line": "Day 4 · Rinca",
+   "chips": [
+    "Ranger-led walk",
+    "Included"
+   ],
+   "photos": [
+    "Dragon on the trail",
+    "Ranger briefing",
+    "Rinca hills"
+   ],
+   "body": "After a briefing from a park ranger, a walk out to see the dragons in their own habitat. The rangers set the pace and the distance; you keep yours.",
+   "rows": [
+    [
+     "Day",
+     "Day 4"
+    ],
+    [
+     "Level",
+     "Easy walk on uneven ground [confirm length]"
+    ],
+    [
+     "Bring",
+     "Closed shoes, water, a hat"
+    ],
+    [
+     "Included",
+     "Yes, with the park ranger"
+    ]
+   ],
+   "james": null
+  },
+  {
+   "name": "Mantas at Manta Point",
+   "line": "Day 3 · Manta Point",
+   "chips": [
+    "Dive or snorkel",
+    "Included"
+   ],
+   "photos": [
+    "Manta overhead",
+    "Snorkellers at the surface",
+    "Karang Makassar sandbar"
+   ],
+   "body": "The morning in the channel with the mantas, by snorkel or on a dive, then on to the sandbar at Karang Makassar.",
+   "rows": [
+    [
+     "Day",
+     "Day 3"
+    ],
+    [
+     "Level",
+     "All levels · snorkel or dive"
+    ],
+    [
+     "Time",
+     "Morning [tide-dependent, confirm]"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ],
+   "james": null
+  },
+  {
+   "name": "The Padar climb",
+   "line": "Day 3 · Padar",
+   "chips": [
+    "Steep climb",
+    "Included"
+   ],
+   "photos": [
+    "Padar's three bays",
+    "The ridge path",
+    "Tender landing"
+   ],
+   "body": "The steps and path to the top of Padar, for the view over its three bays that the posters are taken from. Afternoon light, and steady shoes.",
+   "rows": [
+    [
+     "Day",
+     "Day 3"
+    ],
+    [
+     "Level",
+     "Steep steps [confirm time up]"
+    ],
+    [
+     "Bring",
+     "Shoes with grip, water"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ],
+   "james": null
+  },
+  {
+   "name": "Pink Beach",
+   "line": "Day 4 · Komodo",
+   "chips": [
+    "Beach · kayak · snorkel",
+    "Included"
+   ],
+   "photos": [
+    "The pink sand",
+    "Snorkelling off the beach",
+    "Kayaks"
+   ],
+   "body": "Sand tinted pink by crushed red coral, with a reef close enough to swim to. Kayaks, paddleboards and dive gear come ashore with you.",
+   "rows": [
+    [
+     "Day",
+     "Day 4"
+    ],
+    [
+     "Level",
+     "All levels"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ],
+   "james": null
+  }
+ ],
+ "vessel": {
+  "title": "Aliikai, in detail",
+  "name": "Aliikai",
+  "blurb": "A traditional phinisi hand-built and refitted in 2020 by more than a dozen carpenters in Bulukumba, South Sulawesi, where these boats have been built for centuries. Seven cabins over three decks, a lounge and dining room, a sky deck and an alfresco deck, with a crew of twelve and an expedition leader.",
+  "facts": [
+   [
+    "Type",
+    "Traditional phinisi, hand-built in Bulukumba, South Sulawesi"
+   ],
+   [
+    "Refit",
+    "2020"
+   ],
+   [
+    "Length",
+    "40m, wooden"
+   ],
+   [
+    "Cabins",
+    "7 across 3 decks, all en-suite with air conditioning"
+   ],
+   [
+    "Guests",
+    "Up to 14 on shared voyages · up to 15 on a private charter"
+   ],
+   [
+    "Crew",
+    "12 Indonesian crew and an expedition leader"
+   ],
+   [
+    "Diving",
+    "Full dive centre with Nitrox, a warm shower for night dives and a ventilated camera room"
+   ],
+   [
+    "Ledger",
+    "STY-registered vessel"
+   ]
+  ],
+  "gallery": [
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DJI_0472-1",
+    "alt": "Aliikai under full sail from the air"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/30LilyRose",
+    "alt": "Aliikai's sails set, from above"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/19LilyRose",
+    "alt": "Aliikai at anchor at sunset"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4287-scaled-1",
+    "alt": "Aliikai's bow and name at sunset"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A3749-scaled-1",
+    "alt": "On deck under sail"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4261-scaled-1",
+    "alt": "Aliikai at anchor as the light goes"
+   }
+  ],
+  "spaces": [
+   {
+    "name": "Main deck lounge & dining",
+    "line": "Air-conditioned, wrap-around windows",
+    "body": "An indoor lounge and dining room for meals and the midday heat, with wrap-around windows. Glass doors fold open to the covered outdoor lounge and dining deck, with day beds and sofas for dinner under the stars.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-edit-9786-scaled-1",
+      "alt": "The main deck lounge aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/23LilyRose",
+      "alt": "Lunch laid under the awning on deck"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-pre-selection-9634-copy-2",
+      "alt": "The alfresco dining deck"
+     }
+    ]
+   },
+   {
+    "name": "The upper lounge",
+    "line": "Morning yoga, open-air cinema at night",
+    "body": "The upper deck lounge is for yoga in the morning breeze and doing very little all afternoon. After dark the crew turns it into an open-air cinema, popcorn included.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-edit-9600-copy-scaled-1",
+      "alt": "The shaded upper deck lounge"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/21LilyRose",
+      "alt": "Evening on deck by lantern light"
+     }
+    ]
+   },
+   {
+    "name": "Dive centre",
+    "line": "Nitrox · warm shower · camera room",
+    "body": "Room to set up kit before every dive, a warm shower after night dives, and a ventilated camera room for working on the day's pictures.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4208-scaled-1",
+      "alt": "Tanks racked in the dive centre aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Crew & kitchen",
+    "line": "12 crew, an expedition leader and a chef",
+    "body": "Twelve Indonesian crew and an expedition leader run the voyage and know the hidden anchorages. The chef cooks from locally sourced Indonesian ingredients.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/ALIIKAI-17-scaled-1",
+      "alt": "Service on deck aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/14LilyRose",
+      "alt": "Breakfast laid out aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Water toys",
+    "line": "Kayaks and paddleboards",
+    "body": "Kayaks and stand-up paddleboards go over the side most days, for the lagoons and the shallow water round the islands.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A3852-scaled-1",
+      "alt": "Paddleboarding off Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/ALIIKAI-5-scaled-1",
+      "alt": "Kayaks and a paddleboard over the reef, from above"
+     }
+    ]
+   }
+  ],
+  "cabins": [
+   {
+    "name": "Owner's Cabin · Fam",
+    "cat": "Owner's Cabin",
+    "deck": "Main deck, at the stern",
+    "bed": "King (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Private balcony",
+     "En-suite bathroom",
+     "Writing desk",
+     "Air conditioning"
+    ],
+    "night": 1150,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM2",
+      "alt": "Fam owner's cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM4",
+      "alt": "The Fam cabin's private balcony over the sea"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM3",
+      "alt": "Inside the Fam owner's cabin"
+     }
+    ]
+   },
+   {
+    "name": "Owner's Cabin · Kei",
+    "cat": "Owner's Cabin",
+    "deck": "Upper deck, at the stern",
+    "bed": "King (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Private balcony",
+     "En-suite bathroom",
+     "Writing desk",
+     "Air conditioning"
+    ],
+    "night": 1150,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI3-min-1920x1280-1",
+      "alt": "Kei owner's cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI9-min-1920x1280-1",
+      "alt": "The Kei cabin's king bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI7-min-1920x1280-1",
+      "alt": "The Kei cabin's private balcony"
+     }
+    ]
+   },
+   {
+    "name": "Deluxe Ocean View · Koon & Savu",
+    "cat": "Ocean view with windows",
+    "deck": "Upper deck",
+    "bed": "Queen (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Sea-view windows",
+     "En-suite bathroom",
+     "Air conditioning",
+     "Koon sits at the end of the hallway: no one walks by"
+    ],
+    "night": 990,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV1-min-1920x1280-1",
+      "alt": "Deluxe ocean-view cabin with windows aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV2-min-1920x1306-1",
+      "alt": "Deluxe ocean-view cabin made up as twins"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV3-min-1920x1280-1",
+      "alt": "Deluxe ocean-view cabin aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Ocean View · Dayak & Abui",
+    "cat": "Ocean view with portholes",
+    "deck": "Lower deck",
+    "bed": "Queen",
+    "sleeps": "2",
+    "feats": [
+     "Portholes",
+     "En-suite bathroom",
+     "Air conditioning"
+    ],
+    "night": 850,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC1-min-1920x1280-1",
+      "alt": "Ocean-view cabin with portholes aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC2-min-1920x1280-1",
+      "alt": "Ocean-view cabin with portholes, queen bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC3-min-1920x1237-1",
+      "alt": "Ocean-view cabin aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Bow Cabin · Asmat",
+    "cat": "Ocean view with portholes",
+    "deck": "Lower deck, in the bow",
+    "bed": "Queen + sofa bed",
+    "sleeps": "3",
+    "feats": [
+     "Portholes",
+     "Sofa converts to a single bed",
+     "En-suite bathroom",
+     "Air conditioning"
+    ],
+    "night": 850,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC1-min-1920x1259-1",
+      "alt": "The Asmat bow cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC2-min-1920x1298-1",
+      "alt": "The Asmat bow cabin's queen bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC3-min-1920x1280-1",
+      "alt": "The Asmat bow cabin and its sofa bed"
+     }
+    ]
+   }
+  ],
+  "source": "aliikai-voyage.com, 26 Oct 2026"
+ },
+ "features": [
+  [
+   "Vessel",
+   "A handcrafted phinisi",
+   "Built for small, unhurried voyages."
+  ],
+  [
+   "Vessel",
+   "Dive deck with Nitrox",
+   "A dive team aboard every voyage."
+  ],
+  [
+   "Vessel",
+   "Fast tenders",
+   "Out to the reefs and ashore in minutes."
+  ],
+  [
+   "Vessel",
+   "Kayaks and paddleboards",
+   "Launched from the ship each day."
+  ],
+  [
+   "Vessel",
+   "Dining on deck",
+   "Eco-sourced Indonesian cuisine."
+  ],
+  [
+   "Vessel",
+   "Sun deck and lounge",
+   "Shade by day, stars by night. [confirm]"
+  ],
+  [
+   "Vessel",
+   "Cruise director and crew",
+   "They know where the mantas feed."
+  ]
+ ],
+ "feat_title": "Aboard Aliikai",
+ "incl": [
+  "5 days / 4 nights aboard Aliikai",
+  "All meals aboard",
+  "Guided diving and snorkelling with Nitrox",
+  "Kayaks, paddleboards and water sports from the ship",
+  "Labuan Bajo airport transfers",
+  "Komodo National Park ranger walk on Rinca [confirm park fees included]"
+ ],
+ "excl": [
+  "Flights to and from Labuan Bajo",
+  "Travel and dive insurance",
+  "Crew gratuities [confirm the house guidance]",
+  "Alcoholic drinks [confirm]",
+  "Dive equipment rental and courses [confirm]",
+  "Indonesian visa or e-VOA [confirm]"
+ ],
+ "calc": {
+  "title": "Build your voyage price",
+  "optlabel": "Choose your cabin",
+  "opt0": 2,
+  "note": "2027 published rates, per person, double occupancy, for 4 nights. 11% tax added.",
+  "soloNote": "Travelling solo: single supplement of 50% of the nightly rate.",
+  "maxG": 8,
+  "opts": [
+   {
+    "label": "Owner's Cabin",
+    "sub": "Fam or Kei · king · private balcony",
+    "pp": 4600,
+    "photo": "Owner's Cabin · Kei",
+    "sleeps": "Sleeps 2",
+    "bed": "King (converts to twin)",
+    "size": "Main or upper deck, at the stern",
+    "feats": "Private balcony · writing desk"
+   },
+   {
+    "label": "Deluxe Ocean View",
+    "sub": "Koon or Savu · windows · upper deck",
+    "pp": 3960,
+    "photo": "Deluxe Ocean View · Koon & Savu",
+    "sleeps": "Sleeps 2",
+    "bed": "Queen (converts to twin)",
+    "size": "Upper deck",
+    "feats": "Sea-view windows"
+   },
+   {
+    "label": "Ocean View, portholes",
+    "sub": "Dayak, Abui or the Asmat bow cabin · lower deck",
+    "pp": 3400,
+    "photo": "Ocean View · Dayak & Abui",
+    "sleeps": "Sleeps 2 (Asmat 3)",
+    "bed": "Queen",
+    "size": "Lower deck",
+    "feats": "Portholes"
+   }
+  ],
+  "adds": [
+   {
+    "label": "Pre-voyage night in Labuan Bajo",
+    "sub": "Hotel near the harbour, with transfer [price to confirm]",
+    "pp": 190
+   },
+   {
+    "label": "Dive course aboard",
+    "sub": "Advanced Open Water [confirm]",
+    "pp": 550
+   },
+   {
+    "label": "Private dive guide",
+    "sub": "For your group, every dive [confirm]",
+    "pp": 650
+   }
+  ],
+  "taxRate": 0.11,
+  "source": "aliikai-voyage.com, 26 Oct 2026"
+ },
+ "dates_head": [
+  "Departures",
+  "2027 dates & rates",
+  "Each sailing = an Event/Offer with startDate"
+ ],
+ "departures": {
+  "_this": "Komodo National Park · 4 nights",
+  "groups": [
+   {
+    "name": "Komodo National Park",
+    "nights": "3–6 nights",
+    "sailings": [
+     {
+      "date": "22 May 2027 · Bali to Komodo",
+      "nights": 5,
+      "price": 4250,
+      "status": "Full"
+     },
+     {
+      "date": "28 May 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "3 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "4 cabins left"
+     },
+     {
+      "date": "10 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "16 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "23 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "29 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "24 July 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Cabins available"
+     },
+     {
+      "date": "31 July 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Full"
+     },
+     {
+      "date": "8 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "14 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Full"
+     },
+     {
+      "date": "21 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "28 August 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "2 September 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "7 September 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "15 September 2027",
+      "nights": 4,
+      "price": 3400,
+      "status": "Cabins available"
+     },
+     {
+      "date": "22 September 2027",
+      "nights": 4,
+      "price": 3400,
+      "status": "Cabins available"
+     },
+     {
+      "date": "28 September 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     }
+    ],
+    "this": true
+   },
+   {
+    "name": "Raja Ampat · North & Central",
+    "nights": "9 nights",
+    "sailings": [
+     {
+      "date": "22 February 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "4 cabins left"
+     },
+     {
+      "date": "11 November 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     },
+     {
+      "date": "21 November 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     },
+     {
+      "date": "20 December 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Full"
+     }
+    ]
+   },
+   {
+    "name": "Raja Ampat · North & Central, shorter",
+    "nights": "7 nights",
+    "sailings": [
+     {
+      "date": "2 February 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "11 February 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Full"
+     }
+    ]
+   },
+   {
+    "name": "Raja Ampat · South & Central",
+    "nights": "7–9 nights",
+    "sailings": [
+     {
+      "date": "24 January 2027",
+      "nights": 8,
+      "price": 6800,
+      "status": "Cabins available"
+     },
+     {
+      "date": "4 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "13 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "21 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "30 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "2 December 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "30 December 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     }
+    ]
+   },
+   {
+    "name": "Sorong ↔ Ambon",
+    "nights": "11 nights",
+    "sailings": [
+     {
+      "date": "9 April 2027 · Sorong to Ambon",
+      "nights": 11,
+      "price": 9350,
+      "status": "Cabins available"
+     },
+     {
+      "date": "29 October 2027 · Ambon to Sorong",
+      "nights": 11,
+      "price": 9350,
+      "status": "Cabins available"
+     }
+    ]
+   },
+   {
+    "name": "Spice Islands",
+    "nights": "6–7 nights",
+    "sailings": [
+     {
+      "date": "11 October 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "22 October 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Full"
+     }
+    ]
+   },
+   {
+    "name": "Komodo & whale sharks",
+    "nights": "7 nights",
+    "sailings": [
+     {
+      "date": "6 July 2027 · Komodo & Whale Sharks",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "15 July 2027 · Whale Sharks & Komodo",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     }
+    ]
+   }
+  ],
+  "source": "aliikai-voyage.com/rates-availability-2027, checked 26 Oct 2026"
+ },
+ "dep_route": "Labuan Bajo → Labuan Bajo",
+ "dep_cta": "Hold a cabin →",
+ "dep_season": "Aliikai sails Komodo from May to September, in the dry season, then heads east for the Spice Islands and Raja Ampat. This four-night route sails on 15 and 22 September 2027; the other Komodo dates run three, five or six nights.",
+ "dep_note": "Shared voyages are priced per person, double occupancy, plus 11% tax. Or charter the whole yacht (up to 15 guests): US$10,900 a night plus 11% tax, minimum 7 nights in Raja Ampat (3 in Komodo).",
+ "founder": {
+  "eyebrow": "Vetted by the founder",
+  "navLabel": "From James",
+  "title": "I know the boat. This is her Komodo route.",
+  "p1": "James sailed Aliikai through Raja Ampat in November 2024. He hasn't sailed this Komodo route aboard her yet; the days on this page are Aliikai's own, checked against the 2027 schedule.",
+  "p2": "Four nights suits a first look at Komodo, or a few days at sea before or after Bali. A private charter can redraw the days around your group, from three nights in Komodo.",
+  "film": "Founder's film · Aliikai [VIDEO TO RECORD]"
+ },
+ "approve": {
+  "title": "Komodo's best-known sights, in four nights",
+  "seal_bottom": "VESSEL SAILED · NOV 2024",
+  "seal_mark": "KOMODO",
+  "why": [
+   "James sailed Aliikai in Raja Ampat in 2024, so the boat, the cabins and the kitchen are known quantities.",
+   "Four nights reach the park's big five: Padar, Pink Beach, the mantas, the dragons on Rinca and the bats of Kalong.",
+   "Seven cabins and a small crew keep the anchorages quiet when the day boats have gone home."
+  ],
+  "quote": "I know the boat. The dragons you can meet yourself."
+ },
+ "suits": [
+  [
+   "First-timers to Indonesia",
+   "Four nights, one boat, every postcard in the park.",
+   "Padar, Pink Beach, mantas and dragons without a single hotel change."
+  ],
+  [
+   "Snorkellers and divers",
+   "Bring a mask that fits. The mantas won't wait.",
+   "Guided dives with Nitrox, and snorkelling every day."
+  ],
+  [
+   "Couples",
+   "Sundowners off Kalong while the bats commute. Romantic, in its way.",
+   "A small phinisi and dinner on deck every night."
+  ],
+  [
+   "Bali add-on travellers",
+   "An hour's flight from Bali, four nights, back for the beach.",
+   "Labuan Bajo is a short hop from Denpasar."
+  ]
+ ],
+ "twice": [
+  [
+   "Anyone who wants Raja Ampat's remoteness",
+   "Komodo is busier by day. Aliikai anchors where the day boats don't.",
+   "For the far reefs, look at the Raja Ampat voyages."
+  ],
+  [
+   "Non-swimmers",
+   "Most days begin in the water.",
+   "Tell us, and we'll plan the walks and beach time around it."
+  ]
+ ],
+ "bestFor": {
+  "who": "First-timers to Indonesia",
+  "why": "Padar, Pink Beach, the mantas and the dragons in four nights, with no hotel changes."
+ },
+ "faqs": [
+  [
+   "How much is a Komodo liveaboard aboard Aliikai?",
+   "From US$3,400 per person for 4 nights in an ocean-view cabin with portholes (2027 published rate, double occupancy), plus 11% tax. Deluxe ocean-view cabins with windows are US$3,960 and the owner's cabins with private balconies US$4,600. Meals, guided diving and snorkelling, water sports and Labuan Bajo transfers are included. Travelling solo, the single supplement is 50% of the nightly rate."
+  ],
+  [
+   "When is the best time to visit Komodo National Park?",
+   "Aliikai sails Komodo in the dry season, May to September. This four-night route sails on 15 and 22 September 2027; three-, five- and six-night Komodo voyages run from late May."
+  ],
+  [
+   "Will we see Komodo dragons?",
+   "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised [confirm wording with the owner]."
+  ],
+  [
+   "Can you snorkel with manta rays in Komodo?",
+   "Yes. Day 3 is spent at Manta Point, snorkelling or diving with the mantas, then the sandbar at Karang Makassar."
+  ],
+  [
+   "How do we get to Labuan Bajo?",
+   "Labuan Bajo, on Flores, is a short flight from Bali. The crew meets you and takes you to the boat, and back to the airport on the last morning."
+  ],
+  [
+   "Can we charter Aliikai privately in Komodo?",
+   "Yes. The whole yacht, for up to 15 guests, is US$10,900 a night plus 11% tax, with a minimum of 3 nights in Komodo."
+  ]
+ ],
+ "reltitle": "More from Wild & Co Voyages",
+ "related": [
+  [
+   "ALIIKAI · RAJA AMPAT",
+   "10 Day Raja Ampat North",
+   "The northern reefs and the Wayag karsts."
+  ],
+  [
+   "WILD & CO VOYAGES",
+   "All voyages",
+   "Small ships and private yachts, by ledger."
+  ],
+  [
+   "FIELD GUIDE · INDONESIA",
+   "Raja Ampat, Komodo & Bali Field Guide",
+   "[Guide to come] — the free PDF."
+  ]
+ ],
+ "ctaline": "Two September sailings in 2027. Hold a cabin, or ask about chartering the whole yacht. Text James on 561.479.6355.",
+ "ctabtn": "Hold a Cabin",
+ "slides": [
+  {
+   "kicker": "5 Day Komodo Island · aboard Aliikai",
+   "title": "Dragons, mantas and a pink beach",
+   "line": "Four nights round Komodo National Park on a handcrafted phinisi.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#123B55 0%,#1E5F73 45%,#46B3AC 100%)"
+  }
+ ],
+ "navon": "Voyages",
+ "seo": {
+  "path": "/voyages/komodo/aliikai-5-day-komodo-island",
+  "title": "5-Day Komodo Liveaboard Cruise Aboard Aliikai",
+  "description": "A 4-night Komodo liveaboard aboard the phinisi Aliikai: Padar, Pink Beach, mantas and the dragons on Rinca. From US$3,400 pp, 2027. Best for first-timers to Indonesia.",
+  "keywords": [
+   "Komodo liveaboard",
+   "Komodo National Park cruise",
+   "Komodo boat trip from Labuan Bajo",
+   "Padar Island",
+   "Pink Beach Komodo",
+   "Komodo dragons Rinca",
+   "best time to visit Komodo"
+  ]
+ },
+ "prices_final": false,
+ "booking_live": false,
+ "tag": {
+  "kind": "Voyage tag",
+  "title": "Komodo",
+  "ledger": "Voyage ledger",
+  "no": "17",
+  "date": "— 2027",
+  "coords": "S 8°29′ · E 119°53′",
+  "postmark": {
+   "ring": "Republik Indonesia · Pos · Labuan Bajo ·",
+   "center": "Labuan Bajo",
+   "date": "SEP 2027",
+   "ink": "#1E5F73"
+  },
+  "script": "Indonesia",
+  "nudge": "why this voyage",
+  "note": "Know the boat. Meet the dragons. JW",
+  "cta": "Read why this voyage ↓"
+ },
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/voyages/komodo/aliikai-5-day-komodo-island#trip",
+   "name": "5 Day Komodo Island",
+   "url": "https://www.jameswildco.com/voyages/komodo/aliikai-5-day-komodo-island",
+   "description": "5 Day Komodo Island is a four-night voyage aboard Aliikai, a handcrafted phinisi, from Labuan Bajo through Indonesia's Komodo National Park: Sebayur, Gili Lawa, the mantas at Manta Point and Karang Makassar, the climb up Padar, Pink Beach, the Komodo dragons on Rinca and the flying foxes of Kalong at dusk. All meals, guided diving and snorkelling, kayaks and paddleboards are included. In 2027 it sails on 15 and 22 September, from US$3,400 per person plus 11% tax.",
+   "touristType": [
+    "First-timers to Indonesia"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 10,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Labuan Bajo harbour",
+       "description": "Day 1 · Board Aliikai",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.49,
+        "longitude": 119.88
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Sebayur Besar & Kecil",
+       "description": "Day 1",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.47,
+        "longitude": 119.71
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Gili Lawa Darat & Laut",
+       "description": "Day 2",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.47,
+        "longitude": 119.56
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Manta Point",
+       "description": "Day 3",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.53,
+        "longitude": 119.6
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Karang Makassar",
+       "description": "Day 3 · The sandbar",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.54,
+        "longitude": 119.61
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Padar Island",
+       "description": "Day 3",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.65,
+        "longitude": 119.58
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Pink Beach",
+       "description": "Day 4",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.6,
+        "longitude": 119.51
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Rinca Island",
+       "description": "Day 4 · Komodo dragons",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.65,
+        "longitude": 119.72
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Kalong Island",
+       "description": "Day 4 · Flying foxes at dusk",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.61,
+        "longitude": 119.75
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Labuan Bajo",
+       "description": "Day 5 · Disembark",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -8.49,
+        "longitude": 119.88
+       }
+      }
+     }
+    ]
+   },
+   "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": 3400,
+    "highPrice": 4600,
+    "offerCount": 2,
+    "availability": "https://schema.org/InStock",
+    "description": "Per person, double occupancy, plus 11% tax. 2027 sailings: 15 and 22 September."
+   }
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How much is a Komodo liveaboard aboard Aliikai?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "From US$3,400 per person for 4 nights in an ocean-view cabin with portholes (2027 published rate, double occupancy), plus 11% tax. Deluxe ocean-view cabins with windows are US$3,960 and the owner's cabins with private balconies US$4,600. Meals, guided diving and snorkelling, water sports and Labuan Bajo transfers are included. Travelling solo, the single supplement is 50% of the nightly rate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When is the best time to visit Komodo National Park?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Aliikai sails Komodo in the dry season, May to September. This four-night route sails on 15 and 22 September 2027; three-, five- and six-night Komodo voyages run from late May."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will we see Komodo dragons?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised [confirm wording with the owner]."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you snorkel with manta rays in Komodo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Day 3 is spent at Manta Point, snorkelling or diving with the mantas, then the sandbar at Karang Makassar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do we get to Labuan Bajo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Labuan Bajo, on Flores, is a short flight from Bali. The crew meets you and takes you to the boat, and back to the airport on the last morning."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can we charter Aliikai privately in Komodo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The whole yacht, for up to 15 guests, is US$10,900 a night plus 11% tax, with a minimum of 3 nights in Komodo."
+     }
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.jameswildco.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Voyages",
+     "item": "https://www.jameswildco.com/voyages"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "5 Day Komodo Island",
+     "item": "https://www.jameswildco.com/voyages/komodo/aliikai-5-day-komodo-island"
+    }
+   ]
+  }
+ ]
+}

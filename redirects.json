@@ -26,7 +26,7 @@
   },
   {
     "source": "/memoirs/:slug",
-    "destination": "/journal/:slug",
+    "destination": "/journal",
     "permanent": true
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "source": "/workshops",
-    "destination": "/plan/workshops",
+    "destination": "/plan",
     "permanent": true
   },
   {
@@ -61,22 +61,12 @@
   },
   {
     "source": "/destinations/africa/seychelles-find-your-wild-in-the-indian-ocean",
-    "destination": "/destinations/africa/seychelles",
-    "permanent": true
-  },
-  {
-    "source": "/country/seychelles-find-your-wild-in-the-indian-ocean",
-    "destination": "/destinations/africa/seychelles",
+    "destination": "/destinations/africa",
     "permanent": true
   },
   {
     "source": "/destinations/africa/masai-mara",
-    "destination": "/destinations/africa/kenya",
-    "permanent": true
-  },
-  {
-    "source": "/country/masai-mara",
-    "destination": "/destinations/africa/kenya",
+    "destination": "/destinations/africa",
     "permanent": true
   },
   {

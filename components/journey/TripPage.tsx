@@ -55,7 +55,10 @@ function Sec({ id, children, className = "" }: { id: string; children: ReactNode
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
   const voyage = T.kind === "voyage";
   const mapId = `jwmap-${T.id}`;
-  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? "/voyages" : "/destinations/central-america/costa-rica", T.seo.path][i] }));
+  // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
+  const waters = T.seo.path.split("/")[2];
+  const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo" };
+  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : "/destinations/central-america/costa-rica", T.seo.path][i] }));
   const h = host ? hostFor(host.key) : null;
   const hostOn = !!h && h.state !== "off";
   const quote = strip(T.quote).replace(/\s*—\s*J\.\s*W\.\s*$/, "");

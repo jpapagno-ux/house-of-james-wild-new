@@ -28,6 +28,8 @@ import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
+import { GUIDES } from "@/lib/content/guides";
+import GuidePage from "@/components/destination/GuidePage";
 import { regionBySlug } from "@/lib/content/regions";
 import { pageReady, staysIn } from "@/lib/content/stays";
 import { journeysFor } from "@/lib/content/preview/journeys";
@@ -43,7 +45,10 @@ import { graph, ids } from "@/lib/schema";
 // Africa so far; more countries are added in lib/content/countries.ts.
 
 export const dynamicParams = false;
-export function generateStaticParams() { return COUNTRIES.map((c) => ({ region: c.region, country: c.slug })); }
+export function generateStaticParams() {
+  // Countries with stays (the Ledger chart page) plus countries told as a guide (Indonesia, by sea).
+  return [...COUNTRIES.map((c) => ({ region: c.region, country: c.slug })), ...Object.values(GUIDES).filter((g) => !g.parent && !COUNTRIES.some((c) => c.slug === g.slug)).map((g) => ({ region: g.region, country: g.slug }))];
+}
 
 const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA };
 const FIRST = ["leeu", "ellerman", "monwana", "lion sands", "kirkman", "tswalu", "morukuru", "aguas claras", "pacuare", "lapa rios", "nayara"];
@@ -52,6 +57,8 @@ const rank = (n: string) => { const i = FIRST.findIndex((k) => n.toLowerCase().i
 export async function generateMetadata({ params }: { params: Promise<{ region: string; country: string }> }) {
   const p = await params;
   const c = countryBySlug(p.region, p.country);
+  const g = GUIDES[p.country];
+  if (!c && g && g.region === p.region) return { ...buildMetadata({ title: g.seo.title, description: g.seo.description, path: g.path, image: { url: g.slides[0].url, alt: g.slides[0].alt } }), keywords: g.seo.keywords };
   if (!c) return {};
   const n = staysIn(c.slug).filter(pageReady).length;
   return buildMetadata({ title: `${c.name}: ${n} Vetted Stays, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted stays mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
@@ -60,6 +67,8 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
 export default async function CountryPage({ params }: { params: Promise<{ region: string; country: string }> }) {
   const p = await params;
   const c = countryBySlug(p.region, p.country);
+  const g = GUIDES[p.country];
+  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} />;
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;

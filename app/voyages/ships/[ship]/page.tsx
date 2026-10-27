@@ -163,6 +163,7 @@ export default async function ShipPage({ params }: P) {
           {/* Every voyage she sails in 2027 */}
           <section id="voyages" className={SEC}>
             <SectionHead eyebrow="The voyages · 2027" title="Where Aliikai Sails" icon="wave" intro="Komodo in the dry season, the Spice Islands in October and Raja Ampat when its seas are calmest. Open a voyage for its day by day." />
+            <p className="mt-3 text-[15px]">Choosing between them? Read the <Link href="/destinations/asia/indonesia/raja-ampat" className="underline underline-offset-4 hover:ledger-crimson">Raja Ampat guide</Link>, the <Link href="/destinations/asia/indonesia/komodo" className="underline underline-offset-4 hover:ledger-crimson">Komodo guide</Link> or <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Indonesia by sea</Link>.</p>
             <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {s.groups.map((g) => {
                 const p = s.pages[g.name];

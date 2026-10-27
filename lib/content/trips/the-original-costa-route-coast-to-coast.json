@@ -66,7 +66,7 @@
   ],
   [
    "Dates",
-   "Private · any day you choose"
+   "Any day you choose, subject to lodge availability · not over Christmas and New Year"
   ],
   [
    "Best months",
@@ -364,7 +364,7 @@
   ],
   [
    "How much does The Original Costa Route: Both Coasts cost?",
-   "From $2,510 per person in the green season (May to November) and from $3,575 in the dry season (December to April), two sharing. That covers the hotels as listed, with taxes, and a private driver for every road leg. Christmas and New Year are priced separately, and we confirm the rate for your dates when you enquire."
+   "From $2,510 per person in the green season (May to November) and from $3,575 in the dry season (December to April), two sharing, plus 7% Florida sales tax. That covers the hotels as listed, with hotel taxes, and the private drivers. The route is booked subject to lodge availability and isn't offered over Christmas and New Year."
   ]
  ],
  "reltitle": "From the same guide",
@@ -471,7 +471,7 @@
  "dates_head": [
   "Rates",
   "From $2,510 per person",
-  "Green season, two sharing; dry season from $3,575"
+  "Green season, two sharing, plus 7% Florida sales tax; dry season from $3,575"
  ],
  "suits": [
   [
@@ -635,7 +635,7 @@
  "calc": {
   "title": "Build your price",
   "optlabel": "Choose your season",
-  "note": "Per person, two sharing. Includes the hotels as listed (entry room, taxes included) and a private driver for every road leg. Christmas and New Year are priced separately.",
+  "note": "Per person, two sharing. Includes the hotels as listed (entry room, hotel taxes included) and the private drivers; 7% Florida sales tax is added. Subject to lodge availability; not available over Christmas and New Year.",
   "soloNote": "Travelling solo: single supplement on request.",
   "maxG": 8,
   "taxRate": 0,

@@ -66,7 +66,7 @@
   ],
   [
    "Dates",
-   "Private · any day you choose"
+   "Any day you choose, subject to lodge availability · not over Christmas and New Year"
   ],
   [
    "Best months",
@@ -312,14 +312,15 @@
  ],
  "incl": [
   "Nine nights at Senda Monteverde, Arenas del Mar and Isla Palenque [room categories on file]",
-  "A private driver for every road leg, with a hand-over at the Panama border",
-  "Boat transfers to and from Isla Palenque",
+  "A private driver for every road leg in Costa Rica, to the Panama border",
   "Any current hotel offer that fits your dates, applied at booking",
   "24-hour support from James Wild & Co. while you travel"
  ],
  "excl": [
   "International flights to San José and home from Panama City",
-  "Domestic flight from David to Panama City [confirm]",
+  "The Panama-side driver from the border to Boca Chica",
+  "Boat transfers to and from Isla Palenque",
+  "Domestic flight from David to Panama City",
   "Border fees and any exit tax [confirm]",
   "Travel insurance",
   "Meals not marked as included [confirm per hotel]",
@@ -365,7 +366,7 @@
   ],
   [
    "How much does The Original Costa Route: Over the Border cost?",
-   "From $3,805 per person in the green season (May to November) and from $5,320 in the dry season (December to April), two sharing. That covers the hotels as listed, with taxes, and a private driver for every road leg. Christmas and New Year are priced separately, and we confirm the rate for your dates when you enquire."
+   "From $3,805 per person in the green season (May to November) and from $5,320 in the dry season (December to April), two sharing, plus 7% Florida sales tax. That covers the hotels as listed, with hotel taxes, and the private drivers in Costa Rica. The route is booked subject to lodge availability and isn't offered over Christmas and New Year."
   ]
  ],
  "reltitle": "From the same guide",
@@ -477,7 +478,7 @@
  "dates_head": [
   "Rates",
   "From $3,805 per person",
-  "Green season, two sharing; dry season from $5,320"
+  "Green season, two sharing, plus 7% Florida sales tax; dry season from $5,320"
  ],
  "suits": [
   [
@@ -642,7 +643,7 @@
  "calc": {
   "title": "Build your price",
   "optlabel": "Choose your season",
-  "note": "Per person, two sharing. Includes the hotels as listed (entry room, taxes included) and a private driver for every road leg. Christmas and New Year are priced separately. Boat to Isla Palenque and the Panama-side driver [to confirm].",
+  "note": "Per person, two sharing. Includes the hotels as listed (entry room, hotel taxes included) and the private drivers; 7% Florida sales tax is added. Subject to lodge availability; not available over Christmas and New Year. The Panama-side driver and the boat to Isla Palenque are not included.",
   "soloNote": "Travelling solo: single supplement on request.",
   "maxG": 8,
   "taxRate": 0,

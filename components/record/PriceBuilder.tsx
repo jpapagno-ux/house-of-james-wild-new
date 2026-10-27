@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Check, Minus, Plus } from "lucide-react";
-import { priceTrip, usd, DEPOSIT_PP, TAX_RATE } from "@/lib/pricing";
+import { priceTrip, usd, DEPOSIT_PP, TAX_RATE, FL_TAX_RATE } from "@/lib/pricing";
 
 // The price builder on Journey (Overland) and Voyage pages: option or cabin
 // → travellers → add-ons, with the sum shown as you go. "Book now" is shown
@@ -85,7 +85,8 @@ export default function PriceBuilder({ kind, options, addOns, defaultOption, tax
             <div className="flex justify-between py-1.5"><dt>{option.label} × {n}</dt><dd>{usd(option.pp * n)}</dd></div>
             {chosen.map((a) => <div key={a.id} className="flex justify-between py-1.5"><dt>{a.label} × {n}</dt><dd>{usd(a.pp * n)}</dd></div>)}
             <div className="flex justify-between py-1.5 border-t ledger-rule"><dt>Subtotal</dt><dd>{usd(r.subtotal)}</dd></div>
-            <div className="flex justify-between py-1.5"><dt>Tax ({Math.round(taxRate * 100)}%)</dt><dd>{usd(r.tax)}</dd></div>
+            {taxRate > 0 && <div className="flex justify-between py-1.5"><dt>Local tax ({Math.round(taxRate * 100)}%)</dt><dd>{usd(r.tax)}</dd></div>}
+            <div className="flex justify-between py-1.5"><dt>Florida sales tax ({Math.round(FL_TAX_RATE * 100)}%)</dt><dd>{usd(r.flTax)}</dd></div>
             <div className="flex justify-between py-2 border-t ledger-rule items-baseline"><dt className="ledger-eyebrow">Total</dt><dd className="ledger-display text-3xl ledger-crimson">{usd(r.total)}</dd></div>
             <div className="flex justify-between py-1 text-[13px] ledger-muted"><dt>Per person</dt><dd>{usd(r.perPerson)}</dd></div>
             <div className="flex justify-between py-1.5 border-t ledger-rule mt-2"><dt>Deposit ({usd(DEPOSIT_PP)} × {n})</dt><dd>{usd(r.deposit)}</dd></div>

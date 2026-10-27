@@ -74,7 +74,7 @@ export default async function ShipPage({ params }: P) {
       <main id="main">
         <RecordHero film={film} image={s.gallery[0]} eyebrow={`Wild & Co Voyages · The vessel · ${s.ledgerId}`} title={s.name} tagline={s.tagline}
           stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
-          glance={<GlanceBar glance={{ price: { amount: usd(s.low), basis: "per person, 2027 · + 11% tax" }, facts: [["Cabins", "7 · 14 guests"], ["Waters", "Raja Ampat · Komodo"], ["Charter", "US$10,900 a night"]], photos: s.gallery.length, cta: { label: "See 2027 dates", href: "#departures" } }} />} />
+          glance={<GlanceBar glance={{ price: { amount: usd(s.low), basis: "per person, 2027 · + 11% tax + 7% Florida sales tax" }, facts: [["Cabins", "7 · 14 guests"], ["Waters", "Raja Ampat · Komodo"], ["Charter", "US$10,900 a night"]], photos: s.gallery.length, cta: { label: "See 2027 dates", href: "#departures" } }} />} />
         <RecordNav items={[["In short", "overview"], ["Who she suits", "suits"], ["First Raja Ampat", "first-time"], ["Photos", "gallery"], ["Life aboard", "aboard"], ["Cabins", "cabins"], ["The voyages", "voyages"], ["2027 dates", "departures"], ["Charter", "charter"], ["Sailed by James", "founder"], ["FAQ", "faq-heading"]]} cta="Ask about Aliikai" ctaHref="/plan?trip=Aliikai" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: s.path }]} /></div>
@@ -203,7 +203,7 @@ export default async function ShipPage({ params }: P) {
                         <li key={r.date} className="border-t ledger-border py-3 grid grid-cols-[1fr_auto] md:grid-cols-[2fr_0.6fr_1.4fr_1.2fr_auto] gap-x-3 gap-y-1 items-center text-[14.5px]">
                           <span className="ledger-display text-[16px] md:font-serif md:text-[14.5px]">{r.date}</span>
                           <span className="hidden md:block">{r.nights} nights</span>
-                          <span className="order-3 md:order-none">{usd(r.price)} <span className="text-[12px] ledger-muted">+ 11% tax<span className="md:hidden"> · {r.nights} nights</span></span></span>
+                          <span className="order-3 md:order-none">{usd(r.price)} <span className="text-[12px] ledger-muted">+ 11% tax + 7% FL tax<span className="md:hidden"> · {r.nights} nights</span></span></span>
                           <span className="order-2 md:order-none justify-self-end md:justify-self-start"><span className={`text-[11.5px] px-2 py-0.5 whitespace-nowrap ${tone(r.status)}`}>{r.status}</span></span>
                           <span className="order-4 md:order-none justify-self-end"><a href={`/plan?trip=${encodeURIComponent(`${g.name}, Aliikai`)}&date=${encodeURIComponent(r.date)}${/full/i.test(r.status) ? "&waitlist=1" : ""}`} className="ledger-btn-ghost">{/full/i.test(r.status) ? "Waitlist" : "Hold a cabin"}</a></span>
                         </li>))}</ul>

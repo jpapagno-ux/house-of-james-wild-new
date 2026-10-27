@@ -53,7 +53,7 @@ const FEATURES: RecordCard[] = [
 
 export default function AliikaiPreview() {
   return (
-    <>
+    <div className="theme-sea theme-sea-page">
       <SiteHeader overlay />
       <main id="main">
         <RecordHero image={V.hero} eyebrow={`Wild & Co Voyages · Aliikai · ${V.ledgerId}`} title={V.name} tagline="Ten days aboard a hand-built phinisi through Raja Ampat's reefs and limestone islands" stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
@@ -161,6 +161,6 @@ export default function AliikaiPreview() {
         {hostFor("voyage:aliikai").state === "available" && <CallingCard who={HOST_KIND.vessel.who} />}
       </main>
       <RecordActionBar price="US$4,830" basis="pp / voyage" cta="Departures" />
-    </>
+    </div>
   );
 }

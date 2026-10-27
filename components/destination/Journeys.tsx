@@ -21,8 +21,8 @@ const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "sou
 // Renders nothing when a destination has none yet.
 
 // Link guard: a card links only when its page is built (always in previews).
-function Wrap({ linked, href, event, children }: { linked: boolean; href: string; event: string; children: React.ReactNode }) {
-  const cls = "group h-full bg-paper border ledger-border flex flex-col";
+function Wrap({ linked, href, event, sea, children }: { linked: boolean; href: string; event: string; sea?: boolean; children: React.ReactNode }) {
+  const cls = `group h-full bg-paper border ledger-border flex flex-col${sea ? " theme-sea" : ""}`;
   return linked ? <Link href={href} className={`${cls} hover:-translate-y-1 hover:shadow-[0_10px_24px_rgba(0,0,0,0.10)] transition duration-300`} data-event={event}>{children}</Link> : <article className={cls}>{children}</article>;
 }
 
@@ -46,14 +46,14 @@ export function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartD
   const chart = (j.chartKey && CHARTS[j.chartKey]) || fallback;
   const linked = !GUARD_ON || isBuilt(j.href);
   return (
-    <Wrap linked={linked} href={j.href} event={isRoute ? "destination_route_open" : "destination_voyage_open"}>
+    <Wrap linked={linked} href={j.href} sea={!isRoute} event={isRoute ? "destination_route_open" : "destination_voyage_open"}>
       <div className="relative border-b ledger-rule overflow-hidden">
         {isRoute && j.stops && chart ? (
           <MiniRoute chart={chart} stops={j.stops} title={j.title} />
         ) : (
           <div className="relative aspect-[4/3] bg-paper-card">{j.image && <Image src={j.image} alt={`${j.title}: ${j.line}`} fill sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}</div>
         )}
-        <span className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-2 py-1 text-[10px] uppercase tracking-[0.16em] ${isRoute ? "bg-paper/95 text-crimson" : "bg-coast-deep text-paper"}`}>
+        <span className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-2 py-1 text-[10px] uppercase tracking-[0.16em] ${isRoute ? "bg-paper/95 text-crimson" : "bg-sea-deep text-paper"}`}>
           {isRoute ? <RouteIcon className="w-3 h-3" strokeWidth={1.75} aria-hidden="true" /> : <Anchor className="w-3 h-3" strokeWidth={1.75} aria-hidden="true" />}
           {isRoute ? "Overland route" : "Small-ship voyage"}
         </span>

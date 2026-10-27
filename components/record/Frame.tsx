@@ -78,9 +78,9 @@ export function LocationBlock({ chart, name, pin, others = [], heading, rows, no
       <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
         <LedgerChart chart={chart} title={`Where ${name} sits`} />
         <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">
-          {others.map((o, i) => { const q = projectOn(chart, o.lat, o.lng); return <circle key={i} cx={q.x} cy={q.y} r="5.5" fill="#8B2525" fillOpacity="0.28" stroke="#F4F1ED" strokeWidth="1.5" />; })}
-          <circle cx={p.x} cy={p.y} r="28" fill="none" stroke="#8B2525" strokeWidth="2" className="ledger-pin-pulse" />
-          <circle cx={p.x} cy={p.y} r="11" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" />
+          {others.map((o, i) => { const q = projectOn(chart, o.lat, o.lng); return <circle key={i} cx={q.x} cy={q.y} r="5.5" style={{fill:"var(--jw-accent-hex)"}} fillOpacity="0.28" stroke="#F4F1ED" strokeWidth="1.5" />; })}
+          <circle cx={p.x} cy={p.y} r="28" fill="none" style={{stroke:"var(--jw-accent-hex)"}} strokeWidth="2" className="ledger-pin-pulse" />
+          <circle cx={p.x} cy={p.y} r="11" style={{fill:"var(--jw-accent-hex)"}} stroke="#F4F1ED" strokeWidth="3" />
           <text x={right ? p.x - 20 : p.x + 20} y={p.y - 20} textAnchor={right ? "end" : "start"} fontFamily="'Playfair Display', serif" fontSize="22" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">{name}</text>
         </svg>
       </div>

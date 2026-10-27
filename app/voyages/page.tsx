@@ -17,7 +17,7 @@ export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Y
 export default function VoyagesHub() {
   const voyages = journeysFor("indonesia");
   return (
-    <>
+    <div className="theme-sea theme-sea-page">
       <SiteHeader />
       <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small Ships and Sailing Yachts, Never the Big Ones" intro={V.intro} browse={V.browse}
         answer={`James Wild & Co's Voyages volume files ${LEDGER_COUNTS.vessels} small ships and sailing yachts and the voyages they sail, from phinisis in Raja Ampat and Komodo to expedition ships in the polar regions. Each voyage lists its ports in order, the cabins and the fare per person, and James has sailed many of them himself since 1989.`}
@@ -27,6 +27,6 @@ export default function VoyagesHub() {
         </HubSection>
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: voyages.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
-    </>
+    </div>
   );
 }

@@ -33,10 +33,10 @@ export default function VoyageMap({ stops, title }: { stops: Stop[]; title: stri
         <g fontFamily="'Playfair Display', Georgia, serif" textAnchor="middle">
           {C.labels.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={l.text === l.text.toUpperCase() ? 14 : 16} letterSpacing={l.text === l.text.toUpperCase() ? 6 : 2} fontStyle={l.text === l.text.toUpperCase() ? "normal" : "italic"} fill={l.text === l.text.toUpperCase() ? "rgba(45,42,38,0.45)" : "rgba(34,101,110,0.75)"}>{l.text}</text>)}
         </g>
-        <path d={route} pathLength={1} fill="none" stroke="#8B2525" strokeWidth="2.5" strokeDasharray="0.012 0.008" strokeLinecap="round" />
+        <path d={route} pathLength={1} fill="none" style={{stroke:"var(--jw-accent-hex)"}} strokeWidth="2.5" strokeDasharray="0.012 0.008" strokeLinecap="round" />
         {markers.map((m) => (
           <g key={m.name} transform={`translate(${m.x} ${m.y})`}>
-            <circle r="15" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" />
+            <circle r="15" style={{fill:"var(--jw-accent-hex)"}} stroke="#F4F1ED" strokeWidth="3" />
             <text y="5" textAnchor="middle" fontFamily="'IBM Plex Mono', monospace" fontSize={m.days.length > 1 ? 10 : 13} fill="#F4F1ED">{m.days.join("·")}</text>
             <text x="22" y="5" fontFamily="'Playfair Display', serif" fontSize="17" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">{m.name}</text>
           </g>

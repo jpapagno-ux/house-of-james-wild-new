@@ -428,7 +428,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     : [Overview, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
   return (
-    <>
+    <div className={voyage ? "theme-sea theme-sea-page" : undefined}>
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
@@ -457,6 +457,6 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       {hostOn && h?.state === "available" && host && <CallingCard who={HOST_KIND[host.kind].who} />}
       <Script src="/maps/jw-embed.js" strategy="afterInteractive" />
       <JsonLd data={T.jsonld.filter((x) => x["@type"] !== "FAQPage")} />
-    </>
+    </div>
   );
 }

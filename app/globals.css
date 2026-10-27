@@ -4,18 +4,23 @@
 
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
+  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #EAE6DF; }
+  /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
+  .theme-sea { --jw-accent: 30 95 115; --jw-accent-deep: 18 59 85; --jw-accent-light: 156 207 216; --jw-accent-hex: #1E5F73; --jw-accent-deep-hex: #123B55; --jw-card: #E3EBEC; }
+  /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
+  :root:has(.theme-sea-page) { --jw-accent: 30 95 115; --jw-accent-deep: 18 59 85; --jw-accent-light: 156 207 216; --jw-accent-hex: #1E5F73; --jw-accent-deep-hex: #123B55; --jw-card: #E3EBEC; }
   html { scroll-behavior: smooth; overflow-x: clip; }
   body { background: #F4F1ED; color: #2D2A26; font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
-  :focus-visible { outline: 2px solid #8B2525; outline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 }
 
 @layer components {
   .ledger-page { background: #F4F1ED; color: #2D2A26; }
-  .ledger-card { background: #EAE6DF; }
-  .ledger-paper { background: #EAE6DF; box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
-  .ledger-crimson { color: #8B2525; }
-  .ledger-crimson-border { border-color: #8B2525; }
+  .ledger-card { background: var(--jw-card); }
+  .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
+  .ledger-crimson { color: var(--jw-accent-hex); }
+  .ledger-crimson-border { border-color: var(--jw-accent-hex); }
   .ledger-border { border-color: rgba(45, 42, 38, 0.16); }
   .ledger-rule { border-color: rgba(45, 42, 38, 0.28); }
   .ledger-muted { color: rgba(45, 42, 38, 0.68); }
@@ -31,16 +36,16 @@
   }
   .ledger-btn {
     display: inline-flex; align-items: center; gap: .5rem;
-    border: 1px solid #8B2525; color: #8B2525;
+    border: 1px solid var(--jw-accent-hex); color: var(--jw-accent-hex);
     font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
     padding: 9px 18px; background: transparent; cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
   }
-  .ledger-btn:hover { background: #8B2525; color: #F4F1ED; }
-  .ledger-btn--solid { background: #8B2525; color: #F4F1ED; padding: 12px 22px; }
-  .ledger-btn--solid:hover { background: #6E1C1C; border-color: #6E1C1C; }
+  .ledger-btn:hover { background: var(--jw-accent-hex); color: #F4F1ED; }
+  .ledger-btn--solid { background: var(--jw-accent-hex); color: #F4F1ED; padding: 12px 22px; }
+  .ledger-btn--solid:hover { background: var(--jw-accent-deep-hex); border-color: var(--jw-accent-deep-hex); }
   .ledger-btn-ghost { color: #2D2A26; font-family: 'EB Garamond', Georgia, serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
-  .ledger-btn-ghost:hover { color: #8B2525; border-color: #8B2525; }
+  .ledger-btn-ghost:hover { color: var(--jw-accent-hex); border-color: var(--jw-accent-hex); }
 }
 
 /* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */

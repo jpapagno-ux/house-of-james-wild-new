@@ -53,6 +53,19 @@ const pageSchema = graph(
     speakable: { "@type": "SpeakableSpecification", cssSelector: ["#story-heading", "[aria-label='In short'] p"] },
   },
   {
+    // The hero loop. Embedded from Aliikai Voyage's YouTube channel; add uploadDate when known for video rich results.
+    "@type": "VideoObject",
+    "@id": absoluteUrl("/#hero-film"),
+    name: HOME.hero.short.title,
+    description: HOME.hero.short.description,
+    thumbnailUrl: [HOME.hero.short.poster],
+    embedUrl: `https://www.youtube.com/embed/${HOME.hero.short.id}`,
+    url: `https://www.youtube.com/shorts/${HOME.hero.short.id}`,
+    author: { "@type": "Organization", name: "Aliikai Voyage", url: "https://aliikai-voyage.com/" },
+    contentLocation: { "@type": "Place", name: "Komodo National Park, Indonesia" },
+    isPartOf: { "@id": absoluteUrl("/#webpage") },
+  },
+  {
     "@type": "ItemList",
     "@id": absoluteUrl("/#volumes"),
     name: "The five volumes of James Wild & Co",

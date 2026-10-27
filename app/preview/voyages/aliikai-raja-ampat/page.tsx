@@ -1,4 +1,5 @@
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
+import { FILMS } from "@/lib/content/films";
 import Image from "next/image";
 import Link from "next/link";
 import { Anchor, CalendarRange, Ship, Users } from "lucide-react";
@@ -56,14 +57,14 @@ export default function AliikaiPreview() {
     <div className="theme-sea theme-sea-page">
       <SiteHeader overlay />
       <main id="main">
-        <RecordHero image={V.hero} eyebrow={`Wild & Co Voyages · Aliikai · ${V.ledgerId}`} title={V.name} tagline="Ten days aboard a hand-built phinisi through Raja Ampat's reefs and limestone islands" stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
-          glance={<GlanceBar glance={{ price: { amount: "US$4,830", basis: "per person, per voyage · shared cabin" }, facts: [["The voyage", "10 days · 9 nights"], ["Departures", "Fixed dates 2027 & 2028"], ["Embark", "Sorong, West Papua"]], photos: S.gallery.length + 1, cta: { label: "See departures", href: "#departures" } }} />} />
+        <RecordHero film={FILMS.aliikai} image={V.hero} eyebrow={`Wild & Co Voyages · Aliikai · ${V.ledgerId}`} title={V.name} tagline="Ten days aboard a hand-built phinisi through Raja Ampat's reefs and limestone islands" stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
+          glance={<GlanceBar glance={{ price: { amount: "US$7,650", basis: "per person, 2027 · + 11% tax" }, facts: [["Voyage", "10 days"], ["2027", "Feb · Nov · Dec"], ["Embark", "Sorong"]], photos: S.gallery.length + 1, cta: { label: "See departures", href: "#departures" } }} />} />
         <RecordNav items={[["Photos", "gallery"], ["Why we chose it", "why"], ["Day by day", "days"], ["Departures", "departures"], ["Cabins", "cabins"], ["The fare", "included"], ["Experiences", "experiences"], ["Features", "features"], ["The ship", "ship"], ["FAQ", "faq-heading"]]} cta="Enquire" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Raja Ampat", path: "/voyages/raja-ampat" }, { name: "Aliikai · 10 Day Raja Ampat North", path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north" }]} /></div>
           <Overview
             quote={V.introQuote}
-            answer="Aliikai's 10 Day Raja Ampat North sails from Sorong through the Dampier Strait to Wayag and back, nine nights aboard a 40-metre wooden phinisi with seven cabins and a crew of thirteen. From US$4,830 per person in a shared cabin, all meals, guided diving and snorkelling included. Best October to April. James sailed Raja Ampat aboard Aliikai in November 2024."
+            answer="Aliikai's 10 Day Raja Ampat North sails from Sorong through the Dampier Strait to Wayag and back, nine nights aboard a 40-metre wooden phinisi with seven cabins and a crew of thirteen. From US$7,650 per person (2027, ocean-view cabin, double occupancy, plus 11% tax), all meals, guided diving and snorkelling included. Best October to April. James sailed Raja Ampat aboard Aliikai in November 2024."
             facts={(V.meta as [string, string][]).filter(([k]) => !["Duration", "Embarkation", "Disembarkation"].includes(k))}
             paragraphs={V.overview}
           />
@@ -104,7 +105,7 @@ export default function AliikaiPreview() {
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <article className="ledger-paper border ledger-border p-6 md:p-7">
                 <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><CalendarRange className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Shared voyage · by the cabin</p>
-                <p className="mt-3"><span className="ledger-display text-4xl ledger-crimson">US$4,830</span> <span className="text-[13px] ledger-muted">from, per person, per voyage</span></p>
+                <p className="mt-3"><span className="ledger-display text-4xl ledger-crimson">US$7,650</span> <span className="text-[13px] ledger-muted">from, per person, 2027, + 11% tax</span></p>
                 <table className="mt-5 w-full text-[14.5px]">
                   <thead><tr className="border-b ledger-rule text-left"><th className="ledger-eyebrow py-2 font-normal">Departs</th><th className="ledger-eyebrow py-2 font-normal">Returns</th><th className="ledger-eyebrow py-2 font-normal text-right">Per person</th><th className="ledger-eyebrow py-2 font-normal text-right">Cabins</th></tr></thead>
                   <tbody><tr className="border-b ledger-rule"><td colSpan={4} className="py-4 ledger-muted italic">The 2027 and 2028 dates are filed from the Aliikai rate sheet. Each row shows the dates, the per-person fare and whether cabins remain.</td></tr></tbody>
@@ -120,12 +121,12 @@ export default function AliikaiPreview() {
               </article>
             </div>
           </section>
-          <RoomsLedger id="cabins" unit="cabin" eyebrow="Cabins & rates" title="Seven Cabins on Three Decks" intro="Every cabin, with its deck, beds and registry “from” price. The voyage fare above is per person; cabin rates apply to private sailings." rooms={CABINS} icon="tree-ring" footnote={`Whole-yacht charter: ${S.charter.text} Voyage fare from US$4,830 per person in a shared cabin (2026/27 season). Rates re-verified at enquiry.`} />
+          <RoomsLedger id="cabins" unit="cabin" eyebrow="Cabins & rates" title="Seven Cabins on Three Decks" intro="Every cabin, with its deck, beds and registry “from” price. The voyage fare above is per person; cabin rates apply to private sailings." rooms={CABINS} icon="tree-ring" footnote={`Whole-yacht charter: ${S.charter.text} Voyage fare from US$7,650 per person, double occupancy, plus 11% tax (2027 published rate). Rates re-verified at enquiry.`} />
 
           <section id="included" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <SectionHead eyebrow="The fare" title="What the Voyage Includes" />
-              <p className="text-right"><span className="ledger-eyebrow block">From</span><span className="ledger-display text-4xl ledger-crimson">US$4,830</span><span className="block text-[13px] ledger-muted">{V.rate.basis} · {V.rate.season}</span></p>
+              <p className="text-right"><span className="ledger-eyebrow block">From</span><span className="ledger-display text-4xl ledger-crimson">US$7,650</span><span className="block text-[13px] ledger-muted">per person, double occupancy · 2027 · + 11% tax</span></p>
             </div>
             <div className="mt-6"><IncludedLists included={V.rate.includes} excluded={["International and domestic flights to Sorong", "Crew gratuities", "Alcoholic drinks beyond the welcome", "Travel and dive insurance"]} /></div>
             <p className="mt-5 text-[13px] ledger-muted max-w-3xl">{V.rate.note}</p>
@@ -160,7 +161,7 @@ export default function AliikaiPreview() {
         </div>
         {hostFor("voyage:aliikai").state === "available" && <CallingCard who={HOST_KIND.vessel.who} />}
       </main>
-      <RecordActionBar price="US$4,830" basis="pp / voyage" cta="Departures" />
+      <RecordActionBar price="US$7,650" basis="pp · 2027" cta="Departures" />
     </div>
   );
 }

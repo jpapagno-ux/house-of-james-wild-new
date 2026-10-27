@@ -39,16 +39,6 @@ export const HOME = {
       poster: "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg",
       label: "Wild Earth Stays film: wild places by land and by water",
     },
-    // The hero loop (27 Oct 2026): Aliikai Voyage's own Komodo Short, embedded from
-    // YouTube in privacy mode. Swap for the original file later to burn the logo in.
-    short: {
-      id: "HChJAzZgQIM",
-      title: "Discover Komodo National Park Aboard Aliikai Voyage",
-      description: "Komodo National Park from the deck of Aliikai, a handcrafted phinisi: Padar's ridges, pink sand, mantas and the dragons of Rinca.",
-      poster: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1440/q_auto:good/f_jpg/jwco/site/home/aliikai-komodo-short-poster",
-      alt: "Komodo National Park from the deck of the phinisi Aliikai",
-      credit: "Komodo, aboard Aliikai · Film: Aliikai Voyage",
-    },
     quotes: [
       { text: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.", by: "James, Founder & Chief Expedition Officer" },
       { text: "The magic of a place reveals itself when you slow down and stay longer.", by: "James, on staying longer" },

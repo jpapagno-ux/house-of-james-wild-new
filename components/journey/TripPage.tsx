@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ShortFilmPanel } from "@/components/media/ShortFilm";
+import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
 import Script from "next/script";
 import type { ReactNode } from "react";
@@ -48,7 +50,7 @@ function Sec({ id, children, className = "" }: { id: string; children: ReactNode
   return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 ${className}`}>{children}</section>;
 }
 
-export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind } }) {
+export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
   const voyage = T.kind === "voyage";
   const mapId = `jwmap-${T.id}`;
   const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? "/voyages" : "/destinations/central-america/costa-rica", T.seo.path][i] }));
@@ -260,7 +262,17 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Vessel = voyage && V ? (
     <Sec id="vessel">
       <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
-      {V.gallery && V.gallery.length > 0 && (
+      {film ? (
+        // The vessel's own film beside the photographs: tall, silent, looping.
+        <div className="mt-8 grid md:grid-cols-[minmax(0,260px)_1fr] gap-2 md:h-[460px]">
+          <ShortFilmPanel film={film} className="w-full max-w-[420px] mx-auto md:max-w-none md:h-full md:w-auto" sizes="(max-width: 768px) 100vw, 260px" />
+          {V.gallery && V.gallery.length > 0 && (
+            <div className="grid grid-cols-2 md:grid-rows-2 gap-2 md:h-full">
+              {V.gallery.slice(0, 4).map((g) => <Ph key={g.url} img={g} label={g.alt} className="aspect-[4/3] md:aspect-auto md:h-full" sizes="(max-width: 768px) 50vw, 30vw" />)}
+            </div>
+          )}
+        </div>
+      ) : V.gallery && V.gallery.length > 0 && (
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">
           {V.gallery.slice(0, 5).map((g, i) => <Ph key={g.url} img={g} label={g.alt} className={i === 0 ? "col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-full" : "aspect-[4/3] md:aspect-auto md:h-full"} sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />)}
         </div>
@@ -465,7 +477,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       </main>
       {hostOn && h?.state === "available" && host && <CallingCard who={HOST_KIND[host.kind].who} />}
       <Script src="/maps/jw-embed.js" strategy="afterInteractive" />
-      <JsonLd data={T.jsonld.filter((x) => x["@type"] !== "FAQPage")} />
+      <JsonLd data={[...T.jsonld.filter((x) => x["@type"] !== "FAQPage"), ...(film ? [filmSchema(film, `https://www.jameswildco.com${T.seo.path}`)] : [])]} />
     </div>
   );
 }

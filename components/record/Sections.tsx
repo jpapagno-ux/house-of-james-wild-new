@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ShortFilmBackdrop } from "@/components/media/ShortFilm";
+import type { ShortFilm } from "@/lib/content/films";
 import HeroSlider from "@/components/destination/HeroSlider";
 import { heroReady, sharpen } from "@/lib/content/sharpen";
 import Link from "next/link";
@@ -32,21 +34,33 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 }
 
 /* Hero ----------------------------------------------------------------- */
-export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; height?: string }) {
+export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; height?: string }) {
   const body = (
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
         {tag}
         <div className="flex items-end justify-between gap-8">
-          <div>
+          <div className={film ? "landscape:max-w-[48vw]" : undefined}>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
             <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
-          {stamp && <div className="hidden md:block shrink-0 rounded-full bg-paper/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]">{stamp}</div>}
+          {stamp && <div className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0 rounded-full bg-paper/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]`}>{stamp}</div>}
         </div>
-        {glance && <div className="mt-7">{glance}</div>}
+        {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
       </div>
   );
+  // A vessel's own short film plays as the hero (tall screens edge to edge, wide screens in a frame).
+  if (film) {
+    return (
+      <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
+        <ShortFilmBackdrop film={film} />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/5 to-black/75 landscape:from-black/25 landscape:via-transparent landscape:to-black/45" />
+        <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
+        {body}
+        <div id="hero-end" className="absolute bottom-0" />
+      </section>
+    );
+  }
   const ready = slides ? heroReady(slides) : undefined;
   if (ready && ready.length > 1) {
     return <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;

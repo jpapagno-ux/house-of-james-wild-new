@@ -38,6 +38,8 @@ const A = {
 } satisfies Record<string, TripImg>;
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/";
+// Tortuga Lodge's own photos (tortugalodge.com), re-hosted on Cloudinary and delivered through AI upscale + auto improve.
+const TL = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/costa-rica/tortuga-lodge/";
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474/";
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/";
 
@@ -53,6 +55,7 @@ export const TRIP_SLIDES: Record<string, TripImg[]> = {
     { url: `${CDN}/68479470c30afaeff22d4c37_Aliikai-InformalSchedule.webp`, alt: "Sunset on Aliikai's deck, Raja Ampat" },
   ],
   "two-oceans-one-volcano": [
+    { url: `${TL}tortuguero-river-mouth-aerial`, alt: "Tortuguero from the air: the river, the rainforest and the Caribbean beyond" },
     { url: `${B44}356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp`, alt: "Arenal Volcano over the rainforest, Costa Rica" },
     { url: `${WF}6863018671b62ea7c452cea0_CostaRicaMAHero1.jpg`, alt: "Sunset over Costa Rica's Pacific coast and rainforest" },
     { url: `${B44}c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled.webp`, alt: "Hot pools in the Monteverde cloud forest, Costa Rica" },
@@ -84,6 +87,13 @@ export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string
   },
   "two-oceans-one-volcano": {
     images: {
+      "PHOTO · TORTUGUERO FROM THE AIR": { url: `${TL}tortuguero-river-aerial`, alt: "Tortuguero from the air: the river and Tortuga Lodge in the rainforest" },
+      "PHOTO · CANAL AT DAWN": { url: `${TL}tortuguero-canal`, alt: "A Tortuguero canal through the rainforest" },
+      "PHOTO · GREEN TURTLE AT NIGHT": { url: `${TL}sea-turtle-hatchling`, alt: "A sea turtle hatchling on the sand at Tortuguero" },
+      "Turtle nesting walk": { url: `${TL}sea-turtle-hatchling`, alt: "A sea turtle hatchling on the sand at Tortuguero" },
+      "Lodge from the river": { url: `${TL}tortuga-lodge-from-the-river`, alt: "Tortuga Lodge & Gardens from the river" },
+      "Riverfront room": { url: `${TL}riverfront-room`, alt: "A riverfront room at Tortuga Lodge, opening onto the water" },
+      "Canal dock at dawn": { url: `${TL}walkway-to-the-river-pool`, alt: "The walkway down to Tortuga Lodge's riverside pool" },
       "PHOTO · ARENAL FROM THE ROAD": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp", alt: "Arenal Volcano over the rainforest, Costa Rica" },
       "Villa plunge pool": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.", alt: "Nayara Springs: a pool among the rainforest flowers" },
       "PHOTO · CLOUD FOREST": { url: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By.webp", alt: "The Monteverde cloud forest from a balcony" },

@@ -3,8 +3,10 @@
 // closing quote are rendered by the page; "Wild Earth Stays" now reads
 // "James Wild & Co" where it speaks for the house today; first mentions of
 // the hotels on the site link to their stay pages. 27 Oct 2026: James asked
-// for his history with Hans Pfister (since 1994, his early days selling these
-// lodges) and the 2026 offers; the new section is flagged on the Proofs sheet.
+// for his history with Hans Pfister and the 2026 offers. Same day, corrected:
+// James has followed the Cayuga team and Hans since 2003. Awards are sourced
+// (WTTC 2018, T+L 2022, MICHELIN Keys 2026, Nat Geo 2019); the James Wild Test
+// section is drafted voice, flagged on the Proofs sheet.
 export const CAYUGA_BODY = `Central America has been part of my travel life for more than three decades.
 
 I first came to the region when adventure travel was still a fairly small idea. Roads were rougher, many places were reached by instinct as much as by directions, and "sustainable tourism" was not yet a phrase anyone used casually.
@@ -13,13 +15,40 @@ What stayed with me was how naturally the best journeys connected people and pla
 
 That early experience shaped the way I still think about travel. It is also why I have followed the Cayuga Collection and the work of co-founders Hans Pfister and Andrea Bonilla with such interest.
 
-## Why I've followed Hans Pfister since 1994
+## Why I've followed Cayuga and Hans Pfister since 2003
 
-My connection to Cayuga is older than the collection itself. I have been following Hans Pfister since 1994, in my early days selling these lodges to travellers, long before anyone used the phrase "sustainable luxury."
+I have followed the Cayuga team and Hans Pfister since 2003, the year he and Andrea Bonilla launched Cayuga Hospitality. I have always been inspired by their commitment to hospitality and sustainability, and by how rarely they let one get in the way of the other.
 
-Selling a lodge then meant knowing it yourself: the road in, the people who ran it and whether the place lived up to what you promised. Over three decades I have watched Hans and Andrea turn that same instinct into a way of running hotels, built around local teams and a strong sense of place.
+Plenty of hotel groups discovered sustainability around the time it started selling brochures. Cayuga had it in the business plan before the brochure existed, and more than twenty years on it still runs its hotels that way.
 
-That long view is why I trust what Cayuga gets right, and why I still ask the hard questions further down this page.
+## What has Cayuga been recognised for?
+
+I don't recommend a hotel because of a plaque. I have stayed in award-winning places with award-winning damp. But Cayuga's record points at the right things:
+
+- **WTTC Tourism for Tomorrow Award, 2018.** The World Travel & Tourism Council named the Cayuga Collection the winner of its People award, after inspecting the finalists on site.
+- **Travel + Leisure Global Vision Award, 2022.** Cayuga was one of six honourees recognised for their impact on more sustainable travel.
+- **MICHELIN Keys, 2026.** [Kura](/stays/kura-boutique-resort) and [Aguas Claras](/stays/aguas-claras) each hold one Key in the 2026 selection.
+- **National Geographic Unique Lodges of the World, 2019.** Isla Palenque, a private island in Panama's Gulf of Chiriquí, was named to the collection.
+
+## The work behind the awards
+
+The awards are the receipt. The work is the people. Cayuga employs around 400 people across its hotels, many from the communities around them, and trains them for management and executive roles. One of my favourite examples is Rodbin Bonilla, who started as a driver, became a bellhop and then a manager, and later founded his own transport company, which now drives guests to the airport.
+
+On property, Cayuga's Naturalist Guides and Sustainability Hosts lead small private tours, so the explanation comes from someone who lives there. And when the pandemic gave every hotel an excuse to quietly drop the expensive commitments, Cayuga kept its sustainability programme going. Hans puts it simply: sustainability means investing in people to make a difference in communities.
+
+## Why does Cayuga pass the James Wild Test?
+
+Every hotel we sell has to pass the James Wild Test. It is not complicated. Would I send my own family? Will the people who make it special still be there after the photographer leaves? And can the hotel answer the awkward questions without reaching for the word "eco"?
+
+Cayuga passes in flying colours:
+
+- **Local people, all the way up.** Pass. A driver who becomes a manager and then a business owner is the whole test in one career.
+- **Real jobs, not seasonal props.** Pass. Training runs into management and executive roles, which is where most "local hiring" quietly stops.
+- **Guides who explain, not just point.** Pass. Nobody is waving a laser pointer at a sloth and calling it interpretation.
+- **Somebody else checked.** Pass. WTTC judges went and looked, which is more than most hotel star ratings can say.
+- **Still doing it when nobody was watching.** Pass. The pandemic was the honest exam, and they sat it.
+
+That long view is why I trust what Cayuga gets right, and why I still ask the hard questions further down this page. Flying colours, then. Whether the swell is working when you arrive is a different test, and that one I'll tell you about before you leave.
 
 Cayuga did not make sustainability an extra activity for guests. It built it into the way a hotel hires, buys, trains, cooks, conserves water and introduces travelers to its surroundings. That difference matters.
 

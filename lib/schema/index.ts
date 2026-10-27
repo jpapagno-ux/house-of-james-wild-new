@@ -1,4 +1,4 @@
-import { SITE } from "../site";
+import { SITE, FOUNDER_YEARS } from "../site";
 import { absoluteUrl } from "../seo";
 
 // Schema.org builders, one per type the blueprint names. Every page emits a
@@ -45,6 +45,8 @@ export function founder(): Thing {
     name: SITE.founder.name,
     alternateName: SITE.founder.alternateName,
     jobTitle: SITE.founder.jobTitle,
+    description: `Founder of James Wild & Co: ${FOUNDER_YEARS} years on the road, exploring since ${SITE.exploringSince}, designing journeys since ${SITE.designingSince}, sailing since ${SITE.sailingSince} and advising on safaris since ${SITE.safariSince}. Every stay, safari camp, voyage and route in the Ledger is vetted in person.`,
+    knowsAbout: ["Luxury safari planning", "Small-ship and phinisi voyages", "Raja Ampat", "Komodo National Park", "Costa Rica", "Botswana", "South Africa", "Scuba diving", "Surf travel", "Family and multigenerational travel"],
     worksFor: { "@id": ids.house },
     url: absoluteUrl("/about/founder"),
   };

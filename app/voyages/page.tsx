@@ -20,7 +20,7 @@ export default function VoyagesHub() {
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
       <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small Ships and Sailing Yachts, Never the Big Ones" intro={V.intro} browse={V.browse}
-        answer={`James Wild & Co's Voyages volume files ${LEDGER_COUNTS.vessels} small ships and sailing yachts and the voyages they sail, from phinisis in Raja Ampat and Komodo to expedition ships in the polar regions. Each voyage lists its ports in order, the cabins and the fare per person, and James has sailed many of them himself since 1989.`}
+        answer={`James Wild & Co's Voyages volume files ${LEDGER_COUNTS.vessels} small ships and sailing yachts and the voyages they sail, from phinisis in Raja Ampat and Komodo to expedition ships in the polar regions. Each voyage lists its ports in order, the cabins and the fare per person, and James, 44 years on the road and sailing since 1989, has sailed many of them himself: Aliikai through Raja Ampat in November 2024 among them.`}
         filling="Ship pages, cabin by cabin, and 2027–2028 departures fill from the Ledger export as each voyage page is built.">
         <HubSection eyebrow="Indonesia" title="Aboard Aliikai" id="aliikai-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{voyages.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>

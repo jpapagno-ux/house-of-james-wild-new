@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { FOUNDER_YEARS, SITE } from "@/lib/site";
+import FounderProof from "@/components/record/FounderProof";
 import { ShortFilmPanel } from "@/components/media/ShortFilm";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
@@ -61,7 +63,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const dayNo = (n: string) => parseInt(n.replace(/\D/g, ""), 10);
 
   const nav: [string, string][] = voyage
-    ? [["The vessel", "vessel"], ["In short", "overview"], ["The voyage", "route"], ["Dates & rates", "departures"], [T.founder.navLabel ?? "Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
+    ? [["The vessel", "vessel"], ["In short", "overview"], ...(T.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["The voyage", "route"], ["Dates & rates", "departures"], [T.founder.navLabel ?? "Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
     : [["In short", "overview"], ["The route", "route"], ["Experiences", "experiences"], ["Who it suits", "suits"], ["Day by day", "days"], ["Included", "included"], ["The stays", "stays"], ["Price", "price"], ["The founder", "founder"], ["FAQ", "faq-heading"]];
 
   // "From" price: the lowest per-person option on file, with what it's based on.
@@ -114,13 +116,29 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
+  const FirstTime = T.firstTime ? (
+    <Sec id="first-time">
+      <SectionHead eyebrow={T.firstTime.eyebrow} title={T.firstTime.title} icon="sun" intro={T.firstTime.intro} />
+      <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {T.firstTime.points.map(([h, b], i) => (
+          <li key={h} className="border ledger-border p-5 h-full">
+            <p className="font-mono text-[11px] tracking-[0.14em] ledger-crimson">{String(i + 1).padStart(2, "0")}</p>
+            <h3 className="ledger-display text-[20px] mt-1">{h}</h3>
+            <p className="mt-2 text-[15px] leading-relaxed ledger-muted">{b}</p>
+          </li>
+        ))}
+      </ol>
+    </Sec>
+  ) : null;
+
   const Overview = (
     <Sec id="overview">
       <SectionHead eyebrow="In short" title={T.overview_title} icon="sun" />
       <div className="mt-6 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-start">
         <div>
-          <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}{T.bestFor && ` Best suited to ${T.bestFor.who.toLowerCase()}.`}</p>
+          <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}{T.bestFor && ` Best suited to ${T.bestFor.who.charAt(0).toLowerCase()}${T.bestFor.who.slice(1)}.`}</p>
           <blockquote className="mt-6 border-l-2 border-crimson pl-5 ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.replace(/^"|"$/g, "")}&rdquo;<span className="block not-italic text-[14px] ledger-muted mt-2 font-serif">— James Wild</span></blockquote>
+          {T.proof && <FounderProof proof={T.proof} className="mt-8" />}
         </div>
         <dl className="ledger-paper border ledger-border p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[14.5px]">
           <dt className="ledger-eyebrow col-span-2 mb-1">{strip(T.ledgerline)}</dt>
@@ -435,6 +453,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
             {T.herofacts.map(([k, v]) => <div key={k}><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5">{v}</dd></div>)}
           </dl>
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
+          <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> Vetted in person by James Wild · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>
         </div>
         <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
           <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% tax.</span> : !T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>
@@ -445,8 +464,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const order = voyage
-    ? [Vessel, Overview, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
-    : [Overview, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
+    ? [Vessel, Overview, FirstTime, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
+    : [Overview, FirstTime, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
   return (
     <div className={voyage ? "theme-sea theme-sea-page" : undefined}>

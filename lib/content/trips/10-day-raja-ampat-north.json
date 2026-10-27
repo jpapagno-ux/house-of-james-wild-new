@@ -372,11 +372,11 @@
   ],
   [
    "Departures",
-   "Fixed dates · 2027 and 2028 · coming soon"
+   "Fixed dates · 22 Feb, 11 & 21 Nov, 20 Dec 2027"
   ],
   [
    "Cabins",
-   "For 2 · family cabins for 3–4"
+   "7 cabins for 2 · the Asmat bow cabin for 3"
   ],
   [
    "Season",
@@ -393,7 +393,7 @@
  "heroalt": "Photo placeholder: Aliikai at anchor among the Raja Ampat karsts",
  "herolabel": "HERO PHOTO · ALIIKAI AMONG THE KARSTS · OWNER IMAGE",
  "quote": "\"Set sail on a ten-day voyage aboard Aliikai through Raja Ampat's legendary reefs and wild islands.\"",
- "answer": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. Fixed departures sail in 2027 and 2028.",
+ "answer": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. In 2027 it sails on 22 February, 11 and 21 November and 20 December, from US$7,650 per person plus 11% tax. James sailed it aboard Aliikai in November 2024.",
  "striptitle": "Ten days at a glance",
  "strip": [
   [
@@ -938,6 +938,10 @@
    "From US$7,650 per person for the 9 nights in an ocean-view cabin with portholes (2027 published rate, double occupancy), plus 11% tax. Deluxe ocean-view cabins with windows are US$8,910 and the owner's cabins with private balconies US$10,350. All meals, guided diving and snorkelling, water sports and Sorong transfers are included. Travelling solo, the single supplement is 50% of the nightly rate."
   ],
   [
+   "Is this a good first trip to Raja Ampat?",
+   "Yes. It's the route we recommend for a first visit: the classic northern sights (Wayag, the Passage, Penemu and the mantas at Arborek) on one Sorong round trip, in the calm season from October to April, with airport transfers, meals, guided snorkelling and diving included. James sailed it aboard Aliikai in November 2024."
+  ],
+  [
    "When is the best time to sail Raja Ampat?",
    "October to April, when the seas are calmest and the visibility is at its best. In 2027 this route sails on 22 February, 11 and 21 November and 20 December."
   ],
@@ -1105,6 +1109,11 @@
   "Each sailing = an Event/Offer with startDate"
  ],
  "suits": [
+  [
+   "First-time Raja Ampat travellers",
+   "Come for the postcard. Stay for everything under it.",
+   "The classic northern loop in the calm season, with every transfer handled from Sorong."
+  ],
   [
    "Divers and snorkellers",
    "Pack your own mask. Leave room for the mantas.",
@@ -1457,9 +1466,11 @@
  "seo": {
   "path": "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "title": "10-Day Raja Ampat Liveaboard Cruise Aboard Aliikai",
-  "description": "A 10-day Raja Ampat liveaboard aboard the phinisi Aliikai: Wayag, the mantas at Arborek and guided diving. Best for divers and snorkellers. Cabins for 2, family cabins for 3–4.",
+  "description": "A 10-day Raja Ampat liveaboard aboard the phinisi Aliikai: Wayag, the Passage and Arborek's mantas. Built for a first Raja Ampat, sailed by the founder. From US$7,650 pp, 2027.",
   "keywords": [
    "Raja Ampat liveaboard",
+   "first time Raja Ampat",
+   "Raja Ampat itinerary 10 days",
    "Raja Ampat cruise",
    "Raja Ampat phinisi",
    "Wayag Raja Ampat",
@@ -1478,7 +1489,10 @@
    "url": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
    "description": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. Shared departures in 2027 sail on 22 February, 11 and 21 November and 20 December, from US$7,650 per person.",
    "touristType": [
-    "Divers and snorkellers"
+    "First-time Raja Ampat travellers",
+    "Divers and snorkellers",
+    "Couples",
+    "Families"
    ],
    "provider": {
     "@type": "TravelAgency",
@@ -1698,15 +1712,23 @@
      "name": "How is this voyage priced?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "US$4,830 per person for a shared cabin in the 2026/27 season, based on double occupancy, including all meals, guided diving and snorkelling, water sports and Sorong transfers. 2027 and 2028 rates are posted with the departures."
+      "text": "From US$7,650 per person for the 9 nights in an ocean-view cabin with portholes (2027 published rate, double occupancy), plus 11% tax. Deluxe ocean-view cabins with windows are US$8,910 and the owner's cabins with private balconies US$10,350. All meals, guided diving and snorkelling, water sports and Sorong transfers are included. Travelling solo, the single supplement is 50% of the nightly rate."
      }
     },
     {
      "@type": "Question",
-     "name": "When does the voyage sail?",
+     "name": "Is this a good first trip to Raja Ampat?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "On fixed departures in 2027 and 2028, during the Raja Ampat season from about October to April, when the seas are calmest and the visibility is at its best."
+      "text": "Yes. It's the route we recommend for a first visit: the classic northern sights (Wayag, the Passage, Penemu and the mantas at Arborek) on one Sorong round trip, in the calm season from October to April, with airport transfers, meals, guided snorkelling and diving included. James sailed it aboard Aliikai in November 2024."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When is the best time to sail Raja Ampat?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "October to April, when the seas are calmest and the visibility is at its best. In 2027 this route sails on 22 February, 11 and 21 November and 20 December."
      }
     },
     {
@@ -1714,12 +1736,12 @@
      "name": "Can families sail together?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Some cabins take two; family cabins take three to four, so a family can share one cabin [confirm minimum ages for diving]."
+      "text": "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests [confirm minimum ages for diving]."
      }
     },
     {
      "@type": "Question",
-     "name": "Do I need to dive?",
+     "name": "Is a Raja Ampat liveaboard good for non-divers?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers [confirm courses aboard]."
@@ -1786,8 +1808,8 @@
   "cta": "Read why this voyage ↓"
  },
  "bestFor": {
-  "who": "Divers and snorkellers",
-  "why": "Guided diving with Nitrox, and snorkelling every day for those who stay on top."
+  "who": "First-time Raja Ampat travellers",
+  "why": "The classic northern loop, Wayag, the Passage and Arborek's mantas, in the calm season, with the crew handling everything from Sorong airport."
  },
  "tag": {
   "kind": "Voyage tag",
@@ -1806,5 +1828,37 @@
   "nudge": "why this voyage",
   "note": "Sailed it. Would again. JW",
   "cta": "Read why this voyage ↓"
+ },
+ "proof": "James sailed this route aboard Aliikai with his son in November 2024. It's the Raja Ampat voyage he would book again.",
+ "firstTime": {
+  "eyebrow": "Your first Raja Ampat",
+  "title": "Built for a First Raja Ampat",
+  "intro": "Raja Ampat is a long way to go to guess. This route takes the guesswork out of a first visit.",
+  "points": [
+   [
+    "The classic north, in one loop",
+    "Wayag's karst lagoons, the Passage, the Penemu lookout and the mantas at Arborek: the sights that made Raja Ampat famous, on a single Sorong round trip."
+   ],
+   [
+    "Calm-season dates",
+    "It sails October to April, when the seas are calmest and the water clearest. In 2027: 22 February, 11 and 21 November, and 20 December."
+   ],
+   [
+    "Met at the airport",
+    "The crew meets you at Sorong airport and drives you twenty minutes to the harbour. There is nothing to arrange between landing and lunch on deck."
+   ],
+   [
+    "No need to dive",
+    "Snorkelling, kayaks and paddleboards every day. Diving is guided, with Nitrox, for certified divers who want it."
+   ],
+   [
+    "Small and unhurried",
+    "Seven cabins, fourteen guests, a crew of twelve and an expedition leader. The anchorages are quiet; the pace is yours."
+   ],
+   [
+    "Sailed by the founder",
+    "James sailed this route in November 2024 and has been designing journeys since 1983. It's the Raja Ampat voyage he would book again."
+   ]
+  ]
  }
 }

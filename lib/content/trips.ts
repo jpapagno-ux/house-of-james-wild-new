@@ -44,6 +44,10 @@ export type Trip = {
   images?: Record<string, TripImg>;
   tag?: TagInfo;
   bestFor?: { who: string; why: string };
+  /** The founder's testimony for this page: when he went, or plainly that he hasn't. */
+  proof?: string;
+  /** Why the route suits a first visit to the destination. */
+  firstTime?: { eyebrow: string; title: string; intro: string; points: [string, string][] };
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
 };
 

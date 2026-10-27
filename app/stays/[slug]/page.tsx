@@ -33,7 +33,8 @@ import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
 import { BEST_FOR, STAY_PAGES, staysIn, stayBySlug, pageReady } from "@/lib/content/stays";
 import { regionBySlug } from "@/lib/content/regions";
-import { stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
+import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
+import FounderProof from "@/components/record/FounderProof";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -117,6 +118,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
+          {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} className="mt-10 max-w-3xl" />}
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}

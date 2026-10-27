@@ -67,3 +67,18 @@ export function statusLine(status?: HouseStatus | null, date?: string | null): s
       return null;
   }
 }
+
+/** The founder's testimony for a record, from house_status only. Null when he hasn't been. */
+export function founderProof(name: string, status?: HouseStatus | null, date?: string | null): string | null {
+  const year = date ? date.slice(0, 4) : "";
+  switch (status) {
+    case "founder_returned":
+      return `James has stayed at ${name} and gone back: a founder favourite${year ? `, most recently in ${year}` : ""}.`;
+    case "founder_visited":
+      return `James stayed at ${name}${year ? ` in ${year}` : ""} before filing it in the Ledger.`;
+    case "founder_vetted":
+      return `James inspected ${name} in person${year ? ` in ${year}` : ""} and approved it for the Ledger.`;
+    default:
+      return null;
+  }
+}

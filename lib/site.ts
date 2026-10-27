@@ -21,6 +21,7 @@ export const SITE = {
     email: "james@jameswildco.com", // James's own address, shown on Meet James
   },
   exploringSince: "1982",
+  sailingSince: "1989",
   designingSince: "1983",
   safariSince: "2011",
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
@@ -197,3 +198,6 @@ export const LEGAL_NAV: NavLink[] = [
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
 ];
+
+/** Years on the road (exploring since 1982). The house says "44 years" in 2026. */
+export const FOUNDER_YEARS = 44;

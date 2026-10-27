@@ -59,6 +59,17 @@ export const ALIIKAI_SHIP = {
   depNote: T.dep_note,
   depSource: T.departures!.source,
   charter: { rate: 10900, text: "The whole yacht, up to 15 guests, crewed and catered: US$10,900 a night plus 11% tax. Minimum 7 nights in Raja Ampat, 3 nights in Komodo. Your route, your dates." },
+  proof: "James sailed Raja Ampat aboard Aliikai with his son in November 2024, ten days from Sorong to the Wayag karsts and back. It's the Raja Ampat voyage he would book again.",
+  // Best-suited travellers, first-timers first, each pointed at the voyage that fits them.
+  suits: [
+    { who: "First-time Raja Ampat travellers", line: "The classic northern loop in the calm season, every transfer handled from Sorong.", href: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", voyage: "10 Day Raja Ampat North" },
+    { who: "First-timers to Indonesia", line: "Padar, Pink Beach, the mantas and the dragons in four nights, an hour's flight from Bali.", href: "/voyages/komodo/aliikai-5-day-komodo-island", voyage: "5 Day Komodo Island" },
+    { who: "Divers and snorkellers", line: "A full dive centre with Nitrox, guided dives, and snorkelling every day for those who stay on top." },
+    { who: "Couples", line: "Seven cabins, dinner on deck and the owner's cabins' private balconies at sunset." },
+    { who: "Families", line: "Every cabin takes two, the Asmat bow cabin takes a third, and the upper cabins convert to twins." },
+    { who: "Private groups", line: "Charter the whole yacht for up to 15 and draw your own route.", href: "#charter", voyage: "Private charter" },
+  ] as { who: string; line: string; href?: string; voyage?: string }[],
+  firstTime: { ...((ra as unknown as Trip).firstTime!), title: "Your First Raja Ampat, Aboard Aliikai" },
   founder: {
     title: "Sailed before it was filed",
     p1: "James sailed Raja Ampat aboard Aliikai in November 2024, ten days from Sorong to the Wayag karsts and back, with his son.",
@@ -66,6 +77,7 @@ export const ALIIKAI_SHIP = {
   },
   faqs: [
     ["How much does a voyage on Aliikai cost?", `2027 shared voyages run from US$${low.toLocaleString("en-US")} per person for 3 nights in Komodo to US$${high.toLocaleString("en-US")} for the 11-night crossing between Sorong and Ambon, in an ocean-view cabin with portholes, double occupancy, plus 11% tax. By the night, per person: US$850 in an ocean-view cabin, US$990 in a deluxe ocean-view cabin with windows and US$1,150 in an owner's cabin with a private balcony. Travelling solo, the single supplement is 50% of the nightly rate.`],
+    ["Is Aliikai a good choice for a first trip to Raja Ampat?", "Yes. Her 10 Day Raja Ampat North is the route we recommend for a first visit: Wayag, the Passage, Penemu and the mantas at Arborek on one Sorong round trip, in the calm season, with airport transfers, meals and guided snorkelling and diving included. James sailed it aboard her in November 2024, and he has been designing journeys since 1983."],
     ["Where and when does Aliikai sail?", "Komodo National Park from May to September (with two whale shark voyages in July), the Spice Islands of the Banda Sea in October, and Raja Ampat from November to April, with crossings between Sorong and Ambon in April and late October."],
     ["How many guests does Aliikai take?", "Up to 14 guests on shared voyages and 15 on a private charter, in seven en-suite, air-conditioned cabins over three decks. Every cabin takes two; the Asmat bow cabin takes a third."],
     ["Can we charter Aliikai privately?", "Yes. The whole yacht is US$10,900 a night plus 11% tax for up to 15 guests, with a minimum of 7 nights in Raja Ampat and 3 nights in Komodo. The route is yours to draw."],

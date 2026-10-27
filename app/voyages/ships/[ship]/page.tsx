@@ -9,6 +9,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import Signature from "@/components/record/Signature";
+import FounderProof from "@/components/record/FounderProof";
 import { FounderStamp, Overview, RecordHero, RecordNav, SectionHead, WhyChose } from "@/components/record/Sections";
 import { GalleryMosaic, GlanceBar, RecordActionBar } from "@/components/record/Frame";
 import { ALIIKAI_SHIP } from "@/lib/content/ships/aliikai";
@@ -72,10 +73,40 @@ export default async function ShipPage({ params }: P) {
         <RecordHero film={film} image={s.gallery[0]} eyebrow={`Wild & Co Voyages · The vessel · ${s.ledgerId}`} title={s.name} tagline={s.tagline}
           stamp={<FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />}
           glance={<GlanceBar glance={{ price: { amount: usd(s.low), basis: "per person, 2027 · + 11% tax" }, facts: [["Cabins", "7 · 14 guests"], ["Waters", "Raja Ampat · Komodo"], ["Charter", "US$10,900 a night"]], photos: s.gallery.length, cta: { label: "See 2027 dates", href: "#departures" } }} />} />
-        <RecordNav items={[["In short", "overview"], ["Photos", "gallery"], ["Life aboard", "aboard"], ["Cabins", "cabins"], ["The voyages", "voyages"], ["2027 dates", "departures"], ["Charter", "charter"], ["Sailed by James", "founder"], ["FAQ", "faq-heading"]]} cta="Ask about Aliikai" ctaHref="/plan?trip=Aliikai" />
+        <RecordNav items={[["In short", "overview"], ["Who she suits", "suits"], ["First Raja Ampat", "first-time"], ["Photos", "gallery"], ["Life aboard", "aboard"], ["Cabins", "cabins"], ["The voyages", "voyages"], ["2027 dates", "departures"], ["Charter", "charter"], ["Sailed by James", "founder"], ["FAQ", "faq-heading"]]} cta="Ask about Aliikai" ctaHref="/plan?trip=Aliikai" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: s.path }]} /></div>
           <Overview quote={s.quote} answer={s.answer} facts={s.facts} paragraphs={[s.blurb]} />
+          <FounderProof proof={s.proof} className="mt-10 max-w-3xl" />
+
+          {/* Who she suits, first-timers first */}
+          <section id="suits" className={SEC}>
+            <SectionHead eyebrow="Who Aliikai suits" title="Best Suited To" icon="sun" intro="The travellers she's right for, and the voyage that fits each." />
+            <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {s.suits.map((x) => (
+                <li key={x.who} className="border ledger-border p-5 h-full flex flex-col">
+                  <h3 className="ledger-display text-[20px]">{x.who}</h3>
+                  <p className="mt-2 text-[15px] leading-relaxed ledger-muted flex-1">{x.line}</p>
+                  {x.href && <Link href={x.href} className="mt-4 ledger-btn-ghost self-start">{x.voyage} →</Link>}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Why her Raja Ampat route works for a first visit */}
+          <section id="first-time" className={SEC}>
+            <SectionHead eyebrow={s.firstTime.eyebrow} title={s.firstTime.title} icon="wave" intro={s.firstTime.intro} />
+            <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {s.firstTime.points.map(([h, b], i) => (
+                <li key={h} className="border ledger-border p-5 h-full">
+                  <p className="font-mono text-[11px] tracking-[0.14em] ledger-crimson">{String(i + 1).padStart(2, "0")}</p>
+                  <h3 className="ledger-display text-[20px] mt-1">{h}</h3>
+                  <p className="mt-2 text-[15px] leading-relaxed ledger-muted">{b}</p>
+                </li>
+              ))}
+            </ol>
+            <Link href="/voyages/raja-ampat/aliikai-10-day-raja-ampat-north" className="mt-6 ledger-btn ledger-btn--solid">See the 10 Day Raja Ampat North</Link>
+          </section>
 
           <GalleryMosaic images={s.gallery} title={s.name} />
           <WhyChose eyebrow={s.why.eyebrow} title={s.why.title} blocks={[...s.why.paragraphs.map((b) => ({ body: b })), ...s.onlyHere.map((b) => ({ body: b }))]}

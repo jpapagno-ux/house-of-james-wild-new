@@ -96,6 +96,9 @@ grants in R9 are not yet narrowed.
 rates go in. The `is_sample` guard makes the shared database safe for now; a
 separate staging database is what the spec's environment separation asks for.
 
+Owner commercial rules (commission, rate basis, advisor split) live in
+[`COMMERCIAL-RULES.md`](./COMMERCIAL-RULES.md) and apply to every phase.
+
 ## Known limits (next phases)
 
 - The Advisor Desk screens live in Base44 (Phase 3 dashboards); today advisors

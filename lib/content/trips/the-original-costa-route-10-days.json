@@ -1,11 +1,11 @@
 {
- "title": "The Original Costa Route · 10 Days",
+ "title": "The Original Costa Route: Over the Border · 10 Days",
  "H": 10400,
  "crumbs": [
   "Home",
   "Overland",
   "Costa Rica",
-  "The Original Costa Route · 10 Days"
+  "The Original Costa Route: Over the Border"
  ],
  "side": [
   [
@@ -40,8 +40,8 @@
   ]
  ],
  "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2027-[______]</span>",
- "h1": "The Original Costa Route",
- "h1note": "H1 · title tag: 10-Day Costa Rica and Panama Itinerary: The Original Costa Route",
+ "h1": "The Original Costa Route: Over the Border",
+ "h1note": "H1 · title tag: Over the Border: 10-Day Costa Rica and Panama Itinerary",
  "sub": "10 Days · 9 Nights · Costa Rica to Panama, by land",
  "meta": [
   [
@@ -83,7 +83,7 @@
  "heroalt": "A balcony looking over the cloud forest at Senda Monteverde",
  "herolabel": "",
  "quote": "\"Leave a day for Dominical. That's where I started, and the waves still don't care who you are.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
- "answer": "The Original Costa Route is a 10-day Costa Rica and Panama itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
+ "answer": "The Original Costa Route: Over the Border is a 10-day Costa Rica and Panama itinerary, a deviation from the original from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
  "striptitle": "Ten days at a glance",
  "strip": [
   [
@@ -135,7 +135,7 @@
   "Home"
  ],
  "dayeyebrow": "Day by day",
- "daytitle": "The Original Costa Route",
+ "daytitle": "The Original Costa Route: Over the Border",
  "staylabel": "Stay",
  "movelabel": "Getting there",
  "days": [
@@ -373,8 +373,8 @@
   ],
   [
    "JW-CR-F10C · 10 DAYS",
-   "The Original Costa Route · Coast to Coast",
-   "The Caribbean at Aguas Claras, the cloud forest, then the Pacific."
+   "The Original Costa Route: Both Coasts",
+   "A deviation: the Caribbean at Aguas Claras, the cloud forest, then the Pacific."
   ],
   [
    "THE COLLECTION",
@@ -386,7 +386,7 @@
  "ctabtn": "Plan This Journey",
  "slides": [
   {
-   "kicker": "The Original Costa Route · 10 days",
+   "kicker": "The Original Costa Route: Over the Border · 10 days",
    "title": "Cloud forest, Pacific, then Panama by land",
    "line": "Three Cayuga hotels, a border crossed by road, and an island to finish.",
    "photo": "",
@@ -774,7 +774,7 @@
  ],
  "seo": {
   "path": "/overland/costa-rica/the-original-costa-route-10-days",
-  "title": "10-Day Costa Rica and Panama Itinerary: The Original Costa Route",
+  "title": "Over the Border: 10-Day Costa Rica and Panama Itinerary",
   "description": "10 days from Costa Rica to Panama by land on Cayuga hotels: Senda Monteverde, Arenas del Mar, then Isla Palenque. A surf day at Dominical on the way. Designed by James Wild, surf travel since 1992.",
   "keywords": [
    "10 day Costa Rica and Panama itinerary",
@@ -793,9 +793,9 @@
    "@context": "https://schema.org",
    "@type": "TouristTrip",
    "@id": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-10-days#trip",
-   "name": "The Original Costa Route",
+   "name": "The Original Costa Route: Over the Border",
    "url": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-10-days",
-   "description": "The Original Costa Route is a 10-day Costa Rica and Panama itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
+   "description": "The Original Costa Route: Over the Border is a 10-day Costa Rica and Panama itinerary, a deviation from the original from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
    "touristType": [
     "Families with children"
    ],
@@ -934,7 +934,7 @@
  "tag": {
   "kind": "Stamped by James Wild",
   "title": "Costa Rica · Panama",
-  "ledger": "The Original Costa Route",
+  "ledger": "The Original Costa Route: Over the Border",
   "no": "F10",
   "date": "circa 1992",
   "coords": "N 8°49′ · W 83°20′",

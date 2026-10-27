@@ -140,7 +140,7 @@ export default async function CollectionPage({ params }: P) {
                 {routes.map((t) => (
                   <li key={t.id}><Link href={t.seo.path} className="group block h-full border ledger-border hover:border-crimson/60 transition-colors p-5 md:p-6">
                     <p className="ledger-eyebrow ledger-crimson">{t.herofacts[0]?.[1]} · {t.meta.find(([k]) => k === "Journey code")?.[1]}</p>
-                    <h3 className="ledger-display text-[1.35rem] leading-tight mt-1">{t.sub.split(" · ").slice(2).join(" · ") || t.sub}</h3>
+                    <h3 className="ledger-display text-[1.35rem] leading-tight mt-1">{t.h1}</h3><p className="text-[14px] ledger-muted mt-0.5">{t.sub}</p>
                     <p className="text-[14px] ledger-muted mt-1">{t.herofacts[1]?.[1]}</p>
                     <p className="mt-3 text-[15.5px] leading-relaxed">{t.slides[0]?.line}</p>
                     <span className="mt-4 inline-flex items-center gap-2 ledger-crimson text-[15px]">See the route <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>

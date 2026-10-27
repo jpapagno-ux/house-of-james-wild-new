@@ -1,11 +1,11 @@
 {
- "title": "The Original Costa Route · 10 Days",
+ "title": "The Original Costa Route: Both Coasts · 10 Days",
  "H": 10400,
  "crumbs": [
   "Home",
   "Overland",
   "Costa Rica",
-  "The Original Costa Route · 10 Days"
+  "The Original Costa Route: Both Coasts"
  ],
  "side": [
   [
@@ -40,8 +40,8 @@
   ]
  ],
  "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2027-[______]</span>",
- "h1": "The Original Costa Route",
- "h1note": "H1 · title tag: 10-Day Costa Rica Coast to Coast Itinerary: The Original Costa Route",
+ "h1": "The Original Costa Route: Both Coasts",
+ "h1note": "H1 · title tag: Both Coasts: 10-Day Costa Rica Coast to Coast Itinerary",
  "sub": "10 Days · 9 Nights · Costa Rica, Caribbean to Pacific",
  "meta": [
   [
@@ -83,7 +83,7 @@
  "heroalt": "The Caribbean coast and reef near Playa Chiquita from the air",
  "herolabel": "",
  "quote": "\"Leave a day for Dominical. That's where I started, and the waves still don't care who you are.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
- "answer": "The Original Costa Route, Coast to Coast, is a 10-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
+ "answer": "The Original Costa Route: Both Coasts is a 10-day Costa Rica itinerary, a deviation from the original from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
  "striptitle": "Ten days at a glance",
  "strip": [
   [
@@ -135,7 +135,7 @@
   "Home"
  ],
  "dayeyebrow": "Day by day",
- "daytitle": "The Original Costa Route",
+ "daytitle": "The Original Costa Route: Both Coasts",
  "staylabel": "Stay",
  "movelabel": "Getting there",
  "days": [
@@ -372,8 +372,8 @@
   ],
   [
    "JW-CRPA-F10 · 10 DAYS",
-   "The Original Costa Route · 10 days",
-   "Arenas del Mar, then by land to Panama's Isla Palenque."
+   "The Original Costa Route: Over the Border",
+   "A deviation: Arenas del Mar, then by land to Panama's Isla Palenque."
   ],
   [
    "THE COLLECTION",
@@ -385,7 +385,7 @@
  "ctabtn": "Plan This Journey",
  "slides": [
   {
-   "kicker": "The Original Costa Route · Coast to Coast",
+   "kicker": "The Original Costa Route: Both Coasts · 10 days",
    "title": "Caribbean, cloud forest, Pacific",
    "line": "Three Cayuga hotels across the whole country, with a board waiting on both coasts.",
    "photo": "",
@@ -759,7 +759,7 @@
  ],
  "seo": {
   "path": "/overland/costa-rica/the-original-costa-route-coast-to-coast",
-  "title": "10-Day Costa Rica Coast to Coast Itinerary: The Original Costa Route",
+  "title": "Both Coasts: 10-Day Costa Rica Coast to Coast Itinerary",
   "description": "10 days across Costa Rica on Cayuga hotels: Aguas Claras on the Caribbean, Senda Monteverde, then Arenas del Mar on the Pacific, with a surf day on each coast. Designed by James Wild, surf travel since 1992.",
   "keywords": [
    "10 day Costa Rica coast to coast itinerary",
@@ -778,9 +778,9 @@
    "@context": "https://schema.org",
    "@type": "TouristTrip",
    "@id": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-coast-to-coast#trip",
-   "name": "The Original Costa Route",
+   "name": "The Original Costa Route: Both Coasts",
    "url": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-coast-to-coast",
-   "description": "The Original Costa Route, Coast to Coast, is a 10-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
+   "description": "The Original Costa Route: Both Coasts is a 10-day Costa Rica itinerary, a deviation from the original from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
    "touristType": [
     "Returning Costa Rica travellers"
    ],
@@ -891,7 +891,7 @@
  "tag": {
   "kind": "Stamped by James Wild",
   "title": "Costa Rica",
-  "ledger": "The Original Costa Route",
+  "ledger": "The Original Costa Route: Both Coasts",
   "no": "F10C",
   "date": "circa 1992",
   "coords": "N 9°40′ · W 82°45′",

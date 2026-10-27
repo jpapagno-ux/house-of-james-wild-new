@@ -361,6 +361,10 @@
   [
    "Are there offers on this route?",
    "Often. In 2026 Aguas Claras has stay 4 nights, pay 3 (not in October) if you add a night, Senda Monteverde has stay 3 nights, pay 2, and booking Senda and Arenas del Mar together brings a free room upgrade, subject to availability."
+  ],
+  [
+   "How much does The Original Costa Route: Both Coasts cost?",
+   "From $2,510 per person in the green season (May to November) and from $3,575 in the dry season (December to April), two sharing. That covers the hotels as listed, with taxes, and a private driver for every road leg. Christmas and New Year are priced separately, and we confirm the rate for your dates when you enquire."
   ]
  ],
  "reltitle": "From the same guide",
@@ -466,8 +470,8 @@
  "overview_title": "The whole country, coast to coast, the founder's way",
  "dates_head": [
   "Rates",
-  "Priced to your dates",
-  "Offers applied when they fit"
+  "From $2,510 per person",
+  "Green season, two sharing; dry season from $3,575"
  ],
  "suits": [
   [
@@ -629,16 +633,27 @@
   }
  ],
  "calc": {
-  "title": "Price",
-  "optlabel": "",
-  "note": "Priced to your dates.",
+  "title": "Build your price",
+  "optlabel": "Choose your season",
+  "note": "Per person, two sharing. Includes the hotels as listed (entry room, taxes included) and a private driver for every road leg. Christmas and New Year are priced separately.",
   "soloNote": "Travelling solo: single supplement on request.",
   "maxG": 8,
+  "taxRate": 0,
   "opts": [
    {
-    "label": "As filed",
-    "sub": "Priced to your dates",
-    "pp": 0,
+    "label": "Green season",
+    "sub": "May to November",
+    "pp": 2510,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   },
+   {
+    "label": "Dry season",
+    "sub": "December to April",
+    "pp": 3575,
     "photo": "",
     "sleeps": "",
     "bed": "",
@@ -646,33 +661,7 @@
     "feats": ""
    }
   ],
-  "adds": [
-   {
-    "label": "Surf Dominical, or the secret spot",
-    "sub": "A board sized for you and a local surf guide [confirm]",
-    "pp": 0
-   },
-   {
-    "label": "The Pavones call",
-    "sub": "If the swell is running when you leave, cancel the flight and head south; we rebook you",
-    "pp": 0
-   },
-   {
-    "label": "Charter flight across the country",
-    "sub": "Caribbean to Monteverde, to shorten Day 4 [confirm]",
-    "pp": 0
-   },
-   {
-    "label": "A fourth night at Aguas Claras",
-    "sub": "So the stay 4, pay 3 offer can apply",
-    "pp": 0
-   },
-   {
-    "label": "Caribbean beach ride",
-    "sub": "Two hours with a local guide",
-    "pp": 0
-   }
-  ]
+  "adds": []
  },
  "kind": "overland",
  "experiences": [

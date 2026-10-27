@@ -362,6 +362,10 @@
   [
    "Are there offers on this route?",
    "Often. In 2026 Senda Monteverde has stay 3 nights, pay 2; booking Senda and Arenas del Mar together brings a free room upgrade, subject to availability; and Isla Palenque has stay 5 nights, pay 4 if you add two nights. We apply whatever fits your dates."
+  ],
+  [
+   "How much does The Original Costa Route: Over the Border cost?",
+   "From $3,805 per person in the green season (May to November) and from $5,320 in the dry season (December to April), two sharing. That covers the hotels as listed, with taxes, and a private driver for every road leg. Christmas and New Year are priced separately, and we confirm the rate for your dates when you enquire."
   ]
  ],
  "reltitle": "From the same guide",
@@ -472,8 +476,8 @@
  "overview_title": "Two countries, three Cayuga hotels, one border by road",
  "dates_head": [
   "Rates",
-  "Priced to your dates",
-  "Offers applied when they fit"
+  "From $3,805 per person",
+  "Green season, two sharing; dry season from $5,320"
  ],
  "suits": [
   [
@@ -636,16 +640,27 @@
   }
  ],
  "calc": {
-  "title": "Price",
-  "optlabel": "",
-  "note": "Priced to your dates.",
+  "title": "Build your price",
+  "optlabel": "Choose your season",
+  "note": "Per person, two sharing. Includes the hotels as listed (entry room, taxes included) and a private driver for every road leg. Christmas and New Year are priced separately. Boat to Isla Palenque and the Panama-side driver [to confirm].",
   "soloNote": "Travelling solo: single supplement on request.",
   "maxG": 8,
+  "taxRate": 0,
   "opts": [
    {
-    "label": "As filed",
-    "sub": "Priced to your dates",
-    "pp": 0,
+    "label": "Green season",
+    "sub": "May to November",
+    "pp": 3805,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   },
+   {
+    "label": "Dry season",
+    "sub": "December to April",
+    "pp": 5320,
     "photo": "",
     "sleeps": "",
     "bed": "",
@@ -653,33 +668,7 @@
     "feats": ""
    }
   ],
-  "adds": [
-   {
-    "label": "Surf Dominical, or the secret spot",
-    "sub": "A board sized for you and a local surf guide [confirm]",
-    "pp": 0
-   },
-   {
-    "label": "The Pavones call",
-    "sub": "If the swell is running when you leave, cancel the flight and head south; we rebook you",
-    "pp": 0
-   },
-   {
-    "label": "Manuel Antonio with a naturalist",
-    "sub": "Morning in the national park",
-    "pp": 0
-   },
-   {
-    "label": "Two more nights on Isla Palenque",
-    "sub": "Makes it five, so the stay 5, pay 4 offer can apply",
-    "pp": 0
-   },
-   {
-    "label": "Monteverde night walk",
-    "sub": "Frogs and sleeping birds by torchlight",
-    "pp": 0
-   }
-  ]
+  "adds": []
  },
  "kind": "overland",
  "experiences": [

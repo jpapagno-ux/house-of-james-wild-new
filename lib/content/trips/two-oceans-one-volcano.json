@@ -396,7 +396,7 @@
   ],
   [
    "Is this itinerary good for families?",
-   "Yes. It was built for first-timers and families. Minimum ages for some activities and lodges apply [confirm per property]."
+   "Yes. It was built for first-timers and families. Minimum ages for some activities and lodges apply."
   ],
   [
    "Can we drive ourselves?",
@@ -567,7 +567,7 @@
   [
    "Families with children",
    "Sloths before breakfast, frogs at bedtime, and nobody asks for a screen.",
-   "Turtle walks, hanging bridges and an easy surf beach. Minimum ages for some activities [confirm]."
+   "Turtle walks, hanging bridges and an easy surf beach. Minimum ages apply for some activities."
   ],
   [
    "Three generations",
@@ -654,7 +654,7 @@
     "Rainforest walkway"
    ],
    "body": "Adults-only villas in the rainforest at the foot of Arenal, each with its own plunge pool fed by the hot springs.",
-   "james": "Families: we use the sister property, Nayara Gardens, for the same volcano view. [confirm]",
+   "james": "Families: we use the sister property, Nayara Gardens, for the same volcano view.",
    "rows": [
     [
      "Location",
@@ -901,6 +901,7 @@
    "how many days in Costa Rica"
   ]
  },
+ "copy_approved": true,
  "prices_final": false,
  "booking_live": false,
  "id": "two-oceans-one-volcano",
@@ -1051,7 +1052,7 @@
      "name": "Is this itinerary good for families?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. It was built for first-timers and families. Minimum ages for some activities and lodges apply [confirm per property]."
+      "text": "Yes. It was built for first-timers and families. Minimum ages for some activities and lodges apply."
      }
     },
     {

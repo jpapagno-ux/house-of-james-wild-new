@@ -947,11 +947,11 @@
   ],
   [
    "Can families sail together?",
-   "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests [confirm minimum ages for diving]."
+   "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests. Minimum ages apply for diving."
   ],
   [
    "Is a Raja Ampat liveaboard good for non-divers?",
-   "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers [confirm courses aboard]."
+   "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers."
   ],
   [
    "Can the route be customised?",
@@ -1056,7 +1056,7 @@
   [
    "Vessel",
    "Sun deck and lounge",
-   "Shade by day, stars by night. [confirm]"
+   "Shade by day, stars by night."
   ],
   [
    "Vessel",
@@ -1127,7 +1127,7 @@
   [
    "Families",
    "A sofa bed in the bow cabin, twins on request, and a paddleboard for whoever wakes first.",
-   "Snorkelling, kayaks, village visits and jungle waterfalls. Diving ages [confirm]."
+   "Snorkelling, kayaks, village visits and jungle waterfalls. Minimum ages apply for diving."
   ],
   [
    "Photographers",
@@ -1149,7 +1149,7 @@
   [
    "Always online",
    "Out here the signal comes and goes. Consider it a feature.",
-   "Connectivity aboard is limited [confirm with the owner]."
+   "Aliikai is connected aboard, but out among the islands the signal can still drop."
   ]
  ],
  "exp_title": "In the water, ashore and on deck",
@@ -1477,6 +1477,7 @@
    "best time to visit Raja Ampat"
   ]
  },
+ "copy_approved": true,
  "prices_final": false,
  "booking_live": false,
  "id": "10-day-raja-ampat-north",
@@ -1736,7 +1737,7 @@
      "name": "Can families sail together?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests [confirm minimum ages for diving]."
+      "text": "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests. Minimum ages apply for diving."
      }
     },
     {
@@ -1744,7 +1745,7 @@
      "name": "Is a Raja Ampat liveaboard good for non-divers?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers [confirm courses aboard]."
+      "text": "No. Snorkelling, kayaking and paddleboarding are part of every day. Diving is guided for certified divers."
      }
     },
     {

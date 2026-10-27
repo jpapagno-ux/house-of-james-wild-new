@@ -10,7 +10,7 @@ import { SAMPLE_ALIIKAI } from "./preview/aliikai";
 // and it appears in its place on the page; labels without one keep the marked frame.
 // Page plumbing for the route pages: which trip lives at which URL, the map
 // figure, photos already in the library, and metadata. Pages stay noindex
-// until James marks prices final (trip.prices_final).
+// until James approves the copy (trip.copy_approved; the Ledger Proofs sheet).
 
 export const byPath = (p: string): Trip | undefined => Object.values(TRIPS).find((t) => t.seo.path === p);
 export const paramsFor = (kind: Trip["kind"]) => Object.values(TRIPS).filter((t) => t.kind === kind).map((t) => t.seo.path.split("/").filter(Boolean).slice(1));
@@ -22,7 +22,7 @@ export function mapHtml(t: Trip) {
 }
 
 export function tripMetadata(t: Trip): Metadata {
-  return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, noindex: !t.prices_final }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
+  return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, noindex: !t.copy_approved }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
 }
 
 // Library photos (Aliikai's owner images, imported from wildearthstays.com),

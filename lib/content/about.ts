@@ -8,7 +8,9 @@
 // road and the "mistakes" lines are drafted in James's voice from his own
 // brief (go someplace new, what's around the corner, search on a whim, go on
 // your own, leave days unplanned, plan last minute, mistakes). All copy is
-// pending his sign-off; the pages stay noindex until then.
+// pending his sign-off; the pages stay noindex until then. The rules of the
+// road and the mistakes lines were approved 27 Oct 2026; the rest of the
+// About and Founder copy is still to go on the Proofs sheet.
 //
 // Fixes against the samples: always "Exploring since 1982" (the samples
 // said "Established"); first Eleuthera trip 1982 per the memoir (the About

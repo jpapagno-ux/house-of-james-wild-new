@@ -1,7 +1,8 @@
 // The Verdict: advisory and witty, in James Wild's voice, the seasoned
 // traveller's call on a place (rewritten 26 Oct 2026 from James's field
 // notes so it advises rather than reminisces). Only places James has
-// stayed get a verdict; the card stays off everywhere else.
+// stayed get a verdict; the card stays off everywhere else. Verdicts and
+// sign-off lines approved by James on the Ledger Proofs sheet, 27 Oct 2026.
 export type VerdictTag = "Worth your time?" | "Look closer" | "After dark" | "Unexpected beauty" | "Curiosity" | "The dead end";
 export type Verdict = { where: string; when: string; text: string[]; tags: VerdictTag[]; signoff?: string; sketch?: "cheetah" };
 // Pencil sketches for the notes, drawn by a friend of James and used with

@@ -29,8 +29,8 @@ type P = { params: Promise<{ ship: string }> };
 export async function generateMetadata({ params }: P) {
   const s = SHIPS[(await params).ship as keyof typeof SHIPS];
   if (!s) return {};
-  // Hidden from search until James signs off, like the voyage pages (flip noindex then).
-  return { ...buildMetadata({ title: s.seo.title, description: s.seo.description, path: s.path, noindex: true, image: { url: FILMS.aliikai.poster, alt: FILMS.aliikai.alt } }), keywords: s.seo.keywords };
+  // Copy approved by James on the Ledger Proofs sheet, 27 Oct 2026.
+  return { ...buildMetadata({ title: s.seo.title, description: s.seo.description, path: s.path, image: { url: FILMS.aliikai.poster, alt: FILMS.aliikai.alt } }), keywords: s.seo.keywords };
 }
 
 const tone = (st: string) => /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";

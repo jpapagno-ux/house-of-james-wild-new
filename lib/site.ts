@@ -197,6 +197,15 @@ export const LEGAL_NAV: NavLink[] = [
 // for the link guard's BUILT list). Grows step by step.
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
+  // Guides: copy signed off by James, 27 Oct 2026.
+  { path: "/destinations/asia/indonesia", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/asia/indonesia/raja-ampat", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/asia/indonesia/komodo", priority: 0.8, changeFrequency: "monthly" },
+  // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
+  { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

@@ -14,7 +14,7 @@ const LEEU = "wildco/south-africa/leeu-estates-franschhoek";
 
 type Moment = { match: RegExp; image: string; alt: string; note?: string };
 
-// Notes are DRAFTED in James Wild's voice for review.
+// Notes drafted in James Wild's voice; approved by James, 27 Oct 2026.
 export const MOMENTS: Record<string, Moment[]> = {
   "leeu-estates": [
     { match: /wine/i, image: pic(`${LEEU}/mullineux-leeu-wine-studio`), alt: "The garden walk to the Mullineux & Leeu wine studio, Leeu Estates", note: "Book the studio tasting early in the stay. You'll spend the rest of it knowing what to order." },

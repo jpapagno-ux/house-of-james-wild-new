@@ -39,7 +39,7 @@ export type Trip = {
   approve: { title: string; seal_bottom: string; seal_mark: string; why: string[]; quote: string };
   faqs: Row[]; reltitle: string; related: [string, string, string][];
   ctaline: string; ctabtn: string;
-  prices_final: boolean; booking_live: boolean;
+  prices_final: boolean; booking_live: boolean; copy_approved?: boolean;
   jsonld: Record<string, unknown>[];
   images?: Record<string, TripImg>;
   tag?: TagInfo;

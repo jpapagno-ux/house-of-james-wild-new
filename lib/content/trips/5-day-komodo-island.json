@@ -706,7 +706,7 @@
   [
    "Vessel",
    "Sun deck and lounge",
-   "Shade by day, stars by night. [confirm]"
+   "Shade by day, stars by night."
   ],
   [
    "Vessel",
@@ -1138,7 +1138,7 @@
   ],
   [
    "Will we see Komodo dragons?",
-   "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised [confirm wording with the owner]."
+   "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised."
   ],
   [
    "Can you snorkel with manta rays in Komodo?",
@@ -1197,6 +1197,7 @@
    "best time to visit Komodo"
   ]
  },
+ "copy_approved": true,
  "prices_final": false,
  "booking_live": false,
  "tag": {
@@ -1420,7 +1421,7 @@
      "name": "Will we see Komodo dragons?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised [confirm wording with the owner]."
+      "text": "The route includes a ranger-led walk on Rinca to see the dragons in their own habitat. They are wild animals, so sightings are likely but never promised."
      }
     },
     {

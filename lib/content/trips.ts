@@ -23,12 +23,15 @@ export type Trip = {
   experiences: { name?: string; title?: string; kicker?: string; info?: string; dur?: string; incl?: string; season?: string; line?: string; chips?: string[]; photos?: string[]; body?: string; james?: string; rows?: Row[] }[];
   lodges_title?: string;
   lodges?: { name: string; line: string; chips: string[]; photos: string[]; body: string; james?: string; rows: Row[] }[];
-  vessel?: { title: string; name: string; blurb: string; facts: Row[] };
+  vessel?: { title: string; name: string; blurb: string; facts: Row[]; source?: string;
+    gallery?: TripImg[];
+    spaces?: { name: string; line: string; body: string; photos: TripImg[] }[];
+    cabins?: { name: string; cat: string; deck: string; bed: string; sleeps: string; feats: string[]; night: number; photos: TripImg[] }[] };
   features: [string, string, string][];
   incl: string[]; excl: string[];
-  calc: { title: string; note: string; maxG?: number; opts: { label: string; sub: string; pp: number; photo: string; sleeps: string; bed: string; size: string; feats: string }[]; adds: { label: string; sub: string; pp: number }[] };
+  calc: { title: string; note: string; maxG?: number; taxRate?: number; soloNote?: string; opts: { label: string; sub: string; pp: number; photo: string; sleeps: string; bed: string; size: string; feats: string }[]; adds: { label: string; sub: string; pp: number }[] };
   dates_head: [string, string, string];
-  departures?: Record<string, { code: string; dates: string; price: string; status: string }[]>;
+  departures?: { source?: string; groups: { name: string; nights: string; this?: boolean; sailings: { date: string; nights: number; price: number; status: string }[] }[] };
   dep_route?: string; dep_cta?: string; dep_season?: string; dep_note?: string;
   founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string };
   approve: { title: string; seal_bottom: string; seal_mark: string; why: string[]; quote: string };

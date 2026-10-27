@@ -2,46 +2,275 @@
  "title": "10 Day Raja Ampat North · voyage",
  "H": 11600,
  "departures": {
-  "2027": [
+  "_this": "Raja Ampat · North & Central · 9 nights",
+  "groups": [
    {
-    "code": "ALK-27-01",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
+    "name": "Raja Ampat · North & Central",
+    "nights": "9 nights",
+    "this": true,
+    "sailings": [
+     {
+      "date": "22 February 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "4 cabins left"
+     },
+     {
+      "date": "11 November 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     },
+     {
+      "date": "21 November 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     },
+     {
+      "date": "20 December 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Full"
+     }
+    ]
    },
    {
-    "code": "ALK-27-02",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
+    "name": "Raja Ampat · North & Central, shorter",
+    "nights": "7 nights",
+    "sailings": [
+     {
+      "date": "2 February 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "11 February 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Full"
+     }
+    ]
    },
    {
-    "code": "ALK-27-03",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
+    "name": "Raja Ampat · South & Central",
+    "nights": "7–9 nights",
+    "sailings": [
+     {
+      "date": "24 January 2027",
+      "nights": 8,
+      "price": 6800,
+      "status": "Cabins available"
+     },
+     {
+      "date": "4 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "13 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "21 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "30 March 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "2 December 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "1 cabin left"
+     },
+     {
+      "date": "30 December 2027",
+      "nights": 9,
+      "price": 7650,
+      "status": "Cabins available"
+     }
+    ]
+   },
+   {
+    "name": "Sorong ↔ Ambon",
+    "nights": "11 nights",
+    "sailings": [
+     {
+      "date": "9 April 2027 · Sorong to Ambon",
+      "nights": 11,
+      "price": 9350,
+      "status": "Cabins available"
+     },
+     {
+      "date": "29 October 2027 · Ambon to Sorong",
+      "nights": 11,
+      "price": 9350,
+      "status": "Cabins available"
+     }
+    ]
+   },
+   {
+    "name": "Spice Islands",
+    "nights": "6–7 nights",
+    "sailings": [
+     {
+      "date": "11 October 2027",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "22 October 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Full"
+     }
+    ]
+   },
+   {
+    "name": "Komodo & whale sharks",
+    "nights": "7 nights",
+    "sailings": [
+     {
+      "date": "6 July 2027 · Komodo & Whale Sharks",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     },
+     {
+      "date": "15 July 2027 · Whale Sharks & Komodo",
+      "nights": 7,
+      "price": 5950,
+      "status": "Cabins available"
+     }
+    ]
+   },
+   {
+    "name": "Komodo National Park",
+    "nights": "3–6 nights",
+    "sailings": [
+     {
+      "date": "22 May 2027 · Bali to Komodo",
+      "nights": 5,
+      "price": 4250,
+      "status": "Full"
+     },
+     {
+      "date": "28 May 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "3 cabins left"
+     },
+     {
+      "date": "3 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "4 cabins left"
+     },
+     {
+      "date": "10 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "16 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "23 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "29 June 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "24 July 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Cabins available"
+     },
+     {
+      "date": "31 July 2027",
+      "nights": 6,
+      "price": 5100,
+      "status": "Full"
+     },
+     {
+      "date": "8 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "14 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Full"
+     },
+     {
+      "date": "21 August 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "28 August 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "2 September 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "7 September 2027",
+      "nights": 5,
+      "price": 4250,
+      "status": "Cabins available"
+     },
+     {
+      "date": "15 September 2027",
+      "nights": 4,
+      "price": 3400,
+      "status": "Cabins available"
+     },
+     {
+      "date": "22 September 2027",
+      "nights": 4,
+      "price": 3400,
+      "status": "Cabins available"
+     },
+     {
+      "date": "28 September 2027",
+      "nights": 3,
+      "price": 2250,
+      "status": "Cabins available"
+     }
+    ]
    }
   ],
-  "2028": [
-   {
-    "code": "ALK-28-01",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
-   },
-   {
-    "code": "ALK-28-02",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
-   },
-   {
-    "code": "ALK-28-03",
-    "dates": "Dates coming soon",
-    "price": "Coming soon",
-    "status": "Coming soon"
-   }
-  ]
+  "source": "aliikai-voyage.com/rates-availability-2027, checked 26 Oct 2026"
  },
  "year0": "2027",
  "endkeys": [
@@ -415,29 +644,286 @@
  "vessel": {
   "title": "Aliikai, in detail",
   "name": "Aliikai",
-  "blurb": "A handcrafted phinisi built for intimate journeys, with the reefs of Raja Ampat as her home water. Every voyage carries a dive team, a cruise director and a crew who know where the mantas feed.",
+  "blurb": "A traditional phinisi hand-built and refitted in 2020 by more than a dozen carpenters in Bulukumba, South Sulawesi, where these boats have been built for centuries. Seven cabins over three decks, a lounge and dining room, a sky deck and an alfresco deck, with a crew of twelve and an expedition leader.",
   "facts": [
    [
     "Type",
-    "Traditional phinisi"
+    "Traditional phinisi, hand-built in Bulukumba, South Sulawesi"
+   ],
+   [
+    "Refit",
+    "2020"
+   ],
+   [
+    "Length",
+    "40m, wooden"
    ],
    [
     "Cabins",
-    "Doubles for 2 · family cabins for 3–4"
+    "7 across 3 decks, all en-suite with air conditioning"
    ],
    [
-    "Cabins aboard",
-    "7 cabins across 3 decks · 40m wooden phinisi"
+    "Guests",
+    "Up to 14 on shared voyages · up to 15 on a private charter"
+   ],
+   [
+    "Crew",
+    "12 Indonesian crew and an expedition leader"
    ],
    [
     "Diving",
-    "Guided · Nitrox aboard"
+    "Full dive centre with Nitrox, a warm shower for night dives and a ventilated camera room"
    ],
    [
     "Ledger",
     "STY-registered vessel"
    ]
-  ]
+  ],
+  "gallery": [
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DJI_0472-1",
+    "alt": "Aliikai under full sail from the air"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/30LilyRose",
+    "alt": "Aliikai's sails set, from above"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/19LilyRose",
+    "alt": "Aliikai at anchor at sunset"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4287-scaled-1",
+    "alt": "Aliikai's bow and name at sunset"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A3749-scaled-1",
+    "alt": "On deck under sail"
+   },
+   {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4261-scaled-1",
+    "alt": "Aliikai at anchor as the light goes"
+   }
+  ],
+  "spaces": [
+   {
+    "name": "Main deck lounge & dining",
+    "line": "Air-conditioned, wrap-around windows",
+    "body": "An indoor lounge and dining room for meals and the midday heat, with wrap-around windows. Glass doors fold open to the covered outdoor lounge and dining deck, with day beds and sofas for dinner under the stars.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-edit-9786-scaled-1",
+      "alt": "The main deck lounge aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/23LilyRose",
+      "alt": "Lunch laid under the awning on deck"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-pre-selection-9634-copy-2",
+      "alt": "The alfresco dining deck"
+     }
+    ]
+   },
+   {
+    "name": "The upper lounge",
+    "line": "Morning yoga, open-air cinema at night",
+    "body": "The upper deck lounge is for yoga in the morning breeze and doing very little all afternoon. After dark the crew turns it into an open-air cinema, popcorn included.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/Alikai-interior-edit-9600-copy-scaled-1",
+      "alt": "The shaded upper deck lounge"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/21LilyRose",
+      "alt": "Evening on deck by lantern light"
+     }
+    ]
+   },
+   {
+    "name": "Dive centre",
+    "line": "Nitrox · warm shower · camera room",
+    "body": "Room to set up kit before every dive, a warm shower after night dives, and a ventilated camera room for working on the day's pictures.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A4208-scaled-1",
+      "alt": "Tanks racked in the dive centre aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Crew & kitchen",
+    "line": "12 crew, an expedition leader and a chef",
+    "body": "Twelve Indonesian crew and an expedition leader run the voyage and know the hidden anchorages. The chef cooks from locally sourced Indonesian ingredients.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/ALIIKAI-17-scaled-1",
+      "alt": "Service on deck aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/14LilyRose",
+      "alt": "Breakfast laid out aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Water toys",
+    "line": "Kayaks and paddleboards",
+    "body": "Kayaks and stand-up paddleboards go over the side most days, for the lagoons and the shallow water round the islands.",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/7U7A3852-scaled-1",
+      "alt": "Paddleboarding off Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/ALIIKAI-5-scaled-1",
+      "alt": "Kayaks and a paddleboard over the reef, from above"
+     }
+    ]
+   }
+  ],
+  "cabins": [
+   {
+    "name": "Owner's Cabin · Fam",
+    "cat": "Owner's Cabin",
+    "deck": "Main deck, at the stern",
+    "bed": "King (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Private balcony",
+     "En-suite bathroom",
+     "Writing desk",
+     "Air conditioning"
+    ],
+    "night": 1150,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM2",
+      "alt": "Fam owner's cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM4",
+      "alt": "The Fam cabin's private balcony over the sea"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCFAM3",
+      "alt": "Inside the Fam owner's cabin"
+     }
+    ]
+   },
+   {
+    "name": "Owner's Cabin · Kei",
+    "cat": "Owner's Cabin",
+    "deck": "Upper deck, at the stern",
+    "bed": "King (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Private balcony",
+     "En-suite bathroom",
+     "Writing desk",
+     "Air conditioning"
+    ],
+    "night": 1150,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI3-min-1920x1280-1",
+      "alt": "Kei owner's cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI9-min-1920x1280-1",
+      "alt": "The Kei cabin's king bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCKEI7-min-1920x1280-1",
+      "alt": "The Kei cabin's private balcony"
+     }
+    ]
+   },
+   {
+    "name": "Deluxe Ocean View · Koon & Savu",
+    "cat": "Ocean view with windows",
+    "deck": "Upper deck",
+    "bed": "Queen (converts to twin)",
+    "sleeps": "2",
+    "feats": [
+     "Sea-view windows",
+     "En-suite bathroom",
+     "Air conditioning",
+     "Koon sits at the end of the hallway: no one walks by"
+    ],
+    "night": 990,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV1-min-1920x1280-1",
+      "alt": "Deluxe ocean-view cabin with windows aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV2-min-1920x1306-1",
+      "alt": "Deluxe ocean-view cabin made up as twins"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DLXOCV3-min-1920x1280-1",
+      "alt": "Deluxe ocean-view cabin aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Ocean View · Dayak & Abui",
+    "cat": "Ocean view with portholes",
+    "deck": "Lower deck",
+    "bed": "Queen",
+    "sleeps": "2",
+    "feats": [
+     "Portholes",
+     "En-suite bathroom",
+     "Air conditioning"
+    ],
+    "night": 850,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC1-min-1920x1280-1",
+      "alt": "Ocean-view cabin with portholes aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC2-min-1920x1280-1",
+      "alt": "Ocean-view cabin with portholes, queen bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/OCVC3-min-1920x1237-1",
+      "alt": "Ocean-view cabin aboard Aliikai"
+     }
+    ]
+   },
+   {
+    "name": "Bow Cabin · Asmat",
+    "cat": "Ocean view with portholes",
+    "deck": "Lower deck, in the bow",
+    "bed": "Queen + sofa bed",
+    "sleeps": "3",
+    "feats": [
+     "Portholes",
+     "Sofa converts to a single bed",
+     "En-suite bathroom",
+     "Air conditioning"
+    ],
+    "night": 850,
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC1-min-1920x1259-1",
+      "alt": "The Asmat bow cabin aboard Aliikai"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC2-min-1920x1298-1",
+      "alt": "The Asmat bow cabin's queen bed"
+     },
+     {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/FMLYC3-min-1920x1280-1",
+      "alt": "The Asmat bow cabin and its sofa bed"
+     }
+    ]
+   }
+  ],
+  "source": "aliikai-voyage.com, 26 Oct 2026"
  },
  "founder": {
   "eyebrow": "Vetted & sailed by the founder",
@@ -449,15 +935,15 @@
  "faqs": [
   [
    "How is this voyage priced?",
-   "US$4,830 per person for a shared cabin in the 2026/27 season, based on double occupancy, including all meals, guided diving and snorkelling, water sports and Sorong transfers. 2027 and 2028 rates are posted with the departures."
+   "From US$7,650 per person for the 9 nights in an ocean-view cabin with portholes (2027 published rate, double occupancy), plus 11% tax. Deluxe ocean-view cabins with windows are US$8,910 and the owner's cabins with private balconies US$10,350. All meals, guided diving and snorkelling, water sports and Sorong transfers are included. Travelling solo, the single supplement is 50% of the nightly rate."
   ],
   [
    "When is the best time to sail Raja Ampat?",
-   "On fixed departures in 2027 and 2028, during the Raja Ampat season from about October to April, when the seas are calmest and the visibility is at its best."
+   "October to April, when the seas are calmest and the visibility is at its best. In 2027 this route sails on 22 February, 11 and 21 November and 20 December."
   ],
   [
    "Can families sail together?",
-   "Yes. Some cabins take two; family cabins take three to four, so a family can share one cabin [confirm minimum ages for diving]."
+   "Yes. Every cabin takes two, the Asmat bow cabin takes a third on a sofa bed, and the king and queen beds in the upper cabins convert to twins. A larger family can charter the whole yacht for up to 15 guests [confirm minimum ages for diving]."
   ],
   [
    "Is a Raja Ampat liveaboard good for non-divers?",
@@ -608,15 +1094,15 @@
    "Sorong, return"
   ],
   [
-   "Departures",
-   "2027 · 2028 · coming soon"
+   "2027 sailings",
+   "Feb · Nov · Dec"
   ]
  ],
  "overview_title": "The reefs at the end of the map",
  "dates_head": [
-  "Fixed departures",
-  "Dates & rates · 2027 and 2028",
-  "Each sailing = an Event/Offer with startDate once posted"
+  "Departures",
+  "2027 dates & rates",
+  "Each sailing = an Event/Offer with startDate"
  ],
  "suits": [
   [
@@ -631,7 +1117,7 @@
   ],
   [
    "Families",
-   "Family cabins for three to four, and a paddleboard for whoever wakes first.",
+   "A sofa bed in the bow cabin, twins on request, and a paddleboard for whoever wakes first.",
    "Snorkelling, kayaks, village visits and jungle waterfalls. Diving ages [confirm]."
   ],
   [
@@ -661,62 +1147,40 @@
  "calc": {
   "title": "Build your voyage price",
   "optlabel": "Choose your cabin",
-  "opt0": 1,
-  "note": "Price is based on the cabin you select, per person, double occupancy (2).",
-  "soloNote": "Travelling solo: single supplement on request.",
+  "opt0": 2,
+  "note": "2027 published rates, per person, double occupancy, for 9 nights. 11% tax added.",
+  "soloNote": "Travelling solo: single supplement of 50% of the nightly rate.",
   "maxG": 8,
   "opts": [
    {
-    "label": "Master Suite",
-    "sub": "The largest cabin aboard",
-    "pp": 5650,
-    "minG": 1,
-    "maxG": 2,
-    "photo": "Master suite",
+    "label": "Owner's Cabin",
+    "sub": "Fam or Kei · king · private balcony",
+    "pp": 10350,
+    "photo": "Owner's Cabin · Kei",
     "sleeps": "Sleeps 2",
-    "bed": "King [confirm]",
-    "size": "[m²] · main deck",
-    "feats": "En-suite, sea view [confirm]",
-    "note": "Doubles: 2 per cabin"
+    "bed": "King (converts to twin)",
+    "size": "Main or upper deck, at the stern",
+    "feats": "Private balcony · writing desk"
    },
    {
-    "label": "Deluxe Double",
-    "sub": "The rate on file, 2026/27",
-    "pp": 4830,
-    "minG": 1,
-    "maxG": 2,
-    "photo": "Deluxe double cabin",
+    "label": "Deluxe Ocean View",
+    "sub": "Koon or Savu · windows · upper deck",
+    "pp": 8910,
+    "photo": "Deluxe Ocean View · Koon & Savu",
     "sleeps": "Sleeps 2",
-    "bed": "Double [confirm]",
-    "size": "[m²] · [deck]",
-    "feats": "En-suite [confirm]",
-    "note": "Doubles: 2 per cabin"
+    "bed": "Queen (converts to twin)",
+    "size": "Upper deck",
+    "feats": "Sea-view windows"
    },
    {
-    "label": "Twin Cabin",
-    "sub": "Two single beds",
-    "pp": 4830,
-    "minG": 1,
-    "maxG": 2,
-    "photo": "Twin cabin",
-    "sleeps": "Sleeps 2",
-    "bed": "2 singles [confirm]",
-    "size": "[m²] · [deck]",
-    "feats": "En-suite [confirm]",
-    "note": "Twins: 2 per cabin"
-   },
-   {
-    "label": "Family Cabin",
-    "sub": "For a family of three or four",
-    "pp": 4350,
-    "minG": 3,
-    "maxG": 4,
-    "photo": "Family cabin",
-    "sleeps": "Sleeps 3–4",
-    "bed": "Double + bunks [confirm]",
-    "size": "[m²] · [deck]",
-    "feats": "En-suite [confirm]",
-    "note": "Family cabin: 3–4 guests · child rates [confirm]"
+    "label": "Ocean View, portholes",
+    "sub": "Dayak, Abui or the Asmat bow cabin · lower deck",
+    "pp": 7650,
+    "photo": "Ocean View · Dayak & Abui",
+    "sleeps": "Sleeps 2 (Asmat 3)",
+    "bed": "Queen",
+    "size": "Lower deck",
+    "feats": "Portholes"
    }
   ],
   "adds": [
@@ -735,7 +1199,9 @@
     "sub": "For your group, every dive",
     "pp": 650
    }
-  ]
+  ],
+  "taxRate": 0.11,
+  "source": "aliikai-voyage.com, 26 Oct 2026"
  },
  "kind": "voyage",
  "experiences": [
@@ -986,8 +1452,8 @@
  ],
  "dep_route": "Sorong → Sorong",
  "dep_cta": "Be first to hear →",
- "dep_season": "Season runs October to April, when the seas are calmest.",
- "dep_note": "Cabins sleep two, and family cabins take three to four. Private charter of the whole vessel is quoted by sailing year.",
+ "dep_season": "Raja Ampat season runs October to April, when the seas are calmest. Aliikai spends the middle of the year in Komodo and the Spice Islands.",
+ "dep_note": "Shared voyages are priced per person, double occupancy, plus 11% tax. Or charter the whole yacht (up to 15 guests): US$10,900 a night plus 11% tax, minimum 7 nights in Raja Ampat (3 in Komodo).",
  "seo": {
   "path": "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "title": "10-Day Raja Ampat Liveaboard Cruise Aboard Aliikai",
@@ -1010,7 +1476,7 @@
    "@id": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north#trip",
    "name": "10 Day Raja Ampat North",
    "url": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
-   "description": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. Fixed departures sail in 2027 and 2028.",
+   "description": "10 Day Raja Ampat North is a ten-day voyage aboard Aliikai, a handcrafted phinisi, from Sorong through Indonesia's Raja Ampat: the Kri peninsula, the Passage, Penemu, Wayag, Wofoh, Arborek's mantas, Mansuar and the waterfalls of Batanta. Diving and snorkelling with Nitrox, kayaks, all meals and park fees are included. Shared departures in 2027 sail on 22 February, 11 and 21 November and 20 December, from US$7,650 per person.",
    "touristType": [
     "Divers and snorkellers"
    ],
@@ -1207,6 +1673,20 @@
      "jobTitle": "Chief Expedition Officer"
     },
     "reviewBody": "James sailed Raja Ampat aboard Aliikai in November 2024; this is the route he would book again. A small phinisi gets into the bays and passages the big ships pass by, with a dive team aboard every day. Cabins for two and family cabins for three to four make it work for couples and families alike. “The only traffic jam in Raja Ampat is mantas. I waited in it happily, twice.”"
+   },
+   "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": 7650,
+    "highPrice": 10350,
+    "offerCount": 4,
+    "availability": "https://schema.org/LimitedAvailability",
+    "description": "Per person, double occupancy, 9 nights, plus 11% tax (2027 published rates)",
+    "seller": {
+     "@type": "TravelAgency",
+     "name": "James Wild & Co",
+     "url": "https://www.jameswildco.com"
+    }
    }
   },
   {

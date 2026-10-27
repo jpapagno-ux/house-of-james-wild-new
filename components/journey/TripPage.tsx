@@ -245,32 +245,61 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   ) : null;
 
-  const Vessel = voyage && T.vessel ? (
+  const V = T.vessel;
+  const nights = T.days.length - 1;
+  const Vessel = voyage && V ? (
     <Sec id="vessel">
-      <SectionHead eyebrow="The vessel" title={T.vessel.title} icon="wave" intro={T.vessel.blurb} />
-      <div className="mt-8 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-start">
+      <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
+      {V.gallery && V.gallery.length > 0 && (
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">
+          {V.gallery.slice(0, 5).map((g, i) => <Ph key={g.url} img={g} label={g.alt} className={i === 0 ? "col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-full" : "aspect-[4/3] md:aspect-auto md:h-full"} sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />)}
+        </div>
+      )}
+      <div className="mt-8 grid lg:grid-cols-[1fr_1.25fr] gap-8 items-start">
         <dl className="ledger-paper border ledger-border p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[14.5px]">
-          {T.vessel.facts.map(([k, v]) => <div key={k} className="contents"><dt className="ledger-muted">{k}</dt><dd><Fx t={v} /></dd></div>)}
+          {V.facts.map(([k, v]) => <div key={k} className="contents"><dt className="ledger-muted">{k}</dt><dd><Fx t={v} /></dd></div>)}
         </dl>
-        <ul className="grid gap-3 sm:grid-cols-2">
-          {T.features.map(([, t, l]) => <li key={t} className="border ledger-border">{images[t] && <Ph img={images[t]} label={t} className="aspect-[16/10] w-full" sizes="(max-width: 768px) 100vw, 25vw" />}<div className="p-4"><p className="ledger-display text-[17px]">{t}</p><p className="text-[14px] ledger-muted"><Fx t={l} /></p></div></li>)}
-        </ul>
+        {V.spaces && (
+          <div>
+            <p className="ledger-eyebrow">Life aboard</p>
+            <div className="mt-3 space-y-2">
+              {V.spaces.map((sp, i) => (
+                <details key={sp.name} className="group border ledger-border open:border-crimson/50 open:bg-paper-card" open={i === 0}>
+                  <summary className="cursor-pointer list-none flex items-center gap-3 px-4 py-3 hover:bg-paper-card [&::-webkit-details-marker]:hidden">
+                    <span className="flex-1 min-w-0"><span className="block ledger-display text-[18px]">{sp.name}</span><span className="block text-[13px] ledger-muted">{sp.line}</span></span>
+                    <ChevronDown className="w-5 h-5 shrink-0 ledger-crimson transition-transform group-open:rotate-180" strokeWidth={1.5} aria-hidden="true" />
+                  </summary>
+                  <div className="px-4 pb-4">
+                    <p className="text-[15px] leading-relaxed">{sp.body}</p>
+                    <div className={`mt-3 grid gap-2 ${sp.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>{sp.photos.slice(0, 2).map((ph) => <Ph key={ph.url} img={ph} label={ph.alt} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 50vw, 25vw" />)}</div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
       <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32">The cabins</h3>
-      <ul className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {T.calc.opts.map((o) => (
-          <li key={o.label} className="border ledger-border">
-            <Ph img={images[o.photo]} label={`PHOTO · ${o.photo.toUpperCase()}`} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 100vw, 25vw" />
-            <div className="p-4 text-[14px]">
-              <p className="ledger-display text-[18px]">{o.label}</p>
-              <p className="ledger-muted">{o.sub}</p>
-              <p className="mt-2">{o.sleeps} · <Fx t={o.bed} /></p>
-              <p><Fx t={o.size} /></p>
-              <p><Fx t={o.feats} /></p>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <p className="mt-1 text-[14px] ledger-muted">Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax.</p>
+      {V.cabins ? (
+        <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {V.cabins.map((c) => (
+            <li key={c.name} className="border ledger-border flex flex-col">
+              <Ph img={c.photos[0]} label={c.name} className="aspect-[3/2] w-full" sizes="(max-width: 768px) 100vw, 33vw" />
+              {c.photos.length > 1 && <div className="grid grid-cols-2 gap-1 mt-1">{c.photos.slice(1, 3).map((ph) => <Ph key={ph.url} img={ph} label={ph.alt} className="aspect-[3/2] w-full" sizes="(max-width: 768px) 50vw, 16vw" />)}</div>}
+              <div className="p-4 flex-1 flex flex-col">
+                <p className="ledger-eyebrow ledger-crimson">{c.cat}</p>
+                <p className="ledger-display text-[20px] mt-0.5">{c.name}</p>
+                <p className="text-[13.5px] ledger-muted mt-1">{c.deck} · {c.bed} · sleeps {c.sleeps}</p>
+                <ul className="mt-2 flex flex-wrap gap-1.5">{c.feats.map((f) => <li key={f} className="text-[11.5px] border ledger-border px-2 py-0.5">{f}</li>)}</ul>
+                <p className="mt-auto pt-4 flex items-baseline justify-between gap-3 border-t ledger-border"><span className="ledger-display ledger-crimson text-[19px]">{usd(c.night)}<span className="text-[12px] ledger-muted font-serif"> / night pp</span></span><span className="text-[13px]">{usd(c.night * nights)} for {nights} nights</span></p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      {T.features.length > 0 && <ul className="mt-8 flex flex-wrap gap-2">{T.features.map(([, t]) => <li key={t} className="text-[12.5px] border ledger-border px-3 py-1">{t}</li>)}</ul>}
+      {V.source && <p className="mt-4 text-[12px] ledger-muted">Yacht, cabin and rate details from {V.source}.</p>}
     </Sec>
   ) : null;
 
@@ -282,24 +311,46 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
+  const tone = (st: string) => /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />
-      {Object.entries(T.departures).map(([yr, rows]) => (
-        <div key={yr} className="mt-6">
-          <p className="ledger-eyebrow ledger-crimson">{yr} · {T.dep_route}</p>
-          <table className="mt-2 w-full text-[14.5px] border-t ledger-border">
-            <thead className="sr-only"><tr><th>Sailing</th><th>Dates</th><th>Price</th><th>Status</th></tr></thead>
-            <tbody>{rows.map((r) => <tr key={r.code} className="border-b ledger-border"><td className="py-2 font-mono text-[12px]">{r.code}</td><td>{r.dates}</td><td>{r.price}</td><td className="text-right"><a href="#enquire" className="ledger-btn-ghost">{T.dep_cta}</a></td></tr>)}</tbody>
-          </table>
-        </div>
-      ))}
+      <div className="mt-8 space-y-2">
+        {T.departures.groups.map((g) => {
+          const open = g.sailings.filter((x) => !/full/i.test(x.status)).length;
+          const from = Math.min(...g.sailings.map((x) => x.price));
+          return (
+            <details key={g.name} className={`group border open:bg-paper-card ${g.this ? "border-crimson" : "ledger-border open:border-crimson/50"}`} open={g.this}>
+              <summary className="cursor-pointer list-none flex flex-wrap items-center gap-x-4 gap-y-1 px-4 md:px-5 py-4 hover:bg-paper-card [&::-webkit-details-marker]:hidden">
+                <span className="flex-1 min-w-[12rem]">
+                  <span className="flex items-center gap-2"><span className="ledger-display text-[19px] md:text-[21px]">{g.name}</span>{g.this && <span className="text-[9.5px] tracking-[0.16em] uppercase border border-crimson ledger-crimson px-1.5 py-0.5">This voyage</span>}</span>
+                  <span className="block text-[13px] ledger-muted">{g.nights} · {g.sailings.length} sailing{g.sailings.length > 1 ? "s" : ""} · {open} with space</span>
+                </span>
+                <span className="text-right"><span className="ledger-eyebrow block">From</span><span className="ledger-display ledger-crimson text-[18px]">{usd(from)}</span></span>
+                <ChevronDown className="w-5 h-5 shrink-0 ledger-crimson transition-transform group-open:rotate-180" strokeWidth={1.5} aria-hidden="true" />
+              </summary>
+              <div className="px-4 md:px-5 pb-4">
+                <div className="hidden md:grid grid-cols-[2fr_0.6fr_1.4fr_1.2fr_auto] gap-3 ledger-eyebrow pb-2"><span>Departs</span><span>Nights</span><span>Per person</span><span>Availability</span><span /></div>
+                <ul>{g.sailings.map((r) => (
+                  <li key={r.date} className="border-t ledger-border py-3 grid grid-cols-[1fr_auto] md:grid-cols-[2fr_0.6fr_1.4fr_1.2fr_auto] gap-x-3 gap-y-1 items-center text-[14.5px]">
+                    <span className="ledger-display text-[16px] md:font-serif md:text-[14.5px]">{r.date}</span>
+                    <span className="hidden md:block">{r.nights}</span>
+                    <span className="order-3 md:order-none">{usd(r.price)} <span className="text-[12px] ledger-muted">+ 11% tax<span className="md:hidden"> · {r.nights} nights</span></span></span>
+                    <span className="order-2 md:order-none justify-self-end md:justify-self-start"><span className={`text-[11.5px] px-2 py-0.5 whitespace-nowrap ${tone(r.status)}`}>{r.status}</span></span>
+                    <span className="order-4 md:order-none justify-self-end">{/full/i.test(r.status) ? <a href={`/plan?trip=${encodeURIComponent(T.h1)}&date=${encodeURIComponent(r.date)}&waitlist=1`} className="ledger-btn-ghost">Waitlist</a> : <a href={`/plan?trip=${encodeURIComponent(`${g.name}, Aliikai`)}&date=${encodeURIComponent(r.date)}`} className="ledger-btn-ghost">Hold a cabin</a>}</span>
+                  </li>))}</ul>
+              </div>
+            </details>
+          );
+        })}
+      </div>
       <p className="mt-4 text-[14px] ledger-muted"><Fx t={T.dep_note ?? ""} /></p>
+      {T.departures.source && <p className="mt-1 text-[12px] ledger-muted">Availability from {T.departures.source}; we confirm it live when you ask.</p>}
     </Sec>
   ) : null;
 
   const Price = (
-    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} maxTravellers={T.calc.maxG ?? 8} contactHref="#enquire" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
+    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="#enquire" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
       options={T.calc.opts.map((o, i) => ({ id: `o${i}`, label: o.label, pp: o.pp, detail: [o.sub, o.sleeps].filter(Boolean).join(" · ") }))}
       addOns={T.calc.adds.map((a, i) => ({ id: `a${i}`, label: a.label, pp: a.pp, detail: a.sub.replace(/\s*\[[^\]]+\]/g, "") }))} />
   );
@@ -364,7 +415,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
         </div>
         <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
-          <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{!T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>
+          <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% tax.</span> : !T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>
           <div className="flex flex-wrap gap-3"><a href="#price" className="ledger-btn ledger-btn--solid !py-2.5">Build your price</a><a href={voyage ? "#departures" : "#days"} className="ledger-btn !py-2.5">{voyage ? "See dates" : "Day by day"}</a></div>
         </div>
       </div>

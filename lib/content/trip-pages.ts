@@ -48,11 +48,11 @@ const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/";
 // so its slides come from the country page and the route's stays in the library.
 export const TRIP_SLIDES: Record<string, TripImg[]> = {
   "10-day-raja-ampat-north": [
-    SAMPLE_ALIIKAI.hero,
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/DJI_0472-1", alt: "Aliikai under full sail from the air" },
     { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Raja Ampat: the Wayag lagoons and karst islands from above" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/28LilyRose", alt: "Aliikai under sail on open water" },
     { url: `${CLD}wildco/voyages/home-hero/03-over-under-reef`, alt: "Raja Ampat: a snorkeller over the reef, half above and half below the water" },
-    { url: `${CDN}/6847928005301fb963e4a458_Aliikai-Paddleboard.webp`, alt: "Paddleboarding a Raja Ampat lagoon from Aliikai" },
-    { url: `${CDN}/68479470c30afaeff22d4c37_Aliikai-InformalSchedule.webp`, alt: "Sunset on Aliikai's deck, Raja Ampat" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/21LilyRose", alt: "Evening on Aliikai's deck by lantern light" },
   ],
   "two-oceans-one-volcano": [
     { url: `${TL}tortuguero-river-mouth-aerial`, alt: "Tortuguero from the air: the river, the rainforest and the Caribbean beyond" },
@@ -72,17 +72,17 @@ export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string
       "PHOTO · KRI REEF": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/raja-ampat-indonesia/destination/diver-fusiliers-reef", alt: "A diver among fusiliers on a Raja Ampat reef" },
       "PHOTO · WOFOH CORAL WALL": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/home-hero/03-over-under-reef", alt: "A Raja Ampat reef and island, above and below the water" },
       "A handcrafted phinisi": SAMPLE_ALIIKAI.hero,
+      "PHOTO · FAREWELL ON DECK": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/19LilyRose", alt: "Aliikai at anchor at sunset" },
+      "Dinner on deck": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/21LilyRose", alt: "Dinner on Aliikai's deck by lantern light" },
       "Dive deck with Nitrox": A.dive,
       "Kayaks and paddleboards": A.sup,
       "Dining on deck": A.deck,
       "PHOTO · PENEMU LOOKOUT": A.trek,
       "PHOTO · WAYAG KARSTS": { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/home-hero/02-raja-ampat-lagoons", alt: "The Wayag lagoons and karst islands from above" },
-      "PHOTO · FAREWELL ON DECK": A.deck,
       "The Wayag peak": A.islands,
       "Guided diving with Nitrox": A.dive,
       "Snorkelling, kayaks and paddleboards": A.sup,
       "Mantas at Arborek": A.snork,
-      "Dinner on deck": A.deck,
     },
   },
   "two-oceans-one-volcano": {

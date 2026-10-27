@@ -1,11 +1,11 @@
 {
- "title": "The Founder's Line Since 1992 · 10 Days",
+ "title": "The Original Costa Route · 7 Days",
  "H": 10400,
  "crumbs": [
   "Home",
   "Overland",
   "Costa Rica",
-  "The Founder's Line · 10 Days"
+  "The Original Costa Route · 7 Days"
  ],
  "side": [
   [
@@ -18,51 +18,45 @@
    "1",
    "Monteverde",
    "Days 1–3",
-   "Private driver to the Pacific"
+   "Private driver south, via Dominical"
   ],
   [
    "2",
-   "Manuel Antonio",
+   "Uvita",
    "Days 4–6",
-   "By road across the border"
-  ],
-  [
-   "3",
-   "Isla Palenque",
-   "Days 7–9",
-   "Boat, then fly from David"
+   "The Whale's Tail and a surf day"
   ],
   [
    "E",
-   "Panama City",
-   "Day 10",
-   "Home through PTY"
+   "Home",
+   "Day 7",
+   "Out through San José"
   ]
  ],
  "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2027-[______]</span>",
- "h1": "The Founder's Line Since 1992",
- "h1note": "H1 · title tag: 10-Day Costa Rica and Panama Itinerary: The Founder's Line Since 1992",
- "sub": "10 Days · 9 Nights · Costa Rica to Panama, by land",
+ "h1": "The Original Costa Route",
+ "h1note": "H1 · title tag: 7-Day Costa Rica Itinerary: The Original Costa Route",
+ "sub": "7 Days · 6 Nights · Costa Rica, cloud forest to the south Pacific",
  "meta": [
   [
    "Journey code",
-   "JW-CRPA-F10"
+   "JW-CR-F07"
   ],
   [
-   "Countries",
-   "Costa Rica · Panama"
+   "Country",
+   "Costa Rica"
   ],
   [
    "Duration",
-   "10 days / 9 nights"
+   "7 days / 6 nights"
   ],
   [
    "Journey type",
-   "Overland · private driver, border crossing, boat"
+   "Overland · private driver"
   ],
   [
    "In · Out",
-   "San José (SJO) · Panama City (PTY)"
+   "San José (SJO)"
   ],
   [
    "Dates",
@@ -70,21 +64,21 @@
   ],
   [
    "Best months",
-   "Dec–Apr dry season"
+   "Dec–Apr dry · whales [season to confirm]"
   ],
   [
    "Vetted by",
    "James Wild · surf travel since 1992"
   ]
  ],
- "mark1": "Surf travel<br>since 1992",
- "mark2": "since 1992",
- "markline": "James has pioneered surf travel in Costa Rica since 1992.",
+ "mark1": "Stamped by<br>James Wild",
+ "mark2": "circa 1992",
+ "markline": "Stamped by James Wild, circa 1992: the Costa Rica he has surfed since the early days.",
  "heroalt": "A balcony looking over the cloud forest at Senda Monteverde",
  "herolabel": "",
  "quote": "\"Leave a day for Dominical. That's where I started, and the waves still don't care who you are.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
- "answer": "The Founder's Line Since 1992 is a 10-day Costa Rica and Panama itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
- "striptitle": "Ten days at a glance",
+ "answer": "The Original Costa Route is a 7-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest and three at Kura, the adults-only hotel above Uvita, with a stop at Dominical, where James has surfed since the early 1990s. You travel by private driver from San José.",
+ "striptitle": "Seven days at a glance",
  "strip": [
   [
    "D1",
@@ -112,30 +106,17 @@
   ],
   [
    "D7",
-   "#1F6268"
-  ],
-  [
-   "D8",
-   "#1F6268"
-  ],
-  [
-   "D9",
-   "#1F6268"
-  ],
-  [
-   "D10",
    "#1F1D1B"
   ]
  ],
- "stripcols": "3fr 3fr 3fr 1fr",
+ "stripcols": "3fr 3fr 1fr",
  "strip_labels": [
   "Monteverde · cloud",
-  "Manuel Antonio · Pacific",
-  "Isla Palenque · Panama",
+  "Uvita · south Pacific",
   "Home"
  ],
  "dayeyebrow": "Day by day",
- "daytitle": "The Founder's Line Since 1992",
+ "daytitle": "The Original Costa Route",
  "staylabel": "Stay",
  "movelabel": "Getting there",
  "days": [
@@ -192,32 +173,32 @@
   },
   {
    "n": "DAY 04",
-   "title": "Down to the Pacific",
-   "line": "Private driver to Manuel Antonio · ~4 hr",
-   "body": "Down from the mountains to the coast. By afternoon you're at Arenas del Mar, where the rainforest runs straight onto two beaches.",
-   "stay": "Arenas del Mar",
+   "title": "Down to Uvita, by way of Dominical",
+   "line": "Private driver to the south Pacific · ~5 hr",
+   "body": "The long drive of the trip, down from the mountains and south along the coast. Lunch at Dominical, where James sat for his 1995 photo, then on to Kura above Uvita.",
+   "stay": "Kura",
    "meals": "[Confirm with the hotel]",
-   "move": "Private driver · ~4 hr",
-   "acts": "Arrival · the beach",
-   "img": "PHOTO · DOWN TO THE PACIFIC",
-   "imgAlt": "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air",
+   "move": "Private driver · ~5 hr",
+   "acts": "Dominical lunch · arrival",
+   "img": "PHOTO · UVITA",
+   "imgAlt": "Kura's infinity pool deck looking over the Pacific at Uvita",
    "head": true,
    "stage": "St 02",
-   "stageName": "Manuel Antonio",
-   "stageMeta": "DAYS 4–6 · 3 NIGHTS · PACIFIC",
+   "stageName": "Uvita",
+   "stageMeta": "DAYS 4–6 · 3 NIGHTS · SOUTH PACIFIC",
    "mark": ""
   },
   {
    "n": "DAY 05",
-   "title": "Manuel Antonio",
-   "line": "The park with a naturalist, then the beach",
-   "body": "Into Manuel Antonio National Park early with a naturalist, for sloths and monkeys before the heat [park days and hours to confirm]. The afternoon is the beach's.",
-   "stay": "Arenas del Mar",
+   "title": "The Whale's Tail",
+   "line": "Low tide on the sandbar",
+   "body": "At low tide the sandbar at Marino Ballena National Park makes the shape of a whale's tail, and you can walk it. In season, a boat goes out for the humpbacks [season and tides to confirm].",
+   "stay": "Kura",
    "meals": "[Confirm with the hotel]",
-   "move": "On foot · short drive",
-   "acts": "National park walk · beach",
-   "img": "PHOTO · MANUEL ANTONIO",
-   "imgAlt": "A long curved beach backed by rainforest, seen from the hillside at Arenas del Mar",
+   "move": "Short drive · on foot · boat in season",
+   "acts": "Whale's Tail walk · whale watching in season",
+   "img": "PHOTO · THE WHALE'S TAIL",
+   "imgAlt": "A humpback whale breaching beside a whale-watching boat",
    "head": false,
    "stage": "",
    "stageName": "",
@@ -226,13 +207,13 @@
   },
   {
    "n": "DAY 06",
-   "title": "The founder's day",
-   "line": "Dominical, and a board if you want one",
-   "body": "South along the coast to Dominical, about 45 minutes, where James sat for his 1995 photo. Lunch by the beach; surfers take the board that's waiting and a local guide to James's break.",
-   "stay": "Arenas del Mar",
+   "title": "The founder's surf day",
+   "line": "Surf Dominical, if it's happening",
+   "body": "A board sized for you is waiting. If Dominical is working, you surf Dominical; if not, a local guide takes you to a secret spot James keeps off the page. Or nothing at all: Kura is adults only and built for doing very little.",
+   "stay": "Kura",
    "meals": "[Confirm with the hotel]",
-   "move": "Private driver · ~45 min each way",
-   "acts": "Dominical · surf · lunch by the beach",
+   "move": "Private driver · short",
+   "acts": "Surf · Kura pool",
    "img": "PHOTO · DOMINICAL, 1995",
    "imgAlt": "Polaroid of James relaxing on a beach in a patterned shirt, Dominical, Costa Rica, 1995",
    "head": false,
@@ -243,66 +224,15 @@
   },
   {
    "n": "DAY 07",
-   "title": "The over-land day",
-   "line": "By road into Panama, then a boat",
-   "body": "South along the coast to the Paso Canoas border, about 3 hours, across on foot with your documents, and met by a Panamanian driver for the run to Boca Chica, about 1.5 hours more. A short boat ride takes you to Isla Palenque [border hours, documents and timings to confirm].",
-   "stay": "Isla Palenque",
-   "meals": "[Confirm with the hotel]",
-   "move": "Private driver · border · boat · most of the day",
-   "acts": "Border crossing · arrival on the island",
-   "img": "PHOTO · THE BORDER ROAD",
-   "imgAlt": "Vintage photograph of a red open-top jeep loaded with surfboards in the early days of Costa Rica surf travel",
-   "head": true,
-   "stage": "St 03",
-   "stageName": "Isla Palenque",
-   "stageMeta": "DAYS 7–9 · 3 NIGHTS · PANAMA",
-   "mark": ""
-  },
-  {
-   "n": "DAY 08",
-   "title": "The island",
-   "line": "Walk it with a guide",
-   "body": "A 400-acre island of primary forest and seven beaches. Walk it with a guide in the morning, visit the island's wood shop, and pick a beach for the afternoon.",
-   "stay": "Isla Palenque",
-   "meals": "[Confirm with the hotel]",
-   "move": "On foot · by boat",
-   "acts": "Guided island walk · wood shop · beaches",
-   "img": "PHOTO · THE ISLAND",
-   "imgAlt": "A guide showing guests a plant on a forest walk at Isla Palenque",
-   "head": false,
-   "stage": "",
-   "stageName": "",
-   "stageMeta": "",
-   "mark": ""
-  },
-  {
-   "n": "DAY 09",
-   "title": "The last beach",
-   "line": "A slow day, then a fire",
-   "body": "Nothing scheduled. In the evening, a fire under the treehouse villa.",
-   "stay": "Isla Palenque",
-   "meals": "[Confirm with the hotel]",
-   "move": "On foot",
-   "acts": "Beaches · fire at night",
-   "img": "PHOTO · LAST BEACH",
-   "imgAlt": "Thatched cabanas among palms at the edge of a quiet beach at Isla Palenque",
-   "head": false,
-   "stage": "",
-   "stageName": "",
-   "stageMeta": "",
-   "mark": ""
-  },
-  {
-   "n": "DAY 10",
-   "title": "Home through Panama City",
-   "line": "Boat, then David to Panama City",
-   "body": "A boat back to the mainland, a short drive to David airport and a domestic flight to Panama City (PTY) for the flight home [flight times to confirm].",
+   "title": "Home",
+   "line": "Out through San José",
+   "body": "The drive back to San José, about 3.5 hours, or a short domestic flight from the south Pacific [confirm], and the flight home. If the swell is running at Pavones, James will tell you before you leave: cancel the flight and head south.",
    "stay": "—",
    "meals": "—",
-   "move": "Boat · drive · domestic flight",
+   "move": "Private driver or domestic flight",
    "acts": "Departure",
-   "img": "PHOTO · ISLA PALENQUE",
-   "imgAlt": "A forested island shore and calm sea from the air at Isla Palenque",
+   "img": "PHOTO · HOME",
+   "imgAlt": "Footprints in the sand on a beach looking out to small islands at Arenas del Mar",
    "head": false,
    "stage": "",
    "stageName": "",
@@ -311,16 +241,14 @@
   }
  ],
  "incl": [
-  "Nine nights at Senda Monteverde, Arenas del Mar and Isla Palenque [room categories on file]",
-  "A private driver for every road leg, with a hand-over at the Panama border",
-  "Boat transfers to and from Isla Palenque",
+  "Six nights at Senda Monteverde and Kura [room categories on file]",
+  "A private driver for every road leg",
+  "Naturalist walk in the Aguti reserve [confirm]",
   "Any current hotel offer that fits your dates, applied at booking",
   "24-hour support from James Wild & Co. while you travel"
  ],
  "excl": [
-  "International flights to San José and home from Panama City",
-  "Domestic flight from David to Panama City [confirm]",
-  "Border fees and any exit tax [confirm]",
+  "International flights to and from San José",
   "Travel insurance",
   "Meals not marked as included [confirm per hotel]",
   "Gratuities for guides and drivers",
@@ -330,46 +258,50 @@
   "eyebrow": "Vetted & designed by the founder",
   "title": "Surf travel since 1992. Cayuga since 1994.",
   "p1": "James has pioneered surf travel in Costa Rica since 1992, when the boards rode on the roof and the coast road was mostly a rumour. He has followed Hans Pfister, Cayuga's co-founder, since 1994, from his early days selling these lodges.",
-  "p2": "This is the long version, and it works for families: the cloud forest, the beach at Manuel Antonio with a day at Dominical, a day by road across the border the way travel used to be done, and three nights on Isla Palenque to finish.",
-  "film": "Founder's film · The Founder's Line Since 1992 [VIDEO TO RECORD]",
+  "p2": "This is the week he'd hand a couple: the cloud forest first, then the quiet south Pacific above Uvita, a board waiting at the coast, and lunch at Dominical, where his 1995 photo was taken.",
+  "film": "Founder's film · The Original Costa Route [VIDEO TO RECORD]",
   "extra": "<a href=\"https://res.cloudinary.com/jhlnq5h5/image/upload/v1792871347/costa-rica-field-guide-james-wild-co.pdf\" target=\"_blank\" rel=\"noopener\" style=\"margin-top: 18px; display: inline-flex; align-items: center; gap: 12px; border: 1px solid #1F1D1B; padding: 12px 16px; text-decoration: none; color: #1F1D1B; background: #F8F9F5\"><span class=\"mono\" style=\"font-size: 10px; border: 1px solid #1F1D1B; padding: 8px 6px\">PDF</span><span><span class=\"mono\" style=\"display: block; font-size: 11px; letter-spacing: .14em; color: #6B4A33\">FIELD GUIDE NO. 03</span><span class=\"disp\" style=\"font-size: 18px\">Costa Rica, the Long Way Round</span></span></a>"
  },
  "faqs": [
   [
-   "Can you travel from Costa Rica to Panama by land?",
-   "Yes. This route crosses at Paso Canoas by private driver, with a Panamanian driver meeting you on the other side. Carry your passport and onward ticket; we confirm current entry rules and border hours before you travel."
+   "Is 7 days enough for Costa Rica?",
+   "Seven days covers two places well: the Monteverde cloud forest and the south Pacific at Uvita. Adding a third usually means more road than holiday. With ten days, take the 10-day version."
   ],
   [
-   "How many days do you need for Costa Rica and Panama?",
-   "Ten days gives three nights to each of three places without rushing the border day. With seven days, stay in Costa Rica and take the 7-day version."
+   "How far is Monteverde from Uvita?",
+   "About five hours by private driver, with lunch at Dominical on the way. It's the only long drive on the route."
   ],
   [
    "Which Cayuga hotels does this route use?",
-   "Senda Monteverde in the cloud forest, Arenas del Mar at Manuel Antonio and Isla Palenque in Panama's Gulf of Chiriquí, all part of the Cayuga Collection."
+   "Senda Monteverde in the cloud forest and Kura above Uvita, both part of the Cayuga Collection."
   ],
   [
-   "Is this route suitable for families?",
-   "Yes. Arenas del Mar suits families and first-timers, Senda's trails suit children who like to explore, and Isla Palenque works for families who want nature and island time."
+   "Is this route good for families?",
+   "Kura is adults only, so this week suits couples. Families should take the 10-day version, which uses Arenas del Mar."
   ],
   [
    "Can I surf on this trip?",
-   "Yes. On the founder's day a board sized for you waits at the coast and a local surf guide takes you to a break James has surfed since the early days."
+   "Yes. A board sized for you waits at the coast and you surf Dominical if it's happening, or a local guide takes you to a secret spot James keeps off the page. Beginners are welcome; the guide picks the spot for the swell."
+  ],
+  [
+   "What is the Pavones call?",
+   "Pavones, near the Panama border, is one of the longest left-hand waves anywhere, and it only really works on the right swell. If it's running when you're due to leave, James will let you know. Cancel your flight, head south, and we'll rebook you home."
   ],
   [
    "Are there offers on this route?",
-   "Often. In 2026 Senda Monteverde has stay 3 nights, pay 2; booking Senda and Arenas del Mar together brings a free room upgrade, subject to availability; and Isla Palenque has stay 5 nights, pay 4 if you add two nights. We apply whatever fits your dates."
+   "Often. In 2026 Senda Monteverde has stay 3 nights, pay 2, and Kura has stay 4 nights, pay 3 if you add a night. We apply whatever fits your dates."
   ]
  ],
  "reltitle": "From the same guide",
  "related": [
   [
-   "JW-CR-F07 · 7 DAYS",
-   "The Founder's Line Since 1992 · 7 days",
-   "Senda Monteverde and Kura, with a day at Dominical."
+   "JW-CRPA-F10 · 10 DAYS",
+   "The Original Costa Route · 10 days",
+   "Arenas del Mar, then by land to Panama's Isla Palenque."
   ],
   [
    "JW-CR-F10C · 10 DAYS",
-   "The Founder's Line Since 1992 · Coast to Coast",
+   "The Original Costa Route · Coast to Coast",
    "The Caribbean at Aguas Claras, the cloud forest, then the Pacific."
   ],
   [
@@ -382,11 +314,11 @@
  "ctabtn": "Plan This Journey",
  "slides": [
   {
-   "kicker": "The Founder's Line Since 1992 · 10 days",
-   "title": "Cloud forest, Pacific, then Panama by land",
-   "line": "Three Cayuga hotels, a border crossed by road, and an island to finish.",
+   "kicker": "The Original Costa Route · 7 days",
+   "title": "Cloud forest, then the south Pacific",
+   "line": "Two Cayuga hotels, lunch at Dominical, and a board waiting at the coast.",
    "photo": "",
-   "bg": "linear-gradient(160deg,#4A5D52 0%,#7C9488 45%,#1F6268 100%)"
+   "bg": "linear-gradient(160deg,#4A5D52 0%,#7C9488 50%,#D9BF85 100%)"
   }
  ],
  "feat_title": "Stays and experiences on this journey",
@@ -397,14 +329,19 @@
    "Cloud forest beside the Aguti reserve."
   ],
   [
+   "Experience",
+   "The cloud forest after dark",
+   "Frogs and sleeping birds by torchlight."
+  ],
+  [
    "Stay",
-   "Arenas del Mar",
-   "Rainforest beside two beaches."
+   "Kura",
+   "Adults only, above Uvita."
   ],
   [
    "Experience",
-   "Manuel Antonio with a naturalist",
-   "Sloths and monkeys before the heat."
+   "The Whale's Tail",
+   "Walk the sandbar at low tide."
   ],
   [
    "Experience",
@@ -413,54 +350,49 @@
   ],
   [
    "Experience",
-   "A board waiting",
-   "And a local guide to James's break."
+   "Surf Dominical",
+   "If it's happening. A secret spot if it isn't."
   ],
   [
    "Experience",
-   "The over-land day",
-   "Costa Rica to Panama by road."
-  ],
-  [
-   "Stay",
-   "Isla Palenque",
-   "400 acres and seven beaches."
+   "The Pavones call",
+   "Cancel your flight if the swell is running."
   ]
  ],
  "approve": {
-  "title": "Two countries, three settings, ten days",
-  "seal_bottom": "COSTA RICA · PANAMA",
-  "seal_mark": "SURF SINCE 1992",
+  "title": "Cloud forest first, ocean second",
+  "seal_bottom": "COSTA RICA · SURF SINCE 1992",
+  "seal_mark": "CAYUGA SINCE 1994",
   "why": [
-   "James has pioneered surf travel in Costa Rica since 1992 and followed Cayuga's founder since 1994; this is the long version of the trip he'd hand a family.",
-   "Three places, three nights each, with the border day as the hinge.",
-   "You cross on the ground, the way travel used to be done, and finish on an island."
+   "James has pioneered surf travel in Costa Rica since 1992 and followed Cayuga's founder since 1994; this is the week he'd hand a couple.",
+   "Two places, three nights each, and only one long drive, broken by lunch at Dominical.",
+   "It finishes on the coast where his Costa Rica began, with a board waiting if you want one."
   ],
-  "quote": "Fly over a border and you miss it. Drive across and you remember which side had the better lunch."
+  "quote": "Leave a day for Dominical. That's where I started, and the waves still don't care who you are."
  },
  "map_eyebrow": "The route, drawn",
- "map_title": "Mountain, sea, border, island",
- "map_coord": "8°49′N 83°20′W · JW-CRPA-F10",
+ "map_title": "Mountain to the south Pacific",
+ "map_coord": "9°16′N 84°10′W · JW-CR-F07",
  "navon": "Overland",
  "herofacts": [
   [
    "Duration",
-   "10 days · 9 nights"
+   "7 days · 6 nights"
   ],
   [
    "Route",
-   "San José → Monteverde → Manuel Antonio → Isla Palenque"
+   "San José → Monteverde → Uvita"
   ],
   [
    "Travel",
-   "Private driver, border crossing, boat"
+   "Private driver"
   ],
   [
    "Best",
    "Dec–Apr dry season"
   ]
  ],
- "overview_title": "Two countries, three Cayuga hotels, one border by road",
+ "overview_title": "The cloud forest and the south Pacific, the founder's way",
  "dates_head": [
   "Rates",
   "Priced to your dates",
@@ -468,14 +400,14 @@
  ],
  "suits": [
   [
-   "Families with children",
-   "Sloths, a beach, a border and an island.",
-   "Arenas del Mar and Isla Palenque both suit families; the drives are split up."
+   "Couples",
+   "A hot pool in the forest, then an infinity pool over the Pacific.",
+   "Kura is adults only, and three nights in each is unhurried."
   ],
   [
-   "First-timers",
-   "The classic Costa Rica, then something nobody else did.",
-   "Cloud forest and Manuel Antonio, then Panama by road."
+   "Honeymooners",
+   "Eight suites and a sandbar shaped like a whale's tail.",
+   "Quiet, private and built for doing very little."
   ],
   [
    "Surfers, old and new",
@@ -483,25 +415,25 @@
    "The founder's surf day is built into the route."
   ],
   [
-   "Couples",
-   "An island with seven beaches to finish.",
-   "Three nights on Isla Palenque is made for slow days."
+   "Returning Costa Rica travellers",
+   "You've done Manuel Antonio. Go further south.",
+   "Uvita is quieter, and the Whale's Tail is worth the drive."
   ]
  ],
  "twice": [
   [
    "In a hurry",
-   "The border is a morning, not a minute.",
-   "Take the 7-day version and stay in Costa Rica."
+   "Seven days, two hotels. Don't add a third.",
+   "If you have ten, take the 10-day version instead."
   ],
   [
    "Limited mobility",
-   "Border queues, boat landings and forest trails.",
-   "Tell us, and we'll arrange help at the border and gentle transfers."
+   "Cloud-forest trails are steep in places and wet in the green season.",
+   "Tell us, and we'll keep the walks short and the transfers gentle."
   ]
  ],
  "exp_title": "What you will do, stop by stop",
- "lodges_title": "Three Cayuga hotels, mountain to island",
+ "lodges_title": "Two Cayuga hotels, mountain and sea",
  "lodges": [
   {
    "name": "Senda Monteverde",
@@ -544,23 +476,23 @@
    ]
   },
   {
-   "name": "Arenas del Mar",
-   "line": "Manuel Antonio · Pacific coast · Days 4–6",
+   "name": "Kura",
+   "line": "Uvita · south Pacific · Days 4–6",
    "chips": [
     "3 nights",
-    "Families welcome",
+    "Adults only",
     "Cayuga Collection"
    ],
    "photos": [
-    "Arenas from the air",
-    "Suite with plunge pool",
-    "The bay at Arenas"
+    "Kura's infinity pool",
+    "Ocean-view suite",
+    "Kura at dusk"
    ],
-   "body": "The only luxury resort in Manuel Antonio right on the beach, Cayuga says: two pools, two beaches and two restaurants on 11 acres of rainforest. Easy for families and first-timers.",
+   "body": "Eight adults-only suites high in the Uvita rainforest, looking over the Whale's Tail sandbar and the Pacific. Cayuga calls it the hotel for the cosmopolitan couple.",
    "rows": [
     [
      "Location",
-     "Manuel Antonio, Pacific coast"
+     "Uvita, south Pacific coast"
     ],
     [
      "Nights",
@@ -576,52 +508,11 @@
     ],
     [
      "Getting there",
-     "Private driver from Monteverde, ~4 hr"
+     "Private driver from Monteverde, ~5 hr"
     ],
     [
      "Stay page",
-     "<a href=\"/stays/arenas-del-mar-resort\">Arenas del Mar</a>"
-    ]
-   ]
-  },
-  {
-   "name": "Isla Palenque",
-   "line": "Gulf of Chiriquí · Panama · Days 7–9",
-   "chips": [
-    "3 nights",
-    "Private island",
-    "Cayuga Collection"
-   ],
-   "photos": [
-    "The island from the air",
-    "Thatched pavilion",
-    "Villa plunge pool"
-   ],
-   "body": "A 400-acre private island of primary forest with seven secluded beaches in Panama's Gulf of Chiriquí. Cayuga calls it the hotel for the curious ones who still believe in wonder.",
-   "rows": [
-    [
-     "Location",
-     "Gulf of Chiriquí, Panama"
-    ],
-    [
-     "Nights",
-     "3 · Days 7–9"
-    ],
-    [
-     "Room",
-     "[Room category on file]"
-    ],
-    [
-     "Meals",
-     "[Confirm with the hotel]"
-    ],
-    [
-     "Getting there",
-     "By road across the border, then a boat from Boca Chica"
-    ],
-    [
-     "Stay page",
-     "<a href=\"/stays/isla-palenque-resort\">Isla Palenque</a>"
+     "<a href=\"/stays/kura-boutique-resort\">Kura</a>"
     ]
    ]
   }
@@ -646,23 +537,28 @@
   ],
   "adds": [
    {
-    "label": "A board waiting, and James's break",
+    "label": "Surf Dominical, or the secret spot",
     "sub": "A board sized for you and a local surf guide [confirm]",
     "pp": 0
    },
    {
-    "label": "Manuel Antonio with a naturalist",
-    "sub": "Morning in the national park",
+    "label": "The Pavones call",
+    "sub": "If the swell is running when you leave, cancel the flight and head south; we rebook you",
     "pp": 0
    },
    {
-    "label": "Two more nights on Isla Palenque",
-    "sub": "Makes it five, so the stay 5, pay 4 offer can apply",
+    "label": "Whale watching from Uvita",
+    "sub": "In season [confirm]",
     "pp": 0
    },
    {
     "label": "Monteverde night walk",
     "sub": "Frogs and sleeping birds by torchlight",
+    "pp": 0
+   },
+   {
+    "label": "A fourth night at Kura",
+    "sub": "So the stay 4, pay 3 offer can apply",
     "pp": 0
    }
   ]
@@ -686,23 +582,7 @@
    "season": "All year"
   },
   {
-   "kicker": "Manuel Antonio · Days 4–6",
-   "title": "Manuel Antonio with a naturalist",
-   "info": "The national park early with a guide, for sloths, monkeys and the beaches inside the park before the day-trippers [park days and hours to confirm].",
-   "dur": "3 hours",
-   "incl": "Add-on",
-   "season": "All year"
-  },
-  {
-   "kicker": "Arenas del Mar · for families",
-   "title": "A craft afternoon for the family",
-   "info": "A bracelet-making class at the hotel, for the hour when the children have had enough sun.",
-   "dur": "1 hour",
-   "incl": "Add-on",
-   "season": "All year"
-  },
-  {
-   "kicker": "Dominical · the founder's stop",
+   "kicker": "Dominical · Day 4",
    "title": "Dominical, where the photo was taken",
    "info": "The surf town where James sat for his 1995 photo. Lunch by the beach, a look at the break, and the road the boards used to ride in on. [James to name the beach, break or bar]",
    "dur": "Half a day",
@@ -710,72 +590,64 @@
    "season": "All year"
   },
   {
+   "kicker": "Uvita · Days 4–6",
+   "title": "The Whale's Tail at low tide",
+   "info": "Walk the sandbar at Marino Ballena National Park when the tide drops and the beach takes the shape of a whale's tail [tides to confirm].",
+   "dur": "2 hours",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "Uvita · in season",
+   "title": "Humpbacks off the coast",
+   "info": "A boat out for humpback whales and dolphins in the national marine park [season to confirm].",
+   "dur": "3 hours",
+   "incl": "Add-on",
+   "season": "In season"
+  },
+  {
    "kicker": "The founder's surf day",
-   "title": "A board waiting, and James's break",
-   "info": "A board sized for you is waiting at the coast, and a local surf guide takes you to a break James has surfed since the early days. It isn't on any map; you get the directions when you book.",
+   "title": "Surf Dominical, if it's happening",
+   "info": "A board sized for you is waiting. If Dominical is working, you surf Dominical. If it isn't, a local surf guide takes you to a secret spot James keeps off the page, or on a side trip down the coast to wherever the swell is.",
    "dur": "Half a day",
    "incl": "Add-on",
    "season": "All year · swell varies"
   },
   {
-   "kicker": "Day 7 · Costa Rica to Panama",
-   "title": "The over-land day",
-   "info": "South along the coast and across the border at Paso Canoas by road, with a driver on each side, then a boat to the island. Most people fly over it; you'll remember it.",
-   "dur": "Most of the day",
-   "incl": "Included",
-   "season": "All year"
-  },
-  {
-   "kicker": "Isla Palenque · Days 7–9",
-   "title": "Island walk with a guide",
-   "info": "Primary forest, seven beaches and the island's own stories, on foot with a guide.",
-   "dur": "2–3 hours",
-   "incl": "Included [confirm]",
-   "season": "All year"
-  },
-  {
-   "kicker": "Isla Palenque",
-   "title": "The island wood shop",
-   "info": "Watch timber from the island being shaped by the people who live and work there.",
-   "dur": "1 hour",
-   "incl": "Included [confirm]",
-   "season": "All year"
-  },
-  {
-   "kicker": "Isla Palenque · last night",
-   "title": "Fire under the treehouse",
-   "info": "An evening fire beneath the treehouse villa to close the trip.",
-   "dur": "Evening",
-   "incl": "Add-on [confirm]",
-   "season": "All year"
+   "kicker": "Your last day · if the swell is running",
+   "title": "Cancel your flight: the Pavones call",
+   "info": "Pavones, down near the Panama border, is one of the longest left-hand waves anywhere. If the swell is happening when you're due to leave, James will let you know. Cancel the flight, head south, and we'll rebook you home [drive time and rebooking terms to confirm].",
+   "dur": "A day or two, swell permitting",
+   "incl": "On the call",
+   "season": "When the swell runs"
   }
  ],
  "seo": {
-  "path": "/overland/costa-rica/the-founders-line-10-days",
-  "title": "10-Day Costa Rica and Panama Itinerary: The Founder's Line Since 1992",
-  "description": "10 days from Costa Rica to Panama by land on Cayuga hotels: Senda Monteverde, Arenas del Mar, then Isla Palenque. A surf day at Dominical on the way. Designed by James Wild, surf travel since 1992.",
+  "path": "/overland/costa-rica/the-original-costa-route-7-days",
+  "title": "7-Day Costa Rica Itinerary: The Original Costa Route",
+  "description": "7 days in Costa Rica on Cayuga hotels: Senda Monteverde's cloud forest, then adults-only Kura above Uvita, with Dominical and a surf day. Designed by James Wild, surf travel since 1992.",
   "keywords": [
-   "10 day Costa Rica and Panama itinerary",
-   "Costa Rica to Panama overland",
-   "Costa Rica Panama border crossing Paso Canoas",
-   "Isla Palenque",
-   "Cayuga Collection itinerary"
+   "7 day Costa Rica itinerary",
+   "one week in Costa Rica for couples",
+   "Monteverde and Uvita itinerary",
+   "Cayuga Collection itinerary",
+   "Costa Rica surf trip"
   ]
  },
  "copy_approved": false,
  "prices_final": false,
  "booking_live": false,
- "id": "the-founders-line-10-days",
+ "id": "the-original-costa-route-7-days",
  "jsonld": [
   {
    "@context": "https://schema.org",
    "@type": "TouristTrip",
-   "@id": "https://www.jameswildco.com/overland/costa-rica/the-founders-line-10-days#trip",
-   "name": "The Founder's Line Since 1992",
-   "url": "https://www.jameswildco.com/overland/costa-rica/the-founders-line-10-days",
-   "description": "The Founder's Line Since 1992 is a 10-day Costa Rica and Panama itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest, three at Arenas del Mar on the beach at Manuel Antonio with a day at Dominical, then a day by road across the border to three nights on Isla Palenque, a private island in Panama's Gulf of Chiriquí. You fly home from Panama City.",
+   "@id": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-7-days#trip",
+   "name": "The Original Costa Route",
+   "url": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-7-days",
+   "description": "The Original Costa Route is a 7-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Senda Monteverde in the cloud forest and three at Kura, the adults-only hotel above Uvita, with a stop at Dominical, where James has surfed since the early 1990s. You travel by private driver from San José.",
    "touristType": [
-    "Families with children"
+    "Couples"
    ],
    "provider": {
     "@type": "TravelAgency",
@@ -790,7 +662,7 @@
    },
    "itinerary": {
     "@type": "ItemList",
-    "numberOfItems": 7,
+    "numberOfItems": 4,
     "itemListElement": [
      {
       "@type": "ListItem",
@@ -825,22 +697,8 @@
       "position": 3,
       "item": {
        "@type": "TouristDestination",
-       "name": "Manuel Antonio",
-       "description": "Days 4–6 · Arenas del Mar",
-       "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 9.39,
-        "longitude": -84.14
-       }
-      }
-     },
-     {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-       "@type": "TouristDestination",
        "name": "Dominical",
-       "description": "Day 6 · The founder's day",
+       "description": "Day 4 · Lunch on the way south",
        "geo": {
         "@type": "GeoCoordinates",
         "latitude": 9.25,
@@ -850,43 +708,15 @@
      },
      {
       "@type": "ListItem",
-      "position": 5,
+      "position": 4,
       "item": {
        "@type": "TouristDestination",
-       "name": "Paso Canoas",
-       "description": "Day 7 · By road into Panama",
+       "name": "Uvita",
+       "description": "Days 4–6 · Kura",
        "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 8.53,
-        "longitude": -82.84
-       }
-      }
-     },
-     {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-       "@type": "TouristDestination",
-       "name": "Isla Palenque",
-       "description": "Days 7–9 · Gulf of Chiriquí",
-       "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 8.19,
-        "longitude": -82.18
-       }
-      }
-     },
-     {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-       "@type": "TouristDestination",
-       "name": "Panama City",
-       "description": "Day 10 · Home through PTY",
-       "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 9.07,
-        "longitude": -79.38
+        "latitude": 9.16,
+        "longitude": -83.74
        }
       }
      }
@@ -895,43 +725,42 @@
   }
  ],
  "stamp": {
-  "tint": "#1F6268",
-  "tintName": "Gulf blue",
-  "label": "Why this route",
-  "where": "Costa Rica · Panama",
-  "sub": "Surf since 1992",
-  "when": "Field tested since 1992",
+  "tint": "#7C9488",
+  "tintName": "Cloud-forest green",
+  "label": "Stamped by James Wild",
+  "where": "Costa Rica",
+  "sub": "Circa 1992",
+  "when": "Stamped by James Wild · circa 1992",
   "nudge": "why this route",
   "script": "Leave a day for Dominical. JW",
   "cta": "Read why this route ↓"
  },
  "bestFor": {
-  "who": "Families with children",
-  "why": "Arenas del Mar and Isla Palenque both suit families, and the border day is an adventure in itself."
+  "who": "Couples",
+  "why": "Two Cayuga hotels, three nights each, and an adults-only finish above the Pacific."
  },
  "tag": {
-  "kind": "Route tag",
-  "title": "Costa Rica · Panama",
-  "ledger": "Route ledger",
-  "no": "F10",
-  "date": "since 1992",
-  "coords": "N 8°49′ · W 83°20′",
+  "kind": "Stamped by James Wild",
+  "title": "Costa Rica",
+  "ledger": "The Original Costa Route",
+  "no": "F07",
+  "date": "circa 1992",
+  "coords": "N 9°14′ · W 83°52′",
   "postmark": {
    "ring": "Republica de Costa Rica · Tarjeta postal ·",
    "center": "Dominical",
    "date": "1992",
-   "ink": "#1F6268"
+   "ink": "#5E7F52"
   },
   "script": "Costa Rica",
   "nudge": "why this route",
   "note": "Leave a day for Dominical. JW",
   "cta": "Read why this route ↓"
  },
- "proof": "James has pioneered surf travel in Costa Rica since 1992 and has followed Cayuga's co-founder Hans Pfister since 1994. This is the long version of the route he designed from those years.",
+ "proof": "James has pioneered surf travel in Costa Rica since 1992 and has followed Cayuga's co-founder Hans Pfister since 1994. This is the week he designed from those years.",
  "offerRefs": [
   "senda-monteverde-lodge",
-  "arenas-del-mar-resort",
-  "isla-palenque-resort"
+  "kura-boutique-resort"
  ],
  "images": {
   "PHOTO · INTO THE CLOUD FOREST": {
@@ -1034,9 +863,13 @@
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/rainforest-16",
    "alt": "A guest in a villa plunge pool looking out to the sea at Isla Palenque"
   },
-  "A board waiting, and James's break": {
+  "Surf Dominical, if it's happening": {
    "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee446ac65a18e02e0ace_about-story-2.avif",
    "alt": "Vintage photograph of a red open-top jeep loaded with surfboards in the early days of Costa Rica surf travel"
+  },
+  "Cancel your flight: the Pavones call": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-06",
+   "alt": "A palm-framed beach looking out to a small offshore island at Arenas del Mar"
   },
   "Dominical, where the photo was taken": {
    "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee4561a90104445c9a85_about-story-1.avif",

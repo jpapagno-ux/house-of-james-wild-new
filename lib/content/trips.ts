@@ -2,9 +2,9 @@ import type { TagInfo } from "@/components/notes/VoyageTag";
 import land from "./trips/two-oceans-one-volcano.json";
 import voyage from "./trips/10-day-raja-ampat-north.json";
 import komodo5 from "./trips/5-day-komodo-island.json";
-import founders7 from "./trips/the-founders-line-7-days.json";
-import founders10 from "./trips/the-founders-line-10-days.json";
-import foundersC2C from "./trips/the-founders-line-coast-to-coast.json";
+import founders7 from "./trips/the-original-costa-route-7-days.json";
+import founders10 from "./trips/the-original-costa-route-10-days.json";
+import foundersC2C from "./trips/the-original-costa-route-coast-to-coast.json";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
 // the content of one route page plus its JSON-LD; the live map's route lives
@@ -60,9 +60,9 @@ export const TRIPS: Record<string, Trip> = {
   "two-oceans-one-volcano": land as unknown as Trip,
   "10-day-raja-ampat-north": voyage as unknown as Trip,
   "5-day-komodo-island": komodo5 as unknown as Trip,
-  "the-founders-line-7-days": founders7 as unknown as Trip,
-  "the-founders-line-10-days": founders10 as unknown as Trip,
-  "the-founders-line-coast-to-coast": foundersC2C as unknown as Trip,
+  "the-original-costa-route-7-days": founders7 as unknown as Trip,
+  "the-original-costa-route-10-days": founders10 as unknown as Trip,
+  "the-original-costa-route-coast-to-coast": foundersC2C as unknown as Trip,
 };
 
 /** Routes built on a given stay (for "On these routes" bands). */

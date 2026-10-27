@@ -52,21 +52,21 @@ const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/";
 const CAY = (id: string, up = false) => `https://res.cloudinary.com/jhlnq5h5/image/upload/${up ? "e_upscale/" : ""}c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/${id}`;
 export const TRIP_SLIDES: Record<string, TripImg[]> = {
   // Cayuga's own photos (cayugacollection.com gallery), re-hosted on Cloudinary with alt and place.
-  "the-founders-line-7-days": [
+  "the-original-costa-route-7-days": [
     { url: CAY("senda-monteverde/senda-monteverde-04"), alt: "A balcony looking over the cloud forest at Senda Monteverde" },
     { url: CAY("gallery/wildlife-04"), alt: "A resplendent quetzal in flight among cloud-forest trees at Senda Monteverde" },
     { url: CAY("kura/kura-01", true), alt: "A guest in Kura's infinity pool above the Pacific coast at Uvita" },
     { url: CAY("offers/kura-offer"), alt: "Kura's infinity pool and open lounge lit at dusk above the forest at Uvita" },
     { url: CAY("gallery/wildlife-10", true), alt: "A humpback whale breaching beside a whale-watching boat" },
   ],
-  "the-founders-line-10-days": [
+  "the-original-costa-route-10-days": [
     { url: CAY("senda-monteverde/senda-monteverde-04"), alt: "A balcony looking over the cloud forest at Senda Monteverde" },
     { url: CAY("arenas-del-mar/arenas-del-mar-01", true), alt: "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air" },
     { url: CAY("gallery/beachfront-05"), alt: "A mother and small child playing in the surf at sunset at Arenas del Mar" },
     { url: CAY("gallery/beachfront-08"), alt: "A forested island shore and calm sea from the air at Isla Palenque" },
     { url: CAY("gallery/beachfront-01"), alt: "A couple picnicking on a sandy beach with a basket of tropical fruit at Isla Palenque" },
   ],
-  "the-founders-line-coast-to-coast": [
+  "the-original-costa-route-coast-to-coast": [
     { url: CAY("aguas-claras/aguas-claras-11", true), alt: "The Caribbean coast and reef near Playa Chiquita from the air" },
     { url: CAY("aguas-claras/aguas-claras-05"), alt: "A swimmer in a clear tide pool on the reef at Playa Chiquita, near Aguas Claras" },
     { url: CAY("senda-monteverde/senda-monteverde-04"), alt: "A balcony looking over the cloud forest at Senda Monteverde" },

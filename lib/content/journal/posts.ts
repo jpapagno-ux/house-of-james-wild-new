@@ -114,7 +114,7 @@ export const POSTS: Record<string, JournalPost> = {
     links: [
       { label: "The Cayuga Collection", href: "/collections/cayuga-collection", line: "All seven hotels, who each suits and how to pair them." },
       { label: "Costa Rica", href: "/destinations/central-america/costa-rica", line: "Where the house began: every Costa Rica stay in the Ledger." },
-      { label: "The Founder's Line Since 1992", href: "/overland/costa-rica/the-founders-line-7-days", line: "James's 7- and 10-day routes on Cayuga hotels, with a board waiting." },
+      { label: "The Original Costa Route", href: "/overland/costa-rica/the-original-costa-route-7-days", line: "James's 7- and 10-day routes on Cayuga hotels, with a board waiting." },
       { label: "Two Oceans, One Volcano", href: "/overland/costa-rica/two-oceans-one-volcano", line: "James's Costa Rica route, coast to coast." },
       { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road, Central America since the early days." },
     ],

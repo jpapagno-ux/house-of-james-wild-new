@@ -1,19 +1,22 @@
 {
- "id": "the-founders-line-7-days",
+ "id": "the-original-costa-route-coast-to-coast",
  "type": "overland",
  "destination": "costa-rica",
- "title": "The Founder's Line Since 1992",
- "subtitle": "7 days · 6 nights · San José to Uvita · private driver",
- "code": "JW-CR-F07",
+ "title": "The Original Costa Route",
+ "subtitle": "10 days · 9 nights · Caribbean to Pacific · private driver",
+ "code": "JW-CR-F10C",
  "mark": "keep",
  "days": {
-  "1": "San José to the cloud forest",
-  "2": "The Aguti trails",
-  "3": "Quetzal at dawn",
-  "4": "Down to Uvita, by way of Dominical",
-  "5": "The Whale's Tail",
-  "6": "The founder's surf day",
-  "7": "Home"
+  "1": "San José to the Caribbean",
+  "2": "The reef at Playa Chiquita",
+  "3": "The Caribbean surf day",
+  "4": "Across the country",
+  "5": "The Aguti trails",
+  "6": "Quetzal at dawn",
+  "7": "Down to the Pacific",
+  "8": "Manuel Antonio",
+  "9": "The founder's day",
+  "10": "Home"
  },
  "stops": [
   {
@@ -29,25 +32,65 @@
   },
   {
    "day": 1,
-   "name": "Monteverde — Senda Monteverde",
-   "lat": 10.3,
-   "lng": -84.824,
+   "name": "Playa Chiquita — Aguas Claras",
+   "lat": 9.63,
+   "lng": -82.74,
    "mode": "road",
-   "time": "~3.5 hr",
+   "time": "~4 hr",
    "kind": "lodge",
-   "stay": "Senda Monteverde",
+   "stay": "Aguas Claras",
    "path": [
     [
      -84.212,
      9.992
     ],
     [
-     -84.47,
-     10.05
+     -83.6,
+     10.1
     ],
     [
-     -84.7,
-     10.17
+     -83.03,
+     9.99
+    ],
+    [
+     -82.74,
+     9.63
+    ]
+   ],
+   "label": [
+    16,
+    -8
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Monteverde — Senda Monteverde",
+   "lat": 10.3,
+   "lng": -84.824,
+   "mode": "road",
+   "time": "~6.5 hr",
+   "kind": "lodge",
+   "stay": "Senda Monteverde",
+   "path": [
+    [
+     -82.74,
+     9.63
+    ],
+    [
+     -83.03,
+     9.99
+    ],
+    [
+     -83.6,
+     10.1
+    ],
+    [
+     -84.212,
+     9.992
+    ],
+    [
+     -84.6,
+     10.12
     ],
     [
      -84.824,
@@ -60,14 +103,14 @@
    ]
   },
   {
-   "day": 4,
-   "name": "Uvita — Kura, by way of Dominical",
-   "lat": 9.16,
-   "lng": -83.74,
+   "day": 7,
+   "name": "Manuel Antonio — Arenas del Mar",
+   "lat": 9.39,
+   "lng": -84.14,
    "mode": "road",
-   "time": "~5 hr",
+   "time": "~4 hr",
    "kind": "lodge",
-   "stay": "Kura",
+   "stay": "Arenas del Mar",
    "path": [
     [
      -84.824,
@@ -88,14 +131,6 @@
     [
      -84.14,
      9.39
-    ],
-    [
-     -83.86,
-     9.25
-    ],
-    [
-     -83.74,
-     9.16
     ]
    ],
    "label": [
@@ -104,12 +139,39 @@
    ]
   },
   {
-   "day": 7,
-   "name": "Home — back to San José",
-   "lat": 9.992,
-   "lng": -84.212,
+   "day": 9,
+   "name": "Dominical — the founder's day",
+   "lat": 9.25,
+   "lng": -83.86,
    "mode": "road",
-   "time": "~3.5 hr",
+   "time": "~45 min",
+   "kind": "poi",
+   "path": [
+    [
+     -84.14,
+     9.39
+    ],
+    [
+     -83.99,
+     9.32
+    ],
+    [
+     -83.86,
+     9.25
+    ]
+   ],
+   "label": [
+    16,
+    10
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Home — Quepos or San José",
+   "lat": 9.443,
+   "lng": -84.13,
+   "mode": "air",
+   "time": "~25 min",
    "kind": "airstrip",
    "label": [
     -90,
@@ -120,9 +182,9 @@
  "fallback": {
   "bbox": [
    -85.6,
-   8.8,
-   -83.3,
-   10.7
+   8.9,
+   -82.3,
+   10.9
   ],
   "country": "Costa Rica",
   "neighbours": [

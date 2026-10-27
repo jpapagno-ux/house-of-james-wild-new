@@ -22,9 +22,9 @@ export const BUILT: string[] = [
   "/stays",
   // Journeys and voyages from James's route files (lib/content/trips)
   "/overland/costa-rica/two-oceans-one-volcano",
-  "/overland/costa-rica/the-founders-line-7-days",
-  "/overland/costa-rica/the-founders-line-10-days",
-  "/overland/costa-rica/the-founders-line-coast-to-coast",
+  "/overland/costa-rica/the-original-costa-route-7-days",
+  "/overland/costa-rica/the-original-costa-route-10-days",
+  "/overland/costa-rica/the-original-costa-route-coast-to-coast",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
   "/voyages/ships/aliikai",

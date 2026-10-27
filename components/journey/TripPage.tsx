@@ -17,6 +17,7 @@ import ExpandAll from "./ExpandAll";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
+import VoyageTag from "@/components/notes/VoyageTag";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -431,11 +432,11 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} tag={<>{/* The spinning stamp, inked in the destination's palette */}{T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
+          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} tag={<>{/* The old voyage/route tag, postmarked in the destination's ink */}{T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
-            {T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
+            {T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
               <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>

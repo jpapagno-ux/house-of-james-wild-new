@@ -92,3 +92,8 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 /* Route pages: copy still to confirm, and photo frames waiting for a photo */
 .jw-flag { background: #F1E2B8; color: #5E3F22; padding: 0 0.2em; border-radius: 1px; }
 .jw-ph { background-color: #E4DED3; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }
+
+/* The voyage tag swings a little on its string */
+@keyframes jw-sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
+.jw-sway { animation: jw-sway 5.5s ease-in-out infinite; transform-origin: 60% -40px; }
+@media (prefers-reduced-motion: reduce) { .jw-sway { animation: none; } }

@@ -1788,5 +1788,23 @@
  "bestFor": {
   "who": "Divers and snorkellers",
   "why": "Guided diving with Nitrox, and snorkelling every day for those who stay on top."
+ },
+ "tag": {
+  "kind": "Voyage tag",
+  "title": "Raja Ampat",
+  "ledger": "Voyage ledger",
+  "no": "12",
+  "date": "11 — 2024",
+  "coords": "S 0°33′ · E 130°41′",
+  "postmark": {
+   "ring": "Republik Indonesia · Pos · Sorong ·",
+   "center": "Sorong",
+   "date": "NOV 2024",
+   "ink": "#A2442A"
+  },
+  "script": "Indonesia",
+  "nudge": "why this voyage",
+  "note": "Sailed it. Would again. JW",
+  "cta": "Read why this voyage ↓"
  }
 }

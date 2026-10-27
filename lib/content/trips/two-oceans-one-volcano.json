@@ -1117,5 +1117,23 @@
  "bestFor": {
   "who": "First-timers",
   "why": "The whole country in twelve days, with one flight to skip the longest drive."
+ },
+ "tag": {
+  "kind": "Route tag",
+  "title": "Costa Rica",
+  "ledger": "Route ledger",
+  "no": "C01",
+  "date": "since 1991",
+  "coords": "N 9°56′ · W 84°05′",
+  "postmark": {
+   "ring": "Republica de Costa Rica · Tarjeta postal ·",
+   "center": "Limón",
+   "date": "1991",
+   "ink": "#5E7F52"
+  },
+  "script": "Costa Rica",
+  "nudge": "why this route",
+  "note": "Every wrong turn, already taken. JW",
+  "cta": "Read why this route ↓"
  }
 }

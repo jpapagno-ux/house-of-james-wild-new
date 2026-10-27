@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
 import SearchPanel from "./SearchPanel";
@@ -151,6 +152,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           {UTILITY_NAV.map((l) => (
             <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{l.label}</Link>
           ))}
+          {FLAGS.accounts && <Link href="/account" className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>My Folio</Link>}
           <a href={`tel:${SITE.phone.tel}`} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{SITE.phone.display}</a>
         </div>
       </div>

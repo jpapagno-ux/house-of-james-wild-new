@@ -1,0 +1,3 @@
+/* 5 Day Komodo Island · the route as text, shown until the animated chart loads (and to no-JS readers) */
+.rm-komodo-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px 18px;font-family:'EB Garamond',Georgia,serif;font-size:16px;color:#1E2A30}
+.rm-komodo-list .mono{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#A2442A;margin-right:6px;text-transform:uppercase}

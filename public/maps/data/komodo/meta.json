@@ -1,0 +1,11 @@
+{
+ "slug": "komodo",
+ "name": "Komodo National Park",
+ "bbox": [
+  119.25,
+  -8.95,
+  120.15,
+  -8.25
+ ],
+ "attribution": "Land: Natural Earth"
+}

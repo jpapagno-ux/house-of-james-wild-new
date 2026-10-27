@@ -8,11 +8,12 @@
 //
 // Program names (James, 27 Oct 2026): "Worth Another Night" = a free night on
 // a shorter stay; "Time Rewarded" = a reward for staying longer; "On the
-// Horizon" = suggested name for voyage savings, not yet in use.
+// Horizon" = suggested name for voyage savings, not yet in use. "Book Early"
+// = a hotel's early-booking discount (working name, James to confirm).
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
-export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "On the Horizon";
+export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "On the Horizon" | "Book Early";
 export type OfferImage = { id: string; alt: string; w: number; h: number };
 export type Offer = {
   id: string;
@@ -47,19 +48,21 @@ export const OFFER_LEDGER: Offer[] = [
   { id: "OFR-2026-0006", year: 2026, status: "Live", scope: "stay", ref: "isla-palenque-resort", name: "Isla Palenque", collection: CAY, country: "Panama", program: "Time Rewarded", headline: "Stay 5 nights, pay 4", travel: T26, source: SRC, checked: "2026-10-27", image: cy("isla-palenque-offer", "A thatched pavilion at the end of a palm-lined path on Isla Palenque", 2000, 1622) },
   { id: "OFR-2026-0007", year: 2026, status: "Live", scope: "stay", ref: "arenas-del-mar-resort", name: "Arenas del Mar", collection: CAY, country: "Costa Rica", program: "Time Rewarded", headline: "Stay 5 nights, pay 4", travel: T26, conditions: "A free room upgrade when you book Arenas del Mar and Senda Monteverde together, subject to availability.", source: SRC, checked: "2026-10-27", image: cy("arenas-del-mar-offer", "A hammock strung between palms on the beach at Arenas del Mar at dusk", 4930, 4000) },
 
-  // ── 2027 · Cayuga Collection: asked for, terms not yet in ──
+  // ── 2027 · Cayuga Collection ──
+  // Seen in Cayuga's booking engine on 27 Oct 2026 (3-, 4- and 5-night searches
+  // for May, Jul and Sep 2027). Terms only, no rates. Kept as Draft (not shown
+  // on the site) until Cayuga's written 2027 terms confirm dates and conditions.
   ...([
-    ["OFR-2027-0001", "bolontiku-hotel", "Bolontiku", "Guatemala"],
-    ["OFR-2027-0002", "senda-monteverde-lodge", "Senda Monteverde", "Costa Rica"],
-    ["OFR-2027-0003", "jicaro-island-lodge", "Jicaro Island Lodge", "Nicaragua"],
-    ["OFR-2027-0004", "kura-boutique-resort", "Kura", "Costa Rica"],
-    ["OFR-2027-0005", "aguas-claras", "Aguas Claras", "Costa Rica"],
-    ["OFR-2027-0006", "isla-palenque-resort", "Isla Palenque", "Panama"],
-    ["OFR-2027-0007", "arenas-del-mar-resort", "Arenas del Mar", "Costa Rica"],
-  ] as const).map(([id, ref, name, country]): Offer => ({
-    id, year: 2027, status: "Awaiting terms", scope: "stay", ref, name, collection: CAY, country,
-    program: "Worth Another Night", headline: "2027 terms to come", travel: { from: "2027-01-01", to: "2027-12-31", text: "2027" },
-    source: "To request from Cayuga", checked: "2026-10-27",
+    ["OFR-2027-0001", "bolontiku-hotel", "Bolontiku", "Guatemala", "Worth Another Night", "2027 terms to come", "Awaiting terms", "Not in Cayuga's booking engine; to request"],
+    ["OFR-2027-0002", "senda-monteverde-lodge", "Senda Monteverde", "Costa Rica", "Worth Another Night", "Stay 2 nights, the 3rd on us", "Draft", "Seen in Cayuga's booking engine, May to Sep 2027 dates"],
+    ["OFR-2027-0003", "jicaro-island-lodge", "Jicaro Island Lodge", "Nicaragua", "Worth Another Night", "2027 terms to come", "Awaiting terms", "Not in Cayuga's booking engine; to request"],
+    ["OFR-2027-0004", "kura-boutique-resort", "Kura", "Costa Rica", "Book Early", "Early Bird: 10% off", "Draft", "Seen in Cayuga's booking engine, Feb to Sep 2027 dates (15% in Jan 2027)"],
+    ["OFR-2027-0005", "aguas-claras", "Aguas Claras", "Costa Rica", "Book Early", "Early Bird: 10% off", "Draft", "Seen in Cayuga's booking engine, Feb to Jul 2027 dates"],
+    ["OFR-2027-0006", "isla-palenque-resort", "Isla Palenque", "Panama", "Time Rewarded", "Stay 5 nights, pay 4", "Draft", "Seen in Cayuga's booking engine, May 2027 dates"],
+    ["OFR-2027-0007", "arenas-del-mar-resort", "Arenas del Mar", "Costa Rica", "Time Rewarded", "Stay 5 nights, pay 4", "Draft", "Seen in Cayuga's booking engine, May 2027 dates"],
+  ] as const).map(([id, ref, name, country, program, headline, status, source]): Offer => ({
+    id, year: 2027, status, scope: "stay", ref, name, collection: CAY, country, program, headline,
+    travel: { from: "2027-01-01", to: "2027-12-31", text: "2027 [dates to confirm]" }, source, checked: "2026-10-27",
   })),
 ];
 

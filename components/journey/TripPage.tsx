@@ -407,7 +407,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <p className="ledger-eyebrow">{T.reltitle}</p>
       <ul className="mt-4 grid gap-4 md:grid-cols-3">
         {T.related.map(([code, name, line]) => {
-          const href = /FIELD GUIDE NO/.test(code) && field ? field : /VESSEL/.test(code) ? "#vessel" : voyage ? "/voyages" : "/overland";
+          const href = /FIELD GUIDE NO/.test(code) && field ? field : /VESSEL/.test(code) ? "/voyages/ships/aliikai" : voyage ? "/voyages" : "/overland";
           return <li key={name}><a href={href} className="block border ledger-border p-5 h-full hover:border-crimson/60"><p className="font-mono text-[10.5px] tracking-[0.14em] ledger-crimson">{code}</p><p className="ledger-display text-[20px] mt-1">{name}</p><p className="text-[14.5px] ledger-muted mt-1"><Fx t={line} /></p></a></li>;
         })}
       </ul>

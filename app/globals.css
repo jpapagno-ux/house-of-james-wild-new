@@ -102,3 +102,27 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 @keyframes jw-sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
 .jw-sway { animation: jw-sway 5.5s ease-in-out infinite; transform-origin: 60% -40px; }
 @media (prefers-reduced-motion: reduce) { .jw-sway { animation: none; } }
+
+/* ── The Journal: a printed travel piece. Text sits in a 68ch column; wide
+   figures take the ledger width; bleed figures run edge to edge. ── */
+.journal-col { max-width: 44rem; margin-inline: auto; padding-inline: 1.25rem; }
+.journal-wide { max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
+@media (min-width: 768px) { .journal-wide { padding-inline: 2.5rem; } }
+.journal-prose { font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1.7; }
+.journal-prose > * + * { margin-top: 1.15em; }
+.journal-prose h2 { font-size: 1.75rem; line-height: 1.2; margin-top: 2.4em; text-wrap: balance; }
+@media (min-width: 768px) { .journal-prose h2 { font-size: 2.15rem; } }
+.journal-prose h2 + * { margin-top: 0.8em; }
+.journal-lead::first-letter { font-family: 'Playfair Display', Georgia, serif; float: left; font-size: 4.6em; line-height: 0.82; padding: 0.06em 0.12em 0 0; color: rgb(var(--jw-accent)); }
+.journal-list { list-style: none; padding: 0; border-top: 1px solid rgba(45,42,38,.14); }
+.journal-list li { padding: .55em 0 .55em 1.4em; border-bottom: 1px solid rgba(45,42,38,.14); position: relative; line-height: 1.45; }
+.journal-list li::before { content: ""; position: absolute; left: .2em; top: 1.05em; width: .45em; height: .45em; border: 1px solid rgb(var(--jw-accent)); transform: rotate(45deg); }
+.journal-steps { list-style: none; padding: 0; display: grid; gap: .6em; }
+.journal-steps li { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: .7em 1em; background: #EAE6DF; }
+.journal-toc { margin-top: 2.5rem; border-top: 1px solid rgba(45,42,38,.2); border-bottom: 1px solid rgba(45,42,38,.2); padding-block: 1.25rem; }
+.journal-toc ol { margin-top: .75rem; display: grid; gap: .45rem; }
+.journal-toc li { display: grid; grid-template-columns: 2.2rem 1fr; align-items: baseline; font-size: 16.5px; line-height: 1.35; }
+.journal-toc a:hover { color: rgb(var(--jw-accent)); }
+.journal-pull { margin-block: 3.5rem 1rem; padding-top: 2rem; border-top: 1px solid rgb(var(--jw-accent) / .5); }
+.journal-pull blockquote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.3; text-wrap: balance; }
+@media (min-width: 768px) { .journal-pull blockquote p { font-size: 2.2rem; } }

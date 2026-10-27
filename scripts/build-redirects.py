@@ -1,3 +1,4 @@
+import re
 #!/usr/bin/env python3
 """Map every URL of the old wildearthstays.com (Webflow) to its page on the new site.
 
@@ -88,10 +89,13 @@ TOP = {
     "/wild-earth-portfolio": "/about", "/find-stay": "/stays", "/find-your-itinerary": "/overland",
     "/coming-soon": "/", "/agents-influencers": "/for-advisors", "/agent-application": "/for-advisors",
     "/influencer-application": "/for-advisors", "/partners": "/partners", "/booking-process": "/plan",
-    "/ai-itinerary": "/plan/iggi", "/workshops": "/plan", "/request-itinerary": "/plan",
+    "/ai-itinerary": "/plan/iggi", "/workshops": "/workshops", "/request-itinerary": "/plan",
     "/booking-itinerary": "/plan", "/booking-form-retreat": "/plan", "/wellness-retreats": "/gatherings",
     "/memoirs": "/journal", "/land": "/stays?by=land", "/water": "/voyages",
 }
+# Journal posts already migrated: each post's oldUrl in lib/content/journal/posts.ts.
+_jp = open("lib/content/journal/posts.ts").read()
+JOURNAL = {m.group(2): f"/journal/{m.group(1)}" for m in re.finditer(r'slug: "([^"]+)"[\s\S]*?oldUrl: "([^"]+)"', _jp)}
 ITINERARY = {
     "/itinerary/aliikai-raja-ampat": "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
     "/itinerary/lalibela-reserve-safaris": "/safaris/lalibela-reserve",
@@ -125,7 +129,8 @@ for path, p in sorted(crawl.items()):
         else: dest, why = "/stays", "room with no parent found; stays hub"
     elif kind == "country": dest, why = country_page(slug)
     elif kind == "region": dest, why = (f"/destinations/{slug}", "region page")
-    elif kind == "memoir": dest, why = "/journal", "journal (posts not migrated yet)"
+    elif kind == "memoir":
+        dest, why = (JOURNAL[path], "journal post") if path in JOURNAL else ("/journal", "journal (post not migrated yet)")
     elif kind == "itinerary": dest, why = "/overland", "itinerary not migrated yet"
     else: dest, why = "/", "unmatched; home"
     if dest == path: continue  # same URL on the new site, nothing to redirect

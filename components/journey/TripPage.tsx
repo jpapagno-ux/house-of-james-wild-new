@@ -8,6 +8,8 @@ import Script from "next/script";
 import type { ReactNode } from "react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
+import { SessionsFor } from "@/components/workshops/SessionCard";
+import { sessionsFor } from "@/lib/content/workshops";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import PriceBuilder from "@/components/record/PriceBuilder";
@@ -492,6 +494,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16">
           <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>
           {order}
+          <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />
           <FaqBlock faqs={T.faqs.map(([q, a]) => ({ q, a }))} title={voyage ? "Questions About This Voyage" : "Questions About This Route"} />
           {Related}
           {Enquire}

@@ -35,6 +35,10 @@ import { BEST_FOR, STAY_PAGES, staysIn, stayBySlug, pageReady } from "@/lib/cont
 import { regionBySlug } from "@/lib/content/regions";
 import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
+import FromTheJournal from "@/components/journal/FromTheJournal";
+import { SessionsFor } from "@/components/workshops/SessionCard";
+import { postsForStay } from "@/lib/content/journal/posts";
+import { sessionsFor } from "@/lib/content/workshops";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -142,6 +146,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
             </section>
           )}
+          <FromTheJournal posts={postsForStay(s.slug)} />
+          <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} />
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">

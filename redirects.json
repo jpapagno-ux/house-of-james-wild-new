@@ -45,11 +45,6 @@
     "permanent": true
   },
   {
-    "source": "/workshops",
-    "destination": "/plan",
-    "permanent": true
-  },
-  {
     "source": "/agents-influencers",
     "destination": "/for-advisors",
     "permanent": true

@@ -172,7 +172,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
       { label: "The Compass", href: "/compass" },
       { label: "Find an advisor", href: "/about/team#advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
-      { label: "Live workshops", href: "/plan/workshops" },
+      { label: "House Sessions (workshops)", href: "/workshops" },
       { label: "FAQ", href: "/faq" },
       { label: "Booking conditions", href: "/legal/booking-conditions" },
     ],

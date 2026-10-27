@@ -171,4 +171,4 @@ James Wild & Co brings together places where the setting, people and reason for 
 
 With 44 years in travel and more than three decades of personal history in Central America, I know how easily a beautiful itinerary can become overfilled. Our work is to choose fewer places more carefully and let each one reveal why it belongs.
 
-For 2026 travel, every Cayuga hotel has an offer, from a free night at [Senda Monteverde](/stays/senda-monteverde-lodge) and Bolontiku to five nights for the price of four at [Isla Palenque](/stays/isla-palenque-resort) and [Arenas del Mar](/stays/arenas-del-mar-resort). They are listed hotel by hotel on [the Cayuga Collection page](/collections/cayuga-collection#offers), and we can book them for you.`;
+Each Cayuga hotel runs its own offer. [Kura](/stays/kura-boutique-resort), for one, gives you four nights for the price of three on stays until 19 December 2026. The 2027 offers are being updated now, so ask us for the current terms and we'll match the offer to the right hotel. The rest are on [the Cayuga Collection page](/collections/cayuga-collection#offers).`;

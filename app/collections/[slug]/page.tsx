@@ -43,7 +43,7 @@ export default async function CollectionPage({ params }: P) {
   const url = absoluteUrl(c.path);
 
   const schema = graph(
-    { "@type": "Organization", "@id": `${url}#org`, name: "Cayuga Collection", alternateName: "Cayuga Hospitality", foundingDate: c.founded, founder: c.founders.map((name) => ({ "@type": "Person", name })), url: c.website, areaServed: c.countries.map((name) => ({ "@type": "Country", name })) },
+    { "@type": "Organization", "@id": `${url}#org`, name: "Cayuga Collection", alternateName: "Cayuga Hospitality", foundingDate: c.founded, founder: c.founders.map((name) => ({ "@type": "Person", name })), url: absoluteUrl(c.path), areaServed: c.countries.map((name) => ({ "@type": "Country", name })) },
     { "@type": "CollectionPage", "@id": `${url}#page`, url, name: c.seo.title, description: c.seo.description, about: { "@id": `${url}#org` }, publisher: { "@id": ids.house },
       mainEntity: { "@type": "ItemList", itemListElement: c.hotels.map((h, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "LodgingBusiness", name: h.name, address: { "@type": "PostalAddress", addressLocality: h.where, addressCountry: h.country }, ...(h.built ? { url: absoluteUrl(`/stays/${h.slug}`) } : {}), ...(h.image ? { image: h.image.url } : {}) } })) } },
   );

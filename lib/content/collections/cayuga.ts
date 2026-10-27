@@ -8,6 +8,8 @@
 // "Choose it for" lines are James's, from his library story WED-2026-000007.
 // Jicaro and Bolontiku have no stay page or photos yet: their cards say so.
 
+import { OFFER_LEDGER, offersInCollection, type Offer } from "@/lib/content/offers/offers";
+
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 const F = "jwco/collections/cayuga-collection";
 /** Full-resolution delivery; AI upscale for the smaller originals. */
@@ -51,7 +53,6 @@ export const CAYUGA = {
   founded: "2003",
   founders: ["Andrea Bonilla", "Hans Pfister"],
   countries: ["Costa Rica", "Panama", "Nicaragua", "Guatemala"],
-  website: "https://cayugacollection.com/",
   seo: {
     title: "The Cayuga Collection: Sustainable Luxury Hotels in Central America",
     description: "Seven sustainably run boutique hotels in Costa Rica, Panama, Nicaragua and Guatemala: which Cayuga hotel suits whom, how to pair them, and what to ask before you book.",
@@ -258,26 +259,19 @@ export const GALLERY: GalleryGroup[] = [
   ] },
 ];
 
-// Cayuga's current offers (official offers page, checked 27 Oct 2026), one per
-// hotel, grouped under the house's two names. "Worth Another Night" = a free
-// night on a shorter stay; "Time Rewarded" = a free night for staying five.
-// The grouping is ours, pending James's confirmation. Booked through James.
-const o = (id: string, alt: string, w: number, h: number) => img(`offers/${id}`, alt, w, h, false);
-export const OFFERS: CollectionOffer[] = [
-  { hotel: "Bolontiku", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: "13 April to 19 December 2026", until: "2026-12-19", image: o("bolontiku-lake", "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", 4032, 3024) },
-  { hotel: "Senda Monteverde", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: "13 April to 19 December 2026", until: "2026-12-19", note: "A free room upgrade when you book Senda Monteverde and Arenas del Mar together, subject to availability.", image: o("senda-monteverde-offer", "A terrace with a fire and seating looking over the forest at sunset at Senda Monteverde", 2054, 1667) },
-  { hotel: "Jicaro Island Lodge", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: "13 April to 19 December 2026", until: "2026-12-19", image: o("jicaro-island-from-lake", "Jicaro Island Lodge seen across Lake Nicaragua in the Granada Isletas", 4066, 3300) },
-  { hotel: "Kura", program: "Worth Another Night", headline: "Stay 4 nights, pay 3", travel: "13 April to 19 December 2026", until: "2026-12-19", image: o("kura-offer", "Kura's infinity pool and open lounge lit at dusk above the forest at Uvita", 2000, 1623) },
-  { hotel: "Aguas Claras", program: "Worth Another Night", headline: "Stay 4 nights, pay 3", travel: "13 April to 30 September and 1 November to 19 December 2026", until: "2026-12-19", note: "Not available in October.", image: o("aguas-claras-offer", "A pool among tropical gardens below the white main house at Aguas Claras", 2000, 1623) },
-  { hotel: "Isla Palenque", program: "Time Rewarded", headline: "Stay 5 nights, pay 4", travel: "13 April to 19 December 2026", until: "2026-12-19", image: o("isla-palenque-offer", "A thatched pavilion at the end of a palm-lined path on Isla Palenque", 2000, 1622) },
-  { hotel: "Arenas del Mar", program: "Time Rewarded", headline: "Stay 5 nights, pay 4", travel: "13 April to 19 December 2026", until: "2026-12-19", note: "A free room upgrade when you book Arenas del Mar and Senda Monteverde together, subject to availability.", image: o("arenas-del-mar-offer", "A hammock strung between palms on the beach at Arenas del Mar at dusk", 4930, 4000) },
-];
+// Cayuga's offers now live in the Offer Ledger (lib/content/offers/offers.ts),
+// each with its own ID. This maps them to the collection page's cards.
+const cardOf = (x: Offer): CollectionOffer & { id: string } => ({
+  id: x.id, hotel: x.name, program: x.program as CollectionOffer["program"], headline: x.headline, travel: x.travel.text, until: x.travel.to, note: x.conditions,
+  image: x.image ? img(x.image.id.replace(`${F}/`, ""), x.image.alt, x.image.w, x.image.h, false) : CAYUGA.hero,
+});
+export const OFFERS = OFFER_LEDGER.filter((x) => x.collection === "cayuga-collection" && x.status === "Live").map(cardOf);
 export const OFFER_PROGRAMS = [
   { name: "Worth Another Night" as const, line: "A free night on a shorter stay: three nights for the price of two, or four for three." },
   { name: "Time Rewarded" as const, line: "Stay five nights and the fifth is on the hotel, for the places that reward slowing down." },
 ];
 /** Offers still open on a given day (build time for the static site). */
-export const liveOffers = (today = new Date().toISOString().slice(0, 10)) => OFFERS.filter((x) => x.until >= today);
+export const liveOffers = (today = new Date().toISOString().slice(0, 10)) => offersInCollection("cayuga-collection", today).map(cardOf);
 
 /** The collection a stay belongs to, for the link on its stay page. */
 export const collectionForStay = (slug: string) => (CAYUGA.hotels.some((h) => h.built && h.slug === slug) ? CAYUGA : undefined);

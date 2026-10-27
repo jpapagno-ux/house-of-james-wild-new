@@ -67,6 +67,7 @@ export const BUILT: string[] = [
   "/destinations/polar-arctic",
   "/journal",
   "/journal/monwana-couples-first-safari",
+  "/journal/africa-inspired-wild-and-co-safaris",
   "/workshops",
   "/legal/terms",
   "/legal/privacy",

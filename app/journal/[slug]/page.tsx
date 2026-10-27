@@ -166,7 +166,7 @@ export default async function JournalPostPage({ params }: P) {
 
             <nav aria-label="In this story" className="journal-toc">
               <p className="ledger-eyebrow">In this story</p>
-              <ol>{toc.map((s, i) => <li key={s.id}><span className="font-mono text-[11px] ledger-crimson">{String(i + 1).padStart(2, "0")}</span><a href={`#${s.id}`}>{s.title}</a></li>)}<li><span className="font-mono text-[11px] ledger-crimson">{String(toc.length + 1).padStart(2, "0")}</span><a href="#faq-heading">Questions about {stay?.name ?? "this story"}</a></li></ol>
+              <ol>{toc.map((s, i) => <li key={s.id}><span className="font-mono text-[11px] ledger-crimson">{String(i + 1).padStart(2, "0")}</span><a href={`#${s.id}`}>{s.title}</a></li>)}<li><span className="font-mono text-[11px] ledger-crimson">{String(toc.length + 1).padStart(2, "0")}</span><a href="#faq-heading">{p.faqTitle ?? `Questions about ${stay?.name ?? "this story"}`}</a></li></ol>
             </nav>
           </div>
 
@@ -185,12 +185,12 @@ export default async function JournalPostPage({ params }: P) {
                   )}
                 </section>
                 {p.pull?.after === s.id && p.pull.image && (
-                  <figure className="journal-lion my-16 md:my-24" aria-label="From James">
-                    <div className="journal-lion-art"><Image src={p.pull.image.url} alt={p.pull.image.alt} fill sizes="100vw" quality={85} className="object-cover object-right" /></div>
-                    <div className="journal-lion-text max-w-ledger mx-auto px-5 md:px-10">
+                  <figure className="journal-lion journal-wide my-16 md:my-24" aria-label="From James">
+                    <div className="journal-lion-text">
                       <blockquote><p>{p.pull.text}</p></blockquote>
                       <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">{p.close} · Founder, James Wild &amp; Co</span></figcaption>
                     </div>
+                    <div className="journal-lion-art" style={{ aspectRatio: `${p.pull.image.w} / ${p.pull.image.h}` }}><Image src={p.pull.image.url} alt={p.pull.image.alt} fill sizes="(min-width: 900px) 45vw, 100vw" quality={85} className="object-contain" /></div>
                   </figure>
                 )}
                 {p.film?.after === s.id && <Film p={p} />}
@@ -199,7 +199,7 @@ export default async function JournalPostPage({ params }: P) {
             );
           })}
 
-          {stay && (
+          {stay && p.stays.length === 1 && (
             <section aria-labelledby="stay-h" className="journal-wide mt-16 md:mt-24 border-t ledger-rule pt-10">
               <p className="ledger-eyebrow ledger-crimson">The stay in this story</p>
               <Link href={`/stays/${stay.slug}`} className="group mt-4 grid md:grid-cols-[1.3fr_1fr] border ledger-border hover:border-crimson/60 transition-colors">
@@ -207,14 +207,28 @@ export default async function JournalPostPage({ params }: P) {
                 <div className="p-6 md:p-10 flex flex-col justify-center">
                   <h2 id="stay-h" className="ledger-display text-[2rem] md:text-[2.6rem] leading-none">{stay.name}</h2>
                   <p className="mt-2 ledger-muted">{stay.line}</p>
-                  <p className="mt-5 text-[16px] leading-relaxed">Vetted in person by James, May 2026. The suites, the rates, the film and his verdict are on the stay page.</p>
+                  {stay.note && <p className="mt-5 text-[16px] leading-relaxed">{stay.note}</p>}
                   <span className="mt-6 inline-flex items-center gap-2 ledger-crimson">See {stay.name} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>
                 </div>
               </Link>
             </section>
           )}
+          {p.stays.length > 1 && (
+            <section aria-labelledby="stay-h" className="journal-wide mt-16 md:mt-24 border-t ledger-rule pt-10">
+              <p className="ledger-eyebrow ledger-crimson">In this story</p>
+              <h2 id="stay-h" className="ledger-display text-2xl md:text-3xl mt-2">The Stays</h2>
+              <ul className="mt-6 grid md:grid-cols-3 gap-5">
+                {p.stays.map((st) => (
+                  <li key={st.slug}><Link href={`/stays/${st.slug}`} className="group block h-full border ledger-border hover:border-crimson/60 transition-colors">
+                    <div className="relative aspect-[4/3] overflow-hidden"><Image src={st.image.url} alt={st.image.alt} fill sizes="(min-width: 768px) 33vw, 100vw" quality={85} className="object-cover group-hover:scale-[1.02] transition-transform duration-700" /></div>
+                    <div className="p-5"><h3 className="ledger-display text-[1.4rem] leading-tight">{st.name}</h3><p className="mt-1 text-[14px] ledger-muted">{st.line}</p>{st.note && <p className="mt-3 text-[15px] leading-relaxed">{st.note}</p>}<span className="mt-4 inline-flex items-center gap-2 ledger-crimson text-[15px]">See {st.name} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span></div>
+                  </Link></li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-          <div className="journal-col"><FaqBlock faqs={p.faqs} title={`Questions About ${stay?.name ?? "This Story"}`} /></div>
+          <div className="journal-col"><FaqBlock faqs={p.faqs} title={p.faqTitle ?? `Questions About ${stay?.name ?? "This Story"}`} /></div>
 
           <section aria-labelledby="more-h" className="journal-wide mt-16 border-t ledger-rule pt-8">
             <p className="ledger-eyebrow">Around this story</p>
@@ -225,7 +239,7 @@ export default async function JournalPostPage({ params }: P) {
           </section>
         </article>
 
-        <div className="max-w-ledger mx-auto px-5 md:px-10"><PlanBand place="South Africa" compassHref="/compass" /></div>
+        <div className="max-w-ledger mx-auto px-5 md:px-10"><PlanBand place={p.planPlace ?? "South Africa"} compassHref="/compass" /></div>
       </main>
       <JsonLd data={schema} />
     </>

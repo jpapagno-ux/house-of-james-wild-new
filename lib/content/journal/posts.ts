@@ -7,6 +7,7 @@
 // Body copy is James's library text, lightly edited for the site: library
 // notes to the team are removed, and "James Wild & Co should" reads "we".
 import { MONWANA_BODY } from "./monwana-couples-first-safari";
+import { AFRICA_BODY } from "./africa-inspired-wild-and-co-safaris";
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 // Full-resolution delivery: AI upscale for anything under ~2400px wide, then
@@ -15,6 +16,10 @@ const hi = (id: string, up = true) => `${CLD}/${up ? "e_upscale/" : ""}c_limit,w
 const MON = "wildco/south-africa/monwana-thornybush";
 const J = "/journal/monwana"; // James's own photographs and film, May 2026
 const MORE = "jwco/journal/monwana-couples-first-safari"; // Monwana's own photographs (more.co.za)
+const AFR = "jwco/journal/africa-inspired-wild-and-co-safaris";
+const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
+/** The licensed lion print, kept in Cloudinary's design-effects folder for every platform. */
+export const LION_PRINT: JournalImage = { url: `${CLD}/e_upscale/c_limit,w_2400/q_auto:best/f_jpg/design-effects/lion-at-rest-print`, alt: "A male lion asleep with his head on his paws, in black and white", w: 964, h: 1403 };
 
 export type JournalImage = { url: string; alt: string; w: number; h: number; caption?: string; video?: string; credit?: string };
 export type JournalFigure = { after: string; layout: "bleed" | "wide" | "pair" | "tall"; images: JournalImage[] };
@@ -39,7 +44,9 @@ export type JournalPost = {
   pull?: { text: string; after: string; image?: JournalImage };
   close: string;
   faqs: { q: string; a: string }[];
-  stays: { slug: string; name: string; line: string; image: JournalImage }[];
+  stays: { slug: string; name: string; line: string; note?: string; image: JournalImage }[];
+  faqTitle?: string;
+  planPlace?: string;
   links: { label: string; href: string; line: string }[];
   keywords: string[];
   about: string[];
@@ -49,6 +56,66 @@ export type JournalPost = {
 };
 
 export const POSTS: Record<string, JournalPost> = {
+  "africa-inspired-wild-and-co-safaris": {
+    slug: "africa-inspired-wild-and-co-safaris",
+    ledgerId: "WED-2026-000002",
+    shelf: "Captain's Log",
+    title: "Africa Changed the Way I Travel",
+    seoTitle: "How Africa Inspired Wild & Co Safaris: James Papagno's Story",
+    description: "One journey into the Kalahari changed everything. James Papagno on Tswalu in 2012, the guide who taught him to read the land, and why he built Wild & Co Safaris.",
+    dek: "It began in the Kalahari in 2012, with a guide who taught me to read the land. Years later, a chance reunion in the bush, and the safari house that grew out of both.",
+    answer: "James Papagno's first great safari was at Tswalu Kalahari in 2012, tracking white rhino on foot with guide Joffers McCormick and finding a pangolin, lions hunting oryx and a brown hyena. That trip taught him the guide matters more than the lodge, and it led to Wild & Co Safaris: private, advisor-led African safaris planned around the traveller.",
+    place: "Tswalu · the Kalahari · South Africa",
+    trip: "2012 and 2018",
+    published: "2026-09-22",
+    modified: "2026-10-27",
+    hero: { url: hi(`${AFR}/hero-leopard-log`), alt: "A leopard resting on a fallen log in long grass at golden hour", w: 1600, h: 900 },
+    body: AFRICA_BODY,
+    figures: [
+      { after: "lead", layout: "bleed", images: [{ url: hi(`${AFR}/tswalu-loapi-kalahari-hills`), alt: "A daybed on the Loapi deck at Tswalu looking out over the Kalahari grassland to the Korannaberg hills", w: 1620, h: 1080, caption: "The Kalahari from Tswalu, where it started.", credit: "Photograph: Tswalu" }] },
+      { after: "the-journey-that-started-it", layout: "pair", images: [
+        { url: hi("wildco/partners/feline-fields/lodge/fl-07"), alt: "A guide leading guests in single file on a walking safari across golden grassland", w: 1660, h: 1040, caption: "On foot, single file. The guide reads the ground before anyone else sees a thing.", credit: "Feline Fields, Botswana" },
+        { url: hi("wildco/south-africa/madikwe-wildlife/white-rhino-game-drive-madikwe"), alt: "A white rhino grazing beside an open game vehicle", w: 1600, h: 900, caption: "White rhino, close enough to hear it graze.", credit: "Madikwe, South Africa" },
+      ] },
+      { after: "why-the-right-safari-guide-matters", layout: "bleed", images: [{ url: hi("wildco/botswana/hero/qorokwe-lions-game-drive"), alt: "A pride of lions resting in the grass beside an open game vehicle at sunset", w: 1277, h: 850, caption: "Knowing when to wait. The lions decided when we'd leave.", credit: "Qorokwe, Okavango Delta" }] },
+      { after: "returning-to-africa-with-my-daughter", layout: "pair", images: [
+        { url: hi("wildco/south-africa/madikwe-wildlife/family-game-drive-madikwe"), alt: "A family on an open game vehicle with their guide and tracker", w: 1400, h: 699, caption: "A first safari, seen through someone else's eyes.", credit: "Madikwe, South Africa" },
+        { url: hi("wildco/south-africa/kapama/reserve/kapama-leopard-drinking"), alt: "A leopard drinking at a waterhole", w: 1600, h: 1080, caption: "The leopard who keeps everyone quiet in the vehicle.", credit: "Kapama, Greater Kruger" },
+      ] },
+      { after: "from-wild-earth-stays-to-wild-co-safaris", layout: "pair", images: [
+        { url: hi("wildco/botswana/hero/xaranna-mokoro"), alt: "A poler guiding a mokoro canoe through the reeds of the Okavango Delta", w: 1920, h: 1280, caption: "Time beside the waterways of Botswana: by mokoro.", credit: "Okavango Delta, Botswana" },
+        { url: hi("wildco/partners/feline-fields/lodge/fl-08"), alt: "A rider on horseback talking with her guide in the bush at sunset", w: 1620, h: 1040, caption: "Or on horseback, for those who'd rather not sit still.", credit: "Feline Fields, Botswana" },
+      ] },
+      { after: "what-makes-a-wild-co-safari-different", layout: "wide", images: [{ url: hi("wildco/botswana/hero/qorokwe-sundowner-elephants"), alt: "Guests at a sundowner by the water as elephants cross behind them", w: 1275, h: 850, caption: "The sundowner. Most of the planning happens here, honestly.", credit: "Qorokwe, Okavango Delta" }] },
+      { after: "africa-is-not-a-once-in-a-lifetime-place", layout: "bleed", images: [{ url: hi("wildco/botswana/helicopter-horizons/hh-elephant-aerial"), alt: "A herd of elephants wading through the Okavango Delta seen from above", w: 1200, h: 787, caption: "The Okavango from the air. One more reason to come back.", credit: "Helicopter Horizons, Botswana" }] },
+    ],
+    pull: { text: "Every journey to Africa has taught me something, but the most important lesson is simple: Africa does not give you a reason to visit once. It gives you a reason to keep coming back.", after: "begin-your-african-story", image: LION_PRINT },
+    close: "James Papagno",
+    faqTitle: "Questions About Wild & Co Safaris",
+    planPlace: "Africa",
+    faqs: [
+      { q: "What is Wild & Co Safaris?", a: "Wild & Co Safaris is the African safari house of James Wild & Co. It plans personalized, advisor-led safaris with experienced guides, carefully selected camps and detailed destination knowledge." },
+      { q: "Who founded Wild & Co Safaris?", a: "James Papagno, founder of James Wild & Co. He has 44 years of travel behind him, has designed journeys since 1983 and has been on safari across Africa since 2011." },
+      { q: "Does Wild & Co Safaris offer private safaris?", a: "Yes. Wild & Co Safaris specializes in personalized and privately designed African journeys for couples, families, honeymooners, small groups and returning safari travelers." },
+      { q: "Which African destinations can Wild & Co Safaris plan?", a: "Journeys may include South Africa, Botswana, Kenya, Tanzania, Zambia, Zimbabwe, Namibia, Rwanda, Madagascar, the Seychelles and other carefully selected regions across Africa." },
+      { q: "How does the safari-planning process begin?", a: "It begins with a conversation about your interests, preferred pace, travel history, wildlife priorities and the kind of experience you want. From there, Wild & Co Safaris recommends the right destinations, season, camps and journey structure." },
+      { q: "Why does the safari guide matter so much?", a: "The guide connects everything: when to wait, when to move, what the tracks mean and how the land, weather and wildlife fit together. James's first great safari, at Tswalu in 2012, was shaped by his guide more than by the lodge." },
+    ],
+    stays: [
+      { slug: "tswalu-reserve", name: "Tswalu Kalahari", line: "The Kalahari, South Africa", note: "Where it started, in 2012. Still one of James's favourite places in the world.", image: { url: hi(`${AFR}/tswalu-loapi-kalahari-hills`), alt: "The Loapi deck at Tswalu over the Kalahari", w: 1620, h: 1080 } },
+      { slug: "singita-ebony", name: "Singita Ebony Lodge", line: "Sabi Sand, Greater Kruger", note: "On the 2018 safari with his daughter.", image: { url: `${B44}/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper.jpg`, alt: "The fire deck at Singita Ebony Lodge above the Sand River", w: 1600, h: 1067 } },
+      { slug: "ngala-safari-lodge-by-beyond", name: "Ngala Safari Lodge", line: "Timbavati, Greater Kruger", note: "On the 2018 safari with his daughter.", image: { url: `${B44}/301472440_1bf9b77a5_6942909e4d2140c1851a2362_South-Africa-Ngala-Safari-Lodge-Outdoor-view-of-evening.`, alt: "Dinner by the pool at Ngala Safari Lodge at dusk", w: 1600, h: 1067 } },
+    ],
+    links: [
+      { label: "Wild & Co Safaris", href: "/safaris", line: "Private, advisor-led safaris across Africa." },
+      { label: "South Africa", href: "/destinations/africa/south-africa", line: "Every stay and reserve the house has vetted in South Africa." },
+      { label: "Wild Together at Monwana", href: "/journal/monwana-couples-first-safari", line: "James's wife's first safari, in Thornybush." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road, safaris since 2011." },
+    ],
+    keywords: ["African safari planning", "Wild & Co Safaris", "private African safaris", "luxury safari planning", "South Africa safari", "Tswalu Kalahari", "experienced safari planner", "personalized African safari", "safari guide"],
+    about: ["African safari planning", "Tswalu Kalahari", "Wild & Co Safaris", "Safari guiding"],
+    oldUrl: "/memoir/africa-inspired-wild-and-co-safaris",
+  },
   "monwana-couples-first-safari": {
     slug: "monwana-couples-first-safari",
     ledgerId: "WED-2026-000013",
@@ -96,7 +163,7 @@ export const POSTS: Record<string, JournalPost> = {
       { after: "when-is-the-best-time-to-visit-thornybush", layout: "bleed", images: [{ url: `${J}/sundowner-tree.jpg`, alt: "A bird in a dead tree silhouetted against the sunset over Thornybush", w: 2016, h: 1512, caption: "Sundowner, Thornybush. May, dry season." }] },
       { after: "is-monwana-right-for-every-couple", layout: "wide", images: [{ url: hi(`${MORE}/more-monwana-og`), alt: "The boardwalk over the water garden to the entrance of Monwana", w: 1976, h: 1317, caption: "The way in.", credit: "Photograph: Monwana" }] },
     ],
-    pull: { text: "Safari had already taught me how to look at the wild. Watching my wife discover it taught me how much more we see when wonder is shared.", after: "what-did-my-wife-s-first-safari-teach-me", image: { url: `${J}/lion-high-key.jpg`, alt: "A male lion in high-key black and white, fading into the page", w: 2400, h: 1500 } },
+    pull: { text: "Safari had already taught me how to look at the wild. Watching my wife discover it taught me how much more we see when wonder is shared.", after: "what-did-my-wife-s-first-safari-teach-me", image: LION_PRINT },
     close: "James Papagno",
     faqs: [
       { q: "Is Monwana good for a first safari?", a: "Yes. Its small guest capacity, vehicles limited to six guests and guided twice-daily drives can make the experience approachable and personal. Wildlife sightings can never be guaranteed." },
@@ -108,7 +175,7 @@ export const POSTS: Record<string, JournalPost> = {
       { q: "Is Thornybush a malaria area?", a: "Yes. The lodge describes the area as low risk, but travelers should seek current advice from a qualified medical professional about prevention and medication." },
       { q: "Can children stay at Monwana?", a: "Current lodge guidance permits children aged ten and older in the lodge suites. The exclusive-use villa welcomes children of all ages. Reconfirm age policies before booking." },
     ],
-    stays: [{ slug: "monwana-thornybush", name: "Monwana", line: "Thornybush, Greater Kruger · six suites and a villa", image: { url: hi(`${MON}/elephant-thornybush-monwana`), alt: "An elephant bull on the Thornybush reserve near Monwana", w: 1920, h: 1281 } }],
+    stays: [{ slug: "monwana-thornybush", name: "Monwana", line: "Thornybush, Greater Kruger · six suites and a villa", note: "Vetted in person by James, May 2026. The suites, the rates, the film and his verdict are on the stay page.", image: { url: hi(`${MON}/elephant-thornybush-monwana`), alt: "An elephant bull on the Thornybush reserve near Monwana", w: 1920, h: 1281 } }],
     links: [
       { label: "Monwana, the stay", href: "/stays/monwana-thornybush", line: "Suites, rates, the film and James's verdict." },
       { label: "South Africa", href: "/destinations/africa/south-africa", line: "Every stay and reserve the house has vetted in South Africa." },

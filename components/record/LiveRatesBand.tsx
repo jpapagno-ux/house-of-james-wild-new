@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { ArrowUpRight, CalendarDays, RefreshCcw, Users } from "lucide-react";
 import type { RatePlan } from "@/lib/rates";
+import { FL_TAX_RATE } from "@/lib/pricing";
 
 // LiveRatesBand: the live booking-engine band for a stay page. Reads
 // /api/rates (15-minute cache) for the guest's dates and party, shows each
@@ -64,7 +65,7 @@ export default function LiveRatesBand({ property, name }: { property: string; na
                   <div><p className="ledger-display text-xl">{r.name}</p><p className="ledger-eyebrow mt-0.5">{p.plan}</p></div>
                   <p className="text-[14px] ledger-muted">{PLAN_NOTE[p.plan] ?? ""}</p>
                   <p className="md:text-right"><span className="ledger-display text-xl">{fmt(r.total / res.nights, res.currency)}</span> <span className="ledger-eyebrow">/ night</span></p>
-                  <p className="md:text-right text-[14px] ledger-muted">{fmt(r.total, res.currency)} for {res.nights} {res.nights === 1 ? "night" : "nights"}</p>
+                  <p className="md:text-right text-[14px] ledger-muted">{fmt(r.total, res.currency)} for {res.nights} {res.nights === 1 ? "night" : "nights"}<span className="block text-[12.5px]">{fmt(r.total * (1 + FL_TAX_RATE), res.currency)} with 7% Florida sales tax</span></p>
                 </div>
               )))}
             </div>
@@ -73,7 +74,7 @@ export default function LiveRatesBand({ property, name }: { property: string; na
         <div className="px-5 py-4 border-t ledger-rule flex flex-wrap items-center gap-4">
           {engine && <a href={engine} className="ledger-btn inline-flex items-center gap-2" data-event="booking_outbound">Book on the engine <ArrowUpRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></a>}
           <a href={`/plan?trip=${encodeURIComponent(name)}&travellers=${q.adults}`} className="ledger-btn-ghost">Or ask James for a quote</a>
-          <p className="text-[13px] ledger-muted max-w-xl w-full md:w-auto">Prices are the engine&rsquo;s totals for the whole stay, excluding taxes and fees unless shown. Dynamic pricing changes with dates, occupancy and season.</p>
+          <p className="text-[13px] ledger-muted max-w-xl w-full md:w-auto">Prices are the engine&rsquo;s totals for the whole stay, before the hotel&rsquo;s own taxes and fees. James Wild &amp; Co adds 7% Florida sales tax to every booking. Dynamic pricing changes with dates, occupancy and season.</p>
         </div>
       </div>
     </section>

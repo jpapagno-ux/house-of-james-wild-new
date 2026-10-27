@@ -112,7 +112,7 @@ export function LiveRates({ snap }: { snap: LiveSnapshot }) {
         </div>
         <div className="px-5 py-4 border-t ledger-rule flex flex-wrap items-center gap-4">
           <a href={snap.engineUrl} className="ledger-btn inline-flex items-center gap-2" data-event="booking_outbound">Check live rates for your dates <ArrowUpRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></a>
-          <p className="text-[13px] ledger-muted max-w-xl">{snap.guests} guests · {snap.nights} nights · excluding taxes and fees. Dynamic pricing changes with dates, occupancy and season; the house confirms every quote before anything is booked.</p>
+          <p className="text-[13px] ledger-muted max-w-xl">{snap.guests} guests · {snap.nights} nights · excluding taxes and fees; 7% Florida sales tax is added at booking. Dynamic pricing changes with dates, occupancy and season; the house confirms every quote before anything is booked.</p>
         </div>
       </div>
     </section>

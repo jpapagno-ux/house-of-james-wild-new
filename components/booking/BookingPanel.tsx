@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, BedDouble, CalendarDays, Check, RefreshCcw, Users, X } from "lucide-react";
 import type { RatePlan } from "@/lib/rates";
+import { FL_TAX_RATE } from "@/lib/pricing";
 import type { PricedRoom } from "@/lib/content/priced-stays";
 import Carousel from "./Carousel";
 
@@ -43,8 +44,9 @@ function Checkout({ pick, q, nights, name, included, excluded, policies, engine,
             <h3 className="ledger-display text-2xl mt-4">{pick.room.name}</h3>
             <p className="text-[14px] ledger-muted">{name} · {pick.plan}</p>
             <dl className="mt-5 border-t ledger-rule text-[15px]">
-              {[["Dates", `${nice(q.checkIn)} → ${nice(q.checkOut)}`], ["Guests", `${q.adults} ${q.adults === 1 ? "adult" : "adults"}`], [`${usd(pick.total / nights)} × ${nights} ${nights === 1 ? "night" : "nights"}`, usd(pick.total)], ["Taxes & fees", "Shown by the engine"]].map(([k, v]) => <div key={k} className="flex justify-between gap-4 py-2.5 border-b ledger-rule"><dt className="ledger-muted">{k}</dt><dd className="text-right">{v}</dd></div>)}
-              <div className="flex justify-between gap-4 py-3"><dt className="ledger-display text-xl">Total before tax</dt><dd className="ledger-display text-xl ledger-crimson">{usd(pick.total)}</dd></div>
+              {[["Dates", `${nice(q.checkIn)} → ${nice(q.checkOut)}`], ["Guests", `${q.adults} ${q.adults === 1 ? "adult" : "adults"}`], [`${usd(pick.total / nights)} × ${nights} ${nights === 1 ? "night" : "nights"}`, usd(pick.total)], [`Florida sales tax (${Math.round(FL_TAX_RATE * 100)}%)`, usd(pick.total * FL_TAX_RATE)], ["Hotel taxes & fees", "Added by the hotel at booking"]].map(([k, v]) => <div key={k} className="flex justify-between gap-4 py-2.5 border-b ledger-rule"><dt className="ledger-muted">{k}</dt><dd className="text-right">{v}</dd></div>)}
+              <div className="flex justify-between gap-4 py-3"><dt className="ledger-display text-xl">Total</dt><dd className="ledger-display text-xl ledger-crimson">{usd(pick.total * (1 + FL_TAX_RATE))}</dd></div>
+              <p className="pb-3 text-[12.5px] ledger-muted">Includes 7% Florida sales tax. The hotel&rsquo;s own taxes and fees are added at booking.</p>
             </dl>
             <details className="mt-2 border-t ledger-rule group" open>
               <summary className="py-3 cursor-pointer ledger-eyebrow list-none [&::-webkit-details-marker]:hidden">Included &amp; not included</summary>
@@ -66,7 +68,7 @@ function Checkout({ pick, q, nights, name, included, excluded, policies, engine,
           <div className="px-6 py-10 text-center">
             <Image src="/brand/jwco-hare-240.png" alt="" width={80} height={80} className="mx-auto w-20 h-20 object-contain" />
             <h3 className="ledger-display text-3xl mt-4">Your Folio request is in.</h3>
-            <p className="mt-3 text-[15.5px]">{pick.room.name} at {name}, {nice(q.checkIn)} to {nice(q.checkOut)}, {usd(pick.total)} before tax. The house confirms availability with the estate and replies within 24 hours.</p>
+            <p className="mt-3 text-[15.5px]">{pick.room.name} at {name}, {nice(q.checkIn)} to {nice(q.checkOut)}, {usd(pick.total * (1 + FL_TAX_RATE))} with Florida sales tax, before the hotel&rsquo;s own taxes. The house confirms availability with the estate and replies within 24 hours.</p>
             <p className="mt-2 text-[13px] ledger-muted">(Sample: no request was sent.)</p>
             <div className="mt-6 flex flex-col gap-3">
               {engine && <a href={engine} className="ledger-btn justify-center inline-flex items-center gap-2" data-event="booking_outbound">Or book direct on the engine <ArrowUpRight className="w-4 h-4" strokeWidth={1.5} /></a>}
@@ -175,7 +177,7 @@ export default function BookingPanel({ property, name, rooms, included, excluded
           );
         })}
       </ul>
-      <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Live prices are the engine&rsquo;s totals for your dates in US dollars, before tax, refreshed every 15 minutes. Registry rates are the estate&rsquo;s published nightly rates in South African rand. {engine && <a href={engine} className="underline underline-offset-2" data-event="booking_outbound">Open the booking engine</a>}</p>
+      <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Live prices are the engine&rsquo;s totals for your dates in US dollars, before the hotel&rsquo;s taxes, refreshed every 15 minutes; 7% Florida sales tax is added at checkout. Registry rates are the estate&rsquo;s published nightly rates in South African rand. {engine && <a href={engine} className="underline underline-offset-2" data-event="booking_outbound">Open the booking engine</a>}</p>
 
       {pick && res && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine={engine} hostHref={hostHref} onClose={() => setPick(null)} />}
     </section>

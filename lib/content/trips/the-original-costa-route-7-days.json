@@ -60,7 +60,7 @@
   ],
   [
    "Dates",
-   "Any day you choose, subject to lodge availability · not over Christmas and New Year"
+   "Any day you choose, subject to lodge availability · not 20 Dec to 5 Jan"
   ],
   [
    "Best months",
@@ -293,7 +293,7 @@
   ],
   [
    "How much does The Original Costa Route cost?",
-   "From $2,115 per person in the green season (May to November) and from $3,245 in the dry season (December to April), two sharing, plus 7% Florida sales tax. That covers the hotels as listed, with hotel taxes, and the private drivers. The route is booked subject to lodge availability and isn't offered over Christmas and New Year."
+   "From $2,115 per person in the green season (May to November) and from $3,245 in the dry season (December to April), two sharing, plus 7% Florida sales tax. That covers the hotels as listed, with hotel taxes, and the private drivers. The route is booked subject to lodge availability and isn't offered from 20 December to 5 January."
   ]
  ],
  "reltitle": "From the same guide",
@@ -524,7 +524,7 @@
  "calc": {
   "title": "Build your price",
   "optlabel": "Choose your season",
-  "note": "Per person, two sharing. Includes the hotels as listed (entry room, hotel taxes included) and the private drivers; 7% Florida sales tax is added. Subject to lodge availability; not available over Christmas and New Year.",
+  "note": "Per person, two sharing. Includes the hotels as listed (entry room, hotel taxes included) and the private drivers; 7% Florida sales tax is added. Subject to lodge availability; not available 20 December to 5 January.",
   "soloNote": "Travelling solo: single supplement on request.",
   "maxG": 8,
   "taxRate": 0,

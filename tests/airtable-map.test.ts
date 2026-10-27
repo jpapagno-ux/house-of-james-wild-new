@@ -37,6 +37,8 @@ test("a real card needs an explicit approver before it publishes", () => {
   b.cards[0].fields["Sample Data"] = false;
   assert.match(buildPlan(b, { allowSample: false, knownLedgerIds: KNOWN }).refused[0].reasons.join(), /approver/);
   b.cards[0].fields["Approved By"] = { id: "usr1", email: "james@jameswildco.com", name: "James Papagno" };
+  assert.match(buildPlan(b, { allowSample: false, knownLedgerIds: KNOWN }).refused[0].reasons.join(), /re-approve/);
+  b.cards[0].fields["Approved Revision"] = 1;
   const ok = buildPlan(b, { allowSample: false, knownLedgerIds: KNOWN });
   assert.deepEqual(ok.refused, []);
   assert.equal(ok.cards[0].approved_by, "james@jameswildco.com");
@@ -92,4 +94,73 @@ test("money and percent conversions", () => {
   assert.equal(toBp(0.075), 750);
   assert.deepEqual(parseTiers("45:50%, 14:100"), [{ daysBeforeArrival: 45, penaltyBp: 5000 }, { daysBeforeArrival: 14, penaltyBp: 10000 }]);
   assert.equal(parseTiers("10:150"), null);
+});
+
+// ---- Independent review findings (27 Oct 2026)
+
+const refusedFor = (b: Base) => buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).refused.flatMap((r) => r.reasons).join(" | ");
+
+test("R2: percent offers are whole numbers 1–90; 150% or 0.1 are refused", () => {
+  for (const v of [150, 0.1, 95]) {
+    const b = clone();
+    b.promotions[0].fields.Type = "Percent off"; b.promotions[0].fields.Value = v;
+    assert.match(refusedFor(b), /whole number 1–90/, String(v));
+  }
+  const ok = clone();
+  ok.promotions[0].fields.Type = "Percent off"; ok.promotions[0].fields.Value = 10;
+  assert.equal(buildPlan(ok, { allowSample: true, knownLedgerIds: KNOWN }).promotions[0].discount_value, 1000);
+  const n1 = clone(); n1.promotions[0].fields.Value = 1;
+  assert.match(refusedFor(n1), /N between 2 and 30/);
+});
+
+test("R3: every database limit is checked before anything is written", () => {
+  const cases: [string, (b: Base) => void, RegExp][] = [
+    ["min nights 0", (b) => { b.rates[0].fields["Min Nights"] = 0; }, /min nights/],
+    ["tax 200%", (b) => { b.taxes[1].fields.Percent = 2; }, /0–100%/],
+    ["base occupancy 25", (b) => { b.rates[0].fields["Base Occupancy"] = 25; }, /base occupancy/],
+    ["long label", (b) => { b.cards[0].fields.Card = "X".repeat(61); }, /60 characters/],
+    ["Approved At TBD", (b) => { b.cards[0].fields["Approved At"] = "TBD"; }, /isn't a date/],
+    ["duplicate code", (b) => { b.promotions.push({ id: "recDUP", fields: { ...b.promotions[0].fields } }); }, /appears twice/],
+    ["max < min", (b) => { b.rates[0].fields["Max Nights"] = 1; }, /max ≥ min/],
+    ["negative extra adult", (b) => { b.rates[0].fields["Extra Adult"] = -1; }, /extra adult/],
+    ["min-stay without minimum", (b) => { b.restrictions.push({ id: "recR1", fields: { Name: "x", Type: "Min stay", Start: "2027-02-01", End: "2027-02-10", "Rate Card": ["recdv4NjxpNApVooT"] } }); }, /needs a minimum/],
+  ];
+  for (const [name, mutate, re] of cases) { const b = clone(); mutate(b); assert.match(refusedFor(b), re, name); }
+});
+
+test("R4: approval is tied to a revision and to the card's content", () => {
+  const a = buildPlan(SAMPLE_BASE, { allowSample: true, knownLedgerIds: KNOWN }).cards[0].content_hash;
+  const b2 = clone(); b2.rates[1].fields["Nightly Gross"] = 851;
+  const b = buildPlan(b2, { allowSample: true, knownLedgerIds: KNOWN }).cards[0].content_hash;
+  assert.match(a, /^[0-9a-f]{16}$/);
+  assert.notEqual(a, b); // any priced change → new fingerprint → DB refuses it under the old revision
+  const c2 = clone(); c2.cards[0].fields["Approved By"] = { email: "x@y.z" };
+  assert.equal(buildPlan(c2, { allowSample: true, knownLedgerIds: KNOWN }).cards[0].content_hash, a); // approval fields don't change it
+});
+
+test("R5: an offer limited to plans must name plans at this property", () => {
+  const b = clone(); b.promotions[0].fields["Eligible Plans"] = ["recMISSING"];
+  assert.match(refusedFor(b), /eligible plan isn't a plan at this property/);
+});
+
+test("R10: bad time zones and foreign restriction rooms are refused, not guessed", () => {
+  const b = clone(); b.properties[0].fields["Time Zone"] = "Africa/Joburg";
+  const p = buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN });
+  assert.match(p.warnings.join(), /isn't recognised/);
+  assert.equal(p.cards.length, 0);
+  const r = clone(); r.restrictions.push({ id: "recR2", fields: { Name: "x", Type: "Closed", Start: "2027-02-01", End: "2027-02-02", "Room Type": ["recNOPE"], "Rate Card": ["recdv4NjxpNApVooT"] } });
+  assert.match(refusedFor(r), /room isn't at this property/);
+});
+
+test("each partner carries a stay type and a rate source (owner request, 27 Oct)", () => {
+  const b = clone();
+  assert.equal(buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).properties[0].rate_source, "rate_card");
+  assert.equal(buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).properties[0].stay_type, null);
+  b.properties[0].fields["Stay Type"] = "Family Residence";
+  b.properties[0].fields["Rate Source"] = "Live API";
+  const p = buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).properties[0];
+  assert.equal(p.stay_type, "family_residence");
+  assert.equal(p.rate_source, "live_api");
+  b.properties[0].fields["Stay Type"] = "Spaceship";
+  assert.equal(buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).properties[0].stay_type, null);
 });

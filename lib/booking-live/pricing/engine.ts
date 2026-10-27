@@ -168,6 +168,7 @@ const within = (d: string, start?: string | null, end?: string | null) => (!star
 
 /** Today's calendar date in an IANA time zone (e.g. "Africa/Johannesburg"). */
 export function localToday(timeZone: string, now: Date = new Date()): string {
+  try { new Intl.DateTimeFormat("en-CA", { timeZone }); } catch { timeZone = "UTC"; }
   const parts = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(now);
   const get = (t: string) => parts.find((p) => p.type === t)?.value ?? "";
   return `${get("year")}-${get("month")}-${get("day")}`;
@@ -218,7 +219,7 @@ function promoDiscount(p: Promotion, nights: NightLine[], subtotal: Minor): Mino
   if (p.type === "percent") return pct(subtotal, p.value);
   if (p.type === "fixed_per_night") return Math.min(subtotal, p.value * nights.length);
   // nth_night_free: stay N, pay N−1 — the cheapest nights in the stay are free.
-  const free = Math.floor(nights.length / Math.max(2, Math.floor(p.value)));
+  const free = Math.floor(nights.length / p.value);
   return sum([...nights].map((n) => n.totalMinor).sort((a, b) => a - b).slice(0, free));
 }
 
@@ -249,6 +250,7 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
     }
     if (r.type === "close_to_arrival" && within(req.arrival, r.start, r.end)) return fail("closed_to_arrival", "Arrivals aren't accepted on this date.", req.arrival);
     if (r.type === "close_to_departure" && within(req.departure, r.start, r.end)) return fail("closed_to_departure", "Departures aren't accepted on this date.", req.departure);
+    if (r.type === "min_stay" && !r.minimumStay) return fail("invalid_card", "A minimum-stay restriction has no minimum.");
     if (r.type === "min_stay" && r.minimumStay && within(req.arrival, r.start, r.end) && n < r.minimumStay)
       return fail("min_stay", `Arrivals on these dates need at least ${r.minimumStay} nights.`, req.arrival);
   }
@@ -283,12 +285,18 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
 
   // Promotions: approved, in window, eligible. Best single exclusive offer vs
   // all stackable offers together — the traveler gets whichever saves more.
+  const sane = (p: Promotion) =>
+    (p.type === "percent" && Number.isInteger(p.value) && p.value > 0 && p.value <= 9000) ||
+    (p.type === "fixed_per_night" && Number.isInteger(p.value) && p.value > 0) ||
+    (p.type === "nth_night_free" && Number.isInteger(p.value) && p.value >= 2 && p.value <= 30);
   const eligible = card.promotions.filter((p) =>
-    p.approved && within(req.bookingDate, p.bookingStart, p.bookingEnd) &&
+    p.approved && sane(p) && within(req.bookingDate, p.bookingStart, p.bookingEnd) &&
     nightsList.every((d) => within(d, p.stayStart, p.stayEnd)) &&
     (!p.minNights || n >= p.minNights) && (!p.ratePlanIds?.length || p.ratePlanIds.includes(req.ratePlanId)));
   if (req.promoCode && !eligible.some((p) => p.code === req.promoCode)) return fail("promo_invalid", "That offer doesn't apply to these dates.");
-  const pool = req.promoCode ? eligible.filter((p) => p.code === req.promoCode || p.stacking === "stackable") : eligible;
+  // Entering a code only checks it's valid: the traveler always gets the best
+  // eligible combination, so typing a code can never raise the price.
+  const pool = eligible;
   const exclusive = pool.filter((p) => p.stacking === "exclusive").map((p) => [{ code: p.code, label: p.label, amountMinor: promoDiscount(p, nights, roomSubtotalMinor) }]);
   const stackable = pool.filter((p) => p.stacking === "stackable").map((p) => ({ code: p.code, label: p.label, amountMinor: promoDiscount(p, nights, roomSubtotalMinor) }));
   const options: DiscountLine[][] = [...exclusive, stackable].filter((o) => o.length);

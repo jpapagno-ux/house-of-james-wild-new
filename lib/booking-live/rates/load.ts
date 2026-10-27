@@ -1,6 +1,6 @@
 import "server-only";
 import type { SupabaseClient } from "@supabase/supabase-js";
-import type { RateCard, Room, SeasonalRule } from "../pricing/engine";
+import { addDays, type RateCard, type Room, type SeasonalRule } from "../pricing/engine";
 
 // Loads a property's PUBLISHED contracted card (only published rows are
 // readable — RLS) and shapes it for the pricing engine. Picks the card whose
@@ -14,8 +14,13 @@ export async function loadPricing(sb: SupabaseClient, slug: string, arrival?: st
   if (!prop) return null;
   const ctx: PricingContext = { propertyId: prop.id, slug: prop.slug, name: prop.name, timezone: prop.timezone ?? "UTC", bookingMode: prop.booking_mode, card: null, cardId: null, offerables: [] };
 
-  let cq = sb.from("rate_card_versions").select("id, version_label, source_revision, currency, payment_terms, cancellation, timezone, effective_from, effective_to").eq("property_id", prop.id).eq("status", "published").order("effective_from");
-  if (arrival && departure) cq = cq.lte("effective_from", arrival).gte("effective_to", departure);
+  // Sample cards price ONLY on Preview with the sample switch on — never in
+  // Production, even though both share this database (review finding R1).
+  const allowSample = process.env.BOOKING_LIVE_ALLOW_SAMPLE_RATES === "on" && process.env.VERCEL_ENV !== "production";
+  let cq = sb.from("rate_card_versions").select("id, version_label, source_revision, currency, payment_terms, cancellation, timezone, effective_from, effective_to, is_sample").eq("property_id", prop.id).eq("status", "published").order("effective_from", { ascending: false });
+  if (!allowSample) cq = cq.eq("is_sample", false);
+  // The card must cover every NIGHT: arrival through the night before departure (R10).
+  if (arrival && departure) cq = cq.lte("effective_from", arrival).gte("effective_to", addDays(departure, -1));
   const { data: cards } = await cq.limit(1);
   const card = cards?.[0];
   if (!card) return ctx;

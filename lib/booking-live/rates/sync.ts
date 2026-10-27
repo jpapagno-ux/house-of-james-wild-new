@@ -67,7 +67,7 @@ export async function runSync(): Promise<SyncResult> {
     for (const p of plan.properties) {
       const id = propId.get(p.legacy_cms_id)!;
       atProp.set(p.airtable_record_id, id);
-      const { error } = await sb.from("properties").update({ airtable_record_id: p.airtable_record_id, timezone: p.timezone, booking_mode: p.booking_mode, last_synced_at: new Date().toISOString() }).eq("id", id);
+      const { error } = await sb.from("properties").update({ airtable_record_id: p.airtable_record_id, timezone: p.timezone, booking_mode: p.booking_mode, stay_type: p.stay_type, rate_source: p.rate_source, last_synced_at: new Date().toISOString() }).eq("id", id);
       if (error) throw error;
     }
 
@@ -79,41 +79,41 @@ export async function runSync(): Promise<SyncResult> {
     };
 
     const roomIds = await upsert("room_types", plan.roomTypes.map(({ property_at, ...r }) => ({ ...r, property_id: atProp.get(property_at) })));
-    const planIds = await upsert("rate_plans", plan.ratePlans.map(({ room_type_at, ...r }) => ({ ...r, room_type_id: roomIds.get(room_type_at) })));
-    const cardIds = await upsert("rate_card_versions", plan.cards.map(({ property_at, sample: _s, ...c }) => ({ ...c, property_id: atProp.get(property_at), published_at: c.status === "published" ? new Date().toISOString() : null, synced_at: new Date().toISOString() })));
+    await upsert("rate_plans", plan.ratePlans.map(({ room_type_at, ...r }) => ({ ...r, room_type_id: roomIds.get(room_type_at) })));
 
-    let rows = 0;
-    // Children: upsert what's in Airtable, then remove rows deleted there (per card).
-    const children: [string, { airtable_record_id: string; card_at: string }[], (r: never) => object][] = [
-      ["seasonal_rate_rules", plan.rules, ({ card_at, room_type_at, rate_plan_at, ...r }: (typeof plan.rules)[number]) => ({ ...r, rate_card_version_id: cardIds.get(card_at), room_type_id: roomIds.get(room_type_at), rate_plan_id: planIds.get(rate_plan_at) })],
-      ["tax_fee_rules", plan.taxes, ({ card_at, ...r }: (typeof plan.taxes)[number]) => ({ ...r, rate_card_version_id: cardIds.get(card_at) })],
-      ["promotions", plan.promotions, ({ card_at, eligible_plan_ats, ...r }: (typeof plan.promotions)[number]) => ({ ...r, rate_card_version_id: cardIds.get(card_at), eligible_rate_plans: eligible_plan_ats.length ? eligible_plan_ats.map((a) => planIds.get(a)).filter(Boolean) : null })],
-      ["inventory_restrictions", plan.restrictions, ({ card_at, room_type_at, ...r }: (typeof plan.restrictions)[number]) => ({ ...r, rate_card_version_id: cardIds.get(card_at), room_type_id: room_type_at ? roomIds.get(room_type_at) ?? null : null })],
-    ];
-    for (const [table, list, map] of children) {
-      await upsert(table, list.map((r) => map(r as never)));
-      rows += list.length;
-      for (const [cardAt, cardId] of cardIds) {
-        const keep = list.filter((r) => r.card_at === cardAt).map((r) => r.airtable_record_id);
-        let q = sb.from(table).delete().eq("rate_card_version_id", cardId);
-        if (keep.length) q = q.not("airtable_record_id", "in", `(${keep.map((k) => `"${k}"`).join(",")})`);
-        const { error } = await q;
-        if (error) throw new Error(`${table} cleanup: ${error.message}`);
-      }
+    // Each card and ALL its rows go through one database transaction
+    // (apply_rate_card): a failure leaves that card's previous version untouched
+    // and the next card still syncs. The database also refuses rate changes made
+    // after approval (same revision, different content) and overlaps with cards
+    // already published.
+    let rows = 0, applied = 0;
+    for (const card of plan.cards) {
+      const at = card.airtable_record_id, mine = <T extends { card_at: string }>(xs: T[]) => xs.filter((x) => x.card_at === at);
+      const { sample, ...c } = card;
+      const terms = plan.terms.find((t) => t.card_at === at);
+      const payload = {
+        card: { ...c, is_sample: sample },
+        rules: mine(plan.rules), taxes: mine(plan.taxes), promotions: mine(plan.promotions), restrictions: mine(plan.restrictions),
+        terms: terms ? { rates_are_net: terms.rates_are_net, commission_bp: terms.commission_bp, net_rate_notes: terms.net_rate_notes, contract_contact: terms.contract_contact } : null,
+      };
+      const { error } = await sb.rpc("apply_rate_card", { p: payload });
+      if (error) { plan.refused.push({ card: at, label: card.version_label, reasons: [error.message] }); continue; }
+      applied += 1;
+      rows += payload.rules.length + payload.taxes.length + payload.promotions.length + payload.restrictions.length;
     }
 
-    // Private terms through the service-role-only function.
-    const terms = plan.terms.map(({ card_at, ...t }) => ({ ...t, rate_card_version_id: cardIds.get(card_at) })).filter((t) => t.rate_card_version_id);
-    if (terms.length) {
-      const { error } = await sb.rpc("sync_contract_terms", { rows: terms });
-      if (error) throw new Error(`contract terms: ${error.message}`);
-    }
+    // Cards deleted from Airtable stop pricing: retire them (quotes keep their snapshot).
+    const present = base.cards.map((x) => x.id);
+    let retire = sb.from("rate_card_versions").update({ status: "retired", published_at: null }).neq("status", "retired").not("airtable_record_id", "is", null);
+    if (present.length) retire = retire.not("airtable_record_id", "in", `(${present.map((k) => `"${k}"`).join(",")})`);
+    const { error: re } = await retire;
+    if (re) plan.warnings.push(`retiring deleted cards: ${re.message}`);
 
     const status = plan.refused.length ? "partial" : "ok";
-    await sb.rpc("log_rate_sync", { p_status: status, p_cards: plan.cards.length, p_rows: rows, p_errors: plan.refused });
-    await logToAirtable(baseId, token, `Sync: ${plan.cards.length} card(s), ${rows} row(s)`, status === "ok" ? "OK" : "Partial",
+    await sb.rpc("log_rate_sync", { p_status: status, p_cards: applied, p_rows: rows, p_errors: plan.refused });
+    await logToAirtable(baseId, token, `Sync: ${applied} card(s), ${rows} row(s)`, status === "ok" ? "OK" : "Partial",
       [...plan.refused.map((r) => `REFUSED ${r.label}: ${r.reasons.join("; ")}`), ...plan.warnings].join("\n") || "All cards accepted.");
-    return { ok: true, status, cards: plan.cards.length, rows, refused: plan.refused, warnings: plan.warnings };
+    return { ok: true, status, cards: applied, rows, refused: plan.refused, warnings: plan.warnings };
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
     await sb.rpc("log_rate_sync", { p_status: "failed", p_cards: 0, p_rows: 0, p_errors: [{ error: message }] });

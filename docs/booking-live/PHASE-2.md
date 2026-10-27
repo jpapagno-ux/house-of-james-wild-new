@@ -27,14 +27,25 @@ window) → balance by the due date. Taxes already in the rate are shown, not ad
 
 1. Enter or update the card in Airtable (Status **Draft**).
 2. Check the seasons, taxes and terms → Status **Submitted**.
-3. James (or finance) fills **Approved By** → Status **Published**.
-4. The sync copies it to Supabase. Anything wrong refuses the **whole card**
-   (the site keeps its previous version) and is explained in **Sync Log**.
+3. James (or finance) fills **Approved By**, **Approved At** and **Approved Revision**
+   (= the card's **Revision**) → Status **Published**.
+4. The sync copies it to Supabase in **one database transaction per card**
+   (`apply_rate_card`). Anything wrong refuses the **whole card** (the site keeps
+   its previous version) and is explained in **Sync Log**. Cards deleted from
+   Airtable are retired; stored quotes keep their price.
 
 The sync refuses: missing approver on a published card · rates outside the
 card's dates · a room from another property · negative money · malformed
 cancellation tiers · two published cards for one property with overlapping dates ·
-**Sample Data cards anywhere except Preview**.
+**Sample Data cards anywhere except Preview** · an approval for a different
+revision · rates changed after approval without a new Revision · offers above 90%
+or a "stay N" outside 2–30 · stays, occupancy or priority outside sane limits ·
+an offer naming another property's rate plan.
+
+Each partner also carries **Stay Type** (Lodge · Resort · Family Residence) and
+**Rate Source** (Rate Card · Live API), so rates can be filtered and reported by
+category and source. Live API partners keep pricing from their card until their
+connection is certified (Phase 4).
 
 To change a published price: duplicate the card as a new version (e.g. 2027-V2),
 or edit and bump **Revision** — every stored quote keeps the price it was given.
@@ -61,6 +72,30 @@ It was loaded into Supabase on 27 Oct 2026 with the same mapper the sync uses
 keys exist. Replace it with the contracted card when it arrives, and untick
 **Sample Data**.
 
+## Independent review (27 Oct 2026): 11 findings, all fixed
+
+| # | Finding | Fix |
+| --- | --- | --- |
+| R1 | Preview and Production share one database, so a sample card could price Production | Cards carry `is_sample`; Production never loads them |
+| R2 | Unbounded percent offers | 1–90% in Airtable, engine and a database check |
+| R3 | Sync wrote rows piecewise; no sane limits | One transaction per card; occupancy, stay and priority limits |
+| R4 | Approval not tied to the content approved | Approved Revision must equal Revision; content hash refuses silent edits |
+| R5 | Offer could name another property's plan | Refused in mapper and database |
+| R6 | A promo code could raise the price | A code only unlocks; best price always wins |
+| R7 | Overlap checked only within one sync | Checked against published cards in the database; deleted cards retired |
+| R8 | Approval didn't check the card was unchanged | Approval refused if the card changed after the quote |
+| R9 | Visitors could read approver and contract fields | Column-level grants |
+| R10 | Card end date, time zone, search leaking booking mode | Fixed |
+| R11 | Quote lock missed some priced columns | Every priced column locked |
+
+**One manual step:** run `supabase/manual/0010b_apply_rate_card.sql` once in
+the Supabase SQL editor. Until then the sync refuses every card (safely) and the
+grants in R9 are not yet narrowed.
+
+**Recommendation:** give Preview its own Supabase project before real contracted
+rates go in. The `is_sample` guard makes the shared database safe for now; a
+separate staging database is what the spec's environment separation asks for.
+
 ## Known limits (next phases)
 
 - The Advisor Desk screens live in Base44 (Phase 3 dashboards); today advisors
@@ -68,3 +103,8 @@ keys exist. Replace it with the contracted card when it arrives, and untick
 - Quotes are held 72 hours. Expiry is shown to the traveler; a nightly job to
   mark expired quotes arrives with the reconciliation jobs in Phase 3.
 - Currency conversion is not applied: prices show in the card's currency.
+- Advisor-recorded bookings (a lodge or trip booked by phone or email) go into
+  the Phase 3 bookings table and the Base44 Advisor Desk.
+- Voyages and vessels (departure date, year, vessel, cabin category, per-person
+  price, rate card or published-website source) are proposed as Phase 2b,
+  always on request.

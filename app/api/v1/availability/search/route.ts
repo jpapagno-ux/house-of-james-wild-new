@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     const priced = await priceStay(await supabaseServer(), parsed.value);
     if (!priced) return error("not_found", "That stay isn't in the Ledger", requestId);
     return ok({
-      property: { slug: priced.ctx.slug, name: priced.ctx.name, bookingMode: priced.ctx.bookingMode },
+      property: { slug: priced.ctx.slug, name: priced.ctx.name },
       hasCard: Boolean(priced.ctx.card),
       availability: "on_request",
       options: priced.options.map(publicOption),

@@ -183,3 +183,28 @@ test("§16.18 zero-decimal currencies and local dates", () => {
   assert.equal(localToday("America/New_York", new Date("2026-12-31T22:30:00Z")), "2026-12-31");
   assert.equal(addDays("2028-02-28", 1), "2028-02-29");
 });
+
+// ---- Independent review findings (27 Oct 2026)
+
+test("R6: typing an offer code can never raise the price", () => {
+  const promos = card({ promotions: [
+    { code: "WAN", label: "Worth Another Night", type: "nth_night_free", value: 4, stacking: "exclusive", approved: true },
+    { code: "LOYAL", label: "Returning guest 5%", type: "percent", value: 500, stacking: "stackable", approved: true },
+  ] });
+  const r = req({ departure: "2027-02-14" });
+  const none = ok(quote(promos, ROOM, r));
+  const withCode = ok(quote(promos, ROOM, { ...r, promoCode: "LOYAL" }));
+  assert.equal(withCode.grandTotalMinor, none.grandTotalMinor);
+  assert.ok(withCode.grandTotalMinor <= none.grandTotalMinor);
+});
+
+test("R2/R10: malformed offers are never applied by the engine (defence in depth)", () => {
+  const bad = card({ promotions: [
+    { code: "HUGE", label: "x", type: "percent", value: 15000, stacking: "exclusive", approved: true },
+    { code: "N1", label: "x", type: "nth_night_free", value: 1, stacking: "exclusive", approved: true },
+  ] });
+  const q = ok(quote(bad, ROOM, req()));
+  assert.equal(q.discountsMinor, 0);
+  assert.equal(err(quote(card({ restrictions: [{ id: "m", start: "2027-02-01", end: "2027-02-28", type: "min_stay" }] }), ROOM, req())).code, "invalid_card");
+  assert.equal(localToday("Africa/Joburg", new Date("2026-12-31T22:30:00Z")), "2026-12-31"); // falls back to UTC, never throws
+});

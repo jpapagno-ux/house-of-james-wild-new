@@ -15,11 +15,12 @@ import { graph, ids } from "@/lib/schema";
 // Sessions for everyone, the Advisor Desk for the trade) › the season ahead
 // (or an honest "dates post here first") › recordings › how it works ›
 // planning calls › FAQ. Each session links to the stay, ship or route it's
-// about. Event schema only for sessions that have a date.
+// about. Event schema only for sessions that have a date. Copy approved by
+// James on the Ledger Proofs sheet, 27 Oct 2026.
 
 const HERO = { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_3200/q_auto:best/f_jpg/wildco/south-africa/monwana-thornybush/monwana-fire-pit", alt: "Guests gathered around the fire pit at Monwana under the night sky" };
 
-export const metadata = buildMetadata({ title: W.seoTitle, description: W.description, path: PATH, image: HERO, noindex: true });
+export const metadata = buildMetadata({ title: W.seoTitle, description: W.description, path: PATH, image: HERO });
 
 function eventSchema(s: Session) {
   return {
@@ -62,7 +63,7 @@ export default function WorkshopsPage() {
       <SiteHeader overlay />
       <main id="main" className="pb-20">
         <header className="relative w-full h-[62svh] md:h-[72svh] min-h-[440px] max-h-[820px] overflow-hidden bg-ink text-white">
-          <Image src={HERO.url} alt={HERO.alt} fill priority sizes="100vw" quality={90} className="object-cover" />
+          <Image src={HERO.url} alt={HERO.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-14">
             <p className="ledger-eyebrow !text-white/80">{W.eyebrow}</p>

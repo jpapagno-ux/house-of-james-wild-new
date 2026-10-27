@@ -126,3 +126,14 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .journal-pull { margin-block: 3.5rem 1rem; padding-top: 2rem; border-top: 1px solid rgb(var(--jw-accent) / .5); }
 .journal-pull blockquote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.3; text-wrap: balance; }
 @media (min-width: 768px) { .journal-pull blockquote p { font-size: 2.2rem; } }
+/* The closing quote set over a high-key photograph that fades into the paper. */
+.journal-lion { position: relative; background: #F4F1ED; }
+.journal-lion-art { position: relative; width: 100%; aspect-ratio: 16 / 10; max-height: 92vh; }
+.journal-lion-text { padding-top: 1.5rem; }
+.journal-lion blockquote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.28; text-wrap: balance; }
+@media (min-width: 900px) {
+  .journal-lion-art { aspect-ratio: 16 / 10; }
+  .journal-lion-text { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding-top: 0; }
+  .journal-lion-text > * { max-width: 40%; }
+  .journal-lion blockquote p { font-size: clamp(2rem, 2.6vw, 2.75rem); }
+}

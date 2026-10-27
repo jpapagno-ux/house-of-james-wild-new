@@ -11,6 +11,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import StayFilm from "@/components/booking/StayFilm";
 import Signature from "@/components/record/Signature";
 import { Blocks, parse, sections, words } from "@/components/journal/Prose";
+import LoopVideo from "@/components/journal/LoopVideo";
 import { POSTS, journalPath, type JournalFigure, type JournalImage, type JournalPost } from "@/lib/content/journal/posts";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
@@ -28,19 +29,22 @@ export function generateStaticParams() { return Object.keys(POSTS).map((slug) =>
 export async function generateMetadata({ params }: P) {
   const { slug } = await params; const p = POSTS[slug];
   if (!p) return {};
-  const m = buildMetadata({ title: p.seoTitle, description: p.description, path: journalPath(p.slug), image: { url: p.hero.url, alt: p.hero.alt }, type: "article", noindex: !p.approved });
+  const m = buildMetadata({ title: p.seoTitle, description: p.description, path: journalPath(p.slug), image: { url: abs(p.hero.url), alt: p.hero.alt }, type: "article", noindex: !p.approved });
   return { ...m, keywords: p.keywords, openGraph: { ...m.openGraph, type: "article", publishedTime: p.published, modifiedTime: p.modified, authors: [absoluteUrl("/about/founder")] } };
 }
 
+const abs = (u: string) => (u.startsWith("/") ? absoluteUrl(u) : u);
 const fmt = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
 function Fig({ img, sizes, className = "", ratio }: { img: JournalImage; sizes: string; className?: string; ratio?: string }) {
   return (
     <figure className={className}>
       <div className="relative overflow-hidden bg-ink/5" style={{ aspectRatio: ratio ?? `${img.w} / ${img.h}` }}>
-        <Image src={img.url} alt={img.alt} fill sizes={sizes} quality={90} className="object-cover" />
+        {img.video
+          ? <LoopVideo src={img.video} poster={img.url} label={img.alt} className="absolute inset-0 w-full h-full object-cover" />
+          : <Image src={img.url} alt={img.alt} fill sizes={sizes} quality={85} className="object-cover" />}
       </div>
-      {img.caption && <figcaption className="mt-3 text-[14px] leading-snug ledger-muted italic max-w-2xl">{img.caption}</figcaption>}
+      {(img.caption || img.credit) && <figcaption className="mt-3 text-[14px] leading-snug ledger-muted italic max-w-2xl">{img.caption}{img.credit && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{img.credit}</span>}</figcaption>}
     </figure>
   );
 }
@@ -51,9 +55,9 @@ function Figure({ f }: { f: JournalFigure }) {
     return (
       <figure className="journal-bleed my-14 md:my-20">
         <div className="relative w-full h-[62vh] md:h-[86vh] min-h-[360px] max-h-[980px] overflow-hidden bg-ink">
-          <Image src={img.url} alt={img.alt} fill sizes="100vw" quality={90} className="object-cover" />
+          <Image src={img.url} alt={img.alt} fill sizes="100vw" quality={85} className="object-cover" />
         </div>
-        {img.caption && <figcaption className="max-w-ledger mx-auto px-5 md:px-10 mt-3 text-[14px] ledger-muted italic">{img.caption}</figcaption>}
+        {(img.caption || img.credit) && <figcaption className="max-w-ledger mx-auto px-5 md:px-10 mt-3 text-[14px] ledger-muted italic">{img.caption}{img.credit && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{img.credit}</span>}</figcaption>}
       </figure>
     );
   }
@@ -95,7 +99,7 @@ export default async function JournalPostPage({ params }: P) {
       description: p.description,
       url,
       mainEntityOfPage: url,
-      image: [p.hero.url, ...p.figures.flatMap((f) => f.images.map((i) => i.url))],
+      image: [p.hero.url, ...p.figures.flatMap((f) => f.images.map((i) => i.url))].map(abs),
       datePublished: p.published,
       dateModified: p.modified,
       wordCount: words(p.body),
@@ -131,7 +135,7 @@ export default async function JournalPostPage({ params }: P) {
       <main id="main" className="pb-16">
         {/* Hero: the photograph, full width, with the title set over its foot. */}
         <header className="relative w-full h-[88svh] min-h-[560px] max-h-[1100px] overflow-hidden bg-ink text-white">
-          <Image src={p.hero.url} alt={p.hero.alt} fill priority sizes="100vw" quality={90} className="object-cover" />
+          <Image src={p.hero.url} alt={p.hero.alt} fill priority sizes="100vw" quality={85} className="object-cover object-[50%_68%]" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/35" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0">
             <div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-16">
@@ -173,13 +177,22 @@ export default async function JournalPostPage({ params }: P) {
                 <section id={s.id === "lead" ? undefined : s.id} className="journal-col journal-prose scroll-mt-28" aria-labelledby={s.title ? `${s.id}-h` : undefined}>
                   {s.title && <h2 id={`${s.id}-h`} className="ledger-display">{s.title}</h2>}
                   <Blocks blocks={s.blocks} lead={s.id === "lead"} />
-                  {p.pull?.after === s.id && (
+                  {p.pull?.after === s.id && !p.pull.image && (
                     <figure className="journal-pull">
                       <blockquote><p>{p.pull.text}</p></blockquote>
                       <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">{p.close} · Founder, James Wild &amp; Co</span></figcaption>
                     </figure>
                   )}
                 </section>
+                {p.pull?.after === s.id && p.pull.image && (
+                  <figure className="journal-lion my-16 md:my-24" aria-label="From James">
+                    <div className="journal-lion-art"><Image src={p.pull.image.url} alt={p.pull.image.alt} fill sizes="100vw" quality={85} className="object-cover object-right" /></div>
+                    <div className="journal-lion-text max-w-ledger mx-auto px-5 md:px-10">
+                      <blockquote><p>{p.pull.text}</p></blockquote>
+                      <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">{p.close} · Founder, James Wild &amp; Co</span></figcaption>
+                    </div>
+                  </figure>
+                )}
                 {p.film?.after === s.id && <Film p={p} />}
                 {figs.map((f, i) => <Figure key={i} f={f} />)}
               </div>

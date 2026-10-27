@@ -206,6 +206,9 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },
+  // Journal post and House Sessions: approved 27 Oct 2026.
+  { path: "/journal/monwana-couples-first-safari", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/workshops", priority: 0.6, changeFrequency: "weekly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

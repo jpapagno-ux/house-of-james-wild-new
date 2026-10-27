@@ -1,0 +1,884 @@
+{
+ "/": {
+  "canonical": "https://www.jameswildco.com",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Small-Ship Voyages"
+ },
+ "/about": {
+  "canonical": "https://www.jameswildco.com/about",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "About James Wild &amp; Co: Exploring Since 1982, Still Going | James Wild &amp; Co"
+ },
+ "/about/founder": {
+  "canonical": "https://www.jameswildco.com/about/founder",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "James Wild, Founder of James Wild &amp; Co: 44 Years on the Road | James Wild &amp; Co"
+ },
+ "/about/team": {
+  "canonical": "https://www.jameswildco.com/about/team",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Meet the Team: James Wild &amp; Co Travel Advisors | James Wild &amp; Co"
+ },
+ "/advisors/anthony-papagno": {
+  "canonical": "https://www.jameswildco.com/advisors/anthony-papagno",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Anthony Papagno, Travel Advisor at James Wild &amp; Co | James Wild &amp; Co"
+ },
+ "/advisors/kristina-larson": {
+  "canonical": "https://www.jameswildco.com/advisors/kristina-larson",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Kristina Larson, Travel Advisor at James Wild &amp; Co | James Wild &amp; Co"
+ },
+ "/compass": {
+  "canonical": "https://www.jameswildco.com/compass",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "The James Wild Compass: Find Where to Travel, Then Talk to a Person | James Wild &amp; Co"
+ },
+ "/destinations": {
+  "canonical": "https://www.jameswildco.com/destinations",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Destinations: Ten Regions, Vetted Country by Country | James Wild &amp; Co"
+ },
+ "/destinations/africa": {
+  "canonical": "https://www.jameswildco.com/destinations/africa",
+  "h1": 1,
+  "jsonld": 10,
+  "robots": "noindex, nofollow",
+  "title": "Africa: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/africa/south-africa": {
+  "canonical": "https://www.jameswildco.com/destinations/africa/south-africa",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "South Africa: 44 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+ },
+ "/destinations/asia": {
+  "canonical": "https://www.jameswildco.com/destinations/asia",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Asia: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/caribbean-mexico": {
+  "canonical": "https://www.jameswildco.com/destinations/caribbean-mexico",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Caribbean &amp; Mexico: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/central-america": {
+  "canonical": "https://www.jameswildco.com/destinations/central-america",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Central America: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/central-america/costa-rica": {
+  "canonical": "https://www.jameswildco.com/destinations/central-america/costa-rica",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Costa Rica: 12 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+ },
+ "/destinations/europe": {
+  "canonical": "https://www.jameswildco.com/destinations/europe",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Europe: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/oceania": {
+  "canonical": "https://www.jameswildco.com/destinations/oceania",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Oceania: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/polar-antarctica": {
+  "canonical": "https://www.jameswildco.com/destinations/polar-antarctica",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Polar: Antarctica: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/polar-arctic": {
+  "canonical": "https://www.jameswildco.com/destinations/polar-arctic",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Polar: Arctic: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/south-america": {
+  "canonical": "https://www.jameswildco.com/destinations/south-america",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "South America: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/destinations/usa-canada": {
+  "canonical": "https://www.jameswildco.com/destinations/usa-canada",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "USA &amp; Canada: Vetted Stays, Countries and Routes | James Wild &amp; Co"
+ },
+ "/for-advisors": {
+  "canonical": "https://www.jameswildco.com/for-advisors",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Become a Travel Advisor With James Wild &amp; Co: Training, the Ledger, 70% Split | James Wild &amp; Co"
+ },
+ "/gatherings": {
+  "canonical": "https://www.jameswildco.com/gatherings",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Family Residences for Multigenerational Travel | James Wild &amp; Co"
+ },
+ "/journal": {
+  "canonical": "https://www.jameswildco.com/journal",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "The Journal: Captain&#x27;s Log and Field Notes | James Wild &amp; Co"
+ },
+ "/legal/booking-conditions": {
+  "canonical": "https://www.jameswildco.com/legal/booking-conditions",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Booking Conditions | James Wild &amp; Co"
+ },
+ "/legal/privacy": {
+  "canonical": "https://www.jameswildco.com/legal/privacy",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Privacy Policy | James Wild &amp; Co"
+ },
+ "/legal/terms": {
+  "canonical": "https://www.jameswildco.com/legal/terms",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Website Terms of Use | James Wild &amp; Co"
+ },
+ "/overland": {
+  "canonical": "https://www.jameswildco.com/overland",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Overland Routes Designed by James: Costa Rica, Botswana and More | James Wild &amp; Co"
+ },
+ "/overland/costa-rica/two-oceans-one-volcano": {
+  "canonical": "https://www.jameswildco.com/overland/costa-rica/two-oceans-one-volcano",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "12-Day Costa Rica Itinerary: Two Oceans, One Volcano | James Wild &amp; Co"
+ },
+ "/partners": {
+  "canonical": "https://www.jameswildco.com/partners",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Partner With James Wild &amp; Co: Lodges, Reserves, Homes and Small Ships | James Wild &amp; Co"
+ },
+ "/plan": {
+  "canonical": "https://www.jameswildco.com/plan",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Plan Your Journey With James Wild &amp; Co: Enquire or Book a Call | James Wild &amp; Co"
+ },
+ "/plan/iggi": {
+  "canonical": "https://www.jameswildco.com/plan/iggi",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Meet Iggi: Ask James Wild &amp; Co About the Page You&#x27;re On | James Wild &amp; Co"
+ },
+ "/preview/central-america": {
+  "canonical": "https://www.jameswildco.com/preview/central-america",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Central America: Costa Rica, Belize &amp; Panama, Vetted Stays and Routes (preview) | James Wild &amp; Co"
+ },
+ "/preview/costa-rica": {
+  "canonical": "https://www.jameswildco.com/destinations/central-america/costa-rica",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Costa Rica: Vetted Lodges, Rainforest Stays &amp; Resorts | James Wild &amp; Co"
+ },
+ "/preview/gatherings/morukuru-farm-house": {
+  "canonical": "https://www.jameswildco.com/preview/gatherings/morukuru-farm-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Morukuru Farm House, Madikwe: Family Residence (preview) | James Wild &amp; Co"
+ },
+ "/preview/journey-cards": {
+  "canonical": "https://www.jameswildco.com/preview/journey-cards",
+  "h1": 0,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Journeys &amp; voyages on destination pages (preview) | James Wild &amp; Co"
+ },
+ "/preview/price-builder": {
+  "canonical": "https://www.jameswildco.com/preview/price-builder",
+  "h1": 0,
+  "jsonld": 2,
+  "robots": "noindex, nofollow",
+  "title": "Price builder (preview) | James Wild &amp; Co"
+ },
+ "/preview/safaris/londolozi-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/safaris/londolozi-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Londolozi Reserve, Sabi Sand: The Camps (preview) | James Wild &amp; Co"
+ },
+ "/preview/stay/aguas-claras": {
+  "canonical": "https://www.jameswildco.com/preview/stay/aguas-claras",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Aguas Claras, Playa Chiquita: Vetted Caribbean Hideaway (preview) | James Wild &amp; Co"
+ },
+ "/preview/stay/leeu-estates": {
+  "canonical": "https://www.jameswildco.com/preview/stay/leeu-estates",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Leeu Estates, Franschhoek: Live Rates (preview) | James Wild &amp; Co"
+ },
+ "/preview/voyages/aliikai-raja-ampat": {
+  "canonical": "https://www.jameswildco.com/preview/voyages/aliikai-raja-ampat",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Aliikai: 10 Day Raja Ampat North Voyage (preview) | James Wild &amp; Co"
+ },
+ "/safaris": {
+  "canonical": "https://www.jameswildco.com/safaris",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Vetted African Safaris: Reserves and Camps | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lalibela Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/inzolo-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/inzolo-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Inzolo Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/kichaka-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/kichaka-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Kichaka Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/lentaba-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/lentaba-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lentaba Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/marks-camp": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/marks-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Mark&#x27;s Camp, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/mills-manor-residence": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/mills-manor-residence",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Mills Manor Residence, Lalibela Reserve | James Wild &amp; Co"
+ },
+ "/safaris/lalibela-reserve/tree-tops-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/tree-tops-safari-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tree Tops Safari Lodge, Lalibela Reserve | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lion Sands Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/fish-eagle-residence": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/fish-eagle-residence",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Fish Eagle Residence, Lion Sands Reserve | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/hinkwenu-residence": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/hinkwenu-residence",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Hinkwenu Residence, Lion Sands Reserve | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/ivory-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/ivory-lodge",
+  "h1": 1,
+  "jsonld": 10,
+  "robots": "noindex, nofollow",
+  "title": "Ivory Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/narina-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/narina-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Narina Lodge, Lion Sands Reserve | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/river-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/river-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "River Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/lion-sands/tinga-lodge": {
+  "canonical": "https://www.jameswildco.com/safaris/lion-sands/tinga-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tinga Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Londolozi Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve/founders-camp": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/founders-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Founders Camp, Londolozi Reserve | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve/pioneer-camp": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/pioneer-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Pioneer Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve/private-granite-suites": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/private-granite-suites",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Private Granite Suites, Londolozi Reserve | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve/tree-camp": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/tree-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tree Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/safaris/londolozi-reserve/varty-camp": {
+  "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/varty-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Varty Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
+ },
+ "/stays": {
+  "canonical": "https://www.jameswildco.com/stays",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Vetted Luxury Stays: Lodges, Camps, Islands and Houses | James Wild &amp; Co"
+ },
+ "/stays/aguas-claras": {
+  "canonical": "https://www.jameswildco.com/stays/aguas-claras",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Aguas Claras, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/amor-arenal": {
+  "canonical": "https://www.jameswildco.com/stays/amor-arenal",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Amor Arenal, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/arenal-springs-camp-by-nayara": {
+  "canonical": "https://www.jameswildco.com/stays/arenal-springs-camp-by-nayara",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Arenal Springs Camp by Nayara, Costa Rica | James Wild &amp; Co"
+ },
+ "/stays/arenas-del-mar-resort": {
+  "canonical": "https://www.jameswildco.com/stays/arenas-del-mar-resort",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/babylonstoren": {
+  "canonical": "https://www.jameswildco.com/stays/babylonstoren",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Babylonstoren, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/camp-hwange-muddy-teak": {
+  "canonical": "https://www.jameswildco.com/stays/camp-hwange-muddy-teak",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Camp Hwange &amp; Muddy Teak, Zimbabwe: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/cape-cadogan-boutique-hotel": {
+  "canonical": "https://www.jameswildco.com/stays/cape-cadogan-boutique-hotel",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Cape Cadogan Boutique Hotel, South Africa | James Wild &amp; Co"
+ },
+ "/stays/cheetah-plains": {
+  "canonical": "https://www.jameswildco.com/stays/cheetah-plains",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Cheetah Plains Eco\u2011Luxury Private Villas | James Wild &amp; Co"
+ },
+ "/stays/coot-club": {
+  "canonical": "https://www.jameswildco.com/stays/coot-club",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Coot Club, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/dulini-daunara-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/dulini-daunara-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Daunara Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/dulini-leadwood-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/dulini-leadwood-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Leadwood Lodge, South Africa | James Wild &amp; Co"
+ },
+ "/stays/dulini-moya-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/dulini-moya-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Moya Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/dulini-river-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/dulini-river-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Dulini River Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/ellerman-house": {
+  "canonical": "https://www.jameswildco.com/stays/ellerman-house",
+  "h1": 1,
+  "jsonld": 10,
+  "robots": "noindex, nofollow",
+  "title": "Ellerman House Cape Town, South Africa | James Wild &amp; Co"
+ },
+ "/stays/gorongosa-safaris": {
+  "canonical": "https://www.jameswildco.com/stays/gorongosa-safaris",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Gorongosa Safaris Mozambique, Mozambique | James Wild &amp; Co"
+ },
+ "/stays/grootbos-private-nature-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/grootbos-private-nature-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Grootbos Private Nature Reserve, South Africa | James Wild &amp; Co"
+ },
+ "/stays/gwe-gwe-beach-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/gwe-gwe-beach-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Gwe Gwe Beach Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/isla-palenque-resort": {
+  "canonical": "https://www.jameswildco.com/stays/isla-palenque-resort",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Isla Palenque Resort, Panama: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/kura-boutique-resort": {
+  "canonical": "https://www.jameswildco.com/stays/kura-boutique-resort",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Kura Boutique Hotel, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/kwande-private-game-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/kwande-private-game-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Kwandwe Private Game Reserve, South Africa | James Wild &amp; Co"
+ },
+ "/stays/la-cle": {
+  "canonical": "https://www.jameswildco.com/stays/la-cle",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/la-residence": {
+  "canonical": "https://www.jameswildco.com/stays/la-residence",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "La Residence, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/lales-camp-expeditions": {
+  "canonical": "https://www.jameswildco.com/stays/lales-camp-expeditions",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lale\u2019s Camp &amp; Expeditions, Madagascar | James Wild &amp; Co"
+ },
+ "/stays/lalibela-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/lalibela-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/lapa-rios-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/lapa-rios-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lapa Rios Lodge, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/le-quartier-francais": {
+  "canonical": "https://www.jameswildco.com/stays/le-quartier-francais",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/leeu-estates": {
+  "canonical": "https://www.jameswildco.com/stays/leeu-estates",
+  "h1": 1,
+  "jsonld": 12,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/leeu-house": {
+  "canonical": "https://www.jameswildco.com/stays/leeu-house",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/lekkerwater-dehoop": {
+  "canonical": "https://www.jameswildco.com/stays/lekkerwater-dehoop",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Lekkerwater Beach Lodge, South Africa | James Wild &amp; Co"
+ },
+ "/stays/leopard-hills": {
+  "canonical": "https://www.jameswildco.com/stays/leopard-hills",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Leopard Hills Private Game Reserve | James Wild &amp; Co"
+ },
+ "/stays/lion-sands": {
+  "canonical": "https://www.jameswildco.com/stays/lion-sands",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/londolozi-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/londolozi-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/madikwe": {
+  "canonical": "https://www.jameswildco.com/stays/madikwe",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Madikwe Game Reserve, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/monwana-thornybush": {
+  "canonical": "https://www.jameswildco.com/stays/monwana-thornybush",
+  "h1": 1,
+  "jsonld": 12,
+  "robots": "noindex, nofollow",
+  "title": "Monwana Thornybush, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/morukuru-farm-house": {
+  "canonical": "https://www.jameswildco.com/stays/morukuru-farm-house",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/nayara-gardens": {
+  "canonical": "https://www.jameswildco.com/stays/nayara-gardens",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/nayara-tented-camp": {
+  "canonical": "https://www.jameswildco.com/stays/nayara-tented-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/ngala-safari-lodge-by-beyond": {
+  "canonical": "https://www.jameswildco.com/stays/ngala-safari-lodge-by-beyond",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Ngala Safari Lodge by &amp;Beyond, South Africa | James Wild &amp; Co"
+ },
+ "/stays/pacuare-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/pacuare-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Pacuare Lodge, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/pearl-resort-vahine-private-island": {
+  "canonical": "https://www.jameswildco.com/stays/pearl-resort-vahine-private-island",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/phinda-homestead-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/stays/phinda-homestead-by-and-beyond",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Phinda Homestead by &amp;Beyond, South Africa | James Wild &amp; Co"
+ },
+ "/stays/pods-camp-bay": {
+  "canonical": "https://www.jameswildco.com/stays/pods-camp-bay",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Pods Camp Bay, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/royal-malewane": {
+  "canonical": "https://www.jameswildco.com/stays/royal-malewane",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Royal Malewane, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/samara-karoo-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/samara-karoo-reserve",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Samara Karoo Reserve, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/senda-monteverde-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/senda-monteverde-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/singita-boulders": {
+  "canonical": "https://www.jameswildco.com/stays/singita-boulders",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Boulders Lodge, South Africa | James Wild &amp; Co"
+ },
+ "/stays/singita-castleton": {
+  "canonical": "https://www.jameswildco.com/stays/singita-castleton",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Castleton, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/singita-ebony": {
+  "canonical": "https://www.jameswildco.com/stays/singita-ebony",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/singita-ebony-villa": {
+  "canonical": "https://www.jameswildco.com/stays/singita-ebony-villa",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Ebony Villa, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/singita-lebombo": {
+  "canonical": "https://www.jameswildco.com/stays/singita-lebombo",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Lebombo Lodge, South Africa | James Wild &amp; Co"
+ },
+ "/stays/singita-lebombo-villa": {
+  "canonical": "https://www.jameswildco.com/stays/singita-lebombo-villa",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Lebombo Villa, South Africa | James Wild &amp; Co"
+ },
+ "/stays/singita-sweni": {
+  "canonical": "https://www.jameswildco.com/stays/singita-sweni",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Singita Sweni Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tabacon-thermal-resort-spa": {
+  "canonical": "https://www.jameswildco.com/stays/tabacon-thermal-resort-spa",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/tanda-tula": {
+  "canonical": "https://www.jameswildco.com/stays/tanda-tula",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tanda Tula, South Africa: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tengile-mala-mala-camp": {
+  "canonical": "https://www.jameswildco.com/stays/tengile-mala-mala-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tengile MalaMala Camp, South Africa | James Wild &amp; Co"
+ },
+ "/stays/tengile-mala-mala-kirkmans-kamp": {
+  "canonical": "https://www.jameswildco.com/stays/tengile-mala-mala-kirkmans-kamp",
+  "h1": 1,
+  "jsonld": 10,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/tengile-mala-mala-rattrays-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/tengile-mala-mala-rattrays-lodge",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/tengile-mala-mala-sable-camp": {
+  "canonical": "https://www.jameswildco.com/stays/tengile-mala-mala-sable-camp",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": null
+ },
+ "/stays/tengile-river-lodge-by-mala-mala": {
+  "canonical": "https://www.jameswildco.com/stays/tengile-river-lodge-by-mala-mala",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Tengile River Lodge by Mala Mala, South Africa | James Wild &amp; Co"
+ },
+ "/stays/the-art-villa": {
+  "canonical": "https://www.jameswildco.com/stays/the-art-villa",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "The Art Villa, Costa Rica: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tswalu-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/tswalu-reserve",
+  "h1": 1,
+  "jsonld": 10,
+  "robots": "noindex, nofollow",
+  "title": "Tswalu Reserve Kalahari, South Africa | James Wild &amp; Co"
+ },
+ "/the-ledger": {
+  "canonical": "https://www.jameswildco.com/the-ledger",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "The Ledger: How James Wild &amp; Co Vets Every Stay, Ship and Route | James Wild &amp; Co"
+ },
+ "/voyages": {
+  "canonical": "https://www.jameswildco.com/voyages",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Small-Ship Voyages and Sailing Yachts | James Wild &amp; Co"
+ },
+ "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north": {
+  "canonical": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "10-Day Raja Ampat Liveaboard Cruise Aboard Aliikai | James Wild &amp; Co"
+ }
+}

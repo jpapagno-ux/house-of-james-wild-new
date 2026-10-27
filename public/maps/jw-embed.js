@@ -12,8 +12,9 @@
  * stay config:  { destination, name, c:[lng,lat], mark, region, label, note,
  *                 country:[[w,s],[e,n]], area:[[w,s],[e,n]], zoom, residence, others:[], nearby:[], places:[] }
  * atlas config: { destination, title, subtitle, bounds:[[w,s],[e,n]], stays:[], places:[] }
- * itinerary config (journey and voyage pages): { route: "<id>" or the jw-route object inline, accent, region: { name, bounds }, context, autoplay }
- *   context (default on): every stay, vessel launch, reserve and family residence in the region's feed is drawn too.
+ * itinerary config (journey and voyage pages): { route: "<id>" or the jw-route object inline, kind, destination, kicker, caption }
+ *   Draws the animated chart (jw-chart.js + d3) in the frame, over the engraved fallback. Add "engine": "maplibre" for the
+ *   older MapLibre map ({ route, accent, region: { name, bounds }, context, autoplay }; context draws the region's stays too).
  *   Stop cards: any element with data-jw-day="<day>" (and data-jw-for="<map id>") flies the map to that day.
  *   Put the engraved fallback (<figure class="jw-fallback">) inside <div class="jw-frame chart|survey"> in the page HTML:
  *   it shows until the live map has loaded, stays if it can't, and is what search engines and no-JS readers see.
@@ -175,7 +176,46 @@
   // config: { route: "<id>" | {jw-route}, accent, region: { name, bounds }, context: true, autoplay }
   // Controls: Route · Country · Region zoom steps (top left), layer toggles in the legend, and any [data-day] button
   // on the page (the stop cards under the map) flies the map to that day.
+  /* ---------- itinerary: the animated chart (HJW-01) ----------
+     Journey and voyage pages draw the route on the animated chart (jw-chart.js + d3 7.8.5, both in /maps,
+     loaded only when the map nears the screen). It sits in the page's existing chart or survey frame, in place
+     of the engraved figure, which stays in the HTML for search engines and no-JS readers and comes back if the
+     chart can't load. The route ink is the map block's --jw-acc. Stop cards with data-jw-day still fly the chart
+     to that day. { "engine": "maplibre" } in the config keeps the older MapLibre map. */
+  var chartReady = null;
+  function chartLib() {
+    if (!chartReady) {
+      css(BASE + "jw-chart.css");
+      chartReady = (window.d3 && window.d3.geoOrthographic ? Promise.resolve() : js(BASE + "vendor/d3.min.js"))
+        .then(function () { return window.JWChart ? 0 : js(BASE + "jw-chart.js"); });
+    }
+    return chartReady;
+  }
   function itinerary(root, o) {
+    if (o.engine === "maplibre") return itineraryMapLibre(root, o);
+    var frame = root.querySelector(".jw-frame") || root;
+    var fb = frame.querySelector(".jw-fallback");
+    var host = el("div", "jwc-host");
+    if (fb && fb.parentNode) fb.parentNode.insertBefore(host, fb.nextSibling); else frame.appendChild(host);
+    var acc = (getComputedStyle(root).getPropertyValue("--jw-acc") || "").trim();
+    var route = o.route, kind = o.kind || (route && route.type === "overland" ? "overland" : "voyage");
+    var pal = {};
+    if (acc) { pal.vol = acc; pal.roseInk = acc; pal.col = { a: acc, s: acc, w: acc, l: acc, f: acc, h: acc }; }
+    chartLib().then(function () {
+      return window.JWChart.mount(host, { routes: o.routes || [route], dest: o.destination, kind: kind, kicker: o.kicker, caption: o.caption, alt: o.alt, palette: pal, chart: o.chart });
+    }).then(function () {
+      if (!host.querySelector("#globe")) throw new Error("chart did not mount");
+      if (fb) fb.style.display = "none";
+      root.classList.add("jw-live", "jw-chart-live");
+      document.addEventListener("click", function (ev) {
+        var b = ev.target && ev.target.closest && ev.target.closest("[data-jw-day]");
+        if (!b || (b.getAttribute("data-jw-for") && b.getAttribute("data-jw-for") !== root.id)) return;
+        var top = root.getBoundingClientRect().top; if (top < 0 || top > innerHeight * .5) root.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
+        if (window.chartDay) window.chartDay("R0", +b.getAttribute("data-jw-day"));
+      });
+    }).catch(function (e) { host.remove(); if (fb) fb.style.display = ""; root.classList.add("jw-failed"); if (window.console) console.warn("jw-chart", e); });
+  }
+  function itineraryMapLibre(root, o) {
     var frame = root.querySelector(".jw-frame") || root.appendChild(el("div", "jw-frame survey"));
     var fb = frame.querySelector(".jw-fallback"), art = fb && fb.querySelector("svg");
     var getRoute = typeof o.route === "string" ? fetch(BASE + "routes/" + o.route + ".json").then(function (r) { return r.json(); }) : Promise.resolve(o.route);

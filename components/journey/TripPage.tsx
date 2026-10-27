@@ -27,8 +27,8 @@ import VoyageTag from "@/components/notes/VoyageTag";
 // One component, two section orders from the wireframe:
 //   overland: map · experiences · overview · who it suits · day by day · stays · included · price · film · faq · related · enquire
 //   voyage:   vessel & cabins · map · in short · dates & rates · sailed by the founder · who · days · experiences · the fare · price · meet the crew · faq · related · enquire (James, 26 Oct)
-// The live house map (MapLibre) loads over an engraved figure that is in the
-// HTML from the start, so search engines and no-JS readers get the route too.
+// The animated route chart (public/maps/jw-chart.js, HJW-01) loads in place of an engraved
+// figure that is in the HTML from the start, so search engines and no-JS readers get the route too.
 // Anything still in [square brackets] is shown, marked, until it is confirmed.
 
 /** Text with every [to confirm] marked. */
@@ -86,7 +86,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   /* ---------- sections ---------- */
   const Map = (
     <Sec id="route">
-      <SectionHead eyebrow={T.map_eyebrow} title={T.map_title} icon={voyage ? "wave" : "mountain-sun"} intro={!mapHtml ? "The stops in order. The engraved chart for these waters is on the way." : voyage ? "Tap a day in the log and the chart sails there. Every stay and launch nearby is drawn in, so you can see what else is close." : "Tap a day below and the map flies there. Every stay the Ledger holds nearby is drawn in, so you can see what else is close."} />
+      <SectionHead eyebrow={T.map_eyebrow} title={T.map_title} icon={voyage ? "wave" : "mountain-sun"} intro={!mapHtml ? "The stops in order. The engraved chart for these waters is on the way." : voyage ? "Tap a day in the log and the chart sails there, or let it play the voyage through, day by day." : "Tap a day below and the chart flies there, or let it play the journey through, day by day."} />
       <p className="mt-2 font-mono text-[11px] tracking-[0.12em] ledger-muted">{T.map_coord}</p>
       {mapHtml ? (
         <>

@@ -41,6 +41,7 @@ import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
 import { sessionsFor } from "@/lib/content/workshops";
 import { collectionForStay, offerForStay } from "@/lib/content/collections/cayuga";
+import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -146,6 +147,14 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
               <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
+            </section>
+          )}
+          {routesThrough(s.slug).length > 0 && (
+            <section aria-label="On these routes" className="mt-16">
+              <p className="ledger-eyebrow ledger-crimson">On these routes</p>
+              <ul className="mt-3 grid md:grid-cols-2 gap-4">
+                {routesThrough(s.slug).map((t) => <li key={t.id}><Link href={t.seo.path} className="block border ledger-border hover:border-crimson/60 p-5"><span className="ledger-display text-[1.35rem]">{t.h1}</span><span className="block text-[14px] ledger-muted mt-1">{t.sub}</span><span className="block text-[15px] mt-2">{t.herofacts[1]?.[1]}</span></Link></li>)}
+              </ul>
             </section>
           )}
           {collectionForStay(s.slug) && (

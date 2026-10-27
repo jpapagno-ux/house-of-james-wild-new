@@ -11,6 +11,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { CAYUGA, GALLERY, OFFER_PROGRAMS, liveOffers } from "@/lib/content/collections/cayuga";
 import { POST_LIST } from "@/lib/content/journal/posts";
+import { TRIPS } from "@/lib/content/trips";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
@@ -38,6 +39,7 @@ export default async function CollectionPage({ params }: P) {
   if (!c) notFound();
   const posts = POST_LIST.filter((p) => p.stays.some((s) => c.hotels.some((h) => h.slug === s.slug)));
   const offers = liveOffers();
+  const routes = Object.values(TRIPS).filter((t) => (t.offerRefs ?? []).some((r) => c.hotels.some((h) => h.slug === r)));
   const slugOf = (name: string) => c.hotels.find((h) => h.name === name);
   const facts: [string, string][] = [["Hotels", String(c.hotels.length)], ["Countries", String(c.countries.length)], ["Founded", c.founded], ["Founders", c.founders.join(" & ")]];
   const url = absoluteUrl(c.path);
@@ -128,6 +130,25 @@ export default async function CollectionPage({ params }: P) {
               {c.pairings.map((p) => <li key={p.title} className="border-t-2 border-crimson pt-4"><h3 className="ledger-display text-[1.25rem]">{p.title}</h3><p className="mt-1 ledger-eyebrow">{p.hotels.join(" + ")}</p><p className="mt-2 text-[15.5px] leading-relaxed ledger-muted">{p.line}</p></li>)}
             </ul>
           </section>
+
+          {routes.length > 0 && (
+            <section id="routes" aria-labelledby="routes-h" className={SEC}>
+              <p className="ledger-eyebrow ledger-crimson">Trips built on these hotels</p>
+              <h2 id="routes-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">The Founder&rsquo;s Line Since 1992</h2>
+              <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">Three routes James designed using only Cayuga hotels, with a board waiting at the coast and a day at Dominical, where his Costa Rica began.</p>
+              <ul className="mt-8 grid md:grid-cols-3 gap-5">
+                {routes.map((t) => (
+                  <li key={t.id}><Link href={t.seo.path} className="group block h-full border ledger-border hover:border-crimson/60 transition-colors p-5 md:p-6">
+                    <p className="ledger-eyebrow ledger-crimson">{t.herofacts[0]?.[1]} · {t.meta.find(([k]) => k === "Journey code")?.[1]}</p>
+                    <h3 className="ledger-display text-[1.35rem] leading-tight mt-1">{t.sub.split(" · ").slice(2).join(" · ") || t.sub}</h3>
+                    <p className="text-[14px] ledger-muted mt-1">{t.herofacts[1]?.[1]}</p>
+                    <p className="mt-3 text-[15.5px] leading-relaxed">{t.slides[0]?.line}</p>
+                    <span className="mt-4 inline-flex items-center gap-2 ledger-crimson text-[15px]">See the route <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>
+                  </Link></li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {offers.length > 0 && (
             <section id="offers" aria-labelledby="offers-h" className={SEC}>

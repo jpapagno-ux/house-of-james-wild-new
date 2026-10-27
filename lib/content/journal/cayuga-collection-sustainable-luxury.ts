@@ -171,4 +171,6 @@ James Wild & Co brings together places where the setting, people and reason for 
 
 With 44 years in travel and more than three decades of personal history in Central America, I know how easily a beautiful itinerary can become overfilled. Our work is to choose fewer places more carefully and let each one reveal why it belongs.
 
-Each Cayuga hotel runs its own offer. [Kura](/stays/kura-boutique-resort), for one, gives you four nights for the price of three on stays until 19 December 2026. The 2027 offers are being updated now, so ask us for the current terms and we'll match the offer to the right hotel. The rest are on [the Cayuga Collection page](/collections/cayuga-collection#offers).`;
+Each Cayuga hotel runs its own offer. [Kura](/stays/kura-boutique-resort), for one, gives you four nights for the price of three on stays until 19 December 2026. The 2027 offers are being updated now, so ask us for the current terms and we'll match the offer to the right hotel. The rest are on [the Cayuga Collection page](/collections/cayuga-collection#offers).
+
+If you'd rather I drew the route, [The Founder's Line Since 1992](/overland/costa-rica/the-founders-line-7-days) is the one I'd hand a friend: seven days on Cayuga hotels from the cloud forest to the south Pacific, with a board waiting near Dominical. Have ten days? Take it [across the border to Isla Palenque](/overland/costa-rica/the-founders-line-10-days), or [coast to coast from the Caribbean](/overland/costa-rica/the-founders-line-coast-to-coast).`;

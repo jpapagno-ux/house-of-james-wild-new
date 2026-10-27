@@ -1,0 +1,1084 @@
+{
+ "title": "The Founder's Line Since 1992 · 10 Days",
+ "H": 10400,
+ "crumbs": [
+  "Home",
+  "Overland",
+  "Costa Rica",
+  "The Founder's Line · 10 Days"
+ ],
+ "side": [
+  [
+   "S",
+   "San José",
+   "arrive SJO",
+   "Private driver to the Caribbean"
+  ],
+  [
+   "1",
+   "Playa Chiquita",
+   "Days 1–3",
+   "Across the country"
+  ],
+  [
+   "2",
+   "Monteverde",
+   "Days 4–6",
+   "Down to the Pacific"
+  ],
+  [
+   "3",
+   "Manuel Antonio",
+   "Days 7–9",
+   "Dominical day"
+  ],
+  [
+   "E",
+   "Home",
+   "Day 10",
+   "Out through San José or Quepos"
+  ]
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2027-[______]</span>",
+ "h1": "The Founder's Line Since 1992",
+ "h1note": "H1 · title tag: 10-Day Costa Rica Coast to Coast Itinerary: The Founder's Line Since 1992",
+ "sub": "10 Days · 9 Nights · Costa Rica, Caribbean to Pacific",
+ "meta": [
+  [
+   "Journey code",
+   "JW-CR-F10C"
+  ],
+  [
+   "Country",
+   "Costa Rica"
+  ],
+  [
+   "Duration",
+   "10 days / 9 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · private driver"
+  ],
+  [
+   "In · Out",
+   "San José (SJO) · San José or Quepos"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose"
+  ],
+  [
+   "Best months",
+   "Feb–Apr and Sep–Oct for both coasts [confirm]"
+  ],
+  [
+   "Vetted by",
+   "James Wild · surf travel since 1992"
+  ]
+ ],
+ "mark1": "Surf travel<br>since 1992",
+ "mark2": "since 1992",
+ "markline": "James has pioneered surf travel in Costa Rica since 1992.",
+ "heroalt": "The Caribbean coast and reef near Playa Chiquita from the air",
+ "herolabel": "",
+ "quote": "\"Leave a day for Dominical. That's where I started, and the waves still don't care who you are.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "answer": "The Founder's Line Since 1992, Coast to Coast, is a 10-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
+ "striptitle": "Ten days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#2F6E73"
+  ],
+  [
+   "D2",
+   "#2F6E73"
+  ],
+  [
+   "D3",
+   "#2F6E73"
+  ],
+  [
+   "D4",
+   "#7C9488"
+  ],
+  [
+   "D5",
+   "#7C9488"
+  ],
+  [
+   "D6",
+   "#7C9488"
+  ],
+  [
+   "D7",
+   "#B08A3E"
+  ],
+  [
+   "D8",
+   "#B08A3E"
+  ],
+  [
+   "D9",
+   "#B08A3E"
+  ],
+  [
+   "D10",
+   "#1F1D1B"
+  ]
+ ],
+ "stripcols": "3fr 3fr 3fr 1fr",
+ "strip_labels": [
+  "Playa Chiquita · Caribbean",
+  "Monteverde · cloud",
+  "Manuel Antonio · Pacific",
+  "Home"
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Founder's Line Since 1992",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "San José to the Caribbean",
+   "line": "Private driver over the mountains · ~4 hr",
+   "body": "Met at San José airport and driven down through the rainforest to the Caribbean coast. By evening you're at Aguas Claras near Puerto Viejo, where the colour, the music and the food are a different country from the Pacific.",
+   "stay": "Aguas Claras",
+   "meals": "[Confirm with the hotel]",
+   "move": "Private driver · ~4 hr",
+   "acts": "Arrival · first Caribbean evening",
+   "img": "PHOTO · THE CARIBBEAN",
+   "imgAlt": "The Caribbean coast and reef near Playa Chiquita from the air",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Playa Chiquita",
+   "stageMeta": "DAYS 1–3 · 3 NIGHTS · CARIBBEAN",
+   "mark": ""
+  },
+  {
+   "n": "DAY 02",
+   "title": "The reef at Playa Chiquita",
+   "line": "Swim from the beach",
+   "body": "At low tide the reef makes clear pools you can swim in from the beach. Afternoon on a bicycle into Puerto Viejo, or a ride along the sand.",
+   "stay": "Aguas Claras",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot · bicycle",
+   "acts": "Reef swim · Puerto Viejo",
+   "img": "PHOTO · THE REEF AT PLAYA CHIQUITA",
+   "imgAlt": "A swimmer in a clear tide pool on the reef at Playa Chiquita, near Aguas Claras",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "The Caribbean surf day",
+   "line": "A board waiting on the other coast",
+   "body": "A board sized for you and a local surf guide who knows the Caribbean side's reef breaks and when to leave them alone. Or the beach on horseback.",
+   "stay": "Aguas Claras",
+   "meals": "[Confirm with the hotel]",
+   "move": "Short drive",
+   "acts": "Surf · beach ride",
+   "img": "PHOTO · CARIBBEAN BEACH RIDE",
+   "imgAlt": "A rider galloping a horse along a Caribbean beach",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "Across the country",
+   "line": "Caribbean to the cloud forest · a long day",
+   "body": "The longest day: across the country from the Caribbean to Monteverde by private driver, about 6.5 hours with a lunch stop [we may suggest a small charter flight to shorten it; confirm]. You arrive at Senda for the evening.",
+   "stay": "Senda Monteverde",
+   "meals": "[Confirm with the hotel]",
+   "move": "Private driver · ~6.5 hr, or a charter flight [confirm]",
+   "acts": "Across the country · arrival",
+   "img": "PHOTO · ACROSS THE COUNTRY",
+   "imgAlt": "A guest with coffee on a balcony in the cloud forest at Senda Monteverde",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Monteverde",
+   "stageMeta": "DAYS 4–6 · 3 NIGHTS · CLOUD FOREST",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "The Aguti trails",
+   "line": "Walk as far as your legs go",
+   "body": "Senda guests walk the neighbouring Aguti Wildlife Reserve as often as they like. Go early with a naturalist, and take the night walk after dark when the frogs come out.",
+   "stay": "Senda Monteverde",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot",
+   "acts": "Aguti reserve walk · night walk",
+   "img": "PHOTO · THE AGUTI TRAILS",
+   "imgAlt": "Birders looking up at a giant buttressed tree at Senda Monteverde",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 06",
+   "title": "Quetzal at dawn",
+   "line": "A birding guide and a telescope",
+   "body": "Out at first light for the quetzal, then a free afternoon in the hot pools in the forest.",
+   "stay": "Senda Monteverde",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot",
+   "acts": "Birding at dawn · hot pools",
+   "img": "PHOTO · QUETZAL AT DAWN",
+   "imgAlt": "A resplendent quetzal in flight among cloud-forest trees at Senda Monteverde",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 07",
+   "title": "Down to the Pacific",
+   "line": "Private driver to Manuel Antonio · ~4 hr",
+   "body": "Down from the mountains to the second ocean. By afternoon you're at Arenas del Mar, where the rainforest runs straight onto two beaches.",
+   "stay": "Arenas del Mar",
+   "meals": "[Confirm with the hotel]",
+   "move": "Private driver · ~4 hr",
+   "acts": "Arrival · the beach",
+   "img": "PHOTO · DOWN TO THE PACIFIC",
+   "imgAlt": "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air",
+   "head": true,
+   "stage": "St 03",
+   "stageName": "Manuel Antonio",
+   "stageMeta": "DAYS 7–9 · 3 NIGHTS · PACIFIC",
+   "mark": ""
+  },
+  {
+   "n": "DAY 08",
+   "title": "Manuel Antonio",
+   "line": "The park with a naturalist, then the beach",
+   "body": "Into Manuel Antonio National Park early with a naturalist [park days and hours to confirm]. The afternoon is the beach's.",
+   "stay": "Arenas del Mar",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot · short drive",
+   "acts": "National park walk · beach",
+   "img": "PHOTO · MANUEL ANTONIO",
+   "imgAlt": "A long curved beach backed by rainforest, seen from the hillside at Arenas del Mar",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 09",
+   "title": "The founder's day",
+   "line": "Dominical, and a board if you want one",
+   "body": "South along the coast to Dominical, about 45 minutes, where James sat for his 1995 photo. Lunch by the beach; surfers take the board that's waiting and a local guide to James's break.",
+   "stay": "Arenas del Mar",
+   "meals": "[Confirm with the hotel]",
+   "move": "Private driver · ~45 min each way",
+   "acts": "Dominical · surf · lunch",
+   "img": "PHOTO · DOMINICAL, 1995",
+   "imgAlt": "Polaroid of James relaxing on a beach in a patterned shirt, Dominical, Costa Rica, 1995",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 10",
+   "title": "Home",
+   "line": "Out through San José or Quepos",
+   "body": "A short flight from Quepos to San José, or the drive back, about 3 hours [confirm], and the flight home.",
+   "stay": "—",
+   "meals": "—",
+   "move": "Domestic flight or private driver",
+   "acts": "Departure",
+   "img": "PHOTO · HOME",
+   "imgAlt": "Footprints in the sand on a beach looking out to small islands at Arenas del Mar",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "incl": [
+  "Nine nights at Aguas Claras, Senda Monteverde and Arenas del Mar [room categories on file]",
+  "A private driver for every road leg, including the Dominical day",
+  "Naturalist walk in the Aguti reserve [confirm]",
+  "Any current hotel offer that fits your dates, applied at booking",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to and from San José",
+  "A charter flight across the country, if you choose it",
+  "Travel insurance",
+  "Meals not marked as included [confirm per hotel]",
+  "Gratuities for guides and drivers",
+  "Surf boards and guides, unless added"
+ ],
+ "founder": {
+  "eyebrow": "Vetted & designed by the founder",
+  "title": "Surf travel since 1992. Cayuga since 1994.",
+  "p1": "James has pioneered surf travel in Costa Rica since 1992, when the boards rode on the roof and the coast road was mostly a rumour. He has followed Hans Pfister, Cayuga's co-founder, since 1994, from his early days selling these lodges.",
+  "p2": "This is the coast-to-coast version: the Caribbean first, for colour and a reef you can swim from the beach, then the cloud forest, then the Pacific and a day at Dominical, where his 1995 photo was taken. A board waits on both coasts.",
+  "film": "Founder's film · The Founder's Line Since 1992 [VIDEO TO RECORD]",
+  "extra": "<a href=\"https://res.cloudinary.com/jhlnq5h5/image/upload/v1792871347/costa-rica-field-guide-james-wild-co.pdf\" target=\"_blank\" rel=\"noopener\" style=\"margin-top: 18px; display: inline-flex; align-items: center; gap: 12px; border: 1px solid #1F1D1B; padding: 12px 16px; text-decoration: none; color: #1F1D1B; background: #F8F9F5\"><span class=\"mono\" style=\"font-size: 10px; border: 1px solid #1F1D1B; padding: 8px 6px\">PDF</span><span><span class=\"mono\" style=\"display: block; font-size: 11px; letter-spacing: .14em; color: #6B4A33\">FIELD GUIDE NO. 03</span><span class=\"disp\" style=\"font-size: 18px\">Costa Rica, the Long Way Round</span></span></a>"
+ },
+ "faqs": [
+  [
+   "Can you see both coasts of Costa Rica in 10 days?",
+   "Yes. Three nights on the Caribbean, three in the cloud forest and three on the Pacific is the right pace. The one long day is crossing the country, which a short charter flight can shorten."
+  ],
+  [
+   "What's the difference between Costa Rica's Caribbean and Pacific coasts?",
+   "The Caribbean side around Puerto Viejo is greener, wetter and Afro-Caribbean in its food and music; the Pacific is drier in the dry season, with bigger resort towns and national parks like Manuel Antonio. This route gives you both."
+  ],
+  [
+   "Which Cayuga hotels does this route use?",
+   "Aguas Claras on the Caribbean, Senda Monteverde in the cloud forest and Arenas del Mar at Manuel Antonio, all part of the Cayuga Collection."
+  ],
+  [
+   "When is the best time to visit both coasts?",
+   "The coasts keep different weather. February to April and September to October are often good on both sides; we check the season for your dates [confirm]."
+  ],
+  [
+   "Can I surf on both coasts?",
+   "Yes. A board waits on each coast with a local surf guide: the Caribbean side's reef breaks on Day 3, and a break James has surfed since the early days near Dominical on Day 9."
+  ],
+  [
+   "Are there offers on this route?",
+   "Often. In 2026 Aguas Claras has stay 4 nights, pay 3 (not in October) if you add a night, Senda Monteverde has stay 3 nights, pay 2, and booking Senda and Arenas del Mar together brings a free room upgrade, subject to availability."
+  ]
+ ],
+ "reltitle": "From the same guide",
+ "related": [
+  [
+   "JW-CR-F07 · 7 DAYS",
+   "The Founder's Line Since 1992 · 7 days",
+   "Senda Monteverde and Kura, with a day at Dominical."
+  ],
+  [
+   "JW-CRPA-F10 · 10 DAYS",
+   "The Founder's Line Since 1992 · 10 days",
+   "Arenas del Mar, then by land to Panama's Isla Palenque."
+  ],
+  [
+   "THE COLLECTION",
+   "The Cayuga Collection",
+   "All seven hotels, who each suits and how to pair them."
+  ]
+ ],
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "slides": [
+  {
+   "kicker": "The Founder's Line Since 1992 · Coast to Coast",
+   "title": "Caribbean, cloud forest, Pacific",
+   "line": "Three Cayuga hotels across the whole country, with a board waiting on both coasts.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#2F6E73 0%,#7C9488 50%,#D9BF85 100%)"
+  }
+ ],
+ "feat_title": "Stays and experiences on this journey",
+ "features": [
+  [
+   "Stay",
+   "Aguas Claras",
+   "Art-filled cottages on the Caribbean."
+  ],
+  [
+   "Experience",
+   "The reef at Playa Chiquita",
+   "Swim from the beach at low tide."
+  ],
+  [
+   "Stay",
+   "Senda Monteverde",
+   "Cloud forest beside the Aguti reserve."
+  ],
+  [
+   "Experience",
+   "Quetzal at dawn",
+   "A birding guide and a telescope."
+  ],
+  [
+   "Stay",
+   "Arenas del Mar",
+   "Rainforest beside two beaches."
+  ],
+  [
+   "Experience",
+   "Dominical, 1995",
+   "Where the founder's photo was taken."
+  ],
+  [
+   "Experience",
+   "A board on both coasts",
+   "And a local guide on each."
+  ]
+ ],
+ "approve": {
+  "title": "Both coasts, and the mountain between",
+  "seal_bottom": "COSTA RICA · SURF SINCE 1992",
+  "seal_mark": "CAYUGA SINCE 1994",
+  "why": [
+   "James has pioneered surf travel in Costa Rica since 1992 and followed Cayuga's founder since 1994; this is the route for people who want the whole country.",
+   "Three places, three nights each: the Caribbean, the cloud forest and the Pacific.",
+   "A board waits on both coasts, and the trip ends at Dominical, where his Costa Rica began."
+  ],
+  "quote": "Most people pick a coast. Take both. They don't even speak the same accent."
+ },
+ "map_eyebrow": "The route, drawn",
+ "map_title": "Caribbean to Pacific",
+ "map_coord": "9°56′N 84°05′W · JW-CR-F10C",
+ "navon": "Overland",
+ "herofacts": [
+  [
+   "Duration",
+   "10 days · 9 nights"
+  ],
+  [
+   "Route",
+   "San José → Playa Chiquita → Monteverde → Manuel Antonio"
+  ],
+  [
+   "Travel",
+   "Private driver"
+  ],
+  [
+   "Best",
+   "Feb–Apr · Sep–Oct [confirm]"
+  ]
+ ],
+ "overview_title": "The whole country, coast to coast, the founder's way",
+ "dates_head": [
+  "Rates",
+  "Priced to your dates",
+  "Offers applied when they fit"
+ ],
+ "suits": [
+  [
+   "Returning Costa Rica travellers",
+   "You've done one coast. Do the other one properly.",
+   "The Caribbean side is a different country from the Pacific."
+  ],
+  [
+   "Creative travellers",
+   "Art-filled cottages, then a cloud forest, then the beach.",
+   "Aguas Claras is built for people who like colour and music."
+  ],
+  [
+   "Surfers, old and new",
+   "A board waiting and a guide who knows the break.",
+   "The founder's surf day is built into the route."
+  ],
+  [
+   "Families with older children",
+   "Reef swims, night walks, sloths and a beach.",
+   "Every stop has something for children who like to explore."
+  ]
+ ],
+ "twice": [
+  [
+   "In a hurry",
+   "Crossing the country is a whole day.",
+   "Take the 7-day version, or fly the long leg."
+  ],
+  [
+   "Limited mobility",
+   "Forest trails, reef rocks and one long drive.",
+   "Tell us, and we'll fly the long leg and keep the walks gentle."
+  ]
+ ],
+ "exp_title": "What you will do, stop by stop",
+ "lodges_title": "Three Cayuga hotels, coast to coast",
+ "lodges": [
+  {
+   "name": "Aguas Claras",
+   "line": "Playa Chiquita · Caribbean coast · Days 1–3",
+   "chips": [
+    "3 nights",
+    "Cayuga Collection"
+   ],
+   "photos": [
+    "Aguas Claras cottage",
+    "The colourful restaurant",
+    "Pool below the main house"
+   ],
+   "body": "Nine bungalows and six suites near Puerto Viejo, each one a living art installation in the jungle, Cayuga says. The Caribbean side of Costa Rica: colour, music, food and a reef you can swim from the beach.",
+   "rows": [
+    [
+     "Location",
+     "Playa Chiquita, near Puerto Viejo"
+    ],
+    [
+     "Nights",
+     "3 · Days 1–3"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "Private driver from San José, ~4 hr"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/aguas-claras\">Aguas Claras</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Senda Monteverde",
+   "line": "Monteverde · cloud forest · Days 4–6",
+   "chips": [
+    "3 nights",
+    "Cayuga Collection"
+   ],
+   "photos": [
+    "Senda from the balcony",
+    "Hot pools in the forest",
+    "Restaurant at dusk"
+   ],
+   "body": "A cloud-forest hotel beside the Aguti Wildlife Reserve, with unlimited hiking for guests, hot pools in the trees and a restaurant that lights up at dusk. Cayuga calls it the hotel for the down-to-earth explorer.",
+   "rows": [
+    [
+     "Location",
+     "Monteverde, beside the Aguti Wildlife Reserve"
+    ],
+    [
+     "Nights",
+     "3 · Days 4–6"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "Private driver from the Caribbean, ~6.5 hr, or a charter flight [confirm]"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/senda-monteverde-lodge\">Senda Monteverde</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Arenas del Mar",
+   "line": "Manuel Antonio · Pacific coast · Days 7–9",
+   "chips": [
+    "3 nights",
+    "Families welcome",
+    "Cayuga Collection"
+   ],
+   "photos": [
+    "Arenas from the air",
+    "Suite with plunge pool",
+    "The bay at Arenas"
+   ],
+   "body": "The only luxury resort in Manuel Antonio right on the beach, Cayuga says: two pools, two beaches and two restaurants on 11 acres of rainforest. Easy for families and first-timers.",
+   "rows": [
+    [
+     "Location",
+     "Manuel Antonio, Pacific coast"
+    ],
+    [
+     "Nights",
+     "3 · Days 7–9"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "Private driver from Monteverde, ~4 hr"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/arenas-del-mar-resort\">Arenas del Mar</a>"
+    ]
+   ]
+  }
+ ],
+ "calc": {
+  "title": "Price",
+  "optlabel": "",
+  "note": "Priced to your dates.",
+  "soloNote": "Travelling solo: single supplement on request.",
+  "maxG": 8,
+  "opts": [
+   {
+    "label": "As filed",
+    "sub": "Priced to your dates",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": [
+   {
+    "label": "A board waiting, and James's break",
+    "sub": "A board sized for you and a local surf guide [confirm]",
+    "pp": 0
+   },
+   {
+    "label": "Charter flight across the country",
+    "sub": "Caribbean to Monteverde, to shorten Day 4 [confirm]",
+    "pp": 0
+   },
+   {
+    "label": "A fourth night at Aguas Claras",
+    "sub": "So the stay 4, pay 3 offer can apply",
+    "pp": 0
+   },
+   {
+    "label": "Caribbean beach ride",
+    "sub": "Two hours with a local guide",
+    "pp": 0
+   }
+  ]
+ },
+ "kind": "overland",
+ "experiences": [
+  {
+   "kicker": "Playa Chiquita · Days 1–3",
+   "title": "The reef at low tide",
+   "info": "Clear pools on the reef in front of the beach, for a swim at low tide [tides to confirm].",
+   "dur": "At leisure",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "Caribbean coast",
+   "title": "A Caribbean beach on horseback",
+   "info": "A ride along the sand on the Caribbean side, with a local guide.",
+   "dur": "2 hours",
+   "incl": "Add-on",
+   "season": "All year"
+  },
+  {
+   "kicker": "The Caribbean surf day",
+   "title": "A board waiting, and James's break",
+   "info": "A board sized for you is waiting, and a local surf guide who knows the Caribbean side's reef breaks takes you out when the swell is right, and tells you when to leave them alone.",
+   "dur": "Half a day",
+   "incl": "Add-on",
+   "season": "All year · swell varies"
+  },
+  {
+   "kicker": "Monteverde · Days 4–6",
+   "title": "The Aguti reserve, as far as your legs go",
+   "info": "Senda guests hike the neighbouring Aguti Wildlife Reserve without limit. Go with a naturalist the first morning; after that, go alone.",
+   "dur": "At leisure",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "Monteverde · after dark",
+   "title": "The cloud forest after dark",
+   "info": "A guided night walk for frogs, sleeping birds and the things that only come out by torchlight.",
+   "dur": "2 hours",
+   "incl": "Add-on",
+   "season": "All year"
+  },
+  {
+   "kicker": "Manuel Antonio · Days 7–9",
+   "title": "Manuel Antonio with a naturalist",
+   "info": "The national park early with a guide, for sloths, monkeys and the beaches inside the park before the day-trippers [park days and hours to confirm].",
+   "dur": "3 hours",
+   "incl": "Add-on",
+   "season": "All year"
+  },
+  {
+   "kicker": "Arenas del Mar · for families",
+   "title": "A craft afternoon for the family",
+   "info": "A bracelet-making class at the hotel, for the hour when the children have had enough sun.",
+   "dur": "1 hour",
+   "incl": "Add-on",
+   "season": "All year"
+  },
+  {
+   "kicker": "Dominical · Day 9",
+   "title": "Dominical, where the photo was taken",
+   "info": "The surf town where James sat for his 1995 photo. Lunch by the beach, a look at the break, and the road the boards used to ride in on. [James to name the beach, break or bar]",
+   "dur": "Half a day",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "The founder's surf day · Day 9",
+   "title": "A board waiting, and James's break",
+   "info": "A board sized for you is waiting at the coast, and a local surf guide takes you to a break James has surfed since the early days. It isn't on any map; you get the directions when you book.",
+   "dur": "Half a day",
+   "incl": "Add-on",
+   "season": "All year · swell varies"
+  }
+ ],
+ "seo": {
+  "path": "/overland/costa-rica/the-founders-line-coast-to-coast",
+  "title": "10-Day Costa Rica Coast to Coast Itinerary: The Founder's Line Since 1992",
+  "description": "10 days across Costa Rica on Cayuga hotels: Aguas Claras on the Caribbean, Senda Monteverde, then Arenas del Mar on the Pacific, with a surf day on each coast. Designed by James Wild, surf travel since 1992.",
+  "keywords": [
+   "10 day Costa Rica coast to coast itinerary",
+   "Costa Rica Caribbean and Pacific itinerary",
+   "Puerto Viejo Monteverde Manuel Antonio itinerary",
+   "Cayuga Collection itinerary",
+   "Costa Rica surf trip both coasts"
+  ]
+ },
+ "copy_approved": false,
+ "prices_final": false,
+ "booking_live": false,
+ "id": "the-founders-line-coast-to-coast",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/costa-rica/the-founders-line-coast-to-coast#trip",
+   "name": "The Founder's Line Since 1992",
+   "url": "https://www.jameswildco.com/overland/costa-rica/the-founders-line-coast-to-coast",
+   "description": "The Founder's Line Since 1992, Coast to Coast, is a 10-day Costa Rica itinerary from James Wild & Co. built only on Cayuga Collection hotels: three nights at Aguas Claras on the Caribbean, three at Senda Monteverde in the cloud forest and three at Arenas del Mar on the Pacific, with a surf day on each coast and a day at Dominical. You travel by private driver from San José.",
+   "touristType": [
+    "Returning Costa Rica travellers"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "San José",
+       "description": "Day 1 · Met at SJO airport",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.992,
+        "longitude": -84.212
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Playa Chiquita",
+       "description": "Days 1–3 · Aguas Claras",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.63,
+        "longitude": -82.74
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Monteverde",
+       "description": "Days 4–6 · Senda Monteverde",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.3,
+        "longitude": -84.824
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Manuel Antonio",
+       "description": "Days 7–9 · Arenas del Mar",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.39,
+        "longitude": -84.14
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Dominical",
+       "description": "Day 9 · The founder's day",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.25,
+        "longitude": -83.86
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "stamp": {
+  "tint": "#2F6E73",
+  "tintName": "Caribbean teal",
+  "label": "Why this route",
+  "where": "Costa Rica",
+  "sub": "Surf since 1992",
+  "when": "Field tested since 1992",
+  "nudge": "why this route",
+  "script": "Leave a day for Dominical. JW",
+  "cta": "Read why this route ↓"
+ },
+ "bestFor": {
+  "who": "Returning Costa Rica travellers",
+  "why": "The Caribbean side most people miss, then the cloud forest and the Pacific."
+ },
+ "tag": {
+  "kind": "Route tag",
+  "title": "Costa Rica",
+  "ledger": "Route ledger",
+  "no": "F10C",
+  "date": "since 1992",
+  "coords": "N 9°40′ · W 82°45′",
+  "postmark": {
+   "ring": "Republica de Costa Rica · Tarjeta postal ·",
+   "center": "Dominical",
+   "date": "1992",
+   "ink": "#2F6E73"
+  },
+  "script": "Costa Rica",
+  "nudge": "why this route",
+  "note": "Leave a day for Dominical. JW",
+  "cta": "Read why this route ↓"
+ },
+ "proof": "James has pioneered surf travel in Costa Rica since 1992 and has followed Cayuga's co-founder Hans Pfister since 1994. This is the coast-to-coast route he designed from those years.",
+ "offerRefs": [
+  "aguas-claras",
+  "senda-monteverde-lodge",
+  "arenas-del-mar-resort"
+ ],
+ "images": {
+  "PHOTO · INTO THE CLOUD FOREST": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/senda-monteverde/senda-monteverde-04",
+   "alt": "A balcony looking over the cloud forest at Senda Monteverde"
+  },
+  "PHOTO · THE AGUTI TRAILS": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-18",
+   "alt": "Birders looking up at a giant buttressed tree at Senda Monteverde"
+  },
+  "PHOTO · QUETZAL AT DAWN": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-04",
+   "alt": "A resplendent quetzal in flight among cloud-forest trees at Senda Monteverde"
+  },
+  "PHOTO · DOWN TO THE PACIFIC": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/arenas-del-mar/arenas-del-mar-01",
+   "alt": "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air"
+  },
+  "PHOTO · MANUEL ANTONIO": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-03",
+   "alt": "A long curved beach backed by rainforest, seen from the hillside at Arenas del Mar"
+  },
+  "PHOTO · DOMINICAL, 1995": {
+   "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee4561a90104445c9a85_about-story-1.avif",
+   "alt": "Polaroid of James relaxing on a beach in a patterned shirt, Dominical, Costa Rica, 1995"
+  },
+  "PHOTO · HOME": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-14",
+   "alt": "Footprints in the sand on a beach looking out to small islands at Arenas del Mar"
+  },
+  "PHOTO · UVITA": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/kura/kura-06",
+   "alt": "Kura's infinity pool deck looking over the Pacific at Uvita"
+  },
+  "PHOTO · THE WHALE'S TAIL": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-10",
+   "alt": "A humpback whale breaching beside a whale-watching boat"
+  },
+  "PHOTO · THE BORDER ROAD": {
+   "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee446ac65a18e02e0ace_about-story-2.avif",
+   "alt": "Vintage photograph of a red open-top jeep loaded with surfboards in the early days of Costa Rica surf travel"
+  },
+  "PHOTO · ISLA PALENQUE": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-08",
+   "alt": "A forested island shore and calm sea from the air at Isla Palenque"
+  },
+  "PHOTO · THE ISLAND": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-11",
+   "alt": "A guide showing guests a plant on a forest walk at Isla Palenque"
+  },
+  "PHOTO · LAST BEACH": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-04",
+   "alt": "Thatched cabanas among palms at the edge of a quiet beach at Isla Palenque"
+  },
+  "Senda from the balcony": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/senda-monteverde/senda-monteverde-06",
+   "alt": "A guest with coffee on a balcony in the cloud forest at Senda Monteverde"
+  },
+  "Hot pools in the forest": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/senda-monteverde/senda-monteverde-01",
+   "alt": "Senda Monteverde's hot pools set in the cloud forest, from above"
+  },
+  "Restaurant at dusk": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/rainforest-13",
+   "alt": "An open-sided restaurant lit at dusk among cloud-forest trees at Senda Monteverde"
+  },
+  "Arenas from the air": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/arenas-del-mar/arenas-del-mar-01",
+   "alt": "A rainforest headland meeting a turquoise beach at Manuel Antonio, from the air"
+  },
+  "Suite with plunge pool": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/arenas-del-mar/arenas-del-mar-04",
+   "alt": "A suite with a daybed and an outdoor plunge pool at Arenas del Mar"
+  },
+  "The bay at Arenas": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/arenas-del-mar/arenas-del-mar-05",
+   "alt": "A guest on a glass balcony looking over the bay at Arenas del Mar"
+  },
+  "Kura's infinity pool": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/kura/kura-01",
+   "alt": "A guest in Kura's infinity pool above the Pacific coast at Uvita"
+  },
+  "Ocean-view suite": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/kura/kura-03",
+   "alt": "A suite bedroom looking out to the ocean at Kura"
+  },
+  "Kura at dusk": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/offers/kura-offer",
+   "alt": "Kura's infinity pool and open lounge lit at dusk above the forest at Uvita"
+  },
+  "The island from the air": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-08",
+   "alt": "A forested island shore and calm sea from the air at Isla Palenque"
+  },
+  "Thatched pavilion": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/offers/isla-palenque-offer",
+   "alt": "A thatched pavilion at the end of a palm-lined path on Isla Palenque"
+  },
+  "Villa plunge pool": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/rainforest-16",
+   "alt": "A guest in a villa plunge pool looking out to the sea at Isla Palenque"
+  },
+  "A board waiting, and James's break": {
+   "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee446ac65a18e02e0ace_about-story-2.avif",
+   "alt": "Vintage photograph of a red open-top jeep loaded with surfboards in the early days of Costa Rica surf travel"
+  },
+  "Dominical, where the photo was taken": {
+   "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee4561a90104445c9a85_about-story-1.avif",
+   "alt": "Polaroid of James relaxing on a beach in a patterned shirt, Dominical, Costa Rica, 1995"
+  },
+  "The Aguti reserve, as far as your legs go": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/people-05",
+   "alt": "Two naturalist guides with a telescope on a forest trail at Senda Monteverde"
+  },
+  "The cloud forest after dark": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-14",
+   "alt": "A guide studying a frog on a leaf at night by torchlight"
+  },
+  "Manuel Antonio with a naturalist": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-13",
+   "alt": "A sloth climbing a tree trunk"
+  },
+  "A craft afternoon for the family": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-13",
+   "alt": "A family making bracelets together at a craft class at Arenas del Mar"
+  },
+  "The Whale's Tail at low tide": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/beachfront-12",
+   "alt": "A wide empty beach meeting rainforest, seen from the air"
+  },
+  "Humpbacks off the coast": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/wildlife-10",
+   "alt": "A humpback whale breaching beside a whale-watching boat"
+  },
+  "The over-land day": {
+   "url": "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5/67c1ee446ac65a18e02e0ace_about-story-2.avif",
+   "alt": "Vintage photograph of a red open-top jeep loaded with surfboards in the early days of Costa Rica surf travel"
+  },
+  "Island walk with a guide": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-11",
+   "alt": "A guide showing guests a plant on a forest walk at Isla Palenque"
+  },
+  "The island wood shop": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-09",
+   "alt": "A woodworker shaping timber in an island workshop at Isla Palenque"
+  },
+  "Fire under the treehouse": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-05",
+   "alt": "Guests around a fire pit beneath a treehouse villa at night at Isla Palenque"
+  },
+  "PHOTO · THE CARIBBEAN": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/aguas-claras/aguas-claras-11",
+   "alt": "The Caribbean coast and reef near Playa Chiquita from the air"
+  },
+  "PHOTO · THE REEF AT PLAYA CHIQUITA": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/aguas-claras/aguas-claras-05",
+   "alt": "A swimmer in a clear tide pool on the reef at Playa Chiquita, near Aguas Claras"
+  },
+  "PHOTO · CARIBBEAN BEACH RIDE": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-15",
+   "alt": "A rider galloping a horse along a Caribbean beach"
+  },
+  "PHOTO · ACROSS THE COUNTRY": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/senda-monteverde/senda-monteverde-06",
+   "alt": "A guest with coffee on a balcony in the cloud forest at Senda Monteverde"
+  },
+  "Aguas Claras cottage": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/aguas-claras/aguas-claras-02",
+   "alt": "A wooden Caribbean-style cottage among banana leaves at Aguas Claras"
+  },
+  "The colourful restaurant": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/aguas-claras/aguas-claras-07",
+   "alt": "The colourful restaurant with turquoise chairs at Aguas Claras"
+  },
+  "Pool below the main house": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/offers/aguas-claras-offer",
+   "alt": "A pool among tropical gardens below the white main house at Aguas Claras"
+  },
+  "The reef at low tide": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/aguas-claras/aguas-claras-05",
+   "alt": "A swimmer in a clear tide pool on the reef at Playa Chiquita, near Aguas Claras"
+  },
+  "A Caribbean beach on horseback": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/gallery/experiences-15",
+   "alt": "A rider galloping a horse along a Caribbean beach"
+  }
+ }
+}

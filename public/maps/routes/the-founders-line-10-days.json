@@ -1,0 +1,493 @@
+{
+ "id": "the-founders-line-10-days",
+ "type": "overland",
+ "destination": "costa-rica",
+ "title": "The Founder's Line Since 1992",
+ "subtitle": "10 days · 9 nights · San José to Isla Palenque · private driver, border and boat",
+ "code": "JW-CRPA-F10",
+ "mark": "keep",
+ "days": {
+  "1": "San José to the cloud forest",
+  "2": "The Aguti trails",
+  "3": "Quetzal at dawn",
+  "4": "Down to the Pacific",
+  "5": "Manuel Antonio",
+  "6": "The founder's day",
+  "7": "The over-land day",
+  "8": "The island",
+  "9": "The last beach",
+  "10": "Home through Panama City"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San José — met at SJO airport",
+   "lat": 9.992,
+   "lng": -84.212,
+   "kind": "airstrip",
+   "label": [
+    16,
+    -8
+   ]
+  },
+  {
+   "day": 1,
+   "name": "Monteverde — Senda Monteverde",
+   "lat": 10.3,
+   "lng": -84.824,
+   "mode": "road",
+   "time": "~3.5 hr",
+   "kind": "lodge",
+   "stay": "Senda Monteverde",
+   "path": [
+    [
+     -84.212,
+     9.992
+    ],
+    [
+     -84.47,
+     10.05
+    ],
+    [
+     -84.7,
+     10.17
+    ],
+    [
+     -84.824,
+     10.3
+    ]
+   ],
+   "label": [
+    16,
+    -8
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Manuel Antonio — Arenas del Mar",
+   "lat": 9.39,
+   "lng": -84.14,
+   "mode": "road",
+   "time": "~4 hr",
+   "kind": "lodge",
+   "stay": "Arenas del Mar",
+   "path": [
+    [
+     -84.824,
+     10.3
+    ],
+    [
+     -84.72,
+     9.98
+    ],
+    [
+     -84.62,
+     9.62
+    ],
+    [
+     -84.38,
+     9.48
+    ],
+    [
+     -84.14,
+     9.39
+    ]
+   ],
+   "label": [
+    16,
+    -8
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Dominical — the founder's day",
+   "lat": 9.25,
+   "lng": -83.86,
+   "mode": "road",
+   "time": "~45 min",
+   "kind": "poi",
+   "path": [
+    [
+     -84.14,
+     9.39
+    ],
+    [
+     -83.99,
+     9.32
+    ],
+    [
+     -83.86,
+     9.25
+    ]
+   ],
+   "label": [
+    16,
+    10
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Paso Canoas — the border, by road",
+   "lat": 8.53,
+   "lng": -82.84,
+   "mode": "road",
+   "time": "~3 hr",
+   "kind": "poi",
+   "path": [
+    [
+     -84.14,
+     9.39
+    ],
+    [
+     -83.86,
+     9.25
+    ],
+    [
+     -83.5,
+     8.95
+    ],
+    [
+     -83.2,
+     8.7
+    ],
+    [
+     -82.84,
+     8.53
+    ]
+   ],
+   "label": [
+    16,
+    -8
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Isla Palenque — Gulf of Chiriquí",
+   "lat": 8.19,
+   "lng": -82.18,
+   "mode": "road",
+   "time": "~1.5 hr, then a boat",
+   "kind": "lodge",
+   "stay": "Isla Palenque",
+   "path": [
+    [
+     -82.84,
+     8.53
+    ],
+    [
+     -82.43,
+     8.43
+    ],
+    [
+     -82.2,
+     8.21
+    ],
+    [
+     -82.18,
+     8.19
+    ]
+   ],
+   "label": [
+    16,
+    10
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Home — David to Panama City",
+   "lat": 8.39,
+   "lng": -82.43,
+   "mode": "air",
+   "time": "domestic flight",
+   "kind": "airstrip",
+   "label": [
+    16,
+    -8
+   ]
+  }
+ ],
+ "fallback": {
+  "bbox": [
+   -85.6,
+   7.8,
+   -81.7,
+   10.7
+  ],
+  "country": "Costa Rica",
+  "neighbours": [
+   "Nicaragua",
+   "Panama"
+  ],
+  "zones": [
+   {
+    "tint": "terrB",
+    "opacity": 0.55,
+    "poly": [
+     [
+      -86.2,
+      11.4
+     ],
+     [
+      -84.86,
+      11.4
+     ],
+     [
+      -84.86,
+      10.42
+     ],
+     [
+      -85.152,
+      10.2
+     ],
+     [
+      -84.86,
+      9.52
+     ],
+     [
+      -86.2,
+      9.52
+     ]
+    ]
+   },
+   {
+    "tint": "terrA",
+    "opacity": 0.34,
+    "poly": [
+     [
+      -84.86,
+      11.4
+     ],
+     [
+      -82.2,
+      11.4
+     ],
+     [
+      -82.2,
+      9.28
+     ],
+     [
+      -82.98,
+      9.86
+     ],
+     [
+      -83.96,
+      10.2
+     ],
+     [
+      -84.32,
+      10.352
+     ],
+     [
+      -84.48,
+      10.472
+     ],
+     [
+      -84.86,
+      10.472
+     ]
+    ]
+   },
+   {
+    "tint": "accent",
+    "opacity": 0.26,
+    "poly": [
+     [
+      -84.86,
+      10.472
+     ],
+     [
+      -84.48,
+      10.472
+     ],
+     [
+      -84.32,
+      10.352
+     ],
+     [
+      -83.96,
+      10.2
+     ],
+     [
+      -82.98,
+      9.86
+     ],
+     [
+      -82.58,
+      9.52
+     ],
+     [
+      -82.752,
+      8.9
+     ],
+     [
+      -83.4,
+      8.9
+     ],
+     [
+      -83.96,
+      9.32
+     ],
+     [
+      -84.52,
+      9.78
+     ],
+     [
+      -84.86,
+      10.072
+     ]
+    ]
+   },
+   {
+    "tint": "terrA",
+    "opacity": 0.3,
+    "poly": [
+     [
+      -84.86,
+      10.072
+     ],
+     [
+      -84.52,
+      9.78
+     ],
+     [
+      -83.96,
+      9.32
+     ],
+     [
+      -83.4,
+      8.9
+     ],
+     [
+      -82.752,
+      8.9
+     ],
+     [
+      -82.36,
+      7.8
+     ],
+     [
+      -84.86,
+      7.8
+     ]
+    ]
+   }
+  ],
+  "mist": [
+   {
+    "lng": -84.8,
+    "lat": 10.312,
+    "rx": 50,
+    "ry": 28
+   }
+  ],
+  "features": [
+   {
+    "kind": "lake",
+    "name": "Lake Arenal",
+    "poly": [
+     [
+      -84.762,
+      10.488
+     ],
+     [
+      -84.79,
+      10.497
+     ],
+     [
+      -84.83,
+      10.508
+     ],
+     [
+      -84.87,
+      10.517
+     ],
+     [
+      -84.905,
+      10.53
+     ],
+     [
+      -84.935,
+      10.548
+     ],
+     [
+      -84.958,
+      10.572
+     ],
+     [
+      -84.972,
+      10.596
+     ],
+     [
+      -84.958,
+      10.604
+     ],
+     [
+      -84.935,
+      10.585
+     ],
+     [
+      -84.905,
+      10.565
+     ],
+     [
+      -84.87,
+      10.552
+     ],
+     [
+      -84.83,
+      10.543
+     ],
+     [
+      -84.795,
+      10.528
+     ],
+     [
+      -84.768,
+      10.508
+     ]
+    ]
+   }
+  ],
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "kind": "sea",
+    "lng": -83.22,
+    "lat": 10.84
+   },
+   {
+    "text": "Pacific Ocean",
+    "kind": "sea",
+    "lng": -85.84,
+    "lat": 8.84
+   },
+   {
+    "text": "TALAMANCA",
+    "kind": "region",
+    "lng": -83.96,
+    "lat": 8.96
+   },
+   {
+    "text": "NICOYA",
+    "kind": "region",
+    "lng": -85.5,
+    "lat": 9.52
+   },
+   {
+    "text": "OSA",
+    "kind": "region",
+    "lng": -83.26,
+    "lat": 8.58
+   },
+   {
+    "text": "NICARAGUA",
+    "kind": "region",
+    "lng": -83.98,
+    "lat": 10.96
+   }
+  ],
+  "note": "POSITIONS APPROXIMATE"
+ },
+ "source": "James Wild & Co route file, Oct 2026",
+ "map_note": "Drive times are approximate and confirmed when you book."
+}

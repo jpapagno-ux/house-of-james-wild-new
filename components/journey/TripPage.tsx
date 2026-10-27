@@ -19,6 +19,7 @@ import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
 import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
 import { usd } from "@/lib/pricing";
+import { offersFor } from "@/lib/content/offers/offers";
 import ExpandAll from "./ExpandAll";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
@@ -252,6 +253,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
+  const routeOffers = (T.offerRefs ?? []).flatMap((r) => offersFor(r));
   const Stays = !voyage && T.lodges ? (
     <Sec id="stays">
       <SectionHead eyebrow="The stays" title={T.lodges_title ?? "The stays"} icon="tree-ring" />
@@ -270,13 +272,22 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
               <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[14px]">
                 {l.rows.map(([k, v]) => {
                   const a = v.match(/href="([^"]+)"[^>]*>([^<]+)</);
-                  return <div key={k} className="contents"><dt className="ledger-eyebrow">{k}</dt><dd>{a ? <a href={a[1]} target="_blank" rel="noopener" className="underline decoration-crimson/50 underline-offset-2">{a[2]}</a> : <Fx t={v} />}</dd></div>;
+                  return <div key={k} className="contents"><dt className="ledger-eyebrow">{k}</dt><dd>{a ? (a[1].startsWith("/") ? <Link href={a[1]} className="underline decoration-crimson/50 underline-offset-2">{a[2]}</Link> : <a href={a[1]} target="_blank" rel="noopener" className="underline decoration-crimson/50 underline-offset-2">{a[2]}</a>) : <Fx t={v} />}</dd></div>;
                 })}
               </dl>
             </div>
           </li>
         ))}
       </ul>
+      {routeOffers.length > 0 && (
+        <div id="offers" className="mt-12 border border-crimson/40 p-5 md:p-6 scroll-mt-28">
+          <p className="ledger-eyebrow ledger-crimson">Offers on this route</p>
+          <ul className="mt-3 grid sm:grid-cols-2 gap-x-8 gap-y-3">
+            {routeOffers.map((o) => <li key={o.id} className="text-[15.5px]"><span className="ledger-display text-[18px]">{o.name}</span> <span className="ledger-eyebrow ml-1">{o.program}</span><br />{o.headline}, travel {o.travel.text}.{o.conditions ? ` ${o.conditions}` : ""} <span className="font-mono text-[10.5px] ledger-muted">{o.id}</span></li>)}
+          </ul>
+          <p className="mt-3 text-[13px] ledger-muted">Offers are set by each hotel and confirmed when you book. We apply whichever fits your dates.</p>
+        </div>
+      )}
     </Sec>
   ) : null;
 
@@ -394,7 +405,15 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   ) : null;
 
-  const Price = (
+  // No rate on file yet (every option at 0): the page says "priced to your dates" instead of a calculator.
+  const onRequest = T.calc.opts.every((o) => !o.pp);
+  const Price = onRequest ? (
+    <Sec id="price">
+      <SectionHead eyebrow="Price" title="Priced to Your Dates" icon="tree-ring" intro="Rates at these hotels move with the season and the room, so we price this route for your dates and travellers, with any current offer applied. No deposit until you say yes." />
+      {T.calc.adds.length > 0 && <ul className="mt-6 grid sm:grid-cols-2 gap-3">{T.calc.adds.map((a) => <li key={a.label} className="border ledger-border p-4"><p className="ledger-display text-[18px]">{a.label}</p><p className="text-[14px] ledger-muted mt-1"><Fx t={a.sub} /></p></li>)}</ul>}
+      <a href="#enquire" className="ledger-btn ledger-btn--solid mt-6 inline-flex">Ask James for a price</a>
+    </Sec>
+  ) : (
     <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="#enquire" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
       options={T.calc.opts.map((o, i) => ({ id: `o${i}`, label: o.label, pp: o.pp, detail: [o.sub, o.sleeps].filter(Boolean).join(" · ") }))}
       addOns={T.calc.adds.map((a, i) => ({ id: `a${i}`, label: a.label, pp: a.pp, detail: a.sub.replace(/\s*\[[^\]]+\]/g, "") }))} />
@@ -461,8 +480,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> Vetted in person by James Wild · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>
         </div>
         <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
-          <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% tax.</span> : !T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>
-          <div className="flex flex-wrap gap-3"><a href="#price" className="ledger-btn ledger-btn--solid !py-2.5">Build your price</a><a href={voyage ? "#departures" : "#days"} className="ledger-btn !py-2.5">{voyage ? "See dates" : "Day by day"}</a></div>
+          {onRequest ? <p><span className="ledger-eyebrow block">Price</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">On request</span><span className="block text-[12.5px] ledger-muted mt-1">Priced to your dates, with current offers applied.</span></p> : <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% tax.</span> : !T.prices_final && <span className="block text-[11.5px] ledger-muted italic">Rate on file; confirmed when you enquire.</span>}</p>}
+          <div className="flex flex-wrap gap-3"><a href={onRequest ? "#enquire" : "#price"} className="ledger-btn ledger-btn--solid !py-2.5">{onRequest ? "Ask for a price" : "Build your price"}</a><a href={voyage ? "#departures" : "#days"} className="ledger-btn !py-2.5">{voyage ? "See dates" : "Day by day"}</a></div>
         </div>
       </div>
     </section>

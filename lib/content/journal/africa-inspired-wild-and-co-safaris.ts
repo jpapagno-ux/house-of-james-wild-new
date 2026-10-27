@@ -3,7 +3,8 @@
 // sign-off are rendered by the page. Brand: Wild & Co Safaris is now the
 // safari house of James Wild & Co, not "the safari division of Wild Earth
 // Stays" (Wild Earth Stays stays in the story as history). Years: safaris
-// since 2011, so "fifteen years" (was "more than fourteen").
+// since 2011, so "fifteen years" (was "more than fourteen"). The 2018 camps
+// list and "six years" (2012 to 2018) confirmed by James, 27 Oct 2026.
 export const AFRICA_BODY = `Some places take a little time to win you over. Africa was not one of them.
 
 From the moment I arrived, I felt something different. It was not only the wildlife or the size of the landscapes. It was the feeling of being somewhere much older and bigger than myself.
@@ -48,7 +49,7 @@ I returned to explore more regions, meet more guides and understand the differen
 
 In 2018, I brought my daughter on her first safari.
 
-We stayed at some remarkable places, including Singita Ebony Lodge, Ngala Safari Lodge and Gibb's Farm. Watching her experience Africa for the first time reminded me how powerful a first safari can be.
+We stayed at some remarkable places across South Africa, Tanzania and Kenya: Singita Ebony Lodge, Singita Boulders and Ngala Safari Lodge in Greater Kruger; Gibb's Farm and Legendary Lodge near Arusha; Nomad's Serengeti camp; Singita Faru Faru, Sabora Tented Camp and Sasakwa Lodge in the Grumeti; and Hemingways in Nairobi. Watching her experience Africa for the first time reminded me how powerful a first safari can be.
 
 Then something happened that neither of us could have planned.
 
@@ -56,7 +57,7 @@ We arrived at one of our camps and I heard a familiar voice. I turned to my daug
 
 It was Joffers.
 
-Seven years after our first Kalahari adventure, we had somehow found each other again in the African bush.
+Six years after our first Kalahari adventure, we had somehow found each other again in the African bush.
 
 That reunion felt like one of those moments Africa seems to arrange when you are paying attention.
 

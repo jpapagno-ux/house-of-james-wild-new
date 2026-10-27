@@ -80,8 +80,9 @@ export const POSTS: Record<string, JournalPost> = {
       { after: "why-the-right-safari-guide-matters", layout: "bleed", images: [{ url: hi("wildco/botswana/hero/qorokwe-lions-game-drive"), alt: "A pride of lions resting in the grass beside an open game vehicle at sunset", w: 1277, h: 850, caption: "Knowing when to wait. The lions decided when we'd leave.", credit: "Qorokwe, Okavango Delta" }] },
       { after: "returning-to-africa-with-my-daughter", layout: "pair", images: [
         { url: hi("wildco/south-africa/madikwe-wildlife/family-game-drive-madikwe"), alt: "A family on an open game vehicle with their guide and tracker", w: 1400, h: 699, caption: "A first safari, seen through someone else's eyes.", credit: "Madikwe, South Africa" },
-        { url: hi("wildco/south-africa/kapama/reserve/kapama-leopard-drinking"), alt: "A leopard drinking at a waterhole", w: 1600, h: 1080, caption: "The leopard who keeps everyone quiet in the vehicle.", credit: "Kapama, Greater Kruger" },
+        { url: hi("wildco/tanzania/serengeti-south/charlie-southwest-serengeti/charlie-southwest-serengeti-game-drive", false), alt: "An open game vehicle crossing the short-grass plains of the southern Serengeti", w: 2400, h: 1479, caption: "Then north to Tanzania and the Serengeti.", credit: "Southern Serengeti, Tanzania" },
       ] },
+      { after: "returning-to-africa-with-my-daughter", layout: "wide", images: [{ url: hi("wildco/south-africa/kapama/reserve/kapama-leopard-drinking"), alt: "A leopard drinking at a waterhole", w: 1600, h: 1080, caption: "The leopard who keeps everyone quiet in the vehicle.", credit: "Kapama, Greater Kruger" }] },
       { after: "from-wild-earth-stays-to-wild-co-safaris", layout: "pair", images: [
         { url: hi("wildco/botswana/hero/xaranna-mokoro"), alt: "A poler guiding a mokoro canoe through the reeds of the Okavango Delta", w: 1920, h: 1280, caption: "Time beside the waterways of Botswana: by mokoro.", credit: "Okavango Delta, Botswana" },
         { url: hi("wildco/partners/feline-fields/lodge/fl-08"), alt: "A rider on horseback talking with her guide in the bush at sunset", w: 1620, h: 1040, caption: "Or on horseback, for those who'd rather not sit still.", credit: "Feline Fields, Botswana" },
@@ -104,6 +105,7 @@ export const POSTS: Record<string, JournalPost> = {
     stays: [
       { slug: "tswalu-reserve", name: "Tswalu Kalahari", line: "The Kalahari, South Africa", note: "Where it started, in 2012. Still one of James's favourite places in the world.", image: { url: hi(`${AFR}/tswalu-loapi-kalahari-hills`), alt: "The Loapi deck at Tswalu over the Kalahari", w: 1620, h: 1080 } },
       { slug: "singita-ebony", name: "Singita Ebony Lodge", line: "Sabi Sand, Greater Kruger", note: "On the 2018 safari with his daughter.", image: { url: `${B44}/687cecf9a_26e2d6372_69d3c74c8c6ac8a1bc2a8b75_SingitaEbonyLodge_FireDeck_RossCouper.jpg`, alt: "The fire deck at Singita Ebony Lodge above the Sand River", w: 1600, h: 1067 } },
+      { slug: "singita-boulders", name: "Singita Boulders", line: "Sabi Sand, Greater Kruger", note: "On the 2018 safari with his daughter.", image: { url: `${B44}/b33f9c716_80ac67848_69cf70352224b2c3b7563d5e_SingitaBouldersLodge_SuitePool.jpg`, alt: "A suite and its pool at Singita Boulders Lodge, Sabi Sand", w: 1600, h: 1067 } },
       { slug: "ngala-safari-lodge-by-beyond", name: "Ngala Safari Lodge", line: "Timbavati, Greater Kruger", note: "On the 2018 safari with his daughter.", image: { url: `${B44}/301472440_1bf9b77a5_6942909e4d2140c1851a2362_South-Africa-Ngala-Safari-Lodge-Outdoor-view-of-evening.`, alt: "Dinner by the pool at Ngala Safari Lodge at dusk", w: 1600, h: 1067 } },
     ],
     links: [

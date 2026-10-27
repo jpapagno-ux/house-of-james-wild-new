@@ -28,7 +28,7 @@ export function generateStaticParams() { return Object.keys(COLLECTIONS).map((sl
 export async function generateMetadata({ params }: P) {
   const { slug } = await params; const c = COLLECTIONS[slug];
   if (!c) return {};
-  return buildMetadata({ title: c.seo.title, description: c.seo.description, path: c.path, image: { url: c.hero.url, alt: c.hero.alt }, noindex: true });
+  return buildMetadata({ title: c.seo.title, description: c.seo.description, path: c.path, image: { url: c.hero.url, alt: c.hero.alt }, noindex: !c.approved });
 }
 
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-28";

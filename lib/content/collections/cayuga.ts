@@ -50,6 +50,7 @@ export const CAYUGA = {
   slug: "cayuga-collection",
   name: "The Cayuga Collection",
   path: "/collections/cayuga-collection",
+  approved: true, // James, on the Proofs sheet, 27 Oct 2026
   founded: "2003",
   founders: ["Andrea Bonilla", "Hans Pfister"],
   countries: ["Costa Rica", "Panama", "Nicaragua", "Guatemala"],

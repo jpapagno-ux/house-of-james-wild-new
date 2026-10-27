@@ -122,6 +122,7 @@ export const POSTS: Record<string, JournalPost> = {
     keywords: ["sustainable luxury hotels Central America", "Cayuga Collection hotels", "sustainable hotels Costa Rica", "eco luxury Central America", "sustainable boutique hotels", "Cayuga Collection Costa Rica", "Kura Uvita", "Arenas del Mar", "Senda Monteverde", "Isla Palenque"],
     about: ["Cayuga Collection", "Sustainable luxury hotels", "Costa Rica", "Central America"],
     oldUrl: "/memoir/james-papagno-on-the-cayuga-collection-and-central-americas-sustainable-travel-renaissance",
+    approved: true, // James, 27 Oct 2026
   },
   "africa-inspired-wild-and-co-safaris": {
     slug: "africa-inspired-wild-and-co-safaris",
@@ -184,6 +185,7 @@ export const POSTS: Record<string, JournalPost> = {
     keywords: ["African safari planning", "Wild & Co Safaris", "private African safaris", "luxury safari planning", "South Africa safari", "Tswalu Kalahari", "experienced safari planner", "personalized African safari", "safari guide"],
     about: ["African safari planning", "Tswalu Kalahari", "Wild & Co Safaris", "Safari guiding"],
     oldUrl: "/memoir/africa-inspired-wild-and-co-safaris",
+    approved: true, // James, 27 Oct 2026
   },
   "monwana-couples-first-safari": {
     slug: "monwana-couples-first-safari",

@@ -4,8 +4,8 @@ import type { TripImg } from "./trips";
 // ("Raja Ampat travel guide", "best time to visit Komodo"). Facts are sourced
 // (see `sources`); anything that changes often, like park fees, is stated as
 // "confirmed when you book", never as a number we can't keep current.
-// Copy in James's voice is drafted for his sign-off; his own lines come from
-// his route files only.
+// Guide copy (first-visit points, who-it-suits lines, the house's pick) signed
+// off by James, 27 Oct 2026. His own lines come from his route files only.
 
 type Month = "best" | "good" | "wet";
 const M = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "wet")) as Month[];

@@ -20,7 +20,9 @@ export type CountryData = {
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 const M = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "wet")) as Month[];
 
-export const COUNTRIES: CountryData[] = [
+import LIBRARY from "./countries-library.json";
+
+const HAND: CountryData[] = [
   {
     slug: "costa-rica", name: "Costa Rica", region: "central-america", regionName: "Central America",
     subtitle: "Where Nature Leads the Way",
@@ -95,5 +97,9 @@ export const COUNTRIES: CountryData[] = [
     flyInto: "JNB · CPT", bestShort: "May–Oct safari",
   },
 ];
+
+// Country pages generated from the library (scripts/export-countries.py), 28 Oct 2026.
+const FROM_LIBRARY = (LIBRARY.countries as unknown as (CountryData & { atlasName?: string })[]).map(({ atlasName: _a, ...c }) => c as CountryData);
+export const COUNTRIES: CountryData[] = [...HAND, ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))];
 
 export const countryBySlug = (region: string, slug: string) => COUNTRIES.find((c) => c.region === region && c.slug === slug);

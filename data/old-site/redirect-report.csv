@@ -4,7 +4,7 @@ old path,new path,why,old title
 /ai-itinerary,/plan/iggi,site page,
 /book/aguas-claras,/stays/aguas-claras,booking page -> stay page,Book your stay at Aguas Claras | Wild Earth Stays
 /book/aliikai-voyage,/voyages/ships/aliikai,booking page -> Aliikai vessel profile,Book your stay at Aliikai Voyage | Wild Earth Stays
-/book/alila-mayakoba,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Mayakoba by Alilia | Wild Earth Stays
+/book/alila-mayakoba,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Mayakoba by Alilia | Wild Earth Stays
 /book/alila-ventana-big-sur,/stays/alila-ventana-big-sur,booking page -> stay page,Book your stay at Alila Ventana Big Sur | Wild Earth Stays
 /book/alya-catamaran-galapagos,/stays/alya-catamaran-galapagos,booking page -> stay page,Book your stay at Alya Catamaran Galapagos | Wild Earth Stays
 /book/amandari,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Amandari | Wild Earth Stays
@@ -19,7 +19,7 @@ old path,new path,why,old title
 /book/anantara-golden-triangle-elephant-camp-resort,/stays/anantara-golden-triangle-chiang-rai,booking page -> stay page,Book your stay at Anantara Golden Triangle Elephant Camp &amp; Resort | Wild Earth Stays
 /book/anantara-mui-ne,/stays/anantara-mui-ne,booking page -> stay page,Book your stay at Anantara Mui Ne | Wild Earth Stays
 /book/angama-mara,/stays/angama-mara,booking page -> stay page,Book your stay at Angama Mara | Wild Earth Stays
-/book/aqua-expeditons,/destinations/south-america,booking page -> not on the new site yet; region page (peru country page not built yet),Book your stay at Aqua Expeditons | Wild Earth Stays
+/book/aqua-expeditons,/destinations/south-america/peru,booking page -> not on the new site yet; country page,Book your stay at Aqua Expeditons | Wild Earth Stays
 /book/arenal-amor,/stays/amor-arenal,booking page -> stay page,Book your stay at Amor Arenal | Wild Earth Stays
 /book/arenal-springs-camp-by-nayara,/stays/arenal-springs-camp-by-nayara,booking page -> stay page,Book your stay at Arenal Springs Camp by Nayara | Wild Earth Stays
 /book/arenas-del-mar-resort,/stays/arenas-del-mar-resort,booking page -> stay page,Book your stay at Arenas Del Mar Resort | Wild Earth Stays
@@ -34,19 +34,19 @@ old path,new path,why,old title
 /book/bateleur-camp-by-beyond,/stays/bateleur-camp-by-and-beyond,booking page -> stay page,Book your stay at Bateleur Camp By &amp; Beyond | Wild Earth Stays
 /book/baymanhi-exuma,/stays/baymanhi-exuma,booking page -> stay page,Book your stay at Baymanhi Exuma | Wild Earth Stays
 /book/be-tulum,/stays/be-tulum,booking page -> stay page,Book your stay at Be Tulum | Wild Earth Stays
-/book/beckon-huka-lodge,/destinations/oceania,booking page -> not on the new site yet; region page (new-zealand country page not built yet),Book your stay at Beckon Huka Lodge | Wild Earth Stays
-/book/beckon-longitude-131,/destinations/oceania,booking page -> not on the new site yet; region page (australia country page not built yet),Book your stay at  Beckon Longitude 131 | Wild Earth Stays
-/book/beckon-southern-ocean-lodge,/destinations/oceania,booking page -> not on the new site yet; region page (australia country page not built yet),Book your stay at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/book/beckon-the-louise,/destinations/oceania,booking page -> not on the new site yet; region page (australia country page not built yet),Book your stay at Beckon The Louise | Wild Earth Stays
-/book/beckon-tierra-atacama,/destinations/south-america,booking page -> not on the new site yet; region page (chile country page not built yet),Book your stay at Beckon Tierra Atacama | Wild Earth Stays
+/book/beckon-huka-lodge,/destinations/oceania/new-zealand,booking page -> not on the new site yet; country page,Book your stay at Beckon Huka Lodge | Wild Earth Stays
+/book/beckon-longitude-131,/destinations/oceania/australia,booking page -> not on the new site yet; country page,Book your stay at  Beckon Longitude 131 | Wild Earth Stays
+/book/beckon-southern-ocean-lodge,/destinations/oceania/australia,booking page -> not on the new site yet; country page,Book your stay at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/book/beckon-the-louise,/destinations/oceania/australia,booking page -> not on the new site yet; country page,Book your stay at Beckon The Louise | Wild Earth Stays
+/book/beckon-tierra-atacama,/destinations/south-america/chile,booking page -> not on the new site yet; country page,Book your stay at Beckon Tierra Atacama | Wild Earth Stays
 /book/benguerra-island-by-beyond,/stays/benguerra-island-by-and-beyond,booking page -> stay page,Book your stay at &amp;Beyond Benguerra Island | Wild Earth Stays
 /book/borana-lodge,/stays/borana,booking page -> stay page,Book your stay at Borana Lodge | Wild Earth Stays
 /book/bumi-hills-safari-lodge,/stays/bumi-hills-safari-lodge,booking page -> stay page,Book your stay at Bumi Hills Safari Lodge | Wild Earth Stays
 /book/cap-karoso,/stays/cap-karoso,booking page -> stay page,Book your stay at Cap Karoso | Wild Earth Stays
 /book/cape-cadogan-boutique-hotel,/stays/cape-cadogan-boutique-hotel,booking page -> stay page,Book your stay at Cape Cadogan Boutique Hotel | Wild Earth Stays
 /book/capella-ubud,/stays/capella-ubud,booking page -> stay page,Book your stay at Capella Ubud | Wild Earth Stays
-/book/casa-maya-kaan,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Casa Maya Kaan | Wild Earth Stays
-/book/castaway-island,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Castaway Island | Wild Earth Stays
+/book/casa-maya-kaan,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Casa Maya Kaan | Wild Earth Stays
+/book/castaway-island,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Castaway Island | Wild Earth Stays
 /book/castle-leslie,/stays/castle-leslie,booking page -> stay page,Book your stay at Castle Leslie | Wild Earth Stays
 /book/celestia-yacht,/stays/celestia-yacht,booking page -> stay page,Book your stay at Celestia Yacht | Wild Earth Stays
 /book/chable-yucatan,/stays/chable-yucatan,booking page -> stay page,Book your stay at Chable Yucatan | Wild Earth Stays
@@ -82,8 +82,8 @@ old path,new path,why,old title
 /book/ellerman-house,/stays/ellerman-house,booking page -> stay page,Book your stay at Ellerman House | Wild Earth Stays
 /book/elsas-kopje,/stays/elsas-kopje,booking page -> stay page,Book your stay at Elsas Kopje | Wild Earth Stays
 /book/encounter-mara-by-asilia,/stays/encounter-mara-camp-by-asilia,booking page -> stay page,Book your stay at Encounter Mara Camp by Asilia | Wild Earth Stays
-/book/entamanu-lodge,/destinations/africa,booking page -> not on the new site yet; region page (tanzania country page not built yet),Book your stay at Entamanu Lodge | Wild Earth Stays
-/book/entamanu-private,/destinations/africa,booking page -> not on the new site yet; region page (tanzania country page not built yet),Book your stay at Entamanu Private | Wild Earth Stays
+/book/entamanu-lodge,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Entamanu Lodge | Wild Earth Stays
+/book/entamanu-private,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Entamanu Private | Wild Earth Stays
 /book/entara-esirai-camp,/stays/entara-esirai-camp,booking page -> stay page,Book your stay at Entara Esirai Camp | Wild Earth Stays
 /book/etosha-mountain-lodge,/stays/etosha-mountain-lodge,booking page -> stay page,Book your stay at Etosha Mountain Lodge | Wild Earth Stays
 /book/explora-el-calafate,/stays/explora-el-calafate,booking page -> stay page,Book your stay at Explora El Calafate | Wild Earth Stays
@@ -94,18 +94,18 @@ old path,new path,why,old title
 /book/explora-torres-del-paine-c-reserve,/stays/torres-del-paine-c-reserve,booking page -> stay page,Book your stay at Explora Torres del Paine C. Reserve | Wild Earth Stays
 /book/feline-fields-lodge,/stays/feline-fields-lodge,booking page -> stay page,Book your stay at Feline Fields Lodge | Wild Earth Stays
 /book/feline-fields-vintage-camp,/stays/feline-fields-vintage-camp,booking page -> stay page,Book your stay at Feline Fields Vintage Camp | Wild Earth Stays
-/book/few-far-luvhondo,/destinations/africa,booking page -> not on the new site yet; region page (kenya country page not built yet),Book your stay at Few &amp; Far Luvhondo | Wild Earth Stays
-/book/fiji-marriott-resort-momi-bay,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/book/few-far-luvhondo,/destinations/africa/kenya,booking page -> not on the new site yet; country page,Book your stay at Few &amp; Far Luvhondo | Wild Earth Stays
+/book/fiji-marriott-resort-momi-bay,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Fiji Marriott Resort Momi Bay | Wild Earth Stays
 /book/fogo-island-inn,/stays/fogo-island-inn,booking page -> stay page,Book your stay at Fogo Island Inn | Wild Earth Stays
 /book/gibbs-farm,/stays/gibbs-farm,booking page -> stay page,Book your stay at Gibbs Farm | Wild Earth Stays
 /book/giraffe-manor,/stays/giraffe-manor,booking page -> stay page,Book your stay at Giraffe Manor | Wild Earth Stays
 /book/gomoti-plains,/stays/gomoti-plains-camp,booking page -> stay page,Book your stay at Gomoti Plains | Wild Earth Stays
 /book/greystoke-mahale,/stays/greystoke-mahale-by-nomad,booking page -> stay page,Book your stay at Greystoke Mahale by Nomad | Wild Earth Stays
 /book/gwe-gwe-beach-lodge,/stays/gwe-gwe-beach-lodge,booking page -> stay page,Book your stay at Gwe Gwe Beach Lodge | Wild Earth Stays
-/book/holistika,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Holistika | Wild Earth Stays
+/book/holistika,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Holistika | Wild Earth Stays
 /book/hotel-bardo,/stays/hotel-bardo,booking page -> stay page,Book your stay at Hotel Bardo | Wild Earth Stays
-/book/hotel-esencia,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Hotel Esencia | Wild Earth Stays
-/book/hotel-panamera,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Hotel Panamera | Wild Earth Stays
+/book/hotel-esencia,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Hotel Esencia | Wild Earth Stays
+/book/hotel-panamera,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Hotel Panamera | Wild Earth Stays
 /book/house-in-the-wild-masai-mara,/stays/house-in-the-wild-masai-mara,booking page -> stay page,Book your stay at House in the Wild Masai Mara | Wild Earth Stays
 /book/hx-cruise-roald-edmundsen,/destinations/polar-antarctica,booking page -> not on the new site yet; region page (antarctica-cruises country page not built yet),Book your stay at HX Cruise Roald Edmundsen | Wild Earth Stays
 /book/inkaterra-cabo-blanco,/stays/inkaterra-cabo-blanco,booking page -> stay page,Book your stay at Inkaterra Cabo Blanco | Wild Earth Stays
@@ -137,14 +137,14 @@ old path,new path,why,old title
 /book/lekkerwater-de-hoop,/stays/lekkerwater-dehoop,booking page -> stay page,Book your stay at Lekkerwater De Hoop | Wild Earth Stays
 /book/lengishu-residence,/stays/lengishu-kenya,booking page -> stay page,Book your stay at Lengishu Lewa Residence  | Wild Earth Stays
 /book/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,booking page -> stay page,Book your stay at Lewa Wilderness Lodge | Wild Earth Stays
-/book/likuliku-lagoon-resort,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Likuliku Lagoon Resort | Wild Earth Stays
-/book/lindis-lodge,/destinations/oceania,booking page -> not on the new site yet; region page (new-zealand country page not built yet),Book your stay at Lindis Lodge | Wild Earth Stays
+/book/likuliku-lagoon-resort,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Likuliku Lagoon Resort | Wild Earth Stays
+/book/lindis-lodge,/destinations/oceania/new-zealand,booking page -> not on the new site yet; country page,Book your stay at Lindis Lodge | Wild Earth Stays
 /book/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,booking page -> stay page,Book your stay at Wilderness Linyanti Camp | Wild Earth Stays
 /book/lion-sands,/safaris/lion-sands,booking page -> safari reserve,Book your stay at Lion Sands Reserve | Wild Earth Stays
 /book/lolebezi-lodge,/stays/lolebezi-lodge,booking page -> stay page,Book your stay at Lolebezi Lodge | Wild Earth Stays
 /book/londolozi-reserve,/safaris/londolozi-reserve,booking page -> safari reserve,Book your stay at Londolozi Reserve | Wild Earth Stays
 /book/machaba-camp,/stays/machaba,booking page -> stay page,Book your stay at Machaba Camp | Wild Earth Stays
-/book/maia-seychelles-villas-by-anantara,/destinations/africa,booking page -> not on the new site yet; region page (seychelles country page not built yet),Book your stay at Maia seychelles villas by Anantara | Wild Earth Stays
+/book/maia-seychelles-villas-by-anantara,/destinations/africa/seychelles,booking page -> not on the new site yet; country page,Book your stay at Maia seychelles villas by Anantara | Wild Earth Stays
 /book/mara-plains-camp-by-great-plains,/stays/mara-plains-camp-by-great-plains,booking page -> stay page,Book your stay at Mara Plains Camp by Great Plains | Wild Earth Stays
 /book/mara-toto-tree-camp-by-great-plains,/stays/mara-toto-tree-camp-by-great-plains,booking page -> stay page,Book your stay at Mara Toto Tree Camp by Great Plains | Wild Earth Stays
 /book/masoala-forest-lodge,/stays/masoala-forest-lodge,booking page -> stay page,Book your stay at Masoala Forest Lodge | Wild Earth Stays
@@ -157,10 +157,10 @@ old path,new path,why,old title
 /book/monachira-camp,/stays/monachira-camp,booking page -> stay page,Book your stay at Monachira Camp | Wild Earth Stays
 /book/monwana-thornybush,/stays/monwana-thornybush,booking page -> stay page,Book your stay at Monwana Thornybush | Wild Earth Stays
 /book/morukuru-farm-house,/stays/morukuru-farm-house,booking page -> stay page,Book your stay at Morukuru Farm House | Wild Earth Stays
-/book/muare-tulum-hotel,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Muaré Tulum Hotel | Wild Earth Stays
+/book/muare-tulum-hotel,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Muaré Tulum Hotel | Wild Earth Stays
 /book/mutiara-laut,/stays/mutiara-laut,booking page -> stay page,Book your stay at Mutiara Laut | Wild Earth Stays
 /book/naboisho-camp-asilia,/stays/asilia-naboisho-camp-by-asilia,booking page -> stay page,Book your stay at Naboisho Camp by Asilia | Wild Earth Stays
-/book/namale-resort-and-spa,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Namale Resort and Spa | Wild Earth Stays
+/book/namale-resort-and-spa,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Namale Resort and Spa | Wild Earth Stays
 /book/namiri-plains-camp-by-asilia,/stays/namiri-plains-camp-by-asilia,booking page -> stay page,Book your stay at Namiri Plains Camp by Asilia | Wild Earth Stays
 /book/nautilus-maldives,/stays/nautilus-maldives,booking page -> stay page,Book your stay at Nautilus Maldives | Wild Earth Stays
 /book/nay-palad-hideaway,/stays/nay-palad-hideaway,booking page -> stay page,Book your stay at Nay Palad Hideaway | Wild Earth Stays
@@ -172,8 +172,8 @@ old path,new path,why,old title
 /book/ngala-safari-lodge-by-beyond,/stays/ngala-safari-lodge-by-beyond,booking page -> stay page,Book your stay at Ngala Safari Lodge by &amp;Beyond | Wild Earth Stays
 /book/ngare-camp-by-serian,/stays/ngare-camp-by-serian,booking page -> stay page,Book your stay at Ngare Camp by Serian | Wild Earth Stays
 /book/nihi-sumba,/stays/nihi,booking page -> stay page,Book your stay at NIHI Sumba | Wild Earth Stays
-/book/nimali-mara,/destinations/africa,booking page -> not on the new site yet; region page (kenya country page not built yet),Book your stay at Nimali Mara | Wild Earth Stays
-/book/nimali-serengeti,/destinations/africa,booking page -> not on the new site yet; region page (tanzania country page not built yet),Book your stay at Nimali Serengeti | Wild Earth Stays
+/book/nimali-mara,/destinations/africa/kenya,booking page -> not on the new site yet; country page,Book your stay at Nimali Mara | Wild Earth Stays
+/book/nimali-serengeti,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Nimali Serengeti | Wild Earth Stays
 /book/niyama-island,/stays/niyama-private-islands-maldives,booking page -> stay page,Book your stay at Niyama Island - Maldives  | Wild Earth Stays
 /book/noah-forest-by-tifakara,/destinations/central-america/costa-rica,booking page -> not on the new site yet; country page,Book your stay at Noah Forest by Tifakara | Wild Earth Stays
 /book/nomade-holbox,/stays/nomade-holbox,booking page -> stay page,Book your stay at Nomade Holbox | Wild Earth Stays
@@ -185,11 +185,11 @@ old path,new path,why,old title
 /book/ol-pejeta-bush-camp-by-asilia,/stays/ol-pejeta-bush-camp-asilia,booking page -> stay page,Book your stay at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
 /book/olas-tulum,/stays/olas-tulum,booking page -> stay page,Book your stay at Olas Tulum | Wild Earth Stays
 /book/olivers-camp-by-asilia,/stays/asilia-olivers-camp,booking page -> stay page,Book your stay at Oliver’s Camp by Asilia | Wild Earth Stays
-/book/one-only-gorillas-nest,/destinations/africa,booking page -> not on the new site yet; region page (rwanda country page not built yet),Book your stay at One &amp; Only Gorilla&#x27;s Nest | Wild Earth Stays
-/book/one-only-nyungwe,/destinations/africa,booking page -> not on the new site yet; region page (rwanda country page not built yet),Book your stay at One &amp; Only Nyungwe | Wild Earth Stays
+/book/one-only-gorillas-nest,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Gorilla&#x27;s Nest | Wild Earth Stays
+/book/one-only-nyungwe,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Nyungwe | Wild Earth Stays
 /book/open-sky,/stays/open-sky,booking page -> stay page,Book your stay at Open Sky | Wild Earth Stays
 /book/our-habitas-namibia,/stays/our-habitas-namibia,booking page -> stay page,Book your stay at Our Habitas Namibia | Wild Earth Stays
-/book/our-habitas-tulum,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Our Habitas Tulum | Wild Earth Stays
+/book/our-habitas-tulum,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Our Habitas Tulum | Wild Earth Stays
 /book/paws-up-resort,/stays/paws-up-resort,booking page -> stay page,Book your stay at Paws Up Resort | Wild Earth Stays
 /book/pearl-resort-le-borabora,/stays/pearl-resort-le-bora-bora,booking page -> stay page,Book your stay at Pearl Resort Le Bora bora | Wild Earth Stays
 /book/pearl-resort-le-nuku-hiva,/stays/pearl-resort-le-nuku-hiva,booking page -> stay page,Book your stay at Pearl Resort Le Nuku Hiva | Wild Earth Stays
@@ -197,16 +197,16 @@ old path,new path,why,old title
 /book/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,booking page -> stay page,Book your stay at Pearl Resort Le Tikehau | Wild Earth Stays
 /book/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,booking page -> stay page,Book your stay at Pearl Resort Vahine Private Island | Wild Earth Stays
 /book/phinda-homestead-by-beyond,/stays/phinda-homestead-by-and-beyond,booking page -> stay page,Book your stay at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/book/pikaia-lodge,/destinations/south-america,booking page -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Book your stay at Pikaia Lodge | Wild Earth Stays
+/book/pikaia-lodge,/destinations/south-america/ecuador-galapagos,booking page -> not on the new site yet; country page,Book your stay at Pikaia Lodge | Wild Earth Stays
 /book/pods-camp-bay,/stays/pods-camp-bay,booking page -> stay page,Book your stay at Pods Camp Bay | Wild Earth Stays
-/book/ponto-dos-gachos,/destinations/south-america,booking page -> not on the new site yet; region page (brazil country page not built yet),Book your stay at Ponta Dos Ganchos | Wild Earth Stays
+/book/ponto-dos-gachos,/destinations/south-america/brazil,booking page -> not on the new site yet; country page,Book your stay at Ponta Dos Ganchos | Wild Earth Stays
 /book/post-ranch-inn,/stays/post-ranch-inn,booking page -> stay page,Book your stay at Post Ranch Inn | Wild Earth Stays
 /book/puu-o-hoku-ranch,/stays/pu-u-hoko-ranch,booking page -> stay page,Book your stay at Pu&#x27;u O Hoku Ranch | Wild Earth Stays
 /book/radhoo-tulum,/stays/radhoo-tulum,booking page -> stay page,Book your stay at Radhoo Tulum | Wild Earth Stays
 /book/rascal-voyages,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Rascal Voyages | Wild Earth Stays
 /book/rekero-camp-by-asilia,/stays/asilia-rekero-camp,booking page -> stay page,Book your stay at  Asilia Rekero Camp | Wild Earth Stays
 /book/roald-edmundsen,/destinations/polar-antarctica,booking page -> not on the new site yet; region page (antarctica-cruises country page not built yet),Book your stay at HX Cruise Roald Edmundsen | Wild Earth Stays
-/book/royal-davui-island-resort,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Royal Davui Island Resort | Wild Earth Stays
+/book/royal-davui-island-resort,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Royal Davui Island Resort | Wild Earth Stays
 /book/rubondo-island-camp-by-asilia,/stays/rubondo-island-camp-asilia,booking page -> stay page,Book your stay at Rubondo Island Camp by Asilia | Wild Earth Stays
 /book/samara-karoo-reserve,/stays/samara-karoo-reserve,booking page -> stay page,Book your stay at Samara Karoo Reserve | Wild Earth Stays
 /book/saruni-eagle-view,/stays/saruni-eagle-view,booking page -> stay page,Book your stay at Saruni Eagle View | Wild Earth Stays
@@ -222,7 +222,7 @@ old path,new path,why,old title
 /book/serengeti-lamai-camp-by-serian,/stays/serengeti-lamai-camp-by-serian,booking page -> stay page,Book your stay at Serengeti Lamai Camp by Serian | Wild Earth Stays
 /book/seseka-thornybush,/destinations/africa/south-africa,booking page -> not on the new site yet; country page,Book your stay at Seseka Thornybush  | Wild Earth Stays
 /book/shinta-mani-wild,/stays/shinta-mani-wild,booking page -> stay page,Book your stay at Shinta Mani Wild | Wild Earth Stays
-/book/shipwreck-lodge-namibia,/destinations/africa,booking page -> not on the new site yet; region page (namibia country page not built yet),Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
+/book/shipwreck-lodge-namibia,/destinations/africa/namibia,booking page -> not on the new site yet; country page,Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
 /book/silolona-sojourns,/stays/silolona-sojourns,booking page -> stay page,Book your stay at Silolona Sojourns  | Wild Earth Stays
 /book/singita-boulders-lodge,/stays/singita-boulders,booking page -> stay page,Book your stay at Singita Boulders Lodge | Wild Earth Stays
 /book/singita-castleton,/stays/singita-castleton,booking page -> stay page,Book your stay at Singita Castleton | Wild Earth Stays
@@ -260,7 +260,7 @@ old path,new path,why,old title
 /book/six-senses-uluwatu,/stays/six-senses-uluwatu,booking page -> stay page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
 /book/six-senses-yao-noi,/stays/six-senses-yao-noi,booking page -> stay page,Book your stay at Six Senses Yao Noi | Wild Earth Stays
 /book/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,booking page -> stay page,Book your stay at Six Senses Zil Pasyon | Wild Earth Stays
-/book/somalisa-acacia,/destinations/africa,booking page -> not on the new site yet; region page (zimbabwe country page not built yet),Book your stay at Somalisa Acacia | Wild Earth Stays
+/book/somalisa-acacia,/destinations/africa/zimbabwe,booking page -> not on the new site yet; country page,Book your stay at Somalisa Acacia | Wild Earth Stays
 /book/soneva-fushi-maldives,/stays/soneva-fushi-maldives,booking page -> stay page,Book your stay at Soneva Fushi - Maldives | Wild Earth Stays
 /book/soneva-jani-maldives,/stays/soneva-jani-maldives,booking page -> stay page,Book your stay at Soneva Jani Maldives | Wild Earth Stays
 /book/soneva-secret-maldives,/stays/soneva-secret-maldives,booking page -> stay page,Book your stay at Soneva Secret Maldives | Wild Earth Stays
@@ -288,11 +288,11 @@ old path,new path,why,old title
 /book/time-tide-chinzombo,/stays/time-tide-chinzombo-2,booking page -> stay page,Book your stay at Time + Tide Chinzombo | Wild Earth Stays
 /book/time-tide-chongwe,/stays/time-tide-chongwe-2,booking page -> stay page,Book your stay at Time + Tide Chongwe | Wild Earth Stays
 /book/time-tide-mchenja,/stays/time-tide-mchenja,booking page -> stay page,Book your stay at Time + Tide Mchenja | Wild Earth Stays
-/book/tokoriki-island-resort,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Tokoriki Island Resort | Wild Earth Stays
-/book/trobbu-luxury-villas,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Trobbu Luxury Villas | Wild Earth Stays
+/book/tokoriki-island-resort,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Tokoriki Island Resort | Wild Earth Stays
+/book/trobbu-luxury-villas,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Trobbu Luxury Villas | Wild Earth Stays
 /book/tswalu-reserve,/stays/tswalu-reserve,booking page -> stay page,Book your stay at Tswalu Reserve | Wild Earth Stays
 /book/ubuntu-migration-camp-by-asilia,/stays/ubuntu-migration-camp-asilia,booking page -> stay page,Book your stay at Ubuntu Migration Camp by Asilia | Wild Earth Stays
-/book/ulum-moab,/destinations/usa-canada,booking page -> not on the new site yet; region page (utah country page not built yet),Book your stay at Ulum Moab | Wild Earth Stays
+/book/ulum-moab,/destinations/usa-canada/utah,booking page -> not on the new site yet; country page,Book your stay at Ulum Moab | Wild Earth Stays
 /book/under-canvas-bryce-canyon,/stays/under-canvas-brtce-canyon,booking page -> stay page,Book your stay at Under Canvas Bryce Canyon | Wild Earth Stays
 /book/under-canvas-glacier,/stays/under-canvas-glacier,booking page -> stay page,Book your stay at Under Canvas Glacier | Wild Earth Stays
 /book/under-canvas-grand-canyon,/stays/under-canvas-grand-canyon,booking page -> stay page,Book your stay at Under Canvas Grand Canyon | Wild Earth Stays
@@ -306,12 +306,12 @@ old path,new path,why,old title
 /book/uxua-casa,/stays/uxua-casa-hotel-spa,booking page -> stay page,Book your stay at Uxua Casa Hotel Spa | Wild Earth Stays
 /book/velaa-private-island,/stays/velaa-private-island,booking page -> stay page,Book your stay at Velaa Private Island | Wild Earth Stays
 /book/viceroy-bali,/stays/viceroy-bali,booking page -> stay page,Book your stay at Viceroy Bali | Wild Earth Stays
-/book/wilderness-bisate-lodge,/destinations/africa,booking page -> not on the new site yet; region page (rwanda country page not built yet),Book your stay at Wilderness Bisate Lodge | Wild Earth Stays
+/book/wilderness-bisate-lodge,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at Wilderness Bisate Lodge | Wild Earth Stays
 /book/wilderness-bisate-reserve,/stays/wilderness-bisate-reserve,booking page -> stay page,Book your stay at Wilderness Bisate Reserve | Wild Earth Stays
 /book/wilderness-busanga,/stays/wilderness-busanga,booking page -> stay page,Book your stay at Wilderness Busanga | Wild Earth Stays
 /book/wilderness-desert-rhino-camp,/stays/wilderness-desert-rhino-camp,booking page -> stay page,Book your stay at Wilderness Desert Rhino Camp | Wild Earth Stays
 /book/wilderness-doro-nawas,/stays/wilderness-damaraland,booking page -> stay page,Book your stay at Wilderness Doro Nawas | Wild Earth Stays
-/book/wilderness-dumatau,/destinations/africa,booking page -> not on the new site yet; region page (botswana country page not built yet),Book your stay at Wilderness DumaTau | Wild Earth Stays
+/book/wilderness-dumatau,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Wilderness DumaTau | Wild Earth Stays
 /book/wilderness-hoanib-skeleton-coast,/stays,booking page -> not on the new site yet; stays hub,Book your stay at  | Wild Earth Stays
 /book/wilderness-jao-camp,/stays/jao-camp,booking page -> stay page,Book your stay at Jao Camp | Wild Earth Stays
 /book/wilderness-kulala-desert-lodge,/stays/wilderness-kulala-desert-camp,booking page -> stay page,Book your stay at Wilderness Kulala Desert Lodge | Wild Earth Stays
@@ -337,7 +337,7 @@ old path,new path,why,old title
 /book/xela-tulum,/stays/xela-tulum,booking page -> stay page,Book your stay at Xela Tulum | Wild Earth Stays
 /book/zarafa-camp-by-great-plains,/stays/great-plains-zarafa-camp,booking page -> stay page,Book your stay at Zarafa Camp by Great Plains | Wild Earth Stays
 /book/zarafa-dhow-suite-by-great-plains,/stays/great-plains-zarafa-dhow-suite,booking page -> stay page,Book your stay at Zarafa Dhow Suite by Great Plains | Wild Earth Stays
-/book/zigera,/destinations/africa,booking page -> not on the new site yet; region page (botswana country page not built yet),Book your stay at Zigera | Wild Earth Stays
+/book/zigera,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Zigera | Wild Earth Stays
 /booking-form-retreat,/plan,site page,
 /booking-itinerary,/plan,site page,
 /booking-process,/plan,site page,
@@ -347,71 +347,71 @@ old path,new path,why,old title
 /country/antarctic-peninsula,/destinations/polar-antarctica,region page (antarctic-peninsula country page not built yet),
 /country/antarctica-cruises,/destinations/polar-antarctica,region page (antarctica-cruises country page not built yet),
 /country/arctic-cruises,/destinations/polar-arctic,region page (arctic-cruises country page not built yet),
-/country/argentina,/destinations/south-america,region page (argentina country page not built yet),
-/country/arizona,/destinations/usa-canada,region page (arizona country page not built yet),
-/country/australia,/destinations/oceania,region page (australia country page not built yet),
-/country/bahamas,/destinations/caribbean-mexico,region page (bahamas country page not built yet),
-/country/baja-mexico,/destinations/caribbean-mexico,region page (mexico country page not built yet),
-/country/belize,/destinations/central-america,region page (belize country page not built yet),
-/country/bolivia,/destinations/south-america,region page (bolivia country page not built yet),
-/country/botswana,/destinations/africa,region page (botswana country page not built yet),
-/country/brazil,/destinations/south-america,region page (brazil country page not built yet),
-/country/california,/destinations/usa-canada,region page (california country page not built yet),
-/country/cambodia,/destinations/asia,region page (cambodia country page not built yet),
-/country/canada,/destinations/usa-canada,region page (canada country page not built yet),
+/country/argentina,/destinations/south-america/argentina,country page,
+/country/arizona,/destinations/usa-canada/arizona,country page,
+/country/australia,/destinations/oceania/australia,country page,
+/country/bahamas,/destinations/caribbean-mexico/bahamas,country page,
+/country/baja-mexico,/destinations/caribbean-mexico/mexico,country page,
+/country/belize,/destinations/central-america/belize,country page,
+/country/bolivia,/destinations/south-america/bolivia,country page,
+/country/botswana,/destinations/africa/botswana,country page,
+/country/brazil,/destinations/south-america/brazil,country page,
+/country/california,/destinations/usa-canada/california,country page,
+/country/cambodia,/destinations/asia/cambodia,country page,
+/country/canada,/destinations/usa-canada/canada,country page,
 /country/canadian-high-arctic,/destinations/polar-arctic,region page (canadian-high-arctic country page not built yet),
-/country/chile,/destinations/south-america,region page (chile country page not built yet),
+/country/chile,/destinations/south-america/chile,country page,
 /country/colorado,/destinations/usa-canada,region page (colorado country page not built yet),
 /country/costa-rica,/destinations/central-america/costa-rica,country page,
-/country/ecuador-galapagos,/destinations/south-america,region page (ecuador-galapagos country page not built yet),
+/country/ecuador-galapagos,/destinations/south-america/ecuador-galapagos,country page,
 /country/falkland-islands,/destinations/south-america,region page (falkland-islands country page not built yet),
-/country/fiji,/destinations/oceania,region page (fiji country page not built yet),
+/country/fiji,/destinations/oceania/fiji,country page,
 /country/florida,/destinations/usa-canada,region page (florida country page not built yet),
-/country/france,/destinations/europe,region page (france country page not built yet),
+/country/france,/destinations/europe/france,country page,
 /country/greece,/destinations/europe,region page (greece country page not built yet),
-/country/hawaii,/destinations/usa-canada,region page (hawaii country page not built yet),
-/country/iceland,/destinations/polar-arctic,region page (iceland country page not built yet),
+/country/hawaii,/destinations/usa-canada/hawaii,country page,
+/country/iceland,/destinations/polar-arctic/iceland,country page,
 /country/indonesia,/destinations/asia/indonesia,country page,
-/country/ireland,/destinations/europe,region page (ireland country page not built yet),
-/country/italy,/destinations/europe,region page (italy country page not built yet),
-/country/kenya,/destinations/africa,region page (kenya country page not built yet),
-/country/madagascar,/destinations/africa,region page (madagascar country page not built yet),
-/country/maldives,/destinations/asia,region page (maldives country page not built yet),
-/country/masai-mara,/destinations/africa,region page (kenya country page not built yet),
-/country/mexico,/destinations/caribbean-mexico,region page (mexico country page not built yet),
+/country/ireland,/destinations/europe/ireland,country page,
+/country/italy,/destinations/europe/italy,country page,
+/country/kenya,/destinations/africa/kenya,country page,
+/country/madagascar,/destinations/africa/madagascar,country page,
+/country/maldives,/destinations/asia/maldives,country page,
+/country/masai-mara,/destinations/africa/kenya,country page,
+/country/mexico,/destinations/caribbean-mexico/mexico,country page,
 /country/mongolia,/destinations/asia,region page (mongolia country page not built yet),
-/country/montana,/destinations/usa-canada,region page (montana country page not built yet),
-/country/namibia,/destinations/africa,region page (namibia country page not built yet),
+/country/montana,/destinations/usa-canada/montana,country page,
+/country/namibia,/destinations/africa/namibia,country page,
 /country/new-mexico,/destinations/usa-canada,region page (new-mexico country page not built yet),
-/country/new-zealand,/destinations/oceania,region page (new-zealand country page not built yet),
+/country/new-zealand,/destinations/oceania/new-zealand,country page,
 /country/northwest-passage,/destinations/polar-arctic,region page (northwest-passage country page not built yet),
 /country/norway,/destinations/europe,region page (norway country page not built yet),
-/country/panama,/destinations/central-america,region page (panama country page not built yet),
-/country/peru,/destinations/south-america,region page (peru country page not built yet),
-/country/philippines,/destinations/asia,region page (philippines country page not built yet),
-/country/portugal,/destinations/europe,region page (portugal country page not built yet),
+/country/panama,/destinations/central-america/panama,country page,
+/country/peru,/destinations/south-america/peru,country page,
+/country/philippines,/destinations/asia/philippines,country page,
+/country/portugal,/destinations/europe/portugal,country page,
 /country/ross-sea,/destinations/polar-antarctica,region page (ross-sea country page not built yet),
-/country/rwanda,/destinations/africa,region page (rwanda country page not built yet),
-/country/seychelles-find-your-wild-in-the-indian-ocean,/destinations/africa,region page (seychelles country page not built yet),
+/country/rwanda,/destinations/africa/rwanda,country page,
+/country/seychelles-find-your-wild-in-the-indian-ocean,/destinations/africa/seychelles,country page,
 /country/south-africa,/destinations/africa/south-africa,country page,
 /country/south-georgia,/destinations/polar-antarctica,region page (south-georgia country page not built yet),
 /country/south-pole,/destinations/polar-antarctica,region page (south-pole country page not built yet),
-/country/spain,/destinations/europe,region page (spain country page not built yet),
-/country/spain-ibiza,/destinations/europe,region page (spain country page not built yet),
-/country/spain-isla-mallorca,/destinations/europe,region page (spain country page not built yet),
+/country/spain,/destinations/europe/spain,country page,
+/country/spain-ibiza,/destinations/europe/spain,country page,
+/country/spain-isla-mallorca,/destinations/europe/spain,country page,
 /country/st-barths,/destinations/caribbean-mexico,region page (st-barths country page not built yet),
 /country/st-lucia,/destinations/caribbean-mexico,region page (st-lucia country page not built yet),
-/country/switzerland,/destinations/europe,region page (switzerland country page not built yet),
-/country/tahiti,/destinations/oceania,region page (tahiti country page not built yet),
-/country/tanzania,/destinations/africa,region page (tanzania country page not built yet),
-/country/thailand,/destinations/asia,region page (thailand country page not built yet),
+/country/switzerland,/destinations/europe/switzerland,country page,
+/country/tahiti,/destinations/oceania/tahiti,country page,
+/country/tanzania,/destinations/africa/tanzania,country page,
+/country/thailand,/destinations/asia/thailand,country page,
 /country/turks-caicos,/destinations/caribbean-mexico,region page (turks-caicos country page not built yet),
-/country/utah,/destinations/usa-canada,region page (utah country page not built yet),
-/country/vietnam,/destinations/asia,region page (vietnam country page not built yet),
+/country/utah,/destinations/usa-canada/utah,country page,
+/country/vietnam,/destinations/asia/vietnam,country page,
 /country/virgin-islands,/destinations/caribbean-mexico,region page (virgin-islands country page not built yet),
-/country/wyoming,/destinations/usa-canada,region page (wyoming country page not built yet),
-/country/zambia,/destinations/africa,region page (zambia country page not built yet),
-/country/zimbabwe,/destinations/africa,region page (zimbabwe country page not built yet),
+/country/wyoming,/destinations/usa-canada/wyoming,country page,
+/country/zambia,/destinations/africa/zambia,country page,
+/country/zimbabwe,/destinations/africa/zimbabwe,country page,
 /find-stay,/stays,site page,
 /find-your-itinerary,/overland,site page,
 /influencer-application,/for-advisors,site page,
@@ -434,7 +434,7 @@ old path,new path,why,old title
 /memoir/wild-earth-stay-founder-story-40-years-of-sustainable-travel,/journal,journal (post not migrated yet),From Surf to Soul | Wild Earth Stays Memoirs
 /memoirs,/journal,site page,
 /property/aguas-claras,/stays/aguas-claras,stay page,Aguas Claras | Luxury Stays in Costa Rica | Wild Earth Stays
-/property/aiteall-boutique-accommodation,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Aiteall Boutique Accommodation | Luxury Stays in Ireland | Wild Earth Stays
+/property/aiteall-boutique-accommodation,/destinations/europe/ireland,not on the new site yet; country page,Aiteall Boutique Accommodation | Luxury Stays in Ireland | Wild Earth Stays
 /property/aliikai-voyage,/voyages/ships/aliikai,Aliikai vessel profile,Aliikai Voyage | Luxury Stays in Indonesia | Wild Earth Stays
 /property/alila-ventana-big-sur,/stays/alila-ventana-big-sur,stay page,Alila Ventana Big Sur | Luxury Stays in California | Wild Earth Stays
 /property/alya-catamaran-galapagos,/stays/alya-catamaran-galapagos,stay page,Alya Catamaran Galapagos | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
@@ -450,11 +450,11 @@ old path,new path,why,old title
 /property/anantara-chiang-mai-resort,/stays/anantara-chiang-mai-resort,stay page,Anantara Chiang Mai Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/anantara-golden-triangle-chiang-rai,/stays/anantara-golden-triangle-chiang-rai,stay page,Anantara Golden Triangle Elephant Camp &amp; Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/anantara-hua-hin,/stays/anantara-hua-hin,stay page,Anantara Hua Hin Resort | Luxury Stays in Thailand | Wild Earth Stays
-/property/anantara-maia-seychelles-villas,/destinations/africa,not on the new site yet; region page (seychelles country page not built yet),Maia seychelles villas by Anantara | Luxury Stays in Seychelles | Wild Earth Stays
+/property/anantara-maia-seychelles-villas,/destinations/africa/seychelles,not on the new site yet; country page,Maia seychelles villas by Anantara | Luxury Stays in Seychelles | Wild Earth Stays
 /property/anantara-mui-ne,/stays/anantara-mui-ne,stay page,Anantara Mui Ne | Luxury Stays in Vietnam | Wild Earth Stays
 /property/angama-mara,/stays/angama-mara,stay page,Angama Mara | Luxury Stays in Kenya | Wild Earth Stays
 /property/antarctica-21-cruise-2,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),Antarctica 21 Cruise | Luxury Stays in Antarctica Cruises | Wild Earth Stays
-/property/aqua-expeditons,/destinations/south-america,not on the new site yet; region page (peru country page not built yet),Aqua Expeditons | Luxury Stays in Peru | Wild Earth Stays
+/property/aqua-expeditons,/destinations/south-america/peru,not on the new site yet; country page,Aqua Expeditons | Luxury Stays in Peru | Wild Earth Stays
 /property/arenal-springs-camp-by-nayara,/stays/arenal-springs-camp-by-nayara,stay page,Arenal Springs Camp by Nayara | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/arenas-del-mar-resort,/stays/arenas-del-mar-resort,stay page,Arenas Del Mar Resort | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/ariel-house,/stays/ariel-house,stay page,Ariel House | Luxury Stays in Ireland | Wild Earth Stays
@@ -473,12 +473,12 @@ old path,new path,why,old title
 /property/baymanhi-exuma,/stays/baymanhi-exuma,stay page,Baymanhi Exuma | Luxury Stays in Bahamas | Wild Earth Stays
 /property/be-tulum,/stays/be-tulum,stay page,Be Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/beckon-capella-lodge,/stays/beckon-capella-lodge,stay page,Beckon Capella Lodge | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-huka-lodge,/destinations/oceania,not on the new site yet; region page (new-zealand country page not built yet),Beckon Huka Lodge | Luxury Stays in New Zealand | Wild Earth Stays
-/property/beckon-longitude-131,/destinations/oceania,not on the new site yet; region page (australia country page not built yet),Beckon Longitude 131 | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-silky-oaks-lodge,/destinations/oceania,not on the new site yet; region page (australia country page not built yet),Beckon Silky Oaks Lodge | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-southern-ocean-lodge,/destinations/oceania,not on the new site yet; region page (australia country page not built yet),Beckon Southern Ocean Lodge | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-the-louise,/destinations/oceania,not on the new site yet; region page (australia country page not built yet),Beckon The Louise | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-tierra-atacama,/destinations/south-america,not on the new site yet; region page (chile country page not built yet),Beckon Tierra Atacama | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
+/property/beckon-huka-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Beckon Huka Lodge | Luxury Stays in New Zealand | Wild Earth Stays
+/property/beckon-longitude-131,/destinations/oceania/australia,not on the new site yet; country page,Beckon Longitude 131 | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-silky-oaks-lodge,/destinations/oceania/australia,not on the new site yet; country page,Beckon Silky Oaks Lodge | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-southern-ocean-lodge,/destinations/oceania/australia,not on the new site yet; country page,Beckon Southern Ocean Lodge | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-the-louise,/destinations/oceania/australia,not on the new site yet; country page,Beckon The Louise | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-tierra-atacama,/destinations/south-america/chile,not on the new site yet; country page,Beckon Tierra Atacama | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/benguerra-island-by-and-beyond,/stays/benguerra-island-by-and-beyond,stay page,&amp;Beyond Benguerra Island | Luxury Stays in Tanzania | Wild Earth Stays
 /property/beyond-grumeti-safari-camp,/stays/beyond-grumeti-safari-camp,stay page,&amp;Beyond Grumeti Serengeti River Lodge | Luxury Stays in Tanzania | Wild Earth Stays
 /property/beyond-kichwa-camp,/stays/beyond-kichwa-camp,stay page,&amp;Beyond Kichwa Tembo Tented Camp | Luxury Stays in Kenya | Wild Earth Stays
@@ -486,14 +486,14 @@ old path,new path,why,old title
 /property/beyond-mnemba-by-and-beyond,/stays/beyond-mnemba-by-and-beyond,stay page,Mnemba Island by &amp;Beyond | Luxury Stays in Tanzania | Wild Earth Stays
 /property/beyond-sussuvlei-desert-lodge,/stays/beyond-sussuvlei-desert-lodge,stay page,&amp; Beyond Sossusvlei Desert Lodge | Luxury Stays in Namibia | Wild Earth Stays
 /property/beyond-vira-vira-lodge,/stays/beyond-vira-vira-lodge,stay page,&amp; Beyond Vira Vira | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
-/property/beyond-xaranna-okavango-delta-camp-by-and-beyond,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),&amp; Beyond Xaranna Okavango Delta Camp | Luxury Stays in Botswana | Wild Earth Stays
+/property/beyond-xaranna-okavango-delta-camp-by-and-beyond,/destinations/africa/botswana,not on the new site yet; country page,&amp; Beyond Xaranna Okavango Delta Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/borana,/stays/borana,stay page,Borana Lodge | Luxury Stays in Kenya | Wild Earth Stays
 /property/bumi-hills-safari-lodge,/stays/bumi-hills-safari-lodge,stay page,Bumi Hills Safari Lodge | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/cap-karoso,/stays/cap-karoso,stay page,Cap Karoso | Luxury Stays in Indonesia | Wild Earth Stays
 /property/cape-cadogan-boutique-hotel,/stays/cape-cadogan-boutique-hotel,stay page,Cape Cadogan Boutique Hotel | Luxury Stays in South Africa | Wild Earth Stays
 /property/capella-ubud,/stays/capella-ubud,stay page,Capella Ubud | Luxury Stays in Indonesia | Wild Earth Stays
-/property/casa-maya-kaan,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Casa Maya Kaan | Luxury Stays in Mexico | Wild Earth Stays
-/property/castaway-island,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Castaway Island | Luxury Stays in Fiji | Wild Earth Stays
+/property/casa-maya-kaan,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Casa Maya Kaan | Luxury Stays in Mexico | Wild Earth Stays
+/property/castaway-island,/destinations/oceania/fiji,not on the new site yet; country page,Castaway Island | Luxury Stays in Fiji | Wild Earth Stays
 /property/castle-leslie,/stays/castle-leslie,stay page,Castle Leslie | Luxury Stays in Ireland | Wild Earth Stays
 /property/celestia-yacht,/stays/celestia-yacht,stay page,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
 /property/chable-yucatan,/stays/chable-yucatan,stay page,Chable Yucatan | Luxury Stays in Mexico | Wild Earth Stays
@@ -529,8 +529,8 @@ old path,new path,why,old title
 /property/ellerman-house,/stays/ellerman-house,stay page,Ellerman House | Luxury Stays in South Africa | Wild Earth Stays
 /property/elsas-kopje,/stays/elsas-kopje,stay page,Elsas Kopje | Luxury Stays in Kenya | Wild Earth Stays
 /property/encounter-mara-camp-by-asilia,/stays/encounter-mara-camp-by-asilia,stay page,Encounter Mara Camp by Asilia | Luxury Stays in Kenya | Wild Earth Stays
-/property/entamanu-lodge,/destinations/africa,not on the new site yet; region page (tanzania country page not built yet),Entamanu Lodge | Luxury Stays in Tanzania | Wild Earth Stays
-/property/entamanu-private-lodge,/destinations/africa,not on the new site yet; region page (tanzania country page not built yet),Entamanu Private | Luxury Stays in Tanzania | Wild Earth Stays
+/property/entamanu-lodge,/destinations/africa/tanzania,not on the new site yet; country page,Entamanu Lodge | Luxury Stays in Tanzania | Wild Earth Stays
+/property/entamanu-private-lodge,/destinations/africa/tanzania,not on the new site yet; country page,Entamanu Private | Luxury Stays in Tanzania | Wild Earth Stays
 /property/entara-esirai-camp,/stays/entara-esirai-camp,stay page,Entara Esirai Camp | Luxury Stays in Tanzania | Wild Earth Stays
 /property/etosha-mountain-lodge,/stays/etosha-mountain-lodge,stay page,Etosha Mountain Lodge | Luxury Stays in Namibia | Wild Earth Stays
 /property/explora-at-atacama,/stays/explora-at-atacama,stay page,Explora at Atacama | Luxury Stays in Bolivia | Wild Earth Stays
@@ -541,9 +541,9 @@ old path,new path,why,old title
 /property/explora-torres-del-paine,/stays/explora-torres-del-paine,stay page,Explora Torres del Paine | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/feline-fields-lodge,/stays/feline-fields-lodge,stay page,Feline Fields Lodge | Luxury Stays in Botswana | Wild Earth Stays
 /property/feline-fields-vintage-camp,/stays/feline-fields-vintage-camp,stay page,Feline Fields Vintage Camp | Luxury Stays in Botswana | Wild Earth Stays
-/property/ferndale-achill-island,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),"Ferndale, Achill Island | Luxury Stays in Ireland | Wild Earth Stays"
-/property/few-far-luvhondo,/destinations/africa,not on the new site yet; region page (kenya country page not built yet),Few &amp; Far Luvhondo | Luxury Stays in Kenya | Wild Earth Stays
-/property/fiji-marriott-resort-momi-bay,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Fiji Marriott Resort Momi Bay | Luxury Stays in Fiji | Wild Earth Stays
+/property/ferndale-achill-island,/destinations/europe/ireland,not on the new site yet; country page,"Ferndale, Achill Island | Luxury Stays in Ireland | Wild Earth Stays"
+/property/few-far-luvhondo,/destinations/africa/kenya,not on the new site yet; country page,Few &amp; Far Luvhondo | Luxury Stays in Kenya | Wild Earth Stays
+/property/fiji-marriott-resort-momi-bay,/destinations/oceania/fiji,not on the new site yet; country page,Fiji Marriott Resort Momi Bay | Luxury Stays in Fiji | Wild Earth Stays
 /property/fogo-island-inn,/stays/fogo-island-inn,stay page,Fogo Island Inn | Luxury Stays in Canada | Wild Earth Stays
 /property/gibbs-farm,/stays/gibbs-farm,stay page,Gibbs Farm | Luxury Stays in Tanzania | Wild Earth Stays
 /property/giraffe-manor,/stays/giraffe-manor,stay page,Giraffe Manor | Luxury Stays in Kenya | Wild Earth Stays
@@ -556,10 +556,10 @@ old path,new path,why,old title
 /property/grootbos-private-nature-reserve,/stays/grootbos-private-nature-reserve,stay page,Grootbos Private Nature Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/gwe-gwe-beach-lodge,/stays/gwe-gwe-beach-lodge,stay page,Gwe Gwe Beach Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/hayfield-manor,/stays/hayfield-manor,stay page,Hayfield Manor | Luxury Stays in Ireland | Wild Earth Stays
-/property/holistika,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Holistika | Luxury Stays in Mexico | Wild Earth Stays
+/property/holistika,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Holistika | Luxury Stays in Mexico | Wild Earth Stays
 /property/hotel-bardo,/stays/hotel-bardo,stay page,Hotel Bardo | Luxury Stays in Mexico | Wild Earth Stays
-/property/hotel-esencia,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Hotel Esencia | Luxury Stays in Mexico | Wild Earth Stays
-/property/hotel-panamera,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Hotel Panamera | Luxury Stays in Mexico | Wild Earth Stays
+/property/hotel-esencia,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Hotel Esencia | Luxury Stays in Mexico | Wild Earth Stays
+/property/hotel-panamera,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Hotel Panamera | Luxury Stays in Mexico | Wild Earth Stays
 /property/house-in-the-wild-masai-mara,/stays/house-in-the-wild-masai-mara,stay page,House in the Wild Masai Mara | Luxury Stays in Kenya | Wild Earth Stays
 /property/hx-cruise-roald-edmundsen,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),HX Cruise Roald Edmundsen | Luxury Stays in Antarctica Cruises | Wild Earth Stays
 /property/hx-cruises-sv-spitsbergen,/destinations/europe,not on the new site yet; region page (norway country page not built yet),HX Cruise SV Spitsbergen | Luxury Stays in Norway | Wild Earth Stays
@@ -573,7 +573,7 @@ old path,new path,why,old title
 /property/isla-palenque-resort,/stays/isla-palenque-resort,stay page,Isla Palenque Resort | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/isla-secas,/stays/isla-secas,stay page,Isla Secas | Luxury Stays in Panama | Wild Earth Stays
 /property/isla-secas-panama,/stays/isla-secas-panama,stay page,Isla Secas - Panama | Luxury Stays in Panama | Wild Earth Stays
-/property/iveagh-garden-hotel,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
+/property/iveagh-garden-hotel,/destinations/europe/ireland,not on the new site yet; country page,Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
 /property/ja-manufaru-maldives,/stays/ja-manufaru-maldives,stay page,JA Manufaru Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/jacks-camp,/stays/jacks-camp,stay page,Jacks Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/jacks-private-camp,/stays/jacks-private-camp,stay page,Jacks Private Camp | Luxury Stays in Botswana | Wild Earth Stays
@@ -588,7 +588,7 @@ old path,new path,why,old title
 /property/khwai-lediba,/stays/khwai-lediba,stay page,Khwai Lediba | Luxury Stays in Botswana | Wild Earth Stays
 /property/kichakani-camp,/stays/kichakani-camp,stay page,Kichakani Camp | Luxury Stays in Tanzania | Wild Earth Stays
 /property/kicheche-mara-north,/stays/kicheche-mara-north,stay page,Kicheche Mara North | Luxury Stays in Kenya | Wild Earth Stays
-/property/king-sitric,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),King Sitric | Luxury Stays in Ireland | Wild Earth Stays
+/property/king-sitric,/destinations/europe/ireland,not on the new site yet; country page,King Sitric | Luxury Stays in Ireland | Wild Earth Stays
 /property/kokoko-camp-by-asilia,/stays/kokoko-camp-by-asilia,stay page,Kokoko Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
 /property/kudadoo-private-island,/stays/kudadoo-private-island,stay page,Kudadoo Private Island | Luxury Stays in Maldives | Wild Earth Stays
 /property/kura-boutique-resort,/stays/kura-boutique-resort,stay page,Kura Boutique Resort | Luxury Stays in Costa Rica | Wild Earth Stays
@@ -609,7 +609,7 @@ old path,new path,why,old title
 /property/la-tahaa,/stays/la-tahaa,stay page,Le Taha&#x27;a | Luxury Stays in Tahiti | Wild Earth Stays
 /property/la-valise-tulum,/stays/la-valise-tulum,stay page,La Valise Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/lalibela-reserve,/safaris/lalibela-reserve,safari reserve,Lalibela Reserve | Luxury Stays in South Africa | Wild Earth Stays
-/property/lamai-serengeti,/destinations/africa,not on the new site yet; region page (tanzania country page not built yet),Lamai Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
+/property/lamai-serengeti,/destinations/africa/tanzania,not on the new site yet; country page,Lamai Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
 /property/lapa-rios-lodge,/stays/lapa-rios-lodge,stay page,Lapa Rios Lodge | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/le-quartier-francais,/stays/le-quartier-francais,stay page,Le Quartier Francais | Luxury Stays in South Africa | Wild Earth Stays
 /property/leeu-estates,/stays/leeu-estates,stay page,Leeu Estates | Luxury Stays in South Africa | Wild Earth Stays
@@ -618,8 +618,8 @@ old path,new path,why,old title
 /property/lengishu-kenya,/stays/lengishu-kenya,stay page,Lengishu Lewa Residence  | Luxury Stays in Kenya | Wild Earth Stays
 /property/leopard-hills,/stays/leopard-hills,stay page,Leopard Hills | Luxury Stays in South Africa | Wild Earth Stays
 /property/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,stay page,Lewa Wilderness Lodge | Luxury Stays in Kenya | Wild Earth Stays
-/property/likuliku-lagoon-resort,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Likuliku Lagoon Resort | Luxury Stays in Fiji | Wild Earth Stays
-/property/lindis-lodge,/destinations/oceania,not on the new site yet; region page (new-zealand country page not built yet),Lindis Lodge | Luxury Stays in New Zealand | Wild Earth Stays
+/property/likuliku-lagoon-resort,/destinations/oceania/fiji,not on the new site yet; country page,Likuliku Lagoon Resort | Luxury Stays in Fiji | Wild Earth Stays
+/property/lindis-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Lindis Lodge | Luxury Stays in New Zealand | Wild Earth Stays
 /property/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,stay page,Wilderness Linyanti Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/lion-sands,/safaris/lion-sands,safari reserve,Lion Sands Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/lolebezi-lodge,/stays/lolebezi-lodge,stay page,Lolebezi Lodge | Luxury Stays in Zambia | Wild Earth Stays
@@ -630,7 +630,7 @@ old path,new path,why,old title
 /property/mara-toto-tree-camp-by-great-plains,/stays/mara-toto-tree-camp-by-great-plains,stay page,Mara Toto Tree Camp by Great Plains | Luxury Stays in Kenya | Wild Earth Stays
 /property/masoala-forest-lodge,/stays/masoala-forest-lodge,stay page,Masoala Forest Lodge | Luxury Stays in Madagascar | Wild Earth Stays
 /property/matetsi-victoria-falls,/stays/matetsi-victoria-falls,stay page,Matetsi Victoria Falls | Luxury Stays in Zambia | Wild Earth Stays
-/property/mayakoba-by-alilia,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Mayakoba by Alilia | Luxury Stays in Mexico | Wild Earth Stays
+/property/mayakoba-by-alilia,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Mayakoba by Alilia | Luxury Stays in Mexico | Wild Earth Stays
 /property/meno-a-kwena-camp,/stays/meno-a-kwena-camp,stay page,Meno A Kwena Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/mezzanine-tulum,/stays/mezzanine-tulum,stay page,Mezzanine Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/mfuwe-lodge,/stays/mfuwe-lodge,stay page,Mfuwe Lodge | Luxury Stays in Zambia | Wild Earth Stays
@@ -638,9 +638,9 @@ old path,new path,why,old title
 /property/monachira-camp,/stays/monachira-camp,stay page,Monachira Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/monwana-thornybush,/stays/monwana-thornybush,stay page,Monwana Thornybush | Luxury Stays in South Africa | Wild Earth Stays
 /property/morukuru-farm-house,/stays/morukuru-farm-house,stay page,Morukuru Farm House | Luxury Stays in South Africa | Wild Earth Stays
-/property/muare-tulum-hotel,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Muaré Tulum Hotel | Luxury Stays in Mexico | Wild Earth Stays
+/property/muare-tulum-hotel,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Muaré Tulum Hotel | Luxury Stays in Mexico | Wild Earth Stays
 /property/mutiara-laut,/stays/mutiara-laut,stay page,Mutiara Laut | Luxury Stays in Indonesia | Wild Earth Stays
-/property/namale-resort-and-spa,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Namale Resort and Spa | Luxury Stays in Fiji | Wild Earth Stays
+/property/namale-resort-and-spa,/destinations/oceania/fiji,not on the new site yet; country page,Namale Resort and Spa | Luxury Stays in Fiji | Wild Earth Stays
 /property/nami-project,/stays/nami-project,stay page,The Nami Project | Luxury Stays in Canada | Wild Earth Stays
 /property/namiri-plains-camp-by-asilia,/stays/namiri-plains-camp-by-asilia,stay page,Namiri Plains Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
 /property/nautilus-maldives,/stays/nautilus-maldives,stay page,Nautilus Maldives | Luxury Stays in Maldives | Wild Earth Stays
@@ -653,8 +653,8 @@ old path,new path,why,old title
 /property/ngala-safari-lodge-by-beyond,/stays/ngala-safari-lodge-by-beyond,stay page,Ngala Safari Lodge by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
 /property/ngare-camp-by-serian,/stays/ngare-camp-by-serian,stay page,Ngare Camp by Serian | Luxury Stays in Kenya | Wild Earth Stays
 /property/nihi,/stays/nihi,stay page,NIHI Sumba | Luxury Stays in Indonesia | Wild Earth Stays
-/property/nimali-mara,/destinations/africa,not on the new site yet; region page (kenya country page not built yet),Nimali Mara | Luxury Stays in Kenya | Wild Earth Stays
-/property/nimali-serengeti,/destinations/africa,not on the new site yet; region page (tanzania country page not built yet),Nimali Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
+/property/nimali-mara,/destinations/africa/kenya,not on the new site yet; country page,Nimali Mara | Luxury Stays in Kenya | Wild Earth Stays
+/property/nimali-serengeti,/destinations/africa/tanzania,not on the new site yet; country page,Nimali Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
 /property/niyama-private-islands-maldives,/stays/niyama-private-islands-maldives,stay page,Niyama Island - Maldives  | Luxury Stays in Maldives | Wild Earth Stays
 /property/no-1-pery-square-limerick,/stays/no-1-pery-square-limerick,stay page,"No.1 Pery Square, Limerick | Luxury Stays in Ireland | Wild Earth Stays"
 /property/noah-forest-by-tifakara,/destinations/central-america/costa-rica,not on the new site yet; country page,Noah Forest by Tifakara | Luxury Stays in Costa Rica | Wild Earth Stays
@@ -663,16 +663,16 @@ old path,new path,why,old title
 /property/nomade-temple-madrid,/stays/nomade-temple-madrid,stay page,Nomade Temple Madrid | Luxury Stays in Spain | Wild Earth Stays
 /property/nomade-tulum,/stays/nomade-tulum,stay page,Nomade Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/north-island-okavango,/stays/north-island-okavango,stay page,North Island Okavango | Luxury Stays in Botswana | Wild Earth Stays
-/property/number-31,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Number 31 | Luxury Stays in Ireland | Wild Earth Stays
+/property/number-31,/destinations/europe/ireland,not on the new site yet; country page,Number 31 | Luxury Stays in Ireland | Wild Earth Stays
 /property/ocean-nova-cruise,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),Ocean Nova Cruise | Luxury Stays in Antarctica Cruises | Wild Earth Stays
 /property/ol-jogi-conservancy,/stays/ol-jogi-conservancy,stay page,Ol Jogi Conservancy | Luxury Stays in Kenya | Wild Earth Stays
 /property/ol-pejeta-bush-camp-asilia,/stays/ol-pejeta-bush-camp-asilia,stay page,Ol Pejeta Bush Camp by Asilia | Luxury Stays in Kenya | Wild Earth Stays
 /property/olas-tulum,/stays/olas-tulum,stay page,Olas Tulum | Luxury Stays in Mexico | Wild Earth Stays
-/property/one-only-gorillas-nest,/destinations/africa,not on the new site yet; region page (rwanda country page not built yet),One &amp; Only Gorilla&#x27;s Nest | Luxury Stays in Rwanda | Wild Earth Stays
-/property/one-only-nyungwe,/destinations/africa,not on the new site yet; region page (rwanda country page not built yet),One &amp; Only Nyungwe | Luxury Stays in Rwanda | Wild Earth Stays
+/property/one-only-gorillas-nest,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Gorilla&#x27;s Nest | Luxury Stays in Rwanda | Wild Earth Stays
+/property/one-only-nyungwe,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Nyungwe | Luxury Stays in Rwanda | Wild Earth Stays
 /property/open-sky,/stays/open-sky,stay page,Open Sky | Luxury Stays in Utah | Wild Earth Stays
 /property/our-habitas-namibia,/stays/our-habitas-namibia,stay page,Our Habitas Namibia | Luxury Stays in Namibia | Wild Earth Stays
-/property/our-habitas-tulum,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Our Habitas Tulum | Luxury Stays in Mexico | Wild Earth Stays
+/property/our-habitas-tulum,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Our Habitas Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/pacuare-lodge,/stays/pacuare-lodge,stay page,Pacuare Lodge | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/paws-up-resort,/stays/paws-up-resort,stay page,Paws Up Resort | Luxury Stays in Montana | Wild Earth Stays
 /property/pearl-resort-le-bora-bora,/stays/pearl-resort-le-bora-bora,stay page,Pearl Resort Le Bora bora | Luxury Stays in Tahiti | Wild Earth Stays
@@ -681,16 +681,16 @@ old path,new path,why,old title
 /property/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,stay page,Pearl Resort Le Tikehau | Luxury Stays in Tahiti | Wild Earth Stays
 /property/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,stay page,Pearl Resort Vahine Private Island | Luxury Stays in Tahiti | Wild Earth Stays
 /property/phinda-homestead-by-and-beyond,/stays/phinda-homestead-by-and-beyond,stay page,Phinda Homestead by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
-/property/pikaia-lodge,/destinations/south-america,not on the new site yet; region page (ecuador-galapagos country page not built yet),Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
+/property/pikaia-lodge,/destinations/south-america/ecuador-galapagos,not on the new site yet; country page,Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
 /property/pods-camp-bay,/stays/pods-camp-bay,stay page,Pods Camp Bay | Luxury Stays in South Africa | Wild Earth Stays
-/property/ponta-dos-ganchos,/destinations/south-america,not on the new site yet; region page (brazil country page not built yet),Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
+/property/ponta-dos-ganchos,/destinations/south-america/brazil,not on the new site yet; country page,Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
 /property/post-ranch-inn,/stays/post-ranch-inn,stay page,Post Ranch Inn | Luxury Stays in California | Wild Earth Stays
 /property/pu-u-hoko-ranch,/stays/pu-u-hoko-ranch,stay page,Pu&#x27;u O Hoku Ranch | Luxury Stays in Hawaii | Wild Earth Stays
-/property/quinlan-cooke-cahersiveen,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
+/property/quinlan-cooke-cahersiveen,/destinations/europe/ireland,not on the new site yet; country page,"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
 /property/rayvadee-resort,/stays/rayvadee-resort,stay page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
-/property/royal-davui-island-resort,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
+/property/royal-davui-island-resort,/destinations/oceania/fiji,not on the new site yet; country page,Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/royal-malewane,/stays/royal-malewane,stay page,Royal Malewane | Luxury Stays in South Africa | Wild Earth Stays
 /property/rubondo-island-camp-asilia,/stays/rubondo-island-camp-asilia,stay page,Rubondo Island Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
 /property/sable-alley-khwai,/stays/sable-alley-khwai,stay page,Sable Alley Khwai | Luxury Stays in Botswana | Wild Earth Stays
@@ -707,14 +707,14 @@ old path,new path,why,old title
 /property/serengeti-lamai-camp-by-serian,/stays/serengeti-lamai-camp-by-serian,stay page,Serengeti Lamai Camp by Serian | Luxury Stays in Tanzania | Wild Earth Stays
 /property/seseka-thornybush,/destinations/africa/south-africa,not on the new site yet; country page,Seseka Thornybush  | Luxury Stays in South Africa | Wild Earth Stays
 /property/shinta-mani-wild,/stays/shinta-mani-wild,stay page,Shinta Mani Wild | Luxury Stays in Cambodia | Wild Earth Stays
-/property/shipwreck-lodge-namibia,/destinations/africa,not on the new site yet; region page (namibia country page not built yet),Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
+/property/shipwreck-lodge-namibia,/destinations/africa/namibia,not on the new site yet; country page,Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
 /property/silolona-sojourns,/stays/silolona-sojourns,stay page,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
 /property/singita-boulders,/stays/singita-boulders,stay page,Singita Boulders Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-castleton,/stays/singita-castleton,stay page,Singita Castleton | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-ebony,/stays/singita-ebony,stay page,Singita Ebony Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-ebony-villa,/stays/singita-ebony-villa,stay page,Singita Ebony Villa | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-elela,/stays/singita-elela,stay page,Singita Elela | Luxury Stays in Rwanda | Wild Earth Stays
-/property/singita-explore,/destinations/africa,not on the new site yet; region page (tanzania country page not built yet),Singita Explore | Luxury Stays in Tanzania | Wild Earth Stays
+/property/singita-explore,/destinations/africa/tanzania,not on the new site yet; country page,Singita Explore | Luxury Stays in Tanzania | Wild Earth Stays
 /property/singita-faru-faru-lodge,/stays/singita-faru-faru-lodge,stay page,Singita Faru Faru Lodge | Luxury Stays in Tanzania | Wild Earth Stays
 /property/singita-katanza-house,/stays/singita-katanza-house,stay page,Singita Katanza House | Luxury Stays in Rwanda | Wild Earth Stays
 /property/singita-kilima,/stays/singita-kilima,stay page,Singita Kilima | Luxury Stays in Tanzania | Wild Earth Stays
@@ -747,13 +747,13 @@ old path,new path,why,old title
 /property/six-senses-uluwatu,/stays/six-senses-uluwatu,stay page,Six Senses Uluwatu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/six-senses-yao-noi,/stays/six-senses-yao-noi,stay page,Six Senses Yao Noi | Luxury Stays in Thailand | Wild Earth Stays
 /property/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,stay page,Six Senses Zil Pasyon | Luxury Stays in Seychelles | Wild Earth Stays
-/property/skybeds-khwai,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),Skybeds Khwai | Luxury Stays in Botswana | Wild Earth Stays
-/property/somalisa-acacia,/destinations/africa,not on the new site yet; region page (zimbabwe country page not built yet),Somalisa Acacia | Luxury Stays in Zimbabwe | Wild Earth Stays
+/property/skybeds-khwai,/destinations/africa/botswana,not on the new site yet; country page,Skybeds Khwai | Luxury Stays in Botswana | Wild Earth Stays
+/property/somalisa-acacia,/destinations/africa/zimbabwe,not on the new site yet; country page,Somalisa Acacia | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/soneva-fushi-maldives,/stays/soneva-fushi-maldives,stay page,Soneva Fushi - Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soneva-jani-maldives,/stays/soneva-jani-maldives,stay page,Soneva Jani Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soneva-secret-maldives,/stays/soneva-secret-maldives,stay page,Soneva Secret Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soori-bali,/stays/soori-bali,stay page,Soori Bali | Luxury Stays in Indonesia | Wild Earth Stays
-/property/stanley-livingstone-lodge,/destinations/africa,not on the new site yet; region page (zimbabwe country page not built yet),Stanley &amp; Livingstone Lodge | Luxury Stays in Zimbabwe | Wild Earth Stays
+/property/stanley-livingstone-lodge,/destinations/africa/zimbabwe,not on the new site yet; country page,Stanley &amp; Livingstone Lodge | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/suyian-lodge-by-and-beyond,/stays/suyian-lodge-by-and-beyond,stay page,Suyian Lodge by &amp;Beyond | Luxury Stays in Kenya | Wild Earth Stays
 /property/tabacon-thermal-resort-spa,/stays/tabacon-thermal-resort-spa,stay page,Tabacón Thermal Resort &amp; Spa | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/tanah-gajah,/stays/tanah-gajah,stay page,Tanah Gajah | Luxury Stays in Indonesia | Wild Earth Stays
@@ -772,21 +772,21 @@ old path,new path,why,old title
 /property/the-beach-tulum,/stays/the-beach-tulum,stay page,The Beach Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/the-brando-tetiaroa,/stays/the-brando-tetiaroa,stay page,The Brando Tetiaroa | Luxury Stays in Tahiti | Wild Earth Stays
 /property/the-highlands-by-asilia-highlands,/stays/the-highlands-by-asilia-highlands,stay page,The Highlands by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
-/property/the-merrion,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),The Merrion | Luxury Stays in Ireland | Wild Earth Stays
+/property/the-merrion,/destinations/europe/ireland,not on the new site yet; country page,The Merrion | Luxury Stays in Ireland | Wild Earth Stays
 /property/the-original-camp-by-serian,/stays/the-original-camp-by-serian,stay page,The Original Camp by Serian  | Luxury Stays in Kenya | Wild Earth Stays
 /property/the-retreat-at-blue-lagoon,/stays/the-retreat-at-blue-lagoon,stay page,The Retreat At Blue Lagoon | Luxury Stays in Iceland | Wild Earth Stays
-/property/the-wilder,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),The Wilder | Luxury Stays in Ireland | Wild Earth Stays
+/property/the-wilder,/destinations/europe/ireland,not on the new site yet; country page,The Wilder | Luxury Stays in Ireland | Wild Earth Stays
 /property/thornybush-reserve,/destinations/africa/south-africa,not on the new site yet; country page,Thornybush Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/tierra-patagonia,/stays/tierra-patagonia,stay page,Tierra Patagonia | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/time-tide-chinzombo-2,/stays/time-tide-chinzombo-2,stay page,Time + Tide Chinzombo | Luxury Stays in Zambia | Wild Earth Stays
 /property/time-tide-chongwe-2,/stays/time-tide-chongwe-2,stay page,Time + Tide Chongwe | Luxury Stays in Zambia | Wild Earth Stays
 /property/time-tide-mchenja,/stays/time-tide-mchenja,stay page,Time + Tide Mchenja | Luxury Stays in Zambia | Wild Earth Stays
-/property/tokoriki-island-resort,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Tokoriki Island Resort | Luxury Stays in Fiji | Wild Earth Stays
+/property/tokoriki-island-resort,/destinations/oceania/fiji,not on the new site yet; country page,Tokoriki Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/torres-del-paine-c-reserve,/stays/torres-del-paine-c-reserve,stay page,Explora Torres del Paine C. Reserve | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
-/property/trobbu-luxury-villas,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Trobbu Luxury Villas | Luxury Stays in Mexico | Wild Earth Stays
+/property/trobbu-luxury-villas,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Trobbu Luxury Villas | Luxury Stays in Mexico | Wild Earth Stays
 /property/tswalu-reserve,/stays/tswalu-reserve,stay page,Tswalu Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/ubuntu-migration-camp-asilia,/stays/ubuntu-migration-camp-asilia,stay page,Ubuntu Migration Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
-/property/ulum-moab,/destinations/usa-canada,not on the new site yet; region page (utah country page not built yet),Ulum Moab | Luxury Stays in Utah | Wild Earth Stays
+/property/ulum-moab,/destinations/usa-canada/utah,not on the new site yet; country page,Ulum Moab | Luxury Stays in Utah | Wild Earth Stays
 /property/under-canvas-brtce-canyon,/stays/under-canvas-brtce-canyon,stay page,Under Canvas Bryce Canyon | Luxury Stays in Utah | Wild Earth Stays
 /property/under-canvas-glacier,/stays/under-canvas-glacier,stay page,Under Canvas Glacier | Luxury Stays in Montana | Wild Earth Stays
 /property/under-canvas-grand-canyon,/stays/under-canvas-grand-canyon,stay page,Under Canvas Grand Canyon | Luxury Stays in Arizona | Wild Earth Stays
@@ -800,12 +800,12 @@ old path,new path,why,old title
 /property/uxua-casa-hotel-spa,/stays/uxua-casa-hotel-spa,stay page,Uxua Casa Hotel Spa | Luxury Stays in Brazil | Wild Earth Stays
 /property/velaa-private-island,/stays/velaa-private-island,stay page,Velaa Private Island | Luxury Stays in Maldives | Wild Earth Stays
 /property/viceroy-bali,/stays/viceroy-bali,stay page,Viceroy Bali | Luxury Stays in Indonesia | Wild Earth Stays
-/property/wilderness-bisate-lodge,/destinations/africa,not on the new site yet; region page (rwanda country page not built yet),Wilderness Bisate Lodge | Luxury Stays in Rwanda | Wild Earth Stays
+/property/wilderness-bisate-lodge,/destinations/africa/rwanda,not on the new site yet; country page,Wilderness Bisate Lodge | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-bisate-reserve,/stays/wilderness-bisate-reserve,stay page,Wilderness Bisate Reserve | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-busanga,/stays/wilderness-busanga,stay page,Wilderness Busanga | Luxury Stays in Zambia | Wild Earth Stays
 /property/wilderness-damaraland,/stays/wilderness-damaraland,stay page,Wilderness Doro Nawas | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-desert-rhino-camp,/stays/wilderness-desert-rhino-camp,stay page,Wilderness Desert Rhino Camp | Luxury Stays in Namibia | Wild Earth Stays
-/property/wilderness-dumatau,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),Wilderness DumaTau | Luxury Stays in Botswana | Wild Earth Stays
+/property/wilderness-dumatau,/destinations/africa/botswana,not on the new site yet; country page,Wilderness DumaTau | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-hoanib-skeleton-camp,/stays/wilderness-hoanib-skeleton-camp,stay page,Wilderness Hoanib Skeleton Coast | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-kulala-desert-camp,/stays/wilderness-kulala-desert-camp,stay page,Wilderness Kulala Desert Lodge | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-kwetsani,/stays/wilderness-kwetsani,stay page,Wilderness Kwetsani | Luxury Stays in Botswana | Wild Earth Stays
@@ -829,7 +829,7 @@ old path,new path,why,old title
 /property/wolwedans-dune-camp,/stays/wolwedans-dune-camp,stay page,Wolwedans Dune Camp | Luxury Stays in Namibia | Wild Earth Stays
 /property/wren-urban-nest,/stays/wren-urban-nest,stay page,Wren Urban Nest | Luxury Stays in Ireland | Wild Earth Stays
 /property/xela-tulum,/stays/xela-tulum,stay page,Xela Tulum | Luxury Stays in Mexico | Wild Earth Stays
-/property/zigera,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),Zigera | Luxury Stays in Botswana | Wild Earth Stays
+/property/zigera,/destinations/africa/botswana,not on the new site yet; country page,Zigera | Luxury Stays in Botswana | Wild Earth Stays
 /region/africa,/destinations/africa,region page,
 /region/asia,/destinations/asia,region page,
 /region/caribbean-mexico,/destinations/caribbean-mexico,region page,
@@ -847,9 +847,9 @@ old path,new path,why,old title
 /stay/aguas-claras-2-bedroom-deluxe-bungalow,/stays/aguas-claras,room of aguas-claras -> stay page,2-Bedroom Deluxe Bungalow with Private Plunge Pool at Aguas Claras | Wild Earth Stays
 /stay/aguas-claras-2-bedroom-luxury-bungalow,/stays/aguas-claras,room of aguas-claras -> stay page,2-Bedroom Luxury Bungalow at Aguas Claras | Wild Earth Stays
 /stay/aguas-claras-pavlova-suites,/stays/aguas-claras,room of aguas-claras -> stay page,Pavlova Suites at Aguas Claras | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-deluxe-king-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at Aiteall Boutique Accommodation | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-deluxe-queen-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Deluxe Queen Room at Aiteall Boutique Accommodation | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-superior-king-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Superior King Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-deluxe-king-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Deluxe King Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-deluxe-queen-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Deluxe Queen Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-superior-king-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Superior King Room at Aiteall Boutique Accommodation | Wild Earth Stays
 /stay/aliikai-abui-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Abui Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
 /stay/aliikai-asmat-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Asmat Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
 /stay/aliikai-dayak-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Dayak Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
@@ -956,32 +956,32 @@ old path,new path,why,old title
 /stay/beckon-capella-lodge-lagoon-loft,/stays/beckon-capella-lodge,room of beckon-capella-lodge -> stay page,Lagoon Loft at Beckon Capella Lodge | Wild Earth Stays
 /stay/beckon-capella-lodge-lidgbird-pavilion,/stays/beckon-capella-lodge,room of beckon-capella-lodge -> stay page,Lidgbird Pavilion at Beckon Capella Lodge | Wild Earth Stays
 /stay/beckon-capella-lodge-makambo-loft,/stays/beckon-capella-lodge,room of beckon-capella-lodge -> stay page,Makambo Loft at Beckon Capella Lodge | Wild Earth Stays
-/stay/beckon-huka-lodge-alan-pye-cottage,/destinations/oceania,room of beckon-huka-lodge -> not on the new site yet; region page (new-zealand country page not built yet),Alan Pye Cottage at Beckon Huka Lodge | Wild Earth Stays
-/stay/beckon-huka-lodge-alex-van-heeren-cottage,/destinations/oceania,room of beckon-huka-lodge -> not on the new site yet; region page (new-zealand country page not built yet),Alex van Heeren Cottage at Beckon Huka Lodge | Wild Earth Stays
-/stay/beckon-huka-lodge-lodge-suite,/destinations/oceania,room of beckon-huka-lodge -> not on the new site yet; region page (new-zealand country page not built yet),Lodge Suite at Beckon Huka Lodge | Wild Earth Stays
-/stay/beckon-huka-lodge-lodge-suite-with-fireplace,/destinations/oceania,room of beckon-huka-lodge -> not on the new site yet; region page (new-zealand country page not built yet),Lodge Suite with Fireplace at Beckon Huka Lodge | Wild Earth Stays
-/stay/beckon-longitude-131-dune-pavilion,/destinations/oceania,room of beckon-longitude-131 -> not on the new site yet; region page (australia country page not built yet),Dune Pavilion at  Beckon Longitude 131 | Wild Earth Stays
-/stay/beckon-longitude-131-luxury-tent,/destinations/oceania,room of beckon-longitude-131 -> not on the new site yet; region page (australia country page not built yet),Luxury Tent at  Beckon Longitude 131 | Wild Earth Stays
-/stay/beckon-longitude-131-luxury-tent-premium-view,/destinations/oceania,room of beckon-longitude-131 -> not on the new site yet; region page (australia country page not built yet),Luxury Tent Premium View at  Beckon Longitude 131 | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-billabong-suite,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Billabong Suite at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-daintree-pavilion,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Daintree Pavilion at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-rainforest-retreat,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Rainforest Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-riverhouse,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Riverhouse at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-treehouse-premium,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Treehouse Premium at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-treehouse-retreat,/destinations/oceania,room of beckon-silky-oaks-lodge -> not on the new site yet; region page (australia country page not built yet),Treehouse Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Baillie Pavilion at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion-east,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Baillie Pavilion East at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion-west,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Baillie Pavilion West at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-flinders-suite,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Flinders Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-osprey-suite,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Osprey Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-remarkable-suite,/destinations/oceania,room of beckon-southern-ocean-lodge -> not on the new site yet; region page (australia country page not built yet),Remarkable Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-the-louise-bethany-suite,/destinations/oceania,room of beckon-the-louise -> not on the new site yet; region page (australia country page not built yet),Bethany Suite at Beckon The Louise | Wild Earth Stays
-/stay/beckon-the-louise-marananga-suite,/destinations/oceania,room of beckon-the-louise -> not on the new site yet; region page (australia country page not built yet),Marananga Suite at Beckon The Louise | Wild Earth Stays
-/stay/beckon-the-louise-stonewell-suite,/destinations/oceania,room of beckon-the-louise -> not on the new site yet; region page (australia country page not built yet),Stonewell Suite at Beckon The Louise | Wild Earth Stays
-/stay/beckon-tierra-atacama-apartment,/destinations/south-america,room of beckon-tierra-atacama -> not on the new site yet; region page (chile country page not built yet),Apartment at Beckon Tierra Atacama | Wild Earth Stays
-/stay/beckon-tierra-atacama-oriente-room,/destinations/south-america,room of beckon-tierra-atacama -> not on the new site yet; region page (chile country page not built yet),Oriente Room at Beckon Tierra Atacama | Wild Earth Stays
-/stay/beckon-tierra-atacama-poniente-room,/destinations/south-america,room of beckon-tierra-atacama -> not on the new site yet; region page (chile country page not built yet),Poniente Room at Beckon Tierra Atacama | Wild Earth Stays
-/stay/beckon-tierra-atacama-suite,/destinations/south-america,room of beckon-tierra-atacama -> not on the new site yet; region page (chile country page not built yet),Suite at Beckon Tierra Atacama | Wild Earth Stays
+/stay/beckon-huka-lodge-alan-pye-cottage,/destinations/oceania/new-zealand,room of beckon-huka-lodge -> not on the new site yet; country page,Alan Pye Cottage at Beckon Huka Lodge | Wild Earth Stays
+/stay/beckon-huka-lodge-alex-van-heeren-cottage,/destinations/oceania/new-zealand,room of beckon-huka-lodge -> not on the new site yet; country page,Alex van Heeren Cottage at Beckon Huka Lodge | Wild Earth Stays
+/stay/beckon-huka-lodge-lodge-suite,/destinations/oceania/new-zealand,room of beckon-huka-lodge -> not on the new site yet; country page,Lodge Suite at Beckon Huka Lodge | Wild Earth Stays
+/stay/beckon-huka-lodge-lodge-suite-with-fireplace,/destinations/oceania/new-zealand,room of beckon-huka-lodge -> not on the new site yet; country page,Lodge Suite with Fireplace at Beckon Huka Lodge | Wild Earth Stays
+/stay/beckon-longitude-131-dune-pavilion,/destinations/oceania/australia,room of beckon-longitude-131 -> not on the new site yet; country page,Dune Pavilion at  Beckon Longitude 131 | Wild Earth Stays
+/stay/beckon-longitude-131-luxury-tent,/destinations/oceania/australia,room of beckon-longitude-131 -> not on the new site yet; country page,Luxury Tent at  Beckon Longitude 131 | Wild Earth Stays
+/stay/beckon-longitude-131-luxury-tent-premium-view,/destinations/oceania/australia,room of beckon-longitude-131 -> not on the new site yet; country page,Luxury Tent Premium View at  Beckon Longitude 131 | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-billabong-suite,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Billabong Suite at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-daintree-pavilion,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Daintree Pavilion at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-rainforest-retreat,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Rainforest Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-riverhouse,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Riverhouse at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-treehouse-premium,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Treehouse Premium at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-treehouse-retreat,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Treehouse Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion-east,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion East at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion-west,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion West at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-flinders-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Flinders Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-osprey-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Osprey Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-remarkable-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Remarkable Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-the-louise-bethany-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Bethany Suite at Beckon The Louise | Wild Earth Stays
+/stay/beckon-the-louise-marananga-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Marananga Suite at Beckon The Louise | Wild Earth Stays
+/stay/beckon-the-louise-stonewell-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Stonewell Suite at Beckon The Louise | Wild Earth Stays
+/stay/beckon-tierra-atacama-apartment,/destinations/south-america/chile,room of beckon-tierra-atacama -> not on the new site yet; country page,Apartment at Beckon Tierra Atacama | Wild Earth Stays
+/stay/beckon-tierra-atacama-oriente-room,/destinations/south-america/chile,room of beckon-tierra-atacama -> not on the new site yet; country page,Oriente Room at Beckon Tierra Atacama | Wild Earth Stays
+/stay/beckon-tierra-atacama-poniente-room,/destinations/south-america/chile,room of beckon-tierra-atacama -> not on the new site yet; country page,Poniente Room at Beckon Tierra Atacama | Wild Earth Stays
+/stay/beckon-tierra-atacama-suite,/destinations/south-america/chile,room of beckon-tierra-atacama -> not on the new site yet; country page,Suite at Beckon Tierra Atacama | Wild Earth Stays
 /stay/benguerra-island-by-beyond-cabana,/stays/benguerra-island-by-and-beyond,room of benguerra-island-by-and-beyond -> stay page,Cabana at &amp;Beyond Benguerra Island | Wild Earth Stays
 /stay/benguerra-island-by-beyond-casinha,/stays/benguerra-island-by-and-beyond,room of benguerra-island-by-and-beyond -> stay page,Casinha at &amp;Beyond Benguerra Island | Wild Earth Stays
 /stay/benguerra-island-by-beyond-family-villa,/stays/benguerra-island-by-and-beyond,room of benguerra-island-by-and-beyond -> stay page,Family Villa at &amp;Beyond Benguerra Island | Wild Earth Stays
@@ -1014,12 +1014,12 @@ old path,new path,why,old title
 /stay/cape-cadogan-boutique-hotel-luxury-room,/stays/cape-cadogan-boutique-hotel,room of cape-cadogan-boutique-hotel -> stay page,Luxury Room at Cape Cadogan Boutique Hotel | Wild Earth Stays
 /stay/cape-cadogan-boutique-hotel-stable-suite,/stays/cape-cadogan-boutique-hotel,room of cape-cadogan-boutique-hotel -> stay page,Stable Suite at Cape Cadogan Boutique Hotel | Wild Earth Stays
 /stay/cape-cadogan-boutique-hotel-superior-luxury-room,/stays/cape-cadogan-boutique-hotel,room of cape-cadogan-boutique-hotel -> stay page,Superior Luxury Room at Cape Cadogan Boutique Hotel | Wild Earth Stays
-/stay/casa-maya-kaan-private-villa,/destinations/caribbean-mexico,room of casa-maya-kaan -> not on the new site yet; region page (mexico country page not built yet),Private Villa at Casa Maya Kaan | Wild Earth Stays
-/stay/castaway-island-grand-bure,/destinations/oceania,room of castaway-island -> not on the new site yet; region page (fiji country page not built yet),Grand Bure at Castaway Island | Wild Earth Stays
-/stay/castaway-island-island-bure,/destinations/oceania,room of castaway-island -> not on the new site yet; region page (fiji country page not built yet),Island Bure at Castaway Island | Wild Earth Stays
-/stay/castaway-island-north-beach-bure,/destinations/oceania,room of castaway-island -> not on the new site yet; region page (fiji country page not built yet),North Beach Bure at Castaway Island | Wild Earth Stays
-/stay/castaway-island-ocean-view-bure,/destinations/oceania,room of castaway-island -> not on the new site yet; region page (fiji country page not built yet),Ocean View Bure at Castaway Island | Wild Earth Stays
-/stay/castaway-island-south-beach-bure,/destinations/oceania,room of castaway-island -> not on the new site yet; region page (fiji country page not built yet),South Beach Bure at Castaway Island | Wild Earth Stays
+/stay/casa-maya-kaan-private-villa,/destinations/caribbean-mexico/mexico,room of casa-maya-kaan -> not on the new site yet; country page,Private Villa at Casa Maya Kaan | Wild Earth Stays
+/stay/castaway-island-grand-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,Grand Bure at Castaway Island | Wild Earth Stays
+/stay/castaway-island-island-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,Island Bure at Castaway Island | Wild Earth Stays
+/stay/castaway-island-north-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,North Beach Bure at Castaway Island | Wild Earth Stays
+/stay/castaway-island-ocean-view-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,Ocean View Bure at Castaway Island | Wild Earth Stays
+/stay/castaway-island-south-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,South Beach Bure at Castaway Island | Wild Earth Stays
 /stay/celestia-deluxe-cabin,/stays/celestia-yacht,room of celestia-yacht -> stay page,Deluxe Cabin at Celestia Yacht | Wild Earth Stays
 /stay/celestia-master-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Master Suite at Celestia Yacht | Wild Earth Stays
 /stay/celestia-owners-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
@@ -1153,20 +1153,20 @@ old path,new path,why,old title
 /stay/feline-fields-lodge-pool-suite,/stays/feline-fields-lodge,room of feline-fields-lodge -> stay page,Pool Suite at Feline Fields Lodge | Wild Earth Stays
 /stay/feline-fields-vintage-camp-family-tent,/stays/feline-fields-vintage-camp,room of feline-fields-vintage-camp -> stay page,Family Tent at Feline Fields Vintage Camp | Wild Earth Stays
 /stay/feline-fields-vintage-camp-luxury-bell-tent,/stays/feline-fields-vintage-camp,room of feline-fields-vintage-camp -> stay page,Luxury Bell Tent at Feline Fields Vintage Camp | Wild Earth Stays
-/stay/ferndale-achill-island-ancient-china-deluxe-dbl-room,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Ancient China (Deluxe Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-arabian-nights-luxury-dbl-room,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Arabian Nights (Luxury Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-laguna-veneta-junior-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Laguna Veneta (Junior Suite) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-mayan-treasure-bay-mini-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Mayan Treasure Bay (Mini Suite) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-roman-palaestra-royal-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Roman Palaestra (Royal Suite) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/fiji-marriott-resort-momi-bay-duplex-lagoon-bure,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Duplex Lagoon Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-duplex-ocean-front-bure,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Duplex Ocean Front Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-lagoon-bure-king,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Lagoon Bure King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-lagoon-front-king,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Lagoon Front King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-lagoon-front-twin,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Lagoon Front Twin at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-lagoon-view-king,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Lagoon View King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-lagoon-view-twin,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Lagoon View Twin at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-ocean-front-bure,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Ocean Front Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
-/stay/fiji-marriott-resort-momi-bay-royal-lagoon-bure,/destinations/oceania,room of fiji-marriott-resort-momi-bay -> not on the new site yet; region page (fiji country page not built yet),Royal Lagoon Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/ferndale-achill-island-ancient-china-deluxe-dbl-room,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Ancient China (Deluxe Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-arabian-nights-luxury-dbl-room,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Arabian Nights (Luxury Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-laguna-veneta-junior-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Laguna Veneta (Junior Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-mayan-treasure-bay-mini-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Mayan Treasure Bay (Mini Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-roman-palaestra-royal-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Roman Palaestra (Royal Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/fiji-marriott-resort-momi-bay-duplex-lagoon-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Duplex Lagoon Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-duplex-ocean-front-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Duplex Ocean Front Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-lagoon-bure-king,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon Bure King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-lagoon-front-king,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon Front King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-lagoon-front-twin,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon Front Twin at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-lagoon-view-king,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon View King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-lagoon-view-twin,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon View Twin at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-ocean-front-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Ocean Front Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
+/stay/fiji-marriott-resort-momi-bay-royal-lagoon-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Royal Lagoon Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
 /stay/fogo-island-inn-flat-earth-suite,/stays/fogo-island-inn,room of fogo-island-inn -> stay page,Flat Earth Suite at Fogo Island Inn | Wild Earth Stays
 /stay/fogo-island-inn-fogo-island-family-loft-suite,/stays/fogo-island-inn,room of fogo-island-inn -> stay page,Fogo Island Family Loft Suite at Fogo Island Inn | Wild Earth Stays
 /stay/fogo-island-inn-fogo-island-family-suite---dual-ensuite-rooftop-view,/stays/fogo-island-inn,room of fogo-island-inn -> stay page,Fogo Island Family Suite – Dual Ensuite (Rooftop View) at Fogo Island Inn | Wild Earth Stays
@@ -1189,26 +1189,26 @@ old path,new path,why,old title
 /stay/hayfield-manor-the-ford-suite,/stays/hayfield-manor,room of hayfield-manor -> stay page,The Ford Suite at Hayfield Manor | Wild Earth Stays
 /stay/hayfield-manor-the-merchant-suite,/stays/hayfield-manor,room of hayfield-manor -> stay page,The Merchant Suite at Hayfield Manor | Wild Earth Stays
 /stay/hayfield-manor-the-shandon-suite,/stays/hayfield-manor,room of hayfield-manor -> stay page,The Shandon Suite at Hayfield Manor | Wild Earth Stays
-/stay/holistika-double-room,/destinations/caribbean-mexico,room of holistika -> not on the new site yet; region page (mexico country page not built yet),Double Room at Holistika | Wild Earth Stays
-/stay/holistika-single-room,/destinations/caribbean-mexico,room of holistika -> not on the new site yet; region page (mexico country page not built yet),Single Room at Holistika | Wild Earth Stays
+/stay/holistika-double-room,/destinations/caribbean-mexico/mexico,room of holistika -> not on the new site yet; country page,Double Room at Holistika | Wild Earth Stays
+/stay/holistika-single-room,/destinations/caribbean-mexico/mexico,room of holistika -> not on the new site yet; country page,Single Room at Holistika | Wild Earth Stays
 /stay/hotel-bardo-the-bardo-villa,/stays/hotel-bardo,room of hotel-bardo -> stay page,The Bardo Villa at Hotel Bardo | Wild Earth Stays
 /stay/hotel-bardo-villa-bardo---heated-pool,/stays/hotel-bardo,room of hotel-bardo -> stay page,Villa Bardo - Heated Pool at Hotel Bardo | Wild Earth Stays
-/stay/hotel-esencia-beach-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Beach Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-jungle-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Jungle Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-jungle-suite-with-plunge-pool,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Jungle Suite with Plunge Pool at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-master-beach-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Master Beach Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-master-jungle-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Master Jungle Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-master-ocean-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Master Ocean Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-pool-villa,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Pool Villa at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-presidential-bungalow,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Presidential Bungalow at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-rooftop-wellness-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Rooftop Wellness Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-the-esencia-mansion,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),The Esencia Mansion at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-the-esencia-suite,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),The Esencia Suite at Hotel Esencia | Wild Earth Stays
-/stay/hotel-esencia-yum-ha-villa,/destinations/caribbean-mexico,room of hotel-esencia -> not on the new site yet; region page (mexico country page not built yet),Yum-Ha Villa at Hotel Esencia | Wild Earth Stays
-/stay/hotel-panamera-atrium-room,/destinations/caribbean-mexico,room of hotel-panamera -> not on the new site yet; region page (mexico country page not built yet),Atrium room at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-garden-room,/destinations/caribbean-mexico,room of hotel-panamera -> not on the new site yet; region page (mexico country page not built yet),Garden room at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-junior-suite,/destinations/caribbean-mexico,room of hotel-panamera -> not on the new site yet; region page (mexico country page not built yet),Junior Suite at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-suite,/destinations/caribbean-mexico,room of hotel-panamera -> not on the new site yet; region page (mexico country page not built yet),Suite at Hotel Panamera | Wild Earth Stays
+/stay/hotel-esencia-beach-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Beach Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-jungle-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Jungle Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-jungle-suite-with-plunge-pool,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Jungle Suite with Plunge Pool at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-master-beach-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Master Beach Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-master-jungle-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Master Jungle Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-master-ocean-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Master Ocean Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-pool-villa,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Pool Villa at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-presidential-bungalow,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Presidential Bungalow at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-rooftop-wellness-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Rooftop Wellness Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-the-esencia-mansion,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,The Esencia Mansion at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-the-esencia-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,The Esencia Suite at Hotel Esencia | Wild Earth Stays
+/stay/hotel-esencia-yum-ha-villa,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Yum-Ha Villa at Hotel Esencia | Wild Earth Stays
+/stay/hotel-panamera-atrium-room,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Atrium room at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-garden-room,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Garden room at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-junior-suite,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Junior Suite at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-suite,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Suite at Hotel Panamera | Wild Earth Stays
 /stay/iguazu-master-villa,/stays/iguazu,room of iguazu -> stay page,Master Villa at Awasi Iguazu | Wild Earth Stays
 /stay/iguazu-standard-villa,/stays/iguazu,room of iguazu -> stay page,Standard Villa at Awasi Iguazu | Wild Earth Stays
 /stay/inkaterra-cabo-blanco-amura,/stays/inkaterra-cabo-blanco,room of inkaterra-cabo-blanco -> stay page,Amura at Inkaterra Cabo Blanco | Wild Earth Stays
@@ -1237,11 +1237,11 @@ old path,new path,why,old title
 /stay/inkaterra-reserva-amazonica-tambopata-suite,/stays/inkaterra-reserva-amazonica,room of inkaterra-reserva-amazonica -> stay page,Tambopata Suite at Inkaterra Reserva Amazonica | Wild Earth Stays
 /stay/isla-palenque-resort-beachfront-casita,/stays/isla-palenque-resort,room of isla-palenque-resort -> stay page,Beachfront Casita at Isla Palenque Resort | Wild Earth Stays
 /stay/isla-palenque-resort-beachfront-villa,/stays/isla-palenque-resort,room of isla-palenque-resort -> stay page,Beachfront Villa at Isla Palenque Resort | Wild Earth Stays
-/stay/iveagh-garden-hotel-city-pod,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),City Pod at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-deluxe-king-room,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-deluxe-townhouse,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Deluxe Townhouse at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-presidential-suite,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Presidential Suite at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-superior-room,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Superior Room at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-city-pod,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,City Pod at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-deluxe-king-room,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Deluxe King Room at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-deluxe-townhouse,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Deluxe Townhouse at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-presidential-suite,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Presidential Suite at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-superior-room,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Superior Room at Iveagh Garden Hotel | Wild Earth Stays
 /stay/kayumanis-jimbaran-one-bedroom-estate,/stays/kayumanis-jimbaran-private-estates,room of kayumanis-jimbaran-private-estates -> stay page,One Bedroom Estate at Kayumanis Jimbaran Private Estates | Wild Earth Stays
 /stay/kayumanis-jimbaran-two-bedroom-estate,/stays/kayumanis-jimbaran-private-estates,room of kayumanis-jimbaran-private-estates -> stay page,Two Bedroom Estate at Kayumanis Jimbaran Private Estates | Wild Earth Stays
 /stay/kayumanis-nusa-dua-1-br-private-pool-villa,/stays/kayumanis-nusa-dua,room of kayumanis-nusa-dua -> stay page,One Bedroom Private Pool Villa at Kayumanis Nusa Dua | Wild Earth Stays
@@ -1253,11 +1253,11 @@ old path,new path,why,old title
 /stay/kayumanis-ubud-kayumanis-suite-honeymoon-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Kayumanis Suite (Honeymoon Villa) at Kayumanis Ubud | Wild Earth Stays
 /stay/kayumanis-ubud-owners-three-bedroom-pool-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Owner’s Three‑Bedroom Pool Villa at Kayumanis Ubud | Wild Earth Stays
 /stay/kayumanis-ubud-two-bedroom-residence-pool-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Two Bedroom Residence Pool Villa at Kayumanis Ubud | Wild Earth Stays
-/stay/king-sitric-deluxe-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Deluxe Rooms at King Sitric | Wild Earth Stays
-/stay/king-sitric-howth-harbour,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Howth Harbour at King Sitric | Wild Earth Stays
-/stay/king-sitric-oyster-island,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Oyster Island at King Sitric | Wild Earth Stays
-/stay/king-sitric-standard-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Standard Rooms at King Sitric | Wild Earth Stays
-/stay/king-sitric-superior-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Superior Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-deluxe-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Deluxe Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-howth-harbour,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Howth Harbour at King Sitric | Wild Earth Stays
+/stay/king-sitric-oyster-island,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Oyster Island at King Sitric | Wild Earth Stays
+/stay/king-sitric-standard-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Standard Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-superior-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Superior Rooms at King Sitric | Wild Earth Stays
 /stay/kokoko-camp-by-asilia-classic-safari-tent,/stays/kokoko-camp-by-asilia,room of kokoko-camp-by-asilia -> stay page,Classic Safari Tent at Kokoko Camp by Asilia | Wild Earth Stays
 /stay/kudadoo-private-island-one-bedroom-ocean-private-pool-residence,/stays/kudadoo-private-island,room of kudadoo-private-island -> stay page,One-Bedroom Ocean Private Pool Residence at Kudadoo Private Island | Wild Earth Stays
 /stay/kudadoo-private-island-two-bedroom-ocean-private-pool-residence,/stays/kudadoo-private-island,room of kudadoo-private-island -> stay page,Two-Bedroom Ocean Private Pool Residence at Kudadoo Private Island | Wild Earth Stays
@@ -1321,9 +1321,9 @@ old path,new path,why,old title
 /stay/lewa-wilderness-lodge-one-bedroom-hillside-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,One‑Bedroom Hillside Cottage at Lewa Wilderness Lodge | Wild Earth Stays
 /stay/lewa-wilderness-lodge-two-bedroom-garden-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,Two‑Bedroom Garden Cottage at Lewa Wilderness Lodge | Wild Earth Stays
 /stay/lewa-wilderness-lodge-two-bedroom-hillside-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,Two‑Bedroom Hillside Cottage at Lewa Wilderness Lodge | Wild Earth Stays
-/stay/likuliku-lagoon-resort-beachfront-bure,/destinations/oceania,room of likuliku-lagoon-resort -> not on the new site yet; region page (fiji country page not built yet),Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
-/stay/likuliku-lagoon-resort-deluxe-beachfront-bure,/destinations/oceania,room of likuliku-lagoon-resort -> not on the new site yet; region page (fiji country page not built yet),Deluxe Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
-/stay/likuliku-lagoon-resort-overwater-bure,/destinations/oceania,room of likuliku-lagoon-resort -> not on the new site yet; region page (fiji country page not built yet),Overwater Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-beachfront-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-deluxe-beachfront-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Deluxe Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-overwater-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Overwater Bure at Likuliku Lagoon Resort | Wild Earth Stays
 /stay/linyanti-wilderness-camp-family-tented-suite,/stays/linyanti-wilderness-camp,room of linyanti-wilderness-camp -> stay page,Family Tented Suite at Wilderness Linyanti Camp | Wild Earth Stays
 /stay/linyanti-wilderness-camp-tented-suite,/stays/linyanti-wilderness-camp,room of linyanti-wilderness-camp -> stay page,Tented Suite at Wilderness Linyanti Camp | Wild Earth Stays
 /stay/lion-sands-fish-eagle-residence,/safaris/lion-sands,room of lion-sands -> safari reserve,Fish Eagle Residence at Lion Sands Reserve | Wild Earth Stays
@@ -1354,21 +1354,21 @@ old path,new path,why,old title
 /stay/mnemba-island-by-beyond-beach-banda,/stays/beyond-mnemba-by-and-beyond,room of beyond-mnemba-by-and-beyond -> stay page,Beach Banda at Mnemba Island by &amp;Beyond | Wild Earth Stays
 /stay/monwana-thornybush-luxury-suite,/stays/monwana-thornybush,room of monwana-thornybush -> stay page,Luxury Suite at Monwana Thornybush | Wild Earth Stays
 /stay/morukuru-private-residence,/stays/morukuru-farm-house,room of morukuru-farm-house -> stay page,Morukuru Private Residence at Morukuru Farm House | Wild Earth Stays
-/stay/muare-tulum-hotel-luna-hideaway,/destinations/caribbean-mexico,room of muare-tulum-hotel -> not on the new site yet; region page (mexico country page not built yet),Luna Hideaway at Muaré Tulum Hotel | Wild Earth Stays
-/stay/muare-tulum-hotel-selva-haven,/destinations/caribbean-mexico,room of muare-tulum-hotel -> not on the new site yet; region page (mexico country page not built yet),Selva Haven at Muaré Tulum Hotel | Wild Earth Stays
-/stay/muare-tulum-hotel-suite-muare,/destinations/caribbean-mexico,room of muare-tulum-hotel -> not on the new site yet; region page (mexico country page not built yet),Suite Muaré at Muaré Tulum Hotel | Wild Earth Stays
-/stay/muare-tulum-hotel-suite-muare-wellness,/destinations/caribbean-mexico,room of muare-tulum-hotel -> not on the new site yet; region page (mexico country page not built yet),Suite Muaré Wellness at Muaré Tulum Hotel | Wild Earth Stays
+/stay/muare-tulum-hotel-luna-hideaway,/destinations/caribbean-mexico/mexico,room of muare-tulum-hotel -> not on the new site yet; country page,Luna Hideaway at Muaré Tulum Hotel | Wild Earth Stays
+/stay/muare-tulum-hotel-selva-haven,/destinations/caribbean-mexico/mexico,room of muare-tulum-hotel -> not on the new site yet; country page,Selva Haven at Muaré Tulum Hotel | Wild Earth Stays
+/stay/muare-tulum-hotel-suite-muare,/destinations/caribbean-mexico/mexico,room of muare-tulum-hotel -> not on the new site yet; country page,Suite Muaré at Muaré Tulum Hotel | Wild Earth Stays
+/stay/muare-tulum-hotel-suite-muare-wellness,/destinations/caribbean-mexico/mexico,room of muare-tulum-hotel -> not on the new site yet; country page,Suite Muaré Wellness at Muaré Tulum Hotel | Wild Earth Stays
 /stay/mutiaralaut-doublecabins,/stays/mutiara-laut,room of mutiara-laut -> stay page,Double Cabins at Mutiara Laut | Wild Earth Stays
 /stay/mutiaralaut-front-cabin,/stays/mutiara-laut,room of mutiara-laut -> stay page,Front Cabin at Mutiara Laut | Wild Earth Stays
 /stay/mutiaralaut-master-cabin,/stays/mutiara-laut,room of mutiara-laut -> stay page,Master Cabin at Mutiara Laut | Wild Earth Stays
 /stay/mutiaralaut-private-charter,/stays/mutiara-laut,room of mutiara-laut -> stay page,BOOK THE ENTIRE YACHT - USD $13.500/night + 11% tax for up to 15 passengers at Mutiara Laut | Wild Earth Stays
 /stay/naboisho-camp-by-asilia-classic-safari-tent,/stays/asilia-naboisho-camp-by-asilia,room of asilia-naboisho-camp-by-asilia -> stay page,Classic Safari Tent at Naboisho Camp by Asilia | Wild Earth Stays
 /stay/naboisho-camp-by-asilia-family-tent,/stays/asilia-naboisho-camp-by-asilia,room of asilia-naboisho-camp-by-asilia -> stay page,Family Tent at Naboisho Camp by Asilia | Wild Earth Stays
-/stay/namale-resort-and-spa-garden-tropical-bures,/destinations/oceania,room of namale-resort-and-spa -> not on the new site yet; region page (fiji country page not built yet),Garden Tropical Bures at Namale Resort and Spa | Wild Earth Stays
-/stay/namale-resort-and-spa-grand-infinity-pool-villa,/destinations/oceania,room of namale-resort-and-spa -> not on the new site yet; region page (fiji country page not built yet),Grand Infinity Pool Villa at Namale Resort and Spa | Wild Earth Stays
-/stay/namale-resort-and-spa-ocean-plunge-pool-bure,/destinations/oceania,room of namale-resort-and-spa -> not on the new site yet; region page (fiji country page not built yet),Ocean Plunge Pool Bure at Namale Resort and Spa | Wild Earth Stays
-/stay/namale-resort-and-spa-ocean-tropical-bure,/destinations/oceania,room of namale-resort-and-spa -> not on the new site yet; region page (fiji country page not built yet),Ocean Tropical Bure at Namale Resort and Spa | Wild Earth Stays
-/stay/namale-resort-and-spa-plunge-pool-villa,/destinations/oceania,room of namale-resort-and-spa -> not on the new site yet; region page (fiji country page not built yet),Plunge Pool Villa at Namale Resort and Spa | Wild Earth Stays
+/stay/namale-resort-and-spa-garden-tropical-bures,/destinations/oceania/fiji,room of namale-resort-and-spa -> not on the new site yet; country page,Garden Tropical Bures at Namale Resort and Spa | Wild Earth Stays
+/stay/namale-resort-and-spa-grand-infinity-pool-villa,/destinations/oceania/fiji,room of namale-resort-and-spa -> not on the new site yet; country page,Grand Infinity Pool Villa at Namale Resort and Spa | Wild Earth Stays
+/stay/namale-resort-and-spa-ocean-plunge-pool-bure,/destinations/oceania/fiji,room of namale-resort-and-spa -> not on the new site yet; country page,Ocean Plunge Pool Bure at Namale Resort and Spa | Wild Earth Stays
+/stay/namale-resort-and-spa-ocean-tropical-bure,/destinations/oceania/fiji,room of namale-resort-and-spa -> not on the new site yet; country page,Ocean Tropical Bure at Namale Resort and Spa | Wild Earth Stays
+/stay/namale-resort-and-spa-plunge-pool-villa,/destinations/oceania/fiji,room of namale-resort-and-spa -> not on the new site yet; country page,Plunge Pool Villa at Namale Resort and Spa | Wild Earth Stays
 /stay/namiri-plains-camp-by-asilia-contemporary-suite,/stays/namiri-plains-camp-by-asilia,room of namiri-plains-camp-by-asilia -> stay page,Contemporary Suite at Namiri Plains Camp by Asilia | Wild Earth Stays
 /stay/namiri-plains-camp-by-asilia-family-suite,/stays/namiri-plains-camp-by-asilia,room of namiri-plains-camp-by-asilia -> stay page,Family Suite at Namiri Plains Camp by Asilia | Wild Earth Stays
 /stay/nautilus-maldives-beach-house-with-private-pool,/stays/nautilus-maldives,room of nautilus-maldives -> stay page,Beach House With Private Pool at Nautilus Maldives | Wild Earth Stays
@@ -1457,10 +1457,10 @@ old path,new path,why,old title
 /stay/nomade-tulum-deluxe-ocean-view-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Deluxe Ocean View Room at Nomade Tulum | Wild Earth Stays
 /stay/nomade-tulum-deluxe-treehouse-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Deluxe Treehouse Room at Nomade Tulum | Wild Earth Stays
 /stay/nomade-tulum-superior-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Superior Room at Nomade Tulum | Wild Earth Stays
-/stay/number-31-and-all-that-jazz-family-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),And All That Jazz Family Room at Number 31 | Wild Earth Stays
-/stay/number-31-intimate-double-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Intimate Double Room at Number 31 | Wild Earth Stays
-/stay/number-31-plush-double-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Plush Double Room at Number 31 | Wild Earth Stays
-/stay/number-31-sams-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Sam&#x27;s Room at Number 31 | Wild Earth Stays
+/stay/number-31-and-all-that-jazz-family-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,And All That Jazz Family Room at Number 31 | Wild Earth Stays
+/stay/number-31-intimate-double-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Intimate Double Room at Number 31 | Wild Earth Stays
+/stay/number-31-plush-double-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Plush Double Room at Number 31 | Wild Earth Stays
+/stay/number-31-sams-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Sam&#x27;s Room at Number 31 | Wild Earth Stays
 /stay/ol-jogi-residence,/stays/ol-jogi-conservancy,room of ol-jogi-conservancy -> stay page,Ol Jogi Private Estate at Ol Jogi Conservancy | Wild Earth Stays
 /stay/ol-pejeta-bush-camp-by-asilia-classic-safari-tent,/stays/ol-pejeta-bush-camp-asilia,room of ol-pejeta-bush-camp-asilia -> stay page,Classic Safari Tent at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
 /stay/ol-pejeta-bush-camp-by-asilia-family-tent,/stays/ol-pejeta-bush-camp-asilia,room of ol-pejeta-bush-camp-asilia -> stay page,Family Tent at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
@@ -1481,10 +1481,10 @@ old path,new path,why,old title
 /stay/open-sky-star-seeker-polaris-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Polaris Luxury Camp at Open Sky | Wild Earth Stays
 /stay/open-sky-star-seeker-solstice-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Solstice Luxury Camp at Open Sky | Wild Earth Stays
 /stay/open-sky-star-seeker-vista-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Vista Luxury Camp at Open Sky | Wild Earth Stays
-/stay/our-habitas-tulum-jungle-rooms,/destinations/caribbean-mexico,room of our-habitas-tulum -> not on the new site yet; region page (mexico country page not built yet),Jungle Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-ocean-breeze-rooms,/destinations/caribbean-mexico,room of our-habitas-tulum -> not on the new site yet; region page (mexico country page not built yet),Ocean Breeze Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-ocean-front-rooms,/destinations/caribbean-mexico,room of our-habitas-tulum -> not on the new site yet; region page (mexico country page not built yet),Ocean Front Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-pool-rooms,/destinations/caribbean-mexico,room of our-habitas-tulum -> not on the new site yet; region page (mexico country page not built yet),Pool Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-jungle-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Jungle Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-ocean-breeze-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Ocean Breeze Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-ocean-front-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Ocean Front Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-pool-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Pool Rooms at Our Habitas Tulum | Wild Earth Stays
 /stay/paws-up-resort-big-timber-home,/stays/paws-up-resort,room of paws-up-resort -> stay page,Big Timber Home at Paws Up Resort | Wild Earth Stays
 /stay/paws-up-resort-cliffside-camp-tent,/stays/paws-up-resort,room of paws-up-resort -> stay page,Cliffside Camp Tent at Paws Up Resort | Wild Earth Stays
 /stay/paws-up-resort-creekside-camp-tent,/stays/paws-up-resort,room of paws-up-resort -> stay page,Creekside Camp Tent at Paws Up Resort | Wild Earth Stays
@@ -1534,10 +1534,10 @@ old path,new path,why,old title
 /stay/pearl-resort-vahine-private-island-overwater-bungalow,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Overwater Bungalow at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/pearl-resort-vahine-private-island-private-royal-villa,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Private Royal Villa at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/phinda-homestead-by-beyond-exclusive-use-villa,/stays/phinda-homestead-by-and-beyond,room of phinda-homestead-by-and-beyond -> stay page,Exclusive Use Villa at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/stay/pikaia-lodge-balcony-rooms,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Balcony Rooms at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-garden-suite,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Garden Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-pool-suite,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Pool Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-terrace-rooms,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Terrace Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-balcony-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Balcony Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-garden-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Garden Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-pool-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Pool Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-terrace-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Terrace Rooms at Pikaia Lodge | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-full-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Full Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-tree-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Tree &amp; Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-pacific-suite,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Pacific Suite at Post Ranch Inn | Wild Earth Stays
@@ -1558,10 +1558,10 @@ old path,new path,why,old title
 /stay/rekero-camp-by-asilia-classic-safari-tent,/stays/asilia-rekero-camp,room of asilia-rekero-camp -> stay page,Classic Safari Tent at  Asilia Rekero Camp | Wild Earth Stays
 /stay/rekero-camp-by-asilia-family-tent,/stays/asilia-rekero-camp,room of asilia-rekero-camp -> stay page,Family Tent at  Asilia Rekero Camp | Wild Earth Stays
 /stay/room-wild-post-ranch-inn-cliff-house,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Cliff House at Post Ranch Inn | Wild Earth Stays
-/stay/royal-davui-island-resort-davui-plunge-pool-villa-east,/destinations/oceania,room of royal-davui-island-resort -> not on the new site yet; region page (fiji country page not built yet),Davui Plunge Pool Villa East at Royal Davui Island Resort | Wild Earth Stays
-/stay/royal-davui-island-resort-island-plunge-pool-bungalow,/destinations/oceania,room of royal-davui-island-resort -> not on the new site yet; region page (fiji country page not built yet),Island Plunge Pool Bungalow at Royal Davui Island Resort | Wild Earth Stays
-/stay/royal-davui-island-resort-lagoon-plunge-pool-bungalow,/destinations/oceania,room of royal-davui-island-resort -> not on the new site yet; region page (fiji country page not built yet),Lagoon Plunge Pool Bungalow at Royal Davui Island Resort | Wild Earth Stays
-/stay/royal-davui-island-resort-sunset-plunge-pool-villa,/destinations/oceania,room of royal-davui-island-resort -> not on the new site yet; region page (fiji country page not built yet),Sunset Plunge Pool Villa at Royal Davui Island Resort | Wild Earth Stays
+/stay/royal-davui-island-resort-davui-plunge-pool-villa-east,/destinations/oceania/fiji,room of royal-davui-island-resort -> not on the new site yet; country page,Davui Plunge Pool Villa East at Royal Davui Island Resort | Wild Earth Stays
+/stay/royal-davui-island-resort-island-plunge-pool-bungalow,/destinations/oceania/fiji,room of royal-davui-island-resort -> not on the new site yet; country page,Island Plunge Pool Bungalow at Royal Davui Island Resort | Wild Earth Stays
+/stay/royal-davui-island-resort-lagoon-plunge-pool-bungalow,/destinations/oceania/fiji,room of royal-davui-island-resort -> not on the new site yet; country page,Lagoon Plunge Pool Bungalow at Royal Davui Island Resort | Wild Earth Stays
+/stay/royal-davui-island-resort-sunset-plunge-pool-villa,/destinations/oceania/fiji,room of royal-davui-island-resort -> not on the new site yet; country page,Sunset Plunge Pool Villa at Royal Davui Island Resort | Wild Earth Stays
 /stay/rubondo-island-camp-by-asilia-family-cottage,/stays/rubondo-island-camp-asilia,room of rubondo-island-camp-asilia -> stay page,Family Cottage at Rubondo Island Camp by Asilia | Wild Earth Stays
 /stay/rubondo-island-camp-by-asilia-lakefront-cottage,/stays/rubondo-island-camp-asilia,room of rubondo-island-camp-asilia -> stay page,Lakefront Cottage at Rubondo Island Camp by Asilia | Wild Earth Stays
 /stay/santa-catarina-villa-costa-esmeralda,/stays/awasi-santa-catarina,room of awasi-santa-catarina -> stay page,Villa Costa Esmeralda at Awasi Santa Catarina | Wild Earth Stays
@@ -1818,13 +1818,13 @@ old path,new path,why,old title
 /stay/the-beach-tulum-deluxe-room,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Deluxe Room at The Beach Tulum | Wild Earth Stays
 /stay/the-beach-tulum-junior-suite,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Junior Suite at The Beach Tulum | Wild Earth Stays
 /stay/the-beach-tulum-rooftop,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Rooftop at The Beach Tulum | Wild Earth Stays
-/stay/the-merrion-deluxe-king-room,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at The Merrion | Wild Earth Stays
-/stay/the-merrion-garden-wing-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Garden Wing Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-junior-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Junior Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-merrion-queen,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Merrion Queen at The Merrion | Wild Earth Stays
-/stay/the-merrion-merrion-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Merrion Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-penthouse-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Penthouse Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-superior-king,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Superior King at The Merrion | Wild Earth Stays
+/stay/the-merrion-deluxe-king-room,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Deluxe King Room at The Merrion | Wild Earth Stays
+/stay/the-merrion-garden-wing-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Garden Wing Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-junior-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Junior Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-merrion-queen,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Merrion Queen at The Merrion | Wild Earth Stays
+/stay/the-merrion-merrion-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Merrion Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-penthouse-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Penthouse Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-superior-king,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Superior King at The Merrion | Wild Earth Stays
 /stay/the-nami-project-akua-cabin,/stays/nami-project,room of nami-project -> stay page,Akua Cabin at The Nami Project | Wild Earth Stays
 /stay/the-nami-project-arashi-cabin,/stays/nami-project,room of nami-project -> stay page,Arashi Cabin at The Nami Project | Wild Earth Stays
 /stay/the-nami-project-hasumi-cabin,/stays/nami-project,room of nami-project -> stay page,Hasumi Cabin at The Nami Project | Wild Earth Stays
@@ -1837,25 +1837,25 @@ old path,new path,why,old title
 /stay/the-retreat-at-blue-lagoon-lava-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,Lava Suite at The Retreat At Blue Lagoon | Wild Earth Stays
 /stay/the-retreat-at-blue-lagoon-moss-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,Moss Suite at The Retreat At Blue Lagoon | Wild Earth Stays
 /stay/the-retreat-at-blue-lagoon-the-blue-lagoon-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,The Blue Lagoon Suite at The Retreat At Blue Lagoon | Wild Earth Stays
-/stay/the-wilder-lady-jane-suite,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Lady Jane Suite at The Wilder | Wild Earth Stays
-/stay/the-wilder-popular,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Popular at The Wilder | Wild Earth Stays
-/stay/the-wilder-shoe-box,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Shoe Box at The Wilder | Wild Earth Stays
-/stay/the-wilder-small-double-room,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Small Double Room at The Wilder | Wild Earth Stays
-/stay/the-wilder-townhouse-deluxe,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Townhouse Deluxe at The Wilder | Wild Earth Stays
-/stay/the-wilder-townhouse-suite,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Townhouse Suite at The Wilder | Wild Earth Stays
+/stay/the-wilder-lady-jane-suite,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Lady Jane Suite at The Wilder | Wild Earth Stays
+/stay/the-wilder-popular,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Popular at The Wilder | Wild Earth Stays
+/stay/the-wilder-shoe-box,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Shoe Box at The Wilder | Wild Earth Stays
+/stay/the-wilder-small-double-room,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Small Double Room at The Wilder | Wild Earth Stays
+/stay/the-wilder-townhouse-deluxe,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Townhouse Deluxe at The Wilder | Wild Earth Stays
+/stay/the-wilder-townhouse-suite,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Townhouse Suite at The Wilder | Wild Earth Stays
 /stay/tierra-patagonia-suite,/stays/tierra-patagonia,room of tierra-patagonia -> stay page,Suite at Tierra Patagonia | Wild Earth Stays
 /stay/tierra-patagonia-superior-room,/stays/tierra-patagonia,room of tierra-patagonia -> stay page,Superior Room at Tierra Patagonia | Wild Earth Stays
 /stay/time-tide-chongwe-classic-safari-tent,/stays/time-tide-chongwe-2,room of time-tide-chongwe-2 -> stay page,Classic Safari Tent at Time + Tide Chongwe | Wild Earth Stays
-/stay/tokoriki-island-resort-beachfront-bures,/destinations/oceania,room of tokoriki-island-resort -> not on the new site yet; region page (fiji country page not built yet),Beachfront Bures at Tokoriki Island Resort | Wild Earth Stays
-/stay/tokoriki-island-resort-beachfront-pool-bures,/destinations/oceania,room of tokoriki-island-resort -> not on the new site yet; region page (fiji country page not built yet),Beachfront Pool Bures at Tokoriki Island Resort | Wild Earth Stays
-/stay/tokoriki-island-resort-pool-villas,/destinations/oceania,room of tokoriki-island-resort -> not on the new site yet; region page (fiji country page not built yet),Pool Villas at Tokoriki Island Resort | Wild Earth Stays
-/stay/trobbu-luxury-villas-luxury-villa,/destinations/caribbean-mexico,room of trobbu-luxury-villas -> not on the new site yet; region page (mexico country page not built yet),Luxury Villa at Trobbu Luxury Villas | Wild Earth Stays
+/stay/tokoriki-island-resort-beachfront-bures,/destinations/oceania/fiji,room of tokoriki-island-resort -> not on the new site yet; country page,Beachfront Bures at Tokoriki Island Resort | Wild Earth Stays
+/stay/tokoriki-island-resort-beachfront-pool-bures,/destinations/oceania/fiji,room of tokoriki-island-resort -> not on the new site yet; country page,Beachfront Pool Bures at Tokoriki Island Resort | Wild Earth Stays
+/stay/tokoriki-island-resort-pool-villas,/destinations/oceania/fiji,room of tokoriki-island-resort -> not on the new site yet; country page,Pool Villas at Tokoriki Island Resort | Wild Earth Stays
+/stay/trobbu-luxury-villas-luxury-villa,/destinations/caribbean-mexico/mexico,room of trobbu-luxury-villas -> not on the new site yet; country page,Luxury Villa at Trobbu Luxury Villas | Wild Earth Stays
 /stay/tswalu-loapi-tented-suites,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,Toapi Tented Suites at Tswalu Reserve | Wild Earth Stays
 /stay/tswalu-motse,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,The Motse at Tswalu Reserve | Wild Earth Stays
 /stay/tswalu-tarkuni-homestead-villa,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,Tarkuni Homestead Residence at Tswalu Reserve | Wild Earth Stays
 /stay/ubuntu-migration-camp-by-asilia-classic-safari-tent,/stays/ubuntu-migration-camp-asilia,room of ubuntu-migration-camp-asilia -> stay page,Classic Safari Tent at Ubuntu Migration Camp by Asilia | Wild Earth Stays
 /stay/ubuntu-migration-camp-by-asilia-family-tent,/stays/ubuntu-migration-camp-asilia,room of ubuntu-migration-camp-asilia -> stay page,Family Tent at Ubuntu Migration Camp by Asilia | Wild Earth Stays
-/stay/ulum-moab-suite-tent,/destinations/usa-canada,room of ulum-moab -> not on the new site yet; region page (utah country page not built yet),Suite Tent at Ulum Moab | Wild Earth Stays
+/stay/ulum-moab-suite-tent,/destinations/usa-canada/utah,room of ulum-moab -> not on the new site yet; country page,Suite Tent at Ulum Moab | Wild Earth Stays
 /stay/under-canvas-bryce-canyon-deluxe-tent,/stays/under-canvas-brtce-canyon,room of under-canvas-brtce-canyon -> stay page,Deluxe Tent at Under Canvas Bryce Canyon | Wild Earth Stays
 /stay/under-canvas-bryce-canyon-deluxe-with-kids-tent,/stays/under-canvas-brtce-canyon,room of under-canvas-brtce-canyon -> stay page,Deluxe with Kids Tent at Under Canvas Bryce Canyon | Wild Earth Stays
 /stay/under-canvas-bryce-canyon-hoodoo-suite,/stays/under-canvas-brtce-canyon,room of under-canvas-brtce-canyon -> stay page,Hoodoo Suite at Under Canvas Bryce Canyon | Wild Earth Stays
@@ -1935,13 +1935,13 @@ old path,new path,why,old title
 /stay/viceroy-bali-terrace-villa,/stays/viceroy-bali,room of viceroy-bali -> stay page,Terrace Villa at Viceroy Bali | Wild Earth Stays
 /stay/viceroy-bali-vice-regal-villa-one-bedroom,/stays/viceroy-bali,room of viceroy-bali -> stay page,1 Bed Vice Regal Villa at Viceroy Bali | Wild Earth Stays
 /stay/viceroy-bali-vice-regal-villa-two-bedroom,/stays/viceroy-bali,room of viceroy-bali -> stay page,2 Bed Vice Regal Villa at Viceroy Bali | Wild Earth Stays
-/stay/wilderness-bisate-lodge-forest-villa,/destinations/africa,room of wilderness-bisate-lodge -> not on the new site yet; region page (rwanda country page not built yet),Forest Villa at Wilderness Bisate Lodge | Wild Earth Stays
+/stay/wilderness-bisate-lodge-forest-villa,/destinations/africa/rwanda,room of wilderness-bisate-lodge -> not on the new site yet; country page,Forest Villa at Wilderness Bisate Lodge | Wild Earth Stays
 /stay/wilderness-bisate-reserve-private-forest-residence,/stays/wilderness-bisate-reserve,room of wilderness-bisate-reserve -> stay page,Private Forest Residence at Wilderness Bisate Reserve | Wild Earth Stays
 /stay/wilderness-busanga-safari-tent,/stays/wilderness-busanga,room of wilderness-busanga -> stay page,Safari Tent at Wilderness Busanga | Wild Earth Stays
 /stay/wilderness-desert-rhino-camp-tented-suite,/stays/wilderness-desert-rhino-camp,room of wilderness-desert-rhino-camp -> stay page,Tented Suite at Wilderness Desert Rhino Camp | Wild Earth Stays
 /stay/wilderness-doro-nawas-desert-rooma,/stays/wilderness-damaraland,room of wilderness-damaraland -> stay page,Desert Room at Wilderness Doro Nawas | Wild Earth Stays
-/stay/wilderness-dumatau-family-accommodation,/destinations/africa,room of wilderness-dumatau -> not on the new site yet; region page (botswana country page not built yet),Family Accommodation at Wilderness DumaTau | Wild Earth Stays
-/stay/wilderness-dumatau-tented-suites,/destinations/africa,room of wilderness-dumatau -> not on the new site yet; region page (botswana country page not built yet),Tented Suites at Wilderness DumaTau | Wild Earth Stays
+/stay/wilderness-dumatau-family-accommodation,/destinations/africa/botswana,room of wilderness-dumatau -> not on the new site yet; country page,Family Accommodation at Wilderness DumaTau | Wild Earth Stays
+/stay/wilderness-dumatau-tented-suites,/destinations/africa/botswana,room of wilderness-dumatau -> not on the new site yet; country page,Tented Suites at Wilderness DumaTau | Wild Earth Stays
 /stay/wilderness-hoanib-skeleton-coast-camp-tented-suite,/stays/wilderness-hoanib-skeleton-camp,room of wilderness-hoanib-skeleton-camp -> stay page,Tented Suite at Wilderness Hoanib Skeleton Coast | Wild Earth Stays
 /stay/wilderness-kulala-desert-lodge-family-kulala-chalet,/stays/wilderness-kulala-desert-camp,room of wilderness-kulala-desert-camp -> stay page,Family Kulala Chalet at Wilderness Kulala Desert Lodge | Wild Earth Stays
 /stay/wilderness-kulala-desert-lodge-kulala-chalet,/stays/wilderness-kulala-desert-camp,room of wilderness-kulala-desert-camp -> stay page,Kulala Chalet at Wilderness Kulala Desert Lodge | Wild Earth Stays

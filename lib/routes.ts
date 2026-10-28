@@ -1,3 +1,4 @@
+import COUNTRY_LIBRARY from "./content/countries-library.json" with { type: "json" };
 // The link guard. BUILT lists every page that exists in the current build
 // step; in production any link to a page that isn't built is hidden from the
 // header, menus and footer, so nothing broken goes live. Previews show every
@@ -446,11 +447,15 @@ export const GUARD_ON = process.env.NEXT_PUBLIC_LINK_GUARD === "on" || process.e
 export const QUERY_AWARE: string[] = ["/plan", "/compass"];
 
 /** True when the link's page exists (external links always pass). */
+// Country pages generated from the library (scripts/export-countries.py).
+const COUNTRY_PATHS = new Set((COUNTRY_LIBRARY.countries as { slug: string; region: string }[]).map((c) => `/destinations/${c.region}/${c.slug}`));
+
 export function isBuilt(href: string): boolean {
   if (/^(https?:|mailto:|tel:)/.test(href)) return true;
   const path = href.split(/[?#]/)[0].replace(/\/$/, "") || "/";
   if (href.split("#")[0].includes("?") && !QUERY_AWARE.includes(path)) return false;
   if (path.startsWith("/stays/")) return STAY_SLUGS.includes(path.slice(7));
+  if (COUNTRY_PATHS.has(path)) return true;
   return BUILT.some((b) => (b.endsWith("/*") ? path.startsWith(b.slice(0, -1)) : b === path));
 }
 

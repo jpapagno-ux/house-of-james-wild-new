@@ -2758,8 +2758,8 @@
    "bestMonths": "November - May",
    "bestMonthsNote": "The dry season offers warm sunshine, lower humidity, calm seas, and excellent water clarity, making it the ideal period for boating, snorkeling, paddleboarding, island hopping, and relaxing on the beaches of Stocking Island. Shoulder months also provide pleasant conditions with fewer visitors while maintaining excellent weather for outdoor adventures.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2023-01-01",
    "coords": {
     "lat": 23.5157,
     "lng": -75.7703
@@ -5070,7 +5070,7 @@
    "bestMonths": "July–October (Great Migration), January–March (short rains, lush landscapes)",
    "bestMonthsNote": "July–October ensures iconic wildebeest river crossings; January–March brings birthing season and vibrant greenery. Both ideal for wildlife viewing and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "founder_vetted",
    "statusDate": null,
    "coords": {
     "lat": 1.565432,
@@ -6191,8 +6191,8 @@
    "bestMonths": "October – March",
    "bestMonthsNote": "Warm sunshine, longer days for outdoor dining and garden strolls, perfect sea views and access to nearby beaches make these prime months for a full Cape Town experience.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -33.9106,
     "lng": 18.3952
@@ -10410,7 +10410,7 @@
     "wildlife_photography",
     "luxury"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Maun Airport",
@@ -10495,7 +10495,7 @@
     "adventure"
    ],
    "status": "founder_visited",
-   "statusDate": null,
+   "statusDate": "2012-01-01",
    "coords": null,
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
@@ -10579,7 +10579,7 @@
     "luxury"
    ],
    "status": "founder_visited",
-   "statusDate": null,
+   "statusDate": "2012-01-01",
    "coords": {
     "lat": -18.25,
     "lng": 23.33
@@ -10666,7 +10666,7 @@
     "luxury"
    ],
    "status": "founder_visited",
-   "statusDate": null,
+   "statusDate": "2012-01-01",
    "coords": {
     "lat": -18.3,
     "lng": 23.45
@@ -10752,7 +10752,7 @@
     "honeymoon",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Maun Airport",
@@ -10836,7 +10836,7 @@
     "solo",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Maun Airport",
@@ -10919,7 +10919,7 @@
     "adventure",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.9,
@@ -11006,7 +11006,7 @@
     "luxury",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.35,
@@ -11093,7 +11093,7 @@
     "solo",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Maun Airport",
@@ -11177,7 +11177,7 @@
     "luxury",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.2,
@@ -11264,7 +11264,7 @@
     "honeymoon",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -21.45,
@@ -12020,8 +12020,8 @@
    "bestFor": [
     "family"
    ],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -33.9156,
     "lng": 19.1127
@@ -16615,8 +16615,8 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "These months generally offer calm lagoon conditions, warm temperatures, excellent snorkeling visibility, lower rainfall, and ideal weather for enjoying the private island environment and outdoor activities.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2025-01-01",
    "coords": {
     "lat": -16.6074,
     "lng": -151.5221
@@ -18934,8 +18934,8 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is peak migration and dry season, best for wildlife and poolside river views. November to May is green, peaceful, and perfect for birding and families.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_returned",
+   "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.0191,
     "lng": 34.8134
@@ -22359,8 +22359,8 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "The dry winter safari season provides ideal wildlife viewing conditions. Animals congregate around permanent water sources, vegetation thins out and visibility improves dramatically, creating exceptional opportunities for photography and wildlife encounters.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.7968,
     "lng": 31.5219
@@ -23886,8 +23886,8 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "During the dry season, wildlife gathers at waterholes, skies are perfect for stargazing, and daytime game drives are ideal in the crisp weather.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2012-01-01",
    "coords": {
     "lat": -27.2025897,
     "lng": 22.4807213
@@ -26375,8 +26375,8 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "Dry season concentrates big game for unrivaled wildlife viewing. Green season (November to March) offers beautiful light, birding, and fewer crowds.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -19.1915,
     "lng": 23.4665

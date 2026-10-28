@@ -30,5 +30,5 @@ run = f"{os.environ.get('GITHUB_SERVER_URL','')}/{os.environ.get('GITHUB_REPOSIT
 print(json.dumps({
     "status": status, "error": error or None, "event_id": os.environ.get("EVENT_ID") or None, "reason": os.environ.get("REASON"),
     "run_url": run, "commit_sha": os.environ.get("COMMIT_SHA") or None, "rows": rows, "new": new, "stats": stats,
-    "summary": f"{sum(r['live'] for r in rows)} stay pages live, {sum(1 for r in rows if not r['live'] and r['missing'])} held" + (f", {len(new)} new: {', '.join(new[:12])}" if new else ""),
+    "summary": f"{sum(r['live'] for r in rows)} stay pages live, {sum(1 for r in rows if not r['live'] and [m for m in r['missing'] if m != 'coordinates'])} held, {sum(1 for r in rows if 'coordinates' in r['missing'])} without map coordinates" + (f", {len(new)} new: {', '.join(new[:12])}" if new else ""),
 }))

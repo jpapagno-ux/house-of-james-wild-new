@@ -46,13 +46,15 @@ for s in S:
     if slug in OV.get("clear", {}): flags = [f for f in flags if f != "name_check"]
     if slug in OV.get("hold", {}): flags.append("name_check")
     flags = sorted(set(flags))
-    if not flags and slug not in released:
+    if not [f for f in flags if f != "coordinates"] and slug not in released:
         rel["released"].append({"slug": slug, "batch": f"{datetime.date.today().isoformat()} library sync"}); released.add(slug); newly.append(slug)
+    # Map coordinates don't hold a page back; they're listed so the stay pins on its country map.
+    if not re.match(r"\s*-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?", s.get("coordinates") or ""): flags = flags + ["coordinates"]
     rows.append({"stay_id": s["id"], "slug": slug, "name": re.sub(r"\s+", " ", strip(s.get("display_name") or s["name"])),
                  "country": (d or {}).get("name") or "", "missing": flags, "released": slug in released})
 json.dump(rel, open(REL_P, "w"), indent=1)
 (ROOT / "data/library").mkdir(parents=True, exist_ok=True)
 rows.sort(key=lambda r: r["slug"])
 json.dump({"checkedOn": datetime.date.today().isoformat(), "rows": rows}, open(ROOT / "data/library/qa.json", "w"), indent=1, ensure_ascii=False)
-print(f"{len(rows)} stays checked; {sum(r['released'] for r in rows)} released ({len(newly)} new); {sum(1 for r in rows if r['missing'] and not r['released'])} held")
+print(f"{len(rows)} stays checked; {sum(r['released'] for r in rows)} released ({len(newly)} new); {sum(1 for r in rows if [m for m in r['missing'] if m != 'coordinates'] and not r['released'])} held; {sum(1 for r in rows if 'coordinates' in r['missing'])} without map coordinates")
 if newly: print("new:", ", ".join(newly))

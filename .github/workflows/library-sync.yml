@@ -30,6 +30,7 @@ jobs:
     env:
       REASON: ${{ github.event.client_payload.reason || inputs.reason || 'publish' }}
       BY: ${{ github.event.client_payload.by || github.actor }}
+      EVENT_ID: ${{ github.event.client_payload.event_id || '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -58,10 +59,26 @@ jobs:
         run: npm run build
 
       - name: Commit
+        id: commit
         run: |
-          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then echo "No content changes"; exit 0; fi
+          if [ -z "$(git status --porcelain)" ]; then echo "No content changes"; echo "result=no_changes" >> "$GITHUB_OUTPUT"; exit 0; fi
           git config user.name "James Wild & Co library"
           git config user.email "library-sync@users.noreply.github.com"
           git add -A
           git commit -m "Library sync: $REASON (by $BY)"
           git push
+          echo "result=published" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Report back to the Studio
+        if: always()
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+          RESULT: ${{ steps.commit.outputs.result || 'failed' }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          STATUS="$RESULT"; ERR=""
+          if [ "$JOB_STATUS" != "success" ]; then STATUS=failed; ERR="A step failed; see the run log"; fi
+          python3 scripts/site-report.py "$STATUS" "$ERR" > report.json
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=base44-site-export" | jq -r .value)
+          curl -sS --retry 3 -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" --data @report.json https://wild-intel-vault.base44.app/functions/siteReport

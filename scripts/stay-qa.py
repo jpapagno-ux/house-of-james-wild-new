@@ -52,6 +52,7 @@ for s in S:
                  "country": (d or {}).get("name") or "", "missing": flags, "released": slug in released})
 json.dump(rel, open(REL_P, "w"), indent=1)
 (ROOT / "data/library").mkdir(parents=True, exist_ok=True)
+rows.sort(key=lambda r: r["slug"])
 json.dump({"checkedOn": datetime.date.today().isoformat(), "rows": rows}, open(ROOT / "data/library/qa.json", "w"), indent=1, ensure_ascii=False)
 print(f"{len(rows)} stays checked; {sum(r['released'] for r in rows)} released ({len(newly)} new); {sum(1 for r in rows if r['missing'] and not r['released'])} held")
 if newly: print("new:", ", ".join(newly))

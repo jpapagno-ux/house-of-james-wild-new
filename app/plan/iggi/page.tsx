@@ -25,7 +25,7 @@ export const metadata = buildMetadata({
   description: "Iggi, James's chameleon buddy, answers questions on destination, stay, route and voyage pages from the Ledger James has vetted, and labels where every answer comes from. Coming soon.",
   path: PATH,
   image: IGGI_IMG,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function IggiPage() {

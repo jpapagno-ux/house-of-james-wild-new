@@ -17,7 +17,7 @@ import { graph } from "@/lib/schema";
 const PATH = "/safaris";
 const V = VOLUMES.find((v) => v.href === PATH)!;
 const SAFARI = ["lion-sands", "monwana-thornybush", "tengile-mala-mala-kirkmans-kamp", "tswalu-reserve"];
-export const metadata = buildMetadata({ title: "Vetted African Safaris: Reserves and Camps", description: "Safari reserves and camps from the Sabi Sand to the Okavango, vetted by James since 2011, with Botswana routes and partner guides through Wild & Co Safaris.", path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "Vetted African Safaris: Reserves and Camps", description: "Safari reserves and camps from the Sabi Sand to the Okavango, vetted by James since 2011, with Botswana routes and partner guides through Wild & Co Safaris.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 export default function SafarisHub() {
   const camps = HOME.shelf.entries.filter((s) => SAFARI.includes(s.slug));

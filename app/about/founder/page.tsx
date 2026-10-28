@@ -23,7 +23,7 @@ export const metadata = buildMetadata({
   path: PATH,
   image: IMG.surfersBeach,
   type: "article",
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function FounderPage() {

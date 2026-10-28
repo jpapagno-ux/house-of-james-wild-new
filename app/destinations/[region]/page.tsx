@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
     description: `${r.name} in the James Wild & Co Ledger: ${r.stayCount} live stays across ${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"}${r.countries.length ? ` (${r.countries.map((c) => c.name).join(", ")})` : ""}, each vetted and filed under a permanent Ledger ID.`.slice(0, 300),
     path: `/destinations/${r.slug}`,
     image: r.hero ? { url: r.hero, alt: `${r.name} with James Wild & Co` } : undefined,
-    noindex: !r.ready,
+    noindex: !(r.ready || r.slug === "polar-antarctica"), // polar-antarctica approved by James, 28 Oct 2026
   });
 }
 

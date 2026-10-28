@@ -55,7 +55,7 @@ const answerFor = (r: Reserve) => {
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string }> }) {
   const r = reserveBySlug((await params).reserve);
   if (!r) return {};
-  return buildMetadata({ title: fitTitle([`${r.name}: Lodges, Camps & Residences`, `${r.name}: Camps & Rates`, `${r.name} Safari Camps`, r.name]), description: answerFor(r).slice(0, 158), path: `/safaris/${r.slug}`, image: r.stay.hero ? { url: r.stay.hero, alt: r.name } : undefined, noindex: true });
+  return buildMetadata({ title: fitTitle([`${r.name}: Lodges, Camps & Residences`, `${r.name}: Camps & Rates`, `${r.name} Safari Camps`, r.name]), description: answerFor(r).slice(0, 158), path: `/safaris/${r.slug}`, image: r.stay.hero ? { url: r.stay.hero, alt: r.name } : undefined, noindex: false /* approved by James, 28 Oct 2026 */ });
 }
 
 export default async function ReservePage({ params }: { params: Promise<{ reserve: string }> }) {

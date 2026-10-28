@@ -24,7 +24,7 @@ export const metadata = buildMetadata({
   title: "Plan Your Journey With James Wild & Co: Enquire or Book a Call",
   description: "Tell James Wild & Co where you're drawn. James or an advisor replies by email or a call, shapes the trip from the vetted Ledger and sends a quote. Nothing is booked until you approve.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function PlanPage() {

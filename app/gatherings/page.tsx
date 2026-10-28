@@ -12,7 +12,7 @@ import { graph } from "@/lib/schema";
 // who travel together.
 const PATH = "/gatherings";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Family Residences for Multigenerational Travel", description: "Private houses, estates and resort residences for families and celebrations that travel together, vetted by James Wild & Co and filed in the Ledger.", path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "Family Residences for Multigenerational Travel", description: "Private houses, estates and resort residences for families and celebrations that travel together, vetted by James Wild & Co and filed in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 export default function GatheringsHub() {
   const leeu = HOME.shelf.entries.find((s) => s.slug === "leeu-house")!;

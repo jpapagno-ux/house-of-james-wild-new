@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
   title: "Travel Notes: New Stays and Ships, First",
   description: "A short letter when a new stay or ship enters the James Wild & Co Ledger, with the stay-longer offers before they go public. One letter a month.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function TravelNotesPage() {

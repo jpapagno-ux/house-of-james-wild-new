@@ -51,7 +51,7 @@ function load(reserve: string, camp: string) {
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string; camp: string }> }) {
   const p = await params; const x = load(p.reserve, p.camp);
   if (!x) return {};
-  return buildMetadata({ title: fitTitle([`${x.c.name}, ${x.r.name}: Suites & Rates`, `${x.c.name}, ${x.r.name}`, `${x.c.name}, ${x.r.name.replace(/ Reserve$/, "")}`, `${x.c.name}: Suites & Rates`, x.c.name]), description: `${x.c.name} on ${x.r.name}, ${x.r.area}. ${(x.c.intro || x.c.description).slice(0, 110)}`, path: `/safaris/${x.r.slug}/${x.c.slug}`, image: x.c.hero ? { url: x.c.hero, alt: x.c.name } : undefined, noindex: true });
+  return buildMetadata({ title: fitTitle([`${x.c.name}, ${x.r.name}: Suites & Rates`, `${x.c.name}, ${x.r.name}`, `${x.c.name}, ${x.r.name.replace(/ Reserve$/, "")}`, `${x.c.name}: Suites & Rates`, x.c.name]), description: `${x.c.name} on ${x.r.name}, ${x.r.area}. ${(x.c.intro || x.c.description).slice(0, 110)}`, path: `/safaris/${x.r.slug}/${x.c.slug}`, image: x.c.hero ? { url: x.c.hero, alt: x.c.name } : undefined, noindex: false /* approved by James, 28 Oct 2026 */ });
 }
 
 export default async function CampPage({ params }: { params: Promise<{ reserve: string; camp: string }> }) {

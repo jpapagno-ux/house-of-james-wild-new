@@ -10,7 +10,7 @@ import { POST_LIST } from "@/lib/content/journal/posts";
 // /journal: the house journal shell. Captain's Log (James's own stories),
 // field notes and Travel Notes; first entries are written with James.
 const PATH = "/journal";
-export const metadata = buildMetadata({ title: "The Journal: Captain's Log and Field Notes", description: "Stories from James Wild's 44 years on the road, field notes from the Ledger and news of what's filed next.", path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "The Journal: Captain's Log and Field Notes", description: "Stories from James Wild's 44 years on the road, field notes from the Ledger and news of what's filed next.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 const SHELVES = [
   { kicker: "Captain's Log", title: "Stranded at the Bottom of the World", line: "February 2020: James sails the Antarctic Peninsula aboard MS Roald Amundsen, and the world shuts down behind the ship.", status: "Being written" },

@@ -22,7 +22,7 @@ export const metadata = buildMetadata({
   title: "Partner With James Wild & Co: Lodges, Reserves, Homes and Small Ships",
   description: "James Wild & Co partners with hand-selected lodges, safari reserves, private homes and small vessels that care for nature, community and hospitality. Tell us about your place.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 const AIM_ICONS = ["sun", "tree-ring", "frond", "coral", "mountain-sun", "wave"] as const;

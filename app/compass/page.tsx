@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
   title: "The James Wild Compass: Find Where to Travel, Then Talk to a Person",
   description: "A free trip finder from James Wild & Co. Answer a few questions and the Compass reads James's vetted Ledger, drafts a route and hands you to a person.",
   path: "/compass",
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 const FAQS = [

@@ -12,7 +12,7 @@ import { graph, touristTrip } from "@/lib/schema";
 // Aliikai voyages first. Voyage pages build from James's sample files.
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Yachts", description: `Small ships and sailing yachts, never the big ones: ${LEDGER_COUNTS.vessels} vessels in the James Wild & Co Ledger, from Raja Ampat phinisis to polar expedition ships.`, path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Yachts", description: `Small ships and sailing yachts, never the big ones: ${LEDGER_COUNTS.vessels} vessels in the James Wild & Co Ledger, from Raja Ampat phinisis to polar expedition ships.`, path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 export default function VoyagesHub() {
   const voyages = journeysFor("indonesia");

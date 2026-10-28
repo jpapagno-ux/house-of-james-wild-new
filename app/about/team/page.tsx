@@ -23,7 +23,7 @@ export const metadata = buildMetadata({
   title: "Meet the Team: James Wild & Co Travel Advisors",
   description: "Meet founder James Papagno and the James Wild & Co advisors. Choose who you'd like to plan with, or let the house match you to the right person.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function TeamPage() {

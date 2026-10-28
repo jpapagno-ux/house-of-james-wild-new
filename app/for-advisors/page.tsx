@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   title: "Become a Travel Advisor With James Wild & Co: Training, the Ledger, 70% Split",
   description: "Join a founder-led host agency: training in James's 44-year method, a vetted Ledger to plan and book from, and 70% of booking commission for US$249 a year or US$49 a month.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function ForAdvisorsPage() {

@@ -36,3 +36,21 @@ export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);
 export const BEST_FOR: Record<string, string> = { honeymoon: "Honeymoons", family: "Families", adventure: "Adventure", luxury: "Luxury", solo: "Solo travel", wildlife_photography: "Wildlife photography" };
+
+// Alt text from the photo's own file name, which in the library usually says
+// what is in the frame ("Sossusvlei-Desert-Lodge-Room-Suite-lounge" -> "Suite
+// lounge at & Beyond Sossusvlei Desert Lodge, Namibia"). Words that repeat the
+// stay or country, upload ids and size notes are dropped; with too little left
+// it falls back to the stay and country.
+const ALT_DROP = /^(jpe?g|png|avif|webp|low|high|resolution|width|height|px|copy|final|edit|img|image|dsc|gettyimages|carousel|hero|general|guest|area|\d+|[a-f0-9]{6,})$/i;
+export function altFor(url: string, name: string, country: string | null, i = 0): string {
+  const where = `${name}${country ? `, ${country}` : ""}`;
+  let file = url.split("?")[0].split("/").pop() ?? "";
+  try { file = decodeURIComponent(file); } catch { /* keep raw */ }
+  file = file.replace(/\.[a-z0-9]{3,4}$/i, "").replace(/^([a-z0-9]{9}_){1,2}[a-f0-9]{24}_/i, "").replace(/_20/g, " ");
+  const own = new Set(`${name} ${country ?? ""}`.toLowerCase().replace(/[’']s\b/g, "").split(/[^a-z0-9]+/).filter(Boolean));
+  const words = file.split(/[\s_\-.=%]+/).filter((w) => w && !ALT_DROP.test(w) && !own.has(w.toLowerCase().replace(/[’']s$/, "")));
+  if (words.length < 2) return i ? `${where}: photograph ${i + 1}` : where;
+  const what = words.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+  return `${what.charAt(0).toUpperCase()}${what.slice(1)} at ${where}`;
+}

@@ -16,7 +16,13 @@ MEDIA = "https://media.base44.com/images/public/"
 # Countries filed under a destination they don't belong to (flagged in review).
 NOT_IN = {"south-africa": {"camp-hwange-muddy-teak": "Zimbabwe", "gorongosa-safaris": "Mozambique"}, "costa-rica": {"isla-palenque-resort": "Panama"}}
 # Live booking-engine properties (Tag Albie), by stay slug.
-ENGINE = {"leeu-estates": "leeu-estates-resorts"}
+ENGINE = {"leeu-estates": "leeu-estates-resorts", "le-quartier-francais": "le-quartier-francais", "leeu-house": "leeu-house"}
+# Hand corrections to library records, re-applied on every export.
+FIX = {
+    "arenal-springs-camp-by-nayara": {"name": "Arenal Springs Camp by Nayara"},
+    "lales-camp-expeditions": {"name": "Lale’s Camp & Expeditions", "country": "Madagascar", "countrySlug": "madagascar",
+                               "misfiled": "Library destination is South Africa; the property is in Masoala, Madagascar"},
+}
 
 def text(s):
     s = html.unescape(s or "")  # some records hold escaped tags (&lt;span&gt;)
@@ -67,6 +73,17 @@ def coords(s):
     return {"lat": float(m.group(1)), "lng": float(m.group(2))} if m else None
 
 stays, dests = load(sys.argv[1]), load(sys.argv[2])
+import pathlib, datetime
+RELEASE = [r["slug"] for r in json.load(open(pathlib.Path(__file__).resolve().parent / "data" / "stay-release.json"))["released"]]
+stays = [s for s in stays if (s.get("webflow_slug") or s.get("property_slug")) in set(RELEASE)]
+STOP = set("the and of by at a in on resort lodge camp hotel villa villas house suites suite island private reserve beach spa retreat safari tented collection mara game boutique luxury estate inn ranch room guest area general low resolution width jpg jpeg png avif webp".split())
+def toks(x): return {t for t in re.findall(r"[a-z]{3,}", re.sub(r"['’]s?\b", "", html.unescape(x or "").lower())) if t not in STOP}
+ALL_NAMES = [toks(s["name"]) for s in load(sys.argv[1])]
+def foreign(url, own):
+    """True when a photo's file name names a different stay and not this one."""
+    fn = toks(re.sub(r"%20|[_-]+", " ", url.rsplit("/", 1)[-1]))
+    if fn & own: return False
+    return any(len(o) >= 2 and o <= fn for o in ALL_NAMES if o != own)
 D = {d["id"]: d for d in dests}
 out, seen = [], set()
 for s in sorted(stays, key=lambda s: s["name"]):
@@ -78,7 +95,7 @@ for s in sorted(stays, key=lambda s: s["name"]):
     actual = NOT_IN.get(cslug, {}).get(slug)
     reviewed = s.get("content_status") in ("approved", "published") and bool(s.get("aeo_approved"))
     fb = s.get("fact_blocks") or {}
-    gallery = [img(g) for g in (s.get("gallery_urls") or []) if g][:10]
+    gallery = [img(g) for g in (s.get("gallery_urls") or []) if g and not foreign(g, toks(s["name"]))][:10]
     out.append({
         "slug": slug, "name": text(s.get("display_name") or s["name"]).replace(" ", " "), "ledgerId": s.get("ledger_id"),
         "country": actual or d.get("name"), "countrySlug": None if actual else cslug, "regionSlug": None if actual else d.get("region_slug"),
@@ -98,7 +115,8 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "reviewed": reviewed, "reserveChild": bool(s.get("is_reserve_child")), "parentSlug": s.get("parent_property_slug"),
         "engine": ENGINE.get(slug),
     })
-json.dump({"exportedOn": "2026-10-25", "stays": out}, open(sys.argv[3], "w"), indent=1, ensure_ascii=False)
+for x in out: x.update(FIX.get(x["slug"], {}))
+json.dump({"exportedOn": datetime.date.today().isoformat(), "stays": out}, open(sys.argv[3], "w"), indent=1, ensure_ascii=False)
 from collections import Counter
 print(len(out), "stays;", Counter(x["countrySlug"] or "misfiled" for x in out))
 print("no hero:", [x["slug"] for x in out if not x["hero"]])

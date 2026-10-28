@@ -2,110 +2,6 @@
  "checkedOn": "2026-10-28",
  "rows": [
   {
-   "stay_id": "6a89a1b2ec5a3d5a71b977f9",
-   "slug": "beyond-amazon-explorer",
-   "name": "& Beyond Amazon Explorer",
-   "country": "Brazil",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1b2b8cf18eed7d16af5",
-   "slug": "beyond-galapagos-explorer",
-   "name": "& Beyond Galapagos Explorer",
-   "country": "Ecuador & Galapagos",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff8b0",
-   "slug": "beyond-lake-serengeti-under-canvas",
-   "name": "& Beyond Phinda Homestead Residence",
-   "country": "Tanzania",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff8b1",
-   "slug": "beyond-sussuvlei-desert-lodge",
-   "name": "& Beyond Sossusvlei Desert Lodge",
-   "country": "Namibia",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85dce35b5b4f3c298cbcf9",
-   "slug": "beyond-vira-vira-lodge",
-   "name": "& Beyond Vira Vira",
-   "country": "Chile & Easter Island",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1b22a1c65100eda62e9",
-   "slug": "beyond-xaranna-okavango-delta-camp-by-and-beyond",
-   "name": "& Beyond Xaranna Okavango Delta Camp",
-   "country": "Botswana",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff8b3",
-   "slug": "benguerra-island-by-and-beyond",
-   "name": "Benguerra Island by & Beyond",
-   "country": "Tanzania",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff8b4",
-   "slug": "chobe-under-canvas-by-and-beyond",
-   "name": "& Beyond Chobe Under Canvas",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1b3181c451d04a8344d",
-   "slug": "beyond-grumeti-safari-camp",
-   "name": "&Beyond Grumeti Serengeti River Lodge",
-   "country": "Tanzania",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1b3a872b803febe1c3a",
-   "slug": "beyond-kichwa-camp",
-   "name": "&Beyond Kichwa Tembo Tented Camp",
-   "country": "Kenya",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1b33c724b94e1e6ede8",
-   "slug": "beyond-kleins-camp",
-   "name": "&Beyond Klein’s Camp",
-   "country": "Tanzania",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1cc00e0dd4d532f718d",
-   "slug": "ak-sanctuary-nile-adventurer",
-   "name": "Sanctuary Nile Adventurer",
-   "country": "Egypt",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
-  },
-  {
    "stay_id": "6a9d46027650cc04166342d9",
    "slug": "abaco-inn",
    "name": "Abaco Inn",
@@ -138,6 +34,16 @@
    "slug": "aiteall-boutique-accommodation",
    "name": "Aiteall Boutique Accommodation",
    "country": "Ireland",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a89a1cc00e0dd4d532f718d",
+   "slug": "ak-sanctuary-nile-adventurer",
+   "name": "Sanctuary Nile Adventurer",
+   "country": "Egypt",
    "missing": [
     "stay_copy"
    ],
@@ -277,6 +183,16 @@
    "released": true
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff94f",
+   "slug": "anantara-maia-seychelles-villas",
+   "name": "Maia Seychelles Villas By Anantara",
+   "country": "Seychelles",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c1",
    "slug": "anantara-mui-ne",
    "name": "Anantara Mui Ne",
@@ -374,6 +290,30 @@
    "released": true
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff8f6",
+   "slug": "asilia-dunia-camp",
+   "name": "Dunia Camp by Asilia",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff95d",
+   "slug": "asilia-naboisho-camp-by-asilia",
+   "name": "Naboisho Camp by Asilia",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff977",
+   "slug": "asilia-olivers-camp",
+   "name": "Oliver’s Camp by Asilia",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c7",
    "slug": "asilia-rekero-camp",
    "name": "Rekero Camp by Asilia",
@@ -396,14 +336,6 @@
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
    "country": "Bolivia",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a899f0e94aa52a9fb36e1a3",
-   "slug": "iguazu",
-   "name": "Iguazu",
-   "country": "Argentina",
    "missing": [],
    "released": true
   },
@@ -568,6 +500,100 @@
    "country": "Chile & Easter Island",
    "missing": [
     "hero_photo"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff8b3",
+   "slug": "benguerra-island-by-and-beyond",
+   "name": "Benguerra Island by & Beyond",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1b2ec5a3d5a71b977f9",
+   "slug": "beyond-amazon-explorer",
+   "name": "& Beyond Amazon Explorer",
+   "country": "Brazil",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1b2b8cf18eed7d16af5",
+   "slug": "beyond-galapagos-explorer",
+   "name": "& Beyond Galapagos Explorer",
+   "country": "Ecuador & Galapagos",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a89a1b3181c451d04a8344d",
+   "slug": "beyond-grumeti-safari-camp",
+   "name": "&Beyond Grumeti Serengeti River Lodge",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1b3a872b803febe1c3a",
+   "slug": "beyond-kichwa-camp",
+   "name": "&Beyond Kichwa Tembo Tented Camp",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1b33c724b94e1e6ede8",
+   "slug": "beyond-kleins-camp",
+   "name": "&Beyond Klein’s Camp",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff8b0",
+   "slug": "beyond-lake-serengeti-under-canvas",
+   "name": "& Beyond Phinda Homestead Residence",
+   "country": "Tanzania",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff958",
+   "slug": "beyond-mnemba-by-and-beyond",
+   "name": "Mnemba Island by &Beyond",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff8b1",
+   "slug": "beyond-sussuvlei-desert-lodge",
+   "name": "& Beyond Sossusvlei Desert Lodge",
+   "country": "Namibia",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85dce35b5b4f3c298cbcf9",
+   "slug": "beyond-vira-vira-lodge",
+   "name": "& Beyond Vira Vira",
+   "country": "Chile & Easter Island",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1b22a1c65100eda62e9",
+   "slug": "beyond-xaranna-okavango-delta-camp-by-and-beyond",
+   "name": "& Beyond Xaranna Okavango Delta Camp",
+   "country": "Botswana",
+   "missing": [
+    "stay_copy"
    ],
    "released": false
   },
@@ -824,6 +850,14 @@
    "released": true
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff8b4",
+   "slug": "chobe-under-canvas-by-and-beyond",
+   "name": "& Beyond Chobe Under Canvas",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8ec",
    "slug": "chumbe-island-zanzibar",
    "name": "Chumbe Isalnd Escape Zanzibar",
@@ -906,14 +940,6 @@
    "released": true
   },
   {
-   "stay_id": "6a89a1abe791f8fadf04d5ed",
-   "slug": "great-plains-duba-plains",
-   "name": "Duba Plains Camp by Great Plains",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff8f2",
    "slug": "dukes-camp-okavango",
    "name": "Duke's Camp Okavango",
@@ -958,14 +984,6 @@
    "slug": "dulini-river-lodge",
    "name": "Dulini River Lodge",
    "country": "South Africa",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff8f6",
-   "slug": "asilia-dunia-camp",
-   "name": "Dunia Camp by Asilia",
-   "country": "Tanzania",
    "missing": [],
    "released": true
   },
@@ -1152,6 +1170,14 @@
    "released": false
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff905",
+   "slug": "explora-at-atacama",
+   "name": "Explora Atacama",
+   "country": "Bolivia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff906",
    "slug": "explora-at-uyuni-flats",
    "name": "Explora At Uyuni Flats",
@@ -1210,22 +1236,6 @@
    "slug": "explora-torres-del-paine",
    "name": "Torres del Paine",
    "country": "Chile & Easter Island",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a899f0f490e5a82536965c0",
-   "slug": "torres-del-paine-c-reserve",
-   "name": "Explora Torres del Paine C. Reserve",
-   "country": "Chile & Easter Island",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff905",
-   "slug": "explora-at-atacama",
-   "name": "Explora Atacama",
-   "country": "Bolivia",
    "missing": [],
    "released": true
   },
@@ -1337,6 +1347,38 @@
    "released": true
   },
   {
+   "stay_id": "6a89a1abe791f8fadf04d5ed",
+   "slug": "great-plains-duba-plains",
+   "name": "Duba Plains Camp by Great Plains",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff99b",
+   "slug": "great-plains-selinda-main-camp",
+   "name": "Selinda Main Camp by Great Plains",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1ab8c577ee51827614c",
+   "slug": "great-plains-zarafa-camp",
+   "name": "Zarafa Camp by Great Plains",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a89a1ab47ee966f2de33dfd",
+   "slug": "great-plains-zarafa-dhow-suite",
+   "name": "Zarafa Dhow Suite by Great Plains",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff916",
    "slug": "greystoke-mahale-by-nomad",
    "name": "Greystoke Mahale By Nomad",
@@ -1370,26 +1412,6 @@
    "country": "South Africa",
    "missing": [],
    "released": true
-  },
-  {
-   "stay_id": "6a89a1a727c2bd3c9e8033eb",
-   "slug": "hx-cruise-roald-edmundsen",
-   "name": "HX Cruises Aboard the Roald Edmundsen",
-   "country": "Antarctica Cruises",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
-  },
-  {
-   "stay_id": "6a89a1a7c1b1f8f0b81eab54",
-   "slug": "hx-cruises-sv-spitsbergen",
-   "name": "HX Cruises Aboard the SV Spitsbergen",
-   "country": "Norway",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
   },
   {
    "stay_id": "6a899f055f50d010d8553801",
@@ -1504,6 +1526,34 @@
     "stay_copy"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6a89a1a727c2bd3c9e8033eb",
+   "slug": "hx-cruise-roald-edmundsen",
+   "name": "HX Cruises Aboard the Roald Edmundsen",
+   "country": "Antarctica Cruises",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a89a1a7c1b1f8f0b81eab54",
+   "slug": "hx-cruises-sv-spitsbergen",
+   "name": "HX Cruises Aboard the SV Spitsbergen",
+   "country": "Norway",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6a899f0e94aa52a9fb36e1a3",
+   "slug": "iguazu",
+   "name": "Iguazu",
+   "country": "Argentina",
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff920",
@@ -1803,6 +1853,14 @@
    "released": true
   },
   {
+   "stay_id": "6a89a1c5a229839acb1b46b8",
+   "slug": "kwande-private-game-reserve",
+   "name": "Kwandwe Private Game Reserve",
+   "country": "South Africa",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a9c5c8080b982b8cad4153e",
    "slug": "kwando-4-rivers",
    "name": "Kwando 4 Rivers Camp",
@@ -1891,14 +1949,6 @@
    "released": true
   },
   {
-   "stay_id": "6a89a1c5a229839acb1b46b8",
-   "slug": "kwande-private-game-reserve",
-   "name": "Kwandwe Private Game Reserve",
-   "country": "South Africa",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff93a",
    "slug": "kwessi-dunes-camp",
    "name": "Kwessi Dunes Camp",
@@ -1926,6 +1976,14 @@
    "released": true
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff941",
+   "slug": "la-tahaa",
+   "name": "Le Taha’a by Pearl Resorts",
+   "country": "Tahiti",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93d",
    "slug": "la-valise-tulum",
    "name": "La Valise Tulum",
@@ -1934,10 +1992,10 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff93e",
-   "slug": "manyara-tree-lodge-by-and-beyond",
-   "name": "Lake Manyara Tree Lodge By & Beyond",
-   "country": "Tanzania",
+   "stay_id": "6a85bfb37f6eb35689bff9f8",
+   "slug": "lales-camp-expeditions",
+   "name": "Lale’s Camp & Expeditions",
+   "country": "South Africa",
    "missing": [],
    "released": true
   },
@@ -1962,14 +2020,6 @@
    "slug": "le-quartier-francais",
    "name": "Le Quartier Francais South Africa",
    "country": "South Africa",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff941",
-   "slug": "la-tahaa",
-   "name": "Le Taha’a by Pearl Resorts",
-   "country": "Tahiti",
    "missing": [],
    "released": true
   },
@@ -2084,6 +2134,14 @@
    "released": false
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bffa02",
+   "slug": "linyanti-wilderness-camp",
+   "name": "Linyanti Wilderness Camp",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1cc31fcf7a7ed7725e0",
    "slug": "lion-sands",
    "name": "Lion Sands Reserve",
@@ -2103,6 +2161,14 @@
    "released": false
   },
   {
+   "stay_id": "6a89a1beb72eb679d7db8a8a",
+   "slug": "loirien-mara",
+   "name": "Lorien Mara",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff94d",
    "slug": "lolebezi-lodge",
    "name": "Lolebezi Lodge",
@@ -2115,14 +2181,6 @@
    "slug": "londolozi-reserve",
    "name": "Londolozi Reserve",
    "country": "South Africa",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1beb72eb679d7db8a8a",
-   "slug": "loirien-mara",
-   "name": "Lorien Mara",
-   "country": "Kenya",
    "missing": [],
    "released": true
   },
@@ -2143,14 +2201,12 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff94f",
-   "slug": "anantara-maia-seychelles-villas",
-   "name": "Maia Seychelles Villas By Anantara",
-   "country": "Seychelles",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "stay_id": "6a85bfb37f6eb35689bff93e",
+   "slug": "manyara-tree-lodge-by-and-beyond",
+   "name": "Lake Manyara Tree Lodge By & Beyond",
+   "country": "Tanzania",
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff950",
@@ -2235,14 +2291,6 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff958",
-   "slug": "beyond-mnemba-by-and-beyond",
-   "name": "Mnemba Island by &Beyond",
-   "country": "Tanzania",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff959",
    "slug": "monachira-camp",
    "name": "Monachira Camp",
@@ -2296,22 +2344,6 @@
    "released": false
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff969",
-   "slug": "nihi",
-   "name": "NIHI Sumba The Edge of Wildness",
-   "country": "Indonesia",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff95d",
-   "slug": "asilia-naboisho-camp-by-asilia",
-   "name": "Naboisho Camp by Asilia",
-   "country": "Kenya",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff95e",
    "slug": "namale-resort-and-spa",
    "name": "Namale Resort & Spa",
@@ -2320,6 +2352,14 @@
     "hero_photo"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff9da",
+   "slug": "nami-project",
+   "name": "Room & Wild The Nami Project",
+   "country": "Canada",
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff95f",
@@ -2409,6 +2449,14 @@
    "slug": "ngare-camp-by-serian",
    "name": "Ngare Camp Serian",
    "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff969",
+   "slug": "nihi",
+   "name": "NIHI Sumba The Edge of Wildness",
+   "country": "Indonesia",
    "missing": [],
    "released": true
   },
@@ -2565,14 +2613,6 @@
    "slug": "olas-tulum",
    "name": "Olas Tulum",
    "country": "Mexico",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff977",
-   "slug": "asilia-olivers-camp",
-   "name": "Oliver’s Camp by Asilia",
-   "country": "Tanzania",
    "missing": [],
    "released": true
   },
@@ -2968,14 +3008,6 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff99b",
-   "slug": "great-plains-selinda-main-camp",
-   "name": "Selinda Main Camp by Great Plains",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff99c",
    "slug": "senda-monteverde-lodge",
    "name": "Senda Monteverde Lodge Costa Rica",
@@ -3283,6 +3315,14 @@
    "released": true
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff9bb",
+   "slug": "six-senses-krabey-island",
+   "name": "Six Senses Krabey Island",
+   "country": "Cambodia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9bc",
    "slug": "six-senses-kyoto",
    "name": "Six Senses Kyoto",
@@ -3303,6 +3343,14 @@
    "slug": "six-senses-ninh-van-bay",
    "name": "Six Senses Ninh Van Bay",
    "country": "Vietnam",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a899f0c28513e64201e926b",
+   "slug": "six-senses-residences-courchevel",
+   "name": "Six Senses Residences Courchevel",
+   "country": "France",
    "missing": [],
    "released": true
   },
@@ -3661,14 +3709,6 @@
    "released": false
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff9da",
-   "slug": "nami-project",
-   "name": "Room & Wild The Nami Project",
-   "country": "Canada",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a9d4861056c71a19e0353f7",
    "slug": "the-ocean-view",
    "name": "The Ocean View",
@@ -3707,6 +3747,14 @@
    "released": false
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff9dd",
+   "slug": "the-retreat-at-blue-lagoon",
+   "name": "The Retreat at Blue Lagoon",
+   "country": "Iceland",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9dc",
    "slug": "the-retreat-rwanda",
    "name": "The Retreat - Rwanda",
@@ -3716,14 +3764,6 @@
     "stay_copy"
    ],
    "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff9dd",
-   "slug": "the-retreat-at-blue-lagoon",
-   "name": "The Retreat at Blue Lagoon",
-   "country": "Iceland",
-   "missing": [],
-   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9de",
@@ -3838,6 +3878,14 @@
     "hero_photo"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6a899f0f490e5a82536965c0",
+   "slug": "torres-del-paine-c-reserve",
+   "name": "Explora Torres del Paine C. Reserve",
+   "country": "Chile & Easter Island",
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a899f06bac4bf4e6a15685b",
@@ -4029,14 +4077,6 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff9f8",
-   "slug": "lales-camp-expeditions",
-   "name": "Lale’s Camp & Expeditions",
-   "country": "South Africa",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff9f9",
    "slug": "wilderness-abu-camp",
    "name": "Wilderness Abu Camp",
@@ -4063,17 +4103,17 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff9fc",
-   "slug": "wilderness-desert-rhino-camp",
-   "name": "Wilderness Desert Rhino Camp",
+   "stay_id": "6a85bfb37f6eb35689bff9fd",
+   "slug": "wilderness-damaraland",
+   "name": "Wilderness Doro Nawas",
    "country": "Namibia",
    "missing": [],
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff9fd",
-   "slug": "wilderness-damaraland",
-   "name": "Wilderness Doro Nawas",
+   "stay_id": "6a85bfb37f6eb35689bff9fc",
+   "slug": "wilderness-desert-rhino-camp",
+   "name": "Wilderness Desert Rhino Camp",
    "country": "Namibia",
    "missing": [],
    "released": true
@@ -4118,14 +4158,6 @@
    "stay_id": "6a85bfb37f6eb35689bffa01",
    "slug": "wilderness-kwetsani",
    "name": "Wilderness Kwetsani",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bffa02",
-   "slug": "linyanti-wilderness-camp",
-   "name": "Linyanti Wilderness Camp",
    "country": "Botswana",
    "missing": [],
    "released": true
@@ -4320,22 +4352,6 @@
    "released": false
   },
   {
-   "stay_id": "6a89a1ab8c577ee51827614c",
-   "slug": "great-plains-zarafa-camp",
-   "name": "Zarafa Camp by Great Plains",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a89a1ab47ee966f2de33dfd",
-   "slug": "great-plains-zarafa-dhow-suite",
-   "name": "Zarafa Dhow Suite by Great Plains",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bffa16",
    "slug": "zigera",
    "name": "Zigera",
@@ -4344,22 +4360,6 @@
     "stay_copy"
    ],
    "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff9bb",
-   "slug": "six-senses-krabey-island",
-   "name": "Six Senses Krabey Island",
-   "country": "Cambodia",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a899f0c28513e64201e926b",
-   "slug": "six-senses-residences-courchevel",
-   "name": "Six Senses Residences Courchevel",
-   "country": "France",
-   "missing": [],
-   "released": true
   }
  ]
 }

@@ -6,3 +6,6 @@ out/
 *.tsbuildinfo
 .DS_Store
 scripts/.cc-src.cjs
+data/library/export.json
+data/library/stays.json
+data/library/destinations.json

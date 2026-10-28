@@ -1,0 +1,67 @@
+# Library sync: the Base44 Studios publish to jameswildco.com through this workflow.
+# Publish in a Studio sends a repository_dispatch (library-publish); it can also be run by hand.
+# The library export is fetched with a GitHub OIDC token (no stored secret), every stay is
+# checked, the content files are regenerated, tests and the build must pass, and only then is
+# the change committed. Vercel deploys the commit.
+name: Library sync
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: What is being published
+        required: false
+        default: manual run
+  repository_dispatch:
+    types: [library-publish]
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: library-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      REASON: ${{ github.event.client_payload.reason || inputs.reason || 'publish' }}
+      BY: ${{ github.event.client_payload.by || github.actor }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm ci
+
+      - name: Pull the library export
+        run: |
+          set -euo pipefail
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=base44-site-export" | jq -r .value)
+          curl -sSf --retry 3 -H "Authorization: Bearer $TOKEN" https://wild-intel-vault.base44.app/functions/siteExport -o data/library/export.json
+          python3 -c "import json;x=json.load(open('data/library/export.json'));print(len(x['stays']),'stays',len(x['destinations']),'destinations')"
+
+      - name: Check stays and regenerate content
+        run: scripts/sync-library.sh
+
+      - name: Test
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then echo "No content changes"; exit 0; fi
+          git config user.name "James Wild & Co library"
+          git config user.email "library-sync@users.noreply.github.com"
+          git add -A
+          git commit -m "Library sync: $REASON (by $BY)"
+          git push

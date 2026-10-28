@@ -19,6 +19,7 @@ export const BUILT: string[] = [
   "/the-ledger",
   "/for-advisors",
   "/partners",
+  "/travel-notes",
   "/stays",
   // Journeys and voyages from James's route files (lib/content/trips)
   "/overland/costa-rica/two-oceans-one-volcano",

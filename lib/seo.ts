@@ -39,7 +39,8 @@ export function buildMetadata({ title, description: raw, path, image, type = "we
   const description = fitDescription(raw);
   const index = isIndexable && !noindex;
   return {
-    title,
+    // Long titles drop the brand suffix so the keywords, not the brand, survive Google's cut.
+    title: title.length + SUFFIX > MAX_TITLE ? { absolute: title } : title,
     description,
     alternates: { canonical: url },
     robots: index ? { index: true, follow: true } : { index: false, follow: false },

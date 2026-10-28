@@ -16,7 +16,22 @@ export type StayData = {
 const has = (b: Block) => b.paras.length > 0 || b.items.length > 0;
 export const pageReady = (s: StayData) => !!s.hero && (has(s.rooms) || has(s.features) || s.why.length > 0 || s.onlyHere.length > 0);
 
-export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => (HERO_OVERRIDE[s.slug] ? { ...s, hero: HERO_OVERRIDE[s.slug] } : s));
+// Webflow names carry display line breaks ("Leeu House \n South Africa"), which
+// leaked into <title>, schema and alt text. Clean names here so every page,
+// title and JSON-LD gets one line; the trailing country/tagline line is dropped.
+const NAME_FIX: Record<string, string> = {
+  "arenas-del-mar-resort": "Arenas del Mar Resort", "la-cle": "La Cle", "lalibela-reserve": "Lalibela Reserve",
+  "le-quartier-francais": "Le Quartier Francais", "leeu-estates": "Leeu Estates", "leeu-house": "Leeu House",
+  "lion-sands": "Lion Sands Reserve", "londolozi-reserve": "Londolozi Reserve", "morukuru-farm-house": "Morukuru Farm House",
+  "nayara-gardens": "Nayara Gardens", "nayara-tented-camp": "Nayara Tented Camp", "noah-forest-by-tifakara": "Noah’s Forest by Tifakara",
+  "pearl-resort-vahine-private-island": "Vahine Private Island", "senda-monteverde-lodge": "Senda Monteverde Lodge",
+  "seseka-thornybush": "Seseke Tented Camp", "singita-ebony": "Singita Ebony Lodge", "sirai-house": "Sirai House",
+  "tabacon-thermal-resort-spa": "Tabacón Thermal Resort & Spa", "tengile-mala-mala-kirkmans-kamp": "Kirkman's Kamp",
+  "tengile-mala-mala-rattrays-lodge": "Rattray's Lodge", "tengile-mala-mala-sable-camp": "Sable Camp", "thornybush-reserve": "Thornybush Reserve",
+};
+const cleanName = (s: StayData) => NAME_FIX[s.slug] ?? s.name.replace(/\s*\n\s*/g, " ").replace(/\s+/g, " ").trim();
+
+export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}) }));
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);

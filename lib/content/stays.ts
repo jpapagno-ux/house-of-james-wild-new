@@ -50,7 +50,7 @@ export function altFor(url: string, name: string, country: string | null, i = 0)
   file = file.replace(/\.[a-z0-9]{3,4}$/i, "").replace(/^([a-z0-9]{9}_){1,2}[a-f0-9]{24}_/i, "").replace(/_20/g, " ");
   const own = new Set(`${name} ${country ?? ""}`.toLowerCase().replace(/[’']s\b/g, "").split(/[^a-z0-9]+/).filter(Boolean));
   const words = file.split(/[\s_\-.=%]+/).filter((w) => w && !ALT_DROP.test(w) && !own.has(w.toLowerCase().replace(/[’']s$/, "")));
-  if (words.length < 2) return i ? `${where}: photograph ${i + 1}` : where;
+  if (!words.length || (words.length === 1 && words[0].length < 4)) return i ? `${where}: photograph ${i + 1}` : where;
   const what = words.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
   return `${what.charAt(0).toUpperCase()}${what.slice(1)} at ${where}`;
 }

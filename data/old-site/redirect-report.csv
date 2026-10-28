@@ -32,7 +32,7 @@ old path,new path,why,old title
 /book/babylonstoren,/stays/babylonstoren,booking page -> stay page,Book your stay at Babylonstoren | Wild Earth Stays
 /book/baines-lodge,/stays/baines-lodge,booking page -> stay page,Book your stay at Baine’s Lodge | Wild Earth Stays
 /book/bateleur-camp-by-beyond,/stays/bateleur-camp-by-and-beyond,booking page -> stay page,Book your stay at Bateleur Camp By &amp; Beyond | Wild Earth Stays
-/book/baymanhi-exuma,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (bahamas country page not built yet),Book your stay at Baymanhi Exuma | Wild Earth Stays
+/book/baymanhi-exuma,/stays/baymanhi-exuma,booking page -> stay page,Book your stay at Baymanhi Exuma | Wild Earth Stays
 /book/be-tulum,/stays/be-tulum,booking page -> stay page,Book your stay at Be Tulum | Wild Earth Stays
 /book/beckon-huka-lodge,/destinations/oceania,booking page -> not on the new site yet; region page (new-zealand country page not built yet),Book your stay at Beckon Huka Lodge | Wild Earth Stays
 /book/beckon-longitude-131,/destinations/oceania,booking page -> not on the new site yet; region page (australia country page not built yet),Book your stay at  Beckon Longitude 131 | Wild Earth Stays
@@ -49,7 +49,7 @@ old path,new path,why,old title
 /book/castaway-island,/destinations/oceania,booking page -> not on the new site yet; region page (fiji country page not built yet),Book your stay at Castaway Island | Wild Earth Stays
 /book/castle-leslie,/stays/castle-leslie,booking page -> stay page,Book your stay at Castle Leslie | Wild Earth Stays
 /book/celestia-yacht,/stays/celestia-yacht,booking page -> stay page,Book your stay at Celestia Yacht | Wild Earth Stays
-/book/chable-yucatan,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (mexico country page not built yet),Book your stay at Chable Yucatan | Wild Earth Stays
+/book/chable-yucatan,/stays/chable-yucatan,booking page -> stay page,Book your stay at Chable Yucatan | Wild Earth Stays
 /book/chamilandu-lodge,/stays/chamilandu-lodge,booking page -> stay page,Book your stay at Chamilandu Lodge | Wild Earth Stays
 /book/cheetah-plains,/stays/cheetah-plains,booking page -> stay page,Book your stay at Cheetah Plains | Wild Earth Stays
 /book/chem-chem-safari-lodge,/stays/chem-chem,booking page -> stay page,Book your stay at Chem Chem | Wild Earth Stays
@@ -63,7 +63,7 @@ old path,new path,why,old title
 /book/como-uma-ubud,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Uma Ubud | Wild Earth Stays
 /book/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,booking page -> stay page,Book your stay at Conrad Tulum Riviera Maya | Wild Earth Stays
 /book/coot-club,/stays/coot-club,booking page -> stay page,Book your stay at Coot Club | Wild Earth Stays
-/book/cottars-1920-camp,/destinations/africa,booking page -> not on the new site yet; region page (kenya country page not built yet),Book your stay at Cottars 1920 Camp | Wild Earth Stays
+/book/cottars-1920-camp,/stays/cottars-1920-camp,booking page -> stay page,Book your stay at Cottars 1920 Camp | Wild Earth Stays
 /book/daunara-safari-camp,/stays/daunara-safari-camp,booking page -> stay page,Book your stay at Daunara Safari Camp | Wild Earth Stays
 /book/duba-plains-camp-by-great-plains,/stays/great-plains-duba-plains,booking page -> stay page,Book your stay at Duba Plains Camp by Great Plains | Wild Earth Stays
 /book/dukes-camp-okavango,/stays/dukes-camp-okavango,booking page -> stay page,Book your stay at Dukes Camp Okavango | Wild Earth Stays
@@ -117,8 +117,8 @@ old path,new path,why,old title
 /book/isla-palenque-resort,/stays/isla-palenque-resort,booking page -> stay page,Book your stay at Isla Palenque Resort | Wild Earth Stays
 /book/isla-secas-resort,/stays/isla-secas-panama,booking page -> stay page,Book your stay at Isla Secas - Panama | Wild Earth Stays
 /book/ja-manufaru-maldives,/stays/ja-manufaru-maldives,booking page -> stay page,Book your stay at JA Manufaru Maldives | Wild Earth Stays
-/book/jacks-camp,/destinations/africa,booking page -> not on the new site yet; region page (botswana country page not built yet),Book your stay at Jacks Camp | Wild Earth Stays
-/book/jacks-private-camp,/destinations/africa,booking page -> not on the new site yet; region page (botswana country page not built yet),Book your stay at Jacks Private Camp | Wild Earth Stays
+/book/jacks-camp,/stays/jacks-camp,booking page -> stay page,Book your stay at Jacks Camp | Wild Earth Stays
+/book/jacks-private-camp,/stays/jacks-private-camp,booking page -> stay page,Book your stay at Jacks Private Camp | Wild Earth Stays
 /book/kaaba-luum-mexico,/stays/kaaba-luum-mexico,booking page -> stay page,Book your stay at Kaaba Luum Mexico | Wild Earth Stays
 /book/kamalaya-koh-samui,/stays/kamalaya-koh-samui,booking page -> stay page,Book your stay at Kamalaya Koh Samui | Wild Earth Stays
 /book/katikies-santorini,/destinations/europe,booking page -> not on the new site yet; region page (greece country page not built yet),Book your stay at Katikies Villa Santorini | Wild Earth Stays
@@ -470,7 +470,7 @@ old path,new path,why,old title
 /property/babylonstoren,/stays/babylonstoren,stay page,Babylonstoren | Luxury Stays in South Africa | Wild Earth Stays
 /property/baines-lodge,/stays/baines-lodge,stay page,Baine’s Lodge | Luxury Stays in Botswana | Wild Earth Stays
 /property/bateleur-camp-by-and-beyond,/stays/bateleur-camp-by-and-beyond,stay page,Bateleur Camp By &amp; Beyond | Luxury Stays in Kenya | Wild Earth Stays
-/property/baymanhi-exuma,/destinations/caribbean-mexico,not on the new site yet; region page (bahamas country page not built yet),Baymanhi Exuma | Luxury Stays in Bahamas | Wild Earth Stays
+/property/baymanhi-exuma,/stays/baymanhi-exuma,stay page,Baymanhi Exuma | Luxury Stays in Bahamas | Wild Earth Stays
 /property/be-tulum,/stays/be-tulum,stay page,Be Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/beckon-capella-lodge,/stays/beckon-capella-lodge,stay page,Beckon Capella Lodge | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-huka-lodge,/destinations/oceania,not on the new site yet; region page (new-zealand country page not built yet),Beckon Huka Lodge | Luxury Stays in New Zealand | Wild Earth Stays
@@ -496,7 +496,7 @@ old path,new path,why,old title
 /property/castaway-island,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Castaway Island | Luxury Stays in Fiji | Wild Earth Stays
 /property/castle-leslie,/stays/castle-leslie,stay page,Castle Leslie | Luxury Stays in Ireland | Wild Earth Stays
 /property/celestia-yacht,/stays/celestia-yacht,stay page,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
-/property/chable-yucatan,/destinations/caribbean-mexico,not on the new site yet; region page (mexico country page not built yet),Chable Yucatan | Luxury Stays in Mexico | Wild Earth Stays
+/property/chable-yucatan,/stays/chable-yucatan,stay page,Chable Yucatan | Luxury Stays in Mexico | Wild Earth Stays
 /property/chamilandu-lodge,/stays/chamilandu-lodge,stay page,Chamilandu Lodge | Luxury Stays in Zambia | Wild Earth Stays
 /property/cheetah-plains,/stays/cheetah-plains,stay page,Cheetah Plains | Luxury Stays in South Africa | Wild Earth Stays
 /property/chem-chem,/stays/chem-chem,stay page,Chem Chem | Luxury Stays in Tanzania | Wild Earth Stays
@@ -512,7 +512,7 @@ old path,new path,why,old title
 /property/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,stay page,Conrad Tulum Riviera Maya | Luxury Stays in Mexico | Wild Earth Stays
 /property/coot-club,/stays/coot-club,stay page,Coot Club | Luxury Stays in South Africa | Wild Earth Stays
 /property/corks-vienna-woods,/stays/corks-vienna-woods,stay page,Cork’s Vienna Woods | Luxury Stays in Ireland | Wild Earth Stays
-/property/cottars-1920-camp,/destinations/africa,not on the new site yet; region page (kenya country page not built yet),Cottars 1920 Camp | Luxury Stays in Kenya | Wild Earth Stays
+/property/cottars-1920-camp,/stays/cottars-1920-camp,stay page,Cottars 1920 Camp | Luxury Stays in Kenya | Wild Earth Stays
 /property/daunara-safari-camp,/stays/daunara-safari-camp,stay page,Daunara Safari Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/dukes-camp-okavango,/stays/dukes-camp-okavango,stay page,Dukes Camp Okavango | Luxury Stays in Botswana | Wild Earth Stays
 /property/dulini-anabezi-lodge,/stays/dulini-anabezi-lodge,stay page,Dulini Anabezi Lodge | Luxury Stays in Zambia | Wild Earth Stays
@@ -575,8 +575,8 @@ old path,new path,why,old title
 /property/isla-secas-panama,/stays/isla-secas-panama,stay page,Isla Secas - Panama | Luxury Stays in Panama | Wild Earth Stays
 /property/iveagh-garden-hotel,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
 /property/ja-manufaru-maldives,/stays/ja-manufaru-maldives,stay page,JA Manufaru Maldives | Luxury Stays in Maldives | Wild Earth Stays
-/property/jacks-camp,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),Jacks Camp | Luxury Stays in Botswana | Wild Earth Stays
-/property/jacks-private-camp,/destinations/africa,not on the new site yet; region page (botswana country page not built yet),Jacks Private Camp | Luxury Stays in Botswana | Wild Earth Stays
+/property/jacks-camp,/stays/jacks-camp,stay page,Jacks Camp | Luxury Stays in Botswana | Wild Earth Stays
+/property/jacks-private-camp,/stays/jacks-private-camp,stay page,Jacks Private Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/jao-camp,/stays/jao-camp,stay page,Jao Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/kaaba-luum-mexico,/stays/kaaba-luum-mexico,stay page,Kaaba Luum Mexico | Luxury Stays in Mexico | Wild Earth Stays
 /property/kamalaya-koh-samui,/stays/kamalaya-koh-samui,stay page,Kamalaya Koh Samui | Luxury Stays in Thailand | Wild Earth Stays
@@ -689,7 +689,7 @@ old path,new path,why,old title
 /property/quinlan-cooke-cahersiveen,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
-/property/rayvadee-resort,/destinations/asia,not on the new site yet; region page (thailand country page not built yet),Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
+/property/rayvadee-resort,/stays/rayvadee-resort,stay page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/royal-davui-island-resort,/destinations/oceania,not on the new site yet; region page (fiji country page not built yet),Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/royal-malewane,/stays/royal-malewane,stay page,Royal Malewane | Luxury Stays in South Africa | Wild Earth Stays
 /property/rubondo-island-camp-asilia,/stays/rubondo-island-camp-asilia,stay page,Rubondo Island Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
@@ -935,12 +935,12 @@ old path,new path,why,old title
 /stay/babylonstoren-garden-suite,/stays/babylonstoren,room of babylonstoren -> stay page,Garden Suite at Babylonstoren | Wild Earth Stays
 /stay/baines-lodge-luxury-suite,/stays/baines-lodge,room of baines-lodge -> stay page,Luxury Suite at Baine’s Lodge | Wild Earth Stays
 /stay/baines-lodge-private-lodge,/stays/baines-lodge,room of baines-lodge -> stay page,Private Lodge at Baine’s Lodge | Wild Earth Stays
-/stay/baymanhi-exuma-beach-and-lagoon-bungalow-connector,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Beach and Lagoon Bungalow Connector at Baymanhi Exuma | Wild Earth Stays
-/stay/baymanhi-exuma-beach-bungalow,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Beach Bungalow at Baymanhi Exuma | Wild Earth Stays
-/stay/baymanhi-exuma-beach-bungalow-with-extended-veranda,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Beach Bungalow with Extended Veranda at Baymanhi Exuma | Wild Earth Stays
-/stay/baymanhi-exuma-lagoon-bungalow,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Lagoon Bungalow at Baymanhi Exuma | Wild Earth Stays
-/stay/baymanhi-exuma-lagoon-bungalow-with-extended-veranda,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Lagoon Bungalow with Extended Veranda at Baymanhi Exuma | Wild Earth Stays
-/stay/baymanhi-exuma-two-bedroom-lagoon-bungalow,/destinations/caribbean-mexico,room of baymanhi-exuma -> not on the new site yet; region page (bahamas country page not built yet),Two Bedroom Lagoon Bungalow at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-beach-and-lagoon-bungalow-connector,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Beach and Lagoon Bungalow Connector at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-beach-bungalow,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Beach Bungalow at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-beach-bungalow-with-extended-veranda,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Beach Bungalow with Extended Veranda at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-lagoon-bungalow,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Lagoon Bungalow at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-lagoon-bungalow-with-extended-veranda,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Lagoon Bungalow with Extended Veranda at Baymanhi Exuma | Wild Earth Stays
+/stay/baymanhi-exuma-two-bedroom-lagoon-bungalow,/stays/baymanhi-exuma,room of baymanhi-exuma -> stay page,Two Bedroom Lagoon Bungalow at Baymanhi Exuma | Wild Earth Stays
 /stay/be-tulum-air-suite-with-plunge-pool,/stays/be-tulum,room of be-tulum -> stay page,Air Suite with Plunge Pool at Be Tulum | Wild Earth Stays
 /stay/be-tulum-alcove-suite-with-plunge-pool,/stays/be-tulum,room of be-tulum -> stay page,Alcove Suite with Plunge Pool at Be Tulum | Wild Earth Stays
 /stay/be-tulum-oceanfront-with-plunge-pool,/stays/be-tulum,room of be-tulum -> stay page,Oceanfront with Plunge Pool at Be Tulum | Wild Earth Stays
@@ -1024,10 +1024,10 @@ old path,new path,why,old title
 /stay/celestia-master-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Master Suite at Celestia Yacht | Wild Earth Stays
 /stay/celestia-owners-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
 /stay/celestia-private-charter,/stays/celestia-yacht,room of celestia-yacht -> stay page,Celestia Private Charter at Celestia Yacht | Wild Earth Stays
-/stay/chable-yucatan-casita,/destinations/caribbean-mexico,room of chable-yucatan -> not on the new site yet; region page (mexico country page not built yet),Casita at Chable Yucatan | Wild Earth Stays
-/stay/chable-yucatan-family-villa,/destinations/caribbean-mexico,room of chable-yucatan -> not on the new site yet; region page (mexico country page not built yet),Family Villa at Chable Yucatan | Wild Earth Stays
-/stay/chable-yucatan-presidential-villa,/destinations/caribbean-mexico,room of chable-yucatan -> not on the new site yet; region page (mexico country page not built yet),Presidential Villa at Chable Yucatan | Wild Earth Stays
-/stay/chable-yucatan-royal-villa,/destinations/caribbean-mexico,room of chable-yucatan -> not on the new site yet; region page (mexico country page not built yet),Royal Villa at Chable Yucatan | Wild Earth Stays
+/stay/chable-yucatan-casita,/stays/chable-yucatan,room of chable-yucatan -> stay page,Casita at Chable Yucatan | Wild Earth Stays
+/stay/chable-yucatan-family-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Family Villa at Chable Yucatan | Wild Earth Stays
+/stay/chable-yucatan-presidential-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Presidential Villa at Chable Yucatan | Wild Earth Stays
+/stay/chable-yucatan-royal-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Royal Villa at Chable Yucatan | Wild Earth Stays
 /stay/cheetah-plains-karula-villa,/stays/cheetah-plains,room of cheetah-plains -> stay page,Karula Villa at Cheetah Plains | Wild Earth Stays
 /stay/cheetah-plains-mapogo-villa,/stays/cheetah-plains,room of cheetah-plains -> stay page,Mapogo Villa at Cheetah Plains | Wild Earth Stays
 /stay/cheetah-plains-mvula-villa,/stays/cheetah-plains,room of cheetah-plains -> stay page,Mvula Villa at Cheetah Plains | Wild Earth Stays
@@ -1108,10 +1108,10 @@ old path,new path,why,old title
 /stay/corks-vienna-woods-mini-suites,/stays/corks-vienna-woods,room of corks-vienna-woods -> stay page,Mini Suites at Cork’s Vienna Woods | Wild Earth Stays
 /stay/corks-vienna-woods-superior-guestrooms,/stays/corks-vienna-woods,room of corks-vienna-woods -> stay page,Superior Guestrooms at Cork’s Vienna Woods | Wild Earth Stays
 /stay/corks-vienna-woods-superior-plus-guestrooms,/stays/corks-vienna-woods,room of corks-vienna-woods -> stay page,Superior Plus Guestrooms at Cork’s Vienna Woods | Wild Earth Stays
-/stay/cottars-1920-camp-bush-villa,/destinations/africa,room of cottars-1920-camp -> not on the new site yet; region page (kenya country page not built yet),Bush Villa at Cottars 1920 Camp | Wild Earth Stays
-/stay/cottars-1920-camp-deluxe-honeymoon-suites,/destinations/africa,room of cottars-1920-camp -> not on the new site yet; region page (kenya country page not built yet),Deluxe Honeymoon Tent at Cottars 1920 Camp | Wild Earth Stays
-/stay/cottars-1920-camp-double-canvas-tent,/destinations/africa,room of cottars-1920-camp -> not on the new site yet; region page (kenya country page not built yet),Double Canvas Tent at Cottars 1920 Camp | Wild Earth Stays
-/stay/cottars-1920-camp-family-suite,/destinations/africa,room of cottars-1920-camp -> not on the new site yet; region page (kenya country page not built yet),Family Suite at Cottars 1920 Camp | Wild Earth Stays
+/stay/cottars-1920-camp-bush-villa,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Bush Villa at Cottars 1920 Camp | Wild Earth Stays
+/stay/cottars-1920-camp-deluxe-honeymoon-suites,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Deluxe Honeymoon Tent at Cottars 1920 Camp | Wild Earth Stays
+/stay/cottars-1920-camp-double-canvas-tent,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Double Canvas Tent at Cottars 1920 Camp | Wild Earth Stays
+/stay/cottars-1920-camp-family-suite,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Family Suite at Cottars 1920 Camp | Wild Earth Stays
 /stay/dulini-daunara-lodge-exclusive-use-camp,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Exclusive Use Camp at Daunara Safari Camp | Wild Earth Stays
 /stay/dulini-daunara-lodge-family-tented-suite,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Family Tented Suite at Daunara Safari Camp | Wild Earth Stays
 /stay/dulini-daunara-lodge-luxury-tented-suites,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Luxury Tented Suites at Daunara Safari Camp | Wild Earth Stays

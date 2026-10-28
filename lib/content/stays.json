@@ -2739,6 +2739,86 @@
    "engine": null
   },
   {
+   "slug": "baymanhi-exuma",
+   "name": "Baymahni Island Escape",
+   "ledgerId": "STY-2026-000035",
+   "country": "Bahamas",
+   "countrySlug": "bahamas",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Disappear into the endless blue of Exuma.",
+   "quote": "Go somewhere new, leave the everyday at the dock, and let the sea return you to what truly matters.",
+   "hero": "/img/b44/809e1fc74_1986b9dfd_6a6925dabb03e0ee0c5dc3ff_Baymanhi_20Hero.avif",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9ddfc2ba9_9369f9dd5_6a692781f70d123b843d7471_Baymanhi_20Overlooking_20Room.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c4226db50_eec8d017e_6a69278005eefe90800afce4_Baymanhi_20Bedroom.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/caf7802bd_21e439190_6a6927806a5fa5aa9373ae66_Baymanhi_20T_26B.jpg"
+   ],
+   "bestMonths": "November - May",
+   "bestMonthsNote": "The dry season offers warm sunshine, lower humidity, calm seas, and excellent water clarity, making it the ideal period for boating, snorkeling, paddleboarding, island hopping, and relaxing on the beaches of Stocking Island. Shoulder months also provide pleasant conditions with fewer visitors while maintaining excellent weather for outdoor adventures.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": 23.5157,
+    "lng": -75.7703
+   },
+   "airport": "Exuma International Airport (GGT)",
+   "airportDirections": "Arrival Airport: Exuma International Airport (GGT)\nApproximately 15 minutes by taxi to George Town Government Dock\nComplimentary Baymahni boat transfer operates regularly between the dock and the resort\nTotal journey typically takes around 30–40 minutes, depending on boat departure timing.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Beach Bungalow with Extended Veranda",
+     "Beach Bungalow",
+     "Lagoon Bungalow with Extended Veranda",
+     "Lagoon Bungalow",
+     "Lagoon Bungalow East"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Exuma Cays Land & Sea Park",
+     "Sea Turtle Encounters",
+     "Private Sandbar Adventures",
+     "Snorkeling & Reef Exploration",
+     "Kayaking & Paddleboarding",
+     "Swimming Pig Excursions",
+     "Private Island Picnics",
+     "Nature Trails & Coastal Hikes",
+     "Sunrise, Sunset & Stargazing",
+     "Beach Club Days"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private island setting",
+     "Beachfront and lagoon bungalows",
+     "Oceanfront infinity pool",
+     "Signature restaurant and beach bar",
+     "Private dock for vessels up to 65 feet",
+     "Complimentary kayaks, paddleboards, and water bikes",
+     "Yoga platform and meditation sessions",
+     "Nature trails",
+     "Locally crafted furnishings",
+     "Group, wedding, and retreat hosting"
+    ]
+   },
+   "onlyHere": [
+    "Baymahni offers a private island escape where beachfront bungalows, turquoise waters, and unforgettable ocean adventures create an authentic Bahamian experience. Designed as a peaceful sanctuary, every stay encourages guests to disconnect from the everyday and reconnect with nature, relaxation, and the beauty of Exuma."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "be-tulum",
    "name": "Be \n Tulum",
    "ledgerId": "STY-2026-000036",
@@ -3949,6 +4029,85 @@
    "engine": null
   },
   {
+   "slug": "chable-yucatan",
+   "name": "Chablé\nYucatán",
+   "ledgerId": "STY-2026-000057",
+   "country": "Mexico",
+   "countrySlug": "mexico",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "“A Hacienda in the Wild. Your Sanctuary in the Mayan Forest”",
+   "quote": "Lose track of time, awaken your senses, and let the forest become your guide.",
+   "hero": "/img/b44/c199ad3d6_5b561d6e3_68e15309a1e9b286885391e7_chable_yucatan_overview.avif",
+   "gallery": [
+    "/img/b44/71bc273b0_32aa4d5b3_68e1567254d6ce41f9c6e313_chable_yucatan_pool.avif",
+    "/img/b44/f2427e909_65b5889b8_68e15672dcdc5d1597006528_chable_yucatan_terrace_20_1_.avif",
+    "/img/b44/3e358b0f5_a11ce2bab_68e156724b00f3655a5f4a99_chable_yucatan_bar.avif",
+    "/img/b44/68948b658_c9a012cde_68e15672f0050bd55b943f40_chable_yucatan_pool2.avif",
+    "/img/b44/f8ff06a72_b59b3a5c4_68e15672758a8e7928e23432_chable_yucatan_restaurant.avif",
+    "/img/b44/09d55c7f3_6be13aba7_68e156723bc7ffd8ffcce482_chable_yucatan_presidential_villa_exterior_20_1_.avif",
+    "/img/b44/4e6214c0a_0e92e0999_68e15428bfead8fc0869c2d4_chable_yucatan_whystayhereimage.avif",
+    "/img/b44/4bc078ac4_fad9d406e_68e1540da0248cabd8c27285_chable_yucatan_adventures_20_1_.avif",
+    "/img/b44/2acfecc21_1850c29c2_68e15309a1e9b286885391e7_chable_yucatan_overview.avif",
+    "/img/b44/92b085986_7a16bd662_68e152cd1f12c7f04a7b11ec_chable_yucatan_facts.avif"
+   ],
+   "bestMonths": "November-April",
+   "bestMonthsNote": "These months fall in Yucatán’s dry season, with lower humidity, minimal rain, more comfortable temperatures, and excellent conditions for outdoor, wellness, and forest activities.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Mérida International Airport (MID)",
+   "airportDirections": "From Mérida International Airport (MID), Chablé Yucatán is about a 25–30 minute drive (~ 35 km) via rural roads.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Casitas with private plunge pools",
+     "Villas (1–3 bedrooms) with full amenities",
+     "The Royal Villa – the ultimate hideaway"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Mayan heritage and ruin tours",
+     "Cenote exploration and swimming",
+     "Wellness, yoga & spa immersions",
+     "On‑site farm & bee conservation experiences",
+     "Cycling and nature walks",
+     "Gastronomic & culinary journeys"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private plunge pools in each unit",
+     "Spa built around a natural cenote",
+     "Seamless integration of architecture and jungle",
+     "Bikes and golf cart service for guests",
+     "Holistic wellness therapies",
+     "Farm‑to‑table cuisine and Mayan ritual elements"
+    ]
+   },
+   "onlyHere": [
+    "At Chablé Yucatán you inhabit a rare balance: your own private retreat within a living ecosystem. Whether you are a wellness seeker, a nature lover, or a couple longing for romance deep in the forest, this is where you dissolve distractions. Families and solo travelers alike will find restorative silence and tailored adventures, from Mayan ceremonies to bee‑keeping and cenote soaks."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Chablé Yucatán offers a profound pause in the Mayan forest, where ancient energies, modern luxury, and ecological care converge. It is ideal for seekers of wellness, couples longing for deep reconnection, solo travelers wanting introspective time, and conscious minds craving a place that honours land and spirit."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "chamilandu-lodge",
    "name": "Chamilandu Lodge",
    "ledgerId": "STY-2026-000058",
@@ -4877,6 +5036,89 @@
     "Vienna Woods gives travelers the rare feeling of being surrounded by nature while remaining only minutes from Cork City. The story begins in 1756, when Davis Ducart built the house as a summer lodge for Lord Barrymore. Today, that history lives alongside the warmth of a peaceful country retreat."
    ],
    "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "cottars-1920-camp",
+   "name": "Cottar’s 1920’s \n Safari Camp",
+   "ledgerId": "STY-2026-000066",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Vintage luxury safari where legacy, wildlife, and community thrive together.",
+   "quote": "Embrace the timeless romance of safari and leave transformed. Where every stay sustains the wild.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a7d23947_099e385f6_685eebc62619755c7ab080d0_CottarsBushVilla_20-_20Deck.jpg",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4bf746ca3_b966d8089_685b1d9656ccb8f5a32d36d9_Kin_20Kenya_20Safari_Valorie_20Darling_20Photography-45.",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9412d4f6f_4a290b472_6854b7cb47929cf97aa46ae0_Cottars_20Camp_201920_20-_20partimetravelers_20_76_.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/af0fcbf92_0810aadd7_68569bd0ca03ac58c82d1bc0_Kin_20Travel_20Kenya_Valorie_20Darling_20Photography_ID.",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8c00f11f2_24700321e_6854b7230a82ad027e856a2f_Molo_20Honeymoon_20Tent_20Exterior_20-117.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44171d688_3e65d27ec_6854bf8dd58a5e5d8153cd37_eCottarsSafaris-CWR-June2023-021.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4bb04721e_c232f62ba_68569bd0ae2bf6381bf82a90_KenyaKinTravel-JodeeDebesPhotography-416.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/22c293bc7_d7d0f2eaa_68569bd0aae4ad43b0da786b_Cottars_20Camp_201920_20-_20partimetravelers_20_73_.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/74a469328_5653206cb_6854b7d51c5eddfbc219886f_Cottar_E2_80_99s-Safaris_1920s_exterior_Tana_1.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f08150ec_fd2f88afb_6854b7d50b48ee38325b4114_Cottar_E2_80_99s-Safaris_1920s_interior_Mara_1.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a2540b173_da2e8c998_6854c941d94b203d8f0f1c70_Athi_20New_20Double_20Tent_20-092.jpg"
+   ],
+   "bestMonths": "July–October (Great Migration), January–March (short rains, lush landscapes)",
+   "bestMonthsNote": "July–October ensures iconic wildebeest river crossings; January–March brings birthing season and vibrant greenery. Both ideal for wildlife viewing and photography.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": 1.565432,
+    "lng": 35.023456
+   },
+   "airport": "Cottar’s Airstrip (CFE), Keekorok Airstrip (KEU), Nairobi Wilson Airport (WIL)",
+   "airportDirections": "Fly into Wilson Airport (WIL) then domestic to Cottar’s Airstrip: ~1 hr flight + 10 min ground. Alternatively, fly into Keekorok AIR (KEU) and drive ~1.5 hrs by road. Private air travel is smoothest for access.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Honeymoon Tent",
+     "Double Canvas Tents",
+     "Family Suites (2 en‑suite bedrooms)",
+     "Exclusive Bush Villa"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Morning & evening game drives",
+     "Guided bush walks",
+     "Balloon safaris over the Mara",
+     "Hot-air balloon rides",
+     "Maasai village cultural visits",
+     "Spa & wellness treatments"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private pool & spa facility",
+     "Two elegant mess tents for dining & relaxation",
+     "Vintage décor from 1920s colonial safari era",
+     "Professional gold‑standard KPSGA guides",
+     "Located on 7,608-acre private conservancy",
+     "Wi‑Fi available"
+    ]
+   },
+   "onlyHere": [
+    "For families, honeymooners, and solo explorers seeking vintage elegance and intimate wildlife encounters, Cottar’s offers private villa-stays, guiding that adapts to your group’s needs, and immersive cultural connections. All within your own stretch of wilderness."
+   ],
+   "why": [
+    {
+     "title": "“A Legacy of Safari, Conserved for You”",
+     "body": "With over 100 years of family safari heritage, Cottar’s blends historic canvas-chic accommodations with modern guiding excellence and conservation-driven purpose. Best for families, couples, explorers, and eco-conscious travelers craving narrative-rich, community-anchored safari experiences."
+    }
+   ],
    "facts": {},
    "faqs": [],
    "reviewed": false,
@@ -8673,6 +8915,150 @@
    },
    "onlyHere": [],
    "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "jacks-camp",
+   "name": "Jack's Camp",
+   "ledgerId": "STY-2026-000122",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Desert legend, salt pan dreams, safari like nowhere else",
+   "quote": "Wake up to endless white pans, greet meerkats at sunrise, and travel by quad across the last great desert. Jack’s Camp is Africa’s wildest vintage adventure",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7551ed1fc_6a9ebb96b_692da2e1dbab25c2f15a3dd2_Gallery-1100x733_0013_02-Jacks-Camp.webp",
+   "gallery": [],
+   "bestMonths": "April to October",
+   "bestMonthsNote": "April to October for dry season, clear skies, and best quad biking. November to March for green season, zebra/flamingo migrations, and wild flowers.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -20.4696,
+    "lng": 25.2683
+   },
+   "airport": "Maun International Airport (MUB), Jack’s Camp Airstrip",
+   "airportDirections": "Fly to Maun, transfer by light aircraft to Jack’s Camp Airstrip (40 minutes), short game drive to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Nine expansive Bedouin-style tents with private plunge pools, en suite bathrooms, vintage décor, Persian rugs, and panoramic salt pan views. Main camp with tea tent, natural history museum, pool, and palm grove lounge."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives across the pans",
+     "Meerkat encounters",
+     "Quad biking (seasonal)",
+     "Guided bushman walks",
+     "Horseback safaris (seasonal)",
+     "Stargazing",
+     "Birdwatching",
+     "Archaeology and fossil tours",
+     "Flamingo and zebra migrations (seasonal)"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Iconic 1940s-style tented camp",
+     "Desert location on the edge of Makgadikgadi",
+     "Legendary natural history collection",
+     "Private plunge pools",
+     "Expert guides",
+     "Solar power and sustainable design"
+    ]
+   },
+   "onlyHere": [
+    "Jack’s Camp is perfect for couples, families, solo travelers, and adventurers who crave surreal landscapes, rare wildlife, and timeless style. Come for the meerkats, stay for the magic of the salt pans."
+   ],
+   "why": [
+    {
+     "title": "Salt Pan Safari, Vintage Soul",
+     "body": "Best for adventurous couples, families, photographers, and anyone drawn to desert beauty, surreal wildlife, and the romance of classic safari."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "jacks-private-camp",
+   "name": "Jack's Private Camp",
+   "ledgerId": "STY-2026-406420",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Private pans, pure adventure, your desert on your terms",
+   "quote": "Imagine sunrise with meerkats, quad bikes blazing across the salt pans, and the whole desert to yourself. Jack’s Private Camp is Botswana’s most exclusive adventure",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f344e4f90_904a837d6_692e9e1632f1205a28b5b26a_Gallery-1100x733_0010_BOTS_Jacks_private_02.webp",
+   "gallery": [],
+   "bestMonths": "April to October",
+   "bestMonthsNote": "April to October for dry season, prime quad biking, and cool desert nights. November to March for green season, zebra and flamingo migrations, and wildflowers.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -20.4696,
+    "lng": 25.2683
+   },
+   "airport": "Maun International Airport (MUB), Jack’s Camp Airstrip",
+   "airportDirections": "Fly to Maun, connect by light aircraft to Jack’s Camp Airstrip (40 minutes), exclusive transfer to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Three spacious vintage-style tents with en suite bathrooms, private verandas, Persian rugs, and panoramic salt pan views. Exclusive-use camp with private lounge, dining area, and campfire circle."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private game drives",
+     "Meerkat encounters",
+     "Quad biking (seasonal)",
+     "Bushman walks with San guides",
+     "Horseback safaris (seasonal)",
+     "Night drives",
+     "Stargazing",
+     "Birdwatching",
+     "Fossil and archaeology tours"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Fully exclusive use",
+     "All activities private and tailored to your group",
+     "Legendary Jack’s Camp vintage decor",
+     "Salt pan and palm grove setting",
+     "Private staff, guides, and chef",
+     "Solar powered and sustainable"
+    ]
+   },
+   "onlyHere": [
+    "Jack’s Private Camp is perfect for families, groups, or couples seeking total privacy, rare wildlife, and classic desert safari style, your own patch of the Makgadikgadi all to yourself."
+   ],
+   "why": [
+    {
+     "title": "Your Own Salt Pan Kingdom",
+     "body": "Best for families, close friends, couples, or adventurers seeking exclusive use, unique wildlife, and unforgettable desert journeys."
+    }
+   ],
    "facts": {},
    "faqs": [],
    "reviewed": false,
@@ -16648,6 +17034,88 @@
     "Radhoo Tulum offers an intimate boutique experience where tropical gardens, elegant architecture, and a calm atmosphere combine to create a restorative escape. Every stay encourages guests to embrace mindful travel while enjoying contemporary comfort and the relaxed rhythm that has made Tulum one of the world's most desirable destinations."
    ],
    "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "rayvadee-resort",
+   "name": "Rayavadee Resort",
+   "ledgerId": "STY-2026-000220",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Where Jungle Meets the Sea, Krabi’s Crown Jewel",
+   "quote": "Wake to the call of tropical birds, step from your villa into emerald gardens, and wander white sand beaches at the heart of Krabi’s natural beauty.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0ad072e3_edaa3a399_69e282fc17c48d466e5076ab_a64353bb-1.webp",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1e5eab3d0_8497713cc_69e88b055da6a2835410acdd_401thumb.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5408b93c0_71810bfdd_69e88b0b155ae145219412d9_fav-room2.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d54b81f4c_f79515de0_69e88b0b593cbb3f73fa4d42_fav-room3.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/658ed8211_6c251eb30_69e88b0bcef977a0d3be70cd_raitalayvilla.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d59440b37_471c6a5c6_69e88b0b7c19b7dcdc48bbd0_room-deluxe.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/094e94b85_7554241d7_69e88b0bd56a145f847fcc37_room-family-105.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c24fd01ee_8e60cfb2b_69e88b0b79e8e729acfde674_room-family-pavil.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6eb2a959f_52a20b718_69e88b0bd96dda502c859742_room-phranang.jpg"
+   ],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "Dry, sunny weather, ideal for beach days, kayaking, and exploring the islands and cliffs of Krabi.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": 8.0061,
+    "lng": 98.8377
+   },
+   "airport": "Krabi International Airport (KBV)",
+   "airportDirections": "45-minute drive plus a short boat transfer from Krabi International Airport. Private transfers can be arranged.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Pavilion",
+     "Terrace Pavilion",
+     "Pool Pavilion",
+     "Family Pavilion",
+     "Family Pavilion with Pool",
+     "Rayavadee Villa",
+     "Phranang Villa"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Island Hopping",
+     "Sea Kayaking",
+     "Rock Climbing",
+     "Thai Cooking Class",
+     "Spa Journeys",
+     "Beach Picnics",
+     "Private Dinners",
+     "Snorkeling",
+     "Guided Nature Walks"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Elegant pavilions and villas surrounded by jungle gardens, direct access to three beaches, world-class spa, infinity pool, multiple restaurants, water sports center, and excursions to islands and cliffs."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Rayavadee Resort is perfect for honeymooners, families, couples, solo travelers, and nature lovers seeking barefoot luxury, adventure, and privacy in an iconic Krabi setting. Stay longer for sunset cruises, local flavors, and the magic of Railay Beach."
+   ],
+   "why": [
+    {
+     "title": "Discover Krabi’s Hidden Gem",
+     "body": "Enjoy the best of Thailand’s coast, hidden beaches, limestone cliffs, authentic cuisine, private villas, and local adventures. Rayavadee is ideal for relaxation, romance, and once-in-a-lifetime family getaways."
+    }
+   ],
    "facts": {},
    "faqs": [],
    "reviewed": false,

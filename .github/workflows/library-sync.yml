@@ -18,6 +18,11 @@ on:
   push:
     branches: [main]
     paths: [scripts/data/stay-overrides.json]
+  # Nightly auto-publish (James, 29 Oct 2026): picks up whatever was approved in the
+  # library that day. Only approved content reaches the site; when the library
+  # already matches the site, nothing changes.
+  schedule:
+    - cron: "17 6 * * *"
 
 permissions:
   contents: write
@@ -32,8 +37,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      REASON: ${{ github.event.client_payload.reason || inputs.reason || (github.event_name == 'push' && 'Stay merge file changed in GitHub') || 'publish' }}
-      BY: ${{ github.event.client_payload.by || github.actor }}
+      REASON: ${{ github.event.client_payload.reason || inputs.reason || (github.event_name == 'push' && 'Stay merge file changed in GitHub') || (github.event_name == 'schedule' && 'Nightly auto-publish') || 'publish' }}
+      BY: ${{ github.event.client_payload.by || (github.event_name == 'schedule' && 'nightly schedule') || github.actor }}
       EVENT_ID: ${{ github.event.client_payload.event_id || '' }}
     steps:
       - uses: actions/checkout@v5

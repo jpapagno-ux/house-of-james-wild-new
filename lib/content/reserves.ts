@@ -3,6 +3,7 @@
 // Room records (camps = is_parent_stay, suites assigned by name) plus the
 // reserve's Stay record. Founder marks follow lib/ledger/status.ts.
 import data from "./reserves.json";
+import { STAYS, pageReady, type StayData } from "./stays";
 import type { HouseStatus } from "@/lib/ledger/status";
 
 export type ReserveRoom = { name: string; capacity: number | null; quantity: number | null; beds: string | null; from: number | null; currency: string; basis: string | null; photos: string[] };
@@ -14,7 +15,25 @@ export type ReserveStay = { ledgerId: string | null; tagline: string | null; quo
 // shared: a reserve whose lodges are run independently (Madikwe), not one owner's camps.
 export type Reserve = { slug: string; name: string; rsv: string; area: string; province: string; shared?: boolean; stay: ReserveStay; camps: ReserveCamp[] };
 
-export const RESERVES = data.reserves as unknown as Reserve[];
+// Shared reserves (lodges run independently, each with its own Stay page) are built
+// from the Stay export on every publish, so the library stays the source:
+//   stay: the reserve's own Stay record; camps: the Stay records of its lodges.
+type SharedDef = { slug: string; name: string; rsv: string; area: string; province: string; stay: string; camps: string[] };
+const SHARED: SharedDef[] = [
+  { slug: "madikwe", name: "Madikwe Game Reserve", rsv: "RSV-2026-000008", area: "North West Province", province: "North West Province", stay: "madikwe", camps: ["jacis-private-lodge", "morukuru-farm-house"] },
+];
+const fromStay = (s: StayData): ReserveStay => ({ ledgerId: s.ledgerId, tagline: s.tagline, quote: s.quote, hero: s.hero, gallery: s.gallery, bestMonths: s.bestMonths, bestMonthsNote: s.bestMonthsNote, airport: s.airport, airportDirections: s.airportDirections, coords: s.coords, why: s.why, experiences: s.experiences, features: s.features, onlyHere: s.onlyHere, country: s.country, countrySlug: s.countrySlug, regionSlug: s.regionSlug, status: s.status, statusDate: s.statusDate });
+const campFromStay = (s: StayData): ReserveCamp => ({ slug: s.slug, name: s.name, key: s.name, kind: /house|villa|residence/i.test(s.name) ? "residence" : "camp", intro: s.tagline ?? "", description: s.quote ?? s.why[0]?.body ?? "", units: [...s.rooms.items], features: [...s.features.items], experiences: [...s.experiences.items], hero: s.hero, gallery: s.gallery, rooms: [], fromRate: null, stayHref: pageReady(s) ? `/stays/${s.slug}` : null });
+const shared: Reserve[] = SHARED.flatMap((d) => {
+  const st = STAYS.find((s) => s.slug === d.stay);
+  if (!st || !pageReady(st)) return [];
+  const camps = d.camps.map((c) => STAYS.find((s) => s.slug === c)).filter((s): s is StayData => !!s).map(campFromStay);
+  // A reserve page needs at least two lodges on the site to be worth its own page.
+  if (camps.filter((c) => c.stayHref).length < 2) return [];
+  return [{ slug: d.slug, name: d.name, rsv: d.rsv, area: d.area, province: d.province, shared: true, stay: fromStay(st), camps }];
+});
+
+export const RESERVES = [...(data.reserves as unknown as Reserve[]), ...shared];
 export const reserveBySlug = (slug: string) => RESERVES.find((r) => r.slug === slug);
 
 // A camp gets its own page when it has a photograph to lead with.

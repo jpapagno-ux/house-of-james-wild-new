@@ -65,6 +65,9 @@ def country_from_title(t):
 SPECIAL = {
     "aliikai-voyage": ("/voyages/ships/aliikai", "Aliikai vessel profile"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
+    "tswalu-motse": ("/safaris/tswalu-reserve/motse", "Tswalu camp"),
+    "tswalu-loapi-tented-suites": ("/safaris/tswalu-reserve/loapi", "Tswalu camp"),
+    "tswalu-tarkuni-homestead-villa": ("/safaris/tswalu-reserve/tarkuni", "Tswalu residence"),
     "gwe-gwe-beach": ("/stays/gwe-gwe-beach-lodge", "duplicate record retired 29 Oct 2026"),
 }
 

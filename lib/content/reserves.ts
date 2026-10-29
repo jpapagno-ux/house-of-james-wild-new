@@ -33,7 +33,12 @@ const shared: Reserve[] = SHARED.flatMap((d) => {
   return [{ slug: d.slug, name: d.name, rsv: d.rsv, area: d.area, province: d.province, shared: true, stay: fromStay(st), camps }];
 });
 
-export const RESERVES = [...(data.reserves as unknown as Reserve[]), ...shared];
+// Every reserve reads its own copy (best months, airport, why, photos) from the Stay
+// export at build time, so a library edit reaches the reserve page on the next publish.
+const fresh = (r: Reserve): Reserve => { const s = STAYS.find((x) => x.slug === r.slug); return s ? { ...r, stay: fromStay(s) } : r; };
+// House order on /safaris: the founder's own reserves first.
+const FIRST = ["tswalu-reserve", "lion-sands"];
+export const RESERVES = [...(data.reserves as unknown as Reserve[]).map(fresh), ...shared].sort((a, b) => (FIRST.indexOf(a.slug) + 1 || 99) - (FIRST.indexOf(b.slug) + 1 || 99));
 export const reserveBySlug = (slug: string) => RESERVES.find((r) => r.slug === slug);
 
 // A camp gets its own page when it has a photograph to lead with.
@@ -47,6 +52,8 @@ export const campBySlug = (r: Reserve, slug: string) => r.camps.find((c) => c.sl
 // until the field exists on the camp record.
 //   Ivory Lodge: stayed and vetted May 2026, "a five-star favourite" (James, 25 Oct 2026)
 export const CAMP_STATUS: Record<string, { status: HouseStatus; date: string; line: string }> = {
+  //   The Motse: "where it all began for me at Tswalu", 2012 (James's own copy in the library)
+  "tswalu-reserve/motse": { status: "founder_visited", date: "2012", line: "James first stayed at The Motse in 2012; it is where Tswalu began for him" },
   "lion-sands/ivory-lodge": { status: "founder_visited", date: "2026-05", line: "James stayed at Ivory Lodge in May 2026 and calls it a five-star favourite" },
 };
 export const campStatus = (r: Reserve, c: ReserveCamp) => CAMP_STATUS[`${r.slug}/${c.slug}`];

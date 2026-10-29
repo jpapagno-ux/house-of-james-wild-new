@@ -45,6 +45,7 @@ import { collectionForStay, offerForStay } from "@/lib/content/collections/cayug
 import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
+import { RESERVES } from "@/lib/content/reserves";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, lodging } from "@/lib/schema";
 
@@ -153,6 +154,18 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
             </section>
           )}
+          {(() => {
+            // A reserve with its own page (camps, residences, compare table) gets pointed to from here.
+            const rv = RESERVES.find((r) => r.slug === s.slug || r.camps.some((c) => c.stayHref === `/stays/${s.slug}`));
+            if (!rv) return null;
+            const own = rv.slug === s.slug;
+            return (
+              <section aria-label="The reserve" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div><p className="ledger-eyebrow ledger-crimson">{own ? "The camps" : "On the reserve"}</p><p className="ledger-display text-[1.5rem] mt-1">{own ? `${rv.name} has ${rv.camps.length} ways to stay` : `${s.name} is one of ${rv.camps.length} lodges on ${rv.name}`}</p><p className="mt-1 text-[15px] ledger-muted">{rv.camps.map((c) => c.name).join(", ")}. Compare them side by side, with who each one suits.</p></div>
+                <Link href={`/safaris/${rv.slug}`} className="ledger-btn self-start md:self-center">{own ? "See the camps" : `See ${rv.name}`}</Link>
+              </section>
+            );
+          })()}
           {routesThrough(s.slug).length > 0 && (
             <section aria-label="On these routes" className="mt-16">
               <p className="ledger-eyebrow ledger-crimson">On these routes</p>

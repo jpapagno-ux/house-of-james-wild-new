@@ -14,7 +14,7 @@ import { graph, ids } from "@/lib/schema";
 // until their regions and routes are filed. Kept noindex until approved.
 
 export const metadata = buildMetadata({
-  title: "The James Wild Compass: Find Where to Travel, Then Talk to a Person",
+  title: "The James Wild Compass: Find Where to Travel Next",
   description: "A free trip finder from James Wild & Co. Answer a few questions and the Compass reads James's vetted Ledger, drafts a route and hands you to a person.",
   path: "/compass",
   noindex: false /* approved by James, 28 Oct 2026 */,

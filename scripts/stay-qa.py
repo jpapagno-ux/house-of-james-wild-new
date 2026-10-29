@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parent.parent
 S = json.load(open(sys.argv[1]))["entities"]
 D = {d["id"]: d for d in json.load(open(sys.argv[2]))["entities"]}
 OV = json.load(open(ROOT / "scripts/data/stay-qa-overrides.json"))
+# The stay merge file can supply a hero or gallery from GitHub; the check counts them.
+MERGE = json.load(open(ROOT / "scripts/data/stay-overrides.json")).get("stays", {})
 REL_P = ROOT / "scripts/data/stay-release.json"
 rel = json.load(open(REL_P)); released = {r["slug"] for r in rel["released"]}
 
@@ -38,7 +40,9 @@ for s in S:
     if seen[slug] > 1: flags.append("name_check")
     d = D.get(s.get("destination_id"))
     if not d or not d.get("region_slug"): flags.append("country")
-    hero = s.get("hero_image_url") or ""
+    mg = MERGE.get(slug) if isinstance(MERGE.get(slug), dict) else {}
+    hero = mg.get("hero") or s.get("hero_image_url") or ""
+    gallery = ((mg.get("gallery") or []) if "gallery" in mg else (s.get("gallery_urls") or [])) + list(mg.get("galleryAdd") or [])
     if not hero: flags.append("hero_photo")
     dn = toks(re.sub(r"<br/?>", " ", s.get("display_name") or ""))
     if dn and nt and not (dn & nt): flags.append("name_check")
@@ -55,7 +59,7 @@ for s in S:
     if not re.match(r"\s*-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?", s.get("coordinates") or ""): flags = flags + ["coordinates"]
     # Photos linked from a hotel's own website break when the hotel changes its site; they are
     # dropped from galleries, and listed here so a copy gets uploaded to the library.
-    if not owned(hero) or any(not owned(g) for g in (s.get("gallery_urls") or []) if g): flags = flags + ["own_photos"]
+    if not owned(hero) or any(not owned(g) for g in gallery if g): flags = flags + ["own_photos"]
     rows.append({"stay_id": s["id"], "slug": slug, "name": re.sub(r"\s+", " ", strip(s.get("display_name") or s["name"])),
                  "country": (d or {}).get("name") or "", "missing": flags, "released": slug in released})
 json.dump(rel, open(REL_P, "w"), indent=1)

@@ -14,6 +14,10 @@ on:
         default: manual run
   repository_dispatch:
     types: [library-publish]
+  # Saving the stay merge file on main applies it (see scripts/data/stay-overrides.json).
+  push:
+    branches: [main]
+    paths: [scripts/data/stay-overrides.json]
 
 permissions:
   contents: write
@@ -28,12 +32,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      REASON: ${{ github.event.client_payload.reason || inputs.reason || 'publish' }}
+      REASON: ${{ github.event.client_payload.reason || inputs.reason || (github.event_name == 'push' && 'Stay merge file changed in GitHub') || 'publish' }}
       BY: ${{ github.event.client_payload.by || github.actor }}
       EVENT_ID: ${{ github.event.client_payload.event_id || '' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm

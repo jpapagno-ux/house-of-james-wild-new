@@ -1,0 +1,13 @@
+{
+ "_readme": [
+  "Stay merge file: changes made in GitHub that the library export applies on top of the library on every publish.",
+  "Use it for exceptions only. The library (Stay Studio) stays the main source; fix the record there when you can.",
+  "Each entry: the stay's slug, the fields to set, and a note saying who and why. Allowed fields:",
+  "  name, tagline, hero, gallery (replaces the gallery), galleryAdd (adds to it), bestMonths, bestMonthsNote,",
+  "  coords ('lat, lng'), airport, airportDirections, hide (true keeps the page off the site).",
+  "Photos must be on res.cloudinary.com or media.base44.com. Founder stamps, facts and FAQs are never set here.",
+  "Saving this file on main runs the library sync, so the change goes live in about 5 minutes.",
+  "Example: \"blue-reef\": {\"hero\": \"https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/blue-reef/hero.jpg\", \"note\": \"James, 2026-10-29: media-kit hero\"}"
+ ],
+ "stays": {}
+}

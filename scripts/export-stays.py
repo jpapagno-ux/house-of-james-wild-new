@@ -122,6 +122,35 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "engine": ENGINE.get(slug),
     })
 for x in out: x.update(FIX.get(x["slug"], {}))
+
+# Stay merge file (scripts/data/stay-overrides.json): GitHub-side changes applied on top of the library.
+# A bad entry stops the publish (nothing goes live) with a message naming the stay and the field.
+OV = json.load(open(pathlib.Path(__file__).resolve().parent / "data" / "stay-overrides.json")).get("stays", {})
+ALLOWED = {"name", "tagline", "hero", "gallery", "galleryAdd", "bestMonths", "bestMonthsNote", "coords", "airport", "airportDirections", "hide", "note"}
+PHOTO_HOSTS = ("res.cloudinary.com", "media.base44.com")
+def photo_ok(u):
+    from urllib.parse import urlparse
+    return isinstance(u, str) and urlparse(u).scheme == "https" and (urlparse(u).hostname or "").endswith(PHOTO_HOSTS)
+bad, by_slug, hidden = [], {x["slug"]: x for x in out}, set()
+for slug, ov in OV.items():
+    if slug.startswith("_"): continue
+    if not isinstance(ov, dict): bad.append(f"{slug}: entry must be an object"); continue
+    for k in set(ov) - ALLOWED: bad.append(f"{slug}: '{k}' can't be set in the merge file (allowed: {', '.join(sorted(ALLOWED))})")
+    if not str(ov.get("note") or "").strip(): bad.append(f"{slug}: add a note saying who changed it and why")
+    for u in ([ov["hero"]] if "hero" in ov else []) + list(ov.get("gallery") or []) + list(ov.get("galleryAdd") or []):
+        if not photo_ok(u): bad.append(f"{slug}: photo must be an https link on Cloudinary or the library: {u}")
+    if "coords" in ov and not coords(ov["coords"]): bad.append(f"{slug}: coords must read 'lat, lng'")
+    x = by_slug.get(slug)
+    if x is None: print(f"merge file: {slug} is not a live stay page; entry skipped"); continue
+    if bad: continue
+    for k, v in ov.items():
+        if k in ("note", "galleryAdd", "hide"): continue
+        x[k] = coords(v) if k == "coords" else (text(v) if k in ("name", "tagline", "bestMonthsNote", "airportDirections") else v)
+    if ov.get("galleryAdd"): x["gallery"] = [g for g in x["gallery"] + list(ov["galleryAdd"]) if g != x["hero"]]
+    if ov.get("hide"): hidden.add(slug)
+if bad: sys.exit("Stay merge file has problems, nothing published:\n  " + "\n  ".join(bad))
+out = [x for x in out if x["slug"] not in hidden]
+if OV: print(f"merge file: {sum(1 for s in OV if s in by_slug)} stays changed, {len(hidden)} hidden")
 json.dump({"exportedOn": datetime.date.today().isoformat(), "stays": out}, open(sys.argv[3], "w"), indent=1, ensure_ascii=False)
 from collections import Counter
 print(len(out), "stays;", Counter(x["countrySlug"] or "misfiled" for x in out))

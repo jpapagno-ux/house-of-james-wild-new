@@ -2540,7 +2540,7 @@
    "bestMonths": "September to April",
    "bestMonthsNote": "September to April for harvest season, blooming gardens, and warm weather. May to August for cozy firesides, winter produce, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.831,
@@ -2990,7 +2990,7 @@
    "bestMonths": "June – November",
    "bestMonthsNote": "These months coincide with South Africa’s celebrated whale season when Southern Right whales migrate into Walker Bay. Cooler temperatures, dramatic ocean conditions, and exceptional marine wildlife encounters make this the most extraordinary time to experience Hermanus.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -34.4329,
@@ -3480,7 +3480,7 @@
    "bestMonths": "May – October",
    "bestMonthsNote": "Dry season months concentrate wildlife around water sources, making elephant herds, predators, and large game especially visible. Walking safaris are also at their peak during this time.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.7265,
@@ -3654,7 +3654,7 @@
    "bestMonths": "December–March, September–November, May–August. ",
    "bestMonthsNote": "Summer (Dec–Mar) brings beach weather and city buzz; spring and autumn offer pleasant outdoor exploration and whale watching. Winters (May–Aug) are cooler with fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9321,
@@ -4194,7 +4194,7 @@
    "bestMonths": "May–September",
    "bestMonthsNote": "Dry winter months offer clearer wildlife sightings, crisp skies, prime Big Five tracking, and sublime safari conditions.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.739236,
@@ -4897,7 +4897,7 @@
    "bestMonths": "September to April",
    "bestMonthsNote": "September to April for sunny days, warm river swimming, and family activities. May to August for peaceful escapes, birding, and fireside evenings.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -34.423,
@@ -5399,7 +5399,7 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "The dry season offers the most rewarding wildlife viewing conditions. Sparse vegetation, concentrated wildlife around water sources, cooler temperatures, and active predator movements create ideal safari opportunities.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.8045,
@@ -5474,7 +5474,7 @@
    "bestMonths": "May – October",
    "bestMonthsNote": "During the dry winter months, wildlife gathers around water sources and vegetation thins, offering exceptional visibility. Cooler temperatures and clear skies make this the prime safari season for sightings and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.798,
@@ -5530,7 +5530,7 @@
    "bestMonths": "May – October",
    "bestMonthsNote": "The dry winter season offers peak wildlife viewing as animals gather around water sources and vegetation thins. Cooler weather and clear conditions make this the best time for game drives and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.801,
@@ -5586,7 +5586,7 @@
    "bestMonths": "May – October",
    "bestMonthsNote": "Dry season offers optimal wildlife viewing as vegetation thins and animals gather near water sources. Cooler temperatures and clear skies create ideal safari conditions, especially for predator sightings.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.795,
@@ -7427,7 +7427,7 @@
    "bestMonths": "September to May",
    "bestMonthsNote": "September to May for warm weather, harvest festivals, and best wine valley experiences. June to August for cozy winter stays and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9072,
@@ -7586,7 +7586,7 @@
    "bestMonths": "October to April",
    "bestMonthsNote": "Spring to summer months offer peak wildflower blooms, whale watching season, and warm coastal weather ideal for fully immersive nature experiences.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -34.6,
@@ -7650,14 +7650,17 @@
    "quote": null,
    "hero": null,
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "Mid-June to mid-July",
+   "bestMonthsNote": "Time it for the Sardine Run along the Wild Coast.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "coords": {
+    "lat": -31.2882,
+    "lng": 30.0108
+   },
+   "airport": "King Shaka International Airport, Durban (DUR)",
+   "airportDirections": "About 5 and a half to 6 hours by road from King Shaka via Port Edward. The lodge can also arrange helicopter or light-aircraft arrivals.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -7696,7 +7699,7 @@
    "bestMonths": "October to April",
    "bestMonthsNote": "October to April for warm seas, best swimming, whale and dolphin sightings, and prime beach weather. May to September for quiet escapes and dramatic winter seas.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -31.2762,
@@ -7829,7 +7832,7 @@
    "bestMonths": "June – November",
    "bestMonthsNote": "These months offer the best whale watching conditions along Walker Bay, cooler coastal temperatures, dramatic ocean scenery, and ideal conditions for wine touring, hiking, and marine adventures throughout the Whale Coast region.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -34.4187,
@@ -8871,14 +8874,17 @@
    "quote": null,
    "hero": null,
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "May to October",
+   "bestMonthsNote": "The dry winter in the Greater Kruger: thinner bush and animals gathering at water.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "coords": {
+    "lat": -24.4292,
+    "lng": 31.0136
+   },
+   "airport": "Hoedspruit Eastgate Airport (HDS)",
+   "airportDirections": "Fly into Hoedspruit Eastgate; the road transfer to the lodge is included.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -10088,14 +10094,17 @@
    "quote": null,
    "hero": null,
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "May to October",
+   "bestMonthsNote": "The southern Kruger dry winter: thinner bush and animals drawn to the Sabie River.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "coords": {
+    "lat": -24.9927,
+    "lng": 31.5973
+   },
+   "airport": "Skukuza Airport (SZK)",
+   "airportDirections": "Fly into Skukuza from Johannesburg or Cape Town, then a 10 minute road transfer, included in the rate. Kruger Mpumalanga International is about 2 hours away by road.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -11253,7 +11262,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "April to October for mild, dry weather and best wildlife. November to March brings green landscapes, summer birds, and new animal babies.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.1287,
@@ -11338,7 +11347,7 @@
    "bestMonths": "September to May",
    "bestMonthsNote": "September to May for warm weather, harvest festivals, and best wine valley experiences. June to August for cozy winter stays and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9072,
@@ -11409,7 +11418,7 @@
    "bestMonths": "October – April",
    "bestMonthsNote": "These warmer months bring vibrant vineyard landscapes, harvest season energy, and ideal conditions for outdoor dining, wine tasting, and exploring the valley.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9047,
@@ -11619,7 +11628,7 @@
    "bestMonths": "April - October",
    "bestMonthsNote": "Dry months with optimal wildlife viewing attracted to waterholes, crisp sunny days, and clearer skies for game-spotting and star-gazing.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.470578,
@@ -11771,7 +11780,7 @@
    "bestMonths": "October - April",
    "bestMonthsNote": "These months offer warm weather, vibrant vineyard activity, harvest season celebrations, outdoor dining, and ideal conditions for exploring the Cape Winelands. Summer and early autumn provide the best balance of scenery and experiences.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.908,
@@ -12000,7 +12009,7 @@
     "family",
     "honeymoon"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.906222,
@@ -12069,7 +12078,7 @@
    "bestMonths": "June to November",
    "bestMonthsNote": "June to November for prime whale watching. December to May for quiet beaches, birding, fynbos blooms, and wild seas.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -34.4517,
@@ -12222,7 +12231,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "Dry season offers the best wildlife viewing as animals gather around water sources and vegetation is less dense.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.8015,
@@ -12285,14 +12294,17 @@
    "quote": null,
    "hero": null,
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "May to October",
+   "bestMonthsNote": "The Waterberg's dry, cooler season: thinner bush and animals at water.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -23.9078,
+    "lng": 28.3414
+   },
    "airport": null,
-   "airportDirections": null,
+   "airportDirections": "Noka Camp is about a 3 hour drive from Johannesburg.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -12416,7 +12428,7 @@
    "bestMonths": "May – September",
    "bestMonthsNote": "Wildlife viewing is the best during the dry winter season spanning from May - Sept.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.9723,
@@ -12797,7 +12809,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September for dry season, best wildlife viewing, and mild days. October to April for green bush, baby animals, and great birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.7687,
@@ -13728,8 +13740,8 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September for dry season, best wildlife sightings, and mild weather. October to April for lush bush, birds, and baby animals.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.4372,
     "lng": 31.1336
@@ -13805,7 +13817,7 @@
    "bestMonths": "March - May",
    "bestMonthsNote": "September to November: Optimal wildlife viewing as animals congregate around water sources.\nTraveling during these periods offers comfortable weather conditions and enhanced wildlife sightings, providing an ideal safari experience.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.801461,
@@ -14717,7 +14729,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry season, ideal for wildlife and game viewing. December to March brings lush landscapes, excellent birding, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.1887,
@@ -16594,7 +16606,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and ideal for wildlife. October to April is green, warm, with excellent birding and lush scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -27.8569,
@@ -16664,7 +16676,7 @@
    "bestMonths": "October to April",
    "bestMonthsNote": "October to April for warm weather, long days, and best beach and city life. May to September for mild winter, dramatic seas, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9512,
@@ -17045,7 +17057,7 @@
    "bestMonths": "May – September",
    "bestMonthsNote": "Dry season offers optimal wildlife viewing as animals gather around water sources, and vegetation is thinner, making sightings easier.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.425,
@@ -17409,7 +17421,7 @@
    "bestMonths": "April–October",
    "bestMonthsNote": "Description: Cool, dry season best for wildlife, walks, cheetah tracking, and clear Karoo skies; summer is green and beautiful, ideal for birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -32.4422,
@@ -17836,6 +17848,52 @@
    "engine": null
   },
   {
+   "slug": "seseka-thornybush",
+   "name": "Saseka Tented Camp",
+   "ledgerId": "STY-2026-000239",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": null,
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/639f68bc3_f2c72ca8e_68d598fb8c62cd764b79f24a_1869335c.webp",
+   "gallery": [],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "Thornybush's dry winter: thinner bush and animals at permanent water.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -24.4087,
+    "lng": 31.1749
+   },
+   "airport": "Hoedspruit Eastgate Airport (HDS)",
+   "airportDirections": "Fly into Hoedspruit from Johannesburg or Cape Town, then about 45 minutes by road.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "sashwa",
    "name": "Sashwa River of Stars",
    "ledgerId": "STY-2026-000233",
@@ -17848,14 +17906,14 @@
    "quote": null,
    "hero": null,
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "May to October",
+   "bestMonthsNote": "The Greater Kruger dry winter: thinner bush and animals at the Olifants River.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Hoedspruit Eastgate Airport (HDS)",
+   "airportDirections": "Fly into Hoedspruit Eastgate from Johannesburg or Cape Town, then a pre-arranged road transfer of about 1 hour 15 minutes.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -18239,49 +18297,6 @@
    "engine": null
   },
   {
-   "slug": "seseka-thornybush",
-   "name": "Seseke Tented Camp \n Thornybush Reserve",
-   "ledgerId": "STY-2026-000239",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": null,
-   "quote": null,
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/639f68bc3_f2c72ca8e_68d598fb8c62cd764b79f24a_1869335c.webp",
-   "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
-   "status": null,
-   "statusDate": null,
-   "coords": null,
-   "airport": null,
-   "airportDirections": null,
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": []
-   },
-   "features": {
-    "paras": [],
-    "items": []
-   },
-   "onlyHere": [],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null
-  },
-  {
    "slug": "shinta-mani-wild",
    "name": "Shinta Mani Wild",
    "ledgerId": "STY-2026-000240",
@@ -18451,7 +18466,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and riverfront activities. October to April is green, lush, and perfect for birding and family time.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.7996,
@@ -18530,7 +18545,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and outdoor activities. October to April is green, warm, and perfect for birding and family holidays.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.8034,
@@ -18610,7 +18625,7 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "These cooler, dry winter months bring optimal wildlife visibility, high concentrations of game along riverbanks, and crisp evenings perfect for fireside dinners and stargazing.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.981234,
@@ -18682,7 +18697,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and riverside activities. October to April is green, warm, and great for birding and family holidays.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.802,
@@ -19157,7 +19172,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and riverside activities. October to April is green and lush, excellent for birding and quiet escapes.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.491,
@@ -19234,7 +19249,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and riverside activities. October to April is green and lush, excellent for birding and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.491,
@@ -19875,7 +19890,7 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and river views. October to April is green and beautiful for birding and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.4552,
@@ -19933,8 +19948,8 @@
    "slug": "sirai-house",
    "name": "Sirai House \n Laikipia Kenya",
    "ledgerId": "STY-2026-764021",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
+   "country": "Kenya",
+   "countrySlug": "kenya",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
@@ -22105,7 +22120,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October for dry season, prime wildlife, and best walking safaris. November to April for green landscapes, birds, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.3231,
@@ -22175,7 +22190,7 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "The dry winter months offer outstanding wildlife viewing. Animals congregate around permanent water sources, vegetation becomes less dense and temperatures remain comfortable for safari activities, creating ideal conditions for photography and game viewing.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.7942,
@@ -22309,7 +22324,7 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "Winter and dry-season months provide exceptional wildlife viewing as animals congregate around permanent water sources including the Sand River. Vegetation is less dense, creating outstanding visibility and photographic conditions.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.7997,
@@ -22375,7 +22390,7 @@
    "bestMonths": "May - October",
    "bestMonthsNote": "The dry winter safari season provides outstanding wildlife viewing opportunities. Animals gather around water sources, vegetation becomes less dense and temperatures remain comfortable, making these months ideal for game drives and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.8014,
@@ -22441,7 +22456,7 @@
    "bestMonths": "May to September, December to March",
    "bestMonthsNote": "May to September is dry season with best Big Five viewing, cool weather, and open bush. December to March is green and beautiful, with great birding and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.8283,
@@ -23348,7 +23363,7 @@
    "bestMonths": "October, November, December, January, February, March",
    "bestMonthsNote": "These months deliver Cape Town’s summer season , clear skies, warm coastal breezes, and golden sunsets that illuminate Table Mountain and the Atlantic horizon, making The Silo’s rooftop and window views at their absolute peak.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -33.9068,
@@ -23399,14 +23414,14 @@
    "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7222ae51e_d0b6c2b97_682dce9137e43a8c270e294e_Copy_20of_20Thornybush_20Game_20Lodge_20-_20Main_20Area.",
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "May to September",
+   "bestMonthsNote": "The dry winter: thinner bush and animals at permanent water.",
    "bestFor": [],
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Hoedspruit Eastgate Airport (HDS)",
+   "airportDirections": "Fly into Hoedspruit from Johannesburg or Cape Town; the lodges are about 45 minutes away by road.",
    "founderNote": null,
    "rooms": {
     "paras": [],

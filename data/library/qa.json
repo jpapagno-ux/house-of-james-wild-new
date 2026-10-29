@@ -1475,8 +1475,7 @@
    "country": "South Africa",
    "missing": [
     "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -1737,8 +1736,7 @@
    "country": "South Africa",
    "missing": [
     "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -1920,8 +1918,7 @@
    "country": "South Africa",
    "missing": [
     "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -2209,8 +2206,7 @@
    "country": "South Africa",
    "missing": [
     "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -3197,11 +3193,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff99e",
    "slug": "seseka-thornybush",
-   "name": "Seseke Tented Camp Thornybush Reserve",
+   "name": "Saseka Tented Camp",
    "country": "South Africa",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -3415,7 +3410,7 @@
    "stay_id": "6a89a1a83c33d698783bb8d9",
    "slug": "sirai-house",
    "name": "Sirai House Laikipia Kenya",
-   "country": "South Africa",
+   "country": "Kenya",
    "missing": [
     "stay_copy",
     "coordinates"

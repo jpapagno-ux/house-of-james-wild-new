@@ -37,8 +37,7 @@
    "name": "Aiteall Boutique Accommodation",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -89,8 +88,7 @@
    "name": "Amandari",
    "country": "Indonesia",
    "missing": [
-    "correct_hero_photo",
-    "coordinates"
+    "correct_hero_photo"
    ],
    "released": false
   },
@@ -100,8 +98,7 @@
    "name": "Amandira Voyage [Demo]",
    "country": "Indonesia",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -112,8 +109,7 @@
    "country": "Indonesia",
    "missing": [
     "correct_hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -124,8 +120,7 @@
    "country": "Indonesia",
    "missing": [
     "correct_hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -300,9 +295,7 @@
    "slug": "ariel-house",
    "name": "Ariel House",
    "country": "Ireland",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1337,8 +1330,7 @@
    "name": "Ferndale, Achill Island",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -1726,8 +1718,7 @@
    "name": "Iveagh Garden Hotel",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -1910,8 +1901,7 @@
    "name": "King Sitric",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -2676,9 +2666,7 @@
    "slug": "nomad-tanzania-lamai",
    "name": "Nomad Tanzania Lamai Serengeti",
    "country": "Tanzania",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2733,8 +2721,7 @@
    "name": "Number 31",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -2986,8 +2973,7 @@
    "name": "Quinlan & Cooke, Cahersiveen",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -3935,8 +3921,7 @@
    "name": "The Merrion",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -4033,8 +4018,7 @@
    "name": "The Wilder",
    "country": "Ireland",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -4382,8 +4366,7 @@
    "name": "Wilderness DumaTau",
    "country": "Botswana",
    "missing": [
-    "hero_photo",
-    "coordinates"
+    "hero_photo"
    ],
    "released": false
   },

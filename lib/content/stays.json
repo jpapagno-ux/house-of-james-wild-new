@@ -1910,7 +1910,10 @@
    ],
    "status": "unclassified",
    "statusDate": "",
-   "coords": null,
+   "coords": {
+    "lat": 53.3341185,
+    "lng": -6.231085
+   },
    "airport": "",
    "airportDirections": null,
    "founderNote": null,
@@ -15175,7 +15178,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -1.645656,
+    "lng": 34.921944
+   },
    "airport": null,
    "airportDirections": null,
    "founderNote": null,

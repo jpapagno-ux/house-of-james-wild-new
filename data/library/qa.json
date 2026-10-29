@@ -1474,6 +1474,7 @@
    "name": "Gwe Gwe Beach",
    "country": "South Africa",
    "missing": [
+    "coming_soon",
     "hero_photo",
     "stay_copy"
    ],
@@ -1494,6 +1495,18 @@
    "country": "Ireland",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae3366a541236d6f3385e1c",
+   "slug": "hemingways-nairobi",
+   "name": "Hemingways Nairobi",
+   "country": "Kenya",
+   "missing": [
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1a2a9b27f2e10892595",
@@ -1739,6 +1752,16 @@
     "stay_copy"
    ],
    "released": true
+  },
+  {
+   "stay_id": "6ae3366a541236d6f3385e1a",
+   "slug": "jacis-private-lodge",
+   "name": "Jaci's Private Lodge",
+   "country": "South Africa",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff929",
@@ -4058,8 +4081,7 @@
    "name": "Thornybush Reserve",
    "country": "South Africa",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": true
   },
@@ -4471,6 +4493,16 @@
    "country": "Botswana",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae3366a541236d6f3385e1b",
+   "slug": "wilderness-qorokwe",
+   "name": "Wilderness Qorokwe",
+   "country": "Botswana",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1bbf393f17356a5ccf2",

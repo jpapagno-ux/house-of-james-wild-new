@@ -3654,8 +3654,8 @@
    "bestMonths": "December–March, September–November, May–August. ",
    "bestMonthsNote": "Summer (Dec–Mar) brings beach weather and city buzz; spring and autumn offer pleasant outdoor exploration and whale watching. Winters (May–Aug) are cooler with fewer crowds.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-01-01",
    "coords": {
     "lat": -33.9321,
     "lng": 18.4223
@@ -5530,8 +5530,8 @@
    "bestMonths": "May – October",
    "bestMonthsNote": "The dry winter season offers peak wildlife viewing as animals gather around water sources and vegetation thins. Cooler weather and clear conditions make this the best time for game drives and photography.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-01-01",
    "coords": {
     "lat": -24.801,
     "lng": 31.437
@@ -7697,7 +7697,7 @@
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b83fb0b4e_735804a3a_692d9980c8d476bdbf775601_Gallery-1100x733_0011_Aerial-1.webp",
    "gallery": [],
    "bestMonths": "October to April",
-   "bestMonthsNote": "October to April for warm seas, best swimming, whale and dolphin sightings, and prime beach weather. May to September for quiet escapes and dramatic winter seas.",
+   "bestMonthsNote": "October to April for warm seas, swimming, whale and dolphin sightings and beach weather. Mid-June to mid-July for the Sardine Run along the Wild Coast.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
@@ -7705,8 +7705,8 @@
     "lat": -31.2762,
     "lng": 29.9993
    },
-   "airport": "Mthatha Airport (UTT), Margate Airport (MGH), King Phalo Airport (ELS)",
-   "airportDirections": "Fly to Mthatha, Margate, or East London. 3–4 hour drive to lodge. Transfers can be arranged by the lodge.",
+   "airport": "King Shaka International Airport, Durban (DUR)",
+   "airportDirections": "The lodge routes guests from King Shaka via Port Edward, about 5 and a half to 6 hours by road. Helicopter, boat or light-aircraft arrivals can be arranged; Margate is the nearest airport.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -12303,8 +12303,8 @@
     "lat": -23.9078,
     "lng": 28.3414
    },
-   "airport": null,
-   "airportDirections": "Noka Camp is about a 3 hour drive from Johannesburg.",
+   "airport": "Lapalala Wilderness airstrip (private charter from Johannesburg)",
+   "airportDirections": "A private charter flies to the Lapalala airstrip, about an hour from Johannesburg, then about 20 minutes to the lodge. By road it is about 3 hours from Johannesburg; transfers can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -12815,8 +12815,8 @@
     "lat": -24.7687,
     "lng": 26.3634
    },
-   "airport": "Madikwe Airstrip (MWK), O.R. Tambo International Airport (JNB)",
-   "airportDirections": "Fly to O.R. Tambo International (Johannesburg), connect by light aircraft to Madikwe Airstrip (1 hour), or drive 4–5 hours from Johannesburg.",
+   "airport": "Madikwe Eastern Airstrip (daily scheduled flights from OR Tambo, Johannesburg)",
+   "airportDirections": "Daily scheduled flights from OR Tambo to Madikwe's Eastern Airstrip take about an hour. By road it is about 4 to 5 hours from Johannesburg on tarred roads; the gates open 06:00 to 18:00.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -14729,8 +14729,8 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry season, ideal for wildlife and game viewing. December to March brings lush landscapes, excellent birding, and fewer crowds.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2018-01-01",
    "coords": {
     "lat": -24.1887,
     "lng": 31.3332
@@ -18466,8 +18466,8 @@
    "bestMonths": "May to September",
    "bestMonthsNote": "May to September is dry, cool, and best for wildlife and riverfront activities. October to April is green, lush, and perfect for birding and family time.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2018-01-01",
    "coords": {
     "lat": -24.7996,
     "lng": 31.527
@@ -19643,8 +19643,8 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is peak migration season, with dry conditions and excellent wildlife. November to May is green and peaceful, perfect for birding and quiet escapes.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.041,
     "lng": 34.7947
@@ -19724,15 +19724,15 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is migration season, with dramatic wildlife, dry weather, and stunning vistas. November to May is green, lush, and perfect for birding and relaxed family travel.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_returned",
+   "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.0555,
     "lng": 34.7938
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 15 to 30 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
-   "founderNote": null,
+   "founderNote": "James stayed in 2012 and went back in 2018. A founder favourite.",
    "rooms": {
     "paras": [
      "Ten cottages and suites plus one private villa, each with its own plunge pool, verandah, and period furnishings. Main lodge features a library, billiards room, spa, gym, tennis courts, and infinity pool."
@@ -23419,7 +23419,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -24.5414,
+    "lng": 31.1564
+   },
    "airport": "Hoedspruit Eastgate Airport (HDS)",
    "airportDirections": "Fly into Hoedspruit from Johannesburg or Cape Town; the lodges are about 45 minutes away by road.",
    "founderNote": null,

@@ -35,7 +35,7 @@ export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, 
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);
-export const BEST_FOR: Record<string, string> = { honeymoon: "Honeymoons", family: "Families", adventure: "Adventure", luxury: "Luxury", solo: "Solo travel", wildlife_photography: "Wildlife photography" };
+export const BEST_FOR: Record<string, string> = { honeymoon: "Honeymoons", family: "Families", adventure: "Adventure", luxury: "Luxury", solo: "Solo travel", wildlife_photography: "Wildlife photography", group_exclusive_use: "Groups and exclusive use", first_safari: "First safaris", wine: "Wine lovers" };
 
 // Alt text from the photo's own file name, which in the library usually says
 // what is in the frame ("Sossusvlei-Desert-Lodge-Room-Suite-lounge" -> "Suite

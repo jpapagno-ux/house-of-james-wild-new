@@ -79,6 +79,11 @@ stays = [s for s in stays if (s.get("webflow_slug") or s.get("property_slug")) i
 STOP = set("the and of by at a in on resort lodge camp hotel villa villas house suites suite island private reserve beach spa retreat safari tented collection mara game boutique luxury estate inn ranch room guest area general low resolution width jpg jpeg png avif webp".split())
 def toks(x): return {t for t in re.findall(r"[a-z]{3,}", re.sub(r"['’]s?\b", "", html.unescape(x or "").lower())) if t not in STOP}
 ALL_NAMES = [toks(s["name"]) for s in load(sys.argv[1])]
+OWN = ("res.cloudinary.com", "media.base44.com", "cdn.prod.website-files.com", "base44.app", "jameswildco.com")
+def owned(u):
+    """Photos we hold a copy of. Ones linked from a hotel's own site break without warning."""
+    from urllib.parse import urlparse
+    return bool(u) and (u.startswith("/") or (urlparse(u).hostname or "").endswith(OWN))
 def foreign(url, own):
     """True when a photo's file name names a different stay and not this one."""
     fn = toks(re.sub(r"%20|[_-]+", " ", url.rsplit("/", 1)[-1]))
@@ -95,13 +100,14 @@ for s in sorted(stays, key=lambda s: s["name"]):
     actual = NOT_IN.get(cslug, {}).get(slug)
     reviewed = s.get("content_status") in ("approved", "published") and bool(s.get("aeo_approved"))
     fb = s.get("fact_blocks") or {}
-    gallery = [img(g) for g in (s.get("gallery_urls") or []) if g and not foreign(g, toks(s["name"]))][:10]
+    gallery = [img(g) for g in (s.get("gallery_urls") or []) if g and owned(g) and not foreign(g, toks(s["name"]))][:10]
+    hero = s.get("hero_image_url") if owned(s.get("hero_image_url")) else next(iter([g for g in (s.get("gallery_urls") or []) if owned(g)]), s.get("hero_image_url"))
     out.append({
         "slug": slug, "name": text(s.get("display_name") or s["name"]).replace(" ", " "), "ledgerId": s.get("ledger_id"),
         "country": actual or d.get("name"), "countrySlug": None if actual else cslug, "regionSlug": None if actual else d.get("region_slug"),
         "misfiled": actual, "category": s.get("category"),
         "tagline": text(s.get("tagline")) or None, "quote": text(s.get("intro_quote")).strip('"“” ') or None,
-        "hero": img(s.get("hero_image_url")), "gallery": [g for g in gallery if g and g != img(s.get("hero_image_url"))],
+        "hero": img(hero), "gallery": [g for g in gallery if g and g != img(hero)],
         "bestMonths": s.get("best_months"), "bestMonthsNote": text(s.get("best_months_description")) or None,
         "bestFor": s.get("best_for") or [],
         "status": s.get("house_status"), "statusDate": s.get("house_status_date"),

@@ -11,6 +11,7 @@ Hand decisions live in scripts/data/stay-qa-overrides.json: "clear" releases a
 stay the name check flagged wrongly; "hold" keeps a stay off the site.
 """
 import json, re, sys, html, collections, datetime
+from urllib.parse import urlparse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,6 +24,8 @@ rel = json.load(open(REL_P)); released = {r["slug"] for r in rel["released"]}
 STOP = set("the and of by at a in on resort lodge camp hotel villa villas house suites suite island private reserve beach spa retreat safari tented collection mara game boutique luxury estate inn ranch".split())
 def toks(s): return {t for t in re.findall(r"[a-z]{3,}", re.sub(r"['’]s?\b", "", html.unescape(s or "").lower()).replace("&", "and")) if t not in STOP}
 def strip(h): return re.sub(r"<[^>]+>", " ", html.unescape(h or "")).strip()
+OWN = ("res.cloudinary.com", "media.base44.com", "cdn.prod.website-files.com", "base44.app", "jameswildco.com")
+def owned(u): return not u or u.startswith("/") or (urlparse(u).hostname or "").endswith(OWN)
 names = [(s, toks(s["name"])) for s in S]
 seen = collections.Counter((s.get("webflow_slug") or s.get("property_slug")) for s in S)
 
@@ -50,11 +53,14 @@ for s in S:
         rel["released"].append({"slug": slug, "batch": f"{datetime.date.today().isoformat()} library sync"}); released.add(slug); newly.append(slug)
     # Map coordinates don't hold a page back; they're listed so the stay pins on its country map.
     if not re.match(r"\s*-?\d+(\.\d+)?\s*,\s*-?\d+(\.\d+)?", s.get("coordinates") or ""): flags = flags + ["coordinates"]
+    # Photos linked from a hotel's own website break when the hotel changes its site; they are
+    # dropped from galleries, and listed here so a copy gets uploaded to the library.
+    if not owned(hero) or any(not owned(g) for g in (s.get("gallery_urls") or []) if g): flags = flags + ["own_photos"]
     rows.append({"stay_id": s["id"], "slug": slug, "name": re.sub(r"\s+", " ", strip(s.get("display_name") or s["name"])),
                  "country": (d or {}).get("name") or "", "missing": flags, "released": slug in released})
 json.dump(rel, open(REL_P, "w"), indent=1)
 (ROOT / "data/library").mkdir(parents=True, exist_ok=True)
 rows.sort(key=lambda r: r["slug"])
 json.dump({"checkedOn": datetime.date.today().isoformat(), "rows": rows}, open(ROOT / "data/library/qa.json", "w"), indent=1, ensure_ascii=False)
-print(f"{len(rows)} stays checked; {sum(r['released'] for r in rows)} released ({len(newly)} new); {sum(1 for r in rows if [m for m in r['missing'] if m != 'coordinates'] and not r['released'])} held; {sum(1 for r in rows if 'coordinates' in r['missing'])} without map coordinates")
+print(f"{len(rows)} stays checked; {sum(r['released'] for r in rows)} released ({len(newly)} new); {sum(1 for r in rows if [m for m in r['missing'] if m not in ('coordinates', 'own_photos')] and not r['released'])} held; {sum(1 for r in rows if 'coordinates' in r['missing'])} without map coordinates; {sum(1 for r in rows if 'own_photos' in r['missing'])} with photos linked from a hotel site")
 if newly: print("new:", ", ".join(newly))

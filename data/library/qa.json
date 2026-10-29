@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-10-29",
+ "checkedOn": "2026-10-28",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -8,7 +8,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -644,7 +645,9 @@
    "slug": "blancaneaux-lodge",
    "name": "Blancaneaux Lodge",
    "country": "Belize",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -653,7 +656,8 @@
    "name": "Blue Reef",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -694,7 +698,8 @@
    "country": "Ireland",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -935,7 +940,8 @@
    "name": "Coco Plum Island Resort",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1371,7 +1377,8 @@
    "name": "French Leave Resort",
    "country": "Bahamas",
    "missing": [
-    "coming_soon"
+    "coming_soon",
+    "own_photos"
    ],
    "released": false
   },
@@ -1525,7 +1532,8 @@
    "name": "Hidden Valley Lodge",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1765,7 +1773,8 @@
    "name": "Jaguar Reef Lodge",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1783,7 +1792,8 @@
    "name": "Ka'ana Resort",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1802,7 +1812,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -1962,7 +1973,8 @@
    "name": "Kwando 4 Rivers Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1972,7 +1984,8 @@
    "name": "Kwando Kwara Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -1981,7 +1994,9 @@
    "slug": "kwando-lagoon",
    "name": "Kwando Lagoon Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -1989,7 +2004,9 @@
    "slug": "kwando-lebala",
    "name": "Kwando Lebala Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -1998,7 +2015,8 @@
    "name": "Kwando Mma Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -2008,7 +2026,8 @@
    "name": "Kwando Moremi Crossing Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -2017,7 +2036,9 @@
    "slug": "kwando-nxai-pan",
    "name": "Kwando Nxai Pan Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -2025,7 +2046,9 @@
    "slug": "kwando-pom-pom",
    "name": "Kwando Pom Pom Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -2034,7 +2057,8 @@
    "name": "Kwando Rra Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -2043,7 +2067,9 @@
    "slug": "kwando-splash",
    "name": "Kwando Splash Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -2051,7 +2077,9 @@
    "slug": "kwando-tau-pan",
    "name": "Kwando Tau Pan Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -2344,7 +2372,9 @@
    "slug": "masoala-forest-lodge",
    "name": "Masoala Forest Lodge",
    "country": "Madagascar",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -2353,7 +2383,8 @@
    "name": "Matachica Resort & Spa",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -2897,7 +2928,8 @@
    "name": "Pink Sands Resort",
    "country": "Bahamas",
    "missing": [
-    "coming_soon"
+    "coming_soon",
+    "own_photos"
    ],
    "released": false
   },
@@ -2993,7 +3025,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3466,7 +3499,9 @@
    "slug": "six-senses-ibiza",
    "name": "Six Senses Ibiza",
    "country": "Spain-Ibiza",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -3574,7 +3609,8 @@
    "name": "Sleeping Giant Rainforest Lodge",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -3644,7 +3680,8 @@
    "name": "St. George's Caye Resort",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -3777,7 +3814,9 @@
    "slug": "thatch-caye-resort",
    "name": "Thatch Caye Resort",
    "country": "Belize",
-   "missing": [],
+   "missing": [
+    "own_photos"
+   ],
    "released": true
   },
   {
@@ -3822,7 +3861,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3833,7 +3873,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3844,7 +3885,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3855,7 +3897,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3881,7 +3924,8 @@
    "name": "The Lodge at Chaa Creek",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -3903,7 +3947,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3924,7 +3969,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -3935,7 +3981,8 @@
    "country": "Bahamas",
    "missing": [
     "coming_soon",
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": false
   },
@@ -4123,7 +4170,8 @@
    "name": "Turtle Inn",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -4177,7 +4225,8 @@
    "name": "Umaya Resort & Marina",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },
@@ -4543,7 +4592,8 @@
    "name": "Xanadu Island Resort",
    "country": "Belize",
    "missing": [
-    "coordinates"
+    "coordinates",
+    "own_photos"
    ],
    "released": true
   },

@@ -870,7 +870,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 36.232971,
+    "lng": -121.76275
+   },
    "airport": "Monterey Regional Airport (MRY), San Francisco International Airport (SFO), San Jose Mineta International Airport (SJC)",
    "airportDirections": "From Monterey Regional (MRY) → ~1 hour drive. From San Francisco (SFO) → ~2.5–3 hour drive,",
    "founderNote": null,
@@ -4048,7 +4051,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 20.91,
+    "lng": -89.637
+   },
    "airport": "Mérida International Airport (MID)",
    "airportDirections": "From Mérida International Airport (MID), Chablé Yucatán is about a 25–30 minute drive (~ 35 km) via rural roads.",
    "founderNote": null,
@@ -7085,7 +7091,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.09759,
+    "lng": 23.81133
+   },
    "airport": "Maun International Airport (MUB) ",
    "airportDirections": "By air & road: A light aircraft (20 minutes) or helicopter (≈15 minutes) from Maun to Khwai airstrip, then ~20 minutes by road to the camp. By road: From Maun direct overland takes about 2h30, depending on road conditions. For many guests, flying + road is preferred for speed and comfort.",
    "founderNote": null,
@@ -7520,7 +7529,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -8.9667,
+    "lng": 30.3667
+   },
    "airport": "Nearest airports: Kigoma Airport (TKQ) and Arusha Airport (ARK), or other small airstrips depending on your itinerary.",
    "airportDirections": "Greystoke Mahale is remote. Most travelers fly into Arusha for international connections, then take a charter to a smaller airstrip near Lake Tanganyika, or fly via Kigoma. From the airstrip, a scenic 90-minute dhow ride on the lake brings you to the lodge.",
    "founderNote": null,
@@ -10385,7 +10397,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.1,
+    "lng": 23.3
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -10463,7 +10478,10 @@
    ],
    "status": "founder_visited",
    "statusDate": "2012-01-01",
-   "coords": null,
+   "coords": {
+    "lat": -19.15,
+    "lng": 23.25
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -10703,7 +10721,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.5,
+    "lng": 23.6
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -10781,7 +10802,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.35,
+    "lng": 23.45
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -11020,7 +11044,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.55,
+    "lng": 23.65
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -11862,7 +11889,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -16.6833,
+    "lng": -151.4333
+   },
    "airport": "Raiatea Airport (RFP)",
    "airportDirections": "From Raiatea, the resort is reached via a ~35‑minute speedboat transfer. Alternatively, guests may fly by helicopter from Bora Bora (≈14 minutes) to enjoy a scenic approach.",
    "founderNote": null,
@@ -13905,7 +13935,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -8.5489,
+    "lng": 119.8559
+   },
    "airport": "Komodo International Airport (LBJ), Flores",
    "airportDirections": "6 km/15 min from LBJ to Labuan Bajo Harbor; port transfers via tender included. Ideal gateway for Komodo & Raja Ampat itineraries.",
    "founderNote": null,
@@ -14795,7 +14828,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -1.174167,
+    "lng": 35.074722
+   },
    "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
    "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
    "founderNote": null,
@@ -15266,7 +15302,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 21.51,
+    "lng": -87.394
+   },
    "airport": "Cancún International Airport (CUN)",
    "airportDirections": "Fly into Cancún (CUN). From there, it’s about a 2.5‑hour journey by road to Chiquilá, then a ~20‑minute ferry to Holbox Island. From the ferry dock, golf‑cart taxis and a short walk take you to the property.",
    "founderNote": null,
@@ -15420,7 +15459,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 40.4202,
+    "lng": -3.7038
+   },
    "airport": "Adolfo Suárez Madrid‑Barajas (MAD)",
    "airportDirections": "Drive or taxi: ~25 minutes (approx 8–10 km) depending on traffic.\nPublic transport: take the metro (Line 8) + transfer(s) or use airport express bus to central stops, then walk or transfer to Gran Vía station , hotel is ~5 minutes walk from Gran Vía metro.\nBest option: use MAD → airport metro (Line 8) → transfer to central lines, or airport express bus → central hub → walking.",
    "founderNote": null,
@@ -15501,7 +15543,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 20.2062,
+    "lng": -87.4515
+   },
    "airport": "Cancún International Airport (CUN)",
    "airportDirections": "The drive from Cancún International to Nômade Tulum is roughly 90–100 minutes by road (~100–130 km) along the coastal highway. Travelers typically book a private transfer or shuttle. The route is scenic, passing through tropical forest and coastal plains.",
    "founderNote": null,
@@ -16169,7 +16214,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 46.8985,
+    "lng": -113.9387
+   },
    "airport": "Nearest major: Missoula International Airport (MSO)",
    "airportDirections": "The resort is about a 35‑minute drive (or ≈ 35 mi northeast) from Missoula International Airport. Transfers to/from MSO are included in most home or tent bookings.",
    "founderNote": null,
@@ -18399,7 +18447,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -8.7123,
+    "lng": 119.7021
+   },
    "airport": "Komodo International Airport (LBJ); also reachable via Denpasar (DPS), Bali.",
    "airportDirections": "From LBJ: ~20 min drive to harbor, transfers included. From DPS: 1‑hr domestic flight to LBJ, then harbor pickup.",
    "founderNote": null,
@@ -21427,7 +21478,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 5.318,
+    "lng": 73.015
+   },
    "airport": "Velana International Airport (MLE); seaplane transfer to Soneva platform",
    "airportDirections": "30-minute scenic seaplane from MLE directly into the resort’s private sea runway. Luxurious, effortless arrival.",
    "founderNote": null,
@@ -21499,7 +21553,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 5.567,
+    "lng": 73.001
+   },
    "airport": "Velana International Airport (MLE); seaplane transfer to Medhufaru",
    "airportDirections": "45-minute seaplane from MLE lands at bespoke Soneva platform. Fast, scenic, seamless.",
    "founderNote": null,
@@ -21567,7 +21624,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 6.7,
+    "lng": 72.9
+   },
    "airport": "Velana International Airport (MLE) + seaplane transfer",
    "airportDirections": "Seaplane flight (~75 min) directly to resort jetty. Scenic, serene, seamless arrival.",
    "founderNote": null,
@@ -23224,7 +23284,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -1.174167,
+    "lng": 35.074722
+   },
    "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
    "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
    "founderNote": null,
@@ -23954,7 +24017,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -2.9394,
+    "lng": 34.8212
+   },
    "airport": "Depending on season: Ndutu Airstrip (South), Kogatende Airstrip (North), Seronera Airstrip (Central)",
    "airportDirections": "Fly to seasonal airstrip, 30-90 minute game drive transfer to camp. Charter flights available from Arusha or other parks.",
    "founderNote": null,

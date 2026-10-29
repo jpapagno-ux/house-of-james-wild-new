@@ -67,9 +67,7 @@
    "slug": "alila-ventana-big-sur",
    "name": "Alila Ventana Big Sur",
    "country": "California",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -847,9 +845,7 @@
    "slug": "chable-yucatan",
    "name": "Chablé Yucatán",
    "country": "Mexico",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1319,9 +1315,7 @@
    "slug": "feline-fields-vintage-camp",
    "name": "Feline Fields Vintage Camp",
    "country": "Botswana",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1455,9 +1449,7 @@
    "slug": "greystoke-mahale-by-nomad",
    "name": "Greystoke Mahale By Nomad",
    "country": "Tanzania",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1983,7 +1975,6 @@
    "name": "Kwando 4 Rivers Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -1994,7 +1985,6 @@
    "name": "Kwando Kwara Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2025,7 +2015,6 @@
    "name": "Kwando Mma Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2036,7 +2025,6 @@
    "name": "Kwando Moremi Crossing Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2067,7 +2055,6 @@
    "name": "Kwando Rra Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2125,9 +2112,7 @@
    "slug": "la-tahaa",
    "name": "Le Taha’a by Pearl Resorts",
    "country": "Tahiti",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2487,9 +2472,7 @@
    "slug": "mutiara-laut",
    "name": "Mutiara Laut “Pearl of the Sea”",
    "country": "Indonesia",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2611,9 +2594,7 @@
    "slug": "ngare-camp-by-serian",
    "name": "Ngare Camp Serian",
    "country": "Kenya",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2693,9 +2674,7 @@
    "slug": "nomade-holbox",
    "name": "WildEarth Nômade Holbox",
    "country": "Mexico",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2711,9 +2690,7 @@
    "slug": "nomade-temple-madrid",
    "name": "Nomade Temple Madrid Coming 2025",
    "country": "Spain",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2721,9 +2698,7 @@
    "slug": "nomade-tulum",
    "name": "Nomade Tulum",
    "country": "Mexico",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2875,9 +2850,7 @@
    "slug": "paws-up-resort",
    "name": "Paws Up Resort",
    "country": "Montana",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3259,9 +3232,7 @@
    "slug": "silolona-sojourns",
    "name": "Silolona Sojourns Indonesia",
    "country": "Indonesia",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3645,9 +3616,7 @@
    "slug": "soneva-fushi-maldives",
    "name": "Soneva Fushi Maldives Original Barefoot Luxury",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3655,9 +3624,7 @@
    "slug": "soneva-jani-maldives",
    "name": "Soneva Jani Maldives Exclusive Island & Overwater Residences",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3665,9 +3632,7 @@
    "slug": "soneva-secret-maldives",
    "name": "Soneva Secret Ultra‑Bespoke Island Retreat",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3960,9 +3925,7 @@
    "slug": "the-original-camp-by-serian",
    "name": "The Original Camp By Serian",
    "country": "Kenya",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4193,9 +4156,7 @@
    "slug": "ubuntu-migration-camp-asilia",
    "name": "Ubuntu Migration Camp by Asilia",
    "country": "Tanzania",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {

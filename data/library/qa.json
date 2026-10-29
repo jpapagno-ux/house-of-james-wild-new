@@ -1557,8 +1557,7 @@
    "name": "Hotel Esencia",
    "country": "Mexico",
    "missing": [
-    "hero_photo",
-    "coordinates"
+    "hero_photo"
    ],
    "released": false
   },

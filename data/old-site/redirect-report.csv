@@ -290,7 +290,7 @@ old path,new path,why,old title
 /book/time-tide-mchenja,/stays/time-tide-mchenja,booking page -> stay page,Book your stay at Time + Tide Mchenja | Wild Earth Stays
 /book/tokoriki-island-resort,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Tokoriki Island Resort | Wild Earth Stays
 /book/trobbu-luxury-villas,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Trobbu Luxury Villas | Wild Earth Stays
-/book/tswalu-reserve,/stays/tswalu-reserve,booking page -> stay page,Book your stay at Tswalu Reserve | Wild Earth Stays
+/book/tswalu-reserve,/safaris/tswalu-reserve,booking page -> safari reserve,Book your stay at Tswalu Reserve | Wild Earth Stays
 /book/ubuntu-migration-camp-by-asilia,/stays/ubuntu-migration-camp-asilia,booking page -> stay page,Book your stay at Ubuntu Migration Camp by Asilia | Wild Earth Stays
 /book/ulum-moab,/destinations/usa-canada/utah,booking page -> not on the new site yet; country page,Book your stay at Ulum Moab | Wild Earth Stays
 /book/under-canvas-bryce-canyon,/stays/under-canvas-brtce-canyon,booking page -> stay page,Book your stay at Under Canvas Bryce Canyon | Wild Earth Stays
@@ -784,7 +784,7 @@ old path,new path,why,old title
 /property/tokoriki-island-resort,/destinations/oceania/fiji,not on the new site yet; country page,Tokoriki Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/torres-del-paine-c-reserve,/stays/torres-del-paine-c-reserve,stay page,Explora Torres del Paine C. Reserve | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/trobbu-luxury-villas,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Trobbu Luxury Villas | Luxury Stays in Mexico | Wild Earth Stays
-/property/tswalu-reserve,/stays/tswalu-reserve,stay page,Tswalu Reserve | Luxury Stays in South Africa | Wild Earth Stays
+/property/tswalu-reserve,/safaris/tswalu-reserve,safari reserve,Tswalu Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/ubuntu-migration-camp-asilia,/stays/ubuntu-migration-camp-asilia,stay page,Ubuntu Migration Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
 /property/ulum-moab,/destinations/usa-canada/utah,not on the new site yet; country page,Ulum Moab | Luxury Stays in Utah | Wild Earth Stays
 /property/under-canvas-brtce-canyon,/stays/under-canvas-brtce-canyon,stay page,Under Canvas Bryce Canyon | Luxury Stays in Utah | Wild Earth Stays
@@ -1850,9 +1850,9 @@ old path,new path,why,old title
 /stay/tokoriki-island-resort-beachfront-pool-bures,/destinations/oceania/fiji,room of tokoriki-island-resort -> not on the new site yet; country page,Beachfront Pool Bures at Tokoriki Island Resort | Wild Earth Stays
 /stay/tokoriki-island-resort-pool-villas,/destinations/oceania/fiji,room of tokoriki-island-resort -> not on the new site yet; country page,Pool Villas at Tokoriki Island Resort | Wild Earth Stays
 /stay/trobbu-luxury-villas-luxury-villa,/destinations/caribbean-mexico/mexico,room of trobbu-luxury-villas -> not on the new site yet; country page,Luxury Villa at Trobbu Luxury Villas | Wild Earth Stays
-/stay/tswalu-loapi-tented-suites,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,Toapi Tented Suites at Tswalu Reserve | Wild Earth Stays
-/stay/tswalu-motse,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,The Motse at Tswalu Reserve | Wild Earth Stays
-/stay/tswalu-tarkuni-homestead-villa,/stays/tswalu-reserve,room of tswalu-reserve -> stay page,Tarkuni Homestead Residence at Tswalu Reserve | Wild Earth Stays
+/stay/tswalu-loapi-tented-suites,/safaris/tswalu-reserve,room of tswalu-reserve -> safari reserve,Toapi Tented Suites at Tswalu Reserve | Wild Earth Stays
+/stay/tswalu-motse,/safaris/tswalu-reserve,room of tswalu-reserve -> safari reserve,The Motse at Tswalu Reserve | Wild Earth Stays
+/stay/tswalu-tarkuni-homestead-villa,/safaris/tswalu-reserve,room of tswalu-reserve -> safari reserve,Tarkuni Homestead Residence at Tswalu Reserve | Wild Earth Stays
 /stay/ubuntu-migration-camp-by-asilia-classic-safari-tent,/stays/ubuntu-migration-camp-asilia,room of ubuntu-migration-camp-asilia -> stay page,Classic Safari Tent at Ubuntu Migration Camp by Asilia | Wild Earth Stays
 /stay/ubuntu-migration-camp-by-asilia-family-tent,/stays/ubuntu-migration-camp-asilia,room of ubuntu-migration-camp-asilia -> stay page,Family Tent at Ubuntu Migration Camp by Asilia | Wild Earth Stays
 /stay/ulum-moab-suite-tent,/destinations/usa-canada/utah,room of ulum-moab -> not on the new site yet; country page,Suite Tent at Ulum Moab | Wild Earth Stays

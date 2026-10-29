@@ -65,6 +65,7 @@ def country_from_title(t):
 SPECIAL = {
     "aliikai-voyage": ("/voyages/ships/aliikai", "Aliikai vessel profile"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
+    "gwe-gwe-beach": ("/stays/gwe-gwe-beach-lodge", "duplicate record retired 29 Oct 2026"),
 }
 
 def stay_target(slug):

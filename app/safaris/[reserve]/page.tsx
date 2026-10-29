@@ -23,7 +23,7 @@ import HeroMark from "@/components/notes/HeroMark";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
-import { KIND_LABEL, RESERVES, campReady, campStatus, reserveBySlug, reserveFrom, usd, type Reserve } from "@/lib/content/reserves";
+import { KIND_LABEL, RESERVES, campHref, campReady, campStatus, reserveBySlug, reserveFrom, usd, type Reserve } from "@/lib/content/reserves";
 import { stampForStatus, statusLine } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
@@ -49,7 +49,7 @@ const suitedFor = (r: Reserve) => suitedTo([r.stay.tagline, r.stay.quote, ...r.s
 const answerFor = (r: Reserve) => {
   const lodges = r.camps.filter((c) => c.kind === "camp").length, private_ = r.camps.length - lodges;
   const from = reserveFrom(r);
-  return `${r.name} is a private reserve in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under ${r.rsv}. It holds ${lodges} ${lodges === 1 ? "lodge" : "lodges and camps"}${private_ ? ` and ${private_} private ${private_ === 1 ? "residence or suite" : "residences and suites"}` : ""}, each with its own page.${from ? ` Registry rates start from ${usd(from)} per person, per night.` : ""}${r.stay.bestMonths ? ` Best months: ${r.stay.bestMonths}.` : ""}${r.stay.airport ? ` Fly into ${r.stay.airport}.` : ""} ${suitedFor(r).length ? `Best suited to ${suitedFor(r).join(", ").toLowerCase()}. ` : ""}Plan it with James or an advisor through Wild & Co Safaris.`;
+  return `${r.name} is a ${r.shared ? "reserve" : "private reserve"} in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under ${r.rsv}. It holds ${lodges} ${lodges === 1 ? "lodge" : "lodges and camps"}${private_ ? ` and ${private_} private ${private_ === 1 ? "residence or suite" : "residences and suites"}` : ""}, ${r.shared ? "each run on its own and filed with its own page" : "each with its own page"}.${from ? ` Registry rates start from ${usd(from)} per person, per night.` : ""}${r.stay.bestMonths ? ` Best months: ${r.stay.bestMonths}.` : ""}${r.stay.airport ? ` Fly into ${r.stay.airport}.` : ""} ${suitedFor(r).length ? `Best suited to ${suitedFor(r).join(", ").toLowerCase()}. ` : ""}Plan it with James or an advisor through Wild & Co Safaris.`;
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ reserve: string }> }) {
@@ -76,7 +76,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   const cards: CampCard[] = r.camps.map((c) => {
     const st = campStatus(r, c);
     const units = c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "";
-    return { slug: c.slug, name: c.name, kind: c.kind, kindLabel: KIND_LABEL[c.kind], href: campReady(c) ? `${path}/${c.slug}` : null, photos: [c.hero, ...c.gallery].filter((u, i, a): u is string => !!u && a.indexOf(u) === i).slice(0, 6), units, line: (c.intro || c.description).split(/(?<=\.)\s/)[0]?.slice(0, 180) ?? "", from: c.fromRate ? usd(c.fromRate) : null, fromBasis: c.kind === "camp" ? "per person, per night" : "as filed · basis with your quote", mark: st ? `${stampForStatus(st.status)} · ${st.date.slice(0, 4)}` : null };
+    return { slug: c.slug, name: c.name, kind: c.kind, kindLabel: KIND_LABEL[c.kind], href: campHref(r, c), photos: [c.hero, ...c.gallery].filter((u, i, a): u is string => !!u && a.indexOf(u) === i).slice(0, 6), units, line: (c.intro || c.description).split(/(?<=\.)\s/)[0]?.slice(0, 180) ?? "", from: c.fromRate ? usd(c.fromRate) : null, fromBasis: c.kind === "camp" ? "per person, per night" : "as filed · basis with your quote", mark: st ? `${stampForStatus(st.status)} · ${st.date.slice(0, 4)}` : null };
   });
   const facts: [string, string][] = [["Ledger ID", r.rsv], ["Reserve", `${r.area} · ${r.province}`], ["On the reserve", `${lodges} ${lodges === 1 ? "lodge" : "lodges & camps"}${r.camps.length > lodges ? ` · ${r.camps.length - lodges} private` : ""}`], ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ["Booked through", "Wild & Co Safaris"]];
   const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path }];
@@ -124,7 +124,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
                     const caps = c.rooms.map((m) => m.capacity).filter(Boolean) as number[];
                     return (
                       <tr key={c.slug} className="border-b ledger-rule align-top">
-                        <th scope="row" className="py-3 pr-4 text-left font-normal">{campReady(c) ? <Link href={`${path}/${c.slug}`} className="ledger-display text-[1.1rem] hover:ledger-crimson">{c.name}</Link> : <span className="ledger-display text-[1.1rem]">{c.name}</span>}{campStatus(r, c) && <span className="block ledger-eyebrow ledger-crimson mt-0.5">{stampForStatus(campStatus(r, c)!.status)}</span>}</th>
+                        <th scope="row" className="py-3 pr-4 text-left font-normal">{campHref(r, c) ? <Link href={campHref(r, c)!} className="ledger-display text-[1.1rem] hover:ledger-crimson">{c.name}</Link> : <span className="ledger-display text-[1.1rem]">{c.name}</span>}{campStatus(r, c) && <span className="block ledger-eyebrow ledger-crimson mt-0.5">{stampForStatus(campStatus(r, c)!.status)}</span>}</th>
                         <td className="py-3 pr-4">{KIND_LABEL[c.kind]}</td>
                         <td className="py-3 pr-4">{c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "Ask"}</td>
                         <td className="py-3 pr-4">{caps.length ? (Math.min(...caps) === Math.max(...caps) ? caps[0] : `${Math.min(...caps)}–${Math.max(...caps)}`) : "Ask"}</td>
@@ -151,7 +151,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
       </main>
       <ContactBar name={r.name} planHref={planHref} from={from ? `${usd(from)} pp/night` : undefined} />
       <ContactPill name={r.name} planHref={planHref} />
-      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter(campReady).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(`${path}/${c.slug}`), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
+      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter((c) => campHref(r, c)).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(campHref(r, c)!), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
     </>
   );
 }

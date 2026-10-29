@@ -6,16 +6,21 @@ import data from "./reserves.json";
 import type { HouseStatus } from "@/lib/ledger/status";
 
 export type ReserveRoom = { name: string; capacity: number | null; quantity: number | null; beds: string | null; from: number | null; currency: string; basis: string | null; photos: string[] };
-export type ReserveCamp = { slug: string; name: string; key: string; kind: "camp" | "residence" | "suite"; intro: string; description: string; units: string[]; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; rooms: ReserveRoom[]; fromRate: number | null };
+export type ReserveCamp = { slug: string; name: string; key: string; kind: "camp" | "residence" | "suite"; intro: string; description: string; units: string[]; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; rooms: ReserveRoom[]; fromRate: number | null;
+  // A lodge with its own Stay page (shared reserves such as Madikwe): the card links there.
+  stayHref?: string | null };
 type Block = { title?: string | null; body: string };
 export type ReserveStay = { ledgerId: string | null; tagline: string | null; quote: string | null; hero: string | null; gallery: string[]; bestMonths: string | null; bestMonthsNote: string | null; airport: string | null; airportDirections: string | null; coords: { lat: number; lng: number } | null; why: Block[]; experiences: { items: string[]; paras: string[] }; features: { items: string[]; paras: string[] }; onlyHere: string[]; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null };
-export type Reserve = { slug: string; name: string; rsv: string; area: string; province: string; stay: ReserveStay; camps: ReserveCamp[] };
+// shared: a reserve whose lodges are run independently (Madikwe), not one owner's camps.
+export type Reserve = { slug: string; name: string; rsv: string; area: string; province: string; shared?: boolean; stay: ReserveStay; camps: ReserveCamp[] };
 
 export const RESERVES = data.reserves as unknown as Reserve[];
 export const reserveBySlug = (slug: string) => RESERVES.find((r) => r.slug === slug);
 
 // A camp gets its own page when it has a photograph to lead with.
-export const campReady = (c: ReserveCamp) => !!c.hero;
+export const campReady = (c: ReserveCamp) => !!c.hero && !c.stayHref;
+// Where a camp card links: its own camp page, or its Stay page on a shared reserve.
+export const campHref = (r: Reserve, c: ReserveCamp) => c.stayHref ?? (campReady(c) ? `/safaris/${r.slug}/${c.slug}` : null);
 export const campBySlug = (r: Reserve, slug: string) => r.camps.find((c) => c.slug === slug && campReady(c));
 
 // Founder status per camp. The library holds house_status on Stay records

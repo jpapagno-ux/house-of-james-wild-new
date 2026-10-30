@@ -9,7 +9,8 @@ import { FinalCallBoard, TimeMark } from "@/components/ledger/VolumeKit";
 
 const LATE: VolumeKey[] = ["voyages", "overland"];
 
-export function OfferCard({ offer, volume }: { offer: Offer; volume: VolumeKey }) {
+export function OfferCard({ offer, volume: pageVolume }: { offer: Offer; volume: VolumeKey }) {
+  const volume = offer.volume ?? pageVolume;
   const v = VOLUME_STYLES[volume];
   const late = offer.program === "Final Call" && LATE.includes(volume);
   return (
@@ -20,7 +21,7 @@ export function OfferCard({ offer, volume }: { offer: Offer; volume: VolumeKey }
       <div>
         <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: v.leather }}>{offer.program}{late && v.finalCall ? ` · ${v.finalCall}` : ""}</p>
         <p className="ledger-display text-[1.6rem] leading-tight mt-1">{offer.headline}</p>
-        <p className="mt-2 text-[15px] leading-relaxed">{offer.name} · travel {offer.travel.text}.{offer.conditions ? ` ${offer.conditions}` : ""}</p>
+        <p className="mt-2 text-[15px] leading-relaxed">{offer.name} · {late ? offer.travel.text : `travel ${offer.travel.text}`}.{offer.conditions ? ` ${offer.conditions}` : ""}</p>
         <p className="mt-2 font-mono text-[10.5px] ledger-muted">{offer.id} · terms checked {offer.checked}</p>
       </div>
     </div>

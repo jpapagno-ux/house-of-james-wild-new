@@ -3036,7 +3036,7 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000066",
-   "subtitle": "1 vetted stays",
+   "subtitle": "2 vetted stays",
    "leading": "Sunlit coasts, rolling vineyards, and volcanic islands create a landscape shaped by ocean breeze and old world charm. The Azores add dramatic cliffs, crater lakes, and lush green hills rising from the Atlantic. Stays here blend history with contemporary comfort. Explore coastal paths, soak in geothermal pools, or wander through villages filled with tradition. Portugal and the Azores invite slow exploration and appreciation for natural beauty.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250969b15a80758dd2ed7c_GettyImages-2156783104.jpg",
@@ -3061,12 +3061,16 @@
       "good",
       "best",
       "best",
-      "best",
+      "good",
       "good"
      ]
     }
    ],
    "airports": [
+    [
+     "Lisbon Humberto Delgado Airport (LIS)",
+     "Serves 1 stay in the Ledger here"
+    ],
     [
      "Francisco Sá Carneiro Airport (OPO)",
      "Serves 1 stay in the Ledger here"
@@ -3077,7 +3081,7 @@
     ]
    ],
    "transfers": [],
-   "flyInto": "OPO · VRL",
+   "flyInto": "LIS · OPO",
    "bestShort": "Apr–Jun",
    "atlasName": "Portugal"
   },

@@ -997,10 +997,8 @@
    "slug": "da-licenca",
    "name": "Dá Licença",
    "country": "Portugal + Azores",
-   "missing": [
-    "coming_soon"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1ab46f8c4d5c2138e1d",

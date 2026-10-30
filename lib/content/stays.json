@@ -6401,6 +6401,74 @@
    "engine": null
   },
   {
+   "slug": "da-licenca",
+   "name": "Dá Licença",
+   "ledgerId": "STY-2026-000522",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "An art-filled silence among the Alentejo olive hills",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326052/jwco/stays/europe/da-licenca/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326054/jwco/stays/europe/da-licenca/grounds.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326056/jwco/stays/europe/da-licenca/main-house.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326058/jwco/stays/europe/da-licenca/suite-the-rock.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326060/jwco/stays/europe/da-licenca/suite-the-loft.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326062/jwco/stays/europe/da-licenca/suite-my-pool.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326064/jwco/stays/europe/da-licenca/suite-sky-pool.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326066/jwco/stays/europe/da-licenca/suite-sunset.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326068/jwco/stays/europe/da-licenca/suite-moon-cube.jpg"
+   ],
+   "bestMonths": "April to June and September to October",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 38.7747,
+    "lng": -7.582
+   },
+   "airport": "Lisbon Humberto Delgado Airport (LIS)",
+   "airportDirections": "About two hours by road from Lisbon airport to Estremoz; the house arranges the transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": null,
+     "body": "In the olive hills outside Estremoz, where the plain rolls red and silver toward the Spanish border, a former farmstead has been made into something rare: a small hotel that behaves like a private gallery, with only eight rooms and suites."
+    },
+    {
+     "title": null,
+     "body": "The house asks for almost nothing of its guests. Days are spent between the pool, the library and the grounds; the loudest sound is the wind through the olives. It is the counterpoint this house looks for in Europe: a stay with no adrenaline in it at all."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "ecocamp-patagonia",
    "name": "EcoCamp Patagonia",
    "ledgerId": "STY-2026-000072",

@@ -158,6 +158,7 @@ export const STAY_SLUGS: string[] = [
   "coot-club",
   "corks-vienna-woods",
   "cottars-1920-camp",
+  "da-licenca",
   "daunara-safari-camp",
   "dukes-camp-okavango",
   "dulini-anabezi-lodge",

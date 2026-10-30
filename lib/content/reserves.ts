@@ -11,7 +11,7 @@ export type ReserveCamp = { slug: string; name: string; key: string; kind: "camp
   // A lodge with its own Stay page (shared reserves such as Madikwe): the card links there.
   stayHref?: string | null };
 type Block = { title?: string | null; body: string };
-export type ReserveStay = { ledgerId: string | null; tagline: string | null; quote: string | null; hero: string | null; gallery: string[]; bestMonths: string | null; bestMonthsNote: string | null; airport: string | null; airportDirections: string | null; coords: { lat: number; lng: number } | null; why: Block[]; experiences: { items: string[]; paras: string[] }; features: { items: string[]; paras: string[] }; onlyHere: string[]; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null };
+export type ReserveStay = { ledgerId: string | null; tagline: string | null; quote: string | null; hero: string | null; gallery: string[]; bestMonths: string | null; bestMonthsNote: string | null; airport: string | null; airportDirections: string | null; coords: { lat: number; lng: number } | null; why: Block[]; experiences: { items: string[]; paras: string[] }; features: { items: string[]; paras: string[] }; onlyHere: string[]; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null; founderNote?: string | null };
 // shared: a reserve whose lodges are run independently (Madikwe), not one owner's camps.
 export type Reserve = { slug: string; name: string; rsv: string; area: string; province: string; shared?: boolean; stay: ReserveStay; camps: ReserveCamp[] };
 
@@ -22,7 +22,7 @@ type SharedDef = { slug: string; name: string; rsv: string; area: string; provin
 const SHARED: SharedDef[] = [
   { slug: "madikwe", name: "Madikwe Game Reserve", rsv: "RSV-2026-000008", area: "North West Province", province: "North West Province", stay: "madikwe", camps: ["jacis-private-lodge", "morukuru-farm-house"] },
 ];
-const fromStay = (s: StayData): ReserveStay => ({ ledgerId: s.ledgerId, tagline: s.tagline, quote: s.quote, hero: s.hero, gallery: s.gallery, bestMonths: s.bestMonths, bestMonthsNote: s.bestMonthsNote, airport: s.airport, airportDirections: s.airportDirections, coords: s.coords, why: s.why, experiences: s.experiences, features: s.features, onlyHere: s.onlyHere, country: s.country, countrySlug: s.countrySlug, regionSlug: s.regionSlug, status: s.status, statusDate: s.statusDate });
+const fromStay = (s: StayData): ReserveStay => ({ ledgerId: s.ledgerId, tagline: s.tagline, quote: s.quote, hero: s.hero, gallery: s.gallery, bestMonths: s.bestMonths, bestMonthsNote: s.bestMonthsNote, airport: s.airport, airportDirections: s.airportDirections, coords: s.coords, why: s.why, experiences: s.experiences, features: s.features, onlyHere: s.onlyHere, country: s.country, countrySlug: s.countrySlug, regionSlug: s.regionSlug, status: s.status, statusDate: s.statusDate, founderNote: s.founderNote });
 const campFromStay = (s: StayData): ReserveCamp => ({ slug: s.slug, name: s.name, key: s.name, kind: /house|villa|residence/i.test(s.name) ? "residence" : "camp", intro: s.tagline ?? "", description: s.quote ?? s.why[0]?.body ?? "", units: [...s.rooms.items], features: [...s.features.items], experiences: [...s.experiences.items], hero: s.hero, gallery: s.gallery, rooms: [], fromRate: null, stayHref: pageReady(s) ? `/stays/${s.slug}` : null });
 const shared: Reserve[] = SHARED.flatMap((d) => {
   const st = STAYS.find((s) => s.slug === d.stay);
@@ -52,8 +52,8 @@ export const campBySlug = (r: Reserve, slug: string) => r.camps.find((c) => c.sl
 // until the field exists on the camp record.
 //   Ivory Lodge: stayed and vetted May 2026, "a five-star favourite" (James, 25 Oct 2026)
 export const CAMP_STATUS: Record<string, { status: HouseStatus; date: string; line: string }> = {
-  //   The Motse: "where it all began for me at Tswalu", 2012 (James's own copy in the library)
-  "tswalu-reserve/motse": { status: "founder_visited", date: "2012", line: "James first stayed at The Motse in 2012; it is where Tswalu began for him" },
+  //   The Motse: "where it all began for me at Tswalu", May 2012; Tswalu is his number one founder favourite (James, 30 Oct 2026)
+  "tswalu-reserve/motse": { status: "founder_returned", date: "2012-05", line: "James stayed at The Motse in May 2012; Tswalu is his number one founder favourite" },
   "lion-sands/ivory-lodge": { status: "founder_visited", date: "2026-05", line: "James stayed at Ivory Lodge in May 2026 and calls it a five-star favourite" },
 };
 export const campStatus = (r: Reserve, c: ReserveCamp) => CAMP_STATUS[`${r.slug}/${c.slug}`];

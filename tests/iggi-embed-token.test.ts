@@ -23,5 +23,8 @@ test("only Contract C3 hosts may embed", () => {
   assert.equal(isApprovedEmbedHost("https://jameswildco.com"), true);
   assert.equal(isApprovedEmbedHost("https://WWW.jameswildco.com"), true);
   assert.equal(isApprovedEmbedHost("https://wildearthstays.com"), false);
+  assert.equal(isApprovedEmbedHost("https://house-of-james-wild-3429czo65-james-papagno-projects.vercel.app"), true);
+  assert.equal(isApprovedEmbedHost("https://house-of-james-wild-new-git-feature-x-james-papagno-projects.vercel.app"), true);
+  assert.equal(isApprovedEmbedHost("https://house-of-james-wild-evil.vercel.app"), false);
   assert.equal(isApprovedEmbedHost(null), false);
 });

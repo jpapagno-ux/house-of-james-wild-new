@@ -21,9 +21,13 @@ export const IGGI_EMBED_HOSTS = [
 
 export const IGGI_TOKEN_TTL_SECONDS = 15 * 60;
 
+/** The project's own Vercel preview deployments (James's team), so Stage 2 can be reviewed before production. Mirrors the Core's PREVIEW_ORIGIN_PATTERN. */
+export const PREVIEW_HOST_PATTERN = /^https:\/\/house-of-james-wild(-new)?(-[a-z0-9-]+)?-james-papagno-projects\.vercel\.app$/;
+
 export function isApprovedEmbedHost(origin: string | null | undefined): boolean {
   if (!origin) return false;
-  return (IGGI_EMBED_HOSTS as readonly string[]).includes(origin.toLowerCase());
+  const o = origin.toLowerCase();
+  return (IGGI_EMBED_HOSTS as readonly string[]).includes(o) || PREVIEW_HOST_PATTERN.test(o);
 }
 
 export function signEmbedToken(origin: string, secret: string, nowSeconds = Math.floor(Date.now() / 1000)): string {

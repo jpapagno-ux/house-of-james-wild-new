@@ -15,6 +15,9 @@ const config: Config = {
         sea: { DEFAULT: "#1E5F73", deep: "#123B55", teal: "#146663", lagoon: "#2F8A86", shallows: "#46B3AC", mist: "#E3EBEC", light: "#9CCFD8" },
         coast: { DEFAULT: "#22656E", deep: "#1D4F56", mist: "#E4EEEC", light: "#A9D3D6" },
         rust: { DEFAULT: "#94512F", wash: "#F7EFE6" },
+        // Wild Pathways (lib/pathways.ts): read the scoped variables set by .pathway-0n; see globals.css.
+        pathway: { DEFAULT: "var(--jw-path)", text: "var(--jw-path-text)", tint: "var(--jw-path-tint)" },
+        impact: { panel: "#E6E9DD", copy: "#405A45", highlight: "#94512F" },
       },
       fontFamily: {
         display: ["'Cormorant Garamond'", "Georgia", "'Times New Roman'", "serif"],

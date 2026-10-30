@@ -163,3 +163,32 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
   .jw-timemark-live { display: none !important; }
   .jw-timemark-still { display: inline-flex !important; }
 }
+
+/* ---------- Wild Pathways: semantic tokens (lib/pathways.ts is the source; Phase 1a, 30 Oct 2026) ----------
+   Additive only. House tokens, the six volume themes and --jw-accent are untouched: a pathway
+   never re-tints a page, it colours its own card, chip, marker or rule. Each pathway has an
+   accent (fills, markers), an AA text variant (words on white or card) and a tint (quiet wash).
+   The name is always printed beside the colour. */
+:root {
+  --jw-path-01: #38634B; --jw-path-01-text: #38634B; --jw-path-01-tint: #EBF0EC;
+  --jw-path-02: #426E79; --jw-path-02-text: #426E79; --jw-path-02-tint: #ECF2F3;
+  --jw-path-03: #7D8275; --jw-path-03-text: #696D62; --jw-path-03-tint: #F0F1EF;
+  --jw-path-04: #A0794F; --jw-path-04-text: #866642; --jw-path-04-tint: #F5F0EA;
+  --jw-path-05: #929785; --jw-path-05-text: #6C7062; --jw-path-05-tint: #F2F3F0;
+  --jw-path-06: #766B63; --jw-path-06-text: #766B63; --jw-path-06-tint: #F1EFEE;
+  --jw-path-07: #94512F; --jw-path-07-text: #94512F; --jw-path-07-tint: #F7EFE6;
+  --jw-path-08: #8D6958; --jw-path-08-text: #876554; --jw-path-08-tint: #F4F0EE;
+  /* Where Your Stay Gives Back (the Wild & Co. Impact Note): soft sage panel, forest copy, selective rust */
+  --jw-impact-panel: #E6E9DD; --jw-impact-copy: #405A45; --jw-impact-highlight: #94512F;
+  /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
+  --jw-char-james: #2D2A26; --jw-char-james-accent: #8B2525; --jw-char-iggi: #405A45;
+}
+/* A pathway-scoped element: .pathway-01 … .pathway-08 set --jw-path (and its text/tint) for the chip, card or marker inside. */
+.pathway-01 { --jw-path: var(--jw-path-01); --jw-path-text: var(--jw-path-01-text); --jw-path-tint: var(--jw-path-01-tint); }
+.pathway-02 { --jw-path: var(--jw-path-02); --jw-path-text: var(--jw-path-02-text); --jw-path-tint: var(--jw-path-02-tint); }
+.pathway-03 { --jw-path: var(--jw-path-03); --jw-path-text: var(--jw-path-03-text); --jw-path-tint: var(--jw-path-03-tint); }
+.pathway-04 { --jw-path: var(--jw-path-04); --jw-path-text: var(--jw-path-04-text); --jw-path-tint: var(--jw-path-04-tint); }
+.pathway-05 { --jw-path: var(--jw-path-05); --jw-path-text: var(--jw-path-05-text); --jw-path-tint: var(--jw-path-05-tint); }
+.pathway-06 { --jw-path: var(--jw-path-06); --jw-path-text: var(--jw-path-06-text); --jw-path-tint: var(--jw-path-06-tint); }
+.pathway-07 { --jw-path: var(--jw-path-07); --jw-path-text: var(--jw-path-07-text); --jw-path-tint: var(--jw-path-07-tint); }
+.pathway-08 { --jw-path: var(--jw-path-08); --jw-path-text: var(--jw-path-08-text); --jw-path-tint: var(--jw-path-08-tint); }

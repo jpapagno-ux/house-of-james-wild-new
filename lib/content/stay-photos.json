@@ -2142,6 +2142,55 @@
     }
    ],
    "credit": "Beckons"
+  },
+  "tierra-patagonia": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-aerial",
+     "alt": "Tierra Patagonia from the air, on the edge of Torres del Paine National Park, Chilean Patagonia"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-window-hills",
+     "alt": "Tierra Patagonia, Torres del Paine: timber-panelled room with a big window framing rolling hills"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-with-a-view",
+     "alt": "Tierra Patagonia, Torres del Paine: a guest room with a view out over the Patagonian landscape"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-lounge",
+     "alt": "Tierra Patagonia: the lodge's lounge",
+     "caption": "The lodge lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/superior-armchair-hills",
+     "alt": "Tierra Patagonia: armchair and paper lamp by a window onto grassy hills",
+     "caption": "Superior Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-chaise",
+     "alt": "Tierra Patagonia: mustard chaise, landscape painting and floor lamp in a suite lounge",
+     "caption": "Suite lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bedroom-stair",
+     "alt": "Tierra Patagonia: bedroom in pale timber with a built-in staircase",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bathtub",
+     "alt": "Tierra Patagonia: freestanding white tub in a timber-panelled bathroom",
+     "caption": "A bath in lenga wood"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/bathroom-tree-mural",
+     "alt": "Tierra Patagonia: timber bathroom with a vessel sink, tub and a tree mural on the shower glass",
+     "caption": "Tree on the glass"
+    }
+   ],
+   "credit": "Beckons"
   }
  }
 }

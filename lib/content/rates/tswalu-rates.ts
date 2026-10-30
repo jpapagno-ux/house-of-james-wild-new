@@ -7,6 +7,8 @@
 // Public rates only. Commission and net terms live in the studio (PartnerTerms),
 // never here and never on the site.
 
+import fx from "./fx.json";
+
 export const TSWALU_RATES_CHECKED = "2026-10-30";
 export const TSWALU_RATE_SOURCE = "Tswalu Kalahari public rate cards 2026 and 2027 (ZAR, per night, fully inclusive)";
 
@@ -78,11 +80,14 @@ export const EXCLUDED = [
   "Gratuities",
 ];
 // US dollars. Tswalu prices and invoices in rand; we show dollars first at a
-// dated mid-market rate, with the rand beside it. Re-set ZAR_PER_USD when the
-// rand moves; the dollar figure is confirmed at booking.
-export const ZAR_PER_USD = 16.61;
-export const FX_DATE = "30 Oct 2026";
-export const FX_SOURCE = "mid-market rate, 30 Oct 2026";
+// dated rate, with the rand beside it. The rate lives in fx.json and is
+// refreshed on the 1st of every month by .github/workflows/fx-refresh.yml;
+// the dollar figure is confirmed at booking.
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const fxDay = (iso: string) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${MONTHS[m - 1]} ${y}`; };
+export const ZAR_PER_USD: number = fx.rates.ZAR;
+export const FX_DATE = fxDay(fx.date);
+export const FX_SOURCE = `${fx.source}, ${FX_DATE}`;
 export const toUsd = (zarAmount: number) => zarAmount / ZAR_PER_USD;
 export const usd = (zarAmount: number) => `US$${Math.round(toUsd(zarAmount)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
 

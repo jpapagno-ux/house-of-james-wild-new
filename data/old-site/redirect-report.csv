@@ -475,7 +475,7 @@ old path,new path,why,old title
 /property/beckon-capella-lodge,/stays/beckon-capella-lodge,stay page,Beckon Capella Lodge | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-huka-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Beckon Huka Lodge | Luxury Stays in New Zealand | Wild Earth Stays
 /property/beckon-longitude-131,/stays/beckon-longitude-131,stay page,Beckon Longitude 131 | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-silky-oaks-lodge,/destinations/oceania/australia,not on the new site yet; country page,Beckon Silky Oaks Lodge | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-silky-oaks-lodge,/stays/beckon-silky-oaks-lodge,stay page,Beckon Silky Oaks Lodge | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-southern-ocean-lodge,/destinations/oceania/australia,not on the new site yet; country page,Beckon Southern Ocean Lodge | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-the-louise,/destinations/oceania/australia,not on the new site yet; country page,Beckon The Louise | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-tierra-atacama,/destinations/south-america/chile,not on the new site yet; country page,Beckon Tierra Atacama | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
@@ -963,12 +963,12 @@ old path,new path,why,old title
 /stay/beckon-longitude-131-dune-pavilion,/stays/beckon-longitude-131,room of beckon-longitude-131 -> stay page,Dune Pavilion at  Beckon Longitude 131 | Wild Earth Stays
 /stay/beckon-longitude-131-luxury-tent,/stays/beckon-longitude-131,room of beckon-longitude-131 -> stay page,Luxury Tent at  Beckon Longitude 131 | Wild Earth Stays
 /stay/beckon-longitude-131-luxury-tent-premium-view,/stays/beckon-longitude-131,room of beckon-longitude-131 -> stay page,Luxury Tent Premium View at  Beckon Longitude 131 | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-billabong-suite,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Billabong Suite at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-daintree-pavilion,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Daintree Pavilion at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-rainforest-retreat,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Rainforest Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-riverhouse,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Riverhouse at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-treehouse-premium,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Treehouse Premium at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-silky-oaks-lodge-treehouse-retreat,/destinations/oceania/australia,room of beckon-silky-oaks-lodge -> not on the new site yet; country page,Treehouse Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-billabong-suite,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Billabong Suite at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-daintree-pavilion,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Daintree Pavilion at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-rainforest-retreat,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Rainforest Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-riverhouse,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Riverhouse at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-treehouse-premium,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Treehouse Premium at Beckon Silky Oaks Lodge | Wild Earth Stays
+/stay/beckon-silky-oaks-lodge-treehouse-retreat,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Treehouse Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
 /stay/beckon-southern-ocean-lodge-baillie-pavilion,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion at  Beckon Southern Ocean Lodge | Wild Earth Stays
 /stay/beckon-southern-ocean-lodge-baillie-pavilion-east,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion East at  Beckon Southern Ocean Lodge | Wild Earth Stays
 /stay/beckon-southern-ocean-lodge-baillie-pavilion-west,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion West at  Beckon Southern Ocean Lodge | Wild Earth Stays

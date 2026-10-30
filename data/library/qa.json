@@ -67,7 +67,9 @@
    "slug": "alila-ventana-big-sur",
    "name": "Alila Ventana Big Sur",
    "country": "California",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -481,12 +483,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d7",
    "slug": "beckon-silky-oaks-lodge",
-   "name": "Beckon Silky Oaks Lodge",
+   "name": "Silky Oaks Lodge",
    "country": "Australia",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d8",
@@ -840,7 +840,9 @@
    "slug": "chable-yucatan",
    "name": "Chablé Yucatán",
    "country": "Mexico",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1318,7 +1320,9 @@
    "slug": "feline-fields-vintage-camp",
    "name": "Feline Fields Vintage Camp",
    "country": "Botswana",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1556,7 +1560,8 @@
    "name": "Hotel Esencia",
    "country": "Mexico",
    "missing": [
-    "hero_photo"
+    "hero_photo",
+    "coordinates"
    ],
    "released": false
   },
@@ -1973,6 +1978,7 @@
    "name": "Kwando 4 Rivers Camp",
    "country": "Botswana",
    "missing": [
+    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2013,6 +2019,7 @@
    "name": "Kwando Mma Dinare Camp",
    "country": "Botswana",
    "missing": [
+    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2053,6 +2060,7 @@
    "name": "Kwando Rra Dinare Camp",
    "country": "Botswana",
    "missing": [
+    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2110,7 +2118,9 @@
    "slug": "la-tahaa",
    "name": "Le Taha’a by Pearl Resorts",
    "country": "Tahiti",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2470,7 +2480,9 @@
    "slug": "mutiara-laut",
    "name": "Mutiara Laut “Pearl of the Sea”",
    "country": "Indonesia",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2592,7 +2604,9 @@
    "slug": "ngare-camp-by-serian",
    "name": "Ngare Camp Serian",
    "country": "Kenya",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2672,7 +2686,9 @@
    "slug": "nomade-holbox",
    "name": "WildEarth Nômade Holbox",
    "country": "Mexico",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2688,7 +2704,9 @@
    "slug": "nomade-temple-madrid",
    "name": "Nomade Temple Madrid Coming 2025",
    "country": "Spain",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2696,7 +2714,9 @@
    "slug": "nomade-tulum",
    "name": "Nomade Tulum",
    "country": "Mexico",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2846,7 +2866,9 @@
    "slug": "paws-up-resort",
    "name": "Paws Up Resort",
    "country": "Montana",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3227,7 +3249,9 @@
    "slug": "silolona-sojourns",
    "name": "Silolona Sojourns Indonesia",
    "country": "Indonesia",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3336,9 +3360,7 @@
    "slug": "singita-malilangwe-house",
    "name": "Singita Malilangwe House",
    "country": "Zimbabwe",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3614,7 +3636,9 @@
    "slug": "soneva-fushi-maldives",
    "name": "Soneva Fushi Maldives Original Barefoot Luxury",
    "country": "Maldives",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3622,7 +3646,9 @@
    "slug": "soneva-jani-maldives",
    "name": "Soneva Jani Maldives Exclusive Island & Overwater Residences",
    "country": "Maldives",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3630,7 +3656,9 @@
    "slug": "soneva-secret-maldives",
    "name": "Soneva Secret Ultra‑Bespoke Island Retreat",
    "country": "Maldives",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -4151,7 +4179,9 @@
    "slug": "ubuntu-migration-camp-asilia",
    "name": "Ubuntu Migration Camp by Asilia",
    "country": "Tanzania",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

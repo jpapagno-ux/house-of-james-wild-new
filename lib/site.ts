@@ -197,6 +197,16 @@ export const LEGAL_NAV: NavLink[] = [
 // for the link guard's BUILT list). Grows step by step.
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
+  // Wild Pathways: approved by James, 30 Oct 2026, once batch 1 (30 live records) was on the pages.
+  { path: "/pathways", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/pathways/into-the-green", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/between-tides", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/above-it-all", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/where-the-wild-lives", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/the-art-of-stillness", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/off-the-map", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/a-place-of-our-own", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/rooted-in-place", priority: 0.7, changeFrequency: "weekly" },
   // Guides: copy signed off by James, 27 Oct 2026.
   { path: "/destinations/asia/indonesia", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/raja-ampat", priority: 0.8, changeFrequency: "monthly" },

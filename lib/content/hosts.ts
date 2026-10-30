@@ -73,6 +73,18 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
       "Pairing DumaTau with other Wilderness camps, and anything that keeps you up at night",
     ],
   } },
+  "stay:wilderness-little-duma-tau": { state: "available", host: {
+    name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
+    tz: "America/New_York", place: "North America", zoneLabel: "US Eastern Time",
+    calendlyUrl: `${GROUP_CALENDLY}?property=wilderness-little-duma-tau`,
+    topics: [
+      "Little DumaTau's suites and which suits your party",
+      "What the rate includes and what's extra",
+      "Your dates against the best months in the Linyanti",
+      "Getting there: flights into Maun or Kasane and the light-aircraft transfer",
+      "Pairing DumaTau with other Wilderness camps, and anything that keeps you up at night",
+    ],
+  } },
   "voyage:aliikai": { state: "available", host: {
     name: "Aliikai Cruise Director", role: "Your host · aboard Aliikai, Raja Ampat", sample: true, seats: 6,
     tz: "Asia/Jayapura", place: "Raja Ampat", zoneLabel: "Eastern Indonesia Time (UTC+9)",

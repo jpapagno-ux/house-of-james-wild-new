@@ -12,14 +12,16 @@ import type { NavLink } from "@/lib/site";
 // Gatherings, Voyages, Overland, Destinations, Journal). Each shows what's
 // filed today and fills from the Ledger export as the volume grows.
 
-export function HubShell({ eyebrow, title, intro, answer, path, name, browse = [], filling, children, closeTitle }: {
+export function HubShell({ eyebrow, title, intro, answer, path, name, browse = [], filling, children, closeTitle, trail }: {
   eyebrow: string; title: string; intro: string; answer: string; path: string; name: string; browse?: NavLink[]; filling: string; children: React.ReactNode; closeTitle?: string;
+  /** Visible breadcrumb trail. Defaults to Home › name; nested hubs pass the same trail they give the BreadcrumbList schema. */
+  trail?: { name: string; path: string }[];
 }) {
   const chips = browse.filter((b) => !GUARD_ON || isBuilt(b.href));
   return (
     <main id="main" className="pt-6 md:pt-10 pb-20">
       <div className="max-w-ledger mx-auto px-5 md:px-10">
-        <div className="mb-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name, path }]} /></div>
+        <div className="mb-6"><Breadcrumbs trail={trail ?? [{ name: "Home", path: "/" }, { name, path }]} /></div>
         <header className="max-w-3xl">
           <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>
           <h1 className="ledger-display text-[2.3rem] leading-[1.1] md:text-[3.3rem] mt-3">{title}</h1>

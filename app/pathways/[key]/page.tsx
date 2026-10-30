@@ -25,7 +25,7 @@ export function generateStaticParams() { return PATHWAYS_ON ? PATHWAY_LIST.map((
 export async function generateMetadata({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!p) return {};
-  return buildMetadata({ title: `${p.name}: ${p.setting} Stays Vetted by James Wild & Co`, description: `${p.line} Vetted ${p.setting.toLowerCase()} stays from the James Wild & Co Ledger, each under a permanent Ledger ID.`, path: `/pathways/${p.key}`, noindex: true /* until approved */ });
+  return buildMetadata({ title: `${p.name}: ${p.setting} Stays Vetted by James Wild & Co`, description: `${p.line} Vetted ${p.setting.toLowerCase()} stays from the James Wild & Co Ledger, each under a permanent Ledger ID.`, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
 }
 
 export default async function PathwayPage({ params }: { params: Promise<{ key: string }> }) {

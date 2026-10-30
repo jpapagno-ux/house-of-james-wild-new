@@ -16,7 +16,7 @@ import { breadcrumbs, graph, ids } from "@/lib/schema";
 // (lib/content/pathways/preview.ts) until each pathway has its own hero.
 
 const PATH = "/pathways";
-export const metadata = buildMetadata({ title: "Wild Pathways: Eight Ways Into the James Wild & Co Ledger", description: "Rainforest, islands, mountains, wildlife, stillness, hidden places, private houses and heritage: eight editorial collections of stays vetted by James Wild & Co.", path: PATH, noindex: true /* until approved */ });
+export const metadata = buildMetadata({ title: "Wild Pathways: Eight Ways Into the James Wild & Co Ledger", description: "Rainforest, islands, mountains, wildlife, stillness, hidden places, private houses and heritage: eight editorial collections of stays vetted by James Wild & Co.", path: PATH, noindex: false /* approved by James, 30 Oct 2026 */ });
 
 export default function PathwaysIndex() {
   if (!PATHWAYS_ON) notFound();

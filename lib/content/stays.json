@@ -6435,20 +6435,40 @@
     "lat": 38.7747,
     "lng": -7.582
    },
-   "airport": "Lisbon Humberto Delgado Airport (LIS)",
-   "airportDirections": "About two hours by road from Lisbon airport to Estremoz; the house arranges the transfer.",
+   "airport": "Lisbon (LIS)",
+   "airportDirections": "About two hours by road east from Lisbon airport to the estate outside Estremoz.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
+    "paras": [
+     "The Rock: infused with Japanese ambience, shaped as an amphitheatre so you can lie back and take in the view.",
+     "The Loft: a large open studio in three spaces, bedroom, living area and bathroom, with windows onto the landscape.",
+     "My Pool: built like a yacht, with Scandinavian furniture and its own pool.",
+     "Sky Pool: as free as a bird above the Alentejo olive hills.",
+     "Sunset: a private rooftop, made for romance.",
+     "The Moon Cube: a standalone cube in the grounds, the estate's most sculptural sleep."
+    ],
     "items": []
    },
    "experiences": {
     "paras": [],
-    "items": []
+    "items": [
+     "Olive oil tasting from the estate's own groves",
+     "Stargazing under one of Europe's darkest skies",
+     "Day trip to Évora, a UNESCO World Heritage city",
+     "Estremoz marble old town and its Saturday market",
+     "Private viewing of the owners' art collection",
+     "Alentejo wine tastings in the surrounding countryside"
+    ]
    },
    "features": {
     "paras": [],
-    "items": []
+    "items": [
+     "Outdoor pool alone in the olive groves",
+     "The owners' art collection hung through the house",
+     "Library and quiet sitting rooms",
+     "Restaurant and bar with an Alentejo wine list",
+     "Gardens and walking paths across the estate"
+    ]
    },
    "onlyHere": [],
    "why": [
@@ -6461,7 +6481,12 @@
      "body": "The house asks for almost nothing of its guests. Days are spent between the pool, the library and the grounds; the loudest sound is the wind through the olives. It is the counterpoint this house looks for in Europe: a stay with no adrenaline in it at all."
     }
    ],
-   "facts": {},
+   "facts": {
+    "best_months": "April to June and September to October",
+    "how_to_get_there": "About two hours by road from Lisbon airport, near Estremoz in the Alentejo.",
+    "signature_experiences": "Olive oil from the estate's groves, dark-sky stargazing, Évora for a morning, and the Estremoz Saturday market.",
+    "who_its_for": "Couples and honeymooners who want stillness over spectacle, design and art collectors, and slow travellers pairing the Alentejo with Évora and the coast."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,

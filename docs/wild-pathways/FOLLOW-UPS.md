@@ -31,7 +31,7 @@ Running record. One line per item; closed items stay for the audit trail.
 |---|---|---|---|
 | 1 | Batch 1 classifications | James | **Closed** — 40 records approved in the library, 30 Oct 2026 (`pathway_classified_by: James Papagno (batch 1, drafted by Iggi)`) |
 | 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | this initiative | Closed 30 Oct 2026 — re-snapshotted under production env (550 pages, 491 indexable); snapshot now records real robots state |
-| 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | `template-pass-marks` | Open — pre-existing, outside this branch |
+| 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | this initiative | Closed 30 Oct 2026 — captions use the `ink.faint` token (5.08:1); dots keep the 2px bar inside a 24×24 target. axe: 0 contrast / target-size issues on stay and country pages |
 | 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Deferred to Phase 2F, after data population |
 | 5 | Base44 `siteExport` picks up the 2A change | — | **Closed** — confirmed by the 30 Oct manual sync (`7d831d4`): 30 approved classifications exported |
 | 7 | Vercel `NEXT_PUBLIC_PATHWAYS=on` | — | **Closed** — set on Preview (07:37) and Production (08:42) on James's instruction |
@@ -39,6 +39,8 @@ Running record. One line per item; closed items stay for the audit trail.
 | 10 | Phase 2F (dialogue schema) | this initiative | Open — next |
 | 12 | Naming: traveller's saved collection is the **Folio** ("Save to My Folio"); the **Ledger** is the house portfolio — its volumes and content vetted by James Wild. Decided by James 30 Oct 2026; no account copy changes | James | Closed |
 | 14 | Dulini Daunara Lodge linked to the Botswana destination in the library (Okavango coordinates; changed 30 Oct 2026 10:57 UTC by another effort). Page title now says Botswana; lodge is Sabi Sand, South Africa. Needs James's approval to relink | James | Open |
+| 15 | Stay record: literal `<br/>` shows as text in the Airport field (In Short paragraph and Ledger table, e.g. Tswalu). Library `airport_name` carries HTML the exporter doesn't strip | library / export owner | Open |
+| 16 | axe on stay pages (pre-existing): room-photo scrollers and the mobile record bar lack keyboard access (`scrollable-region-focusable`); some content outside landmarks (`region`) | stay template owner | Open |
 | 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
 | 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
 | 8 | HubShell breadcrumb only two levels on `/pathways/[key]` | this initiative | Closed 30 Oct 2026 — HubShell takes a `trail`; pathway pages show Home › Pathways › name and emit one BreadcrumbList (the page-level duplicate removed) |

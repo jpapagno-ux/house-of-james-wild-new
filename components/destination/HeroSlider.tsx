@@ -96,7 +96,9 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
           </span>
           <div className="hidden md:flex items-center gap-1.5">
             {slides.map((x, k) => (
-              <button key={x.src} type="button" aria-label={`Photo ${k + 1}${x.caption ? `: ${x.caption}` : ""}`} aria-pressed={k === i} onClick={() => setI(k)} className={`h-[2px] transition-all duration-500 ${k === i ? "w-8 bg-white" : "w-3 bg-white/40 hover:bg-white/70"}`} />
+              <button key={x.src} type="button" aria-label={`Photo ${k + 1}${x.caption ? `: ${x.caption}` : ""}`} aria-pressed={k === i} onClick={() => setI(k)} className="group flex h-6 min-w-6 items-center justify-center" /* 24px target (WCAG 2.5.8); the bar stays 2px */>
+                <span aria-hidden="true" className={`block h-[2px] transition-all duration-500 ${k === i ? "w-8 bg-white" : "w-3 bg-white/40 group-hover:bg-white/70"}`} />
+              </button>
             ))}
           </div>
           <button type="button" onClick={() => go(-1)} aria-label="Previous photo" className="w-10 h-10 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-ink transition-colors">

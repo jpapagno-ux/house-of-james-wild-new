@@ -58,6 +58,8 @@ import { graph, ids, imageObject, lodging } from "@/lib/schema";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
 import { PathwayChips } from "@/components/pathways/Pathway";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { onPathway, pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 
@@ -208,6 +210,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">More Stays We&rsquo;d Send You To</h2>
               <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
             </section>
+          )}
+          {IGGI_ON && (
+            /* Iggi Intelligence Core, Stage 2 (flag NEXT_PUBLIC_IGGI=on): Iggi answers from the Ledger with this stay as page context. */
+            <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />
           )}
           {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
           {pw && <>

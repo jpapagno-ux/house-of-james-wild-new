@@ -110,7 +110,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-lake-serengeti-under-canvas",
@@ -218,7 +220,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-sussuvlei-desert-lodge",
@@ -297,7 +301,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-vira-vira-lodge",
@@ -367,7 +373,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "benguerra-island-by-and-beyond",
@@ -444,7 +452,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chobe-under-canvas-by-and-beyond",
@@ -516,7 +526,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-grumeti-safari-camp",
@@ -581,7 +593,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-kichwa-camp",
@@ -660,7 +674,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-kleins-camp",
@@ -731,7 +747,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "aguas-claras",
@@ -860,7 +878,34 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05",
+     "PATH-08"
+    ],
+    "setting": "caribbean_coast_costa_rica",
+    "intentions": [
+     "beach",
+     "surf",
+     "wellness",
+     "culture"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "solo",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "aliikai-voyage",
@@ -948,7 +993,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "alila-ventana-big-sur",
@@ -1027,7 +1074,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "alya-catamaran-galapagos",
@@ -1101,7 +1150,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "amazon-field-station-byinkaterra",
@@ -1169,7 +1220,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ambiente-tm-sedona",
@@ -1240,7 +1293,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "amor-arenal",
@@ -1317,7 +1372,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-bophut-koh-samui-resort",
@@ -1391,7 +1448,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-chiang-mai-resort",
@@ -1462,7 +1521,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-golden-triangle-chiang-rai",
@@ -1541,7 +1602,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-hua-hin",
@@ -1620,7 +1683,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-mui-ne",
@@ -1691,7 +1756,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "anantara-ubud-bali",
@@ -1770,7 +1837,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "angama-amboseli",
@@ -1851,7 +1920,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "amboseli",
+    "intentions": [
+     "elephants",
+     "kilimanjaro_views"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "angama-mara",
@@ -1945,7 +2036,31 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "maasai_mara_escarpment",
+    "intentions": [
+     "big_five",
+     "migration",
+     "views"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "first_safari"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "angama-safari-camp",
@@ -2013,7 +2128,30 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "maasai_mara",
+    "intentions": [
+     "big_five",
+     "migration",
+     "mobile_camp"
+    ],
+    "suitability": [
+     "couples",
+     "photographers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "arenal-springs-camp-by-nayara",
@@ -2084,7 +2222,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "arenas-del-mar-resort",
@@ -2166,7 +2306,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ariel-house",
@@ -2267,7 +2409,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "arijiju-laikipia",
@@ -2350,7 +2494,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "asilia-rekero-camp",
@@ -2428,7 +2574,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "awasi-atacama",
@@ -2501,7 +2649,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "iguazu",
@@ -2576,7 +2726,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "awasi-mendoza",
@@ -2651,7 +2803,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "awasi-patagonia",
@@ -2730,7 +2884,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "awasi-santa-catarina",
@@ -2803,7 +2959,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "babylonstoren",
@@ -2907,7 +3065,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "baines-lodge",
@@ -2975,7 +3135,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "bateleur-camp-by-and-beyond",
@@ -3051,7 +3213,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "baymanhi-exuma",
@@ -3131,7 +3295,29 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "out_islands_exuma",
+    "intentions": [
+     "beach",
+     "diving",
+     "slow_days"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "be-tulum",
@@ -3208,7 +3394,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "birkenhead-house",
@@ -3293,7 +3481,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "blancaneaux-lodge",
@@ -3396,7 +3586,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "blue-reef",
@@ -3492,7 +3684,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "boluntiku-hotel",
@@ -3535,7 +3729,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "borana",
@@ -3614,7 +3810,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "breac-house",
@@ -3700,7 +3898,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -3815,7 +4015,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "camp-hwange-muddy-teak",
@@ -3912,7 +4114,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "cap-karoso",
@@ -4009,7 +4213,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "cape-cadogan-boutique-hotel",
@@ -4121,7 +4327,28 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "city_cape_town",
+    "intentions": [
+     "base_for_the_cape",
+     "heritage"
+    ],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "beckon-capella-lodge",
@@ -4233,7 +4460,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "capella-ubud",
@@ -4306,7 +4537,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "cardamom-tented-camp",
@@ -4379,7 +4612,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "castle-leslie",
@@ -4460,7 +4695,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "celestia-yacht",
@@ -4541,7 +4778,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chable-yucatan",
@@ -4620,7 +4859,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chamilandu-lodge",
@@ -4689,7 +4930,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "cheetah-plains",
@@ -4791,7 +5034,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chem-chem",
@@ -4862,7 +5107,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chiawa-safaris",
@@ -4925,7 +5172,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chindeni-lodge",
@@ -4990,7 +5239,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "chumbe-island-zanzibar",
@@ -5064,7 +5315,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "clayoquot-wilderness-resort",
@@ -5146,7 +5399,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "coco-costa-rica",
@@ -5189,7 +5446,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "coco-plum-island-resort",
@@ -5287,7 +5546,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "como-shambhala-estate",
@@ -5359,7 +5620,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "conrad-tulum-riviera-maya",
@@ -5436,7 +5699,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "coot-club",
@@ -5548,7 +5813,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "corks-vienna-woods",
@@ -5619,7 +5886,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "cottars-1920-camp",
@@ -5702,7 +5971,33 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08",
+     "PATH-07"
+    ],
+    "setting": "maasai_mara",
+    "intentions": [
+     "heritage",
+     "big_five",
+     "migration",
+     "community"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "the-original-camp-by-serian",
@@ -5769,7 +6064,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "daunara-safari-camp",
@@ -5840,7 +6137,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "great-plains-duba-plains",
@@ -5899,7 +6198,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "dukes-camp-okavango",
@@ -5977,7 +6278,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "dulini-anabezi-lodge",
@@ -6041,7 +6344,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "dulini-daunara-lodge",
@@ -6139,7 +6444,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "dulini-leadwood-lodge",
@@ -6231,7 +6538,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "dulini-moya-lodge",
@@ -6319,7 +6628,30 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "sabi_sand",
+    "intentions": [
+     "big_five",
+     "first_safari",
+     "leopard"
+    ],
+    "suitability": [
+     "couples",
+     "first_safari"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "dulini-river-lodge",
@@ -6406,7 +6738,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "asilia-dunia-camp",
@@ -6484,7 +6818,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "da-licenca",
@@ -6577,7 +6913,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "europe"
+   ]
   },
   {
    "slug": "ecocamp-patagonia",
@@ -6654,7 +6994,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ecoventura-evolve-yacht",
@@ -6729,7 +7071,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ecoventura-origin-yacht",
@@ -6804,7 +7148,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ecoventura-theory-yacht",
@@ -6879,7 +7225,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "el-mapi-byinkaterra",
@@ -6951,7 +7299,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "elephann-pan-khwai",
@@ -7026,7 +7376,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ellerman-house",
@@ -7142,7 +7494,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "city_cape_town",
+    "intentions": [
+     "base_for_the_cape",
+     "art",
+     "food_and_wine"
+    ],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "elsas-kopje",
@@ -7195,7 +7569,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "encounter-mara-camp-by-asilia",
@@ -7270,7 +7646,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "entara-esirai-camp",
@@ -7338,7 +7716,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "etosha-mountain-lodge",
@@ -7409,7 +7789,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-el-calafate",
@@ -7474,7 +7856,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-el-chalten",
@@ -7546,7 +7930,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-rapa-nui",
@@ -7618,7 +8004,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-sacred-valley",
@@ -7690,7 +8078,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-torres-del-paine",
@@ -7760,7 +8150,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "torres-del-paine-c-reserve",
@@ -7826,7 +8218,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "explora-at-atacama",
@@ -7897,7 +8291,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "feline-fields-lodge",
@@ -7966,7 +8362,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "feline-fields-vintage-camp",
@@ -8039,7 +8437,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "fogo-island-inn",
@@ -8110,7 +8510,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "gibbs-farm",
@@ -8182,7 +8584,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "giraffe-manor",
@@ -8247,7 +8651,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "gomoti-plains-camp",
@@ -8317,7 +8723,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "gorongosa-safaris",
@@ -8418,7 +8826,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "greystoke-mahale-by-nomad",
@@ -8494,7 +8904,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "grootbos-private-nature-reserve",
@@ -8595,7 +9007,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "gwe-gwe-beach",
@@ -8641,7 +9055,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "gwe-gwe-beach-lodge",
@@ -8730,7 +9146,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "hayfield-manor",
@@ -8804,7 +9222,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "hemingways-nairobi",
@@ -8905,7 +9325,28 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "nairobi_karen",
+    "intentions": [
+     "safari_gateway",
+     "food_and_wine"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "hermanus-private-residences",
@@ -8992,7 +9433,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "hidden-valley-lodge",
@@ -9083,7 +9526,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "hotel-bardo",
@@ -9158,7 +9603,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "house-in-the-wild-masai-mara",
@@ -9233,7 +9680,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-huka-lodge",
@@ -9315,7 +9764,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "inkaterra-cabo-blanco",
@@ -9387,7 +9840,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "inkaterra-hacienda-concepcion",
@@ -9461,7 +9916,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "inkaterra-hacienda-urubamba",
@@ -9534,7 +9991,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "inkaterra-la-casona",
@@ -9609,7 +10068,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "inkaterra-machu-picchu-pueblo-hotel",
@@ -9686,7 +10147,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "inkaterra-reserva-amazonica",
@@ -9756,7 +10219,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "isla-palenque-resort",
@@ -9831,7 +10296,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "isla-secas",
@@ -9901,7 +10368,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "isla-secas-panama",
@@ -9986,7 +10455,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ja-manufaru-maldives",
@@ -10065,7 +10536,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "jabulani",
@@ -10111,7 +10584,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "jacis-private-lodge",
@@ -10190,7 +10665,32 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "madikwe",
+    "intentions": [
+     "big_five",
+     "first_safari",
+     "malaria_free"
+    ],
+    "suitability": [
+     "families",
+     "first_safari",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays",
+    "gatherings"
+   ]
   },
   {
    "slug": "jacks-camp",
@@ -10262,7 +10762,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "jacks-private-camp",
@@ -10334,7 +10836,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "jaguar-reef-lodge",
@@ -10432,7 +10936,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "jao-camp",
@@ -10502,7 +11008,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ka-ana-resort",
@@ -10601,7 +11109,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kaaba-luum-mexico",
@@ -10680,7 +11190,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kamalaya-koh-samui",
@@ -10751,7 +11263,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kayumanis-jimbaran-private-estates",
@@ -10831,7 +11345,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kayumanis-nusa-dua",
@@ -10914,7 +11430,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kayumanis-ubud",
@@ -10999,7 +11517,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "khwai-leadwood-camp",
@@ -11069,7 +11589,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "khwai-lediba",
@@ -11139,7 +11661,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kichakani-camp",
@@ -11208,7 +11732,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kicheche-mara-north",
@@ -11286,7 +11812,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -11364,7 +11892,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kruger-shalati",
@@ -11410,7 +11940,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kualoa-ranch",
@@ -11486,7 +12018,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kudadoo-private-island",
@@ -11565,7 +12099,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kura-boutique-resort",
@@ -11646,7 +12182,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-4-rivers",
@@ -11724,7 +12262,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-kwara",
@@ -11805,7 +12345,30 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "okavango_delta",
+    "intentions": [
+     "big_game",
+     "photography",
+     "water_and_land"
+    ],
+    "suitability": [
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "kwando-lagoon",
@@ -11886,7 +12449,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "linyanti",
+    "intentions": [
+     "predators",
+     "photography"
+    ],
+    "suitability": [
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "kwando-lebala",
@@ -11967,7 +12552,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "linyanti",
+    "intentions": [
+     "big_game",
+     "photography"
+    ],
+    "suitability": [
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "kwando-mma-dinare",
@@ -12045,7 +12652,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-moremi-crossing",
@@ -12126,7 +12735,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-nxai-pan",
@@ -12206,7 +12817,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-pom-pom",
@@ -12287,7 +12900,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-rra-dinare",
@@ -12365,7 +12980,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-splash",
@@ -12446,7 +13063,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwando-tau-pan",
@@ -12527,7 +13146,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "kwande-private-game-reserve",
@@ -12641,7 +13262,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "la-cle",
@@ -12749,7 +13372,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "la-residence",
@@ -12842,7 +13467,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "la-valise-tulum",
@@ -12913,7 +13540,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -12983,7 +13612,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lalibela-reserve",
@@ -13101,7 +13732,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lapa-rios-lodge",
@@ -13175,7 +13808,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "le-quartier-francais",
@@ -13279,7 +13914,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": "le-quartier-francais"
+   "engine": "le-quartier-francais",
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "la-tahaa",
@@ -13358,7 +13995,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "leeu-estates",
@@ -13462,7 +14101,31 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": "leeu-estates-resorts"
+   "engine": "leeu-estates-resorts",
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05",
+     "PATH-03"
+    ],
+    "setting": "winelands",
+    "intentions": [
+     "food_and_wine",
+     "restoration",
+     "base_for_the_cape"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "food_and_wine"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "leeu-house",
@@ -13565,7 +14228,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": "leeu-house"
+   "engine": "leeu-house",
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lekkerwater-dehoop",
@@ -13665,7 +14330,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lengishu-kenya",
@@ -13737,7 +14404,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "leopard-hills",
@@ -13844,7 +14513,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lepogo-lodges",
@@ -13890,7 +14561,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lewa-wilderness-lodge",
@@ -13964,7 +14637,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lion-sands",
@@ -14077,7 +14752,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lolebezi-lodge",
@@ -14151,7 +14828,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "londolozi-reserve",
@@ -14258,7 +14937,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-longitude-131",
@@ -14343,7 +15024,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-08",
+     "PATH-05"
+    ],
+    "setting": "outback_uluru",
+    "intentions": [
+     "desert",
+     "culture",
+     "stillness"
+    ],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "loirien-mara",
@@ -14419,7 +15122,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "machaba",
@@ -14501,7 +15206,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "madikwe",
@@ -14604,7 +15311,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "mara-plains-camp-by-great-plains",
@@ -14671,7 +15380,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "mara-toto-tree-camp-by-great-plains",
@@ -14741,7 +15452,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "masoala-forest-lodge",
@@ -14859,7 +15572,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "matachica-resort-and-spa",
@@ -14958,7 +15673,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "matetsi-victoria-falls",
@@ -15030,7 +15747,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "meno-a-kwena-camp",
@@ -15100,7 +15819,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "mezzanine-tulum",
@@ -15171,7 +15892,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "mfuwe-lodge",
@@ -15236,7 +15959,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "miavana-by-time-tide",
@@ -15317,7 +16042,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beyond-mnemba-by-and-beyond",
@@ -15390,7 +16117,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "monachira-camp",
@@ -15464,7 +16193,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "monwana-thornybush",
@@ -15563,7 +16294,31 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "bushveld_thornybush",
+    "intentions": [
+     "big_five",
+     "first_safari",
+     "couples"
+    ],
+    "suitability": [
+     "couples",
+     "first_safari",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "morukuru-farm-house",
@@ -15675,7 +16430,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "mutiara-laut",
@@ -15750,7 +16507,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nihi",
@@ -15826,7 +16585,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "asilia-naboisho-camp-by-asilia",
@@ -15902,7 +16663,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "namiri-plains-camp-by-asilia",
@@ -15984,7 +16747,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nautilus-maldives",
@@ -16060,7 +16825,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nay-palad-hideaway",
@@ -16135,7 +16902,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nayara-alto-atacama",
@@ -16203,7 +16972,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nayara-bocas-del-toro",
@@ -16277,7 +17048,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nayara-gardens",
@@ -16354,7 +17127,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nayara-hangaroa",
@@ -16427,7 +17202,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nayara-tented-camp",
@@ -16503,7 +17280,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ngala-safari-lodge-by-beyond",
@@ -16603,7 +17382,30 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "timbavati_kruger",
+    "intentions": [
+     "big_five",
+     "first_safari",
+     "families"
+    ],
+    "suitability": [
+     "families",
+     "first_safari"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "ngare-camp-by-serian",
@@ -16669,7 +17471,30 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "maasai_mara",
+    "intentions": [
+     "walking",
+     "guiding",
+     "big_five"
+    ],
+    "suitability": [
+     "returning_safari_goers",
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "nikoi-island",
@@ -16746,7 +17571,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "niyama-private-islands-maldives",
@@ -16828,7 +17655,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "no-1-pery-square-limerick",
@@ -16921,7 +17750,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -16999,7 +17830,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -17072,7 +17905,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nomade-holbox",
@@ -17146,7 +17981,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nomade-temple-ibiza",
@@ -17225,7 +18062,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nomade-temple-madrid",
@@ -17305,7 +18144,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "nomade-tulum",
@@ -17384,7 +18225,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "north-island-okavango",
@@ -17443,7 +18286,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ol-jogi-conservancy",
@@ -17527,7 +18372,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ol-pejeta-bush-camp-asilia",
@@ -17603,7 +18450,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "olas-tulum",
@@ -17678,7 +18527,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "asilia-olivers-camp",
@@ -17753,7 +18604,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "open-sky",
@@ -17824,7 +18677,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "our-habitas-namibia",
@@ -17893,7 +18748,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pacuare-lodge",
@@ -17975,7 +18832,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "paws-up-resort",
@@ -18048,7 +18907,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pearl-resort-le-bora-bora",
@@ -18121,7 +18982,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
@@ -18193,7 +19056,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pearl-resort-le-tahiti",
@@ -18268,7 +19133,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -18341,7 +19208,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pearl-resort-vahine-private-island",
@@ -18413,7 +19282,29 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06",
+     "PATH-07"
+    ],
+    "setting": "tahaa_lagoon",
+    "intentions": [
+     "snorkelling",
+     "lagoon",
+     "seclusion"
+    ],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -18520,7 +19411,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pods-camp-bay",
@@ -18618,7 +19511,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "post-ranch-inn",
@@ -18692,7 +19587,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "pu-u-hoko-ranch",
@@ -18770,7 +19667,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "radhoo-tulum",
@@ -18841,7 +19740,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "rayvadee-resort",
@@ -18923,7 +19824,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "royal-malewane",
@@ -19020,7 +19923,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "royal-zambezi-lodge",
@@ -19107,7 +20012,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "rubondo-island-camp-asilia",
@@ -19184,7 +20091,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sable-alley-khwai",
@@ -19253,7 +20162,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "salas-camp",
@@ -19322,7 +20233,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "samara-karoo-reserve",
@@ -19426,7 +20339,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "saruni-eagle-view",
@@ -19504,7 +20419,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "saruni-leopard-hill",
@@ -19576,7 +20493,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "saruni-samburu-lodge",
@@ -19642,7 +20561,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "saruni-wild-lodge",
@@ -19718,7 +20639,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sasaab",
@@ -19798,7 +20721,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "seseka-thornybush",
@@ -19844,7 +20769,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sashwa",
@@ -19887,7 +20814,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sayari-camp-asilia",
@@ -19959,7 +20888,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "segera-retreat",
@@ -20036,7 +20967,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "great-plains-selinda-main-camp",
@@ -20095,7 +21028,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "senda-monteverde-lodge",
@@ -20178,7 +21113,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "serengeti-lamai-camp-by-serian",
@@ -20247,7 +21184,30 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "serengeti",
+    "intentions": [
+     "migration",
+     "mobile_camp",
+     "river_crossings"
+    ],
+    "suitability": [
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "shinta-mani-wild",
@@ -20321,7 +21281,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-silky-oaks-lodge",
@@ -20405,7 +21367,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "daintree_rainforest",
+    "intentions": [
+     "rainforest",
+     "restoration",
+     "reef_day_trips"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "silolona-sojourns",
@@ -20477,7 +21461,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-boulders",
@@ -20587,7 +21573,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "sabi_sand",
+    "intentions": [
+     "big_five",
+     "leopard",
+     "design"
+    ],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "singita-castleton",
@@ -20692,7 +21700,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-ebony",
@@ -20795,7 +21805,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-ebony-villa",
@@ -20898,7 +21910,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-elela",
@@ -20958,7 +21972,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-faru-faru-lodge",
@@ -21042,7 +22058,30 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "grumeti",
+    "intentions": [
+     "migration",
+     "river",
+     "families"
+    ],
+    "suitability": [
+     "families",
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "singita-katanza-house",
@@ -21121,7 +22160,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-kilima",
@@ -21204,7 +22245,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-kwitonda",
@@ -21282,7 +22325,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-lebombo",
@@ -21394,7 +22439,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-lebombo-villa",
@@ -21497,7 +22544,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-malilangwe-house",
@@ -21575,7 +22624,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-mara-river",
@@ -21657,7 +22708,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-milele",
@@ -21730,7 +22783,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-pamushana",
@@ -21813,7 +22868,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-sabora",
@@ -21892,7 +22949,29 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "grumeti_plains",
+    "intentions": [
+     "vintage_safari",
+     "migration"
+    ],
+    "suitability": [
+     "couples",
+     "photographers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "singita-sasakwa",
@@ -21975,7 +23054,32 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08",
+     "PATH-07"
+    ],
+    "setting": "grumeti_hill",
+    "intentions": [
+     "migration",
+     "heritage",
+     "families"
+    ],
+    "suitability": [
+     "families",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays",
+    "gatherings"
+   ]
   },
   {
    "slug": "singita-serengeti-house",
@@ -22057,7 +23161,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "singita-sweni",
@@ -22168,7 +23274,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sirai-house",
@@ -22211,7 +23319,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sirikoi-lodge",
@@ -22289,7 +23399,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sirius-yacht-galapagos",
@@ -22357,7 +23469,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "siwa-tulum",
@@ -22428,7 +23542,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-con-dao",
@@ -22506,7 +23622,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-crans-montana",
@@ -22579,7 +23697,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-douro-valley",
@@ -22652,7 +23772,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-fiji",
@@ -22730,7 +23852,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-ibiza",
@@ -22839,7 +23963,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-kanuhura",
@@ -22917,7 +24043,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-kyoto",
@@ -22995,7 +24123,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-laamu",
@@ -23068,7 +24198,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-ninh-van-bay",
@@ -23146,7 +24278,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-rome",
@@ -23219,7 +24353,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-samui",
@@ -23297,7 +24433,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-uluwatu",
@@ -23375,7 +24513,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-yao-noi",
@@ -23453,7 +24593,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-zil-pasyon",
@@ -23526,7 +24668,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "sleeping-giant-rainforest-lodge",
@@ -23622,7 +24766,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "soneva-fushi-maldives",
@@ -23696,7 +24842,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "soneva-jani-maldives",
@@ -23764,7 +24912,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "soneva-secret-maldives",
@@ -23833,7 +24983,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "soori-bali",
@@ -23912,7 +25064,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-southern-ocean-lodge",
@@ -23995,7 +25149,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "st-george-s-caye-resort",
@@ -24093,7 +25251,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "suyian-lodge-by-and-beyond",
@@ -24167,7 +25327,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tabacon-thermal-resort-spa",
@@ -24249,7 +25411,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tahi",
@@ -24319,7 +25483,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tanah-gajah",
@@ -24403,7 +25569,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tanda-tula",
@@ -24512,7 +25680,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tengile-mala-mala-camp",
@@ -24613,7 +25783,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tengile-mala-mala-kirkmans-kamp",
@@ -24712,7 +25884,31 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "sabi_sand_malamala",
+    "intentions": [
+     "big_five",
+     "heritage",
+     "photography"
+    ],
+    "suitability": [
+     "couples",
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "tengile-mala-mala-rattrays-lodge",
@@ -24811,7 +26007,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tengile-mala-mala-sable-camp",
@@ -24909,7 +26107,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tengile-river-lodge-by-mala-mala",
@@ -25003,7 +26203,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "thatch-caye-resort",
@@ -25105,7 +26307,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-art-villa",
@@ -25190,7 +26394,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-atelier-villa",
@@ -25233,7 +26439,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-beach-tulum",
@@ -25304,7 +26512,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-brando-tetiaroa",
@@ -25378,7 +26588,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-hide-safari-camp",
@@ -25454,7 +26666,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-highlands-by-asilia-highlands",
@@ -25532,7 +26746,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-lodge-at-chaa-creek",
@@ -25632,7 +26848,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-the-louise",
@@ -25712,7 +26930,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "nami-project",
@@ -25783,7 +27005,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-retreat-at-blue-lagoon",
@@ -25863,7 +27087,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "the-silo-hotel",
@@ -25946,7 +27172,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "thornybush-reserve",
@@ -25992,7 +27220,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "beckon-tierra-atacama",
@@ -26074,7 +27304,11 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "tierra-patagonia",
@@ -26149,7 +27383,11 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "time-tide-chinzombo-2",
@@ -26226,7 +27464,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "time-tide-chongwe-2",
@@ -26300,7 +27540,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "time-tide-mchenja",
@@ -26381,7 +27623,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "tswalu-reserve",
@@ -26490,7 +27734,33 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06",
+     "PATH-05"
+    ],
+    "setting": "kalahari",
+    "intentions": [
+     "rare_wildlife",
+     "silence",
+     "regeneration"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "conservation_minded",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "turtle-inn",
@@ -26590,7 +27860,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ubuntu-migration-camp-asilia",
@@ -26665,7 +27937,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "umaya-resort-and-marina",
@@ -26765,7 +28039,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-brtce-canyon",
@@ -26839,7 +28115,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-glacier",
@@ -26912,7 +28190,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-grand-canyon",
@@ -26989,7 +28269,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-lake-powell-grand-staircase",
@@ -27063,7 +28345,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-moab",
@@ -27137,7 +28421,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-north-yellowstone",
@@ -27210,7 +28496,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-west-yellowstone",
@@ -27283,7 +28571,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-yosemite",
@@ -27356,7 +28646,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "under-canvas-zion",
@@ -27430,7 +28722,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "ungasan-clifftops",
@@ -27507,7 +28801,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "uxua-casa-hotel-spa",
@@ -27584,7 +28880,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "velaa-private-island",
@@ -27660,7 +28958,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "viceroy-bali",
@@ -27745,7 +29045,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "lales-camp-expeditions",
@@ -27806,7 +29108,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-bisate-reserve",
@@ -27875,7 +29179,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-busanga",
@@ -27949,7 +29255,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-desert-rhino-camp",
@@ -28019,7 +29327,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-damaraland",
@@ -28097,7 +29407,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-hoanib-skeleton-camp",
@@ -28168,7 +29480,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-kulala-desert-camp",
@@ -28244,7 +29558,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-kwetsani",
@@ -28312,7 +29628,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "linyanti-wilderness-camp",
@@ -28375,7 +29693,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-little-duma-tau",
@@ -28449,7 +29769,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-little-kulala",
@@ -28524,7 +29846,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-little-mombo",
@@ -28595,7 +29919,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-little-tubu",
@@ -28668,7 +29994,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-magashi-peninsula",
@@ -28739,7 +30067,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-mara",
@@ -28811,7 +30141,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-mokete",
@@ -28891,7 +30223,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-mombo-luxury-camp",
@@ -28970,7 +30304,29 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": "okavango_delta",
+    "intentions": [
+     "big_game",
+     "classic_okavango",
+     "families"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "wilderness-pelo",
@@ -29050,7 +30406,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-qorokwe",
@@ -29113,7 +30471,29 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "okavango_delta",
+    "intentions": [
+     "big_game",
+     "water_and_land"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "wilderness-ruckomechi",
@@ -29188,7 +30568,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-sabyinyo",
@@ -29263,7 +30645,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-savuti",
@@ -29341,7 +30725,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-serra-cafema",
@@ -29411,7 +30797,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-shumba",
@@ -29488,7 +30876,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-toka-leya",
@@ -29565,7 +30955,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-usawa",
@@ -29642,7 +31034,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wilderness-vumbura-plains",
@@ -29718,7 +31112,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wolwedans-dune-camp",
@@ -29798,7 +31194,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "wren-urban-nest",
@@ -29892,7 +31290,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "xanadu-island-resort",
@@ -29985,7 +31385,9 @@
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "xela-tulum",
@@ -30062,7 +31464,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "great-plains-zarafa-camp",
@@ -30121,7 +31525,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "great-plains-zarafa-dhow-suite",
@@ -30180,7 +31586,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-krabey-island",
@@ -30258,7 +31666,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   },
   {
    "slug": "six-senses-residences-courchevel",
@@ -30331,7 +31741,9 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null
+   "engine": null,
+   "pathway": null,
+   "volumes": null
   }
  ]
 }

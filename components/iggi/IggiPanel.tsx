@@ -11,11 +11,12 @@ import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
 // events; only messages from the Core's origin are honoured. Renders nothing
 // visible until the frame is near the viewport, so pages stay light.
 //
-// Page context (Contract C3): entityType country | region | stay | itinerary,
-// entitySlug, and the country slug Iggi uses to scope its Ledger search.
+// Page context (Contract C3): entityType country | region | stay | itinerary |
+// property | advisor (a House advisor's profile), entitySlug, and the country
+// slug Iggi uses to scope its Ledger search.
 
 export type IggiContext = {
-  entityType: "country" | "region" | "stay" | "itinerary" | "property";
+  entityType: "country" | "region" | "stay" | "itinerary" | "property" | "advisor";
   entitySlug: string;
   countrySlug?: string | null;
   ledgerId?: string | null;

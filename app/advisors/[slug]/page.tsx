@@ -8,6 +8,8 @@ import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { Prose, PlanClose } from "@/components/about/Parts";
 import { ADVISORS, advisorBySlug } from "@/lib/content/advisors";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
@@ -90,6 +92,14 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             <h2 id="others-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Also on the Team</h2>
             <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{others.map((o) => <li key={o.slug}><AdvisorCard a={o} n={ADVISORS.indexOf(o) + 1} /></li>)}</ul>
           </section>
+
+          {IGGI_ON && (
+            <IggiPanel
+              ctx={{ entityType: "advisor", entitySlug: a.slug, sourcePage: path }}
+              heading={`Ask Iggi before you write to ${a.firstName}`}
+              lead={`Iggi can sketch the journey from the Ledger first — places, seasons, what the house has actually vetted — so your first note to ${a.firstName} starts further along. Prices and bookings stay with ${a.firstName}.`}
+            />
+          )}
 
           <PlanClose title={`Start with ${a.firstName}.`} line={`Send ${a.firstName} the place you can't stop thinking about. You'll hear back from a person, not a form.`} />
         </div>

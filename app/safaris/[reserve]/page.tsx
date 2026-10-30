@@ -30,6 +30,7 @@ import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
 import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
+import TswaluSections from "@/components/rates/TswaluSections";
 
 // RESERVE template (/safaris/[reserve]): the parent page for an African
 // reserve that houses several lodges, camps and residences.
@@ -99,7 +100,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
         <RecordHero slides={slides} tag={markOn(`reserve:${r.slug}`) ? <HeroMark style="stamp" image={slides[1]?.url ?? r.stay.hero} script={note.script} line={note.line} where={r.area} when={yearOf(r.rsv)} label="From the house" href="#why" /> : undefined} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
-        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["The camps", "camps"], ["Compare", "compare"], ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
+        <RecordNav items={[["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length && r.slug !== "tswalu-reserve" ? [["What you'll do", "experiences"] as [string, string]] : []), ["The camps", "camps"], ["Compare", "compare"], ...(r.slug === "tswalu-reserve" ? [["Conservation", "conservation"], ["Rates & costs", "rates"]] as [string, string][] : []), ["Location", "location"], ["Talk to us", "talk"], ["Plan", "plan"]]} cta="Plan this reserve" ctaHref={`/plan?trip=${encodeURIComponent(r.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={why[0]?.title ?? `Why ${r.name} Earned Its Page`} blocks={why.map((w, i) => ({ title: i === 0 && why[0]?.title ? null : w.title, body: w.body }))} paragraphs={why.length ? [] : r.stay.onlyHere.slice(0, 2)} suited={suited} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} name={r.name} video={VIDEOS[`reserve:${r.slug}`] ?? null} poster={slides[1]?.url ?? r.stay.hero} planHref={planHref} />
@@ -107,7 +108,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {founderProof(r.name, r.stay.status as never, r.stay.statusDate) && <FounderProof proof={founderProof(r.name, r.stay.status as never, r.stay.statusDate)!} note={r.stay.founderNote} className="mt-10 max-w-3xl" />}
 
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
-          {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
+          {days.length > 0 && r.slug !== "tswalu-reserve" && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           <section id="camps" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="camps-heading">
             <SectionHead eyebrow={`The camps · ${r.camps.length} on the Ledger`} title={`${WORDS[r.camps.length] ?? r.camps.length} Ways to Wake Up on ${r.name}`} icon="tree-ring" intro="Same reserve, different front doors. Each lodge, camp and residence is filed on its own, with its own suites, rates and photographs. Pick by who’s coming, how private you like it, and how early you’re willing to get up for the morning drive." />
             <CampLedger reserve={r.name} camps={cards} />
@@ -140,6 +141,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
             <p className="mt-3 text-[13px] ledger-muted">From rates are the registry&rsquo;s US-dollar rates per person, per night for camps; residences are taken whole. The house confirms every rate with your quote.</p>
           </section>
 
+          {r.slug === "tswalu-reserve" && <TswaluSections />}
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}

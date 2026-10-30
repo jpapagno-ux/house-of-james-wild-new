@@ -27,6 +27,8 @@ import { CardRail, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } 
 import { KIND_LABEL, RESERVES, campBySlug, campReady, campStatus, reserveBySlug, usd } from "@/lib/content/reserves";
 import { stampForStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
+import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
+import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -99,7 +101,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           <p className="mt-6 inline-flex flex-wrap items-center gap-2 border ledger-border px-3 py-2 text-[14px]"><span className="ledger-eyebrow ledger-crimson">Part of {r.name}</span><Link href={rpath} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">See all {r.camps.length} camps on the reserve</Link></p>
           <WhyFilm title={`Why ${c.name} Earns Its Place on ${r.name}`} paragraphs={paragraphs.length ? paragraphs : [answer]} suited={suited} status={st ? <p className="ledger-eyebrow ledger-crimson">{st.line}</p> : null} name={c.name} video={VIDEOS[`camp:${r.slug}/${c.slug}`] ?? null} poster={slides[1]?.url ?? c.hero} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview answer={answer} facts={facts} />
-          {st && <FounderProof proof={`${st.line}.`} className="mt-10 max-w-3xl" />}
+          {st && <FounderProof proof={`${st.line}.`} seal={sealFor(stamp)} className="mt-10 max-w-3xl" />}
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           {c.rooms.length > 0 && (
@@ -111,10 +113,10 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           )}
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
-          {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
+          {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} mark={<Roundel volume="safaris" text={roundelText(c.name, r.stay.coords, VOLUME_STYLES.safaris.roman)} entry={entryNo(r.stay.ledgerId) ? `ENTRY ${entryNo(r.stay.ledgerId)}` : undefined} size={120} />} />}
           {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="Same Reserve, Different Front Door" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}
           <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} />
-          {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} />}
+          {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           <div id="plan" className="scroll-mt-32"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>

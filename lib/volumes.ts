@@ -80,6 +80,24 @@ export function stampDate(date?: string | number | null): string | null {
   const s = String(date);
   const m = /^(\d{4})-(\d{2})/.exec(s);
   if (!m) return /^\d{4}$/.test(s) ? s : null;
+  // The Ledger files a year-only visit as 1 January: print the year alone, never a month nobody filed.
+  if (/^\d{4}-01-01/.test(s)) return m[1];
   const MON = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
   return `${MON[Number(m[2]) - 1]} ${m[1]}`;
+}
+
+/** Entry number for a record's ink stamp: the last four digits of its Ledger ID. */
+export function entryNo(ledgerId?: string | null): string | null {
+  const m = /(\d{4})$/.exec(ledgerId ?? "");
+  return m ? m[1] : null;
+}
+/** Text round a record's coordinate roundel. */
+export function roundelText(name: string, pin: { lat: number; lng: number }, roman: string): string {
+  const ns = `${Math.abs(pin.lat).toFixed(2)}°${pin.lat >= 0 ? "N" : "S"}`;
+  const ew = `${Math.abs(pin.lng).toFixed(2)}°${pin.lng >= 0 ? "E" : "W"}`;
+  return `${ns} · ${ew} · ${name} · Vol ${roman}`;
+}
+/** Founder seal label: only the two marks James has earned in person. */
+export function sealFor(stamp?: string | null): string | null {
+  return stamp === "Founder favorite" ? "Founder favorite" : stamp === "Field verified" ? "Founder stayed" : null;
 }

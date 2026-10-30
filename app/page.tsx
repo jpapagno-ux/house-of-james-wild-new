@@ -3,18 +3,19 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
 import CompassBand from "@/components/home/CompassBand";
+import { AdvisorForward, CountedBand, Stance, VolumeStrip } from "@/components/home/Entrance";
 import {
   FilmSection,
   HouseJournal,
   HouseStandard,
   HouseStory,
   JamesNote,
-  LedgerTally,
+
   OverlandRoutes,
-  PlacesMarquee,
+
   SignatureShelf,
   Stewards,
-  VolumeDoors,
+
 } from "@/components/home/Sections";
 import { HOME } from "@/lib/content/home";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -81,12 +82,14 @@ export default function Home() {
       <SiteHeader overlay />
       <main id="main">
         <FilmHero {...HOME.hero} />
-        <LedgerTally />
-        <PlacesMarquee />
+        {/* The entrance (house chrome): counted, the stance, six volumes, advisor-forward */}
+        <CountedBand />
+        <div className="max-w-[1400px] mx-auto px-5 md:px-10"><Stance /></div>
+        <VolumeStrip />
+        <AdvisorForward />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <HouseStory />
           <CompassBand />
-          <VolumeDoors />
           <HouseStandard />
           <SignatureShelf />
           <OverlandRoutes />

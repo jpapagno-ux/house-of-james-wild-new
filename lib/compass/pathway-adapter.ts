@@ -68,7 +68,7 @@ export type Shortlist = {
   explain: string; // Iggi's one-line summary of how the reading was weighed
 };
 
-export const CRUX_HREF = "https://wildcosafaris.com";
+export const CRUX_HREF = "/safaris/wild-co-safaris"; // the one door; only that page links out
 
 /** Season fit, in the words the Ledger uses for best months (same rule as the Costa Rica Compass). */
 export function fitsSeason(bestMonths: string | null | undefined, season: Season): boolean | null {

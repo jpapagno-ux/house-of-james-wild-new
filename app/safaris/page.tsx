@@ -40,7 +40,7 @@ export default function SafarisHub() {
         </HubSection>
         <HubSection eyebrow="By country" title="Where the House Goes on Safari" id="countries-h">
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-3">{africa.countries.map((c) => <li key={c.href}><SafeLink href={c.href} className="ledger-display text-[1.2rem] hover:ledger-crimson" fallback={<span className="ledger-display text-[1.2rem]">{c.label}</span>}>{c.label}</SafeLink></li>)}</ul>
-          <p className="mt-8 text-[16px]">Planning a safari now? <a href="https://wildcosafaris.com" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Wild &amp; Co Safaris</a> is the house&rsquo;s safari booking platform. <Link href="/about/team" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Meet the partner guides</Link>.</p>
+          <p className="mt-8 text-[16px]">Planning a safari now? <Link href="/safaris/wild-co-safaris" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Meet Wild &amp; Co Safaris</Link>, the house&rsquo;s safari desk, and what to expect when the specialists take over. <Link href="/about/team" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Meet the partner guides</Link>.</p>
         </HubSection>
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Safaris" })} />

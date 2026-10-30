@@ -85,7 +85,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
-      { label: "Ask Crux, the safari guide", href: "https://wildcosafaris.com" },
+      { label: "Ask Crux, the safari guide", href: "/safaris/wild-co-safaris" },
     ],
     ledger: [],
   },
@@ -233,3 +233,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */
 export const FOUNDER_YEARS = 44;
+
+// The one door to the safari desk (rule, 30 Oct 2026): the menu item and the
+// Safaris hub land on `page`; only that page links out to `url`.
+export const SAFARI_DESK = { page: "/safaris/wild-co-safaris", url: "https://wildcosafaris.com" } as const;

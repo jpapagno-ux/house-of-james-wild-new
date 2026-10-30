@@ -37,6 +37,7 @@ export const BUILT: string[] = [
   "/voyages/komodo/aliikai-5-day-komodo-island",
   "/voyages/ships/aliikai",
   "/safaris",
+  "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)
   "/safaris/lion-sands",
   "/safaris/lion-sands/ivory-lodge",

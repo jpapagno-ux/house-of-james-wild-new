@@ -17,8 +17,9 @@
 // • Nothing here touches the regenerated library JSON. Record → pathway
 //   assignments live in lib/content/pathways/pathway-map.json.
 //
-// Two accents differ from the addendum's proposal, pending James's sign-off
-// (Phase 1a decision D3): PATH-01 is shifted a step cooler so it is not the
+// Five accents differ from the addendum's proposal (agreed with James, 30 Oct
+// 2026, decision D3). PATH-03, 04 and 05 are each darkened the smallest step
+// that lets white text pass AA on a solid fill; PATH-01 is shifted a step cooler so it is not the
 // same hex as the Impact Note's forest green (#405A45), and PATH-07 reuses
 // the house's existing residence rust (#94512F) rather than adding a second
 // rust beside it.
@@ -59,17 +60,17 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   "PATH-03": {
     id: "PATH-03", key: "above-it-all", name: "Above It All", setting: "Mountains and highlands",
     line: "Thin air, long views and the quiet above the tree line.",
-    accent: "#7D8275", text: "#696D62", tint: "#F0F1EF", onAccent: "large", volumes: ["stays", "overland", "europe"],
+    accent: "#73786C", text: "#696D62", tint: "#F0F1EF", onAccent: "white", proposed: "#7D8275", volumes: ["stays", "overland", "europe"],
   },
   "PATH-04": {
     id: "PATH-04", key: "where-the-wild-lives", name: "Where the Wild Lives", setting: "Wildlife and wilderness",
     line: "Game drives, guides and the conservancies that keep the wild wild.",
-    accent: "#A0794F", text: "#866642", tint: "#F5F0EA", onAccent: "large", volumes: ["safaris", "stays"],
+    accent: "#936F49", text: "#866642", tint: "#F5F0EA", onAccent: "white", proposed: "#A0794F", volumes: ["safaris", "stays"],
   },
   "PATH-05": {
     id: "PATH-05", key: "the-art-of-stillness", name: "The Art of Stillness", setting: "Wellness and restoration",
     line: "Hot springs, slow mornings and places built for doing less.",
-    accent: "#929785", text: "#6C7062", tint: "#F2F3F0", onAccent: "large", volumes: ["stays", "europe"],
+    accent: "#737769", text: "#6C7062", tint: "#F2F3F0", onAccent: "white", proposed: "#929785", volumes: ["stays", "europe"],
   },
   "PATH-06": {
     id: "PATH-06", key: "off-the-map", name: "Off the Map", setting: "Hidden and undiscovered",

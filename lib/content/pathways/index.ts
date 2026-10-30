@@ -9,7 +9,6 @@
 export type { ImpactStatement, PathwayRecord };
 import map from "./pathway-map.json";
 import { pathway, type ImpactStatement, type Pathway, type PathwayId, type PathwayRecord } from "@/lib/pathways";
-import type { VolumeKey } from "@/lib/volumes";
 import { STAYS, type StayData } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
 

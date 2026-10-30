@@ -1854,6 +1854,68 @@
      "caption": "Daintree Pavilion bedroom"
     }
    ]
+  },
+  "beckon-southern-ocean-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-clifftop",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: cliff-top suite with deck and pool above the ocean at sunset"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/osprey-terrace-pool",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: terrace with loungers and a round plunge pool facing the coast"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-lounge",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: lounge with a curved sofa and terrace plunge pool facing the Southern Ocean"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-sunken-lounge",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: sunken lounge with stone fireplace and floor-to-ceiling coastal views"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-deck-pool",
+     "alt": "Southern Ocean Lodge: deck with loungers and plunge pool looking along the coast",
+     "caption": "Pool deck above the coast"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-lounge-terrace",
+     "alt": "Southern Ocean Lodge: lounge and terrace over coastal shrubland and the ocean",
+     "caption": "Flinders Suite terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-lounge",
+     "alt": "Southern Ocean Lodge: lounge with a suspended fireplace and windows over the ocean",
+     "caption": "Fire and ocean"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with glass doors overlooking coastal cliffs and the sea",
+     "caption": "Waking to the cliffs"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with stone fireplace and glass walls facing the ocean",
+     "caption": "Flinders Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-bathroom",
+     "alt": "Southern Ocean Lodge: bathroom with soaking tub and double vanity overlooking the ocean",
+     "caption": "A bath with a sea view"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/osprey-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with floor-to-ceiling windows over the coastal landscape",
+     "caption": "Osprey Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-tub",
+     "alt": "Southern Ocean Lodge: bathtub filling beside a teapot on a wooden stool",
+     "caption": "Tea and a bath"
+    }
+   ]
   }
  }
 }

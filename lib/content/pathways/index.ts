@@ -6,13 +6,25 @@
 // Everything here is Phase 1 sample data marked `draft`; the public pages
 // print nothing from it until the entry's classificationStatus is "approved".
 
-export type { ImpactStatement, PathwayRecord };
+export type { PathwayRecord };
 import map from "./pathway-map.json";
-import { pathway, type ImpactStatement, type Pathway, type PathwayId, type PathwayRecord } from "@/lib/pathways";
+import impactLib from "./impact-library.json";
+import { mergeRecords, pathway, type ImpactStatement, type Pathway, type PathwayId, type PathwayRecord } from "@/lib/pathways";
 import { STAYS, type StayData } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
 
-export const PATHWAY_MAP: PathwayRecord[] = (map as { records: PathwayRecord[] }).records;
+
+/** Hand-kept override records (Phase 1 samples; Phase 2: the few cases the library cannot express). */
+export const PATHWAY_OVERRIDES: PathwayRecord[] = (map as { records: PathwayRecord[] }).records;
+const IMPACT_BY_REF = (impactLib as { byRef: Record<string, ImpactStatement[]> }).byRef ?? {};
+
+/**
+ * Source order (Phase 2A), see mergeRecords in lib/pathways.ts: the library export first, then the override file.
+ * A stay classified in the library (`stay.pathway`) is the canonical record;
+ * an override entry for the same slug only fills what the library left empty
+ * (impact statements in particular, until ImpactNote records exist).
+ */
+export const PATHWAY_MAP: PathwayRecord[] = mergeRecords(STAYS, PATHWAY_OVERRIDES, IMPACT_BY_REF);
 
 /** A sample record joined to its Ledger stay, or null when the slug is not in the export. */
 export type PathwayStay = PathwayRecord & { stay: StayData; href: string; primary: Pathway; secondary: Pathway[] };

@@ -11,4 +11,5 @@ json.dump({"exportedAt": x["exportedAt"], "entities": x["stays"]}, open(ROOT / "
 json.dump({"exportedAt": x["exportedAt"], "entities": x["destinations"]}, open(ROOT / "data/library/destinations.json", "w"), ensure_ascii=False)
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("offers") or []}, open(ROOT / "data/library/offers.json", "w"), ensure_ascii=False)
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("films") or []}, open(ROOT / "data/library/films.json", "w"), ensure_ascii=False)
-print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films, exported", x["exportedAt"])
+json.dump({"exportedAt": x["exportedAt"], "entities": x.get("impact_notes") or []}, open(ROOT / "data/library/impact-notes.json", "w"), ensure_ascii=False)
+print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films,", len(x.get("impact_notes") or []), "impact notes, exported", x["exportedAt"])

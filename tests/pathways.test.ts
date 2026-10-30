@@ -99,3 +99,21 @@ test("the validator catches unsourced and invented impact claims", () => {
   assert.ok(errs.some((e) => /quotes a figure/.test(e)));
   assert.ok(Object.keys(PATHWAYS).length === 8);
 });
+
+test("Phase 2A: the library export wins, the override file fills gaps, and bad library values are ignored", async () => {
+  const { mergeRecords } = await import("../lib/pathways.ts");
+  const override: PathwayRecord = { slug: "a", ledgerId: "STY-2026-000001", primaryPathway: "PATH-01", secondaryPathways: ["PATH-02"], volumes: ["stays"], setting: "rainforest", intentions: ["canopy"], suitability: ["couples"], classificationStatus: "draft", classifiedBy: "house draft", impact: [{ kind: "habitat", money: "none", statement: "x", source: "y", reviewed: "2026-10-30", status: "partner_reported" }] };
+  const libStay = { slug: "a", ledgerId: "STY-2026-000001", pathway: { primary: "PATH-04", secondary: ["PATH-04", "PATH-09", "PATH-08"], setting: null, intentions: [], suitability: ["families"], status: "approved" as const, classifiedBy: "James", classifiedAt: "2026-11-02" }, volumes: ["safaris", "bogus"] };
+  const unclassified = { slug: "b", ledgerId: "STY-2026-000002", pathway: null, volumes: ["stays"] };
+  const [a] = mergeRecords([libStay, unclassified], [override]);
+  assert.equal(a.primaryPathway, "PATH-04", "library primary wins");
+  assert.deepEqual(a.secondaryPathways, ["PATH-08"], "unknown IDs and the primary are dropped");
+  assert.equal(a.classificationStatus, "approved");
+  assert.deepEqual(a.volumes, ["safaris"], "unknown volume keys dropped");
+  assert.equal(a.setting, "rainforest", "override fills an empty setting");
+  assert.deepEqual(a.suitability, ["families"], "library suitability kept when present");
+  assert.equal(a.impact.length, 1, "override impact used until ImpactNote records exist");
+  assert.equal(mergeRecords([unclassified], []).length, 0, "an unclassified stay is not a pathway record");
+  const lib = mergeRecords([libStay], [override], { a: [{ kind: "levy", money: "guest_levy", statement: "z", source: "s", reviewed: "2026-11-01", status: "verified" }] });
+  assert.equal(lib[0].impact[0].kind, "levy", "library impact notes replace the override's");
+});

@@ -11,6 +11,9 @@ export type StayData = {
   coords: { lat: number; lng: number } | null; airport: string | null; airportDirections: string | null; founderNote: string | null;
   rooms: Block; experiences: Block; features: Block; onlyHere: string[]; why: { title: string | null; body: string }[];
   facts: Record<string, string>; faqs: { q: string; a: string }[]; reviewed: boolean; reserveChild: boolean; parentSlug: string | null; engine: string | null;
+  // Wild Pathways (Phase 2A): carried by the export once the library has the fields; absent or null until then.
+  pathway?: { primary: string; secondary: string[]; setting: string | null; intentions: string[]; suitability: string[]; status: "draft" | "approved"; classifiedBy: string | null; classifiedAt: string | null } | null;
+  volumes?: string[] | null;
 };
 
 const has = (b: Block) => b.paras.length > 0 || b.items.length > 0;

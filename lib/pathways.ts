@@ -171,3 +171,33 @@ export function validatePathwayMap(records: PathwayRecord[]): string[] {
   }
   return errors;
 }
+
+/* ---------- Library-first merge (Phase 2A) ---------- */
+
+/** The shape of a stay as the library export carries it (lib/content/stays.ts StayData, narrowed). */
+export type LibraryStay = { slug: string; ledgerId: string | null; pathway?: { primary: string; secondary: string[]; setting: string | null; intentions: string[]; suitability: string[]; status: "draft" | "approved"; classifiedBy: string | null; classifiedAt: string | null } | null; volumes?: string[] | null };
+
+function fromLibrary(s: LibraryStay, impactByRef: Record<string, ImpactStatement[]>): PathwayRecord | null {
+  const p = s.pathway;
+  if (!p || !pathway(p.primary)) return null;
+  return {
+    slug: s.slug, ledgerId: s.ledgerId, primaryPathway: p.primary as PathwayId,
+    secondaryPathways: p.secondary.filter((x) => pathway(x) && x !== p.primary) as PathwayId[],
+    volumes: ((s.volumes ?? []).filter((v) => VOLUME_KEYS.includes(v as VolumeKey)) as VolumeKey[]),
+    setting: p.setting ?? "", intentions: p.intentions, suitability: p.suitability,
+    classificationStatus: p.status, classifiedBy: p.classifiedBy ?? "library",
+    impact: impactByRef[s.slug] ?? [],
+  };
+}
+
+export function mergeRecords(stays: LibraryStay[], overrides: PathwayRecord[], impactByRef: Record<string, ImpactStatement[]> = {}): PathwayRecord[] {
+  const out = new Map<string, PathwayRecord>();
+  for (const s of stays) { const r = fromLibrary(s, impactByRef); if (r) out.set(r.slug, r); }
+  for (const o of overrides) {
+    const lib = out.get(o.slug);
+    if (!lib) { out.set(o.slug, o); continue; }
+    out.set(o.slug, { ...lib, volumes: lib.volumes.length ? lib.volumes : o.volumes, setting: lib.setting || o.setting, intentions: lib.intentions.length ? lib.intentions : o.intentions, suitability: lib.suitability.length ? lib.suitability : o.suitability, impact: lib.impact.length ? lib.impact : o.impact });
+  }
+  return [...out.values()];
+}
+

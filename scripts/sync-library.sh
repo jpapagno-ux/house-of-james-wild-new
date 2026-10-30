@@ -8,6 +8,7 @@ python3 scripts/library-split.py "${EXPORT:-data/library/export.json}"
 python3 scripts/stay-qa.py data/library/stays.json data/library/destinations.json
 python3 scripts/export-stays.py data/library/stays.json data/library/destinations.json lib/content/stays.json
 python3 scripts/export-countries.py data/library/destinations.json
+python3 scripts/export-offers.py data/library/offers.json lib/content/offers/library.json
 node scripts/build-country-charts.cjs
 python3 scripts/build-redirects.py > /dev/null
 echo "content regenerated"

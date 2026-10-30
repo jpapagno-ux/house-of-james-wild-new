@@ -2248,6 +2248,162 @@
     }
    ],
    "credit": "Beckons"
+  },
+  "castle-leslie": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eec19dde3_da1e04ac4_697a1381f7ac415cea3407e4_castle-leslie-exterior.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f0b774ea1_54ba8234d_697a1c3f76355567108de78d_Interiors-Billiards-Room.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2415b19c0_cc8a8eba8_697a1c3f01f7c9ebf3711b63_Interiors-Castle-Blue-Room.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/39693aeea_76652706d_697a1c3fc2934ec5af62edec_Interiors-The-Gallery.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cd6367462_3ebe04533_697a1d99fb449c241c9bd79c_Lodge-Interior-Oriel-Room-2.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 5"
+    }
+   ]
+  },
+  "da-licenca": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326052/jwco/stays/europe/da-licenca/hero.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the estate among the olive hills"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326054/jwco/stays/europe/da-licenca/grounds.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the grounds and olive groves"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326056/jwco/stays/europe/da-licenca/main-house.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the main house"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326058/jwco/stays/europe/da-licenca/suite-the-rock.jpg",
+     "alt": "Dá Licença, Portugal + Azores: The Rock suite"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326060/jwco/stays/europe/da-licenca/suite-the-loft.jpg",
+     "alt": "Dá Licença, Portugal + Azores: The Loft suite"
+    }
+   ]
+  },
+  "no-1-pery-square-limerick": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/273c7e083_b2adb12ae_6a861bab8e6e6f724b7bf2c8_No1_20Pery_20Square_2C_20Limerick_20Hero.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6cb1426b_73a9d4695_6a888b1d98b4e4f05a928705_boutique-hotel-bedroom.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c11d4cb3c_4b3eecb14_6a888b1c629711634136205d_restaurant-fireplace-seating.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b047c2c4f_7ec0b20d5_6a888b1ca7bbd36e64443ec0_hotel-lounge-fireplace.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fcf8b84ef_c5fcd8d64_6a888b1ccae5522ea3d99607_cozy-hotel-room-window-view.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 5"
+    }
+   ]
+  },
+  "nomade-temple-ibiza": {
+   "hero": [
+    {
+     "url": "/img/b44/7668718db_6da275278_68d6c58b645d7452a041cfb8_NomadeTempleIbiza_Exterior.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 1"
+    },
+    {
+     "url": "/img/b44/ad7e89430_3f1be1545_68d6c64abffa39837e63f9b6_NomadeTempleIbiza_Bedroom.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 2"
+    },
+    {
+     "url": "/img/b44/1e56dea28_f6870a389_68d6c64aea4a43401d05da4c_NomadeTempleIbiza_Restaurant.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 3"
+    },
+    {
+     "url": "/img/b44/edb6e23e8_5014f10ed_68d6c64a118b523779c47bef_NomadeTempleIbiza_Pool.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 4"
+    },
+    {
+     "url": "/img/b44/1ac7b72d0_13adad826_68d6c64a1a79009ab0018fff_NomadeTempleIbiza_Nightclub.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 5"
+    }
+   ]
+  },
+  "nomade-temple-madrid": {
+   "hero": [
+    {
+     "url": "/img/b44/6cec91735_ba97c79ff_68d6cc77e9f7fda9df6270d5_NomadeTempleMadrid_Pool.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 1"
+    },
+    {
+     "url": "/img/b44/49441e4b8_771e8ed53_68d6cc77e9f7fda9df6270d5_NomadeTempleMadrid_Pool.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 2"
+    },
+    {
+     "url": "/img/b44/72eee59e8_ef42ff6c1_68d6cc8d6b4754cbc4c7bf5c_NomadeTempleMadrid_Reception.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 3"
+    },
+    {
+     "url": "/img/b44/3abe00203_d79087486_68d6cc994e7509ca7b69b968_NomadeTempleMadrid_Sauna.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 4"
+    },
+    {
+     "url": "/img/b44/40644b895_be368c309_68d6cc7c938063545854ab99_NomadeTempleMadrid_Exterior.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 5"
+    }
+   ]
+  },
+  "six-senses-ibiza": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f7940da98_gallery_urls-b1ca0a85.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6e4bfea66_gallery_urls-9a0745da.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34dc6a510_gallery_urls-0eeb78e5.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 3"
+    }
+   ]
+  },
+  "wren-urban-nest": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6376dde22_a1801fc82_6a87259a7764e2d659011280_Wren_20Urban_20Nest_20Hero.jpg",
+     "alt": "Wren Urban Nest, Ireland: photograph 1"
+    },
+    {
+     "url": "/img/b44/a3a2c108a_d52366031_6a889ef4f555fbb7db8a1df1_boho-hotel-lobby-bar-interior.avif",
+     "alt": "Wren Urban Nest, Ireland: photograph 2"
+    },
+    {
+     "url": "/img/b44/b08522c4c_0215b1129_6a889ef8823582dc578e6a96_hotel-lounge-coffee-table.avif",
+     "alt": "Wren Urban Nest, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/005c1e951_0a0ba7fad_6a889ef78ef96caef3879c89_hotel-lobby-checkin-lounge.webp",
+     "alt": "Wren Urban Nest, Ireland: photograph 4"
+    }
+   ]
   }
  }
 }

@@ -115,6 +115,7 @@ export const STAY_SLUGS: string[] = [
   "baymanhi-exuma",
   "be-tulum",
   "beckon-capella-lodge",
+  "beckon-longitude-131",
   "benguerra-island-by-and-beyond",
   "beyond-amazon-explorer",
   "beyond-grumeti-safari-camp",

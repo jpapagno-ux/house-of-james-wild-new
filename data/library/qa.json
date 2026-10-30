@@ -473,12 +473,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d6",
    "slug": "beckon-longitude-131",
-   "name": "Beckon Longitude 131˚",
+   "name": "Longitude 131°",
    "country": "Australia",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d7",

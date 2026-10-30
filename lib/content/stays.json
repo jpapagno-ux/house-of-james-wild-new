@@ -12770,6 +12770,90 @@
    "engine": null
   },
   {
+   "slug": "beckon-longitude-131",
+   "name": "Longitude 131°",
+   "ledgerId": "STY-2026-000039",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Luxury tented pavilions overlooking Australia's spiritual heart.",
+   "quote": "Wake to the changing colours of Uluṟu and discover the timeless beauty, culture and silence of the Australian Outback.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-feature",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-interior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bathroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent"
+   ],
+   "bestMonths": "April - September",
+   "bestMonthsNote": "The cooler months offer comfortable daytime temperatures for exploring Uluṟu and Kata Tjuṯa, making them ideal for guided walks, sunrise and sunset experiences, desert dining and outdoor cultural activities. Clear skies also provide exceptional stargazing opportunities, showcasing the brilliance of the Southern Hemisphere's night sky.",
+   "bestFor": [],
+   "status": "founder_returned",
+   "statusDate": "2011-01-01",
+   "coords": {
+    "lat": -25.2406,
+    "lng": 130.9853
+   },
+   "airport": "Ayers Rock Airport (AYQ)",
+   "airportDirections": "Approx. 15 km\nDriving Time: 15–20 minutes\nComplimentary lodge transfers are typically available for scheduled flights, providing a seamless arrival into the Red Centre.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Luxury Tented Pavilions",
+     "Luxury View Pavilions",
+     "Dune Pavilions"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided Uluṟu Walks",
+     "Kata Tjuṯa Adventures",
+     "Field of Light Experience",
+     "Desert Dining",
+     "Cultural Encounters",
+     "Sunrise & Sunset Tours",
+     "Bush Food Experiences",
+     "Stargazing"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Panoramic Uluṟu views",
+     "Luxury tented pavilions",
+     "All-inclusive accommodation",
+     "Signature dining experiences",
+     "Guided cultural excursions",
+     "Field of Light access",
+     "Swimming pool",
+     "Spa treatments",
+     "Desert-inspired interiors",
+     "Boutique luxury lodge",
+     "Personalised guest experiences",
+     "Exceptional outback hospitality"
+    ]
+   },
+   "onlyHere": [
+    "Longitude 131° offers one of Australia's most immersive luxury wilderness experiences. Set among the red dunes of the Northern Territory with uninterrupted views of Uluṟu, the lodge blends refined comfort with meaningful cultural experiences and unforgettable desert adventures. Every stay celebrates the landscapes, stories and traditions that make Australia's Red Centre one of the world's most remarkable destinations."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "loirien-mara",
    "name": "Lorien Mara",
    "ledgerId": "STY-2026-151742",

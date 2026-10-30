@@ -704,11 +704,9 @@
    "name": "Breac.House",
    "country": "Ireland",
    "missing": [
-    "coming_soon",
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8dd",

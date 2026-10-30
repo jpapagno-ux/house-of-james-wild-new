@@ -135,6 +135,7 @@ export const STAY_SLUGS: string[] = [
   "blancaneaux-lodge",
   "blue-reef",
   "borana",
+  "breac-house",
   "bumi-hills-safari-lodge",
   "camp-hwange-muddy-teak",
   "cap-karoso",

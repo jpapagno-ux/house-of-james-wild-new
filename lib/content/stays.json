@@ -3617,6 +3617,92 @@
    "engine": null
   },
   {
+   "slug": "breac-house",
+   "name": "Breac.House",
+   "ledgerId": "STY-2026-000525",
+   "country": "Ireland",
+   "countrySlug": "ireland",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A modern retreat at the far edge of Ireland",
+   "quote": "A small, design-led headland retreat where Donegal craft, food and Atlantic landscape shape the entire stay.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/house",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/balcony"
+   ],
+   "bestMonths": "March–November for the published 2026 season",
+   "bestMonthsNote": "The property’s published 2026 season runs March through November. Future operating dates and availability must be reconfirmed.",
+   "bestFor": [
+    "honeymoon",
+    "adventure",
+    "luxury",
+    "solo"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Donegal Airport (CFN); City of Derry Airport (LDY)",
+   "airportDirections": "Breac.House states approximately 50 minutes by road from Donegal Airport and 1 hour 25 minutes from City of Derry Airport. Confirm current transfer time before travel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Breac.House offers an intimate, adults-only retreat designed for one or two adults per room. Rooms feature super-king custom oak beds, Irish wool bedding, Donegal tweed, handcrafted terrazzo wet rooms and private outdoor space. Published 2026 stays operate in two-, four- or six-night patterns, arriving Wednesday or Friday."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Walking, cycling, surfing, golf, beaches, heritage, island excursions, local food and traditional music. Guests receive local walking and heritage maps, and full stay days include a prepared picnic."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Private terraces, panoramic Atlantic views, wood-fired sauna, seaweed bath, library and lounge, Irish-made bicycles, yoga mats, boot room, electric-vehicle charging and Wi-Fi. There are no televisions in the guest rooms and no full restaurant onsite."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A deeply local Donegal experience shaped by native stone, handcrafted oak, regional pottery, handwoven tweed, seasonal food and hosts who help guests explore Horn Head at the right pace."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Choose Breac.House for rare intimacy, contemporary Irish design and direct access to the landscapes of Horn Head. It is especially well suited to couples, honeymooners and solo travelers who value quiet, sustainability, food and active time outdoors."
+    }
+   ],
+   "facts": {
+    "best_months": "March–November for the published 2026 season",
+    "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks.",
+    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks.",
+    "how_to_get_there": "On Horn Head outside Dunfanaghy, about 50 minutes by road from Donegal Airport according to the property."
+   },
+   "faqs": [
+    {
+     "q": "Who is Breac.House best suited for?",
+     "a": "The retreat is designed for one or two adults, particularly couples and solo travelers. It is adults-only and does not generally accept groups or multiple-room bookings."
+    },
+    {
+     "q": "What is the minimum stay?",
+     "a": "The property’s published 2026 booking pattern requires at least two nights, with two-, four- or six-night stays checking in on Wednesday or Friday."
+    },
+    {
+     "q": "Does Breac.House have a restaurant?",
+     "a": "There is no full restaurant onsite. Breakfast, picnic provisions on full stay days and evening drinks form part of the experience, while the hosts assist with nearby restaurant recommendations and reservations."
+    },
+    {
+     "q": "What time are check-in and check-out?",
+     "a": "The property states check-in from 3:00 PM and check-out at 11:00 AM. Travelers should reconfirm these details before arrival."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "bumi-hills-safari-lodge",
    "name": "Bumi Hills Safari Lodge",
    "ledgerId": "STY-2026-000046",

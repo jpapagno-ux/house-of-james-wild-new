@@ -1688,11 +1688,11 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-05",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-06"
    ],
-   "bestMonths": null,
+   "bestMonths": "June to October and January to February are the dry months, with the clearest Kilimanjaro views. The climate is warm year round.",
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-10-30",
    "coords": {
     "lat": -2.74167,
     "lng": 37.53472
@@ -1717,11 +1717,30 @@
     "paras": [],
     "items": []
    },
-   "onlyHere": [],
-   "why": [],
-   "facts": {},
+   "onlyHere": [
+    "Conservation ledger",
+    "Kimana Sanctuary belongs to 844 Maasai landowners and covers 5,700 acres. Big Life Foundation holds the head lease and runs protection; Angama's tourism sub-lease commits over US$11 million to the landowning families across 25 years.",
+    "About 70% of the team was hired from nearby villages and towns. The Angama Foundation guest donation also supports elephant protection with Big Life.",
+    "Also: a raised rim-flow pool with an elephant drinking trough, the Mnara viewing tower, and an art gallery and weaving studio."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Angama Amboseli sits in Kimana Sanctuary, Kenya's first community-owned wildlife sanctuary, on the corridor that links Amboseli, the Chyulu Hills and Tsavo West. Kilimanjaro fills the view from bed, shower and pool."
+    },
+    {
+     "title": null,
+     "body": "Exclusive traversing in the sanctuary means night drives, walks and early pyjama safaris, with Amboseli National Park a half or full day away."
+    }
+   ],
+   "facts": {
+    "best_months": "June to October and January to February are the dry months, with the clearest Kilimanjaro views. The climate is warm year round.",
+    "how_to_get_there": "Fly Safarilink from Nairobi Wilson to Kimana Airfield inside the sanctuary, charter from the Maasai Mara, or drive about 3.5 hours from Nairobi.",
+    "signature_experiences": "Night drives and walks in Kimana Sanctuary, day trips into Amboseli National Park, the Mnara tower at sunset, and a visit to Big Life Foundation HQ.",
+    "who_its_for": "Families (children of all ages, childminding 6 pm to 10 pm), photographers and travellers pairing the Mara with Kilimanjaro."
+   },
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null
@@ -1735,7 +1754,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "“Suspended above the Mara, you’ll find not just a view but a new perspective on life.”",
+   "tagline": "Thirty tented suites on the rim of the Rift Valley, above the Mara Triangle.",
    "quote": "At Angama Mara, you're not just witnessing the wild. You’re becoming part of it. This place invites you to pause, breathe, and reconnect with the untamed beauty of the world. It’s where transformation begins.” - James Papagno, Founder, James Wild & Co",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-teaser",
    "gallery": [
@@ -1750,11 +1769,11 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-pool",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-exp-04"
    ],
-   "bestMonths": null,
+   "bestMonths": "July to October for the Great Migration and river crossings in the Mara Triangle. Wildlife is good year round; long rains fall March to May.",
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-10-30",
    "coords": {
     "lat": -1.27594,
     "lng": 34.96926
@@ -1764,8 +1783,9 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "10 tented Suites",
-     "2 Interconnected Family Suites"
+     "30 Tented Suites in two separate camps of 15, each 70 sqm with a 35 sqm deck and 11 metres of floor-to-ceiling glass facing the Mara.",
+     "Each camp has two pairs of interconnected family suites.",
+     "One suite is fully wheelchair-enabled."
     ],
     "items": []
    },
@@ -1790,18 +1810,31 @@
     "items": []
    },
    "onlyHere": [
-    "Walking Safaris with the Masai",
-    "Hot Air Balloon Safaris"
+    "Conservation ledger",
+    "The Angama Foundation, set up in 2015, is funded by a US$20 per person per night guest donation. It supports:",
+    "Schools: three classrooms and two early-childhood classrooms at Partakilat Primary, over 100 desks, 300 backpacks and five 10,000-litre water tanks for local schools, plus a scholarship programme for Saparingo Primary graduates.",
+    "Health: a community and staff clinic at the lodge with a full-time medical officer.",
+    "Wildlife: predator-proof bomas with the Anne K. Taylor Fund (99% success protecting livestock), an anti-poaching vehicle for rhino monitoring with the Mara Conservancy, and elephant collaring with the Mara Elephant Project.",
+    "Also: a one-acre Shamba garden where guests pick lunch, and a Beading Studio run by Maasai women."
    ],
    "why": [
     {
      "title": null,
-     "body": "Angama Mara embodies adventure, self-exploration, and a deep connection to nature."
+     "body": "Angama Mara sits 1,000 feet above the Mara Triangle on the Oloololo Escarpment, on the edge of the Great Rift Valley. A private road reaches the reserve in under 20 minutes, so game drives start fast and the view comes home with you."
+    },
+    {
+     "title": null,
+     "body": "Children of every age are welcome, which makes it one of the easier Mara lodges for families and generations travelling together."
     }
    ],
-   "facts": {},
+   "facts": {
+    "best_months": "July to October for the Great Migration and river crossings in the Mara Triangle. Wildlife is good year round; long rains fall March to May.",
+    "how_to_get_there": "Fly about 45 minutes from Nairobi Wilson to the Mara, then a short game drive to the lodge. From Tanzania, route via Migori airstrip.",
+    "signature_experiences": "Hot-air balloon safaris, walking safaris on the escarpment, a photographic studio with tutorials and gear hire, and the Out of Africa picnic for two.",
+    "who_its_for": "Families of all ages (no minimum age), honeymooners and photographers."
+   },
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null
@@ -1826,11 +1859,11 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-05",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-06"
    ],
-   "bestMonths": null,
+   "bestMonths": "July to September, in the path of the Great Migration (October on request).",
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-10-30",
    "coords": null,
    "airport": null,
    "airportDirections": "About 45 minutes by scheduled flight from Nairobi Wilson to the Mara, with daily flights, then a game drive to camp.",
@@ -1852,10 +1885,24 @@
     "items": []
    },
    "onlyHere": [],
-   "why": [],
-   "facts": {},
+   "why": [
+    {
+     "title": null,
+     "body": "Angama Safari Camp is four tents in a private corner of the south-west Mara Triangle, open for the migration season and booked by one group at a time. Your own host, chef and two guides run the days around you, from before sunrise to after dark."
+    },
+    {
+     "title": null,
+     "body": "Pair it with Angama Mara for the Best of Both: the escarpment view first, then the plains up close."
+    }
+   ],
+   "facts": {
+    "best_months": "July to September, in the path of the Great Migration (October on request).",
+    "how_to_get_there": "Fly about 45 minutes from Nairobi Wilson to the Mara, then a game drive to camp.",
+    "signature_experiences": "Full-day migration drives with picnic lunch, river crossings in season, and sundowners at the camp gazebo.",
+    "who_its_for": "Families and small groups of up to eight wanting the camp to themselves. Children of all ages welcome in their own tent."
+   },
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null
@@ -5244,6 +5291,73 @@
     {
      "title": "“A Legacy of Safari, Conserved for You”",
      "body": "With over 100 years of family safari heritage, Cottar’s blends historic canvas-chic accommodations with modern guiding excellence and conservation-driven purpose. Best for families, couples, explorers, and eco-conscious travelers craving narrative-rich, community-anchored safari experiences."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "the-original-camp-by-serian",
+   "name": "The Original Camp \n By Serian",
+   "ledgerId": "STY-2026-000300",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "“Where the Mara River whispers and your soul finds its pace.”",
+   "quote": "Disconnect to reconnect - let the river be your lullaby, the bush your sanctuary.",
+   "hero": "/img/b44/7beef5bd9_564db7771_6936ea1c20e7dc10ad057a20_Serian_TCunniffe_HR_101.avif",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/26152ebb9_3ef04dd3a_6936e7c2c4933396d30cf32b_DSC_8351.webp",
+    "/img/b44/f22af6272_08ce42f36_6936ea1c20e7dc10ad057a20_Serian_TCunniffe_HR_101.avif"
+   ],
+   "bestMonths": "June, July, August, September, October",
+   "bestMonthsNote": "These months typically offer the best combination of pleasant weather, good wildlife sightings (especially migratory movement), and lush river scenery & perfect for riverside lounging and game drives.",
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2017-01-01",
+   "coords": {
+    "lat": -1.177139,
+    "lng": 35.074333
+   },
+   "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
+   "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
+   "founderNote": "James has worked with Alex Walker since 2017; Serian's camps are vetted and Founder Favorites. Serian is our preferred fly-camping partner.",
+   "rooms": {
+    "paras": [
+     "4-tent riverside camp.Optional elevated tree-house “The Nest.”"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Walking safaris & bush walks.Exclusive 4WD game drives. Fly-camp “explorer-style” adventure.Night drives under starlight.River-side lounging & hippo watching.Tree-house sleep-out & wilderness dining."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Hardwood decked tents on the riverbank",
+     "Veranda bathtubs with river views",
+     "Private 1,500 acre conservancy access",
+     "Exclusive vehicle and guide",
+     "Intimate, small camp atmosphere",
+     "No WiFi, a full digital detox"
+    ]
+   },
+   "onlyHere": [
+    "Ngare Serian is more than a camp. It's a quiet haven perched over the Mara River, where you trade safari bustle for the gentle lapping of water, moonlit hippos, and a sky full of stars. Here you’ll find solitude, deep nature connection, and the kind of slow travel that transforms."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Need Text Here"
     }
    ],
    "facts": {},
@@ -15212,12 +15326,12 @@
    "bestMonths": "June, July, August, September, October",
    "bestMonthsNote": "These months typically offer the best combination of pleasant weather, good wildlife sightings (especially migratory movement), and lush river scenery & perfect for riverside lounging and game drives.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2017-01-01",
    "coords": null,
    "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
    "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
-   "founderNote": null,
+   "founderNote": "James has worked with Alex Walker since 2017; Serian's camps are vetted and Founder Favorites. Serian is our preferred fly-camping partner.",
    "rooms": {
     "paras": [
      "4-tent riverside camp.Optional elevated tree-house “The Nest.”"
@@ -18664,15 +18778,15 @@
    "bestMonths": "July, August, September, October",
    "bestMonthsNote": "These months coincide with peak river-crossing season of the Great Migration, giving you the highest chance of witnessing herds crossing the Mara River, dramatic predator action, and prime safari conditions with dry weather and easy game-spotting.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2017-01-01",
    "coords": {
     "lat": -1.503472,
     "lng": 34.846375
    },
    "airport": "Nearest airstrip: Lamai Airstrip (for small charter flights).",
    "airportDirections": "From Lamai Airstrip, It's a short transfer by 4WD to the camp (time depends on flight arrival schedule). Best arrival is via charter flight into Lamai Airstrip, then ground transfer to camp.",
-   "founderNote": null,
+   "founderNote": "James has worked with Alex Walker since 2017; Serian's camps are vetted and Founder Favorites. Serian is our preferred fly-camping partner.",
    "rooms": {
     "paras": [],
     "items": [
@@ -23852,73 +23966,6 @@
     "Only here can you wake to the sound of crashing Pacific waves, step into your private cedar sauna overlooking the ocean, and watch whales pass from the comfort of your deck. The Nami Project transforms a stay into a slower, more intentional way of experiencing the natural world."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null
-  },
-  {
-   "slug": "the-original-camp-by-serian",
-   "name": "The Original Camp \n By Serian",
-   "ledgerId": "STY-2026-000300",
-   "country": "Kenya",
-   "countrySlug": "kenya",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "“Where the Mara River whispers and your soul finds its pace.”",
-   "quote": "Disconnect to reconnect - let the river be your lullaby, the bush your sanctuary.",
-   "hero": "/img/b44/7beef5bd9_564db7771_6936ea1c20e7dc10ad057a20_Serian_TCunniffe_HR_101.avif",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/26152ebb9_3ef04dd3a_6936e7c2c4933396d30cf32b_DSC_8351.webp",
-    "/img/b44/f22af6272_08ce42f36_6936ea1c20e7dc10ad057a20_Serian_TCunniffe_HR_101.avif"
-   ],
-   "bestMonths": "June, July, August, September, October",
-   "bestMonthsNote": "These months typically offer the best combination of pleasant weather, good wildlife sightings (especially migratory movement), and lush river scenery & perfect for riverside lounging and game drives.",
-   "bestFor": [],
-   "status": null,
-   "statusDate": null,
-   "coords": {
-    "lat": -1.177139,
-    "lng": 35.074333
-   },
-   "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
-   "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "4-tent riverside camp.Optional elevated tree-house “The Nest.”"
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [
-     "Walking safaris & bush walks.Exclusive 4WD game drives. Fly-camp “explorer-style” adventure.Night drives under starlight.River-side lounging & hippo watching.Tree-house sleep-out & wilderness dining."
-    ],
-    "items": []
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Hardwood decked tents on the riverbank",
-     "Veranda bathtubs with river views",
-     "Private 1,500 acre conservancy access",
-     "Exclusive vehicle and guide",
-     "Intimate, small camp atmosphere",
-     "No WiFi, a full digital detox"
-    ]
-   },
-   "onlyHere": [
-    "Ngare Serian is more than a camp. It's a quiet haven perched over the Mara River, where you trade safari bustle for the gentle lapping of water, moonlit hippos, and a sky full of stars. Here you’ll find solitude, deep nature connection, and the kind of slow travel that transforms."
-   ],
-   "why": [
-    {
-     "title": null,
-     "body": "Need Text Here"
-    }
-   ],
    "facts": {},
    "faqs": [],
    "reviewed": false,

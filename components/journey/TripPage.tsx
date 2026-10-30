@@ -203,7 +203,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
               <div>
                 <p className="text-[16px] leading-relaxed"><Fx t={d.body} /></p>
                 <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[14px]">
-                  <dt className="ledger-eyebrow">{T.staylabel}</dt><dd><Fx t={d.stay} /></dd>
+                  <dt className="ledger-eyebrow">{T.staylabel}</dt><dd><Fx t={d.stay} />{d.stayLinks?.length ? <span className="block text-[13px]">{d.stayLinks.map(([name, href], k) => <span key={href}>{k > 0 && " · "}<Link href={href} className="underline decoration-crimson/50 underline-offset-2">{name}</Link></span>)}</span> : null}</dd>
                   <dt className="ledger-eyebrow">Meals</dt><dd><Fx t={d.meals} /></dd>
                   <dt className="ledger-eyebrow">{T.movelabel}</dt><dd>{d.move}</dd>
                   <dt className="ledger-eyebrow">Doing</dt><dd>{d.acts}</dd>

@@ -129,6 +129,12 @@
  "movelabel": "Getting there",
  "days": [
   {
+   "stayLinks": [
+    [
+     "Londolozi Pioneer Camp",
+     "/safaris/londolozi-reserve/pioneer-camp"
+    ]
+   ],
    "n": "DAY 01",
    "title": "Johannesburg to the homestead",
    "line": "By road to Londolozi · time on request",
@@ -146,6 +152,12 @@
    "mark": "Founder stayed · 2018"
   },
   {
+   "stayLinks": [
+    [
+     "Londolozi Pioneer Camp",
+     "/safaris/londolozi-reserve/pioneer-camp"
+    ]
+   ],
    "n": "DAY 02",
    "title": "The Cubs Den",
    "line": "Tracking, tree climbing, archery",
@@ -163,6 +175,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Londolozi Pioneer Camp",
+     "/safaris/londolozi-reserve/pioneer-camp"
+    ]
+   ],
    "n": "DAY 03",
    "title": "Fishing, baking and pizza",
    "line": "Everyone in the kitchen",
@@ -180,6 +198,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Londolozi Pioneer Camp",
+     "/safaris/londolozi-reserve/pioneer-camp"
+    ]
+   ],
    "n": "DAY 04",
    "title": "S'mores and stars",
    "line": "The last night on the Sand River",
@@ -197,6 +221,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 05",
    "title": "Londolozi to Cape Town",
    "line": "By air to the Cape",
@@ -214,6 +244,12 @@
    "mark": "Founder stayed · 2026"
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 06",
    "title": "The gardens and the art",
    "line": "Ellerman House, Bantry Bay",
@@ -231,6 +267,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 07",
    "title": "Cape Town, together",
    "line": "A last day by the Atlantic",
@@ -248,6 +290,7 @@
    "mark": ""
   },
   {
+   "stayLinks": [],
    "n": "DAY 08",
    "title": "Home through Cape Town",
    "line": "By road to CPT · about 26 km",
@@ -462,7 +505,15 @@
     ],
     [
      "Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-pioneer-camp/\">Pioneer Camp on Wild & Co Safaris</a>"
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi-pioneer-camp/\">Pioneer Camp on Wild & Co Safaris</a>"
+    ],
+    [
+     "Reserve",
+     "<a href=\"/safaris/londolozi-reserve\">Londolozi Reserve</a>"
+    ],
+    [
+     "Reserve on Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/\">Londolozi on Wild & Co Safaris</a>"
     ]
    ]
   },
@@ -504,6 +555,10 @@
     [
      "Stay page",
      "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/cape-town/ellerman-house/\">Ellerman House on Wild & Co Safaris</a>"
     ]
    ]
   }

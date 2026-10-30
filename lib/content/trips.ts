@@ -28,7 +28,7 @@ export type Trip = {
   map_eyebrow: string; map_title: string; map_coord: string;
   suits: [string, string, string][]; twice: [string, string, string][];
   dayeyebrow: string; daytitle: string; staylabel: string; movelabel: string;
-  days: { n: string; title: string; line: string; body: string; stay: string; meals: string; move: string; acts: string; img: string; head: boolean; stage: string; stageName: string; stageMeta: string; mark: string }[];
+  days: { stayLinks?: [string, string][]; n: string; title: string; line: string; body: string; stay: string; meals: string; move: string; acts: string; img: string; head: boolean; stage: string; stageName: string; stageMeta: string; mark: string }[];
   exp_title: string;
   experiences: { name?: string; title?: string; kicker?: string; info?: string; dur?: string; incl?: string; season?: string; line?: string; chips?: string[]; photos?: string[]; body?: string; james?: string; rows?: Row[] }[];
   lodges_title?: string;

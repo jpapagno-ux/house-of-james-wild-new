@@ -140,6 +140,16 @@
  "movelabel": "Getting there",
  "days": [
   {
+   "stayLinks": [
+    [
+     "Londolozi Varty Camp",
+     "/safaris/londolozi-reserve/varty-camp"
+    ],
+    [
+     "Londolozi Tree Camp",
+     "/safaris/londolozi-reserve/tree-camp"
+    ]
+   ],
    "n": "DAY 01",
    "title": "Johannesburg to the Sand River",
    "line": "By road to Londolozi · time on request",
@@ -157,6 +167,16 @@
    "mark": "Founder stayed · 2018"
   },
   {
+   "stayLinks": [
+    [
+     "Londolozi Varty Camp",
+     "/safaris/londolozi-reserve/varty-camp"
+    ],
+    [
+     "Londolozi Tree Camp",
+     "/safaris/londolozi-reserve/tree-camp"
+    ]
+   ],
    "n": "DAY 02",
    "title": "Leopards on the Sand River",
    "line": "The western Sabi Sand, unfenced to Kruger",
@@ -174,6 +194,16 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Londolozi Varty Camp",
+     "/safaris/londolozi-reserve/varty-camp"
+    ],
+    [
+     "Londolozi Tree Camp",
+     "/safaris/londolozi-reserve/tree-camp"
+    ]
+   ],
    "n": "DAY 03",
    "title": "The Varty family's reserve",
    "line": "The third day, the one that counts",
@@ -182,7 +212,7 @@
    "meals": "[Confirm with the lodge]",
    "move": "Game drive [times to confirm with the lodge]",
    "acts": "Game drives · Healing House or Photographic Studio",
-   "img": "PHOTO · TREE CAMP DECK",
+   "img": "PHOTO · SAND RIVER CROSSING",
    "imgAlt": "",
    "head": false,
    "stage": "",
@@ -191,6 +221,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 04",
    "title": "Londolozi to Cape Town",
    "line": "By air to the Cape",
@@ -208,6 +244,12 @@
    "mark": "Founder stayed · 2026"
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 05",
    "title": "Art and the wine archive",
    "line": "Ellerman House, Bantry Bay",
@@ -225,6 +267,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Ellerman House",
+     "/stays/ellerman-house"
+    ]
+   ],
    "n": "DAY 06",
    "title": "Cape Town at your pace",
    "line": "The gardens, the spa or the city",
@@ -242,6 +290,12 @@
    "mark": ""
   },
   {
+   "stayLinks": [
+    [
+     "Leeu Estates",
+     "/stays/leeu-estates"
+    ]
+   ],
    "n": "DAY 07",
    "title": "Cape Town to Franschhoek",
    "line": "By road into the Winelands · about 80 km, about 45 minutes",
@@ -259,6 +313,12 @@
    "mark": "Founder inspected & approved · 2026"
   },
   {
+   "stayLinks": [
+    [
+     "Leeu Estates",
+     "/stays/leeu-estates"
+    ]
+   ],
    "n": "DAY 08",
    "title": "The wine studio and the vines",
    "line": "Leeu Estates, Franschhoek",
@@ -276,6 +336,7 @@
    "mark": ""
   },
   {
+   "stayLinks": [],
    "n": "DAY 09",
    "title": "Home through Cape Town",
    "line": "By road to CPT · about 70 km",
@@ -502,7 +563,15 @@
     ],
     [
      "Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-varty-camp/\">Varty Camp on Wild & Co Safaris</a>"
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi-varty-camp/\">Varty Camp on Wild & Co Safaris</a>"
+    ],
+    [
+     "Reserve",
+     "<a href=\"/safaris/londolozi-reserve\">Londolozi Reserve</a>"
+    ],
+    [
+     "Reserve on Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/\">Londolozi on Wild & Co Safaris</a>"
     ]
    ]
   },
@@ -547,7 +616,15 @@
     ],
     [
      "Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-tree-camp/\">Tree Camp on Wild & Co Safaris</a>"
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi-tree-camp/\">Tree Camp on Wild & Co Safaris</a>"
+    ],
+    [
+     "Reserve",
+     "<a href=\"/safaris/londolozi-reserve\">Londolozi Reserve</a>"
+    ],
+    [
+     "Reserve on Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/\">Londolozi on Wild & Co Safaris</a>"
     ]
    ]
   },
@@ -588,6 +665,10 @@
     [
      "Stay page",
      "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/cape-town/ellerman-house/\">Ellerman House on Wild & Co Safaris</a>"
     ]
    ]
   },

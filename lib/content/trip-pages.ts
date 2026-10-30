@@ -64,6 +64,10 @@ const ZA = {
   treeDeck: LZ("londolozi-tree-camp/londolozi-tree-camp-deck", "The deck at Londolozi Tree Camp, in the leadwood canopy"),
   vartyPool: LZ("londolozi-varty-camp/londolozi-varty-camp-main-pool", "The main pool at Londolozi Varty Camp"),
   pioneerSuite: LZ("londolozi-pioneer-camp/londolozi-pioneer-camp-suite-exterior", "A suite at Londolozi Pioneer Camp"),
+  sunsetBoulder: LZ("londolozi/londolozi-sunset-boulder", "Sunset from a boulder at Londolozi, Sabi Sand"),
+  sandRiver: LZ("londolozi/londolozi-sand-river-crossing", "A crossing on the Sand River at Londolozi"),
+  wildDogs: LZ("londolozi/londolozi-wild-dogs-varty-camp", "Wild dogs near Varty Camp, Londolozi"),
+  soundTherapy: LZ("londolozi/londolozi-healing-house-sound-therapy", "Sound therapy at the Healing House, Londolozi"),
   pioneerPool: LZ("londolozi-pioneer-camp/londolozi-pioneer-camp-pool", "The pool at Londolozi Pioneer Camp"),
   ellAir: { url: `${B44}a69ea5ee9_e843f4e96_694b0eac021864ade3c6e7b8_Ellerman_House_Aerial.jpg`, alt: "Ellerman House, Cape Town: the Atlantic at sundown" },
   ellTerrace: { url: `${B44}34f1c8e06_52680f0f9_694b0ebccc2fad7ac7a3142e_Ellerman_House_Exterior.jpg`, alt: "Ellerman House, Cape Town: the house and terraces at dusk" },
@@ -76,7 +80,7 @@ const ZA = {
 const ZA_IMAGES: Record<string, TripImg> = {
   "PHOTO · VARTY CAMP MAIN POOL": ZA.vartyPool, "Varty Camp main pool": ZA.vartyPool,
   "PHOTO · LEOPARD CUBS IN A TREE": ZA.cubsTree, "Leopard cubs in a tree": ZA.cubsTree, "Leopards on the Sand River": ZA.cubsTree,
-  "PHOTO · TREE CAMP DECK": ZA.treeDeck, "Tree Camp deck": ZA.treeDeck,
+  "PHOTO · TREE CAMP DECK": ZA.treeDeck, "PHOTO · SAND RIVER CROSSING": ZA.sandRiver, "PHOTO · WILD DOGS": ZA.wildDogs, "PHOTO · SUNSET BOULDER": ZA.sunsetBoulder, "PHOTO · SOUND THERAPY": ZA.soundTherapy, "Tree Camp deck": ZA.treeDeck,
   "PHOTO · PHOTOGRAPHIC STUDIO": ZA.studio, "Photographic Studio": ZA.studio, "The Photographic Studio": ZA.studio, "Lightroom tuition": ZA.studio,
   "PHOTO · HEALING HOUSE": ZA.healing, "Healing House": ZA.healing, "The Healing House": ZA.healing, "Healing House treatments": ZA.healing,
   "PHOTO · THE RETREAT": ZA.retreat, "The retreat": ZA.retreat, "Boyd Varty's tracking and coaching retreat": ZA.retreat,
@@ -97,10 +101,11 @@ const ZA_IMAGES: Record<string, TripImg> = {
 // so its slides come from the country page and the route's stays in the library.
 const CAY = (id: string, up = false) => `https://res.cloudinary.com/jhlnq5h5/image/upload/${up ? "e_upscale/" : ""}c_limit,w_2560/q_auto:good/f_jpg/jwco/collections/cayuga-collection/${id}`;
 export const TRIP_SLIDES: Record<string, TripImg[]> = {
-  "the-sand-river-by-road": [ZA.cubsTree, ZA.treeDeck, ZA.vartyPool, ZA.ellAir, ZA.leeuManor],
-  "leopards-through-the-lens": [ZA.cubsTree, ZA.studio, ZA.vartyPool, ZA.treeDeck],
-  "track-your-life-with-boyd-varty": [ZA.retreat, ZA.healing, ZA.pioneerSuite, ZA.pioneerPool],
-  "three-generations-at-pioneer": [ZA.cubsDen, ZA.tracking, ZA.pioneerSuite, ZA.pioneerPool, ZA.ellAir],
+  // Heroes: Londolozi's 2,560-3,000 px originals only (James, 30 Oct 2026: "use best photos").
+  "the-sand-river-by-road": [ZA.cubsTree, ZA.sandRiver, ZA.treeDeck, ZA.vartyPool, ZA.sunsetBoulder, ZA.ellAir],
+  "leopards-through-the-lens": [ZA.studio, ZA.wildDogs, ZA.cubsTree, ZA.vartyPool, ZA.sunsetBoulder],
+  "track-your-life-with-boyd-varty": [ZA.retreat, ZA.soundTherapy, ZA.healing, ZA.pioneerSuite, ZA.sunsetBoulder],
+  "three-generations-at-pioneer": [ZA.pioneerSuite, ZA.cubsDen, ZA.sandRiver, ZA.sunsetBoulder, ZA.ellAir],
   // Cayuga's own photos (cayugacollection.com gallery), re-hosted on Cloudinary with alt and place.
   "the-original-costa-route-7-days": [
     { url: CAY("senda-monteverde/senda-monteverde-04"), alt: "A balcony looking over the cloud forest at Senda Monteverde" },

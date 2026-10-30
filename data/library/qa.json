@@ -222,9 +222,7 @@
    "slug": "angama-mara",
    "name": "Angama Mara",
    "country": "Kenya",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1127,8 +1125,7 @@
    "name": "Entamanu Ngorongoro",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -1138,8 +1135,7 @@
    "name": "Entamanu Ngorongoro",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -1492,12 +1488,8 @@
    "slug": "hemingways-nairobi",
    "name": "Hemingways Nairobi",
    "country": "Kenya",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1a2a9b27f2e10892595",
@@ -2769,8 +2761,7 @@
    "name": "One & Only Gorilla's Nest",
    "country": "Rwanda",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },

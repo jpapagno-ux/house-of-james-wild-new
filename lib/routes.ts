@@ -188,6 +188,7 @@ export const STAY_SLUGS: string[] = [
   "grootbos-private-nature-reserve",
   "gwe-gwe-beach-lodge",
   "hayfield-manor",
+  "hemingways-nairobi",
   "hidden-valley-lodge",
   "hotel-bardo",
   "house-in-the-wild-masai-mara",

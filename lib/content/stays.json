@@ -579,8 +579,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.0136,
-    "lng": 35.0584
+    "lat": -1.835,
+    "lng": 35.2459
    },
    "airport": "Klein’s Airstrip, Lobo Airstrip",
    "airportDirections": "Fly to Kilimanjaro or Arusha, connect by light aircraft to Klein’s or Lobo Airstrip, 45 minute road transfer to camp.",
@@ -1689,7 +1689,10 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -1.2759,
+    "lng": 34.9693
+   },
    "airport": null,
    "airportDirections": null,
    "founderNote": null,
@@ -5483,8 +5486,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.798,
-    "lng": 31.436
+    "lat": -24.7688,
+    "lng": 31.3902
    },
    "airport": "Skukuza Airport (SZK) Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Approximately 1.5–2 hours drive from Skukuza Airport or 2.5–3 hours from Kruger Mpumalanga International Airport. Charter flights are also available to nearby airstrips.",
@@ -5539,8 +5542,8 @@
    "status": "founder_vetted",
    "statusDate": "2026-01-01",
    "coords": {
-    "lat": -24.801,
-    "lng": 31.437
+    "lat": -24.7834,
+    "lng": 31.3807
    },
    "airport": "Skukuza Airport (SZK) Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Approximately 1.5–2 hours drive from Skukuza Airport or 2.5–3 hours from Kruger Mpumalanga International Airport. Charter flights are available to nearby airstrips for quicker access.",
@@ -5595,8 +5598,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.795,
-    "lng": 31.439
+    "lat": -24.8691,
+    "lng": 31.4046
    },
    "airport": "Kruger Mpumalanga International Airport (MQP) Skukuza Airport (SZK)",
    "airportDirections": "Approx. 1.5–2 hours drive from Skukuza Airport or 2.5–3 hours from Kruger Mpumalanga International Airport. Charter flights are also available directly to nearby airstrips.",
@@ -6185,8 +6188,8 @@
    "status": "founder_visited",
    "statusDate": "2026-05-01",
    "coords": {
-    "lat": -33.9106,
-    "lng": 18.3952
+    "lat": -33.9291,
+    "lng": 18.3779
    },
    "airport": "Cape Town International Airport (CPT) ",
    "airportDirections": "~26 km (~30 minutes) from Cape Town International Airport to Ellerman House via car with complimentary airport transfers offered.",
@@ -7530,8 +7533,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -8.9667,
-    "lng": 30.3667
+    "lat": -6.1385,
+    "lng": 29.7333
    },
    "airport": "Nearest airports: Kigoma Airport (TKQ) and Arusha Airport (ARK), or other small airstrips depending on your itinerary.",
    "airportDirections": "Greystoke Mahale is remote. Most travelers fly into Arusha for international connections, then take a charter to a smaller airstrip near Lake Tanganyika, or fly via Kigoma. From the airstrip, a scenic 90-minute dhow ride on the lake brings you to the lodge.",
@@ -7824,6 +7827,102 @@
    "facts": {},
    "faqs": [],
    "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "hemingways-nairobi",
+   "name": "Hemingways Nairobi",
+   "ledgerId": "STY-2026-805060",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "45-suite hotel on ten acres in Karen, facing the Ngong Hills",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-deluxe-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-executive-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-blixen-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-hemingways-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/hemingways-nairobi-experience",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/nairobi-national-park-zebra",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/giraffe-centre",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/hemingways-nairobi/karen-blixen-museum"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wine"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2018-01-01",
+   "coords": {
+    "lat": -1.3431,
+    "lng": 36.7039
+   },
+   "airport": "Jomo Kenyatta International Airport (NBO); Wilson Airport for safari flights",
+   "airportDirections": "About 35 minutes from Jomo Kenyatta International, traffic depending, and about 20 minutes from Wilson Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "45 suites over two floors: Deluxe Suites, Executive Suites, The Blixen Suite and The Hemingways Suite. Every suite has a balcony facing the Ngong Hills."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Nairobi National Park",
+     "The Giraffe Centre",
+     "Karen Blixen Museum",
+     "Sheldrick Wildlife Trust",
+     "Swahili cooking class"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Heated swimming pool",
+     "Spa with four treatment rooms, sauna and steam room; gym",
+     "Brasserie, fine dining restaurant and wine cellar",
+     "Ten acres of grounds"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "The house's night in Nairobi",
+     "body": "Arrive from a long-haul flight, sleep in Karen instead of the city centre, and fly out to the Mara or Laikipia from Wilson Airport about 20 minutes away. Nairobi National Park, the Giraffe Centre and the Sheldrick elephant orphanage fill a spare morning."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "About 35 minutes from Jomo Kenyatta International (NBO) and about 20 minutes from Wilson Airport for safari flights.",
+    "signature_experiences": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust.",
+    "who_its_for": "Safari travellers who want a calm first or last night in Nairobi, close to Wilson Airport."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hemingways Nairobi?",
+     "a": "On Mbagathi Ridge in Karen, Nairobi's green south-western suburb, facing the Ngong Hills."
+    },
+    {
+     "q": "How far is Hemingways Nairobi from the airport?",
+     "a": "About 35 minutes from Jomo Kenyatta International, traffic depending, and about 20 minutes from Wilson Airport, where most safari flights leave."
+    },
+    {
+     "q": "How many rooms does Hemingways Nairobi have?",
+     "a": "45 suites over two floors: Deluxe and Executive Suites, The Blixen Suite and The Hemingways Suite, each with a balcony facing the Ngong Hills."
+    },
+    {
+     "q": "What is there to do from Hemingways Nairobi?",
+     "a": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust are all close by, plus golf at Karen Country Club."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null
@@ -9747,8 +9846,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.1491,
-    "lng": 23.783
+    "lat": -19.1649,
+    "lng": 23.717
    },
    "airport": "Khwai Airstrip (KHW)",
    "airportDirections": "Fly to Khwai Airstrip, 15-minute drive to camp, African Bush Camps team will greet you.",
@@ -12264,8 +12363,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.8015,
-    "lng": 31.4828
+    "lat": -24.7926,
+    "lng": 31.3682
    },
    "airport": "Skukuza Airport (SZK), Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Fly into Skukuza Airport followed by a road transfer of approximately 1 hour. Alternatively, fly into Kruger Mpumalanga International Airport and transfer by road or charter flight.",
@@ -12913,8 +13012,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.1218,
-    "lng": 35.2788
+    "lat": -1.3427,
+    "lng": 35.1641
    },
    "airport": "Ol Kiombo Airstrip",
    "airportDirections": "Fly to Ol Kiombo Airstrip, 45 minute transfer to camp. Charter flights available from Nairobi or other parks.",
@@ -13773,8 +13872,8 @@
    "status": "founder_visited",
    "statusDate": "2026-05-01",
    "coords": {
-    "lat": -24.4372,
-    "lng": 31.1336
+    "lat": -24.4475,
+    "lng": 31.1692
    },
    "airport": "Hoedspruit Eastgate Airport (HDS), Skukuza Airport (SZK), Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Fly to Hoedspruit (HDS), 40-minute road transfer to Monwana; transfers from Skukuza or KMIA available on request.",
@@ -15914,8 +16013,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -3.7928,
-    "lng": 36.1196
+    "lat": -4.1327,
+    "lng": 36.0757
    },
    "airport": "Kuro Airstrip",
    "airportDirections": "Fly to Kuro Airstrip, 30 minute game drive transfer to camp. Charter flights available from Arusha or Serengeti.",
@@ -18152,8 +18251,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -18.3742,
-    "lng": 23.5821
+    "lat": -18.5327,
+    "lng": 23.5221
    },
    "airport": "Selinda Airstrip",
    "airportDirections": "Fly by charter to Selinda Airstrip, followed by a 45-minute road transfer to camp. Charter flights are available from Maun, Kasane, or other Delta camps.",
@@ -18520,8 +18619,8 @@
    "status": "founder_vetted",
    "statusDate": "2018-01-01",
    "coords": {
-    "lat": -24.7996,
-    "lng": 31.527
+    "lat": -24.7863,
+    "lng": 31.429
    },
    "airport": "Skukuza Airport, Hoedspruit Eastgate Airport",
    "airportDirections": "Fly to Skukuza or Hoedspruit, 1 to 2 hour road transfer to lodge. Private charters available to nearby airstrip.",
@@ -18599,8 +18698,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.8034,
-    "lng": 31.5137
+    "lat": -24.8316,
+    "lng": 31.443
    },
    "airport": "Skukuza Airport, Hoedspruit Eastgate Airport",
    "airportDirections": "Fly to Skukuza or Hoedspruit, then 1 to 2 hour road transfer to villa. Private charters available to nearby airstrip.",
@@ -18679,8 +18778,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.981234,
-    "lng": 31.392345
+    "lat": -24.7866,
+    "lng": 31.4258
    },
    "airport": "Kruger Mpumalanga International Airport (MQP); OR Tambo International Airport (JNB)",
    "airportDirections": "MQP is ~45 minutes drive by road charter; JNB is ~5 hours by road or short internal flight to the reserve. MQP is the best entry point for convenience and efficiency.",
@@ -19062,8 +19161,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.0167,
-    "lng": 34.7167
+    "lat": -2.0878,
+    "lng": 34.4852
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
@@ -19142,8 +19241,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4652,
-    "lng": 29.5875
+    "lat": -1.4234,
+    "lng": 29.619
    },
    "airport": "Kigali International Airport",
    "airportDirections": "Fly to Kigali, then 2.5 hour scenic road transfer to lodge. Helicopter transfers available.",
@@ -19694,8 +19793,8 @@
    "status": "founder_vetted",
    "statusDate": "2018-01-01",
    "coords": {
-    "lat": -2.041,
-    "lng": 34.7947
+    "lat": -2.1431,
+    "lng": 34.4459
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to camp. Charter flights available from Arusha or other parks.",
@@ -19775,8 +19874,8 @@
    "status": "founder_returned",
    "statusDate": "2018-01-01",
    "coords": {
-    "lat": -2.0555,
-    "lng": 34.7938
+    "lat": -2.0835,
+    "lng": 34.4957
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 15 to 30 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
@@ -19859,8 +19958,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.0834,
-    "lng": 34.792
+    "lat": -2.0911,
+    "lng": 34.5055
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to house. Charter flights available from Arusha or other parks.",
@@ -19941,8 +20040,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.4552,
-    "lng": 31.8258
+    "lat": -24.4539,
+    "lng": 31.9805
    },
    "airport": "Skukuza Airport, Hoedspruit Eastgate Airport",
    "airportDirections": "Fly to Skukuza or Hoedspruit, 1 to 2 hour road transfer to lodge. Private charters available to nearby airstrip.",
@@ -23037,8 +23136,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.9936,
-    "lng": 35.5597
+    "lat": -2.9642,
+    "lng": 35.6617
    },
    "airport": "Lake Manyara Airstrip",
    "airportDirections": "Fly to Lake Manyara Airstrip, three hour scenic drive to camp through the Ngorongoro Highlands. Charter flights available from Arusha or Serengeti.",
@@ -23426,8 +23525,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -33.9068,
-    "lng": 18.4185
+    "lat": -33.9084,
+    "lng": 18.423
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "Approximately 20–25 km from Cape Town International Airport (CPT), about 20–30 minutes by car depending on traffic. Best arrival airport: Cape Town International Airport (CPT).",
@@ -25232,8 +25331,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4411,
-    "lng": 29.6072
+    "lat": -1.4441,
+    "lng": 29.5263
    },
    "airport": "Kigali International Airport KGL",
    "airportDirections": "Fly into Kigali KGL, private road transfer 2.5 hours or helicopter direct to Bisate Reserve",
@@ -26094,8 +26193,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.494931,
-    "lng": 30.674883
+    "lat": -1.5076,
+    "lng": 30.6799
    },
    "airport": "Kigali International Airport (KGL)",
    "airportDirections": "From Kigali International Airport, it is a two and a half to three hour scenic drive to Akagera National Park, followed by a transfer to the private camp. A helicopter transfer is also available for faster access.",
@@ -26553,8 +26652,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4737,
-    "lng": 29.5944
+    "lat": -1.4164,
+    "lng": 29.5703
    },
    "airport": "Kigali International Airport KGL",
    "airportDirections": "Fly into Kigali KGL, road transfer 2.5 hours to Sabyinyo via Musanze, or private helicopter available",

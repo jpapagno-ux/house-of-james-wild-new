@@ -5,7 +5,7 @@
 // Ledger after the visit or review happened. The site never infers a status,
 // never upgrades one, and prints nothing for "unclassified".
 //
-//   founder_returned  → "Founder favorite"      (★ returned to ★)       round, oxblood
+//   founder_returned  → "Founder favorite"      (★ founder favourite ★)       round, oxblood
 //   founder_visited   → "Field verified"         (★ toured & stayed ★)   round, oxblood
 //   founder_vetted    → "Founder inspected"      (★ & approved ★)        round, oxblood
 //   house_approved    → no stamp; a quiet line in the Ledger strip: "House approved"
@@ -54,7 +54,7 @@ export function statusLine(status?: HouseStatus | null, date?: string | null): s
   const withYear = (s: string) => (year ? `${s} · ${year}` : s);
   switch (status) {
     case "founder_returned":
-      return withYear("Founder favorite, returned to");
+      return withYear("Founder favorite");
     case "founder_visited":
       return withYear("Founder stayed");
     case "founder_vetted":
@@ -73,7 +73,7 @@ export function founderProof(name: string, status?: HouseStatus | null, date?: s
   const year = date ? date.slice(0, 4) : "";
   switch (status) {
     case "founder_returned":
-      return `James has stayed at ${name} and gone back: a founder favourite${year ? `, most recently in ${year}` : ""}.`;
+      return `James stayed at ${name}${year ? ` in ${year}` : ""}: a founder favourite.`;
     case "founder_visited":
       return `James stayed at ${name}${year ? ` in ${year}` : ""} before filing it in the Ledger.`;
     case "founder_vetted":

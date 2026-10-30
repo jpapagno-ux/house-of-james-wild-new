@@ -36,6 +36,7 @@ import { VOLUME_STYLES } from "@/lib/volumes";
 import { AdvisorStrip } from "@/components/advisor/Desk";
 import GuideOffer from "@/components/guides/GuideOffer";
 import IslandZoom from "@/components/destination/IslandZoom";
+import { volumeInk } from "@/lib/volumes";
 import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES } from "@/lib/content/guides";
@@ -225,11 +226,11 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
-          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
-            <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>
+          <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+            <p className="ledger-eyebrow" style={{ color: volumeInk(c.region === "europe" ? "europe" : "stays") }}>From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {c.name}</h2>
             <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {featured.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? (s.bestMonths ? `Best ${s.bestMonths}` : "")} eyebrow={s.bestMonths ? `Best ${s.bestMonths}` : undefined} image={{ url: s.hero as string, alt: `${s.name}, ${c.name}` }} href={recordHref("stay", s.slug)} /></li>)}
+              {featured.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? (s.bestMonths ? `Best ${s.bestMonths}` : "")} eyebrow={s.bestMonths ? `Best ${s.bestMonths}` : undefined} image={{ url: s.hero as string, alt: `${s.name}, ${c.name}` }} href={recordHref("stay", s.slug)} volume={s.reserveChild ? "safaris" : isResidence(s.name, s.category) ? "gatherings" : c.region === "europe" ? "europe" : "stays"} /></li>)}
             </ul>
             {rest.length > 0 && (
               <div className="mt-10 border-t ledger-border pt-6">

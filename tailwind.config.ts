@@ -22,7 +22,7 @@ const config: Config = {
         // never for the page itself; and one tone per volume for dots, tabs and rails.
         sand: { DEFAULT: "#EFEAE0", deep: "#E4DDD0", ink: "#6B6257" },
         forest: { DEFAULT: "#2F4034", light: "#B9C7B0" },
-        vol: { stays: "#8B2525", safaris: "#A5692A", gatherings: "#405A45", voyages: "#1E5F73", overland: "#94512F", europe: "#5B3A5E" },
+        vol: { stays: "#3E5A3A", safaris: "#7A4A24", gatherings: "#86232C", voyages: "#2A3D5C", europe: "#4E2E46", overland: "#4D4C27" }, // = lib/volumes.ts pads; checked by scripts/check-palette.mjs
       },
       fontFamily: {
         display: ["'Cormorant Garamond'", "Georgia", "'Times New Roman'", "serif"],

@@ -8,6 +8,8 @@ import SafeLink from "@/components/ledger/SafeLink";
 import { PlanClose } from "@/components/about/Parts";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
 import type { NavLink } from "@/lib/site";
+import { volumeInk, type VolumeKey } from "@/lib/volumes";
+import type React from "react";
 
 // Hub shells: one frame for the volume and index pages (Stays, Safaris,
 // Gatherings, Voyages, Overland, Destinations, Journal). Each shows what's
@@ -59,13 +61,14 @@ export function HubSection({ eyebrow, title, id, children, more }: { eyebrow: st
 
 // A Ledger record card. Links only when the record's page is built (or in
 // previews); otherwise it's a plain card, so production never 404s.
-export function RecordCard({ name, id, line, image, href, eyebrow }: { name: string; id: string; line: string; image: { url: string; alt: string }; href: string; eyebrow?: string }) {
+export function RecordCard({ name, id, line, image, href, eyebrow, volume }: { name: string; id: string; line: string; image: { url: string; alt: string }; href: string; eyebrow?: string; /** Ink the card by its volume (lib/volumes.ts): a top rule, the eyebrow and the hover border. */ volume?: VolumeKey }) {
+  const ink = volume ? volumeInk(volume) : undefined;
   const linked = !GUARD_ON || isBuilt(href);
   const body = (
     <>
       <div className="relative aspect-[4/3] bg-paper-card overflow-hidden"><Image src={image.url} alt={image.alt} fill sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 90vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" /></div>
       <div className="p-4 flex flex-col flex-1">
-        {eyebrow && <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>}
+        {eyebrow && <p className={`ledger-eyebrow ${ink ? "" : "ledger-crimson"}`} style={ink ? { color: ink } : undefined}>{eyebrow}</p>}
         <h3 className="ledger-display text-[1.3rem] leading-snug mt-0.5">{name}</h3>
         <p className="mt-1.5 text-[14.5px] ledger-muted leading-snug">{line}</p>
         <p className="mt-auto pt-3 flex items-center justify-between"><span className="font-mono text-[11px] tracking-[0.08em] ledger-muted">{id}</span>{linked && <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={1.5} aria-hidden="true" />}</p>
@@ -73,5 +76,6 @@ export function RecordCard({ name, id, line, image, href, eyebrow }: { name: str
     </>
   );
   const cls = "group h-full bg-paper border ledger-border flex flex-col";
-  return linked ? <Link href={href} className={`${cls} hover:border-crimson`}>{body}</Link> : <article className={cls}>{body}</article>;
+  const st = ink ? ({ borderTop: `3px solid ${ink}`, ["--card-ink" as string]: ink } as React.CSSProperties) : undefined;
+  return linked ? <Link href={href} className={`${cls} ${ink ? "hover:[border-color:var(--card-ink)]" : "hover:border-crimson"}`} style={st}>{body}</Link> : <article className={cls} style={st}>{body}</article>;
 }

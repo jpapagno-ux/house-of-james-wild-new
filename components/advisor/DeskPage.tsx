@@ -45,7 +45,7 @@ export function DeskSheet({ a }: { a: Advisor }) {
   return (
     <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="sheet-heading">
       <p className="ledger-eyebrow ledger-crimson">01 · {pro}&rsquo;s ledger page</p>
-      <h2 id="sheet-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">His ink, {a.firstName === "Anthony" || a.firstName === "Marcus" || a.firstName === "Mateo" ? "his" : "her"} ink</h2>
+      <h2 id="sheet-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Two inks, one page</h2>
       <p className="mt-3 text-[15.5px] ledger-muted max-w-2xl">Every entry {pro} carries, with James&rsquo;s mark beside {pro}&rsquo;s own. Oxblood is James. Green is the advisor. Dashed grey is pencil.</p>
       <div className="mt-6 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
         <table className="w-full min-w-[820px] text-[14px] border-t ledger-rule">

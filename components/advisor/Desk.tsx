@@ -58,7 +58,7 @@ export function AdvisorChips({ countrySlug, regionSlug, volume, ledgerId, light 
         {advisors.slice(0, 4).map((a) => <Headshot key={a.slug} a={a} size={26} className={light ? "!border-white/80" : ""} />)}
       </span>
       <span className={`ledger-eyebrow !text-[9.5px] ${light ? "!text-white/85" : ""}`}>
-        {n} {n === 1 ? "advisor" : "advisors"} in the book{slept ? ` · ${slept} slept here` : ""}
+        {n} {n === 1 ? "advisor" : "advisors"} in the book{slept ? ` · ${slept} ${slept === 1 ? "has" : "have"} stayed` : ""}
       </span>
     </span>
   );

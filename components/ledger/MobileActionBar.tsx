@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Compass, Map, Phone, PenLine } from "lucide-react";
+import CompassSpin from "./CompassSpin";
+import { Map, Phone, PenLine } from "lucide-react";
 import { SITE } from "@/lib/site";
 
 // MobileActionBar — replaces the old sticky bar on phones: the four things a
@@ -10,7 +11,7 @@ export default function MobileActionBar() {
     <nav aria-label="Quick actions" className="lg:hidden [body:has(#record-bar)_&]:hidden fixed bottom-0 inset-x-0 z-30 bg-paper/95 backdrop-blur border-t ledger-border pb-[env(safe-area-inset-bottom)]">
       <ul className="grid grid-cols-4 h-14">
         <li><Link href="/destinations" className={item}><Map className="w-5 h-5" strokeWidth={1.25} />Destinations</Link></li>
-        <li><Link href="/compass" className={item}><Compass className="w-5 h-5" strokeWidth={1.25} />Compass</Link></li>
+        <li><Link href="/compass" className={item}><CompassSpin size={20} />Compass</Link></li>
         <li><a href={`tel:${SITE.phone.tel}`} className={item}><Phone className="w-5 h-5" strokeWidth={1.25} />Call</a></li>
         <li><Link href="/plan" className={`${item} !text-crimson`}><PenLine className="w-5 h-5" strokeWidth={1.25} />Plan</Link></li>
       </ul>

@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { FILMS } from "@/lib/content/films";
 import JsonLd from "@/components/ledger/JsonLd";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import { JourneyCard } from "@/components/destination/Journeys";
 import { journeysFor } from "@/lib/content/preview/journeys";
@@ -39,6 +40,7 @@ export default function VoyagesHub() {
             <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Everything in Indonesia</Link>
           </p>
         </HubSection>
+        <AdvisorScroll volume="voyages" title="Who sails with the small ships" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: voyages.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
     </div>

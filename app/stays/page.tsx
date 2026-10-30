@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
 import { HOME } from "@/lib/content/home";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
@@ -33,6 +34,7 @@ export default function StaysHub() {
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{items.map((s) => <li key={s.id}><RecordCard name={s.name} id={s.id} line={s.line} image={s.image} href={recordHref(s.kind ?? "stay", s.slug)} /></li>)}</ul>
         </HubSection>
         {PATHWAYS_ON && <StaysPathways />}
+        <AdvisorScroll volume="stays" title="Who carries the Stays volume" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Stays", mainEntity: { "@type": "ItemList", itemListElement: items.map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.name, url: absoluteUrl(recordHref(s.kind ?? "stay", s.slug)) })) } })} />
     </>

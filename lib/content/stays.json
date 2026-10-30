@@ -8384,7 +8384,7 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 19.973142,
+    "lat": -19.973142,
     "lng": 21.807944
    },
    "airport": "Maun International Airport (MUB)",
@@ -11027,7 +11027,7 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 19.3072,
+    "lat": -19.3072,
     "lng": 22.6011
    },
    "airport": "Maun Airport MUB, Kasane Airport BBK",

@@ -1,6 +1,7 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { Stamp } from "@/components/ledger/Marks";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
 import { HOME } from "@/lib/content/home";
@@ -32,6 +33,7 @@ export default function GatheringsHub() {
             </div>
           </div>
         </HubSection>
+        <AdvisorScroll volume="gatherings" title="Who books the whole house" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Gatherings" })} />
     </>

@@ -55,7 +55,7 @@ const pageSchema = graph(
   {
     "@type": "ItemList",
     "@id": absoluteUrl("/#volumes"),
-    name: "The five volumes of James Wild & Co",
+    name: "The six volumes of James Wild & Co",
     itemListElement: HOME.volumes.map((v, i) => ({ "@type": "ListItem", position: i + 1, name: v.name, url: absoluteUrl(v.path) })),
   },
   {

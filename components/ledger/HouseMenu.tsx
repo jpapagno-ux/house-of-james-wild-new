@@ -9,6 +9,7 @@ import { REGION_DATA } from "@/lib/content/regions";
 import { HOME } from "@/lib/content/home";
 import { live } from "@/lib/routes";
 import { JwcoSeal } from "./Marks";
+import CompassSpin from "./CompassSpin";
 
 // HouseMenu — the full-screen menu (house chrome, 30 Oct 2026). One "Menu"
 // word in the bar opens it on every screen size. Left: the six volumes at
@@ -88,7 +89,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
           <p className="ledger-eyebrow ledger-crimson mt-10">The house</p>
           <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5">
             {EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
-              <li key={l.href}><Link href={l.href} onClick={onClose} className="text-[16px] hover:ledger-crimson">{l.label}</Link></li>
+              <li key={l.href}><Link href={l.href} onClick={onClose} className="text-[16px] hover:ledger-crimson inline-flex items-center gap-2">{l.href === "/compass" && <CompassSpin size={18} />}{l.label}</Link></li>
             ))}
             <li><Link href="/account" onClick={onClose} className="text-[16px] hover:ledger-crimson">My Folio</Link></li>
           </ul>

@@ -50,7 +50,7 @@ export default async function StayPathwayPreview({ params }: { params: Promise<{
       <main id="main" className="theme-vol-stays-page">
         {/* The Arrival */}
         <RecordHero image={hero} eyebrow={`${s.country ?? "The Ledger"} · ${r.primary.name}`} title={s.name} tagline={s.tagline ?? undefined} glance={<PathwayChips primary={r.primary} secondary={r.secondary} hrefFor={(p) => pathwayPreviewHref(p.key)} />} />
-        <RecordNav items={[["Why James chose it", "#why"], ["The stay", "#stay"], ["Best suited for", "#suited"], ["Gives back", "#gives-back"], ["Follow the pathway", "#pathway"]]} />
+        <RecordNav items={[["Why James chose it", "why"], ["The stay", "stay"], ["Best suited for", "suited"], ["Gives back", "gives-back"], ["Follow the pathway", "pathway"]]} cta="Plan this stay" ctaHref={`/plan?place=${encodeURIComponent(s.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="mt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Stays", path: "/preview/pathways/stays" }, { name: s.name, path: stayPreviewHref(s.slug) }]} /></div>
           <div className="mt-6"><PreviewNote>Preview of the featured-stay template, 30 Oct 2026. Pathway classification is a house draft ({r.classifiedBy}); impact statements print with their status and source. The live page for this stay is unchanged.</PreviewNote></div>

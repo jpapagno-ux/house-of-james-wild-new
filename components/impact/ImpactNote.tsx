@@ -43,7 +43,7 @@ export default function ImpactNote({ name, statements, id = "gives-back", intro 
       <div className="max-w-ledger mx-auto">
         <p className="ledger-eyebrow !text-impact-copy flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Where Your Stay Gives Back</p>
         <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">What a Night at {name} Supports</h2>
-        <p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-impact-copy/90">{intro ?? "The house records what a stay supports only when it can name a source. Guest levies, voluntary gifts and a property's own spending are kept apart, and nothing is counted twice."}</p>
+        <p className="mt-4 max-w-2xl text-[16px] leading-relaxed text-impact-copy">{intro ?? "The house records what a stay supports only when it can name a source. Guest levies, voluntary gifts and a property's own spending are kept apart, and nothing is counted twice."}</p>
 
         {documented.length > 0 ? (
           <ul className="mt-8 grid md:grid-cols-2 gap-x-10 gap-y-6 border-t border-impact-copy/25">
@@ -51,7 +51,7 @@ export default function ImpactNote({ name, statements, id = "gives-back", intro 
               const k = KIND[s.kind], st = STATUS[s.status], money = MONEY[s.money];
               return (
                 <li key={i} className="pt-5 border-b border-impact-copy/20 pb-5 md:[&:nth-last-child(-n+2)]:border-b-0">
-                  <p className="flex items-center gap-2 text-[11px] tracking-[0.16em] uppercase font-medium"><k.Icon className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />{k.label}{money && <span className="ml-auto normal-case tracking-normal text-[12px] text-impact-copy/80">{money}</span>}</p>
+                  <p className="flex items-center gap-2 text-[11px] tracking-[0.16em] uppercase font-medium"><k.Icon className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />{k.label}{money && <span className="ml-auto normal-case tracking-normal text-[12px] text-impact-copy">{money}</span>}</p>
                   <p className="mt-2 text-[16px] leading-relaxed text-ink">{s.statement}</p>
                   <p className={`mt-2 flex flex-wrap items-center gap-x-2 text-[12.5px] ${st.cls}`}>
                     <st.Icon className="w-3.5 h-3.5" strokeWidth={1.75} aria-hidden="true" />
@@ -68,9 +68,9 @@ export default function ImpactNote({ name, statements, id = "gives-back", intro 
         )}
 
         {statements.some((s) => s.status === "unavailable") && documented.length > 0 && (
-          <p className="mt-5 text-[13.5px] text-impact-copy/80">Not yet documented: {statements.filter((s) => s.status === "unavailable").map((s) => KIND[s.kind].label.toLowerCase()).join(", ")}.</p>
+          <p className="mt-5 text-[13.5px] text-impact-copy">Not yet documented: {statements.filter((s) => s.status === "unavailable").map((s) => KIND[s.kind].label.toLowerCase()).join(", ")}.</p>
         )}
-        <p className="mt-6 text-[12.5px] text-impact-copy/75 max-w-2xl">Statements are the house&rsquo;s own notes or the partner&rsquo;s, as labelled. They are not a promise that any part of a room rate reaches a community or project unless a verified statement says so.</p>
+        <p className="mt-6 text-[12.5px] text-impact-copy max-w-2xl">Statements are the house&rsquo;s own notes or the partner&rsquo;s, as labelled. They are not a promise that any part of a room rate reaches a community or project unless a verified statement says so.</p>
       </div>
     </section>
   );

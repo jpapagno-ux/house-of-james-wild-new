@@ -65,7 +65,7 @@ export default function StaysPathwaysPreview() {
             </div>
             <ul className="text-[14.5px] grid gap-2 border-l border-impact-copy/30 pl-5">
               {["Conservation and habitat", "Marine projects", "Local employment and sourcing", "Cultural preservation and community", "Named levies and beneficiaries"].map((x) => <li key={x} className="flex gap-2"><span aria-hidden="true">·</span>{x}</li>)}
-              <li className="mt-2 text-[12.5px] text-impact-copy/80">Guest levies, voluntary gifts and a property&rsquo;s own spending are always labelled apart.</li>
+              <li className="mt-2 text-[12.5px] text-impact-copy">Guest levies, voluntary gifts and a property&rsquo;s own spending are always labelled apart.</li>
             </ul>
           </div>
         </section>

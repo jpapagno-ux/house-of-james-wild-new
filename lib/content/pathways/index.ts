@@ -48,3 +48,9 @@ export const onPathway = (id: PathwayId, opts?: { includeDrafts?: boolean }) =>
   pathwayStays(opts).filter((r) => r.primaryPathway === id || r.secondaryPathways.includes(id));
 
 export { validatePathwayMap } from "@/lib/pathways";
+
+/** Approved pathway chips for a saved stay, by slug (Ledger pages, Phase 2E). Null when unclassified or still draft. */
+export function pathwayChipsFor(slug: string): { primary: Pathway; secondary: Pathway[] } | null {
+  const r = pathwayStays().find((x) => x.slug === slug);
+  return r ? { primary: r.primary, secondary: r.secondary } : null;
+}

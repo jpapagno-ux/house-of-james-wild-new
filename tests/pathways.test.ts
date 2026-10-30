@@ -142,3 +142,12 @@ test("Phase 2G: every pathway has an SEO title and description within search lim
     assert.ok(kw[`/pathways/${p.key}`]?.targets.length >= 3, `${p.id} has keyword targets`);
   }
 });
+
+test("Phase 2E: Ledger chips resolve only for approved records", async () => {
+  const { mergeRecords } = await import("../lib/pathways.ts");
+  const lib = [{ slug: "ok", ledgerId: "STY-2026-000010", pathway: { primary: "PATH-02", secondary: [], setting: null, intentions: [], suitability: [], status: "approved" as const, classifiedBy: "James", classifiedAt: "2026-10-30" }, volumes: ["stays"] },
+    { slug: "draft", ledgerId: "STY-2026-000011", pathway: { primary: "PATH-02", secondary: [], setting: null, intentions: [], suitability: [], status: "draft" as const, classifiedBy: "iggi-draft", classifiedAt: "2026-10-30" }, volumes: ["stays"] }];
+  const recs = mergeRecords(lib, []);
+  assert.equal(recs.find((r) => r.slug === "ok")?.classificationStatus, "approved");
+  assert.equal(recs.find((r) => r.slug === "draft")?.classificationStatus, "draft", "drafts stay drafts; the Ledger pages filter them out via pathwayStays()");
+});

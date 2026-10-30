@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { requireTraveler } from "@/lib/booking-live/account";
 import { RemoveButton } from "@/components/booking-live/Actions";
+import { PathwayChips } from "@/components/pathways/Pathway";
+import { pathwayChipsFor } from "@/lib/content/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 
 export const metadata = { title: "Saved stays" };
 
@@ -25,6 +28,8 @@ export default async function FavoritesPage() {
               <div>
                 <Link href={`/stays/${r.property!.slug}`} className="ledger-display text-[20px] hover:ledger-crimson">{r.property!.name}</Link>
                 <p className="text-[13px] ledger-muted">{r.property!.country ?? "The Ledger"} · {r.property!.legacy_cms_id}</p>
+                {/* Wild Pathways (Phase 2E): a saved stay carries its approved pathway chips; nothing is stored, the chips come from the Ledger export by slug. */}
+                {PATHWAYS_ON && (() => { const c = pathwayChipsFor(r.property!.slug); return c ? <div className="mt-2"><PathwayChips primary={c.primary} secondary={c.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div> : null; })()}
               </div>
               <RemoveButton path={`/api/v1/me/favorites/${r.id}`} />
             </li>

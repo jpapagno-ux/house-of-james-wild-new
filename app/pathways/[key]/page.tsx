@@ -7,7 +7,7 @@ import { PathwayChips, PathwayIndex } from "@/components/pathways/Pathway";
 import { PATHWAY_LIST, pathway } from "@/lib/pathways";
 import { onPathway } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
-import { PATHWAY_ANSWER, PATHWAY_FAQS } from "@/lib/content/pathways/copy";
+import { PATHWAY_ANSWER, PATHWAY_FAQS, PATHWAY_SEO } from "@/lib/content/pathways/copy";
 import { altFor } from "@/lib/content/stays";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -25,7 +25,7 @@ export function generateStaticParams() { return PATHWAYS_ON ? PATHWAY_LIST.map((
 export async function generateMetadata({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!p) return {};
-  return buildMetadata({ title: `${p.name}: ${p.setting} Stays Vetted by James Wild & Co`, description: `${p.line} Vetted ${p.setting.toLowerCase()} stays from the James Wild & Co Ledger, each under a permanent Ledger ID.`, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
+  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
 }
 
 export default async function PathwayPage({ params }: { params: Promise<{ key: string }> }) {

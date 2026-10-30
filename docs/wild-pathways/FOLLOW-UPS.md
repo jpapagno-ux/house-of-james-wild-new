@@ -22,6 +22,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | PR #32 merge, production flag, make `/pathways` indexable | Approved and done: #32 squash-merged (`56de8bb`), sync run (`7d831d4`), #33 merged (`39cfc54`) |
 | 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
 | 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
+| 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
 
 ## Open
 
@@ -34,7 +35,8 @@ Running record. One line per item; closed items stay for the audit trail.
 | 5 | Base44 `siteExport` picks up the 2A change | — | **Closed** — confirmed by the 30 Oct manual sync (`7d831d4`): 30 approved classifications exported |
 | 7 | Vercel `NEXT_PUBLIC_PATHWAYS=on` | — | **Closed** — set on Preview (07:37) and Production (08:42) on James's instruction |
 | 9 | Ten approved batch-1 records are not yet in the site export (Serian camps, Sheba's Secret Garden, Angama Safari Camp, Casa Koko): no site slug / not live. They surface when those records are published to the site | library | Open |
-| 10 | Phase 2E (Ledger fields on saved stays), 2F (dialogue schema), 2G (keyword mapping, `llms.txt`) | this initiative | Open — next |
+| 10 | Phase 2E (Ledger fields on saved stays), 2F (dialogue schema) | this initiative | Open — next |
+| 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
 | 8 | HubShell breadcrumb is two levels (Home › page); `/pathways/[key]` wants Home › Pathways › name. Small change to `components/hub/Hub.tsx` shared with every hub; do with care | this initiative | Open |
 | 6 | Branch merge order with `template-pass-marks`, `fonts-cormorant-manrope`, `library-offers` | James | Open — agree before any merge |
 

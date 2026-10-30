@@ -50,3 +50,17 @@ export const PATHWAY_FAQS: Record<PathwayId, { q: string; a: string }[]> = {
     { q: "Can a stay be on more than one pathway?", a: "Yes. A pathway is a collection, not a category. A stay leads with one pathway and may sit on others; it keeps a single Ledger ID and page." },
   ],
 };
+
+// Title and meta description per pathway, tuned to the head terms in
+// data/seo-keywords.json (30 Oct 2026). Titles keep the pathway name first so
+// the brand's own vocabulary is what gets cited; the search phrase follows.
+export const PATHWAY_SEO: Record<PathwayId, { title: string; description: string }> = {
+  "PATH-01": { title: "Into the Green: Jungle and Rainforest Lodges Vetted by James Wild & Co", description: "Jungle lodges, cloud-forest houses and river camps from Costa Rica to the Daintree and the Amazon, vetted by James Wild & Co under permanent Ledger IDs." },
+  "PATH-02": { title: "Between Tides: Private Islands, Reefs and Beach Stays Vetted by James Wild & Co", description: "Private island resorts, overwater and beachfront stays and the small ships that reach them, from Taha'a to the Caribbean. Vetted by James Wild & Co." },
+  "PATH-03": { title: "Above It All: Mountain and Highland Lodges Vetted by James Wild & Co", description: "Mountain lodges, alpine houses and desert-plateau retreats with the long view, from the Andes and the Atacama to the Winelands. Vetted by James Wild & Co." },
+  "PATH-04": { title: "Where the Wild Lives: Safari Camps and Private Reserves Vetted by James Wild & Co", description: "Luxury safari camps, private game reserves and conservancies from the Okavango to the Maasai Mara, vetted by James Wild & Co, with what each stay gives back." },
+  "PATH-05": { title: "The Art of Stillness: Wellness and Slow-Stay Retreats Vetted by James Wild & Co", description: "Wellness retreats, hot springs and quiet estates built for doing less, vetted by James Wild & Co under permanent Ledger IDs. Restoration, not regimes." },
+  "PATH-06": { title: "Off the Map: Remote and Secluded Lodges Vetted by James Wild & Co", description: "Remote lodges and secluded houses with no signpost, filed in the James Wild & Co Ledger first. Some are shared only when a Compass reading is sent in." },
+  "PATH-07": { title: "A Place of Our Own: Private Villas and Exclusive-Use Stays Vetted by James Wild & Co", description: "Private villas with staff, exclusive-use safari lodges and whole islands for one party under one roof, vetted by James Wild & Co. Many also sit in Gatherings." },
+  "PATH-08": { title: "Rooted in Place: Heritage Hotels, Wine Estates and Host-Led Stays Vetted by James Wild & Co", description: "Heritage hotels, working farms, wine estates and old houses kept rather than rebuilt, with hosts whose families never left. Vetted by James Wild & Co." },
+};

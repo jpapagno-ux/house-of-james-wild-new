@@ -2,6 +2,9 @@ import { SITE, VOLUMES, REGIONS, LIVE_ROUTES } from "@/lib/site";
 import { POSTS } from "@/lib/content/journal/posts";
 import { TRIPS } from "@/lib/content/trips";
 import { absoluteUrl } from "@/lib/seo";
+import { PATHWAY_LIST } from "@/lib/pathways";
+import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
+import { onPathway } from "@/lib/content/pathways";
 
 // llms.txt — a plain-language map of the house for AI assistants and answer
 // engines: who James is, what the Ledger standard means, where each volume
@@ -24,6 +27,13 @@ export function GET() {
     "## The five volumes",
     ...VOLUMES.map((v) => `- [${v.label}](${absoluteUrl(v.href)}): ${v.intro}`),
     "",
+    ...(PATHWAYS_ON ? [
+      "## Wild Pathways (eight editorial collections across the volumes)",
+      "A pathway is a collection, not a category: it gathers vetted stays by setting and intention. One stay can sit on several pathways and keeps a single Ledger ID and page.",
+      ...PATHWAY_LIST.map((p) => `- [${p.name}](${absoluteUrl(`/pathways/${p.key}`)}) (${p.id}, ${p.setting.toLowerCase()}): ${p.line} ${onPathway(p.id).length} approved entries.`),
+      "- Where Your Stay Gives Back: each stay page states what the house has on record about conservation, community, employment and levies, with the statement's source, review date and status. Nothing is printed without a source.",
+      "",
+    ] : []),
     "## Destinations",
     ...REGIONS.map((r) => `- [${r.label}](${absoluteUrl(r.href)})`),
     "",

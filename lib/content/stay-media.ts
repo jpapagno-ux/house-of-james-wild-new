@@ -48,6 +48,7 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
 // entry names someone else.
 export const PHOTO_CREDIT: Record<string, string> = {
   ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.startsWith("wilderness-")).map((x) => [x.slug, "Wilderness"])),
+  ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.endsWith("-ted-turner-reserve")).map((x) => [x.slug, "Ted Turner Reserves"])),
   ...Object.fromEntries(
     Object.entries(photos.stays as Record<string, { credit?: string }>).filter(([, v]) => v.credit).map(([k, v]) => [k, v.credit as string]),
   ),

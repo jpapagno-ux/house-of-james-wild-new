@@ -1982,6 +1982,55 @@
     }
    ],
    "credit": "Beckons"
+  },
+  "beckon-the-louise": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-bedroom-vineyard",
+     "alt": "The Louise, Barossa Valley: Stonewell Suite bedroom window looking out over green fields and vineyards"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-desk-vineyard",
+     "alt": "The Louise, Barossa Valley: desk by a glass door opening onto a patio and the vineyard"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-fireplace",
+     "alt": "The Louise, Barossa Valley: Marananga Suite with a lit fireplace and white shutters"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-terrace-sunset",
+     "alt": "The Louise: chairs and a glass of wine on a terrace above the vineyard at sunset",
+     "caption": "Sunset on the terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-terrace-sunset",
+     "alt": "The Louise: terrace with wine and food overlooking the vineyard at sunset",
+     "caption": "Wine, food, the vines"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-courtyard",
+     "alt": "The Louise: private stone courtyard with green metal chairs under timber pergola beams",
+     "caption": "Stonewell courtyard"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-bedroom",
+     "alt": "The Louise: Bethany Suite bed with white linen, blue pillows and pendant lights",
+     "caption": "Bethany Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-ensuite",
+     "alt": "The Louise: ensuite with double vanity, walk-in shower and bathtub",
+     "caption": "Marananga ensuite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-lounge",
+     "alt": "The Louise: desk area looking through to a lounge with a daybed",
+     "caption": "Stonewell Suite lounge"
+    }
+   ],
+   "credit": "Beckons"
   }
  }
 }

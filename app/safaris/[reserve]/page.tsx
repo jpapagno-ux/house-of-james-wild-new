@@ -28,7 +28,8 @@ import { stampForStatus, statusLine } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
-import { graph, ids } from "@/lib/schema";
+import { graph, ids, imageObject } from "@/lib/schema";
+import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
 
 // RESERVE template (/safaris/[reserve]): the parent page for an African
 // reserve that houses several lodges, camps and residences.
@@ -141,6 +142,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
 
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
+          {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
           <TalkToUs name={r.name} planHref={planHref} />
@@ -151,7 +153,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
       </main>
       <ContactBar name={r.name} planHref={planHref} from={from ? `${usd(from)} pp/night` : undefined} />
       <ContactPill name={r.name} planHref={planHref} />
-      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter((c) => campHref(r, c)).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(campHref(r, c)!), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
+      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => { const u = x.url.startsWith("/") ? absoluteUrl(x.url) : x.url; return RESERVE_PHOTO_CREDIT[r.slug] ? imageObject(u, x.alt, RESERVE_PHOTO_CREDIT[r.slug]) : u; }) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter((c) => campHref(r, c)).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(campHref(r, c)!), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
     </>
   );
 }

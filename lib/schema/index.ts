@@ -157,7 +157,13 @@ export function imageObject(url: string, caption?: string, credit?: string): Thi
     url,
     ...(caption ? { caption } : {}),
     ...(credit
-      ? { creditText: credit, copyrightNotice: `© ${credit}`, creator: { "@type": "Organization", name: credit } }
+      ? {
+          creditText: credit,
+          copyrightNotice: `© ${credit}`,
+          // James's own photographs point at the founder's Person entity; partner photos name the partner.
+          creator: credit === "James Papagno" ? { "@id": ids.founder } : { "@type": "Organization", name: credit },
+          ...(credit === "James Papagno" || credit === "James Wild & Co" ? { copyrightHolder: { "@id": ids.house } } : {}),
+        }
       : {}),
   };
 }

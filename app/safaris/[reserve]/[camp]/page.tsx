@@ -32,7 +32,8 @@ import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
 import { regionBySlug } from "@/lib/content/regions";
 import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
-import { graph, ids } from "@/lib/schema";
+import { graph, ids, imageObject } from "@/lib/schema";
+import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
 
 // CAMP template (/safaris/[reserve]/[camp]): a lodge, camp or residence
 // inside a reserve, on its own page and always tied to its parent.
@@ -113,6 +114,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           )}
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
+          {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} mark={<Roundel volume="safaris" text={roundelText(c.name, r.stay.coords, VOLUME_STYLES.safaris.roman)} entry={entryNo(r.stay.ledgerId) ? `ENTRY ${entryNo(r.stay.ledgerId)}` : undefined} size={120} />} />}
           {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="Same Reserve, Different Front Door" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}
           <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} />
@@ -126,7 +128,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
       <ContactBar name={c.name} planHref={planHref} from={c.fromRate ? `${usd(c.fromRate)}${c.kind === "camp" ? " pp/night" : ""}` : undefined} />
       <ContactPill name={c.name} planHref={planHref} />
       {verdict && <JsonLd data={graph(verdictSchema(verdict, c.name, absoluteUrl(path), ids.founder))} />}
-      <JsonLd data={graph({ "@type": c.kind === "residence" ? "LodgingBusiness" : "Resort", "@id": absoluteUrl(`${path}#stay`), name: c.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => (x.url.startsWith("/") ? absoluteUrl(x.url) : x.url)) : [c.hero].filter(Boolean), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [c.name, r.name, "safari", ...suited].join(", ") } : {}), containedInPlace: { "@id": absoluteUrl(`${rpath}#reserve`), "@type": "TouristAttraction", name: r.name, url: absoluteUrl(rpath) }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)}${c.kind === "camp" ? " per person per night" : ""}` } : {}), publisher: { "@id": ids.house }, ...(c.rooms.length ? { containsPlace: c.rooms.map((m) => ({ "@type": "Suite", name: m.name, ...(m.capacity ? { occupancy: { "@type": "QuantitativeValue", maxValue: m.capacity } } : {}), ...(m.beds ? { bed: m.beds } : {}) })) } : {}) })} />
+      <JsonLd data={graph({ "@type": c.kind === "residence" ? "LodgingBusiness" : "Resort", "@id": absoluteUrl(`${path}#stay`), name: c.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => { const u = x.url.startsWith("/") ? absoluteUrl(x.url) : x.url; return RESERVE_PHOTO_CREDIT[r.slug] ? imageObject(u, x.alt, RESERVE_PHOTO_CREDIT[r.slug]) : u; }) : [c.hero].filter(Boolean), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [c.name, r.name, "safari", ...suited].join(", ") } : {}), containedInPlace: { "@id": absoluteUrl(`${rpath}#reserve`), "@type": "TouristAttraction", name: r.name, url: absoluteUrl(rpath) }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)}${c.kind === "camp" ? " per person per night" : ""}` } : {}), publisher: { "@id": ids.house }, ...(c.rooms.length ? { containsPlace: c.rooms.map((m) => ({ "@type": "Suite", name: m.name, ...(m.capacity ? { occupancy: { "@type": "QuantitativeValue", maxValue: m.capacity } } : {}), ...(m.beds ? { bed: m.beds } : {}) })) } : {}) })} />
     </>
   );
 }

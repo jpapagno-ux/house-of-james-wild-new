@@ -4,6 +4,9 @@ import { niceDate, requireTraveler } from "@/lib/booking-live/account";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { isUuid } from "@/lib/booking-live/validate";
 import { AddNoteForm, AddSavedStay, InviteForm, RemoveButton } from "@/components/booking-live/Actions";
+import { PathwayChips } from "@/components/pathways/Pathway";
+import { pathwayChipsFor } from "@/lib/content/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 
 export const metadata = { title: "Journey" };
 
@@ -47,6 +50,7 @@ export default async function FolioPage({ params }: { params: Promise<{ id: stri
                 <div>
                   {it.property ? <Link href={`/stays/${it.property.slug}`} className="ledger-display text-[19px] hover:ledger-crimson">{it.property.name}</Link>
                     : <p className="ledger-eyebrow">{it.external_item_type}</p>}
+                  {PATHWAYS_ON && it.property && (() => { const c = pathwayChipsFor(it.property.slug); return c ? <div className="mt-1.5"><PathwayChips primary={c.primary} secondary={c.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div> : null; })()}
                   {it.notes && <p className="text-[15px] mt-1 whitespace-pre-line">{it.notes}</p>}
                   {(it.arrival_date || it.departure_date) && <p className="text-[13px] ledger-muted">{[niceDate(it.arrival_date), niceDate(it.departure_date)].filter(Boolean).join(" → ")}</p>}
                 </div>

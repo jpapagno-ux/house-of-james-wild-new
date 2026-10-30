@@ -7,6 +7,7 @@ import { HubShell, HubSection } from "@/components/hub/Hub";
 import { REGIONS } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import { AdvisorChips } from "@/components/advisor/Desk";
 import RoutesByPlace from "@/components/journey/RoutesByPlace";
 
 // /destinations: the ten regions and their live countries, from the Ledger.
@@ -33,6 +34,7 @@ export default function DestinationsHub() {
                     <span className="block ledger-eyebrow !text-white/80">{r.stayCount ? `${r.stayCount} stays · ${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"}` : "Being filed now"}</span>
                     <span className="block ledger-display text-[1.8rem] leading-tight mt-1">{r.name}</span>
                     {r.countries.length > 0 && <span className="block text-[13.5px] text-white/85 mt-1 line-clamp-1">{r.countries.map((c) => c.name).join(" · ")}</span>}
+                    <AdvisorChips regionSlug={r.slug} light className="mt-2" />
                   </span>
                 </GuardLink>
               </li>

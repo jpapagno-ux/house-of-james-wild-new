@@ -119,7 +119,7 @@ export function VolumeDoors() {
   const v = HOME.volumes;
   return (
     <section id="volumes" className={`${SECTION} scroll-mt-28`} aria-labelledby="volumes-heading">
-      <p className="ledger-eyebrow">The house, in five volumes</p>
+      <p className="ledger-eyebrow">The house, in six volumes</p>
       <h2 id="volumes-heading" className={H2}>Choose Your Way In</h2>
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {v.map((x, i) => (

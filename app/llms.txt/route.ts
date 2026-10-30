@@ -24,7 +24,7 @@ export function GET() {
     "- Each record carries a permanent Ledger ID.",
     "- Founder marks (\"Founder stayed · year\") appear only where James has been, with the year.",
     "",
-    "## The five volumes",
+    "## The six volumes",
     ...VOLUMES.map((v) => `- [${v.label}](${absoluteUrl(v.href)}): ${v.intro}`),
     "",
     ...(PATHWAYS_ON ? [

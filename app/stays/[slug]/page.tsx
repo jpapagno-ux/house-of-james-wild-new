@@ -32,6 +32,7 @@ import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { FILM_CREDITS, filmCreditSchema } from "@/lib/content/films";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import PlanBand from "@/components/destination/PlanBand";
+import { AdvisorStrip } from "@/components/advisor/Desk";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
@@ -206,6 +207,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />
           <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
+          <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} />
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">

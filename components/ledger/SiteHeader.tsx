@@ -209,7 +209,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             <Search className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
             <span className="ledger-muted text-[16px]">Search stays, camps, ships, countries</span>
           </button>
-          <p className="ledger-eyebrow ledger-crimson">The five volumes</p>
+          <p className="ledger-eyebrow ledger-crimson">The six volumes</p>
           <ul className="mt-3 border-t ledger-rule">
             {VOLUMES.map((v) => (
               <li key={v.href} className="border-b ledger-border">

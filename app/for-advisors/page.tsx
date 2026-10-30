@@ -3,6 +3,7 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import { LedBuilt } from "@/components/advisor/Desk";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Icon, JwcoSeal } from "@/components/ledger/Marks";
 import { SectionHead, Prose, JamesNote } from "@/components/about/Parts";
@@ -51,6 +52,8 @@ export default function ForAdvisorsPage() {
             <SectionHead eyebrow="Read this first" title="More Than a Host Agency ID" id="why-heading" />
             <div className="mt-6"><Prose paragraphs={a.why} /></div>
           </section>
+
+          <section className="mt-14 md:mt-20" aria-label="Advisor-led, advisor-built"><LedBuilt /></section>
 
           <section className="mt-14 md:mt-20" aria-labelledby="compare-heading">
             <SectionHead eyebrow="The comparison, filed plainly" title="Why Advisors Choose the Desk" id="compare-heading" />

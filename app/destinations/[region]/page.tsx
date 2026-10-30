@@ -41,6 +41,7 @@ import { Icon } from "@/components/ledger/Marks";
 import Doors, { type Door } from "@/components/destination/Doors";
 import Journeys from "@/components/destination/Journeys";
 import PlanBand from "@/components/destination/PlanBand";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { RecordCard } from "@/components/hub/Hub";
 import { GlanceBar } from "@/components/record/Frame";
 import { RecordHero } from "@/components/record/Sections";
@@ -205,6 +206,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </div>
             <CompassRose bearing={250} className="hidden md:block w-[160px] h-[160px]" />
           </section>
+
+          <AdvisorScroll regionSlug={r.slug} title={`Who knows ${r.name}`} />
 
           <PlanBand place={r.name} compassHref="/compass" />
         </div>

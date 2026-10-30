@@ -122,6 +122,17 @@ export const VOLUMES: MegaMenu[] = [
     ],
     ledger: [],
   },
+  {
+    label: "Other Europe",
+    href: "/destinations/europe",
+    intro: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.",
+    browse: [
+      { label: "Greece, by sail", href: "/destinations/europe/greece" },
+      { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
+      { label: "River cruises, before or after", href: "/voyages?region=rivers" },
+    ],
+    ledger: [],
+  },
 ];
 
 // The ten regions and their live countries, from the Base44 Ledger

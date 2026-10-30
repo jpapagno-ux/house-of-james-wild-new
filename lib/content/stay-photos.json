@@ -1,5 +1,5 @@
 {
- "_note": "Hand-picked hero slides (place and people first, rooms left to the rooms section) and captioned full-frame photographs per stay. Edit here; the photo ledger (data/photo-ledger.csv) tracks what each stay still needs.",
+ "_note": "Hand-picked hero slides (place and people first, rooms left to the rooms section) and captioned full-frame photographs per stay. Edit here; the photo ledger (data/photo-ledger.csv) tracks what each stay still needs. 'credit' (optional) names who owns a stay's photos: it prints as 'Photographs courtesy of …' under the full frames and goes into each image's structured data (creditText, copyrightNotice).",
  "stays": {
   "monwana-thornybush": {
    "hero": [
@@ -1796,7 +1796,8 @@
      "alt": "Longitude 131°: bathroom in the Dune Pavilion",
      "caption": "The Dune Pavilion bathroom"
     }
-   ]
+   ],
+   "credit": "Beckons"
   },
   "beckon-silky-oaks-lodge": {
    "hero": [
@@ -1853,7 +1854,8 @@
      "alt": "Silky Oaks Lodge: Daintree Pavilion bedroom with floor-to-ceiling rainforest views",
      "caption": "Daintree Pavilion bedroom"
     }
-   ]
+   ],
+   "credit": "Beckons"
   },
   "beckon-southern-ocean-lodge": {
    "hero": [
@@ -1915,7 +1917,71 @@
      "alt": "Southern Ocean Lodge: bathtub filling beside a teapot on a wooden stool",
      "caption": "Tea and a bath"
     }
-   ]
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-huka-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-river-twilight",
+     "alt": "Huka Lodge, Taupō: the Alex van Heeren Cottage lit up beside the turquoise Waikato River at twilight"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-river",
+     "alt": "Huka Lodge, Taupō: the Alan Pye Cottage reflected in the clear river, forest behind"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-pool-deck",
+     "alt": "Huka Lodge, Taupō: deck with loungers, infinity pool and lawn running down to the river"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-breakfast-deck",
+     "alt": "Huka Lodge, Taupō: breakfast table on a timber deck above the river"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-pool-morning",
+     "alt": "Huka Lodge: pool and deck over the river and forest in morning light",
+     "caption": "Morning on the pool deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-fireplace-deck",
+     "alt": "Huka Lodge: deck with a square pool and stone fireplace in a garden of tall trees",
+     "caption": "Outdoor fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-bedroom",
+     "alt": "Huka Lodge: canopy bed and daybed facing a river and forest view",
+     "caption": "Lodge Suite with Fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-living",
+     "alt": "Huka Lodge: living area with a glass fireplace and river views through open doors",
+     "caption": "Fire on, river beyond"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-daybed",
+     "alt": "Huka Lodge: green daybed facing glass doors onto the river and garden",
+     "caption": "A daybed by the river"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-bath-ferns",
+     "alt": "Huka Lodge: bathtub under an open shuttered window full of tree ferns",
+     "caption": "Bath among the ferns"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-living",
+     "alt": "Huka Lodge: vaulted living and dining room with a fireplace and pool views",
+     "caption": "Alex van Heeren Cottage"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-lounge",
+     "alt": "Huka Lodge: lounge with a vaulted ceiling, tiered chandelier and fireplace",
+     "caption": "Alan Pye Cottage"
+    }
+   ],
+   "credit": "Beckons"
   }
  }
 }

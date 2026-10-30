@@ -82,7 +82,7 @@ export function lodging(s: {
   path: string;
   name: string;
   description: string;
-  image?: string[];
+  image?: (string | Thing)[];
   subtype?: "LodgingBusiness" | "Resort" | "Hotel" | "Campground";
   locality?: string;
   country?: string;
@@ -148,3 +148,16 @@ export function article(a: { path: string; headline: string; description: string
 }
 
 export const graph = (...nodes: Thing[]) => ({ "@context": "https://schema.org", "@graph": nodes });
+
+/** A photograph as schema.org ImageObject, with the owner's credit when we have one. */
+export function imageObject(url: string, caption?: string, credit?: string): Thing {
+  return {
+    "@type": "ImageObject",
+    contentUrl: url,
+    url,
+    ...(caption ? { caption } : {}),
+    ...(credit
+      ? { creditText: credit, copyrightNotice: `© ${credit}`, creator: { "@type": "Organization", name: credit } }
+      : {}),
+  };
+}

@@ -208,6 +208,7 @@
       if (fb) fb.style.display = "none";
       root.classList.add("jw-live", "jw-chart-live");
       document.addEventListener("click", function (ev) {
+        if (!root.isConnected) return;
         var b = ev.target && ev.target.closest && ev.target.closest("[data-jw-day]");
         if (!b || (b.getAttribute("data-jw-for") && b.getAttribute("data-jw-for") !== root.id)) return;
         var top = root.getBoundingClientRect().top; if (top < 0 || top > innerHeight * .5) root.scrollIntoView({ behavior: RM ? "auto" : "smooth", block: "start" });
@@ -271,6 +272,7 @@
       });
       // stop cards under the map (one listener on the page, so cards re-rendered by the page still work)
       document.addEventListener("click", function (ev) {
+        if (!root.isConnected) return;
         var b = ev.target && ev.target.closest && ev.target.closest("[data-jw-day]");
         if (!b || (b.getAttribute("data-jw-for") && b.getAttribute("data-jw-for") !== root.id)) return;
         touch(); api.stop(); sb.forEach(function (x, i) { x.setAttribute("aria-pressed", String(i === 0)); });
@@ -288,8 +290,11 @@
     (k === "region" ? region : k === "atlas" ? atlas : k === "itinerary" ? itinerary : stay)(root, o);
   }
 
+  // start() runs on first load and again on every in-site page change (window.JWEmbed.scan,
+  // called by the page's map boot), so a map reached by clicking through the site draws too.
   function start() {
-    var roots = [].slice.call(document.querySelectorAll("[data-jw-map]"));
+    var roots = [].slice.call(document.querySelectorAll("[data-jw-map]:not([data-jw-booted])"));
+    roots.forEach(function (r) { r.setAttribute("data-jw-booted", "1"); });
     if (!roots.length) return;
     if (!("IntersectionObserver" in window)) { roots.forEach(boot); return; }
     var io = new IntersectionObserver(function (es) {
@@ -297,5 +302,6 @@
     }, { rootMargin: "400px 0px" });
     roots.forEach(function (r) { io.observe(r); });
   }
+  window.JWEmbed = { scan: start };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
 })();

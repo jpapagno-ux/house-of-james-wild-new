@@ -23,6 +23,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
 | 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
 | 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
+| 30 Oct 2026 | Phase 2F dialogue register: schema, rules as code, asset inventory, review preview (no live rendering yet) | Built, awaiting review |
 | 30 Oct 2026 | Phase 2E Ledger pathway chips on saved stays and folio items (no schema change; chips resolve from the export by slug) | Shipped |
 
 ## Open
@@ -32,11 +33,11 @@ Running record. One line per item; closed items stay for the audit trail.
 | 1 | Batch 1 classifications | James | **Closed** — 40 records approved in the library, 30 Oct 2026 (`pathway_classified_by: James Papagno (batch 1, drafted by Iggi)`) |
 | 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | this initiative | Closed 30 Oct 2026 — re-snapshotted under production env (550 pages, 491 indexable); snapshot now records real robots state |
 | 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | this initiative | Closed 30 Oct 2026 — captions use the `ink.faint` token (5.08:1); dots keep the 2px bar inside a 24×24 target. axe: 0 contrast / target-size issues on stay and country pages |
-| 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Deferred to Phase 2F, after data population |
+| 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Closed 30 Oct 2026 — `lib/content/dialogue.ts` + register, `docs/wild-pathways/DIALOGUE.md`, preview `/preview/pathways/dialogue`; the rabbit is the house hare seal in the brand kit |
 | 5 | Base44 `siteExport` picks up the 2A change | — | **Closed** — confirmed by the 30 Oct manual sync (`7d831d4`): 30 approved classifications exported |
 | 7 | Vercel `NEXT_PUBLIC_PATHWAYS=on` | — | **Closed** — set on Preview (07:37) and Production (08:42) on James's instruction |
 | 9 | Ten approved batch-1 records are not yet in the site export (Serian camps, Sheba's Secret Garden, Angama Safari Camp, Casa Koko): no site slug / not live. They surface when those records are published to the site | library | Open |
-| 10 | Phase 2F (dialogue schema) | this initiative | Open — next |
+| 10 | Phase 2F review: approve Iggi's six standing lines and the candidate expression assets (`iggi-wink`, `iggi-this-way`) on the preview; then 2F-ii wires the register into the stay template and the Iggi embed | James | Open — awaiting review |
 | 12 | Naming: traveller's saved collection is the **Folio** ("Save to My Folio"); the **Ledger** is the house portfolio — its volumes and content vetted by James Wild. Decided by James 30 Oct 2026; no account copy changes | James | Closed |
 | 14 | Dulini Daunara Lodge linked to the Botswana destination in the library | James | Closed 30 Oct 2026 — relinked to South Africa (same destination as the other Dulini lodges) with James's approval; Okavango coordinates cleared, real pin still wanted |
 | 15 | Stay record: literal `<br/>` shows as text in the Airport field | this initiative | Closed 30 Oct 2026 — exporter `line()` strips tags and joins breaks with ' · ' for `airport_name`; Tswalu's committed JSON patched the same way ahead of the nightly sync |

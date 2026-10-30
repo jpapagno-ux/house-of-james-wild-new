@@ -1,0 +1,69 @@
+{
+ "id": "three-generations-at-pioneer",
+ "type": "overland",
+ "title": "Three Generations at Pioneer",
+ "subtitle": "8 days · 7 nights · Londolozi Pioneer Camp, then Cape Town",
+ "code": "ITN-LAND-2026-982652",
+ "days": {
+  "1": "Johannesburg to the homestead",
+  "2": "The Cubs Den",
+  "3": "Fishing, baking and pizza",
+  "4": "S'mores and stars",
+  "5": "Londolozi to Cape Town",
+  "6": "The gardens and the art",
+  "7": "Cape Town, together",
+  "8": "Home through Cape Town"
+ },
+ "stops": [
+  {
+   "name": "Johannesburg — O.R. Tambo",
+   "lat": -26.134,
+   "lng": 28.242,
+   "kind": "airport",
+   "day": 1
+  },
+  {
+   "day": 1,
+   "name": "Londolozi — Pioneer Camp",
+   "lat": -24.8,
+   "lng": 31.5,
+   "mode": "road",
+   "kind": "lodge",
+   "path": [
+    [
+     28.242,
+     -26.134
+    ],
+    [
+     29.24,
+     -25.87
+    ],
+    [
+     30.97,
+     -25.47
+    ],
+    [
+     31.5,
+     -24.8
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Cape Town — by the Atlantic",
+   "lat": -33.925,
+   "lng": 18.405,
+   "mode": "air",
+   "kind": "lodge"
+  },
+  {
+   "day": 8,
+   "name": "Home — Cape Town International",
+   "lat": -33.9715,
+   "lng": 18.6021,
+   "mode": "road",
+   "kind": "airport"
+  }
+ ],
+ "map_note": "Positions approximate. Drawn from the route as James sets it out; road and flight times are confirmed when you book."
+}

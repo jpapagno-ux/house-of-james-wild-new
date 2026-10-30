@@ -56,9 +56,9 @@ function padFilter(id: string, seed: number) {
 }
 
 function ring(id: string, r: number, top: string, bottom: string, size = 9.5, ls = 2.2) {
-  return `<defs><path id="${id}t" d="M ${100 - r} 100 A ${r} ${r} 0 0 1 ${100 + r} 100"/><path id="${id}b" d="M ${100 - r - 9} 100 A ${r + 9} ${r + 9} 0 0 0 ${100 + r + 9} 100"/></defs>
+  return `<g class="jw-ringspin"><defs><path id="${id}t" d="M ${100 - r} 100 A ${r} ${r} 0 0 1 ${100 + r} 100"/><path id="${id}b" d="M ${100 - r - 9} 100 A ${r + 9} ${r + 9} 0 0 0 ${100 + r + 9} 100"/></defs>
 <text font-family="${MONO}" font-size="${size}" letter-spacing="${ls}" fill="currentColor"><textPath href="#${id}t" startOffset="50%" text-anchor="middle">${esc(top)}</textPath></text>
-<text font-family="${MONO}" font-size="${size}" letter-spacing="${ls}" fill="currentColor"><textPath href="#${id}b" startOffset="50%" text-anchor="middle">${esc(bottom)}</textPath></text>`;
+<text font-family="${MONO}" font-size="${size}" letter-spacing="${ls}" fill="currentColor"><textPath href="#${id}b" startOffset="50%" text-anchor="middle">${esc(bottom)}</textPath></text></g>`;
 }
 
 function star(x: number, y: number, r = 4) {
@@ -100,9 +100,10 @@ ${ring(id, 66, v.ring[0], v.ring[1], 9, 2)}${iconAt(v.icon, 38, 100, 64)}${words
     case "porthole": {
       const riv = Array.from({ length: 8 }, (_, i) => {
         const a = Math.PI / 8 + (2 * Math.PI * i) / 8;
-        return `<circle cx="${f1(100 + 88 * Math.cos(a))}" cy="${f1(100 + 88 * Math.sin(a))}" r="3.2" fill="#FFFFFF"/>`;
+        return `<circle cx="${f1(100 + 88 * Math.cos(a))}" cy="${f1(100 + 88 * Math.sin(a))}" r="3.2" fill="#000"/>`;
       }).join("");
-      return `<circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="11"/>${riv}<circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      // Rivets are punched through the brass ring (a mask), so the stamp stays transparent on photographs.
+      return `<mask id="${id}rv" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200"><rect width="200" height="200" fill="#fff"/>${riv}</mask><circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="11" mask="url(#${id}rv)"/><circle cx="100" cy="100" r="74" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width="1.6"/>
 ${ring(id, 63, v.ring[0], v.ring[1], 9, 2)}${iconAt(v.icon, 38, 100, 64)}${words(v.words, 104, 22)}<path d="M72 113 H128" stroke="currentColor" stroke-width="1"/>${entry.replace("__Y__", "128")}`;
     }
     case "arch":
@@ -122,7 +123,7 @@ export function InkStamp({ volume, no, size = 190, rotate = -6, seed = 41 }: { v
   const v = VOLUME_STYLES[volume];
   const id = `ink${volume}${slug(no)}`;
   const svg = `<svg viewBox="0 0 200 200" width="${size}" height="${size}" role="img" aria-label="${esc(`${v.label} stamp: ${v.words.join(" ")}, entry ${no}`)}" style="color:${v.pad};overflow:visible"><defs>${padFilter(id + "f", seed)}</defs><g filter="url(#${id}f)">${stampBody(v, no, id)}</g></svg>`;
-  return <span className="jw-press" style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: "multiply" }} dangerouslySetInnerHTML={{ __html: svg }} />;
+  return <span className="jw-press" data-jw-stamp={volume} style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: "multiply", ["--jw-rot" as string]: `${rotate}deg`, ["--jw-light" as string]: `rgb(${v.light})` }} dangerouslySetInnerHTML={{ __html: svg }} />;
 }
 
 /** Founder mark pressed into white paper: no ink, only light and shadow. */
@@ -148,7 +149,7 @@ export function PassportStamp({ volume, top, date, place, ledgerId, size = 190, 
 ${place ? `<text x="100" y="129" text-anchor="middle" font-family="${MONO}" font-size="10" letter-spacing="2" fill="currentColor">${esc(place.toUpperCase())}</text>` : ""}
 ${ledgerId ? `<text x="100" y="145" text-anchor="middle" font-family="${MONO}" font-size="8.5" letter-spacing="1.6" fill="currentColor">JW · ${esc(ledgerId)}</text>` : ""}`;
   const svg = `<svg viewBox="0 0 200 200" width="${size}" height="${size}" role="img" aria-label="${esc(`${top}, ${date}${place ? `, ${place}` : ""}`)}" style="color:${v.pad};overflow:visible"><defs>${padFilter(id + "f", seed)}</defs><g filter="url(#${id}f)">${body}</g></svg>`;
-  return <span className="jw-press" style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: "multiply", margin: `-${size * 0.16}px 0` }} dangerouslySetInnerHTML={{ __html: svg }} />;
+  return <span className="jw-press" data-jw-stamp={volume} style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: "multiply", margin: `-${size * 0.16}px 0`, ["--jw-rot" as string]: `${rotate}deg`, ["--jw-light" as string]: `rgb(${v.light})` }} dangerouslySetInnerHTML={{ __html: svg }} />;
 }
 
 /** Clean coordinate mark: map pins, favicons, social avatars. No texture. */

@@ -31,3 +31,35 @@ export function filmSchema(f: ShortFilm, pageUrl: string) {
     contentLocation: { "@type": "Place", name: f.place },
   };
 }
+
+// Credits for the films the house embeds from someone else's camera, by
+// YouTube id. StayFilm prints the credit under the player wherever the film
+// plays, and the page's VideoObject carries it.
+// Wild Together is James and Miriam's own series (James, 30 Oct 2026); this
+// episode was filmed by Felix Studios with Monwana. It is not a MORE film.
+export type FilmCredit = { title: string; credit: string; series: string; seriesLine: string; creator: string; partner: string };
+
+export const FILM_CREDITS: Record<string, FilmCredit> = {
+  YR_8uiBObZ4: {
+    title: "Wild Together: My Wife's First Safari — Monwana Lodge, Thornybush, South Africa",
+    credit: "Film by Felix Studios and Monwana",
+    series: "Wild Together",
+    seriesLine: "From Wild Together, James and Miriam's own series",
+    creator: "Felix Studios",
+    partner: "Monwana",
+  },
+};
+
+/** The credit fields for a VideoObject: Felix Studios made it, the partner is credited alongside, and the series it belongs to. */
+export function filmCreditSchema(id: string) {
+  const c = FILM_CREDITS[id];
+  if (!c) return {};
+  const studio = { "@type": "Organization", name: c.creator };
+  return {
+    creditText: c.credit,
+    creator: studio,
+    productionCompany: studio,
+    contributor: { "@type": "Organization", name: c.partner },
+    isPartOf: { "@type": "CreativeWorkSeries", name: c.series, description: "James and Miriam's own series." },
+  };
+}

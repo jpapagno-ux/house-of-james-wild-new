@@ -12,6 +12,7 @@ import AnswerBlock from "@/components/ledger/AnswerBlock";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import { Stamp, type Volume } from "@/components/ledger/Marks";
 import { PassportStamp } from "@/components/ledger/VolumeKit";
+import PhotoStamp from "@/components/ledger/PhotoStamp";
 import { stampDate } from "@/lib/volumes";
 import type { LedgerStampKind } from "@/lib/ledger/status";
 
@@ -47,7 +48,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
             <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
-          {stamp && <div className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0 rounded-sm bg-white/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]`}>{stamp}</div>}
+          {stamp && <PhotoStamp className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0`}>{stamp}</PhotoStamp>}
         </div>
         {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
       </div>

@@ -15,6 +15,7 @@ import LoopVideo from "@/components/journal/LoopVideo";
 import { POSTS, journalPath, photoCredit, type JournalFigure, type JournalImage, type JournalPost } from "@/lib/content/journal/posts";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
+import { FILM_CREDITS, filmCreditSchema } from "@/lib/content/films";
 
 // A Journal post: James's story, set like a printed travel piece. Full-bleed
 // hero, the answer first (for readers and answer engines), the contents as
@@ -124,7 +125,8 @@ export default async function JournalPostPage({ params }: P) {
       uploadDate: p.film.uploadDate,
       embedUrl: `https://www.youtube-nocookie.com/embed/${p.film.id}`,
       contentUrl: `https://www.youtube.com/watch?v=${p.film.id}`,
-      author: { "@id": ids.founder },
+      // A credited film names its studio and partner; otherwise it is the founder's own.
+      ...(FILM_CREDITS[p.film.id] ? filmCreditSchema(p.film.id) : { author: { "@id": ids.founder } }),
       publisher: { "@id": ids.house },
     }] : []),
   );

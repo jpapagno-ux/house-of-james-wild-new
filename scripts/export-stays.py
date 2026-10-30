@@ -24,6 +24,14 @@ FIX = {
                                "misfiled": "Library destination is South Africa; the property is in Masoala, Madagascar"},
 }
 
+# Sentence corrections inside a record's "why" copy, re-applied on every export.
+# James, 30 Oct 2026: Wild Together is his and Miriam's own series, filmed by
+# Felix Studios and Monwana (not the house's, not a MORE film).
+WHY_FIX = {
+    "monwana-thornybush": [("Watch Wild Together , our film of one couple’s first safari at Monwana, and read the full memoir.",
+                            "Watch Wild Together, James and Miriam’s own series, on Miriam’s first safari at Monwana (film by Felix Studios and Monwana), and read the full memoir.")],
+}
+
 PATHWAY_IDS = {f"PATH-0{i}" for i in range(1, 9)}
 VOLUME_KEYS = {"stays", "safaris", "gatherings", "voyages", "europe", "overland"}
 def pathway_of(s):
@@ -147,6 +155,9 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "pathway": pathway_of(s), "volumes": volumes_of(s),
     })
 for x in out: x.update(FIX.get(x["slug"], {}))
+for x in out:
+    for a, b in WHY_FIX.get(x["slug"], []):
+        for w in x["why"]: w["body"] = w["body"].replace(a, b)
 
 # Stay merge file (scripts/data/stay-overrides.json): GitHub-side changes applied on top of the library.
 # A bad entry stops the publish (nothing goes live) with a message naming the stay and the field.

@@ -8384,7 +8384,7 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 19.973142,
+    "lat": -19.973142,
     "lng": 21.807944
    },
    "airport": "Maun International Airport (MUB)",
@@ -11027,7 +11027,7 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 19.3072,
+    "lat": -19.3072,
     "lng": 22.6011
    },
    "airport": "Maun Airport MUB, Kasane Airport BBK",
@@ -16385,7 +16385,7 @@
     },
     {
      "title": null,
-     "body": "Watch Wild Together , our film of one couple’s first safari at Monwana, and read the full memoir."
+     "body": "Watch Wild Together, James and Miriam’s own series, on Miriam’s first safari at Monwana (film by Felix Studios and Monwana), and read the full memoir."
     }
    ],
    "facts": {

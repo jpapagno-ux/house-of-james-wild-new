@@ -1,0 +1,76 @@
+{
+ "id": "track-your-life-with-boyd-varty",
+ "type": "overland",
+ "title": "Track Your Life with Boyd Varty",
+ "subtitle": "5 days · 4 nights · a tracking and coaching retreat at Londolozi",
+ "code": "ITN-LAND-2026-431095",
+ "days": {
+  "1": "Johannesburg to Pioneer Camp",
+  "2": "Tracking",
+  "3": "Coaching",
+  "4": "On the Sand River",
+  "5": "Home, or on to the Cape"
+ },
+ "stops": [
+  {
+   "name": "Johannesburg — O.R. Tambo",
+   "lat": -26.134,
+   "lng": 28.242,
+   "kind": "airport",
+   "day": 1
+  },
+  {
+   "day": 1,
+   "name": "Londolozi — Pioneer Camp",
+   "lat": -24.8,
+   "lng": 31.5,
+   "mode": "road",
+   "kind": "lodge",
+   "path": [
+    [
+     28.242,
+     -26.134
+    ],
+    [
+     29.24,
+     -25.87
+    ],
+    [
+     30.97,
+     -25.47
+    ],
+    [
+     31.5,
+     -24.8
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Home — Johannesburg",
+   "lat": -26.134,
+   "lng": 28.242,
+   "mode": "road",
+   "kind": "airport",
+   "path": [
+    [
+     31.5,
+     -24.8
+    ],
+    [
+     30.97,
+     -25.47
+    ],
+    [
+     29.24,
+     -25.87
+    ],
+    [
+     28.242,
+     -26.134
+    ]
+   ]
+  }
+ ],
+ "map_note": "Positions approximate. Drawn from the route as James sets it out; road and flight times are confirmed when you book."
+}

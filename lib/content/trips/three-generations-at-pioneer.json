@@ -22,7 +22,7 @@
   ],
   [
    "2",
-   "Cape Town",
+   "Ellerman House, Cape Town",
    "Days 5–7",
    "Three nights by the Atlantic"
   ],
@@ -81,7 +81,7 @@
  "heroalt": "",
  "herolabel": "",
  "quote": "\"Take the whole camp. The children will remember the archery; you'll remember watching them.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
- "answer": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
+ "answer": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights at Ellerman House in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
  "striptitle": "Eight days at a glance",
  "strip": [
   [
@@ -231,7 +231,7 @@
    "title": "Londolozi to Cape Town",
    "line": "By air to the Cape",
    "body": "Londolozi has its own airstrip, used by charter flights. You fly to Cape Town [charter for the party to confirm]; Ellerman House is about 26 km, around 30 minutes, from the airport, with complimentary airport transfers.",
-   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "stay": "Ellerman House, with its two villas",
    "meals": "[Confirm with the hotel]",
    "move": "By air, then by road",
    "acts": "Transfer day",
@@ -254,7 +254,7 @@
    "title": "The gardens and the art",
    "line": "Ellerman House, Bantry Bay",
    "body": "The house's indigenous gardens and its South African art collection, or Cape Town with the concierge's help.",
-   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "stay": "Ellerman House, with its two villas",
    "meals": "[Confirm with the hotel]",
    "move": "On foot or by car",
    "acts": "Gardens · art tour · Cape Town",
@@ -277,7 +277,7 @@
    "title": "Cape Town, together",
    "line": "A last day by the Atlantic",
    "body": "A free day for the family in Cape Town, and dinner together on the last night.",
-   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "stay": "Ellerman House, with its two villas",
    "meals": "[Confirm with the hotel]",
    "move": "On foot or by car",
    "acts": "At leisure",
@@ -314,7 +314,7 @@
   "The Cubs Den children's programme [confirm what is included]",
   "Road transfer, Johannesburg to Londolozi [to confirm]",
   "Flight from Londolozi to Cape Town [charter for the party, to confirm]",
-  "Three nights in Cape Town [stay and rooms to confirm for twelve]",
+  "Three nights at Ellerman House in Cape Town, with its two villas, Villa One and Villa Two",
   "24-hour support from James Wild & Co. while you travel"
  ],
  "excl": [
@@ -511,11 +511,11 @@
   },
   {
    "name": "Ellerman House",
-   "line": "Cape Town · Days 5–7 · [to confirm for twelve]",
+   "line": "Cape Town · Days 5–7 · its two villas",
    "chips": [
     "3 nights",
     "Bantry Bay",
-    "Villa One and Villa Two on file"
+    "Villa One and Villa Two"
    ],
    "photos": [
     "Ellerman House from the air",
@@ -533,8 +533,8 @@
      "3 nights"
     ],
     [
-     "Room",
-     "[Room category on file]"
+     "Villas",
+     "Villa One and Villa Two"
     ],
     [
      "Meals",
@@ -623,7 +623,7 @@
    "family safari and Cape Town"
   ]
  },
- "copy_approved": false,
+ "copy_approved": true,
  "prices_final": false,
  "booking_live": false,
  "id": "three-generations-at-pioneer",
@@ -634,7 +634,7 @@
    "@id": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer#trip",
    "name": "Three Generations at Pioneer",
    "url": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer",
-   "description": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
+   "description": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights at Ellerman House in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
    "touristType": [
     "Families",
     "Multigenerational groups"
@@ -682,8 +682,8 @@
       "position": 3,
       "item": {
        "@type": "TouristDestination",
-       "name": "Cape Town",
-       "description": "Days 5–7 · three nights",
+       "name": "Ellerman House, Cape Town",
+       "description": "Days 5–7 · three nights, with its two villas",
        "geo": {
         "@type": "GeoCoordinates",
         "latitude": -33.9291,

@@ -311,7 +311,6 @@ export const SAMPLE_GATHERINGS_LEEU = {
     cta: "See the cottage and the houses",
     agentCta: "Connect with the Gatherings team",
     agentNote: "Traveling with an agent? They can connect with us directly and we'll set the meeting.",
-    link: "https://wildco-gatherings1.vercel.app/houses/leeu-estates-franschhoek",
   },
 
   collection: {

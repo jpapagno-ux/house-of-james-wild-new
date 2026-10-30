@@ -972,6 +972,16 @@
    "released": true
   },
   {
+   "stay_id": "6ae3fc7dfdfe515c2a6874aa",
+   "slug": "da-licenca",
+   "name": "Dá Licença",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coming_soon"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a89a1ab46f8c4d5c2138e1d",
    "slug": "daunara-safari-camp",
    "name": "Daunara Safari Camp",

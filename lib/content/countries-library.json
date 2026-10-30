@@ -6,7 +6,7 @@
    "name": "Argentina",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000051",
    "subtitle": "Where Wilderness Meets Soul",
    "leading": "From blue-ice glaciers and wind-swept pampas to vineyard-draped foothills and thunderous waterfalls, Argentina is a country of grand contrasts. Carefully crafted journeys here trade generic sightseeing for layered, local access that reveals both wild places and the human stories that shape them.",
    "hero": {
@@ -153,7 +153,7 @@
    "name": "Arizona",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000013",
    "subtitle": "Why Journey To Arizona",
    "leading": "Warm desert light sculpts red rock amphitheaters, saguaro-studded valleys, and vast skies that feel endless. Arizona is a landscape of layered stone and quiet scale, where carefully crafted journeys reveal hidden canyons, night skies, and the rhythms of the desert.",
    "hero": {
@@ -299,7 +299,7 @@
    "name": "Australia",
    "region": "oceania",
    "regionName": "Oceania",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000057",
    "subtitle": "Why Journey To Australia",
    "leading": "From red deserts and sculpted gorges to coral gardens and eucalyptus‑fringed coastlines, Australia is a continent of singular ecosystems and scale. Carefully crafted journeys here trade crowds for remote access, local expertise, and deep encounters with places that feel both ancient and elemental.",
    "hero": {
@@ -439,7 +439,7 @@
    "name": "Bahamas",
    "region": "caribbean-mexico",
    "regionName": "Caribbean & Mexico",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000072",
    "subtitle": "Where the Ocean Sets the Pace",
    "leading": "Soft sand beaches, shallow turquoise waters, and islands scattered across warm seas define this idyllic archipelago. The landscape feels airy and bright, shaped by coral shallows and gentle tides. Stays offer barefoot tranquility and oceanfront elegance. Swim with vibrant marine life, sail between cays, or simply unwind under the glow of afternoon sun. The Bahamas invite ease, clarity, and coastal calm.",
    "hero": {
@@ -531,7 +531,7 @@
    "name": "Belize",
    "region": "central-america",
    "regionName": "Central America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000067",
    "subtitle": "The Rainforest",
    "leading": "Belize rewards travelers who do more than one thing well. A few nights inland — waterfalls, forest trails and the hidden cave systems of the Maya world — then the Caribbean: private islands, overwater accommodation and the second-largest barrier reef on earth. James Papagno has been designing Belize journeys since 1992.",
    "hero": {
@@ -613,7 +613,7 @@
    "name": "Bolivia",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000053",
    "subtitle": "Where the Earth Feels Otherworldly",
    "leading": "High altitude salt flats, emerald lakes, volcanic peaks, and Amazonian jungle create a landscape both surreal and vibrant. Colours shift dramatically across wide plateaus and reflective expanses. Stays immerse travelers in environments that feel dreamlike yet deeply grounded. Explore the Uyuni salt flats, wander through cloud forests, or experience Andean culture woven into daily life. Bolivia invites curiosity and appreciation for Earth’s boldest contrasts.",
    "hero": {
@@ -711,7 +711,7 @@
    "name": "Botswana",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000082",
    "subtitle": "Where Safari Feels Exclusive",
    "leading": "Flooded wetlands, golden savannas, and remote desert pans come together in a landscape shaped by pure wilderness. The Okavango Delta blooms with seasonal water, attracting wildlife in extraordinary numbers. Stays emphasise quiet luxury and deep immersion in natural cycles. Glide through reed lined channels by mokoro, track wildlife across untouched land, or watch the Delta transform with shifting water. Botswana invites stillness, awe, and intimacy with nature.",
    "hero": {
@@ -814,7 +814,7 @@
    "name": "Brazil",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000038",
    "subtitle": "Where Nature Moves with Rhythm",
    "leading": "Rainforest, river, and coastline come together in a landscape rich with life and colour. From the Amazon canopy to sweeping beaches and dramatic mountainsides, the scenery is vibrant and diverse. Stays reflect this natural abundance, each offering a window into Brazil’s wild beauty. Explore biodiverse waterways, wander through lush jungle trails, or relax on golden sands warmed by the South Atlantic. Brazil invites openness, energy, and connection to nature’s rhythm.",
    "hero": {
@@ -914,7 +914,7 @@
    "name": "California",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000023",
    "subtitle": "Why Journey To California",
    "leading": "A state of sweeping contrasts: wind-sculpted coastlines, ancient redwood cathedrals, high alpine lakes, and stark desert basins. California rewards journeys that linger, connecting distinct regions through carefully paced, locally grounded experiences.",
    "hero": {
@@ -1060,7 +1060,7 @@
    "name": "Cambodia",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000044",
    "subtitle": "Where Ancient Civilizations Still Breathe",
    "leading": "Sacred temples, riverfront villages, and dense jungle create a landscape shaped by history and quiet mystique. Sunlight filters through ancient stone corridors, while rural life moves with gentle rhythm. Stays here honour tradition with warmth and simplicity. Explore temple complexes at dawn, glide along peaceful waterways, or wander through forest paths listening to nature’s chorus. Cambodia invites reflection and heartfelt connection.",
    "hero": {
@@ -1162,7 +1162,7 @@
    "name": "Canada",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000064",
    "subtitle": "3 vetted stays",
    "leading": "Expansive wilderness stretches across mountains, forests, lakes, and coastline. The landscape feels both powerful and serene, shaped by shifting seasons and abundant nature. Stays offer immersion in rugged beauty, from alpine lodges to lakeside retreats. Experience glacier fed rivers, hike forested trails, or witness wildlife in untouched environments. Canada invites deep breaths, quiet awe, and a renewed connection to the natural world.",
    "hero": {
@@ -1217,7 +1217,7 @@
    "name": "Chile & Easter Island",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000052",
    "subtitle": "Why Journey To Chile & Easter Island",
    "leading": "From the driest deserts on Earth to ice-carved fjords and a singular Polynesian culture, Chile and Easter Island offer landscapes and histories that feel entirely their own. Journeys here prize remoteness, local knowledge, and slow, thoughtful travel rather than rushing through highlights.",
    "hero": {
@@ -1361,7 +1361,7 @@
    "name": "Ecuador & Galápagos",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000043",
    "subtitle": "Where the Earth Becomes a Living Laboratory",
    "leading": "Andean peaks, cloud forests, and volcanic islands form a landscape shaped by dramatic geography and rare wildlife. From mainland diversity to the isolated wonders of the Galápagos, this region holds a unique natural story. Stays highlight sustainability and closeness to untouched environments. Snorkel with marine life found nowhere else, walk beside giant tortoises, or explore vibrant highland communities. Ecuador and the Galápagos invite discovery guided by awe and respect for life in all its forms.",
    "hero": {
@@ -1454,7 +1454,7 @@
    "name": "Fiji",
    "region": "oceania",
    "regionName": "Oceania",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000055",
    "subtitle": "Where the Ocean Feels Like Home",
    "leading": "Turquoise waters, soft coral reefs, and palm lined shores create a landscape shaped by warmth and gentle rhythm. Villages sit close to the sea, forested hills rise inland, and the air carries a feeling of welcome. Stays here highlight island simplicity blended with quiet luxury, surrounded by ocean light. Explore vibrant reefs, paddle across calm lagoons, or wander along white sand beaches softened by breeze. Fiji invites connection to nature and community, where each day unfolds with ease.",
    "hero": {
@@ -1552,7 +1552,7 @@
    "name": "France",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000021",
    "subtitle": "1 vetted stays",
    "leading": "From lavender fields to sunlit vineyards and alpine lakes, the landscape carries an elegance both effortless and grounded. Coastal villages, rural countryside, and mountain horizons each offer their own sense of beauty. Stays here highlight refinement through simplicity and charm. Explore historic towns, savor regional cuisine, or wander through landscapes that inspired generations of artists. France invites appreciation of detail, pace, and place.",
    "hero": {
@@ -1607,7 +1607,7 @@
    "name": "Hawaii",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000018",
    "subtitle": "2 vetted stays",
    "leading": "Emerald cliffs, volcanic peaks, and lush rainforest create a landscape alive with movement and meaning. Ocean swells meet black sand shores, waterfalls cut through dense foliage, and culture grounds everything in deep sense of place. Stays honor this connection, offering refuge where nature sets the tone. Experience reef filled bays, wander forest trails scented with tropical blooms, or soak in the warmth of Hawaiian tradition. Hawaii invites immersion in land, sea, and spirit.",
    "hero": {
@@ -1660,7 +1660,7 @@
    "name": "Iceland",
    "region": "polar-arctic",
    "regionName": "Polar: Arctic",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000060",
    "subtitle": "Where Fire and Ice Shape the Land",
    "leading": "Waterfalls, volcanic fields, geothermal pools, and black sand beaches create a dramatic canvas of fire and ice. Nature feels alive here, constantly reshaping the land with movement, heat, and light. Stays embrace this energy with settings that highlight rugged beauty and calm comfort. Explore glacier lagoons, soak in hot springs, or follow coastal cliffs shaped by wind and sea. Iceland invites adventure through landscapes that feel both ancient and renewed.",
    "hero": {
@@ -1758,7 +1758,7 @@
    "name": "Ireland",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000026",
    "subtitle": "Why Journey To Ireland",
    "leading": "Ireland is a country of Atlantic edges, layered history, and deeply rooted hospitality, where rugged landscapes meet lively towns and quiet country roads. A carefully crafted journey reveals its character through coastal villages, ancestral places, considered stays, and time to follow the weather, music, and conversation.",
    "hero": {
@@ -1894,7 +1894,7 @@
    "name": "Italy",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000068",
    "subtitle": "1 vetted stays",
    "leading": "Rolling countryside, historic cities, dramatic coastlines, and alpine peaks create a landscape filled with richness and texture. Culture, cuisine, and natural beauty combine seamlessly, offering endless inspiration. Stays here celebrate timeless style and regional charm. Wander cobblestone streets, explore coastal trails, or savour meals crafted from local ingredients. Italy invites appreciation of life’s finer rhythms.",
    "hero": {
@@ -1945,7 +1945,7 @@
    "name": "Japan",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000032",
    "subtitle": "1 vetted stays",
    "leading": "Alpine forests, volcanic landscapes, quiet temples, and coastal beauty blend into a world of balance and refinement. Each season brings its own shifts in color, mood, and atmosphere. Stays honor thoughtful simplicity, whether in rural ryokans or modern retreats. Experience ancient paths, soak in onsen waters, or admire gardens shaped with intention. Japan invites presence and appreciation for the quiet harmony of nature and culture.",
    "hero": {
@@ -1996,7 +1996,7 @@
    "name": "Kenya",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000081",
    "subtitle": "Where Safari Was Born",
    "leading": "Acacia dotted savannas, towering escarpments, and sweeping rift valley lakes define a landscape filled with life and movement. Herds migrate across open plains, and mist settles gently over highland forests. Stays celebrate tradition, warmth, and connection to wilderness. Explore classic safari regions, visit vibrant conservation areas, or hike trails that reveal Kenya’s diverse terrain. The country invites meaningful encounters shaped by culture and nature.",
    "hero": {
@@ -2093,7 +2093,7 @@
    "name": "Madagascar",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000076",
    "subtitle": "Where Nature Evolved Differently",
    "leading": "Baobab avenues, rainforest canopies, and coastlines edged in turquoise create a landscape unlike anywhere else on Earth. Wildlife thrives in remarkable diversity, from lemurs leaping through branches to chameleons resting in dappled light. Stays here sit quietly within nature, shaped by island rhythm and raw beauty. Explore ancient forests, snorkel reefs filled with vibrant colour, or walk along shores where the horizon feels endless. Madagascar invites curiosity, connection, and a deep appreciation for its wild spirit.",
    "hero": {
@@ -2196,7 +2196,7 @@
    "name": "Maldives",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000054",
    "subtitle": "Where the Ocean Becomes Your World",
    "leading": "A constellation of coral islands floats in crystal clear waters, each ringed by soft white sand and vibrant reef. The ocean moves in shades of turquoise, aqua, and sapphire, creating a sense of peaceful isolation. Stays here offer overwater elegance and quiet seclusion surrounded by sea. Swim with colourful marine life, kayak across glass calm lagoons, or relax on private decks where horizon meets sky. The Maldives invites complete immersion in ocean serenity.",
    "hero": {
@@ -2302,7 +2302,7 @@
    "name": "Mexico",
    "region": "caribbean-mexico",
    "regionName": "Caribbean & Mexico",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000065",
    "subtitle": "Where Ancient Culture Meets Living Wilderness",
    "leading": "From vibrant coastlines to jungle wrapped cenotes and mountain highlands, the landscape reveals countless expressions of beauty. Colour, culture, and texture shape each region, offering rich diversity across the country. Stays highlight warmth, heritage, and natural charm. Explore ancient sites, snorkel clear waters, or wander markets filled with local flavours. Mexico invites immersion through culture, nature, and spirited hospitality.",
    "hero": {
@@ -2408,7 +2408,7 @@
    "name": "Montana",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000025",
    "subtitle": "Where the Wild Still Runs Free",
    "leading": "Mountain peaks, clear rivers, and sweeping valleys embody the quiet grandeur of the northern Rockies. The landscape feels open and grounding, shaped by crisp air and changing seasons. Stays rest within forests, foothills, or riversides, surrounded by calm wildness. Experience fly fishing in crystalline waters, horseback rides through open meadows, or peaceful evenings under wide sky. Montana invites a deeper connection to nature’s steady heartbeat.",
    "hero": {
@@ -2516,7 +2516,7 @@
    "name": "Namibia",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000083",
    "subtitle": "Where Desert Meets Sky",
    "leading": "Cinematic desert dunes, stark coastlines, and endless horizons create a landscape defined by silence and sculptural beauty. Colours change dramatically throughout the day as light moves across sand, rock, and sky. Stays highlight solitude, texture, and elemental calm. Explore towering dunes, follow wildlife adapted to desert life, or wander along coastlines where ocean meets shifting sand. Namibia invites contemplation through vastness and raw simplicity.",
    "hero": {
@@ -2619,7 +2619,7 @@
    "name": "New Zealand",
    "region": "oceania",
    "regionName": "Oceania",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000033",
    "subtitle": "Where Nature Feels Alive",
    "leading": "Glacial fjords, alpine ranges, rolling farmland, and luminous lakes create a landscape brimming with majesty. The scenery feels both cinematic and intimate, offering countless ways to connect with nature. Stays immerse travelers in remote coastlines, forests, and mountains. Explore iconic hiking routes, cruise through soundscapes carved by ice, or pause in the stillness of wide open views. New Zealand invites adventure guided by wonder.",
    "hero": {
@@ -2721,7 +2721,7 @@
    "name": "Panama",
    "region": "central-america",
    "regionName": "Central America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000071",
    "subtitle": "Where Oceans and Worlds Connect",
    "leading": "Where rainforest meets ocean, the country shifts from pristine Pacific beaches to Caribbean islands and biodiverse jungle. Cloud forests, waterfalls, and wildlife filled reserves create a landscape full of vitality. Stays reflect both nature and culture, offering immersive escapes. Hike through rainforest trails, explore vibrant marine life, or sail between islands shaped by tropical light. Panama invites exploration guided by curiosity and connection.",
    "hero": {
@@ -2827,7 +2827,7 @@
    "name": "Peru",
    "region": "south-america",
    "regionName": "South America",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000074",
    "subtitle": "Where Ancient Worlds Still Breathe",
    "leading": "High Andean peaks, cloud forests, coastal desert, and rich cultural heritage define this multifaceted land. Terraces cling to mountainsides, Amazon rivers wind through dense jungle, and ancient sites stand in quiet majesty. Stays connect travellers to both nature and tradition. Hike iconic trails, explore archaeological marvels, or journey deep into rainforest ecosystems. Peru invites awe through culture, landscape, and living history.",
    "hero": {
@@ -2933,7 +2933,7 @@
    "name": "Philippines",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000041",
    "subtitle": "Where Islands Feel Infinite",
    "leading": "Over seven thousand islands create a world of turquoise lagoons, limestone cliffs, and palm fringed shores. Coral reefs glow with colour, while inland jungles and rivers unfold into peaceful retreats. Stays here celebrate island life, from overwater escapes to quiet coastal sanctuaries. Swim in clear lagoons, kayak through hidden coves, or trek to waterfalls draped in tropical greenery. The Philippines invites joyful exploration shaped by water and warmth.",
    "hero": {
@@ -3031,7 +3031,7 @@
    "name": "Portugal & the Azores",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000066",
    "subtitle": "1 vetted stays",
    "leading": "Sunlit coasts, rolling vineyards, and volcanic islands create a landscape shaped by ocean breeze and old world charm. The Azores add dramatic cliffs, crater lakes, and lush green hills rising from the Atlantic. Stays here blend history with contemporary comfort. Explore coastal paths, soak in geothermal pools, or wander through villages filled with tradition. Portugal and the Azores invite slow exploration and appreciation for natural beauty.",
    "hero": {
@@ -3082,7 +3082,7 @@
    "name": "Rwanda",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000078",
    "subtitle": "Where Wilderness Meets Renewal",
    "leading": "Verdant hills, mist swept mountains, and dense forest create an atmosphere both serene and powerful. Sunlight filters through bamboo groves, volcanic peaks rise above the landscape, and wildlife moves gently through protected habitats. Stays honour tranquility, culture, and conservation. Trek through mountain forests in search of gorillas, explore highland trails, or visit communities rooted in tradition. Rwanda invites reflection through beauty and connection.",
    "hero": {
@@ -3177,7 +3177,7 @@
    "name": "Seychelles",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000075",
    "subtitle": "Where the Ocean Feels Infinite",
    "leading": "Every stay in Seychelles is handpicked for its harmony with the land and sea, from eco resorts framed by lush jungle canopies to villas with ocean panoramas that fade into infinity. Seychelles isn’t a checklist; it’s a mood. One best experienced slowly, barefoot, and with your heart open. “There are few places left on Earth where the horizon feels endless and time feels forgotten”",
    "hero": {
@@ -3276,7 +3276,7 @@
    "name": "Spain",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000047",
    "subtitle": "Where Culture Lives in Every Moment",
    "leading": "From rugged coastlines to olive groves and historic cities, the landscape reveals layers of Mediterranean light and culture. Moorish courtyards, sunlit plazas, and seaside cliffs create scenes steeped in beauty. Stays mirror this richness, blending tradition with contemporary ease. Wander ancient streets, explore coastal paths, or savour long meals shaped by regional heritage. Spain invites immersive days filled with texture, flavour, and warmth.",
    "hero": {
@@ -3374,7 +3374,7 @@
    "name": "Ibiza",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000036",
    "subtitle": "Where Energy Meets the Sea",
    "leading": "Soft sands, pine covered hills, and clear Balearic waters offer a different side of this well loved island. Beyond its energy filled towns lie quiet coves, sun drenched terraces, and coastal paths scented with sea salt and herbs. Stays here highlight tranquility, design, and luminous island beauty. Swim in hidden bays, explore cliffside trails, or enjoy long meals under warm Mediterranean light. Ibiza invites easy living shaped by nature, not haste.",
    "hero": {
@@ -3472,7 +3472,7 @@
    "name": "Switzerland",
    "region": "europe",
    "regionName": "Europe",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000046",
    "subtitle": "1 vetted stays",
    "leading": "Snow capped peaks, mirror like lakes, and green alpine meadows create a landscape defined by precision and purity. Mountain villages blend traditional architecture with sweeping views, and stays here offer refined comfort rooted in nature. Experience high alpine trails, sail across clear lakes, or wander through charming towns framed by dramatic scenery. Switzerland invites clarity, breath, and a sense of quiet elevation.",
    "hero": {
@@ -3527,7 +3527,7 @@
    "name": "Tahiti",
    "region": "oceania",
    "regionName": "Oceania",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000056",
    "subtitle": "Where the Ocean Holds Everything",
    "leading": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour. Waterfalls slip through dense forest, black sand beaches curve along the coast, and flowers scent the warm air. Stays here offer tranquility framed by ocean horizons and tropical greenery. Experience the clarity of the lagoon through snorkeling or kayaking, explore coastal paths, or relax into the island’s unhurried pace. Tahiti invites deep rest shaped by nature’s beauty.",
    "hero": {
@@ -3633,7 +3633,7 @@
    "name": "Tanzania",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000080",
    "subtitle": "Where Safari Reaches Its Peak",
    "leading": "From the Serengeti plains to the volcanic landscapes of the Crater Highlands and the turquoise shores of the Indian Ocean, the country offers remarkable diversity. Wildlife moves across open grasslands, while towering peaks and tropical islands shape the horizon. Stays here honour the rhythm of land and sea. Experience world class safaris, wander through baobab dotted parks, or relax on warm island beaches. Tanzania invites exploration guided by wonder and natural abundance.",
    "hero": {
@@ -3736,7 +3736,7 @@
    "name": "Thailand",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000070",
    "subtitle": "Where Culture Flows with Nature",
    "leading": "Emerald jungle, golden temples, limestone cliffs, and island dotted seas create a landscape alive with colour and contrast. The culture is warm, the nature lush, and the light carries a tropical glow. Stays range from beachfront sanctuaries to mountain hideaways. Explore bustling markets, kayak through turquoise bays, or trek forest trails scented with tropical flora. Thailand invites sensory richness and soulful discovery.",
    "hero": {
@@ -3833,7 +3833,7 @@
    "name": "Utah",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000024",
    "subtitle": "Where Earth Reveals Its Raw Beauty",
    "leading": "Stone towers, arches, and canyons carved by centuries of wind and water create landscapes that feel sculptural and ancient. Colors shift across sandstone as the day moves, and desert silence settles gently. Stays here blend into the terrain, offering front row views of natural artistry. Explore slot canyons, hike ridgelines overlooking vast plateaus, or watch the sky deepen with stars. Utah invites contemplation through its powerful and spacious beauty.",
    "hero": {
@@ -3941,7 +3941,7 @@
    "name": "Vietnam",
    "region": "asia",
    "regionName": "Asia",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000042",
    "subtitle": "Where Landscapes Tell Ancient Stories",
    "leading": "Mountains wrapped in mist, terraced fields, tropical coastline, and lantern lit towns create a landscape filled with depth and contrast. Culture and nature blend seamlessly, offering experiences as gentle as they are enriching. Stays here accentuate calm moments surrounded by scenic beauty. Explore winding waterways, wander historic streets, or trek through lush highlands. Vietnam invites meaningful connection through colour, culture, and landscape.",
    "hero": {
@@ -4047,7 +4047,7 @@
    "name": "Wyoming",
    "region": "usa-canada",
    "regionName": "USA & Canada",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000016",
    "subtitle": "Where the Wild Remains Untouched",
    "leading": "Open prairies, dramatic peaks, and vast skies shape a land where nature feels both untamed and serene. The landscape shifts from rolling grasslands to rugged mountain silhouettes, each shaped by time and quiet wind. Stays here embrace the spaciousness of the West, offering refuge in wide open country. Experience wildlife sightings at dawn, ride across open range, or explore river valleys carved by centuries of flow. Wyoming invites you into a world of simplicity, stillness, and expansive beauty.",
    "hero": {
@@ -4151,7 +4151,7 @@
    "name": "Zambia",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000077",
    "subtitle": "Where Safari Feels Untouched",
    "leading": "Wide rivers, misty waterfalls, and wildlife rich plains define this soulful corner of Africa. The Zambezi flows steadily through lush wilderness, and the roar of Victoria Falls echoes through surrounding forest. Stays here embrace natural immersion with intimate camps and riverside lodges. Experience walking safaris, glide along the river at sunset, or watch wildlife gather along remote floodplains. Zambia invites quiet adventure and meaningful encounters with the natural world.",
    "hero": {
@@ -4254,7 +4254,7 @@
    "name": "Zimbabwe",
    "region": "africa",
    "regionName": "Africa",
-   "ledgerId": null,
+   "ledgerId": "DST-2026-000079",
    "subtitle": "Where Water and Wilderness Collide",
    "leading": "Sweeping savannas, riverfront woodlands, and dramatic landscapes shape a country rich in natural heritage. The thundering curtain of Victoria Falls stands as one of its most iconic wonders, surrounded by abundant wildlife and warm culture. Stays blend comfort with closeness to the land. Explore national parks teeming with life, cruise the Zambezi at golden hour, or walk among giant basalt cliffs. Zimbabwe invites immersion, authenticity, and unforgettable moments in nature.",
    "hero": {

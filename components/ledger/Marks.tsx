@@ -24,7 +24,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 const OX = "#7A1E1E";
 const RUST = "#94512F";
 const LIGHT = "#F4F1EC";
-const SERIF = "'EB Garamond', Georgia, serif";
+const SERIF = "'Cormorant Garamond', Georgia, serif";
 const MONO = "'IBM Plex Mono', ui-monospace, monospace";
 const SCRIPT = "'Mrs Saint Delafield', cursive";
 export type Tone = "ink" | "light";

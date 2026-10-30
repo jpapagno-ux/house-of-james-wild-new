@@ -17,8 +17,8 @@ const config: Config = {
         rust: { DEFAULT: "#94512F", wash: "#F7EFE6" },
       },
       fontFamily: {
-        display: ["'Playfair Display'", "Georgia", "'Times New Roman'", "serif"],
-        body: ["'EB Garamond'", "Georgia", "'Times New Roman'", "serif"],
+        display: ["'Cormorant Garamond'", "Georgia", "'Times New Roman'", "serif"],
+        body: ["Manrope", "ui-sans-serif", "system-ui", "-apple-system", "'Segoe UI'", "sans-serif"],
         hand: ["Caveat", "cursive"],
       },
       maxWidth: { ledger: "72rem" },

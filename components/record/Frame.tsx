@@ -81,7 +81,7 @@ export function LocationBlock({ chart, name, pin, others = [], heading, rows, no
           {others.map((o, i) => { const q = projectOn(chart, o.lat, o.lng); return <circle key={i} cx={q.x} cy={q.y} r="5.5" style={{fill:"var(--jw-accent-hex)"}} fillOpacity="0.28" stroke="#F4F1ED" strokeWidth="1.5" />; })}
           <circle cx={p.x} cy={p.y} r="28" fill="none" style={{stroke:"var(--jw-accent-hex)"}} strokeWidth="2" className="ledger-pin-pulse" />
           <circle cx={p.x} cy={p.y} r="11" style={{fill:"var(--jw-accent-hex)"}} stroke="#F4F1ED" strokeWidth="3" />
-          <text x={right ? p.x - 20 : p.x + 20} y={p.y - 20} textAnchor={right ? "end" : "start"} fontFamily="'Playfair Display', serif" fontSize="22" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">{name}</text>
+          <text x={right ? p.x - 20 : p.x + 20} y={p.y - 20} textAnchor={right ? "end" : "start"} fontFamily="'Cormorant Garamond', serif" fontSize="22" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">{name}</text>
         </svg>
       </div>
       <div>

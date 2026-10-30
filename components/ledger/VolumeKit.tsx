@@ -16,7 +16,7 @@
 import { type VolumeKey, type VolumeStyle, type VolumeIcon, VOLUME_STYLES } from "@/lib/volumes";
 
 const MONO = "IBM Plex Mono, ui-monospace, monospace";
-const SERIF = "EB Garamond, Georgia, serif";
+const SERIF = "Cormorant Garamond, Georgia, serif";
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const slug = (s: string) => s.replace(/[^a-zA-Z0-9]/g, "").slice(0, 24) || "x";

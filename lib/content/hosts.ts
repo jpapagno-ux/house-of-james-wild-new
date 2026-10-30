@@ -63,7 +63,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
   } },
   "stay:wilderness-dumatau": { state: "available", host: {
     name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
-    tz: "America/New_York", place: "North America", zoneLabel: "US Eastern Time",
+    tz: "America/Denver", place: "Denver", zoneLabel: "US Mountain Time",
     calendlyUrl: `${GROUP_CALENDLY}?property=wilderness-dumatau`,
     topics: [
       "DumaTau's suites and which suits your party",
@@ -75,7 +75,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
   } },
   "stay:wilderness-little-duma-tau": { state: "available", host: {
     name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
-    tz: "America/New_York", place: "North America", zoneLabel: "US Eastern Time",
+    tz: "America/Denver", place: "Denver", zoneLabel: "US Mountain Time",
     calendlyUrl: `${GROUP_CALENDLY}?property=wilderness-little-duma-tau`,
     topics: [
       "Little DumaTau's suites and which suits your party",

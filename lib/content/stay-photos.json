@@ -1753,6 +1753,10 @@
   "beckon-longitude-131": {
    "hero": [
     {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-top-aerial",
+     "alt": "Longitude 131°: Dune Top from the air, in the red dunes of the Red Centre"
+    },
+    {
      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace",
      "alt": "Longitude 131°, Uluru: tented suite opening to a terrace that faces Uluru"
     },
@@ -2188,6 +2192,59 @@
      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/bathroom-tree-mural",
      "alt": "Tierra Patagonia: timber bathroom with a vessel sink, tub and a tree mural on the shower glass",
      "caption": "Tree on the glass"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-capella-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/capella-lodge-original",
+     "alt": "Capella Lodge, Lord Howe Island"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/infinity-pool-view",
+     "alt": "Capella Lodge, Lord Howe Island: a guest in the infinity pool looking out over the coast, mountains and sea"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-plunge-pool",
+     "alt": "Capella Lodge, Lord Howe Island: plunge pool and daybed among palms below a misty mountain"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-balcony-bay",
+     "alt": "Capella Lodge, Lord Howe Island: daybed and chairs on a balcony above the bay and mountain cliffs"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-deck-pool",
+     "alt": "Capella Lodge: timber deck with loungers and a plunge pool in lush planting",
+     "caption": "Lidgbird Pavilion deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-bedroom-view",
+     "alt": "Capella Lodge: Catalina Suite bedroom opening to a balcony with palms and mountain views",
+     "caption": "Palms and peaks from bed"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/makambo-plunge-pool-peak",
+     "alt": "Capella Lodge: deck with a plunge pool facing a misty mountain peak",
+     "caption": "Makambo Loft plunge pool"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-lounge",
+     "alt": "Capella Lodge: lounge with a blue daybed, white panelling and an inset fireplace",
+     "caption": "Catalina Suite lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/makambo-loft-stair",
+     "alt": "Capella Lodge: loft with a red spiral staircase, blue daybed and glass doors to the deck",
+     "caption": "Makambo Loft"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lagoon-loft-bedroom",
+     "alt": "Capella Lodge: bedroom with sliding doors onto a balcony among palms",
+     "caption": "Lagoon Loft"
     }
    ],
    "credit": "Beckons"

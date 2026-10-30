@@ -200,7 +200,7 @@ export const POSTS: Record<string, JournalPost> = {
     trip: "May 2026",
     published: "2026-09-15",
     modified: "2026-10-27",
-    hero: { url: `${J}/james-miriam-game-drive.jpg`, alt: "James Papagno and his wife in a Monwana game vehicle on Thornybush, morning light", w: 2576, h: 1932 },
+    hero: { url: `${J}/james-miriam-game-drive.jpg`, alt: "James Papagno and his wife in a Monwana game vehicle on Thornybush, morning light", w: 2576, h: 1932, credit: "Photograph: our Monwana guide" },
     film: {
       id: "YR_8uiBObZ4",
       title: "Wild Together: My Wife's First Safari, Monwana, Thornybush",
@@ -211,8 +211,8 @@ export const POSTS: Record<string, JournalPost> = {
     body: MONWANA_BODY,
     figures: [
       { after: "lead", layout: "pair", images: [
-        { url: `${J}/miriam-first-drive.jpg`, alt: "James's wife wrapped in a blanket on the back row of the game vehicle on her first morning drive", w: 1932, h: 2576, caption: "Her first morning drive. The blankets are not for show." },
-        { url: `${J}/coffee-stop-james.jpg`, alt: "James at the coffee stop beside the Monwana game vehicles on Thornybush", w: 1932, h: 2576, caption: "The coffee stop. A splash of Amarula is traditional, apparently." },
+        { url: `${J}/miriam-first-drive.jpg`, alt: "James's wife wrapped in a blanket on the back row of the game vehicle on her first morning drive", w: 1932, h: 2576, caption: "Her first morning drive. The blankets are not for show.", credit: "Photograph: our Monwana guide" },
+        { url: `${J}/coffee-stop-james.jpg`, alt: "James at the coffee stop beside the Monwana game vehicles on Thornybush", w: 1932, h: 2576, caption: "The coffee stop. A splash of Amarula is traditional, apparently.", credit: "Photograph: our Monwana guide" },
       ] },
       { after: "what-changes-when-you-share-a-safari-as-a-couple", layout: "bleed", images: [{ url: hi(`${MORE}/more-main-lodge-05`, false), alt: "Monwana's main lodge reflected in the dam at dusk, Thornybush", w: 3000, h: 2000, caption: "The main lodge at dusk.", credit: "Photograph: Monwana" }] },
       { after: "what-is-monwana-actually-like", layout: "pair", images: [
@@ -225,7 +225,7 @@ export const POSTS: Record<string, JournalPost> = {
       ] },
       { after: "how-many-nights-should-couples-stay-at-monwana", layout: "tall", images: [
         { url: `${J}/nyala-plunge-pool.jpg`, alt: "A nyala ewe and her calf grazing beside the suite's plunge pool at Monwana", w: 1932, h: 2576, caption: "Midday visitors at the plunge pool." },
-        { url: `${J}/miriam-suite-afternoon.jpg`, alt: "James's wife resting in their suite at Monwana between drives", w: 1932, h: 2576, caption: "The afternoon pause, taken seriously." },
+        { url: `${J}/miriam-suite-afternoon.jpg`, alt: "James's wife resting in their suite at Monwana between drives", w: 1932, h: 2576, caption: "The afternoon pause, taken seriously.", credit: "Photograph: our Monwana guide" },
       ] },
       { after: "what-should-first-time-safari-travelers-expect-each-day", layout: "pair", images: [
         { url: `${J}/breakfast-deck.jpg`, alt: "Breakfast on the deck at Monwana: fruit, honeycomb, preserves and pastries", w: 1932, h: 2576, caption: "Breakfast after the morning drive." },
@@ -272,6 +272,6 @@ export const journalPath = (slug: string) => `/journal/${slug}`;
  */
 export function photoCredit(img: { url: string; alt: string; credit?: string }): string | undefined {
   if (img.credit) return img.credit;
-  if (img.url.startsWith("/journal/")) return /\bJames\b/.test(img.alt) ? "James Wild & Co" : "Photograph: James Papagno";
+  if (img.url.startsWith("/journal/")) return /\bJames\b(?!'s)/.test(img.alt) ? "James Wild & Co" : "Photograph: James Papagno";
   return undefined;
 }

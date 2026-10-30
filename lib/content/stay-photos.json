@@ -2079,6 +2079,69 @@
     }
    ],
    "credit": "Beckons"
+  },
+  "beckon-tierra-atacama": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-volcano",
+     "alt": "Tierra Atacama, San Pedro de Atacama: suite terrace with two chairs looking across the desert to snow-capped volcanoes"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-firepit-night",
+     "alt": "Tierra Atacama, San Pedro de Atacama: suite terrace at night with a fire pit and lounge seating"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-deck-firepit-dusk",
+     "alt": "Tierra Atacama, San Pedro de Atacama: timber deck with loungers and a fire pit at dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-plunge-pool-night",
+     "alt": "Tierra Atacama, San Pedro de Atacama: private plunge pool outside a glass-walled suite at night"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-desk-volcano",
+     "alt": "Tierra Atacama: Poniente Room desk facing a big window and a distant volcano",
+     "caption": "A volcano from the desk"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-terrace-mountains",
+     "alt": "Tierra Atacama: string-back chairs on a terrace with mountain views",
+     "caption": "Oriente terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/apartment-hot-tub-night",
+     "alt": "Tierra Atacama: stone patio with a hot tub and loungers outside lit bedrooms at night",
+     "caption": "The Apartment, after dark"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-fireplace",
+     "alt": "Tierra Atacama: suite with a floating fireplace and glass doors to the terrace",
+     "caption": "A hanging fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-bedroom",
+     "alt": "Tierra Atacama: timber-panelled suite with a four-poster bed and hanging fireplace",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-bedroom-desert",
+     "alt": "Tierra Atacama: timber-panelled bedroom with a chaise and a window onto the desert",
+     "caption": "Poniente Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-bedroom",
+     "alt": "Tierra Atacama: four-poster bed in a warm timber-panelled room",
+     "caption": "Oriente Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-bathroom",
+     "alt": "Tierra Atacama: bathroom with twin vessel sinks on a stone vanity",
+     "caption": "Stone and timber"
+    }
+   ],
+   "credit": "Beckons"
   }
  }
 }

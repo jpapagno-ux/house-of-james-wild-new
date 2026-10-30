@@ -1026,8 +1026,10 @@
    "stay_id": "6a899f0d097f3f23995a0730",
    "slug": "dulini-daunara-lodge",
    "name": "Dulini Daunara Lodge",
-   "country": "Botswana",
-   "missing": [],
+   "country": "South Africa",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

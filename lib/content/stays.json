@@ -29,7 +29,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -937,7 +937,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -1182,7 +1182,7 @@
     "lat": -12.7839,
     "lng": -69.2501
    },
-   "airport": "Padre Aldamiz International Airport (PEM) — Puerto Maldonado, Peru",
+   "airport": "Padre Aldamiz International Airport (PEM) , Puerto Maldonado, Peru",
    "airportDirections": "Approx. 1 hour flight from Cusco (CUZ) to Puerto Maldonado (PEM), followed by ~50 minutes river boat transfer along the Madre de Dios River to the field station.",
    "founderNote": null,
    "rooms": {
@@ -2337,7 +2337,7 @@
     "lat": 53.3341185,
     "lng": -6.231085
    },
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -2607,7 +2607,7 @@
     "lat": -22.911102,
     "lng": -68.199715
    },
-   "airport": "El Loa Airport (CJC) — Calama, Chile",
+   "airport": "El Loa Airport (CJC) , Calama, Chile",
    "airportDirections": "El Loa Airport (CJC) is approximately 100 km from Awasi Atacama, with a driving time of around 1 hour 30 minutes. Private transfers from Calama Airport are included according to check-in and check-out schedules.",
    "founderNote": null,
    "rooms": {
@@ -3616,7 +3616,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": "Coastal stay in The Belize Collection; alternative to Umaya for the Placencia leg of the Deep Belize journey.",
    "rooms": {
@@ -4252,7 +4252,7 @@
     "lat": -33.9321,
     "lng": 18.4223
    },
-   "airport": "Cape Town International Airport (CPT). ",
+   "airport": "Cape Town International Airport (CPT).",
    "airportDirections": "~21 km from the hotel approx 20–30 minutes by road (traffic dependent).",
    "founderNote": null,
    "rooms": {
@@ -4729,7 +4729,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -6352,8 +6352,8 @@
    "slug": "dulini-daunara-lodge",
    "name": "Dulini Daunara Lodge",
    "ledgerId": "STY-2026-563352",
-   "country": "Botswana",
-   "countrySlug": "botswana",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
@@ -6372,10 +6372,7 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": {
-    "lat": -19.7482,
-    "lng": 23.4534
-   },
+   "coords": null,
    "airport": "Skukuza Airport (SZK) & Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Recommended Arrival Airport: Skukuza Airport (SZK)\nApproximately 40–50 minutes by road transfer.\nKruger Mpumalanga International Airport (MQP) approximately 2.5–3 hours away by vehicle.\nCharter flight options are available for private safari travelers.",
    "founderNote": null,
@@ -7026,7 +7023,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -7103,7 +7100,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -7180,7 +7177,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -7416,7 +7413,7 @@
     "lat": -33.9291,
     "lng": 18.3779
    },
-   "airport": "Cape Town International Airport (CPT) ",
+   "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "~26 km (~30 minutes) from Cape Town International Airport to Ellerman House via car with complimentary airport transfers offered.",
    "founderNote": null,
    "rooms": {
@@ -8392,7 +8389,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "Maun International Airport (MUB) ",
+   "airport": "Maun International Airport (MUB)",
    "airportDirections": "By air & road: A light aircraft (20 minutes) or helicopter (≈15 minutes) from Maun to Khwai airstrip, then ~20 minutes by road to the camp. By road: From Maun direct overland takes about 2h30, depending on road conditions. For many guests, flying + road is preferred for speed and comfort.",
    "founderNote": null,
    "rooms": {
@@ -8463,7 +8460,7 @@
     "lat": 49.6768,
     "lng": -54.1693
    },
-   "airport": "ander International Airport (YQX) — Primary Arrival Airport.",
+   "airport": "ander International Airport (YQX) , Primary Arrival Airport.",
    "airportDirections": "Gander International Airport (YQX)\nApproximate travel:\n1 hour drive to ferry terminal\nFerry crossing to Fogo Island\nAdditional drive to the Inn\nTotal journey: approximately 2.5–3 hours.",
    "founderNote": null,
    "rooms": {
@@ -9800,7 +9797,7 @@
     "lat": -4.2779,
     "lng": -81.2273
    },
-   "airport": "Capitán FAP Víctor Montes Arias Airport (TYL) — Talara Capitán FAP Guillermo Concha Iberico International Airport (PIU) — Piura",
+   "airport": "Capitán FAP Víctor Montes Arias Airport (TYL) , Talara Capitán FAP Guillermo Concha Iberico International Airport (PIU) , Piura",
    "airportDirections": "From Talara Airport: ~45–60 minutes by road\nFrom Piura Airport: ~2.5–3.5 hours drive\nBest arrival: Talara (TYL)",
    "founderNote": null,
    "rooms": {
@@ -10968,7 +10965,7 @@
     "lat": 19.3072,
     "lng": 22.6011
    },
-   "airport": " Maun Airport MUB, Kasane Airport BBK",
+   "airport": "Maun Airport MUB, Kasane Airport BBK",
    "airportDirections": "Arrive at Maun MUB then take a light aircraft to Jao Reserve airstrip and transfer by boat or 4x4 depending on water level",
    "founderNote": null,
    "rooms": {
@@ -16932,7 +16929,7 @@
     "lat": -23.8523,
     "lng": -68.2439
    },
-   "airport": "El Loa Airport (CJC) — Calama, Chile",
+   "airport": "El Loa Airport (CJC) , Calama, Chile",
    "airportDirections": "Approx. 1.5–2 hours drive from El Loa Airport (Calama) via desert highway transfer to San Pedro de Atacama region; private shuttle transfers commonly arranged by the lodge.",
    "founderNote": null,
    "rooms": {
@@ -17778,7 +17775,7 @@
     "lat": 10.480337,
     "lng": -84.636103
    },
-   "airport": "La Fortuna Airport / Arenal Airport — FON",
+   "airport": "La Fortuna Airport / Arenal Airport , FON",
    "airportDirections": "FON: Approximately 1 minute by car.",
    "founderNote": null,
    "rooms": {
@@ -20592,7 +20589,7 @@
     "lat": -1.1763,
     "lng": 35.1927
    },
-   "airport": " Mara North Airstrip (HKR)",
+   "airport": "Mara North Airstrip (HKR)",
    "airportDirections": "Fly to Mara North Airstrip, 45-minute drive to camp, Saruni Wild team will greet you.",
    "founderNote": null,
    "rooms": {
@@ -23424,7 +23421,7 @@
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "",
+   "airport": null,
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -25361,7 +25358,7 @@
     "lat": 10.4916133,
     "lng": -84.7220382
    },
-   "airport": "Juan Santamaría International Airport — SJO Daniel Oduber Quirós International Airport — LIR",
+   "airport": "Juan Santamaría International Airport , SJO Daniel Oduber Quirós International Airport , LIR",
    "airportDirections": "From Juan Santamaría International Airport (SJO): Approximately 2.5–3 hours by car via La Fortuna and Arenal Volcano National Park.\n\nFrom Daniel Oduber Quirós International Airport (LIR): Approximately 2.5–3 hours by car. \n\nPrivate airport transfers can be arranged in advance, with air-conditioned vans and luxury SUVs available through the resort's transportation partner.",
    "founderNote": null,
    "rooms": {
@@ -26138,7 +26135,7 @@
     "lat": -24.932,
     "lng": 31.5561
    },
-   "airport": " Skukuza Airport, Kruger Mpumalanga International Airport",
+   "airport": "Skukuza Airport, Kruger Mpumalanga International Airport",
    "airportDirections": "Fly to Skukuza or KMIA, road transfer of 1.5 to 2.5 hours to lodge. Charter flights also available to nearby airstrips.",
    "founderNote": null,
    "rooms": {
@@ -28672,7 +28669,7 @@
     "lat": 37.268209,
     "lng": -113.114797
    },
-   "airport": "St. George Regional Airport (SGU) Harry Reid International Airport (LAS) Cedar City Regional Airport (CDC) ",
+   "airport": "St. George Regional Airport (SGU) Harry Reid International Airport (LAS) Cedar City Regional Airport (CDC)",
    "airportDirections": "St. George Regional Airport (SGU) – Approximately 35 miles (56 km) away, about a 45–50 minute drive. This is the closest commercial airport and the most convenient option.\nHarry Reid International Airport (LAS) – Approximately 165 miles (266 km) away, about a 2.5–3 hour drive. Offers the widest selection of domestic and international flights.\nCedar City Regional Airport (CDC) – Approximately 60 miles (97 km) away, about a 1 hour 15 minute drive. A smaller regional airport with limited commercial service.\nFor most travelers, St. George Regional Airport (SGU) is the recommended airport due to its proximity and ease of access to Under Canvas Zion.",
    "founderNote": null,
    "rooms": {
@@ -28759,7 +28756,7 @@
     "lat": -8.367699,
     "lng": 114.570167
    },
-   "airport": "Ngurah Rai International Airport (Denpasar) — DPS",
+   "airport": "Ngurah Rai International Airport (Denpasar) , DPS",
    "airportDirections": "From (DPS) to The Ungasan Clifftop Resort is about 40‑minute drive, depending on traffic. You'll travel south on the Bukit Peninsula; the resort is perched up on the cliffs above the southern coast, so expect some winding roads and dramatic elevation changes.",
    "founderNote": null,
    "rooms": {
@@ -29422,22 +29419,22 @@
    "category": "lodge",
    "tagline": "Where elephants move freely, rivers shape the landscape, and luxury gives you room to truly go wild.",
    "quote": "Come for the luxury. Stay for the feeling of being completely immersed in the wild.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-hero",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area-and-jetty",
    "gallery": [
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area-and-jetty",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-from-the-river",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-floating-fire-pit",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-iconic",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-from-the-river",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-boat-trip",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-game-drive",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-elephant",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-barge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-lion",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-wild-dog"
    ],
    "bestMonths": "May to September",
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": "founder_visited",
+   "status": "founder_returned",
    "statusDate": "2026-05-01",
    "coords": {
     "lat": -18.5254,
@@ -29813,15 +29810,15 @@
    "quote": "Come for the elephants, stay for the quiet moments where wild Africa and slow, soulful living meet.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/032b20509_713a303b2_69395ef8669298b8c9bb6c3e_wilderness-little-duma-tau.png",
    "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-little-duma-tau/camp/wilderness-little-duma-tau-lodge-view",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e05238cc8_697df40b3_68f9d03ff883b5f28b16aa72_MainAreas_LittleDumaTau_TCunniffe_008.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c6b2450c8_85a1c6ac7_692deaffc7feb315fc879b0b_bedroom-view-little-dumatau-linyanti-botswana.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/deed8408a_095878d30_68f9d03fe70e23565b6387c8_MainAreas_LittleDumaTau_TCunniffe_001.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2dc1f37ba_0e5ee256f_68f9d03f55ccb92d717a2e93_MainAreas_LittleDumaTau_TCunniffe_007.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/16f23d747_f4fe1658c_68f9c41cf3d95083ad93470e_Pool_LittleDumaTau_TCunniffe_001.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-little-duma-tau/room/wilderness-little-duma-tau-private-pool",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ab837e91c_10fe4b3c9_692de5e464a291c1ce1c391f_wilderness-dumatau-gallery-camp-fire-area.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c51f34d89_67cca44a2_692deafe8458173e1782e90e_linyanti-09945.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/437f08367_7a675d04c_692deafe4a3f04d535aa88dc_6922819-dumatau-suite-bedroom-2-.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/543fb9c3e_8b71dde06_692deafefe59caa1567888db_wilderness-duma-tau-thumb.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-little-duma-tau/feature/osprey-retreat"
    ],
    "bestMonths": "May to September",
    "bestMonthsNote": "From June to October, the Linyanti is at its most dramatic. Cooler dry-season mornings make for comfortable game drives, water levels in the river channels concentrate wildlife around lagoons and floodplains, and visibility improves as vegetation thins. Elephants and buffalo gather in huge herds, predators follow, and both land and water-based activities are at their peak.",
@@ -29981,7 +29978,7 @@
     "lat": -19.2284,
     "lng": 22.7795
    },
-   "airport": "Maun International Airport (MUB) ",
+   "airport": "Maun International Airport (MUB)",
    "airportDirections": "Guests typically fly into Maun International Airport (MUB) and transfer via a light aircraft to Mombo Airstrip. From Mombo Airstrip, it’s a short game drive to Wilderness Little Mombo. Total journey from Maun to camp is about 1 hour by air and road. Scheduled charter flights are the most convenient and are arranged by the camp.",
    "founderNote": null,
    "rooms": {

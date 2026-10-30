@@ -21,6 +21,7 @@ export const BUILT: string[] = [
   "/for-advisors",
   "/partners",
   "/travel-notes",
+  "/field-guides",
   "/stays",
   // Wild Pathways (Phase 2C): built only while NEXT_PUBLIC_PATHWAYS=on; the pages 404 otherwise.
   ...(process.env.NEXT_PUBLIC_PATHWAYS === "on" ? ["/pathways", "/pathways/*"] : []),

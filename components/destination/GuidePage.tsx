@@ -1,5 +1,7 @@
 import type React from "react";
 import Image from "next/image";
+import GuideOffer from "@/components/guides/GuideOffer";
+import { guidesFor } from "@/lib/content/field-guides";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -57,6 +59,8 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
           {map}
 
           <WhenToGo place={g.name} rows={g.months} airports={g.airports} transfers={g.transfers} />
+
+          {guidesFor(g.slug).map((fg) => <GuideOffer key={fg.key} guide={fg} source={`guide:${g.slug}`} />)}
 
           {g.places && (
             <section id="places" className={SEC}>

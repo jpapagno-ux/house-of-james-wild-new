@@ -34,6 +34,9 @@ import REGION_LIB from "@/lib/charts/regions.json";
 import { routeStart } from "@/lib/content/route-files";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import { AdvisorStrip } from "@/components/advisor/Desk";
+import GuideOffer from "@/components/guides/GuideOffer";
+import IslandZoom from "@/components/destination/IslandZoom";
+import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
@@ -172,6 +175,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <p className="text-[16px] ledger-muted max-w-md">Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James.</p>
             </div>
             <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
+            {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
           </section>
 
           <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
@@ -214,6 +218,9 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <Postcard p={c.postcard} sample />
             </section>
           )}
+
+          {/* The free field guide for this country, for an email address */}
+          {guidesFor(c.slug).map((fg) => <GuideOffer key={fg.key} guide={fg} source={`country:${c.slug}`} />)}
 
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />

@@ -30,6 +30,9 @@ import Doors, { type Door } from "@/components/destination/Doors";
 import Journeys from "@/components/destination/Journeys";
 import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorScroll } from "@/components/advisor/Desk";
+import IslandZoom from "@/components/destination/IslandZoom";
+import GuideOffer from "@/components/guides/GuideOffer";
+import { guidesFor } from "@/lib/content/field-guides";
 import { RecordCard } from "@/components/hub/Hub";
 import { GlanceBar } from "@/components/record/Frame";
 import { RecordHero } from "@/components/record/Sections";
@@ -117,6 +120,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
                 <p className="text-[16px] ledger-muted max-w-md">Every stay, residence, reserve and voyage with a position on file. Each country page charts its own in closer detail.</p>
               </div>
               <LedgerChartMap legend="below" tones={tones} country={r.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${r.name} with its stays`} />} width={chart.width} height={chart.height} items={mapItems} counts={{ stay: mapItems.filter((i) => i.category === "stay").length, vessel: mapItems.filter((i) => i.category === "vessel").length, residence: mapItems.filter((i) => i.category === "residence").length, reserve: mapItems.filter((i) => i.category === "reserve").length }} />
+              {r.slug === "south-america" && <IslandZoom zoom="galapagos" href="/destinations/south-america/ecuador-galapagos" cta="Ecuador & the Galápagos" />}
             </section>
           )}
 
@@ -196,6 +200,14 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </div>
             <CompassRose bearing={250} className="hidden md:block w-[160px] h-[160px]" />
           </section>
+
+          {guidesFor(r.slug).length > 0 && (
+            <section id="field-guides" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guides-heading">
+              <p className="ledger-eyebrow ledger-crimson">Free to download or print</p>
+              <h2 id="guides-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Field Guides for {r.name}</h2>
+              <ul className="mt-8 grid gap-6 lg:grid-cols-2">{guidesFor(r.slug).map((fg) => <li key={fg.key}><GuideOffer guide={fg} source={`region:${r.slug}`} variant="compact" className="h-full" /></li>)}</ul>
+            </section>
+          )}
 
           <AdvisorScroll regionSlug={r.slug} title={`Who knows ${r.name}`} />
 

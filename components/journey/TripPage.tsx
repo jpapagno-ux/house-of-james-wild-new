@@ -30,6 +30,8 @@ import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
 import { VOLUME_STYLES } from "@/lib/volumes";
+import GuideOffer from "@/components/guides/GuideOffer";
+import { guidesFor } from "@/lib/content/field-guides";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -463,8 +465,10 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const siblings = journeysFor(sibKey).filter((j) => j.href !== T.seo.path && isBuilt(j.href)).slice(0, 3);
   const countryName = voyage ? place?.name ?? T.crumbs[2] ?? "" : T.crumbs[2] ?? "";
   const countryHref = voyage ? place?.href : COUNTRY_PATH[waters];
+  const tripGuides = guidesFor(T.id);
   const Related = (
     <Sec id="related">
+      {tripGuides.length > 0 && <div className="mb-12 grid gap-6 lg:grid-cols-2">{tripGuides.map((fg) => <GuideOffer key={fg.key} guide={fg} source={`trip:${T.id}`} variant="compact" />)}</div>}
       {siblings.length > 0 && (
         <div className="mb-12">
           <div className="flex flex-wrap items-end justify-between gap-3">

@@ -2429,6 +2429,32 @@
    ],
    "frames": [],
    "credit": "Breac.House"
+  },
+  "wilderness-dumatau": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-hero",
+     "alt": "Wilderness DumaTau on Osprey Lagoon, Linyanti, Botswana"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area-and-jetty",
+     "alt": "Wilderness DumaTau, Botswana: the main area and jetty on the lagoon"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-elephant",
+     "alt": "Wilderness DumaTau, Botswana: an elephant in the bush"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-from-the-river",
+     "alt": "Wilderness DumaTau, Botswana: the camp seen from the Linyanti channel"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-boat-trip",
+     "alt": "Wilderness DumaTau, Botswana: a boat trip on the lagoon"
+    }
+   ],
+   "frames": [],
+   "credit": "Wilderness"
   }
  }
 }

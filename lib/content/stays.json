@@ -21967,6 +21967,89 @@
    "engine": null
   },
   {
+   "slug": "beckon-southern-ocean-lodge",
+   "name": "Southern Ocean Lodge",
+   "ledgerId": "STY-2026-000041",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Extraordinary Luxury Above Australia's Wild Southern Coastline.",
+   "quote": "Where the world's wildest coastline becomes your front-row view.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-clifftop",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/osprey-terrace-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-sunken-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-deck-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-lounge-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-bathroom"
+   ],
+   "bestMonths": "October - April",
+   "bestMonthsNote": "These months provide the best combination of comfortable temperatures, active wildlife, vibrant coastal landscapes and excellent conditions for outdoor exploration. Spring showcases wildflowers and abundant birdlife, while summer and early autumn deliver ideal weather for coastal walks, wildlife encounters and enjoying the lodge's spectacular oceanfront terraces.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -35.9666,
+    "lng": 136.7033
+   },
+   "airport": "Kingscote Airport (KGC) Adelaide Airport (ADL) (gateway for connecting flights)",
+   "airportDirections": "Recommended Arrival Airport: Kingscote Airport (KGC)\nApproximately:\n75 km\nAround 60 minutes by private vehicle\nGuests may also arrive via scheduled ferry from Cape Jervis before transferring across Kangaroo Island.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Flinders Suite",
+     "Remarkable Suite",
+     "Osprey Pavilion",
+     "Ocean Pavilion",
+     "Luxury Ocean Suites",
+     "Signature Coastal Retreats"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Wildlife Encounters",
+     "Coastal Walks",
+     "Fine Dining",
+     "Wellness Spa",
+     "Conservation Experiences",
+     "Kangaroo Island Discovery"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Luxury cliff-top suites with panoramic Southern Ocean views",
+     "All-inclusive gourmet dining and premium beverages",
+     "Signature Southern Spa",
+     "Private guest lounge and bar",
+     "Direct access to spectacular coastal walking trails",
+     "Architecturally designed luxury lodge",
+     "Personalised guided island experiences",
+     "Native wildlife encounters",
+     "Exceptional stargazing opportunities",
+     "World-class service in a remote wilderness setting"
+    ]
+   },
+   "onlyHere": [
+    "Southern Ocean Lodge is unlike anywhere else in Australia. Perched dramatically atop limestone cliffs overlooking the vast Southern Ocean, the lodge invites guests to experience raw coastal beauty without sacrificing comfort. Every suite celebrates uninterrupted ocean views, while exceptional cuisine, personalised experiences and Kangaroo Island's remarkable wildlife create an unforgettable journey into one of Australia's last great wilderness destinations."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "st-george-s-caye-resort",
    "name": "St. George's Caye Resort",
    "ledgerId": "STY-2026-564600",

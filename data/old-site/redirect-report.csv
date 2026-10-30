@@ -36,7 +36,7 @@ old path,new path,why,old title
 /book/be-tulum,/stays/be-tulum,booking page -> stay page,Book your stay at Be Tulum | Wild Earth Stays
 /book/beckon-huka-lodge,/destinations/oceania/new-zealand,booking page -> not on the new site yet; country page,Book your stay at Beckon Huka Lodge | Wild Earth Stays
 /book/beckon-longitude-131,/stays/beckon-longitude-131,booking page -> stay page,Book your stay at  Beckon Longitude 131 | Wild Earth Stays
-/book/beckon-southern-ocean-lodge,/destinations/oceania/australia,booking page -> not on the new site yet; country page,Book your stay at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/book/beckon-southern-ocean-lodge,/stays/beckon-southern-ocean-lodge,booking page -> stay page,Book your stay at  Beckon Southern Ocean Lodge | Wild Earth Stays
 /book/beckon-the-louise,/destinations/oceania/australia,booking page -> not on the new site yet; country page,Book your stay at Beckon The Louise | Wild Earth Stays
 /book/beckon-tierra-atacama,/destinations/south-america/chile,booking page -> not on the new site yet; country page,Book your stay at Beckon Tierra Atacama | Wild Earth Stays
 /book/benguerra-island-by-beyond,/stays/benguerra-island-by-and-beyond,booking page -> stay page,Book your stay at &amp;Beyond Benguerra Island | Wild Earth Stays
@@ -476,7 +476,7 @@ old path,new path,why,old title
 /property/beckon-huka-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Beckon Huka Lodge | Luxury Stays in New Zealand | Wild Earth Stays
 /property/beckon-longitude-131,/stays/beckon-longitude-131,stay page,Beckon Longitude 131 | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-silky-oaks-lodge,/stays/beckon-silky-oaks-lodge,stay page,Beckon Silky Oaks Lodge | Luxury Stays in Australia | Wild Earth Stays
-/property/beckon-southern-ocean-lodge,/destinations/oceania/australia,not on the new site yet; country page,Beckon Southern Ocean Lodge | Luxury Stays in Australia | Wild Earth Stays
+/property/beckon-southern-ocean-lodge,/stays/beckon-southern-ocean-lodge,stay page,Beckon Southern Ocean Lodge | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-the-louise,/destinations/oceania/australia,not on the new site yet; country page,Beckon The Louise | Luxury Stays in Australia | Wild Earth Stays
 /property/beckon-tierra-atacama,/destinations/south-america/chile,not on the new site yet; country page,Beckon Tierra Atacama | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/benguerra-island-by-and-beyond,/stays/benguerra-island-by-and-beyond,stay page,&amp;Beyond Benguerra Island | Luxury Stays in Tanzania | Wild Earth Stays
@@ -969,12 +969,12 @@ old path,new path,why,old title
 /stay/beckon-silky-oaks-lodge-riverhouse,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Riverhouse at Beckon Silky Oaks Lodge | Wild Earth Stays
 /stay/beckon-silky-oaks-lodge-treehouse-premium,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Treehouse Premium at Beckon Silky Oaks Lodge | Wild Earth Stays
 /stay/beckon-silky-oaks-lodge-treehouse-retreat,/stays/beckon-silky-oaks-lodge,room of beckon-silky-oaks-lodge -> stay page,Treehouse Retreat at Beckon Silky Oaks Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion-east,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion East at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-baillie-pavilion-west,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Baillie Pavilion West at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-flinders-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Flinders Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-osprey-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Osprey Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
-/stay/beckon-southern-ocean-lodge-remarkable-suite,/destinations/oceania/australia,room of beckon-southern-ocean-lodge -> not on the new site yet; country page,Remarkable Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Baillie Pavilion at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion-east,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Baillie Pavilion East at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-baillie-pavilion-west,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Baillie Pavilion West at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-flinders-suite,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Flinders Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-osprey-suite,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Osprey Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
+/stay/beckon-southern-ocean-lodge-remarkable-suite,/stays/beckon-southern-ocean-lodge,room of beckon-southern-ocean-lodge -> stay page,Remarkable Suite at  Beckon Southern Ocean Lodge | Wild Earth Stays
 /stay/beckon-the-louise-bethany-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Bethany Suite at Beckon The Louise | Wild Earth Stays
 /stay/beckon-the-louise-marananga-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Marananga Suite at Beckon The Louise | Wild Earth Stays
 /stay/beckon-the-louise-stonewell-suite,/destinations/oceania/australia,room of beckon-the-louise -> not on the new site yet; country page,Stonewell Suite at Beckon The Louise | Wild Earth Stays

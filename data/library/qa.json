@@ -491,12 +491,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d8",
    "slug": "beckon-southern-ocean-lodge",
-   "name": "Beckon Southern Ocean Lodge",
+   "name": "Southern Ocean Lodge",
    "country": "Australia",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d9",
@@ -3322,6 +3320,18 @@
    "country": "Rwanda",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae406f76408695415764074",
+   "slug": "singita-kataza-house",
+   "name": "Singita Kataza House",
+   "country": "Rwanda",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9a9",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
-import { GlanceBar } from "@/components/record/Frame";
+import { GalleryMosaic, GlanceBar } from "@/components/record/Frame";
 import { Experiences, Features, Overview, PreviewNote, Practical, RecordHero, RecordNav, RoomsLedger, SectionHead, WhyChose } from "@/components/record/Sections";
 import { InkStamp, Roundel, TimeMark, VolumeIconSvg } from "@/components/ledger/VolumeKit";
 import { VOLUME_STYLES } from "@/lib/volumes";
@@ -16,9 +16,14 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({ title: "Dá Licença, Estremoz, Alentejo (preview)", description: "Preview of a Volume V Europe stay with before-and-after chapters and a Douro river voyage.", path: "/preview/europe/da-licenca", noindex: true });
 
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
+// Hotel-approved photographs, credit required: "Photo courtesy of Dá Licença".
+const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/europe/da-licenca";
+const CREDIT = "Photographs courtesy of Dá Licença";
+const LEDGER_ID = "STY-2026-000522";
 const EU = VOLUME_STYLES.europe;
 const VOY = VOLUME_STYLES.voyages;
 
+const SUITE_IMG: Record<string, string> = { "The Rock": "suite-the-rock", "The Loft": "suite-the-loft", "My Pool": "suite-my-pool", "Sky Pool": "suite-sky-pool", "Sunset": "suite-sunset", "The Moon Cube": "suite-moon-cube" };
 const SUITES = [
   ["The Rock", "Infused with Japanese ambience, shaped as an amphitheatre so you can lie back and contemplate the views."],
   ["The Loft", "A large, open studio in three spaces (bedroom, living area and bathroom) with natural, open windows onto the landscape."],
@@ -40,9 +45,9 @@ const EXPERIENCES = [
 // Before and after: the chapters around the stay. Suggestions to build the
 // trip from; every bracketed item is chosen and confirmed by the house.
 const CHAPTERS: { when: string; volume: "europe" | "voyages" | "overland"; title: string; nights: string; body: string; how: string }[] = [
-  { when: "Before", volume: "europe", title: "Lisbon, two nights in the old city", nights: "2 nights", body: "Land, sleep off the flight and walk Alfama before the quiet. A small house in the city, [LISBON STAY TO CHOOSE].", how: "Lisbon airport (LIS) · about two hours by road to Estremoz [TO CONFIRM]" },
+  { when: "Before", volume: "europe", title: "Lisbon, two nights in the old city", nights: "2 nights", body: "Land, sleep off the flight and walk Alfama before the quiet. A small house in the city, [LISBON STAY TO CHOOSE].", how: "Lisbon airport (LIS) · about two hours by road to Estremoz" },
   { when: "The stay", volume: "europe", title: "Dá Licença, the olive hills", nights: "3 nights", body: "Three nights is the house's minimum here: the first to arrive, the second to slow down, the third to stay still.", how: "Estremoz · Alentejo" },
-  { when: "After", volume: "voyages", title: "The Douro by river", nights: "About a week", body: "North to Porto, then up the Douro valley by small river ship: terraced vineyards, quintas and the port lodges. [RIVER SHIP AND DEPARTURE TO CHOOSE]", how: "Estremoz to Porto by road · about 3½ hours [TO CONFIRM]" },
+  { when: "After", volume: "voyages", title: "The Douro by river", nights: "About a week", body: "North to Porto, then up the Douro valley by small river ship: terraced vineyards, quintas and the port lodges. [RIVER SHIP AND DEPARTURE TO CHOOSE]", how: "Estremoz to Porto by road · about 3½ hours" },
   { when: "Or after", volume: "europe", title: "The Alentejo coast", nights: "2–3 nights", body: "West to the Atlantic for long beaches and rice fields before flying home from Lisbon. [COAST STAY TO CHOOSE]", how: "Back to Lisbon (LIS) for the flight home" },
 ];
 
@@ -52,11 +57,12 @@ export default function DaLicencaPreview() {
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         <RecordHero
-          image={{ url: `${B44}/29a50845f_generated_image.png`, alt: "Engraved plate of the estate among the olive hills, with the marble tower of Estremoz beyond" }}
-          eyebrow="Not So Wild · Europe · Volume V · Estremoz · Alentejo · Portugal"
+          image={{ url: `${CLD}/hero.jpg`, alt: "Dá Licença among the olive hills outside Estremoz, Alentejo" }}
+          slides={[{ url: `${CLD}/hero.jpg`, alt: "Dá Licença among the olive hills outside Estremoz, Alentejo" }, { url: `${CLD}/grounds.jpg`, alt: "The grounds of Dá Licença in the Alentejo" }, { url: `${CLD}/main-house.jpg`, alt: "The main house at Dá Licença" }]}
+          eyebrow={`Not So Wild · Europe · Volume V · Alentejo, Portugal · ${LEDGER_ID}`}
           title="Dá Licença"
           tagline="An art-filled silence among the Alentejo olive hills"
-          glance={<GlanceBar glance={{ price: { amount: "€350", basis: "suites, per night · seasonal" }, facts: [["The house", "8 rooms & suites · opened 2020"], ["Best for", "Stillness over spectacle"], ["Fly into", "Lisbon (LIS)"]], cta: { label: "Plan this stay", href: "/plan?trip=D%C3%A1%20Licen%C3%A7a" } }} />}
+          glance={<GlanceBar glance={{ price: { amount: "€350", basis: "suites, per night · seasonal" }, facts: [["The house", "8 rooms & suites"], ["Ledger ID", LEDGER_ID], ["Fly into", "Lisbon (LIS)"]], cta: { label: "Plan this stay", href: "/plan?trip=D%C3%A1%20Licen%C3%A7a" } }} />}
         />
         <RecordNav items={[["The story", "why"], ["Overview", "overview"], ["Hosts", "hosts"], ["Suites", "rooms"], ["Experiences", "experiences"], ["Features", "features"], ["Before & after", "chapters"], ["By river", "river"], ["Details", "practical"]]} cta="Plan this stay" ctaHref="/plan?trip=D%C3%A1%20Licen%C3%A7a" />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -65,15 +71,15 @@ export default function DaLicencaPreview() {
           <WhyChose
             title="A Gallery in the Olive Hills"
             blocks={[
-              { body: "In the olive hills outside Estremoz, where the plain rolls red and silver toward the Spanish border, a former farmstead has been made into something rare: a small hotel that behaves like a private gallery. Dá Licença opened in 2020 after a five-year transformation of the estate, and it carries only eight rooms and suites." },
+              { body: "In the olive hills outside Estremoz, where the plain rolls red and silver toward the Spanish border, a former farmstead has been made into something rare: a small hotel that behaves like a private gallery. The estate took five years to transform, and it carries only eight rooms and suites." },
               { body: "The house asks for almost nothing of its guests. Days are spent between the pool, the library and the grounds; the loudest sound is the wind through the olives. It is the counterpoint this house looks for in Europe: a stay with no adrenaline in it at all." },
             ]}
             status={<p className="ledger-eyebrow ledger-crimson">House recommended · Not So Wild · Europe</p>}
           />
 
           <Overview
-            answer="Dá Licença is an eight-room, owner-run art hotel on a former farmstead outside Estremoz in Portugal's Alentejo, opened in 2020. Suites start from about €350 a night, rising in the high summer weeks. It suits couples, art collectors, slow travellers and wine and olive-oil lovers, and pairs naturally with Lisbon before and the Douro by river after. Plan it with James or an advisor."
-            facts={[["Region", "Alentejo, Portugal"], ["The house", "8 rooms & suites"], ["Opened", "2020"], ["From", "€350 per night (suites)"], ["Hosts", "Vitor Borges & Franck Laigneau"], ["Best suited to", "Couples, collectors, slow travellers"]]}
+            answer="Dá Licença is an eight-room, owner-run art hotel on a former farmstead outside Estremoz in Portugal's Alentejo, about two hours by road from Lisbon. Suites start from about €350 a night, rising in the high summer weeks. It suits couples, art collectors, slow travellers and wine and olive-oil lovers, and pairs naturally with Lisbon before and the Douro by river after. Plan it with James or an advisor."
+            facts={[["Region", "Alentejo, Portugal"], ["The house", "8 rooms & suites"], ["Ledger ID", LEDGER_ID], ["From", "€350 per night (suites)"], ["Hosts", "Vitor Borges & Franck Laigneau"], ["Best suited to", "Couples, collectors, slow travellers"]]}
           />
 
           <section id="hosts" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 grid lg:grid-cols-[1.3fr_1fr] gap-10 items-start">
@@ -87,7 +93,10 @@ export default function DaLicencaPreview() {
             </div>
           </section>
 
-          <RoomsLedger title="Eight Suites, Each Its Own World" intro="Six of the eight, as the owners describe them. Photographs follow once the partner's image permission is filed." rooms={SUITES.map(([name, note]) => ({ name, note }))} unit="suite" footnote="Rates are seasonal and confirmed when you book." />
+          <GalleryMosaic title="Dá Licença in photographs" images={[{ url: `${CLD}/grounds.jpg`, alt: "The grounds of Dá Licença in the Alentejo" }, { url: `${CLD}/main-house.jpg`, alt: "The main house at Dá Licença" }, { url: `${CLD}/suite-sky-pool.jpg`, alt: "Sky Pool suite at Dá Licença" }, { url: `${CLD}/suite-sunset.jpg`, alt: "Sunset suite with its private rooftop at Dá Licença" }, { url: `${CLD}/suite-the-rock.jpg`, alt: "The Rock suite at Dá Licença" }]} />
+          <p className="mt-2 text-[12px] ledger-muted">{CREDIT}</p>
+
+          <RoomsLedger title="Eight Suites, Each Its Own World" intro="Six of the eight, as the owners describe them." rooms={SUITES.map(([name, note]) => ({ name, note, image: `${CLD}/${SUITE_IMG[name]}.jpg` }))} unit="suite" footnote={`Rates are seasonal and confirmed when you book. ${CREDIT}.`} />
 
           <Experiences
             title="How to Spend the Days (Slowly)"
@@ -151,7 +160,7 @@ export default function DaLicencaPreview() {
             </div>
           </section>
 
-          <Practical rows={[["Location", "Outside Estremoz, Alentejo, Portugal"], ["Coordinates", "38.7747° N · 7.5820° W [TO CONFIRM]"], ["Fly into", "Lisbon (LIS) · about 2 hours by road [TO CONFIRM]"], ["The house", "8 rooms and suites · opened 2020"], ["From", "Suites from €350 per night; seasonal, rising in the high summer weeks and for the largest suites"], ["Licence", "Tourism licence RNET 7713"], ["Booking", "Through James Wild & Co: Plan with James or an advisor"]]} />
+          <Practical rows={[["Location", "Outside Estremoz, Alentejo, Portugal"], ["Ledger ID", LEDGER_ID], ["Coordinates", "38.7747° N · 7.5820° W"], ["Fly into", "Lisbon (LIS) · about 2 hours by road"], ["The house", "8 rooms and suites"], ["From", "Suites from €350 per night; seasonal, rising in the high summer weeks and for the largest suites"], ["Licence", "Tourism licence RNET 7713"], ["Booking", "Through James Wild & Co: Plan with James or an advisor"], ["Photographs", CREDIT]]} />
 
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 grid md:grid-cols-[1fr_auto] gap-10 items-center">
             <div>
@@ -159,12 +168,12 @@ export default function DaLicencaPreview() {
               <p className="ledger-display italic text-2xl md:text-[1.9rem] leading-snug mt-3">&ldquo;Dá Licença is the house&rsquo;s kind of quiet. Owner-run, eight rooms, an art collection worth the trip on its own, and a landscape that asks nothing of the traveler but attention.&rdquo;</p>
               <p className="mt-4 text-[16px] leading-relaxed ledger-muted">It anchors the Not So Wild Europe line the way the great safari camps anchor Africa: proof that the rarest luxury is silence, kept by people who love the ground they stand on.</p>
             </div>
-            <InkStamp volume="europe" no="PREVIEW" size={190} rotate={-5} seed={29} />
+            <InkStamp volume="europe" no="0522" size={190} rotate={-5} seed={29} />
           </section>
 
           <PreviewNote>
-            <p>Built from James&rsquo;s Base44 sample (SampleEuropeStayPage). To go live: file Dá Licença as a Stay in the library with <b>house_volume = europe</b> and a Ledger ID; set its founder status only if James has visited (no founder mark shows until then); add partner-approved photographs; confirm one set of coordinates (the sample has 38.7747 / 7.5820 and 38.8436 / 7.5858).</p>
-            <p>The partner&rsquo;s own site is never linked; suites and contact route to Plan with James. River voyage, Lisbon and coast stays are suggestions with the choices in brackets. The Douro offer box stays empty until a real offer is filed with the Voyages volume.</p>
+            <p>Filed in the library as {LEDGER_ID} (Volume V, Europe), Portugal DST-2026-000066. No founder mark until James has stayed: his visit is planned. Photographs approved by the hotel and credited. Coordinates and drive times confirmed by James, 29 Oct 2026.</p>
+            <p>To check before release: the sample says the hotel opened in 2020, but press coverage dates from late 2018, so the opening year is left off the page. The Lisbon stay, coast stay and the Douro ship and dates are still to choose. See the full journey: /preview/journeys/alentejo-douro.</p>
           </PreviewNote>
         </div>
       </main>

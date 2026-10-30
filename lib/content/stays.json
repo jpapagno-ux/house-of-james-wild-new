@@ -7886,6 +7886,7 @@
    "features": {
     "paras": [],
     "items": [
+     "Awarded a MICHELIN Key",
      "Heated swimming pool",
      "Spa with four treatment rooms, sauna and steam room; gym",
      "Brasserie, fine dining restaurant and wine cellar",
@@ -7912,6 +7913,10 @@
     {
      "q": "How far is Hemingways Nairobi from the airport?",
      "a": "About 35 minutes from Jomo Kenyatta International, traffic depending, and about 20 minutes from Wilson Airport, where most safari flights leave."
+    },
+    {
+     "q": "Does Hemingways Nairobi have a MICHELIN Key?",
+     "a": "Yes. Hemingways Nairobi has been awarded a MICHELIN Key."
     },
     {
      "q": "How many rooms does Hemingways Nairobi have?",

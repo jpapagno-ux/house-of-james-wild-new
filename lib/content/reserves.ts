@@ -61,3 +61,13 @@ export const campStatus = (r: Reserve, c: ReserveCamp) => CAMP_STATUS[`${r.slug}
 export const KIND_LABEL: Record<ReserveCamp["kind"], string> = { camp: "Lodge & camp", residence: "Private residence", suite: "Private suite" };
 export const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 export const reserveFrom = (r: Reserve) => { const f = r.camps.flatMap((c) => c.rooms.filter((m) => m.from && c.kind === "camp").map((m) => m.from as number)); return f.length ? Math.min(...f) : null; };
+
+// Whose photographs each reserve's pages use (the reserve's own media library,
+// supplied to us as its booking partner). Printed under the gallery and written
+// into each image's structured data.
+export const RESERVE_PHOTO_CREDIT: Record<string, string> = {
+  "lion-sands": "Lion Sands Game Reserve",
+  "londolozi-reserve": "Londolozi",
+  "lalibela-reserve": "Lalibela Game Reserve",
+  "tswalu-reserve": "Tswalu Kalahari",
+};

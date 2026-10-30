@@ -264,3 +264,14 @@ export const POSTS: Record<string, JournalPost> = {
 export const POST_LIST = Object.values(POSTS).sort((a, b) => b.published.localeCompare(a.published));
 export const postsForStay = (slug: string) => POST_LIST.filter((p) => p.stays.some((s) => s.slug === slug));
 export const journalPath = (slug: string) => `/journal/${slug}`;
+
+/**
+ * Who to credit for a Journal photograph. Partner photos carry their own credit.
+ * Photos from James's own camera (served from /journal/) are credited to him,
+ * except the ones he appears in, which are credited to the house.
+ */
+export function photoCredit(img: { url: string; alt: string; credit?: string }): string | undefined {
+  if (img.credit) return img.credit;
+  if (img.url.startsWith("/journal/")) return /\bJames\b/.test(img.alt) ? "James Wild & Co" : "Photograph: James Papagno";
+  return undefined;
+}

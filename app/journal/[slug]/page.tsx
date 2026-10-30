@@ -12,9 +12,9 @@ import StayFilm from "@/components/booking/StayFilm";
 import Signature from "@/components/record/Signature";
 import { Blocks, parse, sections, words } from "@/components/journal/Prose";
 import LoopVideo from "@/components/journal/LoopVideo";
-import { POSTS, journalPath, type JournalFigure, type JournalImage, type JournalPost } from "@/lib/content/journal/posts";
+import { POSTS, journalPath, photoCredit, type JournalFigure, type JournalImage, type JournalPost } from "@/lib/content/journal/posts";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { graph, ids } from "@/lib/schema";
+import { graph, ids, imageObject } from "@/lib/schema";
 
 // A Journal post: James's story, set like a printed travel piece. Full-bleed
 // hero, the answer first (for readers and answer engines), the contents as
@@ -44,7 +44,7 @@ function Fig({ img, sizes, className = "", ratio }: { img: JournalImage; sizes: 
           ? <LoopVideo src={img.video} poster={img.url} label={img.alt} className="absolute inset-0 w-full h-full object-cover" />
           : <Image src={img.url} alt={img.alt} fill sizes={sizes} quality={85} className="object-cover" />}
       </div>
-      {(img.caption || img.credit) && <figcaption className="mt-3 text-[14px] leading-snug ledger-muted italic max-w-2xl">{img.caption}{img.credit && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{img.credit}</span>}</figcaption>}
+      {(img.caption || photoCredit(img)) && <figcaption className="mt-3 text-[14px] leading-snug ledger-muted italic max-w-2xl">{img.caption}{photoCredit(img) && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{photoCredit(img)}</span>}</figcaption>}
     </figure>
   );
 }
@@ -57,7 +57,7 @@ function Figure({ f }: { f: JournalFigure }) {
         <div className="relative w-full h-[62vh] md:h-[86vh] min-h-[360px] max-h-[980px] overflow-hidden bg-ink">
           <Image src={img.url} alt={img.alt} fill sizes="100vw" quality={85} className="object-cover" />
         </div>
-        {(img.caption || img.credit) && <figcaption className="max-w-ledger mx-auto px-5 md:px-10 mt-3 text-[14px] ledger-muted italic">{img.caption}{img.credit && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{img.credit}</span>}</figcaption>}
+        {(img.caption || photoCredit(img)) && <figcaption className="max-w-ledger mx-auto px-5 md:px-10 mt-3 text-[14px] ledger-muted italic">{img.caption}{photoCredit(img) && <span className="not-italic font-mono text-[10.5px] tracking-[0.12em] uppercase ml-2 opacity-70">{photoCredit(img)}</span>}</figcaption>}
       </figure>
     );
   }
@@ -99,7 +99,7 @@ export default async function JournalPostPage({ params }: P) {
       description: p.description,
       url,
       mainEntityOfPage: url,
-      image: [p.hero.url, ...p.figures.flatMap((f) => f.images.map((i) => i.url))].map(abs),
+      image: [p.hero, ...p.figures.flatMap((f) => f.images)].map((i) => { const c = photoCredit(i)?.replace(/^Photograph: /, ""); return imageObject(abs(i.url), i.alt, c); }),
       datePublished: p.published,
       dateModified: p.modified,
       wordCount: words(p.body),

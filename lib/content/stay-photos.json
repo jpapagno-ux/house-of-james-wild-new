@@ -2031,6 +2031,54 @@
     }
    ],
    "credit": "Beckons"
+  },
+  "clayoquot-wilderness-resort": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/firepit-twilight",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: circular fire pit on a timber deck above a calm inlet at twilight"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tents-on-the-shoreline",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: canvas tents on timber decks along a forested shoreline"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-forest",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: white canvas tent on a deck in dense evergreen forest"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/healing-grounds-spa",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: canvas spa tent on a timber deck in lush forest"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/dining-tents-boardwalk",
+     "alt": "Clayoquot Wilderness Lodge: canvas dining tents around a fire pit on a timber boardwalk at twilight",
+     "caption": "Dinner by the fire"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/ivanhoe-bar-night",
+     "alt": "Clayoquot Wilderness Lodge: bar with timber ceiling, velvet chairs and floor-to-ceiling windows on the water",
+     "caption": "The bar after dark"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tent-lounge-stove",
+     "alt": "Clayoquot Wilderness Lodge: canvas tent lounge with a wood-burning stove and a deck over the forest",
+     "caption": "A wood stove in the tent"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bedroom",
+     "alt": "Clayoquot Wilderness Lodge: tented bedroom with a timber bed, desk and draped canvas walls",
+     "caption": "Under canvas"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bathroom",
+     "alt": "Clayoquot Wilderness Lodge: timber-panelled bathroom with a clawfoot tub and double vanity",
+     "caption": "Clawfoot bath"
+    }
+   ],
+   "credit": "Beckons"
   }
  }
 }

@@ -50,6 +50,7 @@ import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
 import { RESERVES } from "@/lib/content/reserves";
+import GatewayNight from "@/components/stays/GatewayNight";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, lodging } from "@/lib/schema";
 
@@ -171,6 +172,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               </section>
             );
           })()}
+          <GatewayNight country={s.countrySlug} exclude={s.slug} />
           {routesThrough(s.slug).length > 0 && (
             <section aria-label="On these routes" className="mt-16">
               <p className="ledger-eyebrow ledger-crimson">On these routes</p>

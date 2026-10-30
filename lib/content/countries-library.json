@@ -2695,7 +2695,7 @@
       "good",
       "good",
       "good",
-      "best",
+      "good",
       "best",
       "best"
      ]
@@ -2703,17 +2703,21 @@
    ],
    "airports": [
     [
-     "Whangarei Airport (WRE)",
+     "Auckland Airport (AKL)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Taupō Airport (TUO)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Auckland International Airport (AKL)",
+     "Rotorua Regional Airport (ROT)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "WRE · AKL",
-   "bestShort": "Oct–Apr",
+   "flyInto": "AKL · TUO",
+   "bestShort": "Nov–Apr",
    "atlasName": "New Zealand"
   },
   {

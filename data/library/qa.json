@@ -465,12 +465,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d5",
    "slug": "beckon-huka-lodge",
-   "name": "Beckon Huka Lodge",
+   "name": "Huka Lodge",
    "country": "New Zealand",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d6",

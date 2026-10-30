@@ -8219,6 +8219,88 @@
    "engine": null
   },
   {
+   "slug": "beckon-huka-lodge",
+   "name": "Huka Lodge",
+   "ledgerId": "STY-2026-000038",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Timeless Luxury Beside New Zealand's Legendary Waikato River.",
+   "quote": "Where flowing water, beautiful gardens and refined hospitality create unforgettable moments.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-river-twilight",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-river",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-pool-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-breakfast-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-pool-morning",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-living",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-daybed",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-bath-ferns",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-lounge"
+   ],
+   "bestMonths": "November - April",
+   "bestMonthsNote": "Late spring through autumn offers warm days, ideal fly-fishing conditions, flourishing gardens and excellent weather for exploring Taupō's lakes, geothermal parks and native forests. These months provide the perfect balance of outdoor adventure and relaxed luxury.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -38.6427,
+    "lng": 176.0945
+   },
+   "airport": "Taupō Airport (TUO) Rotorua Regional Airport (ROT) Auckland Airport (AKL) (international gateway)",
+   "airportDirections": "Recommended Arrival Airport: Taupō Airport (TUO)\nApproximately:\n15 km\nAround 15–20 minutes by private vehicle\nInternational visitors commonly arrive via Auckland Airport before connecting to Taupō by domestic flight or private transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Junior Lodge Suites",
+     "Lodge Suites",
+     "Owner's Cottage",
+     "Alan Pye Cottage",
+     "Private Luxury Residences"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Huka Falls Discovery",
+     "River Adventures",
+     "Fine Dining",
+     "Fly Fishing",
+     "Spa & Wellness",
+     "Nature Exploration"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Luxury riverside suites",
+     "Private cottages for exclusive stays",
+     "Seventeen acres of landscaped gardens",
+     "Exceptional fine dining experiences",
+     "Multiple private dining locations",
+     "Waikato River frontage",
+     "Personalised guest experiences",
+     "Easy access to Huka Falls",
+     "Outdoor heated swimming pool and spa facilities",
+     "World-renowned luxury hospitality"
+    ]
+   },
+   "onlyHere": [
+    "Huka Lodge is one of New Zealand's most celebrated luxury retreats, offering an intimate riverside escape where refined hospitality and extraordinary natural beauty come together. Nestled beside the emerald waters of the Waikato River, the lodge provides elegant accommodation, exceptional cuisine and bespoke experiences designed to immerse guests in the remarkable landscapes of Taupō. Every stay reflects a legacy of timeless luxury and genuine connection to place."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "inkaterra-cabo-blanco",
    "name": "Inkaterra Cabo Blanco",
    "ledgerId": "STY-2026-000113",

@@ -8,6 +8,7 @@ import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, touristTrip } from "@/lib/schema";
 import RouteAtlas from "@/components/journey/RouteAtlas";
+import Link from "next/link";
 
 // /voyages: Volume 04 hub shell. Small ships and sailing yachts; the
 // Aliikai voyages first. Voyage pages build from James's sample files.
@@ -28,6 +29,14 @@ export default function VoyagesHub() {
           routes={voyages.map((j) => ({ id: j.href.split("/").pop()!.replace(/^aliikai-/, ""), label: j.title, href: j.href, where: "Indonesia" }))} />
         <HubSection eyebrow="Indonesia" title="Aboard Aliikai" id="aliikai-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{voyages.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
+          <p className="mt-6 text-[15px]">
+            <span className="ledger-eyebrow mr-2">The waters</span>
+            <Link href="/destinations/asia/indonesia/raja-ampat" className="underline underline-offset-4 hover:ledger-crimson">Raja Ampat guide</Link>
+            <span className="ledger-muted"> · </span>
+            <Link href="/destinations/asia/indonesia/komodo" className="underline underline-offset-4 hover:ledger-crimson">Komodo guide</Link>
+            <span className="ledger-muted"> · </span>
+            <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Everything in Indonesia</Link>
+          </p>
         </HubSection>
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: voyages.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />

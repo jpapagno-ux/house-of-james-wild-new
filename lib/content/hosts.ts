@@ -1,3 +1,4 @@
+import films from "./films.json";
 // The host card switchboard. Every stay, camp and reserve page shows the
 // "Meet your host" card (components/record/HostPanel.tsx); this is where
 // each one is switched. The library has no host_connect field and no host
@@ -64,9 +65,6 @@ export const hostFor = (key: string) => {
   return !GROUP_CONNECT_ON && h.state === "available" ? { state: "not_linking" as HostConnect } : h;
 };
 
-// Films on file (Stay.brand_video_link) or supplied by James. Everything else
-// gets the placeholder slot.
-export const VIDEOS: Record<string, { id: string; title: string }> = {
-  "stay:leeu-estates": { id: "rLbbxGMH9C8", title: "Leeu Estates, Franschhoek" },
-  "stay:monwana-thornybush": { id: "YR_8uiBObZ4", title: "Monwana, Thornybush" },
-};
+// Films come from the Film Desk in Stay Studio (approved FilmLink records,
+// exported nightly to films.json). Everything else gets the placeholder slot.
+export const VIDEOS: Record<string, { id: string; title: string }> = films;

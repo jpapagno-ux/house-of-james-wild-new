@@ -19,7 +19,7 @@ import { graph } from "@/lib/schema";
 // or "best time to visit Komodo". Answer first, then the months and the way in,
 // the founder's testimony, what to see, who it suits, how to see it (the
 // voyages), Raja Ampat vs Komodo, FAQs with schema, and the sources.
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]";
 
 export default function GuidePage({ g }: { g: Guide }) {
   const parent = g.parent ? GUIDES[g.parent] : undefined;

@@ -29,9 +29,10 @@ function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
       <Link href={v.href} className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-flex items-center gap-2 whitespace-nowrap hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
         {v.tone && <span className="w-1.5 h-1.5 rounded-full" style={{ background: light ? "rgba(255,255,255,.85)" : v.tone }} aria-hidden="true" />}
         {v.label}
+        <svg className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 group-hover:translate-y-px transition" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m2 3.5 3 3 3-3" /></svg>
       </Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
-        <div className="w-[560px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] grid grid-cols-[1fr_1fr] gap-6 p-6 text-ink">
+        <div className="w-[600px] ledger-page border ledger-border shadow-[0_18px_50px_rgba(45,42,38,0.18)] grid grid-cols-[1.1fr_1fr] gap-8 p-7 text-ink" style={v.tone ? { borderTop: `3px solid ${v.tone}` } : undefined}>
           <div>
             <p className="ledger-eyebrow" style={v.tone ? { color: v.tone } : undefined}>{v.label}</p>
             <p className="ledger-display text-[1.35rem] leading-snug mt-2">{v.intro}</p>
@@ -78,9 +79,9 @@ function DestinationsMenu({ light }: { light: boolean }) {
   const picked = REGIONS.find((r) => r.slug === pick);
   return (
     <li className="group relative">
-      <Link href="/destinations" className={cls}>Destinations</Link>
+      <Link href="/destinations" className={`${cls} !inline-flex items-center gap-2`}>Destinations<svg className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 transition" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m2 3.5 3 3 3-3" /></svg></Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-0 top-full pt-2 z-50">
-        <div className="w-[960px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] grid grid-cols-[1.25fr_1fr] text-ink">
+        <div className="w-[960px] ledger-page border ledger-border border-t-[3px] border-t-crimson shadow-[0_18px_50px_rgba(45,42,38,0.18)] grid grid-cols-[1.25fr_1fr] text-ink">
           <div className="p-6">
             <div className="flex items-baseline justify-between">
               <p className="ledger-eyebrow ledger-crimson">The ten regions</p>
@@ -143,7 +144,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     if (!overlay) return;
     const onScroll = () => {
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 168 : window.scrollY > 40);
+      setSolid(end ? end.getBoundingClientRect().top <= 192 : window.scrollY > 40);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -182,7 +183,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[92px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[112px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
         <div className="hidden lg:flex items-center gap-3">
           <button
             type="button"
@@ -197,10 +198,10 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         </div>
 
         <Link href="/" className="flex lg:flex-col items-center gap-3 lg:gap-1.5 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
-          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={36} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={44} tone={light ? "light" : "ink"} /></span>
           <span className="flex flex-col lg:items-center">
-            <span className="ledger-display text-xl md:text-[1.7rem] tracking-[-0.01em]">James Wild &amp; Co.</span>
-            <span className={`ledger-eyebrow !text-[9px] mt-1 ${light ? "!text-white/75" : "ledger-crimson"}`}>{SITE.homeOf}</span>
+            <span className="ledger-display text-xl md:text-[2rem] lg:text-[2.15rem] tracking-[-0.015em]">James Wild &amp; Co.</span>
+            <span className={`ledger-eyebrow !text-[9.5px] !tracking-[0.3em] mt-1.5 ${light ? "!text-white/75" : ""}`}>Exploring since {SITE.exploringSince} · {SITE.homeOf}</span>
           </span>
         </Link>
 
@@ -229,8 +230,8 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       </div>
 
       {/* The six volumes, one centred line */}
-      <nav aria-label="Main" className={`hidden lg:block border-t ${light ? "border-white/15" : "ledger-border"}`}>
-        <ul className="max-w-[1400px] mx-auto px-10 h-11 flex items-center justify-center gap-7 xl:gap-9">
+      <nav aria-label="Main" className={`hidden lg:block border-t ${light ? "border-white/20" : "ledger-border"}`}>
+        <ul className="max-w-[1400px] mx-auto px-10 h-12 flex items-center justify-center gap-8 xl:gap-11">
           {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
           {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
         </ul>

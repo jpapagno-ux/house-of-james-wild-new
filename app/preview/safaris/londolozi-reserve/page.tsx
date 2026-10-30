@@ -79,7 +79,7 @@ export default function LondoloziPreview() {
           <WhyChose eyebrow={L.whyStay.eyebrow} title={L.whyStay.title} blocks={L.whyStay.paragraphs.map((b) => ({ body: b }))} image={{ url: L.whyStay.image, alt: L.whyStay.imageAlt }}
             status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · no founder visit filed, so no founder stamp</p>} />
           {/* Core · the camps: each a child stay with its own rooms */}
-          <section id="camps" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56">
+          <section id="camps" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
             <SectionHead eyebrow="The camps · each with its own page" title="Five Camps, One Reserve" intro="Choose the camp first, then the room. Each camp has its own character, rooms, rates and host, and its own page in the Ledger." icon="tree-ring" />
             <nav aria-label="Camps" className="mt-6 flex flex-wrap gap-2">
               {CAMPS.map((c) => <a key={c.slug} href={`#${c.slug}`} className="border ledger-border px-3 py-1.5 text-[14px] hover:border-crimson">{c.name}</a>)}
@@ -88,7 +88,7 @@ export default function LondoloziPreview() {
             <div className="mt-10 space-y-14">
               {CAMPS.map((c, i) => (
                 <Reveal key={c.slug}>
-                  <article id={c.slug} className="scroll-mt-32 lg:scroll-mt-56 grid lg:grid-cols-[1fr_1.3fr] gap-8 items-start">
+                  <article id={c.slug} className="scroll-mt-32 lg:scroll-mt-[240px] grid lg:grid-cols-[1fr_1.3fr] gap-8 items-start">
                     <div className={i % 2 ? "lg:order-2" : ""}>
                       <div className="relative aspect-[4/3] border ledger-border"><Image src={c.image} alt={`${c.name}, Londolozi`} fill sizes="(min-width: 1024px) 480px, 100vw" className="object-cover" /></div>
                     </div>
@@ -113,7 +113,7 @@ export default function LondoloziPreview() {
                   </article>
                 </Reveal>
               ))}
-              <article id="villas" className="scroll-mt-32 lg:scroll-mt-56 ledger-paper border ledger-border p-6 md:p-8 flex flex-wrap items-center justify-between gap-6">
+              <article id="villas" className="scroll-mt-32 lg:scroll-mt-[240px] ledger-paper border ledger-border p-6 md:p-8 flex flex-wrap items-center justify-between gap-6">
                 <div className="flex items-start gap-4">
                   <FieldIcon name="tree-ring" height={30} className="ledger-crimson mt-1" />
                   <div>
@@ -128,7 +128,7 @@ export default function LondoloziPreview() {
           </section>
 
           {/* Core · what every camp rate carries */}
-          <section id="rates" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56">
+          <section id="rates" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
             <SectionHead eyebrow="Reserve rates · per person, per night" title="What a Londolozi Rate Includes" intro="Every camp is priced per person, per night, fully inclusive of the safari. The lines below apply to all five camps; each camp page adds its own." />
             <div className="mt-6"><IncludedLists included={["All meals and local drinks", "Two game drives a day with a ranger and Shangaan tracker", "Guided bush walks", "Laundry and Wi-Fi", "Road transfers from the Londolozi airstrip"]} excluded={["Flights to the Londolozi airstrip or MQP", "Sabi Sand conservation levy (paid on arrival)", "Premium wines and spirits", "Healing House treatments", "Gratuities"]} /></div>
             <p className="mt-5 text-[13px] ledger-muted max-w-3xl">Sample lines to confirm against the Londolozi rate sheet. Live registry rates, re-verified at enquiry, never &ldquo;on request&rdquo;.</p>

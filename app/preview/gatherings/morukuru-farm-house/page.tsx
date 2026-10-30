@@ -48,7 +48,7 @@ export default function MorukuruPreview() {
             status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Vetted by the house</span> · James met the Morukuru team in May 2026</p>} />
 
           {/* Core · the house, taken whole */}
-          <section id="house" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56">
+          <section id="house" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
             <div className="flex items-center gap-2"><KeyRound className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /><p className="ledger-eyebrow">Exclusive use · never sold by the room</p></div>
             <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2">The House, Taken Whole</h2>
             <div className="mt-6 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start">
@@ -74,7 +74,7 @@ export default function MorukuruPreview() {
           />
 
           {/* Core · what the house rate carries */}
-          <section id="rate" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56">
+          <section id="rate" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
             <SectionHead eyebrow="The house rate · whole residence, per night" title="What the House Rate Includes" />
             <div className="mt-6"><IncludedLists included={["Exclusive use of the house and grounds", "Staff of eight, including chef and butler", "Private safari vehicle, guide and tracker", "All meals and local drinks", "Game drives and bush walks at your own pace"]} excluded={["Flights or road transfers to Madikwe", "Madikwe conservation levy", "Spa treatments", "Premium wines and spirits", "Gratuities"]} /></div>
             <p className="mt-5 text-[13px] ledger-muted max-w-3xl">Sample lines to confirm against the Morukuru rate sheet. {M.rate.note}</p>

@@ -3,18 +3,17 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
 import CompassBand from "@/components/home/CompassBand";
-import { AdvisorForward, CountedBand, Stance, VolumeStrip } from "@/components/home/Entrance";
+import { CountedBand, VolumeStrip } from "@/components/home/Entrance";
+import { AdvisorsScroll, ForTravellers, HouseUnderStrip, PathwaysBand } from "@/components/home/Entrance2";
 import {
   FilmSection,
   HouseJournal,
-  HouseStandard,
-  HouseStory,
-  JamesNote,
+
 
   OverlandRoutes,
 
   SignatureShelf,
-  Stewards,
+
 
 } from "@/components/home/Sections";
 import { HOME } from "@/lib/content/home";
@@ -84,21 +83,21 @@ export default function Home() {
         <FilmHero {...HOME.hero} />
         {/* The entrance (house chrome): counted, the stance, six volumes, advisor-forward */}
         <CountedBand />
-        <div className="max-w-[1400px] mx-auto px-5 md:px-10"><Stance /></div>
+        <div className="max-w-[1400px] mx-auto px-5 md:px-10"><ForTravellers /></div>
         <VolumeStrip />
-        <AdvisorForward />
+        <div className="max-w-[1400px] mx-auto px-5 md:px-10">
+          <HouseUnderStrip />
+          <PathwaysBand />
+        </div>
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <HouseStory />
           <CompassBand />
-          <HouseStandard />
           <SignatureShelf />
           <OverlandRoutes />
           <FilmSection />
           <HouseJournal />
-          <JamesNote />
           <FaqBlock faqs={HOME.faqs} title="Questions, Answered" />
         </div>
-        <Stewards />
+        <AdvisorsScroll />
       </main>
       <JsonLd data={pageSchema} />
     </>

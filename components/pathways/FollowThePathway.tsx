@@ -12,7 +12,7 @@ import { altFor } from "@/lib/content/stays";
 
 export default function FollowThePathway({ primary, secondary, related, pathwayHref, id = "pathway" }: { primary: Pathway; secondary: Pathway[]; related: PathwayStay[]; pathwayHref: (p: Pathway) => string; id?: string }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56 border-t ledger-rule pt-8" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[240px] border-t ledger-rule pt-8" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <p className="ledger-eyebrow ledger-crimson">Follow the pathway</p>

@@ -109,12 +109,12 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
 
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
           {days.length > 0 && r.slug !== "tswalu-reserve" && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
-          <section id="camps" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="camps-heading">
+          <section id="camps" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="camps-heading">
             <SectionHead eyebrow={`The camps · ${r.camps.length} on the Ledger`} title={`${WORDS[r.camps.length] ?? r.camps.length} Ways to Wake Up on ${r.name}`} icon="tree-ring" intro="Same reserve, different front doors. Each lodge, camp and residence is filed on its own, with its own suites, rates and photographs. Pick by who’s coming, how private you like it, and how early you’re willing to get up for the morning drive." />
             <CampLedger reserve={r.name} camps={cards} />
           </section>
 
-          <section id="compare" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="compare-heading">
+          <section id="compare" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="compare-heading">
             <p className="ledger-eyebrow ledger-crimson">Side by side, no brochure-speak</p>
             <h2 id="compare-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Camps of {r.name}, Compared</h2>
             <div className="relative mt-6 overflow-x-auto">
@@ -149,7 +149,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
           <TalkToUs name={r.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
-          <div id="plan" className="scroll-mt-32 lg:scroll-mt-56"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
+          <div id="plan" className="scroll-mt-32 lg:scroll-mt-[240px]"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND["reserve"].who} seats={host.host.seats} />}
       </main>

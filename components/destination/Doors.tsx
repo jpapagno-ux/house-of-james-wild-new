@@ -49,7 +49,7 @@ export function DoorCard({ d }: { d: Door }) {
 export default function Doors({ id = "countries", eyebrow, title, intro, doors }: { id?: string; eyebrow: string; title: string; intro?: string; doors: Door[] }) {
   if (!doors.length) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>

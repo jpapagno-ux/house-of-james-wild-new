@@ -16,7 +16,7 @@ export default function TalkToUs({ name, planHref }: { name: string; planHref: s
     ...(SITE.email ? [{ icon: Mail, title: "Write to us", line: "Prefer it in writing? So do we, sometimes. We read every one.", label: SITE.email, href: `mailto:${SITE.email}?subject=${subject}`, event: "email_click" }] : []),
   ];
   return (
-    <section id="talk" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56 border-t ledger-rule pt-10" aria-labelledby="talk-heading">
+    <section id="talk" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[240px] border-t ledger-rule pt-10" aria-labelledby="talk-heading">
       <p className="ledger-eyebrow ledger-crimson">Talk to the house</p>
       <h2 id="talk-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Questions About {name}? Good. Ask Them Out Loud.</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">Forty-four years on the road taught James that the best trips start with a conversation, not a checkout. Pick whichever way suits you; nobody here will rush you.</p>

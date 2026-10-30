@@ -7,6 +7,7 @@ import { HubShell, HubSection } from "@/components/hub/Hub";
 import { REGIONS } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import RoutesByPlace from "@/components/journey/RoutesByPlace";
 
 // /destinations: the ten regions and their live countries, from the Ledger.
 const PATH = "/destinations";
@@ -37,6 +38,10 @@ export default function DestinationsHub() {
               </li>
             ))}
           </ul>
+        </HubSection>
+        <HubSection eyebrow="Routes and voyages" title="Where the House Has Drawn the Way" id="journeys-h">
+          <p className="-mt-2 mb-6 max-w-2xl text-[15px] ledger-muted">Every overland route and voyage James has filed, under the destination it runs through. Open the place for its stays and months, or go straight to the route.</p>
+          <RoutesByPlace />
         </HubSection>
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Destinations", mainEntity: { "@type": "ItemList", itemListElement: REGIONS.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.label, url: absoluteUrl(r.href) })) } })} />

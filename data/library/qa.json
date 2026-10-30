@@ -505,12 +505,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8da",
    "slug": "beckon-tierra-atacama",
-   "name": "Beckon Tierra Atacama",
+   "name": "Tierra Atacama",
    "country": "Chile & Easter Island",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8b3",

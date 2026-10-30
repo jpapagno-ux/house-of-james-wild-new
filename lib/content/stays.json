@@ -23981,6 +23981,88 @@
    "engine": null
   },
   {
+   "slug": "beckon-tierra-atacama",
+   "name": "Tierra Atacama",
+   "ledgerId": "STY-2026-000043",
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Luxury Adventure In The World's Driest Desert.",
+   "quote": "Where endless desert skies inspire unforgettable journeys.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-volcano",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-firepit-night",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-deck-firepit-dusk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-plunge-pool-night",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-desk-volcano",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-terrace-mountains",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/apartment-hot-tub-night",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-fireplace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-bedroom-desert",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-bedroom"
+   ],
+   "bestMonths": "March - May & September - November",
+   "bestMonthsNote": "Spring and autumn provide comfortable daytime temperatures, cool evenings and excellent visibility for photography and astronomy. These months are ideal for hiking, horseback riding, volcano excursions and exploring the Atacama's iconic salt flats and lagoons while avoiding the peak summer heat.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -22.9115,
+    "lng": -68.2018
+   },
+   "airport": "El Loa Airport (CJC) – Calama Andrés Sabella Gálvez International Airport (ANF) – Antofagasta (alternative)",
+   "airportDirections": "Recommended Arrival Airport: El Loa Airport (CJC)\nApproximately:\n100 km\nAround 1 hour 20 minutes by private transfer\nGuests are typically transferred directly from Calama through the spectacular Atacama Desert to the lodge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Oriente Rooms",
+     "Poniente Rooms",
+     "Family Rooms",
+     "Suites",
+     "Luxury Desert Retreats"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Geyser Expeditions",
+     "Salt Flat Adventures",
+     "Astronomy Experiences",
+     "Horseback Riding",
+     "Volcano Exploration",
+     "Spa & Wellness"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "All-inclusive luxury lodge",
+     "Expert-guided desert excursions",
+     "Uma Spa & wellness facilities",
+     "Outdoor swimming pools",
+     "Traditional adobe-inspired architecture",
+     "Authentic Chilean cuisine",
+     "Personalised adventure itineraries",
+     "Stargazing in one of the world's clearest night skies",
+     "Volcano and salt flat exploration",
+     "Boutique desert hospitality"
+    ]
+   },
+   "onlyHere": [
+    "Tierra Atacama offers an immersive luxury experience at the heart of Chile's remarkable Atacama Desert. Blending contemporary comfort with traditional desert architecture, the lodge invites guests to explore lunar landscapes, geothermal wonders, vibrant lagoons and ancient cultural sites while returning each evening to exceptional cuisine, peaceful wellness spaces and warm Chilean hospitality. Every stay celebrates adventure without compromising comfort."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "tierra-patagonia",
    "name": "Tierra Patagonia",
    "ledgerId": "STY-2026-000307",

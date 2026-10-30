@@ -23,10 +23,12 @@ import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
+import GatewayNight from "@/components/stays/GatewayNight";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
+import LIB_CHARTS from "@/lib/charts/countries.json";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
@@ -50,7 +52,7 @@ export function generateStaticParams() {
   return [...COUNTRIES.map((c) => ({ region: c.region, country: c.slug })), ...Object.values(GUIDES).filter((g) => !g.parent && !COUNTRIES.some((c) => c.slug === g.slug)).map((g) => ({ region: g.region, country: g.slug }))];
 }
 
-const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA };
+const CHARTS: Record<string, ChartData> = { ...(LIB_CHARTS as unknown as Record<string, ChartData>), "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA };
 const FIRST = ["leeu", "ellerman", "monwana", "lion sands", "kirkman", "tswalu", "morukuru", "aguas claras", "pacuare", "lapa rios", "nayara"];
 const rank = (n: string) => { const i = FIRST.findIndex((k) => n.toLowerCase().includes(k)); return i === -1 ? 99 : i; };
 
@@ -86,12 +88,14 @@ export default async function CountryPage({ params }: { params: Promise<{ region
     const q = projectOn(chart, r.stay.coords!.lat, r.stay.coords!.lng);
     items.push({ id: `reserve-${r.slug}`, category: "reserve", name: r.name, kind: `${r.camps.length} camps & residences`, href: `/safaris/${r.slug}`, x: q.x, y: q.y, area: r.area, bestMonths: r.stay.bestMonths ?? undefined });
   }
+  // A pin off the chart (offshore or a mis-coded record) is left off the map, not drawn at the edge.
+  for (let i = items.length - 1; i >= 0; i--) { const { x, y } = items[i]; if (x == null || y == null || x < 0 || y < 0 || x > chart.width || y > chart.height) items.splice(i, 1); }
   const tally = (k: MapItem["category"]) => items.filter((i) => i.category === k).length;
   const slides: Slide[] = [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }, ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
-  const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID. ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}. Fly into ${c.airports.map((a) => a[0]).join(" or ")}.${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
   return (
     <>
       <SiteHeader overlay />
@@ -179,6 +183,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <Postcard p={c.postcard} sample />
             </section>
           )}
+
+          <GatewayNight country={p.country} className="mt-16 md:mt-24" />
 
           <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>

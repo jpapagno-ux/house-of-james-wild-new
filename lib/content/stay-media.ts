@@ -39,3 +39,9 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
   ...Object.fromEntries(Object.entries(photos.stays as Record<string, { frames: FullFrame[] }>).filter(([, v]) => v.frames.length).map(([k, v]) => [k, v.frames])),
   ...HAND,
 };
+
+// Who owns each stay's photographs (stay-photos.json "credit"). Printed under the
+// full frames and written into every image's structured data.
+export const PHOTO_CREDIT: Record<string, string> = Object.fromEntries(
+  Object.entries(photos.stays as Record<string, { credit?: string }>).filter(([, v]) => v.credit).map(([k, v]) => [k, v.credit as string]),
+);

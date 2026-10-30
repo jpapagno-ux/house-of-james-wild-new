@@ -8,9 +8,11 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import FullFrame from "@/components/record/FullFrame";
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import ImageAccordion from "@/components/record/ImageAccordion";
 import { momentsFor, rowsFrom } from "@/lib/content/stay-moments";
-import { FULL_FRAME } from "@/lib/content/stay-media";
+import { FULL_FRAME, PHOTO_CREDIT } from "@/lib/content/stay-media";
 import { PRICED } from "@/lib/content/priced-stays";
 import Inclusions from "@/components/booking/Inclusions";
 import BookingPanel from "@/components/booking/BookingPanel";
@@ -33,10 +35,12 @@ import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
-import { BEST_FOR, STAY_PAGES, staysIn, stayBySlug, pageReady } from "@/lib/content/stays";
+import { BEST_FOR, STAY_PAGES, staysIn, stayBySlug, pageReady, altFor } from "@/lib/content/stays";
 import { regionBySlug } from "@/lib/content/regions";
 import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
+import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
+import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
@@ -45,8 +49,12 @@ import { collectionForStay, offerForStay } from "@/lib/content/collections/cayug
 import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
+import { RESERVES } from "@/lib/content/reserves";
+import GatewayNight from "@/components/stays/GatewayNight";
+import EuropePlate from "@/components/stays/EuropePlate";
+import { EUROPE_PLATES } from "@/lib/content/europe-plates";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
-import { graph, ids, lodging } from "@/lib/schema";
+import { graph, ids, imageObject, lodging } from "@/lib/schema";
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
 // breadcrumbs › overview (quote, in short, facts, the full entry) › gallery ›
@@ -80,12 +88,14 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const countryPath = region && s.countrySlug ? `/destinations/${region.slug}/${s.countrySlug}` : null;
   const status = statusLine(s.status as HouseStatus, s.statusDate);
   const stamp = stampForStatus(s.status as HouseStatus);
-  const kind = (s.category && KIND[s.category]) || "stay";
+  // The library files many safari camps as "hotel"; the name is the better witness.
+  const named = /\b(camp|lodge|villa|resort|residence|house|island)\b/i.exec(s.name)?.[1]?.toLowerCase();
+  const kind = (s.category === "hotel" && named ? (named === "villa" ? "private villa" : named === "island" ? "private island" : named) : null) ?? ((s.category && KIND[s.category]) || "stay");
   const bestFor = s.bestFor.map((b) => BEST_FOR[b] ?? b).slice(0, 4);
   const suited = suitedTo([s.tagline, s.quote, ...s.why.map((w) => `${w.title ?? ""} ${w.body}`), ...s.onlyHere, ...s.rooms.items, ...s.rooms.paras, ...s.experiences.items, ...s.experiences.paras, ...s.features.items, ...s.features.paras].filter(Boolean).join(" "), s.bestFor);
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
   const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
-  const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: `${s.name}${i ? `, photograph ${i + 1}` : ""}${s.country ? `, ${s.country}` : ""}` }));
+  const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: altFor(u as string, s.name, s.country, i) }));
   const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
@@ -114,12 +124,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["Included", "included"], ["Rooms & rates", "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
+  // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <>
+    <div className={s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
-          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
+          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -127,7 +138,9 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <StayActions slug={s.slug} name={s.name} />
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
-          {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} className="mt-10 max-w-3xl" />}
+          {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
+          {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
+          <OfferPanel offers={offersFor(s.slug)} volume="stays" title={`Offers at ${s.name}`} />
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
@@ -141,9 +154,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </>}
           {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
+          {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
           {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
-          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} />}
+          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
@@ -151,6 +165,19 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
             </section>
           )}
+          {(() => {
+            // A reserve with its own page (camps, residences, compare table) gets pointed to from here.
+            const rv = RESERVES.find((r) => r.slug === s.slug || r.camps.some((c) => c.stayHref === `/stays/${s.slug}`));
+            if (!rv) return null;
+            const own = rv.slug === s.slug;
+            return (
+              <section aria-label="The reserve" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div><p className="ledger-eyebrow ledger-crimson">{own ? "The camps" : "On the reserve"}</p><p className="ledger-display text-[1.5rem] mt-1">{own ? `${rv.name} has ${rv.camps.length} ways to stay` : `${s.name} is one of ${rv.camps.length} lodges on ${rv.name}`}</p><p className="mt-1 text-[15px] ledger-muted">{rv.camps.map((c) => c.name).join(", ")}. Compare them side by side, with who each one suits.</p></div>
+                <Link href={`/safaris/${rv.slug}`} className="ledger-btn self-start md:self-center">{own ? "See the camps" : `See ${rv.name}`}</Link>
+              </section>
+            );
+          })()}
+          <GatewayNight country={s.countrySlug} exclude={s.slug} />
           {routesThrough(s.slug).length > 0 && (
             <section aria-label="On these routes" className="mt-16">
               <p className="ledger-eyebrow ledger-crimson">On these routes</p>
@@ -175,7 +202,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
             </section>
           )}
-          {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} />}
+          {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={s.name} planHref={planHref} />
           {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           <PlanBand place={s.name} compassHref="/compass" />
@@ -186,7 +213,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <ContactPill name={s.name} planHref={planHref} />
       {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: video.title, description: `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25" }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
-      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => i.url.startsWith("/") ? absoluteUrl(i.url) : i.url), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
-    </>
+      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
+    </div>
   );
 }

@@ -1,5 +1,5 @@
 {
- "_note": "Hand-picked hero slides (place and people first, rooms left to the rooms section) and captioned full-frame photographs per stay. Edit here; the photo ledger (data/photo-ledger.csv) tracks what each stay still needs.",
+ "_note": "Hand-picked hero slides (place and people first, rooms left to the rooms section) and captioned full-frame photographs per stay. Edit here; the photo ledger (data/photo-ledger.csv) tracks what each stay still needs. 'credit' (optional) names who owns a stay's photos: it prints as 'Photographs courtesy of …' under the full frames and goes into each image's structured data (creditText, copyrightNotice).",
  "stays": {
   "monwana-thornybush": {
    "hero": [
@@ -1335,6 +1335,1082 @@
      "caption": "Fireside in the lounge"
     }
    ]
+  },
+  "tengile-mala-mala-kirkmans-kamp": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-elephant-bull",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp, Sabi Sand, South Africa: elephant bull"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-elephants-drive",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp, Sabi Sand, South Africa: elephants drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-homestead",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp, Sabi Sand, South Africa: homestead"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-lion-yawn",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp, Sabi Sand, South Africa: lion yawn"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-sand-river",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp, Sabi Sand, South Africa: sand river"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-cottage-bathroom",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp: cottage bathroom",
+     "caption": "Cottage bathroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-cottage-bedroom",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp: cottage bedroom",
+     "caption": "Cottage bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-platter",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp: platter",
+     "caption": "Platter"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/kirkmans-kamp/kirkmans-kamp-sitting-room",
+     "alt": "Tengile Mala Mala \n Kirkman's Kamp: sitting room",
+     "caption": "Sitting room"
+    }
+   ]
+  },
+  "tengile-mala-mala-camp": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-deck-dusk",
+     "alt": "Tengile MalaMala Camp, Sabi Sand, South Africa: deck dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-elephant-herd",
+     "alt": "Tengile MalaMala Camp, Sabi Sand, South Africa: elephant herd"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-game-drive",
+     "alt": "Tengile MalaMala Camp, Sabi Sand, South Africa: game drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-sand-river-dusk",
+     "alt": "Tengile MalaMala Camp, Sabi Sand, South Africa: sand river dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-suite-bath",
+     "alt": "Tengile MalaMala Camp, Sabi Sand, South Africa: suite bath"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-suite-bath",
+     "alt": "Tengile MalaMala Camp: suite bath",
+     "caption": "Suite bath"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-suite-bedroom",
+     "alt": "Tengile MalaMala Camp: suite bedroom",
+     "caption": "Suite bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-thatched-suite",
+     "alt": "Tengile MalaMala Camp: thatched suite",
+     "caption": "Thatched suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/malamala-camp/malamala-camp-elephant-herd",
+     "alt": "Tengile MalaMala Camp: elephant herd",
+     "caption": "Elephant herd"
+    }
+   ]
+  },
+  "tengile-mala-mala-rattrays-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-leopard",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge, Sabi Sand, South Africa: leopard"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-lion",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge, Sabi Sand, South Africa: lion"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-pool",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge, Sabi Sand, South Africa: pool"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-villa-deck",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge, Sabi Sand, South Africa: villa deck"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-lounge",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge, Sabi Sand, South Africa: lounge"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-lounge",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge: lounge",
+     "caption": "Lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-lion",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge: lion",
+     "caption": "Lion"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-pool",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge: pool",
+     "caption": "Pool"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/rattrays-lodge/rattrays-lodge-villa-deck",
+     "alt": "Tengile Mala Mala \n Rattray's Lodge: villa deck",
+     "caption": "Villa deck"
+    }
+   ]
+  },
+  "tengile-mala-mala-sable-camp": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-impala",
+     "alt": "Tengile Mala Mala \n Sable Camp, Sabi Sand, South Africa: impala"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-rondawel",
+     "alt": "Tengile Mala Mala \n Sable Camp, Sabi Sand, South Africa: rondawel"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-sunset",
+     "alt": "Tengile Mala Mala \n Sable Camp, Sabi Sand, South Africa: sunset"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-vehicle",
+     "alt": "Tengile Mala Mala \n Sable Camp, Sabi Sand, South Africa: vehicle"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-suite",
+     "alt": "Tengile Mala Mala \n Sable Camp, Sabi Sand, South Africa: suite"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-suite",
+     "alt": "Tengile Mala Mala \n Sable Camp: suite",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-suite-bath",
+     "alt": "Tengile Mala Mala \n Sable Camp: suite bath",
+     "caption": "Suite bath"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-suite-bedroom",
+     "alt": "Tengile Mala Mala \n Sable Camp: suite bedroom",
+     "caption": "Suite bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/sable-camp/sable-camp-rondawel",
+     "alt": "Tengile Mala Mala \n Sable Camp: rondawel",
+     "caption": "Rondawel"
+    }
+   ]
+  },
+  "tengile-river-lodge-by-mala-mala": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-elephant-drive",
+     "alt": "Tengile River Lodge by Mala Mala, Sabi Sand, South Africa: elephant drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-lionesses",
+     "alt": "Tengile River Lodge by Mala Mala, Sabi Sand, South Africa: lionesses"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-lodge-dusk",
+     "alt": "Tengile River Lodge by Mala Mala, Sabi Sand, South Africa: lodge dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-pool",
+     "alt": "Tengile River Lodge by Mala Mala, Sabi Sand, South Africa: pool"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-sundowners",
+     "alt": "Tengile River Lodge by Mala Mala, Sabi Sand, South Africa: sundowners"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-lounge",
+     "alt": "Tengile River Lodge by Mala Mala: lounge",
+     "caption": "Lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-suite-bath",
+     "alt": "Tengile River Lodge by Mala Mala: suite bath",
+     "caption": "Suite bath"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-suite-deck",
+     "alt": "Tengile River Lodge by Mala Mala: suite deck",
+     "caption": "Suite deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-river-lodge/tengile-river-lodge-lionesses",
+     "alt": "Tengile River Lodge by Mala Mala: lionesses",
+     "caption": "Lionesses"
+    }
+   ]
+  },
+  "dulini-moya-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-river-deck",
+     "alt": "Dulini Moya Lodge, Sabi Sand, South Africa: river deck"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-breakfast-deck",
+     "alt": "Dulini Moya Lodge, Sabi Sand, South Africa: breakfast deck"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-riverbed-table",
+     "alt": "Dulini Moya Lodge, Sabi Sand, South Africa: riverbed table"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-boma",
+     "alt": "Dulini Moya Lodge, Sabi Sand, South Africa: boma"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-game-drive",
+     "alt": "Dulini Moya Lodge, Sabi Sand, South Africa: game drive"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-suite-bath",
+     "alt": "Dulini Moya Lodge: suite bath",
+     "caption": "Suite bath"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-suite-bedroom",
+     "alt": "Dulini Moya Lodge: suite bedroom",
+     "caption": "Suite bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-suite-four-poster",
+     "alt": "Dulini Moya Lodge: suite four poster",
+     "caption": "Suite four poster"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-moya/dulini-moya-winter-lounge",
+     "alt": "Dulini Moya Lodge: winter lounge",
+     "caption": "Winter lounge"
+    }
+   ]
+  },
+  "dulini-river-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-river-aerial",
+     "alt": "Dulini River Lodge, Sabi Sand, South Africa: river aerial"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-sand-river",
+     "alt": "Dulini River Lodge, Sabi Sand, South Africa: sand river"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-terrace",
+     "alt": "Dulini River Lodge, Sabi Sand, South Africa: terrace"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-boma",
+     "alt": "Dulini River Lodge, Sabi Sand, South Africa: boma"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-deck-dinner",
+     "alt": "Dulini River Lodge, Sabi Sand, South Africa: deck dinner"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-bathroom",
+     "alt": "Dulini River Lodge: bathroom",
+     "caption": "Bathroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-fireplace",
+     "alt": "Dulini River Lodge: fireplace",
+     "caption": "Fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-lounge",
+     "alt": "Dulini River Lodge: lounge",
+     "caption": "Lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-river/dulini-river-outdoor-dining",
+     "alt": "Dulini River Lodge: outdoor dining",
+     "caption": "Outdoor dining"
+    }
+   ]
+  },
+  "dulini-leadwood-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-pool-deck",
+     "alt": "Dulini Leadwood Lodge, Sabi Sand, South Africa: pool deck"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-boma",
+     "alt": "Dulini Leadwood Lodge, Sabi Sand, South Africa: boma"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-leopards",
+     "alt": "Dulini Leadwood Lodge, Sabi Sand, South Africa: leopards"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-sand-river-sunset",
+     "alt": "Dulini Leadwood Lodge, Sabi Sand, South Africa: sand river sunset"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-river-walk",
+     "alt": "Dulini Leadwood Lodge, Sabi Sand, South Africa: river walk"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-suite",
+     "alt": "Dulini Leadwood Lodge: suite",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-bathroom",
+     "alt": "Dulini Leadwood Lodge: bathroom",
+     "caption": "Bathroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-bedroom",
+     "alt": "Dulini Leadwood Lodge: bedroom",
+     "caption": "Bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/dulini-leadwood/dulini-leadwood-dining-deck",
+     "alt": "Dulini Leadwood Lodge: dining deck",
+     "caption": "Dining deck"
+    }
+   ]
+  },
+  "madikwe": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/white-rhino-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve, Madikwe, South Africa: white rhino game drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/family-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve, Madikwe, South Africa: family game drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/african-wild-dogs-madikwe",
+     "alt": "Madikwe Game Reserve, Madikwe, South Africa: african wild dogs"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/elephant-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve, Madikwe, South Africa: elephant game drive"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/male-lion-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve, Madikwe, South Africa: male lion game drive"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/family-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve: family game drive",
+     "caption": "Family game drive"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/african-wild-dogs-madikwe",
+     "alt": "Madikwe Game Reserve: african wild dogs",
+     "caption": "African wild dogs"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/elephant-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve: elephant game drive",
+     "caption": "Elephant game drive"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/madikwe-wildlife/male-lion-game-drive-madikwe",
+     "alt": "Madikwe Game Reserve: male lion game drive",
+     "caption": "Male lion game drive"
+    }
+   ]
+  },
+  "beckon-longitude-131": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-top-aerial",
+     "alt": "Longitude 131°: Dune Top from the air, in the red dunes of the Red Centre"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace",
+     "alt": "Longitude 131°, Uluru: tented suite opening to a terrace that faces Uluru"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-deck",
+     "alt": "Longitude 131°, Uluru: the Dune Pavilion's private deck above the red dunes"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-exterior",
+     "alt": "Longitude 131°, Uluru: the Dune Pavilion set into the desert"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-feature",
+     "alt": "Longitude 131°: view across the bed to a deck overlooking Uluru",
+     "caption": "Across the bed to the deck and Uluru"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-view",
+     "alt": "Longitude 131°: tent deck with a daybed facing Uluru at dusk",
+     "caption": "Uluru at dusk, from the deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-interior",
+     "alt": "Longitude 131°: bedroom looking past the deck to desert scrub and Uluru",
+     "caption": "Uluru from the bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-bedroom",
+     "alt": "Longitude 131°: tented suite with draped fabric ceiling, king bed and leather armchairs",
+     "caption": "Under the draped canvas"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bedroom",
+     "alt": "Longitude 131°: bedroom in the Dune Pavilion",
+     "caption": "The Dune Pavilion bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bathroom",
+     "alt": "Longitude 131°: bathroom in the Dune Pavilion",
+     "caption": "The Dune Pavilion bathroom"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-silky-oaks-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/billabong-deck-firepit",
+     "alt": "Silky Oaks Lodge, Daintree: deck with a curved sofa and fire pit facing the rainforest at dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-deck",
+     "alt": "Silky Oaks Lodge, Daintree: Daintree Pavilion deck at dusk with plunge pool and daybed"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-premium-tub",
+     "alt": "Silky Oaks Lodge, Daintree: dark stone soaking tub on a balcony among rainforest trees"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-lounge",
+     "alt": "Silky Oaks Lodge, Daintree: lounge with timber ceilings and floor-to-ceiling rainforest views"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-retreat-tub",
+     "alt": "Silky Oaks Lodge: oval stone bathtub on a timber deck in tropical rainforest",
+     "caption": "A bath in the canopy"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/riverhouse-hammock",
+     "alt": "Silky Oaks Lodge: woven hammock on a balcony overlooking dense green forest",
+     "caption": "The Riverhouse hammock"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/billabong-hammock-deck",
+     "alt": "Silky Oaks Lodge: timber deck with a hammock, lounge seating and fire pit above the rainforest",
+     "caption": "Billabong Suite deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-premium-deck",
+     "alt": "Silky Oaks Lodge: deck with seating and a hammock looking into the rainforest",
+     "caption": "Treehouse Premium deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/rainforest-retreat-bedroom",
+     "alt": "Silky Oaks Lodge: bedroom with timber floors and a balcony hammock over green forest",
+     "caption": "Rainforest Retreat"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/riverhouse-tub",
+     "alt": "Silky Oaks Lodge: outdoor deck with a round soaking tub and rainforest views",
+     "caption": "The Riverhouse tub"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-bedroom",
+     "alt": "Silky Oaks Lodge: Daintree Pavilion bedroom with floor-to-ceiling rainforest views",
+     "caption": "Daintree Pavilion bedroom"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-southern-ocean-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-clifftop",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: cliff-top suite with deck and pool above the ocean at sunset"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/osprey-terrace-pool",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: terrace with loungers and a round plunge pool facing the coast"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-lounge",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: lounge with a curved sofa and terrace plunge pool facing the Southern Ocean"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-sunken-lounge",
+     "alt": "Southern Ocean Lodge, Kangaroo Island: sunken lounge with stone fireplace and floor-to-ceiling coastal views"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-east-deck-pool",
+     "alt": "Southern Ocean Lodge: deck with loungers and plunge pool looking along the coast",
+     "caption": "Pool deck above the coast"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-lounge-terrace",
+     "alt": "Southern Ocean Lodge: lounge and terrace over coastal shrubland and the ocean",
+     "caption": "Flinders Suite terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-lounge",
+     "alt": "Southern Ocean Lodge: lounge with a suspended fireplace and windows over the ocean",
+     "caption": "Fire and ocean"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/baillie-pavilion-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with glass doors overlooking coastal cliffs and the sea",
+     "caption": "Waking to the cliffs"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with stone fireplace and glass walls facing the ocean",
+     "caption": "Flinders Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/remarkable-bathroom",
+     "alt": "Southern Ocean Lodge: bathroom with soaking tub and double vanity overlooking the ocean",
+     "caption": "A bath with a sea view"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/osprey-bedroom",
+     "alt": "Southern Ocean Lodge: bedroom with floor-to-ceiling windows over the coastal landscape",
+     "caption": "Osprey Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/southern-ocean-lodge/flinders-tub",
+     "alt": "Southern Ocean Lodge: bathtub filling beside a teapot on a wooden stool",
+     "caption": "Tea and a bath"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-huka-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-river-twilight",
+     "alt": "Huka Lodge, Taupō: the Alex van Heeren Cottage lit up beside the turquoise Waikato River at twilight"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-river",
+     "alt": "Huka Lodge, Taupō: the Alan Pye Cottage reflected in the clear river, forest behind"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-pool-deck",
+     "alt": "Huka Lodge, Taupō: deck with loungers, infinity pool and lawn running down to the river"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-breakfast-deck",
+     "alt": "Huka Lodge, Taupō: breakfast table on a timber deck above the river"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-pool-morning",
+     "alt": "Huka Lodge: pool and deck over the river and forest in morning light",
+     "caption": "Morning on the pool deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-fireplace-deck",
+     "alt": "Huka Lodge: deck with a square pool and stone fireplace in a garden of tall trees",
+     "caption": "Outdoor fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-bedroom",
+     "alt": "Huka Lodge: canopy bed and daybed facing a river and forest view",
+     "caption": "Lodge Suite with Fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/fireplace-suite-living",
+     "alt": "Huka Lodge: living area with a glass fireplace and river views through open doors",
+     "caption": "Fire on, river beyond"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-daybed",
+     "alt": "Huka Lodge: green daybed facing glass doors onto the river and garden",
+     "caption": "A daybed by the river"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/lodge-suite-bath-ferns",
+     "alt": "Huka Lodge: bathtub under an open shuttered window full of tree ferns",
+     "caption": "Bath among the ferns"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/van-heeren-cottage-living",
+     "alt": "Huka Lodge: vaulted living and dining room with a fireplace and pool views",
+     "caption": "Alex van Heeren Cottage"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/new-zealand/huka-lodge/alan-pye-cottage-lounge",
+     "alt": "Huka Lodge: lounge with a vaulted ceiling, tiered chandelier and fireplace",
+     "caption": "Alan Pye Cottage"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-the-louise": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-bedroom-vineyard",
+     "alt": "The Louise, Barossa Valley: Stonewell Suite bedroom window looking out over green fields and vineyards"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-desk-vineyard",
+     "alt": "The Louise, Barossa Valley: desk by a glass door opening onto a patio and the vineyard"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-fireplace",
+     "alt": "The Louise, Barossa Valley: Marananga Suite with a lit fireplace and white shutters"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-terrace-sunset",
+     "alt": "The Louise: chairs and a glass of wine on a terrace above the vineyard at sunset",
+     "caption": "Sunset on the terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-terrace-sunset",
+     "alt": "The Louise: terrace with wine and food overlooking the vineyard at sunset",
+     "caption": "Wine, food, the vines"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-courtyard",
+     "alt": "The Louise: private stone courtyard with green metal chairs under timber pergola beams",
+     "caption": "Stonewell courtyard"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/bethany-bedroom",
+     "alt": "The Louise: Bethany Suite bed with white linen, blue pillows and pendant lights",
+     "caption": "Bethany Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/marananga-ensuite",
+     "alt": "The Louise: ensuite with double vanity, walk-in shower and bathtub",
+     "caption": "Marananga ensuite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/the-louise/stonewell-lounge",
+     "alt": "The Louise: desk area looking through to a lounge with a daybed",
+     "caption": "Stonewell Suite lounge"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "clayoquot-wilderness-resort": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/firepit-twilight",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: circular fire pit on a timber deck above a calm inlet at twilight"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tents-on-the-shoreline",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: canvas tents on timber decks along a forested shoreline"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-forest",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: white canvas tent on a deck in dense evergreen forest"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/healing-grounds-spa",
+     "alt": "Clayoquot Wilderness Lodge, Vancouver Island: canvas spa tent on a timber deck in lush forest"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/dining-tents-boardwalk",
+     "alt": "Clayoquot Wilderness Lodge: canvas dining tents around a fire pit on a timber boardwalk at twilight",
+     "caption": "Dinner by the fire"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/ivanhoe-bar-night",
+     "alt": "Clayoquot Wilderness Lodge: bar with timber ceiling, velvet chairs and floor-to-ceiling windows on the water",
+     "caption": "The bar after dark"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tent-lounge-stove",
+     "alt": "Clayoquot Wilderness Lodge: canvas tent lounge with a wood-burning stove and a deck over the forest",
+     "caption": "A wood stove in the tent"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bedroom",
+     "alt": "Clayoquot Wilderness Lodge: tented bedroom with a timber bed, desk and draped canvas walls",
+     "caption": "Under canvas"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bathroom",
+     "alt": "Clayoquot Wilderness Lodge: timber-panelled bathroom with a clawfoot tub and double vanity",
+     "caption": "Clawfoot bath"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-tierra-atacama": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-volcano",
+     "alt": "Tierra Atacama, San Pedro de Atacama: suite terrace with two chairs looking across the desert to snow-capped volcanoes"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-terrace-firepit-night",
+     "alt": "Tierra Atacama, San Pedro de Atacama: suite terrace at night with a fire pit and lounge seating"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-deck-firepit-dusk",
+     "alt": "Tierra Atacama, San Pedro de Atacama: timber deck with loungers and a fire pit at dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-plunge-pool-night",
+     "alt": "Tierra Atacama, San Pedro de Atacama: private plunge pool outside a glass-walled suite at night"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-desk-volcano",
+     "alt": "Tierra Atacama: Poniente Room desk facing a big window and a distant volcano",
+     "caption": "A volcano from the desk"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-terrace-mountains",
+     "alt": "Tierra Atacama: string-back chairs on a terrace with mountain views",
+     "caption": "Oriente terrace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/apartment-hot-tub-night",
+     "alt": "Tierra Atacama: stone patio with a hot tub and loungers outside lit bedrooms at night",
+     "caption": "The Apartment, after dark"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-fireplace",
+     "alt": "Tierra Atacama: suite with a floating fireplace and glass doors to the terrace",
+     "caption": "A hanging fireplace"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/suite-bedroom",
+     "alt": "Tierra Atacama: timber-panelled suite with a four-poster bed and hanging fireplace",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-bedroom-desert",
+     "alt": "Tierra Atacama: timber-panelled bedroom with a chaise and a window onto the desert",
+     "caption": "Poniente Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/oriente-bedroom",
+     "alt": "Tierra Atacama: four-poster bed in a warm timber-panelled room",
+     "caption": "Oriente Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-atacama/poniente-bathroom",
+     "alt": "Tierra Atacama: bathroom with twin vessel sinks on a stone vanity",
+     "caption": "Stone and timber"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "tierra-patagonia": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-aerial",
+     "alt": "Tierra Patagonia from the air, on the edge of Torres del Paine National Park, Chilean Patagonia"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-window-hills",
+     "alt": "Tierra Patagonia, Torres del Paine: timber-panelled room with a big window framing rolling hills"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-with-a-view",
+     "alt": "Tierra Patagonia, Torres del Paine: a guest room with a view out over the Patagonian landscape"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-lounge",
+     "alt": "Tierra Patagonia: the lodge's lounge",
+     "caption": "The lodge lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/superior-armchair-hills",
+     "alt": "Tierra Patagonia: armchair and paper lamp by a window onto grassy hills",
+     "caption": "Superior Room"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-chaise",
+     "alt": "Tierra Patagonia: mustard chaise, landscape painting and floor lamp in a suite lounge",
+     "caption": "Suite lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bedroom-stair",
+     "alt": "Tierra Patagonia: bedroom in pale timber with a built-in staircase",
+     "caption": "Suite"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bathtub",
+     "alt": "Tierra Patagonia: freestanding white tub in a timber-panelled bathroom",
+     "caption": "A bath in lenga wood"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/bathroom-tree-mural",
+     "alt": "Tierra Patagonia: timber bathroom with a vessel sink, tub and a tree mural on the shower glass",
+     "caption": "Tree on the glass"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "beckon-capella-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/capella-lodge-original",
+     "alt": "Capella Lodge, Lord Howe Island"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/infinity-pool-view",
+     "alt": "Capella Lodge, Lord Howe Island: a guest in the infinity pool looking out over the coast, mountains and sea"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-plunge-pool",
+     "alt": "Capella Lodge, Lord Howe Island: plunge pool and daybed among palms below a misty mountain"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-balcony-bay",
+     "alt": "Capella Lodge, Lord Howe Island: daybed and chairs on a balcony above the bay and mountain cliffs"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-deck-pool",
+     "alt": "Capella Lodge: timber deck with loungers and a plunge pool in lush planting",
+     "caption": "Lidgbird Pavilion deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-bedroom-view",
+     "alt": "Capella Lodge: Catalina Suite bedroom opening to a balcony with palms and mountain views",
+     "caption": "Palms and peaks from bed"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/makambo-plunge-pool-peak",
+     "alt": "Capella Lodge: deck with a plunge pool facing a misty mountain peak",
+     "caption": "Makambo Loft plunge pool"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-lounge",
+     "alt": "Capella Lodge: lounge with a blue daybed, white panelling and an inset fireplace",
+     "caption": "Catalina Suite lounge"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/makambo-loft-stair",
+     "alt": "Capella Lodge: loft with a red spiral staircase, blue daybed and glass doors to the deck",
+     "caption": "Makambo Loft"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lagoon-loft-bedroom",
+     "alt": "Capella Lodge: bedroom with sliding doors onto a balcony among palms",
+     "caption": "Lagoon Loft"
+    }
+   ],
+   "credit": "Beckons"
+  },
+  "castle-leslie": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eec19dde3_da1e04ac4_697a1381f7ac415cea3407e4_castle-leslie-exterior.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f0b774ea1_54ba8234d_697a1c3f76355567108de78d_Interiors-Billiards-Room.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2415b19c0_cc8a8eba8_697a1c3f01f7c9ebf3711b63_Interiors-Castle-Blue-Room.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/39693aeea_76652706d_697a1c3fc2934ec5af62edec_Interiors-The-Gallery.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cd6367462_3ebe04533_697a1d99fb449c241c9bd79c_Lodge-Interior-Oriel-Room-2.jpg",
+     "alt": "Castle Leslie Estate, Ireland: photograph 5"
+    }
+   ],
+   "frames": []
+  },
+  "da-licenca": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326052/jwco/stays/europe/da-licenca/hero.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the estate among the olive hills"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326054/jwco/stays/europe/da-licenca/grounds.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the grounds and olive groves"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326056/jwco/stays/europe/da-licenca/main-house.jpg",
+     "alt": "Dá Licença, Portugal + Azores: the main house"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326058/jwco/stays/europe/da-licenca/suite-the-rock.jpg",
+     "alt": "Dá Licença, Portugal + Azores: The Rock suite"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793326060/jwco/stays/europe/da-licenca/suite-the-loft.jpg",
+     "alt": "Dá Licença, Portugal + Azores: The Loft suite"
+    }
+   ],
+   "frames": []
+  },
+  "no-1-pery-square-limerick": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/273c7e083_b2adb12ae_6a861bab8e6e6f724b7bf2c8_No1_20Pery_20Square_2C_20Limerick_20Hero.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e6cb1426b_73a9d4695_6a888b1d98b4e4f05a928705_boutique-hotel-bedroom.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c11d4cb3c_4b3eecb14_6a888b1c629711634136205d_restaurant-fireplace-seating.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b047c2c4f_7ec0b20d5_6a888b1ca7bbd36e64443ec0_hotel-lounge-fireplace.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 4"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fcf8b84ef_c5fcd8d64_6a888b1ccae5522ea3d99607_cozy-hotel-room-window-view.jpg",
+     "alt": "No.1 Pery Square Limerick, Ireland: photograph 5"
+    }
+   ],
+   "frames": []
+  },
+  "nomade-temple-ibiza": {
+   "hero": [
+    {
+     "url": "/img/b44/7668718db_6da275278_68d6c58b645d7452a041cfb8_NomadeTempleIbiza_Exterior.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 1"
+    },
+    {
+     "url": "/img/b44/ad7e89430_3f1be1545_68d6c64abffa39837e63f9b6_NomadeTempleIbiza_Bedroom.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 2"
+    },
+    {
+     "url": "/img/b44/1e56dea28_f6870a389_68d6c64aea4a43401d05da4c_NomadeTempleIbiza_Restaurant.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 3"
+    },
+    {
+     "url": "/img/b44/edb6e23e8_5014f10ed_68d6c64a118b523779c47bef_NomadeTempleIbiza_Pool.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 4"
+    },
+    {
+     "url": "/img/b44/1ac7b72d0_13adad826_68d6c64a1a79009ab0018fff_NomadeTempleIbiza_Nightclub.avif",
+     "alt": "Nomade Temple Ibiza, Spain-Ibiza: photograph 5"
+    }
+   ],
+   "frames": []
+  },
+  "nomade-temple-madrid": {
+   "hero": [
+    {
+     "url": "/img/b44/6cec91735_ba97c79ff_68d6cc77e9f7fda9df6270d5_NomadeTempleMadrid_Pool.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 1"
+    },
+    {
+     "url": "/img/b44/49441e4b8_771e8ed53_68d6cc77e9f7fda9df6270d5_NomadeTempleMadrid_Pool.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 2"
+    },
+    {
+     "url": "/img/b44/72eee59e8_ef42ff6c1_68d6cc8d6b4754cbc4c7bf5c_NomadeTempleMadrid_Reception.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 3"
+    },
+    {
+     "url": "/img/b44/3abe00203_d79087486_68d6cc994e7509ca7b69b968_NomadeTempleMadrid_Sauna.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 4"
+    },
+    {
+     "url": "/img/b44/40644b895_be368c309_68d6cc7c938063545854ab99_NomadeTempleMadrid_Exterior.avif",
+     "alt": "Nomade Temple Madrid Coming 2025, Spain: photograph 5"
+    }
+   ],
+   "frames": []
+  },
+  "six-senses-ibiza": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f7940da98_gallery_urls-b1ca0a85.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 1"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6e4bfea66_gallery_urls-9a0745da.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 2"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34dc6a510_gallery_urls-0eeb78e5.webp",
+     "alt": "Six Senses Ibiza, Spain-Ibiza: photograph 3"
+    }
+   ],
+   "frames": []
+  },
+  "wren-urban-nest": {
+   "hero": [
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6376dde22_a1801fc82_6a87259a7764e2d659011280_Wren_20Urban_20Nest_20Hero.jpg",
+     "alt": "Wren Urban Nest, Ireland: photograph 1"
+    },
+    {
+     "url": "/img/b44/a3a2c108a_d52366031_6a889ef4f555fbb7db8a1df1_boho-hotel-lobby-bar-interior.avif",
+     "alt": "Wren Urban Nest, Ireland: photograph 2"
+    },
+    {
+     "url": "/img/b44/b08522c4c_0215b1129_6a889ef8823582dc578e6a96_hotel-lounge-coffee-table.avif",
+     "alt": "Wren Urban Nest, Ireland: photograph 3"
+    },
+    {
+     "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/005c1e951_0a0ba7fad_6a889ef78ef96caef3879c89_hotel-lobby-checkin-lounge.webp",
+     "alt": "Wren Urban Nest, Ireland: photograph 4"
+    }
+   ],
+   "frames": []
   }
  }
 }

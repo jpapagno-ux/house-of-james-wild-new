@@ -34,12 +34,17 @@ export function fitDescription(d: string): string {
   return dot > 90 ? cut.slice(0, dot + 1) : `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:]$/, "")}…`;
 }
 
-export function buildMetadata({ title, description: raw, path, image, type = "website", noindex }: PageMeta): Metadata {
+// Share image for pages that don't name one (hubs, forms): the house film poster.
+const DEFAULT_SHARE = { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_630/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg", alt: "James Wild & Co, exploring since 1982" };
+
+export function buildMetadata({ title, description: raw, path, image: given, type = "website", noindex }: PageMeta): Metadata {
+  const image = given ?? DEFAULT_SHARE;
   const url = absoluteUrl(path);
   const description = fitDescription(raw);
   const index = isIndexable && !noindex;
   return {
-    title,
+    // Long titles drop the brand suffix so the keywords, not the brand, survive Google's cut.
+    title: title.length + SUFFIX > MAX_TITLE ? { absolute: title } : title,
     description,
     alternates: { canonical: url },
     robots: index ? { index: true, follow: true } : { index: false, follow: false },

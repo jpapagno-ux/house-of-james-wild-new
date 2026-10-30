@@ -1,0 +1,12 @@
+{
+ "_note": "Hand decisions on top of scripts/stay-qa.py. clear: the name check flagged these wrongly (spelling or apostrophes). hold: keep off the site until the reason is fixed.",
+ "clear": {
+  "cottars-1920-camp": "Display name Cottar's 1920's Safari Camp matches; flagged on typography (28 Oct 2026)",
+  "baymanhi-exuma": "Record spelled Baymanhi; Baymahni Island Escape is right (28 Oct 2026)",
+  "jacks-camp": "Jack's Camp, apostrophe only",
+  "jacks-private-camp": "Jack's Private Camp, apostrophe only",
+  "rayvadee-resort": "Rayavadee Resort is the correct spelling",
+  "chable-yucatan": "Chablé Yucatán, accents only"
+ },
+ "hold": {}
+}

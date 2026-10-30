@@ -48,7 +48,7 @@ export default function LedgerChart({ chart = CHART_COSTA_RICA, title }: { chart
       ))}
       <path d={chart.focus} fillRule="evenodd" pathLength={1} className="chart-ink" fill="#F4F1ED" stroke="#2D2A26" strokeWidth="1.4" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
 
-      <g className="chart-fade" fontFamily="'Playfair Display', Georgia, serif" textAnchor="middle">
+      <g className="chart-fade" fontFamily="'Cormorant Garamond', Georgia, serif" textAnchor="middle">
         {chart.labels.seas.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="17" fontStyle="italic" letterSpacing="3" fill="rgba(34,101,110,0.75)">{l.text}</text>)}
         {chart.labels.neighbors.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="13" letterSpacing="5" fill="rgba(45,42,38,0.4)">{l.text}</text>)}
         <text x={chart.labels.country.x} y={chart.labels.country.y} fontSize="18" letterSpacing="9" fill="rgba(45,42,38,0.7)">{chart.labels.country.text}</text>

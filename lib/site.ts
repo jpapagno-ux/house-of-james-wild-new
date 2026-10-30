@@ -209,6 +209,13 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   // Journal post and House Sessions: approved 27 Oct 2026.
   { path: "/journal/monwana-couples-first-safari", priority: 0.7, changeFrequency: "monthly" },
   { path: "/workshops", priority: 0.6, changeFrequency: "weekly" },
+  // Cayuga set (journal, collection, three Original Costa Routes) and the Africa post: approved 27 Oct 2026.
+  { path: "/journal/cayuga-collection-sustainable-luxury", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/journal/africa-inspired-wild-and-co-safaris", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/collections/cayuga-collection", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

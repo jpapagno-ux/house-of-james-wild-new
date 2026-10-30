@@ -1,4 +1,6 @@
 import Image from "next/image";
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronDown, Ship, Users } from "lucide-react";
@@ -39,7 +41,8 @@ const tone = (st: string) => /full/i.test(st) ? "bg-ink/10 text-ink/60 line-thro
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32";
 
 export default async function ShipPage({ params }: P) {
-  const s = SHIPS[(await params).ship as keyof typeof SHIPS];
+  const ship = (await params).ship;
+  const s = SHIPS[ship as keyof typeof SHIPS];
   if (!s) notFound();
   const film = FILMS.aliikai;
   const host = hostFor("voyage:aliikai");
@@ -79,6 +82,7 @@ export default async function ShipPage({ params }: P) {
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: s.path }]} /></div>
           <Overview quote={s.quote} answer={s.answer} facts={s.facts} paragraphs={[s.blurb]} />
+          <OfferPanel offers={offersFor(ship)} volume="voyages" title="Offers aboard" />
           <FounderProof proof={s.proof} className="mt-10 max-w-3xl" />
 
           {/* Who she suits, first-timers first */}

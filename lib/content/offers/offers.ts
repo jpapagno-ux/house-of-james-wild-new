@@ -8,12 +8,17 @@
 //
 // Program names (James, 27 Oct 2026): "Worth Another Night" = a free night on
 // a shorter stay; "Time Rewarded" = a reward for staying longer; "On the
-// Horizon" = suggested name for voyage savings, not yet in use. "Book Early"
+// Horizon" = suggested name for voyage savings, not yet in use. "Final Call"
+// (James, 29 Oct 2026) = last-minute savings on a departure, Voyages and
+// Overland only; drawn as a split-flap board (components/ledger/OfferPanel). "Book Early"
 // = a hotel's early-booking discount (working name, James to confirm).
 
-export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection";
+import type { VolumeKey } from "@/lib/volumes";
+import LIBRARY from "./library.json";
+
+export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection" | "itinerary";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
-export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "On the Horizon" | "Book Early";
+export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "Final Call" | "On the Horizon" | "Book Early";
 export type OfferImage = { id: string; alt: string; w: number; h: number };
 export type Offer = {
   id: string;
@@ -31,6 +36,8 @@ export type Offer = {
   source: string; // where the terms came from (never linked on the site)
   checked: string; // ISO date the terms were last checked
   image?: OfferImage;
+  volume?: VolumeKey; // set in the library; decides the offer's colour and mark
+  departure?: string; // Final Call: the departure date (ISO), shown as a date, never a countdown
 };
 
 const CAY = "cayuga-collection";
@@ -38,7 +45,7 @@ const SRC = "Cayuga Collection official special offers page";
 const T26 = { from: "2026-04-13", to: "2026-12-19", text: "13 April to 19 December 2026" };
 const cy = (id: string, alt: string, w: number, h: number): OfferImage => ({ id: `jwco/collections/cayuga-collection/offers/${id}`, alt, w, h });
 
-export const OFFER_LEDGER: Offer[] = [
+const HAND_KEPT: Offer[] = [
   // ── 2026 · Cayuga Collection (checked 27 Oct 2026) ──
   { id: "OFR-2026-0001", year: 2026, status: "Live", scope: "stay", ref: "bolontiku-hotel", name: "Bolontiku", collection: CAY, country: "Guatemala", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, source: SRC, checked: "2026-10-27", image: cy("bolontiku-lake", "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", 4032, 3024) },
   { id: "OFR-2026-0002", year: 2026, status: "Live", scope: "stay", ref: "senda-monteverde-lodge", name: "Senda Monteverde", collection: CAY, country: "Costa Rica", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, conditions: "A free room upgrade when you book Senda Monteverde and Arenas del Mar together, subject to availability.", source: SRC, checked: "2026-10-27", image: cy("senda-monteverde-offer", "A terrace with a fire and seating looking over the forest at sunset at Senda Monteverde", 2054, 1667) },
@@ -65,6 +72,13 @@ export const OFFER_LEDGER: Offer[] = [
     travel: { from: "2027-01-01", to: "2027-12-31", text: "2027 [dates to confirm]" }, source, checked: "2026-10-27",
   })),
 ];
+
+// Offers filed in the Base44 library arrive with the nightly sync
+// (scripts/export-offers.py). A library record replaces a hand-kept one with
+// the same ID, so terms can move into the library one offer at a time.
+const FROM_LIBRARY = LIBRARY as Offer[];
+const LIB_IDS = new Set(FROM_LIBRARY.map((o) => o.id));
+export const OFFER_LEDGER: Offer[] = [...HAND_KEPT.filter((o) => !LIB_IDS.has(o.id)), ...FROM_LIBRARY];
 
 const today = () => new Date().toISOString().slice(0, 10);
 /** Offers a page may show: Live and still within their travel window. */

@@ -10,6 +10,8 @@ import { Reveal } from "@/components/ledger/Motion";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import { Stamp, type Volume } from "@/components/ledger/Marks";
+import { PassportStamp } from "@/components/ledger/VolumeKit";
+import { stampDate } from "@/lib/volumes";
 import type { LedgerStampKind } from "@/lib/ledger/status";
 
 // Shared record-page sections: stays, camps, residences, ships and voyages
@@ -44,7 +46,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
             <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
-          {stamp && <div className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0 rounded-full bg-paper/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]`}>{stamp}</div>}
+          {stamp && <div className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0 rounded-sm bg-white/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]`}>{stamp}</div>}
         </div>
         {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
       </div>
@@ -76,7 +78,13 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
   );
 }
 
-export function FounderStamp({ kind, year, volume = "stays", size = 132 }: { kind: LedgerStampKind; year?: number; volume?: Volume; size?: number }) {
+// Founder marks print as a dated passport stamp in the volume's ink (volume kit,
+// Oct 2026); the other Ledger marks keep the round stamp.
+const PASSPORT: Partial<Record<LedgerStampKind, string>> = { "Founder favorite": "Founder favorite", "Field verified": "Founder stayed", "Founder inspected": "Founder inspected" };
+export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stays", size = 132 }: { kind: LedgerStampKind; year?: number; date?: string | null; place?: string; ledgerId?: string; volume?: Volume; size?: number }) {
+  const top = PASSPORT[kind];
+  const when = stampDate(date ?? year);
+  if (top && when) return <PassportStamp volume={volume} top={top} date={when} place={place} ledgerId={ledgerId} size={Math.round(size * 1.25)} rotate={-4} />;
   return <Stamp kind={kind} year={year} volume={volume} size={size} />;
 }
 

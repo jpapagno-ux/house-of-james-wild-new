@@ -6,7 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: { DEFAULT: "#F4F1ED", card: "#EAE6DF" },
+        // White pages from 29 Oct 2026 (volume kit); paper.card is the quiet panel tone.
+        paper: { DEFAULT: "#FFFFFF", card: "#F6F4F0" },
         ink: { DEFAULT: "#2D2A26", muted: "rgba(45, 42, 38, 0.68)", faint: "rgba(45, 42, 38, 0.55)" },
         // The accent is a CSS variable so a section can re-tint it: crimson by default,
         // sea blues inside .theme-sea (voyages and the Aliikai listings).
@@ -16,8 +17,8 @@ const config: Config = {
         rust: { DEFAULT: "#94512F", wash: "#F7EFE6" },
       },
       fontFamily: {
-        display: ["'Playfair Display'", "Georgia", "'Times New Roman'", "serif"],
-        body: ["'EB Garamond'", "Georgia", "'Times New Roman'", "serif"],
+        display: ["'Cormorant Garamond'", "Georgia", "'Times New Roman'", "serif"],
+        body: ["Manrope", "ui-sans-serif", "system-ui", "-apple-system", "'Segoe UI'", "sans-serif"],
         hand: ["Caveat", "cursive"],
       },
       maxWidth: { ledger: "72rem" },

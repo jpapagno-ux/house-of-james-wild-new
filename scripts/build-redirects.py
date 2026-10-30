@@ -26,6 +26,8 @@ BUILT_COUNTRIES = dict(re.findall(r'slug: "([a-z-]+)", name: "[^"]+", region: "(
 # Country guides (lib/content/guides.ts) without a parent are country pages too
 guides_ts = (ROOT / "lib/content/guides.ts").read_text()
 BUILT_COUNTRIES.update({s: r for s, r in re.findall(r'slug: "([a-z-]+)", region: "([a-z-]+)", country: "[a-z-]+", name:', guides_ts)})
+# Country pages generated from the library (scripts/export-countries.py)
+BUILT_COUNTRIES.update({c["slug"]: c["region"] for c in json.load(open(ROOT / "lib/content/countries-library.json"))["countries"]})
 
 # Old country name (from page titles) or /country/ slug -> (new country slug, region)
 REGION = {
@@ -63,6 +65,10 @@ def country_from_title(t):
 SPECIAL = {
     "aliikai-voyage": ("/voyages/ships/aliikai", "Aliikai vessel profile"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
+    "tswalu-motse": ("/safaris/tswalu-reserve/motse", "Tswalu camp"),
+    "tswalu-loapi-tented-suites": ("/safaris/tswalu-reserve/loapi", "Tswalu camp"),
+    "tswalu-tarkuni-homestead-villa": ("/safaris/tswalu-reserve/tarkuni", "Tswalu residence"),
+    "gwe-gwe-beach": ("/stays/gwe-gwe-beach-lodge", "duplicate record retired 29 Oct 2026"),
 }
 
 def stay_target(slug):

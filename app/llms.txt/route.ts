@@ -1,4 +1,6 @@
-import { SITE, VOLUMES, REGIONS } from "@/lib/site";
+import { SITE, VOLUMES, REGIONS, LIVE_ROUTES } from "@/lib/site";
+import { POSTS } from "@/lib/content/journal/posts";
+import { TRIPS } from "@/lib/content/trips";
 import { absoluteUrl } from "@/lib/seo";
 
 // llms.txt — a plain-language map of the house for AI assistants and answer
@@ -24,6 +26,12 @@ export function GET() {
     "",
     "## Destinations",
     ...REGIONS.map((r) => `- [${r.label}](${absoluteUrl(r.href)})`),
+    "",
+    "## Journal (first-hand stories by James)",
+    ...Object.values(POSTS).filter((p) => p.approved).map((p) => `- [${p.seoTitle}](${absoluteUrl(`/journal/${p.slug}`)}): ${p.description}`),
+    "",
+    "## Routes and voyages James designed",
+    ...Object.values(TRIPS).filter((t) => t.copy_approved && LIVE_ROUTES.some((r) => r.path === t.seo.path)).map((t) => `- [${t.seo.title}](${absoluteUrl(t.seo.path)}): ${t.seo.description}`),
     "",
     "## Plan",
     `- [Plan with James](${absoluteUrl("/plan")})`,

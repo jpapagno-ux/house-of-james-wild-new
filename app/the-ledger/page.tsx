@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   title: "The Ledger: How James Wild & Co Vets Every Stay, Ship and Route",
   description: "Every stay, reserve, residence, vessel and route James Wild & Co recommends is vetted in person or by a named partner, filed under a permanent Ledger ID and given one dated mark. Here's how.",
   path: PATH,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function LedgerPage() {

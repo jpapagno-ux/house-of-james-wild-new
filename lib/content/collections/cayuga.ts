@@ -50,11 +50,12 @@ export const CAYUGA = {
   slug: "cayuga-collection",
   name: "The Cayuga Collection",
   path: "/collections/cayuga-collection",
+  approved: true, // James, on the Proofs sheet, 27 Oct 2026
   founded: "2003",
   founders: ["Andrea Bonilla", "Hans Pfister"],
   countries: ["Costa Rica", "Panama", "Nicaragua", "Guatemala"],
   seo: {
-    title: "The Cayuga Collection: Sustainable Luxury Hotels in Central America",
+    title: "Cayuga Collection: Sustainable Luxury Hotels, Central America",
     description: "Seven sustainably run boutique hotels in Costa Rica, Panama, Nicaragua and Guatemala: which Cayuga hotel suits whom, how to pair them, and what to ask before you book.",
   },
   eyebrow: "The Collections · Central America",

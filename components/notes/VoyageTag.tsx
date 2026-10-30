@@ -62,8 +62,8 @@ export default function VoyageTag({ tag, line, href = "#founder" }: { tag: TagIn
             <g fill="#3b2c1c" style={{ fontFamily: "ui-monospace, Menlo, monospace" }}>
               <text x="84" y="56" textAnchor="middle" fontSize="9.5" letterSpacing="2.4">{tag.kind.toUpperCase()}</text>
               <line x1="18" y1="64" x2="150" y2="64" stroke="#3b2c1c" strokeWidth=".7" opacity=".6" />
-              <text x="84" y="94" textAnchor="middle" fontSize="22" letterSpacing="1" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{tag.title.split(" ")[0].toUpperCase()}</text>
-              {tag.title.split(" ").length > 1 && <text x="84" y="118" textAnchor="middle" fontSize="22" letterSpacing="1" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{tag.title.split(" ").slice(1).join(" ").toUpperCase()}</text>}
+              <text x="84" y="94" textAnchor="middle" fontSize="22" letterSpacing="1" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{tag.title.split(" ")[0].toUpperCase()}</text>
+              {tag.title.split(" ").length > 1 && <text x="84" y="118" textAnchor="middle" fontSize="22" letterSpacing="1" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>{tag.title.split(" ").slice(1).join(" ").toUpperCase()}</text>}
               <line x1="18" y1="132" x2="150" y2="132" stroke="#3b2c1c" strokeWidth=".7" opacity=".6" />
               <text x="84" y="150" textAnchor="middle" fontSize="9" letterSpacing="1.8">{tag.ledger.toUpperCase()}</text>
               <text x="40" y="176" fontSize="11">NO.</text>

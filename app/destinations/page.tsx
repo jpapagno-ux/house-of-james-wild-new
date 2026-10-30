@@ -10,7 +10,7 @@ import { graph } from "@/lib/schema";
 
 // /destinations: the ten regions and their live countries, from the Ledger.
 const PATH = "/destinations";
-export const metadata = buildMetadata({ title: "Destinations: Ten Regions, Vetted Country by Country", description: "Africa, Asia, the Americas, Europe, Oceania and the polar regions: the countries where James Wild & Co has vetted stays, ships and routes.", path: PATH, noindex: true });
+export const metadata = buildMetadata({ title: "Destinations: Ten Regions, Vetted Country by Country", description: "Africa, Asia, the Americas, Europe, Oceania and the polar regions: the countries where James Wild & Co has vetted stays, ships and routes.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 export default function DestinationsHub() {
   const countries = REGION_DATA.reduce((n, r) => n + r.countries.length, 0);

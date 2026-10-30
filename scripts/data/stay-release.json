@@ -1,0 +1,1529 @@
+{
+ "_note": "Stays released to the site, in release order. scripts/export-stays.py exports only these. Add a slug once it passes the stay QA (scratchpad qa.py checks: hero, content, country, no other stay's name or photos).",
+ "released": [
+  {
+   "slug": "aguas-claras",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "amor-arenal",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "arenal-springs-camp-by-nayara",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "arenas-del-mar-resort",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "babylonstoren",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "birkenhead-house",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "boluntiku-hotel",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "camp-hwange-muddy-teak",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "cape-cadogan-boutique-hotel",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "cheetah-plains",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "coco-costa-rica",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "coot-club",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "dulini-daunara-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "dulini-leadwood-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "dulini-moya-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "dulini-river-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "ellerman-house",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "gorongosa-safaris",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "grootbos-private-nature-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "gwe-gwe-beach",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "gwe-gwe-beach-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "hermanus-private-residences",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "isla-palenque-resort",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "jabulani",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "kruger-shalati",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "kura-boutique-resort",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "kwande-private-game-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "la-cle",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "la-residence",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lalibela-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lapa-rios-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "le-quartier-francais",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "leeu-estates",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "leeu-house",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lekkerwater-dehoop",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "leopard-hills",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lepogo-lodges",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lion-sands",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "londolozi-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "madikwe",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "monwana-thornybush",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "morukuru-farm-house",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "nayara-gardens",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "nayara-tented-camp",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "ngala-safari-lodge-by-beyond",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "noah-forest-by-tifakara",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "pacuare-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "pearl-resort-vahine-private-island",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "phinda-homestead-by-and-beyond",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "pods-camp-bay",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "royal-malewane",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "samara-karoo-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "sashwa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "senda-monteverde-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "seseka-thornybush",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-boulders",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-castleton",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-ebony",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-ebony-villa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-lebombo",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-lebombo-villa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "singita-sweni",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "sirai-house",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tabacon-thermal-resort-spa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tanda-tula",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tengile-mala-mala-camp",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tengile-mala-mala-kirkmans-kamp",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tengile-mala-mala-rattrays-lodge",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tengile-mala-mala-sable-camp",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tengile-river-lodge-by-mala-mala",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "the-art-villa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "the-atelier-villa",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "the-silo-hotel",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "thornybush-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "tswalu-reserve",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "lales-camp-expeditions",
+   "batch": "2026-10-25 Costa Rica + South Africa"
+  },
+  {
+   "slug": "kwando-lagoon",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-lebala",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-nxai-pan",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-mma-dinare",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-splash",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-moremi-crossing",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-kwara",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-rra-dinare",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-pom-pom",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-tau-pan",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "kwando-4-rivers",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "baines-lodge",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-little-mombo",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "feline-fields-vintage-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "chobe-under-canvas-by-and-beyond",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "feline-fields-lodge",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "jao-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-little-duma-tau",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "great-plains-duba-plains",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "linyanti-wilderness-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "machaba",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "great-plains-selinda-main-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "great-plains-zarafa-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "great-plains-zarafa-dhow-suite",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "meno-a-kwena-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-mombo-luxury-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "elephann-pan-khwai",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "gomoti-plains-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-mokete",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-vumbura-plains",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "khwai-leadwood-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-pelo",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "sable-alley-khwai",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "khwai-lediba",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "north-island-okavango",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "monachira-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-savuti",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-kwetsani",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "dukes-camp-okavango",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "daunara-safari-camp",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "wilderness-little-tubu",
+   "batch": "2026-10-28 Botswana"
+  },
+  {
+   "slug": "ol-jogi-conservancy",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "lewa-wilderness-lodge",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "bateleur-camp-by-and-beyond",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "giraffe-manor",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "beyond-kichwa-camp",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "saruni-leopard-hill",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "saruni-wild-lodge",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "mara-plains-camp-by-great-plains",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "saruni-samburu-lodge",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "loirien-mara",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "wilderness-mara",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "encounter-mara-camp-by-asilia",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "suyian-lodge-by-and-beyond",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "saruni-eagle-view",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "segera-retreat",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "house-in-the-wild-masai-mara",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "asilia-naboisho-camp-by-asilia",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "arijiju-laikipia",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "sasaab",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "mara-toto-tree-camp-by-great-plains",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "lengishu-kenya",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "salas-camp",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "asilia-rekero-camp",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "ol-pejeta-bush-camp-asilia",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "sirikoi-lodge",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "ngare-camp-by-serian",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "kicheche-mara-north",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "the-original-camp-by-serian",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "borana",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "elsas-kopje",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "angama-mara",
+   "batch": "2026-10-28 Kenya"
+  },
+  {
+   "slug": "manyara-tree-lodge-by-and-beyond",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "greystoke-mahale-by-nomad",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "nomad-tanzania-lamai",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "wilderness-usawa",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "beyond-kleins-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-kilima",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-sasakwa",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "beyond-mnemba-by-and-beyond",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "beyond-grumeti-safari-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-serengeti-house",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "benguerra-island-by-and-beyond",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "gibbs-farm",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-sabora",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-milele",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "chem-chem",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-mara-river",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "chumbe-island-zanzibar",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "kichakani-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "singita-faru-faru-lodge",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "serengeti-lamai-camp-by-serian",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "sayari-camp-asilia",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "namiri-plains-camp-by-asilia",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "ubuntu-migration-camp-asilia",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "kokoko-camp-by-asilia",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "asilia-dunia-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "the-highlands-by-asilia-highlands",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "asilia-olivers-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "rubondo-island-camp-asilia",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "entara-esirai-camp",
+   "batch": "2026-10-28 Tanzania"
+  },
+  {
+   "slug": "soori-bali",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "cap-karoso",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "celestia-yacht",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "kayumanis-ubud",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "ungasan-clifftops",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "kayumanis-jimbaran-private-estates",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "kayumanis-nusa-dua",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "silolona-sojourns",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "tanah-gajah",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "six-senses-uluwatu",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "aliikai-voyage",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "mutiara-laut",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "nikoi-island",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "nihi",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "como-shambhala-estate",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "anantara-ubud-bali",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "capella-ubud",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "viceroy-bali",
+   "batch": "2026-10-28 Indonesia"
+  },
+  {
+   "slug": "umaya-resort-and-marina",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "matachica-resort-and-spa",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "blancaneaux-lodge",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "st-george-s-caye-resort",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "thatch-caye-resort",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "coco-plum-island-resort",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "the-lodge-at-chaa-creek",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "ka-ana-resort",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "jaguar-reef-lodge",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "sleeping-giant-rainforest-lodge",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "turtle-inn",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "blue-reef",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "hidden-valley-lodge",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "xanadu-island-resort",
+   "batch": "2026-10-28 Belize"
+  },
+  {
+   "slug": "chiawa-safaris",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "lolebezi-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "wilderness-toka-leya",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "matetsi-victoria-falls",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "time-tide-chongwe-2",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "wilderness-busanga",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "wilderness-shumba",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "royal-zambezi-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "time-tide-mchenja",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "time-tide-chinzombo-2",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "chindeni-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "mfuwe-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "chamilandu-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "dulini-anabezi-lodge",
+   "batch": "2026-10-28 Zambia"
+  },
+  {
+   "slug": "nomade-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "nomade-holbox",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "conrad-tulum-riviera-maya",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "olas-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "be-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "xela-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "la-valise-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "hotel-bardo",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "radhoo-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "the-beach-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "mezzanine-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "siwa-tulum",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "kaaba-luum-mexico",
+   "batch": "2026-10-28 Mexico"
+  },
+  {
+   "slug": "wilderness-serra-cafema",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "beyond-sussuvlei-desert-lodge",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wilderness-kulala-desert-camp",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wilderness-desert-rhino-camp",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wilderness-hoanib-skeleton-camp",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wilderness-little-kulala",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wilderness-damaraland",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "our-habitas-namibia",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "wolwedans-dune-camp",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "etosha-mountain-lodge",
+   "batch": "2026-10-28 Namibia"
+  },
+  {
+   "slug": "velaa-private-island",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "ja-manufaru-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "niyama-private-islands-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "soneva-fushi-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "kudadoo-private-island",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "soneva-jani-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "soneva-secret-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "nautilus-maldives",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "six-senses-kanuhura",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "six-senses-laamu",
+   "batch": "2026-10-28 Maldives"
+  },
+  {
+   "slug": "inkaterra-machu-picchu-pueblo-hotel",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "inkaterra-la-casona",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "el-mapi-byinkaterra",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "explora-sacred-valley",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "inkaterra-hacienda-urubamba",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "inkaterra-reserva-amazonica",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "inkaterra-hacienda-concepcion",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "inkaterra-cabo-blanco",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "amazon-field-station-byinkaterra",
+   "batch": "2026-10-28 Peru"
+  },
+  {
+   "slug": "awasi-patagonia",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "explora-torres-del-paine",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "nayara-hangaroa",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "beyond-vira-vira-lodge",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "torres-del-paine-c-reserve",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "explora-rapa-nui",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "ecocamp-patagonia",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "tierra-patagonia",
+   "batch": "2026-10-28 Chile & Easter Island"
+  },
+  {
+   "slug": "six-senses-yao-noi",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "six-senses-samui",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "anantara-bophut-koh-samui-resort",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "anantara-golden-triangle-chiang-rai",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "anantara-hua-hin",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "anantara-chiang-mai-resort",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "kamalaya-koh-samui",
+   "batch": "2026-10-28 Thailand"
+  },
+  {
+   "slug": "wilderness-magashi-peninsula",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "singita-katanza-house",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "wilderness-sabyinyo",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "wilderness-bisate-reserve",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "singita-elela",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "singita-kwitonda",
+   "batch": "2026-10-28 Rwanda"
+  },
+  {
+   "slug": "wren-urban-nest",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "no-1-pery-square-limerick",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "corks-vienna-woods",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "hayfield-manor",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "ariel-house",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "castle-leslie",
+   "batch": "2026-10-28 Ireland"
+  },
+  {
+   "slug": "the-brando-tetiaroa",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "pearl-resort-le-tahiti",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "la-tahaa",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "pearl-resort-le-tikehau",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "pearl-resort-le-bora-bora",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "pearl-resort-le-nuku-hiva",
+   "batch": "2026-10-28 Tahiti"
+  },
+  {
+   "slug": "bumi-hills-safari-lodge",
+   "batch": "2026-10-28 Zimbabwe"
+  },
+  {
+   "slug": "singita-malilangwe-house",
+   "batch": "2026-10-28 Zimbabwe"
+  },
+  {
+   "slug": "singita-pamushana",
+   "batch": "2026-10-28 Zimbabwe"
+  },
+  {
+   "slug": "the-hide-safari-camp",
+   "batch": "2026-10-28 Zimbabwe"
+  },
+  {
+   "slug": "wilderness-ruckomechi",
+   "batch": "2026-10-28 Zimbabwe"
+  },
+  {
+   "slug": "ecoventura-evolve-yacht",
+   "batch": "2026-10-28 Ecuador & Galapagos"
+  },
+  {
+   "slug": "ecoventura-theory-yacht",
+   "batch": "2026-10-28 Ecuador & Galapagos"
+  },
+  {
+   "slug": "ecoventura-origin-yacht",
+   "batch": "2026-10-28 Ecuador & Galapagos"
+  },
+  {
+   "slug": "alya-catamaran-galapagos",
+   "batch": "2026-10-28 Ecuador & Galapagos"
+  },
+  {
+   "slug": "sirius-yacht-galapagos",
+   "batch": "2026-10-28 Ecuador & Galapagos"
+  },
+  {
+   "slug": "under-canvas-lake-powell-grand-staircase",
+   "batch": "2026-10-28 Utah"
+  },
+  {
+   "slug": "under-canvas-brtce-canyon",
+   "batch": "2026-10-28 Utah"
+  },
+  {
+   "slug": "under-canvas-zion",
+   "batch": "2026-10-28 Utah"
+  },
+  {
+   "slug": "under-canvas-moab",
+   "batch": "2026-10-28 Utah"
+  },
+  {
+   "slug": "open-sky",
+   "batch": "2026-10-28 Utah"
+  },
+  {
+   "slug": "explora-el-chalten",
+   "batch": "2026-10-28 Argentina"
+  },
+  {
+   "slug": "awasi-mendoza",
+   "batch": "2026-10-28 Argentina"
+  },
+  {
+   "slug": "explora-el-calafate",
+   "batch": "2026-10-28 Argentina"
+  },
+  {
+   "slug": "iguazu",
+   "batch": "2026-10-28 Argentina"
+  },
+  {
+   "slug": "beyond-amazon-explorer",
+   "batch": "2026-10-28 Brazil"
+  },
+  {
+   "slug": "awasi-santa-catarina",
+   "batch": "2026-10-28 Brazil"
+  },
+  {
+   "slug": "uxua-casa-hotel-spa",
+   "batch": "2026-10-28 Brazil"
+  },
+  {
+   "slug": "isla-secas-panama",
+   "batch": "2026-10-28 Panama"
+  },
+  {
+   "slug": "nayara-bocas-del-toro",
+   "batch": "2026-10-28 Panama"
+  },
+  {
+   "slug": "isla-secas",
+   "batch": "2026-10-28 Panama"
+  },
+  {
+   "slug": "clayoquot-wilderness-resort",
+   "batch": "2026-10-28 Canada"
+  },
+  {
+   "slug": "nami-project",
+   "batch": "2026-10-28 Canada"
+  },
+  {
+   "slug": "fogo-island-inn",
+   "batch": "2026-10-28 Canada"
+  },
+  {
+   "slug": "under-canvas-yosemite",
+   "batch": "2026-10-28 California"
+  },
+  {
+   "slug": "alila-ventana-big-sur",
+   "batch": "2026-10-28 California"
+  },
+  {
+   "slug": "post-ranch-inn",
+   "batch": "2026-10-28 California"
+  },
+  {
+   "slug": "under-canvas-north-yellowstone",
+   "batch": "2026-10-28 Montana"
+  },
+  {
+   "slug": "under-canvas-glacier",
+   "batch": "2026-10-28 Montana"
+  },
+  {
+   "slug": "paws-up-resort",
+   "batch": "2026-10-28 Montana"
+  },
+  {
+   "slug": "six-senses-con-dao",
+   "batch": "2026-10-28 Vietnam"
+  },
+  {
+   "slug": "six-senses-ninh-van-bay",
+   "batch": "2026-10-28 Vietnam"
+  },
+  {
+   "slug": "anantara-mui-ne",
+   "batch": "2026-10-28 Vietnam"
+  },
+  {
+   "slug": "six-senses-krabey-island",
+   "batch": "2026-10-28 Cambodia"
+  },
+  {
+   "slug": "shinta-mani-wild",
+   "batch": "2026-10-28 Cambodia"
+  },
+  {
+   "slug": "cardamom-tented-camp",
+   "batch": "2026-10-28 Cambodia"
+  },
+  {
+   "slug": "awasi-atacama",
+   "batch": "2026-10-28 Bolivia"
+  },
+  {
+   "slug": "nayara-alto-atacama",
+   "batch": "2026-10-28 Bolivia"
+  },
+  {
+   "slug": "explora-at-atacama",
+   "batch": "2026-10-28 Bolivia"
+  },
+  {
+   "slug": "masoala-forest-lodge",
+   "batch": "2026-10-28 Madagascar"
+  },
+  {
+   "slug": "miavana-by-time-tide",
+   "batch": "2026-10-28 Madagascar"
+  },
+  {
+   "slug": "under-canvas-grand-canyon",
+   "batch": "2026-10-28 Arizona"
+  },
+  {
+   "slug": "ambiente-tm-sedona",
+   "batch": "2026-10-28 Arizona"
+  },
+  {
+   "slug": "nomade-temple-ibiza",
+   "batch": "2026-10-28 Spain-Ibiza"
+  },
+  {
+   "slug": "six-senses-ibiza",
+   "batch": "2026-10-28 Spain-Ibiza"
+  },
+  {
+   "slug": "pu-u-hoko-ranch",
+   "batch": "2026-10-28 Hawaii"
+  },
+  {
+   "slug": "kualoa-ranch",
+   "batch": "2026-10-28 Hawaii"
+  },
+  {
+   "slug": "six-senses-residences-courchevel",
+   "batch": "2026-10-28 France"
+  },
+  {
+   "slug": "under-canvas-west-yellowstone",
+   "batch": "2026-10-28 Wyoming"
+  },
+  {
+   "slug": "the-retreat-at-blue-lagoon",
+   "batch": "2026-10-28 Iceland"
+  },
+  {
+   "slug": "tahi",
+   "batch": "2026-10-28 New Zealand"
+  },
+  {
+   "slug": "six-senses-zil-pasyon",
+   "batch": "2026-10-28 Seychelles"
+  },
+  {
+   "slug": "six-senses-rome",
+   "batch": "2026-10-28 Italy"
+  },
+  {
+   "slug": "six-senses-kyoto",
+   "batch": "2026-10-28 Japan"
+  },
+  {
+   "slug": "six-senses-fiji",
+   "batch": "2026-10-28 Fiji"
+  },
+  {
+   "slug": "six-senses-douro-valley",
+   "batch": "2026-10-28 Portugal + Azores"
+  },
+  {
+   "slug": "six-senses-crans-montana",
+   "batch": "2026-10-28 Switzerland"
+  },
+  {
+   "slug": "nomade-temple-madrid",
+   "batch": "2026-10-28 Spain"
+  },
+  {
+   "slug": "nay-palad-hideaway",
+   "batch": "2026-10-28 Philippines"
+  },
+  {
+   "slug": "beckon-capella-lodge",
+   "batch": "2026-10-28 Australia"
+  },
+  {
+   "slug": "cottars-1920-camp",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "baymanhi-exuma",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "jacks-camp",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "jacks-private-camp",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "rayvadee-resort",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "chable-yucatan",
+   "batch": "2026-10-28 cleared on review"
+  },
+  {
+   "slug": "hemingways-nairobi",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "beckon-longitude-131",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "beckon-silky-oaks-lodge",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "beckon-southern-ocean-lodge",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "beckon-huka-lodge",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "beckon-the-louise",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "beckon-tierra-atacama",
+   "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "angama-amboseli",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "angama-safari-camp",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "beyond-lake-serengeti-under-canvas",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "jacis-private-lodge",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "wilderness-qorokwe",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "da-licenca",
+   "batch": "2026-10-30 library sync"
+  }
+ ]
+}

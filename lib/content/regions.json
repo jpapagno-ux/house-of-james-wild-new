@@ -79,7 +79,7 @@
     {
      "name": "Botswana",
      "slug": "botswana",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/67bf4e881229243bdd1d6261_botswana.avif",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/botswana-card.avif",
      "line": "Flooded wetlands, golden savannas, and remote desert pans come together in a landscape shaped by pure wilderness.",
      "stays": 53,
      "bestMonths": "May to October — the dry winter season delivers the best game viewing as animals concentrate around water sources, and the annual floodwaters peak between June and August, enabling spectacular mokoro and boat-based safaris through flooded channels and lily-covered lagoons.",
@@ -88,7 +88,7 @@
     {
      "name": "Kenya",
      "slug": "kenya",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250c4de4b92a50427e2eab_b3f5ceb0-db2a-4b39-accb-822c055663d0.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/card-68250c4d.jpg",
      "line": "Acacia dotted savannas, towering escarpments, and sweeping rift valley lakes define a landscape filled with life and movement.",
      "stays": 36,
      "bestMonths": null,
@@ -97,7 +97,7 @@
     {
      "name": "Madagascar",
      "slug": "madagascar",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630966bbd3ea24c5cbf93d_MadagascarMain.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/madagascar-card.jpg",
      "line": "Baobab avenues, rainforest canopies, and coastlines edged in turquoise create a landscape unlike anywhere else on Earth.",
      "stays": 2,
      "bestMonths": null,
@@ -106,7 +106,7 @@
     {
      "name": "Namibia",
      "slug": "namibia",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/67bf4e3b4d4417c3e6aa9d23_namibia.avif",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/namibia-card.avif",
      "line": "Cinematic desert dunes, stark coastlines, and endless horizons create a landscape defined by silence and sculptural beauty.",
      "stays": 14,
      "bestMonths": null,
@@ -115,7 +115,7 @@
     {
      "name": "Rwanda",
      "slug": "rwanda",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/686305ac9d4b43215b3a0973_rwandaHero1.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/rwanda-card.jpg",
      "line": "Verdant hills, mist swept mountains, and dense forest create an atmosphere both serene and powerful.",
      "stays": 10,
      "bestMonths": null,
@@ -124,7 +124,7 @@
     {
      "name": "Seychelles",
      "slug": "seychelles",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630a4fb0cfb705acfda11f_seychelleshero1.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/seychelles-card.jpg",
      "line": "Every stay in Seychelles is handpicked for its harmony with the land and sea, from eco resorts framed by lush jungle canopies to villas with ocean panoramas that fade…",
      "stays": 3,
      "bestMonths": null,
@@ -133,7 +133,7 @@
     {
      "name": "South Africa",
      "slug": "south-africa",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a86e5f120e922c3d605e835_68659439d6a02991b1610a80_GettyImages-813447208.jpeg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/south-africa/getty-813447208.jpg",
      "line": "From fynbos‑clad coasts and whale‑watching bays to Big Five savannas and world‑class vineyards, South Africa stitches dramatic landscapes with refined hospitality.",
      "stays": 58,
      "bestMonths": "May through October is peak safari season in Kruger and private reserves: dry conditions, sparse vegetation, and reliable game viewing around waterholes. The Western Cape and Winelands are best from November through April, when conditions are warm and dry. Whale watching along the Southern Cape coast peaks from July through October.",
@@ -142,7 +142,7 @@
     {
      "name": "Tanzania",
      "slug": "tanzania",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68681865704da54a0960dd4e_TanzaniaJeepSunset.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/tanzania-card.jpg",
      "line": "From the Serengeti plains to the volcanic landscapes of the Crater Highlands and the turquoise shores of the Indian Ocean, the country offers remarkable diversity.",
      "stays": 37,
      "bestMonths": null,
@@ -151,7 +151,7 @@
     {
      "name": "Zambia",
      "slug": "zambia",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/686306a0a5613ab1cd9a33e5_GettyImages-2170832274.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/getty-2170832274.jpg",
      "line": "Wide rivers, misty waterfalls, and wildlife rich plains define this soulful corner of Africa.",
      "stays": 19,
      "bestMonths": null,
@@ -160,7 +160,7 @@
     {
      "name": "Zimbabwe",
      "slug": "zimbabwe",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6863058a5cc6acdb060b3c2c_ZimHero1.jpg",
+     "image": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/site/destinations/africa/zimbabwe-card.jpg",
      "line": "Sweeping savannas, riverfront woodlands, and dramatic landscapes shape a country rich in natural heritage.",
      "stays": 9,
      "bestMonths": null,

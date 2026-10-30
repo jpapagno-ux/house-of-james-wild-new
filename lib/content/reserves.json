@@ -1286,6 +1286,229 @@
      "fromRate": 4700
     }
    ]
+  },
+  {
+   "slug": "tswalu-reserve",
+   "name": "Tswalu Kalahari Reserve",
+   "rsv": "RSV-2026-000016",
+   "area": "Kalahari",
+   "province": "Northern Cape",
+   "stay": {
+    "ledgerId": "STY-2026-138258",
+    "tagline": "Luxury and regeneration in Africa’s wild heart.",
+    "quote": "Come to Tswalu for a journey that leaves footprints and inspires renewal, both in your heart and across the horizon.",
+    "hero": "/img/b44/da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu.avif",
+    "gallery": [
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6202f7887_aca1eec3a_68883d1a47bc9cc220b08a42_Loapi_20FirePit_20at_20Dusk_20-_20Andrew_20Morgan.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/278cb0feb_33a5ad5db_68883d25f7d080537b1869bd_Loapi_20Lounge_20at_20Dusk_20-_20Andrew_20Morgan.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/325270122_32895f822_68883d234e7e5c66e342fb34_Loapi_20bedroom_202_20-_20Andrew_20Morgan.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f106ad525_152fa0e24_68883d30382be55d549a9548_Tswalu_20Kalahari_20-_20Loapi_20deck.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9036ae6ff_7b2c1dc64_68883843e7bd92c984b44f02_Tswalu_Motse_Patio.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4285c4934_adc3640b2_688838434a395ce3ebabd100_Tswalu_Motse_Daybed.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/338971afe_741225972_688838432ac356e47a556d3f_Tswalu_Motse_Pool.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bb0da11de_e0c313dbc_68883832cdbfec3e1e45a219_Tswalu_Motse_Suite.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b90d4c5c_a10995e49_6888384377fcbd5f339e451d_Tswalu_Motse_Walkway.jpg",
+     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0b042dd0_1893e5640_688836dac4bbad742f33ce64_Tswalu_20Kalahari_20-_20Tarkuni.jpg"
+    ],
+    "bestMonths": "May - September",
+    "bestMonthsNote": "During the dry season, wildlife gathers at waterholes, skies are perfect for stargazing, and daytime game drives are ideal in the crisp weather.",
+    "airport": "Tswalu Private Airstrip (flight charter) <br/> Upington International Airport (UTN) <br/> Kimberley Airport (KIM)",
+    "airportDirections": "The closest option is Tswalu’s own airstrip, with daily charter flights from Cape Town and Johannesburg. Alternatively, fly into Upington (350 km) or Kimberley (370 km) and enjoy a scenic private transfer through the Kalahari.",
+    "coords": {
+     "lat": -27.2025897,
+     "lng": 22.4807213
+    },
+    "why": [
+     {
+      "title": "A Regenerative Safari Beyond Compare",
+      "body": "Come to Tswalu to experience true wilderness regeneration, a place where luxury meets conservation and every stay gives back to the land."
+     }
+    ],
+    "experiences": {
+     "paras": [],
+     "items": [
+      "Private game drives with a dedicated ranger and tracker",
+      "Guided bush walks and horseback safaris",
+      "Habituated meerkat encounters",
+      "Stargazing and Malori sleep-outs under pristine skies",
+      "San rock art walks and dune-top dining"
+     ]
+    },
+    "features": {
+     "paras": [
+      "South Africa’s largest private reserve at 1,200 km² with minimal guest impact.",
+      "One of the few places to see desert black rhino, black-maned lion, and pangolin.",
+      "Malaria-free and family-friendly, with a Junior Ranger program for children.",
+      "Michelin-level cuisine featuring hyper-local ingredients."
+     ],
+     "items": []
+    },
+    "onlyHere": [
+     "Step into the red sands of renewal, where every journey restores both soul and savannah. Tswalu offers a rare blend of luxury in remote wilderness, unmatched exclusivity, and meaningful conservation impact. It is perfect for families, couples, solo explorers, and eco-minded travelers."
+    ],
+    "country": "South Africa",
+    "countrySlug": "south-africa",
+    "regionSlug": "africa",
+    "status": "founder_visited",
+    "statusDate": "2012-01-01"
+   },
+   "camps": [
+    {
+     "slug": "motse",
+     "name": "The Motse",
+     "key": "Tswalu Motse",
+     "kind": "camp",
+     "intro": "The first time I stayed at The Motse, I felt like the land exhaled, and I exhaled with it. It’s luxury, yes, but stripped back to what really matters: silence, space, and soul. Whether you’re a solo traveler, a couple, or a family, The Motse feels like home in the most its own way.",
+     "description": "The Motse is where it all began for me at Tswalu and it is the kind of place that gently reorders your sense of time. It is not flashy or overdone. It is warm, grounded, and quietly luxurious, inviting you to breathe deeper, slow down, and simply be.",
+     "units": [
+      "9 suites"
+     ],
+     "features": [
+      "Private suites with plunge pools, outdoor showers, and panoramic desert views",
+      "Every booking includes your own safari vehicle, guide, and tracker, no sharing",
+      "Access to a serene spa, infinity pool, and wellness spaces within the camp",
+      "Thoughtfully designed architecture that blends luxury with the Kalahari landscape"
+     ],
+     "experiences": [
+      "Track black-maned lions and desert-adapted wildlife on private game drives",
+      "Spend sunrise with habituated meerkats as they emerge from their burrows. Explore ancient San rock engravings on guided walking excursions",
+      "Experience the Kalahari after dark on night drives in search of rare nocturnal species"
+     ],
+     "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-suite",
+     "gallery": [
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-suite",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-patio",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-daybed",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-pool",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-walkway",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-bathroom"
+     ],
+     "rooms": [
+      {
+       "name": "Motse Suite",
+       "capacity": 2,
+       "quantity": 2,
+       "beds": "King",
+       "from": null,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-suite",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-patio",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-daybed",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-pool",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-walkway",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-bathroom"
+       ]
+      }
+     ],
+     "fromRate": null
+    },
+    {
+     "slug": "loapi",
+     "name": "Loapi Tented Suites",
+     "key": "Tswalu Loapi Tented Suites",
+     "kind": "camp",
+     "intro": "Loapi is unlike anywhere else I’ve stayed in Africa. It’s wild, raw, and quietly luxurious in a way that makes you feel like the only person on earth.",
+     "description": "Loapi is wild in the truest sense of the word, not because it is rugged or remote, though it is, but because it strips away all the noise. There are no walls between you and the land, just canvas, sky, and silence. You hear the wind move through the grass, the low call of a lion at night, and sometimes nothing at all.\nEach tented home stands alone on the landscape. You will not see another soul unless you choose to. It is just you and this vast, powerful wilderness. And yet the experience is anything but basic. Everything is designed with care, from your own chef and butler to spaces that honor both solitude and soul.",
+     "units": [
+      "6 tented suites, each a private home with its own chef and butler"
+     ],
+     "features": [
+      "Six ultra-private tented homes, each with its own butler, chef, and complete exclusivity",
+      "Indoor-outdoor living with canvas walls, deep decks, plunge pools, and fire pits",
+      "Thoughtfully off-grid with solar power, sustainable design, and zero light pollution",
+      "Ideal for couples or solo travelers seeking solitude, seclusion, and immersive luxury"
+     ],
+     "experiences": [
+      "Wake with the sun and track desert-adapted wildlife on a fully private guided safari",
+      "Dine under the stars with meals prepared by your personal chef in your tented kitchen",
+      "Spend quiet mornings watching wildlife from your deck with uninterrupted Kalahari views",
+      "Explore ancient San rock art or join a conservationist for pangolin tracking in the field"
+     ],
+     "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-firepit-at-dusk",
+     "gallery": [
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-firepit-at-dusk",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-lounge-at-dusk",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-deck",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-indoor-dining",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-bedroom",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-bathroom"
+     ],
+     "rooms": [
+      {
+       "name": "Loapi Tented Suite",
+       "capacity": 2,
+       "quantity": 6,
+       "beds": "King",
+       "from": null,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-firepit-at-dusk",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-lounge-at-dusk",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-deck",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-indoor-dining",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-bedroom",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-bathroom"
+       ]
+      }
+     ],
+     "fromRate": null
+    },
+    {
+     "slug": "tarkuni",
+     "name": "Tarkuni Homestead",
+     "key": "Tswalu Tarkuni Homestead Residence",
+     "kind": "residence",
+     "intro": "With five suites, your own chef, guide, and full team, it’s all yours. No shared spaces, no schedules, just freedom. Tarkuni isn't just a stay, it’s a gathering of souls in the wild. And that’s what makes it its own.",
+     "description": "Tarkuni feels like a love letter to togetherness. It is the kind of place you go not just to escape, but to reconnect with family, old friends, or even with yourself. The moment I walked through the doors of Tarkuni, I felt a quiet calm. It is completely private, beautifully designed, and grounded in the spirit of the land.",
+     "units": [
+      "Exclusive-use homestead: five en-suite bedrooms for up to 10 guests"
+     ],
+     "features": [
+      "Exclusive-use villa with five en-suite bedrooms, perfect for families or groups up to 10 guests",
+      "Personal chef, butler, and full team dedicated solely to your stay and preferences",
+      "Private plunge pool, fire pit boma, spa treatment room, and expansive indoor-outdoor living areas",
+      "Ideal for multigenerational travel, milestone celebrations, or slow, soulful retreats in total privacy"
+     ],
+     "experiences": [
+      "Design each day your way with a private guide, vehicle, and tailor-made wilderness experiences",
+      "Track rare species like pangolin, aardvark, and cheetah across the private reserve",
+      "Enjoy horseback safaris across the open dunes with your group, an unforgettable shared memory",
+      "Explore San rock art, stargaze from your deck, or sleep out in the wild at Malori"
+     ],
+     "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni",
+     "gallery": [
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-boma-sunset",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-deck",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-firepit",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-pool",
+      "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-suite"
+     ],
+     "rooms": [
+      {
+       "name": "Tarkuni Suite",
+       "capacity": 2,
+       "quantity": 6,
+       "beds": "King",
+       "from": null,
+       "currency": "USD",
+       "basis": "per_person_per_night",
+       "photos": [
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-boma-sunset",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-deck",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-firepit",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-pool",
+        "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-suite"
+       ]
+      }
+     ],
+     "fromRate": null
+    }
+   ]
   }
  ]
 }

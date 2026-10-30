@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import { TRIPS, type Trip, type TripImg } from "./trips";
-import { buildMetadata } from "@/lib/seo";
+import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { SAMPLE_ALIIKAI } from "./preview/aliikai";
 
 // Photos: TRIP_IMAGES below, plus any "images" map in the trip's own JSON, keyed by
@@ -22,7 +22,10 @@ export function mapHtml(t: Trip) {
 }
 
 export function tripMetadata(t: Trip): Metadata {
-  return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, noindex: !t.copy_approved }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
+  const m = TRIP_IMAGES[t.id];
+  const img = m?.hero ?? TRIP_SLIDES[t.id]?.[0] ?? (m ? Object.values(m.images)[0] : undefined) ?? Object.values(t.images ?? {})[0];
+  const image = img ? { url: img.url.startsWith("/") ? absoluteUrl(img.url) : img.url, alt: img.alt } : undefined;
+  return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, image, noindex: !t.copy_approved }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
 }
 
 // Library photos (Aliikai's owner images, imported from wildearthstays.com),

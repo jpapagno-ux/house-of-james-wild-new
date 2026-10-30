@@ -49,12 +49,12 @@ export const RAJA_VS_KOMODO = COMPARE;
 const SOURCES_RAJA = [
   { title: "WWF: Raja Ampat, the Coral Triangle", url: "https://wwf.panda.org/knowledge_hub/where_we_work/coraltriangle/coraltrianglefacts/places/rajaampatindonesia" },
   { title: "Gecko Routes: how to get to Raja Ampat", url: "https://www.geckoroutes.com/indonesia/raja-ampat-how-to-get-there/" },
-  { title: "Aliikai Voyage: 2027 rates & availability", url: "https://aliikai-voyage.com/rates-availability-2027/?tab=1" },
+  { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
 ];
 const SOURCES_KOMODO = [
   { title: "Komodo National Park (UNESCO 1991; area and islands)", url: "https://en.wikipedia.org/wiki/Komodo_National_Park" },
   { title: "Komodo vs Raja Ampat: seasons and conditions", url: "https://www.komodoisland.net/komodo-vs-raja-ampat/" },
-  { title: "Aliikai Voyage: 2027 rates & availability", url: "https://aliikai-voyage.com/rates-availability-2027/?tab=1" },
+  { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
 ];
 
 export const GUIDES: Record<string, Guide> = {

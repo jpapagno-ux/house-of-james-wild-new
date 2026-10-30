@@ -22,7 +22,7 @@ export const metadata = buildMetadata({
   description: "A founder-led travel house exploring since 1982. Every stay, camp, ship and route in the Ledger is walked, sailed or slept in first. Here's why James is still going.",
   path: PATH,
   image: IMG.elephants,
-  noindex: true,
+  noindex: false /* approved by James, 28 Oct 2026 */,
 });
 
 export default function AboutPage() {

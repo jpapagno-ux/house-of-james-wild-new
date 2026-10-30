@@ -4,19 +4,19 @@
 
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
-  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #EAE6DF; }
+  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #F6F4F0; }
   /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
-  .theme-sea { --jw-accent: 30 95 115; --jw-accent-deep: 18 59 85; --jw-accent-light: 156 207 216; --jw-accent-hex: #1E5F73; --jw-accent-deep-hex: #123B55; --jw-card: #E3EBEC; }
+  .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
   /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
-  :root:has(.theme-sea-page) { --jw-accent: 30 95 115; --jw-accent-deep: 18 59 85; --jw-accent-light: 156 207 216; --jw-accent-hex: #1E5F73; --jw-accent-deep-hex: #123B55; --jw-card: #E3EBEC; }
+  :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
   html { scroll-behavior: smooth; overflow-x: clip; }
-  body { background: #F4F1ED; color: #2D2A26; font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body { background: #FFFFFF; color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 }
 
 @layer components {
-  .ledger-page { background: #F4F1ED; color: #2D2A26; }
+  .ledger-page { background: #FFFFFF; color: #2D2A26; }
   .ledger-card { background: var(--jw-card); }
   .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
   .ledger-crimson { color: var(--jw-accent-hex); }
@@ -24,11 +24,12 @@
   .ledger-border { border-color: rgba(45, 42, 38, 0.16); }
   .ledger-rule { border-color: rgba(45, 42, 38, 0.28); }
   .ledger-muted { color: rgba(45, 42, 38, 0.68); }
-  .ledger-display { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }
-  .ledger-body { font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; }
+  .ledger-display { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; }
+  .ledger-body { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
   .ledger-hand { font-family: 'Caveat', cursive; }
   .ledger-eyebrow {
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 500;
     font-size: 10px;
     letter-spacing: 0.24em;
     text-transform: uppercase;
@@ -37,14 +38,14 @@
   .ledger-btn {
     display: inline-flex; align-items: center; gap: .5rem;
     border: 1px solid var(--jw-accent-hex); color: var(--jw-accent-hex);
-    font-family: 'EB Garamond', Georgia, serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 500; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
     padding: 9px 18px; background: transparent; cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
   }
   .ledger-btn:hover { background: var(--jw-accent-hex); color: #F4F1ED; }
   .ledger-btn--solid { background: var(--jw-accent-hex); color: #F4F1ED; padding: 12px 22px; }
   .ledger-btn--solid:hover { background: var(--jw-accent-deep-hex); border-color: var(--jw-accent-deep-hex); }
-  .ledger-btn-ghost { color: #2D2A26; font-family: 'EB Garamond', Georgia, serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
+  .ledger-btn-ghost { color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
   .ledger-btn-ghost:hover { color: var(--jw-accent-hex); border-color: var(--jw-accent-hex); }
 }
 
@@ -108,12 +109,12 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .journal-col { max-width: 44rem; margin-inline: auto; padding-inline: 1.25rem; }
 .journal-wide { max-width: 72rem; margin-inline: auto; padding-inline: 1.25rem; }
 @media (min-width: 768px) { .journal-wide { padding-inline: 2.5rem; } }
-.journal-prose { font-family: 'EB Garamond', Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1.7; }
+.journal-prose { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 18px; line-height: 1.75; }
 .journal-prose > * + * { margin-top: 1.15em; }
 .journal-prose h2 { font-size: 1.75rem; line-height: 1.2; margin-top: 2.4em; text-wrap: balance; }
 @media (min-width: 768px) { .journal-prose h2 { font-size: 2.15rem; } }
 .journal-prose h2 + * { margin-top: 0.8em; }
-.journal-lead::first-letter { font-family: 'Playfair Display', Georgia, serif; float: left; font-size: 4.6em; line-height: 0.82; padding: 0.06em 0.12em 0 0; color: rgb(var(--jw-accent)); }
+.journal-lead::first-letter { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; float: left; font-size: 4.6em; line-height: 0.82; padding: 0.06em 0.12em 0 0; color: rgb(var(--jw-accent)); }
 .journal-list { list-style: none; padding: 0; border-top: 1px solid rgba(45,42,38,.14); }
 .journal-list li { padding: .55em 0 .55em 1.4em; border-bottom: 1px solid rgba(45,42,38,.14); position: relative; line-height: 1.45; }
 .journal-list li::before { content: ""; position: absolute; left: .2em; top: 1.05em; width: .45em; height: .45em; border: 1px solid rgb(var(--jw-accent)); transform: rotate(45deg); }
@@ -124,14 +125,41 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .journal-toc li { display: grid; grid-template-columns: 2.2rem 1fr; align-items: baseline; font-size: 16.5px; line-height: 1.35; }
 .journal-toc a:hover { color: rgb(var(--jw-accent)); }
 .journal-pull { margin-block: 3.5rem 1rem; padding-top: 2rem; border-top: 1px solid rgb(var(--jw-accent) / .5); }
-.journal-pull blockquote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.3; text-wrap: balance; }
+.journal-pull blockquote p { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; font-style: italic; font-size: 1.7rem; line-height: 1.3; text-wrap: balance; }
 @media (min-width: 768px) { .journal-pull blockquote p { font-size: 2.2rem; } }
 /* The closing quote beside a black-and-white lion whose white ground melts
    into the paper (multiply), so the photograph has no edge. */
 .journal-lion { display: grid; gap: 1.5rem; align-items: center; }
 .journal-lion-art { position: relative; width: 100%; max-height: 92vh; mix-blend-mode: multiply; }
-.journal-lion blockquote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.7rem; line-height: 1.28; text-wrap: balance; }
+.journal-lion blockquote p { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; font-style: italic; font-size: 1.7rem; line-height: 1.28; text-wrap: balance; }
 @media (min-width: 900px) {
   .journal-lion { grid-template-columns: 1fr 0.85fr; gap: 3rem; }
   .journal-lion blockquote p { font-size: clamp(2rem, 2.6vw, 2.75rem); }
+}
+
+/* Outside @layer so Tailwind never drops a theme chosen from data. */
+/* The six volumes (volume kit, 29 Oct 2026): each volume's leather colour drives the accent on its pages. lib/volumes.ts is the source. */
+.theme-vol-stays { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
+:root:has(.theme-vol-stays-page) { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
+.theme-vol-safaris { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
+:root:has(.theme-vol-safaris-page) { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
+.theme-vol-gatherings { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
+:root:has(.theme-vol-gatherings-page) { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
+.theme-vol-voyages { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+:root:has(.theme-vol-voyages-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+.theme-vol-europe { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
+:root:has(.theme-vol-europe-page) { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
+.theme-vol-overland { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
+:root:has(.theme-vol-overland-page) { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
+
+/* ---------- Volume kit: stamps, offer marks, Final Call board (components/ledger/VolumeKit.tsx) ---------- */
+.jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 3px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
+.jw-flap::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(0, 0, 0, 0.45); }
+.jw-flap-col { display: block; animation: jw-flap 9s steps(1) infinite; }
+@keyframes jw-flap { 0% { transform: translateY(0); } 2% { transform: translateY(calc(var(--h) * -1)); } 4% { transform: translateY(calc(var(--h) * -2)); } 6% { transform: translateY(calc(var(--h) * -3)); } 8% { transform: translateY(calc(var(--h) * -4)); } 10% { transform: translateY(calc(var(--h) * -5)); } 12% { transform: translateY(calc(var(--h) * -6)); } 14%, 100% { transform: translateY(calc(var(--h) * -7)); } }
+.jw-flap .jw-flap-col { transform: translateY(calc(var(--h) * -7)); }
+@media (prefers-reduced-motion: reduce) {
+  .jw-flap-col { animation: none !important; transform: translateY(calc(var(--h) * -7)) !important; }
+  .jw-timemark-live { display: none !important; }
+  .jw-timemark-still { display: inline-flex !important; }
 }

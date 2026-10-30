@@ -1,3 +1,4 @@
+import type React from "react";
 import { Feather, Hourglass, Lamp, Search, Signpost, Sparkles } from "lucide-react";
 import Signature from "./Signature";
 import Image from "next/image";
@@ -8,7 +9,7 @@ import { SKETCHES, signoffFor, type Verdict, type VerdictTag } from "@/lib/conte
 // Ledger & Linger cover, a sign-off line and the signature, written in ink.
 const ICON: Record<VerdictTag, typeof Feather> = { "Worth your time?": Hourglass, "Look closer": Search, "After dark": Lamp, "Unexpected beauty": Sparkles, Curiosity: Feather, "The dead end": Signpost };
 
-export default function VerdictCard({ name, v, k }: { name: string; v: Verdict; k: string }) {
+export default function VerdictCard({ name, v, k, stamp }: { name: string; v: Verdict; k: string; stamp?: React.ReactNode }) {
   const signoff = v.signoff ?? signoffFor(k);
   return (
     <section id="verdict" className="mt-14 md:mt-20 scroll-mt-32" aria-labelledby="verdict-heading">
@@ -35,7 +36,10 @@ export default function VerdictCard({ name, v, k }: { name: string; v: Verdict; 
             <p className="ledger-eyebrow !text-[9px] !text-[#8a7f70] mt-1">James Wild</p>
           </div>
         </div>
+        {/* The volume's ink stamp, pressed beside James's note (volume kit). */}
+        {stamp && <div className="hidden lg:block absolute left-full top-1/2 -translate-y-1/2 ml-10">{stamp}</div>}
       </div>
+      {stamp && <div className="lg:hidden mt-6 flex justify-center">{stamp}</div>}
     </section>
   );
 }

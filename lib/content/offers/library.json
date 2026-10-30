@@ -1,0 +1,322 @@
+[
+ {
+  "id": "OFR-2026-000008",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-longitude-131",
+  "name": "Signature Longitude",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 4 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing; dates confirmed when you book"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 4 nights. Includes a A$250 scenic flight credit per tent, a A$100 lodge credit, private Dune Top dining, a guided Uluru Base Walk, all dining and drinks (French Champagne included) and return Ayers Rock Airport transfers. Flight and lodge credits cannot be combined; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000009",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-longitude-131",
+  "name": "Classic Longitude",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 22 December to 4 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 3 nights. Includes a A$100 lodge credit, a guided Uluru Base Walk, all dining and drinks (Champagne included) and return airport transfers. Not available 22 Dec to 4 Jan; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000010",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-silky-oaks-lodge",
+  "name": "Signature Silky",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 4 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing; dates confirmed when you book"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 4 nights. Includes French Champagne on arrival, a A$200 lodge credit, daily breakfast and matched-wine dinner in the Treehouse, an evening drinks hour, daily open-air yoga and a daily return shuttle to Port Douglas. Not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000011",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-silky-oaks-lodge",
+  "name": "Classic Silky",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 22 December to 4 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 3 nights. Includes a A$100 lodge credit, daily breakfast and matched-wine dinner, an evening drinks hour, daily yoga and a daily Port Douglas shuttle. Not available 22 Dec to 4 Jan; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000012",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-southern-ocean-lodge",
+  "name": "Classic SOL",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 18 December to 16 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 3 nights. Includes a A$100 lodge credit, all dining and drinks (premium wines and spirits), signature guided experiences and return airport transfers. Not available 18 Dec to 16 Jan; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000013",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-huka-lodge",
+  "name": "Classic Huka",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 18 December to 16 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 3 nights. Includes one complimentary lunch, country breakfast, pre-dinner drinks and canapés, dinner with premium matched wines and return Taupō Airport transfers. Not available 18 Dec to 16 Jan; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000014",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-the-louise",
+  "name": "Classic Louise",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 24 December to 2 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 3 nights. Includes a A$100 lodge credit, daily breakfast, pre-dinner drinks and a matched-wine dinner. Not available 24 Dec to 2 Jan; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000015",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "clayoquot-wilderness-resort",
+  "name": "Bedwell Safari",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 7 nights, pay 6",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing; dates confirmed when you book"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Minimum 7 nights. Includes one free night, a 60-minute massage per adult, a C$500 lodge credit, all dining and drinks and guided experiences. Per tent, two guests; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000016",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-tierra-atacama",
+  "name": "Atacama in Focus",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 5 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 20 December 2026 to 1 January 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "5 nights on the all-inclusive rate, with early check-in and late check-out when available. No buyouts or groups; not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000017",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beckon-tierra-atacama",
+  "name": "Spirit of Chile (Atacama)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 7 nights, save 20%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 20 December 2026 to 1 January 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "7+ nights across Tierra Atacama and Tierra Patagonia within 30 days, at least 3 nights per lodge. Includes a room upgrade and early check-in or late check-out when available. No extra-person or group bookings.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000018",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "tierra-patagonia",
+  "name": "Patagonia in Focus",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 5 nights, save 10%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 20 December 2026 to 1 January 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "5 nights including all dining and open bar, daily excursions and airport transfers, with early or late check-out when available. No buyouts or groups.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000019",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "tierra-patagonia",
+  "name": "Spirit of Chile (Patagonia)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 7 nights, save 20%",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-03-31",
+   "text": "Ongoing, except 20 December 2026 to 1 January 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "7+ nights across Tierra Patagonia and Tierra Atacama within 30 days, at least 3 nights per lodge. Includes a room upgrade, all dining and open bar, daily excursions and airport transfers. No extra-person, group or partner-hotel bookings.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000035",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Visit Year-Round (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 4 nights, half off the first",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-12-31",
+   "text": "Year-round, 2026 and 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Four nights or more with 50% off the first night. Not combinable with other offers; must be requested at booking.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000036",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Stay Longer for Less (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 5 nights, pay 4",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-12-31",
+   "text": "Year-round, 2026 and 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Five nights with one complimentary night (2026: fifth night free when booking four). Not combinable; request at booking.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000037",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "A Seasonal Escape (Tswalu)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "4 nights, first night free",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-11-30",
+   "text": "March to April and October to November"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Four nights with the first night complimentary, on set travel days (2027: Sunday and Thursday in, Thursday and Monday out). Not combinable.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000038",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Stay 7, Pay 5 (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 7 nights, pay 5",
+  "travel": {
+   "from": "2027-01-04",
+   "to": "2027-12-17",
+   "text": "4 January to 31 May and 1 September to 17 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Seven nights with two complimentary. Tarkuni as one seven-night sole-use stay. Not combinable.",
+  "volume": "safaris"
+ }
+]

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import TravelNotesForm from "@/components/TravelNotesForm";
 
 // The close of every destination page: the advisors who know the place,
 // and Travel Notes for news of what's filed next.
@@ -22,11 +22,7 @@ export default function PlanBand({ place, compassHref = "#compass" }: { place: s
         <p className="ledger-eyebrow ledger-crimson">Travel Notes</p>
         <p className="ledger-display text-2xl mt-2">Hear when we file something new in {place}.</p>
         <p className="mt-3 text-[15px] ledger-muted">New stays and ships before they&rsquo;re announced, plus the stay-longer offers. One letter a month.</p>
-        <form className="mt-6 flex gap-2" action="/travel-notes">
-          <label htmlFor="tn-email" className="sr-only">Email address</label>
-          <input id="tn-email" name="email" type="email" placeholder="Your email" className="flex-1 min-w-0 bg-paper border ledger-border px-3 py-2 text-[16px] outline-none focus:border-crimson" />
-          <button type="submit" className="ledger-btn inline-flex items-center gap-2"><Mail className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Join</button>
-        </form>
+        <TravelNotesForm source={`destination:${place}`} className="mt-6" />
       </div>
     </section>
   );

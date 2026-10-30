@@ -20,7 +20,9 @@ export type CountryData = {
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 const M = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "wet")) as Month[];
 
-export const COUNTRIES: CountryData[] = [
+import LIBRARY from "./countries-library.json";
+
+const HAND: CountryData[] = [
   {
     slug: "costa-rica", name: "Costa Rica", region: "central-america", regionName: "Central America",
     subtitle: "Where Nature Leads the Way",
@@ -59,13 +61,13 @@ export const COUNTRIES: CountryData[] = [
     slug: "south-africa", name: "South Africa", region: "africa", regionName: "Africa",
     subtitle: "Where Safari Becomes a Story",
     leading: "From fynbos-clad coasts and whale-watching bays to Big Five savannas and world-class vineyards, South Africa stitches dramatic landscapes with refined hospitality: Cape Town's city elegance, private reserve safaris and coastal nature retreats in one journey.",
-    hero: { src: `${WF}/6a86e5f120e922c3d605e835_68659439d6a02991b1610a80_GettyImages-813447208.jpeg`, alt: "South Africa: a safari vehicle in the bush at golden hour" },
+    hero: { src: `https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/site/destinations/south-africa/getty-813447208`, alt: "South Africa: a safari vehicle in the bush at golden hour" },
     story: [
-      { eyebrow: "South Africa · the place", title: "The World's Most Complete African Experience", image: { src: `${WF}/6980bfc81575677b0dbcc48c_stellenbosch-vineyards-photo-courtesy-of-stellenbosch-wine-routeswines-of-south-africa.jpg`, alt: "Vineyards below the mountains of Stellenbosch, Cape Winelands" }, blocks: [
+      { eyebrow: "South Africa · the place", title: "The World's Most Complete African Experience", image: { src: `https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/jwco/site/destinations/south-africa/stellenbosch-vineyards`, alt: "Vineyards below the mountains of Stellenbosch, Cape Winelands" }, blocks: [
         { h: "A continent in one country", p: "Big Five game-viewing in Kruger and private concessions, coastal wildlife and whale country along the Southern Cape, and exceptional dining amid the Winelands. Sabi Sands, Kruger, the Garden Route and the Cape each offer a distinct cast of species, scenery and culture, so a single itinerary can feel like several trips in one." },
         { h: "Why travellers return", p: "Accessible infrastructure, high guiding standards and a range of malaria-free options make South Africa an ideal first African journey, and one to return to: a predator-focused photography safari, a wine and culinary chapter in Franschhoek and Stellenbosch, or a private multi-region itinerary." },
       ] },
-      { eyebrow: "Explore South Africa", title: "How to Experience the Country", image: { src: `${WF}/6980c19e95e4d3da5160d6db_65c7a8de-1b4b-f0bf-fb3b-b2e96da8de85.jpg`, alt: "South Africa safari scene" }, blocks: [
+      { eyebrow: "Explore South Africa", title: "How to Experience the Country", image: { src: `https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/tengile-malamala/tengile-malamala-leopard-portrait`, alt: "A leopard in the Sabi Sand, South Africa" }, blocks: [
         { h: "Safari and the Big Five", p: "Kruger and the adjoining private reserves offer the best chance of lion, elephant, leopard, rhino and buffalo, from intimate lodges and tented camps to historic choices like Kruger Shalati." },
         { h: "Cape Town and whale country", p: "Cape Town is the base for culture, seafood and Table Mountain, with penguin colonies and whale-watching along Walker Bay; Ellerman House, The Silo and Grootbos sit on the coast." },
         { h: "The Winelands", p: "Franschhoek and Stellenbosch pair vineyard estates with fine dining: Babylonstoren, Leeu Estates and La Residence, a short scenic drive from Cape Town." },
@@ -95,5 +97,9 @@ export const COUNTRIES: CountryData[] = [
     flyInto: "JNB · CPT", bestShort: "May–Oct safari",
   },
 ];
+
+// Country pages generated from the library (scripts/export-countries.py), 28 Oct 2026.
+const FROM_LIBRARY = (LIBRARY.countries as unknown as (CountryData & { atlasName?: string })[]).map(({ atlasName: _a, ...c }) => c as CountryData);
+export const COUNTRIES: CountryData[] = [...HAND, ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))];
 
 export const countryBySlug = (region: string, slug: string) => COUNTRIES.find((c) => c.region === region && c.slug === slug);

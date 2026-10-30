@@ -1,0 +1,50 @@
+# Monthly currency refresh (James, 30 Oct 2026). On the 1st of every month,
+# pulls the ECB reference rate (rand per US dollar), rewrites
+# lib/content/rates/fx.json, checks the site still builds, and commits; Vercel
+# deploys. The rate pages then show the new rate and its date. A move of more
+# than 10% in a month fails the run (GitHub emails the repo owner) instead of
+# repricing on a bad feed. Run it by hand from the Actions tab any time.
+name: Currency refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 10 1 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fx-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - name: Fetch the rate
+        run: node scripts/update-fx.mjs
+      - name: Changed?
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then echo "changed=no" >> "$GITHUB_OUTPUT"; else echo "changed=yes" >> "$GITHUB_OUTPUT"; git diff; fi
+      - if: steps.diff.outputs.changed == 'yes'
+        run: npm ci
+      - if: steps.diff.outputs.changed == 'yes'
+        name: Test and build
+        run: npm test && npm run build
+      - if: steps.diff.outputs.changed == 'yes'
+        name: Commit
+        run: |
+          git config user.name "James Wild & Co currency refresh"
+          git config user.email "fx-refresh@users.noreply.github.com"
+          git add lib/content/rates/fx.json
+          git commit -m "Currency refresh: $(node -p "const f=require('./lib/content/rates/fx.json');Object.entries(f.rates).map(([k,v])=>k+' '+v).join(', ')+' per US\$1 ('+f.date+')'")"
+          git pull --rebase origin main
+          git push

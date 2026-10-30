@@ -74,7 +74,7 @@ export const POSTS: Record<string, JournalPost> = {
     body: CAYUGA_BODY,
     figures: [
       { after: "lead", layout: "bleed", images: [{ url: cy("aguas-claras/aguas-claras-11"), alt: "The Caribbean coast and reef near Playa Chiquita from the air", w: 1920, h: 1438, caption: "Costa Rica's Caribbean coast, near Aguas Claras.", credit: "Aguas Claras" }] },
-      { after: "why-i-ve-followed-hans-pfister-since-1994", layout: "wide", images: [{ url: cy("gallery/experiences-04", false), alt: "A team of guides and hotel staff walking together outdoors at Senda Monteverde", w: 2560, h: 1707, caption: "The people are the point: the team at Senda Monteverde.", credit: "Cayuga Collection" }] },
+      { after: "the-work-behind-the-awards", layout: "wide", images: [{ url: cy("gallery/experiences-04", false), alt: "A team of guides and hotel staff walking together outdoors at Senda Monteverde", w: 2560, h: 1707, caption: "The people are the point: the team at Senda Monteverde.", credit: "Cayuga Collection" }] },
       { after: "what-is-the-cayuga-collection", layout: "pair", images: [
         { url: cy("aguas-claras/aguas-claras-02"), alt: "A wooden Caribbean-style cottage among banana leaves at Aguas Claras", w: 1920, h: 1280, caption: "Aguas Claras feels like the Caribbean coast.", credit: "Aguas Claras" },
         { url: cy("senda-monteverde/senda-monteverde-06", false), alt: "A guest with coffee on a balcony in the cloud forest at Senda Monteverde", w: 2880, h: 1921, caption: "Senda feels rooted in the cloud forest.", credit: "Senda Monteverde" },
@@ -100,7 +100,8 @@ export const POSTS: Record<string, JournalPost> = {
       { q: "Which Cayuga hotel is best for a honeymoon?", a: "Kura is the clearest adults-only choice for privacy and ocean views. Aguas Claras can suit couples drawn to art and Caribbean culture, while Isla Palenque offers a more remote island experience." },
       { q: "Which Cayuga hotels are best for families?", a: "Arenas del Mar is a strong first choice for an accessible Costa Rica family trip. Senda Monteverde can suit active families, and Isla Palenque works for those wanting nature and island time. Always confirm current age and room-occupancy policies." },
       { q: "Can I combine several Cayuga properties?", a: "Yes. Two contrasting properties in one country usually create the best-paced journey. Allow at least three nights in each and account for road, boat or domestic-flight connections." },
-      { q: "How long has James Papagno known the Cayuga Collection's founders?", a: "James has followed co-founder Hans Pfister's work since 1994, from his early days selling Central American lodges, and has watched Hans and Andrea Bonilla build the Cayuga Collection since it launched in 2003." },
+      { q: "How long has James Papagno known the Cayuga Collection's founders?", a: "James has followed the Cayuga team and co-founder Hans Pfister since 2003, the year Hans and Andrea Bonilla launched Cayuga Hospitality, and has always been inspired by their commitment to hospitality and sustainability." },
+      { q: "What awards has the Cayuga Collection won?", a: "The Cayuga Collection won the WTTC Tourism for Tomorrow People award in 2018 and a Travel + Leisure Global Vision Award in 2022. In the 2026 MICHELIN Guide selection, Kura and Aguas Claras each hold one MICHELIN Key, and Isla Palenque was named a National Geographic Unique Lodge of the World in 2019." },
       { q: "Does the Cayuga Collection have special offers?", a: "Yes, each hotel runs its own. For example, Kura offers stay 4 nights, pay 3 on travel until 19 December 2026. The 2027 offers are being updated, so ask James Wild & Co for the current terms before you book." },
       { q: "How can I verify whether a hotel is genuinely sustainable?", a: "Look beyond marketing language. Ask about local employment, wastewater, energy, food sourcing, plastic use, habitat protection, community partnerships and independent certification. Clear, specific answers are more useful than broad claims." },
     ],
@@ -121,6 +122,7 @@ export const POSTS: Record<string, JournalPost> = {
     keywords: ["sustainable luxury hotels Central America", "Cayuga Collection hotels", "sustainable hotels Costa Rica", "eco luxury Central America", "sustainable boutique hotels", "Cayuga Collection Costa Rica", "Kura Uvita", "Arenas del Mar", "Senda Monteverde", "Isla Palenque"],
     about: ["Cayuga Collection", "Sustainable luxury hotels", "Costa Rica", "Central America"],
     oldUrl: "/memoir/james-papagno-on-the-cayuga-collection-and-central-americas-sustainable-travel-renaissance",
+    approved: true, // James, 27 Oct 2026
   },
   "africa-inspired-wild-and-co-safaris": {
     slug: "africa-inspired-wild-and-co-safaris",
@@ -183,6 +185,7 @@ export const POSTS: Record<string, JournalPost> = {
     keywords: ["African safari planning", "Wild & Co Safaris", "private African safaris", "luxury safari planning", "South Africa safari", "Tswalu Kalahari", "experienced safari planner", "personalized African safari", "safari guide"],
     about: ["African safari planning", "Tswalu Kalahari", "Wild & Co Safaris", "Safari guiding"],
     oldUrl: "/memoir/africa-inspired-wild-and-co-safaris",
+    approved: true, // James, 27 Oct 2026
   },
   "monwana-couples-first-safari": {
     slug: "monwana-couples-first-safari",
@@ -197,7 +200,7 @@ export const POSTS: Record<string, JournalPost> = {
     trip: "May 2026",
     published: "2026-09-15",
     modified: "2026-10-27",
-    hero: { url: `${J}/james-miriam-game-drive.jpg`, alt: "James Papagno and his wife in a Monwana game vehicle on Thornybush, morning light", w: 2576, h: 1932 },
+    hero: { url: `${J}/james-miriam-game-drive.jpg`, alt: "James Papagno and his wife in a Monwana game vehicle on Thornybush, morning light", w: 2576, h: 1932, credit: "Photograph: our Monwana guide" },
     film: {
       id: "YR_8uiBObZ4",
       title: "Wild Together: My Wife's First Safari, Monwana, Thornybush",
@@ -208,8 +211,8 @@ export const POSTS: Record<string, JournalPost> = {
     body: MONWANA_BODY,
     figures: [
       { after: "lead", layout: "pair", images: [
-        { url: `${J}/miriam-first-drive.jpg`, alt: "James's wife wrapped in a blanket on the back row of the game vehicle on her first morning drive", w: 1932, h: 2576, caption: "Her first morning drive. The blankets are not for show." },
-        { url: `${J}/coffee-stop-james.jpg`, alt: "James at the coffee stop beside the Monwana game vehicles on Thornybush", w: 1932, h: 2576, caption: "The coffee stop. A splash of Amarula is traditional, apparently." },
+        { url: `${J}/miriam-first-drive.jpg`, alt: "James's wife wrapped in a blanket on the back row of the game vehicle on her first morning drive", w: 1932, h: 2576, caption: "Her first morning drive. The blankets are not for show.", credit: "Photograph: our Monwana guide" },
+        { url: `${J}/coffee-stop-james.jpg`, alt: "James at the coffee stop beside the Monwana game vehicles on Thornybush", w: 1932, h: 2576, caption: "The coffee stop. A splash of Amarula is traditional, apparently.", credit: "Photograph: our Monwana guide" },
       ] },
       { after: "what-changes-when-you-share-a-safari-as-a-couple", layout: "bleed", images: [{ url: hi(`${MORE}/more-main-lodge-05`, false), alt: "Monwana's main lodge reflected in the dam at dusk, Thornybush", w: 3000, h: 2000, caption: "The main lodge at dusk.", credit: "Photograph: Monwana" }] },
       { after: "what-is-monwana-actually-like", layout: "pair", images: [
@@ -222,7 +225,7 @@ export const POSTS: Record<string, JournalPost> = {
       ] },
       { after: "how-many-nights-should-couples-stay-at-monwana", layout: "tall", images: [
         { url: `${J}/nyala-plunge-pool.jpg`, alt: "A nyala ewe and her calf grazing beside the suite's plunge pool at Monwana", w: 1932, h: 2576, caption: "Midday visitors at the plunge pool." },
-        { url: `${J}/miriam-suite-afternoon.jpg`, alt: "James's wife resting in their suite at Monwana between drives", w: 1932, h: 2576, caption: "The afternoon pause, taken seriously." },
+        { url: `${J}/miriam-suite-afternoon.jpg`, alt: "James's wife resting in their suite at Monwana between drives", w: 1932, h: 2576, caption: "The afternoon pause, taken seriously.", credit: "Photograph: our Monwana guide" },
       ] },
       { after: "what-should-first-time-safari-travelers-expect-each-day", layout: "pair", images: [
         { url: `${J}/breakfast-deck.jpg`, alt: "Breakfast on the deck at Monwana: fruit, honeycomb, preserves and pastries", w: 1932, h: 2576, caption: "Breakfast after the morning drive." },
@@ -261,3 +264,14 @@ export const POSTS: Record<string, JournalPost> = {
 export const POST_LIST = Object.values(POSTS).sort((a, b) => b.published.localeCompare(a.published));
 export const postsForStay = (slug: string) => POST_LIST.filter((p) => p.stays.some((s) => s.slug === slug));
 export const journalPath = (slug: string) => `/journal/${slug}`;
+
+/**
+ * Who to credit for a Journal photograph. Partner photos carry their own credit.
+ * Photos from James's own camera (served from /journal/) are credited to him,
+ * except the ones he appears in, which are credited to the house.
+ */
+export function photoCredit(img: { url: string; alt: string; credit?: string }): string | undefined {
+  if (img.credit) return img.credit;
+  if (img.url.startsWith("/journal/")) return /\bJames\b(?!'s)/.test(img.alt) ? "James Wild & Co" : "Photograph: James Papagno";
+  return undefined;
+}

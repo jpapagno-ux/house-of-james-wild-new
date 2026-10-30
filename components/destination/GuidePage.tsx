@@ -149,7 +149,7 @@ export default function GuidePage({ g }: { g: Guide }) {
 
           <section className="mt-10 text-[13px] ledger-muted" aria-label="Sources">
             <p className="ledger-eyebrow">Sources</p>
-            <ul className="mt-2 space-y-1">{g.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener" className="underline underline-offset-4 hover:ledger-crimson">{s.title}</a></li>)}</ul>
+            <ul className="mt-2 space-y-1">{g.sources.map((s) => <li key={s.url}><a href={s.url} {...(s.url.startsWith("/") ? {} : { target: "_blank", rel: "noopener" })} className="underline underline-offset-4 hover:ledger-crimson">{s.title}</a></li>)}</ul>
           </section>
 
           <PlanBand place={g.name} compassHref="/compass" />

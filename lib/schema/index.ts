@@ -82,7 +82,7 @@ export function lodging(s: {
   path: string;
   name: string;
   description: string;
-  image?: string[];
+  image?: (string | Thing)[];
   subtype?: "LodgingBusiness" | "Resort" | "Hotel" | "Campground";
   locality?: string;
   country?: string;
@@ -148,3 +148,22 @@ export function article(a: { path: string; headline: string; description: string
 }
 
 export const graph = (...nodes: Thing[]) => ({ "@context": "https://schema.org", "@graph": nodes });
+
+/** A photograph as schema.org ImageObject, with the owner's credit when we have one. */
+export function imageObject(url: string, caption?: string, credit?: string): Thing {
+  return {
+    "@type": "ImageObject",
+    contentUrl: url,
+    url,
+    ...(caption ? { caption } : {}),
+    ...(credit
+      ? {
+          creditText: credit,
+          copyrightNotice: `© ${credit}`,
+          // James's own photographs point at the founder's Person entity; partner photos name the partner.
+          creator: credit === "James Papagno" ? { "@id": ids.founder } : { "@type": "Organization", name: credit },
+          ...(credit === "James Papagno" || credit === "James Wild & Co" ? { copyrightHolder: { "@id": ids.house } } : {}),
+        }
+      : {}),
+  };
+}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TravelNotesForm from "@/components/TravelNotesForm";
 import { CalendarClock } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
@@ -94,11 +95,7 @@ export default function WorkshopsPage() {
                   <p className="ledger-display text-[1.4rem] leading-snug">The next season is being scheduled.</p>
                   <p className="mt-1 text-[15.5px] ledger-muted max-w-2xl">Dates, times and hosts post here first. Each session links to the stay, ship or route it covers, and the recording follows.</p>
                 </div>
-                <form action="/travel-notes" className="flex gap-2 w-full md:w-auto">
-                  <label htmlFor="ws-email" className="sr-only">Email address for new session dates</label>
-                  <input id="ws-email" name="email" type="email" placeholder="Your email" className="flex-1 min-w-0 md:w-56 bg-paper border ledger-border px-3 py-2 text-[16px] outline-none focus:border-crimson" />
-                  <button type="submit" className="ledger-btn">Tell me</button>
-                </form>
+                <TravelNotesForm source="workshops" button="Tell me" label="Email address for new session dates" className="w-full md:w-auto" />
               </div>
             )}
           </section>

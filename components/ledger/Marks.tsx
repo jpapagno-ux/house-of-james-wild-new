@@ -24,7 +24,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 const OX = "#7A1E1E";
 const RUST = "#94512F";
 const LIGHT = "#F4F1EC";
-const SERIF = "'EB Garamond', Georgia, serif";
+const SERIF = "'Cormorant Garamond', Georgia, serif";
 const MONO = "'IBM Plex Mono', ui-monospace, monospace";
 const SCRIPT = "'Mrs Saint Delafield', cursive";
 export type Tone = "ink" | "light";
@@ -104,7 +104,7 @@ function stampText(kind: LedgerStampKind, volume: Volume): StampText {
   const ledger = LEDGER_NAME[volume];
   switch (kind) {
     case "Founder favorite":
-      return { top: "JAMES WILD & CO.", bottom: "★ RETURNED TO ★", small: "THE", big: "FOUNDER FAVORITE", sub: "J. W.", icon: "star" };
+      return { top: "JAMES WILD & CO.", bottom: "★ STAYED & LOVED ★", small: "THE", big: "FOUNDER FAVORITE", sub: "J. W.", icon: "star" };
     case "Field verified":
       return { top: ledger, bottom: "★ TOURED & STAYED ★", small: "PERSONALLY", big: "FIELD VERIFIED", sub: "J. W.", icon: "binoculars" };
     case "Founder inspected":

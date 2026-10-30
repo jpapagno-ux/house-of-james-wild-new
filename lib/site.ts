@@ -226,6 +226,9 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },
+  // South Africa Overland routes (/overland/south-africa/*): routes approved by James 30 Oct 2026,
+  // copy not yet signed off, so the pages are noindex and stay out of the sitemap and llms.txt.
+  // Add each path here (and set copy_approved in its trip file) when he approves it.
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

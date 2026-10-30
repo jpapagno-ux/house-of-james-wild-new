@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-10-29",
+ "exportedOn": "2026-10-30",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -139,8 +139,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -24.6692,
-    "lng": 15.8145
+    "lat": -24.7795,
+    "lng": 15.8885
    },
    "airport": "Sossusvlei Private Airstrip, Windhoek Hosea Kutako International Airport",
    "airportDirections": "Fly to Windhoek, then light aircraft or road transfer to Sossusvlei Airstrip, 30 minute drive to lodge.",
@@ -503,8 +503,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.3171,
-    "lng": 35.0592
+    "lat": -1.2472,
+    "lng": 35.0135
    },
    "airport": "Kichwa Tembo Airstrip",
    "airportDirections": "Fly to Nairobi, connect by light aircraft to Kichwa Tembo Airstrip, 15 minute road transfer to camp.",
@@ -2101,8 +2101,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4874,
-    "lng": 35.1575
+    "lat": -1.4226,
+    "lng": 35.0841
    },
    "airport": "Ol Kiombo Airstrip",
    "airportDirections": "Fly to Ol Kiombo Airstrip, 20 minute road transfer to camp. Charter flights available from Nairobi or other parks.",
@@ -2627,8 +2627,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 19.5809,
-    "lng": 23.2172
+    "lat": -19.5812,
+    "lng": 23.2181
    },
    "airport": "Maun International Airport (MUB)",
    "airportDirections": "The standard route is to fly into Maun (MUB). From there, guests take a scheduled light aircraft transfer to the lodge’s private airstrip within the concession, arranged by the operator. The flight from Maun usually takes 30 to 60 minutes, depending on routing. Maun serves as your springboard, as road access is impractical for this remote location.",
@@ -2692,8 +2692,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.3612,
-    "lng": 35.0133
+    "lat": -1.2497,
+    "lng": 35.0109
    },
    "airport": "Wilson Airport Nairobi (WIL)",
    "airportDirections": "Fly from Wilson Airport in Nairobi to Kichwa Tembo Airstrip (about 45 minutes), followed by a short road transfer to the camp.",
@@ -3300,8 +3300,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 0.2078,
-    "lng": 36.9967
+    "lat": 0.2336,
+    "lng": 37.3175
    },
    "airport": "Lewa Downs Airstrip (LAU), Nanyuki Airstrip (NYK)",
    "airportDirections": "Scheduled flights from Nairobi Wilson to Lewa Downs or Nanyuki (approx. 1 hour), followed by a scenic 45–60 min road transfer to lodge.",
@@ -3378,8 +3378,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -16.8076,
-    "lng": 28.4582
+    "lat": -16.8089,
+    "lng": 28.3488
    },
    "airport": "Bumi Hills Airstrip (BZH)",
    "airportDirections": "Fly to Bumi Hills Airstrip, 5-minute drive or boat transfer to lodge, African Bush Camps team will meet you.",
@@ -4123,8 +4123,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -13.1748,
-    "lng": 31.5316
+    "lat": -13.3169,
+    "lng": 31.6422
    },
    "airport": "Mfuwe Airport (MFU)",
    "airportDirections": "Fly to Mfuwe, 2-hour road and bush transfer to lodge, Bushcamp Company team will greet you.",
@@ -4262,8 +4262,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -3.6907,
-    "lng": 35.952
+    "lat": -3.7513,
+    "lng": 35.8448
    },
    "airport": "Kuro Airstrip (KURO) and Manyara Airstrip (LKY)",
    "airportDirections": "Fly to Manyara or Kuro Airstrip, 60–90 minute drive to lodge, Chem Chem team will greet you.",
@@ -4396,8 +4396,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -13.2014,
-    "lng": 31.5681
+    "lat": -13.3671,
+    "lng": 31.6064
    },
    "airport": "Mfuwe Airport (MFU)",
    "airportDirections": "Fly to Mfuwe, 2-hour road and bush transfer to lodge, Bushcamp Company team will greet you.",
@@ -5064,8 +5064,8 @@
    "status": "founder_vetted",
    "statusDate": "2018-01-01",
    "coords": {
-    "lat": 1.565432,
-    "lng": 35.023456
+    "lat": -1.719,
+    "lng": 35.3401
    },
    "airport": "Cottar’s Airstrip (CFE), Keekorok Airstrip (KEU), Nairobi Wilson Airport (WIL)",
    "airportDirections": "Fly into Wilson Airport (WIL) then domestic to Cottar’s Airstrip: ~1 hr flight + 10 min ground. Alternatively, fly into Keekorok AIR (KEU) and drive ~1.5 hrs by road. Private air travel is smoothest for access.",
@@ -5207,8 +5207,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.0215,
-    "lng": 22.6742
+    "lat": -19.0199,
+    "lng": 22.6973
    },
    "airport": "Duba Plains Airstrip",
    "airportDirections": "Fly by charter to Duba Plains Airstrip, 10 minute transfer to camp. Charter flights available from Maun, Kasane, or other Delta camps.",
@@ -5349,8 +5349,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -15.736,
-    "lng": 29.347
+    "lat": -15.6121,
+    "lng": 29.7672
    },
    "airport": "Kenneth Kaunda International Airport (LUN)",
    "airportDirections": "Approx. 2.5–3 hours by road or short charter flight from Lusaka to Lower Zambezi airstrip, followed by transfer to camp",
@@ -5393,8 +5393,8 @@
    "slug": "dulini-daunara-lodge",
    "name": "Dulini Daunara Lodge",
    "ledgerId": "STY-2026-563352",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
+   "country": "Botswana",
+   "countrySlug": "botswana",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
@@ -5408,8 +5408,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.8045,
-    "lng": 31.5005
+    "lat": -19.7482,
+    "lng": 23.4534
    },
    "airport": "Skukuza Airport (SZK) & Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Recommended Arrival Airport: Skukuza Airport (SZK)\nApproximately 40–50 minutes by road transfer.\nKruger Mpumalanga International Airport (MQP) approximately 2.5–3 hours away by vehicle.\nCharter flight options are available for private safari travelers.",
@@ -5655,8 +5655,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.4427,
-    "lng": 34.5362
+    "lat": -2.6777,
+    "lng": 34.7115
    },
    "airport": "Seronera Airstrip",
    "airportDirections": "Fly to Seronera Airstrip, 45 minute road transfer to camp. Charter flights available from Arusha or other parks.",
@@ -6318,8 +6318,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.3902,
-    "lng": 35.2831
+    "lat": -1.4205,
+    "lng": 35.3296
    },
    "airport": "Ol Seki Airstrip",
    "airportDirections": "Fly to Ol Seki Airstrip, 45 minute road transfer to camp. Charter flights available from Nairobi or Mara.",
@@ -7232,8 +7232,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -3.3881,
-    "lng": 35.6707
+    "lat": -3.297,
+    "lng": 35.6639
    },
    "airport": "Lake Manyara Airport (LKY), Kilimanjaro International Airport (JRO), Arusha Airport (ARK)",
    "airportDirections": "Fly to Lake Manyara (45-minute drive), Arusha (3 hours), or Kilimanjaro (4 hours). Transfers arranged by Gibbs Farm.",
@@ -7369,8 +7369,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.2695,
-    "lng": 23.8693
+    "lat": -19.5827,
+    "lng": 23.5439
    },
    "airport": "Gomoti Plains Airstrip",
    "airportDirections": "Fly to Gomoti Plains Airstrip, 20 minute drive to camp. Charter flights from Maun or other Okavango camps.",
@@ -9010,8 +9010,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -20.4696,
-    "lng": 25.2683
+    "lat": -20.4969,
+    "lng": 25.1877
    },
    "airport": "Maun International Airport (MUB), Jack’s Camp Airstrip",
    "airportDirections": "Fly to Maun, connect by light aircraft to Jack’s Camp Airstrip (40 minutes), exclusive transfer to camp.",
@@ -10479,8 +10479,8 @@
    "status": "founder_visited",
    "statusDate": "2012-01-01",
    "coords": {
-    "lat": -19.15,
-    "lng": 23.25
+    "lat": -19.1088,
+    "lng": 23.2651
    },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
@@ -10560,8 +10560,8 @@
    "status": "founder_visited",
    "statusDate": "2012-01-01",
    "coords": {
-    "lat": -18.25,
-    "lng": 23.33
+    "lat": -18.2155,
+    "lng": 23.4138
    },
    "airport": "Lagoon Airstrip",
    "airportDirections": "Light aircraft transfer from Maun or Kasane to the local airstrip.",
@@ -10803,8 +10803,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -19.35,
-    "lng": 23.45
+    "lat": -19.5277,
+    "lng": 23.1479
    },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
@@ -10964,8 +10964,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -19.35,
-    "lng": 22.85
+    "lat": -19.5839,
+    "lng": 22.8434
    },
    "airport": "Pom Pom Airstrip",
    "airportDirections": "Light aircraft transfer from Maun to the local airstrip.",
@@ -11126,8 +11126,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -19.2,
-    "lng": 23.15
+    "lat": -19.0747,
+    "lng": 23.3732
    },
    "airport": "Splash Airstrip",
    "airportDirections": "Light aircraft transfer from Maun to the local airstrip.",
@@ -12042,8 +12042,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -33.906222,
-    "lng": 19.099944
+    "lat": -33.9132,
+    "lng": 19.1213
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "Cape Town International Airport (CPT) is approximately 68 km away and requires around 55 minutes by car, making it the preferred arrival airport.",
@@ -12449,11 +12449,11 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/681249520_e60be0071_6833b6168ae6ec31a572a5e2_Lion_20Sands_Safari_4_Game_20Drive-3.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/597868105_86ad58e9e_6833b86790c60fba011752cf_Tinyeletei_20Treehouse_20_1_.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9880cb4f3_e5bfb4e83_6833b651d24c86c11207d288_Lion_20Sands_Safari_4_Bush_20Walk-3.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/06f2e4be8_278fdbab5_68350c0f7aca266b0957ceab_IVORY_20FISH_20EAGLE_20OUTSIDE_20SHOWER.jpg",
     "/img/b44/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1.jpg"
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/724c1f96b_41a8d97bf_6833b683207bd25151e1216d_Akita_20females_20cub_205.jpg"
    ],
    "bestMonths": "May – September",
    "bestMonthsNote": "Wildlife viewing is the best during the dry winter season spanning from May - Sept.",
@@ -12533,8 +12533,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -15.9648,
-    "lng": 29.6087
+    "lat": -15.6521,
+    "lng": 29.6086
    },
    "airport": "Jeki Airstrip (JEK)",
    "airportDirections": "Fly to Jeki Airstrip, 45-minute game drive or boat transfer to lodge, African Bush Camps team will greet you.",
@@ -12763,8 +12763,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.102345,
-    "lng": 23.032178
+    "lat": -19.124,
+    "lng": 23.8132
    },
    "airport": "Maun Airport (MUB)",
    "airportDirections": "The closest access is via Maun Airport (MUB), approximately 35 minutes by charter flight and 20 minutes by drive. Kasane Airport (BBK) is another option, with a 60-minute charter and 35-minute drive. Maun is preferred for convenience and faster transfers.",
@@ -13267,8 +13267,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -17.8527,
-    "lng": 25.6082
+    "lat": -17.8652,
+    "lng": 25.5043
    },
    "airport": "Victoria Falls Airport (VFA), Livingstone Airport (LVI)",
    "airportDirections": "Fly to Victoria Falls (VFA) or Livingstone (LVI), 40-minute road transfer to lodge (private transfer included).",
@@ -13480,8 +13480,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -13.1049,
-    "lng": 31.7857
+    "lat": -13.08,
+    "lng": 31.7889
    },
    "airport": "Mfuwe Airport (MFU)",
    "airportDirections": "Fly to Mfuwe Airport (MFU), 45-minute road transfer to lodge (arranged by Mfuwe Lodge).",
@@ -14083,8 +14083,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4445,
-    "lng": 35.2525
+    "lat": -1.4007,
+    "lng": 35.3079
    },
    "airport": "Ol Seki Airstrip",
    "airportDirections": "Fly to Ol Seki Airstrip, 45 minute road transfer to camp. Charter flights available from Nairobi or Mara.",
@@ -14165,8 +14165,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.3536,
-    "lng": 35.0575
+    "lat": -2.5482,
+    "lng": 35.1001
    },
    "airport": "Seronera Airstrip",
    "airportDirections": "Fly to Seronera Airstrip, 60 to 90 minute road transfer to camp. Charter flights available from Arusha or other parks.",
@@ -15764,8 +15764,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 0.0231,
-    "lng": 36.9689
+    "lat": 0.0619,
+    "lng": 36.9032
    },
    "airport": "Nanyuki Airstrip",
    "airportDirections": "Fly to Nanyuki Airstrip, 60 to 90 minute road transfer to camp. Charter flights available from Nairobi or Mara.",
@@ -16657,8 +16657,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -27.8569,
-    "lng": 32.3653
+    "lat": -27.7749,
+    "lng": 32.3487
    },
    "airport": "Phinda Airstrip, Richards Bay Airport, King Shaka International Airport",
    "airportDirections": "Fly to Richards Bay or King Shaka (Durban), transfer by road 2 to 3 hours, or connect by light aircraft to Phinda Airstrip with 20 minute transfer to villa.",
@@ -17330,8 +17330,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.1089,
-    "lng": 23.5941
+    "lat": -19.1273,
+    "lng": 23.6617
    },
    "airport": "Maun International Airport (MUB)",
    "airportDirections": "Fly to Maun, connect by light aircraft (30 minutes) to Sable Alley airstrip, then 15-minute transfer to camp.",
@@ -17692,8 +17692,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 0.8988,
-    "lng": 37.5369
+    "lat": 0.7056,
+    "lng": 37.5312
    },
    "airport": "Samburu Kalama Airstrip (KLB) or Samburu Oryx Airstrip (ORX)",
    "airportDirections": "Fly to Samburu Kalama Airstrip, 30-minute scenic drive to lodge, Saruni Samburu team will greet you.",
@@ -17841,8 +17841,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 0.9027,
-    "lng": 37.4802
+    "lat": 0.631,
+    "lng": 37.3505
    },
    "airport": "Samburu (Sasaab) Airstrip, Nanyuki Airport (NYK), Samburu Kalama Airstrip",
    "airportDirections": "Fly to Samburu or Sasaab Airstrip (private charter), 20–40 minute road transfer to lodge.",
@@ -18003,7 +18003,7 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.5147,
+    "lat": -1.5818,
     "lng": 34.9095
    },
    "airport": "Kogatende Airstrip",
@@ -18081,8 +18081,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": 0.2175,
-    "lng": 36.8664
+    "lat": 0.2495,
+    "lng": 36.8093
    },
    "airport": "Nanyuki Airstrip (NYK), Segera Airstrip",
    "airportDirections": "Fly to Nanyuki or directly to Segera’s private airstrip. 45-minute road transfer from Nanyuki or 10 minutes from Segera Airstrip.",
@@ -18806,8 +18806,8 @@
    "slug": "singita-elela",
    "name": "Singita Elela",
    "ledgerId": "STY-2026-000246",
-   "country": "Rwanda",
-   "countrySlug": "rwanda",
+   "country": "Botswana",
+   "countrySlug": "botswana",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
@@ -18820,10 +18820,7 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": {
-    "lat": -1.4452,
-    "lng": 29.5919
-   },
+   "coords": null,
    "airport": "Kigali International Airport",
    "airportDirections": "Fly to Kigali, 2.5 hour scenic road transfer to Singita Elela. Helicopter transfers available on request.",
    "founderNote": null,
@@ -18902,8 +18899,8 @@
    "status": "founder_returned",
    "statusDate": "2018-01-01",
    "coords": {
-    "lat": -2.0191,
-    "lng": 34.8134
+    "lat": -2.1198,
+    "lng": 34.6109
    },
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 20 to 45 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
@@ -19226,8 +19223,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.491,
-    "lng": 31.9616
+    "lat": -24.451,
+    "lng": 31.9777
    },
    "airport": "Skukuza Airport, Hoedspruit Eastgate Airport",
    "airportDirections": "Fly to Skukuza or Hoedspruit, 1 to 2 hour road transfer to lodge. Private charters available to nearby airstrip.",
@@ -19460,8 +19457,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.4018,
-    "lng": 34.9067
+    "lat": -1.569,
+    "lng": 34.7892
    },
    "airport": "Kogatende Airstrip",
    "airportDirections": "Fly to Kogatende Airstrip, 30 minute road transfer to camp. Charter flights available from Arusha or other parks.",
@@ -19617,8 +19614,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -20.857,
-    "lng": 31.6104
+    "lat": -21.0489,
+    "lng": 31.8703
    },
    "airport": "Buffalo Range Airport, Chiredzi",
    "airportDirections": "Fly to Buffalo Range (scheduled or charter), then a 45 minute road transfer to lodge.",
@@ -22183,8 +22180,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.3231,
-    "lng": 31.3308
+    "lat": -24.3056,
+    "lng": 31.3232
    },
    "airport": "Hoedspruit Eastgate Airport (HDS)",
    "airportDirections": "Fly to Hoedspruit Airport, 1 hour road transfer to Tanda Tula, transfers available.",
@@ -22253,8 +22250,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.7942,
-    "lng": 31.5206
+    "lat": -24.8009,
+    "lng": 31.5416
    },
    "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip (Aviation Charter Access) O.R. Tambo International Airport (JNB)",
    "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to camp.\nCharter flights available directly into the MalaMala airstrip.\nRoad transfer from Johannesburg approximately 5–6 hours.",
@@ -22321,8 +22318,8 @@
    "status": "founder_visited",
    "statusDate": "2026-05-01",
    "coords": {
-    "lat": -24.7968,
-    "lng": 31.5219
+    "lat": -24.9348,
+    "lng": 31.5594
    },
    "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip O.R. Tambo International Airport (JNB)",
    "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to Kirkman's Kamp.\nCharter flights operate directly into the MalaMala private airstrip.\nJohannesburg road transfer approximately 5–6 hours.",
@@ -22387,8 +22384,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.7997,
-    "lng": 31.5248
+    "lat": -24.8426,
+    "lng": 31.5506
    },
    "airport": "Skukuza Airport (SZK) O.R. Tambo International Airport (JNB) via MalaMala Airstrip",
    "airportDirections": "Recommended Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour road transfer to the lodge.\nAlternative direct charter flights operate into the MalaMala private airstrip.\nJohannesburg to MalaMala by road: approximately 5–6 hours.",
@@ -22454,7 +22451,7 @@
    "statusDate": null,
    "coords": {
     "lat": -24.8014,
-    "lng": 31.5231
+    "lng": 31.5419
    },
    "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip, O.R. Tambo International Airport (JNB)",
    "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to camp.\nCharter flights available directly to the MalaMala private airstrip.\nJohannesburg road transfer approximately 5–6 hours.",
@@ -22519,8 +22516,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -24.8283,
-    "lng": 31.4847
+    "lat": -24.932,
+    "lng": 31.5561
    },
    "airport": " Skukuza Airport, Kruger Mpumalanga International Airport",
    "airportDirections": "Fly to Skukuza or KMIA, road transfer of 1.5 to 2.5 hours to lodge. Charter flights also available to nearby airstrips.",
@@ -23606,8 +23603,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -13.0458,
-    "lng": 31.9448
+    "lat": -13.1055,
+    "lng": 31.7603
    },
    "airport": "Mfuwe Airport",
    "airportDirections": "Fly to Mfuwe Airport, 1 hour scenic road and boat transfer to camp. Charter flights from Lusaka and other safari hubs.",
@@ -23679,8 +23676,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -15.6233,
-    "lng": 29.5636
+    "lat": -15.7148,
+    "lng": 29.3379
    },
    "airport": "Royal Airstrip",
    "airportDirections": "Fly to Royal Airstrip, 30 minute game drive transfer to camp. Charter flights from Lusaka or other safari hubs.",
@@ -23762,8 +23759,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -12.9731,
-    "lng": 31.885
+    "lat": -12.9413,
+    "lng": 31.9048
    },
    "airport": "Mfuwe Airport",
    "airportDirections": "Fly to Mfuwe Airport, 2 hour road transfer through the park to camp, with game viewing en route.",
@@ -25380,8 +25377,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.6993,
-    "lng": 13.7301
+    "lat": -20.0245,
+    "lng": 13.8455
    },
    "airport": "Desert Rhino Camp Airstrip",
    "airportDirections": "Fly by light aircraft to Desert Rhino Camp Airstrip, 15-minute transfer to camp. Self-drive from Swakopmund (6.5 hours) or Windhoek (8 hours).",
@@ -25600,8 +25597,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -24.5516,
-    "lng": 15.7871
+    "lat": -24.6149,
+    "lng": 15.7034
    },
    "airport": "Kulala Airstrip, Sesriem Airstrip",
    "airportDirections": "Fly into Kulala or Sesriem Airstrip, road transfer 30 minutes to lodge. Access by self-drive from Windhoek (5 hours) or Swakopmund (6 hours).",
@@ -25668,8 +25665,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.1692,
-    "lng": 22.5704
+    "lat": -19.2435,
+    "lng": 22.5364
    },
    "airport": "Jao Airstrip, Maun Airport",
    "airportDirections": "Fly to Maun, connect by light aircraft to Jao Airstrip, 30-minute game drive to camp.",
@@ -25740,8 +25737,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -18.2667,
-    "lng": 23.9667
+    "lat": -18.3548,
+    "lng": 23.8385
    },
    "airport": "Saile Airstrip LIN, Kasane Airport BBK",
    "airportDirections": "Fly into Kasane Airport (BBK) or Maun Airport (MUB), then take a light aircraft to Saile Airstrip, followed by a 45-minute drive to camp.",
@@ -25879,8 +25876,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -24.5726,
-    "lng": 15.8036
+    "lat": -24.6184,
+    "lng": 15.7622
    },
    "airport": "Kulala Airstrip, Sesriem Airstrip",
    "airportDirections": "Fly to Kulala or Sesriem Airstrip, 30-minute road transfer to lodge. Self-drive from Windhoek (5 hours) or Swakopmund (6 hours).",
@@ -25954,8 +25951,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.18415,
-    "lng": 23.42081
+    "lat": -19.2284,
+    "lng": 22.7795
    },
    "airport": "Maun International Airport (MUB) ",
    "airportDirections": "Guests typically fly into Maun International Airport (MUB) and transfer via a light aircraft to Mombo Airstrip. From Mombo Airstrip, it’s a short game drive to Wilderness Little Mombo. Total journey from Maun to camp is about 1 hour by air and road. Scheduled charter flights are the most convenient and are arranged by the camp.",
@@ -26023,8 +26020,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.1692,
-    "lng": 22.5704
+    "lat": -19.2869,
+    "lng": 22.4654
    },
    "airport": "Jao Airstrip (charter flights), Maun International Airport (MUB)",
    "airportDirections": "Guests typically fly from Maun to Jao Airstrip (approx. 30-minute flight), followed by a short game drive or boat transfer to camp.",
@@ -26167,8 +26164,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.448,
-    "lng": 35.092
+    "lat": -1.2813,
+    "lng": 35.0359
    },
    "airport": "Mara North Airstrip HKR, Nairobi Wilson Airport WIL",
    "airportDirections": "Fly from Nairobi Wilson to Mara North Airstrip, 30 minutes drive to camp. Private charters available.",
@@ -26323,8 +26320,8 @@
    "status": "founder_visited",
    "statusDate": "2026-05-01",
    "coords": {
-    "lat": -19.1915,
-    "lng": 23.4665
+    "lat": -19.2222,
+    "lng": 22.7777
    },
    "airport": "Mombo Airstrip, Maun Airport",
    "airportDirections": "Fly to Maun, connect by light aircraft to Mombo Airstrip, 10-minute drive to camp.",
@@ -26709,8 +26706,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -16.9956,
-    "lng": 12.4329
+    "lat": -17.2136,
+    "lng": 12.2037
    },
    "airport": "Serra Cafema Airstrip",
    "airportDirections": "Fly by light aircraft from Windhoek or Swakopmund to Serra Cafema Airstrip, 20-minute transfer to camp.",
@@ -26780,8 +26777,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -14.1457,
-    "lng": 25.7922
+    "lat": -14.219,
+    "lng": 25.8723
    },
    "airport": "Lufupa Airstrip LFU, Lusaka Airport LUN",
    "airportDirections": "Fly to Lusaka LUN, light aircraft to Lufupa Airstrip LFU, then 1.5 hours by road to Shumba",
@@ -26857,8 +26854,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -17.8577,
-    "lng": 25.8306
+    "lat": -17.8551,
+    "lng": 25.7877
    },
    "airport": "Harry Mwanga Nkumbula International Airport LVI",
    "airportDirections": "Fly into Livingstone LVI, road transfer 25 minutes to Toka Leya camp inside the national park",
@@ -27009,8 +27006,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -18.9727,
-    "lng": 22.8179
+    "lat": -18.9759,
+    "lng": 22.8942
    },
    "airport": "Vumbura Airstrip, Maun Airport",
    "airportDirections": "Fly to Maun, connect by light aircraft to Vumbura Airstrip, 10-minute transfer to camp.",
@@ -27086,8 +27083,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -25.083,
-    "lng": 15.9908
+    "lat": -25.1402,
+    "lng": 15.987
    },
    "airport": "Hosea Kutako International Airport (WDH) or Wolwedans Private Airstrip",
    "airportDirections": "Fly to Hosea Kutako (Windhoek), 6-hour scenic drive or 1-hour charter flight to Wolwedans airstrip, complimentary transfers to camp.",
@@ -27423,8 +27420,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -18.2744,
-    "lng": 23.5465
+    "lat": -18.5889,
+    "lng": 23.5318
    },
    "airport": "Selinda Airstrip",
    "airportDirections": "Fly by charter to Selinda Airstrip, 45 minute road transfer to camp. Charter flights available from Maun, Kasane, or other Delta camps.",

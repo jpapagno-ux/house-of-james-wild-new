@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-10-29",
+ "checkedOn": "2026-10-30",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -616,8 +616,7 @@
    "name": "& Beyond Xaranna Okavango Delta Camp",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -1002,7 +1001,7 @@
    "stay_id": "6a899f0d097f3f23995a0730",
    "slug": "dulini-daunara-lodge",
    "name": "Dulini Daunara Lodge",
-   "country": "South Africa",
+   "country": "Botswana",
    "missing": [],
    "released": true
   },
@@ -2793,8 +2792,7 @@
    "name": "One & Only Nyungwe",
    "country": "Rwanda",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -3209,8 +3207,7 @@
    "name": "Shipwreck Lodge Namibia",
    "country": "Namibia",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -3270,8 +3267,10 @@
    "stay_id": "6a85bfb37f6eb35689bff9a5",
    "slug": "singita-elela",
    "name": "Singita Elela",
-   "country": "Rwanda",
-   "missing": [],
+   "country": "Botswana",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3605,8 +3604,7 @@
    "name": "Somalisa Acacia",
    "country": "Zimbabwe",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -3659,8 +3657,7 @@
    "name": "Stanley & Livingstone Lodge by Anantara",
    "country": "Zimbabwe",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -3689,8 +3686,7 @@
    "name": "Swala Camp",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -4581,8 +4577,7 @@
    "name": "Zannier Sonop",
    "country": "Namibia",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -4592,8 +4587,7 @@
    "name": "Zigera",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   }

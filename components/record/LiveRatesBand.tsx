@@ -42,7 +42,7 @@ export default function LiveRatesBand({ property, name }: { property: string; na
   const fetched = res ? new Date(res.fetchedAt).toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" }) : "";
 
   return (
-    <section id="live-rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="live-heading">
+    <section id="live-rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="live-heading">
       <p className="ledger-eyebrow">Live rates · booking engine by Tag Albie</p>
       <h2 id="live-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">What {name} Costs on Your Dates</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">The booking engine&rsquo;s own price for your dates and party, refreshed every 15 minutes. The house confirms every quote before anything is booked.</p>

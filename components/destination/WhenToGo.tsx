@@ -11,7 +11,7 @@ const LABEL: Record<Season, string> = { best: "Best", good: "Good", wet: "Wettes
 
 export default function WhenToGo({ place, rows, airports, transfers }: { place: string; rows: MonthRow[]; airports: [string, string][]; transfers: [string, string][] }) {
   return (
-    <section id="when" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="when-heading">
+    <section id="when" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="when-heading">
       <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><CalendarDays className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> When to go &amp; getting there</p>
       <h2 id="when-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Months, and the Way In</h2>
       <div className={`mt-7 grid grid-cols-1 ${rows.length ? "lg:grid-cols-[1.5fr_1fr]" : "lg:grid-cols-2"} gap-10 items-start`}>

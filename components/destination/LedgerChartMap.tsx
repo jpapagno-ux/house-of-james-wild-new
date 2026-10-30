@@ -41,7 +41,7 @@ function Mark({ category, size = 18 }: { category: MapCategory; size?: number })
 // Pins that share a spot (five stays around La Fortuna) fan out in a ring.
 const FAN = [[0, 0], [17, -6], [-17, -6], [10, 14], [-10, 14], [0, -18], [21, 11], [-21, 11]];
 
-export default function LedgerChartMap({ country, chart, width, height, items, counts, legend = "bottom-left" }: { legend?: "bottom-left" | "top-left" | "bottom-right"; country: string; chart: ReactNode; width: number; height: number; items: MapItem[]; counts: Record<MapCategory, number> }) {
+export default function LedgerChartMap({ country, chart, width, height, items, counts, legend = "bottom-left" }: { legend?: "bottom-left" | "top-left" | "bottom-right" | "below"; country: string; chart: ReactNode; width: number; height: number; items: MapItem[]; counts: Record<MapCategory, number> }) {
   const [on, setOn] = useState<Set<string>>(() => new Set([...CATEGORY_ORDER, "new"]));
   const [hover, setHover] = useState<string | null>(null);
   const [drawn, setDrawn] = useState(false);
@@ -133,7 +133,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
         </div>
 
         {/* The legend, which is also the filter */}
-        <div className={`mt-3 lg:mt-0 lg:absolute ${legend === "top-left" ? "lg:left-3 lg:top-3" : legend === "bottom-right" ? "lg:right-3 lg:bottom-3" : "lg:left-3 lg:bottom-3"} bg-paper/95 border ledger-border shadow-[0_6px_20px_rgba(45,42,38,0.15)] p-3 md:p-4 lg:max-w-[62%]`}>
+        <div className={`mt-3 ${legend === "below" ? "" : `lg:mt-0 lg:absolute ${legend === "top-left" ? "lg:left-3 lg:top-3" : legend === "bottom-right" ? "lg:right-3 lg:bottom-3" : "lg:left-3 lg:bottom-3"}`} bg-paper/95 border ledger-border shadow-[0_6px_20px_rgba(45,42,38,0.15)] p-3 md:p-4 lg:max-w-[62%]`}>
           <p className="ledger-eyebrow ledger-crimson">Legend</p>
           <ul className="mt-2 space-y-1.5">
             {CATEGORY_ORDER.map((k) => {

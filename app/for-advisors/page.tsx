@@ -62,7 +62,7 @@ export default function ForAdvisorsPage() {
             </div>
           </section>
 
-          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
+          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-56 grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
             <div>
               <p className="ledger-eyebrow !text-coast-light">The terms, filed plainly</p>
               <h2 id="terms-heading" className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight mt-2">The Shared Commission Split</h2>

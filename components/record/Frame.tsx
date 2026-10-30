@@ -51,7 +51,7 @@ export function GalleryMosaic({ images, title }: { images: Img[]; title: string 
   const [a, ...rest] = images;
   const tiles = rest.slice(0, 4);
   return (
-    <section id="gallery" className="mt-14 md:mt-16 scroll-mt-32 lg:scroll-mt-40" aria-label={`Photographs of ${title}`}>
+    <section id="gallery" className="mt-14 md:mt-16 scroll-mt-32 lg:scroll-mt-56" aria-label={`Photographs of ${title}`}>
       <div className="hidden md:grid grid-cols-4 grid-rows-2 gap-3 h-[460px]">
         <figure className="relative col-span-2 row-span-2 border ledger-border"><Image src={a.url} alt={a.alt} fill sizes="640px" className="object-cover" /></figure>
         {tiles.map((g, i) => (
@@ -75,7 +75,7 @@ export function LocationBlock({ chart, name, pin, others = [], heading, rows, no
   const p = projectOn(chart, pin.lat, pin.lng);
   const right = p.x > chart.width * 0.62;
   return (
-    <section id="location" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start" aria-labelledby="location-heading">
+    <section id="location" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start" aria-labelledby="location-heading">
       <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
         <LedgerChart chart={chart} title={`Where ${name} sits`} />
         <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">

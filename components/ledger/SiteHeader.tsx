@@ -26,7 +26,7 @@ const SHOW_DESTINATIONS = !GUARD_ON || isBuilt("/destinations");
 function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
   return (
     <li className="group relative">
-      <Link href={v.href} className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-flex items-center gap-2 hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
+      <Link href={v.href} className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-flex items-center gap-2 whitespace-nowrap hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
         {v.tone && <span className="w-1.5 h-1.5 rounded-full" style={{ background: light ? "rgba(255,255,255,.85)" : v.tone }} aria-hidden="true" />}
         {v.label}
       </Link>
@@ -79,7 +79,7 @@ function DestinationsMenu({ light }: { light: boolean }) {
   return (
     <li className="group relative">
       <Link href="/destinations" className={cls}>Destinations</Link>
-      <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute right-0 top-full pt-2 z-50">
+      <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-0 top-full pt-2 z-50">
         <div className="w-[960px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] grid grid-cols-[1.25fr_1fr] text-ink">
           <div className="p-6">
             <div className="flex items-baseline justify-between">
@@ -143,7 +143,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     if (!overlay) return;
     const onScroll = () => {
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 104 : window.scrollY > 40);
+      setSolid(end ? end.getBoundingClientRect().top <= 168 : window.scrollY > 40);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -174,45 +174,45 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           {UTILITY_NAV.map((l) => (
             <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{l.label}</Link>
           ))}
-          {FLAGS.accounts && <Link href="/account" className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>My Folio</Link>}
           <a href={`tel:${SITE.phone.tel}`} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{SITE.phone.display}</a>
         </div>
       </div>
 
       {/* Main bar */}
-      {/* The rail (house chrome, 30 Oct 2026): volumes left, the seal and wordmark
-          centred, the reader's tools right. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[84px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
-        <nav aria-label="Main" className="hidden lg:block">
-          <ul className="flex items-center gap-4 xl:gap-5">
-            {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
-          </ul>
-        </nav>
+      {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
+          their own line, search left, the reader's tools right; the six volumes
+          on one centred line beneath. Transparent over a film, paper once scrolled. */}
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[92px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
+        <div className="hidden lg:flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setSearching(true)}
+            className={`inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
+            aria-label="Search the Ledger"
+          >
+            <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
+            <span className="ledger-eyebrow !text-[10.5px] !text-current">Where to?</span>
+            <kbd className="hidden xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
+          </button>
+        </div>
 
-        <Link href="/" className="flex items-center gap-3 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
-          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
-          <span className="flex flex-col">
-            <span className="ledger-display text-xl md:text-2xl">James Wild &amp; Co.</span>
+        <Link href="/" className="flex lg:flex-col items-center gap-3 lg:gap-1.5 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
+          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={36} tone={light ? "light" : "ink"} /></span>
+          <span className="flex flex-col lg:items-center">
+            <span className="ledger-display text-xl md:text-[1.7rem] tracking-[-0.01em]">James Wild &amp; Co.</span>
             <span className={`ledger-eyebrow !text-[9px] mt-1 ${light ? "!text-white/75" : "ledger-crimson"}`}>{SITE.homeOf}</span>
           </span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">
           <ul className="hidden lg:flex items-center gap-4 mr-1">
-            {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
               <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
+            {FLAGS.accounts && <li><Link href="/account" className={mainItem}>My Folio</Link></li>}
           </ul>
-          <button
-            type="button"
-            onClick={() => setSearching(true)}
-            className={`inline-flex items-center gap-2 h-10 px-3 lg:px-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
-            aria-label="Search the Ledger"
-          >
+          <button type="button" onClick={() => setSearching(true)} className={`lg:hidden inline-flex items-center justify-center h-10 w-10 border ${light ? "border-white/50 text-white" : "ledger-border"}`} aria-label="Search the Ledger">
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="hidden 2xl:inline ledger-eyebrow !text-[10.5px] !text-current">Search</span>
-            <kbd className="hidden 2xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">/</kbd>
           </button>
           <Link
             href={PLAN_CTA.href}
@@ -228,6 +228,13 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         </div>
       </div>
 
+      {/* The six volumes, one centred line */}
+      <nav aria-label="Main" className={`hidden lg:block border-t ${light ? "border-white/15" : "ledger-border"}`}>
+        <ul className="max-w-[1400px] mx-auto px-10 h-11 flex items-center justify-center gap-7 xl:gap-9">
+          {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
+          {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
+        </ul>
+      </nav>
     </header>
       <SearchPanel open={searching} onClose={() => setSearching(false)} />
       {/* Mobile menu: full screen, volumes first */}

@@ -116,7 +116,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           </div>
         </HeroSlider>
 
-        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[72px] lg:top-[105px] z-30">
+        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[72px] lg:top-[168px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
             <Link href={`/destinations/${c.region}`} className="ledger-eyebrow ledger-crimson">{c.regionName}</Link>
@@ -135,7 +135,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: c.regionName, path: `/destinations/${c.region}` }, { name: c.name, path }]} /></div>
 
-          <section id="the-map" className="pt-8 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="map-heading">
+          <section id="the-map" className="pt-8 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">The Ledger in {c.name} · {all.length} filed</p>
@@ -143,7 +143,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James.</p>
             </div>
-            <LedgerChartMap legend={c.slug === "south-africa" ? "top-left" : "bottom-left"} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
+            <LedgerChartMap legend="below" country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
           </section>
 
           <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
@@ -176,7 +176,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
 
           <Journeys country={c.name} journeys={journeys} chart={chart} />
           {c.postcard && (
-            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
+            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">From the house, by return</p>
                 <h2 id="postcard-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">Every Enquiry Gets a Reply Worth Keeping</h2>
@@ -189,7 +189,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
 
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
 
-          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="stays-heading">
+          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {c.name}</h2>
             <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -211,7 +211,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </Reveal>
           )}
 
-          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-40 space-y-16" aria-label={`${c.name}, the story`}>
+          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-56 space-y-16" aria-label={`${c.name}, the story`}>
             {c.story.map((st, i) => (
               <div key={st.title} className="grid md:grid-cols-2 gap-10 items-center">
                 <div className={i % 2 ? "md:order-2" : ""}>

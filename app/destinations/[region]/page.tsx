@@ -6,12 +6,14 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import { CHART_CENTRAL_AMERICA } from "@/lib/charts/central-america";
+import REGION_CHARTS_JSON from "@/lib/charts/regions.json";
 import { STAYS, pageReady } from "@/lib/content/stays";
 import { RESERVES } from "@/lib/content/reserves";
 import { isResidence } from "@/lib/content/ledger-counts";
 
-// Region charts on file (scripts/build-chart-<region>.cjs). Regions without one show no map yet.
-const REGION_CHARTS: Record<string, ChartData> = { "central-america": CHART_CENTRAL_AMERICA as unknown as ChartData };
+// Region charts, one per region (scripts/build-region-charts.cjs → lib/charts/regions.json).
+// Central America keeps its hand-built chart.
+const REGION_CHARTS: Record<string, ChartData> = { ...(REGION_CHARTS_JSON as unknown as Record<string, ChartData>), "central-america": CHART_CENTRAL_AMERICA as unknown as ChartData };
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
 import PlaceNote from "@/components/destination/PlaceNote";
@@ -85,7 +87,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           ? <RecordHero image={{ url: r.hero, alt: `${r.name}: ${r.tagline}` }} eyebrow="Destinations · Region" title={r.name} tagline={r.tagline} glance={<GlanceBar glance={glance} />} />
           : <div className="pt-36 pb-10 max-w-ledger mx-auto px-5 md:px-10"><p className="ledger-eyebrow ledger-crimson">Destinations · Region</p><h1 className="ledger-display text-[2.6rem] md:text-6xl mt-3">{r.name}</h1><p className="ledger-display italic text-xl mt-3 ledger-muted">{r.tagline}</p></div>}
 
-        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[105px] z-30">
+        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[168px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
               {REGIONS.map((x) => x.slug === r.slug
@@ -98,16 +100,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: r.name, path }]} /></div>
-          <div className="mt-6 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
-            <div>
-              <AnswerBlock>{answer}</AnswerBlock>
-              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount)} />
-            </div>
-            {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
-          </div>
-
           {chart && mapItems.length > 0 && (
-            <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="region-map-heading">
+            <section id="the-map" className="mt-8 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
                   <p className="ledger-eyebrow ledger-crimson">The Ledger in {r.name} · {mapItems.length} on the chart</p>
@@ -115,9 +109,18 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
                 </div>
                 <p className="text-[16px] ledger-muted max-w-md">Every stay, residence, reserve and voyage with a position on file. Each country page charts its own in closer detail.</p>
               </div>
-              <LedgerChartMap country={r.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${r.name} with its stays`} />} width={chart.width} height={chart.height} items={mapItems} counts={{ stay: mapItems.filter((i) => i.category === "stay").length, vessel: mapItems.filter((i) => i.category === "vessel").length, residence: mapItems.filter((i) => i.category === "residence").length, reserve: mapItems.filter((i) => i.category === "reserve").length }} />
+              <LedgerChartMap legend="below" country={r.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${r.name} with its stays`} />} width={chart.width} height={chart.height} items={mapItems} counts={{ stay: mapItems.filter((i) => i.category === "stay").length, vessel: mapItems.filter((i) => i.category === "vessel").length, residence: mapItems.filter((i) => i.category === "residence").length, reserve: mapItems.filter((i) => i.category === "reserve").length }} />
             </section>
           )}
+
+          <div className="mt-12 md:mt-16 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
+            <div>
+              <AnswerBlock>{answer}</AnswerBlock>
+              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount)} />
+            </div>
+            {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
+          </div>
+
 
           {(r.intro.length > 0 || r.gallery.length > 0) && (
             <section className="mt-12 md:mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-start" aria-labelledby="region-heading">
@@ -141,7 +144,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <Doors eyebrow={`${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"} in the Ledger`} title={`The Countries of ${r.name}`} intro="Open a country for its stays by area, routes, the months to go and the Compass where it's ready." doors={doors} />
 
           {r.featured.length > 0 && (
-            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="stays-heading">
+            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="stays-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                 <div><p className="ledger-eyebrow ledger-crimson">From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
                 <Link href="/stays" className="ledger-btn-ghost self-start md:self-auto">All stays</Link>

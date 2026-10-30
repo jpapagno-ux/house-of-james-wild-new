@@ -7,7 +7,7 @@ import type { FullFrame as Frame } from "@/lib/content/stay-media";
 export default function FullFrame({ frames, name }: { frames: Frame[]; name: string }) {
   if (!frames.length) return null;
   return (
-    <section id="full-frame" aria-label={`${name} in full frame`} className="mt-16 md:mt-24 mx-[calc(50%-50vw)] scroll-mt-32 lg:scroll-mt-40">
+    <section id="full-frame" aria-label={`${name} in full frame`} className="mt-16 md:mt-24 mx-[calc(50%-50vw)] scroll-mt-32 lg:scroll-mt-56">
       {frames.map((f, i) => (
         <figure key={f.src} className="relative h-[100svh] min-h-[520px] w-full overflow-hidden bg-ink">
           <Image src={sharpen(f.src)} alt={f.alt} fill sizes="100vw" quality={85} className="object-cover" style={f.pos ? { objectPosition: f.pos } : undefined} loading={i === 0 ? "eager" : "lazy"} />

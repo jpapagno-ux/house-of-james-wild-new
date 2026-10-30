@@ -9,7 +9,7 @@ export default function Inclusions({ name, included, excluded, policies }: { nam
     { title: "Cancellation & payment", items: policies, icon: ScrollText },
   ];
   return (
-    <section id="included" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="included-heading">
+    <section id="included" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="included-heading">
       <p className="ledger-eyebrow ledger-crimson">Before you book</p>
       <h2 id="included-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">What a Stay at {name} Includes</h2>
       <div className="mt-6 border-t ledger-rule">

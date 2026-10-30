@@ -106,7 +106,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           {c.rooms.length > 0 && (
-            <section id="suites" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="suites-heading">
+            <section id="suites" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-56" aria-labelledby="suites-heading">
               <SectionHead eyebrow={`Suites · ${c.rooms.length} ${c.rooms.length === 1 ? "type" : "types"}`} title={`Where You'll Sleep at ${c.name}`} icon="tree-ring" />
               <SuiteCards camp={c.name} reserve={r.name} rooms={c.rooms} />
               <p className="mt-3 text-[13px] ledger-muted">Registry rates in US dollars. The house confirms every rate, inclusions and park fees with your quote.</p>
@@ -121,7 +121,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
-          <div id="plan" className="scroll-mt-32 lg:scroll-mt-40"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
+          <div id="plan" className="scroll-mt-32 lg:scroll-mt-56"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND[c.kind === "residence" ? "residence" : "camp"].who} seats={host.host.seats} />}
       </main>

@@ -169,4 +169,5 @@ export function quote(o: { rowId: string; arrive: string; nights: number; adults
   return { ok: true, nights, accommodation, childrenCost, discount, extras, flights, total, offerApplied, minNights };
 }
 
-export const zar = (n: number) => `R ${Math.round(n).toLocaleString("en-ZA").replace(/,/g, " ")}`;
+// Fixed formatting (same on server and browser): R 48 800
+export const zar = (n: number) => `R ${Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u00a0")}`;

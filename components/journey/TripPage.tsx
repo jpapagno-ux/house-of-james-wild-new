@@ -29,7 +29,7 @@ import { InkStamp } from "@/components/ledger/VolumeKit";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
-import VoyageTag from "@/components/notes/VoyageTag";
+import { VOLUME_STYLES } from "@/lib/volumes";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -70,7 +70,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const volStamp = <InkStamp volume={voyage ? "voyages" : "overland"} no={entry} size={128} rotate={voyage ? -7 : 6} seed={voyage ? 23 : 47} />;
   // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
   const waters = T.seo.path.split("/")[2];
-  const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo" };
+  const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo", antarctica: "/destinations/polar-antarctica" };
+  // Where a voyage's waters sit for "compare the sailings": the place key journeysFor() files it under.
+  const WATERS_PLACE: Record<string, { key: string; name: string; href: string }> = { "raja-ampat": { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, komodo: { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, antarctica: { key: "antarctica", name: "Antarctica", href: "/destinations/polar-antarctica" } };
   // The country crumb on an overland route goes to that country's destination page.
   const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa" };
   const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
@@ -192,7 +194,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
 
   const Days = (
     <Sec id="days">
-      <SectionHead eyebrow={`${T.dayeyebrow} · ${T.sub.split("·").slice(0, 2).join("·").trim()}`} title={T.daytitle} icon="wave" intro={voyage ? "Each day as the crew sails it. Weather, tides and the mantas shape the order. Open a day for the detail." : "Each day as James would drive it. Open a day for the detail, or send it to the map."} />
+      <SectionHead eyebrow={`${T.dayeyebrow} · ${T.sub.split("·").slice(0, 2).join("·").trim()}`} title={T.daytitle} icon="wave" intro={T.dayintro ?? (voyage ? "Each day as the crew sails it. Weather, tides and the mantas shape the order. Open a day for the detail." : "Each day as James would drive it. Open a day for the detail, or send it to the map.")} />
       <div className="mt-6 flex justify-end"><ExpandAll target="days-list" /></div>
       <div id="days-list" className="mt-3 space-y-2">
         {T.days.map((d, i) => (
@@ -331,7 +333,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
                   </summary>
                   <div className="px-4 pb-4">
                     <p className="text-[15px] leading-relaxed">{sp.body}</p>
-                    <div className={`mt-3 grid gap-2 ${sp.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>{sp.photos.slice(0, 2).map((ph) => <Ph key={ph.url} img={ph} label={ph.alt} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 50vw, 25vw" />)}</div>
+                    {sp.photos.length > 0 && <div className={`mt-3 grid gap-2 ${sp.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>{sp.photos.slice(0, 2).map((ph) => <Ph key={ph.url} img={ph} label={ph.alt} className="aspect-[4/3] w-full" sizes="(max-width: 768px) 50vw, 25vw" />)}</div>}
                   </div>
                 </details>
               ))}
@@ -339,8 +341,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[212px]">The cabins</h3>
-      <p className="mt-1 text-[14px] ledger-muted">Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax.</p>
+      {(V.cabins || V.cabinsNote) && <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[212px]">The cabins</h3>}
+      {(V.cabins || V.cabinsNote) && <p className="mt-1 text-[14px] ledger-muted"><Fx t={V.cabinsNote ?? "Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax."} /></p>}
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {V.cabins.map((c) => (
@@ -371,7 +373,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
-  const tone = (st: string) => /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
+  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />
@@ -395,9 +397,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
                   <li key={r.date} className="border-t ledger-border py-3 grid grid-cols-[1fr_auto] md:grid-cols-[2fr_0.6fr_1.4fr_1.2fr_auto] gap-x-3 gap-y-1 items-center text-[14.5px]">
                     <span className="ledger-display text-[16px] md:font-serif md:text-[14.5px]">{r.date}</span>
                     <span className="hidden md:block">{r.nights}</span>
-                    <span className="order-3 md:order-none">{usd(r.price)} <span className="text-[12px] ledger-muted">+ 11% tax<span className="md:hidden"> · {r.nights} nights</span></span></span>
+                    <span className="order-3 md:order-none">{usd(r.price)} <span className="text-[12px] ledger-muted">{T.taxLine ?? "+ 11% tax"}<span className="md:hidden">{T.taxLine === "" ? "" : " · "}{r.nights} nights</span></span></span>
                     <span className="order-2 md:order-none justify-self-end md:justify-self-start"><span className={`text-[11.5px] px-2 py-0.5 whitespace-nowrap ${tone(r.status)}`}>{r.status}</span></span>
-                    <span className="order-4 md:order-none justify-self-end">{/full/i.test(r.status) ? <a href={`/plan?trip=${encodeURIComponent(T.h1)}&date=${encodeURIComponent(r.date)}&waitlist=1`} className="ledger-btn-ghost">Waitlist</a> : <a href={`/plan?trip=${encodeURIComponent(`${g.name}, Aliikai`)}&date=${encodeURIComponent(r.date)}`} className="ledger-btn-ghost">Hold a cabin</a>}</span>
+                    <span className="order-4 md:order-none justify-self-end">{/full/i.test(r.status) ? <a href={`/plan?trip=${encodeURIComponent(T.h1)}&date=${encodeURIComponent(r.date)}&waitlist=1`} className="ledger-btn-ghost">Waitlist</a> : <a href={`/plan?trip=${encodeURIComponent(V && !g.name.split(" · ").some((p) => V.name.includes(p)) ? `${g.name}, ${V.name}` : g.name)}&date=${encodeURIComponent(r.date)}`} className="ledger-btn-ghost">Hold a cabin</a>}</span>
                   </li>))}</ul>
               </div>
             </details>
@@ -432,7 +434,13 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <p className="mt-4 text-[17px] leading-relaxed">{T.founder.p1}</p>
           <p className="mt-3 text-[17px] leading-relaxed">{T.founder.p2}</p>
           {field && <a href={field} target="_blank" rel="noopener" className="mt-5 inline-flex items-center gap-3 border border-ink px-4 py-3 hover:border-crimson"><span className="font-mono text-[10px] border border-ink px-1.5 py-2">PDF</span><span><span className="block font-mono text-[11px] tracking-[0.14em] ledger-crimson">FIELD GUIDE NO. 03</span><span className="ledger-display text-[18px]">Costa Rica, the Long Way Round</span></span></a>}
-          <div className="mt-6 aspect-video w-full jw-ph flex items-center justify-center"><span className="font-mono text-[11px] tracking-[0.14em] uppercase bg-paper/85 px-2 py-1"><Fx t={T.founder.film} /></span></div>
+          {T.founder.video ? (
+            // The founder's own footage, silent and looping (James Wild & Co. archive).
+            <figure className="mt-6">
+              <video className="w-full aspect-video object-cover bg-ink" src={T.founder.video.src} poster={T.founder.video.poster} muted loop playsInline autoPlay preload="metadata" aria-label={T.founder.video.alt} />
+              <figcaption className="mt-2 text-[12.5px] ledger-muted">{T.founder.video.caption}</figcaption>
+            </figure>
+          ) : <div className="mt-6 aspect-video w-full jw-ph flex items-center justify-center"><span className="font-mono text-[11px] tracking-[0.14em] uppercase bg-paper/85 px-2 py-1"><Fx t={T.founder.film} /></span></div>}
         </div>
         <aside className="ledger-paper border ledger-border p-6" aria-label="Why James approved it">
           <p className="ledger-eyebrow">Why this route is on file</p>
@@ -450,10 +458,11 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
 
   // Sibling routes and voyages in the same country, so a traveller can compare without going back up
   // to the hub (navigation audit, 30 Oct 2026). Only built pages are shown.
-  const sibKey = voyage ? (["raja-ampat", "komodo"].includes(waters) ? "indonesia" : waters) : waters;
+  const place = voyage ? WATERS_PLACE[waters] : undefined;
+  const sibKey = voyage ? place?.key ?? waters : waters;
   const siblings = journeysFor(sibKey).filter((j) => j.href !== T.seo.path && isBuilt(j.href)).slice(0, 3);
-  const countryName = voyage ? "Indonesia" : T.crumbs[2] ?? "";
-  const countryHref = voyage ? "/destinations/asia/indonesia" : COUNTRY_PATH[waters];
+  const countryName = voyage ? place?.name ?? T.crumbs[2] ?? "" : T.crumbs[2] ?? "";
+  const countryHref = voyage ? place?.href : COUNTRY_PATH[waters];
   const Related = (
     <Sec id="related">
       {siblings.length > 0 && (
@@ -467,8 +476,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       )}
       <p className="ledger-eyebrow">{T.reltitle}</p>
       <ul className="mt-4 grid gap-4 md:grid-cols-3">
-        {T.related.map(([code, name, line]) => {
-          const href = /FIELD GUIDE NO/.test(code) && field ? field : /VESSEL/.test(code) ? "/voyages/ships/aliikai" : voyage ? "/voyages" : "/overland";
+        {T.related.map(([code, name, line], k) => {
+          const href = T.relatedHrefs?.[k] ?? (/FIELD GUIDE NO/.test(code) && field ? field : /VESSEL/.test(code) ? "/voyages/ships/aliikai" : voyage ? "/voyages" : "/overland");
           return <li key={name}><a href={href} className="block border ledger-border p-5 h-full hover:border-crimson/60"><p className="font-mono text-[10.5px] tracking-[0.14em] ledger-crimson">{code}</p><p className="ledger-display text-[20px] mt-1">{name}</p><p className="text-[14.5px] ledger-muted mt-1"><Fx t={line} /></p></a></li>;
         })}
       </ul>
@@ -511,16 +520,24 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     ? [Vessel, Overview, FirstTime, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
     : [Overview, FirstTime, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
+  // The founder's mark on the hero (James, 30 Oct 2026): the luggage tag is retired everywhere. Voyages
+  // carry the nautical ship's-log stamp in the Voyages light ink; routes keep their own stamp. Both are
+  // ink only, transparent on the photograph, with the turning ring and the founder's note on tap.
+  const src = T.stamp ?? (T.tag ? { tint: undefined, label: undefined, where: T.tag.title, when: T.tag.date.replace(/^[—\s-]+/, ""), sub: undefined, nudge: T.tag.nudge, cta: T.tag.cta, script: T.tag.note } : null);
+  const heroMark = src ? (
+    <Stamp tint={voyage ? "#" + VOLUME_STYLES.voyages.light.split(" ").map((n) => (+n).toString(16).padStart(2, "0")).join("").toUpperCase() : src.tint} label={voyage ? "Ship's log" : src.label} where={src.where} when={src.when} sub={src.sub} nudge={src.nudge} cta={src.cta} script={src.script} line={T.approve.quote} href="#founder" />
+  ) : null;
+
   return (
     <div className={voyage ? "theme-sea theme-sea-page" : undefined}>
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={<>{/* The old voyage/route tag, postmarked in the destination's ink */}{T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
+          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
-            {T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
+            {heroMark}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
               <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>

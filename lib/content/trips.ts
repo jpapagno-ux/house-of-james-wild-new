@@ -9,6 +9,7 @@ import zaSandRiver from "./trips/the-sand-river-by-road.json";
 import zaLens from "./trips/leopards-through-the-lens.json";
 import zaTrack from "./trips/track-your-life-with-boyd-varty.json";
 import zaPioneer from "./trips/three-generations-at-pioneer.json";
+import polarCircle from "./trips/polar-circle-air-cruise.json";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
 // the content of one route page plus its JSON-LD; the live map's route lives
@@ -35,6 +36,8 @@ export type Trip = {
   lodges?: { name: string; line: string; chips: string[]; photos: string[]; body: string; james?: string; rows: Row[] }[];
   vessel?: { title: string; name: string; blurb: string; facts: Row[]; source?: string;
     gallery?: TripImg[];
+    /** The line under "The cabins" (defaults to Aliikai's). */
+    cabinsNote?: string;
     spaces?: { name: string; line: string; body: string; photos: TripImg[] }[];
     cabins?: { name: string; cat: string; deck: string; bed: string; sleeps: string; feats: string[]; night: number; photos: TripImg[] }[] };
   features: [string, string, string][];
@@ -43,9 +46,17 @@ export type Trip = {
   dates_head: [string, string, string];
   departures?: { source?: string; groups: { name: string; nights: string; this?: boolean; sailings: { date: string; nights: number; price: number; status: string }[] }[] };
   dep_route?: string; dep_cta?: string; dep_season?: string; dep_note?: string;
-  founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string; navLabel?: string };
+  founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string; navLabel?: string;
+    /** The founder's own footage, played silent and looping in place of the film placeholder. */
+    video?: { src: string; poster: string; caption: string; alt: string } };
   approve: { title: string; seal_bottom: string; seal_mark: string; why: string[]; quote: string };
   faqs: Row[]; reltitle: string; related: [string, string, string][];
+  /** Links for the related cards, by position (else guessed from the card's code). */
+  relatedHrefs?: string[];
+  /** Day-by-day intro line (else the template's). */
+  dayintro?: string;
+  /** Tax line beside each departure price (default "+ 11% tax"; empty for none). */
+  taxLine?: string;
   ctaline: string; ctabtn: string;
   prices_final: boolean; booking_live: boolean; copy_approved?: boolean;
   jsonld: Record<string, unknown>[];
@@ -66,6 +77,7 @@ export type Trip = {
 export const TRIPS: Record<string, Trip> = {
   "two-oceans-one-volcano": land as unknown as Trip,
   "10-day-raja-ampat-north": voyage as unknown as Trip,
+  "polar-circle-air-cruise": polarCircle as unknown as Trip,
   "5-day-komodo-island": komodo5 as unknown as Trip,
   "the-original-costa-route-7-days": founders7 as unknown as Trip,
   "the-original-costa-route-10-days": founders10 as unknown as Trip,

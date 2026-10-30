@@ -1,0 +1,11 @@
+{
+ "slug": "antarctica",
+ "name": "The Antarctic Peninsula",
+ "bbox": [
+  -76,
+  -68.5,
+  -56,
+  -52
+ ],
+ "attribution": "Land: Natural Earth"
+}

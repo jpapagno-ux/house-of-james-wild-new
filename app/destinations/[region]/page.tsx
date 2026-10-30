@@ -6,14 +6,16 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import { CHART_CENTRAL_AMERICA } from "@/lib/charts/central-america";
-import REGION_CHARTS_JSON from "@/lib/charts/regions.json";
+import REGION_LIB from "@/lib/charts/regions.json";
+import { routeStart } from "@/lib/content/route-files";
+import { VOLUME_STYLES } from "@/lib/volumes";
 import { STAYS, pageReady } from "@/lib/content/stays";
 import { RESERVES } from "@/lib/content/reserves";
 import { isResidence } from "@/lib/content/ledger-counts";
 
-// Region charts, one per region (scripts/build-region-charts.cjs → lib/charts/regions.json).
-// Central America keeps its hand-built chart.
-const REGION_CHARTS: Record<string, ChartData> = { ...(REGION_CHARTS_JSON as unknown as Record<string, ChartData>), "central-america": CHART_CENTRAL_AMERICA as unknown as ChartData };
+// Region charts on file (scripts/build-chart-<region>.cjs). Regions without one show no map yet.
+// Every region has its chart (scripts/build-region-charts.cjs, James 30 Oct 2026); Central America keeps its hand-labelled one.
+const REGION_CHARTS: Record<string, ChartData> = { ...(REGION_LIB as unknown as Record<string, ChartData>), "central-america": CHART_CENTRAL_AMERICA as unknown as ChartData };
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
 import PlaceNote from "@/components/destination/PlaceNote";
@@ -27,6 +29,7 @@ import { Icon } from "@/components/ledger/Marks";
 import Doors, { type Door } from "@/components/destination/Doors";
 import Journeys from "@/components/destination/Journeys";
 import PlanBand from "@/components/destination/PlanBand";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { RecordCard } from "@/components/hub/Hub";
 import { GlanceBar } from "@/components/record/Frame";
 import { RecordHero } from "@/components/record/Sections";
@@ -67,7 +70,9 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   const r = regionBySlug((await params).region);
   if (!r) notFound();
   const path = `/destinations/${r.slug}`;
-  const journeys = r.countries.flatMap((c) => (c.slug ? journeysFor(c.slug) : []));
+  // Regions told by their waters rather than countries (the polar regions) list their voyages too.
+  const WATERS: Record<string, string[]> = { "polar-antarctica": ["antarctica"] };
+  const journeys = [...r.countries.flatMap((c) => (c.slug ? journeysFor(c.slug) : [])), ...(WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k))];
   const doors: Door[] = r.countries.map((c) => ({ name: c.name, href: `${path}/${c.slug}`, image: c.image, imageAlt: `${c.name}, ${r.name}`, line: c.line, stays: c.stays, bestMonths: c.bestMonths ?? undefined, compass: c.slug === "costa-rica", routes: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "route").length || undefined : undefined, voyages: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "voyage").length || undefined : undefined }));
   const top = [...r.countries].sort((a, b) => b.stays - a.stays).slice(0, 4);
   const answer = r.countries.length
@@ -77,10 +82,12 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   const mapItems: MapItem[] = chart ? [
     ...STAYS.filter((s) => s.regionSlug === r.slug && s.coords).map((s) => { const q = projectOn(chart, s.coords!.lat, s.coords!.lng); return { id: s.slug, category: (isResidence(s.name, s.category) ? "residence" : "stay") as MapItem["category"], name: s.name, kind: `${s.category ?? "stay"} · ${s.country ?? ""}`, href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: s.country, bestMonths: s.bestMonths ?? undefined }; }),
     ...RESERVES.filter((x) => x.stay.regionSlug === r.slug && x.stay.coords).map((x) => { const q = projectOn(chart, x.stay.coords!.lat, x.stay.coords!.lng); return { id: `reserve-${x.slug}`, category: "reserve" as MapItem["category"], name: x.name, kind: `${x.camps.length} camps & residences`, href: `/safaris/${x.slug}`, x: q.x, y: q.y, area: x.area, bestMonths: x.stay.bestMonths ?? undefined }; }),
-  ] : [];
+    ...journeys.filter((j) => j.kind === "voyage").flatMap((j) => { const p = routeStart(j.href); if (!p) return []; const q = projectOn(chart, p.lat, p.lng); return [{ id: `voyage-${j.ledgerId}`, category: "vessel" as MapItem["category"], name: j.title, kind: `voyage · from ${p.name}`, href: j.href, x: q.x, y: q.y, area: "Voyages", bestMonths: j.bestMonths ?? undefined }]; }),
+  ].filter((i) => i.x >= 0 && i.y >= 0 && i.x <= chart.width && i.y <= chart.height) : [];
+  const tones = r.slug === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {};
   const glance = { facts: [["Countries", `${r.countries.length} in the Ledger`], ["Stays", `${r.stayCount} filed`], ["Journeys", journeys.length ? `${journeys.length} drawn` : "Ask James"]] as [string, string][], cta: { label: "Plan with James", href: `/plan?destination=${r.slug}` } };
   return (
-    <>
+    <div className={r.slug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
       <SiteHeader overlay />
       <main id="main">
         {r.hero
@@ -100,7 +107,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: r.name, path }]} /></div>
-          {chart && mapItems.length > 0 && (
+          {chart && (mapItems.length > 0 || r.slug.startsWith("polar")) && (
             <section id="the-map" className="mt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
@@ -109,7 +116,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
                 </div>
                 <p className="text-[16px] ledger-muted max-w-md">Every stay, residence, reserve and voyage with a position on file. Each country page charts its own in closer detail.</p>
               </div>
-              <LedgerChartMap legend="below" country={r.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${r.name} with its stays`} />} width={chart.width} height={chart.height} items={mapItems} counts={{ stay: mapItems.filter((i) => i.category === "stay").length, vessel: mapItems.filter((i) => i.category === "vessel").length, residence: mapItems.filter((i) => i.category === "residence").length, reserve: mapItems.filter((i) => i.category === "reserve").length }} />
+              <LedgerChartMap legend="below" tones={tones} country={r.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${r.name} with its stays`} />} width={chart.width} height={chart.height} items={mapItems} counts={{ stay: mapItems.filter((i) => i.category === "stay").length, vessel: mapItems.filter((i) => i.category === "vessel").length, residence: mapItems.filter((i) => i.category === "residence").length, reserve: mapItems.filter((i) => i.category === "reserve").length }} />
             </section>
           )}
 
@@ -120,7 +127,6 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </div>
             {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
           </div>
-
 
           {(r.intro.length > 0 || r.gallery.length > 0) && (
             <section className="mt-12 md:mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-start" aria-labelledby="region-heading">
@@ -191,10 +197,12 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             <CompassRose bearing={250} className="hidden md:block w-[160px] h-[160px]" />
           </section>
 
+          <AdvisorScroll regionSlug={r.slug} title={`Who knows ${r.name}`} />
+
           <PlanBand place={r.name} compassHref="/compass" />
         </div>
       </main>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: `${r.name} with James Wild & Co`, description: answer, publisher: { "@id": ids.house }, about: { "@type": "Place", name: r.name, ...(r.countries.length ? { containsPlace: r.countries.map((c) => ({ "@type": "Country", name: c.name })) } : {}) }, ...(r.featured.length ? { mainEntity: { "@type": "ItemList", name: `Stays in ${r.name}`, itemListElement: r.featured.map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.name, url: absoluteUrl(recordHref("stay", s.slug)) })) } } : {}) })} />
-    </>
+    </div>
   );
 }

@@ -35,6 +35,7 @@ export const BUILT: string[] = [
   "/overland/south-africa/three-generations-at-pioneer",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
+  "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
   "/voyages/ships/aliikai",
   "/safaris",
   "/safaris/wild-co-safaris",

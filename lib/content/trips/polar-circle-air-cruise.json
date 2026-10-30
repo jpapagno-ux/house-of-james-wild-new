@@ -1,0 +1,1240 @@
+{
+ "id": "polar-circle-air-cruise",
+ "kind": "voyage",
+ "title": "Polar Circle Air-Cruise · voyage",
+ "h1": "Polar Circle Air-Cruise",
+ "h1note": "H1 · title tag: Antarctic Circle Fly-Cruise from Punta Arenas: 10 Days, No Drake Crossing",
+ "sub": "10 Days · 9 Nights · Fly the Drake, Sail to 66°33′S · Punta Arenas, Chile",
+ "crumbs": [
+  "Home",
+  "Voyages",
+  "Antarctica",
+  "Polar Circle Air-Cruise"
+ ],
+ "seo": {
+  "path": "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
+  "title": "Antarctic Circle Fly-Cruise: 10 Days, No Drake Crossing",
+  "description": "Fly over the Drake Passage to King George Island, then sail the Antarctic Peninsula south to the Antarctic Circle at 66°33′S. 10 days from Punta Arenas, February 2027 and 2028, from US$24,995 pp.",
+  "keywords": [
+   "Antarctic Circle cruise",
+   "fly to Antarctica",
+   "Antarctica fly cruise",
+   "Antarctica without the Drake Passage",
+   "Antarctica air-cruise from Punta Arenas",
+   "cross the Antarctic Circle",
+   "Magellan Discoverer",
+   "Magellan Explorer",
+   "best time to visit Antarctica"
+  ]
+ },
+ "answer": "The Polar Circle Air-Cruise is a ten-day Antarctic voyage from Punta Arenas, Chile, that flies over the Drake Passage instead of sailing it: about two hours by charter to King George Island, then eight days aboard Magellan Explorer or Magellan Discoverer, two 88-guest expedition ships, south along the Antarctic Peninsula through the Gerlache and Penola straits and Crystal Sound to attempt the Antarctic Circle at 66°33′S, ice and weather permitting. It runs in February only, from US$24,995 per person.",
+ "quote": "\"I've stood on the Peninsula in March light. This is the voyage that goes past where I turned around.\"",
+ "ledgerline": "The Voyage Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">PCS-A21-POL</span>",
+ "overview_title": "Over the Drake, Down to the Circle",
+ "meta": [
+  [
+   "Ledger ID",
+   "PCS-A21-POL"
+  ],
+  [
+   "Ships",
+   "Magellan Explorer or Magellan Discoverer · 88 guests"
+  ],
+  [
+   "Operator",
+   "Antarctica21"
+  ],
+  [
+   "Waters",
+   "South Shetland Islands · western Antarctic Peninsula"
+  ],
+  [
+   "Duration",
+   "10 days · 9 nights"
+  ],
+  [
+   "Begins & ends",
+   "Punta Arenas, Chile"
+  ],
+  [
+   "Flights",
+   "Punta Arenas ⇄ King George Island, about 2 hours each way"
+  ],
+  [
+   "Farthest south",
+   "66°33′S, the Antarctic Circle (attempted)"
+  ],
+  [
+   "Season",
+   "February 2027 and 2028"
+  ],
+  [
+   "Fare",
+   "From US$24,995 pp, double [confirm]"
+  ],
+  [
+   "Status",
+   "To verify with the operator"
+  ]
+ ],
+ "herofacts": [
+  [
+   "Duration",
+   "10 days · 9 nights"
+  ],
+  [
+   "Ships",
+   "Magellan Explorer · Discoverer"
+  ],
+  [
+   "From",
+   "Punta Arenas, return"
+  ],
+  [
+   "Sailings",
+   "Feb 2027 · Feb 2028"
+  ]
+ ],
+ "herolabel": "HERO PHOTO · ANTARCTIC PENINSULA · JAMES WILD & CO. ARCHIVE",
+ "mark1": "I know<br>these waters",
+ "mark2": "sailed 2020",
+ "slides": [
+  {
+   "kicker": "Polar Circle Air-Cruise · Antarctica",
+   "title": "Over the Drake, down to the Circle",
+   "line": "Fly over the Drake Passage, then sail the Antarctic Peninsula south to 66°33′S.",
+   "photo": "PENINSULA",
+   "bg": "linear-gradient(160deg,#1E2939 0%,#2A3D5C 45%,#426E79 100%)"
+  }
+ ],
+ "side": [
+  [
+   "1",
+   "Punta Arenas",
+   "Day 1",
+   "Briefing · welcome dinner"
+  ],
+  [
+   "2",
+   "King George Island",
+   "Day 2",
+   "Fly in · board the ship"
+  ],
+  [
+   "3",
+   "South Shetland Islands",
+   "Day 3",
+   "Landings · Zodiacs"
+  ],
+  [
+   "4",
+   "Gerlache Strait",
+   "Day 4",
+   "Glaciers · whales possible"
+  ],
+  [
+   "5",
+   "Lemaire & Penola",
+   "Day 5",
+   "Where the classic route turns"
+  ],
+  [
+   "6",
+   "Antarctic Circle",
+   "Day 6",
+   "66°33′S, ice permitting"
+  ],
+  [
+   "7",
+   "The western Peninsula",
+   "Day 7",
+   "Northbound landings"
+  ],
+  [
+   "8",
+   "King George Island",
+   "Day 8",
+   "Last landing · farewell"
+  ],
+  [
+   "9",
+   "Punta Arenas",
+   "Day 9",
+   "Fly back"
+  ],
+  [
+   "10",
+   "Punta Arenas",
+   "Day 10",
+   "Depart"
+  ]
+ ],
+ "strip": [
+  [
+   "D1",
+   "#426E79"
+  ],
+  [
+   "D2",
+   "#2A3D5C"
+  ],
+  [
+   "D3",
+   "#8FA6BF"
+  ],
+  [
+   "D4",
+   "#8FA6BF"
+  ],
+  [
+   "D5",
+   "#2A3D5C"
+  ],
+  [
+   "D6",
+   "#1E2939"
+  ],
+  [
+   "D7",
+   "#8FA6BF"
+  ],
+  [
+   "D8",
+   "#8FA6BF"
+  ],
+  [
+   "D9",
+   "#2A3D5C"
+  ],
+  [
+   "D10",
+   "#426E79"
+  ]
+ ],
+ "stripcols": "repeat(10, minmax(0, 1fr))",
+ "striptitle": "Ten days at a glance",
+ "strip_labels": [
+  "Punta Arenas",
+  "Fly south",
+  "Shetlands",
+  "Gerlache",
+  "Lemaire",
+  "The Circle",
+  "Peninsula",
+  "Shetlands",
+  "Fly north",
+  "Depart"
+ ],
+ "map_eyebrow": "The voyage, charted",
+ "map_title": "Over the Drake and South to 66°33′S",
+ "map_coord": "66°33′S 67°36′W · PCS-A21-POL",
+ "suits": [
+  [
+   "Travellers who dread the Drake",
+   "Two hours in the air instead of two days at sea, each way.",
+   "The Drake Passage is the roughest crossing on most Antarctic voyages. Flying it gives back four days and the seasickness that can come with them."
+  ],
+  [
+   "Second-time Antarctic travellers",
+   "You've seen the Peninsula. Now go past where the classic route turns.",
+   "Most Peninsula voyages turn around near the Lemaire Channel. This one keeps going south through Crystal Sound to attempt the Circle."
+  ],
+  [
+   "Photographers",
+   "Late-season light, low sun, and ice the size of towns.",
+   "February brings long golden evenings, calving glaciers and tabular icebergs. Possible, never guaranteed: whales feeding along the Peninsula."
+  ],
+  [
+   "Couples",
+   "An 88-guest ship, a balcony and nobody else on the horizon.",
+   "Small enough that the expedition team knows your name by the second day."
+  ]
+ ],
+ "twice": [
+  [
+   "Fixed-date travellers",
+   "The flights go when the weather allows.",
+   "Build a day or two of slack after the voyage; the operator's contingency plan covers the wait, not your onward flights."
+  ],
+  [
+   "Anyone set on the Circle",
+   "The ice has the last word.",
+   "The voyage attempts 66°33′S. If the ice says no, the expedition team makes the most of every mile it can reach."
+  ]
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Voyage Log",
+ "staylabel": "Sleeping",
+ "movelabel": "Where",
+ "dayintro": "The outline the ship sails south. In Antarctica the ice, wind and swell set the order day by day, and the expedition team chooses each landing on the morning. Open a day for the detail.",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Punta Arenas",
+   "line": "Arrive in Patagonia",
+   "body": "Arrive in Punta Arenas, on the Strait of Magellan, and transfer to your hotel. The mandatory pre-departure briefing is in the early afternoon at Antarctica21's Explorers House, so plan to land in the morning: it covers the flight, the landings and Antarctica's biosecurity rules. A welcome dinner follows that evening.",
+   "stay": "Hotel in Punta Arenas [hotel to confirm per departure]",
+   "meals": "Dinner",
+   "move": "Punta Arenas",
+   "acts": "Briefing · welcome dinner",
+   "img": "PHOTO · PUNTA ARENAS",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 02",
+   "title": "Fly to King George Island",
+   "line": "Over the Drake, not through it",
+   "body": "A charter flight of about two hours carries you over the Drake Passage to King George Island in the South Shetlands, landing near Chile's Frei Station and Russia's Bellingshausen Station. From the shore, Zodiacs take you out to the ship, and you sail the same afternoon. The flight goes only when the weather on the island allows it; the operator's contingency plan covers any wait in Punta Arenas.",
+   "stay": "Aboard · Magellan Explorer or Magellan Discoverer",
+   "meals": "Breakfast, lunch, dinner",
+   "move": "King George Island",
+   "acts": "Charter flight · Zodiac to the ship",
+   "img": "PHOTO · ZODIAC TO THE SHIP",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "The South Shetland Islands",
+   "line": "First landings",
+   "body": "The first full day in Antarctica, among the South Shetland Islands. The expedition team chooses the landings and Zodiac cruises on the day, by wind, swell and ice. Penguin colonies, fur and elephant seals and whalebone beaches are all possible here, never guaranteed.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "South Shetland Islands",
+   "acts": "Shore landing · Zodiac cruise · lecture",
+   "img": "PHOTO · SOUTH SHETLANDS LANDING",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "The Gerlache Strait",
+   "line": "Onto the Peninsula",
+   "body": "Across the Bransfield Strait to the western side of the Antarctic Peninsula, and into the Gerlache Strait: steep mountains, tidewater glaciers and sheltered bays for landings and Zodiac cruising. Humpback whales are often seen feeding in these waters late in the season; possible, never guaranteed.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "Gerlache Strait",
+   "acts": "Landing · Zodiac cruise · kayaking (paid)",
+   "img": "PHOTO · GERLACHE GLACIERS",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "The Lemaire Channel and Penola Strait",
+   "line": "South, between the walls",
+   "body": "If the ice lets the ship through, south by the Lemaire Channel and into the Penola Strait. This is the stretch where the classic Peninsula voyages usually turn around. On this voyage, the ship keeps going.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "Lemaire Channel · Penola Strait",
+   "acts": "Scenic cruising · landing · Zodiac cruise",
+   "img": "PHOTO · LEMAIRE AT EVENING",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 06",
+   "title": "Crystal Sound and the Antarctic Circle",
+   "line": "66°33′S, weather and ice permitting",
+   "body": "South into Crystal Sound and the attempt on the Antarctic Circle at 66°33′S. Whether the ship crosses it is decided on the day by the captain and the expedition leader, by sea ice and weather. The farther south you go, the more chance of Adélie penguins and of seals hauled out on the floes; possible, never guaranteed.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "Crystal Sound · Antarctic Circle",
+   "acts": "Circle crossing (attempted) · Zodiac cruise",
+   "img": "PHOTO · CRYSTAL SOUND ICE",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 07",
+   "title": "Northbound along the Peninsula",
+   "line": "More landings on the way back",
+   "body": "Northbound along the western Peninsula, with more landings, Zodiac cruises and, for those who booked it, sea kayaking. The expedition team uses the days on the way back to reach whatever the ice closed on the way down.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "The western Peninsula",
+   "acts": "Landing · Zodiac cruise · Polar Plunge",
+   "img": "PHOTO · NORTHBOUND",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 08",
+   "title": "Back to the South Shetlands",
+   "line": "A last landing",
+   "body": "Back north to the South Shetland Islands and King George Island, with a last landing or Zodiac cruise if conditions allow, and the farewell dinner aboard.",
+   "stay": "Aboard",
+   "meals": "All meals aboard",
+   "move": "King George Island",
+   "acts": "Last landing · farewell dinner",
+   "img": "PHOTO · LAST LANDING",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 09",
+   "title": "Fly to Punta Arenas",
+   "line": "Over the Drake, homeward",
+   "body": "Zodiacs back to shore and the charter flight north to Punta Arenas, about two hours, weather permitting. Transfer to your hotel for the night.",
+   "stay": "Hotel in Punta Arenas [hotel to confirm per departure]",
+   "meals": "Breakfast",
+   "move": "Punta Arenas",
+   "acts": "Charter flight",
+   "img": "PHOTO · FLIGHT NORTH",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 10",
+   "title": "Departure",
+   "line": "Home, or onward into Patagonia",
+   "body": "Transfer to the airport for your flight home. Patagonia is on the doorstep: Torres del Paine is a few hours north by road, and we can add it before or after the voyage.",
+   "stay": "—",
+   "meals": "Breakfast",
+   "move": "Punta Arenas",
+   "acts": "Airport transfer",
+   "img": "PHOTO · HOMEWARD",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "exp_title": "On the ice, on the water and ashore",
+ "experiences": [
+  {
+   "name": "Crossing the Antarctic Circle",
+   "line": "Day 6 · 66°33′S",
+   "chips": [
+    "Attempted",
+    "Ice permitting",
+    "Included"
+   ],
+   "photos": [
+    "The Circle"
+   ],
+   "body": "The reason this voyage exists. Beyond Crystal Sound, the ship tries for 66°33′S, the line south of which the sun doesn't set at midsummer. The captain and expedition leader decide on the day, by the ice.",
+   "rows": [
+    [
+     "Day",
+     "Day 6"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "name": "Zodiac cruises among the ice",
+   "line": "Every day aboard",
+   "chips": [
+    "All levels",
+    "Included"
+   ],
+   "photos": [
+    "Zodiac and icebergs"
+   ],
+   "body": "Small boats among the icebergs, brash ice and glacier faces, with an expedition guide at the tiller. The way to see the ice up close, and the way ashore.",
+   "james": "The bergs look big from the deck. From a Zodiac, they look like architecture.",
+   "rows": [
+    [
+     "When",
+     "Most days, weather permitting"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "name": "Shore landings",
+   "line": "South Shetlands and the Peninsula",
+   "chips": [
+    "Guided",
+    "Included"
+   ],
+   "photos": [
+    "Penguins at a landing"
+   ],
+   "body": "Guided landings on the islands and the Peninsula, chosen on the morning by the expedition team. Penguin colonies and seals are possible at many landings, never guaranteed. Waterproof boots are lent on board.",
+   "rows": [
+    [
+     "When",
+     "Most days, weather permitting"
+    ],
+    [
+     "Included",
+     "Yes"
+    ]
+   ]
+  },
+  {
+   "name": "Sea kayaking",
+   "line": "Optional · book ahead",
+   "chips": [
+    "Small group",
+    "US$995 pp"
+   ],
+   "photos": [
+    "Kayaks in calm water"
+   ],
+   "body": "Guided sea kayaking in small groups when conditions allow, beneath sea cliffs and among the ice. Places are limited, so it's booked with the voyage.",
+   "james": "I paddled under the cliffs on the Peninsula in 2020. It was the quietest I've ever heard the world.",
+   "rows": [
+    [
+     "Price",
+     "US$995 per person"
+    ],
+    [
+     "Booking",
+     "With the voyage; places limited"
+    ]
+   ]
+  },
+  {
+   "name": "Hiking and snowshoeing",
+   "line": "Optional · per excursion",
+   "chips": [
+    "Moderate",
+    "US$85 per excursion"
+   ],
+   "photos": [
+    "Walking the snowfields"
+   ],
+   "body": "Longer guided walks and snowshoe outings at selected landings, for those who want more than the standard landing.",
+   "rows": [
+    [
+     "Price",
+     "US$85 per excursion"
+    ]
+   ]
+  },
+  {
+   "name": "The Polar Plunge and citizen science",
+   "line": "Included",
+   "chips": [
+    "Optional",
+    "Included"
+   ],
+   "photos": [
+    "Turquoise ice"
+   ],
+   "body": "The Polar Plunge into Antarctic water, for the brave, and citizen-science projects with the expedition team: the ship's contribution to what's known about these waters.",
+   "rows": [
+    [
+     "Included",
+     "Yes"
+    ]
+   ]
+  }
+ ],
+ "vessel": {
+  "title": "The two ships, in detail",
+  "name": "Magellan Explorer & Magellan Discoverer",
+  "blurb": "Two small expedition ships built for Antarctic air-cruises, each carrying no more than 88 guests. The voyage is the same on either; the ship, the cabins and the fare are what change. Both are operated by Antarctica21.",
+  "facts": [
+   [
+    "Magellan Explorer",
+    "Launched 2019 · 91 m · Polar Code · 88 guests on air-cruises · 60 staff and crew · seven cabin categories, most with balconies · observation lounge, bow deck, gym, sauna, clinic"
+   ],
+   [
+    "Magellan Discoverer",
+    "New for 2026–27 · 94 m · hybrid diesel-electric · Polar Code · 88 guests · 67 staff and crew · five cabin categories, every one with a balcony · panoramic lounge, sauna, gym, clinic, 360° top-deck walking track"
+   ],
+   [
+    "Fares",
+    "From US$24,995 pp (Explorer) · from US$29,795 pp (Discoverer) · double [confirm]"
+   ],
+   [
+    "Sails this voyage",
+    "Explorer: 13 Feb 2027, 15 Feb 2028 · Discoverer: 5 Feb 2027, 7 Feb 2028"
+   ],
+   [
+    "Ship photographs",
+    "[Awaiting image rights from Antarctica21]"
+   ]
+  ],
+  "source": "Antarctica21's published specifications, checked 5 October 2026",
+  "cabinsNote": "Cabin categories, plans and per-cabin fares to come from Antarctica21 [confirm].",
+  "spaces": [
+   {
+    "name": "Magellan Discoverer",
+    "line": "New for the 2026–27 season · from US$29,795",
+    "body": "The newer of the two: hybrid diesel-electric propulsion, built to the Polar Code, 94 metres and 88 guests. Five cabin categories, all with balconies, a panoramic lounge, sauna, gym, clinic and a 360° walking track on the top deck.",
+    "photos": []
+   },
+   {
+    "name": "Magellan Explorer",
+    "line": "Launched 2019 · from US$24,995",
+    "body": "Built for Antarctic air-cruises to Polar Code standards, 91 metres, 88 guests on air-cruises. Seven cabin categories, most with balconies, an observation lounge, a forward bow deck, gym, sauna and clinic.",
+    "photos": []
+   }
+  ]
+ },
+ "features": [
+  [
+   "Flights",
+   "Charter flights over the Drake",
+   "About two hours each way."
+  ],
+  [
+   "Ship",
+   "88 guests at most",
+   "Small enough for every landing."
+  ],
+  [
+   "Ship",
+   "Built to the Polar Code",
+   "Both ships."
+  ],
+  [
+   "Ashore",
+   "Zodiac landings daily",
+   "Weather permitting."
+  ],
+  [
+   "Aboard",
+   "Wine and beer with meals",
+   "Included."
+  ]
+ ],
+ "incl": [
+  "Round-trip charter flights Punta Arenas ⇄ King George Island",
+  "Hotel nights in Punta Arenas on the first and last night, with breakfast [confirm hotels per departure]",
+  "Airport transfers in Punta Arenas",
+  "Welcome briefing at Explorers House, Punta Arenas",
+  "All meals on board: buffet breakfast and lunch, à la carte dinner",
+  "Wine, beer, juice, soft drinks, coffee, tea, chocolate and snacks on board",
+  "Guided shore landings and Zodiac cruises",
+  "Expert lectures and citizen science",
+  "The Polar Plunge",
+  "Loan of waterproof boots",
+  "Flight contingency plan",
+  "IAATO passenger fee"
+ ],
+ "excl": [
+  "International flights to and from Punta Arenas",
+  "Travel insurance (with emergency evacuation cover) [confirm the operator's minimum]",
+  "Gratuities",
+  "Bar purchases beyond the included drinks",
+  "Sea kayaking (US$995 per person) and hiking and snowshoeing (US$85 per excursion)",
+  "Extra hotel nights",
+  "Personal expenses"
+ ],
+ "calc": {
+  "title": "Build your voyage price",
+  "optlabel": "Choose your ship",
+  "opt0": 0,
+  "note": "Lead fares on file, per person, double occupancy, for the 9-night voyage. To be confirmed by cabin when you enquire.",
+  "maxG": 8,
+  "opts": [
+   {
+    "label": "Magellan Explorer",
+    "sub": "Lead cabin · 13 Feb 2027 or 15 Feb 2028",
+    "pp": 24995,
+    "photo": "",
+    "sleeps": "Sleeps 2",
+    "bed": "[confirm]",
+    "size": "",
+    "feats": "Seven cabin categories, most with balconies"
+   },
+   {
+    "label": "Magellan Discoverer",
+    "sub": "Lead cabin · 5 Feb 2027 or 7 Feb 2028",
+    "pp": 29795,
+    "photo": "",
+    "sleeps": "Sleeps 2",
+    "bed": "[confirm]",
+    "size": "",
+    "feats": "Five cabin categories, all with balconies"
+   }
+  ],
+  "adds": [
+   {
+    "label": "Sea kayaking",
+    "sub": "Guided, small groups, places limited",
+    "pp": 995
+   },
+   {
+    "label": "Hiking and snowshoeing",
+    "sub": "US$85 per excursion; priced here for one",
+    "pp": 85
+   }
+  ]
+ },
+ "dates_head": [
+  "Departures",
+  "2027 & 2028 dates and fares",
+  "Each sailing = an Event/Offer with startDate"
+ ],
+ "departures": {
+  "source": "the Ledger's Polar Crossings record (fares checked 5 October 2026)",
+  "groups": [
+   {
+    "name": "Polar Circle Air-Cruise · Magellan Explorer",
+    "nights": "9 nights",
+    "this": true,
+    "sailings": [
+     {
+      "date": "13 February 2027",
+      "nights": 9,
+      "price": 24995,
+      "status": "Space to confirm"
+     },
+     {
+      "date": "15 February 2028",
+      "nights": 9,
+      "price": 24995,
+      "status": "Space to confirm"
+     }
+    ]
+   },
+   {
+    "name": "Polar Circle Air-Cruise · Magellan Discoverer",
+    "nights": "9 nights",
+    "sailings": [
+     {
+      "date": "5 February 2027",
+      "nights": 9,
+      "price": 29795,
+      "status": "Space to confirm"
+     },
+     {
+      "date": "7 February 2028",
+      "nights": 9,
+      "price": 29795,
+      "status": "Space to confirm"
+     }
+    ]
+   }
+  ]
+ },
+ "dep_route": "Punta Arenas → Punta Arenas",
+ "dep_cta": "Ask about space →",
+ "dep_season": "The Polar Circle Air-Cruise sails in February only, when the sea ice has retreated far enough south for a ship to try for the Circle. Two departures a year, one on each ship.",
+ "dep_note": "Fares per person, double occupancy, for the 9-night voyage, from the Ledger's record. Space and the fare for your cabin are confirmed with the operator when you ask.",
+ "taxLine": "",
+ "founder": {
+  "eyebrow": "The founder on the ice",
+  "navLabel": "James in Antarctica",
+  "title": "Every Photograph Here Is His",
+  "p1": "James sailed the Antarctic Peninsula in March 2020, and every photograph on this page outside the ships is from that voyage: the Zodiacs among the bergs, the pink snow-algae landing, the kayaks under the cliffs, the postcard he wrote at Vernadsky Station.",
+  "p2": "He hasn't sailed this air-cruise or the two Magellan ships yet [confirm]. It's on file for the travellers who ask him the same two things about Antarctica: can I skip the Drake, and can I go further south than the usual voyage? This one does both.",
+  "film": "Evening near the Lemaire Channel, 8 March 2020 · James Wild & Co. archive",
+  "video": {
+   "src": "https://res.cloudinary.com/jhlnq5h5/video/upload/q_auto,vc_auto/wildco/guides/antarctic-peninsula/destination/lemaire-golden-peaks-film.mp4",
+   "poster": "https://res.cloudinary.com/jhlnq5h5/video/upload/so_2,q_auto,f_jpg/wildco/guides/antarctic-peninsula/destination/lemaire-golden-peaks-film.jpg",
+   "caption": "Evening near the Lemaire Channel, 8 March 2020. 17 seconds, James Wild & Co. archive.",
+   "alt": "Sailing slowly past a sculpted iceberg as evening light turns cloud-wreathed Antarctic peaks gold, near the Lemaire Channel"
+  }
+ },
+ "approve": {
+  "title": "The Peninsula, past where the classic route turns",
+  "seal_bottom": "PENINSULA · MAR 2020",
+  "seal_mark": "ANTARCTICA",
+  "why": [
+   "James sailed the Antarctic Peninsula in March 2020; the photographs here are his.",
+   "It flies the Drake Passage both ways, about two hours each, instead of two days at sea.",
+   "It goes on south past the Lemaire Channel, through Crystal Sound, to attempt the Antarctic Circle.",
+   "Two 88-guest ships built to the Polar Code: small enough for every landing."
+  ],
+  "quote": "I've stood on the Peninsula in March light. This is the voyage that goes past where I turned around."
+ },
+ "stamp": {
+  "tint": "#BEC9DA",
+  "tintName": "Ice blue",
+  "label": "Ship's log",
+  "where": "Antarctic Peninsula",
+  "sub": "Sailed 2020",
+  "when": "Sailed March 2020",
+  "nudge": "why this voyage",
+  "script": "Been on the ice. JW",
+  "cta": "Read why this voyage ↓"
+ },
+ "proof": "James sailed the Antarctic Peninsula in March 2020; the photographs on this page are his. He hasn't sailed this air-cruise or the Magellan ships yet [confirm].",
+ "bestFor": {
+  "who": "Travellers who dread the Drake",
+  "why": "Two hours in the air each way instead of two days at sea, and further south than the classic Peninsula voyage."
+ },
+ "firstTime": {
+  "eyebrow": "Your first Antarctica",
+  "title": "Why Fly In, and Why Go to the Circle",
+  "intro": "Antarctica is a long way to go to spend four days of it crossing the Drake. This voyage spends them on the ice.",
+  "points": [
+   [
+    "No Drake crossing",
+    "The Drake Passage takes about two days each way by sea and can be rough. The charter flight takes about two hours."
+   ],
+   [
+    "Farther south than the classic route",
+    "Classic Peninsula voyages usually turn near the Lemaire Channel. This one carries on through Crystal Sound to try for 66°33′S."
+   ],
+   [
+    "February, the best month for it",
+    "Late in the season the sea ice is at its furthest south, the whales are feeding and the evening light is long and low."
+   ],
+   [
+    "Small ships",
+    "88 guests at most, so everyone can be ashore at each landing within Antarctic visitor limits."
+   ],
+   [
+    "Everything from Punta Arenas",
+    "Hotel nights, transfers, the flights and the briefing are part of the fare. You only need to reach Punta Arenas."
+   ]
+  ]
+ },
+ "faqs": [
+  [
+   "Will I cross the Antarctic Circle?",
+   "The voyage attempts it, at 66°33′S in the waters beyond Crystal Sound. Sea ice and weather decide on the day, and the captain and expedition leader make the call. Sailing in February, when the ice has retreated furthest, gives the best chance; nobody can promise it."
+  ],
+  [
+   "Do I have to cross the Drake Passage by sea?",
+   "No. You fly over it: about two hours by charter from Punta Arenas to King George Island in the South Shetlands, and the same back. It saves roughly two days of open-ocean sailing each way."
+  ],
+  [
+   "What happens if the flight can't go?",
+   "The flights only go when the weather on King George Island allows a landing. The operator's flight contingency plan is part of the fare; delays of a day or more are possible either way, so leave room in your plans after the voyage."
+  ],
+  [
+   "How is this voyage priced?",
+   "From US$24,995 per person, double occupancy, aboard Magellan Explorer, and from US$29,795 aboard the newer Magellan Discoverer (fares on file for the 2027 and 2028 departures, to be confirmed when you enquire). The fare covers the charter flights, two hotel nights in Punta Arenas, all meals on board with wine and beer, landings, Zodiac cruises and lectures. Sea kayaking is extra."
+  ],
+  [
+   "When does it run?",
+   "February only: 5 and 13 February 2027, and 7 and 15 February 2028. It's the month when the sea ice has retreated far enough to sail south to the Circle."
+  ],
+  [
+   "Which ship should I choose?",
+   "Both carry 88 guests and were built for Antarctic air-cruises to the Polar Code. Magellan Discoverer is new for the 2026–27 season, with hybrid propulsion and a balcony in every cabin. Magellan Explorer, from 2019, has seven cabin categories and the lower fare. Tell us how you travel and we'll suggest the cabin."
+  ],
+  [
+   "What wildlife will I see?",
+   "Penguins, seals and whales are all likely somewhere on the voyage, but none is guaranteed: humpback whales feed along the Peninsula late in the season, and Adélie penguins and seals on the floes become more likely the farther south the ship gets. Possible, never guaranteed."
+  ],
+  [
+   "Is there a single supplement?",
+   "[Confirm the single supplement and share options with Antarctica21.]"
+  ]
+ ],
+ "reltitle": "More from Wild & Co Voyages",
+ "related": [
+  [
+   "THE POLAR REGIONS · GUIDE",
+   "Antarctica",
+   "When to go, how to get there and the voyages on file."
+  ],
+  [
+   "WILD & CO VOYAGES",
+   "All voyages",
+   "Small ships and sailing yachts, by ledger."
+  ],
+  [
+   "PATAGONIA · BEFORE OR AFTER",
+   "Torres del Paine",
+   "A few hours north of Punta Arenas by road. Ask James."
+  ]
+ ],
+ "relatedHrefs": [
+  "/destinations/polar-antarctica",
+  "/voyages",
+  "/plan?trip=Patagonia%20with%20the%20Polar%20Circle%20Air-Cruise"
+ ],
+ "ctaline": "Two sailings a year, in February, at 88 guests a ship. Ask about space on 2027 and 2028, or text James on 561.479.6355.",
+ "ctabtn": "Ask About Space",
+ "prices_final": false,
+ "booking_live": false,
+ "copy_approved": false,
+ "photoCredit": "Photographs of the Antarctic Peninsula from the James Wild & Co. personal archive, March 2020, and partner images. Ship photographs to come.",
+ "images": {
+  "PHOTO · PUNTA ARENAS": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/golden-light-glaciated-peak",
+   "alt": "Evening light turning a glaciated Antarctic peak gold above calm water",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · ZODIAC TO THE SHIP": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-wake-snow-cliffs",
+   "alt": "A Zodiac leaving a wake across calm water beneath snow-plastered cliffs",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · SOUTH SHETLANDS LANDING": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/penguin-landing-misty-massif",
+   "alt": "A penguin on smooth rock as guests in red parkas explore the snow below a cloud-wrapped massif",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · GERLACHE GLACIERS": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/glacier-mountain-channel",
+   "alt": "A crevassed glacier pouring down a mountainside into a dark channel",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · LEMAIRE AT EVENING": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/pyramid-island-peak-tabular-berg",
+   "alt": "A pyramid-shaped rock peak with a snow apron beside a flat tabular iceberg",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · CRYSTAL SOUND ICE": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/iceberg-arch",
+   "alt": "A great iceberg with a sculpted arch among brash ice, snowy mountains behind",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · NORTHBOUND": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/kayaks-beneath-sea-cliff",
+   "alt": "Red sea kayaks paddling beneath a towering sea cliff toward a glacier",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · LAST LANDING": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/landing-snow-algae-peaks",
+   "alt": "Guests in red parkas crossing a snowfield tinted pink by snow algae beneath glaciated peaks",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · FLIGHT NORTH": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/tabular-iceberg-violet-sunset",
+   "alt": "A flat-topped tabular iceberg along the horizon under a violet and orange sunset",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "PHOTO · HOMEWARD": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/sunset-beside-ice-cliff",
+   "alt": "The low sun setting behind a snowy island, a gold path on the water beside an ice cliff",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "Crossing the Antarctic Circle": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/polar/antarctica/antarctic-peninsula-peak-brash-ice-sunset",
+   "alt": "A snow-streaked peak above a bay of brash ice on the Antarctic Peninsula at sunset",
+   "credit": "Partner image"
+  },
+  "Zodiac cruises among the ice": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs",
+   "alt": "A Zodiac full of guests in red parkas passing between two massive icebergs",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "Shore landings": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/penguin-landing-misty-massif",
+   "alt": "A penguin keeping watch over a shore landing on the Antarctic Peninsula",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "Sea kayaking": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/kayakers-snow-island",
+   "alt": "Paddlers in red tandem sea kayaks resting in calm water before a snow-streaked island",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "Hiking and snowshoeing": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/landing-snow-algae-peaks",
+   "alt": "Guests walking a pink snow-algae field beneath glaciated peaks",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  },
+  "The Polar Plunge and citizen science": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/turquoise-iceberg-glacier-face",
+   "alt": "A small iceberg glowing turquoise below the waterline in front of a glacier wall",
+   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+  }
+ },
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise#trip",
+   "name": "Polar Circle Air-Cruise",
+   "url": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise",
+   "description": "The Polar Circle Air-Cruise is a ten-day Antarctic voyage from Punta Arenas, Chile, that flies over the Drake Passage instead of sailing it: about two hours by charter to King George Island, then eight days aboard Magellan Explorer or Magellan Discoverer, two 88-guest expedition ships, south along the Antarctic Peninsula through the Gerlache and Penola straits and Crystal Sound to attempt the Antarctic Circle at 66°33′S, ice and weather permitting. It runs in February only, from US$24,995 per person.",
+   "touristType": [
+    "Travellers who dread the Drake",
+    "Second-time Antarctic travellers",
+    "Photographers",
+    "Couples"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Ledger ID",
+    "value": "PCS-A21-POL"
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 10,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Punta Arenas",
+       "description": "Day 1 · briefing and welcome dinner",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -53.163,
+        "longitude": -70.917
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "King George Island",
+       "description": "Day 2 · fly in, Zodiac to the ship",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -62.19,
+        "longitude": -58.98
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "South Shetland Islands",
+       "description": "Day 3 · landings and Zodiac cruises",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -62.6,
+        "longitude": -59.9
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Gerlache Strait",
+       "description": "Day 4 · bays and glaciers",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -64.55,
+        "longitude": -62.45
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Lemaire Channel & Penola Strait",
+       "description": "Day 5",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -65.1,
+        "longitude": -63.98
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Crystal Sound",
+       "description": "Day 6",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -66.4,
+        "longitude": -66.6
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Antarctic Circle",
+       "description": "Day 6 · 66°33′S, ice permitting",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -66.56,
+        "longitude": -67.6
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Northbound along the Peninsula",
+       "description": "Day 7",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -64.75,
+        "longitude": -62.9
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "King George Island",
+       "description": "Day 8 · back to Fildes Bay",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -62.2,
+        "longitude": -58.95
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+       "@type": "TouristAttraction",
+       "name": "Punta Arenas",
+       "description": "Day 9 · fly back across the Drake",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -53.0,
+        "longitude": -70.85
+       }
+      }
+     }
+    ]
+   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Polar Circle Air-Cruise · Magellan Explorer · 13 February 2027",
+     "price": 24995,
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/LimitedAvailability",
+     "url": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise#departures",
+     "validFrom": "2026-10-05"
+    },
+    {
+     "@type": "Offer",
+     "name": "Polar Circle Air-Cruise · Magellan Explorer · 15 February 2028",
+     "price": 24995,
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/LimitedAvailability",
+     "url": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise#departures",
+     "validFrom": "2026-10-05"
+    },
+    {
+     "@type": "Offer",
+     "name": "Polar Circle Air-Cruise · Magellan Discoverer · 5 February 2027",
+     "price": 29795,
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/LimitedAvailability",
+     "url": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise#departures",
+     "validFrom": "2026-10-05"
+    },
+    {
+     "@type": "Offer",
+     "name": "Polar Circle Air-Cruise · Magellan Discoverer · 7 February 2028",
+     "price": 29795,
+     "priceCurrency": "USD",
+     "availability": "https://schema.org/LimitedAvailability",
+     "url": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise#departures",
+     "validFrom": "2026-10-05"
+    }
+   ]
+  },
+  {
+   "@context": "https://schema.org",
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Will I cross the Antarctic Circle?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The voyage attempts it, at 66°33′S in the waters beyond Crystal Sound. Sea ice and weather decide on the day, and the captain and expedition leader make the call. Sailing in February, when the ice has retreated furthest, gives the best chance; nobody can promise it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to cross the Drake Passage by sea?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You fly over it: about two hours by charter from Punta Arenas to King George Island in the South Shetlands, and the same back. It saves roughly two days of open-ocean sailing each way."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if the flight can't go?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The flights only go when the weather on King George Island allows a landing. The operator's flight contingency plan is part of the fare; delays of a day or more are possible either way, so leave room in your plans after the voyage."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is this voyage priced?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "From US$24,995 per person, double occupancy, aboard Magellan Explorer, and from US$29,795 aboard the newer Magellan Discoverer (fares on file for the 2027 and 2028 departures, to be confirmed when you enquire). The fare covers the charter flights, two hotel nights in Punta Arenas, all meals on board with wine and beer, landings, Zodiac cruises and lectures. Sea kayaking is extra."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "When does it run?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "February only: 5 and 13 February 2027, and 7 and 15 February 2028. It's the month when the sea ice has retreated far enough to sail south to the Circle."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which ship should I choose?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Both carry 88 guests and were built for Antarctic air-cruises to the Polar Code. Magellan Discoverer is new for the 2026–27 season, with hybrid propulsion and a balcony in every cabin. Magellan Explorer, from 2019, has seven cabin categories and the lower fare. Tell us how you travel and we'll suggest the cabin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What wildlife will I see?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Penguins, seals and whales are all likely somewhere on the voyage, but none is guaranteed: humpback whales feed along the Peninsula late in the season, and Adélie penguins and seals on the floes become more likely the farther south the ship gets. Possible, never guaranteed."
+     }
+    }
+   ]
+  }
+ ]
+}

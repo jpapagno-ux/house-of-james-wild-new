@@ -21,6 +21,7 @@ export const BUILT: string[] = [
   "/for-advisors",
   "/partners",
   "/travel-notes",
+  "/field-guides",
   "/stays",
   // Wild Pathways (Phase 2C): built only while NEXT_PUBLIC_PATHWAYS=on; the pages 404 otherwise.
   ...(process.env.NEXT_PUBLIC_PATHWAYS === "on" ? ["/pathways", "/pathways/*"] : []),
@@ -35,6 +36,7 @@ export const BUILT: string[] = [
   "/overland/south-africa/three-generations-at-pioneer",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
+  "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
   "/voyages/ships/aliikai",
   "/safaris",
   "/safaris/wild-co-safaris",

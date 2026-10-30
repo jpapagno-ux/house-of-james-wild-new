@@ -173,6 +173,13 @@ export const TRIP_SLIDES: Record<string, TripImg[]> = {
     { url: `${CLD}wildco/voyages/home-hero/03-over-under-reef`, alt: "Raja Ampat: a snorkeller over the reef, half above and half below the water" },
     { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/21LilyRose", alt: "Evening on Aliikai's deck by lantern light" },
   ],
+  "polar-circle-air-cruise": [
+    { url: `${CLD}wildco/voyages/polar/antarctica/antarctic-peninsula-iceberg-alley`, alt: "Towering icebergs in deep blue water off the Antarctic Peninsula, a small expedition boat dwarfed at their base", credit: "Partner image" },
+    { url: `${CLD}wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs`, alt: "A Zodiac full of guests in red parkas passing between two massive icebergs", credit: "James Wild & Co. archive, March 2020" },
+    { url: `${CLD}wildco/guides/antarctic-peninsula/destination/golden-light-glaciated-peak`, alt: "Evening light turning a glaciated Antarctic peak gold above calm water", credit: "James Wild & Co. archive, March 2020" },
+    { url: `${CLD}wildco/guides/antarctic-peninsula/destination/kayaks-beneath-sea-cliff`, alt: "Red sea kayaks beneath a towering sea cliff, a glacier and a blue iceberg ahead", credit: "James Wild & Co. archive, March 2020" },
+    { url: `${CLD}wildco/guides/antarctic-peninsula/destination/landing-snow-algae-peaks`, alt: "Guests in red parkas crossing pink snow-algae fields beneath glaciated peaks", credit: "James Wild & Co. archive, March 2020" },
+  ],
   "two-oceans-one-volcano": [
     { url: `${TL}tortuguero-river-mouth-aerial`, alt: "Tortuguero from the air: the river, the rainforest and the Caribbean beyond" },
     { url: `${B44}356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel.webp`, alt: "Arenal Volcano over the rainforest, Costa Rica" },

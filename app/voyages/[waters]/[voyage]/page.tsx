@@ -14,5 +14,7 @@ export default async function VoyageRoute({ params }: P) {
   const t = byPath(`/voyages/${waters}/${voyage}`);
   if (!t) notFound();
   const m = TRIP_IMAGES[t.id] ?? { images: {} };
-  return <TripPage trip={t} mapHtml={mapHtml(t)} images={{ ...m.images, ...(t.images ?? {}) }} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} host={{ key: "voyage:aliikai", name: "Aliikai", kind: "vessel" }} film={FILMS.aliikai} />;
+  // Aliikai's crew card and film belong on Aliikai's voyages only.
+  const aliikai = /\/aliikai-/.test(t.seo.path);
+  return <TripPage trip={t} mapHtml={mapHtml(t)} images={{ ...m.images, ...(t.images ?? {}) }} hero={m.hero} slides={TRIP_SLIDES[t.id] ?? []} host={aliikai ? { key: "voyage:aliikai", name: "Aliikai", kind: "vessel" } : undefined} film={aliikai ? FILMS.aliikai : undefined} />;
 }

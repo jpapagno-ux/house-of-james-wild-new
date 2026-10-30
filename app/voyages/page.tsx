@@ -10,6 +10,7 @@ import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, touristTrip } from "@/lib/schema";
 import RouteAtlas from "@/components/journey/RouteAtlas";
+import { routeIdFor } from "@/lib/content/route-files";
 import Link from "next/link";
 
 // /voyages: Volume 04 hub shell. Small ships and sailing yachts; the
@@ -20,6 +21,7 @@ export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Y
 
 export default function VoyagesHub() {
   const voyages = journeysFor("indonesia");
+  const polar = journeysFor("antarctica");
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
@@ -27,8 +29,8 @@ export default function VoyagesHub() {
         answer={`James Wild & Co's Voyages volume files ${LEDGER_COUNTS.vessels} small ships and sailing yachts and the voyages they sail, from phinisis in Raja Ampat and Komodo to expedition ships in the polar regions. Each voyage lists its ports in order, the cabins and the fare per person, and James, 44 years on the road and sailing since 1989, has sailed many of them himself: Aliikai through Raja Ampat in November 2024 among them.`}
         filling="Ship pages, cabin by cabin, and 2027–2028 departures fill from the Ledger export as each voyage page is built.">
         <RouteAtlas id="voyages-atlas" kind="voyage" dest="raja-ampat" eyebrow="The voyage atlas · by sea" title="Every Voyage on One Chart"
-          line="Pick a voyage and the globe sails to it, then plays it day by day: Raja Ampat's karst islands and the Komodo dragons."
-          routes={voyages.map((j) => ({ id: j.href.split("/").pop()!.replace(/^aliikai-/, ""), label: j.title, href: j.href, where: "Indonesia" }))} />
+          line="Pick a voyage and the globe sails to it, then plays it day by day: Raja Ampat's karst islands, the Komodo dragons, and south over the Drake to the Antarctic Circle."
+          routes={[...voyages.map((j) => ({ j, where: "Indonesia" })), ...polar.map((j) => ({ j, where: "Antarctica" }))].flatMap(({ j, where }) => { const id = routeIdFor(j.href); return id ? [{ id, label: j.title, href: j.href, where }] : []; })} />
         <HubSection eyebrow="Indonesia" title="Aboard Aliikai" id="aliikai-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{voyages.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
           <p className="mt-6 text-[15px]">
@@ -40,9 +42,15 @@ export default function VoyagesHub() {
             <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Everything in Indonesia</Link>
           </p>
         </HubSection>
+        {polar.length > 0 && (
+          <HubSection eyebrow="The polar regions" title="To the Antarctic Circle" id="polar-h">
+            <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{polar.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
+            <p className="mt-6 text-[15px]"><span className="ledger-eyebrow mr-2">The waters</span><Link href="/destinations/polar-antarctica" className="underline underline-offset-4 hover:ledger-crimson">Antarctica guide</Link></p>
+          </HubSection>
+        )}
         <AdvisorScroll volume="voyages" title="Who sails with the small ships" />
       </HubShell>
-      <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: voyages.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
+      <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: [...voyages, ...polar].map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
     </div>
   );
 }

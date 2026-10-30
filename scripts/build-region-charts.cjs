@@ -8,6 +8,9 @@ const fs = require("fs");
 const { feature } = require("topojson-client");
 const topo = require("world-atlas/countries-50m.json");
 const FEATS = feature(topo, topo.objects.countries).features;
+// Small islands (the Galápagos zoom) draw from the 1:10m stock.
+const topo10 = require("world-atlas/countries-10m.json");
+const FEATS10 = feature(topo10, topo10.objects.countries).features;
 const stays = require("../lib/content/stays.json").stays;
 const reserves = require("../lib/content/reserves.json");
 
@@ -19,7 +22,11 @@ const REGIONS = {
   "usa-canada": { frame: [-125, 30, -100, 50], seas: [["Pacific Ocean", 36, -123.2]] },
   "caribbean-mexico": { seas: [["Gulf of Mexico", 24.5, -91], ["Caribbean Sea", 17, -82], ["Pacific Ocean", 16, -104]] },
   oceania: { wrap: true, seas: [["Coral Sea", -18, 155], ["Tasman Sea", -38, 162], ["South Pacific Ocean", -28, 195]] },
-  "south-america": { seas: [["Pacific Ocean", -20, -88], ["Atlantic Ocean", -30, -40]] },
+  "south-america": { minN: 2.4, seas: [["Pacific Ocean", -20, -88], ["Atlantic Ocean", -30, -40]] },
+  // The Galápagos, closer (James, 30 Oct 2026: "a zoom into Galápagos, as these smaller islands may need
+  // that effect"). Shown as an inset on the South America chart and as its own chart on Ecuador's page.
+  galapagos: { country: "ecuador-galapagos", hires: true, frame: [-92.15, -1.55, -89.05, 1.75], focus: ["Ecuador"], seas: [["Pacific Ocean", -1.25, -91.7]],
+    areas: [["Isabela", -0.75, -91.15], ["Fernandina", -0.37, -91.62], ["Santiago", -0.22, -90.72], ["Santa Cruz", -0.62, -90.36], ["Baltra ✈", -0.38, -90.24], ["San Cristóbal ✈", -0.85, -89.45], ["Española", -1.38, -89.68], ["Floreana", -1.30, -90.44], ["Genovesa", 0.32, -89.95], ["Darwin", 1.67, -92.0], ["Wolf", 1.38, -91.82], ["Marchena", 0.33, -90.48], ["Pinta", 0.58, -90.75]] },
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
@@ -59,6 +66,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
     if (hdeg < wdeg * 0.55) { const cy = (B[1] + B[3]) / 2, h = wdeg * 0.55; B[1] = cy - h / 2; B[3] = cy + h / 2; }
     if (hdeg > wdeg * 1.2) { const cx = (B[0] + B[2]) / 2, w = hdeg / 1.2 / Math.cos(mid); B[0] = cx - w / 2; B[2] = cx + w / 2; }
   }
+  if (cfg.minN != null) B[3] = Math.max(B[3], cfg.minN); // keep Darwin and Wolf (Galápagos) on the chart
   const bounds = { w: +B[0].toFixed(3), s: +B[1].toFixed(3), e: +B[2].toFixed(3), n: +B[3].toFixed(3) };
   const kx = W / (bounds.e - bounds.w), ky = kx / Math.cos(((bounds.s + bounds.n) / 2) * Math.PI / 180);
   const H = Math.round((bounds.n - bounds.s) * ky);
@@ -78,11 +86,11 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   const raw = points(slug);
   const focusNames = new Set(cfg.focus || FEATS.filter((f) => raw.some((p) => inFeat(p, f))).map((f) => f.properties.name));
   let focus = ""; const neighbors = [], flabels = [], nlabels = [];
-  for (const g of FEATS) {
+  for (const g of cfg.hires ? FEATS10 : FEATS) {
     const d = geomPath(g.geometry); if (!d) continue;
     const big = polysOf(g.geometry).map((p) => S(p[0])).filter((r) => inside(ringBox(r))).sort((a, b) => area(b) - area(a))[0];
     const lab = big ? (() => { const [x, y] = centroid(big); return x > bounds.w && x < bounds.e && y > bounds.s && y < bounds.n ? { a: area(big), x: P([x, y])[0], y: P([x, y])[1], text: g.properties.name.replace("United Republic of ", "").replace("Dem. Rep. Congo", "DR Congo").replace("United States of America", "United States").toUpperCase() } : null; })() : null;
-    if (focusNames.has(g.properties.name)) { focus += d; if (lab) flabels.push(lab); }
+    if (focusNames.has(g.properties.name)) { focus += d; if (lab && !cfg.hires) flabels.push(lab); }
     else { neighbors.push({ name: g.properties.name, d }); if (lab) nlabels.push(lab); }
   }
   const span = bounds.n - bounds.s; const step = span > 40 ? 10 : span > 20 ? 5 : span > 8 ? 2 : 1;

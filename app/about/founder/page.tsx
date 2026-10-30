@@ -46,7 +46,7 @@ export default function FounderPage() {
       <main id="main" className="pt-6 md:pt-10 pb-20">
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="mb-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "About", path: "/about" }, { name: "Meet James", path: PATH }]} /></div>
-          <div id="james" className="scroll-mt-32 lg:scroll-mt-[208px]"><HouseHero eyebrow={f.eyebrow} title={f.title} subtitle={f.subtitle} image={IMG.surfersBeach} quote={f.quote} /></div>
+          <div id="james" className="scroll-mt-32 lg:scroll-mt-[212px]"><HouseHero eyebrow={f.eyebrow} title={f.title} subtitle={f.subtitle} image={IMG.surfersBeach} quote={f.quote} /></div>
 
           <dl className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {f.meta.map(([k, v]) => <div key={k} className="border-t ledger-rule pt-3"><dt className="ledger-eyebrow">{k}</dt><dd className="mt-1 text-[16px] leading-snug">{v}</dd></div>)}
@@ -71,7 +71,7 @@ export default function FounderPage() {
             </div>
           </section>
 
-          <section id="field-log" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="log-heading">
+          <section id="field-log" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="log-heading">
             <SectionHead eyebrow="The field log" title="Where James Has Been Lately" id="log-heading" />
             <ol className="mt-8 border-t ledger-border">
               {f.fieldLog.map((e) => (

@@ -80,7 +80,7 @@ export default function StayFilm({ id, title, name, planHref, bare = false }: { 
   const caption = credit ? <p className="mt-2 font-mono text-[10.5px] tracking-[0.12em] uppercase ledger-muted">{credit.seriesLine} · {credit.credit}</p> : null;
   if (bare) return caption ? <>{player}{caption}</> : player;
   return (
-    <section id="film" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="film-heading">
+    <section id="film" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="film-heading">
       <p className="ledger-eyebrow ledger-crimson">The film</p>
       <h2 id="film-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">{name}, in Motion</h2>
       {player}

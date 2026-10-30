@@ -148,7 +148,7 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
   const Heading = global ? "h1" : "h2";
 
   return (
-    <section id="compass" className={`${global ? "" : "mt-16 md:mt-24"} scroll-mt-32 lg:scroll-mt-[208px] text-paper -mx-5 md:mx-0 px-5 md:px-12 pt-12 md:pt-16 pb-12 relative overflow-hidden bg-ink bg-[radial-gradient(90%_70%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%),radial-gradient(70%_50%_at_0%_100%,rgba(139,37,37,0.28),transparent_60%)]`} aria-labelledby="compass-heading">
+    <section id="compass" className={`${global ? "" : "mt-16 md:mt-24"} scroll-mt-32 lg:scroll-mt-[212px] text-paper -mx-5 md:mx-0 px-5 md:px-12 pt-12 md:pt-16 pb-12 relative overflow-hidden bg-ink bg-[radial-gradient(90%_70%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%),radial-gradient(70%_50%_at_0%_100%,rgba(139,37,37,0.28),transparent_60%)]`} aria-labelledby="compass-heading">
       <div className="pointer-events-none absolute inset-3 md:inset-4 border border-coast-light/20" aria-hidden="true" />
       <div className="relative grid lg:grid-cols-[1fr_260px] gap-10 items-start">
         <div>

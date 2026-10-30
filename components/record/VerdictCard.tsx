@@ -12,7 +12,7 @@ const ICON: Record<VerdictTag, typeof Feather> = { "Worth your time?": Hourglass
 export default function VerdictCard({ name, v, k, stamp }: { name: string; v: Verdict; k: string; stamp?: React.ReactNode }) {
   const signoff = v.signoff ?? signoffFor(k);
   return (
-    <section id="verdict" className="mt-14 md:mt-20 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="verdict-heading">
+    <section id="verdict" className="mt-14 md:mt-20 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="verdict-heading">
       <div className="relative mx-auto max-w-xl bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] px-6 py-7 md:px-9 md:py-9 shadow-[0_1px_0_#efe9dc,0_14px_34px_-18px_rgba(60,45,25,0.35)]">
         {v.sketch && <Image src={SKETCHES[v.sketch].src} alt="" width={SKETCHES[v.sketch].w} height={SKETCHES[v.sketch].h} aria-hidden="true" className="pointer-events-none select-none absolute right-2 md:right-4 top-6 h-[78%] w-auto opacity-[0.16] mix-blend-multiply" />}
         <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#e9dfcb]/80 rotate-[-2deg] shadow-sm" aria-hidden="true" />

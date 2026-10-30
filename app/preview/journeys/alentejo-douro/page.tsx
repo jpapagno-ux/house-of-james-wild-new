@@ -67,7 +67,7 @@ export default function AlentejoDouroJourney() {
           />
 
           {/* The chapters: a day-by-day strip, each in its volume's colour */}
-          <section id="chapters" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]">
+          <section id="chapters" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]">
             <SectionHead eyebrow="The chapters" title="How the Twelve Nights Run" intro="Three chapters, two volumes, one booking. Each chapter carries the Ledger entry behind it." />
             <ol className="mt-10 relative border-l-2 border-[rgba(43,32,24,0.14)] ml-3 space-y-12">
               {CHAPTERS.map((c, i) => {
@@ -100,7 +100,7 @@ export default function AlentejoDouroJourney() {
           </section>
 
           {/* The river chapter, in the Voyages colour */}
-          <section id="river" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[208px] theme-vol-voyages border-t-[3px] pt-8 md:pt-10" style={{ borderColor: VOLUME_STYLES.voyages.leather }}>
+          <section id="river" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] theme-vol-voyages border-t-[3px] pt-8 md:pt-10" style={{ borderColor: VOLUME_STYLES.voyages.leather }}>
             <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
               <div>
                 <p className="flex items-center gap-2 font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: VOLUME_STYLES.voyages.leather }}><VolumeIconSvg volume="voyages" size={18} />Volume IV · Voyages · By river</p>
@@ -118,7 +118,7 @@ export default function AlentejoDouroJourney() {
           </section>
 
           {/* Offers: the time marks, real offers only */}
-          <section id="offers" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]">
+          <section id="offers" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]">
             <SectionHead eyebrow="Offers on this journey" title="When the Calendar Helps" intro="Offers appear here only when a partner files real terms. Two kinds fit this journey." />
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="border p-6 flex items-center gap-6" style={{ borderColor: VOLUME_STYLES.europe.leather }}>

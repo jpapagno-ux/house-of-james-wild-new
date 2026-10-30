@@ -44,7 +44,7 @@ export default async function LegalPage({ params }: { params: Promise<{ doc: str
               <h1 className="ledger-display text-[2.2rem] md:text-[3rem] leading-tight mt-6">{d.title}</h1>
               <p className="ledger-eyebrow mt-2">{LEGAL_UPDATED}</p>
               {d.sections.map((s) => (
-                <section key={s.h} id={slug(s.h)} className="mt-9 scroll-mt-32 lg:scroll-mt-[208px]">
+                <section key={s.h} id={slug(s.h)} className="mt-9 scroll-mt-32 lg:scroll-mt-[212px]">
                   <h2 className="ledger-display text-[1.45rem]">{s.h}</h2>
                   {s.p.map((t) => <p key={t.slice(0, 30)} className="mt-3 text-[16.5px] leading-relaxed">{t}</p>)}
                 </section>

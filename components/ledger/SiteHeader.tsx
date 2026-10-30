@@ -145,7 +145,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     if (!overlay) return;
     const onScroll = () => {
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 160 : window.scrollY > 40);
+      setSolid(end ? end.getBoundingClientRect().top <= 164 : window.scrollY > 40);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -164,13 +164,14 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     <>
     <header
       className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-colors duration-500 ${
-        light ? "bg-transparent text-white" : "bg-paper/95 backdrop-blur border-b ledger-border text-ink"
+        light ? "bg-transparent text-white" : "bg-gradient-to-b from-paper via-paper to-[#FBF5F4] backdrop-blur border-b ledger-border text-ink"
       }`}
     >
+      {!light && <div className="h-[3px]" style={{ background: "linear-gradient(90deg, #6E1C1C, #8B2525 40%, #C0574A 70%, #8B2525)" }} aria-hidden="true" />}
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[112px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
         <div className="flex items-center gap-3">
           <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
@@ -188,11 +189,14 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           </button>
         </div>
 
-        <Link href="/" className="flex lg:flex-col items-center gap-3 lg:gap-1.5 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
-          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={44} tone={light ? "light" : "ink"} /></span>
-          <span className="flex flex-col lg:items-center">
-            <span className="ledger-display text-xl md:text-[2rem] lg:text-[2.15rem] tracking-[-0.015em]">James Wild &amp; Co.</span>
-            <span className={`ledger-eyebrow !text-[9.5px] !tracking-[0.3em] mt-1.5 ${light ? "!text-white/75" : ""}`}>Exploring since {SITE.exploringSince} · {SITE.homeOf}</span>
+        {/* The lockup: the oxblood seal large beside the wordmark, Cormorant 700,
+            with the house line beneath. Cream over a film. */}
+        <Link href="/" className="flex items-center gap-4 lg:gap-5 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
+          <span className={`block lg:hidden ${light ? "opacity-95" : ""}`}><JwcoSeal size={48} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
+          <span className="flex flex-col">
+            <span className="font-display font-bold text-[1.6rem] md:text-[2.1rem] lg:text-[2.6rem] tracking-[-0.02em] leading-none">James Wild &amp; Co.</span>
+            <span className={`ledger-eyebrow !text-[10px] !tracking-[0.32em] mt-2 ${light ? "!text-white/80" : "!text-crimson"}`}>Exploring since {SITE.exploringSince} · {SITE.homeOf}</span>
           </span>
         </Link>
 

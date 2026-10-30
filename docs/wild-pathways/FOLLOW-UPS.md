@@ -30,14 +30,15 @@ Running record. One line per item; closed items stay for the audit trail.
 | # | Item | Owner | Status |
 |---|---|---|---|
 | 1 | Batch 1 classifications | James | **Closed** — 40 records approved in the library, 30 Oct 2026 (`pathway_classified_by: James Papagno (batch 1, drafted by Iggi)`) |
-| 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | release-branch owner | Open — re-snapshot on `main` after Beckon releases land |
+| 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | this initiative | Closed 30 Oct 2026 — re-snapshotted under production env (550 pages, 491 indexable); snapshot now records real robots state |
 | 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | `template-pass-marks` | Open — pre-existing, outside this branch |
 | 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Deferred to Phase 2F, after data population |
 | 5 | Base44 `siteExport` picks up the 2A change | — | **Closed** — confirmed by the 30 Oct manual sync (`7d831d4`): 30 approved classifications exported |
 | 7 | Vercel `NEXT_PUBLIC_PATHWAYS=on` | — | **Closed** — set on Preview (07:37) and Production (08:42) on James's instruction |
 | 9 | Ten approved batch-1 records are not yet in the site export (Serian camps, Sheba's Secret Garden, Angama Safari Camp, Casa Koko): no site slug / not live. They surface when those records are published to the site | library | Open |
 | 10 | Phase 2F (dialogue schema) | this initiative | Open — next |
-| 12 | Naming: the brief says "Save to My Ledger"; Booking Live uses "Save to My Folio" / "Journeys" throughout the account pages. Kept Folio for consistency; James to decide whether the whole account surface renames to Ledger | James | Open |
+| 12 | Naming: traveller's saved collection is the **Folio** ("Save to My Folio"); the **Ledger** is the house portfolio — its volumes and content vetted by James Wild. Decided by James 30 Oct 2026; no account copy changes | James | Closed |
+| 14 | Dulini Daunara Lodge linked to the Botswana destination in the library (Okavango coordinates; changed 30 Oct 2026 10:57 UTC by another effort). Page title now says Botswana; lodge is Sabi Sand, South Africa. Needs James's approval to relink | James | Open |
 | 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
 | 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
 | 8 | HubShell breadcrumb is two levels (Home › page); `/pathways/[key]` wants Home › Pathways › name. Small change to `components/hub/Hub.tsx` shared with every hub; do with care | this initiative | Open |

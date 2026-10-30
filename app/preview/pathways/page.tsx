@@ -62,6 +62,7 @@ export default function PathwaysTokenSheet() {
             <p className="ledger-eyebrow ledger-crimson">Preview pages</p>
             <h2 id="previews-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">What to Look At</h2>
             <ul className="mt-6 grid sm:grid-cols-2 gap-4 text-[15px]">
+              <li className="border ledger-border p-5"><Link href="/preview/pathways/compass" className="ledger-display text-xl hover:text-crimson">The Compass with pathways →</Link><p className="mt-1 ledger-muted">Traveller and trade views of the pathway adapter; safari readings hand to Crux.</p></li>
               <li className="border ledger-border p-5"><Link href="/preview/pathways/stays" className="ledger-display text-xl hover:text-crimson">Stays landing with pathways →</Link><p className="mt-1 ledger-muted">Six prominent cards, all eight reachable, featured stays with chips, impact intro, Compass and Ledger entries.</p></li>
               {sample.map((r) => <li key={r.slug} className="border ledger-border p-5"><Link href={stayPreviewHref(r.slug)} className="ledger-display text-xl hover:text-crimson">{r.stay.name} →</Link><p className="mt-1 ledger-muted">Featured-stay template with the Impact Note and Follow the Pathway.</p><div className="mt-2"><PathwayChips primary={r.primary} secondary={r.secondary} /></div></li>)}
             </ul>

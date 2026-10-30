@@ -65,7 +65,7 @@ function TapedNote({ line, where, when }: Omit<P, "style">) {
         <span className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-[#e9dfcb]/90 rotate-[-3deg]" aria-hidden="true" />
         <span className="block ledger-eyebrow !text-[9px] !text-[#8b3a2e]">The verdict</span>
         <span className={`ledger-display italic leading-snug mt-1 ${open ? "block text-[1rem]" : "text-[0.85rem] md:text-[0.92rem] line-clamp-2"}`}>&ldquo;{line}&rdquo;</span>
-        <span className="mt-1.5 flex items-center justify-between text-[9px] tracking-[0.14em] uppercase text-[#8a7f70]"><span className="truncate">{open ? `${where} · ${when}` : when}</span><span className="ledger-display normal-case italic text-[13px] text-[#3b2716] tracking-normal">JW</span></span>
+        <span className="mt-1.5 flex items-center justify-between text-[9px] tracking-[0.14em] uppercase text-ink-faint"><span className="truncate">{open ? `${where} · ${when}` : when}</span><span className="ledger-display normal-case italic text-[13px] text-[#3b2716] tracking-normal">JW</span></span>
         {open && <a href="#verdict" onClick={(e) => e.stopPropagation()} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">Read the full note ↓</a>}
       </button>
     </div>

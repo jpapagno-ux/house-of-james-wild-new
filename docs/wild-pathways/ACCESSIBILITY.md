@@ -44,7 +44,7 @@ Fixed during the audit (ours):
 - Impact Note captions at 75–80% opacity on sage measured 3.5–3.9:1; now full forest copy (6.17:1).
 - Featured-stay preview section links rendered as `##why` (double hash) through `RecordNav`; corrected.
 
-Pre-existing, House-wide, **not changed** (outside this initiative's remit; flagged for a separate decision):
+Pre-existing, House-wide — **fixed 30 Oct 2026 with James's approval** (`globals.css` `.ledger-eyebrow` and Tailwind `ink.faint`: alpha 0.55 → 0.68, `#706E6B`, 5.08:1 on white / 4.63:1 on card). After the change: `/stays` 24 → 0 violations, `/` 0, `/compass` 0; every Wild Pathways preview 0. Still open on the live stay template (outside this branch): a hard-coded `#8a7f70` caption colour (3.82:1) and the hero photo-dot buttons at 12×2px. Original finding, kept for the record:
 - `.ledger-eyebrow` prints ink at 55% alpha (`#8C8A88`), 3.43:1 on white and 3.13:1 on the card tone. It is used on every page of the site, including inside our components for consistency. Raising the alpha to 0.65 (`#777572`, 4.59:1 white / 4.18:1 card) or 0.68 (`#706E6B`, 5.08 / 4.63) would clear AA site-wide in one token change in `globals.css`.
 - Header utility navigation at 10px/9px and the breadcrumb current-page span are the other recurring items; same root cause.
 
@@ -65,6 +65,6 @@ All preview routes were scanned and screenshotted at 390px: no horizontal overfl
 
 ## 6. Open items
 
-1. House decision on the `.ledger-eyebrow` alpha (above).
+1. ~~House decision on the `.ledger-eyebrow` alpha~~ — done, see §2.
 2. `tests/seo-baseline.json` is stale on `main` (126 of 489 pages); re-snapshot on `main` after the Beckon release branches land so the guard reports real regressions only.
 3. The live Vercel preview, with photographs, is the place to judge the darkened PATH-05 against the lighter addendum value; sandbox renders have no images.

@@ -8,7 +8,7 @@ const config: Config = {
       colors: {
         // White pages from 29 Oct 2026 (volume kit); paper.card is the quiet panel tone.
         paper: { DEFAULT: "#FFFFFF", card: "#F6F4F0" },
-        ink: { DEFAULT: "#2D2A26", muted: "rgba(45, 42, 38, 0.68)", faint: "rgba(45, 42, 38, 0.55)" },
+        ink: { DEFAULT: "#2D2A26", muted: "rgba(45, 42, 38, 0.68)", faint: "rgba(45, 42, 38, 0.68)" /* was 0.55; AA fix, 30 Oct 2026 */ },
         // The accent is a CSS variable so a section can re-tint it: crimson by default,
         // sea blues inside .theme-sea (voyages and the Aliikai listings).
         crimson: { DEFAULT: "rgb(var(--jw-accent) / <alpha-value>)", deep: "rgb(var(--jw-accent-deep) / <alpha-value>)", light: "rgb(var(--jw-accent-light) / <alpha-value>)" },

@@ -1,40 +1,165 @@
 {
- "note": "Search check per destination and trip, done before each page is built or tuned. Keyword volumes come from Semrush when the account has API units; until then, the live search results pages (who ranks, what they call it, what people ask) set the wording.",
- "checked": "2026-10-26",
- "pages": {
-  "/overland/costa-rica/two-oceans-one-volcano": {
-   "best_for": "First-timers",
-   "targets": [
-    "12 day Costa Rica itinerary",
-    "Costa Rica coast to coast itinerary",
-    "Costa Rica itinerary for first timers",
-    "how many days in Costa Rica",
-    "best time to visit Costa Rica"
-   ],
-   "serp_notes": "Results are led by tour operators' '12 days in Costa Rica' and 'coast to coast' itineraries and 'how many days should you spend in Costa Rica' guides; families and first-timers are the common framing.",
-   "sources": [
-    "https://kimkim.com/c/12-days-in-costa-rica-5-unique-itinerary-ideas",
-    "https://kimkim.com/c/13-days-in-costa-rica-5-unique-itinerary-ideas",
-    "https://www.kimkim.com/c/how-many-days-should-you-spend-in-costa-rica",
-    "https://www.audleytravel.com/ca/costa-rica/tours/classic-costa-rica"
-   ]
-  },
-  "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north": {
-   "best_for": "Divers and snorkellers",
-   "targets": [
-    "Raja Ampat liveaboard",
-    "Raja Ampat cruise",
-    "Raja Ampat phinisi",
-    "Wayag Raja Ampat",
-    "best time to visit Raja Ampat"
-   ],
-   "serp_notes": "'Liveaboard' is the term the results use, ahead of 'voyage' or 'cruise'; 'best time to visit Raja Ampat' and non-diver questions are the common follow-ups.",
-   "sources": [
-    "https://www.kimkim.com/c/indonesia-sail-the-raja-ampat-archipelago-10-days",
-    "https://www.bluewaterdivetravel.com/liveaboard-destination/raja-ampat-liveaboards",
-    "https://www.responsibletravel.com/holidays/raja-ampat/travel-guide/best-time-to-visit-raja-ampat",
-    "https://www.dive-the-world.com/posts/raja-ampat/diving-in-raja-ampat-liveaboards-resorts-guide.php"
-   ]
+  "note": "Search check per destination and trip, done before each page is built or tuned. Keyword volumes come from Semrush when the account has API units; until then, the live search results pages (who ranks, what they call it, what people ask) set the wording.",
+  "checked": "2026-10-30",
+  "pages": {
+    "/overland/costa-rica/two-oceans-one-volcano": {
+      "best_for": "First-timers",
+      "targets": [
+        "12 day Costa Rica itinerary",
+        "Costa Rica coast to coast itinerary",
+        "Costa Rica itinerary for first timers",
+        "how many days in Costa Rica",
+        "best time to visit Costa Rica"
+      ],
+      "serp_notes": "Results are led by tour operators' '12 days in Costa Rica' and 'coast to coast' itineraries and 'how many days should you spend in Costa Rica' guides; families and first-timers are the common framing.",
+      "sources": [
+        "https://kimkim.com/c/12-days-in-costa-rica-5-unique-itinerary-ideas",
+        "https://kimkim.com/c/13-days-in-costa-rica-5-unique-itinerary-ideas",
+        "https://www.kimkim.com/c/how-many-days-should-you-spend-in-costa-rica",
+        "https://www.audleytravel.com/ca/costa-rica/tours/classic-costa-rica"
+      ]
+    },
+    "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north": {
+      "best_for": "Divers and snorkellers",
+      "targets": [
+        "Raja Ampat liveaboard",
+        "Raja Ampat cruise",
+        "Raja Ampat phinisi",
+        "Wayag Raja Ampat",
+        "best time to visit Raja Ampat"
+      ],
+      "serp_notes": "'Liveaboard' is the term the results use, ahead of 'voyage' or 'cruise'; 'best time to visit Raja Ampat' and non-diver questions are the common follow-ups.",
+      "sources": [
+        "https://www.kimkim.com/c/indonesia-sail-the-raja-ampat-archipelago-10-days",
+        "https://www.bluewaterdivetravel.com/liveaboard-destination/raja-ampat-liveaboards",
+        "https://www.responsibletravel.com/holidays/raja-ampat/travel-guide/best-time-to-visit-raja-ampat",
+        "https://www.dive-the-world.com/posts/raja-ampat/diving-in-raja-ampat-liveaboards-resorts-guide.php"
+      ]
+    },
+    "/pathways": {
+      "best_for": "Travellers who start from a setting, not a country",
+      "targets": [
+        "luxury travel by landscape",
+        "vetted luxury lodges",
+        "where to travel next luxury",
+        "curated luxury stays collection"
+      ],
+      "serp_notes": "No single term owns 'pathways'; the page competes on the eight collection names and the house's vetting claim. Treat as a hub: its value is internal links and the ItemList of eight.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/into-the-green": {
+      "best_for": "Rainforest and cloud-forest stays",
+      "targets": [
+        "best jungle lodges",
+        "luxury rainforest lodge",
+        "cloud forest lodge Costa Rica",
+        "Daintree rainforest lodge",
+        "Amazon lodge luxury"
+      ],
+      "serp_notes": "'Jungle lodge' outranks 'rainforest lodge' in results; destination-qualified phrases (Costa Rica, Daintree, Amazon) carry the volume. Lead copy with 'jungle and rainforest'.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/between-tides": {
+      "best_for": "Island, reef and lagoon stays",
+      "targets": [
+        "private island resort",
+        "luxury private island",
+        "overwater bungalow Tahiti",
+        "best beach lodges Caribbean",
+        "small island hotels"
+      ],
+      "serp_notes": "'Private island resort' is the head term; Taha'a/Tahiti and Caribbean qualifiers give the long tail. Results favour 'resort' over 'stay' or 'house'.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/above-it-all": {
+      "best_for": "Mountain, highland and desert-plateau stays",
+      "targets": [
+        "luxury mountain lodge",
+        "alpine lodge luxury",
+        "Atacama desert lodge",
+        "Andes luxury lodge",
+        "mountain retreat luxury"
+      ],
+      "serp_notes": "'Mountain lodge' and 'mountain retreat' split the results; 'alpine' skews Europe. Desert plateaus (Atacama) rank under their own name.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/where-the-wild-lives": {
+      "best_for": "Safari camps, private reserves and conservancies",
+      "targets": [
+        "luxury safari lodges",
+        "best safari camps Africa",
+        "private game reserve lodges South Africa",
+        "Okavango Delta camps",
+        "Maasai Mara luxury camps"
+      ],
+      "serp_notes": "Most competitive of the eight; owned by operators and 'best safari lodges' listicles. The House's angle is the founder marks and sourced impact notes, and the hand-off to Crux for planning.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/the-art-of-stillness": {
+      "best_for": "Wellness, hot-spring and slow-stay retreats",
+      "targets": [
+        "luxury wellness retreat",
+        "wellness retreats for couples",
+        "hot springs resort luxury",
+        "quiet luxury hotels",
+        "slow travel retreats"
+      ],
+      "serp_notes": "'Wellness retreat' is the head term and means programmes; the collection is broader (stillness, slow days). Copy should say 'wellness and restoration' and not over-promise a programme.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/off-the-map": {
+      "best_for": "Remote and little-known stays",
+      "targets": [
+        "remote luxury lodges",
+        "most remote hotels in the world",
+        "hidden gem hotels",
+        "off the beaten path luxury travel",
+        "secluded luxury lodges"
+      ],
+      "serp_notes": "'Remote' and 'secluded' are the ranking words; 'hidden gem' is listicle territory. The one-hidden-place promise of the Compass is the differentiator.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/a-place-of-our-own": {
+      "best_for": "Whole-house, exclusive-use and private-villa stays",
+      "targets": [
+        "private villa with staff",
+        "exclusive use lodge",
+        "private safari villa",
+        "luxury villa for large family",
+        "whole house rental luxury"
+      ],
+      "serp_notes": "'Villa' dominates; 'exclusive use' is the trade term buyers of safari villas use. Cross-links to Gatherings carry the family framing.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    },
+    "/pathways/rooted-in-place": {
+      "best_for": "Heritage houses, working farms and host-led stays",
+      "targets": [
+        "heritage hotels",
+        "historic hotels luxury",
+        "wine estate hotel South Africa",
+        "farm stay luxury",
+        "family-owned hotels"
+      ],
+      "serp_notes": "'Heritage hotels' and 'historic hotels' lead; wine estates (Franschhoek) and farm stays carry the long tail. Hosts and history are the editorial angle.",
+      "sources": [
+        "Live results pages, 30 Oct 2026; Semrush volumes pending API units"
+      ]
+    }
   }
- }
 }

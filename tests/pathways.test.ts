@@ -130,3 +130,15 @@ test("Phase 2C: the pathways flag is off unless exactly 'on', and every pathway 
     assert.ok(!/James (said|says|told)|"/.test(PATHWAY_ANSWER[p.id]), `${p.id} copy never quotes James`);
   }
 });
+
+test("Phase 2G: every pathway has an SEO title and description within search limits, and a keyword entry", async () => {
+  const { PATHWAY_SEO } = await import("../lib/content/pathways/copy.ts");
+  const kw = JSON.parse(readFileSync(new URL("../data/seo-keywords.json", import.meta.url), "utf8")).pages as Record<string, { targets: string[] }>;
+  for (const p of PATHWAY_LIST) {
+    const seo = PATHWAY_SEO[p.id];
+    assert.ok(seo.title.startsWith(p.name), `${p.id} title leads with the pathway name`);
+    assert.ok(seo.title.length <= 95, `${p.id} title length ${seo.title.length}`);
+    assert.ok(seo.description.length >= 120 && seo.description.length <= 158, `${p.id} description length ${seo.description.length}`);
+    assert.ok(kw[`/pathways/${p.key}`]?.targets.length >= 3, `${p.id} has keyword targets`);
+  }
+});

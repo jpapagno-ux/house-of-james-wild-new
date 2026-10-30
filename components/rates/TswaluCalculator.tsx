@@ -7,8 +7,10 @@ import { OFFERS, RATE_ROWS, quote, zar, type OfferId } from "@/lib/content/rates
 const field = "mt-1 w-full border ledger-border bg-white px-3 py-2 text-[15px]";
 const lab = "block text-[12px] font-mono uppercase tracking-[0.12em] ledger-muted";
 
-export default function TswaluCalculator() {
-  const [rowId, setRow] = useState("motse-legae");
+export default function TswaluCalculator({ rowId: controlled, onRowChange }: { rowId?: string; onRowChange?: (id: string) => void } = {}) {
+  const [own, setOwn] = useState("motse-legae");
+  const rowId = controlled ?? own;
+  const setRow = (id: string) => { setOwn(id); onRowChange?.(id); };
   const [arrive, setArrive] = useState("2027-03-08");
   const [nights, setNights] = useState(4);
   const [kidsYoung, setKidsYoung] = useState(0);
@@ -22,7 +24,7 @@ export default function TswaluCalculator() {
   const num = (set: (n: number) => void, min = 0, max = 30) => (e: React.ChangeEvent<HTMLInputElement>) => set(Math.max(min, Math.min(max, Number(e.target.value) || 0)));
 
   return (
-    <div className="mt-8 grid lg:grid-cols-[1.1fr_1fr] gap-8 border ledger-border p-5 md:p-7 bg-card">
+    <div className="mt-3 grid gap-7 border ledger-border p-5 md:p-6 bg-card">
       <form className="grid sm:grid-cols-2 gap-4" onSubmit={(e) => e.preventDefault()} aria-label="Tswalu sample cost calculator">
         <label className="sm:col-span-2"><span className={lab}>Camp and room</span>
           <select className={field} value={rowId} onChange={(e) => setRow(e.target.value)}>
@@ -47,7 +49,7 @@ export default function TswaluCalculator() {
         </label>
       </form>
 
-      <div aria-live="polite">
+      <div aria-live="polite" className="border-t ledger-rule pt-5">
         <p className="ledger-eyebrow ledger-crimson">Sample cost · South African rand</p>
         {!q.ok ? <p className="mt-3 text-[16px]">{q.reason}</p> : <>
           <p className="ledger-display text-[2.4rem] leading-none mt-2">{zar(q.total)}</p>

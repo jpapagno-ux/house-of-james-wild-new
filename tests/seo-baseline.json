@@ -114,7 +114,7 @@
  "/destinations/africa/south-africa": {
   "canonical": "https://www.jameswildco.com/destinations/africa/south-africa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 10,
   "robots": "index, follow",
   "title": "South Africa: 44 Vetted Stays, Routes and When to Go"
  },
@@ -543,7 +543,7 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Overland Routes Designed by James: Costa Rica, Botswana and More"
+  "title": "Overland Routes Designed by James: Costa Rica, Botswana, South Africa"
  },
  "/overland/costa-rica/the-original-costa-route-10-days": {
   "canonical": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-10-days",
@@ -572,6 +572,34 @@
   "jsonld": 8,
   "robots": "index, follow",
   "title": "12-Day Costa Rica Itinerary: Two Oceans, One Volcano"
+ },
+ "/overland/south-africa/leopards-through-the-lens": {
+  "canonical": "https://www.jameswildco.com/overland/south-africa/leopards-through-the-lens",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Londolozi Photographic Safari: Leopards Through the Lens"
+ },
+ "/overland/south-africa/the-sand-river-by-road": {
+  "canonical": "https://www.jameswildco.com/overland/south-africa/the-sand-river-by-road",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "9-Day South Africa Itinerary: Londolozi, Cape Town and Franschhoek"
+ },
+ "/overland/south-africa/three-generations-at-pioneer": {
+  "canonical": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Multigenerational Safari at Londolozi Pioneer Camp: Three Generations at Pioneer"
+ },
+ "/overland/south-africa/track-your-life-with-boyd-varty": {
+  "canonical": "https://www.jameswildco.com/overland/south-africa/track-your-life-with-boyd-varty",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Boyd Varty Retreat at Londolozi: Track Your Life"
  },
  "/partners": {
   "canonical": "https://www.jameswildco.com/partners",

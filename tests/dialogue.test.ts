@@ -3,9 +3,10 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { DIALOGUE_ASSETS, IGGI_STANDING, approvedDialogue, iggiSampleLines, jamesVerdictLines, signoffLines, validateDialogue, type DialogueLine } from "../lib/content/dialogue.ts";
 import { VERDICTS, SIGNOFFS } from "../lib/content/verdicts.ts";
+import { CHOSEN } from "../lib/content/voice/chosen.ts";
 import { SAMPLES } from "../lib/content/iggi.ts";
 
-const REGISTER: DialogueLine[] = [...jamesVerdictLines(VERDICTS), ...signoffLines(SIGNOFFS), ...IGGI_STANDING, ...iggiSampleLines(SAMPLES)];
+const REGISTER: DialogueLine[] = [...jamesVerdictLines(VERDICTS), ...signoffLines(SIGNOFFS, CHOSEN), ...IGGI_STANDING, ...iggiSampleLines(SAMPLES)];
 
 test("the live register validates and only approved lines render", () => {
   assert.deepEqual(validateDialogue(REGISTER), []);
@@ -27,6 +28,11 @@ test("every James verdict is indexed, sourced and approved; the words stay in ve
   assert.equal(v.find((l) => l.context.record === "stay:monwana-thornybush")!.asset, "cheetah-pencil");
 });
 
+test("the standing lines and all seven sign-offs are approved by James (30 Oct 2026)", () => {
+  assert.ok(IGGI_STANDING.every((l) => l.approval.status === "approved" && l.approval.by === "James Papagno"));
+  assert.equal(signoffLines(SIGNOFFS, CHOSEN).filter((l) => l.approval.status === "approved").length, SIGNOFFS.length);
+});
+
 test("only James's own sign-off is approved until he marks the Voice Bank", () => {
   const s = signoffLines(SIGNOFFS);
   assert.equal(s.filter((l) => l.approval.status === "approved").length, 1);
@@ -41,7 +47,7 @@ test("the rules catch what the brief forbids", () => {
   const bad: DialogueLine[] = [
     { ...base, id: "x1", character: "james", source: { kind: "house-draft" }, approval: { status: "approved", by: "house", on: "2026-10-30" } },
     { ...base, id: "x2", character: "iggi", origin: "founder", text: "I stayed at Tswalu in 2012 and loved it.", source: { kind: "ledger" }, approval: { status: "approved", by: "James Papagno", on: "2026-10-30" } },
-    { ...base, id: "x3", character: "iggi", origin: "ledger", text: "Fine line.", source: { kind: "ledger" }, approval: { status: "approved", by: "James Papagno", on: "2026-10-30" }, asset: "iggi-wink" },
+    { ...base, id: "x3", character: "iggi", origin: "ledger", text: "Fine line.", source: { kind: "ledger" }, approval: { status: "approved", by: "James Papagno", on: "2026-10-30" }, asset: "iggi-seal" },
     { ...base, id: "x4", character: "iggi", text: "No label.", source: { kind: "ledger" }, approval: { status: "draft" }, origin: undefined },
     { ...base, id: "x5", character: "james", source: { kind: "james-verdict" }, approval: { status: "approved" } },
   ];
@@ -62,8 +68,8 @@ test("Iggi's samples are drafts that label every answer by origin and hand check
 
 test("asset inventory: approved assets are the ones already live; Cloudinary art is candidate or draft", () => {
   const approved = DIALOGUE_ASSETS.filter((a) => a.status === "approved").map((a) => a.id).sort();
-  assert.deepEqual(approved, ["cheetah-pencil", "house-hare-seal", "iggi-portrait-charcoal"]);
-  assert.ok(DIALOGUE_ASSETS.filter((a) => a.src.startsWith("wildco/brand/iggi/")).every((a) => a.status !== "approved"));
+  assert.deepEqual(approved, ["cheetah-pencil", "house-hare-seal", "iggi-portrait-charcoal", "iggi-this-way", "iggi-wink"]);
+  assert.ok(DIALOGUE_ASSETS.filter((a) => a.id.startsWith("iggi-character") || a.id === "iggi-engraved-v1").every((a) => a.status === "draft"));
   assert.equal(new Set(DIALOGUE_ASSETS.map((a) => a.id)).size, DIALOGUE_ASSETS.length);
 });
 

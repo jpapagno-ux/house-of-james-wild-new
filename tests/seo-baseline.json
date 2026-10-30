@@ -116,7 +116,7 @@
   "h1": 1,
   "jsonld": 10,
   "robots": "index, follow",
-  "title": "South Africa: 44 Vetted Stays, Routes and When to Go"
+  "title": "South Africa: 45 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/tanzania": {
   "canonical": "https://www.jameswildco.com/destinations/africa/tanzania",
@@ -762,6 +762,13 @@
   "robots": "noindex, nofollow",
   "title": "The Compass with Wild Pathways (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/dialogue": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/dialogue",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "James &amp; Iggi dialogue register (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/into-the-green": {
   "canonical": "https://www.jameswildco.com/preview/pathways/into-the-green",
   "h1": 1,
@@ -985,6 +992,13 @@
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Tswalu Reserve Kalahari on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-dumatau": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-dumatau",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness DumaTau on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/wilderness-mombo-luxury-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-mombo-luxury-camp",
@@ -1824,7 +1838,7 @@
   "h1": 1,
   "jsonld": 8,
   "robots": "index, follow",
-  "title": "Dulini Daunara Lodge, Botswana: Vetted Stay | James Wild &amp; Co"
+  "title": "Dulini Daunara Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/dulini-leadwood-lodge": {
   "canonical": "https://www.jameswildco.com/stays/dulini-leadwood-lodge",
@@ -3652,6 +3666,13 @@
   "jsonld": 8,
   "robots": "index, follow",
   "title": "Wilderness Desert Rhino Camp, Namibia | James Wild &amp; Co"
+ },
+ "/stays/wilderness-dumatau": {
+  "canonical": "https://www.jameswildco.com/stays/wilderness-dumatau",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "index, follow",
+  "title": "Wilderness DumaTau, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-hoanib-skeleton-camp": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-hoanib-skeleton-camp",

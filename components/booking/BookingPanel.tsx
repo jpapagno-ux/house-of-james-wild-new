@@ -120,7 +120,7 @@ export default function BookingPanel({ property, name, rooms, included, excluded
   const pricedCount = rooms.filter((r) => live[norm(r.name)]).length;
 
   return (
-    <section id="rates" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="rates-heading">
+    <section id="rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="rates-heading">
       <p className="ledger-eyebrow">Live rates · booking engine by Tag Albie</p>
       <h2 id="rates-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Choose Your Room at {name}</h2>
 

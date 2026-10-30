@@ -9,10 +9,15 @@
   .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
   /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
   :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
-  html { scroll-behavior: smooth; overflow-x: clip; }
+  /* Smooth scrolling is opted into by Next through data-scroll-behavior on <html>
+     (app/layout.tsx), so the router can still jump instantly on navigation and
+     Back/Forward. A CSS rule here fought that and left new pages opening mid-scroll
+     (audit, 30 Oct 2026). Only in-page anchor jumps stay smooth. */
+  html { overflow-x: clip; }
+  html:focus-within { scroll-behavior: smooth; }
   body { background: #FFFFFF; color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  @media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } }
 }
 
 @layer components {

@@ -58,7 +58,7 @@ export default function LedgerPage() {
             </ol>
           </section>
 
-          <section id="marks" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="marks-heading">
+          <section id="marks" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="marks-heading">
             <SectionHead eyebrow="The marks · one per entry, always dated" title="I Know a Place: What Each Mark Means" id="marks-heading" />
             <p className="mt-4 text-[17px] ledger-muted max-w-2xl">A mark is a claim James signs. It&rsquo;s set by a person after the visit happened, never inferred, never upgraded, and the year sits right beside it.</p>
             <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

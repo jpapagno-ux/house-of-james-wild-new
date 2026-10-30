@@ -75,7 +75,7 @@ export default function StayFilm({ id, title, name, planHref, bare = false }: { 
   );
   if (bare) return player;
   return (
-    <section id="film" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="film-heading">
+    <section id="film" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="film-heading">
       <p className="ledger-eyebrow ledger-crimson">The film</p>
       <h2 id="film-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">{name}, in Motion</h2>
       {player}

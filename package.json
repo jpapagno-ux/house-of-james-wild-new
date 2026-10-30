@@ -2,14 +2,16 @@
   "name": "house-of-james-wild",
   "version": "0.1.0",
   "private": true,
-  "description": "House of James Wild & Co — jameswildco.com. Home of Wild Earth Stays.",
+  "description": "House of James Wild & Co \u2014 jameswildco.com. Home of Wild Earth Stays.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts"
+    "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts",
+    "prebuild": "node scripts/check-palette.mjs",
+    "check:palette": "node scripts/check-palette.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -31,6 +31,11 @@ import Journeys from "@/components/destination/Journeys";
 import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import IslandZoom from "@/components/destination/IslandZoom";
+import { PathwayChip } from "@/components/pathways/Pathway";
+import { pathway } from "@/lib/pathways";
+import { REGION_PATHWAYS } from "@/lib/content/region-pathways";
+import { volumeInk } from "@/lib/volumes";
+import { GUARD_ON, isBuilt } from "@/lib/routes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
 import { RecordCard } from "@/components/hub/Hub";
@@ -88,6 +93,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
     ...journeys.filter((j) => j.kind === "voyage").flatMap((j) => { const p = routeStart(j.href); if (!p) return []; const q = projectOn(chart, p.lat, p.lng); return [{ id: `voyage-${j.ledgerId}`, category: "vessel" as MapItem["category"], name: j.title, kind: `voyage · from ${p.name}`, href: j.href, x: q.x, y: q.y, area: "Voyages", bestMonths: j.bestMonths ?? undefined }]; }),
   ].filter((i) => i.x >= 0 && i.y >= 0 && i.x <= chart.width && i.y <= chart.height) : [];
   const tones = r.slug === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {};
+  // The Stays section takes its volume's ink (docs/brand-colours.md): Europe's stays are Volume V.
+  const stayInk = volumeInk(r.slug === "europe" ? "europe" : "stays");
   const glance = { facts: [["Countries", `${r.countries.length} in the Ledger`], ["Stays", `${r.stayCount} filed`], ["Journeys", journeys.length ? `${journeys.length} drawn` : "Ask James"]] as [string, string][], cta: { label: "Plan with James", href: `/plan?destination=${r.slug}` } };
   return (
     <div className={r.slug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -127,6 +134,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <div className="mt-12 md:mt-16 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
             <div>
               <AnswerBlock>{answer}</AnswerBlock>
+              {/* Theme chips: the Wild Pathways this region leads with (never a volume colour) */}
+              {(REGION_PATHWAYS[r.slug] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[r.slug] ?? []).map((k) => pathway(k)).filter((p) => !!p).map((p) => <li key={p!.id}><PathwayChip pathway={p!} href={!GUARD_ON || isBuilt(`/pathways/${p!.key}`) ? `/pathways/${p!.key}` : undefined} /></li>)}</ul>}
               <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount)} />
             </div>
             {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
@@ -154,14 +163,14 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <Doors eyebrow={`${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"} in the Ledger`} title={`The Countries of ${r.name}`} intro="Open a country for its stays by area, routes, the months to go and the Compass where it's ready." doors={doors} />
 
           {r.featured.length > 0 && (
-            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+            <section id="stays" style={{ borderTopColor: stayInk }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-                <div><p className="ledger-eyebrow ledger-crimson">From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
+                <div><p className="ledger-eyebrow" style={{ color: stayInk }}>From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
                 <Link href="/stays" className="ledger-btn-ghost self-start md:self-auto">All stays</Link>
               </div>
               <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                 {r.featured.map((s) => (
-                  <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? `${s.country}${statusLine(s.status as HouseStatus, s.statusDate) ? ` · ${statusLine(s.status as HouseStatus, s.statusDate)}` : ""}`} eyebrow={s.country} image={{ url: s.image, alt: `${s.name}, ${s.country}` }} href={recordHref(s.reserveChild ? "stay" : "stay", s.slug)} /></li>
+                  <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? `${s.country}${statusLine(s.status as HouseStatus, s.statusDate) ? ` · ${statusLine(s.status as HouseStatus, s.statusDate)}` : ""}`} eyebrow={s.country} image={{ url: s.image, alt: `${s.name}, ${s.country}` }} href={recordHref(s.reserveChild ? "stay" : "stay", s.slug)} volume={s.reserveChild ? "safaris" : isResidence(s.name, null) ? "gatherings" : r.slug === "europe" ? "europe" : "stays"} /></li>
                 ))}
               </ul>
             </section>

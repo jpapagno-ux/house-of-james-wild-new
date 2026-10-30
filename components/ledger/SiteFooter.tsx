@@ -1,3 +1,4 @@
+import { VOLUME_ORDER, volumeInk, volumeLightInk } from "@/lib/volumes";
 import Link from "next/link";
 import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, VOLUMES as ALL_VOLUMES } from "@/lib/site";
 import { live } from "@/lib/routes";
@@ -14,7 +15,8 @@ const LEGAL_NAV = live(ALL_LEGAL);
 const VOLUMES = live(ALL_VOLUMES);
 const REGIONS = live(ALL_REGIONS);
 const NUM = ["I", "II", "III", "IV", "V", "VI"];
-const LIGHT: Record<string, string> = { "#8B2525": "#F4D3CB", "#A5692A": "#D9A464", "#405A45": "#9DBB9F", "#1E5F73": "#9CCFD8", "#94512F": "#D8A082", "#5B3A5E": "#C9A7CD" };
+// Each volume's light ink for the tabs on a dark footer, from the one palette (lib/volumes.ts).
+const LIGHT: Record<string, string> = Object.fromEntries(VOLUME_ORDER.map((k) => [volumeInk(k), volumeLightInk(k)]));
 
 
 // Footer tones (James, 30 Oct 2026): the crimson block read too dark, so the

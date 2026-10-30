@@ -67,6 +67,18 @@ export const VOLUME_STYLES: Record<VolumeKey, VolumeStyle> = {
   },
 };
 
+/** "r g b" → "#RRGGBB". */
+const hex = (rgb: string) => "#" + rgb.split(" ").map((n) => (+n).toString(16).padStart(2, "0")).join("").toUpperCase();
+/** A volume's ink on white (labels, rules, dots, tabs, pins): its stamp-pad colour. The one volume colour. */
+export const volumeInk = (k: VolumeKey) => VOLUME_STYLES[k].pad;
+/** A volume's light ink, for marks on dark grounds (footer tabs on crimson, stamps on photographs). */
+export const volumeLightInk = (k: VolumeKey) => hex(VOLUME_STYLES[k].light);
+/** The volume a top-level path opens (/stays, /safaris … /destinations/europe). */
+export const volumeForHref = (href: string): VolumeKey | null => {
+  const k = href === "/destinations/europe" ? "europe" : href.replace(/^\//, "").split("/")[0];
+  return (k as VolumeKey) in VOLUME_STYLES ? (k as VolumeKey) : null;
+};
+
 export const VOLUME_ORDER: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];
 
 // Compatibility map for the Wild Pathways brief (Foundation V1.3 §3), whose

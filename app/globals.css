@@ -29,7 +29,8 @@
   .ledger-h2 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.01em; line-height: 1.08; text-wrap: balance; font-size: 2rem; }
   @media (min-width: 768px) { .ledger-h2 { font-size: 3rem; } }
   /* Volume tones, read by dots, tabs and the chapter rail */
-  .vol-stays { --vol: #8B2525; } .vol-safaris { --vol: #A5692A; } .vol-gatherings { --vol: #405A45; } .vol-voyages { --vol: #1E5F73; } .vol-overland { --vol: #94512F; } .vol-europe { --vol: #5B3A5E; }
+  /* Volume inks: the one palette (lib/volumes.ts pads, approved 29 Oct 2026). scripts/check-palette.mjs keeps these in step. */
+  .vol-stays { --vol: #3E5A3A; } .vol-safaris { --vol: #7A4A24; } .vol-gatherings { --vol: #86232C; } .vol-voyages { --vol: #2A3D5C; } .vol-europe { --vol: #4E2E46; } .vol-overland { --vol: #4D4C27; }
   .ledger-page { background: #FFFFFF; color: #2D2A26; }
   .ledger-card { background: var(--jw-card); }
   .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }

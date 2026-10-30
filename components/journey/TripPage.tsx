@@ -442,7 +442,13 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
               <video className="w-full aspect-video object-cover bg-ink" src={T.founder.video.src} poster={T.founder.video.poster} muted loop playsInline autoPlay preload="metadata" aria-label={T.founder.video.alt} />
               <figcaption className="mt-2 text-[12.5px] ledger-muted">{T.founder.video.caption}</figcaption>
             </figure>
-          ) : <div className="mt-6 aspect-video w-full jw-ph flex items-center justify-center"><span className="font-mono text-[11px] tracking-[0.14em] uppercase bg-paper/85 px-2 py-1"><Fx t={T.founder.film} /></span></div>}
+          ) : null}
+          {T.founder.photo ? (
+            <figure className="mt-6">
+              <Ph img={T.founder.photo} label={T.founder.photo.alt} className="aspect-[3/2] w-full" sizes="(max-width: 1024px) 100vw, 55vw" />
+              <figcaption className="mt-2 text-[12.5px] ledger-muted">{T.founder.photo.credit}</figcaption>
+            </figure>
+          ) : !T.founder.video ? <div className="mt-6 aspect-video w-full jw-ph flex items-center justify-center"><span className="font-mono text-[11px] tracking-[0.14em] uppercase bg-paper/85 px-2 py-1"><Fx t={T.founder.film} /></span></div> : null}
         </div>
         <aside className="ledger-paper border ledger-border p-6" aria-label="Why James approved it">
           <p className="ledger-eyebrow">Why this route is on file</p>

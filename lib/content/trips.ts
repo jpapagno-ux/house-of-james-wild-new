@@ -48,7 +48,9 @@ export type Trip = {
   dep_route?: string; dep_cta?: string; dep_season?: string; dep_note?: string;
   founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string; navLabel?: string;
     /** The founder's own footage, played silent and looping in place of the film placeholder. */
-    video?: { src: string; poster: string; caption: string; alt: string } };
+    video?: { src: string; poster: string; caption: string; alt: string };
+    /** A photograph from the founder's own voyage, under the film. */
+    photo?: TripImg };
   approve: { title: string; seal_bottom: string; seal_mark: string; why: string[]; quote: string };
   faqs: Row[]; reltitle: string; related: [string, string, string][];
   /** Links for the related cards, by position (else guessed from the card's code). */

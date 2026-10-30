@@ -11,6 +11,7 @@ import type { Journey } from "@/lib/content/preview/journeys";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { CHART_CENTRAL_AMERICA } from "@/lib/charts/central-america";
+import { volumeInk } from "@/lib/volumes";
 
 // Each route draws on its own country's chart; a page-level chart is the fallback.
 const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA, "central-america": CHART_CENTRAL_AMERICA };
@@ -33,9 +34,9 @@ function MiniRoute({ chart, stops, title }: { chart: ChartData; stops: { lat: nu
     <div className="relative ledger-chart is-drawn">
       <LedgerChart chart={chart} title={`Route map: ${title}`} />
       <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">
-        <polyline points={pts.map((p) => `${p.x},${p.y}`).join(" ")} fill="none" stroke="#8B2525" strokeWidth="5" strokeDasharray="12 9" strokeLinejoin="round" />
+        <polyline points={pts.map((p) => `${p.x},${p.y}`).join(" ")} fill="none" stroke={volumeInk("overland")} strokeWidth="5" strokeDasharray="12 9" strokeLinejoin="round" />
         <rect x={pts[0].x - 10} y={pts[0].y - 10} width="20" height="20" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="3" />
-        {legs.map((p, i) => <g key={i}><circle cx={p.x} cy={p.y} r="20" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" /><text x={p.x} y={p.y + 7} textAnchor="middle" fontSize="20" fill="#F4F1ED" fontFamily="'IBM Plex Mono', monospace">{i + 1}</text></g>)}
+        {legs.map((p, i) => <g key={i}><circle cx={p.x} cy={p.y} r="20" fill={volumeInk("overland")} stroke="#F4F1ED" strokeWidth="3" /><text x={p.x} y={p.y + 7} textAnchor="middle" fontSize="20" fill="#F4F1ED" fontFamily="'IBM Plex Mono', monospace">{i + 1}</text></g>)}
       </svg>
     </div>
   );
@@ -43,6 +44,8 @@ function MiniRoute({ chart, stops, title }: { chart: ChartData; stops: { lat: nu
 
 export function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartData }) {
   const isRoute = j.kind === "route";
+  // Inked by volume (docs/brand-colours.md): overland routes in Field Olive, voyages in Admiralty Navy.
+  const ink = volumeInk(isRoute ? "overland" : "voyages");
   const chart = (j.chartKey && CHARTS[j.chartKey]) || fallback;
   const linked = !GUARD_ON || isBuilt(j.href);
   return (
@@ -53,7 +56,7 @@ export function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartD
         ) : (
           <div className="relative aspect-[4/3] bg-paper-card">{j.image && <Image src={j.image} alt={`${j.title}: ${j.line}`} fill sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}</div>
         )}
-        <span className={`absolute top-3 left-3 inline-flex items-center gap-1.5 px-2 py-1 text-[10px] uppercase tracking-[0.16em] ${isRoute ? "bg-paper/95 text-crimson" : "bg-sea-deep text-paper"}`}>
+        <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2 py-1 text-[10px] uppercase tracking-[0.16em] text-paper" style={{ background: ink }}>
           {isRoute ? <RouteIcon className="w-3 h-3" strokeWidth={1.75} aria-hidden="true" /> : <Anchor className="w-3 h-3" strokeWidth={1.75} aria-hidden="true" />}
           {isRoute ? "Overland route" : "Small-ship voyage"}
         </span>
@@ -64,14 +67,14 @@ export function JourneyCard({ j, chart: fallback }: { j: Journey; chart?: ChartD
         )}
       </div>
       <div className="p-5 flex flex-col flex-1">
-        <p className="ledger-eyebrow ledger-crimson">{j.eyebrow}</p>
+        <p className="ledger-eyebrow" style={{ color: ink }}>{j.eyebrow}</p>
         <h3 className="ledger-display text-2xl mt-1 leading-snug">{j.title}</h3>
         <p className="mt-2 text-[14.5px] leading-snug">{j.line}</p>
         <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-[13px]">
           {j.nights && <div><dt className="ledger-eyebrow">Nights</dt><dd>{j.nights}</dd></div>}
           {j.bestMonths && <div><dt className="ledger-eyebrow">Best</dt><dd className="leading-snug">{j.bestMonths}</dd></div>}
         </dl>
-        {j.price && <p className="mt-3"><span className="ledger-eyebrow">From </span><span className="ledger-display text-xl ledger-crimson">US${j.price.amount.toLocaleString("en-US")}</span> <span className="text-[12px] ledger-muted">{j.price.basis}</span></p>}
+        {j.price && <p className="mt-3"><span className="ledger-eyebrow">From </span><span className="ledger-display text-xl" style={{ color: ink }}>US${j.price.amount.toLocaleString("en-US")}</span> <span className="text-[12px] ledger-muted">{j.price.basis}</span></p>}
         {j.status === "house_approved" && <p className="mt-3 text-[12.5px] ledger-muted">House route · approved by James{j.statusYear ? `, ${j.statusYear}` : ""}</p>}
         {linked ? <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-[15px] group-hover:gap-2.5 transition-all">{isRoute ? "Open the route" : "Open the voyage"} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span> : <span className="mt-auto pt-4 ledger-eyebrow">{isRoute ? "Route page coming soon" : "Voyage page coming soon"}</span>}
       </div>
@@ -83,12 +86,11 @@ export default function Journeys({ country, journeys, chart, id = "journeys" }: 
   if (!journeys.length) return null;
   const routes = journeys.filter((j) => j.kind === "route").length;
   const voyages = journeys.length - routes;
-  const count = [routes ? `${routes} overland ${routes === 1 ? "route" : "routes"}` : "", voyages ? `${voyages} small-ship ${voyages === 1 ? "voyage" : "voyages"}` : ""].filter(Boolean).join(" · ");
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} style={routes && voyages ? undefined : { borderTopColor: volumeInk(routes ? "overland" : "voyages") }} className="mt-16 md:mt-24 border-t-2 ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
-          <p className="ledger-eyebrow ledger-crimson">Journeys &amp; voyages · {count}</p>
+          <p className="ledger-eyebrow">{routes > 0 && <span style={{ color: volumeInk("overland") }}>{routes} overland {routes === 1 ? "route" : "routes"}</span>}{routes > 0 && voyages > 0 && <span className="ledger-muted"> · </span>}{voyages > 0 && <span style={{ color: volumeInk("voyages") }}>{voyages} small-ship {voyages === 1 ? "voyage" : "voyages"}</span>}</p>
           <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">Ways Through {country}</h2>
         </div>
         <p className="text-[16px] ledger-muted max-w-md">{voyages && !routes ? `Small-ship voyages through ${country}, with their ports in order, the ship, and the fare per person. Join a departure, or charter the whole yacht.` : routes && !voyages ? `Overland routes the house has drawn through ${country}, with the stops in order and every stay already in the Ledger. Take one as it is, or let James reshape it.` : `Overland routes and small-ship voyages through ${country}, each in order, every stay and ship already in the Ledger. Take one as it is, or let James reshape it.`}</p>

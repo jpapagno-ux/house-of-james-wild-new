@@ -749,7 +749,7 @@
   "eyebrow": "The founder on the ice",
   "navLabel": "James in Antarctica",
   "title": "Every Photograph Here Is His",
-  "p1": "James sailed the Antarctic Peninsula in March 2020, and every photograph on this page outside the ships is from that voyage: the Zodiacs among the bergs, the pink snow-algae landing, the kayaks under the cliffs, the postcard he wrote at Vernadsky Station.",
+  "p1": "James sailed the Antarctic Peninsula aboard HX's MS Roald Amundsen in February and March 2020, and was still there when the world shut down for COVID. Every photograph on this page outside the two Magellan ships is from that voyage: the Zodiacs among the bergs, the pink snow-algae landing, the kayaks under the cliffs, the postcard he wrote at Vernadsky Station.",
   "p2": "He hasn't sailed this air-cruise or the two Magellan ships yet [confirm]. It's on file for the travellers who ask him the same two things about Antarctica: can I skip the Drake, and can I go further south than the usual voyage? This one does both.",
   "film": "Evening near the Lemaire Channel, 8 March 2020 · James Wild & Co. archive",
   "video": {
@@ -757,14 +757,19 @@
    "poster": "https://res.cloudinary.com/jhlnq5h5/video/upload/so_2,q_auto,f_jpg/wildco/guides/antarctic-peninsula/destination/lemaire-golden-peaks-film.jpg",
    "caption": "Evening near the Lemaire Channel, 8 March 2020. 17 seconds, James Wild & Co. archive.",
    "alt": "Sailing slowly past a sculpted iceberg as evening light turns cloud-wreathed Antarctic peaks gold, near the Lemaire Channel"
+  },
+  "photo": {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1600/q_auto:good/f_jpg/wildco/voyages/vessels/ms-roald-amundsen/ms-roald-amundsen-antarctic-ice",
+   "alt": "HX's expedition ship MS Roald Amundsen among floating ice off the Antarctic Peninsula, guests in an inflatable in the foreground",
+   "credit": "MS Roald Amundsen, the ship James sailed south on. Photograph: James Papagno, February–March 2020."
   }
  },
  "approve": {
   "title": "The Peninsula, past where the classic route turns",
-  "seal_bottom": "PENINSULA · MAR 2020",
+  "seal_bottom": "PENINSULA · FEB–MAR 2020",
   "seal_mark": "ANTARCTICA",
   "why": [
-   "James sailed the Antarctic Peninsula in March 2020; the photographs here are his.",
+   "James sailed the Antarctic Peninsula aboard MS Roald Amundsen in February and March 2020; the photographs here are his.",
    "It flies the Drake Passage both ways, about two hours each, instead of two days at sea.",
    "It goes on south past the Lemaire Channel, through Crystal Sound, to attempt the Antarctic Circle.",
    "Two 88-guest ships built to the Polar Code: small enough for every landing."
@@ -777,12 +782,12 @@
   "label": "Ship's log",
   "where": "Antarctic Peninsula",
   "sub": "Sailed 2020",
-  "when": "Sailed March 2020",
+  "when": "Sailed February–March 2020",
   "nudge": "why this voyage",
   "script": "Been on the ice. JW",
   "cta": "Read why this voyage ↓"
  },
- "proof": "James sailed the Antarctic Peninsula in March 2020; the photographs on this page are his. He hasn't sailed this air-cruise or the Magellan ships yet [confirm].",
+ "proof": "James sailed the Antarctic Peninsula aboard HX's MS Roald Amundsen in February and March 2020; the photographs on this page are his. He hasn't sailed this air-cruise or the Magellan ships yet [confirm].",
  "bestFor": {
   "who": "Travellers who dread the Drake",
   "why": "Two hours in the air each way instead of two days at sea, and further south than the classic Peninsula voyage."
@@ -876,57 +881,57 @@
  "prices_final": false,
  "booking_live": false,
  "copy_approved": false,
- "photoCredit": "Photographs of the Antarctic Peninsula from the James Wild & Co. personal archive, March 2020, and partner images. Ship photographs to come.",
+ "photoCredit": "Photographs of the Antarctic Peninsula by James Papagno, February–March 2020, and partner images. Photographs of the Magellan ships to come.",
  "images": {
   "PHOTO · PUNTA ARENAS": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/golden-light-glaciated-peak",
    "alt": "Evening light turning a glaciated Antarctic peak gold above calm water",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · ZODIAC TO THE SHIP": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-wake-snow-cliffs",
    "alt": "A Zodiac leaving a wake across calm water beneath snow-plastered cliffs",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · SOUTH SHETLANDS LANDING": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/penguin-landing-misty-massif",
    "alt": "A penguin on smooth rock as guests in red parkas explore the snow below a cloud-wrapped massif",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · GERLACHE GLACIERS": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/glacier-mountain-channel",
    "alt": "A crevassed glacier pouring down a mountainside into a dark channel",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · LEMAIRE AT EVENING": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/pyramid-island-peak-tabular-berg",
    "alt": "A pyramid-shaped rock peak with a snow apron beside a flat tabular iceberg",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · CRYSTAL SOUND ICE": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/iceberg-arch",
    "alt": "A great iceberg with a sculpted arch among brash ice, snowy mountains behind",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · NORTHBOUND": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/kayaks-beneath-sea-cliff",
    "alt": "Red sea kayaks paddling beneath a towering sea cliff toward a glacier",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · LAST LANDING": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/landing-snow-algae-peaks",
    "alt": "Guests in red parkas crossing a snowfield tinted pink by snow algae beneath glaciated peaks",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · FLIGHT NORTH": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/tabular-iceberg-violet-sunset",
    "alt": "A flat-topped tabular iceberg along the horizon under a violet and orange sunset",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "PHOTO · HOMEWARD": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/sunset-beside-ice-cliff",
    "alt": "The low sun setting behind a snowy island, a gold path on the water beside an ice cliff",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "Crossing the Antarctic Circle": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/polar/antarctica/antarctic-peninsula-peak-brash-ice-sunset",
@@ -936,27 +941,27 @@
   "Zodiac cruises among the ice": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs",
    "alt": "A Zodiac full of guests in red parkas passing between two massive icebergs",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "Shore landings": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/penguin-landing-misty-massif",
    "alt": "A penguin keeping watch over a shore landing on the Antarctic Peninsula",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "Sea kayaking": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/kayakers-snow-island",
    "alt": "Paddlers in red tandem sea kayaks resting in calm water before a snow-streaked island",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "Hiking and snowshoeing": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/landing-snow-algae-peaks",
    "alt": "Guests walking a pink snow-algae field beneath glaciated peaks",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   },
   "The Polar Plunge and citizen science": {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/turquoise-iceberg-glacier-face",
    "alt": "A small iceberg glowing turquoise below the waterline in front of a glacier wall",
-   "credit": "James Wild & Co. personal archive, Antarctic Peninsula, March 2020"
+   "credit": "James Papagno, Antarctic Peninsula, February–March 2020"
   }
  },
  "jsonld": [

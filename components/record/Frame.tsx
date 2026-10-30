@@ -1,3 +1,4 @@
+import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Camera, MapPin, Phone } from "lucide-react";
@@ -70,7 +71,7 @@ export function GalleryMosaic({ images, title }: { images: Img[]; title: string 
 }
 
 /* Location: Ledger chart + the address block ------------------------------------- */
-export function LocationBlock({ chart, name, pin, others = [], heading, rows, note }: { chart: ChartData; name: string; pin: { lat: number; lng: number }; others?: { lat: number; lng: number }[]; heading: string; rows: [string, string][]; note?: string }) {
+export function LocationBlock({ chart, name, pin, others = [], heading, rows, note, mark }: { chart: ChartData; name: string; pin: { lat: number; lng: number }; others?: { lat: number; lng: number }[]; heading: string; rows: [string, string][]; note?: string; mark?: React.ReactNode }) {
   const p = projectOn(chart, pin.lat, pin.lng);
   const right = p.x > chart.width * 0.62;
   return (
@@ -91,6 +92,7 @@ export function LocationBlock({ chart, name, pin, others = [], heading, rows, no
           {rows.map(([k, v]) => <div key={k} className="py-3 border-b ledger-rule"><dt className="ledger-eyebrow">{k}</dt><dd className="mt-1 leading-relaxed">{v}</dd></div>)}
         </dl>
         {note && <p className="mt-4 text-[13px] ledger-muted">{note}</p>}
+        {mark && <div className="mt-6">{mark}</div>}
       </div>
     </section>
   );

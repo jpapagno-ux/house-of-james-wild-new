@@ -2411,6 +2411,24 @@
     }
    ],
    "frames": []
+  },
+  "breac-house": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/hero",
+     "alt": "Breac.House on Horn Head, Donegal, Ireland"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/house",
+     "alt": "Breac.House, a small design retreat on the Donegal coast"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/balcony",
+     "alt": "Breac.House, Donegal: a balcony looking out over Horn Head"
+    }
+   ],
+   "frames": [],
+   "credit": "Breac.House"
   }
  }
 }

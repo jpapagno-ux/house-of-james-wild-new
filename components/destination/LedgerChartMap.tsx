@@ -23,10 +23,12 @@ export type MapItem = {
   bestMonths?: string;
   isNew?: boolean;
   offer?: boolean;
+  /** Ink override from the record's own volume (a Europe stay pins in aubergine). */
+  color?: string;
 };
 
-function Mark({ category, size = 18 }: { category: MapCategory; size?: number }) {
-  const c = CATEGORIES[category].color;
+function Mark({ category, size = 18, color }: { category: MapCategory; size?: number; color?: string }) {
+  const c = color ?? CATEGORIES[category].color;
   const shape = CATEGORIES[category].shape;
   return (
     <svg viewBox="0 0 28 28" width={size} height={size} aria-hidden="true" className="shrink-0">
@@ -41,7 +43,7 @@ function Mark({ category, size = 18 }: { category: MapCategory; size?: number })
 // Pins that share a spot (five stays around La Fortuna) fan out in a ring.
 const FAN = [[0, 0], [17, -6], [-17, -6], [10, 14], [-10, 14], [0, -18], [21, 11], [-21, 11]];
 
-export default function LedgerChartMap({ country, chart, width, height, items, counts, legend = "bottom-left" }: { legend?: "bottom-left" | "top-left" | "bottom-right"; country: string; chart: ReactNode; width: number; height: number; items: MapItem[]; counts: Record<MapCategory, number> }) {
+export default function LedgerChartMap({ country, chart, width, height, items, counts, legend = "bottom-left", tones = {} }: { legend?: "bottom-left" | "top-left" | "bottom-right"; country: string; chart: ReactNode; width: number; height: number; items: MapItem[]; counts: Record<MapCategory, number>; /** Volume ink per category for this page (Europe: stays in aubergine). */ tones?: Partial<Record<MapCategory, string>> }) {
   const [on, setOn] = useState<Set<string>>(() => new Set([...CATEGORY_ORDER, "new"]));
   const [hover, setHover] = useState<string | null>(null);
   const [drawn, setDrawn] = useState(false);
@@ -109,7 +111,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
                     <g className="ledger-pin-drop" style={{ animationDelay: `${2.1 + n * 0.09}s` }}>
                       {i.isNew && <circle r="20" fill="none" stroke="#8B2525" strokeWidth="2" className="ledger-pin-pulse" />}
                       <g transform={`scale(${active ? 1.45 : 1.15}) translate(-14 -14)`} style={{ transition: "transform .2s" }}>
-                        <Mark category={i.category} size={28} />
+                        <Mark category={i.category} size={28} color={i.color ?? tones[i.category]} />
                       </g>
                     </g>
                   </g>
@@ -138,7 +140,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
               return (
                 <li key={k}>
                   <button type="button" onClick={() => n && toggle(k)} aria-pressed={active} disabled={!n} className={`flex items-center gap-2.5 text-left w-full ${active && n ? "" : "opacity-45"}`}>
-                    <Mark category={k} />
+                    <Mark category={k} color={tones[k]} />
                     <span className="text-[14px] leading-tight">
                       {cat.label} <span className="ledger-muted">({n})</span>
                       <span className="block text-[11px] ledger-muted">{n ? cat.sub : "None filed here yet"}</span>
@@ -164,6 +166,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
 
       {/* Every record, grouped by area, linked to its page */}
       <div className="border ledger-border bg-paper max-h-[620px] overflow-y-auto">
+        {byArea.length === 0 && <p className="p-5 text-[15px] ledger-muted">Nothing pinned here yet. Voyages and stays appear on the chart as they are filed in the Ledger.</p>}
         {byArea.map(([area, list]) => (
           <div key={area} className="border-b ledger-border last:border-0">
             <p className="ledger-eyebrow px-5 pt-4">{area} · {list.length}</p>
@@ -171,7 +174,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
               {list.map((i) => (
                 <li key={i.id}>
                   <Link href={i.href} onMouseEnter={() => setHover(i.id)} onMouseLeave={() => setHover(null)} className={`flex items-start gap-3 px-3 py-2.5 transition-colors ${hover === i.id ? "bg-paper-card" : ""}`}>
-                    <span className="mt-0.5"><Mark category={i.category} size={16} /></span>
+                    <span className="mt-0.5"><Mark category={i.category} size={16} color={i.color ?? tones[i.category]} /></span>
                     <span className="min-w-0">
                       <span className="ledger-display text-[16px] leading-snug block">{i.name}</span>
                       <span className="text-[12px] ledger-muted block">

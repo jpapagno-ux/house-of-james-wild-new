@@ -9,6 +9,8 @@ export type ChartData = {
   readonly width: number; readonly height: number;
   readonly bounds: { readonly w: number; readonly e: number; readonly s: number; readonly n: number };
   readonly kx?: number; readonly ky?: number;
+  /** Drawn across the antimeridian (Fiji, Tahiti, Oceania): western longitudes are shifted +360. */
+  readonly wrap?: boolean;
   readonly focus: string;
   readonly neighbors: readonly { readonly name: string; readonly d: string }[];
   readonly labels: { readonly country: Pt; readonly neighbors: readonly Pt[]; readonly seas: readonly Pt[]; readonly areas: readonly Pt[] };
@@ -22,7 +24,8 @@ export function projectOn(chart: ChartData, lat: number, lng: number) {
   const B = chart.bounds;
   const kx = chart.kx ?? chart.width / (B.e - B.w);
   const ky = chart.ky ?? kx / Math.cos(((B.s + B.n) / 2) * Math.PI / 180);
-  return { x: (lng - B.w) * kx, y: (B.n - lat) * ky };
+  const L = chart.wrap && lng < 0 ? lng + 360 : lng;
+  return { x: (L - B.w) * kx, y: (B.n - lat) * ky };
 }
 
 export default function LedgerChart({ chart = CHART_COSTA_RICA, title }: { chart?: Chart; title: string }) {

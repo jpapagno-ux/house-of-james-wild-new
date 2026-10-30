@@ -2518,7 +2518,9 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -13624,7 +13626,9 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
@@ -21423,7 +21427,9 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -29165,7 +29171,9 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -29177,8 +29185,10 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "About 26 rooms across Casa Grande, a 1900s stone mansion, plus cottages and cabins.",
-     "Whole houses can be taken for a family or group."
+     "Casa Grande, a turn-of-the-century stone mansion, with rooms around its great room and courtyard.",
+     "Costilla Fishing Lodge.",
+     "Turner House.",
+     "Each can be bought out on its own, or the whole reserve taken for a family or group."
     ],
     "items": []
    },
@@ -29186,18 +29196,23 @@
     "paras": [],
     "items": [
      "Two half-day guided activities each day",
-     "Fly fishing on the lakes and streams",
-     "Wildlife viewing for bison and elk",
-     "Mountain biking",
-     "Archery"
+     "Via Ferrata climbing park",
+     "Horseback riding",
+     "Fishing",
+     "Wildlife safari for bison and elk",
+     "High country hike",
+     "3D archery, rifle and shotgun ranges",
+     "Countryside cookout",
+     "E-biking, stargazing, and snowshoeing in winter"
     ]
    },
    "features": {
     "paras": [],
     "items": [
      "19 fishable lakes and about 30 miles of streams",
-     "Turner Trailblazers programme for children",
-     "All-inclusive: three chef-prepared meals a day, snacks and soft drinks"
+     "Vermejo Spa",
+     "All-inclusive: daily meals, snacks and soft drinks",
+     "Groups of up to 100, retreats and weddings"
     ]
    },
    "onlyHere": [],

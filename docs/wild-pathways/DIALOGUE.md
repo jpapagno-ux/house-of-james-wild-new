@@ -1,6 +1,6 @@
 # Phase 2F · James & Iggi dialogue register
 
-Status: **built, awaiting James's review** (30 Oct 2026). Preview: `/preview/pathways/dialogue` (noindex, flag-independent).
+Status: **reviewed and approved by James, 30 Oct 2026** (standing lines, wink / this-way expressions, sign-offs 2–7). Preview: `/preview/pathways/dialogue` (noindex, flag-independent).
 Brief: Foundation V1.3 §6 — "store centrally with character ID, page context, audience, intent, approved text, tone, author/source, approval status, linked volume/pathway and optional expression asset. Sample creative copy must be marked draft, never presented as authenticated."
 
 ## What it is
@@ -12,11 +12,11 @@ Brief: Foundation V1.3 §6 — "store centrally with character ID, page context,
 |---|---|---|---|
 | `verdicts.ts` VERDICTS | 6 | approved (James, 27 Oct, Ledger Proofs sheet) | James's Field Verdicts; the text stays in verdicts.ts, the register indexes it with a `source.ref` |
 | `verdicts.ts` SIGNOFFS[0] | 1 | approved (James's own line) | "Never look back. Time is on your side." |
-| SIGNOFFS[1–6] | 6 | draft | House drafts in his voice; become approved only when they appear in the Voice Bank `CHOSEN` |
+| SIGNOFFS[1–6] | 6 | approved (James, 30 Oct, via `voice/chosen.ts`) | House drafts in his voice, marked by James in the Phase 2F review; the register reads them through the Voice Bank `CHOSEN` mechanism |
 | `iggi.ts` SAMPLES | 12 | draft | The /plan/iggi sample chats, labelled samples on the page; indexed so the Iggi embed can never mistake them for authenticated lines |
-| `IGGI_STANDING` | 6 | draft, proposed | Lines Iggi would say anywhere (decline, advisor handoff, Crux handoff, follow-the-pathway, save-to-Folio, trade suitability) |
+| `IGGI_STANDING` | 6 | approved (James, 30 Oct) | Lines Iggi says anywhere (decline, advisor handoff, Crux handoff, follow-the-pathway, save-to-Folio, trade suitability). Wording audit pinned as FOLLOW-UPS #17 |
 
-31 lines: 7 approved, 24 draft. The register throws at build if any rule is broken, so a bad line can't ship.
+31 lines: 19 approved, 12 draft (the /plan/iggi samples, by rule). The register throws at build if any rule is broken, so a bad line can't ship.
 
 ## The rules, as `validateDialogue` enforces them
 
@@ -51,19 +51,19 @@ This is the same shape the library's `IggiKnowledge` entity already uses for app
 | `iggi-portrait-charcoal` | approved | Iggi, charcoal on cream — live on /plan/iggi | Base44 media |
 | `cheetah-pencil` | approved | pencil sketch on the verdict notes (friend of James, with permission) | `/public/brand/sketches` |
 | `house-hare-seal` | approved | the house's rabbit: the JWC hare seal (cream / forest / navy / sand / linen) | Cloudinary `jwco-brand-kit/png/jwco-hare-*`, `wildco/guides/house-style/jwc-hare-seal-*` |
-| `iggi-wink` | candidate | Iggi wink, forest monochrome — tagged character/icon | Cloudinary `wildco/brand/iggi/iggi-character-wink-forest` |
-| `iggi-this-way` | candidate | Iggi pointing — suits handoffs and nudges | `wildco/brand/iggi/iggi-character-this-way-forest` |
+| `iggi-wink` | approved (30 Oct) | Iggi wink, forest monochrome — tagged character/icon | Cloudinary `wildco/brand/iggi/iggi-character-wink-forest` |
+| `iggi-this-way` | approved (30 Oct) | Iggi pointing — suits handoffs and nudges | `wildco/brand/iggi/iggi-character-this-way-forest` |
 | `iggi-seal` | candidate | Iggi's Compass seal (forest / linen; plus navy / sand / forest "iggis-compass-seal") | `wildco/brand/iggi/` |
 | `iggi-engraved-v1` | draft | engraved art v1 | `wildco/brand/iggi/` |
 | `iggi-character-a-d` | draft | four character studies | `wildco/brand/iggi/` |
 
 The rabbit the audit couldn't find is the house hare seal, already in the brand kit. No new art is needed for Phase 2F.
 
-## Decisions for James
+## Decisions taken (James, 30 Oct 2026)
 
-1. Approve (or edit) the six Iggi standing lines on the preview page. Each is `draft` until you say so; I then set `approval: { approved, James Papagno, date }`.
-2. Promote `iggi-wink` / `iggi-this-way` from candidate to approved if they are the expressions you want beside bubbles — I can't view Cloudinary from here, so this is your call by eye.
-3. Sign-offs 2–6: mark them in the Voice Bank when you're ready; the register follows `CHOSEN` automatically.
+1. The six Iggi standing lines: approved; a wording audit is pinned (FOLLOW-UPS #17) so they can be tightened later without re-opening governance.
+2. `iggi-wink` and `iggi-this-way`: approved as the expressions beside bubbles. The Crux and follow-the-pathway lines carry `iggi-this-way`; save-to-Folio carries `iggi-wink`.
+3. Sign-offs 2–7: approved, recorded in `lib/content/voice/chosen.ts` as Voice Bank picks.
 
 ## What this phase does not do
 

@@ -20,6 +20,7 @@ import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/
 import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
 import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
+import OfferPanel from "@/components/ledger/OfferPanel";
 import ExpandAll from "./ExpandAll";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
@@ -279,15 +280,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </li>
         ))}
       </ul>
-      {routeOffers.length > 0 && (
-        <div id="offers" className="mt-12 border border-crimson/40 p-5 md:p-6 scroll-mt-28">
-          <p className="ledger-eyebrow ledger-crimson">Offers on this route</p>
-          <ul className="mt-3 grid sm:grid-cols-2 gap-x-8 gap-y-3">
-            {routeOffers.map((o) => <li key={o.id} className="text-[15.5px]"><span className="ledger-display text-[18px]">{o.name}</span> <span className="ledger-eyebrow ml-1">{o.program}</span><br />{o.headline}, travel {o.travel.text}.{o.conditions ? ` ${o.conditions}` : ""} <span className="font-mono text-[10.5px] ledger-muted">{o.id}</span></li>)}
-          </ul>
-          <p className="mt-3 text-[13px] ledger-muted">Offers are set by each hotel and confirmed when you book. We apply whichever fits your dates.</p>
-        </div>
-      )}
+      <OfferPanel offers={routeOffers} volume={voyage ? "voyages" : "stays"} title="Offers on this route" />
     </Sec>
   ) : null;
 

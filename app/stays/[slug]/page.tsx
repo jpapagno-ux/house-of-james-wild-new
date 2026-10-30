@@ -8,6 +8,8 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import FullFrame from "@/components/record/FullFrame";
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import ImageAccordion from "@/components/record/ImageAccordion";
 import { momentsFor, rowsFrom } from "@/lib/content/stay-moments";
 import { FULL_FRAME } from "@/lib/content/stay-media";
@@ -122,7 +124,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
-          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} /> : undefined}
+          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -131,6 +133,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} className="mt-10 max-w-3xl" />}
+          <OfferPanel offers={offersFor(s.slug)} volume="stays" title={`Offers at ${s.name}`} />
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}

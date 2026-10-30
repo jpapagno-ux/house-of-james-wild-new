@@ -8,12 +8,14 @@
 //
 // Program names (James, 27 Oct 2026): "Worth Another Night" = a free night on
 // a shorter stay; "Time Rewarded" = a reward for staying longer; "On the
-// Horizon" = suggested name for voyage savings, not yet in use. "Book Early"
+// Horizon" = suggested name for voyage savings, not yet in use. "Final Call"
+// (James, 29 Oct 2026) = last-minute savings on a departure, Voyages and
+// Overland only; drawn as a split-flap board (components/ledger/OfferPanel). "Book Early"
 // = a hotel's early-booking discount (working name, James to confirm).
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
-export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "On the Horizon" | "Book Early";
+export type OfferProgram = "Worth Another Night" | "Time Rewarded" | "Final Call" | "On the Horizon" | "Book Early";
 export type OfferImage = { id: string; alt: string; w: number; h: number };
 export type Offer = {
   id: string;

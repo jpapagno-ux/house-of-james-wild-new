@@ -504,16 +504,8 @@
      "<a href=\"/safaris/londolozi-reserve/pioneer-camp\">Pioneer Camp</a>"
     ],
     [
-     "Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi-pioneer-camp/\">Pioneer Camp on Wild & Co Safaris</a>"
-    ],
-    [
      "Reserve",
      "<a href=\"/safaris/londolozi-reserve\">Londolozi Reserve</a>"
-    ],
-    [
-     "Reserve on Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/\">Londolozi on Wild & Co Safaris</a>"
     ]
    ]
   },
@@ -555,10 +547,6 @@
     [
      "Stay page",
      "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
-    ],
-    [
-     "Wild & Co Safaris",
-     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/cape-town/ellerman-house/\">Ellerman House on Wild & Co Safaris</a>"
     ]
    ]
   }

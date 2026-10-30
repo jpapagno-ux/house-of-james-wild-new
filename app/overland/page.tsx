@@ -16,7 +16,6 @@ export const metadata = buildMetadata({ title: "Overland Routes Designed by Jame
 
 // South Africa's destination card (James, 30 Oct 2026): the country page, with Wild & Co
 // Safaris as the cross-reference. Londolozi's own photograph, credited beside the card.
-const ZA_SAFARIS = "https://wildcosafaris.vercel.app/destinations/south-africa/";
 function zaDoor(routes: number): Door {
   const c = regionBySlug("africa")?.countries.find((x) => x.slug === "south-africa");
   return { name: "South Africa", href: "/destinations/africa/south-africa", image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/londolozi/londolozi-leopard-cubs-in-tree", imageAlt: "Leopard cubs in a tree at Londolozi, Sabi Sand, South Africa", line: c?.line ?? "The Sabi Sand, Cape Town and the Cape Winelands.", stays: c?.stays ?? 0, routes };
@@ -40,7 +39,6 @@ export default function OverlandHub() {
                 <div className="max-w-xl">
                   <p className="ledger-eyebrow ledger-crimson">The destination</p>
                   <p className="ledger-display text-[1.4rem] md:text-[1.6rem] leading-snug mt-1">{g.name}: every stay, the months to go and the routes below.</p>
-                  <p className="mt-3 text-[15px]"><a href={ZA_SAFARIS} target="_blank" rel="noopener" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">{g.name} on Wild & Co Safaris ↗</a></p>
                   <p className="mt-3 text-[12px] ledger-muted">Photograph courtesy of Londolozi.</p>
                 </div>
               </div>

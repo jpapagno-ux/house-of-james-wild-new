@@ -117,3 +117,16 @@ test("Phase 2A: the library export wins, the override file fills gaps, and bad l
   const lib = mergeRecords([libStay], [override], { a: [{ kind: "levy", money: "guest_levy", statement: "z", source: "s", reviewed: "2026-11-01", status: "verified" }] });
   assert.equal(lib[0].impact[0].kind, "levy", "library impact notes replace the override's");
 });
+
+test("Phase 2C: the pathways flag is off unless exactly 'on', and every pathway has house copy", async () => {
+  const { readPathwaysFlag } = await import("../lib/content/pathways/flag.ts");
+  assert.equal(readPathwaysFlag({}), false);
+  assert.equal(readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: "true" }), false);
+  assert.equal(readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: "on" }), true);
+  const { PATHWAY_ANSWER, PATHWAY_FAQS } = await import("../lib/content/pathways/copy.ts");
+  for (const p of PATHWAY_LIST) {
+    assert.ok(PATHWAY_ANSWER[p.id].length > 120, `${p.id} answer`);
+    assert.ok(PATHWAY_FAQS[p.id].length >= 2, `${p.id} faqs`);
+    assert.ok(!/James (said|says|told)|"/.test(PATHWAY_ANSWER[p.id]), `${p.id} copy never quotes James`);
+  }
+});

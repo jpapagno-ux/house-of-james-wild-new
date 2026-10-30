@@ -22,6 +22,8 @@ export const BUILT: string[] = [
   "/partners",
   "/travel-notes",
   "/stays",
+  // Wild Pathways (Phase 2C): built only while NEXT_PUBLIC_PATHWAYS=on; the pages 404 otherwise.
+  ...(process.env.NEXT_PUBLIC_PATHWAYS === "on" ? ["/pathways", "/pathways/*"] : []),
   // Journeys and voyages from James's route files (lib/content/trips)
   "/overland/costa-rica/two-oceans-one-volcano",
   "/overland/costa-rica/the-original-costa-route-7-days",

@@ -87,7 +87,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           ? <RecordHero image={{ url: r.hero, alt: `${r.name}: ${r.tagline}` }} eyebrow="Destinations · Region" title={r.name} tagline={r.tagline} glance={<GlanceBar glance={glance} />} />
           : <div className="pt-36 pb-10 max-w-ledger mx-auto px-5 md:px-10"><p className="ledger-eyebrow ledger-crimson">Destinations · Region</p><h1 className="ledger-display text-[2.6rem] md:text-6xl mt-3">{r.name}</h1><p className="ledger-display italic text-xl mt-3 ledger-muted">{r.tagline}</p></div>}
 
-        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[192px] z-30">
+        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[160px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
               {REGIONS.map((x) => x.slug === r.slug
@@ -101,7 +101,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: r.name, path }]} /></div>
           {chart && mapItems.length > 0 && (
-            <section id="the-map" className="mt-8 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="region-map-heading">
+            <section id="the-map" className="mt-8 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
                   <p className="ledger-eyebrow ledger-crimson">The Ledger in {r.name} · {mapItems.length} on the chart</p>
@@ -144,7 +144,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <Doors eyebrow={`${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"} in the Ledger`} title={`The Countries of ${r.name}`} intro="Open a country for its stays by area, routes, the months to go and the Compass where it's ready." doors={doors} />
 
           {r.featured.length > 0 && (
-            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="stays-heading">
+            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="stays-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                 <div><p className="ledger-eyebrow ledger-crimson">From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
                 <Link href="/stays" className="ledger-btn-ghost self-start md:self-auto">All stays</Link>

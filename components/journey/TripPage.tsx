@@ -57,7 +57,7 @@ function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50v
 }
 
 function Sec({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
-  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px] ${className}`}>{children}</section>;
+  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px] ${className}`}>{children}</section>;
 }
 
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
@@ -339,7 +339,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[240px]">The cabins</h3>
+      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[208px]">The cabins</h3>
       <p className="mt-1 text-[14px] ledger-muted">Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax.</p>
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -476,7 +476,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const Enquire = (
-    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-[240px]">
+    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-[208px]">
       <p className="ledger-eyebrow !text-paper/70">{voyage ? "Wild & Co Voyages" : "Plan this journey"}</p>
       <p className="ledger-display text-2xl md:text-3xl mt-2 max-w-2xl">{T.ctaline}</p>
       <div className="mt-6 flex flex-wrap gap-4 items-center">

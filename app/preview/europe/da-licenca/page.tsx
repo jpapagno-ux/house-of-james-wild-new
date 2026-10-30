@@ -82,7 +82,7 @@ export default function DaLicencaPreview() {
             facts={[["Region", "Alentejo, Portugal"], ["The house", "8 rooms & suites"], ["Ledger ID", LEDGER_ID], ["From", "€350 per night (suites)"], ["Hosts", "Vitor Borges & Franck Laigneau"], ["Best suited to", "Couples, collectors, slow travellers"]]}
           />
 
-          <section id="hosts" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px] grid lg:grid-cols-[1.3fr_1fr] gap-10 items-start">
+          <section id="hosts" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px] grid lg:grid-cols-[1.3fr_1fr] gap-10 items-start">
             <div>
               <SectionHead eyebrow="Ownership & hosts" title="The Owners Who Made It" />
               <p className="mt-4 text-[17px] leading-relaxed">Dá Licença was brought to life by Vitor Borges and Franck Laigneau, who left careers in Paris to build the retreat. Their background in the art world is the property&rsquo;s signature: each suite is hung and furnished like a collector&rsquo;s apartment. The owners are present and personally host most stays.</p>
@@ -116,7 +116,7 @@ export default function DaLicencaPreview() {
           />
 
           {/* Before & after: the chapters around the stay */}
-          <section id="chapters" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
+          <section id="chapters" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]">
             <SectionHead eyebrow="Before & after" title="The Chapters Around the Stay" intro="Most guests come for three nights and build the trip around them. Here is how the house would shape it: a city to land in, the quiet, then the river or the sea." />
             <ol className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-5">
               {CHAPTERS.map((c, i) => {
@@ -135,7 +135,7 @@ export default function DaLicencaPreview() {
           </section>
 
           {/* The river voyage: Europe meets Voyages */}
-          <section id="river" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[240px] theme-vol-voyages border-t-[3px] pt-8 md:pt-10" style={{ borderColor: VOY.leather }}>
+          <section id="river" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[208px] theme-vol-voyages border-t-[3px] pt-8 md:pt-10" style={{ borderColor: VOY.leather }}>
             <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
               <div>
                 <p className="flex items-center gap-2 font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: VOY.leather }}><VolumeIconSvg volume="voyages" size={18} />Volume IV · Voyages · By river</p>

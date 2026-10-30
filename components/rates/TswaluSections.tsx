@@ -47,7 +47,7 @@ export default function TswaluSections() {
           <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">{OFFERS.map((o) => <li key={o.id} className="border ledger-border p-5"><p className="ledger-display text-[1.25rem]">{o.name}</p><p className="mt-1 text-[14.5px]">{o.line}.</p></li>)}</ul>
         </section>
 
-        <section id="rates" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]">
+        <section id="rates" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]">
           <SectionHead eyebrow="Rates and sample costs · US dollars" title="What a Stay at Tswalu Costs" intro="Open a camp to see its rooms, switch between 2026 and 2027, and price any room alongside, fees and flights included. A planning sample on Tswalu's own rates, shown in US dollars; we confirm the final price when you book." />
           <TswaluRatesPlanner />
         </section>

@@ -31,7 +31,7 @@ export function OfferCard({ offer, volume: pageVolume }: { offer: Offer; volume:
 export default function OfferPanel({ offers, volume, title = "Offers" }: { offers: Offer[]; volume: VolumeKey; title?: string }) {
   if (!offers.length) return null;
   return (
-    <section id="offers" className="mt-14 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[240px]">
+    <section id="offers" className="mt-14 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[208px]">
       <p className="ledger-eyebrow ledger-crimson">{title}</p>
       <div className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {offers.map((o) => <OfferCard key={o.id} offer={o} volume={volume} />)}

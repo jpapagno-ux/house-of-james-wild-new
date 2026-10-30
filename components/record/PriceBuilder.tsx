@@ -35,7 +35,7 @@ export default function PriceBuilder({ kind, options, addOns, defaultOption, tax
   const q = new URLSearchParams({ trip: tripName, [unit]: option.label, travellers: String(n), addons: chosen.map((a) => a.label).join(", "), estimate: String(r.total) });
 
   return (
-    <section id="price" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="price-heading">
+    <section id="price" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="price-heading">
       <p className="ledger-eyebrow ledger-crimson">Price builder</p>
       <h2 id="price-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Build Your Price</h2>
       <p className="mt-3 text-[15px] ledger-muted max-w-3xl">{note ?? `${kind === "voyage" ? "Price is based on the cabin you select, per person, double occupancy (2)." : "Prices are per person, double occupancy (2)."} Figures are examples until rates are filed.`}</p>

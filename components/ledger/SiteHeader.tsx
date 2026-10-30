@@ -7,6 +7,7 @@ import { Menu, X, Phone, Search } from "lucide-react";
 import { JwcoSeal } from "./Marks";
 import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
+import HouseMenu from "./HouseMenu";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
 
@@ -144,7 +145,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     if (!overlay) return;
     const onScroll = () => {
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 192 : window.scrollY > 40);
+      setSolid(end ? end.getBoundingClientRect().top <= 160 : window.scrollY > 40);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -155,9 +156,6 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
     };
   }, [overlay]);
 
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-  }, [open]);
 
   const light = overlay && !solid && !open;
   const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
@@ -169,26 +167,19 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         light ? "bg-transparent text-white" : "bg-paper/95 backdrop-blur border-b ledger-border text-ink"
       }`}
     >
-      {/* Utility row */}
-      <div className={`hidden lg:block border-b ${light ? "border-white/20" : "ledger-border"}`}>
-        <div className="max-w-ledger mx-auto px-5 md:px-10 h-8 flex items-center justify-end gap-6">
-          {UTILITY_NAV.map((l) => (
-            <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{l.label}</Link>
-          ))}
-          <a href={`tel:${SITE.phone.tel}`} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{SITE.phone.display}</a>
-        </div>
-      </div>
-
-      {/* Main bar */}
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[112px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="flex items-center gap-3">
+          <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
+            <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
+            Menu
+          </button>
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
+            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
             aria-label="Search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
@@ -212,9 +203,6 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             ))}
             {FLAGS.accounts && <li><Link href="/account" className={mainItem}>My Folio</Link></li>}
           </ul>
-          <button type="button" onClick={() => setSearching(true)} className={`lg:hidden inline-flex items-center justify-center h-10 w-10 border ${light ? "border-white/50 text-white" : "ledger-border"}`} aria-label="Search the Ledger">
-            <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-          </button>
           <Link
             href={PLAN_CTA.href}
             className={`hidden sm:inline-flex items-center whitespace-nowrap h-10 px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
@@ -223,9 +211,6 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           >
             {PLAN_CTA.label}
           </Link>
-          <button type="button" className="lg:hidden p-2 -mr-2" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((o) => !o)}>
-            {open ? <X className="w-6 h-6" strokeWidth={1.25} /> : <Menu className="w-6 h-6" strokeWidth={1.25} />}
-          </button>
         </div>
       </div>
 
@@ -238,35 +223,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       </nav>
     </header>
       <SearchPanel open={searching} onClose={() => setSearching(false)} />
-      {/* Mobile menu: full screen, volumes first */}
-      <div className={`lg:hidden fixed inset-x-0 top-[72px] bottom-0 z-40 ledger-page overflow-y-auto transition-opacity duration-300 ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}>
-        <nav aria-label="Mobile" className="px-5 py-6 text-ink">
-          <button type="button" onClick={() => { setOpen(false); setSearching(true); }} className="w-full flex items-center gap-3 h-12 px-4 border ledger-rule mb-6 text-left">
-            <Search className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
-            <span className="ledger-muted text-[16px]">Search stays, camps, ships, countries</span>
-          </button>
-          <p className="ledger-eyebrow ledger-crimson">The five volumes</p>
-          <ul className="mt-3 border-t ledger-rule">
-            {VOLUMES.map((v) => (
-              <li key={v.href} className="border-b ledger-border">
-                <Link href={v.href} onClick={() => setOpen(false)} className="flex items-baseline justify-between py-4">
-                  <span className="ledger-display text-2xl">{v.label}</span>
-                  <span className="text-sm ledger-muted text-right max-w-[55%]">{v.intro}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul className="mt-6 grid grid-cols-2 gap-3">
-            {[...MAIN_EXTRA, ...UTILITY_NAV].map((l) => (
-              <li key={l.href}><Link href={l.href} onClick={() => setOpen(false)} className="text-[17px]">{l.label}</Link></li>
-            ))}
-          </ul>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href={PLAN_CTA.href} onClick={() => setOpen(false)} className="ledger-btn">{PLAN_CTA.label}</Link>
-            <a href={`tel:${SITE.phone.tel}`} className="ledger-btn"><Phone className="w-3.5 h-3.5" strokeWidth={1.5} /> {SITE.phone.display}</a>
-          </div>
-        </nav>
-      </div>
+      <HouseMenu open={open} onClose={() => setOpen(false)} onSearch={() => setSearching(true)} />
     </>
   );
 }

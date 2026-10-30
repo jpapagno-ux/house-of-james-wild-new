@@ -59,7 +59,7 @@ export default function AboutPage() {
             <p className="mt-8 text-[16px]">Where James has been lately, and where he&rsquo;s headed next, is in <Link href="/about/founder#field-log" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">his field log</Link>.</p>
           </section>
 
-          <section id="rules" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[240px]" aria-labelledby="rules-heading">
+          <section id="rules" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[208px]" aria-labelledby="rules-heading">
             <SectionHead eyebrow="Rules of the road · seven rules, forty-four years" title="How James Would Like You to Travel" id="rules-heading" />
             <p className="mt-4 text-[17px] ledger-muted max-w-2xl">{RULES_INTRO}</p>
             <RulesGrid rules={RULES} />

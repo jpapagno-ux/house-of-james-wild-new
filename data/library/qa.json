@@ -497,12 +497,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d9",
    "slug": "beckon-the-louise",
-   "name": "Beckon The Louise",
+   "name": "The Louise",
    "country": "Australia",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8da",

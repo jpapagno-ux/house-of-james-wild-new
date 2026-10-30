@@ -119,6 +119,7 @@ export const STAY_SLUGS: string[] = [
   "beckon-longitude-131",
   "beckon-silky-oaks-lodge",
   "beckon-southern-ocean-lodge",
+  "beckon-the-louise",
   "benguerra-island-by-and-beyond",
   "beyond-amazon-explorer",
   "beyond-grumeti-safari-camp",

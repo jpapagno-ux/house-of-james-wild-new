@@ -417,20 +417,20 @@
    ],
    "airports": [
     [
+     "Adelaide Airport (ADL)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
      "Lord Howe Island Airport (LDH)",
      "Serves 1 stay in the Ledger here"
     ],
     [
      "Scheduled flights operate primarily from Sydney (SYD)",
      "Serves 1 stay in the Ledger here"
-    ],
-    [
-     "Brisbane (BNE)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "LDH · SYD",
+   "flyInto": "ADL · LDH",
    "bestShort": "Sep–Nov",
    "atlasName": "Australia"
   },

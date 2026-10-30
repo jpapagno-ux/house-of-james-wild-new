@@ -14,7 +14,7 @@ import OLD_SITE from "@/lib/redirects/old-site.json";
 //    /api/v1/me). Off entirely until the accounts flag is on.
 
 const MAP = OLD_SITE as Record<string, string>;
-const PRIVATE = /^\/(account|auth|api\/v1\/me)(\/|$)/;
+const PRIVATE = /^\/(account|auth|booking|api\/v1\/(me|quotes|ops))(\/|$)/;
 
 function oldSiteRedirect(req: NextRequest) {
   const path = req.nextUrl.pathname.replace(/\/+$/, "") || "/";
@@ -60,6 +60,6 @@ export const config = {
     // Old site URL families (301 lookup)
     "/property/:path*", "/stay/:path*", "/book/:path*", "/country/:path*", "/itinerary/:path*", "/memoir/:path*", "/wellness-retreats/:path*", "/Contact", "/wild-earth-portfolio", "/find-stay", "/coming-soon", "/agent-application", "/influencer-application", "/request-itinerary", "/booking-itinerary", "/booking-form-retreat", "/wellness-retreats",
     // Booking Live private routes (session refresh)
-    "/account/:path*", "/auth/:path*", "/api/v1/me/:path*",
+    "/account/:path*", "/auth/:path*", "/booking/:path*", "/api/v1/me/:path*", "/api/v1/quotes", "/api/v1/ops/:path*",
   ],
 };

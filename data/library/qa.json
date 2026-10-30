@@ -599,10 +599,9 @@
    "name": "& Beyond Phinda Homestead Residence",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff958",
@@ -1775,10 +1774,8 @@
    "slug": "jacis-private-lodge",
    "name": "Jaci's Private Lodge",
    "country": "South Africa",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff929",
@@ -4519,10 +4516,8 @@
    "slug": "wilderness-qorokwe",
    "name": "Wilderness Qorokwe",
    "country": "Botswana",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1bbf393f17356a5ccf2",
@@ -4595,7 +4590,6 @@
    "country": "Tahiti",
    "missing": [
     "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false

@@ -1,3 +1,4 @@
+import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -19,9 +20,9 @@ import { graph } from "@/lib/schema";
 // or "best time to visit Komodo". Answer first, then the months and the way in,
 // the founder's testimony, what to see, who it suits, how to see it (the
 // voyages), Raja Ampat vs Komodo, FAQs with schema, and the sources.
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40";
 
-export default function GuidePage({ g }: { g: Guide }) {
+export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart of the guide's stays and voyage ports (country guides). */ map?: React.ReactNode }) {
   const parent = g.parent ? GUIDES[g.parent] : undefined;
   const voyages = journeysFor("indonesia").filter((j) => g.voyageWaters.some((w) => j.eyebrow.includes(w)));
   const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: "Asia", path: "/destinations/asia" }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
@@ -52,6 +53,8 @@ export default function GuidePage({ g }: { g: Guide }) {
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <Overview answer={g.answer} facts={g.facts} />
           <FounderProof proof={g.proof} className="mt-10 max-w-3xl" />
+
+          {map}
 
           <WhenToGo place={g.name} rows={g.months} airports={g.airports} transfers={g.transfers} />
 

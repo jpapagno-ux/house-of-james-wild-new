@@ -105,8 +105,10 @@
 
   function mount(root, opts) {
     opts = opts || {};
-    if (window.__JWC_MOUNTED) { console.warn("jw-chart: one chart per page"); return Promise.resolve(); }
-    window.__JWC_MOUNTED = true;
+    // One chart at a time: a chart left behind by in-site navigation (its root no longer
+    // in the page) is retired, so the next route page can draw its own.
+    if (window.__JWC_MOUNTED && window.__JWC_ROOT && window.__JWC_ROOT.isConnected) { console.warn("jw-chart: one chart per page"); return Promise.resolve(); }
+    window.__JWC_MOUNTED = true; window.__JWC_ROOT = root;
     var ids = opts.routes || [];
     if (typeof ids === "string") ids = ids.split(/[\s,]+/).filter(Boolean);
     return Promise.all(ids.map(function (id) {
@@ -444,7 +446,7 @@ var IMG=null;if(CFG.img){var im=new Image();im.onload=function(){var c=document.
  x.filter='blur('+Math.round(f*.6)+'px)';x.fillStyle='#000';x.fillRect(f,f,im.width-2*f,im.height-2*f);x.filter='none';x.globalCompositeOperation='source-in';x.drawImage(im,0,0);IMG=c};im.src=CFG.img.src}
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){landKey=''});
 var visible=true;if('IntersectionObserver' in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting}).observe(stage)}
-var last=0;function frame(now){var rdt=last?clamp((now-last)/1000,0,.1):0;last=now;requestAnimationFrame(frame);if(!document.hidden&&visible){step(rdt);var info=draw(now);updatePanel(info)}}
+var last=0;function frame(now){if(!stage.isConnected)return;var rdt=last?clamp((now-last)/1000,0,.1):0;last=now;requestAnimationFrame(frame);if(!document.hidden&&visible){step(rdt);var info=draw(now);updatePanel(info)}}
 setMode(KEYS[0]);requestAnimationFrame(frame);
 })();
 

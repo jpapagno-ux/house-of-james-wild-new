@@ -85,7 +85,7 @@ export default function Journeys({ country, journeys, chart, id = "journeys" }: 
   const voyages = journeys.length - routes;
   const count = [routes ? `${routes} overland ${routes === 1 ? "route" : "routes"}` : "", voyages ? `${voyages} small-ship ${voyages === 1 ? "voyage" : "voyages"}` : ""].filter(Boolean).join(" · ");
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <p className="ledger-eyebrow ledger-crimson">Journeys &amp; voyages · {count}</p>

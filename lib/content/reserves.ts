@@ -55,6 +55,8 @@ export const CAMP_STATUS: Record<string, { status: HouseStatus; date: string; li
   //   The Motse: "where it all began for me at Tswalu", May 2012; Tswalu is his number one founder favourite (James, 30 Oct 2026)
   "tswalu-reserve/motse": { status: "founder_returned", date: "2012-05", line: "James stayed at The Motse in May 2012; Tswalu is his number one founder favourite" },
   "lion-sands/ivory-lodge": { status: "founder_visited", date: "2026-05", line: "James stayed at Ivory Lodge in May 2026 and calls it a five-star favourite" },
+  //   Varty Camp: James stayed at Londolozi Varty Camp in 2018 (James, 30 Oct 2026). Varty only; no mark on Londolozi's other camps.
+  "londolozi-reserve/varty-camp": { status: "founder_visited", date: "2018", line: "James stayed at Varty Camp in 2018" },
 };
 export const campStatus = (r: Reserve, c: ReserveCamp) => CAMP_STATUS[`${r.slug}/${c.slug}`];
 

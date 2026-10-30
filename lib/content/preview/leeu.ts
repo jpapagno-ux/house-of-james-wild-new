@@ -273,7 +273,6 @@ export const SAMPLE_GATHERINGS_LEEU = {
         { nights: "3 nights ·", place: "DumaTau, Linyanti" },
         { nights: "3 nights ·", place: "Qorokwe, Okavango Delta" },
       ],
-      link: "https://wildcosafaris.vercel.app/grand-traverse/wine-wildlife-wilderness/",
       cta: "See the journey",
     },
     journeys: [
@@ -282,21 +281,18 @@ export const SAMPLE_GATHERINGS_LEEU = {
         tag: "Journey type 01",
         title: "Private Guided",
         intro: "Your own guide and your own vehicle, first day to last. The journey moves at your pace, not the camp's schedule. This is how the Grand Traverse runs.",
-        link: "https://wildcosafaris.vercel.app/grand-traverse/wine-wildlife-wilderness/",
       },
       {
         key: "classic",
         tag: "Journey type 02",
         title: "Classic",
         intro: "Expertly planned by us, hosted on the ground by the camps' own guiding teams. Shared vehicles, beautifully balanced pacing and exceptional value.",
-        link: "https://wildcosafaris.vercel.app/journeys/classic/",
       },
       {
         key: "in_the_field",
         tag: "Journey type 03",
         title: "In The Field",
         intro: "Mobile, remote and elemental. Fewer walls, longer distances, and a camp that moves with the country rather than waiting for it.",
-        link: "https://wildcosafaris.vercel.app/journeys/in-the-field/",
       },
     ],
     footnote: "Every route is planned under the same Ledger, room by room and night by night.",
@@ -315,7 +311,6 @@ export const SAMPLE_GATHERINGS_LEEU = {
     cta: "See the cottage and the houses",
     agentCta: "Connect with the Gatherings team",
     agentNote: "Traveling with an agent? They can connect with us directly and we'll set the meeting.",
-    link: "https://wildco-gatherings1.vercel.app/houses/leeu-estates-franschhoek",
   },
 
   collection: {

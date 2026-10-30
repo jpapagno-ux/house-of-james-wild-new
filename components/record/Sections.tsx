@@ -1,4 +1,5 @@
 import Image from "next/image";
+import OnPageLink from "./OnPageLink";
 import { ShortFilmBackdrop } from "@/components/media/ShortFilm";
 import type { ShortFilm } from "@/lib/content/films";
 import HeroSlider from "@/components/destination/HeroSlider";
@@ -11,6 +12,7 @@ import AnswerBlock from "@/components/ledger/AnswerBlock";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import { Stamp, type Volume } from "@/components/ledger/Marks";
 import { PassportStamp } from "@/components/ledger/VolumeKit";
+import PhotoStamp from "@/components/ledger/PhotoStamp";
 import { stampDate } from "@/lib/volumes";
 import type { LedgerStampKind } from "@/lib/ledger/status";
 
@@ -19,7 +21,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 // Server components; the only motion is the Reveal / stamp wrappers.
 
 export type Img = { url: string; alt: string };
-const SECTION = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32";
+const SECTION = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40";
 const H2 = "ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight";
 
 export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; title: string; icon?: FieldIconName; intro?: string }) {
@@ -46,7 +48,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
             <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
-          {stamp && <div className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0 rounded-sm bg-white/95 p-2 shadow-[0_6px_24px_rgba(0,0,0,0.35)]`}>{stamp}</div>}
+          {stamp && <PhotoStamp className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0`}>{stamp}</PhotoStamp>}
         </div>
         {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
       </div>
@@ -95,7 +97,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan" }: { items
       <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
         <div className="flex-1 min-w-0 flex items-center gap-5 xl:gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,black_92%,transparent)]">
           {items.map(([label, id]) => (
-            <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{label}</a>
+            <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
         <Link href={ctaHref} className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0">{cta}</Link>
@@ -107,7 +109,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan" }: { items
 /* Overview + facts ---------------------------------------------------------- */
 export function Overview({ quote, answer, facts, paragraphs }: { quote?: string; answer: string; facts: [string, string][]; paragraphs?: string[] }) {
   return (
-    <section id="overview" className="pt-12 md:pt-16 scroll-mt-32 grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
+    <section id="overview" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
       <div>
         {quote && <p className="ledger-display italic text-2xl md:text-3xl leading-snug">&ldquo;{quote}&rdquo;</p>}
         <AnswerBlock>{answer}</AnswerBlock>
@@ -309,7 +311,7 @@ function OnlyHere({ title, paragraphs }: { title: string; paragraphs: string[] }
 /* Conservation ------------------------------------------------------------------ */
 export function Conservation({ id = "conservation", eyebrow, title, subtitle, intro, body, image }: { id?: string; eyebrow: string; title: string; subtitle?: string; intro?: string; body: string; image?: Img }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 bg-coast-mist -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
+    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40 bg-coast-mist -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
       <div className={`grid ${image ? "lg:grid-cols-[1.3fr_1fr]" : ""} gap-10 items-center`}>
         <div>
           <p className="ledger-eyebrow !text-coast flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {eyebrow}</p>

@@ -9,7 +9,7 @@ import { isUuid, isValidDate, parseFavorite, parseFolio, parseInvite, parseItem,
 const SB = { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co", NEXT_PUBLIC_SUPABASE_ANON_KEY: "k" };
 
 test("flags: everything is off by default", () => {
-  assert.deepEqual(readFlags({}), { accounts: false, save: false, share: false });
+  assert.deepEqual(readFlags({}), { accounts: false, save: false, share: false, quotes: false });
 });
 
 test("flags: only the exact word 'on' switches a flag", () => {

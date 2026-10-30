@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { TRIPS, type Trip, type TripImg } from "./trips";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { SAMPLE_ALIIKAI } from "./preview/aliikai";
+import { VOLUME_STYLES } from "@/lib/volumes";
 
 // Photos: TRIP_IMAGES below, plus any "images" map in the trip's own JSON, keyed by
 // the photo label (days, lodges), the experience name or the feature title. Add one
@@ -15,10 +16,40 @@ import { SAMPLE_ALIIKAI } from "./preview/aliikai";
 export const byPath = (p: string): Trip | undefined => Object.values(TRIPS).find((t) => t.seo.path === p);
 export const paramsFor = (kind: Trip["kind"]) => Object.values(TRIPS).filter((t) => t.kind === kind).map((t) => t.seo.path.split("/").filter(Boolean).slice(1));
 
-// Empty when the waters have no engraved chart yet; the page then lists the stops without the map.
+// Route charts are inked in their volume's colour (James, 30 Oct 2026): land routes in
+// Overland's Field Olive, voyages in Voyages' Admiralty Navy, so a route reads as land or
+// sea at a glance and matches the volume's stamps and badges.
+export const routeInk = (t: Pick<Trip, "kind">) => (t.kind === "voyage" ? VOLUME_STYLES.voyages.pad : VOLUME_STYLES.overland.pad);
+
+const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+
+type RouteStop = { day: number | string; name: string; lat: number; lng: number };
+type RouteFile = { id: string; type: string; title: string; subtitle?: string; stops: RouteStop[]; map_note?: string; destination?: string };
+
+// A chart built from the route file (public/maps/routes/<id>.json) for routes that have
+// no hand-engraved figure. The ordered stop list is the figure search engines and no-JS
+// readers see; the animated chart draws over it.
+function builtMap(t: Trip, r: RouteFile, ink: string) {
+  const cfg = JSON.stringify({ route: r, kind: t.kind === "voyage" ? "voyage" : "overland" }).replace(/</g, "\\u003c");
+  const names = r.stops.map((s) => s.name.split(" — ")[0]);
+  const items = r.stops.map((s) => `<li><span class="mono">Day ${esc(s.day)}</span> ${esc(s.name)}</li>`).join("");
+  return `<div id="jwmap-${esc(t.id)}" data-keep="1" data-gen="1" class="jw-maps jw-site" data-jw-map="itinerary" style="--jw-overland: ${ink}; --jw-voyages: ${ink}; --jw-acc: ${ink}">` +
+    `<script type="application/json">${cfg}</script>` +
+    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="Route of ${esc(r.title)}: ${esc(names.join(", "))}." style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
+    `<ol style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none">${items}</ol>` +
+    `<figcaption style="display: flex; gap: 16px; font-size: 13px; background: #FBF8F1; padding: 10px 14px; margin: 14px -20px -18px"><span>${esc(r.subtitle ?? "")}</span><span class="mono" style="margin-left: auto; font-size: 10px; letter-spacing: .08em">POSITIONS APPROXIMATE</span></figcaption>` +
+    `</figure></div></div>`;
+}
+
+// The engraved chart file if there is one, else a chart built from the route file; empty
+// when neither exists (the page then lists the stops without a map).
 export function mapHtml(t: Trip) {
+  const ink = routeInk(t);
   const f = path.join(process.cwd(), "lib/content/trips", `${t.id}.map.html`);
-  return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : "";
+  if (fs.existsSync(f)) return fs.readFileSync(f, "utf8").replace(/--jw-(overland|voyages|acc): #[0-9A-Fa-f]{6}/g, (_m, k) => `--jw-${k}: ${ink}`);
+  const rf = path.join(process.cwd(), "public/maps/routes", `${t.id}.json`);
+  if (!fs.existsSync(rf)) return "";
+  return builtMap(t, JSON.parse(fs.readFileSync(rf, "utf8")) as RouteFile, ink);
 }
 
 export function tripMetadata(t: Trip): Metadata {

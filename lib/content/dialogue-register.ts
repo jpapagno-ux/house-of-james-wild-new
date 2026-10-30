@@ -14,6 +14,8 @@ if (problems.length) throw new Error(`Dialogue register:\n  ${problems.join("\n 
 
 /** Lines that may render, optionally narrowed. */
 export const dialogue = (filter?: Parameters<typeof approvedDialogue>[1]) => approvedDialogue(DIALOGUE, filter);
+/** One approved line by id, or null: pages ask for exactly the line they were designed around. */
+export const dialogueLine = (id: string) => DIALOGUE.find((l) => l.id === id && l.approval.status === "approved") ?? null;
 /** Counts for the review page and the docs. */
 export const DIALOGUE_SUMMARY = {
   total: DIALOGUE.length,

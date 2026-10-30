@@ -85,7 +85,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
-      { label: "Ask Crux, the safari guide", href: "https://wildcosafaris.com" },
+      { label: "Ask Crux, the safari guide", href: "/safaris/wild-co-safaris" },
     ],
     ledger: [],
   },
@@ -237,10 +237,16 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },
-  // South Africa Overland routes (/overland/south-africa/*): routes approved by James 30 Oct 2026,
-  // copy not yet signed off, so the pages are noindex and stay out of the sitemap and llms.txt.
-  // Add each path here (and set copy_approved in its trip file) when he approves it.
+  // South Africa Overland routes: copy approved by James, 30 Oct 2026 ("approved please push").
+  { path: "/overland/south-africa/the-sand-river-by-road", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/leopards-through-the-lens", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/three-generations-at-pioneer", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/track-your-life-with-boyd-varty", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */
 export const FOUNDER_YEARS = 44;
+
+// The one door to the safari desk (rule, 30 Oct 2026): the menu item and the
+// Safaris hub land on `page`; only that page links out to `url`.
+export const SAFARI_DESK = { page: "/safaris/wild-co-safaris", url: "https://wildcosafaris.com" } as const;

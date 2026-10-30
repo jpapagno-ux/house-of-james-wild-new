@@ -6,7 +6,7 @@ import { isIndexable, absoluteUrl } from "@/lib/seo";
 export default function robots(): MetadataRoute.Robots {
   if (!isIndexable) return { rules: [{ userAgent: "*", disallow: "/" }] };
   return {
-    rules: [{ userAgent: "*", allow: "/", disallow: ["/api/", "/account/", "/auth/", "/booking/quote/", "/booking/checkout/", "/booking/return"] }],
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/api/", "/account/", "/auth/", "/booking/property/", "/booking/quote/", "/booking/checkout/", "/booking/return"] }],
     sitemap: absoluteUrl("/sitemap.xml"),
     host: absoluteUrl("/"),
   };

@@ -5,6 +5,7 @@ import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
 import SearchPanel from "./SearchPanel";
+import CompassSpin from "./CompassSpin";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
 
@@ -150,7 +151,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       <div className={`hidden lg:block border-b ${light ? "border-white/20" : "ledger-border"}`}>
         <div className="max-w-ledger mx-auto px-5 md:px-10 h-8 flex items-center justify-end gap-6">
           {UTILITY_NAV.map((l) => (
-            <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{l.label}</Link>
+            <Link key={l.href} href={l.href} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${l.href === "/compass" ? "inline-flex items-center gap-1.5" : ""} ${light ? "!text-white/85" : ""}`}>{l.href === "/compass" && <CompassSpin size={18} light={light} />}{l.label}</Link>
           ))}
           {FLAGS.accounts && <Link href="/account" className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>My Folio</Link>}
           <a href={`tel:${SITE.phone.tel}`} className={`ledger-eyebrow !text-[10px] hover:opacity-60 ${light ? "!text-white/85" : ""}`}>{SITE.phone.display}</a>
@@ -221,7 +222,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           </ul>
           <ul className="mt-6 grid grid-cols-2 gap-3">
             {[...MAIN_EXTRA, ...UTILITY_NAV].map((l) => (
-              <li key={l.href}><Link href={l.href} onClick={() => setOpen(false)} className="text-[17px]">{l.label}</Link></li>
+              <li key={l.href}><Link href={l.href} onClick={() => setOpen(false)} className="text-[17px] inline-flex items-center gap-2">{l.href === "/compass" && <CompassSpin size={18} />}{l.label}</Link></li>
             ))}
           </ul>
           <div className="mt-8 flex flex-wrap gap-3">

@@ -9,12 +9,12 @@ import { api } from "./client";
 // stays fully static (titles, copy, JSON-LD untouched); this renders nothing
 // at all while the save flag is off. Signed-out travelers are sent to sign in
 // and returned to the same stay.
-export default function SaveToFolio({ slug, name }: { slug: string; name: string }) {
+export default function SaveToFolio({ slug, name, inline = false }: { slug: string; name: string; inline?: boolean }) {
   const [state, setState] = useState<"idle" | "saving" | "saved" | "signin" | "error">("idle");
   if (!FLAGS.save) return null;
   const back = `/stays/${slug}`;
   return (
-    <div className="pt-4 flex flex-wrap items-center gap-3">
+    <div className={inline ? "contents" : "pt-4 flex flex-wrap items-center gap-3"}>
       {state === "signin" ? (
         <Link href={`/account/sign-in?next=${encodeURIComponent(back)}`} className="ledger-btn">Sign in to save {name}</Link>
       ) : (

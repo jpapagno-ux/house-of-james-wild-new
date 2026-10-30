@@ -9,6 +9,7 @@ import { regionBySlug } from "@/lib/content/regions";
 import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, touristTrip } from "@/lib/schema";
+import RouteAtlas from "@/components/journey/RouteAtlas";
 
 // /overland: Volume 05 hub shell. Routes James designed, by country.
 const PATH = "/overland";
@@ -32,6 +33,9 @@ export default function OverlandHub() {
       <HubShell name="Overland" path={PATH} eyebrow="Volume 05 · Overland" title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
         answer="Overland is James Wild & Co's volume of land routes James designed: the stops in order, the drive or flight times between them, what to expect and what to avoid, and every stay along the way already vetted in the Ledger. Take a route as filed, or let James reshape it around your dates."
         filling="Each route opens its own page with the day-by-day plan, the map and the price builder; more countries are filed as James draws them.">
+        <RouteAtlas id="overland-atlas" kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"
+          line="Pick a route and the globe flies to it, then plays it day by day: Costa Rica coast to coast, the Sabi Sand to the Cape."
+          routes={all.filter((j) => j.kind === "route").map((j) => ({ id: j.href.split("/").pop()!, label: j.title, href: j.href, where: groups.find((g) => g.list.includes(j))!.name }))} />
         {groups.map((g) => (
           <HubSection key={g.name} eyebrow={`${g.list.length} routes`} title={g.name} id={`${g.name}-h`.replace(/\s/g, "-").toLowerCase()}>
             {g.door && (

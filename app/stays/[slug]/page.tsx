@@ -16,7 +16,7 @@ import { FULL_FRAME, PHOTO_CREDIT } from "@/lib/content/stay-media";
 import { PRICED } from "@/lib/content/priced-stays";
 import Inclusions from "@/components/booking/Inclusions";
 import BookingPanel from "@/components/booking/BookingPanel";
-import SaveToFolio from "@/components/booking-live/SaveToFolio";
+import StayActions from "@/components/booking-live/StayActions";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
@@ -29,6 +29,7 @@ import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
+import { FILM_CREDITS, filmCreditSchema } from "@/lib/content/films";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorStrip } from "@/components/advisor/Desk";
@@ -53,12 +54,13 @@ import { isBuilt } from "@/lib/routes";
 import { RESERVES } from "@/lib/content/reserves";
 import GatewayNight from "@/components/stays/GatewayNight";
 import EuropePlate from "@/components/stays/EuropePlate";
-import GatheringsInvite from "@/components/stays/GatheringsInvite";
 import { EUROPE_PLATES } from "@/lib/content/europe-plates";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject, lodging } from "@/lib/schema";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
+import IggiLine from "@/components/dialogue/IggiLine";
+import { dialogueLine } from "@/lib/content/dialogue-register";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
@@ -146,13 +148,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
-          <SaveToFolio slug={s.slug} name={s.name} />
+          <StayActions slug={s.slug} name={s.name} />
           <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{pw && <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
           <OfferPanel offers={offersFor(s.slug)} volume="stays" title={`Offers at ${s.name}`} />
-          <GatheringsInvite slug={s.slug} name={s.name} />
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
@@ -224,6 +225,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             {/* Wild Pathways (Phase 2C, flag on + approved record): Where Your Stay Gives Back and Follow the Pathway. */}
             {pw.impact.length > 0 && <ImpactNote name={s.name} statements={pw.impact} />}
             <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />
+            <IggiLine line={dialogueLine("iggi.nudge.follow-pathway")} className="mt-8"><Link href={pathwayHref(pw.primary.key)} className="underline underline-offset-2 hover:text-crimson">Walk {pw.primary.name}.</Link></IggiLine>
           </>}
           <TalkToUs name={s.name} planHref={planHref} />
           {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
@@ -233,7 +235,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       </main>
       <ContactBar name={s.name} planHref={planHref} />
       <ContactPill name={s.name} planHref={planHref} />
-      {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: video.title, description: `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25" }} />}
+      {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: FILM_CREDITS[video.id]?.title ?? video.title, description: FILM_CREDITS[video.id] ? `${FILM_CREDITS[video.id].seriesLine}, filmed at ${s.name}. ${FILM_CREDITS[video.id].credit}.` : `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25", ...filmCreditSchema(video.id) }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
       <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
     </div>

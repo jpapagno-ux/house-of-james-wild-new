@@ -1,10 +1,10 @@
 import Image from "next/image";
+import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
 import FounderProof from "@/components/record/FounderProof";
 import { ShortFilmPanel } from "@/components/media/ShortFilm";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
-import Script from "next/script";
 import type { ReactNode } from "react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
@@ -22,10 +22,14 @@ import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import ExpandAll from "./ExpandAll";
+import { JourneyCard } from "@/components/destination/Journeys";
+import { journeysFor } from "@/lib/content/preview/journeys";
+import { isBuilt } from "@/lib/routes";
+import { InkStamp } from "@/components/ledger/VolumeKit";
+import { VOLUME_STYLES } from "@/lib/volumes";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
-import VoyageTag from "@/components/notes/VoyageTag";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -53,12 +57,17 @@ function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50v
 }
 
 function Sec({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
-  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 ${className}`}>{children}</section>;
+  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40 ${className}`}>{children}</section>;
 }
 
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
   const voyage = T.kind === "voyage";
   const mapId = `jwmap-${T.id}`;
+  // The volume's own stamp on the hero photograph (approved volume kit, 29 Oct 2026): the ship's-log
+  // porthole for voyages, the field-permit octagon for overland. Entry number from the route's Ledger ID.
+  const ledgerRef = T.map_coord.match(/(ITN-[A-Z]+-\d{4}-\d+|JW-[A-Z0-9-]+)/)?.[1] ?? "";
+  const entry = ledgerRef.match(/(\d{4,})$/)?.[1].slice(-4) ?? (ledgerRef.replace(/^JW-/, "") || "—");
+  const volStamp = <InkStamp volume={voyage ? "voyages" : "overland"} no={entry} size={128} rotate={voyage ? -7 : 6} seed={voyage ? 23 : 47} />;
   // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
   const waters = T.seo.path.split("/")[2];
   const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo" };
@@ -100,7 +109,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       {mapHtml ? (
         <>
           <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
-          <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />
+          {!mapHtml.includes('data-gen="1"') && <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />}
           <div className="mt-6" dangerouslySetInnerHTML={{ __html: mapHtml }} />
         </>
       ) : (
@@ -330,7 +339,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32">The cabins</h3>
+      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-40">The cabins</h3>
       <p className="mt-1 text-[14px] ledger-muted">Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax.</p>
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -439,8 +448,23 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
 
   const HostBlock = hostOn && h ? <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={h.state} host={h.host} stayName={host!.name} kind={host!.kind} /></div> : null;
 
+  // Sibling routes and voyages in the same country, so a traveller can compare without going back up
+  // to the hub (navigation audit, 30 Oct 2026). Only built pages are shown.
+  const sibKey = voyage ? (["raja-ampat", "komodo"].includes(waters) ? "indonesia" : waters) : waters;
+  const siblings = journeysFor(sibKey).filter((j) => j.href !== T.seo.path && isBuilt(j.href)).slice(0, 3);
+  const countryName = voyage ? "Indonesia" : T.crumbs[2] ?? "";
+  const countryHref = voyage ? "/destinations/asia/indonesia" : COUNTRY_PATH[waters];
   const Related = (
     <Sec id="related">
+      {siblings.length > 0 && (
+        <div className="mb-12">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div><p className="ledger-eyebrow">{voyage ? "Other voyages in these waters" : `Other routes in ${countryName}`}</p><p className="ledger-display text-[1.5rem] mt-1">{voyage ? "Compare the sailings" : "Compare the routes"}</p></div>
+            {countryHref && <Link href={countryHref} className="text-[14px] underline underline-offset-4 hover:ledger-crimson">Everything in {countryName}: stays, months and routes</Link>}
+          </div>
+          <ul className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{siblings.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
+        </div>
+      )}
       <p className="ledger-eyebrow">{T.reltitle}</p>
       <ul className="mt-4 grid gap-4 md:grid-cols-3">
         {T.related.map(([code, name, line]) => {
@@ -452,7 +476,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const Enquire = (
-    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32">
+    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-40">
       <p className="ledger-eyebrow !text-paper/70">{voyage ? "Wild & Co Voyages" : "Plan this journey"}</p>
       <p className="ledger-display text-2xl md:text-3xl mt-2 max-w-2xl">{T.ctaline}</p>
       <div className="mt-6 flex flex-wrap gap-4 items-center">
@@ -487,16 +511,24 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     ? [Vessel, Overview, FirstTime, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
     : [Overview, FirstTime, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
+  // The founder's mark on the hero (James, 30 Oct 2026): the luggage tag is retired everywhere. Voyages
+  // carry the nautical ship's-log stamp in the Voyages light ink; routes keep their own stamp. Both are
+  // ink only, transparent on the photograph, with the turning ring and the founder's note on tap.
+  const src = T.stamp ?? (T.tag ? { tint: undefined, label: undefined, where: T.tag.title, when: T.tag.date.replace(/^[—\s-]+/, ""), sub: undefined, nudge: T.tag.nudge, cta: T.tag.cta, script: T.tag.note } : null);
+  const heroMark = src ? (
+    <Stamp tint={voyage ? "#" + VOLUME_STYLES.voyages.light.split(" ").map((n) => (+n).toString(16).padStart(2, "0")).join("").toUpperCase() : src.tint} label={voyage ? "Ship's log" : src.label} where={src.where} when={src.when} sub={src.sub} nudge={src.nudge} cta={src.cta} script={src.script} line={T.approve.quote} href="#founder" />
+  ) : null;
+
   return (
     <div className={voyage ? "theme-sea theme-sea-page" : undefined}>
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} tag={<>{/* The old voyage/route tag, postmarked in the destination's ink */}{T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
+          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
-            {T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
+            {heroMark}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
               <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>
@@ -516,7 +548,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         </div>
       </main>
       {hostOn && h?.state === "available" && host && <CallingCard who={HOST_KIND[host.kind].who} />}
-      <Script src="/maps/jw-embed.js" strategy="afterInteractive" />
+      <MapBoot />
       <JsonLd data={[...T.jsonld.filter((x) => x["@type"] !== "FAQPage"), ...(film ? [filmSchema(film, `https://www.jameswildco.com${T.seo.path}`)] : [])]} />
     </div>
   );

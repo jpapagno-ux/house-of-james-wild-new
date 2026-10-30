@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Play, RotateCcw } from "lucide-react";
+import { FILM_CREDITS } from "@/lib/content/films";
 
 // The stay film: a poster until the guest presses play (no YouTube load, no
 // cookies, no layout shift), then the privacy-enhanced player. When the film
@@ -27,6 +28,9 @@ export default function StayFilm({ id, title, name, planHref, bare = false }: { 
   const [thumb, setThumb] = useState("maxresdefault");
   const host = useRef<HTMLDivElement>(null);
   const yt = useRef<YTPlayer | null>(null);
+  // A film from someone else's camera carries its credit wherever it plays.
+  const credit = FILM_CREDITS[id];
+  const shown = credit?.title ?? title;
 
   useEffect(() => {
     if (state !== "playing" || yt.current || !host.current) return;
@@ -52,11 +56,11 @@ export default function StayFilm({ id, title, name, planHref, bare = false }: { 
       <div className={`${bare ? "" : "mt-6 "}relative aspect-video bg-ink overflow-hidden border ledger-border`}>
         <div ref={host} className="absolute inset-0 [&>iframe]:w-full [&>iframe]:h-full" />
         {state === "poster" && (
-          <button type="button" onClick={() => setState("playing")} className="group absolute inset-0 w-full h-full text-white" aria-label={`Play the film: ${title}`}>
+          <button type="button" onClick={() => setState("playing")} className="group absolute inset-0 w-full h-full text-white" aria-label={`Play the film: ${shown}`}>
             <Image src={`https://i.ytimg.com/vi/${id}/${thumb}.jpg`} alt="" onError={() => setThumb("hqdefault")} fill sizes="(min-width: 1280px) 1200px, 100vw" className="object-cover" />
             <span className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors" aria-hidden="true" />
             <span className="absolute inset-0 flex items-center justify-center"><span className="w-20 h-20 rounded-full border border-white/80 bg-black/30 backdrop-blur-sm flex items-center justify-center group-hover:scale-105 transition-transform"><Play className="w-7 h-7 ml-1" strokeWidth={1.5} aria-hidden="true" /></span></span>
-            <span className="absolute left-5 bottom-5 text-left"><span className="ledger-eyebrow !text-white/75 block">Watch · James Wild &amp; Co</span><span className="ledger-display italic text-2xl md:text-3xl">{title}</span></span>
+            <span className="absolute left-5 bottom-5 text-left"><span className="ledger-eyebrow !text-white/75 block">Watch · {credit?.series ?? "James Wild & Co"}</span><span className="ledger-display italic text-2xl md:text-3xl">{shown}</span></span>
           </button>
         )}
         {state === "ended" && (
@@ -73,12 +77,14 @@ export default function StayFilm({ id, title, name, planHref, bare = false }: { 
         )}
       </div>
   );
-  if (bare) return player;
+  const caption = credit ? <p className="mt-2 font-mono text-[10.5px] tracking-[0.12em] uppercase ledger-muted">{credit.seriesLine} · {credit.credit}</p> : null;
+  if (bare) return caption ? <>{player}{caption}</> : player;
   return (
-    <section id="film" className="mt-16 md:mt-24 scroll-mt-32" aria-labelledby="film-heading">
+    <section id="film" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="film-heading">
       <p className="ledger-eyebrow ledger-crimson">The film</p>
       <h2 id="film-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">{name}, in Motion</h2>
       {player}
+      {caption}
     </section>
   );
 }

@@ -42,6 +42,11 @@ def volumes_of(s):
     if not vs and s.get("house_volume") in VOLUME_KEYS: vs = [s["house_volume"]]
     return vs or None
 
+def line(s):
+    """One-line plain text for short fields (airport, tagline): tags out, line breaks become ' · '."""
+    s = text(s)
+    return re.sub(r"\s*\n+\s*", " · ", s).strip(" ·") or None
+
 def text(s):
     s = html.unescape(s or "")  # some records hold escaped tags (&lt;span&gt;)
     s = re.sub(r"<figure.*?</figure>", "", s, flags=re.S)
@@ -129,7 +134,7 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "bestMonths": s.get("best_months"), "bestMonthsNote": text(s.get("best_months_description")) or None,
         "bestFor": s.get("best_for") or [],
         "status": s.get("house_status"), "statusDate": s.get("house_status_date"),
-        "coords": coords(s.get("coordinates")), "airport": s.get("airport_name"), "airportDirections": text(s.get("airport_directions")) or None,
+        "coords": coords(s.get("coordinates")), "airport": line(s.get("airport_name")), "airportDirections": text(s.get("airport_directions")) or None,
         "founderNote": text(s.get("founder_note")) or None,
         "rooms": block(s.get("stays_content")), "experiences": block(s.get("adventures_experiences_content")),
         "features": block(s.get("features_content")), "onlyHere": block(s.get("only_here_content"))["paras"],

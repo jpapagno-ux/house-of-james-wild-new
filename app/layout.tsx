@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import "@fontsource/playfair-display/400.css";
-import "@fontsource/playfair-display/400-italic.css";
-import "@fontsource/playfair-display/500.css";
-import "@fontsource/eb-garamond/400.css";
-import "@fontsource/eb-garamond/400-italic.css";
-import "@fontsource/eb-garamond/500.css";
-import "@fontsource/eb-garamond/600.css";
+// House type (James, 29 Oct 2026, option C): Cormorant Garamond for titles, Manrope for text.
+import "@fontsource/cormorant-garamond/400.css";
+import "@fontsource/cormorant-garamond/400-italic.css";
+import "@fontsource/cormorant-garamond/500.css";
+import "@fontsource/cormorant-garamond/500-italic.css";
+import "@fontsource/cormorant-garamond/600.css";
+import "@fontsource/manrope/400.css";
+import "@fontsource/manrope/500.css";
+import "@fontsource/manrope/600.css";
 import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/500.css";
 import "@fontsource/mrs-saint-delafield/400.css";

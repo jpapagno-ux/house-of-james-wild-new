@@ -1,0 +1,819 @@
+{
+ "title": "The Sand River by Road · overland",
+ "H": 10400,
+ "crumbs": [
+  "Home",
+  "Overland",
+  "South Africa",
+  "The Sand River by Road"
+ ],
+ "side": [
+  [
+   "S",
+   "Johannesburg",
+   "Day 1",
+   "By road to the Sabi Sand"
+  ],
+  [
+   "1",
+   "Londolozi",
+   "Days 1–3",
+   "By air to Cape Town"
+  ],
+  [
+   "2",
+   "Cape Town",
+   "Days 4–6",
+   "By road to Franschhoek, about 80 km, about 45 minutes"
+  ],
+  [
+   "3",
+   "Franschhoek",
+   "Days 7–8",
+   "By road to Cape Town International, about 70 km"
+  ],
+  [
+   "E",
+   "Cape Town (CPT)",
+   "Day 9",
+   "Flights home"
+  ]
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-202031</span>",
+ "h1": "The Sand River by Road",
+ "h1note": "H1 · title tag: 9-Day South Africa Itinerary: Londolozi, Cape Town and Franschhoek",
+ "sub": "9 Days · 8 Nights · South Africa, the Sabi Sand to the Cape Winelands",
+ "meta": [
+  [
+   "Journey code",
+   "ITN-LAND-2026-202031"
+  ],
+  [
+   "Country",
+   "South Africa"
+  ],
+  [
+   "Duration",
+   "9 days / 8 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · by road, by air, by road"
+  ],
+  [
+   "In · Out",
+   "Johannesburg (JNB) · Cape Town (CPT)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to camp availability"
+  ],
+  [
+   "Climate",
+   "Winter May–Aug dry, 3–20°C · summer Sep–Apr, afternoon storms, 18–36°C"
+  ],
+  [
+   "Malaria",
+   "Londolozi: low risk, precautions advised"
+  ],
+  [
+   "Vetted by",
+   "James Wild · Londolozi 2018 · the Cape 2026"
+  ]
+ ],
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "quote": "\"Three nights on the Sand River first. The Cape keeps; the leopards don't wait. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "answer": "The Sand River by Road is a 9-day South Africa itinerary from James Wild & Co.: three nights at Londolozi in the western Sabi Sand (Varty Camp or Tree Camp), three at Ellerman House in Cape Town and two at Leeu Estates in Franschhoek. You go by road from Johannesburg to Londolozi, by air to Cape Town, by road to the Winelands and back to Cape Town for your flights.",
+ "striptitle": "Nine days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#6B4A33"
+  ],
+  [
+   "D2",
+   "#6B4A33"
+  ],
+  [
+   "D3",
+   "#6B4A33"
+  ],
+  [
+   "D4",
+   "#7C9488"
+  ],
+  [
+   "D5",
+   "#7C9488"
+  ],
+  [
+   "D6",
+   "#7C9488"
+  ],
+  [
+   "D7",
+   "#4F6B3A"
+  ],
+  [
+   "D8",
+   "#4F6B3A"
+  ],
+  [
+   "D9",
+   "#1F1D1B"
+  ]
+ ],
+ "stripcols": "",
+ "strip_labels": [
+  "Londolozi · Sabi Sand",
+  "Cape Town · Atlantic",
+  "Franschhoek · Winelands",
+  "Home"
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Vetted Route",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Johannesburg to the Sand River",
+   "line": "By road to Londolozi · time on request",
+   "body": "By road from Johannesburg (OR Tambo): the N12 and N4 east to Nelspruit, the R40 through White River to Hazyview, then the R536 towards Paul Kruger Gate. About 37 km along it, a gravel road turns off to the Sabi Sand's Shaws Gate, where the reserve charges an entry fee per person and per vehicle. From the gate it is about 17 km to camp, following Londolozi's signs.",
+   "stay": "Londolozi Varty Camp or Tree Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "By road · time on request",
+   "acts": "Arrival · first evening on the Sand River",
+   "img": "PHOTO · VARTY CAMP MAIN POOL",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Londolozi",
+   "stageMeta": "DAYS 1–3 · 3 NIGHTS · SABI SAND",
+   "mark": "Founder stayed · 2018"
+  },
+  {
+   "n": "DAY 02",
+   "title": "Leopards on the Sand River",
+   "line": "The western Sabi Sand, unfenced to Kruger",
+   "body": "Londolozi sits on the Sand River in the western Sabi Sand, unfenced to Kruger National Park. Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights.",
+   "stay": "Londolozi Varty Camp or Tree Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Game drive [times to confirm with the lodge]",
+   "acts": "Game drives",
+   "img": "PHOTO · LEOPARD CUBS IN A TREE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "The Varty family's reserve",
+   "line": "The third day, the one that counts",
+   "body": "Londolozi is owned by the Varty family, whose story there begins in 1926. In 1993 it became the first safari camp in Africa to join Relais & Châteaux. At Varty Camp, the Healing House and the Photographic Studio are there for the hours between drives.",
+   "stay": "Londolozi Varty Camp or Tree Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Game drive [times to confirm with the lodge]",
+   "acts": "Game drives · Healing House or Photographic Studio",
+   "img": "PHOTO · TREE CAMP DECK",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "Londolozi to Cape Town",
+   "line": "By air to the Cape",
+   "body": "Londolozi has its own airstrip, used by charter flights. You fly to Cape Town [charter or scheduled connection to confirm]. Ellerman House is about 26 km, around 30 minutes, from Cape Town International (CPT), with complimentary airport transfers.",
+   "stay": "Ellerman House",
+   "meals": "[Confirm with the hotel]",
+   "move": "By air, then by road",
+   "acts": "Transfer day · sundowners at BAR ROC",
+   "img": "PHOTO · ELLERMAN HOUSE FROM THE AIR",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Cape Town",
+   "stageMeta": "DAYS 4–6 · 3 NIGHTS · BANTRY BAY",
+   "mark": "Founder stayed · 2026"
+  },
+  {
+   "n": "DAY 05",
+   "title": "Art and the wine archive",
+   "line": "Ellerman House, Bantry Bay",
+   "body": "An art tour of the house's South African collection, and a look into a wine archive of more than 9,000 labels.",
+   "stay": "Ellerman House",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot",
+   "acts": "Art tour · wine cellar",
+   "img": "PHOTO · ELLERMAN WINE GALLERY",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 06",
+   "title": "Cape Town at your pace",
+   "line": "The gardens, the spa or the city",
+   "body": "The indigenous gardens and the spa at the house, or Cape Town with the concierge's help. Sundowners at BAR ROC to finish.",
+   "stay": "Ellerman House",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot or by car",
+   "acts": "Gardens · spa · Cape Town",
+   "img": "PHOTO · ELLERMAN HOUSE TERRACES",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 07",
+   "title": "Cape Town to Franschhoek",
+   "line": "By road into the Winelands · about 80 km, about 45 minutes",
+   "body": "By road from Cape Town to the Franschhoek Valley, about 80 km, about 45 minutes, to Leeu Estates among the vineyards below the mountains.",
+   "stay": "Leeu Estates",
+   "meals": "[Confirm with the hotel]",
+   "move": "By road · about 80 km, about 45 minutes",
+   "acts": "Transfer day · first tasting",
+   "img": "PHOTO · LEEU ESTATES MANOR HOUSE",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 03",
+   "stageName": "Franschhoek",
+   "stageMeta": "DAYS 7–8 · 2 NIGHTS · CAPE WINELANDS",
+   "mark": "Founder inspected & approved · 2026"
+  },
+  {
+   "n": "DAY 08",
+   "title": "The wine studio and the vines",
+   "line": "Leeu Estates, Franschhoek",
+   "body": "A tasting at the Mullineux & Leeu wine studio, the spa among the vines, and the contemporary art gallery on the estate.",
+   "stay": "Leeu Estates",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot",
+   "acts": "Wine studio · spa · gallery",
+   "img": "PHOTO · LEEU WINE STUDIO",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 09",
+   "title": "Home through Cape Town",
+   "line": "By road to CPT · about 70 km",
+   "body": "By road from Leeu Estates to Cape Town International for the flight home: about 70 km to Cape Town International (CPT), around 60 to 75 minutes depending on traffic.",
+   "stay": "—",
+   "meals": "[Confirm with the hotel]",
+   "move": "By road · around 60–75 min",
+   "acts": "Departure",
+   "img": "PHOTO · LEEU SPA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "incl": [
+  "Eight nights as listed: three at Londolozi (Varty Camp or Tree Camp), three at Ellerman House, two at Leeu Estates [room categories on file]",
+  "Road transfer, Johannesburg to Londolozi [to confirm]",
+  "Flight from Londolozi to Cape Town [charter or scheduled, to confirm]",
+  "Complimentary airport transfers at Ellerman House",
+  "Road transfers Cape Town to Franschhoek and Franschhoek to Cape Town International",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to Johannesburg and home from Cape Town",
+  "Travel insurance",
+  "Sabi Sand gate entry fee, charged per person and per vehicle [confirm whether included]",
+  "Meals not marked as included [confirm per lodge]",
+  "Gratuities for rangers, trackers and drivers",
+  "Malaria precautions: ask your doctor"
+ ],
+ "founder": {
+  "eyebrow": "Vetted & designed by the founder",
+  "title": "Londolozi in 2018. The Cape in 2026.",
+  "p1": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House and visited and vetted every Leeu Estates property in Franschhoek.",
+  "p2": "This is the route he suggests for South Africa: three nights on the Sand River, the house standard in a safari region, then Cape Town and the Winelands, with every stay already in the Ledger.",
+  "film": "Founder's film · The Sand River by Road [VIDEO TO RECORD]"
+ },
+ "faqs": [
+  [
+   "How long is The Sand River by Road?",
+   "Nine days and eight nights: three at Londolozi in the Sabi Sand, three at Ellerman House in Cape Town and two at Leeu Estates in Franschhoek."
+  ],
+  [
+   "Where is Londolozi?",
+   "On the Sand River in the western Sabi Sand, unfenced to Kruger National Park. Londolozi has its own airstrip for charter flights."
+  ],
+  [
+   "How do you get from Johannesburg to Londolozi by road?",
+   "East on the N12 and N4 to Nelspruit, the R40 through White River to Hazyview, then the R536 towards Paul Kruger Gate and the gravel road to the Sabi Sand's Shaws Gate. From the gate it is about 17 km to camp. We give the driving time when we plan your dates."
+  ],
+  [
+   "Will I see leopards at Londolozi?",
+   "Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights. Wildlife keeps its own schedule, so it's a likelihood, not a promise."
+  ],
+  [
+   "Varty Camp or Tree Camp?",
+   "Varty Camp is the original camp: ten chalets, the Healing House, a gym and the Photographic Studio, and children aged six and over are welcome. Tree Camp has six suites in the leadwood canopy and takes no children under 16 unless booked whole."
+  ],
+  [
+   "When should I go?",
+   "Winter, May to August, is dry and mild (3–20°C). Summer, September to April, is hot, with afternoon storms (18–36°C)."
+  ],
+  [
+   "Is Londolozi a malaria area?",
+   "It is a low-risk malaria area. Precautions are still advised; ask your doctor before you travel."
+  ],
+  [
+   "How far is Franschhoek from Cape Town?",
+   "By road, about 80 km, about 45 minutes. From Leeu Estates it is about 70 km to Cape Town International (CPT), around 60 to 75 minutes depending on traffic."
+  ],
+  [
+   "How much does The Sand River by Road cost?",
+   "It is quoted against your dates and travellers, with any current offer applied. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More South Africa routes",
+ "related": [
+  [
+   "ITN-LAND-2026-101250 · 5 DAYS",
+   "Leopards Through the Lens",
+   "Four nights at Varty Camp with your own vehicle, ranger and tracker."
+  ],
+  [
+   "ITN-LAND-2026-431095 · 5 DAYS",
+   "Track Your Life with Boyd Varty",
+   "Boyd Varty's tracking and coaching retreat at Pioneer Camp."
+  ],
+  [
+   "ITN-LAND-2026-982652 · 8 DAYS",
+   "Three Generations at Pioneer",
+   "Pioneer Camp as a private homestead for up to twelve, then Cape Town."
+  ]
+ ],
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "slides": [
+  {
+   "kicker": "The Sand River by Road · South Africa",
+   "title": "The Sand River by Road",
+   "line": "Three nights on the Sand River, three above the Atlantic, two among the Franschhoek vines.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#3B2F25 0%,#6B4A33 50%,#B08A3E 100%)"
+  }
+ ],
+ "feat_title": "Stays and experiences on this journey",
+ "features": [],
+ "approve": {
+  "title": "The bush first, the Cape second",
+  "seal_bottom": "SABI SAND · LONDOLOZI 2018",
+  "seal_mark": "THE CAPE 2026",
+  "why": [
+   "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+   "He stayed at Ellerman House in May 2026, and visited and vetted every Leeu Estates property in Franschhoek the same month.",
+   "Three nights at Londolozi, the house standard in a safari region, before the Cape."
+  ],
+  "quote": "Give the Sand River three nights before you give it an opinion. [Draft — J.W. to approve]"
+ },
+ "map_eyebrow": "The route, drawn",
+ "map_title": "The Sabi Sand to the Cape Winelands",
+ "map_coord": "24°48′S 31°30′E · ITN-LAND-2026-202031",
+ "navon": "Overland",
+ "herofacts": [
+  [
+   "Duration",
+   "9 days · 8 nights"
+  ],
+  [
+   "Route",
+   "Johannesburg → Londolozi → Cape Town → Franschhoek"
+  ],
+  [
+   "Travel",
+   "Road, air, road"
+  ],
+  [
+   "Leopards",
+   "75–100 sightings a month"
+  ]
+ ],
+ "overview_title": "Leopards first, then the Cape",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "suits": [
+  [
+   "Couples",
+   "A leopard on the Sand River, then a table above the Atlantic.",
+   "Three nights in the bush, three in Cape Town, two among the vines."
+  ],
+  [
+   "First-time safari travellers",
+   "One reserve, three nights, done properly.",
+   "Londolozi reports 75–100 leopard sightings a month."
+  ],
+  [
+   "Food and wine lovers",
+   "A 9,000-label wine archive, then Franschhoek.",
+   "Ellerman House first, then the Mullineux & Leeu wine studio at Leeu Estates."
+  ],
+  [
+   "Families with children six and over",
+   "Varty Camp welcomes them.",
+   "Tree Camp doesn't take children under 16 unless booked whole, so take Varty."
+  ]
+ ],
+ "twice": [
+  [
+   "Short on time",
+   "The road in from Johannesburg is long.",
+   "Ask about a charter to Londolozi's own airstrip instead [to confirm]."
+  ],
+  [
+   "Travelling with children under 16",
+   "Tree Camp takes no children under 16 unless booked whole.",
+   "Varty Camp welcomes children aged six and over."
+  ]
+ ],
+ "exp_title": "What you will do, stop by stop",
+ "lodges_title": "Three stays, bush to vines",
+ "lodges": [
+  {
+   "name": "Londolozi Varty Camp",
+   "line": "Sabi Sand · Days 1–3",
+   "chips": [
+    "3 nights",
+    "Children 6+",
+    "Relais & Châteaux"
+   ],
+   "photos": [
+    "Varty Camp main pool",
+    "Photographic Studio",
+    "Healing House"
+   ],
+   "body": "The original camp at Londolozi: ten chalets, with the Healing House, a gym and the Photographic Studio. Children aged six and over are welcome.",
+   "rows": [
+    [
+     "Location",
+     "Londolozi, western Sabi Sand · unfenced to Kruger"
+    ],
+    [
+     "Nights",
+     "3 nights · Days 1–3"
+    ],
+    [
+     "Room",
+     "[Chalet category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the lodge]"
+    ],
+    [
+     "Getting there",
+     "By road from Johannesburg (time on request), or by charter to Londolozi's own airstrip"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/safaris/londolozi-reserve/varty-camp\">Varty Camp</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-varty-camp/\">Varty Camp on Wild & Co Safaris</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Londolozi Tree Camp",
+   "line": "Sabi Sand · the other choice for Days 1–3",
+   "chips": [
+    "3 nights",
+    "6 suites",
+    "16+ unless booked whole"
+   ],
+   "photos": [
+    "Tree Camp deck",
+    "Leopard cubs in a tree",
+    "Varty Camp main pool"
+   ],
+   "body": "Six suites in the leadwood canopy. No children under 16 unless the camp is booked whole.",
+   "rows": [
+    [
+     "Location",
+     "Londolozi, western Sabi Sand"
+    ],
+    [
+     "Nights",
+     "3 · Days 1–3, in place of Varty Camp"
+    ],
+    [
+     "Room",
+     "[Suite on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the lodge]"
+    ],
+    [
+     "Getting there",
+     "By road from Johannesburg (time on request), or by charter to Londolozi's own airstrip"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/safaris/londolozi-reserve/tree-camp\">Tree Camp</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-tree-camp/\">Tree Camp on Wild & Co Safaris</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Ellerman House",
+   "line": "Cape Town · Days 4–6",
+   "chips": [
+    "3 nights",
+    "Bantry Bay"
+   ],
+   "photos": [
+    "Ellerman House from the air",
+    "Ellerman House terraces",
+    "Ellerman wine gallery"
+   ],
+   "body": "A house on the slopes of Bantry Bay, Cape Town, looking over the Atlantic, with a significant South African art collection, a wine archive of more than 9,000 labels, a spa and BAR ROC for sundowners.",
+   "rows": [
+    [
+     "Location",
+     "180 Kloof Road, Bantry Bay, Cape Town"
+    ],
+    [
+     "Nights",
+     "3 nights"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "About 26 km, around 30 minutes, from Cape Town International (CPT), with complimentary airport transfers"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Leeu Estates",
+   "line": "Franschhoek · Cape Winelands · Days 7–8",
+   "chips": [
+    "2 nights",
+    "Vineyard estate"
+   ],
+   "photos": [
+    "Leeu Estates Manor House",
+    "Leeu wine studio",
+    "Leeu spa"
+   ],
+   "body": "A vineyard estate in the Franschhoek Valley below the mountains, with the Mullineux & Leeu wine studio, a spa among the vines and a contemporary art gallery.",
+   "rows": [
+    [
+     "Location",
+     "Dassenberg Road, Franschhoek Valley"
+    ],
+    [
+     "Nights",
+     "2 · Days 7–8"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "By road from Cape Town, about 80 km, about 45 minutes"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/leeu-estates\">Leeu Estates</a>"
+    ]
+   ]
+  }
+ ],
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": []
+ },
+ "kind": "overland",
+ "experiences": [
+  {
+   "kicker": "Londolozi · Days 1–3",
+   "title": "Leopards on the Sand River",
+   "info": "Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Varty Camp · between drives",
+   "title": "The Healing House",
+   "info": "Varty Camp's Healing House, for the hours between game drives [treatments and terms to confirm].",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Varty Camp · between drives",
+   "title": "The Photographic Studio",
+   "info": "Londolozi's Photographic Studio at Varty Camp, for help with your pictures from the morning drive [programme to confirm].",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Ellerman House · Days 4–6",
+   "title": "Art and the wine archive",
+   "info": "A tour of the house's South African art collection and its wine archive of more than 9,000 labels.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Ellerman House · evenings",
+   "title": "BAR ROC sundowners",
+   "info": "Champagne and cocktails at BAR ROC, the house bar, for sundowners.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Leeu Estates · Days 7–8",
+   "title": "The Mullineux & Leeu wine studio",
+   "info": "A private tasting at the estate's wine studio in the Franschhoek Valley.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  }
+ ],
+ "seo": {
+  "path": "/overland/south-africa/the-sand-river-by-road",
+  "title": "9-Day South Africa Itinerary: Londolozi, Cape Town and Franschhoek",
+  "description": "Nine days in South Africa: three nights at Londolozi on the Sand River, three at Ellerman House in Cape Town and two at Leeu Estates in Franschhoek. Designed by James Wild.",
+  "keywords": [
+   "Londolozi itinerary",
+   "South Africa safari and Cape Town itinerary",
+   "Sabi Sand and Winelands",
+   "Londolozi Varty Camp",
+   "Ellerman House and Leeu Estates"
+  ]
+ },
+ "copy_approved": false,
+ "prices_final": false,
+ "booking_live": false,
+ "id": "the-sand-river-by-road",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/south-africa/the-sand-river-by-road#trip",
+   "name": "The Sand River by Road",
+   "url": "https://www.jameswildco.com/overland/south-africa/the-sand-river-by-road",
+   "description": "The Sand River by Road is a 9-day South Africa itinerary from James Wild & Co.: three nights at Londolozi in the western Sabi Sand (Varty Camp or Tree Camp), three at Ellerman House in Cape Town and two at Leeu Estates in Franschhoek. You go by road from Johannesburg to Londolozi, by air to Cape Town, by road to the Winelands and back to Cape Town for your flights.",
+   "touristType": [
+    "Couples"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 5,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Johannesburg",
+       "description": "Day 1 · by road to the Sabi Sand"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Londolozi, Sabi Sand",
+       "description": "Days 1–3 · Varty Camp or Tree Camp",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -24.7965,
+        "longitude": 31.4999
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town",
+       "description": "Days 4–6 · Ellerman House",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9291,
+        "longitude": 18.3779
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Franschhoek",
+       "description": "Days 7–8 · Leeu Estates",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9156,
+        "longitude": 19.1127
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town International (CPT)",
+       "description": "Day 9 · flights home"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "bestFor": {
+  "who": "Couples",
+  "why": "Three nights on the Sand River, then Ellerman House and the Franschhoek vines."
+ },
+ "proof": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House and visited and vetted every Leeu Estates property in Franschhoek.",
+ "offerRefs": [
+  "ellerman-house",
+  "leeu-estates"
+ ],
+ "photoCredit": "Photographs of Londolozi courtesy of Londolozi."
+}

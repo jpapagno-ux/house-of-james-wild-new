@@ -10,10 +10,10 @@ import { graph, touristTrip } from "@/lib/schema";
 // /overland: Volume 05 hub shell. Routes James designed, by country.
 const PATH = "/overland";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Botswana and More", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
+export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Botswana, South Africa", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 export default function OverlandHub() {
-  const groups = [{ name: "Costa Rica", list: journeysFor("costa-rica") }, { name: "Botswana", list: journeysFor("botswana") }];
+  const groups = [{ name: "Costa Rica", list: journeysFor("costa-rica") }, { name: "Botswana", list: journeysFor("botswana") }, { name: "South Africa", list: journeysFor("south-africa") }];
   const all = groups.flatMap((g) => g.list);
   return (
     <>

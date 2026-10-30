@@ -1,0 +1,596 @@
+{
+ "title": "Track Your Life with Boyd Varty · overland",
+ "H": 10400,
+ "crumbs": [
+  "Home",
+  "Overland",
+  "South Africa",
+  "Track Your Life with Boyd Varty"
+ ],
+ "side": [
+  [
+   "S",
+   "Johannesburg",
+   "Day 1",
+   "By road to the Sabi Sand"
+  ],
+  [
+   "1",
+   "Londolozi Pioneer Camp",
+   "Days 1–4",
+   "The retreat"
+  ],
+  [
+   "E",
+   "Johannesburg",
+   "Day 5",
+   "By road, or by air to Cape Town for Ellerman House"
+  ]
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-431095</span>",
+ "h1": "Track Your Life with Boyd Varty",
+ "h1note": "H1 · title tag: Boyd Varty Retreat at Londolozi: Track Your Life",
+ "sub": "5 Days · 4 Nights · South Africa, a men's tracking and coaching retreat at Londolozi",
+ "meta": [
+  [
+   "Journey code",
+   "ITN-LAND-2026-431095"
+  ],
+  [
+   "Country",
+   "South Africa"
+  ],
+  [
+   "Duration",
+   "5 days / 4 nights (7 days with Ellerman House)"
+  ],
+  [
+   "Journey type",
+   "Retreat · by road or charter"
+  ],
+  [
+   "Who",
+   "Men only · six at most"
+  ],
+  [
+   "In · Out",
+   "Johannesburg (JNB)"
+  ],
+  [
+   "Dates",
+   "Four retreats a year, April to July [2027 dates to confirm]"
+  ],
+  [
+   "Included",
+   "Coaching, tracking, two safaris a day, meals"
+  ],
+  [
+   "Vetted by",
+   "James Wild · Londolozi 2018"
+  ]
+ ],
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "quote": "\"I'd send any man I know. Five days, six men, and the oldest teacher there is: the track. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "answer": "Track Your Life with Boyd Varty is Boyd Varty's five-day tracking and coaching retreat at Londolozi Pioneer Camp, filed by James Wild & Co.: four nights for men only, six at most, held four times a year between April and July. Coaching, tracking, two safaris a day and meals are included; wellness treatments, flights and charters are extra. Healing House treatments and two nights at Ellerman House can be added.",
+ "striptitle": "Five days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#6B4A33"
+  ],
+  [
+   "D2",
+   "#6B4A33"
+  ],
+  [
+   "D3",
+   "#6B4A33"
+  ],
+  [
+   "D4",
+   "#6B4A33"
+  ],
+  [
+   "D5",
+   "#1F1D1B"
+  ]
+ ],
+ "stripcols": "",
+ "strip_labels": [
+  "Londolozi · Pioneer Camp",
+  "Home or the Cape"
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Vetted Route",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Johannesburg to Pioneer Camp",
+   "line": "By road to Londolozi · time on request",
+   "body": "By road from Johannesburg (OR Tambo): the N12 and N4 east to Nelspruit, the R40 through White River to Hazyview, then the R536 towards Paul Kruger Gate. About 37 km along it, a gravel road turns off to the Sabi Sand's Shaws Gate, where the reserve charges an entry fee per person and per vehicle. From the gate it is about 17 km to camp, following Londolozi's signs.",
+   "stay": "Londolozi Pioneer Camp",
+   "meals": "Included in the retreat",
+   "move": "By road · time on request",
+   "acts": "Arrival · the retreat begins",
+   "img": "PHOTO · PIONEER CAMP SUITE",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Londolozi",
+   "stageMeta": "DAYS 1–4 · 4 NIGHTS · PIONEER CAMP",
+   "mark": "Founder stayed · 2018"
+  },
+  {
+   "n": "DAY 02",
+   "title": "Tracking",
+   "line": "The retreat's first full day",
+   "body": "Boyd Varty's retreat combines coaching and tracking with two safaris a day [the day's programme is Boyd's; to confirm].",
+   "stay": "Londolozi Pioneer Camp",
+   "meals": "Included in the retreat",
+   "move": "On foot and by safari vehicle",
+   "acts": "Coaching · tracking · two safaris",
+   "img": "PHOTO · THE RETREAT",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "Coaching",
+   "line": "Six men at most",
+   "body": "Another day of coaching, tracking and two safaris, with six men at most on the retreat [programme to confirm]. Healing House treatments can be added, at extra cost.",
+   "stay": "Londolozi Pioneer Camp",
+   "meals": "Included in the retreat",
+   "move": "On foot and by safari vehicle",
+   "acts": "Coaching · tracking · two safaris",
+   "img": "PHOTO · HEALING HOUSE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "On the Sand River",
+   "line": "Unfenced to Kruger",
+   "body": "Londolozi sits on the Sand River in the western Sabi Sand, unfenced to Kruger National Park. The last full day of the retreat: coaching, tracking and two safaris [programme to confirm].",
+   "stay": "Londolozi Pioneer Camp",
+   "meals": "Included in the retreat",
+   "move": "On foot and by safari vehicle",
+   "acts": "Coaching · tracking · two safaris",
+   "img": "PHOTO · PIONEER CAMP POOL",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "Home, or on to the Cape",
+   "line": "By road to Johannesburg, or by air to Cape Town",
+   "body": "By road back to Johannesburg (time on request), or fly to Cape Town for two nights at Ellerman House. Flights and charters are extra to the retreat. Londolozi has its own airstrip, used by charter flights.",
+   "stay": "— (or Ellerman House, optional)",
+   "meals": "Included in the retreat",
+   "move": "By road, or by air",
+   "acts": "Departure",
+   "img": "PHOTO · ELLERMAN HOUSE FROM THE AIR",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "incl": [
+  "Boyd Varty's five-day tracking and coaching retreat: coaching, tracking, two safaris a day and meals",
+  "Four nights at Londolozi Pioneer Camp",
+  "Road transfer, Johannesburg to Londolozi and back [to confirm]",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "Wellness treatments, including at the Healing House",
+  "Flights and charters",
+  "International flights to Johannesburg",
+  "Two nights at Ellerman House, unless added",
+  "Sabi Sand gate entry fee, charged per person and per vehicle [confirm whether included]",
+  "Travel insurance",
+  "Gratuities",
+  "Malaria precautions: ask your doctor"
+ ],
+ "founder": {
+  "eyebrow": "Vetted & filed by the founder",
+  "title": "Londolozi, 2018",
+  "p1": "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+  "p2": "He filed Boyd Varty's retreat for the men who ask him for something other than a holiday: five days at Pioneer Camp, six men at most, held four times a year between April and July.",
+  "film": "Founder's film · Track Your Life with Boyd Varty [VIDEO TO RECORD]"
+ },
+ "faqs": [
+  [
+   "What is Track Your Life with Boyd Varty?",
+   "Boyd Varty's five-day tracking and coaching retreat at Londolozi Pioneer Camp: four nights, for men only, six at most."
+  ],
+  [
+   "When are the retreats?",
+   "Four a year, between April and July. We confirm the dates for the year you want to go."
+  ],
+  [
+   "What is included?",
+   "Coaching, tracking, two safaris a day and meals. Wellness treatments, flights and charters are extra."
+  ],
+  [
+   "Can I add Healing House treatments?",
+   "Yes, at extra cost. The Healing House is at Londolozi's Varty Camp."
+  ],
+  [
+   "Can I add Cape Town after the retreat?",
+   "Yes. Two nights at Ellerman House in Cape Town can follow, by air from Londolozi."
+  ],
+  [
+   "Is Londolozi a malaria area?",
+   "It is a low-risk malaria area. Precautions are still advised; ask your doctor before you travel."
+  ],
+  [
+   "How much does the retreat cost?",
+   "It is quoted against your dates, with any current offer applied. James Wild & Co does not publish a fixed price for it."
+  ]
+ ],
+ "reltitle": "More South Africa routes",
+ "related": [
+  [
+   "ITN-LAND-2026-202031 · 9 DAYS",
+   "The Sand River by Road",
+   "Londolozi, Ellerman House and Leeu Estates: the house's South Africa route."
+  ],
+  [
+   "ITN-LAND-2026-101250 · 5 DAYS",
+   "Leopards Through the Lens",
+   "Four nights at Varty Camp with your own vehicle, ranger and tracker."
+  ],
+  [
+   "ITN-LAND-2026-982652 · 8 DAYS",
+   "Three Generations at Pioneer",
+   "Pioneer Camp as a private homestead for up to twelve, then Cape Town."
+  ]
+ ],
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "slides": [
+  {
+   "kicker": "Track Your Life with Boyd Varty · South Africa",
+   "title": "Track Your Life with Boyd Varty",
+   "line": "Boyd Varty's five-day tracking and coaching retreat at Pioneer Camp: six men at most.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#3B2F25 0%,#6B4A33 50%,#B08A3E 100%)"
+  }
+ ],
+ "feat_title": "Stays and experiences on this journey",
+ "features": [],
+ "approve": {
+  "title": "Five days, six men, one track",
+  "seal_bottom": "SABI SAND · LONDOLOZI 2018",
+  "seal_mark": "PIONEER CAMP",
+  "why": [
+   "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+   "Boyd Varty's retreat: coaching, tracking, two safaris a day and meals, for six men at most.",
+   "Four a year, April to July, at Pioneer Camp."
+  ],
+  "quote": "Some men need a holiday. Some need the track. This is for the second kind. [Draft — J.W. to approve]"
+ },
+ "map_eyebrow": "The route, drawn",
+ "map_title": "Johannesburg to Pioneer Camp",
+ "map_coord": "24°48′S 31°30′E · ITN-LAND-2026-431095",
+ "navon": "Overland",
+ "herofacts": [
+  [
+   "Duration",
+   "5 days · 4 nights"
+  ],
+  [
+   "Camp",
+   "Pioneer Camp, Londolozi"
+  ],
+  [
+   "Group",
+   "Men only, six at most"
+  ],
+  [
+   "When",
+   "Four a year, April–July"
+  ]
+ ],
+ "overview_title": "A tracking and coaching retreat, five days",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "suits": [
+  [
+   "Men who lead",
+   "Five days of coaching and tracking with Boyd Varty.",
+   "Six men at most, so the conversation stays close."
+  ],
+  [
+   "Men between chapters",
+   "Time on the land, with a tracker and a coach.",
+   "Two safaris a day around the work."
+  ],
+  [
+   "Friends who travel together",
+   "Book the retreat as a group.",
+   "Up to six men on each retreat."
+  ]
+ ],
+ "twice": [
+  [
+   "Travelling as a couple or a family",
+   "The retreat is for men only.",
+   "Take The Sand River by Road or Three Generations at Pioneer instead."
+  ],
+  [
+   "Only free outside April to July",
+   "The retreat runs four times a year, April to July.",
+   "Ask James for the next dates."
+  ]
+ ],
+ "exp_title": "The retreat",
+ "lodges_title": "Where the retreat lives",
+ "lodges": [
+  {
+   "name": "Londolozi Pioneer Camp",
+   "line": "Sabi Sand · Days 1–4",
+   "chips": [
+    "4 nights",
+    "3 suites",
+    "Men only, six at most"
+   ],
+   "photos": [
+    "Pioneer Camp suite",
+    "Pioneer Camp pool",
+    "The retreat"
+   ],
+   "body": "Three suites of 138 m² with an interactive kitchen and a lap pool, home to the retreat for its four nights. Six men at most.",
+   "rows": [
+    [
+     "Location",
+     "Londolozi, western Sabi Sand"
+    ],
+    [
+     "Nights",
+     "4 · Days 1–4, the retreat"
+    ],
+    [
+     "Suites",
+     "3 suites of 138 m² · interactive kitchen · lap pool"
+    ],
+    [
+     "Meals",
+     "[Confirm with the lodge]"
+    ],
+    [
+     "Getting there",
+     "By road from Johannesburg (time on request), or by charter to Londolozi's own airstrip"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/safaris/londolozi-reserve/pioneer-camp\">Pioneer Camp</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-pioneer-camp/\">Pioneer Camp on Wild & Co Safaris</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Ellerman House",
+   "line": "Cape Town · optional, Days 5–7",
+   "chips": [
+    "2 nights, optional",
+    "Bantry Bay",
+    "Optional"
+   ],
+   "photos": [
+    "Ellerman House from the air",
+    "Ellerman House terraces",
+    "Ellerman wine gallery"
+   ],
+   "body": "A house on the slopes of Bantry Bay, Cape Town, looking over the Atlantic, with a significant South African art collection, a wine archive of more than 9,000 labels, a spa and BAR ROC for sundowners.",
+   "rows": [
+    [
+     "Location",
+     "180 Kloof Road, Bantry Bay, Cape Town"
+    ],
+    [
+     "Nights",
+     "2 nights, optional"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "About 26 km, around 30 minutes, from Cape Town International (CPT), with complimentary airport transfers"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ]
+   ]
+  }
+ ],
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": [
+   {
+    "label": "Healing House treatments",
+    "sub": "Wellness treatments are extra to the retreat · quoted against your dates",
+    "pp": 0
+   },
+   {
+    "label": "Two nights at Ellerman House after",
+    "sub": "By air to Cape Town on day 5 · quoted against your dates",
+    "pp": 0
+   }
+  ]
+ },
+ "kind": "overland",
+ "experiences": [
+  {
+   "kicker": "Pioneer Camp · Days 1–5",
+   "title": "Boyd Varty's tracking and coaching retreat",
+   "info": "Five days of coaching and tracking with Boyd Varty, for men only and six at most, held four times a year between April and July.",
+   "dur": "Five days",
+   "incl": "Included",
+   "season": "April to July"
+  },
+  {
+   "kicker": "Every day of the retreat",
+   "title": "Two safaris a day",
+   "info": "The retreat includes two safaris a day, alongside the coaching and the tracking.",
+   "dur": "",
+   "incl": "Included",
+   "season": "April to July"
+  },
+  {
+   "kicker": "Optional",
+   "title": "Healing House treatments",
+   "info": "Treatments at the Healing House at Varty Camp. Wellness treatments are extra to the retreat [booking to confirm].",
+   "dur": "",
+   "incl": "Add-on",
+   "season": "April to July"
+  },
+  {
+   "kicker": "Optional · after the retreat",
+   "title": "Two nights at Ellerman House",
+   "info": "Fly to Cape Town afterwards for two nights at Ellerman House in Bantry Bay, with its art collection and wine archive of more than 9,000 labels.",
+   "dur": "Two nights",
+   "incl": "Add-on",
+   "season": "All year"
+  }
+ ],
+ "seo": {
+  "path": "/overland/south-africa/track-your-life-with-boyd-varty",
+  "title": "Boyd Varty Retreat at Londolozi: Track Your Life",
+  "description": "Boyd Varty's five-day tracking and coaching retreat at Londolozi Pioneer Camp: men only, six at most, four a year between April and July. Coaching, tracking, two safaris a day and meals.",
+  "keywords": [
+   "Boyd Varty retreat",
+   "Track Your Life retreat",
+   "Londolozi Pioneer Camp retreat",
+   "men's retreat South Africa",
+   "tracking and coaching retreat"
+  ]
+ },
+ "copy_approved": false,
+ "prices_final": false,
+ "booking_live": false,
+ "id": "track-your-life-with-boyd-varty",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/south-africa/track-your-life-with-boyd-varty#trip",
+   "name": "Track Your Life with Boyd Varty",
+   "url": "https://www.jameswildco.com/overland/south-africa/track-your-life-with-boyd-varty",
+   "description": "Track Your Life with Boyd Varty is Boyd Varty's five-day tracking and coaching retreat at Londolozi Pioneer Camp, filed by James Wild & Co.: four nights for men only, six at most, held four times a year between April and July. Coaching, tracking, two safaris a day and meals are included; wellness treatments, flights and charters are extra. Healing House treatments and two nights at Ellerman House can be added.",
+   "touristType": [
+    "Men",
+    "Wellness and leadership"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Johannesburg",
+       "description": "Day 1 · by road to the Sabi Sand"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Londolozi Pioneer Camp, Sabi Sand",
+       "description": "Days 1–4 · Boyd Varty's retreat",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -24.7971,
+        "longitude": 31.496
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town",
+       "description": "Optional · two nights at Ellerman House",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9291,
+        "longitude": 18.3779
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "bestFor": {
+  "who": "Men who lead",
+  "why": "Boyd Varty's five-day tracking and coaching retreat, six men at most, at Pioneer Camp."
+ },
+ "proof": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House and visited and vetted every Leeu Estates property in Franschhoek.",
+ "offerRefs": [
+  "ellerman-house"
+ ],
+ "photoCredit": "Photographs of Londolozi courtesy of Londolozi."
+}

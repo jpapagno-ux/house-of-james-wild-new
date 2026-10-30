@@ -1,0 +1,611 @@
+{
+ "title": "Leopards Through the Lens · overland",
+ "H": 10400,
+ "crumbs": [
+  "Home",
+  "Overland",
+  "South Africa",
+  "Leopards Through the Lens"
+ ],
+ "side": [
+  [
+   "S",
+   "Johannesburg",
+   "Day 1",
+   "By road to the Sabi Sand"
+  ],
+  [
+   "1",
+   "Londolozi",
+   "Days 1–4",
+   "Private vehicle, ranger and tracker"
+  ],
+  [
+   "E",
+   "Johannesburg",
+   "Day 5",
+   "By road, or by air to Cape Town for Ellerman House"
+  ]
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-101250</span>",
+ "h1": "Leopards Through the Lens",
+ "h1note": "H1 · title tag: Londolozi Photographic Safari: Leopards Through the Lens",
+ "sub": "5 Days · 4 Nights · South Africa, a photographic safari at Londolozi",
+ "meta": [
+  [
+   "Journey code",
+   "ITN-LAND-2026-101250"
+  ],
+  [
+   "Country",
+   "South Africa"
+  ],
+  [
+   "Duration",
+   "5 days / 4 nights (7 days with Ellerman House)"
+  ],
+  [
+   "Journey type",
+   "Overland · by road · private vehicle"
+  ],
+  [
+   "In · Out",
+   "Johannesburg (JNB)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to camp availability"
+  ],
+  [
+   "Climate",
+   "Winter May–Aug dry, 3–20°C · summer Sep–Apr, afternoon storms, 18–36°C"
+  ],
+  [
+   "Malaria",
+   "Low risk, precautions advised"
+  ],
+  [
+   "Vetted by",
+   "James Wild · Londolozi 2018"
+  ]
+ ],
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "quote": "\"Four nights, one vehicle, your own tracker. That's how you get the frame. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "answer": "Leopards Through the Lens is a 5-day photographic safari at Londolozi from James Wild & Co.: four nights at Varty Camp with a private vehicle and your own ranger and tracker, Lightroom tuition and print preparation at the Photographic Studio, and Canon and Nikon rentals. You go by road from Johannesburg, with an optional two nights at Ellerman House in Cape Town to finish.",
+ "striptitle": "Five days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#6B4A33"
+  ],
+  [
+   "D2",
+   "#6B4A33"
+  ],
+  [
+   "D3",
+   "#6B4A33"
+  ],
+  [
+   "D4",
+   "#6B4A33"
+  ],
+  [
+   "D5",
+   "#1F1D1B"
+  ]
+ ],
+ "stripcols": "",
+ "strip_labels": [
+  "Londolozi · Varty Camp",
+  "Home or the Cape"
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Vetted Route",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Johannesburg to Varty Camp",
+   "line": "By road to Londolozi · time on request",
+   "body": "By road from Johannesburg (OR Tambo): the N12 and N4 east to Nelspruit, the R40 through White River to Hazyview, then the R536 towards Paul Kruger Gate. About 37 km along it, a gravel road turns off to the Sabi Sand's Shaws Gate, where the reserve charges an entry fee per person and per vehicle. From the gate it is about 17 km to camp, following Londolozi's signs.",
+   "stay": "Londolozi Varty Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "By road · time on request",
+   "acts": "Arrival · meet your ranger and tracker",
+   "img": "PHOTO · VARTY CAMP MAIN POOL",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Londolozi",
+   "stageMeta": "DAYS 1–4 · 4 NIGHTS · VARTY CAMP",
+   "mark": "Founder stayed · 2018"
+  },
+  {
+   "n": "DAY 02",
+   "title": "Your own vehicle",
+   "line": "Private vehicle, your own ranger and tracker",
+   "body": "A private vehicle for the whole stay, with your own ranger and tracker, so the time at each sighting is yours. Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights.",
+   "stay": "Londolozi Varty Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Private game drive [times to confirm with the lodge]",
+   "acts": "Private game drives",
+   "img": "PHOTO · LEOPARD CUBS IN A TREE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "The Photographic Studio",
+   "line": "Lightroom tuition and print preparation",
+   "body": "Time at Varty Camp's Photographic Studio between drives: Lightroom tuition on your own frames, and help preparing prints. Canon and Nikon rentals are available [kit to confirm].",
+   "stay": "Londolozi Varty Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "On foot, then private game drive",
+   "acts": "Lightroom tuition · private game drive",
+   "img": "PHOTO · PHOTOGRAPHIC STUDIO",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "The last light on the Sand River",
+   "line": "Unfenced to Kruger",
+   "body": "Londolozi sits on the Sand River in the western Sabi Sand, unfenced to Kruger National Park. A last full day on the private vehicle, and a session at the Studio to prepare the prints you take home.",
+   "stay": "Londolozi Varty Camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Private game drive [times to confirm with the lodge]",
+   "acts": "Private game drives · print preparation",
+   "img": "PHOTO · TREE CAMP DECK",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "Home, or on to the Cape",
+   "line": "By road to Johannesburg, or by air to Cape Town",
+   "body": "By road back to Johannesburg (time on request). Or, to finish slowly, fly to Cape Town for two nights at Ellerman House, about 26 km, around 30 minutes, from the airport. Londolozi has its own airstrip, used by charter flights.",
+   "stay": "— (or Ellerman House, optional)",
+   "meals": "[Confirm with the lodge]",
+   "move": "By road, or by air",
+   "acts": "Departure",
+   "img": "PHOTO · ELLERMAN HOUSE FROM THE AIR",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "incl": [
+  "Four nights at Londolozi Varty Camp [chalet category on file]",
+  "A private vehicle with your own ranger and tracker for the stay",
+  "Lightroom tuition and print preparation at the Photographic Studio [to confirm]",
+  "Road transfer, Johannesburg to Londolozi and back [to confirm]",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to Johannesburg",
+  "Canon and Nikon rentals [terms to confirm]",
+  "Two nights at Ellerman House and the flight to Cape Town, unless added",
+  "Sabi Sand gate entry fee, charged per person and per vehicle [confirm whether included]",
+  "Travel insurance",
+  "Gratuities for your ranger and tracker",
+  "Malaria precautions: ask your doctor"
+ ],
+ "founder": {
+  "eyebrow": "Vetted & designed by the founder",
+  "title": "Londolozi, 2018",
+  "p1": "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+  "p2": "This is the route for the traveller who comes for the picture: four nights rather than three, a vehicle that is yours, and the Photographic Studio at Varty Camp to finish the work.",
+  "film": "Founder's film · Leopards Through the Lens [VIDEO TO RECORD]"
+ },
+ "faqs": [
+  [
+   "What is included in Leopards Through the Lens?",
+   "Four nights at Londolozi Varty Camp, a private vehicle with your own ranger and tracker, and Lightroom tuition and print preparation at the Photographic Studio. Canon and Nikon rentals are available."
+  ],
+  [
+   "Can I rent camera equipment at Londolozi?",
+   "Yes. Canon and Nikon rentals are available at Londolozi; we confirm the kit for your dates."
+  ],
+  [
+   "How many leopards will I see?",
+   "Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights. This route gives you four."
+  ],
+  [
+   "Can children come?",
+   "Varty Camp welcomes children aged six and over."
+  ],
+  [
+   "Can I add Cape Town?",
+   "Yes. The route can finish with two nights at Ellerman House in Cape Town, by air from Londolozi."
+  ],
+  [
+   "Is Londolozi a malaria area?",
+   "It is a low-risk malaria area. Precautions are still advised; ask your doctor before you travel."
+  ],
+  [
+   "How much does Leopards Through the Lens cost?",
+   "It is quoted against your dates and travellers, with any current offer applied. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More South Africa routes",
+ "related": [
+  [
+   "ITN-LAND-2026-202031 · 9 DAYS",
+   "The Sand River by Road",
+   "Londolozi, Ellerman House and Leeu Estates: the house's South Africa route."
+  ],
+  [
+   "ITN-LAND-2026-431095 · 5 DAYS",
+   "Track Your Life with Boyd Varty",
+   "Boyd Varty's tracking and coaching retreat at Pioneer Camp."
+  ],
+  [
+   "ITN-LAND-2026-982652 · 8 DAYS",
+   "Three Generations at Pioneer",
+   "Pioneer Camp as a private homestead for up to twelve, then Cape Town."
+  ]
+ ],
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "slides": [
+  {
+   "kicker": "Leopards Through the Lens · South Africa",
+   "title": "Leopards Through the Lens",
+   "line": "Four nights at Varty Camp, your own vehicle, ranger and tracker, and the Photographic Studio.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#3B2F25 0%,#6B4A33 50%,#B08A3E 100%)"
+  }
+ ],
+ "feat_title": "Stays and experiences on this journey",
+ "features": [],
+ "approve": {
+  "title": "Four nights for the frame",
+  "seal_bottom": "SABI SAND · LONDOLOZI 2018",
+  "seal_mark": "PHOTOGRAPHIC SAFARI",
+  "why": [
+   "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+   "A private vehicle with your own ranger and tracker, so the time at a sighting is yours.",
+   "Lightroom tuition and print preparation at the Photographic Studio, with Canon and Nikon rentals on hand."
+  ],
+  "quote": "Don't shoot the first leopard. Watch her. The picture comes on day three. [Draft — J.W. to approve]"
+ },
+ "map_eyebrow": "The route, drawn",
+ "map_title": "Johannesburg to the Sand River",
+ "map_coord": "24°48′S 31°30′E · ITN-LAND-2026-101250",
+ "navon": "Overland",
+ "herofacts": [
+  [
+   "Duration",
+   "5 days · 4 nights"
+  ],
+  [
+   "Camp",
+   "Varty Camp, Londolozi"
+  ],
+  [
+   "Vehicle",
+   "Private, with ranger and tracker"
+  ],
+  [
+   "Studio",
+   "Lightroom and print preparation"
+  ]
+ ],
+ "overview_title": "A photographic safari, four nights deep",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "suits": [
+  [
+   "Photographers",
+   "Your own vehicle, ranger and tracker, and a studio to finish the work.",
+   "Lightroom tuition and print preparation at Varty Camp."
+  ],
+  [
+   "Couples where one shoots",
+   "Nobody waits on anyone else's vehicle.",
+   "The private vehicle is yours for the stay."
+  ],
+  [
+   "Families with children six and over",
+   "Varty Camp welcomes them.",
+   "A private vehicle keeps the pace to yours."
+  ]
+ ],
+ "twice": [
+  [
+   "Expecting a guarantee",
+   "Wildlife keeps its own schedule.",
+   "Londolozi's figures are sightings reported, not a promise."
+  ],
+  [
+   "Short on time",
+   "The road in from Johannesburg is long.",
+   "Ask about a charter to Londolozi's own airstrip [to confirm]."
+  ]
+ ],
+ "exp_title": "The studio and the vehicle",
+ "lodges_title": "Where you stay",
+ "lodges": [
+  {
+   "name": "Londolozi Varty Camp",
+   "line": "Sabi Sand · Days 1–4",
+   "chips": [
+    "4 nights",
+    "Children 6+",
+    "Relais & Châteaux"
+   ],
+   "photos": [
+    "Varty Camp main pool",
+    "Photographic Studio",
+    "Healing House"
+   ],
+   "body": "The original camp at Londolozi: ten chalets, with the Healing House, a gym and the Photographic Studio. Children aged six and over are welcome.",
+   "rows": [
+    [
+     "Location",
+     "Londolozi, western Sabi Sand · unfenced to Kruger"
+    ],
+    [
+     "Nights",
+     "4 nights · Days 1–4"
+    ],
+    [
+     "Room",
+     "[Chalet category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the lodge]"
+    ],
+    [
+     "Getting there",
+     "By road from Johannesburg (time on request), or by charter to Londolozi's own airstrip"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/safaris/londolozi-reserve/varty-camp\">Varty Camp</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-varty-camp/\">Varty Camp on Wild & Co Safaris</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Ellerman House",
+   "line": "Cape Town · optional, Days 5–7",
+   "chips": [
+    "2 nights, optional",
+    "Bantry Bay",
+    "Optional"
+   ],
+   "photos": [
+    "Ellerman House from the air",
+    "Ellerman House terraces",
+    "Ellerman wine gallery"
+   ],
+   "body": "A house on the slopes of Bantry Bay, Cape Town, looking over the Atlantic, with a significant South African art collection, a wine archive of more than 9,000 labels, a spa and BAR ROC for sundowners.",
+   "rows": [
+    [
+     "Location",
+     "180 Kloof Road, Bantry Bay, Cape Town"
+    ],
+    [
+     "Nights",
+     "2 nights, optional"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "About 26 km, around 30 minutes, from Cape Town International (CPT), with complimentary airport transfers"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ]
+   ]
+  }
+ ],
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": [
+   {
+    "label": "Two nights at Ellerman House to finish",
+    "sub": "By air to Cape Town on day 5 · quoted against your dates",
+    "pp": 0
+   },
+   {
+    "label": "Canon and Nikon rentals",
+    "sub": "At Londolozi [kit to confirm]",
+    "pp": 0
+   }
+  ]
+ },
+ "kind": "overland",
+ "experiences": [
+  {
+   "kicker": "Londolozi · Days 1–4",
+   "title": "A private vehicle, ranger and tracker",
+   "info": "The vehicle is yours for the stay, with your own ranger and tracker, so nobody else decides when to move on.",
+   "dur": "Four nights",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "The Photographic Studio",
+   "title": "Lightroom tuition",
+   "info": "Lightroom tuition at Varty Camp's Photographic Studio, working on your own frames from the morning.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "The Photographic Studio",
+   "title": "Print preparation",
+   "info": "Help at the Studio preparing prints of your best pictures to take home.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Kit",
+   "title": "Canon and Nikon rentals",
+   "info": "Canon and Nikon equipment can be rented at Londolozi, so you needn't fly with every lens [kit list and terms to confirm].",
+   "dur": "",
+   "incl": "Add-on",
+   "season": "All year"
+  },
+  {
+   "kicker": "Londolozi · the sightings",
+   "title": "Leopards on the Sand River",
+   "info": "Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Optional · Days 5–7",
+   "title": "Two nights at Ellerman House",
+   "info": "Fly to Cape Town and finish above the Atlantic at Ellerman House, with its art collection and wine archive of more than 9,000 labels.",
+   "dur": "Two nights",
+   "incl": "Add-on",
+   "season": "All year"
+  }
+ ],
+ "seo": {
+  "path": "/overland/south-africa/leopards-through-the-lens",
+  "title": "Londolozi Photographic Safari: Leopards Through the Lens",
+  "description": "A 5-day photographic safari at Londolozi Varty Camp with a private vehicle, your own ranger and tracker, Lightroom tuition at the Photographic Studio and Canon and Nikon rentals.",
+  "keywords": [
+   "Londolozi photographic safari",
+   "leopard photography safari South Africa",
+   "Londolozi Photographic Studio",
+   "private vehicle safari Sabi Sand"
+  ]
+ },
+ "copy_approved": false,
+ "prices_final": false,
+ "booking_live": false,
+ "id": "leopards-through-the-lens",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/south-africa/leopards-through-the-lens#trip",
+   "name": "Leopards Through the Lens",
+   "url": "https://www.jameswildco.com/overland/south-africa/leopards-through-the-lens",
+   "description": "Leopards Through the Lens is a 5-day photographic safari at Londolozi from James Wild & Co.: four nights at Varty Camp with a private vehicle and your own ranger and tracker, Lightroom tuition and print preparation at the Photographic Studio, and Canon and Nikon rentals. You go by road from Johannesburg, with an optional two nights at Ellerman House in Cape Town to finish.",
+   "touristType": [
+    "Photographers",
+    "Wildlife photography"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Johannesburg",
+       "description": "Day 1 · by road to the Sabi Sand"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Londolozi Varty Camp, Sabi Sand",
+       "description": "Days 1–4 · private vehicle and the Photographic Studio",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -24.7965,
+        "longitude": 31.4999
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town",
+       "description": "Optional · two nights at Ellerman House",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9291,
+        "longitude": 18.3779
+       }
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "bestFor": {
+  "who": "Photographers",
+  "why": "A private vehicle, your own ranger and tracker, and the Photographic Studio at Varty Camp."
+ },
+ "proof": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House and visited and vetted every Leeu Estates property in Franschhoek.",
+ "offerRefs": [
+  "ellerman-house"
+ ],
+ "photoCredit": "Photographs of Londolozi courtesy of Londolozi."
+}

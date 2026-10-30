@@ -1,0 +1,673 @@
+{
+ "title": "Three Generations at Pioneer · overland",
+ "H": 10400,
+ "crumbs": [
+  "Home",
+  "Overland",
+  "South Africa",
+  "Three Generations at Pioneer"
+ ],
+ "side": [
+  [
+   "S",
+   "Johannesburg",
+   "Day 1",
+   "By road to the Sabi Sand"
+  ],
+  [
+   "1",
+   "Londolozi Pioneer Camp",
+   "Days 1–4",
+   "By air to Cape Town"
+  ],
+  [
+   "2",
+   "Cape Town",
+   "Days 5–7",
+   "Three nights by the Atlantic"
+  ],
+  [
+   "E",
+   "Cape Town (CPT)",
+   "Day 8",
+   "Flights home"
+  ]
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-982652</span>",
+ "h1": "Three Generations at Pioneer",
+ "h1note": "H1 · title tag: Multigenerational Safari at Londolozi Pioneer Camp: Three Generations at Pioneer",
+ "sub": "8 Days · 7 Nights · South Africa, a private family homestead at Londolozi, then Cape Town",
+ "meta": [
+  [
+   "Journey code",
+   "ITN-LAND-2026-982652"
+  ],
+  [
+   "Country",
+   "South Africa"
+  ],
+  [
+   "Duration",
+   "8 days / 7 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · by road, then by air"
+  ],
+  [
+   "Party",
+   "Up to 12: six adults and six children, children 6+"
+  ],
+  [
+   "In · Out",
+   "Johannesburg (JNB) · Cape Town (CPT)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to camp availability"
+  ],
+  [
+   "Climate",
+   "Winter May–Aug dry, 3–20°C · summer Sep–Apr, afternoon storms, 18–36°C"
+  ],
+  [
+   "Vetted by",
+   "James Wild · Londolozi 2018 · Cape Town 2026"
+  ]
+ ],
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "quote": "\"Take the whole camp. The children will remember the archery; you'll remember watching them. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "answer": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
+ "striptitle": "Eight days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#6B4A33"
+  ],
+  [
+   "D2",
+   "#6B4A33"
+  ],
+  [
+   "D3",
+   "#6B4A33"
+  ],
+  [
+   "D4",
+   "#6B4A33"
+  ],
+  [
+   "D5",
+   "#7C9488"
+  ],
+  [
+   "D6",
+   "#7C9488"
+  ],
+  [
+   "D7",
+   "#7C9488"
+  ],
+  [
+   "D8",
+   "#1F1D1B"
+  ]
+ ],
+ "stripcols": "",
+ "strip_labels": [
+  "Londolozi · Pioneer Camp",
+  "Cape Town · Atlantic",
+  "Home"
+ ],
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Vetted Route",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "days": [
+  {
+   "n": "DAY 01",
+   "title": "Johannesburg to the homestead",
+   "line": "By road to Londolozi · time on request",
+   "body": "By road from Johannesburg (OR Tambo): the N12 and N4 east to Nelspruit, the R40 through White River to Hazyview, then the R536 towards Paul Kruger Gate. About 37 km along it, a gravel road turns off to the Sabi Sand's Shaws Gate, where the reserve charges an entry fee per person and per vehicle. From the gate it is about 17 km to camp, following Londolozi's signs.",
+   "stay": "Londolozi Pioneer Camp, the whole camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "By road · time on request",
+   "acts": "Arrival · the homestead is yours",
+   "img": "PHOTO · PIONEER CAMP SUITE",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Londolozi",
+   "stageMeta": "DAYS 1–4 · 4 NIGHTS · PIONEER CAMP, PRIVATE",
+   "mark": "Founder stayed · 2018"
+  },
+  {
+   "n": "DAY 02",
+   "title": "The Cubs Den",
+   "line": "Tracking, tree climbing, archery",
+   "body": "Londolozi's Cubs Den children's programme for the young ones: tracking, tree climbing and archery [the order of the days to confirm with the lodge]. The grown-ups take the private Land Rover out.",
+   "stay": "Londolozi Pioneer Camp, the whole camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Private Land Rover · on foot",
+   "acts": "Cubs Den · private game drive",
+   "img": "PHOTO · CUBS DEN",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 03",
+   "title": "Fishing, baking and pizza",
+   "line": "Everyone in the kitchen",
+   "body": "More of the Cubs Den: fishing, baking and pizza making, with Pioneer Camp's interactive kitchen for the family's own table [order to confirm with the lodge].",
+   "stay": "Londolozi Pioneer Camp, the whole camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Private Land Rover · on foot",
+   "acts": "Cubs Den · private game drive",
+   "img": "PHOTO · CHILDREN TRACKING",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 04",
+   "title": "S'mores and stars",
+   "line": "The last night on the Sand River",
+   "body": "Londolozi sits on the Sand River in the western Sabi Sand, unfenced to Kruger National Park. A last day on the private Land Rover, the lap pool in the afternoon, and the Cubs Den's s'mores and stargazing after dark.",
+   "stay": "Londolozi Pioneer Camp, the whole camp",
+   "meals": "[Confirm with the lodge]",
+   "move": "Private Land Rover",
+   "acts": "Private game drive · s'mores · stargazing",
+   "img": "PHOTO · PIONEER CAMP POOL",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 05",
+   "title": "Londolozi to Cape Town",
+   "line": "By air to the Cape",
+   "body": "Londolozi has its own airstrip, used by charter flights. You fly to Cape Town [charter for the party to confirm]; Ellerman House is about 26 km, around 30 minutes, from the airport, with complimentary airport transfers.",
+   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "meals": "[Confirm with the hotel]",
+   "move": "By air, then by road",
+   "acts": "Transfer day",
+   "img": "PHOTO · ELLERMAN HOUSE FROM THE AIR",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Cape Town",
+   "stageMeta": "DAYS 5–7 · 3 NIGHTS · BANTRY BAY",
+   "mark": "Founder stayed · 2026"
+  },
+  {
+   "n": "DAY 06",
+   "title": "The gardens and the art",
+   "line": "Ellerman House, Bantry Bay",
+   "body": "The house's indigenous gardens and its South African art collection, or Cape Town with the concierge's help.",
+   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot or by car",
+   "acts": "Gardens · art tour · Cape Town",
+   "img": "PHOTO · ELLERMAN HOUSE TERRACES",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 07",
+   "title": "Cape Town, together",
+   "line": "A last day by the Atlantic",
+   "body": "A free day for the family in Cape Town, and dinner together on the last night.",
+   "stay": "Ellerman House [Cape Town stay to confirm with James for a party of twelve]",
+   "meals": "[Confirm with the hotel]",
+   "move": "On foot or by car",
+   "acts": "At leisure",
+   "img": "PHOTO · ELLERMAN WINE GALLERY",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "n": "DAY 08",
+   "title": "Home through Cape Town",
+   "line": "By road to CPT · about 26 km",
+   "body": "To Cape Town International, about 26 km, around 30 minutes, with complimentary airport transfers, for the flights home.",
+   "stay": "—",
+   "meals": "[Confirm with the hotel]",
+   "move": "By road · around 30 min",
+   "acts": "Departure",
+   "img": "PHOTO · ELLERMAN HOUSE FROM THE AIR",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "incl": [
+  "Four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to 12",
+  "A private Land Rover for the stay",
+  "The Cubs Den children's programme [confirm what is included]",
+  "Road transfer, Johannesburg to Londolozi [to confirm]",
+  "Flight from Londolozi to Cape Town [charter for the party, to confirm]",
+  "Three nights in Cape Town [stay and rooms to confirm for twelve]",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to Johannesburg and home from Cape Town",
+  "Travel insurance",
+  "Sabi Sand gate entry fee, charged per person and per vehicle [confirm whether included]",
+  "Meals not marked as included [confirm per lodge]",
+  "Gratuities for rangers, trackers and drivers",
+  "Malaria precautions: ask your doctor, and for the children"
+ ],
+ "founder": {
+  "eyebrow": "Vetted & designed by the founder",
+  "title": "He went to Londolozi with his daughter",
+  "p1": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House.",
+  "p2": "This is the route for the family that wants to be together: the whole of Pioneer Camp, a Land Rover of your own, the Cubs Den for the children, and three nights in Cape Town to finish.",
+  "film": "Founder's film · Three Generations at Pioneer [VIDEO TO RECORD]"
+ },
+ "faqs": [
+  [
+   "How many people can stay at Pioneer Camp?",
+   "Taken whole as a private homestead, Pioneer Camp holds up to 12: six adults and six children, with children aged six and over."
+  ],
+  [
+   "What is the Cubs Den?",
+   "Londolozi's children's programme: tracking, tree climbing, archery, fishing, baking, pizza making, s'mores and stargazing."
+  ],
+  [
+   "Do we have our own vehicle?",
+   "Yes. The family has a private Land Rover for the stay."
+  ],
+  [
+   "What is Pioneer Camp like?",
+   "Three suites of 138 m², an interactive kitchen and a lap pool, at Londolozi in the western Sabi Sand."
+  ],
+  [
+   "How do we get from Londolozi to Cape Town?",
+   "By air. Londolozi has its own airstrip for charter flights; we arrange the flight for your party."
+  ],
+  [
+   "Is Londolozi a malaria area?",
+   "It is a low-risk malaria area. Precautions are still advised; ask your doctor before you travel, including for the children."
+  ],
+  [
+   "How much does Three Generations at Pioneer cost?",
+   "It is quoted against your dates and party, with any current offer applied. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More South Africa routes",
+ "related": [
+  [
+   "ITN-LAND-2026-202031 · 9 DAYS",
+   "The Sand River by Road",
+   "Londolozi, Ellerman House and Leeu Estates: the house's South Africa route."
+  ],
+  [
+   "ITN-LAND-2026-101250 · 5 DAYS",
+   "Leopards Through the Lens",
+   "Four nights at Varty Camp with your own vehicle, ranger and tracker."
+  ],
+  [
+   "ITN-LAND-2026-431095 · 5 DAYS",
+   "Track Your Life with Boyd Varty",
+   "Boyd Varty's tracking and coaching retreat at Pioneer Camp."
+  ]
+ ],
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "slides": [
+  {
+   "kicker": "Three Generations at Pioneer · South Africa",
+   "title": "Three Generations at Pioneer",
+   "line": "Pioneer Camp as a private homestead for up to twelve, the Cubs Den, then Cape Town.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#3B2F25 0%,#6B4A33 50%,#B08A3E 100%)"
+  }
+ ],
+ "feat_title": "Stays and experiences on this journey",
+ "features": [],
+ "approve": {
+  "title": "The whole camp, the whole family",
+  "seal_bottom": "SABI SAND · LONDOLOZI 2018",
+  "seal_mark": "PIONEER, PRIVATE",
+  "why": [
+   "James stayed at Londolozi in 2018 with his daughter and toured every room.",
+   "Pioneer Camp taken whole: up to twelve, children six and over, with a private Land Rover.",
+   "The Cubs Den for the children, then three nights in Cape Town."
+  ],
+  "quote": "I went to Londolozi with my daughter. Go with yours, and take her children too. [Draft — J.W. to approve]"
+ },
+ "map_eyebrow": "The route, drawn",
+ "map_title": "Johannesburg to Pioneer, then the Cape",
+ "map_coord": "24°48′S 31°30′E · ITN-LAND-2026-982652",
+ "navon": "Overland",
+ "herofacts": [
+  [
+   "Duration",
+   "8 days · 7 nights"
+  ],
+  [
+   "Route",
+   "Johannesburg → Londolozi → Cape Town"
+  ],
+  [
+   "Party",
+   "Up to 12, children 6+"
+  ],
+  [
+   "Vehicle",
+   "Private Land Rover"
+  ]
+ ],
+ "overview_title": "One camp for the whole family",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "suits": [
+  [
+   "Three generations",
+   "One camp, one table, one Land Rover.",
+   "Pioneer Camp is yours alone for four nights."
+  ],
+  [
+   "Families with children six and over",
+   "The Cubs Den keeps them busy and outdoors.",
+   "Tracking, archery, fishing, pizza making and stargazing."
+  ],
+  [
+   "Friends travelling together",
+   "Up to twelve under one roof.",
+   "Six adults and six children is the camp's measure."
+  ]
+ ],
+ "twice": [
+  [
+   "Travelling with children under six",
+   "Pioneer Camp takes children aged six and over.",
+   "Tell us their ages and we'll suggest another way."
+  ],
+  [
+   "A party of more than twelve",
+   "Pioneer Camp holds up to twelve.",
+   "Ask James how to split a larger party across Londolozi's camps [to confirm]."
+  ]
+ ],
+ "exp_title": "What the family will do",
+ "lodges_title": "Where the family stays",
+ "lodges": [
+  {
+   "name": "Londolozi Pioneer Camp",
+   "line": "Sabi Sand · Days 1–4 · the whole camp",
+   "chips": [
+    "4 nights",
+    "Up to 12",
+    "Children 6+"
+   ],
+   "photos": [
+    "Pioneer Camp suite",
+    "Pioneer Camp pool",
+    "Cubs Den"
+   ],
+   "body": "Pioneer Camp taken whole as a private homestead for up to 12 (six adults and six children, children six and over): three suites of 138 m², an interactive kitchen and a lap pool, with a private Land Rover.",
+   "rows": [
+    [
+     "Location",
+     "Londolozi, western Sabi Sand"
+    ],
+    [
+     "Nights",
+     "4 · Days 1–4, exclusive use"
+    ],
+    [
+     "Suites",
+     "3 suites of 138 m² · interactive kitchen · lap pool"
+    ],
+    [
+     "Meals",
+     "[Confirm with the lodge]"
+    ],
+    [
+     "Getting there",
+     "By road from Johannesburg (time on request), or by charter to Londolozi's own airstrip"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/safaris/londolozi-reserve/pioneer-camp\">Pioneer Camp</a>"
+    ],
+    [
+     "Wild & Co Safaris",
+     "<a href=\"https://wildcosafaris.vercel.app/destinations/south-africa/sabi-sand/londolozi/londolozi-pioneer-camp/\">Pioneer Camp on Wild & Co Safaris</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Ellerman House",
+   "line": "Cape Town · Days 5–7 · [to confirm for twelve]",
+   "chips": [
+    "3 nights",
+    "Bantry Bay",
+    "Villa One and Villa Two on file"
+   ],
+   "photos": [
+    "Ellerman House from the air",
+    "Ellerman House terraces",
+    "Ellerman wine gallery"
+   ],
+   "body": "A house on the slopes of Bantry Bay, Cape Town, looking over the Atlantic, with a significant South African art collection, a wine archive of more than 9,000 labels, a spa and BAR ROC for sundowners.",
+   "rows": [
+    [
+     "Location",
+     "180 Kloof Road, Bantry Bay, Cape Town"
+    ],
+    [
+     "Nights",
+     "3 nights"
+    ],
+    [
+     "Room",
+     "[Room category on file]"
+    ],
+    [
+     "Meals",
+     "[Confirm with the hotel]"
+    ],
+    [
+     "Getting there",
+     "About 26 km, around 30 minutes, from Cape Town International (CPT), with complimentary airport transfers"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/ellerman-house\">Ellerman House</a>"
+    ]
+   ]
+  }
+ ],
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": []
+ },
+ "kind": "overland",
+ "experiences": [
+  {
+   "kicker": "Pioneer Camp · Days 1–4",
+   "title": "The whole camp, for up to twelve",
+   "info": "Pioneer Camp taken whole as a private homestead: three suites of 138 m², an interactive kitchen and a lap pool, for six adults and six children (children six and over).",
+   "dur": "Four nights",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "Pioneer Camp · every day",
+   "title": "A private Land Rover",
+   "info": "A Land Rover for the family alone, so drives run at the youngest traveller's pace.",
+   "dur": "",
+   "incl": "Included",
+   "season": "All year"
+  },
+  {
+   "kicker": "For the children",
+   "title": "The Cubs Den",
+   "info": "Londolozi's children's programme: tracking, tree climbing, archery, fishing, baking, pizza making, s'mores and stargazing.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Londolozi · the sightings",
+   "title": "Leopards on the Sand River",
+   "info": "Londolozi reports 75 to 100 leopard sightings a month, and guests usually see two or three leopards in three nights.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Cape Town · Days 5–7",
+   "title": "Art and gardens at Ellerman House",
+   "info": "The house's South African art collection and its indigenous gardens, above the Atlantic in Bantry Bay.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  }
+ ],
+ "seo": {
+  "path": "/overland/south-africa/three-generations-at-pioneer",
+  "title": "Multigenerational Safari at Londolozi Pioneer Camp: Three Generations at Pioneer",
+  "description": "An 8-day family safari: Londolozi Pioneer Camp as a private homestead for up to 12 with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town.",
+  "keywords": [
+   "multigenerational safari South Africa",
+   "Londolozi Pioneer Camp family",
+   "Londolozi Cubs Den",
+   "private safari homestead",
+   "family safari and Cape Town"
+  ]
+ },
+ "copy_approved": false,
+ "prices_final": false,
+ "booking_live": false,
+ "id": "three-generations-at-pioneer",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer#trip",
+   "name": "Three Generations at Pioneer",
+   "url": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer",
+   "description": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
+   "touristType": [
+    "Families",
+    "Multigenerational groups"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 4,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Johannesburg",
+       "description": "Day 1 · by road to the Sabi Sand"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Londolozi Pioneer Camp, Sabi Sand",
+       "description": "Days 1–4 · the whole camp",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -24.7971,
+        "longitude": 31.496
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town",
+       "description": "Days 5–7 · three nights",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.9291,
+        "longitude": 18.3779
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cape Town International (CPT)",
+       "description": "Day 8 · flights home"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "bestFor": {
+  "who": "Three generations",
+  "why": "Pioneer Camp as a private homestead for up to twelve, a private Land Rover and the Cubs Den."
+ },
+ "proof": "James stayed at Londolozi in 2018 with his daughter and toured every room. In May 2026 he stayed at Ellerman House and visited and vetted every Leeu Estates property in Franschhoek.",
+ "offerRefs": [
+  "ellerman-house"
+ ],
+ "photoCredit": "Photographs of Londolozi courtesy of Londolozi."
+}

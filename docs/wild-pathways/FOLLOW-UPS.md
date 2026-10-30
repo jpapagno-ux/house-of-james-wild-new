@@ -17,12 +17,14 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | `.ledger-eyebrow` contrast | In scope; fixed (alpha 0.55 → 0.68) |
 | 30 Oct 2026 | Phase 2 "Populate and connect" | Approved to proceed |
 | 30 Oct 2026 | Phase 2A spec: field names, `ImpactNote` as its own entity, go-ahead to edit library schema + `siteExport` | Approved |
+| 30 Oct 2026 | Batch 1 (40 records) pathway classifications | Approved as drafted |
+| 30 Oct 2026 | Merge prep | Rebased on `f385855`; PR #32 opened, awaiting James's merge |
 
 ## Open
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 1 | Five draft pathway classifications in `pathway-map.json` (Leeu Estates, Monwana, Kirkman's Kamp, Tswalu, Mombo) | James | **Open** — still `draft`; folds into the Phase 2B first batch |
+| 1 | Batch 1 classifications | James | **Closed** — 40 records approved in the library, 30 Oct 2026 (`pathway_classified_by: James Papagno (batch 1, drafted by Iggi)`) |
 | 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | release-branch owner | Open — re-snapshot on `main` after Beckon releases land |
 | 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | `template-pass-marks` | Open — pre-existing, outside this branch |
 | 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Deferred to Phase 2F, after data population |

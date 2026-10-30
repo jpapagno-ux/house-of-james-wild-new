@@ -24,6 +24,24 @@ FIX = {
                                "misfiled": "Library destination is South Africa; the property is in Masoala, Madagascar"},
 }
 
+PATHWAY_IDS = {f"PATH-0{i}" for i in range(1, 9)}
+VOLUME_KEYS = {"stays", "safaris", "gatherings", "voyages", "europe", "overland"}
+def pathway_of(s):
+    """Stay -> {primary, secondary, setting, intentions, suitability, status, classifiedBy, classifiedAt} or None."""
+    p = s.get("primary_pathway")
+    if p not in PATHWAY_IDS: return None
+    sec = [x for x in (s.get("secondary_pathways") or []) if x in PATHWAY_IDS and x != p]
+    return {"primary": p, "secondary": sec, "setting": s.get("pathway_setting") or None,
+            "intentions": [str(x) for x in (s.get("pathway_intentions") or [])],
+            "suitability": [str(x) for x in (s.get("pathway_suitability") or [])],
+            "status": "approved" if s.get("pathway_status") == "approved" else "draft",
+            "classifiedBy": s.get("pathway_classified_by") or None, "classifiedAt": s.get("pathway_classified_at") or None}
+def volumes_of(s):
+    """house_volumes[] when present, else the single house_volume, else None."""
+    vs = [v for v in (s.get("house_volumes") or []) if v in VOLUME_KEYS]
+    if not vs and s.get("house_volume") in VOLUME_KEYS: vs = [s["house_volume"]]
+    return vs or None
+
 def text(s):
     s = html.unescape(s or "")  # some records hold escaped tags (&lt;span&gt;)
     s = re.sub(r"<figure.*?</figure>", "", s, flags=re.S)
@@ -120,6 +138,8 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "faqs": [{"q": text(f.get("question")), "a": text(f.get("answer"))} for f in (s.get("faq_blocks") or []) if f.get("question")] if reviewed else [],
         "reviewed": reviewed, "reserveChild": bool(s.get("is_reserve_child")), "parentSlug": s.get("parent_property_slug"),
         "engine": ENGINE.get(slug),
+        # Wild Pathways (Phase 2A): present only once the library carries the fields; null until then.
+        "pathway": pathway_of(s), "volumes": volumes_of(s),
     })
 for x in out: x.update(FIX.get(x["slug"], {}))
 

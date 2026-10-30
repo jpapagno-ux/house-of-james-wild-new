@@ -77,6 +77,31 @@ export const EXCLUDED = [
   "Donations to the Tswalu Foundation",
   "Gratuities",
 ];
+// US dollars. Tswalu prices and invoices in rand; we show dollars first at a
+// dated mid-market rate, with the rand beside it. Re-set ZAR_PER_USD when the
+// rand moves; the dollar figure is confirmed at booking.
+export const ZAR_PER_USD = 16.61;
+export const FX_DATE = "30 Oct 2026";
+export const FX_SOURCE = "mid-market rate, 30 Oct 2026";
+export const toUsd = (zarAmount: number) => zarAmount / ZAR_PER_USD;
+export const usd = (zarAmount: number) => `US$${Math.round(toUsd(zarAmount)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
+
+/** Every fee Tswalu itself defines (rate cards and guest guide), with how it is charged. */
+export const FEES: { name: string; basis: string; note?: string; r2026?: number; r2027?: { high: number; peak: number } }[] = [
+  { name: "VAT at 15%", basis: "Included in every rate", note: "Tswalu may adjust if the VAT rate changes or a new tax or levy is introduced." },
+  { name: "Conservation, park or reserve levy", basis: "None charged separately", note: "Your stay itself funds the reserve; Tswalu puts the 20% deposit straight to its conservation work." },
+  { name: "Extra child, 0–17", basis: "Per child, per night, where the room allows", r2026: EXTRA_CHILD.r2026, r2027: EXTRA_CHILD.r2027 },
+  { name: "Malori sleep-out", basis: "Per night, pre-booked; up to 2 adults and 2 children", r2026: EXTRAS.malori.r2026, r2027: EXTRAS.malori.r2027 },
+  { name: "Photographic safari", basis: "Per day, minimum 2 days; private tuition extra", r2026: EXTRAS.photoSafari.r2026, r2027: EXTRAS.photoSafari.r2027 },
+  { name: "Charter flight, Johannesburg or Cape Town, return", basis: "Per seat; under-2s fly free on a lap; 20 kg soft bags each", r2026: FLIGHTS.r2026.ret, r2027: { high: FLIGHTS.r2027.ret, peak: FLIGHTS.r2027.ret } },
+  { name: "Charter flight, one way", basis: "Per seat", r2026: FLIGHTS.r2026.oneWay, r2027: { high: FLIGHTS.r2027.oneWay, peak: FLIGHTS.r2027.oneWay } },
+  { name: "Extra luggage seat", basis: "At the seat rate; up to 50 kg per seat" },
+  { name: "Spa treatments", basis: "Per treatment, at the spa's rates" },
+  { name: "Rhino notching", basis: "Extra cost, very limited availability" },
+  { name: "Tswalu Foundation", basis: "Optional donation" },
+  { name: "Gratuities", basis: "At your discretion" },
+];
+
 export const MIN_STAY = [
   "Minimum 2 nights (outside the festive season)",
   "Minimum 3 nights in peak festive season (20 Dec 2026 to 6 Jan 2027; peak season in 2027)",

@@ -1,0 +1,38 @@
+{
+ "id": "polar-circle-air-cruise",
+ "type": "voyage",
+ "destination": "antarctica",
+ "title": "Polar Circle Air-Cruise",
+ "subtitle": "10 days · 9 nights · Punta Arenas round trip, flying the Drake Passage both ways",
+ "map_note": "Engraved after Natural Earth · positions approximate; ice and weather set the ship's course · not a navigational chart",
+ "days": {
+  "1": "Punta Arenas",
+  "2": "Fly to King George Island · embark",
+  "3": "The South Shetland Islands",
+  "4": "The Gerlache Strait",
+  "5": "The Lemaire Channel & Penola Strait",
+  "6": "Crystal Sound · the Antarctic Circle",
+  "7": "Northbound along the Peninsula",
+  "8": "Back to King George Island",
+  "9": "Fly to Punta Arenas",
+  "10": "Departure"
+ },
+ "places": [
+  { "name": "DRAKE PASSAGE", "lat": -58.5, "lng": -64.5, "size": 15 },
+  { "name": "BELLINGSHAUSEN SEA", "lat": -68.2, "lng": -73.5, "size": 13 },
+  { "name": "ANTARCTIC PENINSULA", "lat": -67.6, "lng": -63.4, "size": 12 },
+  { "name": "Antarctic Circle 66°33′S", "lat": -66.4, "lng": -71.5, "size": 11 }
+ ],
+ "stops": [
+  { "day": 1, "name": "Punta Arenas — briefing and welcome dinner", "lat": -53.163, "lng": -70.917, "mode": "land", "kind": "port" },
+  { "day": 2, "name": "King George Island — fly in, Zodiac to the ship", "lat": -62.19, "lng": -58.98, "mode": "air", "kind": "airstrip" },
+  { "day": 3, "name": "South Shetland Islands — landings and Zodiac cruises", "lat": -62.6, "lng": -59.9, "mode": "sea" },
+  { "day": 4, "name": "Gerlache Strait — bays and glaciers", "lat": -64.55, "lng": -62.45, "mode": "sea" },
+  { "day": 5, "name": "Lemaire Channel & Penola Strait", "lat": -65.1, "lng": -63.98, "mode": "sea" },
+  { "day": 6, "name": "Crystal Sound", "lat": -66.4, "lng": -66.6, "mode": "sea" },
+  { "day": 6, "name": "Antarctic Circle — 66°33′S, ice permitting", "lat": -66.56, "lng": -67.6, "mode": "sea" },
+  { "day": 7, "name": "Northbound along the Peninsula", "lat": -64.75, "lng": -62.9, "mode": "sea" },
+  { "day": 8, "name": "King George Island — back to Fildes Bay", "lat": -62.2, "lng": -58.95, "mode": "sea", "kind": "port" },
+  { "day": 9, "name": "Punta Arenas — fly back across the Drake", "lat": -53.0, "lng": -70.85, "mode": "air", "kind": "airstrip" }
+ ]
+}

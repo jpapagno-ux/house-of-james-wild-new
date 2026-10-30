@@ -188,6 +188,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     links: [
       { label: "Plan with James", href: "/plan" },
       { label: "The Compass", href: "/compass" },
+      { label: "Free field guides", href: "/field-guides" },
       { label: "Find an advisor", href: "/about/team#advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
       { label: "House Sessions (workshops)", href: "/workshops" },
@@ -244,9 +245,11 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },
-  // South Africa Overland routes (/overland/south-africa/*): routes approved by James 30 Oct 2026,
-  // copy not yet signed off, so the pages are noindex and stay out of the sitemap and llms.txt.
-  // Add each path here (and set copy_approved in its trip file) when he approves it.
+  // South Africa Overland routes: copy approved by James, 30 Oct 2026 ("approved please push").
+  { path: "/overland/south-africa/the-sand-river-by-road", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/leopards-through-the-lens", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/three-generations-at-pioneer", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/south-africa/track-your-life-with-boyd-varty", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

@@ -8,6 +8,7 @@ import { JwcoSeal } from "./Marks";
 import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
 import HouseMenu from "./HouseMenu";
+import CompassSpin from "./CompassSpin";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
 
@@ -205,6 +206,8 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
               <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
+            {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
+            <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
             {FLAGS.accounts && <li><Link href="/account" className={mainItem}>My Folio</Link></li>}
           </ul>
           <Link

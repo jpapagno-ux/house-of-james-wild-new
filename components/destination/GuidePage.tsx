@@ -1,4 +1,7 @@
+import type React from "react";
 import Image from "next/image";
+import GuideOffer from "@/components/guides/GuideOffer";
+import { guidesFor } from "@/lib/content/field-guides";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -21,7 +24,7 @@ import { graph } from "@/lib/schema";
 // voyages), Raja Ampat vs Komodo, FAQs with schema, and the sources.
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
 
-export default function GuidePage({ g }: { g: Guide }) {
+export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart of the guide's stays and voyage ports (country guides). */ map?: React.ReactNode }) {
   const parent = g.parent ? GUIDES[g.parent] : undefined;
   const voyages = journeysFor("indonesia").filter((j) => g.voyageWaters.some((w) => j.eyebrow.includes(w)));
   const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: "Asia", path: "/destinations/asia" }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
@@ -53,7 +56,11 @@ export default function GuidePage({ g }: { g: Guide }) {
           <Overview answer={g.answer} facts={g.facts} />
           <FounderProof proof={g.proof} className="mt-10 max-w-3xl" />
 
+          {map}
+
           <WhenToGo place={g.name} rows={g.months} airports={g.airports} transfers={g.transfers} />
+
+          {guidesFor(g.slug).map((fg) => <GuideOffer key={fg.key} guide={fg} source={`guide:${g.slug}`} />)}
 
           {g.places && (
             <section id="places" className={SEC}>

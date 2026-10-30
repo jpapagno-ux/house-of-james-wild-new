@@ -211,3 +211,9 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 @keyframes jw-stamp-rock { 0%, 100% { opacity: 1; transform: rotate(calc(var(--jw-rot, -6deg) - 2.5deg)) translateY(0); } 50% { opacity: 1; transform: rotate(calc(var(--jw-rot, -6deg) + 2.5deg)) translateY(-3px); } }
 @keyframes jw-stamp-breathe { 0%, 100% { opacity: 1; transform: rotate(var(--jw-rot, -6deg)) scale(1); } 50% { opacity: .92; transform: rotate(var(--jw-rot, -6deg)) scale(1.025); } }
 @media (prefers-reduced-motion: reduce) { .jw-onphoto [data-jw-stamp], .jw-onphoto.is-in [data-jw-stamp] { animation: none !important; opacity: 1; } .jw-onphoto .jw-ringspin { animation: none; } }
+
+/* The Compass on the navigation: the card turns, the needle swings and settles on north. */
+@keyframes jw-needle { 0%, 70%, 100% { transform: rotate(0deg); } 76% { transform: rotate(-18deg); } 84% { transform: rotate(10deg); } 91% { transform: rotate(-4deg); } }
+.jw-needle { transform-box: view-box; transform-origin: 50% 50%; animation: jw-needle 7s ease-in-out infinite; }
+a:hover .jw-needle { animation-duration: 1.6s; }
+@media (prefers-reduced-motion: reduce) { .jw-needle { animation: none; } }

@@ -203,8 +203,8 @@ export const POSTS: Record<string, JournalPost> = {
     hero: { url: `${J}/james-miriam-game-drive.jpg`, alt: "James Papagno and his wife in a Monwana game vehicle on Thornybush, morning light", w: 2576, h: 1932, credit: "Photograph: our Monwana guide" },
     film: {
       id: "YR_8uiBObZ4",
-      title: "Wild Together: My Wife's First Safari, Monwana, Thornybush",
-      description: "My wife's first safari, filmed on location at Monwana in Thornybush Private Game Reserve, Greater Kruger: the intimate, guide-led stay we recommend to couples and honeymooners on a first safari.",
+      title: "Wild Together: My Wife's First Safari — Monwana Lodge, Thornybush, South Africa",
+      description: "From Wild Together, James and Miriam's own series. My wife's first safari, filmed on location at Monwana in Thornybush Private Game Reserve, Greater Kruger: the intimate, guide-led stay we recommend to couples and honeymooners on a first safari. Film by Felix Studios and Monwana.",
       uploadDate: "2026-09-23",
       after: "why-did-i-choose-monwana-for-my-wife-s-first-safari",
     },

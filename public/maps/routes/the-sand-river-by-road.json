@@ -1,0 +1,92 @@
+{
+ "id": "the-sand-river-by-road",
+ "type": "overland",
+ "title": "The Sand River by Road",
+ "subtitle": "9 days · 8 nights · the Sabi Sand to the Cape Winelands",
+ "code": "ITN-LAND-2026-202031",
+ "days": {
+  "1": "Johannesburg to the Sand River",
+  "2": "Leopards on the Sand River",
+  "3": "The Varty family's reserve",
+  "4": "Londolozi to Cape Town",
+  "5": "Art and the wine archive",
+  "6": "Cape Town at your pace",
+  "7": "Cape Town to Franschhoek",
+  "8": "The wine studio and the vines",
+  "9": "Home through Cape Town"
+ },
+ "stops": [
+  {
+   "name": "Johannesburg — O.R. Tambo",
+   "lat": -26.134,
+   "lng": 28.242,
+   "kind": "airport",
+   "day": 1
+  },
+  {
+   "day": 1,
+   "name": "Londolozi — the Sabi Sand",
+   "lat": -24.8,
+   "lng": 31.5,
+   "mode": "road",
+   "kind": "lodge",
+   "path": [
+    [
+     28.242,
+     -26.134
+    ],
+    [
+     29.24,
+     -25.87
+    ],
+    [
+     30.97,
+     -25.47
+    ],
+    [
+     31.5,
+     -24.8
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Cape Town — by the Atlantic",
+   "lat": -33.925,
+   "lng": 18.405,
+   "mode": "air",
+   "kind": "lodge"
+  },
+  {
+   "day": 7,
+   "name": "Franschhoek — the winelands",
+   "lat": -33.9126,
+   "lng": 19.1205,
+   "mode": "road",
+   "kind": "lodge",
+   "path": [
+    [
+     18.405,
+     -33.925
+    ],
+    [
+     18.75,
+     -33.9
+    ],
+    [
+     19.1205,
+     -33.9126
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Home — Cape Town International",
+   "lat": -33.9715,
+   "lng": 18.6021,
+   "mode": "road",
+   "kind": "airport"
+  }
+ ],
+ "map_note": "Positions approximate. Drawn from the route as James sets it out; road and flight times are confirmed when you book."
+}

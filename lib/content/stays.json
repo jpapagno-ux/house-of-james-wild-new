@@ -2902,82 +2902,6 @@
    "engine": null
   },
   {
-   "slug": "beckon-capella-lodge",
-   "name": "Beckon \n Capella Lodge",
-   "ledgerId": "STY-2026-000037",
-   "country": "Australia",
-   "countrySlug": "australia",
-   "regionSlug": "oceania",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Australia's most exclusive island escape where barefoot luxury meets World Heritage wilderness.",
-   "quote": "Discover an island where dramatic volcanic peaks, crystal-clear lagoons and refined luxury exist in perfect harmony.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8b96af4e8_24467b472_6a4fbe933031db7ec7cd8426_overlooking-view.jpg",
-   "gallery": [],
-   "bestMonths": "September - April",
-   "bestMonthsNote": "Spring and autumn provide ideal conditions for exploring Lord Howe Island, with pleasant temperatures, excellent hiking weather and clear waters for snorkelling and marine adventures. These months also offer outstanding opportunities to experience the island's unique wildlife, lush landscapes and spectacular coastal scenery while avoiding the warmer peak summer conditions.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": "",
-   "coords": {
-    "lat": -31.5389,
-    "lng": 159.0796
-   },
-   "airport": "Lord Howe Island Airport (LDH) (Primary & Recommended) Scheduled flights operate primarily from Sydney (SYD) and Brisbane (BNE).",
-   "airportDirections": "Lord Howe Island Airport (LDH)\nApprox. 7 km\nDriving Time: 10 minutes\nGuests are typically met upon arrival and transferred to the lodge, making LDH the most convenient gateway to Capella Lodge.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Capella Suites",
-     "Lagoon Lofts",
-     "Makambo Lofts",
-     "Catalina Suites",
-     "Lidgbird Pavilion"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Guided Island Walks",
-     "Snorkelling",
-     "Glass-Bottom Boat Tours",
-     "Mount Gower Treks",
-     "Spa Treatments",
-     "Bird Watching",
-     "Marine Adventures",
-     "Island Dining"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Luxury island suites",
-     "Panoramic lagoon views",
-     "World Heritage location",
-     "Fine dining restaurant",
-     "Capella Spa",
-     "Infinity plunge pool",
-     "Personalised guest experiences",
-     "Beach access",
-     "Marine park adventures",
-     "Boutique accommodation",
-     "Island-inspired architecture",
-     "Exceptional hospitality"
-    ]
-   },
-   "onlyHere": [
-    "Capella Lodge offers an intimate luxury experience unlike anywhere else in Australia. Positioned beneath the dramatic peaks of Mount Gower and Mount Lidgbird, the lodge overlooks the sparkling lagoon of Lord Howe Island, where pristine beaches, vibrant coral reefs and extraordinary wildlife create unforgettable adventures. Every stay balances sophisticated comfort with genuine connection to one of the world's most remarkable island environments."
-   ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null
-  },
-  {
    "slug": "birkenhead-house",
    "name": "Birkenhead House",
    "ledgerId": "STY-2026-964893",
@@ -3707,6 +3631,91 @@
      "body": "This is heritage luxury in a living neighbourhood: tree-lined streets, award-winning restaurants, independent cafés, art galleries, and cultural spaces just steps from your door. Perfect for food lovers, culture seekers, urban explorers, and families who want space with soul."
     }
    ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "beckon-capella-lodge",
+   "name": "Capella Lodge",
+   "ledgerId": "STY-2026-000037",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Australia's most exclusive island escape where barefoot luxury meets World Heritage wilderness.",
+   "quote": "Discover an island where dramatic volcanic peaks, crystal-clear lagoons and refined luxury exist in perfect harmony.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/capella-lodge-original",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/infinity-pool-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-plunge-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-balcony-bay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lidgbird-deck-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-bedroom-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/makambo-plunge-pool-peak",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/catalina-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/capella-lodge/lagoon-loft-bedroom"
+   ],
+   "bestMonths": "September - April",
+   "bestMonthsNote": "Spring and autumn provide ideal conditions for exploring Lord Howe Island, with pleasant temperatures, excellent hiking weather and clear waters for snorkelling and marine adventures. These months also offer outstanding opportunities to experience the island's unique wildlife, lush landscapes and spectacular coastal scenery while avoiding the warmer peak summer conditions.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "",
+   "coords": {
+    "lat": -31.5389,
+    "lng": 159.0796
+   },
+   "airport": "Lord Howe Island Airport (LDH) (Primary & Recommended) Scheduled flights operate primarily from Sydney (SYD) and Brisbane (BNE).",
+   "airportDirections": "Lord Howe Island Airport (LDH)\nApprox. 7 km\nDriving Time: 10 minutes\nGuests are typically met upon arrival and transferred to the lodge, making LDH the most convenient gateway to Capella Lodge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Capella Suites",
+     "Lagoon Lofts",
+     "Makambo Lofts",
+     "Catalina Suites",
+     "Lidgbird Pavilion"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided Island Walks",
+     "Snorkelling",
+     "Glass-Bottom Boat Tours",
+     "Mount Gower Treks",
+     "Spa Treatments",
+     "Bird Watching",
+     "Marine Adventures",
+     "Island Dining"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Luxury island suites",
+     "Panoramic lagoon views",
+     "World Heritage location",
+     "Fine dining restaurant",
+     "Capella Spa",
+     "Infinity plunge pool",
+     "Personalised guest experiences",
+     "Beach access",
+     "Marine park adventures",
+     "Boutique accommodation",
+     "Island-inspired architecture",
+     "Exceptional hospitality"
+    ]
+   },
+   "onlyHere": [
+    "Capella Lodge offers an intimate luxury experience unlike anywhere else in Australia. Positioned beneath the dramatic peaks of Mount Gower and Mount Lidgbird, the lodge overlooks the sparkling lagoon of Lord Howe Island, where pristine beaches, vibrant coral reefs and extraordinary wildlife create unforgettable adventures. Every stay balances sophisticated comfort with genuine connection to one of the world's most remarkable island environments."
+   ],
+   "why": [],
    "facts": {},
    "faqs": [],
    "reviewed": false,
@@ -12848,7 +12857,7 @@
    "category": "hotel",
    "tagline": "Luxury tented pavilions overlooking Australia's spiritual heart.",
    "quote": "Wake to the changing colours of Uluṟu and discover the timeless beauty, culture and silence of the Australian Outback.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-top-aerial",
    "gallery": [
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-deck",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-exterior",
@@ -12858,7 +12867,8 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-bedroom",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bedroom",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bathroom",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace"
    ],
    "bestMonths": "April - September",
    "bestMonthsNote": "The cooler months offer comfortable daytime temperatures for exploring Uluṟu and Kata Tjuṯa, making them ideal for guided walks, sunrise and sunset experiences, desert dining and outdoor cultural activities. Clear skies also provide exceptional stargazing opportunities, showcasing the brilliance of the Southern Hemisphere's night sky.",

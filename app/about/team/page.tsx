@@ -5,6 +5,7 @@ import AnswerBlock from "@/components/ledger/AnswerBlock";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
+import { LedBuilt } from "@/components/advisor/Desk";
 import { Icon } from "@/components/ledger/Marks";
 import { HouseLinks, PlanClose } from "@/components/about/Parts";
 import { ADVISORS, FIELD_PARTNERS, TEAM } from "@/lib/content/advisors";
@@ -40,6 +41,8 @@ export default function TeamPage() {
             <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">{t.subtitle}</p>
           </header>
           <AnswerBlock>{t.answer}</AnswerBlock>
+
+          <section className="mt-10" aria-label="Advisor-led, advisor-built"><LedBuilt /></section>
 
           <section id="advisors" className="mt-10 scroll-mt-32" aria-labelledby="advisors-heading">
             <h2 id="advisors-heading" className="sr-only">Advisors</h2>

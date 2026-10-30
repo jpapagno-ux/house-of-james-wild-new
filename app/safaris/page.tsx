@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import SafeLink from "@/components/ledger/SafeLink";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
 import { JourneyCard } from "@/components/destination/Journeys";
@@ -42,6 +43,7 @@ export default function SafarisHub() {
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-3">{africa.countries.map((c) => <li key={c.href}><SafeLink href={c.href} className="ledger-display text-[1.2rem] hover:ledger-crimson" fallback={<span className="ledger-display text-[1.2rem]">{c.label}</span>}>{c.label}</SafeLink></li>)}</ul>
           <p className="mt-8 text-[16px]">Planning a safari now? <a href="https://wildcosafaris.com" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Wild &amp; Co Safaris</a> is the house&rsquo;s safari booking platform. <Link href="/about/team" className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">Meet the partner guides</Link>.</p>
         </HubSection>
+        <AdvisorScroll volume="safaris" title="Who knows Africa" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Safaris" })} />
     </>

@@ -13,6 +13,9 @@
 //  - James's card opens /about/founder, so there's one page about him.
 // Public fields only: no personal email or phone numbers here.
 
+import { SAMPLE_DESKS, samplePortrait } from "./advisor-samples";
+import { deskCounts, type DeskProfile, type Volume } from "./advisor-desk";
+
 export type Advisor = {
   slug: string;
   name: string;
@@ -26,6 +29,8 @@ export type Advisor = {
   specialties: string[]; // approved only
   traveled: { place: string; year?: number }[]; // stated first-hand trips
   profileHref: string | null;
+  sample?: boolean; // invented to show the layout; labelled as such everywhere
+  desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
 };
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
@@ -77,6 +82,12 @@ export const ADVISORS: Advisor[] = [
     specialties: [],
     traveled: [{ place: "Raja Ampat, Indonesia, aboard Aliikai", year: 2024 }],
     profileHref: "/advisors/anthony-papagno",
+    desk: {
+      adv: "ADV number pending", sample: false, since: 2024, joined: 2026, agency: null, base: "Palm Beach, Florida", languages: ["English"],
+      volumes: ["voyages"], countries: ["indonesia"], specialties: [], line: "The best of a place is usually just past where the itinerary stops.",
+      entries: [{ ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Know a Place", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "—" }],
+      folios: [],
+    },
   },
   {
     slug: "albert-alvarez",
@@ -90,6 +101,78 @@ export const ADVISORS: Advisor[] = [
     specialties: [],
     traveled: [],
     profileHref: null,
+  },
+  {
+    slug: "sofia-marchetti",
+    name: "Sofia Marchetti",
+    firstName: "Sofia",
+    role: "Independent travel advisor · sample",
+    roleApproved: true,
+    sample: true,
+    portrait: { url: samplePortrait(1), alt: "Sample advisor portrait (AI-generated): Sofia Marchetti" },
+    intro: "Wine country, islands and the occasional boat in the Aegean. Starts every honeymoon somewhere you can sleep off the flight.",
+    bio: [
+      "Sofia carries eight entries across four volumes and starts every honeymoon somewhere you can sleep off the flight. James vouches for the place; she vouches for the client.",
+      "Her clients go to the Cape for wine, to the Indian Ocean for the last photograph, and to the Other Europe she keeps to herself until someone asks.",
+    ],
+    specialties: SAMPLE_DESKS["sofia-marchetti"].specialties,
+    traveled: [{ place: "Leeu Estates and Ellerman House, South Africa", year: 2026 }, { place: "Miavana, Madagascar", year: 2025 }, { place: "The Cyclades, by sail", year: 2025 }, { place: "Dá Licença, Alentejo", year: 2026 }],
+    profileHref: "/advisors/sofia-marchetti",
+    desk: SAMPLE_DESKS["sofia-marchetti"],
+  },
+  {
+    slug: "marcus-adeyemi",
+    name: "Marcus Adeyemi",
+    firstName: "Marcus",
+    role: "Africa advisor · sample",
+    roleApproved: true,
+    sample: true,
+    portrait: { url: samplePortrait(2), alt: "Sample advisor portrait (AI-generated): Marcus Adeyemi" },
+    intro: "Africa first. Private reserves, family safaris and the overland routes that earn the lodge at the end.",
+    bio: [
+      "Marcus has sent families to Africa since 2011 and picks the guide before the lodge. Nine entries carried, five countries walked, and a standing rule that first safaris start somewhere the guide learns your name on the first drive.",
+      "He carries the Gatherings villas as well as the camps, because the trips he is proudest of had three generations in them.",
+    ],
+    specialties: SAMPLE_DESKS["marcus-adeyemi"].specialties,
+    traveled: [{ place: "Monwana and Londolozi, South Africa", year: 2025 }, { place: "DumaTau and Qorokwe, Botswana", year: 2024 }, { place: "Cottar's villa, Kenya", year: 2023 }, { place: "Serra Cafema, Namibia", year: 2025 }],
+    profileHref: "/advisors/marcus-adeyemi",
+    desk: SAMPLE_DESKS["marcus-adeyemi"],
+  },
+  {
+    slug: "mateo-rivas",
+    name: "Mateo Rivas",
+    firstName: "Mateo",
+    role: "Voyages advisor · sample",
+    roleApproved: true,
+    sample: true,
+    portrait: { url: samplePortrait(3), alt: "Sample advisor portrait (AI-generated): Mateo Rivas" },
+    intro: "Small ships, sailing yachts and reefs. Two nights on land first, because nobody enjoys a yacht with jet lag.",
+    bio: [
+      "Mateo plans the Voyages volume the way James does: land before the boat, and never the big ships. Raja Ampat aboard Aliikai, the Galápagos by yacht, Costa Rica by road before the dive.",
+      "He is the advisor the house sends polar and diving enquiries to, and the one who will tell you which cabin to avoid.",
+    ],
+    specialties: SAMPLE_DESKS["mateo-rivas"].specialties,
+    traveled: [{ place: "Raja Ampat aboard Aliikai", year: 2024 }, { place: "Galápagos aboard Sirius", year: 2025 }, { place: "The Classic, Costa Rica", year: 2026 }],
+    profileHref: "/advisors/mateo-rivas",
+    desk: SAMPLE_DESKS["mateo-rivas"],
+  },
+  {
+    slug: "clara-whitlock",
+    name: "Clara Whitlock",
+    firstName: "Clara",
+    role: "Gatherings & wellness advisor · sample",
+    roleApproved: true,
+    sample: true,
+    portrait: { url: samplePortrait(4), alt: "Sample advisor portrait (AI-generated): Clara Whitlock" },
+    intro: "Whole houses for whole families, and the wellness stays nobody calls wellness. Book the house, not the rooms.",
+    bio: [
+      "Clara plans for families who travel together and would rather not share a corridor: farmhouses in Madikwe, a bush villa in the Mara, a quinta in the Alentejo with a pool and no schedule.",
+      "Health and wellness run through her entries without the word on the door: the spa afternoon between two safaris, the olive-tree silence after a long year.",
+    ],
+    specialties: SAMPLE_DESKS["clara-whitlock"].specialties,
+    traveled: [{ place: "Morukuru Farm House and Leeu House, South Africa", year: 2024 }, { place: "Cottar's Bush Villa, Kenya", year: 2025 }, { place: "Dá Licença, Alentejo", year: 2026 }],
+    profileHref: "/advisors/clara-whitlock",
+    desk: SAMPLE_DESKS["clara-whitlock"],
   },
   {
     slug: "carlos-alger",
@@ -117,6 +200,31 @@ export const FIELD_PARTNERS: FieldPartner[] = [
 ];
 
 export const advisorBySlug = (slug: string) => ADVISORS.find((a) => a.slug === slug && a.bio.length > 0);
+
+// ---- The Advisor Desk: who knows a place ----------------------------------
+// Advisors with a desk, founder excluded (his page is /about/founder).
+export const DESK_ADVISORS = ADVISORS.filter((a) => a.desk && a.slug !== "james-papagno");
+
+export type AdvisorsFor = { advisors: Advisor[]; slept: number; carried: number };
+
+// Advisors who carry entries in a country, a region, a volume, or a specific
+// Ledger record. "slept" counts those whose own mark is Stayed / Walked / Sailed.
+export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }): AdvisorsFor {
+  const match = (e: DeskProfile["entries"][number]) =>
+    (where.ledgerId ? e.ledgerId === where.ledgerId : true) &&
+    (where.countrySlug ? e.countrySlug === where.countrySlug : true) &&
+    (where.regionSlug ? e.regionSlug === where.regionSlug : true) &&
+    (where.volume ? e.volume === where.volume : true);
+  const hits = DESK_ADVISORS.map((a) => ({ a, es: a.desk!.entries.filter(match) })).filter((x) => x.es.length);
+  hits.sort((x, y) => y.es.reduce((n, e) => n + e.guests, 0) - x.es.reduce((n, e) => n + e.guests, 0));
+  return {
+    advisors: hits.map((x) => x.a),
+    slept: hits.filter((x) => x.es.some((e) => e.theirs && e.theirs.mark !== "Sent Guests")).length,
+    carried: hits.reduce((n, x) => n + x.es.length, 0),
+  };
+}
+
+export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });
 export const initials = (name: string) => name.split(" ").map((p) => p[0]).join("").slice(0, 2).toUpperCase();
 
 export const TEAM = {

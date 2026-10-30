@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
+import { DeskFolios, DeskIdCard, DeskSends, DeskSheet, DeskTies } from "@/components/advisor/DeskPage";
 import { Prose, PlanClose } from "@/components/about/Parts";
 import { ADVISORS, advisorBySlug } from "@/lib/content/advisors";
 import IggiPanel from "@/components/iggi/IggiPanel";
@@ -39,7 +40,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
   const a = advisorBySlug((await params).slug);
   if (!a) notFound();
   const path = `/advisors/${a.slug}`;
-  const others = ADVISORS.filter((x) => x.slug !== a.slug);
+  const others = ADVISORS.filter((x) => x.slug !== a.slug && (x.portrait || x.bio.length));
   const answer = `${a.name} is a ${a.role.toLowerCase()} with James Wild & Co, the founder-led travel house exploring since 1982. ${a.intro ?? ""} ${a.firstName} plans from the Ledger of stays, camps, ships and routes James has vetted in person, and you can start planning with ${a.firstName} directly.`;
   return (
     <>
@@ -60,6 +61,15 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
           </header>
 
           <div className="mt-12"><AnswerBlock>{answer}</AnswerBlock></div>
+
+          {a.desk && (
+            <>
+              <div className="mt-10"><DeskIdCard a={a} /></div>
+              <DeskSheet a={a} />
+              <DeskSends a={a} />
+              <DeskFolios a={a} />
+            </>
+          )}
 
           <section className="mt-10 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16" aria-labelledby="about-heading">
             <div>
@@ -86,6 +96,8 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
               </div>
             </aside>
           </section>
+
+          {a.desk && <DeskTies a={a} />}
 
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="others-heading">
             <p className="ledger-eyebrow ledger-crimson">The rest of the house</p>

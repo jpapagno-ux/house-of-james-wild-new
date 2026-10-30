@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
+import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import { JourneyCard } from "@/components/destination/Journeys";
 import { journeysFor } from "@/lib/content/preview/journeys";
@@ -25,6 +26,7 @@ export default function VoyagesHub() {
         <HubSection eyebrow="Indonesia" title="Aboard Aliikai" id="aliikai-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{voyages.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
         </HubSection>
+        <AdvisorScroll volume="voyages" title="Who sails with the small ships" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: voyages.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
     </div>

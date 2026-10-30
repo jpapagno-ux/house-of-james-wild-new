@@ -87,7 +87,7 @@ export const ABOUT = {
     { year: "1990s", title: "Costa Rica, early", line: "A wholesale firm working the first days of surf, dive and soft-adventure travel to Central America. Dominical, '95." },
     { year: "1996", title: "Tahiti", line: "The first of many seasons surfing and diving French Polynesia. Taha'a becomes the favourite." },
     { year: "2011", title: "Africa", line: "Safari design begins, and the Ledger's camps are vetted reserve by reserve." },
-    { year: "Today", title: "Five volumes, one Ledger", line: "Stays, Safaris, Gatherings, Voyages and Overland, all filed the same way. James is still travelling to vet them." },
+    { year: "Today", title: "Six volumes, one Ledger", line: "Stays, Safaris, Gatherings, Voyages, Overland and Other Europe, all filed the same way. James is still travelling to vet them." },
   ],
   craft: {
     eyebrow: "The house, at work",

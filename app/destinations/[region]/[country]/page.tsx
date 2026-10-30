@@ -24,6 +24,7 @@ import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
 import GatewayNight from "@/components/stays/GatewayNight";
+import { AdvisorStrip } from "@/components/advisor/Desk";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
@@ -185,6 +186,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
+          <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
           <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>

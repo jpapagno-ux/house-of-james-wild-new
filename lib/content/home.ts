@@ -55,7 +55,7 @@ export const HOME = {
       ["House", "James Wild & Co · Miami, Florida"],
       ["Exploring since", "1982, forty-four years in the field"],
       ["Safari advisor since", "2011"],
-      ["Five volumes", "Stays · Safaris · Gatherings · Voyages · Overland"],
+      ["Six volumes", "Stays · Safaris · Gatherings · Voyages · Overland · Other Europe"],
       ["The standard", "Vetted in person · Ledger ID · live rates"],
     ] as [string, string][],
     quote: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
@@ -179,7 +179,7 @@ export const HOME = {
 
   faqs: [
     { q: "What is James Wild & Co?", a: "A founder-led travel house based in Miami, Florida, shaped by 44 years of exploring since 1982. It plans safaris, stays, family gatherings, small-ship voyages and overland routes using only places vetted in person and filed in the Ledger." },
-    { q: "What are the five volumes?", a: "Stays (lodges, hideaways and private houses, home of Wild Earth Stays), Safaris (Africa only, with Indian Ocean island add-ons), Gatherings (generational and family travel), Voyages (small ships and expedition cruises, including the polar collection) and Overland (routes James designed, with field notes on what to expect and avoid)." },
+    { q: "What are the six volumes?", a: "Stays (lodges, hideaways and private houses, home of Wild Earth Stays), Safaris (Africa only, with Indian Ocean island add-ons), Gatherings (generational and family travel), Voyages (small ships and expedition cruises, including the polar collection), Overland (routes James designed, with field notes on what to expect and avoid). Other Europe, the sixth, is the Europe most travellers are never shown: valleys, islands and river towns, often paired with a river cruise."},
     { q: "What is an Overland Expedition?", a: "A land route designed by James, from a guided Botswana safari circuit to a self-drive through Ireland. Each one lists what to expect, what to avoid and every stay on the way, and its stamp shows whether James has travelled it himself and when." },
     { q: "Has James stayed at every property?", a: "No, and the site says so. Every entry is vetted by the house; a founder mark appears only where James has personally been, with the year he was there." },
     { q: "I already have a travel advisor. Can I still use the house?", a: "Yes. The house works alongside your existing advisor, and James Wild & Co also works with independent advisors as a host agency and wholesaler." },

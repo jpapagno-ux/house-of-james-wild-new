@@ -5,6 +5,9 @@ import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import MiniSearch from "minisearch";
 import { ArrowRight, MessageCircle, Search, X } from "lucide-react";
+import { DESK_ADVISORS } from "@/lib/content/advisors";
+import { VOLUME_LABEL } from "@/lib/content/advisor-desk";
+import { GREEN_INK } from "@/lib/content/advisor-desk";
 
 // SearchPanel — the house search, opened from the header (or "/" and Ctrl/⌘+K).
 // The index (/search/index.json) is generated from the Ledger on every
@@ -16,7 +19,7 @@ import { ArrowRight, MessageCircle, Search, X } from "lucide-react";
 // built yet opens the planning form with that place filled in. No result → Ask Iggi, and Plan with James is always
 // the last row.
 
-type Item = { t: "stay" | "destination" | "route"; n: string; u: string; k: string; p: string | null; r: string | null; f: string[]; g: string | null };
+type Item = { t: "stay" | "destination" | "route" | "advisor"; n: string; u: string; k: string; p: string | null; r: string | null; f: string[]; g: string | null };
 type Doc = Item & { id: number };
 
 const TYPES: { key: string; label: string }[] = [
@@ -28,7 +31,22 @@ const TYPES: { key: string; label: string }[] = [
   { key: "luxury", label: "Pure luxury" },
 ];
 
+// Advisors are indexed from the Advisor Desk: name, base, specialties,
+// volumes and the places they carry, so "wellness", "Botswana" or "small
+// ships" finds the person as well as the place.
+const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
+  t: "advisor",
+  n: a.name,
+  u: a.profileHref ?? "/about/team#advisors",
+  k: a.sample ? "Advisor · sample" : "Advisor",
+  p: a.desk!.base,
+  r: null,
+  f: [],
+  g: [...a.desk!.specialties, ...a.desk!.volumes.map((v) => VOLUME_LABEL[v]), ...a.desk!.entries.map((e) => `${e.name} ${e.place}`)].join(" · "),
+}));
+
 const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
+  { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
   { key: "dest", label: "Destinations", match: (d) => d.t === "destination" },
   { key: "camps", label: "Safari camps & lodges", match: (d) => d.t === "stay" && d.r === "africa" },
   { key: "ships", label: "Ships & voyages", match: (d) => d.t === "stay" && d.k === "Ship" },
@@ -48,8 +66,8 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
     if (!open || docs) return;
     fetch("/search/index.json")
       .then((r) => r.json())
-      .then((j: { items: Item[] }) => setDocs(j.items.map((x, id) => ({ ...x, id }))))
-      .catch(() => setDocs([]));
+      .then((j: { items: Item[] }) => setDocs([...j.items, ...ADVISOR_ITEMS].map((x, id) => ({ ...x, id }))))
+      .catch(() => setDocs(ADVISOR_ITEMS.map((x, id) => ({ ...x, id }))));
   }, [open, docs]);
 
   useEffect(() => {
@@ -93,8 +111,8 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[70] bg-ink/55 backdrop-blur-sm flex items-start justify-center px-3 md:px-6 pt-4 md:pt-20" role="dialog" aria-modal="true" aria-label="Search the Ledger" onClick={close}>
-      <div className="w-full max-w-3xl ledger-page border ledger-border shadow-[0_24px_60px_rgba(0,0,0,0.35)] text-ink max-h-[88vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
+    <div className="fixed inset-0 z-[70] bg-ink/55 backdrop-blur-sm flex items-end md:items-start justify-center px-0 md:px-6 pt-0 md:pt-20" role="dialog" aria-modal="true" aria-label="Search the Ledger" onClick={close}>
+      <div className="w-full max-w-3xl ledger-page border ledger-border shadow-[0_24px_60px_rgba(0,0,0,0.35)] text-ink max-h-[92vh] md:max-h-[88vh] flex flex-col rounded-t-2xl md:rounded-none" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center gap-3 px-5 border-b ledger-rule">
           <Search className="w-5 h-5 ledger-crimson shrink-0" strokeWidth={1.5} aria-hidden="true" />
           <label htmlFor="ledger-search" className="sr-only">Search stays, camps, ships and destinations</label>
@@ -104,13 +122,13 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder="A stay, a camp, a ship or a country…"
-            className="flex-1 h-16 bg-transparent ledger-display text-xl md:text-2xl outline-none placeholder:text-ink/35"
+            className="flex-1 h-14 md:h-16 bg-transparent ledger-display text-xl md:text-2xl outline-none placeholder:text-ink/35"
             autoComplete="off"
           />
           <button type="button" onClick={close} className="p-2 -mr-2" aria-label="Close search"><X className="w-5 h-5" strokeWidth={1.25} /></button>
         </div>
 
-        <div className="px-5 py-3 border-b ledger-border flex flex-wrap items-center gap-2">
+        <div className="px-5 py-3 border-b ledger-border flex md:flex-wrap items-center gap-2 overflow-x-auto md:overflow-visible">
           <span className="ledger-eyebrow mr-1">Travelling for</span>
           {TYPES.map((t) => (
             <button
@@ -118,7 +136,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
               type="button"
               aria-pressed={type === t.key}
               onClick={() => setType(type === t.key ? null : t.key)}
-              className={`px-3 py-1 border text-[14px] transition-colors ${type === t.key ? "bg-crimson border-crimson text-paper" : "ledger-border hover:border-crimson"}`}
+              className={`px-3 py-1 border text-[14px] whitespace-nowrap shrink-0 transition-colors ${type === t.key ? "bg-crimson border-crimson text-paper" : "ledger-border hover:border-crimson"}`}
             >
               {t.label}
             </button>
@@ -133,7 +151,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
               <div>
                 <p className="ledger-eyebrow ledger-crimson">Try</p>
                 <ul className="mt-2 space-y-1.5 text-[16px]">
-                  {["Londolozi", "Costa Rica", "Kwando", "Maldives", "Aliikai"].map((s) => (
+                  {["Londolozi", "Botswana", "Small ships", "Wellness", "Other Europe", "Aliikai"].map((s) => (
                     <li key={s}><button type="button" onClick={() => setQ(s)} className="hover:ledger-crimson">{s}</button></li>
                   ))}
                 </ul>
@@ -163,7 +181,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
                             <span className="ledger-display text-[17px] group-hover:ledger-crimson">{d.n}</span>
                             {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5">{d.g}</span>}
                           </span>
-                          <span className="ledger-eyebrow shrink-0 text-right">{d.k}{d.p ? ` · ${d.p}` : ""}</span>
+                          <span className="ledger-eyebrow shrink-0 text-right" style={d.t === "advisor" ? { color: GREEN_INK } : undefined}>{d.k}{d.p ? ` · ${d.p}` : ""}</span>
                         </Link>
                       </li>
                     ))}

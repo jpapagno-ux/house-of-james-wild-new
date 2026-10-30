@@ -118,7 +118,7 @@ export default function SafariDesk() {
               <p className="ledger-eyebrow ledger-crimson">The hand-over</p>
               <h2 id="handover-h" className="ledger-display text-[1.75rem] md:text-[2.2rem] mt-2">Ready when you are.</h2>
               <p className="mt-3 text-[17px] leading-relaxed">You&rsquo;re about to open Wild &amp; Co Safaris in a new tab. Start with Crux, or browse the reserves. This page and everything you&rsquo;ve planned with the House stay right here.</p>
-              <blockquote className="mt-5 border-l-2 border-crimson pl-4 text-[17px] italic">&ldquo;I&rsquo;ve designed safaris since 2011. Africa deserves its own desk, and its own guides.&rdquo; <span className="not-italic ledger-muted text-[14px] block mt-1">James · [Draft — J.W. to approve]</span></blockquote>
+              <blockquote className="mt-5 border-l-2 border-crimson pl-4 text-[17px] italic">&ldquo;I&rsquo;ve designed safaris since 2011. Africa deserves its own desk, and its own guides.&rdquo; <span className="not-italic ledger-muted text-[14px] block mt-1">James</span></blockquote>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href={SAFARI_DESK.url} target="_blank" rel="noopener" className="ledger-btn ledger-btn--solid inline-flex items-center gap-2">Continue to Wild &amp; Co Safaris <ArrowUpRight className="w-4 h-4" aria-hidden="true" /></a>
                 <Link href="/plan" className="ledger-btn">Talk to James first</Link>

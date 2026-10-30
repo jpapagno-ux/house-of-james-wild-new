@@ -74,7 +74,7 @@
  "markline": "",
  "heroalt": "",
  "herolabel": "",
- "quote": "\"Four nights, one vehicle, your own tracker. That's how you get the frame. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "quote": "\"Four nights, one vehicle, your own tracker. That's how you get the frame.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
  "answer": "Leopards Through the Lens is a 5-day photographic safari at Londolozi from James Wild & Co.: four nights at Varty Camp with a private vehicle and your own ranger and tracker, Lightroom tuition and print preparation at the Photographic Studio, and Canon and Nikon rentals. You go by road from Johannesburg, with an optional two nights at Ellerman House in Cape Town to finish.",
  "striptitle": "Five days at a glance",
  "strip": [
@@ -130,7 +130,7 @@
    "stage": "St 01",
    "stageName": "Londolozi",
    "stageMeta": "DAYS 1–4 · 4 NIGHTS · VARTY CAMP",
-   "mark": "Founder stayed · 2018"
+   "mark": "Founder stayed · Varty Camp · 2018"
   },
   {
    "stayLinks": [
@@ -318,7 +318,7 @@
    "A private vehicle with your own ranger and tracker, so the time at a sighting is yours.",
    "Lightroom tuition and print preparation at the Photographic Studio, with Canon and Nikon rentals on hand."
   ],
-  "quote": "Don't shoot the first leopard. Watch her. The picture comes on day three. [Draft — J.W. to approve]"
+  "quote": "Don't shoot the first leopard. Watch her. The picture comes on day three."
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Johannesburg to the Sand River",

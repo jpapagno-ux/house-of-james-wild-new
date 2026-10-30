@@ -24073,16 +24073,20 @@
    "category": "hotel",
    "tagline": "Patagonia at the Edge of the Wild",
    "quote": "Overlooking the windswept landscapes of Torres del Paine, Tierra Patagonia blends raw nature, warm design, and immersive adventure in one unforgettable stay.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/46a714cc9_f1274199b_6a1d674d3c51c0bb63300685_Gallery-Hero-Aerial.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-aerial",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/301aeadc3_a5523e8c1_6a1d67f9eb51516bc9d14136_A-room-with-a-view-Right-1.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/da608cce9_54e08655d_6a1d63cdee06497ae114f927_Features-Left-2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/93170956b_35ead1c45_6a1d6067f0181aa2dc8136c5_Features-Left.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-window-hills",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/room-with-a-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/superior-armchair-hills",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-chaise",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bedroom-stair",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/suite-bathtub"
    ],
    "bestMonths": "October to April",
    "bestMonthsNote": "Warmer temperatures and longer daylight hours make these months ideal for hiking, wildlife viewing, and exploring Patagonia’s landscapes.",
    "bestFor": [],
-   "status": null,
+   "status": "partner_verified",
    "statusDate": null,
    "coords": {
     "lat": -51.1745,

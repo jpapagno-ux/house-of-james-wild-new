@@ -44,7 +44,7 @@ const strip = (h: string) => h.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").tr
 
 /** Photo, or a marked frame saying which photo goes here. */
 function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50vw" }: { img?: TripImg; label: string; className?: string; sizes?: string }) {
-  if (img) return <div className={`relative overflow-hidden bg-paper-card ${className}`}><Image src={img.url} alt={img.alt} fill sizes={sizes} className="object-cover" quality={75} /></div>;
+  if (img) return <div className={`relative overflow-hidden bg-paper-card ${className}`}><Image src={img.url} alt={img.alt} fill sizes={sizes} className="object-cover" quality={75} />{img.credit && <span className="absolute bottom-0 right-0 bg-ink/60 text-paper text-[10px] px-1.5 py-0.5">{img.credit}</span>}</div>;
   return (
     <div role="img" aria-label={`Photo to come: ${label.replace(/^PHOTO\s*·\s*/i, "").toLowerCase()}`} className={`jw-ph relative flex items-end p-3 ${className}`}>
       <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-ink/70 bg-paper/85 px-2 py-1">{label}</span>
@@ -62,7 +62,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
   const waters = T.seo.path.split("/")[2];
   const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo" };
-  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : "/destinations/central-america/costa-rica", T.seo.path][i] }));
+  // The country crumb on an overland route goes to that country's destination page.
+  const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa" };
+  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
   const h = host ? hostFor(host.key) : null;
   const hostOn = !!h && h.state !== "off";
   const quote = strip(T.quote).replace(/\s*—\s*J\.\s*W\.\s*$/, "");
@@ -201,7 +203,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
               <div>
                 <p className="text-[16px] leading-relaxed"><Fx t={d.body} /></p>
                 <dl className="mt-3 grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-[14px]">
-                  <dt className="ledger-eyebrow">{T.staylabel}</dt><dd><Fx t={d.stay} /></dd>
+                  <dt className="ledger-eyebrow">{T.staylabel}</dt><dd><Fx t={d.stay} />{d.stayLinks?.length ? <span className="block text-[13px]">{d.stayLinks.map(([name, href], k) => <span key={href}>{k > 0 && " · "}<Link href={href} className="underline decoration-crimson/50 underline-offset-2">{name}</Link></span>)}</span> : null}</dd>
                   <dt className="ledger-eyebrow">Meals</dt><dd><Fx t={d.meals} /></dd>
                   <dt className="ledger-eyebrow">{T.movelabel}</dt><dd>{d.move}</dd>
                   <dt className="ledger-eyebrow">Doing</dt><dd>{d.acts}</dd>
@@ -402,7 +404,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const onRequest = T.calc.opts.every((o) => !o.pp);
   const Price = onRequest ? (
     <Sec id="price">
-      <SectionHead eyebrow="Price" title="Priced to Your Dates" icon="tree-ring" intro="Rates at these hotels move with the season and the room, so we price this route for your dates and travellers, with any current offer applied. No deposit until you say yes." />
+      <SectionHead eyebrow="Price" title="Priced to Your Dates" icon="tree-ring" intro="Rates at these camps and hotels move with the season and the room, so this route is quoted against your dates and travellers, with any current offer applied. No deposit until you say yes." />
       {T.calc.adds.length > 0 && <ul className="mt-6 grid sm:grid-cols-2 gap-3">{T.calc.adds.map((a) => <li key={a.label} className="border ledger-border p-4"><p className="ledger-display text-[18px]">{a.label}</p><p className="text-[14px] ledger-muted mt-1"><Fx t={a.sub} /></p></li>)}</ul>}
       <a href="#enquire" className="ledger-btn ledger-btn--solid mt-6 inline-flex">Ask James for a price</a>
     </Sec>
@@ -470,10 +472,11 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
             {T.herofacts.map(([k, v]) => <div key={k}><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5">{v}</dd></div>)}
           </dl>
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
+          {T.photoCredit && <p className="mt-2 text-[12px] ledger-muted">{T.photoCredit}</p>}
           <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> Vetted in person by James Wild · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>
         </div>
         <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
-          {onRequest ? <p><span className="ledger-eyebrow block">Price</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">On request</span><span className="block text-[12.5px] ledger-muted mt-1">Priced to your dates, with current offers applied.</span></p> : <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% local tax and 7% Florida sales tax.</span> : T.calc.taxRate === 0 ? <span className="block text-[11.5px] ledger-muted italic">2027 rates, hotel taxes included, plus 7% Florida sales tax. Subject to lodge availability.</span> : <span className="block text-[11.5px] ledger-muted italic">Rate on file, plus 7% Florida sales tax; confirmed when you enquire.</span>}</p>}
+          {onRequest ? <p><span className="ledger-eyebrow block">Price</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">On your dates</span><span className="block text-[12.5px] ledger-muted mt-1">Quoted against your dates, with current offers applied.</span></p> : <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% local tax and 7% Florida sales tax.</span> : T.calc.taxRate === 0 ? <span className="block text-[11.5px] ledger-muted italic">2027 rates, hotel taxes included, plus 7% Florida sales tax. Subject to lodge availability.</span> : <span className="block text-[11.5px] ledger-muted italic">Rate on file, plus 7% Florida sales tax; confirmed when you enquire.</span>}</p>}
           <div className="flex flex-wrap gap-3"><a href={onRequest ? "#enquire" : "#price"} className="ledger-btn ledger-btn--solid !py-2.5">{onRequest ? "Ask for a price" : "Build your price"}</a><a href={voyage ? "#departures" : "#days"} className="ledger-btn !py-2.5">{voyage ? "See dates" : "Day by day"}</a></div>
         </div>
       </div>

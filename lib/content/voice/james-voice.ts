@@ -12,8 +12,8 @@ export type VoiceItem = { id: string; label?: string; now?: string; alts?: strin
 export type VoiceSection = { id: string; title: string; intro: string; kind: "swap" | "add"; where: string; items: VoiceItem[] };
 export const VOICE_BANK = bank as VoiceSection[];
 
-/** James's picks, by item id: the line to use. Empty until he marks the bank. */
-export const CHOSEN: Record<string, string> = {};
+import { CHOSEN } from "./chosen";
+export { CHOSEN };
 
 /** Chosen lines for one section, in bank order. */
 export const chosenIn = (section: string) =>

@@ -85,7 +85,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
-      { label: "Ask Crux, the safari guide", href: "https://wildcosafaris.com" },
+      { label: "Ask Crux, the safari guide", href: "/safaris/wild-co-safaris" },
     ],
     ledger: [],
   },
@@ -132,7 +132,7 @@ export type Region = NavLink & { slug: string; countries: NavLink[] };
 export const REGIONS: Region[] = [
   { label: "Africa", slug: "africa", href: "/destinations/africa", countries: [{ label: "Botswana", href: "/destinations/africa/botswana" }, { label: "Kenya", href: "/destinations/africa/kenya" }, { label: "Madagascar", href: "/destinations/africa/madagascar" }, { label: "Namibia", href: "/destinations/africa/namibia" }, { label: "Rwanda", href: "/destinations/africa/rwanda" }, { label: "Seychelles", href: "/destinations/africa/seychelles" }, { label: "South Africa", href: "/destinations/africa/south-africa" }, { label: "Tanzania", href: "/destinations/africa/tanzania" }, { label: "Zambia", href: "/destinations/africa/zambia" }, { label: "Zimbabwe", href: "/destinations/africa/zimbabwe" }] },
   { label: "Asia", slug: "asia", href: "/destinations/asia", countries: [{ label: "Cambodia", href: "/destinations/asia/cambodia" }, { label: "Indonesia", href: "/destinations/asia/indonesia" }, { label: "Maldives", href: "/destinations/asia/maldives" }, { label: "Philippines", href: "/destinations/asia/philippines" }, { label: "Thailand", href: "/destinations/asia/thailand" }] },
-  { label: "USA & Canada", slug: "usa-canada", href: "/destinations/usa-canada", countries: [{ label: "Arizona", href: "/destinations/usa-canada/arizona" }, { label: "California", href: "/destinations/usa-canada/california" }, { label: "Montana", href: "/destinations/usa-canada/montana" }, { label: "Utah", href: "/destinations/usa-canada/utah" }, { label: "Wyoming", href: "/destinations/usa-canada/wyoming" }] },
+  { label: "USA & Canada", slug: "usa-canada", href: "/destinations/usa-canada", countries: [{ label: "Arizona", href: "/destinations/usa-canada/arizona" }, { label: "California", href: "/destinations/usa-canada/california" }, { label: "Montana", href: "/destinations/usa-canada/montana" }, { label: "New Mexico", href: "/destinations/usa-canada/new-mexico" }, { label: "Utah", href: "/destinations/usa-canada/utah" }, { label: "Wyoming", href: "/destinations/usa-canada/wyoming" }] },
   { label: "Central America", slug: "central-america", href: "/destinations/central-america", countries: [{ label: "Belize", href: "/destinations/central-america/belize" }, { label: "Costa Rica", href: "/destinations/central-america/costa-rica" }, { label: "Panama", href: "/destinations/central-america/panama" }] },
   { label: "Caribbean & Mexico", slug: "caribbean-mexico", href: "/destinations/caribbean-mexico", countries: [{ label: "Mexico", href: "/destinations/caribbean-mexico/mexico" }] },
   { label: "Oceania", slug: "oceania", href: "/destinations/oceania", countries: [{ label: "Australia", href: "/destinations/oceania/australia" }, { label: "Fiji", href: "/destinations/oceania/fiji" }, { label: "New Zealand", href: "/destinations/oceania/new-zealand" }, { label: "Tahiti", href: "/destinations/oceania/tahiti" }] },
@@ -197,6 +197,16 @@ export const LEGAL_NAV: NavLink[] = [
 // for the link guard's BUILT list). Grows step by step.
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
+  // Wild Pathways: approved by James, 30 Oct 2026, once batch 1 (30 live records) was on the pages.
+  { path: "/pathways", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/pathways/into-the-green", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/between-tides", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/above-it-all", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/where-the-wild-lives", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/the-art-of-stillness", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/off-the-map", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/a-place-of-our-own", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/pathways/rooted-in-place", priority: 0.7, changeFrequency: "weekly" },
   // Guides: copy signed off by James, 27 Oct 2026.
   { path: "/destinations/asia/indonesia", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/raja-ampat", priority: 0.8, changeFrequency: "monthly" },
@@ -216,7 +226,14 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },
+  // South Africa Overland routes (/overland/south-africa/*): routes approved by James 30 Oct 2026,
+  // copy not yet signed off, so the pages are noindex and stay out of the sitemap and llms.txt.
+  // Add each path here (and set copy_approved in its trip file) when he approves it.
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */
 export const FOUNDER_YEARS = 44;
+
+// The one door to the safari desk (rule, 30 Oct 2026): the menu item and the
+// Safaris hub land on `page`; only that page links out to `url`.
+export const SAFARI_DESK = { page: "/safaris/wild-co-safaris", url: "https://wildcosafaris.com" } as const;

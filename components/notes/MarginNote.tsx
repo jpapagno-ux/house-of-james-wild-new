@@ -9,7 +9,7 @@ export default function MarginNote({ line, where, when }: { line: string; where:
       <span className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">The verdict · {where} · {when}</span>
       <span className="block mt-2 ledger-display italic text-[1.02rem] leading-snug text-[#2b2622]">&ldquo;{line}&rdquo;</span>
       <span className="mt-1 flex items-end justify-between">
-        <span className="text-[11px] tracking-[0.14em] uppercase text-[#8a7f70] group-hover:text-[#8b3a2e]">Read the verdict ↓</span>
+        <span className="text-[11px] tracking-[0.14em] uppercase text-ink-faint group-hover:text-[#8b3a2e]">Read the verdict ↓</span>
         <Signature className="w-20" />
       </span>
     </a>

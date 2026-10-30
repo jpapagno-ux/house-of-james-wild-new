@@ -793,19 +793,19 @@
    "airports": [
     [
      "Maun International Airport (MUB)",
-     "Serves 18 stays in the Ledger here"
+     "Serves 19 stays in the Ledger here"
+    ],
+    [
+     "Kasane International Airport (BBK)",
+     "Serves 3 stays in the Ledger here"
     ],
     [
      "Khwai Airstrip (KHW)",
      "Serves 3 stays in the Ledger here"
-    ],
-    [
-     "Kasane International Airport (BBK)",
-     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "MUB · KHW",
+   "flyInto": "MUB · BBK",
    "bestShort": "May–Oct",
    "atlasName": "Botswana"
   },
@@ -1778,7 +1778,7 @@
       }
      ],
      "image": {
-      "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eec19dde3_da1e04ac4_697a1381f7ac415cea3407e4_castle-leslie-exterior.jpg",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/hero",
       "alt": "Ireland: A More Intimate Way to Experience the Emerald Isle"
      }
     },
@@ -1804,7 +1804,7 @@
       }
      ],
      "image": {
-      "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3cf424b71_a9af4b68b_6a86197f8fe0f8ee1d307f57_Cork_E2_80_99s_20Vienna_20Woods_20Hero.jpg",
+      "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eec19dde3_da1e04ac4_697a1381f7ac415cea3407e4_castle-leslie-exterior.jpg",
       "alt": "Ireland: Coastlines, Culture, and Country House Hospitality"
      }
     }
@@ -1876,16 +1876,20 @@
    ],
    "airports": [
     [
-     "Dublin Airport (DUB)",
+     "Donegal Airport (CFN)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Belfast International Airport (BFS)",
+     "City of Derry Airport (LDY)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Dublin Airport (DUB)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "DUB · BFS",
+   "flyInto": "CFN · LDY",
    "bestShort": "May–Sep",
    "atlasName": "Ireland"
   },
@@ -2613,6 +2617,67 @@
    "flyInto": "WDH · OND",
    "bestShort": "Apr–Oct",
    "atlasName": "Namibia"
+  },
+  {
+   "slug": "new-mexico",
+   "name": "New Mexico",
+   "region": "usa-canada",
+   "regionName": "USA & Canada",
+   "ledgerId": "DST-2026-000086",
+   "subtitle": "The Ted Turner Reserves",
+   "leading": "New Mexico is where Ted Turner restored more than a million acres of the American West to bison, elk, desert bighorn and Mexican wolves. Four of his reserves now take guests: alpine Vermejo in the north, and Ladder, Armendaris and the hot springs of Sierra Grande along the Rio Grande in the south.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/castle-rock-bison-vermejo",
+    "alt": "New Mexico, USA & Canada"
+   },
+   "story": [
+    {
+     "eyebrow": "The Ted Turner Reserves",
+     "title": "Land Restored, Then Shared",
+     "blocks": [
+      {
+       "p": "Vermejo covers about 558,000 acres of mountain, meadow and alpine tundra in the Sangre de Cristo, with a 1900s stone mansion, cottages and cabins. Ladder spans about 156,000 acres along four Rio Grande tributaries and keeps a private Mexican wolf breeding facility. Armendaris holds about 360,000 acres of Chihuahuan Desert and the Fra Cristobal range, where desert bighorn returned. Sierra Grande is a 17-room lodge on natural hot springs in Truth or Consequences."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/fra-cristobal-range-armendaris",
+      "alt": "New Mexico: Land Restored, Then Shared"
+     }
+    },
+    {
+     "eyebrow": "Who It Suits",
+     "title": "Whole Houses for Families and Groups",
+     "blocks": [
+      {
+       "p": "Families and small groups who want a reserve to themselves: Ladder's Country House and Armendaris's Hacienda each sleep up to eight with a private chef and guide, and Vermejo's Casa Grande, cottages and cabins can be taken whole. Sierra Grande is the easy base for day tours to Ladder and Armendaris."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/ladder-vista",
+      "alt": "New Mexico: Whole Houses for Families and Groups"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "needs_review",
+   "months": [],
+   "airports": [
+    [
+     "El Paso (ELP)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Albuquerque (ABQ)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "ELP · ABQ",
+   "bestShort": "Ask James",
+   "atlasName": "United States of America",
+   "useStays": true,
+   "chartLabel": "New Mexico"
   },
   {
    "slug": "new-zealand",

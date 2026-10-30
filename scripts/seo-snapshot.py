@@ -5,6 +5,15 @@ robots, JSON-LD count and H1 count, then compare with the committed baseline.
 
   python3 scripts/seo-snapshot.py --write   # refresh tests/seo-baseline.json (only when a change is intended)
   python3 scripts/seo-snapshot.py           # compare; exits 1 on any difference
+
+Build under production conditions first, so robots reflects what Google sees
+(a plain local build is noindex everywhere and the guard would never catch an
+indexing regression):
+
+  NEXT_PUBLIC_INDEXING=on VERCEL_ENV=production NEXT_PUBLIC_PATHWAYS=on npm run build
+
+Baseline re-snapshotted on main 30 Oct 2026 (550 pages, 491 indexable) after the
+Beckon, Booking Live and Wild Pathways releases landed.
 """
 import json, os, re, sys
 

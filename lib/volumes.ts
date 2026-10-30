@@ -69,6 +69,14 @@ export const VOLUME_STYLES: Record<VolumeKey, VolumeStyle> = {
 
 export const VOLUME_ORDER: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];
 
+// Compatibility map for the Wild Pathways brief (Foundation V1.3 §3), whose
+// VOL-01…06 numbering differs from the romans James approved on 29 Oct 2026.
+// The brief's IDs are aliases only: nothing live is renumbered, and pages,
+// stamps and Ledger IDs keep reading the keys and romans above.
+export type VolumeBriefId = "VOL-01" | "VOL-02" | "VOL-03" | "VOL-04" | "VOL-05" | "VOL-06";
+export const VOLUME_BRIEF_ID: Record<VolumeKey, VolumeBriefId> = { stays: "VOL-01", voyages: "VOL-02", safaris: "VOL-03", gatherings: "VOL-04", overland: "VOL-05", europe: "VOL-06" };
+export const VOLUME_BY_BRIEF_ID: Record<VolumeBriefId, VolumeKey> = { "VOL-01": "stays", "VOL-02": "voyages", "VOL-03": "safaris", "VOL-04": "gatherings", "VOL-05": "overland", "VOL-06": "europe" };
+
 /** The house's older four-plus-one volume names map onto the six. */
 export function volumeStyle(v: string | undefined | null): VolumeStyle {
   return VOLUME_STYLES[(v as VolumeKey) in VOLUME_STYLES ? (v as VolumeKey) : "stays"];

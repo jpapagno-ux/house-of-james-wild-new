@@ -18,7 +18,7 @@ export default function VerdictCard({ name, v, k, stamp }: { name: string; v: Ve
         <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 w-16 h-5 bg-[#e9dfcb]/80 rotate-[-2deg] shadow-sm" aria-hidden="true" />
         <div className="relative flex items-baseline justify-between gap-4">
           <p className="ledger-eyebrow !text-[10px] !text-[#8b3a2e]">The verdict</p>
-          <p className="ledger-eyebrow !text-[10px] !text-[#8a7f70]">{v.where} · {v.when}</p>
+          <p className="ledger-eyebrow !text-[10px]">{v.where} · {v.when}</p>
         </div>
         <h2 id="verdict-heading" className="sr-only">The Verdict on {name}</h2>
         <div className="relative mt-4 space-y-3 ledger-display italic text-[1.08rem] md:text-[1.2rem] leading-[1.6]">
@@ -33,7 +33,7 @@ export default function VerdictCard({ name, v, k, stamp }: { name: string; v: Ve
           </div>
           <div className="shrink-0 text-right">
             <Signature className="w-28 md:w-36" />
-            <p className="ledger-eyebrow !text-[9px] !text-[#8a7f70] mt-1">James Wild</p>
+            <p className="ledger-eyebrow !text-[9px] mt-1">James Wild</p>
           </div>
         </div>
         {/* The volume's ink stamp, pressed beside James's note (volume kit). */}

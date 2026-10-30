@@ -46,6 +46,45 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
       "Snorkelling, surf lessons, naturalist walks: what to book ahead and what to leave loose",
     ],
   } },
+  // Approved showcase hosts (James, 30 Oct 2026). The on/off switch for each
+  // lives in Airtable (Wild & Co Safaris base, Hosts table, "Show on site");
+  // mirror it here: untick there, set state "not_linking" here.
+  "camp:lion-sands/ivory-lodge": { state: "available", host: {
+    name: "Matthew Christopher Smith", role: "Your host · International Sales Manager, MORE Collection (Lion Sands)", seats: 6,
+    tz: "Africa/Johannesburg", place: "Johannesburg", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=lion-sands-ivory-lodge`,
+    topics: [
+      "The suites at Ivory Lodge and which suits your party",
+      "What the rate includes and what's extra",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there: flights, the airstrip and the transfer",
+      "Children, celebrations, dietary needs, and anything that keeps you up at night",
+    ],
+  } },
+  "stay:wilderness-dumatau": { state: "available", host: {
+    name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
+    tz: "America/Denver", place: "Denver", zoneLabel: "US Mountain Time",
+    calendlyUrl: `${GROUP_CALENDLY}?property=wilderness-dumatau`,
+    topics: [
+      "DumaTau's suites and which suits your party",
+      "What the rate includes and what's extra",
+      "Your dates against the best months in the Linyanti",
+      "Getting there: flights into Maun or Kasane and the light-aircraft transfer",
+      "Pairing DumaTau with other Wilderness camps, and anything that keeps you up at night",
+    ],
+  } },
+  "stay:wilderness-little-duma-tau": { state: "available", host: {
+    name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
+    tz: "America/Denver", place: "Denver", zoneLabel: "US Mountain Time",
+    calendlyUrl: `${GROUP_CALENDLY}?property=wilderness-little-duma-tau`,
+    topics: [
+      "Little DumaTau's suites and which suits your party",
+      "What the rate includes and what's extra",
+      "Your dates against the best months in the Linyanti",
+      "Getting there: flights into Maun or Kasane and the light-aircraft transfer",
+      "Pairing DumaTau with other Wilderness camps, and anything that keeps you up at night",
+    ],
+  } },
   "voyage:aliikai": { state: "available", host: {
     name: "Aliikai Cruise Director", role: "Your host · aboard Aliikai, Raja Ampat", sample: true, seats: 6,
     tz: "Asia/Jayapura", place: "Raja Ampat", zoneLabel: "Eastern Indonesia Time (UTC+9)",

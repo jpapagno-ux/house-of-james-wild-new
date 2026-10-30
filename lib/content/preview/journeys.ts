@@ -33,6 +33,8 @@ export type Journey = {
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 const MEDIA = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
+// South Africa stops: Londolozi's camps from its Wetu directions; Ellerman House and Leeu Estates from their Ledger records.
+const ZA = { varty: { lat: -24.7965, lng: 31.4999 }, pioneer: { lat: -24.7971, lng: 31.496 }, ellerman: { lat: -33.9291, lng: 18.3779 }, leeu: { lat: -33.9156, lng: 19.1127 } };
 const n = (...ids: (keyof typeof NODES)[]) => ids.map((i) => ({ lat: NODES[i].lat, lng: NODES[i].lng }));
 
 const RAW: Record<string, Journey[]> = {
@@ -51,6 +53,16 @@ const RAW: Record<string, Journey[]> = {
     { kind: "voyage", ledgerId: "ITN-VSL-2026-302558", title: "10 Day Raja Ampat North", eyebrow: "Aliikai · Raja Ampat", nights: 9, line: "Sorong → Wayag → Sorong", bestMonths: "October to April", href: recordHref("voyage", "aliikai-10-day-raja-ampat-north", "raja-ampat"), image: `${CDN}/68bf434cfbdffdbeebf4a0a7_Raja%20Hero%20Main.JPG`, status: "founder_traveled", statusYear: 2024, price: { amount: 7650, basis: "per person, 2027, + 11% tax" }, contentStatus: "approved" },
     { kind: "voyage", ledgerId: "ITN-VSL-2026-483990", title: "8 Day Raja Ampat and Misool", eyebrow: "Aliikai · Raja Ampat", nights: 7, line: "Sorong → Misool → Sorong", bestMonths: "October to April", href: recordHref("voyage", "aliikai-8-day-raja-ampat-and-misool", "raja-ampat"), image: `${CDN}/68bf434cfbdffdbeebf4a0a7_Raja%20Hero%20Main.JPG`, price: { amount: 5950, basis: "per person, 2027, + 11% tax" }, contentStatus: "approved" },
     { kind: "voyage", ledgerId: "ITN-VSL-2026-417445", title: "5 Day Komodo Island", eyebrow: "Aliikai · Komodo", nights: 4, line: "Labuan Bajo → Komodo → Labuan Bajo", bestMonths: "May to September", href: recordHref("voyage", "aliikai-5-day-komodo-island", "komodo"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/wildco/voyages/vessels/aliikai/komodo/padar-island-aerial", price: { amount: 3400, basis: "per person, 2027, + 11% tax" }, contentStatus: "approved" },
+  ],
+  // South Africa: four Londolozi routes James approved on 30 Oct 2026 ("your suggested route
+  // and pick three others"). Not filed in the library yet; the route pages stay noindex until
+  // he signs off the copy. Stops are the Ledger's own stay coordinates (Londolozi's from its
+  // Wetu directions); Johannesburg has no point on file, so the line starts at the camp.
+  "south-africa": [
+    { kind: "route", ledgerId: "ITN-LAND-2026-202031", title: "The Sand River by Road", eyebrow: "The house South Africa route", nights: 8, line: "Johannesburg → Londolozi → Cape Town → Franschhoek → Cape Town", bestMonths: null, href: recordHref("route", "the-sand-river-by-road", "south-africa"), status: "house_approved", statusYear: 2026, stops: [ZA.varty, ZA.ellerman, ZA.leeu], chartKey: "south-africa", contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-101250", title: "Leopards Through the Lens", eyebrow: "A photographic safari at Londolozi", nights: 4, line: "Johannesburg → Londolozi Varty Camp → Johannesburg, or Cape Town", bestMonths: null, href: recordHref("route", "leopards-through-the-lens", "south-africa"), status: "house_approved", statusYear: 2026, stops: [ZA.varty], chartKey: "south-africa", contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-431095", title: "Track Your Life with Boyd Varty", eyebrow: "A men's tracking and coaching retreat", nights: 4, line: "Johannesburg → Londolozi Pioneer Camp → Johannesburg, or Cape Town", bestMonths: "Four retreats a year, April to July", href: recordHref("route", "track-your-life-with-boyd-varty", "south-africa"), status: "house_approved", statusYear: 2026, stops: [ZA.pioneer], chartKey: "south-africa", contentStatus: "approved" },
+    { kind: "route", ledgerId: "ITN-LAND-2026-982652", title: "Three Generations at Pioneer", eyebrow: "A private family homestead, then the Cape", nights: 7, line: "Johannesburg → Londolozi Pioneer Camp → Cape Town", bestMonths: null, href: recordHref("route", "three-generations-at-pioneer", "south-africa"), status: "house_approved", statusYear: 2026, stops: [ZA.pioneer, ZA.ellerman], chartKey: "south-africa", contentStatus: "approved" },
   ],
   botswana: [
     { kind: "route", ledgerId: "ITN-LAND-2026-713648", title: "Grand Kwando Botswana", eyebrow: "The house Botswana circuit", nights: 12, line: "Maun → Lagoon → Lebala → Splash → Tau Pan → Maun", bestMonths: "May to October", href: recordHref("route", "grand-kwando-botswana", "botswana"), image: `${MEDIA}/08c77d237_generated_image.png`, status: "founder_traveled", contentStatus: "published" },

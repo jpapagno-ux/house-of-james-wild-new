@@ -5,12 +5,17 @@ import komodo5 from "./trips/5-day-komodo-island.json";
 import founders7 from "./trips/the-original-costa-route-7-days.json";
 import founders10 from "./trips/the-original-costa-route-10-days.json";
 import foundersC2C from "./trips/the-original-costa-route-coast-to-coast.json";
+import zaSandRiver from "./trips/the-sand-river-by-road.json";
+import zaLens from "./trips/leopards-through-the-lens.json";
+import zaTrack from "./trips/track-your-life-with-boyd-varty.json";
+import zaPioneer from "./trips/three-generations-at-pioneer.json";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
 // the content of one route page plus its JSON-LD; the live map's route lives
 // in /public/maps/routes/<id>.json and the engraved fallback in ./trips/<id>.map.html.
 
-export type TripImg = { url: string; alt: string };
+/** credit: the photographer or owner line printed on the photo (e.g. "Photograph courtesy of Londolozi"). */
+export type TripImg = { url: string; alt: string; credit?: string };
 type Row = [string, string];
 export type Trip = {
   id: string; kind: "overland" | "voyage"; h1: string; sub: string; crumbs: string[];
@@ -23,7 +28,7 @@ export type Trip = {
   map_eyebrow: string; map_title: string; map_coord: string;
   suits: [string, string, string][]; twice: [string, string, string][];
   dayeyebrow: string; daytitle: string; staylabel: string; movelabel: string;
-  days: { n: string; title: string; line: string; body: string; stay: string; meals: string; move: string; acts: string; img: string; head: boolean; stage: string; stageName: string; stageMeta: string; mark: string }[];
+  days: { stayLinks?: [string, string][]; n: string; title: string; line: string; body: string; stay: string; meals: string; move: string; acts: string; img: string; head: boolean; stage: string; stageName: string; stageMeta: string; mark: string }[];
   exp_title: string;
   experiences: { name?: string; title?: string; kicker?: string; info?: string; dur?: string; incl?: string; season?: string; line?: string; chips?: string[]; photos?: string[]; body?: string; james?: string; rows?: Row[] }[];
   lodges_title?: string;
@@ -53,6 +58,8 @@ export type Trip = {
   firstTime?: { eyebrow: string; title: string; intro: string; points: [string, string][] };
   /** Stay/vessel slugs whose live offers show on this route (Offer Ledger). */
   offerRefs?: string[];
+  /** One line under the summary naming whose photographs the page uses. */
+  photoCredit?: string;
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
 };
 
@@ -63,6 +70,11 @@ export const TRIPS: Record<string, Trip> = {
   "the-original-costa-route-7-days": founders7 as unknown as Trip,
   "the-original-costa-route-10-days": founders10 as unknown as Trip,
   "the-original-costa-route-coast-to-coast": foundersC2C as unknown as Trip,
+  // South Africa: Londolozi routes (James, 30 Oct 2026). Copy awaiting his sign-off, so the pages are noindex.
+  "the-sand-river-by-road": zaSandRiver as unknown as Trip,
+  "leopards-through-the-lens": zaLens as unknown as Trip,
+  "track-your-life-with-boyd-varty": zaTrack as unknown as Trip,
+  "three-generations-at-pioneer": zaPioneer as unknown as Trip,
 };
 
 /** Routes built on a given stay (for "On these routes" bands). */

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
@@ -8,6 +7,9 @@ import JsonLd from "@/components/ledger/JsonLd";
 import { FieldIcon, HandCta } from "@/components/ledger/FieldIcon";
 import { Icon } from "@/components/ledger/Marks";
 import ChatSample, { TagChip } from "@/components/iggi/ChatSample";
+import IggiMark from "@/components/iggi/IggiMark";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { SectionHead } from "@/components/about/Parts";
 import { IGGI, IGGI_IMG, NOTES, PLACES, QUESTIONS, SAMPLES, TAGS, type Tag } from "@/lib/content/iggi";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -45,12 +47,17 @@ export default function IggiPage() {
               <ul className="mt-6 space-y-2">{g.quips.map((q) => <li key={q} className="ledger-hand text-[1.6rem] leading-tight text-coast-deep">&ldquo;{q}&rdquo;</li>)}</ul>
               <p className="ledger-eyebrow mt-2">Iggi</p>
             </div>
-            <div className="relative aspect-square max-w-[420px] w-full mx-auto bg-paper-card">
-              <Image src={IGGI_IMG.url} alt={IGGI_IMG.alt} fill priority sizes="(min-width: 1024px) 420px, 80vw" className="object-contain p-6" />
+            <div className="relative aspect-square max-w-[420px] w-full mx-auto bg-paper-card flex items-center justify-center text-coast">
+              {/* Iggi's mark (Candidate A, chosen 30 Oct 2026); a portrait may follow later. */}
+              <IggiMark size={300} className="w-[72%] h-auto" />
             </div>
           </header>
 
           <div className="mt-12"><AnswerBlock>{g.answer}</AnswerBlock></div>
+
+          {IGGI_ON && (
+            <IggiPanel ctx={{ entityType: "property", entitySlug: "meet-iggi", sourcePage: PATH, volume: null }} heading="Ask Iggi" lead="Tell Iggi where you're drawn, or what kind of journey you want. He answers from the Ledger and labels every source." />
+          )}
 
           <section className="mt-12 md:mt-16" aria-labelledby="where-heading">
             <SectionHead eyebrow="Where you'll find him" title="He Starts From the Page You're On" id="where-heading" />
@@ -147,7 +154,7 @@ export default function IggiPage() {
 
           <section className="mt-16 text-center" aria-label="Start exploring">
             <p className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight">What&rsquo;s caught your curiosity?</p>
-            <p className="mt-3 text-[17px] ledger-muted">Until Iggi&rsquo;s here, James and the Compass are happy to take the first question.</p>
+            <p className="mt-3 text-[17px] ledger-muted">{IGGI_ON ? "Ask Iggi above, take the Compass, or go straight to James." : "Until Iggi\u2019s here, James and the Compass are happy to take the first question."}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-4"><Link href="/compass" className="ledger-btn ledger-btn--solid">Take the Compass</Link><Link href="/plan" className="ledger-btn">Ask James</Link></div>
           </section>
         </div>

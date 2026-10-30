@@ -11,7 +11,7 @@ export default function PlaceNote({ place, note }: { place: string; note: Note }
       <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{note.origin ? "Where it started" : "A note from James"} · {place}</p>
       <p className="mt-2 text-[16px] md:text-[17px] leading-snug text-[#3b2716]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{note.line}</p>
       <div className="mt-2 flex items-end justify-between gap-3">
-        {note.blog ? <a href={note.blog.href} className="text-[11px] tracking-[0.14em] uppercase underline underline-offset-4 text-[#8a7f70] hover:text-[#8b3a2e]">From the Captain&rsquo;s Log: {note.blog.title} →</a> : <span />}
+        {note.blog ? <a href={note.blog.href} className="text-[11px] tracking-[0.14em] uppercase underline underline-offset-4 text-ink-faint hover:text-[#8b3a2e]">From the Captain&rsquo;s Log: {note.blog.title} →</a> : <span />}
         <Signature className="w-16 shrink-0" />
       </div>
     </aside>

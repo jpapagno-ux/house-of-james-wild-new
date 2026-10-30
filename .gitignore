@@ -9,4 +9,5 @@ scripts/.cc-src.cjs
 data/library/export.json
 data/library/stays.json
 data/library/destinations.json
+data/library/impact-notes.json
 report.json

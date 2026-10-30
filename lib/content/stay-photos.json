@@ -2411,6 +2411,50 @@
     }
    ],
    "frames": []
+  },
+  "breac-house": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/hero",
+     "alt": "Breac.House on Horn Head, Donegal, Ireland"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/house",
+     "alt": "Breac.House, a small design retreat on the Donegal coast"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/balcony",
+     "alt": "Breac.House, Donegal: a balcony looking out over Horn Head"
+    }
+   ],
+   "frames": [],
+   "credit": "Breac.House"
+  },
+  "wilderness-dumatau": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area-and-jetty",
+     "alt": "Wilderness DumaTau, Botswana: the main area and jetty on Osprey Lagoon"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-floating-fire-pit",
+     "alt": "Wilderness DumaTau, Botswana: the floating fire pit on the lagoon"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-elephant",
+     "alt": "Wilderness DumaTau, Botswana: an elephant in the bush"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-from-the-river",
+     "alt": "Wilderness DumaTau, Botswana: the camp seen from the Linyanti channel"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-boat-trip",
+     "alt": "Wilderness DumaTau, Botswana: a boat trip on the lagoon"
+    }
+   ],
+   "frames": [],
+   "credit": "Wilderness"
   }
  }
 }

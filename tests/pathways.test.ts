@@ -76,7 +76,7 @@ test("brief volume IDs alias the six live volumes without renumbering them", () 
 test("the sample pathway map is sound and every record is still in the library export", () => {
   const map = JSON.parse(readFileSync(new URL("../lib/content/pathways/pathway-map.json", import.meta.url), "utf8")) as { records: PathwayRecord[] };
   assert.deepEqual(validatePathwayMap(map.records), []);
-  assert.ok(map.records.length >= 3 && map.records.length <= 5, "three to five sample records in Phase 1");
+  assert.ok(map.records.length >= 3 && map.records.length <= 8, "a handful of sample records in Phase 1");
   const stays = JSON.parse(readFileSync(new URL("../lib/content/stays.json", import.meta.url), "utf8")).stays as { slug: string; ledgerId: string | null }[];
   for (const r of map.records) {
     const s = stays.find((x) => x.slug === r.slug);

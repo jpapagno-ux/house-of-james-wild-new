@@ -1763,10 +1763,6 @@
     {
      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-exterior",
      "alt": "Longitude 131°, Uluru: the Dune Pavilion set into the desert"
-    },
-    {
-     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-view",
-     "alt": "Longitude 131°, Uluru: tent deck with a daybed facing Uluru at dusk"
     }
    ],
    "frames": [
@@ -1774,6 +1770,11 @@
      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-feature",
      "alt": "Longitude 131°: view across the bed to a deck overlooking Uluru",
      "caption": "Across the bed to the deck and Uluru"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-view",
+     "alt": "Longitude 131°: tent deck with a daybed facing Uluru at dusk",
+     "caption": "Uluru at dusk, from the deck"
     },
     {
      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-interior",

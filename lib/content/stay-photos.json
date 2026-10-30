@@ -1797,6 +1797,63 @@
      "caption": "The Dune Pavilion bathroom"
     }
    ]
+  },
+  "beckon-silky-oaks-lodge": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/billabong-deck-firepit",
+     "alt": "Silky Oaks Lodge, Daintree: deck with a curved sofa and fire pit facing the rainforest at dusk"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-deck",
+     "alt": "Silky Oaks Lodge, Daintree: Daintree Pavilion deck at dusk with plunge pool and daybed"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-premium-tub",
+     "alt": "Silky Oaks Lodge, Daintree: dark stone soaking tub on a balcony among rainforest trees"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-lounge",
+     "alt": "Silky Oaks Lodge, Daintree: lounge with timber ceilings and floor-to-ceiling rainforest views"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-retreat-tub",
+     "alt": "Silky Oaks Lodge: oval stone bathtub on a timber deck in tropical rainforest",
+     "caption": "A bath in the canopy"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/riverhouse-hammock",
+     "alt": "Silky Oaks Lodge: woven hammock on a balcony overlooking dense green forest",
+     "caption": "The Riverhouse hammock"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/billabong-hammock-deck",
+     "alt": "Silky Oaks Lodge: timber deck with a hammock, lounge seating and fire pit above the rainforest",
+     "caption": "Billabong Suite deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/treehouse-premium-deck",
+     "alt": "Silky Oaks Lodge: deck with seating and a hammock looking into the rainforest",
+     "caption": "Treehouse Premium deck"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/rainforest-retreat-bedroom",
+     "alt": "Silky Oaks Lodge: bedroom with timber floors and a balcony hammock over green forest",
+     "caption": "Rainforest Retreat"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/riverhouse-tub",
+     "alt": "Silky Oaks Lodge: outdoor deck with a round soaking tub and rainforest views",
+     "caption": "The Riverhouse tub"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/silky-oaks/daintree-pavilion-bedroom",
+     "alt": "Silky Oaks Lodge: Daintree Pavilion bedroom with floor-to-ceiling rainforest views",
+     "caption": "Daintree Pavilion bedroom"
+    }
+   ]
   }
  }
 }

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { FieldIcon } from "@/components/ledger/FieldIcon";
-import { IGGI_IMG, TAGS, type ChatSample as Sample, type Tag } from "@/lib/content/iggi";
+import { TAGS, type ChatSample as Sample, type Tag } from "@/lib/content/iggi";
+import IggiMark from "@/components/iggi/IggiMark";
 
 // ChatSample: a static mock of Iggi embedded on a page, showing the page it
 // knows it's on, his opener, the standing prompts, and one answer built
@@ -22,7 +22,7 @@ export default function ChatSample({ s }: { s: Sample }) {
   return (
     <figure className="m-0 h-full bg-paper border ledger-rule shadow-[0_10px_28px_rgba(45,42,38,0.10)] flex flex-col">
       <div className="flex items-center gap-3 border-b ledger-rule px-4 py-3 bg-coast-deep text-paper">
-        <span className="relative w-9 h-9 rounded-full overflow-hidden bg-paper shrink-0"><Image src={IGGI_IMG.url} alt="" fill sizes="36px" className="object-contain p-0.5" /></span>
+        <span className="relative w-9 h-9 rounded-full bg-paper shrink-0 flex items-center justify-center text-coast"><IggiMark size={28} decorative /></span>
         <div className="min-w-0">
           <p className="text-[15px] leading-tight">Iggi</p>
           <p className="text-[11px] tracking-[0.12em] uppercase text-coast-light truncate">On this page · {s.where}</p>

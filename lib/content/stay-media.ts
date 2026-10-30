@@ -8,6 +8,7 @@ const LEEU = "wildco/south-africa/leeu-estates-franschhoek";
 const big = (id: string, upscale = false) => `${CLD}/${upscale ? "e_upscale/" : ""}c_limit,w_2560/q_auto:good/f_jpg/${id}`;
 
 import photos from "./stay-photos.json";
+import stays from "./stays.json";
 
 // pos: CSS object-position, for photos whose subject sits off-centre.
 export type FullFrame = { src: string; alt: string; caption: string; pos?: string };
@@ -42,6 +43,12 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
 
 // Who owns each stay's photographs (stay-photos.json "credit"). Printed under the
 // full frames and written into every image's structured data.
-export const PHOTO_CREDIT: Record<string, string> = Object.fromEntries(
-  Object.entries(photos.stays as Record<string, { credit?: string }>).filter(([, v]) => v.credit).map(([k, v]) => [k, v.credit as string]),
-);
+// Wilderness supplies the photographs for every Wilderness camp (James, 30 Oct
+// 2026), so each "wilderness-" stay is credited to Wilderness unless its own
+// entry names someone else.
+export const PHOTO_CREDIT: Record<string, string> = {
+  ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.startsWith("wilderness-")).map((x) => [x.slug, "Wilderness"])),
+  ...Object.fromEntries(
+    Object.entries(photos.stays as Record<string, { credit?: string }>).filter(([, v]) => v.credit).map(([k, v]) => [k, v.credit as string]),
+  ),
+};

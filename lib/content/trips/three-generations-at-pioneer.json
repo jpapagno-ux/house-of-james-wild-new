@@ -80,7 +80,7 @@
  "markline": "",
  "heroalt": "",
  "herolabel": "",
- "quote": "\"Take the whole camp. The children will remember the archery; you'll remember watching them. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "quote": "\"Take the whole camp. The children will remember the archery; you'll remember watching them.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
  "answer": "Three Generations at Pioneer is an 8-day family itinerary from James Wild & Co.: four nights at Londolozi Pioneer Camp, taken whole as a private homestead for up to twelve (six adults and six children, children six and over), with a private Land Rover and the Cubs Den children's programme, then three nights in Cape Town. You go by road from Johannesburg to Londolozi and by air to Cape Town.",
  "striptitle": "Eight days at a glance",
  "strip": [
@@ -149,7 +149,7 @@
    "stage": "St 01",
    "stageName": "Londolozi",
    "stageMeta": "DAYS 1–4 · 4 NIGHTS · PIONEER CAMP, PRIVATE",
-   "mark": "Founder stayed · 2018"
+   "mark": "Founder stayed · Varty Camp · 2018"
   },
   {
    "stayLinks": [
@@ -402,7 +402,7 @@
    "Pioneer Camp taken whole: up to twelve, children six and over, with a private Land Rover.",
    "The Cubs Den for the children, then three nights in Cape Town."
   ],
-  "quote": "I went to Londolozi with my daughter. Go with yours, and take her children too. [Draft — J.W. to approve]"
+  "quote": "I went to Londolozi with my daughter. Go with yours, and take her children too."
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Johannesburg to Pioneer, then the Cape",

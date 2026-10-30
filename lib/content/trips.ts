@@ -71,6 +71,10 @@ export const TRIPS: Record<string, Trip> = {
   "the-original-costa-route-10-days": founders10 as unknown as Trip,
   "the-original-costa-route-coast-to-coast": foundersC2C as unknown as Trip,
   // South Africa: Londolozi routes (James, 30 Oct 2026). Copy awaiting his sign-off, so the pages are noindex.
+  //   James approved the drafted J.W. lines on these routes (30 Oct 2026); copy_approved is unchanged, so they stay noindex.
+  //   Founder mark: James stayed at Londolozi Varty Camp in 2018, so the 2018 mark names Varty Camp (James, 30 Oct 2026).
+  //   Cape Town → Franschhoek: "about 1 hr 20 min by road" is James's own figure, house knowledge with no published
+  //   source (James, 30 Oct 2026). Leeu Estates → Cape Town International (60–75 min) is a different leg, kept as is.
   "the-sand-river-by-road": zaSandRiver as unknown as Trip,
   "leopards-through-the-lens": zaLens as unknown as Trip,
   "track-your-life-with-boyd-varty": zaTrack as unknown as Trip,

@@ -24,7 +24,7 @@
    "2",
    "Cape Town",
    "Days 4–6",
-   "By road to Franschhoek, about 80 km, about 45 minutes"
+   "By road to Franschhoek, about 80 km, about 1 hr 20 min"
   ],
   [
    "3",
@@ -86,7 +86,7 @@
  "markline": "",
  "heroalt": "",
  "herolabel": "",
- "quote": "\"Three nights on the Sand River first. The Cape keeps; the leopards don't wait. [Draft — J.W. to approve]\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
+ "quote": "\"Three nights on the Sand River first. The Cape keeps; the leopards don't wait.\" <span style=\"font-style: normal; font-size: 16px\">— J. W.</span>",
  "answer": "The Sand River by Road is a 9-day South Africa itinerary from James Wild & Co.: three nights at Londolozi in the western Sabi Sand (Varty Camp or Tree Camp), three at Ellerman House in Cape Town and two at Leeu Estates in Franschhoek. You go by road from Johannesburg to Londolozi, by air to Cape Town, by road to the Winelands and back to Cape Town for your flights.",
  "striptitle": "Nine days at a glance",
  "strip": [
@@ -164,7 +164,7 @@
    "stage": "St 01",
    "stageName": "Londolozi",
    "stageMeta": "DAYS 1–3 · 3 NIGHTS · SABI SAND",
-   "mark": "Founder stayed · 2018"
+   "mark": "Founder stayed · Varty Camp · 2018"
   },
   {
    "stayLinks": [
@@ -298,11 +298,11 @@
    ],
    "n": "DAY 07",
    "title": "Cape Town to Franschhoek",
-   "line": "By road into the Winelands · about 80 km, about 45 minutes",
-   "body": "By road from Cape Town to the Franschhoek Valley, about 80 km, about 45 minutes, to Leeu Estates among the vineyards below the mountains.",
+   "line": "By road into the Winelands · about 80 km, about 1 hr 20 min",
+   "body": "From Cape Town to the Franschhoek Valley, about 80 km and about 1 hr 20 min by road, to Leeu Estates among the vineyards below the mountains.",
    "stay": "Leeu Estates",
    "meals": "[Confirm with the hotel]",
-   "move": "By road · about 80 km, about 45 minutes",
+   "move": "By road · about 80 km, about 1 hr 20 min",
    "acts": "Transfer day · first tasting",
    "img": "PHOTO · LEEU ESTATES MANOR HOUSE",
    "imgAlt": "",
@@ -408,7 +408,7 @@
   ],
   [
    "How far is Franschhoek from Cape Town?",
-   "By road, about 80 km, about 45 minutes. From Leeu Estates it is about 70 km to Cape Town International (CPT), around 60 to 75 minutes depending on traffic."
+   "About 80 km, about 1 hr 20 min by road. From Leeu Estates it is about 70 km to Cape Town International (CPT), around 60 to 75 minutes depending on traffic."
   ],
   [
    "How much does The Sand River by Road cost?",
@@ -455,7 +455,7 @@
    "He stayed at Ellerman House in May 2026, and visited and vetted every Leeu Estates property in Franschhoek the same month.",
    "Three nights at Londolozi, the house standard in a safari region, before the Cape."
   ],
-  "quote": "Give the Sand River three nights before you give it an opinion. [Draft — J.W. to approve]"
+  "quote": "Give the Sand River three nights before you give it an opinion."
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "The Sabi Sand to the Cape Winelands",
@@ -684,7 +684,7 @@
     ],
     [
      "Getting there",
-     "By road from Cape Town, about 80 km, about 45 minutes"
+     "From Cape Town, about 80 km, about 1 hr 20 min by road"
     ],
     [
      "Stay page",

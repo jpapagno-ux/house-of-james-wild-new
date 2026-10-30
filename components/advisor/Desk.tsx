@@ -104,7 +104,7 @@ export function AdvisorStrip({ place, countrySlug, regionSlug, volume, ledgerId,
                   <Headshot a={a} size={48} />
                   <div className="min-w-0">
                     <p className="ledger-display text-[18px] leading-tight truncate">{a.name}</p>
-                    <p className="font-mono text-[10.5px] tracking-[0.1em] ledger-muted mt-0.5">{a.desk!.adv}{a.sample ? " · sample" : ""}</p>
+                    <p className="font-mono text-[10.5px] tracking-[0.1em] ledger-muted mt-0.5">{a.desk!.adv}{a.sample ? " · stand-in" : ""}</p>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col gap-3 flex-1">
@@ -146,7 +146,7 @@ export function AdvisorScroll({ regionSlug, volume, title }: { regionSlug?: stri
           const places = Array.from(new Set(es.map((e) => e.place.split(" · ").pop()))).slice(0, 3).join(" · ");
           return (
             <li key={a.slug} className="snap-start shrink-0 w-[260px] bg-paper border ledger-border p-4 flex flex-col gap-3">
-              <div className="flex items-center gap-3"><Headshot a={a} size={56} /><div className="min-w-0"><p className="ledger-display text-[18px] leading-tight">{a.name}</p><p className="ledger-eyebrow !text-[9.5px] mt-0.5 truncate">{a.role.replace(" · sample", "")}{a.sample ? " · sample" : ""}</p></div></div>
+              <div className="flex items-center gap-3"><Headshot a={a} size={56} /><div className="min-w-0"><p className="ledger-display text-[18px] leading-tight">{a.name}</p><p className="ledger-eyebrow !text-[9.5px] mt-0.5 truncate">{a.role.replace(" · stand-in", "")}{a.sample ? " · stand-in" : ""}</p></div></div>
               <p className="text-[13.5px] ledger-muted leading-snug">{places}</p>
               <ul className="flex flex-wrap gap-1.5">{a.desk!.volumes.map((v) => <li key={v}><Link href={VOLUME_HREF[v]} className="text-[11px] border ledger-border px-2 py-0.5 hover:ledger-crimson">{VOLUME_LABEL[v]}</Link></li>)}</ul>
               <div className="mt-auto pt-2 flex items-center justify-between">

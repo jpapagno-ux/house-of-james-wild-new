@@ -38,7 +38,7 @@ const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
   t: "advisor",
   n: a.name,
   u: a.profileHref ?? "/about/team#advisors",
-  k: a.sample ? "Advisor · sample" : "Advisor",
+  k: a.sample ? "Advisor · stand-in" : "Advisor",
   p: a.desk!.base,
   r: null,
   f: [],

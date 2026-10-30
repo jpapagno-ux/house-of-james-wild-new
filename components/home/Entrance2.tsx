@@ -7,6 +7,7 @@ import { PATHWAYS } from "@/lib/pathways";
 import { VOLUMES } from "@/lib/site";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
+import { PATHWAYS_INDEX_HREF, pathwayHref } from "@/lib/content/pathways/flag";
 import { JwcoSeal } from "@/components/ledger/Marks";
 
 // The home page, second pass (James, 30 Oct 2026): what travellers get, the
@@ -104,7 +105,6 @@ export function HouseUnderStrip() {
 
 /* Wild Pathways: travel by what you're after ------------------------------- */
 export function PathwaysBand() {
-  const built = !GUARD_ON || isBuilt("/pathways");
   const list = Object.values(PATHWAYS);
   return (
     <section className="mt-16 md:mt-24" aria-labelledby="pathways-heading">
@@ -114,11 +114,11 @@ export function PathwaysBand() {
           <h2 id="pathways-heading" className="ledger-h2 mt-2">Or travel by what you&rsquo;re after.</h2>
           <p className="mt-3 text-[16px] ledger-muted max-w-xl">The volumes say where. The Pathways say what for: every entry in the Ledger is filed under the kind of journey it serves, so a wellness stay in the Alentejo and a hot spring in Montana sit on the same page.</p>
         </div>
-        {built && <Link href="/pathways" className="ledger-btn-ghost">All pathways</Link>}
+        <Link href={PATHWAYS_INDEX_HREF} className="ledger-btn-ghost">All pathways</Link>
       </div>
       <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
         {list.map((p) => {
-          const href = built ? `/pathways/${p.key}` : `/plan?q=${encodeURIComponent(p.name)}`;
+          const href = pathwayHref(p.key);
           return (
             <li key={p.id}>
               <Link href={href} className="group block h-full p-5 border transition-colors" style={{ background: p.tint, borderColor: `${p.accent}33` }}>

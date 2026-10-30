@@ -24,6 +24,7 @@ import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
 import GatewayNight from "@/components/stays/GatewayNight";
+import ChapterRail from "@/components/ledger/ChapterRail";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
@@ -96,6 +97,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
   const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <>
       <SiteHeader overlay />
@@ -103,7 +105,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
         <HeroSlider slides={slides} label={`${c.name} in photographs`}>
           <div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{c.regionName} · Destination</p>
-            <h1 className="ledger-display text-5xl md:text-7xl mt-3">{c.name}</h1>
+            <h1 className="ledger-h1 mt-3">{c.name}</h1>
             <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{c.subtitle}</p>
             <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
               <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} stays</dd></div>
@@ -124,10 +126,11 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               : <SafeLink key={s.slug} href={`/destinations/${c.region}/${s.slug}`} className="ledger-display text-[15px] ledger-muted hover:text-ink" fallback={<span className="ledger-display text-[15px] ledger-muted/60">{s.name}</span>}>{s.name}</SafeLink>)}
             </div>
             <span className="shrink-0 hidden md:flex items-center gap-5">
-              {[["The map", "the-map"], ...(c.compass ? [["Compass", "compass"]] : []), ...(live ? [["Live rates", "live-rates"]] : []), ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]].map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}
+              {chapters.map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}
             </span>
           </div>
         </nav>
+        <ChapterRail items={chapters} />
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: c.regionName, path: `/destinations/${c.region}` }, { name: c.name, path }]} /></div>

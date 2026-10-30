@@ -4,6 +4,8 @@ import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
+import { JwcoSeal } from "./Marks";
+import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
@@ -24,15 +26,16 @@ const SHOW_DESTINATIONS = !GUARD_ON || isBuilt("/destinations");
 function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
   return (
     <li className="group relative">
-      <Link href={v.href} className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
+      <Link href={v.href} className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-flex items-center gap-2 hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
+        {v.tone && <span className="w-1.5 h-1.5 rounded-full" style={{ background: light ? "rgba(255,255,255,.85)" : v.tone }} aria-hidden="true" />}
         {v.label}
       </Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
         <div className="w-[560px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] grid grid-cols-[1fr_1fr] gap-6 p-6 text-ink">
           <div>
-            <p className="ledger-eyebrow ledger-crimson">{v.label}</p>
-            <p className="ledger-display text-lg leading-snug mt-2">{v.intro}</p>
-            <Link href={v.href} className="ledger-btn mt-5">Enter {v.label}</Link>
+            <p className="ledger-eyebrow" style={v.tone ? { color: v.tone } : undefined}>{v.label}</p>
+            <p className="ledger-display text-[1.35rem] leading-snug mt-2">{v.intro}</p>
+            <Link href={v.href} className="ledger-btn mt-5" style={v.tone ? { borderColor: v.tone, color: v.tone } : undefined}>Enter {v.label}</Link>
           </div>
           <div className="space-y-4">
             {v.browse.length > 0 && <div>
@@ -63,35 +66,54 @@ function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
   );
 }
 
+const REGION_HERO: Record<string, string | null> = Object.fromEntries(REGION_DATA.map((r) => [r.slug, r.hero]));
+
 function DestinationsMenu({ light }: { light: boolean }) {
-  // Until region pages are built, the live site shows Destinations as a plain
-  // link to the hub (an empty dropdown would help no one).
-  if (!REGIONS.length) return <li><Link href="/destinations" className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>Destinations</Link></li>;
+  // Image-led: the photograph on the right changes with the region under the
+  // pointer (house chrome, 30 Oct 2026). Every link stays a plain <a> in the DOM.
+  const [pick, setPick] = useState<string>(REGIONS[0]?.slug ?? "africa");
+  const cls = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
+  if (!REGIONS.length) return <li><Link href="/destinations" className={cls}>Destinations</Link></li>;
+  const hero = REGION_HERO[pick];
+  const picked = REGIONS.find((r) => r.slug === pick);
   return (
     <li className="group relative">
-      <Link href="/destinations" className={`ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`}>
-        Destinations
-      </Link>
+      <Link href="/destinations" className={cls}>Destinations</Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute right-0 top-full pt-2 z-50">
-        <div className="w-[860px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] p-6 text-ink">
-          <div className="flex items-baseline justify-between">
-            <p className="ledger-eyebrow ledger-crimson">The ten regions and their countries</p>
-            <Link href="/destinations" className="ledger-eyebrow hover:ledger-crimson">All destinations</Link>
+        <div className="w-[960px] ledger-page border ledger-border shadow-[0_12px_40px_rgba(45,42,38,0.18)] grid grid-cols-[1.25fr_1fr] text-ink">
+          <div className="p-6">
+            <div className="flex items-baseline justify-between">
+              <p className="ledger-eyebrow ledger-crimson">The ten regions</p>
+              <Link href="/destinations" className="ledger-eyebrow hover:ledger-crimson">All destinations</Link>
+            </div>
+            <div className="mt-4 grid grid-cols-2 gap-x-8 gap-y-4" onMouseLeave={() => setPick(REGIONS[0]?.slug ?? "africa")}>
+              {REGIONS.map((r) => (
+                <div key={r.href} onMouseEnter={() => setPick(r.slug)} onFocus={() => setPick(r.slug)}>
+                  <Link href={r.href} className={`ledger-display text-[18px] leading-tight hover:ledger-crimson ${pick === r.slug ? "ledger-crimson" : ""}`}>{r.label}</Link>
+                  {r.countries.length > 0 && (
+                    <p className="mt-0.5 text-[13px] ledger-muted leading-snug">
+                      {r.countries.slice(0, 5).map((c, i) => (
+                        <span key={c.href}>{i > 0 && " · "}<Link href={c.href} className="hover:ledger-crimson">{c.label}</Link></span>
+                      ))}
+                      {r.countries.length > 5 && <span> · <Link href={r.href} className="hover:ledger-crimson">+{r.countries.length - 5}</Link></span>}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="mt-4 grid grid-cols-5 gap-x-6 gap-y-5">
-            {REGIONS.map((r) => (
-              <div key={r.href}>
-                <Link href={r.href} className="ledger-display text-[16px] hover:ledger-crimson">{r.label}</Link>
-                {r.countries.length > 0 && (
-                  <ul className="mt-1.5 space-y-1">
-                    {r.countries.map((c) => (
-                      <li key={c.href}><Link href={c.href} className="text-[14px] ledger-muted hover:ledger-crimson">{c.label}</Link></li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
-          </div>
+          <Link href={picked?.href ?? "/destinations"} className="relative block bg-ink text-white overflow-hidden min-h-[380px]" aria-label={picked ? `${picked.label}, all destinations` : "Destinations"}>
+            {REGIONS.map((r) => {
+              const src = REGION_HERO[r.slug];
+              return src ? <img key={r.slug} src={src} alt="" loading="lazy" className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${pick === r.slug ? "opacity-100" : "opacity-0"}`} /> : null;
+            })}
+            {!hero && <span className="absolute inset-0 bg-coast-deep" />}
+            <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+            <span className="absolute left-6 right-6 bottom-5">
+              <span className="block ledger-eyebrow !text-white/75">Vetted country by country</span>
+              <span className="block ledger-display text-[2rem] leading-none mt-1">{picked?.label}</span>
+            </span>
+          </Link>
         </div>
       </div>
     </li>
@@ -158,23 +180,30 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       </div>
 
       {/* Main bar */}
-      <div className="max-w-ledger mx-auto px-5 md:px-10 h-[72px] flex items-center justify-between gap-6">
-        <Link href="/" className="flex flex-col leading-none shrink-0" aria-label={`${SITE.name}, home`}>
-          <span className="ledger-display text-xl md:text-2xl">James Wild &amp; Co.</span>
-          <span className={`ledger-eyebrow !text-[9px] mt-1 ${light ? "!text-white/75" : "ledger-crimson"}`}>{SITE.homeOf}</span>
+      {/* The rail (house chrome, 30 Oct 2026): volumes left, the seal and wordmark
+          centred, the reader's tools right. Transparent over a film, paper once scrolled. */}
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[72px] lg:h-[84px] grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
+        <nav aria-label="Main" className="hidden lg:block">
+          <ul className="flex items-center gap-4 xl:gap-5">
+            {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
+          </ul>
+        </nav>
+
+        <Link href="/" className="flex items-center gap-3 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
+          <span className={`hidden lg:block ${light ? "opacity-90" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
+          <span className="flex flex-col">
+            <span className="ledger-display text-xl md:text-2xl">James Wild &amp; Co.</span>
+            <span className={`ledger-eyebrow !text-[9px] mt-1 ${light ? "!text-white/75" : "ledger-crimson"}`}>{SITE.homeOf}</span>
+          </span>
         </Link>
 
-        <nav aria-label="Main" className="hidden lg:block">
-          <ul className="flex items-center gap-5 xl:gap-6">
-            {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
+        <div className="flex items-center justify-end gap-3">
+          <ul className="hidden lg:flex items-center gap-4 mr-1">
             {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
               <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
           </ul>
-        </nav>
-
-        <div className="flex items-center gap-3">
           <button
             type="button"
             onClick={() => setSearching(true)}

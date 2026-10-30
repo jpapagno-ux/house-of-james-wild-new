@@ -18,6 +18,11 @@ const config: Config = {
         // Wild Pathways (lib/pathways.ts): read the scoped variables set by .pathway-0n; see globals.css.
         pathway: { DEFAULT: "var(--jw-path)", text: "var(--jw-path-text)", tint: "var(--jw-path-tint)" },
         impact: { panel: "#E6E9DD", copy: "#405A45", highlight: "#94512F" },
+        // House chrome (30 Oct 2026): warm neutrals for bands between white pages,
+        // never for the page itself; and one tone per volume for dots, tabs and rails.
+        sand: { DEFAULT: "#EFEAE0", deep: "#E4DDD0", ink: "#6B6257" },
+        forest: { DEFAULT: "#2F4034", light: "#B9C7B0" },
+        vol: { stays: "#8B2525", safaris: "#A5692A", gatherings: "#405A45", voyages: "#1E5F73", overland: "#94512F", europe: "#5B3A5E" },
       },
       fontFamily: {
         display: ["'Cormorant Garamond'", "Georgia", "'Times New Roman'", "serif"],

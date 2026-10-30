@@ -44,7 +44,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
         <div className="flex items-end justify-between gap-8">
           <div className={film ? "landscape:max-w-[48vw]" : undefined}>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
-            <h1 className="ledger-display text-[2.6rem] md:text-7xl mt-3 leading-[1.05]">{title}</h1>
+            <h1 className="ledger-h1 mt-3">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
           {stamp && <PhotoStamp className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0`}>{stamp}</PhotoStamp>}

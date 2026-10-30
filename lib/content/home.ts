@@ -187,3 +187,6 @@ export const HOME = {
     { q: "Is James Wild & Co a registered seller of travel?", a: "Yes. The house is a Florida Seller of Travel (ST45327) and holds IATA number 10783883." },
   ],
 };
+
+// The house loop (Felix Studios), reused as the film band on the volume hubs.
+export const HOUSE_LOOP = HOME.hero.loop;

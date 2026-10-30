@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
+import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Stamp } from "@/components/ledger/Marks";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
@@ -19,7 +20,7 @@ export default function GatheringsHub() {
   return (
     <>
       <SiteHeader />
-      <HubShell name="Gatherings" path={PATH} eyebrow="Volume 03 · Gatherings" title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
+      <HubShell name="Gatherings" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Houses big enough for everyone who matters.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 03 · Gatherings" title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
         answer="Gatherings is James Wild & Co's volume of family residences: private houses, estates and resort residences where several generations or a celebration can stay under one roof, with the adventures around them planned in. Each residence is filed in the Ledger with its own ID and notes on who it suits."
         filling="Residence pages, room by room with how each house sleeps a family, fill from the Ledger export.">
         <HubSection eyebrow="From the Ledger" title="A First Residence" id="res-h">

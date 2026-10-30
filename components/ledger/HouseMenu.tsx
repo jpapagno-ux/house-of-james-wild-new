@@ -63,7 +63,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
               <li key={v.href} className="border-b ledger-border" onMouseEnter={() => setPick(v.href)} onFocus={() => setPick(v.href)}>
                 <Link href={v.href} onClick={onClose} className="group flex items-baseline gap-5 py-3.5 lg:py-4">
                   <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{NUM[i]}</span>
-                  <span className={`ledger-display text-[2rem] lg:text-[2.75rem] leading-none transition-colors ${pick === v.href ? "ledger-crimson" : ""}`}>{v.label}</span>
+                  <span className={`ledger-display text-[2rem] lg:text-[2.6rem] leading-none whitespace-nowrap transition-colors ${pick === v.href ? "ledger-crimson" : ""}`}>{v.label}</span>
                   <span className="hidden xl:block ml-auto text-right text-[12.5px] ledger-muted max-w-[200px] leading-snug opacity-0 group-hover:opacity-100 transition">{v.intro}</span>
                 </Link>
               </li>

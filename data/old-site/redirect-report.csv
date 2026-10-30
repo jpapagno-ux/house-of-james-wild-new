@@ -311,7 +311,7 @@ old path,new path,why,old title
 /book/wilderness-busanga,/stays/wilderness-busanga,booking page -> stay page,Book your stay at Wilderness Busanga | Wild Earth Stays
 /book/wilderness-desert-rhino-camp,/stays/wilderness-desert-rhino-camp,booking page -> stay page,Book your stay at Wilderness Desert Rhino Camp | Wild Earth Stays
 /book/wilderness-doro-nawas,/stays/wilderness-damaraland,booking page -> stay page,Book your stay at Wilderness Doro Nawas | Wild Earth Stays
-/book/wilderness-dumatau,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Wilderness DumaTau | Wild Earth Stays
+/book/wilderness-dumatau,/stays/wilderness-dumatau,booking page -> stay page,Book your stay at Wilderness DumaTau | Wild Earth Stays
 /book/wilderness-hoanib-skeleton-coast,/stays,booking page -> not on the new site yet; stays hub,Book your stay at  | Wild Earth Stays
 /book/wilderness-jao-camp,/stays/jao-camp,booking page -> stay page,Book your stay at Jao Camp | Wild Earth Stays
 /book/wilderness-kulala-desert-lodge,/stays/wilderness-kulala-desert-camp,booking page -> stay page,Book your stay at Wilderness Kulala Desert Lodge | Wild Earth Stays
@@ -805,7 +805,7 @@ old path,new path,why,old title
 /property/wilderness-busanga,/stays/wilderness-busanga,stay page,Wilderness Busanga | Luxury Stays in Zambia | Wild Earth Stays
 /property/wilderness-damaraland,/stays/wilderness-damaraland,stay page,Wilderness Doro Nawas | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-desert-rhino-camp,/stays/wilderness-desert-rhino-camp,stay page,Wilderness Desert Rhino Camp | Luxury Stays in Namibia | Wild Earth Stays
-/property/wilderness-dumatau,/destinations/africa/botswana,not on the new site yet; country page,Wilderness DumaTau | Luxury Stays in Botswana | Wild Earth Stays
+/property/wilderness-dumatau,/stays/wilderness-dumatau,stay page,Wilderness DumaTau | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-hoanib-skeleton-camp,/stays/wilderness-hoanib-skeleton-camp,stay page,Wilderness Hoanib Skeleton Coast | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-kulala-desert-camp,/stays/wilderness-kulala-desert-camp,stay page,Wilderness Kulala Desert Lodge | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-kwetsani,/stays/wilderness-kwetsani,stay page,Wilderness Kwetsani | Luxury Stays in Botswana | Wild Earth Stays
@@ -1940,8 +1940,8 @@ old path,new path,why,old title
 /stay/wilderness-busanga-safari-tent,/stays/wilderness-busanga,room of wilderness-busanga -> stay page,Safari Tent at Wilderness Busanga | Wild Earth Stays
 /stay/wilderness-desert-rhino-camp-tented-suite,/stays/wilderness-desert-rhino-camp,room of wilderness-desert-rhino-camp -> stay page,Tented Suite at Wilderness Desert Rhino Camp | Wild Earth Stays
 /stay/wilderness-doro-nawas-desert-rooma,/stays/wilderness-damaraland,room of wilderness-damaraland -> stay page,Desert Room at Wilderness Doro Nawas | Wild Earth Stays
-/stay/wilderness-dumatau-family-accommodation,/destinations/africa/botswana,room of wilderness-dumatau -> not on the new site yet; country page,Family Accommodation at Wilderness DumaTau | Wild Earth Stays
-/stay/wilderness-dumatau-tented-suites,/destinations/africa/botswana,room of wilderness-dumatau -> not on the new site yet; country page,Tented Suites at Wilderness DumaTau | Wild Earth Stays
+/stay/wilderness-dumatau-family-accommodation,/stays/wilderness-dumatau,room of wilderness-dumatau -> stay page,Family Accommodation at Wilderness DumaTau | Wild Earth Stays
+/stay/wilderness-dumatau-tented-suites,/stays/wilderness-dumatau,room of wilderness-dumatau -> stay page,Tented Suites at Wilderness DumaTau | Wild Earth Stays
 /stay/wilderness-hoanib-skeleton-coast-camp-tented-suite,/stays/wilderness-hoanib-skeleton-camp,room of wilderness-hoanib-skeleton-camp -> stay page,Tented Suite at Wilderness Hoanib Skeleton Coast | Wild Earth Stays
 /stay/wilderness-kulala-desert-lodge-family-kulala-chalet,/stays/wilderness-kulala-desert-camp,room of wilderness-kulala-desert-camp -> stay page,Family Kulala Chalet at Wilderness Kulala Desert Lodge | Wild Earth Stays
 /stay/wilderness-kulala-desert-lodge-kulala-chalet,/stays/wilderness-kulala-desert-camp,room of wilderness-kulala-desert-camp -> stay page,Kulala Chalet at Wilderness Kulala Desert Lodge | Wild Earth Stays

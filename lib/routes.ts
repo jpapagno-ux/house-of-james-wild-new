@@ -431,6 +431,7 @@ export const STAY_SLUGS: string[] = [
   "wilderness-busanga",
   "wilderness-damaraland",
   "wilderness-desert-rhino-camp",
+  "wilderness-dumatau",
   "wilderness-hoanib-skeleton-camp",
   "wilderness-kulala-desert-camp",
   "wilderness-kwetsani",

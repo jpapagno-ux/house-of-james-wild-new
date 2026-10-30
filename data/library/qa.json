@@ -4395,10 +4395,8 @@
    "slug": "wilderness-dumatau",
    "name": "Wilderness DumaTau",
    "country": "Botswana",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9fe",

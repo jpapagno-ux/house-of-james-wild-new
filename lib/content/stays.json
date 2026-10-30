@@ -29412,6 +29412,109 @@
    "volumes": null
   },
   {
+   "slug": "wilderness-dumatau",
+   "name": "Wilderness \n DumaTau",
+   "ledgerId": "STY-2026-056524",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Where elephants move freely, rivers shape the landscape, and luxury gives you room to truly go wild.",
+   "quote": "Come for the luxury. Stay for the feeling of being completely immersed in the wild.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area-and-jetty",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-main-area",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-from-the-river",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/camp/wilderness-dumatau-floating-fire-pit",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-boat-trip",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-game-drive",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-elephant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/experience/wilderness-dumatau-barge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wilderness-destinations/botswana/wilderness-dumatau/wildlife/wilderness-dumatau-wild-dog"
+   ],
+   "bestMonths": "May to September",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_visited",
+   "statusDate": "2026-05-01",
+   "coords": {
+    "lat": -18.5254,
+    "lng": 23.5786
+   },
+   "airport": "Kasane (BBK) or Maun (MUB)",
+   "airportDirections": "Fly by Wilderness Air light aircraft from Maun or Kasane to the Linyanti airstrip, then a short road transfer to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight ultra-spacious tented suites, each with a private plunge pool, raised on wooden walkways above Osprey Lagoon.",
+     "Family accommodation.",
+     "Interiors of hand-crafted mosaic tile, acacia wood and local textiles."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives by day and night",
+     "Boating on the Linyanti channels",
+     "Barge excursions and sundowners",
+     "Catch-and-release fishing",
+     "Birding",
+     "Conservation experiences",
+     "Helicopter safari"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private plunge pools",
+     "Osprey Retreat spa",
+     "Gym",
+     "Family accommodation",
+     "Wi-Fi",
+     "Lagoon-side pool",
+     "Floating fire pit",
+     "Osprey Lagoon Deli",
+     "Al fresco barge dining"
+    ]
+   },
+   "onlyHere": [
+    "DumaTau places you inside one of Botswana’s most remarkable wildlife environments, between active elephant corridors and along an extraordinary stretch of Linyanti waterways. Wildlife can move through the camp while you swim, dine, relax or simply sit and watch the landscape unfold."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "linyanti",
+    "intentions": [
+     "elephants",
+     "river",
+     "predators"
+    ],
+    "suitability": [
+     "couples",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "wilderness-hoanib-skeleton-camp",
    "name": "Wilderness \n Hoanib Skeleton Coast",
    "ledgerId": "STY-2026-000335",

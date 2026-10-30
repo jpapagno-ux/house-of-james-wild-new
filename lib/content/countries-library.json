@@ -793,19 +793,19 @@
    "airports": [
     [
      "Maun International Airport (MUB)",
-     "Serves 18 stays in the Ledger here"
+     "Serves 19 stays in the Ledger here"
+    ],
+    [
+     "Kasane International Airport (BBK)",
+     "Serves 3 stays in the Ledger here"
     ],
     [
      "Khwai Airstrip (KHW)",
      "Serves 3 stays in the Ledger here"
-    ],
-    [
-     "Kasane International Airport (BBK)",
-     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "MUB · KHW",
+   "flyInto": "MUB · BBK",
    "bestShort": "May–Oct",
    "atlasName": "Botswana"
   },

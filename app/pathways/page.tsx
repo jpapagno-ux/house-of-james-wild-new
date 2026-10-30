@@ -9,7 +9,7 @@ import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_CARD_STAY, PROMINENT } from "@/lib/content/pathways/preview";
 import { STAYS, altFor } from "@/lib/content/stays";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { breadcrumbs, graph, ids } from "@/lib/schema";
+import { graph, ids } from "@/lib/schema";
 
 // /pathways: the eight Wild Pathways (Phase 2C). Behind NEXT_PUBLIC_PATHWAYS=on;
 // noindex until approved. Card photographs are the approved landing picks
@@ -39,7 +39,6 @@ export default function PathwaysIndex() {
       <JsonLd data={graph(
         { "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Wild Pathways", isPartOf: { "@id": ids.website }, publisher: { "@id": ids.house },
           mainEntity: { "@type": "ItemList", numberOfItems: PATHWAY_LIST.length, itemListElement: PATHWAY_LIST.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.name, url: absoluteUrl(`/pathways/${p.key}`) })) } },
-        breadcrumbs([{ name: "Home", path: "/" }, { name: "Pathways", path: PATH }]),
       )} />
     </>
   );

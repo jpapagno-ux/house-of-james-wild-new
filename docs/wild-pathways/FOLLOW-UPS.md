@@ -41,7 +41,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 14 | Dulini Daunara Lodge linked to the Botswana destination in the library (Okavango coordinates; changed 30 Oct 2026 10:57 UTC by another effort). Page title now says Botswana; lodge is Sabi Sand, South Africa. Needs James's approval to relink | James | Open |
 | 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
 | 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
-| 8 | HubShell breadcrumb is two levels (Home › page); `/pathways/[key]` wants Home › Pathways › name. Small change to `components/hub/Hub.tsx` shared with every hub; do with care | this initiative | Open |
+| 8 | HubShell breadcrumb only two levels on `/pathways/[key]` | this initiative | Closed 30 Oct 2026 — HubShell takes a `trail`; pathway pages show Home › Pathways › name and emit one BreadcrumbList (the page-level duplicate removed) |
 | 6 | Branch merge order with `template-pass-marks`, `fonts-cormorant-manrope`, `library-offers` | James | Open — agree before any merge |
 
 ## Closed

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import LuggageTag from "./LuggageTag";
 import PostMark from "./PostMark";
 
 // The verdict's mark on the hero, in one of three styles while James
@@ -74,9 +73,10 @@ function TapedNote({ line, where, when }: Omit<P, "style">) {
 
 export default function HeroMark(p: P) {
   const [style, setStyle] = useState<MarkStyle>(p.style);
-  useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "post" || m === "tag" || m === "stamp" || m === "note") setStyle(m); }, []);
+  useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "post" || m === "stamp" || m === "note") setStyle(m); }, []);
   if (style === "post") return <PostMark line={p.line} where={p.where} when={p.when} image={p.image} script={p.script ?? "Worth your time. JW"} label={p.label} href={p.href} />;
   if (style === "stamp") return <Stamp {...p} />;
   if (style === "note") return <TapedNote {...p} />;
-  return <LuggageTag {...p} />;
+  // The luggage tag is retired (James, 30 Oct 2026): a "tag" request draws the stamp.
+  return <Stamp {...p} />;
 }

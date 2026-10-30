@@ -323,6 +323,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae4c00a0876218d9282391f",
+   "slug": "armendaris-ted-turner-reserve",
+   "name": "Armendaris, a Ted Turner Reserve",
+   "country": "New Mexico",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6ae467092b2c308e1eb4165b",
    "slug": "arusha-coffee-lodge",
    "name": "Arusha Coffee Lodge",
@@ -2149,6 +2157,16 @@
    "released": true
   },
   {
+   "stay_id": "6ae4c00a0876218d9282391e",
+   "slug": "ladder-ted-turner-reserve",
+   "name": "Ladder, a Ted Turner Reserve",
+   "country": "New Mexico",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9f8",
    "slug": "lales-camp-expeditions",
    "name": "Lale’s Camp & Expeditions",
@@ -3262,6 +3280,14 @@
    "released": false
   },
   {
+   "stay_id": "6ae4c00a0876218d92823920",
+   "slug": "sierra-grande-ted-turner-reserve",
+   "name": "Sierra Grande Lodge & Spa",
+   "country": "New Mexico",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1ca490b55588860e016",
    "slug": "silolona-sojourns",
    "name": "Silolona Sojourns Indonesia",
@@ -4339,6 +4365,14 @@
    "slug": "velaa-private-island",
    "name": "Velaa Private Island",
    "country": "Maldives",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae4c00a0876218d9282391d",
+   "slug": "vermejo-ted-turner-reserve",
+   "name": "Vermejo, a Ted Turner Reserve",
+   "country": "New Mexico",
    "missing": [],
    "released": true
   },

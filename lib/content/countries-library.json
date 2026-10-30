@@ -2619,6 +2619,67 @@
    "atlasName": "Namibia"
   },
   {
+   "slug": "new-mexico",
+   "name": "New Mexico",
+   "region": "usa-canada",
+   "regionName": "USA & Canada",
+   "ledgerId": "DST-2026-000086",
+   "subtitle": "The Ted Turner Reserves",
+   "leading": "New Mexico is where Ted Turner restored more than a million acres of the American West to bison, elk, desert bighorn and Mexican wolves. Four of his reserves now take guests: alpine Vermejo in the north, and Ladder, Armendaris and the hot springs of Sierra Grande along the Rio Grande in the south.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/castle-rock-bison-vermejo",
+    "alt": "New Mexico, USA & Canada"
+   },
+   "story": [
+    {
+     "eyebrow": "The Ted Turner Reserves",
+     "title": "Land Restored, Then Shared",
+     "blocks": [
+      {
+       "p": "Vermejo covers about 558,000 acres of mountain, meadow and alpine tundra in the Sangre de Cristo, with a 1900s stone mansion, cottages and cabins. Ladder spans about 156,000 acres along four Rio Grande tributaries and keeps a private Mexican wolf breeding facility. Armendaris holds about 360,000 acres of Chihuahuan Desert and the Fra Cristobal range, where desert bighorn returned. Sierra Grande is a 17-room lodge on natural hot springs in Truth or Consequences."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/fra-cristobal-range-armendaris",
+      "alt": "New Mexico: Land Restored, Then Shared"
+     }
+    },
+    {
+     "eyebrow": "Who It Suits",
+     "title": "Whole Houses for Families and Groups",
+     "blocks": [
+      {
+       "p": "Families and small groups who want a reserve to themselves: Ladder's Country House and Armendaris's Hacienda each sleep up to eight with a private chef and guide, and Vermejo's Casa Grande, cottages and cabins can be taken whole. Sierra Grande is the easy base for day tours to Ladder and Armendaris."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/ladder-vista",
+      "alt": "New Mexico: Whole Houses for Families and Groups"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "needs_review",
+   "months": [],
+   "airports": [
+    [
+     "El Paso (ELP)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Albuquerque (ABQ)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "ELP · ABQ",
+   "bestShort": "Ask James",
+   "atlasName": "United States of America",
+   "useStays": true,
+   "chartLabel": "New Mexico"
+  },
+  {
    "slug": "new-zealand",
    "name": "New Zealand",
    "region": "oceania",

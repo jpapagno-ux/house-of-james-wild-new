@@ -2499,6 +2499,69 @@
    "volumes": null
   },
   {
+   "slug": "armendaris-ted-turner-reserve",
+   "name": "Armendaris, a Ted Turner Reserve",
+   "ledgerId": "STY-2026-000534",
+   "country": "New Mexico",
+   "countrySlug": "new-mexico",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "360,000 acres of Chihuahuan Desert and the Fra Cristobal range, where bighorn came back.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/fra-cristobal-range-armendaris",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/desert-sunset-armendaris",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/oryx-armendaris",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/utv-tour-armendaris",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/desert-bighorn-armendaris"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 33.17694,
+    "lng": -107.03139
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Hacienda: 4 bedrooms and 4.5 baths, about 6,000 sq ft, for up to 8 guests, booked as one house."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided UTV tours of the desert and the Fra Cristobal range",
+     "Wildlife viewing for desert bighorn and oryx",
+     "Desert sunsets"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private chef",
+     "Private guide",
+     "The Rio Grande runs past the reserve"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null
+  },
+  {
    "slug": "asilia-rekero-camp",
    "name": "Rekero Camp by Asilia",
    "ledgerId": "STY-2026-000024",
@@ -13542,6 +13605,67 @@
    "volumes": null
   },
   {
+   "slug": "ladder-ted-turner-reserve",
+   "name": "Ladder, a Ted Turner Reserve",
+   "ledgerId": "STY-2026-000533",
+   "country": "New Mexico",
+   "countrySlug": "new-mexico",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "156,000 acres along four Rio Grande tributaries, and one Country House, taken whole.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/ladder-vista",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/country-house-exterior-ladder",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/bison-ladder",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/slot-canyon-ladder",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/mexican-wolf-ladder"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "El Paso (ELP) or Albuquerque (ABQ)",
+   "airportDirections": "About 120 miles by road from El Paso or 178 miles from Albuquerque: I-25 to Exit 63, west on State Road 152, then 9 miles of dirt road to the ranch headquarters.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Country House: 4 bedrooms and 4 baths, for up to 8 guests, booked as one house."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided wildlife drives for bison and Mexican wolf conservation",
+     "Slot canyon hikes",
+     "Tubing and kayaking on the Rio Grande"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Home to the world's only private Mexican wolf breeding facility",
+     "Private chef and server",
+     "Private guide and activity transport on the ranch",
+     "All meals and soft drinks"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null
+  },
+  {
    "slug": "manyara-tree-lodge-by-and-beyond",
    "name": "Lake Manyara Tree Lodge By & Beyond",
    "ledgerId": "STY-2026-000143",
@@ -21283,6 +21407,67 @@
    "volumes": null
   },
   {
+   "slug": "sierra-grande-ted-turner-reserve",
+   "name": "Sierra Grande Lodge & Spa",
+   "ledgerId": "STY-2026-000535",
+   "country": "New Mexico",
+   "countrySlug": "new-mexico",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 17-room lodge on natural hot springs, the base for day tours to Ladder and Armendaris.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/sierra-grande-ted-turner-reserve/sierra-grande-lodge-spa",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/sierra-grande-ted-turner-reserve/the-casita-sierra-grande"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 33.12999,
+    "lng": -107.25555
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "17 rooms, including the Ted Turner Suite and the Casita."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Day tours to Ladder and Armendaris",
+     "Spa treatments"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Natural 104°F mineral hot springs, indoor and outdoor",
+     "A 30-minute private hot-springs soak each day",
+     "Continental breakfast",
+     "Fitness room",
+     "Elephant Butte Lake about 16 miles away"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null
+  },
+  {
    "slug": "beckon-silky-oaks-lodge",
    "name": "Silky Oaks Lodge",
    "ledgerId": "STY-2026-000040",
@@ -28950,6 +29135,73 @@
      "body": "Velaa is more than a resort. It is a private island life shaped by intention, elegance, and natural wonder. Here, the ocean is ever present, the design is thoughtful, and your time truly belongs to you. Whether you arrive for romance, renewal, family memories, or a deeper connection to nature, the island offers an elevated, slow paced escape that lingers long after you leave."
     }
    ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null
+  },
+  {
+   "slug": "vermejo-ted-turner-reserve",
+   "name": "Vermejo, a Ted Turner Reserve",
+   "ledgerId": "STY-2026-000532",
+   "country": "New Mexico",
+   "countrySlug": "new-mexico",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "558,000 acres of mountain, meadow and alpine tundra, restored for bison and elk.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/castle-rock-bison-vermejo",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/main-lodge-vermejo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/casa-grande-great-room-vermejo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/fishing-boats-on-the-lake-vermejo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/mountain-biking-vermejo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/gatherings/vermejo-ted-turner-reserve/archery-vermejo"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.89142,
+    "lng": -104.99111
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "About 26 rooms across Casa Grande, a 1900s stone mansion, plus cottages and cabins.",
+     "Whole houses can be taken for a family or group."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Two half-day guided activities each day",
+     "Fly fishing on the lakes and streams",
+     "Wildlife viewing for bison and elk",
+     "Mountain biking",
+     "Archery"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "19 fishable lakes and about 30 miles of streams",
+     "Turner Trailblazers programme for children",
+     "All-inclusive: three chef-prepared meals a day, snacks and soft drinks"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
    "facts": {},
    "faqs": [],
    "reviewed": false,

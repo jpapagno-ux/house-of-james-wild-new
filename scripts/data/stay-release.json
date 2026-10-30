@@ -1532,6 +1532,22 @@
   {
    "slug": "wilderness-dumatau",
    "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "armendaris-ted-turner-reserve",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "ladder-ted-turner-reserve",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "sierra-grande-ted-turner-reserve",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "vermejo-ted-turner-reserve",
+   "batch": "2026-10-30 library sync"
   }
  ]
 }

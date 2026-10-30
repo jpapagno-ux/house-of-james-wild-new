@@ -31,7 +31,7 @@ const DRAWN: { id: string; label: string; line: string; bearing: number; places:
     { name: "Panama", href: "/destinations/central-america/panama", note: "Compass coming · open the destination" },
   ] },
   { id: "safari", label: "Savanna & safari", line: "Big Five, the migration, the Delta", bearing: 120, places: [
-    { name: "Wild & Co Safaris", href: "https://wildcosafaris.com", note: "Ask Crux, the safari desk's guide" },
+    { name: "Wild & Co Safaris", href: "/safaris/wild-co-safaris", note: "Meet the safari desk and Crux" },
     { name: "South Africa", href: "/destinations/africa/south-africa", note: "Open the destination" },
     { name: "Botswana", href: "/destinations/africa/botswana", note: "Open the destination" },
   ] },

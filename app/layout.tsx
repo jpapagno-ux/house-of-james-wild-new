@@ -39,7 +39,7 @@ export const viewport: Viewport = { themeColor: "#F4F1ED", width: "device-width"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className="ledger-page ledger-body min-h-screen">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:bg-paper focus:px-4 focus:py-2">
           Skip to content

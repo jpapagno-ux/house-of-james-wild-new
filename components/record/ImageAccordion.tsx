@@ -14,7 +14,7 @@ export default function ImageAccordion({ id, eyebrow, title, intro, icon, items,
   const [open, setOpen] = useState<number | null>(start);
   const uid = useId();
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby={`${uid}-h`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby={`${uid}-h`}>
       <div className="flex items-center gap-3">
         {icon && <FieldIcon name={icon} height={26} className="ledger-crimson" />}
         <p className="ledger-eyebrow">{eyebrow}</p>

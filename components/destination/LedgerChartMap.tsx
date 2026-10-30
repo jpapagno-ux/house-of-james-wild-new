@@ -52,9 +52,14 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
   useEffect(() => {
     const el = box.current;
     if (!el) return;
-    const io = new IntersectionObserver(([e]) => e.isIntersecting && (setDrawn(true), io.disconnect()), { threshold: 0.25 });
+    // Draw when a quarter of the chart is on screen; a low threshold so tall
+    // charts on short windows still fire. Whatever happens, the chart is drawn
+    // within two seconds so the coastline is never left blank (audit, 30 Oct 2026).
+    if (el.getBoundingClientRect().top < window.innerHeight) { setDrawn(true); return; }
+    const io = new IntersectionObserver(([e]) => e.isIntersecting && (setDrawn(true), io.disconnect()), { threshold: 0.1, rootMargin: "0px 0px -10% 0px" });
     io.observe(el);
-    return () => io.disconnect();
+    const t = window.setTimeout(() => { setDrawn(true); io.disconnect(); }, 2000);
+    return () => { io.disconnect(); window.clearTimeout(t); };
   }, []);
 
   const pinned = useMemo(() => items.filter((i) => i.x != null && on.has(i.category) && (on.has("new") || !i.isNew)), [items, on]);

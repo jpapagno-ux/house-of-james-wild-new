@@ -125,7 +125,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           </div>
 
           {chart && (mapItems.length > 0 || r.slug.startsWith("polar")) && (
-            <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32" aria-labelledby="region-map-heading">
+            <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
                   <p className="ledger-eyebrow ledger-crimson">The Ledger in {r.name} · {mapItems.length} on the chart</p>
@@ -159,7 +159,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <Doors eyebrow={`${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"} in the Ledger`} title={`The Countries of ${r.name}`} intro="Open a country for its stays by area, routes, the months to go and the Compass where it's ready." doors={doors} />
 
           {r.featured.length > 0 && (
-            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="stays-heading">
+            <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="stays-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                 <div><p className="ledger-eyebrow ledger-crimson">From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
                 <Link href="/stays" className="ledger-btn-ghost self-start md:self-auto">All stays</Link>

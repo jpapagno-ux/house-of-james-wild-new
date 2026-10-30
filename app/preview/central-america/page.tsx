@@ -52,7 +52,7 @@ export default function CentralAmericaPreview() {
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: R.name, path: `/destinations/${R.slug}` }]} /></div>
 
           {/* The region's Ledger chart */}
-          <section id="map" className="pt-8 scroll-mt-32 grid lg:grid-cols-[1.6fr_1fr] gap-8 items-start" aria-labelledby="map-heading">
+          <section id="map" className="pt-8 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1.6fr_1fr] gap-8 items-start" aria-labelledby="map-heading">
             <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
               <LedgerChart chart={CHART_CENTRAL_AMERICA} title="Ledger chart of Central America with its stays" />
               <svg viewBox={`0 0 ${CHART_CENTRAL_AMERICA.width} ${CHART_CENTRAL_AMERICA.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">

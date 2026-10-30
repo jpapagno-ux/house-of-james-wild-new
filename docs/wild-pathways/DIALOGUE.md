@@ -65,6 +65,13 @@ The rabbit the audit couldn't find is the house hare seal, already in the brand 
 2. `iggi-wink` and `iggi-this-way`: approved as the expressions beside bubbles. The Crux and follow-the-pathway lines carry `iggi-this-way`; save-to-Folio carries `iggi-wink`.
 3. Sign-offs 2–7: approved, recorded in `lib/content/voice/chosen.ts` as Voice Bank picks.
 
-## What this phase does not do
+## 2F-ii · rendering (30 Oct 2026)
 
-No live page renders a new bubble or line. Wiring the register into the stay template (an Iggi nudge under Follow the Pathway, say) and into the Iggi embed is Phase 2F-ii, after the lines above are approved and after Iggi Core lands its embed.
+`components/dialogue/IggiLine.tsx` draws one approved line as the brief describes Iggi: a 48px monochrome icon (the approved Cloudinary expression) beside a quiet bubble, the origin label always printed. It renders nothing for a draft, a retired line or a James line. Pages ask for the exact line they were designed around through `dialogueLine(id)`, which returns null unless that id is approved.
+
+| Where | Line | Flag |
+|---|---|---|
+| Stay page, under Follow the Pathway | `iggi.nudge.follow-pathway` + "Walk {pathway}." link | `NEXT_PUBLIC_PATHWAYS=on`, approved records only |
+| Compass, live pathway reading, safari-only | `iggi.handoff.crux` + "Ask Crux" (D4) | same; the preview keeps the plain handoff line |
+
+Still to do: the Iggi embed reads `dialogue()` once Iggi Core (Contract C3) ships its embed.

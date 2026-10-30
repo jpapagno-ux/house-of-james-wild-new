@@ -58,6 +58,8 @@ import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject, lodging } from "@/lib/schema";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
+import IggiLine from "@/components/dialogue/IggiLine";
+import { dialogueLine } from "@/lib/content/dialogue-register";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
@@ -222,6 +224,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             {/* Wild Pathways (Phase 2C, flag on + approved record): Where Your Stay Gives Back and Follow the Pathway. */}
             {pw.impact.length > 0 && <ImpactNote name={s.name} statements={pw.impact} />}
             <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />
+            <IggiLine line={dialogueLine("iggi.nudge.follow-pathway")} className="mt-8"><Link href={pathwayHref(pw.primary.key)} className="underline underline-offset-2 hover:text-crimson">Walk {pw.primary.name}.</Link></IggiLine>
           </>}
           <TalkToUs name={s.name} planHref={planHref} />
           {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { Fragment, useMemo, useState } from "react";
 import { ArrowRight, Leaf, PenLine, RotateCcw, Sparkles } from "lucide-react";
+import IggiLine from "@/components/dialogue/IggiLine";
+import { dialogueLine } from "@/lib/content/dialogue-register";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import { readPathways, type Party, type Privacy, type Reading, type Season, type Setting } from "@/lib/compass/pathway-adapter";
 import { PATHWAYS, pathway, type PathwayRecord } from "@/lib/pathways";
@@ -66,9 +68,11 @@ export default function CompassPreview({ records, live = false, enquireHref = "/
             </div>}
           </div>
 
-          {out.handoff && (
+          {out.handoff && (live && dialogueLine("iggi.handoff.crux") ? (
+            <IggiLine line={dialogueLine("iggi.handoff.crux")} className="mt-4"><a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></IggiLine>
+          ) : (
             <p className="mt-4 border-l-2 border-crimson pl-4 text-[14.5px]"><span className="ledger-eyebrow ledger-crimson block mb-1">Safari reading</span>{out.handoff.line} <a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></p>
-          )}
+          ))}
 
           {out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">{live ? "Nothing approved in the Ledger fits that reading yet. Choose another setting, or ask James directly." : "Nothing in the sample records fits that reading yet. Choose a setting, or start again."}</p>}
 

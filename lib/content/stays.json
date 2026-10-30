@@ -435,8 +435,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -2.0414,
-    "lng": 34.4722
+    "lat": -2.1592,
+    "lng": 34.2196
    },
    "airport": "Seronera Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Kilimanjaro or Arusha, connect by light aircraft to Grumeti or Seronera Airstrip, 45 minute road transfer to lodge.",
@@ -5139,8 +5139,8 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -19.2817,
-    "lng": 23.0281
+    "lat": -19.7482,
+    "lng": 23.4534
    },
    "airport": "Maun International Airport (MUB)",
    "airportDirections": "Fly to Maun, 2-hour road and boat transfer to camp. Daunara team will greet you.",
@@ -19640,10 +19640,7 @@
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": {
-    "lat": -2.0016,
-    "lng": 34.7215
-   },
+   "coords": null,
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
    "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to villa. Charter flights available from Arusha or other parks.",
    "founderNote": null,
@@ -23944,8 +23941,8 @@
    "status": "founder_visited",
    "statusDate": "2012-01-01",
    "coords": {
-    "lat": -27.2025897,
-    "lng": 22.4807213
+    "lat": -27.2037,
+    "lng": 22.4682
    },
    "airport": "Tswalu Private Airstrip (flight charter) <br/> Upington International Airport (UTN) <br/> Kimberley Airport (KIM)",
    "airportDirections": "The closest option is Tswalu’s own airstrip, with daily charter flights from Cape Town and Johannesburg. Alternatively, fly into Upington (350 km) or Kimberley (370 km) and enjoy a scenic private transfer through the Kalahari.",

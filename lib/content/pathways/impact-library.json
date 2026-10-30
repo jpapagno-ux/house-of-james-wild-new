@@ -1,4 +1,216 @@
 {
- "exportedAt": "2026-10-30T12:54:02.859Z",
- "byRef": {}
+ "exportedAt": "2026-10-30T12:57:51.712Z",
+ "byRef": {
+  "aguas-claras": [
+   {
+    "ledgerId": "IMP-2026-000014",
+    "kind": "culture",
+    "money": "none",
+    "statement": "Afro-Caribbean music nights, cacao ceremonies and regional cooking classes are part of the programme.",
+    "source": "Aguas Claras record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000015",
+    "kind": "sourcing",
+    "money": "property_spend",
+    "statement": "The Papaya kitchen sources locally, and the property describes waste-reduction practices and support for nearby villages.",
+    "source": "Aguas Claras record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "angama-mara": [
+   {
+    "ledgerId": "IMP-2026-000004",
+    "kind": "employment",
+    "money": "none",
+    "statement": "A Beading Studio at the lodge is run by Maasai women; a one-acre Shamba garden supplies lunch.",
+    "source": "Angama Mara conservation ledger, James Wild & Co Ledger record copy",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000007",
+    "kind": "levy",
+    "money": "voluntary_donation",
+    "statement": "The Angama Foundation is funded by a US$20 per person per night guest donation.",
+    "source": "Angama Mara conservation ledger, James Wild & Co Ledger record copy",
+    "reviewed": "2026-10-30",
+    "status": "verified"
+   },
+   {
+    "ledgerId": "IMP-2026-000008",
+    "kind": "community",
+    "money": "voluntary_donation",
+    "statement": "The Angama Foundation, set up in 2015 and funded by a per-person, per-night guest donation, has built classrooms and early-childhood rooms at Partakilat Primary, supplied desks, backpacks and water tanks to local schools, and runs a scholarship programme for Saparingo Primary graduates.",
+    "source": "Angama Mara conservation ledger, James Wild & Co Ledger record copy",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000006",
+    "kind": "community",
+    "money": "none",
+    "statement": "A community and staff clinic at the lodge is staffed by a full-time medical officer.",
+    "source": "Angama Mara conservation ledger, James Wild & Co Ledger record copy",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000005",
+    "kind": "conservation",
+    "money": "none",
+    "statement": "Predator-proof bomas with the Anne K. Taylor Fund, an anti-poaching vehicle for rhino monitoring with the Mara Conservancy, and elephant collaring with the Mara Elephant Project.",
+    "source": "Angama Mara conservation ledger, James Wild & Co Ledger record copy",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "cottars-1920-camp": [
+   {
+    "ledgerId": "IMP-2026-000018",
+    "kind": "community",
+    "money": "none",
+    "statement": "Named community programmes and how the conservancy lease benefits Maasai landowners are pending confirmation with the camp.",
+    "source": null,
+    "reviewed": "2026-10-30",
+    "status": "pending_review"
+   },
+   {
+    "ledgerId": "IMP-2026-000019",
+    "kind": "habitat",
+    "money": "none",
+    "statement": "The camp sits on a 7,608-acre private conservancy beside the Maasai Mara, run by a family with over a century of safari heritage and a stated conservation-driven purpose.",
+    "source": "Cottar's 1920s Camp record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "singita-faru-faru-lodge": [
+   {
+    "ledgerId": "IMP-2026-000016",
+    "kind": "conservation",
+    "money": "none",
+    "statement": "The lodge lists conservation and community impact among its features; the Grumeti Fund's work is pending confirmation for a named statement.",
+    "source": "Singita Faru Faru record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "jacis-private-lodge": [
+   {
+    "ledgerId": "IMP-2026-000013",
+    "kind": "employment",
+    "money": "none",
+    "statement": "Staff own a share of the business through the Jaci's Staff Trust.",
+    "source": "Jaci's Private Lodge record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000012",
+    "kind": "employment",
+    "money": "none",
+    "statement": "Staff own 27.2% of the business through the Jaci's Staff Trust.",
+    "source": "Jaci's Private Lodge record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "verified"
+   }
+  ],
+  "kwando-lagoon": [
+   {
+    "ledgerId": "IMP-2026-000010",
+    "kind": "conservation",
+    "money": "none",
+    "statement": "Kwando describes itself as a pioneer of photographic tourism in Botswana, with guest stays contributing to the conservation of the Linyanti wilderness; named programmes are pending confirmation.",
+    "source": "Kwando Lagoon record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "wilderness-mombo-luxury-camp": [
+   {
+    "ledgerId": "IMP-2026-000021",
+    "kind": "community",
+    "money": "none",
+    "statement": "The camp lists a community conservation partnership and runs on solar power.",
+    "source": "Mombo record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000020",
+    "kind": "levy",
+    "money": "guest_levy",
+    "statement": "Botswana concession fees and any guest conservation levy are pending confirmation.",
+    "source": null,
+    "reviewed": "2026-10-30",
+    "status": "pending_review"
+   }
+  ],
+  "monwana-thornybush": [
+   {
+    "ledgerId": "IMP-2026-000009",
+    "kind": "levy",
+    "money": "guest_levy",
+    "statement": "Whether a Thornybush reserve conservation levy is charged per guest night, and what it funds, is pending confirmation from the lodge.",
+    "source": null,
+    "reviewed": "2026-10-30",
+    "status": "pending_review"
+   }
+  ],
+  "ngala-safari-lodge-by-beyond": [
+   {
+    "ledgerId": "IMP-2026-000017",
+    "kind": "conservation",
+    "money": "none",
+    "statement": "The lodge states that conservation initiatives and community engagement are at the heart of the experience; specific programmes are pending confirmation with &Beyond.",
+    "source": "Ngala record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "wilderness-qorokwe": [
+   {
+    "ledgerId": "IMP-2026-000011",
+    "kind": "conservation",
+    "money": "none",
+    "statement": "The camp is fully solar powered, in a private concession bordering Moremi.",
+    "source": "Wilderness Qorokwe record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ],
+  "tswalu-reserve": [
+   {
+    "ledgerId": "IMP-2026-000001",
+    "kind": "beneficiary",
+    "money": "none",
+    "statement": "The Tswalu Foundation's research and community programmes are on the house's list to verify directly with the reserve.",
+    "source": null,
+    "reviewed": "2026-10-30",
+    "status": "pending_review"
+   },
+   {
+    "ledgerId": "IMP-2026-000002",
+    "kind": "habitat",
+    "money": "none",
+    "statement": "One of the few places to see desert-adapted black rhino, black-maned Kalahari lion and pangolin.",
+    "source": "Tswalu record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   },
+   {
+    "ledgerId": "IMP-2026-000003",
+    "kind": "conservation",
+    "money": "property_spend",
+    "statement": "Tswalu describes itself as a regeneration project: South Africa's largest private reserve, run with a small number of guests so that every stay gives back to the land.",
+    "source": "Tswalu record copy, James Wild & Co Ledger",
+    "reviewed": "2026-10-30",
+    "status": "partner_reported"
+   }
+  ]
+ }
 }

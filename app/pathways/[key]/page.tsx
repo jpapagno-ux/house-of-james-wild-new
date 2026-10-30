@@ -7,11 +7,11 @@ import { PathwayChips, PathwayIndex } from "@/components/pathways/Pathway";
 import { PATHWAY_LIST, pathway } from "@/lib/pathways";
 import { onPathway } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
-import { PATHWAY_ANSWER, PATHWAY_FAQS } from "@/lib/content/pathways/copy";
+import { PATHWAY_ANSWER, PATHWAY_FAQS, PATHWAY_SEO } from "@/lib/content/pathways/copy";
 import { altFor } from "@/lib/content/stays";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { breadcrumbs, faqPage, graph, ids } from "@/lib/schema";
+import { faqPage, graph, ids } from "@/lib/schema";
 
 // /pathways/[key]: one Wild Pathway's collection page (Phase 2C). Lists the
 // Ledger records James has APPROVED on it, each under its own canonical card
@@ -25,7 +25,7 @@ export function generateStaticParams() { return PATHWAYS_ON ? PATHWAY_LIST.map((
 export async function generateMetadata({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!p) return {};
-  return buildMetadata({ title: `${p.name}: ${p.setting} Stays Vetted by James Wild & Co`, description: `${p.line} Vetted ${p.setting.toLowerCase()} stays from the James Wild & Co Ledger, each under a permanent Ledger ID.`, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
+  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
 }
 
 export default async function PathwayPage({ params }: { params: Promise<{ key: string }> }) {
@@ -38,7 +38,7 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
     <>
       <SiteHeader />
       <div className={`pathway-${p.id.slice(-2)}`}>
-        <HubShell name={p.name} path={path} eyebrow={`Wild Pathways · ${p.id}`} title={p.name} intro={`${p.setting}. ${p.line}`}
+        <HubShell name={p.name} path={path} trail={trail} eyebrow={`Wild Pathways · ${p.id}`} title={p.name} intro={`${p.setting}. ${p.line}`}
           answer={PATHWAY_ANSWER[p.id]} filling="Entries arrive as James approves each record's pathway in the Ledger." closeTitle={`Drawn to ${p.name.toLowerCase()}?`}>
           <HubSection eyebrow="On this pathway" title={items.length ? `${items.length} ${items.length === 1 ? "Entry" : "Entries"} in the Ledger` : "Filling From the Ledger"} id="entries-h">
             {items.length ? (
@@ -59,7 +59,6 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
       <JsonLd data={graph(
         { "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: p.name, description: p.line, isPartOf: { "@id": ids.website }, publisher: { "@id": ids.house },
           mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length, itemListElement: items.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.stay.name, url: absoluteUrl(r.href) })) } },
-        breadcrumbs(trail),
         faqPage(PATHWAY_FAQS[p.id]),
       )} />
     </>

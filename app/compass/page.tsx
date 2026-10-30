@@ -7,6 +7,13 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { COSTA_RICA } from "@/lib/content/preview/costa-rica";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
+import CompassPreview, { type PreviewRecord } from "@/components/pathways/CompassPreview";
+import { pathwayStays } from "@/lib/content/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
+import { PATHWAY_LIST } from "@/lib/pathways";
+import { verdictFor } from "@/lib/content/verdicts";
+import { statusLine, type HouseStatus } from "@/lib/ledger/status";
+import { recordHref } from "@/lib/ledger/urls";
 
 // /compass: the James Wild Compass on its own page. Starts one question
 // earlier than the destination Compass ("Where are you drawn?"). Costa Rica
@@ -62,6 +69,8 @@ export default function CompassPage() {
             </dl>
           </section>
 
+          {PATHWAYS_ON && <PathwayReading />}
+
           <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="promise-heading">
             <p className="ledger-eyebrow">Why it&rsquo;s different</p>
             <h2 id="promise-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Three Promises No Quiz Makes</h2>
@@ -84,5 +93,27 @@ export default function CompassPage() {
       </main>
       <JsonLd data={graph({ "@type": "WebApplication", "@id": absoluteUrl("/compass#app"), name: "The James Wild Compass", url: absoluteUrl("/compass"), applicationCategory: "TravelApplication", operatingSystem: "Any", offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }, provider: { "@id": ids.house } })} />
     </>
+  );
+}
+
+// Wild Pathways reading (Phase 2D, flag on): Iggi asks three questions and
+// the adapter (lib/compass/pathway-adapter.ts) answers from the APPROVED
+// classifications only, naming pathways, volumes and reasons. The Costa
+// Rica Compass above is untouched. Pure safari readings hand to Crux.
+function PathwayReading() {
+  const hrefs = Object.fromEntries(PATHWAY_LIST.map((p) => [p.id, pathwayHref(p.key)]));
+  const records: PreviewRecord[] = pathwayStays().map((r) => {
+    const v = verdictFor(`stay:${r.slug}`);
+    return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions, suitability: r.suitability, classificationStatus: r.classificationStatus, classifiedBy: r.classifiedBy, impact: r.impact,
+      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: recordHref("stay", r.slug), pathwayHref: hrefs };
+  });
+  if (!records.length) return null;
+  return (
+    <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="pathway-reading-h">
+      <p className="ledger-eyebrow ledger-crimson">Wild Pathways</p>
+      <h2 id="pathway-reading-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Or Let the Pathways Read You</h2>
+      <p className="mt-3 max-w-2xl text-[16px] ledger-muted leading-relaxed">Eight editorial collections across the Ledger. Tell Iggi the setting you&rsquo;re drawn to and who&rsquo;s travelling; every suggestion names its pathway and the reason. {records.length} approved stays answer today.</p>
+      <CompassPreview records={records} live enquireHref="/plan" />
+    </section>
   );
 }

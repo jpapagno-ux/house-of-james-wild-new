@@ -130,3 +130,24 @@ test("Phase 2C: the pathways flag is off unless exactly 'on', and every pathway 
     assert.ok(!/James (said|says|told)|"/.test(PATHWAY_ANSWER[p.id]), `${p.id} copy never quotes James`);
   }
 });
+
+test("Phase 2G: every pathway has an SEO title and description within search limits, and a keyword entry", async () => {
+  const { PATHWAY_SEO } = await import("../lib/content/pathways/copy.ts");
+  const kw = JSON.parse(readFileSync(new URL("../data/seo-keywords.json", import.meta.url), "utf8")).pages as Record<string, { targets: string[] }>;
+  for (const p of PATHWAY_LIST) {
+    const seo = PATHWAY_SEO[p.id];
+    assert.ok(seo.title.startsWith(p.name), `${p.id} title leads with the pathway name`);
+    assert.ok(seo.title.length <= 95, `${p.id} title length ${seo.title.length}`);
+    assert.ok(seo.description.length >= 120 && seo.description.length <= 158, `${p.id} description length ${seo.description.length}`);
+    assert.ok(kw[`/pathways/${p.key}`]?.targets.length >= 3, `${p.id} has keyword targets`);
+  }
+});
+
+test("Phase 2E: Ledger chips resolve only for approved records", async () => {
+  const { mergeRecords } = await import("../lib/pathways.ts");
+  const lib = [{ slug: "ok", ledgerId: "STY-2026-000010", pathway: { primary: "PATH-02", secondary: [], setting: null, intentions: [], suitability: [], status: "approved" as const, classifiedBy: "James", classifiedAt: "2026-10-30" }, volumes: ["stays"] },
+    { slug: "draft", ledgerId: "STY-2026-000011", pathway: { primary: "PATH-02", secondary: [], setting: null, intentions: [], suitability: [], status: "draft" as const, classifiedBy: "iggi-draft", classifiedAt: "2026-10-30" }, volumes: ["stays"] }];
+  const recs = mergeRecords(lib, []);
+  assert.equal(recs.find((r) => r.slug === "ok")?.classificationStatus, "approved");
+  assert.equal(recs.find((r) => r.slug === "draft")?.classificationStatus, "draft", "drafts stay drafts; the Ledger pages filter them out via pathwayStays()");
+});

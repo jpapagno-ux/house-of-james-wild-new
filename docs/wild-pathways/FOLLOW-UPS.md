@@ -18,19 +18,30 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | Phase 2 "Populate and connect" | Approved to proceed |
 | 30 Oct 2026 | Phase 2A spec: field names, `ImpactNote` as its own entity, go-ahead to edit library schema + `siteExport` | Approved |
 | 30 Oct 2026 | Batch 1 (40 records) pathway classifications | Approved as drafted |
-| 30 Oct 2026 | Merge prep | Rebased on `f385855`; PR #32 opened, awaiting James's merge |
+| 30 Oct 2026 | Merge prep | Rebased on `f385855`; PR #32 opened |
+| 30 Oct 2026 | PR #32 merge, production flag, make `/pathways` indexable | Approved and done: #32 squash-merged (`56de8bb`), sync run (`7d831d4`), #33 merged (`39cfc54`) |
+| 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
+| 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
+| 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
+| 30 Oct 2026 | Phase 2E Ledger pathway chips on saved stays and folio items (no schema change; chips resolve from the export by slug) | Shipped |
 
 ## Open
 
 | # | Item | Owner | Status |
 |---|---|---|---|
 | 1 | Batch 1 classifications | James | **Closed** — 40 records approved in the library, 30 Oct 2026 (`pathway_classified_by: James Papagno (batch 1, drafted by Iggi)`) |
-| 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | release-branch owner | Open — re-snapshot on `main` after Beckon releases land |
+| 2 | `tests/seo-baseline.json` stale on `main` (126 of 489 pages) | this initiative | Closed 30 Oct 2026 — re-snapshotted under production env (550 pages, 491 indexable); snapshot now records real robots state |
 | 3 | Stay template: hard-coded `#8a7f70` caption colour (3.82:1) and hero photo-dot buttons at 12×2px (WCAG 2.5.8 target size) | `template-pass-marks` | Open — pre-existing, outside this branch |
 | 4 | James & Iggi central dialogue schema and asset inventory (rabbit art not in repo) | this initiative | Deferred to Phase 2F, after data population |
-| 5 | Base44 library: confirm the published `siteExport` carries `impact_notes` after the next nightly sync (if not, a Base44 deploy is needed — ask James first) | this initiative | Open — check 31 Oct |
-| 7 | Vercel: set `NEXT_PUBLIC_PATHWAYS=on` on the **Preview** environment only, so branch deploys show the live routes | James (or on his say-so) | Open |
-| 8 | HubShell breadcrumb is two levels (Home › page); `/pathways/[key]` wants Home › Pathways › name. Small change to `components/hub/Hub.tsx` shared with every hub; do with care | this initiative | Open |
+| 5 | Base44 `siteExport` picks up the 2A change | — | **Closed** — confirmed by the 30 Oct manual sync (`7d831d4`): 30 approved classifications exported |
+| 7 | Vercel `NEXT_PUBLIC_PATHWAYS=on` | — | **Closed** — set on Preview (07:37) and Production (08:42) on James's instruction |
+| 9 | Ten approved batch-1 records are not yet in the site export (Serian camps, Sheba's Secret Garden, Angama Safari Camp, Casa Koko): no site slug / not live. They surface when those records are published to the site | library | Open |
+| 10 | Phase 2F (dialogue schema) | this initiative | Open — next |
+| 12 | Naming: traveller's saved collection is the **Folio** ("Save to My Folio"); the **Ledger** is the house portfolio — its volumes and content vetted by James Wild. Decided by James 30 Oct 2026; no account copy changes | James | Closed |
+| 14 | Dulini Daunara Lodge linked to the Botswana destination in the library (Okavango coordinates; changed 30 Oct 2026 10:57 UTC by another effort). Page title now says Botswana; lodge is Sabi Sand, South Africa. Needs James's approval to relink | James | Open |
+| 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
+| 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
+| 8 | HubShell breadcrumb only two levels on `/pathways/[key]` | this initiative | Closed 30 Oct 2026 — HubShell takes a `trail`; pathway pages show Home › Pathways › name and emit one BreadcrumbList (the page-level duplicate removed) |
 | 6 | Branch merge order with `template-pass-marks`, `fonts-cormorant-manrope`, `library-offers` | James | Open — agree before any merge |
 
 ## Closed

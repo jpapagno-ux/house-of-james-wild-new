@@ -27,7 +27,7 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
   return <button type="button" onClick={onClick} aria-pressed={on} className={`border px-3 py-1.5 text-[14px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <span className="sr-only">Selected: </span>}{children}</button>;
 }
 
-export default function CompassPreview({ records }: { records: PreviewRecord[] }) {
+export default function CompassPreview({ records, live = false, enquireHref = "/plan" }: { records: PreviewRecord[]; live?: boolean; enquireHref?: string }) {
   const [settings, setSettings] = useState<Setting[]>(["wildlife", "heritage"]);
   const [party, setParty] = useState<Party | undefined>("couple");
   const [season, setSeason] = useState<Season>("any");
@@ -37,7 +37,7 @@ export default function CompassPreview({ records }: { records: PreviewRecord[] }
   const [view, setView] = useState<"traveller" | "trade">("traveller");
 
   const reading: Reading = useMemo(() => ({ settings, party, season, privacy, conservation, culture }), [settings, party, season, privacy, conservation, culture]);
-  const out = useMemo(() => readPathways(reading, records, { includeDrafts: true, limit: 5 }), [reading, records]);
+  const out = useMemo(() => readPathways(reading, records, { includeDrafts: !live, limit: 5 }), [reading, records, live]);
   const byslug = useMemo(() => Object.fromEntries(records.map((r) => [r.slug, r])), [records]);
   const toggle = (s: Setting) => setSettings((xs) => (xs.includes(s) ? xs.filter((x) => x !== s) : [...xs, s]));
   const reset = () => { setSettings([]); setParty(undefined); setSeason("any"); setPrivacy("any"); setConservation(false); setCulture(false); };
@@ -61,17 +61,20 @@ export default function CompassPreview({ records }: { records: PreviewRecord[] }
         <div>
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <p className="text-[15px] ledger-muted"><span className="font-medium text-ink">Iggi</span> · {out.explain.replace(/^Iggi weighed: /, "")}</p>
-            <div role="tablist" aria-label="Presentation" className="flex border ledger-border">
+            {!live && <div role="tablist" aria-label="Presentation" className="flex border ledger-border">
               {(["traveller", "trade"] as const).map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)} className={`px-3 py-1.5 text-[12px] tracking-[0.14em] uppercase ${view === v ? "bg-ink text-paper" : ""}`}>{v === "traveller" ? "Traveller" : "Trade"}</button>)}
-            </div>
+            </div>}
           </div>
 
           {out.handoff && (
             <p className="mt-4 border-l-2 border-crimson pl-4 text-[14.5px]"><span className="ledger-eyebrow ledger-crimson block mb-1">Safari reading</span>{out.handoff.line} <a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></p>
           )}
 
-          {out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">Nothing in the five sample records fits that reading yet. Choose a setting, or start again.</p>}
+          {out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">{live ? "Nothing approved in the Ledger fits that reading yet. Choose another setting, or ask James directly." : "Nothing in the sample records fits that reading yet. Choose a setting, or start again."}</p>}
 
+          {live && out.fits.length > 0 && (
+            <p className="mt-6 text-[15px]"><Link href={`${enquireHref}?pathways=${encodeURIComponent(out.fits.map((f) => f.slug).join(","))}`} className="ledger-btn--solid ledger-btn">Send this reading to James</Link><span className="ml-3 ledger-muted">A person finishes the trip. Nothing is booked here.</span></p>
+          )}
           {view === "traveller" ? (
             <ol className="mt-6 grid gap-4">
               {out.fits.map((f, i) => { const r = byslug[f.slug]; const primary = pathway(f.primaryPathway)!; const secondary = f.pathways.slice(1).map((p) => PATHWAYS[p]); return (

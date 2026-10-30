@@ -4515,7 +4515,7 @@
   },
   {
    "slug": "clayoquot-wilderness-resort",
-   "name": "Beckon \n Clayoquot Wilderness Lodge",
+   "name": "Clayoquot Wilderness Lodge",
    "ledgerId": "STY-2026-587688",
    "country": "Canada",
    "countrySlug": "canada",
@@ -4524,14 +4524,21 @@
    "category": "lodge",
    "tagline": "Extraordinary wilderness. Uncompromising luxury.",
    "quote": "Adventure becomes unforgettable when luxury disappears into nature.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a5ad9d1c3_a83797055_6a4fbfff266f5ec14b626f91_Private-Dining-Tents.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/firepit-twilight",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/19c1c4748_gallery_urls-The-Ivanhoe-Night.webp"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tents-on-the-shoreline",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-forest",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/healing-grounds-spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/dining-tents-boardwalk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/ivanhoe-bar-night",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/tent-lounge-stove",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/hillside-tent-bathroom"
    ],
    "bestMonths": "May - October",
    "bestMonthsNote": "Late spring through early autumn provides ideal conditions for wildlife viewing, kayaking, horseback riding, hiking, and heli-adventures. Summer offers the warmest temperatures, while September and October deliver fewer visitors and spectacular wilderness scenery.",
    "bestFor": [],
-   "status": "unclassified",
+   "status": "partner_verified",
    "statusDate": null,
    "coords": {
     "lat": 49.1526,

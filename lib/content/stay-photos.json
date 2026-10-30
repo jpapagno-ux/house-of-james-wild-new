@@ -1749,6 +1749,53 @@
      "caption": "Male lion game drive"
     }
    ]
+  },
+  "beckon-longitude-131": {
+   "hero": [
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-terrace",
+     "alt": "Longitude 131°, Uluru: tented suite opening to a terrace that faces Uluru"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-deck",
+     "alt": "Longitude 131°, Uluru: the Dune Pavilion's private deck above the red dunes"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-exterior",
+     "alt": "Longitude 131°, Uluru: the Dune Pavilion set into the desert"
+    },
+    {
+     "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-view",
+     "alt": "Longitude 131°, Uluru: tent deck with a daybed facing Uluru at dusk"
+    }
+   ],
+   "frames": [
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-feature",
+     "alt": "Longitude 131°: view across the bed to a deck overlooking Uluru",
+     "caption": "Across the bed to the deck and Uluru"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/luxury-tent-interior",
+     "alt": "Longitude 131°: bedroom looking past the deck to desert scrub and Uluru",
+     "caption": "Uluru from the bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/premium-view-bedroom",
+     "alt": "Longitude 131°: tented suite with draped fabric ceiling, king bed and leather armchairs",
+     "caption": "Under the draped canvas"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bedroom",
+     "alt": "Longitude 131°: bedroom in the Dune Pavilion",
+     "caption": "The Dune Pavilion bedroom"
+    },
+    {
+     "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/australia/longitude-131/dune-pavilion-bathroom",
+     "alt": "Longitude 131°: bathroom in the Dune Pavilion",
+     "caption": "The Dune Pavilion bathroom"
+    }
+   ]
   }
  }
 }

@@ -37,7 +37,7 @@ export default function CentralAmericaPreview() {
           glance={<GlanceBar glance={{ facts: [["Countries", `${R.doors.length} in the Ledger`], ["Stays", `${stayCount} filed`], ["Overland routes", `${journeys.length} drawn`]], cta: { label: "Take the Compass", href: "/compass?drawn=rainforest#compass" } }} />} />
 
         {/* Region bar: all ten regions, this one marked */}
-        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[72px] lg:top-[105px] z-30">
+        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
               {REGIONS.map((r) => r.slug === R.slug
@@ -52,7 +52,7 @@ export default function CentralAmericaPreview() {
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: R.name, path: `/destinations/${R.slug}` }]} /></div>
 
           {/* The region's Ledger chart */}
-          <section id="map" className="pt-8 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1.6fr_1fr] gap-8 items-start" aria-labelledby="map-heading">
+          <section id="map" className="pt-8 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.6fr_1fr] gap-8 items-start" aria-labelledby="map-heading">
             <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
               <LedgerChart chart={CHART_CENTRAL_AMERICA} title="Ledger chart of Central America with its stays" />
               <svg viewBox={`0 0 ${CHART_CENTRAL_AMERICA.width} ${CHART_CENTRAL_AMERICA.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">

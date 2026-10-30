@@ -73,7 +73,7 @@ export default function AliikaiPreview() {
           <WhyChose eyebrow={S.whyStayHere.eyebrow} title={S.whyStayHere.title} blocks={[...S.whyStayHere.paragraphs.map((b) => ({ body: b })), ...S.onlyHere.map((b) => ({ body: b }))]}
             status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">Field verified · 2024</span> · James sailed Raja Ampat aboard Aliikai with his son in November 2024</p>} />
           {/* Core · day by day + route map */}
-          <section id="days" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40">
+          <section id="days" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]">
             <SectionHead eyebrow="Day by day · 10 days, 9 nights" title="The Route, Day by Day" icon="wave" intro="Each day as the crew sails it. Weather and wildlife shape the order; the route map keeps your place." />
             <div className="mt-8 grid lg:grid-cols-[1.1fr_1fr] gap-10 items-start">
               <ol className="relative border-l-2 border-crimson/30 ml-4">
@@ -100,7 +100,7 @@ export default function AliikaiPreview() {
           </section>
 
           {/* Core · departures: per person on fixed dates, or the whole yacht */}
-          <section id="departures" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40">
+          <section id="departures" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]">
             <SectionHead eyebrow="Departures · 2027 & 2028" title="Two Ways Aboard" intro="Join a fixed departure and pay per person, per voyage, or charter the whole yacht for your own group and dates." icon="wave" />
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <article className="ledger-paper border ledger-border p-6 md:p-7">
@@ -123,7 +123,7 @@ export default function AliikaiPreview() {
           </section>
           <RoomsLedger id="cabins" unit="cabin" eyebrow="Cabins & rates" title="Seven Cabins on Three Decks" intro="Every cabin, with its deck, beds and registry “from” price. The voyage fare above is per person; cabin rates apply to private sailings." rooms={CABINS} icon="tree-ring" footnote={`Whole-yacht charter: ${S.charter.text} Voyage fare from US$7,650 per person, double occupancy, plus 11% tax (2027 published rate). Rates re-verified at enquiry.`} />
 
-          <section id="included" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40">
+          <section id="included" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <SectionHead eyebrow="The fare" title="What the Voyage Includes" />
               <p className="text-right"><span className="ledger-eyebrow block">From</span><span className="ledger-display text-4xl ledger-crimson">US$7,650</span><span className="block text-[13px] ledger-muted">per person, double occupancy · 2027 · + 11% tax</span></p>
@@ -136,7 +136,7 @@ export default function AliikaiPreview() {
           <Features eyebrow="Voyage features" title="What Makes the Voyage" cards={FEATURES} onlyHere={{ title: "Only aboard Aliikai", paragraphs: S.onlyHere.slice(0, 2) }} icon="coral" />
           {/* The ship */}
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={hostFor("voyage:aliikai").state} host={hostFor("voyage:aliikai").host} stayName="Aliikai" kind="vessel" /></div>
-          <section id="ship" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
+          <section id="ship" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
             <div>
               <div className="flex items-center gap-2"><Ship className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /><p className="ledger-eyebrow">{S.ship.eyebrow}</p></div>
               <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2">{S.ship.title}</h2>

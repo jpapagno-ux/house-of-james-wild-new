@@ -65,7 +65,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
 
   if (state === "not_linking" || !host) {
     return (
-      <section id="host" className="scroll-mt-32 lg:scroll-mt-40 ledger-paper border ledger-border p-6 md:p-8" aria-labelledby="host-heading">
+      <section id="host" className="scroll-mt-32 lg:scroll-mt-[212px] ledger-paper border ledger-border p-6 md:p-8" aria-labelledby="host-heading">
         <p className="ledger-eyebrow ledger-crimson">Meet your host</p>
         <h2 id="host-heading" className="ledger-display text-2xl md:text-3xl mt-2">Speak with the house instead.</h2>
         <p className="mt-4 text-[16px] leading-relaxed max-w-2xl">
@@ -84,7 +84,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
   const seats = host.seats ?? 6;
   const k = KIND[kind];
   return (
-    <section id="host" className="scroll-mt-32 lg:scroll-mt-40" aria-labelledby="host-heading">
+    <section id="host" className="scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="host-heading">
       <div className="grid lg:grid-cols-[1.05fr_1fr] gap-8 lg:gap-12 items-start">
         <div>
           <p className="ledger-eyebrow ledger-crimson">{k.eyebrow}</p>

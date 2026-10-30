@@ -26,10 +26,10 @@ import { JourneyCard } from "@/components/destination/Journeys";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { isBuilt } from "@/lib/routes";
 import { InkStamp } from "@/components/ledger/VolumeKit";
-import { VOLUME_STYLES } from "@/lib/volumes";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
+import VoyageTag from "@/components/notes/VoyageTag";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -57,7 +57,7 @@ function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50v
 }
 
 function Sec({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
-  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40 ${className}`}>{children}</section>;
+  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] ${className}`}>{children}</section>;
 }
 
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
@@ -339,7 +339,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-40">The cabins</h3>
+      <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[212px]">The cabins</h3>
       <p className="mt-1 text-[14px] ledger-muted">Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax.</p>
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -476,7 +476,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const Enquire = (
-    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-40">
+    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-[212px]">
       <p className="ledger-eyebrow !text-paper/70">{voyage ? "Wild & Co Voyages" : "Plan this journey"}</p>
       <p className="ledger-display text-2xl md:text-3xl mt-2 max-w-2xl">{T.ctaline}</p>
       <div className="mt-6 flex flex-wrap gap-4 items-center">
@@ -511,24 +511,16 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     ? [Vessel, Overview, FirstTime, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
     : [Overview, FirstTime, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
-  // The founder's mark on the hero (James, 30 Oct 2026): the luggage tag is retired everywhere. Voyages
-  // carry the nautical ship's-log stamp in the Voyages light ink; routes keep their own stamp. Both are
-  // ink only, transparent on the photograph, with the turning ring and the founder's note on tap.
-  const src = T.stamp ?? (T.tag ? { tint: undefined, label: undefined, where: T.tag.title, when: T.tag.date.replace(/^[—\s-]+/, ""), sub: undefined, nudge: T.tag.nudge, cta: T.tag.cta, script: T.tag.note } : null);
-  const heroMark = src ? (
-    <Stamp tint={voyage ? "#" + VOLUME_STYLES.voyages.light.split(" ").map((n) => (+n).toString(16).padStart(2, "0")).join("").toUpperCase() : src.tint} label={voyage ? "Ship's log" : src.label} where={src.where} when={src.when} sub={src.sub} nudge={src.nudge} cta={src.cta} script={src.script} line={T.approve.quote} href="#founder" />
-  ) : null;
-
   return (
     <div className={voyage ? "theme-sea theme-sea-page" : undefined}>
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
+          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={<>{/* The old voyage/route tag, postmarked in the destination's ink */}{T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}</>} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
-            {heroMark}
+            {T.tag ? <VoyageTag tag={T.tag} line={T.approve.quote} href="#founder" /> : T.stamp && <Stamp tint={T.stamp.tint} label={T.stamp.label} where={T.stamp.where} when={T.stamp.when} sub={T.stamp.sub} nudge={T.stamp.nudge} cta={T.stamp.cta} script={T.stamp.script} line={T.approve.quote} href="#founder" />}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
               <h1 className="ledger-display text-[2.4rem] leading-[1.05] md:text-6xl mt-3 max-w-4xl">{T.h1}</h1>

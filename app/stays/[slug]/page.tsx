@@ -139,7 +139,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
+    <div className={s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : ""}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}

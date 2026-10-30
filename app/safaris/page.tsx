@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
+import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -27,7 +28,7 @@ export default function SafarisHub() {
   return (
     <>
       <SiteHeader />
-      <HubShell name="Safaris" path={PATH} eyebrow="Volume 02 · Safaris" title="Africa's Reserves and Camps, Vetted Since 2011" intro={V.intro} browse={V.browse}
+      <HubShell name="Safaris" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "Wild Together · filmed at Monwana, Thornybush", title: "A first safari, filmed by the people who took it.", credit: "Film by Felix Studios and Monwana", href: "https://www.youtube.com/watch?v=YR_8uiBObZ4" }} path={PATH} eyebrow="Volume 02 · Safaris" title="Africa's Reserves and Camps, Vetted Since 2011" intro={V.intro} browse={V.browse}
         answer="James Wild & Co's Safaris volume files African reserves and the camps inside them, from South Africa's Sabi Sand and Thornybush to Botswana's Okavango and Kalahari. James has designed safaris since 2011. Safaris are planned with James or an advisor and booked through Wild & Co Safaris, the house's safari platform, with partner guides on the ground."
         filling="Each reserve page lists its camps as their own Ledger entries; the reserve and camp pages fill from the Ledger export.">
         <HubSection eyebrow="Reserves · each with its own camps" title="The Reserves" id="reserves-h">

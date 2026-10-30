@@ -29,8 +29,8 @@ export const HOME = {
 
   hero: {
     eyebrow: "The House of James Wild & Co · Exploring Since 1982",
-    h1: "Vetted Safaris, Stays & Voyages",
-    sub: "Designed from 44 years on the road. Every place vetted in person.",
+    h1: "Go somewhere that's been slept in first.",
+    sub: "Every stay, camp and ship in the Ledger was vetted in person before it was offered to you. Tell a named advisor where you've always meant to go.",
     loop: {
       mp4: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_mp4.mp4`,
       webm: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_webm.webm`,
@@ -187,3 +187,6 @@ export const HOME = {
     { q: "Is James Wild & Co a registered seller of travel?", a: "Yes. The house is a Florida Seller of Travel (ST45327) and holds IATA number 10783883." },
   ],
 };
+
+// The house loop (Felix Studios), reused as the film band on the volume hubs.
+export const HOUSE_LOOP = HOME.hero.loop;

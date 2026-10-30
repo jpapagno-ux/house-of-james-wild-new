@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
+import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
@@ -30,7 +31,7 @@ export default function OverlandHub() {
   return (
     <>
       <SiteHeader />
-      <HubShell name="Overland" path={PATH} eyebrow="Volume 05 · Overland" title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
+      <HubShell name="Overland" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Earn the lodge by road.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 05 · Overland" title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
         answer="Overland is James Wild & Co's volume of land routes James designed: the stops in order, the drive or flight times between them, what to expect and what to avoid, and every stay along the way already vetted in the Ledger. Take a route as filed, or let James reshape it around your dates."
         filling="Each route opens its own page with the day-by-day plan, the map and the price builder; more countries are filed as James draws them.">
         <RouteAtlas id="overland-atlas" kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"

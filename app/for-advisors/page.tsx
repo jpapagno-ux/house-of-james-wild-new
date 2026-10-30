@@ -3,7 +3,6 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import FaqBlock from "@/components/ledger/FaqBlock";
-import { LedBuilt } from "@/components/advisor/Desk";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Icon, JwcoSeal } from "@/components/ledger/Marks";
 import { SectionHead, Prose, JamesNote } from "@/components/about/Parts";
@@ -53,8 +52,6 @@ export default function ForAdvisorsPage() {
             <div className="mt-6"><Prose paragraphs={a.why} /></div>
           </section>
 
-          <section className="mt-14 md:mt-20" aria-label="Advisor-led, advisor-built"><LedBuilt /></section>
-
           <section className="mt-14 md:mt-20" aria-labelledby="compare-heading">
             <SectionHead eyebrow="The comparison, filed plainly" title="Why Advisors Choose the Desk" id="compare-heading" />
             <div className="relative mt-6 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
@@ -65,7 +62,7 @@ export default function ForAdvisorsPage() {
             </div>
           </section>
 
-          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
+          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
             <div>
               <p className="ledger-eyebrow !text-coast-light">The terms, filed plainly</p>
               <h2 id="terms-heading" className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight mt-2">The Shared Commission Split</h2>

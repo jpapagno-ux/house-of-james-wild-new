@@ -39,7 +39,7 @@ const fmtDate = (iso: string) => { const [y, m, d] = iso.split("-").map(Number);
 export default function ImpactNote({ name, statements, id = "gives-back", intro }: { name: string; statements: ImpactStatement[]; id?: string; intro?: string }) {
   const documented = statements.filter((s) => s.status !== "unavailable");
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40 bg-impact-panel text-impact-copy -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] bg-impact-panel text-impact-copy -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16" aria-labelledby={`${id}-heading`}>
       <div className="max-w-ledger mx-auto">
         <p className="ledger-eyebrow !text-impact-copy flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Where Your Stay Gives Back</p>
         <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">What a Night at {name} Supports</h2>

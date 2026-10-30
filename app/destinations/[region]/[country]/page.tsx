@@ -24,16 +24,12 @@ import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
 import GatewayNight from "@/components/stays/GatewayNight";
-import { AdvisorStrip } from "@/components/advisor/Desk";
+import ChapterRail from "@/components/ledger/ChapterRail";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import LIB_CHARTS from "@/lib/charts/countries.json";
-import REGION_LIB from "@/lib/charts/regions.json";
-import fs from "node:fs";
-import path from "node:path";
-import { VOLUME_STYLES } from "@/lib/volumes";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
@@ -71,36 +67,11 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   return buildMetadata({ title: `${c.name}: ${n} Vetted Stays, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted stays mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
 }
 
-// A country told as a guide (Indonesia) gets the same Ledger chart as a country page: every stay
-// with a position, and each voyage at its first port (James, 30 Oct 2026: pin all locations).
-function guideMap(slug: string, name: string) {
-  const chart = (REGION_LIB as unknown as Record<string, ChartData>)[slug];
-  if (!chart) return null;
-  const items: MapItem[] = staysIn(slug).filter((s) => s.coords).map((s) => { const q = projectOn(chart, s.coords!.lat, s.coords!.lng); return { id: s.slug, category: (isResidence(s.name, s.category) ? "residence" : "stay") as MapItem["category"], name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined }; });
-  for (const j of journeysFor(slug).filter((j) => j.kind === "voyage")) {
-    const f = path.join(process.cwd(), "public/maps/routes", `${j.href.split("/").pop()!.replace(/^aliikai-/, "")}.json`);
-    if (!fs.existsSync(f)) continue;
-    const st = (JSON.parse(fs.readFileSync(f, "utf8")) as { stops: { name: string; lat: number; lng: number }[] }).stops[0];
-    const q = projectOn(chart, st.lat, st.lng);
-    items.push({ id: `voyage-${j.ledgerId}`, category: "vessel", name: j.title, kind: `voyage · from ${st.name.split(" — ")[0]}`, href: j.href, x: q.x, y: q.y, area: "Voyages", bestMonths: j.bestMonths ?? undefined });
-  }
-  const pinned = items.filter((i) => i.x! >= 0 && i.y! >= 0 && i.x! <= chart.width && i.y! <= chart.height);
-  if (!pinned.length) return null;
-  const tally = (k: MapItem["category"]) => pinned.filter((i) => i.category === k).length;
-  return (
-    <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32" aria-labelledby="guide-map-heading">
-      <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {pinned.length} on the chart</p>
-      <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-6">{name}, Pinned</h2>
-      <LedgerChartMap legend="bottom-left" country={name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${name} with its stays and voyages`} />} width={chart.width} height={chart.height} items={pinned} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
-    </section>
-  );
-}
-
 export default async function CountryPage({ params }: { params: Promise<{ region: string; country: string }> }) {
   const p = await params;
   const c = countryBySlug(p.region, p.country);
   const g = GUIDES[p.country];
-  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} map={guideMap(g.slug, g.name)} />;
+  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} />;
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;
@@ -126,14 +97,15 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
   const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]];
   return (
-    <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
+    <>
       <SiteHeader overlay />
       <main id="main">
         <HeroSlider slides={slides} label={`${c.name} in photographs`}>
           <div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{c.regionName} · Destination</p>
-            <h1 className="ledger-display text-5xl md:text-7xl mt-3">{c.name}</h1>
+            <h1 className="ledger-h1 mt-3">{c.name}</h1>
             <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{c.subtitle}</p>
             <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
               <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} stays</dd></div>
@@ -144,7 +116,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           </div>
         </HeroSlider>
 
-        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[72px] lg:top-[105px] z-30">
+        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
             <Link href={`/destinations/${c.region}`} className="ledger-eyebrow ledger-crimson">{c.regionName}</Link>
@@ -154,15 +126,16 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               : <SafeLink key={s.slug} href={`/destinations/${c.region}/${s.slug}`} className="ledger-display text-[15px] ledger-muted hover:text-ink" fallback={<span className="ledger-display text-[15px] ledger-muted/60">{s.name}</span>}>{s.name}</SafeLink>)}
             </div>
             <span className="shrink-0 hidden md:flex items-center gap-5">
-              {[["The map", "the-map"], ...(c.compass ? [["Compass", "compass"]] : []), ...(live ? [["Live rates", "live-rates"]] : []), ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]].map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}
+              {chapters.map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}
             </span>
           </div>
         </nav>
+        <ChapterRail items={chapters} />
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: c.regionName, path: `/destinations/${c.region}` }, { name: c.name, path }]} /></div>
 
-          <section id="the-map" className="pt-8 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="map-heading">
+          <section id="the-map" className="pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">The Ledger in {c.name} · {all.length} filed</p>
@@ -170,7 +143,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James.</p>
             </div>
-            <LedgerChartMap tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} legend={c.slug === "south-africa" ? "top-left" : "bottom-left"} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
+            <LedgerChartMap legend="below" country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
           </section>
 
           <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
@@ -203,7 +176,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
 
           <Journeys country={c.name} journeys={journeys} chart={chart} />
           {c.postcard && (
-            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
+            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">From the house, by return</p>
                 <h2 id="postcard-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">Every Enquiry Gets a Reply Worth Keeping</h2>
@@ -215,9 +188,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
-          <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
-          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="stays-heading">
+          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {c.name}</h2>
             <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -239,7 +211,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </Reveal>
           )}
 
-          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-40 space-y-16" aria-label={`${c.name}, the story`}>
+          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-[212px] space-y-16" aria-label={`${c.name}, the story`}>
             {c.story.map((st, i) => (
               <div key={st.title} className="grid md:grid-cols-2 gap-10 items-center">
                 <div className={i % 2 ? "md:order-2" : ""}>
@@ -267,7 +239,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
         </div>
       </main>
       <JsonLd data={graph({ "@type": "TouristDestination", "@id": absoluteUrl(`${path}#destination`), name: c.name, url: absoluteUrl(path), description: answer, containedInPlace: { "@type": "Place", name: c.regionName }, publisher: { "@id": ids.house }, includesAttraction: pages.slice(0, 30).map((s) => ({ "@type": "LodgingBusiness", name: s.name, url: absoluteUrl(recordHref("stay", s.slug)), ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}), ...(s.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: s.ledgerId } } : {}) })) })} />
-    </div>
+    </>
   );
 }
 

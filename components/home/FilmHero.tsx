@@ -40,6 +40,7 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
 
   return (
     <section className="relative h-[100svh] min-h-[620px] overflow-hidden bg-ink text-white" aria-label="Welcome">
+      {/* Film first; the header rail sits transparent over it (house chrome) */}
       <Image src={loop.poster} alt={loop.label} fill priority quality={85} sizes="100vw" className="object-cover" />
       {!reduce && (
         <video
@@ -65,7 +66,7 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 lg:gap-16 items-end">
           <motion.div initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</p>
-            <h1 className="ledger-display text-[2.1rem] leading-[1.08] md:text-6xl lg:text-7xl mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
+            <h1 className="ledger-h1 lg:!text-[6rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
             <p className="text-[16px] md:text-xl text-white/85 mt-4 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{sub}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5">
               <a href="#volumes" className="inline-flex items-center h-11 px-7 bg-paper ledger-eyebrow !text-[11px] !text-ink hover:bg-white transition-colors shadow-[0_4px_18px_rgba(0,0,0,0.35)]">

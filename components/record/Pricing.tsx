@@ -30,7 +30,7 @@ export type Offer = {
 
 export function OfferCard({ offer }: { offer: Offer }) {
   return (
-    <section id="offer" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="offer-heading">
+    <section id="offer" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="offer-heading">
       <div className="border-2 border-rust/70 bg-rust-wash grid lg:grid-cols-[1fr_1.25fr]">
         <div className="relative min-h-[260px] border-b lg:border-b-0 lg:border-r border-rust/40">
           <Image src={offer.image.url} alt={offer.image.alt} fill sizes="(min-width: 1024px) 480px, 100vw" className="object-cover" />
@@ -85,7 +85,7 @@ export function LiveRates({ snap }: { snap: LiveSnapshot }) {
   const perNight = (t: number) => t / snap.nights;
   const fmt = (n: number) => `US$${n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   return (
-    <section id="live-rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="live-heading">
+    <section id="live-rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="live-heading">
       <p className="ledger-eyebrow">Live rates · booking engine by Tag Albie</p>
       <h2 id="live-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Today&rsquo;s Rate, Live from the Booking Desk</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">The booking engine&rsquo;s own price for your dates, refreshed through the house rate desk every 15 minutes. The room list below keeps its published &ldquo;from&rdquo; prices; this band answers &ldquo;what will it cost on my dates&rdquo;.</p>

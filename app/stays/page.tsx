@@ -1,4 +1,5 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
+import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
@@ -26,7 +27,7 @@ export default function StaysHub() {
   return (
     <>
       <SiteHeader />
-      <HubShell name="Stays" path={PATH} eyebrow="Volume 01 · Stays" title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
+      <HubShell name="Stays" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Wild places, by land and by water.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 01 · Stays" title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
         answer={`James Wild & Co's Stays volume holds ${LEDGER_COUNTS.stays} live stays: safari lodges, island hideaways, mountain and desert retreats and city houses, each vetted in person or by a named partner and filed in the Ledger under a permanent ID. Book a single stay, or build a journey around it with James or an advisor.`}
         filling="The full browse, by land or water, region, setting and who it suits, fills from the Ledger export as each stay page is built.">
         <HubSection eyebrow="From the Ledger" title="A Short Shelf of Signature Stays" id="shelf-h">

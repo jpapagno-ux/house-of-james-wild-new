@@ -5,7 +5,6 @@ import AnswerBlock from "@/components/ledger/AnswerBlock";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
-import { LedBuilt } from "@/components/advisor/Desk";
 import { Icon } from "@/components/ledger/Marks";
 import { HouseLinks, PlanClose } from "@/components/about/Parts";
 import { ADVISORS, FIELD_PARTNERS, TEAM } from "@/lib/content/advisors";
@@ -42,9 +41,7 @@ export default function TeamPage() {
           </header>
           <AnswerBlock>{t.answer}</AnswerBlock>
 
-          <section className="mt-10" aria-label="Advisor-led, advisor-built"><LedBuilt /></section>
-
-          <section id="advisors" className="mt-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="advisors-heading">
+          <section id="advisors" className="mt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="advisors-heading">
             <h2 id="advisors-heading" className="sr-only">Advisors</h2>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
               {ADVISORS.map((a, i) => <li key={a.slug}><AdvisorCard a={a} n={i + 1} /></li>)}
@@ -78,7 +75,7 @@ export default function TeamPage() {
             <div className="flex flex-wrap gap-4 items-center"><Link href="/plan?advisor=match" className="ledger-btn">Match me with an advisor</Link><Link href="/compass" className="ledger-btn-ghost">Or take the Compass</Link></div>
           </section>
 
-          <section id="join" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-40" aria-labelledby="join-heading">
+          <section id="join" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="join-heading">
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-14 items-start">
               <div>
                 <p className="ledger-eyebrow !text-coast-light">{t.join.eyebrow}</p>

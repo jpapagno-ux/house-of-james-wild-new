@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: P) {
 }
 
 const tone = (st: string) => /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-40";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
 
 export default async function ShipPage({ params }: P) {
   const ship = (await params).ship;

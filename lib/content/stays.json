@@ -1665,6 +1665,68 @@
    "engine": null
   },
   {
+   "slug": "angama-amboseli",
+   "name": "Angama Amboseli",
+   "ledgerId": "STY-2026-000458",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Ten suites facing Kilimanjaro in the community-owned Kimana Sanctuary.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-03",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-stay-05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-amboseli/amboseli-exp-06"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -2.74167,
+    "lng": 37.53472
+   },
+   "airport": "Kimana Airfield",
+   "airportDirections": "Kimana Airfield sits inside the sanctuary, with daily Safarilink flights from Nairobi Wilson and private charters from the Maasai Mara. By road it is about three and a half hours on paved road from Nairobi.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "10 Guest Suites for up to 20 guests, each facing Kilimanjaro",
+     "2 sets of interconnected family suites",
+     "3 triple rooms for children 12 and under",
+     "1 wheelchair-enabled suite"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
    "slug": "angama-mara",
    "name": "Angama Mara",
    "ledgerId": "STY-2026-000003",
@@ -1675,11 +1737,18 @@
    "category": "lodge",
    "tagline": "“Suspended above the Mara, you’ll find not just a view but a new perspective on life.”",
    "quote": "At Angama Mara, you're not just witnessing the wild. You’re becoming part of it. This place invites you to pause, breathe, and reconnect with the untamed beauty of the world. It’s where transformation begins.” - James Papagno, Founder, James Wild & Co",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bce0d67d4_cb87bbb82_681fbd112e5b8c350c139e59_Family_20on_20the_20Out_20of_20Africa_20Kopje.jpeg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-teaser",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ce99ec3cc_5f50987bb_681fbd112e5b8c350c139e59_Family_20on_20the_20Out_20of_20Africa_20Kopje.jpeg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c9bbb5d18_9ad6eb7ce_681fbd3c73079ca8a8487a08_GettyImages-2214010316.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/511792f39_d9bc11078_681fbd2500aa5aab283ab22e_Looking_20out_20over_20the_20Maasai_20Mara.jpeg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-wildlife-teaser",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-gallery-hero",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-exp-03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-exp-06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-exp-07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-exp-04"
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
@@ -1687,11 +1756,11 @@
    "status": null,
    "statusDate": null,
    "coords": {
-    "lat": -1.2759,
-    "lng": 34.9693
+    "lat": -1.27594,
+    "lng": 34.96926
    },
    "airport": null,
-   "airportDirections": null,
+   "airportDirections": "About 45 minutes by scheduled flight from Nairobi Wilson Airport to the Mara, with several flights a day. Your guide meets you at the airstrip for a short game drive up to the lodge.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -1730,6 +1799,60 @@
      "body": "Angama Mara embodies adventure, self-exploration, and a deep connection to nature."
     }
    ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null
+  },
+  {
+   "slug": "angama-safari-camp",
+   "name": "Angama Safari Camp",
+   "ledgerId": "STY-2026-000524",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A four-tent seasonal camp in the south-west Mara Triangle.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/best-of-both",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-safari-camp/camp-stay-06"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": "About 45 minutes by scheduled flight from Nairobi Wilson to the Mara, with daily flights, then a game drive to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "4 en-suite canvas tents for up to 8 guests, booked as one private camp",
+     "1 smaller en-suite tent for a private guide, chef or host",
+     "Private team of 13 with two guides and two safari vehicles"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [],
    "facts": {},
    "faqs": [],
    "reviewed": false,
@@ -19139,56 +19262,49 @@
    "countrySlug": "botswana",
    "regionSlug": "africa",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": "Gorilla trekking and eco-luxury on the edge of the wild",
-   "quote": "Wake with volcano views, trek for gorillas, and return to a sanctuary of comfort and conservation",
+   "category": "lodge",
+   "tagline": "Singita's first Botswana lodge: eight raised camps in the western Okavango Delta",
+   "quote": "Eight circular camps on stilts across a 170,000-hectare private concession in the western Okavango Delta, opening 11 December 2026.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7bd093c8_1267c69a3_69d79972645ed45be9ae8177_SingitaLeopard_Female_In_Tree.jpg",
    "gallery": [],
-   "bestMonths": "June to September, December to February",
-   "bestMonthsNote": "June to September is dry and cool, best for trekking and clear volcano views. December to February is lush and ideal for wildlife and fewer crowds.",
+   "bestMonths": "June to September",
+   "bestMonthsNote": "Mokoro and boating depend on the Delta's water and run in season; Singita has not published month-by-month detail [to confirm].",
    "bestFor": [],
    "status": null,
    "statusDate": null,
    "coords": null,
-   "airport": "Kigali International Airport",
-   "airportDirections": "Fly to Kigali, 2.5 hour scenic road transfer to Singita Elela. Helicopter transfers available on request.",
+   "airport": "Maun Airport (MUB), then Elela's own airstrip",
+   "airportDirections": "Fly to Maun (Airlink flies daily from Johannesburg and Cape Town), then about 30 minutes by light aircraft to Elela's airstrip, 15 minutes from camp. From Kasane, about 1 hour 30 minutes by light aircraft.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxurious forest suites and one exclusive villa, each with private heated plunge pool, panoramic volcano views, indoor and outdoor fireplaces, and contemporary Rwandan design."
+     "Eight separate camps around a central hub: five one-bedroom camps, two two-bedroom camps and one four-bedroom camp. Each camp has its own pool, fire pit, decks, kitchenette, dining area and lounge. The camps are circular and raised on stilts, open on all sides, and furnished with work by local artists and carpenters."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Gorilla trekking",
-     "Golden monkey tracking",
-     "Forest walks",
-     "Community village visits",
-     "Volcano hikes",
-     "Photography safaris",
-     "In-room spa and wellness treatments"
+     "Game drives in private open vehicles",
+     "Bush walks",
+     "Mokoro and boating safaris and fishing in season",
+     "Stargazing, yoga, spa and wine experiences",
+     "Optional helicopter flights"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Eco-conscious modern design",
-     "Private heated plunge pools",
-     "Farm to table dining",
-     "World class wine cellar",
-     "Personal butler service",
-     "Conservation and community projects"
-    ]
+    "paras": [
+     "Concession NG26: about 170,000 hectares of waterways, islands, lagoons, grasslands and swamps. Only eight camps on the concession. A central hub for dining, wellness and conservation. Children of all ages welcome (minimum ages: boating 6, mokoro 12, walking 16)."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Singita Elela is for travelers who want a life-changing gorilla encounter, five star comfort, and deep connection to conservation. Ideal for couples, families, solo travelers, and anyone seeking rare wildlife and wellness in Rwanda’s highlands."
+    "Singita Elela is for travellers who want the Okavango Delta from a private camp of their own, with water and land activities on one of the region's largest concessions. Suited to couples, families and groups; the Four-Bedroom Camp is taken whole."
    ],
    "why": [
     {
-     "title": "Gorillas, Green Hills, and Grand Luxury",
-     "body": "Singita Elela delivers a blend of world class hospitality and adventure, with close access to gorilla trekking and total privacy. Best for couples, families, photographers, and eco-minded travelers wanting comfort, nature, and purpose."
+     "title": null,
+     "body": "Elela, Setswana for \"to flow\", is Singita's first lodge in Botswana. It opens on 11 December 2026 on concession NG26 in the western Okavango Delta: eight camps on a concession of about 170,000 hectares."
     }
    ],
    "facts": {},

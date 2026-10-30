@@ -1500,6 +1500,14 @@
   {
    "slug": "beckon-tierra-atacama",
    "batch": "2026-10-30 Beckon"
+  },
+  {
+   "slug": "angama-amboseli",
+   "batch": "2026-10-30 library sync"
+  },
+  {
+   "slug": "angama-safari-camp",
+   "batch": "2026-10-30 library sync"
   }
  ]
 }

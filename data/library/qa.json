@@ -220,11 +220,29 @@
    "released": true
   },
   {
+   "stay_id": "6ae35291e4936c8e22e4dc32",
+   "slug": "angama-amboseli",
+   "name": "Angama Amboseli",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a79b079e7892af107e2e6e8",
    "slug": "angama-mara",
    "name": "Angama Mara",
    "country": "Kenya",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae46b1c3af202ea2a5c9ed2",
+   "slug": "angama-safari-camp",
+   "name": "Angama Safari Camp",
+   "country": "Kenya",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -303,6 +321,18 @@
    "country": "Kenya",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae467092b2c308e1eb4165b",
+   "slug": "arusha-coffee-lodge",
+   "name": "Arusha Coffee Lodge",
+   "country": "Tanzania",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8f6",

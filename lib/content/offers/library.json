@@ -238,5 +238,85 @@
   "checked": "2026-10-30",
   "conditions": "7+ nights across Tierra Patagonia and Tierra Atacama within 30 days, at least 3 nights per lodge. Includes a room upgrade, all dining and open bar, daily excursions and airport transfers. No extra-person, group or partner-hotel bookings.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000035",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Visit Year-Round (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 4 nights, half off the first",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-12-31",
+   "text": "Year-round, 2026 and 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Four nights or more with 50% off the first night. Not combinable with other offers; must be requested at booking.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000036",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Stay Longer for Less (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 5 nights, pay 4",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-12-31",
+   "text": "Year-round, 2026 and 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Five nights with one complimentary night (2026: fifth night free when booking four). Not combinable; request at booking.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000037",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "A Seasonal Escape (Tswalu)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "4 nights, first night free",
+  "travel": {
+   "from": "2026-10-30",
+   "to": "2027-11-30",
+   "text": "March to April and October to November"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Four nights with the first night complimentary, on set travel days (2027: Sunday and Thursday in, Thursday and Monday out). Not combinable.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000038",
+  "year": 2026,
+  "status": "Draft",
+  "scope": "stay",
+  "ref": "tswalu-reserve",
+  "name": "Stay 7, Pay 5 (Tswalu)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 7 nights, pay 5",
+  "travel": {
+   "from": "2027-01-04",
+   "to": "2027-12-17",
+   "text": "4 January to 31 May and 1 September to 17 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-10-30",
+  "conditions": "Seven nights with two complimentary. Tarkuni as one seven-night sole-use stay. Not combinable.",
+  "volume": "safaris"
  }
 ]

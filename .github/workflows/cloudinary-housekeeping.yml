@@ -1,0 +1,36 @@
+# Cloudinary housekeeping (scripts/cloudinary/housekeeping.mjs). Run by hand from the Actions tab.
+# Needs the repository secret CLOUDINARY_URL (cloudinary://<key>:<secret>@jhlnq5h5), added by James.
+# Start with mode "dry-run": it changes nothing and attaches the plan (report.json, summary.txt).
+name: Cloudinary housekeeping
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "dry-run (plan only) or apply"
+        type: choice
+        options: [dry-run, apply]
+        default: dry-run
+      steps:
+        description: "Comma list of steps: fields, folders, metadata"
+        default: "fields,folders,metadata"
+      limit:
+        description: "Most folder updates in one run"
+        default: "3000"
+jobs:
+  housekeeping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: node scripts/cloudinary/housekeeping.mjs --steps "${{ inputs.steps }}" --limit "${{ inputs.limit }}" ${{ inputs.mode == 'apply' && '--apply' || '' }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cloudinary-housekeeping-${{ inputs.mode }}
+          path: cloudinary-housekeeping/

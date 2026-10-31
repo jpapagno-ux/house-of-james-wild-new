@@ -7,7 +7,48 @@
   "  coords ('lat, lng'), airport, airportDirections, hide (true keeps the page off the site).",
   "Photos must be on res.cloudinary.com or media.base44.com. Founder stamps, facts and FAQs are never set here.",
   "Saving this file on main runs the library sync, so the change goes live in about 5 minutes.",
-  "Example: \"blue-reef\": {\"hero\": \"https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/blue-reef/hero.jpg\", \"note\": \"James, 2026-10-29: media-kit hero\"}"
+  "Example: \"blue-reef\": {\"hero\": \"https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/blue-reef/hero.jpg\", \"note\": \"James, 2026-10-29: media-kit hero\"}",
+  "  status + statusDate (house_status: founder_returned = founder favourite, founder_visited = toured & stayed, founder_vetted = inspected & approved, partner_verified) — James's own record, stated to the house; fix in the library when you can."
  ],
- "stays": {}
+ "stays": {
+  "aliikai-voyage": {
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: sailed Raja Ampat aboard Aliikai with Anthony, Nov 2024; founder favourite"
+  },
+  "lewa-wilderness-lodge": {
+   "status": "founder_vetted",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: inspected and approved Lewa House"
+  },
+  "lion-sands": {
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: stayed at Ivory Lodge May 2026; founder favourite"
+  },
+  "morukuru-farm-house": {
+   "status": "partner_verified",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: met the Morukuru team May 2026"
+  },
+  "leeu-house": {
+   "status": "founder_vetted",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: walked every Leeu property May 2026"
+  },
+  "ellerman-house": {
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: stayed May 2026; founder favourite"
+  },
+  "monwana-thornybush": {
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: stayed May 2026 with Miriam; founder favourite"
+  },
+  "tengile-mala-mala-kirkmans-kamp": {
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
+   "note": "James's stated record (Advisor Desk ADV-1982-000001), 31 Oct 2026; mirror into the library's house_status: stayed May 2026; founder favourite"
+  }
+ }
 }

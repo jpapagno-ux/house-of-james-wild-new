@@ -9,6 +9,7 @@ import { SectionHead, Prose, JamesNote } from "@/components/about/Parts";
 import { FOR_ADVISORS } from "@/lib/content/house";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
+import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
 
 // /for-advisors: join the house. Hero › in short › more than an ID › the
 // comparison › the terms › what you get › how to join › James's note › FAQ ›
@@ -16,7 +17,7 @@ import { graph, ids } from "@/lib/schema";
 // until signed off.
 
 const PATH = "/for-advisors";
-const APPLY = "/plan?from=advisor-application";
+const APPLY = "/for-advisors/apply";
 export const metadata = buildMetadata({
   title: "Become a Travel Advisor With James Wild & Co: Training and Support",
   description: "Join a founder-led host agency: training in James's 44-year method, a vetted Ledger to plan and book from, and 70% of booking commission for US$249 a year or US$49 a month.",
@@ -76,6 +77,29 @@ export default function ForAdvisorsPage() {
             <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-7">
               {a.tools.map((t) => <li key={t.title} className="grid grid-cols-[44px_1fr] gap-4"><span className="ledger-crimson"><Icon name={t.icon} size={40} /></span><div><h3 className="ledger-display text-[1.25rem]">{t.title}</h3><p className="mt-1 text-[15px] ledger-muted leading-relaxed">{t.line}</p></div></li>)}
             </ul>
+          </section>
+
+          {/* The Desk (Stage 5, 31 Oct 2026): what an advisor of the house works with, and the door to it. */}
+          <section id="desk" className="mt-16 md:mt-24 ledger-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="desk-heading">
+            <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-start">
+              <div>
+                <p className="ledger-eyebrow ledger-crimson">The Desk</p>
+                <h2 id="desk-heading" className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight mt-2">Your page in the book, and the tools behind it.</h2>
+                <p className="mt-3 text-[16.5px] ledger-muted leading-relaxed">An advisor of the house gets an ADV number, a page with their marks in green ink beside the founder&rsquo;s, and the Desk: Iggi with the whole Ledger open, for research and for shaping a client&rsquo;s journey into a Folio with its own number.</p>
+                <div className="mt-6 flex flex-wrap gap-3"><Link href={APPLY} className="ledger-btn ledger-btn--solid">Apply to the desk</Link><a href={`${IGGI_CORE_ORIGIN}/advisor/chat`} className="ledger-btn" rel="noopener">Sign in to the Desk</a></div>
+                <p className="mt-3 text-[13px] ledger-muted">Sign-in is for advisors already on the roster.</p>
+              </div>
+              <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+                {[
+                  ["Your ADV number", "Issued once, never reused. It goes on every Folio you open and every entry you mark."],
+                  ["Your page", "Specialties, the places you know first-hand, and every Ledger entry you carry, with your mark beside James's."],
+                  ["Who plans this", "Country and reserve pages name the advisor who knows the place. Mark it, and that can be you."],
+                  ["Iggi at the Desk", "Shortlists from the Ledger with the mark and one reason each; who in the house has been; the gaps, flagged."],
+                  ["Folios", "A client's journey as a numbered Folio, FOL-2026-######, with you on it. Quote the number anywhere in the house."],
+                  ["The Ledger's rates", "Contracted rates and the relationships behind them, so your quote holds up."],
+                ].map(([t, l]) => <li key={t} className="border-t ledger-border pt-3"><h3 className="ledger-display text-[1.2rem]">{t}</h3><p className="mt-1 text-[14.5px] ledger-muted leading-relaxed">{l}</p></li>)}
+              </ul>
+            </div>
           </section>
 
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="join-heading">

@@ -24,7 +24,7 @@ export function advisorFeed(a: Advisor): AdvisorFeed | null {
   if (!a.desk) return null;
   const d = a.desk;
   return {
-    slug: a.slug, name: a.name, firstName: a.firstName, role: a.role, adv: d.adv, standIn: !!a.sample, isDefault: a.slug === DEFAULT_ADVISOR,
+    slug: a.slug, name: a.name, firstName: a.firstName, role: a.role, adv: a.ledgerId ?? d.adv, standIn: !!a.sample, isDefault: a.slug === DEFAULT_ADVISOR,
     profile: `${BASE}${a.profileHref ?? "/about/team#advisors"}`, plan: `${BASE}/plan?advisor=${a.slug}`, portrait: a.portrait?.url ?? null, line: d.line,
     specialties: d.specialties, volumes: d.volumes.map((v) => ({ key: v, label: VOLUME_LABEL[v] })), countries: d.countries, languages: d.languages, base: d.base,
     counts: advisorCounts(a),

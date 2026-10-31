@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
 import SuiteCards from "@/components/reserve/SuiteCards";
@@ -117,7 +119,8 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} mark={<Roundel volume="safaris" text={roundelText(c.name, r.stay.coords, VOLUME_STYLES.safaris.roman)} entry={entryNo(r.stay.ledgerId) ? `ENTRY ${entryNo(r.stay.ledgerId)}` : undefined} size={120} />} />}
           {siblings.length > 0 && <CardRail id="other-camps" eyebrow={`Also on ${r.name}`} title="Same Reserve, Different Front Door" cards={siblings.map((o) => ({ name: o.name, href: `${rpath}/${o.slug}`, image: o.hero, meta: `${KIND_LABEL[o.kind]}${o.fromRate ? ` · from ${usd(o.fromRate)}` : ""}`, line: (o.intro || o.description).split(/(?<=\.)\s/)[0]?.slice(0, 120) }))} />}
-          <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} />
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "stay", entitySlug: c.slug, countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, ledgerId: c.ledgerId, sourcePage: path, volume: "safaris" }} heading={`Ask Iggi about ${c.name}`} />}
+          <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}

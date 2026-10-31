@@ -9,6 +9,8 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { sessionsFor } from "@/lib/content/workshops";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
@@ -247,6 +249,7 @@ export default async function ShipPage({ params }: P) {
 
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName="Aliikai" kind="vessel" /></div>
           <SessionsFor sessions={sessionsFor(s.path)} name={s.name} />
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: s.slug, ledgerId: s.ledgerId, sourcePage: `/voyages/ships/${s.slug}`, volume: "voyages" }} heading={`Ask Iggi about ${s.name}`} />}
           <FaqBlock faqs={s.faqs.map(([q, a]) => ({ q, a }))} title="Questions About Aliikai" />
         </div>
         {host.state === "available" && <CallingCard who={HOST_KIND.vessel.who} />}

@@ -208,7 +208,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <FromTheJournal posts={postsForStay(s.slug)} />
           <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
           <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />
-          <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} />
+          <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} schema={s.faqs.length > 0 && s.reviewed} />
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
               <p className="ledger-eyebrow ledger-crimson">Also in {s.country}</p>

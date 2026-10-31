@@ -1157,20 +1157,16 @@
    "slug": "entamanu-lodge",
    "name": "Entamanu Ngorongoro",
    "country": "Tanzania",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8fe",
    "slug": "entamanu-private-lodge",
    "name": "Entamanu Ngorongoro",
    "country": "Tanzania",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8ff",
@@ -2809,10 +2805,8 @@
    "slug": "nyungwe-tea-forest-resort",
    "name": "Nyungwe Tea Forest Resort",
    "country": "Rwanda",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1a6004cd660a76d8650",
@@ -2854,10 +2848,8 @@
    "slug": "one-only-gorillas-nest",
    "name": "One&Only Gorilla's Nest",
    "country": "Rwanda",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1c1068f9bd5581d420f",
@@ -4664,10 +4656,8 @@
    "slug": "xigera-safari-lodge",
    "name": "Xigera Safari Lodge",
    "country": "Botswana",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bffa15",

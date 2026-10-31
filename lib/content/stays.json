@@ -8092,6 +8092,134 @@
    "volumes": null
   },
   {
+   "slug": "entamanu-lodge",
+   "name": "Entamanu \n Ngorongoro",
+   "ledgerId": "STY-2026-000078",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "On the Crater rim, looking into Ngorongoro and out to the Serengeti",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/68b644858_aed786b67_68c5a5e3bce64aae0b4b1389_Dining_20room_20verandah_20overlooking_20the_20Crater-M.",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -3.1011,
+    "lng": 35.5167
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Cottages on the wild side of the Crater rim, including two-bedroom family cottages, each with an en-suite bathroom, indoor heating and a private veranda over the Crater."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Private Crater game drives that aim to enter soon after dawn. Highland walks with a Maasai scout and ranger. Crater-view picnic lunches. Visits to a Maasai boma in the next valley. A walk out to the Serengeti Safari Camp."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Nomad Tanzania's camp on the Ngorongoro Crater rim, reached by a private drive. Central lounge with an evening fire. Furnishings made by Tanzanian artisans. Open all year."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Entamanu means circle in Maa, and Nomad calls it the only place where you can see the Ngorongoro Crater and the Serengeti plains from the same spot. Being on the rim means you are first into the Crater in the morning."
+   ],
+   "why": [
+    {
+     "title": "First Into the Crater",
+     "body": "Best for families, photographers and travelers combining Ngorongoro with the Serengeti."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "entamanu-private-lodge",
+   "name": "Entamanu \n Ngorongoro",
+   "ledgerId": "STY-2026-000079",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Four cottages, Ngorongoro's private hideaway",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ded282a97_afd247076_68c5a449117bb751fde15622_Afternoon_20tea_20with_20stormy_20skies_20beyond-Large.",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -3.1009,
+    "lng": 35.5175
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Four cottages of wood, glass and canvas raised on platforms on the north-western Crater rim: two family cottages and two standard cottages, each with a private veranda over the Crater."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Early-morning Crater drives for rhino and flamingo ahead of the crowds. Highland walks with a Maasai scout and ranger. A private visit to a nearby Maasai community."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A separate camp beside Nomad's Entamanu, with its own lounge, dining room and lookout veranda. Built to be fully removable. Open all year. Children over five welcome."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Entamanu Private is the Crater for a family or a small group of friends: four cottages, your own living spaces and the same dawn start into Ngorongoro."
+   ],
+   "why": [
+    {
+     "title": "A Crater Rim to Yourselves",
+     "body": "Best for families and small groups who want privacy at Ngorongoro."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "entara-esirai-camp",
    "name": "Esirai\nMobile\nMigration\nCamp",
    "ledgerId": "STY-2026-000080",
@@ -19362,6 +19490,76 @@
    "volumes": null
   },
   {
+   "slug": "nyungwe-tea-forest-resort",
+   "name": "Nyungwe Tea Forest Resort",
+   "ledgerId": "STY-2026-000202",
+   "country": "Rwanda",
+   "countrySlug": "rwanda",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Canopy villas in a working tea estate on the edge of Nyungwe Forest",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/37390984a_3bd57d882_686c06f40c3b4cf68cdeb150_OO_NyungweHouse_Drone_Clubhouse_0563_MASTER_Small-1024x.",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -2.4473,
+    "lng": 29.1043
+   },
+   "airport": "Kigali International Airport (KGL); helicopter from Gorilla's Nest",
+   "airportDirections": "From Gorilla's Nest, a scenic five-hour drive or a 35-minute helicopter flight.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Canopy villas and treehouses with the forest at eye level: two-bedroom Canopy Villas with wood-burning stoves and forest balconies, and Canopy Treehouses with deep soaking tubs."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Chimpanzee and monkey trekking",
+     "The canopy walk",
+     "Tea picking and tasting on the estate",
+     "Forest hikes to waterfalls and swamps",
+     "Birding",
+     "Sunrise yoga",
+     "Community visits"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In the Gisakura Tea Estate on the edge of Nyungwe National Park, one of Africa's oldest mountain rainforests. Dining room over the tea fields. Tea lounge and bar. Spa suspended over the forest. Infinity pool. Two experiences a day included."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Formerly One&Only Nyungwe House. Chimpanzees in the rainforest by morning and tea on the estate by afternoon, and the natural second half of a Rwanda journey after the gorillas."
+   ],
+   "why": [
+    {
+     "title": "Primates and Tea",
+     "body": "Best for returning Africa travelers, birders, hikers and couples pairing Nyungwe with Volcanoes National Park."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "ol-jogi-conservancy",
    "name": "Ol Jogi Conservancy - Kenya",
    "ledgerId": "STY-2026-752932",
@@ -19678,6 +19876,75 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "one-only-gorillas-nest",
+   "name": "One&Only Gorilla's Nest",
+   "ledgerId": "STY-2026-000201",
+   "country": "Rwanda",
+   "countrySlug": "rwanda",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Treehouses in the eucalyptus, five minutes from the gorillas",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34e0bc491_9d2a33296_686c0769972f273ca2734419_OO_GorillasNest_Exterior_Nest_141_MASTER_HR.jpg",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -1.4421,
+    "lng": 29.5784
+   },
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "About 2.5 hours by road from Kigali, or a 25-minute helicopter flight to the resort's own helipad.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Treehouses and suites raised on stilts among eucalyptus trees, from Forest and two-bedroom Susa Treehouses to the Virunga, Ingagi and Silverback Suites, the last with its own pool. Private decks, fireplaces and outdoor baths."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Gorilla trekking in Volcanoes National Park",
+     "Fireside briefings on the gorilla families",
+     "Rwandan coffee tours and tastings",
+     "Iby'iwacu Cultural Village",
+     "Drumming and dance at the boma",
+     "Visits to a women's craft cooperative"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In Kinigi in the Virunga foothills, the closest resort to Volcanoes National Park. The Nest restaurant and bar. One&Only Spa. Heated pool. Boma and coffee garden. Private helipad."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Gorilla's Nest is the shortest walk from your bed to the trailhead in Rwanda, with a forest treehouse, a fire and a deep bath waiting when you come down from the mountain."
+   ],
+   "why": [
+    {
+     "title": "Gorillas in Comfort",
+     "body": "Best for couples, honeymooners and families pairing gorilla trekking with a Rwanda or East Africa safari."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "open-sky",
@@ -33162,6 +33429,75 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "xigera-safari-lodge",
+   "name": "Xigera Safari Lodge",
+   "ledgerId": "STY-2026-000359",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twelve suites, a baobab treehouse and Africa's art in the Okavango",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/947f06451_ec1d9a772_6838bfbccaa374d3bb52a078_baobab-treehouse-detail_2-1.webp",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.3934,
+    "lng": 22.7594
+   },
+   "airport": "Maun (MUB), then charter flight",
+   "airportDirections": "A 25-minute charter flight from Maun, then a short road or boat transfer to the lodge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve individually designed suites raised above the forest floor, including the two-bedroom Xigera Suite, each with a lounge, private deck with daybed, and indoor and outdoor showers. The Baobab Treehouse sleep-out stands nearly ten metres above the floodplain."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives and walking safaris",
+     "Mokoro and glass-bottomed boat trips",
+     "Helicopter flights",
+     "Seasonal catch-and-release fishing",
+     "Bush picnics and feet-in-the-water sundowners",
+     "A night in the Baobab Treehouse"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In Moremi Game Reserve on the western edge of the Okavango Delta. Pool over the Delta. Spa, gym and yoga deck. Library. A collection of contemporary African art by more than 80 artists. Solar powered, no single-use plastics."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Xigera pairs the Delta's water and wildlife with a gallery's worth of African art, and offers one of the great sleep-outs in Africa in its sculpted Baobab Treehouse."
+   ],
+   "why": [
+    {
+     "title": "Art in the Wild",
+     "body": "Best for couples, families, design lovers and returning safari-goers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "zannier-sonop",

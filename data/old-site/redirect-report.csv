@@ -82,8 +82,8 @@ old path,new path,why,old title
 /book/ellerman-house,/stays/ellerman-house,booking page -> stay page,Book your stay at Ellerman House | Wild Earth Stays
 /book/elsas-kopje,/stays/elsas-kopje,booking page -> stay page,Book your stay at Elsas Kopje | Wild Earth Stays
 /book/encounter-mara-by-asilia,/stays/encounter-mara-camp-by-asilia,booking page -> stay page,Book your stay at Encounter Mara Camp by Asilia | Wild Earth Stays
-/book/entamanu-lodge,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Entamanu Lodge | Wild Earth Stays
-/book/entamanu-private,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Entamanu Private | Wild Earth Stays
+/book/entamanu-lodge,/stays/entamanu-lodge,booking page -> stay page,Book your stay at Entamanu Lodge | Wild Earth Stays
+/book/entamanu-private,/stays/entamanu-private-lodge,booking page -> stay page,Book your stay at Entamanu Private | Wild Earth Stays
 /book/entara-esirai-camp,/stays/entara-esirai-camp,booking page -> stay page,Book your stay at Entara Esirai Camp | Wild Earth Stays
 /book/etosha-mountain-lodge,/stays/etosha-mountain-lodge,booking page -> stay page,Book your stay at Etosha Mountain Lodge | Wild Earth Stays
 /book/explora-el-calafate,/stays/explora-el-calafate,booking page -> stay page,Book your stay at Explora El Calafate | Wild Earth Stays
@@ -185,7 +185,7 @@ old path,new path,why,old title
 /book/ol-pejeta-bush-camp-by-asilia,/stays/ol-pejeta-bush-camp-asilia,booking page -> stay page,Book your stay at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
 /book/olas-tulum,/stays/olas-tulum,booking page -> stay page,Book your stay at Olas Tulum | Wild Earth Stays
 /book/olivers-camp-by-asilia,/stays/asilia-olivers-camp,booking page -> stay page,Book your stay at Oliver’s Camp by Asilia | Wild Earth Stays
-/book/one-only-gorillas-nest,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Gorilla&#x27;s Nest | Wild Earth Stays
+/book/one-only-gorillas-nest,/stays/one-only-gorillas-nest,booking page -> stay page,Book your stay at One &amp; Only Gorilla&#x27;s Nest | Wild Earth Stays
 /book/one-only-nyungwe,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Nyungwe | Wild Earth Stays
 /book/open-sky,/stays/open-sky,booking page -> stay page,Book your stay at Open Sky | Wild Earth Stays
 /book/our-habitas-namibia,/stays/our-habitas-namibia,booking page -> stay page,Book your stay at Our Habitas Namibia | Wild Earth Stays
@@ -529,8 +529,8 @@ old path,new path,why,old title
 /property/ellerman-house,/stays/ellerman-house,stay page,Ellerman House | Luxury Stays in South Africa | Wild Earth Stays
 /property/elsas-kopje,/stays/elsas-kopje,stay page,Elsas Kopje | Luxury Stays in Kenya | Wild Earth Stays
 /property/encounter-mara-camp-by-asilia,/stays/encounter-mara-camp-by-asilia,stay page,Encounter Mara Camp by Asilia | Luxury Stays in Kenya | Wild Earth Stays
-/property/entamanu-lodge,/destinations/africa/tanzania,not on the new site yet; country page,Entamanu Lodge | Luxury Stays in Tanzania | Wild Earth Stays
-/property/entamanu-private-lodge,/destinations/africa/tanzania,not on the new site yet; country page,Entamanu Private | Luxury Stays in Tanzania | Wild Earth Stays
+/property/entamanu-lodge,/stays/entamanu-lodge,stay page,Entamanu Lodge | Luxury Stays in Tanzania | Wild Earth Stays
+/property/entamanu-private-lodge,/stays/entamanu-private-lodge,stay page,Entamanu Private | Luxury Stays in Tanzania | Wild Earth Stays
 /property/entara-esirai-camp,/stays/entara-esirai-camp,stay page,Entara Esirai Camp | Luxury Stays in Tanzania | Wild Earth Stays
 /property/etosha-mountain-lodge,/stays/etosha-mountain-lodge,stay page,Etosha Mountain Lodge | Luxury Stays in Namibia | Wild Earth Stays
 /property/explora-at-atacama,/stays/explora-at-atacama,stay page,Explora at Atacama | Luxury Stays in Bolivia | Wild Earth Stays
@@ -668,7 +668,7 @@ old path,new path,why,old title
 /property/ol-jogi-conservancy,/stays/ol-jogi-conservancy,stay page,Ol Jogi Conservancy | Luxury Stays in Kenya | Wild Earth Stays
 /property/ol-pejeta-bush-camp-asilia,/stays/ol-pejeta-bush-camp-asilia,stay page,Ol Pejeta Bush Camp by Asilia | Luxury Stays in Kenya | Wild Earth Stays
 /property/olas-tulum,/stays/olas-tulum,stay page,Olas Tulum | Luxury Stays in Mexico | Wild Earth Stays
-/property/one-only-gorillas-nest,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Gorilla&#x27;s Nest | Luxury Stays in Rwanda | Wild Earth Stays
+/property/one-only-gorillas-nest,/stays/one-only-gorillas-nest,stay page,One &amp; Only Gorilla&#x27;s Nest | Luxury Stays in Rwanda | Wild Earth Stays
 /property/one-only-nyungwe,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Nyungwe | Luxury Stays in Rwanda | Wild Earth Stays
 /property/open-sky,/stays/open-sky,stay page,Open Sky | Luxury Stays in Utah | Wild Earth Stays
 /property/our-habitas-namibia,/stays/our-habitas-namibia,stay page,Our Habitas Namibia | Luxury Stays in Namibia | Wild Earth Stays

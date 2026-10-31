@@ -191,6 +191,8 @@ export const STAY_SLUGS: string[] = [
   "ellerman-house",
   "elsas-kopje",
   "encounter-mara-camp-by-asilia",
+  "entamanu-lodge",
+  "entamanu-private-lodge",
   "entara-esirai-camp",
   "etosha-mountain-lodge",
   "explora-at-atacama",
@@ -324,9 +326,11 @@ export const STAY_SLUGS: string[] = [
   "nomade-temple-madrid",
   "nomade-tulum",
   "north-island-okavango",
+  "nyungwe-tea-forest-resort",
   "ol-jogi-conservancy",
   "ol-pejeta-bush-camp-asilia",
   "olas-tulum",
+  "one-only-gorillas-nest",
   "open-sky",
   "our-habitas-namibia",
   "our-habitas-tulum",
@@ -482,6 +486,7 @@ export const STAY_SLUGS: string[] = [
   "wren-urban-nest",
   "xanadu-island-resort",
   "xela-tulum",
+  "xigera-safari-lodge",
   "zannier-sonop",
 ];
 // END GENERATED STAYS

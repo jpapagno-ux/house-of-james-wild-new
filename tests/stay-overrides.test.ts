@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
 const file = JSON.parse(readFileSync(new URL("../scripts/data/stay-overrides.json", import.meta.url), "utf8"));
-const ALLOWED = new Set(["name", "tagline", "hero", "gallery", "galleryAdd", "bestMonths", "bestMonthsNote", "coords", "airport", "airportDirections", "hide", "note"]);
+const ALLOWED = new Set(["name", "tagline", "hero", "gallery", "galleryAdd", "bestMonths", "bestMonthsNote", "coords", "airport", "airportDirections", "hide", "note", "status", "statusDate"]);
 const photo = (u: unknown) => typeof u === "string" && /^https:\/\/(res\.cloudinary\.com|media\.base44\.com)\//.test(u);
 
 test("stay merge file entries use allowed fields, a note and our own photos", () => {

@@ -83,5 +83,35 @@
     "source": "/stays/lalibela-reserve",
     "destination": "/safaris/lalibela-reserve",
     "permanent": true
+  },
+  {
+    "source": "/stays/wilderness-pelo",
+    "destination": "/stays/pelo-camp",
+    "permanent": true
+  },
+  {
+    "source": "/book/wilderness-pelo",
+    "destination": "/stays/pelo-camp",
+    "permanent": true
+  },
+  {
+    "source": "/stays/wilderness-little-tubu",
+    "destination": "/stays/little-tubu-camp",
+    "permanent": true
+  },
+  {
+    "source": "/book/wilderness-little-tubu",
+    "destination": "/stays/little-tubu-camp",
+    "permanent": true
+  },
+  {
+    "source": "/stays/wilderness-kwetsani",
+    "destination": "/stays/kwetsani-camp",
+    "permanent": true
+  },
+  {
+    "source": "/book/wilderness-kwetsani",
+    "destination": "/stays/kwetsani-camp",
+    "permanent": true
   }
 ]

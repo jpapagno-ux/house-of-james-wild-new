@@ -1,7 +1,7 @@
 // Wild Pathways: the taxonomy, its tokens and the sample record map.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { IMPACT, PATHWAYS, PATHWAY_LIST, PATHWAY_ORDER, VOLUME_KEYS, pathway, validatePathwayMap, type PathwayRecord } from "../lib/pathways.ts";
 import { VOLUME_BRIEF_ID, VOLUME_BY_BRIEF_ID, VOLUME_ORDER, VOLUME_STYLES } from "../lib/volumes.ts";
 
@@ -150,4 +150,19 @@ test("Phase 2E: Ledger chips resolve only for approved records", async () => {
   const recs = mergeRecords(lib, []);
   assert.equal(recs.find((r) => r.slug === "ok")?.classificationStatus, "approved");
   assert.equal(recs.find((r) => r.slug === "draft")?.classificationStatus, "draft", "drafts stay drafts; the Ledger pages filter them out via pathwayStays()");
+});
+
+// Phase 2B: voyages and routes on the pathways (trip-map.json).
+test("2B trip map: every entry is a live trip with real pathways and volumes; nothing approved without James", () => {
+  const tm = JSON.parse(readFileSync(new URL("../lib/content/pathways/trip-map.json", import.meta.url), "utf8")).records as { slug: string; kind: string; primary: string; secondary: string[]; volumes: string[]; status: string; classifiedBy: string; why: string }[];
+  const trips = new Set(readdirSync(new URL("../lib/content/trips/", import.meta.url)).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, "")));
+  assert.ok(tm.length >= 11);
+  for (const e of tm) {
+    assert.ok(trips.has(e.slug), `${e.slug} is a trip`);
+    assert.ok(PATHWAYS[e.primary as keyof typeof PATHWAYS], `${e.slug} primary`);
+    for (const s of e.secondary) { assert.ok(PATHWAYS[s as keyof typeof PATHWAYS]); assert.notEqual(s, e.primary); }
+    assert.ok(e.volumes.includes(e.kind === "voyage" ? "voyages" : "overland"), `${e.slug} sits in its own volume`);
+    assert.ok(e.why.length > 20, `${e.slug} has a reason`);
+    if (e.status === "approved") assert.match(e.classifiedBy, /James/, `${e.slug}: only James approves`);
+  }
 });

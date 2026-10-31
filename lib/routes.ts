@@ -438,6 +438,7 @@ export const STAY_SLUGS: string[] = [
   "time-tide-chongwe-2",
   "time-tide-mchenja",
   "tokoriki-island-resort",
+  "tongabezi",
   "torres-del-paine-c-reserve",
   "tswalu-reserve",
   "tubu-tree-camp",

@@ -15795,7 +15795,19 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [
+     "big_five",
+     "private_reserve"
+    ],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -16061,7 +16073,19 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [
+     "big_five",
+     "private_reserve"
+    ],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -16435,7 +16459,23 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [
+     "big_five",
+     "malaria_free",
+     "wild_dog"
+    ],
+    "suitability": [
+     "families",
+     "first_safari"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -29501,6 +29541,94 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "tongabezi",
+   "name": "Tongabezi",
+   "ledgerId": "STY-2026-000364",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Hidden on the Zambezi, twelve kilometres above Victoria Falls",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/g4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_returned",
+   "statusDate": "2012-01-01",
+   "coords": {
+    "lat": -17.8211,
+    "lng": 25.7035
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five River Cottages, four Houses including the Honeymoon House and the Tree House, and three Family Houses, each furnished with pieces chosen from around Africa. Tangala Private House for families and friends who want the place to themselves."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "River cruises and canoeing on the Zambezi. Island picnic lunches. Game drives and private guides. Victoria Falls on the doorstep. A visit to the school Green Safaris supports in the community."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A Green Safaris eco-lodge on the banks of the Zambezi, 12 km upstream of Victoria Falls. Family-created and more than thirty years in the making, from tents with bucket showers to one of Africa's most-loved river lodges. Expert childminders and family-sized rooms."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Tongabezi is where romance meets the river: houses open to the Zambezi, dinner on an island, and the Falls a short drive away. The New York Times once called it a place worth getting married for."
+   ],
+   "why": [
+    {
+     "title": "The Zambezi, Slowly",
+     "body": "Best for honeymooners, families and anyone pairing Victoria Falls with a safari in Zambia or Botswana."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "zambezi_river",
+    "intentions": [
+     "river",
+     "victoria_falls",
+     "romance",
+     "community"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "tswalu-reserve",

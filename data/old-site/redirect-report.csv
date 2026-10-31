@@ -222,7 +222,7 @@ old path,new path,why,old title
 /book/serengeti-lamai-camp-by-serian,/stays/serengeti-lamai-camp-by-serian,booking page -> stay page,Book your stay at Serengeti Lamai Camp by Serian | Wild Earth Stays
 /book/seseka-thornybush,/destinations/africa/south-africa,booking page -> not on the new site yet; country page,Book your stay at Seseka Thornybush  | Wild Earth Stays
 /book/shinta-mani-wild,/stays/shinta-mani-wild,booking page -> stay page,Book your stay at Shinta Mani Wild | Wild Earth Stays
-/book/shipwreck-lodge-namibia,/destinations/africa/namibia,booking page -> not on the new site yet; country page,Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
+/book/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,booking page -> stay page,Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
 /book/silolona-sojourns,/stays/silolona-sojourns,booking page -> stay page,Book your stay at Silolona Sojourns  | Wild Earth Stays
 /book/singita-boulders-lodge,/stays/singita-boulders,booking page -> stay page,Book your stay at Singita Boulders Lodge | Wild Earth Stays
 /book/singita-castleton,/stays/singita-castleton,booking page -> stay page,Book your stay at Singita Castleton | Wild Earth Stays
@@ -260,7 +260,7 @@ old path,new path,why,old title
 /book/six-senses-uluwatu,/stays/six-senses-uluwatu,booking page -> stay page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
 /book/six-senses-yao-noi,/stays/six-senses-yao-noi,booking page -> stay page,Book your stay at Six Senses Yao Noi | Wild Earth Stays
 /book/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,booking page -> stay page,Book your stay at Six Senses Zil Pasyon | Wild Earth Stays
-/book/somalisa-acacia,/destinations/africa/zimbabwe,booking page -> not on the new site yet; country page,Book your stay at Somalisa Acacia | Wild Earth Stays
+/book/somalisa-acacia,/stays/somalisa-acacia,booking page -> stay page,Book your stay at Somalisa Acacia | Wild Earth Stays
 /book/soneva-fushi-maldives,/stays/soneva-fushi-maldives,booking page -> stay page,Book your stay at Soneva Fushi - Maldives | Wild Earth Stays
 /book/soneva-jani-maldives,/stays/soneva-jani-maldives,booking page -> stay page,Book your stay at Soneva Jani Maldives | Wild Earth Stays
 /book/soneva-secret-maldives,/stays/soneva-secret-maldives,booking page -> stay page,Book your stay at Soneva Secret Maldives | Wild Earth Stays
@@ -707,7 +707,7 @@ old path,new path,why,old title
 /property/serengeti-lamai-camp-by-serian,/stays/serengeti-lamai-camp-by-serian,stay page,Serengeti Lamai Camp by Serian | Luxury Stays in Tanzania | Wild Earth Stays
 /property/seseka-thornybush,/destinations/africa/south-africa,not on the new site yet; country page,Seseka Thornybush  | Luxury Stays in South Africa | Wild Earth Stays
 /property/shinta-mani-wild,/stays/shinta-mani-wild,stay page,Shinta Mani Wild | Luxury Stays in Cambodia | Wild Earth Stays
-/property/shipwreck-lodge-namibia,/destinations/africa/namibia,not on the new site yet; country page,Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
+/property/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,stay page,Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
 /property/silolona-sojourns,/stays/silolona-sojourns,stay page,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
 /property/singita-boulders,/stays/singita-boulders,stay page,Singita Boulders Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-castleton,/stays/singita-castleton,stay page,Singita Castleton | Luxury Stays in South Africa | Wild Earth Stays
@@ -748,12 +748,12 @@ old path,new path,why,old title
 /property/six-senses-yao-noi,/stays/six-senses-yao-noi,stay page,Six Senses Yao Noi | Luxury Stays in Thailand | Wild Earth Stays
 /property/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,stay page,Six Senses Zil Pasyon | Luxury Stays in Seychelles | Wild Earth Stays
 /property/skybeds-khwai,/destinations/africa/botswana,not on the new site yet; country page,Skybeds Khwai | Luxury Stays in Botswana | Wild Earth Stays
-/property/somalisa-acacia,/destinations/africa/zimbabwe,not on the new site yet; country page,Somalisa Acacia | Luxury Stays in Zimbabwe | Wild Earth Stays
+/property/somalisa-acacia,/stays/somalisa-acacia,stay page,Somalisa Acacia | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/soneva-fushi-maldives,/stays/soneva-fushi-maldives,stay page,Soneva Fushi - Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soneva-jani-maldives,/stays/soneva-jani-maldives,stay page,Soneva Jani Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soneva-secret-maldives,/stays/soneva-secret-maldives,stay page,Soneva Secret Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/soori-bali,/stays/soori-bali,stay page,Soori Bali | Luxury Stays in Indonesia | Wild Earth Stays
-/property/stanley-livingstone-lodge,/destinations/africa/zimbabwe,not on the new site yet; country page,Stanley &amp; Livingstone Lodge | Luxury Stays in Zimbabwe | Wild Earth Stays
+/property/stanley-livingstone-lodge,/stays/stanley-livingstone-lodge,stay page,Stanley &amp; Livingstone Lodge | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/suyian-lodge-by-and-beyond,/stays/suyian-lodge-by-and-beyond,stay page,Suyian Lodge by &amp;Beyond | Luxury Stays in Kenya | Wild Earth Stays
 /property/tabacon-thermal-resort-spa,/stays/tabacon-thermal-resort-spa,stay page,Tabacón Thermal Resort &amp; Spa | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/tanah-gajah,/stays/tanah-gajah,stay page,Tanah Gajah | Luxury Stays in Indonesia | Wild Earth Stays

@@ -361,6 +361,7 @@ export const STAY_SLUGS: string[] = [
   "senda-monteverde-lodge",
   "serengeti-lamai-camp-by-serian",
   "shinta-mani-wild",
+  "shipwreck-lodge-namibia",
   "sierra-grande-ted-turner-reserve",
   "silolona-sojourns",
   "singita-boulders",
@@ -402,11 +403,13 @@ export const STAY_SLUGS: string[] = [
   "six-senses-yao-noi",
   "six-senses-zil-pasyon",
   "sleeping-giant-rainforest-lodge",
+  "somalisa-acacia",
   "soneva-fushi-maldives",
   "soneva-jani-maldives",
   "soneva-secret-maldives",
   "soori-bali",
   "st-george-s-caye-resort",
+  "stanley-livingstone-lodge",
   "suyian-lodge-by-and-beyond",
   "tabacon-thermal-resort-spa",
   "tahi",
@@ -479,6 +482,7 @@ export const STAY_SLUGS: string[] = [
   "wren-urban-nest",
   "xanadu-island-resort",
   "xela-tulum",
+  "zannier-sonop",
 ];
 // END GENERATED STAYS
 

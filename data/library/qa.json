@@ -636,9 +636,11 @@
   {
    "stay_id": "6a89a1b22a1c65100eda62e9",
    "slug": "beyond-xaranna-okavango-delta-camp-by-and-beyond",
-   "name": "& Beyond Xaranna Okavango Delta Camp",
+   "name": "andBeyond Xaranna Okavango Delta Lodge",
    "country": "Botswana",
    "missing": [
+    "coming_soon",
+    "hero_photo",
     "stay_copy"
    ],
    "released": false
@@ -2803,6 +2805,16 @@
    "released": false
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bff979",
+   "slug": "nyungwe-tea-forest-resort",
+   "name": "Nyungwe Tea Forest Resort",
+   "country": "Rwanda",
+   "missing": [
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a89a1a6004cd660a76d8650",
    "slug": "ocean-nova-cruise",
    "name": "Cruise Aboard the Ocean Nova",
@@ -2840,7 +2852,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff978",
    "slug": "one-only-gorillas-nest",
-   "name": "One & Only Gorilla's Nest",
+   "name": "One&Only Gorilla's Nest",
    "country": "Rwanda",
    "missing": [
     "stay_copy"
@@ -2856,16 +2868,6 @@
     "hero_photo",
     "stay_copy",
     "coordinates"
-   ],
-   "released": false
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff979",
-   "slug": "one-only-nyungwe",
-   "name": "One & Only Nyungwe",
-   "country": "Rwanda",
-   "missing": [
-    "stay_copy"
    ],
    "released": false
   },
@@ -3283,12 +3285,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9a0",
    "slug": "shipwreck-lodge-namibia",
-   "name": "Shipwreck Lodge Namibia",
+   "name": "Shipwreck Lodge",
    "country": "Namibia",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9a1",
@@ -3358,7 +3358,18 @@
    "name": "Singita Elela",
    "country": "Botswana",
    "missing": [
+    "name_check",
     "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae61a3c6b4173db828efd89",
+   "slug": "singita-elela",
+   "name": "Singita Elela",
+   "country": "Botswana",
+   "missing": [
+    "name_check"
    ],
    "released": true
   },
@@ -3704,10 +3715,8 @@
    "slug": "somalisa-acacia",
    "name": "Somalisa Acacia",
    "country": "Zimbabwe",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9c7",
@@ -3761,12 +3770,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9cb",
    "slug": "stanley-livingstone-lodge",
-   "name": "Stanley & Livingstone Lodge by Anantara",
+   "name": "Anantara Stanley & Livingstone",
    "country": "Zimbabwe",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9cc",
@@ -3793,6 +3800,7 @@
    "name": "Swala Camp",
    "country": "Tanzania",
    "missing": [
+    "hero_photo",
     "stay_copy"
    ],
    "released": false
@@ -3819,6 +3827,7 @@
    "name": "Tambarare",
    "country": "Kenya",
    "missing": [
+    "hero_photo",
     "stay_copy"
    ],
    "released": false
@@ -4417,6 +4426,7 @@
    "name": "Wilderness Abu Camp",
    "country": "Botswana",
    "missing": [
+    "coming_soon",
     "hero_photo"
    ],
    "released": false
@@ -4663,24 +4673,22 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bffa15",
-   "slug": "zannier-sonop",
-   "name": "Zannier Sonop",
-   "country": "Namibia",
+   "stay_id": "6a85bfb37f6eb35689bffa16",
+   "slug": "xigera-safari-lodge",
+   "name": "Xigera Safari Lodge",
+   "country": "Botswana",
    "missing": [
     "stay_copy"
    ],
    "released": false
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bffa16",
-   "slug": "zigera",
-   "name": "Zigera",
-   "country": "Botswana",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "stay_id": "6a85bfb37f6eb35689bffa15",
+   "slug": "zannier-sonop",
+   "name": "Zannier Sonop",
+   "country": "Namibia",
+   "missing": [],
+   "released": true
   }
  ]
 }

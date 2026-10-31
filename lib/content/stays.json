@@ -1864,6 +1864,70 @@
    "volumes": null
   },
   {
+   "slug": "stanley-livingstone-lodge",
+   "name": "Anantara Stanley & Livingstone",
+   "ledgerId": "STY-2026-000284",
+   "country": "Zimbabwe",
+   "countrySlug": "zimbabwe",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A sixteen-suite safari lodge minutes from Victoria Falls",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e781fb966_bcd6c50d8_68d5976908779496ef9e30a0_c3d18b16.webp",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -17.9997,
+    "lng": 25.81
+   },
+   "airport": "Victoria Falls International Airport (VFA)",
+   "airportDirections": "About 20 minutes by road from Victoria Falls International Airport; transfers from Livingstone (LVI) can also be arranged.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Sixteen 70-square-metre suites, each with a private entrance and veranda, in Reserve View and Garden View categories, plus two Pool Suites with their own pools opening onto the reserve."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Big Five game drives in the private reserve. Guided walks. Black rhino conservation experience with a bush dinner. Guided tours of Victoria Falls. Devil's Pool, Zambezi sunset cruises, helicopter flights and gorge zip-lining through the concierge."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Inside the Victoria Falls Private Game Reserve, about 15 minutes from the Falls. 1871 Restaurant and Bar. Garden pool overlooking an active waterhole. Anantara Spa gazebo. Kids' explorer programme."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Stanley & Livingstone gives you the Falls by day and a quiet private reserve by night, with rhino on the doorstep and only sixteen suites to share it."
+   ],
+   "why": [
+    {
+     "title": "The Falls, Without the Crowds",
+     "body": "Best for couples, families and anyone starting or ending a safari at Victoria Falls."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "anantara-ubud-bali",
    "name": "Anantara Ubud Bali",
    "ledgerId": "STY-2026-000019",
@@ -11187,7 +11251,7 @@
    ],
    "facts": {},
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -11690,7 +11754,7 @@
    ],
    "facts": {},
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -22527,6 +22591,75 @@
    "volumes": null
   },
   {
+   "slug": "shipwreck-lodge-namibia",
+   "name": "Shipwreck Lodge",
+   "ledgerId": "STY-2026-000241",
+   "country": "Namibia",
+   "countrySlug": "namibia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten shipwreck cabins on the wildest coast in Africa",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/87ccb45a3_f0fb2b052_6a4fd2bc9ea4d78feb6f9a2e_shipwrecklodge.jpg",
+   "gallery": [],
+   "bestMonths": "Year-round; May to October for the classic dry desert",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.069,
+    "lng": 12.5833
+   },
+   "airport": "Mowe Bay airstrip (via Windhoek)",
+   "airportDirections": "Light aircraft from Windhoek to Mowe Bay, then a 4x4 transfer to the lodge. Road transfers from Windhoek or self-drive to Mowe Bay are also possible.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten cabins built to echo the shipwrecks along the beach: eight doubles or twins and two family cabins, each en-suite with a deck and a wood-burning stove."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Day trips to the Mowe Bay seal colony past old wrecks",
+     "Sundowners on the roaring dunes",
+     "Quad biking and sandboarding",
+     "4x4 drives along the Hoarusib River to the Clay Castles",
+     "Nature walks",
+     "Beach lunches"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The only lodge inside Skeleton Coast National Park, between the Hoarusib and Hoanib rivers. Central lounge and restaurant with a wraparound deck facing the Atlantic. Fireplace and library. Solar powered. Children of all ages welcome."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Fog rolling off the Atlantic, desert-adapted elephant and brown hyena in the river beds, and a cabin that looks like it washed up on the dunes. Shipwreck Lodge is for travelers who want Namibia at its most remote and strange."
+   ],
+   "why": [
+    {
+     "title": "The Edge of the Map",
+     "body": "Best for adventurous couples, families with older children, photographers and anyone pairing the coast with Namibia's desert and Etosha."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "sierra-grande-ted-turner-reserve",
    "name": "Sierra Grande Lodge & Spa",
    "ledgerId": "STY-2026-000535",
@@ -26075,6 +26208,74 @@
    "volumes": null
   },
   {
+   "slug": "somalisa-acacia",
+   "name": "Somalisa Acacia",
+   "ledgerId": "STY-2026-000279",
+   "country": "Zimbabwe",
+   "countrySlug": "zimbabwe",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Four tented suites and an elephant pool in the heart of Hwange",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g3"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.0441,
+    "lng": 27.0488
+   },
+   "airport": "Manga Airstrip (via Victoria Falls, VFA)",
+   "airportDirections": "About 45 minutes by light aircraft from Victoria Falls to Manga Airstrip, then a 30-minute game drive to camp. By road about 4 hours from Victoria Falls.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Four tented suites for up to 12 guests: two luxury tents and two family tents with interconnecting rooms. Each has a wood-burning fireplace, copper slipper bath, indoor and outdoor showers and a private deck."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and afternoon game drives. Walking safaris with armed guides (16 and over). Birding. Community village visits. Ngwana Club for children: nature walks, storytelling and a junior guide certificate."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Private concession in Hwange National Park, overlooking a waterhole. In-camp elephant pool where herds come to drink. Main pool, firepit and boma. Solar powered with water recycling."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Somalisa Acacia puts you a few metres from elephants drinking at the camp pool, in a camp small enough to feel private and built for families without needing a private vehicle."
+   ],
+   "why": [
+    {
+     "title": "Elephants at Arm's Length",
+     "body": "Best for families, photographers and couples who want a small, eco-minded camp in Zimbabwe's biggest park."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "soneva-fushi-maldives",
    "name": "Soneva Fushi Maldives \nOriginal Barefoot Luxury",
    "ledgerId": "STY-2026-000280",
@@ -29206,7 +29407,7 @@
    ],
    "facts": {},
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -32955,6 +33156,76 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "zannier-sonop",
+   "name": "Zannier Sonop",
+   "ledgerId": "STY-2026-000358",
+   "country": "Namibia",
+   "countrySlug": "namibia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten tented suites on granite boulders in the southern Namib",
+   "quote": null,
+   "hero": "/img/b44/d1a83a027_d0a294c57_67e2fc609f2d17dfef44f76e_zannier-sonop.avif",
+   "gallery": [],
+   "bestMonths": "Year-round; April to September for cool dry days",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -25.5065,
+    "lng": 16.2049
+   },
+   "airport": "Sonop private airstrip; Windhoek Hosea Kutako (WDH)",
+   "airportDirections": "About 1 hour 20 minutes by light aircraft from Windhoek to Sonop's own airstrip, or about 6 hours by road from Windhoek.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten tented suites in 1920s colonial style, set on granite boulders: one-bedroom tents with panoramic terraces and two-bedroom tents with a lounge and wide terrace."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided horse riding",
+     "Electric fat bike trails",
+     "Walking trails",
+     "Hot air balloon safaris",
+     "Sunrise and sunset drives",
+     "Stargazing",
+     "Breakfast on the dunes"
+    ]
+   },
+   "features": {
+    "paras": [
+     "On a private reserve on the edge of the NamibRand Nature Reserve. Open-air infinity pool. Spa, gym and daily yoga. Open-air cinema. Cocktail and cigar lounge. Private airstrip. Three Michelin Keys."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sonop is the desert done with theatre: an explorer's camp on a boulder outcrop, gala dinners, horses and fat bikes on the plains, and some of the darkest night skies in Africa."
+   ],
+   "why": [
+    {
+     "title": "Desert Romance",
+     "body": "Best for couples, honeymooners, riders and anyone who wants the Namib with full luxury. Children from six."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "great-plains-zarafa-camp",

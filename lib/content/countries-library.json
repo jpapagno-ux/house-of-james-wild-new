@@ -2610,7 +2610,7 @@
    "airports": [
     [
      "Hosea Kutako International Airport (WDH)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 4 stays in the Ledger here"
     ],
     [
      "Ondangwa Airport (OND)",
@@ -4416,16 +4416,16 @@
    ],
    "airports": [
     [
-     "Bumi Hills Airstrip (BZH)",
-     "Serves 1 stay in the Ledger here"
+     "Victoria Falls International Airport (VFA)",
+     "Serves 2 stays in the Ledger here"
     ],
     [
-     "Victoria Falls International Airport (VFA)",
+     "Bumi Hills Airstrip (BZH)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "BZH · VFA",
+   "flyInto": "VFA · BZH",
    "bestShort": "May–Oct",
    "atlasName": "Zimbabwe"
   }

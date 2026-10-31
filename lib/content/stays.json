@@ -8093,7 +8093,7 @@
   },
   {
    "slug": "entamanu-lodge",
-   "name": "Entamanu \n Ngorongoro",
+   "name": "Entamanu Ngorongoro",
    "ledgerId": "STY-2026-000078",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -8157,7 +8157,7 @@
   },
   {
    "slug": "entamanu-private-lodge",
-   "name": "Entamanu \n Ngorongoro",
+   "name": "Entamanu Private",
    "ledgerId": "STY-2026-000079",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -33446,8 +33446,8 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-10-31",
    "coords": {
     "lat": -19.3934,
     "lng": 22.7594

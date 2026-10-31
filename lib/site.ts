@@ -131,7 +131,7 @@ export const VOLUMES: MegaMenu[] = [
   },
   {
     label: "Other Europe",
-    href: "/destinations/europe",
+    href: "/europe",
     tone: volumeInk("europe"),
     intro: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.",
     browse: [
@@ -218,6 +218,7 @@ export const LEGAL_NAV: NavLink[] = [
 export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "daily" | "weekly" | "monthly" }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
   // Wild Pathways: approved by James, 30 Oct 2026, once batch 1 (30 live records) was on the pages.
+  { path: "/europe", priority: 0.9, changeFrequency: "weekly" },
   { path: "/pathways", priority: 0.8, changeFrequency: "weekly" },
   { path: "/pathways/into-the-green", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/between-tides", priority: 0.7, changeFrequency: "weekly" },

@@ -934,8 +934,8 @@
    "bestMonths": "May – Nov",
    "bestMonthsNote": "April–November (Komodo, Alor dry season), October–April (Raja Ampat - calm seas) These months align with clear skies, calm seas, optimal diving visibility, and migratory marine life; ensures comfortable sailing and minimal rain.",
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": null,
    "airport": null,
    "airportDirections": null,
@@ -7472,7 +7472,7 @@
     "group_exclusive_use",
     "luxury"
    ],
-   "status": "founder_visited",
+   "status": "founder_returned",
    "statusDate": "2026-05-01",
    "coords": {
     "lat": -33.9291,
@@ -14276,8 +14276,8 @@
     "luxury",
     "group_exclusive_use"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -33.9132,
     "lng": 19.1213
@@ -14716,7 +14716,7 @@
    "bestMonths": "June to October, January to March",
    "bestMonthsNote": "Cool dry season from June to October and green season from January to March offer best game viewing, clear skies, and optimal conditions for horseback rides and aerial flights.",
    "bestFor": [],
-   "status": null,
+   "status": "founder_vetted",
    "statusDate": null,
    "coords": {
     "lat": 0.239376,
@@ -14797,8 +14797,8 @@
     "group_exclusive_use",
     "wildlife_photography"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.9723,
     "lng": 31.5312
@@ -16343,7 +16343,7 @@
     "solo",
     "wine"
    ],
-   "status": "founder_visited",
+   "status": "founder_returned",
    "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.4475,
@@ -16473,8 +16473,8 @@
     "family",
     "group_exclusive_use"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.801461,
     "lng": 26.408333
@@ -25998,7 +25998,7 @@
     "first_safari",
     "wildlife_photography"
    ],
-   "status": "founder_visited",
+   "status": "founder_returned",
    "statusDate": "2026-05-01",
    "coords": {
     "lat": -24.9348,

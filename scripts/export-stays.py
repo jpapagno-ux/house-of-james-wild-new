@@ -162,7 +162,7 @@ for x in out:
 # Stay merge file (scripts/data/stay-overrides.json): GitHub-side changes applied on top of the library.
 # A bad entry stops the publish (nothing goes live) with a message naming the stay and the field.
 OV = json.load(open(pathlib.Path(__file__).resolve().parent / "data" / "stay-overrides.json")).get("stays", {})
-ALLOWED = {"name", "tagline", "hero", "gallery", "galleryAdd", "bestMonths", "bestMonthsNote", "coords", "airport", "airportDirections", "hide", "note"}
+ALLOWED = {"name", "tagline", "hero", "gallery", "galleryAdd", "bestMonths", "bestMonthsNote", "coords", "airport", "airportDirections", "hide", "note", "status", "statusDate"}
 PHOTO_HOSTS = ("res.cloudinary.com", "media.base44.com")
 def photo_ok(u):
     from urllib.parse import urlparse

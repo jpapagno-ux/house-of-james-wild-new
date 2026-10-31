@@ -149,7 +149,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
           {IGGI_ON && <IggiPanel ctx={{ entityType: "reserve", entitySlug: r.slug, countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, ledgerId: r.rsv, sourcePage: path, volume: "safaris" }} heading={`Ask Iggi about ${r.name}`} />}
-          <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} />
+          <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           <TalkToUs name={r.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
           <div id="plan" className="scroll-mt-32 lg:scroll-mt-[212px]"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>

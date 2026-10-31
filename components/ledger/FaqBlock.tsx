@@ -3,7 +3,11 @@ import { faqPage, graph } from "@/lib/schema";
 
 // FaqBlock — visible questions and answers with matching FAQPage schema.
 // Uses <details> so every answer is in the HTML, open or closed.
-export default function FaqBlock({ faqs, title = "Questions, answered" }: { faqs: { q: string; a: string }[]; title?: string }) {
+// `schema` (Contract D15, 31 Oct 2026): FAQPage markup only for house-approved
+// Q&A — a record the Ledger has AEO-approved, or copy James approved in code.
+// Generated fallbacks (best months, getting there…) render visibly but unmarked,
+// so rich-result eligibility rests on approved answers alone.
+export default function FaqBlock({ faqs, title = "Questions, answered", schema = true }: { faqs: { q: string; a: string }[]; title?: string; schema?: boolean }) {
   if (!faqs.length) return null;
   return (
     <section aria-labelledby="faq-heading" className="mt-16 border-t ledger-rule pt-8">
@@ -20,7 +24,7 @@ export default function FaqBlock({ faqs, title = "Questions, answered" }: { faqs
           </details>
         ))}
       </div>
-      <JsonLd data={graph(faqPage(faqs))} />
+      {schema && <JsonLd data={graph(faqPage(faqs))} />}
     </section>
   );
 }

@@ -68,7 +68,7 @@ test("Iggi's samples are drafts that label every answer by origin and hand check
 
 test("asset inventory: approved assets are the ones already live; Cloudinary art is candidate or draft", () => {
   const approved = DIALOGUE_ASSETS.filter((a) => a.status === "approved").map((a) => a.id).sort();
-  assert.deepEqual(approved, ["cheetah-pencil", "house-hare-seal", "iggi-portrait-charcoal", "iggi-this-way", "iggi-wink"]);
+  assert.deepEqual(approved, ["cheetah-pencil", "house-hare-seal", "iggi-mark", "iggi-portrait-charcoal", "iggi-this-way", "iggi-wink"]);
   assert.ok(DIALOGUE_ASSETS.filter((a) => a.id.startsWith("iggi-character") || a.id === "iggi-engraved-v1").every((a) => a.status === "draft"));
   assert.equal(new Set(DIALOGUE_ASSETS.map((a) => a.id)).size, DIALOGUE_ASSETS.length);
 });

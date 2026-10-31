@@ -48,6 +48,7 @@ import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
 import { sessionsFor } from "@/lib/content/workshops";
 import { collectionForStay, offerForStay } from "@/lib/content/collections/cayuga";
+import { sistersFor } from "@/lib/content/collections/groups";
 import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
 import { isBuilt } from "@/lib/routes";
@@ -203,6 +204,14 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <section aria-label="Part of a collection" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow ledger-crimson">Part of a collection</p><p className="ledger-display text-[1.5rem] mt-1">{s.name} is one of seven Cayuga Collection hotels</p><p className="mt-1 text-[15px] ledger-muted">Sustainably run boutique hotels across Costa Rica, Panama, Nicaragua and Guatemala, and how to pair them.</p>{offerForStay(s.slug) && <p className="mt-3 text-[15.5px]"><span className="ledger-eyebrow ledger-crimson mr-2">{offerForStay(s.slug)!.program}</span>{offerForStay(s.slug)!.headline}, travel {offerForStay(s.slug)!.travel}.</p>}</div>
               <Link href={offerForStay(s.slug) ? `${collectionForStay(s.slug)!.path}#offers` : collectionForStay(s.slug)!.path} className="ledger-btn self-start md:self-center">{offerForStay(s.slug) ? "See the offer" : "See the collection"}</Link>
+            </section>
+          )}
+          {sistersFor(s.slug) && (
+            <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="sisters-heading">
+              <p className="ledger-eyebrow ledger-crimson">Sister lodges · {sistersFor(s.slug)!.group.name}</p>
+              <h2 id="sisters-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} Has Family</h2>
+              <p className="mt-2 text-[15.5px] ledger-muted max-w-2xl">{sistersFor(s.slug)!.group.line}</p>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{sistersFor(s.slug)!.stays.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
             </section>
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />

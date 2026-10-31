@@ -85,7 +85,9 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   const top = [...r.countries].sort((a, b) => b.stays - a.stays).slice(0, 4);
   const answer = r.countries.length
     ? `${r.name} in the James Wild & Co Ledger holds ${r.stayCount} live stays across ${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"}, led by ${top.map((c) => `${c.name} (${c.stays})`).join(", ")}. Every stay is vetted in person or by a named partner and filed under a permanent Ledger ID.${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "journey" : "journeys"} here.` : ""}${r.facts.best_months ? ` Best months: ${r.facts.best_months.split(".")[0]}.` : ""} Plan with James or an advisor who knows the ground.`
-    : `${r.name} is being filed in the James Wild & Co Ledger now. Its first stays and voyages will appear here as they're vetted; in the meantime, James or an advisor can plan it with you.`;
+    : journeys.length
+      ? `${r.name} in the James Wild & Co Ledger is reached by sea: ${journeys.map((j) => `the ${j.title} (${j.nights ? `${j.nights} nights, ` : ""}${j.line})`).join("; ")}. More voyages are being filed as they're vetted; James or an advisor can plan it with you.`
+      : `${r.name} is being filed in the James Wild & Co Ledger now. Its first stays and voyages will appear here as they're vetted; in the meantime, James or an advisor can plan it with you.`;
   const chart = REGION_CHARTS[r.slug];
   const mapItems: MapItem[] = chart ? [
     ...STAYS.filter((s) => s.regionSlug === r.slug && s.coords).map((s) => { const q = projectOn(chart, s.coords!.lat, s.coords!.lng); return { id: s.slug, category: (isResidence(s.name, s.category) ? "residence" : "stay") as MapItem["category"], name: s.name, kind: `${s.category ?? "stay"} · ${s.country ?? ""}`, href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: s.country, bestMonths: s.bestMonths ?? undefined }; }),
@@ -136,7 +138,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
               <AnswerBlock>{answer}</AnswerBlock>
               {/* Theme chips: the Wild Pathways this region leads with (never a volume colour) */}
               {(REGION_PATHWAYS[r.slug] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[r.slug] ?? []).map((k) => pathway(k)).filter((p) => !!p).map((p) => <li key={p!.id}><PathwayChip pathway={p!} href={!GUARD_ON || isBuilt(`/pathways/${p!.key}`) ? `/pathways/${p!.key}` : undefined} /></li>)}</ul>}
-              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount)} />
+              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount, (WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k)).filter((j) => j.kind === "voyage").length)} />
             </div>
             {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
           </div>

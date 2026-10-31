@@ -23,6 +23,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
 | 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
 | 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
+| 31 Oct 2026 | Phase 2B (voyages + overland routes): trip-map.json, cross-volume entries on pathway pages, `/preview/pathways/journeys` with 11 drafts | Code shipped; drafts await James |
 | 30 Oct 2026 | Phase 2F dialogue register: schema, rules as code, asset inventory, review preview (no live rendering yet) | Shipped; approvals recorded same day |
 | 30 Oct 2026 | Phase 2E Ledger pathway chips on saved stays and folio items (no schema change; chips resolve from the export by slug) | Shipped |
 
@@ -44,6 +45,8 @@ Running record. One line per item; closed items stay for the audit trail.
 | 14 | Dulini Daunara Lodge linked to the Botswana destination in the library | James | Closed 30 Oct 2026 — relinked to South Africa (same destination as the other Dulini lodges) with James's approval; Okavango coordinates cleared, real pin still wanted |
 | 15 | Stay record: literal `<br/>` shows as text in the Airport field | this initiative | Closed 30 Oct 2026 — exporter `line()` strips tags and joins breaks with ' · ' for `airport_name`; Tswalu's committed JSON patched the same way ahead of the nightly sync |
 | 16 | axe on stay pages (pre-existing): room-photo scrollers and the mobile record bar lack keyboard access (`scrollable-region-focusable`); some content outside landmarks (`region`) | stay template owner | Open |
+| 19 | 2B batch 2 approvals: eleven voyages and routes drafted onto the pathways on `/preview/pathways/journeys`; approve or edit, then status flips to approved (James) | James | Open — awaiting review |
+| 20 | 2B remaining volumes: Gatherings residences have no detail records yet (Morukuru preview only; Ted Turner houses link out), so nothing to classify until Gatherings pages exist. Library entities Residence / VesselVoyage / LandItinerary gain the pathway fields when the site starts reading them from the library | this initiative | Deferred |
 | 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
 | 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
 | 8 | HubShell breadcrumb only two levels on `/pathways/[key]` | this initiative | Closed 30 Oct 2026 — HubShell takes a `trail`; pathway pages show Home › Pathways › name and emit one BreadcrumbList (the page-level duplicate removed) |

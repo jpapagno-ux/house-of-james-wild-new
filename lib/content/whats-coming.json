@@ -1,0 +1,41 @@
+{
+ "exportedOn": "2026-10-31",
+ "coming": [
+  {
+   "slug": "singita-elela",
+   "name": "Singita Elela",
+   "ledgerId": "STY-2026-000246",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "status": "opening",
+   "date": "2026-12-11",
+   "note": "Singita's first Botswana lodge: eight raised camps on a 170,000-hectare private concession in the western Okavango, on the former Abu Camp site. Opens 11 December 2026.",
+   "tagline": "Singita's first Botswana lodge: eight raised camps in the western Okavango Delta",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/singita-elela/hero",
+   "source": "https://singita.com/lodge/singita-elela/",
+   "href": "/stays/singita-elela",
+   "bestMonths": "June to September",
+   "airport": "Maun Airport (MUB), then Elela's own airstrip",
+   "volume": "safaris"
+  },
+  {
+   "slug": "beyond-xaranna-okavango-delta-camp-by-and-beyond",
+   "name": "andBeyond Xaranna Okavango Delta Lodge",
+   "ledgerId": "STY-2026-755100",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "status": "rebuilding",
+   "date": "2027-08",
+   "note": "andBeyond is rebuilding Xaranna Okavango Delta Camp as andBeyond Xaranna Okavango Delta Lodge, reopening August 2027.",
+   "tagline": null,
+   "hero": null,
+   "source": "https://www.andbeyond.com/our-lodges/africa/botswana/okavango-delta/andbeyond-xaranna-okavango-delta-camp/",
+   "href": null,
+   "bestMonths": null,
+   "airport": null,
+   "volume": null
+  }
+ ]
+}

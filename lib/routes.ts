@@ -20,6 +20,7 @@ export const BUILT: string[] = [
   "/advisors/*", // profiles; each is generated only when a bio is on file
   "/the-ledger",
   "/for-advisors",
+  "/whats-coming",
   "/for-advisors/apply",
   "/partners",
   "/travel-notes",

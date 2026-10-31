@@ -178,6 +178,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
       { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },
       { label: "Journal", href: "/journal" },
+      { label: "What's coming", href: "/whats-coming" },
     ],
   },
   {
@@ -220,6 +221,8 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   // Wild Pathways: approved by James, 30 Oct 2026, once batch 1 (30 live records) was on the pages.
   { path: "/europe", priority: 0.9, changeFrequency: "weekly" },
   { path: "/pathways", priority: 0.8, changeFrequency: "weekly" },
+  // What's coming (James, 31 Oct 2026): lodges filed before they open.
+  { path: "/whats-coming", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/into-the-green", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/between-tides", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/above-it-all", priority: 0.7, changeFrequency: "weekly" },

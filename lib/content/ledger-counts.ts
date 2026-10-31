@@ -23,7 +23,7 @@ export function countryCounts(slug: string): Count[] {
   ];
 }
 
-export function regionCounts(region: string, countrySlugs: string[], stayCount: number): Count[] {
+export function regionCounts(region: string, countrySlugs: string[], stayCount: number, extraVoyages = 0): Count[] {
   const per = countrySlugs.map(countryCounts);
   const sum = (i: number) => per.reduce((n, c) => n + c[i].n, 0);
   const reserves = RESERVES.filter((r) => r.stay.regionSlug === region).length;
@@ -31,7 +31,7 @@ export function regionCounts(region: string, countrySlugs: string[], stayCount: 
   return [
     { label: "Stays", n: stays },
     { label: "Residences", n: sum(1) },
-    { label: "Voyages", n: sum(2) },
+    { label: "Voyages", n: sum(2) + extraVoyages },
     { label: "Reserves", n: Math.max(reserves, sum(3)) },
   ];
 }

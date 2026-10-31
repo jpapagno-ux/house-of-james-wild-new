@@ -48,6 +48,35 @@ export const ADVISORS: Advisor[] = [
     specialties: [],
     traveled: [],
     profileHref: "/about/founder",
+    // The founder's own Desk: ADV-0001. Every entry is a place James has stated
+    // he stayed at or walked, with the year; the marks are his own. While the
+    // house is in testing he is the advisor on every page (DEFAULT_ADVISOR).
+    desk: {
+      adv: "ADV-1982-000001", sample: false, since: 1983, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
+      volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
+      countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
+      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road"],
+      line: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
+      entries: [
+        { ledgerId: "STY-2026-056524", name: "Wilderness DumaTau", place: "Linyanti · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Elephants cross the channel at four. Nobody is late for that." },
+        { ledgerId: "STY-2026-000347", name: "Wilderness Mombo Camp", place: "Okavango Delta · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Know a Place", year: 2026 }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-403235", name: "Wilderness Qorokwe", place: "Okavango Delta · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Know a Place", year: 2026 }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-000171", name: "Monwana", place: "Thornybush · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Eight suites. The elephant at the waterhole arrived at five, as if he had a reservation." },
+        { ledgerId: "STY-2026-290658", name: "Lion Sands Ivory Lodge", place: "Sabi Sand · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-000293", name: "Kirkman's Kamp", place: "Sabi Sand · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-000075", name: "Ellerman House", place: "Cape Town · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "stays", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-000148", name: "Leeu Estates", place: "Franschhoek · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "stays", james: { mark: "I've Walked It", year: 2026 }, theirs: { mark: "Walked It", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Every Leeu property, walked in one visit. Wine first, then bush." },
+        { ledgerId: "STY-2026-119083", name: "Jaci's Private Lodge", place: "Madikwe · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "gatherings", james: { mark: "I Know the Host", year: 2026 }, theirs: { mark: "Walked It", when: "May 2026" }, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-950299", name: "Morukuru Farm House", place: "Madikwe · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "gatherings", james: { mark: "I Know Who Knows", year: 2026 }, theirs: null, guests: 0, folios: [], last: "May 26" },
+        { ledgerId: "STY-2026-138258", name: "Tswalu Kalahari", place: "Kalahari · South Africa", href: null, countrySlug: "south-africa", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2012, favourite: true }, theirs: { mark: "Stayed", when: "2012" }, guests: 0, folios: [], last: "2012" },
+        { ledgerId: "STY-2026-000248", name: "Singita Faru Faru", place: "Grumeti · Tanzania", href: null, countrySlug: "tanzania", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2018, favourite: true }, theirs: { mark: "Stayed", when: "2012 & 2018" }, guests: 0, folios: [], last: "2018" },
+        { ledgerId: "STY-2026-000066", name: "Cottar's 1920s Camp & Bush Villa", place: "Maasai Mara · Kenya", href: null, countrySlug: "kenya", regionSlug: "africa", volume: "gatherings", james: { mark: "I've Walked It" }, theirs: { mark: "Walked It" }, guests: 0, folios: [], last: "—" },
+        { ledgerId: "STY-2026-000152", name: "Lewa House", place: "Laikipia · Kenya", href: null, countrySlug: "kenya", regionSlug: "africa", volume: "safaris", james: { mark: "I've Walked It" }, theirs: { mark: "Walked It" }, guests: 0, folios: [], last: "—" },
+        { ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Keep Going Back", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "Nov 24", note: "Phinisi, eight guests, the best reef on earth under the hull. Sailed it with Anthony." },
+        { ledgerId: "STY-2026-000213", name: "Vahine Private Island", place: "Taha'a · Tahiti", href: null, countrySlug: "tahiti", regionSlug: "oceania", volume: "stays", james: { mark: "I've Walked It", year: 2025 }, theirs: { mark: "Walked It", when: "2025" }, guests: 0, folios: [], last: "2025", note: "Taha'a is my favourite in Tahiti, and Tahiti is my favourite." },
+      ],
+      folios: [],
+    },
   },
   {
     slug: "kristina-larson",
@@ -106,7 +135,7 @@ export const ADVISORS: Advisor[] = [
     slug: "sofia-marchetti",
     name: "Sofia Marchetti",
     firstName: "Sofia",
-    role: "Independent travel advisor · sample",
+    role: "Independent travel advisor · stand-in",
     roleApproved: true,
     sample: true,
     portrait: { url: samplePortrait(1), alt: "Sample advisor portrait (AI-generated): Sofia Marchetti" },
@@ -124,7 +153,7 @@ export const ADVISORS: Advisor[] = [
     slug: "marcus-adeyemi",
     name: "Marcus Adeyemi",
     firstName: "Marcus",
-    role: "Africa advisor · sample",
+    role: "Africa advisor · stand-in",
     roleApproved: true,
     sample: true,
     portrait: { url: samplePortrait(2), alt: "Sample advisor portrait (AI-generated): Marcus Adeyemi" },
@@ -142,7 +171,7 @@ export const ADVISORS: Advisor[] = [
     slug: "mateo-rivas",
     name: "Mateo Rivas",
     firstName: "Mateo",
-    role: "Voyages advisor · sample",
+    role: "Voyages advisor · stand-in",
     roleApproved: true,
     sample: true,
     portrait: { url: samplePortrait(3), alt: "Sample advisor portrait (AI-generated): Mateo Rivas" },
@@ -160,7 +189,7 @@ export const ADVISORS: Advisor[] = [
     slug: "clara-whitlock",
     name: "Clara Whitlock",
     firstName: "Clara",
-    role: "Gatherings & wellness advisor · sample",
+    role: "Gatherings & wellness advisor · stand-in",
     roleApproved: true,
     sample: true,
     portrait: { url: samplePortrait(4), alt: "Sample advisor portrait (AI-generated): Clara Whitlock" },
@@ -203,7 +232,14 @@ export const advisorBySlug = (slug: string) => ADVISORS.find((a) => a.slug === s
 
 // ---- The Advisor Desk: who knows a place ----------------------------------
 // Advisors with a desk, founder excluded (his page is /about/founder).
-export const DESK_ADVISORS = ADVISORS.filter((a) => a.desk && a.slug !== "james-papagno");
+// While the house is in testing James is the advisor on every page: first in
+// every strip and scroll, pre-addressed on the planning form, and the advisor
+// Iggi is told about. Change this slug when a real advisor takes a page over.
+export const DEFAULT_ADVISOR = "james-papagno";
+export const defaultAdvisor = () => ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
+
+// Advisors with a Desk, the founder included (he is ADV-0001).
+export const DESK_ADVISORS = ADVISORS.filter((a) => a.desk);
 
 export type AdvisorsFor = { advisors: Advisor[]; slept: number; carried: number };
 
@@ -216,7 +252,7 @@ export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: s
     (where.regionSlug ? e.regionSlug === where.regionSlug : true) &&
     (where.volume ? e.volume === where.volume : true);
   const hits = DESK_ADVISORS.map((a) => ({ a, es: a.desk!.entries.filter(match) })).filter((x) => x.es.length);
-  hits.sort((x, y) => y.es.reduce((n, e) => n + e.guests, 0) - x.es.reduce((n, e) => n + e.guests, 0));
+  hits.sort((x, y) => (x.a.slug === DEFAULT_ADVISOR ? -1 : y.a.slug === DEFAULT_ADVISOR ? 1 : y.es.reduce((n, e) => n + e.guests, 0) - x.es.reduce((n, e) => n + e.guests, 0)));
   return {
     advisors: hits.map((x) => x.a),
     slept: hits.filter((x) => x.es.some((e) => e.theirs && e.theirs.mark !== "Sent Guests")).length,

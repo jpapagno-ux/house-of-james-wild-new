@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Check, Minus, Plus } from "lucide-react";
-import { ADVISORS } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR } from "@/lib/content/advisors";
 import { BUDGETS, CALL_TIMES, INTERESTS, validateEnquiry, type Enquiry } from "@/lib/enquiry";
 
 // The /plan enquiry. Reads the page context it was sent with (advisor, trip
@@ -42,7 +42,7 @@ export default function EnquiryForm() {
     const g = (k: string) => sp.get(k) ?? undefined;
     return { advisor: g("advisor"), from: g("from"), trip: g("trip"), option: g("cabin") ?? g("option"), travellers: g("travellers"), addons: g("addons"), estimate: g("estimate"), destination: g("destination"), route: g("route"), q: g("q") };
   }, [sp]);
-  const advisor = ADVISORS.find((a) => a.slug === ctx.advisor);
+  const advisor = ADVISORS.find((a) => a.slug === (ctx.advisor ?? DEFAULT_ADVISOR));
   const wantsCall = sp.get("next") === "call";
 
   const [f, setF] = useState<Enquiry>({

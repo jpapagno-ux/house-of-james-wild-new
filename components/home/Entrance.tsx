@@ -146,7 +146,7 @@ export function AdvisorForward() {
                 </span>
                 <span className="block p-3">
                   <span className="block ledger-display text-[17px] leading-tight">{a.name}</span>
-                  <span className="block ledger-eyebrow !text-[9px] mt-1" style={{ color: GREEN }}>{a.role.replace(" · sample", "")}</span>
+                  <span className="block ledger-eyebrow !text-[9px] mt-1" style={{ color: GREEN }}>{a.role.replace(" · stand-in", "")}</span>
                 </span>
               </Link>
             </li>

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
+import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
 
 // "Ask Iggi" panel — Stage 2 of the Iggi Intelligence Core (Contract C3).
 // Mints a same-origin embed token from /api/iggi/token, then loads the Iggi
@@ -22,6 +23,7 @@ export type IggiContext = {
   ledgerId?: string | null;
   sourcePage: string; // the path, for the Core's conversation record
   volume?: string | null;
+  advisor?: string | null; // the advisor on this page (DEFAULT_ADVISOR while testing)
 };
 
 export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", lead }: { ctx: IggiContext; heading?: string; lead?: string }) {
@@ -54,6 +56,8 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
       if (ctx.countrySlug) p.set("country", ctx.countrySlug);
       if (ctx.ledgerId) p.set("ledgerId", ctx.ledgerId);
       if (ctx.volume) p.set("volume", ctx.volume);
+      p.set("advisor", ctx.advisor ?? DEFAULT_ADVISOR);
+      p.set("advisorsFeed", `${location.origin}/api/v1/advisors`);
       if (token) p.set("token", token);
       setSrc(`${IGGI_CORE_ORIGIN}/embed/chat?${p.toString()}`);
     };

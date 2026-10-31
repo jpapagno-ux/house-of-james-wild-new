@@ -16,7 +16,7 @@ export function DeskIdCard({ a }: { a: Advisor }) {
         <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>The Advisor Desk · since {d.joined}</p>
         <p className="font-mono text-[13px] tracking-[0.14em] mt-1">{d.adv}</p>
         <p className="ledger-display text-[2rem] leading-tight mt-2">{a.name}</p>
-        <p className="text-[15px] ledger-muted mt-1">{a.role.replace(" · sample", "")}{d.agency ? ` · ${d.agency}` : ""}{d.base ? ` · ${d.base}` : ""}</p>
+        <p className="text-[15px] ledger-muted mt-1">{a.role.replace(" · stand-in", "")}{d.agency ? ` · ${d.agency}` : ""}{d.base ? ` · ${d.base}` : ""}</p>
         <p className="ledger-display italic text-[19px] mt-4 max-w-xl">&ldquo;{d.line}&rdquo; <span className="ledger-eyebrow not-italic ml-1">— {a.firstName}</span></p>
         <dl className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-4">
           {[["Entries carried", c.carried], ["Guests sent", c.guests], ["Folios shared", c.folios], ["Advising since", d.since]].map(([k, v]) => (
@@ -32,7 +32,7 @@ export function DeskIdCard({ a }: { a: Advisor }) {
         <p>{d.languages.join(" · ")}</p>
         <p className="ledger-eyebrow mt-2">Quote {a.firstName} by number</p>
         <p className="font-mono text-[12px] tracking-[0.1em]">{d.adv}</p>
-        {a.sample && <p className="mt-auto pt-3 text-[12px] ledger-muted leading-snug">Sample advisor · name, agency, contact details, photograph (AI-generated) and bookings are invented to show the layout · James&rsquo;s marks and Ledger IDs are real</p>}
+        {a.sample && <p className="mt-auto pt-3 text-[12px] ledger-muted leading-snug">Stand-in advisor for testing · name, agency, contact details, photograph (AI-generated) and bookings are invented · James&rsquo;s marks and Ledger IDs are real</p>}
       </div>
     </div>
   );

@@ -325,6 +325,8 @@ export const STAY_SLUGS: string[] = [
   "ngare-camp-by-serian",
   "nihi",
   "nikoi-island",
+  "nimali-mara",
+  "nimali-serengeti",
   "niyama-private-islands-maldives",
   "no-1-pery-square-limerick",
   "nomad-tanzania-lamai",

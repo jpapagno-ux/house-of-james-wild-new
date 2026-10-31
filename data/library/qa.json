@@ -1363,7 +1363,7 @@
    "stay_id": "6a85bfb37f6eb35689bff90f",
    "slug": "few-far-luvhondo",
    "name": "Few & Far Luvhondo",
-   "country": "Kenya",
+   "country": "South Africa",
    "missing": [
     "stay_copy",
     "coordinates"
@@ -1611,9 +1611,7 @@
    "name": "House in the Wild",
    "country": "Kenya",
    "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },
@@ -2692,12 +2690,11 @@
    "stay_id": "6a85bfb37f6eb35689bff96b",
    "slug": "nimali-mara",
    "name": "Nimali Mara",
-   "country": "Kenya",
+   "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96c",
@@ -2705,10 +2702,9 @@
    "name": "Nimali Serengeti",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96d",
@@ -3793,6 +3789,17 @@
    "country": "Zimbabwe",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae669ae51b8a2761cb42b90",
+   "slug": "sterrekopje",
+   "name": "Sterrekopje Healing Farm",
+   "country": "South Africa",
+   "missing": [
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9cc",

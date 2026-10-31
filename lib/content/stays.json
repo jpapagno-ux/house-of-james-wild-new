@@ -552,7 +552,7 @@
    "bestMonths": "June to October, January to March",
    "bestMonthsNote": "June to October brings the Great Migration, dramatic river crossings, and the best game viewing. January to March is green and lush, with resident wildlife, birding, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.1592,
@@ -622,7 +622,7 @@
    "bestMonths": "July to October, December to March",
    "bestMonthsNote": "July to October is Great Migration season with river crossings and peak wildlife. December to March is lush and green, with excellent resident game and birding, plus fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.2472,
@@ -700,7 +700,7 @@
    "bestMonths": "June to October, January to March",
    "bestMonthsNote": "June to October is migration season, with river crossings, dramatic game, and peak wildlife. January to March is green, scenic, with great resident wildlife and birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.835,
@@ -2745,8 +2745,31 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
-   "volumes": null
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-04",
+     "PATH-07"
+    ],
+    "setting": "chihuahuan_desert",
+    "intentions": [
+     "solitude",
+     "wildlife",
+     "private_house",
+     "dark_skies"
+    ],
+    "suitability": [
+     "private_groups",
+     "conservation_minded"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ]
   },
   {
    "slug": "asilia-rekero-camp",
@@ -2772,7 +2795,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for migration river crossings and dramatic wildlife. November to June is green, peaceful, and great for birding and resident game.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.4226,
@@ -4237,7 +4260,7 @@
     "luxury",
     "solo"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Donegal Airport (CFN); City of Derry Airport (LDY)",
@@ -4272,9 +4295,9 @@
    ],
    "facts": {
     "best_months": "March–November for the published 2026 season",
+    "how_to_get_there": "On Horn Head outside Dunfanaghy, about 50 minutes by road from Donegal Airport according to the property.",
     "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks.",
-    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks.",
-    "how_to_get_there": "On Horn Head outside Dunfanaghy, about 50 minutes by road from Donegal Airport according to the property."
+    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks."
    },
    "faqs": [
     {
@@ -5134,7 +5157,7 @@
    "bestMonths": "April–October",
    "bestMonthsNote": "Spring to autumn brings blooming gardens, warm days, and the best conditions for riding, fishing, and exploring the estate.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 54.3344,
@@ -6434,7 +6457,7 @@
    "bestMonths": "April - September",
    "bestMonthsNote": "Spring through early autumn is an especially appealing time to experience Vienna Woods because the woodland setting becomes part of the stay. Longer days also make it easier to combine walks, Cork City exploration, family adventures and time outdoors.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 51.911609,
@@ -6775,7 +6798,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October is dry season with top wildlife concentrations, clear skies, and dramatic predator action. November to April is lush, green, with baby animals and amazing birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.0199,
@@ -7379,7 +7402,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is migration season with best wildlife and dramatic crossings. November to May is green, great for birding and quieter safaris.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.6777,
@@ -8208,7 +8231,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for migration and big cats. November to June is quieter, with great predator sightings and lush green scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.4205,
@@ -9414,7 +9437,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October for dry season, best wildlife, and delta water activities. November to April for lush green season, birding, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.5827,
@@ -9909,7 +9932,7 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "Late spring through early autumn is an especially beautiful time to experience Hayfield Manor. The private grounds and walled gardens become part of the stay, while longer days make it easier to combine Cork City exploration with time beside the pool, spa treatments, outdoor dining and leisurely afternoons at the manor.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 51.89102,
@@ -10527,7 +10550,7 @@
    "bestMonths": "June–October, December–March",
    "bestMonthsNote": "Best for wildlife, dry roads, and river views; July–October for the Great Migration.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.0808,
@@ -12892,7 +12915,7 @@
    "bestMonths": "June–October, December–March",
    "bestMonthsNote": "Best for dry season game viewing, calving, migration crossings, and beautiful Mara light for photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.214389,
@@ -12974,7 +12997,7 @@
    "bestMonths": "June to November",
    "bestMonthsNote": "June to November is dry season, best for game viewing, walking, and predator action. December to May is green season, great for birding and dramatic scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -7.5221,
@@ -14819,8 +14842,31 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
-   "volumes": null
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-04",
+     "PATH-06"
+    ],
+    "setting": "gila_foothills_rio_grande",
+    "intentions": [
+     "private_house",
+     "family_gathering",
+     "wildlife",
+     "solitude"
+    ],
+    "suitability": [
+     "private_groups",
+     "families_and_generations"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ]
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -15655,7 +15701,7 @@
    "bestMonths": "June–October, December–March",
    "bestMonthsNote": "Best for wildlife, clear views, and mild weather.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 0.2304,
@@ -15831,7 +15877,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "The Waterberg's dry, cooler season: thinner bush and animals at water.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -23.9078,
@@ -16430,24 +16476,19 @@
     ]
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Family & Generational Experiences",
-     "Safari Game Drives - Big 5",
-     "Conservation & Eco Mindfullness",
-     "Photo Lab",
-     "Wellness & Health",
-     "Honeymoon & Couples"
-    ]
+    "paras": [
+     "Twice-daily game drives in open Land Rovers with a ranger and tracker. Guided walks. Private vehicles for photographers. Daily yoga, private meditation and Healing House treatments. Photographic tuition in the studio. Wellness retreats with Boyd Varty and Martha Beck on published dates. Conservation through the Ripple Fund, from Sand River restoration to rhino protection."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "Camps and Villas thoughtfully cater to both families and couples, featuring private heated plunge pools, open-air bathtubs, and interconnected suite options. Designed with a strong focus on togetherness, each space reflects Londolozi’s deep commitment to family and community."
+     "Four camps, the Private Granite Suites and private villas on 15,000 hectares in the Sabi Sand, with private heated plunge pools, open-air baths and interleading family suites. The Healing House at Varty Camp is a dedicated wellness space with treatment rooms, a heat cabin over the Sand River, sound and energy work and the signature Biophony Treatment. Complimentary daily yoga on a deck built into a 500-year-old ebony tree near Founders Camp, with private yoga and meditation on request. A photographic studio with Lightroom tuition, post-production for printing and Canon and Nikon camera and lens hire. A gym at Varty Camp."
     ],
     "items": []
    },
    "onlyHere": [
-    "At Londolozi, safari is a journey of self-discovery, offering unmatched leopard sightings, soulful wellness experiences, and camps with unique character. Rooted in a legacy of conservation and storytelling, each stay supports sustainability and empowers local communities. Where luxury meets purpose in the wild. Each of the distinctive, soulful camps has its own unique vibe, thoughtfully designed to reflect the rhythm of the land."
+    "Londolozi has followed the same leopard dynasty since 1979, when John Varty and Elmon Mhlongo first earned the trust of the Mother Leopard, and more than four decades of sightings now trace the River, Saseka and Sunsetbend lineages. Add twelve years of wellness safaris at the Healing House, retreats led by Boyd Varty and Martha Beck, and a studio where you can edit and print your leopard photographs before you leave."
    ],
    "why": [
     {
@@ -16489,15 +16530,20 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-05"
+    ],
     "setting": null,
     "intentions": [
+     "wellness",
+     "photography",
+     "conservation",
      "big_five",
-     "private_reserve"
+     "family"
     ],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedBy": "James Papagno",
     "classifiedAt": "2026-10-31"
    },
    "volumes": null
@@ -16908,7 +16954,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for Great Migration crossings, big cats, and peak wildlife. November to June is quieter, lush, and excellent for resident predators and birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.3427,
@@ -16977,7 +17023,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for migration, river crossings, and big cat action. November to June is quieter, lush, with resident wildlife and birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.1749,
@@ -17718,7 +17764,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October for dry season, best wildlife, and mokoro safaris. November to April for green landscapes, birds, and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.2544,
@@ -18186,7 +18232,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for migration and peak wildlife. November to June is lush, peaceful, and perfect for predators, birds, and quiet adventure.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.4007,
@@ -18351,7 +18397,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October for prime wildlife, big cats, and dry weather. November to March brings green landscapes, migratory birds, and calving season drama.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.5482,
@@ -19234,6 +19280,158 @@
    "volumes": null
   },
   {
+   "slug": "nimali-mara",
+   "name": "Nimali Mara",
+   "ledgerId": "STY-2026-000188",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten tented suites in the kopjes above the Mara River crossings",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-mara/g6"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight tented suites and two honeymoon suites, each with a private deck looking out over the Serengeti and a bath with a view of the plains. Interiors mix contemporary lines with earthy textures and fabrics."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and afternoon game drives to the Mara River crossings, at their peak from July to October. Elephants and predators year round. Hot-air balloon flights over the northern plains and the river."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "In the far north of the Serengeti near the Kenyan border, tucked into a kopje close to the Mara River. An infinity pool set into the rock and a campfire under the stars. A four-hour game drive from its sister camp, Nimali Serengeti."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A camp built into the rocks within reach of the Mara River, where the wildebeest migration makes its most dramatic crossings between July and October."
+   ],
+   "why": [
+    {
+     "title": "Front Row for the Crossings",
+     "body": "Best for couples, honeymooners, photographers and migration seekers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "nimali-serengeti",
+   "name": "Nimali Serengeti",
+   "ledgerId": "STY-2026-000189",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twelve tented suites in the heart of the Serengeti",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-serengeti/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-serengeti/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-serengeti/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-serengeti/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nimali-serengeti/g4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve tented suites, two of them linked by a shared walkway for families, each with a private verandah and an en-suite bathroom with bathtub and outdoor shower. Interiors take their cue from the migration."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and afternoon game drives for lion, cheetah and leopard. The migration moves through from April to June and October to December. Hot-air balloon flights. Dinner under the stars."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "In the central Serengeti, in a new position near Makoma Hill with uninterrupted views over kopje-dotted plains. A central lounge, dining area and pool deck. Four hours by road from the Ngorongoro Crater gate and a four-hour game drive from its sister camp, Nimali Mara."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A central Serengeti base on one of the migration's main routes, with strong big cat sightings in every season."
+   ],
+   "why": [
+    {
+     "title": "Big Cats All Year",
+     "body": "Best for first-time safari-goers, families and photographers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "niyama-private-islands-maldives",
    "name": "Niyama Private Islands \n Maldives",
    "ledgerId": "STY-2026-000190",
@@ -19338,7 +19536,7 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "Spring and summer bring some of the property's most evocative experiences to life, from terrace time and spa escapes to the Picnic & Pampering Break. The seasonal experiences are designed around slowing down, enjoying the outdoors and making the most of Limerick's Georgian Quarter.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 52.65816,
@@ -20139,7 +20337,7 @@
    "bestMonths": "June to October, January to March",
    "bestMonthsNote": "June to October and January to March are dry seasons for easy wildlife viewing and rhino tracking. April, May, and November are green, with fewer visitors and good birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 0.0619,
@@ -20293,7 +20491,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is dry season with huge elephant herds and prime walking safaris. November to May is green, with abundant birds and fewer visitors.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -4.1327,
@@ -22170,7 +22368,7 @@
    "bestMonths": "June to March",
    "bestMonthsNote": "June to March is dry season for best chimpanzee tracking, fishing, and birding. April and May can be wet but are lush and quiet.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.3085,
@@ -22315,7 +22513,7 @@
    "bestMonths": "July–October, January–March",
    "bestMonthsNote": "Peak for migration crossings, dry weather, and great wildlife; green season brings dramatic skies and fewer crowds.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.6186,
@@ -23133,7 +23331,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October for river crossings, big herds, and wildlife drama. November to June is quieter with resident game, green season birding, and peaceful views.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.5818,
@@ -23286,7 +23484,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October is the dry season, ideal for peak wildlife and the best game viewing. November to April brings lush landscapes, dramatic scenery, excellent birding, and fewer visitors.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.5327,
@@ -23689,7 +23887,7 @@
    "bestMonths": "Year-round; May to October for the classic dry desert",
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.069,
@@ -23802,8 +24000,29 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
-   "volumes": null
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "hot_springs_town",
+    "intentions": [
+     "wellness",
+     "hot_springs",
+     "heritage",
+     "base_for_reserves"
+    ],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "beckon-silky-oaks-lodge",
@@ -24806,7 +25025,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is migration season and best for wildlife viewing, dry conditions, and dramatic landscapes. November to May is green, lush, and quieter for birding and relaxation.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.0878,
@@ -25270,7 +25489,7 @@
    "bestMonths": "July to October",
    "bestMonthsNote": "July to October is the peak for migration crossings, river action, and dramatic wildlife. November to June is quieter and lush, with fewer crowds and fantastic resident wildlife.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.569,
@@ -25352,7 +25571,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is migration season and best for wildlife, dry weather, and scenic views. November to May is lush and green, with fewer crowds and abundant birdlife.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Sasakwa Airstrip, Grumeti Airstrip",
@@ -25722,7 +25941,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is best for migration, dry weather, and wildlife. November to May is green, peaceful, and perfect for birding and family time.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.0911,
@@ -28042,7 +28261,7 @@
    "bestMonths": "December to March, July to October",
    "bestMonthsNote": "December to March is dry, green, and best for walking, wildlife, and clear skies. July to October is cooler with superb wildlife and less rain.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 0.4643,
@@ -29454,7 +29673,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is dry season for game viewing, hiking, and cultural experiences. November to May is lush, peaceful, and excellent for birding and green scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.9642,
@@ -29576,9 +29795,9 @@
    ],
    "facts": {
     "best_months": "The supplied property information does not specify the best months to visit. Check Belize’s seasonal conditions and confirm current guidance before booking.",
+    "how_to_get_there": "The Lodge at Chaa Creek is located in Belize’s Cayo region. The supplied information does not detail airport access, drive times or transfers; contact the lodge for current arrival arrangements.",
     "who_its_for": "Travelers drawn to rainforest scenery, guided wildlife encounters and Maya heritage, including couples, families, solo guests and active explorers. Confirm room configurations and child-specific arrangements directly with the lodge.",
-    "signature_experiences": "Guided jungle treks, river canoeing, birdwatching, butterfly encounters, Maya medicinal plant walks and exploration of ancient Maya sites.",
-    "how_to_get_there": "The Lodge at Chaa Creek is located in Belize’s Cayo region. The supplied information does not detail airport access, drive times or transfers; contact the lodge for current arrival arrangements."
+    "signature_experiences": "Guided jungle treks, river canoeing, birdwatching, butterfly encounters, Maya medicinal plant walks and exploration of ancient Maya sites."
    },
    "faqs": [
     {
@@ -30247,7 +30466,7 @@
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October for dry season, best wildlife, and river adventures. November to May brings lush green landscapes, baby animals, and excellent birding.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -15.7148,
@@ -30970,7 +31189,7 @@
    "bestMonths": "December to March (Southern Serengeti), July to November (Northern Serengeti)",
    "bestMonthsNote": "December to March for calving season and predator action. July to November for river crossings and dramatic migration scenes. Both periods are peak for wildlife and adventure.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Depending on season: Ndutu Airstrip (South), Kogatende Airstrip (North), Seronera Airstrip (Central)",
@@ -32200,8 +32419,32 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
-   "volumes": null
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07",
+     "PATH-03"
+    ],
+    "setting": "sangre_de_cristo_high_country",
+    "intentions": [
+     "wildlife",
+     "fly_fishing",
+     "private_house",
+     "family_gathering"
+    ],
+    "suitability": [
+     "families_and_generations",
+     "private_groups",
+     "conservation_minded"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ]
   },
   {
    "slug": "viceroy-bali",
@@ -32523,7 +32766,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "Cool, dry season is best for rhino tracking and wildlife viewing. Green season (November to March) is dramatic, quieter, and great for birding and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -20.0245,
@@ -32597,7 +32840,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October is dry, cool, and best for desert wildlife, hiking, and star beds. November to April is warmer, green, and quieter.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -20.4976,
@@ -32777,7 +33020,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "Dry season brings clear skies and optimal wildlife viewing. Green season (November to March) transforms the desert, attracts birds, and brings dramatic scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -19.1969,
@@ -32852,7 +33095,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "Dry, cool season brings comfortable days, clear skies, and best access to dunes. Summer green season (November to March) offers dramatic skies, less crowded.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.6149,
@@ -33069,7 +33312,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "Cool, dry months are best for sunrise dune walks, stargazing, and photography. Green season (November to March) offers dramatic skies, fewer crowds, and lush colors.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.6184,
@@ -33790,7 +34033,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "Dry season concentrates game along the Savuti Channel for best predator action. Green season (November to March) is spectacular for birds, lush scenery, and newborn wildlife.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.59687,
@@ -33869,7 +34112,7 @@
    "bestMonths": "April to October",
    "bestMonthsNote": "Dry season offers cool days, clear skies, and best river and desert access. Green season (November to March) brings dramatic colors, lush riverbanks, and beautiful skies for photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -17.2136,
@@ -34099,7 +34342,7 @@
    "bestMonths": "Year-round—camp moves to the best location for the migration, calving, and crossings",
    "bestMonthsNote": "January to March for calving in the south. June to October for river crossings and predator action in the north. Camp location always follows the migration for best wildlife.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.3333,
@@ -34335,7 +34578,7 @@
    "bestMonths": "April - October",
    "bestMonthsNote": "Dublin is a year round city, but spring through early autumn gives travelers the best opportunity to combine long walks, parks, outdoor cafés, cultural exploring and evenings around the city. Wren's central position makes it particularly easy to adapt your plans to the weather, with museums, galleries, restaurants, pubs and public transport all close by.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 53.343579,
@@ -34740,7 +34983,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October is dry season with peak wildlife, big cats, and elephants. November to April is lush, great for birding, fewer vehicles, and dramatic scenery.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.5889,
@@ -34801,7 +35044,7 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October is peak dry season for best wildlife, private lagoon views, and exclusive experiences. November to April is green, quieter, and dramatic for birding and rare sightings.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.2744,

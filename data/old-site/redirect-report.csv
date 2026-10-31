@@ -172,8 +172,8 @@ old path,new path,why,old title
 /book/ngala-safari-lodge-by-beyond,/stays/ngala-safari-lodge-by-beyond,booking page -> stay page,Book your stay at Ngala Safari Lodge by &amp;Beyond | Wild Earth Stays
 /book/ngare-camp-by-serian,/stays/ngare-camp-by-serian,booking page -> stay page,Book your stay at Ngare Camp by Serian | Wild Earth Stays
 /book/nihi-sumba,/stays/nihi,booking page -> stay page,Book your stay at NIHI Sumba | Wild Earth Stays
-/book/nimali-mara,/destinations/africa/kenya,booking page -> not on the new site yet; country page,Book your stay at Nimali Mara | Wild Earth Stays
-/book/nimali-serengeti,/destinations/africa/tanzania,booking page -> not on the new site yet; country page,Book your stay at Nimali Serengeti | Wild Earth Stays
+/book/nimali-mara,/stays/nimali-mara,booking page -> stay page,Book your stay at Nimali Mara | Wild Earth Stays
+/book/nimali-serengeti,/stays/nimali-serengeti,booking page -> stay page,Book your stay at Nimali Serengeti | Wild Earth Stays
 /book/niyama-island,/stays/niyama-private-islands-maldives,booking page -> stay page,Book your stay at Niyama Island - Maldives  | Wild Earth Stays
 /book/noah-forest-by-tifakara,/destinations/central-america/costa-rica,booking page -> not on the new site yet; country page,Book your stay at Noah Forest by Tifakara | Wild Earth Stays
 /book/nomade-holbox,/stays/nomade-holbox,booking page -> stay page,Book your stay at Nomade Holbox | Wild Earth Stays
@@ -653,8 +653,8 @@ old path,new path,why,old title
 /property/ngala-safari-lodge-by-beyond,/stays/ngala-safari-lodge-by-beyond,stay page,Ngala Safari Lodge by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
 /property/ngare-camp-by-serian,/stays/ngare-camp-by-serian,stay page,Ngare Camp by Serian | Luxury Stays in Kenya | Wild Earth Stays
 /property/nihi,/stays/nihi,stay page,NIHI Sumba | Luxury Stays in Indonesia | Wild Earth Stays
-/property/nimali-mara,/destinations/africa/kenya,not on the new site yet; country page,Nimali Mara | Luxury Stays in Kenya | Wild Earth Stays
-/property/nimali-serengeti,/destinations/africa/tanzania,not on the new site yet; country page,Nimali Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
+/property/nimali-mara,/stays/nimali-mara,stay page,Nimali Mara | Luxury Stays in Kenya | Wild Earth Stays
+/property/nimali-serengeti,/stays/nimali-serengeti,stay page,Nimali Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
 /property/niyama-private-islands-maldives,/stays/niyama-private-islands-maldives,stay page,Niyama Island - Maldives  | Luxury Stays in Maldives | Wild Earth Stays
 /property/no-1-pery-square-limerick,/stays/no-1-pery-square-limerick,stay page,"No.1 Pery Square, Limerick | Luxury Stays in Ireland | Wild Earth Stays"
 /property/noah-forest-by-tifakara,/destinations/central-america/costa-rica,not on the new site yet; country page,Noah Forest by Tifakara | Luxury Stays in Costa Rica | Wild Earth Stays

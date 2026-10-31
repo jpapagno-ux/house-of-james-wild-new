@@ -105,7 +105,7 @@ old path,new path,why,old title
 /book/holistika,/stays/holistika,booking page -> stay page,Book your stay at Holistika | Wild Earth Stays
 /book/hotel-bardo,/stays/hotel-bardo,booking page -> stay page,Book your stay at Hotel Bardo | Wild Earth Stays
 /book/hotel-esencia,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Hotel Esencia | Wild Earth Stays
-/book/hotel-panamera,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Hotel Panamera | Wild Earth Stays
+/book/hotel-panamera,/stays/hotel-panamera,booking page -> stay page,Book your stay at Hotel Panamera | Wild Earth Stays
 /book/house-in-the-wild-masai-mara,/stays/house-in-the-wild-masai-mara,booking page -> stay page,Book your stay at House in the Wild Masai Mara | Wild Earth Stays
 /book/hx-cruise-roald-edmundsen,/destinations/polar-antarctica,booking page -> not on the new site yet; region page (antarctica-cruises country page not built yet),Book your stay at HX Cruise Roald Edmundsen | Wild Earth Stays
 /book/inkaterra-cabo-blanco,/stays/inkaterra-cabo-blanco,booking page -> stay page,Book your stay at Inkaterra Cabo Blanco | Wild Earth Stays
@@ -315,16 +315,16 @@ old path,new path,why,old title
 /book/wilderness-hoanib-skeleton-coast,/stays,booking page -> not on the new site yet; stays hub,Book your stay at  | Wild Earth Stays
 /book/wilderness-jao-camp,/stays/jao-camp,booking page -> stay page,Book your stay at Jao Camp | Wild Earth Stays
 /book/wilderness-kulala-desert-lodge,/stays/wilderness-kulala-desert-camp,booking page -> stay page,Book your stay at Wilderness Kulala Desert Lodge | Wild Earth Stays
-/book/wilderness-kwetsani,/stays/wilderness-kwetsani,booking page -> stay page,Book your stay at Wilderness Kwetsani | Wild Earth Stays
+/book/wilderness-kwetsani,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Wilderness Kwetsani | Wild Earth Stays
 /book/wilderness-little-kulala,/stays/wilderness-little-kulala,booking page -> stay page,Book your stay at Wilderness Little Kulala | Wild Earth Stays
 /book/wilderness-little-mombo,/stays/wilderness-little-mombo,booking page -> stay page,Book your stay at Wilderness Little Mombo | Wild Earth Stays
-/book/wilderness-little-tubu,/stays/wilderness-little-tubu,booking page -> stay page,Book your stay at Wilderness Little Tubu | Wild Earth Stays
+/book/wilderness-little-tubu,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Wilderness Little Tubu | Wild Earth Stays
 /book/wilderness-magashi-peninsula,/stays/wilderness-magashi-peninsula,booking page -> stay page,Book your stay at Wilderness Magashi Peninsula | Wild Earth Stays
 /book/wilderness-mara,/stays/wilderness-mara,booking page -> stay page,Book your stay at Wilderness Mara | Wild Earth Stays
 /book/wilderness-mokete,/stays/wilderness-mokete,booking page -> stay page,Book your stay at Wilderness Mokete | Wild Earth Stays
 /book/wilderness-mombo-camp,/stays/wilderness-mombo-luxury-camp,booking page -> stay page,Book your stay at Wilderness Mombo Camp | Wild Earth Stays
 /book/wilderness-mombo-luxury-camp,/stays/wilderness-mombo-luxury-camp,booking page -> stay page,Book your stay at Wilderness Mombo Camp | Wild Earth Stays
-/book/wilderness-pelo,/stays/wilderness-pelo,booking page -> stay page,Book your stay at Wilderness Pelo | Wild Earth Stays
+/book/wilderness-pelo,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Wilderness Pelo | Wild Earth Stays
 /book/wilderness-ruckomechi,/stays/wilderness-ruckomechi,booking page -> stay page,Book your stay at Wilderness Ruckomechi | Wild Earth Stays
 /book/wilderness-sabyinyo,/stays/wilderness-sabyinyo,booking page -> stay page,Book your stay at Wilderness Sabyinyo | Wild Earth Stays
 /book/wilderness-savuti,/stays/wilderness-savuti,booking page -> stay page,Book your stay at Wilderness Savuti | Wild Earth Stays
@@ -559,7 +559,7 @@ old path,new path,why,old title
 /property/holistika,/stays/holistika,stay page,Holistika | Luxury Stays in Mexico | Wild Earth Stays
 /property/hotel-bardo,/stays/hotel-bardo,stay page,Hotel Bardo | Luxury Stays in Mexico | Wild Earth Stays
 /property/hotel-esencia,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Hotel Esencia | Luxury Stays in Mexico | Wild Earth Stays
-/property/hotel-panamera,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Hotel Panamera | Luxury Stays in Mexico | Wild Earth Stays
+/property/hotel-panamera,/stays/hotel-panamera,stay page,Hotel Panamera | Luxury Stays in Mexico | Wild Earth Stays
 /property/house-in-the-wild-masai-mara,/stays/house-in-the-wild-masai-mara,stay page,House in the Wild Masai Mara | Luxury Stays in Kenya | Wild Earth Stays
 /property/hx-cruise-roald-edmundsen,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),HX Cruise Roald Edmundsen | Luxury Stays in Antarctica Cruises | Wild Earth Stays
 /property/hx-cruises-sv-spitsbergen,/destinations/europe,not on the new site yet; region page (norway country page not built yet),HX Cruise SV Spitsbergen | Luxury Stays in Norway | Wild Earth Stays
@@ -808,16 +808,16 @@ old path,new path,why,old title
 /property/wilderness-dumatau,/stays/wilderness-dumatau,stay page,Wilderness DumaTau | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-hoanib-skeleton-camp,/stays/wilderness-hoanib-skeleton-camp,stay page,Wilderness Hoanib Skeleton Coast | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-kulala-desert-camp,/stays/wilderness-kulala-desert-camp,stay page,Wilderness Kulala Desert Lodge | Luxury Stays in Namibia | Wild Earth Stays
-/property/wilderness-kwetsani,/stays/wilderness-kwetsani,stay page,Wilderness Kwetsani | Luxury Stays in Botswana | Wild Earth Stays
+/property/wilderness-kwetsani,/destinations/africa/botswana,not on the new site yet; country page,Wilderness Kwetsani | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-little-duma-tau,/stays/wilderness-little-duma-tau,stay page,Wilderness Little Duma Tau | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-little-kulala,/stays/wilderness-little-kulala,stay page,Wilderness Little Kulala | Luxury Stays in Namibia | Wild Earth Stays
 /property/wilderness-little-mombo,/stays/wilderness-little-mombo,stay page,Wilderness Little Mombo | Luxury Stays in Botswana | Wild Earth Stays
-/property/wilderness-little-tubu,/stays/wilderness-little-tubu,stay page,Wilderness Little Tubu | Luxury Stays in Botswana | Wild Earth Stays
+/property/wilderness-little-tubu,/destinations/africa/botswana,not on the new site yet; country page,Wilderness Little Tubu | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-magashi-peninsula,/stays/wilderness-magashi-peninsula,stay page,Wilderness Magashi Peninsula | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-mara,/stays/wilderness-mara,stay page,Wilderness Mara | Luxury Stays in Kenya | Wild Earth Stays
 /property/wilderness-mokete,/stays/wilderness-mokete,stay page,Wilderness Mokete | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-mombo-luxury-camp,/stays/wilderness-mombo-luxury-camp,stay page,Wilderness Mombo Camp | Luxury Stays in Botswana | Wild Earth Stays
-/property/wilderness-pelo,/stays/wilderness-pelo,stay page,Wilderness Pelo | Luxury Stays in Botswana | Wild Earth Stays
+/property/wilderness-pelo,/destinations/africa/botswana,not on the new site yet; country page,Wilderness Pelo | Luxury Stays in Botswana | Wild Earth Stays
 /property/wilderness-ruckomechi,/stays/wilderness-ruckomechi,stay page,Wilderness Ruckomechi | Luxury Stays in Zimbabwe | Wild Earth Stays
 /property/wilderness-sabyinyo,/stays/wilderness-sabyinyo,stay page,Wilderness Sabyinyo | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-savuti,/stays/wilderness-savuti,stay page,Wilderness Savuti | Luxury Stays in Botswana | Wild Earth Stays
@@ -1205,10 +1205,10 @@ old path,new path,why,old title
 /stay/hotel-esencia-the-esencia-mansion,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,The Esencia Mansion at Hotel Esencia | Wild Earth Stays
 /stay/hotel-esencia-the-esencia-suite,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,The Esencia Suite at Hotel Esencia | Wild Earth Stays
 /stay/hotel-esencia-yum-ha-villa,/destinations/caribbean-mexico/mexico,room of hotel-esencia -> not on the new site yet; country page,Yum-Ha Villa at Hotel Esencia | Wild Earth Stays
-/stay/hotel-panamera-atrium-room,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Atrium room at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-garden-room,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Garden room at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-junior-suite,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Junior Suite at Hotel Panamera | Wild Earth Stays
-/stay/hotel-panamera-suite,/destinations/caribbean-mexico/mexico,room of hotel-panamera -> not on the new site yet; country page,Suite at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-atrium-room,/stays/hotel-panamera,room of hotel-panamera -> stay page,Atrium room at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-garden-room,/stays/hotel-panamera,room of hotel-panamera -> stay page,Garden room at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-junior-suite,/stays/hotel-panamera,room of hotel-panamera -> stay page,Junior Suite at Hotel Panamera | Wild Earth Stays
+/stay/hotel-panamera-suite,/stays/hotel-panamera,room of hotel-panamera -> stay page,Suite at Hotel Panamera | Wild Earth Stays
 /stay/iguazu-master-villa,/stays/iguazu,room of iguazu -> stay page,Master Villa at Awasi Iguazu | Wild Earth Stays
 /stay/iguazu-standard-villa,/stays/iguazu,room of iguazu -> stay page,Standard Villa at Awasi Iguazu | Wild Earth Stays
 /stay/inkaterra-cabo-blanco-amura,/stays/inkaterra-cabo-blanco,room of inkaterra-cabo-blanco -> stay page,Amura at Inkaterra Cabo Blanco | Wild Earth Stays
@@ -1947,13 +1947,13 @@ old path,new path,why,old title
 /stay/wilderness-kulala-desert-lodge-kulala-chalet,/stays/wilderness-kulala-desert-camp,room of wilderness-kulala-desert-camp -> stay page,Kulala Chalet at Wilderness Kulala Desert Lodge | Wild Earth Stays
 /stay/wilderness-little-kulala-family-suite,/stays/wilderness-little-kulala,room of wilderness-little-kulala -> stay page,Family Suite at Wilderness Little Kulala | Wild Earth Stays
 /stay/wilderness-little-kulala-suite,/stays/wilderness-little-kulala,room of wilderness-little-kulala -> stay page,Suite at Wilderness Little Kulala | Wild Earth Stays
-/stay/wilderness-little-tubu-tented-suite,/stays/wilderness-little-tubu,room of wilderness-little-tubu -> stay page,Tented Suite at Wilderness Little Tubu | Wild Earth Stays
+/stay/wilderness-little-tubu-tented-suite,/destinations/africa/botswana,room of wilderness-little-tubu -> not on the new site yet; country page,Tented Suite at Wilderness Little Tubu | Wild Earth Stays
 /stay/wilderness-mara-family-tented-suite,/stays/wilderness-mara,room of wilderness-mara -> stay page,Family Tented Suite at Wilderness Mara | Wild Earth Stays
 /stay/wilderness-mara-tented-suite,/stays/wilderness-mara,room of wilderness-mara -> stay page,Tented Suite at Wilderness Mara | Wild Earth Stays
 /stay/wilderness-mokete-family-tented-suite,/stays/wilderness-mokete,room of wilderness-mokete -> stay page,Family Tented Suite at Wilderness Mokete | Wild Earth Stays
 /stay/wilderness-mokete-tented-suite,/stays/wilderness-mokete,room of wilderness-mokete -> stay page,Tented Suite at Wilderness Mokete | Wild Earth Stays
 /stay/wilderness-mombo-camp-luxury-suite,/stays/wilderness-mombo-luxury-camp,room of wilderness-mombo-luxury-camp -> stay page,Luxury Suite at Wilderness Mombo Camp | Wild Earth Stays
-/stay/wilderness-pelo-tented-suite,/stays/wilderness-pelo,room of wilderness-pelo -> stay page,Tented Suite at Wilderness Pelo | Wild Earth Stays
+/stay/wilderness-pelo-tented-suite,/destinations/africa/botswana,room of wilderness-pelo -> not on the new site yet; country page,Tented Suite at Wilderness Pelo | Wild Earth Stays
 /stay/wilderness-ruckomechi-family-tented-suite,/stays/wilderness-ruckomechi,room of wilderness-ruckomechi -> stay page,Family Tented Suite at Wilderness Ruckomechi | Wild Earth Stays
 /stay/wilderness-ruckomechi-riverfront-tented-suite,/stays/wilderness-ruckomechi,room of wilderness-ruckomechi -> stay page,Riverfront Tented Suite at Wilderness Ruckomechi | Wild Earth Stays
 /stay/wilderness-sabyinyo-family-cottage,/stays/wilderness-sabyinyo,room of wilderness-sabyinyo -> stay page,Family Cottages at Wilderness Sabyinyo | Wild Earth Stays

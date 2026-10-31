@@ -1579,8 +1579,7 @@
    "name": "Hotel Esencia",
    "country": "Mexico",
    "missing": [
-    "hero_photo",
-    "coordinates"
+    "hero_photo"
    ],
    "released": false
   },
@@ -1589,10 +1588,8 @@
    "slug": "hotel-panamera",
    "name": "Hotel Panamera",
    "country": "Mexico",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff91d",
@@ -1768,6 +1765,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae35238b91414648fe5a53f",
+   "slug": "jacana-camp",
+   "name": "Jacana Camp",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6ae3366a541236d6f3385e1a",
    "slug": "jacis-private-lodge",
    "name": "Jaci's Private Lodge",
@@ -1806,6 +1811,14 @@
    "stay_id": "6a85bfb37f6eb35689bff92a",
    "slug": "jao-camp",
    "name": "Jao Camp",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae6133ad04bdb7984634d50",
+   "slug": "jao-reserve",
+   "name": "Jao Reserve",
    "country": "Botswana",
    "missing": [],
    "released": true
@@ -2115,6 +2128,14 @@
    "released": false
   },
   {
+   "stay_id": "6a85bfb37f6eb35689bffa01",
+   "slug": "kwetsani-camp",
+   "name": "Kwetsani Camp",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93b",
    "slug": "la-cle",
    "name": "La Cle South Africa",
@@ -2317,6 +2338,14 @@
    "slug": "lion-sands",
    "name": "Lion Sands Reserve",
    "country": "South Africa",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bffa06",
+   "slug": "little-tubu-camp",
+   "name": "Little Tubu Camp",
+   "country": "Botswana",
    "missing": [],
    "released": true
   },
@@ -2931,6 +2960,14 @@
    "slug": "pearl-resort-vahine-private-island",
    "name": "Pearl Resort Vahine Private Island",
    "country": "Tahiti",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bffa0b",
+   "slug": "pelo-camp",
+   "name": "Pelo Camp",
+   "country": "Botswana",
    "missing": [],
    "released": true
   },
@@ -4179,6 +4216,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae35238b91414648fe5a541",
+   "slug": "tubu-tree-camp",
+   "name": "Tubu Tree Camp",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9e6",
    "slug": "tuludi-khwai",
    "name": "Tuludi Khwai",
@@ -4444,14 +4489,6 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bffa01",
-   "slug": "wilderness-kwetsani",
-   "name": "Wilderness Kwetsani",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bffa03",
    "slug": "wilderness-little-duma-tau",
    "name": "Wilderness Little Duma Tau",
@@ -4471,14 +4508,6 @@
    "stay_id": "6a85bfb37f6eb35689bffa05",
    "slug": "wilderness-little-mombo",
    "name": "Wilderness Little Mombo Camp",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bffa06",
-   "slug": "wilderness-little-tubu",
-   "name": "Wilderness Little Tubu",
    "country": "Botswana",
    "missing": [],
    "released": true
@@ -4511,14 +4540,6 @@
    "stay_id": "6a85bfb37f6eb35689bffa0a",
    "slug": "wilderness-mombo-luxury-camp",
    "name": "Wilderness Mombo Camp",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bffa0b",
-   "slug": "wilderness-pelo",
-   "name": "Wilderness Pelo",
    "country": "Botswana",
    "missing": [],
    "released": true

@@ -939,7 +939,7 @@
    "coords": null,
    "airport": null,
    "airportDirections": null,
-   "founderNote": null,
+   "founderNote": "Sailed Raja Ampat aboard Aliikai with my son Anthony, 3–14 November 2024. A founder favourite. , JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -2513,7 +2513,25 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Private coastal house, west of Ireland",
+    "intentions": [
+     "coast",
+     "privacy",
+     "touring"
+    ],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -4128,7 +4146,26 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-06"
+    ],
+    "setting": "Atlantic headland, Horn Head, Donegal",
+    "intentions": [
+     "coast",
+     "stillness",
+     "walking"
+    ],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -5003,7 +5040,26 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Castle estate, Glaslough, Monaghan",
+    "intentions": [
+     "heritage",
+     "estate",
+     "family"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -6194,7 +6250,24 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "Woods of Glanmire, Cork",
+    "intentions": [
+     "heritage",
+     "stillness"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -7722,7 +7795,7 @@
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "~26 km (~30 minutes) from Cape Town International Airport to Ellerman House via car with complimentary airport transfers offered.",
-   "founderNote": null,
+   "founderNote": "A view that makes the rest of Cape Town look like the warm-up act, and white-glove service from a staff that notices before you ask. Make it your base. Stayed May 2026; a founder favourite. , JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -9527,7 +9600,23 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "Country house in Cork city",
+    "intentions": [
+     "heritage",
+     "city",
+     "food"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -9976,6 +10065,73 @@
     "Hotel Bardo is more than a boutique hotel, it's a sanctuary intentionally designed to foster calm, privacy and personal wellbeing. Surrounded by tropical gardens, every villa embraces indoor-outdoor living while encouraging guests to disconnect from daily routines and reconnect with nature through thoughtful design and immersive hospitality."
    ],
    "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null
+  },
+  {
+   "slug": "hotel-panamera",
+   "name": "Hotel Panamera",
+   "ledgerId": "STY-2026-000109",
+   "country": "Mexico",
+   "countrySlug": "mexico",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A design-led beach hotel on the Tulum coast, built around food, music and the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/hotel-panamera/hero",
+   "gallery": [],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "The cooler months from November through May provide ideal weather for exploring Todos Santos and the surrounding Baja coastline. Pleasant daytime temperatures make this the perfect season for surfing, beach days, outdoor dining, art walks, hiking, and discovering the region's vibrant culinary and cultural experiences. Winter also offers opportunities for seasonal whale watching along the Pacific coast, while spring brings warm sunny days with comfortable evenings perfect for rooftop cocktails and relaxed outdoor living.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": 20.1373,
+    "lng": -87.4633
+   },
+   "airport": "Tulum International Airport (TQO); Cancún International Airport (CUN)",
+   "airportDirections": "Tulum International Airport (TQO) is the closest gateway; Cancún (CUN) offers the most international flights, about two hours north by road.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Thirty-six rooms on Tulum beach, set around a central restaurant and beach club."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Beach club days",
+     "Long lunches and sunset dinners at the restaurant",
+     "Music evenings",
+     "Exploring Tulum's beach road, ruins and cenotes"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Central 100-seat restaurant",
+     "Beach club with palapa umbrellas on the sand",
+     "Part of Distrito Panamera",
+     "Design, food and music at the heart of the stay"
+    ]
+   },
+   "onlyHere": [
+    "Hotel Panamera is for travelers who want Tulum's beach life with a sense of community: a small oceanfront hotel where the restaurant, the beach club and the music are the reason people come back."
+   ],
+   "why": [
+    {
+     "title": "Tulum Beach, Lived In",
+     "body": "Best for couples, friends traveling together, food lovers and anyone who wants the beach on the doorstep and a lively table at night."
+    }
+   ],
    "facts": {},
    "faqs": [],
    "reviewed": false,
@@ -10967,6 +11123,81 @@
    "volumes": null
   },
   {
+   "slug": "jacana-camp",
+   "name": "Jacana Camp",
+   "ledgerId": "STY-2026-000397",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A water camp on a teardrop-shaped island",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/g6"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -19.2801,
+    "lng": 22.6095
+   },
+   "airport": "Jao Airstrip, Maun Airport (MUB)",
+   "airportDirections": "Fly to Maun, then by light aircraft to the Jao Reserve airstrip and on to camp by boat or road, depending on the water.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five classic tented suites on a small teardrop-shaped island in the Delta's wetlands."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Mokoro excursions through narrow channels",
+     "Boat safaris across the floodplains",
+     "Game drives when the water allows",
+     "Guided walks",
+     "Birding"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A water-and-land camp surrounded by papyrus-lined channels and lily-dotted lagoons. Often reached by boat in the flood season. Swimming pool and main deck over the floodplain. Excellent for birders."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jacana is the quintessential water camp: small, quiet and shaped by the flood. Choose it for mokoro days, birdlife and the feeling of being on an island with the Delta all around you."
+   ],
+   "why": [
+    {
+     "title": "The Water Camp",
+     "body": "Best for birders, couples, mokoro lovers and anyone seeking serenity in the Okavango Delta."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "jacis-private-lodge",
    "name": "Jaci's Private Lodge",
    "ledgerId": "STY-2026-119083",
@@ -11329,13 +11560,14 @@
    "category": "hotel",
    "tagline": "Where river, floodplain, and forest meet your wildest safari dreams",
    "quote": "Step into nature’s theatre and become part of the Delta’s unfolding story",
-   "hero": "/img/b44/67cf0e2ee_3506d6a30_67e2fca0aafda30d45efb969_jao-camp.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bab027609_015684f16_695cf45158e8d8de8403e94a_Jao_06-19_-112-850x573.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c91904eb8_d8caa9795_695cf40adf621cd990791374_Jao-Camp-Okavango-Delta-Star-Bed.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/55cfe5b36_a507ffae1_695cf451a897630b532a3d6a_deck-jao-okvango-delta-botswana.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b8bf797d_b02322a74_695cf451bea326341cab26cb_sunset-jao-okvango-delta-botswana.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c761455ae_7f7430506_695cf4513b35229fce2f879a_wilderness-jao-camp-review.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g6"
    ],
    "bestMonths": "June - October",
    "bestMonthsNote": "These dry season months coincide with peak wildlife viewing and spectacular floodplains. Water levels are high for mokoro and boat trips, and wildlife is concentrated around the Delta.",
@@ -11351,7 +11583,7 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Five expansive safari suites with plunge pools. Two ultra luxury villas with private butler, chef, guide, and vehicle. Family suite option for multi generational travelers."
+     "Five expansive suites with plunge pools. Two ultra-luxe villas with private butler, chef, guide and vehicle. Family suite option for multigenerational travelers."
     ],
     "items": []
    },
@@ -11388,7 +11620,85 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "jao-reserve",
+   "name": "Jao Reserve",
+   "ledgerId": "STY-2026-000538",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Six camps in a private corner of the Okavango Delta",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jao-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/jacana-camp/hero",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g3"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_returned",
+   "statusDate": "2012-01-01",
+   "coords": {
+    "lat": -19.29,
+    "lng": 22.56
+   },
+   "airport": "Jao Airstrip via Maun (MUB)",
+   "airportDirections": "Fly to Maun, then by light aircraft to the Jao Reserve airstrip; camps are reached by road or boat depending on the water.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six camps: Jao Camp (five suites and two villas), Jacana Camp (five tented suites), Kwetsani Camp (five treehouse-style suites), Tubu Tree Camp (eight tented suites), Little Tubu Camp (three tented suites) and Pelo Camp (five eco-tents)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives by day and night",
+     "Mokoro and boat safaris in the flood season",
+     "Guided walks",
+     "Seasonal catch-and-release fishing",
+     "Birding",
+     "Spa at Jao Camp"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A private reserve in the heart of the Okavango Delta. Water and land safaris in one concession. Run by the Kays family, whose roots in Ngamiland go back more than a century. Camps from intimate eco-tents to private villas with their own staff."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jao Reserve lets you stay in one private concession and move between water and land: a mokoro morning at Jacana or Pelo, game drives from Tubu Tree, and the villas at Jao Camp for a family or a celebration."
+   ],
+   "why": [
+    {
+     "title": "Water and Land, One Reserve",
+     "body": "Best for multi-camp Okavango journeys, families, honeymooners and returning safari-goers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "ka-ana-resort",
@@ -13645,6 +13955,85 @@
    "volumes": null
   },
   {
+   "slug": "kwetsani-camp",
+   "name": "Kwetsani Camp",
+   "ledgerId": "STY-2026-000338",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Delta dreamscape in the treetops",
+   "quote": "Wake to the call of fish eagles, look out across endless floodplains, and sleep among the palms",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/kwetsani-camp/g5"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Dry season brings high water for best mokoro and boating, plus concentrated game. Green season (November to March) is lush, with birdlife, wildflowers, and fewer visitors.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.2435,
+    "lng": 22.5364
+   },
+   "airport": "Jao Airstrip, Maun Airport",
+   "airportDirections": "Fly to Maun, connect by light aircraft to Jao Airstrip, 30-minute game drive to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five treehouse-style tented suites linked by elevated walkways beneath mangosteen, fig and palm trees, each with a private deck over the floodplain."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Seasonal mokoro and boat safaris",
+     "Morning and afternoon game drives",
+     "Night drives",
+     "Birding walks",
+     "Photographic safaris",
+     "Sundowners on the floodplain"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Built in the canopy for immersive Delta views",
+     "Water and land safari experiences",
+     "Solar-powered, eco-conscious",
+     "Private, intimate, and romantic",
+     "Family-friendly with personalized guiding"
+    ]
+   },
+   "onlyHere": [
+    "Kwetsani is for the dreamer. Treehouse comfort, prime game and water viewing, and the pure silence of the Okavango. Perfect for couples, honeymooners, families, solo travelers and photographers seeking magic and serenity."
+   ],
+   "why": [
+    {
+     "title": "Delta Views in the Treetops",
+     "body": "Kwetsani offers adventure, romance and serenity: iconic Okavango safaris by land and water, beautiful suites and a setting above the floodplain. Best for couples, families, birders and those wanting an exclusive camp."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "la-cle",
    "name": "La Cle \n South Africa",
    "ledgerId": "STY-2026-000140",
@@ -14600,7 +14989,7 @@
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "Cape Town International Airport (CPT) is approximately 68 km away and requires around 55 minutes by car, making it the preferred arrival airport.",
-   "founderNote": null,
+   "founderNote": "Walked every Leeu property in Franschhoek, May 2026. , JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -15040,7 +15429,7 @@
    },
    "airport": "Lewa Downs Airstrip LAU, Nanyuki Airport NYK",
    "airportDirections": "Arrive at Nairobi Wilson Airport, take a scheduled charter or private flight to Lewa Downs Airstrip (15 minutes drive from lodge) or Nanyuki Airport (2 hours by road).",
-   "founderNote": null,
+   "founderNote": "Inspected and approved on Lewa. , JW",
    "rooms": {
     "paras": [
      "Nine unique thatched cottages with expansive valley or garden views. Family cottages with multiple bedrooms. Hillside cottages with private verandas and fireplaces. Garden cottages with lush lawns and easy access to the main lodge."
@@ -15121,7 +15510,7 @@
    },
    "airport": "Skukuza Airport",
    "airportDirections": "A road transfer from the airport delivers guests to Lion Sands Game Reserve in a short game drive.",
-   "founderNote": null,
+   "founderNote": "Stayed at Ivory Lodge, May 2026, with Mrs Wild. Book it for the river; stay for the service and the kitchen. A founder favourite. , JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -15196,6 +15585,87 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "little-tubu-camp",
+   "name": "Little Tubu Camp",
+   "ledgerId": "STY-2026-000343",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Small camp, big Okavango adventure",
+   "quote": "When you find a wild corner of the world and share it with only a few, it becomes unforgettable.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/little-tubu-camp/g6"
+   ],
+   "bestMonths": "June to October",
+   "bestMonthsNote": "These dry months offer the best wildlife sightings, comfortable temperatures, and high water for mokoro and boating adventures.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.2869,
+    "lng": 22.4654
+   },
+   "airport": "Jao Airstrip (charter flights), Maun International Airport (MUB)",
+   "airportDirections": "Guests typically fly from Maun to Jao Airstrip (approx. 30-minute flight), followed by a short game drive or boat transfer to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Three intimate tented suites beneath a fig and a jackalberry tree on Hunda Island, with a private main area and dedicated staff."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Mokoro excursions",
+     "Game drives",
+     "Night drives",
+     "Birdwatching",
+     "Guided walks",
+     "Seasonal boating"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private decks overlooking the floodplains",
+     "Outdoor showers",
+     "Plunge pool",
+     "Treehouse hide",
+     "Expert guides",
+     "Family-friendly atmosphere"
+    ]
+   },
+   "onlyHere": [
+    "Little Tubu is a hidden gem for families, couples, or solo travelers wanting an off-the-beaten-path Okavango Delta safari. With just a handful of tents and attentive, friendly staff, you’ll feel at home in the wild while experiencing exclusive wildlife encounters and breathtaking sunsets."
+   ],
+   "why": [
+    {
+     "title": "Okavango Delta’s Secret Retreat",
+     "body": "Discover the magic of the Okavango Delta in a small, intimate camp where the wildlife comes to you and every day brings new adventure."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "lolebezi-lodge",
@@ -16667,7 +17137,7 @@
    },
    "airport": "Hoedspruit Eastgate Airport (HDS), Skukuza Airport (SZK), Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Fly to Hoedspruit (HDS), 40-minute road transfer to Monwana; transfers from Skukuza or KMIA available on request.",
-   "founderNote": null,
+   "founderNote": "Tucked away in the Thornybush, Monwana gets the safari trinity right: the wildlife, the guides, the service. Then there's the bar, the long kind you come home to after the evening drive. Stayed May 2026 with Mrs Wild , she loved it as much as I did. One for anyone's shortlist of Africa's best. , JW",
    "rooms": {
     "paras": [
      "Eight luxury suites including family and private pool suites, all with en suite bathrooms, indoor/outdoor showers, private decks, and bush or waterhole views. Main lodge with dining, bar, lounge, firepit, infinity pool, and gym."
@@ -16797,7 +17267,7 @@
    },
    "airport": "Nearest airports: O.R. Tambo International Airport (JNB) and Lanseria Airport (HLA).",
    "airportDirections": "From Johannesburg (JNB), it’s a 4‑hour scenic drive or a short Federal Air flight to Madikwe. Self‑drive also possible. Ideal in an SUV.",
-   "founderNote": null,
+   "founderNote": "Met the Morukuru team, May 2026. , JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -18273,7 +18743,22 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "Georgian Quarter, Limerick",
+    "intentions": [
+     "heritage",
+     "city"
+    ],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": null
   },
   {
@@ -19903,6 +20388,83 @@
     "classifiedAt": "2026-10-30"
    },
    "volumes": [
+    "stays"
+   ]
+  },
+  {
+   "slug": "pelo-camp",
+   "name": "Pelo Camp",
+   "ledgerId": "STY-2026-000348",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "True island escape in the Okavango Delta",
+   "quote": "Lose yourself in water wilderness, birdcalls, and the magic of the Delta’s heart",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/pelo-camp/g6"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Dry season means high water for best mokoro and boating. Green season (November to March) brings lush scenery, birding, and fewer crowds.",
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.3254,
+    "lng": 22.5791
+   },
+   "airport": "Jao Airstrip, Maun Airport",
+   "airportDirections": "Fly to Maun, connect by light aircraft to Jao Airstrip, 30-minute boat transfer to camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five eco-tents of canvas and thatch on raised decks, with en-suite bathrooms and outdoor showers, surrounded by water and wilderness."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Year-round mokoro safaris",
+     "Guided boat trips",
+     "Island nature walks",
+     "Birding",
+     "Fishing (seasonal)",
+     "Photography safaris",
+     "Sundowners on the lagoon"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Set on a heart-shaped island in the Jao Reserve; pelo is the Setswana word for heart. Eco-conscious and solar powered. A mokoro-focused water camp. Small, quiet and intimate. Excellent for birders, photographers and couples."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Pelo is for those who want pure Delta magic: water, wildlife and absolute peace. With no game drives, it suits couples, solo travelers and nature-lovers looking to slow down, disconnect and explore the Okavango's wildest heart."
+   ],
+   "why": [
+    {
+     "title": "Water Wilderness, Pure Delta",
+     "body": "Pelo Camp offers authentic water safari, serenity, and a close-up with the Okavango’s birdlife and aquatic creatures. Best for couples, solo explorers, birders, and anyone seeking stillness and adventure."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "safaris",
     "stays"
    ]
   },
@@ -26560,7 +27122,7 @@
    },
    "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip O.R. Tambo International Airport (JNB)",
    "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to Kirkman's Kamp.\nCharter flights operate directly into the MalaMala private airstrip.\nJohannesburg road transfer approximately 5–6 hours.",
-   "founderNote": null,
+   "founderNote": "If you want old Africa rather than a polished impression of it, this is the address. Heritage safari, done by people who mean it. Stayed May 2026; a founder favourite. , JW",
    "rooms": {
     "paras": [
      "Luxury Suites. Family Suites."
@@ -28576,6 +29138,79 @@
     "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
     "classifiedAt": "2026-10-30"
    },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "tubu-tree-camp",
+   "name": "Tubu Tree Camp",
+   "ledgerId": "STY-2026-000369",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Classic land safari on the edge of the floodplain",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/jao-reserve/tubu-tree-camp/g5"
+   ],
+   "bestMonths": "June to October",
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -19.28751,
+    "lng": 22.46421
+   },
+   "airport": "Jao Airstrip, Maun Airport (MUB)",
+   "airportDirections": "Fly to Maun, then by light aircraft to the Jao Reserve airstrip and on to camp by road.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight tented suites raised on wooden platforms beneath marula and jackalberry trees, looking out over a seasonal floodplain."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Morning and afternoon game drives",
+     "Night drives",
+     "Guided walks",
+     "Seasonal boating and mokoro when the flood arrives"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Set in the drier western part of the private Jao Reserve. A classic game-viewing camp with access to both floodplain and dry savannah. Swimming pool. Shares its game-viewing area with sister camp Little Tubu."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Tubu Tree is for travelers who come for the animals. Elephant herds, leopard and plains game move through a game-rich corner of the Okavango, and the camp is built for long days out with a guide who knows the ground."
+   ],
+   "why": [
+    {
+     "title": "Classic Safari, Game First",
+     "body": "Best for first safaris, photographers, families and anyone who wants land-based game viewing in the Okavango Delta."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
    "volumes": [
     "safaris",
     "stays"
@@ -30643,76 +31278,6 @@
    "volumes": null
   },
   {
-   "slug": "wilderness-kwetsani",
-   "name": "Wilderness \n Kwetsani",
-   "ledgerId": "STY-2026-000338",
-   "country": "Botswana",
-   "countrySlug": "botswana",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Delta dreamscape in the treetops",
-   "quote": "Wake to the call of fish eagles, look out across endless floodplains, and sleep among the palms",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/13151d1d2_a22922e53_6928479ad68ca8568a061764_luxury-safari-okavango-kwetsani-camp.jpg",
-   "gallery": [],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "Dry season brings high water for best mokoro and boating, plus concentrated game. Green season (November to March) is lush, with birdlife, wildflowers, and fewer visitors.",
-   "bestFor": [],
-   "status": null,
-   "statusDate": null,
-   "coords": {
-    "lat": -19.2435,
-    "lng": 22.5364
-   },
-   "airport": "Jao Airstrip, Maun Airport",
-   "airportDirections": "Fly to Maun, connect by light aircraft to Jao Airstrip, 30-minute game drive to camp.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Five raised treehouse suites with canvas walls, wooden decks, en-suite bathrooms, and panoramic views of the Okavango’s wildest floodplains."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Seasonal mokoro and boat safaris",
-     "Morning and afternoon game drives",
-     "Night drives",
-     "Birding walks",
-     "Photographic safaris",
-     "Sundowners on the floodplain"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Built in the canopy for immersive Delta views",
-     "Water and land safari experiences",
-     "Solar-powered, eco-conscious",
-     "Private, intimate, and romantic",
-     "Family-friendly with personalized guiding"
-    ]
-   },
-   "onlyHere": [
-    "Wilderness Kwetsani is for the dreamer. Unique treehouse comfort, prime game and water viewing, and the pure silence of the Okavango. Perfect for couples, honeymooners, families, solo travelers, and photographers seeking magic and serenity."
-   ],
-   "why": [
-    {
-     "title": "Delta Views in the Treetops",
-     "body": "Wilderness Kwetsani offers adventure, romance, and serenity. Iconic Okavango safaris, beautiful suites, and a setting above the floodplain. Best for couples, families, birders, and those wanting an exclusive, water-focused camp."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": null,
-   "volumes": null
-  },
-  {
    "slug": "linyanti-wilderness-camp",
    "name": "Linyanti \n Wilderness Camp",
    "ledgerId": "STY-2026-000339",
@@ -30992,81 +31557,6 @@
     {
      "title": null,
      "body": "Choosing Wilderness Little Mombo means you’re opting for more than a safari, you’re choosing a private‑use, ultra‑luxury hideaway in one of the world’s most filled‑with‑life ecosystems."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": null,
-   "volumes": null
-  },
-  {
-   "slug": "wilderness-little-tubu",
-   "name": "Wilderness \n Little Tubu",
-   "ledgerId": "STY-2026-000343",
-   "country": "Botswana",
-   "countrySlug": "botswana",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Small camp, big Okavango adventure",
-   "quote": "When you find a wild corner of the world and share it with only a few, it becomes unforgettable.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b9391776c_2d1d07c41_692841408b2c69585bd87fa5_Little_20Tubu_2006-24-134e.JPG",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6a0b61c1b_8692894ee_693968ebe1b01dbf7d4f9a3f_bathroom-little-tubu-camp-okavango-delta-botswana.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfabb2771_2b53482e2_693964e66ac01b72aace79da_magashi-peninsula-rwanda10-25-felix417.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/afc909c0e_1f8aef922_693964ba27f72f88384c6c87_original_dimensions_star_bed_doro__2_.jpg"
-   ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "These dry months offer the best wildlife sightings, comfortable temperatures, and high water for mokoro and boating adventures.",
-   "bestFor": [],
-   "status": null,
-   "statusDate": null,
-   "coords": {
-    "lat": -19.2869,
-    "lng": 22.4654
-   },
-   "airport": "Jao Airstrip (charter flights), Maun International Airport (MUB)",
-   "airportDirections": "Guests typically fly from Maun to Jao Airstrip (approx. 30-minute flight), followed by a short game drive or boat transfer to camp.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Tented Suite. Family Tented Suite."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Mokoro excursions",
-     "Game drives",
-     "Night drives",
-     "Birdwatching",
-     "Guided walks",
-     "Seasonal boating"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Private decks overlooking the floodplains",
-     "Outdoor showers",
-     "Plunge pool",
-     "Treehouse hide",
-     "Expert guides",
-     "Family-friendly atmosphere"
-    ]
-   },
-   "onlyHere": [
-    "Little Tubu is a hidden gem for families, couples, or solo travelers wanting an off-the-beaten-path Okavango Delta safari. With just a handful of tents and attentive, friendly staff, you’ll feel at home in the wild while experiencing exclusive wildlife encounters and breathtaking sunsets."
-   ],
-   "why": [
-    {
-     "title": "Okavango Delta’s Secret Retreat",
-     "body": "Discover the magic of the Okavango Delta in a small, intimate camp where the wildlife comes to you and every day brings new adventure."
     }
    ],
    "facts": {},
@@ -31407,88 +31897,6 @@
     "safaris",
     "stays"
    ]
-  },
-  {
-   "slug": "wilderness-pelo",
-   "name": "Wilderness \n Pelo",
-   "ledgerId": "STY-2026-000348",
-   "country": "Botswana",
-   "countrySlug": "botswana",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "True island escape in the Okavango Delta",
-   "quote": "Lose yourself in water wilderness, birdcalls, and the magic of the Delta’s heart",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c3067be56_bac2a73fc_692824cd78ad305f55576ae4_Pelo_2006-19_20-3e.jpg",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/be4b7d2ba_ba14329b2_6960e9f2da1abd1f8d283248_Pelo_2006-19_20-26e.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c2a96779c_5a620eadd_6960e9f25ebc2aeb5bf91026_Pelo_2006-19_20-31e.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b25e49555_d3a48f9b3_6960e9f2f21580357e71a7b1_Pelo_2006-24-6e.JPG",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/287eee1cf_e867907c4_6960e9f2b8a5de3f7445ba94_Pelo_2006-24-16e.JPG",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1cd58e3b7_69de88cd8_6960e9f2db51e09d8ab586fa_Pelo_2006-24-18e.JPG",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cb47bb8ea_5f6754299_692826ecae42cab13e357be2_wilderness-pelo-tented-suite-1.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0bedc3c62_3ef64fa94_692826ec80e8828baf2f834c_wilderness-pelo-tented-suite-2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfe06d64c_813e2ecf2_692826ecad4df7cbc0f7b48a_wilderness-pelo-tented-suite-3.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d494fa8de_995ec9967_692826e6bd443e817de750c2_wilderness-pelo-tented-suite-4.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/35d5fe881_6cfe534bb_692826ec2149df382377f6bd_wilderness-pelo-tented-suite.jpg"
-   ],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "Dry season means high water for best mokoro and boating. Green season (November to March) brings lush scenery, birding, and fewer crowds.",
-   "bestFor": [],
-   "status": null,
-   "statusDate": null,
-   "coords": {
-    "lat": -19.3254,
-    "lng": 22.5791
-   },
-   "airport": "Jao Airstrip, Maun Airport",
-   "airportDirections": "Fly to Maun, connect by light aircraft to Jao Airstrip, 30-minute boat transfer to camp.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Five intimate canvas-and-thatch tents built on raised decks, with en-suite bathrooms and outdoor showers, surrounded by water and wilderness."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Year-round mokoro safaris",
-     "Guided boat trips",
-     "Island nature walks",
-     "Birding",
-     "Fishing (seasonal)",
-     "Photography safaris",
-     "Sundowners on the lagoon"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Set on a private palm-shaped island in the Delta",
-     "100 percent solar powered, eco-friendly",
-     "Mokoro-focused camp",
-     "Small, quiet, and intimate for nature immersion",
-     "Excellent for birders, photographers, and couples"
-    ]
-   },
-   "onlyHere": [
-    "Wilderness Pelo is for those who want pure Delta magic: water, wildlife, and absolute peace. With no game drives, it’s perfect for couples, solo travelers, and nature-lovers looking to slow down, disconnect, and explore the Okavango’s wildest heart."
-   ],
-   "why": [
-    {
-     "title": "Water Wilderness, Pure Delta",
-     "body": "Pelo Camp offers authentic water safari, serenity, and a close-up with the Okavango’s birdlife and aquatic creatures. Best for couples, solo explorers, birders, and anyone seeking stillness and adventure."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": null,
-   "volumes": null
   },
   {
    "slug": "wilderness-qorokwe",

@@ -25,7 +25,7 @@ const NUM = ["I", "II", "III", "IV", "V", "VI"];
 function volumePhoto(v: MegaMenu): { url: string; alt: string } | null {
   const h = HOME.volumes.find((x) => x.path === v.href);
   if (h) return h.image;
-  if (v.href === "/destinations/europe") { const r = REGION_DATA.find((x) => x.slug === "europe"); return r?.hero ? { url: r.hero, alt: "Other Europe" } : null; }
+  if (v.href === "/europe") { const r = REGION_DATA.find((x) => x.slug === "europe"); return r?.hero ? { url: r.hero, alt: "Other Europe" } : null; }
   return null;
 }
 

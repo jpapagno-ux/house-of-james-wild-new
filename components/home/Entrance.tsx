@@ -83,9 +83,9 @@ export function VolumeStrip() {
   const europeHero = REGION_DATA.find((r) => r.slug === "europe")?.hero ?? null;
   const doors = [
     ...HOME.volumes.map((v) => ({ key: v.key, name: v.name, brand: v.brand, path: v.path, line: v.line, image: v.image.url, alt: v.image.alt })),
-    { key: "europe", name: "Other Europe", brand: "Volume VI", path: "/destinations/europe", line: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.", image: europeHero ?? "", alt: "Other Europe" },
+    { key: "europe", name: "Other Europe", brand: "Volume VI", path: "/europe", line: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.", image: europeHero ?? "", alt: "Other Europe" },
   ];
-  const tone = (k: string) => VOLUMES.find((v) => v.href === (k === "europe" ? "/destinations/europe" : `/${k}`))?.tone ?? "#8B2525";
+  const tone = (k: string) => VOLUMES.find((v) => v.href === `/${k}`)?.tone ?? "#8B2525";
   return (
     <section id="volumes" className="mt-16 md:mt-24 scroll-mt-28" aria-labelledby="volumes-heading">
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 flex flex-wrap items-end justify-between gap-4">

@@ -37,7 +37,7 @@ export const VOLUME_HREF: Record<Volume, string> = {
   gatherings: "/gatherings",
   voyages: "/voyages",
   overland: "/overland",
-  europe: "/destinations/europe",
+  europe: "/europe",
 };
 
 // James's marks (the house vetting system) and the advisor's own marks.

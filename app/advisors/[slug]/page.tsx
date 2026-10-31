@@ -81,7 +81,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
               {a.traveled.length > 0 && (
                 <div className="ledger-paper p-6">
                   <p className="ledger-eyebrow">Been there, first-hand</p>
-                  <ul className="mt-3 space-y-2 text-[16px]">{a.traveled.map((t) => <li key={t.place} className="flex gap-3"><span className="font-mono text-[13px] ledger-crimson pt-0.5">{t.year}</span>{t.place}</li>)}</ul>
+                  <ul className="mt-3 space-y-2 text-[16px]">{a.traveled.map((t) => <li key={t.place} className="flex gap-3"><span className="font-mono text-[13px] ledger-crimson pt-0.5">{t.year ?? "—"}</span>{t.place}</li>)}</ul>
                 </div>
               )}
               {a.specialties.length > 0 && (

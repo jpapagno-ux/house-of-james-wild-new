@@ -27,6 +27,12 @@ export const GROUPS: SisterGroup[] = [
     line: "Camps in Botswana and Zimbabwe, from the Linyanti Enclave to Hwange National Park.",
     slugs: ["linyanti-ebony-camp", "linyanti-expedition-camp", "somalisa-acacia"],
   },
+  {
+    key: "nimali-africa",
+    name: "Nimali Africa",
+    line: "Tented camps in northern Tanzania, four hours' game drive apart, from the central Serengeti to the Mara River.",
+    slugs: ["nimali-serengeti", "nimali-mara"],
+  },
 ];
 
 export function sistersFor(slug: string): { group: SisterGroup; stays: StayData[] } | null {

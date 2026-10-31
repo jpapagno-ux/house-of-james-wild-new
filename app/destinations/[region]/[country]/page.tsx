@@ -12,6 +12,7 @@ import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
 import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
+import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -271,13 +272,14 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           <WhenToGo place={c.name} rows={c.months} airports={c.airports} transfers={c.transfers} />
+          <WhoPlans where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: c.slug, countrySlug: c.slug, regionSlug: c.region, ledgerId: c.ledgerId ?? null, sourcePage: path, volume: c.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${c.name}`} />}
           {c.faqs.length > 0 && <FaqBlock faqs={c.faqs} title={`${c.name}, answered`} />}
           <PlanBand place={c.name} compassHref={c.compass ? "#compass" : "/compass"} />
           <Doors id="also" eyebrow={`Also in ${c.regionName}`} title={`Beyond ${c.name}`} doors={doors} />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "TouristDestination", "@id": absoluteUrl(`${path}#destination`), name: c.name, url: absoluteUrl(path), description: answer, containedInPlace: { "@type": "Place", name: c.regionName }, publisher: { "@id": ids.house }, includesAttraction: pages.slice(0, 30).map((s) => ({ "@type": "LodgingBusiness", name: s.name, url: absoluteUrl(recordHref("stay", s.slug)), ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}), ...(s.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: s.ledgerId } } : {}) })) })} />
+      <JsonLd data={graph({ "@type": "TouristDestination", "@id": absoluteUrl(`${path}#destination`), name: c.name, url: absoluteUrl(path), description: answer, containedInPlace: { "@type": "Place", name: c.regionName }, publisher: { "@id": ids.house }, ...whoPlansSchema({ countrySlug: c.slug, regionSlug: c.region }), includesAttraction: pages.slice(0, 30).map((s) => ({ "@type": "LodgingBusiness", name: s.name, url: absoluteUrl(recordHref("stay", s.slug)), ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}), ...(s.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: s.ledgerId } } : {}) })) })} />
     </div>
   );
 }

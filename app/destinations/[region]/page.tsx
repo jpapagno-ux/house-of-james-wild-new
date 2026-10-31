@@ -27,7 +27,8 @@ import SafeLink from "@/components/ledger/SafeLink";
 import CompassRose from "@/components/ledger/CompassRose";
 import { Icon } from "@/components/ledger/Marks";
 import Doors, { type Door } from "@/components/destination/Doors";
-import Journeys from "@/components/destination/Journeys";
+import ChooseYourWay from "@/components/destination/ChooseYourWay";
+import { touristTrip } from "@/lib/schema";
 import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import IslandZoom from "@/components/destination/IslandZoom";
@@ -97,6 +98,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   const tones = r.slug === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {};
   // The Stays section takes its volume's ink (docs/brand-colours.md): Europe's stays are Volume V.
   const stayInk = volumeInk(r.slug === "europe" ? "europe" : "stays");
+  const stayVol = r.slug === "europe" ? "europe" : "stays";
+  const regionStays = STAYS.filter((s) => s.regionSlug === r.slug && pageReady(s)).map((s) => ({ ...s, image: s.hero }));
   const glance = { facts: [["Countries", `${r.countries.length} in the Ledger`], ["Stays", `${r.stayCount} filed`], ["Journeys", journeys.length ? `${journeys.length} drawn` : "Ask James"]] as [string, string][], cta: { label: "Plan with James", href: `/plan?destination=${r.slug}` } };
   return (
     <div className={r.slug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -113,14 +116,24 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
                 ? <span key={x.slug} aria-current="page" className="ledger-display text-[15px] border-b border-crimson pb-0.5">{x.label}</span>
                 : <SafeLink key={x.slug} href={x.href} className="ledger-display text-[15px] ledger-muted hover:text-ink">{x.label}</SafeLink>)}
             </div>
-            <span className="hidden lg:flex items-center gap-5 shrink-0">{[...(REGION_CHARTS[r.slug] ? [["The map", "the-map"]] : []), ["Countries", "countries"], ["Stays", "stays"], ["Plan", "plan"]].map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}</span>
+            <span className="hidden lg:flex items-center gap-5 shrink-0">{[...(REGION_CHARTS[r.slug] ? [["The map", "the-map"]] : []), ["Countries", "countries"], ["Choose your way", "choose"], ["Plan", "plan"]].map(([l, id]) => <a key={id} href={`#${id}`} className="ledger-eyebrow hover:ledger-crimson">{l}</a>)}</span>
           </div>
         </nav>
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: r.name, path }]} /></div>
+          <div className="mt-8 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
+            <div>
+              <AnswerBlock>{answer}</AnswerBlock>
+              {/* Theme chips: the Wild Pathways this region leads with (never a volume colour) */}
+              {(REGION_PATHWAYS[r.slug] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[r.slug] ?? []).map((k) => pathway(k)).filter((p) => !!p).map((p) => <li key={p!.id}><PathwayChip pathway={p!} href={!GUARD_ON || isBuilt(`/pathways/${p!.key}`) ? `/pathways/${p!.key}` : undefined} /></li>)}</ul>}
+              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount, (WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k)).filter((j) => j.kind === "voyage").length)} />
+            </div>
+            {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
+          </div>
+
           {chart && (mapItems.length > 0 || r.slug.startsWith("polar")) && (
-            <section id="the-map" className="mt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="region-map-heading">
+            <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
                   <p className="ledger-eyebrow ledger-crimson">The Ledger in {r.name} · {mapItems.length} on the chart</p>
@@ -133,15 +146,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </section>
           )}
 
-          <div className="mt-12 md:mt-16 grid lg:grid-cols-[1.45fr_1fr] gap-8 lg:gap-12 items-start">
-            <div>
-              <AnswerBlock>{answer}</AnswerBlock>
-              {/* Theme chips: the Wild Pathways this region leads with (never a volume colour) */}
-              {(REGION_PATHWAYS[r.slug] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[r.slug] ?? []).map((k) => pathway(k)).filter((p) => !!p).map((p) => <li key={p!.id}><PathwayChip pathway={p!} href={!GUARD_ON || isBuilt(`/pathways/${p!.key}`) ? `/pathways/${p!.key}` : undefined} /></li>)}</ul>}
-              <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount, (WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k)).filter((j) => j.kind === "voyage").length)} />
-            </div>
-            {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
-          </div>
+          {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}
+          <ChooseYourWay place={r.name} stayVol={stayVol} featured={r.featured} stayCount={r.stayCount} stays={regionStays} reserves={RESERVES.filter((x) => x.stay.regionSlug === r.slug)} journeys={journeys} />
 
           {(r.intro.length > 0 || r.gallery.length > 0) && (
             <section className="mt-12 md:mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-start" aria-labelledby="region-heading">
@@ -164,19 +170,6 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
           <Doors eyebrow={`${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"} in the Ledger`} title={`The Countries of ${r.name}`} intro="Open a country for its stays by area, routes, the months to go and the Compass where it's ready." doors={doors} />
 
-          {r.featured.length > 0 && (
-            <section id="stays" style={{ borderTopColor: stayInk }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
-              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-                <div><p className="ledger-eyebrow" style={{ color: stayInk }}>From the Ledger · {r.stayCount} stays</p><h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Places We&rsquo;d Send You in {r.name}</h2></div>
-                <Link href="/stays" className="ledger-btn-ghost self-start md:self-auto">All stays</Link>
-              </div>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {r.featured.map((s) => (
-                  <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? `${s.country}${statusLine(s.status as HouseStatus, s.statusDate) ? ` · ${statusLine(s.status as HouseStatus, s.statusDate)}` : ""}`} eyebrow={s.country} image={{ url: s.image, alt: `${s.name}, ${s.country}` }} href={recordHref(s.reserveChild ? "stay" : "stay", s.slug)} volume={s.reserveChild ? "safaris" : isResidence(s.name, null) ? "gatherings" : r.slug === "europe" ? "europe" : "stays"} /></li>
-                ))}
-              </ul>
-            </section>
-          )}
 
           {r.highlights.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="hl-heading">
@@ -188,7 +181,6 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </section>
           )}
 
-          <Journeys country={r.name} journeys={journeys} />
 
           {Object.keys(r.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="facts-heading">
@@ -225,6 +217,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <PlanBand place={r.name} compassHref="/compass" />
         </div>
       </main>
+      {journeys.length > 0 && <JsonLd data={graph({ "@type": "ItemList", name: `Journeys and voyages in ${r.name}`, itemListElement: journeys.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: `${j.eyebrow}. ${j.line}.` }) })) })} />}
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: `${r.name} with James Wild & Co`, description: answer, publisher: { "@id": ids.house }, about: { "@type": "Place", name: r.name, ...(r.countries.length ? { containsPlace: r.countries.map((c) => ({ "@type": "Country", name: c.name })) } : {}) }, ...(r.featured.length ? { mainEntity: { "@type": "ItemList", name: `Stays in ${r.name}`, itemListElement: r.featured.map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.name, url: absoluteUrl(recordHref("stay", s.slug)) })) } } : {}) })} />
     </div>
   );

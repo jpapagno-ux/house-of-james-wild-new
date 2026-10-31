@@ -46,8 +46,22 @@ const FAN = [[0, 0], [17, -6], [-17, -6], [10, 14], [-10, 14], [0, -18], [21, 11
 export default function LedgerChartMap({ country, chart, width, height, items, counts, legend = "bottom-left", tones = {} }: { legend?: "bottom-left" | "top-left" | "bottom-right" | "below"; country: string; chart: ReactNode; width: number; height: number; items: MapItem[]; counts: Record<MapCategory, number>; /** Volume ink per category for this page (Europe: stays in aubergine). */ tones?: Partial<Record<MapCategory, string>> }) {
   const [on, setOn] = useState<Set<string>>(() => new Set([...CATEGORY_ORDER, "new"]));
   const [hover, setHover] = useState<string | null>(null);
+  // Records a tab lights beyond its categories (Safaris: the safari lodges), in the tab's ink.
+  const [lit, setLit] = useState<{ ids: Set<string>; tint?: string } | null>(null);
   const [drawn, setDrawn] = useState(false);
   const box = useRef<HTMLDivElement>(null);
+
+  // "Choose your way" tabs (VolumeTabs) filter the pins by volume: a tab sends the category to show,
+  // or "all" to show everything again.
+  useEffect(() => {
+    const on = (e: Event) => {
+      const f = (e as CustomEvent<{ show: string[]; ids?: string[]; tint?: string } | null>).detail;
+      setOn(new Set(f ? [...f.show, "new"] : [...CATEGORY_ORDER, "new"]));
+      setLit(f?.ids?.length ? { ids: new Set(f.ids), tint: f.tint } : null);
+    };
+    window.addEventListener("jw:volume", on);
+    return () => window.removeEventListener("jw:volume", on);
+  }, []);
 
   useEffect(() => {
     const el = box.current;
@@ -62,7 +76,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
     return () => { io.disconnect(); window.clearTimeout(t); };
   }, []);
 
-  const pinned = useMemo(() => items.filter((i) => i.x != null && on.has(i.category) && (on.has("new") || !i.isNew)), [items, on]);
+  const pinned = useMemo(() => items.filter((i) => i.x != null && (on.has(i.category) || !!lit?.ids.has(i.id)) && (on.has("new") || !i.isNew)), [items, on, lit]);
   const fan = useMemo(() => {
     const seen: Record<string, number> = {};
     const out: Record<string, number> = {};
@@ -86,12 +100,12 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
   const byArea = useMemo(() => {
     const g: Record<string, MapItem[]> = {};
     for (const i of items) {
-      if (!on.has(i.category) || (!on.has("new") && i.isNew)) continue;
+      if ((!on.has(i.category) && !lit?.ids.has(i.id)) || (!on.has("new") && i.isNew)) continue;
       const k = i.area || `Elsewhere in ${country}`;
       (g[k] = g[k] || []).push(i);
     }
     return Object.entries(g);
-  }, [items, on, country]);
+  }, [items, on, lit, country]);
 
   const hovered = items.find((i) => i.id === hover && i.x != null);
 
@@ -116,7 +130,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
                     <g className="ledger-pin-drop" style={{ animationDelay: `${2.1 + n * 0.09}s` }}>
                       {i.isNew && <circle r="20" fill="none" stroke="#8B2525" strokeWidth="2" className="ledger-pin-pulse" />}
                       <g transform={`scale(${active ? 1.45 : 1.15}) translate(-14 -14)`} style={{ transition: "transform .2s" }}>
-                        <Mark category={i.category} size={28} color={i.color ?? tones[i.category]} />
+                        <Mark category={i.category} size={28} color={lit?.ids.has(i.id) && lit.tint ? lit.tint : i.color ?? tones[i.category]} />
                       </g>
                     </g>
                   </g>
@@ -179,7 +193,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
               {list.map((i) => (
                 <li key={i.id}>
                   <Link href={i.href} onMouseEnter={() => setHover(i.id)} onMouseLeave={() => setHover(null)} className={`flex items-start gap-3 px-3 py-2.5 transition-colors ${hover === i.id ? "bg-paper-card" : ""}`}>
-                    <span className="mt-0.5"><Mark category={i.category} size={16} color={i.color ?? tones[i.category]} /></span>
+                    <span className="mt-0.5"><Mark category={i.category} size={16} color={lit?.ids.has(i.id) && lit.tint ? lit.tint : i.color ?? tones[i.category]} /></span>
                     <span className="min-w-0">
                       <span className="ledger-display text-[16px] leading-snug block">{i.name}</span>
                       <span className="text-[12px] ledger-muted block">

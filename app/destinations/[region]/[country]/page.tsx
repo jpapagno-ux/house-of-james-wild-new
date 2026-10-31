@@ -18,7 +18,6 @@ import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
 import Compass from "@/components/destination/Compass";
-import Journeys from "@/components/destination/Journeys";
 import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
@@ -26,7 +25,6 @@ import PlanBand from "@/components/destination/PlanBand";
 import GatewayNight from "@/components/stays/GatewayNight";
 import ChapterRail from "@/components/ledger/ChapterRail";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
-import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import LIB_CHARTS from "@/lib/charts/countries.json";
@@ -36,6 +34,11 @@ import { VOLUME_STYLES } from "@/lib/volumes";
 import { AdvisorStrip } from "@/components/advisor/Desk";
 import GuideOffer from "@/components/guides/GuideOffer";
 import IslandZoom from "@/components/destination/IslandZoom";
+import ChooseYourWay from "@/components/destination/ChooseYourWay";
+import { PathwayChip } from "@/components/pathways/Pathway";
+import { pathway } from "@/lib/pathways";
+import { REGION_PATHWAYS } from "@/lib/content/region-pathways";
+import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { volumeInk } from "@/lib/volumes";
 import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
@@ -111,7 +114,6 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const all = staysIn(c.slug);
   const pages = all.filter(pageReady).sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name));
   const featured = pages.slice(0, 9);
-  const rest = pages.slice(9);
   const journeys = journeysFor(c.slug);
   const items: MapItem[] = all.filter((s) => s.coords).map((s) => {
     const q = projectOn(chart, s.coords!.lat, s.coords!.lng);
@@ -129,7 +131,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
   const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
-  const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Stays", "stays"], ["When to go", "when"], ["Plan", "plan"]];
+  const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
       <SiteHeader overlay />
@@ -167,7 +169,20 @@ export default async function CountryPage({ params }: { params: Promise<{ region
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: c.regionName, path: `/destinations/${c.region}` }, { name: c.name, path }]} /></div>
 
-          <section id="the-map" className="pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
+          <Reveal className="pt-8 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
+            <div>
+              <AnswerBlock>{answer}</AnswerBlock>
+              {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
+              {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
+              <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />
+            </div>
+            <div className="md:pt-8 space-y-8">
+              {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
+              <p className="text-[16px] leading-relaxed ledger-muted">{c.leading}</p>
+            </div>
+          </Reveal>
+
+          <section id="the-map" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">The Ledger in {c.name} · {all.length} filed</p>
@@ -179,16 +194,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
           </section>
 
-          <Reveal className="pt-12 md:pt-16 grid md:grid-cols-[1.4fr_1fr] gap-10 items-start">
-            <div>
-              <AnswerBlock>{answer}</AnswerBlock>
-              <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />
-            </div>
-            <div className="md:pt-8 space-y-8">
-              {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
-              <p className="text-[16px] leading-relaxed ledger-muted">{c.leading}</p>
-            </div>
-          </Reveal>
+          {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}
+          <ChooseYourWay place={c.name} stayVol={c.region === "europe" ? "europe" : "stays"} featured={pages.map((x) => ({ ...x, image: x.hero }))} stayCount={pages.length} stays={pages.map((x) => ({ ...x, image: x.hero }))} reserves={RESERVES.filter((x) => x.stay.countrySlug === c.slug)} journeys={journeys} chart={chart} staysHref="#stays" />
 
           {c.compass && <Compass country={c.name} stays={pages.map((x) => ({ slug: x.slug, name: x.name, kind: x.category ?? "stay", area: null, tagline: x.tagline ?? "", bestMonths: x.bestMonths ?? "", image: x.hero }))} advisorHref="/about/team#advisors" />}
 
@@ -207,7 +214,6 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </section>
           )}
 
-          <Journeys country={c.name} journeys={journeys} chart={chart} />
           {c.postcard && (
             <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
               <div>
@@ -226,18 +232,11 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <GatewayNight country={p.country} className="mt-16 md:mt-24" />
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
+          {/* Every stay filed here, by name: the index under the tabs (and every stay page linked for search) */}
           <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow" style={{ color: volumeInk(c.region === "europe" ? "europe" : "stays") }}>From the Ledger · {pages.length} stays with their own page</p>
-            <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {c.name}</h2>
-            <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {featured.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? (s.bestMonths ? `Best ${s.bestMonths}` : "")} eyebrow={s.bestMonths ? `Best ${s.bestMonths}` : undefined} image={{ url: s.hero as string, alt: `${s.name}, ${c.name}` }} href={recordHref("stay", s.slug)} volume={s.reserveChild ? "safaris" : isResidence(s.name, s.category) ? "gatherings" : c.region === "europe" ? "europe" : "stays"} /></li>)}
-            </ul>
-            {rest.length > 0 && (
-              <div className="mt-10 border-t ledger-border pt-6">
-                <p className="ledger-eyebrow">More in {c.name}</p>
-                <ul className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">{rest.map((s) => <li key={s.slug}><Link href={recordHref("stay", s.slug)} className="ledger-display text-[1.1rem] hover:ledger-crimson">{s.name}</Link>{s.ledgerId && <span className="ml-2 font-mono text-[11px] ledger-muted">{s.ledgerId}</span>}</li>)}</ul>
-              </div>
-            )}
+            <h2 id="stays-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">Every Stay Filed in {c.name}</h2>
+            <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">{pages.map((s) => <li key={s.slug}><Link href={recordHref("stay", s.slug)} className="ledger-display text-[1.1rem] hover:ledger-crimson">{s.name}</Link>{s.ledgerId && <span className="ml-2 font-mono text-[11px] ledger-muted">{s.ledgerId}</span>}</li>)}</ul>
           </section>
 
           {c.quote && (

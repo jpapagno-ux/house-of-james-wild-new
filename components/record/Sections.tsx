@@ -41,14 +41,20 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; height?: string }) {
   const body = (
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
-        {tag}
+        {/* the note from the house: floats top-right on desktop, unless a founder stamp is there too — then the two sit together, bottom-right */}
+        {tag && (stamp ? <div className="md:hidden">{tag}</div> : tag)}
         <div className="flex items-end justify-between gap-8">
           <div className={film ? "landscape:max-w-[48vw]" : undefined}>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
             <h1 className="ledger-h1 mt-3">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
-          {stamp && <PhotoStamp className={`hidden md:block ${film ? "landscape:!hidden" : ""} shrink-0`}>{stamp}</PhotoStamp>}
+          {stamp && (
+            <div className={`hidden md:flex items-end gap-8 shrink-0 ${film ? "landscape:!hidden" : ""}`}>
+              {tag && <div className="[&>div]:!static [&>div]:!mb-0 pb-2">{tag}</div>}
+              <PhotoStamp>{stamp}</PhotoStamp>
+            </div>
+          )}
         </div>
         {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
       </div>

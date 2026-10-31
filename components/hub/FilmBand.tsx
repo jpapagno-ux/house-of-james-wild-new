@@ -26,7 +26,7 @@ export default function FilmBand({ poster, alt, mp4, webm, eyebrow, title, credi
   const reduce = useReducedMotionSafe();
   const [ready, setReady] = useState(false);
   return (
-    <figure className="relative mt-10 md:mt-14 aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-ink text-white">
+    <figure className="relative mt-10 md:mt-14 aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-ink text-white">
       <Image src={poster} alt={alt} fill sizes="(min-width: 1152px) 1152px, 100vw" quality={85} className="object-cover" />
       {!reduce && mp4 && (
         <video className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${ready ? "opacity-100" : "opacity-0"}`} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" onCanPlay={() => setReady(true)}>
@@ -39,7 +39,7 @@ export default function FilmBand({ poster, alt, mp4, webm, eyebrow, title, credi
       <figcaption className="absolute left-6 right-6 bottom-6 md:left-10 md:right-10 md:bottom-9 flex flex-wrap items-end justify-between gap-4">
         <span>
           <span className="block ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</span>
-          <span className="block ledger-h2 mt-2 max-w-2xl drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]">{title}</span>
+          <span className="block ledger-h2 !text-[1.7rem] sm:!text-[2.2rem] md:!text-[3rem] mt-2 max-w-2xl drop-shadow-[0_2px_14px_rgba(0,0,0,0.5)]">{title}</span>
           {credit && <span className="block ledger-eyebrow !text-white/65 mt-3">{credit}</span>}
         </span>
         {href && (

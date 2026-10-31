@@ -21,7 +21,7 @@ export default function PostMark({ line, where, when, image, script, label = "Th
   const place = where.split(",")[0].toUpperCase().slice(0, 18);
   const ink = "#fbf3e6";
   return (
-    <div className="absolute left-3 md:left-auto md:right-10 top-[78px] md:top-[200px] z-20 select-none">
+    <div className="relative mb-4 md:mb-0 md:absolute md:right-10 md:top-[240px] z-20 select-none">
       <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`${label}, postmarked ${where} ${when}: tap to read`} className="group relative block w-[196px] h-[136px] md:w-[290px] md:h-[200px] text-left">
         {/* the house stamp */}
         <span className="absolute right-1 top-1 w-[80px] h-[96px] md:w-[116px] md:h-[140px] rotate-[5deg] group-hover:rotate-[2deg] transition-transform drop-shadow-[0_4px_8px_rgba(0,0,0,.45)]"

@@ -9,6 +9,7 @@ import { REGION_DATA } from "@/lib/content/regions";
 import { HOME } from "@/lib/content/home";
 import { live } from "@/lib/routes";
 import { JwcoSeal } from "./Marks";
+import Wordmark from "./Wordmark";
 import CompassSpin from "./CompassSpin";
 
 // HouseMenu — the full-screen menu (house chrome, 30 Oct 2026). One "Menu"
@@ -50,7 +51,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
         </button>
         <Link href="/" onClick={onClose} className="flex items-center gap-3" aria-label={`${SITE.name}, home`}>
           <JwcoSeal size={34} />
-          <span className="ledger-display text-[1.5rem] tracking-[-0.01em]">James Wild &amp; Co.</span>
+          <Wordmark style="editorial" size={0.6} rule={false} line={false} />
         </Link>
         <Link href={PLAN_CTA.href} onClick={onClose} className="ledger-btn hidden sm:inline-flex">{PLAN_CTA.label}</Link>
       </div>

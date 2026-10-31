@@ -1,16 +1,173 @@
 {
-  "_note": "Wild Pathways 2B: voyages and overland routes on the pathways. Trips live in lib/content/trips (repo content, not the library), so their classification lives here. Drafted by Iggi from each route's own copy, 31 Oct 2026; status flips to approved only on James's word. volumes use the live keys.",
+  "_note": "Wild Pathways 2B: voyages and overland routes on the pathways. Trips live in lib/content/trips (repo content, not the library), so their classification lives here. Drafted by Iggi from each route's own copy, 31 Oct 2026; all eleven approved by James, 31 Oct 2026 (\"Approve all\"). volumes use the live keys.",
   "records": [
-    { "slug": "10-day-raja-ampat-north", "kind": "voyage", "primary": "PATH-02", "secondary": ["PATH-06"], "volumes": ["voyages"], "setting": "raja_ampat", "status": "draft", "classifiedBy": "Iggi draft", "why": "Wayag's lagoons, the Passage and Arborek's mantas: islands and oceans first; the far north of Raja Ampat is still off most maps." },
-    { "slug": "5-day-komodo-island", "kind": "voyage", "primary": "PATH-02", "secondary": ["PATH-04"], "volumes": ["voyages"], "setting": "komodo", "status": "draft", "classifiedBy": "Iggi draft", "why": "Padar, Pink Beach and mantas by sea; the dragons on Rinca put wildlife second." },
-    { "slug": "polar-circle-air-cruise", "kind": "voyage", "primary": "PATH-06", "secondary": ["PATH-04"], "volumes": ["voyages"], "setting": "antarctic_peninsula", "status": "draft", "classifiedBy": "Iggi draft", "why": "South to 66°33′S: the edge of the map, with the Peninsula's penguins, seals and whales along the way." },
-    { "slug": "two-oceans-one-volcano", "kind": "route", "primary": "PATH-01", "secondary": ["PATH-02"], "volumes": ["overland"], "setting": "costa_rica_coast_to_coast", "status": "draft", "classifiedBy": "Iggi draft", "why": "Tortuguero, Arenal and Monteverde are rainforest and cloud forest; Nosara and the Caribbean add the two coasts." },
-    { "slug": "the-original-costa-route-7-days", "kind": "route", "primary": "PATH-01", "secondary": ["PATH-05"], "volumes": ["overland"], "setting": "costa_rica_pacific", "status": "draft", "classifiedBy": "Iggi draft", "why": "Monteverde's cloud forest, then adults-only Kura above Uvita: green first, stillness second." },
-    { "slug": "the-original-costa-route-10-days", "kind": "route", "primary": "PATH-01", "secondary": ["PATH-02"], "volumes": ["overland"], "setting": "costa_rica_to_panama", "status": "draft", "classifiedBy": "Iggi draft", "why": "Cloud forest to the Pacific, over the border to Isla Palenque: green, then an island." },
-    { "slug": "the-original-costa-route-coast-to-coast", "kind": "route", "primary": "PATH-01", "secondary": ["PATH-02"], "volumes": ["overland"], "setting": "costa_rica_coast_to_coast", "status": "draft", "classifiedBy": "Iggi draft", "why": "Aguas Claras on the Caribbean, Monteverde, Arenas del Mar on the Pacific: rainforest between two seas, a surf day on each." },
-    { "slug": "the-sand-river-by-road", "kind": "route", "primary": "PATH-04", "secondary": ["PATH-08"], "volumes": ["overland", "safaris"], "setting": "sabi_sand_to_cape", "status": "draft", "classifiedBy": "Iggi draft", "why": "Three nights at Londolozi on the Sand River, then Ellerman House and Leeu Estates: wild first, Cape heritage second." },
-    { "slug": "leopards-through-the-lens", "kind": "route", "primary": "PATH-04", "secondary": [], "volumes": ["overland", "safaris"], "setting": "sabi_sand", "status": "draft", "classifiedBy": "Iggi draft", "why": "A photographic safari at Londolozi Varty Camp with a private vehicle: wildlife, entirely." },
-    { "slug": "track-your-life-with-boyd-varty", "kind": "route", "primary": "PATH-05", "secondary": ["PATH-04"], "volumes": ["overland", "safaris"], "setting": "sabi_sand", "status": "draft", "classifiedBy": "Iggi draft", "why": "Boyd Varty's tracking and coaching retreat: restoration is the point; the bush is the setting." },
-    { "slug": "three-generations-at-pioneer", "kind": "route", "primary": "PATH-07", "secondary": ["PATH-04"], "volumes": ["overland", "safaris", "gatherings"], "setting": "sabi_sand", "status": "draft", "classifiedBy": "Iggi draft", "why": "Pioneer Camp taken as a private homestead for up to 12 with its own Land Rover: a place of your own, on safari." }
+    {
+      "slug": "10-day-raja-ampat-north",
+      "kind": "voyage",
+      "primary": "PATH-02",
+      "secondary": [
+        "PATH-06"
+      ],
+      "volumes": [
+        "voyages"
+      ],
+      "setting": "raja_ampat",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Wayag's lagoons, the Passage and Arborek's mantas: islands and oceans first; the far north of Raja Ampat is still off most maps."
+    },
+    {
+      "slug": "5-day-komodo-island",
+      "kind": "voyage",
+      "primary": "PATH-02",
+      "secondary": [
+        "PATH-04"
+      ],
+      "volumes": [
+        "voyages"
+      ],
+      "setting": "komodo",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Padar, Pink Beach and mantas by sea; the dragons on Rinca put wildlife second."
+    },
+    {
+      "slug": "polar-circle-air-cruise",
+      "kind": "voyage",
+      "primary": "PATH-06",
+      "secondary": [
+        "PATH-04"
+      ],
+      "volumes": [
+        "voyages"
+      ],
+      "setting": "antarctic_peninsula",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "South to 66°33′S: the edge of the map, with the Peninsula's penguins, seals and whales along the way."
+    },
+    {
+      "slug": "two-oceans-one-volcano",
+      "kind": "route",
+      "primary": "PATH-01",
+      "secondary": [
+        "PATH-02"
+      ],
+      "volumes": [
+        "overland"
+      ],
+      "setting": "costa_rica_coast_to_coast",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Tortuguero, Arenal and Monteverde are rainforest and cloud forest; Nosara and the Caribbean add the two coasts."
+    },
+    {
+      "slug": "the-original-costa-route-7-days",
+      "kind": "route",
+      "primary": "PATH-01",
+      "secondary": [
+        "PATH-05"
+      ],
+      "volumes": [
+        "overland"
+      ],
+      "setting": "costa_rica_pacific",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Monteverde's cloud forest, then adults-only Kura above Uvita: green first, stillness second."
+    },
+    {
+      "slug": "the-original-costa-route-10-days",
+      "kind": "route",
+      "primary": "PATH-01",
+      "secondary": [
+        "PATH-02"
+      ],
+      "volumes": [
+        "overland"
+      ],
+      "setting": "costa_rica_to_panama",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Cloud forest to the Pacific, over the border to Isla Palenque: green, then an island."
+    },
+    {
+      "slug": "the-original-costa-route-coast-to-coast",
+      "kind": "route",
+      "primary": "PATH-01",
+      "secondary": [
+        "PATH-02"
+      ],
+      "volumes": [
+        "overland"
+      ],
+      "setting": "costa_rica_coast_to_coast",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Aguas Claras on the Caribbean, Monteverde, Arenas del Mar on the Pacific: rainforest between two seas, a surf day on each."
+    },
+    {
+      "slug": "the-sand-river-by-road",
+      "kind": "route",
+      "primary": "PATH-04",
+      "secondary": [
+        "PATH-08"
+      ],
+      "volumes": [
+        "overland",
+        "safaris"
+      ],
+      "setting": "sabi_sand_to_cape",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Three nights at Londolozi on the Sand River, then Ellerman House and Leeu Estates: wild first, Cape heritage second."
+    },
+    {
+      "slug": "leopards-through-the-lens",
+      "kind": "route",
+      "primary": "PATH-04",
+      "secondary": [],
+      "volumes": [
+        "overland",
+        "safaris"
+      ],
+      "setting": "sabi_sand",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "A photographic safari at Londolozi Varty Camp with a private vehicle: wildlife, entirely."
+    },
+    {
+      "slug": "track-your-life-with-boyd-varty",
+      "kind": "route",
+      "primary": "PATH-05",
+      "secondary": [
+        "PATH-04"
+      ],
+      "volumes": [
+        "overland",
+        "safaris"
+      ],
+      "setting": "sabi_sand",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Boyd Varty's tracking and coaching retreat: restoration is the point; the bush is the setting."
+    },
+    {
+      "slug": "three-generations-at-pioneer",
+      "kind": "route",
+      "primary": "PATH-07",
+      "secondary": [
+        "PATH-04"
+      ],
+      "volumes": [
+        "overland",
+        "safaris",
+        "gatherings"
+      ],
+      "setting": "sabi_sand",
+      "status": "approved",
+      "classifiedBy": "James Papagno (batch 2, drafted by Iggi)",
+      "why": "Pioneer Camp taken as a private homestead for up to 12 with its own Land Rover: a place of your own, on safari."
+    }
   ]
 }

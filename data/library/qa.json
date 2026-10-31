@@ -87,10 +87,8 @@
    "slug": "amandari",
    "name": "Amandari",
    "country": "Indonesia",
-   "missing": [
-    "correct_hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1b4125dc9cb24f36563",
@@ -681,10 +679,8 @@
    "slug": "blue-safari-seychelles",
    "name": "Blue Safari Seychelles",
    "country": "Seychelles",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8db",
@@ -806,10 +802,8 @@
    "slug": "casa-maya-kaan",
    "name": "Casa Maya Ka'an",
    "country": "Mexico",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1aa4b2593a674df7997",
@@ -1568,10 +1562,8 @@
    "slug": "holistika",
    "name": "Holistika",
    "country": "Mexico",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff91a",
@@ -2537,10 +2529,8 @@
    "slug": "namale-resort-and-spa",
    "name": "Namale Resort & Spa",
    "country": "Fiji",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9da",
@@ -2871,10 +2861,8 @@
    "slug": "our-habitas-tulum",
    "name": "Our Habitas Tulum",
    "country": "Mexico",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff97d",
@@ -3066,10 +3054,8 @@
    "slug": "royal-davui-island-resort",
    "name": "Royal Davui Island Resort",
    "country": "Fiji",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1a3411b840989f62a6c",
@@ -4163,10 +4149,8 @@
    "slug": "tokoriki-island-resort",
    "name": "Tokoriki Island Resort",
    "country": "Fiji",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a899f0f490e5a82536965c0",
@@ -4256,10 +4240,8 @@
    "slug": "ulum-moab",
    "name": "Ulum Moab",
    "country": "Utah",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc22",

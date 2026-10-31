@@ -1539,11 +1539,19 @@
    "airports": [
     [
      "Nadi International Airport (NAN)",
+     "Serves 4 stays in the Ledger here"
+    ],
+    [
+     "Savusavu Airport (SVU)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Nausori International Airport (SUV)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "NAN",
+   "flyInto": "NAN · SVU",
    "bestShort": "May–Oct",
    "atlasName": "Fiji"
   },
@@ -2391,11 +2399,11 @@
    "airports": [
     [
      "Cancún International Airport (CUN)",
-     "Serves 13 stays in the Ledger here"
+     "Serves 15 stays in the Ledger here"
     ],
     [
      "Tulum International Airport (TQO)",
-     "Serves 10 stays in the Ledger here"
+     "Serves 12 stays in the Ledger here"
     ],
     [
      "Mérida International Airport (MID)",
@@ -3314,25 +3322,25 @@
      "area": "Across Seychelles",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "good",
+      "best",
       "best",
       "best",
       "best",
       "good",
       "good",
+      "good",
+      "good",
+      "good",
+      "good",
       "best",
-      "best",
-      "best",
-      "good"
+      "best"
      ]
     }
    ],
    "airports": [
     [
      "Seychelles International Airport (SEZ)",
-     "Serves 1 stay in the Ledger here"
+     "Serves 2 stays in the Ledger here"
     ],
     [
      "Praslin Airport (PRI)",
@@ -3341,7 +3349,7 @@
    ],
    "transfers": [],
    "flyInto": "SEZ · PRI",
-   "bestShort": "Apr–Jun",
+   "bestShort": "Nov–Apr",
    "atlasName": "Seychelles"
   },
   {
@@ -3978,12 +3986,12 @@
       "best",
       "best",
       "best",
-      "good",
+      "best",
       "good",
       "good",
       "best",
       "best",
-      "best",
+      "good",
       "good"
      ]
     }
@@ -3994,17 +4002,17 @@
      "Serves 4 stays in the Ledger here"
     ],
     [
-     "St. George Regional Airport (SGU)",
-     "Serves 3 stays in the Ledger here"
+     "Salt Lake City International Airport (SLC)",
+     "Serves 4 stays in the Ledger here"
     ],
     [
-     "Salt Lake City International Airport (SLC)",
+     "St. George Regional Airport (SGU)",
      "Serves 3 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "LAS · SGU",
-   "bestShort": "Mar–May",
+   "flyInto": "LAS · SLC",
+   "bestShort": "Mar–Jun",
    "atlasName": "United States of America",
    "useStays": true,
    "chartLabel": "Utah"

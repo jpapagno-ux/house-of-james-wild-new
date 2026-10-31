@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
+import Wordmark from "@/components/ledger/Wordmark";
 import { JwcoSeal } from "./Marks";
 import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
@@ -197,10 +198,10 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         <Link href="/" className="flex items-center gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
           <span className={`block lg:hidden ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
           <span className={`hidden lg:block ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
-          <span className="flex flex-col min-w-0">
-            <span className="font-display font-bold text-[1.35rem] md:text-[2.1rem] lg:text-[2.6rem] tracking-[-0.02em] leading-none whitespace-nowrap">James Wild &amp; Co.</span>
-            <span className={`ledger-eyebrow !text-[8.5px] md:!text-[10px] !tracking-[0.28em] md:!tracking-[0.32em] mt-1.5 md:mt-2 whitespace-nowrap ${light ? "!text-white/80" : "!text-crimson"}`}>Exploring since {SITE.exploringSince}<span className="hidden md:inline"> · {SITE.homeOf}</span></span>
-          </span>
+          {/* phone lockup */}
+          <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
+          {/* desktop lockup */}
+          <span className="hidden lg:block"><Wordmark style="editorial" light={light} size={1} /></span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">

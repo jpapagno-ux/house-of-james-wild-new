@@ -375,13 +375,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8c8",
    "slug": "atzaro-okavango-camp",
-   "name": "Atzaro Okavango",
+   "name": "Atzaró Okavango",
    "country": "Botswana",
-   "missing": [
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8c9",
@@ -2320,24 +2317,22 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff94a",
    "slug": "linyanti-ebony-camp",
-   "name": "Linyanti Ebony Camp",
+   "name": "Linyanti Ebony",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff94b",
    "slug": "linyanti-expedition-camp",
-   "name": "Linyanti Expedition Camp",
+   "name": "Linyanti Expeditions",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bffa02",
@@ -3166,11 +3161,9 @@
    "name": "San Camp",
    "country": "Botswana",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff993",
@@ -3707,13 +3700,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c4",
    "slug": "skybeds-khwai",
-   "name": "Skybeds Khwai",
+   "name": "Skybeds",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc1a",
@@ -4270,14 +4262,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9e6",
    "slug": "tuludi-khwai",
-   "name": "Tuludi Khwai",
+   "name": "Tuludi",
    "country": "Botswana",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc20",

@@ -2829,6 +2829,94 @@
    "volumes": null
   },
   {
+   "slug": "atzaro-okavango-camp",
+   "name": "Atzaró Okavango",
+   "ledgerId": "STY-2026-000025",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Tented suites with private pools between Moremi and the Gomoti Plains",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atzaro-okavango-camp/g6"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -19.661373,
+    "lng": 23.463822
+   },
+   "airport": "Maun (MUB), then charter flight",
+   "airportDirections": "A 15-minute charter flight from Maun to the camp's private concession.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Tented suites and private family villas, each opening onto its own pool and an outdoor bath. Interiors pair contemporary African design with leather furnishings and artisan basketry."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Twice-daily game drives",
+     "Mokoro excursions with local polers",
+     "Guided bush walks"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A private concession between Moremi Game Reserve and the Gomoti Plains in the Okavango Delta. A 20-metre lagoon-view pool, spa, yoga shala, gym, wine cellar, tea room, observation deck, boma, art gallery and boutique. Off grid, with organic all-inclusive dining."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Every suite has its own pool and outdoor bath inside a private concession on the edge of Moremi, and the camp was named to the Condé Nast Traveler Hot List in 2025."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Pool at Every Door"
+    },
+    {
+     "title": null,
+     "body": "Best for couples, honeymooners, families and design lovers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
    "ledgerId": "STY-2026-000026",
@@ -15852,6 +15940,164 @@
    "volumes": null
   },
   {
+   "slug": "linyanti-ebony-camp",
+   "name": "Linyanti Ebony",
+   "ledgerId": "STY-2026-000155",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family safari camp on the Linyanti Wetlands",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-ebony-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-ebony-camp/g1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Luxury tented suites with king-size beds, indoor and outdoor showers and writing desks, plus a two-bedroom family unit with its own lounge, private viewing deck and freestanding bath. The whole camp can be reserved exclusively for groups of eight or more."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives, night drives and walking safaris",
+     "Mokoro trips through the wetlands with local polers",
+     "Doors-off helicopter flights",
+     "Some of Africa's best birding"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In the Linyanti Enclave beside Chobe National Park, on elevated decking over the Linyanti Wetlands. Plunge pool, lounge and dining area, and a firepit under the stars."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A private family suite with its own deck over the Linyanti Wetlands, in a region known for its large herds of elephant, buffalo and zebra."
+   ],
+   "why": [
+    {
+     "title": "Made for Families",
+     "body": "Best for families, multigenerational groups and friends travelling together."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "linyanti-expedition-camp",
+   "name": "Linyanti Expeditions",
+   "ledgerId": "STY-2026-000156",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six tents, six star beds in the Linyanti Enclave",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-expedition-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-expedition-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-expedition-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-expedition-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/linyanti-expedition-camp/g4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six luxury tents on raised wooden decks, each with an indoor bathroom, a king-size bed and its own Star Suite: a mesh-enclosed gazebo with a bed for sleeping under the stars."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and afternoon game drives. Walking safaris. Mokoro trips through the Linyanti Wetlands with local polers."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "In the Linyanti Enclave between the Okavango Delta and Chobe National Park, a landscape of floodplains, riverine forest and papyrus-lined waterways. Open common areas with a bar and shared meals made with local ingredients."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Every tent comes with its own Star Suite, so a night under the Botswana sky is part of every stay rather than an add-on."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Sleep Under the Stars"
+    },
+    {
+     "title": null,
+     "body": "Best for couples, small groups and returning safari-goers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "lion-sands",
    "name": "Lion Sands\nReserve",
    "ledgerId": "STY-2026-290658",
@@ -22231,6 +22477,85 @@
    "volumes": null
   },
   {
+   "slug": "sans-camp",
+   "name": "San Camp",
+   "ledgerId": "STY-2026-000227",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seven white tents on the edge of Ntwetwe Pan",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sans-camp/g6"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven classic white tents with four-poster beds, Persian rugs, mahogany writing desks and leather armchairs, each with a day bed outside and views across the salt pans."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Time with a habituated meerkat colony. Quad biking across the pans. Walks with Zu/'hoasi Bushmen. Horseback riding, helicopter flights, game drives and night drives. Flamingos on the pans in March and April."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "On the edge of Ntwetwe Pan in the Makgadikgadi, adjoining Makgadikgadi National Park, and one of only three camps in a 400,000-hectare concession. Open-sided pavilions, a tea tent, a pool tent and communal dining. Solar powered. Open mid-April to mid-October."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Lying out on the salt pans to count the stars from one horizon to the other, with meerkats for company in the morning."
+   ],
+   "why": [
+    {
+     "title": "Desert Space and Silence",
+     "body": "Best for couples, solo travellers, photographers and returning safari-goers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "saruni-eagle-view",
    "name": "Saruni Eagle View",
    "ledgerId": "STY-2026-000228",
@@ -26963,6 +27288,84 @@
    "volumes": null
   },
   {
+   "slug": "skybeds-khwai",
+   "name": "Skybeds",
+   "ledgerId": "STY-2026-000277",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Three sleep-out platforms over a Khwai waterhole",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/skybeds-khwai/g5"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Three private three-storey platforms sleeping six in all. The open-air bedroom is on the top deck, with a bed, mosquito net, thick duvets and hot water bottles, and each platform has its own bathroom with a flushing toilet. There is no electricity on the platforms; devices charge at the main platform."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Day and night game drives focused on lion, leopard, wild dog and hyena. Walking safaris. The underground hide. Birding, with more than 350 species recorded in the area."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Beside a busy waterhole in the 200,000-hectare Khwai Private Reserve on the north-east edge of the Okavango Delta. Meals around the campfire or on the dining platform. An underground hide at the water's edge. Solar powered. Open 1 April to 31 October, booked together with a stay at Elephant Pan, Tuludi, Sable Alley or Little Sable."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Your bedroom is the hide: from the top of your platform you can watch elephant, lion and wild dog come to drink below."
+   ],
+   "why": [
+    {
+     "title": "A Night Under the Stars",
+     "body": "Best for couples and adventurous travellers. Children 16 and over; 12 to 15 on sole use, sharing with an adult."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "sleeping-giant-rainforest-lodge",
    "name": "Sleeping Giant Rainforest Lodge",
    "ledgerId": "STY-2026-669876",
@@ -30353,6 +30756,90 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "tuludi-khwai",
+   "name": "Tuludi",
+   "ledgerId": "STY-2026-000311",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seven suites among the leadwoods of Khwai",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/tuludi-khwai/g6"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Maun (MUB) or Kasane (BBK), then charter flight",
+   "airportDirections": "A light-aircraft flight from Maun or Kasane to the private Khwai airstrip, then a game drive into camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven widely spaced suites under high, pitched canvas roofs, linked by elevated boardwalks and shaded by leadwood trees, including a family tent."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Day and night game drives",
+     "Walking safaris",
+     "Boat trips and mokoro (water levels permitting)",
+     "Helicopter flights",
+     "Dawn patrols with the reserve's rangers",
+     "Visits to Khwai Village",
+     "Fishing from March to December",
+     "A night at Skybeds from April to October"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In the 200,000-hectare Khwai Private Reserve in the northern Okavango Delta, a partnership with Khwai Village. A raised main deck, a firepit over the floodplains, a large pool, a treehouse library four metres up with a slide, and a handcrafted mosaic bar. 100% solar powered. Open all year."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A private reserve where lion, leopard, cheetah and wild dog all hunt year round, and where your stay supports Khwai Village through the reserve's community partnership."
+   ],
+   "why": [
+    {
+     "title": "Predators and Privacy",
+     "body": "Best for couples, families and first-time visitors to the Delta."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
    "volumes": [
     "safaris",
     "stays"

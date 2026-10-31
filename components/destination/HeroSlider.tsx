@@ -90,7 +90,7 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
       <div className="relative z-[3] h-full">{children}</div>
 
       {n > 1 && !reduce && (
-        <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-[4] ${controls === "top" ? "top-[92px] lg:top-[128px]" : "bottom-8 md:bottom-12"}`}>
+        <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-[4] ${controls === "top" ? "top-[92px] lg:top-[188px]" : "bottom-8 md:bottom-12"}`}>
           <span className="ledger-eyebrow !text-white/85 tabular-nums" aria-live="polite">
             {String(i + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}
           </span>

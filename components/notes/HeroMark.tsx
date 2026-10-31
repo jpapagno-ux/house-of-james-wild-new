@@ -18,7 +18,7 @@ export function Stamp({ line, where, when, script, label = "The verdict", href =
   const [seen, setSeen] = useState(false);
   const year = when.match(/\d{4}/)?.[0] ?? when;
   return (
-    <div className="absolute left-4 md:left-auto md:right-10 top-[112px] md:top-[220px] z-20">
+    <div className="relative mb-5 md:mb-0 md:absolute md:right-10 md:top-[250px] z-20">
       <button type="button" onClick={() => { setOpen((o) => !o); setSeen(true); }} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
         className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform"
         style={{ color: tint, boxShadow: `inset 0 0 0 3px ${tint}, inset 0 0 0 7px transparent, inset 0 0 0 8.5px ${tint}cc`, filter: "drop-shadow(0 1px 2px rgba(0,0,0,.65))" }}>
@@ -44,7 +44,7 @@ export function Stamp({ line, where, when, script, label = "The verdict", href =
         </button>
       )}
       {open && (
-        <div className="absolute left-0 md:left-auto md:right-0 top-[100px] md:top-[140px] w-[260px] md:w-[290px] bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
+        <div className="absolute left-0 md:left-auto md:right-0 top-[100px] md:top-[140px] w-[260px] md:w-[290px] z-30 bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
           <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where} · {when}</p>
           {script && <p className="mt-2 text-[15px] text-[#3b2716] -rotate-[2deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{script}</p>}
           <p className="mt-2 ledger-display italic text-[1rem] leading-snug">&ldquo;{line}&rdquo;</p>
@@ -58,7 +58,7 @@ export function Stamp({ line, where, when, script, label = "The verdict", href =
 function TapedNote({ line, where, when }: Omit<P, "style">) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="absolute left-4 md:left-auto md:right-10 top-[118px] md:top-[226px] z-20">
+    <div className="relative mb-5 md:mb-0 md:absolute md:right-10 md:top-[256px] z-20">
       <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open}
         className={`relative block text-left bg-[#fdfcf8] text-[#2b2622] rotate-[3deg] hover:rotate-[1deg] transition-all duration-500 shadow-[0_10px_22px_-10px_rgba(0,0,0,.6)] ${open ? "w-[250px] md:w-[280px] p-4" : "w-[138px] md:w-[168px] px-3 py-2.5"}`}>
         <span className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-[#e9dfcb]/90 rotate-[-3deg]" aria-hidden="true" />

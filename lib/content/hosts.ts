@@ -85,6 +85,105 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
       "Pairing DumaTau with other Wilderness camps, and anything that keeps you up at night",
     ],
   } },
+  // Londolozi (James, 31 Oct 2026): one host across every Londolozi listing.
+  // James wrote "Garrett Fitzgerald, Director of Sales"; Londolozi's own blog
+  // spells it "Garrett Fitzpatrick". Brand spelling used until James confirms.
+  "reserve:londolozi-reserve": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi`,
+    topics: [
+      "Londolozi's four camps, the Granite Suites and the villas, and which suits your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "stay:londolozi-reserve": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi`,
+    topics: [
+      "Londolozi's four camps, the Granite Suites and the villas, and which suits your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/founders-camp": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-founders-camp`,
+    topics: [
+      "Founders Camp: the Cubs Den for children and daily yoga on the ebony-tree deck, and whether it suits your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/varty-camp": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-varty-camp`,
+    topics: [
+      "Varty Camp: the Healing House, the photographic studio and the gym, and whether it suits your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/tree-camp": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-tree-camp`,
+    topics: [
+      "Tree Camp's suites, and whether they suit your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/pioneer-camp": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-pioneer-camp`,
+    topics: [
+      "Pioneer Camp: just three suites on the river, and whether it suits your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/private-granite-suites": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-private-granite-suites`,
+    topics: [
+      "The Private Granite Suites, and whether they suit your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
+  "camp:londolozi-reserve/private-villas": { state: "available", host: {
+    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-private-villas`,
+    topics: [
+      "The Private Villas and the Pioneer Homestead, and whether they suit your party",
+      "The Healing House, daily yoga and private wellness sessions, and how to fit them around game drives",
+      "Photographing leopards: private vehicles, camera hire and Lightroom tuition in the studio",
+      "Your dates against the best months in the Sabi Sand",
+      "Getting there, children and celebrations, and anything that keeps you up at night",
+    ],
+  } },
   "voyage:aliikai": { state: "available", host: {
     name: "Aliikai Cruise Director", role: "Your host · aboard Aliikai, Raja Ampat", sample: true, seats: 6,
     tz: "Asia/Jayapura", place: "Raja Ampat", zoneLabel: "Eastern Indonesia Time (UTC+9)",

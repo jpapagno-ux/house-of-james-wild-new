@@ -29,6 +29,7 @@ export type Advisor = {
   specialties: string[]; // approved only
   traveled: { place: string; year?: number }[]; // stated first-hand trips
   profileHref: string | null;
+  ledgerId: string; // Person.ledger_id in the Intelligence Library (ADV-…), the Library being the sole issuer (Contract C2); James's 1982 ID is the one grandfathered exception
   sample?: boolean; // invented to show the layout; labelled as such everywhere
   desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
 };
@@ -38,6 +39,7 @@ const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 export const ADVISORS: Advisor[] = [
   {
     slug: "james-papagno",
+    ledgerId: "ADV-1982-000001",
     name: "James Papagno",
     firstName: "James",
     role: "Founder & Chief Expedition Officer",
@@ -80,6 +82,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "kristina-larson",
+    ledgerId: "ADV-2026-000001",
     name: "Kristina Larson",
     firstName: "Kristina",
     role: "Travel Advisor",
@@ -97,6 +100,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "anthony-papagno",
+    ledgerId: "ADV-2026-000002",
     name: "Anthony Papagno",
     firstName: "Anthony",
     role: "Travel Advisor",
@@ -112,7 +116,7 @@ export const ADVISORS: Advisor[] = [
     traveled: [{ place: "Raja Ampat, Indonesia, aboard Aliikai", year: 2024 }],
     profileHref: "/advisors/anthony-papagno",
     desk: {
-      adv: "ADV number pending", sample: false, since: 2024, joined: 2026, agency: null, base: "Palm Beach, Florida", languages: ["English"],
+      adv: "ADV-2026-000002", sample: false, since: 2024, joined: 2026, agency: null, base: "Palm Beach, Florida", languages: ["English"],
       volumes: ["voyages"], countries: ["indonesia"], specialties: [], line: "The best of a place is usually just past where the itinerary stops.",
       entries: [{ ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Know a Place", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "—" }],
       folios: [],
@@ -120,6 +124,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "albert-alvarez",
+    ledgerId: "ADV-2026-000003",
     name: "Albert Alvarez",
     firstName: "Albert",
     role: "Travel Advisor",
@@ -133,6 +138,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "sofia-marchetti",
+    ledgerId: "ADV-2026-000005",
     name: "Sofia Marchetti",
     firstName: "Sofia",
     role: "Independent travel advisor · stand-in",
@@ -151,6 +157,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "marcus-adeyemi",
+    ledgerId: "ADV-2026-000006",
     name: "Marcus Adeyemi",
     firstName: "Marcus",
     role: "Africa advisor · stand-in",
@@ -169,6 +176,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "mateo-rivas",
+    ledgerId: "ADV-2026-000007",
     name: "Mateo Rivas",
     firstName: "Mateo",
     role: "Voyages advisor · stand-in",
@@ -187,6 +195,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "clara-whitlock",
+    ledgerId: "ADV-2026-000008",
     name: "Clara Whitlock",
     firstName: "Clara",
     role: "Gatherings & wellness advisor · stand-in",
@@ -205,6 +214,7 @@ export const ADVISORS: Advisor[] = [
   },
   {
     slug: "carlos-alger",
+    ledgerId: "ADV-2026-000004",
     name: "Carlos Alger",
     firstName: "Carlos",
     role: "Travel Advisor",

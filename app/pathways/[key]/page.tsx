@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
 import { PathwayChips, PathwayIndex } from "@/components/pathways/Pathway";
 import { PATHWAY_LIST, pathway } from "@/lib/pathways";
@@ -52,6 +54,7 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
               </ul>
             ) : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
           </HubSection>
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
           <FaqBlock faqs={PATHWAY_FAQS[p.id]} title={`Questions About ${p.name}`} />
           <HubSection eyebrow="Index" title="The Other Pathways" id="others-h"><PathwayIndex hrefFor={(x) => pathwayHref(x.key)} pictured={PATHWAY_LIST.map((x) => x.id)} /></HubSection>
         </HubShell>
@@ -59,7 +62,6 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
       <JsonLd data={graph(
         { "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: p.name, description: p.line, isPartOf: { "@id": ids.website }, publisher: { "@id": ids.house },
           mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length, itemListElement: items.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.stay.name, url: absoluteUrl(r.href) })) } },
-        faqPage(PATHWAY_FAQS[p.id]),
       )} />
     </>
   );

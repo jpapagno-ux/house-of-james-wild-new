@@ -22,6 +22,8 @@ import PlaceNote from "@/components/destination/PlaceNote";
 import { REGION_NOTES } from "@/lib/content/place-notes";
 import { regionCounts } from "@/lib/content/ledger-counts";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
 import CompassRose from "@/components/ledger/CompassRose";
@@ -192,6 +194,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </section>
           )}
 
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "region", entitySlug: r.slug, regionSlug: r.slug, sourcePage: path, volume: r.slug === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${r.name}`} />}
           {r.faqs.length > 0 && <FaqBlock faqs={r.faqs} title={`${r.name}, answered`} />}
 
           <section className="mt-16 md:mt-24 text-paper -mx-5 md:mx-0 px-5 md:px-12 py-10 relative overflow-hidden bg-ink bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)] grid md:grid-cols-[1fr_auto] gap-8 items-center" aria-label="The Compass">

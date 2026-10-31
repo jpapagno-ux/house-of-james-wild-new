@@ -7,7 +7,7 @@ import { STAYS, pageReady, type StayData } from "./stays";
 import type { HouseStatus } from "@/lib/ledger/status";
 
 export type ReserveRoom = { name: string; capacity: number | null; quantity: number | null; beds: string | null; from: number | null; currency: string; basis: string | null; photos: string[] };
-export type ReserveCamp = { slug: string; name: string; key: string; kind: "camp" | "residence" | "suite"; intro: string; description: string; units: string[]; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; rooms: ReserveRoom[]; fromRate: number | null;
+export type ReserveCamp = { slug: string; ledgerId: string | null; name: string; key: string; kind: "camp" | "residence" | "suite"; intro: string; description: string; units: string[]; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; rooms: ReserveRoom[]; fromRate: number | null;
   // A lodge with its own Stay page (shared reserves such as Madikwe): the card links there.
   stayHref?: string | null };
 type Block = { title?: string | null; body: string };
@@ -23,7 +23,7 @@ const SHARED: SharedDef[] = [
   { slug: "madikwe", name: "Madikwe Game Reserve", rsv: "RSV-2026-000008", area: "North West Province", province: "North West Province", stay: "madikwe", camps: ["jacis-private-lodge", "morukuru-farm-house"] },
 ];
 const fromStay = (s: StayData): ReserveStay => ({ ledgerId: s.ledgerId, tagline: s.tagline, quote: s.quote, hero: s.hero, gallery: s.gallery, bestMonths: s.bestMonths, bestMonthsNote: s.bestMonthsNote, airport: s.airport, airportDirections: s.airportDirections, coords: s.coords, why: s.why, experiences: s.experiences, features: s.features, onlyHere: s.onlyHere, country: s.country, countrySlug: s.countrySlug, regionSlug: s.regionSlug, status: s.status, statusDate: s.statusDate, founderNote: s.founderNote });
-const campFromStay = (s: StayData): ReserveCamp => ({ slug: s.slug, name: s.name, key: s.name, kind: /house|villa|residence/i.test(s.name) ? "residence" : "camp", intro: s.tagline ?? "", description: s.quote ?? s.why[0]?.body ?? "", units: [...s.rooms.items], features: [...s.features.items], experiences: [...s.experiences.items], hero: s.hero, gallery: s.gallery, rooms: [], fromRate: null, stayHref: pageReady(s) ? `/stays/${s.slug}` : null });
+const campFromStay = (s: StayData): ReserveCamp => ({ slug: s.slug, ledgerId: s.ledgerId, name: s.name, key: s.name, kind: /house|villa|residence/i.test(s.name) ? "residence" : "camp", intro: s.tagline ?? "", description: s.quote ?? s.why[0]?.body ?? "", units: [...s.rooms.items], features: [...s.features.items], experiences: [...s.experiences.items], hero: s.hero, gallery: s.gallery, rooms: [], fromRate: null, stayHref: pageReady(s) ? `/stays/${s.slug}` : null });
 const shared: Reserve[] = SHARED.flatMap((d) => {
   const st = STAYS.find((s) => s.slug === d.stay);
   if (!st || !pageReady(st)) return [];

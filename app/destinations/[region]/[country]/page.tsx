@@ -11,6 +11,8 @@ import { COUNTRY_NOTES } from "@/lib/content/place-notes";
 import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
 import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
 import { Reveal } from "@/components/ledger/Motion";
@@ -269,6 +271,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           <WhenToGo place={c.name} rows={c.months} airports={c.airports} transfers={c.transfers} />
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: c.slug, countrySlug: c.slug, regionSlug: c.region, ledgerId: c.ledgerId ?? null, sourcePage: path, volume: c.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${c.name}`} />}
           {c.faqs.length > 0 && <FaqBlock faqs={c.faqs} title={`${c.name}, answered`} />}
           <PlanBand place={c.name} compassHref={c.compass ? "#compass" : "/compass"} />
           <Doors id="also" eyebrow={`Also in ${c.regionName}`} title={`Beyond ${c.name}`} doors={doors} />

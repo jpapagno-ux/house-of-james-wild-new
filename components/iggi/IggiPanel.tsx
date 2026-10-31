@@ -17,12 +17,14 @@ import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
 // slug Iggi uses to scope its Ledger search.
 
 export type IggiContext = {
-  entityType: "country" | "region" | "stay" | "itinerary" | "property" | "advisor";
+  entityType: "country" | "region" | "stay" | "itinerary" | "property" | "advisor" | "destination" | "reserve" | "voyage" | "pathway";
   entitySlug: string;
   countrySlug?: string | null;
   ledgerId?: string | null;
   sourcePage: string; // the path, for the Core's conversation record
   volume?: string | null;
+  pathway?: string | null; // PATH-01..08 on a Pathway page: Iggi recommends only records approved on it
+  regionSlug?: string | null;
   advisor?: string | null; // the advisor on this page (DEFAULT_ADVISOR while testing)
 };
 
@@ -56,6 +58,8 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
       if (ctx.countrySlug) p.set("country", ctx.countrySlug);
       if (ctx.ledgerId) p.set("ledgerId", ctx.ledgerId);
       if (ctx.volume) p.set("volume", ctx.volume);
+      if (ctx.pathway) p.set("pathway", ctx.pathway);
+      if (ctx.regionSlug) p.set("region", ctx.regionSlug);
       p.set("advisor", ctx.advisor ?? DEFAULT_ADVISOR);
       p.set("advisorsFeed", `${location.origin}/api/v1/advisors`);
       if (token) p.set("token", token);

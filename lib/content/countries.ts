@@ -6,6 +6,7 @@
 type Month = "best" | "good" | "wet";
 export type CountryData = {
   slug: string; name: string; region: string; regionName: string;
+  ledgerId?: string | null; // DST-… from the Library (sole issuer)
   subtitle: string; leading: string; hero: { src: string; alt: string };
   story: { eyebrow: string; title: string; blocks: { h?: string; p: string }[]; image: { src: string; alt: string } }[];
   quote?: { text: string; by: string };
@@ -100,6 +101,6 @@ const HAND: CountryData[] = [
 
 // Country pages generated from the library (scripts/export-countries.py), 28 Oct 2026.
 const FROM_LIBRARY = (LIBRARY.countries as unknown as (CountryData & { atlasName?: string })[]).map(({ atlasName: _a, ...c }) => c as CountryData);
-export const COUNTRIES: CountryData[] = [...HAND, ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))];
+export const COUNTRIES: CountryData[] = [...HAND.map((h) => ({ ...h, ledgerId: h.ledgerId ?? FROM_LIBRARY.find((c) => c.slug === h.slug)?.ledgerId ?? null })), ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))];
 
 export const countryBySlug = (region: string, slug: string) => COUNTRIES.find((c) => c.region === region && c.slug === slug);

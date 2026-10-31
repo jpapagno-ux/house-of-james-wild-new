@@ -18,7 +18,7 @@ export const sampleHeadshot = (n: number, w = 96) => `${CL}/c_fill,ar_1:1,g_face
 
 export const SAMPLE_DESKS: Record<string, DeskProfile> = {
   "sofia-marchetti": {
-    adv: "ADV-2026-000033",
+    adv: "ADV-2026-000005",
     sample: true,
     since: 2016,
     joined: 2026,
@@ -47,7 +47,7 @@ export const SAMPLE_DESKS: Record<string, DeskProfile> = {
   },
 
   "marcus-adeyemi": {
-    adv: "ADV-2026-000021",
+    adv: "ADV-2026-000006",
     sample: true,
     since: 2011,
     joined: 2026,
@@ -77,7 +77,7 @@ export const SAMPLE_DESKS: Record<string, DeskProfile> = {
   },
 
   "mateo-rivas": {
-    adv: "ADV-2026-000047",
+    adv: "ADV-2026-000007",
     sample: true,
     since: 2014,
     joined: 2026,
@@ -103,7 +103,7 @@ export const SAMPLE_DESKS: Record<string, DeskProfile> = {
   },
 
   "clara-whitlock": {
-    adv: "ADV-2026-000012",
+    adv: "ADV-2026-000008",
     sample: true,
     since: 2009,
     joined: 2026,

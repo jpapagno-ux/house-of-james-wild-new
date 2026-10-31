@@ -11,8 +11,9 @@ def text(x):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", x or ""))).strip()
 
 stays, dests = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
-stays = stays.get("stays", stays) if isinstance(stays, dict) else stays
-dests = dests.get("destinations", dests) if isinstance(dests, dict) else dests
+# library-split writes {"entities": [...]}; older exports used "stays"/"destinations".
+stays = (stays.get("entities") or stays.get("stays") or []) if isinstance(stays, dict) else stays
+dests = (dests.get("entities") or dests.get("destinations") or []) if isinstance(dests, dict) else dests
 D = {d["id"]: d for d in dests}
 RELEASE = {r["slug"] for r in json.load(open(pathlib.Path(__file__).resolve().parent / "data" / "stay-release.json"))["released"]}
 OWN = ("res.cloudinary.com", "media.base44.com", "cdn.prod.website-files.com", "base44.app", "jameswildco.com")

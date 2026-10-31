@@ -49,6 +49,14 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
   const [drawn, setDrawn] = useState(false);
   const box = useRef<HTMLDivElement>(null);
 
+  // "Choose your way" tabs (VolumeTabs) filter the pins by volume: a tab sends the category to show,
+  // or "all" to show everything again.
+  useEffect(() => {
+    const on = (e: Event) => { const c = (e as CustomEvent<string>).detail; setOn(new Set(c === "all" ? [...CATEGORY_ORDER, "new"] : [c, "new"])); };
+    window.addEventListener("jw:volume", on);
+    return () => window.removeEventListener("jw:volume", on);
+  }, []);
+
   useEffect(() => {
     const el = box.current;
     if (!el) return;

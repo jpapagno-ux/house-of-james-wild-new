@@ -12,7 +12,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({ title: "James & Iggi dialogue register (preview)", description: "Every James and Iggi line the site knows, with source and approval state.", path: "/preview/pathways/dialogue", noindex: true });
 
-const STATUS: Record<DialogueLine["approval"]["status"], string> = { approved: "bg-impact-panel text-impact-copy", draft: "bg-paper-card ledger-muted", retired: "line-through ledger-muted" };
+const STATUS: Record<DialogueLine["approval"]["status"], string> = { approved: "bg-ink text-paper", draft: "bg-paper-card ledger-muted", retired: "line-through ledger-muted" };
 
 function Row({ l }: { l: DialogueLine }) {
   return (

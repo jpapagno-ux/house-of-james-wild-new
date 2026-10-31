@@ -87,6 +87,7 @@ export type DialogueAsset = {
 // Candidate = finished art in Cloudinary awaiting James's word (the wink and
 // this-way icons were promoted on 30 Oct 2026). Draft = tagged draft in Cloudinary.
 export const DIALOGUE_ASSETS: DialogueAsset[] = [
+  { id: "iggi-mark", character: "iggi", kind: "icon", name: "Iggi's mark (chameleon, compass tail)", src: "/components/iggi/IggiMark.tsx", status: "approved", note: "Chosen by James 30 Oct 2026 (Iggi Core candidate A). Stroke-only SVG, takes the page's ink through currentColor; the icon beside every Iggi bubble on the site" },
   { id: "iggi-portrait-charcoal", character: "iggi", kind: "portrait", name: "Iggi, charcoal on cream", src: "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3e26d6a56_generated_image.png", status: "approved", note: "Live on /plan/iggi since 28 Oct 2026" },
   { id: "cheetah-pencil", character: "james", kind: "sketch", name: "Cheetah, pencil", src: "/brand/sketches/cheetah-pencil.png", status: "approved", note: "Drawn by a friend of James, used with his permission (26 Oct 2026); on the verdict notes" },
   { id: "house-hare-seal", character: "house", kind: "seal", name: "James Wild & Co hare seal", src: "jwco-brand-kit/png/jwco-hare-600", status: "approved", note: "The house's rabbit: brand-kit seal (cream/forest/navy/sand/linen variants under wildco/guides/house-style/jwc-hare-seal-*)" },

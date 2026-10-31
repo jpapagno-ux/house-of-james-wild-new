@@ -6,6 +6,7 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
+import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
@@ -148,6 +149,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
+          <WhoPlans where={{ countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, volume: "safaris" }} place={r.name} />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "reserve", entitySlug: r.slug, countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, ledgerId: r.rsv, sourcePage: path, volume: "safaris" }} heading={`Ask Iggi about ${r.name}`} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           <TalkToUs name={r.name} planHref={planHref} />
@@ -158,7 +160,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
       </main>
       <ContactBar name={r.name} planHref={planHref} from={from ? `${usd(from)} pp/night` : undefined} />
       <ContactPill name={r.name} planHref={planHref} />
-      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => { const u = x.url.startsWith("/") ? absoluteUrl(x.url) : x.url; return RESERVE_PHOTO_CREDIT[r.slug] ? imageObject(u, x.alt, RESERVE_PHOTO_CREDIT[r.slug]) : u; }) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, containsPlace: r.camps.filter((c) => campHref(r, c)).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(campHref(r, c)!), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
+      <JsonLd data={graph({ "@type": ["TouristAttraction", "Place"], "@id": absoluteUrl(`${path}#reserve`), name: r.name, url: absoluteUrl(path), description: answer, image: slides.length ? slides.map((x) => { const u = x.url.startsWith("/") ? absoluteUrl(x.url) : x.url; return RESERVE_PHOTO_CREDIT[r.slug] ? imageObject(u, x.alt, RESERVE_PHOTO_CREDIT[r.slug]) : u; }) : [r.stay.hero], ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [r.name, r.area, "safari", ...suited].join(", ") } : {}), identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: r.rsv }, ...(r.stay.coords ? { geo: { "@type": "GeoCoordinates", latitude: r.stay.coords.lat, longitude: r.stay.coords.lng } } : {}), containedInPlace: { "@type": "Country", name: r.stay.country ?? "South Africa" }, publisher: { "@id": ids.house }, ...whoPlansSchema({ countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, volume: "safaris" }), containsPlace: r.camps.filter((c) => campHref(r, c)).map((c) => ({ "@type": "LodgingBusiness", name: c.name, url: absoluteUrl(campHref(r, c)!), ...(c.hero ? { image: c.hero } : {}), ...(c.fromRate ? { priceRange: `From ${usd(c.fromRate)} per person per night` } : {}) })) })} />
     </>
   );
 }

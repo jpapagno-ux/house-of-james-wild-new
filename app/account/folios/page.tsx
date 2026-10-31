@@ -7,7 +7,7 @@ export const metadata = { title: "Journeys" };
 export default async function FoliosPage() {
   const { sb, user } = await requireTraveler("/account/folios");
   const { data } = await sb.from("folios")
-    .select("id, title, destination_summary, start_date, end_date, status, owner_user_id, folio_items(count)")
+    .select("id, title, destination_summary, start_date, end_date, status, owner_user_id, ledger_id, advisor_adv, folio_items(count)")
     .order("updated_at", { ascending: false });
   const folios = data ?? [];
   return (
@@ -24,7 +24,7 @@ export default async function FoliosPage() {
             return (
               <li key={f.id}>
                 <Link href={`/account/folios/${f.id}`} className="block border ledger-rule p-5 hover:bg-paper-card h-full">
-                  <p className="ledger-eyebrow">{f.owner_user_id === user.id ? f.status : "Shared with you"}</p>
+                  <p className="ledger-eyebrow">{f.owner_user_id === user.id ? f.status : "Shared with you"}{f.ledger_id ? <span className="ledger-crimson"> · {f.ledger_id}</span> : null}</p>
                   <p className="ledger-display text-[22px] mt-1">{f.title}</p>
                   {f.destination_summary && <p className="text-[15px] mt-1">{f.destination_summary}</p>}
                   <p className="text-[13px] ledger-muted mt-2">{n} {n === 1 ? "item" : "items"}{dates ? ` · ${dates}` : ""}</p>

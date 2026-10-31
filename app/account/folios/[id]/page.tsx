@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ADVISORS } from "@/lib/content/advisors";
 import { notFound } from "next/navigation";
 import { niceDate, requireTraveler } from "@/lib/booking-live/account";
 import { FLAGS } from "@/lib/booking-live/flags";
@@ -19,7 +20,7 @@ export default async function FolioPage({ params }: { params: Promise<{ id: stri
   const { id } = await params;
   if (!isUuid(id)) notFound();
   const { sb, user } = await requireTraveler(`/account/folios/${id}`);
-  const { data: folio } = await sb.from("folios").select("id, title, destination_summary, start_date, end_date, status, owner_user_id").eq("id", id).maybeSingle();
+  const { data: folio } = await sb.from("folios").select("id, title, destination_summary, start_date, end_date, status, owner_user_id, ledger_id, advisor_adv, advisor_slug").eq("id", id).maybeSingle();
   if (!folio) notFound();
   const owner = folio.owner_user_id === user.id;
   const [{ data: items }, { data: members }, { data: favs }] = await Promise.all([
@@ -37,6 +38,12 @@ export default async function FolioPage({ params }: { params: Promise<{ id: stri
         <p className="ledger-eyebrow"><Link href="/account/folios" className="hover:opacity-60">Journeys</Link> · {owner ? folio.status : `shared with you · ${role}`}</p>
         <h1 className="ledger-display text-[2rem] md:text-[2.6rem] mt-2 leading-[1.1]">{folio.title}</h1>
         {folio.destination_summary && <p className="text-[17px] mt-2">{folio.destination_summary}</p>}
+        {(folio.ledger_id || folio.advisor_adv) && (
+          <p className="mt-3 text-[14px] ledger-muted">
+            {folio.ledger_id && <span className="font-mono text-[12px] ledger-crimson tabular-nums mr-3">{folio.ledger_id}</span>}
+            {folio.advisor_adv && (() => { const a = ADVISORS.find((x) => x.slug === folio.advisor_slug || x.desk?.adv === folio.advisor_adv); return a ? <>Open with <Link href={a.profileHref ?? "/about/team#advisors"} className="underline underline-offset-4">{a.name}</Link> ({folio.advisor_adv}) · <Link href={`/plan?advisor=${a.slug}${folio.ledger_id ? `&folio=${folio.ledger_id}` : ""}`} className="underline underline-offset-4">Plan with {a.firstName}</Link></> : <>Open with {folio.advisor_adv}</>; })()}
+          </p>
+        )}
         {dates && <p className="text-[14px] ledger-muted mt-1">{dates}</p>}
         <p className="text-[13px] ledger-muted mt-3 max-w-xl">A journey is a plan, not a booking. Nothing here holds a room or charges a card.</p>
       </header>

@@ -163,7 +163,7 @@ function toLocal(href: string): string {
 /** With traveller accounts on: the same Folio in the account (title, the stays as items, the itinerary as a note). Best effort, signed-in only. */
 async function saveToAccount(f: Folio): Promise<void> {
   try {
-    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: `${f.fol} · ${f.title}`.slice(0, 120), destinationSummary: [f.advisor?.adv ? `Open with ${f.advisor.name} (${f.advisor.adv})` : null, f.summary].filter(Boolean).join(" — ").slice(0, 400) }) });
+    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: f.title.slice(0, 120), destinationSummary: (f.summary ?? "").slice(0, 400) || undefined, ledgerId: f.fol, advisorAdv: f.advisor?.adv ?? undefined, advisorSlug: f.advisor?.slug ?? undefined, source: "iggi" }) });
     if (!r.ok) return; // not signed in, or accounts off: the device shelf still has it
     const { data } = (await r.json()) as { data?: { id?: string } };
     if (!data?.id) return;

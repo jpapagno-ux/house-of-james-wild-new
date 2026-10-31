@@ -43,3 +43,16 @@ section, card, pin or stamp. Region → pathway chips live in `lib/content/regio
 
 The header tones introduced on 30 Oct 2026 (#8B2525 stays, #A5692A, #405A45, #1E5F73, #94512F,
 #5B3A5E) are retired as volume colours. Do not reintroduce them for volumes.
+
+# Media: one Cloudinary library for every site
+
+Locked 31 Oct 2026. Every site (James Wild & Co, Polar Crossings, Gatherings, Expedition Lending,
+ARC | TERRA XY, Island Jim) draws on one Cloudinary library (cloud `jhlnq5h5`).
+- **Rights live on the asset**, in structured metadata: `rights_status` (approved / hold /
+  to_verify), `credit`, `licence_source` (owner, partner, getty, shutterstock, ai_generated),
+  `allowed_sites`, `ledger_id`. A page shows an image only when it is approved for that site.
+- **Folders follow the public_id path** (lowercase, hyphens, no spaces). Never upload a second copy
+  for another site: reuse the one asset and add the site to `allowed_sites`.
+- **Alt text is written per page**, not copied across sites; captions credit the owner.
+- `scripts/cloudinary/housekeeping.mjs` (GitHub Action "Cloudinary housekeeping") files loose assets
+  and fills the rights fields from what each asset already says; dry run first.

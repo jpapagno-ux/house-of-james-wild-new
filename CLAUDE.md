@@ -8,4 +8,6 @@
 - House Crimson is for the house: seal, logo, Ledger IDs, "Plan with James". Never a volume colour.
 - Wild Pathways are small theme chips linking to the pathway; they never replace a volume colour.
 - Region pathway chips (approved 31 Oct 2026) live in `lib/content/region-pathways.ts`.
+- Media: one Cloudinary library for every site; rights in structured metadata, one copy per
+  image, folders = public_id path (see `docs/brand-colours.md`, "Media").
 - Full rule: `docs/brand-colours.md`.

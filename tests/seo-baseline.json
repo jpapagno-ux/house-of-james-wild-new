@@ -32,7 +32,14 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "noindex, nofollow",
-  "title": "Anthony Papagno, Travel Advisor at James Wild &amp; Co"
+  "title": "Anthony Papagno, Travel Advisor \u00b7 Nature &amp; Wildlife at James Wild &amp; Co"
+ },
+ "/advisors/clara-whitlock": {
+  "canonical": "https://www.jameswildco.com/advisors/clara-whitlock",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Clara Whitlock, Gatherings &amp; wellness advisor \u00b7 stand-in at James Wild &amp; Co"
  },
  "/advisors/kristina-larson": {
   "canonical": "https://www.jameswildco.com/advisors/kristina-larson",
@@ -40,6 +47,27 @@
   "jsonld": 6,
   "robots": "noindex, nofollow",
   "title": "Kristina Larson, Travel Advisor at James Wild &amp; Co"
+ },
+ "/advisors/marcus-adeyemi": {
+  "canonical": "https://www.jameswildco.com/advisors/marcus-adeyemi",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Marcus Adeyemi, Africa advisor \u00b7 stand-in at James Wild &amp; Co"
+ },
+ "/advisors/mateo-rivas": {
+  "canonical": "https://www.jameswildco.com/advisors/mateo-rivas",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Mateo Rivas, Voyages advisor \u00b7 stand-in at James Wild &amp; Co"
+ },
+ "/advisors/sofia-marchetti": {
+  "canonical": "https://www.jameswildco.com/advisors/sofia-marchetti",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Sofia Marchetti, Independent travel advisor \u00b7 stand-in at James Wild &amp; Co"
  },
  "/collections/cayuga-collection": {
   "canonical": "https://www.jameswildco.com/collections/cayuga-collection",
@@ -72,9 +100,9 @@
  "/destinations/africa/botswana": {
   "canonical": "https://www.jameswildco.com/destinations/africa/botswana",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
-  "title": "Botswana: 46 Vetted Stays, Routes and When to Go"
+  "title": "Botswana: 56 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/kenya": {
   "canonical": "https://www.jameswildco.com/destinations/africa/kenya",
@@ -95,26 +123,26 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Namibia: 10 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Namibia: 12 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/africa/rwanda": {
   "canonical": "https://www.jameswildco.com/destinations/africa/rwanda",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Rwanda: 5 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Rwanda: 7 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/africa/seychelles": {
   "canonical": "https://www.jameswildco.com/destinations/africa/seychelles",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Seychelles: 1 Vetted Stays, Routes and When to Go"
+  "title": "Seychelles: 2 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/south-africa": {
   "canonical": "https://www.jameswildco.com/destinations/africa/south-africa",
   "h1": 1,
-  "jsonld": 10,
+  "jsonld": 8,
   "robots": "index, follow",
   "title": "South Africa: 45 Vetted Stays, Routes and When to Go"
  },
@@ -123,21 +151,21 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Tanzania: 30 Vetted Stays, Routes and When to Go"
+  "title": "Tanzania: 32 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/zambia": {
   "canonical": "https://www.jameswildco.com/destinations/africa/zambia",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Zambia: 14 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Zambia: 21 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/africa/zimbabwe": {
   "canonical": "https://www.jameswildco.com/destinations/africa/zimbabwe",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Zimbabwe: 5 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Zimbabwe: 7 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/asia": {
   "canonical": "https://www.jameswildco.com/destinations/asia",
@@ -228,7 +256,7 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Mexico: 14 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Mexico: 18 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/central-america": {
   "canonical": "https://www.jameswildco.com/destinations/central-america",
@@ -247,7 +275,7 @@
  "/destinations/central-america/costa-rica": {
   "canonical": "https://www.jameswildco.com/destinations/central-america/costa-rica",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Costa Rica: 12 Vetted Stays, Routes and When to Go"
  },
@@ -333,7 +361,7 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Fiji: 1 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Fiji: 4 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/oceania/new-zealand": {
   "canonical": "https://www.jameswildco.com/destinations/oceania/new-zealand",
@@ -352,7 +380,7 @@
  "/destinations/polar-antarctica": {
   "canonical": "https://www.jameswildco.com/destinations/polar-antarctica",
   "h1": 1,
-  "jsonld": 6,
+  "jsonld": 8,
   "robots": "index, follow",
   "title": "Polar: Antarctica: Vetted Stays, Countries and Routes"
  },
@@ -389,7 +417,7 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Bolivia: 3 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Bolivia: 2 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/south-america/brazil": {
   "canonical": "https://www.jameswildco.com/destinations/south-america/brazil",
@@ -403,7 +431,7 @@
   "h1": 1,
   "jsonld": 8,
   "robots": "index, follow",
-  "title": "Chile &amp; Easter Island: 9 Vetted Stays, Routes and When to Go"
+  "title": "Chile &amp; Easter Island: 10 Vetted Stays, Routes and When to Go"
  },
  "/destinations/south-america/ecuador-galapagos": {
   "canonical": "https://www.jameswildco.com/destinations/south-america/ecuador-galapagos",
@@ -461,12 +489,19 @@
   "robots": "index, follow",
   "title": "Montana: 3 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
+ "/destinations/usa-canada/new-mexico": {
+  "canonical": "https://www.jameswildco.com/destinations/usa-canada/new-mexico",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "New Mexico: 4 Vetted Stays, Routes and When to Go"
+ },
  "/destinations/usa-canada/utah": {
   "canonical": "https://www.jameswildco.com/destinations/usa-canada/utah",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Utah: 5 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Utah: 6 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/usa-canada/wyoming": {
   "canonical": "https://www.jameswildco.com/destinations/usa-canada/wyoming",
@@ -475,12 +510,40 @@
   "robots": "index, follow",
   "title": "Wyoming: 1 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
+ "/europe": {
+  "canonical": "https://www.jameswildco.com/europe",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Other Europe: The Valleys, Islands and River Towns, Vetted"
+ },
+ "/field-guides": {
+  "canonical": "https://www.jameswildco.com/field-guides",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Free Travel Field Guides: Costa Rica, Gal\u00e1pagos, Indonesia and More"
+ },
+ "/folio": {
+  "canonical": "https://www.jameswildco.com/folio",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "My Folio | James Wild &amp; Co"
+ },
  "/for-advisors": {
   "canonical": "https://www.jameswildco.com/for-advisors",
   "h1": 1,
   "jsonld": 8,
   "robots": "index, follow",
   "title": "Become a Travel Advisor With James Wild &amp; Co: Training and Support"
+ },
+ "/for-advisors/apply": {
+  "canonical": "https://www.jameswildco.com/for-advisors/apply",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "index, follow",
+  "title": "Apply to Carry the Ledger: Join James Wild &amp; Co as an Advisor"
  },
  "/gatherings": {
   "canonical": "https://www.jameswildco.com/gatherings",
@@ -545,6 +608,20 @@
   "robots": "index, follow",
   "title": "Overland Routes Designed by James: Costa Rica, Botswana, South Africa"
  },
+ "/overland/botswana": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "index, follow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/overland/costa-rica": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "index, follow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
  "/overland/costa-rica/the-original-costa-route-10-days": {
   "canonical": "https://www.jameswildco.com/overland/costa-rica/the-original-costa-route-10-days",
   "h1": 1,
@@ -573,32 +650,39 @@
   "robots": "index, follow",
   "title": "12-Day Costa Rica Itinerary: Two Oceans, One Volcano"
  },
+ "/overland/south-africa": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "index, follow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
  "/overland/south-africa/leopards-through-the-lens": {
   "canonical": "https://www.jameswildco.com/overland/south-africa/leopards-through-the-lens",
   "h1": 1,
   "jsonld": 8,
-  "robots": "noindex, nofollow",
+  "robots": "index, follow",
   "title": "Londolozi Photographic Safari: Leopards Through the Lens"
  },
  "/overland/south-africa/the-sand-river-by-road": {
   "canonical": "https://www.jameswildco.com/overland/south-africa/the-sand-river-by-road",
   "h1": 1,
   "jsonld": 8,
-  "robots": "noindex, nofollow",
+  "robots": "index, follow",
   "title": "9-Day South Africa Itinerary: Londolozi, Cape Town and Franschhoek"
  },
  "/overland/south-africa/three-generations-at-pioneer": {
   "canonical": "https://www.jameswildco.com/overland/south-africa/three-generations-at-pioneer",
   "h1": 1,
   "jsonld": 8,
-  "robots": "noindex, nofollow",
+  "robots": "index, follow",
   "title": "Multigenerational Safari at Londolozi Pioneer Camp: Three Generations at Pioneer"
  },
  "/overland/south-africa/track-your-life-with-boyd-varty": {
   "canonical": "https://www.jameswildco.com/overland/south-africa/track-your-life-with-boyd-varty",
   "h1": 1,
   "jsonld": 8,
-  "robots": "noindex, nofollow",
+  "robots": "index, follow",
   "title": "Boyd Varty Retreat at Londolozi: Track Your Life"
  },
  "/partners": {
@@ -706,6 +790,13 @@
   "robots": "noindex, nofollow",
   "title": "D\u00e1 Licen\u00e7a, Estremoz, Alentejo (preview) | James Wild &amp; Co"
  },
+ "/preview/footer-tones": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 2,
+  "robots": "noindex, nofollow",
+  "title": "Footer tones | James Wild &amp; Co"
+ },
  "/preview/gatherings/morukuru-farm-house": {
   "canonical": "https://www.jameswildco.com/preview/gatherings/morukuru-farm-house",
   "h1": 1,
@@ -776,6 +867,13 @@
   "robots": "noindex, nofollow",
   "title": "Into the Green: Rainforest and jungle (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/journeys": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/journeys",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Journeys on the pathways (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/ledger": {
   "canonical": "https://www.jameswildco.com/preview/pathways/ledger",
   "h1": 1,
@@ -825,6 +923,20 @@
   "robots": "noindex, nofollow",
   "title": "Angama Safari Camp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/ariel-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ariel-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ariel House on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/atzaro-okavango-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/atzaro-okavango-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Atzar\u00f3 Okavango on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/baymanhi-exuma": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/baymanhi-exuma",
   "h1": 1,
@@ -846,12 +958,40 @@
   "robots": "noindex, nofollow",
   "title": "Silky Oaks Lodge on Into the Green (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/breac-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/breac-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Breac.House on Between Tides (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/cape-cadogan-boutique-hotel": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/cape-cadogan-boutique-hotel",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Cape Cadogan Boutique Hotel on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/castle-leslie": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/castle-leslie",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Castle Leslie Estate on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/chisa-busanga-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chisa-busanga-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chisa Busanga Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/corks-vienna-woods": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/corks-vienna-woods",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Cork\u2019s Vienna Woods on Rooted in Place (preview)"
  },
  "/preview/pathways/stay/cottars-1920-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/cottars-1920-camp",
@@ -874,12 +1014,26 @@
   "robots": "noindex, nofollow",
   "title": "Ellerman House Cape Town on Rooted in Place (preview)"
  },
+ "/preview/pathways/stay/hayfield-manor": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/hayfield-manor",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Hayfield Manor on Rooted in Place (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/hemingways-nairobi": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/hemingways-nairobi",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Hemingways Nairobi on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ila-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ila-safari-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ila Safari Lodge on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/jacis-private-lodge": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/jacis-private-lodge",
@@ -909,12 +1063,54 @@
   "robots": "noindex, nofollow",
   "title": "Kwando Lebala Camp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/lalibela-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lalibela-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lalibela Reserve on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/leeu-estates": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/leeu-estates",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Leeu Estates on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/linyanti-ebony-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/linyanti-ebony-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Linyanti Ebony on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/linyanti-expedition-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/linyanti-expedition-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Linyanti Expeditions on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/lion-sands": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lion-sands",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lion Sands Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/londolozi-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/londolozi-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Londolozi Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/madikwe": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/madikwe",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Madikwe Game Reserve on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/monwana-thornybush": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/monwana-thornybush",
@@ -937,6 +1133,13 @@
   "robots": "noindex, nofollow",
   "title": "Ngare Camp Serian on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/no-1-pery-square-limerick": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/no-1-pery-square-limerick",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "No.1 Pery Square Limerick on Rooted in Place (preview)"
+ },
  "/preview/pathways/stay/pearl-resort-vahine-private-island": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-vahine-private-island",
   "h1": 1,
@@ -944,12 +1147,47 @@
   "robots": "noindex, nofollow",
   "title": "Vahine Private Island on Between Tides (preview)"
  },
+ "/preview/pathways/stay/potato-bush-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/potato-bush-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Potato Bush Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sans-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sans-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "San Camp on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/sausage-tree-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sausage-tree-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sausage Tree Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/serengeti-lamai-camp-by-serian": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/serengeti-lamai-camp-by-serian",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Serengeti Lamai Camp By Serian on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/shawa-luangwa-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/shawa-luangwa-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Shawa Luangwa Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sindabezi-island-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sindabezi-island-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sindabezi Island Camp on Off the Map (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/singita-boulders": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-boulders",
@@ -979,6 +1217,13 @@
   "robots": "noindex, nofollow",
   "title": "Singita Sasakwa Lodge on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/skybeds-khwai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/skybeds-khwai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Skybeds on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/tengile-mala-mala-kirkmans-kamp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-mala-mala-kirkmans-kamp",
   "h1": 1,
@@ -986,12 +1231,26 @@
   "robots": "noindex, nofollow",
   "title": "Kirkman&#x27;s Kamp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/tongabezi": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tongabezi",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tongabezi on Rooted in Place (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/tswalu-reserve": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tswalu-reserve",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Tswalu Reserve Kalahari on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/tuludi-khwai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tuludi-khwai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tuludi on Where the Wild Lives (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/wilderness-dumatau": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-dumatau",
@@ -1084,6 +1343,13 @@
   "robots": "noindex, nofollow",
   "title": "Aliikai: 10 Day Raja Ampat North Voyage (preview)"
  },
+ "/preview/wordmark": {
+  "canonical": null,
+  "h1": 1,
+  "jsonld": 2,
+  "robots": "noindex, nofollow",
+  "title": "Wordmark | James Wild &amp; Co"
+ },
  "/safaris": {
   "canonical": "https://www.jameswildco.com/safaris",
   "h1": 1,
@@ -1091,180 +1357,194 @@
   "robots": "index, follow",
   "title": "Vetted African Safaris: Reserves and Camps | James Wild &amp; Co"
  },
+ "/safaris/jao-reserve": {
+  "canonical": "https://www.jameswildco.com/safaris/jao-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Jao Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
+ },
  "/safaris/lalibela-reserve": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lalibela Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/inzolo-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/inzolo-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inzolo Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/kichaka-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/kichaka-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kichaka Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/lentaba-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/lentaba-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lentaba Lodge, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/marks-camp": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/marks-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mark&#x27;s Camp, Lalibela Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/mills-manor-residence": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/mills-manor-residence",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mills Manor Residence, Lalibela Reserve | James Wild &amp; Co"
  },
  "/safaris/lalibela-reserve/tree-tops-safari-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lalibela-reserve/tree-tops-safari-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tree Tops Safari Lodge, Lalibela Reserve | James Wild &amp; Co"
  },
  "/safaris/lion-sands": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lion Sands Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
  },
  "/safaris/lion-sands/fish-eagle-residence": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/fish-eagle-residence",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Fish Eagle Residence, Lion Sands Reserve | James Wild &amp; Co"
  },
  "/safaris/lion-sands/hinkwenu-residence": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/hinkwenu-residence",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Hinkwenu Residence, Lion Sands Reserve | James Wild &amp; Co"
  },
  "/safaris/lion-sands/ivory-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/ivory-lodge",
   "h1": 1,
-  "jsonld": 10,
+  "jsonld": 8,
   "robots": "index, follow",
   "title": "Ivory Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lion-sands/narina-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/narina-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Narina Lodge, Lion Sands Reserve | James Wild &amp; Co"
  },
  "/safaris/lion-sands/river-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/river-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "River Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/lion-sands/tinga-lodge": {
   "canonical": "https://www.jameswildco.com/safaris/lion-sands/tinga-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tinga Lodge, Lion Sands Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Londolozi Reserve: Lodges, Camps &amp; Residences | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve/founders-camp": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/founders-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Founders Camp, Londolozi Reserve | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve/pioneer-camp": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/pioneer-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pioneer Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve/private-granite-suites": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/private-granite-suites",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Private Granite Suites, Londolozi Reserve | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve/tree-camp": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/tree-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tree Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/londolozi-reserve/varty-camp": {
   "canonical": "https://www.jameswildco.com/safaris/londolozi-reserve/varty-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Varty Camp, Londolozi Reserve: Suites &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/madikwe": {
   "canonical": "https://www.jameswildco.com/safaris/madikwe",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Madikwe Game Reserve: Camps &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/tswalu-reserve": {
   "canonical": "https://www.jameswildco.com/safaris/tswalu-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tswalu Kalahari Reserve: Camps &amp; Rates | James Wild &amp; Co"
  },
  "/safaris/tswalu-reserve/loapi": {
   "canonical": "https://www.jameswildco.com/safaris/tswalu-reserve/loapi",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Loapi Tented Suites, Tswalu Kalahari Reserve | James Wild &amp; Co"
  },
  "/safaris/tswalu-reserve/motse": {
   "canonical": "https://www.jameswildco.com/safaris/tswalu-reserve/motse",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Motse, Tswalu Kalahari Reserve | James Wild &amp; Co"
  },
  "/safaris/tswalu-reserve/tarkuni": {
   "canonical": "https://www.jameswildco.com/safaris/tswalu-reserve/tarkuni",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tarkuni Homestead, Tswalu Kalahari Reserve | James Wild &amp; Co"
+ },
+ "/safaris/wild-co-safaris": {
+  "canonical": "https://www.jameswildco.com/safaris/wild-co-safaris",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "noindex, nofollow",
+  "title": "Wild &amp; Co Safaris: the House&#x27;s Safari Desk | James Wild &amp; Co"
  },
  "/stays": {
   "canonical": "https://www.jameswildco.com/stays",
@@ -1283,119 +1563,126 @@
  "/stays/aliikai-voyage": {
   "canonical": "https://www.jameswildco.com/stays/aliikai-voyage",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Aliikai Voyage, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/alila-ventana-big-sur": {
   "canonical": "https://www.jameswildco.com/stays/alila-ventana-big-sur",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Alila Ventana Big Sur, California: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/alya-catamaran-galapagos": {
   "canonical": "https://www.jameswildco.com/stays/alya-catamaran-galapagos",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Alya Gal\u00e1pagos Catamaran, Ecuador &amp; Galapagos | James Wild &amp; Co"
+ },
+ "/stays/amandari": {
+  "canonical": "https://www.jameswildco.com/stays/amandari",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "index, follow",
+  "title": "Amandari, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/amazon-field-station-byinkaterra": {
   "canonical": "https://www.jameswildco.com/stays/amazon-field-station-byinkaterra",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Amazon Field Station by Inkaterra, Peru | James Wild &amp; Co"
  },
  "/stays/ambiente-tm-sedona": {
   "canonical": "https://www.jameswildco.com/stays/ambiente-tm-sedona",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Room &amp; Wild Ambiente Sedona Landscape Hotel | James Wild &amp; Co"
  },
  "/stays/amor-arenal": {
   "canonical": "https://www.jameswildco.com/stays/amor-arenal",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Amor Arenal, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/anantara-bophut-koh-samui-resort": {
   "canonical": "https://www.jameswildco.com/stays/anantara-bophut-koh-samui-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Bophut Koh Samui Resort, Thailand | James Wild &amp; Co"
  },
  "/stays/anantara-chiang-mai-resort": {
   "canonical": "https://www.jameswildco.com/stays/anantara-chiang-mai-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Chiang Mai Resort, Thailand | James Wild &amp; Co"
  },
  "/stays/anantara-golden-triangle-chiang-rai": {
   "canonical": "https://www.jameswildco.com/stays/anantara-golden-triangle-chiang-rai",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Golden Triangle Elephant Camp &amp; Resort | James Wild &amp; Co"
  },
  "/stays/anantara-hua-hin": {
   "canonical": "https://www.jameswildco.com/stays/anantara-hua-hin",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Hua Hin Resort, Thailand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/anantara-mui-ne": {
   "canonical": "https://www.jameswildco.com/stays/anantara-mui-ne",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Mui Ne, Vietnam: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/anantara-ubud-bali": {
   "canonical": "https://www.jameswildco.com/stays/anantara-ubud-bali",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Ubud Bali, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/angama-amboseli": {
   "canonical": "https://www.jameswildco.com/stays/angama-amboseli",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Angama Amboseli, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/angama-mara": {
   "canonical": "https://www.jameswildco.com/stays/angama-mara",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Angama Mara, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/angama-safari-camp": {
   "canonical": "https://www.jameswildco.com/stays/angama-safari-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Angama Safari Camp, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/arenal-springs-camp-by-nayara": {
   "canonical": "https://www.jameswildco.com/stays/arenal-springs-camp-by-nayara",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Arenal Springs Camp by Nayara, Costa Rica | James Wild &amp; Co"
  },
  "/stays/arenas-del-mar-resort": {
   "canonical": "https://www.jameswildco.com/stays/arenas-del-mar-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Arenas del Mar Resort, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
@@ -1409,63 +1696,77 @@
  "/stays/arijiju-laikipia": {
   "canonical": "https://www.jameswildco.com/stays/arijiju-laikipia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Arijiju Private, Kenya: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/armendaris-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/armendaris-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Armendaris, a Ted Turner Reserve, New Mexico | James Wild &amp; Co"
  },
  "/stays/asilia-dunia-camp": {
   "canonical": "https://www.jameswildco.com/stays/asilia-dunia-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Dunia Camp by Asilia, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/asilia-naboisho-camp-by-asilia": {
   "canonical": "https://www.jameswildco.com/stays/asilia-naboisho-camp-by-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Naboisho Camp by Asilia, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/asilia-olivers-camp": {
   "canonical": "https://www.jameswildco.com/stays/asilia-olivers-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Oliver\u2019s Camp by Asilia, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/asilia-rekero-camp": {
   "canonical": "https://www.jameswildco.com/stays/asilia-rekero-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Rekero Camp by Asilia, Kenya: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/atzaro-okavango-camp": {
+  "canonical": "https://www.jameswildco.com/stays/atzaro-okavango-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Atzar\u00f3 Okavango, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/awasi-atacama": {
   "canonical": "https://www.jameswildco.com/stays/awasi-atacama",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Awasi Atacama, Bolivia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/awasi-mendoza": {
   "canonical": "https://www.jameswildco.com/stays/awasi-mendoza",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mendoza, Argentina: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/awasi-patagonia": {
   "canonical": "https://www.jameswildco.com/stays/awasi-patagonia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Patagonia, Chile &amp; Easter Island: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/awasi-santa-catarina": {
   "canonical": "https://www.jameswildco.com/stays/awasi-santa-catarina",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Santa Catarina, Brazil: Vetted Stay | James Wild &amp; Co"
  },
@@ -1479,28 +1780,28 @@
  "/stays/baines-lodge": {
   "canonical": "https://www.jameswildco.com/stays/baines-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Baine&#x27;s Lodge, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/bateleur-camp-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/bateleur-camp-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Bateleur Camp By &amp; Beyond, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/baymanhi-exuma": {
   "canonical": "https://www.jameswildco.com/stays/baymanhi-exuma",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Baymahni Island Escape, Bahamas: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/be-tulum": {
   "canonical": "https://www.jameswildco.com/stays/be-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Be Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
@@ -1514,49 +1815,49 @@
  "/stays/beckon-huka-lodge": {
   "canonical": "https://www.jameswildco.com/stays/beckon-huka-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Huka Lodge, New Zealand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beckon-longitude-131": {
   "canonical": "https://www.jameswildco.com/stays/beckon-longitude-131",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Longitude 131\u00b0, Australia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beckon-silky-oaks-lodge": {
   "canonical": "https://www.jameswildco.com/stays/beckon-silky-oaks-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Silky Oaks Lodge, Australia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beckon-southern-ocean-lodge": {
   "canonical": "https://www.jameswildco.com/stays/beckon-southern-ocean-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Southern Ocean Lodge, Australia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beckon-the-louise": {
   "canonical": "https://www.jameswildco.com/stays/beckon-the-louise",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Louise, Australia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beckon-tierra-atacama": {
   "canonical": "https://www.jameswildco.com/stays/beckon-tierra-atacama",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tierra Atacama, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/benguerra-island-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/benguerra-island-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Benguerra Island by &amp; Beyond, Tanzania | James Wild &amp; Co"
  },
@@ -1570,21 +1871,21 @@
  "/stays/beyond-grumeti-safari-camp": {
   "canonical": "https://www.jameswildco.com/stays/beyond-grumeti-safari-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp;Beyond Grumeti Serengeti River Lodge, Tanzania | James Wild &amp; Co"
  },
  "/stays/beyond-kichwa-camp": {
   "canonical": "https://www.jameswildco.com/stays/beyond-kichwa-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp;Beyond Kichwa Tembo Tented Camp, Kenya | James Wild &amp; Co"
  },
  "/stays/beyond-kleins-camp": {
   "canonical": "https://www.jameswildco.com/stays/beyond-kleins-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp;Beyond Klein\u2019s Camp, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
@@ -1598,21 +1899,21 @@
  "/stays/beyond-mnemba-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/beyond-mnemba-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mnemba Island by &amp;Beyond, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/beyond-sussuvlei-desert-lodge": {
   "canonical": "https://www.jameswildco.com/stays/beyond-sussuvlei-desert-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp; Beyond Sossusvlei Desert Lodge, Namibia | James Wild &amp; Co"
  },
  "/stays/beyond-vira-vira-lodge": {
   "canonical": "https://www.jameswildco.com/stays/beyond-vira-vira-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp; Beyond Vira Vira, Chile &amp; Easter Island | James Wild &amp; Co"
  },
@@ -1630,10 +1931,17 @@
   "robots": "index, follow",
   "title": "Blue Reef, Belize: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/blue-safari-seychelles": {
+  "canonical": "https://www.jameswildco.com/stays/blue-safari-seychelles",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Blue Safari Seychelles, Seychelles: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/borana": {
   "canonical": "https://www.jameswildco.com/stays/borana",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Borana Lodge Laikipia Kenya, Kenya: Vetted Stay | James Wild &amp; Co"
  },
@@ -1661,7 +1969,7 @@
  "/stays/cap-karoso": {
   "canonical": "https://www.jameswildco.com/stays/cap-karoso",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Cap Karoso, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
@@ -1675,42 +1983,49 @@
  "/stays/capella-ubud": {
   "canonical": "https://www.jameswildco.com/stays/capella-ubud",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Capella Ubud Bali, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/cardamom-tented-camp": {
   "canonical": "https://www.jameswildco.com/stays/cardamom-tented-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Cardamom Tented Camp, Cambodia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/casa-maya-kaan": {
+  "canonical": "https://www.jameswildco.com/stays/casa-maya-kaan",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Casa Maya Ka&#x27;an, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/castle-leslie": {
   "canonical": "https://www.jameswildco.com/stays/castle-leslie",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Castle Leslie Estate, Ireland: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/celestia-yacht": {
   "canonical": "https://www.jameswildco.com/stays/celestia-yacht",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Celestia Yacht Where Sea Meets Soul, Indonesia | James Wild &amp; Co"
  },
  "/stays/chable-yucatan": {
   "canonical": "https://www.jameswildco.com/stays/chable-yucatan",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chabl\u00e9 Yucat\u00e1n, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/chamilandu-lodge": {
   "canonical": "https://www.jameswildco.com/stays/chamilandu-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chamilandu Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
@@ -1724,42 +2039,49 @@
  "/stays/chem-chem": {
   "canonical": "https://www.jameswildco.com/stays/chem-chem",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chem Chem Safari Lodge, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/chiawa-safaris": {
   "canonical": "https://www.jameswildco.com/stays/chiawa-safaris",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chiawa Safaris, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/chindeni-lodge": {
   "canonical": "https://www.jameswildco.com/stays/chindeni-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chindeni Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/chisa-busanga-camp": {
+  "canonical": "https://www.jameswildco.com/stays/chisa-busanga-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Chisa Busanga Camp, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/chobe-under-canvas-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/chobe-under-canvas-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "&amp; Beyond Chobe Under Canvas, Botswana | James Wild &amp; Co"
  },
  "/stays/chumbe-island-zanzibar": {
   "canonical": "https://www.jameswildco.com/stays/chumbe-island-zanzibar",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Chumbe Isalnd Escape Zanzibar, Tanzania | James Wild &amp; Co"
  },
  "/stays/clayoquot-wilderness-resort": {
   "canonical": "https://www.jameswildco.com/stays/clayoquot-wilderness-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Clayoquot Wilderness Lodge, Canada: Vetted Stay | James Wild &amp; Co"
  },
@@ -1773,14 +2095,14 @@
  "/stays/como-shambhala-estate": {
   "canonical": "https://www.jameswildco.com/stays/como-shambhala-estate",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Como Shambhala Estate, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/conrad-tulum-riviera-maya": {
   "canonical": "https://www.jameswildco.com/stays/conrad-tulum-riviera-maya",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Conrad Tulum Riviera Maya, Mexico: Vetted Stay | James Wild &amp; Co"
  },
@@ -1794,42 +2116,42 @@
  "/stays/corks-vienna-woods": {
   "canonical": "https://www.jameswildco.com/stays/corks-vienna-woods",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Cork\u2019s Vienna Woods, Ireland: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/cottars-1920-camp": {
   "canonical": "https://www.jameswildco.com/stays/cottars-1920-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Cottar\u2019s 1920\u2019s Safari Camp, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/da-licenca": {
   "canonical": "https://www.jameswildco.com/stays/da-licenca",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "D\u00e1 Licen\u00e7a, Portugal + Azores: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/daunara-safari-camp": {
   "canonical": "https://www.jameswildco.com/stays/daunara-safari-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Daunara Safari Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/dukes-camp-okavango": {
   "canonical": "https://www.jameswildco.com/stays/dukes-camp-okavango",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Duke&#x27;s Camp Okavango, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/dulini-anabezi-lodge": {
   "canonical": "https://www.jameswildco.com/stays/dulini-anabezi-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Dulini Anabezi Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
@@ -1864,42 +2186,42 @@
  "/stays/ecocamp-patagonia": {
   "canonical": "https://www.jameswildco.com/stays/ecocamp-patagonia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "EcoCamp Patagonia, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/ecoventura-evolve-yacht": {
   "canonical": "https://www.jameswildco.com/stays/ecoventura-evolve-yacht",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Eco Evolve Gal\u00e1pagos Yachting | James Wild &amp; Co"
  },
  "/stays/ecoventura-origin-yacht": {
   "canonical": "https://www.jameswildco.com/stays/ecoventura-origin-yacht",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Eco Origin, Ecuador &amp; Galapagos: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/ecoventura-theory-yacht": {
   "canonical": "https://www.jameswildco.com/stays/ecoventura-theory-yacht",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Eco Theory Yacht, Ecuador &amp; Galapagos | James Wild &amp; Co"
  },
  "/stays/el-mapi-byinkaterra": {
   "canonical": "https://www.jameswildco.com/stays/el-mapi-byinkaterra",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "El MaPi byInkaterra, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/elephann-pan-khwai": {
   "canonical": "https://www.jameswildco.com/stays/elephann-pan-khwai",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Elephant Pan Khwai, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -1913,112 +2235,126 @@
  "/stays/elsas-kopje": {
   "canonical": "https://www.jameswildco.com/stays/elsas-kopje",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Elsas Kopje Meru Kenya, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/encounter-mara-camp-by-asilia": {
   "canonical": "https://www.jameswildco.com/stays/encounter-mara-camp-by-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Encounter Mara Camp by Asilia, Kenya | James Wild &amp; Co"
+ },
+ "/stays/entamanu-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/entamanu-lodge",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Entamanu Ngorongoro, Tanzania: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/entamanu-private-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/entamanu-private-lodge",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Entamanu Private, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/entara-esirai-camp": {
   "canonical": "https://www.jameswildco.com/stays/entara-esirai-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Esirai Mobile Migration Camp, Tanzania | James Wild &amp; Co"
  },
  "/stays/etosha-mountain-lodge": {
   "canonical": "https://www.jameswildco.com/stays/etosha-mountain-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Etosha Mountain Lodge, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/explora-at-atacama": {
   "canonical": "https://www.jameswildco.com/stays/explora-at-atacama",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Explora Atacama, Bolivia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/explora-el-calafate": {
   "canonical": "https://www.jameswildco.com/stays/explora-el-calafate",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Explora El Calafate, Argentina: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/explora-el-chalten": {
   "canonical": "https://www.jameswildco.com/stays/explora-el-chalten",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "El Chalt\u00e9n, Argentina: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/explora-rapa-nui": {
   "canonical": "https://www.jameswildco.com/stays/explora-rapa-nui",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Explora Rapa Nui, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/explora-sacred-valley": {
   "canonical": "https://www.jameswildco.com/stays/explora-sacred-valley",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Explora Sacred Valley, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/explora-torres-del-paine": {
   "canonical": "https://www.jameswildco.com/stays/explora-torres-del-paine",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Torres del Paine, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/feline-fields-lodge": {
   "canonical": "https://www.jameswildco.com/stays/feline-fields-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Feline Fields Lodge, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/feline-fields-vintage-camp": {
   "canonical": "https://www.jameswildco.com/stays/feline-fields-vintage-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Feline Fields Vintage Camp, Botswana | James Wild &amp; Co"
  },
  "/stays/fogo-island-inn": {
   "canonical": "https://www.jameswildco.com/stays/fogo-island-inn",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Room &amp; Wild Fogo Island Inn, Canada | James Wild &amp; Co"
  },
  "/stays/gibbs-farm": {
   "canonical": "https://www.jameswildco.com/stays/gibbs-farm",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Gibbs Farm, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/giraffe-manor": {
   "canonical": "https://www.jameswildco.com/stays/giraffe-manor",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Giraffe Manor, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/gomoti-plains-camp": {
   "canonical": "https://www.jameswildco.com/stays/gomoti-plains-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Gomoti Plains, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -2032,35 +2368,35 @@
  "/stays/great-plains-duba-plains": {
   "canonical": "https://www.jameswildco.com/stays/great-plains-duba-plains",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Duba Plains Camp by Great Plains, Botswana | James Wild &amp; Co"
  },
  "/stays/great-plains-selinda-main-camp": {
   "canonical": "https://www.jameswildco.com/stays/great-plains-selinda-main-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Selinda Main Camp by Great Plains, Botswana | James Wild &amp; Co"
  },
  "/stays/great-plains-zarafa-camp": {
   "canonical": "https://www.jameswildco.com/stays/great-plains-zarafa-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Zarafa Camp by Great Plains, Botswana | James Wild &amp; Co"
  },
  "/stays/great-plains-zarafa-dhow-suite": {
   "canonical": "https://www.jameswildco.com/stays/great-plains-zarafa-dhow-suite",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Zarafa Dhow Suite by Great Plains, Botswana | James Wild &amp; Co"
  },
  "/stays/greystoke-mahale-by-nomad": {
   "canonical": "https://www.jameswildco.com/stays/greystoke-mahale-by-nomad",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Greystoke Mahale By Nomad, Tanzania | James Wild &amp; Co"
  },
@@ -2081,7 +2417,7 @@
  "/stays/hayfield-manor": {
   "canonical": "https://www.jameswildco.com/stays/hayfield-manor",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Hayfield Manor, Ireland: Vetted Stay | James Wild &amp; Co"
  },
@@ -2099,115 +2435,143 @@
   "robots": "index, follow",
   "title": "Hidden Valley Lodge, Belize: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/holistika": {
+  "canonical": "https://www.jameswildco.com/stays/holistika",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Holistika, Mexico: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/hotel-bardo": {
   "canonical": "https://www.jameswildco.com/stays/hotel-bardo",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Hotel Bardo, Mexico: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/hotel-panamera": {
+  "canonical": "https://www.jameswildco.com/stays/hotel-panamera",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Hotel Panamera, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/house-in-the-wild-masai-mara": {
   "canonical": "https://www.jameswildco.com/stays/house-in-the-wild-masai-mara",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "House in the Wild Masai Mara Kenya, Kenya | James Wild &amp; Co"
  },
  "/stays/iguazu": {
   "canonical": "https://www.jameswildco.com/stays/iguazu",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Iguazu, Argentina: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/ila-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/ila-safari-lodge",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Ila Safari Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/inkaterra-cabo-blanco": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-cabo-blanco",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra Cabo Blanco, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/inkaterra-hacienda-concepcion": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-hacienda-concepcion",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra Hacienda Concepcion, Peru | James Wild &amp; Co"
  },
  "/stays/inkaterra-hacienda-urubamba": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-hacienda-urubamba",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra Hacienda Urubamba, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/inkaterra-la-casona": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-la-casona",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra La Casona, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/inkaterra-machu-picchu-pueblo-hotel": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-machu-picchu-pueblo-hotel",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra Machu Picchu Pueblo Hotel, Peru | James Wild &amp; Co"
  },
  "/stays/inkaterra-reserva-amazonica": {
   "canonical": "https://www.jameswildco.com/stays/inkaterra-reserva-amazonica",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Inkaterra Reserva Amazonica, Peru: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/isla-palenque-resort": {
   "canonical": "https://www.jameswildco.com/stays/isla-palenque-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Isla Palenque Resort, Panama: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/isla-secas": {
   "canonical": "https://www.jameswildco.com/stays/isla-secas",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Islas Secas Private Island, Panama: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/isla-secas-panama": {
   "canonical": "https://www.jameswildco.com/stays/isla-secas-panama",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Islas Secas Private Island Resort, Panama | James Wild &amp; Co"
  },
  "/stays/ja-manufaru-maldives": {
   "canonical": "https://www.jameswildco.com/stays/ja-manufaru-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "JA Manafaru Maldives Luxury Island Residences | James Wild &amp; Co"
+ },
+ "/stays/jacana-camp": {
+  "canonical": "https://www.jameswildco.com/stays/jacana-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Jacana Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/jacis-private-lodge": {
   "canonical": "https://www.jameswildco.com/stays/jacis-private-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Jaci&#x27;s Private Lodge, South Africa: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/jacks-camp": {
   "canonical": "https://www.jameswildco.com/stays/jacks-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Jack&#x27;s Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/jacks-private-camp": {
   "canonical": "https://www.jameswildco.com/stays/jacks-private-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Jack&#x27;s Private Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -2221,9 +2585,16 @@
  "/stays/jao-camp": {
   "canonical": "https://www.jameswildco.com/stays/jao-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Jao Camp, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/jao-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/jao-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Jao Reserve, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/ka-ana-resort": {
   "canonical": "https://www.jameswildco.com/stays/ka-ana-resort",
@@ -2235,91 +2606,91 @@
  "/stays/kaaba-luum-mexico": {
   "canonical": "https://www.jameswildco.com/stays/kaaba-luum-mexico",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kaaba Luum Wellness, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kamalaya-koh-samui": {
   "canonical": "https://www.jameswildco.com/stays/kamalaya-koh-samui",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kamalaya Koh Samui, Thailand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kayumanis-jimbaran-private-estates": {
   "canonical": "https://www.jameswildco.com/stays/kayumanis-jimbaran-private-estates",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kayumanis Jimbaran Private Estates, Indonesia | James Wild &amp; Co"
  },
  "/stays/kayumanis-nusa-dua": {
   "canonical": "https://www.jameswildco.com/stays/kayumanis-nusa-dua",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kayumanis Nusa Dua Private Villa &amp; Spa | James Wild &amp; Co"
  },
  "/stays/kayumanis-ubud": {
   "canonical": "https://www.jameswildco.com/stays/kayumanis-ubud",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kayumanis Ubud Private Villas &amp; Spa, Indonesia | James Wild &amp; Co"
  },
  "/stays/khwai-leadwood-camp": {
   "canonical": "https://www.jameswildco.com/stays/khwai-leadwood-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Khwai Leadwood Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/khwai-lediba": {
   "canonical": "https://www.jameswildco.com/stays/khwai-lediba",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Khwai Lediba, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kichakani-camp": {
   "canonical": "https://www.jameswildco.com/stays/kichakani-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kichakani Camp, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kicheche-mara-north": {
   "canonical": "https://www.jameswildco.com/stays/kicheche-mara-north",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kicheche Mara North, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kokoko-camp-by-asilia": {
   "canonical": "https://www.jameswildco.com/stays/kokoko-camp-by-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kokoko Camp by Asilia, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kualoa-ranch": {
   "canonical": "https://www.jameswildco.com/stays/kualoa-ranch",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kualoa Ranch, Hawaii: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/kudadoo-private-island": {
   "canonical": "https://www.jameswildco.com/stays/kudadoo-private-island",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kudadoo Maldives Private Island, Maldives | James Wild &amp; Co"
  },
  "/stays/kura-boutique-resort": {
   "canonical": "https://www.jameswildco.com/stays/kura-boutique-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Kura Boutique Hotel, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
@@ -2407,6 +2778,13 @@
   "robots": "index, follow",
   "title": "Kwando Tau Pan Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/kwetsani-camp": {
+  "canonical": "https://www.jameswildco.com/stays/kwetsani-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Kwetsani Camp, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/la-cle": {
   "canonical": "https://www.jameswildco.com/stays/la-cle",
   "h1": 1,
@@ -2424,35 +2802,42 @@
  "/stays/la-tahaa": {
   "canonical": "https://www.jameswildco.com/stays/la-tahaa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Le Taha\u2019a by Pearl Resorts, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/la-valise-tulum": {
   "canonical": "https://www.jameswildco.com/stays/la-valise-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "La Valise Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/ladder-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/ladder-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Ladder, a Ted Turner Reserve, New Mexico | James Wild &amp; Co"
  },
  "/stays/lales-camp-expeditions": {
   "canonical": "https://www.jameswildco.com/stays/lales-camp-expeditions",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lale\u2019s Camp &amp; Expeditions, Madagascar | James Wild &amp; Co"
  },
  "/stays/lalibela-reserve": {
   "canonical": "https://www.jameswildco.com/stays/lalibela-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 10,
   "robots": "index, follow",
   "title": "Lalibela Reserve, South Africa: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/lapa-rios-lodge": {
   "canonical": "https://www.jameswildco.com/stays/lapa-rios-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lapa Rios Lodge, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
@@ -2487,7 +2872,7 @@
  "/stays/lengishu-kenya": {
   "canonical": "https://www.jameswildco.com/stays/lengishu-kenya",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lengishu, Kenya: Vetted Stay | James Wild &amp; Co"
  },
@@ -2501,14 +2886,28 @@
  "/stays/lewa-wilderness-lodge": {
   "canonical": "https://www.jameswildco.com/stays/lewa-wilderness-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lewa Wilderness Lodge, Kenya: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/linyanti-ebony-camp": {
+  "canonical": "https://www.jameswildco.com/stays/linyanti-ebony-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Linyanti Ebony, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/linyanti-expedition-camp": {
+  "canonical": "https://www.jameswildco.com/stays/linyanti-expedition-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Linyanti Expeditions, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/linyanti-wilderness-camp": {
   "canonical": "https://www.jameswildco.com/stays/linyanti-wilderness-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Linyanti Wilderness Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -2519,17 +2918,24 @@
   "robots": "index, follow",
   "title": "Lion Sands Reserve, South Africa: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/little-tubu-camp": {
+  "canonical": "https://www.jameswildco.com/stays/little-tubu-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Little Tubu Camp, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/loirien-mara": {
   "canonical": "https://www.jameswildco.com/stays/loirien-mara",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lorien Mara, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/lolebezi-lodge": {
   "canonical": "https://www.jameswildco.com/stays/lolebezi-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lolebezi Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
@@ -2543,7 +2949,7 @@
  "/stays/machaba": {
   "canonical": "https://www.jameswildco.com/stays/machaba",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Machaba Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -2557,21 +2963,21 @@
  "/stays/manyara-tree-lodge-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/manyara-tree-lodge-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Lake Manyara Tree Lodge By &amp; Beyond, Tanzania | James Wild &amp; Co"
  },
  "/stays/mara-plains-camp-by-great-plains": {
   "canonical": "https://www.jameswildco.com/stays/mara-plains-camp-by-great-plains",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mara Plains Camp by Great Plains, Kenya | James Wild &amp; Co"
  },
  "/stays/mara-toto-tree-camp-by-great-plains": {
   "canonical": "https://www.jameswildco.com/stays/mara-toto-tree-camp-by-great-plains",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mara Toto Tree Camp by Great Plains, Kenya | James Wild &amp; Co"
  },
@@ -2592,42 +2998,42 @@
  "/stays/matetsi-victoria-falls": {
   "canonical": "https://www.jameswildco.com/stays/matetsi-victoria-falls",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Matetsi Victoria Falls, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/meno-a-kwena-camp": {
   "canonical": "https://www.jameswildco.com/stays/meno-a-kwena-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Meno A Kwena Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/mezzanine-tulum": {
   "canonical": "https://www.jameswildco.com/stays/mezzanine-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mezzanine Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/mfuwe-lodge": {
   "canonical": "https://www.jameswildco.com/stays/mfuwe-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mfuwe Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/miavana-by-time-tide": {
   "canonical": "https://www.jameswildco.com/stays/miavana-by-time-tide",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Miavana by Time + Tide, Madagascar: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/monachira-camp": {
   "canonical": "https://www.jameswildco.com/stays/monachira-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Monachira Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
@@ -2648,70 +3054,77 @@
  "/stays/mutiara-laut": {
   "canonical": "https://www.jameswildco.com/stays/mutiara-laut",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Mutiara Laut \u201cPearl of the Sea\u201d, Indonesia | James Wild &amp; Co"
+ },
+ "/stays/namale-resort-and-spa": {
+  "canonical": "https://www.jameswildco.com/stays/namale-resort-and-spa",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Namale Resort &amp; Spa, Fiji: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nami-project": {
   "canonical": "https://www.jameswildco.com/stays/nami-project",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Room &amp; Wild The Nami Project, Canada | James Wild &amp; Co"
  },
  "/stays/namiri-plains-camp-by-asilia": {
   "canonical": "https://www.jameswildco.com/stays/namiri-plains-camp-by-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Namiri Plains Camp by Asilia, Tanzania | James Wild &amp; Co"
  },
  "/stays/nautilus-maldives": {
   "canonical": "https://www.jameswildco.com/stays/nautilus-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nautilus Maldives, Maldives: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nay-palad-hideaway": {
   "canonical": "https://www.jameswildco.com/stays/nay-palad-hideaway",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nay Palad Hideaway, Philippines: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nayara-alto-atacama": {
   "canonical": "https://www.jameswildco.com/stays/nayara-alto-atacama",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
-  "title": "Nayara Alto Atacama, Bolivia: Vetted Stay | James Wild &amp; Co"
+  "title": "Nayara Alto Atacama, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/nayara-bocas-del-toro": {
   "canonical": "https://www.jameswildco.com/stays/nayara-bocas-del-toro",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nayara Bocas del Toro, Panama: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nayara-gardens": {
   "canonical": "https://www.jameswildco.com/stays/nayara-gardens",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nayara Gardens, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nayara-hangaroa": {
   "canonical": "https://www.jameswildco.com/stays/nayara-hangaroa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nayara Hangaroa Rapa Nui, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/nayara-tented-camp": {
   "canonical": "https://www.jameswildco.com/stays/nayara-tented-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nayara Tented Camp, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
@@ -2725,163 +3138,191 @@
  "/stays/ngare-camp-by-serian": {
   "canonical": "https://www.jameswildco.com/stays/ngare-camp-by-serian",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Ngare Camp Serian, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nihi": {
   "canonical": "https://www.jameswildco.com/stays/nihi",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "NIHI Sumba The Edge of Wildness, Indonesia | James Wild &amp; Co"
  },
  "/stays/nikoi-island": {
   "canonical": "https://www.jameswildco.com/stays/nikoi-island",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nikoi Island, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/niyama-private-islands-maldives": {
   "canonical": "https://www.jameswildco.com/stays/niyama-private-islands-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Niyama Private Islands Maldives, Maldives | James Wild &amp; Co"
  },
  "/stays/no-1-pery-square-limerick": {
   "canonical": "https://www.jameswildco.com/stays/no-1-pery-square-limerick",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "No.1 Pery Square Limerick, Ireland: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nomad-tanzania-lamai": {
   "canonical": "https://www.jameswildco.com/stays/nomad-tanzania-lamai",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nomad Tanzania Lamai Serengeti, Tanzania | James Wild &amp; Co"
  },
  "/stays/nomade-holbox": {
   "canonical": "https://www.jameswildco.com/stays/nomade-holbox",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "WildEarth N\u00f4made Holbox, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nomade-temple-ibiza": {
   "canonical": "https://www.jameswildco.com/stays/nomade-temple-ibiza",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nomade Temple Ibiza, Spain-Ibiza: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/nomade-temple-madrid": {
   "canonical": "https://www.jameswildco.com/stays/nomade-temple-madrid",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nomade Temple Madrid Coming 2025, Spain | James Wild &amp; Co"
  },
  "/stays/nomade-tulum": {
   "canonical": "https://www.jameswildco.com/stays/nomade-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Nomade Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/north-island-okavango": {
   "canonical": "https://www.jameswildco.com/stays/north-island-okavango",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "North Island Okavango, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/nyungwe-tea-forest-resort": {
+  "canonical": "https://www.jameswildco.com/stays/nyungwe-tea-forest-resort",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Nyungwe Tea Forest Resort, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/ol-jogi-conservancy": {
   "canonical": "https://www.jameswildco.com/stays/ol-jogi-conservancy",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Ol Jogi Conservancy - Kenya, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/ol-pejeta-bush-camp-asilia": {
   "canonical": "https://www.jameswildco.com/stays/ol-pejeta-bush-camp-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Ol Pejeta Bush Camp by Asilia, Kenya | James Wild &amp; Co"
  },
  "/stays/olas-tulum": {
   "canonical": "https://www.jameswildco.com/stays/olas-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Olas Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/one-only-gorillas-nest": {
+  "canonical": "https://www.jameswildco.com/stays/one-only-gorillas-nest",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "One&amp;Only Gorilla&#x27;s Nest, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/open-sky": {
   "canonical": "https://www.jameswildco.com/stays/open-sky",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Open Sky Zion, Utah: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/our-habitas-namibia": {
   "canonical": "https://www.jameswildco.com/stays/our-habitas-namibia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Our Habitas Namibia, Namibia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/our-habitas-tulum": {
+  "canonical": "https://www.jameswildco.com/stays/our-habitas-tulum",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Our Habitas Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pacuare-lodge": {
   "canonical": "https://www.jameswildco.com/stays/pacuare-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pacuare Lodge, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/paws-up-resort": {
   "canonical": "https://www.jameswildco.com/stays/paws-up-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Paws Up Resort, Montana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pearl-resort-le-bora-bora": {
   "canonical": "https://www.jameswildco.com/stays/pearl-resort-le-bora-bora",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pearl Resort Le Borabora, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pearl-resort-le-nuku-hiva": {
   "canonical": "https://www.jameswildco.com/stays/pearl-resort-le-nuku-hiva",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pearl Resort Le Nuku Hiva, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pearl-resort-le-tahiti": {
   "canonical": "https://www.jameswildco.com/stays/pearl-resort-le-tahiti",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pearl Resort Le Tahiti, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pearl-resort-le-tikehau": {
   "canonical": "https://www.jameswildco.com/stays/pearl-resort-le-tikehau",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pearl Resort Le Tikehau, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pearl-resort-vahine-private-island": {
   "canonical": "https://www.jameswildco.com/stays/pearl-resort-vahine-private-island",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Vahine Private Island, Tahiti: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/pelo-camp": {
+  "canonical": "https://www.jameswildco.com/stays/pelo-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Pelo Camp, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/phinda-homestead-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/phinda-homestead-by-and-beyond",
@@ -2900,30 +3341,44 @@
  "/stays/post-ranch-inn": {
   "canonical": "https://www.jameswildco.com/stays/post-ranch-inn",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Room &amp; Wild Post Ranch Inn, California | James Wild &amp; Co"
+ },
+ "/stays/potato-bush-camp": {
+  "canonical": "https://www.jameswildco.com/stays/potato-bush-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Potato Bush Camp, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/pu-u-hoko-ranch": {
   "canonical": "https://www.jameswildco.com/stays/pu-u-hoko-ranch",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Pu&#x27;u O Hoku Ranch, Hawaii: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/radhoo-tulum": {
   "canonical": "https://www.jameswildco.com/stays/radhoo-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Radhoo Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/rayvadee-resort": {
   "canonical": "https://www.jameswildco.com/stays/rayvadee-resort",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Rayavadee Resort, Thailand: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/royal-davui-island-resort": {
+  "canonical": "https://www.jameswildco.com/stays/royal-davui-island-resort",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Royal Davui Island Resort, Fiji: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/royal-malewane": {
   "canonical": "https://www.jameswildco.com/stays/royal-malewane",
@@ -2935,28 +3390,28 @@
  "/stays/royal-zambezi-lodge": {
   "canonical": "https://www.jameswildco.com/stays/royal-zambezi-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Royal Zambezi Lodge, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/rubondo-island-camp-asilia": {
   "canonical": "https://www.jameswildco.com/stays/rubondo-island-camp-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Rubondo Island Camp by Asilia, Tanzania | James Wild &amp; Co"
  },
  "/stays/sable-alley-khwai": {
   "canonical": "https://www.jameswildco.com/stays/sable-alley-khwai",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sable Alley Khwai, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/salas-camp": {
   "canonical": "https://www.jameswildco.com/stays/salas-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sala\u2019s Camp, Kenya: Vetted Stay | James Wild &amp; Co"
  },
@@ -2967,82 +3422,124 @@
   "robots": "index, follow",
   "title": "Samara Karoo Reserve, South Africa: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/sans-camp": {
+  "canonical": "https://www.jameswildco.com/stays/sans-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "San Camp, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/saruni-eagle-view": {
   "canonical": "https://www.jameswildco.com/stays/saruni-eagle-view",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Saruni Eagle View, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/saruni-leopard-hill": {
   "canonical": "https://www.jameswildco.com/stays/saruni-leopard-hill",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Saruni Leopard Hill, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/saruni-samburu-lodge": {
   "canonical": "https://www.jameswildco.com/stays/saruni-samburu-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Saruni Samburu Lodge, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/saruni-wild-lodge": {
   "canonical": "https://www.jameswildco.com/stays/saruni-wild-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Saruni Wild Lodge, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/sasaab": {
   "canonical": "https://www.jameswildco.com/stays/sasaab",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sasaab Lodge Northern Kenya, Kenya: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/sausage-tree-camp": {
+  "canonical": "https://www.jameswildco.com/stays/sausage-tree-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Sausage Tree Camp, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/sayari-camp-asilia": {
   "canonical": "https://www.jameswildco.com/stays/sayari-camp-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sayari Camp by Asilia, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/segera-retreat": {
   "canonical": "https://www.jameswildco.com/stays/segera-retreat",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Segera Retreat, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/senda-monteverde-lodge": {
   "canonical": "https://www.jameswildco.com/stays/senda-monteverde-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Senda Monteverde Lodge, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/serengeti-lamai-camp-by-serian": {
   "canonical": "https://www.jameswildco.com/stays/serengeti-lamai-camp-by-serian",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Serengeti Lamai Camp By Serian, Tanzania | James Wild &amp; Co"
+ },
+ "/stays/shawa-luangwa-camp": {
+  "canonical": "https://www.jameswildco.com/stays/shawa-luangwa-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Shawa Luangwa Camp, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/shinta-mani-wild": {
   "canonical": "https://www.jameswildco.com/stays/shinta-mani-wild",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Shinta Mani Wild, Cambodia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/shipwreck-lodge-namibia": {
+  "canonical": "https://www.jameswildco.com/stays/shipwreck-lodge-namibia",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Shipwreck Lodge, Namibia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/sierra-grande-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/sierra-grande-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Sierra Grande Lodge &amp; Spa, New Mexico | James Wild &amp; Co"
  },
  "/stays/silolona-sojourns": {
   "canonical": "https://www.jameswildco.com/stays/silolona-sojourns",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Silolona Sojourns Indonesia, Indonesia | James Wild &amp; Co"
+ },
+ "/stays/sindabezi-island-camp": {
+  "canonical": "https://www.jameswildco.com/stays/sindabezi-island-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Sindabezi Island Camp, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-boulders": {
   "canonical": "https://www.jameswildco.com/stays/singita-boulders",
@@ -3075,35 +3572,35 @@
  "/stays/singita-elela": {
   "canonical": "https://www.jameswildco.com/stays/singita-elela",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Elela, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-faru-faru-lodge": {
   "canonical": "https://www.jameswildco.com/stays/singita-faru-faru-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Faru Faru Lodge, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-katanza-house": {
   "canonical": "https://www.jameswildco.com/stays/singita-katanza-house",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Kataza House, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-kilima": {
   "canonical": "https://www.jameswildco.com/stays/singita-kilima",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Kilima, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-kwitonda": {
   "canonical": "https://www.jameswildco.com/stays/singita-kwitonda",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Kwitonda Lodge, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
@@ -3124,49 +3621,49 @@
  "/stays/singita-malilangwe-house": {
   "canonical": "https://www.jameswildco.com/stays/singita-malilangwe-house",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Malilangwe House, Zimbabwe: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-mara-river": {
   "canonical": "https://www.jameswildco.com/stays/singita-mara-river",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Mara River Tented Camp, Tanzania | James Wild &amp; Co"
  },
  "/stays/singita-milele": {
   "canonical": "https://www.jameswildco.com/stays/singita-milele",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Milele, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-pamushana": {
   "canonical": "https://www.jameswildco.com/stays/singita-pamushana",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Pamushana Lodge, Zimbabwe: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-sabora": {
   "canonical": "https://www.jameswildco.com/stays/singita-sabora",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Sabora Tented Camp, Tanzania | James Wild &amp; Co"
  },
  "/stays/singita-sasakwa": {
   "canonical": "https://www.jameswildco.com/stays/singita-sasakwa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Sasakwa Lodge, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/singita-serengeti-house": {
   "canonical": "https://www.jameswildco.com/stays/singita-serengeti-house",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Singita Serengeti House, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
@@ -3180,49 +3677,49 @@
  "/stays/sirikoi-lodge": {
   "canonical": "https://www.jameswildco.com/stays/sirikoi-lodge",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sirikoi Lodge, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/sirius-yacht-galapagos": {
   "canonical": "https://www.jameswildco.com/stays/sirius-yacht-galapagos",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Sirius Gal\u00e1pagos Yacht, Ecuador &amp; Galapagos | James Wild &amp; Co"
  },
  "/stays/siwa-tulum": {
   "canonical": "https://www.jameswildco.com/stays/siwa-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Siwa Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-con-dao": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-con-dao",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Con Dao, Vietnam: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-crans-montana": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-crans-montana",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Crans-Montana, Switzerland | James Wild &amp; Co"
  },
  "/stays/six-senses-douro-valley": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-douro-valley",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Douro Valley, Portugal + Azores | James Wild &amp; Co"
  },
  "/stays/six-senses-fiji": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-fiji",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Fiji, Fiji: Vetted Stay | James Wild &amp; Co"
  },
@@ -3236,79 +3733,86 @@
  "/stays/six-senses-kanuhura": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-kanuhura",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Kanuhura, Maldives: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-krabey-island": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-krabey-island",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Krabey Island, Cambodia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-kyoto": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-kyoto",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Kyoto, Japan: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-laamu": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-laamu",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Laamu Maldives, Maldives | James Wild &amp; Co"
  },
  "/stays/six-senses-ninh-van-bay": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-ninh-van-bay",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Ninh Van Bay, Vietnam: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-residences-courchevel": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-residences-courchevel",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Residences Courchevel, France | James Wild &amp; Co"
  },
  "/stays/six-senses-rome": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-rome",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Rome, Italy: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-samui": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-samui",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Samui, Thailand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-uluwatu": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-uluwatu",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Uluwatu Balir, Indonesia | James Wild &amp; Co"
  },
  "/stays/six-senses-yao-noi": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-yao-noi",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Yao Noi, Thailand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/six-senses-zil-pasyon": {
   "canonical": "https://www.jameswildco.com/stays/six-senses-zil-pasyon",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Six Senses Zil Pasyon, Seychelles: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/skybeds-khwai": {
+  "canonical": "https://www.jameswildco.com/stays/skybeds-khwai",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Skybeds, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/sleeping-giant-rainforest-lodge": {
   "canonical": "https://www.jameswildco.com/stays/sleeping-giant-rainforest-lodge",
@@ -3317,31 +3821,38 @@
   "robots": "index, follow",
   "title": "Sleeping Giant Rainforest Lodge, Belize | James Wild &amp; Co"
  },
+ "/stays/somalisa-acacia": {
+  "canonical": "https://www.jameswildco.com/stays/somalisa-acacia",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Somalisa Acacia, Zimbabwe: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/soneva-fushi-maldives": {
   "canonical": "https://www.jameswildco.com/stays/soneva-fushi-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Soneva Fushi Maldives Original Barefoot Luxury | James Wild &amp; Co"
  },
  "/stays/soneva-jani-maldives": {
   "canonical": "https://www.jameswildco.com/stays/soneva-jani-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Soneva Jani Maldives Exclusive Island &amp; Overwater Residences"
  },
  "/stays/soneva-secret-maldives": {
   "canonical": "https://www.jameswildco.com/stays/soneva-secret-maldives",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Soneva Secret Ultra\u2011Bespoke Island Retreat | James Wild &amp; Co"
  },
  "/stays/soori-bali": {
   "canonical": "https://www.jameswildco.com/stays/soori-bali",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Soori Bali, Indonesia: Vetted Stay | James Wild &amp; Co"
  },
@@ -3352,31 +3863,38 @@
   "robots": "index, follow",
   "title": "St. George&#x27;s Caye Resort, Belize: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/stanley-livingstone-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/stanley-livingstone-lodge",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Anantara Stanley &amp; Livingstone, Zimbabwe | James Wild &amp; Co"
+ },
  "/stays/suyian-lodge-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/suyian-lodge-by-and-beyond",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Suyian Lodge by &amp;Beyond, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/tabacon-thermal-resort-spa": {
   "canonical": "https://www.jameswildco.com/stays/tabacon-thermal-resort-spa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tabac\u00f3n Thermal Resort &amp; Spa, Costa Rica | James Wild &amp; Co"
  },
  "/stays/tahi": {
   "canonical": "https://www.jameswildco.com/stays/tahi",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tahi New Zealand, New Zealand: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/tanah-gajah": {
   "canonical": "https://www.jameswildco.com/stays/tanah-gajah",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tanah Gajah by Hadiprana, Indonesia | James Wild &amp; Co"
  },
@@ -3432,35 +3950,35 @@
  "/stays/the-art-villa": {
   "canonical": "https://www.jameswildco.com/stays/the-art-villa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Art Villa, Costa Rica: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/the-beach-tulum": {
   "canonical": "https://www.jameswildco.com/stays/the-beach-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Beach Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/the-brando-tetiaroa": {
   "canonical": "https://www.jameswildco.com/stays/the-brando-tetiaroa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Brando Tetiaroa Tahiti, Tahiti: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/the-hide-safari-camp": {
   "canonical": "https://www.jameswildco.com/stays/the-hide-safari-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Hide Safari Camp, Zimbabwe: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/the-highlands-by-asilia-highlands": {
   "canonical": "https://www.jameswildco.com/stays/the-highlands-by-asilia-highlands",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Highlands by Asilia, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
@@ -3474,49 +3992,63 @@
  "/stays/the-original-camp-by-serian": {
   "canonical": "https://www.jameswildco.com/stays/the-original-camp-by-serian",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Original Camp By Serian, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/the-retreat-at-blue-lagoon": {
   "canonical": "https://www.jameswildco.com/stays/the-retreat-at-blue-lagoon",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "The Retreat at Blue Lagoon, Iceland | James Wild &amp; Co"
  },
  "/stays/tierra-patagonia": {
   "canonical": "https://www.jameswildco.com/stays/tierra-patagonia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Tierra Patagonia, Chile &amp; Easter Island | James Wild &amp; Co"
  },
  "/stays/time-tide-chinzombo-2": {
   "canonical": "https://www.jameswildco.com/stays/time-tide-chinzombo-2",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Time + Tide Chinzombo, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/time-tide-chongwe-2": {
   "canonical": "https://www.jameswildco.com/stays/time-tide-chongwe-2",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Time + Tide Chongwe, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/time-tide-mchenja": {
   "canonical": "https://www.jameswildco.com/stays/time-tide-mchenja",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Time + Tide Mchenja, Zambia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tokoriki-island-resort": {
+  "canonical": "https://www.jameswildco.com/stays/tokoriki-island-resort",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Tokoriki Island Resort, Fiji: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tongabezi": {
+  "canonical": "https://www.jameswildco.com/stays/tongabezi",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Tongabezi, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/torres-del-paine-c-reserve": {
   "canonical": "https://www.jameswildco.com/stays/torres-del-paine-c-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Explora Torres del Paine C. Reserve | James Wild &amp; Co"
  },
@@ -3526,6 +4058,20 @@
   "jsonld": 10,
   "robots": "index, follow",
   "title": "Tswalu Reserve Kalahari, South Africa | James Wild &amp; Co"
+ },
+ "/stays/tubu-tree-camp": {
+  "canonical": "https://www.jameswildco.com/stays/tubu-tree-camp",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Tubu Tree Camp, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/tuludi-khwai": {
+  "canonical": "https://www.jameswildco.com/stays/tuludi-khwai",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Tuludi, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/turtle-inn": {
   "canonical": "https://www.jameswildco.com/stays/turtle-inn",
@@ -3537,9 +4083,16 @@
  "/stays/ubuntu-migration-camp-asilia": {
   "canonical": "https://www.jameswildco.com/stays/ubuntu-migration-camp-asilia",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Ubuntu Migration Camp by Asilia, Tanzania | James Wild &amp; Co"
+ },
+ "/stays/ulum-moab": {
+  "canonical": "https://www.jameswildco.com/stays/ulum-moab",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Ulum Moab, Utah: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/umaya-resort-and-marina": {
   "canonical": "https://www.jameswildco.com/stays/umaya-resort-and-marina",
@@ -3551,287 +4104,273 @@
  "/stays/under-canvas-brtce-canyon": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-brtce-canyon",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Bryce Canyon, Utah: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/under-canvas-glacier": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-glacier",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Glacier, Montana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/under-canvas-grand-canyon": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-grand-canyon",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Grand Canyon, Arizona: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/under-canvas-lake-powell-grand-staircase": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-lake-powell-grand-staircase",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Lake Powell Grand Staircase, Utah | James Wild &amp; Co"
  },
  "/stays/under-canvas-moab": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-moab",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Moab, Utah: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/under-canvas-north-yellowstone": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-north-yellowstone",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas North Yellowstone, Montana | James Wild &amp; Co"
  },
  "/stays/under-canvas-west-yellowstone": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-west-yellowstone",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas West Yellowstone, Wyoming | James Wild &amp; Co"
  },
  "/stays/under-canvas-yosemite": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-yosemite",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Yosemite, California: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/under-canvas-zion": {
   "canonical": "https://www.jameswildco.com/stays/under-canvas-zion",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Under Canvas Sky Zion, Utah: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/ungasan-clifftops": {
   "canonical": "https://www.jameswildco.com/stays/ungasan-clifftops",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Ungasan Clifftops Uluwatu, Indonesia | James Wild &amp; Co"
  },
  "/stays/uxua-casa-hotel-spa": {
   "canonical": "https://www.jameswildco.com/stays/uxua-casa-hotel-spa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Uxua Casa Hotel &amp; Spa, Brazil: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/velaa-private-island": {
   "canonical": "https://www.jameswildco.com/stays/velaa-private-island",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Velaa Private Island, Maldives: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/vermejo-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/stays/vermejo-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Vermejo, a Ted Turner Reserve, New Mexico | James Wild &amp; Co"
  },
  "/stays/viceroy-bali": {
   "canonical": "https://www.jameswildco.com/stays/viceroy-bali",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Viceroy Bali Ubud&#x27;s Sanctuary, Indonesia | James Wild &amp; Co"
  },
  "/stays/wilderness-bisate-reserve": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-bisate-reserve",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Bisate Reserve, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-busanga": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-busanga",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Busanga, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-damaraland": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-damaraland",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Doro Nawas, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-desert-rhino-camp": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-desert-rhino-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Desert Rhino Camp, Namibia | James Wild &amp; Co"
  },
  "/stays/wilderness-dumatau": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-dumatau",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness DumaTau, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-hoanib-skeleton-camp": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-hoanib-skeleton-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Hoanib Skeleton Coast, Namibia | James Wild &amp; Co"
  },
  "/stays/wilderness-kulala-desert-camp": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-kulala-desert-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Kulala Desert Lodge, Namibia | James Wild &amp; Co"
- },
- "/stays/wilderness-kwetsani": {
-  "canonical": "https://www.jameswildco.com/stays/wilderness-kwetsani",
-  "h1": 1,
-  "jsonld": 8,
-  "robots": "index, follow",
-  "title": "Wilderness Kwetsani, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-little-duma-tau": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-little-duma-tau",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Little Duma Tau, Botswana | James Wild &amp; Co"
  },
  "/stays/wilderness-little-kulala": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-little-kulala",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Little Kulala, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-little-mombo": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-little-mombo",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Little Mombo Camp, Botswana | James Wild &amp; Co"
- },
- "/stays/wilderness-little-tubu": {
-  "canonical": "https://www.jameswildco.com/stays/wilderness-little-tubu",
-  "h1": 1,
-  "jsonld": 8,
-  "robots": "index, follow",
-  "title": "Wilderness Little Tubu, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-magashi-peninsula": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-magashi-peninsula",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Magashi Peninsula Wilderness Retreat, Rwanda | James Wild &amp; Co"
  },
  "/stays/wilderness-mara": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-mara",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Mara, Kenya: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-mokete": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-mokete",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Mokete, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-mombo-luxury-camp": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-mombo-luxury-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Mombo Camp, Botswana: Vetted Stay | James Wild &amp; Co"
- },
- "/stays/wilderness-pelo": {
-  "canonical": "https://www.jameswildco.com/stays/wilderness-pelo",
-  "h1": 1,
-  "jsonld": 8,
-  "robots": "index, follow",
-  "title": "Wilderness Pelo, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-qorokwe": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-qorokwe",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Qorokwe, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-ruckomechi": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-ruckomechi",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Ruckomechi, Zimbabwe: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-sabyinyo": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-sabyinyo",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Sabyinyo, Rwanda: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-savuti": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-savuti",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Savuti, Botswana: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-serra-cafema": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-serra-cafema",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Serra Cafema, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-shumba": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-shumba",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Shumba, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-toka-leya": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-toka-leya",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Toka Leya, Zambia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wilderness-usawa": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-usawa",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Usawa Mobile Camp, Tanzania | James Wild &amp; Co"
  },
  "/stays/wilderness-vumbura-plains": {
   "canonical": "https://www.jameswildco.com/stays/wilderness-vumbura-plains",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wilderness Vumbura Plains, Botswana | James Wild &amp; Co"
  },
  "/stays/wolwedans-dune-camp": {
   "canonical": "https://www.jameswildco.com/stays/wolwedans-dune-camp",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wolwedans Dune Camp, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/wren-urban-nest": {
   "canonical": "https://www.jameswildco.com/stays/wren-urban-nest",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "Wren Urban Nest, Ireland: Vetted Stay | James Wild &amp; Co"
  },
@@ -3845,9 +4384,23 @@
  "/stays/xela-tulum": {
   "canonical": "https://www.jameswildco.com/stays/xela-tulum",
   "h1": 1,
-  "jsonld": 8,
+  "jsonld": 6,
   "robots": "index, follow",
   "title": "XELA Tulum, Mexico: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/xigera-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/stays/xigera-safari-lodge",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Xigera Safari Lodge, Botswana: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/zannier-sonop": {
+  "canonical": "https://www.jameswildco.com/stays/zannier-sonop",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Zannier Sonop, Namibia: Vetted Stay | James Wild &amp; Co"
  },
  "/the-ledger": {
   "canonical": "https://www.jameswildco.com/the-ledger",
@@ -3870,12 +4423,33 @@
   "robots": "index, follow",
   "title": "Small-Ship Voyages and Sailing Yachts | James Wild &amp; Co"
  },
+ "/voyages/antarctica/antarctica21-polar-circle-air-cruise": {
+  "canonical": "https://www.jameswildco.com/voyages/antarctica/antarctica21-polar-circle-air-cruise",
+  "h1": 1,
+  "jsonld": 8,
+  "robots": "noindex, nofollow",
+  "title": "Antarctic Circle Fly-Cruise: 10 Days, No Drake Crossing"
+ },
+ "/voyages/komodo": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "index, follow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
  "/voyages/komodo/aliikai-5-day-komodo-island": {
   "canonical": "https://www.jameswildco.com/voyages/komodo/aliikai-5-day-komodo-island",
   "h1": 1,
   "jsonld": 8,
   "robots": "index, follow",
   "title": "5-Day Komodo Liveaboard Cruise Aboard Aliikai | James Wild &amp; Co"
+ },
+ "/voyages/raja-ampat": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "index, follow",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
  },
  "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north": {
   "canonical": "https://www.jameswildco.com/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
@@ -3890,6 +4464,13 @@
   "jsonld": 8,
   "robots": "index, follow",
   "title": "Aliikai Phinisi Yacht: Raja Ampat &amp; Komodo Liveaboard, 2027 Rates"
+ },
+ "/whats-coming": {
+  "canonical": "https://www.jameswildco.com/whats-coming",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "What&#x27;s Coming: New and Rebuilt Lodges, Filed Before They Open"
  },
  "/workshops": {
   "canonical": "https://www.jameswildco.com/workshops",

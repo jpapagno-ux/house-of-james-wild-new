@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
+import Wordmark from "@/components/ledger/Wordmark";
 import { JwcoSeal } from "./Marks";
 import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
@@ -172,11 +173,11 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-6">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3">
           <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
-            Menu
+            <span className="hidden sm:inline">Menu</span>
           </button>
           <button
             type="button"
@@ -191,14 +192,16 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
         </div>
 
         {/* The lockup: the oxblood seal large beside the wordmark, Cormorant 700,
-            with the house line beneath. Cream over a film. */}
-        <Link href="/" className="flex items-center gap-4 lg:gap-5 leading-none shrink-0 lg:justify-self-center" aria-label={`${SITE.name}, home`}>
-          <span className={`block lg:hidden ${light ? "opacity-95" : ""}`}><JwcoSeal size={48} tone={light ? "light" : "ink"} /></span>
+            with the house line beneath. Cream over a film. On phones the lockup
+            is centred between Menu and Plan, the seal at 40, the wordmark at
+            1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
+        <Link href="/" className="flex items-center gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
+          <span className={`block lg:hidden ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
           <span className={`hidden lg:block ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
-          <span className="flex flex-col">
-            <span className="font-display font-bold text-[1.6rem] md:text-[2.1rem] lg:text-[2.6rem] tracking-[-0.02em] leading-none">James Wild &amp; Co.</span>
-            <span className={`ledger-eyebrow !text-[10px] !tracking-[0.32em] mt-2 ${light ? "!text-white/80" : "!text-crimson"}`}>Exploring since {SITE.exploringSince} · {SITE.homeOf}</span>
-          </span>
+          {/* phone lockup */}
+          <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
+          {/* desktop lockup */}
+          <span className="hidden lg:block"><Wordmark style="editorial" light={light} size={1} /></span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">
@@ -212,11 +215,11 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           </ul>
           <Link
             href={PLAN_CTA.href}
-            className={`hidden sm:inline-flex items-center whitespace-nowrap h-10 px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
+            className={`inline-flex items-center whitespace-nowrap h-10 px-3.5 sm:px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
               light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-crimson !text-crimson hover:bg-crimson hover:!text-paper"
             }`}
           >
-            {PLAN_CTA.label}
+            <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>
           </Link>
         </div>
       </div>

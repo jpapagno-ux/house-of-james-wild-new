@@ -108,8 +108,19 @@ function metaPlan(a) {
   else if (c.model_id || c.prompt) m.licence_source = "ai_generated";
   else if (/james papagno|james wild & co\.? personal archive|owner'?s photograph/i.test(`${c.credit ?? ""} ${c.licence ?? ""}`)) m.licence_source = "owner";
   else if (/courtesy|partner imagery|partner image|^©|^photo:/i.test(`${c.licence ?? ""} ${c.credit ?? ""}`.trim()) || (c.credit && !/to verify/i.test(c.credit))) m.licence_source = "partner";
+  // James's answers, 31 Oct 2026:
+  // • Getty: the licence covers every site, no credit needed.
+  if (m.licence_source === "getty") { m.rights_status = "approved"; m.allowed_sites = ["jameswildco", "polarcrossings", "gatherings", "expeditionlending", "arcterra"]; delete m.credit; }
+  // • Galápagos partner images ("confirm guide/PDF use"): cleared, we are partners; credit the partner.
+  const gp = /^Partner imagery – (.+?) \(confirm guide\/PDF use\)/.exec(String(c.licence ?? ""));
+  if (gp) { m.rights_status = "approved"; m.credit = `Photograph courtesy of ${gp[1]}`; m.licence_source = "partner"; m.allowed_sites = ["jameswildco", "expeditionlending"]; }
+  // • Shutterstock comps: dropped, never published.
+  if (m.licence_source === "shutterstock" || /^dropped$/i.test(pub)) m.rights_status = "hold";
+  // • AI images: decorative art (ink, sketches, borders, art) is fine unlabelled; anything that could
+  //   pass for a real place, stay or person waits to be labelled "Illustration" or replaced.
+  if (m.licence_source === "ai_generated") m.rights_status = /design-effects|sketch|\/art\b|\/art\/|\/ink\b|islands\/art/i.test(a.public_id + " " + (a.asset_folder ?? "")) ? "approved" : "to_verify";
   const have = a.metadata ?? {};
-  for (const k of Object.keys(m)) if (have[k] === m[k]) delete m[k];
+  for (const k of Object.keys(m)) if (JSON.stringify(have[k]) === JSON.stringify(m[k])) delete m[k];
   return Object.keys(m).length ? m : null;
 }
 
@@ -140,7 +151,7 @@ try {
     const groups = new Map();
     for (const a of assets) {
       const m = metaPlan(a); if (!m) continue;
-      const k = `${a.resource_type}|${Object.entries(m).sort().map(([x, y]) => `${x}=${String(y).replace(/([=|\\"])/g, "\\$1")}`).join("|")}`;
+      const k = `${a.resource_type}|${Object.entries(m).sort().map(([x, y]) => `${x}=${Array.isArray(y) ? JSON.stringify(y).replace(/([=|])/g, "\\$1") : String(y).replace(/([=|\\"])/g, "\\$1")}`).join("|")}`;
       (groups.get(k) ?? groups.set(k, []).get(k)).push(a.public_id);
     }
     let n = 0;

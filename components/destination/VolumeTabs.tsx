@@ -4,7 +4,9 @@ import { useId, useState, type ReactNode } from "react";
 // "Choose your way" (James, 31 Oct 2026): one row of tabs, one per volume, each in its volume's ink
 // (lib/volumes.ts). A tab shows that volume's records and filters the map's pins to match. Every
 // panel is in the HTML from the start (search engines and no-JS readers see all of them).
-export type VolumeTab = { key: string; label: string; count: number; ink: string; pin?: string; content: ReactNode };
+/** pin: what the map shows for this tab: categories, plus any records by id (lit in `tint`). None = everything. */
+export type MapFilter = { show: string[]; ids?: string[]; tint?: string };
+export type VolumeTab = { key: string; label: string; count: number; ink: string; pin?: MapFilter; content: ReactNode };
 
 export default function VolumeTabs({ tabs, title, intro }: { tabs: VolumeTab[]; title: string; intro?: string }) {
   const id = useId();
@@ -12,7 +14,7 @@ export default function VolumeTabs({ tabs, title, intro }: { tabs: VolumeTab[]; 
   if (!tabs.length) return null;
   const pick = (t: VolumeTab) => {
     setCur(t.key);
-    window.dispatchEvent(new CustomEvent("jw:volume", { detail: t.pin ?? "all" }));
+    window.dispatchEvent(new CustomEvent("jw:volume", { detail: t.pin ?? null }));
   };
   const active = tabs.find((t) => t.key === cur) ?? tabs[0];
   return (

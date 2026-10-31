@@ -1,4 +1,3 @@
-import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -28,8 +27,7 @@ import SafeLink from "@/components/ledger/SafeLink";
 import CompassRose from "@/components/ledger/CompassRose";
 import { Icon } from "@/components/ledger/Marks";
 import Doors, { type Door } from "@/components/destination/Doors";
-import { JourneyCard } from "@/components/destination/Journeys";
-import VolumeTabs, { type VolumeTab } from "@/components/destination/VolumeTabs";
+import ChooseYourWay from "@/components/destination/ChooseYourWay";
 import { touristTrip } from "@/lib/schema";
 import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorScroll } from "@/components/advisor/Desk";
@@ -101,35 +99,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   // The Stays section takes its volume's ink (docs/brand-colours.md): Europe's stays are Volume V.
   const stayInk = volumeInk(r.slug === "europe" ? "europe" : "stays");
   const stayVol = r.slug === "europe" ? "europe" : "stays";
-  // Choose your way: the region's records by volume (docs/brand-colours.md). Residences and safari
-  // records come from the Ledger's own volume tags and the reserves export; the rest are stays.
-  const regionStays = STAYS.filter((s) => s.regionSlug === r.slug && pageReady(s) && s.hero);
-  const residences = regionStays.filter((s) => isResidence(s.name, s.category) || s.volumes?.includes("gatherings"));
-  const safariStays = regionStays.filter((s) => s.volumes?.includes("safaris") && !residences.includes(s));
-  const regionReserves = RESERVES.filter((x) => x.stay.regionSlug === r.slug && x.stay.hero);
-  const routes = journeys.filter((j) => j.kind === "route"), voyages = journeys.filter((j) => j.kind === "voyage");
-  const grid = (cards: React.ReactNode[], more?: { href: string; label: string; ink: string }) => (
-    <>
-      <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{cards}</ul>
-      {more && <Link href={more.href} className="mt-6 inline-flex items-center gap-1.5 text-[15px] underline underline-offset-4" style={{ color: more.ink }}>{more.label} →</Link>}
-    </>
-  );
-  const jgrid = (list: typeof journeys, more: { href: string; label: string; ink: string }) => (
-    <>
-      <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{list.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
-      <Link href={more.href} className="mt-6 inline-flex items-center gap-1.5 text-[15px] underline underline-offset-4" style={{ color: more.ink }}>{more.label} →</Link>
-    </>
-  );
-  const tabs: VolumeTab[] = [
-    r.featured.length > 0 && { key: "stays", label: stayVol === "europe" ? "Europe stays" : "Stays", count: r.stayCount, ink: volumeInk(stayVol), pin: "stay",
-      content: grid(r.featured.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? s.country} eyebrow={s.country} image={{ url: s.image, alt: `${s.name}, ${s.country}` }} href={recordHref("stay", s.slug)} volume={s.reserveChild ? "safaris" : isResidence(s.name, null) ? "gatherings" : stayVol} /></li>), { href: "/stays", label: `All ${r.stayCount} stays in ${r.name}`, ink: volumeInk(stayVol) }) },
-    regionReserves.length + safariStays.length > 0 && { key: "safaris", label: "Safaris & reserves", count: regionReserves.length + safariStays.length, ink: volumeInk("safaris"), pin: "reserve",
-      content: grid([...regionReserves.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.rsv} line={`${x.camps.length} camps & residences · ${x.area}`} eyebrow={`Reserve · ${x.stay.country ?? ""}`} image={{ url: x.stay.hero as string, alt: `${x.name}, ${x.area}` }} href={`/safaris/${x.slug}`} volume="safaris" /></li>), ...safariStays.slice(0, Math.max(0, 8 - regionReserves.length)).map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? s.country ?? ""} eyebrow={s.country ?? undefined} image={{ url: s.hero as string, alt: `${s.name}, ${s.country}` }} href={recordHref("stay", s.slug)} volume="safaris" /></li>)], { href: "/safaris", label: "The safari desk", ink: volumeInk("safaris") }) },
-    residences.length > 0 && { key: "gatherings", label: "Gatherings", count: residences.length, ink: volumeInk("gatherings"), pin: "residence",
-      content: grid(residences.slice(0, 8).map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? s.country ?? ""} eyebrow={s.country ?? undefined} image={{ url: s.hero as string, alt: `${s.name}, ${s.country}` }} href={recordHref("stay", s.slug)} volume="gatherings" /></li>), { href: "/gatherings", label: "Family residences, all regions", ink: volumeInk("gatherings") }) },
-    voyages.length > 0 && { key: "voyages", label: "Voyages", count: voyages.length, ink: volumeInk("voyages"), pin: "vessel", content: jgrid(voyages, { href: "/voyages", label: "All voyages", ink: volumeInk("voyages") }) },
-    routes.length > 0 && { key: "routes", label: "Overland routes", count: routes.length, ink: volumeInk("overland"), content: jgrid(routes, { href: "/overland", label: "All Overland routes", ink: volumeInk("overland") }) },
-  ].filter(Boolean) as VolumeTab[];
+  const regionStays = STAYS.filter((s) => s.regionSlug === r.slug && pageReady(s)).map((s) => ({ ...s, image: s.hero }));
   const glance = { facts: [["Countries", `${r.countries.length} in the Ledger`], ["Stays", `${r.stayCount} filed`], ["Journeys", journeys.length ? `${journeys.length} drawn` : "Ask James"]] as [string, string][], cta: { label: "Plan with James", href: `/plan?destination=${r.slug}` } };
   return (
     <div className={r.slug === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -177,7 +147,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           )}
 
           {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}
-          <VolumeTabs title={`${r.name}, by How You Travel`} intro="Stays, safaris, family residences, voyages and routes, each in its volume's colour. Pick one and the map shows only those." tabs={tabs} />
+          <ChooseYourWay place={r.name} stayVol={stayVol} featured={r.featured} stayCount={r.stayCount} stays={regionStays} reserves={RESERVES.filter((x) => x.stay.regionSlug === r.slug)} journeys={journeys} />
 
           {(r.intro.length > 0 || r.gallery.length > 0) && (
             <section className="mt-12 md:mt-16 grid lg:grid-cols-[1fr_1.05fr] gap-10 lg:gap-14 items-start" aria-labelledby="region-heading">

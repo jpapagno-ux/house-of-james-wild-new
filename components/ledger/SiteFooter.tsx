@@ -1,5 +1,6 @@
 import { VOLUME_ORDER, volumeInk, volumeLightInk } from "@/lib/volumes";
 import Link from "next/link";
+import { FLAGS } from "@/lib/booking-live/flags";
 import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, VOLUMES as ALL_VOLUMES } from "@/lib/site";
 import { live } from "@/lib/routes";
 import { JwcoSeal } from "./Marks";
@@ -96,7 +97,7 @@ export default function SiteFooter({ tone = DEFAULT_TONE }: { tone?: FooterTone 
           <ul className="mt-3 space-y-1.5 text-[14.5px]">
             <li><a href={`tel:${SITE.phone.tel}`} className="ledger-display text-[1.2rem] hover:underline underline-offset-4">{SITE.phone.display}</a></li>
             {SITE.email && <li><a href={`mailto:${SITE.email}`} className="hover:underline underline-offset-4">{SITE.email}</a></li>}
-            <li className="pt-1"><Link href="/account" className="hover:underline underline-offset-4">My Folio</Link></li>
+            <li className="pt-1"><Link href={FLAGS.accounts ? "/account" : "/folio"} className="hover:underline underline-offset-4">My Folio</Link></li>
           </ul>
           <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1">
             {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>{s.label}</a></li>)}

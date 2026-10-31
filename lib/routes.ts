@@ -12,6 +12,7 @@ export const BUILT: string[] = [
   "/",
   "/compass",
   "/plan",
+  "/folio",
   "/plan/iggi",
   "/about",
   "/about/founder",

@@ -3,7 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
+import Link from "next/link";
 import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
+import { folioFromCore, saveFolio, type Folio } from "@/lib/folio/shelf";
+import { FLAGS } from "@/lib/booking-live/flags";
 
 // "Ask Iggi" panel — Stage 2 of the Iggi Intelligence Core (Contract C3).
 // Mints a same-origin embed token from /api/iggi/token, then loads the Iggi
@@ -34,6 +37,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   const [src, setSrc] = useState<string | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "ready" | "off">("idle");
   const [height, setHeight] = useState(620);
+  const [folio, setFolio] = useState<Folio | null>(null); // Stage 4: the Folio Iggi handed back
 
   // Lazy: mint the token and set the iframe src only when the panel is near the viewport.
   useEffect(() => {
@@ -77,9 +81,26 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   useEffect(() => {
     const onMessage = (e: MessageEvent) => {
       if (e.origin !== IGGI_CORE_ORIGIN || !e.data || typeof e.data !== "object") return;
-      const d = e.data as { type?: string; height?: number; path?: string; entitySlug?: string; domain?: string };
+      const d = e.data as { type?: string; height?: number; path?: string; external?: boolean; entitySlug?: string; domain?: string; folio?: unknown; fol?: string };
       if (d.type === "ji:resize" && typeof d.height === "number") setHeight(Math.min(Math.max(d.height, 480), 920));
-      if (d.type === "ji:open_app" && typeof d.path === "string") window.open(`${IGGI_CORE_ORIGIN}${d.path.startsWith("/") ? d.path : "/" + d.path}`, "_blank", "noopener");
+      if (d.type === "ji:open_app" && typeof d.path === "string") {
+        // external: a link back into this site (the advisor's Plan page with the FOL on it); anything else opens the Core.
+        if (d.external) { try { const u = new URL(d.path, location.origin); if (u.origin === location.origin) location.assign(u.pathname + u.search); } catch { /* ignore */ } }
+        else window.open(`${IGGI_CORE_ORIGIN}${d.path.startsWith("/") ? d.path : "/" + d.path}`, "_blank", "noopener");
+      }
+      // Stage 4: Iggi hands the shaped journey back as a Folio. Shelve it on this
+      // device (and, with accounts on, in the traveller's account) and show it.
+      if (d.type === "ji:folio") {
+        const f = folioFromCore(d.folio);
+        if (f) {
+          saveFolio(f);
+          setFolio(f);
+          if (FLAGS.accounts) void saveToAccount(f);
+          const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
+          if (Array.isArray(dl)) dl.push({ event: "iggi_folio", fol: f.fol, advisor: f.advisor?.adv ?? null, page: ctx.sourcePage });
+        }
+      }
+      if (d.type === "ji:open_folio") location.assign(`/folio${typeof d.fol === "string" ? `?fol=${encodeURIComponent(d.fol)}` : ""}`);
       if (d.type === "ji:inquiry") {
         const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
         if (Array.isArray(dl)) dl.push({ event: "iggi_inquiry", entity: d.entitySlug, page: ctx.sourcePage });
@@ -89,6 +110,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
     return () => window.removeEventListener("message", onMessage);
   }, [ctx.sourcePage]);
 
+  const planHref = folio ? toLocal(folio.plan) : null;
   return (
     <section ref={hostRef} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="iggi-heading" data-iggi-panel>
       <div className="flex items-start gap-4">
@@ -115,7 +137,40 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           <div className="p-6 text-[15px] ledger-muted" aria-live="polite">{state === "loading" ? "Iggi is opening the Ledger…" : "Scroll here and Iggi will open the Ledger for this page."}</div>
         )}
       </div>
+      {folio && (
+        <aside className="mt-4 border-l-2 border-crimson bg-paper-card px-5 py-4 flex flex-wrap items-center gap-x-6 gap-y-3" aria-live="polite" aria-label="Your Folio">
+          <div className="min-w-0">
+            <p className="ledger-eyebrow ledger-crimson">Folio {folio.fol}{folio.advisor?.adv ? ` · open with ${folio.advisor.isDefault ? "James" : folio.advisor.firstName ?? folio.advisor.name}` : ""}</p>
+            <p className="ledger-display text-[1.25rem] mt-1 leading-snug">{folio.title}</p>
+            <p className="text-[13.5px] ledger-muted mt-0.5">{folio.stays.length ? `${folio.stays.length} Ledger record${folio.stays.length === 1 ? "" : "s"} · ` : ""}on your shelf under My Folio{FLAGS.accounts ? " and in your account" : " on this device"}.</p>
+          </div>
+          <div className="flex gap-3 ml-auto">
+            <Link href={`/folio?fol=${encodeURIComponent(folio.fol)}`} className="ledger-btn">Open My Folio</Link>
+            {planHref && <Link href={planHref} className="ledger-btn ledger-btn--solid">Plan with {folio.advisor?.adv ? (folio.advisor.isDefault ? "James" : folio.advisor.firstName ?? folio.advisor.name) : "James"}</Link>}
+          </div>
+        </aside>
+      )}
       <p className="mt-3 text-[13px] ledger-muted">Iggi is an AI guide run by James Wild &amp; Co. Chats may be reviewed by the house to improve the Ledger; don&rsquo;t share payment details here.</p>
     </section>
   );
+}
+
+/** A Plan link from the Core points at this site; keep only its path so it stays same-origin. */
+function toLocal(href: string): string {
+  try { const u = new URL(href, "https://house-of-james-wild-new.vercel.app"); return u.pathname + u.search; } catch { return "/plan"; }
+}
+
+/** With traveller accounts on: the same Folio in the account (title, the stays as items, the itinerary as a note). Best effort, signed-in only. */
+async function saveToAccount(f: Folio): Promise<void> {
+  try {
+    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: `${f.fol} · ${f.title}`.slice(0, 120), destinationSummary: [f.advisor?.adv ? `Open with ${f.advisor.name} (${f.advisor.adv})` : null, f.summary].filter(Boolean).join(" — ").slice(0, 400) }) });
+    if (!r.ok) return; // not signed in, or accounts off: the device shelf still has it
+    const { data } = (await r.json()) as { data?: { id?: string } };
+    if (!data?.id) return;
+    for (const s of f.stays) {
+      if (!s.slug) continue;
+      await fetch(`/api/v1/me/folios/${data.id}/items`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ property: s.slug, notes: s.reason ?? undefined }) }).catch(() => undefined);
+    }
+    if (f.days.length) await fetch(`/api/v1/me/folios/${data.id}/items`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ type: "note", notes: f.days.map((d) => `Day ${d.day_number}: ${d.title}`).join("\n").slice(0, 2000) }) }).catch(() => undefined);
+  } catch { /* the device shelf is the fallback */ }
 }

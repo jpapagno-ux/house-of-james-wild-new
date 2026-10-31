@@ -11,3 +11,14 @@
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per
   image, folders = public_id path (see `docs/brand-colours.md`, "Media").
 - Full rule: `docs/brand-colours.md`.
+
+## Sources (James, 31 Oct 2026)
+- Facts, photos and pins for a property come only from that brand's own website (or its owner's
+  media kit). Never use competitors as a source: other agencies, tour operators, booking sites,
+  review sites or third-party guides. If the brand site can't supply it, flag the record for
+  follow-up in Stay Studio instead of filling the gap.
+
+## What's coming (James, 31 Oct 2026)
+- Lodges that are announced, opening or rebuilding are tagged "WHAT'S COMING SECTION" in their
+  Stay Studio review notes (Singita Elela, Dec 2026; andBeyond Xaranna Okavango Delta Lodge,
+  Aug 2027). A dedicated site section will be built later as a separate build.

@@ -909,6 +909,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae65cf9a1294e6908611d76",
+   "slug": "chisa-busanga-camp",
+   "name": "Chisa Busanga Camp",
+   "country": "Zambia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b4",
    "slug": "chobe-under-canvas-by-and-beyond",
    "name": "& Beyond Chobe Under Canvas",
@@ -1658,6 +1666,14 @@
    "slug": "iguazu",
    "name": "Iguazu",
    "country": "Argentina",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae65cf9a1294e6908611d75",
+   "slug": "ila-safari-lodge",
+   "name": "Ila Safari Lodge",
+   "country": "Zambia",
    "missing": [],
    "released": true
   },
@@ -3024,6 +3040,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae65cf9a1294e6908611d79",
+   "slug": "potato-bush-camp",
+   "name": "Potato Bush Camp",
+   "country": "Zambia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff989",
    "slug": "pu-u-hoko-ranch",
    "name": "Pu'u O Hoku Ranch",
@@ -3201,6 +3225,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae65cf9a1294e6908611d78",
+   "slug": "sausage-tree-camp",
+   "name": "Sausage Tree Camp",
+   "country": "Zambia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff999",
    "slug": "sayari-camp-asilia",
    "name": "Sayari Camp by Asilia",
@@ -3267,6 +3299,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae65cf9a1294e6908611d77",
+   "slug": "shawa-luangwa-camp",
+   "name": "Shawa Luangwa Camp",
+   "country": "Zambia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff99f",
    "slug": "shinta-mani-wild",
    "name": "Shinta Mani Wild",
@@ -3310,6 +3350,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae65cf9a1294e6908611d74",
+   "slug": "sindabezi-island-camp",
+   "name": "Sindabezi Island Camp",
+   "country": "Zambia",
+   "missing": [],
    "released": true
   },
   {

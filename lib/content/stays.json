@@ -5671,6 +5671,92 @@
    "volumes": null
   },
   {
+   "slug": "chisa-busanga-camp",
+   "name": "Chisa Busanga Camp",
+   "ledgerId": "STY-2026-000542",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Four weaver-nest rooms on the Busanga Plains",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/chisa-busanga-camp/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -14.20565,
+    "lng": 25.80364
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Four Nests inspired by weaver bird nests, each with a window above the bed for stargazing. The whole camp can be booked privately."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives across the watery dambos",
+     "Walking safaris",
+     "Birding",
+     "E-bike outings",
+     "Boma dinners"
+    ]
+   },
+   "features": {
+    "paras": [
+     "On a small tree-lined island on the Busanga Plains in northern Kafue National Park. Chisa is the Nyanja word for bird's nest. Solar powered camp and game vehicles."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The Busanga Plains are among Africa's most untouched wilderness: rosy morning mist, elephants crossing the floodplain and muddy lion prides, with only four Nests to share it."
+   ],
+   "why": [
+    {
+     "title": "Inside the Horizon",
+     "body": "Best for small groups, families taking the whole camp, solo travelers and photographers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "plains",
+     "predators",
+     "exclusive_use"
+    ],
+    "suitability": [
+     "small_groups",
+     "photographers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "chumbe-island-zanzibar",
    "name": "Chumbe Isalnd \n Escape Zanzibar",
    "ledgerId": "STY-2026-000061",
@@ -10493,6 +10579,88 @@
    "engine": null,
    "pathway": null,
    "volumes": [
+    "stays"
+   ]
+  },
+  {
+   "slug": "ila-safari-lodge",
+   "name": "Ila Safari Lodge",
+   "ledgerId": "STY-2026-000541",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Zambia's first silent safaris, on the Kafue River",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/ila-safari-lodge/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -14.97385,
+    "lng": 25.92558
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten Riverside Tents open to the Kafue River, plus two larger family suites."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Electric game drives and electric boat cruises on the Kafue River. Walking safaris. Community and conservation projects."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A luxury tented lodge in Kafue National Park, Zambia's largest and oldest park. The first lodge in Zambia with electric game drives and river cruises. Solar powered, locally sourced materials. Where Green Safaris began."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Ila gives you Kafue in near silence: electric vehicles and boats, a river full of hippo and elephant, and a park so big you rarely see another car."
+   ],
+   "why": [
+    {
+     "title": "Silent Safari",
+     "body": "Best for returning safari-goers, families and eco-minded travelers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [
+     "river",
+     "eco",
+     "silent_safari"
+    ],
+    "suitability": [
+     "families",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
     "stays"
    ]
   },
@@ -21145,6 +21313,93 @@
    "volumes": null
   },
   {
+   "slug": "potato-bush-camp",
+   "name": "Potato Bush Camp",
+   "ledgerId": "STY-2026-000545",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A family camp on the Zambezi with private guiding",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/potato-bush-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/potato-bush-camp/g2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -15.6789,
+    "lng": 29.4805
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Three safari tents and a two-bedroom family House, linked by raised walkways, each with a plunge pool and outdoor lounge over the Zambezi."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private game drives and boat safaris",
+     "Canoeing among elephants",
+     "Sunset cruises",
+     "Fireside dinners under the stars"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A riverfront camp in Lower Zambezi National Park, sister to Sausage Tree. Guaranteed private guiding on land and water. Children from four. Ideal to book exclusively for up to 12."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Potato Bush keeps its original bush feel, with wildlife wandering through camp, and makes a whole-family Zambezi safari simple."
+   ],
+   "why": [
+    {
+     "title": "The Family Zambezi",
+     "body": "Best for families, friends booking the camp and value-minded couples."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "river",
+     "family",
+     "private_guiding"
+    ],
+    "suitability": [
+     "families",
+     "friends"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "pu-u-hoko-ranch",
    "name": "Pu'u O Hoku Ranch",
    "ledgerId": "STY-2026-000218",
@@ -22451,6 +22706,93 @@
    "volumes": null
   },
   {
+   "slug": "sausage-tree-camp",
+   "name": "Sausage Tree Camp",
+   "ledgerId": "STY-2026-000544",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Private guiding and plunge pools on the Lower Zambezi",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sausage-tree-camp/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -15.6792,
+    "lng": 29.4812
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven tented suites and the Kigelia House for four, each with its own plunge pool and Zambezi view. The whole camp can be booked privately."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private game drives day and night",
+     "Walking safaris",
+     "Boat safaris and canoeing through Zambezi channels",
+     "Fishing",
+     "Bush dinners and river lunches"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Established in 1996 in Lower Zambezi National Park as Zambia's most luxurious bush camp. Guaranteed private guiding with private vehicles, boats and canoes. Butlers, known as Muchindas."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sausage Tree is privacy as a promise: your own guide, vehicle and boat, a plunge pool on the Zambezi and a camp that set the standard for luxury in Zambia."
+   ],
+   "why": [
+    {
+     "title": "Privately Guided",
+     "body": "Best for couples, honeymooners and families who want the whole experience to themselves."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "river",
+     "private_guiding",
+     "canoeing"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
    "slug": "sayari-camp-asilia",
    "name": "Sayari Camp by Asilia",
    "ledgerId": "STY-2026-000234",
@@ -22835,6 +23177,95 @@
     "status": "approved",
     "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
     "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
+  },
+  {
+   "slug": "shawa-luangwa-camp",
+   "name": "Shawa Luangwa Camp",
+   "ledgerId": "STY-2026-000543",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Silent safaris in the Valley of the Leopard",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/shawa-luangwa-camp/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -13.06591,
+    "lng": 31.84402
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five Safari Suites under canvas on the Luangwa River: three Couples Tents, a Family Tent and more, each with a view and a bath for sunset."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Game drives in silent electric vehicles",
+     "Walking safaris",
+     "Birding",
+     "Conservation and community projects in the Luangwa"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A small eco-friendly bush camp in the Nsefu Sector of South Luangwa National Park. Named after the legendary Zambian guide Jacob Shawa. Silent Safari vehicles. Can be booked exclusively."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Shawa Luangwa brings electric, silent safaris to one of Africa's great leopard valleys, in a quiet corner of the park built for walking."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "The Valley of the Leopard"
+    },
+    {
+     "title": null,
+     "body": "Best for couples, families taking the camp and keen walkers."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "leopard",
+     "walking",
+     "silent_safari"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
    },
    "volumes": [
     "safaris",
@@ -23228,6 +23659,95 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "sindabezi-island-camp",
+   "name": "Sindabezi Island Camp",
+   "ledgerId": "STY-2026-000540",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A tiny island camp in the Zambezi, twelve kilometres above the Falls",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sindabezi-island-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sindabezi-island-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sindabezi-island-camp/g2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -17.84318,
+    "lng": 25.71148
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five open-fronted thatched Chalets looking over the Zambezi floodplain and Victoria Falls National Park, including a Honeymoon Chalet."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Boat transfers with game and birdwatching on the way",
+     "River trips and sampan dining",
+     "Victoria Falls by air, water or on foot",
+     "Community, farming and school visits"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A Green Safaris island camp in the middle of the Zambezi, sister to Tongabezi. Zero grid dependence. Arrival by boat. Named by Fodor's among Africa's top ten eco-lodges."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sindabezi is nature therapy: your own small island in the Zambezi, where the only neighbours are the wildlife and the only footprints are yours in the sand."
+   ],
+   "why": [
+    {
+     "title": "An Island to Yourselves",
+     "body": "Best for couples, small families and anyone who wants Victoria Falls with a true bush camp feel."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [
+     "river",
+     "victoria_falls",
+     "island",
+     "eco"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "singita-boulders",

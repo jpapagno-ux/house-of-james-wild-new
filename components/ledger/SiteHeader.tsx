@@ -160,7 +160,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
 
 
   const light = overlay && !solid && !open;
-  const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
+  const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block whitespace-nowrap hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
 
   return (
     <>
@@ -186,7 +186,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             aria-label="Search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="ledger-eyebrow !text-[10.5px] !text-current">Where to?</span>
+            <span className="ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Where to?</span>
             <kbd className="hidden xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
           </button>
         </div>
@@ -196,8 +196,8 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             is centred between Menu and Plan, the seal at 40, the wordmark at
             1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
         <Link href="/" className="flex items-center gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
-          <span className={`block lg:hidden ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
-          <span className={`hidden lg:block ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
+          <span className={`block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
           {/* phone lockup */}
           <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
           {/* desktop lockup */}
@@ -211,7 +211,7 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
             ))}
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
-            {FLAGS.accounts && <li><Link href="/account" className={mainItem}>My Folio</Link></li>}
+            <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
           </ul>
           <Link
             href={PLAN_CTA.href}

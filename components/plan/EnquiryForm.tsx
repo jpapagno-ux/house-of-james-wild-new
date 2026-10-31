@@ -40,7 +40,7 @@ export default function EnquiryForm() {
   const sp = useSearchParams();
   const ctx = useMemo(() => {
     const g = (k: string) => sp.get(k) ?? undefined;
-    return { advisor: g("advisor"), from: g("from"), trip: g("trip"), option: g("cabin") ?? g("option"), travellers: g("travellers"), addons: g("addons"), estimate: g("estimate"), destination: g("destination"), route: g("route"), q: g("q") };
+    return { advisor: g("advisor"), from: g("from"), trip: g("trip"), option: g("cabin") ?? g("option"), travellers: g("travellers"), addons: g("addons"), estimate: g("estimate"), destination: g("destination"), route: g("route"), q: g("q"), folio: g("folio") && /^FOL-\d{4}-\d{6}$/.test(g("folio") as string) ? g("folio") : undefined };
   }, [sp]);
   const advisor = ADVISORS.find((a) => a.slug === (ctx.advisor ?? DEFAULT_ADVISOR));
   const wantsCall = sp.get("next") === "call";
@@ -85,7 +85,7 @@ export default function EnquiryForm() {
     );
   }
 
-  const hasContext = advisor || ctx.trip || ctx.from;
+  const hasContext = advisor || ctx.trip || ctx.from || ctx.folio;
   return (
     <form onSubmit={submit} noValidate className="space-y-8" aria-label="Plan your journey">
       {hasContext && (
@@ -102,6 +102,13 @@ export default function EnquiryForm() {
               <p className="ledger-display text-lg leading-snug">{ctx.trip}</p>
               <p className="text-[14px] ledger-muted">{[ctx.option, ctx.travellers && `${ctx.travellers} travellers`, ctx.addons].filter(Boolean).join(" · ")}</p>
               {ctx.estimate && <p className="text-[14px] mt-0.5">Estimate from the price builder: <strong>US${Number(ctx.estimate).toLocaleString("en-US")}</strong> <span className="ledger-muted">(example prices)</span></p>}
+            </div>
+          )}
+          {ctx.folio && (
+            <div className="min-w-0">
+              <p className="ledger-eyebrow !text-coast-deep">Your Folio</p>
+              <p className="ledger-display text-lg leading-snug">{ctx.folio}</p>
+              <p className="text-[14px] ledger-muted">Iggi opened it; {advisor ? advisor.firstName : "the house"} picks it up from here. <Link href={`/folio?fol=${encodeURIComponent(ctx.folio)}`} className="underline underline-offset-4">See it</Link></p>
             </div>
           )}
           {ctx.from && !ctx.trip && <p className="text-[15px]">{FROM_LABEL[ctx.from] ?? "Picking up where you left off."}</p>}

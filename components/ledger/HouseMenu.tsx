@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { X, Search, Phone } from "lucide-react";
 import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, VOLUMES, type MegaMenu } from "@/lib/site";
@@ -92,7 +93,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
             {EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
               <li key={l.href}><Link href={l.href} onClick={onClose} className="text-[16px] hover:ledger-crimson inline-flex items-center gap-2">{l.href === "/compass" && <CompassSpin size={18} />}{l.label}</Link></li>
             ))}
-            <li><Link href="/account" onClick={onClose} className="text-[16px] hover:ledger-crimson">My Folio</Link></li>
+            <li><Link href={FLAGS.accounts ? "/account" : "/folio"} onClick={onClose} className="text-[16px] hover:ledger-crimson">My Folio</Link></li>
           </ul>
           <div className="mt-10 flex flex-col gap-2 text-[15px]">
             <a href={`tel:${SITE.phone.tel}`} className="inline-flex items-center gap-2 hover:ledger-crimson"><Phone className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{SITE.phone.display}</a>

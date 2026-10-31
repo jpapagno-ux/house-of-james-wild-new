@@ -20,7 +20,7 @@ export type Enquiry = {
   message?: string;
   travelNotes: boolean;
   // context carried from the page that sent the traveller here
-  context: { advisor?: string; from?: string; trip?: string; option?: string; travellers?: string; addons?: string; estimate?: string; destination?: string; route?: string; q?: string };
+  context: { advisor?: string; from?: string; trip?: string; option?: string; travellers?: string; addons?: string; estimate?: string; destination?: string; route?: string; q?: string; folio?: string };
   website?: string; // honeypot: must stay empty
 };
 
@@ -35,7 +35,7 @@ export function validateEnquiry(e: Partial<Enquiry>): Record<string, string> {
   if (!e.name || e.name.trim().length < 2) err.name = "Please tell us your name.";
   if (!e.email || !EMAIL.test(e.email.trim())) err.email = "Please enter an email address we can reply to.";
   if ((e.contact === "phone" || e.contact === "video") && !(e.phone && e.phone.replace(/\D/g, "").length >= 7)) err.phone = "Add a phone number so we can call you.";
-  if (!e.where?.trim() && !e.context?.trip && !e.message?.trim()) err.where = "Tell us where you're drawn, even roughly, or add a note.";
+  if (!e.where?.trim() && !e.context?.trip && !e.context?.folio && !e.message?.trim()) err.where = "Tell us where you're drawn, even roughly, or add a note.";
   if (typeof e.adults !== "number" || e.adults < 1) err.adults = "At least one adult, please.";
   if (e.hasAdvisor && !e.advisorDetails?.trim()) err.advisorDetails = "Add your advisor's name or email so we can coordinate.";
   if (e.message && e.message.length > 4000) err.message = "That's a long note. Please keep it under 4,000 characters.";

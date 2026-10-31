@@ -4,6 +4,7 @@ import { SITE } from "@/lib/site";
 //   editorial: Cormorant 700, the ampersand in italic 500, tracked tight
 //   seal:      the seal's own letters — wide-spaced small caps, Cormorant 600
 // Crimson on paper, cream over a film. `size` scales the whole lockup line.
+// The eyebrow is "Exploring since 1982" only (James, 31 Oct 2026): no "Home of" tag.
 export type WordmarkStyle = "editorial" | "seal" | "plain";
 
 export default function Wordmark({ style = "editorial", light = false, size = 1, rule = true, line = true, fullLine = true }: { style?: WordmarkStyle; light?: boolean; size?: number; rule?: boolean; line?: boolean; fullLine?: boolean }) {
@@ -23,7 +24,7 @@ export default function Wordmark({ style = "editorial", light = false, size = 1,
       {rule && <span className="block h-px mt-2" style={{ background: light ? "rgba(244,241,237,0.4)" : "rgb(var(--jw-accent) / 0.35)" }} aria-hidden="true" />}
       {line && (
         <span className="ledger-eyebrow whitespace-nowrap" style={{ color: sub, fontSize: `${10 * Math.max(size, 0.85)}px`, letterSpacing: "0.32em", marginTop: rule ? 6 : 8 }}>
-          Exploring since {SITE.exploringSince}{fullLine && <span> · {SITE.homeOf}</span>}
+          Exploring since {SITE.exploringSince}
         </span>
       )}
     </span>

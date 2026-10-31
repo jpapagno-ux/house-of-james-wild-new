@@ -114,7 +114,7 @@ export default function SiteFooter({ tone = DEFAULT_TONE }: { tone?: FooterTone 
       </div>
       <div className="border-t" style={{ borderColor: T.rule }}>
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-4 flex flex-wrap items-center justify-between gap-3">
-          <p className="ledger-eyebrow" style={{ color: T.muted }}>© {year} {SITE.name} · {SITE.homeOf} · Ledgered, not crowded</p>
+          <p className="ledger-eyebrow" style={{ color: T.muted }}>© {year} {SITE.name} · Ledgered, not crowded</p>
           <div className="flex items-center gap-4">
             {LEGAL_NAV.map((l) => <Link key={l.href} href={l.href} className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>{l.label}</Link>)}
             <a href="/llms.txt" className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>llms.txt</a>

@@ -14670,8 +14670,8 @@
     "solo",
     "group_exclusive_use"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-10-31",
    "coords": {
     "lat": -33.470578,
     "lng": 26.25462
@@ -14755,8 +14755,28 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
-   "volumes": null
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": "eastern_cape",
+    "intentions": [
+     "conservation",
+     "big_five",
+     "malaria_free"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "first_safari"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 31 Oct 2026",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "lapa-rios-lodge",

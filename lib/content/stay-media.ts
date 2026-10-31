@@ -9,6 +9,7 @@ const big = (id: string, upscale = false) => `${CLD}/${upscale ? "e_upscale/" : 
 
 import photos from "./stay-photos.json";
 import stays from "./stays.json";
+import credits from "./photo-credits.json";
 
 // pos: CSS object-position, for photos whose subject sits off-centre.
 export type FullFrame = { src: string; alt: string; caption: string; pos?: string };
@@ -49,6 +50,8 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
 export const PHOTO_CREDIT: Record<string, string> = {
   ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.startsWith("wilderness-")).map((x) => [x.slug, "Wilderness"])),
   ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.endsWith("-ted-turner-reserve")).map((x) => [x.slug, "Ted Turner Reserves"])),
+  // Property-supplied heroes (photo-credits.json).
+  ...Object.fromEntries(Object.entries(credits as Record<string, string>).filter(([k]) => !k.startsWith("_"))),
   ...Object.fromEntries(
     Object.entries(photos.stays as Record<string, { credit?: string }>).filter(([, v]) => v.credit).map(([k, v]) => [k, v.credit as string]),
   ),

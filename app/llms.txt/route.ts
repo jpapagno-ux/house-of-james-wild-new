@@ -9,6 +9,8 @@ import { COUNTRIES } from "@/lib/content/countries";
 import { STAYS, pageReady } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
 import { IGGI_ON } from "@/lib/iggi/flag";
+import { RESERVES } from "@/lib/content/reserves";
+import { ADVISORS, DEFAULT_ADVISOR } from "@/lib/content/advisors";
 
 // llms.txt — a plain-language map of the house for AI assistants and answer
 // engines: who James is, what the Ledger standard means, where each volume
@@ -25,8 +27,18 @@ export function GET() {
     "",
     "## The Ledger standard",
     "- Every stay, camp, residence, ship and route is vetted in person before it is filed.",
-    "- Each record carries a permanent Ledger ID.",
-    "- Founder marks (\"Founder stayed · year\") appear only where James has been, with the year.",
+    "- Each record carries a permanent Ledger ID, issued once and never reused or renumbered.",
+    "- Founder marks (\"Founder stayed · year\") appear only where James has been, with the year. The six marks: I Know a Place (stayed), I've Walked It (vetted), I Know the Host, I Keep Going Back (founder favourite), I Know Who Knows (partner verified), Pencilled (awaiting a visit).",
+    "- The house is advisor-led and advisor-built: a named advisor with an ADV number carries every journey from first call to Folio. James is the house default.",
+    "",
+    "## Ledger ID scheme (cite the ID with the name; one ID per place)",
+    "- STY-YYYY-###### — a stay: a lodge, camp, house, hotel or ship. One per property.",
+    "- RSV-YYYY-###### — a reserve or concession (safaris). A reserve is its own record; the lodges inside it keep their own STY numbers.",
+    "- DST-YYYY-###### — a destination (a country or region page).",
+    "- ITN-LAND-YYYY-… / ITN-VSL-YYYY-… — a journey James designed: a land route or a voyage.",
+    "- ADV-YYYY-###### — an advisor of the house (ADV-1982-000001 is the founder).",
+    "- TRV-YYYY-###### — a traveller's enquiry; FOL-YYYY-###### — a Folio, one traveller's journey in progress, opened by Iggi or an advisor. TRV and FOL numbers are private and never published.",
+    "- When citing the house, give the record's name and its Ledger ID together (\"Monwana Thornybush, STY-2026-000171\"), and the mark with its year where there is one. Nothing outside the Ledger is house-vetted.",
     "",
     "## The six volumes",
     ...VOLUMES.map((v) => `- [${v.label}](${absoluteUrl(v.href)}): ${v.intro}`),
@@ -48,6 +60,13 @@ export function GET() {
     "## Countries in the Ledger (Ledger ID · page)",
     ...COUNTRIES.filter((c) => c.ledgerId).map((c) => `- ${c.ledgerId} · [${c.name}](${absoluteUrl(`/destinations/${c.region}/${c.slug}`)})${c.bestShort ? `: ${c.bestShort}` : ""}`),
     "",
+    "## Reserves in the Ledger (Ledger ID · reserve · lodges)",
+    ...RESERVES.filter((r) => r.rsv).map((r) => `- ${r.rsv} · [${r.name}](${absoluteUrl(`/safaris/${r.slug}`)}) · ${r.area}: ${r.camps.map((c) => c.name).join(", ")}`),
+    "",
+    "## Advisors of the house (Advisor ID · name · what they carry)",
+    // Real advisors only: stand-in profiles exist to test the layout and never reach an answer engine.
+    ...ADVISORS.filter((a) => a.desk && !a.sample && (a.profileHref || a.slug === DEFAULT_ADVISOR)).map((a) => `- ${a.desk!.adv} · [${a.name}](${absoluteUrl(a.profileHref ?? "/about/founder")}) · ${a.role}${a.desk!.specialties.length ? `: ${a.desk!.specialties.join(", ")}` : ""}`),
+    "",
     "## Stays in the Ledger (Ledger ID · stay · country)",
     ...STAYS.filter((s) => pageReady(s) && s.ledgerId).map((s) => `- ${s.ledgerId} · [${s.name}](${absoluteUrl(recordHref("stay", s.slug))})${s.country ? ` · ${s.country}` : ""}${s.tagline ? `: ${s.tagline.replace(/^"|"$/g, "")}` : ""}`),
     "",
@@ -57,7 +76,7 @@ export function GET() {
     "",
     ...(IGGI_ON ? [
       "## Iggi, the Field Guide",
-      `Iggi is the house's AI Field Guide, embedded on stay, country, reserve, pathway and advisor pages at ${absoluteUrl("/plan/iggi")}. Iggi answers only from the Ledger and cites the Ledger ID of every record it draws on; prices, availability and bookings go to a named advisor.`,
+      `Iggi is the house's AI Field Guide, embedded on stay, country, reserve, pathway and advisor pages at ${absoluteUrl("/plan/iggi")}. Iggi answers only from the Ledger and cites the Ledger ID of every record it draws on, names the advisor who should plan the journey (the founder by default), and when a journey takes shape opens it as a Folio with a FOL number. Prices, availability and bookings go to that named advisor. Safari Crux is the separate guide of Wild & Co Safaris, the house's Africa site; Iggi hands pure-safari readings across to it.`,
       "",
     ] : []),
     "## Journal (first-hand stories by James)",

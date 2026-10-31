@@ -23362,14 +23362,20 @@
    "category": "lodge",
    "tagline": "Singita's first Botswana lodge: eight raised camps in the western Okavango Delta",
    "quote": "Eight circular camps on stilts across a 170,000-hectare private concession in the western Okavango Delta, opening 11 December 2026.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7bd093c8_1267c69a3_69d79972645ed45be9ae8177_SingitaLeopard_Female_In_Tree.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/singita-elela/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/singita-elela/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/botswana/singita-elela/g2"
+   ],
    "bestMonths": "June to September",
    "bestMonthsNote": "Mokoro and boating depend on the Delta's water and run in season; Singita has not published month-by-month detail [to confirm].",
    "bestFor": [],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.418,
+    "lng": 22.5855
+   },
    "airport": "Maun Airport (MUB), then Elela's own airstrip",
    "airportDirections": "Fly to Maun (Airlink flies daily from Johannesburg and Cape Town), then about 30 minutes by light aircraft to Elela's airstrip, 15 minutes from camp. From Kasane, about 1 hour 30 minutes by light aircraft.",
    "founderNote": null,

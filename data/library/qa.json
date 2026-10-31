@@ -3357,20 +3357,7 @@
    "slug": "singita-elela",
    "name": "Singita Elela",
    "country": "Botswana",
-   "missing": [
-    "name_check",
-    "coordinates"
-   ],
-   "released": true
-  },
-  {
-   "stay_id": "6ae61a3c6b4173db828efd89",
-   "slug": "singita-elela",
-   "name": "Singita Elela",
-   "country": "Botswana",
-   "missing": [
-    "name_check"
-   ],
+   "missing": [],
    "released": true
   },
   {

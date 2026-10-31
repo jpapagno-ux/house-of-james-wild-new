@@ -7,4 +7,5 @@
   claret, overland olive, voyages navy), matching the map pins.
 - House Crimson is for the house: seal, logo, Ledger IDs, "Plan with James". Never a volume colour.
 - Wild Pathways are small theme chips linking to the pathway; they never replace a volume colour.
+- Region pathway chips (approved 31 Oct 2026) live in `lib/content/region-pathways.ts`.
 - Full rule: `docs/brand-colours.md`.

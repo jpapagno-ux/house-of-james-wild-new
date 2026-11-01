@@ -20,7 +20,7 @@ export type Enquiry = {
   message?: string;
   travelNotes: boolean;
   // context carried from the page that sent the traveller here
-  context: { advisor?: string; from?: string; trip?: string; option?: string; travellers?: string; addons?: string; estimate?: string; destination?: string; route?: string; q?: string; folio?: string; notes?: string };
+  context: { advisor?: string; from?: string; trip?: string; option?: string; travellers?: string; addons?: string; estimate?: string; destination?: string; route?: string; q?: string; folio?: string /* FOL- or JRN- */; notes?: string };
   website?: string; // honeypot: must stay empty
 };
 

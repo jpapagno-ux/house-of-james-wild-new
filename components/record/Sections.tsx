@@ -38,7 +38,7 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 }
 
 /* Hero ----------------------------------------------------------------- */
-export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; height?: string }) {
+export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, credit, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; credit?: string; height?: string }) {
   const body = (
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
         {/* the note from the house: floats top-right on desktop, unless a founder stamp is there too — then the two sit together, bottom-right */}
@@ -81,6 +81,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
       {body}
+      {credit && <p className="absolute bottom-2 right-6 md:bottom-1.5 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70">Photo: {credit}</p>}
       <div id="hero-end" className="absolute bottom-0" />
     </section>
   );
@@ -97,7 +98,9 @@ export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stay
 }
 
 /* In-page navigation ------------------------------------------------------ */
-export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan" }: { items: [string, string][]; cta?: string; ctaHref?: string }) {
+// House Crimson, for "Plan with James" only (docs/brand-colours.md, 3).
+export const HOUSE_CRIMSON = "#8B2525";
+export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = false }: { items: [string, string][]; cta?: string; ctaHref?: string; house?: boolean }) {
   return (
     <nav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
       <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
@@ -106,7 +109,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan" }: { items
             <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
-        <Link href={ctaHref} className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0">{cta}</Link>
+        <Link href={ctaHref} className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0" style={house ? { background: HOUSE_CRIMSON, borderColor: HOUSE_CRIMSON, color: "#F4F1ED" } : undefined}>{cta}</Link>
       </div>
     </nav>
   );

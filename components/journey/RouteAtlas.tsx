@@ -21,7 +21,7 @@ const read = (id: string): RouteFile | null => {
 };
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line }: { id: string; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string }) {
+export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker }: { id: string; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string }) {
   const found = routes.map((r) => ({ r, file: read(r.id) })).filter((x): x is { r: AtlasRoute; file: RouteFile } => !!x.file);
   if (!found.length) return null;
   const ink = kind === "voyage" ? VOLUME_STYLES.voyages.pad : VOLUME_STYLES.overland.pad;
@@ -29,7 +29,8 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
     routes: found.map(({ r, file }) => ({ ...file, short: r.label })),
     kind,
     destination: dest,
-    kicker: kind === "voyage" ? "THE VOYAGES · BY SEA" : "THE ROUTES · BY LAND",
+    kicker: kicker ?? (kind === "voyage" ? "THE VOYAGES · BY SEA" : "THE ROUTES · BY LAND"),
+    ...(chart ? { chart } : {}),
     caption: "Positions approximate. Choose a route above the chart; the globe flies to it and plays it day by day.",
   }).replace(/</g, "\\u003c");
   const list = found.map(({ r, file }) => `<li><strong>${esc(r.label)}</strong> · ${esc(r.where)} · ${esc(file.stops.map((s) => s.name.split(" — ")[0]).join(" → "))}</li>`).join("");

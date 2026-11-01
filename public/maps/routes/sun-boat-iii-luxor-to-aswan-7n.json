@@ -1,0 +1,155 @@
+{
+ "id": "sun-boat-iii-luxor-to-aswan-7n",
+ "type": "voyage",
+ "destination": "nile",
+ "title": "Luxor to Aswan aboard Sun Boat III",
+ "subtitle": "7 nights · Luxor to Aswan · Sun Boat III, an A&K Sanctuary",
+ "days": {
+  "1": "Karnak and Luxor Temple",
+  "2": "The Valley of the Kings",
+  "3": "Balloon at dawn, Medinet Habu",
+  "4": "Esna and Edfu",
+  "5": "Kom Ombo",
+  "6": "Aswan and Philae",
+  "7": "Abu Simbel",
+  "8": "Disembark in Aswan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Luxor",
+   "lat": 25.6872,
+   "lng": 32.6396,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Valley of the Kings",
+   "lat": 25.7402,
+   "lng": 32.6014,
+   "mode": "land"
+  },
+  {
+   "day": 3,
+   "name": "Esna",
+   "lat": 25.2934,
+   "lng": 32.554,
+   "mode": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Edfu",
+   "lat": 24.978,
+   "lng": 32.874,
+   "mode": "sea",
+   "path": [
+    [
+     32.554,
+     25.2934
+    ],
+    [
+     32.66,
+     25.15
+    ],
+    [
+     32.874,
+     24.978
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Kom Ombo",
+   "lat": 24.452,
+   "lng": 32.928,
+   "mode": "sea",
+   "path": [
+    [
+     32.874,
+     24.978
+    ],
+    [
+     32.9,
+     24.8
+    ],
+    [
+     32.93,
+     24.64
+    ],
+    [
+     32.928,
+     24.452
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "mode": "sea",
+   "path": [
+    [
+     32.928,
+     24.452
+    ],
+    [
+     32.92,
+     24.38
+    ],
+    [
+     32.88,
+     24.2
+    ],
+    [
+     32.8998,
+     24.0889
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Abu Simbel",
+   "lat": 22.3372,
+   "lng": 31.6258,
+   "mode": "air"
+  },
+  {
+   "day": 8,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "kind": "port",
+   "mode": "air"
+  }
+ ],
+ "map_note": "After Natural Earth · river course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Nile",
+    "lat": 25.45,
+    "lng": 32.4,
+    "kind": "sea"
+   },
+   {
+    "text": "Eastern Desert",
+    "lat": 25.1,
+    "lng": 33.45,
+    "kind": "region"
+   },
+   {
+    "text": "Western Desert",
+    "lat": 24.7,
+    "lng": 32.15,
+    "kind": "region"
+   },
+   {
+    "text": "Lake Nasser",
+    "lat": 22.95,
+    "lng": 32.95,
+    "kind": "sea"
+   }
+  ]
+ }
+}

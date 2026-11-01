@@ -12,6 +12,8 @@ import { graph, touristTrip } from "@/lib/schema";
 import RouteAtlas from "@/components/journey/RouteAtlas";
 import { routeIdFor } from "@/lib/content/route-files";
 import Link from "next/link";
+import NileShipCards from "@/components/ships/NileShipCards";
+import { shipsOn } from "@/lib/content/ships";
 
 // /voyages: Volume 04 hub shell. Small ships and sailing yachts; the
 // Aliikai voyages first. Voyage pages build from James's sample files.
@@ -22,6 +24,7 @@ export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Y
 export default function VoyagesHub() {
   const voyages = journeysFor("indonesia");
   const polar = journeysFor("antarctica");
+  const nile = shipsOn("nile");
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
@@ -42,6 +45,11 @@ export default function VoyagesHub() {
             <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Everything in Indonesia</Link>
           </p>
         </HubSection>
+        {nile.length > 0 && (
+          <HubSection eyebrow="Egypt" title="On the Nile, with A&K Sanctuary" id="nile-h" more={{ label: "Which Nile cruise?", href: "/voyages/nile" }}>
+            <NileShipCards ships={nile} />
+          </HubSection>
+        )}
         {polar.length > 0 && (
           <HubSection eyebrow="The polar regions" title="To the Antarctic Circle" id="polar-h">
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{polar.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>

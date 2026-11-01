@@ -1,0 +1,105 @@
+{
+ "id": "zein-nile-chateau-luxor-to-aswan-4n",
+ "type": "voyage",
+ "destination": "nile",
+ "title": "Luxor to Aswan aboard Zein Nile Chateau",
+ "subtitle": "4 nights · Luxor to Aswan · Zein Nile Chateau, an A&K Sanctuary",
+ "days": {
+  "1": "Karnak and Luxor Temple",
+  "2": "The Valley of the Kings",
+  "3": "Edfu",
+  "4": "Kom Ombo, Philae and a felucca",
+  "5": "Disembark in Aswan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Luxor",
+   "lat": 25.6872,
+   "lng": 32.6396,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Valley of the Kings",
+   "lat": 25.7402,
+   "lng": 32.6014,
+   "mode": "land"
+  },
+  {
+   "day": 3,
+   "name": "Edfu",
+   "lat": 24.978,
+   "lng": 32.874,
+   "mode": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "mode": "sea",
+   "path": [
+    [
+     32.874,
+     24.978
+    ],
+    [
+     32.9,
+     24.8
+    ],
+    [
+     32.93,
+     24.64
+    ],
+    [
+     32.95,
+     24.47
+    ],
+    [
+     32.92,
+     24.38
+    ],
+    [
+     32.88,
+     24.2
+    ],
+    [
+     32.8998,
+     24.0889
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "kind": "port",
+   "mode": "sea"
+  }
+ ],
+ "map_note": "After Natural Earth · river course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Nile",
+    "lat": 25.45,
+    "lng": 32.4,
+    "kind": "sea"
+   },
+   {
+    "text": "Eastern Desert",
+    "lat": 25.1,
+    "lng": 33.45,
+    "kind": "region"
+   },
+   {
+    "text": "Western Desert",
+    "lat": 24.7,
+    "lng": 32.15,
+    "kind": "region"
+   }
+  ]
+ }
+}

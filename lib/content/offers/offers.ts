@@ -71,6 +71,23 @@ const HAND_KEPT: Offer[] = [
     id, year: 2027, status, scope: "stay", ref, name, collection: CAY, country, program, headline,
     travel: { from: "2027-01-01", to: "2027-12-31", text: "2027 [dates to confirm]" }, source, checked: "2026-10-27",
   })),
+
+  // ── 2026 · A&K Sanctuary, Egypt (approved by James, 1 Nov 2026) ──
+  // Filed in the Base44 library as OFR-2026-000129 to 000132 (record_type
+  // "vessel"); kept here until the nightly library sync carries them, after
+  // which the library records replace these by ID. Not on Zein Nile Chateau.
+  ...([
+    ["OFR-2026-000129", "ak-sanctuary-nile-adventurer", "Nile Adventurer"],
+    ["OFR-2026-000130", "nile-seray", "Nile Seray"],
+    ["OFR-2026-000131", "sun-boat-iii", "Sun Boat III"],
+    ["OFR-2026-000132", "sun-boat-iv", "Sun Boat IV"],
+  ] as const).map(([id, ref, name]): Offer => ({
+    id, year: 2026, status: "Live", scope: "vessel", ref, name: `Honeymoon in Egypt (${name})`, country: "Egypt", program: "Time Rewarded",
+    headline: "Honeymoon: 50% off one partner's stay",
+    travel: { from: "2026-11-01", to: "2027-12-31", text: "Travel until 31 December 2027, within 6 months of your marriage" },
+    conditions: "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
+    source: "A&K offers page, honeymoon in Egypt with A&K Sanctuary", checked: "2026-11-01", volume: "voyages",
+  })),
 ];
 
 // Offers filed in the Base44 library arrive with the nightly sync

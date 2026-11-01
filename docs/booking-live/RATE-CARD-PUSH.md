@@ -25,7 +25,26 @@ card that isn't Published, approved and in Supabase.
 
 ## 1. Airtable · Commercial Rates base (`appvlwIuBrNrlqaRr`)
 
-In this order, so links resolve:
+**The template (set 1 Nov 2026, from the Lion Sands push).** Don't type the
+records by hand. Type the partner's card once as an intake JSON
+(`IntakeInput`, see `scripts/booking-live/intake-example-lion-sands.json`) and run
+
+```
+node --experimental-strip-types scripts/booking-live/rate-card-intake.ts intake.json
+```
+
+`lib/booking-live/rates/intake.ts` builds every record below, in link order,
+with **Room Codes equal to the canonical Booking Live codes** (so the sync
+updates the canonical units rather than duplicating them), converts per-person
+seasons to per-room for the base occupancy with the season name saying so, and
+refuses an intake that would fail the sync later (bad codes, seasons outside
+the card, a unit with no seasons, unknown occupancy). Create the records with
+the Airtable MCP table by table, carrying each table's returned ids into the
+next table's `links`, then run the printed link SQL (step 2). `tests/rate-card-intake.test.ts`
+and `tests/lion-sands-checkout.test.ts` are the checks a new card should pass
+before approval: the same engine, the same figures the traveler will see.
+
+The records, in this order, so links resolve:
 
 1. **Properties** — one row: Ledger ID, Property, Site Slug (= the stay's URL
    slug), Time Zone, Booking Mode **Request**, Merchant Model, Stay Type, Rate
@@ -111,6 +130,13 @@ provenance line says *Contracted rate · Rate card 2027-V1 · verified <date> ·
 availability confirmed on request*. The Stay-page cache is 15 minutes.
 
 ## 6. What the traveler sees, by state
+
+A card-priced unit's **Check availability** opens Request to Reserve
+(`/booking/property/<slug>`): dates and party → every unit priced night by
+night with taxes already in the rate, Florida sales tax, total, deposit and
+balance date → Request to Reserve → a stored, immutable quote (held 72 h) →
+the house confirms with the property → payment (Phase 3) charges exactly the
+stored quote. Worked for every Lion Sands unit in `LION-SANDS-CHECKOUT.md`.
 
 | Card state | Stay page |
 | --- | --- |

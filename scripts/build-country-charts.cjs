@@ -5,13 +5,18 @@
 const fs = require("fs");
 const { feature } = require("topojson-client");
 const topo = require("world-atlas/countries-50m.json");
-const FEATS = feature(topo, topo.objects.countries).features;
+const FEATS50 = feature(topo, topo.objects.countries).features;
+// Small islands framed close (Ibiza) draw from the 1:10m stock, as the region insets do; at 1:50m the coast is a polygon.
+const topo10 = require("world-atlas/countries-10m.json");
+const FEATS10 = feature(topo10, topo10.objects.countries).features;
+const FINE = new Set(["spain-ibiza"]);
 const countries = require("../lib/content/countries-library.json").countries;
 const stays = require("../lib/content/stays.json").stays;
 
 const W = 1000;
 // Hand-set frames where the stays sit in one corner of a scattered country (Society Islands, not the Marquesas).
-const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6] };
+// Ibiza: the island, not the whole of Spain.
+const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2] };
 const polysOf = (g) => (g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : []);
 const ringBox = (ring) => ring.reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], [Infinity, Infinity, -Infinity, -Infinity]);
 const area = (ring) => { let a = 0; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) a += (ring[j][0] + ring[i][0]) * (ring[j][1] - ring[i][1]); return Math.abs(a / 2); };
@@ -20,6 +25,7 @@ const shift = (wrap) => (ring) => (wrap ? ring.map(([x, y]) => [x < 0 ? x + 360 
 
 const out = {};
 for (const c of countries) {
+  const FEATS = FINE.has(c.slug) ? FEATS10 : FEATS50;
   const f = FEATS.find((x) => x.properties.name === c.atlasName);
   if (!f) { console.log("no geometry", c.slug, c.atlasName); continue; }
   let wrap = false;

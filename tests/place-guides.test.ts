@@ -76,3 +76,16 @@ test("library places are never countries and always have a live parent", () => {
     }
   }
 });
+
+// Destination-first (Stage 5): Slovenia's three places, each with the stay the house selected,
+// linked to each other as one route (city, Alps, wine hills).
+test("Slovenia has Ljubljana, the Logar Valley and Brda, linked as one route", () => {
+  assert.deepEqual(placeGuides("slovenia").map((x) => x.slug).sort(), ["brda", "ljubljana", "logar-valley"]);
+  assert.equal(placeGuideForStay("zlata-ladjica")?.slug, "ljubljana");
+  assert.equal(placeGuideForStay("hotel-plesnik")?.slug, "logar-valley");
+  assert.equal(placeGuideForStay("alma-vista")?.slug, "brda");
+  for (const g of placeGuides("slovenia")) {
+    const others = placeGuides("slovenia").filter((o) => o.slug !== g.slug).map((o) => o.path).sort();
+    assert.deepEqual(g.onward!.map((o) => o.href).sort(), others, `${g.slug}: onward links don't cover the other places`);
+  }
+});

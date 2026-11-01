@@ -22,7 +22,7 @@ import { guideSlides } from "@/lib/content/guide-slides";
 import { RecordCard } from "@/components/hub/Hub";
 import IslandZoom from "@/components/destination/IslandZoom";
 import { absoluteUrl } from "@/lib/seo";
-import { graph } from "@/lib/schema";
+import { graph, imageObject } from "@/lib/schema";
 
 // A destination guide: the page someone lands on from "Raja Ampat travel guide"
 // or "best time to visit Komodo". Answer first, then the months and the way in,
@@ -58,7 +58,8 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
       ...(g.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: g.ledgerId } } : {}),
       touristType: g.suits.map((s) => s.who),
       includesAttraction: g.highlights.map((h) => ({ "@type": "TouristAttraction", name: h.title, description: h.body })),
-      image: slides.map((s) => s.url),
+      // Borrowed stay frames carry the brand credit into the image data; the guides with their own photographs are unchanged.
+      image: g.slidesFromStay ? slides.map((s) => imageObject(s.url, s.alt, s.credit)) : slides.map((s) => s.url),
     },
   );
 
@@ -70,6 +71,7 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
         <RecordNav items={nav} cta="Plan it with James" ctaHref={`/plan?place=${encodeURIComponent(g.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
+          {g.slidesFromStay && slides[0]?.credit && <p className="mt-2 font-mono text-[10.5px] tracking-[0.12em] uppercase ledger-muted">Hero photographs · {slides[0].credit}</p>}
           <Overview answer={g.answer} facts={g.facts} />
           <FounderProof proof={g.proof} eyebrow={g.proofEyebrow} className="mt-10 max-w-3xl" />
 

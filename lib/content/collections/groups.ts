@@ -19,7 +19,7 @@ export const GROUPS: SisterGroup[] = [
     key: "natural-selection",
     name: "Natural Selection",
     line: "Camps across Botswana and Namibia. Skybeds is booked together with a stay at Tuludi or another Khwai Private Reserve camp.",
-    slugs: ["tuludi-khwai", "skybeds-khwai", "sans-camp", "shipwreck-lodge-namibia"],
+    slugs: ["tuludi-khwai", "skybeds-khwai", "sans-camp", "shipwreck-lodge-namibia", "kwessi-dunes-camp"],
   },
   {
     key: "african-bush-camps",

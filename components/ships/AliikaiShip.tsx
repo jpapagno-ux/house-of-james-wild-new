@@ -15,6 +15,7 @@ import { ALIIKAI_ITINERARY, ALIIKAI_SHIP } from "@/lib/content/ships/aliikai";
 import { FILMS, filmSchema } from "@/lib/content/films";
 import { usd } from "@/lib/pricing";
 import ShipTemplate from "./ShipTemplate";
+import NoDates from "./NoDates";
 import { TRIPS } from "@/lib/content/trips";
 import { mapHtml } from "@/lib/content/trip-pages";
 
@@ -68,7 +69,7 @@ export default function AliikaiShip() {
         eyebrow: `Wild & Co Voyages · The vessel · ${s.ledgerId}`,
         tagline: s.tagline,
         stamp: <FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />,
-        glance: <GlanceBar glance={{ price: { amount: usd(s.low), basis: "per person, 2027 · + 11% tax + 7% Florida sales tax" }, facts: [["Cabins", "7 · 14 guests"], ["Waters", "Raja Ampat · Komodo"], ["Charter", "US$10,900 a night"]], photos: s.gallery.length, cta: { label: "See 2027 dates", href: "#departures" } }} />,
+        glance: <GlanceBar glance={{ price: s.low !== null ? { amount: usd(s.low), basis: "per person, 2027 · + 11% tax + 7% Florida sales tax" } : { amount: "To be announced", basis: "new dates to be announced, ask James" }, facts: [["Cabins", "7 · 14 guests"], ["Waters", "Raja Ampat · Komodo"], ["Charter", "US$10,900 a night"]], photos: s.gallery.length, cta: { label: "See 2027 dates", href: "#departures" } }} />,
         nav: [["In short", "overview"], ["Who she suits", "suits"], ["First Raja Ampat", "first-time"], ["Day by day", "itinerary"], ["Photos", "gallery"], ["Life aboard", "aboard"], ["Cabins", "cabins"], ["The voyages", "voyages"], ["2027 dates", "departures"], ["Charter", "charter"], ["Sailed by James", "founder"], ["FAQ", "faq-heading"]],
         cta: { label: "Ask about Aliikai", href: "/plan?trip=Aliikai" },
         overview: { quote: s.quote, answer: s.answer, facts: s.facts, paragraphs: [s.blurb] },
@@ -77,7 +78,7 @@ export default function AliikaiShip() {
         faqs: s.faqs,
         faqTitle: "Questions About Aliikai",
         host: { key: "voyage:aliikai", name: "Aliikai" },
-        action: { price: usd(s.low), basis: "pp · 2027", cta: "2027 dates" },
+        action: { price: s.low !== null ? usd(s.low) : undefined, basis: "pp · 2027", cta: s.low !== null ? "2027 dates" : "New dates" },
         crumbs: [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Aliikai", path: s.path }],
         jsonld,
       }}
@@ -193,6 +194,7 @@ export default function AliikaiShip() {
           {/* 2027 dates & rates, grouped by voyage */}
           <section id="departures" className={SEC}>
             <SectionHead eyebrow="Departures" title="2027 Dates & Rates" icon="sun" intro="Every 2027 sailing, by voyage. Prices are per person in an ocean-view cabin, double occupancy, plus 11% tax." />
+            {s.groups.length === 0 && <NoDates name="Aliikai" planHref="/plan?trip=Aliikai" />}
             <div className="mt-8 space-y-2">
               {s.groups.map((g) => {
                 const open = g.sailings.filter((x) => !/full/i.test(x.status)).length;

@@ -80,6 +80,24 @@ jobs:
           echo "result=published" >> "$GITHUB_OUTPUT"
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      # The site is static, so "today" is the build date: dated content (offers, departures,
+      # sailings, sessions) is hidden once its end date passes only when the site rebuilds
+      # (lib/dates.ts, docs/site-rules.md). A commit above already deploys; on a night with
+      # nothing to commit (or when the sync itself failed), this asks Vercel to rebuild main
+      # so yesterday's dates drop off regardless.
+      # Needs the repository secret VERCEL_DEPLOY_HOOK (Vercel: Project > Settings > Git >
+      # Deploy Hooks, branch main). Without it, the step prints a notice and passes.
+      - name: Daily rebuild (date rule)
+        if: ${{ !cancelled() && steps.commit.outputs.result != 'published' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK" ]; then
+            echo "::notice title=Daily rebuild skipped::No VERCEL_DEPLOY_HOOK secret. Create a Deploy Hook in Vercel (Project > Settings > Git > Deploy Hooks, branch main) and add its URL as the repository secret VERCEL_DEPLOY_HOOK, so past dates leave the site every day."
+            exit 0
+          fi
+          curl -sSf --retry 3 -X POST "$VERCEL_DEPLOY_HOOK" -o /dev/null && echo "Vercel rebuild requested"
+
       - name: Report back to the Studio
         if: always()
         env:

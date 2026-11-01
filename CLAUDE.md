@@ -27,3 +27,8 @@
 - Before writing about any property, check `docs/verified-facts.md`. Facts there override older copy
   anywhere on the site (e.g. Wilderness Ruckomechi: suites not tents, swimming pool not infinity pool,
   closed 20 Nov to 31 Mar).
+
+## Dates (James, 1 Nov 2026)
+- Dated content (offers, departures, sailings, sessions) is hidden automatically once its end date
+  passes; the site rebuilds daily. Weekly and monthly syncs (to be built) also re-check terms and
+  pull new dates. One rule, one helper: `lib/dates.ts`. Full rule: `docs/site-rules.md`.

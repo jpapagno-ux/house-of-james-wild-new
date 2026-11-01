@@ -1,5 +1,6 @@
 import RateCardPanel from "./RateCardPanel";
 import { cardFor, MORE } from "@/lib/content/rate-cards";
+import { isPast } from "@/lib/dates";
 
 // Server wrapper: shows the rate-card booking panel on any page listed in the
 // card's "pages" map (lib/content/rate-cards/more.json), or nothing.
@@ -14,7 +15,10 @@ const POLICIES = [
 export default function RateCardSection({ pageKey, name, photo, hostHref }: { pageKey: string; name: string; photo: string; hostHref?: string }) {
   const c = cardFor(pageKey);
   if (!c) return null;
-  const o = MORE.offers;
+  // One date rule (lib/dates.ts): rate years and offers past their validTo drop out; no year left, no panel.
+  const years = Object.fromEntries(Object.entries(MORE.properties[c.property].years).filter(([, y]) => !isPast(y.validTo)));
+  if (!Object.keys(years).length) return null;
+  const o = MORE.offers && !isPast(MORE.offers.validTo) ? MORE.offers : undefined;
   const offers = o ? { freeNight: o.freeNight, celebrate: o.celebrate, returning: o.returning, notes: [...(o.notes ?? []), ...(o.notesByProperty?.[c.property] ?? [])] } : undefined;
-  return <RateCardPanel name={name} partner="MORE" years={MORE.properties[c.property].years} rowKeys={c.rows.map((r) => r.key)} photo={photo} offers={offers} offersUntil={o?.validTo} included={INCLUDED} excluded={EXCLUDED} policies={POLICIES} hostHref={hostHref} />;
+  return <RateCardPanel name={name} partner="MORE" years={years} rowKeys={c.rows.map((r) => r.key)} photo={photo} offers={offers} offersUntil={o?.validTo} included={INCLUDED} excluded={EXCLUDED} policies={POLICIES} hostHref={hostHref} />;
 }

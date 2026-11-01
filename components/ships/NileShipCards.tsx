@@ -23,7 +23,7 @@ export default function NileShipCards({ ships, credit = "A&K Sanctuary" }: { shi
                   <dl className="mt-auto pt-4 grid grid-cols-3 gap-2 text-[13.5px] border-t ledger-rule">
                     <div className="pt-3"><dt className="ledger-eyebrow">Nights</dt><dd>{nightsLabel(s).replace(" nights", "")}</dd></div>
                     <div className="pt-3"><dt className="ledger-eyebrow">Guests</dt><dd>{g ?? "To confirm"}</dd></div>
-                    <div className="pt-3 text-right"><dt className="ledger-eyebrow">{f.kind === "cruise" ? "From" : f.kind === "journey" ? "Journeys" : "Rates"}</dt><dd className="ledger-display ledger-crimson text-[17px]">{f.kind === "request" ? "On request" : f.amount}</dd></div>
+                    <div className="pt-3 text-right"><dt className="ledger-eyebrow">{f.kind === "cruise" ? "From" : f.kind === "journey" ? "Journeys" : f.kind === "tba" ? "New dates" : "Rates"}</dt><dd className="ledger-display ledger-crimson text-[17px]">{f.kind === "request" ? "On request" : f.kind === "tba" ? "Ask James" : f.amount}</dd></div>
                   </dl>
                 </div>
               </Link>

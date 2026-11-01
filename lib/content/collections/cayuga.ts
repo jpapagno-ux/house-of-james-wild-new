@@ -8,7 +8,8 @@
 // "Choose it for" lines are James's, from his library story WED-2026-000007.
 // Jicaro and Bolontiku have no stay page or photos yet: their cards say so.
 
-import { OFFER_LEDGER, offersInCollection, type Offer } from "@/lib/content/offers/offers";
+import { offersInCollection, type Offer } from "@/lib/content/offers/offers";
+import { today } from "@/lib/dates";
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 const F = "jwco/collections/cayuga-collection";
@@ -266,13 +267,13 @@ const cardOf = (x: Offer): CollectionOffer & { id: string } => ({
   id: x.id, hotel: x.name, program: x.program as CollectionOffer["program"], headline: x.headline, travel: x.travel.text, until: x.travel.to, note: x.conditions,
   image: x.image ? img(x.image.id.replace(`${F}/`, ""), x.image.alt, x.image.w, x.image.h, false) : CAYUGA.hero,
 });
-export const OFFERS = OFFER_LEDGER.filter((x) => x.collection === "cayuga-collection" && x.status === "Live").map(cardOf);
+export const OFFERS = offersInCollection("cayuga-collection").map(cardOf);
 export const OFFER_PROGRAMS = [
   { name: "Worth Another Night" as const, line: "A free night on a shorter stay: three nights for the price of two, or four for three." },
   { name: "Time Rewarded" as const, line: "Stay five nights and the fifth is on the hotel, for the places that reward slowing down." },
 ];
 /** Offers still open on a given day (build time for the static site). */
-export const liveOffers = (today = new Date().toISOString().slice(0, 10)) => offersInCollection("cayuga-collection", today).map(cardOf);
+export const liveOffers = (on = today()) => offersInCollection("cayuga-collection", on).map(cardOf);
 
 /** The collection a stay belongs to, for the link on its stay page. */
 export const collectionForStay = (slug: string) => (CAYUGA.hotels.some((h) => h.built && h.slug === slug) ? CAYUGA : undefined);

@@ -1,4 +1,5 @@
 import data from "./whats-coming.json";
+import { activeOnly } from "@/lib/dates";
 
 // What's coming (James, 31 Oct 2026): lodges announced, opening or being
 // rebuilt, filed before they open. Read from the Library (coming_status,
@@ -12,7 +13,12 @@ export type Coming = {
   bestMonths: string | null; airport: string | null; volume: string | null;
 };
 
-export const COMING = (data as { coming: Coming[] }).coming;
+// One date rule (lib/dates.ts): once an announced, opening or rebuilding
+// lodge's date has passed, it has opened and leaves "coming" (a month or a
+// year counts to its last day). "Reopened" entries are already open by
+// definition and stay until the library takes them off.
+const FILED = (data as { coming: Coming[] }).coming;
+export const COMING = activeOnly(FILED, (c) => (c.status === "reopened" ? null : c.date));
 export const COMING_EXPORTED_ON = (data as { exportedOn: string }).exportedOn;
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];

@@ -30,7 +30,7 @@ records by hand. Type the partner's card once as an intake JSON
 (`IntakeInput`, see `scripts/booking-live/intake-example-lion-sands.json`) and run
 
 ```
-node --experimental-strip-types scripts/booking-live/rate-card-intake.ts intake.json
+node --experimental-strip-types tests/tools/rate-card-intake.ts intake.json
 ```
 
 `lib/booking-live/rates/intake.ts` builds every record below, in link order,

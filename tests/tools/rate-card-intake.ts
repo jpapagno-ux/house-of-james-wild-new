@@ -2,7 +2,7 @@
 // into the Airtable records to create — table by table, in link order — and
 // the SQL that binds the canonical Booking Live units to the new Airtable ids.
 //
-//   node --experimental-strip-types scripts/booking-live/rate-card-intake.ts intake.json
+//   node --experimental-strip-types tests/tools/rate-card-intake.ts intake.json
 //
 // intake.json has the IntakeInput shape (lib/booking-live/rates/intake.ts);
 // scripts/booking-live/intake-example-lion-sands.json is the worked example.

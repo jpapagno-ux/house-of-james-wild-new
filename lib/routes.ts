@@ -251,6 +251,7 @@ export const STAY_SLUGS: string[] = [
   "kamalaya-koh-samui",
   "kayumanis-jimbaran-private-estates",
   "kayumanis-nusa-dua",
+  "kayumanis-sanur",
   "kayumanis-ubud",
   "khwai-leadwood-camp",
   "khwai-lediba",

@@ -14192,7 +14192,7 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null,
+   "engine": "kayumanis-jimbaran-private-estates-",
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
@@ -14292,7 +14292,7 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null,
+   "engine": "kayumanis-nusa-dua",
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
@@ -14304,6 +14304,87 @@
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ]
+  },
+  {
+   "slug": "kayumanis-sanur",
+   "name": "Kayumanis Sanur Private Villa & Spa",
+   "ledgerId": "STY-2026-000547",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eleven private pool villas in a Balinese village garden in Sanur",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g5"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -8.699655,
+    "lng": 115.25746
+   },
+   "airport": "Ngurah Rai International Airport (DPS)",
+   "airportDirections": "Airport transfers can be arranged by the villa.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eleven private pool villas set along a stone path through a garden laid out like a traditional Balinese village. One-Bedroom Pool Villas sit in walled gardens with a thatched lounge pavilion and in-villa dining; Two- and Three-Bedroom Pool Villas add open-plan living pavilions, kitchenettes and larger pools with timber sundecks."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Spa treatments, sunrise breakfasts, beach picnics, romantic in-villa dinners, high tea and cooking classes. A shuttle within Sanur during the day."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "In Sanur, Bali's relaxed east-coast village, with a beach facility on Sanur beach. Kayumanis Spa Sanur in its own garden compound, and Kayumanis Resto Sanur by the sea for Indonesian cooking and island-fresh dishes. 24-hour butler service."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A villa compound inspired by a traditional Balinese village, where every villa has its own walled garden and pool and a butler on call around the clock."
+   ],
+   "why": [
+    {
+     "title": "A Village of Your Own",
+     "body": "Best for couples, families and friends who want a private pool villa within easy reach of the beach."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": "kayumanis-sanur",
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -14393,7 +14474,7 @@
    "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
-   "engine": null,
+   "engine": "kayumanis-ubud",
    "pathway": {
     "primary": "PATH-05",
     "secondary": [

@@ -1,5 +1,7 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
+import { sharpen } from "@/lib/content/sharpen";
 import { useEffect, useRef, useState } from "react";
 import { Moon, Plane, RotateCcw, Sun, ZoomIn, ZoomOut } from "lucide-react";
 import LedgerChart, { projectOn, UnescoMark, type ChartData } from "./LedgerChart";
@@ -12,6 +14,7 @@ import LedgerChart, { projectOn, UnescoMark, type ChartData } from "./LedgerChar
 // chart is also listed beside it as text, so nothing lives only in the picture.
 export type FlyPin = { name: string; href: string; lat: number; lng: number };
 export type FlyUnesco = { id: string; name: string; year: number; url: string };
+export type FlyFrame = { src: string; alt: string; href: string; name: string; night: boolean };
 
 type Stage = "far" | "aim" | "fly" | "land" | "ring";
 type Box = { x: number; y: number; w: number; h: number };
@@ -24,9 +27,9 @@ const STARS: [number, number, number, number][] = (() => {
 })();
 const btn = "inline-flex items-center gap-1.5 bg-paper/90 border ledger-border px-2 py-1 sm:px-3 sm:py-1.5 font-mono text-[9.5px] sm:text-[10.5px] tracking-[0.12em] uppercase";
 
-export default function ChartFlyover({ from, to, fromName, title, line, pins, unesco, notes, focus }: {
+export default function ChartFlyover({ from, to, fromName, title, line, pins, unesco, notes, focus, frames = [] }: {
   from: ChartData; to: ChartData; fromName: string; title: string; line: string;
-  pins: FlyPin[]; unesco: FlyUnesco[]; notes: string[];
+  pins: FlyPin[]; unesco: FlyUnesco[]; notes: string[]; frames?: FlyFrame[];
   /** After landing, ring one feature of the close chart (a salt flat) and offer a closer zoom onto it. */
   focus?: { name: string; line: string; zoomLabel: string; night?: string };
 }) {
@@ -173,6 +176,7 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
               )}
             </div>
           </div>
+          {frames.length > 0 && <Filmstrip frames={night && frames.filter((f) => f.night).length >= 2 ? frames.filter((f) => f.night) : frames} night={night} />}
           <figcaption className="px-3 py-2 border-t ledger-border font-mono text-[10px] tracking-[0.12em] uppercase ledger-muted flex justify-between gap-4">
             <span>Flyover · 1:50m to 1:10m</span><span>Positions approximate · outlines indicative</span>
           </figcaption>
@@ -207,5 +211,26 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
         </div>
       </div>
     </section>
+  );
+}
+
+// The filmstrip: the pinned stays' own photographs drifting under the chart. It pauses under a finger or a
+// pointer, stays still for reduced motion (and scrolls by hand instead), and turns to the after-dark frames
+// when the chart shows the night sky. The second copy of the row only makes the loop seamless.
+function Filmstrip({ frames, night }: { frames: FlyFrame[]; night: boolean }) {
+  const row = (copy: boolean) => frames.map((f, i) => (
+    <li key={`${copy ? "b" : "a"}${f.src}${i}`} aria-hidden={copy || undefined} className="shrink-0 pr-2">
+      <Link href={f.href} tabIndex={copy ? -1 : undefined} className="group relative block w-[132px] sm:w-[168px] aspect-[3/2] overflow-hidden bg-paper-card">
+        <Image src={sharpen(f.src)} alt={copy ? "" : f.alt} fill sizes="168px" className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
+        <span className="absolute inset-x-0 bottom-0 px-2 pt-5 pb-1.5 bg-gradient-to-t from-black/65 to-transparent font-mono text-[9px] tracking-[0.12em] uppercase text-white truncate">{f.name}</span>
+      </Link>
+    </li>
+  ));
+  return (
+    <div className={`fly-strip relative overflow-hidden border-t ledger-border py-2.5 transition-colors duration-1000 ${night ? "bg-[#0B1220]" : "bg-paper"}`} aria-label="The stays on this chart, in photographs">
+      <ul key={night ? "night" : "day"} className="fly-strip-track flex w-max">{row(false)}{row(true)}</ul>
+      <span aria-hidden="true" className={`pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r ${night ? "from-[#0B1220]" : "from-paper"} to-transparent`} />
+      <span aria-hidden="true" className={`pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l ${night ? "from-[#0B1220]" : "from-paper"} to-transparent`} />
+    </div>
   );
 }

@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-10-31",
+ "checkedOn": "2026-11-01",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -375,13 +375,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8c8",
    "slug": "atzaro-okavango-camp",
-   "name": "Atzaro Okavango",
+   "name": "Atzaró Okavango",
    "country": "Botswana",
-   "missing": [
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8c9",
@@ -1366,7 +1363,7 @@
    "stay_id": "6a85bfb37f6eb35689bff90f",
    "slug": "few-far-luvhondo",
    "name": "Few & Far Luvhondo",
-   "country": "Kenya",
+   "country": "South Africa",
    "missing": [
     "stay_copy",
     "coordinates"
@@ -1613,12 +1610,8 @@
    "slug": "house-in-the-wild",
    "name": "House in the Wild",
    "country": "Kenya",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff91e",
@@ -1911,6 +1904,14 @@
    "stay_id": "6a85bfb37f6eb35689bff930",
    "slug": "kayumanis-nusa-dua",
    "name": "Kayumanis Nusa Dua Private Villa & Spa",
+   "country": "Indonesia",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae71f3f5b6015b7688cd739",
+   "slug": "kayumanis-sanur",
+   "name": "Kayumanis Sanur Private Villa & Spa",
    "country": "Indonesia",
    "missing": [],
    "released": true
@@ -2320,24 +2321,22 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff94a",
    "slug": "linyanti-ebony-camp",
-   "name": "Linyanti Ebony Camp",
+   "name": "Linyanti Ebony",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff94b",
    "slug": "linyanti-expedition-camp",
-   "name": "Linyanti Expedition Camp",
+   "name": "Linyanti Expeditions",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bffa02",
@@ -2697,12 +2696,11 @@
    "stay_id": "6a85bfb37f6eb35689bff96b",
    "slug": "nimali-mara",
    "name": "Nimali Mara",
-   "country": "Kenya",
+   "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96c",
@@ -2710,10 +2708,9 @@
    "name": "Nimali Serengeti",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96d",
@@ -3166,11 +3163,9 @@
    "name": "San Camp",
    "country": "Botswana",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff993",
@@ -3707,13 +3702,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c4",
    "slug": "skybeds-khwai",
-   "name": "Skybeds Khwai",
+   "name": "Skybeds",
    "country": "Botswana",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc1a",
@@ -3800,6 +3794,16 @@
    "name": "Anantara Stanley & Livingstone",
    "country": "Zimbabwe",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae669ae51b8a2761cb42b90",
+   "slug": "sterrekopje",
+   "name": "Sterrekopje Healing Farm",
+   "country": "South Africa",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -4270,14 +4274,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9e6",
    "slug": "tuludi-khwai",
-   "name": "Tuludi Khwai",
+   "name": "Tuludi",
    "country": "Botswana",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc20",

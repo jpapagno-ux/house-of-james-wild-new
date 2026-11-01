@@ -3,6 +3,7 @@
 // with its stay slugs; only stays with a built page appear.
 //   Green Safaris (greensafaris.com): Zambia only. Kaya Mawa (Malawi) is left out:
 //   the house does not sell Malawi (James, 31 Oct 2026).
+//   Natural Selection and African Bush Camps added 31 Oct 2026 (brand sites).
 import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
 
 export type SisterGroup = { key: string; name: string; line: string; slugs: string[] };
@@ -13,6 +14,30 @@ export const GROUPS: SisterGroup[] = [
     name: "Green Safaris",
     line: "Eco lodges and camps across Zambia, from the Zambezi above Victoria Falls to Kafue, South Luangwa and the Lower Zambezi.",
     slugs: ["tongabezi", "sindabezi-island-camp", "ila-safari-lodge", "chisa-busanga-camp", "shawa-luangwa-camp", "sausage-tree-camp", "potato-bush-camp"],
+  },
+  {
+    key: "natural-selection",
+    name: "Natural Selection",
+    line: "Camps across Botswana and Namibia. Skybeds is booked together with a stay at Tuludi or another Khwai Private Reserve camp.",
+    slugs: ["tuludi-khwai", "skybeds-khwai", "sans-camp", "shipwreck-lodge-namibia"],
+  },
+  {
+    key: "african-bush-camps",
+    name: "African Bush Camps",
+    line: "Camps in Botswana and Zimbabwe, from the Linyanti Enclave to Hwange National Park.",
+    slugs: ["linyanti-ebony-camp", "linyanti-expedition-camp", "somalisa-acacia"],
+  },
+  {
+    key: "nimali-africa",
+    name: "Nimali Africa",
+    line: "Tented camps in northern Tanzania, four hours' game drive apart, from the central Serengeti to the Mara River.",
+    slugs: ["nimali-serengeti", "nimali-mara"],
+  },
+  {
+    key: "kayumanis",
+    name: "Kayumanis",
+    line: "Private pool villa estates across Bali: Ubud, Nusa Dua, Jimbaran and Sanur, each bookable live.",
+    slugs: ["kayumanis-ubud", "kayumanis-nusa-dua", "kayumanis-jimbaran-private-estates", "kayumanis-sanur"],
   },
 ];
 

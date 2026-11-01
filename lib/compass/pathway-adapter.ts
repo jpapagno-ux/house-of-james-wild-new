@@ -45,7 +45,7 @@ export const SETTING_TO_PATHWAY: Record<Setting, PathwayId> = {
 
 const PARTY_SUITS: Record<Party, string[]> = {
   couple: ["couples", "honeymoon"], family: ["families", "family"], friends: ["small_groups", "private_groups", "friends"],
-  solo: ["solo", "couples"], group: ["private_groups", "small_groups", "exclusive_use"],
+  solo: ["solo"], group: ["private_groups", "small_groups", "exclusive_use"],
 };
 
 export type Reason = { kind: "pathway" | "party" | "interest" | "privacy" | "season" | "conservation" | "culture" | "verdict"; text: string; weight: number };
@@ -78,7 +78,27 @@ export function fitsSeason(bestMonths: string | null | undefined, season: Season
   return /may|jun|jul|aug|sep|oct|nov|year.round|january.december/.test(m);
 }
 
-type Record_ = PathwayRecord & { bestMonths?: string | null; hasVerdict?: boolean };
+type Record_ = PathwayRecord & {
+  bestMonths?: string | null; hasVerdict?: boolean;
+  /** Set by the page when the record's impact statements are documented, so the client payload need not carry them. */
+  impactDocumented?: boolean;
+  /** The founder's standing with the place (founder_vetted / founder_returned / founder_visited / partner_verified): a tie-break, never a reason to appear. */
+  founderMark?: string | null;
+  /** For the diversity rule: no shortlist is five camps in one country when others fit as well. */
+  country?: string | null;
+  kind?: "stay" | "voyage" | "route";
+};
+
+/** Best-for tags from the Ledger (bestFor) → the suitability words the party axis reads. */
+export const BEST_FOR_SUITS: Record<string, string[]> = {
+  honeymoon: ["couples", "honeymoon"], family: ["families"], solo: ["solo"], group_exclusive_use: ["private_groups", "exclusive_use", "families"],
+  wildlife_photography: ["photographers"], adventure: ["friends", "solo"], wine: ["couples"], first_safari: ["families", "couples"], luxury: [],
+};
+export const suitabilityFrom = (bestFor: string[] | null | undefined, own: string[]): string[] => {
+  const out = new Set(own);
+  for (const b of bestFor ?? []) for (const w of BEST_FOR_SUITS[b] ?? []) out.add(w);
+  return [...out];
+};
 
 export function readPathways(reading: Reading, records: Record_[], opts: { includeDrafts?: boolean; limit?: number } = {}): Shortlist {
   const wanted = (reading.settings ?? []).map((s) => SETTING_TO_PATHWAY[s]);
@@ -110,17 +130,32 @@ export function readPathways(reading: Reading, records: Record_[], opts: { inclu
     if (reading.privacy === "small_camp" && r.suitability.includes("small_groups")) reasons.push({ kind: "privacy", text: "small camp, few guests", weight: 1 });
     const season = fitsSeason(r.bestMonths, reading.season ?? "any");
     if (season === true) reasons.push({ kind: "season", text: `in season for the ${reading.season} months`, weight: 1 });
-    const documented = r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"));
+    const documented = r.impactDocumented ?? r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"));
     if (reading.conservation && documented) reasons.push({ kind: "conservation", text: "what the stay gives back is on record, with a source", weight: 1.5 });
     if (reading.culture && all.includes("PATH-08")) reasons.push({ kind: "culture", text: "rooted in place: hosts and history, not only scenery", weight: 1.5 });
     if (r.hasVerdict) reasons.push({ kind: "verdict", text: "James has a Field Verdict on file", weight: 0.5 });
+    if (!r.hasVerdict && r.founderMark && r.founderMark !== "unclassified") reasons.push({ kind: "verdict", text: r.founderMark === "partner_verified" ? "partner-verified in the Ledger" : "the founder has been", weight: 0.25 });
 
+    // The pathways are the discovery axis (brief §4): once a traveller names a setting, only records on one of
+    // those pathways answer. Party, season, privacy and the rest rank within that, never around it.
+    if (wanted.length && !reasons.some((x) => x.kind === "pathway")) continue;
     const score = reasons.reduce((n, x) => n + x.weight, 0);
     if (score <= 0) continue;
     reasons.sort((a, b) => b.weight - a.weight);
     fits.push({ ledgerId: r.ledgerId, slug: r.slug, primaryPathway: r.primaryPathway, pathways: all, volumes: r.volumes, score, reasons, fieldVerdict: !!r.hasVerdict, impactDocumented: documented });
   }
   fits.sort((a, b) => b.score - a.score || a.slug.localeCompare(b.slug));
+  // Diversity: with the whole Ledger answering, a shortlist should not be five camps in one country
+  // when places elsewhere fit just as well. At most two per country until the limit is short of fits.
+  const byCountry = new Map(records.map((r) => [r.slug, r.country ?? null]));
+  const picked: Fit[] = []; const seen = new Map<string, number>(); const passedOver: Fit[] = [];
+  for (const f of fits) {
+    const c = byCountry.get(f.slug) ?? "";
+    if (c && (seen.get(c) ?? 0) >= 2) { passedOver.push(f); continue; }
+    picked.push(f); seen.set(c, (seen.get(c) ?? 0) + 1);
+    if (picked.length >= limit) break;
+  }
+  const shortlist = picked.length < limit ? [...picked, ...passedOver].slice(0, limit) : picked;
 
   // A reading that is only "wildlife" is a safari reading: Crux's territory.
   const safariOnly = wanted.length > 0 && wanted.every((p) => p === "PATH-04");
@@ -132,5 +167,5 @@ export function readPathways(reading: Reading, records: Record_[], opts: { inclu
     reading.season && reading.season !== "any" ? `in the ${reading.season} months` : null,
     reading.conservation ? "giving back matters" : null,
   ].filter(Boolean);
-  return { fits: fits.slice(0, limit), handoff, explain: `Iggi weighed: ${parts.join(", ")}.` };
+  return { fits: shortlist, handoff, explain: `Iggi weighed: ${parts.join(", ")}.` };
 }

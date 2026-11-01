@@ -249,7 +249,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </>}
           <TalkToUs name={s.name} planHref={planHref} />
           {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
-          <PlanBand place={s.name} compassHref="/compass" />
+          <PlanBand place={s.name} compassHref="/compass" where={{ ledgerId: s.ledgerId }} />
         </div>
         {hostEarly && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={host.host?.seats} />}
       </main>

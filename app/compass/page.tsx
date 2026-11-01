@@ -7,13 +7,10 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { COSTA_RICA } from "@/lib/content/preview/costa-rica";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
-import CompassPreview, { type PreviewRecord } from "@/components/pathways/CompassPreview";
-import { pathwayStays } from "@/lib/content/pathways";
+import CompassPreview from "@/components/pathways/CompassPreview";
+import { compassLedger } from "@/lib/compass/ledger";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_LIST } from "@/lib/pathways";
-import { verdictFor } from "@/lib/content/verdicts";
-import { statusLine, type HouseStatus } from "@/lib/ledger/status";
-import { recordHref } from "@/lib/ledger/urls";
 
 // /compass: the James Wild Compass on its own page. Starts one question
 // earlier than the destination Compass ("Where are you drawn?"). Costa Rica
@@ -102,18 +99,15 @@ export default function CompassPage() {
 // Rica Compass above is untouched. Pure safari readings hand to Crux.
 function PathwayReading() {
   const hrefs = Object.fromEntries(PATHWAY_LIST.map((p) => [p.id, pathwayHref(p.key)]));
-  const records: PreviewRecord[] = pathwayStays().map((r) => {
-    const v = verdictFor(`stay:${r.slug}`);
-    return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions, suitability: r.suitability, classificationStatus: r.classificationStatus, classifiedBy: r.classifiedBy, impact: r.impact,
-      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: recordHref("stay", r.slug), pathwayHref: hrefs };
-  });
-  if (!records.length) return null;
+  const { stays, journeys } = compassLedger(); // counts only; the client fetches the records from /compass/ledger.json
+  const records: never[] = [];
+  if (!stays.length) return null;
   return (
     <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="pathway-reading-h">
       <p className="ledger-eyebrow ledger-crimson">Wild Pathways</p>
       <h2 id="pathway-reading-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Or Let the Pathways Read You</h2>
-      <p className="mt-3 max-w-2xl text-[16px] ledger-muted leading-relaxed">Eight editorial collections across the Ledger. Tell Iggi the setting you&rsquo;re drawn to and who&rsquo;s travelling; every suggestion names its pathway and the reason. {records.length} approved stays answer today.</p>
-      <CompassPreview records={records} live enquireHref="/plan" />
+      <p className="mt-3 max-w-2xl text-[16px] ledger-muted leading-relaxed">Eight editorial collections across the Ledger. Tell Iggi the setting you&rsquo;re drawn to and who&rsquo;s travelling; every suggestion names its pathway and the reason. {stays.length} approved stays and {journeys.length} journeys answer today.</p>
+      <CompassPreview records={records} recordsUrl="/compass/ledger.json" live enquireHref="/plan" pathwayHrefs={hrefs} />
     </section>
   );
 }

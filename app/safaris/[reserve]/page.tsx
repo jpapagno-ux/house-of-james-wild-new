@@ -154,7 +154,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           <TalkToUs name={r.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
-          <div id="plan" className="scroll-mt-32 lg:scroll-mt-[212px]"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} /></div>
+          <div id="plan" className="scroll-mt-32 lg:scroll-mt-[212px]"><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} where={{ countrySlug: r.stay.countrySlug, volume: "safaris" }} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND["reserve"].who} seats={host.host.seats} />}
       </main>

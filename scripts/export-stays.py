@@ -16,7 +16,10 @@ MEDIA = "https://media.base44.com/images/public/"
 # Countries filed under a destination they don't belong to (flagged in review).
 NOT_IN = {"south-africa": {"camp-hwange-muddy-teak": "Zimbabwe", "gorongosa-safaris": "Mozambique"}, "costa-rica": {"isla-palenque-resort": "Panama"}}
 # Live booking-engine properties (Tag Albie), by stay slug.
-ENGINE = {"leeu-estates": "leeu-estates-resorts", "le-quartier-francais": "le-quartier-francais", "leeu-house": "leeu-house"}
+ENGINE = {"leeu-estates": "leeu-estates-resorts", "le-quartier-francais": "le-quartier-francais", "leeu-house": "leeu-house",
+          # Kayumanis (James, 1 Nov 2026). The Jimbaran engine address ends in a hyphen on the engine itself.
+          "kayumanis-ubud": "kayumanis-ubud", "kayumanis-nusa-dua": "kayumanis-nusa-dua",
+          "kayumanis-jimbaran-private-estates": "kayumanis-jimbaran-private-estates-", "kayumanis-sanur": "kayumanis-sanur"}
 # Hand corrections to library records, re-applied on every export.
 FIX = {
     "arenal-springs-camp-by-nayara": {"name": "Arenal Springs Camp by Nayara"},

@@ -103,21 +103,28 @@ export const ADVISORS: Advisor[] = [
     ledgerId: "ADV-2026-000002",
     name: "Anthony Papagno",
     firstName: "Anthony",
-    role: "Travel Advisor",
-    roleApproved: false,
+    role: "Travel Advisor · Nature & Wildlife",
+    roleApproved: true,
     portrait: { url: `${CDN}/67d1f822a724915185466057_team-anthony.avif`, alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
-    intro: "Travels for new perspectives and lasting connections. Recently sailed Raja Ampat with his father.",
+    intro: "James's son. Nature, wildlife and the trail: Indonesia, the Galápagos and Costa Rica so far, and he's following his father's footsteps.",
     bio: [
-      "Anthony spent years watching his father explore, then started doing it himself. He travels for the new perspective and the people, and he's the one who'll tell you which side trip was worth it.",
-      "In November 2024 he sailed Raja Ampat in Indonesia aboard the yacht Aliikai with James. The trip sharpened what he already knew: the best of a place is usually just past where most people stop.",
-      "He also works with the house's content team on the stories behind the Ledger.",
+      "Anthony is James's son, and he grew up watching his father leave for somewhere wild and come back with a story. Then he started going himself. He travels for nature, wildlife and the walk in: the trail, the reef, the forest at first light.",
+      "He has been to Indonesia, the Galápagos and Costa Rica. In November 2024 he sailed Raja Ampat aboard the yacht Aliikai with James, which sharpened what he already knew: the best of a place is usually just past where most people stop.",
+      "He plans the journeys he would take himself: a boat you can jump off, a lodge with a trail from the door, a guide who knows the birds by call. He also works with the house's content team on the stories behind the Ledger.",
     ],
-    specialties: [],
-    traveled: [{ place: "Raja Ampat, Indonesia, aboard Aliikai", year: 2024 }],
+    specialties: ["Nature & wildlife", "Hikes & trails", "Islands & reefs", "Rainforest & cloud forest", "Small ships & sailing yachts"],
+    traveled: [
+      { place: "Raja Ampat, Indonesia, aboard Aliikai", year: 2024 },
+      { place: "The Galápagos" },
+      { place: "Costa Rica" },
+    ],
     profileHref: "/advisors/anthony-papagno",
     desk: {
       adv: "ADV-2026-000002", sample: false, since: 2024, joined: 2026, agency: null, base: "Palm Beach, Florida", languages: ["English"],
-      volumes: ["voyages"], countries: ["indonesia"], specialties: [], line: "The best of a place is usually just past where the itinerary stops.",
+      volumes: ["voyages", "stays", "overland"], countries: ["indonesia", "ecuador-galapagos", "costa-rica"],
+      specialties: ["Nature & wildlife", "Hikes & trails", "Islands & reefs", "Rainforest & cloud forest", "Small ships & sailing yachts"],
+      line: "The best of a place is usually just past where the itinerary stops.",
+      // Entries carry only what Anthony has stated first-hand; the Galápagos and Costa Rica are on his record as places, not yet as marked stays.
       entries: [{ ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Know a Place", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "—" }],
       folios: [],
     },
@@ -263,8 +270,11 @@ export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: s
     (where.volume ? e.volume === where.volume : true);
   const hits = DESK_ADVISORS.map((a) => ({ a, es: a.desk!.entries.filter(match) })).filter((x) => x.es.length);
   hits.sort((x, y) => (x.a.slug === DEFAULT_ADVISOR ? -1 : y.a.slug === DEFAULT_ADVISOR ? 1 : y.es.reduce((n, e) => n + e.guests, 0) - x.es.reduce((n, e) => n + e.guests, 0)));
+  // After those with a marked entry here: advisors who state they know the country
+  // (desk.countries) but have no marked stay in it yet — they still should be asked.
+  const knows = where.countrySlug ? DESK_ADVISORS.filter((a) => !hits.some((h) => h.a === a) && a.desk!.countries.includes(where.countrySlug!) && (!where.volume || a.desk!.volumes.includes(where.volume))) : [];
   return {
-    advisors: hits.map((x) => x.a),
+    advisors: [...hits.map((x) => x.a), ...knows],
     slept: hits.filter((x) => x.es.some((e) => e.theirs && e.theirs.mark !== "Sent Guests")).length,
     carried: hits.reduce((n, x) => n + x.es.length, 0),
   };

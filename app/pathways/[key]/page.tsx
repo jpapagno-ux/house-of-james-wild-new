@@ -14,6 +14,7 @@ import { altFor } from "@/lib/content/stays";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { faqPage, graph, ids } from "@/lib/schema";
+import { tripsOnPathway } from "@/lib/content/pathways/trips";
 
 // /pathways/[key]: one Wild Pathway's collection page (Phase 2C). Lists the
 // Ledger records James has APPROVED on it, each under its own canonical card
@@ -34,6 +35,7 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
   const { key } = await params; const p = pathway(key);
   if (!PATHWAYS_ON || !p) notFound();
   const items = onPathway(p.id); // approved only
+  const trips = tripsOnPathway(p.id); // 2B: approved voyages and routes, primary first
   const path = `/pathways/${p.key}`;
   const trail = [{ name: "Home", path: "/" }, { name: "Pathways", path: "/pathways" }, { name: p.name, path }];
   return (
@@ -55,13 +57,25 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
             ) : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
           </HubSection>
           {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
+          {trips.length > 0 && (
+            <HubSection eyebrow="By sea and by road" title={`${trips.length} ${trips.length === 1 ? "Journey" : "Journeys"} Along ${p.name}`} id="journeys-h">
+              <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                {trips.map((t) => (
+                  <li key={t.slug} className="flex flex-col gap-3">
+                    <RecordCard name={t.name} id={t.ledgerId ?? t.slug} line={t.line} image={{ url: t.hero?.url ?? "", alt: t.hero?.alt ?? t.name }} href={t.href} eyebrow={`${t.kind === "voyage" ? "Voyage" : "Overland"}${t.country ? ` · ${t.country}` : ""}`} />
+                    <PathwayChips primary={t.primary} secondary={t.secondary} hrefFor={(x) => pathwayHref(x.key)} />
+                  </li>
+                ))}
+              </ul>
+            </HubSection>
+          )}
           <FaqBlock faqs={PATHWAY_FAQS[p.id]} title={`Questions About ${p.name}`} />
           <HubSection eyebrow="Index" title="The Other Pathways" id="others-h"><PathwayIndex hrefFor={(x) => pathwayHref(x.key)} pictured={PATHWAY_LIST.map((x) => x.id)} /></HubSection>
         </HubShell>
       </div>
       <JsonLd data={graph(
         { "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: p.name, description: p.line, isPartOf: { "@id": ids.website }, publisher: { "@id": ids.house },
-          mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length, itemListElement: items.map((r, i) => ({ "@type": "ListItem", position: i + 1, name: r.stay.name, url: absoluteUrl(r.href) })) } },
+          mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length + trips.length, itemListElement: [...items.map((r) => ({ name: r.stay.name, href: r.href })), ...trips.map((t) => ({ name: t.name, href: t.href }))].map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x.name, url: absoluteUrl(x.href) })) } },
       )} />
     </>
   );

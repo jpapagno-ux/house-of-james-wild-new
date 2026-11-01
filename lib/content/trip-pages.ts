@@ -52,9 +52,14 @@ export function mapHtml(t: Trip) {
   return builtMap(t, JSON.parse(fs.readFileSync(rf, "utf8")) as RouteFile, ink);
 }
 
-export function tripMetadata(t: Trip): Metadata {
+/** The photograph that stands for a trip (hero, else first slide, else first image). */
+export function tripHeroImage(t: Trip): TripImg | undefined {
   const m = TRIP_IMAGES[t.id];
-  const img = m?.hero ?? TRIP_SLIDES[t.id]?.[0] ?? (m ? Object.values(m.images)[0] : undefined) ?? Object.values(t.images ?? {})[0];
+  return m?.hero ?? TRIP_SLIDES[t.id]?.[0] ?? (m ? Object.values(m.images)[0] : undefined) ?? Object.values(t.images ?? {})[0];
+}
+
+export function tripMetadata(t: Trip): Metadata {
+  const img = tripHeroImage(t);
   const image = img ? { url: img.url.startsWith("/") ? absoluteUrl(img.url) : img.url, alt: img.alt } : undefined;
   return { ...buildMetadata({ title: t.seo.title, description: t.seo.description, path: t.seo.path, image, noindex: !t.copy_approved }), ...(t.seo.keywords ? { keywords: t.seo.keywords } : {}) };
 }

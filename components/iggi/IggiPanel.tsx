@@ -5,7 +5,7 @@ import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
 import Link from "next/link";
 import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
-import { folioFromCore, saveFolio, type Folio } from "@/lib/folio/shelf";
+import { folioFromCore, getFolio, isFolioId, saveFolio, type Folio } from "@/lib/folio/shelf";
 import { FLAGS } from "@/lib/booking-live/flags";
 
 // "Ask Iggi" panel — Stage 2 of the Iggi Intelligence Core (Contract C3).
@@ -101,14 +101,29 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
         }
       }
       if (d.type === "ji:open_folio") location.assign(`/folio${typeof d.fol === "string" ? `?fol=${encodeURIComponent(d.fol)}` : ""}`);
+      // Stage 5: Iggi hands the traveller to a person. The enquiry arrives on
+      // /plan pre-addressed to the advisor on this page, with the Folio ID,
+      // the place and a short "what Iggi learned" note, so the chat travels
+      // with it (James, 31 Oct 2026). The Core may send: entitySlug, fol,
+      // q (the place in words), notes (≤ 600 chars), advisor (slug).
       if (d.type === "ji:inquiry") {
         const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
         if (Array.isArray(dl)) dl.push({ event: "iggi_inquiry", entity: d.entitySlug, page: ctx.sourcePage });
+        const m = d as { fol?: unknown; q?: unknown; notes?: unknown; advisor?: unknown };
+        const str = (v: unknown, n: number) => (typeof v === "string" && v.trim() ? v.trim().slice(0, n) : undefined);
+        const fol = isFolioId(m.fol) ? m.fol : folio?.fol;
+        const notes = str(m.notes, 600) ?? (fol ? getFolio(fol)?.summary ?? undefined : undefined);
+        const adv = str(m.advisor, 60) ?? ctx.advisor ?? DEFAULT_ADVISOR;
+        const p = new URLSearchParams({ from: "iggi", advisor: adv });
+        if (fol) p.set("folio", fol);
+        const q = str(m.q, 120); if (q) p.set("q", q);
+        if (notes) p.set("notes", notes.slice(0, 600));
+        location.assign(`/plan?${p.toString()}`);
       }
     };
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, [ctx.sourcePage]);
+  }, [ctx.sourcePage, ctx.advisor, folio]);
 
   const planHref = folio ? toLocal(folio.plan) : null;
   return (

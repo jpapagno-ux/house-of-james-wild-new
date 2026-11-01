@@ -285,7 +285,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <WhoPlans where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: c.slug, countrySlug: c.slug, regionSlug: c.region, ledgerId: c.ledgerId ?? null, sourcePage: path, volume: c.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${c.name}`} />}
           {c.faqs.length > 0 && <FaqBlock faqs={c.faqs} title={`${c.name}, answered`} />}
-          <PlanBand place={c.name} compassHref={c.compass ? "#compass" : "/compass"} />
+          <PlanBand place={c.name} compassHref={c.compass ? "#compass" : "/compass"} where={{ countrySlug: c.slug }} />
           <Doors id="also" eyebrow={`Also in ${c.regionName}`} title={`Beyond ${c.name}`} doors={doors} />
         </div>
       </main>

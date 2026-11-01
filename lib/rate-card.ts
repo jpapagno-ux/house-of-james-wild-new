@@ -72,19 +72,21 @@ export function estimate(row: CardRow, nights: number, party: Party): Estimate {
 // stated as combinable with each other, so the larger one applies; a returning-
 // guest discount stacks on top. Multi-property offers (DiscoverMORE, Best of
 // Both Worlds) need a second lodge, so they show as notes for the planner.
+type OfferMeta = { name: string; program?: string; terms?: string };
 export type OfferRules = {
-  freeNight?: { name: string; minNights: number; excludeRows?: string[] };
-  celebrate?: { name: string; pct: number; minNights: number };
-  returning?: { name: string; pct: number };
+  freeNight?: OfferMeta & { minNights: number; excludeRows?: string[] };
+  celebrate?: OfferMeta & { pct: number; minNights: number };
+  returning?: OfferMeta & { pct: number };
   notes?: string[];
 };
 export type OfferChoice = { celebrating: boolean; returning: boolean };
-export type Applied = { zar: number; usd: number; savings: { name: string; zar: number; usd: number }[]; notes: string[] };
+export type Saving = { name: string; program?: string; terms?: string; zar: number; usd: number };
+export type Applied = { zar: number; usd: number; savings: Saving[]; notes: string[] };
 
 export function applyOffers(row: CardRow, e: Extract<Estimate, { ok: true }>, party: Party, rules: OfferRules | undefined, choice: OfferChoice): Applied {
   const toUsd = (z: number) => Math.round((z * e.usd) / (e.zar || 1) * 100) / 100;
   const notes: string[] = [];
-  const savings: { name: string; zar: number }[] = [];
+  const savings: (OfferMeta & { zar: number })[] = [];
   if (!rules) return { zar: e.zar, usd: e.usd, savings: [], notes };
   const night = e.zar / e.nights;
   let free = 0, cel = 0;
@@ -101,12 +103,12 @@ export function applyOffers(row: CardRow, e: Extract<Estimate, { ok: true }>, pa
     else notes.push(`${c.name} on a whole villa is confirmed with your quote`);
   }
   if (free || cel) {
-    const best = free >= cel ? { name: fn!.name, zar: free } : { name: c!.name, zar: cel };
+    const best = free >= cel ? { name: fn!.name, program: fn!.program, terms: fn!.terms, zar: free } : { name: c!.name, program: c!.program, terms: c!.terms, zar: cel };
     savings.push(best);
     if (free && cel) notes.push(`${free >= cel ? c!.name : fn!.name} does not combine with ${best.name}; the larger saving is shown`);
   }
   let zar = e.zar - savings.reduce((s, x) => s + x.zar, 0);
   const r = rules.returning;
-  if (r && choice.returning) { const off = (zar * r.pct) / 100; savings.push({ name: r.name, zar: off }); zar -= off; }
+  if (r && choice.returning) { const off = (zar * r.pct) / 100; savings.push({ name: r.name, program: r.program, terms: r.terms, zar: off }); zar -= off; }
   return { zar, usd: toUsd(zar), savings: savings.map((s) => ({ ...s, usd: toUsd(s.zar) })), notes };
 }

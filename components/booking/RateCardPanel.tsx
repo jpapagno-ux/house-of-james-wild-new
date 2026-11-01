@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { BedDouble, CalendarDays, Users } from "lucide-react";
 import { BASIS_LABEL, applyOffers, estimate, nightsOf, type CardRow, type OfferRules, type Year } from "@/lib/rate-card";
 import type { PricedRoom } from "@/lib/content/priced-stays";
-import { Checkout } from "./BookingPanel";
+import { Checkout, type CheckoutPricing } from "./BookingPanel";
 
 // Rate-card booking for partners without a live engine (MORE Collection,
 // 1 Nov 2026). "From" prices come from the partner's published card; choosing
@@ -23,7 +23,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
   const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
   const [kids, setKids] = useState<number[]>([]);
   const [today, setToday] = useState("");
-  const [pick, setPick] = useState<{ room: PricedRoom; plan: string; total: number } | null>(null);
+  const [pick, setPick] = useState<{ room: PricedRoom; plan: string; total: number; pricing?: CheckoutPricing } | null>(null);
   useEffect(() => {
     const t = new Date(); setToday(iso(t));
     // Default to the first published window at least 30 days out.
@@ -90,7 +90,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
                   </div>
                 ) : <p className="text-[13px] ledger-muted">{e && !e.ok ? e.reason : "Choose dates inside the published card"}</p>}
                 {e?.ok
-                  ? <button type="button" onClick={() => setPick({ room: { name: r.name, kind: r.basis === "exclusive" ? "house" : "room", photos: [photo] }, plan, total })} className="ledger-btn shrink-0">Select</button>
+                  ? <button type="button" onClick={() => setPick({ room: { name: r.name, kind: r.basis === "exclusive" ? "house" : "room", photos: [photo] }, plan, total, pricing: { base: e.usd, savings: a?.savings.map((x) => ({ name: x.name, program: x.program, terms: x.terms, usd: x.usd })) ?? [], source: `${partner}'s published offer terms, checked 1 Nov 2026. ${partner} confirms eligibility when the booking is made; offers apply to published rates only.` } })} className="ledger-btn shrink-0">Select</button>
                   : <a href={`/plan?trip=${encodeURIComponent(`${name} · ${r.name}`)}&travellers=${q.adults + kids.length}`} className="ledger-btn-ghost shrink-0">Ask for a quote</a>}
               </div>
             </li>
@@ -99,7 +99,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
       </ul>
       {rules?.notes?.length ? <ul className="mt-4 grid gap-1 text-[13.5px]">{rules.notes.map((n) => <li key={n}>{n}. Ask James to plan it.</li>)}</ul> : null}
       <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Prices are {partner}&rsquo;s published &ldquo;from&rdquo; rates (lowest season) in rand, shown in US dollars at {partner}&rsquo;s own conversion, so the price for your dates may be higher. Every booking is a request: the house confirms the price and space with the lodge before anything is charged. 7% Florida sales tax is added at checkout.</p>
-      {pick && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine="" hostHref={hostHref} onClose={() => setPick(null)} />}
+      {pick && <Checkout pick={pick} pricing={pick.pricing} guests={`${q.adults} ${q.adults === 1 ? "adult" : "adults"}${kids.length ? `, ${kids.length} ${kids.length === 1 ? "child" : "children"} (${kids.join(", ")})` : ""}`} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine="" hostHref={hostHref} onClose={() => setPick(null)} />}
     </section>
   );
 }

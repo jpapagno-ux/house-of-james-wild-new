@@ -1,0 +1,92 @@
+{
+  "_source": "MORE Collection published rates, more.co.za/rates (the 2026 and 2027 tabs), read 1 Nov 2026. These are MORE's 'from' (lowest published) rates in South African rand per night; USD is MORE's own conversion on that page. Children's rules are MORE's notes per row. Re-read when MORE updates the page.",
+  "partner": "MORE Family Collection",
+  "currency": "ZAR",
+  "properties": {
+    "lion-sands": {
+      "name": "Lion Sands Game Reserve",
+      "years": {
+        "2026": { "validFrom": "2026-01-01", "validTo": "2026-12-19", "rows": [
+          { "key": "river-lodge", "name": "River Lodge", "units": "8 Luxury Rooms, 6 Superior Luxury Rooms, 3 River Suites, 1 Family River Suite", "zar": 27020, "usd": 1624.42, "basis": "pps", "maxGuests": 2, "minAge": 10, "child": { "from": 10, "to": 15, "pct": 50 }, "note": "Luxury Room: max 2 guests. Ages 10+; 10 to 15 years at 50% of the adult sharing rate." },
+          { "key": "narina-lodge", "name": "Narina Lodge", "units": "9 suites", "zar": 30625, "usd": 1841.14, "basis": "pps", "maxGuests": 2, "minAge": 16, "note": "Suite: max 2 guests. Ages 16+." },
+          { "key": "tinga-lodge", "name": "Tinga Lodge", "units": "9 suites", "zar": 30625, "usd": 1841.14, "basis": "pps", "maxGuests": 2, "minAge": 6, "child": { "from": 6, "to": 15, "pct": 50 }, "note": "Suite: max 2 guests. Ages 6+; 6 to 15 years at 50% of the adult sharing rate." },
+          { "key": "ivory-lodge", "name": "Ivory Lodge", "units": "8 suites", "zar": 47310, "usd": 2844.23, "basis": "pps", "maxGuests": 2, "minAge": 10, "child": { "from": 10, "to": 15, "pct": 50 }, "note": "Suite: max 2 guests. Ages 10+; 10 to 15 years at 50% of the adult sharing rate." },
+          { "key": "fish-eagle-villa", "name": "Fish Eagle Villa", "units": "1 villa", "zar": 276915, "usd": 16647.85, "basis": "exclusive", "maxGuests": 8, "maxAdults": 6, "minAge": 0, "note": "Exclusive use. Up to 8 guests (6 adults, 2 children). All ages." },
+          { "key": "hinkwenu-villa", "name": "Hinkwenu Villa", "units": "1 villa", "zar": 216675, "usd": 13026.28, "basis": "exclusive", "maxGuests": 6, "maxAdults": 4, "minAge": 0, "note": "Exclusive use. Up to 6 guests (4 adults, 2 children). All ages." }
+        ] },
+        "2027": { "validFrom": "2027-01-01", "validTo": "2027-05-31", "rows": [
+          { "key": "river-lodge", "name": "River Lodge", "units": "8 Luxury Rooms, 6 Superior Luxury Rooms, 3 River Suites, 1 Family River Suite", "zar": 27020, "usd": 1624.42, "basis": "pps", "maxGuests": 2, "minAge": 10, "child": { "from": 10, "to": 15, "pct": 50 }, "note": "Luxury Room: max 2 guests. Ages 10+; 10 to 15 years at 50% of the adult sharing rate." },
+          { "key": "narina-lodge", "name": "Narina Lodge", "units": "9 suites", "zar": 30625, "usd": 1841.14, "basis": "pps", "maxGuests": 2, "minAge": 16, "note": "Suite: max 2 guests. Ages 16+." },
+          { "key": "tinga-lodge", "name": "Tinga Lodge", "units": "9 suites", "zar": 30625, "usd": 1841.14, "basis": "pps", "maxGuests": 2, "minAge": 6, "child": { "from": 6, "to": 15, "pct": 50 }, "note": "Suite: max 2 guests. Ages 6+; 6 to 15 years at 50% of the adult sharing rate." },
+          { "key": "ivory-lodge", "name": "Ivory Lodge", "units": "8 suites", "zar": 47310, "usd": 2844.23, "basis": "pps", "maxGuests": 2, "minAge": 10, "child": { "from": 10, "to": 15, "pct": 50 }, "note": "Suite: max 2 guests. Ages 10+; 10 to 15 years at 50% of the adult sharing rate." },
+          { "key": "hinkwenu-villa", "name": "Hinkwenu Villa", "units": "1 villa", "zar": 216675, "usd": 13026.28, "basis": "exclusive", "maxGuests": 6, "maxAdults": 4, "minAge": 0, "note": "Exclusive use. Up to 6 guests (4 adults, 2 children). All ages." },
+          { "key": "fish-eagle-villa", "name": "Fish Eagle Villa", "units": "1 villa", "zar": 276915, "usd": 16647.85, "basis": "exclusive", "maxGuests": 8, "maxAdults": 6, "minAge": 0, "note": "Exclusive use. Up to 8 guests (6 adults, 2 children). All ages." }
+        ] }
+      }
+    },
+    "monwana": {
+      "name": "Monwana Game Lodge",
+      "years": {
+        "2026": { "validFrom": "2026-01-01", "validTo": "2026-12-19", "rows": [
+          { "key": "suites", "name": "Suites", "units": "4 suites", "zar": 36405, "usd": 2188.63, "basis": "pps", "maxGuests": 2, "minAge": 10, "note": "Max 2 guests. Ages 10+." },
+          { "key": "family-suites", "name": "Family Suites", "units": "2 suites", "zar": 119500, "usd": 7184.22, "basis": "unit", "maxGuests": 4, "maxAdults": 2, "minAge": 10, "note": "Per suite per night. Up to 4 guests (2 adults, 2 children). Ages 10+." },
+          { "key": "monwana-villa", "name": "Monwana Villa", "units": "1 villa", "zar": 229150, "usd": 13776.27, "basis": "exclusive", "maxGuests": 6, "maxAdults": 4, "minAge": 0, "note": "Exclusive use. Up to 6 guests (4 adults, 2 children). All ages." }
+        ] },
+        "2027": { "validFrom": "2027-01-01", "validTo": "2027-05-31", "rows": [
+          { "key": "suites", "name": "Suites", "units": "4 suites", "zar": 36405, "usd": 2188.63, "basis": "pps", "maxGuests": 2, "minAge": 10, "note": "Max 2 guests. Ages 10+." },
+          { "key": "family-suites", "name": "Family Suites", "units": "2 suites", "zar": 119500, "usd": 7184.22, "basis": "unit", "maxGuests": 4, "maxAdults": 2, "minAge": 10, "note": "Per suite per night. Up to 4 guests (2 adults, 2 children). Ages 10+." },
+          { "key": "monwana-villa", "name": "Monwana Villa", "units": "1 villa", "zar": 229150, "usd": 13776.27, "basis": "exclusive", "maxGuests": 6, "maxAdults": 4, "minAge": 0, "note": "Exclusive use. Up to 6 guests (4 adults, 2 children). All ages." }
+        ] }
+      }
+    },
+    "marataba": {
+      "name": "Marataba Game Lodges",
+      "years": {
+        "2026": { "validFrom": "2026-01-01", "validTo": "2026-12-19", "rows": [
+          { "key": "safari-lodge", "name": "Safari Lodge", "units": "Luxury tents (11 and 4, as MORE lists them)", "zar": 19010, "usd": 1142.86, "basis": "pps", "maxGuests": 2, "minAge": 0, "child": { "from": 6, "to": 15, "pct": 50, "freeUnder": 6 }, "note": "Luxury Tents: max 2 guests. All ages; under 6 free, 6 to 15 years at 50% of the adult sharing rate." },
+          { "key": "mountain-lodge", "name": "Mountain Lodge", "units": "5 rooms", "zar": 19010, "usd": 1142.86, "basis": "pps", "maxGuests": 2, "minAge": 16, "note": "Room: max 2 guests. Ages 16+." },
+          { "key": "marataba-villa", "name": "Marataba Villa", "units": "1 villa", "zar": 144970, "usd": 8715.45, "basis": "exclusive", "maxGuests": 10, "maxAdults": 8, "minAge": 0, "note": "Exclusive use. Up to 10 guests (8 adults, 2 children). All ages." }
+        ] },
+        "2027": { "validFrom": "2027-01-01", "validTo": "2027-05-31", "rows": [
+          { "key": "safari-lodge", "name": "Safari Lodge", "units": "Luxury tents (11 and 4, as MORE lists them)", "zar": 19010, "usd": 1142.86, "basis": "pps", "maxGuests": 2, "minAge": 0, "child": { "from": 6, "to": 15, "pct": 50, "freeUnder": 6 }, "note": "Luxury Tents: max 2 guests. All ages; under 6 free, 6 to 15 years at 50% of the adult sharing rate." },
+          { "key": "mountain-lodge", "name": "Mountain Lodge", "units": "5 rooms", "zar": 19010, "usd": 1142.86, "basis": "pps", "maxGuests": 2, "minAge": 16, "note": "Room: max 2 guests. Ages 16+." },
+          { "key": "marataba-villa", "name": "Marataba Villa", "units": "1 villa", "zar": 144970, "usd": 8715.45, "basis": "exclusive", "maxGuests": 10, "maxAdults": 8, "minAge": 0, "note": "Exclusive use. Up to 10 guests (8 adults, 2 children). All ages." }
+        ] }
+      }
+    },
+    "cape-cadogan": {
+      "name": "Cape Cadogan Boutique Hotel",
+      "years": {
+        "2026": { "validFrom": "2026-01-01", "validTo": "2026-12-19", "rows": [
+          { "key": "classic-room", "name": "Classic Room", "units": "6 rooms", "zar": 11630, "usd": 699.18, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "luxury-room", "name": "Luxury Room", "units": "7 rooms", "zar": 14370, "usd": 863.91, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "superior-luxury-room", "name": "Superior Luxury Room", "units": "6 rooms", "zar": 16980, "usd": 1020.82, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "stable-suite", "name": "Stable Suite", "units": "8 suites", "zar": 21695, "usd": 1304.28, "basis": "unit", "maxGuests": 2, "minAge": 0, "note": "Per suite per night. Max 2 guests. All ages." },
+          { "key": "2-bedroom-stable-suite", "name": "2 Bedroom Stable Suite", "units": "8 suites", "zar": 32545, "usd": 1956.57, "basis": "unit", "maxGuests": 4, "minAge": 0, "note": "Per suite per night. Max 4 guests. All ages." },
+          { "key": "cape-cadogan-villa", "name": "Cape Cadogan Villa", "units": "1 villa", "zar": 57470, "usd": 3455.04, "basis": "exclusive", "maxGuests": 6, "minAge": 0, "note": "Exclusive use. Up to 6 guests. All ages." }
+        ] },
+        "2027": { "validFrom": "2027-01-01", "validTo": "2027-05-31", "rows": [
+          { "key": "classic-room", "name": "Classic Room", "units": "6 rooms", "zar": 11840, "usd": 711.81, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "luxury-room", "name": "Luxury Room", "units": "7 rooms", "zar": 14630, "usd": 879.54, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "superior-luxury-room", "name": "Superior Luxury Room", "units": "6 rooms", "zar": 17290, "usd": 1039.46, "basis": "unit", "maxGuests": 2, "minAge": 10, "note": "Per room per night. Max 2 guests. Ages 10+." },
+          { "key": "stable-suite", "name": "Stable Suite", "units": "8 suites", "zar": 22815, "usd": 1371.61, "basis": "unit", "maxGuests": 2, "minAge": 0, "note": "Per suite per night. Max 2 guests. All ages." },
+          { "key": "2-bedroom-stable-suite", "name": "2 Bedroom Stable Suite", "units": "8 suites", "zar": 34225, "usd": 2057.57, "basis": "unit", "maxGuests": 4, "minAge": 0, "note": "Per suite per night. Max 4 guests. All ages." },
+          { "key": "cape-cadogan-villa", "name": "Cape Cadogan Villa", "units": "1 villa", "zar": 58995, "usd": 3546.72, "basis": "exclusive", "maxGuests": 6, "minAge": 0, "note": "Exclusive use. Up to 6 guests. All ages." }
+        ] }
+      }
+    }
+  },
+  "pages": {
+    "camp:lion-sands/ivory-lodge": { "property": "lion-sands", "rows": ["ivory-lodge", "fish-eagle-villa"] },
+    "camp:lion-sands/river-lodge": { "property": "lion-sands", "rows": ["river-lodge"] },
+    "camp:lion-sands/narina-lodge": { "property": "lion-sands", "rows": ["narina-lodge"] },
+    "camp:lion-sands/tinga-lodge": { "property": "lion-sands", "rows": ["tinga-lodge", "hinkwenu-villa"] },
+    "camp:lion-sands/fish-eagle-residence": { "property": "lion-sands", "rows": ["fish-eagle-villa"] },
+    "camp:lion-sands/hinkwenu-residence": { "property": "lion-sands", "rows": ["hinkwenu-villa"] },
+    "reserve:lion-sands": { "property": "lion-sands" },
+    "stay:lion-sands": { "property": "lion-sands" },
+    "stay:monwana-thornybush": { "property": "monwana" },
+    "stay:cape-cadogan-boutique-hotel": { "property": "cape-cadogan" },
+    "stay:marataba": { "property": "marataba" }
+  }
+}

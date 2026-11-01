@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
+import RateCardSection from "@/components/booking/RateCardSection";
 import FullFrame from "@/components/record/FullFrame";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import { offersFor } from "@/lib/content/offers/offers";
@@ -175,6 +176,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </> : <>
             {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
             {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
+            {!s.engine && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
           </>}
           {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}

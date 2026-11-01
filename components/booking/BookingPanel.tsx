@@ -25,7 +25,7 @@ const zar = (n: number) => `R${n.toLocaleString("en-US")}`;
 const nice = (d: string) => (d ? new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "");
 const PLAN_NOTE: Record<string, string> = { "Best Available Rate": "Flexible rate", "Length of Stay Discount": "Stay longer, pay less" };
 
-function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose, hostHref }: { hostHref?: string; pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
+export function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose, hostHref }: { hostHref?: string; pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
   const [done, setDone] = useState(false);
   const [f, setF] = useState({ name: "", email: "", phone: "" });
   const ok = f.name.trim().length > 1 && /.+@.+\..+/.test(f.email);

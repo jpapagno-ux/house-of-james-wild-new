@@ -36,6 +36,7 @@ import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
 import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
+import RateCardSection from "@/components/booking/RateCardSection";
 
 // CAMP template (/safaris/[reserve]/[camp]): a lodge, camp or residence
 // inside a reserve, on its own page and always tied to its parent.
@@ -114,6 +115,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
               <p className="mt-3 text-[13px] ledger-muted">Registry rates in US dollars. The house confirms every rate, inclusions and park fees with your quote.</p>
             </section>
           )}
+          <RateCardSection pageKey={`camp:${r.slug}/${c.slug}`} name={c.name} photo={c.hero as string} hostHref={host.state === "available" ? "#host" : undefined} />
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}

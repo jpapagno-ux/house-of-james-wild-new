@@ -15,8 +15,10 @@ must read and send. The site side of it ships in PR "advisor-iggi-handoff".
   (`advisorsFor` in `lib/content/advisors.ts`).
 - The one exception: an advisor's own profile (`/advisors/[slug]`) tells Iggi
   that advisor (`ctx.advisor = slug`).
-- The embed URL carries `advisor=<slug>` and `advisorsFeed=<origin>/api/v1/advisors`.
-  Core reads the feed for names, roles, marks and each advisor's `plan` URL.
+- The embed URL carries `advisor=<slug>`, `advisorsFeed=<origin>/api/v1/advisors` and, from 1 Nov 2026,
+  `dialogueFeed=<origin>/api/v1/dialogue`. Core reads the advisors feed for names, roles, marks and each
+  advisor's `plan` URL, and the dialogue feed for every approved James and Iggi line (id, character, intent,
+  audience, tone, origin label, text, page context). Filters: `?character=iggi&intent=handoff&page=stay`.
 
 ## 2. Messages Core sends to the page (`window.postMessage`, origin-checked)
 
@@ -75,5 +77,8 @@ single door `/safaris/wild-co-safaris`. Crux reads the same advisor feed.
 1. Send `ji:inquiry` with `notes` as above (today Core sends only `entitySlug`).
 2. Read `advisor` from the embed URL and address the traveller to that advisor
    by first name (James on every page during testing).
-3. Use the dialogue register for the handoff and decline lines
-   (`docs/wild-pathways/DIALOGUE.md`, follow-up #18).
+3. Read `dialogueFeed` on load and use its lines verbatim for the decline
+   (`iggi.decline.no-founder-record`), the advisor handoff (`iggi.handoff.advisor`),
+   the safari-desk handoff (`iggi.handoff.crux`) and the trade line
+   (`iggi.trade.suitability`); never paraphrase an approved line, never say a
+   draft. Print the `origin` label with the words. (`docs/wild-pathways/DIALOGUE.md`.)

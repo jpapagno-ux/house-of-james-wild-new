@@ -66,6 +66,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
       if (ctx.regionSlug) p.set("region", ctx.regionSlug);
       p.set("advisor", ctx.advisor ?? DEFAULT_ADVISOR);
       p.set("advisorsFeed", `${location.origin}/api/v1/advisors`);
+      p.set("dialogueFeed", `${location.origin}/api/v1/dialogue`); // 2F-ii: the approved James & Iggi lines (contract §6.3)
       if (token) p.set("token", token);
       setSrc(`${IGGI_CORE_ORIGIN}/embed/chat?${p.toString()}`);
     };

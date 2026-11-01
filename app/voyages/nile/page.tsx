@@ -45,7 +45,7 @@ export default function NileHub() {
         <HubSection eyebrow="The A&K Sanctuary fleet" title="Which Nile Cruise Should You Choose?" id="nile-ships">
           <NileShipCards ships={ships} />
         </HubSection>
-        <RouteAtlas id="nile-atlas" kind="voyage" dest="nile" chart={NILE_CHART} kicker="THE NILE · BY RIVER" eyebrow="The routes · by river" title="Every Nile Route on One Chart"
+        <RouteAtlas id="nile-atlas" kind="voyage" dest="nile" chart={NILE_CHART} figure kicker="THE NILE · BY RIVER" eyebrow="The routes · by river" title="Every Nile Route on One Chart"
           line="Pick a ship and a direction: the globe flies to Egypt and sails the river day by day, Luxor to Aswan and back, and on to Abu Simbel."
           routes={ships.flatMap((s) => s.itineraries.filter((i) => i.days.length).map((i) => ({ id: shipRouteId(s, i), label: `${s.name}: ${i.direction}`, href: `/voyages/ships/${s.slug}`, where: `${i.nights} nights` })))} />
         <HubSection eyebrow="Side by side" title="How Do the Nile Ships Compare?" id="nile-compare">

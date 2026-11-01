@@ -16,6 +16,11 @@ from pathlib import Path
 dests = json.load(open(sys.argv[1]))["entities"]
 stays = json.load(open(sys.argv[2]))["stays"]
 by_id = {d["id"]: d for d in dests}
+# Only countries the site actually exports (live) can hold a place; export-countries.py runs first.
+try:
+    LIVE = {c["slug"] for c in json.load(open(Path(__file__).resolve().parent.parent / "lib/content/countries-library.json"))["countries"]}
+except Exception:
+    LIVE = None
 out = []
 for d in sorted(dests, key=lambda d: d.get("name") or ""):
     pid = d.get("parent_destination_id")
@@ -23,6 +28,8 @@ for d in sorted(dests, key=lambda d: d.get("name") or ""):
     parent = by_id.get(pid) or {}
     if not parent.get("webflow_slug"):
         print("place without a live parent:", d.get("name"), file=sys.stderr); continue
+    if LIVE is not None and parent["webflow_slug"] not in LIVE:
+        print("place held (parent country not live):", d.get("name"), "->", parent["webflow_slug"], file=sys.stderr); continue
     out.append({
         "slug": d["webflow_slug"], "name": d.get("name"), "ledgerId": d.get("ledger_id"),
         "parentSlug": parent["webflow_slug"], "regionSlug": d.get("region_slug") or parent.get("region_slug"),

@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { bookingWords, quoteState, STATE_WORDS, timeline, type BookingRow, type QuoteRow, type TravelerState } from "@/lib/booking-live/bookings";
 import { fmtMinor, niceDate, niceWhen } from "@/lib/booking-live/money";
+import { nextPayment } from "@/lib/booking-live/payments/core";
+import PayButton from "./PayButton";
+
+export type PaymentRow = { id: string; public_reference: string; kind: string; amount_minor: number | string; currency: string; status: string; provider: string; succeeded_at: string | null; created_at: string };
 
 // The traveler's trips, as cards: a request (quote) with its state and
 // timeline, or a booking with its money position. Quiet, editorial, no
@@ -49,8 +53,10 @@ export function RequestCard({ q, propertyName, roomName }: { q: QuoteRow; proper
   );
 }
 
-export function BookingCard({ b, propertyName, roomName }: { b: BookingRow; propertyName: string; roomName: string | null }) {
+export function BookingCard({ b, propertyName, roomName, payments = [] }: { b: BookingRow; propertyName: string; roomName: string | null; payments?: PaymentRow[] }) {
   const w = bookingWords(b);
+  const due = nextPayment(b);
+  const receipts = payments.filter((p) => p.status === "succeeded");
   const state: TravelerState = b.status === "cancelled" ? "declined" : "booked";
   const paid = Number(b.deposit_paid_minor) + Number(b.balance_paid_minor);
   return (
@@ -76,7 +82,15 @@ export function BookingCard({ b, propertyName, roomName }: { b: BookingRow; prop
         </ol>
       )}
       {b.traveler_note && <p className="mt-4 text-[14.5px] border-l-2 border-rust/50 pl-3">{b.traveler_note}</p>}
-      <div className="mt-4 flex flex-wrap gap-3"><Link href={`/plan?trip=${encodeURIComponent(propertyName)}`} className="ledger-btn-ghost">Talk to the house about this trip</Link></div>
+      {receipts.length > 0 && (
+        <ul className="mt-4 text-[13.5px] ledger-muted grid gap-1" aria-label="Payments received">
+          {receipts.map((p) => <li key={p.id}>{p.kind === "deposit" ? "Deposit" : p.kind === "balance" ? "Balance" : "Payment"} received · {fmtMinor(p.amount_minor, p.currency)} · {p.succeeded_at ? niceWhen(p.succeeded_at) : ""} · receipt {p.public_reference}</li>)}
+        </ul>
+      )}
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        {due && b.status !== "cancelled" && <PayButton bookingId={b.id} label={`Pay ${due.kind === "deposit" ? "deposit" : "balance"} · ${fmtMinor(due.amountMinor, b.currency)}`} />}
+        <Link href={`/plan?trip=${encodeURIComponent(propertyName)}`} className="ledger-btn-ghost">Talk to the house about this trip</Link>
+      </div>
     </li>
   );
 }

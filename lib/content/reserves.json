@@ -112,7 +112,7 @@
        "capacity": 2,
        "quantity": 8,
        "beds": "King Bed",
-       "from": 3420,
+       "from": 2844,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -125,7 +125,7 @@
        ]
       }
      ],
-     "fromRate": 3420
+     "fromRate": 2844
     },
     {
      "slug": "river-lodge",
@@ -176,7 +176,7 @@
        "capacity": 2,
        "quantity": 8,
        "beds": "Double Bed",
-       "from": 1943,
+       "from": 1624,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -191,7 +191,7 @@
        "capacity": 2,
        "quantity": 8,
        "beds": "King Bed",
-       "from": 2137,
+       "from": null,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -207,7 +207,7 @@
        "capacity": 2,
        "quantity": 3,
        "beds": "King Bed",
-       "from": 2498,
+       "from": null,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -222,7 +222,7 @@
        "capacity": 4,
        "quantity": 1,
        "beds": "King Bed + 3/4 Beds",
-       "from": 2998,
+       "from": null,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -235,7 +235,7 @@
        ]
       }
      ],
-     "fromRate": 1943
+     "fromRate": 1624
     },
     {
      "slug": "narina-lodge",
@@ -280,7 +280,7 @@
        "capacity": 2,
        "quantity": 9,
        "beds": "Double Bed",
-       "from": 2230,
+       "from": 1841,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -292,7 +292,7 @@
        ]
       }
      ],
-     "fromRate": 2230
+     "fromRate": 1841
     },
     {
      "slug": "tinga-lodge",
@@ -337,7 +337,7 @@
        "capacity": 2,
        "quantity": 9,
        "beds": "King Bed",
-       "from": 2924,
+       "from": 1841,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -350,7 +350,7 @@
        ]
       }
      ],
-     "fromRate": 2924
+     "fromRate": 1841
     },
     {
      "slug": "fish-eagle-residence",
@@ -394,7 +394,7 @@
        "capacity": 6,
        "quantity": 1,
        "beds": "2 Queen Beds / 1 Twin Bed",
-       "from": 11845,
+       "from": 16648,
        "currency": "USD",
        "basis": "per_person_per_night",
        "photos": [
@@ -407,7 +407,7 @@
        ]
       }
      ],
-     "fromRate": 11845
+     "fromRate": 16648
     },
     {
      "slug": "hinkwenu-residence",
@@ -447,7 +447,7 @@
       "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a911a85677e0bfbb5e_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20outside%20veranda%20-%20Medium.png"
      ],
      "rooms": [],
-     "fromRate": null
+     "fromRate": 13026
     }
    ]
   },

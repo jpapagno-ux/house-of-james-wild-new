@@ -14,7 +14,11 @@ import json, re, sys, html
 def load(p): return json.load(open(p))["entities"]
 MEDIA = "https://media.base44.com/images/public/"
 # Countries filed under a destination they don't belong to (flagged in review).
-NOT_IN = {"south-africa": {"camp-hwange-muddy-teak": "Zimbabwe", "gorongosa-safaris": "Mozambique"}, "costa-rica": {"isla-palenque-resort": "Panama"}}
+# Stays the library files under a neighbour because their country has no destination record yet.
+# Value: the real country, and the region it sits in so the pathways and maps can still place it.
+# Camp Hwange and Isla Palenque were relinked to Zimbabwe and Panama in the library on 1 Nov 2026 and
+# no longer need an entry; Mozambique has no destination record, so its two stays stay here.
+NOT_IN = {"south-africa": {"gorongosa-safaris": ("Mozambique", "africa")}, "tanzania": {"benguerra-island-by-and-beyond": ("Mozambique", "africa")}}
 # Live booking-engine properties (Tag Albie), by stay slug.
 ENGINE = {"leeu-estates": "leeu-estates-resorts", "le-quartier-francais": "le-quartier-francais", "leeu-house": "leeu-house",
           # Kayumanis (James, 1 Nov 2026). The Jimbaran engine address ends in a hyphen on the engine itself.
@@ -131,14 +135,14 @@ for s in sorted(stays, key=lambda s: s["name"]):
     seen.add(slug)
     d = D.get(s.get("destination_id")) or {}
     cslug = d.get("webflow_slug")
-    actual = NOT_IN.get(cslug, {}).get(slug)
+    actual, actual_region = NOT_IN.get(cslug, {}).get(slug, (None, None))
     reviewed = s.get("content_status") in ("approved", "published") and bool(s.get("aeo_approved"))
     fb = s.get("fact_blocks") or {}
     gallery = [img(g) for g in (s.get("gallery_urls") or []) if g and owned(g) and not foreign(g, toks(s["name"]))][:10]
     hero = s.get("hero_image_url") if owned(s.get("hero_image_url")) else next(iter([g for g in (s.get("gallery_urls") or []) if owned(g)]), s.get("hero_image_url"))
     out.append({
         "slug": slug, "name": text(s.get("display_name") or s["name"]).replace(" ", " "), "ledgerId": s.get("ledger_id"),
-        "country": actual or d.get("name"), "countrySlug": None if actual else cslug, "regionSlug": None if actual else d.get("region_slug"),
+        "country": actual or d.get("name"), "countrySlug": None if actual else cslug, "regionSlug": actual_region if actual else d.get("region_slug"),
         "misfiled": actual, "category": s.get("category"),
         "tagline": text(s.get("tagline")) or None, "quote": text(s.get("intro_quote")).strip('"“” ') or None,
         "hero": img(hero), "gallery": [g for g in gallery if g and g != img(hero)],

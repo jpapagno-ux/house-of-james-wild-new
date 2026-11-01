@@ -10,11 +10,11 @@ import { PATHWAY_LIST, pathway } from "@/lib/pathways";
 import { onPathway } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_ANSWER, PATHWAY_FAQS, PATHWAY_SEO } from "@/lib/content/pathways/copy";
-import { altFor } from "@/lib/content/stays";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { faqPage, graph, ids } from "@/lib/schema";
+import { graph, ids } from "@/lib/schema";
 import { tripsOnPathway } from "@/lib/content/pathways/trips";
+import PathwayCollection from "@/components/pathways/PathwayCollection";
 
 // /pathways/[key]: one Wild Pathway's collection page (Phase 2C). Lists the
 // Ledger records James has APPROVED on it, each under its own canonical card
@@ -44,19 +44,6 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
       <div className={`pathway-${p.id.slice(-2)}`}>
         <HubShell name={p.name} path={path} trail={trail} eyebrow={`Wild Pathways · ${p.id}`} title={p.name} intro={`${p.setting}. ${p.line}`}
           answer={PATHWAY_ANSWER[p.id]} filling="Entries arrive as James approves each record's pathway in the Ledger." closeTitle={`Drawn to ${p.name.toLowerCase()}?`}>
-          <HubSection eyebrow="On this pathway" title={items.length ? `${items.length} ${items.length === 1 ? "Entry" : "Entries"} in the Ledger` : "Filling From the Ledger"} id="entries-h">
-            {items.length ? (
-              <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                {items.map((r) => (
-                  <li key={r.slug} className="flex flex-col gap-3">
-                    <RecordCard name={r.stay.name} id={r.ledgerId ?? r.slug} line={r.stay.tagline ?? r.primary.setting} image={{ url: r.stay.hero ?? "", alt: altFor(r.stay.hero ?? "", r.stay.name, r.stay.country) }} href={r.href} eyebrow={r.stay.country ?? undefined} />
-                    <PathwayChips primary={r.primary} secondary={r.secondary} hrefFor={(x) => pathwayHref(x.key)} />
-                  </li>
-                ))}
-              </ul>
-            ) : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
-          </HubSection>
-          {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
           {trips.length > 0 && (
             <HubSection eyebrow="By sea and by road" title={`${trips.length} ${trips.length === 1 ? "Journey" : "Journeys"} Along ${p.name}`} id="journeys-h">
               <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -69,6 +56,10 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
               </ul>
             </HubSection>
           )}
+          <HubSection eyebrow="On this pathway" title={items.length ? `${items.length} ${items.length === 1 ? "Entry" : "Entries"} in the Ledger, by Region` : "Filling From the Ledger"} id="entries-h">
+            {items.length ? <PathwayCollection items={items} pathway={p} hrefFor={(x) => pathwayHref(x.key)} /> : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
+          </HubSection>
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
           <FaqBlock faqs={PATHWAY_FAQS[p.id]} title={`Questions About ${p.name}`} />
           <HubSection eyebrow="Index" title="The Other Pathways" id="others-h"><PathwayIndex hrefFor={(x) => pathwayHref(x.key)} pictured={PATHWAY_LIST.map((x) => x.id)} /></HubSection>
         </HubShell>

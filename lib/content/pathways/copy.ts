@@ -7,7 +7,7 @@ export const PATHWAY_ANSWER: Record<PathwayId, string> = {
   "PATH-01": "Into the Green gathers the rainforest and jungle stays in the James Wild & Co Ledger: lodges under the canopy, cloud-forest houses, river camps and the roads that join them. Each entry is vetted by James or a named partner, keeps its own Ledger ID, and can be booked as a single stay or built into a journey with an advisor.",
   "PATH-02": "Between Tides is the Ledger's island and ocean collection: atolls, reef houses, private islands and the small ships that reach them. Every entry is vetted, filed under a permanent Ledger ID, and sits beside the voyages that pass the same water.",
   "PATH-03": "Above It All collects the mountain and highland stays in the Ledger: alpine houses, desert plateaus and vineyard valleys with the long view. Vetted entries only, each with its own Ledger ID.",
-  "PATH-04": "Where the Wild Lives is the Ledger's wildlife and wilderness collection: safari camps, private reserves and the conservancies that keep the wild wild. Every entry is vetted by James or a named partner and keeps its own Ledger ID; safari planning itself is handled by Crux at Wild & Co Safaris.",
+  "PATH-04": "Where the Wild Lives is the Ledger's wildlife and wilderness collection: safari camps, private reserves and the conservancies that keep the wild wild. Every entry is vetted by James or a named partner and keeps its own Ledger ID. When the whole journey is a safari, the house's safari desk, Wild & Co Safaris, plans it reserve by reserve.",
   "PATH-05": "The Art of Stillness gathers the Ledger's wellness and restoration stays: hot springs, quiet estates and places built for doing less. Vetted entries only, each under a permanent Ledger ID.",
   "PATH-06": "Off the Map is the Ledger's collection of hidden and undiscovered places: stays with no signpost, filed before anyone else found them. Each is vetted and keeps its own Ledger ID; some are shown only when a reading is sent to the house.",
   "PATH-07": "A Place of Our Own collects the Ledger's private residences: whole houses, whole islands and whole camps for one party under one roof. Each entry is vetted and keeps its own Ledger ID; many also appear in the Gatherings volume.",
@@ -29,7 +29,7 @@ export const PATHWAY_FAQS: Record<PathwayId, { q: string; a: string }[]> = {
     { q: "Can a stay be on more than one pathway?", a: "Yes. A pathway is a collection, not a category. A stay leads with one pathway and may sit on others; it keeps a single Ledger ID and page." },
   ],
   "PATH-04": [
-    { q: "Is this where I plan a safari?", a: "This is the collection of wildlife stays in the Ledger. Planning a safari by reserve, camp and season is Crux's job at Wild & Co Safaris; the house hands you there." },
+    { q: "Is this where I plan a safari?", a: "This is the Ledger's collection of wildlife stays: the place to find and compare them. When a journey is a safari from start to finish, the house's safari desk, Wild & Co Safaris, plans it by reserve, camp and season, and your advisor walks you there." },
     { q: "How does the house know what a stay gives back?", a: "Each stay page carries a Where Your Stay Gives Back note with the statement's source, review date and status. Nothing is printed without a source." },
     { q: "Can a stay be on more than one pathway?", a: "Yes. A pathway is a collection, not a category. A stay leads with one pathway and may sit on others; it keeps a single Ledger ID and page." },
   ],

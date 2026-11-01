@@ -63,7 +63,7 @@ export function GET() {
     ...COUNTRIES.filter((c) => c.ledgerId).map((c) => `- ${c.ledgerId} · [${c.name}](${absoluteUrl(`/destinations/${c.region}/${c.slug}`)})${c.bestShort ? `: ${c.bestShort}` : ""}`),
     "",
     "## Places in the Ledger (inside a country · page · selected stays)",
-    ...Object.values(GUIDES).filter((g) => g.parent).map((g) => `- [${g.name}](${absoluteUrl(g.path)}) · in ${GUIDES[g.parent!]?.name ?? COUNTRIES.find((c) => c.slug === g.parent)?.name ?? g.parent}${g.stays?.length ? ` · stays: ${g.stays.map((slug) => stayBySlug(slug)?.name ?? slug).join(", ")}` : ""}`),
+    ...Object.values(GUIDES).filter((g) => g.parent).map((g) => `- ${g.ledgerId ? `${g.ledgerId} · ` : ""}[${g.name}](${absoluteUrl(g.path)}) · in ${GUIDES[g.parent!]?.name ?? COUNTRIES.find((c) => c.slug === g.parent)?.name ?? g.parent}${g.stays?.length ? ` · stays: ${g.stays.map((slug) => stayBySlug(slug)?.name ?? slug).join(", ")}` : ""}`),
     "",
     "## Reserves in the Ledger (Ledger ID · reserve · lodges)",
     ...RESERVES.filter((r) => r.rsv).map((r) => `- ${r.rsv} · [${r.name}](${absoluteUrl(`/safaris/${r.slug}`)}) · ${r.area}: ${r.camps.map((c) => c.name).join(", ")}`),

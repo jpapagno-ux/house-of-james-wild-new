@@ -75,6 +75,9 @@ out = []
 for slug, ss in sorted(by.items()):
     if slug in SKIP or slug not in D: continue
     d = D[slug]; region = d.get("region_slug") or ss[0]["regionSlug"]
+    # Destination-first (Stage 2): a place inside a country (parent_destination_id set) is exported by
+    # export-places.py and rendered under its parent; it is never a country page.
+    if d.get("parent_destination_id"): continue
     reviewed = d.get("content_status") in ("approved", "published") and bool(d.get("aeo_approved"))
     fb = d.get("fact_blocks") or {}
     name = NAMES.get(slug, clean(d["name"]))

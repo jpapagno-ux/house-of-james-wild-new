@@ -8,6 +8,7 @@ python3 scripts/library-split.py "${EXPORT:-data/library/export.json}"
 python3 scripts/stay-qa.py data/library/stays.json data/library/destinations.json
 python3 scripts/export-stays.py data/library/stays.json data/library/destinations.json lib/content/stays.json
 python3 scripts/export-countries.py data/library/destinations.json
+python3 scripts/export-places.py data/library/destinations.json lib/content/stays.json lib/content/places-library.json
 python3 scripts/export-coming.py data/library/stays.json data/library/destinations.json lib/content/whats-coming.json
 python3 scripts/export-offers.py data/library/offers.json lib/content/offers/library.json
 python3 scripts/export-films.py data/library/films.json lib/content/films.json

@@ -16,6 +16,8 @@ export type StayData = {
   volumes?: string[] | null;
   // Stage 5 (Last Mile): ArrivalHub record ids from the library; resolve with lib/content/arrivals.ts.
   arrivalHubIds?: string[];
+  /** Destination-first (Stage 2): the place (a library Destination with a parent) this stay is selected for. */
+  placeSlug?: string | null;
 };
 
 const has = (b: Block) => b.paras.length > 0 || b.items.length > 0;

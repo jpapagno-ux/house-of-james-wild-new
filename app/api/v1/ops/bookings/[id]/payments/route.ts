@@ -2,6 +2,8 @@ import { withTraveler, ok, error, jsonBody, dbError } from "@/lib/booking-live/a
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
 import { isAdvisor } from "@/lib/booking-live/ops";
+import { onPaymentSettled } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
 
 // POST /api/v1/ops/bookings/:id/payments { kind: "deposit"|"balance"|"other", amountMinor, reference?, note? }
 // Advisor or admin only: records a payment the house took outside the
@@ -26,5 +28,6 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, params, reque
   if (e) return dbError(e, requestId);
   const { data: booking, error: se } = await admin.rpc("settle_payment", { p_payment: p.id, p_event: `manual:${user.id}` });
   if (se) { await admin.from("payments").update({ status: "failed", note: se.message.slice(0, 500) }).eq("id", p.id); return error("conflict", se.message.includes("exceeds") ? "That's more than the booking is owed" : "Couldn't settle the payment", requestId); }
+  onPaymentSettled(admin, p.id, originOf(req));
   return ok({ paymentId: p.id, reference: p.public_reference, booking: { status: (booking as { status: string }).status } }, requestId, 201);
 });

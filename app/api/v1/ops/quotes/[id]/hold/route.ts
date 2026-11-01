@@ -2,6 +2,8 @@ import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
 import { isAdvisor } from "@/lib/booking-live/ops";
+import { onHold } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
 
 // POST /api/v1/ops/quotes/:id/hold { heldUntil: ISO datetime, note? }
 // Advisor or admin only. Records that the property is HOLDING the room for
@@ -32,5 +34,6 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, params, reque
     expires_at: new Date(Math.max(new Date(q.expires_at).getTime(), until.getTime())).toISOString(),
   }).eq("id", params.id).in("advisor_status", ["pending", "held"]);
   if (e) return e.code === "23514" ? error("conflict", "Holds aren't enabled yet: run supabase/manual/0011b_hold_status.sql", requestId) : error("server_error", "Couldn't record the hold", requestId);
+  onHold(admin, params.id, originOf(req));
   return ok({ id: params.id, advisor_status: "held", heldUntil: until.toISOString() }, requestId);
 });

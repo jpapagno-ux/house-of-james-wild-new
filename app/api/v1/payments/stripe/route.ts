@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
 import { verifyStripeSignature } from "@/lib/booking-live/payments/webhook";
+import { onPaymentSettled } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
 
 // POST /api/v1/payments/stripe — Stripe webhook. Verifies the signature with
 // STRIPE_WEBHOOK_SECRET, then settles the payment the session carries
@@ -27,6 +29,7 @@ export async function POST(req: Request) {
     if (typeof obj.payment_intent === "string") await admin.from("payments").update({ provider_charge: obj.payment_intent }).eq("id", paymentId).is("provider_charge", null);
     const { error } = await admin.rpc("settle_payment", { p_payment: paymentId, p_event: event.id });
     if (error) { console.error(JSON.stringify({ webhook: event.id, error: error.message })); return NextResponse.json({ error: "settle failed" }, { status: 500 }); }
+    onPaymentSettled(admin, paymentId, originOf(req));
     return NextResponse.json({ received: true, settled: paymentId });
   }
   if (event.type === "checkout.session.expired" || event.type === "checkout.session.async_payment_failed") {

@@ -10,7 +10,7 @@ export type { PathwayRecord };
 import map from "./pathway-map.json";
 import impactLib from "./impact-library.json";
 import { mergeRecords, pathway, type ImpactStatement, type Pathway, type PathwayId, type PathwayRecord } from "@/lib/pathways";
-import { STAYS, type StayData } from "@/lib/content/stays";
+import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
 
 
@@ -36,6 +36,9 @@ export function pathwayStays(opts: { includeDrafts?: boolean } = {}): PathwaySta
     const stay = STAYS.find((s) => s.slug === r.slug);
     const primary = pathway(r.primaryPathway);
     if (!stay || !primary) continue;
+    // Live lists (pathway pages, ItemList schema, the Compass) name only stays that have a page; a classified
+    // record whose page is not yet released stays out until it is (house audit, 1 Nov 2026). Previews see all.
+    if (!opts.includeDrafts && !pageReady(stay)) continue;
     out.push({ ...r, stay, href: recordHref("stay", r.slug), primary, secondary: r.secondaryPathways.map((p) => pathway(p)).filter((p): p is Pathway => !!p) });
   }
   return out;

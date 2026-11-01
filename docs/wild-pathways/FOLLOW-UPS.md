@@ -23,6 +23,8 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
 | 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
 | 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
+| 1 Nov 2026 | House-wide audit; pathway lists and Compass name only stays with a page | Shipped |
+| 1 Nov 2026 | Pathway pages as collections; soft safari handoff (#110) | Shipped |
 | 1 Nov 2026 | Compass reads the whole Ledger (#107): 426 stays + 11 journeys, pathway gate, /compass/ledger.json | Shipped |
 | 31 Oct 2026 | Batch 3: every live stay classified (364), approved and synced | Shipped |
 | 31 Oct 2026 | Phase 2B approvals: 11 journeys live on the pathway pages; Ted Turner Reserves classified (library) | Shipped |
@@ -54,6 +56,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 22 | Compass reads the whole Ledger: 426 stays + 11 journeys answer; records served from `/compass/ledger.json` (page 493 KB → 150 KB); pathway gate (a named setting limits answers to its pathways); suitability from `bestFor`; founder marks tie-break; two-per-country diversity | this initiative | Closed 1 Nov 2026 — merged #107 |
 | 23 | Public pathway pages and the Compass reading no longer name Crux: the handoff is to "the house's safari desk, Wild & Co Safaris" (James, 1 Nov 2026: soft handoff, one name, no confusion). Iggi's Crux line reworded the same way (counts toward #17). Internal names (ids, D4) unchanged | this initiative | Closed |
 | 24 | Library regions: Camp Hwange → Zimbabwe, Isla Palenque → Panama (1 Nov). **Mozambique destination record created** (`6ae726820ae4b87e53618886`, region Africa, `coming_soon`) with Gorongosa and Benguerra Island linked to it; the export names the country and region but links no page until the record is live. Copy, hero and sections from the brands' sites, then flip to live | James / content | Open — fill and go live |
+| 25 | House-wide audit 1 Nov 2026 (`docs/wild-pathways/HOUSE-AUDIT-1-NOV.md`): findings B2–B10 for the owning efforts (scrollers without keyboard access, 10px ribbon contrast, `<dl>` structure, redirect stubs, /for-advisors/apply); C11 pathway page weight is ours | owners per finding | Open |
 | 13 | Saving a Compass reading to a traveller's Ledger on consent (brief §5): deferred until the Advisor Desk / Booking Live Phase 2 defines where readings live; today "Send this reading to James" goes to /plan | this initiative | Deferred |
 | 11 | Semrush API units: the pathway keyword targets were set from live results pages; refresh volumes and difficulty when units are available (semrush.com/mcp-access) | James | Open |
 | 8 | HubShell breadcrumb only two levels on `/pathways/[key]` | this initiative | Closed 30 Oct 2026 — HubShell takes a `trail`; pathway pages show Home › Pathways › name and emit one BreadcrumbList (the page-level duplicate removed) |

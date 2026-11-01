@@ -1,0 +1,137 @@
+{
+ "id": "nile-adventurer-luxor-to-aswan-4n",
+ "type": "voyage",
+ "destination": "nile",
+ "title": "Luxor to Aswan aboard Nile Adventurer",
+ "subtitle": "4 nights · Luxor to Aswan · Nile Adventurer, an A&K Sanctuary",
+ "days": {
+  "1": "A welcome in Luxor",
+  "2": "The West Bank, then Esna",
+  "3": "Edfu and Kom Ombo",
+  "4": "Philae and a felucca in Aswan",
+  "5": "Disembark in Aswan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Luxor",
+   "lat": 25.6872,
+   "lng": 32.6396,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Esna",
+   "lat": 25.2934,
+   "lng": 32.554,
+   "mode": "sea",
+   "path": [
+    [
+     32.6396,
+     25.6872
+    ],
+    [
+     32.54,
+     25.62
+    ],
+    [
+     32.52,
+     25.45
+    ],
+    [
+     32.554,
+     25.2934
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Kom Ombo",
+   "lat": 24.4527,
+   "lng": 32.9285,
+   "mode": "sea",
+   "path": [
+    [
+     32.554,
+     25.2934
+    ],
+    [
+     32.66,
+     25.15
+    ],
+    [
+     32.87,
+     24.98
+    ],
+    [
+     32.9,
+     24.8
+    ],
+    [
+     32.93,
+     24.64
+    ],
+    [
+     32.9285,
+     24.4527
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "mode": "sea",
+   "path": [
+    [
+     32.9285,
+     24.4527
+    ],
+    [
+     32.92,
+     24.38
+    ],
+    [
+     32.88,
+     24.2
+    ],
+    [
+     32.8998,
+     24.0889
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "kind": "port",
+   "mode": "sea"
+  }
+ ],
+ "map_note": "After Natural Earth · river course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Nile",
+    "lat": 25.45,
+    "lng": 32.4,
+    "kind": "sea"
+   },
+   {
+    "text": "Eastern Desert",
+    "lat": 25.1,
+    "lng": 33.45,
+    "kind": "region"
+   },
+   {
+    "text": "Western Desert",
+    "lat": 24.7,
+    "lng": 32.15,
+    "kind": "region"
+   }
+  ]
+ }
+}

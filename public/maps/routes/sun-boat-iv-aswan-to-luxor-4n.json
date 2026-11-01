@@ -1,0 +1,137 @@
+{
+ "id": "sun-boat-iv-aswan-to-luxor-4n",
+ "type": "voyage",
+ "destination": "nile",
+ "title": "Aswan to Luxor aboard Sun Boat IV",
+ "subtitle": "4 nights · Aswan to Luxor · Sun Boat IV, an A&K Sanctuary",
+ "days": {
+  "1": "Welcome in Aswan",
+  "2": "Philae and Kom Ombo",
+  "3": "Edfu, then Luxor",
+  "4": "West Bank and Karnak",
+  "5": "Disembark in Luxor"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Aswan",
+   "lat": 24.0889,
+   "lng": 32.8998,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Kom Ombo",
+   "lat": 24.452,
+   "lng": 32.928,
+   "mode": "sea",
+   "path": [
+    [
+     32.8998,
+     24.0889
+    ],
+    [
+     32.88,
+     24.2
+    ],
+    [
+     32.92,
+     24.38
+    ],
+    [
+     32.928,
+     24.452
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Edfu",
+   "lat": 24.978,
+   "lng": 32.874,
+   "mode": "sea",
+   "path": [
+    [
+     32.928,
+     24.452
+    ],
+    [
+     32.93,
+     24.64
+    ],
+    [
+     32.9,
+     24.8
+    ],
+    [
+     32.874,
+     24.978
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Luxor",
+   "lat": 25.6872,
+   "lng": 32.6396,
+   "mode": "sea",
+   "path": [
+    [
+     32.874,
+     24.978
+    ],
+    [
+     32.66,
+     25.15
+    ],
+    [
+     32.55,
+     25.29
+    ],
+    [
+     32.52,
+     25.45
+    ],
+    [
+     32.54,
+     25.62
+    ],
+    [
+     32.6396,
+     25.6872
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Luxor",
+   "lat": 25.6872,
+   "lng": 32.6396,
+   "kind": "port",
+   "mode": "sea"
+  }
+ ],
+ "map_note": "After Natural Earth · river course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Nile",
+    "lat": 25.45,
+    "lng": 32.4,
+    "kind": "sea"
+   },
+   {
+    "text": "Eastern Desert",
+    "lat": 25.1,
+    "lng": 33.45,
+    "kind": "region"
+   },
+   {
+    "text": "Western Desert",
+    "lat": 24.7,
+    "lng": 32.15,
+    "kind": "region"
+   }
+  ]
+ }
+}

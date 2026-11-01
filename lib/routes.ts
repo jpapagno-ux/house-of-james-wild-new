@@ -42,6 +42,13 @@ export const BUILT: string[] = [
   "/voyages/komodo/aliikai-5-day-komodo-island",
   "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
   "/voyages/ships/aliikai",
+  // The Nile waters hub and the A&K Sanctuary ships (approved by James, 1 Nov 2026)
+  "/voyages/nile",
+  "/voyages/ships/nile-adventurer",
+  "/voyages/ships/nile-seray",
+  "/voyages/ships/sun-boat-iii",
+  "/voyages/ships/sun-boat-iv",
+  "/voyages/ships/zein-nile-chateau",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

@@ -1,6 +1,7 @@
 import ra from "../trips/10-day-raja-ampat-north.json";
 import { SAMPLE_ALIIKAI as S } from "../preview/aliikai";
 import type { Trip } from "../trips";
+import type { ShipItinerary } from "./types";
 
 // The Aliikai vessel profile. Yacht, spaces, cabins and the 2027 schedule come
 // from aliikai-voyage.com (filed on the voyage records, checked 26 Oct 2026, and
@@ -84,4 +85,26 @@ export const ALIIKAI_SHIP = {
     ["Is diving included aboard Aliikai?", "Guided diving and snorkelling with Nitrox are part of every voyage, with a dive centre, a warm shower for night dives and a ventilated camera room aboard."],
     ["Has James sailed aboard Aliikai?", "Yes. James sailed Raja Ampat aboard Aliikai in November 2024. That voyage is the 10 Day Raja Ampat North."],
   ] as [string, string][],
+};
+
+// The 10 Day Raja Ampat North, day by day, for the animated itinerary on her
+// page. Days from the voyage file; positions are the approximate day stops
+// used on the voyage chart (no day has filed coordinates yet).
+const POS: [number, number][] = [
+  [-0.88, 131.25], [-0.556, 130.687], [-0.42, 130.62], [-0.565, 130.28], [-0.165, 130.05],
+  [-0.27, 130.2], [-0.567, 130.52], [-0.6, 130.6], [-0.83, 130.78], [-0.88, 131.25],
+];
+type TripDay = { n: string; title: string; line: string; body: string };
+export const ALIIKAI_ITINERARY: ShipItinerary = {
+  name: "10 Day Raja Ampat North",
+  nights: 9,
+  direction: "Sorong round trip",
+  days: ((ra as unknown as { days: TripDay[] }).days).map((d, i) => ({
+    day: i + 1,
+    title: d.line,
+    place: d.title,
+    lat: POS[i]?.[0] ?? POS[0][0],
+    lng: POS[i]?.[1] ?? POS[0][1],
+    summary: d.body,
+  })),
 };

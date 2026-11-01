@@ -243,6 +243,13 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/europe/slovenia/brda", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
+  // The Nile hub and the A&K Sanctuary ships: approved by James, 1 Nov 2026.
+  { path: "/voyages/nile", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/voyages/ships/nile-adventurer", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/nile-seray", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/sun-boat-iii", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/sun-boat-iv", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/zein-nile-chateau", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },

@@ -93,6 +93,18 @@
   .ledger-pin-drop, .ledger-pin-pulse { animation: none; }
 }
 
+/* Ship pages (components/ships): the house route chart (jw-chart) sits sticky beside the day log,
+   sized to fit beside it. The page's own tabs choose the route, so the engine's route buttons step
+   aside; on phones the day log replaces the engine's day row, legend and speed. */
+.ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: 36svh; min-height: 240px; }
+.ship-route .jwc .platecap, .ship-route .jwc details.coords, .ship-route .jwc .ctrlbar .routes { display: none; }
+@media (max-width: 1023px) {
+  .ship-route .jwc .ctrlbar .days, .ship-route .jwc .ctrlbar .legend, .ship-route .jwc .ctrlbar .speed, .ship-route .jwc .hud { display: none; }
+  .ship-route .jwc .overlay h3, .ship-route .jwc .overlay #routeSub { display: none; }
+  .ship-route .jw-frame.chart { padding: 6px; }
+}
+@media (min-width: 1024px) { .ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: calc(100svh - 430px); min-height: 360px; } }
+
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
 @keyframes jw-spin { to { transform: rotate(360deg); } }
 @keyframes jw-nudge { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(var(--jw-bx, -3px), -4px); } }

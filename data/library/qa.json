@@ -2567,14 +2567,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff95c",
    "slug": "mwiba-lodge",
-   "name": "Mwiba Lodge Serengeti National Park",
+   "name": "Mwiba Lodge",
    "country": "Tanzania",
    "missing": [
-    "correct_hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff95e",
@@ -3411,10 +3409,9 @@
    "name": "Singita Explore",
    "country": "Tanzania",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9a7",
@@ -3838,13 +3835,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9ce",
    "slug": "swale-camp",
-   "name": "Swala Camp",
+   "name": "Swala Camp, an A&K Sanctuary",
    "country": "Tanzania",
-   "missing": [
-    "hero_photo",
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9cf",

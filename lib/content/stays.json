@@ -20912,6 +20912,120 @@
    "arrivalHubIds": []
   },
   {
+   "slug": "mwiba-lodge",
+   "name": "Mwiba Lodge",
+   "ledgerId": "STY-2026-000173",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten tented suites above a river gorge in a private Southern Serengeti wildlife area",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mwiba-lodge/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Mwiba Airstrip",
+   "airportDirections": "Fly to Mwiba Airstrip; transfers to and from the lodge are included.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten luxury tented suites, joined to the main lodge by winding wooden walkways, each with an en suite bathroom, deep-soaking tub and private deck over the wilderness. The lodge sits on the boulders of an ancient outcrop above the Arugusinyai River gorge, with private dining rooms, a gym, spa, infinity pool and jacuzzi."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Every booking has its own vehicle and guide and no set schedule. Unlimited game drives, including night drives, in the exclusive-use Greater Mwiba Protected Wildlife Area, walking safaris, foraging walks with the Hadzabe, visits to a Datoga village and helicopter flights over the escarpment."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Full board with house drinks, a private guide and vehicle, and all safari and cultural activities included. Wi-Fi in the suites and main areas. Stays support the Friedkin Conservation Fund. Mwiba is now part of Auberge Safari, the Auberge Collection's Tanzania portfolio."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A private vehicle and guide on every booking, in a wildlife area no other lodge shares, with night drives and time with the Hadzabe and Datoga."
+   ],
+   "why": [
+    {
+     "title": "Space and Seclusion",
+     "body": "Best for couples, honeymooners, friends and families with children aged four and older."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Mwiba Airstrip; lodge transfers are included.",
+    "signature_experiences": "Private-vehicle game drives and night drives, walking safaris, and foraging with the Hadzabe.",
+    "who_its_for": "Couples, honeymooners, friends and families with children aged four and older."
+   },
+   "faqs": [
+    {
+     "q": "Where is Mwiba Lodge?",
+     "a": "In the Greater Mwiba Protected Wildlife Area in the Southern Serengeti, perched on a rocky outcrop above the Arugusinyai River gorge."
+    },
+    {
+     "q": "How do you get to Mwiba Lodge?",
+     "a": "Fly to Mwiba Airstrip; transfers between the airstrip and the lodge are included."
+    },
+    {
+     "q": "How many suites does Mwiba Lodge have?",
+     "a": "Ten luxury tented suites, each with an en suite bathroom and a private deck."
+    },
+    {
+     "q": "Can children stay at Mwiba Lodge?",
+     "a": "Yes. Mwiba welcomes families with children aged four and older."
+    },
+    {
+     "q": "What is included at Mwiba Lodge?",
+     "a": "All meals and house drinks, a private vehicle and guide for each booking, unlimited game drives including night drives, a walking safari, cultural visits with the Hadzabe and Datoga, and airstrip transfers. Conservation fees, spa treatments and gratuities are extra."
+    },
+    {
+     "q": "Who owns Mwiba Lodge?",
+     "a": "Mwiba Lodge is part of Auberge Safari, formed when Legendary Expeditions and Chem Chem Safari joined the Auberge Collection. Stays support the Friedkin Conservation Fund."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": []
+  },
+  {
    "slug": "nihi",
    "name": "NIHI Sumba \n The Edge of Wildness",
    "ledgerId": "STY-2026-000186",
@@ -28515,6 +28629,113 @@
    "arrivalHubIds": []
   },
   {
+   "slug": "singita-explore",
+   "name": "Singita Explore",
+   "ledgerId": "STY-2026-000247",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A pared-back private tented camp on Singita's Grumeti plains",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/singita-explore/g9"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "family"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "A small, private camp of six canvas tents set low among the trees on the open plains of the Grumeti Reserve. Comfortable beds, warm bucket showers and meals shared over an open fire, with only canvas between you and the wild."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Guided walks and game drives across Singita's 350,000-acre concession on the Serengeti's western corridor, where the Great Migration passes each year and around 400 bird species have been recorded. Days follow the landscape rather than a timetable, and evenings end around the fire under the stars."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Singita's most stripped-back camp, made for experienced safari-goers who want a more elemental bush experience without giving up comfort. You wake to a voice announcing sunrise. Stays support the Grumeti Fund, which has run conservation and community programmes on the reserve since 2003."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Waking to a voice announcing sunrise and falling asleep to the calls of hyena, in a camp where beyond the tents there is only open plain."
+   ],
+   "why": [
+    {
+     "title": "Under Canvas, on Purpose",
+     "body": "Best for experienced safari-goers, families and friends who want the simplest, most connected way to see the Grumeti, on foot and by vehicle."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Singita arranges transfers into the Grumeti Reserve with every booking; ask James for the routing that suits your trip.",
+    "signature_experiences": "Guided bush walks, game drives on the Grumeti plains and open-fire dinners under the stars.",
+    "who_its_for": "Experienced safari-goers, families and friends who want an elemental, private tented camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Explore?",
+     "a": "On the plains of Singita's Grumeti Reserve, a 350,000-acre concession on the western corridor of the Serengeti in Tanzania."
+    },
+    {
+     "q": "What is Singita Explore like?",
+     "a": "A small, private tented camp of six canvas tents, pared back on purpose, with bucket showers, open-fire meals and nothing beyond the camp but open plain."
+    },
+    {
+     "q": "Who is Singita Explore best for?",
+     "a": "Experienced safari-goers who want a more authentic bush experience without giving up comfort, and families or friends travelling together."
+    },
+    {
+     "q": "What can you do at Singita Explore?",
+     "a": "Guided bush walks and game drives across the Grumeti, with the Great Migration passing through the reserve each year and around 400 bird species recorded."
+    },
+    {
+     "q": "How does a stay at Singita Explore support conservation?",
+     "a": "Singita partners with the non-profit Grumeti Fund, which has carried out wildlife conservation and community programmes on the reserve since 2003, funded partly by guest donations."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": []
+  },
+  {
    "slug": "singita-faru-faru-lodge",
    "name": "Singita Faru Faru Lodge",
    "ledgerId": "STY-2026-000248",
@@ -32643,6 +32864,122 @@
     "stays",
     "safaris"
    ],
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "swale-camp",
+   "name": "Swala Camp, an A&K Sanctuary",
+   "ledgerId": "STY-2026-000287",
+   "country": "Tanzania",
+   "countrySlug": "tanzania",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twelve tented suites by a busy waterhole in quiet southern Tarangire",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/swale-camp/g10"
+   ],
+   "bestMonths": "June to October",
+   "bestMonthsNote": "June to October is the dry season, with wildlife concentrated at water and elephants in herds of up to 300. January to March is green, with wildflowers and excellent birding; November and December bring lush scenery, migratory birds and fewer visitors.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -4.131018,
+    "lng": 35.954582
+   },
+   "airport": "Kuro Airstrip (from Arusha Airport)",
+   "airportDirections": "A 30-minute light-aircraft flight from Arusha to Kuro Airstrip, then a 1-hour drive to camp. Light aircraft allow 20 kg per person in a soft bag.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve tented suites of 42 square metres, raised on wooden platforms in the shade of acacias, for up to 26 guests. Each has a king or twin beds, an en suite bathroom with double vanities, an outdoor rainfall shower and a large private deck over the savannah. The main camp has a circular bar, boma, dining deck and a pool shaded by an ancient baobab."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Game drives twice a day in the little-visited south of Tarangire National Park, walking safaris with a guide and an armed ranger, night drives with specialist lighting, and bush breakfasts, lunches and dinners. Guests can also tour schools supported by A&K Philanthropy, guided by a pupil."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A waterhole in front of camp draws elephants, a resident impala herd, lions and leopards. Tarangire holds Tanzania's largest elephant population, about 3,000 animals, with herds of up to 300 gathering in the dry season. Food leans local, from chips mayai to mtori banana soup. Meals, drinks including premium brands, game drives, laundry and Kuro Airstrip transfers are included."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A pool under a baobab beside a waterhole where elephant herds come to drink, in the quiet southern corner of Tarangire where few other vehicles go."
+   ],
+   "why": [
+    {
+     "title": "Baobabs and Elephants",
+     "body": "Best for couples, honeymooners and anyone who wants big elephant herds without the crowds, from first safaris to seasoned travellers."
+    }
+   ],
+   "facts": {
+    "best_months": "June to October for dry-season game and elephant herds; January to March for green season and birding.",
+    "how_to_get_there": "30-minute flight from Arusha to Kuro Airstrip, then a 1-hour drive.",
+    "signature_experiences": "Waterhole viewing from camp, walking safaris with an armed ranger, night drives and bush dining.",
+    "who_its_for": "Couples, honeymooners and travellers who want Tarangire's elephants with few other vehicles."
+   },
+   "faqs": [
+    {
+     "q": "Where is Swala Camp?",
+     "a": "In the quieter southern part of Tarangire National Park in northern Tanzania, away from the busier safari circuit."
+    },
+    {
+     "q": "How do you get to Swala Camp?",
+     "a": "Fly 30 minutes by light aircraft from Arusha to Kuro Airstrip, then drive about an hour to camp. Return transfers from Kuro are included."
+    },
+    {
+     "q": "How many tents does Swala Camp have?",
+     "a": "Twelve tented suites of 42 square metres, for a maximum of 26 guests."
+    },
+    {
+     "q": "When is the best time to visit Swala Camp?",
+     "a": "June to October for dry-season game viewing and big elephant herds; January to March and November to December for green landscapes and birding."
+    },
+    {
+     "q": "What is included at Swala Camp?",
+     "a": "All meals and drinks including premium brands, game drives, laundry, emergency medical evacuation and return transfers from Kuro Airstrip."
+    },
+    {
+     "q": "Is Swala Camp good for a honeymoon?",
+     "a": "Yes. The team arranges honeymoon touches such as sundowner cocktails and sparkling wine, and A&K offers newlyweds 50% off one partner's stay."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": null,
    "arrivalHubIds": []
   },
   {

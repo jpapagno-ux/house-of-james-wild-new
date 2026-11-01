@@ -39,6 +39,8 @@ jobs:
           cat result.json
           python3 -c "import json;r=json.load(open('result.json'));assert r.get('ok'),r;print('updated',r['updated'])"
       - name: Run the library sync so the site follows
-        run: gh workflow run library-sync.yml -f reason="Pathway apply: $(python3 -c "import json;print(json.load(open('scripts/data/pathway-apply.json'))['by'])")"
+        run: |
+          BY=$(python3 -c "import json;print(json.load(open('scripts/data/pathway-apply.json'))['by'])")
+          gh workflow run library-sync.yml -f reason="Pathway apply, $BY"
         env:
           GH_TOKEN: ${{ github.token }}

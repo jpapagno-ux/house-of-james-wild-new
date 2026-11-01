@@ -85,6 +85,18 @@
 .ledger-chart.is-drawn .chart-fade { opacity: 1; }
 /* Flyover: the continent's labels, graticule and compass step aside while the chart flies in. */
 .ledger-chart.fly-quiet .chart-fade { opacity: 0; transition: opacity .35s ease; }
+/* Flyover: the marching dotted ring around the feature the chart lands on (the Salar de Uyuni). */
+@keyframes fly-march { to { stroke-dashoffset: -26; } }
+.fly-ring { animation: fly-march 1.4s linear infinite; }
+.ledger-chart.fly-land .chart-fade { transition-delay: .25s; }
+.ledger-chart.fly-land .chart-ink { animation-duration: 1.2s, .8s; animation-delay: 0s, .4s; }
+.fly-ring-in { transform-box: fill-box; transform-origin: center; animation: fly-ring-in 1s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes fly-ring-in { from { transform: scale(1.9); opacity: 0; } 60% { opacity: 1; } to { transform: scale(1); opacity: 1; } }
+.fly-shine { animation: fly-shine 3.2s ease-in-out .2s infinite; }
+@keyframes fly-shine { from { transform: skewX(-18deg) translateX(0); opacity: 0; } 15% { opacity: .9; } 70% { opacity: .9; } to { transform: skewX(-18deg) translateX(var(--shine-run)); opacity: 0; } }
+.fly-star { animation: fly-twinkle 3.2s ease-in-out infinite; }
+@keyframes fly-twinkle { 0%, 100% { opacity: .95; } 50% { opacity: .25; } }
+@media (prefers-reduced-motion: reduce) { .fly-ring, .fly-ring-in, .fly-shine, .fly-star { animation: none; } }
 .ledger-pin-drop { animation: ledger-pin-drop .55s cubic-bezier(.22,1,.36,1) both; transform-box: fill-box; transform-origin: 50% 100%; }
 @keyframes ledger-pin-drop { from { transform: translateY(-22px) scale(.55); opacity: 0; } 70% { transform: translateY(2px) scale(1.05); opacity: 1; } to { transform: none; opacity: 1; } }
 .ledger-pin-pulse { animation: ledger-pin-pulse 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }

@@ -77,7 +77,9 @@ function overlays(cfg, P) {
   const ell = (cx, cy, rx, ry) => Array.from({ length: 28 }, (_, i) => { const a = (i / 28) * 2 * Math.PI; return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)]; });
   const shape = (x) => (x[1] === "ellipse" ? { name: x[0], d: path(ell(x[2], x[3], x[4], x[5])), at: P([x[2], x[3]]) } : { name: x[0], d: path(x[1]), at: x[2] ? P(x[2]) : P(x[1].reduce((a, p) => [a[0] + p[0] / x[1].length, a[1] + p[1] / x[1].length], [0, 0])) });
   return {
-    salt: (cfg.salt || []).map(shape).map(({ name, d, at }) => ({ name, d, x: at[0], y: at[1] })),
+    salt: (cfg.salt || []).map((x) => { const sh = shape(x); const pts = x[1] === "ellipse" ? ell(x[2], x[3], x[4], x[5]) : x[1]; const q = pts.map(P);
+      const box = [Math.min(...q.map((p) => p[0])), Math.min(...q.map((p) => p[1])), Math.max(...q.map((p) => p[0])), Math.max(...q.map((p) => p[1]))].map((v) => +v.toFixed(1));
+      return { name: sh.name, d: sh.d, x: sh.at[0], y: sh.at[1], box }; }),
     reserves: (cfg.reserves || []).map(shape).map(({ name, d, at }) => ({ name, d, x: at[0], y: at[1] })),
     route: cfg.route ? "M" + cfg.route.map((p) => P(p).join(",")).join("L") : null,
     marks: (cfg.marks || []).map(([text, lat, lng, kind]) => { const [x, y] = P([lng, lat]); return { text, x, y, kind }; }),

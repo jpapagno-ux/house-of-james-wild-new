@@ -19,7 +19,7 @@ export type ChartData = {
   /** Flyover landing charts only: salt flats, reserves, a route, marks and UNESCO sites (outlines indicative). */
   readonly overlays?: ChartOverlays;
 };
-type Shape = { readonly name: string; readonly d: string; readonly x: number; readonly y: number };
+type Shape = { readonly name: string; readonly d: string; readonly x: number; readonly y: number; readonly box?: readonly [number, number, number, number] };
 export type ChartOverlays = {
   readonly salt: readonly Shape[];
   readonly reserves: readonly Shape[];

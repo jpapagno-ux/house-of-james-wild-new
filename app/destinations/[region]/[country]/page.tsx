@@ -24,6 +24,7 @@ import Compass from "@/components/destination/Compass";
 import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
 import WhenToGo from "@/components/destination/WhenToGo";
+import { hubsForCountry, transfersForCountry, hubLabel, hubSchema, transferLine, KIND_LABEL } from "@/lib/content/arrivals";
 import PlanBand from "@/components/destination/PlanBand";
 import GatewayNight from "@/components/stays/GatewayNight";
 import ChapterRail from "@/components/ledger/ChapterRail";
@@ -116,6 +117,15 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const chart = CHARTS[c.slug];
   const all = staysIn(c.slug);
   const pages = all.filter(pageReady).sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name));
+  // Stage 5 (Last Mile): once the Ledger holds approved arrival hubs for this country they replace the
+  // airports derived from stay text, and only approved transfer legs with a stated time are listed.
+  const hubs = hubsForCountry(c.name);
+  const legs = transfersForCountry(c.name, all).filter((t) => transferLine(t));
+  const airports: [string, string][] = hubs.length
+    ? hubs.map((h) => [hubLabel(h), [h.kind !== "airport" ? KIND_LABEL[h.kind] : null, h.country && h.country !== c.name ? `in ${h.country}, serves ${c.name}` : null, h.gatewayOvernight ? "The house books a first or last night here" : null, (() => { const n = all.filter((s) => (s.arrivalHubIds ?? []).includes(h.id)).length; return n ? `Serves ${n} ${n === 1 ? "stay" : "stays"} in the Ledger` : `On record for ${c.name}`; })(), h.ledgerId].filter(Boolean).join(" · ")] as [string, string])
+    : c.airports;
+  const transfers: [string, string][] = hubs.length ? legs.map((t) => [`${t.hub.code ?? t.hub.name} → ${t.stay.name}`, `${transferLine(t)}, as stated by the property`] as [string, string]) : c.transfers;
+  const flyInto = hubs.length ? hubs.filter((h) => h.kind === "airport" && h.code).slice(0, 2).map((h) => h.code).join(" · ") || c.flyInto : c.flyInto;
   const featured = pages.slice(0, 9);
   const journeys = journeysFor(c.slug);
   const items: MapItem[] = all.filter((s) => s.coords).map((s) => {
@@ -133,7 +143,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
-  const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
   const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -148,7 +158,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} stays</dd></div>
               <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
               <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
-              <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{c.flyInto}</dd></div>
+              <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>
             </dl>
           </div>
         </HeroSlider>
@@ -271,7 +281,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </section>
           )}
 
-          <WhenToGo place={c.name} rows={c.months} airports={c.airports} transfers={c.transfers} />
+          <WhenToGo place={c.name} rows={c.months} airports={airports} transfers={transfers} ledger={hubs.length > 0} />
           <WhoPlans where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: c.slug, countrySlug: c.slug, regionSlug: c.region, ledgerId: c.ledgerId ?? null, sourcePage: path, volume: c.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${c.name}`} />}
           {c.faqs.length > 0 && <FaqBlock faqs={c.faqs} title={`${c.name}, answered`} />}
@@ -279,7 +289,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <Doors id="also" eyebrow={`Also in ${c.regionName}`} title={`Beyond ${c.name}`} doors={doors} />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "TouristDestination", "@id": absoluteUrl(`${path}#destination`), name: c.name, url: absoluteUrl(path), description: answer, containedInPlace: { "@type": "Place", name: c.regionName }, publisher: { "@id": ids.house }, ...whoPlansSchema({ countrySlug: c.slug, regionSlug: c.region }), includesAttraction: pages.slice(0, 30).map((s) => ({ "@type": "LodgingBusiness", name: s.name, url: absoluteUrl(recordHref("stay", s.slug)), ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}), ...(s.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: s.ledgerId } } : {}) })) })} />
+      <JsonLd data={graph({ "@type": "TouristDestination", "@id": absoluteUrl(`${path}#destination`), name: c.name, url: absoluteUrl(path), description: answer, containedInPlace: { "@type": "Place", name: c.regionName }, publisher: { "@id": ids.house }, ...whoPlansSchema({ countrySlug: c.slug, regionSlug: c.region }), includesAttraction: pages.slice(0, 30).map((s) => ({ "@type": "LodgingBusiness", name: s.name, url: absoluteUrl(recordHref("stay", s.slug)), ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}), ...(s.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: s.ledgerId } } : {}) })), ...(hubs.length ? { potentialAction: hubs.map((h) => ({ "@type": "TravelAction", name: `Arrive in ${c.name} via ${hubLabel(h)}`, fromLocation: hubSchema(h), toLocation: { "@type": "Place", name: c.name } })) } : {}) })} />
     </div>
   );
 }

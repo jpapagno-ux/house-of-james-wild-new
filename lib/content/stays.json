@@ -112,7 +112,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-lake-serengeti-under-canvas",
@@ -222,7 +223,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-sussuvlei-desert-lodge",
@@ -303,7 +305,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-vira-vira-lodge",
@@ -375,7 +378,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "benguerra-island-by-and-beyond",
@@ -454,7 +458,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chobe-under-canvas-by-and-beyond",
@@ -528,7 +533,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-grumeti-safari-camp",
@@ -595,7 +601,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-kichwa-camp",
@@ -676,7 +683,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-kleins-camp",
@@ -749,7 +757,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "aguas-claras",
@@ -905,7 +914,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "aliikai-voyage",
@@ -995,7 +1005,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "alila-ventana-big-sur",
@@ -1076,7 +1087,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "alya-catamaran-galapagos",
@@ -1152,7 +1164,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "amandari",
@@ -1255,7 +1268,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "amazon-field-station-byinkaterra",
@@ -1325,7 +1339,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ambiente-tm-sedona",
@@ -1398,7 +1413,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "amor-arenal",
@@ -1477,7 +1493,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-bophut-koh-samui-resort",
@@ -1553,7 +1570,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-chiang-mai-resort",
@@ -1626,7 +1644,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-golden-triangle-chiang-rai",
@@ -1707,7 +1726,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-hua-hin",
@@ -1788,7 +1808,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-mui-ne",
@@ -1861,7 +1882,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "stanley-livingstone-lodge",
@@ -1925,7 +1947,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-ubud-bali",
@@ -2006,7 +2029,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-amboseli",
@@ -2109,7 +2133,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-mara",
@@ -2227,7 +2252,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-safari-camp",
@@ -2318,7 +2344,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "arenal-springs-camp-by-nayara",
@@ -2391,7 +2418,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "arenas-del-mar-resort",
@@ -2475,7 +2503,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ariel-house",
@@ -2596,7 +2625,8 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "arijiju-laikipia",
@@ -2681,7 +2711,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "armendaris-ted-turner-reserve",
@@ -2746,7 +2777,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-rekero-camp",
@@ -2826,7 +2858,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-atacama",
@@ -2901,7 +2934,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "iguazu",
@@ -2978,7 +3012,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-mendoza",
@@ -3055,7 +3090,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-patagonia",
@@ -3136,7 +3172,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-santa-catarina",
@@ -3211,7 +3248,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "babylonstoren",
@@ -3317,7 +3355,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "baines-lodge",
@@ -3387,7 +3426,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "bateleur-camp-by-and-beyond",
@@ -3465,7 +3505,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "baymanhi-exuma",
@@ -3567,7 +3608,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "be-tulum",
@@ -3646,7 +3688,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "birkenhead-house",
@@ -3733,7 +3776,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "blancaneaux-lodge",
@@ -3838,7 +3882,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "blue-reef",
@@ -3936,7 +3981,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "blue-safari-seychelles",
@@ -3997,7 +4043,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "boluntiku-hotel",
@@ -4042,7 +4089,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "borana",
@@ -4123,7 +4171,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "breac-house",
@@ -4230,7 +4279,11 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85b",
+    "6ae666174efda236c530e85c"
+   ]
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -4347,7 +4400,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "camp-hwange-muddy-teak",
@@ -4446,7 +4500,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "cap-karoso",
@@ -4545,7 +4600,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "cape-cadogan-boutique-hotel",
@@ -4678,7 +4734,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-capella-lodge",
@@ -4794,7 +4851,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "capella-ubud",
@@ -4869,7 +4927,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "cardamom-tented-camp",
@@ -4944,7 +5003,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "casa-maya-kaan",
@@ -5022,7 +5082,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "castle-leslie",
@@ -5124,7 +5185,11 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858",
+    "6ae666174efda236c530e85e"
+   ]
   },
   {
    "slug": "celestia-yacht",
@@ -5207,7 +5272,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chable-yucatan",
@@ -5288,7 +5354,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chamilandu-lodge",
@@ -5359,7 +5426,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "cheetah-plains",
@@ -5463,7 +5531,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chem-chem",
@@ -5536,7 +5605,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chiawa-safaris",
@@ -5601,7 +5671,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chindeni-lodge",
@@ -5668,7 +5739,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "chisa-busanga-camp",
@@ -5754,7 +5826,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chumbe-island-zanzibar",
@@ -5830,7 +5903,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "clayoquot-wilderness-resort",
@@ -5916,7 +5990,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "coco-costa-rica",
@@ -5961,7 +6036,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "coco-plum-island-resort",
@@ -6061,7 +6137,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "como-shambhala-estate",
@@ -6135,7 +6212,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "conrad-tulum-riviera-maya",
@@ -6214,7 +6292,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "coot-club",
@@ -6328,7 +6407,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "corks-vienna-woods",
@@ -6418,7 +6498,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "cottars-1920-camp",
@@ -6527,7 +6610,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-original-camp-by-serian",
@@ -6596,7 +6680,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "daunara-safari-camp",
@@ -6669,7 +6754,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-duba-plains",
@@ -6730,7 +6816,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "dukes-camp-okavango",
@@ -6810,7 +6897,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-anabezi-lodge",
@@ -6876,7 +6964,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-daunara-lodge",
@@ -6973,7 +7062,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-leadwood-lodge",
@@ -7067,7 +7157,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-moya-lodge",
@@ -7178,7 +7269,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-river-lodge",
@@ -7267,7 +7359,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-dunia-camp",
@@ -7347,7 +7440,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "da-licenca",
@@ -7444,7 +7538,8 @@
    "pathway": null,
    "volumes": [
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ecocamp-patagonia",
@@ -7523,7 +7618,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-evolve-yacht",
@@ -7600,7 +7696,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-origin-yacht",
@@ -7677,7 +7774,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-theory-yacht",
@@ -7754,7 +7852,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "el-mapi-byinkaterra",
@@ -7828,7 +7927,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "elephann-pan-khwai",
@@ -7905,7 +8005,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ellerman-house",
@@ -8043,7 +8144,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "elsas-kopje",
@@ -8098,7 +8200,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "encounter-mara-camp-by-asilia",
@@ -8175,7 +8278,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "entamanu-lodge",
@@ -8239,7 +8343,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "entamanu-private-lodge",
@@ -8303,7 +8408,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "entara-esirai-camp",
@@ -8373,7 +8479,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "etosha-mountain-lodge",
@@ -8446,7 +8553,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-el-calafate",
@@ -8513,7 +8621,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-el-chalten",
@@ -8587,7 +8696,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-rapa-nui",
@@ -8661,7 +8771,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-sacred-valley",
@@ -8735,7 +8846,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-torres-del-paine",
@@ -8807,7 +8919,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "torres-del-paine-c-reserve",
@@ -8875,7 +8988,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-at-atacama",
@@ -8948,7 +9062,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "feline-fields-lodge",
@@ -9019,7 +9134,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "feline-fields-vintage-camp",
@@ -9094,7 +9210,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "fogo-island-inn",
@@ -9167,7 +9284,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "gibbs-farm",
@@ -9241,7 +9359,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "giraffe-manor",
@@ -9308,7 +9427,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "gomoti-plains-camp",
@@ -9380,7 +9500,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "gorongosa-safaris",
@@ -9483,7 +9604,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "greystoke-mahale-by-nomad",
@@ -9561,7 +9683,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "grootbos-private-nature-reserve",
@@ -9664,7 +9787,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "gwe-gwe-beach",
@@ -9712,7 +9836,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "gwe-gwe-beach-lodge",
@@ -9803,7 +9928,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "hayfield-manor",
@@ -9895,7 +10021,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "hemingways-nairobi",
@@ -10017,7 +10146,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hermanus-private-residences",
@@ -10106,7 +10236,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "hidden-valley-lodge",
@@ -10199,7 +10330,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "holistika",
@@ -10273,7 +10405,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "hotel-bardo",
@@ -10350,7 +10483,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "hotel-panamera",
@@ -10417,7 +10551,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "house-in-the-wild-masai-mara",
@@ -10494,7 +10629,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-huka-lodge",
@@ -10580,7 +10716,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ila-safari-lodge",
@@ -10662,7 +10799,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-cabo-blanco",
@@ -10736,7 +10874,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-hacienda-concepcion",
@@ -10812,7 +10951,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-hacienda-urubamba",
@@ -10887,7 +11027,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-la-casona",
@@ -10964,7 +11105,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-machu-picchu-pueblo-hotel",
@@ -11043,7 +11185,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-reserva-amazonica",
@@ -11115,7 +11258,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-palenque-resort",
@@ -11192,7 +11336,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-secas",
@@ -11264,7 +11409,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-secas-panama",
@@ -11351,7 +11497,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ja-manufaru-maldives",
@@ -11432,7 +11579,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "jabulani",
@@ -11480,7 +11628,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "jacana-camp",
@@ -11555,7 +11704,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacis-private-lodge",
@@ -11659,7 +11809,8 @@
     "safaris",
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacks-camp",
@@ -11733,7 +11884,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "jacks-private-camp",
@@ -11807,7 +11959,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "jaguar-reef-lodge",
@@ -11907,7 +12060,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "jao-camp",
@@ -11983,7 +12137,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jao-reserve",
@@ -12058,7 +12213,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ka-ana-resort",
@@ -12159,7 +12315,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kaaba-luum-mexico",
@@ -12240,7 +12397,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kamalaya-koh-samui",
@@ -12313,7 +12471,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-jimbaran-private-estates",
@@ -12395,7 +12554,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-nusa-dua",
@@ -12480,7 +12640,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-ubud",
@@ -12567,7 +12728,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "khwai-leadwood-camp",
@@ -12639,7 +12801,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "khwai-lediba",
@@ -12711,7 +12874,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kichakani-camp",
@@ -12782,7 +12946,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kicheche-mara-north",
@@ -12862,7 +13027,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -12942,7 +13108,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kruger-shalati",
@@ -12990,7 +13157,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kualoa-ranch",
@@ -13068,7 +13236,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kudadoo-private-island",
@@ -13149,7 +13318,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kura-boutique-resort",
@@ -13232,7 +13402,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-4-rivers",
@@ -13312,7 +13483,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-kwara",
@@ -13416,7 +13588,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-lagoon",
@@ -13519,7 +13692,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-lebala",
@@ -13622,7 +13796,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-mma-dinare",
@@ -13702,7 +13877,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-moremi-crossing",
@@ -13785,7 +13961,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-nxai-pan",
@@ -13867,7 +14044,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-pom-pom",
@@ -13950,7 +14128,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-rra-dinare",
@@ -14030,7 +14209,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-splash",
@@ -14113,7 +14293,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-tau-pan",
@@ -14196,7 +14377,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwande-private-game-reserve",
@@ -14312,7 +14494,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "kwetsani-camp",
@@ -14391,7 +14574,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "la-cle",
@@ -14501,7 +14685,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "la-residence",
@@ -14596,7 +14781,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "la-valise-tulum",
@@ -14669,7 +14855,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ladder-ted-turner-reserve",
@@ -14732,7 +14919,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -14804,7 +14992,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lalibela-reserve",
@@ -14944,7 +15133,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lapa-rios-lodge",
@@ -15020,7 +15210,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "le-quartier-francais",
@@ -15126,7 +15317,8 @@
    "parentSlug": null,
    "engine": "le-quartier-francais",
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "la-tahaa",
@@ -15207,7 +15399,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "leeu-estates",
@@ -15335,7 +15528,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "leeu-house",
@@ -15440,7 +15634,8 @@
    "parentSlug": null,
    "engine": "leeu-house",
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lekkerwater-dehoop",
@@ -15542,7 +15737,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lengishu-kenya",
@@ -15616,7 +15812,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "leopard-hills",
@@ -15725,7 +15922,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lepogo-lodges",
@@ -15773,7 +15971,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lewa-wilderness-lodge",
@@ -15849,7 +16048,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lion-sands",
@@ -15976,7 +16176,8 @@
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "little-tubu-camp",
@@ -16057,7 +16258,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lolebezi-lodge",
@@ -16133,7 +16335,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "londolozi-reserve",
@@ -16254,7 +16457,8 @@
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-longitude-131",
@@ -16361,7 +16565,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "loirien-mara",
@@ -16439,7 +16644,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "machaba",
@@ -16523,7 +16729,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "madikwe",
@@ -16644,7 +16851,8 @@
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mara-plains-camp-by-great-plains",
@@ -16713,7 +16921,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mara-toto-tree-camp-by-great-plains",
@@ -16785,7 +16994,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "masoala-forest-lodge",
@@ -16905,7 +17115,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "matachica-resort-and-spa",
@@ -17006,7 +17217,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "matetsi-victoria-falls",
@@ -17080,7 +17292,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "meno-a-kwena-camp",
@@ -17152,7 +17365,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mezzanine-tulum",
@@ -17225,7 +17439,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mfuwe-lodge",
@@ -17292,7 +17507,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "miavana-by-time-tide",
@@ -17375,7 +17591,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-mnemba-by-and-beyond",
@@ -17450,7 +17667,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "monachira-camp",
@@ -17526,7 +17744,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "monwana-thornybush",
@@ -17649,7 +17868,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "morukuru-farm-house",
@@ -17763,7 +17983,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mutiara-laut",
@@ -17840,7 +18061,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nihi",
@@ -17918,7 +18140,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-naboisho-camp-by-asilia",
@@ -17996,7 +18219,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "namale-resort-and-spa",
@@ -18077,7 +18301,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "namiri-plains-camp-by-asilia",
@@ -18161,7 +18386,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nautilus-maldives",
@@ -18239,7 +18465,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nay-palad-hideaway",
@@ -18316,7 +18543,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-alto-atacama",
@@ -18386,7 +18614,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-bocas-del-toro",
@@ -18462,7 +18691,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-gardens",
@@ -18541,7 +18771,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-hangaroa",
@@ -18616,7 +18847,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-tented-camp",
@@ -18694,7 +18926,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ngala-safari-lodge-by-beyond",
@@ -18817,7 +19050,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ngare-camp-by-serian",
@@ -18906,7 +19140,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nikoi-island",
@@ -18985,7 +19220,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "niyama-private-islands-maldives",
@@ -19069,7 +19305,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "no-1-pery-square-limerick",
@@ -19179,7 +19416,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85a"
+   ]
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -19259,7 +19499,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -19334,7 +19575,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-holbox",
@@ -19410,7 +19652,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-temple-ibiza",
@@ -19491,7 +19734,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-temple-madrid",
@@ -19573,7 +19817,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-tulum",
@@ -19654,7 +19899,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "north-island-okavango",
@@ -19715,7 +19961,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "nyungwe-tea-forest-resort",
@@ -19785,7 +20032,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ol-jogi-conservancy",
@@ -19871,7 +20119,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ol-pejeta-bush-camp-asilia",
@@ -19949,7 +20198,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "olas-tulum",
@@ -20026,7 +20276,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-olivers-camp",
@@ -20103,7 +20354,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "one-only-gorillas-nest",
@@ -20172,7 +20424,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "open-sky",
@@ -20245,7 +20498,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "our-habitas-namibia",
@@ -20316,7 +20570,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "our-habitas-tulum",
@@ -20394,7 +20649,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pacuare-lodge",
@@ -20478,7 +20734,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "paws-up-resort",
@@ -20553,7 +20810,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-bora-bora",
@@ -20628,7 +20886,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
@@ -20702,7 +20961,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-tahiti",
@@ -20779,7 +21039,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -20854,7 +21115,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-vahine-private-island",
@@ -20948,7 +21210,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pelo-camp",
@@ -21025,7 +21288,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -21134,7 +21398,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "pods-camp-bay",
@@ -21234,7 +21499,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "post-ranch-inn",
@@ -21310,7 +21576,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "potato-bush-camp",
@@ -21397,7 +21664,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pu-u-hoko-ranch",
@@ -21477,7 +21745,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "radhoo-tulum",
@@ -21550,7 +21819,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "rayvadee-resort",
@@ -21634,7 +21904,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-davui-island-resort",
@@ -21713,7 +21984,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-malewane",
@@ -21812,7 +22084,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-zambezi-lodge",
@@ -21901,7 +22174,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "rubondo-island-camp-asilia",
@@ -21980,7 +22254,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sable-alley-khwai",
@@ -22051,7 +22326,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "salas-camp",
@@ -22122,7 +22398,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "samara-karoo-reserve",
@@ -22228,7 +22505,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-eagle-view",
@@ -22308,7 +22586,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-leopard-hill",
@@ -22382,7 +22661,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-samburu-lodge",
@@ -22450,7 +22730,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-wild-lodge",
@@ -22528,7 +22809,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sasaab",
@@ -22610,7 +22892,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "seseka-thornybush",
@@ -22658,7 +22941,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sashwa",
@@ -22703,7 +22987,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sausage-tree-camp",
@@ -22790,7 +23075,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sayari-camp-asilia",
@@ -22864,7 +23150,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "segera-retreat",
@@ -22943,7 +23230,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-selinda-main-camp",
@@ -23004,7 +23292,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "senda-monteverde-lodge",
@@ -23089,7 +23378,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "serengeti-lamai-camp-by-serian",
@@ -23181,7 +23471,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "shawa-luangwa-camp",
@@ -23270,7 +23561,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "shinta-mani-wild",
@@ -23346,7 +23638,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "shipwreck-lodge-namibia",
@@ -23415,7 +23708,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sierra-grande-ted-turner-reserve",
@@ -23478,7 +23772,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-silky-oaks-lodge",
@@ -23584,7 +23879,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "silolona-sojourns",
@@ -23658,7 +23954,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sindabezi-island-camp",
@@ -23747,7 +24044,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-boulders",
@@ -23879,7 +24177,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-castleton",
@@ -23986,7 +24285,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-ebony",
@@ -24091,7 +24391,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-ebony-villa",
@@ -24196,7 +24497,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-elela",
@@ -24264,7 +24566,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-faru-faru-lodge",
@@ -24371,7 +24674,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-katanza-house",
@@ -24452,7 +24756,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-kilima",
@@ -24537,7 +24842,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-kwitonda",
@@ -24617,7 +24923,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-lebombo",
@@ -24731,7 +25038,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-lebombo-villa",
@@ -24836,7 +25144,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-malilangwe-house",
@@ -24916,7 +25225,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-mara-river",
@@ -25000,7 +25310,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-milele",
@@ -25075,7 +25386,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-pamushana",
@@ -25160,7 +25472,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sabora",
@@ -25261,7 +25574,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sasakwa",
@@ -25369,7 +25683,8 @@
     "safaris",
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-serengeti-house",
@@ -25453,7 +25768,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sweni",
@@ -25566,7 +25882,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sirai-house",
@@ -25611,7 +25928,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sirikoi-lodge",
@@ -25691,7 +26009,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sirius-yacht-galapagos",
@@ -25761,7 +26080,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "siwa-tulum",
@@ -25834,7 +26154,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-con-dao",
@@ -25914,7 +26235,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-crans-montana",
@@ -25989,7 +26311,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-douro-valley",
@@ -26064,7 +26387,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-fiji",
@@ -26144,7 +26468,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-ibiza",
@@ -26255,7 +26580,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-kanuhura",
@@ -26335,7 +26661,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-kyoto",
@@ -26415,7 +26742,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-laamu",
@@ -26490,7 +26818,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-ninh-van-bay",
@@ -26570,7 +26899,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-rome",
@@ -26645,7 +26975,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-samui",
@@ -26725,7 +27056,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-uluwatu",
@@ -26805,7 +27137,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-yao-noi",
@@ -26885,7 +27218,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-zil-pasyon",
@@ -26960,7 +27294,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "sleeping-giant-rainforest-lodge",
@@ -27058,7 +27393,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "somalisa-acacia",
@@ -27126,7 +27462,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-fushi-maldives",
@@ -27202,7 +27539,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-jani-maldives",
@@ -27272,7 +27610,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-secret-maldives",
@@ -27343,7 +27682,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "soori-bali",
@@ -27424,7 +27764,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-southern-ocean-lodge",
@@ -27511,7 +27852,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "st-george-s-caye-resort",
@@ -27611,7 +27953,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "suyian-lodge-by-and-beyond",
@@ -27687,7 +28030,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tabacon-thermal-resort-spa",
@@ -27771,7 +28115,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tahi",
@@ -27843,7 +28188,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tanah-gajah",
@@ -27929,7 +28275,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tanda-tula",
@@ -28040,7 +28387,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-camp",
@@ -28143,7 +28491,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-kirkmans-kamp",
@@ -28266,7 +28615,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-rattrays-lodge",
@@ -28367,7 +28717,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-sable-camp",
@@ -28467,7 +28818,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-river-lodge-by-mala-mala",
@@ -28563,7 +28915,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "thatch-caye-resort",
@@ -28667,7 +29020,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-art-villa",
@@ -28754,7 +29108,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-atelier-villa",
@@ -28799,7 +29154,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-beach-tulum",
@@ -28872,7 +29228,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-brando-tetiaroa",
@@ -28948,7 +29305,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-hide-safari-camp",
@@ -29026,7 +29384,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-highlands-by-asilia-highlands",
@@ -29106,7 +29465,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-lodge-at-chaa-creek",
@@ -29208,7 +29568,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-the-louise",
@@ -29292,7 +29653,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nami-project",
@@ -29365,7 +29727,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-retreat-at-blue-lagoon",
@@ -29447,7 +29810,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "the-silo-hotel",
@@ -29532,7 +29896,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "thornybush-reserve",
@@ -29580,7 +29945,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-tierra-atacama",
@@ -29666,7 +30032,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tierra-patagonia",
@@ -29745,7 +30112,8 @@
    "pathway": null,
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-chinzombo-2",
@@ -29824,7 +30192,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-chongwe-2",
@@ -29900,7 +30269,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-mchenja",
@@ -29983,7 +30353,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tokoriki-island-resort",
@@ -30060,7 +30431,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "tongabezi",
@@ -30148,7 +30520,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tswalu-reserve",
@@ -30283,7 +30656,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tubu-tree-camp",
@@ -30356,7 +30730,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "turtle-inn",
@@ -30458,7 +30833,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ubuntu-migration-camp-asilia",
@@ -30535,7 +30911,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ulum-moab",
@@ -30617,7 +30994,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "umaya-resort-and-marina",
@@ -30719,7 +31097,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-brtce-canyon",
@@ -30795,7 +31174,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-glacier",
@@ -30870,7 +31250,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-grand-canyon",
@@ -30949,7 +31330,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-lake-powell-grand-staircase",
@@ -31025,7 +31407,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-moab",
@@ -31101,7 +31484,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-north-yellowstone",
@@ -31176,7 +31560,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-west-yellowstone",
@@ -31251,7 +31636,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-yosemite",
@@ -31326,7 +31712,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-zion",
@@ -31402,7 +31789,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "ungasan-clifftops",
@@ -31481,7 +31869,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "uxua-casa-hotel-spa",
@@ -31560,7 +31949,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "velaa-private-island",
@@ -31638,7 +32028,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "vermejo-ted-turner-reserve",
@@ -31714,7 +32105,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "viceroy-bali",
@@ -31801,7 +32193,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "lales-camp-expeditions",
@@ -31864,7 +32257,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-bisate-reserve",
@@ -31935,7 +32329,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-busanga",
@@ -32011,7 +32406,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-desert-rhino-camp",
@@ -32083,7 +32479,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-damaraland",
@@ -32163,7 +32560,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-dumatau",
@@ -32266,7 +32664,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-hoanib-skeleton-camp",
@@ -32339,7 +32738,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-kulala-desert-camp",
@@ -32417,7 +32817,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "linyanti-wilderness-camp",
@@ -32482,7 +32883,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-duma-tau",
@@ -32558,7 +32960,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-kulala",
@@ -32635,7 +33038,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-mombo",
@@ -32708,7 +33112,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-magashi-peninsula",
@@ -32781,7 +33186,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mara",
@@ -32855,7 +33261,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mokete",
@@ -32937,7 +33344,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mombo-luxury-camp",
@@ -33038,7 +33446,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-qorokwe",
@@ -33123,7 +33532,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-ruckomechi",
@@ -33200,7 +33610,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-sabyinyo",
@@ -33277,7 +33688,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-savuti",
@@ -33357,7 +33769,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-serra-cafema",
@@ -33429,7 +33842,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-shumba",
@@ -33508,7 +33922,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-toka-leya",
@@ -33587,7 +34002,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-usawa",
@@ -33666,7 +34082,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-vumbura-plains",
@@ -33744,7 +34161,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wolwedans-dune-camp",
@@ -33826,7 +34244,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "wren-urban-nest",
@@ -33922,7 +34341,10 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858"
+   ]
   },
   {
    "slug": "xanadu-island-resort",
@@ -34017,7 +34439,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "xela-tulum",
@@ -34096,7 +34519,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "xigera-safari-lodge",
@@ -34165,7 +34589,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "zannier-sonop",
@@ -34235,7 +34660,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-zarafa-camp",
@@ -34296,7 +34722,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-zarafa-dhow-suite",
@@ -34357,7 +34784,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-krabey-island",
@@ -34437,7 +34865,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-residences-courchevel",
@@ -34512,7 +34941,8 @@
    "parentSlug": null,
    "engine": null,
    "pathway": null,
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   }
  ]
 }

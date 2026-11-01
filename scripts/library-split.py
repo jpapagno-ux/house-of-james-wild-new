@@ -12,4 +12,7 @@ json.dump({"exportedAt": x["exportedAt"], "entities": x["destinations"]}, open(R
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("offers") or []}, open(ROOT / "data/library/offers.json", "w"), ensure_ascii=False)
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("films") or []}, open(ROOT / "data/library/films.json", "w"), ensure_ascii=False)
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("impact_notes") or []}, open(ROOT / "data/library/impact-notes.json", "w"), ensure_ascii=False)
-print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films,", len(x.get("impact_notes") or []), "impact notes, exported", x["exportedAt"])
+# Stage 5 (Last Mile): approved arrival hubs and transfers; absent from older exports.
+json.dump({"exportedAt": x["exportedAt"], "entities": x.get("arrival_hubs") or []}, open(ROOT / "data/library/arrival-hubs.json", "w"), ensure_ascii=False)
+json.dump({"exportedAt": x["exportedAt"], "entities": x.get("transfers") or []}, open(ROOT / "data/library/transfers.json", "w"), ensure_ascii=False)
+print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films,", len(x.get("impact_notes") or []), "impact notes,", len(x.get("arrival_hubs") or []), "arrival hubs,", len(x.get("transfers") or []), "transfers, exported", x["exportedAt"])

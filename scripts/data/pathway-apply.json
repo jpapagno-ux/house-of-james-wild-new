@@ -1,0 +1,1966 @@
+{
+ "_note": "Wild Pathways — approved classification batch the site applies to the library (see .github/workflows/pathway-apply.yml and the library's pathwayApply function). Only the nine pathway fields can change. This file is the audit trail: every record here was approved by James. Batch 3 refinements (1 Nov 2026, FOLLOW-UPS #21): place-level pathway_setting for 364 batch-3 stays and the 35 tertiary pathways the bulk write had collapsed.",
+ "by": "James Papagno (batch 3, drafted by Iggi)",
+ "appliedOn": null,
+ "records": [
+  {
+   "id": "6ae6133ad04bdb7984634d50",
+   "slug": "jao-reserve",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6ae3fc7dfdfe515c2a6874aa",
+   "slug": "da-licenca",
+   "pathway_setting": "alentejo"
+  },
+  {
+   "id": "6ae35238b91414648fe5a541",
+   "slug": "tubu-tree-camp",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6ae35238b91414648fe5a53f",
+   "slug": "jacana-camp",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6a9c5c828dd73655f767f01b",
+   "slug": "kwando-tau-pan",
+   "pathway_setting": "kalahari"
+  },
+  {
+   "id": "6a9c5c822b4a07edcda0b703",
+   "slug": "kwando-splash",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c5c822b172280191268bf",
+   "slug": "kwando-rra-dinare",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c5c81d79534aca17305ee",
+   "slug": "kwando-moremi-crossing",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c5c818467536dbc1dffcf",
+   "slug": "kwando-mma-dinare",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c5c81530ad2691cfd8ca1",
+   "slug": "kwando-nxai-pan",
+   "pathway_setting": "makgadikgadi"
+  },
+  {
+   "id": "6a9c5c811e0e3145e072543a",
+   "slug": "kwando-pom-pom",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c5c8080b982b8cad4153e",
+   "slug": "kwando-4-rivers",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc23",
+   "slug": null,
+   "pathway_setting": "placencia"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc22",
+   "slug": null,
+   "pathway_setting": "placencia"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc21",
+   "slug": null,
+   "pathway_setting": "hopkins"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc20",
+   "slug": null,
+   "pathway_setting": "placencia"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1f",
+   "slug": null,
+   "pathway_setting": "belize_cayes"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1e",
+   "slug": null,
+   "pathway_setting": "belize_cayes"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1d",
+   "slug": null,
+   "pathway_setting": "ambergris_caye"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1c",
+   "slug": null,
+   "pathway_setting": "ambergris_caye"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1b",
+   "slug": null,
+   "pathway_setting": "belize_cayes"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc1a",
+   "slug": null,
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-03"
+   ]
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc19",
+   "slug": null,
+   "pathway_setting": "cayo"
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc18",
+   "slug": null,
+   "pathway_setting": "cayo",
+   "secondary_pathways": [
+    "PATH-01",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc17",
+   "slug": null,
+   "pathway_setting": "cayo",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-04"
+   ]
+  },
+  {
+   "id": "6a9c3ddc48b7e640309dbc16",
+   "slug": null,
+   "pathway_setting": "cayo"
+  },
+  {
+   "id": "6a89a1ccb72eb679d7db8a93",
+   "slug": "mutiara-laut",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a89a1cc96bdca7ea730b77d",
+   "slug": "aliikai-voyage",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a89a1cc78a74ae6119fc786",
+   "slug": "morukuru-farm-house",
+   "pathway_setting": "madikwe"
+  },
+  {
+   "id": "6a89a1ca490b55588860e016",
+   "slug": "silolona-sojourns",
+   "pathway_setting": "sumba"
+  },
+  {
+   "id": "6a89a1c8e69af346e5cd725a",
+   "slug": "lengishu-kenya",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a89a1c6d87104f52e7d84dc",
+   "slug": "ol-jogi-conservancy",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a89a1c6ca708b4bfd3f1153",
+   "slug": "thornybush-reserve",
+   "pathway_setting": "thornybush"
+  },
+  {
+   "id": "6a89a1c5fb327fb46504a7b9",
+   "slug": "chem-chem",
+   "pathway_setting": "tarangire"
+  },
+  {
+   "id": "6a89a1c5a4425471661727af",
+   "slug": "phinda-homestead-by-and-beyond",
+   "pathway_setting": "phinda"
+  },
+  {
+   "id": "6a89a1c5a229839acb1b46b8",
+   "slug": "kwande-private-game-reserve",
+   "pathway_setting": "eastern_cape"
+  },
+  {
+   "id": "6a89a1c37b72cde2aaa761f3",
+   "slug": "time-tide-chongwe-2",
+   "pathway_setting": "lower_zambezi"
+  },
+  {
+   "id": "6a89a1c3461690977bf282f5",
+   "slug": "miavana-by-time-tide",
+   "pathway_setting": "nosy_ankao"
+  },
+  {
+   "id": "6a89a1beb72eb679d7db8a8a",
+   "slug": "loirien-mara",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a89a1bc6e7bc1d0700009fe",
+   "slug": "celestia-yacht",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a89a1bbf393f17356a5ccf2",
+   "slug": "wilderness-ruckomechi",
+   "pathway_setting": "zambezi"
+  },
+  {
+   "id": "6a89a1baa7a284a598d0693a",
+   "slug": "singita-serengeti-house",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a89a1ba39db1711c2d51e43",
+   "slug": "wilderness-bisate-reserve",
+   "pathway_setting": "volcanoes_np"
+  },
+  {
+   "id": "6a89a1b951b9bb42527bd571",
+   "slug": "singita-ebony-villa",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a89a1b9022803fb07cc6636",
+   "slug": "singita-malilangwe-house",
+   "pathway_setting": "malilangwe"
+  },
+  {
+   "id": "6a89a1b5e220cb31521ce2a2",
+   "slug": "lekkerwater-dehoop",
+   "pathway_setting": "whale_coast"
+  },
+  {
+   "id": "6a89a1b5db7d6de225547e67",
+   "slug": "gwe-gwe-beach-lodge",
+   "pathway_setting": "wild_coast"
+  },
+  {
+   "id": "6a89a1b5c15be126df42c3fa",
+   "slug": "jacks-private-camp",
+   "pathway_setting": "makgadikgadi",
+   "secondary_pathways": [
+    "PATH-07",
+    "PATH-06"
+   ]
+  },
+  {
+   "id": "6a89a1b3a872b803febe1c3a",
+   "slug": "beyond-kichwa-camp",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a89a1b33c724b94e1e6ede8",
+   "slug": "beyond-kleins-camp",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a89a1b3181c451d04a8344d",
+   "slug": "beyond-grumeti-safari-camp",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a89a1b2ec5a3d5a71b977f9",
+   "slug": "beyond-amazon-explorer",
+   "pathway_setting": "amazon"
+  },
+  {
+   "id": "6a89a1b2695188166ffccdd1",
+   "slug": "kichakani-camp",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a89a1b1ed15ff3bf57055d3",
+   "slug": "blue-safari-seychelles",
+   "pathway_setting": "outer_islands"
+  },
+  {
+   "id": "6a89a1aeed382995ac68f477",
+   "slug": "tengile-mala-mala-camp",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a89a1abe791f8fadf04d5ed",
+   "slug": "great-plains-duba-plains",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a89a1ab8c577ee51827614c",
+   "slug": "great-plains-zarafa-camp",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a89a1ab47ee966f2de33dfd",
+   "slug": "great-plains-zarafa-dhow-suite",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a89a1ab46f8c4d5c2138e1d",
+   "slug": "daunara-safari-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a89a1a8ba16b1f8e86c1853",
+   "slug": "ecoventura-evolve-yacht",
+   "pathway_setting": "ecuador_galapagos"
+  },
+  {
+   "id": "6a89a1a885b5d65194e6100c",
+   "slug": "ecoventura-theory-yacht",
+   "pathway_setting": "ecuador_galapagos"
+  },
+  {
+   "id": "6a89a1a8725b511205cd33f5",
+   "slug": "ecoventura-origin-yacht",
+   "pathway_setting": "ecuador_galapagos"
+  },
+  {
+   "id": "6a89a1a83c33d698783bb8d9",
+   "slug": "sirai-house",
+   "pathway_setting": "kenya"
+  },
+  {
+   "id": "6a89a1a6da68d1e0f41d092c",
+   "slug": "the-atelier-villa",
+   "pathway_setting": "costa_rica"
+  },
+  {
+   "id": "6a89a1a6695188166ffccdbf",
+   "slug": "the-art-villa",
+   "pathway_setting": "osa"
+  },
+  {
+   "id": "6a89a1a5c095074b2717b63b",
+   "slug": "alya-catamaran-galapagos",
+   "pathway_setting": "galapagos"
+  },
+  {
+   "id": "6a89a1a5b859f18ce4662057",
+   "slug": "sirius-yacht-galapagos",
+   "pathway_setting": "galapagos"
+  },
+  {
+   "id": "6a89a1a3411b840989f62a6c",
+   "slug": "royal-malewane",
+   "pathway_setting": "thornybush"
+  },
+  {
+   "id": "6a89a1a2dc05de61f23e191f",
+   "slug": "chiawa-safaris",
+   "pathway_setting": "lower_zambezi"
+  },
+  {
+   "id": "6a89a1a2a9b27f2e10892595",
+   "slug": "hermanus-private-residences",
+   "pathway_setting": "whale_coast",
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-04"
+   ]
+  },
+  {
+   "id": "6a89a1a2a1ed379c848caef5",
+   "slug": "birkenhead-house",
+   "pathway_setting": "whale_coast"
+  },
+  {
+   "id": "6a899f0f490e5a82536965c0",
+   "slug": "torres-del-paine-c-reserve",
+   "pathway_setting": "torres_del_paine"
+  },
+  {
+   "id": "6a899f0efb8eeb6e72b54aee",
+   "slug": "awasi-mendoza",
+   "pathway_setting": "mendoza"
+  },
+  {
+   "id": "6a899f0eeb8ba7b1708d4eac",
+   "slug": "inkaterra-reserva-amazonica",
+   "pathway_setting": "amazon"
+  },
+  {
+   "id": "6a899f0ec6133d68ef72c507",
+   "slug": "inkaterra-hacienda-concepcion",
+   "pathway_setting": "amazon"
+  },
+  {
+   "id": "6a899f0eb5f02199d26a29bb",
+   "slug": "nayara-bocas-del-toro",
+   "pathway_setting": "bocas_del_toro"
+  },
+  {
+   "id": "6a899f0e94aa52a9fb36e1a3",
+   "slug": "iguazu",
+   "pathway_setting": "iguazu"
+  },
+  {
+   "id": "6a899f0e0689ce25383bec41",
+   "slug": "amazon-field-station-byinkaterra",
+   "pathway_setting": "amazon"
+  },
+  {
+   "id": "6a899f0d70db1e649b0eeb2b",
+   "slug": "tengile-mala-mala-sable-camp",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a899f0d1353aee43c8d7d98",
+   "slug": "tengile-mala-mala-rattrays-lodge",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a899f0d097f3f23995a0730",
+   "slug": "dulini-daunara-lodge",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a899f0c28513e64201e926b",
+   "slug": "six-senses-residences-courchevel",
+   "pathway_setting": "courchevel"
+  },
+  {
+   "id": "6a899f0bc78e997ae2de9f53",
+   "slug": "clayoquot-wilderness-resort",
+   "pathway_setting": "clayoquot_sound",
+   "secondary_pathways": [
+    "PATH-03",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a899f07c204598ed849834b",
+   "slug": "casa-maya-kaan",
+   "pathway_setting": "tulum",
+   "secondary_pathways": [
+    "PATH-04",
+    "PATH-02"
+   ]
+  },
+  {
+   "id": "6a899f05a7a284a598d05a90",
+   "slug": "wren-urban-nest",
+   "pathway_setting": "dublin"
+  },
+  {
+   "id": "6a899f05971d64c73c5417c1",
+   "slug": "noah-forest-by-tifakara",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85dce35b5b4f3c298cbcf9",
+   "slug": "beyond-vira-vira-lodge",
+   "pathway_setting": "chile_easter_island",
+   "secondary_pathways": [
+    "PATH-07",
+    "PATH-03"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa16",
+   "slug": "xigera-safari-lodge",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa15",
+   "slug": "zannier-sonop",
+   "pathway_setting": "namibia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa14",
+   "slug": "xela-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa13",
+   "slug": "wolwedans-dune-camp",
+   "pathway_setting": "namib"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa12",
+   "slug": "wilderness-vumbura-plains",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa11",
+   "slug": "wilderness-usawa",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa10",
+   "slug": "wilderness-toka-leya",
+   "pathway_setting": "victoria_falls"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa0f",
+   "slug": "wilderness-shumba",
+   "pathway_setting": "kafue"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa0e",
+   "slug": "wilderness-serra-cafema",
+   "pathway_setting": "namib"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa0d",
+   "slug": "wilderness-savuti",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa0c",
+   "slug": "wilderness-sabyinyo",
+   "pathway_setting": "volcanoes_np"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa0b",
+   "slug": "pelo-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa09",
+   "slug": "wilderness-mokete",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa08",
+   "slug": "wilderness-mara",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa07",
+   "slug": "wilderness-magashi-peninsula",
+   "pathway_setting": "akagera"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa06",
+   "slug": "little-tubu-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa05",
+   "slug": "wilderness-little-mombo",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa04",
+   "slug": "wilderness-little-kulala",
+   "pathway_setting": "sossusvlei"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa03",
+   "slug": "wilderness-little-duma-tau",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa02",
+   "slug": "linyanti-wilderness-camp",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa01",
+   "slug": "kwetsani-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bffa00",
+   "slug": "wilderness-kulala-desert-camp",
+   "pathway_setting": "sossusvlei"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9fe",
+   "slug": "wilderness-hoanib-skeleton-camp",
+   "pathway_setting": "namib"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9fd",
+   "slug": "wilderness-damaraland",
+   "pathway_setting": "damaraland"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9fc",
+   "slug": "wilderness-desert-rhino-camp",
+   "pathway_setting": "damaraland"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9fb",
+   "slug": "wilderness-busanga",
+   "pathway_setting": "kafue"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f8",
+   "slug": "lales-camp-expeditions",
+   "pathway_setting": "masoala"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f7",
+   "slug": "viceroy-bali",
+   "pathway_setting": "ubud",
+   "secondary_pathways": [
+    "PATH-05",
+    "PATH-02"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f6",
+   "slug": "velaa-private-island",
+   "pathway_setting": "noonu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f5",
+   "slug": "uxua-casa-hotel-spa",
+   "pathway_setting": "trancoso"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f4",
+   "slug": "ungasan-clifftops",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f3",
+   "slug": "under-canvas-zion",
+   "pathway_setting": "zion"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f2",
+   "slug": "under-canvas-yosemite",
+   "pathway_setting": "yosemite"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f1",
+   "slug": "under-canvas-west-yellowstone",
+   "pathway_setting": "yellowstone"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9f0",
+   "slug": "under-canvas-north-yellowstone",
+   "pathway_setting": "yellowstone"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ef",
+   "slug": "under-canvas-moab",
+   "pathway_setting": "moab",
+   "secondary_pathways": [
+    "PATH-06",
+    "PATH-03"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ee",
+   "slug": "under-canvas-lake-powell-grand-staircase",
+   "pathway_setting": "lake_powell"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ed",
+   "slug": "under-canvas-grand-canyon",
+   "pathway_setting": "grand_canyon"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ec",
+   "slug": "under-canvas-glacier",
+   "pathway_setting": "glacier"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9eb",
+   "slug": "under-canvas-brtce-canyon",
+   "pathway_setting": "bryce_canyon"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ea",
+   "slug": "ulum-moab",
+   "pathway_setting": "moab"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9e8",
+   "slug": "ubuntu-migration-camp-asilia",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9e5",
+   "slug": "tokoriki-island-resort",
+   "pathway_setting": "fiji"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9e4",
+   "slug": "time-tide-mchenja",
+   "pathway_setting": "south_luangwa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9e3",
+   "slug": "time-tide-chinzombo-2",
+   "pathway_setting": "south_luangwa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9e2",
+   "slug": "tierra-patagonia",
+   "pathway_setting": "torres_del_paine"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9df",
+   "slug": "the-silo-hotel",
+   "pathway_setting": "cape_town"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9dd",
+   "slug": "the-retreat-at-blue-lagoon",
+   "pathway_setting": "iceland"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9db",
+   "slug": "the-original-camp-by-serian",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9da",
+   "slug": "nami-project",
+   "pathway_setting": "canada"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d9",
+   "slug": "the-highlands-by-asilia-highlands",
+   "pathway_setting": "ngorongoro"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d8",
+   "slug": "the-hide-safari-camp",
+   "pathway_setting": "hwange"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d7",
+   "slug": "the-brando-tetiaroa",
+   "pathway_setting": "tahiti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d6",
+   "slug": "the-beach-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d5",
+   "slug": "tengile-river-lodge-by-mala-mala",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d3",
+   "slug": "tanda-tula",
+   "pathway_setting": "timbavati"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d2",
+   "slug": "tanah-gajah",
+   "pathway_setting": "ubud"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9d0",
+   "slug": "tahi",
+   "pathway_setting": "northland"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9cf",
+   "slug": "tabacon-thermal-resort-spa",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9cd",
+   "slug": "suyian-lodge-by-and-beyond",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9cb",
+   "slug": "stanley-livingstone-lodge",
+   "pathway_setting": "victoria_falls"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ca",
+   "slug": "soori-bali",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c9",
+   "slug": "soneva-secret-maldives",
+   "pathway_setting": "maldives"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c8",
+   "slug": "soneva-jani-maldives",
+   "pathway_setting": "noonu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c7",
+   "slug": "soneva-fushi-maldives",
+   "pathway_setting": "baa_atoll"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c6",
+   "slug": "somalisa-acacia",
+   "pathway_setting": "zimbabwe"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c3",
+   "slug": "six-senses-zil-pasyon",
+   "pathway_setting": "seychelles"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c2",
+   "slug": "six-senses-yao-noi",
+   "pathway_setting": "phang_nga_bay"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c1",
+   "slug": "six-senses-uluwatu",
+   "pathway_setting": "bukit",
+   "secondary_pathways": [
+    "PATH-07",
+    "PATH-02"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9c0",
+   "slug": "six-senses-samui",
+   "pathway_setting": "koh_samui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9bf",
+   "slug": "six-senses-rome",
+   "pathway_setting": "rome"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9be",
+   "slug": "six-senses-ninh-van-bay",
+   "pathway_setting": "nha_trang"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9bd",
+   "slug": "six-senses-laamu",
+   "pathway_setting": "laamu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9bc",
+   "slug": "six-senses-kyoto",
+   "pathway_setting": "kyoto"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9bb",
+   "slug": "six-senses-krabey-island",
+   "pathway_setting": "cambodia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ba",
+   "slug": "six-senses-kanuhura",
+   "pathway_setting": "lhaviyani"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b9",
+   "slug": "six-senses-ibiza",
+   "pathway_setting": "ibiza"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b8",
+   "slug": "six-senses-fiji",
+   "pathway_setting": "fiji"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b7",
+   "slug": "six-senses-douro-valley",
+   "pathway_setting": "douro"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b6",
+   "slug": "six-senses-crans-montana",
+   "pathway_setting": "montana"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b5",
+   "slug": "six-senses-con-dao",
+   "pathway_setting": "con_dao"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b4",
+   "slug": "siwa-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b3",
+   "slug": "sirikoi-lodge",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9b2",
+   "slug": "singita-sweni",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9af",
+   "slug": "singita-pamushana",
+   "pathway_setting": "malilangwe"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ae",
+   "slug": "singita-milele",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ad",
+   "slug": "singita-mara-river",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ac",
+   "slug": "singita-lebombo-villa",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9ab",
+   "slug": "singita-lebombo",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9aa",
+   "slug": "singita-kwitonda",
+   "pathway_setting": "volcanoes_np"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a9",
+   "slug": "singita-kilima",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a8",
+   "slug": "singita-katanza-house",
+   "pathway_setting": "volcanoes_np",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a5",
+   "slug": "singita-elela",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a4",
+   "slug": "singita-ebony",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a3",
+   "slug": "singita-castleton",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff9a0",
+   "slug": "shipwreck-lodge-namibia",
+   "pathway_setting": "namibia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99f",
+   "slug": "shinta-mani-wild",
+   "pathway_setting": "cambodia",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-01"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99e",
+   "slug": "seseka-thornybush",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99c",
+   "slug": "senda-monteverde-lodge",
+   "pathway_setting": "monteverde"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99b",
+   "slug": "great-plains-selinda-main-camp",
+   "pathway_setting": "linyanti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff99a",
+   "slug": "segera-retreat",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff999",
+   "slug": "sayari-camp-asilia",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff998",
+   "slug": "sashwa",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff997",
+   "slug": "sasaab",
+   "pathway_setting": "samburu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff996",
+   "slug": "saruni-wild-lodge",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff995",
+   "slug": "saruni-samburu-lodge",
+   "pathway_setting": "samburu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff994",
+   "slug": "saruni-leopard-hill",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff993",
+   "slug": "saruni-eagle-view",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff991",
+   "slug": "samara-karoo-reserve",
+   "pathway_setting": "karoo"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff990",
+   "slug": "salas-camp",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98f",
+   "slug": "sable-alley-khwai",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98e",
+   "slug": "rubondo-island-camp-asilia",
+   "pathway_setting": "lake_victoria"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98d",
+   "slug": "royal-zambezi-lodge",
+   "pathway_setting": "lower_zambezi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98c",
+   "slug": "royal-davui-island-resort",
+   "pathway_setting": "fiji"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98b",
+   "slug": "rayvadee-resort",
+   "pathway_setting": "krabi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff98a",
+   "slug": "radhoo-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff989",
+   "slug": "pu-u-hoko-ranch",
+   "pathway_setting": "hawaii"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff988",
+   "slug": "post-ranch-inn",
+   "pathway_setting": "big_sur",
+   "secondary_pathways": [
+    "PATH-03",
+    "PATH-08"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff986",
+   "slug": "pods-camp-bay",
+   "pathway_setting": "cape_town"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff983",
+   "slug": "pearl-resort-le-tikehau",
+   "pathway_setting": "tuamotus"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff982",
+   "slug": "pearl-resort-le-tahiti",
+   "pathway_setting": "tahiti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff981",
+   "slug": "pearl-resort-le-nuku-hiva",
+   "pathway_setting": "marquesas"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff980",
+   "slug": "pearl-resort-le-bora-bora",
+   "pathway_setting": "bora_bora"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97f",
+   "slug": "paws-up-resort",
+   "pathway_setting": "montana",
+   "secondary_pathways": [
+    "PATH-03",
+    "PATH-04"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97d",
+   "slug": "pacuare-lodge",
+   "pathway_setting": "pacuare"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97c",
+   "slug": "our-habitas-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97b",
+   "slug": "our-habitas-namibia",
+   "pathway_setting": "namib"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff97a",
+   "slug": "open-sky",
+   "pathway_setting": "zion"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff979",
+   "slug": "nyungwe-tea-forest-resort",
+   "pathway_setting": "nyungwe",
+   "secondary_pathways": [
+    "PATH-04",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff978",
+   "slug": "one-only-gorillas-nest",
+   "pathway_setting": "rwanda"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff977",
+   "slug": "asilia-olivers-camp",
+   "pathway_setting": "tarangire"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff976",
+   "slug": "olas-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff975",
+   "slug": "ol-pejeta-bush-camp-asilia",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff973",
+   "slug": "north-island-okavango",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff972",
+   "slug": "nomade-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff971",
+   "slug": "nomade-temple-madrid",
+   "pathway_setting": "madrid"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff970",
+   "slug": "nomade-temple-ibiza",
+   "pathway_setting": "ibiza"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff96f",
+   "slug": "nomade-holbox",
+   "pathway_setting": "holbox"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff96e",
+   "slug": "nomad-tanzania-lamai",
+   "pathway_setting": "tanzania"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff96d",
+   "slug": "niyama-private-islands-maldives",
+   "pathway_setting": "maldives"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff96a",
+   "slug": "nikoi-island",
+   "pathway_setting": "riau_islands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff969",
+   "slug": "nihi",
+   "pathway_setting": "sumba",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-02"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff966",
+   "slug": "nayara-tented-camp",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff965",
+   "slug": "nayara-hangaroa",
+   "pathway_setting": "rapa_nui",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff964",
+   "slug": "nayara-gardens",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff963",
+   "slug": "nayara-alto-atacama",
+   "pathway_setting": "atacama"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff962",
+   "slug": "nay-palad-hideaway",
+   "pathway_setting": "siargao"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff961",
+   "slug": "nautilus-maldives",
+   "pathway_setting": "baa_atoll"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff95f",
+   "slug": "namiri-plains-camp-by-asilia",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff95e",
+   "slug": "namale-resort-and-spa",
+   "pathway_setting": "fiji",
+   "secondary_pathways": [
+    "PATH-01",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff95d",
+   "slug": "asilia-naboisho-camp-by-asilia",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff959",
+   "slug": "monachira-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff958",
+   "slug": "beyond-mnemba-by-and-beyond",
+   "pathway_setting": "zanzibar"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff957",
+   "slug": "mfuwe-lodge",
+   "pathway_setting": "south_luangwa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff956",
+   "slug": "mezzanine-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff955",
+   "slug": "meno-a-kwena-camp",
+   "pathway_setting": "makgadikgadi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff953",
+   "slug": "matetsi-victoria-falls",
+   "pathway_setting": "victoria_falls"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff952",
+   "slug": "masoala-forest-lodge",
+   "pathway_setting": "masoala"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff951",
+   "slug": "mara-toto-tree-camp-by-great-plains",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff950",
+   "slug": "mara-plains-camp-by-great-plains",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff94e",
+   "slug": "machaba",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff94d",
+   "slug": "lolebezi-lodge",
+   "pathway_setting": "lower_zambezi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff947",
+   "slug": "lewa-wilderness-lodge",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff946",
+   "slug": "lepogo-lodges",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff945",
+   "slug": "leopard-hills",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff944",
+   "slug": "leeu-house",
+   "pathway_setting": "winelands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff941",
+   "slug": "la-tahaa",
+   "pathway_setting": "tahaa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff940",
+   "slug": "le-quartier-francais",
+   "pathway_setting": "winelands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93f",
+   "slug": "lapa-rios-lodge",
+   "pathway_setting": "osa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93e",
+   "slug": "manyara-tree-lodge-by-and-beyond",
+   "pathway_setting": "tarangire"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93d",
+   "slug": "la-valise-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93c",
+   "slug": "la-residence",
+   "pathway_setting": "winelands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff93b",
+   "slug": "la-cle",
+   "pathway_setting": "winelands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff939",
+   "slug": "kura-boutique-resort",
+   "pathway_setting": "osa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff938",
+   "slug": "kudadoo-private-island",
+   "pathway_setting": "lhaviyani"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff937",
+   "slug": "kualoa-ranch",
+   "pathway_setting": "hawaii"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff936",
+   "slug": "kruger-shalati",
+   "pathway_setting": "greater_kruger"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff935",
+   "slug": "kokoko-camp-by-asilia",
+   "pathway_setting": "ruaha"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff934",
+   "slug": "kicheche-mara-north",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff933",
+   "slug": "khwai-lediba",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff932",
+   "slug": "khwai-leadwood-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff931",
+   "slug": "kayumanis-ubud",
+   "pathway_setting": "ubud",
+   "secondary_pathways": [
+    "PATH-07",
+    "PATH-01"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff930",
+   "slug": "kayumanis-nusa-dua",
+   "pathway_setting": "nusa_dua",
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff92f",
+   "slug": "kayumanis-jimbaran-private-estates",
+   "pathway_setting": "bukit"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff92c",
+   "slug": "kamalaya-koh-samui",
+   "pathway_setting": "koh_samui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff92b",
+   "slug": "kaaba-luum-mexico",
+   "pathway_setting": "mexico"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff92a",
+   "slug": "jao-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff929",
+   "slug": "jacks-camp",
+   "pathway_setting": "makgadikgadi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff928",
+   "slug": "jabulani",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff927",
+   "slug": "ja-manufaru-maldives",
+   "pathway_setting": "maldives"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff926",
+   "slug": "isla-secas-panama",
+   "pathway_setting": "gulf_of_chiriqui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff925",
+   "slug": "isla-secas",
+   "pathway_setting": "gulf_of_chiriqui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff924",
+   "slug": "isla-palenque-resort",
+   "pathway_setting": "gulf_of_chiriqui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff923",
+   "slug": "inkaterra-machu-picchu-pueblo-hotel",
+   "pathway_setting": "machu_picchu",
+   "secondary_pathways": [
+    "PATH-05",
+    "PATH-01"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff922",
+   "slug": "inkaterra-la-casona",
+   "pathway_setting": "cusco"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff921",
+   "slug": "inkaterra-hacienda-urubamba",
+   "pathway_setting": "sacred_valley"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff920",
+   "slug": "inkaterra-cabo-blanco",
+   "pathway_setting": "peru"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff91e",
+   "slug": "house-in-the-wild-masai-mara",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff91c",
+   "slug": "hotel-panamera",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff91a",
+   "slug": "hotel-bardo",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff919",
+   "slug": "holistika",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff918",
+   "slug": "gwe-gwe-beach",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff917",
+   "slug": "grootbos-private-nature-reserve",
+   "pathway_setting": "south_africa",
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff916",
+   "slug": "greystoke-mahale-by-nomad",
+   "pathway_setting": "mahale"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff915",
+   "slug": "gorongosa-safaris",
+   "pathway_setting": "winelands"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff914",
+   "slug": "gomoti-plains-camp",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff913",
+   "slug": "giraffe-manor",
+   "pathway_setting": "nairobi",
+   "secondary_pathways": [
+    "PATH-04",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff912",
+   "slug": "gibbs-farm",
+   "pathway_setting": "ngorongoro",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-04"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff911",
+   "slug": "fogo-island-inn",
+   "pathway_setting": "fogo_island"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff90e",
+   "slug": "feline-fields-vintage-camp",
+   "pathway_setting": "botswana"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff90d",
+   "slug": "feline-fields-lodge",
+   "pathway_setting": "kalahari",
+   "secondary_pathways": [
+    "PATH-06",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff90c",
+   "slug": "explora-torres-del-paine",
+   "pathway_setting": "torres_del_paine"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff90b",
+   "slug": "explora-sacred-valley",
+   "pathway_setting": "sacred_valley"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff90a",
+   "slug": "explora-rapa-nui",
+   "pathway_setting": "rapa_nui",
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-03"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff908",
+   "slug": "explora-el-chalten",
+   "pathway_setting": "patagonia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff907",
+   "slug": "explora-el-calafate",
+   "pathway_setting": "patagonia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff905",
+   "slug": "explora-at-atacama",
+   "pathway_setting": "atacama"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff904",
+   "slug": "etosha-mountain-lodge",
+   "pathway_setting": "namib"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ff",
+   "slug": "entara-esirai-camp",
+   "pathway_setting": "tanzania"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8fe",
+   "slug": "entamanu-private-lodge",
+   "pathway_setting": "tanzania"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8fd",
+   "slug": "entamanu-lodge",
+   "pathway_setting": "ngorongoro"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8fc",
+   "slug": "encounter-mara-camp-by-asilia",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8fb",
+   "slug": "elsas-kopje",
+   "pathway_setting": "kenya"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f9",
+   "slug": "elephann-pan-khwai",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f8",
+   "slug": "el-mapi-byinkaterra",
+   "pathway_setting": "machu_picchu"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f7",
+   "slug": "ecocamp-patagonia",
+   "pathway_setting": "torres_del_paine"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f6",
+   "slug": "asilia-dunia-camp",
+   "pathway_setting": "serengeti"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f5",
+   "slug": "dulini-river-lodge",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f4",
+   "slug": "dulini-leadwood-lodge",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f3",
+   "slug": "dulini-anabezi-lodge",
+   "pathway_setting": "lower_zambezi"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f2",
+   "slug": "dukes-camp-okavango",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8f0",
+   "slug": "coot-club",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ef",
+   "slug": "conrad-tulum-riviera-maya",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ee",
+   "slug": "como-shambhala-estate",
+   "pathway_setting": "indonesia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ed",
+   "slug": "coco-costa-rica",
+   "pathway_setting": "costa_rica"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ec",
+   "slug": "chumbe-island-zanzibar",
+   "pathway_setting": "zanzibar"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8eb",
+   "slug": "chindeni-lodge",
+   "pathway_setting": "south_luangwa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ea",
+   "slug": "cheetah-plains",
+   "pathway_setting": "sabi_sand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e9",
+   "slug": "chamilandu-lodge",
+   "pathway_setting": "south_luangwa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e8",
+   "slug": "chable-yucatan",
+   "pathway_setting": "yucatan"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e4",
+   "slug": "cardamom-tented-camp",
+   "pathway_setting": "cardamom_mountains"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e3",
+   "slug": "capella-ubud",
+   "pathway_setting": "ubud"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e1",
+   "slug": "cap-karoso",
+   "pathway_setting": "indonesia",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8e0",
+   "slug": "camp-hwange-muddy-teak",
+   "pathway_setting": "hwange"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8dd",
+   "slug": "bumi-hills-safari-lodge",
+   "pathway_setting": "lake_kariba"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8dc",
+   "slug": "borana",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8db",
+   "slug": "boluntiku-hotel",
+   "pathway_setting": "costa_rica"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8da",
+   "slug": "beckon-tierra-atacama",
+   "pathway_setting": "atacama"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d9",
+   "slug": "beckon-the-louise",
+   "pathway_setting": "australia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d8",
+   "slug": "beckon-southern-ocean-lodge",
+   "pathway_setting": "kangaroo_island",
+   "secondary_pathways": [
+    "PATH-04",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d5",
+   "slug": "beckon-huka-lodge",
+   "pathway_setting": "new_zealand"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d4",
+   "slug": "beckon-capella-lodge",
+   "pathway_setting": "lord_howe"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d3",
+   "slug": "be-tulum",
+   "pathway_setting": "tulum"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8d1",
+   "slug": "bateleur-camp-by-and-beyond",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8cd",
+   "slug": "baines-lodge",
+   "pathway_setting": "okavango_delta"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8cc",
+   "slug": "babylonstoren",
+   "pathway_setting": "south_africa"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8cb",
+   "slug": "awasi-santa-catarina",
+   "pathway_setting": "brazil",
+   "secondary_pathways": [
+    "PATH-05",
+    "PATH-02"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8ca",
+   "slug": "awasi-patagonia",
+   "pathway_setting": "torres_del_paine",
+   "secondary_pathways": [
+    "PATH-04",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c9",
+   "slug": "awasi-atacama",
+   "pathway_setting": "atacama"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c7",
+   "slug": "asilia-rekero-camp",
+   "pathway_setting": "maasai_mara"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c6",
+   "slug": "arijiju-laikipia",
+   "pathway_setting": "laikipia"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c5",
+   "slug": "arenas-del-mar-resort",
+   "pathway_setting": "manuel_antonio"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c4",
+   "slug": "arenal-springs-camp-by-nayara",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c2",
+   "slug": "anantara-ubud-bali",
+   "pathway_setting": "ubud"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c1",
+   "slug": "anantara-mui-ne",
+   "pathway_setting": "mui_ne",
+   "secondary_pathways": [
+    "PATH-02",
+    "PATH-05"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8c0",
+   "slug": "anantara-hua-hin",
+   "pathway_setting": "hua_hin"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8bf",
+   "slug": "anantara-golden-triangle-chiang-rai",
+   "pathway_setting": "golden_triangle",
+   "secondary_pathways": [
+    "PATH-05",
+    "PATH-04"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8be",
+   "slug": "anantara-chiang-mai-resort",
+   "pathway_setting": "chiang_mai"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8bd",
+   "slug": "anantara-bophut-koh-samui-resort",
+   "pathway_setting": "koh_samui"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8bc",
+   "slug": "amor-arenal",
+   "pathway_setting": "arenal"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8bb",
+   "slug": "ambiente-tm-sedona",
+   "pathway_setting": "sedona",
+   "secondary_pathways": [
+    "PATH-06",
+    "PATH-08"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b7",
+   "slug": "amandari",
+   "pathway_setting": "ubud"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b6",
+   "slug": "alila-ventana-big-sur",
+   "pathway_setting": "big_sur",
+   "secondary_pathways": [
+    "PATH-08",
+    "PATH-07"
+   ]
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b4",
+   "slug": "chobe-under-canvas-by-and-beyond",
+   "pathway_setting": "chobe"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b3",
+   "slug": "benguerra-island-by-and-beyond",
+   "pathway_setting": "bazaruto"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b1",
+   "slug": "beyond-sussuvlei-desert-lodge",
+   "pathway_setting": "sossusvlei"
+  },
+  {
+   "id": "6a85bfb37f6eb35689bff8b0",
+   "slug": "beyond-lake-serengeti-under-canvas",
+   "pathway_setting": "serengeti"
+  }
+ ]
+}

@@ -10,6 +10,7 @@ import { MONWANA_BODY } from "./monwana-couples-first-safari";
 import { AFRICA_BODY } from "./africa-inspired-wild-and-co-safaris";
 import { CAYUGA_BODY } from "./cayuga-collection-sustainable-luxury";
 import { AKAGERA_BODY } from "./akagera-rewilding-magashi-peninsula";
+import { MARSH_PRIDE_BODY } from "./marsh-pride-topi-boys-masai-mara";
 import { cayugaImg as cy } from "../collections/cayuga";
 import { pathwayHref } from "../pathways/flag";
 
@@ -61,7 +62,64 @@ export type JournalPost = {
 
 const MAG = (f: string) => `${B44}/${f}`; // Magashi photographs on the live stay record (Wilderness)
 
+const GOV = "jwco/stays"; // Governors' Camp Collection photographs on the live stay records
+const GOV_CREDIT = "Photograph: Governors' Camp Collection";
+
 export const POSTS: Record<string, JournalPost> = {
+  "marsh-pride-topi-boys-masai-mara": {
+    slug: "marsh-pride-topi-boys-masai-mara",
+    ledgerId: "WED-2026-000015",
+    shelf: "Field notes",
+    title: "The Marsh Pride and the Topi Boys: How to See the Masai Mara's Big Cat Diaries Lions",
+    seoTitle: "Marsh Pride, Kio and the Topi Boys: Where to See Them",
+    description: "Who the Marsh Pride of Big Cat Diaries fame are now, how Kio and the Topi Boys took over, and how to see them in the Masai Mara by staying at Governors' Camp.",
+    dek: "Six lionesses, a crop of cubs and seven males who took over in December 2024. Who the Marsh Pride are now, how to follow them, and where to stay beside the marsh.",
+    answer: "The Marsh Pride is the Masai Mara lion pride followed by Big Cat Diaries, Big Cat Tales, LION and Dynasties. Governors' Camp reports six adult females with cubs, led since December 2024 by the Topi Boys, seven males including Kio. They live around Musiara Marsh and Bila Shaka. Stay at Governors' Camp or Il Moran, beside the marsh.",
+    place: "Masai Mara · Kenya",
+    published: "2026-11-01",
+    modified: "2026-11-01",
+    hero: { url: hi(`${GOV}/governors-camp/g4`), alt: "A lioness and a young cub resting on a fallen log in warm evening light in the Masai Mara", w: 992, h: 695, credit: GOV_CREDIT },
+    body: MARSH_PRIDE_BODY,
+    figures: [
+      { after: "who-are-the-topi-boys", layout: "wide", images: [{ url: hi(`${GOV}/governors-camp/g5`), alt: "A lioness walking through green grass past an open-sided safari vehicle with guests watching from their seats", w: 992, h: 695, caption: "Up to three game drives a day, starting inside the reserve.", credit: GOV_CREDIT }] },
+      { after: "where-does-the-pride-live", layout: "bleed", images: [{ url: hi(`${GOV}/governors-il-moran-camp/hero`, false), alt: "Governors' Il Moran Camp among trees above a bend of the Mara River at dusk", w: 1920, h: 555, caption: "Il Moran on the Mara River. Governors' Camp and Il Moran both sit beside Musiara Marsh.", credit: GOV_CREDIT }] },
+      { after: "where-should-you-stay-to-see-the-marsh-pride", layout: "pair", images: [
+        { url: hi(`${GOV}/governors-camp/g1`), alt: "Canvas tents with lit verandahs under a pink dusk sky at Governors' Camp", w: 992, h: 695, caption: "Governors' Camp: 24 tents, all under canvas, since 1972.", credit: GOV_CREDIT },
+        { url: hi(`${GOV}/governors-il-moran-camp/g5`), alt: "A tent at Governors' Il Moran Camp with its canvas doors open onto the riverine forest", w: 992, h: 695, caption: "Il Moran: ten tents under riverine forest on the Mara River.", credit: GOV_CREDIT },
+      ] },
+      { after: "when-is-the-best-time-to-go", layout: "wide", images: [{ url: hi(`${GOV}/governors-camp/g6`), alt: "A safari vehicle in silhouette against a low orange sun on the Masai Mara plains", w: 992, h: 695, caption: "The Mara at last light.", credit: GOV_CREDIT }] },
+    ],
+    close: "James Wild & Co",
+    faqTitle: "Questions About the Marsh Pride and Governors' Camp",
+    planPlace: "Kenya",
+    faqs: [
+      { q: "Who are the Marsh Pride?", a: "A lion pride in the north of Kenya's Masai Mara National Reserve, living around Musiara Marsh and the nearby Bila Shaka area. As Governors' Camp reported in November 2026, it has six adult females (Kito, Lola, Kaleo, Enkerai, Naserian and Nusurika) and several litters of cubs." },
+      { q: "Who are the Topi Boys?", a: "A coalition of seven male lions, Ukingo, Otipo, Djodjo, Moja, Vuli, Nzuri and Kio, born into the Topi Pride on Topi Plains. They took over the Marsh Pride in December 2024 and divide their time between the Marsh Pride and the neighbouring Paradise Pride." },
+      { q: "Who is Kio the lion?", a: "Kio is one of the seven Topi Boys who have led the Marsh Pride since December 2024. Governors' Camp's lion gallery pictures him with Moja and Nzuri. For recent news of him, follow Governors' own Marsh Pride pages on Facebook and Instagram." },
+      { q: "Which TV series featured the Marsh Pride?", a: "Governors' Camp names BBC Earth's LION and Dynasties, and Animal Planet's Big Cat Diaries and Big Cat Tales, as the series that chronicled the pride for decades. It also names Nat Geo's LION among the productions filmed from the camp." },
+      { q: "Can you watch the Marsh Pride live?", a: "There is no live feed on Governors' site. Governors' runs dedicated Facebook and Instagram pages for these lions, so follow Kio and the Topi Boys there, then stay at Governors' Camp or Il Moran, beside the marsh where they live." },
+      { q: "Where should you stay to see the Marsh Pride?", a: "Governors' Camp or Governors' Il Moran Camp. Both sit beside Musiara Marsh, inside the reserve. Governors' Camp has 24 tents and welcomes children of all ages; Il Moran has 10 tents and takes children aged 8 and up. Sightings are never guaranteed." },
+      { q: "When is the best time to see the Marsh Pride?", a: "Governors' month notes describe the pride hunting close to camp from July to October, when the migration is usually in the Mara, and firmly present around the marsh in December. Lionesses often have cubs from February to May. In January the pride spends more time apart." },
+      { q: "How do you get to Governors' Camp?", a: "Fly from Wilson Airport in Nairobi to Musiara Airstrip, about 45 minutes with Governors' Aviation on daily scheduled flights, or with other airlines. The camp is a short transfer from the strip. The luggage limit is 15 kg per person in soft bags." },
+    ],
+    stays: [
+      { slug: "governors-camp", name: "Governors' Camp", line: "Masai Mara, Kenya · 24 tents beside Musiara Marsh", note: "Founder favourite, stayed 2012. Africa's first permanent luxury tented camp, by Governors' account, on the Mara River since 1972. All ages welcome.", image: { url: hi(`${GOV}/governors-camp/g1`), alt: "Canvas tents with lit verandahs at dusk at Governors' Camp", w: 992, h: 695 } },
+      { slug: "governors-il-moran-camp", name: "Governors' Il Moran Camp", line: "Masai Mara, Kenya · 10 tents on the Mara River", note: "The quieter Marsh Pride base, for couples and solo travellers. Children 8 and up.", image: { url: hi(`${GOV}/governors-il-moran-camp/hero`, false), alt: "Governors' Il Moran Camp above the Mara River at dusk", w: 1920, h: 555 } },
+      { slug: "loldia-house", name: "Loldia House", line: "Lake Naivasha, Kenya · a 1943 house on a 6,500-acre conservancy", note: "The Lake Naivasha add-on before the Mara, linked by Governors' Aviation.", image: { url: hi(`${GOV}/loldia-house/hero`, false), alt: "Loldia House on the shore of Lake Naivasha in Kenya's Great Rift Valley", w: 1920, h: 555 } },
+      { slug: "angama-mara", name: "Angama Mara", line: "Mara Triangle, Kenya · thirty tented suites", note: "Not Marsh Pride ground: a second Mara base on the Oloololo Escarpment, above the Mara Triangle, for a longer trip.", image: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/kenya/angama/angama-mara/mara-stay-teaser", alt: "Angama Mara on the Oloololo Escarpment above the Mara Triangle", w: 1908, h: 1073 } },
+    ],
+    links: [
+      { label: "Governors' Camp", href: "/stays/governors-camp", line: "The tents, the marsh and how to book it." },
+      { label: "Governors' Il Moran Camp", href: "/stays/governors-il-moran-camp", line: "Ten tents on the Mara River, beside the marsh." },
+      { label: "Loldia House", href: "/stays/loldia-house", line: "Lake Naivasha before or after the Mara." },
+      { label: "Kenya", href: "/destinations/africa/kenya", line: "Every Kenya stay in the Ledger, the Mara to the lakes." },
+      { label: "Wild & Co Safaris", href: "/safaris", line: "Private, advisor-led safaris across Africa." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road, safaris since 2011." },
+    ],
+    keywords: ["Marsh Pride", "Topi Boys", "Kio lion", "Big Cat Diaries lions", "Musiara Marsh", "Masai Mara lions", "Governors' Camp", "where to see the Marsh Pride", "Masai Mara safari", "Governors' Il Moran Camp", "Bila Shaka"],
+    about: ["Marsh Pride", "Topi Boys", "Lion", "Masai Mara National Reserve", "Musiara Marsh", "Governors' Camp", "Big Cat Diaries", "Kenya safari"],
+    approved: false, // James reviews on the Proofs sheet before it is indexed
+  },
   "akagera-rewilding-magashi-peninsula": {
     slug: "akagera-rewilding-magashi-peninsula",
     ledgerId: "WED-2026-000014",
@@ -110,6 +168,7 @@ export const POSTS: Record<string, JournalPost> = {
       { slug: "wilderness-sabyinyo", name: "Wilderness Sabyinyo", line: "Volcanoes National Park, Rwanda", note: "The other Wilderness choice for gorilla trekking.", image: { url: `${B44}/6c7e8bba3_88fbd3b39_68a503e7f95cc131b411b5c5_Suite_2007.jpg`, alt: "A suite at Wilderness Sabyinyo", w: 1750, h: 1280 } },
       { slug: "singita-kwitonda", name: "Singita Kwitonda Lodge", line: "Volcanoes National Park, Rwanda", note: "Gorilla trekking from Singita, before or after the savannah.", image: { url: `${B44}/89259f1b7_ae7e46fb7_6985adfe2866c8eeb0b1ac01_SVNP_ROOM_Kwitonda_Lodge_Bedroom_Ross_Couper_1.webp`, alt: "A bedroom at Singita Kwitonda Lodge", w: 1995, h: 1330 } },
       { slug: "one-only-gorillas-nest", name: "One&Only Gorilla's Nest", line: "Volcanoes, Rwanda", note: "Treehouses in the eucalyptus, five minutes from the gorillas.", image: { url: `${B44}/34e0bc491_9d2a33296_686c0769972f273ca2734419_OO_GorillasNest_Exterior_Nest_141_MASTER_HR.jpg`, alt: "A treehouse suite among the eucalyptus at One&Only Gorilla's Nest", w: 1900, h: 1267 } },
+      { slug: "the-retreat-rwanda", name: "Hemingways Retreat Kigali", line: "Kigali, Rwanda · 20 rooms and suites", note: "The Kigali night, arriving or leaving: solar-powered, in leafy Kiyovu, about 20 minutes from the airport.", image: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/hero", alt: "Hemingways Retreat Kigali in the Kiyovu neighbourhood of Kigali, Rwanda", w: 2400, h: 1600 } },
     ],
     links: [
       { label: "Wilderness Magashi Peninsula", href: "/stays/wilderness-magashi-peninsula", line: "The suites, the villa, the film and how to book it." },

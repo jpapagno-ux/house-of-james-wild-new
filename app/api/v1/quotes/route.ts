@@ -2,6 +2,8 @@ import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid, parseSearch } from "@/lib/booking-live/validate";
 import { priceStay } from "@/lib/booking-live/rates/price";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
+import { onRequestReceived } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
 
 // POST /api/v1/quotes — Request to Reserve.
 // { property, room, plan, arrival, departure, adults, childAges?, promoCode?, folioId? }
@@ -69,5 +71,6 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, requestId }) 
     console.error(JSON.stringify({ requestId, route: "quotes", db: e.code, message: e.message }));
     return error("server_error", "Couldn't save your request just now", requestId);
   }
+  onRequestReceived(admin, data.id, originOf(req));
   return ok({ id: data.id, reference: data.public_reference, grandTotalMinor: q.grandTotalMinor, currency: q.currency, availability: "on_request" }, requestId, 201);
 });

@@ -1,6 +1,8 @@
 import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
+import { onDecision } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
 
 // POST /api/v1/ops/quotes/:id/approve { decision: "approved" | "declined", note?, availability? }
 // Advisor or admin only (organization role, checked server-side). A pending or
@@ -45,5 +47,6 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, params, reque
     ...(decision === "approved" ? { availability: "confirmed_by_property" } : { status: "rejected" }),
   }).eq("id", params.id).in("advisor_status", ["pending", "held"]);
   if (e) return error("server_error", "Couldn't record the decision", requestId);
+  onDecision(admin, params.id, decision, originOf(req));
   return ok({ id: params.id, advisor_status: decision }, requestId);
 });

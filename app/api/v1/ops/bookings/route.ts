@@ -3,6 +3,9 @@ import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
 import { isAdvisor } from "@/lib/booking-live/ops";
 import { parseBooking } from "@/lib/booking-live/bookings";
+import { onBookingRecorded } from "@/lib/booking-live/notify";
+import { originOf } from "@/lib/booking-live/notify/send";
+import { paymentsEnabled } from "@/lib/booking-live/payments/gateway";
 
 // POST /api/v1/ops/bookings — the house records a booking.
 // Advisor or admin only. Two shapes:
@@ -41,6 +44,7 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, requestId }) 
     }).select("id, public_reference").single();
     if (e) return dbError(e, requestId);
     await admin.from("quotes").update({ status: "converted" }).eq("id", q.id);
+    onBookingRecorded(admin, data.id, originOf(req), paymentsEnabled());
     return ok({ id: data.id, reference: data.public_reference, source: "traveler_quote" }, requestId, 201);
   }
 
@@ -58,5 +62,6 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, requestId }) 
     status: "confirmed", traveler_note: v.travelerNote ?? null, advisor_user_id: user.id, advisor_name: advisorName,
   }).select("id, public_reference").single();
   if (e) return dbError(e, requestId);
+  onBookingRecorded(admin, data.id, originOf(req), paymentsEnabled());
   return ok({ id: data.id, reference: data.public_reference, source: "advisor" }, requestId, 201);
 });

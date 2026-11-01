@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   if (!c && g && g.region === p.region) return { ...buildMetadata({ title: g.seo.title, description: g.seo.description, path: g.path, image: { url: g.slides[0].url, alt: g.slides[0].alt } }), keywords: g.seo.keywords };
   if (!c) return {};
   const n = staysIn(c.slug).filter(pageReady).length;
-  return buildMetadata({ title: `${c.name}: ${n} Vetted Stays, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted stays mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
+  return buildMetadata({ title: `${c.name}: ${n} Vetted ${n === 1 ? "Stay" : "Stays"}, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted ${n === 1 ? "stay" : "stays"} mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
 }
 
 // A country told as a guide (Indonesia) gets the same Ledger chart as a country page: every stay
@@ -144,7 +144,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
-  const answer = `${c.name} has ${all.length} live stays in the James Wild & Co Ledger, ${pages.length} with their own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const answer = `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
   const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -156,7 +156,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             <h1 className="ledger-h1 mt-3">{c.name}</h1>
             <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{c.subtitle}</p>
             <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
-              <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} stays</dd></div>
+              <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} {all.length === 1 ? "stay" : "stays"}</dd></div>
               <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
               <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
               <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>

@@ -3,5 +3,11 @@
   "framework": "nextjs",
   "buildCommand": "next build",
   "installCommand": "npm install",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "crons": [
+    {
+      "path": "/api/v1/internal/reminders/balance-due",
+      "schedule": "0 13 * * *"
+    }
+  ]
 }

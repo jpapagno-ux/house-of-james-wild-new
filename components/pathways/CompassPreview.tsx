@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { ArrowRight, Leaf, PenLine, RotateCcw, Sparkles } from "lucide-react";
 import IggiLine from "@/components/dialogue/IggiLine";
 import { dialogueLine } from "@/lib/content/dialogue-register";
@@ -15,7 +15,12 @@ import { VOLUME_STYLES } from "@/lib/volumes";
 // trade's (Ledger IDs, classification status, fit reasons, impact state).
 // The live Compass is untouched; this reads the same records it could.
 
-export type PreviewRecord = PathwayRecord & { name: string; country: string | null; hero: string | null; bestMonths: string | null; hasVerdict: boolean; verdictLine: string | null; statusLine: string | null; href: string; pathwayHref: Record<string, string> };
+export type PreviewRecord = PathwayRecord & {
+  name: string; country: string | null; hero: string | null; bestMonths: string | null; hasVerdict: boolean; verdictLine: string | null; statusLine: string | null; href: string;
+  /** Pathway id → href. Optional per record; the component-level `pathwayHrefs` prop is the usual source (one map, not one per record). */
+  pathwayHref?: Record<string, string>;
+  impactDocumented?: boolean; founderMark?: string | null; kind?: "stay" | "voyage" | "route";
+};
 
 const SETTINGS: { id: Setting; label: string }[] = [
   { id: "rainforest", label: "Rainforest & jungle" }, { id: "ocean", label: "Islands & oceans" }, { id: "mountain", label: "Mountains & highlands" }, { id: "wildlife", label: "Wildlife & wilderness" },
@@ -29,7 +34,18 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
   return <button type="button" onClick={onClick} aria-pressed={on} className={`border px-3 py-1.5 text-[14px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <span className="sr-only">Selected: </span>}{children}</button>;
 }
 
-export default function CompassPreview({ records, live = false, enquireHref = "/plan" }: { records: PreviewRecord[]; live?: boolean; enquireHref?: string }) {
+export default function CompassPreview({ records: given, recordsUrl, live = false, enquireHref = "/plan", pathwayHrefs = {} }: { records: PreviewRecord[]; recordsUrl?: string; live?: boolean; enquireHref?: string; pathwayHrefs?: Record<string, string> }) {
+  // With recordsUrl the whole Ledger loads once, after the page, so the Compass page itself stays light.
+  const [fetched, setFetched] = useState<PreviewRecord[] | null>(null);
+  const [loadError, setLoadError] = useState(false);
+  useEffect(() => {
+    if (!recordsUrl) return;
+    let on = true;
+    fetch(recordsUrl).then((r) => (r.ok ? r.json() : Promise.reject(r.status))).then((j: { records: PreviewRecord[] }) => { if (on) setFetched(j.records); }).catch(() => { if (on) setLoadError(true); });
+    return () => { on = false; };
+  }, [recordsUrl]);
+  const records = fetched ?? given;
+  const loading = !!recordsUrl && !fetched && !loadError;
   const [settings, setSettings] = useState<Setting[]>(["wildlife", "heritage"]);
   const [party, setParty] = useState<Party | undefined>("couple");
   const [season, setSeason] = useState<Season>("any");
@@ -74,7 +90,9 @@ export default function CompassPreview({ records, live = false, enquireHref = "/
             <p className="mt-4 border-l-2 border-crimson pl-4 text-[14.5px]"><span className="ledger-eyebrow ledger-crimson block mb-1">Safari reading</span>{out.handoff.line} <a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></p>
           ))}
 
-          {out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">{live ? "Nothing approved in the Ledger fits that reading yet. Choose another setting, or ask James directly." : "Nothing in the sample records fits that reading yet. Choose a setting, or start again."}</p>}
+          {loading && <p className="mt-6 text-[15px] ledger-muted" aria-live="polite">Iggi is opening the Ledger…</p>}
+          {loadError && <p className="mt-6 text-[15px] ledger-muted">The Ledger didn&rsquo;t open just now. Reload, or ask James directly.</p>}
+          {!loading && !loadError && out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">{live ? "Nothing approved in the Ledger fits that reading yet. Choose another setting, or ask James directly." : "Nothing in the sample records fits that reading yet. Choose a setting, or start again."}</p>}
 
           {live && out.fits.length > 0 && (
             <p className="mt-6 text-[15px]"><Link href={`${enquireHref}?pathways=${encodeURIComponent(out.fits.map((f) => f.slug).join(","))}`} className="ledger-btn--solid ledger-btn">Send this reading to James</Link><span className="ml-3 ledger-muted">A person finishes the trip. Nothing is booked here.</span></p>
@@ -85,9 +103,9 @@ export default function CompassPreview({ records, live = false, enquireHref = "/
                 <li key={f.slug} className={`pathway-${f.primaryPathway.slice(-2)} border ledger-border p-5 grid sm:grid-cols-[auto_1fr] gap-4`}>
                   <span className="ledger-display text-2xl text-pathway-text w-8" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
                   <div>
-                    <p className="ledger-eyebrow">{r.country}{r.statusLine ? ` · ${r.statusLine}` : ""}</p>
+                    <p className="ledger-eyebrow">{r.kind === "voyage" ? "Voyage · " : r.kind === "route" ? "Overland · " : ""}{r.country}{r.statusLine ? ` · ${r.statusLine}` : ""}</p>
                     <h3 className="ledger-display text-[1.45rem] leading-tight mt-0.5"><Link href={r.href} className="hover:text-pathway-text">{r.name}</Link></h3>
-                    <div className="mt-2"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => r.pathwayHref[p.id]} /></div>
+                    <div className="mt-2"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => (r.pathwayHref ?? pathwayHrefs)[p.id] ?? "#"} /></div>
                     <ul className="mt-3 text-[14.5px] grid gap-1">{f.reasons.filter((x) => x.kind !== "verdict").slice(0, 3).map((x) => <li key={x.text} className="flex gap-2"><span className="text-pathway-text" aria-hidden="true">·</span><span><span className="sr-only">Why: </span>{x.text}</span></li>)}</ul>
                     {f.impactDocumented && <p className="mt-2 flex items-center gap-1.5 text-[12.5px] text-impact-copy"><Leaf className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Where your stay gives back is on record</p>}
                     {r.hasVerdict && r.verdictLine && <p className="mt-3 border-l-2 pl-3 text-[14.5px] italic ledger-display" style={{ borderColor: "var(--jw-char-james-accent)" }}><span className="not-italic ledger-eyebrow block mb-0.5" style={{ color: "var(--jw-char-james-accent)" }}><PenLine className="inline w-3 h-3 mr-1" strokeWidth={1.5} aria-hidden="true" />James&rsquo;s Field Verdict</span>&ldquo;{r.verdictLine}&rdquo;</p>}

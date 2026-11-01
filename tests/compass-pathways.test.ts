@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { CRUX_HREF, PATHWAY_NAMES, SETTING_TO_PATHWAY, fitsSeason, readPathways } from "../lib/compass/pathway-adapter.ts";
+import { CRUX_HREF, PATHWAY_NAMES, SETTING_TO_PATHWAY, fitsSeason, readPathways, suitabilityFrom } from "../lib/compass/pathway-adapter.ts";
 import { PATHWAYS, type PathwayRecord } from "../lib/pathways.ts";
 
 const MAP = JSON.parse(readFileSync(new URL("../lib/content/pathways/pathway-map.json", import.meta.url), "utf8")).records as PathwayRecord[];
@@ -64,4 +64,28 @@ test("the limit holds and ordering is stable", () => {
   assert.equal(a.fits.length, 2);
   const b = readPathways({ settings: ["wildlife", "heritage", "wellness"], party: "family" }, RECORDS, { includeDrafts: true, limit: 2 });
   assert.deepEqual(a.fits.map((f) => f.slug), b.fits.map((f) => f.slug));
+});
+
+test("naming a setting gates the shortlist to its pathways; other axes only rank within", () => {
+  const recs: PathwayRecord[] = [
+    { slug: "mountain-lodge", ledgerId: null, primaryPathway: "PATH-03", secondaryPathways: [], volumes: ["stays"], setting: "", intentions: [], suitability: [], classificationStatus: "approved", classifiedBy: "", impact: [] },
+    { slug: "safari-camp", ledgerId: null, primaryPathway: "PATH-04", secondaryPathways: [], volumes: ["stays"], setting: "", intentions: [], suitability: ["friends", "couples"], classificationStatus: "approved", classifiedBy: "", impact: [{ kind: "conservation", status: "verified", statement: "x", source: "y", reviewedDate: "2026-10-01" } as unknown as PathwayRecord["impact"][number]] },
+  ];
+  const out = readPathways({ settings: ["mountain"], party: "friends", conservation: true }, recs);
+  assert.deepEqual(out.fits.map((f) => f.slug), ["mountain-lodge"], "a better-documented camp off the pathway never outranks the pathway");
+  assert.ok(readPathways({ party: "friends" }, recs).fits.some((f) => f.slug === "safari-camp"), "with no setting named, every axis may answer");
+});
+
+test("the whole Ledger answers: suitability widens from best-for, founder marks only tie-break, and no country takes the shortlist", () => {
+  assert.deepEqual(suitabilityFrom(["honeymoon", "group_exclusive_use"], ["photographers"]).sort(), ["couples", "exclusive_use", "families", "honeymoon", "photographers", "private_groups"]);
+  const many: PathwayRecord[] & { country?: string | null; founderMark?: string | null }[] = Array.from({ length: 12 }, (_, i) => ({
+    slug: `camp-${String.fromCharCode(97 + i)}`, ledgerId: null, primaryPathway: "PATH-04" as const, secondaryPathways: [], volumes: ["stays" as const], setting: "", intentions: [], suitability: [],
+    classificationStatus: "approved" as const, classifiedBy: "", impact: [], country: i < 8 ? "Botswana" : "Kenya", founderMark: i === 7 ? "founder_returned" : "unclassified",
+  }));
+  const out = readPathways({ settings: ["wildlife"] }, many, { limit: 5 });
+  const countries = out.fits.map((f) => many.find((m) => m.slug === f.slug)!.country);
+  assert.equal(countries.filter((c) => c === "Kenya").length, 2, "Kenya gets its two before Botswana fills the rest");
+  assert.equal(countries.filter((c) => c === "Botswana").length, 3, "the cap lifts only once every country has had its turn");
+  assert.equal(out.fits[0].slug, "camp-h", "the founder mark breaks the tie, and only the tie");
+  assert.ok(out.fits.every((f) => f.reasons.some((r) => r.kind === "pathway")), "a founder mark alone never earns a place");
 });

@@ -13,6 +13,9 @@ const topo10 = require("world-atlas/countries-10m.json");
 const FEATS10 = feature(topo10, topo10.objects.countries).features;
 const stays = require("../lib/content/stays.json").stays;
 const reserves = require("../lib/content/reserves.json");
+// Library country pages (scripts/export-countries.py). A destination card (staysComing, no stays yet:
+// Sri Lanka first, 1 Nov 2026) is inked on its region chart like a country with stays.
+const LIB_COUNTRIES = require("../lib/content/countries-library.json").countries;
 
 const W = 1000;
 // Hand frames [w, s, e, n] and fixed focus countries where the stays alone would mislead.
@@ -124,7 +127,8 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   const geomPath = (g) => polysOf(g).map((poly) => poly.map(ringPath).join("")).join("");
   // focus: countries holding a Ledger record (or set by hand for the polar charts)
   const raw = points(slug);
-  const focusNames = new Set(cfg.focus || FEATS.filter((f) => raw.some((p) => inFeat(p, f))).map((f) => f.properties.name));
+  const cards = cfg.country || cfg.focus ? [] : LIB_COUNTRIES.filter((c) => c.region === slug && c.staysComing).map((c) => c.atlasName);
+  const focusNames = new Set(cfg.focus || [...FEATS.filter((f) => raw.some((p) => inFeat(p, f))).map((f) => f.properties.name), ...cards]);
   let focus = ""; const neighbors = [], flabels = [], nlabels = [];
   for (const g of cfg.hires ? FEATS10 : FEATS) {
     const d = geomPath(g.geometry); if (!d) continue;

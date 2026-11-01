@@ -17,6 +17,8 @@ export type Door = {
   compass?: boolean;
   note?: string; // e.g. "Stays being filed"
   imageAlt?: string;
+  /** Destination card: the country is on the site before its stays; reads "Stays coming soon", never "0 stays". */
+  coming?: boolean;
 };
 
 // Link guard: a door opens only when its country page is built (always in previews).
@@ -26,7 +28,7 @@ function Wrap({ href, children }: { href: string; children: React.ReactNode }) {
 }
 
 export function DoorCard({ d }: { d: Door }) {
-  const counts = [`${d.stays} ${d.stays === 1 ? "stay" : "stays"}`, d.routes ? `${d.routes} ${d.routes === 1 ? "route" : "routes"}` : "", d.voyages ? `${d.voyages} ${d.voyages === 1 ? "voyage" : "voyages"}` : ""].filter(Boolean).join(" · ");
+  const counts = [d.coming && !d.stays ? "Stays coming soon" : `${d.stays} ${d.stays === 1 ? "stay" : "stays"}`, d.routes ? `${d.routes} ${d.routes === 1 ? "route" : "routes"}` : "", d.voyages ? `${d.voyages} ${d.voyages === 1 ? "voyage" : "voyages"}` : ""].filter(Boolean).join(" · ");
   return (
     <Wrap href={d.href}>
       <div className="relative aspect-[16/10] overflow-hidden border-b ledger-rule bg-paper-card">

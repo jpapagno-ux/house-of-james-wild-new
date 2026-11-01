@@ -62,6 +62,9 @@ import { graph, ids } from "@/lib/schema";
 // booking engine) › journeys › stays › James's note › the story › facts & FAQ
 // › when to go › plan › also in the region. Built for Costa Rica and South
 // Africa so far; more countries are added in lib/content/countries.ts.
+// A destination card (c.staysComing: no stays filed yet, Sri Lanka first) keeps the
+// same page but swaps every stay count and stay-led section for one "stays coming
+// soon, plan with James" panel; nothing renders empty and no "0 stays" appears.
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -80,7 +83,8 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   if (!c && g && g.region === p.region) return { ...buildMetadata({ title: g.seo.title, description: g.seo.description, path: g.path, image: { url: g.slides[0].url, alt: g.slides[0].alt } }), keywords: g.seo.keywords };
   if (!c) return {};
   const n = staysIn(c.slug).filter(pageReady).length;
-  return buildMetadata({ title: `${c.name}: ${n} Vetted ${n === 1 ? "Stay" : "Stays"}, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted ${n === 1 ? "stay" : "stays"} mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: { url: c.hero.src, alt: c.hero.alt } });
+  if (c.staysComing && !n) return buildMetadata({ title: `${c.name}: When to Go, Where to Go and How to Plan`, description: `${c.name} with James Wild & Co: the best months by coast and season, how to get there, how many days to allow and where the house sends you. ${c.subtitle}. Stays coming soon; plan it with James now.`, path: `/destinations/${c.region}/${c.slug}`, image: c.hero.src ? { url: c.hero.src, alt: c.hero.alt } : undefined });
+  return buildMetadata({ title: `${c.name}: ${n} Vetted ${n === 1 ? "Stay" : "Stays"}, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted ${n === 1 ? "stay" : "stays"} mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: c.hero.src ? { url: c.hero.src, alt: c.hero.alt } : undefined });
 }
 
 // A country told as a guide (Indonesia) gets the same Ledger chart as a country page: every stay
@@ -140,29 +144,39 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   // A pin off the chart (offshore or a mis-coded record) is left off the map, not drawn at the edge.
   for (let i = items.length - 1; i >= 0; i--) { const { x, y } = items[i]; if (x == null || y == null || x < 0 || y < 0 || x > chart.width || y > chart.height) items.splice(i, 1); }
   const tally = (k: MapItem["category"]) => items.filter((i) => i.category === k).length;
-  const slides: Slide[] = [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }, ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
+  // Destination card: no stays filed yet (c.staysComing). Set from the data, so a first stay ends the card state.
+  const coming = !!c.staysComing && all.length === 0;
+  const slides: Slide[] = [...(c.hero.src ? [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }] : []), ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
-  const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays }));
-  const answer = `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
-  const chapters: [string, string][] = [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
+  const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays, coming: x.coming }));
+  const answer = coming
+    ? `${c.name} is on the James Wild & Co map ahead of its stays: the house is vetting them now, and each will be filed under a permanent Ledger ID when it is approved.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${airports.length ? ` Fly into ${airports.map((a) => a[0]).join(" or ")}.` : ""} James plans ${c.name} now: the route, the season and the right coast for your dates.`
+    : `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+  const chapters: [string, string][] = coming ? [["The map", "the-map"], ["Stays", "stays"], ...(c.story.length ? [["The story", "story"] as [string, string]] : []), ["When to go", "when"], ["Plan", "plan"]] : [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
       <SiteHeader overlay />
       <main id="main">
-        <HeroSlider slides={slides} label={`${c.name} in photographs`}>
-          <div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
-            <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{c.regionName} · Destination</p>
-            <h1 className="ledger-h1 mt-3">{c.name}</h1>
-            <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{c.subtitle}</p>
-            <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
-              <div><dt className="ledger-eyebrow !text-white/70">In the Ledger</dt><dd className="ledger-display text-2xl">{all.length} {all.length === 1 ? "stay" : "stays"}</dd></div>
-              <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
-              <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
-              <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>
-            </dl>
-          </div>
-        </HeroSlider>
+        {(() => {
+          const heading = (
+            <>
+              <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{c.regionName} · Destination</p>
+              <h1 className="ledger-h1 mt-3">{c.name}</h1>
+              <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{c.subtitle}</p>
+              <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
+                <div><dt className="ledger-eyebrow !text-white/70">{coming ? "Stays" : "In the Ledger"}</dt><dd className="ledger-display text-2xl">{coming ? "Coming soon" : `${all.length} ${all.length === 1 ? "stay" : "stays"}`}</dd></div>
+                <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
+                <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
+                <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>
+              </dl>
+            </>
+          );
+          // No photograph on file (a destination card before its hero is chosen): an ink band, never a stand-in image.
+          return slides.length
+            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">{heading}</div></HeroSlider>
+            : <section className="relative bg-ink text-white bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)]" aria-label={c.name}><div className="max-w-ledger mx-auto px-5 md:px-10 pt-36 md:pt-52 pb-12 md:pb-16">{heading}</div></section>;
+        })()}
 
         <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
@@ -188,7 +202,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <AnswerBlock>{answer}</AnswerBlock>
               {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
               {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
-              <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />
+              {!coming && <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />}
             </div>
             <div className="md:pt-8 space-y-8">
               {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
@@ -199,12 +213,12 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <section id="the-map" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
-                <p className="ledger-eyebrow ledger-crimson">The Ledger in {c.name} · {all.length} filed</p>
+                <p className="ledger-eyebrow ledger-crimson">{coming ? `The chart of ${c.name} · stays being filed` : `The Ledger in ${c.name} · ${all.length} filed`}</p>
                 <h2 id="map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where We&rsquo;d Send You in {c.name}</h2>
               </div>
-              <p className="text-[16px] ledger-muted max-w-md">Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James.</p>
+              <p className="text-[16px] ledger-muted max-w-md">{coming ? "The places the house plans around. Stays will be pinned here as each one is vetted and filed; until then, James plans the route with you." : "Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James."}</p>
             </div>
-            <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
+            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
@@ -212,6 +226,21 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           {/* Destination-first: the places inside this country (Chile → Atacama, Patagonia, Rapa Nui), as the region page's own door cards. */}
           {placeGuides(c.slug).length > 0 && (
             <Doors id="places" eyebrow={`Inside ${c.name}`} title={`Where to Go in ${c.name}`} doors={placeGuides(c.slug).map((g) => ({ name: g.name, href: g.path, image: guideSlides(g)[0]?.url ?? null, imageAlt: guideSlides(g)[0]?.alt, line: g.tagline, stays: (g.stays ?? []).length, bestMonths: g.facts.find(([k]) => k === "Best time")?.[1] }))} />
+          )}
+
+          {/* Destination card: one panel where the stays will be, inked as the Stays volume, the action in House Crimson */}
+          {coming && (
+            <section id="stays" style={{ borderTopColor: volumeInk("stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-14 items-end" aria-labelledby="stays-heading">
+              <div>
+                <p className="ledger-eyebrow" style={{ color: volumeInk("stays") }}>Stays in {c.name} · coming soon</p>
+                <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">The Stays Are Being Vetted. The Trip Can Start Now.</h2>
+                <p className="mt-4 text-[16px] leading-relaxed max-w-2xl">Every stay the house files is checked in person or by a named partner before it earns a Ledger ID, so {c.name}&rsquo;s stays arrive one at a time. James plans {c.name} today: which coast suits your month, how the days fall, and where to sleep.</p>
+              </div>
+              <div className="lg:justify-self-end flex flex-wrap gap-3">
+                <Link href={`/plan?destination=${c.slug}`} className="inline-block bg-crimson hover:bg-crimson-deep text-paper transition-colors px-6 py-3 text-[12px] uppercase tracking-[0.18em]">Plan {c.name} with James</Link>
+                <Link href="/whats-coming" className="inline-block border ledger-border px-6 py-3 text-[12px] uppercase tracking-[0.18em] hover:border-ink">What&rsquo;s coming</Link>
+              </div>
+            </section>
           )}
 
           {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}
@@ -253,11 +282,11 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
           {/* Every stay filed here, by name: the index under the tabs (and every stay page linked for search) */}
-          <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+          {!coming && <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow" style={{ color: volumeInk(c.region === "europe" ? "europe" : "stays") }}>From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">Every Stay Filed in {c.name}</h2>
             <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">{pages.map((s) => <li key={s.slug}><Link href={recordHref("stay", s.slug)} className="ledger-display text-[1.1rem] hover:ledger-crimson">{s.name}</Link>{s.ledgerId && <span className="ml-2 font-mono text-[11px] ledger-muted">{s.ledgerId}</span>}</li>)}</ul>
-          </section>
+          </section>}
 
           {c.quote && (
             <Reveal className="mt-20 md:mt-28 max-w-4xl mx-auto text-center">
@@ -269,13 +298,13 @@ export default async function CountryPage({ params }: { params: Promise<{ region
 
           <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-[212px] space-y-16" aria-label={`${c.name}, the story`}>
             {c.story.map((st, i) => (
-              <div key={st.title} className="grid md:grid-cols-2 gap-10 items-center">
-                <div className={i % 2 ? "md:order-2" : ""}>
+              <div key={st.title} className={st.image.src ? "grid md:grid-cols-2 gap-10 items-center" : "max-w-3xl"}>
+                <div className={i % 2 && st.image.src ? "md:order-2" : ""}>
                   <p className="ledger-eyebrow ledger-crimson">{st.eyebrow}</p>
                   <h2 className="ledger-display text-2xl md:text-3xl mt-2 leading-snug">{st.title}</h2>
                   <div className="mt-4 space-y-4 text-[16px] leading-relaxed ledger-muted">{st.blocks.map((b) => <p key={b.p.slice(0, 24)}>{b.h && <strong className="block ledger-display text-[1.1rem] text-ink font-normal mb-1">{b.h}</strong>}{b.p}</p>)}</div>
                 </div>
-                <div className={`ledger-paper p-3 ${i % 2 ? "md:order-1 rotate-[0.6deg]" : "-rotate-[0.6deg]"}`}><div className="relative aspect-[4/5]"><Image src={st.image.src} alt={st.image.alt} fill sizes="(min-width: 768px) 560px, 100vw" className="object-cover" /></div></div>
+                {st.image.src && <div className={`ledger-paper p-3 ${i % 2 ? "md:order-1 rotate-[0.6deg]" : "-rotate-[0.6deg]"}`}><div className="relative aspect-[4/5]"><Image src={st.image.src} alt={st.image.alt} fill sizes="(min-width: 768px) 560px, 100vw" className="object-cover" /></div></div>}
               </div>
             ))}
           </section>

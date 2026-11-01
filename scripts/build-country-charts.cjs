@@ -22,6 +22,10 @@ const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38
 const AREAS = {
   guatemala: [[16.45, -90.75, "Petén"], [17.24, -89.62, "Tikal"], [17.1, -89.98, "Lake Petén Itzá"],
     [14.45, -90.97, "Antigua"], [14.62, -91.42, "Lake Atitlán"], [14.66, -90.5, "Guatemala City"]],
+  // Sri Lanka (1 Nov 2026): a destination card with no stays to pin yet, so the chart names the places the page describes.
+  "sri-lanka": [[6.93, 79.86, "Colombo"], [7.17, 79.88, "CMB ✈"], [7.29, 80.64, "Kandy"], [7.96, 80.76, "Sigiriya"], [7.86, 80.65, "Dambulla"],
+    [8.35, 80.39, "Anuradhapura"], [7.94, 81.0, "Polonnaruwa"], [8.45, 80.0, "Wilpattu"], [6.97, 80.78, "Nuwara Eliya"], [6.03, 80.22, "Galle"],
+    [5.95, 80.46, "Mirissa"], [6.44, 80.9, "Udawalawe"], [6.37, 81.52, "Yala"], [8.59, 81.21, "Trincomalee"]],
 };
 const polysOf = (g) => (g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : []);
 const ringBox = (ring) => ring.reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], [Infinity, Infinity, -Infinity, -Infinity]);

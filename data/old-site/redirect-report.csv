@@ -188,7 +188,7 @@ old path,new path,why,old title
 /book/one-only-gorillas-nest,/stays/one-only-gorillas-nest,booking page -> stay page,Book your stay at One &amp; Only Gorilla&#x27;s Nest | Wild Earth Stays
 /book/one-only-nyungwe,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Nyungwe | Wild Earth Stays
 /book/open-sky,/stays/open-sky,booking page -> stay page,Book your stay at Open Sky | Wild Earth Stays
-/book/our-habitas-namibia,/stays/our-habitas-namibia,booking page -> stay page,Book your stay at Our Habitas Namibia | Wild Earth Stays
+/book/our-habitas-namibia,/destinations/africa/namibia,booking page -> not on the new site yet; country page,Book your stay at Our Habitas Namibia | Wild Earth Stays
 /book/our-habitas-tulum,/stays/our-habitas-tulum,booking page -> stay page,Book your stay at Our Habitas Tulum | Wild Earth Stays
 /book/paws-up-resort,/stays/paws-up-resort,booking page -> stay page,Book your stay at Paws Up Resort | Wild Earth Stays
 /book/pearl-resort-le-borabora,/stays/pearl-resort-le-bora-bora,booking page -> stay page,Book your stay at Pearl Resort Le Bora bora | Wild Earth Stays
@@ -671,7 +671,7 @@ old path,new path,why,old title
 /property/one-only-gorillas-nest,/stays/one-only-gorillas-nest,stay page,One &amp; Only Gorilla&#x27;s Nest | Luxury Stays in Rwanda | Wild Earth Stays
 /property/one-only-nyungwe,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Nyungwe | Luxury Stays in Rwanda | Wild Earth Stays
 /property/open-sky,/stays/open-sky,stay page,Open Sky | Luxury Stays in Utah | Wild Earth Stays
-/property/our-habitas-namibia,/stays/our-habitas-namibia,stay page,Our Habitas Namibia | Luxury Stays in Namibia | Wild Earth Stays
+/property/our-habitas-namibia,/destinations/africa/namibia,not on the new site yet; country page,Our Habitas Namibia | Luxury Stays in Namibia | Wild Earth Stays
 /property/our-habitas-tulum,/stays/our-habitas-tulum,stay page,Our Habitas Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/pacuare-lodge,/stays/pacuare-lodge,stay page,Pacuare Lodge | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/paws-up-resort,/stays/paws-up-resort,stay page,Paws Up Resort | Luxury Stays in Montana | Wild Earth Stays

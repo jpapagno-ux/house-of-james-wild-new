@@ -1,1 +1,45 @@
-{"places": []}
+{
+ "places": [
+  {
+   "slug": "atacama",
+   "name": "Atacama",
+   "ledgerId": "DST-2026-000090",
+   "parentSlug": "chile",
+   "regionSlug": "south-america",
+   "subtitle": "San Pedro de Atacama, Chile",
+   "stays": [
+    "awasi-atacama",
+    "explora-at-atacama",
+    "nayara-alto-atacama",
+    "beckon-tierra-atacama"
+   ]
+  },
+  {
+   "slug": "patagonia",
+   "name": "Patagonia",
+   "ledgerId": "DST-2026-000089",
+   "parentSlug": "chile",
+   "regionSlug": "south-america",
+   "subtitle": "Torres del Paine, Chile",
+   "stays": [
+    "awasi-patagonia",
+    "ecocamp-patagonia",
+    "explora-torres-del-paine",
+    "torres-del-paine-c-reserve",
+    "tierra-patagonia"
+   ]
+  },
+  {
+   "slug": "rapa-nui",
+   "name": "Rapa Nui",
+   "ledgerId": "DST-2026-000088",
+   "parentSlug": "chile",
+   "regionSlug": "south-america",
+   "subtitle": "Easter Island, Chile",
+   "stays": [
+    "explora-rapa-nui",
+    "nayara-hangaroa"
+   ]
+  }
+ ]
+}

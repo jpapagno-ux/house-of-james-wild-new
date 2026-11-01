@@ -384,7 +384,7 @@
    "stay_id": "6a85bfb37f6eb35689bff8c9",
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
-   "country": "Bolivia",
+   "country": "Chile & Easter Island",
    "missing": [],
    "released": true
   },
@@ -676,7 +676,7 @@
   {
    "stay_id": "6a89a1b1ed15ff3bf57055d3",
    "slug": "blue-safari-seychelles",
-   "name": "Blue Safari Seychelles",
+   "name": "Alphonse Island Lodge",
    "country": "Seychelles",
    "missing": [],
    "released": true
@@ -1263,7 +1263,7 @@
    "stay_id": "6a85bfb37f6eb35689bff905",
    "slug": "explora-at-atacama",
    "name": "Explora Atacama",
-   "country": "Bolivia",
+   "country": "Chile & Easter Island",
    "missing": [],
    "released": true
   },
@@ -1440,6 +1440,22 @@
    "slug": "gorongosa-safaris",
    "name": "Gorongosa Safaris Mozambique",
    "country": "Mozambique",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae35291e4936c8e22e4dc22",
+   "slug": "governors-camp",
+   "name": "Governors' Camp",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae35291e4936c8e22e4dc23",
+   "slug": "governors-il-moran-camp",
+   "name": "Governors' Il Moran Camp",
+   "country": "Kenya",
    "missing": [],
    "released": true
   },
@@ -2401,6 +2417,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae76c852a9f7bd84434b2e1",
+   "slug": "loldia-house",
+   "name": "Loldia House",
+   "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff94d",
    "slug": "lolebezi-lodge",
    "name": "Lolebezi Lodge",
@@ -2910,8 +2934,10 @@
    "slug": "our-habitas-namibia",
    "name": "Our Habitas Namibia",
    "country": "Namibia",
-   "missing": [],
-   "released": true
+   "missing": [
+    "coming_soon"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff97c",

@@ -127,7 +127,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "beyond-lake-serengeti-under-canvas",
@@ -250,7 +251,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "beyond-sussuvlei-desert-lodge",
@@ -374,7 +376,8 @@
    "arrivalHubIds": [
     "6ae6974e999b4c5caa896df4",
     "6ae6974e800f3def42832add"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beyond-vira-vira-lodge",
@@ -465,7 +468,8 @@
    "arrivalHubIds": [
     "6ae6974649f3beea910643f6",
     "6ae69746dcc84494d2f362e6"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "benguerra-island-by-and-beyond",
@@ -558,7 +562,8 @@
    ],
    "arrivalHubIds": [
     "6ae69759cde1d7e8ab5bc7f0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chobe-under-canvas-by-and-beyond",
@@ -647,7 +652,8 @@
    ],
    "arrivalHubIds": [
     "6ae69741b2b7600515a60436"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beyond-grumeti-safari-camp",
@@ -769,7 +775,8 @@
    "arrivalHubIds": [
     "6ae697592a20c4a043a07150",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beyond-kichwa-camp",
@@ -865,7 +872,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ae760b130bd4d2077"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beyond-kleins-camp",
@@ -991,7 +999,8 @@
    "arrivalHubIds": [
     "6ae69754485e2efc242bd93a",
     "6ae697555c7b134365e994fc"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "aguas-claras",
@@ -1151,7 +1160,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae697472d05428dbdb7609f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "aliikai-voyage",
@@ -1253,7 +1263,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "alila-ventana-big-sur",
@@ -1354,7 +1365,141 @@
     "6ae69743c2cb658c212ee358",
     "6ae69743d4903237c545b6f5",
     "6ae6974348e87112caca2fb6"
-   ]
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "blue-safari-seychelles",
+   "name": "Alphonse Island Lodge",
+   "ledgerId": "STY-2026-666970",
+   "country": "Seychelles",
+   "countrySlug": "seychelles",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Alphonse Island Lodge by Blue Safari: barefoot luxury on a remote coral island in the Seychelles Outer Islands.",
+   "quote": "You don’t visit Blue Safari , you enter a living ocean wilderness that remembers you only as a guest of nature.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/seychelles/blue-safari-seychelles/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "couples",
+    "adventure",
+    "wellness",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -7.0069,
+    "lng": 52.7185
+   },
+   "airport": "Seychelles International Airport (SEZ)",
+   "airportDirections": "One-hour flight from the SEZ domestic terminal, booked with your lodge stay; allow 4 or more hours after long-haul arrival.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "22 Beach Bungalows (58 sqm), set among tropical foliage just metres from the beach.",
+     "5 Beach Villas (126 sqm), each with direct private access to the beach.",
+     "2 Beach Retreats (600 sqm, four bedrooms, up to 8 adults), on opposite sides of the island, with a private pool and a fully equipped kitchen."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Saltwater fly fishing with Alphonse Fishing Company, around Alphonse and St François Atoll.",
+     "Scuba diving across 30 dive sites, with complimentary Nitrox for certified divers.",
+     "Snorkelling with manta rays, helping record them for research.",
+     "Snorkelling with sailfish.",
+     "Blue Safari excursions offshore to look for dolphins, whales and turtles.",
+     "Flats lunch and the St François nature hike.",
+     "Kayaking, stand-up paddleboarding, cycling and nature hikes."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Remote island in the Alphonse Group, about 400 km south-west of Mahé",
+     "PADI 5* Dive Centre",
+     "Fishing Centre with a fully stocked tackle shop",
+     "Azure Spa, yoga and a fitness centre",
+     "Bijoutier Restaurant, with produce from The Farm and line-caught fish",
+     "Alphonse Tribe programme for children",
+     "Conservation Centre and evening conservation talks"
+    ]
+   },
+   "onlyHere": [
+    "Alphonse Island sits in the Outer Islands of Seychelles, 400 km south-west of Mahé, and is the home base of Blue Safari. The Alphonse Group covers a marine wilderness of over 13,800 acres, with snorkelling alongside manta rays and sailfish, and fly fishing on the flats of St François Atoll."
+   ],
+   "why": [
+    {
+     "title": "A remote island lodge for divers, anglers and families",
+     "body": "Choose Alphonse Island Lodge for a coral island an hour's flight from Mahé, with diving, fly fishing and ocean excursions on the doorstep. Blue Safari describes it as family-friendly, with the Alphonse Tribe programme for children of all ages, and offers honeymoon and milestone packages for couples."
+    }
+   ],
+   "facts": {
+    "best_months": "Blue Safari does not publish a single best season for Alphonse Island; ocean encounters on its Blue Safari excursions vary by season.",
+    "how_to_get_there": "A one-hour flight from the domestic terminal at Seychelles International Airport (SEZ) on Mahé, arranged with your Alphonse Island Lodge reservation.",
+    "signature_experiences": "Fly fishing with Alphonse Fishing Company, PADI 5* diving across 30 sites, snorkelling with manta rays and sailfish, and Blue Safari ocean excursions.",
+    "who_its_for": "Divers, fly fishers, families and couples who want a remote coral island with ocean adventures on the doorstep."
+   },
+   "faqs": [
+    {
+     "q": "What is Blue Safari Seychelles?",
+     "a": "Blue Safari Marine Collection is a collection of barefoot luxury lodges and a private expedition catamaran on the Seychelles Outer Islands: Alphonse Island Lodge, Cosmoledo Eco Camp, Astove Coral House and the 75-ft catamaran Quo Vadis. This page covers Alphonse Island Lodge, which Blue Safari calls its home base."
+    },
+    {
+     "q": "Where is Alphonse Island Lodge?",
+     "a": "Alphonse Island is in the Outer Islands of Seychelles, about 400 km south-west of Mahé, in the Alphonse Group. The Alphonse Group covers a marine wilderness of over 13,800 acres."
+    },
+    {
+     "q": "How do you get to Alphonse Island?",
+     "a": "By a one-hour flight from the domestic terminal of Seychelles International Airport (SEZ) on Mahé. The flight is not bookable online and is arranged with your lodge reservation. Blue Safari recommends at least four hours between your long-haul arrival and the Alphonse flight, or a night on Mahé if the connection is tight."
+    },
+    {
+     "q": "How many rooms does Alphonse Island Lodge have?",
+     "a": "There are 22 Beach Bungalows (58 sqm), 5 Beach Villas (126 sqm) with direct private beach access, and 2 four-bedroom Beach Retreats (600 sqm, up to 8 adults) with private pools, set on opposite sides of the island."
+    },
+    {
+     "q": "Is Alphonse Island good for children?",
+     "a": "Yes. Blue Safari describes Alphonse as family-friendly, and the Alphonse Tribe programme gives children of all ages a safe environment to explore the island through interactive activities. A Beach Bungalow sleeps two adults and one child."
+    },
+    {
+     "q": "When is the best time to visit Alphonse Island?",
+     "a": "Blue Safari does not publish a single best season for Alphonse Island. Its offshore Blue Safari excursions bring different marine encounters depending on the season, so we match your dates to what you most want to do, whether diving, fly fishing or family time."
+    },
+    {
+     "q": "What are the signature experiences on Alphonse Island?",
+     "a": "Saltwater fly fishing with Alphonse Fishing Company around Alphonse and St François Atoll, scuba diving with a PADI 5* Dive Centre across 30 dive sites, snorkelling with manta rays and sailfish, Blue Safari ocean excursions and the flats lunch. Nitrox is complimentary for certified divers."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "outer_islands",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae69750d7c7888a53a4972d"
+   ],
+   "placeSlug": null
   },
   {
    "slug": "alya-catamaran-galapagos",
@@ -1446,7 +1591,8 @@
    ],
    "arrivalHubIds": [
     "6ae69747c13a95faad91795e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "amandari",
@@ -1561,7 +1707,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "amazon-field-station-byinkaterra",
@@ -1645,7 +1792,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f296589197583f634"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ambiente-tm-sedona",
@@ -1737,7 +1885,8 @@
     "6ae6973f1d164e6a7f476ff6",
     "6ae6973ffe6d4667aa9201a9",
     "6ae6973f81a1749022856b67"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "amor-arenal",
@@ -1832,7 +1981,8 @@
    ],
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-bophut-koh-samui-resort",
@@ -1924,7 +2074,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975a7f9f2127514d41e1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-chiang-mai-resort",
@@ -2013,7 +2164,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975940204622a27aac6d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-golden-triangle-chiang-rai",
@@ -2111,7 +2263,8 @@
    ],
    "arrivalHubIds": [
     "6ae697599d92ccd24a2fac2d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-hua-hin",
@@ -2208,7 +2361,8 @@
    ],
    "arrivalHubIds": [
     "6ae697595c84d2adc81e8c63"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-mui-ne",
@@ -2300,7 +2454,8 @@
    "arrivalHubIds": [
     "6ae6975b2cd3e7e2ab4884db",
     "6ae6975b48e87112caca2fd0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "stanley-livingstone-lodge",
@@ -2407,7 +2562,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975c04de2bbf1d05d305"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "anantara-ubud-bali",
@@ -2504,7 +2660,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "angama-amboseli",
@@ -2610,7 +2767,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974a90e7e079e474035f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "angama-mara",
@@ -2729,7 +2887,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "angama-safari-camp",
@@ -2821,7 +2980,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "arenas-del-mar-resort",
@@ -2922,7 +3082,8 @@
    "arrivalHubIds": [
     "6ae6974787d64df6a150b163",
     "6ae697470cd87e591e92cccf"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ariel-house",
@@ -3044,7 +3205,8 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "arijiju-laikipia",
@@ -3146,7 +3308,8 @@
    "arrivalHubIds": [
     "6ae6974bb51a396b85970bde",
     "6ae6974aa6d0fa13bbe23ed1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "armendaris-ted-turner-reserve",
@@ -3235,7 +3398,8 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "asilia-rekero-camp",
@@ -3330,7 +3494,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b6b505a193bf29747"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "atzaro-okavango-camp",
@@ -3421,14 +3586,15 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
    "ledgerId": "STY-2026-000026",
-   "country": "Bolivia",
-   "countrySlug": null,
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -3510,7 +3676,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974150ecb0e9933ef843"
-   ]
+   ],
+   "placeSlug": "atacama"
   },
   {
    "slug": "iguazu",
@@ -3604,7 +3771,8 @@
    "arrivalHubIds": [
     "6ae6973e4b1bd4153e89d834",
     "6ae6973f5b14db71c885633d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "awasi-mendoza",
@@ -3697,7 +3865,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973f5d9cc4c767aed131"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "awasi-patagonia",
@@ -3797,7 +3966,8 @@
    "arrivalHubIds": [
     "6ae697461c4c7b8d57a9bb0e",
     "6ae697449583543efcf27c0b"
-   ]
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "awasi-santa-catarina",
@@ -3890,7 +4060,8 @@
    "arrivalHubIds": [
     "6ae69743a6d0fa13bbe23eca",
     "6ae69743c70cc7774f920d8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "babylonstoren",
@@ -4012,7 +4183,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "baines-lodge",
@@ -4097,7 +4269,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "bateleur-camp-by-and-beyond",
@@ -4190,7 +4363,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974c7d4c694c47df3348"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "baymanhi-exuma",
@@ -4295,7 +4469,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973fe9cbc8b0912b40ae"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "be-tulum",
@@ -4391,7 +4566,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "birkenhead-house",
@@ -4494,7 +4670,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "blancaneaux-lodge",
@@ -4617,7 +4794,8 @@
    ],
    "arrivalHubIds": [
     "6ae697409300c15bed28823f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "blue-reef",
@@ -4727,84 +4905,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
-  },
-  {
-   "slug": "blue-safari-seychelles",
-   "name": "Blue Safari Seychelles",
-   "ledgerId": "STY-2026-666970",
-   "country": "Seychelles",
-   "countrySlug": "seychelles",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "lodge",
-   "tagline": "Where the ocean is your only horizon, and every stay protects a world still untouched.",
-   "quote": "You don’t visit Blue Safari , you enter a living ocean wilderness that remembers you only as a guest of nature.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/seychelles/blue-safari-seychelles/hero",
-   "gallery": [],
-   "bestMonths": "November – April",
-   "bestMonthsNote": "These months offer optimal diving visibility, calmer seas, and peak marine life activity across Astove and Cosmoledo atolls, making it ideal for underwater exploration and fishing expeditions.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": -7.0,
-    "lng": 52.74
-   },
-   "airport": "Seychelles International Airport (SEZ)",
-   "airportDirections": "Approximately 60–90 minutes flight from Mahé (SEZ) to Alphonse Island airstrip, with onward boat transfers depending on atoll itinerary.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Beach BungalowsBeach VillasBeach RetreatsEco Camp LodgesCatamaran Expeditions."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [
-     "Scuba DivingFly FishingMarine Conservation PatrolsIsland Hopping ExpeditionsTurtle MonitoringKayaking & Lagoon Exploration."
-    ],
-    "items": []
-   },
-   "features": {
-    "paras": [
-     "Remote coral atollsPrivate island-style lodgesMarine biologist-guided experiencesSolar-powered sustainability systemsFarm-to-table island cuisineUntouched diving reefs."
-    ],
-    "items": []
-   },
-   "onlyHere": [
-    "This is one of the last places on Earth where you can wake up on a sand-fringed atoll, step into water clearer than glass, and know the ecosystem around you is more alive than anywhere else on the planet."
-   ],
-   "why": [
-    {
-     "title": "THE EDGE OF THE INDIAN OCEAN, REIMAGINED",
-     "body": "Choose Blue Safari if you are seeking raw, unfiltered nature wrapped in discreet luxury. Ideal for divers, anglers, conservation-minded travelers, honeymooners seeking isolation, and explorers drawn to remote, science-rich ecosystems."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-02",
-    "secondary": [
-     "PATH-04"
-    ],
-    "setting": "outer_islands",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae69750d7c7888a53a4972d"
-   ]
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "boluntiku-hotel",
@@ -4861,7 +4963,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "borana",
@@ -4960,7 +5063,8 @@
     "6ae6974bb51a396b85970bde",
     "6ae6974aa6d0fa13bbe23ed1",
     "6ae6974b0c7208df76184c03"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "breac-house",
@@ -5071,7 +5175,8 @@
    "arrivalHubIds": [
     "6ae666174efda236c530e85b",
     "6ae666174efda236c530e85c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -5199,7 +5304,8 @@
    "arrivalHubIds": [
     "6ae6975c551eb032b92a9bb9",
     "6ae6975ce57b8ac515e24326"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "camp-hwange-muddy-teak",
@@ -5312,7 +5418,8 @@
    "arrivalHubIds": [
     "6ae6975c04de2bbf1d05d305",
     "6ae69751dad7a8fb436dcf39"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "cap-karoso",
@@ -5429,7 +5536,8 @@
    "arrivalHubIds": [
     "6ae697491cde8e4e0c09adf2",
     "6ae69749a4b2f2b1952e65c1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "cape-cadogan-boutique-hotel",
@@ -5565,7 +5673,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-capella-lodge",
@@ -5697,7 +5806,8 @@
     "6ae6973f3c7362bb0a39a29d",
     "6ae6973fa1ead46a71080fe7",
     "6ae6973fd1b63ead4a14660d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "capella-ubud",
@@ -5789,7 +5899,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "cardamom-tented-camp",
@@ -5879,7 +5990,8 @@
    "arrivalHubIds": [
     "6ae69743ae2e8cbad44c0055",
     "6ae697437b03070861043106"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "casa-maya-kaan",
@@ -5976,7 +6088,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "castle-leslie",
@@ -6082,7 +6195,8 @@
    "arrivalHubIds": [
     "6ae666174efda236c530e858",
     "6ae666174efda236c530e85e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "celestia-yacht",
@@ -6177,7 +6291,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "chable-yucatan",
@@ -6274,7 +6389,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d775b6dc41b95f2e4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chamilandu-lodge",
@@ -6395,7 +6511,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975bbc157255b8d62b02"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "cheetah-plains",
@@ -6520,7 +6637,8 @@
     "6ae69751dd84deb01116e416",
     "6ae6975198348dcb481fcde6",
     "6ae69751534ce93476492155"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chem-chem",
@@ -6645,7 +6763,8 @@
     "6ae69754bf5a13e528dc2ee5",
     "6ae69754642635a90d18aa07",
     "6ae697551c4c7b8d57a9bb1d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chiawa-safaris",
@@ -6773,7 +6892,8 @@
     "6ae6975b4336756d7942eed2",
     "6ae6975bc8662ac7c79aa762",
     "6ae6975c7f050a78267c41f0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chindeni-lodge",
@@ -6892,7 +7012,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975bbc157255b8d62b02"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "chisa-busanga-camp",
@@ -7014,7 +7135,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "chumbe-island-zanzibar",
@@ -7142,7 +7264,8 @@
    ],
    "arrivalHubIds": [
     "6ae69759fc194559e72761a4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "clayoquot-wilderness-resort",
@@ -7245,7 +7368,8 @@
     "6ae6974496b944e8c592f867",
     "6ae69744c23ffff6bdd6ef40",
     "6ae697445c7b134365e994e7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "coco-costa-rica",
@@ -7302,7 +7426,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "coco-plum-island-resort",
@@ -7416,7 +7541,8 @@
    ],
    "arrivalHubIds": [
     "6ae697407f0b8716e065ba14"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "como-shambhala-estate",
@@ -7504,7 +7630,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "conrad-tulum-riviera-maya",
@@ -7601,7 +7728,8 @@
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952",
     "6ae6974d2f7e87b5a5f59865"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "coot-club",
@@ -7732,7 +7860,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "corks-vienna-woods",
@@ -7825,7 +7954,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae666174efda236c530e859"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "cottars-1920-camp",
@@ -7941,7 +8071,8 @@
     "6ae6974c7d4c694c47df3348",
     "6ae69749d7b534de044e2605",
     "6ae6974a642635a90d18a9fe"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-original-camp-by-serian",
@@ -8025,7 +8156,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "daunara-safari-camp",
@@ -8113,7 +8245,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "great-plains-duba-plains",
@@ -8189,7 +8322,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974156062b764e79a9cc"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dukes-camp-okavango",
@@ -8285,7 +8419,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae6974152ebbfdb5b18521b"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dulini-anabezi-lodge",
@@ -8410,7 +8545,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975b490b37ebbeebbe39"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dulini-daunara-lodge",
@@ -8523,7 +8659,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dulini-leadwood-lodge",
@@ -8633,7 +8770,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dulini-moya-lodge",
@@ -8748,7 +8886,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "dulini-river-lodge",
@@ -8853,7 +8992,8 @@
    "arrivalHubIds": [
     "6ae6975142da92bdd9e00a2e",
     "6ae6975201f48e4a41de6174"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "asilia-dunia-camp",
@@ -8982,7 +9122,8 @@
    ],
    "arrivalHubIds": [
     "6ae697592a20c4a043a07150"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "da-licenca",
@@ -9092,7 +9233,8 @@
    ],
    "arrivalHubIds": [
     "6ae697507315f045b9524ae9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ecocamp-patagonia",
@@ -9188,7 +9330,8 @@
    "arrivalHubIds": [
     "6ae697461c4c7b8d57a9bb0e",
     "6ae697449583543efcf27c0b"
-   ]
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "ecoventura-evolve-yacht",
@@ -9280,7 +9423,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "ecoventura-origin-yacht",
@@ -9371,7 +9515,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "ecoventura-theory-yacht",
@@ -9463,7 +9608,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "el-mapi-byinkaterra",
@@ -9554,7 +9700,8 @@
    "arrivalHubIds": [
     "6ae6974f05b8048e4c722960",
     "6ae6974f83a672d040199726"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "elephann-pan-khwai",
@@ -9648,7 +9795,8 @@
     "6ae6974152c8a64add4c1c95",
     "6ae697427ca51cd40af01fc0",
     "6ae69741ef1c4ba4eb1a23a2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ellerman-house",
@@ -9789,7 +9937,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "elsas-kopje",
@@ -9857,7 +10006,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "encounter-mara-camp-by-asilia",
@@ -9949,7 +10099,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b7b0307086104311f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "entamanu-lodge",
@@ -10059,7 +10210,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "entamanu-private-lodge",
@@ -10172,7 +10324,8 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "entara-esirai-camp",
@@ -10296,7 +10449,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "etosha-mountain-lodge",
@@ -10419,7 +10573,8 @@
    "arrivalHubIds": [
     "6ae6974ebeef9ca2e581d5c9",
     "6ae6974def1c4ba4eb1a23ac"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "explora-el-calafate",
@@ -10502,7 +10657,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973e3b5411a430e8232d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "explora-el-chalten",
@@ -10590,7 +10746,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973e3b5411a430e8232d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "explora-rapa-nui",
@@ -10635,8 +10792,7 @@
    },
    "experiences": {
     "paras": [
-     "Moai archaeological exploration.Volcanic hiking adventures.Pacific Ocean immersion.Polynesian cultural discovery.Scenic coastal expeditions.Island wellness experiences.",
-     "High-altitude desert hiking.Salt flat explorations.Geyser expeditions.Astronomical stargazing.Horseback riding adventures.Atacama wellness experiences."
+     "Moai archaeological exploration.Volcanic hiking adventures.Pacific Ocean immersion.Polynesian cultural discovery.Scenic coastal expeditions.Island wellness experiences."
     ],
     "items": []
    },
@@ -10681,7 +10837,8 @@
    ],
    "arrivalHubIds": [
     "6ae697440726f0daa56d3998"
-   ]
+   ],
+   "placeSlug": "rapa-nui"
   },
   {
    "slug": "explora-sacred-valley",
@@ -10769,7 +10926,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f05b8048e4c722960"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "explora-torres-del-paine",
@@ -10856,7 +11014,8 @@
    "arrivalHubIds": [
     "6ae697461c4c7b8d57a9bb0e",
     "6ae697449583543efcf27c0b"
-   ]
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "torres-del-paine-c-reserve",
@@ -10942,14 +11101,15 @@
    "arrivalHubIds": [
     "6ae697461c4c7b8d57a9bb0e",
     "6ae697449583543efcf27c0b"
-   ]
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "explora-at-atacama",
    "name": "Explora Atacama",
    "ledgerId": "STY-2026-000086",
-   "country": "Bolivia",
-   "countrySlug": null,
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -11029,7 +11189,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974150ecb0e9933ef843"
-   ]
+   ],
+   "placeSlug": "atacama"
   },
   {
    "slug": "feline-fields-lodge",
@@ -11118,7 +11279,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "feline-fields-vintage-camp",
@@ -11208,7 +11370,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "fogo-island-inn",
@@ -11299,7 +11462,8 @@
    "arrivalHubIds": [
     "6ae69743534ce9347649211f",
     "6ae69744a272964ca74e7085"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "gibbs-farm",
@@ -11426,7 +11590,8 @@
     "6ae69754bf5a13e528dc2ee5",
     "6ae6975466e4a788ffb3f1ea",
     "6ae69753a6b76fae048726a8"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "giraffe-manor",
@@ -11511,7 +11676,8 @@
    "arrivalHubIds": [
     "6ae6974c7d4c694c47df3348",
     "6ae6974acaf3f42cf0fd70c6"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "gomoti-plains-camp",
@@ -11598,7 +11764,8 @@
    ],
    "arrivalHubIds": [
     "6ae69741916275911afcc053"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "gorongosa-safaris",
@@ -11715,7 +11882,251 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "governors-camp",
+   "name": "Governors' Camp",
+   "ledgerId": "STY-2026-000444",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Africa's first permanent luxury tented camp, on its original Mara River site since 1972",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-camp/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. July to October is the Great Wildebeest Migration and peak safari season. January to March brings strong predator sightings and calving season. April to June is lush and green with fewer crowds, with April and May the green season. November and December bring migratory birds and dramatic skies.",
+   "bestFor": [
+    "family",
+    "couples",
+    "wildlife_photography"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2012-01-01",
+   "coords": {
+    "lat": -1.2987264,
+    "lng": 35.038101
+   },
+   "airport": "Musiara Airstrip",
+   "airportDirections": "Daily scheduled flights from Nairobi Wilson Airport to Musiara Airstrip with Governors' Aviation, the collection's own airline, and other select airlines; Governors' Aviation flights take approximately 45 minutes. The camp is a short transfer from the airstrip, and local airstrip transfers are included. Strict 15 kg luggage limit per person in soft bags.",
+   "founderNote": "Stayed with Governors' in 2012. A founder favourite. JW",
+   "rooms": {
+    "paras": [
+     "24 tents, entirely under canvas: 19 luxury tents overlooking the Mara River and 5 family tents with views across the open plains. Every tent has an en suite bathroom and a private verandah. There is a bar tent with a deck over the Mara River, a dining tent looking out over the plains, a spa tent offering massages with natural products by The Wild Herb Company, a gift shop, and Wifi in camp."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Up to three game drives a day in open-sided 4x4 vehicles, with routes set by the wildlife because the camp is already inside the reserve. Hot-air balloon safaris over the Mara, Masai cultural visits, bush dinners (at extra cost), sundowners and spa treatments. From July to October the Great Migration moves through the Musiara area, with Mara River crossing points near camp."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Set inside the Masai Mara National Reserve beside Musiara Marsh, in a non-fenced, wildlife-dense area where elephants and hippos often move through camp. Governors' Camp runs on 100% solar power and holds a Gold eco-rating from Eco-Tourism Kenya. The nightly rate includes local airstrip transfers, meals, soft drinks, beers, house wines and non-premium spirits, up to three game drives a day and laundry."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Musiara Marsh, right beside camp, is home ground of the Marsh Pride of lions, followed for decades by BBC Earth's Dynasties, Animal Planet's Big Cat Diaries and Big Cat Tales and Nat Geo's LION. The brand describes Governors' Camp as a top choice for the filmmakers behind these productions."
+   ],
+   "why": [
+    {
+     "title": "Where the Mara Safari Began",
+     "body": "Best for first-time safari travellers, families with children of any age, and anyone who wants the Marsh Pride and the migration on the doorstep."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; July to October for the Great Migration, January to March for predators and calving.",
+    "how_to_get_there": "About 45 minutes by Governors' Aviation from Nairobi Wilson to Musiara Airstrip, then a short transfer.",
+    "signature_experiences": "Game drives with the Marsh Pride, migration river crossings and hot-air balloon safaris.",
+    "who_its_for": "First-time safari travellers, families with children of any age, couples and photographers."
+   },
+   "faqs": [
+    {
+     "q": "Where is Governors' Camp?",
+     "a": "Inside Kenya's Masai Mara National Reserve, on the banks of the Mara River beside Musiara Marsh. It has stood on its original site since 1972."
+    },
+    {
+     "q": "How do you get to Governors' Camp?",
+     "a": "Fly from Nairobi Wilson Airport to Musiara Airstrip with Governors' Aviation (about 45 minutes) or other select airlines. The camp is a short transfer from the airstrip, and airstrip transfers are included."
+    },
+    {
+     "q": "How many tents does Governors' Camp have?",
+     "a": "24 tents, all under canvas: 19 luxury tents overlooking the Mara River and 5 family tents with views across the plains, each with an en suite bathroom and a private verandah."
+    },
+    {
+     "q": "Can children stay at Governors' Camp?",
+     "a": "Yes. Children of all ages are welcome, including very young children. High chairs, babysitting, special children's meals and early mealtimes are available."
+    },
+    {
+     "q": "When is the best time to visit Governors' Camp?",
+     "a": "The camp is open all year. July to October brings the Great Migration and Mara River crossings near camp; January to March is known for predator sightings and calving; April and May are green season."
+    },
+    {
+     "q": "What can you do at Governors' Camp?",
+     "a": "Up to three game drives a day, hot-air balloon safaris, Masai cultural visits, bush dinners and spa treatments. The Marsh Pride of lions divides its time between Musiara Marsh, beside camp, and the nearby Bila Shaka area."
+    },
+    {
+     "q": "Who is Governors' Camp best for?",
+     "a": "First-time safari travellers, families, couples and wildlife photographers who want a traditional tented camp focused on wildlife rather than architecture."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "governors-il-moran-camp",
+   "name": "Governors' Il Moran Camp",
+   "ledgerId": "STY-2026-000448",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten tents under riverine forest on the banks of the Mara River",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/governors-il-moran-camp/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. July to October is the Great Wildebeest Migration and peak safari season. January to March brings strong predator sightings and calving season. April to June is lush and green with fewer crowds, with April and May the green season. November and December bring migratory birds and dramatic skies.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "solo",
+    "wildlife_photography"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2012-01-01",
+   "coords": {
+    "lat": -1.2885303,
+    "lng": 35.0344917
+   },
+   "airport": "Musiara Airstrip",
+   "airportDirections": "Daily scheduled flights from Nairobi Wilson Airport to Musiara Airstrip, the nearest airstrip to camp, with Governors' Aviation and other select airlines; Governors' Aviation flights take approximately 45 minutes. Local airstrip transfers are included. Strict 15 kg luggage limit per person in soft bags.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "10 luxury tents set along the winding banks of the Mara River under a canopy of riverine forest, each with a private veranda and an en suite bathroom with a standalone bathtub, shower, twin basins and running hot and cold water. The main mess tent has dark wooden tables, oversized blue couches, a beaded chandelier, tribal portraits and African artefacts. Meals are served on the raised wooden deck above the river and its resident hippos, and a sunken fire pit is lit each evening. Free Wifi, USB charging and Vortex Diamondback binoculars to borrow at no charge."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Up to three game drives a day in custom-built 4x4 vehicles within the Masai Mara National Reserve and occasionally in the Mara Triangle, with private game drives on request (advance booking required). Hot-air balloon safaris, Masai cultural visits, bush dinners (at extra cost) and, from July to October, the Great Wildebeest Migration and its Mara River crossings."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Fully inside the Masai Mara National Reserve rather than an outside conservancy, so vehicles leave camp straight into wildlife areas without passing through reserve gates. Il Moran holds a Gold eco-rating from Eco-Tourism Kenya, and massages with natural products by The Wild Herb Company can be given in your tent. The nightly rate includes local airstrip transfers, soft drinks, beers, house wines and non-premium spirits, up to three game drives a day and laundry."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Just ten tents inside the reserve, close enough to the Mara River to watch hippos from the dining deck, in the same Musiara country the Governors' guides have known since 1972."
+   ],
+   "why": [
+    {
+     "title": "Ten Tents on the Mara River",
+     "body": "Best for honeymooners, couples, solo travellers and families with children aged 8 and over who want a quiet, private camp inside the reserve."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; July to October for the Great Migration, January to March for predators and calving.",
+    "how_to_get_there": "About 45 minutes by Governors' Aviation from Nairobi Wilson to Musiara Airstrip.",
+    "signature_experiences": "Game drives straight from camp, private game drives on request and hot-air balloon safaris.",
+    "who_its_for": "Honeymooners, couples, solo travellers and families with children 8 and over."
+   },
+   "faqs": [
+    {
+     "q": "Where is Governors' Il Moran Camp?",
+     "a": "On the banks of the Mara River inside Kenya's Masai Mara National Reserve, under a canopy of riverine forest."
+    },
+    {
+     "q": "How do you get to Il Moran Camp?",
+     "a": "Fly from Nairobi Wilson Airport to Musiara Airstrip with Governors' Aviation (about 45 minutes) or other select airlines. Airstrip transfers are included."
+    },
+    {
+     "q": "How many tents does Il Moran Camp have?",
+     "a": "10 luxurious safari tents, each with a private veranda and an en suite bathroom with a standalone bathtub, shower and twin basins."
+    },
+    {
+     "q": "Can children stay at Il Moran Camp?",
+     "a": "Children aged 8 years and older are welcome."
+    },
+    {
+     "q": "When is the best time to visit Il Moran Camp?",
+     "a": "The camp is open all year. July to October brings the Great Migration; January to March is known for predator sightings and calving; April and May are green season."
+    },
+    {
+     "q": "What can you do at Il Moran Camp?",
+     "a": "Up to three game drives a day in the reserve and occasionally the Mara Triangle, private game drives on request, hot-air balloon safaris, Masai cultural visits, bush dinners and in-tent massages."
+    },
+    {
+     "q": "Who is Il Moran Camp best for?",
+     "a": "Honeymooners, couples, solo travellers, small groups and families with older children looking for a quiet, low-density camp inside the reserve."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "greystoke-mahale-by-nomad",
@@ -11841,7 +12252,8 @@
    "arrivalHubIds": [
     "6ae69754fd0f94ec586fa47f",
     "6ae69753a6b76fae048726a8"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "grootbos-private-nature-reserve",
@@ -11963,7 +12375,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "gwe-gwe-beach",
@@ -12028,7 +12441,8 @@
    "arrivalHubIds": [
     "6ae6975194b52f96ec01d443",
     "6ae69751fd469736b2d7029e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "gwe-gwe-beach-lodge",
@@ -12136,7 +12550,8 @@
    "arrivalHubIds": [
     "6ae6975194b52f96ec01d443",
     "6ae69751fd469736b2d7029e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "hayfield-manor",
@@ -12231,7 +12646,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae666174efda236c530e859"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "hemingways-nairobi",
@@ -12357,7 +12773,8 @@
    "arrivalHubIds": [
     "6ae6974acaf3f42cf0fd70c6",
     "6ae6974c7d4c694c47df3348"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-retreat-rwanda",
@@ -12477,7 +12894,8 @@
    "engine": null,
    "pathway": null,
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "hermanus-private-residences",
@@ -12584,7 +13002,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "hidden-valley-lodge",
@@ -12691,7 +13110,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "hoanib-elephant-camp",
@@ -12806,7 +13226,8 @@
     "classifiedAt": null
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "hoanib-valley-camp",
@@ -12923,7 +13344,8 @@
     "classifiedAt": null
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "holistika",
@@ -13014,7 +13436,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "hotel-bardo",
@@ -13109,7 +13532,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "hotel-panamera",
@@ -13191,7 +13615,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "house-in-the-wild",
@@ -13273,7 +13698,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "house-in-the-wild-masai-mara",
@@ -13366,7 +13792,8 @@
    "arrivalHubIds": [
     "6ae6974ba3052349b192dd30",
     "6ae6974b45281cd346259980"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-huka-lodge",
@@ -13468,7 +13895,8 @@
     "6ae6974f848166c39779a27d",
     "6ae6974f6a6a5dcb656ed20b",
     "6ae6974e462820454c7ce501"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ila-safari-lodge",
@@ -13590,7 +14018,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-cabo-blanco",
@@ -13684,7 +14113,8 @@
     "6ae6974f2686be3703910ad9",
     "6ae6974fa5b24e69c6832dd0",
     "6ae69750800df693c3532584"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-hacienda-concepcion",
@@ -13774,7 +14204,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f296589197583f634"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-hacienda-urubamba",
@@ -13865,7 +14296,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f05b8048e4c722960"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-la-casona",
@@ -13958,7 +14390,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f05b8048e4c722960"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-machu-picchu-pueblo-hotel",
@@ -14054,7 +14487,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f05b8048e4c722960"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "inkaterra-reserva-amazonica",
@@ -14140,7 +14574,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f296589197583f634"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "isla-palenque-resort",
@@ -14234,7 +14669,8 @@
    "arrivalHubIds": [
     "6ae6974f879f7d65734d29e0",
     "6ae6974fa26f5f73258176cc"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "isla-secas",
@@ -14320,7 +14756,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f879f7d65734d29e0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "isla-secas-panama",
@@ -14422,7 +14859,8 @@
    "arrivalHubIds": [
     "6ae6974f879f7d65734d29e0",
     "6ae6974fa26f5f73258176cc"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ja-manufaru-maldives",
@@ -14521,7 +14959,8 @@
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2",
     "6ae6974c2a487b11a3a5ce28"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jabulani",
@@ -14584,7 +15023,8 @@
    ],
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jacana-camp",
@@ -14674,7 +15114,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae6974122b9348d6fa6b239"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jacis-private-lodge",
@@ -14781,7 +15222,8 @@
    ],
    "arrivalHubIds": [
     "6ae69752601cd109d453a25d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jacks-camp",
@@ -14873,7 +15315,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae697414fc4d21574e4308d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jacks-private-camp",
@@ -14967,7 +15410,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae697414fc4d21574e4308d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jaguar-reef-lodge",
@@ -15082,7 +15526,8 @@
    "arrivalHubIds": [
     "6ae69740a715b8b3744d0552",
     "6ae697408859d0cd92acf229"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jao-camp",
@@ -15171,7 +15616,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae69741b2b7600515a60436"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "jao-reserve",
@@ -15259,7 +15705,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae6974122b9348d6fa6b239"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ka-ana-resort",
@@ -15377,7 +15824,8 @@
    ],
    "arrivalHubIds": [
     "6ae697409300c15bed28823f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kaaba-luum-mexico",
@@ -15476,7 +15924,8 @@
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952",
     "6ae6974d2f7e87b5a5f59865"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kamalaya-koh-samui",
@@ -15563,7 +16012,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975a7f9f2127514d41e1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kayumanis-jimbaran-private-estates",
@@ -15663,7 +16113,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kayumanis-nusa-dua",
@@ -15766,7 +16217,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kayumanis-sanur",
@@ -15848,7 +16300,8 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "kayumanis-ubud",
@@ -15953,7 +16406,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "khwai-leadwood-camp",
@@ -16041,7 +16495,8 @@
    "arrivalHubIds": [
     "6ae6974152c8a64add4c1c95",
     "6ae69741ef1c4ba4eb1a23a2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "khwai-lediba",
@@ -16130,7 +16585,8 @@
     "6ae6974152c8a64add4c1c95",
     "6ae697427ca51cd40af01fc0",
     "6ae69741ef1c4ba4eb1a23a2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kichakani-camp",
@@ -16262,7 +16718,8 @@
     "6ae697592a20c4a043a07150",
     "6ae697539f848eef2166ef8c",
     "6ae697548aca34d73203560f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kicheche-mara-north",
@@ -16357,7 +16814,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -16489,7 +16947,8 @@
    ],
    "arrivalHubIds": [
     "6ae69759f4294bbc9dc9b259"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kruger-shalati",
@@ -16552,7 +17011,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kualoa-ranch",
@@ -16646,7 +17106,8 @@
    ],
    "arrivalHubIds": [
     "6ae697487899eed56439b662"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kudadoo-private-island",
@@ -16743,7 +17204,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kura-boutique-resort",
@@ -16842,7 +17304,8 @@
     "6ae6974787d64df6a150b163",
     "6ae697470cd87e591e92cccf",
     "6ae697462221fa2b1696030a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-4-rivers",
@@ -16937,7 +17400,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-kwara",
@@ -17044,7 +17508,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-lagoon",
@@ -17150,7 +17615,8 @@
    ],
    "arrivalHubIds": [
     "6ae69741bb1a62c697ac9ab1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-lebala",
@@ -17256,7 +17722,8 @@
    ],
    "arrivalHubIds": [
     "6ae69742a0ac6a3703dc3529"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-mma-dinare",
@@ -17351,7 +17818,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-moremi-crossing",
@@ -17449,7 +17917,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-nxai-pan",
@@ -17548,7 +18017,8 @@
    ],
    "arrivalHubIds": [
     "6ae69742331ddab2292abf29"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-pom-pom",
@@ -17646,7 +18116,8 @@
    ],
    "arrivalHubIds": [
     "6ae69742284420ecd074b4b4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-rra-dinare",
@@ -17741,7 +18212,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-splash",
@@ -17839,7 +18311,8 @@
    ],
    "arrivalHubIds": [
     "6ae697421364f5f9ca4ed6a3"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwando-tau-pan",
@@ -17938,7 +18411,8 @@
    ],
    "arrivalHubIds": [
     "6ae697432f7e87b5a5f59857"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwande-private-game-reserve",
@@ -18072,7 +18546,8 @@
    ],
    "arrivalHubIds": [
     "6ae69752654f571ad3cde2df"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "kwessi-dunes-camp",
@@ -18186,7 +18661,8 @@
     "classifiedAt": null
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "kwetsani-camp",
@@ -18278,7 +18754,8 @@
    "arrivalHubIds": [
     "6ae6974122b9348d6fa6b239",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "la-cle",
@@ -18405,7 +18882,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "la-residence",
@@ -18514,7 +18992,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "la-valise-tulum",
@@ -18604,7 +19083,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ladder-ted-turner-reserve",
@@ -18694,7 +19174,8 @@
    "arrivalHubIds": [
     "6ae6975a0cd87e591e92ccec",
     "6ae6975a167f73669dc0d602"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -18817,7 +19298,8 @@
     "6ae69753a6b76fae048726a8",
     "6ae69754bf5a13e528dc2ee5",
     "6ae69754ca4211dce76cf97a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lalibela-reserve",
@@ -18960,7 +19442,8 @@
    ],
    "arrivalHubIds": [
     "6ae69752654f571ad3cde2df"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lapa-rios-lodge",
@@ -19051,7 +19534,8 @@
    "arrivalHubIds": [
     "6ae697476c4078799b61c4d5",
     "6ae69746916275911afcc059"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "le-quartier-francais",
@@ -19175,7 +19659,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "la-tahaa",
@@ -19270,7 +19755,8 @@
    ],
    "arrivalHubIds": [
     "6ae69753a637fcda51d3fd61"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "leeu-estates",
@@ -19401,7 +19887,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "leeu-house",
@@ -19520,7 +20007,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lekkerwater-dehoop",
@@ -19640,7 +20128,8 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c",
     "6ae697511387bd60989a308e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lengishu-kenya",
@@ -19730,7 +20219,8 @@
    "arrivalHubIds": [
     "6ae6974aa6d0fa13bbe23ed1",
     "6ae69749f2face4d545f6717"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "leopard-hills",
@@ -19855,7 +20345,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lepogo-lodges",
@@ -19918,7 +20409,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975251ff2cfc7b5a3a75"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lewa-wilderness-lodge",
@@ -20011,7 +20503,8 @@
     "6ae6974ad0f23a42452f2a65",
     "6ae6974bb51a396b85970bde",
     "6ae6974aa6d0fa13bbe23ed1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "linyanti-ebony-camp",
@@ -20089,7 +20582,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "linyanti-expedition-camp",
@@ -20171,7 +20665,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "lion-sands",
@@ -20301,7 +20796,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "little-tubu-camp",
@@ -20395,7 +20891,132 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae6974122b9348d6fa6b239"
-   ]
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "loldia-house",
+   "name": "Loldia House",
+   "ledgerId": "STY-2026-000550",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1943 farmhouse on a private 6,500-acre conservancy on the shores of Lake Naivasha",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/loldia-house/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year, and the brand describes Lake Naivasha as having year-round wildlife activity and hundreds of recorded bird species. Seasons: high season 1 July to 31 October and 16 to 31 December; mid season January to March, June and 1 November to 15 December; green season April and May.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "wildlife_photography",
+    "conservation"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2012-01-01",
+   "coords": {
+    "lat": -0.704147,
+    "lng": 36.3299152
+   },
+   "airport": "Loldia Ranch airstrip (Lake Naivasha)",
+   "airportDirections": "Daily scheduled flights from Nairobi Wilson Airport to Loldia Ranch with Governors' Aviation, the collection's own airline; Governors' Aviation flights take approximately 45 minutes. By road, Loldia House is approximately a two-hour drive from Nairobi.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms in the original main house, built in 1943, and in garden cottages across the estate: a master bedroom in the original house, six country-style en suite rooms in three guest cottages set in lush gardens, and two luxury suites near the lakeshore with views over the lake. The main house has a dining room, a sitting room and a verandah looking over Lake Naivasha and Mount Longonot. An infinity pool sits on an outcrop between two old fig trees, with a poolside spa using natural products by The Wild Herb Company, a gift shop, and Wifi in the main areas."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Guided boat safaris on Lake Naivasha for birdlife and hippos, day and night game drives on the conservancy, gentle walks on the fenced farming side of Loldia, and sundowners over the lake. Day excursions reach Lake Nakuru National Park, known for its rhino and flamingos, Eburu Forest, Hell's Gate National Park and other Rift Valley lakes such as Lake Elementeita."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "On the north western shores of Lake Naivasha in Kenya's Great Rift Valley, on a privately owned 6,500-acre conservancy about two hours from Nairobi. Because Loldia is private land rather than a national park, day and night game drives, walks and boat excursions run without park entry restrictions. Loldia House holds a Gold eco-rating from Eco-Tourism Kenya. The nightly rate includes local airstrip transfers, meals, soft drinks, beers, house wines and non-premium spirits, laundry and game vehicle transfers to activities on Loldia ranch."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A 1943 farmhouse that keeps its wide verandas and period detail, with a set lunch served under an ancient fig tree looking out over Lake Naivasha."
+   ],
+   "why": [
+    {
+     "title": "A Historic Farmhouse by the Lake",
+     "body": "Best for families with children of any age, honeymooners, photographers and bird lovers pairing the Masai Mara with a quieter Rift Valley stay."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year, with wildlife and birdlife on the lake year-round.",
+    "how_to_get_there": "About 45 minutes by Governors' Aviation from Nairobi Wilson, or a two-hour drive from Nairobi.",
+    "signature_experiences": "Boat safaris on Lake Naivasha, night game drives on the conservancy and a day at Lake Nakuru.",
+    "who_its_for": "Families with children of any age, honeymooners, photographers and bird lovers."
+   },
+   "faqs": [
+    {
+     "q": "Where is Loldia House?",
+     "a": "On the north western shores of Lake Naivasha in Kenya's Great Rift Valley, on a privately owned 6,500-acre conservancy about two hours from Nairobi."
+    },
+    {
+     "q": "How do you get to Loldia House?",
+     "a": "Fly from Nairobi Wilson Airport to Loldia Ranch on a daily Governors' Aviation flight (about 45 minutes), or drive from Nairobi in approximately two hours."
+    },
+    {
+     "q": "What rooms does Loldia House have?",
+     "a": "A master bedroom in the original 1943 house, six country-style en suite rooms in three garden cottages, and two luxury suites near the lakeshore."
+    },
+    {
+     "q": "Can children stay at Loldia House?",
+     "a": "Yes. Children of all ages are welcome."
+    },
+    {
+     "q": "When is the best time to visit Loldia House?",
+     "a": "Loldia House is open all year, and the lake has wildlife and birdlife year-round. April and May are green season; July to October pairs well with the Masai Mara migration."
+    },
+    {
+     "q": "What can you do at Loldia House?",
+     "a": "Boat safaris on Lake Naivasha, day and night game drives and walks on the private conservancy, sundowners, and excursions to Lake Nakuru National Park, Eburu Forest and Hell's Gate National Park."
+    },
+    {
+     "q": "Who is Loldia House best for?",
+     "a": "Wildlife enthusiasts, photographers, families and honeymooners looking for a quieter setting than the big savannah reserves, often combined with a Masai Mara camp."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "lolebezi-lodge",
@@ -20520,7 +21141,8 @@
    "arrivalHubIds": [
     "6ae6975b4336756d7942eed2",
     "6ae6975bc8662ac7c79aa762"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "londolozi-reserve",
@@ -20644,7 +21266,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-longitude-131",
@@ -20754,7 +21377,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973f42e4b37688bf54ca"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "loirien-mara",
@@ -20850,7 +21474,8 @@
     "6ae6974bf4294bbc9dc9b24b",
     "6ae6974b6b505a193bf29747",
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "machaba",
@@ -20949,7 +21574,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "madikwe",
@@ -21073,7 +21699,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae69752601cd109d453a25d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mara-plains-camp-by-great-plains",
@@ -21157,7 +21784,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b6b505a193bf29747"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mara-toto-tree-camp-by-great-plains",
@@ -21244,7 +21872,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "marataba",
@@ -21374,7 +22003,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "masoala-forest-lodge",
@@ -21512,7 +22142,8 @@
     "6ae6974caacf6fb717e46f6a",
     "6ae6974c7fcae6c7fd228292",
     "6ae6974ce9cbc8b0912b40c0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "matachica-resort-and-spa",
@@ -21627,7 +22258,8 @@
    ],
    "arrivalHubIds": [
     "6ae69741174fa62d3ff39969"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "matetsi-victoria-falls",
@@ -21745,7 +22377,8 @@
    "arrivalHubIds": [
     "6ae6975c04de2bbf1d05d305",
     "6ae6975b94e2db43e2c6078c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "meno-a-kwena-camp",
@@ -21834,7 +22467,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mezzanine-tulum",
@@ -21922,7 +22556,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mfuwe-lodge",
@@ -22042,7 +22677,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975bbc157255b8d62b02"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "miavana-by-time-tide",
@@ -22139,7 +22775,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974c879f7d65734d29dd"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beyond-mnemba-by-and-beyond",
@@ -22269,7 +22906,8 @@
    ],
    "arrivalHubIds": [
     "6ae69759fc194559e72761a4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "monachira-camp",
@@ -22360,7 +22998,8 @@
    ],
    "arrivalHubIds": [
     "6ae697423b5411a430e82331"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "monwana-thornybush",
@@ -22488,7 +23127,8 @@
     "6ae69751dd84deb01116e416",
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "morukuru-farm-house",
@@ -22621,7 +23261,8 @@
    "arrivalHubIds": [
     "6ae69752aa92aef07ea601e7",
     "6ae6975259e8c030833fc9ce"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mutiara-laut",
@@ -22712,7 +23353,8 @@
    ],
    "arrivalHubIds": [
     "6ae69748b6c67215db4a014d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "mwiba-lodge",
@@ -22826,7 +23468,8 @@
     "classifiedAt": "2026-11-01"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "nihi",
@@ -22923,7 +23566,8 @@
    "arrivalHubIds": [
     "6ae697491cde8e4e0c09adf2",
     "6ae697482d05428dbdb760a1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "asilia-naboisho-camp-by-asilia",
@@ -23016,7 +23660,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b7b0307086104311f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "namale-resort-and-spa",
@@ -23116,7 +23761,8 @@
    "arrivalHubIds": [
     "6ae6974707a89f44d5e7e25b",
     "6ae69747a5f8e7688c6e7aec"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "namiri-plains-camp-by-asilia",
@@ -23253,7 +23899,8 @@
    ],
    "arrivalHubIds": [
     "6ae697592a20c4a043a07150"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nautilus-maldives",
@@ -23345,7 +23992,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nay-palad-hideaway",
@@ -23439,7 +24087,8 @@
    ],
    "arrivalHubIds": [
     "6ae69750a4bc57422670efc6"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nayara-alto-atacama",
@@ -23564,7 +24213,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974150ecb0e9933ef843"
-   ]
+   ],
+   "placeSlug": "atacama"
   },
   {
    "slug": "nayara-bocas-del-toro",
@@ -23687,7 +24337,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974f62ceb7c1d07c5918"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nayara-gardens",
@@ -23822,7 +24473,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae6974749f3beea910643f9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nayara-hangaroa",
@@ -23974,7 +24626,8 @@
    ],
    "arrivalHubIds": [
     "6ae697440726f0daa56d3998"
-   ]
+   ],
+   "placeSlug": "rapa-nui"
   },
   {
    "slug": "arenal-springs-camp-by-nayara",
@@ -24089,7 +24742,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae6974749f3beea910643f9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nayara-tented-camp",
@@ -24220,7 +24874,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae6974749f3beea910643f9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ngala-safari-lodge-by-beyond",
@@ -24347,7 +25002,8 @@
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416",
     "6ae6975201f48e4a41de6174"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ngare-camp-by-serian",
@@ -24439,7 +25095,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nikoi-island",
@@ -24533,7 +25190,8 @@
    "arrivalHubIds": [
     "6ae69748044aae65ded92d07",
     "6ae69748067ad71efe03ab87"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nimali-mara",
@@ -24647,7 +25305,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "nimali-serengeti",
@@ -24758,7 +25417,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "niyama-private-islands-maldives",
@@ -24856,7 +25516,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "no-1-pery-square-limerick",
@@ -24969,7 +25630,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae666174efda236c530e85a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -25064,7 +25726,8 @@
    "arrivalHubIds": [
     "6ae69746276bf888d38fb053",
     "6ae69747144930d65f54ca37"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -25185,7 +25848,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "nomade-holbox",
@@ -25278,7 +25942,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nomade-temple-ibiza",
@@ -25377,7 +26042,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975292f7caa701fd7785"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nomade-temple-madrid",
@@ -25476,7 +26142,8 @@
    ],
    "arrivalHubIds": [
     "6ae69752509f1f4690b797f6"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nomade-tulum",
@@ -25573,7 +26240,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "north-island-okavango",
@@ -25649,7 +26317,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nyamatusi-camp",
@@ -25759,7 +26428,8 @@
     "classifiedAt": "2026-11-01"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "nyungwe-tea-forest-resort",
@@ -25875,7 +26545,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ol-jogi-conservancy",
@@ -25977,7 +26648,8 @@
    "arrivalHubIds": [
     "6ae6974acaf3f42cf0fd70c6",
     "6ae6974c7d4c694c47df3348"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ol-pejeta-bush-camp-asilia",
@@ -26070,7 +26742,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b0c7208df76184c03"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "olas-tulum",
@@ -26162,7 +26835,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "asilia-olivers-camp",
@@ -26287,7 +26961,8 @@
    ],
    "arrivalHubIds": [
     "6ae69754642635a90d18aa07"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "one-only-gorillas-nest",
@@ -26401,7 +27076,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "open-sky",
@@ -26492,93 +27168,8 @@
     "6ae6975aa3c0952beb359e7f",
     "6ae6975acde22a6069bbf9d7",
     "6ae6975af50f9541ebad3581"
-   ]
-  },
-  {
-   "slug": "our-habitas-namibia",
-   "name": "Our Habitas Namibia",
-   "ledgerId": "STY-2026-000204",
-   "country": "Namibia",
-   "countrySlug": "namibia",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Reconnect, restore, and roam wild Namibia",
-   "quote": "Sleep to the sounds of Africa, wake to sunrise yoga, and track wildlife on foot. Our Habitas Namibia is where wild adventure meets soulful retreat",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/168c65fbb_52f67bc64_693160da97ab069d4249b470_our-habitas-namibia-exterior.jpg",
-   "gallery": [],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "May to October for mild dry weather, best wildlife, and outdoor adventure. November to April for green landscapes, wellness retreats, and summer sunsets.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": -22.4219,
-    "lng": 17.3387
-   },
-   "airport": "Hosea Kutako International Airport (WDH), Eros Airport (ERS)",
-   "airportDirections": "Fly to Hosea Kutako International (WDH) or Eros (ERS), 45-minute road transfer to lodge (transfer included with stay).",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Fifteen luxury safari rooms and tented suites, all with en suite bathrooms, indoor/outdoor showers, private decks, and sweeping views. Main lodge with infinity pool, wellness spa, open-air restaurant, and firepit lounge."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Game drives and guided bush walks",
-     "Wellness classes (yoga, meditation, movement)",
-     "Community and cultural exchanges",
-     "Conservation activities",
-     "Stargazing",
-     "Sundowner cocktails and storytelling",
-     "Retreats and workshops"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Open design blending luxury with nature",
-     "Dedicated wellness and movement program",
-     "Sustainability-focused and community-powered",
-     "Pool with savanna views",
-     "All ages welcome"
-    ]
-   },
-   "onlyHere": [
-    "Our Habitas Namibia is perfect for solo travelers, couples, wellness seekers, families, and those wanting a soulful, social, and restorative wilderness escape with a big heart for culture and conservation."
    ],
-   "why": [
-    {
-     "title": "Wellness, Wildness, Wonder",
-     "body": "Best for adventure lovers, wellness explorers, solo travelers, and groups seeking connection, personal growth, and Namibia’s wild beauty. Plus a welcoming, international community."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-05",
-    "secondary": [],
-    "setting": "namib",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6974def1c4ba4eb1a23ac",
-    "6ae6974dc03e0814d1b3a787"
-   ]
+   "placeSlug": null
   },
   {
    "slug": "our-habitas-tulum",
@@ -26674,7 +27265,8 @@
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952",
     "6ae6974d2f7e87b5a5f59865"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pacuare-lodge",
@@ -26772,7 +27364,8 @@
    ],
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "paws-up-resort",
@@ -26864,7 +27457,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d56cb71307b306fee"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pearl-resort-le-bora-bora",
@@ -26954,7 +27548,8 @@
    "arrivalHubIds": [
     "6ae69753bb973b562472908a",
     "6ae697537191ebcc71e7962d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
@@ -27046,7 +27641,8 @@
    "arrivalHubIds": [
     "6ae69753c699261f518694a7",
     "6ae697537191ebcc71e7962d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pearl-resort-le-tahiti",
@@ -27137,7 +27733,8 @@
    ],
    "arrivalHubIds": [
     "6ae697537191ebcc71e7962d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -27227,7 +27824,8 @@
    "arrivalHubIds": [
     "6ae697538e25e9cda14f7ea6",
     "6ae697537191ebcc71e7962d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pearl-resort-vahine-private-island",
@@ -27325,7 +27923,8 @@
    "arrivalHubIds": [
     "6ae69753a637fcda51d3fd61",
     "6ae697537191ebcc71e7962d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pelo-camp",
@@ -27415,7 +28014,8 @@
    "arrivalHubIds": [
     "6ae6974122b9348d6fa6b239",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -27544,7 +28144,8 @@
     "6ae697524b481965253955f4",
     "6ae69752000af1fe55f77ec1",
     "6ae69751fd469736b2d7029e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "pods-camp-bay",
@@ -27661,7 +28262,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "post-ranch-inn",
@@ -27756,7 +28358,8 @@
     "6ae69743c2cb658c212ee358",
     "6ae6974348e87112caca2fb6",
     "6ae69743d4903237c545b6f5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "potato-bush-camp",
@@ -27883,7 +28486,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "pu-u-hoko-ranch",
@@ -27981,7 +28585,8 @@
    "arrivalHubIds": [
     "6ae697481b28a7442330f7c5",
     "6ae697487899eed56439b662"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "radhoo-tulum",
@@ -28069,7 +28674,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "rayvadee-resort",
@@ -28170,7 +28776,8 @@
    ],
    "arrivalHubIds": [
     "6ae69759963a83ad3edf296f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "royal-davui-island-resort",
@@ -28264,7 +28871,8 @@
    "arrivalHubIds": [
     "6ae69747a5f8e7688c6e7aec",
     "6ae697470b256ecc9a54abdf"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "royal-malewane",
@@ -28379,7 +28987,8 @@
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "royal-zambezi-lodge",
@@ -28513,7 +29122,8 @@
    "arrivalHubIds": [
     "6ae6975b490b37ebbeebbe39",
     "6ae6975c7f050a78267c41f0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "rubondo-island-camp-asilia",
@@ -28647,7 +29257,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975973c2698559d5d403"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sable-alley-khwai",
@@ -28733,7 +29344,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "salas-camp",
@@ -28820,7 +29432,8 @@
    "arrivalHubIds": [
     "6ae6974a642635a90d18a9fe",
     "6ae6974b6b505a193bf29747"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "samara-karoo-reserve",
@@ -28945,7 +29558,8 @@
    "arrivalHubIds": [
     "6ae69752654f571ad3cde2df",
     "6ae697510dd2509df5d6bce3"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sans-camp",
@@ -29025,7 +29639,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "saruni-eagle-view",
@@ -29121,7 +29736,8 @@
    "arrivalHubIds": [
     "6ae6974bcd30d607490112eb",
     "6ae6974b7b0307086104311f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "saruni-leopard-hill",
@@ -29213,7 +29829,8 @@
    "arrivalHubIds": [
     "6ae6974bcd30d607490112eb",
     "6ae6974b7b0307086104311f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "saruni-samburu-lodge",
@@ -29303,7 +29920,8 @@
     "6ae6974bc70cc7774f920d95",
     "6ae6974cd7a4fe7128c423c7",
     "6ae6974c6a954f5ff18895d5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "saruni-wild-lodge",
@@ -29397,7 +30015,8 @@
    "arrivalHubIds": [
     "6ae69749be68678c2c263961",
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sasaab",
@@ -29498,7 +30117,8 @@
     "6ae6974bb51a396b85970bde",
     "6ae6974ca851e65466bd0168",
     "6ae6974cd7a4fe7128c423c7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "seseka-thornybush",
@@ -29561,7 +30181,8 @@
    ],
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sashwa",
@@ -29621,7 +30242,8 @@
    ],
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sausage-tree-camp",
@@ -29747,7 +30369,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "sayari-camp-asilia",
@@ -29872,7 +30495,8 @@
    ],
    "arrivalHubIds": [
     "6ae697548aca34d73203560f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "segera-retreat",
@@ -29971,7 +30595,8 @@
     "6ae6974bb51a396b85970bde",
     "6ae6974b0c7208df76184c03",
     "6ae6974c52c8a64add4c1c9e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "great-plains-selinda-main-camp",
@@ -30047,7 +30672,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974264dc8be5d10b0e7a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "senda-monteverde-lodge",
@@ -30147,7 +30773,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae6974749f3beea910643f9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "serengeti-lamai-camp-by-serian",
@@ -30280,7 +30907,8 @@
    ],
    "arrivalHubIds": [
     "6ae69754e01d42ae7900ab54"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "shawa-luangwa-camp",
@@ -30409,7 +31037,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "shinta-mani-wild",
@@ -30503,7 +31132,8 @@
    "arrivalHubIds": [
     "6ae697437b03070861043106",
     "6ae69743ae2e8cbad44c0055"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "shipwreck-lodge-namibia",
@@ -30618,7 +31248,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974e95f3dd1b670575e2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sierra-grande-ted-turner-reserve",
@@ -30703,7 +31334,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "beckon-silky-oaks-lodge",
@@ -30812,7 +31444,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973f5c4bb91cb3651706"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "silolona-sojourns",
@@ -30903,7 +31536,8 @@
    "arrivalHubIds": [
     "6ae69748b6c67215db4a014d",
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sindabezi-island-camp",
@@ -31033,7 +31667,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "singita-boulders",
@@ -31169,7 +31804,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-castleton",
@@ -31296,7 +31932,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-ebony",
@@ -31417,7 +32054,8 @@
    "arrivalHubIds": [
     "6ae6975142da92bdd9e00a2e",
     "6ae69752aa92aef07ea601e7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-ebony-villa",
@@ -31541,7 +32179,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-elela",
@@ -31624,7 +32263,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-explore",
@@ -31733,7 +32373,8 @@
     "classifiedAt": "2026-11-01"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "singita-faru-faru-lodge",
@@ -31877,7 +32518,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-katanza-house",
@@ -32005,7 +32647,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-kilima",
@@ -32143,7 +32786,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-kwitonda",
@@ -32267,7 +32911,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-lebombo",
@@ -32397,7 +33042,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-lebombo-villa",
@@ -32521,7 +33167,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-malilangwe-house",
@@ -32654,7 +33301,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975c8e6a1591f6956fb3"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-mara-river",
@@ -32792,7 +33440,8 @@
    ],
    "arrivalHubIds": [
     "6ae697548aca34d73203560f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-milele",
@@ -32920,7 +33569,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-pamushana",
@@ -33056,7 +33706,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975c8e6a1591f6956fb3"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-sabora",
@@ -33191,7 +33842,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-sasakwa",
@@ -33334,7 +33986,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-serengeti-house",
@@ -33469,7 +34122,8 @@
    "arrivalHubIds": [
     "6ae69759b3822e21039671a0",
     "6ae697539f848eef2166ef8c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "singita-sweni",
@@ -33598,7 +34252,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sirai-house",
@@ -33656,7 +34311,8 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "sirikoi-lodge",
@@ -33752,7 +34408,8 @@
    "arrivalHubIds": [
     "6ae6974aaf9dc3d974bf5bf5",
     "6ae6974bb51a396b85970bde"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sirius-yacht-galapagos",
@@ -33836,7 +34493,8 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "siwa-tulum",
@@ -33924,7 +34582,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-con-dao",
@@ -34023,7 +34682,8 @@
    "arrivalHubIds": [
     "6ae6975b24b2777ddc804d13",
     "6ae6975b2cd3e7e2ab4884db"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-crans-montana",
@@ -34117,7 +34777,8 @@
     "6ae6975378c7d71341c57a2a",
     "6ae69753cfda05f41e15a176",
     "6ae6975351ff2cfc7b5a3a79"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-douro-valley",
@@ -34210,7 +34871,8 @@
    "arrivalHubIds": [
     "6ae69750e9b81c7de1fe3f39",
     "6ae6975059e8c030833fc9ca"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-fiji",
@@ -34306,7 +34968,8 @@
    ],
    "arrivalHubIds": [
     "6ae69747a5f8e7688c6e7aec"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-ibiza",
@@ -34434,7 +35097,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975292f7caa701fd7785"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-kanuhura",
@@ -34528,7 +35192,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-kyoto",
@@ -34626,7 +35291,8 @@
     "6ae69749bf5a13e528dc2ecb",
     "6ae6974984ef6b6096029f88",
     "6ae697497ca51cd40af01fc4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-laamu",
@@ -34718,7 +35384,8 @@
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2",
     "6ae6974c28c1804b0b45bac4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-ninh-van-bay",
@@ -34816,7 +35483,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975a92f7caa701fd7792"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-rome",
@@ -34909,7 +35577,8 @@
    "arrivalHubIds": [
     "6ae6974909af689b56e2820d",
     "6ae697492711b80acdd02b00"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-samui",
@@ -35007,7 +35676,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975a7f9f2127514d41e1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-uluwatu",
@@ -35105,7 +35775,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-yao-noi",
@@ -35204,77 +35875,129 @@
    "arrivalHubIds": [
     "6ae6975a0354a9239ccf6f99",
     "6ae69759963a83ad3edf296f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-zil-pasyon",
-   "name": "Six Senses \n Zil Pasyon",
+   "name": "Six Senses Zil Pasyon",
    "ledgerId": "STY-2026-000276",
    "country": "Seychelles",
    "countrySlug": "seychelles",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A private island sanctuary where granite, jungle, and ocean exist in perfect harmony.",
+   "tagline": "A private-island resort on Félicité, where granite boulders, jungle and coral-fringed beaches meet.",
    "quote": "The greatest luxury is finding a place where nature still leads the way.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/10154a817_8679b2afa_6a5113b6164fa8fd01b5bec6_Exterior_view.webp",
    "gallery": [],
-   "bestMonths": "April - June & September - November",
-   "bestMonthsNote": "These months typically offer calm seas, excellent snorkeling and diving conditions, warm temperatures, and ideal opportunities for outdoor exploration. They are considered some of the most enjoyable periods to experience Seychelles' marine and island environments.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Diving March to May and September to November; hiking May to September; turtle nesting mid-October to mid-January; hatchlings mid-December to mid-March.",
+   "bestFor": [
+    "family",
+    "couples",
+    "wellness",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -4.3218,
     "lng": 55.8728
    },
-   "airport": "Seychelles International Airport (SEZ) Praslin Airport (PRI)",
-   "airportDirections": "Seychelles International Airport (SEZ)\nInternational gateway to Seychelles\nFollowed by domestic transfer arrangements\nPraslin Airport (PRI)\nApproximately 20 minutes by boat transfer from nearby arrival point\nArrival Journey\nInternational arrival via SEZ\nDomestic transfer to Praslin region\nResort-arranged speedboat transfer to Félicité Island\nRecommended Arrival Airport: Seychelles International Airport (SEZ)",
+   "airport": "Seychelles International Airport (SEZ)",
+   "airportDirections": "20-minute Zil Air helicopter from SEZ to the resort's jetty helipad (daylight only, book ahead); or speedboat from Praslin or La Digue; seasonal private boat from Mahé.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Pool Villa",
-     "Ocean View Pool Villa",
+     "Hideaway Pool Villa",
      "Panorama Pool Villa",
+     "Oceanfront Pool Villa",
+     "Pasyon Pool Villa",
      "Signature Pool Villa",
-     "Two Bedroom Pool Villa",
-     "Four Bedroom Residence"
+     "Two-Bedroom Pool Villa",
+     "Signature Two Bedroom Pool Villa",
+     "Seascape, Three-Bedroom Residence",
+     "Ocean Sounds, Four-Bedroom Residence",
+     "The Sanctuary, Four-Bedroom Residence"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Island Exploration",
-     "Marine Adventures",
-     "Wellness Journeys",
-     "Conservation Experiences",
-     "Creole Culinary Experiences",
-     "Private Island Discovery"
+     "Turtle hatching with the resort's turtle team",
+     "Top Hill hike through the jungle of Félicité, past the Coco de Mer",
+     "Private island hopping aboard Summer Escape or Summer Cruz",
+     "Leave Only Footprints trip to marine protected Coco Island",
+     "Watersports and sunset cruises",
+     "Cinema Under The Stars",
+     "Learn to speak Creole"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private island location",
-     "Private pool villas",
-     "Granite boulder landscapes",
-     "Six Senses Spa",
-     "Indian Ocean views",
-     "Marine conservation initiatives",
-     "White-sand beaches",
-     "Personalized wellness programs",
-     "Nature trails",
-     "Earth Lab sustainability initiatives"
+     "Private infinity pool in every villa",
+     "Set within a protected national park on Félicité Island",
+     "Granite boulders and coral-fringed beaches",
+     "Spa with five spa villas and Terres d'Afrique treatments",
+     "Organic garden supplying the kitchen",
+     "Grow With Six Senses at Trouloulou for younger guests",
+     "Earth Lab and island ecology restoration",
+     "Resort jetty helipad"
     ]
    },
    "onlyHere": [
-    "Set across the spectacular landscapes of Félicité Island, Six Senses Zil Pasyon offers one of the most remarkable luxury island experiences in the Indian Ocean. Surrounded by dramatic granite formations, lush tropical vegetation, and pristine marine ecosystems, guests enjoy complete immersion in one of the world's most extraordinary natural environments."
+    "Six Senses Zil Pasyon occupies one third of Félicité Island, on its north side, facing La Digue, Praslin, Curieuse, Petit Soeur, Grande Soeur, Coco and Marianne islands. Coral-fringed beaches and granite boulders frame the villas, and Six Senses notes that hawksbill turtles come ashore on Félicité to lay their eggs in daylight."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": null,
+     "body": "A private-island resort for couples, families and nature lovers"
+    },
+    {
+     "title": null,
+     "body": "Choose Six Senses Zil Pasyon for a secluded pool villa on Félicité Island, a 20-minute helicopter flight from Mahé, with turtle nesting on Grand Anse Beach, jungle hikes and island hopping. Families have Grow With Six Senses at Trouloulou, and the three- and four-bedroom Residences come with a dedicated chef and service team."
+    }
+   ],
+   "facts": {
+    "best_months": "Any time of year, with diving best March to May and September to November and turtle nesting from mid-October to mid-January.",
+    "how_to_get_there": "A 20-minute Zil Air helicopter flight from Seychelles International Airport (SEZ) on Mahé to the resort's jetty helipad, or by boat from Praslin, La Digue or Mahé.",
+    "signature_experiences": "Turtle hatching with the turtle team, the Top Hill jungle hike, private island hopping and the spa's five spa villas.",
+    "who_its_for": "Couples, families and wellness-minded travellers looking for a private pool villa on a protected island."
+   },
+   "faqs": [
+    {
+     "q": "Where is Six Senses Zil Pasyon?",
+     "a": "On Félicité Island in the Seychelles. The resort occupies one third of the island, on its north side within a protected national park, facing La Digue, Praslin, Curieuse, Petit Soeur, Grande Soeur, Coco and Marianne islands."
+    },
+    {
+     "q": "How do you get to Six Senses Zil Pasyon?",
+     "a": "The quickest way is the Zil Air helicopter: a 20-minute flight from Seychelles International Airport (SEZ) on Mahé to the resort's own jetty helipad, flying between sunrise and sunset only and reserved in advance. Alternatively, take a speedboat or private yacht from Praslin or La Digue, or a seasonal private boat or yacht crossing from Mahé."
+    },
+    {
+     "q": "When is the best time to visit Six Senses Zil Pasyon?",
+     "a": "Six Senses says any time is a good time, as Félicité lies outside the cyclone belt and rain is usually limited to late afternoons from December to February. Diving is best from March to May and September to November, hiking from May to September, turtle nesting runs from mid-October to mid-January and hatchlings appear from mid-December to mid-March."
+    },
+    {
+     "q": "How many villas does Six Senses Zil Pasyon have?",
+     "a": "The resort has 28 one-bedroom pool villas and two two-bedroom pool villas, each with a private infinity pool, plus three- and four-bedroom Residences with a dedicated chef and service team."
+    },
+    {
+     "q": "Is Six Senses Zil Pasyon good for children?",
+     "a": "Yes. Grow With Six Senses at Trouloulou is a sanctuary for younger guests. One-bedroom villas take two adults plus one child under 12, and two-bedroom villas take four adults plus two children under 12."
+    },
+    {
+     "q": "What are the signature experiences at Six Senses Zil Pasyon?",
+     "a": "Turtle hatching with the resort's turtle team, the Top Hill hike through the jungle past the Coco de Mer, private island hopping, a trip to marine protected Coco Island and Cinema Under The Stars. The spa has five spa villas, and PADI certified dive excursions run with dive centres from Praslin and La Digue."
+    },
+    {
+     "q": "Who is Six Senses Zil Pasyon best for?",
+     "a": "Couples, families and wellness-minded travellers who want a secluded pool villa on an island with turtles, jungle trails and island hopping. Larger groups can take a three- or four-bedroom Residence with its own chef."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -35296,7 +36019,8 @@
    "arrivalHubIds": [
     "6ae69750d7c7888a53a4972d",
     "6ae6975022b9348d6fa6b246"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "skybeds-khwai",
@@ -35375,7 +36099,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "sleeping-giant-rainforest-lodge",
@@ -35490,7 +36215,8 @@
    ],
    "arrivalHubIds": [
     "6ae697409300c15bed28823f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "somalisa-acacia",
@@ -35599,7 +36325,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975c714029341de6c7f0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "somalisa",
@@ -35706,7 +36433,8 @@
     "classifiedAt": null
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "soneva-fushi-maldives",
@@ -35798,7 +36526,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "soneva-jani-maldives",
@@ -35882,7 +36611,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "soneva-secret-maldives",
@@ -35970,7 +36700,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "soori-bali",
@@ -36069,7 +36800,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-southern-ocean-lodge",
@@ -36172,7 +36904,8 @@
    "arrivalHubIds": [
     "6ae6973f3d8507d77979662a",
     "6ae6973f891b1fc1ca20a54e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "st-george-s-caye-resort",
@@ -36286,7 +37019,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974040204622a27aac1e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sterrekopje",
@@ -36376,7 +37110,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "sushi-chuma",
@@ -36492,7 +37227,8 @@
     "classifiedAt": "2026-11-01"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "suyian-lodge-by-and-beyond",
@@ -36583,7 +37319,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974b0c7208df76184c03"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "swale-camp",
@@ -36701,7 +37438,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae69754642635a90d18aa07"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tabacon-thermal-resort-spa",
@@ -36802,7 +37540,8 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf",
     "6ae6974749f3beea910643f9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tahi",
@@ -36891,7 +37630,8 @@
    "arrivalHubIds": [
     "6ae6974fc07d0707a6767647",
     "6ae6974e462820454c7ce501"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tanah-gajah",
@@ -36995,7 +37735,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tanda-tula",
@@ -37121,7 +37862,8 @@
    ],
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tengile-mala-mala-camp",
@@ -37241,7 +37983,8 @@
     "6ae6975201f48e4a41de6174",
     "6ae69752aa92aef07ea601e7",
     "6ae697525877c4a2f38254a8"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tengile-mala-mala-kirkmans-kamp",
@@ -37369,7 +38112,8 @@
     "6ae6975201f48e4a41de6174",
     "6ae69752aa92aef07ea601e7",
     "6ae697525877c4a2f38254a8"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tengile-mala-mala-rattrays-lodge",
@@ -37490,7 +38234,8 @@
     "6ae6975201f48e4a41de6174",
     "6ae69752aa92aef07ea601e7",
     "6ae69752f0505d1c6d93cfb4"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tengile-mala-mala-sable-camp",
@@ -37607,7 +38352,8 @@
     "6ae6975201f48e4a41de6174",
     "6ae69752aa92aef07ea601e7",
     "6ae697525877c4a2f38254a8"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tengile-river-lodge-by-mala-mala",
@@ -37719,7 +38465,8 @@
    "arrivalHubIds": [
     "6ae6975201f48e4a41de6174",
     "6ae6975142da92bdd9e00a2e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "thatch-caye-resort",
@@ -37838,7 +38585,8 @@
    "arrivalHubIds": [
     "6ae69740a715b8b3744d0552",
     "6ae697408859d0cd92acf229"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-art-villa",
@@ -37943,7 +38691,8 @@
    ],
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-atelier-villa",
@@ -38003,7 +38752,8 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "the-beach-tulum",
@@ -38093,7 +38843,8 @@
    "arrivalHubIds": [
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-brando-tetiaroa",
@@ -38184,7 +38935,8 @@
    "arrivalHubIds": [
     "6ae697537191ebcc71e7962d",
     "6ae69753394cca909a47cc77"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-hide-safari-camp",
@@ -38317,7 +39069,8 @@
    "arrivalHubIds": [
     "6ae6975c04de2bbf1d05d305",
     "6ae6975cbed9318bfa1b3674"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-highlands-by-asilia-highlands",
@@ -38450,7 +39203,8 @@
    ],
    "arrivalHubIds": [
     "6ae69754ca4211dce76cf97a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-lodge-at-chaa-creek",
@@ -38569,7 +39323,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974045281cd346259971"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-the-louise",
@@ -38665,7 +39420,8 @@
    ],
    "arrivalHubIds": [
     "6ae6973f891b1fc1ca20a54e"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "nami-project",
@@ -38757,7 +39513,8 @@
     "6ae697442cd3e7e2ab4884c7",
     "6ae697445c7b134365e994e7",
     "6ae69744c23ffff6bdd6ef40"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-retreat-at-blue-lagoon",
@@ -38853,7 +39610,8 @@
    ],
    "arrivalHubIds": [
     "6ae697486953910e892991b9"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "the-silo-hotel",
@@ -38954,7 +39712,8 @@
    ],
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "thornybush-reserve",
@@ -39017,7 +39776,8 @@
    ],
    "arrivalHubIds": [
     "6ae69751dd84deb01116e416"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "beckon-tierra-atacama",
@@ -39118,7 +39878,8 @@
    "arrivalHubIds": [
     "6ae6974150ecb0e9933ef843",
     "6ae69744b7c739ce7826be80"
-   ]
+   ],
+   "placeSlug": "atacama"
   },
   {
    "slug": "tierra-patagonia",
@@ -39209,7 +39970,8 @@
    ],
    "arrivalHubIds": [
     "6ae697449583543efcf27c0b"
-   ]
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "time-tide-chinzombo-2",
@@ -39337,7 +40099,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975bbc157255b8d62b02"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "time-tide-chongwe-2",
@@ -39462,7 +40225,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975c7f050a78267c41f0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "time-tide-mchenja",
@@ -39596,7 +40360,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975bbc157255b8d62b02"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tokoriki-island-resort",
@@ -39687,7 +40452,8 @@
    ],
    "arrivalHubIds": [
     "6ae69747a5f8e7688c6e7aec"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tongabezi",
@@ -39816,7 +40582,8 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "tswalu-reserve",
@@ -39956,7 +40723,8 @@
     "6ae69750d5b66a0848ea0238",
     "6ae697509164f84f207f2520",
     "6ae69752be68678c2c26397c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tubu-tree-camp",
@@ -40042,7 +40810,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae6974122b9348d6fa6b239"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "tuludi-khwai",
@@ -40130,7 +40899,8 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0",
     "6ae69741b2b7600515a60436"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "turtle-inn",
@@ -40248,7 +41018,8 @@
     "6ae6974092ff1d7f5f415e24",
     "6ae697409300c15bed28823f",
     "6ae6974015191bd7aba6d4e6"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ubuntu-migration-camp-asilia",
@@ -40385,7 +41156,8 @@
     "6ae697597f0b8716e065ba2a",
     "6ae697548aca34d73203560f",
     "6ae697592a20c4a043a07150"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ulum-moab",
@@ -40485,7 +41257,8 @@
     "6ae6975a7d6989b029f54ccf",
     "6ae6975a7899eed56439b687",
     "6ae6975af50f9541ebad3581"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "umaya-resort-and-marina",
@@ -40601,7 +41374,8 @@
    ],
    "arrivalHubIds": [
     "6ae69740d6ca270c0722aeb2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-brtce-canyon",
@@ -40696,7 +41470,8 @@
     "6ae6975adf9e8e2d4fa8712d",
     "6ae6975acde22a6069bbf9d7",
     "6ae6975af50f9541ebad3581"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-glacier",
@@ -40785,7 +41560,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4670df93f45f61ca"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-grand-canyon",
@@ -40882,7 +41658,8 @@
     "6ae6973f1d164e6a7f476ff6",
     "6ae6973ffe6d4667aa9201a9",
     "6ae6975acde22a6069bbf9d7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-lake-powell-grand-staircase",
@@ -40976,7 +41753,8 @@
     "6ae6975af0505d1c6d93cfba",
     "6ae6975aa3c0952beb359e7f",
     "6ae6975acde22a6069bbf9d7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-moab",
@@ -41071,7 +41849,8 @@
     "6ae6975a7d6989b029f54ccf",
     "6ae6975a7899eed56439b687",
     "6ae6975af50f9541ebad3581"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-north-yellowstone",
@@ -41163,7 +41942,8 @@
    "arrivalHubIds": [
     "6ae6975b574bd2605d6d09c7",
     "6ae6975bf229a2ebf3c40c44"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-west-yellowstone",
@@ -41255,7 +42035,8 @@
    "arrivalHubIds": [
     "6ae6975bf229a2ebf3c40c44",
     "6ae6975b574bd2605d6d09c7"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-yosemite",
@@ -41348,7 +42129,8 @@
     "6ae69743cc2935a7c554a8fc",
     "6ae69743ea7fab50e4a82a9f",
     "6ae69743d4903237c545b6f5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "under-canvas-zion",
@@ -41442,7 +42224,8 @@
     "6ae6975aa3c0952beb359e7f",
     "6ae6975acde22a6069bbf9d7",
     "6ae6975adf9e8e2d4fa8712d"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "ungasan-clifftops",
@@ -41539,7 +42322,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "uxua-casa-hotel-spa",
@@ -41634,7 +42418,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974311b497da9f94d51b"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "velaa-private-island",
@@ -41728,7 +42513,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "vermejo-ted-turner-reserve",
@@ -41829,7 +42615,8 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "viceroy-bali",
@@ -41934,7 +42721,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "lales-camp-expeditions",
@@ -42016,7 +42804,8 @@
     "6ae6974caacf6fb717e46f6a",
     "6ae6974c7fcae6c7fd228292",
     "6ae6974ce9cbc8b0912b40c0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-bisate-lodge",
@@ -42146,7 +42935,8 @@
    "volumes": null,
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-bisate-reserve",
@@ -42272,7 +43062,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-busanga",
@@ -42395,7 +43186,8 @@
     "6ae6975b8ba23cffce2e9d8b",
     "6ae6975b490b37ebbeebbe39",
     "6ae6975bae2e8cbad44c0065"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-desert-rhino-camp",
@@ -42522,7 +43314,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d7ccccd78c04e278a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-damaraland",
@@ -42647,7 +43440,8 @@
    "arrivalHubIds": [
     "6ae6974dcfeb2a6990af5f0e",
     "6ae6974e57695c9106e6d7c1"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-dumatau",
@@ -42754,7 +43548,8 @@
    "arrivalHubIds": [
     "6ae69741b2b7600515a60436",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-hoanib-skeleton-camp",
@@ -42874,7 +43669,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974d291db7eb71b8221b"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-kulala-desert-camp",
@@ -42996,7 +43792,8 @@
    "arrivalHubIds": [
     "6ae6974e7b03070861043137",
     "6ae6974eae3a4fbd224713db"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "linyanti-wilderness-camp",
@@ -43078,7 +43875,8 @@
     "6ae69742372f7bdcc1e93c68",
     "6ae69741b2b7600515a60436",
     "6ae69742eea3915f1dcf9e64"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-little-duma-tau",
@@ -43170,7 +43968,8 @@
    "arrivalHubIds": [
     "6ae69741b2b7600515a60436",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-little-kulala",
@@ -43293,7 +44092,8 @@
    "arrivalHubIds": [
     "6ae6974e7b03070861043137",
     "6ae6974eae3a4fbd224713db"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-little-mombo",
@@ -43381,7 +44181,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-magashi-peninsula",
@@ -43509,7 +44310,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-mara",
@@ -43600,7 +44402,8 @@
     "6ae69749be68678c2c263961",
     "6ae6974c7d4c694c47df3348",
     "6ae6974ba3052349b192dd30"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-mokete",
@@ -43698,7 +44501,8 @@
    "arrivalHubIds": [
     "6ae697423e5f43991232f0eb",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-mombo-luxury-camp",
@@ -43803,7 +44607,8 @@
    "arrivalHubIds": [
     "6ae697428b5e5c4686ea44f4",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-qorokwe",
@@ -43891,7 +44696,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-ruckomechi",
@@ -44017,7 +44823,8 @@
     "6ae6975c96a1343905331f9d",
     "6ae6975cc03e0814d1b3a790",
     "6ae6975cb3822e21039671a5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-sabyinyo",
@@ -44143,7 +44950,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975095f3dd1b670575e5"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-savuti",
@@ -44239,7 +45047,8 @@
    "arrivalHubIds": [
     "6ae697417f7270c3f608af43",
     "6ae69742193d03f274d12fff"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-serra-cafema",
@@ -44359,7 +45168,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974ee94fd98204439523"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-shumba",
@@ -44489,7 +45299,8 @@
     "6ae6975b8ba23cffce2e9d8b",
     "6ae6975b490b37ebbeebbe39",
     "6ae6975bae2e8cbad44c0065"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-toka-leya",
@@ -44619,7 +45430,8 @@
    ],
    "arrivalHubIds": [
     "6ae6975b94e2db43e2c6078c"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-usawa",
@@ -44749,7 +45561,8 @@
    "arrivalHubIds": [
     "6ae697592a20c4a043a07150",
     "6ae697548aca34d73203560f"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wilderness-vumbura-plains",
@@ -44843,7 +45656,8 @@
    "arrivalHubIds": [
     "6ae6974314ad20a999cd1dda",
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wolwedans-dune-camp",
@@ -44973,7 +45787,8 @@
    "arrivalHubIds": [
     "6ae6974def1c4ba4eb1a23ac",
     "6ae6974e48e87112caca2fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "wren-urban-nest",
@@ -45084,7 +45899,8 @@
    ],
    "arrivalHubIds": [
     "6ae666174efda236c530e858"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "xanadu-island-resort",
@@ -45193,7 +46009,8 @@
    ],
    "arrivalHubIds": [
     "6ae69740f2219939a13cedae"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "xela-tulum",
@@ -45291,7 +46108,8 @@
    "arrivalHubIds": [
     "6ae6974d696b4469b6c2b952",
     "6ae6974d2f7e87b5a5f59865"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "xigera-safari-lodge",
@@ -45372,7 +46190,8 @@
    ],
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "zannier-sonop",
@@ -45493,7 +46312,8 @@
    "arrivalHubIds": [
     "6ae6974def1c4ba4eb1a23ac",
     "6ae6974e242a6f4e989f0184"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "great-plains-zarafa-camp",
@@ -45569,7 +46389,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974264dc8be5d10b0e7a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "great-plains-zarafa-dhow-suite",
@@ -45645,7 +46466,8 @@
    ],
    "arrivalHubIds": [
     "6ae6974264dc8be5d10b0e7a"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-krabey-island",
@@ -45744,7 +46566,8 @@
    "arrivalHubIds": [
     "6ae69743ae2e8cbad44c0055",
     "6ae697437b03070861043106"
-   ]
+   ],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-residences-courchevel",
@@ -45839,7 +46662,8 @@
     "6ae6974834f7ee7efaf00c12",
     "6ae69753cfda05f41e15a176",
     "6ae697487d45b1c1f2432c64"
-   ]
+   ],
+   "placeSlug": null
   }
  ]
 }

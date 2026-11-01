@@ -1438,5 +1438,45 @@
   "checked": "2026-11-01",
   "conditions": "Stay 12 nights or more across two Singita regions, with at least 3 nights at each property, and receive 2 nights free. Singita terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000103",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "blue-safari-seychelles",
+  "name": "Blue Safari Honeymoon Offer (Alphonse Island Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymooners: 30% off the spouse's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-10-31",
+   "text": "Travel within 12 months of your wedding; Blue Safari publishes no end date, rechecked by James Wild & Co 1 Nov 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "30% off the spouse's stay for travel within 12 months of marriage. Cannot be combined with other offers. Blue Safari terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000104",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "blue-safari-seychelles",
+  "name": "Blue Safari Milestone Offer (Alphonse Island Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off for milestone birthdays and anniversaries",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-10-31",
+   "text": "For birthdays or anniversaries ending in a zero; Blue Safari publishes no end date, rechecked by James Wild & Co 1 Nov 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off for guests celebrating a birthday or anniversary ending in a zero. Cannot be combined with other offers. Blue Safari terms apply.",
+  "volume": "stays"
  }
 ]

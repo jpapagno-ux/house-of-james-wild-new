@@ -998,16 +998,16 @@
      "Serves 5 stays in the Ledger here"
     ],
     [
-     "Puerto Natales Airport (PNT)",
+     "El Loa Airport (CJC)",
      "Serves 4 stays in the Ledger here"
     ],
     [
-     "Mataveri International Airport (IPC)",
-     "Serves 2 stays in the Ledger here"
+     "Puerto Natales Airport (PNT)",
+     "Serves 4 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "PUQ · PNT",
+   "flyInto": "PUQ · CJC",
    "bestShort": "Oct–Apr",
    "atlasName": "Chile"
   },
@@ -1915,15 +1915,11 @@
    "airports": [
     [
      "Windhoek Hosea Kutako International Airport (WDH)",
-     "Serves 4 stays in the Ledger here"
-    ],
-    [
-     "Eros Airport (ERS)",
-     "Serves 1 stay in the Ledger here"
+     "Serves 3 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "WDH · ERS",
+   "flyInto": "WDH",
    "bestShort": "May–Sep",
    "atlasName": "Namibia"
   },
@@ -2563,39 +2559,16 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Seychelles",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best"
-     ]
-    }
-   ],
+   "months": [],
    "airports": [
     [
      "Seychelles International Airport (SEZ)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Praslin Airport (PRI)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "SEZ · PRI",
-   "bestShort": "Nov–Apr",
+   "flyInto": "SEZ",
+   "bestShort": "Ask James",
    "atlasName": "Seychelles"
   },
   {

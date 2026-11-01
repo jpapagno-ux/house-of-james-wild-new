@@ -1478,5 +1478,485 @@
   "checked": "2026-11-01",
   "conditions": "10% off for guests celebrating a birthday or anniversary ending in a zero. Cannot be combined with other offers. Blue Safari terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000105",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Stay 4 Pay 3 (Governors' Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights in the Mara, pay for 3",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 nights at Governors' Camp or Governors' Il Moran Camp in the Masai Mara and pay for 3. Minimum of two people. Flights must be booked with Governors' Aviation (minimum 2 legs). The free night is calculated on the lowest priced property in the itinerary. Park fees and community fees are payable for all nights. For FIT travel and small groups only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000106",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Stay 4 Pay 3 (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights in the Mara, pay for 3",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 nights at Governors' Camp or Governors' Il Moran Camp in the Masai Mara and pay for 3. Minimum of two people. Flights must be booked with Governors' Aviation (minimum 2 legs). The free night is calculated on the lowest priced property in the itinerary. Park fees and community fees are payable for all nights. For FIT travel and small groups only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000107",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Stay 5 Pay 4 (Loldia House)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights across the Rift Valley and Mara, pay for 4",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Combine 2 nights at Loldia House with 3 nights at Governors' Camp or Governors' Il Moran Camp and pay for 4 nights. Minimum of two people. The free night is calculated on the lowest priced property in the itinerary. All flights must be booked with Governors' Aviation; a Nairobi to Loldia road transfer is an available option. Park fees, community fees and ranch fees are payable for all nights. For FIT travel and small groups only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000108",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Stay 5 Pay 4 (Governors' Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights across the Rift Valley and Mara, pay for 4",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Combine 2 nights at Loldia House with 3 nights at Governors' Camp or Governors' Il Moran Camp and pay for 4 nights. Minimum of two people. The free night is calculated on the lowest priced property in the itinerary. All flights must be booked with Governors' Aviation; a Nairobi to Loldia road transfer is an available option. Park fees, community fees and ranch fees are payable for all nights. For FIT travel and small groups only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000109",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Stay 5 Pay 4 (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights across the Rift Valley and Mara, pay for 4",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Combine 2 nights at Loldia House with 3 nights at Governors' Camp or Governors' Il Moran Camp and pay for 4 nights. Minimum of two people. The free night is calculated on the lowest priced property in the itinerary. All flights must be booked with Governors' Aviation; a Nairobi to Loldia road transfer is an available option. Park fees, community fees and ranch fees are payable for all nights. For FIT travel and small groups only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000110",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Stay 6 Pay 5 (Loldia House)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 6 nights across two camps, pay for 5",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 6 nights with the Governors' Camp Collection and pay for 5: either 2 nights at Loldia House and 4 nights at Governors' Camp or Governors' Il Moran Camp, or 3 nights at Loldia House and 3 nights at Governors' Camp or Governors' Il Moran Camp. Must combine at least two Governors' properties in Kenya with at least two nights in each. Minimum of two people. Flights must be booked with Governors' Aviation (minimum 2 legs). The free night is calculated on the lowest priced property in the itinerary. Park fees, community fees and conservancy fees are payable for all nights. For FIT travel only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000111",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Stay 6 Pay 5 (Governors' Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 6 nights across two camps, pay for 5",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 6 nights with the Governors' Camp Collection and pay for 5: either 2 nights at Loldia House and 4 nights at Governors' Camp or Governors' Il Moran Camp, or 3 nights at Loldia House and 3 nights at Governors' Camp or Governors' Il Moran Camp. Must combine at least two Governors' properties in Kenya with at least two nights in each. Minimum of two people. Flights must be booked with Governors' Aviation (minimum 2 legs). The free night is calculated on the lowest priced property in the itinerary. Park fees, community fees and conservancy fees are payable for all nights. For FIT travel only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000112",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Stay 6 Pay 5 (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 6 nights across two camps, pay for 5",
+  "travel": {
+   "from": "2026-10-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 October to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 6 nights with the Governors' Camp Collection and pay for 5: either 2 nights at Loldia House and 4 nights at Governors' Camp or Governors' Il Moran Camp, or 3 nights at Loldia House and 3 nights at Governors' Camp or Governors' Il Moran Camp. Must combine at least two Governors' properties in Kenya with at least two nights in each. Minimum of two people. Flights must be booked with Governors' Aviation (minimum 2 legs). The free night is calculated on the lowest priced property in the itinerary. Park fees, community fees and conservancy fees are payable for all nights. For FIT travel only. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000113",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Solo Traveller Offer 2026 (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 November to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged for mid and green seasons at any Governors' Camp Collection property in Kenya. Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000114",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Solo Traveller Offer 2026 (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 November to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged for mid and green seasons at any Governors' Camp Collection property in Kenya. Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000115",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Solo Traveller Offer 2026 (Loldia House)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Travel 1 November to 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged for mid and green seasons at any Governors' Camp Collection property in Kenya. Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable; two offers cannot be applied to the same booking. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings only, secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000116",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Stay Longer Pay Less (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "5% off accommodation for 6 nights or more",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 5% discount on accommodation when you stay 6 nights or more across any combination of Governors' Camp Collection, Wilderness Mara and Wayo Africa properties. Two guests or more. Minimum stay of 6 nights. Flights must be booked with Governors' Aviation (minimum 2 legs). Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000117",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Stay Longer Pay Less (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "5% off accommodation for 6 nights or more",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 5% discount on accommodation when you stay 6 nights or more across any combination of Governors' Camp Collection, Wilderness Mara and Wayo Africa properties. Two guests or more. Minimum stay of 6 nights. Flights must be booked with Governors' Aviation (minimum 2 legs). Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000118",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Stay Longer Pay Less (Loldia House)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "5% off accommodation for 6 nights or more",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 5% discount on accommodation when you stay 6 nights or more across any combination of Governors' Camp Collection, Wilderness Mara and Wayo Africa properties. Two guests or more. Minimum stay of 6 nights. Flights must be booked with Governors' Aviation (minimum 2 legs). Park fees, community fees and conservancy fees are payable for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000119",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Kids Stay Free (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Youngest child stays free in a family tent",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book a family tent at Governors' Camp and the youngest child's accommodation is free (one per family). Children 16 years and under. New bookings only. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000120",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Fly for Free (Loldia House)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Up to 3 free scheduled flights on a 6 night safari",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 6 night safari combining Loldia House with Governors' Il Moran Camp, Governors' Camp or Wilderness Mara and receive up to 3 free scheduled flights on Governors' Aviation (not private charters). The first 3 qualifying legs are free on these routes: Nairobi (Wilson) to Mara, Mara to Nairobi (Wilson), Nairobi (Wilson) to Loldia (one way only) and Loldia to Mara (one way only). New bookings only, based on a minimum of two adults on seat rates. The package is charged at normal rates. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges (except the free flights in this offer); transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000121",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Fly for Free (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Up to 3 free scheduled flights on a 6 night safari",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 6 night safari combining Loldia House with Governors' Il Moran Camp, Governors' Camp or Wilderness Mara and receive up to 3 free scheduled flights on Governors' Aviation (not private charters). The first 3 qualifying legs are free on these routes: Nairobi (Wilson) to Mara, Mara to Nairobi (Wilson), Nairobi (Wilson) to Loldia (one way only) and Loldia to Mara (one way only). New bookings only, based on a minimum of two adults on seat rates. The package is charged at normal rates. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges (except the free flights in this offer); transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000122",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Fly for Free (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Up to 3 free scheduled flights on a 6 night safari",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Enjoy a 6 night safari combining Loldia House with Governors' Il Moran Camp, Governors' Camp or Wilderness Mara and receive up to 3 free scheduled flights on Governors' Aviation (not private charters). The first 3 qualifying legs are free on these routes: Nairobi (Wilson) to Mara, Mara to Nairobi (Wilson), Nairobi (Wilson) to Loldia (one way only) and Loldia to Mara (one way only). New bookings only, based on a minimum of two adults on seat rates. The package is charged at normal rates. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges (except the free flights in this offer); transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000123",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Honeymoon Special (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "One spouse receives 50% off accommodation",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book your safari honeymoon at any Governors' Camp Collection property in Kenya and one spouse receives a 50% discount on their accommodation. Travel must be within 6 months after the wedding date, and proof of marriage is required. New bookings only. Park fees, community fees and conservancy fees are payable for both guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000124",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Honeymoon Special (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "One spouse receives 50% off accommodation",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book your safari honeymoon at any Governors' Camp Collection property in Kenya and one spouse receives a 50% discount on their accommodation. Travel must be within 6 months after the wedding date, and proof of marriage is required. New bookings only. Park fees, community fees and conservancy fees are payable for both guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000125",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Honeymoon Special (Loldia House)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "One spouse receives 50% off accommodation",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 31 May and 1 October to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book your safari honeymoon at any Governors' Camp Collection property in Kenya and one spouse receives a 50% discount on their accommodation. Travel must be within 6 months after the wedding date, and proof of marriage is required. New bookings only. Park fees, community fees and conservancy fees are payable for both guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000126",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-camp",
+  "name": "Solo Traveller Benefit (Governors' Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 30 June and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged during the mid and green seasons at any Governors' Camp Collection property in Kenya. Applies to the first two single travellers within a booking; a single supplement applies to any additional single travellers. New bookings only. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000127",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "governors-il-moran-camp",
+  "name": "Solo Traveller Benefit (Governors' Il Moran Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 30 June and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged during the mid and green seasons at any Governors' Camp Collection property in Kenya. Applies to the first two single travellers within a booking; a single supplement applies to any additional single travellers. New bookings only. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000128",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "loldia-house",
+  "name": "Solo Traveller Benefit (Loldia House)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "No single supplement in mid and green season",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-19",
+   "text": "Travel 6 January to 30 June and 1 November to 19 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "No single supplement is charged during the mid and green seasons at any Governors' Camp Collection property in Kenya. Applies to the first two single travellers within a booking; a single supplement applies to any additional single travellers. New bookings only. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
+  "volume": "stays"
  }
 ]

@@ -102,6 +102,7 @@ export const STAY_SLUGS: string[] = [
   "aguas-claras",
   "aliikai-voyage",
   "alila-ventana-big-sur",
+  "alma-vista",
   "alya-catamaran-galapagos",
   "amandari",
   "amazon-field-station-byinkaterra",
@@ -159,6 +160,7 @@ export const STAY_SLUGS: string[] = [
   "breac-house",
   "bumi-hills-safari-lodge",
   "camp-hwange-muddy-teak",
+  "canvas-and-orchids-retreat",
   "cap-karoso",
   "cape-cadogan-boutique-hotel",
   "capella-ubud",
@@ -234,6 +236,7 @@ export const STAY_SLUGS: string[] = [
   "holistika",
   "hotel-bardo",
   "hotel-panamera",
+  "hotel-plesnik",
   "house-in-the-wild",
   "house-in-the-wild-masai-mara",
   "iguazu",
@@ -386,6 +389,7 @@ export const STAY_SLUGS: string[] = [
   "saruni-samburu-lodge",
   "saruni-wild-lodge",
   "sasaab",
+  "sashwa",
   "sausage-tree-camp",
   "sayari-camp-asilia",
   "segera-retreat",
@@ -527,6 +531,7 @@ export const STAY_SLUGS: string[] = [
   "xela-tulum",
   "xigera-safari-lodge",
   "zannier-sonop",
+  "zlata-ladjica",
 ];
 // END GENERATED STAYS
 

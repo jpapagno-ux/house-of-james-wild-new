@@ -2572,6 +2572,29 @@
    "atlasName": "Seychelles"
   },
   {
+   "slug": "slovenia",
+   "name": "Slovenia",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000091",
+   "subtitle": "3 vetted stays",
+   "leading": "",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/pool-from-above",
+    "alt": "Slovenia, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "Ask James",
+   "atlasName": "Slovenia"
+  },
+  {
    "slug": "tahiti",
    "name": "Tahiti",
    "region": "oceania",

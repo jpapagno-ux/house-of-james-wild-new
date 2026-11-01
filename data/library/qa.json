@@ -73,6 +73,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae77589226395e87383fce4",
+   "slug": "alma-vista",
+   "name": "Alma Vista",
+   "country": "Slovenia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1a5c095074b2717b63b",
    "slug": "alya-catamaran-galapagos",
    "name": "Alya Galápagos Catamaran",
@@ -756,6 +764,14 @@
    "slug": "camp-hwange-muddy-teak",
    "name": "Camp Hwange & Muddy Teak",
    "country": "Zimbabwe",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae77589226395e87383fce5",
+   "slug": "canvas-and-orchids-retreat",
+   "name": "Canvas & Orchids Retreat",
+   "country": "Cambodia",
    "missing": [],
    "released": true
   },
@@ -1645,6 +1661,14 @@
    "slug": "hotel-panamera",
    "name": "Hotel Panamera",
    "country": "Mexico",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae77589226395e87383fce3",
+   "slug": "hotel-plesnik",
+   "name": "Hotel Plesnik",
+   "country": "Slovenia",
    "missing": [],
    "released": true
   },
@@ -3277,11 +3301,7 @@
    "slug": "sashwa",
    "name": "Sashwa River of Stars",
    "country": "South Africa",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4775,6 +4795,14 @@
    "slug": "zannier-sonop",
    "name": "Zannier Sonop",
    "country": "Namibia",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae77589226395e87383fce2",
+   "slug": "zlata-ladjica",
+   "name": "Zlata Ladjica",
+   "country": "Slovenia",
    "missing": [],
    "released": true
   }

@@ -1369,6 +1369,109 @@
    "placeSlug": null
   },
   {
+   "slug": "alma-vista",
+   "name": "Alma Vista",
+   "ledgerId": "STY-2026-000555",
+   "country": "Slovenia",
+   "countrySlug": "slovenia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A private two-bedroom villa in the Brda hills, with its own pool and the Edi Šimčič cellar downstairs.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/pool-from-above",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/villa-pool-landscape",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/table-under-tree",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/alma-vista/sauna"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wine",
+    "group_exclusive_use"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 45.976261,
+    "lng": 13.537181
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Brda is Slovenia's wine country, a fold of terraced hills against the Italian border, and Alma Vista sits in the village of Vipolže with the vineyards below and, on a clear day, the Adriatic beyond."
+    },
+    {
+     "title": "People",
+     "body": "The villa belongs to the Edi Šimčič wine estate, one of Brda's winemaking families; the cellar and the tasting are theirs."
+    },
+    {
+     "title": "Impact",
+     "body": "Not yet documented by the house. Nothing is claimed until the property states it."
+    },
+    {
+     "title": "James' note",
+     "body": "Not stayed yet. Two bedrooms, your own pool and a winemaker's cellar under the floor is about the right ratio of house to wine. It's the whole point: nobody else is there."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "In the village of Vipolže in the Brda wine hills of western Slovenia, on the Italian border; parking for three cars at the villa.",
+    "signature_experiences": "Your own pool on the terrace; a wellness room with an infrared sauna and massage pool; the Edi Šimčič cellar and a tasting at the estate; views from the balcony as far as the Adriatic.",
+    "who_its_for": "A couple or two couples who want a whole house, a private pool and a winemaking family's cellar."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "wine_hills",
+    "intentions": [
+     "food_and_wine",
+     "privacy",
+     "wellness",
+     "views"
+    ],
+    "suitability": [
+     "couples",
+     "small_groups",
+     "food_and_wine"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude (Stage 4 pilot intake), for James",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "blue-safari-seychelles",
    "name": "Alphonse Island Lodge",
    "ledgerId": "STY-2026-666970",
@@ -5565,6 +5668,110 @@
     "6ae6975c04de2bbf1d05d305",
     "6ae69751dad7a8fb436dcf39"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "canvas-and-orchids-retreat",
+   "name": "Canvas & Orchids Retreat",
+   "ledgerId": "STY-2026-000554",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Floating tents on the Tatai River at the foot of the Cardamom Mountains, run since 2009 by the couple who built them.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/cambodia/canvas-and-orchids-retreat/floating-tent-tatai-river",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/cambodia/canvas-and-orchids-retreat/tatai-river-mangroves",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/cambodia/canvas-and-orchids-retreat/restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/cambodia/canvas-and-orchids-retreat/island-family-tent",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/cambodia/canvas-and-orchids-retreat/island-double-tent"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "couples",
+    "adventure",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 11.5293,
+    "lng": 103.1462
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "The Tatai River runs out of the Cardamom Mountains through mangrove and rainforest in Cambodia's far south-west, and the camp floats on it: thirteen tents on the water and five family tents on land, reached only by boat."
+    },
+    {
+     "title": "People",
+     "body": "Valentin and Anna, husband and wife, opened Canvas & Orchids in 2009 and still run it. They describe it as the world's first floating tented camp, and they built it to work for the villages around it."
+    },
+    {
+     "title": "Impact",
+     "body": "The camp's team comes from the local villages, among them former poachers and hunters who now work as cooks, boat drivers and guides (as the camp reports on its own site)."
+    },
+    {
+     "title": "James' note",
+     "body": "I haven't slept on the Tatai yet. But a camp where the man steering your boat used to hunt in these hills is a better conservation argument than any brochure, and fireflies over a river is not something you forget."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "On the Tatai River in Koh Kong Province, about 278 km from Phnom Penh and 20 km from Koh Kong City. The last stretch is by the camp's own boat from its dock before Tatai Bridge; transfers run daily at no charge.",
+    "signature_experiences": "Sleeping in a floating tent on the river; fireflies and river sunsets; the mangroves, the waterfall and the Cardamom Mountains behind; days out with a local team, some of them former hunters, as guides and boat drivers.",
+    "who_its_for": "Couples and families who want rainforest, river and fireflies, and a stay that pays local people well."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "river_rainforest",
+    "intentions": [
+     "rainforest",
+     "river",
+     "community",
+     "remote",
+     "family_adventure"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "conservation_minded"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude (Stage 4 pilot intake), for James",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -13893,6 +14100,113 @@
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "hotel-plesnik",
+   "name": "Hotel Plesnik",
+   "ledgerId": "STY-2026-000553",
+   "country": "Slovenia",
+   "countrySlug": "slovenia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family-run alpine retreat at the head of the Logar Valley, under the Kamnik-Savinja Alps.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/hotel-plesnik/pool-view-alps",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/hotel-plesnik/logar-valley",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/hotel-plesnik/view-by-the-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/hotel-plesnik/room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/hotel-plesnik/logar-valley-winter"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 46.398533,
+    "lng": 14.630811
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "The Logar Valley is a glacial valley closed at its head by the Kamnik-Savinja Alps, and Plesnik stands in it, with the peaks behind the pool. TIME named it among the World's Greatest Places for 2026."
+    },
+    {
+     "title": "People",
+     "body": "A family-run four-star hotel. In the kitchen are chefs Tom Čopar and Janez Bratovž, cooking zero-waste, with recognition from the Michelin Guide, Gault&Millau and Falstaff."
+    },
+    {
+     "title": "Impact",
+     "body": "Green Globe certified, with a zero-waste kitchen (as the hotel reports)."
+    },
+    {
+     "title": "James' note",
+     "body": "I haven't walked the valley yet. Any hotel that hands you to a shepherd for the morning and an Ayurvedic therapist for the afternoon has thought hard about what a mountain is for."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "In the Logar Valley in the Solčava region of northern Slovenia. The hotel's own City & Alps package pairs it with Ljubljana over four nights.",
+    "signature_experiences": "Shepherds' Trails, a guided walk with local shepherds; Alpine Eco Wellness with Ayurveda and herbal rituals; a zero-waste kitchen led by chefs Tom Čopar and Janez Bratovž; the valley in every season.",
+    "who_its_for": "Walkers, couples and families who want the Alps quietly, with Ayurvedic wellness and a serious kitchen at the end of the day."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "alpine_valley",
+    "intentions": [
+     "mountains",
+     "hiking",
+     "ayurveda",
+     "slow_food",
+     "shepherd_heritage",
+     "silence"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "walkers",
+     "wellness_seekers"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude (Stage 4 pilot intake), for James",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -30469,19 +30783,32 @@
    "countrySlug": "south-africa",
    "regionSlug": "africa",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": null,
+   "category": "lodge",
+   "tagline": "Twelve suites on the banks of the Olifants River in the Greater Kruger, with plant-based food and holistic wellness.",
    "quote": null,
-   "hero": null,
-   "gallery": [],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "The Greater Kruger dry winter: thinner bush and animals at the Olifants River.",
-   "bestFor": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/sashwa-river-of-stars/lodge-olifants-river",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/sashwa-river-of-stars/suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/sashwa-river-of-stars/lodge-151",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/sashwa-river-of-stars/suite-7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/sashwa-river-of-stars/lodge-331"
+   ],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "The dry season in the Greater Kruger: thinner bush and animals drawn to the Olifants River. October to April is the green, wet season.",
+   "bestFor": [
+    "wellness",
+    "couples",
+    "solo",
+    "first_safari"
+   ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -24.077583,
+    "lng": 31.092528
+   },
    "airport": "Hoedspruit Eastgate Airport (HDS)",
-   "airportDirections": "Fly into Hoedspruit Eastgate from Johannesburg or Cape Town, then a pre-arranged road transfer of about 1 hour 15 minutes.",
+   "airportDirections": "Fly into Hoedspruit Eastgate (HDS) from Johannesburg or Cape Town, then a pre-arranged road transfer of about 1 hour 15 to 1 hour 20 minutes.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -30496,21 +30823,57 @@
     "items": []
    },
    "onlyHere": [],
-   "why": [],
-   "facts": {},
+   "why": [
+    {
+     "title": "Place",
+     "body": "The Olifants River cuts through the Greater Kruger, and Sashwa's twelve suites sit on its upper bank, looking down at the water where elephants and hippos come to drink."
+    },
+    {
+     "title": "People",
+     "body": "A safari lodge built around holistic wellness: yoga on the riverbank, meditation, and a kitchen that cooks only plants."
+    },
+    {
+     "title": "Impact",
+     "body": "The lodge describes a philanthropy-led model; nothing is claimed here until we have read the detail."
+    },
+    {
+     "title": "James' note",
+     "body": "I haven't been yet. A plant-based safari sounds like a contradiction until you remember the elephants have been doing it for millions of years. Give it five nights, not three."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September, the dry season; October to April is the green, wet season.",
+    "how_to_get_there": "Fly to Hoedspruit Eastgate (HDS), then about 1 hour 15 minutes by road to the lodge on the Olifants River. Minimum stay three nights; five or more is better.",
+    "signature_experiences": "Game drives and dawn bush walks; elephants, hippos and lions from the decks; yoga on the riverbank; three plant-based meals a day; the Milky Way at night.",
+    "who_its_for": "Couples, solo travellers and small groups who want a safari with yoga, meditation and a plant-based kitchen. Children over 16, or any age on an exclusive booking."
+   },
    "faqs": [],
-   "reviewed": false,
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-05"
+    ],
     "setting": "greater_kruger",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "plant_based",
+     "wellness",
+     "big_five",
+     "bush_walks",
+     "stargazing",
+     "river"
+    ],
+    "suitability": [
+     "couples",
+     "solo",
+     "wellness_seekers",
+     "small_groups"
+    ],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi; PATH-05 added in Stage 4, 1 Nov 2026)",
     "classifiedAt": "2026-10-31"
    },
    "volumes": [
@@ -46755,6 +47118,104 @@
    "arrivalHubIds": [
     "6ae6974264dc8be5d10b0e7a"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "zlata-ladjica",
+   "name": "Zlata Ladjica",
+   "ledgerId": "STY-2026-000556",
+   "country": "Slovenia",
+   "countrySlug": "slovenia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifteen rooms in a house almost five centuries old, on the Ljubljanica in the heart of old Ljubljana.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/zlata-ladjica/hotel-ljubljanica",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/slovenia/zlata-ladjica/interior"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "food",
+    "solo"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 46.071597,
+    "lng": 14.514795
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Old Ljubljana is car-free and built along its river, and Zlata Ladjica stands right on the Ljubljanica, in a heritage-listed house almost five hundred years old, a few steps from the main square."
+    },
+    {
+     "title": "People",
+     "body": "Fifteen rooms over a ground-floor kitchen cooking local, seasonal produce and a pub pouring local craft beer."
+    },
+    {
+     "title": "Impact",
+     "body": "Not yet documented in detail. The hotel mentions a sustainability certification; nothing is claimed here until we have seen it."
+    },
+    {
+     "title": "James' note",
+     "body": "Not stayed yet. The first night in Slovenia should be in the capital, on foot, in a house older than most countries. Then go to the mountains."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "In Ljubljana's pedestrian old town on the Ljubljanica, a few steps from the main square. Lake Bled is about 45 minutes away and Piran about an hour.",
+    "signature_experiences": "A riverside room in a heritage-listed house almost 500 years old; dinner from the ground-floor kitchen on local, seasonal produce; local craft beer in the pub below; the in-house spa; Plečnik's riverbanks and the castle on foot.",
+    "who_its_for": "Couples and food lovers wanting a first or last night in Slovenia's capital, in an old house rather than a big hotel."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "historic_old_town",
+    "intentions": [
+     "heritage",
+     "food_and_wine",
+     "city_gateway",
+     "local_craft"
+    ],
+    "suitability": [
+     "couples",
+     "food_and_wine",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "Claude (Stage 4 pilot intake), for James",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

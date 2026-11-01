@@ -1958,5 +1958,85 @@
   "checked": "2026-11-01",
   "conditions": "No single supplement is charged during the mid and green seasons at any Governors' Camp Collection property in Kenya. Applies to the first two single travellers within a booking; a single supplement applies to any additional single travellers. New bookings only. Park fees, community fees and conservancy fees are payable for all guests, for all nights. Booked through Governors' Safaris Ltd only. Non-resident rates only. Not combinable with other Governors' Safaris offers. Discounts apply only to accommodation, meals and game drive charges; transfers, flights, park fees, community fees, drinks, gift shop, spa, third party services and other extras are not discounted. Applies to a limited number of standard rooms, subject to availability, and Governors' may withdraw or amend the offer at any time. New bookings secured once a deposit is paid. Governors' Safaris terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000129",
+  "year": 2026,
+  "status": "Live",
+  "scope": "vessel",
+  "ref": "ak-sanctuary-nile-adventurer",
+  "name": "Honeymoon in Egypt (Nile Adventurer)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymoon: 50% off one partner's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-31",
+   "text": "Travel until 31 December 2027, within 6 months of your marriage"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
+  "volume": "voyages"
+ },
+ {
+  "id": "OFR-2026-000130",
+  "year": 2026,
+  "status": "Live",
+  "scope": "vessel",
+  "ref": "nile-seray",
+  "name": "Honeymoon in Egypt (Nile Seray)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymoon: 50% off one partner's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-31",
+   "text": "Travel until 31 December 2027, within 6 months of your marriage"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
+  "volume": "voyages"
+ },
+ {
+  "id": "OFR-2026-000131",
+  "year": 2026,
+  "status": "Live",
+  "scope": "vessel",
+  "ref": "sun-boat-iii",
+  "name": "Honeymoon in Egypt (Sun Boat III)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymoon: 50% off one partner's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-31",
+   "text": "Travel until 31 December 2027, within 6 months of your marriage"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
+  "volume": "voyages"
+ },
+ {
+  "id": "OFR-2026-000132",
+  "year": 2026,
+  "status": "Live",
+  "scope": "vessel",
+  "ref": "sun-boat-iv",
+  "name": "Honeymoon in Egypt (Sun Boat IV)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymoon: 50% off one partner's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-31",
+   "text": "Travel until 31 December 2027, within 6 months of your marriage"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
+  "volume": "voyages"
  }
 ]

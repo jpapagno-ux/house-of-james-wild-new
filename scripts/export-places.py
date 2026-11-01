@@ -23,6 +23,9 @@ for d in sorted(dests, key=lambda d: d.get("name") or ""):
     parent = by_id.get(pid) or {}
     if not parent.get("webflow_slug"):
         print("place without a live parent:", d.get("name"), file=sys.stderr); continue
+    # A place waits for itself and its country to be live (Salar de Uyuni waits for Bolivia, 1 Nov 2026).
+    if d.get("site_status") != "live" or parent.get("site_status") != "live":
+        print("place held until it and its country are live:", d.get("name"), file=sys.stderr); continue
     out.append({
         "slug": d["webflow_slug"], "name": d.get("name"), "ledgerId": d.get("ledger_id"),
         "parentSlug": parent["webflow_slug"], "regionSlug": d.get("region_slug") or parent.get("region_slug"),

@@ -40,6 +40,12 @@ export const GROUPS: SisterGroup[] = [
     slugs: ["kayumanis-ubud", "kayumanis-nusa-dua", "kayumanis-jimbaran-private-estates", "kayumanis-sanur"],
   },
   {
+    key: "nayara",
+    name: "Nayara Resorts",
+    line: "One house, three countries: the Arenal rainforest in Costa Rica, a private island in Panama's Bocas del Toro, the Atacama desert and Rapa Nui in Chile. Photographs courtesy of Nayara Resorts.",
+    slugs: ["nayara-gardens", "nayara-tented-camp", "arenal-springs-camp-by-nayara", "nayara-bocas-del-toro", "nayara-alto-atacama", "nayara-hangaroa"],
+  },
+  {
     key: "more-collection",
     name: "MORE Collection",
     line: "The More family's lodges and hotels in South Africa: Lion Sands in the Sabi Sand, Monwana in Thornybush, Marataba in the malaria-free Waterberg and Cape Cadogan in Cape Town.",

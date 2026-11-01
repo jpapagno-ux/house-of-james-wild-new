@@ -1,3 +1,5 @@
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import RateCardSection from "@/components/booking/RateCardSection";
 import Link from "next/link";
 import FounderProof from "@/components/record/FounderProof";
@@ -147,6 +149,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
 
           {r.slug === "tswalu-reserve" && <TswaluSections />}
           <RateCardSection pageKey={`reserve:${r.slug}`} name={r.name} photo={r.stay.hero as string} />
+          <OfferPanel offers={offersFor(r.slug)} volume="safaris" title={`Offers at ${r.name}`} />
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}

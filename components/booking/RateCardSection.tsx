@@ -8,10 +8,13 @@ const EXCLUDED = ["Flights and road or air transfers; James arranges them on req
 const POLICIES = [
   "Prices are estimates from MORE's published rates. The house confirms the exact price, what the rate includes, and the lodge's deposit and cancellation terms before anything is charged.",
   "Payment is not connected yet: checkout sends a Folio request only, and nothing is charged.",
+  "Offers are MORE's published promotions; MORE confirms eligibility (returning guest, celebration, length of stay) when the booking is made.",
 ];
 
 export default function RateCardSection({ pageKey, name, photo, hostHref }: { pageKey: string; name: string; photo: string; hostHref?: string }) {
   const c = cardFor(pageKey);
   if (!c) return null;
-  return <RateCardPanel name={name} partner="MORE" years={MORE.properties[c.property].years} rowKeys={c.rows.map((r) => r.key)} photo={photo} included={INCLUDED} excluded={EXCLUDED} policies={POLICIES} hostHref={hostHref} />;
+  const o = MORE.offers;
+  const offers = o ? { freeNight: o.freeNight, celebrate: o.celebrate, returning: o.returning, notes: [...(o.notes ?? []), ...(o.notesByProperty?.[c.property] ?? [])] } : undefined;
+  return <RateCardPanel name={name} partner="MORE" years={MORE.properties[c.property].years} rowKeys={c.rows.map((r) => r.key)} photo={photo} offers={offers} offersUntil={o?.validTo} included={INCLUDED} excluded={EXCLUDED} policies={POLICIES} hostHref={hostHref} />;
 }

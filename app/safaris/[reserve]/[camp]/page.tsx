@@ -1,3 +1,5 @@
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import ImageAccordion from "@/components/record/ImageAccordion";
 import { momentsFor } from "@/lib/content/stay-moments";
 import Link from "next/link";
@@ -116,6 +118,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
             </section>
           )}
           <RateCardSection pageKey={`camp:${r.slug}/${c.slug}`} name={c.name} photo={c.hero as string} hostHref={host.state === "available" ? "#host" : undefined} />
+          <OfferPanel offers={offersFor(r.slug)} volume="safaris" title={`Offers at ${r.name}`} />
           {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}

@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { BedDouble, CalendarDays, Users } from "lucide-react";
-import { BASIS_LABEL, estimate, nightsOf, type CardRow, type Year } from "@/lib/rate-card";
+import { BASIS_LABEL, applyOffers, estimate, nightsOf, type CardRow, type OfferRules, type Year } from "@/lib/rate-card";
 import type { PricedRoom } from "@/lib/content/priced-stays";
 import { Checkout } from "./BookingPanel";
 
@@ -16,9 +16,10 @@ const iso = (d: Date) => d.toISOString().slice(0, 10);
 const usd = (n: number) => `US$${Math.round(n).toLocaleString("en-US")}`;
 const zar = (n: number) => `R${Math.round(n).toLocaleString("en-US")}`;
 
-type Props = { name: string; partner: string; years: Record<string, Year>; rowKeys: string[]; photo: string; included: string[]; excluded: string[]; policies: string[]; hostHref?: string };
+type Props = { name: string; partner: string; years: Record<string, Year>; rowKeys: string[]; photo: string; included: string[]; excluded: string[]; policies: string[]; hostHref?: string; offers?: OfferRules; offersUntil?: string };
 
-export default function RateCardPanel({ name, partner, years, rowKeys, photo, included, excluded, policies, hostHref }: Props) {
+export default function RateCardPanel({ name, partner, years, rowKeys, photo, included, excluded, policies, hostHref, offers, offersUntil }: Props) {
+  const [choice, setChoice] = useState({ celebrating: false, returning: false });
   const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
   const [kids, setKids] = useState<number[]>([]);
   const [today, setToday] = useState("");
@@ -41,6 +42,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
   }, [q, nights, years]);
   const latest = years[Object.keys(years).sort().slice(-1)[0]];
   const rows = (year ?? latest).rows.filter((r) => rowKeys.includes(r.key));
+  const rules = offers && (!offersUntil || (q.checkIn && q.checkIn <= offersUntil)) ? offers : undefined;
   const window = Object.values(years).map((y) => `${new Date(y.validFrom + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })} to ${new Date(y.validTo + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}`).join(" and ");
 
   return (
@@ -53,6 +55,13 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
         <label className="block"><span className="ledger-eyebrow flex items-center gap-1.5"><Users className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Adults</span><select value={q.adults} onChange={(e) => setQ({ ...q, adults: Number(e.target.value) })} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]">{[1, 2, 3, 4, 5, 6, 8, 10].map((n) => <option key={n}>{n}</option>)}</select></label>
         <label className="block"><span className="ledger-eyebrow">Children</span><select value={kids.length} onChange={(e) => { const n = Number(e.target.value); setKids(Array.from({ length: n }, (_, i) => kids[i] ?? 12)); }} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]">{[0, 1, 2, 3, 4].map((n) => <option key={n}>{n}</option>)}</select></label>
         {kids.map((a, i) => <label key={i} className="block"><span className="ledger-eyebrow">Age {i + 1}</span><select value={a} onChange={(e) => setKids(kids.map((x, j) => (j === i ? Number(e.target.value) : x)))} className="mt-1 bg-paper border ledger-border px-2 py-1.5 text-[16px]">{Array.from({ length: 18 }, (_, k) => <option key={k} value={k}>{k}</option>)}</select></label>)}
+        {offers && (
+          <fieldset className="w-full flex flex-wrap gap-x-6 gap-y-2 text-[14px]">
+            <legend className="ledger-eyebrow mb-1">{partner} offers</legend>
+            {offers.celebrate && <label className="flex items-center gap-2"><input type="checkbox" checked={choice.celebrating} onChange={(e) => setChoice({ ...choice, celebrating: e.target.checked })} />Celebrating a honeymoon, anniversary or milestone birthday</label>}
+            {offers.returning && <label className="flex items-center gap-2"><input type="checkbox" checked={choice.returning} onChange={(e) => setChoice({ ...choice, returning: e.target.checked })} />Stayed with {partner} before</label>}
+          </fieldset>
+        )}
         <p className="w-full text-[13px]" aria-live="polite">
           {nights < 1 ? <span>Choose a check-out after check-in.</span> : year ? <span className="ledger-crimson">Estimate for {nights} {nights === 1 ? "night" : "nights"} from {partner}&rsquo;s published card</span> : <span>{partner} has published rates for {window}. For other dates, ask James for a quote.</span>}
         </p>
@@ -60,25 +69,35 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
 
       <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {rows.map((r: CardRow) => {
-          const e = year && nights > 0 ? estimate(r, nights, { adults: q.adults, children: kids }) : null;
+          const party = { adults: q.adults, children: kids };
+          const e = year && nights > 0 ? estimate(r, nights, party) : null;
+          const a = e?.ok ? applyOffers(r, e, party, rules, choice) : null;
+          const total = a ? a.usd : e?.ok ? e.usd : 0;
+          const plan = ["Published rate card (estimate)", ...(a?.savings.map((x) => x.name) ?? [])].join(" · ");
           return (
             <li key={r.key} className="border ledger-border bg-paper flex flex-col p-4">
               <h3 className="ledger-display text-xl">{r.name}</h3>
               <p className="mt-1 text-[13px] ledger-muted flex items-center gap-1.5"><BedDouble className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{r.units}</p>
               <p className="mt-2 text-[13.5px]">{r.note}</p>
               <p className="mt-3"><span className="ledger-eyebrow">From </span><span className="ledger-display text-xl">{usd(r.usd)}</span> <span className="text-[12.5px] ledger-muted">{BASIS_LABEL[r.basis]} · {zar(r.zar)}</span></p>
+              {a && a.notes.length > 0 && <ul className="mt-2 grid gap-1 text-[12px] ledger-muted">{a.notes.map((n) => <li key={n}>{n}</li>)}</ul>}
               <div className="mt-auto pt-4 flex items-end justify-between gap-3">
                 {e?.ok ? (
-                  <p><span className="ledger-display text-2xl ledger-crimson">{usd(e.usd)}</span><span className="block text-[12.5px] ledger-muted">estimate for {nights} {nights === 1 ? "night" : "nights"}{e.units > 1 ? `, ${e.units} rooms` : ""} · {zar(e.zar)}</span></p>
+                  <div>
+                    {a && a.savings.length > 0 && <p className="text-[13px] ledger-muted line-through">{usd(e.usd)}</p>}
+                    <p><span className="ledger-display text-2xl ledger-crimson">{usd(total)}</span><span className="block text-[12.5px] ledger-muted">estimate for {nights} {nights === 1 ? "night" : "nights"}{e.units > 1 ? `, ${e.units} rooms` : ""} · {zar(a ? a.zar : e.zar)}</span></p>
+                    {a?.savings.map((x) => <p key={x.name} className="text-[12.5px] ledger-crimson">{x.name}: save {usd(x.usd)}</p>)}
+                  </div>
                 ) : <p className="text-[13px] ledger-muted">{e && !e.ok ? e.reason : "Choose dates inside the published card"}</p>}
                 {e?.ok
-                  ? <button type="button" onClick={() => setPick({ room: { name: r.name, kind: r.basis === "exclusive" ? "house" : "room", photos: [photo] }, plan: "Published rate card (estimate)", total: e.usd })} className="ledger-btn shrink-0">Select</button>
+                  ? <button type="button" onClick={() => setPick({ room: { name: r.name, kind: r.basis === "exclusive" ? "house" : "room", photos: [photo] }, plan, total })} className="ledger-btn shrink-0">Select</button>
                   : <a href={`/plan?trip=${encodeURIComponent(`${name} · ${r.name}`)}&travellers=${q.adults + kids.length}`} className="ledger-btn-ghost shrink-0">Ask for a quote</a>}
               </div>
             </li>
           );
         })}
       </ul>
+      {rules?.notes?.length ? <ul className="mt-4 grid gap-1 text-[13.5px]">{rules.notes.map((n) => <li key={n}>{n}. Ask James to plan it.</li>)}</ul> : null}
       <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Prices are {partner}&rsquo;s published &ldquo;from&rdquo; rates (lowest season) in rand, shown in US dollars at {partner}&rsquo;s own conversion, so the price for your dates may be higher. Every booking is a request: the house confirms the price and space with the lodge before anything is charged. 7% Florida sales tax is added at checkout.</p>
       {pick && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine="" hostHref={hostHref} onClose={() => setPick(null)} />}
     </section>

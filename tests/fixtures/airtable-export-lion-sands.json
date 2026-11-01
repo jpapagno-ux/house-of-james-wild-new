@@ -312,16 +312,16 @@
   {
    "id": "recn93SduMDyKaU7U",
    "cellValuesByFieldId": {
-    "fld1XEDdmw71rH865": 1,
+    "fld1XEDdmw71rH865": 2,
     "fld2GLjAnpzzDcK1K": [
      {
       "id": "rect5O0FxKCFyFlgv"
      }
     ],
-    "fld2WUPdKEbun6uKO": "2026-11-01T11:40:00.000Z",
+    "fld2WUPdKEbun6uKO": "2026-11-01T11:52:00.000Z",
     "fldC6tJYcgh5buiXc": "Library from-rates (per person x2) \u2014 approved to publish by James, 1 Nov 2026; replace with the contracted card as 2027-V2",
     "fldJum6vCEkeKNESP": "2027-V1",
-    "fldLicyNay0J7QUhE": "Cancellation and payment terms are confirmed by the house with Lion Sands at the time of your quote.",
+    "fldLicyNay0J7QUhE": "A 30% deposit confirms the booking; the balance is due 60 days before arrival. Cancellation terms are confirmed by the house with Lion Sands at the time of your quote.",
     "fldNGNSZ6FgT6FANb": {
      "name": "USD",
      "color": ""
@@ -332,9 +332,14 @@
      "color": ""
     },
     "fldSnFiC03lYCrFJv": "2027-12-31",
-    "fldZuYDcij1wBcHgG": 1,
+    "fldZuYDcij1wBcHgG": 2,
     "fldnth7DRrQxKX7gp": 0.3,
-    "flduDBHCrnixoEnwX": 60
+    "flduDBHCrnixoEnwX": 60,
+    "fldLjatHAV2fnmRqg": [
+     {
+      "id": "recwwFARwNE4VQ4XQ"
+     }
+    ]
    }
   }
  ],
@@ -574,6 +579,30 @@
      "name": "Rate Card",
      "color": ""
     }
+   }
+  }
+ ],
+ "taxes": [
+  {
+   "id": "recwwFARwNE4VQ4XQ",
+   "cellValuesByFieldId": {
+    "fld49yAamhgq107Oi": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fld4eJIhabXmbdnIL": "South Africa",
+    "fld9u1tRVDfKR1aUr": 0.15,
+    "fldGIsHS0oY88lrBV": "VAT 15% (included in the rate)",
+    "fldIL4l0wwxogLqSv": {
+     "name": "% of room",
+     "color": ""
+    },
+    "fldS1oi2glLOU1yHx": {
+     "name": "Tax",
+     "color": ""
+    },
+    "fldbTseNAexvOAGWG": true
    }
   }
  ]

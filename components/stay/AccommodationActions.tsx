@@ -9,6 +9,8 @@ import type { AccommodationPricingState, AccommodationUnit } from "@/lib/stay-pa
 // The actions under one unit's detail. Which ones appear follows the unit's
 // resolved pricing state and the Booking Live flags, never a fixed list:
 //   live rate for the dates  → Check Availability (the engine, deep-linked to the dates)
+//   rate card (quotes flag on) → Check Availability (Request to Reserve: priced night by
+//                              night from the card with taxes, deposit and balance)
 //   anything else            → Request Availability (Plan with James, unit named)
 //   always                   → Ask an Advisor
 //   save flag on             → Add to Folio (the stay, via /api/v1/me/favorites;
@@ -20,10 +22,13 @@ export default function AccommodationActions({ unit, stayName, staySlug, state, 
   const trip = `${stayName} · ${unit.name}`;
   const plan = `/plan?trip=${encodeURIComponent(trip)}&travellers=${travellers}`;
   const live = state.kind === "live" && engineUrl;
+  const card = state.kind === "rate_card" && FLAGS.quotes;
   return (
     <div className={`${className} flex flex-wrap items-center gap-3`}>
       {live
         ? <a href={engineUrl} className="ledger-btn ledger-btn--solid inline-flex items-center gap-2" data-event="booking_outbound"><CalendarSearch className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Check availability <ArrowUpRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a>
+        : card
+        ? <Link href={`/booking/property/${staySlug}`} className="ledger-btn ledger-btn--solid inline-flex items-center gap-2"><CalendarSearch className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Check availability</Link>
         : <Link href={plan} className="ledger-btn ledger-btn--solid inline-flex items-center gap-2"><CalendarSearch className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> Request availability</Link>}
       {FLAGS.save && (folio === "signin"
         ? <Link href={`/account/sign-in?next=${encodeURIComponent(`/stays/${staySlug}`)}`} className="ledger-btn">Sign in to add to Folio</Link>

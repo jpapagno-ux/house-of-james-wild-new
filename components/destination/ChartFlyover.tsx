@@ -51,6 +51,8 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
   const [vb2, setVb2] = useState(whole);
   const [zoomed, setZoomed] = useState(false);
   const [night, setNight] = useState(false);
+  const [safe, setSafe] = useState(false); // a browser that sizes the layered charts wrongly gets the still chart
+  const layer = useRef<SVGSVGElement>(null);
   const [take, setTake] = useState(0); // remounts the ring so it locks on again on every replay
   const box = useRef<HTMLDivElement>(null);
   const timers = useRef<number[]>([]);
@@ -93,6 +95,10 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
   useEffect(() => {
     const el = box.current;
     if (!el) return;
+    // Safety net (Safari on iPhone, 1 Nov 2026, drew a layer about ten times too large): if a chart layer
+    // does not measure the size of its box, show the still close chart instead of the flight.
+    const lb = layer.current?.getBoundingClientRect(), bb = el.getBoundingClientRect();
+    if (!lb || !bb.width || !bb.height || lb.width > bb.width * 1.15 || lb.height > bb.height * 1.15 || lb.width < bb.width * 0.85) { setSafe(true); return; }
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { setVb(near); setStage(ring ? "ring" : "land"); return; }
     const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) { play(); io.disconnect(); } }, { threshold: 0.4 });
     io.observe(el);
@@ -102,19 +108,28 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
 
   return (
     <section className="mt-12" aria-labelledby="flyover-title">
-      <div className="grid lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] gap-6 lg:gap-10 items-start">
-        <figure className="border-[3px] border-double border-[#2A3D5C] bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
-          <div ref={box} className="relative overflow-hidden bg-[#E4EEEC]" style={{ aspectRatio: `${Wd} / ${Hd}` }}>
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] gap-6 lg:gap-10 items-start">
+        <figure className="min-w-0 border-[3px] border-double border-[#2A3D5C] bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
+          <div ref={box} className="relative overflow-hidden bg-[#E4EEEC]">
+            {safe ? (
+              /* The still close chart: the same in-flow chart every country page draws (overlays included). */
+              <div className="ledger-chart is-drawn"><LedgerChart chart={to} title={title} /></div>
+            ) : (
+            <>
+            {/* Sizes the box: an in-flow chart-shaped SVG, the pattern every Ledger chart uses. */}
+            <svg viewBox={`0 0 ${Wd} ${Hd}`} width="100%" className="block invisible w-full h-auto" aria-hidden="true" />
             {/* The continent, flying in: the parent viewBox moves, so every line stays sharp. */}
-            <svg viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} className={`absolute inset-0 w-full h-full ledger-chart is-drawn ${stage === "far" || stage === "aim" ? "" : "fly-quiet"} transition-opacity duration-700 ${down ? "opacity-0" : "opacity-100"}`}
+            <div className={`absolute inset-0 ledger-chart is-drawn ${stage === "far" || stage === "aim" ? "" : "fly-quiet"} transition-opacity duration-700 ${down ? "opacity-0" : "opacity-100"}`}>
+            <svg ref={layer} viewBox={`${vb.x} ${vb.y} ${vb.w} ${vb.h}`} width="100%" height="100%" style={{ display: "block" }}
               preserveAspectRatio="xMidYMid slice">
               <LedgerChart chart={from} title={`Ledger chart of ${fromName}`} bare />
               <rect x={a.x} y={a.y} width={b.x - a.x} height={b.y - a.y} fill="none" stroke="#8B2525" strokeWidth="2" vectorEffect="non-scaling-stroke"
                 className="transition-opacity duration-500" opacity={stage === "aim" || stage === "fly" ? 1 : 0} />
             </svg>
+            </div>
             {/* The close chart, landing; it can move again, closer onto the ringed feature. */}
-            <svg viewBox={`${vb2.x} ${vb2.y} ${vb2.w} ${vb2.h}`} preserveAspectRatio="xMidYMid slice"
-              className={`absolute inset-0 w-full h-full ledger-chart fly-land ${down ? "is-drawn opacity-100" : "opacity-0"} transition-opacity duration-700`}>
+            <div className={`absolute inset-0 ledger-chart fly-land ${down ? "is-drawn opacity-100" : "opacity-0"} transition-opacity duration-700`}>
+            <svg viewBox={`${vb2.x} ${vb2.y} ${vb2.w} ${vb2.h}`} width="100%" height="100%" style={{ display: "block" }} preserveAspectRatio="xMidYMid slice">
               <LedgerChart chart={to} title={title} bare />
               {shape && (
                 <g aria-hidden="true">
@@ -152,6 +167,7 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
                 </g>
               )}
             </svg>
+            </div>
             {focus?.night && (
               <p className={`absolute top-4 inset-x-4 text-center ledger-display italic text-[1.05rem] md:text-[1.35rem] text-[#F4F1ED] transition-opacity duration-1000 pointer-events-none ${night && down ? "opacity-100" : "opacity-0"}`} aria-live="polite">{night && down ? focus.night : ""}</p>
             )}
@@ -175,6 +191,8 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
                 <button type="button" onClick={back} className={btn}><span className="hidden sm:inline">Back to {fromName}</span><span className="sm:hidden">{fromName}</span></button>
               )}
             </div>
+            </>
+            )}
           </div>
           {frames.length > 0 && <Filmstrip frames={night && frames.filter((f) => f.night).length >= 2 ? frames.filter((f) => f.night) : frames} night={night} />}
           <figcaption className="px-3 py-2 border-t ledger-border font-mono text-[10px] tracking-[0.12em] uppercase ledger-muted flex justify-between gap-4">
@@ -227,7 +245,7 @@ function Filmstrip({ frames, night }: { frames: FlyFrame[]; night: boolean }) {
     </li>
   ));
   return (
-    <div className={`fly-strip relative overflow-hidden border-t ledger-border py-2.5 transition-colors duration-1000 ${night ? "bg-[#0B1220]" : "bg-paper"}`} aria-label="The stays on this chart, in photographs">
+    <div className={`fly-strip relative w-full max-w-full min-w-0 overflow-hidden border-t ledger-border py-2.5 transition-colors duration-1000 ${night ? "bg-[#0B1220]" : "bg-paper"}`} aria-label="The stays on this chart, in photographs">
       <ul key={night ? "night" : "day"} className="fly-strip-track flex w-max">{row(false)}{row(true)}</ul>
       <span aria-hidden="true" className={`pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r ${night ? "from-[#0B1220]" : "from-paper"} to-transparent`} />
       <span aria-hidden="true" className={`pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l ${night ? "from-[#0B1220]" : "from-paper"} to-transparent`} />

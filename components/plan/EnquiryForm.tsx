@@ -52,6 +52,7 @@ export default function EnquiryForm() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [state, setState] = useState<"idle" | "sending" | "sent" | "preview" | "failed">("idle");
+  const [enqId, setEnqId] = useState<string | null>(null);
   const set = <K extends keyof Enquiry>(k: K, v: Enquiry[K]) => setF((x) => ({ ...x, [k]: v }));
   const err = (k: string) => errors[k] && <p id={`${k}-err`} className="mt-1 text-[13.5px] text-crimson">{errors[k]}</p>;
   const aria = (k: string) => (errors[k] ? { "aria-invalid": true, "aria-describedby": `${k}-err` } : {});
@@ -69,6 +70,7 @@ export default function EnquiryForm() {
       const res = await fetch("/api/enquiry", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...f, context: ctx }) });
       const data = await res.json();
       if (!res.ok) { setErrors(data.errors ?? {}); setState("failed"); return; }
+      setEnqId(typeof data.id === "string" ? data.id : null);
       setState(data.live ? "sent" : "preview");
     } catch {
       setState("failed");
@@ -78,7 +80,7 @@ export default function EnquiryForm() {
   if (state === "sent" || state === "preview") {
     return (
       <div className="ledger-paper p-8 md:p-10" role="status">
-        <p className="ledger-eyebrow ledger-crimson">{state === "sent" ? "Received" : "Preview mode"}</p>
+        <p className="ledger-eyebrow ledger-crimson">{state === "sent" ? "Received" : "Preview mode"}{enqId ? ` · ${enqId}` : ""}</p>
         <p className="ledger-display text-[1.9rem] leading-tight mt-2">Thank you, {f.name.split(" ")[0]}.</p>
         <p className="mt-3 text-[17px] leading-relaxed max-w-xl">{state === "sent" ? `${advisor ? advisor.firstName : "James or an advisor"} will reply ${f.contact === "email" ? "by email" : "to arrange your call"}.` : "This is a preview of the site. Enquiries connect to the house inbox at launch, so nothing was sent. To reach James today, call 1.800.419.7000."}</p>
       </div>

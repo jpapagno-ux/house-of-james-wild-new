@@ -53,10 +53,13 @@ If `notes` is missing but a Folio is on the shelf, the Folio summary is used.
 
 ## 4. Where the enquiry goes
 
-`app/api/enquiry/route.ts` → Resend.
+`app/api/enquiry/route.ts` → the enquiry record (Airtable base "James Wild & Co
+— Enquiries", `lib/enquiry-record.ts`) → Resend. Every enquiry gets an
+`ENQ-YYYY-NNNNNN` ID, carried in the email subject and shown to the traveller.
 
-- To a real advisor directly, **hello@ copied**, when `ADVISOR_INBOXES` lists
-  them (`anthony-papagno=…,kristina-larson=…`; Vercel env, never in code).
+- To a real advisor directly, **hello@ copied**, when the base's Advisors table
+  has their Inbox (active, not a stand-in). `ADVISOR_INBOXES` is only the
+  fallback if the table can't be read.
 - Otherwise — James, stand-ins, anyone unlisted — to hello@ alone.
 - The email carries: Writing to, Folio, Destination, Route, Asked about, Trip
   and a "What Iggi learned" block.

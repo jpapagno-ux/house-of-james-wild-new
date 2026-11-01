@@ -408,10 +408,11 @@ export const GUIDES: Record<string, Guide> = {
         { name: "Plan it with James", body: "Tell the house what you want from the desert and it will set the lodge, the nights and the order.", href: "/plan?place=Atacama", label: "Plan it with James" },
       ],
     },
-    onwardEyebrow: "Continue through Chile",
+    onwardEyebrow: "Continue through Chile, and across the border",
     onward: [
       { name: "Patagonia", href: "/destinations/south-america/chile/patagonia", line: "Torres del Paine and the fjords, October to April" },
       { name: "Rapa Nui", href: "/destinations/south-america/chile/rapa-nui", line: "Easter Island, 3,700 km out in the Pacific" },
+      { name: "Salar de Uyuni", href: "/destinations/south-america/bolivia/salar-de-uyuni", line: "Across the border in Bolivia: the salt flat at the end of the crossing" },
     ],
     voyageWaters: [],
     faqs: [
@@ -674,6 +675,68 @@ export const GUIDES: Record<string, Guide> = {
     sources: [
       { title: "Visit Ljubljana: distances to nearby airports", url: "https://www.visitljubljana.com/en/visitors/travel-information/getting-around/getting-to-ljubljana-by-air/" },
       { title: "Alma Vista in the Ledger", url: "/stays/alma-vista" },
+    ],
+  },
+  // Bolivia, destination-first (James, 1 Nov 2026: "approved ... put Bolivia live"). The first place in
+  // Bolivia, tied across the border to the Atacama by the classic crossing, with the flyover chart.
+  "salar-de-uyuni": {
+    slug: "salar-de-uyuni", region: "south-america", country: "bolivia", parent: "bolivia", name: "Salar de Uyuni", path: "/destinations/south-america/bolivia/salar-de-uyuni",
+    theme: "stays", stays: ["explora-at-uyuni-flats"], flyover: "atacama-uyuni",
+    proofEyebrow: "A house partner since 2004 · Explora",
+    seo: {
+      title: "Salar de Uyuni Guide: Best Time, the Mirror, Stargazing & the Crossing from the Atacama",
+      description: "The Salar de Uyuni, Bolivia: the largest salt flat on Earth, the mirror after rain, some of the darkest night skies anywhere and the private crossing from San Pedro de Atacama. When to go, how to get there and where to stay.",
+      keywords: ["Salar de Uyuni", "Uyuni salt flat", "best time to visit Uyuni", "Uyuni mirror effect", "Uyuni stargazing", "Atacama to Uyuni", "Uyuni luxury lodge"],
+    },
+    eyebrow: "Destinations · South America · Bolivia",
+    h1: "Salar de Uyuni",
+    tagline: "Uyuni and the Altiplano, Bolivia: the largest salt flat on Earth, and one of its great night skies",
+    slides: [],
+    slidesFromStay: { slug: "explora-at-uyuni-flats", alt: "Walking on the Uyuni salt flat, Bolivia", credit: "Photograph courtesy of Explora" },
+    answer: "The Salar de Uyuni is the largest salt flat on Earth, around 10,500 square kilometres of white crust at roughly 3,650 metres on Bolivia's Altiplano. May to November brings clear, dry days and the best night skies; December to April is the wet season, when a skin of water turns the salt into a mirror. You reach it by flying La Paz to Uyuni, about an hour, or by crossing overland from San Pedro de Atacama in Chile past the coloured lagoons of the Eduardo Avaroa reserve. Give it several nights, take the altitude a day at a time, and keep at least one night for the stars.",
+    facts: [["Where", "Bolivia's southern Altiplano, around Uyuni"], ["Altitude", "Roughly 3,650 metres; the lagoons to the south higher still"], ["Best time", "May to November for clear skies and stargazing; December to April for the mirror"], ["Fly into", "Uyuni (UYU), about an hour from La Paz; or Calama (CJC) in Chile for the crossing"], ["How long", "Several nights; the private crossing from the Atacama runs seven or more"], ["In the Ledger", "Filed from the house's Bolivia research and Explora's own record"]],
+    proof: "James has worked with Explora since 2004, and the Atacama-to-Uyuni crossing is the journey he would put people on for the desert and the salt as one trip. He has not yet stayed at the Uyuni lodge itself; the page says so plainly.",
+    months: [
+      { area: "Salar de Uyuni", note: "Dry and clear May to November · wet (the mirror) December to April", months: M("wwwwBBBBBBBw") },
+    ],
+    airports: [["Uyuni (UYU)", "Joya Andina Airport, about an hour by air from La Paz"], ["La Paz (LPB)", "El Alto International, Bolivia's main gateway, itself around 4,000 metres"], ["Calama (CJC)", "In Chile, the gateway for San Pedro de Atacama and the overland crossing"]],
+    transfers: [["La Paz → Uyuni", "About an hour by air"], ["San Pedro de Atacama → Uyuni", "Several days overland across the Altiplano, with lodges on the way"]],
+    highlights: [
+      { title: "The salt flat", line: "Light and distance", body: "White crust in hexagons to the horizon, with Isla Incahuasi and its giant cacti rising out of it." },
+      { title: "The mirror", line: "December to April", body: "After rain, a thin layer of water sits on the salt and the sky appears twice." },
+      { title: "The night sky", line: "Stargazing", body: "High, dry and almost without light for a hundred kilometres: one of the great dark skies. Best in the dry months, away from the full moon." },
+      { title: "The lagoons", line: "Eduardo Avaroa reserve", body: "Laguna Colorada and its flamingos, geysers at dawn and volcanoes on the Chilean border, on the way north from the Atacama." },
+    ],
+    suits: [
+      { who: "Stargazers and photographers", line: "The salt by day, the Milky Way by night.", href: "/stays/explora-at-uyuni-flats", label: "Explora Uyuni" },
+      { who: "The Atacama and Uyuni as one journey", line: "Fly into Calama, cross the Altiplano, fly home from Uyuni.", href: "/destinations/south-america/chile/atacama", label: "The Atacama" },
+      { who: "Travellers comfortable with altitude", line: "Start low in San Pedro de Atacama and climb a day at a time." },
+    ],
+    howTo: {
+      title: "How to See the Salar de Uyuni",
+      intro: "Come from the Atacama if you can. The crossing climbs gradually, which is kinder at altitude, and the lagoons on the way are half the reason to go.",
+      options: [
+        { name: "The private crossing from the Atacama", body: "Seven nights or more with Explora: San Pedro de Atacama, mountain lodges on the Altiplano, then Uyuni. Two travellers, a guide and a local driver.", href: "#stays", label: "The stay the house selected" },
+        { name: "Fly in from La Paz", body: "About an hour to Uyuni. Quicker, but La Paz sits around 4,000 metres, so arrive rested and go gently.", href: "/destinations/south-america/bolivia", label: "Bolivia" },
+        { name: "Plan it with James", body: "Tell the house when you can travel and whether you want the mirror or the stars, and it will set the route.", href: "/plan?place=Salar%20de%20Uyuni", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Across the border",
+    onward: [
+      { name: "The Atacama", href: "/destinations/south-america/chile/atacama", line: "San Pedro de Atacama, Chile: the other end of the crossing" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "How big is the Salar de Uyuni?", a: "Around 10,500 square kilometres, the largest salt flat in the world, at roughly 3,650 metres on Bolivia's Altiplano." },
+      { q: "When can you see the Uyuni mirror effect?", a: "In the wet season, roughly December to April, when a thin layer of rainwater sits on the salt and reflects the sky. Clear, dry stargazing nights are May to November." },
+      { q: "How do you get to the Salar de Uyuni?", a: "Fly from La Paz to Uyuni (UYU), about an hour, or cross overland from San Pedro de Atacama in Chile over the Altiplano, a journey of several days with lodges along the way." },
+      { q: "Is Uyuni good for stargazing?", a: "Yes. High altitude, very dry air and almost no light pollution make the salt flat one of the best places on Earth to see the night sky; the dry months, away from the full moon, are best." },
+      { q: "Is altitude a problem at Uyuni?", a: "It can be. The salt flat sits around 3,650 metres and the lagoons higher, so plan gentle first days and drink water; starting low in San Pedro de Atacama (about 2,400 metres) and climbing helps." },
+    ],
+    geo: { lat: -20.2, lng: -67.55 },
+    sources: [
+      { title: "Explora: Travesía Atacama–Uyuni", url: "https://www.explora.com/travesia-atacama-uyuni/" },
+      { title: "Explora Uyuni in the Ledger", url: "/stays/explora-at-uyuni-flats" },
     ],
   },
 };

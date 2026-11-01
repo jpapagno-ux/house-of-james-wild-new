@@ -22,3 +22,8 @@
 - Lodges that are announced, opening or rebuilding are tagged "WHAT'S COMING SECTION" in their
   Stay Studio review notes (Singita Elela, Dec 2026; andBeyond Xaranna Okavango Delta Lodge,
   Aug 2027). A dedicated site section will be built later as a separate build.
+
+## Verified facts (James, 1 Nov 2026)
+- Before writing about any property, check `docs/verified-facts.md`. Facts there override older copy
+  anywhere on the site (e.g. Wilderness Ruckomechi: suites not tents, swimming pool not infinity pool,
+  closed 20 Nov to 31 Mar).

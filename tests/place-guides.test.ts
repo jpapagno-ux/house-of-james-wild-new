@@ -30,7 +30,7 @@ test("Rapa Nui is a place inside Chile, not a country", () => {
   assert.equal(g.parent, "chile");
   assert.equal(g.region, "south-america");
   assert.ok(!COUNTRIES.some((c) => c.slug === "rapa-nui"));
-  assert.deepEqual(placeGuides("chile").map((x) => x.slug), ["rapa-nui"]);
+  assert.deepEqual(placeGuides("chile").map((x) => x.slug).sort(), ["atacama", "patagonia", "rapa-nui"]);
 });
 
 test("selected stays are page-ready library records filed under the parent country", () => {

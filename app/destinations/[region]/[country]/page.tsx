@@ -23,6 +23,7 @@ import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerCha
 import Compass from "@/components/destination/Compass";
 import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
+import { guideSlides } from "@/lib/content/guide-slides";
 import WhenToGo from "@/components/destination/WhenToGo";
 import { hubsForCountry, transfersForCountry, hubLabel, hubSchema, transferLine, KIND_LABEL } from "@/lib/content/arrivals";
 import PlanBand from "@/components/destination/PlanBand";
@@ -46,7 +47,7 @@ import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { volumeInk } from "@/lib/volumes";
 import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
-import { GUIDES } from "@/lib/content/guides";
+import { GUIDES, placeGuides } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
 import { regionBySlug } from "@/lib/content/regions";
 import { pageReady, staysIn } from "@/lib/content/stays";
@@ -207,6 +208,11 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
+
+          {/* Destination-first: the places inside this country (Chile → Atacama, Patagonia, Rapa Nui), as the region page's own door cards. */}
+          {placeGuides(c.slug).length > 0 && (
+            <Doors id="places" eyebrow={`Inside ${c.name}`} title={`Where to Go in ${c.name}`} doors={placeGuides(c.slug).map((g) => ({ name: g.name, href: g.path, image: guideSlides(g)[0]?.url ?? null, imageAlt: guideSlides(g)[0]?.alt, line: g.tagline, stays: (g.stays ?? []).length, bestMonths: g.facts.find(([k]) => k === "Best time")?.[1] }))} />
+          )}
 
           {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}
           <ChooseYourWay place={c.name} stayVol={c.region === "europe" ? "europe" : "stays"} featured={pages.map((x) => ({ ...x, image: x.hero }))} stayCount={pages.length} stays={pages.map((x) => ({ ...x, image: x.hero }))} reserves={RESERVES.filter((x) => x.stay.countrySlug === c.slug)} journeys={journeys} chart={chart} staysHref="#stays" />

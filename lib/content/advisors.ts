@@ -233,6 +233,23 @@ export const ADVISORS: Advisor[] = [
     traveled: [],
     profileHref: null,
   },
+  {
+    // James, 1 Nov 2026: Marissa, his daughter, joins the roster. ADV issued by the Library
+    // (ADV-2026-000009). Card only until she states her own profile and DNA.
+    slug: "marissa-held",
+    ledgerId: "ADV-2026-000009",
+    name: "Marissa Held",
+    firstName: "Marissa",
+    role: "Travel Advisor",
+    roleApproved: false,
+    // Family photo supplied by James, 1 Nov 2026 (house Cloudinary: jwco/advisors/marissa-held/portrait).
+    portrait: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_fill,g_face,w_480,h_480/jwco/advisors/marissa-held/portrait", alt: "Portrait of Marissa Held, travel advisor at James Wild & Co" },
+    intro: "Islands and beaches, Europe's small towns, Costa Rica, the desert West: journeys for families, adventure and culture, and island escapes.",
+    bio: [],
+    specialties: [],
+    traveled: [],
+    profileHref: null,
+  },
 ];
 
 // In the field with us: partners who aren't James Wild & Co booking

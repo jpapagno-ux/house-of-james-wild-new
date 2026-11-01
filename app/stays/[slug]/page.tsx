@@ -2,6 +2,8 @@ import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import GettingThere from "@/components/ledger/GettingThere";
+import { hubsForStay, hubsForCountry, transfersForStay, hubLabel, hubSchema, transferLine } from "@/lib/content/arrivals";
 import JsonLd from "@/components/ledger/JsonLd";
 import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
@@ -37,7 +39,7 @@ import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
-import { BEST_FOR, STAY_PAGES, staysIn, stayBySlug, pageReady, altFor } from "@/lib/content/stays";
+import { BEST_FOR, STAYS, STAY_PAGES, staysIn, stayBySlug, pageReady, altFor } from "@/lib/content/stays";
 import { regionBySlug } from "@/lib/content/regions";
 import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
@@ -119,13 +121,21 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const host = hostFor(`stay:${s.slug}`);
   const verdict = verdictFor(`stay:${s.slug}`);
   const note = houseNote({ key: `stay:${s.slug}`, name: s.name, bestMonths: s.bestMonths, airport: s.airport, suited, rooms: s.rooms.items });
+  // Stage 5 (Last Mile): approved Ledger hubs and transfer legs for this stay. Empty until the library approves them.
+  const hubs = hubsForStay(s);
+  const legs = transfersForStay(s.ledgerId);
+  const gatewayHub = hubsForCountry(s.country).find((h) => h.gatewayOvernight && h.gatewayRef && h.gatewayRef !== s.slug) ?? null;
+  const gatewayStay = gatewayHub ? STAYS.find((x) => x.slug === gatewayHub.gatewayRef && pageReady(x)) ?? null : null;
+  const timedLegs = legs.filter((t) => transferLine(t));
   const whyTitle = s.why[0]?.title ?? `Why ${s.name} Made the Cut`;
   const whyBlocks = s.why.length ? s.why.map((w, i) => ({ title: i === 0 && s.why[0]?.title ? null : w.title, body: w.body })) : [];
   const whyParas = s.why.length ? [] : (s.onlyHere.length ? s.onlyHere.slice(0, 2) : [s.tagline].filter(Boolean) as string[]);
   const quick = [
     ...(s.bestMonths ? [{ q: `When is the best time to visit ${s.name}?`, a: `${s.bestMonths}.${s.bestMonthsNote ? ` ${s.bestMonthsNote}` : ""}` }] : []),
     ...(suited.length ? [{ q: `Who is ${s.name} best suited to?`, a: `${suited.join(", ")}. If that's you, it's worth a conversation; if it isn't, the house will point you somewhere that is.` }] : []),
-    ...(s.airport ? [{ q: `How do you get to ${s.name}?`, a: `Fly into ${s.airport}.${s.airportDirections ? ` ${s.airportDirections}` : ""} The house arranges the transfer with your booking.` }] : []),
+    ...(hubs.length
+      ? [{ q: `How do you get to ${s.name}?`, a: `${hubs[0].kind === "airport" || hubs[0].kind === "airstrip" ? "Fly into" : "Arrive at"} ${hubLabel(hubs[0])}${hubs.length > 1 ? ` (or ${hubs.slice(1).map(hubLabel).join(", ")})` : ""}.${timedLegs.length ? ` ${timedLegs.map((t) => `From ${hubLabel(t.hub)} it is ${transferLine(t)}, as stated by the property.`).join(" ")}` : " The transfer time is not yet on record with the house."} James arranges arrival and the car with your booking.` }]
+      : s.airport ? [{ q: `How do you get to ${s.name}?`, a: `Fly into ${s.airport}.${s.airportDirections ? ` ${s.airportDirections}` : ""} The house arranges the transfer with your booking.` }] : []),
     ...(s.rooms.items.length ? [{ q: `What rooms does ${s.name} have?`, a: `${s.rooms.items.slice(0, 8).join(", ")}.` }] : []),
     { q: `How do I book ${s.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked.` },
   ];
@@ -172,6 +182,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
@@ -246,7 +257,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <ContactPill name={s.name} planHref={planHref} />
       {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: FILM_CREDITS[video.id]?.title ?? video.title, description: FILM_CREDITS[video.id] ? `${FILM_CREDITS[video.id].seriesLine}, filmed at ${s.name}. ${FILM_CREDITS[video.id].credit}.` : `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25", ...filmCreditSchema(video.id) }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
-      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}) })} />
+      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}), ...(hubs.length ? { potentialAction: hubs.map((h) => { const leg = legs.find((t) => t.hub.id === h.id); return { "@type": "TravelAction", name: `Travel from ${hubLabel(h)} to ${s.name}`, fromLocation: hubSchema(h), toLocation: { "@type": "Place", name: s.name, ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}) }, ...(leg?.minutes ? { distance: leg.km ? `${leg.km} km` : undefined, description: `${transferLine(leg)}, as stated by the property`, identifier: leg.ledgerId ?? undefined } : { description: "Transfer time not yet recorded by the house" }) }; }) } : {}) })} />
     </div>
   );
 }

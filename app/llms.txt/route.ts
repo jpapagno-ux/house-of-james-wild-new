@@ -7,6 +7,7 @@ import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
 import { onPathway } from "@/lib/content/pathways";
 import { COUNTRIES } from "@/lib/content/countries";
 import { STAYS, pageReady } from "@/lib/content/stays";
+import { HUBS, hubsForStay, transfersForStay, hubLabel, transferLine, KIND_LABEL } from "@/lib/content/arrivals";
 import { recordHref } from "@/lib/ledger/urls";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { RESERVES } from "@/lib/content/reserves";
@@ -70,6 +71,16 @@ export function GET() {
     "## Stays in the Ledger (Ledger ID · stay · country)",
     ...STAYS.filter((s) => pageReady(s) && s.ledgerId).map((s) => `- ${s.ledgerId} · [${s.name}](${absoluteUrl(recordHref("stay", s.slug))})${s.country ? ` · ${s.country}` : ""}${s.tagline ? `: ${s.tagline.replace(/^"|"$/g, "")}` : ""}`),
     "",
+    // Stage 5 (Last Mile): approved arrival hubs, and one arrival line per hub-linked stay. Only stated
+    // times appear; a stay with hubs but no recorded time says so, which is the house's answer.
+    ...(HUBS.length ? [
+      "## Arrival hubs in the Ledger (Ledger ID · hub · kind · country)",
+      ...HUBS.filter((h) => h.ledgerId).map((h) => `- ${h.ledgerId} · ${hubLabel(h)} · ${KIND_LABEL[h.kind]} · ${h.country}${h.servesCountries.length ? ` (serves ${h.servesCountries.join(", ")})` : ""}${h.gatewayOvernight ? " · the house books a first or last night here" : ""}`),
+      "",
+      "## Getting there (stay · arrive via · transfer as stated by the property)",
+      ...STAYS.filter((s) => pageReady(s) && s.ledgerId && hubsForStay(s).length).map((s) => { const hs = hubsForStay(s); const legs = transfersForStay(s.ledgerId).filter((t) => transferLine(t)); return `- ${s.name} (${s.ledgerId}): arrive via ${hs.map(hubLabel).join(" or ")}. ${legs.length ? legs.map((t) => `From ${hubLabel(t.hub)}, ${transferLine(t)} (${t.ledgerId}).`).join(" ") : "Transfer time not yet recorded by the house; James arranges the car."}`; }),
+      "",
+    ] : []),
     "## Questions the Ledger answers (house-approved; each page carries its own)",
     ...COUNTRIES.filter((c) => c.faqs.length).flatMap((c) => c.faqs.slice(0, 4).map((f) => `- ${c.name} (${c.ledgerId ?? "country"}): ${f.q} ${f.a}`)),
     ...STAYS.filter((s) => pageReady(s) && s.ledgerId && s.faqs?.length).slice(0, 120).flatMap((s) => s.faqs!.slice(0, 2).map((f) => `- ${s.name} (${s.ledgerId}): ${f.q} ${f.a}`)),

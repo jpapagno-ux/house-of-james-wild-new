@@ -9,7 +9,7 @@ const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "Ju
 const CELL: Record<Season, string> = { best: "bg-crimson text-paper", good: "bg-coast-mist text-coast-deep", wet: "bg-paper-card text-ink/40" };
 const LABEL: Record<Season, string> = { best: "Best", good: "Good", wet: "Wettest" };
 
-export default function WhenToGo({ place, rows, airports, transfers }: { place: string; rows: MonthRow[]; airports: [string, string][]; transfers: [string, string][] }) {
+export default function WhenToGo({ place, rows, airports, transfers, ledger = false }: { place: string; rows: MonthRow[]; airports: [string, string][]; transfers: [string, string][]; ledger?: boolean }) {
   return (
     <section id="when" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="when-heading">
       <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><CalendarDays className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> When to go &amp; getting there</p>
@@ -37,6 +37,7 @@ export default function WhenToGo({ place, rows, airports, transfers }: { place: 
           <p className="ledger-eyebrow mt-6">Typical transfers</p>
           <dl className="mt-2 border-t ledger-rule">{transfers.map(([k, v]) => <div key={k} className="py-2 border-b ledger-rule flex justify-between gap-4 text-[14px]"><dt>{k}</dt><dd className="text-right ledger-muted">{v}</dd></div>)}</dl>
           </>}
+          {ledger && <p className="mt-4 text-[12.5px] ledger-muted">Arrival hubs and transfer times from the James Wild &amp; Co Ledger, each recorded from the operator&rsquo;s own site. Only stated times are shown; the house never estimates one.</p>}
         </div>
       </div>
     </section>

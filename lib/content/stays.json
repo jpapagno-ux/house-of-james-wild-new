@@ -126,7 +126,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-lake-serengeti-under-canvas",
@@ -248,7 +249,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-sussuvlei-desert-lodge",
@@ -340,7 +342,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-vira-vira-lodge",
@@ -426,7 +429,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "benguerra-island-by-and-beyond",
@@ -516,7 +520,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chobe-under-canvas-by-and-beyond",
@@ -602,7 +607,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-grumeti-safari-camp",
@@ -681,7 +687,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-kichwa-camp",
@@ -774,7 +781,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-kleins-camp",
@@ -859,7 +867,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "aguas-claras",
@@ -1015,7 +1024,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "aliikai-voyage",
@@ -1116,7 +1126,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "alila-ventana-big-sur",
@@ -1211,7 +1222,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "alya-catamaran-galapagos",
@@ -1300,7 +1312,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "amandari",
@@ -1414,7 +1427,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "amazon-field-station-byinkaterra",
@@ -1495,7 +1509,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ambiente-tm-sedona",
@@ -1581,7 +1596,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "amor-arenal",
@@ -1673,7 +1689,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-bophut-koh-samui-resort",
@@ -1762,7 +1779,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-chiang-mai-resort",
@@ -1848,7 +1866,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-golden-triangle-chiang-rai",
@@ -1942,7 +1961,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-hua-hin",
@@ -2036,7 +2056,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-mui-ne",
@@ -2123,7 +2144,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "stanley-livingstone-lodge",
@@ -2196,7 +2218,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "anantara-ubud-bali",
@@ -2290,7 +2313,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-amboseli",
@@ -2393,7 +2417,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-mara",
@@ -2511,7 +2536,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "angama-safari-camp",
@@ -2602,7 +2628,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "arenal-springs-camp-by-nayara",
@@ -2686,7 +2713,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "arenas-del-mar-resort",
@@ -2783,7 +2811,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ariel-house",
@@ -2904,7 +2933,8 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "arijiju-laikipia",
@@ -3002,7 +3032,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "armendaris-ted-turner-reserve",
@@ -3090,7 +3121,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-rekero-camp",
@@ -3182,7 +3214,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "atzaro-okavango-camp",
@@ -3270,7 +3303,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-atacama",
@@ -3356,7 +3390,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "iguazu",
@@ -3446,7 +3481,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-mendoza",
@@ -3536,7 +3572,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-patagonia",
@@ -3631,7 +3668,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "awasi-santa-catarina",
@@ -3719,7 +3757,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "babylonstoren",
@@ -3838,7 +3877,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "baines-lodge",
@@ -3920,7 +3960,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "bateleur-camp-by-and-beyond",
@@ -4010,7 +4051,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "baymanhi-exuma",
@@ -4112,7 +4154,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "be-tulum",
@@ -4204,7 +4247,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "birkenhead-house",
@@ -4304,7 +4348,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "blancaneaux-lodge",
@@ -4424,7 +4469,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "blue-reef",
@@ -4533,7 +4579,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "blue-safari-seychelles",
@@ -4607,7 +4654,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "boluntiku-hotel",
@@ -4663,7 +4711,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "borana",
@@ -4756,7 +4805,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "breac-house",
@@ -4863,7 +4913,11 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85b",
+    "6ae666174efda236c530e85c"
+   ]
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -4995,7 +5049,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "camp-hwange-muddy-teak",
@@ -5105,7 +5160,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "cap-karoso",
@@ -5217,7 +5273,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "cape-cadogan-boutique-hotel",
@@ -5350,7 +5407,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-capella-lodge",
@@ -5477,7 +5535,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "capella-ubud",
@@ -5566,7 +5625,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "cardamom-tented-camp",
@@ -5652,7 +5712,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "casa-maya-kaan",
@@ -5744,7 +5805,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "castle-leslie",
@@ -5846,7 +5908,11 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858",
+    "6ae666174efda236c530e85e"
+   ]
   },
   {
    "slug": "celestia-yacht",
@@ -5940,7 +6006,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chable-yucatan",
@@ -6034,7 +6101,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chamilandu-lodge",
@@ -6117,7 +6185,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "cheetah-plains",
@@ -6236,7 +6305,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chem-chem",
@@ -6323,7 +6393,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chiawa-safaris",
@@ -6400,7 +6471,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chindeni-lodge",
@@ -6479,7 +6551,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chisa-busanga-camp",
@@ -6565,7 +6638,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "chumbe-island-zanzibar",
@@ -6652,7 +6726,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "clayoquot-wilderness-resort",
@@ -6749,7 +6824,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "coco-costa-rica",
@@ -6805,7 +6881,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "coco-plum-island-resort",
@@ -6916,7 +6993,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "como-shambhala-estate",
@@ -7001,7 +7079,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "conrad-tulum-riviera-maya",
@@ -7094,7 +7173,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "coot-club",
@@ -7222,7 +7302,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "corks-vienna-woods",
@@ -7312,7 +7393,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "cottars-1920-camp",
@@ -7421,7 +7505,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-original-camp-by-serian",
@@ -7502,7 +7587,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "daunara-safari-camp",
@@ -7587,7 +7673,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-duba-plains",
@@ -7660,7 +7747,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dukes-camp-okavango",
@@ -7752,7 +7840,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-anabezi-lodge",
@@ -7830,7 +7919,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-daunara-lodge",
@@ -7939,7 +8029,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-leadwood-lodge",
@@ -8045,7 +8136,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-moya-lodge",
@@ -8156,7 +8248,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "dulini-river-lodge",
@@ -8257,7 +8350,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-dunia-camp",
@@ -8349,7 +8443,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "da-licenca",
@@ -8456,7 +8551,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ecocamp-patagonia",
@@ -8548,7 +8644,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-evolve-yacht",
@@ -8639,7 +8736,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-origin-yacht",
@@ -8729,7 +8827,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ecoventura-theory-yacht",
@@ -8820,7 +8919,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "el-mapi-byinkaterra",
@@ -8907,7 +9007,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "elephann-pan-khwai",
@@ -8996,7 +9097,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ellerman-house",
@@ -9134,7 +9236,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "elsas-kopje",
@@ -9201,7 +9304,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "encounter-mara-camp-by-asilia",
@@ -9290,7 +9394,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "entamanu-lodge",
@@ -9363,7 +9468,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "entamanu-private-lodge",
@@ -9438,7 +9544,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "entara-esirai-camp",
@@ -9520,7 +9627,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "etosha-mountain-lodge",
@@ -9607,7 +9715,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-el-calafate",
@@ -9687,7 +9796,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-el-chalten",
@@ -9772,7 +9882,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-rapa-nui",
@@ -9859,7 +9970,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-sacred-valley",
@@ -9944,7 +10056,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-torres-del-paine",
@@ -10027,7 +10140,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "torres-del-paine-c-reserve",
@@ -10109,7 +10223,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "explora-at-atacama",
@@ -10193,7 +10308,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "feline-fields-lodge",
@@ -10278,7 +10394,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "feline-fields-vintage-camp",
@@ -10365,7 +10482,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "fogo-island-inn",
@@ -10452,7 +10570,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "gibbs-farm",
@@ -10539,7 +10658,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "giraffe-manor",
@@ -10619,7 +10739,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "gomoti-plains-camp",
@@ -10703,7 +10824,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "gorongosa-safaris",
@@ -10817,7 +10939,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "greystoke-mahale-by-nomad",
@@ -10908,7 +11031,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "grootbos-private-nature-reserve",
@@ -11026,7 +11150,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "gwe-gwe-beach",
@@ -11087,7 +11212,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "gwe-gwe-beach-lodge",
@@ -11191,7 +11317,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hayfield-manor",
@@ -11283,7 +11410,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "hemingways-nairobi",
@@ -11405,7 +11535,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hermanus-private-residences",
@@ -11508,7 +11639,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hidden-valley-lodge",
@@ -11614,7 +11746,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "holistika",
@@ -11701,7 +11834,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hotel-bardo",
@@ -11792,7 +11926,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "hotel-panamera",
@@ -11870,7 +12005,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "house-in-the-wild",
@@ -11951,7 +12087,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "house-in-the-wild-masai-mara",
@@ -12040,7 +12177,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-huka-lodge",
@@ -12137,7 +12275,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ila-safari-lodge",
@@ -12219,7 +12358,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-cabo-blanco",
@@ -12306,7 +12446,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-hacienda-concepcion",
@@ -12393,7 +12534,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-hacienda-urubamba",
@@ -12481,7 +12623,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-la-casona",
@@ -12571,7 +12714,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-machu-picchu-pueblo-hotel",
@@ -12663,7 +12807,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "inkaterra-reserva-amazonica",
@@ -12746,7 +12891,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-palenque-resort",
@@ -12836,7 +12982,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-secas",
@@ -12919,7 +13066,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "isla-secas-panama",
@@ -13017,7 +13165,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ja-manufaru-maldives",
@@ -13112,7 +13261,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jabulani",
@@ -13172,7 +13322,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacana-camp",
@@ -13258,7 +13409,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacis-private-lodge",
@@ -13362,7 +13514,8 @@
     "safaris",
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacks-camp",
@@ -13450,7 +13603,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jacks-private-camp",
@@ -13539,7 +13693,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jaguar-reef-lodge",
@@ -13650,7 +13805,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jao-camp",
@@ -13735,7 +13891,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "jao-reserve",
@@ -13819,7 +13976,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ka-ana-resort",
@@ -13933,7 +14091,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kaaba-luum-mexico",
@@ -14028,7 +14187,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kamalaya-koh-samui",
@@ -14112,7 +14272,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-jimbaran-private-estates",
@@ -14209,7 +14370,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-nusa-dua",
@@ -14308,7 +14470,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-sanur",
@@ -14389,7 +14552,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kayumanis-ubud",
@@ -14490,7 +14654,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "khwai-leadwood-camp",
@@ -14574,7 +14739,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "khwai-lediba",
@@ -14658,7 +14824,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kichakani-camp",
@@ -14741,7 +14908,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kicheche-mara-north",
@@ -14833,7 +15001,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -14925,7 +15094,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kruger-shalati",
@@ -14985,7 +15155,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kualoa-ranch",
@@ -15076,7 +15247,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kudadoo-private-island",
@@ -15170,7 +15342,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kura-boutique-resort",
@@ -15264,7 +15437,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-4-rivers",
@@ -15356,7 +15530,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-kwara",
@@ -15460,7 +15635,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-lagoon",
@@ -15563,7 +15739,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-lebala",
@@ -15666,7 +15843,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-mma-dinare",
@@ -15758,7 +15936,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-moremi-crossing",
@@ -15853,7 +16032,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-nxai-pan",
@@ -15949,7 +16129,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-pom-pom",
@@ -16044,7 +16225,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-rra-dinare",
@@ -16136,7 +16318,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-splash",
@@ -16231,7 +16414,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwando-tau-pan",
@@ -16327,7 +16511,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwande-private-game-reserve",
@@ -16458,7 +16643,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "kwetsani-camp",
@@ -16546,7 +16732,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "la-cle",
@@ -16670,7 +16857,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "la-residence",
@@ -16776,7 +16964,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "la-valise-tulum",
@@ -16862,7 +17051,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ladder-ted-turner-reserve",
@@ -16948,7 +17138,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -17032,7 +17223,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lalibela-reserve",
@@ -17172,7 +17364,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lapa-rios-lodge",
@@ -17259,7 +17452,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "le-quartier-francais",
@@ -17380,7 +17574,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "la-tahaa",
@@ -17472,7 +17667,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "leeu-estates",
@@ -17600,7 +17796,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "leeu-house",
@@ -17716,7 +17913,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lekkerwater-dehoop",
@@ -17832,7 +18030,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lengishu-kenya",
@@ -17918,7 +18117,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "leopard-hills",
@@ -18039,7 +18239,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lepogo-lodges",
@@ -18099,7 +18300,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lewa-wilderness-lodge",
@@ -18187,7 +18389,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "linyanti-ebony-camp",
@@ -18264,7 +18467,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "linyanti-expedition-camp",
@@ -18345,7 +18549,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lion-sands",
@@ -18472,7 +18677,8 @@
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "little-tubu-camp",
@@ -18562,7 +18768,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lolebezi-lodge",
@@ -18653,7 +18860,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "londolozi-reserve",
@@ -18774,7 +18982,8 @@
     "classifiedBy": "James Papagno",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-longitude-131",
@@ -18881,7 +19090,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "loirien-mara",
@@ -18971,7 +19181,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "machaba",
@@ -19067,7 +19278,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "madikwe",
@@ -19188,7 +19400,8 @@
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": []
   },
   {
    "slug": "mara-plains-camp-by-great-plains",
@@ -19269,7 +19482,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "mara-toto-tree-camp-by-great-plains",
@@ -19353,7 +19567,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "masoala-forest-lodge",
@@ -19486,7 +19701,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "matachica-resort-and-spa",
@@ -19598,7 +19814,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "matetsi-victoria-falls",
@@ -19684,7 +19901,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "meno-a-kwena-camp",
@@ -19770,7 +19988,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "mezzanine-tulum",
@@ -19854,7 +20073,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "mfuwe-lodge",
@@ -19933,7 +20153,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "miavana-by-time-tide",
@@ -20027,7 +20248,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beyond-mnemba-by-and-beyond",
@@ -20113,7 +20335,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "monachira-camp",
@@ -20201,7 +20424,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "monwana-thornybush",
@@ -20324,7 +20548,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "morukuru-farm-house",
@@ -20453,7 +20678,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "mutiara-laut",
@@ -20541,7 +20767,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nihi",
@@ -20633,7 +20860,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-naboisho-camp-by-asilia",
@@ -20723,7 +20951,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "namale-resort-and-spa",
@@ -20818,7 +21047,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "namiri-plains-camp-by-asilia",
@@ -20914,7 +21144,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nautilus-maldives",
@@ -21003,7 +21234,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nay-palad-hideaway",
@@ -21094,7 +21326,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-alto-atacama",
@@ -21177,7 +21410,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-bocas-del-toro",
@@ -21264,7 +21498,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-gardens",
@@ -21356,7 +21591,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-hangaroa",
@@ -21444,7 +21680,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nayara-tented-camp",
@@ -21533,7 +21770,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ngala-safari-lodge-by-beyond",
@@ -21656,7 +21894,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ngare-camp-by-serian",
@@ -21745,7 +21984,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nikoi-island",
@@ -21835,7 +22075,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nimali-mara",
@@ -21912,7 +22153,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nimali-serengeti",
@@ -21987,7 +22229,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "niyama-private-islands-maldives",
@@ -22082,7 +22325,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "no-1-pery-square-limerick",
@@ -22192,7 +22436,10 @@
     "classifiedBy": "Claude, delegated by James (Ireland pilot shortlist, 31 Oct 2026)",
     "classifiedAt": "2026-10-31"
    },
-   "volumes": null
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85a"
+   ]
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -22283,7 +22530,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -22370,7 +22618,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-holbox",
@@ -22460,7 +22709,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-temple-ibiza",
@@ -22556,7 +22806,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-temple-madrid",
@@ -22652,7 +22903,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nomade-tulum",
@@ -22746,7 +22998,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "north-island-okavango",
@@ -22819,7 +23072,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nyungwe-tea-forest-resort",
@@ -22900,7 +23154,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ol-jogi-conservancy",
@@ -22998,7 +23253,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ol-pejeta-bush-camp-asilia",
@@ -23088,7 +23344,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "olas-tulum",
@@ -23176,7 +23433,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "asilia-olivers-camp",
@@ -23265,7 +23523,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "one-only-gorillas-nest",
@@ -23343,7 +23602,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "open-sky",
@@ -23429,7 +23689,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "our-habitas-namibia",
@@ -23511,7 +23772,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "our-habitas-tulum",
@@ -23603,7 +23865,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pacuare-lodge",
@@ -23698,7 +23961,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "paws-up-resort",
@@ -23786,7 +24050,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-bora-bora",
@@ -23872,7 +24137,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
@@ -23960,7 +24226,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-tahiti",
@@ -24048,7 +24315,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -24134,7 +24402,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pearl-resort-vahine-private-island",
@@ -24228,7 +24497,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pelo-camp",
@@ -24314,7 +24584,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -24438,7 +24709,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pods-camp-bay",
@@ -24552,7 +24824,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "post-ranch-inn",
@@ -24641,7 +24914,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "potato-bush-camp",
@@ -24728,7 +25002,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "pu-u-hoko-ranch",
@@ -24822,7 +25097,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "radhoo-tulum",
@@ -24906,7 +25182,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "rayvadee-resort",
@@ -25004,7 +25281,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-davui-island-resort",
@@ -25094,7 +25372,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-malewane",
@@ -25205,7 +25484,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "royal-zambezi-lodge",
@@ -25306,7 +25586,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "rubondo-island-camp-asilia",
@@ -25399,7 +25680,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sable-alley-khwai",
@@ -25482,7 +25764,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "salas-camp",
@@ -25565,7 +25848,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "samara-karoo-reserve",
@@ -25686,7 +25970,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sans-camp",
@@ -25765,7 +26050,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-eagle-view",
@@ -25857,7 +26143,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-leopard-hill",
@@ -25945,7 +26232,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-samburu-lodge",
@@ -26029,7 +26317,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "saruni-wild-lodge",
@@ -26119,7 +26408,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sasaab",
@@ -26215,7 +26505,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "seseka-thornybush",
@@ -26275,7 +26566,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sashwa",
@@ -26332,7 +26624,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sausage-tree-camp",
@@ -26419,7 +26712,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sayari-camp-asilia",
@@ -26505,7 +26799,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "segera-retreat",
@@ -26599,7 +26894,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-selinda-main-camp",
@@ -26672,7 +26968,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "senda-monteverde-lodge",
@@ -26768,7 +27065,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "serengeti-lamai-camp-by-serian",
@@ -26860,7 +27158,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "shawa-luangwa-camp",
@@ -26949,7 +27248,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "shinta-mani-wild",
@@ -27038,7 +27338,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "shipwreck-lodge-namibia",
@@ -27117,7 +27418,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sierra-grande-ted-turner-reserve",
@@ -27201,7 +27503,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-silky-oaks-lodge",
@@ -27307,7 +27610,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "silolona-sojourns",
@@ -27394,7 +27698,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sindabezi-island-camp",
@@ -27483,7 +27788,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-boulders",
@@ -27615,7 +27921,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-castleton",
@@ -27738,7 +28045,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-ebony",
@@ -27855,7 +28163,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-ebony-villa",
@@ -27975,7 +28284,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-elela",
@@ -28055,7 +28365,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-faru-faru-lodge",
@@ -28162,7 +28473,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-katanza-house",
@@ -28258,7 +28570,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-kilima",
@@ -28355,7 +28668,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-kwitonda",
@@ -28447,7 +28761,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-lebombo",
@@ -28573,7 +28888,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-lebombo-villa",
@@ -28693,7 +29009,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-malilangwe-house",
@@ -28788,7 +29105,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-mara-river",
@@ -28884,7 +29202,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-milele",
@@ -28974,7 +29293,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-pamushana",
@@ -29073,7 +29393,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sabora",
@@ -29174,7 +29495,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sasakwa",
@@ -29282,7 +29604,8 @@
     "safaris",
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-serengeti-house",
@@ -29378,7 +29701,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "singita-sweni",
@@ -29503,7 +29827,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sirai-house",
@@ -29560,7 +29885,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sirikoi-lodge",
@@ -29652,7 +29978,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sirius-yacht-galapagos",
@@ -29735,7 +30062,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "siwa-tulum",
@@ -29819,7 +30147,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-con-dao",
@@ -29914,7 +30243,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-crans-montana",
@@ -30003,7 +30333,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-douro-valley",
@@ -30092,7 +30423,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-fiji",
@@ -30185,7 +30517,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-ibiza",
@@ -30310,7 +30643,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-kanuhura",
@@ -30401,7 +30735,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-kyoto",
@@ -30494,7 +30829,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-laamu",
@@ -30582,7 +30918,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-ninh-van-bay",
@@ -30677,7 +31014,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-rome",
@@ -30766,7 +31104,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-samui",
@@ -30861,7 +31200,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-uluwatu",
@@ -30955,7 +31295,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-yao-noi",
@@ -31050,7 +31391,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-zil-pasyon",
@@ -31138,7 +31480,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "skybeds-khwai",
@@ -31216,7 +31559,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sleeping-giant-rainforest-lodge",
@@ -31327,7 +31671,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "somalisa-acacia",
@@ -31404,7 +31749,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-fushi-maldives",
@@ -31493,7 +31839,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-jani-maldives",
@@ -31574,7 +31921,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "soneva-secret-maldives",
@@ -31659,7 +32007,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "soori-bali",
@@ -31755,7 +32104,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-southern-ocean-lodge",
@@ -31853,7 +32203,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "st-george-s-caye-resort",
@@ -31964,7 +32315,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "sterrekopje",
@@ -32051,7 +32403,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "suyian-lodge-by-and-beyond",
@@ -32139,7 +32492,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tabacon-thermal-resort-spa",
@@ -32236,7 +32590,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tahi",
@@ -32321,7 +32676,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tanah-gajah",
@@ -32422,7 +32778,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tanda-tula",
@@ -32545,7 +32902,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-camp",
@@ -32660,7 +33018,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-kirkmans-kamp",
@@ -32783,7 +33142,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-rattrays-lodge",
@@ -32899,7 +33259,8 @@
     "stays",
     "safaris",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-mala-mala-sable-camp",
@@ -33011,7 +33372,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tengile-river-lodge-by-mala-mala",
@@ -33119,7 +33481,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "thatch-caye-resort",
@@ -33234,7 +33597,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-art-villa",
@@ -33336,7 +33700,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-atelier-villa",
@@ -33395,7 +33760,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-beach-tulum",
@@ -33481,7 +33847,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-brando-tetiaroa",
@@ -33568,7 +33935,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-hide-safari-camp",
@@ -33658,7 +34026,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-highlands-by-asilia-highlands",
@@ -33752,7 +34121,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-lodge-at-chaa-creek",
@@ -33867,7 +34237,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-the-louise",
@@ -33960,7 +34331,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "nami-project",
@@ -34046,7 +34418,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-retreat-at-blue-lagoon",
@@ -34139,7 +34512,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "the-silo-hotel",
@@ -34237,7 +34611,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "thornybush-reserve",
@@ -34297,7 +34672,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "beckon-tierra-atacama",
@@ -34394,7 +34770,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tierra-patagonia",
@@ -34482,7 +34859,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-chinzombo-2",
@@ -34575,7 +34953,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-chongwe-2",
@@ -34663,7 +35042,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "time-tide-mchenja",
@@ -34758,7 +35138,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tokoriki-island-resort",
@@ -34846,7 +35227,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tongabezi",
@@ -34934,7 +35316,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tswalu-reserve",
@@ -35069,7 +35452,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tubu-tree-camp",
@@ -35151,7 +35535,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "tuludi-khwai",
@@ -35235,7 +35620,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "turtle-inn",
@@ -35348,7 +35734,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ubuntu-migration-camp-asilia",
@@ -35437,7 +35824,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ulum-moab",
@@ -35532,7 +35920,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "umaya-resort-and-marina",
@@ -35645,7 +36034,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-brtce-canyon",
@@ -35734,7 +36124,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-glacier",
@@ -35820,7 +36211,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-grand-canyon",
@@ -35912,7 +36304,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-lake-powell-grand-staircase",
@@ -36001,7 +36394,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-moab",
@@ -36090,7 +36484,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-north-yellowstone",
@@ -36178,7 +36573,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-west-yellowstone",
@@ -36266,7 +36662,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-yosemite",
@@ -36354,7 +36751,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "under-canvas-zion",
@@ -36443,7 +36841,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "ungasan-clifftops",
@@ -36537,7 +36936,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "uxua-casa-hotel-spa",
@@ -36629,7 +37029,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "velaa-private-island",
@@ -36720,7 +37121,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "vermejo-ted-turner-reserve",
@@ -36820,7 +37222,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "viceroy-bali",
@@ -36921,7 +37324,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "lales-camp-expeditions",
@@ -36998,7 +37402,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-bisate-reserve",
@@ -37081,7 +37486,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-busanga",
@@ -37169,7 +37575,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-desert-rhino-camp",
@@ -37255,7 +37662,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-damaraland",
@@ -37349,7 +37757,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-dumatau",
@@ -37452,7 +37861,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-hoanib-skeleton-camp",
@@ -37538,7 +37948,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-kulala-desert-camp",
@@ -37627,7 +38038,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "linyanti-wilderness-camp",
@@ -37704,7 +38116,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-duma-tau",
@@ -37792,7 +38205,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-kulala",
@@ -37882,7 +38296,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-little-mombo",
@@ -37967,7 +38382,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-magashi-peninsula",
@@ -38052,7 +38468,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mara",
@@ -38138,7 +38555,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mokete",
@@ -38232,7 +38650,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-mombo-luxury-camp",
@@ -38333,7 +38752,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-qorokwe",
@@ -38418,7 +38838,8 @@
    "volumes": [
     "safaris",
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-ruckomechi",
@@ -38507,7 +38928,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-sabyinyo",
@@ -38596,7 +39018,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-savuti",
@@ -38688,7 +39111,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-serra-cafema",
@@ -38771,7 +39195,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-shumba",
@@ -38862,7 +39287,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-toka-leya",
@@ -38955,7 +39381,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-usawa",
@@ -39046,7 +39473,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wilderness-vumbura-plains",
@@ -39136,7 +39564,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wolwedans-dune-camp",
@@ -39229,7 +39658,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "wren-urban-nest",
@@ -39337,6 +39767,9 @@
    "volumes": [
     "stays",
     "europe"
+   ],
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858"
    ]
   },
   {
@@ -39443,7 +39876,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "xela-tulum",
@@ -39537,7 +39971,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "xigera-safari-lodge",
@@ -39615,7 +40050,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "zannier-sonop",
@@ -39693,7 +40129,8 @@
    },
    "volumes": [
     "stays"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-zarafa-camp",
@@ -39766,7 +40203,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "great-plains-zarafa-dhow-suite",
@@ -39839,7 +40277,8 @@
    "volumes": [
     "stays",
     "safaris"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-krabey-island",
@@ -39934,7 +40373,8 @@
    "volumes": [
     "stays",
     "gatherings"
-   ]
+   ],
+   "arrivalHubIds": []
   },
   {
    "slug": "six-senses-residences-courchevel",
@@ -40023,7 +40463,8 @@
    "volumes": [
     "stays",
     "europe"
-   ]
+   ],
+   "arrivalHubIds": []
   }
  ]
 }

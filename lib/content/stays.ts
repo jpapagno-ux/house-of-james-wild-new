@@ -14,6 +14,8 @@ export type StayData = {
   // Wild Pathways (Phase 2A): carried by the export once the library has the fields; absent or null until then.
   pathway?: { primary: string; secondary: string[]; setting: string | null; intentions: string[]; suitability: string[]; status: "draft" | "approved"; classifiedBy: string | null; classifiedAt: string | null } | null;
   volumes?: string[] | null;
+  // Stage 5 (Last Mile): ArrivalHub record ids from the library; resolve with lib/content/arrivals.ts.
+  arrivalHubIds?: string[];
 };
 
 const has = (b: Block) => b.paras.length > 0 || b.items.length > 0;

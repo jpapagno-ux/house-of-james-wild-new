@@ -88,5 +88,36 @@
     "stay:monwana-thornybush": { "property": "monwana" },
     "stay:cape-cadogan-boutique-hotel": { "property": "cape-cadogan" },
     "stay:marataba": { "property": "marataba" }
+  },
+  "offers": {
+    "_source": "more.co.za/offers (StayMORE, CelebrateMORE, Friends of MORE, DiscoverMORE, Best of Both Worlds), read 1 Nov 2026. Terms pages say valid 4 Feb 2026 to 31 May 2028; MORE's banners say 30 Apr 2027 for three of them (follow-up with MORE).",
+    "validTo": "2028-05-31",
+    "freeNight": {
+      "name": "StayMORE",
+      "minNights": 4,
+      "excludeRows": [
+        "marataba-villa"
+      ]
+    },
+    "celebrate": {
+      "name": "CelebrateMORE",
+      "pct": 25,
+      "minNights": 3
+    },
+    "returning": {
+      "name": "Friends of MORE",
+      "pct": 10
+    },
+    "notes": [
+      "DiscoverMORE: 10% off at each lodge when you book two MORE properties (instead of the offers above)"
+    ],
+    "notesByProperty": {
+      "lion-sands": [
+        "Best of Both Worlds: free connecting flights with 3 nights here and 3 at Marataba"
+      ],
+      "marataba": [
+        "Best of Both Worlds: free connecting flights with 3 nights here and 3 at Lion Sands"
+      ]
+    }
   }
 }

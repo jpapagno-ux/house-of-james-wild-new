@@ -36,7 +36,7 @@ test("accepts the Jimbaran engine address with its trailing hyphen", () => {
 });
 
 import { readFileSync } from "node:fs";
-import { cardFor as cf, estimate, yearFor as yf, type CardData } from "../lib/rate-card.ts";
+import { applyOffers, cardFor as cf, estimate, yearFor as yf, type CardData } from "../lib/rate-card.ts";
 const MORE = JSON.parse(readFileSync(new URL("../lib/content/rate-cards/more.json", import.meta.url), "utf8")) as CardData;
 const cardFor = (k: string) => cf(MORE, k);
 const yearFor = (p: string, a: string, b: string) => yf(MORE, p, a, b);
@@ -59,4 +59,33 @@ test("MORE estimates: per person sharing, children, villa and dates", () => {
   assert.ok(yearFor("lion-sands", "2027-02-10", "2027-02-13"));
   assert.equal(yearFor("lion-sands", "2027-07-10", "2027-07-13"), null);
   assert.equal(yearFor("lion-sands", "2026-12-28", "2027-01-02"), null);
+});
+
+test("MORE offers: StayMORE, CelebrateMORE, Friends of MORE and the Villa exclusion", () => {
+  const rows = MORE.properties["marataba"].years["2027"].rows;
+  const safari = rows.find((r) => r.key === "safari-lodge")!;
+  const villa = rows.find((r) => r.key === "marataba-villa")!;
+  const party = { adults: 2, children: [] };
+  const o = MORE.offers!;
+  const four = estimate(safari, 4, party); assert.ok(four.ok);
+  if (!four.ok) return;
+  // 4 nights: one night free
+  const a = applyOffers(safari, four, party, o, { celebrating: false, returning: false });
+  assert.equal(a.savings[0].name, "StayMORE");
+  assert.equal(Math.round(a.zar), Math.round(four.zar * 3 / 4));
+  // celebrating on 5 nights: 25% of the couple beats one free night of five
+  const five = estimate(safari, 5, party); assert.ok(five.ok);
+  if (!five.ok) return;
+  const c = applyOffers(safari, five, party, o, { celebrating: true, returning: false });
+  assert.equal(c.savings[0].name, "CelebrateMORE");
+  assert.equal(Math.round(c.zar), Math.round(five.zar * 0.75));
+  // returning guests stack 10% on top
+  const r = applyOffers(safari, five, party, o, { celebrating: true, returning: true });
+  assert.equal(Math.round(r.zar), Math.round(five.zar * 0.75 * 0.9));
+  // 3 nights: no free night, a note instead
+  const three = estimate(safari, 3, party); assert.ok(three.ok);
+  if (three.ok) { const t = applyOffers(safari, three, party, o, { celebrating: false, returning: false }); assert.equal(t.savings.length, 0); assert.match(t.notes[0], /StayMORE/); }
+  // Marataba Villa is excluded from StayMORE
+  const v = estimate(villa, 4, { adults: 4, children: [] }); assert.ok(v.ok);
+  if (v.ok) assert.equal(applyOffers(villa, v, { adults: 4, children: [] }, o, { celebrating: false, returning: false }).savings.length, 0);
 });

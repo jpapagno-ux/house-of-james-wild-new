@@ -10,7 +10,7 @@ export type Basis = "pps" | "unit" | "exclusive";
 export type CardRow = { key: string; name: string; units: string; zar: number; usd: number; basis: Basis; maxGuests: number; maxAdults?: number; minAge: number; child?: { from: number; to: number; pct: number; freeUnder?: number }; note: string };
 export type Year = { validFrom: string; validTo: string; rows: CardRow[] };
 type Card = { name: string; years: Record<string, Year> };
-export type CardData = { _source: string; partner: string; currency: string; properties: Record<string, Card>; pages: Record<string, { property: string; rows?: string[] }> };
+export type CardData = { _source: string; partner: string; currency: string; properties: Record<string, Card>; pages: Record<string, { property: string; rows?: string[] }>; offers?: OfferRules & { validTo?: string; notesByProperty?: Record<string, string[]> } };
 export const BASIS_LABEL: Record<Basis, string> = { pps: "per person per night sharing", unit: "per room per night", exclusive: "exclusive use per night" };
 
 /** The rows a page shows, from the latest year, for "from" prices. */
@@ -65,4 +65,48 @@ export function estimate(row: CardRow, nights: number, party: Party): Estimate {
   if (party.adults === 1 && party.children.length === 0) lines.push("Single travellers usually pay a supplement; the lodge confirms it");
   const t = per(row.zar * people * nights);
   return { ok: true, nights, units, ...t, lines };
+}
+
+// Partner offers applied to an estimate (MORE Collection, 1 Nov 2026, terms from
+// more.co.za/offers). A free-night offer and a celebration discount are not
+// stated as combinable with each other, so the larger one applies; a returning-
+// guest discount stacks on top. Multi-property offers (DiscoverMORE, Best of
+// Both Worlds) need a second lodge, so they show as notes for the planner.
+export type OfferRules = {
+  freeNight?: { name: string; minNights: number; excludeRows?: string[] };
+  celebrate?: { name: string; pct: number; minNights: number };
+  returning?: { name: string; pct: number };
+  notes?: string[];
+};
+export type OfferChoice = { celebrating: boolean; returning: boolean };
+export type Applied = { zar: number; usd: number; savings: { name: string; zar: number; usd: number }[]; notes: string[] };
+
+export function applyOffers(row: CardRow, e: Extract<Estimate, { ok: true }>, party: Party, rules: OfferRules | undefined, choice: OfferChoice): Applied {
+  const toUsd = (z: number) => Math.round((z * e.usd) / (e.zar || 1) * 100) / 100;
+  const notes: string[] = [];
+  const savings: { name: string; zar: number }[] = [];
+  if (!rules) return { zar: e.zar, usd: e.usd, savings: [], notes };
+  const night = e.zar / e.nights;
+  let free = 0, cel = 0;
+  const fn = rules.freeNight;
+  if (fn && !(fn.excludeRows ?? []).includes(row.key)) {
+    if (e.nights >= fn.minNights) free = night;
+    else notes.push(`${fn.name}: stay ${fn.minNights} nights and one night is free`);
+  }
+  const c = rules.celebrate;
+  if (c && choice.celebrating) {
+    if (e.nights < c.minNights) notes.push(`${c.name} needs ${c.minNights} nights or more`);
+    else if (row.basis === "pps") cel = (row.zar * Math.min(2, party.adults) * e.nights * c.pct) / 100;
+    else if (row.basis === "unit") cel = (row.zar * e.nights * c.pct) / 100;
+    else notes.push(`${c.name} on a whole villa is confirmed with your quote`);
+  }
+  if (free || cel) {
+    const best = free >= cel ? { name: fn!.name, zar: free } : { name: c!.name, zar: cel };
+    savings.push(best);
+    if (free && cel) notes.push(`${free >= cel ? c!.name : fn!.name} does not combine with ${best.name}; the larger saving is shown`);
+  }
+  let zar = e.zar - savings.reduce((s, x) => s + x.zar, 0);
+  const r = rules.returning;
+  if (r && choice.returning) { const off = (zar * r.pct) / 100; savings.push({ name: r.name, zar: off }); zar -= off; }
+  return { zar, usd: toUsd(zar), savings: savings.map((s) => ({ ...s, usd: toUsd(s.zar) })), notes };
 }

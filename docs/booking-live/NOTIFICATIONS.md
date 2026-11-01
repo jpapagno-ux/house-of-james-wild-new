@@ -50,3 +50,26 @@ by hand (an advisor conversation, not a template). Easy to add later as
 `npm test` (127 incl. `tests/notify.test.ts`), `tsc --noEmit`, `npm run build`.
 On Preview without a key: make a request on `/booking/property/lion-sands` and
 read the function log for the two `dry-run` lines.
+
+## End-to-end chain, verified 1 Nov 2026 (database layer)
+
+Run against the shared Booking Live database inside one transaction that was
+rolled back (nothing left behind), on River Lodge Luxury Room, 3 nights
+10–13 Jun 2027, the worked example from `LION-SANDS-CHECKOUT.md`:
+
+| Step | Result |
+| --- | --- |
+| 1 Request to Reserve | `Q-…` quoted · pending · total 12,474.06 · deposit 3,742.22 |
+| 2 Hold | **refused** — `advisor_status` check still `pending|approved|declined` until the house runs `supabase/manual/0011b_hold_status.sql` |
+| 3 Approve | approved · availability confirmed_by_property |
+| 4 Booking from the quote | `B-…` confirmed, figures copied from the quote; quote → converted |
+| 5 Deposit via gateway (`settle_payment`, repeated event) | deposit_paid · 3,742.22 paid; the repeat ignored |
+| 6 Overpayment | refused: *payment exceeds what is owed* |
+| 7 Balance (manual) | paid · 12,474.06 paid · 0 outstanding |
+| 8 Partial refund 1,000.00 on the balance | payment refunded 1,000.00 · booking back to deposit_paid |
+| 8b Refund beyond the payment | refused: *refund exceeds what remains of this payment* |
+| 9 Cancel | cancelled · cancelled_at set |
+
+The HTTP routes and the emails above sit on top of exactly these calls; the
+browser click-through on the Vercel Preview is still owed once the Preview's
+authentication is lifted (the agent's Vercel connection cannot open it).

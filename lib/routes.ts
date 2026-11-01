@@ -83,6 +83,8 @@ export const BUILT: string[] = [
   "/destinations/asia/indonesia/raja-ampat",
   "/destinations/asia/indonesia/komodo",
   "/destinations/south-america/chile/rapa-nui",
+  "/destinations/south-america/chile/atacama",
+  "/destinations/south-america/chile/patagonia",
   "/destinations/polar-arctic",
   "/journal",
   "/journal/monwana-couples-first-safari",

@@ -531,3 +531,14 @@ Note on batch 3 writes: 17 records whose second secondary pathway was unique to 
 | Leopards Through the Lens | South Africa | route | Where the Wild Lives | — |
 | Track Your Life with Boyd Varty | South Africa | route | The Art of Stillness | Where the Wild Lives |
 | Three Generations at Pioneer | South Africa | route | A Place of Our Own | Where the Wild Lives |
+
+## How classifications reach the library (from 1 Nov 2026)
+
+Bulk pathway writes no longer happen by hand. An approved batch is committed to
+`scripts/data/pathway-apply.json`, reviewed in a PR, and on merge the
+`Pathway apply` workflow posts it to the library's `pathwayApply` function with
+a GitHub OIDC token (main branch only; only the nine pathway fields; every record
+validated before any write; writes paced to the platform's 350-per-minute limit).
+The workflow then runs the library sync so the site follows. The commit is the
+audit trail; `appliedOn` in the file records when it landed. First batch:
+batch-3 refinements, 364 records, run #41307635971.

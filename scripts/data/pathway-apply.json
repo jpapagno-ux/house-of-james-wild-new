@@ -1,7 +1,7 @@
 {
- "_note": "Wild Pathways — approved classification batch the site applies to the library (see .github/workflows/pathway-apply.yml and the library's pathwayApply function). Only the nine pathway fields can change. This file is the audit trail: every record here was approved by James. Batch 3 refinements (1 Nov 2026, FOLLOW-UPS #21): place-level pathway_setting for 364 batch-3 stays and the 35 tertiary pathways the bulk write had collapsed.",
+ "_note": "Wild Pathways — approved classification batch the site applies to the library (see .github/workflows/pathway-apply.yml and the library's pathwayApply function). Only the nine pathway fields can change. This file is the audit trail: every record here was approved by James. Batch 3 refinements (1 Nov 2026, FOLLOW-UPS #21): place-level pathway_setting for 364 batch-3 stays and the 35 tertiary pathways the bulk write had collapsed. To apply a new batch: replace `records`, set `appliedOn` to null, open a PR; the workflow stamps nothing itself, so set appliedOn to the date once the run reports ok and the sync has landed.",
  "by": "James Papagno (batch 3, drafted by Iggi)",
- "appliedOn": null,
+ "appliedOn": "2026-11-01",
  "records": [
   {
    "id": "6ae6133ad04bdb7984634d50",
@@ -1962,5 +1962,6 @@
    "slug": "beyond-lake-serengeti-under-canvas",
    "pathway_setting": "serengeti"
   }
- ]
+ ],
+ "appliedRun": "jpapagno-ux/house-of-james-wild-new#41307635971"
 }

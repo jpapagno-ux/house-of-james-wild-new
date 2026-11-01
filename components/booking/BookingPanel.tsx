@@ -25,10 +25,14 @@ const zar = (n: number) => `R${n.toLocaleString("en-US")}`;
 const nice = (d: string) => (d ? new Date(d + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "");
 const PLAN_NOTE: Record<string, string> = { "Best Available Rate": "Flexible rate", "Length of Stay Discount": "Stay longer, pay less" };
 
-export function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose, hostHref }: { hostHref?: string; pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void }) {
+export type CheckoutOffer = { name: string; program?: string; terms?: string; usd: number };
+export type CheckoutPricing = { base: number; savings: CheckoutOffer[]; source: string };
+
+export function Checkout({ pick, q, nights, name, included, excluded, policies, engine, onClose, hostHref, pricing, guests }: { hostHref?: string; pick: NonNullable<Pick>; q: { checkIn: string; checkOut: string; adults: number }; nights: number; name: string; included: string[]; excluded: string[]; policies: string[]; engine: string; onClose: () => void; pricing?: CheckoutPricing; guests?: string }) {
+  const [agreed, setAgreed] = useState(false);
   const [done, setDone] = useState(false);
   const [f, setF] = useState({ name: "", email: "", phone: "" });
-  const ok = f.name.trim().length > 1 && /.+@.+\..+/.test(f.email);
+  const ok = f.name.trim().length > 1 && /.+@.+\..+/.test(f.email) && agreed;
   useEffect(() => { const k = (e: KeyboardEvent) => e.key === "Escape" && onClose(); document.addEventListener("keydown", k); document.body.style.overflow = "hidden"; return () => { document.removeEventListener("keydown", k); document.body.style.overflow = ""; }; }, [onClose]);
   return (
     <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-labelledby="co-title">
@@ -44,7 +48,8 @@ export function Checkout({ pick, q, nights, name, included, excluded, policies, 
             <h3 className="ledger-display text-2xl mt-4">{pick.room.name}</h3>
             <p className="text-[14px] ledger-muted">{name} · {pick.plan}</p>
             <dl className="mt-5 border-t ledger-rule text-[15px]">
-              {[["Dates", `${nice(q.checkIn)} → ${nice(q.checkOut)}`], ["Guests", `${q.adults} ${q.adults === 1 ? "adult" : "adults"}`], [`${usd(pick.total / nights)} × ${nights} ${nights === 1 ? "night" : "nights"}`, usd(pick.total)], [`Florida sales tax (${Math.round(FL_TAX_RATE * 100)}%)`, usd(pick.total * FL_TAX_RATE)], ["Hotel taxes & fees", "Added by the hotel at booking"]].map(([k, v]) => <div key={k} className="flex justify-between gap-4 py-2.5 border-b ledger-rule"><dt className="ledger-muted">{k}</dt><dd className="text-right">{v}</dd></div>)}
+              {[["Dates", `${nice(q.checkIn)} → ${nice(q.checkOut)}`], ["Guests", guests ?? `${q.adults} ${q.adults === 1 ? "adult" : "adults"}`],
+                ...(pricing && pricing.savings.length ? [[`Published rate, ${nights} ${nights === 1 ? "night" : "nights"}`, usd(pricing.base)], ...pricing.savings.map((o) => [`${o.name}${o.program ? ` · ${o.program}` : ""}`, `−${usd(o.usd)}`]), ["Accommodation after offers", usd(pick.total)]] : [[`${usd(pick.total / nights)} × ${nights} ${nights === 1 ? "night" : "nights"}`, usd(pick.total)]]), [`Florida sales tax (${Math.round(FL_TAX_RATE * 100)}%)`, usd(pick.total * FL_TAX_RATE)], ["Hotel taxes & fees", "Added by the hotel at booking"]].map(([k, v]) => <div key={k} className="flex justify-between gap-4 py-2.5 border-b ledger-rule"><dt className="ledger-muted">{k}</dt><dd className="text-right">{v}</dd></div>)}
               <div className="flex justify-between gap-4 py-3"><dt className="ledger-display text-xl">Total</dt><dd className="ledger-display text-xl ledger-crimson">{usd(pick.total * (1 + FL_TAX_RATE))}</dd></div>
               <p className="pb-3 text-[12.5px] ledger-muted">Includes 7% Florida sales tax. The hotel&rsquo;s own taxes and fees are added at booking.</p>
             </dl>
@@ -52,6 +57,15 @@ export function Checkout({ pick, q, nights, name, included, excluded, policies, 
               <summary className="py-3 cursor-pointer ledger-eyebrow list-none [&::-webkit-details-marker]:hidden">Included &amp; not included</summary>
               <ul className="pb-3 grid gap-1.5 text-[14px]">{included.map((x) => <li key={x} className="flex gap-2"><Check className="w-3.5 h-3.5 mt-1 ledger-crimson shrink-0" strokeWidth={1.5} />{x}</li>)}{excluded.map((x) => <li key={x} className="flex gap-2 ledger-muted"><X className="w-3.5 h-3.5 mt-1 shrink-0" strokeWidth={1.5} />{x}</li>)}</ul>
             </details>
+            {pricing && pricing.savings.length > 0 && (
+              <details className="border-t ledger-rule" open>
+                <summary className="py-3 cursor-pointer ledger-eyebrow list-none [&::-webkit-details-marker]:hidden">Offer terms</summary>
+                <ul className="pb-3 grid gap-2.5 text-[13.5px]">
+                  {pricing.savings.map((o) => <li key={o.name}><span className="font-medium">{o.name}</span>{o.program ? <span className="ledger-muted"> · {o.program}</span> : null}{o.terms ? <span className="block ledger-muted">{o.terms}</span> : null}</li>)}
+                  <li className="ledger-muted">{pricing.source}</li>
+                </ul>
+              </details>
+            )}
             <details className="border-t border-b ledger-rule">
               <summary className="py-3 cursor-pointer ledger-eyebrow list-none [&::-webkit-details-marker]:hidden">Cancellation &amp; payment</summary>
               <ul className="pb-3 grid gap-1.5 text-[14px]">{policies.map((x) => <li key={x}>{x}</li>)}</ul>
@@ -59,6 +73,7 @@ export function Checkout({ pick, q, nights, name, included, excluded, policies, 
             <form className="mt-6 grid gap-3" onSubmit={(e) => { e.preventDefault(); if (ok) setDone(true); }}>
               <p className="ledger-eyebrow">Lead traveller</p>
               {(["name", "email", "phone"] as const).map((k) => <label key={k} className="block"><span className="text-[13px] ledger-muted capitalize">{k === "phone" ? "Phone (optional)" : k}</span><input type={k === "email" ? "email" : k === "phone" ? "tel" : "text"} required={k !== "phone"} value={f[k]} onChange={(e) => setF({ ...f, [k]: e.target.value })} className="mt-1 w-full bg-paper border ledger-border px-3 py-2 text-[16px]" autoComplete={k === "name" ? "name" : k} /></label>)}
+              <label className="flex items-start gap-2 text-[13.5px] mt-1"><input type="checkbox" className="mt-1" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} required /><span>I understand this is a request, not a confirmed booking: the price is an estimate{pricing?.savings.length ? ", offers depend on eligibility," : ""} and the lodge&rsquo;s own deposit, cancellation and rate terms apply once the house confirms.</span></label>
               <button type="submit" disabled={!ok} className="ledger-btn w-full justify-center mt-2 disabled:opacity-50">Book now · sample</button>
               {hostHref && <a href={hostHref} onClick={onClose} className="text-center text-[15px] text-[#3b2716] -rotate-[1deg] hover:text-crimson" style={{ fontFamily: "'Homemade Apple', cursive" }} data-event="booking_host_click">Not sure yet? Meet the host first ↓</a>}
               <p className="text-[12.5px] ledger-muted">Sample checkout for the team: nothing is charged or sent. Live, this creates a Folio request to myfolio@jameswildco.com and the house confirms with the estate before any payment.</p>

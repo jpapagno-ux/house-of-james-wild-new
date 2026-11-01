@@ -94,6 +94,8 @@
     "validTo": "2028-05-31",
     "freeNight": {
       "name": "StayMORE",
+      "program": "Worth Another Night",
+      "terms": "One complimentary night when you book four consecutive nights. Not valid at Marataba Villa. Does not combine with CelebrateMORE; can be combined with Friends of MORE. Up to 5 rooms or 10 guests. Subject to availability.",
       "minNights": 4,
       "excludeRows": [
         "marataba-villa"
@@ -101,11 +103,15 @@
     },
     "celebrate": {
       "name": "CelebrateMORE",
+      "program": "Time Rewarded",
+      "terms": "25% off accommodation for the guest celebrating a honeymoon, babymoon, milestone anniversary or birthday and their room-sharing partner. Three consecutive nights minimum. Does not combine with StayMORE; can be combined with Friends of MORE. Up to 5 rooms or 10 guests. Subject to availability.",
       "pct": 25,
       "minNights": 3
     },
     "returning": {
       "name": "Friends of MORE",
+      "program": "Time Rewarded",
+      "terms": "10% off accommodation for guests who have stayed with MORE Collection before and the friends and family travelling with them. Combines with StayMORE and CelebrateMORE. Up to 5 rooms or 10 guests. Subject to availability.",
       "pct": 10
     },
     "notes": [

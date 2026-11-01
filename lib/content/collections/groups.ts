@@ -39,6 +39,12 @@ export const GROUPS: SisterGroup[] = [
     line: "Private pool villa estates across Bali: Ubud, Nusa Dua, Jimbaran and Sanur, each bookable live.",
     slugs: ["kayumanis-ubud", "kayumanis-nusa-dua", "kayumanis-jimbaran-private-estates", "kayumanis-sanur"],
   },
+  {
+    key: "more-collection",
+    name: "MORE Collection",
+    line: "The More family's lodges and hotels in South Africa: Lion Sands in the Sabi Sand, Monwana in Thornybush, Marataba in the malaria-free Waterberg and Cape Cadogan in Cape Town.",
+    slugs: ["lion-sands", "monwana-thornybush", "marataba", "cape-cadogan-boutique-hotel"],
+  },
 ];
 
 export function sistersFor(slug: string): { group: SisterGroup; stays: StayData[] } | null {

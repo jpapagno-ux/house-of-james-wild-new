@@ -9,7 +9,9 @@
 import { MONWANA_BODY } from "./monwana-couples-first-safari";
 import { AFRICA_BODY } from "./africa-inspired-wild-and-co-safaris";
 import { CAYUGA_BODY } from "./cayuga-collection-sustainable-luxury";
+import { AKAGERA_BODY } from "./akagera-rewilding-magashi-peninsula";
 import { cayugaImg as cy } from "../collections/cayuga";
+import { pathwayHref } from "../pathways/flag";
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 // Full-resolution delivery: AI upscale for anything under ~2400px wide, then
@@ -57,7 +59,70 @@ export type JournalPost = {
   youtube?: string;
 };
 
+const MAG = (f: string) => `${B44}/${f}`; // Magashi photographs on the live stay record (Wilderness)
+
 export const POSTS: Record<string, JournalPost> = {
+  "akagera-rewilding-magashi-peninsula": {
+    slug: "akagera-rewilding-magashi-peninsula",
+    ledgerId: "WED-2026-000014",
+    shelf: "Field notes",
+    title: "Akagera, Rewilded: Rwanda's Savannah and Magashi Peninsula",
+    seoTitle: "Akagera National Park: Rewilding and Magashi Peninsula",
+    description: "How Akagera National Park in Rwanda was rewilded with lions and rhino, what you can see there now, and why Wilderness Magashi Peninsula is where we stay.",
+    dek: "Lions back in 2015, black rhino in 2017, a hundred white rhino since 2021. How Rwanda's savannah park came back, and where we put you to see it.",
+    answer: "Since 2010 African Parks and the Rwanda Development Board have run Akagera together: fencing and protection first, then lions in 2015 and 2017, eastern black rhino in 2017 and 2019, and southern white rhino in 2021 and 2025. Lion, leopard, elephant, rhino and buffalo now live there. Stay at Wilderness Magashi Peninsula, the park's only private access area.",
+    place: "Akagera National Park · Rwanda",
+    published: "2026-11-01",
+    modified: "2026-11-01",
+    hero: { url: MAG("d71908c90_c10d8e823_6932c4b9144c097f7b4a9f93_wilderness-magashi-peninsula.webp"), alt: "The Magashi peninsula reaching into Lake Rwanyakazinga from the air, with the hills of Akagera National Park beyond", w: 1440, h: 809, credit: "Photograph: Wilderness" },
+    film: {
+      id: "67roculU9V4",
+      title: "Africa's Newest Rewilding Success Story | Akagera National Park & Wilderness' Magashi Peninsula",
+      description: "From the house channel, Wild Earth Stays. How Akagera National Park in Rwanda was brought back with lions and rhino under African Parks and the Rwanda Development Board, and a look at Wilderness Magashi Peninsula on Lake Rwanyakazinga, the park's only private access area.",
+      uploadDate: "2026-02-28",
+      after: "why-does-akagera-matter",
+    },
+    body: AKAGERA_BODY,
+    figures: [
+      { after: "how-was-akagera-rewilded", layout: "wide", images: [{ url: MAG("2953095c7_3da0527dc_695b66f2ab89a28052201b25_Star_20Deck_MagashiPeninsula_Rwanda10-25-FELIX-11.jpg"), alt: "A canopied Star Bed made up on the rooftop deck at Wilderness Magashi Peninsula", w: 1275, h: 850, caption: "The rooftop Star Bed. Every suite and the villa has one.", credit: "Photograph: Wilderness" }] },
+      { after: "what-is-magashi-peninsula-like", layout: "pair", images: [
+        { url: MAG("1cefa6696_e83aa1873_695b86df517bcce3c04eaa50_Villa_MagashiPeninsula_Rwanda10-25-FELIX-110.jpg"), alt: "A bedroom in the villa at Magashi Peninsula with a window seat, green linen and woven textures", w: 1275, h: 850, caption: "The villa: two en-suite rooms and a third that can be a children's room.", credit: "Photograph: Wilderness" },
+        { url: MAG("1cc224fc8_d9a382ef5_695b86df81d4d9b71077edc4_Villa_MagashiPeninsula_Rwanda10-25-FELIX-137.jpg"), alt: "A freestanding green bath on a stone floor beside open glass doors in the villa at Magashi Peninsula", w: 1275, h: 850, caption: "Rwandan craft in the details, the lake through the doors.", credit: "Photograph: Wilderness" },
+      ] },
+      { after: "how-do-you-combine-akagera-with-gorilla-trekking", layout: "wide", images: [{ url: MAG("bb8f82263_723b9c880_695b86df6bf212898cc00766_Villa_MagashiPeninsula_Rwanda10-25-FELIX-142.jpg"), alt: "A stone basin on a wooden vanity against a patterned wall in the villa bathroom at Magashi Peninsula", w: 1275, h: 850, caption: "Three nights here after the gorillas is about right.", credit: "Photograph: Wilderness" }] },
+    ],
+    close: "James Wild & Co",
+    faqTitle: "Questions About Akagera and Magashi Peninsula",
+    planPlace: "Rwanda",
+    faqs: [
+      { q: "How was Akagera National Park rewilded?", a: "African Parks has managed Akagera with the Rwanda Development Board since 2010. Protection came first, and no elephant, rhino or lion has been lost to poaching since. Lions were reintroduced in 2015 and 2017, eastern black rhino in 2017 and 2019, and southern white rhino in 2021 and June 2025." },
+      { q: "Can you see the Big Five in Akagera?", a: "Yes. African Parks lists thriving populations of lion, leopard, elephant, rhino and buffalo in the park. Sightings are never guaranteed, but all five are there." },
+      { q: "How many rhinos have been brought to Akagera?", a: "African Parks reports 18 eastern black rhino in 2017 and five more from European zoos in June 2019, then 30 southern white rhino in 2021 and 70 more in June 2025 under the Rhino Rewild Initiative." },
+      { q: "Where should you stay in Akagera?", a: "We recommend Wilderness Magashi Peninsula: two couple's suites and one exclusive-use villa on a 4,287-hectare private area on Lake Rwanyakazinga, the only private access area in the park. Its sister camp, Magashi Camp, shares the concession." },
+      { q: "Is Magashi Peninsula good for families?", a: "Yes, in the villa. It has two en-suite rooms, a third room that can be a children's room, its own kitchen, lounge and plunge pool, a private guide and meals served in the villa. The two suites are designed for couples." },
+      { q: "Can you combine Akagera with gorilla trekking?", a: "Yes. Helicopters link Akagera with Volcanoes National Park. A common shape is a night in Kigali, three nights in the Volcanoes for gorillas and three nights at Magashi Peninsula. Gorilla permits are booked separately and early." },
+      { q: "When is the best time to visit Akagera?", a: "Wilderness names the dry seasons, June to September and December to February, as the best time for an Akagera safari, when wildlife gathers around water and sightings are easier." },
+      { q: "How do you get to Magashi Peninsula from Kigali?", a: "Wilderness recommends a charter helicopter of about 22 minutes from Kigali. By road it is about two and a half hours to Akagera National Park." },
+    ],
+    stays: [
+      { slug: "wilderness-magashi-peninsula", name: "Wilderness Magashi Peninsula", line: "Akagera National Park, Rwanda · two suites and a villa", note: "The park's only private access area, on Lake Rwanyakazinga. Couples in the suites, families in the villa.", image: { url: MAG("d71908c90_c10d8e823_6932c4b9144c097f7b4a9f93_wilderness-magashi-peninsula.webp"), alt: "The Magashi peninsula in Lake Rwanyakazinga from the air", w: 1440, h: 809 } },
+      { slug: "wilderness-bisate-reserve", name: "Wilderness Bisate Reserve", line: "Volcanoes National Park, Rwanda", note: "For the gorilla days, from Wilderness on both legs of the trip.", image: { url: `${B44}/7e0255ea5_699c45336_693bbd9d8962cf0586d4d2f9_wilderness-bisate-reserve.jpg`, alt: "Wilderness Bisate Reserve, Volcanoes National Park, Rwanda", w: 1920, h: 1080 } },
+      { slug: "wilderness-sabyinyo", name: "Wilderness Sabyinyo", line: "Volcanoes National Park, Rwanda", note: "The other Wilderness choice for gorilla trekking.", image: { url: `${B44}/6c7e8bba3_88fbd3b39_68a503e7f95cc131b411b5c5_Suite_2007.jpg`, alt: "A suite at Wilderness Sabyinyo", w: 1750, h: 1280 } },
+      { slug: "singita-kwitonda", name: "Singita Kwitonda Lodge", line: "Volcanoes National Park, Rwanda", note: "Gorilla trekking from Singita, before or after the savannah.", image: { url: `${B44}/89259f1b7_ae7e46fb7_6985adfe2866c8eeb0b1ac01_SVNP_ROOM_Kwitonda_Lodge_Bedroom_Ross_Couper_1.webp`, alt: "A bedroom at Singita Kwitonda Lodge", w: 1995, h: 1330 } },
+      { slug: "one-only-gorillas-nest", name: "One&Only Gorilla's Nest", line: "Volcanoes, Rwanda", note: "Treehouses in the eucalyptus, five minutes from the gorillas.", image: { url: `${B44}/34e0bc491_9d2a33296_686c0769972f273ca2734419_OO_GorillasNest_Exterior_Nest_141_MASTER_HR.jpg`, alt: "A treehouse suite among the eucalyptus at One&Only Gorilla's Nest", w: 1900, h: 1267 } },
+    ],
+    links: [
+      { label: "Wilderness Magashi Peninsula", href: "/stays/wilderness-magashi-peninsula", line: "The suites, the villa, the film and how to book it." },
+      { label: "Rwanda", href: "/destinations/africa/rwanda", line: "Every Rwanda stay in the Ledger, gorillas to savannah." },
+      { label: "Off the Map", href: pathwayHref("off-the-map"), line: "Places with no signpost, filed and vetted first." },
+      { label: "Wild & Co Safaris", href: "/safaris", line: "Private, advisor-led safaris across Africa." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road, safaris since 2011." },
+    ],
+    keywords: ["Akagera National Park", "Akagera rewilding", "Magashi Peninsula", "Wilderness Magashi", "Rwanda safari", "Big Five Rwanda", "gorilla trekking and safari Rwanda", "Akagera rhino reintroduction", "Akagera lions", "where to stay in Akagera"],
+    about: ["Akagera National Park", "Wilderness Magashi Peninsula", "Rewilding", "African Parks", "Rwanda Development Board", "Eastern black rhinoceros", "Southern white rhinoceros", "Gorilla trekking in Rwanda"],
+    approved: false, // James reviews on the Proofs sheet before it is indexed
+    youtube: "https://www.youtube.com/watch?v=67roculU9V4",
+  },
   "cayuga-collection-sustainable-luxury": {
     slug: "cayuga-collection-sustainable-luxury",
     ledgerId: "WED-2026-000007",

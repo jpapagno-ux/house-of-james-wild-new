@@ -609,6 +609,137 @@
    "atlasName": "Belize"
   },
   {
+   "slug": "bolivia",
+   "name": "Bolivia",
+   "region": "south-america",
+   "regionName": "South America",
+   "ledgerId": "DST-2026-000053",
+   "subtitle": "Where the Earth Feels Otherworldly",
+   "leading": "Bolivia is the high country of South America: the Altiplano at around 3,600 metres and more, the Uyuni salt flat, the coloured lagoons of the far south-west, Lake Titicaca on the border with Peru, and the Amazon on the other side of the Andes. For the house it starts where Chile's Atacama ends: the crossing from San Pedro de Atacama over the Altiplano to Uyuni, through some of the darkest, driest night skies on Earth. It is a country for travellers who want distance, silence and the stars, and who take the altitude seriously.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6825554cce17a63e6c7602b0_GettyImages-755649185.jpg",
+    "alt": "Bolivia, South America"
+   },
+   "story": [
+    {
+     "eyebrow": "Where the Earth Feels Otherworldly",
+     "title": "A Land of Salt Flats, Mountains, and Ancient Culture",
+     "blocks": [
+      {
+       "p": "Bolivia is a place where landscapes feel almost unreal. Vast salt flats stretch endlessly into the horizon, high altitude deserts shift in color and light, and the Andes rise with dramatic presence. It is a country shaped by elevation, silence, and raw natural force."
+      },
+      {
+       "p": "Travel here is about stepping into surreal environments. Walking across the mirror like Uyuni salt flats, exploring colorful highland lagoons, and moving through remote Andean villages reveals a rhythm that is quiet, stark, and deeply humbling."
+      },
+      {
+       "p": "For those seeking unique landscapes and cultural depth, Bolivia offers an experience that feels both vast and extraordinary."
+      },
+      {
+       "p": "Bolivia for High Altitude and Nature Explorers Bolivia is home to some of the world’s most dramatic high altitude ecosystems, from salt deserts to snow capped peaks. Its cultural heritage remains deeply connected to Indigenous traditions and the natural environment."
+      },
+      {
+       "p": "Journeys are designed with local expertise and access to remote landscapes and cultural regions, creating experiences that feel immersive, raw, and deeply connected to place."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69ea55cf21de8cf1b8ba5d80_Bolivia%20-%20Section%201%20Image.jpg",
+      "alt": "Bolivia: A Land of Salt Flats, Mountains, and Ancient Culture"
+     }
+    },
+    {
+     "eyebrow": "Find Your Perspective in Bolivia",
+     "title": "Where Salt, Sky, and Ancient Culture Converge",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Adventure seekers drawn to extreme landscapes, cultural explorers interested in Indigenous heritage, photographers chasing surreal scenery, and conscious travelers seeking remote and transformative journeys."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Walk across endless salt flats, explore high altitude deserts filled with color, visit traditional Andean communities, and experience landscapes that feel like another planet."
+      },
+      {
+       "p": "These journeys connect you deeply with Bolivia’s natural and cultural identity in a way that feels rare and powerful."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Bolivia journey with our travel designers and create an experience shaped by scale, silence, and discovery."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69ea55d7e40600407fbbe8e2_Bolivia%20-%20Section%202%20Image.jpg",
+      "alt": "Bolivia: Where Salt, Sky, and Ancient Culture Converge"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "May to November for clear, dry days and the best stargazing (cold nights). December to April is the wet season, when a skin of water on the Uyuni salt flat turns it into a mirror."
+    ],
+    [
+     "Getting there",
+     "Cross overland from San Pedro de Atacama in Chile (fly into Calama, CJC), or fly into La Paz (El Alto, LPB) and on to Uyuni (UYU), about an hour by air."
+    ],
+    [
+     "Who it suits",
+     "Couples, photographers and stargazers who want the Atacama and Uyuni as one journey; walkers and travellers comfortable with high altitude."
+    ],
+    [
+     "Signature experiences",
+     "The Uyuni salt flat at dawn and under the stars; the Altiplano lagoons with their flamingos; the crossing from the Atacama; Potosí and Sucre, both UNESCO World Heritage cities."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "What is the best time to visit Bolivia's salt flats?",
+     "a": "May to November for dry, clear days and the best night skies, though nights are very cold. December to April is the wet season: shallow water on the Salar de Uyuni can turn it into a mirror, but some routes close after heavy rain."
+    },
+    {
+     "q": "Can you combine the Atacama Desert and the Uyuni salt flat?",
+     "a": "Yes. The classic route crosses from San Pedro de Atacama in Chile over the Altiplano, past the coloured lagoons of the Eduardo Avaroa reserve, to Uyuni in Bolivia. Private crossings with lodges along the way take around a week; flying into Calama and out of Uyuni avoids doubling back."
+    },
+    {
+     "q": "Is altitude a problem in Bolivia?",
+     "a": "It can be. The Altiplano and Uyuni sit around 3,600 metres and the lagoons higher still, so plan gentle first days, drink water and start low: beginning in San Pedro de Atacama (about 2,400 metres) and climbing gradually helps."
+    },
+    {
+     "q": "Is Uyuni good for stargazing?",
+     "a": "Yes. High altitude, very dry air and almost no light pollution make the salt flat and the Altiplano some of the best stargazing anywhere; the dry months, away from the full moon, are best."
+    },
+    {
+     "q": "Which UNESCO World Heritage sites are near Uyuni?",
+     "a": "The City of Potosí (inscribed 1987) and the Historic City of Sucre (1991) are the closest; across the border in Chile are the Humberstone and Santa Laura Saltpeter Works (2005) and the Chinchorro mummification sites near Arica (2021)."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "Across Bolivia",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best"
+     ]
+    }
+   ],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "May–Nov",
+   "atlasName": "Bolivia"
+  },
+  {
    "slug": "botswana",
    "name": "Botswana",
    "region": "africa",
@@ -2415,7 +2546,7 @@
    "airports": [
     [
      "Cancún International Airport (CUN)",
-     "Serves 16 stays in the Ledger here"
+     "Serves 18 stays in the Ledger here"
     ],
     [
      "Tulum International Airport (TQO)",
@@ -2891,7 +3022,7 @@
    "airports": [
     [
      "Enrique Malek International Airport (DAV)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 2 stays in the Ledger here"
     ],
     [
      "Tocumen International Airport (PTY)",

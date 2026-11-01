@@ -2178,5 +2178,125 @@
   "checked": "2026-11-01",
   "conditions": "11-night Adventure package priced as Stay 11, Pay 9, per person sharing; single room rate available. Departures on Wednesdays only. Includes transfers between Maroantsetra and the lodge, scheduled shared activities, all meals, non-alcoholic drinks and MFL flavoured rums, and laundry. Excludes flights between Antananarivo and Maroantsetra, community and conservation fee and gratuities. Children under 16 pay 50% of the adult accommodation rate; under 2 stay free sharing with a full-paying adult. Travel and medical evacuation insurance required. Wild Expeditions terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000140",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "arenas-del-mar-resort",
+  "name": "Arenas del Mar Stay 4, 5th Night Free",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, and your 5th night is on us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Valid until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 nights, and your 5th night is on us. Valid April 13 to December 19, 2026. Promotions cannot be combined. Discounted rates do not qualify for a complimentary night.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000141",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "kura-boutique-resort",
+  "name": "Kura Stay 3, 4th Night Free",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 3 nights, and the 4th night is on us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Valid until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "April 13th until December 19th, 2026: Stay 3 nights, and the 4th night is on us! Promotions cannot be combined. Please note that discounted rates do not qualify for a complimentary night.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000142",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "aguas-claras",
+  "name": "Aguas Claras Stay 3, 4th Night Free",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 3 nights, and the 4th night is on us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Valid 1 November to 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "April 13th to September 30th, 2026 and November 1st to December 19th, 2026: Stay 3 nights, and the 4th night is on us! Promotions cannot be combined. Please note that discounted rates do not qualify for a complimentary night.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000143",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "senda-monteverde-lodge",
+  "name": "Senda Monteverde Stay 2, 3rd Night Free",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 2 nights, and the 3rd night is on us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Valid until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "April 13th until December 19th, 2026: Stay 2 nights, and the 3rd night is on us! Promotions cannot be combined. Please note that discounted rates do not qualify for a complimentary night.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000144",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "isla-palenque-resort",
+  "name": "Isla Palenque Stay 4, 5th Night Free",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, and the 5th night is on us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Valid until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "April 13th until December 19th, 2026: Stay 4 nights, and the 5th night is on us! Promotions cannot be combined. Please note that discounted rates do not qualify for a complimentary night.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000145",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "tabacon-thermal-resort-spa",
+  "name": "Tabacón Thermal and Wellness Experience Packages",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "The Thermal Experience and The Wellness Experience, 3-night packages",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-17",
+   "text": "Regular Season 1 November to 17 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "The Thermal Experience (3 night stay: Ephemeral Table Experience, Coffee Tasting Experience, Tucanes Restaurant Dinner, Tabacon History & Nature Trail, Daily Breakfast, Yoga Class) or The Wellness Experience (3-night stay: Healthy Cooking Class Experience, 50-minute spa treatment, Tabacon History & Nature Trail, Sustainable activity). Minimum 3-night stay; available only for new reservations and subject to availability; rates based on double occupancy. Offers included in this package cannot be combined with other promotions, contracts, or group reservations. Regular Season: November 1 to December 17, 2026. Prices are subject to change without prior notice. Spa treatments are available only for guests 16 years of age and older.",
+  "volume": "stays"
  }
 ]

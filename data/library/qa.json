@@ -874,6 +874,14 @@
    "released": false
   },
   {
+   "stay_id": "6ae7b402d0c28c1c7104aab2",
+   "slug": "chable-maroma",
+   "name": "Chablé Maroma",
+   "country": "Mexico",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8e8",
    "slug": "chable-yucatan",
    "name": "Chablé Yucatán",
@@ -961,7 +969,6 @@
    "name": "Coco Costa Rica",
    "country": "Costa Rica",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
    "released": true
@@ -1311,12 +1318,9 @@
    "name": "Explora Uyuni",
    "country": "Bolivia",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff907",
@@ -1814,13 +1818,15 @@
    "slug": "isla-secas",
    "name": "Islas Secas Private Island",
    "country": "Panama",
-   "missing": [],
+   "missing": [
+    "coming_soon"
+   ],
    "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff926",
    "slug": "isla-secas-panama",
-   "name": "Islas Secas Private Island Resort",
+   "name": "Islas Secas Private Island",
    "country": "Panama",
    "missing": [],
    "released": true
@@ -2827,6 +2833,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae7b402d0c28c1c7104aab3",
+   "slug": "nizuc-resort-spa",
+   "name": "NIZUC Resort & Spa",
+   "country": "Mexico",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a899f05abd3cc0558c27cd2",
    "slug": "no-1-pery-square-limerick",
    "name": "No.1 Pery Square Limerick",
@@ -2837,7 +2851,7 @@
   {
    "stay_id": "6a899f05971d64c73c5417c1",
    "slug": "noah-forest-by-tifakara",
-   "name": "Noah’s Forest by Tifakara",
+   "name": "Noah's Forest by Tifakara",
    "country": "Costa Rica",
    "missing": [
     "hero_photo"
@@ -3382,7 +3396,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff99c",
    "slug": "senda-monteverde-lodge",
-   "name": "Senda Monteverde Lodge Costa Rica",
+   "name": "Senda Monteverde",
    "country": "Costa Rica",
    "missing": [],
    "released": true
@@ -4047,7 +4061,6 @@
    "name": "The Atelier Villa",
    "country": "Costa Rica",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
    "released": true

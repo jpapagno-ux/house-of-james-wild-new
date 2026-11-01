@@ -73,6 +73,17 @@
     "explora-rapa-nui",
     "nayara-hangaroa"
    ]
+  },
+  {
+   "slug": "salar-de-uyuni",
+   "name": "Salar de Uyuni",
+   "ledgerId": "DST-2026-000095",
+   "parentSlug": "bolivia",
+   "regionSlug": "south-america",
+   "subtitle": "Uyuni and the Altiplano, Bolivia",
+   "stays": [
+    "explora-at-uyuni-flats"
+   ]
   }
  ]
 }

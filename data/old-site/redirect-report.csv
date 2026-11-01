@@ -24,7 +24,7 @@ old path,new path,why,old title
 /book/arenal-springs-camp-by-nayara,/stays/arenal-springs-camp-by-nayara,booking page -> stay page,Book your stay at Arenal Springs Camp by Nayara | Wild Earth Stays
 /book/arenas-del-mar-resort,/stays/arenas-del-mar-resort,booking page -> stay page,Book your stay at Arenas Del Mar Resort | Wild Earth Stays
 /book/arijiju,/stays/arijiju-laikipia,booking page -> stay page,Book your stay at Arijiju | Wild Earth Stays
-/book/atelier-villa,/destinations/central-america/costa-rica,booking page -> not on the new site yet; country page,Book your stay at The Atelier Villa | Wild Earth Stays
+/book/atelier-villa,/stays/the-atelier-villa,booking page -> stay page,Book your stay at The Atelier Villa | Wild Earth Stays
 /book/awasi-atacama,/stays/awasi-atacama,booking page -> stay page,Book your stay at Awasi Atacama | Wild Earth Stays
 /book/awasi-mendoza,/stays/awasi-mendoza,booking page -> stay page,Book your stay at Awasi Mendoza | Wild Earth Stays
 /book/awasi-patagonia,/stays/awasi-patagonia,booking page -> stay page,Book your stay at Awasi Patagonia | Wild Earth Stays
@@ -56,7 +56,7 @@ old path,new path,why,old title
 /book/chindeni-lodge,/stays/chindeni-lodge,booking page -> stay page,Book your stay at Chindeni Lodge | Wild Earth Stays
 /book/chobe-under-canvas,/stays/chobe-under-canvas-by-and-beyond,booking page -> stay page,Book your stay at &amp;Beyond Chobe Under Canvas  | Wild Earth Stays
 /book/chumbe-island-zanzibar,/stays/chumbe-island-zanzibar,booking page -> stay page,Book your stay at Chumbe Island Zanzibar | Wild Earth Stays
-/book/coco-costa-rica,/destinations/central-america/costa-rica,booking page -> not on the new site yet; country page,Book your stay at Coco Costa Rica | Wild Earth Stays
+/book/coco-costa-rica,/stays/coco-costa-rica,booking page -> stay page,Book your stay at Coco Costa Rica | Wild Earth Stays
 /book/como-parrot-cay,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (turks-caicos country page not built yet),Book your stay at Como Parrot Cay | Wild Earth Stays
 /book/como-shambhala-estate,/stays/como-shambhala-estate,booking page -> stay page,Book your stay at Como Shambhala Estate | Wild Earth Stays
 /book/como-uma-canggu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Canggu | Wild Earth Stays
@@ -353,7 +353,7 @@ old path,new path,why,old title
 /country/bahamas,/destinations/caribbean-mexico/bahamas,country page,
 /country/baja-mexico,/destinations/caribbean-mexico/mexico,country page,
 /country/belize,/destinations/central-america/belize,country page,
-/country/bolivia,/destinations/south-america,region page (bolivia country page not built yet),
+/country/bolivia,/destinations/south-america/bolivia,country page,
 /country/botswana,/destinations/africa/botswana,country page,
 /country/brazil,/destinations/south-america/brazil,country page,
 /country/california,/destinations/usa-canada/california,country page,
@@ -504,7 +504,7 @@ old path,new path,why,old title
 /property/chobe-under-canvas-by-and-beyond,/stays/chobe-under-canvas-by-and-beyond,stay page,&amp;Beyond Chobe Under Canvas  | Luxury Stays in Botswana | Wild Earth Stays
 /property/chumbe-island-zanzibar,/stays/chumbe-island-zanzibar,stay page,Chumbe Island Zanzibar | Luxury Stays in Tanzania | Wild Earth Stays
 /property/clayoquot-wilderness-resort,/stays/clayoquot-wilderness-resort,stay page,Clayoquot Wilderness Resort | Luxury Stays in Canada | Wild Earth Stays
-/property/coco-costa-rica,/destinations/central-america/costa-rica,not on the new site yet; country page,Coco Costa Rica | Luxury Stays in Costa Rica | Wild Earth Stays
+/property/coco-costa-rica,/stays/coco-costa-rica,stay page,Coco Costa Rica | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/como-canggu,/destinations/asia/indonesia,not on the new site yet; country page,COMO Canggu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/como-parrot-cay,/destinations/caribbean-mexico,not on the new site yet; region page (turks-caicos country page not built yet),Como Parrot Cay | Luxury Stays in Turks Caicos | Wild Earth Stays
 /property/como-shambhala-estate,/stays/como-shambhala-estate,stay page,Como Shambhala Estate | Luxury Stays in Indonesia | Wild Earth Stays
@@ -768,7 +768,7 @@ old path,new path,why,old title
 /property/tengile-mala-mala-sable-camp,/stays/tengile-mala-mala-sable-camp,stay page,Tengile Mala Mala Sable Camp | Luxury Stays in South Africa | Wild Earth Stays
 /property/tengile-river-lodge-by-mala-mala,/stays/tengile-river-lodge-by-mala-mala,stay page,Tengile River Lodge by Mala Mala | Luxury Stays in South Africa | Wild Earth Stays
 /property/the-art-villa,/stays/the-art-villa,stay page,The Art Villa | Luxury Stays in Costa Rica | Wild Earth Stays
-/property/the-atelier-villa,/destinations/central-america/costa-rica,not on the new site yet; country page,The Atelier Villa | Luxury Stays in Costa Rica | Wild Earth Stays
+/property/the-atelier-villa,/stays/the-atelier-villa,stay page,The Atelier Villa | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/the-beach-tulum,/stays/the-beach-tulum,stay page,The Beach Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/the-brando-tetiaroa,/stays/the-brando-tetiaroa,stay page,The Brando Tetiaroa | Luxury Stays in Tahiti | Wild Earth Stays
 /property/the-highlands-by-asilia-highlands,/stays/the-highlands-by-asilia-highlands,stay page,The Highlands by Asilia | Luxury Stays in Tanzania | Wild Earth Stays

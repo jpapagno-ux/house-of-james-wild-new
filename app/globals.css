@@ -83,6 +83,8 @@
 @keyframes chart-land { to { fill-opacity: 1; } }
 .ledger-chart .chart-fade { opacity: 0; transition: opacity 1s ease 1.8s; }
 .ledger-chart.is-drawn .chart-fade { opacity: 1; }
+/* Flyover: the continent's labels, graticule and compass step aside while the chart flies in. */
+.ledger-chart.fly-quiet .chart-fade { opacity: 0; transition: opacity .35s ease; }
 .ledger-pin-drop { animation: ledger-pin-drop .55s cubic-bezier(.22,1,.36,1) both; transform-box: fill-box; transform-origin: 50% 100%; }
 @keyframes ledger-pin-drop { from { transform: translateY(-22px) scale(.55); opacity: 0; } 70% { transform: translateY(2px) scale(1.05); opacity: 1; } to { transform: none; opacity: 1; } }
 .ledger-pin-pulse { animation: ledger-pin-pulse 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }

@@ -27,6 +27,8 @@ export type Guide = {
   theme?: "sea" | "stays";
   /** A Ledger chart inset (lib/charts/regions.json via IslandZoom) drawn under the facts: island groups too small for the country chart. */
   zoom?: "galapagos" | "rapa-nui";
+  /** A flyover from the continent into a close chart (lib/content/flyovers.ts), drawn under the facts. */
+  flyover?: "atacama-uyuni";
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
   stays?: string[];
   /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
@@ -364,7 +366,7 @@ export const GUIDES: Record<string, Guide> = {
   // Cloudinary with partner-approved rights. The founder has not been to either; the pages say so.
   atacama: {
     slug: "atacama", region: "south-america", country: "chile", parent: "chile", name: "Atacama", path: "/destinations/south-america/chile/atacama",
-    theme: "stays", stays: ["beckon-tierra-atacama", "nayara-alto-atacama"],
+    theme: "stays", stays: ["beckon-tierra-atacama", "nayara-alto-atacama"], flyover: "atacama-uyuni",
     proofEyebrow: "On the founder's list · not yet visited",
     seo: {
       title: "Atacama Desert Guide: Best Time, San Pedro de Atacama & Where to Stay",

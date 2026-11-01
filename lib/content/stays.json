@@ -254,14 +254,14 @@
   },
   {
    "slug": "beyond-sussuvlei-desert-lodge",
-   "name": "& Beyond Sossusvlei Desert Lodge",
+   "name": "&Beyond Sossusvlei Desert Lodge",
    "ledgerId": "STY-2026-000002",
    "country": "Namibia",
    "countrySlug": "namibia",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Luxury among the dunes and stars",
+   "tagline": "Ten suites and a Star Dune Suite in a private desert reserve beside the NamibRand",
    "quote": "Wake to the colors of sunrise over the desert, hike dunes, and fall asleep under a sky full of stars",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dcfb4f00c_83b32277b_691f1487c4bf1e354aa4763a_beyond-sussuvlei-desert-lodge.jpg",
    "gallery": [
@@ -273,60 +273,88 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/907cedffd_88a7a417a_69cb7f4a916ced76b32e3d6a_Sossusvlei-Desert-Lodge-Room-Suite_20bedroom.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/91da312d6_84fca8261_69cb80d8688ccdaa33e1bf7f_Sossusvlei-Desert-Lodge-general-guest-area-bar-and-tele."
    ],
-   "bestMonths": "April to October, December to March",
-   "bestMonthsNote": "April to October is dry, cool, and best for hiking and clear stargazing. December to March brings dramatic skies and rare desert blooms, with fewer visitors.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "April to October brings cooler temperatures and dramatic light; November to March is warmer with occasional rain.",
+   "bestFor": [
+    "couples",
+    "solo",
+    "family",
+    "wellness",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.7795,
     "lng": 15.8885
    },
-   "airport": "Sossusvlei Private Airstrip, Windhoek Hosea Kutako International Airport",
-   "airportDirections": "Fly to Windhoek, then light aircraft or road transfer to Sossusvlei Airstrip, 30 minute drive to lodge.",
+   "airport": "&Beyond Sossusvlei Desert Lodge private airstrip",
+   "airportDirections": "Scheduled or chartered flight to the lodge's private airstrip, with transfers included; or about 400 km by gravel road from Windhoek.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Ten stone and glass suites, each with private plunge pool, panoramic desert views, skylight over the bed for stargazing, and en-suite bathroom. One two-bedroom star dune suite for families or friends."
+     "Ten Suites sculpted from stone and glass, each with a private plunge pool, shaded veranda, lounge with fireplace, glass-encased rain shower and a skylight above the bed for stargazing. One Star Dune Suite joins two en-suite suites with a shared lounge, private dining area and veranda for up to four guests."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided dune drives",
-     "Desert walks and hikes",
-     "Quad biking",
-     "E-bike excursions",
-     "Stargazing with resident astronomer",
-     "Scenic sundowners",
-     "Hot air ballooning and helicopter flights"
-    ]
+    "paras": [
+     "Big Dune walk with breakfast below. Dune walk at Deadvlei in Namib-Naukluft National Park. Living Dune experience by ATV. Desert Rock and Desert People experiences. Scenic desert drives. Self-guided e-biking and hiking. Guided stargazing. Hot air ballooning and scenic helicopter flights at extra cost."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Award-winning desert design",
-     "Private plunge pools",
-     "In-room stargazing skylight and telescope",
-     "Wine cellar and fine dining",
-     "Desert wellness spa",
-     "Exclusive star dune suite for families",
-     "Eco powered and water-wise"
-    ]
+    "paras": [
+     "Private plunge pools. Retractable skylights above every bed. On-site observatory with a Celestron telescope and expert astronomers. Walk-in wine cellar. Wellness floor with yoga, a desert-view gym and Healing Earth treatments. Solar power, rainwater harvesting and grey water recycling."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "&Beyond Sossusvlei Desert Lodge is for the dreamer, the stargazer, and the adventurer. Sleep under stars, explore the world’s oldest desert, and return to pure comfort. Perfect for couples, families, photographers, and anyone who wants the magic of Sossusvlei with a luxury twist."
+    "&Beyond Sossusvlei Desert Lodge is for the stargazer and the explorer. Sleep beneath a skylight on the edge of Africa's first International Dark Sky Reserve, walk dunes in a private reserve where self-guided exploration is encouraged, and return to a suite with its own plunge pool. Suited to couples, families, solo travellers and friends."
    ],
    "why": [
     {
-     "title": "Desert Dreaming, Stargazer’s Paradise",
-     "body": "&Beyond Sossusvlei Desert Lodge delivers the ultimate desert experience with privacy, design, and discovery. Best for couples, families, and solo travelers seeking adventure, wellness, and sky."
+     "title": "Desert Dreaming, Stargazer's Paradise",
+     "body": "&Beyond Sossusvlei Desert Lodge pairs privacy and design with the freedom to explore the Namib at your own pace. Best for couples, families and solo travellers drawn to the desert, wellness and the night sky."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Year-round: April to October for cooler days and dramatic light, November to March warmer with occasional rain.",
+    "how_to_get_there": "Scheduled or charter flight to the lodge's private airstrip with included transfers, or about 400 km by gravel road from Windhoek.",
+    "signature_experiences": "Observatory stargazing on the edge of Africa's first International Dark Sky Reserve, the Big Dune walk, ATV Living Dune outings and self-guided e-biking.",
+    "who_its_for": "Solo travellers, couples and friends in the Suites, and families or friends together in the Star Dune Suite."
+   },
+   "faqs": [
+    {
+     "q": "Where is &Beyond Sossusvlei Desert Lodge?",
+     "a": "It is in southern Namibia, within the 12,715-hectare &Beyond Sossusvlei Private Desert Reserve, adjacent to the NamibRand Nature Reserve and Namib-Naukluft National Park. The reserve forms part of the Namib Sand Sea, a UNESCO World Heritage Site."
+    },
+    {
+     "q": "How do I get to &Beyond Sossusvlei Desert Lodge?",
+     "a": "Guests arrive by scheduled or chartered flight to the lodge's private airstrip, and transfers to and from the airstrip are included. Road transfers can be arranged, and self-drivers face about 400 km from Windhoek or 380 km from Swakopmund on gravel roads, with a 4x4 advised in the rainy season from November to May."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "&Beyond calls the desert a year-round destination. April to October brings cooler temperatures and dramatic light, while November to March is warmer with occasional rain."
+    },
+    {
+     "q": "How many suites does the lodge have?",
+     "a": "There are ten Suites for up to two guests each, plus one Star Dune Suite for up to four. The Star Dune Suite is two en-suite suites joined by a shared lounge, private dining area and veranda."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "Yes. The Star Dune Suite is designed for families, and &Beyond's rates treat guests aged 17 and over as adults, with reduced rates for children up to 16 sharing with adults, subject to triple-room availability."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Guided stargazing at the on-site observatory, a Big Dune walk with breakfast below, the Living Dune ATV experience, Desert Rock and Desert People experiences, scenic drives and self-guided e-biking and hiking. Hot air ballooning and scenic helicopter flights cost extra."
+    },
+    {
+     "q": "Who is the lodge best for?",
+     "a": "&Beyond describes the Suites as ideal for solo travellers, couples and friends sharing, and the Star Dune Suite for families and friends travelling together."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -343,7 +371,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974e999b4c5caa896df4",
+    "6ae6974e800f3def42832add"
+   ]
   },
   {
    "slug": "beyond-vira-vira-lodge",
@@ -431,7 +462,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974649f3beea910643f6",
+    "6ae69746dcc84494d2f362e6"
+   ]
   },
   {
    "slug": "benguerra-island-by-and-beyond",
@@ -522,7 +556,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759cde1d7e8ab5bc7f0"
+   ]
   },
   {
    "slug": "chobe-under-canvas-by-and-beyond",
@@ -609,7 +645,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741b2b7600515a60436"
+   ]
   },
   {
    "slug": "beyond-grumeti-safari-camp",
@@ -728,7 +766,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697592a20c4a043a07150",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "beyond-kichwa-camp",
@@ -822,7 +863,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ae760b130bd4d2077"
+   ]
   },
   {
    "slug": "beyond-kleins-camp",
@@ -945,7 +988,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754485e2efc242bd93a",
+    "6ae697555c7b134365e994fc"
+   ]
   },
   {
    "slug": "aguas-claras",
@@ -1102,7 +1148,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae697472d05428dbdb7609f"
+   ]
   },
   {
    "slug": "aliikai-voyage",
@@ -1301,7 +1350,11 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743c2cb658c212ee358",
+    "6ae69743d4903237c545b6f5",
+    "6ae6974348e87112caca2fb6"
+   ]
   },
   {
    "slug": "alya-catamaran-galapagos",
@@ -1391,7 +1444,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69747c13a95faad91795e"
+   ]
   },
   {
    "slug": "amandari",
@@ -1588,7 +1643,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f296589197583f634"
+   ]
   },
   {
    "slug": "ambiente-tm-sedona",
@@ -1676,7 +1733,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f1d164e6a7f476ff6",
+    "6ae6973ffe6d4667aa9201a9",
+    "6ae6973f81a1749022856b67"
+   ]
   },
   {
    "slug": "amor-arenal",
@@ -1769,7 +1830,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf"
+   ]
   },
   {
    "slug": "anantara-bophut-koh-samui-resort",
@@ -1859,7 +1922,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a7f9f2127514d41e1"
+   ]
   },
   {
    "slug": "anantara-chiang-mai-resort",
@@ -1946,7 +2011,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975940204622a27aac6d"
+   ]
   },
   {
    "slug": "anantara-golden-triangle-chiang-rai",
@@ -2042,7 +2109,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697599d92ccd24a2fac2d"
+   ]
   },
   {
    "slug": "anantara-hua-hin",
@@ -2137,7 +2206,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697595c84d2adc81e8c63"
+   ]
   },
   {
    "slug": "anantara-mui-ne",
@@ -2226,7 +2297,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b2cd3e7e2ab4884db",
+    "6ae6975b48e87112caca2fd0"
+   ]
   },
   {
    "slug": "stanley-livingstone-lodge",
@@ -2331,7 +2405,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c04de2bbf1d05d305"
+   ]
   },
   {
    "slug": "anantara-ubud-bali",
@@ -2426,7 +2502,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "angama-amboseli",
@@ -2530,7 +2608,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974a90e7e079e474035f"
+   ]
   },
   {
    "slug": "angama-mara",
@@ -2839,7 +2919,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974787d64df6a150b163",
+    "6ae697470cd87e591e92cccf"
+   ]
   },
   {
    "slug": "ariel-house",
@@ -3060,7 +3143,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974bb51a396b85970bde",
+    "6ae6974aa6d0fa13bbe23ed1"
+   ]
   },
   {
    "slug": "armendaris-ted-turner-reserve",
@@ -3242,7 +3328,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b6b505a193bf29747"
+   ]
   },
   {
    "slug": "atzaro-okavango-camp",
@@ -3331,7 +3419,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "awasi-atacama",
@@ -3418,7 +3508,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974150ecb0e9933ef843"
+   ]
   },
   {
    "slug": "iguazu",
@@ -3509,7 +3601,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973e4b1bd4153e89d834",
+    "6ae6973f5b14db71c885633d"
+   ]
   },
   {
    "slug": "awasi-mendoza",
@@ -3600,7 +3695,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f5d9cc4c767aed131"
+   ]
   },
   {
    "slug": "awasi-patagonia",
@@ -3697,7 +3794,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697461c4c7b8d57a9bb0e",
+    "6ae697449583543efcf27c0b"
+   ]
   },
   {
    "slug": "awasi-santa-catarina",
@@ -3787,7 +3887,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743a6d0fa13bbe23eca",
+    "6ae69743c70cc7774f920d8c"
+   ]
   },
   {
    "slug": "babylonstoren",
@@ -3907,7 +4010,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "baines-lodge",
@@ -3990,7 +4095,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "bateleur-camp-by-and-beyond",
@@ -4081,7 +4188,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974c7d4c694c47df3348"
+   ]
   },
   {
    "slug": "baymanhi-exuma",
@@ -4184,7 +4293,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973fe9cbc8b0912b40ae"
+   ]
   },
   {
    "slug": "be-tulum",
@@ -4277,7 +4388,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "birkenhead-house",
@@ -4378,7 +4492,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "blancaneaux-lodge",
@@ -4499,7 +4615,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697409300c15bed28823f"
+   ]
   },
   {
    "slug": "blue-reef",
@@ -4684,7 +4802,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69750d7c7888a53a4972d"
+   ]
   },
   {
    "slug": "boluntiku-hotel",
@@ -4835,7 +4955,12 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ad0f23a42452f2a65",
+    "6ae6974bb51a396b85970bde",
+    "6ae6974aa6d0fa13bbe23ed1",
+    "6ae6974b0c7208df76184c03"
+   ]
   },
   {
    "slug": "breac-house",
@@ -4943,7 +5068,10 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85b",
+    "6ae666174efda236c530e85c"
+   ]
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -5068,7 +5196,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c551eb032b92a9bb9",
+    "6ae6975ce57b8ac515e24326"
+   ]
   },
   {
    "slug": "camp-hwange-muddy-teak",
@@ -5178,7 +5309,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c04de2bbf1d05d305",
+    "6ae69751dad7a8fb436dcf39"
+   ]
   },
   {
    "slug": "cap-karoso",
@@ -5292,7 +5426,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697491cde8e4e0c09adf2",
+    "6ae69749a4b2f2b1952e65c1"
+   ]
   },
   {
    "slug": "cape-cadogan-boutique-hotel",
@@ -5426,7 +5563,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "beckon-capella-lodge",
@@ -5554,7 +5693,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f3c7362bb0a39a29d",
+    "6ae6973fa1ead46a71080fe7",
+    "6ae6973fd1b63ead4a14660d"
+   ]
   },
   {
    "slug": "capella-ubud",
@@ -5644,7 +5787,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "cardamom-tented-camp",
@@ -5731,7 +5876,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743ae2e8cbad44c0055",
+    "6ae697437b03070861043106"
+   ]
   },
   {
    "slug": "casa-maya-kaan",
@@ -5825,7 +5973,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "castle-leslie",
@@ -5928,7 +6079,10 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858",
+    "6ae666174efda236c530e85e"
+   ]
   },
   {
    "slug": "celestia-yacht",
@@ -6118,7 +6272,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d775b6dc41b95f2e4"
+   ]
   },
   {
    "slug": "chamilandu-lodge",
@@ -6237,7 +6393,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bbc157255b8d62b02"
+   ]
   },
   {
    "slug": "cheetah-plains",
@@ -6357,7 +6515,12 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697508112093108ab4415",
+    "6ae69751dd84deb01116e416",
+    "6ae6975198348dcb481fcde6",
+    "6ae69751534ce93476492155"
+   ]
   },
   {
    "slug": "chem-chem",
@@ -6478,7 +6641,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754bf5a13e528dc2ee5",
+    "6ae69754642635a90d18aa07",
+    "6ae697551c4c7b8d57a9bb1d"
+   ]
   },
   {
    "slug": "chiawa-safaris",
@@ -6601,7 +6768,12 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b490b37ebbeebbe39",
+    "6ae6975b4336756d7942eed2",
+    "6ae6975bc8662ac7c79aa762",
+    "6ae6975c7f050a78267c41f0"
+   ]
   },
   {
    "slug": "chindeni-lodge",
@@ -6718,7 +6890,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bbc157255b8d62b02"
+   ]
   },
   {
    "slug": "chisa-busanga-camp",
@@ -6966,7 +7140,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759fc194559e72761a4"
+   ]
   },
   {
    "slug": "clayoquot-wilderness-resort",
@@ -7065,7 +7241,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974496b944e8c592f867",
+    "6ae69744c23ffff6bdd6ef40",
+    "6ae697445c7b134365e994e7"
+   ]
   },
   {
    "slug": "coco-costa-rica",
@@ -7234,7 +7414,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697407f0b8716e065ba14"
+   ]
   },
   {
    "slug": "como-shambhala-estate",
@@ -7320,7 +7502,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "conrad-tulum-riviera-maya",
@@ -7414,7 +7598,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952",
+    "6ae6974d2f7e87b5a5f59865"
+   ]
   },
   {
    "slug": "coot-club",
@@ -7543,7 +7730,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "corks-vienna-woods",
@@ -7634,7 +7823,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "cottars-1920-camp",
@@ -7744,7 +7935,13 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69749e5f265b1f4a9477f",
+    "6ae6974a3cfa18a9bbce043b",
+    "6ae6974c7d4c694c47df3348",
+    "6ae69749d7b534de044e2605",
+    "6ae6974a642635a90d18a9fe"
+   ]
   },
   {
    "slug": "the-original-camp-by-serian",
@@ -7826,7 +8023,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "daunara-safari-camp",
@@ -7912,7 +8111,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "great-plains-duba-plains",
@@ -7986,7 +8187,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974156062b764e79a9cc"
+   ]
   },
   {
    "slug": "dukes-camp-okavango",
@@ -8079,7 +8282,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae6974152ebbfdb5b18521b"
+   ]
   },
   {
    "slug": "dulini-anabezi-lodge",
@@ -8202,7 +8408,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b490b37ebbeebbe39"
+   ]
   },
   {
    "slug": "dulini-daunara-lodge",
@@ -8312,7 +8520,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "dulini-leadwood-lodge",
@@ -8419,7 +8630,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "dulini-moya-lodge",
@@ -8531,7 +8745,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "dulini-river-lodge",
@@ -8633,7 +8850,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975142da92bdd9e00a2e",
+    "6ae6975201f48e4a41de6174"
+   ]
   },
   {
    "slug": "asilia-dunia-camp",
@@ -8760,7 +8980,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697592a20c4a043a07150"
+   ]
   },
   {
    "slug": "da-licenca",
@@ -8868,7 +9090,9 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697507315f045b9524ae9"
+   ]
   },
   {
    "slug": "ecocamp-patagonia",
@@ -8961,7 +9185,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697461c4c7b8d57a9bb0e",
+    "6ae697449583543efcf27c0b"
+   ]
   },
   {
    "slug": "ecoventura-evolve-yacht",
@@ -9324,7 +9551,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960",
+    "6ae6974f83a672d040199726"
+   ]
   },
   {
    "slug": "elephann-pan-khwai",
@@ -9414,7 +9644,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974152c8a64add4c1c95",
+    "6ae697427ca51cd40af01fc0",
+    "6ae69741ef1c4ba4eb1a23a2"
+   ]
   },
   {
    "slug": "ellerman-house",
@@ -9553,7 +9787,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "elsas-kopje",
@@ -9711,7 +9947,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b7b0307086104311f"
+   ]
   },
   {
    "slug": "entamanu-lodge",
@@ -10069,64 +10307,96 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Epic Etosha views, wild adventure, mountain luxury",
+   "tagline": "Nine chalets in a private reserve on Etosha's southwest border",
    "quote": "Perched above the plains, Etosha Mountain Lodge offers breathtaking sunsets, big game safaris, and a peaceful retreat high in Namibia’s wild north",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f879c21b1_c15c6dc69_692d3f1320f0cb4175475b33_etosha-mountain-lodge.jpg",
    "gallery": [],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "May to October for dry season, best game viewing, and clear skies. November to April for green landscapes, fewer guests, and excellent birding.",
-   "bestFor": [],
+   "bestMonths": "Year-round; May to September for dry-season game viewing",
+   "bestMonthsNote": "May to September, animals gather at the waterholes; October to April is lush, and wildlife is a little harder to spot.",
+   "bestFor": [
+    "family",
+    "wildlife_photography",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -18.5941,
     "lng": 15.1486
    },
-   "airport": "Ondangwa Airport (OND), Hosea Kutako International Airport (WDH)",
-   "airportDirections": "Fly to Ondangwa (3-hour drive) or Hosea Kutako in Windhoek (6-hour drive), transfers available from both airports.",
+   "airport": "Windhoek Hosea Kutako International Airport (WDH)",
+   "airportDirections": "About a 6 hour drive or a 1 hour flight from Windhoek.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxury chalets with private decks, en suite bathrooms, air-conditioning, and panoramic views. Family suite available. Main lodge with pool, lounge, dining deck, and fire pit."
+     "Nine air-conditioned chalets: eight twin or double rooms and one family chalet with a private plunge pool on the veranda. All are en suite with indoor showers and bathtubs, and look out over 180-degree views. Central thatched lapa with restaurant, bar, wine cellar, curio shop and swimming pool."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Day and night game drives",
-     "Guided bush walks",
-     "Rhino tracking",
-     "Birdwatching",
-     "Sundowners on the mountain",
-     "Photography",
-     "Star-gazing",
-     "Family activities"
+     "Morning and afternoon game drives",
+     "Night drives",
+     "Black and white rhino sightings",
+     "Double-storey viewing hide",
+     "Guided walks with armed guides (ages 12 and up)",
+     "Birding",
+     "Spa treatments"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Hilltop setting with sweeping views",
-     "Year-round wildlife",
-     "Expert guides for game drives and walks",
-     "Pool and sun deck",
-     "Family-friendly",
-     "Eco-conscious lodge"
-    ]
+    "paras": [
+     "Set in the Etosha Heights Private Reserve, which shares a 65-kilometre boundary with Etosha National Park. Waterhole in front of camp. Double-storey photography hide with a livecam. Spa treatments in your room at extra cost. Solar powered. Children of all ages welcome."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Etosha Mountain Lodge is perfect for families, couples, solo travelers, and anyone wanting stunning scenery, exclusive safaris, and a peaceful escape above the plains."
+    "Etosha Mountain Lodge is for families, couples, photographers and anyone who wants Etosha's wildlife without the crowds, from a classic Namibian game lodge in a private reserve known for its black and white rhino."
    ],
    "why": [
     {
-     "title": "Namibia’s High Safari",
-     "body": "Ideal for adventure seekers, wildlife lovers, couples, and families. Enjoy rhino tracking, Etosha’s big game, and sunsets that stretch forever."
+     "title": "Namibia's High Safari",
+     "body": "Ideal for wildlife lovers, photographers, couples and families. Look for black and white rhino, lion, cheetah and leopard, then watch the waterhole from the two-level hide."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year round, with May to September the dry season when game gathers at waterholes.",
+    "how_to_get_there": "About a 6 hour drive or a 1 hour flight from Windhoek.",
+    "signature_experiences": "Rhino sightings, night drives and a double-storey photography hide on a floodlit waterhole.",
+    "who_its_for": "Families with children of any age, wildlife photographers and travellers wanting Etosha's game in a private reserve."
+   },
+   "faqs": [
+    {
+     "q": "Where is Etosha Mountain Lodge?",
+     "a": "It is in the Etosha Heights Private Reserve in northern Namibia, on the southwest border of Etosha National Park. The 60,000-hectare reserve shares a 65-kilometre boundary with the park."
+    },
+    {
+     "q": "How do I get to Etosha Mountain Lodge?",
+     "a": "Natural Selection gives two options: about a 6 hour drive or a 1 hour flight from Windhoek."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "The lodge is open year round. In the dry months from May to September animals gather at the remaining waterholes for strong game viewing, while the rainy season from October to April brings lush scenery that makes wildlife a little harder to spot."
+    },
+    {
+     "q": "How many chalets are there?",
+     "a": "Nine air-conditioned chalets: eight twin or double and one family chalet, which has a private plunge pool on its veranda."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "Yes, children of all ages are welcome. Private vehicles are required on game drives for families with children under 10, and guided walks are for ages 12 and up."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Morning and afternoon game drives, night drives, black and white rhino sightings, a double-storey photography hide over a floodlit waterhole, and guided walks with armed guides."
+    },
+    {
+     "q": "Who is Etosha Mountain Lodge best for?",
+     "a": "Families, photographers and travellers who want Etosha's wildlife in a private reserve, which Natural Selection describes as Etosha without the crowds."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -10146,7 +10416,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ebeef9ca2e581d5c9",
+    "6ae6974def1c4ba4eb1a23ac"
+   ]
   },
   {
    "slug": "explora-el-calafate",
@@ -10227,7 +10500,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973e3b5411a430e8232d"
+   ]
   },
   {
    "slug": "explora-el-chalten",
@@ -10313,7 +10588,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973e3b5411a430e8232d"
+   ]
   },
   {
    "slug": "explora-rapa-nui",
@@ -10402,7 +10679,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697440726f0daa56d3998"
+   ]
   },
   {
    "slug": "explora-sacred-valley",
@@ -10488,7 +10767,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960"
+   ]
   },
   {
    "slug": "explora-torres-del-paine",
@@ -10572,7 +10853,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697461c4c7b8d57a9bb0e",
+    "6ae697449583543efcf27c0b"
+   ]
   },
   {
    "slug": "torres-del-paine-c-reserve",
@@ -10655,7 +10939,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697461c4c7b8d57a9bb0e",
+    "6ae697449583543efcf27c0b"
+   ]
   },
   {
    "slug": "explora-at-atacama",
@@ -10740,7 +11027,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974150ecb0e9933ef843"
+   ]
   },
   {
    "slug": "feline-fields-lodge",
@@ -10827,7 +11116,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "feline-fields-vintage-camp",
@@ -10915,7 +11206,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "fogo-island-inn",
@@ -11003,7 +11296,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743534ce9347649211f",
+    "6ae69744a272964ca74e7085"
+   ]
   },
   {
    "slug": "gibbs-farm",
@@ -11126,7 +11422,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754bf5a13e528dc2ee5",
+    "6ae6975466e4a788ffb3f1ea",
+    "6ae69753a6b76fae048726a8"
+   ]
   },
   {
    "slug": "giraffe-manor",
@@ -11208,7 +11508,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974c7d4c694c47df3348",
+    "6ae6974acaf3f42cf0fd70c6"
+   ]
   },
   {
    "slug": "gomoti-plains-camp",
@@ -11293,7 +11596,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741916275911afcc053"
+   ]
   },
   {
    "slug": "gorongosa-safaris",
@@ -11408,7 +11713,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "greystoke-mahale-by-nomad",
@@ -11531,7 +11838,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754fd0f94ec586fa47f",
+    "6ae69753a6b76fae048726a8"
+   ]
   },
   {
    "slug": "grootbos-private-nature-reserve",
@@ -11651,7 +11961,9 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "gwe-gwe-beach",
@@ -11713,7 +12025,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975194b52f96ec01d443",
+    "6ae69751fd469736b2d7029e"
+   ]
   },
   {
    "slug": "gwe-gwe-beach-lodge",
@@ -11818,7 +12133,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975194b52f96ec01d443",
+    "6ae69751fd469736b2d7029e"
+   ]
   },
   {
    "slug": "hayfield-manor",
@@ -11911,7 +12229,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e859"
+   ]
   },
   {
    "slug": "hemingways-nairobi",
@@ -12034,7 +12354,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974acaf3f42cf0fd70c6",
+    "6ae6974c7d4c694c47df3348"
+   ]
   },
   {
    "slug": "hermanus-private-residences",
@@ -12139,7 +12462,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "hidden-valley-lodge",
@@ -12334,7 +12659,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "hotel-bardo",
@@ -12426,7 +12754,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "hotel-panamera",
@@ -12505,7 +12836,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "house-in-the-wild",
@@ -12677,7 +13011,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ba3052349b192dd30",
+    "6ae6974b45281cd346259980"
+   ]
   },
   {
    "slug": "beckon-huka-lodge",
@@ -12775,7 +13112,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f848166c39779a27d",
+    "6ae6974f6a6a5dcb656ed20b",
+    "6ae6974e462820454c7ce501"
+   ]
   },
   {
    "slug": "ila-safari-lodge",
@@ -12985,7 +13326,13 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f52b95ee2876b3a48",
+    "6ae6975092fe249564657bc3",
+    "6ae6974f2686be3703910ad9",
+    "6ae6974fa5b24e69c6832dd0",
+    "6ae69750800df693c3532584"
+   ]
   },
   {
    "slug": "inkaterra-hacienda-concepcion",
@@ -13073,7 +13420,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f296589197583f634"
+   ]
   },
   {
    "slug": "inkaterra-hacienda-urubamba",
@@ -13162,7 +13511,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960"
+   ]
   },
   {
    "slug": "inkaterra-la-casona",
@@ -13253,7 +13604,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960"
+   ]
   },
   {
    "slug": "inkaterra-machu-picchu-pueblo-hotel",
@@ -13347,7 +13700,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960"
+   ]
   },
   {
    "slug": "inkaterra-reserva-amazonica",
@@ -13431,7 +13786,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f296589197583f634"
+   ]
   },
   {
    "slug": "isla-palenque-resort",
@@ -13522,7 +13879,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f879f7d65734d29e0",
+    "6ae6974fa26f5f73258176cc"
+   ]
   },
   {
    "slug": "isla-secas",
@@ -13606,7 +13966,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f879f7d65734d29e0"
+   ]
   },
   {
    "slug": "isla-secas-panama",
@@ -13705,7 +14067,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f879f7d65734d29e0",
+    "6ae6974fa26f5f73258176cc"
+   ]
   },
   {
    "slug": "ja-manufaru-maldives",
@@ -13801,7 +14166,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2",
+    "6ae6974c2a487b11a3a5ce28"
+   ]
   },
   {
    "slug": "jabulani",
@@ -13862,7 +14230,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "jacana-camp",
@@ -13949,7 +14319,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae6974122b9348d6fa6b239"
+   ]
   },
   {
    "slug": "jacis-private-lodge",
@@ -14054,7 +14427,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752601cd109d453a25d"
+   ]
   },
   {
    "slug": "jacks-camp",
@@ -14143,7 +14518,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae697414fc4d21574e4308d"
+   ]
   },
   {
    "slug": "jacks-private-camp",
@@ -14234,7 +14612,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae697414fc4d21574e4308d"
+   ]
   },
   {
    "slug": "jaguar-reef-lodge",
@@ -14346,7 +14727,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69740a715b8b3744d0552",
+    "6ae697408859d0cd92acf229"
+   ]
   },
   {
    "slug": "jao-camp",
@@ -14432,7 +14816,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae69741b2b7600515a60436"
+   ]
   },
   {
    "slug": "jao-reserve",
@@ -14517,7 +14904,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae6974122b9348d6fa6b239"
+   ]
   },
   {
    "slug": "ka-ana-resort",
@@ -14633,7 +15023,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697409300c15bed28823f"
+   ]
   },
   {
    "slug": "kaaba-luum-mexico",
@@ -14729,7 +15121,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952",
+    "6ae6974d2f7e87b5a5f59865"
+   ]
   },
   {
    "slug": "kamalaya-koh-samui",
@@ -14814,7 +15209,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a7f9f2127514d41e1"
+   ]
   },
   {
    "slug": "kayumanis-jimbaran-private-estates",
@@ -14912,7 +15309,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "kayumanis-nusa-dua",
@@ -15013,7 +15412,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "kayumanis-sanur",
@@ -15198,7 +15599,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "khwai-leadwood-camp",
@@ -15283,7 +15686,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974152c8a64add4c1c95",
+    "6ae69741ef1c4ba4eb1a23a2"
+   ]
   },
   {
    "slug": "khwai-lediba",
@@ -15368,7 +15774,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974152c8a64add4c1c95",
+    "6ae697427ca51cd40af01fc0",
+    "6ae69741ef1c4ba4eb1a23a2"
+   ]
   },
   {
    "slug": "kichakani-camp",
@@ -15493,7 +15903,14 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759968b2d480d75cb3d",
+    "6ae697539b944f584e8c5ba3",
+    "6ae69754335d8806516ff2dc",
+    "6ae697592a20c4a043a07150",
+    "6ae697539f848eef2166ef8c",
+    "6ae697548aca34d73203560f"
+   ]
   },
   {
    "slug": "kicheche-mara-north",
@@ -15586,7 +16003,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -15716,7 +16135,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759f4294bbc9dc9b259"
+   ]
   },
   {
    "slug": "kruger-shalati",
@@ -15777,7 +16198,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174"
+   ]
   },
   {
    "slug": "kualoa-ranch",
@@ -15869,7 +16292,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697487899eed56439b662"
+   ]
   },
   {
    "slug": "kudadoo-private-island",
@@ -15964,7 +16389,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "kura-boutique-resort",
@@ -16059,7 +16486,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974787d64df6a150b163",
+    "6ae697470cd87e591e92cccf",
+    "6ae697462221fa2b1696030a"
+   ]
   },
   {
    "slug": "kwando-4-rivers",
@@ -16152,7 +16583,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "kwando-kwara",
@@ -16257,7 +16690,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "kwando-lagoon",
@@ -16361,7 +16796,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741bb1a62c697ac9ab1"
+   ]
   },
   {
    "slug": "kwando-lebala",
@@ -16465,7 +16902,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69742a0ac6a3703dc3529"
+   ]
   },
   {
    "slug": "kwando-mma-dinare",
@@ -16558,7 +16997,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "kwando-moremi-crossing",
@@ -16654,7 +17095,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "kwando-nxai-pan",
@@ -16751,7 +17194,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69742331ddab2292abf29"
+   ]
   },
   {
    "slug": "kwando-pom-pom",
@@ -16847,7 +17292,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69742284420ecd074b4b4"
+   ]
   },
   {
    "slug": "kwando-rra-dinare",
@@ -16940,7 +17387,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "kwando-splash",
@@ -17036,7 +17485,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697421364f5f9ca4ed6a3"
+   ]
   },
   {
    "slug": "kwando-tau-pan",
@@ -17133,7 +17584,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697432f7e87b5a5f59857"
+   ]
   },
   {
    "slug": "kwande-private-game-reserve",
@@ -17265,6 +17718,122 @@
     "safaris",
     "gatherings"
    ],
+   "arrivalHubIds": [
+    "6ae69752654f571ad3cde2df"
+   ]
+  },
+  {
+   "slug": "kwessi-dunes-camp",
+   "name": "Kwessi Dunes",
+   "ledgerId": "STY-2026-000139",
+   "country": "Namibia",
+   "countrySlug": "namibia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twelve chalets with open-air star gazer rooms in the NamibRand Nature Reserve",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kwessi-dunes-camp/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. April to October is the dry season, with pleasant days and cold mornings and evenings, the classic time for desert photography. November to March is hotter, with afternoon thunderstorms.",
+   "bestFor": [
+    "couples",
+    "family",
+    "conservation",
+    "wildlife_photography"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Windhoek (WDH)",
+   "airportDirections": "A 1-hour light-aircraft flight from Windhoek, or a 4 to 5 hour drive.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve chalets, ten twin or double and two family chalets, each with an en suite bathroom with indoor and outdoor showers, air conditioning and a separate open-air star gazer room for sleeping under the desert sky. The main area has glass walls facing the dunes and mountains, a well-stocked bar, a library, lounges and a swimming pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Game drives and guided nature walks through the NamibRand, where gemsbok, springbok, kudu, Burchell's zebra and black-backed jackal have adapted to the desert, plus sundowners in the dunes. Excursions include hot-air ballooning, quad biking and the red dunes and Deadvlei of Sossusvlei. Spa treatments are available at extra cost."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Set in the NamibRand Nature Reserve, a private and exclusive desert reserve of more than 200,000 hectares with strict limits on lodges. Run on 100% solar power with careful waste management. Natural Selection gives 1.5% of every booking to the reserve's conservation projects, and stays support local schools and a conservation education programme."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A star gazer room for every chalet, in one of the darkest, quietest corners of the Namib, with red dunes and craggy mountains on every horizon."
+   ],
+   "why": [
+    {
+     "title": "Open Space and a Sky Full of Stars",
+     "body": "Best for couples, families with children of any age, and photographers who want Sossusvlei's dunes with a private reserve to come home to."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; April to October for dry, clear desert days.",
+    "how_to_get_there": "A 1-hour flight from Windhoek, or a 4 to 5 hour drive.",
+    "signature_experiences": "Sleeping in the star gazer room, hot-air ballooning and sundowners in the dunes.",
+    "who_its_for": "Couples, families with children of any age and photographers drawn to the Namib."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kwessi Dunes?",
+     "a": "In the NamibRand Nature Reserve in southern Namibia, a private desert reserve of more than 200,000 hectares near Sossusvlei."
+    },
+    {
+     "q": "How do you get to Kwessi Dunes?",
+     "a": "Fly about an hour from Windhoek by light aircraft, or drive 4 to 5 hours."
+    },
+    {
+     "q": "How many rooms does Kwessi Dunes have?",
+     "a": "Twelve chalets: ten twin or double and two family chalets, each with its own open-air star gazer room."
+    },
+    {
+     "q": "Can children stay at Kwessi Dunes?",
+     "a": "Yes. Natural Selection welcomes children of all ages."
+    },
+    {
+     "q": "When is the best time to visit Kwessi Dunes?",
+     "a": "It is open all year. April to October is dry with cold mornings, the classic photography season; November to March is hotter, with afternoon storms."
+    },
+    {
+     "q": "What can you do at Kwessi Dunes?",
+     "a": "Game drives, nature walks and dune sundowners on the reserve, with hot-air ballooning, quad biking and Sossusvlei excursions available."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
    "arrivalHubIds": []
   },
   {
@@ -17354,7 +17923,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974122b9348d6fa6b239",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "la-cle",
@@ -17479,7 +18051,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "la-residence",
@@ -17586,7 +18160,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "la-valise-tulum",
@@ -17673,7 +18249,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "ladder-ted-turner-reserve",
@@ -17760,7 +18339,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a0cd87e591e92ccec",
+    "6ae6975a167f73669dc0d602"
+   ]
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
@@ -17879,7 +18461,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69753a6b76fae048726a8",
+    "6ae69754bf5a13e528dc2ee5",
+    "6ae69754ca4211dce76cf97a"
+   ]
   },
   {
    "slug": "lalibela-reserve",
@@ -18020,7 +18606,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752654f571ad3cde2df"
+   ]
   },
   {
    "slug": "lapa-rios-lodge",
@@ -18108,7 +18696,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697476c4078799b61c4d5",
+    "6ae69746916275911afcc059"
+   ]
   },
   {
    "slug": "le-quartier-francais",
@@ -18230,7 +18821,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "la-tahaa",
@@ -18323,7 +18916,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69753a637fcda51d3fd61"
+   ]
   },
   {
    "slug": "leeu-estates",
@@ -18452,7 +19047,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "leeu-house",
@@ -18569,7 +19166,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "lekkerwater-dehoop",
@@ -18686,7 +19285,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c",
+    "6ae697511387bd60989a308e"
+   ]
   },
   {
    "slug": "lengishu-kenya",
@@ -18773,7 +19375,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974aa6d0fa13bbe23ed1",
+    "6ae69749f2face4d545f6717"
+   ]
   },
   {
    "slug": "leopard-hills",
@@ -18895,7 +19500,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "lepogo-lodges",
@@ -18956,7 +19564,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975251ff2cfc7b5a3a75"
+   ]
   },
   {
    "slug": "lewa-wilderness-lodge",
@@ -19045,7 +19655,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ad0f23a42452f2a65",
+    "6ae6974bb51a396b85970bde",
+    "6ae6974aa6d0fa13bbe23ed1"
+   ]
   },
   {
    "slug": "linyanti-ebony-camp",
@@ -19333,7 +19947,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174"
+   ]
   },
   {
    "slug": "little-tubu-camp",
@@ -19424,7 +20040,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae6974122b9348d6fa6b239"
+   ]
   },
   {
    "slug": "lolebezi-lodge",
@@ -19546,7 +20165,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b4336756d7942eed2",
+    "6ae6975bc8662ac7c79aa762"
+   ]
   },
   {
    "slug": "londolozi-reserve",
@@ -19668,7 +20290,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "beckon-longitude-131",
@@ -19776,7 +20400,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f42e4b37688bf54ca"
+   ]
   },
   {
    "slug": "loirien-mara",
@@ -19867,7 +20493,12 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b7b0c9b5d6288f8a0",
+    "6ae6974bf4294bbc9dc9b24b",
+    "6ae6974b6b505a193bf29747",
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "machaba",
@@ -19964,7 +20595,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "madikwe",
@@ -20086,7 +20719,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752601cd109d453a25d"
+   ]
   },
   {
    "slug": "mara-plains-camp-by-great-plains",
@@ -20168,7 +20803,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b6b505a193bf29747"
+   ]
   },
   {
    "slug": "mara-toto-tree-camp-by-great-plains",
@@ -20253,7 +20890,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "marataba",
@@ -20517,7 +21156,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974caacf6fb717e46f6a",
+    "6ae6974c7fcae6c7fd228292",
+    "6ae6974ce9cbc8b0912b40c0"
+   ]
   },
   {
    "slug": "matachica-resort-and-spa",
@@ -20630,7 +21273,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741174fa62d3ff39969"
+   ]
   },
   {
    "slug": "matetsi-victoria-falls",
@@ -20745,7 +21390,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c04de2bbf1d05d305",
+    "6ae6975b94e2db43e2c6078c"
+   ]
   },
   {
    "slug": "meno-a-kwena-camp",
@@ -20832,7 +21480,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "mezzanine-tulum",
@@ -20917,7 +21567,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "mfuwe-lodge",
@@ -21035,7 +21688,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bbc157255b8d62b02"
+   ]
   },
   {
    "slug": "miavana-by-time-tide",
@@ -21130,7 +21785,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974c879f7d65734d29dd"
+   ]
   },
   {
    "slug": "beyond-mnemba-by-and-beyond",
@@ -21258,7 +21915,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759fc194559e72761a4"
+   ]
   },
   {
    "slug": "monachira-camp",
@@ -21347,7 +22006,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697423b5411a430e82331"
+   ]
   },
   {
    "slug": "monwana-thornybush",
@@ -21471,7 +22132,11 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416",
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "morukuru-farm-house",
@@ -21601,7 +22266,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752aa92aef07ea601e7",
+    "6ae6975259e8c030833fc9ce"
+   ]
   },
   {
    "slug": "mutiara-laut",
@@ -21690,7 +22358,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69748b6c67215db4a014d"
+   ]
   },
   {
    "slug": "mwiba-lodge",
@@ -21898,7 +22568,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697491cde8e4e0c09adf2",
+    "6ae697482d05428dbdb760a1"
+   ]
   },
   {
    "slug": "asilia-naboisho-camp-by-asilia",
@@ -21989,7 +22662,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b7b0307086104311f"
+   ]
   },
   {
    "slug": "namale-resort-and-spa",
@@ -22086,7 +22761,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974707a89f44d5e7e25b",
+    "6ae69747a5f8e7688c6e7aec"
+   ]
   },
   {
    "slug": "namiri-plains-camp-by-asilia",
@@ -22221,7 +22899,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697592a20c4a043a07150"
+   ]
   },
   {
    "slug": "nautilus-maldives",
@@ -22311,7 +22991,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "nay-palad-hideaway",
@@ -22403,7 +23085,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69750a4bc57422670efc6"
+   ]
   },
   {
    "slug": "nayara-alto-atacama",
@@ -22526,7 +23210,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974150ecb0e9933ef843"
+   ]
   },
   {
    "slug": "nayara-bocas-del-toro",
@@ -22647,7 +23333,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974f62ceb7c1d07c5918"
+   ]
   },
   {
    "slug": "nayara-gardens",
@@ -22779,7 +23467,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae6974749f3beea910643f9"
+   ]
   },
   {
    "slug": "nayara-hangaroa",
@@ -22929,7 +23620,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697440726f0daa56d3998"
+   ]
   },
   {
    "slug": "arenal-springs-camp-by-nayara",
@@ -23041,7 +23734,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae6974749f3beea910643f9"
+   ]
   },
   {
    "slug": "nayara-tented-camp",
@@ -23169,7 +23865,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae6974749f3beea910643f9"
+   ]
   },
   {
    "slug": "ngala-safari-lodge-by-beyond",
@@ -23293,7 +23992,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416",
+    "6ae6975201f48e4a41de6174"
+   ]
   },
   {
    "slug": "ngare-camp-by-serian",
@@ -23383,7 +24085,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "nikoi-island",
@@ -23474,7 +24178,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69748044aae65ded92d07",
+    "6ae69748067ad71efe03ab87"
+   ]
   },
   {
    "slug": "nimali-mara",
@@ -23795,7 +24502,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "no-1-pery-square-limerick",
@@ -23906,7 +24615,9 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e85a"
+   ]
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -23998,7 +24709,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69746276bf888d38fb053",
+    "6ae69747144930d65f54ca37"
+   ]
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -24210,7 +24924,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "nomade-temple-ibiza",
@@ -24307,7 +25023,9 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975292f7caa701fd7785"
+   ]
   },
   {
    "slug": "nomade-temple-madrid",
@@ -24404,7 +25122,9 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752509f1f4690b797f6"
+   ]
   },
   {
    "slug": "nomade-tulum",
@@ -24499,7 +25219,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "north-island-okavango",
@@ -24573,7 +25295,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "nyamatusi-camp",
@@ -24766,7 +25490,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "ol-jogi-conservancy",
@@ -24865,7 +25591,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974acaf3f42cf0fd70c6",
+    "6ae6974c7d4c694c47df3348"
+   ]
   },
   {
    "slug": "ol-pejeta-bush-camp-asilia",
@@ -24956,7 +25685,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b0c7208df76184c03"
+   ]
   },
   {
    "slug": "olas-tulum",
@@ -25045,7 +25776,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "asilia-olivers-camp",
@@ -25168,7 +25902,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754642635a90d18aa07"
+   ]
   },
   {
    "slug": "one-only-gorillas-nest",
@@ -25247,7 +25983,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "open-sky",
@@ -25334,7 +26072,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975aa3c0952beb359e7f",
+    "6ae6975acde22a6069bbf9d7",
+    "6ae6975af50f9541ebad3581"
+   ]
   },
   {
    "slug": "our-habitas-namibia",
@@ -25417,7 +26159,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974def1c4ba4eb1a23ac",
+    "6ae6974dc03e0814d1b3a787"
+   ]
   },
   {
    "slug": "our-habitas-tulum",
@@ -25510,7 +26255,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952",
+    "6ae6974d2f7e87b5a5f59865"
+   ]
   },
   {
    "slug": "pacuare-lodge",
@@ -25606,7 +26354,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf"
+   ]
   },
   {
    "slug": "paws-up-resort",
@@ -25696,7 +26446,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d56cb71307b306fee"
+   ]
   },
   {
    "slug": "pearl-resort-le-bora-bora",
@@ -25783,7 +26535,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69753bb973b562472908a",
+    "6ae697537191ebcc71e7962d"
+   ]
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
@@ -25872,7 +26627,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69753c699261f518694a7",
+    "6ae697537191ebcc71e7962d"
+   ]
   },
   {
    "slug": "pearl-resort-le-tahiti",
@@ -25961,7 +26719,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697537191ebcc71e7962d"
+   ]
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -26048,7 +26808,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697538e25e9cda14f7ea6",
+    "6ae697537191ebcc71e7962d"
+   ]
   },
   {
    "slug": "pearl-resort-vahine-private-island",
@@ -26143,7 +26906,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69753a637fcda51d3fd61",
+    "6ae697537191ebcc71e7962d"
+   ]
   },
   {
    "slug": "pelo-camp",
@@ -26230,7 +26996,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974122b9348d6fa6b239",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -26355,7 +27124,11 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697524b481965253955f4",
+    "6ae69752000af1fe55f77ec1",
+    "6ae69751fd469736b2d7029e"
+   ]
   },
   {
    "slug": "pods-camp-bay",
@@ -26470,7 +27243,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "post-ranch-inn",
@@ -26561,7 +27336,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743c2cb658c212ee358",
+    "6ae6974348e87112caca2fb6",
+    "6ae69743d4903237c545b6f5"
+   ]
   },
   {
    "slug": "potato-bush-camp",
@@ -26783,7 +27562,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697481b28a7442330f7c5",
+    "6ae697487899eed56439b662"
+   ]
   },
   {
    "slug": "radhoo-tulum",
@@ -26868,7 +27650,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "rayvadee-resort",
@@ -26967,7 +27752,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759963a83ad3edf296f"
+   ]
   },
   {
    "slug": "royal-davui-island-resort",
@@ -27058,7 +27845,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69747a5f8e7688c6e7aec",
+    "6ae697470b256ecc9a54abdf"
+   ]
   },
   {
    "slug": "royal-malewane",
@@ -27170,7 +27960,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "royal-zambezi-lodge",
@@ -27301,7 +28094,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b490b37ebbeebbe39",
+    "6ae6975c7f050a78267c41f0"
+   ]
   },
   {
    "slug": "rubondo-island-camp-asilia",
@@ -27433,7 +28229,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975973c2698559d5d403"
+   ]
   },
   {
    "slug": "sable-alley-khwai",
@@ -27517,7 +28315,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "salas-camp",
@@ -27601,7 +28401,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974a642635a90d18a9fe",
+    "6ae6974b6b505a193bf29747"
+   ]
   },
   {
    "slug": "samara-karoo-reserve",
@@ -27723,7 +28526,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69752654f571ad3cde2df",
+    "6ae697510dd2509df5d6bce3"
+   ]
   },
   {
    "slug": "sans-camp",
@@ -27896,7 +28702,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974bcd30d607490112eb",
+    "6ae6974b7b0307086104311f"
+   ]
   },
   {
    "slug": "saruni-leopard-hill",
@@ -27985,7 +28794,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974bcd30d607490112eb",
+    "6ae6974b7b0307086104311f"
+   ]
   },
   {
    "slug": "saruni-samburu-lodge",
@@ -28070,7 +28882,12 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ad3fd56d96ed5dd81",
+    "6ae6974bc70cc7774f920d95",
+    "6ae6974cd7a4fe7128c423c7",
+    "6ae6974c6a954f5ff18895d5"
+   ]
   },
   {
    "slug": "saruni-wild-lodge",
@@ -28161,7 +28978,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69749be68678c2c263961",
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "sasaab",
@@ -28258,7 +29078,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974bb51a396b85970bde",
+    "6ae6974ca851e65466bd0168",
+    "6ae6974cd7a4fe7128c423c7"
+   ]
   },
   {
    "slug": "seseka-thornybush",
@@ -28319,7 +29143,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "sashwa",
@@ -28377,7 +29203,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "sausage-tree-camp",
@@ -28626,7 +29454,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697548aca34d73203560f"
+   ]
   },
   {
    "slug": "segera-retreat",
@@ -28721,7 +29551,11 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974bb51a396b85970bde",
+    "6ae6974b0c7208df76184c03",
+    "6ae6974c52c8a64add4c1c9e"
+   ]
   },
   {
    "slug": "great-plains-selinda-main-camp",
@@ -28795,7 +29629,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974264dc8be5d10b0e7a"
+   ]
   },
   {
    "slug": "senda-monteverde-lodge",
@@ -28892,7 +29728,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae6974749f3beea910643f9"
+   ]
   },
   {
    "slug": "serengeti-lamai-camp-by-serian",
@@ -29023,7 +29862,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754e01d42ae7900ab54"
+   ]
   },
   {
    "slug": "shawa-luangwa-camp",
@@ -29243,7 +30084,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697437b03070861043106",
+    "6ae69743ae2e8cbad44c0055"
+   ]
   },
   {
    "slug": "shipwreck-lodge-namibia",
@@ -29254,13 +30098,17 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Ten shipwreck cabins on the wildest coast in Africa",
+   "tagline": "Ten shipwreck-inspired cabins, the only lodge in Skeleton Coast National Park",
    "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/87ccb45a3_f0fb2b052_6a4fd2bc9ea4d78feb6f9a2e_shipwrecklodge.jpg",
    "gallery": [],
    "bestMonths": "Year-round; May to October for the classic dry desert",
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "adventure",
+    "family",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -29277,33 +30125,62 @@
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Day trips to the Mowe Bay seal colony past old wrecks",
-     "Sundowners on the roaring dunes",
-     "Quad biking and sandboarding",
-     "4x4 drives along the Hoarusib River to the Clay Castles",
-     "Nature walks",
-     "Beach lunches"
-    ]
+    "paras": [
+     "Day excursion to the Mowe Bay seal colony past the Suiderkus and Karimona wrecks. Sundowners on the dunes. Guided quad biking and sandboarding. Hoarusib River excursion to the Clay Castles. Nature walks to the shore. Beach lunches, weather permitting."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "The only lodge inside Skeleton Coast National Park, between the Hoarusib and Hoanib rivers. Central lounge and restaurant with a wraparound deck facing the Atlantic. Fireplace and library. Solar powered. Children of all ages welcome."
+     "The only lodge in Skeleton Coast National Park, in the Skeleton Coast Central Concession Area. Central lounge and restaurant with a wraparound deck facing the Atlantic. Fireplace and library. Solar powered. Two Michelin Keys. Children of all ages welcome."
     ],
     "items": []
    },
    "onlyHere": [
-    "Fog rolling off the Atlantic, desert-adapted elephant and brown hyena in the river beds, and a cabin that looks like it washed up on the dunes. Shipwreck Lodge is for travelers who want Namibia at its most remote and strange."
+    "Fog rolling off the Atlantic, beaches strewn with whale bones, the chance of desert-adapted elephant or brown hyena, and a cabin that looks like it washed up on the dunes. Shipwreck Lodge is for travellers who want Namibia remote and strange."
    ],
    "why": [
     {
      "title": "The Edge of the Map",
-     "body": "Best for adventurous couples, families with older children, photographers and anyone pairing the coast with Namibia's desert and Etosha."
+     "body": "Best for adventurous couples, families (children of all ages are welcome), photographers and anyone pairing the coast with Namibia's desert and Etosha."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "Open year round, with May to October the dry winter when the desert is at its best.",
+    "how_to_get_there": "Transfers into Skeleton Coast National Park are arranged with Natural Selection at booking, as the brand site does not publish a route.",
+    "signature_experiences": "Mowe Bay seal colony excursion, Hoarusib Clay Castles, guided quad biking and sandboarding on the dunes.",
+    "who_its_for": "Adventurous couples, families with children of any age and photographers wanting a remote coastline."
+   },
+   "faqs": [
+    {
+     "q": "Where is Shipwreck Lodge?",
+     "a": "It is in the Skeleton Coast Central Concession Area of Skeleton Coast National Park in north-western Namibia, strung along a dune facing the Atlantic. Natural Selection says it is the only lodge in the whole of the park."
+    },
+    {
+     "q": "How do I get to Shipwreck Lodge?",
+     "a": "Natural Selection does not publish transfer details on its Shipwreck Lodge page, so flights or road transfers are confirmed with its reservations team at booking."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "The lodge is open year round. May to October is winter, with pleasant days, chilly mornings and evenings and little to no rain; November to April is summer, with clearer, less foggy mornings that suit birdwatching."
+    },
+    {
+     "q": "How many rooms are there?",
+     "a": "Ten rooms built to resemble shipwrecks: eight twin or double and two family rooms (triples on request), all en suite and solar powered, with wood-burning stoves."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "Yes, children of all ages are welcome. Private vehicles are required on drives and walks for families with children under 10, and quad biking and sandboarding have their own age guidance."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Nature drives along the Hoarusib River, a day excursion to the Mowe Bay Cape fur seal colony past old wrecks, the Clay Castles excursion, guided quad biking, sandboarding and beach walks."
+    },
+    {
+     "q": "Who is Shipwreck Lodge best for?",
+     "a": "Travellers drawn to raw, remote coastline and desert, including families and photographers. Natural Selection notes that wildlife sightings here are rare but special."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -29323,7 +30200,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974e95f3dd1b670575e2"
+   ]
   },
   {
    "slug": "sierra-grande-ted-turner-reserve",
@@ -29515,7 +30394,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f5c4bb91cb3651706"
+   ]
   },
   {
    "slug": "silolona-sojourns",
@@ -29603,7 +30484,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69748b6c67215db4a014d",
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "sindabezi-island-camp",
@@ -29866,7 +30750,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "singita-castleton",
@@ -29990,7 +30877,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "singita-ebony",
@@ -30108,7 +30998,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975142da92bdd9e00a2e",
+    "6ae69752aa92aef07ea601e7"
+   ]
   },
   {
    "slug": "singita-ebony-villa",
@@ -30229,7 +31122,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "singita-elela",
@@ -30310,7 +31206,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "singita-explore",
@@ -30560,7 +31458,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-katanza-house",
@@ -30658,7 +31559,9 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "singita-kilima",
@@ -30793,7 +31696,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-kwitonda",
@@ -30886,7 +31792,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "singita-lebombo",
@@ -31013,7 +31921,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "singita-lebombo-villa",
@@ -31134,7 +32045,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "singita-malilangwe-house",
@@ -31265,7 +32179,9 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c8e6a1591f6956fb3"
+   ]
   },
   {
    "slug": "singita-mara-river",
@@ -31401,7 +32317,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697548aca34d73203560f"
+   ]
   },
   {
    "slug": "singita-milele",
@@ -31526,7 +32444,10 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-pamushana",
@@ -31660,7 +32581,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c8e6a1591f6956fb3"
+   ]
   },
   {
    "slug": "singita-sabora",
@@ -31792,7 +32715,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-sasakwa",
@@ -31932,7 +32858,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-serengeti-house",
@@ -32064,7 +32993,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69759b3822e21039671a0",
+    "6ae697539f848eef2166ef8c"
+   ]
   },
   {
    "slug": "singita-sweni",
@@ -32190,7 +33122,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "sirai-house",
@@ -32341,7 +33276,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974aaf9dc3d974bf5bf5",
+    "6ae6974bb51a396b85970bde"
+   ]
   },
   {
    "slug": "sirius-yacht-galapagos",
@@ -32510,7 +33448,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "six-senses-con-dao",
@@ -32606,7 +33547,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b24b2777ddc804d13",
+    "6ae6975b2cd3e7e2ab4884db"
+   ]
   },
   {
    "slug": "six-senses-crans-montana",
@@ -32696,7 +33640,11 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975378c7d71341c57a2a",
+    "6ae69753cfda05f41e15a176",
+    "6ae6975351ff2cfc7b5a3a79"
+   ]
   },
   {
    "slug": "six-senses-douro-valley",
@@ -32786,7 +33734,10 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69750e9b81c7de1fe3f39",
+    "6ae6975059e8c030833fc9ca"
+   ]
   },
   {
    "slug": "six-senses-fiji",
@@ -32880,7 +33831,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69747a5f8e7688c6e7aec"
+   ]
   },
   {
    "slug": "six-senses-ibiza",
@@ -33006,7 +33959,9 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975292f7caa701fd7785"
+   ]
   },
   {
    "slug": "six-senses-kanuhura",
@@ -33098,7 +34053,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "six-senses-kyoto",
@@ -33192,7 +34149,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69749bf5a13e528dc2ecb",
+    "6ae6974984ef6b6096029f88",
+    "6ae697497ca51cd40af01fc4"
+   ]
   },
   {
    "slug": "six-senses-laamu",
@@ -33281,7 +34242,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2",
+    "6ae6974c28c1804b0b45bac4"
+   ]
   },
   {
    "slug": "six-senses-ninh-van-bay",
@@ -33377,7 +34341,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a92f7caa701fd7792"
+   ]
   },
   {
    "slug": "six-senses-rome",
@@ -33467,7 +34433,10 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974909af689b56e2820d",
+    "6ae697492711b80acdd02b00"
+   ]
   },
   {
    "slug": "six-senses-samui",
@@ -33563,7 +34532,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a7f9f2127514d41e1"
+   ]
   },
   {
    "slug": "six-senses-uluwatu",
@@ -33659,7 +34630,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "six-senses-yao-noi",
@@ -33755,7 +34728,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a0354a9239ccf6f99",
+    "6ae69759963a83ad3edf296f"
+   ]
   },
   {
    "slug": "six-senses-zil-pasyon",
@@ -33844,7 +34820,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69750d7c7888a53a4972d",
+    "6ae6975022b9348d6fa6b246"
+   ]
   },
   {
    "slug": "skybeds-khwai",
@@ -34036,7 +35015,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697409300c15bed28823f"
+   ]
   },
   {
    "slug": "somalisa-acacia",
@@ -34059,7 +35040,10 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -34071,7 +35055,7 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Four tented suites for up to 12 guests: two luxury tents and two family tents with interconnecting rooms. Each has a wood-burning fireplace, copper slipper bath, indoor and outdoor showers and a private deck."
+     "Two luxury tented suites and two luxury tented family suites with interconnecting bedrooms, each with a wood-burning fireplace and a private viewing deck. The main area has a pool, a communal firepit and a wooden deck overlooking a watering hole."
     ],
     "items": []
    },
@@ -34096,8 +35080,32 @@
      "body": "Best for families, photographers and couples who want a small, eco-minded camp in Zimbabwe's biggest park."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "signature_experiences": "Watching elephants at the Elephant Pool and the Ngwana Club's Junior Guide activities.",
+    "who_its_for": "Families who want a small, family-focused camp with a kids' club in Hwange."
+   },
+   "faqs": [
+    {
+     "q": "Where is Somalisa Acacia?",
+     "a": "In the heart of Hwange National Park, Zimbabwe's largest national park."
+    },
+    {
+     "q": "How many suites does Somalisa Acacia have?",
+     "a": "Four: two luxury tented suites and two luxury tented family suites with interconnecting bedrooms."
+    },
+    {
+     "q": "Is Somalisa Acacia good for families?",
+     "a": "Yes. It is African Bush Camps' family-focused camp, with the Ngwana Club for children: storytelling, arts and crafts and nature walks where young guests can earn a Junior Guide certificate."
+    },
+    {
+     "q": "What is the Elephant Pool?",
+     "a": "A waterhole beside the property where elephants come to drink, so guests can watch them up close in a safe setting."
+    },
+    {
+     "q": "What activities does Somalisa Acacia offer?",
+     "a": "Game drives, walking safaris, birding and cultural visits in Hwange National Park."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -34116,7 +35124,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c714029341de6c7f0"
+   ]
   },
   {
    "slug": "somalisa",
@@ -34313,7 +35323,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "soneva-jani-maldives",
@@ -34395,7 +35407,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "soneva-secret-maldives",
@@ -34481,7 +35495,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "soori-bali",
@@ -34578,7 +35594,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "beckon-southern-ocean-lodge",
@@ -34678,7 +35696,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f3d8507d77979662a",
+    "6ae6973f891b1fc1ca20a54e"
+   ]
   },
   {
    "slug": "st-george-s-caye-resort",
@@ -34790,7 +35811,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974040204622a27aac1e"
+   ]
   },
   {
    "slug": "sterrekopje",
@@ -34878,7 +35901,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "sushi-chuma",
@@ -35083,7 +36108,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974b0c7208df76184c03"
+   ]
   },
   {
    "slug": "swale-camp",
@@ -35199,7 +36226,9 @@
     "classifiedAt": "2026-11-01"
    },
    "volumes": null,
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754642635a90d18aa07"
+   ]
   },
   {
    "slug": "tabacon-thermal-resort-spa",
@@ -35297,7 +36326,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf",
+    "6ae6974749f3beea910643f9"
+   ]
   },
   {
    "slug": "tahi",
@@ -35383,7 +36415,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974fc07d0707a6767647",
+    "6ae6974e462820454c7ce501"
+   ]
   },
   {
    "slug": "tanah-gajah",
@@ -35485,7 +36520,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "tanda-tula",
@@ -35609,7 +36646,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "tengile-mala-mala-camp",
@@ -35725,7 +36764,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69752aa92aef07ea601e7",
+    "6ae697525877c4a2f38254a8"
+   ]
   },
   {
    "slug": "tengile-mala-mala-kirkmans-kamp",
@@ -35849,7 +36892,11 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69752aa92aef07ea601e7",
+    "6ae697525877c4a2f38254a8"
+   ]
   },
   {
    "slug": "tengile-mala-mala-rattrays-lodge",
@@ -35966,7 +37013,11 @@
     "safaris",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69752aa92aef07ea601e7",
+    "6ae69752f0505d1c6d93cfb4"
+   ]
   },
   {
    "slug": "tengile-mala-mala-sable-camp",
@@ -36079,7 +37130,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69752aa92aef07ea601e7",
+    "6ae697525877c4a2f38254a8"
+   ]
   },
   {
    "slug": "tengile-river-lodge-by-mala-mala",
@@ -36188,7 +37243,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
+   ]
   },
   {
    "slug": "thatch-caye-resort",
@@ -36304,7 +37362,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69740a715b8b3744d0552",
+    "6ae697408859d0cd92acf229"
+   ]
   },
   {
    "slug": "the-art-villa",
@@ -36407,7 +37468,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697470cd87e591e92cccf"
+   ]
   },
   {
    "slug": "the-atelier-villa",
@@ -36554,7 +37617,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d2f7e87b5a5f59865",
+    "6ae6974d696b4469b6c2b952"
+   ]
   },
   {
    "slug": "the-brando-tetiaroa",
@@ -36642,7 +37708,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697537191ebcc71e7962d",
+    "6ae69753394cca909a47cc77"
+   ]
   },
   {
    "slug": "the-hide-safari-camp",
@@ -36772,7 +37841,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c04de2bbf1d05d305",
+    "6ae6975cbed9318bfa1b3674"
+   ]
   },
   {
    "slug": "the-highlands-by-asilia-highlands",
@@ -36903,7 +37975,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69754ca4211dce76cf97a"
+   ]
   },
   {
    "slug": "the-lodge-at-chaa-creek",
@@ -37020,7 +38094,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974045281cd346259971"
+   ]
   },
   {
    "slug": "beckon-the-louise",
@@ -37114,7 +38190,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f891b1fc1ca20a54e"
+   ]
   },
   {
    "slug": "nami-project",
@@ -37201,7 +38279,12 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974496b944e8c592f867",
+    "6ae697442cd3e7e2ab4884c7",
+    "6ae697445c7b134365e994e7",
+    "6ae69744c23ffff6bdd6ef40"
+   ]
   },
   {
    "slug": "the-retreat-at-blue-lagoon",
@@ -37295,7 +38378,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697486953910e892991b9"
+   ]
   },
   {
    "slug": "the-silo-hotel",
@@ -37394,7 +38479,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697512f7e87b5a5f5986c"
+   ]
   },
   {
    "slug": "thornybush-reserve",
@@ -37455,7 +38542,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69751dd84deb01116e416"
+   ]
   },
   {
    "slug": "beckon-tierra-atacama",
@@ -37553,7 +38642,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974150ecb0e9933ef843",
+    "6ae69744b7c739ce7826be80"
+   ]
   },
   {
    "slug": "tierra-patagonia",
@@ -37642,7 +38734,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697449583543efcf27c0b"
+   ]
   },
   {
    "slug": "time-tide-chinzombo-2",
@@ -37768,7 +38862,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bbc157255b8d62b02"
+   ]
   },
   {
    "slug": "time-tide-chongwe-2",
@@ -37891,7 +38987,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c7f050a78267c41f0"
+   ]
   },
   {
    "slug": "time-tide-mchenja",
@@ -38023,7 +39121,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bbc157255b8d62b02"
+   ]
   },
   {
    "slug": "tokoriki-island-resort",
@@ -38112,7 +39212,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69747a5f8e7688c6e7aec"
+   ]
   },
   {
    "slug": "tongabezi",
@@ -38377,7 +39479,11 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69750d5b66a0848ea0238",
+    "6ae697509164f84f207f2520",
+    "6ae69752be68678c2c26397c"
+   ]
   },
   {
    "slug": "tubu-tree-camp",
@@ -38460,7 +39566,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae6974122b9348d6fa6b239"
+   ]
   },
   {
    "slug": "tuludi-khwai",
@@ -38545,7 +39654,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0",
+    "6ae69741b2b7600515a60436"
+   ]
   },
   {
    "slug": "turtle-inn",
@@ -38659,7 +39771,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974092ff1d7f5f415e24",
+    "6ae697409300c15bed28823f",
+    "6ae6974015191bd7aba6d4e6"
+   ]
   },
   {
    "slug": "ubuntu-migration-camp-asilia",
@@ -38792,7 +39908,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697597f0b8716e065ba2a",
+    "6ae697548aca34d73203560f",
+    "6ae697592a20c4a043a07150"
+   ]
   },
   {
    "slug": "ulum-moab",
@@ -38888,7 +40008,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a7d6989b029f54ccf",
+    "6ae6975a7899eed56439b687",
+    "6ae6975af50f9541ebad3581"
+   ]
   },
   {
    "slug": "umaya-resort-and-marina",
@@ -39002,7 +40126,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69740d6ca270c0722aeb2"
+   ]
   },
   {
    "slug": "under-canvas-brtce-canyon",
@@ -39092,7 +40218,12 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a9a5c66fe944e38d1",
+    "6ae6975adf9e8e2d4fa8712d",
+    "6ae6975acde22a6069bbf9d7",
+    "6ae6975af50f9541ebad3581"
+   ]
   },
   {
    "slug": "under-canvas-glacier",
@@ -39179,7 +40310,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4670df93f45f61ca"
+   ]
   },
   {
    "slug": "under-canvas-grand-canyon",
@@ -39272,7 +40405,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6973f1d164e6a7f476ff6",
+    "6ae6973ffe6d4667aa9201a9",
+    "6ae6975acde22a6069bbf9d7"
+   ]
   },
   {
    "slug": "under-canvas-lake-powell-grand-staircase",
@@ -39362,7 +40499,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975af0505d1c6d93cfba",
+    "6ae6975aa3c0952beb359e7f",
+    "6ae6975acde22a6069bbf9d7"
+   ]
   },
   {
    "slug": "under-canvas-moab",
@@ -39453,7 +40594,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975a7d6989b029f54ccf",
+    "6ae6975a7899eed56439b687",
+    "6ae6975af50f9541ebad3581"
+   ]
   },
   {
    "slug": "under-canvas-north-yellowstone",
@@ -39542,7 +40687,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b574bd2605d6d09c7",
+    "6ae6975bf229a2ebf3c40c44"
+   ]
   },
   {
    "slug": "under-canvas-west-yellowstone",
@@ -39631,7 +40779,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975bf229a2ebf3c40c44",
+    "6ae6975b574bd2605d6d09c7"
+   ]
   },
   {
    "slug": "under-canvas-yosemite",
@@ -39720,7 +40871,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743cc2935a7c554a8fc",
+    "6ae69743ea7fab50e4a82a9f",
+    "6ae69743d4903237c545b6f5"
+   ]
   },
   {
    "slug": "under-canvas-zion",
@@ -39810,7 +40965,11 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975aa3c0952beb359e7f",
+    "6ae6975acde22a6069bbf9d7",
+    "6ae6975adf9e8e2d4fa8712d"
+   ]
   },
   {
    "slug": "ungasan-clifftops",
@@ -39905,7 +41064,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "uxua-casa-hotel-spa",
@@ -39998,7 +41159,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974311b497da9f94d51b"
+   ]
   },
   {
    "slug": "velaa-private-island",
@@ -40090,7 +41253,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ]
   },
   {
    "slug": "vermejo-ted-turner-reserve",
@@ -40294,7 +41459,9 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974822d90def7dcf0341"
+   ]
   },
   {
    "slug": "lales-camp-expeditions",
@@ -40372,7 +41539,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974caacf6fb717e46f6a",
+    "6ae6974c7fcae6c7fd228292",
+    "6ae6974ce9cbc8b0912b40c0"
+   ]
   },
   {
    "slug": "wilderness-bisate-reserve",
@@ -40456,7 +41627,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "wilderness-busanga",
@@ -40575,18 +41748,22 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b8ba23cffce2e9d8b",
+    "6ae6975b490b37ebbeebbe39",
+    "6ae6975bae2e8cbad44c0065"
+   ]
   },
   {
    "slug": "wilderness-desert-rhino-camp",
-   "name": "Wilderness \n Desert Rhino Camp",
+   "name": "Wilderness Desert Rhino Camp",
    "ledgerId": "STY-2026-000333",
    "country": "Namibia",
    "countrySlug": "namibia",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Track giants in Namibia’s wildest desert",
+   "tagline": "Track black rhino on foot in Damaraland's Palmwag Concession",
    "quote": "Walk with black rhinos, find desert silence, and sleep where wildlife still roams free",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/130ba7b32_9d6c7f4e4_686ef5b90c1031c4540ea6d7_DesertRhinoCamp_GameDrive_0724_TC_021_T.jpg",
    "gallery": [
@@ -40597,9 +41774,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cdc0efbf4_31fac37af_6960a3fe4fd144c4d4ba407b_DesertRhinoCamp_Rooms_Standard_0724_TC_039_T.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dac85dbcb_614c5461b_6960a3feb9d729e7411985f2_DesertRhinoCamp_Rooms_Standard_0724_TC_048_T.jpg"
    ],
-   "bestMonths": "April to October",
+   "bestMonths": "May to September",
    "bestMonthsNote": "Cool, dry season is best for rhino tracking and wildlife viewing. Green season (November to March) is dramatic, quieter, and great for birding and photography.",
-   "bestFor": [],
+   "bestFor": [
+    "conservation",
+    "adventure",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -40611,23 +41792,23 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight classic canvas tents with en-suite bathrooms, private decks, and endless desert and mountain views."
+     "Six contemporary canvas and stone suites, including one family unit, each with its own stargazing deck and endless desert and mountain views."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided rhino tracking on foot and by vehicle",
-     "Game drives for desert-adapted wildlife",
-     "Nature walks",
-     "Community and Save the Rhino Trust visits",
-     "Sundowners and stargazing"
+     "Rhino tracking on foot with rhino monitors",
+     "Nature drives for desert-adapted wildlife",
+     "Nature trails for smaller fauna and flora",
+     "UV scorpion spotting after dark",
+     "Campfire evenings, bush dinners and stargazing"
     ]
    },
    "features": {
     "paras": [
-     "Set in a vast private concession. Home to Africa’s largest population of free-ranging black rhino. Solar-powered, eco-friendly camp. Small and intimate, with personalized guiding. Partnership with Save the Rhino Trust."
+     "Set in a wide valley in Damaraland's vast Palmwag Concession. Home to one of the last free-roaming populations of black rhino on the planet. Newly rebuilt camp with a pool. Solar-powered, with all power generated by the sun. A 21-year partnership with three community conservancies and Save the Rhino Trust."
     ],
     "items": []
    },
@@ -40637,12 +41818,46 @@
    "why": [
     {
      "title": "Where Rhinos Roam Free",
-     "body": "Wilderness Desert Rhino Camp offers the best rhino tracking in Africa, spectacular scenery, and an authentic, off-the-grid experience. Ideal for wildlife lovers, conservationists, and those seeking the wild side of Namibia."
+     "body": "Wilderness Desert Rhino Camp offers rhino tracking on foot, spectacular scenery, and an authentic, off-the-grid experience. Ideal for wildlife lovers, conservationists, and those seeking the wild side of Namibia."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Wilderness recommends the cooler months of May to September for exploring Namibia's desert on foot.",
+    "how_to_get_there": "Wilderness arranges access within a Namibia itinerary, including private inter-camp transfers on Wilderness Air.",
+    "signature_experiences": "Rhino tracking on foot with Save the Rhino Trust monitors, nature drives and trails, UV scorpion walks and stargazing.",
+    "who_its_for": "Conservation-minded explorers who want to see free-roaming black rhino on foot, with one family unit for families."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Desert Rhino Camp?",
+     "a": "It lies in a wide valley in Damaraland's Palmwag Concession in northwest Namibia, among flat-topped mountains, wind-sculpted sandstone cliffs and dry riverbeds."
+    },
+    {
+     "q": "How do you get to Desert Rhino Camp?",
+     "a": "Wilderness plans the journey as part of a Namibia itinerary, with private inter-camp transfers on Wilderness Air. The camp page does not publish an airstrip or transfer time, so we confirm routing when we plan your trip."
+    },
+    {
+     "q": "When is the best time to visit Desert Rhino Camp?",
+     "a": "Wilderness names the cooler months, May to September, as particularly enjoyable for exploring Namibia's desert on foot. November to April is warmer, and occasional rains bring new life to the landscape. The camp page lists no seasonal closure."
+    },
+    {
+     "q": "How many suites does Desert Rhino Camp have?",
+     "a": "The newly rebuilt camp has six contemporary canvas and stone suites, including one family unit. Each suite has its own stargazing deck, and there is a pool."
+    },
+    {
+     "q": "Can children stay at Desert Rhino Camp?",
+     "a": "One of the six suites is a family unit. Wilderness does not publish a minimum age on the camp page, so we confirm the child policy, including for rhino tracking on foot, when planning."
+    },
+    {
+     "q": "What is the signature experience at Desert Rhino Camp?",
+     "a": "Tracking black rhino on foot with rhino monitors, in partnership with Save the Rhino Trust. Nature drives, nature trails, UV scorpion spotting at night, campfire evenings and stargazing complete the stay."
+    },
+    {
+     "q": "Who is Desert Rhino Camp best suited to?",
+     "a": "Travellers who want conservation at the heart of their safari. The camp's partnership with three community conservancies and Save the Rhino Trust protects one of the last free-roaming black rhino populations, and every stay contributes directly."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -40662,11 +41877,13 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d7ccccd78c04e278a"
+   ]
   },
   {
    "slug": "wilderness-damaraland",
-   "name": "Wilderness \n Doro Nawas",
+   "name": "Wilderness Doro Nawas",
    "ledgerId": "STY-2026-000334",
    "country": "Namibia",
    "countrySlug": "namibia",
@@ -40686,58 +41903,85 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0ad9828fe_0e208bd8c_69ca456a86038b6f35624331_Doro_20Nawas_20Pool.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d1f8bacfb_1d81f772d_69ca45cd77eb39b55493d148_Doro_20Nawas_20dinner.jpg"
    ],
-   "bestMonths": "May to October",
+   "bestMonths": "May to September",
    "bestMonthsNote": "May to October is dry, cool, and best for desert wildlife, hiking, and star beds. November to April is warmer, green, and quieter.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -20.4976,
-    "lng": 14.3844
+    "lat": -20.4496,
+    "lng": 14.2998
    },
    "airport": "Doro Nawas Airstrip, Twyfelfontein Airstrip",
    "airportDirections": "Fly to Windhoek, connect by light aircraft to Doro Nawas or Twyfelfontein Airstrip, 30 minute road transfer to camp",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Sixteen thatched stone rooms with retractable beds for sleeping under the stars, en-suite bathrooms, private decks, and panoramic desert views."
+     "Sixteen wood, canvas and thatch guest rooms, each with a private outdoor shower, an airy veranda for sleeping out under the stars, and views across Damaraland in every direction. The camp also offers a family suite."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Game drives tracking desert-adapted elephants",
-     "Guided nature walks",
-     "Twyfelfontein rock art tours",
-     "Community village visits",
-     "Birding",
-     "Stargazing from your bed"
-    ]
+    "paras": [
+     "Guided nature drives and walks for desert-adapted elephant, giraffe, zebra, oryx and springbok. San rock art and engravings at Twyfelfontein. Damara culture in camp and at the Damara Living Museum. Excursions to the Petrified Forest, Burnt Mountain and Organ Pipes. Night walks for desert critters. Birding and stargazing."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Unique star beds for open air sleeping",
-     "Panoramic desert and mountain vistas",
-     "Locally inspired design",
-     "Family friendly with triple and family rooms",
-     "Cultural immersion and community projects",
-     "Eco-friendly and solar powered"
-    ]
+    "paras": [
+     "Sleep-outs on your deck under the stars. Set on a rocky outcrop on the edge of the dry Aba-Huab River, with views in every direction. Pool and locally crafted keepsakes. A family suite. A joint venture with the Doro !Nawas Conservancy. Locally grown ingredients in traditional recipes, cooked in the boma or on the rooftop BBQ."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Wilderness Doro Nawas is for the explorer who craves silence, stars, and Namibia’s rugged landscapes. Perfect for couples, families, solo travelers, and anyone who dreams of star beds and rare desert wildlife."
    ],
    "why": [
     {
-     "title": "Sleep Under Namibia’s Stars",
-     "body": "Wilderness Doro Nawas combines desert adventure, ancient rock art, and stargazing beds for a uniquely immersive stay. Best for families, couples, photographers, and anyone who wants wild beauty and cultural connection."
+     "title": "Sleep Under Namibia's Stars",
+     "body": "Wilderness Doro Nawas combines desert adventure, ancient rock art, and sleep-outs under the stars for an immersive stay. Best for families, couples, photographers, and anyone who wants wild beauty and cultural connection."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Wilderness recommends the cooler months of May to September for exploring Namibia's desert, with clear winter skies for stargazing.",
+    "how_to_get_there": "Doro Nawas features on Wilderness self-drive and fly-in itineraries, with inter-camp transfers on Wilderness Air.",
+    "signature_experiences": "Nature drives for desert-adapted elephant, Twyfelfontein rock art, the Damara Living Museum and sleep-outs on your deck.",
+    "who_its_for": "First-time visitors to Namibia, families and travellers interested in culture, rock art and desert-adapted wildlife."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Doro Nawas?",
+     "a": "Doro Nawas sits on a rocky outcrop on the edge of the dry Aba-Huab River in Damaraland, northwest Namibia. It is a base for exploring the rock art and engravings at Twyfelfontein, Namibia's first World Heritage Site."
+    },
+    {
+     "q": "How do you get to Doro Nawas?",
+     "a": "Wilderness includes Doro Nawas in both self-drive and fly-in Namibia itineraries, with private inter-camp transfers on Wilderness Air. The camp page does not publish an airstrip or transfer time, so we confirm routing when planning."
+    },
+    {
+     "q": "When is the best time to visit Doro Nawas?",
+     "a": "Wilderness names the cooler months, May to September, as particularly enjoyable for exploring the desert, with crystal-clear winter skies for stargazing. November to April is warmer and suits sleeping out on your deck. The camp page lists no seasonal closure."
+    },
+    {
+     "q": "How many rooms does Doro Nawas have?",
+     "a": "Doro Nawas has 16 wood, canvas and thatch guest rooms, each with a private outdoor shower and a veranda where you can sleep out under the stars. The camp also offers a family suite."
+    },
+    {
+     "q": "Is Doro Nawas good for families?",
+     "a": "Yes, the camp has a family suite for privacy. Wilderness does not publish a minimum age on the camp page, so we confirm the child policy when planning."
+    },
+    {
+     "q": "What is there to do at Doro Nawas?",
+     "a": "Guided nature drives and walks for desert-adapted elephant, giraffe, zebra, oryx and springbok, plus visits to the San rock art at Twyfelfontein and the Damara Living Museum. Excursions reach the Petrified Forest, Burnt Mountain and Organ Pipes, and nights bring scorpion walks and stargazing."
+    },
+    {
+     "q": "Who is Doro Nawas best suited to?",
+     "a": "Travellers who want culture and community alongside desert wildlife. The camp is a joint venture with the Doro !Nawas Conservancy, and Wilderness calls it an excellent introduction to Namibia's desert landscapes."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -40757,7 +42001,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974dcfeb2a6990af5f0e",
+    "6ae6974e57695c9106e6d7c1"
+   ]
   },
   {
    "slug": "wilderness-dumatau",
@@ -40861,11 +42108,14 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741b2b7600515a60436",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-hoanib-skeleton-camp",
-   "name": "Wilderness \n Hoanib Skeleton Coast",
+   "name": "Wilderness Hoanib Skeleton Coast Camp",
    "ledgerId": "STY-2026-000335",
    "country": "Namibia",
    "countrySlug": "namibia",
@@ -40882,54 +42132,85 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d21aff789_4d82589d2_69610e3f3a6bf86c9642d738_GuestTent_Hoanib_072.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/004074fc4_e77621feb_69610e3f4181b4eaba2decbb_GuestTent_Hoanib_078.jpg"
    ],
-   "bestMonths": "April to October",
-   "bestMonthsNote": "Dry season brings clear skies and optimal wildlife viewing. Green season (November to March) transforms the desert, attracts birds, and brings dramatic scenery.",
-   "bestFor": [],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "Ideal for desert wildlife as animals concentrate along the Hoanib River; October to November can be very hot.",
+   "bestFor": [
+    "adventure",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -19.1969,
-    "lng": 12.8874
+    "lat": -19.374,
+    "lng": 13.1501
    },
-   "airport": "Hoanib Skeleton Coast Airstrip",
-   "airportDirections": "Fly by light aircraft to Hoanib Skeleton Coast Airstrip, 10-minute transfer to camp. Accessible from Windhoek and Swakopmund.",
+   "airport": "Hoanib Airstrip",
+   "airportDirections": "Reached only by light aircraft with Wilderness Air, landing at the dedicated Hoanib Airstrip within the concession.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxury tented suites, each with a private shaded deck, en-suite bathroom, and wide views of the Hoanib Valley’s dramatic landscapes."
+     "Eight pale olive, generously appointed tented suites, totally solar-powered, with an open design and colour palette that reflect the surrounding desert and wide views of the Hoanib Valley."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided desert drives",
-     "Skeleton Coast day excursions",
-     "Desert-adapted lion and elephant tracking",
-     "Scenic flights",
-     "Nature walks",
-     "Cultural visits",
-     "Sundowners and stargazing"
-    ]
+    "paras": [
+     "Nature drives for desert-adapted elephant, giraffe, lion and brown hyena. A Skeleton Coast excursion to Möwe Bay by light aircraft or road, with Cape fur seal colonies and shipwreck remnants. Wildlife research presentations on desert-adapted predators. Hikes, dune scrambles and sundowners on the dunes. Stargazing."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "Unique location between sand dunes, river valley, and Skeleton Coast. Solar-powered eco-camp. Exclusive Skeleton Coast access. Community and conservation partnerships. Personal guiding. Small, intimate camp."
+     "Set where the private Palmwag Concession meets Skeleton Coast National Park, overlooking a waterhole in a wide valley above the Hoanib River. 100% solar powered. Pool and spa treatments. A joint venture with the Anabeb, Torra and Sesfontein community conservancies. Reached only by light aircraft."
     ],
     "items": []
    },
    "onlyHere": [
-    "Wilderness Hoanib Skeleton Coast is for explorers and dreamers who want wild desert, epic scenery, and rare wildlife. From elephants to lions and shipwrecks. Perfect for solo travelers, couples, families, photographers, and anyone seeking Namibia’s untamed edge."
+    "Wilderness Hoanib Skeleton Coast is for explorers who want wild desert, epic scenery, and rare wildlife, from desert-adapted elephants and lions to the seals and shipwrecks of the Skeleton Coast. Suited to intrepid travellers seeking Namibia's untamed edge."
    ],
    "why": [
     {
      "title": "Where Dunes Meet Ocean",
-     "body": "Wilderness Hoanib Skeleton Coast offers epic landscapes, legendary wildlife, and a feeling of true remoteness. Best for adventurers, couples, photographers, solo explorers, and families who want desert wonders and Skeleton Coast secrets."
+     "body": "Wilderness Hoanib Skeleton Coast offers epic landscapes, desert-adapted wildlife, and a feeling of true remoteness. Best for adventurers who want desert wonders and the haunting beaches of the Skeleton Coast."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "May to September is ideal for desert wildlife, while October to November can be very hot.",
+    "how_to_get_there": "Reached only by light aircraft with Wilderness Air, landing at the Hoanib Airstrip within the concession.",
+    "signature_experiences": "A Skeleton Coast excursion to Möwe Bay's seal colonies, desert-adapted wildlife drives and lion research presentations.",
+    "who_its_for": "Intrepid adventurers seeking remote desert, desert-adapted wildlife and the Skeleton Coast."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Hoanib Skeleton Coast Camp?",
+     "a": "In Namibia's Kaokoveld, straddling the private Palmwag Concession and Skeleton Coast National Park. The camp overlooks a wide desert valley that slopes down to the Hoanib River, with a waterhole visited by elephants and giraffes."
+    },
+    {
+     "q": "How do you get to Hoanib Skeleton Coast Camp?",
+     "a": "Only by light aircraft with Wilderness Air, landing at the dedicated Hoanib Airstrip within the concession. The nearest town, Sesfontein, is several hours' drive away over rough terrain."
+    },
+    {
+     "q": "When is the best time to visit Hoanib Skeleton Coast Camp?",
+     "a": "The cooler months, May to September, are ideal for desert wildlife viewing, when animals concentrate along the Hoanib River. October to November can be very hot, and the Skeleton Coast trip runs year-round, weather permitting."
+    },
+    {
+     "q": "How many suites does Hoanib Skeleton Coast Camp have?",
+     "a": "Eight generously appointed tented suites, totally solar-powered, with an open design that reflects the surrounding desert."
+    },
+    {
+     "q": "Can children stay at Hoanib Skeleton Coast Camp?",
+     "a": "Wilderness does not publish a child policy or a family unit on the camp page. We confirm current age guidance with Wilderness before booking a family."
+    },
+    {
+     "q": "What are the signature experiences at Hoanib?",
+     "a": "The Skeleton Coast excursion to Möwe Bay by light aircraft or road, with Cape fur seal colonies and shipwreck remnants, is included on stays of three nights or more. Nature drives search for desert-adapted elephant, giraffe, lion and brown hyena, and research presentations explain the area's lions."
+    },
+    {
+     "q": "Who is Hoanib Skeleton Coast Camp best suited to?",
+     "a": "Intrepid travellers who want true remoteness, desert-adapted wildlife and the haunting beaches of the Skeleton Coast in one stay."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -40948,11 +42229,13 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d291db7eb71b8221b"
+   ]
   },
   {
    "slug": "wilderness-kulala-desert-camp",
-   "name": "Wilderness \n Kulala Desert Lodge",
+   "name": "Wilderness Kulala Desert Lodge",
    "ledgerId": "STY-2026-000337",
    "country": "Namibia",
    "countrySlug": "namibia",
@@ -40971,57 +42254,86 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e5726d99a_8c4b33078_69d4eab1ef7fff8239febe40_KulalaDL_MainAreas_0724_TC_023.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/35c6e62ec_62d956a55_69d4ea9099e4cf832572d9cc_KulalaDL_MainAreas_0724_TC_083.jpg"
    ],
-   "bestMonths": "April to October",
-   "bestMonthsNote": "Dry, cool season brings comfortable days, clear skies, and best access to dunes. Summer green season (November to March) offers dramatic skies, less crowded.",
-   "bestFor": [],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "Cooler months bring comfortable dawn temperatures for dune climbing; December to February can be extremely hot. Open year-round.",
+   "bestFor": [
+    "family",
+    "adventure",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.6149,
     "lng": 15.7034
    },
-   "airport": "Kulala Airstrip, Sesriem Airstrip",
-   "airportDirections": "Fly into Kulala or Sesriem Airstrip, road transfer 30 minutes to lodge. Access by self-drive from Windhoek (5 hours) or Swakopmund (6 hours).",
+   "airport": "Kulala Airstrip",
+   "airportDirections": "Fly by light aircraft with Wilderness Air to the private Kulala Airstrip inside the Kulala Wilderness Reserve, or drive by road from Windhoek or Swakopmund.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Twenty-three thatched kulala chalets with rooftop star beds, private decks, indoor and outdoor showers, and dramatic views over the Namib Desert."
+     "21 canvas and thatch rooms, including two family units, each with a flat rooftop for sleep-outs under the clear Namibian night sky."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided sunrise excursions to Sossusvlei dunes",
-     "Nature drives and walks",
-     "E-biking and quad biking",
-     "Hot air ballooning",
-     "Stargazing and photography"
-    ]
+    "paras": [
+     "Guided sunrise excursions to Sossusvlei, Big Daddy dune and Deadvlei. Nature drives and walks, including the Tsauchab River Trail. Electric fatbike rides on the reserve. Hot-air balloon flights over the dunes, bookable in advance. Sesriem Canyon. Stargazing and photography."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Private gate to Sossusvlei for early access",
-     "Eco-friendly, solar-powered camp",
-     "Star beds for rooftop sleeping",
-     "Infinity pool and lounge",
-     "Family chalets and tailored kid activities",
-     "Award-winning desert guides"
-    ]
+    "paras": [
+     "Exclusive-use gate into Namib-Naukluft National Park, giving Wilderness guests on privately guided journeys first access to Sossusvlei. Private Kulala Airstrip inside the reserve. Rooftop sleep-outs. Pool, and waterhole views from the wraparound veranda. Two family units. Set on the private Kulala Wilderness Reserve, rewilded from former goat farmland."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Kulala Desert Lodge is for the desert dreamer, the adventurer, and the family explorer. With exclusive Sossusvlei access, rooftop stargazing, and unique desert experiences, it’s perfect for photographers, couples, solo travelers, and those seeking the heart of Namibia’s wild beauty."
+    "Kulala Desert Lodge is for the desert dreamer, the adventurer, and the family explorer. With exclusive-use gate access to Sossusvlei, rooftop stargazing, and unique desert experiences, it suits photographers, couples, solo travelers, and those seeking the heart of Namibia's wild beauty."
    ],
    "why": [
     {
      "title": "Where Dunes and Dreams Meet",
-     "body": "Wilderness Kulala Desert Lodge blends adventure and comfort at the edge of the world’s highest dunes. Perfect for nature lovers, families, couples, and photographers looking for unique landscapes and true silence."
+     "body": "Wilderness Kulala Desert Lodge blends adventure and comfort beside the red dunes of Sossusvlei. Perfect for nature lovers, families, couples, and photographers looking for unique landscapes and true silence."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "May to September brings comfortable dawn temperatures for the dunes, and the lodge is open year-round.",
+    "how_to_get_there": "Fly with Wilderness Air to the private Kulala Airstrip, or drive by road from Windhoek or Swakopmund.",
+    "signature_experiences": "Sunrise at Sossusvlei through an exclusive-use gate, hot-air ballooning, electric fatbikes and rooftop sleep-outs.",
+    "who_its_for": "Families, groups and self-drive guests looking for a comfortable base for Sossusvlei."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Kulala Desert Lodge?",
+     "a": "On the private Kulala Wilderness Reserve in the south of the Namib Desert, which borders Namib-Naukluft National Park, home to Sossusvlei and Deadvlei."
+    },
+    {
+     "q": "How do you get to Kulala Desert Lodge?",
+     "a": "Fly by light aircraft with Wilderness Air to the private Kulala Airstrip inside the reserve, or drive by road from Windhoek or Swakopmund. The lodge welcomes self-drive guests."
+    },
+    {
+     "q": "When is the best time to visit Kulala Desert Lodge?",
+     "a": "May to September, when dawn temperatures are comfortable for dune climbing and wildlife is more active. December to February can be extremely hot, and the lodge is open year-round."
+    },
+    {
+     "q": "How many rooms does Kulala Desert Lodge have?",
+     "a": "21 canvas and thatch rooms, including two family units. Each room has a flat rooftop for sleep-outs under the stars."
+    },
+    {
+     "q": "Is Kulala Desert Lodge good for families?",
+     "a": "Yes. Wilderness says the lodge beckons groups, families and self-drive guests, with two family units and electric fatbike rides that are a family favourite. No minimum age is published on the camp page, so we confirm it when planning."
+    },
+    {
+     "q": "What are the signature experiences at Kulala Desert Lodge?",
+     "a": "First access to Sossusvlei at sunrise through an exclusive-use gate for Wilderness guests on privately guided journeys, with Big Daddy dune and Deadvlei. Hot-air balloon flights (book in advance), Sesriem Canyon, nature drives, electric fatbikes and rooftop sleep-outs complete the stay."
+    },
+    {
+     "q": "Who is Kulala Desert Lodge best suited to?",
+     "a": "Families, groups and self-drive travellers who want a down-to-earth, comfortable base for the Sossusvlei dunes."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -41038,7 +42350,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974e7b03070861043137",
+    "6ae6974eae3a4fbd224713db"
+   ]
   },
   {
    "slug": "linyanti-wilderness-camp",
@@ -41116,7 +42431,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69742372f7bdcc1e93c68",
+    "6ae69741b2b7600515a60436",
+    "6ae69742eea3915f1dcf9e64"
+   ]
   },
   {
    "slug": "wilderness-little-duma-tau",
@@ -41205,11 +42524,14 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69741b2b7600515a60436",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-little-kulala",
-   "name": "Wilderness \n Little Kulala",
+   "name": "Wilderness Little Kulala",
    "ledgerId": "STY-2026-000341",
    "country": "Namibia",
    "countrySlug": "namibia",
@@ -41226,58 +42548,87 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/63e194370_0ab8e30e8_695f707718654cd70d79fbef_Units_LittleKulala_TeaganCunniffe_039.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/491975644_20a4f4787_695f70779af92d171352a9c8_Units_LittleKulala_TeaganCunniffe_029.jpg"
    ],
-   "bestMonths": "April to October",
-   "bestMonthsNote": "Cool, dry months are best for sunrise dune walks, stargazing, and photography. Green season (November to March) offers dramatic skies, fewer crowds, and lush colors.",
-   "bestFor": [],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "Cooler months bring comfortable dawn temperatures for dune climbing; December to February can be extremely hot. Open year-round.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "wildlife_photography",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -24.6184,
     "lng": 15.7622
    },
-   "airport": "Kulala Airstrip, Sesriem Airstrip",
-   "airportDirections": "Fly to Kulala or Sesriem Airstrip, 30-minute road transfer to lodge. Self-drive from Windhoek (5 hours) or Swakopmund (6 hours).",
+   "airport": "Kulala Airstrip",
+   "airportDirections": "Fly by light aircraft with Wilderness Air to the private Kulala Airstrip inside the Kulala Wilderness Reserve, or drive by road from Windhoek or Swakopmund.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eleven climate-controlled suites with private plunge pools, rooftop star beds, indoor and outdoor showers, and panoramic views of the Namib Desert."
+     "Eleven recently refurbished suites, each with a private plunge pool, a rooftop for private sundowners and suppers, and a roll-out star bed on the shaded deck, with views of the Namib Desert."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Private guided Sossusvlei dune excursions",
-     "Desert nature drives and walks",
-     "Hot air ballooning",
-     "E-biking and quad biking",
-     "Wellness spa and yoga",
-     "Stargazing and fine dining"
-    ]
+    "paras": [
+     "Guided excursions to the Sossusvlei dunes and Dead Vlei. Nature drives and walks. Hot-air balloon flights over the Namib. Electric fatbike rides. Sesriem Canyon hikes. Night walks with UV scorpion spotting and guided stargazing. Spa treatments and a romantic dinner for two in the wine cellar."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Private Sossusvlei gate for exclusive sunrise access",
-     "Solar-powered, eco-luxe lodge",
-     "Personal butler service",
-     "Rooftop star beds",
-     "Wellness spa and plunge pools",
-     "Award-winning desert guides"
-    ]
+    "paras": [
+     "Exclusive-use gate with direct access to Sossusvlei and Dead Vlei. Totally solar-powered. Private plunge pool at every suite. Roll-out star beds. Spa and wine cellar. A spacious family unit. Set on the private Kulala Wilderness Reserve, for a maximum of 22 guests."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Little Kulala is for those who want it all: wild beauty, utter comfort, and private access to Namibia’s most iconic dunes. Perfect for couples, honeymooners, solo travelers, photographers, and anyone dreaming of desert magic with a touch of luxury."
+    "Little Kulala is for those who want wild beauty, comfort, and exclusive-use gate access to the dunes of Sossusvlei. Suited to couples, honeymooners, solo travelers, photographers, and anyone dreaming of the desert with a touch of luxury."
    ],
    "why": [
     {
      "title": "Luxury, Solitude, Sossusvlei",
-     "body": "Wilderness Little Kulala blends romance, adventure, and sustainability. Ideal for couples, honeymooners, photographers, and those who want the best of Namibia in comfort, privacy, and style."
+     "body": "Wilderness Little Kulala blends romance, adventure, and sustainability. Ideal for couples, honeymooners, photographers, and those who want Namibia's desert in comfort, privacy, and style."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Wilderness recommends May to September for climbing dunes and stargazing in Namibia's desert.",
+    "how_to_get_there": "Fly with Wilderness Air to the reserve's own airstrip, or reach Sossusvlei by road from Windhoek or Swakopmund.",
+    "signature_experiences": "Exclusive-use gate access to Sossusvlei, hot-air ballooning, roll-out star beds and private plunge pools.",
+    "who_its_for": "Couples, honeymooners and photographers wanting an intimate, design-led base for Sossusvlei."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Little Kulala?",
+     "a": "On the private Kulala Wilderness Reserve bordering Namib-Naukluft National Park in southwest Namibia, home to the Sossusvlei dunes and Dead Vlei."
+    },
+    {
+     "q": "How do you get to Little Kulala?",
+     "a": "The quickest way is by light aircraft with Wilderness Air to the reserve's own airstrip; Sossusvlei is also accessible by road from Windhoek or Swakopmund."
+    },
+    {
+     "q": "When is the best time to visit Little Kulala?",
+     "a": "Wilderness names the cooler months, May to September, as particularly enjoyable for climbing dunes and exploring on foot, with clear winter skies for stargazing. November to April is warmer and suits time by your private pool. The camp page lists no seasonal closure."
+    },
+    {
+     "q": "How many suites does Little Kulala have?",
+     "a": "Eleven recently refurbished suites for a maximum of 22 guests, each with a private plunge pool, a rooftop for sundowners and a roll-out star bed on the deck."
+    },
+    {
+     "q": "Can families stay at Little Kulala?",
+     "a": "Yes, there is a spacious family unit. Wilderness does not publish a minimum age on the camp page, so we confirm the child policy when planning."
+    },
+    {
+     "q": "What are the signature experiences at Little Kulala?",
+     "a": "Direct access to Sossusvlei and Dead Vlei through an exclusive-use gate, hot-air balloon flights over the Namib, and nights on your star bed. Electric fatbikes, Sesriem Canyon, UV scorpion walks, guided stargazing, the spa and a dinner for two in the wine cellar complete the stay."
+    },
+    {
+     "q": "Who is Little Kulala best suited to?",
+     "a": "Couples, honeymooners and photographers who want privacy and comfort at Sossusvlei; Wilderness says it suits honeymoons, milestone celebrations and travellers for whom camp design matters."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -41296,7 +42647,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974e7b03070861043137",
+    "6ae6974eae3a4fbd224713db"
+   ]
   },
   {
    "slug": "wilderness-little-mombo",
@@ -41382,7 +42736,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-magashi-peninsula",
@@ -41468,7 +42824,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "wilderness-mara",
@@ -41555,7 +42913,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69749be68678c2c263961",
+    "6ae6974c7d4c694c47df3348",
+    "6ae6974ba3052349b192dd30"
+   ]
   },
   {
    "slug": "wilderness-mokete",
@@ -41650,7 +43012,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697423e5f43991232f0eb",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-mombo-luxury-camp",
@@ -41752,7 +43117,10 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697428b5e5c4686ea44f4",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-qorokwe",
@@ -41838,7 +43206,9 @@
     "safaris",
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wilderness-ruckomechi",
@@ -41960,7 +43330,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975c96a1343905331f9d",
+    "6ae6975cc03e0814d1b3a790",
+    "6ae6975cb3822e21039671a5"
+   ]
   },
   {
    "slug": "wilderness-sabyinyo",
@@ -42050,7 +43424,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
   },
   {
    "slug": "wilderness-savuti",
@@ -42143,11 +43519,14 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697417f7270c3f608af43",
+    "6ae69742193d03f274d12fff"
+   ]
   },
   {
    "slug": "wilderness-serra-cafema",
-   "name": "Wilderness \n Serra Cafema",
+   "name": "Wilderness Serra Cafema",
    "ledgerId": "STY-2026-000351",
    "country": "Namibia",
    "countrySlug": "namibia",
@@ -42165,9 +43544,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/99b6a0348_48fb864af_69c38c7116493e9cfd75a547_Serra_20Cafema_20river_20Experience.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ee703aef2_6f493f006_69d4f0ebb3493573b5f72446_Final_20Serra_20Cafema-3.jpg"
    ],
-   "bestMonths": "April to October",
+   "bestMonths": "May to September",
    "bestMonthsNote": "Dry season offers cool days, clear skies, and best river and desert access. Green season (November to March) brings dramatic colors, lush riverbanks, and beautiful skies for photography.",
-   "bestFor": [],
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -42175,42 +43558,72 @@
     "lng": 12.2037
    },
    "airport": "Serra Cafema Airstrip",
-   "airportDirections": "Fly by light aircraft from Windhoek or Swakopmund to Serra Cafema Airstrip, 20-minute transfer to camp.",
+   "airportDirections": "Reached only by light aircraft operated by Wilderness Air.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight riverfront villas, including one family unit, built on elevated decks with thatch and canvas, private lounges, indoor and outdoor showers, and panoramic Kunene River views."
+     "Eight elevated suites, including one family unit, built of wood, canvas and thatch with interiors that pay homage to Himba culture, each with a deck looking over the Kunene River."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided boating and river adventures",
-     "Quad biking across dunes and valleys",
-     "Nature drives and walks",
-     "Cultural encounters with Himba communities",
-     "Birding, photography, and star gazing"
-    ]
+    "paras": [
+     "Seasonal boating on the Kunene, water levels permitting. Dune-sensitive guided quad biking. Nature drives and walks among the geological formations. Himba cultural visits. Birding on the river, riverside breakfasts and stargazing."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "One of Africa’s most remote luxury camps. Only camp on the Kunene River. Community-owned and operated with the Marienfluss Conservancy. Eco-friendly, solar-powered design. Personalized guiding and exclusive experiences. Access to unique wildlife and Himba culture."
+     "Set under verdant trees on the banks of the Kunene River, on the Namibia and Angola border. Home is the 300,000-hectare Marienfluss Conservancy, owned primarily by the Himba. Reached only by light aircraft. Pool and Wi-Fi. Support for the Himba community through educational programmes, a mobile medical clinic and nutritional aid. Respectful, authentic engagement with the Himba."
     ],
     "items": []
    },
    "onlyHere": [
-    "Serra Cafema is for the true explorer and dreamer. Where Namibia’s wildest river flows through ancient desert, and the Himba still live as they have for centuries. Perfect for couples, families, solo travelers, photographers, and anyone wanting a truly remote, meaningful, and beautiful journey."
+    "Serra Cafema is for the true explorer and dreamer. Here the Kunene River flows through ancient desert, and the Himba live sustainably, as they have for centuries. Suited to couples, families, solo travellers, photographers, and anyone wanting a remote, meaningful and beautiful journey."
    ],
    "why": [
     {
-     "title": "Africa’s Last Wilderness",
-     "body": "Wilderness Serra Cafema blends raw adventure, rare culture, and wild beauty. Ideal for explorers, couples, families, photographers, and those craving solitude and connection to one of the earth’s last untouched places."
+     "title": "Land of Contrasts",
+     "body": "Wilderness Serra Cafema blends raw adventure, rare culture, and wild beauty. Ideal for explorers, couples, families, photographers, and those craving solitude in a remote corner of the Kunene Region."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Wilderness recommends May to September for exploring the desert on foot, with Kunene boating subject to water levels.",
+    "how_to_get_there": "Serra Cafema is only accessible by light aircraft operated by Wilderness Air.",
+    "signature_experiences": "Himba cultural visits, guided quad biking on a low-impact route and seasonal boating on the Kunene River.",
+    "who_its_for": "Explorers seeking remoteness, river and desert scenery and respectful cultural encounters with the Himba."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Serra Cafema?",
+     "a": "On the banks of the Kunene River on Namibia's border with Angola, in the 300,000-hectare Marienfluss Conservancy, owned primarily by the Himba. The Hartmann's Mountains and the river form the backdrop."
+    },
+    {
+     "q": "How do you get to Serra Cafema?",
+     "a": "Serra Cafema is only accessible by light aircraft operated by Wilderness Air."
+    },
+    {
+     "q": "When is the best time to visit Serra Cafema?",
+     "a": "Wilderness names the cooler months, May to September, as particularly enjoyable for exploring Namibia's desert on foot. Boating on the Kunene is seasonal and depends on water levels. The camp page lists no seasonal closure."
+    },
+    {
+     "q": "How many suites does Serra Cafema have?",
+     "a": "Eight elevated suites of wood, canvas and thatch, including one family unit, with interiors that pay homage to Himba culture."
+    },
+    {
+     "q": "Can children stay at Serra Cafema?",
+     "a": "The camp has a family unit for privacy. Wilderness does not publish a minimum age on the camp page, so we confirm the child policy, including for quad biking, when planning."
+    },
+    {
+     "q": "What are the signature experiences at Serra Cafema?",
+     "a": "Respectful visits with the Himba, dune-sensitive guided quad biking and seasonal boating on the Kunene, water levels permitting. Nature drives, walks among the geological formations, birding and stargazing round out the stay."
+    },
+    {
+     "q": "Who is Serra Cafema best suited to?",
+     "a": "Explorers who want deep remoteness, a river oasis in the desert and meaningful time with the Himba, from couples and families to solo travellers and photographers."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -42227,7 +43640,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974ee94fd98204439523"
+   ]
   },
   {
    "slug": "wilderness-shumba",
@@ -42353,7 +43768,11 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b8ba23cffce2e9d8b",
+    "6ae6975b490b37ebbeebbe39",
+    "6ae6975bae2e8cbad44c0065"
+   ]
   },
   {
    "slug": "wilderness-toka-leya",
@@ -42481,7 +43900,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6975b94e2db43e2c6078c"
+   ]
   },
   {
    "slug": "wilderness-usawa",
@@ -42608,7 +44029,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697592a20c4a043a07150",
+    "6ae697548aca34d73203560f"
+   ]
   },
   {
    "slug": "wilderness-vumbura-plains",
@@ -42699,7 +44123,10 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974314ad20a999cd1dda",
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "wolwedans-dune-camp",
@@ -42710,7 +44137,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Namib desert dreams, natural luxury, pure sustainability",
+   "tagline": "The place where Wolwedans began, on a dune in the NamibRand",
    "quote": "Wake to red sand dunes and golden light, hike among ancient desert vistas, and sleep under a sky crowded with stars at Wolwedans Dune Camp",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/373de7e0e_b69af2596_69b17985aad0996bafbff36b_Wolwedans-Dune-Camp-2-1.jpg",
    "gallery": [
@@ -42721,62 +44148,95 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c405e8a26_f35f4d03b_69b279710cf8a4dd951f1cf7_Wolwedans-Dune-Camp-16.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2bce4d695_75d297f2b_69b279710bdb4b6b4f614be9_Wolwedans-Dune-Camp-17.jpg"
    ],
-   "bestMonths": "April to October",
+   "bestMonths": "Year-round",
    "bestMonthsNote": "April to October for cool nights, warm days, clear skies, and top desert activities. November to March for dramatic skies and green desert scenes.",
-   "bestFor": [],
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -25.1402,
     "lng": 15.987
    },
-   "airport": "Hosea Kutako International Airport (WDH) or Wolwedans Private Airstrip",
-   "airportDirections": "Fly to Hosea Kutako (Windhoek), 6-hour scenic drive or 1-hour charter flight to Wolwedans airstrip, complimentary transfers to camp.",
+   "airport": "Wolwedans Airstrip",
+   "airportDirections": "Charter or Tiras Taxi flight from Windhoek to the Wolwedans Airstrip, then a 5-minute transfer; or a 6 to 7 hour drive from Windhoek or Swakopmund.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight elevated tented suites with private verandas, en suite bathrooms, canvas walls, and panoramic desert views. Main camp with lounge, dining deck, open fire pit, library, and small pool."
+     "Six Tented Rooms and one two-room tented Family Suite (eight rooms, up to 16 guests) on raised wooden platforms, with King-size beds that convert to twin and full indoor and outdoor bathrooms. Each private deck has a daybed that converts into a Starbed and a Wolwedans Chiller. Main area with lounge, dining, the Silo Bar and a fire pit."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided nature walks",
      "Scenic drives",
-     "Bushman walks",
-     "Hot air ballooning",
-     "Horse riding",
-     "Photographic safaris",
      "Sundowners",
-     "Stargazing",
-     "Conservation projects"
+     "Interpretive Desert Walk with a local guide",
+     "Star Bed sleepouts",
+     "Silence and Solitude",
+     "Dune e-biking",
+     "Spa treatments in your room",
+     "Heart and Home Village Tour",
+     "Hot air ballooning and horse riding at extra cost"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Eco-chic tents on wooden decks",
-     "Full en suite bathrooms and private verandas",
-     "Small camp for intimate desert stays",
-     "Main lounge and library",
-     "Desert pool",
-     "Zero single-use plastics",
-     "Community impact"
-    ]
+    "paras": [
+     "Positioned on the edge of a 250-metre-high dune. Starbed on every deck. Wolwedans Chiller water silo on each deck. Family Suite with its own small kitchen, bar and private dining. Solar powered, so no air conditioning. Wi-Fi in the rooms. Children 7 and over."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Wolwedans Dune Camp is for couples, solo travelers, families, and photographers who crave authentic desert immersion, regenerative hospitality, and magical NamibRand landscapes."
+    "Wolwedans Dune Camp is for couples, families with children 7 and over and photographers who want a down-to-earth but stylish camp, a Starbed on their own deck and the quiet of the NamibRand."
    ],
    "why": [
     {
      "title": "Desert Solitude, Soulful Luxury",
-     "body": "Perfect for desert lovers, honeymooners, solo adventurers, families, and anyone seeking soulful luxury, quiet landscapes, and conscious travel. Every stay supports conservation and the local community."
+     "body": "For desert lovers, couples, families and anyone seeking quiet landscapes and a stay connected to the Wolwedans Village, Desert Academy and sustainability projects."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open all year, with a minimum 2-night stay.",
+    "how_to_get_there": "Charter or Tiras Taxi flight to the Wolwedans Airstrip, then a 5-minute transfer, or a 6 to 7-hour drive from Windhoek or Swakopmund.",
+    "signature_experiences": "Star Bed sleepouts, NamibRand scenic drives, the San-led Interpretive Desert Walk and dune e-biking.",
+    "who_its_for": "Travellers wanting a down-to-earth but stylish desert camp, including couples and families with children 7 and over."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wolwedans Dune Camp?",
+     "a": "It sits on the edge of a 250-metre-high dune in the NamibRand Nature Reserve in Namibia's Namib Desert. It is where Wolwedans began."
+    },
+    {
+     "q": "How do I get to Wolwedans Dune Camp?",
+     "a": "Charter flights from Windhoek, Swakopmund or elsewhere in Namibia land at the Wolwedans Airstrip, a 5-minute transfer from camp, and Scenic Air's Tiras Taxi flies daily from Eros Airport in Windhoek. By road it is a 6 to 7-hour drive from Windhoek or Swakopmund."
+    },
+    {
+     "q": "When is Dune Camp open?",
+     "a": "Dune Camp is open all year, with a minimum 2-night stay."
+    },
+    {
+     "q": "How many rooms are there?",
+     "a": "Dune Camp sleeps up to 16 guests in 8 rooms: 6 Tented Rooms and 1 two-room tented Family Suite. Each has a private deck with a daybed that converts to a Starbed and a Wolwedans Chiller to cool off in."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "Children aged 7 and over are welcome. The Family Suite sleeps up to 4 adults and 2 children, with its own small kitchen, bar and private dining area."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Sleeping out on the Star Bed, scenic drives across the NamibRand, the Interpretive Desert Walk with a local guide, dune e-biking and the Silence and Solitude experience. Horse riding and ballooning cost extra."
+    },
+    {
+     "q": "Who is Dune Camp best for?",
+     "a": "Wolwedans says Dune Camp appeals to travellers looking for a down-to-earth but stylish experience, including couples and families with children 7 and over."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -42793,7 +44253,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974def1c4ba4eb1a23ac",
+    "6ae6974e48e87112caca2fc0"
+   ]
   },
   {
    "slug": "wren-urban-nest",
@@ -42902,7 +44365,9 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae666174efda236c530e858"
+   ]
   },
   {
    "slug": "xanadu-island-resort",
@@ -43009,7 +44474,9 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69740f2219939a13cedae"
+   ]
   },
   {
    "slug": "xela-tulum",
@@ -43104,7 +44571,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974d696b4469b6c2b952",
+    "6ae6974d2f7e87b5a5f59865"
+   ]
   },
   {
    "slug": "xigera-safari-lodge",
@@ -43183,7 +44653,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697427ca51cd40af01fc0"
+   ]
   },
   {
    "slug": "zannier-sonop",
@@ -43199,13 +44671,18 @@
    "hero": "/img/b44/d1a83a027_d0a294c57_67e2fc609f2d17dfef44f76e_zannier-sonop.avif",
    "gallery": [],
    "bestMonths": "Year-round; April to September for cool dry days",
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonthsNote": "April to September is dry with pleasant days and cold nights; December to March is the rainy season, with very warm days.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "adventure",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -25.5065,
-    "lng": 16.2049
+    "lat": -25.4978,
+    "lng": 16.1819
    },
    "airport": "Sonop private airstrip; Windhoek Hosea Kutako (WDH)",
    "airportDirections": "About 1 hour 20 minutes by light aircraft from Windhoek to Sonop's own airstrip, or about 6 hours by road from Windhoek.",
@@ -43235,7 +44712,7 @@
     "items": []
    },
    "onlyHere": [
-    "Sonop is the desert done with theatre: an explorer's camp on a boulder outcrop, gala dinners, horses and fat bikes on the plains, and some of the darkest night skies in Africa."
+    "Sonop is the desert done with theatre: an explorer's camp on a granite boulder outcrop, gala dinners and a Cocktail and Cigar Lounge, horses and fat bikes on the plains, and night skies full of stars."
    ],
    "why": [
     {
@@ -43243,8 +44720,42 @@
      "body": "Best for couples, honeymooners, riders and anyone who wants the Namib with full luxury. Children from six."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "April to September is the dry season with pleasant days and cold nights.",
+    "how_to_get_there": "About 1 hour 20 minutes by small plane from Windhoek Hosea Kutako to Sonop's own landing strip, or about 6 hours by road.",
+    "signature_experiences": "Horse riding, electric fat biking, hot air balloon safaris, nature drives and an open-air cinema under the stars.",
+    "who_its_for": "Couples, riders and families with children 6 and over looking for old-world desert luxury."
+   },
+   "faqs": [
+    {
+     "q": "Where is Zannier Sonop?",
+     "a": "It is in the Hardap region of southern Namibia, on the edge of the NamibRand Nature Reserve, set among granite boulders within 13,800 acres of private desert. Zannier gives the address as Sonop Farm, Road D707."
+    },
+    {
+     "q": "How do I get to Zannier Sonop?",
+     "a": "Sonop has its own landing strip, about 1 hour 20 minutes by small plane from Windhoek Hosea Kutako International Airport. By road it is about 500 km and 6 hours from Windhoek, or 2 hours 30 minutes from Mariental."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "Zannier describes April to September as the dry winter season, with pleasant days and cold nights. October to December is hot and dry, and December to the end of March is the rainy season, with very warm days."
+    },
+    {
+     "q": "How many tents are there?",
+     "a": "Ten tented suites in 1920s colonial style: one-bedroom tents with a private panoramic terrace, and two-bedroom tents with two bedrooms, separate bathrooms and a lounge for up to 4 adults and 2 children."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "Children aged 6 and over are welcome; for safety reasons Sonop cannot host children under 6."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Horse riding, electric fat bike and walking trails, hot air balloon safaris, sunrise and sunset nature drives, stargazing and an open-air cinema, with breakfast on the dunes and gala-style dinners."
+    },
+    {
+     "q": "Who is Zannier Sonop best for?",
+     "a": "Couples and families with children 6 and over who want a 1920s-style safari lodge in the desert, with riding, wellness and Three Michelin Keys service."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -43262,7 +44773,10 @@
    "volumes": [
     "stays"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974def1c4ba4eb1a23ac",
+    "6ae6974e242a6f4e989f0184"
+   ]
   },
   {
    "slug": "great-plains-zarafa-camp",
@@ -43336,7 +44850,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974264dc8be5d10b0e7a"
+   ]
   },
   {
    "slug": "great-plains-zarafa-dhow-suite",
@@ -43410,7 +44926,9 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae6974264dc8be5d10b0e7a"
+   ]
   },
   {
    "slug": "six-senses-krabey-island",
@@ -43506,7 +45024,10 @@
     "stays",
     "gatherings"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae69743ae2e8cbad44c0055",
+    "6ae697437b03070861043106"
+   ]
   },
   {
    "slug": "six-senses-residences-courchevel",
@@ -43596,7 +45117,12 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": []
+   "arrivalHubIds": [
+    "6ae697481b098dcd9f5d2867",
+    "6ae6974834f7ee7efaf00c12",
+    "6ae69753cfda05f41e15a176",
+    "6ae697487d45b1c1f2432c64"
+   ]
   }
  ]
 }

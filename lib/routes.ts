@@ -274,6 +274,7 @@ export const STAY_SLUGS: string[] = [
   "kwando-rra-dinare",
   "kwando-splash",
   "kwando-tau-pan",
+  "kwessi-dunes-camp",
   "kwetsani-camp",
   "la-cle",
   "la-residence",

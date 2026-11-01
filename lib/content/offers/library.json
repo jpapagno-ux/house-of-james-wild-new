@@ -1298,5 +1298,65 @@
   "checked": "2026-11-01",
   "conditions": "A 3-night package at &Beyond Mnemba Island as an extension to an &Beyond safari in Tanzania or Kenya, including flights from or to Arusha, Manyara or Nairobi, transfers and island activities. Cannot be combined with other &Beyond offers.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000096",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "etosha-mountain-lodge",
+  "name": "Namibia Stay 5, Pay 4 (Etosha Mountain Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights in Namibia, pay for 4",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-03-31",
+   "text": "Travel until 31 March 2027, excluding peak season (1 July to 31 August 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 3 nights at Hoanib Valley Camp or Hoanib Elephant Camp with at least 2 nights at another Natural Selection camp in Namibia, such as Etosha Mountain Lodge, and one of the 3 Hoanib nights is free. New bookings only; existing bookings cannot be converted. Cannot be combined with the Natural Selection long stay rate. Natural Selection terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000097",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "shipwreck-lodge-namibia",
+  "name": "Namibia Stay 5, Pay 4 (Shipwreck Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights in Namibia, pay for 4",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-03-31",
+   "text": "Travel until 31 March 2027, excluding peak season (1 July to 31 August 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 3 nights at Hoanib Valley Camp or Hoanib Elephant Camp with at least 2 nights at another Natural Selection camp in Namibia, and one of the 3 Hoanib nights is free. Shipwreck Lodge qualifies only when booked directly through Natural Selection. New bookings only; existing bookings cannot be converted. Cannot be combined with the Natural Selection long stay rate. Natural Selection terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000098",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "kwessi-dunes-camp",
+  "name": "Namibia Stay 5, Pay 4 (Kwessi Dunes)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights in Namibia, pay for 4",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-03-31",
+   "text": "Travel until 31 March 2027, excluding peak season (1 July to 31 August 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 3 nights at Hoanib Valley Camp or Hoanib Elephant Camp with at least 2 nights at another Natural Selection camp in Namibia, such as Kwessi Dunes, and one of the 3 Hoanib nights is free. New bookings only; existing bookings cannot be converted. Cannot be combined with the Natural Selection long stay rate. Natural Selection terms apply.",
+  "volume": "stays"
  }
 ]

@@ -1,4 +1,191 @@
 {
- "hubs": [],
- "transfers": []
+ "hubs": [
+  {
+   "id": "6ae666174efda236c530e859",
+   "ledgerId": "HUB-2026-000002",
+   "name": "Cork Airport",
+   "kind": "airport",
+   "code": "ORK",
+   "city": "Cork",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 51.8413,
+    "lng": -8.4911
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.corkairport.com/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85b",
+   "ledgerId": "HUB-2026-000004",
+   "name": "Donegal Airport",
+   "kind": "airport",
+   "code": "CFN",
+   "city": "Carrickfinn",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 55.0442,
+    "lng": -8.341
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.donegalairport.ie/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e858",
+   "ledgerId": "HUB-2026-000001",
+   "name": "Dublin Airport",
+   "kind": "airport",
+   "code": "DUB",
+   "city": "Dublin",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 53.4264,
+    "lng": -6.2499
+   },
+   "houseNotes": null,
+   "gatewayOvernight": true,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.dublinairport.com/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85f",
+   "ledgerId": "HUB-2026-000008",
+   "name": "Dublin Heuston Station",
+   "kind": "rail",
+   "code": "HEUSTON",
+   "city": "Dublin",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 53.3464,
+    "lng": -6.2922
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.irishrail.ie/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e860",
+   "ledgerId": "HUB-2026-000009",
+   "name": "Dublin Port",
+   "kind": "port",
+   "code": "DUBPORT",
+   "city": "Dublin",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 53.3467,
+    "lng": -6.2041
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.dublinport.ie/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85d",
+   "ledgerId": "HUB-2026-000006",
+   "name": "Kerry Airport",
+   "kind": "airport",
+   "code": "KIR",
+   "city": "Farranfore",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 52.1809,
+    "lng": -9.5238
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.kerryairport.ie/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85a",
+   "ledgerId": "HUB-2026-000003",
+   "name": "Shannon Airport",
+   "kind": "airport",
+   "code": "SNN",
+   "city": "Shannon",
+   "country": "Ireland",
+   "servesCountries": [],
+   "coords": {
+    "lat": 52.702,
+    "lng": -8.9248
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.shannonairport.ie/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85e",
+   "ledgerId": "HUB-2026-000007",
+   "name": "Belfast International Airport",
+   "kind": "airport",
+   "code": "BFS",
+   "city": "Belfast",
+   "country": "United Kingdom",
+   "servesCountries": [
+    "Ireland"
+   ],
+   "coords": {
+    "lat": 54.6575,
+    "lng": -6.2158
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.belfastairport.com/",
+   "factChecked": "2026-11-01"
+  },
+  {
+   "id": "6ae666174efda236c530e85c",
+   "ledgerId": "HUB-2026-000005",
+   "name": "City of Derry Airport",
+   "kind": "airport",
+   "code": "LDY",
+   "city": "Derry",
+   "country": "United Kingdom",
+   "servesCountries": [
+    "Ireland"
+   ],
+   "coords": {
+    "lat": 55.0428,
+    "lng": -7.1611
+   },
+   "houseNotes": null,
+   "gatewayOvernight": false,
+   "gatewayRef": null,
+   "sourceUrl": "https://www.cityofderryairport.com/",
+   "factChecked": "2026-11-01"
+  }
+ ],
+ "transfers": [
+  {
+   "ledgerId": "TRF-2026-000009",
+   "from": "HUB-2026-000004",
+   "to": "STY-2026-000525",
+   "mode": "private car",
+   "minutes": 50,
+   "km": null,
+   "sourceUrl": "https://www.breac.house/",
+   "factChecked": "2026-11-01"
+  }
+ ]
 }

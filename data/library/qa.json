@@ -617,7 +617,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8b1",
    "slug": "beyond-sussuvlei-desert-lodge",
-   "name": "& Beyond Sossusvlei Desert Lodge",
+   "name": "&Beyond Sossusvlei Desert Lodge",
    "country": "Namibia",
    "missing": [],
    "released": true
@@ -2133,14 +2133,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff93a",
    "slug": "kwessi-dunes-camp",
-   "name": "Kwessi Dunes Camp",
+   "name": "Kwessi Dunes",
    "country": "Namibia",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bffa01",
@@ -4506,7 +4504,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9fe",
    "slug": "wilderness-hoanib-skeleton-camp",
-   "name": "Wilderness Hoanib Skeleton Coast",
+   "name": "Wilderness Hoanib Skeleton Coast Camp",
    "country": "Namibia",
    "missing": [],
    "released": true

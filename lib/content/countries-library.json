@@ -1900,13 +1900,13 @@
       "good",
       "good",
       "good",
+      "good",
       "best",
       "best",
       "best",
       "best",
       "best",
-      "best",
-      "best",
+      "good",
       "good",
       "good"
      ]
@@ -1914,12 +1914,8 @@
    ],
    "airports": [
     [
-     "Hosea Kutako International Airport (WDH)",
+     "Windhoek Hosea Kutako International Airport (WDH)",
      "Serves 4 stays in the Ledger here"
-    ],
-    [
-     "Ondangwa Airport (OND)",
-     "Serves 1 stay in the Ledger here"
     ],
     [
      "Eros Airport (ERS)",
@@ -1927,8 +1923,8 @@
     ]
    ],
    "transfers": [],
-   "flyInto": "WDH · OND",
-   "bestShort": "Apr–Oct",
+   "flyInto": "WDH · ERS",
+   "bestShort": "May–Sep",
    "atlasName": "Namibia"
   },
   {

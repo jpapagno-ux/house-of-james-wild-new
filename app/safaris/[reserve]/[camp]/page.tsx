@@ -124,7 +124,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
-          <div id="plan" className="scroll-mt-32 lg:scroll-mt-[212px]"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} /></div>
+          <div id="plan" className="scroll-mt-32 lg:scroll-mt-[212px]"><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} where={{ ledgerId: c.ledgerId, countrySlug: r.stay.countrySlug, volume: "safaris" }} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND[c.kind === "residence" ? "residence" : "camp"].who} seats={host.host.seats} />}
       </main>

@@ -54,3 +54,37 @@ test("what Iggi learned travels with the enquiry", () => {
   assert.match(m.text, /What Iggi learned:\nTwo divers/);
   assert.ok(m.html.includes("&lt;ruled out&gt;") && m.html.includes("What Iggi learned"));
 });
+
+// The enquiry record (1 Nov 2026): ENQ IDs and the Airtable row.
+import { enquiryId, recordFields, inboxMap, F } from "../lib/enquiry-record.ts";
+test("ENQ IDs are year + six digits", () => {
+  assert.equal(enquiryId(2026, 1), "ENQ-2026-000001");
+  assert.equal(enquiryId(2026, 1234), "ENQ-2026-001234");
+  assert.equal(enquiryId(2026, 0), "ENQ-2026-000001");
+});
+test("the record row carries the context, the advisor link and the delivery", () => {
+  const e = { ...base, message: "Hello", context: { from: "iggi", advisor: "anthony-papagno", folio: "FOL-2026-000012", q: "Raja Ampat", notes: "Two divers", destination: "raja-ampat", estimate: "22614" } };
+  const f = recordFields(e, "ENQ-2026-000007", "2026-11-01T12:00:00.000Z", "recAnthony", { to: "a@example.com", cc: ["hello@jameswildco.com"] }, "sent");
+  assert.equal(f[F.enquiryId], "ENQ-2026-000007");
+  assert.equal(f[F.source], "iggi");
+  assert.equal(f[F.folio], "FOL-2026-000012");
+  assert.equal(f[F.destination], "raja ampat");
+  assert.equal(f[F.notes], "Two divers");
+  assert.equal(f[F.estimate], 22614);
+  assert.deepEqual(f[F.advisor], ["recAnthony"]);
+  assert.equal(f[F.deliveredTo], "a@example.com, hello@jameswildco.com");
+  assert.equal(f[F.status], "New");
+  assert.equal(f[F.delivery], "sent");
+  const g = recordFields({ ...base, context: { from: "nonsense" } }, "ENQ-2026-000008", "2026-11-01T12:00:00.000Z", null, null, "preview");
+  assert.equal(g[F.source], "page"); assert.equal(g[F.advisor], undefined);
+});
+test("only active real advisors with an address are in the inbox map", () => {
+  const rows = [
+    { recordId: "r1", slug: "james-papagno", inbox: "hello@jameswildco.com", active: true, standIn: false },
+    { recordId: "r2", slug: "anthony-papagno", inbox: "a@example.com", active: true, standIn: false },
+    { recordId: "r3", slug: "sofia-marchetti", inbox: "s@example.com", active: true, standIn: true },
+    { recordId: "r4", slug: "kristina-larson", inbox: null, active: true, standIn: false },
+    { recordId: "r5", slug: "carlos-alger", inbox: "c@example.com", active: false, standIn: false },
+  ];
+  assert.deepEqual(inboxMap(rows), { "james-papagno": "hello@jameswildco.com", "anthony-papagno": "a@example.com" });
+});

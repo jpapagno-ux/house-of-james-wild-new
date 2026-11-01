@@ -18,7 +18,7 @@ MEDIA = "https://media.base44.com/images/public/"
 # Value: the real country, and the region it sits in so the pathways and maps can still place it.
 # Camp Hwange and Isla Palenque were relinked to Zimbabwe and Panama in the library on 1 Nov 2026 and
 # no longer need an entry; Mozambique has no destination record, so its two stays stay here.
-NOT_IN = {"south-africa": {"gorongosa-safaris": ("Mozambique", "africa")}, "tanzania": {"benguerra-island-by-and-beyond": ("Mozambique", "africa")}}
+NOT_IN = {}  # Mozambique got its own destination record on 1 Nov 2026; nothing is misfiled today.
 # Live booking-engine properties (Tag Albie), by stay slug.
 ENGINE = {"leeu-estates": "leeu-estates-resorts", "le-quartier-francais": "le-quartier-francais", "leeu-house": "leeu-house",
           # Kayumanis (James, 1 Nov 2026). The Jimbaran engine address ends in a hyphen on the engine itself.
@@ -142,7 +142,9 @@ for s in sorted(stays, key=lambda s: s["name"]):
     hero = s.get("hero_image_url") if owned(s.get("hero_image_url")) else next(iter([g for g in (s.get("gallery_urls") or []) if owned(g)]), s.get("hero_image_url"))
     out.append({
         "slug": slug, "name": text(s.get("display_name") or s["name"]).replace(" ", " "), "ledgerId": s.get("ledger_id"),
-        "country": actual or d.get("name"), "countrySlug": None if actual else cslug, "regionSlug": actual_region if actual else d.get("region_slug"),
+        "country": actual or d.get("name"), # A country whose destination record is not yet live (Mozambique, 1 Nov 2026) names the country and its
+        # region but links nowhere: the country page appears when the record goes live.
+        "countrySlug": None if (actual or d.get("site_status") != "live") else cslug, "regionSlug": actual_region if actual else d.get("region_slug"),
         "misfiled": actual, "category": s.get("category"),
         "tagline": text(s.get("tagline")) or None, "quote": text(s.get("intro_quote")).strip('"“” ') or None,
         "hero": img(hero), "gallery": [g for g in gallery if g and g != img(hero)],

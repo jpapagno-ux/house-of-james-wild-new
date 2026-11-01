@@ -166,3 +166,16 @@ test("2B trip map: every entry is a live trip with real pathways and volumes; no
     if (e.status === "approved") assert.match(e.classifiedBy, /James/, `${e.slug}: only James approves`);
   }
 });
+
+// The apply batch (scripts/data/pathway-apply.json) is the audit trail of what the site writes to the library.
+test("pathway-apply batch: valid ids, pathway ids and snake_case settings only", () => {
+  const b = JSON.parse(readFileSync(new URL("../scripts/data/pathway-apply.json", import.meta.url), "utf8")) as { by: string; records: Record<string, unknown>[] };
+  assert.match(b.by, /James Papagno/);
+  const allowed = new Set(["id", "slug", "house_volumes", "primary_pathway", "secondary_pathways", "pathway_setting", "pathway_intentions", "pathway_suitability", "pathway_status", "pathway_classified_by", "pathway_classified_at"]);
+  for (const r of b.records) {
+    assert.match(String(r.id), /^[0-9a-f]{24}$/);
+    for (const k of Object.keys(r)) assert.ok(allowed.has(k), `${r.slug}: field ${k}`);
+    if (r.pathway_setting) assert.match(String(r.pathway_setting), /^[a-z0-9_]+$/, `${r.slug}: setting`);
+    for (const s of (r.secondary_pathways as string[] | undefined) ?? []) assert.ok(PATHWAYS[s as keyof typeof PATHWAYS], `${r.slug}: ${s}`);
+  }
+});

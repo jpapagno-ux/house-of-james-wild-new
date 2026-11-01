@@ -1,0 +1,44 @@
+# Pathway apply: the site writes an approved Wild Pathways batch to the library.
+# The batch is scripts/data/pathway-apply.json, reviewed and merged on main; this
+# workflow posts it to the library's pathwayApply function with a GitHub OIDC
+# token (no stored secret), then runs the library sync so the site follows.
+# Only the nine pathway fields can change; the function rejects anything else.
+name: Pathway apply
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/data/pathway-apply.json]
+
+permissions:
+  contents: read
+  id-token: write
+  actions: write
+
+concurrency:
+  group: library-sync
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Apply the batch to the library
+        run: |
+          set -euo pipefail
+          N=$(python3 -c "import json;print(len(json.load(open('scripts/data/pathway-apply.json'))['records']))")
+          echo "records: $N"
+          [ "$N" -gt 0 ] || { echo "nothing to apply"; exit 0; }
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=base44-site-export" | jq -r .value)
+          curl -sSf --retry 2 -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+            --data-binary @scripts/data/pathway-apply.json \
+            https://wild-intel-vault.base44.app/functions/pathwayApply -o result.json
+          cat result.json
+          python3 -c "import json;r=json.load(open('result.json'));assert r.get('ok'),r;print('updated',r['updated'])"
+      - name: Run the library sync so the site follows
+        run: gh workflow run library-sync.yml -f reason="Pathway apply: $(python3 -c "import json;print(json.load(open('scripts/data/pathway-apply.json'))['by'])")"
+        env:
+          GH_TOKEN: ${{ github.token }}

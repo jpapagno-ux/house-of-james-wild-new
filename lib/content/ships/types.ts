@@ -124,7 +124,10 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 }
 
 /** What a card or glance bar says about price: a cruise fare, an A&K journey fare (labelled), or on request. */
-export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" | "journey" | "request"; label: string; amount: string; basis: string } {
+// Ship records reach the pages with past departures already removed (lib/dates.ts,
+// withActiveDepartures), so every "from" here reads only what is still to sail.
+export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+  if (!s.departures.length) return { kind: "tba", label: "Dates", amount: "To be announced", basis: "new dates to be announced, ask James" };
   const f = fromPrice(s);
   if (f) return { kind: "cruise", label: "From", amount: `US$${f.toLocaleString("en-US")}`, basis: "per person, cruise only, two sharing" };
   const j = journeyFrom(s);

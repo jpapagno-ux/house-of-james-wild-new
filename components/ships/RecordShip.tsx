@@ -11,6 +11,7 @@ import { shipPath, waterFor, type ShipEntry } from "@/lib/content/ships";
 import ShipTemplate from "./ShipTemplate";
 import CabinsDeck from "./CabinsDeck";
 import DatesRates from "./DatesRates";
+import NoDates from "./NoDates";
 import ShipGlance from "./ShipGlance";
 import { NILE_CHART, readRoute, shipMapHtml, shipRouteId } from "@/lib/content/ships/routes";
 
@@ -38,7 +39,7 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
   const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
   const map = routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: "nile", chart: NILE_CHART, title: `Route map of ${s.name} on the Nile` }) } : null;
 
-  const nav: [string, string][] = [["Overview", "overview"], ["Itinerary", "itinerary"], ["Cabins", "cabins"], ...(s.deckPlans.length ? [["Deck plan", "deck-plan"] as [string, string]] : []), ...(s.departures.length ? [["Dates & rates", "dates"] as [string, string]] : []), ...(offers.length ? [["Offers", "offers"] as [string, string]] : []), ["FAQ", "faq-heading"]];
+  const nav: [string, string][] = [["Overview", "overview"], ["Itinerary", "itinerary"], ["Cabins", "cabins"], ...(s.deckPlans.length ? [["Deck plan", "deck-plan"] as [string, string]] : []), ["Dates & rates", "dates"] as [string, string], ...(offers.length ? [["Offers", "offers"] as [string, string]] : []), ["FAQ", "faq-heading"]];
 
   const trips = s.itineraries.map((it) => {
     const deps = cruise.filter((d) => d.itinerary === it.name || d.itinerary.includes(it.name) || /either/i.test(d.direction));
@@ -106,6 +107,12 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
             decks: <SectionHead eyebrow="Deck plan" title="Where Is Each Cabin on the Ship?" icon="wave" />,
           }}
         />
+        {s.departures.length === 0 && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail Next?`} icon="sun" />
+            <NoDates name={s.name} planHref={plan} />
+          </section>
+        )}
         {s.departures.length > 0 && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun"
@@ -135,7 +142,7 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
                       <div className="p-4">
                         <p className="ledger-eyebrow ledger-crimson">{x.type === "dahabiya" ? "Dahabiya" : "Riverboat"} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
-                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `from ${f.amount}` : f.kind === "journey" ? `A&K journeys from ${f.amount}` : "rates on request"}</p>
+                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `from ${f.amount}` : f.kind === "journey" ? `A&K journeys from ${f.amount}` : f.kind === "tba" ? "new dates to be announced" : "rates on request"}</p>
                       </div>
                     </Link>
                   </li>

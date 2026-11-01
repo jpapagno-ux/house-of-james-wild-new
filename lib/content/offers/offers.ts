@@ -15,6 +15,7 @@
 
 import type { VolumeKey } from "@/lib/volumes";
 import LIBRARY from "./library.json";
+import { activeOnly, today } from "@/lib/dates";
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection" | "itinerary";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
@@ -97,8 +98,9 @@ const FROM_LIBRARY = LIBRARY as Offer[];
 const LIB_IDS = new Set(FROM_LIBRARY.map((o) => o.id));
 export const OFFER_LEDGER: Offer[] = [...HAND_KEPT.filter((o) => !LIB_IDS.has(o.id)), ...FROM_LIBRARY];
 
-const today = () => new Date().toISOString().slice(0, 10);
-/** Offers a page may show: Live and still within their travel window. */
-export const liveOffers = (on = today()) => OFFER_LEDGER.filter((o) => o.status === "Live" && o.travel.to >= on);
+/** When an offer ends: its travel window, or a Final Call's departure date if that comes first. */
+export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
+/** Offers a page may show: Live and not past its end (lib/dates.ts, the one date rule). */
+export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerEnd, on);
 export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref);
 export const offersInCollection = (collection: string, on = today()) => liveOffers(on).filter((o) => o.collection === collection);

@@ -9,6 +9,8 @@
 // session card links there, and that page shows the session back, so a
 // traveller reading about Monwana sees the Monwana session and vice versa.
 
+import { isPast, today } from "@/lib/dates";
+
 export type SessionAbout = { kind: "stay" | "vessel" | "voyage" | "route" | "destination" | "reserve"; name: string; href: string };
 export type Session = {
   slug: string;
@@ -32,11 +34,12 @@ export const SESSIONS: Session[] = [
 
 export const WORKSHOPS_PATH = "/workshops";
 
-const now = () => Date.now();
-export const upcoming = () => SESSIONS.filter((s) => s.series === "House Workshops" && s.start && Date.parse(s.start) >= now()).sort((a, b) => Date.parse(a.start!) - Date.parse(b.start!));
-export const recordings = () => SESSIONS.filter((s) => s.series === "House Workshops" && s.recordingUrl && (!s.start || Date.parse(s.start) < now()));
+// One date rule (lib/dates.ts): a session is upcoming until its day has passed
+// (in the house's time zone, as of the daily build), then only its recording shows.
+export const upcoming = (on = today()) => SESSIONS.filter((s) => s.series === "House Workshops" && s.start && !isPast(s.start, on)).sort((a, b) => Date.parse(a.start!) - Date.parse(b.start!));
+export const recordings = (on = today()) => SESSIONS.filter((s) => s.series === "House Workshops" && s.recordingUrl && (!s.start || isPast(s.start, on)));
 /** Sessions about a given page (a stay, ship, voyage or route), for the cross-link back. */
-export const sessionsFor = (href: string) => SESSIONS.filter((s) => s.series === "House Workshops" && s.about.some((a) => a.href === href));
+export const sessionsFor = (href: string, on = today()) => SESSIONS.filter((s) => s.series === "House Workshops" && s.about.some((a) => a.href === href) && (!s.start || !isPast(s.start, on) || !!s.recordingUrl));
 
 export const WORKSHOP_COPY = {
   seoTitle: "House Sessions: Live Travel Workshops and Destination Talks",

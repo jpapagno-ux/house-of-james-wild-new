@@ -32,6 +32,7 @@ import { Stamp } from "@/components/notes/HeroMark";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
+import NoDates from "@/components/ships/NoDates";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -379,6 +380,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />
+      {T.departures.ownEnded && <NoDates name={T.h1} planHref={`/plan?trip=${encodeURIComponent(T.h1)}`} />}
       <div className="mt-8 space-y-2">
         {T.departures.groups.map((g) => {
           const open = g.sailings.filter((x) => !/full/i.test(x.status)).length;

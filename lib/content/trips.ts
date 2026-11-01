@@ -10,6 +10,7 @@ import zaLens from "./trips/leopards-through-the-lens.json";
 import zaTrack from "./trips/track-your-life-with-boyd-varty.json";
 import zaPioneer from "./trips/three-generations-at-pioneer.json";
 import polarCircle from "./trips/polar-circle-air-cruise.json";
+import { activeGroups } from "@/lib/dates";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
 // the content of one route page plus its JSON-LD; the live map's route lives
@@ -44,7 +45,7 @@ export type Trip = {
   incl: string[]; excl: string[];
   calc: { title: string; note: string; maxG?: number; taxRate?: number; soloNote?: string; opts: { label: string; sub: string; pp: number; photo: string; sleeps: string; bed: string; size: string; feats: string }[]; adds: { label: string; sub: string; pp: number }[] };
   dates_head: [string, string, string];
-  departures?: { source?: string; groups: { name: string; nights: string; this?: boolean; sailings: { date: string; nights: number; price: number; status: string }[] }[] };
+  departures?: { source?: string; /** Set at build when this voyage's own sailings have all passed (lib/dates.ts). */ ownEnded?: boolean; groups: { name: string; nights: string; this?: boolean; sailings: { date: string; nights: number; price: number; status: string }[] }[] };
   dep_route?: string; dep_cta?: string; dep_season?: string; dep_note?: string;
   founder: { eyebrow: string; title: string; p1: string; p2: string; film: string; extra?: string; navLabel?: string;
     /** The founder's own footage, played silent and looping in place of the film placeholder. */
@@ -76,7 +77,7 @@ export type Trip = {
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
 };
 
-export const TRIPS: Record<string, Trip> = {
+const FILED: Record<string, Trip> = {
   "two-oceans-one-volcano": land as unknown as Trip,
   "10-day-raja-ampat-north": voyage as unknown as Trip,
   "polar-circle-air-cruise": polarCircle as unknown as Trip,
@@ -93,6 +94,20 @@ export const TRIPS: Record<string, Trip> = {
   "track-your-life-with-boyd-varty": zaTrack as unknown as Trip,
   "three-generations-at-pioneer": zaPioneer as unknown as Trip,
 };
+
+// Sailings past their date are dropped here (lib/dates.ts), and a group left
+// with none goes with them; a voyage with no sailings left shows "New dates to
+// be announced" on its page (components/journey/TripPage).
+function withActiveSailings(t: Trip): Trip {
+  if (!t.departures) return t;
+  const groups = activeGroups(t.departures.groups);
+  const hadOwn = t.departures.groups.some((g) => g.this);
+  const ownEnded = groups.length === 0 || (hadOwn && !groups.some((g) => g.this));
+  // With its own sailings gone, the voyage's structured data stops offering them.
+  const jsonld = ownEnded ? t.jsonld.map((x) => { const { offers: _gone, ...rest } = x; void _gone; return rest; }) : t.jsonld;
+  return { ...t, jsonld, departures: { ...t.departures, ownEnded, groups } };
+}
+export const TRIPS: Record<string, Trip> = Object.fromEntries(Object.entries(FILED).map(([k, t]) => [k, withActiveSailings(t)]));
 
 /** Routes built on a given stay (for "On these routes" bands). */
 export const routesThrough = (staySlug: string) => Object.values(TRIPS).filter((t) => (t.offerRefs ?? []).includes(staySlug) || (t.lodges ?? []).some((l) => l.rows.some(([, v]) => v.includes(`/stays/${staySlug}"`))));

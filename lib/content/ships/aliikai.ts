@@ -1,6 +1,7 @@
 import ra from "../trips/10-day-raja-ampat-north.json";
 import { SAMPLE_ALIIKAI as S } from "../preview/aliikai";
 import type { Trip } from "../trips";
+import { activeGroups } from "@/lib/dates";
 import type { ShipItinerary } from "./types";
 
 // The Aliikai vessel profile. Yacht, spaces, cabins and the 2027 schedule come
@@ -25,10 +26,14 @@ const WHERE: Record<string, { waters: string; months: string; from: string }> = 
   "Komodo National Park": { waters: "Komodo", months: "May to September", from: "Labuan Bajo" },
 };
 
-const groups = T.departures!.groups.map((g) => ({ ...g, this: false }));
+// Only sailings still to come (lib/dates.ts): "from", "to" and every count read these.
+const groups = activeGroups(T.departures!.groups).map((g) => ({ ...g, this: false }));
 const all = groups.flatMap((g) => g.sailings);
-const low = Math.min(...all.map((x) => x.price));
-const high = Math.max(...all.map((x) => x.price));
+const low = all.length ? Math.min(...all.map((x) => x.price)) : null;
+const high = all.length ? Math.max(...all.map((x) => x.price)) : null;
+const filed = T.departures!.groups.flatMap((g) => g.sailings.map((x) => x.price));
+const FILED_LOW = Math.min(...filed), FILED_HIGH = Math.max(...filed);
+const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 
 export const ALIIKAI_SHIP = {
   slug: "aliikai",
@@ -37,11 +42,11 @@ export const ALIIKAI_SHIP = {
   path: "/voyages/ships/aliikai",
   seo: {
     title: "Aliikai Phinisi Yacht: Raja Ampat & Komodo Liveaboard, 2027 Rates",
-    description: `Aliikai, a 40m hand-built phinisi with 7 cabins for 14 guests, sails Raja Ampat, Komodo and the Spice Islands. 2027 voyages from US$${low.toLocaleString("en-US")} pp, or charter the whole yacht.`,
+    description: `Aliikai, a 40m hand-built phinisi with 7 cabins for 14 guests, sails Raja Ampat, Komodo and the Spice Islands. ${low !== null ? `2027 voyages from ${usd(low)} pp, or` : "New dates to be announced;"} charter the whole yacht.`,
     keywords: ["Aliikai", "Aliikai yacht", "Aliikai Voyage", "Raja Ampat liveaboard", "Komodo liveaboard", "phinisi charter Indonesia", "luxury phinisi Raja Ampat"],
   },
   tagline: "A hand-built phinisi for fourteen, sailing Raja Ampat, Komodo and the Spice Islands",
-  answer: `Aliikai is a 40-metre traditional phinisi, hand-built in Bulukumba, South Sulawesi and refitted in 2020, with seven en-suite cabins over three decks for up to 14 guests (15 on a private charter), a crew of twelve and an expedition leader, and a full dive centre with Nitrox. She sails Komodo from May to September, the Spice Islands in October and Raja Ampat from November to April. 2027 shared voyages run 3 to 11 nights from US$${low.toLocaleString("en-US")} to US$${high.toLocaleString("en-US")} per person, double occupancy, plus 11% tax; the whole yacht charters for US$10,900 a night. James sailed Raja Ampat aboard her in November 2024.`,
+  answer: `Aliikai is a 40-metre traditional phinisi, hand-built in Bulukumba, South Sulawesi and refitted in 2020, with seven en-suite cabins over three decks for up to 14 guests (15 on a private charter), a crew of twelve and an expedition leader, and a full dive centre with Nitrox. She sails Komodo from May to September, the Spice Islands in October and Raja Ampat from November to April. ${low !== null && high !== null ? `2027 shared voyages run 3 to 11 nights from ${usd(low)} to ${usd(high)} per person, double occupancy, plus 11% tax` : "New shared-voyage dates are to be announced"}; the whole yacht charters for US$10,900 a night. James sailed Raja Ampat aboard her in November 2024.`,
   quote: T.approve.quote,
   facts: V.facts.filter(([k]) => k !== "Ledger") as [string, string][],
   blurb: V.blurb,
@@ -77,7 +82,7 @@ export const ALIIKAI_SHIP = {
     p2: "That voyage is why she's in the Ledger. The Komodo, Spice Islands and repositioning routes are hers too; he hasn't sailed those aboard her yet, and the pages say so.",
   },
   faqs: [
-    ["How much does a voyage on Aliikai cost?", `2027 shared voyages run from US$${low.toLocaleString("en-US")} per person for 3 nights in Komodo to US$${high.toLocaleString("en-US")} for the 11-night crossing between Sorong and Ambon, in an ocean-view cabin with portholes, double occupancy, plus 11% tax. By the night, per person: US$850 in an ocean-view cabin, US$990 in a deluxe ocean-view cabin with windows and US$1,150 in an owner's cabin with a private balcony. Travelling solo, the single supplement is 50% of the nightly rate.`],
+    ["How much does a voyage on Aliikai cost?", `${low !== null && high !== null ? `2027 shared voyages run from ${usd(low)} per person${low === FILED_LOW ? " for 3 nights in Komodo" : ""} to ${usd(high)}${high === FILED_HIGH ? " for the 11-night crossing between Sorong and Ambon" : ""}, in an ocean-view cabin with portholes, double occupancy, plus 11% tax.` : "New shared-voyage dates and fares are to be announced; ask James."} By the night, per person: US$850 in an ocean-view cabin, US$990 in a deluxe ocean-view cabin with windows and US$1,150 in an owner's cabin with a private balcony. Travelling solo, the single supplement is 50% of the nightly rate.`],
     ["Is Aliikai a good choice for a first trip to Raja Ampat?", "Yes. Her 10 Day Raja Ampat North is the route we recommend for a first visit: Wayag, the Passage, Penemu and the mantas at Arborek on one Sorong round trip, in the calm season, with airport transfers, meals and guided snorkelling and diving included. James sailed it aboard her in November 2024, and he has been designing journeys since 1983."],
     ["Where and when does Aliikai sail?", "Komodo National Park from May to September (with two whale shark voyages in July), the Spice Islands of the Banda Sea in October, and Raja Ampat from November to April, with crossings between Sorong and Ambon in April and late October."],
     ["How many guests does Aliikai take?", "Up to 14 guests on shared voyages and 15 on a private charter, in seven en-suite, air-conditioned cabins over three decks. Every cabin takes two; the Asmat bow cabin takes a third."],

@@ -45,11 +45,13 @@ export const FULL_FRAME: Record<string, FullFrame[]> = {
 // Who owns each stay's photographs (stay-photos.json "credit"). Printed under the
 // full frames and written into every image's structured data.
 // Wilderness supplies the photographs for every Wilderness camp (James, 30 Oct
-// 2026), so each "wilderness-" stay is credited to Wilderness unless its own
-// entry names someone else.
+// 2026), so each "wilderness-" stay is credited to Wilderness, and each
+// "singita-" stay to Singita (1 Nov 2026), unless its own entry names someone else.
 export const PHOTO_CREDIT: Record<string, string> = {
   ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.startsWith("wilderness-")).map((x) => [x.slug, "Wilderness"])),
   ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.endsWith("-ted-turner-reserve")).map((x) => [x.slug, "Ted Turner Reserves"])),
+  // Singita supplies the photographs for every Singita lodge and villa (James, 1 Nov 2026).
+  ...Object.fromEntries((stays.stays as { slug: string }[]).filter((x) => x.slug.startsWith("singita-")).map((x) => [x.slug, "Singita"])),
   // Property-supplied heroes (photo-credits.json).
   ...Object.fromEntries(Object.entries(credits as Record<string, string>).filter(([k]) => !k.startsWith("_"))),
   ...Object.fromEntries(

@@ -45,7 +45,7 @@ export const SETTING_TO_PATHWAY: Record<Setting, PathwayId> = {
 
 const PARTY_SUITS: Record<Party, string[]> = {
   couple: ["couples", "honeymoon"], family: ["families", "family"], friends: ["small_groups", "private_groups", "friends"],
-  solo: ["solo", "couples"], group: ["private_groups", "small_groups", "exclusive_use"],
+  solo: ["solo"], group: ["private_groups", "small_groups", "exclusive_use"],
 };
 
 export type Reason = { kind: "pathway" | "party" | "interest" | "privacy" | "season" | "conservation" | "culture" | "verdict"; text: string; weight: number };

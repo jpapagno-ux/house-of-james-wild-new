@@ -25,7 +25,8 @@ export type Folio = {
 };
 
 const KEY = "jw.folio.shelf.v1";
-const FOL = /^FOL-\d{4}-\d{6}$/;
+// FOL- (Folio) or JRN- (Journey Sketch, the pre-Folio a chat opens — Contract A6, 31 Oct 2026).
+const FOL = /^(FOL|JRN)-\d{4}-\d{6}$/;
 
 export const isFolioId = (s: unknown): s is string => typeof s === "string" && FOL.test(s);
 

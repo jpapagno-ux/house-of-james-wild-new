@@ -5,6 +5,7 @@ import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
 import Link from "next/link";
 import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
+import { CRUX_HREF } from "@/lib/compass/pathway-adapter";
 import { folioFromCore, getFolio, isFolioId, saveFolio, type Folio } from "@/lib/folio/shelf";
 import { FLAGS } from "@/lib/booking-live/flags";
 
@@ -84,6 +85,8 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
       const d = e.data as { type?: string; height?: number; path?: string; external?: boolean; entitySlug?: string; domain?: string; folio?: unknown; fol?: string };
       if (d.type === "ji:resize" && typeof d.height === "number") setHeight(Math.min(Math.max(d.height, 480), 920));
       if (d.type === "ji:open_app" && typeof d.path === "string") {
+        // crux: Iggi walks a pure safari reading over to Wild & Co Safaris — through the house's one door (James, 31 Oct 2026).
+        if ((d as { crux?: boolean }).crux) { location.assign(CRUX_HREF); return; }
         // external: a link back into this site (the advisor's Plan page with the FOL on it); anything else opens the Core.
         if (d.external) { try { const u = new URL(d.path, location.origin); if (u.origin === location.origin) location.assign(u.pathname + u.search); } catch { /* ignore */ } }
         else window.open(`${IGGI_CORE_ORIGIN}${d.path.startsWith("/") ? d.path : "/" + d.path}`, "_blank", "noopener");

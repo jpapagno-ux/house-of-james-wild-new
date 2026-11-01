@@ -39,7 +39,7 @@ they want to talk to someone, after Iggi has said the approved line
 Fields:
 
 - `advisor` — slug; omit to use the advisor on the page.
-- `fol` — the Folio ID if one is open (`FOL-YYYY-NNNNNN`).
+- `fol` — the Folio ID if one is open (`FOL-YYYY-NNNNNN`, or `JRN-YYYY-NNNNNN` for the Journey Sketch a chat opens — Contract A6).
 - `q` — the place in words, ≤ 120 chars ("Monwana, Thornybush").
 - `notes` — **what Iggi learned**, ≤ 600 chars, plain text, written for the
   advisor: who's travelling, when, what they care about, what Iggi already
@@ -70,10 +70,18 @@ Unchanged. A pure safari reading walks over to Wild & Co Safaris with
 `iggi.handoff.crux` ("That's a safari reading through and through…") and the
 single door `/safaris/wild-co-safaris`. Crux reads the same advisor feed.
 
-## 6. Still to do in Core (next job)
+## 6. Core side — done 1 Nov 2026 (Journey Intelligence checkpoint "Advisor handoff contract")
 
-1. Send `ji:inquiry` with `notes` as above (today Core sends only `entitySlug`).
-2. Read `advisor` from the embed URL and address the traveller to that advisor
-   by first name (James on every page during testing).
-3. Use the dialogue register for the handoff and decline lines
-   (`docs/wild-pathways/DIALOGUE.md`, follow-up #18).
+1. `ji:inquiry` now carries `fol`, `q` (the traveller's first question) and
+   `notes` (a ≤ 600-char brief written by Iggi from the chat, stored on the
+   Inquiry too); the Folio is opened first so the number travels.
+2. Iggi addresses the traveller to the page advisor by first name; when the
+   roster feed is down the handoff still names James (ADV-1982-000001).
+3. Approved lines are used verbatim in the handoff aside, the confirmation and
+   the prompt. `handoff_target: "crux"` is set for a pure safari reading; the
+   embed shows the Crux line and posts `ji:open_app { crux: true }`, which this
+   site routes through the one door, `/safaris/wild-co-safaris`.
+
+Still open: the Core does not yet write the Airtable enquiry row itself; the
+row is written when the traveller reaches `/plan`. Core→Airtable comes with
+the Desk's "unfinished handoff" view, if James wants it.

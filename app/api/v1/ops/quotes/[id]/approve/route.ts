@@ -3,7 +3,8 @@ import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
 
 // POST /api/v1/ops/quotes/:id/approve { decision: "approved" | "declined", note?, availability? }
-// Advisor or admin only (organization role, checked server-side). Approving
+// Advisor or admin only (organization role, checked server-side). A pending or
+// held quote may be approved or declined. Approving
 // records that the house confirmed price AND availability with the property
 // (availability → confirmed_by_property). Prices stay immutable.
 // Called from the Base44 Advisor Desk through the server, never from a browser
@@ -26,7 +27,7 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, params, reque
   if (!admin) return error("server_error", "Not configured (server key missing)", requestId);
   const { data: q } = await admin.from("quotes").select("id, advisor_status, expires_at, status, created_at, rate_card_version_id").eq("id", params.id).maybeSingle();
   if (!q) return error("not_found", "Not found", requestId);
-  if (q.advisor_status !== "pending") return error("conflict", `Already ${q.advisor_status}`, requestId);
+  if (q.advisor_status !== "pending" && q.advisor_status !== "held") return error("conflict", `Already ${q.advisor_status}`, requestId);
   if (decision === "approved" && new Date(q.expires_at) < new Date()) return error("conflict", "This quote has expired — create a fresh one", requestId);
   if (decision === "approved") {
     // The card that priced this quote must still be published and unchanged
@@ -42,7 +43,7 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, params, reque
   const { error: e } = await admin.from("quotes").update({
     advisor_status: decision, advisor_user_id: user.id, advisor_note: note, advisor_decided_at: new Date().toISOString(),
     ...(decision === "approved" ? { availability: "confirmed_by_property" } : { status: "rejected" }),
-  }).eq("id", params.id).eq("advisor_status", "pending");
+  }).eq("id", params.id).in("advisor_status", ["pending", "held"]);
   if (e) return error("server_error", "Couldn't record the decision", requestId);
   return ok({ id: params.id, advisor_status: decision }, requestId);
 });

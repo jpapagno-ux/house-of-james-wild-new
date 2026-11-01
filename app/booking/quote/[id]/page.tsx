@@ -2,6 +2,9 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { currentUser } from "@/lib/booking-live/supabase/server";
 import { isUuid } from "@/lib/booking-live/validate";
+import { quoteState, STATE_WORDS } from "@/lib/booking-live/bookings";
+import { Timeline } from "@/components/trips/TripCards";
+import { niceWhen } from "@/lib/booking-live/money";
 
 export const metadata = { title: "Your request" };
 
@@ -15,11 +18,7 @@ const fmt = (minor: number, currency: string) => {
 };
 const nice = (d: string) => new Date(`${d}T00:00:00Z`).toLocaleDateString("en-US", { weekday: "short", day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
-const STATE: Record<string, [string, string]> = {
-  pending: ["Waiting for the house", "Your request is with the house. We're confirming the room with the property and will reply within 24 hours. Nothing has been charged."],
-  approved: ["Confirmed by the house", "The property has confirmed the room at this price. The house will send the deposit details."],
-  declined: ["Not available", "The property couldn't hold these dates. The house will suggest the closest alternatives."],
-};
+// States come from lib/booking-live/bookings (shared with the Trips shelf).
 
 // Shows a stored, immutable quote. RLS: only its traveler (or an advisor) can read it.
 export default async function QuotePage({ params }: { params: Promise<{ id: string }> }) {
@@ -29,18 +28,22 @@ export default async function QuotePage({ params }: { params: Promise<{ id: stri
   if (!user) redirect(`/account/sign-in?next=${encodeURIComponent(`/booking/quote/${id}`)}`);
   const { data: q } = await sb.from("quotes").select("*, property:properties(name, slug)").eq("id", id).maybeSingle();
   if (!q) notFound();
-  const [title, line] = STATE[q.advisor_status] ?? STATE.pending;
+  const state = quoteState(q);
+  const { label: title, line } = STATE_WORDS[state];
+  const { data: booking } = state === "booked" ? await sb.from("bookings").select("id, public_reference").eq("quote_id", q.id).maybeSingle() : { data: null };
   const b = q.price_breakdown as { nights: Night[]; discounts: { code: string; label: string; amountMinor: number }[]; charges: Charge[] };
   const p = q.policy_snapshot as { cancellation: { summary: string }; room: { name: string }; plan: { name: string } };
   const cur = q.currency as string;
-  const expired = q.advisor_status === "pending" && new Date(q.expires_at) < new Date();
+  const expired = state === "expired";
   return (
     <article className="grid gap-6 max-w-3xl">
-      <p className="ledger-eyebrow">Request {q.public_reference} · <Link href="/account" className="hover:opacity-60">My Folio</Link></p>
+      <p className="ledger-eyebrow">Request {q.public_reference} · <Link href="/account/trips" className="hover:opacity-60">Your trips</Link></p>
       <h1 className="ledger-display text-[2rem] md:text-[2.6rem] leading-[1.1]">{p.room?.name} at {(q.property as { name: string } | null)?.name}</h1>
       <div className="border-l-2 ledger-crimson-border pl-4">
-        <p className="ledger-display text-xl">{expired ? "This price has expired" : title}</p>
-        <p className="text-[15.5px] mt-1">{expired ? "Prices on contracted cards are held for 72 hours. Check your dates again for a fresh price." : line}</p>
+        <p className="ledger-display text-xl">{title}{state === "held" && q.held_until ? <span className="text-rust text-[15px] ml-2">until {niceWhen(q.held_until)}</span> : null}</p>
+        <p className="text-[15.5px] mt-1">{line}{q.hold_note && state === "held" ? ` ${q.hold_note}` : ""}</p>
+        {booking && <p className="text-[14px] mt-2">Booking reference <strong>{booking.public_reference}</strong> · <Link href="/account/trips" className="underline underline-offset-2">see it on your trips</Link></p>}
+        <Timeline state={state} />
       </div>
       <dl className="border-t ledger-rule text-[15px]">
         <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Dates</dt><dd>{nice(q.arrival_date)} → {nice(q.departure_date)}</dd></div>

@@ -2243,36 +2243,38 @@
    "gallery": [],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -17.9997,
-    "lng": 25.81
+    "lat": -17.992019,
+    "lng": 25.832105
    },
    "airport": "Victoria Falls International Airport (VFA)",
    "airportDirections": "About 20 minutes by road from Victoria Falls International Airport; transfers from Livingstone (LVI) can also be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Sixteen 70-square-metre suites, each with a private entrance and veranda, in Reserve View and Garden View categories, plus two Pool Suites with their own pools opening onto the reserve."
+     "Sixteen 70-square-metre suites, each with a private entrance, in Reserve View and Garden View categories, including two interconnecting suites for families."
     ],
     "items": []
    },
    "experiences": {
     "paras": [
-     "Big Five game drives in the private reserve. Guided walks. Black rhino conservation experience with a bush dinner. Guided tours of Victoria Falls. Devil's Pool, Zambezi sunset cruises, helicopter flights and gorge zip-lining through the concierge."
+     "Big Five game drives and guided nature walks in the private reserve. Nearby: the Black Rhino Experience, Livingstone Island and the Woodland Community."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "Inside the Victoria Falls Private Game Reserve, about 15 minutes from the Falls. 1871 Restaurant and Bar. Garden pool overlooking an active waterhole. Anantara Spa gazebo. Kids' explorer programme."
+     "Set in a private game reserve about 15 minutes from Victoria Falls and 20 minutes from Victoria Falls International Airport. 1871 Restaurant, with gin tastings, a Chef's Table, wine pairing and afternoon tea. Outdoor swimming pool. Spa. Family accommodation and kids' activities."
     ],
     "items": []
    },
    "onlyHere": [
-    "Stanley & Livingstone gives you the Falls by day and a quiet private reserve by night, with rhino on the doorstep and only sixteen suites to share it."
+    "Stanley & Livingstone gives you the Falls by day and a quiet private game reserve by night, with only sixteen suites to share it."
    ],
    "why": [
     {
@@ -2280,8 +2282,37 @@
      "body": "Best for couples, families and anyone starting or ending a safari at Victoria Falls."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "how_to_get_there": "About 20 minutes by road from Victoria Falls International Airport.",
+    "signature_experiences": "Big Five game drives and guided nature walks in a private reserve, plus the nearby Black Rhino Experience.",
+    "who_its_for": "Families and travellers who want a private game reserve within 15 minutes of Victoria Falls."
+   },
+   "faqs": [
+    {
+     "q": "Where is Anantara Stanley & Livingstone?",
+     "a": "It is on Old Ursula Road in a private game reserve outside Victoria Falls, Zimbabwe, about 15 minutes' drive from the Falls."
+    },
+    {
+     "q": "How do you get to Stanley & Livingstone?",
+     "a": "The lodge is about 20 minutes' drive from Victoria Falls International Airport (VFA)."
+    },
+    {
+     "q": "How many suites does Stanley & Livingstone have?",
+     "a": "There are 16 suites of 70 square metres, each with a private entrance, including two interconnecting suites."
+    },
+    {
+     "q": "Is Stanley & Livingstone good for families?",
+     "a": "Yes. Anantara says it welcomes families, with family accommodation, interconnecting suites and kids' activities."
+    },
+    {
+     "q": "What can you do at Stanley & Livingstone?",
+     "a": "Big Five game drives and guided nature walks in the private reserve, with the Black Rhino Experience, Livingstone Island and the Woodland Community nearby."
+    },
+    {
+     "q": "What dining and facilities are there?",
+     "a": "The 1871 Restaurant offers gin tastings, a Chef's Table, wine pairing and afternoon tea, alongside in-room dining, an outdoor swimming pool and a spa."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -4930,12 +4961,9 @@
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October for dry weather, clear lake views, and peak wildlife. November to April for lush scenery, baby animals, and birdlife.",
    "bestFor": [
-    "honeymoon",
     "family",
-    "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "wellness",
+    "conservation"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -4948,8 +4976,8 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Set on the shores of Lake Kariba, Bumi Hills Safari Lodge pairs wide water panoramas with classic Zimbabwean safari experiences. The property’s ten lakeview rooms and two Baobab Villa suites all have private verandas and en suite bathrooms that frame the light and movement on the water.",
-     "The main lodge concentrates relaxed luxury: an infinity pool that looks across the lake, a small wellness spa, a fire pit for evening storytelling, and communal dining and lounge spaces where local produce and regional cooking meet attentive service. The feel is informal but polished, equal parts family refuge and a base for serious wildlife days."
+     "Set on the shores of Lake Kariba, Bumi Hills Safari Lodge pairs wide water panoramas with classic Zimbabwean safari experiences. The property's ten lake-view suites and the two-bedroom Baobab Villa all have private decks and en suite bathrooms that frame the light and movement on the water.",
+     "The main lodge concentrates relaxed luxury: an infinity pool that looks across the lake, a wellness spa and gym, a fire pit for evening storytelling, and a canvas-covered bar and open dining area on the viewing deck. The feel is informal but polished, equal parts family refuge and a base for serious wildlife days."
     ],
     "items": []
    },
@@ -4962,18 +4990,18 @@
    },
    "features": {
     "paras": [
-     "Infinity pool with uninterrupted Lake Kariba views. Two-family Baobab Villa suites plus ten lakeview rooms with private verandas. On-site spa and firepit for evening gatherings. Dining focused on local produce with indoor and outdoor seating. Eco-sensitive design and an experienced guide team offering game drives, walking safaris, lake cruises, fishing, and birdwatching."
+     "Infinity pool overlooking Lake Kariba. Ten lake-view suites with air-conditioning, freestanding baths, indoor and outdoor showers and private viewing decks, plus the private two-bedroom Baobab Villa with its own butler, guide and safari vehicle. Wellness spa and gym. Canvas-covered bar and open dining area on the viewing deck. Game drives, walking safaris, boat cruises, fishing and birdwatching with the lodge's guides."
     ],
     "items": []
    },
    "onlyHere": [
-    "What is unique to Bumi Hills is the uninterrupted pairing of lake life and classic Zimbabwean safari from a single, intimate lodge: within a day you can track game in the bush, then be on the water for a sunset cruise photographing reflected skies.",
-    "The Baobab Villas provide a private, residential feel that works for families or small groups who want exclusive use combined with the lodge’s guiding and activity program, creating moments that feel both private and rooted in place."
+    "What is unique to Bumi Hills is the pairing of lake life and classic Zimbabwean safari from a single, intimate lodge: within a day you can track game in the bush, then be on the water for a sunset cruise photographing reflected skies.",
+    "The Baobab Villa provides a private, residential feel that works for families or small groups who want a villa of their own combined with the lodge's guiding and activity program, creating moments that feel both private and rooted in place."
    ],
    "why": [
     {
      "title": null,
-     "body": "LAKEFRONT PERSPECTIVE Floor-to-ceiling moments of Lake Kariba at sunrise and sunset, experienced from private verandas, the infinity pool, and evening cruises that make the water another dimension of your safari."
+     "body": "LAKEFRONT PERSPECTIVE Lake Kariba at sunrise and sunset, experienced from private decks, the infinity pool, and evening cruises that make the water another dimension of your safari."
     },
     {
      "title": null,
@@ -4981,47 +5009,42 @@
     },
     {
      "title": null,
-     "body": "FAMILY-FRIENDLY VILLAS Two Baobab Villa suites sleep families or small groups in private spaces with separate bedrooms and living areas, while activities can be adapted for children and multigenerational groups."
+     "body": "FAMILY-FRIENDLY VILLA The two-bedroom Baobab Villa gives families or small groups their own living room, bar and dining decks, with a private butler, guide and vehicle, and the Ngwana Club offers activities for children of all ages."
     },
     {
      "title": null,
-     "body": "SERVICE WITH LOCAL GUIDES Small-group guiding and experienced rangers focus on reading the land and the water, delivering wildlife encounters, birding highlights, and safe, informed walking safaris."
+     "body": "GUIDED ON LAND AND WATER The lodge's guides lead game drives, night drives, walking safaris for those over 16, boat cruises and birding."
     }
    ],
    "facts": {
-    "best_months": "May to October for dry-season game viewing; November to April for birdwatching, fishing, and greener landscapes.",
-    "how_to_get_there": "Reachable by road from Harare or by charter flight to a nearby airstrip, followed by a short lodge transfer; your travel agent or the lodge can coordinate transfers.",
-    "who_its_for": "Couples and honeymooners seeking intimate lakeside sunsets, families wanting private villa space and adapted activities, adventure travellers who want both walking safaris and water-based days, photographers chasing water-and-bush light, and solo travellers looking for a safe, guide-led safari base.",
-    "signature_experiences": "Sunset cruises on Lake Kariba, guided game drives and walking safaris, early-morning birding, fishing excursions, cultural village visits, and nights around the lodge fire under brilliant southern skies."
+    "how_to_get_there": "Fly to Bumi Hills Airstrip, about 1 hour 30 minutes from Harare, then a 5-minute transfer to the lodge.",
+    "signature_experiences": "Game drives and walks on a private concession, sunset cruises and fishing on Lake Kariba, and the Lady Jacqueline houseboat.",
+    "who_its_for": "Families and travellers who want lake and bush safari from one lodge, with a private villa option."
    },
    "faqs": [
     {
-     "q": "What is Bumi Hills Safari Lodge known for?",
-     "a": "Bumi Hills Safari Lodge is known for its lakeside setting on Lake Kariba, combining panoramic water views with classic Zimbabwean safari activities such as game drives, walking safaris, and sunset cruises."
-    },
-    {
-     "q": "How many rooms does Bumi Hills Safari Lodge have?",
-     "a": "The lodge has ten lakeview rooms and two Baobab Villa suites, for a total of twelve accommodation units."
-    },
-    {
-     "q": "What is the best time to visit Bumi Hills Safari Lodge?",
-     "a": "The dry season, generally May to October, offers the clearest game viewing and stable skies; the warmer months from November to April bring lush scenery, excellent birding, and active fishing."
-    },
-    {
-     "q": "Is Bumi Hills Safari Lodge good for families?",
-     "a": "Yes, the property has two Baobab Villa suites that accommodate families and offers family-friendly activities and flexible guiding suitable for children and multigenerational groups."
+     "q": "Where is Bumi Hills Safari Lodge?",
+     "a": "Bumi Hills sits on a ridge overlooking Lake Kariba in northern Zimbabwe, on its own private safari concession next to Matusadona National Park."
     },
     {
      "q": "How do you get to Bumi Hills Safari Lodge?",
-     "a": "Travel typically involves a road transfer from Harare or a charter flight to a nearby airstrip followed by a short lodge transfer; timing and options depend on your point of origin and flight schedules."
+     "a": "Fly to Bumi Hills Airstrip, then a 5-minute transfer to camp. African Bush Camps gives flight times of about 1 hour 30 minutes from Harare, 1 hour 40 minutes from Victoria Falls, 30 minutes from Mana Pools and 1 hour 30 minutes from Hwange."
     },
     {
-     "q": "Are activities guided at the lodge?",
-     "a": "Yes, game drives, walking safaris, lake cruises, and birding excursions are led by the lodge’s experienced guides and rangers."
+     "q": "How many rooms does Bumi Hills Safari Lodge have?",
+     "a": "There are ten lake-view suites, including one interleading pair, plus the private two-bedroom Baobab Villa with its own butler, guide and safari vehicle."
     },
     {
-     "q": "Are meals included with a stay at Bumi Hills Safari Lodge?",
-     "a": "Meal inclusions vary by booking; many stays include meals and selected activities, but you should confirm the package details when booking."
+     "q": "Is Bumi Hills Safari Lodge good for families?",
+     "a": "Yes. There is no age restriction, the Ngwana Club runs activities for children of all ages, and the Baobab Villa is designed for families. Walking safaris are limited to children over 16."
+    },
+    {
+     "q": "What activities are offered at Bumi Hills?",
+     "a": "Game drives, night drives, walking safaris, boat cruises at sunrise and sunset, catch-and-release fishing, birdwatching and cultural tours, plus half-day or overnight trips aboard the houseboat Lady Jacqueline."
+    },
+    {
+     "q": "Can you see rhino from Bumi Hills?",
+     "a": "Black rhino have returned to neighbouring Matusadona National Park, and from 1 September 2026 the lodge offers a game drive, walking safari and dedicated Conservation Experience in the park."
     }
    ],
    "reviewed": true,
@@ -5060,10 +5083,11 @@
    "quote": "In Hwange, you don’t observe wildlife , you enter its rhythm.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0aee714bf_36a6b6428_6a05027fc59ae19ecfdebb6f_Camp-Hwange-Muddy-Teak-Banner-scaled.jpg",
    "gallery": [],
-   "bestMonths": "May – October",
-   "bestMonthsNote": "Dry season months concentrate wildlife around water sources, making elephant herds, predators, and large game especially visible. Walking safaris are also at their peak during this time.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [
     "family",
+    "couples",
     "group_exclusive_use",
     "wildlife_photography"
    ],
@@ -5073,70 +5097,68 @@
     "lat": -18.7265,
     "lng": 26.9532
    },
-   "airport": "Victoria Falls International Airport (VFA), Hwange National Park Airstrip (Shumba Airstrip",
+   "airport": "Victoria Falls International Airport (VFA), Hwange National Park Airstrip (Shumba Airstrip)",
    "airportDirections": "From Victoria Falls Airport: ~1 hour flight or 4–5 hour drive to Hwange region\nShort 15–30 min game drive transfer into camp after landing\nBest arrival airport: Victoria Falls International Airport (VFA)",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Camp Hwange Chalets",
-     "Family Chalet",
-     "Muddy Teak Luxury Tents",
-     "Exclusive-Use Camp Setup"
-    ]
+    "paras": [
+     "Camp Hwange: eight canvas-walled, thatched en-suite rooms facing the permanent waterhole, one of them a two-roomed family room with independent bathrooms.",
+     "Muddy Teak: four large tents looking onto the camp's waterhole, booked for private use only, with your own guide, vehicle and pool."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
      "Walking Safaris",
-     "Game Drives",
-     "Waterhole Wildlife Viewing",
-     "Hide Photography",
+     "Game Drives in open vehicles",
      "Night Drives",
-     "Bush Dining Experiences"
+     "Logpile Hide Viewing",
+     "Waterhole Wildlife Viewing"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Waterhole views from camp",
-     "Private-use safari option (Muddy Teak)",
-     "Expert Zimbabwean guiding",
-     "Solar-powered eco camp setup",
-     "Walking safari specialization",
-     "Remote concession access"
+     "Waterhole views from every room",
+     "Private-use only camp (Muddy Teak) with your own guide and vehicle",
+     "Reservoir-style pools and campfires at both camps",
+     "Private concession in central Hwange National Park"
     ]
    },
    "onlyHere": [
-    "Only here do elephants pass within view of your bed, lions call through teak forests at night, and mornings begin with guided walks across untouched safari land."
+    "Here elephant herds walk out of the teak woodland to the waterhole in view of your bed, the resident lion pride passes by, and mornings can begin with a guided walk on a private concession."
    ],
    "why": [],
    "facts": {
-    "best_months": "May to October, when wildlife concentrates at water and walking safaris are at their peak.",
-    "how_to_get_there": "Fly into Victoria Falls International (VFA), then about a 1-hour flight or 4 to 5 hour drive to Hwange, and a 15 to 30 minute game drive transfer into camp.",
-    "who_its_for": "Walking safari enthusiasts, wildlife photographers, families and return Africa travellers.",
-    "signature_experiences": "Walking safaris, waterhole wildlife viewing and hide photography."
+    "how_to_get_there": "Transfers and air charters into the private concession in central Hwange are arranged as extras at booking.",
+    "signature_experiences": "Walking safaris with licensed Zimbabwean guides, logpile hides at the waterhole, game drives and night drives.",
+    "who_its_for": "Travellers wanting an intimate bush camp, and families or groups who want Muddy Teak to themselves."
    },
    "faqs": [
     {
      "q": "Where are Camp Hwange and Muddy Teak?",
-     "a": "Both are in Hwange National Park, Matabeleland North Province, Zimbabwe."
+     "a": "Both camps are on the private Camp Hwange concession in central Hwange National Park, Zimbabwe, between mopane woodland to the north and teak forest to the south-west, each overlooking a natural waterhole."
     },
     {
      "q": "How do you get to Camp Hwange?",
-     "a": "Fly into Victoria Falls International (VFA), then about a 1-hour flight or 4 to 5 hour drive to the Hwange region. A 15 to 30 minute game drive transfer takes you into camp."
+     "a": "The camps' published rates list transfers to and from camp and air charters as extras, so road or charter arrangements are made when you book."
     },
     {
-     "q": "When is the best time to visit Camp Hwange?",
-     "a": "May to October. In the dry season wildlife concentrates at water, and walking safaris are at their peak."
+     "q": "How many rooms do Camp Hwange and Muddy Teak have?",
+     "a": "Camp Hwange has eight canvas-walled, thatched en-suite rooms, one of them a two-roomed family room. Muddy Teak has four large tents."
+    },
+    {
+     "q": "Can Muddy Teak be booked privately?",
+     "a": "Yes, Muddy Teak is only available for private-use bookings, with your own guide, vehicle and pool."
     },
     {
      "q": "What makes Camp Hwange different?",
-     "a": "It specialises in walking safaris with Zimbabwean guides, and the camp looks over a waterhole. Hide photography and night drives are also offered."
+     "a": "Beyond game drives and night drives, guests can sit at ground level in logpile hides as elephants come to drink. Walks are led by fully licensed Zimbabwean professional guides with an experienced tracker."
     },
     {
      "q": "Is Camp Hwange good for families?",
-     "a": "It suits families who want private wilderness time. There is a family chalet, and Muddy Teak can be booked for private use."
+     "a": "Camp Hwange has a two-roomed family room with independent bathrooms, and Muddy Teak's private-use camp gives a family or group the camp to themselves."
     }
    ],
    "reviewed": true,
@@ -20619,13 +20641,20 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Safari by river, Victoria Falls at your doorstep",
+   "tagline": "Safari by the river, upstream from Victoria Falls",
    "quote": "Watch elephants from your riverfront suite, cruise the Zambezi at sunset, and explore Victoria Falls. Matetsi Victoria Falls is Zimbabwe’s ultimate blend of safari, luxury, and adventure.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e7f7cfcc2_1fd0072ca_682e72b25dfd97109eca9a55_Matetsi-Victoria-Falls__2018_Matetsi-Edit.jpg",
    "gallery": [],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "May to October for best game viewing and lower water at Victoria Falls (spectacular views). November to April for green season, birding, and high-water Falls drama.",
-   "bestFor": [],
+   "bestMonths": "July to November",
+   "bestMonthsNote": "The dry season brings large elephant and buffalo herds; November rains start the calving season, and the green season is good for birding.",
+   "bestFor": [
+    "family",
+    "couples",
+    "wellness",
+    "food",
+    "conservation",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -20633,51 +20662,72 @@
     "lng": 25.5043
    },
    "airport": "Victoria Falls Airport (VFA), Livingstone Airport (LVI)",
-   "airportDirections": "Fly to Victoria Falls (VFA) or Livingstone (LVI), 40-minute road transfer to lodge (private transfer included).",
+   "airportDirections": "About 1 hour by road from Victoria Falls International Airport (complimentary transfer); 1.5 hours from Livingstone or Kasane including the border; helicopter or charter to the lodge's own helipad and airstrip.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eighteen river-facing suites, including two family suites and one exclusive-use private villa, all with private pools, outdoor showers, and expansive decks overlooking the Zambezi. Main lodge with dining, wine cellar, art gallery, spa, pool, gym, and firepit."
+     "Sixteen River Suites and two River Family Suites, each with a private plunge pool, indoor and outdoor rain showers and decks overlooking the Zambezi, plus the exclusive-use four-bedroom River House. Main lodge with a 20 m lap pool, fitness studio, massage sala, library, wine cellar, boutique and boma."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Daily game drives and bush walks in Matetsi Reserve",
-     "Sunset Zambezi river cruises",
-     "Birdwatching",
-     "Canoeing and fishing",
-     "Guided Victoria Falls tours",
-     "Culinary experiences and wine tastings",
-     "Spa and wellness treatments",
-     "Star gazing"
-    ]
+    "paras": [
+     "Game drives, including night drives, and walking safaris in Matetsi Private Game Reserve. Sunrise and sunset boat cruises on the Zambezi. Fishing. Birdwatching. Guided Victoria Falls tours. Boma dining. Africology spa treatments."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Exclusive 55,000-hectare reserve",
-     "Private river frontage",
-     "Each suite with private pool and river views",
-     "Award-winning design",
-     "World-class hospitality",
-     "Gourmet dining and curated wine cellar",
-     "Dedicated spa and wellness center"
-    ]
+    "paras": [
+     "136,000-acre (55,000-hectare) Matetsi Private Game Reserve. 15 km of private Zambezi River frontage. Private plunge pool and river views from every suite. Interiors by a Zimbabwean architectural designer on a 'Life on the River' theme. Private wine cellar. Africology spa treatments in the massage sala. Private airstrip and helipad."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Matetsi Victoria Falls is perfect for families, couples, honeymooners, and solo travelers who want a five-star safari, river adventure, and easy access to the world wonder of Victoria Falls."
+    "Matetsi Victoria Falls suits families, couples and groups who want safari, river and the Falls in one stay, on a private reserve 40 km upriver from Victoria Falls."
    ],
    "why": [
     {
      "title": "River. Falls. Safari. All Yours.",
-     "body": "Best for luxury seekers, wildlife lovers, foodies, families, couples, and anyone wanting the best of safari and Zambezi river life, just minutes from Victoria Falls."
+     "body": "Best for wildlife lovers, food lovers, families, couples and groups wanting safari and Zambezi river life about 40 minutes from Victoria Falls town."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Matetsi names July to November, the dry season, as best for large elephant and buffalo herds.",
+    "how_to_get_there": "About an hour by road from Victoria Falls International Airport with complimentary transfers, or by helicopter or charter to the lodge's own helipad and airstrip.",
+    "signature_experiences": "Game drives and walks in a 136,000-acre private reserve, Zambezi boat cruises and fishing, and Victoria Falls tours.",
+    "who_its_for": "Families, couples and groups who want safari, river and Victoria Falls in one stay."
+   },
+   "faqs": [
+    {
+     "q": "Where is Matetsi Victoria Falls?",
+     "a": "Matetsi sits on a private 15 km (9-mile) stretch of the Zambezi River, about 40 km upriver from Victoria Falls, within the 136,000-acre Matetsi Private Game Reserve in Zimbabwe."
+    },
+    {
+     "q": "How do you get to Matetsi Victoria Falls?",
+     "a": "It is about an hour (60 km) by road from Victoria Falls International Airport, and about 40 minutes from Victoria Falls town, with complimentary road transfers within the Victoria Falls area. Livingstone and Kasane are about 1.5 hours away including the border crossing, and helicopters and charter flights can land at the lodge's own helipad and airstrip."
+    },
+    {
+     "q": "When is the best time to visit Matetsi?",
+     "a": "Matetsi says the dry season, July to November, gives the best chance of large elephant and buffalo herds. From November the rains bring calving season, and the green season is good for birding."
+    },
+    {
+     "q": "How many suites does Matetsi have?",
+     "a": "There are 16 River Suites and two River Family Suites, each with a private plunge pool, plus the exclusive-use four-bedroom River House."
+    },
+    {
+     "q": "Is Matetsi good for children?",
+     "a": "Children of all ages are welcome. Family suites pair a main bedroom with a children's room for children up to 16, and walking safaris are for ages 16 and over, or 13 to 15 at the manager's or head guide's discretion."
+    },
+    {
+     "q": "What are the signature experiences at Matetsi?",
+     "a": "Game drives, including night drives, and walking safaris in the private reserve, sunrise and sunset boat cruises and fishing on the Zambezi, and guided visits to Victoria Falls."
+    },
+    {
+     "q": "Can Matetsi be booked for exclusive use?",
+     "a": "Yes. The whole lodge can be booked with private access to the reserve and river frontage, or the western guest area with up to seven suites, as well as the four-bedroom River House."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -31106,9 +31156,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fe7027c98_31d63ea39_698b18f17ac93fb8d55a2764_Singita-Malilangwe-House-Suite.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b64dbb7b0_2c43bf0f3_69ce0fec18d63f756d12fa8c_SingitaMalilangweHouse_LoungeofMainSuite.jpg"
    ],
-   "bestMonths": "May to October",
+   "bestMonths": "April to October",
    "bestMonthsNote": "May to October is dry, cool, and best for wildlife, water activities, and family fun. November to April is lush and excellent for birding.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -31120,60 +31174,91 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "One exclusive use five-bedroom villa with private infinity pool, game viewing deck, fire pit, chef, butler, dedicated staff, and sweeping reserve views."
+     "One exclusive-use five-bedroom house, each bedroom with its own deck, flowing into living areas, an interactive kitchen, a bar-deli and a main deck with a large rim-flow pool overlooking Malilangwe Dam. A dedicated private chef, game vehicle, Field Guide and butler look after your group."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private game drives with your guide and tracker",
-     "Bush walks",
+     "Private game drives with your own Field Guide",
+     "Bush walks (minimum age 16)",
      "Fishing",
      "Birding",
      "Sundowner cruises on the dam",
-     "Rock art tours",
-     "Kids activities",
-     "Spa and fitness"
+     "Rock art site visits",
+     "Tennis",
+     "Children's activities",
+     "Wellness, yoga and fitness"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Fully exclusive-use villa for up to ten guests",
-     "Private infinity pool and game viewing deck",
-     "Dedicated chef, butler, and staff",
-     "Flexible schedules and activities",
-     "Big Five, wild dogs, and rich birdlife",
-     "Perfect for families and friends"
-    ]
+    "paras": [
+     "Fully exclusive-use house for up to ten guests. Rim-flow pool and main deck overlooking Malilangwe Dam. Dedicated private chef, butler, Field Guide and game vehicle. Flexible schedules and activities. Exclusive access to the 115,000-acre Malilangwe Wildlife Reserve, home to a globally significant population of black and white rhino. Designed for families and friends."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Singita Malilangwe House is made for families and friends seeking exclusive use, wildlife adventure, and five star comfort. Enjoy total privacy, spectacular scenery, and a tailor made safari just for you."
+    "Singita Malilangwe House is made for families and friends seeking exclusive use and a wildlife safari tailored to them, with a private chef, Field Guide and butler and exclusive access to the Malilangwe Wildlife Reserve."
    ],
    "why": [
     {
      "title": "Your Private Safari Wonderland",
-     "body": "Singita Malilangwe House offers privacy, wildlife, and personalized adventure in one of Zimbabwe’s most beautiful reserves. Best for families, groups, and anyone who wants the freedom of a private home with world class service."
+     "body": "Singita Malilangwe House offers privacy, wildlife and a safari shaped around you in the 115,000-acre Malilangwe Wildlife Reserve. Best for families, groups and anyone who wants the freedom of a private home with its own chef, butler and Field Guide."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Singita names the dry winter months, April to October, as traditionally best for game viewing.",
+    "how_to_get_there": "Fly to Buffalo Range International Airport, then a 45-minute road transfer, or charter on to Lonestar airstrip 12 minutes from the house.",
+    "signature_experiences": "Private game drives, walking safaris, sundowner cruises on Malilangwe Dam, fishing and rock art excursions in the 115,000-acre Malilangwe Wildlife Reserve.",
+    "who_its_for": "Families and groups of friends of up to ten who want an exclusive-use house with their own chef, butler, Field Guide and vehicle."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Malilangwe House?",
+     "a": "Singita Malilangwe House sits on a hilltop alongside Singita Pamushana Lodge in the 115,000-acre Malilangwe Wildlife Reserve in Zimbabwe's remote southeast, overlooking Malilangwe Dam."
+    },
+    {
+     "q": "How do you get to Singita Malilangwe House?",
+     "a": "All flights land at Buffalo Range International Airport, 45 minutes by road from the lodge, to clear customs; return road transfers from Buffalo Range are included. Federal Air flies Johannesburg to Buffalo Range in about 1 hour 45 minutes, and charters can then continue to Lonestar airstrip, 12 minutes from the lodge."
+    },
+    {
+     "q": "When is the best time to visit Malilangwe House?",
+     "a": "Singita says the dry winter months, April to October, are traditionally best for game viewing because wildlife gathers at the remaining water. Short afternoon thunder showers fall from December to March, when many species give birth."
+    },
+    {
+     "q": "How many bedrooms does Malilangwe House have?",
+     "a": "It is an exclusive-use house with five bedrooms, each with its own deck, for up to ten guests. It comes with a dedicated private chef, game vehicle, Field Guide and butler."
+    },
+    {
+     "q": "Are children welcome at Malilangwe House?",
+     "a": "Yes, children of all ages are welcome, with childminding and a Mini Rangers programme. Children join game drives and walks at the guide's discretion, and bush walks have a minimum age of 16."
+    },
+    {
+     "q": "What can you do at Malilangwe House?",
+     "a": "Private game drives, walking safaris, sundowner boat cruises, fishing and excursions to ancient rock art sites are included, along with tennis. Wellness treatments, yoga, stargazing and community visits are also offered."
+    },
+    {
+     "q": "Who is Malilangwe House best for?",
+     "a": "Singita designed it for families and friends who want an intimate shared space and the freedom to tailor their days, with exclusive use of the house and their own guide and vehicle."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-06"
     ],
     "setting": "malilangwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -31466,9 +31551,14 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1d3e45e0d_1fa2b1412_69ce23806513ae7e56c9b871_IMG_1047.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fdde472ef_73722243f_69ce24621e01ec2708c6f723_SingitaPamushanaLodge_LoungeandFireplace.jpg"
    ],
-   "bestMonths": "May to October",
+   "bestMonths": "April to October",
    "bestMonthsNote": "May to October is dry, cool, and best for wildlife and water activities. November to April is green and beautiful for birding and wildflowers.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "wellness",
+    "conservation",
+    "wine"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -31480,48 +31570,77 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxurious suites and one exclusive villa, all with private plunge pools, panoramic dam or bush views, indoor and outdoor lounges, and vibrant local design."
+     "Eight suites, each with a private plunge pool: four one-bedroom suites, two two-bedroom suites, a two-bedroom family suite and a three-bedroom family suite. Thick walls, thatching and detailed stonework recall Great Zimbabwe, with bold interiors set against the surrounding landscape."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Game drives",
+     "Twice-daily game drives",
      "Guided bush walks",
      "Sundowner cruises on Malilangwe Dam",
-     "Rhino tracking",
      "Birding",
-     "Spa and wellness",
-     "Community visits",
-     "Rock art tours",
+     "Rock art site visits",
      "Fishing",
-     "Star gazing"
+     "Community visits",
+     "Stargazing",
+     "Tennis",
+     "Spa, yoga and fitness"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Hilltop setting with epic views",
-     "Private plunge pools",
-     "Award winning cuisine and wine cellar",
-     "Family and kids’ program",
-     "Community and conservation projects",
-     "Spa, yoga, and wellness treatments"
-    ]
+    "paras": [
+     "Hilltop setting with a cliff-top fire pit and bar-deli overlooking Malilangwe Dam. Private plunge pool in every suite. Wine experience. Mini Rangers programme for children. Community visits and a Conservation Room. Spa, fitness centre, yoga and wellness treatments. Tennis."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Singita Pamushana Lodge is for the traveler who dreams of a vibrant, soulful, and conservation-driven safari. Perfect for families, couples, solo travelers, and groups who want wildlife, wellness, and a true sense of place in Zimbabwe."
+    "Singita Pamushana Lodge suits travellers looking for a soulful, conservation-led safari in Zimbabwe's remote southeast, with exclusive access to the 115,000-acre Malilangwe Wildlife Reserve. Children of all ages are welcome, with family suites and a Mini Rangers programme."
    ],
    "why": [
     {
      "title": "Wild Luxury, Soulful Zimbabwe",
-     "body": "Singita Pamushana Lodge blends bold design, Big Five adventure, and a deep commitment to people and planet. Best for families, couples, photographers, and anyone wanting meaningful safari luxury."
+     "body": "Singita Pamushana Lodge blends bold design inspired by Great Zimbabwe, a reserve home to a globally significant rhino population, and a deep commitment to people and planet. Best for families and anyone wanting a meaningful, conservation-led safari."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Singita names the dry winter months, April to October, as traditionally best for game viewing.",
+    "how_to_get_there": "Fly to Buffalo Range International Airport for a 45-minute road transfer, or charter on to Lonestar airstrip 12 minutes from the lodge.",
+    "signature_experiences": "Twice-daily game drives, walking safaris, sundowner cruises on Malilangwe Dam, fishing and rock art excursions.",
+    "who_its_for": "Families and conservation-minded travellers wanting exclusive access to the 115,000-acre Malilangwe Wildlife Reserve."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Pamushana Lodge?",
+     "a": "Pamushana is in Zimbabwe's remote southeast, within the 115,000-acre Malilangwe Wildlife Reserve, overlooking Malilangwe Dam."
+    },
+    {
+     "q": "How do you get to Singita Pamushana?",
+     "a": "All flights land at Buffalo Range International Airport, 45 minutes from the lodge, to clear customs, and return road transfers from Buffalo Range are included. Federal Air flies from Johannesburg O.R. Tambo in about 1 hour 45 minutes, and charters can continue to Lonestar airstrip, 12 minutes from the lodge."
+    },
+    {
+     "q": "When is the best time to visit Pamushana?",
+     "a": "Singita says the dry winter months, April to October, are traditionally best for game viewing because wildlife concentrates around the remaining water. December to March brings short afternoon thunder showers and newborn animals."
+    },
+    {
+     "q": "How many suites does Singita Pamushana have?",
+     "a": "There are eight suites, each with a private plunge pool: four one-bedroom suites, two two-bedroom suites, a two-bedroom family suite and a three-bedroom family suite."
+    },
+    {
+     "q": "Is Singita Pamushana good for children?",
+     "a": "Yes, children of all ages are welcome, with babysitting, family suites and a Mini Rangers programme. Children join game activities at the guide's discretion, and bush walks have a minimum age of 16."
+    },
+    {
+     "q": "What are the signature experiences at Pamushana?",
+     "a": "Twice-daily game drives, walking safaris, sundowner boat cruises, fishing and guided excursions to ancient rock art sites are included. Guests can also add spa treatments, yoga, stargazing, tennis and community visits."
+    },
+    {
+     "q": "Who is Singita Pamushana best for?",
+     "a": "It suits families and travellers who want a conservation-led safari with exclusive access to the Malilangwe Wildlife Reserve, which supports a globally significant population of black and white rhino."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -36542,17 +36661,22 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cac7731c7_964dd99e9_697a05460a06cc865b4aafad_The-Hide-Request-Itinerary.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/46b8f470d_40b1cb77d_697a084662378e74f8617e7b_Toms-Little-Hide-outdoor.jpg"
    ],
-   "bestMonths": "May–October",
+   "bestMonths": "April to October",
    "bestMonthsNote": "Dry season is best for wildlife at waterholes; warm days, cool nights, and clear skies make for great safaris.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "group_exclusive_use",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -18.7933,
-    "lng": 27.0722
+    "lat": -18.8727,
+    "lng": 27.1597
    },
-   "airport": "Hwange Main Airstrip, Victoria Falls International Airport (VFA)",
-   "airportDirections": "Scheduled flights to Victoria Falls, then a 2.5-hour road transfer; private air charter to Hwange Main Airstrip, 30-minute transfer to camp (arranged by lodge).",
+   "airport": "Victoria Falls International Airport (VFA), Umtshibi Airfield, Hwange Main Airport",
+   "airportDirections": "Fly to Victoria Falls, then 2.5 to 3 hours by road to Hwange Main Camp and just over 1 hour to camp; or a 35-minute flight to Umtshibi Airfield (40 minutes from camp).",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -36573,30 +36697,64 @@
      "Underground Hide Viewing",
      "Night Drives",
      "Birdwatching",
-     "Bush Dining",
+     "Bush Breakfasts",
      "Star Gazing",
-     "Conservation Activities",
+     "The Dove's Nest Sleep-Out",
      "Family Safaris"
     ]
    },
    "features": {
     "paras": [
-     "Spacious tents with outdoor showers, private decks, and bush views. The iconic underground Hide for close-up wildlife photography. Main lodge with pool, firepit, and dining. Private-use suites. Child-friendly and flexible. Solar-powered, eco-conscious camp."
+     "Ten deluxe, family deluxe and honeymoon deluxe tents, each with a private veranda looking onto the waterhole and indoor and/or outdoor baths and showers. The underground Waterhole Hide, reached by a tunnel past the wine cellar, for close-up wildlife viewing. The 'A' frame dining and lounge area with an upstairs viewing platform. The Private Hide with its own dining area and pool, and the exclusive-use Tom's Little Hide for families and small groups."
     ],
     "items": []
    },
    "onlyHere": [
-    "The Hide is perfect for couples, families, solo explorers, and groups who want classic safari comfort with unbeatable game viewing. Experience Hwange’s elephants, big cats, and birds, with some of the best guides in Africa and a camp where you feel right at home."
+    "The Hide suits couples, families and groups who want classic safari comfort on a private concession in Hwange National Park. The waterhole in front of camp draws elephant, giraffe, zebra and kudu, and experienced Zimbabwean guides lead walks and drives."
    ],
    "why": [
     {
      "title": "Where Elephants Roam and Stories Begin",
-     "body": "Stay for legendary game viewing from your tent or the underground Hide, amazing guiding, flexible rooms for all travelers, and a warm, authentic Zimbabwe welcome."
+     "body": "Stay for game viewing from your veranda or the underground Waterhole Hide, experienced Zimbabwean guiding, rooms for couples, families and groups, and a warm, family-run Zimbabwe welcome."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "April to October is The Hide's mid to high season, the dry winter months.",
+    "how_to_get_there": "Fly to Victoria Falls, then road transfer via Hwange Main Camp, or take a 35-minute flight to Umtshibi Airfield, 40 minutes from camp.",
+    "signature_experiences": "The underground Waterhole Hide, walking safaris, night drives and The Dove's Nest treehouse sleep-out.",
+    "who_its_for": "Couples, honeymooners, families and small groups wanting a family-run camp in Hwange."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Hide Safari Camp?",
+     "a": "The Hide is on a private concession on the eastern boundary of Hwange National Park, Zimbabwe, overlooking a natural waterhole."
+    },
+    {
+     "q": "How do you get to The Hide?",
+     "a": "Fly into Victoria Falls Airport, then take a 2.5 to 3 hour road transfer to Hwange Main Camp, where a Hide representative drives you a little over an hour to camp. Alternatively, a 35-minute light-aircraft flight from Victoria Falls lands at Umtshibi Airfield (40 minutes from camp) or Hwange Main Airport (1 hour 30 minutes from camp)."
+    },
+    {
+     "q": "When is the best time to visit The Hide?",
+     "a": "The Hide's mid to high season runs April to October, the dry winter, with warm days, clear skies and cold nights. Rain falls from late November to March or April."
+    },
+    {
+     "q": "How many tents does The Hide have?",
+     "a": "The main camp has ten deluxe, family deluxe and honeymoon deluxe tents, each with a private veranda facing the waterhole. There is also the Private Hide for up to eight and the exclusive-use Tom's Little Hide for up to ten."
+    },
+    {
+     "q": "Are children welcome at The Hide?",
+     "a": "Children of every age are welcome at Tom's Little Hide and The Private Hide, which are booked exclusively. Tom's Little Hide suits six adults and up to four children, with a minimum of four full-paying adults."
+    },
+    {
+     "q": "What is special about The Hide?",
+     "a": "Guests can walk from the deck through a tunnel, past the wine cellar, into an underground hide at the edge of the waterhole. Walking safaris, game drives and night drives are offered, with no limit on activities."
+    },
+    {
+     "q": "Is The Hide good for a honeymoon?",
+     "a": "Yes. It offers honeymoon deluxe tents, private dining under the stars with a complimentary bottle of wine, and The Dove's Nest treehouse sleep-out, complimentary on stays of three nights or more, subject to availability."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -41684,14 +41842,14 @@
   },
   {
    "slug": "wilderness-ruckomechi",
-   "name": "Wilderness \n Ruckomechi",
+   "name": "Wilderness Ruckomechi",
    "ledgerId": "STY-2026-484353",
    "country": "Zimbabwe",
    "countrySlug": "zimbabwe",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "Mana Pools magic by the Zambezi",
+   "tagline": "Ten riverfront suites on the Zambezi, bordering Mana Pools",
    "quote": "Where elephants roam, rivers flow, and Africa feels endless",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2dab377a0_538610a10_686ef265f0176dacf42c40e0_1_StandardRoom_R61_2316_Toned_20_1_.jpg",
    "gallery": [
@@ -41701,58 +41859,90 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5da59081e_6b8109ad4_695f68b3e2ba1b4d037bfb1d_1_StandardRoom_R61_2454_Toned.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/181d33f49_0978e9a39_695f68b3e729bb7c47e7be35_1_FamilyRoom_R61_0713_Toned.jpg"
    ],
-   "bestMonths": "May to October",
-   "bestMonthsNote": "Dry season offers the best wildlife concentrations along the Zambezi and best conditions for walking and canoe safaris. November and April are green, quieter, and beautiful for birding.",
-   "bestFor": [],
+   "bestMonths": "June to November",
+   "bestMonthsNote": "Wilderness names the June to November dry season as the best time for Mana Pools. The camp is open 1 April to 19 November and closed 20 November to 31 March.",
+   "bestFor": [
+    "family",
+    "couples",
+    "adventure",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -15.849806,
     "lng": 29.123889
    },
-   "airport": "Mana Pools Airstrip MNP, Harare Airport HRE",
-   "airportDirections": "Fly to Harare HRE, connect by light aircraft to Mana Pools Airstrip MNP, then 40 minute drive to camp",
+   "airport": "Mana Pools (Wilderness Air light aircraft)",
+   "airportDirections": "Wilderness Air light-aircraft flights and ground transfers to camp are arranged when you book.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Ten spacious en-suite tents, including two family tents, each with indoor and outdoor showers, private decks, and sweeping river or mountain views."
+     "Ten spacious en-suite suites, including two family units, set in a forest of albida trees and all facing the Zambezi River, with the Rift Valley mountains across the water."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Day and night game drives",
-     "Canoe and boat safaris",
-     "Catch-and-release fishing",
-     "Guided walks",
-     "Birding and photography safaris",
-     "Starbed sleep-outs"
+     "Game drives on the floodplain",
+     "Canoeing and boat safaris on the Zambezi",
+     "Catch-and-release tigerfish fishing",
+     "Guided walking safaris",
+     "Birding",
+     "Stargazing",
+     "Star Bed sleep-outs",
+     "Bush breakfasts"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Riverfront camp in prime wildlife area",
-     "Infinity pool and star bed platform",
-     "Open-air lounge and dining",
-     "Solar-powered eco camp",
-     "Family-friendly with exclusive-use options",
-     "Award-winning guides"
-    ]
+    "paras": [
+     "Riverfront camp on a private conservation area bordering Mana Pools National Park. Swimming pool facing the Zambezi. Elevated Star Bed platform. 'Bath with a view' for a soak in the wild. Two family suites. Elephants often visit camp to feed on the albida trees. Open 1 April to 19 November; closed 20 November to 31 March."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Ruckomechi is for the classic safari dreamer, elephants in camp, hippos in the river, sunsets over the Zambezi. Perfect for families, couples, photographers, and adventurers seeking big game, river adventure, and world-class guiding in a remote, wild paradise."
+    "Ruckomechi is for the classic safari dreamer: elephants in camp, hippos in the river, sunsets over the Zambezi. It suits families, couples and active travellers looking for big game and river adventure on a private conservation area bordering Mana Pools."
    ],
    "why": [
     {
-     "title": null,
-     "body": "Wilderness Ruckomechi delivers iconic Mana Pools: big herds, wild landscapes, and the Zambezi at your doorstep. Ideal for active travelers, families, and photographers wanting unforgettable game viewing and adventure."
+     "title": "The Zambezi at Your Door",
+     "body": "Wilderness Ruckomechi delivers classic Mana Pools: big herds, wild landscapes and the Zambezi right in front of camp. Ideal for families, couples and active travellers who want game viewing on land and water."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 April to 19 November, with Wilderness naming the June to November dry season as the best time for Mana Pools.",
+    "how_to_get_there": "Travel is arranged by Wilderness Air light aircraft and ground transfers to the camp's private area bordering Mana Pools.",
+    "signature_experiences": "Canoeing and boat safaris on the Zambezi, walking safaris, game drives, tigerfish fishing and Star Bed sleep-outs.",
+    "who_its_for": "Families, couples and active travellers who want big game and river adventure on the Zambezi."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Ruckomechi?",
+     "a": "Ruckomechi is on the banks of the Zambezi River in northern Zimbabwe, on a private conservation area bordering the western boundary of Mana Pools National Park, a UNESCO World Heritage Site."
+    },
+    {
+     "q": "How do you get to Ruckomechi?",
+     "a": "Wilderness says domestic travel to its Mana Pools camps is handled by Wilderness Air and ground transfers, so routing is arranged when you book."
+    },
+    {
+     "q": "When is Ruckomechi open, and when is the best time to go?",
+     "a": "The camp is open from 1 April to 19 November and closes seasonally from 20 November to 31 March. Wilderness names the dry season, June to November, as the best time to visit Mana Pools."
+    },
+    {
+     "q": "How many rooms does Ruckomechi have?",
+     "a": "There are ten spacious en-suite suites, not tents, two of them designed for families, all facing the Zambezi River."
+    },
+    {
+     "q": "Is Ruckomechi good for families?",
+     "a": "Yes. Two of the ten suites are family units, and Wilderness describes a Ruckomechi safari as best shared with loved ones."
+    },
+    {
+     "q": "What are the signature experiences at Ruckomechi?",
+     "a": "Game drives on the floodplain, canoeing and boat safaris on the Zambezi, catch-and-release tigerfish fishing, guided walking safaris and a night on the elevated Star Bed platform."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

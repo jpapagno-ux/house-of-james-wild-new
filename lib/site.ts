@@ -235,6 +235,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/asia/indonesia", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/raja-ampat", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/komodo", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/south-america/chile/rapa-nui", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", priority: 0.8, changeFrequency: "monthly" },

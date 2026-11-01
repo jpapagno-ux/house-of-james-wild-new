@@ -16,7 +16,24 @@ const ALI = `${FIX}wildco/voyages/vessels/aliikai/`;
 const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 
 export type Guide = {
-  slug: string; region: string; country: string; parent?: string; name: string; path: string;
+  slug: string; region: string; country: string;
+  /** The guide this one sits inside (Raja Ampat → indonesia), or a library country slug (Rapa Nui → chile). */
+  parent?: string;
+  name: string; path: string;
+  /** Page chrome: "sea" is the voyage navy the Indonesia guides use; "stays" is Volume I's green. Defaults to "sea". */
+  theme?: "sea" | "stays";
+  /** A Ledger chart inset (lib/charts/regions.json via IslandZoom) drawn under the facts: island groups too small for the country chart. */
+  zoom?: "galapagos" | "rapa-nui";
+  /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
+  stays?: string[];
+  /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
+  slidesFromStay?: { slug: string; alt: string; credit: string };
+  /** "Continue through …": the next places in the same country, as plain links. */
+  onward?: { name: string; href: string; line: string }[];
+  /** Eyebrow over that section (default: "Continue through {parent}"). */
+  onwardEyebrow?: string;
+  /** The eyebrow over the founder's testimony, when he has not been (default: "Vetted in person · the founder's testimony"). */
+  proofEyebrow?: string;
   seo: { title: string; description: string; keywords: string[] };
   eyebrow: string; h1: string; tagline: string;
   slides: TripImg[];
@@ -266,7 +283,82 @@ export const GUIDES: Record<string, Guide> = {
     geo: { lat: -8.55, lng: 119.49 },
     sources: SOURCES_KOMODO,
   },
+
+  // Rapa Nui: the first destination-first place under a library country (Chile → Rapa Nui →
+  // Nayara Hangaroa). Facts from UNESCO and Chile's own tourism board; the stay's photographs are
+  // the property's (library export). IMAGE FOLLOW-UP: no Rapa Nui landscape photography in the
+  // Cloudinary library yet; until it lands the hero is the property's own frame, credited.
+  "rapa-nui": {
+    slug: "rapa-nui", region: "south-america", country: "chile", parent: "chile", name: "Rapa Nui", path: "/destinations/south-america/chile/rapa-nui",
+    theme: "stays", zoom: "rapa-nui", stays: ["nayara-hangaroa"],
+    proofEyebrow: "On the founder's list · not yet visited",
+    seo: {
+      title: "Rapa Nui (Easter Island) Guide: When to Go, Getting There & Where to Stay",
+      description: "Rapa Nui, Easter Island, Chile: 3,700 km out in the Pacific, best from October to March, five and a half hours from Santiago. Living Rapanui culture, the moai quarries, volcanic walks, the ocean and the stars, with the stay the house has selected.",
+      keywords: ["Rapa Nui travel guide", "Easter Island guide", "best time to visit Easter Island", "Easter Island from Santiago", "Easter Island luxury hotel", "Rapa Nui National Park", "Easter Island, Chile"],
+    },
+    eyebrow: "Destinations · South America · Chile",
+    h1: "Rapa Nui",
+    tagline: "Easter Island, Chile: a Polynesian island 3,700 km out in the Pacific, and a culture that is very much alive",
+    slides: [],
+    slidesFromStay: { slug: "nayara-hangaroa", alt: "Nayara Hangaroa on the shore at Hanga Roa, Rapa Nui", credit: "Photograph courtesy of Nayara Hangaroa" },
+    answer: "Rapa Nui, Easter Island, is a Chilean island about 3,700 km west of the mainland, reached by one direct flight of around five and a half hours from Santiago to Mataveri (IPC). Its national park, a UNESCO World Heritage Site since 1995, holds some 900 moai and more than 300 ceremonial ahu, the quarry at Rano Raraku and the ceremonial village of Orongo on the rim of Rano Kau. The island is warm all year; October to March is the best time, with January to March the driest. Four or five nights is right. The main sites are visited with a local guide, and the island's living Rapanui culture, its volcanic walks, its ocean and its night sky are as much the reason to come as the statues.",
+    facts: [["Where", "The South Pacific, about 3,700 km west of mainland Chile"], ["Protected", "Rapa Nui National Park · UNESCO World Heritage Site since 1995"], ["Best time", "October to March; January to March is the dry season"], ["Fly into", "Mataveri (IPC), about 5½ hours direct from Santiago"], ["How long", "Four or five nights"], ["Guides", "The park's main sites are visited with a Rapanui guide"], ["Park ticket", "A national park ticket is required; we confirm the current amount when you book"], ["In the Ledger", "Filed from the house's Chile research · not yet founder-visited"]],
+    proof: "James hasn't stood on Rapa Nui yet. It is in the Ledger because the house's Chile research put it there, and it sits on his own list; the page says so plainly.",
+    months: [
+      { area: "Rapa Nui", note: "Warm all year · driest January to March", months: M("BBBggwwwgBBB") },
+    ],
+    airports: [["Mataveri International (IPC)", "The island's only airport, ten minutes from Hanga Roa; direct flights from Santiago (SCL), about 5½ hours"], ["Santiago (SCL)", "Chile's international gateway and the connection for Atacama and Patagonia"]],
+    transfers: [["Santiago → Mataveri", "About 5½ hours by air, the only way in"], ["Mataveri → Hanga Roa", "About 10 minutes by road; the stays collect you"]],
+    highlights: [
+      { title: "A living culture", line: "People first", body: "Rapanui is spoken, danced and sung here. February's Tapati festival is the island's largest cultural event; the rest of the year it is the guides, the families and the language." },
+      { title: "Rano Raraku", line: "The quarry", body: "The volcanic slope where most of the island's moai were carved, with hundreds still standing or half-cut in the tuff. Walk it slowly, with a guide." },
+      { title: "Ahu Tongariki", line: "Fifteen moai", body: "The largest ceremonial platform on the island, its fifteen statues facing inland with the Pacific behind them. Best at first light." },
+      { title: "Orongo and Rano Kau", line: "The birdman's village", body: "Fifty-four stone houses on the crater rim, carved with petroglyphs of the birdman cult that replaced the ancestor cult. The crater lake lies below, the sea cliffs beyond." },
+      { title: "Volcanic ground", line: "Walking", body: "Terevaka, the island's highest point, is a half-day walk with the whole island and the ocean around it. Lava caves, grassland and three volcanoes shape every route." },
+      { title: "The Pacific", line: "Ocean", body: "Anakena's white sand and warm water, clear enough for diving, and the swell on the west coast. Sunsets at Tahai are an island habit." },
+      { title: "Night sky", line: "Stargazing", body: "With no city within thousands of kilometres, the southern sky is the darkest most people will ever see. Ask your stay to turn the lights down." },
+      { title: "Isolation", line: "The point of it", body: "One of the most remote inhabited islands on Earth. Days here run on the island's clock, not the mainland's." },
+    ],
+    suits: [
+      { who: "Couples who want distance", line: "A remote island with one small town, good food and the Pacific on three sides.", href: "/stays/nayara-hangaroa", label: "Nayara Hangaroa" },
+      { who: "Culture-first travellers", line: "The archaeology is the surface; the Rapanui guides, language and festival are the depth." },
+      { who: "Walkers", line: "Terevaka, the crater rims and the north coast, on foot with a guide." },
+      { who: "Chile in two chapters", line: "Pair it with Atacama or Patagonia; Santiago is the hinge between them.", href: "/destinations/south-america/chile", label: "Chile" },
+    ],
+    howTo: {
+      title: "How to See Rapa Nui",
+      intro: "One flight in, one small town, one island to walk. The question is how many nights and which guide.",
+      options: [
+        { name: "Four or five nights with a Rapanui guide", body: "Enough for the quarry, Tongariki at dawn, Orongo, a walk up Terevaka, an afternoon at Anakena and an evening under the stars, without rushing any of it.", href: "/stays/nayara-hangaroa", label: "The stay the house selected" },
+        { name: "Add it to Atacama or Patagonia", body: "Fly back through Santiago and continue north to the desert or south to the fjords. Two climates, one country.", href: "/destinations/south-america/chile", label: "Continue through Chile" },
+        { name: "Plan it with James", body: "Tell the house what you want from the island and it will set the days, the guide and the stay.", href: "/plan?place=Rapa%20Nui", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Continue through Chile",
+    onward: [
+      { name: "Atacama", href: "/destinations/south-america/chile", line: "The desert and the clearest skies in the south" },
+      { name: "Patagonia", href: "/destinations/south-america/chile", line: "Torres del Paine and the fjords, October to April" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "When is the best time to visit Rapa Nui (Easter Island)?", a: "October to March, when the island is warmest and the sea calmest; January to March is the dry season and February brings the Tapati festival. The island is subtropical and warm all year, so the southern winter, June to August, is quieter and still worth it." },
+      { q: "How do you get to Easter Island?", a: "By air from Santiago, Chile, to Mataveri International Airport (IPC): one direct flight of about five and a half hours, the only way in. The stays collect you at the airport, ten minutes from Hanga Roa." },
+      { q: "How many days do you need on Easter Island?", a: "Four or five nights. That covers the quarry at Rano Raraku, Ahu Tongariki at dawn, Orongo and Rano Kau, a walk up Terevaka, an afternoon at Anakena and an evening of stargazing, without rushing." },
+      { q: "Do you need a guide on Rapa Nui?", a: "Yes, for the main sites of the national park, which are visited with a local guide. That is also the best thing about the island: the guides are Rapanui, and the culture is theirs." },
+      { q: "Is Easter Island only about the moai?", a: "No. The moai are the reason most people come, but the island is also a living Polynesian culture, three volcanoes to walk, a warm Pacific coast, and one of the darkest night skies on Earth." },
+      { q: "Can you combine Easter Island with Atacama or Patagonia?", a: "Yes. Every route runs through Santiago, so Rapa Nui pairs naturally with the Atacama desert in the north or Patagonia in the south. Allow two weeks for two of the three." },
+    ],
+    geo: { lat: -27.12, lng: -109.37 },
+    sources: [
+      { title: "UNESCO World Heritage Centre: Rapa Nui National Park", url: "https://whc.unesco.org/en/list/715" },
+      { title: "Chile Travel (Sernatur): Rapa Nui", url: "https://chile.travel/en/?p=78031" },
+      { title: "Nayara Hangaroa in the Ledger", url: "/stays/nayara-hangaroa" },
+    ],
+  },
 };
 
 export const guideFor = (slug: string) => GUIDES[slug];
 export const placeGuides = (country: string) => Object.values(GUIDES).filter((g) => g.parent === country);
+/** The place guide a stay has been selected for (Nayara Hangaroa → Rapa Nui), if any. */
+export const placeGuideForStay = (slug: string) => Object.values(GUIDES).find((g) => g.parent && g.stays?.includes(slug));

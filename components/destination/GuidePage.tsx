@@ -15,6 +15,12 @@ import FounderProof from "@/components/record/FounderProof";
 import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { GUIDES, RAJA_VS_KOMODO, type Guide } from "@/lib/content/guides";
 import { journeysFor } from "@/lib/content/preview/journeys";
+import { countryBySlug } from "@/lib/content/countries";
+import { regionBySlug } from "@/lib/content/regions";
+import { stayBySlug } from "@/lib/content/stays";
+import { guideSlides } from "@/lib/content/guide-slides";
+import { RecordCard } from "@/components/hub/Hub";
+import IslandZoom from "@/components/destination/IslandZoom";
 import { absoluteUrl } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
@@ -23,12 +29,21 @@ import { graph } from "@/lib/schema";
 // the founder's testimony, what to see, who it suits, how to see it (the
 // voyages), Raja Ampat vs Komodo, FAQs with schema, and the sources.
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+// The Raja Ampat vs Komodo table belongs to the three Indonesia guides only.
+const SEA_PAIR = new Set(["indonesia", "raja-ampat", "komodo"]);
 
 export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart of the guide's stays and voyage ports (country guides). */ map?: React.ReactNode }) {
-  const parent = g.parent ? GUIDES[g.parent] : undefined;
-  const voyages = journeysFor("indonesia").filter((j) => g.voyageWaters.some((w) => j.eyebrow.includes(w)));
-  const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: "Asia", path: "/destinations/asia" }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
-  const nav: [string, string][] = [["In short", "overview"], ["When to go", "when"], ["Highlights", "highlights"], ...(g.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["Who it suits", "suits"], ["How to see it", "how"], ...(voyages.length ? [["Voyages", "journeys"] as [string, string]] : []), ["Raja Ampat vs Komodo", "compare"], ["FAQ", "faq-heading"]];
+  // A parent is another guide (Raja Ampat → Indonesia) or a library country (Rapa Nui → Chile).
+  const parentGuide = g.parent ? GUIDES[g.parent] : undefined;
+  const parentCountry = g.parent && !parentGuide ? countryBySlug(g.region, g.parent) : undefined;
+  const parent = parentGuide ? { name: parentGuide.name, path: parentGuide.path, id: `${parentGuide.path}#place` } : parentCountry ? { name: parentCountry.name, path: `/destinations/${parentCountry.region}/${parentCountry.slug}`, id: `/destinations/${parentCountry.region}/${parentCountry.slug}#destination` } : undefined;
+  const region = regionBySlug(g.region);
+  const voyages = journeysFor(g.country).filter((j) => g.voyageWaters.some((w) => j.eyebrow.includes(w)));
+  const compare = SEA_PAIR.has(g.slug);
+  const stays = (g.stays ?? []).map((slug) => stayBySlug(slug)).filter((s): s is NonNullable<typeof s> => !!s && !!s.hero);
+  const slides = guideSlides(g);
+  const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: region?.name ?? g.region, path: `/destinations/${g.region}` }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
+  const nav: [string, string][] = [["In short", "overview"], ["When to go", "when"], ["Highlights", "highlights"], ...(g.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["Who it suits", "suits"], ...(stays.length ? [["Where to stay", "stays"] as [string, string]] : []), ["How to see it", "how"], ...(voyages.length ? [["Voyages", "journeys"] as [string, string]] : []), ...(compare ? [["Raja Ampat vs Komodo", "compare"] as [string, string]] : []), ["FAQ", "faq-heading"]];
 
   const schema = graph(
     {
@@ -38,25 +53,27 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
       description: g.answer,
       url: absoluteUrl(g.path),
       geo: { "@type": "GeoCoordinates", latitude: g.geo.lat, longitude: g.geo.lng },
-      containedInPlace: parent ? { "@id": absoluteUrl(`${parent.path}#place`), name: parent.name } : { "@type": "Country", name: "Indonesia" },
+      containedInPlace: parent ? { "@id": absoluteUrl(parent.id), name: parent.name } : { "@type": "Country", name: g.name },
+      ...(stays.length ? { containsPlace: stays.map((s) => ({ "@id": absoluteUrl(`/stays/${s.slug}#stay`), name: s.name })) } : {}),
       touristType: g.suits.map((s) => s.who),
       includesAttraction: g.highlights.map((h) => ({ "@type": "TouristAttraction", name: h.title, description: h.body })),
-      image: g.slides.map((s) => s.url),
+      image: slides.map((s) => s.url),
     },
   );
 
   return (
-    <div className="theme-sea theme-sea-page">
+    <div className={g.theme === "stays" ? "theme-vol-stays theme-vol-stays-page" : "theme-sea theme-sea-page"}>
       <SiteHeader overlay />
       <main id="main">
-        <RecordHero image={g.slides[0]} slides={g.slides} eyebrow={g.eyebrow} title={g.h1} tagline={g.tagline} />
+        <RecordHero image={slides[0]} slides={slides} eyebrow={g.eyebrow} title={g.h1} tagline={g.tagline} />
         <RecordNav items={nav} cta="Plan it with James" ctaHref={`/plan?place=${encodeURIComponent(g.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <Overview answer={g.answer} facts={g.facts} />
-          <FounderProof proof={g.proof} className="mt-10 max-w-3xl" />
+          <FounderProof proof={g.proof} eyebrow={g.proofEyebrow} className="mt-10 max-w-3xl" />
 
           {map}
+          {g.zoom && <IslandZoom zoom={g.zoom} />}
 
           <WhenToGo place={g.name} rows={g.months} airports={g.airports} transfers={g.transfers} />
 
@@ -126,6 +143,17 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
             </ul>
           </section>
 
+          {stays.length > 0 && (
+            <section id="stays" className={SEC}>
+              <SectionHead eyebrow="Where to stay" title={`Selected for ${g.name}`} icon="sun" intro={`The ${stays.length === 1 ? "stay" : "stays"} the house has selected here. The place comes first; the stays earn their place in it.`} />
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {stays.map((s) => (
+                  <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline ?? ""} image={{ url: s.hero as string, alt: s.name }} href={`/stays/${s.slug}`} eyebrow={s.bestMonths ? `Best ${s.bestMonths}` : undefined} volume="stays" /></li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           <section id="how" className={SEC}>
             <SectionHead eyebrow="How to see it" title={g.howTo.title} icon="wave" intro={g.howTo.intro} />
             <ol className="mt-8 grid gap-4 md:grid-cols-3">
@@ -142,6 +170,7 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
 
           <Journeys country={g.name} journeys={voyages} />
 
+          {compare && (
           <section id="compare" className={SEC}>
             <SectionHead eyebrow="Choosing" title="Raja Ampat or Komodo?" icon="wave" intro="The two great sea journeys of eastern Indonesia, side by side." />
             <div className="mt-8 overflow-x-auto">
@@ -151,6 +180,18 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
               </table>
             </div>
           </section>
+          )}
+
+          {g.onward && parent && (
+            <section id="onward" className={SEC}>
+              <SectionHead eyebrow={g.onwardEyebrow ?? `Continue through ${parent.name}`} title="Where Next" icon="wave" />
+              <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {g.onward.map((o) => (
+                  <li key={o.name}><Link href={o.href} className="group block border ledger-border p-5 h-full hover:border-crimson/60 transition-colors"><h3 className="ledger-display text-[20px]">{o.name}</h3><p className="mt-2 text-[15px] leading-relaxed ledger-muted">{o.line}</p><span className="mt-3 inline-flex items-center gap-1.5 text-[14px]">Continue <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" strokeWidth={1.5} aria-hidden="true" /></span></Link></li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <FaqBlock faqs={g.faqs} title={`Questions About ${g.name}`} />
 

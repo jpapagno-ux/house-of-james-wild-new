@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import GuidePage from "@/components/destination/GuidePage";
 import { GUIDES } from "@/lib/content/guides";
+import { guideSlides } from "@/lib/content/guide-slides";
 import { buildMetadata } from "@/lib/seo";
 
 // /destinations/[region]/[country]/[place]: a place guide inside a country
@@ -15,7 +16,8 @@ const find = (p: { region: string; country: string; place: string }) => { const 
 export async function generateMetadata({ params }: P) {
   const g = find(await params);
   if (!g) return {};
-  return { ...buildMetadata({ title: g.seo.title, description: g.seo.description, path: g.path, image: { url: g.slides[0].url, alt: g.slides[0].alt } }), keywords: g.seo.keywords };
+  const [slide] = guideSlides(g);
+  return { ...buildMetadata({ title: g.seo.title, description: g.seo.description, path: g.path, image: { url: slide.url, alt: slide.alt } }), keywords: g.seo.keywords };
 }
 
 export default async function PlacePage({ params }: P) {

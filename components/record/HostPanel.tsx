@@ -44,6 +44,10 @@ export type Host = {
   seats?: number;
   /** True while the host details are a sample awaiting the partner's sign-off. */
   sample?: boolean;
+  /** Backend only (never printed): whether the host's photograph is approved, still to be chased, or not needed. */
+  imageStatus?: "approved" | "follow_up" | "not_required";
+  /** Backend only: where the host facts came from (the property's own site or media kit, or a named meeting). */
+  source?: string;
 };
 
 // Placeholder from the Base44 sample until the live house link is set.

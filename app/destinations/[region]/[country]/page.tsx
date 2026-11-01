@@ -205,6 +205,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </div>
             <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
+            {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
 
           {/* Choose your way: one tab per volume, inked by volume; the tab filters the map above */}

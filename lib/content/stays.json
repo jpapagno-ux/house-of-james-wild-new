@@ -1469,7 +1469,7 @@
     "stays"
    ],
    "arrivalHubIds": [],
-   "placeSlug": null
+   "placeSlug": "brda"
   },
   {
    "slug": "blue-safari-seychelles",
@@ -5341,7 +5341,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 55.19,
+    "lng": -7.975
+   },
    "airport": "Donegal Airport (CFN); City of Derry Airport (LDY)",
    "airportDirections": "Breac.House states approximately 50 minutes by road from Donegal Airport and 1 hour 25 minutes from City of Derry Airport. Confirm current transfer time before travel.",
    "founderNote": null,
@@ -14207,7 +14210,7 @@
     "stays"
    ],
    "arrivalHubIds": [],
-   "placeSlug": null
+   "placeSlug": "logar-valley"
   },
   {
    "slug": "house-in-the-wild",
@@ -26662,7 +26665,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 40.4196,
+    "lng": -3.6993
+   },
    "airport": "Adolfo Suárez Madrid‑Barajas (MAD)",
    "airportDirections": "Drive or taxi: ~25 minutes (approx 8–10 km) depending on traffic.\nPublic transport: take the metro (Line 8) + transfer(s) or use airport express bus to central stops, then walk or transfer to Gran Vía station , hotel is ~5 minutes walk from Gran Vía metro.\nBest option: use MAD → airport metro (Line 8) → transfer to central lines, or airport express bus → central hub → walking.",
    "founderNote": null,
@@ -47216,7 +47222,7 @@
     "stays"
    ],
    "arrivalHubIds": [],
-   "placeSlug": null
+   "placeSlug": "ljubljana"
   },
   {
    "slug": "six-senses-krabey-island",

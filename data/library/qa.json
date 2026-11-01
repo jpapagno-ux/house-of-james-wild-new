@@ -722,9 +722,7 @@
    "slug": "breac-house",
    "name": "Breac.House",
    "country": "Ireland",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2857,9 +2855,7 @@
    "slug": "nomade-temple-madrid",
    "name": "Nomade Temple Madrid Coming 2025",
    "country": "Spain",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {

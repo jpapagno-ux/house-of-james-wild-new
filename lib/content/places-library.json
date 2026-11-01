@@ -15,6 +15,39 @@
    ]
   },
   {
+   "slug": "brda",
+   "name": "Brda",
+   "ledgerId": "DST-2026-000092",
+   "parentSlug": "slovenia",
+   "regionSlug": "europe",
+   "subtitle": "Goriška Brda, Slovenia",
+   "stays": [
+    "alma-vista"
+   ]
+  },
+  {
+   "slug": "ljubljana",
+   "name": "Ljubljana",
+   "ledgerId": "DST-2026-000094",
+   "parentSlug": "slovenia",
+   "regionSlug": "europe",
+   "subtitle": "Slovenia's capital",
+   "stays": [
+    "zlata-ladjica"
+   ]
+  },
+  {
+   "slug": "logar-valley",
+   "name": "Logar Valley",
+   "ledgerId": "DST-2026-000093",
+   "parentSlug": "slovenia",
+   "regionSlug": "europe",
+   "subtitle": "Logarska dolina, Slovenia",
+   "stays": [
+    "hotel-plesnik"
+   ]
+  },
+  {
    "slug": "patagonia",
    "name": "Patagonia",
    "ledgerId": "DST-2026-000089",

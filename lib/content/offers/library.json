@@ -418,5 +418,265 @@
   "checked": "2026-11-01",
   "conditions": "Complimentary Federal Airlines flights between Marataba and Lion Sands via Johannesburg, same day in either direction, with three or more nights at Marataba and three or more at any Lion Sands lodge. Fuel levies of about US$20 to US$25 per sector are payable. Flights are weather dependent and routing may vary. Not combinable with other offers.",
   "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000052",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "lion-sands",
+  "name": "StayMORE (Lion Sands)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay 3",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Four consecutive nights required. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000053",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "lion-sands",
+  "name": "DiscoverMORE (Lion Sands)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off when you combine two MORE lodges",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation at each property when at least two MORE Collection properties are booked on one trip. Up to 5 rooms or 10 guests. Subject to availability. Not combinable with other offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000054",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "lion-sands",
+  "name": "CelebrateMORE (Lion Sands)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "25% off for honeymoons and milestone celebrations",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "25% off accommodation for the guest celebrating (honeymoon, babymoon, milestone anniversary or birthday) and their room-sharing partner. Three consecutive nights minimum. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000055",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "lion-sands",
+  "name": "Friends of MORE (Lion Sands)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off for returning MORE guests and their companions",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation for guests who have stayed with MORE Collection before, and the friends and family travelling with them. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with StayMORE and CelebrateMORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000056",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "lion-sands",
+  "name": "Best of Both Worlds: Lion Sands and Marataba (Lion Sands)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Free connecting flights with 3 nights at Lion Sands and 3 at Marataba",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-05-31",
+   "text": "Until 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Complimentary Federal Airlines flights between Lion Sands and Marataba via Johannesburg, same day in either direction, with three or more nights at any Lion Sands lodge and three or more at Marataba. Fuel levies of about US$20 to US$25 per sector are payable. Flights are weather dependent and routing may vary. Not combinable with other offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000057",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "monwana-thornybush",
+  "name": "StayMORE (Monwana)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay 3",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Four consecutive nights required. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000058",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "monwana-thornybush",
+  "name": "DiscoverMORE (Monwana)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off when you combine two MORE lodges",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation at each property when at least two MORE Collection properties are booked on one trip. Up to 5 rooms or 10 guests. Subject to availability. Not combinable with other offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000059",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "monwana-thornybush",
+  "name": "CelebrateMORE (Monwana)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "25% off for honeymoons and milestone celebrations",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "25% off accommodation for the guest celebrating (honeymoon, babymoon, milestone anniversary or birthday) and their room-sharing partner. Three consecutive nights minimum. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000060",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "monwana-thornybush",
+  "name": "Friends of MORE (Monwana)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off for returning MORE guests and their companions",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation for guests who have stayed with MORE Collection before, and the friends and family travelling with them. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with StayMORE and CelebrateMORE.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000061",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "cape-cadogan-boutique-hotel",
+  "name": "StayMORE (Cape Cadogan)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay 3",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Four consecutive nights required. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000062",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "cape-cadogan-boutique-hotel",
+  "name": "DiscoverMORE (Cape Cadogan)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off when you combine two MORE properties",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation at each property when at least two MORE Collection properties are booked on one trip, such as Cape Cadogan with a MORE safari lodge. Up to 5 rooms or 10 guests. Subject to availability. Not combinable with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000063",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "cape-cadogan-boutique-hotel",
+  "name": "CelebrateMORE (Cape Cadogan)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "25% off for honeymoons and milestone celebrations",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "25% off accommodation for the guest celebrating (honeymoon, babymoon, milestone anniversary or birthday) and their room-sharing partner. Three consecutive nights minimum. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with Friends of MORE.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000064",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "cape-cadogan-boutique-hotel",
+  "name": "Friends of MORE (Cape Cadogan)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "10% off for returning MORE guests and their companions",
+  "travel": {
+   "from": "2026-02-04",
+   "to": "2028-05-31",
+   "text": "4 February 2026 to 31 May 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10% off accommodation for guests who have stayed with MORE Collection before, and the friends and family travelling with them. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with StayMORE and CelebrateMORE.",
+  "volume": "stays"
  }
 ]

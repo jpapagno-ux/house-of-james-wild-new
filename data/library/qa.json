@@ -307,7 +307,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8c5",
    "slug": "arenas-del-mar-resort",
-   "name": "Arenas Del Mar Resort Costa Rica",
+   "name": "Arenas del Mar",
    "country": "Costa Rica",
    "missing": [],
    "released": true
@@ -700,13 +700,9 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8db",
    "slug": "boluntiku-hotel",
-   "name": "Boluntiku Hotel",
-   "country": "Costa Rica",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
+   "name": "Bolontiku",
+   "country": "Guatemala",
+   "missing": [],
    "released": true
   },
   {
@@ -2859,11 +2855,9 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff96f",
    "slug": "nomade-holbox",
-   "name": "WildEarth Nômade Holbox",
+   "name": "Nômade Temple Holbox",
    "country": "Mexico",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2885,11 +2879,9 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff972",
    "slug": "nomade-tulum",
-   "name": "Nomade Tulum",
+   "name": "Nômade Temple Tulum",
    "country": "Mexico",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3006,7 +2998,9 @@
    "slug": "our-habitas-tulum",
    "name": "Our Habitas Tulum",
    "country": "Mexico",
-   "missing": [],
+   "missing": [
+    "coming_soon"
+   ],
    "released": true
   },
   {
@@ -3681,7 +3675,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9b4",
    "slug": "siwa-tulum",
-   "name": "Siwa Tulum",
+   "name": "SIWA Tulum",
    "country": "Mexico",
    "missing": [],
    "released": true

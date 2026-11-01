@@ -1513,6 +1513,139 @@
    "atlasName": "France"
   },
   {
+   "slug": "guatemala",
+   "name": "Guatemala",
+   "region": "central-america",
+   "regionName": "Central America",
+   "ledgerId": "DST-2026-000096",
+   "subtitle": "Maya temples, a colonial city and a volcanic lake",
+   "leading": "Tikal in the forest, Antigua under its volcanoes, Lake Atitlán in its caldera. Guatemala is less than 500 km from north to south, but the mountain roads are slow, so the house splits it in two: the Petén by air, the highlands by road.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/destinations/guatemala/hero",
+    "alt": "Guatemala, Central America"
+   },
+   "story": [
+    {
+     "eyebrow": "Maya temples, a colonial city and a volcanic lake",
+     "title": "Two Trips, One Short Flight Apart",
+     "blocks": [
+      {
+       "p": "Guatemala looks small on the map. It isn't, once you're on the road. The house treats it as two trips joined by a one-hour flight: the lowland Petén, with Tikal and Lake Petén Itzá, and the highlands, with Antigua and Lake Atitlán. November to April is the dry season. May to October brings the rain, greener forest and fewer people."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g10",
+      "alt": "Guatemala: Two Trips, One Short Flight Apart"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Tikal, Flores, Antigua and Atitlán",
+     "blocks": [
+      {
+       "h": "Tikal and the Petén",
+       "p": "Tikal National Park covers 57,600 hectares of forest, wetland and savannah in the Petén, and UNESCO lists it for both its Maya city and its wildlife: five wild cats, howler and spider monkeys and more than 300 bird species. The city was lived in from about 600 BC until around 900 AD. Go at first light, before the heat."
+      },
+      {
+       "h": "Lake Petén Itzá and Flores",
+       "p": "Flores sits on a small island in Lake Petén Itzá, joined to Santa Elena by a bridge and a few minutes from Mundo Maya International Airport. The lake covers about 99 km² and is more than 150 metres deep in places, and you can swim in it. Tikal is about 65 km away by road. Yaxhá and Uaxactún are day trips from here too."
+      },
+      {
+       "h": "Antigua",
+       "p": "Antigua was the capital of the Captaincy-General of Guatemala until the Santa Marta earthquakes of 1773 moved it to what is now Guatemala City. What stayed is a grid of cobbled streets at about 1,500 metres, churches with low bell towers built for earthquakes, and the ruins of the ones that fell. UNESCO inscribed it in 1979. La Aurora airport is 45 minutes to an hour and a half away."
+      },
+      {
+       "h": "Lake Atitlán and the highlands",
+       "p": "Lake Atitlán fills a volcanic caldera formed about 84,000 years ago, under the San Pedro, Tolimán and Atitlán volcanoes. It is 2.5 to 4 hours by road from Guatemala City. Panajachel is the way in, and boats run from its docks to San Marcos La Laguna, San Juan La Laguna, Santiago Atitlán and the other Maya towns on the shore."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g1",
+      "alt": "Guatemala: Tikal, Flores, Antigua and Atitlán"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "Dry season November to April, the most popular months for Tikal, Antigua and Lake Atitlán. The rains start in May and last into October: greener forest, afternoon showers and fewer visitors."
+    ],
+    [
+     "Getting there",
+     "Fly into La Aurora International Airport (GUA) in Guatemala City, 45 minutes to an hour and a half from Antigua. Daily flights of about an hour connect Guatemala City with Mundo Maya International Airport (FRS) at Flores, for Tikal. By road from Belize, the crossing is Melchor de Mencos."
+    ],
+    [
+     "Who it suits",
+     "Couples, families, photographers and walkers who want Maya history and living Maya towns in one trip, with time on the water between the ruins."
+    ],
+    [
+     "Signature experiences",
+     "Tikal at first light, a swim in Lake Petén Itzá, Holy Week processions over sawdust carpets in Antigua, and a boat between the Maya towns of Lake Atitlán."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Guatemala?",
+     "a": "November to April, the dry season, when Tikal's trails are in better shape and the volcanoes around Lake Atitlán are clearest. May to October is the rainy season: greener and quieter, with most of the rain in the afternoon. Holy Week draws the biggest crowds, so book early."
+    },
+    {
+     "q": "How do you get to Guatemala?",
+     "a": "Most international flights land at La Aurora International Airport (GUA) in Guatemala City, about 2.5 to 3 hours from Miami or Houston, with a direct flight from Madrid. For Tikal, connect to Mundo Maya International Airport (FRS) at Flores, about an hour's flight."
+    },
+    {
+     "q": "How do you get to Tikal?",
+     "a": "Fly to Flores, then drive about 65 km, an hour to an hour and a half, to Tikal National Park. UNESCO listed it in 1979 for both its Maya city and its forest. Give it a full day from first light, and a night or two on Lake Petén Itzá to add Yaxhá."
+    },
+    {
+     "q": "How far is Antigua from the airport?",
+     "a": "45 minutes to an hour and a half by road from La Aurora in Guatemala City, depending on traffic. Antigua has no airport of its own. Most trips start here: the old capital sits at about 1,500 metres, is easy to walk and is a UNESCO World Heritage site."
+    },
+    {
+     "q": "How do you get to Lake Atitlán?",
+     "a": "By road from Guatemala City, 2.5 to 4 hours depending on traffic and which town you stay in. Panajachel is the main gateway, and public and private boats cross from its docks to the other lakeside towns. It follows Antigua well."
+    },
+    {
+     "q": "How many days do you need in Guatemala, and can you add Belize or Mexico?",
+     "a": "Allow 7 to 10 days for both halves: three or four nights in the Petén, the rest between Antigua and Lake Atitlán. Belize is next door: Flores to Belize City is 3 to 4 hours by road through the Melchor de Mencos border. From Mexico the land crossings are La Mesilla and Tecún Umán, and San Cristóbal de las Casas is 5 to 6 hours away."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "Across Guatemala",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "La Aurora International Airport (GUA)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Mundo Maya International Airport (FRS)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "GUA · FRS",
+   "bestShort": "Nov–Apr",
+   "atlasName": "Guatemala"
+  },
+  {
    "slug": "hawaii",
    "name": "Hawaii",
    "region": "usa-canada",

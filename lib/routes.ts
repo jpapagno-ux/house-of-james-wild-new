@@ -166,6 +166,7 @@ export const STAY_SLUGS: string[] = [
   "blancaneaux-lodge",
   "blue-reef",
   "blue-safari-seychelles",
+  "boluntiku-hotel",
   "borana",
   "breac-house",
   "bumi-hills-safari-lodge",

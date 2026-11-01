@@ -3099,7 +3099,7 @@
   },
   {
    "slug": "arenas-del-mar-resort",
-   "name": "Arenas Del Mar Resort \n Costa Rica",
+   "name": "Arenas del Mar",
    "ledgerId": "STY-2026-000022",
    "country": "Costa Rica",
    "countrySlug": "costa-rica",
@@ -3118,63 +3118,101 @@
    "bestMonths": "December - April & July - August",
    "bestMonthsNote": "The dry season offers sunny beach days, exceptional wildlife viewing, and ideal conditions for exploring Manuel Antonio National Park. July and August also provide lush rainforest scenery and excellent opportunities for whale watching along Costa Rica's Pacific Coast.",
    "bestFor": [
+    "honeymoon",
+    "couples",
     "family",
-    "wildlife_photography",
-    "honeymoon"
+    "adventure",
+    "conservation"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": 9.4018,
-    "lng": -84.1655
+    "lat": 9.3984,
+    "lng": -84.1634
    },
-   "airport": "Quepos La Managua Airport (XQP) Juan Santamaría International Airport (SJO)",
-   "airportDirections": "Best Arrival Airport: XQP\nApproximately 20 minutes from the resort.\nDaily domestic flights available from San José.\nAlternative arrival through SJO followed by a scenic 3-hour drive.",
+   "airport": "Quepos Airstrip (XQP); Juan Santamaría International Airport (SJO)",
+   "airportDirections": "20-min flight SJO to XQP, then 15-min transfer. Drive: 3 hrs from SJO, 4.5 hrs from LIR.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Ocean Breeze Superior Room",
      "Ocean View Premium Suite",
-     "Ocean View Suite",
-     "Playitas Suite",
-     "Rainforest Suite"
+     "Ocean Breeze Suite",
+     "Ocean View Superior Room",
+     "Ocean Breeze Superior Room",
+     "Rainforest View Suite",
+     "Playitas Suite (two bedrooms)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
+     "Private Manuel Antonio National Park Tours",
      "Wildlife Watching",
-     "Manuel Antonio National Park Tours",
      "Surf Lessons",
      "Mangrove Kayaking",
-     "Catamaran Cruises",
-     "Waterfall Adventures",
+     "Humpback Whale Watching (in season)",
+     "Nauyaca Waterfalls",
+     "Night Walks",
      "Birdwatching",
-     "Wellness Experiences"
+     "Spa Treatments"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private rainforest reserve",
-     "Direct beach access",
-     "Two secluded beaches",
-     "Luxury ocean-view suites",
-     "Wildlife-rich environment",
-     "Sustainable luxury operations",
-     "Farm-to-table cuisine",
-     "National Park proximity",
-     "Infinity pools overlooking the ocean"
+     "11-acre private nature reserve bordering Manuel Antonio National Park",
+     "Direct path access to two beaches, Playitas and Espadilla",
+     "37 suites and rooms with ocean or rainforest views",
+     "Private hot tubs in the larger suites",
+     "Two pools: the Mirador infinity pool and the Playitas pool",
+     "Playitas beachfront restaurant and El Mirador Restaurant & Bar",
+     "Barisas Spa",
+     "In-house naturalist guides and surf instructors",
+     "Sustainable operations as a Cayuga Collection hotel"
     ]
    },
    "onlyHere": [
     "Few destinations in Costa Rica offer the opportunity to wake up surrounded by rainforest wildlife, spend the afternoon on a secluded beach, and finish the day watching sunset over the Pacific Ocean. Arenas Del Mar delivers this rare combination while maintaining a strong commitment to conservation and responsible tourism."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to April is the dry season, with a short mini dry season in late July and early August; May to November is Wildlife Season.",
+    "how_to_get_there": "Fly 20 minutes from San José (SJO) to Quepos (XQP) for a 15-minute transfer, or drive about 3 hours from SJO.",
+    "signature_experiences": "Private Manuel Antonio National Park walks with resort naturalists, surf lessons on Espadilla Beach, mangrove kayaking, whale watching in season and Barisas Spa.",
+    "who_its_for": "Couples, honeymooners, families and nature lovers who want rainforest wildlife and the beach together."
+   },
+   "faqs": [
+    {
+     "q": "Where is Arenas del Mar?",
+     "a": "Arenas del Mar is a beachfront and rainforest resort at Punta Quepos in Manuel Antonio, on Costa Rica's Central Pacific coast. It sits within an 11-acre private nature reserve that borders Manuel Antonio National Park."
+    },
+    {
+     "q": "How do you get to Arenas del Mar?",
+     "a": "The quickest route is a 20-minute connecting flight from San José (SJO) to the Quepos airstrip (XQP) with Sansa or Green Airways, then a 15-minute transfer to the resort. By road it is about 3 hours from SJO or 4.5 hours from Liberia (LIR), and the resort can arrange a private driver from either airport."
+    },
+    {
+     "q": "When is the best time to visit Arenas del Mar?",
+     "a": "The dry season runs December to April, with a short mini dry season in late July and early August. The resort calls May to November Wildlife Season, when rains feed the rivers and waterfalls; September and October are the rainiest months."
+    },
+    {
+     "q": "How many rooms does Arenas del Mar have?",
+     "a": "Arenas del Mar has 37 suites and rooms: Ocean View Premium Suites, Ocean Breeze Suites, Ocean View Superior Rooms, Ocean Breeze Superior Rooms, Rainforest View Suites and the two-bedroom Playitas Suite. The Premium, Ocean Breeze and Playitas suites have private hot tubs on their balconies."
+    },
+    {
+     "q": "Is Arenas del Mar good for families with children?",
+     "a": "Yes. The resort welcomes children of all ages, has two pools and kids' menus, and notes that nearby activities suit kids over six especially. The Playitas Suite sleeps up to 8 and connecting rooms are available."
+    },
+    {
+     "q": "What are the signature experiences at Arenas del Mar?",
+     "a": "Private walks in Manuel Antonio National Park with the resort's naturalist guides, surf lessons with in-house instructors on Espadilla Beach, mangrove kayaking, humpback whale watching in season, night walks on the property and treatments at Barisas Spa."
+    },
+    {
+     "q": "Who is Arenas del Mar best for?",
+     "a": "Couples, honeymooners, families and nature lovers who want rainforest wildlife and the beach in one stay. The resort describes its guest as the traveler who seeks substance over scale."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -5159,50 +5197,136 @@
   },
   {
    "slug": "boluntiku-hotel",
-   "name": "Boluntiku Hotel",
+   "name": "Bolontiku",
    "ledgerId": "STY-2026-000044",
-   "country": "Costa Rica",
-   "countrySlug": "costa-rica",
+   "country": "Guatemala",
+   "countrySlug": "guatemala",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "hotel",
-   "tagline": null,
+   "tagline": "A 15-suite lakeside boutique hotel on Lake Petén Itzá, near Tikal in Guatemala.",
    "quote": null,
-   "hero": null,
-   "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/boluntiku-hotel/g10"
+   ],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "The dry season runs from November to April with plenty of sunshine. May to October is the green season with occasional rain. Temperatures stay warm all year at 24 to 34°C.",
+   "bestFor": [
+    "adventure",
+    "couples",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "coords": {
+    "lat": 16.96289,
+    "lng": -89.92657
+   },
+   "airport": "La Aurora International Airport (GUA), Guatemala City, then Mundo Maya International Airport (FRS), Flores",
+   "airportDirections": "Fly from Guatemala City (GUA) to Flores (FRS), about an hour. The team takes you to the municipal dock for a complimentary 10 to 15 minute boat ride across Lake Petén Itzá. Guests coming from Belize can be met at the Melchor de Mencos border, about 1 hour 35 minutes from the dock.",
    "founderNote": null,
    "rooms": {
     "paras": [],
-    "items": []
+    "items": [
+     "Lake Breeze Suites, 31.4 m², with carved-stone Jacuzzis",
+     "Lake View Suites, 18.5 m²",
+     "Garden View Suites, 18.5 m²"
+    ]
    },
    "experiences": {
     "paras": [],
-    "items": []
+    "items": [
+     "Tikal private tours",
+     "Yaxhá sunset tour",
+     "El Mirador by helicopter",
+     "Isla Flores walking tour",
+     "Kayaking and paddling on the lake",
+     "Temazcal and spa rituals"
+    ]
    },
    "features": {
     "paras": [],
-    "items": []
+    "items": [
+     "Swimming dock and floating dock on Lake Petén Itzá",
+     "Complimentary kayaks and pedal boat",
+     "Pool with lake views",
+     "Mirador Itzá Restaurant & Bar",
+     "Lake-view spa terrace and Jacuzzi",
+     "Private Temazcal sweat lodge",
+     "Complimentary breakfast and boat transfer from Flores"
+    ]
    },
-   "onlyHere": [],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "onlyHere": [
+    "Named after the nine Mayan gods said to guide life and destiny, Bolontiku sits on one of the few stretches of Lake Petén Itzá where you can swim, with a private Temazcal sweat lodge and Tikal just over an hour away."
+   ],
+   "why": [
+    {
+     "title": "Quiet luxury near Tikal",
+     "body": "Bolontiku suits adventurous travellers, couples and families who want to return from the Maya temples to a calm lakeside hotel, with a member of the Cayuga Collection looking after the details."
+    },
+    {
+     "title": null,
+     "body": "Best suited for:"
+    },
+    {
+     "title": null,
+     "body": "Adventure & Culture"
+    },
+    {
+     "title": null,
+     "body": "Couples"
+    }
+   ],
+   "facts": {
+    "best_months": "November to April is the dry season; May to October is green season with occasional rain.",
+    "how_to_get_there": "Fly Guatemala City (GUA) to Flores (FRS), then a short drive and a complimentary 10 to 15 minute boat ride across Lake Petén Itzá.",
+    "signature_experiences": "Lake swimming and kayaking, a private Temazcal sweat lodge, and tours to Tikal, Yaxhá and El Mirador.",
+    "who_its_for": "Adventurous travellers, couples and families who want a quiet lakeside base for exploring Tikal and the Maya world."
+   },
+   "faqs": [
+    {
+     "q": "Where is Bolontiku Boutique Hotel?",
+     "a": "On the shores of Lake Petén Itzá at Punta de Piedra Nitum, San Andrés, in Guatemala's northern Petén region. The hotel says it is just over an hour from Tikal, Yaxhá and El Mirador."
+    },
+    {
+     "q": "How do you get to Bolontiku?",
+     "a": "Fly from Guatemala City (GUA) to Mundo Maya International Airport (FRS) in Flores, then the team takes you to the municipal dock for a complimentary 10 to 15 minute boat ride across the lake. Guests coming from Belize can be met at the Melchor de Mencos border, about 1 hour 35 minutes from the dock, and helicopter charters from Guatemala City can be arranged."
+    },
+    {
+     "q": "How many rooms does Bolontiku have?",
+     "a": "Bolontiku describes itself as an intimate, 15-suite hotel. Choices are Lake Breeze Suites with carved-stone Jacuzzis, Lake View Suites, Garden View Suites and the two-bedroom Villa Retreat for up to 6 adults plus 2 children."
+    },
+    {
+     "q": "When is the best time to visit Bolontiku?",
+     "a": "The dry season runs from November to April with plenty of sunshine. May to October is the green season with occasional rain, and temperatures stay warm all year at 24 to 34°C."
+    },
+    {
+     "q": "Is Bolontiku good for families?",
+     "a": "Yes. The restaurant has a kid-friendly menu, Lake Breeze Suites are designed for couples or families, and the hotel describes the Villa Retreat as the perfect choice for families or small groups."
+    },
+    {
+     "q": "What is there to do at Bolontiku?",
+     "a": "Swim in Lake Petén Itzá from the dock, use the complimentary kayaks and pedal boat, take a Temazcal sweat lodge session or a lake-view spa treatment, and join tours to Tikal, Yaxhá, El Mirador and Isla Flores."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "costa_rica",
+    "setting": "guatemala",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23192,7 +23316,7 @@
   },
   {
    "slug": "mezzanine-tulum",
-   "name": "Mezzanine \n Tulum",
+   "name": "Mezzanine Tulum",
    "ledgerId": "STY-2026-000167",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -23203,9 +23327,11 @@
    "quote": "Some places ask you to explore. Others simply ask you to pause.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/798a4e08c_cde417f08_6a4fcb0b9ed5b249e309b6b2_where-the-jungle-meets.jpg",
    "gallery": [],
-   "bestMonths": "November - April",
-   "bestMonthsNote": "The dry season offers warm sunshine, lower humidity, and calm Caribbean waters, making these months ideal for enjoying Mezzanine's beachfront location, outdoor dining, swimming, exploring Tulum National Park, and visiting nearby archaeological sites. Comfortable temperatures also create excellent conditions for romantic escapes and slow luxury travel.",
-   "bestFor": [],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "Mezzanine describes November to April as Tulum's dry season and May to October as the wet season.",
+   "bestFor": [
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -23218,45 +23344,80 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Ocean View Rooms",
-     "Sea View Suites",
-     "Boutique Guest Rooms",
-     "Luxury Cliffside Accommodation"
+     "Penthouse with Plunge Pool (two penthouses)",
+     "Sea View Room",
+     "Interior Room"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beachfront Relaxation",
-     "Thai Cuisine",
-     "Oceanfront Dining",
-     "Wellness Moments",
-     "Caribbean Sunrises",
-     "Tulum Discovery"
+     "Cenote swims",
+     "Ancient canals",
+     "Mayan ruins",
+     "Sian Ka'an",
+     "Thai dining with Caribbean views",
+     "Hotel Mi Amor sister property, 3 minutes away"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-oriented boutique hotel",
-     "Cliffside Caribbean views",
-     "Direct beach access",
-     "Oceanfront swimming pool",
-     "Award-winning Thai restaurant",
-     "Beach club atmosphere",
-     "Boutique hospitality",
-     "Luxury guestrooms",
-     "Personalized service",
-     "Prime Tulum National Park location"
+     "Inside Jaguar Park, a protected area of Tulum",
+     "Steps from the ancient Mayan ruins",
+     "No children under 16 in the hotel",
+     "Thai restaurant on a cliffside terrace",
+     "Air conditioning in all guest rooms",
+     "Partnered with SLH (Small Luxury Hotels of the World)",
+     "Part of Colibri Boutique Hotels"
     ]
    },
    "onlyHere": [
-    "Mezzanine Tulum captures the relaxed sophistication of the Riviera Maya through its intimate collection of rooms perched above the Caribbean Sea. Combining exceptional ocean views, renowned dining, and boutique hospitality, the hotel offers guests an authentic Tulum experience where every detail encourages slower, more meaningful travel."
+    "Mezzanine is one of the few hotels inside Jaguar Park, a protected area of Tulum between the jungle and the Caribbean, steps from the Mayan ruins. Guests are asked to follow the park's guidelines on access and preservation, and the Thai kitchen on the cliffside terrace gives the hotel its own character."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A small hotel inside Tulum's protected Jaguar Park",
+     "body": "Mezzanine is a boutique hotel with three room categories, set above the sea in a protected stretch of Tulum near the ruins. Days centre on the view, the beach below and the Thai restaurant, with packages to cenotes, canals and Sian Ka'an. The hotel welcomes guests aged 16 and over."
+    }
+   ],
+   "facts": {
+    "best_months": "November to April, the dry season as Mezzanine describes it; May to October is the wet season.",
+    "how_to_get_there": "Fly into Tulum (TQO) or Cancún (CUN); the concierge books round-trip transfers in advance by email. Address: Carretera Tulum-Boca Paila Km 4.4, inside Jaguar Park.",
+    "signature_experiences": "Thai dining on the cliffside terrace; packages to cenotes, ancient canals, the Mayan ruins and Sian Ka'an; the sister property Hotel Mi Amor, 3 minutes away, with its restaurant and infinity pool.",
+    "who_its_for": "Guests 16 and over looking for a small hotel in a protected area near the Tulum ruins, with Thai cuisine and sea views."
+   },
+   "faqs": [
+    {
+     "q": "Where is Mezzanine Tulum?",
+     "a": "Mezzanine sits inside Jaguar Park, a protected area of Tulum, at Carretera Tulum-Boca Paila Km 4.4. The hotel says it is framed between the jungle and the Caribbean, steps from the ancient Mayan ruins."
+    },
+    {
+     "q": "How do I get to Mezzanine Tulum?",
+     "a": "Fly into Tulum International Airport (TQO) or Cancún International Airport (CUN). The concierge books round-trip airport transfers by email with your flight details and number of guests, with payment taken in advance."
+    },
+    {
+     "q": "When is the best time to visit Mezzanine Tulum?",
+     "a": "Mezzanine describes Tulum's dry season as November to April and the wet season as May to October. January to March days usually sit around 23 to 26C with cooler evenings."
+    },
+    {
+     "q": "What rooms does Mezzanine Tulum have?",
+     "a": "There are three room categories: the Penthouse with Plunge Pool (two penthouses), the Sea View Room and the Interior Room. Every guest room has air conditioning."
+    },
+    {
+     "q": "Can children stay at Mezzanine Tulum?",
+     "a": "No. Children under 16 are not permitted to stay at the hotel, though children are welcome in the restaurant."
+    },
+    {
+     "q": "What is special about dining at Mezzanine?",
+     "a": "The restaurant serves Thai cuisine on a cliffside terrace over the Caribbean, from a menu by Thai Chef Jakkree Putaruk and Executive Chef Liliana López. Breakfast and the beach menu also include Mexican staples."
+    },
+    {
+     "q": "Who is Mezzanine Tulum best for?",
+     "a": "Adults and older teens who want a small hotel in a protected stretch of Tulum with sea views and Thai food. It is not wheelchair accessible because of the landscape."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -26619,14 +26780,14 @@
   },
   {
    "slug": "nomade-holbox",
-   "name": "WildEarth\nNômade Holbox",
+   "name": "Nômade Temple Holbox",
    "ledgerId": "STY-2026-000192",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "“Where the waves whisper transformation.”",
+   "tagline": "A wellness retreat on Holbox Island, surrounded by the Yum Balam Nature Reserve.",
    "quote": "Beyond a destination, it’s a doorway to slow journeys, whispered rituals, and the unfolding of your own wild heart.",
    "hero": "/img/b44/1b1e7a17f_96809ff89_68d6d6dfd6045520431f543d_NomadeHolbox_Exterior.avif",
    "gallery": [
@@ -26639,54 +26800,94 @@
    ],
    "bestMonths": "November – April",
    "bestMonthsNote": "These months bring drier weather, lower humidity, gentler seas, and calmer conditions for ocean rituals, kayaking, and bioluminescence viewing. Rainfall is lowest, making outdoor experiences more reliable.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 21.51,
+    "lng": -87.394
+   },
    "airport": "Cancún International Airport (CUN)",
-   "airportDirections": "Fly into Cancún (CUN). From there, it’s about a 2.5‑hour journey by road to Chiquilá, then a ~20‑minute ferry to Holbox Island. From the ferry dock, golf‑cart taxis and a short walk take you to the property.",
+   "airportDirections": "Fly into Cancún (CUN), drive 2 to 2.5 hours to Chiquilá port, then about 30 minutes across to Holbox.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Moon Temple Rooms (canvas‑walled glamping)",
-     "Jungle Treehouse Suites (elevated tree‑house style)",
-     "Oceanfront Suites (direct beachfront suites)"
+     "Moon Temple Room (canvas walls)",
+     "Jungle Treehouse (7 metres above the ground)",
+     "Beachfront Treehouse",
+     "Oceanfront Suite (canvas walls, sea views)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Sunrise yoga & sound journeys",
-     "Agua Mágica & water immersion rituals",
-     "Local island nature walks & bioluminescence nights",
-     "Holbox exploration via kayak / paddleboard",
-     "Sacred workshops (cacao, dream decoding, reiki)"
+     "Weekly wellness calendar",
+     "Lucid Dreaming Sound Journey",
+     "Oriental and fusion massage",
+     "Water activities",
+     "Island nature excursions",
+     "Shared local food experiences"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Architecture blending canvas, thatch & organic design",
-     "No TVs. You’re invited to unplug",
-     "Wellness & ritual programming included",
-     "Oceanfront club & chill lounge spaces",
-     "Locally sourced, fresh cuisine in “La Popular”",
-     "Hidden pathways through lush jungle to the beach"
+     "30 rooms across three levels, from earth to sky",
+     "Built with sustainable local woods",
+     "Surrounded by the Yum Balam Nature Reserve",
+     "Wellness events free for hotel guests",
+     "Beach club and pools for guests",
+     "La Popular restaurant, fresh Caribbean fish"
     ]
    },
    "onlyHere": [
-    "This is a place for those who long to travel inwards as much as outward. Whether you arrive solo with a heart open for stillness, or as a couple seeking a recalibration, Nômade’s design, rituals and sea‑tuned architecture invite you to linger, to slow, to soften. You’ll not only walk barefoot on white sand, but through your own threshold of transformation."
+    "Nômade Temple Holbox sits on an island where the Caribbean meets the Gulf of Mexico, inside the Yum Balam Nature Reserve. Its 30 rooms climb through three levels of jungle, from canvas-walled Moon Temple rooms to treehouses raised above the ground, and the weekly programme leans into wellness, water and island nature."
    ],
    "why": [
     {
      "title": null,
-     "body": "Nômade Temple Holbox offers more than a stay. It offers a reset. The blend of wild design, wellness rituals, luminous sea, and curated experiences draws in solo travelers seeking inner reflection, couples desiring a soulful escape, and wellness seekers craving a deep breath away from the everyday. You come here to dissolve time, to sit with sound, to emerge changed."
+     "body": "Nômade describes its journey as travel outward and inward: exploring new places and cultures, and making time for self-discovery and healing. On Holbox that means a weekly wellness calendar, water activities and island excursions in a reserve setting, with the hotel welcoming adults only."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly into Cancún (CUN), drive 2 to 2.5 hours to Chiquilá port, then about 30 minutes across to Holbox. The brand's Path to Holbox offer (4 nights or more) includes one-way transfer for two from CUN, covering the drive to Chiquilá, ferry access and a taxi to the hotel.",
+    "signature_experiences": "Weekly wellness calendar, sound journeys and massage, water activities, island nature excursions, shared local food experiences, and dining at La Popular.",
+    "who_its_for": "Adults (18+) seeking wellness programming and island nature."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nômade Temple Holbox?",
+     "a": "On Holbox Island, Mexico, where the Caribbean meets the Gulf of Mexico, surrounded by the Yum Balam Nature Reserve. The address is Calle Caguama, corner of Calle Caracol, Holbox."
+    },
+    {
+     "q": "How do I get to Nômade Temple Holbox?",
+     "a": "Fly into Cancún International Airport (CUN), drive 2 to 2.5 hours to the port of Chiquilá, then allow about 30 minutes to cross to the island. Public parking is available at Chiquilá port."
+    },
+    {
+     "q": "What rooms does Nômade Temple Holbox have?",
+     "a": "There are 30 rooms across three levels: the Moon Temple Room with canvas walls, the Jungle Treehouse raised 7 metres above the ground, the Beachfront Treehouse and the Oceanfront Suite."
+    },
+    {
+     "q": "Can children stay at Nômade Temple Holbox?",
+     "a": "Nômade's FAQ describes Holbox as adults-only, for guests aged 18 and over. The Holbox rooms page also notes that children are not allowed in the Moon Temple Room or the Jungle Treehouse."
+    },
+    {
+     "q": "What experiences does Nômade Temple Holbox offer?",
+     "a": "Wellness programmes, water activities, island nature excursions and shared local food experiences, on a weekly calendar. Wellness events are free for hotel guests, and there is a personal session menu that includes massage and a Lucid Dreaming Sound Journey."
+    },
+    {
+     "q": "Where do you eat at Nômade Temple Holbox?",
+     "a": "La Popular serves fresh fish from the Caribbean. Vegan, vegetarian and gluten-free dishes are on the menus, and most dishes can be adapted for allergies."
+    },
+    {
+     "q": "Who is Nômade Temple Holbox best for?",
+     "a": "Adults looking for a wellness-led island stay in nature. The hotel does not recommend it for wheelchair users or guests with limited mobility because of its wood, sand and concrete construction."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -26916,14 +27117,14 @@
   },
   {
    "slug": "nomade-tulum",
-   "name": "Nomade \nTulum",
+   "name": "Nômade Temple Tulum",
    "ledgerId": "STY-2026-000195",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "“Where jungle meets sea, and transformation unfolds.”",
+   "tagline": "Where the Mayan jungle meets the Caribbean, with wellness at the centre of every day.",
    "quote": "In the space between jungle and sea, your spirit finds its compass.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1badf3694_e14d8fac6_68d6ebb18bc5f59d73c603f9_NomadeTulum_OutdoorBeachLounge.webp",
    "gallery": [
@@ -26938,57 +27139,97 @@
    ],
    "bestMonths": "November – April",
    "bestMonthsNote": "These months fall in the dry season, offering more consistent sunshine, lower rainfall, calmer seas, and cooler nights ideal for beach, jungle walks, outdoor wellness, and uninterrupted programming.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 20.2062,
+    "lng": -87.4515
+   },
    "airport": "Cancún International Airport (CUN)",
-   "airportDirections": "The drive from Cancún International to Nômade Tulum is roughly 90–100 minutes by road (~100–130 km) along the coastal highway. Travelers typically book a private transfer or shuttle. The route is scenic, passing through tropical forest and coastal plains.",
+   "airportDirections": "Cancún (CUN) is 130 km away, approximately 2 hours by road; the hotel arranges private transport, booked and paid at least 48 hours before arrival.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Intimate Rooms",
-     "Exclusive Suites",
-     "Treehouses",
-     "Bungalows",
-     "Two‑Bedroom Villa with Pool"
+     "38 intimate rooms",
+     "20 exclusive suites",
+     "5 treehouses",
+     "36 bungalows",
+     "Family rooms and Double Up rooms",
+     "Two Bedroom Villa with Pool"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Yoga & Breathwork Ceremonies",
-     "Sound Healing & Fire Rituals",
-     "Beach & Jungle Immersion",
-     "Spa & Mayan Ceremonial Treatments",
-     "Stargazing & Sacred Circles",
-     "Local Culture & Cacao Rituals"
+     "Clarity Breathwork",
+     "Ice Bath",
+     "Stargazing",
+     "Yogasanas",
+     "Workshops, ceremonies and gatherings",
+     "Spa treatments"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Beachfront, direct sea access",
-     "Open‑air & nature‑immersed architecture",
-     "Daily wellness & transformational programming",
-     "Three signature restaurants (sea, Japanese omakase, holistic)",
-     "Healing sanctuary & spa offerings",
-     "Meandering pathways through preserved jungle"
+     "On Tulum Beach, Km 10.5",
+     "Weekly wellbeing programme and spa menu",
+     "Jungle Shala for yoga",
+     "Weekly music calendar",
+     "Welcomes all ages"
     ]
    },
    "onlyHere": [
-    "At Nômade Tulum, the balance between comfort and wild is artfully held. Here, travelers find their pace among whispering palms and ocean breezes. Solo seekers slip into the rhythm of daily yoga, sacred sound, and personal reflection. Couples drift between romantic beach dinners, cacao ceremonies, and private star-lit moments. Families or small groups can nest in villas or adjacent bungalows and share collective explorations. The curated wellness programming and immersive nature design make this not just a destination, but a pause. Where whatever you came seeking might quietly find you."
+    "Nômade Temple Tulum pairs a beachfront setting with a full weekly programme of workshops, ceremonies and gatherings meant to get guests away from their phones and into their bodies. Rooms, suites, treehouses and bungalows sit among the gardens, three restaurants cover seafood, Middle Eastern and omakase, and the hotel welcomes all ages."
    ],
    "why": [
     {
      "title": null,
-     "body": "Nômade Tulum is more than a boutique hotel. It’s a sacred container for transformation. It appeals especially to travelers drawn to wellness, nature connection, spiritual curiosity, and slow luxury. Whether you are a solo pilgrim, a couple on a soulful escape, or a small group craving a deeper reset, this stay offers the rare balance of wild immersion and artful comfort."
+     "body": "Nômade Temple Tulum suits travellers who want more than a beach bed: breathwork, ice baths, stargazing and yoga, live music through the week and three very different restaurants. Families are welcome, with family rooms and a two-bedroom villa with its own pool."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Cancún (CUN) is 130 km, approximately 2 hours by road; private transport can be arranged, requested and paid at least 48 hours before arrival. Address: Carretera Tulum-Boca Paila Km 10.5.",
+    "signature_experiences": "Clarity Breathwork, Ice Bath, Stargazing and Yogasanas classes; weekly workshops, ceremonies and gatherings; spa; weekly music calendar; La Popular, Macondo and Kuu Jū omakase.",
+    "who_its_for": "All ages: couples, friends and families who want wellness programming, music and three restaurants on the beach."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nômade Temple Tulum?",
+     "a": "On Tulum Beach in the hotel zone, at Carretera Tulum-Boca Paila Km 10.5. Nômade describes it as blending with the Mayan jungle, near archaeological sites, cenotes and the Sian Ka'an Biosphere."
+    },
+    {
+     "q": "How do I get to Nômade Temple Tulum?",
+     "a": "Cancún International Airport (CUN) is 130 km away, approximately 2 hours by road. The hotel can arrange one-way or round-trip private transport, which must be requested, confirmed and paid at least 48 hours before arrival."
+    },
+    {
+     "q": "What rooms does Nômade Temple Tulum have?",
+     "a": "38 intimate rooms, 20 exclusive suites, 5 treehouses and 36 bungalows. Room types include the Beachfront Room, Oceanfront Room, Standard, Jungle and Arena rooms, the Double Up room, family rooms and a Two Bedroom Villa with Pool."
+    },
+    {
+     "q": "Is Nômade Temple Tulum family friendly?",
+     "a": "Yes. Nômade says the Tulum hotel welcomes all ages, and it offers family rooms and a Double Up room with two beds."
+    },
+    {
+     "q": "Where do you eat at Nômade Temple Tulum?",
+     "a": "There are three restaurants: La Popular for fresh seafood with a sea view, Macondo for Middle Eastern dishes with a twist, and Kuu Jū, a Japanese omakase restaurant. Vegan, vegetarian and gluten-free dishes are available."
+    },
+    {
+     "q": "What are the signature experiences at Nômade Temple Tulum?",
+     "a": "Signature classes include Clarity Breathwork, Ice Bath, Stargazing and Yogasanas, alongside a weekly programme of workshops, ceremonies and gatherings, a spa menu and a weekly music calendar."
+    },
+    {
+     "q": "When is the best time to visit Nômade Temple Tulum?",
+     "a": "Nômade does not name a best season on its site. Ask James for timing around weather and the hotel's events calendar."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -27516,20 +27757,23 @@
   },
   {
    "slug": "olas-tulum",
-   "name": "Olas \n Tulum",
+   "name": "Olas Tulum",
    "ledgerId": "STY-2026-000199",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Boutique beachfront luxury inspired by the rhythm of the Caribbean Sea.",
+   "tagline": "An intimate beachfront guesthouse on the edge of Sian Ka'an.",
    "quote": "Wake to the sound of the waves and discover a slower way to travel.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/40875a78f_88c05281a_6a4fcc28ade727d8ca4bc1d5_casa-de-las-olas.jpg",
    "gallery": [],
    "bestMonths": "November - May",
    "bestMonthsNote": "The ideal time to visit Olas Tulum is during the dry season from November through May, when warm temperatures, gentle Caribbean breezes and abundant sunshine create perfect conditions for beach relaxation, swimming, cycling, outdoor dining and exploring Tulum's nearby cenotes and archaeological sites.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -27542,49 +27786,85 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Garden Suites",
-     "Beachfront Suites",
-     "Ocean View Suites",
-     "Sea View Rooms",
-     "Terrace Suites",
-     "Signature Suites"
+     "Oceanfront Master Suite",
+     "Oceanfront Junior Suite",
+     "Oceanfront Suite",
+     "Oceanfront Balcony Suite",
+     "Oceanview Deluxe Balcony",
+     "Oceanview Balcony Suites"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beach Relaxation",
-     "Ocean Swimming",
-     "Sunrise Yoga",
-     "Local Dining",
-     "Wellness Treatments",
-     "Bicycle Adventures",
-     "Cultural Discovery",
-     "Beachfront Lounging"
+     "Sky Yoga Shala",
+     "Massage",
+     "Sian Ka'an kayak or birdwatching",
+     "Cenotes",
+     "Turtle nesting (May to October)",
+     "Sunset on the rooftop"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Boutique beachfront hotel",
-     "Direct Caribbean beach access",
-     "Luxury suites with terraces",
-     "Ocean-view accommodations",
-     "Personalized concierge service",
-     "Restaurant and bar",
-     "Complimentary Wi-Fi",
-     "Tropical gardens",
-     "Relaxed luxury atmosphere",
-     "Prime Hotel Zone location"
+     "Intimate boutique hotel and guesthouse on the beach",
+     "Neighbours the Sian Ka'an reserve",
+     "100% solar powered, no air conditioning",
+     "Platinum LEED status",
+     "Homemade breakfast included",
+     "Sunset rooftop lounge",
+     "Sky Yoga Shala",
+     "Bicycles for daily rental",
+     "Wi-Fi throughout"
     ]
    },
    "onlyHere": [
-    "Olas Tulum offers an intimate beachfront escape where contemporary comfort meets the laid-back charm of Tulum. Designed to embrace the natural beauty of the Caribbean coastline, every stay invites guests to unwind with ocean breezes, personalized hospitality, and an atmosphere that celebrates simplicity and connection to nature."
+    "Olas is a small guesthouse in the dunes at the edge of the jungle, run entirely on solar power and cooled by the sea breeze rather than air conditioning. Breakfast is shared around one table in the sand, and Sian Ka'an begins next door."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A solar-powered guesthouse beside Sian Ka'an",
+     "body": "Olas suits travellers who want a quiet beach, a small number of suites and a team that has lived in the area for 20 years. Mornings start in the Sky Yoga Shala or on the sand, and the team can arrange Sian Ka'an, cenotes and turtle nesting. The whole property can also be rented for a group."
+    }
+   ],
+   "facts": {
+    "best_months": "Year-round warmth around 26C; rainy season June to October; turtle nesting May to October.",
+    "how_to_get_there": "Fly into Tulum (TQO, about 1 hour) or Cancún (CUN, about 1.75 hours). Private transfers with 72 hours' notice, or rent a car. Address: 10.6 Boca Paila Road.",
+    "signature_experiences": "Sunset rooftop lounge, Sky Yoga Shala, massage, Sian Ka'an by kayak or birdwatching tour, cenotes, turtle nesting May to October.",
+    "who_its_for": "Couples, friends and families with children over five who want a small, solar-powered beachfront guesthouse next to Sian Ka'an; the whole property can be rented by a large party."
+   },
+   "faqs": [
+    {
+     "q": "Where is Olas Tulum?",
+     "a": "On the beach at 10.6 Boca Paila Road, Tulum, 14 km from the centre of Tulum Pueblo. It neighbours the Sian Ka'an reserve, a UNESCO World Heritage Site."
+    },
+    {
+     "q": "How do I get to Olas Tulum?",
+     "a": "Fly into Tulum (TQO) or Cancún (CUN). Olas says the drive is about 1 hour from TQO and 1.75 hours from Cancún; its team arranges private transfers with 72 hours' notice, and renting a car is also recommended."
+    },
+    {
+     "q": "When is the best time to visit Olas Tulum?",
+     "a": "Olas gives a year-round temperature of around 26C, up to 32C in summer, with the rainy season from June to October. Turtle nesting season runs May to October."
+    },
+    {
+     "q": "What suites does Olas Tulum have?",
+     "a": "The Oceanfront Villa holds the Oceanfront Master Suite, Oceanfront Junior Suite, Oceanfront Suite and Oceanfront Balcony Suite. The Oceanview Villa, about 20 metres back, has three suites including the Oceanview Deluxe Balcony and the Oceanview Balcony Suites."
+    },
+    {
+     "q": "Are children welcome at Olas Tulum?",
+     "a": "Yes, children over five years old are welcome."
+    },
+    {
+     "q": "Does Olas Tulum have air conditioning?",
+     "a": "No. Olas is 100% solar powered and its suites are designed for the sea breeze, with palapa roofs, ocean-facing rooms and floor fans."
+    },
+    {
+     "q": "What experiences does Olas Tulum offer?",
+     "a": "A rooftop lounge above the jungle canopy, the Sky Yoga Shala with private classes, and massage in your suite or under the palms. The team arranges Sian Ka'an kayak or birdwatching trips, cenote visits with guides, and turtle nesting in season."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -35316,20 +35596,23 @@
   },
   {
    "slug": "siwa-tulum",
-   "name": "Siwa \n Tulum",
+   "name": "SIWA Tulum",
    "ledgerId": "STY-2026-000261",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A tranquil sanctuary where wellness and nature become one.",
+   "tagline": "Private-pool villas in Tulum's jungle, built around wellness.",
    "quote": "The greatest luxury is finding a place where nature restores your spirit.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/30abad61a_f5f230adf_6a4fdc0fa00109393931baed_Siwa-Tulum.jpg",
    "gallery": [],
    "bestMonths": "November - April",
    "bestMonthsNote": "These months provide warm tropical temperatures with lower humidity, making them ideal for wellness retreats, relaxing beside the pool, exploring nearby beaches, visiting local cenotes, and enjoying Tulum's outdoor lifestyle. Pleasant weather also creates perfect conditions for yoga, meditation, and slow travel experiences.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "couples"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -35342,45 +35625,79 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Garden Suites",
-     "Luxury Rooms",
-     "Boutique Suites",
-     "Wellness Accommodation"
+     "Nest Luxury Studio with Private Pool",
+     "Jungle Villa Swim-Up with Private Pool",
+     "Jungle Villa with Private Pool",
+     "Sky: 2-Bedroom Villa with Rooftop and Pool",
+     "Lagoon: Deluxe 2-Bedroom Villa with Private Pool",
+     "Reef: 2-Bedroom Villa with Private Pool",
+     "Beach: Premium 2-Bedroom Villa with Private Pool"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Wellness Retreats",
-     "Garden Relaxation",
-     "Yoga & Mindfulness",
-     "Poolside Living",
-     "Local Exploration",
-     "Slow Travel"
+     "Ixchel ritual",
+     "Cacao ceremonies",
+     "Chakra harmonisation",
+     "Yoga on the rooftop shala",
+     "Live music and culinary events",
+     "Ceremonial weddings"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Boutique wellness hotel",
-     "Lush tropical gardens",
-     "Outdoor swimming pool",
-     "Holistic atmosphere",
-     "Contemporary Mexican design",
-     "Relaxing common spaces",
-     "Boutique hospitality",
-     "Nature-inspired architecture",
-     "Peaceful location",
-     "Easy access to Tulum attractions"
+     "Boutique villa collection in the jungle",
+     "A private pool in every villa type",
+     "Shared pools and water channels through the grounds",
+     "Two restaurants: Profundo and Cara de Piedra",
+     "Gym and rooftop shala",
+     "Spa and Longevity Lounge",
+     "Beach transport"
     ]
    },
    "onlyHere": [
-    "Siwa Tulum offers a peaceful escape where tropical gardens, thoughtful architecture, and a wellness-focused philosophy create an atmosphere of complete relaxation. Every stay encourages guests to disconnect from everyday routines while reconnecting with nature and themselves through slower, more intentional travel."
+    "At SIWA, water runs through the design: every villa has its own pool, and crystal-clear channels connect across the grounds like rivers through the jungle. Rituals, a rooftop shala and two restaurants keep the stay centred on rest and renewal."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "Private villas with wellness built in",
+     "body": "SIWA suits travellers who want privacy and their own pool, with rituals, spa treatments and fitness a short walk away. Two-bedroom villas work for friends or family travelling together, and the team can arrange weddings and retreats."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly into Tulum (TQO) or Cancún (CUN); SIWA lists transportation and beach transport among its services. Transfer times are not published by the brand.",
+    "signature_experiences": "Ixchel ritual, cacao ceremonies, chakra harmonisation, rooftop shala, Longevity Lounge, live music and culinary events, dining at Profundo and Cara de Piedra.",
+    "who_its_for": "Couples and small groups wanting a private-pool villa with wellness, rituals and two restaurants on site."
+   },
+   "faqs": [
+    {
+     "q": "What is SIWA Tulum?",
+     "a": "SIWA is a collection of boutique villas in the jungle of Tulum, built around wellness, nature and design. Every villa type has a private pool."
+    },
+    {
+     "q": "What villas does SIWA Tulum have?",
+     "a": "The Nest Luxury Studio with Private Pool (up to 2), the Jungle Villa Swim-Up with Private Pool, the Jungle Villa with Private Pool, and four two-bedroom villas: Sky with rooftop and pool (up to 4), Lagoon Deluxe, Reef and Beach Premium, each with a private pool."
+    },
+    {
+     "q": "How do I get to SIWA Tulum?",
+     "a": "SIWA lists transportation among its services and offers transport to the beach. Ask the team to arrange your airport transfer from Tulum (TQO) or Cancún (CUN)."
+    },
+    {
+     "q": "Where do you eat at SIWA Tulum?",
+     "a": "There are two restaurants, Profundo and Cara de Piedra, serving international cuisine with Mexican flavours. Poolside service and room service are also available."
+    },
+    {
+     "q": "What wellness experiences does SIWA Tulum offer?",
+     "a": "A gym and rooftop shala, spa treatments and rituals such as the Ixchel wrap, cacao ceremonies and chakra harmonisation, plus a Longevity Lounge. Experiences are subject to availability and advance booking."
+    },
+    {
+     "q": "Who is SIWA Tulum best for?",
+     "a": "Couples and small groups who want a private-pool villa in the jungle with wellness on site. SIWA also hosts intimate weddings, wellness retreats and private celebrations."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -39586,20 +39903,24 @@
   },
   {
    "slug": "the-beach-tulum",
-   "name": "The Beach \n Tulum",
+   "name": "The Beach Tulum",
    "ledgerId": "STY-2026-000295",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Every suite. Every sunrise. Every moment in the Caribbean.",
+   "tagline": "An adults-only beachfront hotel of 28 rooms on Tulum's shore.",
    "quote": "Luxury feels different when the ocean is only a few steps away.",
    "hero": "/img/b44/0e179c000_9bb112af7_6a511f61c38a8aee43e0f836_The-Beach-Tulum.avif",
    "gallery": [],
    "bestMonths": "November - April",
    "bestMonthsNote": "These months offer warm sunshine, lower humidity, and calm Caribbean waters, ideal for enjoying beachfront suites, rooftop terraces, ocean swimming, spa experiences, yoga sessions, and outdoor dining. The comfortable climate also makes this period especially popular for romantic escapes and honeymoon travel.",
-   "bestFor": [],
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -39612,45 +39933,80 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Rooftop Suites",
-     "Beachfront Suites",
-     "Junior Suites",
-     "Luxury Oceanfront Suites"
+     "Deluxe Room (private deck with pool)",
+     "Junior Suite (terrace plunge pool, main pool access)",
+     "Rooftop Room (private rooftop terrace with hot tub)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beachfront Relaxation",
-     "Wellness Spa",
-     "Oceanfront Dining",
-     "Caribbean Sunrises",
-     "Yoga & Wellness",
-     "Slow Luxury Travel"
+     "Daily yoga",
+     "Spa treatments",
+     "Sound healing",
+     "Cooking classes",
+     "Tequila tastings",
+     "Romantic dinners on the beach"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-only beachfront hotel",
-     "All-suite oceanfront accommodation",
-     "Private rooftop terraces (selected suites)",
-     "Direct beach access",
-     "Luxury spa & wellness centre",
-     "Oceanfront dining",
-     "Boutique hospitality",
-     "Beach club atmosphere",
-     "Premium Caribbean location",
-     "Personalized guest service"
+     "Adults only (18+)",
+     "28 beachfront rooms, each with a king bed",
+     "90-metre private shoreline, beach beds for registered guests only",
+     "Spa, yoga and gym",
+     "Restaurants: Ziggy, Fresco's, Autentico",
+     "Caracol Bar and Ziggy Beach Club",
+     "Weddings and romantic dinners"
     ]
    },
    "onlyHere": [
-    "The Beach Tulum offers an intimate luxury experience where every suite faces the Caribbean Sea. Combining contemporary comfort with relaxed beachfront living, the hotel creates a sanctuary where guests wake to spectacular sunrises, unwind with wellness experiences, and embrace the slower rhythm that defines Tulum's coastline."
+    "The Beach Tulum keeps its 90 metres of shoreline for registered guests only, with no day passes. Each of its 28 rooms is steps from the sea, from ground-floor rooms with plunge pools to rooftop rooms with hot tubs."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "An adults-only beachfront hotel",
+     "body": "The Beach Tulum is designed for couples and adults who want calm, privacy and the sea a few steps away. Daily yoga, spa treatments and three restaurants are on site, and the team can arrange cooking classes, tequila tastings and private tours."
+    }
+   ],
+   "facts": {
+    "best_months": "Year-round per the hotel; hurricane season 1 June to 31 October, wettest in September and October.",
+    "how_to_get_there": "Fly into Tulum (TQO) or Cancún (CUN); private transfers on request, booked 48 hours ahead. Address: Carretera Tulum-Boca Paila Km 7.2.",
+    "signature_experiences": "Daily yoga, spa and sound healing, cooking classes, tequila tastings, romantic beach dinners, Ziggy Beach Club.",
+    "who_its_for": "Adults (18+): couples, honeymooners and wedding parties."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Beach Tulum?",
+     "a": "On the beach at Carretera Tulum-Boca Paila Km 7.2 in Tulum's hotel zone, with a 90-metre stretch of private shoreline."
+    },
+    {
+     "q": "How do I get to The Beach Tulum?",
+     "a": "Fly into Tulum (TQO) or Cancún (CUN). The concierge arranges private airport transfers on request, booked at least 48 hours before arrival."
+    },
+    {
+     "q": "When is the best time to visit The Beach Tulum?",
+     "a": "The hotel says Tulum is beautiful year-round. Hurricane season runs from 1 June to 31 October, with the heaviest rain usually in September and October."
+    },
+    {
+     "q": "What rooms does The Beach Tulum have?",
+     "a": "28 rooms in three categories, all steps from the beach with sea views: the Deluxe Room with a private deck and pool, the Junior Suite with a terrace plunge pool and access to the main pool, and the Rooftop Room with a private rooftop terrace and hot tub. All have one king bed."
+    },
+    {
+     "q": "Is The Beach Tulum adults only?",
+     "a": "Yes. The resort is exclusively for guests aged 18 and over, and access is restricted to registered guests, with no day passes."
+    },
+    {
+     "q": "What is there to do at The Beach Tulum?",
+     "a": "Daily yoga, spa treatments, sound healing and wellness activities, plus cooking classes, tequila tastings, private tours and romantic dinners on the beach. Dining is at Ziggy, Fresco's and Autentico."
+    },
+    {
+     "q": "Who is The Beach Tulum best for?",
+     "a": "Couples, honeymooners and adults wanting a quiet beachfront stay. The hotel also hosts weddings and elopements on the sand."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -46875,14 +47231,14 @@
   },
   {
    "slug": "xela-tulum",
-   "name": "XELA \n Tulum",
+   "name": "XELA Tulum",
    "ledgerId": "STY-2026-000357",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Discover modern luxury where the jungle becomes your sanctuary.",
+   "tagline": "A 12-suite beachfront villa hotel on Tulum Beach.",
    "quote": "The most unforgettable journeys begin where architecture, nature and stillness become one.",
    "hero": "/img/b44/01ad6c76a_191d52520_68d59551ca48d2785b485eca_fd239539.avif",
    "gallery": [
@@ -46894,12 +47250,15 @@
    ],
    "bestMonths": "November - April",
    "bestMonthsNote": "These months offer warm tropical weather with lower humidity, making them ideal for enjoying outdoor living, nearby beaches, and exploring Tulum's natural attractions. Pleasant temperatures also create excellent conditions for wellness retreats, sightseeing, and relaxing by your private villa.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": 20.2119,
-    "lng": -87.4654
+    "lat": 20.140663,
+    "lng": -87.4613408
    },
    "airport": "Cancún International Airport (CUN) Tulum International Airport (TQO)",
    "airportDirections": "Tulum International Airport (TQO)\nApproximately 45–60 minutes by road.\nRecommended for the shortest transfer.\nCancún International Airport (CUN)\nApproximately 2 hours via Highway 307.\nIdeal for international flight availability.",
@@ -46907,45 +47266,87 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Private Villas",
-     "Luxury Residences",
-     "Jungle Suites",
-     "Designer Living Spaces"
+     "Caracol: Beachfront Suite Lower",
+     "Coco: Beachfront Suite Upper",
+     "XELA Master Suite",
+     "Casa Playa: Ocean Suite",
+     "Coqui: Ocean Suite Upper",
+     "Venus: Junior Ocean Room",
+     "Sian and Zama: Upper Ocean Rooms",
+     "Icaro and Ixchel: Garden Studio",
+     "Coral: Garden Room Upper with bathtub",
+     "Palmas: Garden Room Upper with plunge pool",
+     "Selva and Ceiba: Garden Rooms"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private Jungle Living",
-     "Wellness Escapes",
-     "Tulum Exploration",
-     "Luxury Relaxation",
-     "Nature Immersion",
-     "Local Cultural Discovery"
+     "Rooftop yoga",
+     "Temazcal at dusk",
+     "Weddings on the sand",
+     "La Valise Spa",
+     "Dinner at NÜ Tulum",
+     "Cenotes, ruins and jungle tours"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Contemporary tropical architecture",
-     "Private luxury accommodations",
-     "Surrounded by lush jungle",
-     "Premium interior finishes",
-     "Indoor-outdoor living spaces",
-     "Private pools (selected villas)",
-     "Spacious social areas",
-     "Curated guest experiences",
-     "Boutique atmosphere",
-     "Prime Tulum location"
+     "12-key boutique hotel on Tulum Beach",
+     "Built into one of the original private villas on the beach",
+     "Member of Design Hotels",
+     "XELA Beach Club and XELA Izakaya",
+     "Rooftop, pool and gym",
+     "Children 12 and over; pets welcome",
+     "Part of NAMRON Hospitality with La Valise and NEST"
     ]
    },
    "onlyHere": [
-    "XELA Tulum creates an experience that blends refined architecture with the untamed beauty of the Riviera Maya. Every stay is designed to encourage slower mornings, meaningful moments, and effortless connection with nature while enjoying the comforts of a thoughtfully crafted luxury villa. It's a destination where privacy and design come together to create lasting memories."
+    "XELA occupies one of the original private villas built on Tulum Beach and keeps the scale of a home: 12 keys, a beach club and an izakaya. It is designed to feel like a secluded house on the sand rather than a resort."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A private beach villa turned 12-suite hotel",
+     "body": "XELA suits travellers who want to be on the sand in a small, design-led house, with rooftop yoga, ceremonies and sister restaurants close by. Children 12 and older are welcome."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Cancún (CUN) about 90 minutes via Highway 307 to Tulum, then to Km 8.7 on the beach road; Tulum airport (TQO) is 30 miles away. Private transfers through the concierge.",
+    "signature_experiences": "XELA Beach Club and Izakaya, rooftop yoga, temazcal at dusk, weddings on the sand, La Valise Spa, dinner at NÜ Tulum.",
+    "who_its_for": "Couples and small parties (children 12+) wanting a 12-key beachfront villa hotel that feels like a private home."
+   },
+   "faqs": [
+    {
+     "q": "What is XELA Tulum?",
+     "a": "XELA is a 12-suite boutique hotel on Tulum Beach, built into a former private beach villa and a member of Design Hotels. It is part of the NAMRON Hospitality family with La Valise and NEST."
+    },
+    {
+     "q": "Where is XELA Tulum?",
+     "a": "On the beach road at Carretera Tulum-Boca Paila Km 8.7, Tulum Beach, Zona Hotelera. XELA says it is 90 miles south of Cancún and 30 miles from Tulum International Airport."
+    },
+    {
+     "q": "How do I get to XELA Tulum?",
+     "a": "From Cancún (CUN), take Highway 307 south for approximately 90 minutes to Tulum, then the beach road towards Boca Paila to Km 8.7. From Tulum airport (TQO), follow Highway 307 to Tulum Pueblo and the Hotel Zone signs. XELA offers private transfers through the concierge."
+    },
+    {
+     "q": "What rooms does XELA Tulum have?",
+     "a": "Twelve keys including beachfront suites (Caracol, Coco), ocean suites (Casa Playa, Coqui), ocean rooms (Venus, Sian and Zama), the XELA Master Suite, and garden rooms and studios (Icaro and Ixchel, Coral, Palmas, Selva and Ceiba). Some have bathtubs or a plunge pool."
+    },
+    {
+     "q": "Can children stay at XELA Tulum?",
+     "a": "Children aged 12 and older are welcome. Pets are also welcome, up to two per room."
+    },
+    {
+     "q": "What is there to do at XELA Tulum?",
+     "a": "The XELA Beach Club, XELA Izakaya, a rooftop, pool, gym and yoga, plus ceremonies such as a temazcal at dusk. Guests can also use La Valise Spa and sister restaurants NÜ Tulum, Climo and Los Bowls de Guadalupe."
+    },
+    {
+     "q": "Does XELA Tulum offer protection against rain?",
+     "a": "Yes. Through Sensible Weather, guests can add a Rainy Day Guarantee that refunds up to the full room night cost if it rains during the day, subject to Sensible Weather's terms."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

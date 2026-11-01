@@ -233,6 +233,22 @@ export const ADVISORS: Advisor[] = [
     traveled: [],
     profileHref: null,
   },
+  {
+    // James, 1 Nov 2026: Marissa, his daughter, joins the roster. ADV issued by the Library
+    // (ADV-2026-000009). Card only until she states her own profile and DNA.
+    slug: "marissa-held",
+    ledgerId: "ADV-2026-000009",
+    name: "Marissa Held",
+    firstName: "Marissa",
+    role: "Travel Advisor",
+    roleApproved: false,
+    portrait: null,
+    intro: null,
+    bio: [],
+    specialties: [],
+    traveled: [],
+    profileHref: null,
+  },
 ];
 
 // In the field with us: partners who aren't James Wild & Co booking

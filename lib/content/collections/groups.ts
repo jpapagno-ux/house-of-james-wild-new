@@ -10,6 +10,12 @@ export type SisterGroup = { key: string; name: string; line: string; slugs: stri
 
 export const GROUPS: SisterGroup[] = [
   {
+    key: "chable",
+    name: "Chablé",
+    line: "Chablé Yucatán, a hacienda with its own cenote in the Yucatán jungle, and Chablé Maroma on the Riviera Maya coast.",
+    slugs: ["chable-yucatan", "chable-maroma"],
+  },
+  {
     key: "nomade",
     name: "Nômade",
     line: "Barefoot beach and jungle hotels in Tulum and on Holbox, with sister houses in Madrid and Ibiza.",

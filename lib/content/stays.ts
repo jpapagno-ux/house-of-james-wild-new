@@ -28,7 +28,7 @@ const NAME_FIX: Record<string, string> = {
   "arenas-del-mar-resort": "Arenas del Mar Resort", "la-cle": "La Cle", "lalibela-reserve": "Lalibela Reserve",
   "le-quartier-francais": "Le Quartier Francais", "leeu-estates": "Leeu Estates", "leeu-house": "Leeu House",
   "lion-sands": "Lion Sands Reserve", "londolozi-reserve": "Londolozi Reserve", "morukuru-farm-house": "Morukuru Farm House",
-  "nayara-gardens": "Nayara Gardens", "nayara-tented-camp": "Nayara Tented Camp", "noah-forest-by-tifakara": "Noah’s Forest by Tifakara",
+  "nayara-gardens": "Nayara Gardens", "nayara-hangaroa": "Nayara Hangaroa", "nayara-tented-camp": "Nayara Tented Camp", "noah-forest-by-tifakara": "Noah’s Forest by Tifakara",
   "pearl-resort-vahine-private-island": "Vahine Private Island", "senda-monteverde-lodge": "Senda Monteverde Lodge",
   "seseka-thornybush": "Seseke Tented Camp", "singita-ebony": "Singita Ebony Lodge", "sirai-house": "Sirai House",
   "tabacon-thermal-resort-spa": "Tabacón Thermal Resort & Spa", "tengile-mala-mala-kirkmans-kamp": "Kirkman's Kamp",

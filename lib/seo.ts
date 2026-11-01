@@ -35,7 +35,7 @@ export function fitDescription(d: string): string {
 }
 
 // Share image for pages that don't name one (hubs, forms): the house film poster.
-const DEFAULT_SHARE = { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_630/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg", alt: "James Wild & Co, exploring since 1982" };
+export const DEFAULT_SHARE = { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_630/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg", alt: "James Wild & Co, exploring since 1982" };
 
 export function buildMetadata({ title, description: raw, path, image: given, type = "website", noindex }: PageMeta): Metadata {
   const image = given ?? DEFAULT_SHARE;

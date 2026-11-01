@@ -6,7 +6,8 @@ import { PATHWAY_LIST } from "@/lib/pathways";
 import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
 import { onPathway } from "@/lib/content/pathways";
 import { COUNTRIES } from "@/lib/content/countries";
-import { STAYS, pageReady } from "@/lib/content/stays";
+import { GUIDES } from "@/lib/content/guides";
+import { STAYS, pageReady, stayBySlug } from "@/lib/content/stays";
 import { HUBS, hubsForStay, transfersForStay, hubLabel, transferLine, KIND_LABEL } from "@/lib/content/arrivals";
 import { recordHref } from "@/lib/ledger/urls";
 import { IGGI_ON } from "@/lib/iggi/flag";
@@ -60,6 +61,9 @@ export function GET() {
     // FAQPage markup on each page and as what Iggi answers from.
     "## Countries in the Ledger (Ledger ID · page)",
     ...COUNTRIES.filter((c) => c.ledgerId).map((c) => `- ${c.ledgerId} · [${c.name}](${absoluteUrl(`/destinations/${c.region}/${c.slug}`)})${c.bestShort ? `: ${c.bestShort}` : ""}`),
+    "",
+    "## Places in the Ledger (inside a country · page · selected stays)",
+    ...Object.values(GUIDES).filter((g) => g.parent).map((g) => `- [${g.name}](${absoluteUrl(g.path)}) · in ${GUIDES[g.parent!]?.name ?? COUNTRIES.find((c) => c.slug === g.parent)?.name ?? g.parent}${g.stays?.length ? ` · stays: ${g.stays.map((slug) => stayBySlug(slug)?.name ?? slug).join(", ")}` : ""}`),
     "",
     "## Reserves in the Ledger (Ledger ID · reserve · lodges)",
     ...RESERVES.filter((r) => r.rsv).map((r) => `- ${r.rsv} · [${r.name}](${absoluteUrl(`/safaris/${r.slug}`)}) · ${r.area}: ${r.camps.map((c) => c.name).join(", ")}`),

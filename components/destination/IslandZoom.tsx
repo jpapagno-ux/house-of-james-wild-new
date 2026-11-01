@@ -12,6 +12,13 @@ const ZOOMS: Record<string, { chart: string; title: string; line: string; href?:
     title: "The Galápagos, Closer",
     line: "Some 1,000 km off Ecuador's coast. Flights land on Baltra and San Cristóbal; the small ships sail between the islands from there, and the outer islands of Darwin and Wolf are for liveaboard divers.",
   },
+  // Rapa Nui sits 3,700 km west of the mainland, far outside the Chile chart's frame (the chart
+  // builder keeps that frame on the mainland on purpose). The inset is where its pins live.
+  "rapa-nui": {
+    chart: "rapa-nui",
+    title: "Rapa Nui, Closer",
+    line: "Easter Island, Chile: a triangle of three volcanoes some 3,700 km out in the Pacific, five and a half hours by air from Santiago. The town of Hanga Roa and the airport sit on the south-west shore; the quarry, the platforms and the walks are a short drive across the island.",
+  },
 };
 
 export default function IslandZoom({ zoom, href, cta, className = "" }: { zoom: keyof typeof ZOOMS; href?: string; cta?: string; className?: string }) {

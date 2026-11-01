@@ -5,11 +5,11 @@ import { FOUNDER_YEARS, SITE } from "@/lib/site";
 // The founder's testimony, in one place for every record page: the specific
 // proof for this page (he went, when, with whom) and the standing credential.
 // A visible, plain-text fact for readers and for AI answers alike.
-export default function FounderProof({ proof, className = "", seal, note }: { proof: string; className?: string; seal?: string | null; note?: string | null }) {
+export default function FounderProof({ proof, className = "", seal, note, eyebrow = "Vetted in person · the founder\u2019s testimony" }: { proof: string; className?: string; seal?: string | null; note?: string | null; /** Override only where he has not been (a destination filed from research), so the line never claims a visit. */ eyebrow?: string }) {
   return (
     <aside className={`border-l-2 border-crimson pl-5 py-1 ${seal ? "sm:flex sm:items-center sm:gap-8 sm:!max-w-4xl" : ""} ${className}`} aria-label="The founder's testimony">
       <div className="min-w-0">
-      <p className="ledger-eyebrow ledger-crimson">Vetted in person · the founder&rsquo;s testimony</p>
+      <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>
       <p className="ledger-display text-[18px] md:text-[20px] leading-snug mt-1.5">{proof}</p>
       {note && <p className="mt-1.5 text-[15px] leading-relaxed">{note}</p>}
       <p className="mt-2 text-[14.5px] ledger-muted leading-relaxed">

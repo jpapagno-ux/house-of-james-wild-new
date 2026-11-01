@@ -107,7 +107,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
 
           {IGGI_ON && (
             <IggiPanel
-              ctx={{ entityType: "advisor", entitySlug: a.slug, sourcePage: path }}
+              ctx={{ entityType: "advisor", entitySlug: a.slug, sourcePage: path, advisor: a.slug }}
               heading={`Ask Iggi before you write to ${a.firstName}`}
               lead={`Iggi can sketch the journey from the Ledger first — places, seasons, what the house has actually vetted — so your first note to ${a.firstName} starts further along. Prices and bookings stay with ${a.firstName}.`}
             />

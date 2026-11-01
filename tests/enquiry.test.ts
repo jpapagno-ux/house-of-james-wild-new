@@ -31,3 +31,26 @@ test("Folio email comes from myfolio@ and carries the traveller's ID", () => {
   assert.equal(INBOXES.folio, "myfolio@jameswildco.com");
   assert.equal(folioSubject("JWC-2027-000123", "Booking confirmed"), "Booking confirmed · Folio JWC-2027-000123");
 });
+
+// Advisor-led handoff (James, 31 Oct 2026): a real advisor gets the enquiry
+// directly with hello@ copied; James, stand-ins and the unlisted go to hello@.
+import { deliveryFor, parseAdvisorInboxes } from "../lib/inbox.ts";
+test("ADVISOR_INBOXES parses slug=email pairs and drops junk", () => {
+  assert.deepEqual(parseAdvisorInboxes("anthony-papagno=Anthony@Example.com, kristina-larson=k@example.com, bad=nope,"), { "anthony-papagno": "anthony@example.com", "kristina-larson": "k@example.com" });
+  assert.deepEqual(parseAdvisorInboxes(undefined), {});
+});
+test("a listed advisor is addressed directly with hello@ copied", () => {
+  const inboxes = { "anthony-papagno": "anthony@example.com" };
+  assert.deepEqual(deliveryFor({ context: { advisor: "anthony-papagno" } }, inboxes), { to: "anthony@example.com", cc: ["hello@jameswildco.com"] });
+  assert.deepEqual(deliveryFor({ context: { advisor: "james-papagno" } }, { "james-papagno": "x@example.com" }), { to: "hello@jameswildco.com", cc: [] });
+  assert.deepEqual(deliveryFor({ context: { advisor: "sofia-marchetti" } }, inboxes), { to: "hello@jameswildco.com", cc: [] });
+  assert.deepEqual(deliveryFor({ context: { from: "advisor-application", advisor: "anthony-papagno" } }, inboxes), { to: "advisors@jameswildco.com", cc: [] });
+});
+test("what Iggi learned travels with the enquiry", () => {
+  const m = enquiryEmail({ ...base, context: { from: "iggi", advisor: "anthony-papagno", folio: "FOL-2026-000012", q: "Raja Ampat", notes: "Two divers, late Nov; <ruled out> liveaboards over 12 cabins." } });
+  assert.match(m.subject, /^Trip enquiry \(from Iggi\)/);
+  assert.match(m.text, /Folio: FOL-2026-000012/);
+  assert.match(m.text, /Asked about: Raja Ampat/);
+  assert.match(m.text, /What Iggi learned:\nTwo divers/);
+  assert.ok(m.html.includes("&lt;ruled out&gt;") && m.html.includes("What Iggi learned"));
+});

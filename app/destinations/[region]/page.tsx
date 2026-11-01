@@ -217,7 +217,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
 
           <AdvisorScroll regionSlug={r.slug} title={`Who knows ${r.name}`} />
 
-          <PlanBand place={r.name} compassHref="/compass" />
+          <PlanBand place={r.name} compassHref="/compass" where={{ regionSlug: r.slug }} />
         </div>
       </main>
       {journeys.length > 0 && <JsonLd data={graph({ "@type": "ItemList", name: `Journeys and voyages in ${r.name}`, itemListElement: journeys.map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: `${j.eyebrow}. ${j.line}.` }) })) })} />}

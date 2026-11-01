@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { validateEnquiry, type Enquiry } from "@/lib/enquiry";
-import { inboxFor } from "@/lib/inbox";
+import { deliveryFor, parseAdvisorInboxes } from "@/lib/inbox";
 import { enquiryEmail } from "@/lib/enquiry-email";
 
 // POST /api/enquiry: validates an enquiry from /plan and delivers it by
@@ -12,6 +12,8 @@ import { enquiryEmail } from "@/lib/enquiry-email";
 //   RESEND_API_KEY       from resend.com, after jameswildco.com is verified
 //   ENQUIRY_FROM         optional; defaults to "James Wild & Co <hello@jameswildco.com>"
 //   ENQUIRY_LIVE         "on" to start sending
+//   ADVISOR_INBOXES      optional; "anthony-papagno=…,kristina-larson=…" — a real
+//                        advisor gets enquiries addressed to them, hello@ copied
 
 export async function POST(req: Request) {
   let body: Partial<Enquiry>;
@@ -21,15 +23,15 @@ export async function POST(req: Request) {
   if (Object.keys(errors).length) return NextResponse.json({ ok: false, errors }, { status: 422 });
 
   const key = process.env.RESEND_API_KEY;
-  const to = inboxFor(body) ?? process.env.ENQUIRY_TRIPS_TO ?? null;
-  const live = process.env.ENQUIRY_LIVE === "on" && !!key && !!to;
-  if (!live) return NextResponse.json({ ok: true, live: false }, { status: 202 });
+  const delivery = deliveryFor(body, parseAdvisorInboxes(process.env.ADVISOR_INBOXES), process.env.ENQUIRY_TRIPS_TO ?? null);
+  const live = process.env.ENQUIRY_LIVE === "on" && !!key && !!delivery;
+  if (!live || !delivery) return NextResponse.json({ ok: true, live: false }, { status: 202 });
 
   const mail = enquiryEmail(body as Enquiry);
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from: process.env.ENQUIRY_FROM ?? "James Wild & Co <hello@jameswildco.com>", to: [to], reply_to: body.email, subject: mail.subject, text: mail.text, html: mail.html }),
+    body: JSON.stringify({ from: process.env.ENQUIRY_FROM ?? "James Wild & Co <hello@jameswildco.com>", to: [delivery.to], ...(delivery.cc.length ? { cc: delivery.cc } : {}), reply_to: body.email, subject: mail.subject, text: mail.text, html: mail.html }),
   });
   if (!res.ok) {
     console.error("enquiry: resend failed", res.status, await res.text().catch(() => ""));

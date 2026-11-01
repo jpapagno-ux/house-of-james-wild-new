@@ -239,3 +239,18 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-needle { transform-box: view-box; transform-origin: 50% 50%; animation: jw-needle 7s ease-in-out infinite; }
 a:hover .jw-needle { animation-duration: 1.6s; }
 @media (prefers-reduced-motion: reduce) { .jw-needle { animation: none; } }
+
+/* ---------- The Exceptional Few™: contextual tokens (Stage 4, 1 Nov 2026) ----------
+   Additive only. A designated Stay keeps its white page, Stays green marks and House
+   Crimson; the five --ef-* tokens tint only the Exceptional Few modules. One palette per
+   property (palette_key in the Exceptional Few table). No volume hex lives here, so
+   scripts/check-palette.mjs is unaffected. */
+.theme-ef { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+/* amangiri (Canyon Point, Utah): sandstone, muted rust, desert ivory, dusk grey-plum, pale limestone. */
+.theme-ef-amangiri { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+.ef-module { --jw-card: var(--ef-landscape); }
+.ef-eyebrow { color: var(--ef-earth); }
+.ef-rule { border-color: var(--ef-sand); }
+.ef-caption { color: var(--ef-shadow); }
+.ef-wash { background: var(--ef-landscape); }
+.ef-tint { background: var(--ef-accent); }

@@ -109,7 +109,7 @@
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Kenya: 35 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
+  "title": "Kenya: 36 Vetted Stays, Routes and When to Go | James Wild &amp; Co"
  },
  "/destinations/africa/madagascar": {
   "canonical": "https://www.jameswildco.com/destinations/africa/madagascar",
@@ -144,14 +144,14 @@
   "h1": 1,
   "jsonld": 8,
   "robots": "index, follow",
-  "title": "South Africa: 45 Vetted Stays, Routes and When to Go"
+  "title": "South Africa: 46 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/tanzania": {
   "canonical": "https://www.jameswildco.com/destinations/africa/tanzania",
   "h1": 1,
   "jsonld": 6,
   "robots": "index, follow",
-  "title": "Tanzania: 32 Vetted Stays, Routes and When to Go"
+  "title": "Tanzania: 34 Vetted Stays, Routes and When to Go"
  },
  "/destinations/africa/zambia": {
   "canonical": "https://www.jameswildco.com/destinations/africa/zambia",
@@ -902,6 +902,97 @@
   "robots": "noindex, nofollow",
   "title": "Aguas Claras on Between Tides (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/aliikai-voyage": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/aliikai-voyage",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Aliikai Voyage on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/alila-ventana-big-sur": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/alila-ventana-big-sur",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Alila Ventana Big Sur on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/alya-catamaran-galapagos": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/alya-catamaran-galapagos",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Alya Gal\u00e1pagos Catamaran on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/amandari": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/amandari",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Amandari on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/amazon-field-station-byinkaterra": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/amazon-field-station-byinkaterra",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Amazon Field Station by Inkaterra on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/ambiente-tm-sedona": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ambiente-tm-sedona",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Room &amp; Wild Ambiente Sedona Landscape Hotel on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/amor-arenal": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/amor-arenal",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Amor Arenal on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/anantara-bophut-koh-samui-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-bophut-koh-samui-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Bophut Koh Samui Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/anantara-chiang-mai-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-chiang-mai-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Chiang Mai Resort on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/anantara-golden-triangle-chiang-rai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-golden-triangle-chiang-rai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Golden Triangle Elephant Camp &amp; Resort on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/anantara-hua-hin": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-hua-hin",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Hua Hin Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/anantara-mui-ne": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-mui-ne",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Mui Ne on A Place of Our Own (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/anantara-ubud-bali": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/anantara-ubud-bali",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Ubud Bali on The Art of Stillness (preview)"
+ },
  "/preview/pathways/stay/angama-amboseli": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/angama-amboseli",
   "h1": 1,
@@ -923,12 +1014,68 @@
   "robots": "noindex, nofollow",
   "title": "Angama Safari Camp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/arenal-springs-camp-by-nayara": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/arenal-springs-camp-by-nayara",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Arenal Springs Camp by Nayara on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/arenas-del-mar-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/arenas-del-mar-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Arenas del Mar Resort on Into the Green (preview)"
+ },
  "/preview/pathways/stay/ariel-house": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/ariel-house",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Ariel House on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/arijiju-laikipia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/arijiju-laikipia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Arijiju Private on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/armendaris-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/armendaris-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Armendaris, a Ted Turner Reserve on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/asilia-dunia-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/asilia-dunia-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Dunia Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/asilia-naboisho-camp-by-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/asilia-naboisho-camp-by-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Naboisho Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/asilia-olivers-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/asilia-olivers-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Oliver\u2019s Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/asilia-rekero-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/asilia-rekero-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Rekero Camp by Asilia on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/atzaro-okavango-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/atzaro-okavango-camp",
@@ -937,12 +1084,82 @@
   "robots": "noindex, nofollow",
   "title": "Atzar\u00f3 Okavango on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/awasi-atacama": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/awasi-atacama",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Awasi Atacama on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/awasi-mendoza": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/awasi-mendoza",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mendoza on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/awasi-patagonia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/awasi-patagonia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Patagonia on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/awasi-santa-catarina": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/awasi-santa-catarina",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Santa Catarina on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/babylonstoren": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/babylonstoren",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Babylonstoren on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/baines-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/baines-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Baine&#x27;s Lodge on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/bateleur-camp-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/bateleur-camp-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Bateleur Camp By &amp; Beyond on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/baymanhi-exuma": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/baymanhi-exuma",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Baymahni Island Escape on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/be-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/be-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Be Tulum on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/beckon-capella-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-capella-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Capella Lodge on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/beckon-huka-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-huka-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Huka Lodge on Rooted in Place (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/beckon-longitude-131": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-longitude-131",
@@ -958,12 +1175,159 @@
   "robots": "noindex, nofollow",
   "title": "Silky Oaks Lodge on Into the Green (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/beckon-southern-ocean-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-southern-ocean-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Southern Ocean Lodge on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/beckon-the-louise": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-the-louise",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Louise on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/beckon-tierra-atacama": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beckon-tierra-atacama",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tierra Atacama on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/benguerra-island-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/benguerra-island-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Benguerra Island by &amp; Beyond on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/beyond-amazon-explorer": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-amazon-explorer",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp; Beyond Amazon Explorer on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/beyond-grumeti-safari-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-grumeti-safari-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp;Beyond Grumeti Serengeti River Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/beyond-kichwa-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-kichwa-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp;Beyond Kichwa Tembo Tented Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/beyond-kleins-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-kleins-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp;Beyond Klein\u2019s Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/beyond-lake-serengeti-under-canvas": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-lake-serengeti-under-canvas",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp; Beyond Phinda Homestead Residence on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/beyond-mnemba-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-mnemba-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mnemba Island by &amp;Beyond on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/beyond-sussuvlei-desert-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-sussuvlei-desert-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp; Beyond Sossusvlei Desert Lodge on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/beyond-vira-vira-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/beyond-vira-vira-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp; Beyond Vira Vira on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/birkenhead-house": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/blancaneaux-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/blancaneaux-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Blancaneaux Lodge on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/blue-reef": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/blue-reef",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Blue Reef on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/blue-safari-seychelles": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/blue-safari-seychelles",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Blue Safari Seychelles on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/boluntiku-hotel": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/borana": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/borana",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Borana Lodge Laikipia Kenya on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/breac-house": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/breac-house",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Breac.House on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/bumi-hills-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/bumi-hills-safari-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Bumi Hills Safari Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/camp-hwange-muddy-teak": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/camp-hwange-muddy-teak",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Camp Hwange &amp; Muddy Teak on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/cap-karoso": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/cap-karoso",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Cap Karoso on Between Tides (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/cape-cadogan-boutique-hotel": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/cape-cadogan-boutique-hotel",
@@ -972,6 +1336,27 @@
   "robots": "noindex, nofollow",
   "title": "Cape Cadogan Boutique Hotel on Rooted in Place (preview)"
  },
+ "/preview/pathways/stay/capella-ubud": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/capella-ubud",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Capella Ubud Bali on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/cardamom-tented-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/cardamom-tented-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Cardamom Tented Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/casa-maya-kaan": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/casa-maya-kaan",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Casa Maya Ka&#x27;an on A Place of Our Own (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/castle-leslie": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/castle-leslie",
   "h1": 1,
@@ -979,12 +1364,117 @@
   "robots": "noindex, nofollow",
   "title": "Castle Leslie Estate on Rooted in Place (preview)"
  },
+ "/preview/pathways/stay/celestia-yacht": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/celestia-yacht",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Celestia Yacht Where Sea Meets Soul on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/chable-yucatan": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chable-yucatan",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chabl\u00e9 Yucat\u00e1n on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/chamilandu-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chamilandu-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chamilandu Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/cheetah-plains": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/cheetah-plains",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Cheetah Plains Eco\u2011Luxury Private Villas on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/chem-chem": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chem-chem",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chem Chem Safari Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/chiawa-safaris": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chiawa-safaris",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chiawa Safaris on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/chindeni-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chindeni-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chindeni Lodge on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/chisa-busanga-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/chisa-busanga-camp",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Chisa Busanga Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/chobe-under-canvas-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chobe-under-canvas-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "&amp; Beyond Chobe Under Canvas on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/chumbe-island-zanzibar": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/chumbe-island-zanzibar",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Chumbe Isalnd Escape Zanzibar on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/clayoquot-wilderness-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/clayoquot-wilderness-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Clayoquot Wilderness Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/coco-costa-rica": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/coco-costa-rica",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Coco Costa Rica on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/coco-plum-island-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/coco-plum-island-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Coco Plum Island Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/como-shambhala-estate": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/como-shambhala-estate",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Como Shambhala Estate on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/conrad-tulum-riviera-maya": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/conrad-tulum-riviera-maya",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Conrad Tulum Riviera Maya on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/coot-club": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/coot-club",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Coot Club on Where the Wild Lives (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/corks-vienna-woods": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/corks-vienna-woods",
@@ -1000,6 +1490,48 @@
   "robots": "noindex, nofollow",
   "title": "Cottar\u2019s 1920\u2019s Safari Camp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/da-licenca": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/da-licenca",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "D\u00e1 Licen\u00e7a on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/daunara-safari-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/daunara-safari-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Daunara Safari Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/dukes-camp-okavango": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/dukes-camp-okavango",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Duke&#x27;s Camp Okavango on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/dulini-anabezi-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/dulini-anabezi-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Anabezi Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/dulini-daunara-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/dulini-daunara-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Daunara Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/dulini-leadwood-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/dulini-leadwood-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Dulini Leadwood Lodge on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/dulini-moya-lodge": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/dulini-moya-lodge",
   "h1": 1,
@@ -1007,12 +1539,250 @@
   "robots": "noindex, nofollow",
   "title": "Dulini Moya Lodge on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/dulini-river-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/dulini-river-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Dulini River Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/ecocamp-patagonia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ecocamp-patagonia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "EcoCamp Patagonia on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ecoventura-evolve-yacht": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ecoventura-evolve-yacht",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Eco Evolve Gal\u00e1pagos Yachting on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/ecoventura-origin-yacht": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ecoventura-origin-yacht",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Eco Origin on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ecoventura-theory-yacht": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ecoventura-theory-yacht",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Eco Theory Yacht on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/el-mapi-byinkaterra": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/el-mapi-byinkaterra",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "El MaPi byInkaterra on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/elephann-pan-khwai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/elephann-pan-khwai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Elephant Pan Khwai on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/ellerman-house": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/ellerman-house",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Ellerman House Cape Town on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/elsas-kopje": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/elsas-kopje",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Elsas Kopje Meru Kenya on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/encounter-mara-camp-by-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/encounter-mara-camp-by-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Encounter Mara Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/entamanu-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/entamanu-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Entamanu Ngorongoro on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/entamanu-private-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/entamanu-private-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Entamanu Private on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/entara-esirai-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/entara-esirai-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Esirai Mobile Migration Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/etosha-mountain-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/etosha-mountain-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Etosha Mountain Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/explora-at-atacama": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-at-atacama",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Explora Atacama on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/explora-el-calafate": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-el-calafate",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Explora El Calafate on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/explora-el-chalten": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-el-chalten",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "El Chalt\u00e9n on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/explora-rapa-nui": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-rapa-nui",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Explora Rapa Nui on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/explora-sacred-valley": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-sacred-valley",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Explora Sacred Valley on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/explora-torres-del-paine": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/explora-torres-del-paine",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Torres del Paine on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/feline-fields-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/feline-fields-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Feline Fields Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/feline-fields-vintage-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/feline-fields-vintage-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Feline Fields Vintage Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/fogo-island-inn": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/fogo-island-inn",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Room &amp; Wild Fogo Island Inn on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/gibbs-farm": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/gibbs-farm",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Gibbs Farm on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/giraffe-manor": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/giraffe-manor",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Giraffe Manor on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/gomoti-plains-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/gomoti-plains-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Gomoti Plains on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/gorongosa-safaris": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/gorongosa-safaris",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Gorongosa Safaris Mozambique on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/great-plains-duba-plains": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/great-plains-duba-plains",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Duba Plains Camp by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/great-plains-selinda-main-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/great-plains-selinda-main-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Selinda Main Camp by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/great-plains-zarafa-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/great-plains-zarafa-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Zarafa Camp by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/great-plains-zarafa-dhow-suite": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/great-plains-zarafa-dhow-suite",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Zarafa Dhow Suite by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/greystoke-mahale-by-nomad": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/greystoke-mahale-by-nomad",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Greystoke Mahale By Nomad on Above It All (preview)"
+ },
+ "/preview/pathways/stay/grootbos-private-nature-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/grootbos-private-nature-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Grootbos Private Nature Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/gwe-gwe-beach": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/gwe-gwe-beach-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/gwe-gwe-beach-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Gwe Gwe Beach Lodge on Between Tides (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/hayfield-manor": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/hayfield-manor",
@@ -1028,6 +1798,62 @@
   "robots": "noindex, nofollow",
   "title": "Hemingways Nairobi on Rooted in Place (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/hermanus-private-residences": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/hidden-valley-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/hidden-valley-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Hidden Valley Lodge on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/holistika": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/holistika",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Holistika on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/hotel-bardo": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/hotel-bardo",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Hotel Bardo on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/hotel-panamera": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/hotel-panamera",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Hotel Panamera on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/house-in-the-wild": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/house-in-the-wild",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "House in the Wild on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/house-in-the-wild-masai-mara": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/house-in-the-wild-masai-mara",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "House in the Wild Masai Mara Kenya on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/iguazu": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/iguazu",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Iguazu on Into the Green (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/ila-safari-lodge": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/ila-safari-lodge",
   "h1": 1,
@@ -1035,12 +1861,250 @@
   "robots": "noindex, nofollow",
   "title": "Ila Safari Lodge on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/inkaterra-cabo-blanco": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-cabo-blanco",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra Cabo Blanco on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/inkaterra-hacienda-concepcion": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-hacienda-concepcion",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra Hacienda Concepcion on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/inkaterra-hacienda-urubamba": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-hacienda-urubamba",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra Hacienda Urubamba on Above It All (preview)"
+ },
+ "/preview/pathways/stay/inkaterra-la-casona": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-la-casona",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra La Casona on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/inkaterra-machu-picchu-pueblo-hotel": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-machu-picchu-pueblo-hotel",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra Machu Picchu Pueblo Hotel on Above It All (preview)"
+ },
+ "/preview/pathways/stay/inkaterra-reserva-amazonica": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/inkaterra-reserva-amazonica",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Inkaterra Reserva Amazonica on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/isla-palenque-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/isla-palenque-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Isla Palenque Resort on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/isla-secas": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/isla-secas",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Islas Secas Private Island on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/isla-secas-panama": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/isla-secas-panama",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Islas Secas Private Island Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/ja-manufaru-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ja-manufaru-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "JA Manafaru Maldives Luxury Island Residences on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/jabulani": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/jacana-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jacana-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jacana Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/jacis-private-lodge": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/jacis-private-lodge",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Jaci&#x27;s Private Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/jacks-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jacks-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jack&#x27;s Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/jacks-private-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jacks-private-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jack&#x27;s Private Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/jaguar-reef-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jaguar-reef-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jaguar Reef Lodge on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/jao-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jao-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jao Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/jao-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/jao-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Jao Reserve on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ka-ana-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ka-ana-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ka&#x27;ana Resort on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/kaaba-luum-mexico": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kaaba-luum-mexico",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kaaba Luum Wellness on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/kamalaya-koh-samui": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kamalaya-koh-samui",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kamalaya Koh Samui on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/kayumanis-jimbaran-private-estates": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kayumanis-jimbaran-private-estates",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kayumanis Jimbaran Private Estates on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/kayumanis-nusa-dua": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kayumanis-nusa-dua",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kayumanis Nusa Dua Private Villa &amp; Spa on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/kayumanis-ubud": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kayumanis-ubud",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kayumanis Ubud Private Villas &amp; Spa on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/khwai-leadwood-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/khwai-leadwood-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Khwai Leadwood Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/khwai-lediba": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/khwai-lediba",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Khwai Lediba on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/kichakani-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kichakani-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kichakani Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kicheche-mara-north": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kicheche-mara-north",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kicheche Mara North on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kokoko-camp-by-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kokoko-camp-by-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kokoko Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kruger-shalati": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/kualoa-ranch": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kualoa-ranch",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kualoa Ranch on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/kudadoo-private-island": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kudadoo-private-island",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kudadoo Maldives Private Island on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/kura-boutique-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kura-boutique-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kura Boutique Hotel on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/kwande-private-game-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwande-private-game-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwandwe Private Game Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-4-rivers": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-4-rivers",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando 4 Rivers Camp on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/kwando-kwara": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-kwara",
@@ -1063,6 +2127,104 @@
   "robots": "noindex, nofollow",
   "title": "Kwando Lebala Camp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/kwando-mma-dinare": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-mma-dinare",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Mma Dinare Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-moremi-crossing": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-moremi-crossing",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Moremi Crossing Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-nxai-pan": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-nxai-pan",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Nxai Pan Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-pom-pom": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-pom-pom",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Pom Pom Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-rra-dinare": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-rra-dinare",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Rra Dinare Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-splash": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-splash",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Splash Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/kwando-tau-pan": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwando-tau-pan",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwando Tau Pan Camp on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/kwetsani-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/kwetsani-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Kwetsani Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/la-cle": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/la-cle",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "La Cle on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/la-residence": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/la-residence",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "La Residence on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/la-tahaa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/la-tahaa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Le Taha\u2019a by Pearl Resorts on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/la-valise-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/la-valise-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "La Valise Tulum on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ladder-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ladder-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ladder, a Ted Turner Reserve on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/lales-camp-expeditions": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lales-camp-expeditions",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lale\u2019s Camp &amp; Expeditions on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/lalibela-reserve": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/lalibela-reserve",
   "h1": 1,
@@ -1070,12 +2232,68 @@
   "robots": "noindex, nofollow",
   "title": "Lalibela Reserve on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/lapa-rios-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lapa-rios-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lapa Rios Lodge on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/le-quartier-francais": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/le-quartier-francais",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Le Quartier Francais on Rooted in Place (preview)"
+ },
  "/preview/pathways/stay/leeu-estates": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/leeu-estates",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Leeu Estates on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/leeu-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/leeu-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Leeu House on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/lekkerwater-dehoop": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lekkerwater-dehoop",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lekkerwater Beach Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/lengishu-kenya": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lengishu-kenya",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lengishu on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/leopard-hills": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/leopard-hills",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Leopard Hills Private Game Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/lepogo-lodges": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/lewa-wilderness-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lewa-wilderness-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lewa Wilderness Lodge on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/linyanti-ebony-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/linyanti-ebony-camp",
@@ -1091,12 +2309,40 @@
   "robots": "noindex, nofollow",
   "title": "Linyanti Expeditions on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/linyanti-wilderness-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/linyanti-wilderness-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Linyanti Wilderness Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/lion-sands": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/lion-sands",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Lion Sands Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/little-tubu-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/little-tubu-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Little Tubu Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/loirien-mara": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/loirien-mara",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lorien Mara on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/lolebezi-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/lolebezi-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lolebezi Lodge on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/londolozi-reserve": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/londolozi-reserve",
@@ -1105,6 +2351,13 @@
   "robots": "noindex, nofollow",
   "title": "Londolozi Reserve on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/machaba": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/machaba",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Machaba Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/madikwe": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/madikwe",
   "h1": 1,
@@ -1112,12 +2365,173 @@
   "robots": "noindex, nofollow",
   "title": "Madikwe Game Reserve on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/manyara-tree-lodge-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/manyara-tree-lodge-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Lake Manyara Tree Lodge By &amp; Beyond on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/mara-plains-camp-by-great-plains": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/mara-plains-camp-by-great-plains",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mara Plains Camp by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/mara-toto-tree-camp-by-great-plains": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/mara-toto-tree-camp-by-great-plains",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mara Toto Tree Camp by Great Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/masoala-forest-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/masoala-forest-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Masoala Forest Lodge on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/matachica-resort-and-spa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/matachica-resort-and-spa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Matachica Resort &amp; Spa on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/matetsi-victoria-falls": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/matetsi-victoria-falls",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Matetsi Victoria Falls on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/meno-a-kwena-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/meno-a-kwena-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Meno A Kwena Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/mezzanine-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/mezzanine-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mezzanine Tulum on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/mfuwe-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/mfuwe-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mfuwe Lodge on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/miavana-by-time-tide": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/miavana-by-time-tide",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Miavana by Time + Tide on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/monachira-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/monachira-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Monachira Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/monwana-thornybush": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/monwana-thornybush",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Monwana Thornybush on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/morukuru-farm-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/morukuru-farm-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Morukuru Farm House on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/mutiara-laut": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/mutiara-laut",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Mutiara Laut \u201cPearl of the Sea\u201d on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/namale-resort-and-spa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/namale-resort-and-spa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Namale Resort &amp; Spa on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nami-project": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nami-project",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Room &amp; Wild The Nami Project on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/namiri-plains-camp-by-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/namiri-plains-camp-by-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Namiri Plains Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/nautilus-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nautilus-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nautilus Maldives on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nay-palad-hideaway": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nay-palad-hideaway",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nay Palad Hideaway on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nayara-alto-atacama": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nayara-alto-atacama",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nayara Alto Atacama on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nayara-bocas-del-toro": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nayara-bocas-del-toro",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nayara Bocas del Toro on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/nayara-gardens": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nayara-gardens",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nayara Gardens on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nayara-hangaroa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nayara-hangaroa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nayara Hangaroa Rapa Nui on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/nayara-tented-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nayara-tented-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nayara Tented Camp on Into the Green (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stay/ngala-safari-lodge-by-beyond": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/ngala-safari-lodge-by-beyond",
@@ -1133,12 +2547,194 @@
   "robots": "noindex, nofollow",
   "title": "Ngare Camp Serian on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/nihi": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nihi",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "NIHI Sumba The Edge of Wildness on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/nikoi-island": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nikoi-island",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nikoi Island on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nimali-mara": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nimali-mara",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nimali Mara on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/nimali-serengeti": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nimali-serengeti",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nimali Serengeti on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/niyama-private-islands-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/niyama-private-islands-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Niyama Private Islands Maldives on Between Tides (preview)"
+ },
  "/preview/pathways/stay/no-1-pery-square-limerick": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/no-1-pery-square-limerick",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "No.1 Pery Square Limerick on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/noah-forest-by-tifakara": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/nomad-tanzania-lamai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nomad-tanzania-lamai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nomad Tanzania Lamai Serengeti on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/nomade-holbox": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nomade-holbox",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "WildEarth N\u00f4made Holbox on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/nomade-temple-ibiza": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nomade-temple-ibiza",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nomade Temple Ibiza on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/nomade-temple-madrid": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nomade-temple-madrid",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nomade Temple Madrid Coming 2025 on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/nomade-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nomade-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nomade Tulum on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/north-island-okavango": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/north-island-okavango",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "North Island Okavango on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/nyungwe-tea-forest-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/nyungwe-tea-forest-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Nyungwe Tea Forest Resort on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/ol-jogi-conservancy": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ol-jogi-conservancy",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ol Jogi Conservancy - Kenya on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/ol-pejeta-bush-camp-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ol-pejeta-bush-camp-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ol Pejeta Bush Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/olas-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/olas-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Olas Tulum on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/one-only-gorillas-nest": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/one-only-gorillas-nest",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "One&amp;Only Gorilla&#x27;s Nest on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/open-sky": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/open-sky",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Open Sky Zion on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/our-habitas-namibia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/our-habitas-namibia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Our Habitas Namibia on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/our-habitas-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/our-habitas-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Our Habitas Tulum on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/pacuare-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pacuare-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pacuare Lodge on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/paws-up-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/paws-up-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Paws Up Resort on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/pearl-resort-le-bora-bora": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-le-bora-bora",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pearl Resort Le Borabora on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/pearl-resort-le-nuku-hiva": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-le-nuku-hiva",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pearl Resort Le Nuku Hiva on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/pearl-resort-le-tahiti": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-le-tahiti",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pearl Resort Le Tahiti on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/pearl-resort-le-tikehau": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-le-tikehau",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pearl Resort Le Tikehau on Between Tides (preview)"
  },
  "/preview/pathways/stay/pearl-resort-vahine-private-island": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/pearl-resort-vahine-private-island",
@@ -1147,12 +2743,110 @@
   "robots": "noindex, nofollow",
   "title": "Vahine Private Island on Between Tides (preview)"
  },
+ "/preview/pathways/stay/pelo-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pelo-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pelo Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/phinda-homestead-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/phinda-homestead-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Phinda Homestead by &amp;Beyond on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/pods-camp-bay": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pods-camp-bay",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pods Camp Bay on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/post-ranch-inn": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/post-ranch-inn",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Room &amp; Wild Post Ranch Inn on The Art of Stillness (preview)"
+ },
  "/preview/pathways/stay/potato-bush-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/potato-bush-camp",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Potato Bush Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/pu-u-hoko-ranch": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/pu-u-hoko-ranch",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Pu&#x27;u O Hoku Ranch on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/radhoo-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/radhoo-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Radhoo Tulum on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/rayvadee-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/rayvadee-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Rayavadee Resort on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/royal-davui-island-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/royal-davui-island-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Royal Davui Island Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/royal-malewane": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/royal-malewane",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Royal Malewane on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/royal-zambezi-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/royal-zambezi-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Royal Zambezi Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/rubondo-island-camp-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/rubondo-island-camp-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Rubondo Island Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sable-alley-khwai": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sable-alley-khwai",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sable Alley Khwai on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/salas-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/salas-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sala\u2019s Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/samara-karoo-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/samara-karoo-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Samara Karoo Reserve on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/sans-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/sans-camp",
@@ -1161,12 +2855,75 @@
   "robots": "noindex, nofollow",
   "title": "San Camp on Off the Map (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/saruni-eagle-view": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/saruni-eagle-view",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Saruni Eagle View on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/saruni-leopard-hill": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/saruni-leopard-hill",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Saruni Leopard Hill on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/saruni-samburu-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/saruni-samburu-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Saruni Samburu Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/saruni-wild-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/saruni-wild-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Saruni Wild Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sasaab": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sasaab",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sasaab Lodge Northern Kenya on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sashwa": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
  "/preview/pathways/stay/sausage-tree-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/sausage-tree-camp",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Sausage Tree Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sayari-camp-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sayari-camp-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sayari Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/segera-retreat": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/segera-retreat",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Segera Retreat on A Place of Our Own (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/senda-monteverde-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/senda-monteverde-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Senda Monteverde Lodge on Into the Green (preview)"
  },
  "/preview/pathways/stay/serengeti-lamai-camp-by-serian": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/serengeti-lamai-camp-by-serian",
@@ -1175,12 +2932,47 @@
   "robots": "noindex, nofollow",
   "title": "Serengeti Lamai Camp By Serian on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/seseka-thornybush": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/seseka-thornybush",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Seseke Tented Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/shawa-luangwa-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/shawa-luangwa-camp",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Shawa Luangwa Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/shinta-mani-wild": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/shinta-mani-wild",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Shinta Mani Wild on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/shipwreck-lodge-namibia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/shipwreck-lodge-namibia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Shipwreck Lodge on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/sierra-grande-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sierra-grande-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sierra Grande Lodge &amp; Spa on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/silolona-sojourns": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/silolona-sojourns",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Silolona Sojourns Indonesia on Between Tides (preview)"
  },
  "/preview/pathways/stay/sindabezi-island-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/sindabezi-island-camp",
@@ -1196,12 +2988,103 @@
   "robots": "noindex, nofollow",
   "title": "Singita Boulders Lodge on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/singita-castleton": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-castleton",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Castleton on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-ebony": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-ebony",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Ebony Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-ebony-villa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-ebony-villa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Ebony Villa on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-elela": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-elela",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Elela on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
  "/preview/pathways/stay/singita-faru-faru-lodge": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-faru-faru-lodge",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Singita Faru Faru Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-katanza-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-katanza-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Kataza House on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-kilima": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-kilima",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Kilima on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-kwitonda": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-kwitonda",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Kwitonda Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-lebombo": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-lebombo",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Lebombo Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-lebombo-villa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-lebombo-villa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Lebombo Villa on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-malilangwe-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-malilangwe-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Malilangwe House on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-mara-river": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-mara-river",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Mara River Tented Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-milele": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-milele",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Milele on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-pamushana": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-pamushana",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Pamushana Lodge on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/singita-sabora": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-sabora",
@@ -1217,12 +3100,271 @@
   "robots": "noindex, nofollow",
   "title": "Singita Sasakwa Lodge on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/singita-serengeti-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-serengeti-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Serengeti House on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/singita-sweni": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/singita-sweni",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Singita Sweni Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sirai-house": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sirai-house",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sirai House on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/sirikoi-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sirikoi-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sirikoi Lodge on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/sirius-yacht-galapagos": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sirius-yacht-galapagos",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sirius Gal\u00e1pagos Yacht on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/siwa-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/siwa-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Siwa Tulum on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/six-senses-con-dao": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-con-dao",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Con Dao on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/six-senses-crans-montana": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-crans-montana",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Crans-Montana on Above It All (preview)"
+ },
+ "/preview/pathways/stay/six-senses-douro-valley": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-douro-valley",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Douro Valley on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/six-senses-fiji": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-fiji",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Fiji on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/six-senses-ibiza": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-ibiza",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Ibiza on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-kanuhura": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-kanuhura",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Kanuhura on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/six-senses-krabey-island": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-krabey-island",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Krabey Island on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-kyoto": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-kyoto",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Kyoto on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-laamu": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-laamu",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Laamu Maldives on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/six-senses-ninh-van-bay": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-ninh-van-bay",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Ninh Van Bay on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-residences-courchevel": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-residences-courchevel",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Residences Courchevel on Above It All (preview)"
+ },
+ "/preview/pathways/stay/six-senses-rome": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-rome",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Rome on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-samui": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-samui",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Samui on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-uluwatu": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-uluwatu",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Uluwatu Balir on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/six-senses-yao-noi": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-yao-noi",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Yao Noi on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/six-senses-zil-pasyon": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/six-senses-zil-pasyon",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Six Senses Zil Pasyon on Between Tides (preview)"
+ },
  "/preview/pathways/stay/skybeds-khwai": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/skybeds-khwai",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Skybeds on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/sleeping-giant-rainforest-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sleeping-giant-rainforest-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sleeping Giant Rainforest Lodge on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/somalisa-acacia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/somalisa-acacia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Somalisa Acacia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/soneva-fushi-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/soneva-fushi-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Soneva Fushi Maldives Original Barefoot Luxury on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/soneva-jani-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/soneva-jani-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Soneva Jani Maldives Exclusive Island &amp; Overwater Residences on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/soneva-secret-maldives": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/soneva-secret-maldives",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Soneva Secret Ultra\u2011Bespoke Island Retreat on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/soori-bali": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/soori-bali",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Soori Bali on The Art of Stillness (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/st-george-s-caye-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/st-george-s-caye-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "St. George&#x27;s Caye Resort on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/stanley-livingstone-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/stanley-livingstone-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Anantara Stanley &amp; Livingstone on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/sterrekopje": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/sterrekopje",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sterrekopje Healing Farm on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/suyian-lodge-by-and-beyond": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/suyian-lodge-by-and-beyond",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Suyian Lodge by &amp;Beyond on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/tabacon-thermal-resort-spa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tabacon-thermal-resort-spa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tabac\u00f3n Thermal Resort &amp; Spa on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/tahi": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tahi",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tahi New Zealand on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/tanah-gajah": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tanah-gajah",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tanah Gajah by Hadiprana on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/tanda-tula": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tanda-tula",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tanda Tula on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/tengile-mala-mala-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-mala-mala-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tengile MalaMala Camp on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/tengile-mala-mala-kirkmans-kamp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-mala-mala-kirkmans-kamp",
@@ -1231,12 +3373,159 @@
   "robots": "noindex, nofollow",
   "title": "Kirkman&#x27;s Kamp on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/tengile-mala-mala-rattrays-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-mala-mala-rattrays-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Rattray&#x27;s Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/tengile-mala-mala-sable-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-mala-mala-sable-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Sable Camp on Where the Wild Lives (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/tengile-river-lodge-by-mala-mala": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tengile-river-lodge-by-mala-mala",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tengile River Lodge by Mala Mala on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/thatch-caye-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/thatch-caye-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Thatch Caye Resort on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/the-art-villa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-art-villa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Art Villa on Into the Green (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/the-atelier-villa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-atelier-villa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Atelier Villa on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/the-beach-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-beach-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Beach Tulum on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/the-brando-tetiaroa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-brando-tetiaroa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Brando Tetiaroa Tahiti on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/the-hide-safari-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-hide-safari-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Hide Safari Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/the-highlands-by-asilia-highlands": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-highlands-by-asilia-highlands",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Highlands by Asilia on Above It All (preview)"
+ },
+ "/preview/pathways/stay/the-lodge-at-chaa-creek": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-lodge-at-chaa-creek",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Lodge at Chaa Creek on Into the Green (preview)"
+ },
+ "/preview/pathways/stay/the-original-camp-by-serian": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-original-camp-by-serian",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Original Camp By Serian on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/the-retreat-at-blue-lagoon": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/the-retreat-at-blue-lagoon",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "The Retreat at Blue Lagoon on The Art of Stillness (preview)"
+ },
+ "/preview/pathways/stay/the-silo-hotel": {
+  "canonical": null,
+  "h1": 0,
+  "jsonld": 1,
+  "robots": "noindex",
+  "title": "James Wild &amp; Co | Vetted Safaris, Stays &amp; Voyages"
+ },
+ "/preview/pathways/stay/thornybush-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/thornybush-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Thornybush Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/tierra-patagonia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tierra-patagonia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tierra Patagonia on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/time-tide-chinzombo-2": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/time-tide-chinzombo-2",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Time + Tide Chinzombo on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/time-tide-chongwe-2": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/time-tide-chongwe-2",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Time + Tide Chongwe on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/time-tide-mchenja": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/time-tide-mchenja",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Time + Tide Mchenja on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/tokoriki-island-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tokoriki-island-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tokoriki Island Resort on Between Tides (preview)"
+ },
  "/preview/pathways/stay/tongabezi": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tongabezi",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Tongabezi on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/torres-del-paine-c-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/torres-del-paine-c-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Explora Torres del Paine C. Reserve on Above It All (preview)"
  },
  "/preview/pathways/stay/tswalu-reserve": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tswalu-reserve",
@@ -1245,6 +3534,13 @@
   "robots": "noindex, nofollow",
   "title": "Tswalu Reserve Kalahari on Where the Wild Lives (preview)"
  },
+ "/preview/pathways/stay/tubu-tree-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/tubu-tree-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Tubu Tree Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/tuludi-khwai": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/tuludi-khwai",
   "h1": 1,
@@ -1252,12 +3548,222 @@
   "robots": "noindex, nofollow",
   "title": "Tuludi on Where the Wild Lives (preview) | James Wild &amp; Co"
  },
+ "/preview/pathways/stay/turtle-inn": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/turtle-inn",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Turtle Inn on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ubuntu-migration-camp-asilia": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ubuntu-migration-camp-asilia",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ubuntu Migration Camp by Asilia on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/ulum-moab": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ulum-moab",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ulum Moab on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/umaya-resort-and-marina": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/umaya-resort-and-marina",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Umaya Resort &amp; Marina on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-brtce-canyon": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-brtce-canyon",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Bryce Canyon on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-glacier": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-glacier",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Glacier on Above It All (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/under-canvas-grand-canyon": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-grand-canyon",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Grand Canyon on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-lake-powell-grand-staircase": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-lake-powell-grand-staircase",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Lake Powell Grand Staircase on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-moab": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-moab",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Moab on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-north-yellowstone": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-north-yellowstone",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas North Yellowstone on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-west-yellowstone": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-west-yellowstone",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas West Yellowstone on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-yosemite": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-yosemite",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Yosemite on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/under-canvas-zion": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/under-canvas-zion",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Under Canvas Sky Zion on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/ungasan-clifftops": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/ungasan-clifftops",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Ungasan Clifftops Uluwatu on Between Tides (preview)"
+ },
+ "/preview/pathways/stay/uxua-casa-hotel-spa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/uxua-casa-hotel-spa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Uxua Casa Hotel &amp; Spa on Rooted in Place (preview)"
+ },
+ "/preview/pathways/stay/velaa-private-island": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/velaa-private-island",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Velaa Private Island on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/vermejo-ted-turner-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/vermejo-ted-turner-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Vermejo, a Ted Turner Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/viceroy-bali": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/viceroy-bali",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Viceroy Bali Ubud&#x27;s Sanctuary on A Place of Our Own (preview)"
+ },
+ "/preview/pathways/stay/wilderness-bisate-reserve": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-bisate-reserve",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Bisate Reserve on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-busanga": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-busanga",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Busanga on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-damaraland": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-damaraland",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Doro Nawas on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/wilderness-desert-rhino-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-desert-rhino-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Desert Rhino Camp on Where the Wild Lives (preview)"
+ },
  "/preview/pathways/stay/wilderness-dumatau": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-dumatau",
   "h1": 1,
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Wilderness DumaTau on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-hoanib-skeleton-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-hoanib-skeleton-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Hoanib Skeleton Coast on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/wilderness-kulala-desert-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-kulala-desert-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Kulala Desert Lodge on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/wilderness-little-duma-tau": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-little-duma-tau",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Little Duma Tau on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-little-kulala": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-little-kulala",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Little Kulala on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/wilderness-little-mombo": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-little-mombo",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Little Mombo Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-magashi-peninsula": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-magashi-peninsula",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Magashi Peninsula Wilderness Retreat on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-mara": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-mara",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Mara on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-mokete": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-mokete",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Mokete on Where the Wild Lives (preview)"
  },
  "/preview/pathways/stay/wilderness-mombo-luxury-camp": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-mombo-luxury-camp",
@@ -1272,6 +3778,104 @@
   "jsonld": 4,
   "robots": "noindex, nofollow",
   "title": "Wilderness Qorokwe on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-ruckomechi": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-ruckomechi",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Ruckomechi on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-sabyinyo": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-sabyinyo",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Sabyinyo on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-savuti": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-savuti",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Savuti on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-serra-cafema": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-serra-cafema",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Serra Cafema on Off the Map (preview)"
+ },
+ "/preview/pathways/stay/wilderness-shumba": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-shumba",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Shumba on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-toka-leya": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-toka-leya",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Toka Leya on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-usawa": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-usawa",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Usawa Mobile Camp on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wilderness-vumbura-plains": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wilderness-vumbura-plains",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wilderness Vumbura Plains on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/wolwedans-dune-camp": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wolwedans-dune-camp",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wolwedans Dune Camp on Off the Map (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/wren-urban-nest": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/wren-urban-nest",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Wren Urban Nest on Rooted in Place (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/xanadu-island-resort": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/xanadu-island-resort",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Xanadu Island Resort on Between Tides (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/xela-tulum": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/xela-tulum",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "XELA Tulum on A Place of Our Own (preview) | James Wild &amp; Co"
+ },
+ "/preview/pathways/stay/xigera-safari-lodge": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/xigera-safari-lodge",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Xigera Safari Lodge on Where the Wild Lives (preview)"
+ },
+ "/preview/pathways/stay/zannier-sonop": {
+  "canonical": "https://www.jameswildco.com/preview/pathways/stay/zannier-sonop",
+  "h1": 1,
+  "jsonld": 4,
+  "robots": "noindex, nofollow",
+  "title": "Zannier Sonop on Off the Map (preview) | James Wild &amp; Co"
  },
  "/preview/pathways/stays": {
   "canonical": "https://www.jameswildco.com/preview/pathways/stays",
@@ -2456,6 +5060,13 @@
   "robots": "index, follow",
   "title": "Hotel Panamera, Mexico: Vetted Stay | James Wild &amp; Co"
  },
+ "/stays/house-in-the-wild": {
+  "canonical": "https://www.jameswildco.com/stays/house-in-the-wild",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "House in the Wild, Kenya: Vetted Stay | James Wild &amp; Co"
+ },
  "/stays/house-in-the-wild-masai-mara": {
   "canonical": "https://www.jameswildco.com/stays/house-in-the-wild-masai-mara",
   "h1": 1,
@@ -3155,6 +5766,20 @@
   "jsonld": 6,
   "robots": "index, follow",
   "title": "Nikoi Island, Indonesia: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/nimali-mara": {
+  "canonical": "https://www.jameswildco.com/stays/nimali-mara",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Nimali Mara, Tanzania: Vetted Stay | James Wild &amp; Co"
+ },
+ "/stays/nimali-serengeti": {
+  "canonical": "https://www.jameswildco.com/stays/nimali-serengeti",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Nimali Serengeti, Tanzania: Vetted Stay | James Wild &amp; Co"
  },
  "/stays/niyama-private-islands-maldives": {
   "canonical": "https://www.jameswildco.com/stays/niyama-private-islands-maldives",
@@ -3869,6 +6494,13 @@
   "jsonld": 6,
   "robots": "index, follow",
   "title": "Anantara Stanley &amp; Livingstone, Zimbabwe | James Wild &amp; Co"
+ },
+ "/stays/sterrekopje": {
+  "canonical": "https://www.jameswildco.com/stays/sterrekopje",
+  "h1": 1,
+  "jsonld": 6,
+  "robots": "index, follow",
+  "title": "Sterrekopje Healing Farm, South Africa | James Wild &amp; Co"
  },
  "/stays/suyian-lodge-by-and-beyond": {
   "canonical": "https://www.jameswildco.com/stays/suyian-lodge-by-and-beyond",

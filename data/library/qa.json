@@ -373,6 +373,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae76eebe8cf9d0343fc8e85",
+   "slug": "astove-coral-house",
+   "name": "Astove Coral House",
+   "country": "Seychelles",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c8",
    "slug": "atzaro-okavango-camp",
    "name": "Atzaró Okavango",
@@ -989,6 +997,16 @@
    "name": "Cork’s Vienna Woods",
    "country": "Ireland",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae76eebe8cf9d0343fc8e86",
+   "slug": "cosmoledo-eco-camp",
+   "name": "Cosmoledo Eco Camp",
+   "country": "Seychelles",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

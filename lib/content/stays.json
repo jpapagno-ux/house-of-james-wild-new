@@ -1380,7 +1380,18 @@
    "tagline": "Alphonse Island Lodge by Blue Safari: barefoot luxury on a remote coral island in the Seychelles Outer Islands.",
    "quote": "You don’t visit Blue Safari , you enter a living ocean wilderness that remembers you only as a guest of nature.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/seychelles/blue-safari-seychelles/hero",
-   "gallery": [],
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g10"
+   ],
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [
@@ -3495,6 +3506,141 @@
    "arrivalHubIds": [
     "6ae6974b6b505a193bf29747"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "astove-coral-house",
+   "name": "Astove Coral House",
+   "ledgerId": "STY-2026-000551",
+   "country": "Seychelles",
+   "countrySlug": "seychelles",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six rooms around a courtyard on Astove Atoll, in the far Outer Islands of the Seychelles.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/astove-coral-house/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "solo"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -10.0679,
+    "lng": 47.7403
+   },
+   "airport": "Seychelles International Airport (SEZ)",
+   "airportDirections": "Three-hour scheduled flight from the SEZ domestic terminal on Mahé, departing and returning each Monday and booked by Blue Safari; arrive on Mahé at least four hours before departure.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Coral House: six rooms surrounding a central courtyard, listed by Blue Safari at 10 sqm for one or two adults, each with an en-suite bathroom and full air conditioning.",
+     "Inside and outside dining areas, with breakfast, lunch and dinner included in your stay."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Saltwater fly fishing on the flats for giant trevally, Indo-Pacific permit, milkfish and three types of triggerfish.",
+     "Scuba diving on the Astove Wall, with green and hawksbill turtles, gorgonian sea fans and soft corals (pre-book through Blue Safari).",
+     "Snorkelling, including manta ray snorkelling with the activities team.",
+     "Blue Safari excursions offshore, with encounters that change by season.",
+     "Turtle hatching and monitoring.",
+     "Reef flats expeditions."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Overlooks palm-fringed beaches on Astove Atoll",
+     "Recently refurbished rooms around a central courtyard",
+     "En-suite bathrooms and full air conditioning",
+     "Amenities from Africology and laundry service",
+     "Creole-inspired cuisine with fish caught daily"
+    ]
+   },
+   "onlyHere": [
+    "Uninhabited from 1969, Astove Atoll lies roughly 35 km south-west of Cosmoledo in the Seychelles Outer Islands. Blue Safari describes a large inner lagoon, white sand beaches and the Astove Wall, a sheer drop-off it compares to staring down the Grand Canyon, and says Astove has become synonymous with the largest flats-caught giant trevally in the Indian Ocean."
+   ],
+   "why": [
+    {
+     "title": "A six-room house on a remote atoll",
+     "body": "Best for fly fishers, divers and adventurous travellers who want a small, rustic house on an atoll with little human pressure, with the flats and the Astove Wall close by."
+    }
+   ],
+   "facts": {
+    "best_months": "Blue Safari does not publish a best season for Astove; flights run weekly on Mondays.",
+    "how_to_get_there": "A three-hour scheduled flight from the domestic terminal at Seychelles International Airport (SEZ) on Mahé, each Monday, booked by Blue Safari.",
+    "signature_experiences": "Flats fly fishing for giant trevally and permit, diving the Astove Wall, and turtle hatching and monitoring.",
+    "who_its_for": "Fly fishers, divers and adventurous travellers looking for a small house on a remote atoll."
+   },
+   "faqs": [
+    {
+     "q": "Where is Astove Coral House?",
+     "a": "On Astove Atoll in the Outer Islands of the Seychelles. The atoll, made up of Astove and Charlotte islands, lies roughly 35 km south-west of Cosmoledo Atoll."
+    },
+    {
+     "q": "How do you get to Astove Coral House?",
+     "a": "By a three-hour scheduled flight from the domestic terminal at Seychelles International Airport (SEZ) on Mahé. Flights depart and return each Monday, and the Blue Safari reservations team books them with your stay. Plan to land on Mahé at least four hours before the flight departs."
+    },
+    {
+     "q": "How many rooms does Astove Coral House have?",
+     "a": "Coral House has six rooms surrounding a central courtyard. Blue Safari lists them at 10 sqm for one or two adults, each with an en-suite bathroom and full air conditioning."
+    },
+    {
+     "q": "Can children stay at Astove Coral House?",
+     "a": "Blue Safari lists the Coral House rooms for one or two adults and does not publish a children's policy for Astove. Ask us and we will confirm with Blue Safari for your dates."
+    },
+    {
+     "q": "When is the best time to visit Astove?",
+     "a": "Blue Safari does not publish a best season for Astove. Flights run weekly on Mondays, and its offshore Blue Safari excursions bring different encounters by season, so we plan your dates around what you most want to do."
+    },
+    {
+     "q": "What can you do at Astove Coral House?",
+     "a": "Fly fishing on the flats for giant trevally, Indo-Pacific permit, milkfish and three types of triggerfish; scuba diving on the Astove Wall with green and hawksbill turtles; snorkelling; turtle hatching and monitoring; reef flats expeditions and Blue Safari offshore excursions. Diving must be pre-booked through Blue Safari."
+    },
+    {
+     "q": "Who is Astove Coral House best for?",
+     "a": "Fly fishers, divers and adventurous travellers who want a small, rustic house on a remote atoll, with the flats and the Astove Wall close by."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "outer_islands",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -7955,6 +8101,137 @@
    "arrivalHubIds": [
     "6ae666174efda236c530e859"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "cosmoledo-eco-camp",
+   "name": "Cosmoledo Eco Camp",
+   "ledgerId": "STY-2026-000552",
+   "country": "Seychelles",
+   "countrySlug": "seychelles",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eight Eco Pods on Wizard Island, Cosmoledo Atoll, near Aldabra in the Seychelles Outer Islands.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cosmoledo-eco-camp/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Seychelles International Airport (SEZ)",
+   "airportDirections": "Inter-island charter flight from the SEZ domestic terminal on Mahé, arranged by Blue Safari; the brand does not publish the Cosmoledo flight time, so we confirm the schedule at booking.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight re-crafted Eco Pods (38 sqm, two adults), each with an en-suite bathroom, outdoor shower, private deck, air conditioning and a room safe.",
+     "A single eco-camp on Wizard Island, with communal areas and sea views."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Saltwater fly fishing with Alphonse Fishing Company on vast, wadeable sand flats.",
+     "Scuba diving among schooling reef fish, pelagics and sharks (pre-book through Blue Safari).",
+     "Snorkelling, including manta ray snorkelling with the activities team.",
+     "Blue Safari excursions offshore, with encounters that change by season.",
+     "Nesting green turtles, hawksbill turtles and large seabird populations around the atoll."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "The only camp on Cosmoledo Atoll, set on Wizard Island.",
+     "Private deck and outdoor shower at every Eco Pod.",
+     "Amenities from Africology.",
+     "Farm-to-table cuisine with produce from The Farm on Alphonse Island and line-caught fish.",
+     "A camp run with a commitment to protecting Cosmoledo's natural resources."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Cosmoledo Atoll lies just over 1,000 km from Mahé, a short distance from the UNESCO World Heritage Site of Aldabra, in the Aldabra Group. Blue Safari counts 21 islands, over 120 species of healthy coral, a large population of nesting green turtles and the largest population of hawksbill turtles in the Aldabra group, with vast wadeable sand flats around the lagoon."
+   ],
+   "why": [
+    {
+     "title": "Eight pods on a far atoll near Aldabra",
+     "body": "Best for fly fishers, divers and couples who want a small eco-camp on a remote atoll, with turtles, seabirds and wadeable flats around the lagoon."
+    }
+   ],
+   "facts": {
+    "best_months": "Blue Safari does not publish a best season for Cosmoledo; ocean encounters on its excursions vary by season.",
+    "how_to_get_there": "An inter-island charter flight from the domestic terminal at Seychelles International Airport (SEZ) on Mahé, arranged by Blue Safari.",
+    "signature_experiences": "Fly fishing the wadeable flats with Alphonse Fishing Company, diving and snorkelling, and nesting green and hawksbill turtles.",
+    "who_its_for": "Fly fishers, divers and couples looking for a small eco-camp on a remote atoll near Aldabra."
+   },
+   "faqs": [
+    {
+     "q": "Where is Cosmoledo Eco Camp?",
+     "a": "On Wizard Island, Cosmoledo Atoll, in the Aldabra Group of the Seychelles Outer Islands. The atoll is just over 1,000 km from Mahé and a short distance from the UNESCO World Heritage Site of Aldabra."
+    },
+    {
+     "q": "How do you get to Cosmoledo Eco Camp?",
+     "a": "Blue Safari arranges an inter-island charter flight from the domestic terminal at Seychelles International Airport (SEZ) on Mahé, as for its other Outer Islands destinations. It does not publish the flight time to Cosmoledo, so we confirm the schedule with Blue Safari when we book."
+    },
+    {
+     "q": "How many rooms does Cosmoledo Eco Camp have?",
+     "a": "Eight re-crafted Eco Pods, each 38 sqm for two adults, with an en-suite bathroom, outdoor shower, private deck, air conditioning and a room safe."
+    },
+    {
+     "q": "Can children stay at Cosmoledo Eco Camp?",
+     "a": "Blue Safari lists the Eco Pods for two adults and does not publish a children's policy for Cosmoledo. Ask us and we will confirm with Blue Safari for your dates."
+    },
+    {
+     "q": "When is the best time to visit Cosmoledo?",
+     "a": "Blue Safari does not publish a best season for Cosmoledo. Its offshore Blue Safari excursions bring different encounters by season, so we plan your dates around what you most want to do, whether fly fishing, diving or turtles."
+    },
+    {
+     "q": "What can you do at Cosmoledo Eco Camp?",
+     "a": "Saltwater fly fishing with Alphonse Fishing Company on wadeable sand flats, scuba diving, snorkelling including manta ray snorkelling, and Blue Safari offshore excursions. The atoll has nesting green turtles, hawksbill turtles and large bird populations. Diving must be pre-booked through Blue Safari."
+    },
+    {
+     "q": "Who is Cosmoledo Eco Camp best for?",
+     "a": "Fly fishers, divers and couples who want an eight-pod eco-camp on a remote atoll near Aldabra, with turtles, seabirds and wadeable flats."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "outer_islands",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -35889,8 +36166,19 @@
    "category": "hotel",
    "tagline": "A private-island resort on Félicité, where granite boulders, jungle and coral-fringed beaches meet.",
    "quote": "The greatest luxury is finding a place where nature still leads the way.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/10154a817_8679b2afa_6a5113b6164fa8fd01b5bec6_Exterior_view.webp",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-zil-pasyon/g10"
+   ],
    "bestMonths": "Year-round",
    "bestMonthsNote": "Diving March to May and September to November; hiking May to September; turtle nesting mid-October to mid-January; hatchlings mid-December to mid-March.",
    "bestFor": [

@@ -3688,6 +3688,172 @@
    "atlasName": "Spain"
   },
   {
+   "slug": "sri-lanka",
+   "name": "Sri Lanka",
+   "region": "asia",
+   "regionName": "Asia",
+   "ledgerId": "DST-2026-000040",
+   "subtitle": "Ancient cities, tea country, leopards and two monsoons",
+   "leading": "Rock fortresses and cave temples in the dry zone, tea estates in the hills, a Dutch-walled fort on the south coast and leopards in the scrub at Yala. Two monsoons reach opposite coasts at different times of year, so the house plans Sri Lanka around the month.",
+   "hero": {
+    "src": null,
+    "alt": "Sri Lanka, Asia"
+   },
+   "story": [
+    {
+     "eyebrow": "Ancient cities, tea country, leopards and two monsoons",
+     "title": "One Island, Two Monsoons",
+     "blocks": [
+      {
+       "p": "Sri Lanka's weather arrives from two directions. From December to March the northeast monsoon leaves the west and south coasts dry, with calm seas. From May to September the southwest monsoon rains on that side and on the hills, and the east coast takes its turn. March and April, between the two, suit the Cultural Triangle and the hill country. October and November bring showers anywhere. Pick the month first; the coast follows."
+      }
+     ],
+     "image": {
+      "src": null,
+      "alt": "Sri Lanka: One Island, Two Monsoons"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Sigiriya, Kandy, Galle and Yala",
+     "blocks": [
+      {
+       "h": "The Cultural Triangle",
+       "p": "Four UNESCO World Heritage sites sit close together in the dry zone. Sigiriya is a rock about 180 metres high that King Kassapa I made into a fortified palace in the late fifth century, with water gardens at its foot and painted women in a shelter on its western face. Climb it early, before the heat. Dambulla's five cave shrines have drawn pilgrims for some 22 centuries and hold 157 statues. Anuradhapura was the capital from the fourth century BC to the turn of the eleventh, and Polonnaruwa took over after Anuradhapura fell in 993."
+      },
+      {
+       "h": "Kandy and the tea country",
+       "p": "Kandy was the seat of Sri Lanka's last kingdom. Its Temple of the Tooth, the Dalada Maligawa, keeps the relic Buddhists revere as the Buddha's tooth, and is one of the most sacred Buddhist sites in the country. Beyond it the central highlands are planted with tea, the air cools and the old estate bungalows still stand. The railway runs through the hill country between Kandy, Ella and Badulla; the views are the reason to take it."
+      },
+      {
+       "h": "Galle and the south coast",
+       "p": "Galle Fort sits on a rocky point at the island's southwest corner, 113 km from Colombo by expressway. The Portuguese founded it in the sixteenth century and the Dutch walled it; most of the ramparts date to 1663. UNESCO calls it the best representation of a fortified city built by Europeans in South Asia. East along the coast are Unawatuna, Mirissa and Tangalle. From Mirissa, boats head out towards Dondra Point for blue whales and dolphins in this coast's season, from December."
+      },
+      {
+       "h": "Leopards, elephants and whales",
+       "p": "Yala, in the southeast, has one of the highest leopard densities in the world; with Wilpattu it became one of Sri Lanka's first two national parks, in 1938. Udawalawe is the place for elephants: about 500 live in the park, often in herds of up to 100, all year round. Wilpattu, in the northwest near Anuradhapura, adds leopards, sloth bears and nearly sixty natural lakes, the willus. Every park is entered on a Department of Wildlife Conservation permit. On the east coast, Trincomalee is the other whale port, in season from May to September."
+      }
+     ],
+     "image": {
+      "src": null,
+      "alt": "Sri Lanka: Sigiriya, Kandy, Galle and Yala"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "West and south coasts: December to March, the dry side of the northeast monsoon, with calm seas. Hill country and the Cultural Triangle: March to April, between the monsoons. East coast and Trincomalee: May to September, while the southwest monsoon rains on the other side."
+    ],
+    [
+     "Getting there",
+     "Fly into Bandaranaike International Airport (CMB) at Katunayake, the main international airport, 30 km north of Colombo. By road from Colombo, Sigiriya is about 169 km, Galle 113 km by expressway and Yala about 300 km. Mattala Rajapaksa International Airport, near Hambantota in the deep south, is the second international airport."
+    ],
+    [
+     "Who it suits",
+     "Couples, families and photographers who want ancient cities, a hill-country train, a leopard drive and a beach in one trip, and travellers adding a week before or after the Maldives."
+    ],
+    [
+     "Signature experiences",
+     "Sigiriya at first light, the Temple of the Tooth in Kandy, the hill-country railway to Ella, a leopard drive in Yala, the elephant herds of Udawalawe, Galle Fort's ramparts at sunset and blue whales off Mirissa."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Sri Lanka?",
+     "a": "It depends on the coast. December to March is the season for the west and south coasts, Galle and Mirissa, with clear skies and calm seas. May to September is the east coast's turn: Trincomalee and Arugam Bay are dry while the southwest monsoon rains on the other side. March and April, between the monsoons, suit the Cultural Triangle and the hill country. October and November bring showers across the island."
+    },
+    {
+     "q": "How do you get to Sri Lanka?",
+     "a": "Fly into Bandaranaike International Airport (CMB) at Katunayake, about 30 km north of Colombo; it is the main international airport. From Colombo, Sigiriya is about 169 km by road, Galle 113 km by expressway and Yala about 300 km. Mattala Rajapaksa International Airport, near Hambantota in the south, is the second international airport."
+    },
+    {
+     "q": "How many days do you need in Sri Lanka?",
+     "a": "Allow 10 to 14 days for the Cultural Triangle, Kandy and the tea country, a national park and the south coast without rushing. With a week, pick two: the ancient cities and Kandy, or the hill country and the south coast with a night or two near Yala or Udawalawe. Choose the coast by the month you travel."
+    },
+    {
+     "q": "What is Sigiriya, and how do you visit it?",
+     "a": "Sigiriya is a rock about 180 metres high in the Cultural Triangle, where King Kassapa I (477 to 495) built a fortified palace on the summit, with water gardens below and frescoes on the western face. UNESCO inscribed it as a World Heritage site in 1982. It is about 169 km from Colombo and 25 km from Dambulla. Start the climb as early as you can and carry water and a hat: drinks are not sold inside."
+    },
+    {
+     "q": "Where is the best place to see leopards in Sri Lanka?",
+     "a": "Yala National Park, in the southeast, has one of the highest leopard densities in the world. It covers 979 km², about 300 km from Colombo, and also protects elephants and 215 bird species. Wilpattu, in the northwest near Anuradhapura, is the other leopard park. Both are entered on a Department of Wildlife Conservation permit. For elephants, Udawalawe, inland from the south coast, has about 500 in the park all year."
+    },
+    {
+     "q": "Can you combine Sri Lanka with the Maldives?",
+     "a": "Yes. Sri Lanka's west and south coasts are at their best from December to March, inside the Maldives season in the Ledger (November to April). Fly into Colombo (CMB), spend a week or more on the island, then fly on to Malé for the beach. James plans both as one trip and books the Maldives stays from the Ledger."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "West and south coasts",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best"
+     ]
+    },
+    {
+     "area": "Hill country and the Cultural Triangle",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good"
+     ]
+    },
+    {
+     "area": "East coast and Trincomalee",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Bandaranaike International Airport (CMB)",
+     "The main international gateway"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "CMB",
+   "bestShort": "Dec–Sep",
+   "atlasName": "Sri Lanka",
+   "staysComing": true
+  },
+  {
    "slug": "switzerland",
    "name": "Switzerland",
    "region": "europe",

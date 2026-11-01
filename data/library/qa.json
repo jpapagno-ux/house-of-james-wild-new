@@ -462,9 +462,7 @@
    "name": "Bambu Indah",
    "country": "Indonesia",
    "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
+    "stay_copy"
    ],
    "released": false
   },

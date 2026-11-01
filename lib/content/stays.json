@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-10-31",
+ "exportedOn": "2026-11-01",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -10529,6 +10529,87 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "house-in-the-wild",
+   "name": "House in the Wild",
+   "ledgerId": "STY-2026-973623",
+   "country": "Kenya",
+   "countrySlug": "kenya",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Ten rooms on the banks of the Mara River, in a rewilded conservancy",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/house-in-the-wild/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/house-in-the-wild/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/house-in-the-wild/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/house-in-the-wild/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/house-in-the-wild/g5"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -1.0637638,
+    "lng": 35.2176399
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "An owner-run lodge of ten rooms spread across private cottages on the Mara River, from the two-bedroom Original Cottage to River Cottage for couples, Warburgia and Hippo Cottages and Kisaru Cottage. A main lounge and dining room with a Swahili bar, wide lawns and a pool with a thatched gazebo."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Game drives in the private conservancies of the Northern Mara. Conservation and community visits through the Wild Hub, the tree nursery and planting programme, and projects with Maasai women."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "On the banks of the Mara River in the Northern Mara conservancies, at the heart of a pioneering rewilding project. A spa. Dinner under the stars, by the log burner in the gazebo, by the fire in the dining room or on your own verandah. The whole lodge can be reserved for exclusive use."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A family-owned lodge where farmland on the Mara River has been rewilded into thriving conservancy, so every stay helps fund the land, the wildlife and the Maasai community around it."
+   ],
+   "why": [
+    {
+     "title": "A Rewilded Mara Home",
+     "body": "Best for families, couples and returning safari-goers who want a private conservancy away from the crowds."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08",
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ]
   },
   {
    "slug": "house-in-the-wild-masai-mara",
@@ -28234,6 +28315,93 @@
    "engine": null,
    "pathway": null,
    "volumes": null
+  },
+  {
+   "slug": "sterrekopje",
+   "name": "Sterrekopje Healing Farm",
+   "ledgerId": "STY-2026-000546",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A healing farm of eleven sanctuaries in the Franschhoek foothills",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sterrekopje/g8"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Cape Town International (CPT)",
+   "airportDirections": "About an hour by road from Cape Town to Franschhoek; the farm can arrange the transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eleven sanctuaries and suites spread across a 50-hectare farm, each with one-of-a-kind art, handcrafted furniture and hand-painted murals. Intimate Sanctuaries sit in the historic Main House with private terraces over the gardens; Abundant Sanctuaries add living areas; and the Rejuvenating Suites, the most spacious, have spa-like bathrooms and private gardens or terraces. Some have fireplaces, outdoor baths or a dipping pool. Italian linen or Egyptian cotton, with fire lighting, bath drawing and in-room massage on request."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Daily Farm Rhythms such as morning yoga, garden tours, pottery and baking. Intuitive treatments in the Bath House. Breathwork, cacao ceremonies and full moon gatherings in the Yoga Yurt. Seasonal retreats: Wise Women, Regenerative Living, Family Holidays and a writer's retreat. Private retreats, personal journeys from seven nights, or a full farm buy-out for up to 22 guests."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A biodiverse, regenerative farm in the foothills of the Franschhoek mountains, about an hour from Cape Town. The Bath House, the Yoga Yurt, the Soul Shed for energy and sound healing, a herbal Apothecary in the kitchen of the 1694 Manor House, the Atelier for art, a bakery and productive gardens. Every stay includes all meals and drinks, one Ritual (treatment) a day and the daily Farm Rhythms. Guests from 16, with family retreats at Christmas and Easter."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A Cape farm with a 1694 Manor House turned healing sanctuary, where every stay includes a daily treatment, farm-to-table meals from its own gardens and a gentle rhythm of yoga, pottery and baking."
+   ],
+   "why": [
+    {
+     "title": "Rest, Regenerate, Play",
+     "body": "Best for solo travellers, couples, friends and women's groups looking for deep rest; families at Christmas and Easter."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08",
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "wellness",
+     "retreat",
+     "regenerative",
+     "solo",
+     "food"
+    ],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ]
   },
   {
    "slug": "suyian-lodge-by-and-beyond",

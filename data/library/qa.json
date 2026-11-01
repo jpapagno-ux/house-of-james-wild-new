@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-10-31",
+ "checkedOn": "2026-11-01",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -1610,10 +1610,8 @@
    "slug": "house-in-the-wild",
    "name": "House in the Wild",
    "country": "Kenya",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff91e",
@@ -3796,10 +3794,9 @@
    "name": "Sterrekopje Healing Farm",
    "country": "South Africa",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9cc",

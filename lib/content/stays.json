@@ -12360,6 +12360,126 @@
    ]
   },
   {
+   "slug": "the-retreat-rwanda",
+   "name": "Hemingways Retreat Kigali",
+   "ledgerId": "STY-2026-000301",
+   "country": "Rwanda",
+   "countrySlug": "rwanda",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A solar-powered boutique retreat in Kigali's leafy Kiyovu",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-retreat-rwanda/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "couples",
+    "wellness",
+    "food"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -1.9472729,
+    "lng": 30.0651165
+   },
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "About 10 km, roughly a 20-minute drive, from Kigali International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twenty individually styled rooms and suites with locally crafted teak furniture and peaked ceilings. Luxury Pool Villas with private plunge pools, gardens, baths and indoor and outdoor rain showers. Superior King Suites with private patios and rain showers. Deluxe King Rooms with private patios, teak vanities and indoor rain showers."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Kimironko Market",
+     "Nyamirambo Women's Center",
+     "Banana beer making",
+     "Cooking class",
+     "Culinary tour",
+     "Kigali city and walking tours",
+     "Art and culture outings",
+     "Cocktail making",
+     "Onsite custom tailoring and Made in Rwanda products"
+    ]
+   },
+   "features": {
+    "paras": [
+     "In Kigali's central Kiyovu neighbourhood. Solar-powered, with locally crafted sustainable teak furniture. Solar-heated saltwater pool with jacuzzi. Wellness spa and open-air gym. Yoga deck. Fusion and Heaven restaurants, Wine Lounge and bar. Made in Rwanda boutique. Conference centre."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Hemingways Retreat Kigali, formerly The Retreat by Heaven, is a 20-room solar-powered boutique hotel in Kiyovu, a place to pause at the start or end of a Rwanda journey, 20 minutes from the airport."
+   ],
+   "why": [
+    {
+     "title": "Kigali, Unhurried",
+     "body": "Best for travelers arriving in or leaving Rwanda who want a quiet, sustainable city base with a spa, a saltwater pool and two restaurants, before or after the gorillas."
+    }
+   ],
+   "facts": {
+    "best_months": "A year-round Kigali base for the start or end of a Rwanda journey; the hotel does not name a best season.",
+    "how_to_get_there": "About 10 km, roughly a 20-minute drive, from Kigali International Airport.",
+    "signature_experiences": "Fusion and Heaven restaurants, a solar-heated saltwater pool and spa, and guided Kigali outings to markets, cooperatives and kitchens.",
+    "who_its_for": "Travelers starting or ending a Rwanda journey, including couples, families and wellness-minded guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hemingways Retreat Kigali?",
+     "a": "Hemingways Retreat Kigali, formerly The Retreat by Heaven, is in the leafy Kiyovu neighbourhood of central Kigali, Rwanda. It is close to the city's markets, museums, art galleries and memorials."
+    },
+    {
+     "q": "How do you get to Hemingways Retreat Kigali?",
+     "a": "It is about 10 km, approximately a 20-minute drive, from Kigali International Airport (KGL)."
+    },
+    {
+     "q": "When is the best time to stay?",
+     "a": "As a city hotel it works as the first or last stop of a Rwanda journey at any time of year; the hotel does not name a best season. James Wild & Co times it around your gorilla and chimpanzee treks."
+    },
+    {
+     "q": "How many rooms does it have?",
+     "a": "Twenty rooms and suites: Luxury Pool Villas with private plunge pools, Superior King Suites with private patios, and Deluxe King Rooms."
+    },
+    {
+     "q": "Is it suitable for children?",
+     "a": "Yes. Fusion Restaurant has a kid's menu served in a family-friendly setting, and the hotel describes its Deluxe King Rooms as ideal for both families and friends."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Dining at Fusion and Heaven restaurants and the Wine Lounge, the wellness spa, and a solar-heated saltwater pool with jacuzzi. Guided outings include Kimironko Market, the Nyamirambo Women's Center, banana beer making, a cooking class and a Kigali walking tour."
+    },
+    {
+     "q": "Who is Hemingways Retreat Kigali best for?",
+     "a": "Travelers beginning or ending a Rwanda journey who want a calm, solar-powered boutique base in Kigali, including couples, families and wellness-minded guests."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null,
+   "arrivalHubIds": []
+  },
+  {
    "slug": "hermanus-private-residences",
    "name": "Hermanus Private Residences",
    "ledgerId": "STY-2026-022701",
@@ -12571,6 +12691,238 @@
    "volumes": [
     "stays"
    ],
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "hoanib-elephant-camp",
+   "name": "Hoanib Elephant Camp",
+   "ledgerId": "STY-2026-000549",
+   "country": "Namibia",
+   "countrySlug": "namibia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Ten tents with private plunge pools on the Hoanib River in Kaokoland",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-elephant-camp/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. December to March is the green season, when rain can turn the rocky landscape green and the dry riverbeds briefly flow, with high temperatures. May to July brings chilly mornings and evenings. By October the land is at its driest and warmest, and desert elephant gather near the last water in the river valleys.",
+   "bestFor": [
+    "couples",
+    "family",
+    "adventure",
+    "conservation",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "To be confirmed (new airstrip planned about 5 minutes from camp)",
+   "airportDirections": "Natural Selection reservations quote flying and driving transfers on request. A new airstrip is planned, with a proposed location about 5 minutes from camp.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten spacious tents: eight twins and two family units, each on a low wooden deck with a private plunge pool, air-conditioning and an en suite bathroom with double vanities and indoor and outdoor showers. Rammed earth walls and insulated canvas roofs give natural climate control. The main area has a lounge and dining room, an outdoor deck with a swimming pool, a small wellness spa and a fire pit. Wi-Fi is available, hairdryers are provided and laundry is complimentary."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and evening game drives for desert-adapted elephant, giraffe and, with luck, desert lion, plus zebra, klipspringer, kudu, springbok, oryx and steenbok. A waterhole near camp draws desert lion, giraffe, oryx and brown hyena. Rangers lead black rhino tracking, and there are nature walks, scenic sundowners, stargazing with dinner under the stars, and cultural visits with the local Himba. Spa and wellness treatments are available in camp."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Opened in May 2026 on the northern bank of the Hoanib River, 70 km southwest of Sesfontein and 25 km downriver from Hoanib Valley Camp, in the Sesfontein Community Conservancy. The camp is powered entirely by solar energy and has a full water treatment system. Staying supports conservation projects for the desert-adapted elephants, including work on human-wildlife conflict, and the livelihoods of communities living near the conservancy."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A camp shaped around the desert-adapted elephants of the Hoanib Valley, with a private plunge pool on every deck and the Skeleton Coast just beyond the mountains and dunes."
+   ],
+   "why": [
+    {
+     "title": "A Camp for the Conscious Adventurer",
+     "body": "Best for couples, families with children of any age and travellers who want desert elephants, rhino tracking and Himba culture with air-conditioned tents and plunge pools."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; December to March is green season, October is the driest.",
+    "how_to_get_there": "Flying or driving transfers through Natural Selection; a new airstrip is planned near camp.",
+    "signature_experiences": "Desert-adapted elephants, rhino tracking and stargazing dinners.",
+    "who_its_for": "Couples, families with children of any age and travellers who want the remote northwest in comfort."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hoanib Elephant Camp?",
+     "a": "On the northern bank of the Hoanib River in the Sesfontein Community Conservancy, Kaokoland, 70 km southwest of Sesfontein and 25 km downriver from Hoanib Valley Camp."
+    },
+    {
+     "q": "How do you get to Hoanib Elephant Camp?",
+     "a": "Natural Selection reservations quote flying and driving transfers. A new airstrip is planned, with a proposed location about 5 minutes from camp."
+    },
+    {
+     "q": "How many rooms does Hoanib Elephant Camp have?",
+     "a": "Ten spacious tents: eight twins and two family units, each with a private deck, plunge pool, air-conditioning and an en suite bathroom with indoor and outdoor showers."
+    },
+    {
+     "q": "Can children stay at Hoanib Elephant Camp?",
+     "a": "Yes. Natural Selection welcomes children of all ages."
+    },
+    {
+     "q": "When is the best time to visit Hoanib Elephant Camp?",
+     "a": "It is open all year. December to March is the green, rainy season; May to July has chilly mornings and evenings; October is the driest and warmest month, when desert elephant gather near the remaining water."
+    },
+    {
+     "q": "What can you do at Hoanib Elephant Camp?",
+     "a": "Game drives, black rhino tracking, nature walks, scenic sundowners, stargazing, cultural visits with the Himba and spa treatments."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "hoanib-valley-camp",
+   "name": "Hoanib Valley Camp",
+   "ledgerId": "STY-2026-000478",
+   "country": "Namibia",
+   "countrySlug": "namibia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six tents in a hidden valley in Kaokoland, overlooking the Hoanib River",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hoanib-valley-camp/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. December to March is the green season, when rain can turn the rocky landscape green and the dry riverbeds briefly flow, with high temperatures. May to July brings chilly mornings and evenings. By October the land is at its driest and warmest, and desert elephant gather near the last water in the river valleys.",
+   "bestFor": [
+    "couples",
+    "family",
+    "adventure",
+    "conservation",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Orutjandja Airstrip",
+   "airportDirections": "Fly by light aircraft to Orutjandja Airstrip, then take a road transfer to camp. Road access is also possible; Natural Selection reservations quote flights and drives.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six guest tents: five twins and one family tent, each with an en suite bathroom with an indoor shower and a private veranda. Furniture is made by local Rundu carpenters and Himba carvers, with baskets woven by the Omba Project in Windhoek. The main area has a swimming pool, outdoor dining, a fire pit and a library. Wi-Fi is available and laundry is complimentary."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Morning and evening game drives in search of desert-adapted elephant, giraffe and, with luck, desert lion, along with zebra, klipspringer, kudu, springbok, oryx and steenbok. Rhino rangers lead black rhino tracking, guides share the work of the giraffe conservation programme, and nature walks explore the valley on foot. Cultural visits to the local Himba and Herero communities are offered. Birders look for Monteiro's hornbill, Rüppell's korhaan and Verreaux's eagle."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Set in a hidden valley ringed by jagged mountains in the Sesfontein Community Conservancy, just outside the private 500 square kilometre Palmwag Concession, with views over the ephemeral Hoanib River. The camp is entirely solar powered, and the tents sit on decks made of a wood, bamboo and 70% recycled-material composite. It is a partnership with the Sesfontein Community and the Giraffe Conservation Foundation (GCF): 80% of staff come from Sesfontein, and 8% of turnover is paid as rental to the community, which funds rhino rangers and game guards."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A camp built with the Giraffe Conservation Foundation, where days are spent among desert-adapted giraffe and elephant in the Hoanib River valley, and where every stay supports a black rhino introduction programme."
+   ],
+   "why": [
+    {
+     "title": "An Intimate Desert Retreat",
+     "body": "Best for couples, families with children of any age and travellers who want desert-adapted wildlife, rhino tracking and time with the Himba in a six-tent camp."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; December to March is green season, October is the driest.",
+    "how_to_get_there": "Light aircraft to Orutjandja Airstrip, then a road transfer; or by road.",
+    "signature_experiences": "Rhino tracking, desert-adapted giraffe and elephant, and Himba cultural visits.",
+    "who_its_for": "Couples, families with children of any age and wildlife travellers drawn to Kaokoland."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hoanib Valley Camp?",
+     "a": "In a hidden valley in the Sesfontein Community Conservancy in Kaokoland, north-western Namibia, just outside the private Palmwag Concession and overlooking the Hoanib River."
+    },
+    {
+     "q": "How do you get to Hoanib Valley Camp?",
+     "a": "By light aircraft to Orutjandja Airstrip, followed by a road transfer to camp, or by road. Natural Selection reservations quote flights and drives."
+    },
+    {
+     "q": "How many rooms does Hoanib Valley Camp have?",
+     "a": "Six tents: five twins and one family tent, each with an en suite bathroom with an indoor shower."
+    },
+    {
+     "q": "Can children stay at Hoanib Valley Camp?",
+     "a": "Yes. Natural Selection welcomes children of all ages."
+    },
+    {
+     "q": "When is the best time to visit Hoanib Valley Camp?",
+     "a": "It is open all year. December to March is the green, rainy season; May to July has chilly mornings and evenings; October is the driest and warmest month, when desert elephant gather near the remaining water."
+    },
+    {
+     "q": "What can you do at Hoanib Valley Camp?",
+     "a": "Game drives, black rhino tracking with rhino rangers, learning about giraffe conservation with your guide, nature walks and cultural visits to Himba and Herero communities."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
    "arrivalHubIds": []
   },
   {
@@ -25424,15 +25776,18 @@
    "gallery": [],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.4473,
     "lng": 29.1043
    },
-   "airport": "Kigali International Airport (KGL); helicopter from Gorilla's Nest",
-   "airportDirections": "From Gorilla's Nest, a scenic five-hour drive or a 35-minute helicopter flight.",
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Helicopter from Kigali to the resort's helipad (recommended), 35 minutes from One&Only Gorilla's Nest; or a domestic flight, or about 230 km by road.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -25441,20 +25796,14 @@
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Chimpanzee and monkey trekking",
-     "The canopy walk",
-     "Tea picking and tasting on the estate",
-     "Forest hikes to waterfalls and swamps",
-     "Birding",
-     "Sunrise yoga",
-     "Community visits"
-    ]
+    "paras": [
+     "Chimpanzee treks. Canopy walks. Guided tea estate walks and a Rwandan tea ceremony. Twilight forest hikes. Birdwatching. Sunrise yoga. Archery above the tea fields. Umuganda community morning on the last Saturday of the month."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "In the Gisakura Tea Estate on the edge of Nyungwe National Park, one of Africa's oldest mountain rainforests. Dining room over the tea fields. Tea lounge and bar. Spa suspended over the forest. Infinity pool. Two experiences a day included."
+     "In the Gisakura Tea Estate on the edge of Nyungwe National Park, where one of Africa's oldest rainforests meets the tea fields. Dining Room among the tea fields. Tea Lounge and Tea Bar. Forest-view spa with two treatment rooms. Open-air yoga deck over the rainforest. Two experiences a day included."
     ],
     "items": []
    },
@@ -25467,8 +25816,42 @@
      "body": "Best for returning Africa travelers, birders, hikers and couples pairing Nyungwe with Volcanoes National Park."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "The resort does not name a best season; two experiences a day are included and shaped around the weather.",
+    "how_to_get_there": "By helicopter to the resort's helipad (recommended), 35 minutes from One&Only Gorilla's Nest; or by domestic flight, or about 230 km by road from Kigali International Airport.",
+    "signature_experiences": "Chimpanzee treks and canopy walks in Nyungwe Forest, with tea ceremonies and walks on the Gisakura Tea Estate.",
+    "who_its_for": "Couples and travelers aged 15 and over pairing Nyungwe's chimpanzees with Rwanda's gorillas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nyungwe Tea Forest Resort?",
+     "a": "Nyungwe Tea Forest Resort is in the Gisakura Tea Estate on the edge of Nyungwe National Park, Rwanda, where one of Africa's oldest rainforests meets the tea fields. It is approximately 230 kilometres from Kigali International Airport."
+    },
+    {
+     "q": "How do you get to Nyungwe Tea Forest Resort?",
+     "a": "The recommended way is by helicopter, direct to the resort's own helipad; from One&Only Gorilla's Nest it is 35 minutes by helicopter. The resort can also be reached by domestic flight or by road, and it arranges the journey for you."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "The resort does not name a best season on its own site, so James Wild & Co confirms timing for chimpanzee treks when planning your dates. Every stay includes two experiences a day, chosen by you or shaped around the weather."
+    },
+    {
+     "q": "What kind of rooms does it have?",
+     "a": "Villas and treehouses held in the canopy: Two-Bedroom Canopy Villas with two ensuite bedrooms for up to four, and Canopy Treehouses for two with a deep soaking tub. The resort does not publish a room count."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "The resort has a minimum age of 15 years, and the spa welcomes guests aged 16 and over. At least one guest aged 18 or over must be present at check-in."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Chimpanzee treks with expert guides, canopy walks, guided walks and a Rwandan tea ceremony on the Gisakura estate, birdwatching for endemic species, archery, sunrise yoga and twilight forest hikes. Two experiences a day are included in every stay."
+    },
+    {
+     "q": "Who is Nyungwe Tea Forest Resort best for?",
+     "a": "Couples and adult travelers pairing chimpanzees and the rainforest with gorilla trekking in Volcanoes National Park, and anyone who wants a forest-view spa and tea estate between treks."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -25915,13 +26298,17 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Treehouses in the eucalyptus, five minutes from the gorillas",
+   "tagline": "Treehouses in the eucalyptus on the edge of Volcanoes National Park",
    "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/34e0bc491_9d2a33296_686c0769972f273ca2734419_OO_GorillasNest_Exterior_Nest_141_MASTER_HR.jpg",
    "gallery": [],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "conservation",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -25929,42 +26316,71 @@
     "lng": 29.5784
    },
    "airport": "Kigali International Airport (KGL)",
-   "airportDirections": "About 2.5 hours by road from Kigali, or a 25-minute helicopter flight to the resort's own helipad.",
+   "airportDirections": "A 25-minute helicopter flight from Kigali International Airport (recommended), or about 2.5 hours by road.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Treehouses and suites raised on stilts among eucalyptus trees, from Forest and two-bedroom Susa Treehouses to the Virunga, Ingagi and Silverback Suites, the last with its own pool. Private decks, fireplaces and outdoor baths."
+     "Treehouses and suites suspended amid the eucalyptus: Forest Treehouses with a fireplace, soaking tub, outdoor shower and private deck; two-bedroom Susa Treehouses with a fireplace; the Virunga Suite with an open-air bathtub; the Ingagi Suite with an alfresco bath and spacious deck; and the Silverback Suite with its own private pool and firepit."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Gorilla trekking in Volcanoes National Park",
-     "Fireside briefings on the gorilla families",
-     "Rwandan coffee tours and tastings",
-     "Iby'iwacu Cultural Village",
-     "Drumming and dance at the boma",
-     "Visits to a women's craft cooperative"
-    ]
+    "paras": [
+     "Gorilla treks in Volcanoes National Park. Stories of Your Ancestors, a fireside briefing on the 12 gorilla families. The Secrets of Rwandan Coffee. Iby'iwacu Cultural Village. Rhythms of Rwanda drumming and dance at the boma. Handspun Hope, a working farm supporting local women. Archery. Guided nature walks for birds and butterflies."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "In Kinigi in the Virunga foothills, the closest resort to Volcanoes National Park. The Nest restaurant and bar. One&Only Spa. Heated pool. Boma and coffee garden. Private helipad."
+     "In the Virunga foothills near Kinigi, on the edge of Volcanoes National Park. The Nest restaurant. One&Only Spa. Heated infinity pool. Club One open-air fitness centre and yoga pavilion. Boma and coffee garden. Jack Hanna Cottage with games room and library."
     ],
     "items": []
    },
    "onlyHere": [
-    "Gorilla's Nest is the shortest walk from your bed to the trailhead in Rwanda, with a forest treehouse, a fire and a deep bath waiting when you come down from the mountain."
+    "Gorilla's Nest puts you on the edge of Volcanoes National Park, with a forest treehouse, a fire and a deep bath waiting when you come down from the mountain."
    ],
    "why": [
     {
      "title": "Gorillas in Comfort",
-     "body": "Best for couples, honeymooners and families pairing gorilla trekking with a Rwanda or East Africa safari."
+     "body": "Best for couples and travelers aged 15 and over pairing gorilla trekking with a Rwanda or East Africa safari."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "One&Only does not name a best season; James Wild & Co confirms gorilla trekking dates when planning.",
+    "how_to_get_there": "A 25-minute helicopter flight from Kigali International Airport (recommended), or a 2.5-hour drive.",
+    "signature_experiences": "Guided gorilla treks after a fireside briefing on the park's 12 gorilla families, plus Rwandan coffee tastings and the One&Only Spa.",
+    "who_its_for": "Couples and travelers aged 15 and over who want gorilla trekking with spa, culture and treehouse comfort."
+   },
+   "faqs": [
+    {
+     "q": "Where is One&Only Gorilla's Nest?",
+     "a": "One&Only Gorilla's Nest is in the foothills of Volcanoes National Park near Kinigi and Musanze, Rwanda, with individual treehouses and suites among eucalyptus trees on the edge of the park."
+    },
+    {
+     "q": "How do you get to One&Only Gorilla's Nest?",
+     "a": "The recommended way is a 25-minute chartered helicopter flight from Kigali International Airport; by road it is a 2.5-hour drive by SUV. Nyungwe Tea Forest Resort is 35 minutes away by helicopter."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "One&Only does not name a best season on its own site, so James Wild & Co confirms trekking dates when planning your stay. Volcanoes National Park is home to 12 families of endangered mountain gorillas."
+    },
+    {
+     "q": "What rooms does One&Only Gorilla's Nest have?",
+     "a": "Treehouses and suites: Forest Treehouses for two, two-bedroom Susa Treehouses for up to three, and the Virunga, Ingagi and Silverback Suites for two, the Silverback with its own private pool. One&Only does not publish a total room count."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "The resort has a minimum age of 15 years, and at least one guest aged 18 or over must be present at check-in. Rollaway beds are not available."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Guided gorilla treks, prepared for at Stories of Your Ancestors, a fireside gathering on the park's 12 gorilla families. Guests can also join The Secrets of Rwandan Coffee, visit Iby'iwacu Cultural Village and Handspun Hope, and unwind at the One&Only Spa and heated infinity pool."
+    },
+    {
+     "q": "Who is One&Only Gorilla's Nest best for?",
+     "a": "Couples and adult travelers aged 15 and over who want gorilla trekking with spa time, cultural experiences and a treehouse to return to, and those pairing it with Nyungwe by helicopter."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -31484,60 +31900,88 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bcc48add1_7387615ef_698ad5253f7875734d4d014f_SVNP_PRIVATE_Kataza_House_Bedroom_Ross_Couper-1-1.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b997563bb_f493b5078_698ad525981317b89985c388_SVNP_PRIVATE_Kataza_House_Room_Lounge_Ross_Couper-1-1.w"
    ],
-   "bestMonths": "June to September, December to February",
-   "bestMonthsNote": "June to September is dry and ideal for trekking, with best gorilla and volcano views. December to February is green and less busy.",
-   "bestFor": [],
+   "bestMonths": "June to mid-September, December to February",
+   "bestMonthsNote": "Singita names a long dry season from June to mid-September and a short dry season from December to February; gorilla trekking runs year-round.",
+   "bestFor": [
+    "group_exclusive_use",
+    "family",
+    "conservation",
+    "wellness",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -1.4525,
-    "lng": 29.587
+    "lat": -1.4234,
+    "lng": 29.619
    },
-   "airport": "Kigali International Airport",
-   "airportDirections": "Fly to Kigali, 2.5 hour scenic road transfer to Kataza House. Helicopter transfers available on request.",
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Fly to Kigali International Airport, then a 30-minute helicopter flight to the villa (recommended), or a road transfer of up to four hours.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "One exclusive use villa with four lavish suites, two heated pools, cinema room, wine cellar, fitness center, personal chef, butler, and private staff. Designed for families and groups seeking total privacy."
+     "One exclusive-use four-bedroom villa for up to eight guests: a main suite, a junior main suite and two further suites. A full staff complement, including a private chef and host, with a private entrance and a golf cart to reach every facility at neighbouring Kwitonda. Designed for families and groups seeking total privacy."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Gorilla trekking",
-     "Golden monkey tracking",
-     "Guided forest walks",
-     "Local village visits",
-     "Volcano hiking",
-     "Spa treatments",
-     "Swimming and fitness",
-     "Farm to table dining"
-    ]
+    "paras": [
+     "Gorilla trekking. Golden monkey trekking. Walking trails across the property and hikes to the volcanoes. Cycling. Community visits. Yoga and wellness treatments. Swimming. Tree planting and pottery at the Akarabo Nursery. Farm-to-table garden. Wine experience. Birdwatching."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Exclusive use four bedroom villa",
-     "Two heated swimming pools",
-     "State of the art kitchen and wine cellar",
-     "Fitness center and private spa",
-     "Dedicated chef and butler",
-     "Conservation and community impact"
-    ]
+    "paras": [
+     "Exclusive-use four-bedroom villa. Heated pools looking onto the volcanoes. Wellness space and cinema room. Interactive open-plan kitchen. Private chef and host. Access to all of Kwitonda's facilities, including the wine cellar, Conservation Lounge and Akarabo Nursery. Conservation and community impact."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Singita Kataza House is perfect for families or friends seeking total privacy, extraordinary wildlife, and ultra luxury. Enjoy bespoke service, panoramic volcano views, and a sanctuary for adventure, wellness, and connection."
+    "Singita Kataza House is for families or friends seeking total privacy beside Volcanoes National Park. Enjoy a private chef and host, volcano views from every space, and every facility of Kwitonda a short golf cart ride away. Children of all ages are welcome."
    ],
    "why": [
     {
      "title": "Your Volcano Sanctuary",
-     "body": "Singita Kataza House offers the most exclusive base for gorilla trekking in Africa, with lavish amenities, flexible schedules, and deep conservation purpose. Best for multi generational families, private groups, and friends seeking comfort and adventure."
+     "body": "Singita Kataza House is a completely private villa set alongside Kwitonda, sharing the lodge's 1.2km border with Volcanoes National Park, with flexible days built around your treks. Best for multi generational families, private groups and friends of up to eight."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round with gorilla trekking all year; Singita names June to mid-September and December to February as the dry seasons.",
+    "how_to_get_there": "Fly to Kigali, then a 30-minute helicopter flight (recommended), or a road transfer of up to four hours.",
+    "signature_experiences": "Gorilla and golden monkey trekking, then heated pools, a wellness space and a cinema room in a private villa with its own chef and host.",
+    "who_its_for": "Families and private groups of up to eight who want an exclusive-use villa beside Volcanoes National Park."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Kataza House?",
+     "a": "Singita Kataza House is a completely private villa set alongside Singita Kwitonda Lodge in Kinigi, Musanze, Rwanda. Together they share a 1.2km border with Volcanoes National Park, facing the Sabyinyo, Gahinga and Muhabura volcanoes."
+    },
+    {
+     "q": "How do you get to Singita Kataza House?",
+     "a": "Fly into Kigali, then take a 30-minute helicopter flight, the recommended option, or a road transfer that Singita says can take up to four hours. Singita asks guests to book a driver guide and vehicle for every day of their stay."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "Kataza House is open year-round and Singita notes gorilla trekking runs all year. Singita describes dry seasons from June to mid-September and from December to February, with the heaviest rains from March to May."
+    },
+    {
+     "q": "How many suites does Kataza House have?",
+     "a": "It is an exclusive-use four-bedroom villa for up to eight guests, with a main suite, a junior main suite and two further suites. A full staff complement, including a private chef and host, looks after the house."
+    },
+    {
+     "q": "Are children welcome, and what is the minimum age for gorilla trekking?",
+     "a": "Yes. Children of all ages are welcome and childminders are available while adults trek. Singita lists golden monkey treks for children over 12 and gorilla treks for children over 15."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Gorilla and golden monkey trekking in Volcanoes National Park, then heated pools facing the volcanoes, a wellness space and a cinema room at the house. Guests also use all of Kwitonda's facilities, including the Akarabo Nursery, wine cellar and Conservation Lounge."
+    },
+    {
+     "q": "Who is Kataza House best for?",
+     "a": "Families and private groups of up to eight who want gorilla trekking with complete privacy, their own chef and host, and the facilities of Kwitonda a golf cart ride away."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -31722,59 +32166,88 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d4e3a15dc_d67412b7f_698ad934f5bee90a5ab59849_SVNP_ROOM_Kwitonda_Lodge_Bedroom_Ross_Couper-3.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6f5f3d739_4f6af2192_69ce0792cb120ca115a75ec7_SingitaVolcanoesNationalPark_ChefinInteractiveKitchen.j"
    ],
-   "bestMonths": "June to September, December to February",
-   "bestMonthsNote": "June to September is dry and cool, perfect for trekking and wildlife. December to February is lush and less busy, great for photography.",
-   "bestFor": [],
+   "bestMonths": "June to mid-September, December to February",
+   "bestMonthsNote": "Singita names a long dry season from June to mid-September and a short dry season from December to February; gorilla trekking runs year-round.",
+   "bestFor": [
+    "family",
+    "conservation",
+    "wellness",
+    "wine",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.4234,
     "lng": 29.619
    },
-   "airport": "Kigali International Airport",
-   "airportDirections": "Fly to Kigali, then 2.5 hour scenic road transfer to lodge. Helicopter transfers available.",
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Fly to Kigali International Airport, then a 30-minute helicopter flight to the lodge (recommended), or a road transfer of up to four hours.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight suites and one exclusive Kataza House villa, each with private heated plunge pool, fireplace, indoor and outdoor showers, and sweeping volcano views."
+     "Nine one-bedroom suites, each sleeping two, and two two-bedroom suites, each sleeping four. Every suite has indoor and outdoor showers, a dressing room and space for in-room wellness treatments; the one-bedroom suites and the main suite of each two-bedroom suite add a fireplace, a lounge, a veranda and a heated plunge pool. The exclusive-use Kataza House villa sits alongside the lodge."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Gorilla trekking",
-     "Golden monkey tracking",
-     "Guided forest walks",
-     "Farm to table dining",
-     "Community visits",
-     "Photography safaris",
-     "Wellness treatments"
-    ]
+    "paras": [
+     "Gorilla trekking. Golden monkey trekking. Hiking and walking. Cycling. Yoga and in-room wellness treatments. Tree planting and pottery at the Akarabo Nursery. Farm-to-table garden. Community visits and the Singita Community Culinary School. The Ellen DeGeneres Campus of the Dian Fossey Gorilla Fund. Birdwatching. Wine experience. Kigali city tour."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Eco-certified design",
-     "Private heated plunge pools",
-     "Floor to ceiling windows",
-     "World class cuisine and wine",
-     "Conservation and community impact",
-     "Personal butler service"
-    ]
+    "paras": [
+     "Built from volcanic rock, river stone, handmade ceramic tiles and clay bricks made by surrounding communities. Private outdoor heated plunge pools. Central fireplaces in the suites and main lodge. Conservation Lounge. Akarabo Nursery and farm-to-table garden. Wine cellar and tastings. Gear Room for gorilla and golden monkey treks. Singita Boutique & Gallery."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Singita Kwitonda Lodge is for travelers who want to experience gorillas and conservation up close, with luxury, purpose, and connection. Perfect for couples, families, groups, and solo explorers."
+    "Singita Kwitonda Lodge is for travelers who want gorillas and conservation up close, from a lodge that shares a 1.2km border with Volcanoes National Park. Children of all ages are welcome, with childminders on hand while adults trek."
    ],
    "why": [
     {
      "title": "Volcano Views, Gorilla Encounters",
-     "body": "Singita Kwitonda Lodge offers front row access to gorilla trekking, sustainable design, and exceptional comfort. Best for couples, families, photographers, and all seeking meaning with their luxury."
+     "body": "Singita Kwitonda Lodge pairs gorilla trekking with a lodge built to be reclaimed by the forest, the volcanoes always in view. Suited to families and to travelers who want conservation and community woven into their stay."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round with gorilla trekking all year; Singita names June to mid-September and December to February as the dry seasons.",
+    "how_to_get_there": "Fly to Kigali, then a 30-minute helicopter flight (recommended), or a road transfer of up to four hours.",
+    "signature_experiences": "Gorilla and golden monkey trekking from a lodge on the park boundary, plus tree planting at the Akarabo Nursery and visits to the Dian Fossey Gorilla Fund campus.",
+    "who_its_for": "Families and travelers who want gorillas up close with conservation and community at the core of their stay."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Kwitonda Lodge?",
+     "a": "Singita Kwitonda Lodge is in Kinigi, Musanze, Rwanda, alongside Volcanoes National Park, with which it shares a 1.2km border. It looks out to the Sabyinyo, Gahinga and Muhabura volcanoes."
+    },
+    {
+     "q": "How do you get to Singita Kwitonda Lodge?",
+     "a": "Fly into Kigali, then take a 30-minute helicopter flight, the recommended option, or a road transfer that Singita says can take up to four hours. Singita asks guests to book a driver guide and vehicle for every day of their stay, which also covers transfers to and from Kigali."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "Kwitonda is open year-round and Singita notes that gorilla trekking is a year-round activity. Singita describes a long dry season from June to mid-September and a short dry season from December to February, with the heaviest rains from March to May."
+    },
+    {
+     "q": "How many suites does Singita Kwitonda Lodge have?",
+     "a": "Nine one-bedroom suites, each sleeping two, and two two-bedroom suites, each sleeping four. Every one-bedroom suite, and the main suite of each two-bedroom suite, has a heated plunge pool, a fireplace and a veranda."
+    },
+    {
+     "q": "Are children welcome, and what is the minimum age for gorilla trekking?",
+     "a": "Yes. Children of all ages are welcome, with childminders available while adults trek. Singita lists golden monkey treks for children over 12 and gorilla treks for children over 15."
+    },
+    {
+     "q": "What are the signature experiences?",
+     "a": "Gorilla and golden monkey trekking in Volcanoes National Park, with a pre-trek briefing in the Conservation Room and kit from the on-site Gear Room. Guests can also plant trees and meet craftspeople at the Akarabo Nursery, visit the Ellen DeGeneres Campus of the Dian Fossey Gorilla Fund and the Singita Community Culinary School."
+    },
+    {
+     "q": "Who is Singita Kwitonda Lodge best for?",
+     "a": "Travelers who want gorilla trekking with conservation and community at its heart, including families, since children of all ages are welcome. Wellness treatments in the suites, yoga and the wine cellar suit those who also want rest between treks."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -41546,8 +42019,138 @@
    ]
   },
   {
+   "slug": "wilderness-bisate-lodge",
+   "name": "Wilderness Bisate Lodge",
+   "ledgerId": "STY-2026-000331",
+   "country": "Rwanda",
+   "countrySlug": "rwanda",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six forest villas at the foot of the Virunga volcanoes",
+   "quote": "Wake up in the mountains, sleep in a work of art, walk with gorillas",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wilderness-bisate-lodge/g10"
+   ],
+   "bestMonths": "June to September, December to February",
+   "bestMonthsNote": "The dry seasons offer the easiest trekking conditions underfoot, while the green seasons of March to May and October to November bring lush landscapes and lower rates. Gorillas can be tracked all year.",
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "couples",
+    "solo"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -1.4443,
+    "lng": 29.5256
+   },
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Fly into Kigali International Airport (KGL). Helicopter transfers are offered, or drive approximately three hours via Musanze. Wilderness recommends a night in Kigali first.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six en-suite forest villas, each designed as an homage to Rwandan royal heritage and built to evoke giant birds' nests: circular, elevated and crafted from natural materials. Each has a fireplace and a king-sized bed, with views over Mount Bisoke, Karisimbi and Mikeno. A maximum of 12 guests stay at the lodge at any one time."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Gorilla trekking with one of 12 habituated groups",
+     "Golden monkey trekking",
+     "Mount Bisoke hike",
+     "Dian Fossey gravesite visit",
+     "Nature and bird walks",
+     "Guided nursery visit and tree planting",
+     "Village walks and community visits",
+     "Massage treatments at The Sanctuary"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Within walking distance of Volcanoes National Park. A wine cellar, library, restaurant, The Sanctuary spa and a tree nursery. Earth-to-plate dining, with most seasonal ingredients from the lodge's own organic vegetable garden, and potatoes and free-range eggs sourced from neighbours. The Bisate Kwanda day lounge in the garden for a shower, a meal or a massage after a final trek. Wi-Fi. A fully inclusive rate, with gorilla permits, park fees and the conservation levy charged separately. 34 international awards since opening in 2017."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Wilderness Bisate Lodge is for travellers with a specific interest in primates who want a base on the edge of Volcanoes National Park. Since opening in 2017, Wilderness has planted over 120,000 indigenous trees on the lodge's grounds, and guests can plant a tree during their stay. Solo travellers, couples and small groups suit it well."
+   ],
+   "why": [
+    {
+     "title": "A Forest Base for Gorilla Trekking",
+     "body": "Best for primate-focused travellers, couples, solo travellers and small groups who can walk two to five hours over hilly terrain and want their stay to support reforestation around Volcanoes National Park."
+    }
+   ],
+   "facts": {
+    "best_months": "June to September and December to February offer the easiest trekking conditions, though gorillas can be tracked all year.",
+    "how_to_get_there": "Fly into Kigali, then take a helicopter transfer or drive about three hours via Musanze.",
+    "signature_experiences": "Mountain gorilla trekking, golden monkey trekking, a Mount Bisoke hike, the Dian Fossey gravesite, nature and bird walks and tree planting.",
+    "who_its_for": "Primate-focused travellers, solo travellers, couples and small groups who are comfortable walking two to five hours over hilly terrain."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Bisate Lodge?",
+     "a": "Wilderness Bisate Lodge sits at the foot of Rwanda's Virunga volcanoes on the edge of Volcanoes National Park in north-western Rwanda, about 15 km from the town of Musanze. The villas overlook Mount Bisoke, Karisimbi and Mikeno, and the lodge lies within a private area adjacent to the park that Wilderness manages for conservation and reforestation."
+    },
+    {
+     "q": "How do you get to Wilderness Bisate Lodge?",
+     "a": "Fly into Kigali International Airport. Helicopter transfers are offered. By road, Bisate is approximately a three-hour drive from Kigali via Musanze, and most guests transfer by road with Wilderness Touring, operating as Thousand Hills Rwanda. As flights often arrive early in the morning or late at night, Wilderness recommends a night in Kigali before the drive to the lodge."
+    },
+    {
+     "q": "What are the rooms like at Bisate Lodge?",
+     "a": "There are six en-suite forest villas, each designed as an homage to Rwandan royal heritage, with a fireplace, a king-sized bed and views of Mount Bisoke, Karisimbi and Mikeno. A maximum of 12 guests stay at the lodge at any one time."
+    },
+    {
+     "q": "Is there a minimum age for gorilla trekking from Bisate?",
+     "a": "Yes. Under Rwandan park regulations, children under 15 are not permitted on gorilla treks. Wilderness also notes that the lodge is not suited to guests unable to walk two to five hours over hilly terrain."
+    },
+    {
+     "q": "When is the best time to visit Bisate Lodge?",
+     "a": "Bisate is open year-round and gorillas can be tracked in all seasons. The dry seasons, June to September and December to February, offer the easiest trekking conditions underfoot. The green seasons, March to May and October to November, bring lush landscapes and lower rates. Wilderness recommends three to four nights, which allows for two gorilla treks."
+    },
+    {
+     "q": "What are the signature experiences, and are gorilla permits included?",
+     "a": "Guests trek to one of 12 habituated gorilla groups in Volcanoes National Park for an hour with the gorillas. Golden monkey trekking, a Mount Bisoke hike, the Dian Fossey gravesite, nature and bird walks, village visits and tree planting complete a stay. Gorilla trekking permits, park fees and the conservation levy are charged separately from the lodge rate."
+    },
+    {
+     "q": "Who is Bisate Lodge best suited to?",
+     "a": "Wilderness describes it as best for serious wildlife travellers with a specific interest in primates, and says solo travellers, couples and small groups do well here. It is not suited to guests unable to walk two to five hours over hilly terrain."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": true,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": null,
+   "arrivalHubIds": [
+    "6ae6975095f3dd1b670575e5"
+   ]
+  },
+  {
    "slug": "wilderness-bisate-reserve",
-   "name": "Wilderness \n Bisate Reserve",
+   "name": "Wilderness Bisate Reserve",
    "ledgerId": "STY-2026-583167",
    "country": "Rwanda",
    "countrySlug": "rwanda",
@@ -41565,19 +42168,23 @@
    ],
    "bestMonths": "June to September, December to February",
    "bestMonthsNote": "Drier months offer the best gorilla trekking and scenic views, while the green season provides lush beauty, birdlife, and extra privacy.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "conservation",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.4441,
     "lng": 29.5263
    },
-   "airport": "Kigali International Airport KGL",
-   "airportDirections": "Fly into Kigali KGL, private road transfer 2.5 hours or helicopter direct to Bisate Reserve",
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Charter a helicopter from Kigali to Bisate, weather permitting (recommended), or drive about three hours to Musanze and Volcanoes National Park.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Three ultra-luxury private forest residences with volcano views, personalized staff, and exclusive access to all Bisate Reserve experiences."
+     "Four en-suite villas, two of which can be linked to create a family room. Each has expansive living areas, a viewing deck with volcano views and a private wood-fired hot tub."
     ],
     "items": []
    },
@@ -41585,31 +42192,67 @@
     "paras": [],
     "items": [
      "Gorilla trekking",
-     "Private golden monkey tracking",
-     "Volcano hikes and reforestation walks",
-     "In-residence spa and wellness",
+     "Golden monkey trekking",
+     "Mount Bisoke hike",
+     "Hike to the ruin of Dian Fossey's research centre",
+     "Nature trails and birding",
+     "Tree planting",
      "Community visits",
-     "Farm-to-table dining"
+     "Massage"
     ]
    },
    "features": {
     "paras": [
-     "Exclusive-use forest homes for families or groups. Dedicated chef, guide, and butler for each residence. Private decks with dramatic views. Award-winning design and eco-architecture. Seamless access to gorilla trekking and Volcanoes National Park."
+     "Design by Nicholas Plewman Architects and Caline Williams-Wynn, featured in Architectural Digest's 2025 Great Design Hotel Awards. A resident chef and seasonal, locally sourced ingredients, many of which you can pick yourself. A mud room to prepare for gorilla trekking, a climate-controlled wine tower and three fireplaces. Use of the Bisate Kwanda day lounge. On the edge of Volcanoes National Park."
     ],
     "items": []
    },
    "onlyHere": [
-    "Wilderness Bisate Reserve is for those who want complete privacy, personalized service, and a front-row seat to Rwanda’s greatest adventures. Perfect for multi-generational families, friends, and high-end travelers who value conservation, comfort, and connection."
+    "Wilderness Bisate Reserve is for travellers who want privacy, warm hospitality and a base for gorilla trekking in Volcanoes National Park. It suits families, groups of friends and conservation-minded travellers who want to take part in reforestation and community programmes."
    ],
    "why": [
     {
      "title": "Your Private Gateway to Gorilla Country",
-     "body": "Bisate Reserve combines exclusivity with purpose. Every stay supports conservation, reforestation, and local community projects. It is perfect for those seeking intimate moments with wildlife, luxury in nature, and a positive legacy in Rwanda."
+     "body": "Bisate Reserve combines privacy with purpose. Every stay contributes to the reforestation and rehabilitation of the land, and to conservation and community projects around Volcanoes National Park."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to September and December to February are the driest months and the best for gorilla trekking, though gorillas can be tracked all year.",
+    "how_to_get_there": "Fly into Kigali, then charter a helicopter to Bisate (recommended, weather permitting), or drive about three hours to the Volcanoes National Park area.",
+    "signature_experiences": "Mountain gorilla trekking, golden monkey trekking, a Mount Bisoke hike, nature trails, community visits and tree planting.",
+    "who_its_for": "Families, groups of friends and conservation-minded travellers who want a private base for gorilla trekking."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Bisate Reserve?",
+     "a": "Wilderness Bisate Reserve is on the edge of Volcanoes National Park in north-western Rwanda, within walking distance of its sister lodge Wilderness Bisate but out of sight of it. It looks over six dormant Virunga volcanoes, including Bisoke, Karisimbi and Mikeno."
+    },
+    {
+     "q": "How do you get to Wilderness Bisate Reserve?",
+     "a": "Fly into Kigali International Airport, then charter a helicopter from Kigali to Bisate, the recommended option, subject to weather and the helicopter model. Alternatively, drive roughly three hours to Musanze, the closest village to Volcanoes National Park."
+    },
+    {
+     "q": "When is the best time to visit Bisate Reserve?",
+     "a": "Gorillas can be tracked all year. Wilderness names the dry seasons, June to September and December to February, as the best times for gorilla trekking, while the rainy months of March to May and October to November are greener and quieter."
+    },
+    {
+     "q": "How many villas does Bisate Reserve have?",
+     "a": "There are four en-suite villas, two of which can be linked to create a family room. Each has expansive living areas, a viewing deck and a private wood-fired hot tub."
+    },
+    {
+     "q": "Can children stay at Bisate Reserve?",
+     "a": "Yes, families are welcome and two villas can be linked as a family room. Wilderness notes that under Rwandan park regulations children under 15 are not permitted on gorilla treks."
+    },
+    {
+     "q": "What are the signature experiences, and are gorilla permits included?",
+     "a": "An hour with the mountain gorillas is the star attraction, with guests trekking to one of 12 habituated groups; golden monkey trekking, a Mount Bisoke hike, the Dian Fossey sites, nature trails, community visits and tree planting complete a stay. Gorilla trekking permits, park fees and the conservation levy are charged separately from the lodge rate."
+    },
+    {
+     "q": "Who is Bisate Reserve best suited to?",
+     "a": "Wilderness describes it as reserved for connoisseurs of conservation. It suits families, groups of friends and travellers who want to take part in reforestation and community programmes alongside gorilla trekking."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -41788,7 +42431,7 @@
     "lng": 13.8455
    },
    "airport": "Desert Rhino Camp Airstrip",
-   "airportDirections": "Fly by light aircraft to Desert Rhino Camp Airstrip, 15-minute transfer to camp. Self-drive from Swakopmund (6.5 hours) or Windhoek (8 hours).",
+   "airportDirections": null,
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -42742,7 +43385,7 @@
   },
   {
    "slug": "wilderness-magashi-peninsula",
-   "name": "Magashi Peninsula \n Wilderness Retreat",
+   "name": "Wilderness Magashi Peninsula",
    "ledgerId": "STY-2026-000344",
    "country": "Rwanda",
    "countrySlug": "rwanda",
@@ -42759,8 +43402,14 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2953095c7_3da0527dc_695b66f2ab89a28052201b25_Star_20Deck_MagashiPeninsula_Rwanda10-25-FELIX-11.jpg"
    ],
    "bestMonths": "June to September; December to February",
-   "bestMonthsNote": "These months are the dry season in Akagera, offering the best wildlife viewing, comfortable weather, and excellent lake activities. Wet months are lush and great for birding, but roads can be muddy.",
-   "bestFor": [],
+   "bestMonthsNote": "In the dry seasons wildlife gathers around water sources, making sightings easier and more predictable.",
+   "bestFor": [
+    "couples",
+    "family",
+    "group_exclusive_use",
+    "conservation",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -42768,51 +43417,85 @@
     "lng": 30.6799
    },
    "airport": "Kigali International Airport (KGL)",
-   "airportDirections": "From Kigali International Airport, it is a two and a half to three hour scenic drive to Akagera National Park, followed by a transfer to the private camp. A helicopter transfer is also available for faster access.",
+   "airportDirections": "A charter helicopter of about 22 minutes from Kigali (recommended), or a drive of about two and a half hours to Akagera National Park.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Villa with private plunge pool and star-bed deck",
-     "Luxury suites with plunge pools",
-     "Private camp booking for families or groups"
-    ]
+    "paras": [
+     "Two couple's suites, set 200 metres apart, each with a plunge pool and a rooftop Star Bed. One exclusive-use villa with two en-suite rooms, an extra room adaptable as a gym, office or children's room, its own lounge, dining area, kitchen and plunge pool, a rooftop Star Bed, a private guide and in-villa meals."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided game drives across the savannah",
-     "Night drives to discover nocturnal wildlife",
+     "Morning and afternoon game drives",
+     "Night drives with filtered spotlights",
      "Boat safaris on Lake Rwanyakazinga",
-     "Nature walks and birding",
-     "Star-bed sleepout on raised deck",
-     "Hands-on conservation and wildlife tracking"
+     "Guided nature walks and birding",
+     "Catch-and-release fishing",
+     "Star Bed sleep-out on your rooftop"
     ]
    },
    "features": {
     "paras": [
-     "Private concession with exceptional wildlife including lion, leopard, black rhino, and more.Luxury accommodations with plunge pools and private decks.Eco-friendly design and locally inspired cuisine.Exclusive location,no other camps or vehicles nearby.Personalized service and guided experiences.Active involvement in conservation projects."
+     "A 4,287-hectare private area in Akagera National Park, the only private access area in the park, with its own lake shoreline. Wildlife includes lion, leopard, elephant, white and Eastern black rhino, sitatunga and oribi. Plunge pools and rooftop Star Beds at every suite and the villa. Design inspired by Rwandan culture, with 100% solar power. A gym and wellness facilities in the main area. Wilderness supports park management as a concessionaire alongside African Parks and the Rwanda Development Board."
     ],
     "items": []
    },
    "onlyHere": [
-    "At Magashi Peninsula, each morning begins with a sunrise over Lake Rwanyakazinga and each night is filled with the sounds of African wildlife. Families and groups can enjoy the privacy of the entire camp, couples can find romantic seclusion, and solo travelers can immerse themselves in nature with personalized guiding. Conservation-minded guests are part of the Akagera revival story, all within a private, luxurious setting."
+    "At Magashi Peninsula, hippos and crocodiles fill the lake below the main area, and elephants, buffalo and plains game wander freely. Couples have a suite of their own, while families and groups can take the exclusive-use villa with its own guide and meals. Conservation-minded guests become part of the Akagera rehabilitation story."
    ],
    "why": [
     {
      "title": null,
-     "body": "Choose Magashi Peninsula for an intimate and exclusive safari experience where luxury, adventure, and conservation meet on the edge of one of Africa’s most beautiful lakes."
+     "body": "Choose Magashi Peninsula for an intimate, private safari where luxury, adventure and conservation meet on the shores of Lake Rwanyakazinga."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to September and December to February are the dry seasons, when wildlife gathers around water and sightings are easier.",
+    "how_to_get_there": "Take a charter helicopter of about 22 minutes from Kigali (recommended), or drive about two and a half hours to Akagera National Park.",
+    "signature_experiences": "Day and night game drives in a private area of Akagera, boat safaris on Lake Rwanyakazinga, catch-and-release fishing and rooftop Star Bed sleep-outs.",
+    "who_its_for": "Couples in the two suites, and families or groups in the exclusive-use villa."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Magashi Peninsula?",
+     "a": "Wilderness Magashi Peninsula is in Akagera National Park on Rwanda's north-eastern border, set on a 4,287-hectare (10,590-acre) private area at the furthest reaches of the park. It overlooks Lake Rwanyakazinga, with its own stretch of lake shoreline and the Mutumba Mountains beyond."
+    },
+    {
+     "q": "How do you get to Magashi Peninsula?",
+     "a": "Most guests come from Kigali, and the recommended way is a charter helicopter flight of approximately 22 minutes. By road, the drive to Akagera takes about two and a half hours. Helicopters also link Akagera with Volcanoes National Park for guests combining a safari with gorilla trekking."
+    },
+    {
+     "q": "When is the best time to visit Magashi Peninsula?",
+     "a": "Wilderness names the dry seasons, June to September and December to February, as the best time for an Akagera safari. Wildlife gathers around water sources in these months, which makes sightings more predictable."
+    },
+    {
+     "q": "How many suites does Magashi Peninsula have?",
+     "a": "There are just two couple's suites, set 200 metres apart, and one exclusive-use villa with two en-suite rooms plus an extra room adaptable as a gym, office or children's room. The suites and the villa each have their own plunge pool and a rooftop Star Bed."
+    },
+    {
+     "q": "Is Magashi Peninsula good for families?",
+     "a": "Yes, Wilderness points families and groups to the exclusive-use villa, which has its own private guide, in-villa meals, kitchen, living and dining space, and a spare room that can serve as a children's room."
+    },
+    {
+     "q": "What are the signature experiences at Magashi Peninsula?",
+     "a": "Day and night game drives in the only private access area in Akagera, guided nature walks, boat safaris on Lake Rwanyakazinga, catch-and-release fishing and Star Bed sleep-outs. Akagera is home to lion, leopard, elephant, buffalo, and white and Eastern black rhino."
+    },
+    {
+     "q": "Who is Magashi Peninsula best suited to?",
+     "a": "The suites are designed for couples, and the villa suits families and groups who want privacy. Every stay contributes to the rehabilitation of Akagera National Park, which Wilderness supports as a concessionaire alongside African Parks and the Rwanda Development Board."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "akagera",
     "intentions": [],
     "suitability": [],
@@ -43338,7 +44021,7 @@
   },
   {
    "slug": "wilderness-sabyinyo",
-   "name": "Wilderness \n Sabyinyo",
+   "name": "Wilderness Sabyinyo",
    "ledgerId": "STY-2026-000349",
    "country": "Rwanda",
    "countrySlug": "rwanda",
@@ -43357,20 +44040,24 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a19d739e7_b13eb6d3c_69bcfa0646257d482db18c80_Sabyinyo_20Lodge_Rwanda_12-25_FLINK_0146.jpg"
    ],
    "bestMonths": "June to September, December to February",
-   "bestMonthsNote": "Drier months make gorilla trekking easier and offer best conditions for volcano hikes and wildlife. March to May and November are lush and quiet with fewer travelers.",
-   "bestFor": [],
+   "bestMonthsNote": "Driest months give the easiest trekking. March to May and October to November bring rain, lush forest and fewer visitors.",
+   "bestFor": [
+    "conservation",
+    "family",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -1.4164,
-    "lng": 29.5703
+    "lat": -1.4168,
+    "lng": 29.5657
    },
-   "airport": "Kigali International Airport KGL",
-   "airportDirections": "Fly into Kigali KGL, road transfer 2.5 hours to Sabyinyo via Musanze, or private helicopter available",
+   "airport": "Kigali International Airport (KGL)",
+   "airportDirections": "Helicopter transfer from Kigali on request (recommended), or drive about three hours to Musanze; the lodge is 15 minutes from park headquarters.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six spacious cottages, two luxurious suites, and one family cottage with fireplaces, large terraces, and views of the Virunga volcanoes."
+     "Six stone cottages, two suites with king-size four-poster beds and one family unit with two separate bedrooms. Each has a fireplace, a large sitting area, an en-suite bathroom and a sheltered veranda with views of the Virunga volcanoes."
     ],
     "items": []
    },
@@ -43386,27 +44073,57 @@
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Hilltop location with panoramic volcano views",
-     "Owner-hosted warmth and personal service",
-     "Farm-to-table cuisine and cozy fireplaces",
-     "Social-impact lodge supporting local communities",
-     "Easy access to park HQ for trekking"
-    ]
+    "paras": [
+     "A 16-hectare property on the edge of Volcanoes National Park, about 15 minutes from the park headquarters where treks begin. Rwanda's first community-owned lodge, owned by the SACOLA community trust and operated by Wilderness. Menus inspired by daily harvests from the organic vegetable gardens. Fireplaces in every cottage. Wi-Fi in the main area."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Wilderness Sabyinyo is made for travelers with big dreams: gorilla treks, golden monkey adventures, and Rwandan culture at your doorstep. This is the lodge for couples, solo explorers, families, and groups who want authentic connection, world-class guiding, and a direct positive impact on local communities."
+    "Wilderness Sabyinyo is made for travellers who want gorilla treks, golden monkey trekking and Rwandan culture at the door. Stay here for an authentic Rwandan experience, warm hospitality and a direct contribution to conservation and community empowerment."
    ],
    "why": [
     {
      "title": "Journey to the Heart of the Volcanoes",
-     "body": "Sabyinyo offers unmatched comfort, legendary guiding, and once-in-a-lifetime access to Rwanda’s gorillas and wildlife. Perfect for adventure seekers, nature lovers, conservationists, and those who want luxury with purpose."
+     "body": "Sabyinyo pairs comfortable stone cottages and knowledgeable guides with access to Rwanda's mountain gorillas. Just by staying here, you contribute to wildlife conservation and community empowerment initiatives."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to September and December to February are the driest months and the best for gorilla trekking, though gorillas can be tracked all year.",
+    "how_to_get_there": "Fly into Kigali, then take a helicopter transfer on request (recommended), or drive about three hours to the Volcanoes National Park area; the lodge is 15 minutes from park headquarters.",
+    "signature_experiences": "Mountain gorilla and golden monkey trekking, the Dian Fossey gravesite hike, guided birding and community walks with SACOLA.",
+    "who_its_for": "Travellers who want gorilla trekking and an authentic, community-owned Rwandan lodge, including families using the two-bedroom family unit."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Sabyinyo?",
+     "a": "Wilderness Sabyinyo sits on a 16-hectare property on the edge of Volcanoes National Park in north-western Rwanda, in the foothills of the Virunga Massif. It is about 15 minutes from the park headquarters, where trekking permits are obtained before each trek."
+    },
+    {
+     "q": "How do you get to Wilderness Sabyinyo?",
+     "a": "Fly into Kigali International Airport, then take a helicopter transfer to the lodge, the recommended option, arranged through your travel designer. By road, drive roughly three hours to Musanze, the closest village to Volcanoes National Park, and on to the lodge; Wilderness bookings in Rwanda include a private vehicle and driver-guide."
+    },
+    {
+     "q": "When is the best time to visit Sabyinyo?",
+     "a": "Gorillas can be tracked all year. Wilderness names the dry seasons, June to September and December to February, as the best times for trekking, while March to May and October to November bring rain, greener forest and fewer visitors."
+    },
+    {
+     "q": "What accommodation does Sabyinyo have?",
+     "a": "Sabyinyo has six stone cottages, two suites with king-size four-poster beds and one family unit with two separate bedrooms. Each has a fireplace, a large sitting area and a sheltered veranda with views over the volcanoes."
+    },
+    {
+     "q": "Can children stay at Sabyinyo?",
+     "a": "Yes, the family unit has two separate bedrooms. Wilderness notes that under Rwandan park regulations children under 15 are not permitted on gorilla treks."
+    },
+    {
+     "q": "What are the signature experiences, and are gorilla permits included?",
+     "a": "Gorilla trekking to one of 12 habituated families is the main draw, alongside golden monkey trekking, hikes in the park including to Dian Fossey's gravesite, guided birding, community walks and in-cottage massage. Gorilla trekking permits, park fees and the conservation levy are charged separately from the lodge rate."
+    },
+    {
+     "q": "Who is Sabyinyo best suited to?",
+     "a": "Sabyinyo suits travellers who want an authentic Rwandan experience with gorilla trekking. It is Rwanda's first community-owned lodge, owned by the SACOLA community trust and operated by Wilderness, so every stay supports conservation and the surrounding communities."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

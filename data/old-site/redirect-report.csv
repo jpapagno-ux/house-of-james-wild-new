@@ -306,7 +306,7 @@ old path,new path,why,old title
 /book/uxua-casa,/stays/uxua-casa-hotel-spa,booking page -> stay page,Book your stay at Uxua Casa Hotel Spa | Wild Earth Stays
 /book/velaa-private-island,/stays/velaa-private-island,booking page -> stay page,Book your stay at Velaa Private Island | Wild Earth Stays
 /book/viceroy-bali,/stays/viceroy-bali,booking page -> stay page,Book your stay at Viceroy Bali | Wild Earth Stays
-/book/wilderness-bisate-lodge,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at Wilderness Bisate Lodge | Wild Earth Stays
+/book/wilderness-bisate-lodge,/stays/wilderness-bisate-lodge,booking page -> stay page,Book your stay at Wilderness Bisate Lodge | Wild Earth Stays
 /book/wilderness-bisate-reserve,/stays/wilderness-bisate-reserve,booking page -> stay page,Book your stay at Wilderness Bisate Reserve | Wild Earth Stays
 /book/wilderness-busanga,/stays/wilderness-busanga,booking page -> stay page,Book your stay at Wilderness Busanga | Wild Earth Stays
 /book/wilderness-desert-rhino-camp,/stays/wilderness-desert-rhino-camp,booking page -> stay page,Book your stay at Wilderness Desert Rhino Camp | Wild Earth Stays
@@ -800,7 +800,7 @@ old path,new path,why,old title
 /property/uxua-casa-hotel-spa,/stays/uxua-casa-hotel-spa,stay page,Uxua Casa Hotel Spa | Luxury Stays in Brazil | Wild Earth Stays
 /property/velaa-private-island,/stays/velaa-private-island,stay page,Velaa Private Island | Luxury Stays in Maldives | Wild Earth Stays
 /property/viceroy-bali,/stays/viceroy-bali,stay page,Viceroy Bali | Luxury Stays in Indonesia | Wild Earth Stays
-/property/wilderness-bisate-lodge,/destinations/africa/rwanda,not on the new site yet; country page,Wilderness Bisate Lodge | Luxury Stays in Rwanda | Wild Earth Stays
+/property/wilderness-bisate-lodge,/stays/wilderness-bisate-lodge,stay page,Wilderness Bisate Lodge | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-bisate-reserve,/stays/wilderness-bisate-reserve,stay page,Wilderness Bisate Reserve | Luxury Stays in Rwanda | Wild Earth Stays
 /property/wilderness-busanga,/stays/wilderness-busanga,stay page,Wilderness Busanga | Luxury Stays in Zambia | Wild Earth Stays
 /property/wilderness-damaraland,/stays/wilderness-damaraland,stay page,Wilderness Doro Nawas | Luxury Stays in Namibia | Wild Earth Stays
@@ -1935,7 +1935,7 @@ old path,new path,why,old title
 /stay/viceroy-bali-terrace-villa,/stays/viceroy-bali,room of viceroy-bali -> stay page,Terrace Villa at Viceroy Bali | Wild Earth Stays
 /stay/viceroy-bali-vice-regal-villa-one-bedroom,/stays/viceroy-bali,room of viceroy-bali -> stay page,1 Bed Vice Regal Villa at Viceroy Bali | Wild Earth Stays
 /stay/viceroy-bali-vice-regal-villa-two-bedroom,/stays/viceroy-bali,room of viceroy-bali -> stay page,2 Bed Vice Regal Villa at Viceroy Bali | Wild Earth Stays
-/stay/wilderness-bisate-lodge-forest-villa,/destinations/africa/rwanda,room of wilderness-bisate-lodge -> not on the new site yet; country page,Forest Villa at Wilderness Bisate Lodge | Wild Earth Stays
+/stay/wilderness-bisate-lodge-forest-villa,/stays/wilderness-bisate-lodge,room of wilderness-bisate-lodge -> stay page,Forest Villa at Wilderness Bisate Lodge | Wild Earth Stays
 /stay/wilderness-bisate-reserve-private-forest-residence,/stays/wilderness-bisate-reserve,room of wilderness-bisate-reserve -> stay page,Private Forest Residence at Wilderness Bisate Reserve | Wild Earth Stays
 /stay/wilderness-busanga-safari-tent,/stays/wilderness-busanga,room of wilderness-busanga -> stay page,Safari Tent at Wilderness Busanga | Wild Earth Stays
 /stay/wilderness-desert-rhino-camp-tented-suite,/stays/wilderness-desert-rhino-camp,room of wilderness-desert-rhino-camp -> stay page,Tented Suite at Wilderness Desert Rhino Camp | Wild Earth Stays

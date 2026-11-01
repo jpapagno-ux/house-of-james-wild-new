@@ -1561,6 +1561,26 @@
    "released": true
   },
   {
+   "stay_id": "6ae765bceaa4f53ba846c2d0",
+   "slug": "hoanib-elephant-camp",
+   "name": "Hoanib Elephant Camp",
+   "country": "Namibia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae35291e4936c8e22e4dc57",
+   "slug": "hoanib-valley-camp",
+   "name": "Hoanib Valley Camp",
+   "country": "Namibia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff919",
    "slug": "holistika",
    "name": "Holistika",
@@ -4097,14 +4117,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9dc",
    "slug": "the-retreat-rwanda",
-   "name": "The Retreat - Rwanda",
+   "name": "Hemingways Retreat Kigali",
    "country": "Rwanda",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9de",
@@ -4555,7 +4571,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bffa07",
    "slug": "wilderness-magashi-peninsula",
-   "name": "Magashi Peninsula Wilderness Retreat",
+   "name": "Wilderness Magashi Peninsula",
    "country": "Rwanda",
    "missing": [],
    "released": true

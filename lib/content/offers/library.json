@@ -1358,5 +1358,85 @@
   "checked": "2026-11-01",
   "conditions": "Stay 3 nights at Hoanib Valley Camp or Hoanib Elephant Camp with at least 2 nights at another Natural Selection camp in Namibia, such as Kwessi Dunes, and one of the 3 Hoanib nights is free. New bookings only; existing bookings cannot be converted. Cannot be combined with the Natural Selection long stay rate. Natural Selection terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000099",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "singita-kwitonda",
+  "name": "Singita 7 Night Offer 2027 (Singita Kwitonda Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 7 nights, one night on Singita",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-14",
+   "text": "Travel 6 January to 14 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book 7 nights at one Singita property and receive one night free, applied to the lowest-rated night. Singita terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000100",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "singita-katanza-house",
+  "name": "Singita 7 Night Offer 2027 (Singita Kataza House)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 7 nights, one night on Singita",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-14",
+   "text": "Travel 6 January to 14 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book 7 nights at one Singita property and receive one night free, applied to the lowest-rated night. Singita terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000101",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "singita-kwitonda",
+  "name": "Singita Long Stay 2 Regions 2027 (Singita Kwitonda Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "12 nights across two Singita regions, 2 nights free",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-14",
+   "text": "Travel 6 January to 14 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 12 nights or more across two Singita regions, with at least 3 nights at each property, and receive 2 nights free. Singita terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000102",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "singita-katanza-house",
+  "name": "Singita Long Stay 2 Regions 2027 (Singita Kataza House)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "12 nights across two Singita regions, 2 nights free",
+  "travel": {
+   "from": "2027-01-06",
+   "to": "2027-12-14",
+   "text": "Travel 6 January to 14 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 12 nights or more across two Singita regions, with at least 3 nights at each property, and receive 2 nights free. Singita terms apply.",
+  "volume": "stays"
  }
 ]

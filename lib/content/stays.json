@@ -21520,9 +21520,9 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": null,
    "arrivalHubIds": []
@@ -29719,13 +29719,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": null,
    "arrivalHubIds": []
@@ -30088,13 +30090,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-07"
+    ],
     "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -31286,13 +31290,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-07"
+    ],
     "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -34203,9 +34209,9 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": null,
    "arrivalHubIds": []

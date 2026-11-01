@@ -1,3 +1,5 @@
+-- SUPERSEDED 1 Nov 2026: captured in supabase/migrations/20261101170000_drift_sync_out_of_band_objects.sql.
+-- Kept for history only. Do not run.
 -- Booking Live · Phase 2 · run ONCE in the Supabase SQL editor (project JWC Booking Live).
 -- Second half of migration 20261027001000_review_fixes.sql. The first half (columns,
 -- sample marking, offer limits, quote lock) was applied on 27 Oct; the connector timed

@@ -31,6 +31,22 @@ const REGIONS = {
   // pins live here, as an inset on the Chile page and on the Rapa Nui guide. 1:10m stock, like Galápagos.
   "rapa-nui": { country: "chile", hires: true, frame: [-109.55, -27.27, -109.17, -27.0], focus: ["Chile"], seas: [["Pacific Ocean", -27.24, -109.5]],
     areas: [["Hanga Roa ✈", -27.15, -109.43], ["Rano Kau · Orongo", -27.19, -109.43], ["Rano Raraku", -27.105, -109.3], ["Ahu Tongariki", -27.15, -109.265], ["Anakena", -27.07, -109.32], ["Terevaka", -27.085, -109.38], ["Poike", -27.09, -109.24]] },
+  // The Atacama and Uyuni, closer (James, 1 Nov 2026): the landing chart of the South America flyover.
+  // Chile and Bolivia in ink, the salt flats, the Eduardo Avaroa reserve, the classic crossing and the
+  // UNESCO sites in the frame. Outlines of the salt flats and the reserve are indicative, drawn by hand.
+  "atacama-uyuni": { country: "chile", hires: true, frame: [-70.9, -24.3, -64.9, -18.2], focus: ["Chile", "Bolivia"],
+    seas: [["Pacific Ocean", -21.6, -70.55]],
+    areas: [["Atacama Desert", -23.35, -69.75], ["Altiplano", -18.95, -67.35]],
+    countries: [["CHILE", -21.3, -69.4], ["BOLIVIA", -18.75, -66.0], ["ARGENTINA", -23.7, -65.8]],
+    salt: [
+      ["Salar de Uyuni", [[-68.20,-20.00],[-67.95,-19.85],[-67.70,-19.82],[-67.45,-19.88],[-67.20,-19.95],[-67.00,-20.10],[-66.95,-20.30],[-67.05,-20.50],[-67.30,-20.62],[-67.65,-20.66],[-67.95,-20.55],[-68.15,-20.30]]],
+      ["Salar de Coipasa", "ellipse", -68.2, -19.38, 0.3, 0.17],
+      ["Salar de Atacama", "ellipse", -68.25, -23.5, 0.2, 0.45],
+    ],
+    reserves: [["Eduardo Avaroa Reserve", [[-68.0,-21.65],[-67.15,-21.6],[-66.8,-22.1],[-67.05,-22.7],[-67.6,-22.9],[-67.85,-22.8],[-68.1,-22.3]], [-67.3, -21.82]]],
+    route: [[-68.20,-22.91],[-67.80,-22.86],[-67.82,-22.80],[-67.78,-22.20],[-67.88,-22.05],[-67.98,-21.27],[-67.62,-20.24],[-66.83,-20.46]],
+    marks: [["San Pedro de Atacama", -22.91, -68.2, "town"], ["Uyuni ✈", -20.46, -66.83, "town"], ["Calama ✈", -22.498, -68.904, "airport"], ["Laguna Colorada", -22.2, -67.78, "water"], ["Licancabur", -22.83, -67.88, "peak"]],
+    unesco: ["420", "566", "1178", "1634"] },
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
@@ -51,6 +67,24 @@ const points = (slug) => {
   for (const r of reserves.reserves || reserves) if (!only && r.stay && r.stay.regionSlug === slug && r.stay.coords) pts.push([r.stay.coords.lng, r.stay.coords.lat]);
   return pts;
 };
+
+// Chart overlays (the flyover landing charts): salt flats, reserves, a route, marks and UNESCO sites.
+const UNESCO_SRC = require("fs").readFileSync(require("path").join(__dirname, "../lib/content/unesco.ts"), "utf8");
+const UNESCO = [...UNESCO_SRC.matchAll(/\{ id: "(\d+)", name: "([^"]+)", country: "[^"]+", year: (\d+), lat: (-?[\d.]+|null), lng: (-?[\d.]+|null) \}/g)]
+  .map((m) => ({ id: m[1], name: m[2], year: +m[3], lat: m[4] === "null" ? null : +m[4], lng: m[5] === "null" ? null : +m[5] }));
+function overlays(cfg, P) {
+  const path = (pts) => "M" + pts.map((p) => P(p).join(",")).join("L") + "Z";
+  const ell = (cx, cy, rx, ry) => Array.from({ length: 28 }, (_, i) => { const a = (i / 28) * 2 * Math.PI; return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)]; });
+  const shape = (x) => (x[1] === "ellipse" ? { name: x[0], d: path(ell(x[2], x[3], x[4], x[5])), at: P([x[2], x[3]]) } : { name: x[0], d: path(x[1]), at: x[2] ? P(x[2]) : P(x[1].reduce((a, p) => [a[0] + p[0] / x[1].length, a[1] + p[1] / x[1].length], [0, 0])) });
+  return {
+    salt: (cfg.salt || []).map(shape).map(({ name, d, at }) => ({ name, d, x: at[0], y: at[1] })),
+    reserves: (cfg.reserves || []).map(shape).map(({ name, d, at }) => ({ name, d, x: at[0], y: at[1] })),
+    route: cfg.route ? "M" + cfg.route.map((p) => P(p).join(",")).join("L") : null,
+    marks: (cfg.marks || []).map(([text, lat, lng, kind]) => { const [x, y] = P([lng, lat]); return { text, x, y, kind }; }),
+    countries: (cfg.countries || []).map(([text, lat, lng]) => { const [x, y] = P([lng, lat]); return { text, x, y }; }),
+    unesco: (cfg.unesco || []).map((id) => UNESCO.find((u) => u.id === id)).filter((u) => u && u.lat != null).map((u) => { const [x, y] = P([u.lng, u.lat]); return { id: u.id, name: u.name, label: u.name.replace(/^(City of |Historic City of |Historic Quarter of )/, "").split(/,| and /)[0].replace(/ Culture$/, ""), year: u.year, x, y }; }),
+  };
+}
 
 const out = {};
 for (const [slug, cfg] of Object.entries(REGIONS)) {
@@ -113,6 +147,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
       areas: (cfg.areas || []).map(L),
     },
     lats, lngs,
+    ...(cfg.salt || cfg.unesco ? { overlays: overlays(cfg, P) } : {}),
   };
   console.log(slug, W, H, "focus:", [...focusNames].join(", "), "points:", raw.length);
 }

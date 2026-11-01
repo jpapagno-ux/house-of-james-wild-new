@@ -21,6 +21,8 @@ import { stayBySlug } from "@/lib/content/stays";
 import { guideSlides } from "@/lib/content/guide-slides";
 import { RecordCard } from "@/components/hub/Hub";
 import IslandZoom from "@/components/destination/IslandZoom";
+import ChartFlyover from "@/components/destination/ChartFlyover";
+import { flyover } from "@/lib/content/flyovers";
 import { absoluteUrl } from "@/lib/seo";
 import { graph, imageObject } from "@/lib/schema";
 
@@ -77,6 +79,7 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
 
           {map}
           {g.zoom && <IslandZoom zoom={g.zoom} />}
+          {g.flyover && (() => { const f = flyover(g.flyover); return f ? <ChartFlyover {...f} /> : null; })()}
 
           <WhenToGo place={g.name} rows={g.months} airports={g.airports} transfers={g.transfers} />
 

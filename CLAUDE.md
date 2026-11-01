@@ -37,4 +37,5 @@
 - No Habitas properties anywhere (Habitas closed Tulum and Namibia; records are excluded in the library).
 - No Middle East stays, pages or maps (e.g. UAE, Oman, Jordan, Saudi Arabia, Qatar, Israel). Turkey may be added later.
 - Egypt and Morocco are Africa, not the Middle East, and can be sold.
+- Presidential villas and residences are not shown on stay pages; they sit back for The Exceptional Few, the super high-end category to be built later (James, 1 Nov 2026).
 - No Malawi (James, 31 Oct 2026). Ethiopia is a future country (Lale's Camp held).

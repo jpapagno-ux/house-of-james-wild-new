@@ -436,10 +436,10 @@
    "slug": "benguerra-island-by-and-beyond",
    "name": "Benguerra Island \n by & Beyond",
    "ledgerId": "STY-2026-000004",
-   "country": "Tanzania",
-   "countrySlug": "tanzania",
+   "country": "Mozambique",
+   "countrySlug": null,
    "regionSlug": "africa",
-   "misfiled": null,
+   "misfiled": "Mozambique",
    "category": "hotel",
    "tagline": "Where turquoise waters meet barefoot luxury",
    "quote": "Wake up to the sound of the ocean, explore coral reefs, and unwind in your private beach paradise",
@@ -4914,10 +4914,7 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": [
-    "6ae666174efda236c530e85b",
-    "6ae666174efda236c530e85c"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "bumi-hills-safari-lodge",
@@ -5057,9 +5054,9 @@
    "name": "Camp Hwange & Muddy Teak",
    "ledgerId": "STY-2026-000049",
    "country": "Zimbabwe",
-   "countrySlug": null,
-   "regionSlug": null,
-   "misfiled": "Zimbabwe",
+   "countrySlug": "zimbabwe",
+   "regionSlug": "africa",
+   "misfiled": null,
    "category": "hotel",
    "tagline": "Where the bush still speaks first, and luxury listens quietly.",
    "quote": "In Hwange, you don’t observe wildlife , you enter its rhythm.",
@@ -5909,10 +5906,7 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": [
-    "6ae666174efda236c530e858",
-    "6ae666174efda236c530e85e"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "celestia-yacht",
@@ -7394,9 +7388,7 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": [
-    "6ae666174efda236c530e859"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "cottars-1920-camp",
@@ -10833,7 +10825,7 @@
    "ledgerId": "STY-2026-000102",
    "country": "Mozambique",
    "countrySlug": null,
-   "regionSlug": null,
+   "regionSlug": "africa",
    "misfiled": "Mozambique",
    "category": "hotel",
    "tagline": "A conservation-led safari experience in one of Africa’s greatest wilderness restoration stories.",
@@ -11411,9 +11403,7 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": [
-    "6ae666174efda236c530e859"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "hemingways-nairobi",
@@ -12899,9 +12889,9 @@
    "name": "Isla Palenque Resort",
    "ledgerId": "STY-2026-000117",
    "country": "Panama",
-   "countrySlug": null,
-   "regionSlug": null,
-   "misfiled": "Panama",
+   "countrySlug": "panama",
+   "regionSlug": "central-america",
+   "misfiled": null,
    "category": "hotel",
    "tagline": "A private island sanctuary where rainforest, ocean, and adventure exist in perfect harmony.",
    "quote": "Disconnect from the world and reconnect with nature on your own private island.",
@@ -22437,9 +22427,7 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": null,
-   "arrivalHubIds": [
-    "6ae666174efda236c530e85a"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "noah-forest-by-tifakara",
@@ -39768,9 +39756,7 @@
     "stays",
     "europe"
    ],
-   "arrivalHubIds": [
-    "6ae666174efda236c530e858"
-   ]
+   "arrivalHubIds": []
   },
   {
    "slug": "xanadu-island-resort",

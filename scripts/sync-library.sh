@@ -15,5 +15,6 @@ python3 scripts/export-films.py data/library/films.json lib/content/films.json
 python3 scripts/export-impact.py data/library/impact-notes.json lib/content/pathways/impact-library.json
 python3 scripts/export-arrivals.py data/library/arrival-hubs.json data/library/transfers.json lib/content/arrivals.json
 node scripts/build-country-charts.cjs
+node scripts/build-region-charts.cjs > /dev/null
 python3 scripts/build-redirects.py > /dev/null
 echo "content regenerated"

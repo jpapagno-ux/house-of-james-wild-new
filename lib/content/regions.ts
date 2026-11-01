@@ -4,7 +4,7 @@ import data from "./regions.json";
 import LIBRARY from "./countries-library.json";
 import STAY_ROWS from "./stays.json";
 
-export type RegionCountry = { name: string; slug: string | null; image: string | null; line: string; stays: number; bestMonths: string | null; reviewed: boolean };
+export type RegionCountry = { name: string; slug: string | null; image: string | null; line: string; stays: number; bestMonths: string | null; reviewed: boolean; /** destination card: on the site before its stays */ coming?: boolean };
 export type RegionStay = { name: string; slug: string; ledgerId: string | null; tagline: string | null; image: string; country: string; status: string | null; statusDate: string | null; reserveChild: boolean };
 export type RegionData = {
   slug: string; name: string; tagline: string; intro: string[]; heading: string;
@@ -22,8 +22,10 @@ const fix = (u: string | null) => (u && /media\.base44\.com\/images\/public\/[^/
 // have their own Ledger country page (countries-library) and live stays are added here, with
 // their stay counts from the stays export (James, 30 Oct 2026: Europe showed Greece alone while
 // Portugal, Ireland, Spain, Italy, Switzerland and France were filed). Featured stays are topped
-// up from the same export so a region never shows fewer than four.
-type LibCountry = { slug: string; name: string; region: string; subtitle?: string; leading?: string; hero?: { src?: string } | null; bestShort?: string; contentStatus?: string };
+// up from the same export so a region never shows fewer than four. Destination cards (a library
+// country page with staysComing and no stays yet, Sri Lanka first, 1 Nov 2026) are listed too,
+// marked coming so the card reads "Stays coming soon" rather than "0 stays".
+type LibCountry = { slug: string; name: string; region: string; subtitle?: string; leading?: string; hero?: { src?: string | null } | null; bestShort?: string; contentStatus?: string; staysComing?: boolean };
 type StayRow = { volumes?: string[] | null; reviewed?: boolean; slug: string; name: string; ledgerId: string | null; tagline: string | null; hero: string | null; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null; reserveChild?: boolean; misfiled?: unknown };
 const LIB = (LIBRARY.countries as LibCountry[]);
 const ROWS = (STAY_ROWS.stays as StayRow[]).filter((x) => !x.misfiled);
@@ -33,10 +35,12 @@ const countIn = (slug: string) => ROWS.filter((x) => x.countrySlug === slug).len
 
 export const REGION_DATA: RegionData[] = (data.regions as RegionData[]).map((r) => {
   const have = new Set(r.countries.map((c) => c.slug));
-  const added: RegionCountry[] = LIB.filter((c) => c.region === r.slug && !have.has(c.slug) && countIn(c.slug) > 0).map((c) => ({
+  const added: RegionCountry[] = LIB.filter((c) => c.region === r.slug && !have.has(c.slug) && (countIn(c.slug) > 0 || c.staysComing)).map((c) => ({
     name: c.name, slug: c.slug, image: fix(c.hero?.src ?? null), line: (c.leading || c.subtitle || "").split(/(?<=\.)\s/)[0], stays: countIn(c.slug), bestMonths: c.bestShort ?? null, reviewed: c.contentStatus === "approved" || c.contentStatus === "published",
+    ...(countIn(c.slug) === 0 ? { coming: true } : {}),
   }));
-  const countries = [...r.countries.map((c) => ({ ...c, image: fix(c.image), stays: Math.max(c.stays, c.slug ? countIn(c.slug) : 0) })), ...added].sort((a, b) => b.stays - a.stays);
+  const comingSlugs = new Set(LIB.filter((c) => c.staysComing).map((c) => c.slug));
+  const countries = [...r.countries.map((c) => ({ ...c, image: fix(c.image), stays: Math.max(c.stays, c.slug ? countIn(c.slug) : 0) })).map((c) => (c.stays === 0 && c.slug && comingSlugs.has(c.slug) ? { ...c, coming: true } : c)), ...added].sort((a, b) => b.stays - a.stays);
   // Featured stays must have a page (the stays export); stays filed under the region's own volume
   // (Europe: Volume V, Dá Licença first) and reviewed stays lead the top-up.
   const ROW_SLUGS = new Set(ROWS.map((x) => x.slug));

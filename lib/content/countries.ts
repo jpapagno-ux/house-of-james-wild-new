@@ -7,8 +7,12 @@ type Month = "best" | "good" | "wet";
 export type CountryData = {
   slug: string; name: string; region: string; regionName: string;
   ledgerId?: string | null; // DST-… from the Library (sole issuer)
-  subtitle: string; leading: string; hero: { src: string; alt: string };
-  story: { eyebrow: string; title: string; blocks: { h?: string; p: string }[]; image: { src: string; alt: string } }[];
+  // A destination card (no stay pages yet) may have no photograph on file: src is null, never a stand-in.
+  subtitle: string; leading: string; hero: { src: string | null; alt: string };
+  story: { eyebrow: string; title: string; blocks: { h?: string; p: string }[]; image: { src: string | null; alt: string } }[];
+  /** Destination card (James, 1 Nov 2026): the country is on the site before its stays are filed.
+   *  The page shows "stays coming soon, plan with James" instead of stay counts and empty sections. */
+  staysComing?: boolean;
   quote?: { text: string; by: string };
   facts: [string, string][]; faqs: { q: string; a: string }[]; contentStatus: string;
   months: { area: string; note: string; months: Month[] }[];

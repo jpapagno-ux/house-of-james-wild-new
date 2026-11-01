@@ -67,6 +67,11 @@ import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { onPathway, pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
+import { assembleStayPage } from "@/lib/stay-page/assemble";
+import StayHero from "@/components/stay/StayHero";
+import StayEditorialIntro from "@/components/stay/StayEditorialIntro";
+import AccommodationCollection from "@/components/stay/AccommodationCollection";
+import { PreviewNote } from "@/components/record/Sections";
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
 // breadcrumbs › overview (quote, in short, facts, the full entry) › gallery ›
@@ -111,6 +116,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
+  // Step 1 (Leeu reference): the normalized Stay-page contract (editorial +
+  // Booking Live canonical units + media + pricing provenance). Assembled only
+  // for priced stays for now; null when Booking Live has no canonical units or
+  // can't be reached, in which case the page keeps the BookingPanel layout.
+  const stayPage = priced ? await assembleStayPage(s) : null;
+  // The legacy reference rate stays on the server: it orders units and feeds QA, never the browser.
+  const units = stayPage?.accommodations.map((u) => ({ ...u, legacyReference: null })) ?? [];
   const planHref = `/plan?trip=${encodeURIComponent(s.name)}`;
   // Wild Pathways: only an APPROVED classification renders, and only with the flag on.
   const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
@@ -143,9 +155,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     <div className={s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : ""}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+        {stayPage ? <StayHero editorial={stayPage.editorial} slides={slides.map((x) => ({ url: x.url, alt: x.alt, source: "library" as const }))} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
-          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: { label: "Choose your stay", href: "#rates" } }} />} />
+        : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
@@ -159,7 +174,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
           {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" icon="mountain-sun" body={s.experiences.paras[0]} />}
-          {priced ? <>
+          {priced && stayPage ? <>
+            {/* Leeu reference implementation: units, media and pricing provenance from the Stay-page contract (JWC Booking Live), live rates from the engine per unit. */}
+            <StayEditorialIntro editorial={stayPage.editorial} showVerdict={false} />
+            <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
+            <AccommodationCollection units={units} commerce={stayPage.commerce} stayName={stayPage.editorial.name} staySlug={s.slug} />
+            {process.env.VERCEL_ENV !== "production" && stayPage.qa.length > 0 && <PreviewNote><p>Booking Live QA (preview only): {stayPage.qa.join(" ")}</p></PreviewNote>}
+          </> : priced ? <>
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>

@@ -24,8 +24,8 @@ export const GROUPS: SisterGroup[] = [
   {
     key: "african-bush-camps",
     name: "African Bush Camps",
-    line: "Camps in Botswana and Zimbabwe, from the Linyanti Enclave to Hwange National Park.",
-    slugs: ["linyanti-ebony-camp", "linyanti-expedition-camp", "somalisa-acacia"],
+    line: "Camps in Botswana, Zambia and Zimbabwe, from the Linyanti and the Lower Zambezi to Hwange and Mana Pools.",
+    slugs: ["linyanti-ebony-camp", "linyanti-expedition-camp", "somalisa-acacia", "somalisa", "nyamatusi-camp", "lolebezi-lodge"],
   },
   {
     key: "nimali-africa",

@@ -15,23 +15,63 @@
         "It made the cut for three reasons that cannot be built elsewhere. The setting: a privately held stretch of the Grand Staircase country, with slot canyons and a via ferrata on the property itself. The restraint: no lobby to speak of, no signage, a pool poured around a rock that was already there. And the access: Page's airstrip is a 25-minute drive, Lake Powell is at the door, and the great parks of the Southwest are a day trip in any direction.",
         "It is not the most comfortable desert hotel in America. It is the one that lets the desert win."
       ],
-      "jamesNote": { "text": "There are hotels with views. Then there are places where the landscape is the hotel.", "where": "Canyon Point", "when": "The Ledger, 2026" },
+      "jamesNote": {
+        "text": "There are hotels with views. Then there are places where the landscape is the hotel.",
+        "where": "Canyon Point",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
-        { "key": "place", "line": "900 private acres of the Colorado Plateau, with the mesa as the only neighbour." },
-        { "key": "privacy", "line": "34 suites and ten pavilions, no through-traffic, no lobby crowd." },
-        { "key": "design", "line": "Concrete, glass and silence, poured around the rock rather than on top of it." },
-        { "key": "access", "line": "Page airstrip 25 minutes away; slot canyons and a via ferrata on the property." },
-        { "key": "rarity", "line": "There is no second Amangiri, and Aman is not building one." }
+        {
+          "key": "place",
+          "line": "900 private acres of the Colorado Plateau, with the mesa as the only neighbour."
+        },
+        {
+          "key": "privacy",
+          "line": "34 suites and ten pavilions, no through-traffic, no lobby crowd."
+        },
+        {
+          "key": "design",
+          "line": "Concrete, glass and silence, poured around the rock rather than on top of it."
+        },
+        {
+          "key": "access",
+          "line": "Page airstrip 25 minutes away; slot canyons and a via ferrata on the property."
+        },
+        {
+          "key": "rarity",
+          "line": "There is no second Amangiri, and Aman is not building one."
+        }
       ],
-      "pathwaysOverride": ["off-the-map", "the-art-of-stillness", "above-it-all"],
+      "pathwaysOverride": [
+        "off-the-map",
+        "the-art-of-stillness",
+        "above-it-all"
+      ],
       "worthAnotherNight": "Yes, and not for the spa. The first two days go to the canyons and the pool. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came. Four nights is the right number; add a night at Camp Sarika if you can.",
-      "whoItSuits": ["Landscape-first travellers", "Privacy seekers", "Design travellers", "Milestone trips", "Couples", "Travellers who value quiet"],
-      "whoItMayNotSuit": ["Nightlife-focused travellers", "Travellers wanting a large social resort", "Travellers who prefer urban activity"],
-      "continueRefs": ["stay:ulum-moab", "pathway:off-the-map", "pathway:the-art-of-stillness", "pathway:above-it-all", "compass"],
+      "whoItSuits": [
+        "Landscape-first travellers",
+        "Privacy seekers",
+        "Design travellers",
+        "Milestone trips",
+        "Couples",
+        "Travellers who value quiet"
+      ],
+      "whoItMayNotSuit": [
+        "Nightlife-focused travellers",
+        "Travellers wanting a large social resort",
+        "Travellers who prefer urban activity"
+      ],
+      "continueRefs": [
+        "stay:ulum-moab",
+        "pathway:off-the-map",
+        "pathway:the-art-of-stillness",
+        "pathway:above-it-all",
+        "compass"
+      ],
       "selectionDate": "2026-11-01",
-      "reviewStatus": "draft",
-      "published": true,
-      "paletteKey": "amangiri"
+      "paletteKey": "amangiri",
+      "publicationStatus": "draft",
+      "reviewDate": null
     }
   ]
 }

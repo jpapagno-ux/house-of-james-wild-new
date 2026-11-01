@@ -10,12 +10,13 @@
 import data from "./media-assets.json";
 
 export type MediaRights = "approved" | "hold" | "to_verify";
-export type MediaRole = "ef_hero" | "ef_why_still" | "ef_place" | "ef_story_arrival" | "ef_story_interior" | "ef_story_human" | "ef_story_night" | "ef_experience" | "room" | "hero" | "gallery" | "full_frame";
+/** House-wide image roles (Stage 3, D). A role fixes the crop; sort orders within a role. */
+export type MediaRole = "hero" | "mobile_hero" | "editorial_landscape" | "editorial_portrait" | "architecture" | "room" | "experience" | "detail" | "night" | "map_support" | "thumbnail";
 export type MediaAsset = {
   mediaId: string; entityId: string; entityType: string; publicId: string; role: MediaRole | string;
   caption?: string; alt: string; credit: string; creditUrl?: string; photographer?: string;
   rights: MediaRights; licence?: string; orientation: "landscape" | "portrait" | "square";
-  crop?: string; sort: number; active: boolean; width?: number; height?: number;
+  crop?: string; focalPoint?: string | null; sort: number; active: boolean; width?: number; height?: number;
 };
 
 export const MEDIA_ASSETS: MediaAsset[] = (data.assets as MediaAsset[]);
@@ -35,25 +36,35 @@ const UPSCALE = "c_limit,w_1200,h_1200/e_upscale/e_improve";
 
 export type Ratio = "21:9" | "16:10" | "3:2" | "4:5" | "1:1" | "4:3";
 /** The crop the photography plan assigns each role (docs: Exceptional Few report, F). */
-export const ROLE_RATIO: Record<string, { desktop: Ratio; mobile: Ratio }> = {
-  ef_hero: { desktop: "21:9", mobile: "4:5" },
-  ef_why_still: { desktop: "16:10", mobile: "16:10" },
-  ef_place: { desktop: "3:2", mobile: "3:2" },
-  ef_story_arrival: { desktop: "16:10", mobile: "16:10" },
-  ef_story_interior: { desktop: "3:2", mobile: "4:5" },
-  ef_story_human: { desktop: "4:5", mobile: "4:5" },
-  ef_story_night: { desktop: "4:5", mobile: "4:5" },
-  ef_experience: { desktop: "3:2", mobile: "3:2" },
+export const ROLE_RATIO: Record<MediaRole, { desktop: Ratio; mobile: Ratio }> = {
+  hero: { desktop: "21:9", mobile: "4:5" },
+  mobile_hero: { desktop: "4:5", mobile: "4:5" },
+  editorial_landscape: { desktop: "3:2", mobile: "3:2" },
+  editorial_portrait: { desktop: "4:5", mobile: "4:5" },
+  architecture: { desktop: "16:10", mobile: "16:10" },
   room: { desktop: "16:10", mobile: "16:10" },
+  experience: { desktop: "3:2", mobile: "3:2" },
+  detail: { desktop: "4:5", mobile: "4:5" },
+  night: { desktop: "4:5", mobile: "4:5" },
+  map_support: { desktop: "3:2", mobile: "3:2" },
+  thumbnail: { desktop: "16:10", mobile: "16:10" },
 };
+
+/** The Exceptional Few photographic story, as a recipe over house-wide roles (arrival, interior, human detail, night). */
+export function storyFrames(entityId: string | null | undefined, allow?: MediaRights[]) {
+  const pick = (role: MediaRole, n: number) => assetsFor(entityId, role, allow).find((a) => a.sort === n) ?? null;
+  return { arrival: pick("editorial_landscape", 2), interior: pick("detail", 1), human: pick("editorial_portrait", 1), night: pick("night", 1) };
+}
 
 /** A delivery URL for one asset: optional ratio crop, width cap, auto format and quality. */
 export function mediaUrl(a: MediaAsset, opts: { ratio?: Ratio; width?: number; gravity?: string } = {}): string {
   const small = (a.width ?? 0) < 1200;
-  const g = opts.gravity ?? a.crop ?? "g_auto";
+  // A hand-set focal point ("50%,70%") beats gravity; it needs the source size to become pixels.
+  const fp = a.focalPoint && a.width && a.height ? a.focalPoint.split(",").map((v) => parseFloat(v) / 100) : null;
+  const g = fp ? `g_xy_center,x_${Math.round(fp[0] * a.width!)},y_${Math.round(fp[1] * a.height!)}` : (opts.gravity ?? a.crop ?? "g_auto");
   const parts = [
-    ...(small ? [UPSCALE] : []),
-    ...(opts.ratio ? [`c_fill,${g.startsWith("g_") ? g : `g_${g}`},ar_${opts.ratio.replace(":", ":")}`] : []),
+    ...(small ? [a.role === "night" ? UPSCALE.replace("/e_improve", "") : UPSCALE] : []),
+    ...(opts.ratio ? [`c_fill,${g.startsWith("g_") ? g : `g_${g}`},ar_${opts.ratio}`] : []),
     `c_limit,w_${opts.width ?? 2560}`,
     "q_auto:good",
     "f_auto",

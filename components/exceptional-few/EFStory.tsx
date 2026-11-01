@@ -9,7 +9,7 @@ import { mediaUrl, ROLE_RATIO, type MediaAsset, type Ratio } from "@/lib/content
 const ASPECT: Record<Ratio, string> = { "21:9": "aspect-[21/9]", "16:10": "aspect-[16/10]", "3:2": "aspect-[3/2]", "4:5": "aspect-[4/5]", "1:1": "aspect-square", "4:3": "aspect-[4/3]" };
 
 export function EFFrame({ a, ratio, sizes, priority = false, className = "" }: { a: MediaAsset; ratio?: Ratio; sizes: string; priority?: boolean; className?: string }) {
-  const r = ratio ?? ROLE_RATIO[a.role]?.desktop ?? "3:2";
+  const r: Ratio = ratio ?? ROLE_RATIO[a.role as keyof typeof ROLE_RATIO]?.desktop ?? "3:2";
   return (
     <figure className={`min-w-0 ${className}`}>
       <div className={`relative ${ASPECT[r]} overflow-hidden border ledger-border bg-paper-card`}>

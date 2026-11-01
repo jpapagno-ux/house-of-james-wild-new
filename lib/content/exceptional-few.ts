@@ -23,20 +23,23 @@ export type ExceptionalFew = {
   whoItMayNotSuit: string[];
   continueRefs: string[];
   selectionDate: string | null;
-  reviewStatus: "draft" | "reviewed" | "approved";
-  published: boolean;
+  reviewDate: string | null;
+  publicationStatus: PublicationStatus;
   paletteKey: string;
 };
+export type PublicationStatus = "draft" | "reviewed" | "approved" | "published" | "withdrawn";
+/** What production renders. A noindex preview may pass a wider set explicitly. */
+export const LIVE: PublicationStatus[] = ["published"];
 
 export const EXCEPTIONAL_FEW: ExceptionalFew[] = (data.records as ExceptionalFew[]);
 
-/** The designation for a Stay, by its canonical Ledger ID; only designated + published rows count. */
-export function exceptionalFewFor(stayId: string | null | undefined): ExceptionalFew | null {
+/** The designation for a Stay, by its canonical Ledger ID. Only a designated row in an allowed publication status counts; production allows "published" only. */
+export function exceptionalFewFor(stayId: string | null | undefined, allow: PublicationStatus[] = LIVE): ExceptionalFew | null {
   if (!stayId) return null;
-  return EXCEPTIONAL_FEW.find((e) => e.stayId === stayId && e.published && e.designationStatus === "designated") ?? null;
+  return EXCEPTIONAL_FEW.find((e) => e.stayId === stayId && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
 }
-/** Every published designation, in collection order (for the future landing page and the Continue rail). */
-export const EXCEPTIONAL_FEW_LIVE = EXCEPTIONAL_FEW.filter((e) => e.published && e.designationStatus === "designated").sort((a, b) => a.collectionNumber - b.collectionNumber);
+/** Every live designation, in collection order (for the future landing page and the Continue rail). */
+export const EXCEPTIONAL_FEW_LIVE = EXCEPTIONAL_FEW.filter((e) => e.designationStatus === "designated" && LIVE.includes(e.publicationStatus)).sort((a, b) => a.collectionNumber - b.collectionNumber);
 
 export const collectionNo = (n: number) => `No. ${String(n).padStart(3, "0")}`;
 

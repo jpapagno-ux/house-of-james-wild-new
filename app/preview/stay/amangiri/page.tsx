@@ -21,7 +21,7 @@ import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney"
 import LIB_CHARTS from "@/lib/charts/countries.json";
 import type { ChartData } from "@/components/destination/LedgerChart";
 import { collectionNo, efPathways, efThemeClass, exceptionalFewFor } from "@/lib/content/exceptional-few";
-import { assetFor, assetsFor, mediaUrl, type MediaAsset } from "@/lib/content/media-assets";
+import { assetFor, assetsFor, mediaUrl, storyFrames, type MediaAsset } from "@/lib/content/media-assets";
 import { pathwayHref } from "@/lib/content/pathways/flag";
 import { isBuilt } from "@/lib/routes";
 import { roundelText, VOLUME_STYLES } from "@/lib/volumes";
@@ -45,6 +45,8 @@ const PATH = "/preview/stay/amangiri";
 const CANONICAL = "/stays/amangiri";
 const COORDS = { lat: 37.0183, lng: -111.6165 };
 const PREVIEW_RIGHTS = ["approved", "to_verify"] as const;
+// A preview renders rows James has not yet published; production renders "published" only (lib/content/exceptional-few.ts LIVE).
+const PREVIEW_STATUS = ["draft", "reviewed", "approved", "published"] as const;
 
 export const metadata = buildMetadata({
   title: "Amangiri, Utah: The Exceptional Few (preview)",
@@ -56,19 +58,14 @@ export const metadata = buildMetadata({
 const rightsOwner = (a: MediaAsset) => a.credit.replace(/^(photography courtesy of|image ©|©)\s*/i, "").trim();
 
 export default function AmangiriPreview() {
-  const ef = exceptionalFewFor(STAY_ID);
+  const ef = exceptionalFewFor(STAY_ID, [...PREVIEW_STATUS]);
   if (!ef) return null;
   const allow = [...PREVIEW_RIGHTS];
-  const hero = assetFor(STAY_ID, "ef_hero", allow);
-  const whyStill = assetFor(STAY_ID, "ef_why_still", allow);
-  const place = assetFor(STAY_ID, "ef_place", allow);
-  const story = {
-    arrival: assetFor(STAY_ID, "ef_story_arrival", allow),
-    interior: assetFor(STAY_ID, "ef_story_interior", allow),
-    human: assetFor(STAY_ID, "ef_story_human", allow),
-    night: assetFor(STAY_ID, "ef_story_night", allow),
-  };
-  const experiences = assetsFor(STAY_ID, "ef_experience", allow);
+  const hero = assetFor(STAY_ID, "hero", allow);
+  const whyStill = assetFor(STAY_ID, "architecture", allow);
+  const place = assetFor(STAY_ID, "editorial_landscape", allow);
+  const story = storyFrames(STAY_ID, allow);
+  const experiences = assetsFor(STAY_ID, "experience", allow);
   const roomPhotos = assetsFor(STAY_ID, "room", allow);
   const planHref = `/plan?trip=${encodeURIComponent(NAME)}`;
   const pw = efPathways(ef);
@@ -116,7 +113,7 @@ export default function AmangiriPreview() {
         )}
         <RecordNav items={nav} cta="Plan this journey" ctaHref={planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div className="pt-6 flex items-center justify-between gap-6"><Breadcrumbs trail={trail} /><p className="hidden md:block ledger-eyebrow">Preview · Stage 5 · not indexed</p></div>
+          <div className="pt-6 flex items-center justify-between gap-6"><Breadcrumbs trail={trail} /><p className="hidden md:block ledger-eyebrow">Preview · {ef.publicationStatus} copy · not indexed</p></div>
           <WhyFilm
             eyebrow="The Exceptional Few"
             title="Why It Made the Cut"

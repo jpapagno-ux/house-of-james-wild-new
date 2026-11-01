@@ -86,10 +86,10 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   // Londolozi (James, 31 Oct 2026): one host across every Londolozi listing.
-  // James wrote "Garrett Fitzgerald, Director of Sales"; Londolozi's own blog
-  // spells it "Garrett Fitzpatrick". Brand spelling used until James confirms.
+  // Garrett Fitzpatrick, Sales Manager, as Londolozi's own blog lists him
+  // (confirmed by James, 31 Oct 2026).
   "reserve:londolozi-reserve": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi`,
     topics: [
@@ -101,7 +101,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "stay:londolozi-reserve": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi`,
     topics: [
@@ -113,7 +113,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/founders-camp": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-founders-camp`,
     topics: [
@@ -125,7 +125,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/varty-camp": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-varty-camp`,
     topics: [
@@ -137,7 +137,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/tree-camp": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-tree-camp`,
     topics: [
@@ -149,7 +149,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/pioneer-camp": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-pioneer-camp`,
     topics: [
@@ -161,7 +161,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/private-granite-suites": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-private-granite-suites`,
     topics: [
@@ -173,7 +173,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
     ],
   } },
   "camp:londolozi-reserve/private-villas": { state: "available", host: {
-    name: "Garrett Fitzpatrick", role: "Your host · Director of Sales, Londolozi", seats: 6,
+    name: "Garrett Fitzpatrick", role: "Your host · Sales Manager, Londolozi", seats: 6,
     tz: "Africa/Johannesburg", place: "Londolozi, Sabi Sand", zoneLabel: "South Africa Standard Time (UTC+2)",
     calendlyUrl: `${GROUP_CALENDLY}?property=londolozi-private-villas`,
     topics: [

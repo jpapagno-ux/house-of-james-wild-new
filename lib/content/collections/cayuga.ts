@@ -6,7 +6,8 @@
 // photos to those folders and list them here.
 //
 // "Choose it for" lines are James's, from his library story WED-2026-000007.
-// Jicaro and Bolontiku have no stay page or photos yet: their cards say so.
+// Jicaro has no stay page or photos yet: its card says so. Bolontiku's stay page went live on
+// 1 Nov 2026 under Guatemala (its library slug is boluntiku-hotel; photos credit Bolontiku).
 
 import { offersInCollection, type Offer } from "@/lib/content/offers/offers";
 import { today } from "@/lib/dates";
@@ -46,6 +47,8 @@ export type CollectionHotel = {
 };
 
 const img = (id: string, alt: string, w: number, h: number, up = true): CollectionImage => ({ url: cayugaImg(id, up), alt, w, h });
+/** A photo from a stay's own Cloudinary folder (jwco/stays/<slug>/...), credited on the stay page. */
+const stayImg = (id: string, alt: string, w: number, h: number): CollectionImage => ({ url: `${CLD}/c_limit,w_3200/q_auto:best/f_jpg/jwco/stays/${id}`, alt, w, h });
 
 export const CAYUGA = {
   slug: "cayuga-collection",
@@ -123,13 +126,14 @@ export const CAYUGA = {
       built: false,
     },
     {
-      slug: "bolontiku-hotel", name: "Bolontiku", country: "Guatemala", setting: "Lakeside, in the Maya world", where: "Lake Petén Itzá, near Tikal",
+      slug: "boluntiku-hotel", name: "Bolontiku", country: "Guatemala", setting: "Lakeside, in the Maya world", where: "Lake Petén Itzá, near Tikal",
       bestFor: ["Culture and history", "Archaeology", "Lakeside calm"],
       choose: "Choose it for culturally curious travelers who want meaningful days among Maya history followed by the calm of a lakeside retreat.",
       line: "A peaceful base on Lake Petén Itzá for Tikal and the archaeological sites of the Petén.",
       image: img("offers/bolontiku-lake", "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", 4032, 3024, false),
-      gallery: [], official: { who: "Adventurous travellers seeking luxury near Tikal.", facts: "A swimmable lake for dips and paddleboarding, a private Maya temazcal sweat lodge, and just over an hour to Tikal, Yaxhá and El Mirador." },
-      built: false,
+      gallery: [stayImg("boluntiku-hotel/g4", "The pool and thatched roof at Bolontiku from above, beside Lake Petén Itzá", 2400, 1350), stayImg("boluntiku-hotel/g7", "The pool lit at night under a full moon at Bolontiku", 2400, 1600)],
+      official: { who: "Adventurous travellers seeking luxury near Tikal.", facts: "A swimmable lake for dips and paddleboarding, a private Maya temazcal sweat lodge, and just over an hour to Tikal, Yaxhá and El Mirador." },
+      built: true,
     },
   ] as CollectionHotel[],
   pairings: [

@@ -48,7 +48,7 @@ const cy = (id: string, alt: string, w: number, h: number): OfferImage => ({ id:
 
 const HAND_KEPT: Offer[] = [
   // ── 2026 · Cayuga Collection (checked 27 Oct 2026) ──
-  { id: "OFR-2026-0001", year: 2026, status: "Live", scope: "stay", ref: "bolontiku-hotel", name: "Bolontiku", collection: CAY, country: "Guatemala", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, source: SRC, checked: "2026-10-27", image: cy("bolontiku-lake", "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", 4032, 3024) },
+  { id: "OFR-2026-0001", year: 2026, status: "Live", scope: "stay", ref: "boluntiku-hotel", name: "Bolontiku", collection: CAY, country: "Guatemala", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, source: SRC, checked: "2026-10-27", image: cy("bolontiku-lake", "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", 4032, 3024) },
   { id: "OFR-2026-0002", year: 2026, status: "Live", scope: "stay", ref: "senda-monteverde-lodge", name: "Senda Monteverde", collection: CAY, country: "Costa Rica", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, conditions: "A free room upgrade when you book Senda Monteverde and Arenas del Mar together, subject to availability.", source: SRC, checked: "2026-10-27", image: cy("senda-monteverde-offer", "A terrace with a fire and seating looking over the forest at sunset at Senda Monteverde", 2054, 1667) },
   { id: "OFR-2026-0003", year: 2026, status: "Live", scope: "stay", ref: "jicaro-island-lodge", name: "Jicaro Island Lodge", collection: CAY, country: "Nicaragua", program: "Worth Another Night", headline: "Stay 3 nights, pay 2", travel: T26, source: SRC, checked: "2026-10-27", image: cy("jicaro-island-from-lake", "Jicaro Island Lodge seen across Lake Nicaragua in the Granada Isletas", 4066, 3300) },
   { id: "OFR-2026-0004", year: 2026, status: "Live", scope: "stay", ref: "kura-boutique-resort", name: "Kura", collection: CAY, country: "Costa Rica", program: "Worth Another Night", headline: "Stay 4 nights, pay 3", travel: T26, source: SRC, checked: "2026-10-27", image: cy("kura-offer", "Kura's infinity pool and open lounge lit at dusk above the forest at Uvita", 2000, 1623) },
@@ -61,7 +61,7 @@ const HAND_KEPT: Offer[] = [
   // for May, Jul and Sep 2027). Terms only, no rates. Kept as Draft (not shown
   // on the site) until Cayuga's written 2027 terms confirm dates and conditions.
   ...([
-    ["OFR-2027-0001", "bolontiku-hotel", "Bolontiku", "Guatemala", "Worth Another Night", "2027 terms to come", "Awaiting terms", "Not in Cayuga's booking engine; to request"],
+    ["OFR-2027-0001", "boluntiku-hotel", "Bolontiku", "Guatemala", "Worth Another Night", "2027 terms to come", "Awaiting terms", "Not in Cayuga's booking engine; to request"],
     ["OFR-2027-0002", "senda-monteverde-lodge", "Senda Monteverde", "Costa Rica", "Worth Another Night", "Stay 2 nights, the 3rd on us", "Draft", "Seen in Cayuga's booking engine, May to Sep 2027 dates"],
     ["OFR-2027-0003", "jicaro-island-lodge", "Jicaro Island Lodge", "Nicaragua", "Worth Another Night", "2027 terms to come", "Awaiting terms", "Not in Cayuga's booking engine; to request"],
     ["OFR-2027-0004", "kura-boutique-resort", "Kura", "Costa Rica", "Book Early", "Early Bird: 10% off", "Draft", "Seen in Cayuga's booking engine, Feb to Sep 2027 dates (15% in Jan 2027)"],

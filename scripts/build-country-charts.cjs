@@ -17,6 +17,12 @@ const W = 1000;
 // Hand-set frames where the stays sit in one corner of a scattered country (Society Islands, not the Marquesas).
 // Ibiza: the island, not the whole of Spain.
 const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2] };
+// Place names drawn on a country's chart (lat, lng, text; the text starts at the point). Set by hand,
+// sparingly, where the stays sit far apart (Guatemala, 1 Nov 2026: the Petén and the highlands).
+const AREAS = {
+  guatemala: [[16.45, -90.75, "Petén"], [17.24, -89.62, "Tikal"], [17.1, -89.98, "Lake Petén Itzá"],
+    [14.45, -90.97, "Antigua"], [14.62, -91.42, "Lake Atitlán"], [14.66, -90.5, "Guatemala City"]],
+};
 const polysOf = (g) => (g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : []);
 const ringBox = (ring) => ring.reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], [Infinity, Infinity, -Infinity, -Infinity]);
 const area = (ring) => { let a = 0; for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) a += (ring[j][0] + ring[i][0]) * (ring[j][1] - ring[i][1]); return Math.abs(a / 2); };
@@ -99,7 +105,7 @@ for (const c of countries) {
     width: W, height: H, bounds, kx: +kx.toFixed(4), ky: +ky.toFixed(4), wrap,
     focus: geomPath(f.geometry),
     neighbors,
-    labels: { country: { x: P([lx, ly])[0], y: P([lx, ly])[1], text: c.chartLabel || c.name }, neighbors: nlabels.sort((a, b) => b.a - a.a).slice(0, 5).map(({ a, ...l }) => l), seas: [], areas: [] },
+    labels: { country: { x: P([lx, ly])[0], y: P([lx, ly])[1], text: c.chartLabel || c.name }, neighbors: nlabels.sort((a, b) => b.a - a.a).slice(0, 5).map(({ a, ...l }) => l), seas: [], areas: (AREAS[c.slug] || []).map(([la, ln, text]) => ({ x: P([ln, la])[0], y: P([ln, la])[1], text })) },
     lats, lngs,
   };
 }

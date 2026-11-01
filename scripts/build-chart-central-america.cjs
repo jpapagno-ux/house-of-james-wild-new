@@ -1,6 +1,6 @@
 // Ledger chart for the Central America region page (Natural Earth 1:50m via
 // world-atlas). The countries live in the Ledger (Belize, Costa Rica,
-// Panama) are the focus; their neighbours are drawn faint.
+// Guatemala, Panama) are the focus; their neighbours are drawn faint.
 // Run: node scripts/build-chart-central-america.cjs
 const fs = require("fs");
 const topo = require("topojson-client");
@@ -18,8 +18,8 @@ function clip(ring) {
 const fc = topo.feature(world, world.objects.countries);
 const path = (f) => { let d = ""; const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates; for (const poly of polys) for (const ring of poly) { const c = clip(ring); if (c.length > 2) d += "M" + c.map((p) => P(p).join(",")).join("L") + "Z"; } return d; };
 const get = (n) => { const f = fc.features.find((x) => x.properties.name === n); if (!f) throw new Error(n); return f; };
-const FOCUS = ["Belize", "Costa Rica", "Panama"];
-const NB = ["Mexico", "Guatemala", "Honduras", "El Salvador", "Nicaragua", "Colombia"];
+const FOCUS = ["Belize", "Costa Rica", "Guatemala", "Panama"];
+const NB = ["Mexico", "Honduras", "El Salvador", "Nicaragua", "Colombia"];
 const lab = (lat, lng, text) => { const [x, y] = P([lng, lat]); return { x, y, text }; };
 const out = {
   width: W, height: H, bounds: B, kx, ky,
@@ -27,9 +27,9 @@ const out = {
   neighbors: NB.map((n) => ({ name: n, d: path(get(n)) })),
   labels: {
     country: lab(12.2, -79.6, "CENTRAL AMERICA"),
-    neighbors: [lab(17.6, -91.6, "MEXICO"), lab(15.5, -90.6, "GUATEMALA"), lab(14.9, -87.2, "HONDURAS"), lab(13.6, -89.6, "EL SALVADOR"), lab(12.8, -85.4, "NICARAGUA"), lab(7.6, -77.6, "COLOMBIA")],
+    neighbors: [lab(17.6, -91.6, "MEXICO"), lab(14.9, -87.2, "HONDURAS"), lab(13.6, -89.6, "EL SALVADOR"), lab(12.8, -85.4, "NICARAGUA"), lab(7.6, -77.6, "COLOMBIA")],
     seas: [lab(15.8, -82.2, "Caribbean Sea"), lab(9.0, -89.0, "Pacific Ocean")],
-    areas: [lab(17.6, -88.15, "Belize"), lab(10.05, -84.1, "Costa Rica"), lab(8.95, -80.9, "Panama")],
+    areas: [lab(17.6, -88.15, "Belize"), lab(15.6, -90.95, "Guatemala"), lab(10.05, -84.1, "Costa Rica"), lab(8.95, -80.9, "Panama")],
   },
   lats: [8, 12, 16].map((v) => ({ v, y: P([B.w, v])[1] })),
   lngs: [-90, -85, -80].map((v) => ({ v, x: P([v, B.n])[0] })),

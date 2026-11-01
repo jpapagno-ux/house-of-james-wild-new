@@ -387,6 +387,7 @@ function draw(now){
  var md2=m.wp[Math.min(m.n,li+1)].m,hq=at(sampleAt(m.pts,u));
  if(hq){var hp2=at(sampleAt(m.pts,Math.min(1,u+.003))),ang=hp2?Math.atan2(hp2[1]-hq[1],hp2[0]-hq[0]):0;var vm=S.phase==='leg'?md2:(S.k>0?m.wp[Math.min(S.k,m.n)].m:md2);if(S.phase!=='leg'&&S.lastAng!=null)ang=S.lastAng;if(S.phase==='leg')S.lastAng=ang;
   var alt=S.phase==='leg'&&(md2==='a'||md2==='h')?Math.sin(Math.PI*(S.legU||0)):0;if(S.phase==='leg'){var hr=26+8*Math.sin(now/380),hg=ctx.createRadialGradient(hq[0],hq[1],0,hq[0],hq[1],hr);hg.addColorStop(0,'rgba(255,253,246,.85)');hg.addColorStop(1,'rgba(255,253,246,0)');ctx.fillStyle=hg;ctx.beginPath();ctx.arc(hq[0],hq[1],hr,0,7);ctx.fill();vehicle(vm,hq[0],hq[1],ang,alt,now,true)}
+  else if(vm==='s'||vm==='w'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* a vessel at anchor stays on the chart between legs (and parked at the start with reduced motion) */
   else{var mc=COL[vm]||INK;dot(sampleAt(m.pts,u),7,PAPER,mc,3.2);dot(sampleAt(m.pts,u),2.4,mc)}}
  var vg=ctx.createRadialGradient(CX,360,Math.min(VW,720)*.42,CX,360,Math.max(VW,720)*.78);vg.addColorStop(0,'rgba(36,32,26,0)');vg.addColorStop(1,'rgba(36,32,26,.13)');ctx.fillStyle=vg;ctx.fillRect(0,0,VW,720);
  var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import MapBoot from "./MapBoot";
 import { VOLUME_STYLES } from "@/lib/volumes";
+import { routeFigure } from "@/lib/content/ships/routes";
 
 // The route atlas (James, 30 Oct 2026): every route in a volume on one animated chart, the
 // same engine and style as the Costa Rica and Raja Ampat route pages. The globe flies from
@@ -21,7 +22,7 @@ const read = (id: string): RouteFile | null => {
 };
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker }: { id: string; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string }) {
+export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker, figure }: { id: string; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string; /** Draw the engraved route figure, boat and all, as the fallback (voyages without a hand-drawn figure). */ figure?: boolean }) {
   const found = routes.map((r) => ({ r, file: read(r.id) })).filter((x): x is { r: AtlasRoute; file: RouteFile } => !!x.file);
   if (!found.length) return null;
   const ink = kind === "voyage" ? VOLUME_STYLES.voyages.pad : VOLUME_STYLES.overland.pad;
@@ -37,8 +38,12 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
   const html =
     `<div id="${esc(id)}" data-keep="1" data-gen="1" class="jw-maps jw-site" data-jw-map="itinerary" style="--jw-overland: ${ink}; --jw-voyages: ${ink}; --jw-acc: ${ink}">` +
     `<script type="application/json">${cfg}</script>` +
-    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="${esc(title)}" style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
-    `<ol style="display: grid; gap: 8px; margin: 0; padding: 0 0 0 18px; font-size: 14px">${list}</ol>` +
+    (figure
+      ? `<div class="jw-frame chart"><figure class="jw-fallback" style="margin: 0; background: ${VOLUME_STYLES.voyages.tint}">` +
+        routeFigure({ id: `${id}-fig`, routes: found.map((x) => x.file as Parameters<typeof routeFigure>[0]["routes"][number]), chart, label: title }) +
+        `<figcaption style="padding: 14px 20px 16px"><ol style="display: grid; gap: 8px; margin: 0; padding: 0 0 0 18px; font-size: 14px">${list}</ol></figcaption>`
+      : `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="${esc(title)}" style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
+        `<ol style="display: grid; gap: 8px; margin: 0; padding: 0 0 0 18px; font-size: 14px">${list}</ol>`) +
     `</figure></div></div>`;
 
   return (

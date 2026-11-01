@@ -6,6 +6,8 @@ import { REGIONS } from "@/lib/site";
 import { altFor } from "@/lib/content/stays";
 import { verdictFor } from "@/lib/content/verdicts";
 import SafeLink from "@/components/ledger/SafeLink";
+import MoreCards, { type SlimCard } from "@/components/pathways/MoreCards";
+import { PATHWAY_LIST } from "@/lib/pathways";
 
 // A pathway as a collection, not a list (1 Nov 2026). With the whole Ledger
 // classified, a pathway can hold two hundred entries; a flat grid stops being
@@ -56,16 +58,25 @@ export function blockAnswer(b: Block, pathway: Pathway): string {
   return parts.join("; ") + ".";
 }
 
-function Cards({ items, hrefFor }: { items: PathwayStay[]; hrefFor: (p: Pathway) => string }) {
+const FOLD = 8; // cards shown per country before "Show all"
+const slim = (r: PathwayStay): SlimCard => ({ slug: r.slug, name: r.stay.name, id: r.ledgerId ?? r.slug, line: r.stay.tagline ?? r.primary.setting, hero: r.stay.hero ?? "", alt: altFor(r.stay.hero ?? "", r.stay.name, r.stay.country), href: r.href, country: r.stay.country, primary: r.primaryPathway, secondary: r.secondaryPathways });
+
+function Cards({ items, hrefFor, foldLabel }: { items: PathwayStay[]; hrefFor: (p: Pathway) => string; foldLabel?: string }) {
+  const shown = foldLabel ? items.slice(0, FOLD) : items;
+  const rest = foldLabel ? items.slice(FOLD) : [];
+  const hrefs = Object.fromEntries(PATHWAY_LIST.map((p) => [p.id, hrefFor(p)]));
   return (
+    <>
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-      {items.map((r) => (
+      {shown.map((r) => (
         <li key={r.slug} className="flex flex-col gap-3">
           <RecordCard name={r.stay.name} id={r.ledgerId ?? r.slug} line={r.stay.tagline ?? r.primary.setting} image={{ url: r.stay.hero ?? "", alt: altFor(r.stay.hero ?? "", r.stay.name, r.stay.country) }} href={r.href} eyebrow={r.stay.country ?? undefined} />
           <PathwayChips primary={r.primary} secondary={r.secondary} hrefFor={hrefFor} />
         </li>
       ))}
     </ul>
+    {rest.length > 0 && <MoreCards items={rest.map(slim)} label={`${items.length} ${foldLabel}`} hrefFor={hrefs} />}
+    </>
   );
 }
 
@@ -93,7 +104,7 @@ export default function PathwayCollection({ items, pathway, hrefFor }: { items: 
               {b.countries.map((c) => (
                 <div key={c.label}>
                   <h4 className="ledger-eyebrow mb-4">{c.label} · {c.items.length}</h4>
-                  <Cards items={c.items} hrefFor={hrefFor} />
+                  <Cards items={c.items} hrefFor={hrefFor} foldLabel={`in ${c.label}`} />
                 </div>
               ))}
             </div>

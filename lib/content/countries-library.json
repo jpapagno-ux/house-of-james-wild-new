@@ -2546,11 +2546,11 @@
    "airports": [
     [
      "Cancún International Airport (CUN)",
-     "Serves 18 stays in the Ledger here"
+     "Serves 17 stays in the Ledger here"
     ],
     [
      "Tulum International Airport (TQO)",
-     "Serves 13 stays in the Ledger here"
+     "Serves 12 stays in the Ledger here"
     ],
     [
      "Mérida International Airport (MID)",
@@ -2999,34 +2999,15 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Panama",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "best"
-     ]
-    }
-   ],
+   "months": [],
    "airports": [
-    [
-     "Enrique Malek International Airport (DAV)",
-     "Serves 2 stays in the Ledger here"
-    ],
     [
      "Tocumen International Airport (PTY)",
      "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Enrique Malek International Airport (DAV)",
+     "Serves 1 stay in the Ledger here"
     ],
     [
      "Bocas del Toro Isla Colón International Airport (BOC)",
@@ -3034,8 +3015,8 @@
     ]
    ],
    "transfers": [],
-   "flyInto": "DAV · PTY",
-   "bestShort": "Dec–Apr",
+   "flyInto": "PTY · DAV",
+   "bestShort": "Ask James",
    "atlasName": "Panama"
   },
   {

@@ -189,7 +189,7 @@ old path,new path,why,old title
 /book/one-only-nyungwe,/destinations/africa/rwanda,booking page -> not on the new site yet; country page,Book your stay at One &amp; Only Nyungwe | Wild Earth Stays
 /book/open-sky,/stays/open-sky,booking page -> stay page,Book your stay at Open Sky | Wild Earth Stays
 /book/our-habitas-namibia,/destinations/africa/namibia,booking page -> not on the new site yet; country page,Book your stay at Our Habitas Namibia | Wild Earth Stays
-/book/our-habitas-tulum,/stays/our-habitas-tulum,booking page -> stay page,Book your stay at Our Habitas Tulum | Wild Earth Stays
+/book/our-habitas-tulum,/destinations/caribbean-mexico/mexico,booking page -> not on the new site yet; country page,Book your stay at Our Habitas Tulum | Wild Earth Stays
 /book/paws-up-resort,/stays/paws-up-resort,booking page -> stay page,Book your stay at Paws Up Resort | Wild Earth Stays
 /book/pearl-resort-le-borabora,/stays/pearl-resort-le-bora-bora,booking page -> stay page,Book your stay at Pearl Resort Le Bora bora | Wild Earth Stays
 /book/pearl-resort-le-nuku-hiva,/stays/pearl-resort-le-nuku-hiva,booking page -> stay page,Book your stay at Pearl Resort Le Nuku Hiva | Wild Earth Stays
@@ -571,7 +571,7 @@ old path,new path,why,old title
 /property/inkaterra-machu-picchu-pueblo-hotel,/stays/inkaterra-machu-picchu-pueblo-hotel,stay page,Inkaterra Machu Picchu Pueblo Hotel | Luxury Stays in Peru | Wild Earth Stays
 /property/inkaterra-reserva-amazonica,/stays/inkaterra-reserva-amazonica,stay page,Inkaterra Reserva Amazonica | Luxury Stays in Peru | Wild Earth Stays
 /property/isla-palenque-resort,/stays/isla-palenque-resort,stay page,Isla Palenque Resort | Luxury Stays in Costa Rica | Wild Earth Stays
-/property/isla-secas,/stays/isla-secas,stay page,Isla Secas | Luxury Stays in Panama | Wild Earth Stays
+/property/isla-secas,/stays/isla-secas-panama,stay page (matched isla-secas-panama),Isla Secas | Luxury Stays in Panama | Wild Earth Stays
 /property/isla-secas-panama,/stays/isla-secas-panama,stay page,Isla Secas - Panama | Luxury Stays in Panama | Wild Earth Stays
 /property/iveagh-garden-hotel,/destinations/europe/ireland,not on the new site yet; country page,Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
 /property/ja-manufaru-maldives,/stays/ja-manufaru-maldives,stay page,JA Manufaru Maldives | Luxury Stays in Maldives | Wild Earth Stays
@@ -672,7 +672,7 @@ old path,new path,why,old title
 /property/one-only-nyungwe,/destinations/africa/rwanda,not on the new site yet; country page,One &amp; Only Nyungwe | Luxury Stays in Rwanda | Wild Earth Stays
 /property/open-sky,/stays/open-sky,stay page,Open Sky | Luxury Stays in Utah | Wild Earth Stays
 /property/our-habitas-namibia,/destinations/africa/namibia,not on the new site yet; country page,Our Habitas Namibia | Luxury Stays in Namibia | Wild Earth Stays
-/property/our-habitas-tulum,/stays/our-habitas-tulum,stay page,Our Habitas Tulum | Luxury Stays in Mexico | Wild Earth Stays
+/property/our-habitas-tulum,/destinations/caribbean-mexico/mexico,not on the new site yet; country page,Our Habitas Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/pacuare-lodge,/stays/pacuare-lodge,stay page,Pacuare Lodge | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/paws-up-resort,/stays/paws-up-resort,stay page,Paws Up Resort | Luxury Stays in Montana | Wild Earth Stays
 /property/pearl-resort-le-bora-bora,/stays/pearl-resort-le-bora-bora,stay page,Pearl Resort Le Bora bora | Luxury Stays in Tahiti | Wild Earth Stays
@@ -1481,10 +1481,10 @@ old path,new path,why,old title
 /stay/open-sky-star-seeker-polaris-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Polaris Luxury Camp at Open Sky | Wild Earth Stays
 /stay/open-sky-star-seeker-solstice-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Solstice Luxury Camp at Open Sky | Wild Earth Stays
 /stay/open-sky-star-seeker-vista-luxury-camp,/stays/open-sky,room of open-sky -> stay page,Star Seeker Vista Luxury Camp at Open Sky | Wild Earth Stays
-/stay/our-habitas-tulum-jungle-rooms,/stays/our-habitas-tulum,room of our-habitas-tulum -> stay page,Jungle Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-ocean-breeze-rooms,/stays/our-habitas-tulum,room of our-habitas-tulum -> stay page,Ocean Breeze Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-ocean-front-rooms,/stays/our-habitas-tulum,room of our-habitas-tulum -> stay page,Ocean Front Rooms at Our Habitas Tulum | Wild Earth Stays
-/stay/our-habitas-tulum-pool-rooms,/stays/our-habitas-tulum,room of our-habitas-tulum -> stay page,Pool Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-jungle-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Jungle Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-ocean-breeze-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Ocean Breeze Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-ocean-front-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Ocean Front Rooms at Our Habitas Tulum | Wild Earth Stays
+/stay/our-habitas-tulum-pool-rooms,/destinations/caribbean-mexico/mexico,room of our-habitas-tulum -> not on the new site yet; country page,Pool Rooms at Our Habitas Tulum | Wild Earth Stays
 /stay/paws-up-resort-big-timber-home,/stays/paws-up-resort,room of paws-up-resort -> stay page,Big Timber Home at Paws Up Resort | Wild Earth Stays
 /stay/paws-up-resort-cliffside-camp-tent,/stays/paws-up-resort,room of paws-up-resort -> stay page,Cliffside Camp Tent at Paws Up Resort | Wild Earth Stays
 /stay/paws-up-resort-creekside-camp-tent,/stays/paws-up-resort,room of paws-up-resort -> stay page,Creekside Camp Tent at Paws Up Resort | Wild Earth Stays

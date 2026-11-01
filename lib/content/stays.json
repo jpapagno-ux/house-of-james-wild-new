@@ -8036,8 +8036,19 @@
    "category": "hotel",
    "tagline": "Playful glamping pods suspended above the treetops at Art Villas.",
    "quote": null,
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/60b6915dc_8605d34a2_69320063946516435a7ea662_Image.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-costa-rica/g10"
+   ],
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [
@@ -8912,93 +8923,6 @@
     "6ae6974c7d4c694c47df3348",
     "6ae69749d7b534de044e2605",
     "6ae6974a642635a90d18a9fe"
-   ],
-   "placeSlug": null
-  },
-  {
-   "slug": "isla-secas",
-   "name": "Islas Secas Private Island",
-   "ledgerId": "STY-2026-000118",
-   "country": "Panama",
-   "countrySlug": "panama",
-   "regionSlug": "central-america",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "A Private Island for Nature and Escape",
-   "quote": "A remote archipelago in Panama where conservation, privacy, and barefoot luxury come together across 14 untouched islands.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a06ad2a60_e405209d4_69f1c2e93b417f4de707f382_10.jpg",
-   "gallery": [],
-   "bestMonths": "December to April",
-   "bestMonthsNote": "Dry season offers calm seas, clear skies, and ideal conditions for marine activities and island exploration.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": 7.2095,
-    "lng": -82.3235
-   },
-   "airport": "Enrique Malek International Airport (DAV)",
-   "airportDirections": "Domestic flight from Panama City to David followed by a private boat transfer to the island.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Casita",
-     "Tented Casita",
-     "One Bedroom Casita",
-     "Two Bedroom Casita",
-     "Casa Cavada"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Snorkeling",
-     "Diving",
-     "Whale watching",
-     "Sport fishing",
-     "Island hopping",
-     "Kayaking",
-     "Yoga",
-     "Wildlife tracking"
-    ]
-   },
-   "features": {
-    "paras": [
-     "Private island setting, limited number of casitas, solar-powered sustainability, marine reserve access, infinity pool, open-air dining, guided experiences."
-    ],
-    "items": []
-   },
-   "onlyHere": [
-    "Islas Secas is for travelers who want total escape. Perfect for couples, families, and groups looking for privacy, ocean adventure, and a deep connection to nature in one of Central America’s most remote island settings."
-   ],
-   "why": [
-    {
-     "title": "Your Own Private Archipelago",
-     "body": "Stay on a fully protected private island surrounded by rich marine life and untouched nature. Ideal for adventurers, families, and couples seeking privacy, exclusivity, and meaningful travel."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-02",
-    "secondary": [],
-    "setting": "gulf_of_chiriqui",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6974f879f7d65734d29e0"
    ],
    "placeSlug": null
   },
@@ -29032,103 +28956,6 @@
    "placeSlug": null
   },
   {
-   "slug": "our-habitas-tulum",
-   "name": "Our Habitas \n Tulum",
-   "ledgerId": "STY-2026-000205",
-   "country": "Mexico",
-   "countrySlug": "mexico",
-   "regionSlug": "caribbean-mexico",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Where Caribbean nature, wellness and meaningful connection become your everyday adventure.",
-   "quote": "Some places simply let you escape. Others transform how you experience the world. Our Habitas Tulum invites you to slow down, reconnect and belong.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/our-habitas-tulum/hero",
-   "gallery": [],
-   "bestMonths": "November - April",
-   "bestMonthsNote": "The dry season offers warm temperatures, lower humidity and calm Caribbean waters, making it ideal for beach days, outdoor wellness sessions and exploring Tulum's natural and cultural attractions. These months also provide excellent conditions for yoga, ocean activities and sunset gatherings while avoiding the heavier rainfall common during late summer and early autumn.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": 20.179115,
-    "lng": -87.429917
-   },
-   "airport": "Cancún International Airport (CUN) (primary international gateway) Tulum International Airport (TQO)",
-   "airportDirections": "Cancún International Airport (CUN)\nApprox. 120 km\nDriving Time: Approximately 2 hours\nRecommended for the widest range of international flight options. Tulum International Airport (TQO)\nApprox. 45 km\nDriving Time: Approximately 45–60 minutes\nRecommended for travelers seeking the quickest arrival to the resort.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Ocean Front Rooms",
-     "Jungle Rooms",
-     "Pool Rooms",
-     "Wellness Residences",
-     "Beachfront Suites"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Wellness Rituals",
-     "Beach Yoga",
-     "Sound Healing",
-     "Temazcal Ceremonies",
-     "Local Cultural Experiences",
-     "Live Music",
-     "Art Programming",
-     "Ocean Adventures"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Beachfront Caribbean location",
-     "Immersive wellness programming",
-     "Open-air design inspired by nature",
-     "Signature wellness spa",
-     "Locally inspired dining",
-     "Daily cultural programming",
-     "Community-focused experiences",
-     "Eco-conscious architecture",
-     "Swimming pool",
-     "Private beach access",
-     "Holistic treatments",
-     "Creative workshops"
-    ]
-   },
-   "onlyHere": [
-    "Set between the lush Mayan jungle and the turquoise waters of the Caribbean, Our Habitas Tulum offers an experience designed around connection, to nature, to local culture and to yourself. Every stay encourages slower travel through wellness, community gatherings, music, art and authentic experiences that celebrate the spirit of Tulum while respecting the surrounding environment."
-   ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-05",
-    "secondary": [
-     "PATH-02",
-     "PATH-08"
-    ],
-    "setting": "tulum",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6974d696b4469b6c2b952",
-    "6ae6974d2f7e87b5a5f59865"
-   ],
-   "placeSlug": null
-  },
-  {
    "slug": "pacuare-lodge",
    "name": "Pacuare Lodge",
    "ledgerId": "STY-2026-000206",
@@ -40891,8 +40718,19 @@
    "category": "lodge",
    "tagline": "A design-forward jungle villa whose walls slide away to the rainforest.",
    "quote": null,
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/56cf3ba95_dd7be0bfc_6931ff6a5dd754fcdc13243b_3_4-1.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-atelier-villa/g10"
+   ],
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [

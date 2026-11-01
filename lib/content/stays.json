@@ -613,7 +613,7 @@
   },
   {
    "slug": "beyond-grumeti-safari-camp",
-   "name": "&Beyond Grumeti Serengeti River Lodge",
+   "name": "andBeyond Grumeti Serengeti River Lodge",
    "ledgerId": "STY-2026-962790",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -630,17 +630,22 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c4b44029a_63ea386e8_69c0e763e3c99003439f484e_Tanzania-Grumeti-Serengeti-River-Lodge-Guest-Area-inter.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2ac8db49e_fd7b41c26_69d4af6a6ffcea5d24865d74_Tanzania-Grumeti-Serengeti-River-Lodge-Guest-Area-firep."
    ],
-   "bestMonths": "June to October, January to March",
-   "bestMonthsNote": "June to October brings the Great Migration, dramatic river crossings, and the best game viewing. January to March is green and lush, with resident wildlife, birding, and fewer crowds.",
-   "bestFor": [],
+   "bestMonths": "May to July",
+   "bestMonthsNote": "May to July is when the Great Migration often moves through the western corridor and may cross the Grumeti River. Other months bring fewer visitors and a more private Serengeti.",
+   "bestFor": [
+    "couples",
+    "solo",
+    "family",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.1592,
     "lng": 34.2196
    },
-   "airport": "Seronera Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Kilimanjaro or Arusha, connect by light aircraft to Grumeti or Seronera Airstrip, 45 minute road transfer to lodge.",
+   "airport": "Lodge airstrip (western Serengeti)",
+   "airportDirections": "Fly to the lodge airstrip; transfers between the airstrip and the lodge are included.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -650,28 +655,62 @@
    },
    "experiences": {
     "paras": [
-     "Year-round game drives, hot air balloon safaris, guided bush walks, birding, photographic safaris, community visits, bush breakfasts, and unforgettable sundowners."
+     "Twice-daily game drives, hot air balloon safaris, guided nature walks, birding, stargazing, community visits, riverside yoga and in-suite wellness treatments."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "A remarkable river setting alive with hippos and wildlife. Contemporary African design. Private plunge pools. Family-friendly with kids activities. Gourmet cuisine and curated wine cellar. Eco-powered and low impact."
+     "A remarkable river setting alive with hippos and wildlife. Contemporary African design inspired by the Maasai manyatta. Private plunge pools. Family-friendly with the WILDchild programme. Interactive kitchen and starlit boma dinners. Built with sustainability at its core."
     ],
     "items": []
    },
    "onlyHere": [
-    "&Beyond Grumeti Serengeti River Lodge is made for travelers who want front row seats to river crossings, wildlife drama, and the gentle rhythm of the Serengeti. Ideal for couples, families, photographers, and solo adventurers seeking a blend of wild authenticity and refined luxury."
+    "andBeyond Grumeti Serengeti River Lodge is made for travelers who want front row seats to river crossings, wildlife drama, and the gentle rhythm of the Serengeti. Ideal for couples, families, and solo travelers seeking a blend of wild authenticity and refined luxury."
    ],
    "why": [
     {
      "title": "River Drama and Migration Magic",
-     "body": "&Beyond Grumeti Serengeti River Lodge delivers exclusive riverfront wildlife viewing, spectacular Great Migration scenes, and beautiful contemporary suites. Best for couples, families, and photographers seeking comfort and action."
+     "body": "andBeyond Grumeti Serengeti River Lodge delivers uncrowded riverfront wildlife viewing, Great Migration scenes from May to July, and beautiful contemporary suites. Best for couples, families, and solo travelers seeking comfort and action."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "May to July is when the Great Migration often passes through the western corridor, while other months offer a quieter, more private Serengeti.",
+    "how_to_get_there": "Fly to the lodge airstrip in the western Serengeti, with transfers between the airstrip and the lodge included.",
+    "signature_experiences": "Uncrowded game drives in the western corridor, Grumeti River migration crossings in season, guided walks and riverside yoga beside the resident hippos.",
+    "who_its_for": "Solo travellers, couples and friends sharing in the Suites, and families of up to two adults and two children in the Family Suite."
+   },
+   "faqs": [
+    {
+     "q": "Where is &Beyond Grumeti Serengeti River Lodge?",
+     "a": "Inside Serengeti National Park, in the remote western corridor. The lodge sits on a quiet tributary of the Grumeti River that is home to a resident pod of hippo."
+    },
+    {
+     "q": "When is the best time to visit Grumeti Serengeti River Lodge?",
+     "a": "Many guests visit between May and July, when the Great Migration herds often move through the western corridor and may cross the Grumeti River. Travelling outside those months brings fewer visitors and a more private Serengeti."
+    },
+    {
+     "q": "How many suites does the lodge have?",
+     "a": "Ten river-facing Suites, including one Family Suite. Each has a private plunge pool, a deep-soaking tub and views over the river."
+    },
+    {
+     "q": "Is Grumeti Serengeti River Lodge good for families?",
+     "a": "Yes. The Family Suite adds a second, smaller bedroom for children and sleeps two adults and two children, and andBeyond's WILDchild programme is included in the rate."
+    },
+    {
+     "q": "What can you do at the lodge?",
+     "a": "Twice-daily game drives, guided nature walks, birdwatching with over 350 species and stargazing are offered. Hot air balloon safaris, private riverside yoga, in-suite wellness treatments and a full-day visit to the Lukungu community are available at extra cost."
+    },
+    {
+     "q": "How do you get to Grumeti Serengeti River Lodge?",
+     "a": "Guests fly to the lodge airstrip in the western Serengeti. Road transfers between the airstrip and the lodge are included in the rate."
+    },
+    {
+     "q": "Who is the lodge best suited to?",
+     "a": "andBeyond describes the Suites as ideal for solo travellers, couples and friends sharing, and the Family Suite as made for families."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -805,20 +844,23 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/190f5fc79_3373831f0_69c1178c7557b3e10be41734_Tanzania-Lake-Manyara-Tree-Lodge-Aerial.jpg"
    ],
    "bestMonths": "June to October, January to March",
-   "bestMonthsNote": "June to October is migration season, with river crossings, dramatic game, and peak wildlife. January to March is green, scenic, with great resident wildlife and birding.",
-   "bestFor": [],
+   "bestMonthsNote": "June to October is the dry season andBeyond recommends for safaris; November to March is great for birdwatching.",
+   "bestFor": [
+    "family",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.835,
     "lng": 35.2459
    },
-   "airport": "Klein’s Airstrip, Lobo Airstrip",
-   "airportDirections": "Fly to Kilimanjaro or Arusha, connect by light aircraft to Klein’s or Lobo Airstrip, 45 minute road transfer to camp.",
+   "airport": "Klein's Airstrip, Lobo Airstrip",
+   "airportDirections": "Scheduled morning flights from Arusha to Klein's Airstrip, then a drive of about 1.5 hours to camp with game viewing en route. Flights to Lobo Airstrip are followed by a 1.5 to 2 hour drive.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Ten stone and thatch cottages, each with private veranda, en-suite bathroom, and wide views of the valley and hills, including one family cottage."
+     "Ten cottages, each with private veranda, en-suite bathroom, and wide views of the valley and hills, plus one Family Cottage made of two cottages joined by an interleading walkway."
     ],
     "items": []
    },
@@ -836,7 +878,7 @@
    },
    "features": {
     "paras": [
-     "Exclusive 10,000 hectare private concession with off road safaris. Night drives and bush walks allowed. Elevated pool and lounge with panoramic vistas. Family friendly with kids activities. Locally inspired cuisine and private dining. Maasai-guided walks and community engagement."
+     "Exclusive 10,000 hectare private concession with off road safaris. Night drives and bush walks allowed. Lodge pool and lounge with panoramic vistas. Family friendly with kids activities. Locally inspired cuisine and private dining. Maasai-guided walks and community engagement."
     ],
     "items": []
    },
@@ -849,9 +891,43 @@
      "body": "&Beyond Klein’s Camp delivers rare access to private wilderness, the Great Migration, and Maasai culture, with the freedom of night drives and personalized adventures. Best for couples, families, and wildlife enthusiasts seeking something special."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to October is andBeyond's recommended dry season for safaris, with November to March best for birdwatching.",
+    "how_to_get_there": "Fly from Arusha to Klein's Airstrip, then drive about one and a half hours to camp with game viewing en route.",
+    "signature_experiences": "Off-road game viewing with only andBeyond vehicles, night game drives, bush walks and visits to a nearby Maasai boma.",
+    "who_its_for": "Families of all ages and travellers who want private game viewing, night drives and walking safaris on an exclusive concession."
+   },
+   "faqs": [
+    {
+     "q": "Where is &Beyond Klein's Camp?",
+     "a": "In a remote corner of the Serengeti, on a private 10,000 hectare (24,700 acre) wildlife concession leased from Maasai landlords. The camp sits on the edge of the Kuka Hills, looking down a valley that borders the Serengeti and the Masai Mara National Reserve."
+    },
+    {
+     "q": "How do you get to Klein's Camp?",
+     "a": "Scheduled flights run each morning from Arusha to Klein's Airstrip, followed by a drive of about one and a half hours with game viewing on the way. andBeyond also lists morning flights to Lobo airstrip, followed by a one and a half to two hour drive."
+    },
+    {
+     "q": "How many cottages does Klein's Camp have?",
+     "a": "Ten cottages, plus one Family Cottage made up of two cottages joined by an interleading walkway. Each cottage has a private verandah looking out over the hills."
+    },
+    {
+     "q": "Does Klein's Camp welcome children?",
+     "a": "Yes, all ages are welcome. The WILDchild programme offers fun, interactive activities for children, and the Family Cottage suits families travelling together."
+    },
+    {
+     "q": "What makes Klein's Camp different from other Serengeti camps?",
+     "a": "It is a private concession, so only andBeyond vehicles are at sightings and guides can drive off-road. Guests can also take night game drives and explore on foot, free from roads and vehicles."
+    },
+    {
+     "q": "What activities are offered at Klein's Camp?",
+     "a": "Game drives, night game drives, bush walks and birdwatching, plus breakfast, lunch or dinner served out on the concession. Guests can also visit a Maasai boma near camp to learn about daily life and culture."
+    },
+    {
+     "q": "When is the best time to visit Klein's Camp?",
+     "a": "andBeyond's Tanzania advice names June to October, the dry season, as ideal for safaris. November to March is highlighted as a great time for birdwatching."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6324,21 +6400,26 @@
    "quote": "Wake up to acacia-studded savannahs, walk with Maasai, and savor slow sunsets beside the flamingo-dotted lakeshore. Chem Chem is where safari goes soulful",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eedcf54c4_579a8fb13_6929540fd6d489cb045d9661_chem-chem.jpg",
    "gallery": [],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, walking safaris, and peak wildlife. November to April for birding, green landscapes, and flamingos on Lake Manyara.",
-   "bestFor": [],
+   "bestMonths": "June to mid-November",
+   "bestMonthsNote": "June to mid-November is the dry season. December to March is temperate after the short rains. The lodge closes from early April to mid-May.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "wellness",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -3.7513,
-    "lng": 35.8448
+    "lat": -3.746111,
+    "lng": 35.843889
    },
-   "airport": "Kuro Airstrip (KURO) and Manyara Airstrip (LKY)",
-   "airportDirections": "Fly to Manyara or Kuro Airstrip, 60–90 minute drive to lodge, Chem Chem team will greet you.",
+   "airport": "Chem Chem Airstrip",
+   "airportDirections": "Fly from Kilimanjaro (JRO) or Arusha (ARK) to Chem Chem Airstrip on Miracle Air (20 to 40 minutes), then a game drive transfer of about 10 to 15 minutes. Arrival and departure transfers are included.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxury tented suites and one family suite, each with private deck, outdoor shower, en suite bathroom, and bush views. Main lodge with pool, fire pit, open-air dining, spa, lounge, and library."
+     "Seven tented suites and one family unit, each with private verandah, reading nook, indoor and outdoor showers, and en suite bathroom. Main lodge with pool, gym, spa, and open-air dining."
     ],
     "items": []
    },
@@ -6347,24 +6428,18 @@
     "items": [
      "Private game drives",
      "Walking safaris",
+     "Silent walks and runs with the Maasai",
      "Bush breakfasts and sundowners",
-     "Birdwatching",
-     "Hot air ballooning (seasonal, extra cost)",
-     "Maasai village visits",
-     "Wellness treatments",
-     "Conservation activities"
+     "Wild dining",
+     "Maasai celebrations",
+     "Wellness treatments"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Spacious, elegant suites",
-     "Lakeshore location with epic sunsets",
-     "Slow safari ethos, lingering, walking, and connecting",
-     "Family-friendly activities",
-     "Spa and wellness",
-     "Strong conservation focus"
-    ]
+    "paras": [
+     "Chem Chem Lodge, now part of Auberge Safari. Spacious, elegant suites. Palm-dotted plains in the exclusive-use Burunge Wildlife Management Area, between Lake Manyara and Tarangire. Slow safari ethos, lingering, walking, and connecting. Family-friendly activities. Spa and wellness. Strong conservation focus."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Chem Chem is for couples, honeymooners, families, and solo explorers seeking slow, private safaris, intimate wildlife moments, and authentic connections with local culture and nature."
@@ -6375,9 +6450,43 @@
      "body": "Perfect for travelers who crave space, quiet adventure, and genuine connections. With wild landscapes, wildlife, and people. Amazing for romantic escapes, families, and anyone needing to slow down and tune in."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round except for a short break from early April to mid-May, with the dry season running from June to mid-November.",
+    "how_to_get_there": "Fly from Kilimanjaro or Arusha to Chem Chem Airstrip in about 20 to 40 minutes, then take the included short game drive transfer to the lodge.",
+    "signature_experiences": "Private game drives, silent walks, runs with the Maasai, wild dining and Maasai celebrations in the Burunge Wildlife Management Area.",
+    "who_its_for": "Couples, honeymooners, families with children aged 4 and older, and anyone wanting a slow, privately guided safari with wellness built in."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chem Chem Lodge?",
+     "a": "Chem Chem Lodge sits within the exclusive-use Burunge Wildlife Management Area in northern Tanzania, between Lake Manyara and Tarangire national parks. The lodge lies in a wildlife corridor that connects the Tarangire and Manyara ecosystems."
+    },
+    {
+     "q": "How do I get to Chem Chem Lodge?",
+     "a": "Fly from Kilimanjaro or Arusha to Chem Chem Airstrip on Miracle Air scheduled or private charter flights, usually 20 to 40 minutes depending on routing. From the airstrip it is a short game drive transfer to the lodge, and arrival and departure transfers are included."
+    },
+    {
+     "q": "When is the best time to visit Chem Chem Lodge?",
+     "a": "The lodge is open year-round apart from a short break from early April to mid-May. Auberge Safari describes June to mid-November as the dry season, with short rains usually from mid-November to early December."
+    },
+    {
+     "q": "How many suites does Chem Chem Lodge have?",
+     "a": "There are seven tented suites and one family unit, each set well apart from the next with a private verandah and indoor and outdoor showers. The lodge also has a swimming pool, a fully-equipped gym and a spa."
+    },
+    {
+     "q": "Can children stay at Chem Chem Lodge?",
+     "a": "Yes. Children aged 4 and older are welcome, and the two-bedroom family unit sleeps up to 2 adults and 3 children. Walking safaris are for guests aged 12 and over, and children of all ages are welcome when the lodge is booked exclusively."
+    },
+    {
+     "q": "What are the signature experiences at Chem Chem Lodge?",
+     "a": "Game drives with your own private guide and vehicle, a silent walk, a run with the Maasai, wild dining and Maasai celebrations. Stays are all-inclusive, covering meals and drinks, unlimited game drives, select cultural experiences and airstrip transfers."
+    },
+    {
+     "q": "Who is Chem Chem Lodge best for?",
+     "a": "Travellers who want an unhurried, privately guided safari: the lodge calls itself the birthplace of the Slow Safari. Its wellness offering includes silent walks, runs with Maasai warriors and spa rituals, and it suits families with children aged 4 and up."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6646,7 +6755,7 @@
   },
   {
    "slug": "chumbe-island-zanzibar",
-   "name": "Chumbe Isalnd \n Escape Zanzibar",
+   "name": "Chumbe Island, Zanzibar",
    "ledgerId": "STY-2026-000061",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -6666,7 +6775,13 @@
    ],
    "bestMonths": "June–October, December–March",
    "bestMonthsNote": "Dry months bring the best visibility for snorkeling and calm seas for island life; green season is lush and peaceful.",
-   "bestFor": [],
+   "bestFor": [
+    "conservation",
+    "family",
+    "couples",
+    "solo",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -6674,15 +6789,13 @@
     "lng": 39.1812
    },
    "airport": "Zanzibar International Airport (ZNZ)",
-   "airportDirections": "Arrive at Zanzibar (ZNZ), 30-minute drive to Mbweni Beach, then 45-minute boat transfer to the island (included in rate).",
+   "airportDirections": "Arrive at Zanzibar (ZNZ); Chumbe's scheduled boat transfer from its Mbweni base is included.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Eco-Bungalow",
-     "Private Island",
-     "Exclusive Use"
-    ]
+    "paras": [
+     "Seven Eco-Bungalows. Private Island."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -6690,15 +6803,15 @@
      "Snorkeling in Coral Reserve",
      "Forest Nature Walks",
      "Reef Walks at Low Tide",
+     "Coconut Crab Walks",
      "Birdwatching",
-     "Kayaking",
      "Conservation Activities",
      "Educational Tours"
     ]
    },
    "features": {
     "paras": [
-     "Award-winning eco-lodge with seven solar-powered bungalows. Open-air bathrooms and sea views. Rainwater harvesting and composting toilets. All meals included. No plastic or single-use waste. Solar energy throughout. Only accessible by boat."
+     "Award-winning eco-lodge with seven solar-powered bungalows. Open-air bathrooms and sea views. Rainwater harvesting and composting toilets. All meals included. All waste managed sustainably. Solar energy throughout. Only accessible by boat."
     ],
     "items": []
    },
@@ -6711,9 +6824,43 @@
      "body": "Stay at Chumbe for world-class snorkeling, conservation, and off-grid comfort in a place where every stay helps preserve coral reefs and local communities. Perfect for adventure seekers, marine lovers, and travelers who want meaning with their magic."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Chumbe does not name a best month, but full intertidal walks around the island are only possible at spring low tides near new and full moon.",
+    "how_to_get_there": "Take Chumbe's scheduled boat transfer from Zanzibar, included in the Full Package, with private boats available to match flights.",
+    "signature_experiences": "Snorkelling the protected Chumbe Reef, the coral rag forest walk, intertidal walks and the evening coconut crab walk.",
+    "who_its_for": "Couples, solo travellers and families who want an off-grid eco-lodge where every stay funds reef conservation and education."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chumbe Island?",
+     "a": "About 8 km west of Unguja, the main island of Zanzibar. Chumbe is a small, privately managed conservation area with a Coral Reef Sanctuary and Forest Reserve, gazetted in 1994 as Tanzania's first marine protected area."
+    },
+    {
+     "q": "How do you get to Chumbe Island?",
+     "a": "By boat. Scheduled boat transfers to and from the island are included in the Full Package, Chumbe's office is at Mbweni, and private boats can be arranged to fit flight times."
+    },
+    {
+     "q": "How many bungalows are there on Chumbe Island?",
+     "a": "Seven solar-powered eco-bungalows set between the beach and the forest: two Seafront Bungalows, Seaview Bungalows and a single-storey Garden Bungalow. Each has a king-size bed and a self-contained bathroom with a composting toilet."
+    },
+    {
+     "q": "Can children stay on Chumbe Island?",
+     "a": "Yes, children are welcome and baby cots are available on request. Chumbe notes that the ground is rocky, the bungalows are very open, including the upstairs sleeping platforms, and there is no babysitting service."
+    },
+    {
+     "q": "What activities are included at Chumbe Island?",
+     "a": "All activities are included in an overnight stay: guided snorkelling on the protected reef, the forest walk, intertidal walks, the evening coconut crab walk and birding from the bird hide. Guests can also climb the 132 steps of the 1904 lighthouse."
+    },
+    {
+     "q": "What makes Chumbe Island an eco-lodge?",
+     "a": "The bungalows are built with renewable materials, powered by the sun, collect and clean their own rainwater and manage all waste sustainably. Lodge revenue funds the island's conservation and free environmental education for local school children."
+    },
+    {
+     "q": "What is the food like on Chumbe Island?",
+     "a": "Stays are full board, with a daily selection of Swahili dishes made from locally sourced ingredients. Chumbe buys only fresh fish from local fishers under a sustainable seafood policy, and vegan, vegetarian, gluten-free and lactose-free dishes are offered."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -8375,8 +8522,11 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b5eaae19f_52df0fe24_69248239f33e2f4334353e4b_bathroom-dunia-camp.jpg"
    ],
    "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is migration season with best wildlife and dramatic crossings. November to May is green, great for birding and quieter safaris.",
-   "bestFor": [],
+   "bestMonthsNote": "The migration passes Dunia from March to June and again in November and December.",
+   "bestFor": [
+    "family",
+    "wildlife_photography"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -8397,23 +8547,20 @@
     "items": [
      "Game drives",
      "Great Migration viewing",
-     "Walking safaris",
+     "Big cat and black rhino tracking in the Moru Kopjes",
      "Sundowners",
      "Birding safaris",
-     "Night drives",
-     "Photographic safaris",
-     "Community and women’s empowerment experiences"
+     "Photographic safaris"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Spacious tents with private decks",
+     "Spacious tents with private verandas",
      "All-female team",
      "Prime migration location",
-     "Bush dining",
-     "Personalized guiding",
-     "Eco friendly",
+     "Highly trained guides",
+     "Solar powered",
      "Inspiring and welcoming atmosphere"
     ]
    },
@@ -8426,9 +8573,43 @@
      "body": "Dunia is perfect for those wanting true adventure, inspiring people, and the best of the Serengeti migration. Best for solo travelers, couples, families, and anyone who values authenticity and community."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Wildlife is seen year round, with the Great Migration passing camp between March and June and again in November and December.",
+    "how_to_get_there": "Fly to Seronera airstrip in the Serengeti, then drive about 45 minutes to camp.",
+    "signature_experiences": "Twice daily game drives across the Seronera River, the Moru Kopjes and the southern Serengeti plains, looking for big cats, black rhino and the migration herds.",
+    "who_its_for": "Travellers who want a migration-path Serengeti camp run by an all-women team, including families with children aged five and over."
+   },
+   "faqs": [
+    {
+     "q": "Where is Dunia Camp?",
+     "a": "Dunia Camp is in the heart of Tanzania's Serengeti National Park, directly in the path of the Great Migration. It lies away from the main tourist routes, with game viewing around the Seronera River, the Moru Kopjes and the southern Serengeti plains."
+    },
+    {
+     "q": "How do I get to Dunia Camp?",
+     "a": "Fly to Seronera airstrip, the primary airstrip in the Serengeti National Park. The camp is about a 45 minute drive away."
+    },
+    {
+     "q": "When is the best time to visit Dunia Camp?",
+     "a": "Wildlife can be seen year round. Asilia says the Great Migration passes the camp heading north between March and June, and the herds return south through the central Serengeti near camp in November and December."
+    },
+    {
+     "q": "How many tents does Dunia Camp have?",
+     "a": "Dunia has 8 tents, including 1 family suite. Each tent has an en suite bathroom with a fully plumbed hot shower, Wi-Fi and a private veranda."
+    },
+    {
+     "q": "Does Dunia Camp welcome children?",
+     "a": "Yes. Children as young as five are welcome, and the camp has a family tent with separate bedrooms."
+    },
+    {
+     "q": "What makes Dunia Camp different?",
+     "a": "Dunia is operated entirely by women. Asilia describes it as Africa's first and only all-women-operated boutique safari camp."
+    },
+    {
+     "q": "What wildlife can I see at Dunia Camp?",
+     "a": "Big cats, the rare black rhino, wildebeest, zebra, gazelle and elephant. Game drives run twice daily in custom-modified 4x4 vehicles, and the Moru Kopjes are known for big cats."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -9412,9 +9593,11 @@
    "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/68b644858_aed786b67_68c5a5e3bce64aae0b4b1389_Dining_20room_20verandah_20overlooking_20the_20Crater-M.",
    "gallery": [],
-   "bestMonths": null,
+   "bestMonths": "Open all year",
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -9426,33 +9609,67 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Cottages on the wild side of the Crater rim, including two-bedroom family cottages, each with an en-suite bathroom, indoor heating and a private veranda over the Crater."
+     "Cottages on the wild side of the Crater rim, including two-bedroom family cottages, each with an en-suite bathroom and a private veranda over the Crater."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [
-     "Private Crater game drives that aim to enter soon after dawn. Highland walks with a Maasai scout and ranger. Crater-view picnic lunches. Visits to a Maasai boma in the next valley. A walk out to the Serengeti Safari Camp."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "Crater game drives that aim to enter soon after dawn",
+     "Highland walks with a Maasai scout and ranger",
+     "Crater-view picnic lunches",
+     "Visits to a Maasai boma in the next valley",
+     "A walk out to the Serengeti Safari Camp"
+    ]
    },
    "features": {
     "paras": [
-     "Nomad Tanzania's camp on the Ngorongoro Crater rim, reached by a private drive. Central lounge with an evening fire. Furnishings made by Tanzanian artisans. Open all year."
+     "Nomad Tanzania's camp on the Ngorongoro Crater rim. Central lounge with an evening fire. Furnishings sourced locally and inspired by Tanzanian artists. Open all year."
     ],
     "items": []
    },
    "onlyHere": [
-    "Entamanu means circle in Maa, and Nomad calls it the only place where you can see the Ngorongoro Crater and the Serengeti plains from the same spot. Being on the rim means you are first into the Crater in the morning."
+    "Nomad calls Entamanu the only place where you can see the Ngorongoro Crater and the Serengeti plains from the same spot. Being on the rim means you are often first into the Crater in the morning."
    ],
    "why": [
     {
      "title": "First Into the Crater",
-     "body": "Best for families, photographers and travelers combining Ngorongoro with the Serengeti."
+     "body": "Best for families, groups of friends and travelers combining Ngorongoro with the Serengeti."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "Entamanu is open all year, with Crater access soon after dawn.",
+    "how_to_get_there": "Nomad's site does not publish transfer details for Entamanu, so your advisor will confirm the route up to the Crater rim.",
+    "signature_experiences": "Dawn Crater game drives ahead of the minibuses, highland walks with a Maasai scout, a Maasai boma visit and a walk to Serengeti Safari Camp.",
+    "who_its_for": "Families and groups of friends in two-bedroom cottages, and travellers who want an early start into the Crater."
+   },
+   "faqs": [
+    {
+     "q": "Where is Entamanu Ngorongoro?",
+     "a": "High on the rim of the Ngorongoro Crater. Nomad describes it as the only place in the world where you can see the Ngorongoro Crater and the Serengeti plains from the same spot."
+    },
+    {
+     "q": "Is Entamanu open all year?",
+     "a": "Yes, Nomad lists Entamanu as open all year."
+    },
+    {
+     "q": "What are the rooms like at Entamanu?",
+     "a": "Cottage-style rooms with en-suite bathrooms, double sinks, a power shower and private verandahs looking into the Crater. Two-bedroom cottages with full-sized bedrooms are available for families or groups of friends."
+    },
+    {
+     "q": "Why stay on the Crater rim?",
+     "a": "Entamanu has access to the Crater soon after dawn, often first in line, which avoids the minibuses that arrive later."
+    },
+    {
+     "q": "What activities are offered at Entamanu?",
+     "a": "Early Crater game drives, highland walks with a Maasai scout and an armed ranger, and visits to a Maasai boma in the next valley. Nomad can set up a picnic overlooking the Crater for your return from the morning drive, and guests can walk from Entamanu to Serengeti Safari Camp."
+    },
+    {
+     "q": "Who is Entamanu best suited to?",
+     "a": "Families and groups of friends, who can share Nomad's two-bedroom cottages, and travellers who want to be among the first into the Crater each morning."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -9486,9 +9703,12 @@
    "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ded282a97_afd247076_68c5a449117bb751fde15622_Afternoon_20tea_20with_20stormy_20skies_20beyond-Large.",
    "gallery": [],
-   "bestMonths": null,
+   "bestMonths": "Open all year",
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -9500,19 +9720,19 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Four cottages of wood, glass and canvas raised on platforms on the north-western Crater rim: two family cottages and two standard cottages, each with a private veranda over the Crater."
+     "Four cottages raised on wooden platforms on the north-western Crater rim: two family cottages and two standard cottages, each with a private veranda over the Crater."
     ],
     "items": []
    },
    "experiences": {
     "paras": [
-     "Early-morning Crater drives for rhino and flamingo ahead of the crowds. Highland walks with a Maasai scout and ranger. A private visit to a nearby Maasai community."
+     "Early-morning Crater drives soon after dawn, ahead of the minibuses. Highland walks with a Maasai scout. A private visit to a nearby Maasai community."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "A separate camp beside Nomad's Entamanu, with its own lounge, dining room and lookout veranda. Built to be fully removable. Open all year. Children over five welcome."
+     "A separate camp beside Nomad's Entamanu, with its own lounge, dining room and lookout veranda. Raised on platforms to leave no footprint on the site. Open all year. Children over five welcome."
     ],
     "items": []
    },
@@ -9525,8 +9745,42 @@
      "body": "Best for families and small groups who want privacy at Ngorongoro."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "Entamanu Private is open all year round, with Crater access soon after dawn.",
+    "how_to_get_there": "Nomad's site does not publish transfer details for Entamanu Private, so your advisor will confirm the route up to the north-western Crater rim.",
+    "signature_experiences": "Early Crater drives ahead of the minibuses, highland walks with a Maasai scout and a private Maasai boma visit.",
+    "who_its_for": "Families with children over five and small groups who want four Crater-rim cottages and their own living spaces."
+   },
+   "faqs": [
+    {
+     "q": "Where is Entamanu Private?",
+     "a": "On the remote north-western rim of the Ngorongoro Crater, in the highlands. It is Nomad's exclusive camp on the Crater rim."
+    },
+    {
+     "q": "How many rooms does Entamanu Private have?",
+     "a": "Just four rooms elevated on wooden platforms, two of which are family rooms. Each cottage has a private veranda overlooking the Ngorongoro Crater."
+    },
+    {
+     "q": "Does Entamanu Private accept children?",
+     "a": "Yes, Nomad welcomes children over five at Entamanu Private."
+    },
+    {
+     "q": "Is Entamanu Private open all year?",
+     "a": "Yes, Nomad lists it as open all year round."
+    },
+    {
+     "q": "What shared spaces does Entamanu Private have?",
+     "a": "Its own dining room, a private lounge and a spacious lookout verandah across the Ngorongoro Crater."
+    },
+    {
+     "q": "What activities are offered at Entamanu Private?",
+     "a": "Crater drives with access soon after dawn, avoiding the minibuses, and highland walks with your guide and a Maasai scout. Guests can also visit a nearby Maasai boma for insights into pastoral life, from building huts to warrior ceremonies."
+    },
+    {
+     "q": "Who is Entamanu Private best suited to?",
+     "a": "Nomad says the camp is perfect for families, offering your own exclusive Crater experience with private living spaces."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -9566,19 +9820,22 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "adventure",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Kogatende Airstrip (north camp) or Seronera Airstrip (south camp)",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Safari Tents",
-     "Family Tent",
-     "Private Use Options"
+     "Eight mobile safari tents",
+     "Children triple available",
+     "Private guide and vehicle option"
     ]
    },
    "experiences": {
@@ -9588,7 +9845,7 @@
      "Bush Meals",
      "Sundowners",
      "Migration Viewing",
-     "Walking Experiences"
+     "Walking Experiences (north camp)"
     ]
    },
    "features": {
@@ -9596,7 +9853,7 @@
     "items": [
      "En-suite mobile tents",
      "Solar-powered camp",
-     "Private safari vehicles",
+     "Private safari vehicles (Adventure Package)",
      "Chef-prepared meals",
      "Seasonally mobile locations"
     ]
@@ -9610,9 +9867,43 @@
      "body": "Esirai Camp offers front-row access to one of the world’s last great natural spectacles - the Great Wildebeest Migration."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Esirai moves between the northern and southern Serengeti with the migration; Entara does not publish fixed months for each location on its site.",
+    "how_to_get_there": "Fly to Kogatende Airstrip for the north camp or Seronera Airstrip for the south camp, with transfers included in the Adventure and Game Drive packages.",
+    "signature_experiences": "Migration game drives, guided walks in the north, bush dining, sundowners and hot air balloon flights.",
+    "who_its_for": "Travellers who want a simple, low-impact mobile camp close to the migration, including families sharing a children's triple."
+   },
+   "faqs": [
+    {
+     "q": "Where is Esirai Camp?",
+     "a": "Esirai is a mobile camp in Tanzania's Serengeti that is set up in the northern or southern Serengeti depending on the season. It moves with the wildebeest and zebra on their journey from the southern plains to the Mara River in the north."
+    },
+    {
+     "q": "How do I get to Esirai Camp?",
+     "a": "Guests fly to Kogatende Airstrip when the camp is in the north and Seronera Airstrip when it is in the south. Return airstrip transfers are included in Entara's Adventure and Game Drive packages."
+    },
+    {
+     "q": "How many tents does Esirai Camp have?",
+     "a": "Esirai has eight mobile tents with en-suite bathrooms, hot safari showers and safari toilets. The heart of camp is a large mess tent with an adjoining library tent and an outdoor fire pit."
+    },
+    {
+     "q": "Can families stay at Esirai Camp?",
+     "a": "Yes. Entara lists a children's triple as available at Esirai, so a family can share."
+    },
+    {
+     "q": "What activities are offered at Esirai Camp?",
+     "a": "Game drives, guided walks at the north camp, bush dining, sundowners and hot air balloon flights. The Adventure Package adds a private guide and vehicle with a personal activity plan."
+    },
+    {
+     "q": "Is Esirai Camp eco-friendly?",
+     "a": "Yes. Esirai is a light-footprint camp that is fully solar-powered, uses heated water for showers rather than running water, and has dry pit latrines flushed with sand. The whole camp packs into a single pickup truck when it moves."
+    },
+    {
+     "q": "Does Esirai Camp have Wi-Fi?",
+     "a": "No. Esirai has no Wi-Fi, but the camp manager is in contact with Entara's main office and can pass on a message in an emergency."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -10579,7 +10870,7 @@
   },
   {
    "slug": "gibbs-farm",
-   "name": "Gibbs Farm",
+   "name": "Gibb's Farm",
    "ledgerId": "STY-2026-000099",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -10592,7 +10883,11 @@
    "gallery": [],
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October for clear skies, cool weather, and best wildlife. November to May for green landscapes, birding, and quieter stays.",
-   "bestFor": [],
+   "bestFor": [
+    "food",
+    "honeymoon",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -10600,51 +10895,81 @@
     "lng": 35.6639
    },
    "airport": "Lake Manyara Airport (LKY), Kilimanjaro International Airport (JRO), Arusha Airport (ARK)",
-   "airportDirections": "Fly to Lake Manyara (45-minute drive), Arusha (3 hours), or Kilimanjaro (4 hours). Transfers arranged by Gibbs Farm.",
+   "airportDirections": "Fly from Arusha to Lake Manyara Airport, a 45-minute drive from the farm, where staff meet guests. Kilimanjaro International is about 45 minutes from Arusha.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Seventeen cozy cottages and two family houses with private verandas, en suite bathrooms, fireplaces, and views of the farm or forest. Main lodge with library, spa, dining terrace, organic gardens, and artist’s studio."
+     "Seventeen one-bedroom farm cottages, famed for their outdoor showers, and two two-bedroom farm houses, Bustani and Deutsches, with en-suite bedrooms. Set among organic gardens and coffee fields."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided walks to Ngorongoro forest and elephant caves",
-     "Organic farm tours",
-     "Coffee roasting",
-     "Birdwatching",
-     "Cycling in the hills",
-     "Village visits",
-     "Spa treatments",
-     "Maasai cultural experiences",
+     "Elephant Cave and Falls walk in the Ngorongoro forest",
+     "Organic farm tours and vegetable harvests",
+     "Coffee processing",
+     "Cycling the farm",
+     "Tloma village walking tour",
+     "Tembo Fire Tales of elephants and Maasai legends",
      "Farm-to-table dining"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Historic farm with lush gardens",
+     "Historic 1920s coffee farm with lush gardens",
      "Fresh organic cuisine",
-     "Award-winning wellness spa",
-     "Birdlife and wildlife at your doorstep",
      "Peaceful, family-friendly setting",
-     "Immersive cultural and nature activities"
+     "Immersive farm, cultural and nature activities"
     ]
    },
    "onlyHere": [
-    "Gibbs Farm is ideal for families, couples, solo travelers, and anyone seeking a peaceful, green base for exploring Ngorongoro, Lake Manyara, and beyond. Mix adventure, relaxation, and authentic East African hospitality."
+    "Gibb's Farm is ideal for families, couples, solo travelers, and anyone seeking a peaceful, green base for exploring Ngorongoro, Lake Manyara, and beyond. Mix adventure, relaxation, and authentic East African hospitality."
    ],
    "why": [
     {
      "title": "Nature, Nurture, Ngorongoro",
-     "body": "Perfect for wellness seekers, slow travelers, families, and anyone who loves garden-to-table living, forest walks, and a tranquil retreat surrounded by nature."
+     "body": "Perfect for honeymooners, slow travelers, families, and anyone who loves garden-to-table living, forest walks, and a tranquil retreat surrounded by nature."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Gibb's Farm does not name a best month on its site, though it notes flamingos feed along the Lake Manyara shore in the wet season.",
+    "how_to_get_there": "Fly from Arusha to Lake Manyara Airport, a 45-minute drive from the farm, where staff meet guests in private vehicles.",
+    "signature_experiences": "The Elephant Cave and Falls walk, coffee processing on a 1920s coffee estate, farmyard life and organic farm-to-table cuisine.",
+    "who_its_for": "Families in the two farm houses, honeymooners and anyone who wants farm-fresh food as a base for the Crater and Lake Manyara."
+   },
+   "faqs": [
+    {
+     "q": "Where is Gibb's Farm?",
+     "a": "In Karatu, between Lake Manyara and the Ngorongoro Crater. The Crater is 56 km, about a two-hour drive, from the front gate, Lake Manyara is a 45-minute drive and Lake Eyasi is 1.5 hours away."
+    },
+    {
+     "q": "How do you get to Gibb's Farm?",
+     "a": "International flights arrive at Kilimanjaro International Airport, about 45 minutes from Arusha. From Arusha you can drive to the farm, or fly to Lake Manyara Airport for a faster arrival, where Gibb's Farm staff meet guests in private vehicles."
+    },
+    {
+     "q": "How many rooms does Gibb's Farm have?",
+     "a": "Seventeen one-bedroom farm cottages and two two-bedroom farm houses, Bustani and Deutsches. The cottages are known for their outdoor showers, and each farm house bedroom is en-suite."
+    },
+    {
+     "q": "Is Gibb's Farm good for families?",
+     "a": "Yes. The two farm houses are designed for bigger families and those travelling together, a limited number of interconnecting rooms are available, and children up to five stay free when sharing."
+    },
+    {
+     "q": "What is the history of Gibb's Farm?",
+     "a": "It was founded in the 1920s as a coffee plantation and still grows about 30 acres of organically cultivated Arabica coffee. Coffee roasted on the farm is served to guests."
+    },
+    {
+     "q": "What can you do at Gibb's Farm?",
+     "a": "The two-hour Elephant Cave and Falls walk through the forested slopes of the Ngorongoro Conservation Area, vegetable harvests, coffee processing, cow milking and egg collecting. You can also cycle the farm, walk to neighbouring Tloma village and book half or full day safaris to the Ngorongoro Crater, Lake Eyasi or Lake Manyara."
+    },
+    {
+     "q": "Is Gibb's Farm good for a honeymoon?",
+     "a": "Yes. Gibb's Farm offers honeymoon packages of three nights or more that include a complimentary spa treatment, a romantic dinner and a welcome fruit platter with wine and chocolates."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -10972,8 +11297,8 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/aa3715591_08a8e1f03_68c56dfda820f9f6bd97cfec_Stunning_20Mahale_20skies-Medium.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/77dc37187_ea518ef58_68c56dfdca7235015cec3bcf_Drone_20view_20of_20Greystoke_20with_20a_20Dhow_20on_20."
    ],
-   "bestMonths": "Visit between June and September for the best experience.",
-   "bestMonthsNote": "From June to September, the weather is drier, chimps are easier to spot as they often stay lower in the mountains, trails are easier to navigate, and the lake is calmer and clearer for kayaking and swimming. Travel is smoother with fewer heavy rains. In contrast, mid-March to early June marks the wet season and lodge maintenance closure.",
+   "bestMonths": "June to mid-March",
+   "bestMonthsNote": "The camp is open June to mid-March.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
@@ -10982,21 +11307,21 @@
     "lng": 29.7333
    },
    "airport": "Nearest airports: Kigoma Airport (TKQ) and Arusha Airport (ARK), or other small airstrips depending on your itinerary.",
-   "airportDirections": "Greystoke Mahale is remote. Most travelers fly into Arusha for international connections, then take a charter to a smaller airstrip near Lake Tanganyika, or fly via Kigoma. From the airstrip, a scenic 90-minute dhow ride on the lake brings you to the lodge.",
+   "airportDirections": "The final leg to camp is by boat on Lake Tanganyika, arranged as part of a western Tanzania itinerary.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six bandas crafted from reclaimed dhow wood, each open to forest and lake views.",
-     "The main lodge offers shared dining, a lounge, bar, reading room, and a sunset deck.",
-     "Every banda includes a veranda and an upstairs chill-out deck for slow, easy moments."
+     "Eight double bandas crafted from reclaimed dhow wood, each open to lake views with the mountains behind.",
+     "The main area offers a beach bar and a chill-out deck.",
+     "Every banda has an en-suite bathroom and beach and lake views for slow, easy moments."
     ],
     "items": []
    },
    "experiences": {
     "paras": [
      "Chimp trekking in the Mahale Mountains with expert trackers.",
-     "Kayaking, snorkeling, dhow trips, and swimming in Lake Tanganyika.",
-     "Forest hikes to waterfalls plus bird and primate watching deep in the jungle."
+     "Glass-bottom kayaking, dhow cruises, and swimming in Lake Tanganyika.",
+     "Forest walks and swimming in forest pools, plus a visit to Katumbi village."
     ],
     "items": []
    },
@@ -11004,7 +11329,7 @@
     "paras": [
      "Chimp trekking in the Mahale Mountains with expert trackers.",
      "Eco-chic design featuring reclaimed dhow wood, open spaces, and a seamless indoor and outdoor flow.",
-     "An intimate stay with only six bandas, offering plenty of privacy."
+     "An intimate stay with only eight bandas, offering plenty of privacy."
     ],
     "items": []
    },
@@ -11017,9 +11342,39 @@
      "body": "We share the mountains and the lake with many animals, but the chimps are what truly inspire us. Time with them takes you away from everything ordinary."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Greystoke Mahale is open from June to mid-March.",
+    "how_to_get_there": "The last leg to camp is by boat on Lake Tanganyika, arranged as part of a western Tanzania itinerary.",
+    "signature_experiences": "Chimpanzee tracking in the Mahale Mountains, dhow cruises and glass-bottom kayaking on Lake Tanganyika.",
+    "who_its_for": "Travellers who want to track wild-living, habituated chimpanzees from a remote lakeshore camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Greystoke Mahale?",
+     "a": "On the remote shore of Lake Tanganyika in western Tanzania, backed by the Mahale Mountains with the lake out front."
+    },
+    {
+     "q": "How do you get to Greystoke Mahale?",
+     "a": "The final part of the journey is by boat across Lake Tanganyika. Your advisor will arrange flights and the boat connection as part of a western Tanzania itinerary."
+    },
+    {
+     "q": "How many bandas does Greystoke Mahale have?",
+     "a": "Eight bandas built from reclaimed dhow wood, each a double with an en-suite bathroom and views of Lake Tanganyika with the mountains behind."
+    },
+    {
+     "q": "When is Greystoke Mahale open?",
+     "a": "Nomad lists the camp's season as June to mid-March."
+    },
+    {
+     "q": "What is the main experience at Greystoke Mahale?",
+     "a": "Tracking chimpanzees with guides in the Mahale Mountains, where the forest holds a completely wild-living but habituated group of chimps."
+    },
+    {
+     "q": "What else can you do at Greystoke Mahale?",
+     "a": "Forest walks and swims in forest pools, dhow cruises along the shoreline, glass-bottom kayaks and time on the beach bar and chill-out deck. Guests can also visit Katumbi village, whose school and clinic are supported by the Nomad Trust."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -14851,17 +15206,21 @@
    "quote": "Wake up on the move with the Great Migration, sip coffee as herds thunder past, and sleep beneath endless Serengeti stars, Kichakani Camp is the adventure of Africa, unplugged",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1e8dc299e_a06590a83_692ec00720e7d258c3d20e14_kichakani-camp.webp",
    "gallery": [],
-   "bestMonths": "June to October and December to March",
-   "bestMonthsNote": "June to October for dry season, river crossings, and predator action. December to March for calving season and dramatic wildlife encounters.",
-   "bestFor": [],
+   "bestMonths": "June to November and December to March",
+   "bestMonthsNote": "June to November in the north for the Mara River crossings, peaking August to October. December to March in the south for calving season.",
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "wildlife_photography"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.3333,
     "lng": 34.8333
    },
-   "airport": "Seronera Airstrip (SEU), Grumeti Airstrip (GTZ), Kogatende Airstrip (KOG)",
-   "airportDirections": "Fly to Seronera, Grumeti, or Kogatende airstrips. Transfer by game drive vehicle (30–90 min, depending on season).",
+   "airport": "Lamai Airstrip or Serengeti South Airstrip (depending on camp location)",
+   "airportDirections": "Fly by light aircraft from Arusha to Lamai (about 2 hours) or Serengeti South (about 1 hour 30 minutes), then drive about 1 hour 15 minutes. Luggage limit is 20kg (44lbs) in a soft bag.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -14873,12 +15232,11 @@
     "paras": [],
     "items": [
      "Game drives tracking the Great Migration",
-     "Walking safaris",
+     "Full-day game drives",
      "Sundowner drinks on the plains",
      "Bush breakfasts and picnics",
      "Birdwatching",
-     "Cultural visits to Maasai villages",
-     "Night sky photography"
+     "Weekly traditional boma night"
     ]
    },
    "features": {
@@ -14888,7 +15246,7 @@
      "Intimate setting with personal service",
      "Experienced guides",
      "Eco-friendly design",
-     "Unmatched access to Serengeti’s best game viewing"
+     "Uniquely placed for the Serengeti’s Great Migration"
     ]
    },
    "onlyHere": [
@@ -14900,9 +15258,43 @@
      "body": "Ideal for migration chasers, photographers, couples, and families wanting close encounters with wildebeest, big cats, and all the drama of the Serengeti."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to November in the north for the Mara River crossings (peak August to October) and December to March in the south for calving season.",
+    "how_to_get_there": "Fly by light aircraft to Lamai Airstrip or Serengeti South Airstrip, then drive about 1 hour 15 minutes to camp.",
+    "signature_experiences": "Game drives following the Great Migration river crossings and calving season, sundowners, bush breakfasts and a weekly boma night.",
+    "who_its_for": "Honeymooners, families with children aged 6 and older, and migration chasers who want a classic mobile tented camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kichakani Camp?",
+     "a": "Kichakani Camp is a mobile camp in Tanzania's Serengeti National Park that moves between two locations to follow the Great Migration. It pitches in the northern Lamai triangle from June to November and in the southern Serengeti from December to March."
+    },
+    {
+     "q": "How do I get to Kichakani Camp?",
+     "a": "By light aircraft to Lamai Airstrip (about 2 hours from Arusha Airport) or Serengeti South Airstrip (about 1 hour 30 minutes), followed by a drive of about 1 hour 15 minutes to camp. The light aircraft luggage limit is 20kg (44lbs) per person in a soft-sided bag, including hand luggage."
+    },
+    {
+     "q": "When is the best time to visit Kichakani Camp?",
+     "a": "June to November in the northern location for the Mara River crossings, which reach a peak from August to October. December to March in the southern location for the wildebeest calving season."
+    },
+    {
+     "q": "How many tents does Kichakani Camp have?",
+     "a": "Kichakani Camp has 10 classic tents for a maximum of 20 guests. Each tent is 42 sq m (452 sq ft) with a king-size bed, a private deck and an en-suite bathroom with a traditional bucket shower."
+    },
+    {
+     "q": "Is Kichakani Camp suitable for families?",
+     "a": "Yes. Children aged 6 and older are welcome, and children aged 15 and younger must share with an adult. A tent sleeps up to 2 adults and 1 child aged 6 to 15."
+    },
+    {
+     "q": "What are the signature experiences at Kichakani Camp?",
+     "a": "Twice-daily game drives focused on the Mara River crossings in the north and the calving season in the south, with full-day drives possible to track the herds. Sundowners, bush breakfasts and a weekly traditional boma night round out the stay."
+    },
+    {
+     "q": "Is Kichakani Camp good for a honeymoon?",
+     "a": "Yes. Abercrombie & Kent says romance is woven into every A&K Sanctuary, with touches such as a honeymoon cocktail at sundowners and sparkling wine in your tent on the night before departure."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -15035,8 +15427,12 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/785ab2ab0_069fe872b_69493d766e7d7ceeabb556df_the-camp-features-just.jpg"
    ],
    "bestMonths": "June to November",
-   "bestMonthsNote": "June to November is dry season, best for game viewing, walking, and predator action. December to May is green season, great for birding and dramatic scenery.",
-   "bestFor": [],
+   "bestMonthsNote": "Kokoko opens for the dry season and closes from December to May.",
+   "bestFor": [
+    "group_exclusive_use",
+    "adventure",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -15044,11 +15440,11 @@
     "lng": 34.9993
    },
    "airport": "Msembe Airstrip",
-   "airportDirections": "Fly to Msembe Airstrip, 1 hour game drive transfer to camp. Charter flights available from Dar es Salaam, Arusha, or Selous.",
+   "airportDirections": "Fly to Msembe Airstrip, 45 minute drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six classic canvas tents, each with en suite bathrooms, indoor and outdoor showers, and private verandas overlooking the bush. Main mess tent with dining, lounge, and fire pit for stargazing."
+     "Three double or twin tents, each with en suite bathroom, hand basin, outdoor bucket shower, and private veranda overlooking the dry Mwagusi Riverbed. Retractable roof for stargazing from bed. Communal lounge and dining area with campfire. Booked privately for a maximum of six guests."
     ],
     "items": []
    },
@@ -15057,11 +15453,9 @@
     "items": [
      "Game drives",
      "Walking safaris",
-     "Birding safaris",
-     "Sundowners",
      "Night drives",
-     "Photographic safaris",
-     "Cultural experiences",
+     "Birding",
+     "Riverbed dinners",
      "Star gazing"
     ]
    },
@@ -15073,22 +15467,55 @@
      "Private bush setting",
      "Expert guiding",
      "Campfire dining",
-     "Eco friendly design",
      "Immersive wilderness experiences"
     ]
    },
    "onlyHere": [
-    "Kokoko Camp is for true adventurers, couples, families, and photographers wanting an unfiltered, wild Ruaha safari. Experience solitude, extraordinary wildlife, and the personal touch of Asilia’s warm team."
+    "Kokoko Camp is for true adventurers, couples, small private groups, and families with children aged 12 and older wanting an unfiltered, wild Ruaha safari. Experience solitude, extraordinary wildlife, and the personal touch of Asilia’s warm team."
    ],
    "why": [
     {
      "title": "Off-Grid, On Safari",
-     "body": "Kokoko Camp is ideal for travelers craving a wild, remote, and authentic experience. Best for couples, solo travelers, families, and anyone who loves big cats, walking safaris, and the thrill of untamed Africa."
+     "body": "Kokoko Camp is ideal for travelers craving a wild, remote, and authentic experience. Best for couples, solo travelers, families with children aged 12 and older, and anyone who loves big cats, walking safaris, and the thrill of untamed Africa."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open June to November only, with October and most of November the peak of the dry season.",
+    "how_to_get_there": "Fly to Msembe airstrip in Ruaha National Park, then drive 45 minutes to camp.",
+    "signature_experiences": "Walking safaris, game drives and night drives with a top Asilia guide, fireside meals, riverbed dinners and stargazing from bed.",
+    "who_its_for": "Private groups of up to six guests, with children aged 12 and older, who want an exclusive-use walking safari camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kokoko Camp?",
+     "a": "Kokoko Camp is in a prime wilderness area of Ruaha National Park, Tanzania. It sits on the edge of a forest overlooking the dry Mwagusi Riverbed."
+    },
+    {
+     "q": "How do I get to Kokoko Camp?",
+     "a": "Fly to Msembe airstrip, which is a 45 minute drive from camp."
+    },
+    {
+     "q": "When is Kokoko Camp open, and when is the best time to go?",
+     "a": "Kokoko is open June to November and closed December to May, operating only in Ruaha's dry season. Asilia says October and most of November are the peak of the dry season and offer the best conditions for walking safaris and game drives."
+    },
+    {
+     "q": "How many tents does Kokoko Camp have?",
+     "a": "Just three double or twin tents, and the camp is booked privately for a maximum of six guests. Each tent has an en suite bathroom, a hand basin, an outdoor bucket shower and a retractable roof for stargazing from bed."
+    },
+    {
+     "q": "Does Kokoko Camp allow children?",
+     "a": "Children aged 12 and older are welcome. The minimum age reflects the exposed nature of the camp and its emphasis on walking, in line with park rules for walking safaris."
+    },
+    {
+     "q": "What are the signature experiences at Kokoko Camp?",
+     "a": "Walking safaris, game drives and night drives along the Mwagusi River, hosted by one of Asilia's top guides with a private vehicle. Meals are cooked over an open fire, with secluded dinners in the riverbed."
+    },
+    {
+     "q": "Who is Kokoko Camp best for?",
+     "a": "Small private groups of friends or family who want an exclusive-use camp and an authentic, walking-focused Ruaha safari."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -17154,7 +17581,7 @@
   },
   {
    "slug": "manyara-tree-lodge-by-and-beyond",
-   "name": "Lake Manyara Tree Lodge By & Beyond",
+   "name": "andBeyond Lake Manyara Tree Lodge",
    "ledgerId": "STY-2026-000143",
    "country": "Tanzania",
    "countrySlug": "tanzania",
@@ -17177,16 +17604,20 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e2db9c073_65e9936e0_68fa237a926f0e28629264b2_Tanzania-Lake-Manyara-Tree-Lodge-Sleep_20Under_20the_20."
    ],
    "bestMonths": "June to October",
-   "bestMonthsNote": "The best time to visit is during the dry season from June to October for optimal wildlife viewing, accessible forest trails, clear skies, and outstanding safari experiences.",
-   "bestFor": [],
+   "bestMonthsNote": "June to October is the dry season andBeyond recommends for safaris; November to March is great for birdwatching.",
+   "bestFor": [
+    "couples",
+    "family",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -3.2945,
     "lng": 35.83
    },
-   "airport": "Arusha Airport (ARK) and Lake Manyara Airstrip (LKY)",
-   "airportDirections": "From Arusha Airport, drive about two and a half to three hours to reach Lake Manyara Tree Lodge; from Lake Manyara Airstrip, it’s a 30 to 60 minute drive with transfers arranged by the lodge. Arusha is the best choice for international travelers due to more flight options.",
+   "airport": "Lake Manyara Airstrip (via Arusha or Dar es Salaam)",
+   "airportDirections": "Twice daily flights from Arusha Airport to Lake Manyara Airstrip, then a scenic 3.5 hour drive through the national park with game viewing en route. Coastal Air also flies daily from Dar es Salaam.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -17196,13 +17627,13 @@
    },
    "experiences": {
     "paras": [
-     "Enjoy twice-daily game drives, night safaris, guided walks in the forest, cycling adventures in the local village, treetop boardwalks, and rejuvenating spa treatments in the wild."
+     "Enjoy game viewing across the park's soda lake, forest and floodplains, sightings of tree-climbing lions and large elephant herds, birding among more than 400 species, sunrise and sunset over the lake, and healing therapies at the lodge."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "The lodge features stilted suites set above the mahogany forest, private decks with immersive views, luxurious bathrooms with freestanding tubs and outdoor showers, exclusive access as the only lodge within the national park, sustainable architecture, and attentive butler service."
+     "The lodge features stilted suites set above the mahogany forest, private decks with immersive views, luxurious bathrooms with freestanding tubs and outdoor showers, exclusive access as the only permanent lodge within the national park, sustainable architecture, and attentive butler service."
     ],
     "items": []
    },
@@ -17215,9 +17646,39 @@
      "body": "Lake Manyara Tree Lodge combines luxurious seclusion with unmatched biodiversity, ideal for couples, families, solo explorers, and travelers who value community impact and sustainability. This is the only permanent lodge within the park, ensuring privacy, wildlife right at your door, and intimate safari experiences tailored for those who want more than a typical vacation."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "June to October is andBeyond's recommended dry season for safaris, with November to March best for birdwatching.",
+    "how_to_get_there": "Fly from Arusha to Lake Manyara Airstrip, then drive about three and a half hours through the national park with game viewing on the way.",
+    "signature_experiences": "Treehouse living above the forest floor, tree-climbing lions and elephant herds, and sunrise and sunset over the soda lake from the park's only permanent lodge.",
+    "who_its_for": "Couples drawn to intimate, romantic treehouse suites and families in the two-room Family Treehouse Suite."
+   },
+   "faqs": [
+    {
+     "q": "Where is &Beyond Lake Manyara Tree Lodge?",
+     "a": "Inside Lake Manyara National Park, set in the upper branches of an ancient mahogany grove below the Rift Valley escarpment. andBeyond describes it as the only permanent lodge within the park."
+    },
+    {
+     "q": "How do you get to Lake Manyara Tree Lodge?",
+     "a": "Scheduled flights run twice daily from Arusha Airport to Lake Manyara Airstrip, followed by a scenic three and a half hour drive through the national park with game viewing en route. Coastal Air also flies daily from Dar es Salaam to Lake Manyara Airstrip."
+    },
+    {
+     "q": "How many rooms does Lake Manyara Tree Lodge have?",
+     "a": "Ten stilted treehouse suites: nine Treehouse Suites and one Family Treehouse Suite. Each has a deck suspended above the forest floor, a freestanding bath with a forest view and an outdoor shower."
+    },
+    {
+     "q": "Is Lake Manyara Tree Lodge suitable for families?",
+     "a": "Yes. The Family Treehouse Suite has two en-suite rooms linked by a foyer for two adults and two children (three children on request), and the Treehouse Suites offer a triple bed option for children 16 and younger."
+    },
+    {
+     "q": "What wildlife is Lake Manyara known for?",
+     "a": "Tree-climbing lions, large elephant herds and more than 400 bird species. The park's habitats run from soda lake to groundwater forest and grassy floodplains."
+    },
+    {
+     "q": "When is the best time to visit Lake Manyara Tree Lodge?",
+     "a": "andBeyond's Tanzania advice names June to October, the dry season, as ideal for safaris. November to March is highlighted as a great time for birdwatching."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -20410,9 +20871,16 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/94fe828a3_3486f33ba_69c121c566fd488155f8a22f_Zanzibar-Mnemba-Island-beach-banda_20_6__20_1_.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/12215ab75_563a972c4_69c12350b7c8d4aff2ab1a50_Zanzibar_20Mnemba_20Island.jpg"
    ],
-   "bestMonths": "June to February",
-   "bestMonthsNote": "June to February brings dry, sunny days and calm seas, perfect for diving, snorkeling, and beach relaxation. March to May is warm and green, ideal for privacy and turtle nesting.",
-   "bestFor": [],
+   "bestMonths": "November to March",
+   "bestMonthsNote": "andBeyond highlights November to March for Zanzibar's beaches, with flat seas in January.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "solo",
+    "family",
+    "wellness",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -20420,32 +20888,32 @@
     "lng": 39.3938
    },
    "airport": "Zanzibar International Airport",
-   "airportDirections": "Fly to Zanzibar, road transfer of 1.5 hours to the northeast coast, then 20 minute boat ride to Mnemba Island.",
+   "airportDirections": "Drive 90 minutes from Zanzibar Airport or Stone Town to the departure point, then take a 10 to 15 minute boat ride to the island. A helicopter option to Matemwe is also available.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Twelve secluded beach bandas, each with private veranda, direct beach access, and open air ensuite bathroom. Exclusive island experience with butler service and ocean views."
+     "Twelve open-air beach bandas, including one Family Banda, each with a private beach lounge, day bed and al fresco shower. Exclusive island experience with personal butler service and ocean views."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkeling and scuba diving the atoll",
-     "Sea kayaking and paddle boarding",
-     "Dolphin and turtle watching",
-     "Private dhow cruises",
+     "Snorkeling and scuba diving the surrounding reefs",
+     "Glass-bottom sea kayaking and paddle boarding",
+     "Green turtle nesting",
+     "Sunset dhow cruises",
      "Yoga and wellness",
-     "Island picnics and sunset beach dinners"
+     "Sand flat picnics"
     ]
    },
    "features": {
     "paras": [],
     "items": [
      "Private island setting with only 12 bandas",
-     "World class reef right offshore",
-     "Gourmet dining and fresh seafood",
-     "Beach picnics and in-room massages",
+     "Reef snorkelling straight from the shore",
+     "Fresh island dining and sushi under the stars",
+     "Sand flat picnics and wellness treatments",
      "Turtle nesting and marine conservation programs"
     ]
    },
@@ -20458,9 +20926,43 @@
      "body": "Mnemba Island by &Beyond delivers a one of a kind private island experience with stunning beaches, vibrant reefs, and world class hospitality. Best for honeymooners, couples, families, and anyone seeking tranquility, exclusivity, and adventure."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "November to March is the time andBeyond highlights for Zanzibar's beaches, with flat seas in January.",
+    "how_to_get_there": "Drive 90 minutes from Zanzibar Airport or Stone Town, then take a 10 to 15 minute boat ride to the island, with return transfers included.",
+    "signature_experiences": "House Reef snorkelling and diving, glass-bottom sea kayaking, sunset dhow cruises and green turtle nesting on a private island.",
+    "who_its_for": "Honeymooners, couples and solo travellers, and families with children aged eight and above in the Family Banda."
+   },
+   "faqs": [
+    {
+     "q": "Where is &Beyond Mnemba Island?",
+     "a": "Off the north-eastern coast of Zanzibar. It is a private island about 1.5 km (less than a mile) across, operated by andBeyond under a long-term lease, with no public access."
+    },
+    {
+     "q": "How do you get to Mnemba Island?",
+     "a": "A 90-minute drive from Zanzibar Airport or Stone Town to the departure point, then a 10 to 15 minute boat ride onto the beach. There are no jetties, so guests wade through shallow water, and a private helicopter option to the Matemwe landing site is also available."
+    },
+    {
+     "q": "How many bandas are on Mnemba Island?",
+     "a": "Twelve open-air thatched Bandas, including one Family Banda. Each sits close to the sea with its own beach lounge, day bed and outdoor shower."
+    },
+    {
+     "q": "Is Mnemba Island child friendly?",
+     "a": "Yes, though andBeyond recommends it for children aged eight and above. The island hosts up to two children under 12 at any one time, and the Family Banda sleeps two adults and two children."
+    },
+    {
+     "q": "Is Mnemba Island good for a honeymoon?",
+     "a": "Yes. andBeyond calls it an exclusive, barefoot luxury destination that is idyllic for honeymoons and intimate celebrations."
+    },
+    {
+     "q": "What activities are included at Mnemba Island?",
+     "a": "Snorkelling, scuba diving (two dives a day for PADI certified divers), sea kayaking, stand-up paddle boarding, catch-and-release fishing, a sundowner dhow cruise and daily yoga are included, subject to availability. Guests can also follow green turtle nesting, which the conservation team monitors daily."
+    },
+    {
+     "q": "When is the best time to visit Mnemba Island?",
+     "a": "andBeyond's Tanzania advice highlights November to March as a great time for Zanzibar's beaches. In January it notes flat seas and perfect beach conditions."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21330,9 +21832,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f2746863a_c7762f3c5_68c42a05fdeef10cfcf99377_Namiri-Plains-Bathroom.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dd8f1a7b5_14ce85337_68c42a05319d20427d26a6f6_Namiri-Plains-Pool-private-dining.jpg"
    ],
-   "bestMonths": "June to October",
+   "bestMonths": "July to October",
    "bestMonthsNote": "June to October for prime wildlife, big cats, and dry weather. November to March brings green landscapes, migratory birds, and calving season drama.",
-   "bestFor": [],
+   "bestFor": [
+    "wildlife_photography",
+    "family",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -21340,11 +21846,11 @@
     "lng": 35.1001
    },
    "airport": "Seronera Airstrip",
-   "airportDirections": "Fly to Seronera Airstrip, 60 to 90 minute road transfer to camp. Charter flights available from Arusha or other parks.",
+   "airportDirections": "Fly to Seronera Airstrip, 2 hour drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Ten contemporary suites, each with en suite bathroom, indoor and outdoor showers, and private deck. Main lodge with pool, library, bar, spa, and fire pit. One family suite available."
+     "Eleven tented suites, including one family suite, each with en suite bathroom, outdoor standalone resin bathtub, sliding doors, and expanded viewing deck. Main area with pool, library, bar, spa, and information centre. Two Retreats also available."
     ],
     "items": []
    },
@@ -21354,11 +21860,9 @@
      "Game drives",
      "Walking safaris",
      "Cheetah and lion tracking",
-     "Birding",
-     "Photographic safaris",
-     "Bush breakfasts",
-     "Sundowners",
-     "Stargazing",
+     "Photographic safaris in specialised vehicles",
+     "Full day drives to the southern Serengeti plains",
+     "Packed meals on the go",
      "Wellness and spa"
     ]
    },
@@ -21369,7 +21873,7 @@
      "Sleek, modern suites",
      "Pool and spa",
      "Expert guiding",
-     "Intimate and eco friendly",
+     "Secluded and solar powered",
      "Walking safaris and exclusive game viewing"
     ]
    },
@@ -21382,9 +21886,43 @@
      "body": "Namiri Plains is perfect for those who want front row seats to cheetah and lion action, high design, and wild serenity. Best for couples, solo travelers, families, photographers, and nature fans."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "July to October is the optimal dry season, with outstanding and quieter game viewing from November to June.",
+    "how_to_get_there": "Fly to Seronera airstrip, then drive about 2 hours to camp in the eastern Serengeti.",
+    "signature_experiences": "Game drives in big cat country for lion, cheetah and leopard, specialised photographic vehicles, the pool and the spa.",
+    "who_its_for": "Big cat enthusiasts and photographers, plus families with children over five who want a secluded, design-led Serengeti camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Namiri Plains?",
+     "a": "Namiri Plains is in the remote grasslands of the eastern Serengeti in Tanzania, on the Ngare Nanyuki River. Asilia notes it was the first safari camp in the area."
+    },
+    {
+     "q": "How do I get to Namiri Plains?",
+     "a": "Fly to Seronera airstrip. The camp is a 2 hour drive away."
+    },
+    {
+     "q": "When is the best time to visit Namiri Plains?",
+     "a": "July to October, the dry season, is the optimal time for wildlife but can be busy. Game viewing remains outstanding from November to June with fewer visitors, and the migration herds usually pass the area in late October or early November."
+    },
+    {
+     "q": "How many suites does Namiri Plains have?",
+     "a": "There are 11 tented suites, including a family suite, plus two Retreats. Each suite has sliding doors, an expanded viewing deck and an outdoor standalone resin bathtub."
+    },
+    {
+     "q": "Does Namiri Plains accept children?",
+     "a": "Yes. Families with children over 5 years old are welcome, with a specially designed family tent and two Retreats."
+    },
+    {
+     "q": "What wildlife is Namiri Plains known for?",
+     "a": "Big cats. Lion and cheetah are frequently seen, with leopard, caracal and serval often making an appearance, alongside abundant plains game."
+    },
+    {
+     "q": "What else is there to do at Namiri Plains?",
+     "a": "Dawn to dusk game drives, specialised photographic safaris in custom-designed vehicles, a swimming pool, a library and massages at the Asilia spa."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21588,7 +22126,7 @@
   },
   {
    "slug": "nayara-alto-atacama",
-   "name": "Nayara Alto \n Atacama",
+   "name": "Nayara Alto Atacama",
    "ledgerId": "STY-2026-000180",
    "country": "Chile & Easter Island",
    "countrySlug": "chile",
@@ -21605,7 +22143,12 @@
    ],
    "bestMonths": "March – May & September – November",
    "bestMonthsNote": "These months offer stable desert conditions, comfortable daytime temperatures, and some of the clearest night skies for astronomy experiences.",
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "adventure",
+    "luxury",
+    "solo"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -21647,9 +22190,31 @@
     "Only here can you wake up in a valley carved by time, spend your day crossing Mars-like terrain, and return to candle-lit silence beneath the Milky Way."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "March to May and September to November: clear skies, mild days and cold, dark nights for the stars. The desert is dry all year; December to February is warmest and busiest.",
+    "how_to_get_there": "Fly Santiago to Calama, El Loa Airport (CJC), about 2 hours, then around 1½ hours by road to the hotel outside San Pedro de Atacama. The house arranges the transfer.",
+    "signature_experiences": "Stargazing from the hotel's own observatory under some of the clearest skies on Earth; the salt mountains and the salt lake; the altiplano lagoons and geyser fields on guided excursions; the gardens and villas finished by local artisans; silence.",
+    "who_its_for": "Couples after remote luxury, adventure travellers, wellness-minded guests, and anyone who comes for the night sky."
+   },
+   "faqs": [
+    {
+     "q": "When is the best time to visit Nayara Alto Atacama?",
+     "a": "March to May and September to November, for mild days, cold clear nights and the best stargazing. The Atacama is dry all year; December to February is warmest and busiest."
+    },
+    {
+     "q": "How do you get to Nayara Alto Atacama?",
+     "a": "Fly from Santiago to Calama (CJC), about two hours, then about an hour and a half by road to the hotel on the edge of San Pedro de Atacama. The house arranges the transfer."
+    },
+    {
+     "q": "How big is Nayara Alto Atacama?",
+     "a": "A 42-room hotel set into a valley of salt mountains outside San Pedro de Atacama, with gardens, villas and an observatory, run by Nayara Resorts since 2020."
+    },
+    {
+     "q": "Can you combine the Atacama with Easter Island or Patagonia?",
+     "a": "Yes. Every route runs through Santiago, so the Atacama pairs with Rapa Nui or with Patagonia. Allow around two weeks for two of the three."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21659,8 +22224,20 @@
      "PATH-03"
     ],
     "setting": "atacama",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "stargazing",
+     "desert",
+     "silence",
+     "altitude",
+     "salt_flats",
+     "geology"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "solo",
+     "photographers"
+    ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
@@ -21690,7 +22267,11 @@
    ],
    "bestMonths": "December — April",
    "bestMonthsNote": "The Caribbean dry season offers calm waters, ideal snorkeling conditions, clearer skies, warm tropical temperatures, and excellent opportunities for island exploration, marine adventures, and overwater relaxation.",
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "solo"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -21737,9 +22318,27 @@
     "Nayara Bocas del Toro delivers one of the Caribbean’s most immersive luxury island experiences. Hidden across a private island within Panama’s Bocas del Toro archipelago, the property combines overwater living, marine adventure, tropical relaxation, and sustainability into an intimate escape designed entirely around slow island travel."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to April, the drier Caribbean season; the archipelago is warm all year, with heavier showers from May and in November.",
+    "how_to_get_there": "Fly to Bocas del Toro, Isla Colón (BOC), on a domestic flight from Panama City, then a short boat transfer to the resort's private island. The house arranges the boat.",
+    "signature_experiences": "A private overwater villa on the resort's own island in the Bocas del Toro archipelago; the Caribbean straight off the deck; snorkelling and boat days through the islands; wellness built into the stay.",
+    "who_its_for": "Couples and honeymooners who want an overwater villa and a private island to themselves; wellness and slow-travel guests; snorkellers and marine-wildlife enthusiasts; solo travellers. Adults only."
+   },
+   "faqs": [
+    {
+     "q": "How do you get to Nayara Bocas del Toro?",
+     "a": "Fly from Panama City to Bocas del Toro's Isla Colón airport (BOC), then take the resort's boat to its private island. The house arranges the transfer."
+    },
+    {
+     "q": "When is the best time to visit Nayara Bocas del Toro?",
+     "a": "December to April is the drier season. The archipelago is warm all year, with heavier showers from May and in November."
+    },
+    {
+     "q": "Is Nayara Bocas del Toro adults only?",
+     "a": "Yes. The resort is an adults-only overwater sanctuary on a private island, designed around privacy and slow island travel."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21747,8 +22346,19 @@
     "primary": "PATH-02",
     "secondary": [],
     "setting": "bocas_del_toro",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "overwater",
+     "private_island",
+     "marine_life",
+     "snorkelling",
+     "wellness",
+     "privacy"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "solo"
+    ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
@@ -21760,7 +22370,7 @@
   },
   {
    "slug": "nayara-gardens",
-   "name": "Nayara Gardens\nArenal Rainforest Hideaway",
+   "name": "Nayara Gardens",
    "ledgerId": "STY-2026-000181",
    "country": "Costa Rica",
    "countrySlug": "costa-rica",
@@ -21780,7 +22390,8 @@
    "bestMonthsNote": "Costa Rica’s dry season delivers ideal weather for volcano exploration, wildlife encounters, rainforest hiking, outdoor wellness experiences, and enjoying clear views of Arenal Volcano with lower rainfall and comfortable tropical conditions.",
    "bestFor": [
     "honeymoon",
-    "family"
+    "family",
+    "luxury"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -21828,9 +22439,35 @@
     "Nayara Gardens offers one of Costa Rica’s most immersive luxury rainforest experiences. Hidden within lush tropical gardens beneath Arenal Volcano, every stay blends wildlife, wellness, adventure, and deeply personalized hospitality into a peaceful sanctuary designed for meaningful connection with nature."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to April, the dry season, for the clearest views of Arenal Volcano; the green months bring heavier afternoon rain and a quieter resort.",
+    "how_to_get_there": "San José (SJO) is about 123 km and 2½ to 3 hours by road; Liberia (LIR) about 134 km and 3 hours. The house arranges the transfer.",
+    "signature_experiences": "A rainforest villa with its own plunge pool facing Arenal Volcano; resident sloths in the gardens; La Terraza del Arenal, Asia Luna and the Nostalgia Wine Bar; the spa's outdoor treatment areas; the footbridges to Nayara Springs and Nayara Tented Camp.",
+    "who_its_for": "Couples and honeymooners, families, wellness and spa travellers, and anyone who wants Arenal's rainforest with a plunge pool outside the door."
+   },
+   "faqs": [
+    {
+     "q": "What rooms does Nayara Gardens have?",
+     "a": "Freestanding bungalows across about 15 acres of gardens and rainforest: 29 Arenal Pool Casitas of 92 m² and 21 Rainforest Pool Villas of 105 m², each with a plunge pool on the terrace, an outdoor shower and private gardens."
+    },
+    {
+     "q": "When is the best time to visit Nayara Gardens and Arenal?",
+     "a": "December to April is the dry season, with the best chance of a clear volcano. The resort is open all year; the green season is wetter in the afternoons and quieter."
+    },
+    {
+     "q": "How far is Nayara Gardens from the airport?",
+     "a": "About 2½ to 3 hours by road from San José (SJO) and about 3 hours from Liberia (LIR). Transfers are arranged by the house."
+    },
+    {
+     "q": "Are there sloths at Nayara Gardens?",
+     "a": "Yes. Sloths live in the resort's gardens, and Nayara has planted more than a thousand Cecropia trees, the sloths' main food source, to keep them there."
+    },
+    {
+     "q": "What is the difference between Nayara Gardens, Nayara Springs and Nayara Tented Camp?",
+     "a": "Three sister properties on one rainforest campus below Arenal, linked by footbridges. Gardens is the original resort for couples and families; Springs is the adults-only villa retreat; Tented Camp sits on the clifftop above the canopy with hot-spring-fed plunge pools."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21840,8 +22477,20 @@
      "PATH-05"
     ],
     "setting": "arenal",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "rainforest",
+     "volcano",
+     "wildlife",
+     "sloths",
+     "wellness",
+     "plunge_pool"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "families",
+     "first_time_costa_rica"
+    ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
@@ -21853,7 +22502,7 @@
   },
   {
    "slug": "nayara-hangaroa",
-   "name": "Nayara Hangaroa\nRapa Nui",
+   "name": "Nayara Hangaroa",
    "ledgerId": "STY-2026-000182",
    "country": "Chile & Easter Island",
    "countrySlug": "chile",
@@ -21870,7 +22519,11 @@
    ],
    "bestMonths": "October - March",
    "bestMonthsNote": "These months provide the warmest temperatures, calmer ocean conditions, vibrant cultural activity, and ideal weather for exploring archaeological sites, coastal landscapes, and Pacific sunsets across Rapa Nui.",
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "adventure",
+    "solo"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -21916,10 +22569,53 @@
    "onlyHere": [
     "Nayara Hangaroa offers one of the world’s rarest luxury experiences , staying on the remote island of Rapa Nui surrounded by sacred history, volcanic cliffs, and the endless Pacific Ocean. Here, luxury feels deeply connected to culture, ancestry, and the rhythms of island life."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "Place",
+     "body": "Rapa Nui is about 3,700 km out in the Pacific, one flight from Santiago and nothing else for days of sailing in any direction. Nayara Hangaroa sits on the ocean a few minutes from the island's one town, in stone buildings roofed with the thick mauku grass the Rapanui used for shelter, with terraces that look straight at the Pacific. It is the island's address for seeing the quarry at Rano Raraku, the platforms, Orongo on the crater rim and the stars, and still being back by the water for sunset."
+    },
+    {
+     "title": "People",
+     "body": "Nayara Hangaroa is part of Nayara Resorts, the Costa Rican house that took on the former Hangaroa Eco Village in 2020. The house has not yet confirmed a named host; the island's Rapanui guides are the people who make the days here."
+    },
+    {
+     "title": "Impact",
+     "body": "Not yet documented by the house. Nothing is claimed until the property states it."
+    },
+    {
+     "title": "James' note",
+     "body": "I haven't stood on Rapa Nui yet; it's on my own list for the reason it's on this one. An island that far out, with a culture that is still spoken and danced rather than fenced off, is the kind of place you give five nights and don't try to rush. Nayara is where I'd put the bags down."
+    }
+   ],
+   "facts": {
+    "best_months": "October to March, when the island is warmest and the sea calmest; January to March is the dry season and February brings the Tapati festival.",
+    "how_to_get_there": "Fly Santiago to Mataveri (IPC), about 5½ hours, the only way in. The hotel is around ten minutes from the airport by road and collects you.",
+    "signature_experiences": "Rano Raraku, where the moai were carved; Ahu Tongariki's fifteen statues at first light; Orongo on the rim of Rano Kau; a walk up Terevaka; an afternoon at Anakena; the southern night sky from the terrace.",
+    "who_its_for": "Couples and honeymooners after distance and quiet, solo travellers, walkers, and anyone who wants the archaeology with the living Rapanui culture around it."
+   },
+   "faqs": [
+    {
+     "q": "When is the best time to stay at Nayara Hangaroa?",
+     "a": "October to March, for the warmest weather and calmest sea; January to March is the dry season and February is the Tapati festival. The island is subtropical and warm all year, so the quieter southern winter still works."
+    },
+    {
+     "q": "How do you get to Nayara Hangaroa?",
+     "a": "By air from Santiago to Mataveri International Airport (IPC), about five and a half hours, the only route to the island. The hotel is around ten minutes from the airport and arranges the transfer."
+    },
+    {
+     "q": "How many nights should you stay on Rapa Nui?",
+     "a": "Four or five. That covers the quarry at Rano Raraku, Ahu Tongariki at dawn, Orongo and Rano Kau, a walk up Terevaka, an afternoon at Anakena and an evening of stargazing without rushing any of it."
+    },
+    {
+     "q": "Is Nayara Hangaroa near the town?",
+     "a": "Yes. It sits on the ocean a few minutes from Hanga Roa, the island's only town, close enough to walk in for the evening and still be on the water for sunset."
+    },
+    {
+     "q": "Can you combine Rapa Nui with the rest of Chile?",
+     "a": "Yes. Every route runs through Santiago, so Rapa Nui pairs with the Atacama desert in the north or Patagonia in the south. Allow around two weeks for two of the three."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -21930,8 +22626,21 @@
      "PATH-05"
     ],
     "setting": "rapa_nui",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "heritage",
+     "archaeology",
+     "island_culture",
+     "stargazing",
+     "walking",
+     "ocean",
+     "silence"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "solo",
+     "conservation_minded"
+    ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
@@ -21943,7 +22652,7 @@
   },
   {
    "slug": "nayara-tented-camp",
-   "name": "Nayara \n Tented Camp",
+   "name": "Nayara Tented Camp",
    "ledgerId": "STY-2026-000183",
    "country": "Costa Rica",
    "countrySlug": "costa-rica",
@@ -21962,7 +22671,10 @@
    "bestMonths": "December–April",
    "bestMonthsNote": "Costa Rica’s dry season offers ideal conditions for wildlife encounters, volcano exploration, rainforest hikes, wellness experiences, and enjoying panoramic views of Arenal Volcano with lower rainfall and comfortable tropical temperatures.",
    "bestFor": [
-    "honeymoon"
+    "honeymoon",
+    "family",
+    "adventure",
+    "luxury"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -22010,9 +22722,31 @@
     "Nayara Tented Camp offers a rare blend of safari-inspired adventure and refined tropical luxury within Costa Rica’s lush rainforest. Elevated above the jungle canopy with sweeping volcano views, every stay feels immersive, restorative, and deeply connected to nature."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to April, the dry season, for the clearest volcano views from the tents; the green months are wetter in the afternoons and quieter.",
+    "how_to_get_there": "San José (SJO) is about 123 km and 2½ to 3 hours by road; Liberia (LIR) about 134 km and 3 hours. The house arranges the transfer.",
+    "signature_experiences": "A tent on stilts above the canopy facing Arenal Volcano with a hot-spring-fed plunge pool; six mineral hot-spring pools; Ayla, the camp's Mediterranean restaurant, and the infinity pool; daily yoga; the footbridges down to Nayara Gardens and Nayara Springs.",
+    "who_its_for": "Couples and families who want the rainforest at canopy height, with a hot-spring plunge pool of their own; groups and three generations in the two private residences."
+   },
+   "faqs": [
+    {
+     "q": "What accommodation does Nayara Tented Camp have?",
+     "a": "29 Nayara Tents of 170 m², 6 Family Tents of 265 m², and two private residences, Casa Paloma and Casa Dana, for families and groups. Every tent has a private plunge pool fed by the hot springs."
+    },
+    {
+     "q": "Is Nayara Tented Camp good for families?",
+     "a": "Yes. The camp is designed for couples and families, with six Family Tents and two residences built for three generations or a group of friends. A few dining options, including Amor Loco and private chef dinners, are adults only."
+    },
+    {
+     "q": "When is the best time to visit Nayara Tented Camp?",
+     "a": "December to April is the dry season, with the best chance of a clear Arenal Volcano from your tent. The camp is open all year."
+    },
+    {
+     "q": "How do you get to Nayara Tented Camp?",
+     "a": "By road from San José (SJO), about 2½ to 3 hours, or from Liberia (LIR), about 3 hours. The house arranges the transfer."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -22020,8 +22754,21 @@
     "primary": "PATH-01",
     "secondary": [],
     "setting": "arenal",
-    "intentions": [],
-    "suitability": [],
+    "intentions": [
+     "rainforest",
+     "volcano",
+     "hot_springs",
+     "wildlife",
+     "wellness",
+     "plunge_pool"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon",
+     "families",
+     "families_and_generations",
+     "private_groups"
+    ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
@@ -22358,10 +23105,16 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "family"
+   ],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -1.702556,
+    "lng": 34.911806
+   },
    "airport": null,
    "airportDirections": null,
    "founderNote": null,
@@ -22392,8 +23145,38 @@
      "body": "Best for couples, honeymooners, photographers and migration seekers."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "July to October, when the wildebeest migration crossings of the Mara River are at their peak.",
+    "how_to_get_there": "Fly to Kogatende Airstrip, then a 35-minute road transfer, or a four-hour game drive from Nimali Serengeti.",
+    "signature_experiences": "Game drives to the Mara River crossings, hot-air balloon flights over the northern plains, spa treatments, bush dinners and sundowners.",
+    "who_its_for": "Honeymooners and couples, migration seekers, and families who are happy with Nimali's age guidelines for game drives and walks."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nimali Mara?",
+     "a": "Nimali Mara is in the far north of Tanzania's Serengeti, close to the Kenyan border, tucked into the kopjes near the Mara River. This is where the wildebeest migration crosses the Mara River."
+    },
+    {
+     "q": "How do I get to Nimali Mara?",
+     "a": "Fly to Kogatende Airstrip, then take a 35-minute road transfer to the lodge. By road, Nimali Mara is a four-hour game drive from its sister camp, Nimali Serengeti."
+    },
+    {
+     "q": "When is the best time to visit Nimali Mara?",
+     "a": "July to October, when the migration crossings of the Mara River reach their peak. The area is also known for its elephants and predators."
+    },
+    {
+     "q": "How many suites does Nimali Mara have?",
+     "a": "There are eight tented suites and two honeymoon suites, each with a private deck looking out over the Serengeti and a bath with a view of the plains. An infinity pool is set into the natural rock formations."
+    },
+    {
+     "q": "Can children stay at Nimali Mara?",
+     "a": "Yes, Nimali welcomes families. Children under 6 are not allowed on game drives in open vehicles, and children under 12 cannot join walking safaris or bush camping."
+    },
+    {
+     "q": "What activities does Nimali Mara offer?",
+     "a": "Morning and afternoon game drives to see the river crossings, plus spa treatments, bush dinners and sundowners. Nimali also highly recommends a hot-air balloon flight over the northern plains and the Mara River."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -22434,10 +23217,15 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family"
+   ],
    "status": null,
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -2.461944,
+    "lng": 34.717222
+   },
    "airport": null,
    "airportDirections": null,
    "founderNote": null,
@@ -22468,8 +23256,38 @@
      "body": "Best for first-time safari-goers, families and photographers."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "Year-round for game viewing, with the migration passing through from April to June and from October to December.",
+    "how_to_get_there": "Fly to Seronera Airstrip, then a 40-minute road transfer, or drive four hours from the Ngorongoro Crater main gate.",
+    "signature_experiences": "Game drives for lion, cheetah and leopard, hot-air balloon flights, spa treatments, bush lunches and dinner under the stars.",
+    "who_its_for": "Families, big cat enthusiasts and travellers wanting a central Serengeti base with strong game viewing in every season."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nimali Serengeti?",
+     "a": "Nimali Serengeti is in the heart of Tanzania's Serengeti National Park, in a new position close to Makoma Hill with uninterrupted views over kopje-dotted plains."
+    },
+    {
+     "q": "How do I get to Nimali Serengeti?",
+     "a": "Fly to Seronera Airstrip, then take a 40-minute road transfer. By road, the lodge is four hours from the Ngorongoro Crater main gate and about two hours from Naabi Hill gate; the eight-hour drive from Arusha is not recommended."
+    },
+    {
+     "q": "When is the best time to visit Nimali Serengeti?",
+     "a": "Game viewing is outstanding all year round. The lodge sits on a wildebeest migration route, with the herds moving through from April to June and from October to December."
+    },
+    {
+     "q": "How many suites does Nimali Serengeti have?",
+     "a": "There are 12 tented suites, two of them connected by a shared walkway for families. Each has a private verandah and an en-suite bathroom with a bathtub and outdoor shower."
+    },
+    {
+     "q": "Is Nimali Serengeti good for families?",
+     "a": "Yes. Two suites are linked for families, and Nimali welcomes children. Children under 6 are not allowed on game drives in open vehicles, and children under 12 cannot join walking safaris or bush camping."
+    },
+    {
+     "q": "What activities does Nimali Serengeti offer?",
+     "a": "Morning and afternoon game drives in an area known for lion, cheetah and leopard, plus spa treatments, bush lunches, sundowners and dining under the stars. Nimali also highly recommends a hot-air balloon flight."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -22808,7 +23626,10 @@
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -22855,9 +23676,39 @@
     "Built directly into the giant granite boulders of Kogakuria Kopje, Lamai feels inseparable from its surroundings. From your veranda, lions, elephants, wildebeest, and cheetahs move across the plains below. Few camps in Africa combine dramatic scenery, migration access, and authentic safari atmosphere quite like this."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "July to October for Mara River crossings, or December to May for the green season Nomad calls its favourite.",
+    "how_to_get_there": "Fly into the Serengeti to a bush airstrip and transfer to camp, or arrive on a guided driving safari through Northern Tanzania.",
+    "signature_experiences": "Mara River migration crossings, walking safaris from camp and open-fronted rooms set among the boulders of Kogakuria Kopje.",
+    "who_its_for": "Families, with dedicated kids' rooms, and groups of friends or large families who want Lamai Private to themselves."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nomad's Lamai Serengeti?",
+     "a": "On Kogakuria Kopje in the northern Serengeti, a rocky outcrop with views for miles. The Mara River is just down the track."
+    },
+    {
+     "q": "When is the best time to visit Lamai?",
+     "a": "July to October brings the Mara River crossings, when large herds of wildebeest and zebra cross the river. Nomad calls the December to May green season its favourite time of year, and lion, leopard and buffalo are present all year."
+    },
+    {
+     "q": "How do you get to Lamai?",
+     "a": "Fly into the Serengeti and land at a bush airstrip, then transfer to camp. Lamai can also be reached on a guided driving safari through Northern Tanzania."
+    },
+    {
+     "q": "Is Lamai good for families?",
+     "a": "Yes. Lamai's kids' rooms have two single beds and an interconnecting bathroom, and Nomad describes Lamai Private as small, intimate and well suited to families."
+    },
+    {
+     "q": "What is Lamai Private?",
+     "a": "Lamai's little sister, a private camp for exclusive use by groups of friends or large families. It has four open-fronted rooms with Serengeti views, its own lounge, a private pool and dedicated staff."
+    },
+    {
+     "q": "What activities are offered at Lamai?",
+     "a": "Game drives, including full-day drives, and bush walks out from the lodge when the grass is short, which Nomad notes is a rare allowance inside a national park. Evenings bring sundowners and dinner under the stars, and there is a pool overlooking the Serengeti."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23710,8 +24561,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3e71cc5eb_b501b94cc_694a588aacb51a0205be498e_Asilia_Camp-Lodges_Olivers_Camp-Carousel3.jpg"
    ],
    "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is dry season with huge elephant herds and prime walking safaris. November to May is green, with abundant birds and fewer visitors.",
-   "bestFor": [],
+   "bestMonthsNote": "Best in the dry season; the camp closes from mid-March to mid-May.",
+   "bestFor": [
+    "adventure",
+    "family",
+    "honeymoon",
+    "wildlife_photography"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -23719,11 +24575,11 @@
     "lng": 36.0757
    },
    "airport": "Kuro Airstrip",
-   "airportDirections": "Fly to Kuro Airstrip, 30 minute game drive transfer to camp. Charter flights available from Arusha or Serengeti.",
+   "airportDirections": "Fly to Kuro Airstrip, about 1 hour drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Ten canvas tents with en suite bathrooms, indoor and outdoor showers, and private decks with sweeping bush views. Main mess tent with lounge, library, and campfire for stargazing. Family tent available."
+     "Fifteen tents in two wings of five and ten, including two family tents and a honeymoon tent, each with en suite bathroom, indoor and outdoor showers, and private deck with sweeping bush views. Each wing has a lounge and dining room overlooking the Tarangire River floodplains, with a cocktail bar and pool deck between them. Evening campfire."
     ],
     "items": []
    },
@@ -23736,8 +24592,7 @@
      "Birding",
      "Photographic safaris",
      "Sundowners",
-     "Hot air ballooning",
-     "Cultural visits"
+     "Hot air ballooning"
     ]
    },
    "features": {
@@ -23748,22 +24603,51 @@
      "Private bush setting",
      "Expert guiding",
      "Campfire dining",
-     "Eco friendly and low impact",
      "Intimate and immersive"
     ]
    },
    "onlyHere": [
-    "Oliver’s Camp is for real adventurers, couples, families, and solo travelers looking for wild landscapes, elephants, and Africa’s best walking safaris in a secluded, untamed park."
+    "Oliver’s Camp is for real adventurers, couples, families, and solo travelers looking for wild landscapes, elephants, and exciting walking safaris in a secluded, untamed corner of Tarangire."
    ],
    "why": [
     {
      "title": "Walk on the Wild Side",
-     "body": "Oliver’s is perfect for travelers wanting classic safari, walking adventures, and Tarangire’s legendary elephants. Best for couples, families, solo explorers, and anyone who loves nature up close."
+     "body": "Oliver’s is perfect for travelers wanting classic safari, walking adventures, and Tarangire’s large elephant herds. Best for couples, families, solo explorers, and anyone who loves nature up close."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open mid-May to mid-March, with September and October best for wildlife with fewer visitors and November to February for photography and birding.",
+    "how_to_get_there": "Fly to Kuro airstrip in Tarangire, then drive about an hour to camp.",
+    "signature_experiences": "Walking safaris, night game drives, sunrise balloon safaris and game viewing around the Silale Swamp's elephant and buffalo herds.",
+    "who_its_for": "Travellers wanting walking safaris away from day-trip traffic, including honeymooners and families with children over five."
+   },
+   "faqs": [
+    {
+     "q": "Where is Oliver's Camp?",
+     "a": "Oliver's Camp is in a remote southeastern area of Tarangire National Park, Tanzania, about 3 hours south of the entrance gate. It sits close to the Silale Swamp, which Asilia calls the park's best game viewing area."
+    },
+    {
+     "q": "How do I get to Oliver's Camp?",
+     "a": "Fly to Kuro airstrip, approximately an hour's drive from camp."
+    },
+    {
+     "q": "When is Oliver's Camp open, and when should I go?",
+     "a": "The camp is open mid-May to mid-March and closes for the rains from mid-March to mid-May. Asilia recommends September and October for great wildlife with fewer visitors, and November to February for photography and birding."
+    },
+    {
+     "q": "How many tents does Oliver's Camp have?",
+     "a": "There are 15 tents in two wings of five and ten, including 2 family tents and 1 honeymoon tent. Each tent has an en suite bathroom with indoor and outdoor showers and a private deck."
+    },
+    {
+     "q": "Does Oliver's Camp allow children?",
+     "a": "Yes, children over the age of five are welcome, and there are two family tents. The minimum age for walking safaris is 12."
+    },
+    {
+     "q": "What are the signature experiences at Oliver's Camp?",
+     "a": "Walking safaris with an armed ranger, night game drives and twice daily game drives, with the option of a sunrise hot-air balloon safari over the Tarangire plains. Walking runs 1 June to 15 February, subject to weather."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -25867,8 +26751,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/7894faf4c_85cb43ce9_694a464b84d169d318ded468_view-of-asilia-rubondo-camp-tanzania-2048x1152jpg.webp"
    ],
    "bestMonths": "June to March",
-   "bestMonthsNote": "June to March is dry season for best chimpanzee tracking, fishing, and birding. April and May can be wet but are lush and quiet.",
-   "bestFor": [],
+   "bestMonthsNote": "The short rains fall from late October to December and the long rains start in March; the camp closes in April and May.",
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "family",
+    "couples"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -25876,11 +26765,11 @@
     "lng": 31.8577
    },
    "airport": "Rubondo Island Airstrip",
-   "airportDirections": "Fly to Rubondo Island Airstrip, 10 minute boat or 20 minute road transfer to camp. Charter flights available from Serengeti, Mwanza, or Arusha.",
+   "airportDirections": "Fly to Rubondo Island Airstrip, 20 minute drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight lakefront cottages with en suite bathrooms, private verandas, and open air showers. Main lodge with dining, lounge, bar, swimming pool, and fire pit by the lake. Family cottage available."
+     "Eight lakefront cottages, including a four-sleeper family cottage, each with en suite bathroom, hot running water, and private veranda with lake views. Main area with dining deck, swimming pool, and a private beach for sundowners by the lake."
     ],
     "items": []
    },
@@ -25891,12 +26780,10 @@
      "Forest walks",
      "Boating",
      "Birding safaris",
-     "Fishing",
+     "Catch-and-release fishing",
      "Game drives",
-     "Sundowners",
-     "Kayaking",
-     "Island picnics",
-     "Cultural experiences"
+     "Swamp excursions",
+     "Sundowners on the beach"
     ]
    },
    "features": {
@@ -25906,7 +26793,7 @@
      "Wild chimpanzee encounters",
      "Boating and fishing on Lake Victoria",
      "Birding paradise",
-     "Eco friendly, remote, and adventurous"
+     "Remote and adventurous"
     ]
    },
    "onlyHere": [
@@ -25918,9 +26805,43 @@
      "body": "Rubondo Island Camp is perfect for adventurers, families, couples, and anyone seeking wild chimpanzee tracking, unique lake experiences, and the magic of remote island wilderness."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open June to March, with June to October ideal, July and August best for chimpanzees and December to March best for birding.",
+    "how_to_get_there": "Fly to Rubondo airstrip on the island, then drive 20 minutes to camp.",
+    "signature_experiences": "Chimpanzee trekking, boating and catch-and-release fishing on Lake Victoria, forest walks and birding.",
+    "who_its_for": "Travellers wanting an island and forest safari with chimpanzee trekking and lake activities, including families with children over five."
+   },
+   "faqs": [
+    {
+     "q": "Where is Rubondo Island Camp?",
+     "a": "Rubondo Island Camp is in Rubondo Island National Park, in the southwest corner of Lake Victoria, Tanzania. The camp sits on a beach on the edge of the forest, overlooking the lake."
+    },
+    {
+     "q": "How do I get to Rubondo Island Camp?",
+     "a": "Fly to the airstrip on Rubondo Island, which is a 20 minute drive from camp."
+    },
+    {
+     "q": "When is Rubondo Island Camp open, and when is the best time to visit?",
+     "a": "The camp is open June to March and closed in April and May. Asilia says the cooler, drier months of June to October are ideal, July and August are best for chimpanzees, and December to March is best for birding."
+    },
+    {
+     "q": "How many rooms does Rubondo Island Camp have?",
+     "a": "There are 8 cottages, including one four-sleeper family room. Each cottage has an en suite bathroom with hot running water and a private veranda with lake views."
+    },
+    {
+     "q": "Can children stay at Rubondo Island Camp?",
+     "a": "Yes. Families with children over five are welcome and there is a family cottage, but chimpanzee trekking has a minimum age of 12."
+    },
+    {
+     "q": "What are the signature experiences at Rubondo Island Camp?",
+     "a": "Chimpanzee trekking, which requires a minimum stay of 2 nights, plus forest walks, boating safaris, catch-and-release fishing, birding and game drives. The island has over 300 bird species."
+    },
+    {
+     "q": "Who is Rubondo Island Camp best for?",
+     "a": "Travellers looking for a different kind of safari, combining wild chimpanzees, forest and Lake Victoria on a protected island."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -26988,8 +27909,15 @@
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e98aa9718_d55bc9ec1_694a962d27974cbe6aa62c99_Asilia_Camp-Lodges_Sayari_Camp-Carousel5.jpg",
    "gallery": [],
    "bestMonths": "July to October",
-   "bestMonthsNote": "July to October for river crossings, big herds, and wildlife drama. November to June is quieter with resident game, green season birding, and peaceful views.",
-   "bestFor": [],
+   "bestMonthsNote": "The camp closes in April and May.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family",
+    "group_exclusive_use",
+    "wildlife_photography",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -26997,11 +27925,11 @@
     "lng": 34.9095
    },
    "airport": "Kogatende Airstrip",
-   "airportDirections": "Fly to Kogatende Airstrip, 30 minute road transfer to camp. Charter flights available from Arusha or other parks.",
+   "airportDirections": "Fly to Kogatende Airstrip, 20 minute drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Fifteen light-filled suites, each with en suite bathroom, outdoor tub or shower, and private veranda overlooking the plains. Main lodge with pool, spa, bar, and wine cellar. Family suite available."
+     "Fifteen tented suites, including two family tents and a honeymoon tent, each with en suite bathroom, walk-in shower, free standing tub, private outdoor shower, and wraparound veranda overlooking the plains. Main area with pool, spa, and bar. Two Retreats with a dedicated chef, guide, and private vehicle for families and groups."
     ],
     "items": []
    },
@@ -27013,35 +27941,64 @@
      "Walking safaris",
      "Birding",
      "Photographic safaris",
+     "Balloon safaris",
      "Spa and wellness",
      "Sundowners",
-     "Community visits",
-     "Bush breakfasts"
+     "Picnic breakfasts"
     ]
    },
    "features": {
     "paras": [],
     "items": [
      "Spacious contemporary suites",
-     "Direct Mara River access",
+     "Closest permanent camp to the Mara River",
      "Infinity pool and spa",
-     "Gourmet dining",
-     "Eco friendly design",
+     "Three-course dinners with paired wines",
      "Prime migration and wildlife location"
     ]
    },
    "onlyHere": [
-    "Sayari is for discerning travelers, couples, families, and migration chasers seeking the perfect blend of wild drama and modern luxury in Africa’s most spectacular setting."
+    "Sayari is for discerning travelers, couples, families, and migration chasers seeking the perfect blend of wild drama and modern luxury in the northern Serengeti."
    ],
    "why": [
     {
      "title": "River, Crossing, and Comfort",
-     "body": "Sayari is ideal for those who want to see river crossings, enjoy world class guiding, and relax in luxury after wild days. Best for couples, solo explorers, families, and photographers."
+     "body": "Sayari is ideal for those who want to see river crossings, enjoy experienced guiding, and relax in luxury after wild days. Best for couples, solo explorers, families, and photographers."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "July to September for the Great Migration with crossings into October, and November to March for quiet resident wildlife; open June to March.",
+    "how_to_get_there": "Fly to Kogatende airstrip in the northern Serengeti, then drive 20 minutes to camp.",
+    "signature_experiences": "Mara River crossings, twice daily game drives, walking safaris, the rim-flow pool and spa.",
+    "who_its_for": "Migration seekers, couples and honeymooners, and families or groups who want a private Retreat."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sayari Camp?",
+     "a": "Sayari Camp is in the northern Serengeti, Tanzania. Asilia describes it as the closest permanent camp to the Mara River, giving the quickest access to the migration river crossings."
+    },
+    {
+     "q": "How do I get to Sayari Camp?",
+     "a": "Fly to Kogatende airstrip, a 20 minute drive from camp."
+    },
+    {
+     "q": "When is the best time to visit Sayari Camp?",
+     "a": "July, August and September are usually best for the Great Migration, and river crossings still occur in October. From November to March the area offers resident wildlife including black rhino, lion, leopard and cheetah, with few other guests. The camp is open June to March."
+    },
+    {
+     "q": "How many tents does Sayari Camp have?",
+     "a": "There are 15 tented suites, including 2 family tents and 1 honeymoon tent, plus two Retreats that opened in 2023. The Retreats come with a dedicated chef, guide and private safari vehicle."
+    },
+    {
+     "q": "Does Sayari Camp allow children?",
+     "a": "Yes, children aged five and older are welcome, with a family tent and two Retreats designed for families and small groups. Walking safaris have a minimum age of 12."
+    },
+    {
+     "q": "What are the signature experiences at Sayari Camp?",
+     "a": "Watching the wildebeest river crossings from July to October, twice daily game drives and walking safaris, which run 1 June to 15 January subject to weather. Between activities there is a rim-flow pool and massages."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -27344,7 +28301,11 @@
    ],
    "bestMonths": "July, August, September, October",
    "bestMonthsNote": "These months coincide with peak river-crossing season of the Great Migration, giving you the highest chance of witnessing herds crossing the Mara River, dramatic predator action, and prime safari conditions with dry weather and easy game-spotting.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "adventure"
+   ],
    "status": "founder_vetted",
    "statusDate": "2017-01-01",
    "coords": {
@@ -27386,12 +28347,46 @@
    "why": [
     {
      "title": null,
-     "body": "With just 10 elegant safari tents, the camp offers an intimate and private atmosphere. Its secluded setting makes it ideal for exclusive bookings, private groups, or those traveling with specialist safari guides."
+     "body": "With just 8 elegant safari tents and 2 family suites, the camp offers an intimate and private atmosphere. Its secluded setting makes it ideal for exclusive bookings, private groups, or those traveling with specialist safari guides."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "July to October for the Mara River crossings; the camp is open all year except April and May.",
+    "how_to_get_there": "Fly in to Lamai Airstrip, the camp's preferred airstrip in the northern Serengeti.",
+    "signature_experiences": "Mara River crossings, private open-top game drives with a guide and spotter, walking safaris and fly camping.",
+    "who_its_for": "Families, privately guided groups and exclusive-use bookings wanting front-row access to the river crossings."
+   },
+   "faqs": [
+    {
+     "q": "Where is Serian's Serengeti Lamai?",
+     "a": "In the Lamai Wedge of the northern Serengeti National Park, about a kilometre from the Mara River above Crossing Point 4. Serian says the camp sits midway among the crossing points along the river."
+    },
+    {
+     "q": "How do I get to Serengeti Lamai?",
+     "a": "Fly in to Lamai Airstrip, which Serian names as the camp's preferred airstrip. Each group then has its own 4WD vehicle with a dedicated guide and spotter."
+    },
+    {
+     "q": "When is the best time to visit Serengeti Lamai?",
+     "a": "July to October, when the river crossings take centre stage from camp. The camp is open all year except April and May, and outside crossing season the Lamai Wedge has four resident lion prides and large herds of elephant, buffalo and plains game."
+    },
+    {
+     "q": "How many tents does Serengeti Lamai have?",
+     "a": "There are 8 tents and 2 family suites, each with an en-suite bathroom, flushing toilet and plumbed shower. The camp has 24-hour electricity and no Wi-Fi."
+    },
+    {
+     "q": "Is Serengeti Lamai good for families or private groups?",
+     "a": "Yes. Serian says the camp's intimacy makes it perfect for families or privately guided groups, and it can be booked on an exclusive basis."
+    },
+    {
+     "q": "What are the signature experiences at Serengeti Lamai?",
+     "a": "Watching the wildebeest cross the Mara River, game drives in your own open-top vehicle, walking safaris and fly camping. The camp also gives access to the Lamai Wedge and Wogakuria Kopjes."
+    },
+    {
+     "q": "How long should I stay at Serengeti Lamai?",
+     "a": "Serian recommends a minimum of 4 nights to take in all that the northern Serengeti has to offer."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -28744,7 +29739,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Bush meets beach, wild meets wonder",
+   "tagline": "Riverside contemporary safari, wild meets wonder",
    "quote": "Wake to the sound of the Grumeti River, watch wildlife from your pool, and discover safari in a playful, contemporary lodge",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5ee3efdde_83502c8c3_6989eb9c4dd5b0282758a039_Singita_20Faru_20Faru_20Lodge_20-_20Exterior_20and_20Ma.",
    "gallery": [
@@ -28759,21 +29754,25 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/73f301658_ac30f1ba0_69d5f16244af2178c639d723_SingitaFaruFaruLodge_LoungeArea.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/70e5e7c42_22ef515ce_69d5f1abb99af9582ad53fc6_Singita_20Faru_20Faru_20Lodge_Suite_20_20Bathroom_202.j"
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is peak migration and dry season, best for wildlife and poolside river views. November to May is green, peaceful, and perfect for birding and families.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "conservation"
+   ],
    "status": "founder_returned",
    "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.1198,
     "lng": 34.6109
    },
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 20 to 45 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Seven suites and one two-bedroom family suite, each with panoramic windows, outdoor showers, private decks, and river views. Lodge features infinity pools, spa, interactive kitchen, library, and kids’ zone."
+     "Seven one-bedroom suites, one family suite for two adults and two children, and one two-bedroom suite with a private pool, all with floor-to-ceiling windows and outdoor decks overlooking the Grumeti River surrounds. The lodge features two swimming pools, a wellness and fitness centre, a café-style bar, and a firepit."
     ],
     "items": []
    },
@@ -28793,15 +29792,10 @@
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Riverfront suites",
-     "Infinity pools with wildlife views",
-     "Contemporary bush-meets-beach design",
-     "Interactive kitchen",
-     "Personalized service",
-     "Conservation and community impact"
-    ]
+    "paras": [
+     "Riverside setting on the Grumeti River. Two swimming pools. Contemporary, organic design with the quirky practicality of a botanist’s camp. Café-style bar and firepit. Personalized service. Conservation and community impact."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Singita Faru Faru is for travelers who love playful design, close wildlife, and a relaxed approach to luxury. Ideal for couples, families, groups, and anyone seeking a fun and creative Serengeti safari."
@@ -28812,9 +29806,43 @@
      "body": "Faru Faru blends contemporary style, riverfront relaxation, and world class wildlife. Best for families, couples, and creative spirits wanting safari with a twist."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita describes the Serengeti as a year-round destination with short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro on a direct flight, then a Singita road transfer to the lodge.",
+    "signature_experiences": "Game drives and guided walks along the Grumeti River, hot air balloon safaris, and an anti-poaching observation post visit with the Grumeti Fund.",
+    "who_its_for": "Families and travellers wanting a relaxed, contemporary riverside lodge, with children of all ages welcome and a dedicated family suite."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Faru Faru Lodge?",
+     "a": "Faru Faru sits along the Grumeti River within Singita's 350,000-acre private reserve in northern Tanzania, part of the Serengeti ecosystem. The lodge is surrounded by thickets and overlooks waterholes where wildlife gathers."
+    },
+    {
+     "q": "How do I get to Singita Faru Faru Lodge?",
+     "a": "Fly into the Singita Sasakwa airstrip in the Grumeti Reserve, where a Singita staff member meets you and drives you to the lodge. Singita notes direct flights take about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro, and private charters can be arranged."
+    },
+    {
+     "q": "How many suites does Faru Faru have?",
+     "a": "There are seven one-bedroom suites, one family suite for 2 adults and 2 children, and one two-bedroom suite for 4 adults with a private pool. The main lodge has two swimming pools."
+    },
+    {
+     "q": "Is Singita Faru Faru good for children?",
+     "a": "Yes, children of all ages are welcome, with babysitting, tailor-made family activities and the Mini Rangers Course for young explorers. Children join game drives and bush walks at the discretion of the Field Guides."
+    },
+    {
+     "q": "What is included in a stay at Faru Faru?",
+     "a": "Rates include accommodation, all meals and beverages including premium wines, twice-daily game drives in open vehicles, tennis at Sasakwa Lodge, and return road transfers from the Sasakwa airstrip. Park and conservation fees and wellness treatments are extra."
+    },
+    {
+     "q": "What activities are offered at Faru Faru?",
+     "a": "Singita lists game drives, guided safari walks, hot air balloon safaris, bird-watching, wine experiences, yoga and fitness, wellness treatments, community visits and an anti-poaching observation post visit."
+    },
+    {
+     "q": "When is the best time to visit Faru Faru?",
+     "a": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often as a quick daily downpour, and the long rains come in April and May."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -28965,21 +29993,26 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/294d693ca_5712cd254_69d36332ac0ebb0b18855a0d_Singita_20Kilima_Sala_20View_201.jpeg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b32f4a97b_fe7b34328_69d36283896ea5713ecd1fac_Singita_20Kilima_Pool_20and_20Day_20Bed.jpeg"
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is migration season and best for wildlife viewing, dry conditions, and dramatic landscapes. November to May is green, lush, and quieter for birding and relaxation.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "wellness",
+    "wine"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.0878,
     "lng": 34.4852
    },
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Nine suites and one exclusive use villa, all with panoramic Serengeti views, private pools, indoor and outdoor living, contemporary design, and personal butler service."
+     "One exclusive-use villa with five suites for up to ten guests, all with panoramic Serengeti views, an infinity pool plus private heated pools in the main and junior suites, indoor and outdoor living, contemporary design, and a dedicated butler."
     ],
     "items": []
    },
@@ -29000,11 +30033,11 @@
    "features": {
     "paras": [],
     "items": [
-     "Infinity pools with horizon views",
+     "Infinity pool overlooking the Serengeti plains",
      "Contemporary architecture and décor",
-     "Exclusive location on a private hill",
-     "Gourmet cuisine and curated wine",
-     "Wellness spa",
+     "Exclusive-use villa on Sasakwa Hill",
+     "Personal chef and well-stocked wine cellar",
+     "Wellness treatments, fitness centre, and media room",
      "Personalized service and conservation impact"
     ]
    },
@@ -29017,9 +30050,39 @@
      "body": "Singita Kilima offers a modern hilltop sanctuary with big sky views, world class wildlife, and all the comfort of a top-tier safari. Best for migration seekers, couples, families, and anyone who wants the best of the Serengeti."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita notes short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro direct, then a road transfer to the villa.",
+    "signature_experiences": "Private game drives with your own Field Guide, wine tastings from the villa cellar, and wellness treatments.",
+    "who_its_for": "Families or groups of friends of up to 10 who want a private, fully staffed villa on Sasakwa Hill."
+   },
+   "faqs": [
+    {
+     "q": "What is Singita Kilima?",
+     "a": "Singita Kilima is an exclusive-use villa for up to 10 guests in five suites, which Singita describes as perfect for families or groups of friends. It sits on Sasakwa Hill in the 350,000-acre Grumeti Reserve, northern Tanzania."
+    },
+    {
+     "q": "How do I get to Singita Kilima?",
+     "a": "Fly to the Singita Sasakwa airstrip, where staff meet you for the road transfer to the villa. Singita notes direct flights of about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro."
+    },
+    {
+     "q": "What facilities does Kilima have?",
+     "a": "An infinity pool overlooks the Serengeti plains, with private heated pools in the main and junior suites. There is also a media room, fitness centre, well-stocked wine cellar, bar-deli, and indoor and outdoor fireplaces."
+    },
+    {
+     "q": "Is Singita Kilima suitable for children?",
+     "a": "Yes, children of all ages are welcome, with childminding and activity booklets. Children join game drives and bush walks at the discretion of the Field Guides."
+    },
+    {
+     "q": "What is included at Singita Kilima?",
+     "a": "Rates include all meals and beverages, dedicated villa staff including a Field Guide, chef, butler and housekeeping team, private game drives, WiFi and return transfers from the Sasakwa airstrip."
+    },
+    {
+     "q": "Is Kilima on the migration route?",
+     "a": "Singita says Grumeti is known for exceptional game viewing and is part of the ancient footpaths of the annual wildebeest migration. The Serengeti is described as a year-round destination."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29500,21 +30563,26 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f2c9af556_a7cc46b47_69d35ac4e104a710b62f7dc0_Singita_20Mara_20River_20Tented_20Camp_Tent_20Deck.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/50e7e85ef_db2c87ef6_69d356dcafbcdfc701d84253_Singita_20Mara_20River_20Tented_20Camp_Pool.jpg"
    ],
-   "bestMonths": "July to October",
-   "bestMonthsNote": "July to October is the peak for migration crossings, river action, and dramatic wildlife. November to June is quieter and lush, with fewer crowds and fantastic resident wildlife.",
-   "bestFor": [],
+   "bestMonths": "June to mid-January",
+   "bestMonthsNote": "The camp is open all year except 15 January to 31 May. In season, wildebeest cross the Mara River close to camp, and the camp's location gives spectacular views of the crossings.",
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "food",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.569,
     "lng": 34.7892
    },
-   "airport": "Kogatende Airstrip",
-   "airportDirections": "Fly to Kogatende Airstrip, 30 minute road transfer to camp. Charter flights available from Arusha or other parks.",
+   "airport": "Serengeti Lamai Airstrip",
+   "airportDirections": "Fly to the Serengeti Lamai airstrip, about 1 hour 30 minutes from Arusha or 1 hour 45 minutes from Kilimanjaro via Sasakwa airstrip. A Singita staff member meets you for the 45-minute drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Four riverfront tents and two family tents, all with en suite bathrooms, outdoor showers, contemporary safari style, and Mara River views. Main mess tent, dining, lounge, fire pit."
+     "Four one-bedroom tents and two family tents, all en suite, with private bathtubs overlooking the Mara River and contemporary safari style. Main camp with pool sala, plunge pool, bar-deli, outdoor dining, and fire pit."
     ],
     "items": []
    },
@@ -29522,13 +30590,11 @@
     "paras": [],
     "items": [
      "Game drives",
-     "Guided bush walks",
      "Witness the Great Migration crossings",
-     "Birding",
-     "Sundowners",
+     "Bird-watching",
      "Hot air balloon safaris",
-     "Community visits",
-     "Photography"
+     "Wine experiences",
+     "Wellness, yoga, and fitness"
     ]
    },
    "features": {
@@ -29548,12 +30614,46 @@
    "why": [
     {
      "title": "Wild River, Wild Life",
-     "body": "Singita Mara River Tented Camp offers authentic safari, the best migration views, and comfort by the Mara. Best for migration chasers, nature lovers, and those wanting small camp exclusivity."
+     "body": "Singita Mara River Tented Camp offers authentic safari, spectacular views of the migration crossings, and comfort by the Mara. Best for migration chasers, nature lovers, and those wanting small camp exclusivity."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 June to 14 January (closed 15 January to 31 May), with wildebeest river crossings close to camp in migration season.",
+    "how_to_get_there": "Fly to the Serengeti Lamai airstrip, then a 45-minute Singita road transfer to camp.",
+    "signature_experiences": "Watching Great Migration river crossings, game drives in the Lamai Triangle, and hot air balloon safaris.",
+    "who_its_for": "Curious, intrepid explorers who want a small, off-grid tented camp near the Mara River crossings, and families with children aged 10 and over."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Mara River Tented Camp?",
+     "a": "The camp overlooks a riverbend in the Lamai Triangle, the northernmost corner of the Serengeti in Tanzania, set in 98,000 acres of wilderness. Singita says it is close to wildebeest crossings during the Great Migration."
+    },
+    {
+     "q": "How do I get to Singita Mara River Tented Camp?",
+     "a": "Flights land at the Serengeti Lamai airstrip, where Singita staff meet you for a 45-minute drive to camp. Singita notes about 1 hour 30 minutes from Arusha and 1 hour 45 minutes from Kilimanjaro via Sasakwa airstrip."
+    },
+    {
+     "q": "When is Mara River Tented Camp open?",
+     "a": "The camp is open all year except from 15 January to 31 May. Singita notes that in season millions of hooves pass nearby, and its location gives spectacular opportunities to view river crossings."
+    },
+    {
+     "q": "How many tents are there?",
+     "a": "There are six suites: four one-bedroom en-suite tents and two family tents for 2 adults and 2 children. The main camp has a plunge pool."
+    },
+    {
+     "q": "What is the minimum age at Mara River?",
+     "a": "Children aged 10 and older are welcome, with babysitting and tailor-made family activities. Children join game drives at the guide's discretion."
+    },
+    {
+     "q": "Is Mara River Tented Camp sustainable?",
+     "a": "Yes, the camp runs off the grid on a custom-designed solar system with LED lighting throughout. Gentle breezes replace air-conditioning."
+    },
+    {
+     "q": "What activities are offered?",
+     "a": "Singita lists game drives, hot air balloon safaris, bird-watching, wine experiences, wellness treatments, yoga and fitness. Rates include twice-daily game drives and return transfers from the Serengeti Lamai airstrip."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29582,7 +30682,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "The Serengeti’s most exclusive private hilltop safari retreat",
+   "tagline": "An expansive private hilltop villa overlooking the Serengeti",
    "quote": "Wake to golden light over the plains, watch the migration from your infinity pool, and live the ultimate Serengeti villa life",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0ab3e97ce_6b0ed984e_6989e50e1ae181a811fc679d_Singita_Milele_Main_Suite_Outdoor_Deck_Emma_Jackson.web",
    "gallery": [
@@ -29595,14 +30695,19 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f47014fe3_4a7bf2631_69d391f655a35f5c564271b9_SingitaMilele_Bar.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a862d3344_6ec0278d1_69d396671ef87a76019d4a4d_SingitaMilele_Entrance.jpg"
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is migration season and best for wildlife, dry weather, and scenic views. November to May is lush and green, with fewer crowds and abundant birdlife.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "group_exclusive_use",
+    "family",
+    "wine",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to villa. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -29613,20 +30718,19 @@
    "experiences": {
     "paras": [],
     "items": [
-     "Private game drives with your own guide and tracker",
+     "Private game drives with your own guide",
      "Migration viewing",
      "Bush walks",
      "Wine tastings",
      "Spa and wellness",
-     "Tennis",
      "Poolside relaxation",
      "Kids activities",
-     "Private bush dinners"
+     "Private fine dining"
     ]
    },
    "features": {
     "paras": [
-     "Fully exclusive use for up to ten guests. Infinity pool, cinema, gym, wine cellar, and private chef. Uninterrupted views of the Serengeti. Personalized service. Contemporary luxury and eco-conscious design."
+     "Fully exclusive use for up to ten guests. Infinity pool, cinema, gym, wine cellar, and private chef. Uninterrupted views of the Serengeti. Personalized service. Contemporary luxury design."
     ],
     "items": []
    },
@@ -29639,9 +30743,39 @@
      "body": "Singita Milele blends ultimate privacy, cutting edge design, and front row migration views for families and groups who want nothing but the best."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita notes game viewing all year round, with short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro direct, then a road transfer to the villa.",
+    "signature_experiences": "Private game drives, tailormade wine tastings from an award-winning cellar, and movie nights in the 10-person cinema.",
+    "who_its_for": "Families and groups of up to 10 wanting a private, fully staffed hilltop villa on the migration route."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Milele?",
+     "a": "Milele is set high on Sasakwa Hill in the 350,000-acre Grumeti Reserve in northern Tanzania, with uninterrupted views of the Serengeti plains. Singita says it offers a front-row seat to the Great Migration."
+    },
+    {
+     "q": "How many guests can stay at Singita Milele?",
+     "a": "Up to 10 guests, in a main bedroom suite, two other large suites including a junior suite, and a two-bedroom family suite. The villa is booked for private, exclusive stays."
+    },
+    {
+     "q": "How do I get to Singita Milele?",
+     "a": "Fly to the Singita Sasakwa airstrip, where staff meet you for the road transfer to the villa. Singita notes direct flights of about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro."
+    },
+    {
+     "q": "What facilities does Milele have?",
+     "a": "An infinity pool with four separate spa pools, a 10-person cinema room, a fully equipped fitness centre, a boma with covered kitchen and a fully stocked wine cellar. Dedicated staff include a Field Guide, chef, butler and housekeeping team."
+    },
+    {
+     "q": "Is Singita Milele good for families?",
+     "a": "Yes, children of all ages are welcome and babysitting is available, and the two-bedroom family suite is designed for adults with children. Children join game activities at the guides' discretion."
+    },
+    {
+     "q": "What is included at Singita Milele?",
+     "a": "Rates include all meals and beverages, private game drives in open vehicles, WiFi and return transfers from the Sasakwa airstrip, with tailormade activities for each group."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29773,7 +30907,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Vintage safari, wild plains, timeless adventure",
+   "tagline": "Modern safari under canvas, wild plains, timeless adventure",
    "quote": "Wake to sunrise over golden grasslands, step from canvas to wilderness, and experience the romance of classic safari",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ecdf5031a_c142210fb_6989e6d438fe14bd9bf3b1f2_OGS4386-HDR-scaled.webp",
    "gallery": [
@@ -29784,21 +30918,26 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fb5115a0f_d28d2ee7e_69d5054e3d52d0a8b09eef66_SingitaSaboraFitnessArea.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8de2c8b2a_564331f1f_69d5069cb62ea532ec997e24_Singita_20Sabora_20Tented_20Camp_Main_20Lodge_20Dining_."
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is peak migration season, with dry conditions and excellent wildlife. November to May is green and peaceful, perfect for birding and quiet escapes.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "wellness",
+    "food",
+    "conservation",
+    "family"
+   ],
    "status": "founder_vetted",
    "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.1431,
     "lng": 34.4459
    },
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to camp. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Nine luxury tents with en suite bathrooms, outdoor showers, private decks, daybeds, and sweeping views of the Serengeti plains. Main lodge with pool, spa, dining, library, and gym."
+     "Nine tented suites with sweeping views of the Serengeti plains, each with a private pantry, dining and fitness area, meditation deck, and outdoor sala with daybeds overlooking one of the camp’s two waterholes. Main camp with pool, wellness and fitness centre, dining, and the Guest Deli."
     ],
     "items": []
    },
@@ -29808,8 +30947,8 @@
      "Game drives",
      "Guided bush walks",
      "Migration viewing",
-     "Horseback safaris",
      "Spa and wellness",
+     "Yoga",
      "Wine tastings",
      "Birding",
      "Community visits",
@@ -29817,15 +30956,10 @@
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Luxury tented suites with private decks",
-     "Vintage safari style",
-     "Gourmet dining and curated wine",
-     "Pool, spa, and gym",
-     "Personal service",
-     "Direct access to migration and Grumeti’s best wildlife"
-    ]
+    "paras": [
+     "Tented suites with private meditation decks and outdoor salas. A light, modern take on traditional safari style. Gourmet dining and curated wine. Pool, wellness, and fitness. Personal service. Front-row seat to some of the most prized game viewing on the continent, including the Great Migration."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Singita Sabora Tented Camp is for travelers seeking an intimate, romantic, and stylish safari. Ideal for couples, solo explorers, photographers, and anyone who dreams of classic safari adventure with modern comfort."
@@ -29833,12 +30967,42 @@
    "why": [
     {
      "title": "Classic Safari, Endless Plains",
-     "body": "Singita Sabora offers vintage safari charm, migration magic, and Grumeti’s wildlife at your doorstep. Best for couples, solo travelers, and those seeking romance and adventure in the wild."
+     "body": "Singita Sabora offers modern safari under canvas, migration magic, and Grumeti’s wildlife at your doorstep. Best for couples, solo travelers, and those seeking romance and adventure in the wild."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita notes short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro direct, then a Singita road transfer.",
+    "signature_experiences": "Game drives on the Serengeti plains, outdoor yoga on a private meditation deck, and the camp's Guest Deli picnics.",
+    "who_its_for": "Travellers seeking wide-open spaces, privacy and stillness under canvas, and families with children aged 10 and over."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Sabora Tented Camp?",
+     "a": "Sabora is set in 350,000 acres of protected wilderness in the Singita Grumeti Reserve, northern Tanzania, on the Serengeti plains. Singita says it gives a front-row seat to prized game viewing including the Great Migration."
+    },
+    {
+     "q": "How do I get to Singita Sabora?",
+     "a": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, where staff meet you and drive you to camp. Singita notes direct flights of about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro."
+    },
+    {
+     "q": "How many tents are at Sabora?",
+     "a": "There are nine tented suites with views across the Serengeti plains. Each has a private pantry, dining and fitness area, a meditation deck and an outdoor sala with daybeds overlooking one of the camp's two waterholes."
+    },
+    {
+     "q": "What is the minimum age at Sabora?",
+     "a": "Children aged 10 and older are welcome. Activities are tailored to each family, and children join game activities at the guide's discretion."
+    },
+    {
+     "q": "What is included at Singita Sabora?",
+     "a": "Rates include all meals and beverages including premium wines, twice-daily game drives, tennis at Sasakwa Lodge and return transfers from the Sasakwa airstrip. Park and conservation fees are extra."
+    },
+    {
+     "q": "What makes Sabora different?",
+     "a": "Singita calls it Africa's most bespoke safari under canvas, with work by local artisans throughout. A Guest Deli lets you pick gourmet treats to enjoy in your suite or at picnic spots around camp."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29875,7 +31039,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Edwardian elegance, wild migration, endless Serengeti views",
+   "tagline": "Old-world elegance, wild migration, endless Serengeti views",
    "quote": "Wake to sweeping views over the plains, explore the migration on horseback, and return to a manor that blends colonial style with the wild",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4218a75ad_84a8ada91_6989e9b83bb17dc608d3448b_DSC01618.webp",
    "gallery": [
@@ -29888,21 +31052,25 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8d1470e69_70f9ffd2d_69d51c05288b5425d1f13910_Singita_20Sasakwa_20Lodge_Outdoor_20Evening_20Dining_20.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f248e1bba_f96487467_69d51c4212d901f60c5db643_SingitaSasakwaLodge_OutdoorDiningwithView_PeterJackson."
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is migration season, with dramatic wildlife, dry weather, and stunning vistas. November to May is green, lush, and perfect for birding and relaxed family travel.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "conservation"
+   ],
    "status": "founder_returned",
    "statusDate": "2018-01-01",
    "coords": {
     "lat": -2.0835,
     "lng": 34.4957
    },
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 15 to 30 minute road transfer to lodge. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": "James stayed in 2012 and went back in 2018. A founder favourite.",
    "rooms": {
     "paras": [
-     "Ten cottages and suites plus one private villa, each with its own plunge pool, verandah, and period furnishings. Main lodge features a library, billiards room, spa, gym, tennis courts, and infinity pool."
+     "Ten cottages of one to four bedrooms, each with its own private plunge pool, plus a dual-level Hillside Suite with a private swimming pool. Cottages have verandas, fireplaces, polished parquet floors, and vintage collectables. Main lodge features book-lined rooms, spa, fitness centre, tennis, and a swimming pool."
     ],
     "items": []
    },
@@ -29910,7 +31078,6 @@
     "paras": [],
     "items": [
      "Private game drives",
-     "Horseback safaris",
      "Bush walks",
      "Great Migration viewing",
      "Tennis and fitness",
@@ -29922,16 +31089,10 @@
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Cottages and suites with private plunge pools",
-     "Edwardian architecture",
-     "Infinity pool with Serengeti views",
-     "Gourmet dining and curated wine",
-     "Horseback safaris",
-     "Personal service",
-     "Direct access to Grumeti’s best wildlife"
-    ]
+    "paras": [
+     "Cottages and suite with private pools. Turn-of-the-century manor house. Swimming pool in the main lodge. Gourmet dining and curated wine. Personal service. Front-row seat to the wildlife of the Singita Grumeti Reserve."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Singita Sasakwa Lodge is for travelers who want timeless elegance, migration magic, and the luxury of a private manor overlooking Africa’s greatest plains. Ideal for couples, families, groups, and anyone seeking romance and adventure with style."
@@ -29942,9 +31103,43 @@
      "body": "Singita Sasakwa Lodge combines heritage luxury, private wildlife experiences, and panoramic Serengeti vistas. Perfect for those seeking a refined safari with endless adventure and comfort."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita notes short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro direct, then a short Singita road transfer.",
+    "signature_experiences": "Game drives across the Grumeti plains, tennis, wellness treatments and hot air balloon safaris from a hilltop manor.",
+    "who_its_for": "Families, groups and couples who want old-world elegance, private plunge-pool cottages up to four bedrooms, and children of all ages welcome."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Sasakwa Lodge?",
+     "a": "Sasakwa stands on Sasakwa Hill in the 350,000-acre Singita Grumeti Reserve in the Serengeti, northern Tanzania. Singita describes it as a turn-of-the-century manor house with panoramic views over the plains."
+    },
+    {
+     "q": "How do I get to Singita Sasakwa Lodge?",
+     "a": "All flights land at the Singita Sasakwa airstrip, where staff meet you and drive you to the lodge. Singita notes direct flights of about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro."
+    },
+    {
+     "q": "What accommodation does Sasakwa offer?",
+     "a": "Sasakwa has six one-bedroom, two two-bedroom, one three-bedroom and one four-bedroom cottage, each with a private plunge pool, plus a dual-level Hillside Suite with its own swimming pool. The Hillside Suite includes a dedicated butler, private vehicle and Field Guide."
+    },
+    {
+     "q": "Are children welcome at Sasakwa?",
+     "a": "Yes, children of all ages are welcome, with babysitting, tailor-made family activities and the Mini Rangers Course. Children join game drives and bush walks at the discretion of the Field Guides."
+    },
+    {
+     "q": "What is included at Singita Sasakwa?",
+     "a": "Cottage rates include all meals and beverages including premium wines, twice-daily game drives, tennis, laundry, WiFi and return transfers from the Sasakwa airstrip. Park and conservation fees and wellness treatments are extra."
+    },
+    {
+     "q": "What can you do at Sasakwa?",
+     "a": "Singita lists game drives, guided safari walks, tennis, wellness treatments, a fitness centre, yoga, wine experiences, hot air balloon safaris, bird-watching, community visits and an anti-poaching observation post visit."
+    },
+    {
+     "q": "When is Sasakwa open and when should I go?",
+     "a": "The lodge is open year-round, and Singita describes the Serengeti as a year-round destination. Short rains fall from November to March and the long rains in April and May."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29998,41 +31193,44 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/518f1b61f_3c653239b_69d37c24d14ae455618ad517_SingitaSerengetiHouse_MainLoungeandDining1.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/28286a6fb_f32c21698_69d37cb80603813d6964985c_SingitaSerengetiHouse.jpg"
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October is best for migration, dry weather, and wildlife. November to May is green, peaceful, and perfect for birding and family time.",
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Singita describes the Serengeti as a year-round destination. Short rains fall from November to March, often a quick daily downpour followed by sunshine, and the long rains come in April and May.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.0911,
     "lng": 34.5055
    },
-   "airport": "Sasakwa Airstrip, Grumeti Airstrip",
-   "airportDirections": "Fly to Sasakwa or Grumeti Airstrip, 30 to 60 minute road transfer to house. Charter flights available from Arusha or other parks.",
+   "airport": "Singita Sasakwa Airstrip",
+   "airportDirections": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour direct from Arusha or 1 hour 15 minutes from Kilimanjaro. A Singita staff member meets you and drives you to the lodge. Scheduled flights or private charters can be arranged.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "One exclusive use villa with four guest suites, 25-meter infinity pool, private tennis court, gym, media room, interactive kitchen, chef, butler, and panoramic views over the plains."
+     "A private house with four suites, two in the main house and two garden suites, each with generous bathrooms, outdoor showers, and private terraces. 25m infinity pool, private tennis court and pavilion, tented wellness suite, fitness centre, chef, house manager, and panoramic views over the plains."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private game drives with your own guide and tracker",
+     "Private game drives with your own guide",
      "Bush walks",
      "Tennis and fitness",
      "Swimming",
      "Spa and wellness",
      "Wine tastings",
-     "Kids activities",
-     "Private bush dinners"
+     "Kids activities"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Fully exclusive use for up to eight guests",
+     "Book the full house for up to eight guests, or by suite",
      "Personalized staff, chef, and guide",
      "Infinity pool",
      "Tennis court and gym",
@@ -30047,12 +31245,42 @@
    "why": [
     {
      "title": "A Home for Wild Family Moments",
-     "body": "Singita Serengeti House blends modern comfort, exclusive adventure, and Big Five wildlife in a private home setting. Perfect for families and groups wanting the Serengeti all to themselves."
+     "body": "Singita Serengeti House blends modern comfort, private adventure, and wildlife on the migration route in a private home setting. Perfect for families and groups wanting the Serengeti all to themselves."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; Singita notes short rains from November to March and long rains in April and May.",
+    "how_to_get_there": "Fly to the Singita Sasakwa airstrip in the Grumeti Reserve, about 1 hour from Arusha or 1 hour 15 minutes from Kilimanjaro direct, then a road transfer to the house.",
+    "signature_experiences": "Private game drives with your own guide, tennis on the private court, and time at the 25m infinity pool overlooking a waterhole.",
+    "who_its_for": "Families and small groups of up to 8 who want a private, fully staffed home with its own guide on the migration route."
+   },
+   "faqs": [
+    {
+     "q": "Where is Singita Serengeti House?",
+     "a": "Serengeti House is set deep within the Grumeti Reserve in northern Tanzania, along the annual wildebeest migration route. A waterhole in front of the house draws wildlife close."
+    },
+    {
+     "q": "How many guests does Serengeti House sleep?",
+     "a": "Up to 8 guests, in two suites in the main house and two garden suites, each with generous bathrooms, outdoor showers and private terraces. Singita offers it as a full house or by suite."
+    },
+    {
+     "q": "How do I get to Singita Serengeti House?",
+     "a": "Fly to the Singita Sasakwa airstrip, where staff meet you for the road transfer to the house. Singita notes direct flights of about 1 hour from Arusha and about 1 hour 15 minutes from Kilimanjaro."
+    },
+    {
+     "q": "What facilities does Serengeti House have?",
+     "a": "A 25m infinity pool in front of the main house, a private tennis court and pavilion, a tented wellness suite and a new fitness centre. Daily onsite staff and management look after the house."
+    },
+    {
+     "q": "Are children welcome at Serengeti House?",
+     "a": "Yes, children of all ages are welcome, with babysitting and tailormade family activities. Children join game drives and bush walks at the discretion of the Field Guides."
+    },
+    {
+     "q": "What is included at Serengeti House?",
+     "a": "Rates include a private guide, house manager, chef and house staff, private game drives in open vehicles (one vehicle for up to 8 guests) and return transfers from the Sasakwa airstrip."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -34538,7 +35766,13 @@
    ],
    "bestMonths": "June to October",
    "bestMonthsNote": "June to October is dry season for game viewing, hiking, and cultural experiences. November to May is lush, peaceful, and excellent for birding and green scenery.",
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family",
+    "adventure",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -34550,7 +35784,7 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight geodesic domes, each with en suite bathrooms, wood-burning stoves, floor-to-ceiling windows, and sweeping views of forest and volcano. One family dome and one honeymoon dome available. Main dome with dining, lounge, and fireplace."
+     "Eight perspex-and-canvas domed suites, each with en suite bathroom, hot running water, in-room wood-burning stove, and sweeping views of forest and volcanic mountains. One interconnected family suite and one honeymoon suite with outdoor hot tub. Main lounge dome with dining and fireplace."
     ],
     "items": []
    },
@@ -34563,18 +35797,18 @@
      "Cultural Maasai visits",
      "Birding",
      "Sundowners",
-     "Forest walks",
+     "Spa",
      "Stargazing"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Iconic glass-fronted domes",
-     "Wood stoves and panoramic views",
-     "Exclusive location near Olmoti",
+     "Perspex-and-canvas domed suites",
+     "Wood-burning stoves and panoramic views",
+     "Exclusive location on the edge of Olmoti Crater",
      "Guided crater hikes",
-     "Innovative eco design",
+     "Spa with sauna",
      "Immersive Maasai and wildlife experiences"
     ]
    },
@@ -34584,12 +35818,42 @@
    "why": [
     {
      "title": "Where Craters Meet Clouds",
-     "body": "The Highlands offers East Africa’s most unique safari stay, perfect for adventurous couples, families, and anyone drawn to culture, mountains, and wild spaces."
+     "body": "The Highlands offers a unique Ngorongoro safari stay, perfect for adventurous couples, families, and anyone drawn to culture, mountains, and wild spaces."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Year round, with July to September the peak dry months and May the quietest time to avoid crowds.",
+    "how_to_get_there": "Fly to Lake Manyara airstrip, then drive about 3 hours to camp in the Ngorongoro Highlands.",
+    "signature_experiences": "Ngorongoro Crater game drives, Olmoti and Empakaai Crater hikes, Maasai community visits and the spa.",
+    "who_its_for": "Couples, honeymooners and families with children aged five and over who want the crater plus hiking and Maasai culture."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Highlands?",
+     "a": "The Highlands is in Tanzania's Ngorongoro Conservation Area, perched on the edge of the Olmoti Crater forest. It is about an hour from the Ngorongoro Crater."
+    },
+    {
+     "q": "How do I get to The Highlands?",
+     "a": "Fly to Lake Manyara airstrip, the nearest airstrip, which is a 3 hour drive from camp."
+    },
+    {
+     "q": "When is the best time to visit The Highlands?",
+     "a": "Ngorongoro is a year round destination. July, August and September are the peak dry months but the crater can feel busy, while Asilia names May as the best time to avoid crowds."
+    },
+    {
+     "q": "What are the rooms like at The Highlands?",
+     "a": "There are 8 perspex-and-canvas domed suites, including an interconnected family suite and a honeymoon suite with an outdoor hot tub. Each has an en suite bathroom with hot showers and an in-room wood-burning stove."
+    },
+    {
+     "q": "Does The Highlands welcome children?",
+     "a": "Yes. Families with children aged five and older are welcome, and there is a family suite."
+    },
+    {
+     "q": "What are the signature experiences at The Highlands?",
+     "a": "Game drives on the Ngorongoro Crater floor, hiking to the top of Olmoti, walking down to the soda lake in Empakaai Crater to see flamingos, and cultural visits with the local Maasai community. The camp also has a spa."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -36245,18 +37509,22 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/17e2716b1_4ba04a0d9_694a390e932f7f45237002f6_Asilia-Africa_Ubuntu-Migration-Camp_Main-area-lounge-an.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/94146ea2c_5fa43c516_694a37eeacf54a71fdd68f87_Asilia-Africa_Ubuntu-Migration-Camp_Outside-the-Main-Ar."
    ],
-   "bestMonths": "December to March (Southern Serengeti), July to November (Northern Serengeti)",
-   "bestMonthsNote": "December to March for calving season and predator action. July to November for river crossings and dramatic migration scenes. Both periods are peak for wildlife and adventure.",
-   "bestFor": [],
+   "bestMonths": "June to mid-November (Northern Serengeti), mid-December to mid-March (Southern Serengeti)",
+   "bestMonthsNote": "July to October for the Mara River crossings in the north; January to mid-March for calving in the south. The camp closes mid-March to May and mid-November to mid-December while it moves.",
+   "bestFor": [
+    "wildlife_photography",
+    "adventure",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Depending on season: Ndutu Airstrip (South), Kogatende Airstrip (North), Seronera Airstrip (Central)",
-   "airportDirections": "Fly to seasonal airstrip, 30-90 minute game drive transfer to camp. Charter flights available from Arusha or other parks.",
+   "airport": "Lamai Airstrip (North, June to mid-November); Kusini (Serengeti South) Airstrip (South, mid-December to mid-March)",
+   "airportDirections": "North: 1 hour 40 minute drive from Lamai. South: 90 minute drive from Kusini.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight canvas safari tents, all with en suite bathrooms and private verandas, plus a family tent. Main mess tent with lounge, bar, and bush dining under the stars. Camp location shifts with the migration."
+     "Ten canvas safari tents, including a four-sleeper family tent, all with en suite bathrooms, bucket showers, and private porches. Main area with lounge, open-air dining room, and campfire. Camp location shifts with the migration."
     ],
     "items": []
    },
@@ -36265,12 +37533,13 @@
     "items": [
      "Game drives",
      "Migration viewing",
-     "Walking safaris",
+     "River crossings in the north",
+     "Calving season in the south",
+     "Walking safaris (northern location)",
+     "Hot-air balloon safaris (southern location)",
      "Sundowners",
      "Birding safaris",
-     "Night drives",
-     "Photographic safaris",
-     "Community visits"
+     "Photographic safaris"
     ]
    },
    "features": {
@@ -36279,7 +37548,7 @@
      "Mobile camp follows the migration",
      "Intimate tents with bush views",
      "Expert guides",
-     "Bush dining",
+     "Open-air dining",
      "Eco friendly and low impact",
      "Wild and immersive atmosphere"
     ]
@@ -36293,9 +37562,43 @@
      "body": "Ubuntu is perfect for those wanting real adventure, close wildlife, and the excitement of moving with the migration. Best for couples, solo travelers, photographers, and families."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "July to October for northern river crossings and January to mid-March for southern calving season; closed mid-March to May and mid-November to mid-December.",
+    "how_to_get_there": "Fly to Lamai airstrip (June to mid-November, 1 hour 40 minute drive) or Kusini airstrip (mid-December to mid-March, about 90 minutes).",
+    "signature_experiences": "A mobile camp that moves with the herds, for Mara River crossings on the Lamai Wedge and calving season on the southern plains.",
+    "who_its_for": "Migration followers and photographers, plus families with children aged five and over."
+   },
+   "faqs": [
+    {
+     "q": "Is Ubuntu Migration Camp a mobile camp?",
+     "a": "Yes. Ubuntu is a tented camp that can be disassembled in a couple of days and moved to follow the Great Migration. It is on the Lamai Wedge in the northern Serengeti from June to mid-November, and at Kusini in the southern Serengeti from mid-December to mid-March."
+    },
+    {
+     "q": "How do I get to Ubuntu Migration Camp?",
+     "a": "It depends on the season. From June to mid-November, fly to Lamai airstrip, a 1 hour 40 minute drive from camp; from mid-December to mid-March, fly to the Kusini (Serengeti South) airstrip, about a 90 minute drive away."
+    },
+    {
+     "q": "When is the best time to visit Ubuntu Migration Camp?",
+     "a": "July to October is best for river crossings in the northern Serengeti, and January to mid-March is best for the calving season in the south. The camp is closed from mid-March to May and from mid-November to mid-December while it moves."
+    },
+    {
+     "q": "How many tents does Ubuntu Migration Camp have?",
+     "a": "There are 10 canvas safari tents, including one four-sleeper family tent. Each tent has an en suite bathroom with a traditional safari-style bucket shower and flushing toilet."
+    },
+    {
+     "q": "Does Ubuntu Migration Camp accept children?",
+     "a": "Yes, children as young as five are welcome, and the family tent sleeps up to four. Walking safaris have a minimum age of 12."
+    },
+    {
+     "q": "What are the signature experiences at Ubuntu Migration Camp?",
+     "a": "Twice daily game drives following the herds, river crossings in the north, and calving season predator action in the south. Walking safaris are offered at the northern location only, and hot-air balloon flights are possible over the southern plains."
+    },
+    {
+     "q": "Who is Ubuntu Migration Camp best for?",
+     "a": "Travellers who want to be close to the Great Migration in a classic tented camp, including photographers looking to capture the first river crossings."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -39895,40 +41198,41 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/252c91d58_cc64f8ed4_6847840f7ddda510c37ecaec_Usawa-Camp-Tent4.jpg"
    ],
    "bestMonths": "Year-round—camp moves to the best location for the migration, calving, and crossings",
-   "bestMonthsNote": "January to March for calving in the south. June to October for river crossings and predator action in the north. Camp location always follows the migration for best wildlife.",
-   "bestFor": [],
+   "bestMonthsNote": "December to February for calving on the Southern Plains. April to July in Grumeti. July to October for the river crossings from Northern Hills and Lamai.",
+   "bestFor": [
+    "group_exclusive_use",
+    "family",
+    "conservation",
+    "wildlife_photography",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.3333,
     "lng": 34.8333
    },
-   "airport": "Seronera Airstrip, Kogatende Airstrip (location varies)",
-   "airportDirections": "Fly to Kilimanjaro or Arusha, connect by light aircraft to the closest seasonal Serengeti airstrip, 30–60 minute road transfer to camp.",
+   "airport": "Kogatende, Seronera or Serengeti South Airstrip (depending on camp location)",
+   "airportDirections": "Charter flight to the airstrip nearest the camp's current site. Transfer times vary, for example about 1.5 hours by game drive from Kogatende to Northern Hills.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six spacious canvas suites, including a family unit, each with en-suite bathrooms, hot bucket showers, and private sitting decks set in remote wild locations."
+     "Six spacious canvas suites, each with en-suite bathroom, hot water, a personal coffee bar and safari-style furnishings, set in remote wild locations."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Game drives following the migration",
-     "Walking safaris (seasonal)",
-     "Bush breakfasts and sundowners",
-     "Photographic safaris",
-     "Birding",
-     "Campfire storytelling under the stars"
-    ]
+    "paras": [
+     "Game drives following the migration. Guided walks in designated walking zones. Photographic safaris. Birding. Stargazing. Hot air balloon flights with a bush breakfast (additional cost)."
+    ],
+    "items": []
    },
    "features": {
     "paras": [],
     "items": [
      "Authentic, eco-friendly mobile safari",
      "Private, small, and exclusive",
-     "Maximum 14 guests",
+     "Maximum 12 guests per camp",
      "Moves with the Great Migration for best wildlife",
      "Expert guiding and personal service",
      "Minimal-impact camp design",
@@ -39944,9 +41248,39 @@
      "body": "Wilderness Usawa Mobile Camp gives you the thrill of wild Africa, no fences, only nature, the migration, and unforgettable wildlife. Best for adventurous couples, families, and anyone seeking the real Serengeti."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Year-round, as the camp moves: December to February for calving in the south, April to July in Grumeti and July to October for the northern river crossings.",
+    "how_to_get_there": "Fly by charter to Kogatende, Seronera or Serengeti South airstrip, depending on where the camp is pitched, then transfer by road.",
+    "signature_experiences": "Game drives following the Great Migration, guided walks, birding, stargazing and optional hot air balloon flights.",
+    "who_its_for": "Private groups and families booking sole use, and travellers who want to follow the migration from an intimate, light-footprint camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Usawa Serengeti?",
+     "a": "Wilderness Usawa is a mobile camp that moves between nine sites within Serengeti National Park, with two camps set up at any given time. Locations include the Northern Hills, Lamai, Grumeti and the Southern Plains."
+    },
+    {
+     "q": "How do I get to Wilderness Usawa?",
+     "a": "Charter flights land at Kogatende, Seronera and Serengeti South airstrips, and Wilderness arranges collection from whichever airstrip suits the camp's current site. Transfer times vary: the Northern Hills site is a 1.5-hour game drive from Kogatende, and the Lamai site is 30 minutes from Lamai Airstrip."
+    },
+    {
+     "q": "When is the best time to visit Wilderness Usawa?",
+     "a": "The camp moves with the migration, so the timing depends on the site: December to February on the Southern Plains for calving, April to July in Grumeti, and July to October in the Northern Hills and Lamai for the Mara River crossings."
+    },
+    {
+     "q": "How many tents does Wilderness Usawa have?",
+     "a": "Each camp has six en-suite safari tents for up to 12 guests and can be booked for sole use. The camps are completely solar-powered, with Wi-Fi and hot water."
+    },
+    {
+     "q": "Can children stay at Wilderness Usawa?",
+     "a": "Yes. Children aged 6 and older are welcome, and children under 16 must share with an adult. Families with children younger than 6 need to book the camp for sole use."
+    },
+    {
+     "q": "What activities does Wilderness Usawa offer?",
+     "a": "Game drives, guided walks in designated walking zones, birding and stargazing. Hot air balloon flights are available at additional cost, depending on weather and season."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

@@ -678,5 +678,625 @@
   "checked": "2026-11-01",
   "conditions": "10% off accommodation for guests who have stayed with MORE Collection before, and the friends and family travelling with them. Up to 5 rooms or 10 guests. Subject to availability. Can be combined with StayMORE and CelebrateMORE.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000065",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "swale-camp",
+  "name": "Safari Honeymoon (Swala Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Newlyweds: 50% off one partner's stay",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-12-31",
+   "text": "Travel until 31 December 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For two guests travelling within six months of their wedding date; a marriage certificate is required. Two nights minimum. Can be combined with A&K's long-stay discount but not other offers. Offer can be withdrawn by A&K at any time.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000066",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "rubondo-island-camp-asilia",
+  "name": "Rubondo Flight Special (Rubondo Island Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 3 nights, return Serengeti flights included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-03-31",
+   "text": "Travel until 31 March 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Book three nights or more at Rubondo Island Camp and return light aircraft flights between Rubondo and the Serengeti are included. Flights must be booked with Asilia; minimum 2 adults. Combinable with other Asilia offers except All Asilia.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000067",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Stay 4, Pay 3 (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay for 3",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 30 April and 1 November to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 consecutive nights at &Beyond Lake Manyara Tree Lodge and the last night is complimentary, in all room types. Cannot be combined with long-stay rates or other offers on the same four nights; extra nights can be added at applicable rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000068",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Stay 4, Pay 3 (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay for 3",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 30 April and 1 November to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 consecutive nights at &Beyond Serengeti Under Canvas and the last night is complimentary, in all room types. Cannot be combined with long-stay rates or other offers on the same four nights; extra nights can be added at applicable rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000069",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Stay 4, Pay 3 (Klein's Camp)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay for 3",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 30 April and 1 November to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 consecutive nights at &Beyond Klein's Camp and the last night is complimentary, in all room types. Cannot be combined with long-stay rates or other offers on the same four nights; extra nights can be added at applicable rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000070",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Stay 4, Pay 3 (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay for 3",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 30 April and 1 November to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 consecutive nights at &Beyond Grumeti Serengeti River Lodge and the last night is complimentary, in all room types. Cannot be combined with long-stay rates or other offers on the same four nights; extra nights can be added at applicable rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000071",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-mnemba-by-and-beyond",
+  "name": "Stay 10, Pay 8 (Mnemba Island)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 10 nights, pay for 8",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 30 April and 1 November to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 10 nights at &Beyond Mnemba Island and the final two nights are complimentary, in all room types. The last check-out date must fall within the travel window. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000072",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Tanzania Long Stay (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Tanzania: up to 15% off",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "1 November 2026 to 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 to 5 nights across &Beyond Tanzania lodges and camps for 5% off, or 6 nights or more for 15% off (6+ night saving not valid June to September). Same guests on a single itinerary. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000073",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Tanzania Long Stay (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Tanzania: up to 15% off",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "1 November 2026 to 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 to 5 nights across &Beyond Tanzania lodges and camps for 5% off, or 6 nights or more for 15% off (6+ night saving not valid June to September). Same guests on a single itinerary. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000074",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Tanzania Long Stay (Klein's Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Tanzania: up to 15% off",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "1 November 2026 to 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 to 5 nights across &Beyond Tanzania lodges and camps for 5% off, or 6 nights or more for 15% off (6+ night saving not valid June to September). Same guests on a single itinerary. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000075",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Tanzania Long Stay (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Tanzania: up to 15% off",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "1 November 2026 to 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 to 5 nights across &Beyond Tanzania lodges and camps for 5% off, or 6 nights or more for 15% off (6+ night saving not valid June to September). Same guests on a single itinerary. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000076",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-mnemba-by-and-beyond",
+  "name": "Tanzania Long Stay (Mnemba Island)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Tanzania: up to 15% off",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "1 November 2026 to 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay 4 to 5 nights across &Beyond Tanzania lodges and camps for 5% off, or 6 nights or more for 15% off (6+ night saving not valid June to September). Same guests on a single itinerary. Cannot be combined with other &Beyond offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000077",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Anniversary Offer (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone anniversaries: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For wedding anniversaries of 1, 5, 10, 15, 20, 25, 30, 40, 50 and 60 years, travelling within six months before or after the date; a wedding certificate is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000078",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Anniversary Offer (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone anniversaries: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For wedding anniversaries of 1, 5, 10, 15, 20, 25, 30, 40, 50 and 60 years, travelling within six months before or after the date; a wedding certificate is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000079",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Anniversary Offer (Klein's Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone anniversaries: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For wedding anniversaries of 1, 5, 10, 15, 20, 25, 30, 40, 50 and 60 years, travelling within six months before or after the date; a wedding certificate is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000080",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Anniversary Offer (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone anniversaries: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For wedding anniversaries of 1, 5, 10, 15, 20, 25, 30, 40, 50 and 60 years, travelling within six months before or after the date; a wedding certificate is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000081",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-mnemba-by-and-beyond",
+  "name": "Anniversary Offer (Mnemba Island)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone anniversaries: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For wedding anniversaries of 1, 5, 10, 15, 20, 25, 30, 40, 50 and 60 years, travelling within six months before or after the date; a wedding certificate is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000082",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Birthday Offer (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone birthdays: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For milestone birthdays such as 18, 21, 30, 40 and 50, travelling within six months before or after the date; identification is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000083",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Birthday Offer (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone birthdays: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For milestone birthdays such as 18, 21, 30, 40 and 50, travelling within six months before or after the date; identification is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000084",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Birthday Offer (Klein's Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone birthdays: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For milestone birthdays such as 18, 21, 30, 40 and 50, travelling within six months before or after the date; identification is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000085",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Birthday Offer (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone birthdays: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For milestone birthdays such as 18, 21, 30, 40 and 50, travelling within six months before or after the date; identification is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000086",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-mnemba-by-and-beyond",
+  "name": "Birthday Offer (Mnemba Island)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Milestone birthdays: 20% off your room",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-20",
+   "text": "Travel 1 November to 20 December 2026, and 11 January to 19 March, 2 April to 30 June and 1 September to 20 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "For milestone birthdays such as 18, 21, 30, 40 and 50, travelling within six months before or after the date; identification is required. 20% off accommodation for the room the milestone guests occupy, on the 1 to 3 night rate. Not combinable with other &Beyond offers or long-stay rates.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000087",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Fly Me around East Africa (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night fly-in safari with flights included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night package across 2 to 3 selected &Beyond lodges and camps in Kenya and Tanzania, with inter-camp flights and road transfers included and savings of up to 18%. Minimum 2 guests. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000088",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Fly Me around East Africa (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night fly-in safari with flights included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night package across 2 to 3 selected &Beyond lodges and camps in Kenya and Tanzania, with inter-camp flights and road transfers included and savings of up to 18%. Minimum 2 guests. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000089",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Fly Me around East Africa (Klein's Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night fly-in safari with flights included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night package across 2 to 3 selected &Beyond lodges and camps in Kenya and Tanzania, with inter-camp flights and road transfers included and savings of up to 18%. Minimum 2 guests. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000090",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Fly Me around East Africa (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night fly-in safari with flights included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night package across 2 to 3 selected &Beyond lodges and camps in Kenya and Tanzania, with inter-camp flights and road transfers included and savings of up to 18%. Minimum 2 guests. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000091",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "manyara-tree-lodge-by-and-beyond",
+  "name": "Drive Me around Tanzania (Lake Manyara Tree Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night private guided safari: save up to 22%",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night land safari with a private &Beyond guide and six-seater vehicle, across 2 to 3 nominated &Beyond Tanzania lodges and partner properties, saving up to 22%. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000092",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-lake-serengeti-under-canvas",
+  "name": "Drive Me around Tanzania (Serengeti Under Canvas)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night private guided safari: save up to 22%",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night land safari with a private &Beyond guide and six-seater vehicle, across 2 to 3 nominated &Beyond Tanzania lodges and partner properties, saving up to 22%. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000093",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-kleins-camp",
+  "name": "Drive Me around Tanzania (Klein's Camp)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night private guided safari: save up to 22%",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night land safari with a private &Beyond guide and six-seater vehicle, across 2 to 3 nominated &Beyond Tanzania lodges and partner properties, saving up to 22%. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000094",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-grumeti-safari-camp",
+  "name": "Drive Me around Tanzania (Grumeti Serengeti River Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "7-night private guided safari: save up to 22%",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "1 November 2026 to 10 January 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "An all-inclusive 7-night land safari with a private &Beyond guide and six-seater vehicle, across 2 to 3 nominated &Beyond Tanzania lodges and partner properties, saving up to 22%. Cannot be combined with other &Beyond offers.",
+  "volume": "safaris"
+ },
+ {
+  "id": "OFR-2026-000095",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "beyond-mnemba-by-and-beyond",
+  "name": "Fly Me to Mnemba Island (Mnemba Island)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "3 island nights with flights and transfers included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2028-01-10",
+   "text": "Travel until 10 January 2028; Mnemba Island is closed each year from 8 April to 20 May"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "A 3-night package at &Beyond Mnemba Island as an extension to an &Beyond safari in Tanzania or Kenya, including flights from or to Arusha, Manyara or Nairobi, transfers and island activities. Cannot be combined with other &Beyond offers.",
+  "volume": "stays"
  }
 ]

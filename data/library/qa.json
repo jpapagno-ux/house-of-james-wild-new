@@ -575,7 +575,7 @@
   {
    "stay_id": "6a89a1b3181c451d04a8344d",
    "slug": "beyond-grumeti-safari-camp",
-   "name": "&Beyond Grumeti Serengeti River Lodge",
+   "name": "andBeyond Grumeti Serengeti River Lodge",
    "country": "Tanzania",
    "missing": [],
    "released": true
@@ -924,7 +924,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8ec",
    "slug": "chumbe-island-zanzibar",
-   "name": "Chumbe Isalnd Escape Zanzibar",
+   "name": "Chumbe Island, Zanzibar",
    "country": "Tanzania",
    "missing": [],
    "released": true
@@ -1414,7 +1414,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff912",
    "slug": "gibbs-farm",
-   "name": "Gibbs Farm",
+   "name": "Gibb's Farm",
    "country": "Tanzania",
    "missing": [],
    "released": true
@@ -2417,7 +2417,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff93e",
    "slug": "manyara-tree-lodge-by-and-beyond",
-   "name": "Lake Manyara Tree Lodge By & Beyond",
+   "name": "andBeyond Lake Manyara Tree Lodge",
    "country": "Tanzania",
    "missing": [],
    "released": true
@@ -2645,7 +2645,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff964",
    "slug": "nayara-gardens",
-   "name": "Nayara Gardens Arenal Rainforest Hideaway",
+   "name": "Nayara Gardens",
    "country": "Costa Rica",
    "missing": [],
    "released": true
@@ -2653,7 +2653,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff965",
    "slug": "nayara-hangaroa",
-   "name": "Nayara Hangaroa Rapa Nui",
+   "name": "Nayara Hangaroa",
    "country": "Chile & Easter Island",
    "missing": [],
    "released": true
@@ -2705,9 +2705,7 @@
    "slug": "nimali-mara",
    "name": "Nimali Mara",
    "country": "Tanzania",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2715,9 +2713,7 @@
    "slug": "nimali-serengeti",
    "name": "Nimali Serengeti",
    "country": "Tanzania",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {

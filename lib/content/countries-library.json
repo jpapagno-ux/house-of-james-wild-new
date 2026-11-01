@@ -2794,20 +2794,20 @@
    ],
    "airports": [
     [
-     "Manyara Airstrip (LKY)",
-     "Serves 3 stays in the Ledger here"
-    ],
-    [
      "Arusha Airport (ARK)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 2 stays in the Ledger here"
     ],
     [
      "Zanzibar International Airport (ZNZ)",
      "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Lake Manyara Airport (LKY)",
+     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "LKY · ARK",
+   "flyInto": "ARK · ZNZ",
    "bestShort": "Jun–Oct",
    "atlasName": "Tanzania"
   },

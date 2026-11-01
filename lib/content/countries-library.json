@@ -435,6 +435,98 @@
    "atlasName": "Australia"
   },
   {
+   "slug": "bahamas",
+   "name": "Bahamas",
+   "region": "caribbean-mexico",
+   "regionName": "Caribbean & Mexico",
+   "ledgerId": "DST-2026-000072",
+   "subtitle": "Where the Ocean Sets the Pace",
+   "leading": "Soft sand beaches, shallow turquoise waters, and islands scattered across warm seas define this idyllic archipelago. The landscape feels airy and bright, shaped by coral shallows and gentle tides. Stays offer barefoot tranquility and oceanfront elegance. Swim with vibrant marine life, sail between cays, or simply unwind under the glow of afternoon sun. The Bahamas invite ease, clarity, and coastal calm.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/682509b9a60d8d65e7c3badd_GettyImages-1467093070.jpg",
+    "alt": "Bahamas, Caribbean & Mexico"
+   },
+   "story": [
+    {
+     "eyebrow": "Where the Ocean Sets the Pace",
+     "title": "A Collection of Islands, Reefs, and Endless Blue",
+     "blocks": [
+      {
+       "p": "The Bahamas is an archipelago of over 700 islands, where crystal clear waters, white sand beaches, and vibrant coral reefs create one of the Caribbean’s most breathtaking escapes. From secluded cays to world famous blue holes, every island offers its own blend of natural beauty and relaxed island living."
+      },
+      {
+       "p": "Travel here is about embracing the sea. Snorkeling colorful reefs, sailing between untouched islands, and unwinding on quiet beaches reveal a rhythm that feels effortless, peaceful, and deeply restorative."
+      },
+      {
+       "p": "For those seeking turquoise waters and laid back luxury, the Bahamas offers an experience that is both refreshing and unforgettable."
+      },
+      {
+       "p": "Journeys are designed with local expertise and access to private islands, marine parks, and authentic coastal experiences, creating stays that feel seamless, exclusive, and deeply connected to the ocean."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a68eb7e036a356129180dd1_Endless%20Blue.avif",
+      "alt": "Bahamas: A Collection of Islands, Reefs, and Endless Blue"
+     }
+    },
+    {
+     "eyebrow": "Find Your Island Escape in the Bahamas",
+     "title": "Where Ocean, Adventure & Relaxation Meet",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Beach lovers seeking secluded island escapes; couples and honeymooners looking for romantic coastal retreats; ocean enthusiasts passionate about snorkeling, diving, and sailing; and luxury travelers searching for effortless tropical experiences."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Swim with the famous pigs of Exuma, snorkel vibrant coral reefs, explore hidden blue holes, sail between untouched islands, and discover some of the clearest waters on Earth."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Bahamas journey with our travel designers and experience one of the Caribbean’s most spectacular island destinations."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a68eaa85ad002afba0605ef_Island%20Escape%20in%20the%20Bahamas.jpg",
+      "alt": "Bahamas: Where Ocean, Adventure & Relaxation Meet"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Bahamas",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Exuma International Airport (GGT)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "GGT",
+   "bestShort": "Nov–May",
+   "atlasName": "Bahamas"
+  },
+  {
    "slug": "belize",
    "name": "Belize",
    "region": "central-america",
@@ -618,6 +710,106 @@
    "flyInto": "MUB · BBK",
    "bestShort": "May–Oct",
    "atlasName": "Botswana"
+  },
+  {
+   "slug": "brazil",
+   "name": "Brazil",
+   "region": "south-america",
+   "regionName": "South America",
+   "ledgerId": "DST-2026-000038",
+   "subtitle": "Where Nature Moves with Rhythm",
+   "leading": "Rainforest, river, and coastline come together in a landscape rich with life and colour. From the Amazon canopy to sweeping beaches and dramatic mountainsides, the scenery is vibrant and diverse. Stays reflect this natural abundance, each offering a window into Brazil’s wild beauty. Explore biodiverse waterways, wander through lush jungle trails, or relax on golden sands warmed by the South Atlantic. Brazil invites openness, energy, and connection to nature’s rhythm.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630057bbd3ea24c5c73f44_BrazilAerialHero1.jpg",
+    "alt": "Brazil, South America"
+   },
+   "story": [
+    {
+     "eyebrow": "Where Nature Moves with Rhythm",
+     "title": "A Land of Rainforest, Coastlines, and Living Energy",
+     "blocks": [
+      {
+       "p": "Brazil is a country of scale and vitality, where vast rainforests, powerful rivers, and sunlit coastlines create a landscape that feels alive in every direction. From the Amazon to the Atlantic, nature and culture move together in constant rhythm, shaping an experience that is both dynamic and immersive."
+      },
+      {
+       "p": "Travel here is about energy and contrast. Exploring dense jungle, standing before thundering waterfalls, and experiencing vibrant coastal life reveal a rhythm that feels bold, colorful, and deeply expressive."
+      },
+      {
+       "p": "For those seeking nature, culture, and movement, Brazil offers an experience that feels expansive, engaging, and unforgettable."
+      },
+      {
+       "p": "Journeys are designed with local expertise and access to both wild environments and cultural centers, creating experiences that feel seamless, immersive, and deeply connected."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697e08a2dc6e41fc26b91d51_DJI_0341.webp",
+      "alt": "Brazil: A Land of Rainforest, Coastlines, and Living Energy"
+     }
+    },
+    {
+     "eyebrow": "Find Your Rhythm in Brazil",
+     "title": "Where Nature, Culture & Energy Collide",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Adventure seekers exploring diverse landscapes; cultural travelers drawn to music and movement; photographers chasing color and contrast; and conscious travelers seeking immersive, nature driven experiences."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Explore the Amazon rainforest, stand before the power of Iguazu Falls, experience the energy of Rio, and unwind along tropical coastlines where culture and nature meet."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Brazil journey with our travel designers and experience one of the world’s most vibrant destinations."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697e08abe773ae7dbfc89e31_470.webp",
+      "alt": "Brazil: Where Nature, Culture & Energy Collide"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Brazil",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Hercílio Luz International Airport (FLN)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Navegantes International Airport (NVT)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Porto Seguro Airport (BPS)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "FLN · NVT",
+   "bestShort": "Jul–Dec",
+   "atlasName": "Brazil"
   },
   {
    "slug": "california",
@@ -866,6 +1058,61 @@
    "flyInto": "KOS · PNH",
    "bestShort": "Nov–Apr",
    "atlasName": "Cambodia"
+  },
+  {
+   "slug": "canada",
+   "name": "Canada",
+   "region": "usa-canada",
+   "regionName": "USA & Canada",
+   "ledgerId": "DST-2026-000064",
+   "subtitle": "3 vetted stays",
+   "leading": "Expansive wilderness stretches across mountains, forests, lakes, and coastline. The landscape feels both powerful and serene, shaped by shifting seasons and abundant nature. Stays offer immersion in rugged beauty, from alpine lodges to lakeside retreats. Experience glacier fed rivers, hike forested trails, or witness wildlife in untouched environments. Canada invites deep breaths, quiet awe, and a renewed connection to the natural world.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/wildco/canada/clayoquot/firepit-twilight",
+    "alt": "Canada, USA & Canada"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Canada",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Tofino-Long Beach Airport (YAZ)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Vancouver International Airport (YVR)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Victoria International Airport (YYJ)",
+     "Serves 2 stays in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "YAZ · YVR",
+   "bestShort": "May–Oct",
+   "atlasName": "Canada"
   },
   {
    "slug": "chile",
@@ -1211,6 +1458,114 @@
    "atlasName": "Fiji"
   },
   {
+   "slug": "france",
+   "name": "France",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000021",
+   "subtitle": "1 vetted stays",
+   "leading": "From lavender fields to sunlit vineyards and alpine lakes, the landscape carries an elegance both effortless and grounded. Coastal villages, rural countryside, and mountain horizons each offer their own sense of beauty. Stays here highlight refinement through simplicity and charm. Explore historic towns, savor regional cuisine, or wander through landscapes that inspired generations of artists. France invites appreciation of detail, pace, and place.",
+   "hero": {
+    "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4a1e409aa_96dbca082_6a512155291f1df2bab90bee_Six-Senses-Residences-Courchevel.webp",
+    "alt": "France, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across France",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Courchevel Altiport (CVF)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Chambéry Savoie Airport (CMF)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Geneva Airport (GVA)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "CVF · CMF",
+   "bestShort": "Dec–Mar",
+   "atlasName": "France"
+  },
+  {
+   "slug": "hawaii",
+   "name": "Hawaii",
+   "region": "usa-canada",
+   "regionName": "USA & Canada",
+   "ledgerId": "DST-2026-000018",
+   "subtitle": "2 vetted stays",
+   "leading": "Emerald cliffs, volcanic peaks, and lush rainforest create a landscape alive with movement and meaning. Ocean swells meet black sand shores, waterfalls cut through dense foliage, and culture grounds everything in deep sense of place. Stays honor this connection, offering refuge where nature sets the tone. Experience reef filled bays, wander forest trails scented with tropical blooms, or soak in the warmth of Hawaiian tradition. Hawaii invites immersion in land, sea, and spirit.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/693063fc11c2b10262ba1e8d_shutterstock_1566819187.jpg",
+    "alt": "Hawaii, USA & Canada"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Hawaii",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Daniel K. Inouye International Airport (HNL)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Molokai Airport (MKK)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "HNL · MKK",
+   "bestShort": "Mar–Oct",
+   "atlasName": "United States of America",
+   "useStays": true,
+   "chartLabel": "Hawaii"
+  },
+  {
    "slug": "iceland",
    "name": "Iceland",
    "region": "polar-arctic",
@@ -1307,6 +1662,248 @@
    "flyInto": "KEF",
    "bestShort": "May–Sep",
    "atlasName": "Iceland"
+  },
+  {
+   "slug": "ireland",
+   "name": "Ireland",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000026",
+   "subtitle": "Why Journey To Ireland",
+   "leading": "Ireland is a country of Atlantic edges, layered history, and deeply rooted hospitality, where rugged landscapes meet lively towns and quiet country roads. A carefully crafted journey reveals its character through coastal villages, ancestral places, considered stays, and time to follow the weather, music, and conversation.",
+   "hero": {
+    "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/67703e856_267b6510b_6a8727d01dbe6232fb5fd6b5_Ariel_20House_20Hero.png",
+    "alt": "Ireland, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Why Journey To Ireland",
+     "title": "A More Intimate Way to Experience the Emerald Isle",
+     "blocks": [
+      {
+       "p": "Ireland rewards travelers who leave room for detours. Rather than moving from landmark to landmark, a thoughtfully designed journey might trace the wild edge of Connemara, follow harbors and headlands, or travel north and west through landscapes shaped by the Atlantic. The distinction is in the pace and the detail, with time for cliffside walks, historic houses, village pubs, and the changing light that gives each region its own atmosphere."
+      },
+      {
+       "p": "The country’s stays make the journey feel personal. From coastal bases such as Breac.House and King Sitric to heritage properties including Castle Leslie, The Merrion, and Hayfield Manor, accommodation becomes part of the story rather than simply a place to sleep. My Epic Africa creates journeys around these contrasts, balancing Ireland’s untamed coastline with its gardens, cities, country estates, and warm local welcome."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/stays/europe/breac-house/hero",
+      "alt": "Ireland: A More Intimate Way to Experience the Emerald Isle"
+     }
+    },
+    {
+     "eyebrow": "The Character Of Ireland",
+     "title": "Coastlines, Culture, and Country House Hospitality",
+     "blocks": [
+      {
+       "h": "Atlantic Landscapes",
+       "p": "Ireland’s western seaboard is defined by weather, sea, and scale. Connemara, Achill Island, the harbors and headlands of the coast, and the landscapes of North by Northwest Ireland offer a sense of space and exposure that is best experienced slowly, with scenic drives and walks shaped by the conditions of the day."
+      },
+      {
+       "h": "History In The Landscape",
+       "p": "Ancient ruins, stone walls, historic estates, and old market towns make Ireland’s past part of the present journey. Places such as Castle Leslie and The Merrion add a refined sense of heritage, while regional stays in Limerick, Cahersiveen, and beyond create a closer connection to local character."
+      },
+      {
+       "h": "The Irish Welcome",
+       "p": "Ireland’s hospitality is often found in small, memorable moments: a conversation over dinner, traditional music in a village gathering place, or the easy warmth of a well-run guesthouse. Properties including Aiteall Boutique Accommodation, Ariel House, Number 31, and The Wilder bring distinct interpretations of that welcome."
+      },
+      {
+       "h": "A Journey With Room To Breathe",
+       "p": "Ireland is particularly rewarding when an itinerary is not overfilled. A carefully crafted route can connect Dublin, the southern counties, Connemara, the Atlantic coast, and the northwest while preserving time for weather-led walks, unplanned discoveries, and evenings in characterful hotels and country retreats."
+      }
+     ],
+     "image": {
+      "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eec19dde3_da1e04ac4_697a1381f7ac415cea3407e4_castle-leslie-exterior.jpg",
+      "alt": "Ireland: Coastlines, Culture, and Country House Hospitality"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "May through September is generally the most favorable period for sightseeing and coastal walks. Spring and autumn can offer quieter roads and fewer visitors, but Ireland’s weather is changeable throughout the year."
+    ],
+    [
+     "Getting there",
+     "Most international visitors arrive by air into Dublin, with additional access through airports including Cork and Shannon depending on the itinerary. Ireland can also be reached by ferry from Great Britain and France, and onward travel is typically by private vehicle, rental car, or a carefully planned driver-led route."
+    ],
+    [
+     "Who it suits",
+     "Ireland suits travelers who value landscape, history, local culture, and unhurried exploration. It works particularly well for couples, families, solo travelers, and guests seeking a high-touch journey built around characterful stays rather than a standard packaged tour."
+    ],
+    [
+     "Signature experiences",
+     "Signature experiences include tracing the Atlantic coast, exploring Connemara and Achill Island, following harbors and headlands, visiting historic estates and ruins, discovering Ireland’s literary and musical traditions, and staying in distinctive properties such as Breac.House, Castle Leslie, The Merrion, Hayfield Manor, and The Wilder."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Ireland?",
+     "a": "Ireland can be visited year-round. May through September generally offers the best conditions for sightseeing and coastal walks, while spring and autumn bring fewer visitors and distinctive light, though weather remains changeable in every season."
+    },
+    {
+     "q": "Is Ireland safe for travelers?",
+     "a": "Ireland is generally considered a safe destination for travelers. As with any country, visitors should take normal precautions in cities, on the road, and when walking in remote coastal or rural areas."
+    },
+    {
+     "q": "How many days do you need in Ireland?",
+     "a": "A week allows time to explore one or two regions without rushing. Ten to fourteen days is more suitable for combining Dublin with the south, Connemara, the Atlantic coast, or the north and northwest."
+    },
+    {
+     "q": "What is Ireland famous for?",
+     "a": "Ireland is famous for its dramatic Atlantic coastline, green countryside, rich literary and musical traditions, historic ruins, castles, and welcoming hospitality. It is also known for distinctive regional landscapes, from Connemara to the western peninsulas and island communities."
+    },
+    {
+     "q": "What are the best places to visit in Ireland?",
+     "a": "The best places depend on the style of journey, but compelling regions include Dublin, County Cork and Kerry, Connemara, Achill Island, Limerick, and the north and northwest. The itineraries Connemara at the Wild Edge, Harbors, Headlands & Irish Hearths, and North by Northwest Ireland are designed around these varied landscapes and local character."
+    },
+    {
+     "q": "What are the best things to do on an Ireland trip?",
+     "a": "Travelers can explore coastal paths, historic estates, villages, gardens, ruins, and lively towns, while making time for traditional music and regional food. Ireland is especially well suited to scenic road journeys that combine outdoor discovery with distinctive guesthouses, hotels, and country stays."
+    }
+   ],
+   "contentStatus": "published",
+   "months": [
+    {
+     "area": "Across Ireland",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Donegal Airport (CFN)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "City of Derry Airport (LDY)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Dublin Airport (DUB)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "CFN · LDY",
+   "bestShort": "May–Sep",
+   "atlasName": "Ireland"
+  },
+  {
+   "slug": "italy",
+   "name": "Italy",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000068",
+   "subtitle": "1 vetted stays",
+   "leading": "Rolling countryside, historic cities, dramatic coastlines, and alpine peaks create a landscape filled with richness and texture. Culture, cuisine, and natural beauty combine seamlessly, offering endless inspiration. Stays here celebrate timeless style and regional charm. Wander cobblestone streets, explore coastal trails, or savour meals crafted from local ingredients. Italy invites appreciation of life’s finer rhythms.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec78a35eef779045d2ec9_ItalyHeroFlorince.jpg",
+    "alt": "Italy, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Italy",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Leonardo da Vinci International Airport (FCO)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Ciampino Airport (CIA)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "FCO · CIA",
+   "bestShort": "Apr–Jun",
+   "atlasName": "Italy"
+  },
+  {
+   "slug": "japan",
+   "name": "Japan",
+   "region": "asia",
+   "regionName": "Asia",
+   "ledgerId": "DST-2026-000032",
+   "subtitle": "1 vetted stays",
+   "leading": "Alpine forests, volcanic landscapes, quiet temples, and coastal beauty blend into a world of balance and refinement. Each season brings its own shifts in color, mood, and atmosphere. Stays honor thoughtful simplicity, whether in rural ryokans or modern retreats. Experience ancient paths, soak in onsen waters, or admire gardens shaped with intention. Japan invites presence and appreciation for the quiet harmony of nature and culture.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6862f8892a316af7937473b0_JapanHeroView1.jpg",
+    "alt": "Japan, Asia"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Japan",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Kansai International Airport (KIX)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Osaka International Airport / Itami Airport (ITM)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "KIX · ITM",
+   "bestShort": "Mar–May",
+   "atlasName": "Japan"
   },
   {
    "slug": "kenya",
@@ -2401,6 +2998,61 @@
    "atlasName": "Philippines"
   },
   {
+   "slug": "portugal",
+   "name": "Portugal & the Azores",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000066",
+   "subtitle": "2 vetted stays",
+   "leading": "Sunlit coasts, rolling vineyards, and volcanic islands create a landscape shaped by ocean breeze and old world charm. The Azores add dramatic cliffs, crater lakes, and lush green hills rising from the Atlantic. Stays here blend history with contemporary comfort. Explore coastal paths, soak in geothermal pools, or wander through villages filled with tradition. Portugal and the Azores invite slow exploration and appreciation for natural beauty.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250969b15a80758dd2ed7c_GettyImages-2156783104.jpg",
+    "alt": "Portugal & the Azores, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Portugal & the Azores",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Lisbon (LIS)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Francisco Sá Carneiro Airport (OPO)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Vila Real Airport (VRL)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "LIS · OPO",
+   "bestShort": "Apr–Jun",
+   "atlasName": "Portugal"
+  },
+  {
    "slug": "rwanda",
    "name": "Rwanda",
    "region": "africa",
@@ -2593,6 +3245,257 @@
    "flyInto": "Ask James",
    "bestShort": "Ask James",
    "atlasName": "Slovenia"
+  },
+  {
+   "slug": "spain",
+   "name": "Spain",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000047",
+   "subtitle": "Where Culture Lives in Every Moment",
+   "leading": "From rugged coastlines to olive groves and historic cities, the landscape reveals layers of Mediterranean light and culture. Moorish courtyards, sunlit plazas, and seaside cliffs create scenes steeped in beauty. Stays mirror this richness, blending tradition with contemporary ease. Wander ancient streets, explore coastal paths, or savour long meals shaped by regional heritage. Spain invites immersive days filled with texture, flavour, and warmth.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6833249a2de9b3057e9196cc_GettyImages-462048441.webp",
+    "alt": "Spain, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Where Culture Lives in Every Moment",
+     "title": "A Land of History, Coastlines, and Timeless Energy",
+     "blocks": [
+      {
+       "p": "Spain is a country where history, culture, and landscape come together with effortless intensity. From sunlit Mediterranean coastlines to rolling countryside and vibrant cities, every region carries its own rhythm and identity shaped by centuries of tradition."
+      },
+      {
+       "p": "Travel here is about immersion in atmosphere and culture. Walking through historic streets, experiencing local cuisine, and moving between coast and countryside reveal a rhythm that is warm, expressive, and deeply rooted."
+      },
+      {
+       "p": "For those seeking culture, beauty, and a sense of place, Spain offers an experience that feels rich, lively, and unforgettable."
+      },
+      {
+       "p": "Spain for Culture and Lifestyle Explorers Spain blends architectural heritage, natural beauty, and a strong cultural identity that is lived daily through food, art, and community. Preservation and tradition remain central to its character."
+      },
+      {
+       "p": "Journeys are designed with local insight and access to both iconic landmarks and hidden corners, creating experiences that feel immersive, authentic, and deeply connected."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0d7aa82734b567880a0ce_Spain%20-%20Section%201%20Image.jpg",
+      "alt": "Spain: A Land of History, Coastlines, and Timeless Energy"
+     }
+    },
+    {
+     "eyebrow": "Feel the Spirit of Spain",
+     "title": "Where Tradition, Flavor, and Energy Meet",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Cultural explorers drawn to history and art, food lovers seeking rich culinary experiences, photographers chasing color and architecture, and lifestyle travelers looking for vibrant and authentic destinations."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Explore historic cities filled with architectural beauty, enjoy world renowned cuisine, experience lively festivals, and move between coastal escapes and countryside retreats."
+      },
+      {
+       "p": "These journeys connect you with Spain’s culture and way of life in a way that feels immersive, flavorful, and alive."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Spain journey with our travel designers and create an experience shaped by culture, discovery, and connection."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0d7b8019c45666105c736_Spain%20-%20Section%202%20Image.jpg",
+      "alt": "Spain: Where Tradition, Flavor, and Energy Meet"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Spain",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Adolfo Suárez Madrid‑Barajas (MAD)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "MAD",
+   "bestShort": "May–Oct",
+   "atlasName": "Spain"
+  },
+  {
+   "slug": "spain-ibiza",
+   "name": "Ibiza",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000036",
+   "subtitle": "Where Energy Meets the Sea",
+   "leading": "Soft sands, pine covered hills, and clear Balearic waters offer a different side of this well loved island. Beyond its energy filled towns lie quiet coves, sun drenched terraces, and coastal paths scented with sea salt and herbs. Stays here highlight tranquility, design, and luminous island beauty. Swim in hidden bays, explore cliffside trails, or enjoy long meals under warm Mediterranean light. Ibiza invites easy living shaped by nature, not haste.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6904c22dc355c9a73531d0da_shutterstock_2220850997.jpg",
+    "alt": "Ibiza, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Where Energy Meets the Sea",
+     "title": "An Island of Light, Rhythm, and Hidden Calm",
+     "blocks": [
+      {
+       "p": "Ibiza is more than its reputation. Beyond the vibrant energy lies an island of quiet coves, turquoise waters, and sunlit hills that feel timeless and serene. It is a place where contrast defines the experience, balancing movement and stillness in equal measure."
+      },
+      {
+       "p": "Travel here is about finding your own rhythm. Days unfold along secluded beaches and coastal paths, while evenings carry a different kind of energy shaped by music, light, and atmosphere."
+      },
+      {
+       "p": "For those seeking both escape and expression, Ibiza offers an experience that feels free, fluid, and deeply alive."
+      },
+      {
+       "p": "Ibiza for Lifestyle and Coastal Explorers Ibiza blends natural beauty with a unique cultural identity shaped by art, music, and a connection to the sea. Preservation of its coastline and local traditions remains an important part of its evolving story."
+      },
+      {
+       "p": "Journeys are designed with local insight and access to both hidden natural spaces and iconic island experiences, creating a balance between calm and energy."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0d92fee69c526dc1ad89a_Spain-Ibiza%20-%20Section%201%20Image.jpg",
+      "alt": "Ibiza: An Island of Light, Rhythm, and Hidden Calm"
+     }
+    },
+    {
+     "eyebrow": "Find Your Flow in Ibiza",
+     "title": "Where Freedom, Music, and Nature Align",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Lifestyle travelers drawn to vibrant energy, beach lovers seeking beautiful coastlines, photographers chasing golden light and sea views, and conscious travelers looking for balance between relaxation and expression."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Swim in hidden coves, explore scenic coastal drives, experience world renowned music culture, and unwind in peaceful corners of the island away from the crowds."
+      },
+      {
+       "p": "These journeys connect you with Ibiza’s unique blend of natural beauty and creative energy in a way that feels effortless and immersive."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Ibiza journey with our travel designers and create an experience shaped by freedom, rhythm, and connection."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0d93413d94600be76ca98_Spain-Ibiza%20-%20Section%202%20Image.jpg",
+      "alt": "Ibiza: Where Freedom, Music, and Nature Align"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Ibiza",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Ibiza Airport (IBZ)",
+     "Serves 2 stays in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "IBZ",
+   "bestShort": "May–Oct",
+   "atlasName": "Spain"
+  },
+  {
+   "slug": "switzerland",
+   "name": "Switzerland",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000046",
+   "subtitle": "1 vetted stays",
+   "leading": "Snow capped peaks, mirror like lakes, and green alpine meadows create a landscape defined by precision and purity. Mountain villages blend traditional architecture with sweeping views, and stays here offer refined comfort rooted in nature. Experience high alpine trails, sail across clear lakes, or wander through charming towns framed by dramatic scenery. Switzerland invites clarity, breath, and a sense of quiet elevation.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68681c428b47f9748c5b9a80_GettyImages-1821944217.jpg",
+    "alt": "Switzerland, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Switzerland",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Sion Airport (SIR)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Geneva Airport (GVA)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Zurich Airport (ZRH)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "SIR · GVA",
+   "bestShort": "Dec–Mar",
+   "atlasName": "Switzerland"
   },
   {
    "slug": "tahiti",
@@ -3007,6 +3910,112 @@
    "atlasName": "United States of America",
    "useStays": true,
    "chartLabel": "Utah"
+  },
+  {
+   "slug": "vietnam",
+   "name": "Vietnam",
+   "region": "asia",
+   "regionName": "Asia",
+   "ledgerId": "DST-2026-000042",
+   "subtitle": "Where Landscapes Tell Ancient Stories",
+   "leading": "Mountains wrapped in mist, terraced fields, tropical coastline, and lantern lit towns create a landscape filled with depth and contrast. Culture and nature blend seamlessly, offering experiences as gentle as they are enriching. Stays here accentuate calm moments surrounded by scenic beauty. Explore winding waterways, wander historic streets, or trek through lush highlands. Vietnam invites meaningful connection through colour, culture, and landscape.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6862ffdee9aa87a1dcbe0ac7_VietnamHeroField1.jpg",
+    "alt": "Vietnam, Asia"
+   },
+   "story": [
+    {
+     "eyebrow": "Where Landscapes Tell Ancient Stories",
+     "title": "A Journey Through Timeless Beauty & Living Culture",
+     "blocks": [
+      {
+       "p": "Vietnam is a country of striking contrasts, where limestone mountains rise from emerald seas, ancient towns glow with lantern light, and vibrant cities move with energy and tradition."
+      },
+      {
+       "p": "From the surreal karsts of Ha Long Bay to the misty highlands of Sapa and the heritage streets of Hoi An, each region feels like its own world connected by a continuous story. Along the way, the Mekong Delta unfolds through floating markets and riverside life shaped by generations."
+      },
+      {
+       "p": "Here, nature and culture are inseparable, and every journey unfolds through landscape, flavor, history, and human connection."
+      },
+      {
+       "p": "My Epic Asia™ for Immersive Travelers Vietnam is one of Southeast Asia’s most layered destinations, where ancient traditions and modern life exist side by side. Community based tourism, heritage preservation, and sustainable travel continue to shape how the country is experienced."
+      },
+      {
+       "p": "My Epic Asia™ designs journeys with local experts and cultural insiders, offering private access, storytelling, and deeply immersive encounters that reveal Vietnam beyond the surface."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e2b9a7a9089a33d1112d4d_Vietnam%20-%20Section%201%20Image.jpg",
+      "alt": "Vietnam: A Journey Through Timeless Beauty & Living Culture"
+     }
+    },
+    {
+     "eyebrow": "Find Your Flow in Vietnam",
+     "title": "Where Mountains, Rivers & Lantern Cities Connect",
+     "blocks": [
+      {
+       "h": "Travel Personalities",
+       "p": "Adventure seekers, cultural explorers, photographers, and slow travelers drawn to dramatic landscapes, heritage towns, and immersive local life."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "In Vietnam, you can cruise through limestone cliffs in Ha Long Bay, ride winding mountain passes in the north, wander lantern lit streets in Hoi An, and explore floating markets in the Mekong Delta, all within one journey."
+      },
+      {
+       "p": "My Epic Asia™ creates multi region itineraries that blend nature, culture, cuisine, and connection into a seamless story across the country."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your journey with My Epic Asia™ by James Wild & Co. Watch cinematic travel films, join live planning sessions, and explore field stories to begin your Vietnamese chapter shaped by rhythm, contrast, and discovery."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a1decc243e9b66a3f813764_Untitled%20design%20(1).png",
+      "alt": "Vietnam: Where Mountains, Rivers & Lantern Cities Connect"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [
+    {
+     "area": "Across Vietnam",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Tan Son Nhat International Airport (SGN)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Lien Khuong Airport (DLI)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Con Dao Airport (VCS)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "SGN · DLI",
+   "bestShort": "Nov–Apr",
+   "atlasName": "Vietnam"
   },
   {
    "slug": "wyoming",

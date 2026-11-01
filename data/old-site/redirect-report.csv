@@ -199,7 +199,7 @@ old path,new path,why,old title
 /book/phinda-homestead-by-beyond,/stays/phinda-homestead-by-and-beyond,booking page -> stay page,Book your stay at Phinda Homestead by &amp;Beyond | Wild Earth Stays
 /book/pikaia-lodge,/destinations/south-america/ecuador-galapagos,booking page -> not on the new site yet; country page,Book your stay at Pikaia Lodge | Wild Earth Stays
 /book/pods-camp-bay,/stays/pods-camp-bay,booking page -> stay page,Book your stay at Pods Camp Bay | Wild Earth Stays
-/book/ponto-dos-gachos,/destinations/south-america,booking page -> not on the new site yet; region page (brazil country page not built yet),Book your stay at Ponta Dos Ganchos | Wild Earth Stays
+/book/ponto-dos-gachos,/destinations/south-america/brazil,booking page -> not on the new site yet; country page,Book your stay at Ponta Dos Ganchos | Wild Earth Stays
 /book/post-ranch-inn,/stays/post-ranch-inn,booking page -> stay page,Book your stay at Post Ranch Inn | Wild Earth Stays
 /book/puu-o-hoku-ranch,/stays/pu-u-hoko-ranch,booking page -> stay page,Book your stay at Pu&#x27;u O Hoku Ranch | Wild Earth Stays
 /book/radhoo-tulum,/stays/radhoo-tulum,booking page -> stay page,Book your stay at Radhoo Tulum | Wild Earth Stays
@@ -350,15 +350,15 @@ old path,new path,why,old title
 /country/argentina,/destinations/south-america/argentina,country page,
 /country/arizona,/destinations/usa-canada/arizona,country page,
 /country/australia,/destinations/oceania/australia,country page,
-/country/bahamas,/destinations/caribbean-mexico,region page (bahamas country page not built yet),
+/country/bahamas,/destinations/caribbean-mexico/bahamas,country page,
 /country/baja-mexico,/destinations/caribbean-mexico/mexico,country page,
 /country/belize,/destinations/central-america/belize,country page,
 /country/bolivia,/destinations/south-america,region page (bolivia country page not built yet),
 /country/botswana,/destinations/africa/botswana,country page,
-/country/brazil,/destinations/south-america,region page (brazil country page not built yet),
+/country/brazil,/destinations/south-america/brazil,country page,
 /country/california,/destinations/usa-canada/california,country page,
 /country/cambodia,/destinations/asia/cambodia,country page,
-/country/canada,/destinations/usa-canada,region page (canada country page not built yet),
+/country/canada,/destinations/usa-canada/canada,country page,
 /country/canadian-high-arctic,/destinations/polar-arctic,region page (canadian-high-arctic country page not built yet),
 /country/chile,/destinations/south-america/chile,country page,
 /country/colorado,/destinations/usa-canada,region page (colorado country page not built yet),
@@ -367,13 +367,13 @@ old path,new path,why,old title
 /country/falkland-islands,/destinations/south-america,region page (falkland-islands country page not built yet),
 /country/fiji,/destinations/oceania/fiji,country page,
 /country/florida,/destinations/usa-canada,region page (florida country page not built yet),
-/country/france,/destinations/europe,region page (france country page not built yet),
+/country/france,/destinations/europe/france,country page,
 /country/greece,/destinations/europe,region page (greece country page not built yet),
-/country/hawaii,/destinations/usa-canada,region page (hawaii country page not built yet),
+/country/hawaii,/destinations/usa-canada/hawaii,country page,
 /country/iceland,/destinations/polar-arctic/iceland,country page,
 /country/indonesia,/destinations/asia/indonesia,country page,
-/country/ireland,/destinations/europe,region page (ireland country page not built yet),
-/country/italy,/destinations/europe,region page (italy country page not built yet),
+/country/ireland,/destinations/europe/ireland,country page,
+/country/italy,/destinations/europe/italy,country page,
 /country/kenya,/destinations/africa/kenya,country page,
 /country/madagascar,/destinations/africa/madagascar,country page,
 /country/maldives,/destinations/asia/maldives,country page,
@@ -389,25 +389,25 @@ old path,new path,why,old title
 /country/panama,/destinations/central-america/panama,country page,
 /country/peru,/destinations/south-america/peru,country page,
 /country/philippines,/destinations/asia/philippines,country page,
-/country/portugal,/destinations/europe,region page (portugal country page not built yet),
+/country/portugal,/destinations/europe/portugal,country page,
 /country/ross-sea,/destinations/polar-antarctica,region page (ross-sea country page not built yet),
 /country/rwanda,/destinations/africa/rwanda,country page,
 /country/seychelles-find-your-wild-in-the-indian-ocean,/destinations/africa/seychelles,country page,
 /country/south-africa,/destinations/africa/south-africa,country page,
 /country/south-georgia,/destinations/polar-antarctica,region page (south-georgia country page not built yet),
 /country/south-pole,/destinations/polar-antarctica,region page (south-pole country page not built yet),
-/country/spain,/destinations/europe,region page (spain country page not built yet),
-/country/spain-ibiza,/destinations/europe,region page (spain country page not built yet),
-/country/spain-isla-mallorca,/destinations/europe,region page (spain country page not built yet),
+/country/spain,/destinations/europe/spain,country page,
+/country/spain-ibiza,/destinations/europe/spain,country page,
+/country/spain-isla-mallorca,/destinations/europe/spain,country page,
 /country/st-barths,/destinations/caribbean-mexico,region page (st-barths country page not built yet),
 /country/st-lucia,/destinations/caribbean-mexico,region page (st-lucia country page not built yet),
-/country/switzerland,/destinations/europe,region page (switzerland country page not built yet),
+/country/switzerland,/destinations/europe/switzerland,country page,
 /country/tahiti,/destinations/oceania/tahiti,country page,
 /country/tanzania,/destinations/africa/tanzania,country page,
 /country/thailand,/destinations/asia/thailand,country page,
 /country/turks-caicos,/destinations/caribbean-mexico,region page (turks-caicos country page not built yet),
 /country/utah,/destinations/usa-canada/utah,country page,
-/country/vietnam,/destinations/asia,region page (vietnam country page not built yet),
+/country/vietnam,/destinations/asia/vietnam,country page,
 /country/virgin-islands,/destinations/caribbean-mexico,region page (virgin-islands country page not built yet),
 /country/wyoming,/destinations/usa-canada/wyoming,country page,
 /country/zambia,/destinations/africa/zambia,country page,
@@ -434,7 +434,7 @@ old path,new path,why,old title
 /memoir/wild-earth-stay-founder-story-40-years-of-sustainable-travel,/journal,journal (post not migrated yet),From Surf to Soul | Wild Earth Stays Memoirs
 /memoirs,/journal,site page,
 /property/aguas-claras,/stays/aguas-claras,stay page,Aguas Claras | Luxury Stays in Costa Rica | Wild Earth Stays
-/property/aiteall-boutique-accommodation,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Aiteall Boutique Accommodation | Luxury Stays in Ireland | Wild Earth Stays
+/property/aiteall-boutique-accommodation,/destinations/europe/ireland,not on the new site yet; country page,Aiteall Boutique Accommodation | Luxury Stays in Ireland | Wild Earth Stays
 /property/aliikai-voyage,/voyages/ships/aliikai,Aliikai vessel profile,Aliikai Voyage | Luxury Stays in Indonesia | Wild Earth Stays
 /property/alila-ventana-big-sur,/stays/alila-ventana-big-sur,stay page,Alila Ventana Big Sur | Luxury Stays in California | Wild Earth Stays
 /property/alya-catamaran-galapagos,/stays/alya-catamaran-galapagos,stay page,Alya Catamaran Galapagos | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
@@ -541,7 +541,7 @@ old path,new path,why,old title
 /property/explora-torres-del-paine,/stays/explora-torres-del-paine,stay page,Explora Torres del Paine | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/feline-fields-lodge,/stays/feline-fields-lodge,stay page,Feline Fields Lodge | Luxury Stays in Botswana | Wild Earth Stays
 /property/feline-fields-vintage-camp,/stays/feline-fields-vintage-camp,stay page,Feline Fields Vintage Camp | Luxury Stays in Botswana | Wild Earth Stays
-/property/ferndale-achill-island,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),"Ferndale, Achill Island | Luxury Stays in Ireland | Wild Earth Stays"
+/property/ferndale-achill-island,/destinations/europe/ireland,not on the new site yet; country page,"Ferndale, Achill Island | Luxury Stays in Ireland | Wild Earth Stays"
 /property/few-far-luvhondo,/destinations/africa/kenya,not on the new site yet; country page,Few &amp; Far Luvhondo | Luxury Stays in Kenya | Wild Earth Stays
 /property/fiji-marriott-resort-momi-bay,/destinations/oceania/fiji,not on the new site yet; country page,Fiji Marriott Resort Momi Bay | Luxury Stays in Fiji | Wild Earth Stays
 /property/fogo-island-inn,/stays/fogo-island-inn,stay page,Fogo Island Inn | Luxury Stays in Canada | Wild Earth Stays
@@ -573,7 +573,7 @@ old path,new path,why,old title
 /property/isla-palenque-resort,/stays/isla-palenque-resort,stay page,Isla Palenque Resort | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/isla-secas,/stays/isla-secas,stay page,Isla Secas | Luxury Stays in Panama | Wild Earth Stays
 /property/isla-secas-panama,/stays/isla-secas-panama,stay page,Isla Secas - Panama | Luxury Stays in Panama | Wild Earth Stays
-/property/iveagh-garden-hotel,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
+/property/iveagh-garden-hotel,/destinations/europe/ireland,not on the new site yet; country page,Iveagh Garden Hotel | Luxury Stays in Ireland | Wild Earth Stays
 /property/ja-manufaru-maldives,/stays/ja-manufaru-maldives,stay page,JA Manufaru Maldives | Luxury Stays in Maldives | Wild Earth Stays
 /property/jacks-camp,/stays/jacks-camp,stay page,Jacks Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/jacks-private-camp,/stays/jacks-private-camp,stay page,Jacks Private Camp | Luxury Stays in Botswana | Wild Earth Stays
@@ -588,7 +588,7 @@ old path,new path,why,old title
 /property/khwai-lediba,/stays/khwai-lediba,stay page,Khwai Lediba | Luxury Stays in Botswana | Wild Earth Stays
 /property/kichakani-camp,/stays/kichakani-camp,stay page,Kichakani Camp | Luxury Stays in Tanzania | Wild Earth Stays
 /property/kicheche-mara-north,/stays/kicheche-mara-north,stay page,Kicheche Mara North | Luxury Stays in Kenya | Wild Earth Stays
-/property/king-sitric,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),King Sitric | Luxury Stays in Ireland | Wild Earth Stays
+/property/king-sitric,/destinations/europe/ireland,not on the new site yet; country page,King Sitric | Luxury Stays in Ireland | Wild Earth Stays
 /property/kokoko-camp-by-asilia,/stays/kokoko-camp-by-asilia,stay page,Kokoko Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
 /property/kudadoo-private-island,/stays/kudadoo-private-island,stay page,Kudadoo Private Island | Luxury Stays in Maldives | Wild Earth Stays
 /property/kura-boutique-resort,/stays/kura-boutique-resort,stay page,Kura Boutique Resort | Luxury Stays in Costa Rica | Wild Earth Stays
@@ -663,7 +663,7 @@ old path,new path,why,old title
 /property/nomade-temple-madrid,/stays/nomade-temple-madrid,stay page,Nomade Temple Madrid | Luxury Stays in Spain | Wild Earth Stays
 /property/nomade-tulum,/stays/nomade-tulum,stay page,Nomade Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/north-island-okavango,/stays/north-island-okavango,stay page,North Island Okavango | Luxury Stays in Botswana | Wild Earth Stays
-/property/number-31,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),Number 31 | Luxury Stays in Ireland | Wild Earth Stays
+/property/number-31,/destinations/europe/ireland,not on the new site yet; country page,Number 31 | Luxury Stays in Ireland | Wild Earth Stays
 /property/ocean-nova-cruise,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),Ocean Nova Cruise | Luxury Stays in Antarctica Cruises | Wild Earth Stays
 /property/ol-jogi-conservancy,/stays/ol-jogi-conservancy,stay page,Ol Jogi Conservancy | Luxury Stays in Kenya | Wild Earth Stays
 /property/ol-pejeta-bush-camp-asilia,/stays/ol-pejeta-bush-camp-asilia,stay page,Ol Pejeta Bush Camp by Asilia | Luxury Stays in Kenya | Wild Earth Stays
@@ -683,10 +683,10 @@ old path,new path,why,old title
 /property/phinda-homestead-by-and-beyond,/stays/phinda-homestead-by-and-beyond,stay page,Phinda Homestead by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
 /property/pikaia-lodge,/destinations/south-america/ecuador-galapagos,not on the new site yet; country page,Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
 /property/pods-camp-bay,/stays/pods-camp-bay,stay page,Pods Camp Bay | Luxury Stays in South Africa | Wild Earth Stays
-/property/ponta-dos-ganchos,/destinations/south-america,not on the new site yet; region page (brazil country page not built yet),Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
+/property/ponta-dos-ganchos,/destinations/south-america/brazil,not on the new site yet; country page,Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
 /property/post-ranch-inn,/stays/post-ranch-inn,stay page,Post Ranch Inn | Luxury Stays in California | Wild Earth Stays
 /property/pu-u-hoko-ranch,/stays/pu-u-hoko-ranch,stay page,Pu&#x27;u O Hoku Ranch | Luxury Stays in Hawaii | Wild Earth Stays
-/property/quinlan-cooke-cahersiveen,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
+/property/quinlan-cooke-cahersiveen,/destinations/europe/ireland,not on the new site yet; country page,"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
 /property/rayvadee-resort,/stays/rayvadee-resort,stay page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
@@ -772,10 +772,10 @@ old path,new path,why,old title
 /property/the-beach-tulum,/stays/the-beach-tulum,stay page,The Beach Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/the-brando-tetiaroa,/stays/the-brando-tetiaroa,stay page,The Brando Tetiaroa | Luxury Stays in Tahiti | Wild Earth Stays
 /property/the-highlands-by-asilia-highlands,/stays/the-highlands-by-asilia-highlands,stay page,The Highlands by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
-/property/the-merrion,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),The Merrion | Luxury Stays in Ireland | Wild Earth Stays
+/property/the-merrion,/destinations/europe/ireland,not on the new site yet; country page,The Merrion | Luxury Stays in Ireland | Wild Earth Stays
 /property/the-original-camp-by-serian,/stays/the-original-camp-by-serian,stay page,The Original Camp by Serian  | Luxury Stays in Kenya | Wild Earth Stays
 /property/the-retreat-at-blue-lagoon,/stays/the-retreat-at-blue-lagoon,stay page,The Retreat At Blue Lagoon | Luxury Stays in Iceland | Wild Earth Stays
-/property/the-wilder,/destinations/europe,not on the new site yet; region page (ireland country page not built yet),The Wilder | Luxury Stays in Ireland | Wild Earth Stays
+/property/the-wilder,/destinations/europe/ireland,not on the new site yet; country page,The Wilder | Luxury Stays in Ireland | Wild Earth Stays
 /property/thornybush-reserve,/destinations/africa/south-africa,not on the new site yet; country page,Thornybush Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/tierra-patagonia,/stays/tierra-patagonia,stay page,Tierra Patagonia | Luxury Stays in Chile &amp; Easter Island | Wild Earth Stays
 /property/time-tide-chinzombo-2,/stays/time-tide-chinzombo-2,stay page,Time + Tide Chinzombo | Luxury Stays in Zambia | Wild Earth Stays
@@ -847,9 +847,9 @@ old path,new path,why,old title
 /stay/aguas-claras-2-bedroom-deluxe-bungalow,/stays/aguas-claras,room of aguas-claras -> stay page,2-Bedroom Deluxe Bungalow with Private Plunge Pool at Aguas Claras | Wild Earth Stays
 /stay/aguas-claras-2-bedroom-luxury-bungalow,/stays/aguas-claras,room of aguas-claras -> stay page,2-Bedroom Luxury Bungalow at Aguas Claras | Wild Earth Stays
 /stay/aguas-claras-pavlova-suites,/stays/aguas-claras,room of aguas-claras -> stay page,Pavlova Suites at Aguas Claras | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-deluxe-king-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at Aiteall Boutique Accommodation | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-deluxe-queen-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Deluxe Queen Room at Aiteall Boutique Accommodation | Wild Earth Stays
-/stay/aiteall-boutique-accommodation-superior-king-room,/destinations/europe,room of aiteall-boutique-accommodation -> not on the new site yet; region page (ireland country page not built yet),Superior King Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-deluxe-king-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Deluxe King Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-deluxe-queen-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Deluxe Queen Room at Aiteall Boutique Accommodation | Wild Earth Stays
+/stay/aiteall-boutique-accommodation-superior-king-room,/destinations/europe/ireland,room of aiteall-boutique-accommodation -> not on the new site yet; country page,Superior King Room at Aiteall Boutique Accommodation | Wild Earth Stays
 /stay/aliikai-abui-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Abui Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
 /stay/aliikai-asmat-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Asmat Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
 /stay/aliikai-dayak-cabin,/voyages/ships/aliikai#cabins,room of aliikai-voyage -> Aliikai vessel profile,Oceanview cabin with portholes (Dayak Cabin on the lower deck) at Aliikai Voyage | Wild Earth Stays
@@ -1153,11 +1153,11 @@ old path,new path,why,old title
 /stay/feline-fields-lodge-pool-suite,/stays/feline-fields-lodge,room of feline-fields-lodge -> stay page,Pool Suite at Feline Fields Lodge | Wild Earth Stays
 /stay/feline-fields-vintage-camp-family-tent,/stays/feline-fields-vintage-camp,room of feline-fields-vintage-camp -> stay page,Family Tent at Feline Fields Vintage Camp | Wild Earth Stays
 /stay/feline-fields-vintage-camp-luxury-bell-tent,/stays/feline-fields-vintage-camp,room of feline-fields-vintage-camp -> stay page,Luxury Bell Tent at Feline Fields Vintage Camp | Wild Earth Stays
-/stay/ferndale-achill-island-ancient-china-deluxe-dbl-room,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Ancient China (Deluxe Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-arabian-nights-luxury-dbl-room,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Arabian Nights (Luxury Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-laguna-veneta-junior-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Laguna Veneta (Junior Suite) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-mayan-treasure-bay-mini-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Mayan Treasure Bay (Mini Suite) at Ferndale, Achill Island | Wild Earth Stays"
-/stay/ferndale-achill-island-roman-palaestra-royal-suite,/destinations/europe,room of ferndale-achill-island -> not on the new site yet; region page (ireland country page not built yet),"Roman Palaestra (Royal Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-ancient-china-deluxe-dbl-room,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Ancient China (Deluxe Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-arabian-nights-luxury-dbl-room,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Arabian Nights (Luxury Dbl Room) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-laguna-veneta-junior-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Laguna Veneta (Junior Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-mayan-treasure-bay-mini-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Mayan Treasure Bay (Mini Suite) at Ferndale, Achill Island | Wild Earth Stays"
+/stay/ferndale-achill-island-roman-palaestra-royal-suite,/destinations/europe/ireland,room of ferndale-achill-island -> not on the new site yet; country page,"Roman Palaestra (Royal Suite) at Ferndale, Achill Island | Wild Earth Stays"
 /stay/fiji-marriott-resort-momi-bay-duplex-lagoon-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Duplex Lagoon Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
 /stay/fiji-marriott-resort-momi-bay-duplex-ocean-front-bure,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Duplex Ocean Front Bure at Fiji Marriott Resort Momi Bay | Wild Earth Stays
 /stay/fiji-marriott-resort-momi-bay-lagoon-bure-king,/destinations/oceania/fiji,room of fiji-marriott-resort-momi-bay -> not on the new site yet; country page,Lagoon Bure King at Fiji Marriott Resort Momi Bay | Wild Earth Stays
@@ -1237,11 +1237,11 @@ old path,new path,why,old title
 /stay/inkaterra-reserva-amazonica-tambopata-suite,/stays/inkaterra-reserva-amazonica,room of inkaterra-reserva-amazonica -> stay page,Tambopata Suite at Inkaterra Reserva Amazonica | Wild Earth Stays
 /stay/isla-palenque-resort-beachfront-casita,/stays/isla-palenque-resort,room of isla-palenque-resort -> stay page,Beachfront Casita at Isla Palenque Resort | Wild Earth Stays
 /stay/isla-palenque-resort-beachfront-villa,/stays/isla-palenque-resort,room of isla-palenque-resort -> stay page,Beachfront Villa at Isla Palenque Resort | Wild Earth Stays
-/stay/iveagh-garden-hotel-city-pod,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),City Pod at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-deluxe-king-room,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-deluxe-townhouse,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Deluxe Townhouse at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-presidential-suite,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Presidential Suite at Iveagh Garden Hotel | Wild Earth Stays
-/stay/iveagh-garden-hotel-superior-room,/destinations/europe,room of iveagh-garden-hotel -> not on the new site yet; region page (ireland country page not built yet),Superior Room at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-city-pod,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,City Pod at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-deluxe-king-room,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Deluxe King Room at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-deluxe-townhouse,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Deluxe Townhouse at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-presidential-suite,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Presidential Suite at Iveagh Garden Hotel | Wild Earth Stays
+/stay/iveagh-garden-hotel-superior-room,/destinations/europe/ireland,room of iveagh-garden-hotel -> not on the new site yet; country page,Superior Room at Iveagh Garden Hotel | Wild Earth Stays
 /stay/kayumanis-jimbaran-one-bedroom-estate,/stays/kayumanis-jimbaran-private-estates,room of kayumanis-jimbaran-private-estates -> stay page,One Bedroom Estate at Kayumanis Jimbaran Private Estates | Wild Earth Stays
 /stay/kayumanis-jimbaran-two-bedroom-estate,/stays/kayumanis-jimbaran-private-estates,room of kayumanis-jimbaran-private-estates -> stay page,Two Bedroom Estate at Kayumanis Jimbaran Private Estates | Wild Earth Stays
 /stay/kayumanis-nusa-dua-1-br-private-pool-villa,/stays/kayumanis-nusa-dua,room of kayumanis-nusa-dua -> stay page,One Bedroom Private Pool Villa at Kayumanis Nusa Dua | Wild Earth Stays
@@ -1253,11 +1253,11 @@ old path,new path,why,old title
 /stay/kayumanis-ubud-kayumanis-suite-honeymoon-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Kayumanis Suite (Honeymoon Villa) at Kayumanis Ubud | Wild Earth Stays
 /stay/kayumanis-ubud-owners-three-bedroom-pool-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Owner’s Three‑Bedroom Pool Villa at Kayumanis Ubud | Wild Earth Stays
 /stay/kayumanis-ubud-two-bedroom-residence-pool-villa,/stays/kayumanis-ubud,room of kayumanis-ubud -> stay page,Two Bedroom Residence Pool Villa at Kayumanis Ubud | Wild Earth Stays
-/stay/king-sitric-deluxe-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Deluxe Rooms at King Sitric | Wild Earth Stays
-/stay/king-sitric-howth-harbour,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Howth Harbour at King Sitric | Wild Earth Stays
-/stay/king-sitric-oyster-island,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Oyster Island at King Sitric | Wild Earth Stays
-/stay/king-sitric-standard-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Standard Rooms at King Sitric | Wild Earth Stays
-/stay/king-sitric-superior-rooms,/destinations/europe,room of king-sitric -> not on the new site yet; region page (ireland country page not built yet),Superior Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-deluxe-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Deluxe Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-howth-harbour,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Howth Harbour at King Sitric | Wild Earth Stays
+/stay/king-sitric-oyster-island,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Oyster Island at King Sitric | Wild Earth Stays
+/stay/king-sitric-standard-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Standard Rooms at King Sitric | Wild Earth Stays
+/stay/king-sitric-superior-rooms,/destinations/europe/ireland,room of king-sitric -> not on the new site yet; country page,Superior Rooms at King Sitric | Wild Earth Stays
 /stay/kokoko-camp-by-asilia-classic-safari-tent,/stays/kokoko-camp-by-asilia,room of kokoko-camp-by-asilia -> stay page,Classic Safari Tent at Kokoko Camp by Asilia | Wild Earth Stays
 /stay/kudadoo-private-island-one-bedroom-ocean-private-pool-residence,/stays/kudadoo-private-island,room of kudadoo-private-island -> stay page,One-Bedroom Ocean Private Pool Residence at Kudadoo Private Island | Wild Earth Stays
 /stay/kudadoo-private-island-two-bedroom-ocean-private-pool-residence,/stays/kudadoo-private-island,room of kudadoo-private-island -> stay page,Two-Bedroom Ocean Private Pool Residence at Kudadoo Private Island | Wild Earth Stays
@@ -1457,10 +1457,10 @@ old path,new path,why,old title
 /stay/nomade-tulum-deluxe-ocean-view-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Deluxe Ocean View Room at Nomade Tulum | Wild Earth Stays
 /stay/nomade-tulum-deluxe-treehouse-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Deluxe Treehouse Room at Nomade Tulum | Wild Earth Stays
 /stay/nomade-tulum-superior-room,/stays/nomade-tulum,room of nomade-tulum -> stay page,Superior Room at Nomade Tulum | Wild Earth Stays
-/stay/number-31-and-all-that-jazz-family-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),And All That Jazz Family Room at Number 31 | Wild Earth Stays
-/stay/number-31-intimate-double-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Intimate Double Room at Number 31 | Wild Earth Stays
-/stay/number-31-plush-double-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Plush Double Room at Number 31 | Wild Earth Stays
-/stay/number-31-sams-room,/destinations/europe,room of number-31 -> not on the new site yet; region page (ireland country page not built yet),Sam&#x27;s Room at Number 31 | Wild Earth Stays
+/stay/number-31-and-all-that-jazz-family-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,And All That Jazz Family Room at Number 31 | Wild Earth Stays
+/stay/number-31-intimate-double-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Intimate Double Room at Number 31 | Wild Earth Stays
+/stay/number-31-plush-double-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Plush Double Room at Number 31 | Wild Earth Stays
+/stay/number-31-sams-room,/destinations/europe/ireland,room of number-31 -> not on the new site yet; country page,Sam&#x27;s Room at Number 31 | Wild Earth Stays
 /stay/ol-jogi-residence,/stays/ol-jogi-conservancy,room of ol-jogi-conservancy -> stay page,Ol Jogi Private Estate at Ol Jogi Conservancy | Wild Earth Stays
 /stay/ol-pejeta-bush-camp-by-asilia-classic-safari-tent,/stays/ol-pejeta-bush-camp-asilia,room of ol-pejeta-bush-camp-asilia -> stay page,Classic Safari Tent at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
 /stay/ol-pejeta-bush-camp-by-asilia-family-tent,/stays/ol-pejeta-bush-camp-asilia,room of ol-pejeta-bush-camp-asilia -> stay page,Family Tent at Ol Pejeta Bush Camp by Asilia | Wild Earth Stays
@@ -1818,13 +1818,13 @@ old path,new path,why,old title
 /stay/the-beach-tulum-deluxe-room,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Deluxe Room at The Beach Tulum | Wild Earth Stays
 /stay/the-beach-tulum-junior-suite,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Junior Suite at The Beach Tulum | Wild Earth Stays
 /stay/the-beach-tulum-rooftop,/stays/the-beach-tulum,room of the-beach-tulum -> stay page,Rooftop at The Beach Tulum | Wild Earth Stays
-/stay/the-merrion-deluxe-king-room,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Deluxe King Room at The Merrion | Wild Earth Stays
-/stay/the-merrion-garden-wing-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Garden Wing Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-junior-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Junior Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-merrion-queen,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Merrion Queen at The Merrion | Wild Earth Stays
-/stay/the-merrion-merrion-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Merrion Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-penthouse-suite,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Penthouse Suite at The Merrion | Wild Earth Stays
-/stay/the-merrion-superior-king,/destinations/europe,room of the-merrion -> not on the new site yet; region page (ireland country page not built yet),Superior King at The Merrion | Wild Earth Stays
+/stay/the-merrion-deluxe-king-room,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Deluxe King Room at The Merrion | Wild Earth Stays
+/stay/the-merrion-garden-wing-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Garden Wing Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-junior-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Junior Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-merrion-queen,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Merrion Queen at The Merrion | Wild Earth Stays
+/stay/the-merrion-merrion-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Merrion Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-penthouse-suite,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Penthouse Suite at The Merrion | Wild Earth Stays
+/stay/the-merrion-superior-king,/destinations/europe/ireland,room of the-merrion -> not on the new site yet; country page,Superior King at The Merrion | Wild Earth Stays
 /stay/the-nami-project-akua-cabin,/stays/nami-project,room of nami-project -> stay page,Akua Cabin at The Nami Project | Wild Earth Stays
 /stay/the-nami-project-arashi-cabin,/stays/nami-project,room of nami-project -> stay page,Arashi Cabin at The Nami Project | Wild Earth Stays
 /stay/the-nami-project-hasumi-cabin,/stays/nami-project,room of nami-project -> stay page,Hasumi Cabin at The Nami Project | Wild Earth Stays
@@ -1837,12 +1837,12 @@ old path,new path,why,old title
 /stay/the-retreat-at-blue-lagoon-lava-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,Lava Suite at The Retreat At Blue Lagoon | Wild Earth Stays
 /stay/the-retreat-at-blue-lagoon-moss-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,Moss Suite at The Retreat At Blue Lagoon | Wild Earth Stays
 /stay/the-retreat-at-blue-lagoon-the-blue-lagoon-suite,/stays/the-retreat-at-blue-lagoon,room of the-retreat-at-blue-lagoon -> stay page,The Blue Lagoon Suite at The Retreat At Blue Lagoon | Wild Earth Stays
-/stay/the-wilder-lady-jane-suite,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Lady Jane Suite at The Wilder | Wild Earth Stays
-/stay/the-wilder-popular,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Popular at The Wilder | Wild Earth Stays
-/stay/the-wilder-shoe-box,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Shoe Box at The Wilder | Wild Earth Stays
-/stay/the-wilder-small-double-room,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Small Double Room at The Wilder | Wild Earth Stays
-/stay/the-wilder-townhouse-deluxe,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Townhouse Deluxe at The Wilder | Wild Earth Stays
-/stay/the-wilder-townhouse-suite,/destinations/europe,room of the-wilder -> not on the new site yet; region page (ireland country page not built yet),Townhouse Suite at The Wilder | Wild Earth Stays
+/stay/the-wilder-lady-jane-suite,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Lady Jane Suite at The Wilder | Wild Earth Stays
+/stay/the-wilder-popular,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Popular at The Wilder | Wild Earth Stays
+/stay/the-wilder-shoe-box,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Shoe Box at The Wilder | Wild Earth Stays
+/stay/the-wilder-small-double-room,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Small Double Room at The Wilder | Wild Earth Stays
+/stay/the-wilder-townhouse-deluxe,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Townhouse Deluxe at The Wilder | Wild Earth Stays
+/stay/the-wilder-townhouse-suite,/destinations/europe/ireland,room of the-wilder -> not on the new site yet; country page,Townhouse Suite at The Wilder | Wild Earth Stays
 /stay/tierra-patagonia-suite,/stays/tierra-patagonia,room of tierra-patagonia -> stay page,Suite at Tierra Patagonia | Wild Earth Stays
 /stay/tierra-patagonia-superior-room,/stays/tierra-patagonia,room of tierra-patagonia -> stay page,Superior Room at Tierra Patagonia | Wild Earth Stays
 /stay/time-tide-chongwe-classic-safari-tent,/stays/time-tide-chongwe-2,room of time-tide-chongwe-2 -> stay page,Classic Safari Tent at Time + Tide Chongwe | Wild Earth Stays

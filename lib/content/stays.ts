@@ -34,7 +34,17 @@ const NAME_FIX: Record<string, string> = {
 };
 const cleanName = (s: StayData) => NAME_FIX[s.slug] ?? s.name.replace(/\s*\n\s*/g, " ").replace(/\s+/g, " ").trim();
 
-export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}) }));
+// Live booking-engine property keys (book.wildearthstays.com, Tag Albie) the
+// library export does not carry yet; read from the engine's property index on
+// 1 Nov 2026. The Jimbaran key really does end in a hyphen. Set these on the
+// library Stay records and this map can go.
+export const ENGINE_OVERRIDE: Record<string, string> = {
+  "kayumanis-nusa-dua": "kayumanis-nusa-dua",
+  "kayumanis-ubud": "kayumanis-ubud",
+  "kayumanis-jimbaran-private-estates": "kayumanis-jimbaran-private-estates-",
+};
+
+export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}), ...(!s.engine && ENGINE_OVERRIDE[s.slug] ? { engine: ENGINE_OVERRIDE[s.slug] } : {}) }));
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);

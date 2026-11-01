@@ -47,7 +47,7 @@ export default function AccommodationPricingStatus({ state, compact = false }: {
           {state.options.map((o) => (
             <li key={o.label} className="py-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <div><p className="text-[15px]">{o.label}</p><p className="text-[12.5px] ledger-muted">{provenanceLine(o.provenance)}</p></div>
-              <p className="text-right"><Figure p={o} />{o.nights && <span className="block text-[12.5px] ledger-muted">{formatMoney(o.total.amount, o.total.currency)} for {o.nights} {o.nights === 1 ? "night" : "nights"}, before the estate&rsquo;s taxes</span>}</p>
+              <p className="text-right"><Figure p={o} />{o.nights && <span className="block text-[12.5px] ledger-muted">{formatMoney(o.total.amount, o.total.currency)} for {o.nights} {o.nights === 1 ? "night" : "nights"}, before the property&rsquo;s taxes</span>}</p>
             </li>
           ))}
         </ul>
@@ -59,7 +59,7 @@ export default function AccommodationPricingStatus({ state, compact = false }: {
         </div>
       )}
       {state.kind === "unavailable_for_dates" && <p className="mt-2 text-[15px]">The engine has nothing open here for those dates. Try other dates, or ask James: he often knows a way in.</p>}
-      {state.kind === "request_quote" && <p className="mt-2 text-[15px]">{state.reason === "no_live_rate_for_dates" ? "Not priced by the engine for those dates. The house designs the rate with the estate and confirms it with you." : "Priced for you by the house, with the estate, and confirmed before anything is booked."}</p>}
+      {state.kind === "request_quote" && <p className="mt-2 text-[15px]">{state.reason === "no_live_rate_for_dates" ? "Not priced by the engine for those dates. The house designs the rate with the property and confirms it with you." : "Priced for you by the house, with the property, and confirmed before anything is booked."}</p>}
       {state.kind === "source_error" && <p className="mt-2 text-[15px]">The booking engine didn&rsquo;t answer just now. Ask James for a quote, or try again in a moment.</p>}
     </div>
   );

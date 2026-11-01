@@ -18,8 +18,8 @@ const PROVIDER = "Tag Albie booking engine";
 const iso = (d: Date) => d.toISOString().slice(0, 10);
 const defaults = (): LiveSearch => { const a = new Date(); a.setDate(a.getDate() + 45); const b = new Date(a); b.setDate(b.getDate() + 3); return { checkIn: iso(a), checkOut: iso(b), adults: 2 }; };
 const GROUPS: { key: AccommodationUnit["group"]; title: string; line: string }[] = [
-  { key: "room", title: "Rooms & Suites", line: "In the manor and across the estate." },
-  { key: "whole", title: "Cottages & Houses, Taken Whole", line: "For a family or a party travelling together." },
+  { key: "room", title: "Rooms & Suites", line: "" },
+  { key: "whole", title: "Taken Whole", line: "Villas, cottages and houses for a family or a party travelling together." },
 ];
 
 export default function AccommodationCollection({ units, commerce, stayName, staySlug }: { units: AccommodationUnit[]; commerce: StayCommerce; stayName: string; staySlug: string }) {
@@ -55,7 +55,7 @@ export default function AccommodationCollection({ units, commerce, stayName, sta
     <section id="rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="choose-heading">
       <p className="ledger-eyebrow ledger-crimson">Choose your stay</p>
       <h2 id="choose-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where You&rsquo;ll Sleep at {stayName}</h2>
-      <p className="mt-3 text-[16px] ledger-muted max-w-3xl">{usesLive ? "Pick your dates and the engine prices what it has open. Everything else is designed with the estate and confirmed by the house." : "Every unit is priced with the estate and confirmed by the house before anything is booked."}</p>
+      <p className="mt-3 text-[16px] ledger-muted max-w-3xl">{usesLive ? "Pick your dates and the engine prices what it has open. Everything else is designed with the property and confirmed by the house." : "Every unit is priced with the property and confirmed by the house before anything is booked."}</p>
 
       {usesLive && (
         <form className="mt-6 md:sticky md:top-[118px] lg:top-[150px] z-20 flex flex-wrap items-end gap-3 md:gap-4 px-4 md:px-5 py-3 border ledger-border bg-paper/95 backdrop-blur" onSubmit={(e) => { e.preventDefault(); run(q); }}>

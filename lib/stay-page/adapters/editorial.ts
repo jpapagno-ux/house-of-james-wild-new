@@ -7,7 +7,7 @@ import { verdictFor } from "@/lib/content/verdicts";
 import { stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
 import type { StayEditorial } from "../contract";
 
-const TOWN: Record<string, string> = { "leeu-estates": "Franschhoek" };
+const TOWN: Record<string, string> = { "leeu-estates": "Franschhoek", "le-quartier-francais": "Franschhoek", "leeu-house": "Franschhoek", "lion-sands": "Sabi Sand", "kayumanis-nusa-dua": "Nusa Dua, Bali", "kayumanis-ubud": "Ubud, Bali", "kayumanis-jimbaran-private-estates": "Jimbaran, Bali" };
 
 export function editorialFrom(s: StayData): StayEditorial {
   const verdict = verdictFor(`stay:${s.slug}`);

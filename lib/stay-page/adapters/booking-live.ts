@@ -114,6 +114,23 @@ async function fetchBookingLive(slug: string, stayName: string, liveEngineProper
   };
 }
 
+/** The slugs Booking Live can render: published properties with at least one canonical, active unit.
+ * One cached query per build/revalidation window, so the Stay pages that have no units cost nothing. */
+export async function bookingLiveSlugs(): Promise<Set<string>> {
+  const run = unstable_cache(async () => {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL, key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!url || !key) return [] as string[];
+    const sb = createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
+    const { data } = await sb.from("room_types").select("name, source_system, properties!inner(slug, publication_status)").eq("active", true).not("source_system", "is", null);
+    const out = new Set<string>();
+    for (const r of (data ?? []) as unknown as { name: string; source_system: string | null; properties: { slug: string; publication_status: string } }[]) {
+      if (r.properties?.publication_status === "published" && isCanonical({ name: r.name, source_system: r.source_system } as RoomRow)) out.add(r.properties.slug);
+    }
+    return [...out];
+  }, ["stay-page:booking-live-slugs"], { revalidate: REVALIDATE_SECONDS, tags: ["booking-live:accommodations"] });
+  try { return new Set(await run()); } catch { return new Set(); }
+}
+
 /** Cached read (15 minutes), keyed by slug. A failed read returns null so the page can fall back. */
 export async function loadBookingLiveStay(slug: string, stayName: string, liveEngineProperty: string | null): Promise<BookingLiveStay | null> {
   const run = unstable_cache(() => fetchBookingLive(slug, stayName, liveEngineProperty).catch(() => null), ["stay-page:booking-live", slug], { revalidate: REVALIDATE_SECONDS, tags: ["booking-live:accommodations", `stay:${slug}`] });

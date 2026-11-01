@@ -54,7 +54,7 @@ export default function AccommodationDetail({ unit, state, stayName, staySlug, e
                 <p className="ledger-eyebrow ledger-crimson">{dates ? `Your dates · ${nice(dates.checkIn)} to ${nice(dates.checkOut)} · ${travellers} ${travellers === 1 ? "adult" : "adults"}` : "Rates"}</p>
                 <div className="mt-3"><AccommodationPricingStatus state={state} /></div>
                 <div className="hidden md:block"><AccommodationActions unit={unit} stayName={stayName} staySlug={staySlug} state={state} engineUrl={engineUrl} travellers={travellers} /></div>
-                <p className="mt-6 text-[12.5px] ledger-muted">Nothing is charged here. James Wild &amp; Co confirms every rate and date with the estate before a booking is made; the engine shows the estate&rsquo;s own taxes and terms for your exact rate.</p>
+                <p className="mt-6 text-[12.5px] ledger-muted">Nothing is charged here. James Wild &amp; Co confirms every rate and date with the property before a booking is made; a live engine shows the property&rsquo;s own taxes and terms for your exact rate.</p>
               </div>
             </div>
           </div>

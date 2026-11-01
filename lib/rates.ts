@@ -40,9 +40,29 @@ function rooms(section: string): RateRoom[] {
   return out;
 }
 
+// The engine wraps each rate plan in <article data-sentry-component="RateCard">
+// with the plan's name in its <h2> (seen 1 Nov 2026: "Flexible Rate – Kayumanis
+// Nusa Dua", "Non-Refundable Rate – Best Value", "NON REFUNDABLE"). Properties
+// other than Leeu name their plans freely, so plans are read from those
+// articles first; the fixed PLANS list below stays as the fallback for any
+// page without them (unchanged behaviour for Leeu, and for the tests).
+const ARTICLE = /<article[^>]*data-sentry-component="RateCard"[^>]*>/g;
+function parseArticles(html: string, end: number): RatePlan[] {
+  const starts = [...html.slice(0, end).matchAll(ARTICLE)].map((m) => m.index ?? 0);
+  return starts
+    .map((at, i) => {
+      const section = html.slice(at, i + 1 < starts.length ? starts[i + 1] : end);
+      const plan = (section.match(/<h2[^>]*>([\s\S]{2,120}?)<\/h2>/)?.[1] ?? "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+      return { plan: plan || "Rate", rooms: rooms(section) };
+    })
+    .filter((p) => p.rooms.length > 0);
+}
+
 export function parseEngine(html: string): RatePlan[] {
   const stop = html.indexOf("properties in our collection");
   const end = stop > -1 ? stop : html.length;
+  const byArticle = parseArticles(html, end);
+  if (byArticle.length) return byArticle;
   const starts = PLANS.map((plan) => ({ plan, at: html.indexOf(plan) })).filter((x) => x.at > -1 && x.at < end).sort((a, b) => a.at - b.at);
   return starts
     .map((s, i) => ({ plan: s.plan, rooms: rooms(html.slice(s.at, i + 1 < starts.length ? starts[i + 1].at : end)) }))

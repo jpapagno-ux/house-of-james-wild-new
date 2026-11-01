@@ -116,11 +116,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
-  // Step 1 (Leeu reference): the normalized Stay-page contract (editorial +
-  // Booking Live canonical units + media + pricing provenance). Assembled only
-  // for priced stays for now; null when Booking Live has no canonical units or
-  // can't be reached, in which case the page keeps the BookingPanel layout.
-  const stayPage = priced ? await assembleStayPage(s) : null;
+  // Steps 1–2: the normalized Stay-page contract (editorial + Booking Live
+  // canonical units + media + pricing provenance). Assembled for every stay
+  // Booking Live lists with canonical units (one cached lookup per build);
+  // null otherwise, or if Booking Live can't be reached, in which case the page
+  // keeps its previous layout (BookingPanel for Leeu, rooms list for the rest).
+  const stayPage = await assembleStayPage(s);
   // The legacy reference rate stays on the server: it orders units and feeds QA, never the browser.
   const units = stayPage?.accommodations.map((u) => ({ ...u, legacyReference: null })) ?? [];
   const planHref = `/plan?trip=${encodeURIComponent(s.name)}`;
@@ -146,8 +147,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const days = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), images.slice(1), 3, apart);
   const hostEarly = host.state === "available" && !!host.host;
   const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
-  const nav: [string, string][] = priced
-    ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["Included", "included"], ["Rooms & rates", "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
+  const nav: [string, string][] = priced || stayPage
+    ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(priced ? [["Included", "included"] as [string, string]] : []), ["Rooms & rates", "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
@@ -161,7 +162,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
         : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
-        <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
+        <RecordNav items={nav} cta={priced || stayPage ? (stayPage?.commerce.liveEngineProperty ? "Check live rates" : "Choose your stay") : "Plan this stay"} ctaHref={priced || stayPage ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <StayActions slug={s.slug} name={s.name} />
@@ -174,10 +175,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
           {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" icon="mountain-sun" body={s.experiences.paras[0]} />}
-          {priced && stayPage ? <>
-            {/* Leeu reference implementation: units, media and pricing provenance from the Stay-page contract (JWC Booking Live), live rates from the engine per unit. */}
+          {stayPage ? <>
+            {/* Stay-page contract (JWC Booking Live): units, media and pricing provenance, live rates from the engine per unit where the stay has one. */}
             <StayEditorialIntro editorial={stayPage.editorial} showVerdict={false} />
-            <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
+            {priced && <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />}
             <AccommodationCollection units={units} commerce={stayPage.commerce} stayName={stayPage.editorial.name} staySlug={s.slug} />
             {process.env.VERCEL_ENV !== "production" && stayPage.qa.length > 0 && <PreviewNote><p>Booking Live QA (preview only): {stayPage.qa.join(" ")}</p></PreviewNote>}
           </> : priced ? <>
@@ -185,12 +186,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>
             {images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
-            {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
+            {s.engine && !stayPage && <LiveRatesBand property={s.engine} name={s.name} />}
           </>}
           {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
-          {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
+          {!priced && !stayPage && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           {Object.keys(s.facts).length > 0 && (

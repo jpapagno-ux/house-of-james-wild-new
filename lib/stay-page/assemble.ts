@@ -2,7 +2,7 @@ import "server-only";
 import type { StayData } from "@/lib/content/stays";
 import type { StayPageData } from "./contract";
 import { editorialFrom } from "./adapters/editorial";
-import { loadBookingLiveStay } from "./adapters/booking-live";
+import { bookingLiveSlugs, loadBookingLiveStay } from "./adapters/booking-live";
 
 // Assemble the Stay-page contract for one stay. Returns null when Booking
 // Live has no canonical accommodation for the slug (or cannot be reached), so
@@ -13,6 +13,7 @@ import { loadBookingLiveStay } from "./adapters/booking-live";
 // orders; it is never displayed.
 
 export async function assembleStayPage(s: StayData): Promise<StayPageData | null> {
+  if (!(await bookingLiveSlugs()).has(s.slug)) return null;
   const editorial = editorialFrom(s);
   const live = await loadBookingLiveStay(s.slug, editorial.name, s.engine);
   if (!live) return null;

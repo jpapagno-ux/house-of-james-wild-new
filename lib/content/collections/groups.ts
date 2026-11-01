@@ -10,6 +10,12 @@ export type SisterGroup = { key: string; name: string; line: string; slugs: stri
 
 export const GROUPS: SisterGroup[] = [
   {
+    key: "governors-camp-collection",
+    name: "Governors' Camp Collection",
+    line: "Tented camps on the Mara River in the Masai Mara, in the Marsh Pride's territory, and Loldia House above Lake Naivasha in the Great Rift Valley.",
+    slugs: ["governors-camp", "governors-il-moran-camp", "loldia-house"],
+  },
+  {
     key: "green-safaris",
     name: "Green Safaris",
     line: "Eco lodges and camps across Zambia, from the Zambezi above Victoria Falls to Kafue, South Luangwa and the Lower Zambezi.",

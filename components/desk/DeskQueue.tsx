@@ -11,7 +11,8 @@ import type { TravelerState } from "@/lib/booking-live/bookings";
 
 type Person = { first_name: string | null; last_name: string | null } | null;
 type Q = { id: string; public_reference: string; state: TravelerState; advisor_status: string; expires_at: string; held_until: string | null; hold_note: string | null; arrival_date: string; departure_date: string; adults: number; children: number; grand_total_minor: number | string; deposit_due_minor: number | string; balance_due_date: string | null; currency: string; created_at: string; advisor_note: string | null; traveler: Person; property: { name: string; slug: string } | null; room: { name: string } | null };
-type B = { id: string; public_reference: string; status: string; arrival_date: string; departure_date: string; grand_total_minor: number | string; deposit_due_minor: number | string; deposit_paid_minor: number | string; balance_paid_minor: number | string; balance_due_date: string | null; currency: string; partner_confirmation_number: string | null; traveler_note: string | null; traveler: Person; property: { name: string } | null; room: { name: string } | null };
+type P = { id: string; public_reference: string; kind: string; amount_minor: number | string; refunded_minor: number | string; status: string; provider: string };
+type B = { id: string; public_reference: string; status: string; payments?: P[]; arrival_date: string; departure_date: string; grand_total_minor: number | string; deposit_due_minor: number | string; deposit_paid_minor: number | string; balance_paid_minor: number | string; balance_due_date: string | null; currency: string; partner_confirmation_number: string | null; traveler_note: string | null; traveler: Person; property: { name: string } | null; room: { name: string } | null };
 
 const who = (p: Person) => [p?.first_name, p?.last_name].filter(Boolean).join(" ") || "Traveler";
 const STATE: Record<string, string> = { waiting: "Waiting", held: "On hold", confirmed: "Confirmed · record the booking" };
@@ -72,8 +73,18 @@ export default function DeskQueue({ quotes, bookings }: { quotes: Q[]; bookings:
                   </div>
                   <div className="text-right"><p className="ledger-display text-[1.5rem] leading-none">{fmtMinor(b.grand_total_minor, b.currency)}</p><p className="text-[12.5px] ledger-muted">{fmtMinor(paid, b.currency)} paid{due ? ` · ${due.kind} ${fmtMinor(due.amountMinor, b.currency)} due` : " · settled"}{b.balance_due_date ? ` · balance by ${niceDate(b.balance_due_date)}` : ""}</p></div>
                 </div>
+                {(b.payments ?? []).filter((p) => p.status === "succeeded" || p.status === "refunded").length > 0 && (
+                  <ul className="mt-3 text-[13px] ledger-muted grid gap-1">
+                    {(b.payments ?? []).filter((p) => p.status === "succeeded" || p.status === "refunded").map((p) => {
+                      const left = Number(p.amount_minor) - Number(p.refunded_minor);
+                      return <li key={p.id} className="flex flex-wrap items-center gap-3"><span>{p.kind} · {fmtMinor(p.amount_minor, b.currency)} · {p.provider}{Number(p.refunded_minor) > 0 ? ` · refunded ${fmtMinor(p.refunded_minor, b.currency)}` : ""} · {p.public_reference}</span>{left > 0 && <button type="button" disabled={busy === p.id} className="ledger-btn-ghost" onClick={() => { const a = ask(`Refund amount (minor units, up to ${left}):`, String(left)); if (!a) return; const n = ask("Reason (optional):", ""); run(p.id, `/api/v1/ops/payments/${p.id}/refund`, { amountMinor: Number(a), note: n || undefined }); }}>Refund</button>}{msg[p.id] && <span className="ledger-crimson">{msg[p.id]}</span>}</li>;
+                    })}
+                  </ul>
+                )}
                 <div className="mt-4 flex flex-wrap gap-3">
                   {due && <button type="button" disabled={busy === b.id} className="ledger-btn" onClick={() => { const a = ask(`Amount received in ${b.currency} (whole minor units, e.g. cents) — ${due.kind} due ${due.amountMinor}:`, String(due.amountMinor)); if (!a) return; const ref = ask("Bank / card reference (optional):", ""); run(b.id, `/api/v1/ops/bookings/${b.id}/payments`, { kind: due.kind, amountMinor: Number(a), reference: ref || undefined }); }}>Record payment received</button>}
+                  <button type="button" disabled={busy === b.id} className="ledger-btn-ghost" onClick={() => { if (!window.confirm("Mark this booking as stayed?")) return; run(b.id, `/api/v1/ops/bookings/${b.id}/cancel`, { stayed: true }); }}>Mark stayed</button>
+                  <button type="button" disabled={busy === b.id} className="ledger-btn-ghost" onClick={() => { const n = ask("Cancel this booking — note for the house (refund separately, if due):", ""); if (n === null) return; run(b.id, `/api/v1/ops/bookings/${b.id}/cancel`, { note: n || undefined }); }}>Cancel booking</button>
                 </div>
                 {msg[b.id] && <p role="alert" className="mt-2 text-[14px] ledger-crimson">{msg[b.id]}</p>}
               </li>

@@ -4,7 +4,7 @@ import { fmtMinor, niceDate, niceWhen } from "@/lib/booking-live/money";
 import { nextPayment } from "@/lib/booking-live/payments/core";
 import PayButton from "./PayButton";
 
-export type PaymentRow = { id: string; public_reference: string; kind: string; amount_minor: number | string; currency: string; status: string; provider: string; succeeded_at: string | null; created_at: string };
+export type PaymentRow = { id: string; public_reference: string; kind: string; amount_minor: number | string; refunded_minor?: number | string; currency: string; status: string; provider: string; succeeded_at: string | null; created_at: string };
 
 // The traveler's trips, as cards: a request (quote) with its state and
 // timeline, or a booking with its money position. Quiet, editorial, no
@@ -56,7 +56,7 @@ export function RequestCard({ q, propertyName, roomName }: { q: QuoteRow; proper
 export function BookingCard({ b, propertyName, roomName, payments = [] }: { b: BookingRow; propertyName: string; roomName: string | null; payments?: PaymentRow[] }) {
   const w = bookingWords(b);
   const due = nextPayment(b);
-  const receipts = payments.filter((p) => p.status === "succeeded");
+  const receipts = payments.filter((p) => p.status === "succeeded" || p.status === "refunded");
   const state: TravelerState = b.status === "cancelled" ? "declined" : "booked";
   const paid = Number(b.deposit_paid_minor) + Number(b.balance_paid_minor);
   return (
@@ -81,10 +81,11 @@ export function BookingCard({ b, propertyName, roomName, payments = [] }: { b: B
           })}
         </ol>
       )}
+      {due && due.kind === "balance" && b.balance_due_date && <p className="mt-3 text-[14px] text-rust">{(() => { const d = Math.round((Date.parse(`${b.balance_due_date}T00:00:00Z`) - Date.now()) / 86_400_000); return d < 0 ? `Balance was due ${niceDate(b.balance_due_date)}.` : d === 0 ? "Balance is due today." : `Balance due in ${d} day${d === 1 ? "" : "s"}, ${niceDate(b.balance_due_date)}.`; })()}</p>}
       {b.traveler_note && <p className="mt-4 text-[14.5px] border-l-2 border-rust/50 pl-3">{b.traveler_note}</p>}
       {receipts.length > 0 && (
         <ul className="mt-4 text-[13.5px] ledger-muted grid gap-1" aria-label="Payments received">
-          {receipts.map((p) => <li key={p.id}>{p.kind === "deposit" ? "Deposit" : p.kind === "balance" ? "Balance" : "Payment"} received · {fmtMinor(p.amount_minor, p.currency)} · {p.succeeded_at ? niceWhen(p.succeeded_at) : ""} · receipt {p.public_reference}</li>)}
+          {receipts.map((p) => <li key={p.id}>{p.kind === "deposit" ? "Deposit" : p.kind === "balance" ? "Balance" : "Payment"} received · {fmtMinor(p.amount_minor, p.currency)} · {p.succeeded_at ? niceWhen(p.succeeded_at) : ""} · receipt {p.public_reference}{Number(p.refunded_minor ?? 0) > 0 ? ` · ${fmtMinor(p.refunded_minor!, p.currency)} refunded` : ""}</li>)}
         </ul>
       )}
       <div className="mt-4 flex flex-wrap items-center gap-3">

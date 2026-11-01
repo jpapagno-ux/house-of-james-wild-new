@@ -66,3 +66,23 @@ Applied to JWC Booking Live 1 Nov 2026; `settle_payment` dry-run verified
 - Refunds (status `refunded` exists; no route yet) and the balance-due reminder.
 - Receipt emails; the Advisor Desk in Base44 calling the same routes.
 - `supabase/manual/0011b_hold_status.sql` must be run for Hold to work.
+
+## 3b(ii) — refunds, cancellation, the balance reminder (1 Nov 2026)
+
+- **Refunds** `POST /api/v1/ops/payments/:id/refund { amountMinor?, note? }` —
+  part or all of a settled payment. Gateway payments are refunded at Stripe
+  first (against the payment intent the webhook stored in `provider_charge`),
+  then recorded; manual ones are recorded. `refund_payment()` moves the
+  booking's paid columns back and its status with them; a fully refunded
+  payment reads `refunded`. Dry-run verified.
+- **Cancel / stayed** `POST /api/v1/ops/bookings/:id/cancel { note? }` or
+  `{ stayed: true }` — a status change only; money moves only through refunds.
+- **Balance reminder** `GET /api/v1/internal/reminders/balance-due` — Vercel
+  Cron daily at 13:00 UTC (`vercel.json`), `CRON_SECRET` or the sync secret.
+  One email per booking whose balance is due within 14 days and still owing
+  (overdue included), through Resend when `RESEND_API_KEY` is set, otherwise
+  a dry run that lists what it would send. `balance_reminder_sent_at` makes it
+  once-only. Trips shows *Balance due in N days* on the card.
+- Desk: Refund beside each settled payment, Mark stayed, Cancel booking.
+
+Migration `supabase/migrations/20261101000300_refunds_reminders.sql` (applied).

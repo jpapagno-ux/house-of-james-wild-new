@@ -11,6 +11,8 @@ export type CheckoutSession = { url: string; providerReference: string };
 export interface Gateway {
   name: "stripe";
   createCheckout(req: CheckoutRequest): Promise<CheckoutSession>;
+  /** Refund part or all of a settled charge; returns the provider's refund reference. */
+  refund(req: { providerCharge: string; amountMinor: number; currency: string; paymentId: string; reason?: string }): Promise<{ reference: string }>;
 }
 
 export function paymentsEnabled(): boolean {
@@ -40,6 +42,13 @@ export function gateway(): Gateway | null {
       const json = (await res.json()) as { id?: string; url?: string; error?: { message?: string } };
       if (!res.ok || !json.url || !json.id) throw new Error(`Stripe: ${json.error?.message ?? res.status}`);
       return { url: json.url, providerReference: json.id };
+    },
+    async refund(r) {
+      const form = new URLSearchParams({ payment_intent: r.providerCharge, amount: String(stripeAmount(r.amountMinor, r.currency)), "metadata[payment_id]": r.paymentId, ...(r.reason ? { "metadata[reason]": r.reason.slice(0, 200) } : {}) });
+      const res = await fetch("https://api.stripe.com/v1/refunds", { method: "POST", headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/x-www-form-urlencoded", "Idempotency-Key": `refund:${r.paymentId}:${r.amountMinor}:${Date.now()}` }, body: form, signal: AbortSignal.timeout(15_000) });
+      const json = (await res.json()) as { id?: string; error?: { message?: string } };
+      if (!res.ok || !json.id) throw new Error(`Stripe: ${json.error?.message ?? res.status}`);
+      return { reference: json.id };
     },
   };
 }

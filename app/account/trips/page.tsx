@@ -17,7 +17,7 @@ export default async function TripsPage({ searchParams }: { searchParams: Promis
   const [{ data: quotes }, { data: bookings }, { data: payments }] = await Promise.all([
     sb.from("quotes").select("id, public_reference, status, advisor_status, expires_at, held_until, arrival_date, departure_date, grand_total_minor, deposit_due_minor, balance_due_date, currency, created_at, property:properties(name, slug), room:room_types(name)").order("created_at", { ascending: false }).limit(50),
     sb.from("bookings").select("id, public_reference, status, arrival_date, departure_date, grand_total_minor, deposit_due_minor, deposit_paid_minor, balance_paid_minor, balance_due_date, currency, partner_confirmation_number, traveler_note, created_at, property:properties(name, slug), room:room_types(name)").order("arrival_date", { ascending: false }).limit(50),
-    sb.from("payments").select("id, booking_id, public_reference, kind, amount_minor, currency, status, provider, succeeded_at, created_at").order("created_at", { ascending: true }).limit(200),
+    sb.from("payments").select("id, booking_id, public_reference, kind, amount_minor, refunded_minor, currency, status, provider, succeeded_at, created_at").order("created_at", { ascending: true }).limit(200),
   ]);
   const paysFor = (id: string) => ((payments ?? []) as (PaymentRow & { booking_id: string })[]).filter((p) => p.booking_id === id);
   const qs = ((quotes ?? []) as unknown as Q[]).filter((q) => q.status !== "converted");

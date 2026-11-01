@@ -34,7 +34,7 @@ REGION = {
     "africa": ["botswana", "south-africa", "tanzania", "kenya", "zambia", "namibia", "rwanda", "zimbabwe", "madagascar", "seychelles", "masai-mara"],
     "asia": ["indonesia", "maldives", "thailand", "vietnam", "cambodia", "philippines", "mongolia"],
     "caribbean-mexico": ["mexico", "baja-mexico", "bahamas", "turks-caicos", "st-barths", "st-lucia", "virgin-islands"],
-    "central-america": ["costa-rica", "panama", "belize"],
+    "central-america": ["costa-rica", "panama", "belize", "guatemala"],
     "europe": ["ireland", "spain", "spain-ibiza", "spain-isla-mallorca", "france", "greece", "italy", "portugal", "switzerland", "norway"],
     "south-america": ["peru", "chile", "ecuador-galapagos", "argentina", "brazil", "bolivia", "falkland-islands"],
     "oceania": ["tahiti", "fiji", "australia", "new-zealand"],

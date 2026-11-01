@@ -73,9 +73,9 @@
    ],
    "facts": {
     "best_months": "July to December for drier trails and concentrated wildlife viewing; January to June for high-water canoeing and flooded-forest experiences.",
+    "how_to_get_there": "Fly to Manaus, then join the vessel via an arranged transfer by road or river from the city; logistical details are coordinated by the operator.",
     "who_its_for": "Travelers seeking intimate, expedition-style luxury: couples and honeymooners, small families with older children, solo travelers, adventure seekers and wildlife photographers.",
-    "signature_experiences": "Skiff and canoe excursions into narrow tributaries, dawn birding from the river, nocturnal spotlighting for caimans and night birds, visits to riverside communities.",
-    "how_to_get_there": "Fly to Manaus, then join the vessel via an arranged transfer by road or river from the city; logistical details are coordinated by the operator."
+    "signature_experiences": "Skiff and canoe excursions into narrow tributaries, dawn birding from the river, nocturnal spotlighting for caimans and night birds, visits to riverside communities."
    },
    "faqs": [
     {
@@ -117,7 +117,7 @@
      "PATH-04",
      "PATH-06"
     ],
-    "setting": "rainforest",
+    "setting": "amazon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -239,7 +239,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -333,7 +333,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "sossusvlei",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -417,9 +417,10 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-03"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "chile_easter_island",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -511,7 +512,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "bazaruto",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -597,7 +598,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "chobe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -677,7 +678,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -771,7 +772,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -857,7 +858,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1117,7 +1118,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1210,9 +1211,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "big_sur",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1303,7 +1305,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "galapagos",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1418,7 +1420,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1500,7 +1502,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "amazon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1585,9 +1587,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-06"
+     "PATH-06",
+     "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "sedona",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1680,7 +1683,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1770,7 +1773,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1857,7 +1860,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "chiang_mai",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -1950,9 +1953,10 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-04"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "golden_triangle",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2047,7 +2051,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "hua_hin",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2132,9 +2136,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-05"
     ],
-    "setting": "private_residence",
+    "setting": "mui_ne",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2208,7 +2213,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "victoria_falls",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2304,7 +2309,7 @@
     "secondary": [
      "PATH-01"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2704,7 +2709,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -2802,7 +2807,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "rainforest",
+    "setting": "manuel_antonio",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3023,7 +3028,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3204,7 +3209,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3381,7 +3386,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "atacama",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3472,7 +3477,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "rainforest",
+    "setting": "iguazu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3563,7 +3568,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "mendoza",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3656,9 +3661,10 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-07"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "torres_del_paine",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3746,9 +3752,10 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-02"
     ],
-    "setting": "rainforest",
+    "setting": "brazil",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3868,7 +3875,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -3950,7 +3957,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4041,7 +4048,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4238,7 +4245,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4339,7 +4346,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "whale_coast",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4459,7 +4466,7 @@
      "PATH-07",
      "PATH-08"
     ],
-    "setting": "rainforest",
+    "setting": "cayo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4537,9 +4544,9 @@
    ],
    "facts": {
     "best_months": "Not specified. Confirm the resort’s location and seasonal guidance before planning.",
+    "how_to_get_there": "Blue Reef is in Belize. Exact location, nearest airport, and transfer details have not been provided.",
     "who_its_for": "A resort stay in Belize. The property details supplied are not sufficient to identify its best-fit travelers.",
-    "signature_experiences": "No property-specific signature experiences have been provided.",
-    "how_to_get_there": "Blue Reef is in Belize. Exact location, nearest airport, and transfer details have not been provided."
+    "signature_experiences": "No property-specific signature experiences have been provided."
    },
    "faqs": [
     {
@@ -4570,7 +4577,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "placencia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4645,7 +4652,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "outer_islands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4673,7 +4680,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -4702,7 +4709,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "costa_rica",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -4795,7 +4802,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5035,7 +5042,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lake_kariba",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5148,7 +5155,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "hwange",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5259,9 +5266,10 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5523,7 +5531,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "islands_and_coast",
+    "setting": "lord_howe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5613,7 +5621,7 @@
      "PATH-05",
      "PATH-08"
     ],
-    "setting": "rainforest",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5700,7 +5708,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "cardamom_mountains",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5790,9 +5798,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-02"
     ],
-    "setting": "private_residence",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -5935,7 +5944,7 @@
    "bestMonths": "Raja Ampat: Jan–Apr, Oct–Dec – best for calm seas and rich biodiversity Komodo & Alor: May–Sep – dry season, ideal for marine clarity and dragon encounters ",
    "bestMonthsNote": "These windows offer optimal conditions for sailing, diving visibility, and wildlife sightings. Calm seas allow access to remote areas and ensure a smooth voyage with breathtaking underwater clarity.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -5991,7 +6000,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6086,7 +6095,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "yucatan",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6169,7 +6178,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6288,7 +6297,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6377,7 +6386,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "tarangire",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6455,7 +6464,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6535,7 +6544,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6711,7 +6720,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "zanzibar",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6807,9 +6816,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-03"
+     "PATH-03",
+     "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "clayoquot_sound",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6837,7 +6847,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -6866,7 +6876,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "costa_rica",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -6978,7 +6988,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "belize_cayes",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7064,7 +7074,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7158,7 +7168,7 @@
      "PATH-02",
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7286,7 +7296,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7569,7 +7579,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7655,7 +7665,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7729,7 +7739,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7822,7 +7832,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -7901,7 +7911,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8011,7 +8021,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8118,7 +8128,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8332,7 +8342,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8425,7 +8435,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8533,7 +8543,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "alentejo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8627,7 +8637,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "torres_del_paine",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8664,7 +8674,7 @@
    "bestMonths": "June - December",
    "bestMonthsNote": "These months typically offer calmer seas, clearer water visibility for snorkeling, and active wildlife breeding seasons, creating ideal conditions for immersion and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -8719,7 +8729,7 @@
      "PATH-04",
      "PATH-06"
     ],
-    "setting": "islands_and_coast",
+    "setting": "ecuador_galapagos",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8756,7 +8766,7 @@
    "bestMonths": "June - December",
    "bestMonthsNote": "These months typically offer calmer seas, clearer water visibility for snorkeling, and active wildlife breeding seasons, creating ideal conditions for immersion and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -8810,7 +8820,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "ecuador_galapagos",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8847,7 +8857,7 @@
    "bestMonths": "June - December",
    "bestMonthsNote": "These months typically offer calmer seas, clearer water visibility for snorkeling, and active wildlife breeding seasons, making them ideal for immersion and photography.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -8902,7 +8912,7 @@
      "PATH-04",
      "PATH-06"
     ],
-    "setting": "islands_and_coast",
+    "setting": "ecuador_galapagos",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -8990,7 +9000,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "machu_picchu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9079,7 +9089,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9247,7 +9257,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -9286,7 +9296,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "kenya",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9376,7 +9386,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9405,7 +9415,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -3.1011,
@@ -9450,7 +9460,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "ngorongoro",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9479,7 +9489,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -3.1009,
@@ -9526,7 +9536,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "private_residence",
+    "setting": "tanzania",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9557,7 +9567,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -9609,7 +9619,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "tanzania",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9697,7 +9707,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "namib",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9779,7 +9789,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "patagonia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9865,7 +9875,7 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [],
-    "setting": "mountains_and_highlands",
+    "setting": "patagonia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -9951,9 +9961,10 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-03"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "rapa_nui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10039,7 +10050,7 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [],
-    "setting": "mountains_and_highlands",
+    "setting": "sacred_valley",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10123,7 +10134,7 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [],
-    "setting": "mountains_and_highlands",
+    "setting": "torres_del_paine",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10206,7 +10217,7 @@
      "PATH-04",
      "PATH-06"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "torres_del_paine",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10291,7 +10302,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "atacama",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10374,9 +10385,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-06"
+     "PATH-06",
+     "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "kalahari",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10464,7 +10476,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10553,7 +10565,7 @@
      "PATH-08",
      "PATH-03"
     ],
-    "setting": "islands_and_coast",
+    "setting": "fogo_island",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10639,9 +10651,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-04"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "ngorongoro",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10720,9 +10733,10 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "nairobi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10806,7 +10820,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10922,7 +10936,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "winelands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11014,7 +11028,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "mahale",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11129,9 +11143,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11195,7 +11210,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "islands_and_coast",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11300,7 +11315,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "islands_and_coast",
+    "setting": "wild_coast",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11617,9 +11632,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-04"
     ],
-    "setting": "private_residence",
+    "setting": "whale_coast",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11727,7 +11743,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "rainforest",
+    "setting": "cayo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11815,7 +11831,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11906,7 +11922,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -11986,7 +12002,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12157,7 +12173,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12256,7 +12272,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "new_zealand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12427,7 +12443,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "islands_and_coast",
+    "setting": "peru",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12515,7 +12531,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "amazon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12604,7 +12620,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "sacred_valley",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12695,7 +12711,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "cusco",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12786,9 +12802,10 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-01"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "machu_picchu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12872,7 +12889,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "amazon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -12963,7 +12980,7 @@
     "secondary": [
      "PATH-01"
     ],
-    "setting": "islands_and_coast",
+    "setting": "gulf_of_chiriqui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13047,7 +13064,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "gulf_of_chiriqui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13146,7 +13163,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "gulf_of_chiriqui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13241,7 +13258,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "maldives",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13302,7 +13319,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13389,7 +13406,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13583,7 +13600,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "makgadikgadi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13670,9 +13687,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "makgadikgadi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13786,7 +13804,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "hopkins",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13871,7 +13889,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -13956,7 +13974,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14070,9 +14088,10 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-01"
+     "PATH-01",
+     "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "cayo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14167,7 +14186,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "mexico",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14253,7 +14272,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14350,7 +14369,7 @@
      "PATH-02",
      "PATH-08"
     ],
-    "setting": "private_residence",
+    "setting": "bukit",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14448,9 +14467,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-05"
     ],
-    "setting": "private_residence",
+    "setting": "nusa_dua",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14632,9 +14652,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-01"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14719,7 +14740,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14804,7 +14825,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14888,7 +14909,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -14981,7 +15002,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15074,7 +15095,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "ruaha",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15135,7 +15156,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15228,7 +15249,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "hawaii",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15323,7 +15344,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "lhaviyani",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15418,7 +15439,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "osa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15510,7 +15531,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15916,7 +15937,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16012,7 +16033,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16109,7 +16130,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "makgadikgadi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16205,7 +16226,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16298,7 +16319,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16394,7 +16415,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16492,7 +16513,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "kalahari",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16622,7 +16643,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "eastern_cape",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16712,7 +16733,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16837,7 +16858,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "winelands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -16945,7 +16966,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "winelands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17032,7 +17053,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17203,7 +17224,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "tarangire",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17433,7 +17454,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "osa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17554,7 +17575,7 @@
      "PATH-05",
      "PATH-07"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "winelands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17648,7 +17669,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tahaa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -17894,7 +17915,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "winelands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18010,7 +18031,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "whale_coast",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18097,7 +18118,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18219,7 +18240,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18280,7 +18301,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18369,7 +18390,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18748,7 +18769,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -18840,7 +18861,7 @@
      "PATH-05",
      "PATH-08"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19161,7 +19182,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19258,7 +19279,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19462,7 +19483,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19547,7 +19568,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19812,7 +19833,7 @@
     "secondary": [
      "PATH-01"
     ],
-    "setting": "islands_and_coast",
+    "setting": "masoala",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -19925,7 +19946,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "ambergris_caye",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20011,7 +20032,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "victoria_falls",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20098,7 +20119,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "makgadikgadi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20184,7 +20205,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20263,7 +20284,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20359,7 +20380,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "nosy_ankao",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20446,7 +20467,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "zanzibar",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20534,7 +20555,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20787,7 +20808,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "madikwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20878,7 +20899,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -20968,9 +20989,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-02"
     ],
-    "setting": "private_residence",
+    "setting": "sumba",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21061,7 +21083,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21155,9 +21177,10 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-01"
+     "PATH-01",
+     "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "fiji",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21254,7 +21277,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21345,7 +21368,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "baa_atoll",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21436,7 +21459,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "siargao",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21521,7 +21544,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "atacama",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21609,7 +21632,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "bocas_del_toro",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21702,7 +21725,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21789,9 +21812,10 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "rapa_nui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -21881,7 +21905,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22186,7 +22210,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "riau_islands",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22436,7 +22460,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "maldives",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22639,7 +22663,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22671,7 +22695,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.645656,
@@ -22726,7 +22750,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "tanzania",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22818,7 +22842,7 @@
      "PATH-05",
      "PATH-08"
     ],
-    "setting": "islands_and_coast",
+    "setting": "holbox",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -22914,7 +22938,7 @@
      "PATH-02",
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "ibiza",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23011,7 +23035,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "madrid",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23107,7 +23131,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23180,7 +23204,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23260,9 +23284,10 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-07"
     ],
-    "setting": "rainforest",
+    "setting": "nyungwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23361,7 +23386,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23452,7 +23477,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23542,7 +23567,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23631,7 +23656,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "tarangire",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23710,7 +23735,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "rwanda",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23798,7 +23823,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "zion",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23881,7 +23906,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "namib",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -23974,7 +23999,7 @@
      "PATH-02",
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24070,7 +24095,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "pacuare",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24157,9 +24182,10 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [
-     "PATH-03"
+     "PATH-03",
+     "PATH-04"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "montana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24246,7 +24272,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "bora_bora",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24335,7 +24361,7 @@
      "PATH-08",
      "PATH-03"
     ],
-    "setting": "islands_and_coast",
+    "setting": "marquesas",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24424,7 +24450,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tahiti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24511,7 +24537,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tuamotus",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24692,7 +24718,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24816,7 +24842,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "phinda",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -24933,7 +24959,7 @@
      "PATH-08",
      "PATH-03"
     ],
-    "setting": "islands_and_coast",
+    "setting": "cape_town",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25021,9 +25047,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-03"
+     "PATH-03",
+     "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "big_sur",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25206,7 +25233,7 @@
      "PATH-05",
      "PATH-08"
     ],
-    "setting": "islands_and_coast",
+    "setting": "hawaii",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25291,7 +25318,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25389,7 +25416,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "krabi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25481,7 +25508,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "fiji",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25592,7 +25619,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "thornybush",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25694,7 +25721,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25788,7 +25815,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lake_victoria",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25872,7 +25899,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -25956,7 +25983,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26077,7 +26104,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "karoo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26251,7 +26278,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26340,7 +26367,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26424,7 +26451,7 @@
      "PATH-07",
      "PATH-08"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "samburu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26516,7 +26543,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26613,7 +26640,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "samburu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26674,7 +26701,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_africa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26732,7 +26759,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -26907,7 +26934,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27002,7 +27029,7 @@
      "PATH-04",
      "PATH-08"
     ],
-    "setting": "private_residence",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27076,7 +27103,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27174,7 +27201,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [],
-    "setting": "rainforest",
+    "setting": "monteverde",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27445,9 +27472,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-01"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "cambodia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27527,7 +27555,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "namibia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -27807,7 +27835,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "islands_and_coast",
+    "setting": "sumba",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28152,7 +28180,7 @@
      "PATH-07",
      "PATH-08"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28271,7 +28299,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28391,7 +28419,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28473,7 +28501,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28675,9 +28703,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "volcanoes_np",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28776,7 +28805,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28869,7 +28898,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "volcanoes_np",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -28996,7 +29025,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29116,7 +29145,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29212,7 +29241,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "malilangwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29310,7 +29339,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29400,7 +29429,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29501,7 +29530,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "malilangwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29809,7 +29838,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29935,7 +29964,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -29964,7 +29993,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -29993,7 +30022,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "kenya",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30086,7 +30115,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30117,7 +30146,7 @@
    "bestMonths": "June - October",
    "bestMonthsNote": "These months offer calmer seas, good ocean visibility for snorkeling, and comfortable weather & enhancing wildlife encounters and making the water activities most enjoyable.",
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -30171,7 +30200,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "galapagos",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30256,7 +30285,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30351,7 +30380,7 @@
      "PATH-07",
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "con_dao",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30441,7 +30470,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "montana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30531,7 +30560,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "douro",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30626,7 +30655,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "fiji",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30751,7 +30780,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "ibiza",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30844,7 +30873,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "lhaviyani",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -30938,7 +30967,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "kyoto",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31027,7 +31056,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "laamu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31122,7 +31151,7 @@
      "PATH-02",
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "nha_trang",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31212,7 +31241,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "rome",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31308,7 +31337,7 @@
      "PATH-02",
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31401,9 +31430,10 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-02"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "bukit",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31499,7 +31529,7 @@
      "PATH-05",
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "phang_nga_bay",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31589,7 +31619,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "seychelles",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31778,7 +31808,8 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-03"
     ],
     "setting": "rainforest",
     "intentions": [],
@@ -31857,7 +31888,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "zimbabwe",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -31948,7 +31979,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "baa_atoll",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32030,7 +32061,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "noonu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32115,7 +32146,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "maldives",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32212,7 +32243,7 @@
      "PATH-02",
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32310,9 +32341,10 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "kangaroo_island",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32424,7 +32456,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "belize_cayes",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32600,7 +32632,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "laikipia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32699,7 +32731,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "rainforest",
+    "setting": "arenal",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32785,7 +32817,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "islands_and_coast",
+    "setting": "northland",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -32886,7 +32918,7 @@
      "PATH-07",
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33010,7 +33042,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "timbavati",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33126,7 +33158,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33366,7 +33398,7 @@
     "secondary": [
      "PATH-07"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33480,7 +33512,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "greater_kruger",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33589,7 +33621,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "sabi_sand",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33706,7 +33738,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "belize_cayes",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33808,7 +33840,7 @@
      "PATH-07",
      "PATH-05"
     ],
-    "setting": "rainforest",
+    "setting": "osa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33837,7 +33869,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -33868,7 +33900,7 @@
     "secondary": [
      "PATH-01"
     ],
-    "setting": "private_residence",
+    "setting": "costa_rica",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -33956,7 +33988,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34044,7 +34076,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "tahiti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34134,7 +34166,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "hwange",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34230,7 +34262,7 @@
      "PATH-04",
      "PATH-08"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "ngorongoro",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34344,9 +34376,10 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [
-     "PATH-08"
+     "PATH-08",
+     "PATH-04"
     ],
-    "setting": "rainforest",
+    "setting": "cayo",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34440,7 +34473,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "australia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34527,7 +34560,7 @@
     "secondary": [
      "PATH-02"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "canada",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34621,7 +34654,7 @@
    "pathway": {
     "primary": "PATH-05",
     "secondary": [],
-    "setting": "wellness_and_restoration",
+    "setting": "iceland",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34720,7 +34753,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "cape_town",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34780,7 +34813,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "thornybush",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34879,7 +34912,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "atacama",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -34968,7 +35001,7 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [],
-    "setting": "mountains_and_highlands",
+    "setting": "torres_del_paine",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35061,7 +35094,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35150,7 +35183,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35246,7 +35279,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35336,7 +35369,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "fiji",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35643,7 +35676,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35843,7 +35876,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "placencia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -35932,7 +35965,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36029,7 +36062,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "moab",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36143,7 +36176,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "placencia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36233,7 +36266,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "bryce_canyon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36320,7 +36353,7 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [],
-    "setting": "mountains_and_highlands",
+    "setting": "glacier",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36413,7 +36446,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "grand_canyon",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36503,7 +36536,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "lake_powell",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36591,9 +36624,10 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-06"
+     "PATH-06",
+     "PATH-03"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "moab",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36682,7 +36716,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "yellowstone",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36771,7 +36805,7 @@
     "secondary": [
      "PATH-03"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "yellowstone",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36860,7 +36894,7 @@
     "secondary": [
      "PATH-08"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "yosemite",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -36950,7 +36984,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "zion",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37044,7 +37078,7 @@
      "PATH-05",
      "PATH-07"
     ],
-    "setting": "islands_and_coast",
+    "setting": "indonesia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37138,7 +37172,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "heritage_and_culture",
+    "setting": "trancoso",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37230,7 +37264,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "islands_and_coast",
+    "setting": "noonu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37430,9 +37464,10 @@
    "pathway": {
     "primary": "PATH-07",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-02"
     ],
-    "setting": "private_residence",
+    "setting": "ubud",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37510,7 +37545,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "masoala",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37594,7 +37629,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "volcanoes_np",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37683,7 +37718,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "kafue",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37770,7 +37805,7 @@
     "secondary": [
      "PATH-06"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "damaraland",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -37866,7 +37901,7 @@
      "PATH-04",
      "PATH-08"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "damaraland",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38057,7 +38092,7 @@
     "secondary": [
      "PATH-04"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "namib",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38147,7 +38182,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "sossusvlei",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38224,7 +38259,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38313,7 +38348,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38405,7 +38440,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "hidden_and_remote",
+    "setting": "sossusvlei",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38490,7 +38525,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38576,7 +38611,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "akagera",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38663,7 +38698,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -38758,7 +38793,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39036,7 +39071,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39126,7 +39161,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "volcanoes_np",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39219,7 +39254,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39304,7 +39339,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "namib",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39395,7 +39430,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "kafue",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39489,7 +39524,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "wildlife_and_wilderness",
+    "setting": "victoria_falls",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39581,7 +39616,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39672,7 +39707,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39767,7 +39802,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "namib",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39875,7 +39910,7 @@
    "pathway": {
     "primary": "PATH-08",
     "secondary": [],
-    "setting": "heritage_and_culture",
+    "setting": "dublin",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -39983,7 +40018,7 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "islands_and_coast",
+    "setting": "ambergris_caye",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40077,7 +40112,7 @@
      "PATH-05",
      "PATH-08"
     ],
-    "setting": "private_residence",
+    "setting": "tulum",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40156,7 +40191,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "botswana",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40236,7 +40271,7 @@
    "pathway": {
     "primary": "PATH-06",
     "secondary": [],
-    "setting": "hidden_and_remote",
+    "setting": "namibia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40309,7 +40344,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40383,7 +40418,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "wildlife_and_wilderness",
+    "setting": "linyanti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40479,7 +40514,7 @@
      "PATH-02",
      "PATH-07"
     ],
-    "setting": "wellness_and_restoration",
+    "setting": "cambodia",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -40569,7 +40604,7 @@
     "secondary": [
      "PATH-05"
     ],
-    "setting": "mountains_and_highlands",
+    "setting": "courchevel",
     "intentions": [],
     "suitability": [],
     "status": "approved",

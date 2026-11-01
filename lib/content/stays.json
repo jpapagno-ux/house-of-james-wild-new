@@ -6112,8 +6112,10 @@
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fe14999b7_0549cebb3_682e71f13b0889bbaaac4037_Chamilandu-Bushcamp_2019_Chanalandu-2016-06-35.webp",
    "gallery": [],
    "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best wildlife viewing, and riverside sunsets. November to May for birding, green landscapes, and more privacy.",
-   "bestFor": [],
+   "bestMonthsNote": "Open 3 June to 1 November; peak game viewing mid-June to October.",
+   "bestFor": [
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -6121,11 +6123,11 @@
     "lng": 31.6422
    },
    "airport": "Mfuwe Airport (MFU)",
-   "airportDirections": "Fly to Mfuwe, 2-hour road and bush transfer to lodge, Bushcamp Company team will greet you.",
+   "airportDirections": "Fly to Mfuwe (MFU), then about a 2 hour 45 minute game drive transfer.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Three thatched treehouse chalets on raised decks with open fronts, en suite bathrooms, outdoor showers, and panoramic river or lagoon views. Main lounge, dining area, and fire pit overlooking the Luangwa River."
+     "Three thatched treehouse chalets raised on stilts above the Luangwa River, each with a large veranda, four-poster bed, en suite bathroom with open-air shower, and views of the river and Chindeni Hills. Thatched bar and dining area with a deck overlooking the river."
     ],
     "items": []
    },
@@ -6133,22 +6135,19 @@
     "paras": [],
     "items": [
      "Guided walking safaris",
-     "Game drives",
-     "Birdwatching",
-     "Waterhole wildlife viewing from camp",
-     "Photography",
-     "Sundowners on the riverbank",
-     "Star-gazing"
+     "Day and night game drives",
+     "Wildlife viewing from the verandas and lagoon hideout",
+     "Sundowners on the riverbank"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Open-fronted treehouse chalets",
-     "Incredible river and lagoon views",
-     "Expert guides for walking and driving safaris",
-     "Eco-friendly solar design",
-     "Small, intimate camp for couples or solo travelers"
+     "Thatched treehouse chalets on stilts",
+     "River and Chindeni Hills views",
+     "Walking safaris and game drives with experienced guides",
+     "Solar power",
+     "Three chalets, with a maximum of six guests in camp"
     ]
    },
    "onlyHere": [
@@ -6160,21 +6159,57 @@
      "body": "Best for romantic safaris, nature lovers, solo adventurers, and anyone craving wild beauty, walking, and an off-the-grid experience with amazing wildlife."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 3 June to 1 November, with peak game viewing from mid-June to October.",
+    "how_to_get_there": "Fly to Mfuwe International Airport, then about a 2 hour 45 minute game drive transfer.",
+    "signature_experiences": "Walking safaris, treehouse river views and wildlife viewing from the veranda and lagoon hideout.",
+    "who_its_for": "Couples and walkers who want a three-chalet camp with no more than six guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chamilandu?",
+     "a": "Chamilandu is perched on stilts beneath ebony trees on a bend of the Luangwa River in South Luangwa National Park, Zambia, looking towards the Chindeni Hills. It is inside The Bushcamp Company's exclusive 140,000-acre concession."
+    },
+    {
+     "q": "How do you get to Chamilandu?",
+     "a": "Fly to Mfuwe International Airport (MFU). The transfer to camp takes about 2 hours 45 minutes, with a refreshment stop at Mfuwe Lodge and game viewing on the way."
+    },
+    {
+     "q": "When is Chamilandu open?",
+     "a": "Chamilandu is open from 3 June to 1 November. The Bushcamp Company's peak season runs from mid-June to October, when wildlife concentrates along the river."
+    },
+    {
+     "q": "How many rooms does Chamilandu have?",
+     "a": "There are three thatched treehouse chalets raised on stilts, with a maximum of six guests in camp."
+    },
+    {
+     "q": "Are children welcome at Chamilandu?",
+     "a": "The Bushcamp Company lists 12 as the minimum age for walking safaris at Chamilandu."
+    },
+    {
+     "q": "What can you do at Chamilandu?",
+     "a": "Walking safaris, game drives and sundowners, plus wildlife viewing from your veranda and the lagoon hideout. Inter-camp walks link Chindeni and Chamilandu."
+    },
+    {
+     "q": "Who is Chamilandu best for?",
+     "a": "Travellers who want a three-chalet camp with no more than six guests, river views from a treehouse and walking at the heart of the stay."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -6425,63 +6460,108 @@
   },
   {
    "slug": "chiawa-safaris",
-   "name": "Chiawa Safaris",
+   "name": "Chiawa Camp",
    "ledgerId": "STY-2026-404563",
    "country": "Zambia",
    "countrySlug": "zambia",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "Luxury safari experiences shaped by the river, wilderness, and adventure.",
+   "tagline": "The pioneer camp of the Lower Zambezi, shaped by the river and the wild.",
    "quote": "Wake to the sounds of the Zambezi and experience safari at nature’s pace.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e66c7d13e_e7df047f3_6a05f3fe575754de7089959f_Chiawa-Safaris-Banner-scaled.jpg",
    "gallery": [],
-   "bestMonths": "May – October",
+   "bestMonths": "May to mid-November",
    "bestMonthsNote": "The dry season offers ideal wildlife viewing as animals gather along the Zambezi River and floodplains. Cooler weather also creates excellent conditions for canoe safaris, walking safaris, and wildlife photography.",
-   "bestFor": [],
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family",
+    "conservation",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -15.685861,
     "lng": 29.412111
    },
-   "airport": "Kenneth Kaunda International Airport Lusaka (LUN) Jeki Airstrip (JEK) Royal Airstrip Lower Zambezi",
-   "airportDirections": "Most guests arrive via Lusaka International Airport (LUN) followed by a scheduled or charter flight to Jeki or Royal Airstrip. Camp transfers are completed via safari vehicle or river boat transfer.",
+   "airport": "Jeki Airstrip (JEK), via Lusaka (LUN)",
+   "airportDirections": "Fly into Lusaka (LUN), then take a 35-minute Proflight flight to Jeki Airstrip (JEK).",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Luxury Safari Tents.Riverfront Safari Suites.Private Wilderness Villas.Open-Air Bush Accommodation."
+     "Safari Tents (eight, each about 100 square metres with a bench wallow plunge pool). Safari Suite (almost 220 square metres with a private plunge pool). Safari Sleepout (an open-air star bed on the Zambezi)."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [
-     "Canoe Safaris.Walking Safaris.Big Game Drives.Boat Cruises.Tiger Fishing Adventures.Wildlife Photography Experiences."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "Canoe Safaris",
+     "Walking Safaris",
+     "Day and Night Game Drives",
+     "River Safaris",
+     "Catch-and-Release Angling",
+     "Wildlife Hides"
+    ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Luxury riverfront safari camp",
-     "Open-air safari suites",
-     "Exceptional canoe safaris",
-     "Lower Zambezi wildlife access",
-     "Expert safari guiding",
-     "Boat safaris and sunset cruises",
-     "Walking safari experiences",
-     "Private bush dining",
-     "Conservation-focused safari tourism",
-     "Remote wilderness immersion"
+     "Riverfront camp under mahogany trees on the Zambezi",
+     "Pioneer camp of the Lower Zambezi National Park, since 1989",
+     "Safari tents with bench wallow plunge pools",
+     "Swimming pool and exercise area overlooking the river",
+     "Canoe safaris",
+     "Walking safaris with an award-winning guiding team",
+     "Boat safaris and catch-and-release angling",
+     "Private veranda dining by request",
+     "Certified carbon positive safari camp",
+     "Safari Sleepout under the stars"
     ]
    },
    "onlyHere": [
-    "Chiawa Safaris offers one of Africa’s most immersive river safari experiences , where wildlife, water, and wilderness combine to create adventures that feel both exhilarating and deeply grounding. It’s safari designed around exploration, connection, and exceptional guiding."
+    "Chiawa Camp is the pioneer of the Lower Zambezi National Park, the first camp to settle on the banks of the Zambezi River, where the Cumings family created the park's first photo safari operation in 1989. It is a gentle, unhurried safari built around river and walking adventures with an award-winning guiding team."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "May to mid-November, with prime game viewing from June; closed mid-November through April.",
+    "how_to_get_there": "A 35-minute flight from Lusaka to Jeki Airstrip, with seasonal non-stop flights from Mfuwe and Livingstone.",
+    "signature_experiences": "Canoeing, walking safaris, day and night game drives, river safaris and catch-and-release angling on the Zambezi.",
+    "who_its_for": "Couples, honeymooners and families with children aged 8 and over who want river and walking safaris."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chiawa Camp?",
+     "a": "On the banks of the Zambezi River under a grove of mahogany trees in the heart of Zambia's Lower Zambezi National Park. It was the first camp in the park, where the Cumings family started the first photo safari operation in 1989."
+    },
+    {
+     "q": "How do you get to Chiawa Camp?",
+     "a": "Fly into Lusaka (LUN), then take a 35-minute Proflight flight to Jeki Airstrip (JEK). From June to October there are usually non-stop flights to Jeki from Mfuwe (90 minutes) and Livingstone (100 minutes)."
+    },
+    {
+     "q": "When is the best time to visit Chiawa Camp?",
+     "a": "From May to November, with prime game viewing from June. Chiawa's camps are closed from mid-November through April."
+    },
+    {
+     "q": "How many tents does Chiawa Camp have?",
+     "a": "Eight Safari Tents of about 100 square metres each plus the Safari Suite of almost 220 square metres. A Safari Sleepout star bed on the river can be added for a night."
+    },
+    {
+     "q": "Does Chiawa Camp accept children?",
+     "a": "The minimum age at Chiawa Camp is 8. Children from 5 can stay in the Safari Suite but are kept out of the social areas unless the camp is booked on an exclusive-use basis."
+    },
+    {
+     "q": "What are the signature experiences at Chiawa Camp?",
+     "a": "Canoeing, walking safaris, day and night game drives, river safaris, catch-and-release angling and wildlife hides, all with Chiawa's guides."
+    },
+    {
+     "q": "Who is Chiawa Camp best for?",
+     "a": "Travellers wanting a gentle, unhurried river safari with walking and canoeing; Chiawa also positions the camp for honeymoons, anniversaries and other special occasions."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6510,13 +6590,16 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Stilted lagoon luxury, wild Luangwa, unforgettable views",
+   "tagline": "Elevated lagoon tents, wild Luangwa, Chindeni Hills views",
    "quote": "Wake up to hippos grunting in the mist, watch elephants cross the lagoon, and fall asleep above the wild. Chindeni is a dream for nature lovers",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/277e18259_54d721732_682e712c8934cf77e29a3752_Chindeni-Bushcamp_2019_Chindeni045.webp",
    "gallery": [],
    "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best wildlife, and open lagoons. November to May for birding, lush greenery, and quieter stays.",
-   "bestFor": [],
+   "bestMonthsNote": "Open 15 May to 1 November; peak game viewing mid-June to October.",
+   "bestFor": [
+    "adventure",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -6524,31 +6607,29 @@
     "lng": 31.6064
    },
    "airport": "Mfuwe Airport (MFU)",
-   "airportDirections": "Fly to Mfuwe, 2-hour road and bush transfer to lodge, Bushcamp Company team will greet you.",
+   "airportDirections": "Fly to Mfuwe (MFU), then about a 2 hour 15 minute game drive transfer.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Four spacious stilted tents with private decks, open-front design, en suite bathrooms, outdoor showers, and panoramic lagoon views. Main lodge area with open dining, lounge, fire pit, and boardwalks above the water."
+     "Four elevated Meru-style tents beneath ancient ebony trees, one of them a family suite. Each has wooden floors, a four-poster bed, a private plunge pool, indoor and outdoor showers and a private veranda overlooking the lagoon. The main area is decking on several levels around the ebony trees, with dining area, lounge and bar."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided walking safaris",
-     "Day and night game drives",
-     "Birdwatching",
-     "Lagoon wildlife viewing from camp",
-     "Sundowners on the deck",
-     "Photography",
-     "Star-gazing"
-    ]
-   },
-   "features": {
     "paras": [
-     "Stilted tents with huge decks. Lagoon-front wildlife viewing. Expert guides. Eco-friendly solar power. Small, exclusive camp for couples, families, or solo adventurers."
+     "Guided walking safaris, including inter-camp walks to Chamilandu and Bilimungwe. Day and night game drives. Birdwatching. Lagoon wildlife viewing from camp. Sundowners."
     ],
     "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Elevated tents with private plunge pools",
+     "Lagoon-front wildlife viewing from camp",
+     "Walking safaris with experienced guides",
+     "Solar power and wifi",
+     "Small camp of four tents, including a family suite"
+    ]
    },
    "onlyHere": [
     "Chindeni is perfect for couples, honeymooners, small groups, and solo travelers who want romance, adventure, and iconic South Luangwa wildlife at their doorstep."
@@ -6559,21 +6640,57 @@
      "body": "Best for those seeking seclusion, breathtaking views, and close encounters with hippos, elephants, and birds. Ideal for anyone who wants the romance of wild Africa in style."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 15 May to 1 November, with peak game viewing from mid-June to October.",
+    "how_to_get_there": "Fly to Mfuwe International Airport, then about a 2 hour 15 minute game drive transfer.",
+    "signature_experiences": "Walking safaris including inter-camp walks, night drives and lagoon wildlife viewing from camp.",
+    "who_its_for": "Walkers, couples and families with older children who want a four-tent lagoon camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chindeni?",
+     "a": "Chindeni is on the edge of a permanent lagoon in a remote area of South Luangwa National Park, Zambia, with the Chindeni Hills behind it. It sits inside The Bushcamp Company's exclusive 140,000-acre concession."
+    },
+    {
+     "q": "How do you get to Chindeni?",
+     "a": "Fly to Mfuwe International Airport (MFU). The transfer to camp takes about 2 hours 15 minutes, with a refreshment stop at Mfuwe Lodge and game viewing along the way."
+    },
+    {
+     "q": "When is Chindeni open?",
+     "a": "Chindeni is open from 15 May to 1 November. The Bushcamp Company's peak season runs from mid-June to October, when wildlife gathers at the remaining water."
+    },
+    {
+     "q": "How many tents does Chindeni have?",
+     "a": "There are four elevated Meru-style tents, one of them a family suite. Each has a private plunge pool, outdoor shower and a veranda over the lagoon."
+    },
+    {
+     "q": "Are children welcome at Chindeni?",
+     "a": "There is a family suite, and 12 is the minimum age for walking safaris."
+    },
+    {
+     "q": "What can you do at Chindeni?",
+     "a": "Walking safaris, including inter-camp walks to Chamilandu and Bilimungwe, day and night drives and sundowners. Giraffe, puku, buffalo, elephant and hippo visit the lagoon in front of camp, and its surroundings are leopard habitat."
+    },
+    {
+     "q": "Who is Chindeni best for?",
+     "a": "Walkers and wildlife lovers who want a small, four-tent camp on a lagoon, as part of a Bushcamp Company circuit."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "south_luangwa",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -6594,17 +6711,21 @@
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/chisa-busanga-camp/hero",
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "June to October",
+   "bestMonthsNote": "Open 1 May to 1 November; the plains open as the floods recede.",
+   "bestFor": [
+    "group_exclusive_use",
+    "couples",
+    "solo"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -14.20565,
     "lng": 25.80364
    },
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Busanga Plains Airstrip",
+   "airportDirections": "Light-aircraft flights from Lusaka or Livingstone to Busanga Plains Airstrip, then a 20-minute drive.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -6634,19 +6755,50 @@
    "why": [
     {
      "title": "Inside the Horizon",
-     "body": "Best for small groups, families taking the whole camp, solo travelers and photographers."
+     "body": "Best for small groups, families taking the whole camp and solo travelers."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 May to 1 November, with the plains opening up as floodwaters recede from June.",
+    "how_to_get_there": "A flight to Busanga Airstrip from Lusaka or Livingstone, then a 20-minute drive to camp.",
+    "signature_experiences": "Sleeping in one of four tree-level Nests above the Busanga Plains, with solar e-Cruiser drives, e-bikes and walking safaris.",
+    "who_its_for": "Small groups taking the whole camp, couples and solo travellers."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chisa Busanga Camp?",
+     "a": "Chisa sits on a small tree-lined island on the Busanga Plains in the northern part of Kafue National Park, Zambia."
+    },
+    {
+     "q": "How do you get to Chisa Busanga Camp?",
+     "a": "Fly to Busanga Airstrip, about a 20-minute drive from camp. Green Safaris lists Skytrails flights from Lusaka (1 hr 15 to 1 hr 40) and Livingstone (1 hr 45 to 2 hr 15)."
+    },
+    {
+     "q": "When can you visit Chisa Busanga?",
+     "a": "The camp is open from 1 May to 1 November. Green Safaris says the plains become accessible as the floodwaters recede over June to November, and the camp closes in the wet season."
+    },
+    {
+     "q": "How many rooms does Chisa have?",
+     "a": "Four Nests, raised on stilts and inspired by weaver bird nests, including a Nest With Lift. The whole camp can be booked privately."
+    },
+    {
+     "q": "What are the signature experiences at Chisa?",
+     "a": "Solar-powered e-Cruiser game drives across the dambos, walking safaris with an armed scout, guided e-bike outings, birding among some 450 species and boma dinners."
+    },
+    {
+     "q": "Who is Chisa Busanga best for?",
+     "a": "Small groups or families taking the whole camp, couples and solo travellers who want a quiet, low-impact safari."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-06"
     ],
     "setting": null,
     "intentions": [
@@ -6659,8 +6811,8 @@
      "photographers"
     ],
     "status": "approved",
-    "classifiedBy": "James Papagno, 31 Oct 2026",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "safaris",
@@ -7909,7 +8061,7 @@
   },
   {
    "slug": "dulini-anabezi-lodge",
-   "name": "Dulini Anabezi Lodge",
+   "name": "Dulini Anabezi",
    "ledgerId": "STY-2026-000068",
    "country": "Zambia",
    "countrySlug": "zambia",
@@ -7925,9 +8077,13 @@
     "/img/b44/6b2962a0a_ad7bd00dc_693dd2f1c2d2d06d8efc927f_a6bc44_1cd84a2c420348bcbb5d2c8527091f2f_mv2.avif",
     "/img/b44/8bdca44dd_d0aefdc01_693dd2d22105e6cbeff79925_67d1c5_bc703493f08140509082c370e0269173_mv2.avif"
    ],
-   "bestMonths": "May – November",
+   "bestMonths": "April to mid-November",
    "bestMonthsNote": "The dry season brings concentrated wildlife along the Zambezi River, clearer game viewing, and optimal safari conditions. Cooler temperatures and minimal rainfall make this the ideal window for both land and water-based experiences.",
-   "bestFor": [],
+   "bestFor": [
+    "wildlife_photography",
+    "conservation",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -7935,28 +8091,38 @@
     "lng": 29.7672
    },
    "airport": "Kenneth Kaunda International Airport (LUN)",
-   "airportDirections": "Approx. 2.5–3 hours by road or short charter flight from Lusaka to Lower Zambezi airstrip, followed by transfer to camp",
+   "airportDirections": "Fly from Lusaka to Jeki Airstrip, then a 40-minute drive to camp; charter flights land at Kulefu Airstrip, a 10-minute drive away.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Luxury Tented Suites. Family Tented Suite."
+     "Twelve luxury tented suites, each with a private plunge pool and viewing deck, including one family tent with two connected rooms."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [
-     "Game Drives.Walking Safaris.Canoeing Safaris.River Boating.Fishing.Birdwatching."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "Day and Night Game Drives",
+     "Walking Safaris",
+     "Canoeing",
+     "Water Safaris",
+     "Catch-and-Release Fishing",
+     "Birdwatching"
+    ]
    },
    "features": {
-    "paras": [
-     "Private plunge pools overlooking the Zambezi Elevated boardwalk design for wildlife immersion Indoor and outdoor bathrooms Two main decks with pools and river views In-room spa treatments Solar-powered eco-conscious operations"
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "Private plunge pools overlooking the Zambezi",
+     "Elevated boardwalk design for wildlife immersion",
+     "Indoor and outdoor bathrooms",
+     "Two main decks with pools and river views",
+     "In-room spa treatments",
+     "Camp running on 90% solar power"
+    ]
    },
    "onlyHere": [
-    "Only here do you wake to elephants at the river’s edge, walk elevated pathways through untouched wilderness, and fall asleep to the rhythm of Africa beneath canvas luxury. Dulini Anabezi isn’t just a safari camp , it’s a front-row seat to one of the most raw, wildlife-rich ecosystems on Earth."
+    "Only here do you wake to elephants at the river's edge, walk elevated pathways through the Winterthorn forest, and fall asleep to the rhythm of Africa beneath canvas. In a secluded corner of the eastern Lower Zambezi National Park, far from most other camps, sightings are often shared with few or no other vehicles."
    ],
    "why": [
     {
@@ -7964,9 +8130,39 @@
      "body": "“Anabezi isn’t just a lodge, it’s a riverfront sanctuary where Africa slows your heartbeat and reconnects you to what truly matters.” - James Papagno, Founder, James Wild & Co"
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open April to mid-November, through the cool dry and hot dry seasons.",
+    "how_to_get_there": "A 40-minute flight from Lusaka to Jeki Airstrip (40-minute drive to camp) or by charter to Kulefu Airstrip (10-minute drive).",
+    "signature_experiences": "Walking safaris, canoeing, water safaris and leopard-rich game drives in the Winterthorn forest.",
+    "who_its_for": "Adults and older children (12 and over) who want a private-feeling riverfront camp with few other vehicles."
+   },
+   "faqs": [
+    {
+     "q": "Where is Dulini Anabezi?",
+     "a": "On the banks of the Zambezi River at the eastern end of Lower Zambezi National Park, Zambia, in the Winterthorn forest. There are few camps at this end of the park, so sightings often have few or no other vehicles."
+    },
+    {
+     "q": "How do you get to Anabezi?",
+     "a": "Anabezi is about a 40-minute flight from Lusaka. Proflight scheduled flights land at Jeki Airstrip, a 40-minute drive from camp that can be extended into a 2-hour game drive, while charter flights land at Kulefu Airstrip, a 10-minute drive away."
+    },
+    {
+     "q": "When is Anabezi open?",
+     "a": "Anabezi is a seasonal camp, open from April until mid-November. May to mid-August is cool and dry, and mid-August to mid-November is hot and dry."
+    },
+    {
+     "q": "How many suites does Anabezi have?",
+     "a": "Twelve tented suites on elevated decks, each with a private plunge pool, including one family tent with two connected rooms that share a deck and plunge pool."
+    },
+    {
+     "q": "Does Anabezi accept children?",
+     "a": "Anabezi does not accept children under 12 unless they are part of a group booking."
+    },
+    {
+     "q": "What are the signature experiences at Anabezi?",
+     "a": "Day and night game drives, walking safaris with a professional guide and an armed wildlife officer, canoeing, water safaris, catch-and-release tigerfish angling, birding and in-room spa treatments."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -12572,17 +12768,22 @@
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/ila-safari-lodge/hero",
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "March to January",
+   "bestMonthsNote": "Closed in February.",
+   "bestFor": [
+    "couples",
+    "family",
+    "solo",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -14.97385,
     "lng": 25.92558
    },
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Kenneth Kaunda International Airport, Lusaka (LUN)",
+   "airportDirections": "About 3 hours 30 minutes by road from Lusaka, or a 1-hour charter flight to Chunga Airstrip.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -12603,17 +12804,51 @@
     "items": []
    },
    "onlyHere": [
-    "Ila gives you Kafue in near silence: electric vehicles and boats, a river full of hippo and elephant, and a park so big you rarely see another car."
+    "Ila gives you Kafue in near silence: solar-powered electric vehicles and boats, a river where hippos and elephants are part of the daily scene, and one of the last great expanses of remote wilderness in Africa."
    ],
    "why": [
     {
      "title": "Silent Safari",
-     "body": "Best for returning safari-goers, families and eco-minded travelers."
+     "body": "Best for couples, families with children of any age, solo travellers and eco-minded travellers."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 March 2025 to 31 January 2026, closing for February.",
+    "how_to_get_there": "About 3 hours 30 minutes by road from Lusaka Airport, or a charter of about 1 hour from Lusaka to Chunga Airstrip.",
+    "signature_experiences": "Silent electric game drives and solar e-Boat cruises on the Kafue River, plus walking safaris.",
+    "who_its_for": "Couples, families with children of any age, solo travellers and eco-minded guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Ila Safari Lodge?",
+     "a": "Ila is a tented lodge on the Kafue River in Kafue National Park, western Zambia, which Green Safaris describes as the largest and oldest park in Zambia."
+    },
+    {
+     "q": "How do you get to Ila Safari Lodge?",
+     "a": "Ila is reached by road from Lusaka; Green Safaris lists a road transfer of about 3 hours 30 minutes from Lusaka Airport. A charter flight of about 1 hour with Skytrails from Lusaka to Chunga Airstrip is also listed."
+    },
+    {
+     "q": "When is Ila Safari Lodge open?",
+     "a": "Ila is open most of the year and closes for February; the current season runs 1 March 2025 to 31 January 2026."
+    },
+    {
+     "q": "How many tents does Ila have?",
+     "a": "Ten Riverside Tents on raised decks over the Kafue River, with Couples Tents sleeping two and larger Family Tents sleeping four."
+    },
+    {
+     "q": "Can children stay at Ila?",
+     "a": "Yes. There is no age limit, there are en-suite family rooms, and guides adapt their activities for younger guests."
+    },
+    {
+     "q": "What makes Ila different?",
+     "a": "Ila developed Zambia's first electric game drive vehicle and runs solar-powered e-Cruiser drives and e-Boat cruises, so you explore Kafue in near silence. Walking safaris with an armed scout, bush breakfasts and community visits are also offered."
+    },
+    {
+     "q": "Who is Ila best for?",
+     "a": "Couples, families with children of any age, solo travellers and anyone interested in low-impact, conservation-led safaris."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -19184,7 +19419,11 @@
    "gallery": [],
    "bestMonths": "May to October",
    "bestMonthsNote": "May to October for dry season, best wildlife, and clear river views. November to April for lush scenery, birdlife, and green season specials.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "couples",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -19192,53 +19431,78 @@
     "lng": 29.6086
    },
    "airport": "Jeki Airstrip (JEK)",
-   "airportDirections": "Fly to Jeki Airstrip, 45-minute game drive or boat transfer to lodge, African Bush Camps team will greet you.",
+   "airportDirections": "April to November: fly 30 minutes from Lusaka to Jeki Airstrip, then a 15-minute game drive to the lodge. December to March: fly to Royal Airstrip, then a 1 hour 30 minute boat transfer.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eight luxurious suites, including two exclusive-use family villas and six river suites, all with private plunge pools, spacious decks, en suite bathrooms, indoor and outdoor showers, air conditioning, and stunning Zambezi River views. Main lodge with infinity pool, spa, yoga deck, fire pit, and fine dining."
+     "Six suites, each with a private plunge pool: four luxury suites, one luxury family suite with adjoining walkway, and one exclusive-use luxury villa with a private lounge, sala and deck, plus a private vehicle and guide. All suites have en suite bathrooms with indoor and outdoor showers, air conditioning and Zambezi River views. Main lodge with pool, spa, gym, yoga deck, boma and open-air cinema."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Day and night game drives",
-     "Walking safaris",
-     "Canoeing",
-     "Boat cruises",
-     "Tiger fishing",
-     "Birdwatching",
-     "Cultural visits",
-     "Spa treatments",
-     "Private bush dining",
-     "Star-gazing"
+     "Morning and afternoon game drives",
+     "Walking safaris (ages 16 and older)",
+     "Canoeing (ages 16 and older)",
+     "Sunrise, midday and sunset boat cruises",
+     "Seasonal catch-and-release fishing",
+     "Seasonal birding",
+     "Spa treatments"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Riverfront suites with plunge pools and air con",
-     "Infinity pool overlooking the Zambezi",
-     "Private butler service",
-     "Eco-friendly design",
-     "Chef-driven cuisine",
-     "Full spa and wellness offerings",
-     "Flexible for couples, families, and groups"
-    ]
+    "paras": [
+     "Riverfront suites with plunge pools and air conditioning. Main area pool overlooking the Zambezi. Spa and gym. Eco-conscious lodge built with recycled materials. One kilometre of private river frontage. Ngwana Club activities for children. Designed for couples and families."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Lolebezi Lodge is perfect for couples, honeymooners, families, and groups who want modern comfort, adventure, and tranquility in one of Africa’s most beautiful national parks. River wildlife, fishing, and wellness meet true style and privacy."
+    "Lolebezi Lodge is perfect for couples and families who want modern comfort, adventure, and tranquility in the Lower Zambezi National Park. River wildlife, the Leopards of Lolebezi, fishing, and wellness meet style and privacy."
    ],
    "why": [
     {
      "title": "Luxury on the Zambezi",
-     "body": "Best for those wanting river adventure, wildlife, fishing, and slow luxury. Perfect for romantic escapes, multigenerational families, and solo explorers seeking something spectacular."
+     "body": "Best for those wanting river adventure, wildlife, fishing, and slow luxury. Perfect for romantic escapes and family safaris."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 8 April to 7 January; November to April activities are river-based only.",
+    "how_to_get_there": "Fly to Jeki Airstrip (April to November) with a 15-minute game drive transfer, or to Royal Airstrip (December to March) with a 1.5-hour boat transfer.",
+    "signature_experiences": "Leopard-focused game drives, walking and canoe safaris, and boat cruises on the Zambezi.",
+    "who_its_for": "Families and couples seeking a six-suite riverfront lodge with plunge pools, spa and gym."
+   },
+   "faqs": [
+    {
+     "q": "Where is Lolebezi?",
+     "a": "On the banks of the Zambezi River in Zambia's Lower Zambezi National Park, set on five hectares with one kilometre of private river frontage."
+    },
+    {
+     "q": "How do you get to Lolebezi?",
+     "a": "From April to November, fly 30 minutes from Lusaka (or about 2 hours from Livingstone) to Jeki Airstrip, then take a 15-minute game drive transfer. From December to March, fly 30 minutes from Lusaka to Royal Airstrip, then take a 1 hour 30 minute boat transfer."
+    },
+    {
+     "q": "When is Lolebezi open?",
+     "a": "Lolebezi is open from 8 April to 7 January. During the emerald season, November to April, activities are limited to river-based activities because of the weather."
+    },
+    {
+     "q": "How many suites does Lolebezi have?",
+     "a": "Six, all with private plunge pools: four luxury suites, one luxury family suite and one exclusive-use luxury villa with its own lounge, sala, deck, private vehicle and guide."
+    },
+    {
+     "q": "Does Lolebezi accept children?",
+     "a": "Yes, there is no age restriction, though walking and canoeing safaris are for guests aged 16 and older. African Bush Camps runs Ngwana Club activities for children."
+    },
+    {
+     "q": "What is Lolebezi known for?",
+     "a": "African Bush Camps highlights its elephant herds, wild dogs and especially the Leopards of Lolebezi, explored on game drives, walking safaris, canoeing, boat cruises and seasonal catch-and-release fishing."
+    },
+    {
+     "q": "Who is Lolebezi best for?",
+     "a": "African Bush Camps says it is designed for both family and romantic escapes, with air-conditioned suites, a spa and a gym."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -19246,14 +19510,15 @@
     "primary": "PATH-04",
     "secondary": [
      "PATH-05",
-     "PATH-08"
+     "PATH-08",
+     "PATH-06"
     ],
     "setting": "lower_zambezi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -20613,13 +20878,17 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Where elephants walk through reception and wildlife never leaves",
+   "tagline": "Where elephants walk through reception and wildlife is all around",
    "quote": "Wake up to hippos in the lagoon, fall asleep to lion roars, and watch wild elephants wander through the lobby. Mfuwe Lodge is South Luangwa’s legendary wildlife haven",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/51c11dd81_735ec2582_682e70d0e4ec6fa1912ccc42_mfuwe-lodge-cr.webp",
    "gallery": [],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best game viewing, and famous elephant visits. November to May for green season, baby animals, and birds.",
-   "bestFor": [],
+   "bestMonths": "Mid-June to October",
+   "bestMonthsNote": "Open all year. Peak season mid-June to October, green season December to April, elephants in reception late October to mid-December.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -20631,7 +20900,7 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eighteen spacious chalets, each with private deck and en suite bathroom, all set around two peaceful lagoons. Main lodge with open-plan lounge, bar, dining, library, pool, spa, and stunning views."
+     "Eighteen air-conditioned thatched chalets (two suites, three family rooms and thirteen rooms), each with a private veranda and en suite bathroom, set around two lagoons. Main lodge with open-plan reception, lounge, dining and bar, plus a swimming pool, Bush-Spa, outdoor gym, library and curio shop."
     ],
     "items": []
    },
@@ -20649,7 +20918,7 @@
    },
    "features": {
     "paras": [
-     "Famous for elephants walking through reception (October–December). Lagoon-side swimming pool. Award-winning spa. Family-friendly chalets. Top guiding and hospitality. Eco-sensitive design."
+     "Elephant families walk through reception to feast on wild mangoes (late October to mid-December). Outdoor swimming pool. Bush-Spa and outdoor gym. Air-conditioned chalets, including suites and family rooms. The Family House for families and friends travelling together."
     ],
     "items": []
    },
@@ -20659,12 +20928,46 @@
    "why": [
     {
      "title": "Where Elephants Walk With You",
-     "body": "Best for families, couples, solo travelers, and adventure seekers who want wild elephants, classic safaris, and legendary Zambian hospitality in one iconic setting."
+     "body": "Best for families, couples, solo travelers, and adventure seekers who want wild elephants, classic safaris, and warm Zambian hospitality in one iconic setting."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open all year, with peak season mid-June to October and elephants in reception from late October to mid-December.",
+    "how_to_get_there": "Fly to Mfuwe International Airport (MFU), then a 45-minute game-viewing transfer.",
+    "signature_experiences": "Elephants walking through reception in mango season, game drives, walking safaris and the Bush-Spa.",
+    "who_its_for": "Families and safari guests starting or ending a South Luangwa bushcamp circuit."
+   },
+   "faqs": [
+    {
+     "q": "Where is Mfuwe Lodge?",
+     "a": "Mfuwe Lodge is set between two lagoons just inside the entrance to South Luangwa National Park, Zambia. It is The Bushcamp Company's gateway lodge and the usual start or end of its bushcamp circuit."
+    },
+    {
+     "q": "How do you get to Mfuwe Lodge?",
+     "a": "Fly to Mfuwe International Airport (MFU), which has daily scheduled Proflight Zambia flights from Lusaka. From there it is a 45-minute transfer in an open game-viewing vehicle."
+    },
+    {
+     "q": "When is the best time to visit Mfuwe Lodge?",
+     "a": "Mfuwe Lodge is open all year. Peak season runs from mid-June to October, the green season from December to April, and elephant families walk through reception between late October and mid-December."
+    },
+    {
+     "q": "How many rooms does Mfuwe Lodge have?",
+     "a": "There are 18 air-conditioned thatched chalets: two suites, three family rooms and thirteen rooms. The Family House at Mfuwe Lodge is a separate option for families and friends."
+    },
+    {
+     "q": "Are children welcome at Mfuwe Lodge?",
+     "a": "Yes. All ages are welcome, and the family rooms have space for two children."
+    },
+    {
+     "q": "Why do elephants walk through Mfuwe Lodge?",
+     "a": "Each year between late October and mid-December, wild elephant families walk through reception to reach the wild mango tree in the courtyard. The Bushcamp Company stresses the elephants are completely wild."
+    },
+    {
+     "q": "Who is Mfuwe Lodge best for?",
+     "a": "Families, first-time safari guests and anyone starting or ending a Bushcamp Company circuit who wants air-conditioned comfort, a pool and spa, and wildlife visible from the lodge."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -24223,6 +24526,116 @@
    "arrivalHubIds": []
   },
   {
+   "slug": "nyamatusi-camp",
+   "name": "Nyamatusi Camp",
+   "ledgerId": "STY-2026-000197",
+   "country": "Zimbabwe",
+   "countrySlug": "zimbabwe",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six tented suites with plunge pools on the Zambezi in Mana Pools",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nyamatusi-camp/g10"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "December to April is the green season, with wildflowers, full water sources and newborn wildlife. May to September is the cool, clear Diamond Season. October brings intense heat, drying waterholes and dramatic predator action.",
+   "bestFor": [
+    "adventure",
+    "conservation",
+    "couples"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six luxury tented suites, each with air conditioning, an indoor and outdoor shower, a mini bar, a viewing deck with outdoor seating and a private plunge pool, all looking over the Zambezi River. The main camp has a plunge pool and firepit, a lounge, a dining area and a wine cellar for private dinners."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Walking safaris are the highlight here, tracking wildlife on foot in Mana Pools National Park, a UNESCO World Heritage Site. Game drives, canoeing safaris and fishing on the Zambezi, and birding fill the rest of the day, ending with sunset over the river."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Powered entirely by solar energy and built from thatch and indigenous materials, with handwoven lighting and furniture by local artisans. Mana Pools takes its name, meaning four pools, from its four permanent waterholes."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Tracking wildlife on foot along the Zambezi floodplain, then returning to your own plunge pool above the river."
+   ],
+   "why": [
+    {
+     "title": "Mana Pools on Foot",
+     "body": "Best for travellers who want an authentic, uncrowded safari with expert walking guides, including first-time safari-goers who prefer authenticity over crowds."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September for cool, clear dry-season days; October for dramatic predator action.",
+    "signature_experiences": "Walking safaris, canoeing on the Zambezi and sunsets over the river from camp.",
+    "who_its_for": "Travellers who want an uncrowded Mana Pools safari with walking at its heart."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nyamatusi Camp?",
+     "a": "In Mana Pools National Park in northern Zimbabwe, a UNESCO World Heritage Site on the Zambezi River."
+    },
+    {
+     "q": "How many suites does Nyamatusi Camp have?",
+     "a": "Six luxury tented suites, each with a private plunge pool, air conditioning and views over the Zambezi."
+    },
+    {
+     "q": "What is Nyamatusi Camp known for?",
+     "a": "Walking safaris in Mana Pools, plus game drives, canoeing and fishing on the Zambezi and birding."
+    },
+    {
+     "q": "When is the best time to visit Nyamatusi Camp?",
+     "a": "May to September is the cool, clear dry season, and October brings the most dramatic predator action as waterholes dry. December to April is green, with newborn wildlife."
+    },
+    {
+     "q": "Is Nyamatusi Camp good for a first safari?",
+     "a": "Yes. African Bush Camps describes it as a strong introduction for travellers who want authenticity over crowds, with expert guiding."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
+   },
+   "volumes": null,
+   "arrivalHubIds": []
+  },
+  {
    "slug": "nyungwe-tea-forest-resort",
    "name": "Nyungwe Tea Forest Resort",
    "ledgerId": "STY-2026-000202",
@@ -26115,9 +26528,13 @@
    "gallery": [
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/potato-bush-camp/g2"
    ],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "April to November",
+   "bestMonthsNote": "Fishing is best September to December.",
+   "bestFor": [
+    "family",
+    "couples",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -26125,7 +26542,7 @@
     "lng": 29.4805
    },
    "airport": null,
-   "airportDirections": null,
+   "airportDirections": "Light-aircraft transfer flights into the Lower Zambezi, included for stays of 4 nights or more.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -26144,7 +26561,7 @@
    },
    "features": {
     "paras": [
-     "A riverfront camp in Lower Zambezi National Park, sister to Sausage Tree. Guaranteed private guiding on land and water. Children from four. Ideal to book exclusively for up to 12."
+     "A riverfront camp in Lower Zambezi National Park, sister to Sausage Tree. Guaranteed private guiding on land and water. Children from four. Ideal to book exclusively, with free transfer flights for stays of four nights or more."
     ],
     "items": []
    },
@@ -26157,16 +26574,51 @@
      "body": "Best for families, friends booking the camp and value-minded couples."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 April to 30 November, with fishing best September to December.",
+    "how_to_get_there": "A transfer flight into Lower Zambezi National Park, covered by Green Safaris for stays of four nights or more.",
+    "signature_experiences": "Guaranteed private guiding by vehicle, boat and canoe from a four-unit riverfront camp.",
+    "who_its_for": "Families with children four and over, couples and groups booking the whole camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Potato Bush Camp?",
+     "a": "Potato Bush is a riverfront camp inside Lower Zambezi National Park, Zambia, a short walk from its sister camp, Sausage Tree."
+    },
+    {
+     "q": "How do you get to Potato Bush Camp?",
+     "a": "Guests take a transfer flight into the Lower Zambezi, and Green Safaris covers those flights for stays of four nights or more."
+    },
+    {
+     "q": "When is Potato Bush Camp open?",
+     "a": "The camp is open from 1 April to 30 November. Green Safaris says fishing is good all year, with September to December the best time."
+    },
+    {
+     "q": "How many rooms does Potato Bush have?",
+     "a": "Three safari tents for two and a two-bedroom Family House for four, linked by raised walkways, each with its own plunge pool and outdoor lounge."
+    },
+    {
+     "q": "Can children stay at Potato Bush?",
+     "a": "Yes, from four years old, and the raised walkways make the camp largely accessible for families."
+    },
+    {
+     "q": "What are the signature experiences at Potato Bush?",
+     "a": "Guaranteed private guiding on land and water, with day and night game drives, walking safaris, canoe trips, boat cruises, fishing and river lunches."
+    },
+    {
+     "q": "Who is Potato Bush best for?",
+     "a": "Families with children four and over, couples and groups who want to book the whole camp."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-06"
     ],
     "setting": null,
     "intentions": [
@@ -26179,8 +26631,8 @@
      "friends"
     ],
     "status": "approved",
-    "classifiedBy": "James Papagno, 31 Oct 2026",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "safaris",
@@ -26691,9 +27143,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b986b3d05_6094c97f8_6979bd16e0a28fa162e54b26_presidential-bedroom.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1aced6cb7_6b0bebd19_6979bd16e21d9c27614fe643_Presidential-Plunge-Pool.jpg"
    ],
-   "bestMonths": "June–October",
+   "bestMonths": "Year-round",
    "bestMonthsNote": "Dry season is best for wildlife, fishing, and river activities, animals gather on the riverbanks and days are warm, nights cool.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -26701,30 +27157,25 @@
     "lng": 29.3772
    },
    "airport": "Royal Airstrip (Royal Zambezi), Lusaka Kenneth Kaunda International Airport (LUN)",
-   "airportDirections": "Fly to Lusaka, then a 30-minute charter flight to Royal Airstrip. Lodge transfers from airstrip are five minutes by vehicle.",
+   "airportDirections": "Fly into Lusaka (LUN), then take the lodge's 30-minute flight to its own Royal Airstrip.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Deluxe Suite",
-     "Presidential Suite",
-     "Luxury Suite",
-     "Family Suite",
-     "Private Villa",
-     "Exclusive Use"
-    ]
+    "paras": [
+     "Deluxe Suites (eight, each with a private plunge pool). Presidential Suites (seven, each with a plunge pool, private day bed and outdoor showers). Family Suite (two Deluxe Suites sharing a family area)."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
      "Game Drives",
-     "River Safaris",
+     "River Cruises",
      "Canoeing",
-     "Walking Safaris",
-     "Tiger Fishing",
-     "Spa",
+     "Bush Walks",
+     "Tigerfish Angling",
+     "Royal Bush Spa",
      "Birdwatching",
-     "Village Visits",
+     "Community and Conservation Visits",
      "Sundowners"
     ]
    },
@@ -26732,27 +27183,57 @@
     "paras": [],
     "items": [
      "Riverside suites with private decks and plunge pools",
-     "Award-winning Royal Bush Spa",
-     "All-inclusive cuisine",
+     "Royal Bush Spa",
+     "Award-winning cuisine",
      "Dedicated safari guides",
      "Sunset cruises on the Zambezi",
-     "Fishing for the legendary tigerfish",
+     "Angling for tigerfish",
      "Child-friendly activities",
-     "Solar-powered and eco-conscious"
+     "Infinity pool and Sausage Tree Bar"
     ]
    },
    "onlyHere": [
-    "Royal Zambezi Lodge is perfect for couples, families, friends, and solo travelers seeking wild adventure and total relaxation. With endless river views, world-class guides, and personal service, this is a place where memories are made and nature is always close."
+    "Royal Zambezi Lodge is perfect for couples, families, friends, and solo travelers seeking wild adventure and total relaxation. With endless river views, dedicated guides, and personal service, this is a place where memories are made and nature is always close."
    ],
    "why": [
     {
      "title": "Royal Zambezi, Untamed and Unforgettable",
-     "body": "Stay for a blend of luxury and adventure, game drives, river safaris, and spa treatments, all with a riverfront view. Best for families, honeymooners, fishing fans, and anyone who wants to feel the wild in style."
+     "body": "Stay for a blend of luxury and adventure, game drives, river safaris, and spa treatments, all with a riverfront view. Best for families, anglers, and anyone who wants to feel the wild in style."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round; May to August is cool and dry, December to March is the rainy season.",
+    "how_to_get_there": "A 30-minute flight from Lusaka to the lodge's own Royal Airstrip.",
+    "signature_experiences": "Game drives, canoeing, tigerfish angling and river cruises on the Zambezi, plus the Royal Bush Spa.",
+    "who_its_for": "Families with children of any age and travellers who want a full river and land safari with a spa."
+   },
+   "faqs": [
+    {
+     "q": "Where is Royal Zambezi Lodge?",
+     "a": "On the northern bank of the Zambezi River in the Chiawa Game Management Area, Zambia, just minutes from Lower Zambezi National Park and looking across to Mana Pools in Zimbabwe."
+    },
+    {
+     "q": "How do you get to Royal Zambezi Lodge?",
+     "a": "The lodge recommends flying from Lusaka to its own 1.8 km all-weather Royal Airstrip, a 30-minute flight that the lodge's flights team arranges. Self-drive is possible on a rough gravel road, by 4x4 only from December to March."
+    },
+    {
+     "q": "When is the best time to visit Royal Zambezi Lodge?",
+     "a": "The lodge is open all year, and the best time depends on your interests. May to August is winter with chilly mornings and evenings, and December to March is the rainy season."
+    },
+    {
+     "q": "How many suites does Royal Zambezi Lodge have?",
+     "a": "Fifteen: eight Deluxe Suites with private plunge pools and seven Presidential Suites with plunge pools, day beds and outdoor showers. Two Deluxe Suites can be combined as a Family Suite sharing a family area."
+    },
+    {
+     "q": "Does Royal Zambezi Lodge accept children?",
+     "a": "Yes, children of all ages are welcome, and activities such as game drives and boat trips can be adapted for them. The lodge does not provide childcare or nannies."
+    },
+    {
+     "q": "What are the signature experiences at Royal Zambezi Lodge?",
+     "a": "Game drives, bush walks, canoeing, tigerfish angling, river cruises, birding and treatments at the Royal Bush Spa."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -27861,9 +28342,13 @@
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sausage-tree-camp/hero",
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "April to November",
+   "bestMonthsNote": "Fishing is best September to December.",
+   "bestFor": [
+    "couples",
+    "family",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -27871,7 +28356,7 @@
     "lng": 29.4812
    },
    "airport": null,
-   "airportDirections": null,
+   "airportDirections": "Light-aircraft transfer flights into the Lower Zambezi.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -27891,22 +28376,56 @@
    },
    "features": {
     "paras": [
-     "Established in 1996 in Lower Zambezi National Park as Zambia's most luxurious bush camp. Guaranteed private guiding with private vehicles, boats and canoes. Butlers, known as Muchindas."
+     "Established in 1996 in Lower Zambezi National Park as a luxury bush camp. Guaranteed private guiding with private vehicles, boats and canoes. Butlers, known as Muchindas."
     ],
     "items": []
    },
    "onlyHere": [
-    "Sausage Tree is privacy as a promise: your own guide, vehicle and boat, a plunge pool on the Zambezi and a camp that set the standard for luxury in Zambia."
+    "Sausage Tree is privacy as a promise: your own guide, vehicle and boat, a plunge pool on the Zambezi and a camp founded in 1996 and rebuilt in its entirety in 2018."
    ],
    "why": [
     {
      "title": "Privately Guided",
-     "body": "Best for couples, honeymooners and families who want the whole experience to themselves."
+     "body": "Best for couples, families with children over eight and groups who want the whole experience to themselves."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 April to 30 November, with fishing best September to December.",
+    "how_to_get_there": "A transfer flight into Lower Zambezi National Park.",
+    "signature_experiences": "Guaranteed private guiding by vehicle, boat and canoe, with a plunge pool at every suite.",
+    "who_its_for": "Couples, families with children over eight and private groups."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sausage Tree Camp?",
+     "a": "Sausage Tree is on the banks of the Zambezi River inside Lower Zambezi National Park, Zambia, a protected area of 4,092 km2."
+    },
+    {
+     "q": "How do you get to Sausage Tree Camp?",
+     "a": "Guests take a transfer flight into the Lower Zambezi; ask your travel designer for routing. The camp sits on the river, and activities run by vehicle, on foot, by boat and by canoe."
+    },
+    {
+     "q": "When is Sausage Tree Camp open?",
+     "a": "The camp is open from 1 April to 30 November. Green Safaris says fishing is good all year, with September to December the best time."
+    },
+    {
+     "q": "How many rooms does Sausage Tree have?",
+     "a": "Seven tented luxury suites and the Kigelia House for four guests, each with its own plunge pool and Zambezi view. The whole camp can be booked privately."
+    },
+    {
+     "q": "Can children stay at Sausage Tree?",
+     "a": "Yes, for families with children above eight years old."
+    },
+    {
+     "q": "What makes Sausage Tree different?",
+     "a": "Every stay includes guaranteed private guiding, meaning your own vehicle, boat and canoe trips, plus butlers known as Muchindas. Day and night drives, walking safaris, canoeing, catch-and-release fishing and river lunches are included."
+    },
+    {
+     "q": "Who is Sausage Tree best for?",
+     "a": "Couples, families with children over eight and groups who want the whole camp to themselves."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -28469,21 +28988,26 @@
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/shawa-luangwa-camp/hero",
    "gallery": [],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Lush in May; dry-season game viewing June to October.",
+   "bestFor": [
+    "couples",
+    "family",
+    "group_exclusive_use",
+    "wildlife_photography"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -13.06591,
     "lng": 31.84402
    },
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Mfuwe Airport (MFU)",
+   "airportDirections": "About a 1 hour flight from Lusaka, then a 45-minute road transfer.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Five Safari Suites under canvas on the Luangwa River: three Couples Tents, a Family Tent and more, each with a view and a bath for sunset."
+     "Five Safari Suites under canvas on the Luangwa River: Couples Suites, a Family Suite and Premium Suites, each raised on stilts with a 270-degree view and an en-suite bathtub."
     ],
     "items": []
    },
@@ -28503,7 +29027,7 @@
     "items": []
    },
    "onlyHere": [
-    "Shawa Luangwa brings electric, silent safaris to one of Africa's great leopard valleys, in a quiet corner of the park built for walking."
+    "Shawa Luangwa brings electric, silent safaris to the Valley of the Leopard, in the Nsefu Sector, one of the park's most untouched areas and ideal for safaris on foot and by vehicle."
    ],
    "why": [
     {
@@ -28515,9 +29039,43 @@
      "body": "Best for couples, families taking the camp and keen walkers."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "May to October, within a camp season of 1 May to 30 November.",
+    "how_to_get_there": "A flight of about 1 hour from Lusaka to Mfuwe, then a 45-minute road transfer.",
+    "signature_experiences": "Silent electric game drives and walking safaris in the Nsefu Sector, the Valley of the Leopard.",
+    "who_its_for": "Couples, families with children 9 and over, private groups and wildlife photographers."
+   },
+   "faqs": [
+    {
+     "q": "Where is Shawa Luangwa Camp?",
+     "a": "Shawa is a small bush camp on the eastern bank of the Luangwa River in the Nsefu Sector of South Luangwa National Park, Zambia."
+    },
+    {
+     "q": "How do you get to Shawa Luangwa Camp?",
+     "a": "Fly from Lusaka to Mfuwe (usually about 1 hour with Proflight), then take a road transfer of about 45 minutes to camp."
+    },
+    {
+     "q": "When is the best time to visit Shawa Luangwa?",
+     "a": "Green Safaris says May to October is the best time to visit South Luangwa, with lush scenery in May and high-visibility game viewing from June to October. The camp is open from 1 May to 30 November."
+    },
+    {
+     "q": "How many suites does Shawa have?",
+     "a": "Five raised canvas Safari Suites: Couples Suites, a Family Suite that sleeps four, and Premium Suites. The whole camp can be booked exclusively."
+    },
+    {
+     "q": "Can children stay at Shawa Luangwa?",
+     "a": "Yes, from 9 years old, and the team is experienced with families with older children."
+    },
+    {
+     "q": "What are the signature experiences at Shawa?",
+     "a": "Silent safaris in solar-powered electric e-Cruisers, walking safaris with a guide and armed scout, birding and bush meals. Green Safaris says it is the only operator offering Silent Safaris in Luangwa."
+    },
+    {
+     "q": "Who is Shawa Luangwa best for?",
+     "a": "Couples, families with children 9 and over, groups taking the whole camp and photographers; Green Safaris calls the Nsefu Sector ideal for photographic safaris."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29013,17 +29571,23 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sindabezi-island-camp/g1",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/sindabezi-island-camp/g2"
    ],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Devil's Pool usually mid-August to mid-January; lunar rainbows best April to August.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "solo",
+    "family",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -17.84318,
     "lng": 25.71148
    },
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Harry Mwaanga Nkumbula International Airport, Livingstone (LVI)",
+   "airportDirections": "25 minutes by road to Tongabezi, then a short boat ride.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -29047,17 +29611,51 @@
     "items": []
    },
    "onlyHere": [
-    "Sindabezi is nature therapy: your own small island in the Zambezi, where the only neighbours are the wildlife and the only footprints are yours in the sand."
+    "Sindabezi is nature therapy: a tiny island in the Zambezi with only five chalets, where the neighbours are the resident wildlife and the only footprints you leave are in the sand."
    ],
    "why": [
     {
-     "title": "An Island to Yourselves",
-     "body": "Best for couples, small families and anyone who wants Victoria Falls with a true bush camp feel."
+     "title": "An Island in the Zambezi",
+     "body": "Best for couples, families with children 9 and over, and anyone who wants Victoria Falls with a true bush camp feel."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year-round, with Devil's Pool usually open mid-August to mid-January and lunar rainbows best April to August.",
+    "how_to_get_there": "About 25 minutes by road from Livingstone Airport to Tongabezi, then a short boat ride to the island.",
+    "signature_experiences": "An off-grid island of five chalets, river cruises, sampan dinners and Victoria Falls 12 km downstream.",
+    "who_its_for": "Couples, honeymooners, solo travellers, families with children 9 and over, and small private groups."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sindabezi Island Camp?",
+     "a": "Sindabezi is a small island in the Zambezi River, 12 km upstream of Victoria Falls in Zambia, looking over the river floodplain and Victoria Falls National Park. It is the sister camp to Tongabezi."
+    },
+    {
+     "q": "How do you get to Sindabezi Island?",
+     "a": "Fly into Livingstone Airport, drive about 25 minutes to Tongabezi, then take a short boat ride to the island. Green Safaris says the island is about 15 minutes from Tongabezi by boat."
+    },
+    {
+     "q": "When is the best time to visit Sindabezi?",
+     "a": "Sindabezi is open year-round. Devil's Pool usually opens mid-August to mid-January, and April to August tends to be best for lunar rainbows over the Falls."
+    },
+    {
+     "q": "How many chalets are on Sindabezi?",
+     "a": "There are five open-fronted thatched Chalets, including the Honeymoon Chalet, and small groups can book the whole island."
+    },
+    {
+     "q": "Can children stay at Sindabezi?",
+     "a": "Yes, from 9 years old. Green Safaris recommends it for families who have been on safari before."
+    },
+    {
+     "q": "What are the signature experiences at Sindabezi?",
+     "a": "Boat transfers to the island, sunrise and sunset cruises, sampan dinners on the river, sand bar picnics and visits to Victoria Falls. All Tongabezi activities are open to Sindabezi guests."
+    },
+    {
+     "q": "Who is Sindabezi best for?",
+     "a": "Couples and honeymooners, solo travellers, families with children 9 and over, and small groups taking the island privately."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -33332,11 +33930,13 @@
    "category": "hotel",
    "tagline": "Four tented suites and an elephant pool in the heart of Hwange",
    "quote": null,
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/hero",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/hero",
    "gallery": [
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g1",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g2",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zimbabwe/somalisa-acacia/g3"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa-acacia/g5"
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
@@ -33397,6 +33997,113 @@
     "stays",
     "safaris"
    ],
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "somalisa",
+   "name": "Somalisa Camp",
+   "ledgerId": "STY-2026-000278",
+   "country": "Zimbabwe",
+   "countrySlug": "zimbabwe",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seven tented suites beside an elephant pool in Hwange National Park",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/somalisa/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "conservation"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Victoria Falls Airport (VFA)",
+   "airportDirections": "A 45-minute light-aircraft flight from Victoria Falls to Hwange National Park.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven luxury tented suites under the shade of an acacia grove, each with a wood-burning fireplace, a copper slipper bath, a king-size bed, indoor and outdoor showers and a private viewing deck. The main area has a bar, a shared lounge, a firepit and a swimming pool that looks onto the Elephant Pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Game drives, walking safaris, birding and cultural visits in Hwange National Park, home to elephant, lion, leopard, cheetah and African wild dog. Elephants drink at the Elephant Pool right beside camp, and a romantic treehouse retreat over a waterhole sits 25 minutes away."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Run entirely on solar power, with water purification that recycles 80% of its water, Somalisa holds the first GOLD Green Tourism Certification awarded in Zimbabwe. Interiors pair Kudhinda, a local Zimbabwean fabric, with contemporary design."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A pool beside the Elephant Pool, where herds come to drink a few metres from where you sit, in the heart of Hwange."
+   ],
+   "why": [
+    {
+     "title": "Elephants at the Pool",
+     "body": "Best for couples and first-time safari-goers who want close elephant encounters in one of southern Africa's most biodiverse parks."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "A 45-minute light-aircraft flight from Victoria Falls.",
+    "signature_experiences": "Watching elephants at the Elephant Pool, walking safaris and a night in the treehouse.",
+    "who_its_for": "Couples and first-time safari-goers who want close elephant encounters."
+   },
+   "faqs": [
+    {
+     "q": "Where is Somalisa Camp?",
+     "a": "In Hwange National Park, Zimbabwe's largest park, a 45-minute light-aircraft flight from Victoria Falls."
+    },
+    {
+     "q": "How many tents does Somalisa Camp have?",
+     "a": "Seven luxury tented suites, each with a fireplace, copper slipper bath, indoor and outdoor showers and a private viewing deck."
+    },
+    {
+     "q": "What is the Elephant Pool at Somalisa?",
+     "a": "A waterhole right beside camp where elephants come to drink, so guests can watch them up close in a safe setting."
+    },
+    {
+     "q": "What activities does Somalisa Camp offer?",
+     "a": "Game drives, walking safaris, birding and cultural visits, plus a treehouse retreat over a waterhole 25 minutes from camp."
+    },
+    {
+     "q": "Is Somalisa Camp sustainable?",
+     "a": "Yes. It runs entirely on solar power, recycles 80% of its water and holds Zimbabwe's first GOLD Green Tourism Certification."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": null,
    "arrivalHubIds": []
   },
   {
@@ -34163,9 +34870,9 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": null,
    "arrivalHubIds": []
@@ -36798,9 +37505,12 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/408414b9d_b3eee2312_69ae934065a1ea2261d931f5_Family_Tent_Chinzombo__C2_A9_Oliver_Fly_Photography_17-.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2bd107e1d_6958aa18c_69ae92e542545a671909c0a9_Main_Lodge_Chinzombo__C2_A9_Oliver_Fly_Photography_26-2."
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best wildlife, and exclusive riverside safaris. November to May brings lush green scenery, baby animals, and top birding.",
-   "bestFor": [],
+   "bestMonths": "Open all year",
+   "bestMonthsNote": "Open all year. Seasonal boat safaris run January to April, when the river is high.",
+   "bestFor": [
+    "family",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -36808,11 +37518,11 @@
     "lng": 31.7603
    },
    "airport": "Mfuwe Airport",
-   "airportDirections": "Fly to Mfuwe Airport, 1 hour scenic road and boat transfer to camp. Charter flights from Lusaka and other safari hubs.",
+   "airportDirections": "Fly to Mfuwe Airport, then a 1 hour game drive transfer to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six ultra-luxury villas with private plunge pools, large decks, open-air bathrooms, and panoramic river views. One family villa with two bedrooms and shared lounge. Main camp includes infinity pool, lounge, library, and riverside dining."
+     "Six luxury safari tents beneath ancient msikizi trees: five one-bedroom tents and one two-bedroom, two-bathroom family tent. Each has a private pool, a soaking tub with river views, a shaded verandah and a spacious interior with lounge. The main lodge has dining areas, a lounge, bar, open-air library, fire pit and riverfront sun deck."
     ],
     "items": []
    },
@@ -36821,37 +37531,66 @@
     "items": [
      "Morning and afternoon game drives",
      "Walking safaris",
-     "River boat safaris (seasonal)",
-     "Birding",
-     "Photographic safaris",
-     "Wellness treatments",
-     "Sundowners by the river"
+     "Seasonal boat safaris (January to April)",
+     "Sleepout under the stars",
+     "Cultural experiences",
+     "Activities for children",
+     "In-room spa treatments",
+     "Sundowners"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Private plunge pools",
-     "Floor-to-ceiling glass and canvas walls",
-     "Personal butler service",
-     "Exclusive river location",
-     "Walking and driving safaris",
-     "Modern eco design",
-     "Wellness treatments"
-    ]
+    "paras": [
+     "Private pools and soaking tubs with river views. Canvas, timber and reed design. In-room spa treatments. Riverfront setting in one of the most game-rich areas of South Luangwa. Walking and driving safaris. Dinner made with produce grown by the camp. Wifi in the tents."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Time + Tide Chinzombo is for couples, families, and solo travelers who want contemporary luxury, legendary guiding, and Zambia’s wild beauty all in one place."
+    "Time + Tide Chinzombo is for couples, families, and solo travelers who want contemporary riverside comfort, experienced guiding, and Zambia’s wild beauty all in one place."
    ],
    "why": [
     {
      "title": "Wild River, Modern Sanctuary",
-     "body": "Chinzombo is perfect for safari lovers, honeymooners, families, and wellness seekers who want luxury, privacy, and world-class wildlife encounters in South Luangwa."
+     "body": "Chinzombo suits safari lovers, couples, families, and wellness seekers who want private pools, in-room spa treatments, and game drives and walks in one of the most game-rich areas of South Luangwa."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open all year, with seasonal boat safaris from January to April when the river is high.",
+    "how_to_get_there": "Fly to Mfuwe Airport, then a one-hour game drive transfer to camp.",
+    "signature_experiences": "Game drives, walking safaris, seasonal boat safaris, sleepouts under the stars and in-room spa treatments.",
+    "who_its_for": "Families, couples and wellness-minded travellers looking for a riverside South Luangwa camp with private pools."
+   },
+   "faqs": [
+    {
+     "q": "Where is Time + Tide Chinzombo?",
+     "a": "Time + Tide Chinzombo sits on a sweeping curve of the Luangwa River in South Luangwa National Park, Zambia. Guides take guests across the river by boat into one of the most game-rich areas of the park."
+    },
+    {
+     "q": "How do you get to Time + Tide Chinzombo?",
+     "a": "Fly into Mfuwe Airport, then take a one-hour game drive transfer to camp. Transfers to and from the local airport are included in the rates."
+    },
+    {
+     "q": "When is the best time to visit Time + Tide Chinzombo?",
+     "a": "Chinzombo is open all year. Boat safaris are seasonal and run from January to April, when the Luangwa River is high."
+    },
+    {
+     "q": "How many tents does Time + Tide Chinzombo have?",
+     "a": "There are six luxury safari tents: five one-bedroom tents and one two-bedroom, two-bathroom family tent. Each has a private pool and a soaking tub with river views."
+    },
+    {
+     "q": "Is Time + Tide Chinzombo good for children?",
+     "a": "Yes. Children of all ages are welcome, there is a two-bedroom family tent, and the camp offers activities for children."
+    },
+    {
+     "q": "What can you do at Time + Tide Chinzombo?",
+     "a": "Morning and afternoon game drives, walking safaris, seasonal boat safaris, a sleepout under the stars, cultural experiences and sundowners. In-room spa treatments are available, and a 20-minute welcome massage is included."
+    },
+    {
+     "q": "Who is Time + Tide Chinzombo best for?",
+     "a": "Families, couples and travellers who want a contemporary riverside camp with private pools, spa treatments and both walking and driving safaris in South Luangwa."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -36888,9 +37627,15 @@
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cd12772e5_5796036d0_682e77203e39de6f6c645b39_At_Camp_Chongwe_Time_2BTide__C2_A9_Oliver_Fly_Photograp."
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best wildlife, and river adventures. November to May brings lush green landscapes, baby animals, and excellent birding.",
-   "bestFor": [],
+   "bestMonths": "April to November",
+   "bestMonthsNote": "Open 1 April to 15 November, when the river suits boating and canoeing and predator sightings are good.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "couples",
+    "adventure",
+    "wildlife_photography"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -36898,38 +37643,32 @@
     "lng": 29.3379
    },
    "airport": "Royal Airstrip",
-   "airportDirections": "Fly to Royal Airstrip, 30 minute game drive transfer to camp. Charter flights from Lusaka or other safari hubs.",
+   "airportDirections": "Fly to Royal Airstrip, then a 20 minute drive to camp.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Nine classic safari tents with private decks, open-air bathrooms, and river views. One two-bedroom Albida Suite and one exclusive Cassia Suite with private pool, lounge, butler, and chef. Main camp with fire pit, dining, lounge, and riverfront setting."
+     "Eight classic safari tents along the Chongwe River, each with a panoramic river view, a spacious open-air bathroom and a porch with lounge chairs. Time + Tide Chongwe Suites adds the one-bedroom Cassia Suite for two and the two-bedroom, two-bathroom Albida Suite for four, each with a clawfoot bath, canopied lounge and dining area, river-view pool, fire pit and dedicated butler. The main camp has dining areas, a lounge, bar, campfire, pool and a wildlife hide."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Day and night game drives",
-     "Canoeing and boating safaris",
+     "Morning and afternoon game drives",
      "Walking safaris",
-     "Tiger fishing",
-     "Birding",
-     "Photographic safaris",
-     "Sundowners on the river",
-     "Cultural visits",
-     "Spa treatments"
+     "Seasonal canoeing and boating safaris",
+     "Seasonal tiger fishing",
+     "Sleepout under the stars",
+     "Children's activities",
+     "Cultural experiences",
+     "Sundowners"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Riverfront suites and tents",
-     "Private plunge pools",
-     "Guided canoeing and boating",
-     "Wildlife at your doorstep",
-     "Exclusive suites for families or couples",
-     "Eco friendly and community focused"
-    ]
+    "paras": [
+     "Riverfront tents at the confluence of the Chongwe and Zambezi Rivers. Private pools in the two suites. Seasonal canoeing and boating safaris. Wildlife hide for photography. Suites for families or couples with privately guided activities. Children of all ages welcome."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Time + Tide Chongwe is for couples, families, solo travelers, and adventure seekers who want riverside wildlife, water adventures, and the classic spirit of the Zambezi."
@@ -36940,9 +37679,43 @@
      "body": "Time + Tide Chongwe is perfect for safari lovers, families, couples, and anyone who dreams of hippos, elephants, and river sunsets. Private suites, adventures on water and land, and welcoming staff make this a Lower Zambezi highlight."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 1 April to 15 November, the months Time + Tide recommends for boating, canoeing and predator sightings in the Lower Zambezi.",
+    "how_to_get_there": "Fly to Royal Airstrip, then a 20-minute drive to camp.",
+    "signature_experiences": "Canoeing and boating safaris, tiger fishing, walking safaris and a wildlife hide for photography.",
+    "who_its_for": "Couples, honeymooners, families and active travellers who want river safaris as well as drives and walks."
+   },
+   "faqs": [
+    {
+     "q": "Where is Time + Tide Chongwe?",
+     "a": "Time + Tide Chongwe is in Lower Zambezi National Park, Zambia, at the confluence of the Chongwe and Zambezi Rivers. Time + Tide runs it as Chongwe Camp, Chongwe Suites and the sole-use Chongwe House."
+    },
+    {
+     "q": "How do you get to Time + Tide Chongwe?",
+     "a": "Fly to Royal Airstrip, then a 20-minute drive to camp. Transfers to and from the local airport are included in the rates."
+    },
+    {
+     "q": "When is the best time to visit Time + Tide Chongwe?",
+     "a": "Chongwe is open from 1 April to 15 November. Time + Tide says April to November is when the Lower Zambezi is at its most magical, with the river right for boating and canoeing and good sightings of wild dogs, lions and leopards."
+    },
+    {
+     "q": "How many tents and suites does Time + Tide Chongwe have?",
+     "a": "Chongwe Camp has eight classic safari tents. Chongwe Suites adds the one-bedroom Cassia Suite for two and the two-bedroom, two-bathroom Albida Suite for four, each with a river-view pool and a dedicated butler."
+    },
+    {
+     "q": "Are children welcome at Time + Tide Chongwe?",
+     "a": "Yes. Children of all ages are welcome, the camp offers children's activities, and the Albida Suite is designed for families who want their own space."
+    },
+    {
+     "q": "What can you do at Time + Tide Chongwe?",
+     "a": "Morning and afternoon game drives, walking safaris, seasonal canoeing and boating safaris, seasonal tiger fishing and a sleepout under the stars. The camp's wildlife hide is good for photography and spotting nocturnal animals."
+    },
+    {
+     "q": "Who is Time + Tide Chongwe best for?",
+     "a": "Couples and honeymooners in the Cassia Suite, families in the Albida Suite, and anyone who wants water-based safaris alongside drives and walks."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -36971,7 +37744,7 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Remote riverside safari, wild elegance, Luangwa adventure",
+   "tagline": "Intimate riverside safari, wild elegance, Luangwa adventure",
    "quote": "Wake to the call of hippos and see elephants cross the river, then walk with expert guides through the wild heart of Luangwa",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5f99eb80e_ce1ef1334_682e75e4c0f25ca795b04d08_Time_20_2B_20Tide_20Mchenja_20Safari_20Rooms_203.jpg",
    "gallery": [
@@ -36986,9 +37759,12 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/223bae9b8_67793c76f_69ae84fde7d1b6ff105af5ba_DSC05064-HDR-Edit.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1b8df0923_73d1e7427_69ae8990f26fbb953ca4aaa5_Time_and_Tide__C2_A9_Oliver_Fly_Photography_93.webp"
    ],
-   "bestMonths": "June to October",
-   "bestMonthsNote": "June to October for dry season, best wildlife, and walking safaris. November to May brings lush scenery and amazing birding.",
-   "bestFor": [],
+   "bestMonths": "20 May to 15 November",
+   "bestMonthsNote": "Open 20 May to 15 November. At the right time of year, one of the best camps in the park for carmine bee-eaters.",
+   "bestFor": [
+    "family",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -37000,45 +37776,78 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Five luxury suites with thatched roofs, floor-to-ceiling windows, and open-air bathrooms with freestanding bathtubs overlooking the river. Main lounge and dining area with bar and pool facing the Luangwa River."
+     "Five safari rooms in an ebony grove beside the Luangwa River: four one-bedroom rooms and one two-bedroom, two-bathroom family room. Each has grass walls, a feather-top bed, large picture windows and an open-air en suite bathroom with a bath looking out onto the river. The main lodge has dining areas, a lounge, bar, campfire and a pool overlooking the river."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
+     "Morning and afternoon game drives",
+     "Night drives",
      "Walking safaris",
-     "Day and night game drives",
-     "Birding",
-     "Photographic safaris",
-     "River sundowners",
-     "Bush breakfasts",
-     "Wellness treatments"
+     "Sleepout under the stars",
+     "Sundowners",
+     "Cultural experiences"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Riverfront suites with bathtubs and panoramic views",
-     "Guided walking safaris",
-     "Private plunge pool",
-     "Remote, wild setting",
-     "Exceptional birdlife",
-     "Intimate camp for couples, families, and solo travelers"
+     "Riverfront safari rooms with soaking tubs",
+     "Walking safaris",
+     "Pool overlooking the Luangwa River",
+     "Solar power and wifi in the rooms",
+     "Children of all ages welcome",
+     "Carmine bee-eaters at the right time of year"
     ]
    },
    "onlyHere": [
-    "Time + Tide Mchenja is for those who seek classic walking safaris, beautiful riverfront luxury, and a sense of wild seclusion in one of Africa’s greatest wildlife parks."
+    "Time + Tide Mchenja is for those who seek classic walking safaris, intimate riverfront comfort, and a quiet ebony grove in the heart of South Luangwa National Park."
    ],
    "why": [
     {
      "title": "Where Luangwa’s Wild Meets Luxury",
-     "body": "Time + Tide Mchenja is perfect for adventurers, couples, families, and solo travelers who want authentic walking safaris, riverside comfort, and some of Africa’s best wildlife action."
+     "body": "Time + Tide Mchenja suits adventurers, couples, families, and solo travelers who want walking safaris, night drives, and riverside comfort in the heart of South Luangwa."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open 20 May to 15 November, with carmine bee-eaters at the right time of year.",
+    "how_to_get_there": "Fly to Mfuwe Airport, then a two-hour game drive transfer to camp.",
+    "signature_experiences": "Walking safaris, night drives, big cat tracking and a sleepout under the stars.",
+    "who_its_for": "Couples, families and walkers who want an intimate five-room camp on the Luangwa River."
+   },
+   "faqs": [
+    {
+     "q": "Where is Time + Tide Mchenja?",
+     "a": "Time + Tide Mchenja is tucked into a shady ebony grove beside the Luangwa River in the heart of South Luangwa National Park, Zambia. Mchenja is the local name for ebony."
+    },
+    {
+     "q": "How do you get to Time + Tide Mchenja?",
+     "a": "Fly into Mfuwe Airport, then take a two-hour game drive transfer to camp. Transfers to and from the local airport are included in the rates."
+    },
+    {
+     "q": "When is Time + Tide Mchenja open?",
+     "a": "The camp is open from 20 May to 15 November. At the right time of year, Time + Tide says it is one of the best camps in the park for seeing carmine bee-eaters."
+    },
+    {
+     "q": "How many rooms does Time + Tide Mchenja have?",
+     "a": "There are five safari rooms: four one-bedroom rooms and one two-bedroom, two-bathroom family room. Each has an open-air en suite bathroom with a bath looking out onto the river."
+    },
+    {
+     "q": "Are children welcome at Time + Tide Mchenja?",
+     "a": "Yes. Children of all ages are welcome, and the two-bedroom family safari room suits families."
+    },
+    {
+     "q": "What can you do at Time + Tide Mchenja?",
+     "a": "Morning and afternoon game drives, night drives, walking safaris, a sleepout under the stars, sundowners and cultural experiences. Between activities there is a pool overlooking the Luangwa River."
+    },
+    {
+     "q": "Who is Time + Tide Mchenja best for?",
+     "a": "Travellers who want an intimate riverside camp with walking safaris and night drives, including families who can use the two-bedroom family room."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -37164,17 +37973,23 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/g3",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/safaris/zambia/tongabezi/g4"
    ],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Devil's Pool usually mid-August to mid-January; lunar rainbows best April to August.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family",
+    "solo",
+    "group_exclusive_use"
+   ],
    "status": "founder_returned",
    "statusDate": "2012-01-01",
    "coords": {
     "lat": -17.8211,
     "lng": 25.7035
    },
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Harry Mwaanga Nkumbula International Airport, Livingstone (LVI)",
+   "airportDirections": "About 25 minutes by road.",
    "founderNote": null,
    "rooms": {
     "paras": [
@@ -37184,13 +37999,13 @@
    },
    "experiences": {
     "paras": [
-     "River cruises and canoeing on the Zambezi. Island picnic lunches. Game drives and private guides. Victoria Falls on the doorstep. A visit to the school Green Safaris supports in the community."
+     "Boat cruises and electric dhow cruises on the Zambezi. Sampan dinners and island picnic lunches. Game drives in Mosi-oa-Tunya National Park and private guides on request. Victoria Falls a short drive away. A visit to the Tongabezi Trust School in the community."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "A Green Safaris eco-lodge on the banks of the Zambezi, 12 km upstream of Victoria Falls. Family-created and more than thirty years in the making, from tents with bucket showers to one of Africa's most-loved river lodges. Expert childminders and family-sized rooms."
+     "A Green Safaris eco-lodge on the banks of the Zambezi, 12 km upstream of Victoria Falls. Family-created and more than thirty years in the making, from tents with bucket showers in 1990 to the lodge it is today. Expert childminders and family-sized rooms."
     ],
     "items": []
    },
@@ -37203,8 +38018,42 @@
      "body": "Best for honeymooners, families and anyone pairing Victoria Falls with a safari in Zambia or Botswana."
     }
    ],
-   "facts": {},
-   "faqs": [],
+   "facts": {
+    "best_months": "Open year-round, with Devil's Pool usually open mid-August to mid-January and lunar rainbows best April to August.",
+    "how_to_get_there": "About 25 minutes by road from Livingstone Airport (Harry Mwanga Nkumbula International).",
+    "signature_experiences": "Sampan dinner on the Zambezi, electric dhow cruises, island picnics and Victoria Falls 12 km downstream.",
+    "who_its_for": "Honeymooners, couples, families, solo travellers and private groups."
+   },
+   "faqs": [
+    {
+     "q": "Where is Tongabezi?",
+     "a": "Tongabezi is a Green Safaris eco-lodge on the banks of the Zambezi River in Zambia, 12 km upstream of Victoria Falls."
+    },
+    {
+     "q": "How do you get to Tongabezi?",
+     "a": "Fly into Livingstone Airport (Harry Mwanga Nkumbula International), which Green Safaris says is about 25 minutes from the lodge. Livingstone connects with hubs such as Lusaka, Johannesburg, Cape Town and Nairobi."
+    },
+    {
+     "q": "When is the best time to visit Tongabezi?",
+     "a": "Tongabezi is open year-round. Devil's Pool on Livingstone Island usually opens mid-August to mid-January when the river is low, and April to August tends to be best for lunar rainbows over the Falls."
+    },
+    {
+     "q": "How many rooms does Tongabezi have?",
+     "a": "Green Safaris lists five River Cottages, four Houses (including the Honeymoon House and the Tree House) and three Family Houses, plus Tangala Private House for exclusive use."
+    },
+    {
+     "q": "Is Tongabezi good for children?",
+     "a": "Yes. Green Safaris says the team are expert childminders, menus are tailored for children, and there are family-sized rooms such as the Dog House and Garden House."
+    },
+    {
+     "q": "What are the signature experiences at Tongabezi?",
+     "a": "A candlelit sampan dinner on the Zambezi, island picnic lunches, sunrise and sunset cruises including the electric dhow, game drives in Mosi-oa-Tunya National Park and visits to Victoria Falls. The Livingstone Island tour with Devil's or Angel's Pool can be added."
+    },
+    {
+     "q": "Who is Tongabezi best for?",
+     "a": "Honeymooners and couples, families, solo travellers and private groups who want Tangala Private House to themselves."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -39453,14 +40302,14 @@
   },
   {
    "slug": "wilderness-busanga",
-   "name": "Wilderness \n Busanga",
+   "name": "Wilderness Busanga Bush Camp",
    "ledgerId": "STY-2026-000332",
    "country": "Zambia",
    "countrySlug": "zambia",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "The wildest plains, untamed and unforgettable",
+   "tagline": "An intimate, untamed safari on the Busanga Plains",
    "quote": "Wake with the sun, watch the lions, and sleep beneath an endless sky",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2ad20eb42_d50a80c14_6926c603f16b013210ce7d26_wilderness-busanga-bush-camp-accommodation-tent-exterio.",
    "gallery": [
@@ -39472,19 +40321,22 @@
    ],
    "bestMonths": "June to October",
    "bestMonthsNote": "The dry season sees the plains at their best with accessible roads, abundant wildlife, and predator action. June to July is lush and green, August to October is best for large herds and hunting scenes.",
-   "bestFor": [],
+   "bestFor": [
+    "adventure",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -14.1766,
-    "lng": 25.7972
+    "lat": -14.2054,
+    "lng": 25.8353
    },
-   "airport": "Lufupa Airstrip LFU, Lusaka Airport LUN",
-   "airportDirections": "Fly to Lusaka LUN, connect by light aircraft to Lufupa Airstrip LFU, and transfer 1.5 hours by road to Busanga camp",
+   "airport": "Busanga Airstrip, via Lusaka (LUN) or Livingstone (LVI)",
+   "airportDirections": "Fly into Lusaka (LUN) or Livingstone (LVI), then take a light aircraft flight of around an hour and a half to the Busanga airstrip.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Four classic safari tents on raised wooden decks, each with wide views of the Busanga Plains and simple comforts for true immersion."
+     "Four rustic tented suites set on the ground on an island in the Busanga Plains, with a tented main area overlooking the floodplains, a raised pool and a communal firepit."
     ],
     "items": []
    },
@@ -39492,47 +40344,74 @@
     "paras": [],
     "items": [
      "Morning and afternoon game drives",
-     "Guided birding",
-     "Night drives",
-     "Boating (seasonal)",
-     "Photography safaris",
-     "Sundowners on the plains"
+     "Guided walking safaris for up to six guests",
+     "Night game drives",
+     "Birding",
+     "Stargazing"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Remote location at the heart of Busanga Plains",
-     "Small and intimate camp with personalized guiding",
-     "Solar-powered and eco-friendly",
-     "Game viewing from camp",
-     "Authentic bush cuisine and warm campfire evenings"
-    ]
+    "paras": [
+     "Remote island setting in the heart of the Busanga Plains. Intimate four-tent fly camp. Raised pool overlooking the plains. Massage treatments from an in-house therapist. Wildlife, including lions, often seen wandering through camp. Homecooked traditional Zambian cuisine and fireside evenings."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Busanga is for the safari purist and the adventurer. This is where big cats roam, lechwe gather, and the sky feels endless. No fences, no crowds, just the sights and sounds of Kafue’s wild heart. Best for photographers, solo travelers, small groups, and anyone seeking real adventure off the beaten path."
+    "Busanga Bush Camp is for the safari purist and the adventurer. This is where lion prides roam, lechwe gather, and the sky feels endless. No fences, just the sights and sounds of Kafue's wild heart. Wilderness designs it for adventurous, experienced travellers seeking real adventure off the beaten path."
    ],
    "why": [
     {
      "title": "Where Africa Stretches to the Horizon",
-     "body": "Wilderness Busanga delivers Zambia’s most dramatic wildlife encounters in pure simplicity and comfort. Ideal for photographers, adventurers, and nature lovers who want the untamed safari experience."
+     "body": "Wilderness Busanga Bush Camp delivers untamed, unfenced wildlife encounters in simple comfort. Ideal for adventurers and nature lovers who want an authentic safari experience."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open June to October only, the dry season when the Busanga Plains have drained.",
+    "how_to_get_there": "Light aircraft from Lusaka or Livingstone, around an hour and a half, to the Busanga airstrip in Kafue National Park.",
+    "signature_experiences": "Game drives and small-group walking safaris among the lion prides and lechwe herds of the Busanga Plains.",
+    "who_its_for": "Adventurous, experienced safari travellers who want a simple, intimate four-tent fly camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Busanga Bush Camp?",
+     "a": "It sits on an island under sycamore fig trees in the heart of the Busanga Plains, in the remote north-west of Kafue National Park, Zambia."
+    },
+    {
+     "q": "How do you get to Busanga Bush Camp?",
+     "a": "Only by light aircraft. Wilderness flights from Livingstone (LVI) or Lusaka (LUN) to the Busanga airstrip take around an hour and a half, and they do not run at set times."
+    },
+    {
+     "q": "When is the best time to visit Busanga Bush Camp?",
+     "a": "The camp is open only from June to October, the dry season, when the plains have drained enough for game drives. It closes from November to May while the plains are flooded."
+    },
+    {
+     "q": "How many tents does Busanga Bush Camp have?",
+     "a": "Four rustic tented suites set on the ground, with a tented main area, a raised pool and a communal firepit overlooking the floodplains."
+    },
+    {
+     "q": "What are the signature experiences at Busanga Bush Camp?",
+     "a": "Game drives on the Busanga Plains and guided walking safaris for small groups of up to six are the main activities. Lion prides, red lechwe and puku are highlights, along with birding (over 500 species) and stargazing."
+    },
+    {
+     "q": "Who is Busanga Bush Camp best for?",
+     "a": "Wilderness designs it for adventurous, experienced travellers who prefer authenticity over polish. Guests who want more comfort in the same ecosystem often split their stay with Wilderness Shumba."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "kafue",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -41183,19 +42062,23 @@
    ],
    "bestMonths": "June to October",
    "bestMonthsNote": "Dry season brings the best game viewing and predator action. August to October is prime for lions, big herds, and the wildest safari drama.",
-   "bestFor": [],
+   "bestFor": [
+    "wildlife_photography",
+    "family",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -14.219,
     "lng": 25.8723
    },
-   "airport": "Lufupa Airstrip LFU, Lusaka Airport LUN",
-   "airportDirections": "Fly to Lusaka LUN, light aircraft to Lufupa Airstrip LFU, then 1.5 hours by road to Shumba",
+   "airport": "Busanga Airstrip, via Lusaka (LUN) or Livingstone (LVI)",
+   "airportDirections": "Fly into Lusaka (LUN) or Livingstone (LVI), then take a light aircraft flight of around an hour and a half to the Busanga airstrip.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Six luxury tented suites on raised decks with panoramic views, spacious lounges, en-suite bathrooms, indoor and outdoor showers."
+     "Six luxury tented suites on raised wooden platforms overlooking the floodplains, including one family room, each with indoor and outdoor showers and a double basin vanity."
     ],
     "items": []
    },
@@ -41203,48 +42086,78 @@
     "paras": [],
     "items": [
      "Morning and afternoon game drives",
-     "Night drives",
-     "Birding safaris",
-     "Seasonal boating",
-     "Photographic safaris",
-     "Sundowners on the Busanga Plains"
+     "Guided walks",
+     "Night game drives",
+     "Birding",
+     "Stargazing"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Premier location in lion territory",
-     "Elevated tents with wide views and privacy",
-     "Fine dining with local flair",
-     "Infinity pool and firepit",
-     "Solar-powered, eco-friendly camp",
-     "Renowned guiding and private vehicles available"
-    ]
+    "paras": [
+     "Island setting in the heart of the Busanga Plains, known for its resident lions. Six luxury tented suites on raised wooden platforms. Pool overlooking the floodplain. Massage treatments from an in-house therapist. Wi-Fi. Family unit. Private safaris available."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Wilderness Shumba is for those who want front row seats to the drama of Busanga. Known for its lions and plains game, the camp blends comfort and exclusivity. Ideal for families, couples, groups, and wildlife photographers seeking the ultimate Kafue safari."
+    "Wilderness Shumba is for those who want front row seats to the drama of Busanga. Known for its lions and plains game, the camp blends comfort and exclusivity. Ideal for photographers, families and true safari enthusiasts seeking a remote Kafue safari."
    ],
    "why": [
     {
      "title": "Sleep with Lions, Wake to Wonder",
-     "body": "Shumba delivers the best of the Busanga: abundant predators, endless vistas, and a camp designed for luxury in the wild. Perfect for wildlife lovers, adventurers, and photographers."
+     "body": "Shumba delivers abundant predators, endless vistas, and an elegant camp in the remote Busanga Plains. Perfect for wildlife lovers, adventurers, and photographers."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open June to October only, when the Busanga Plains have drained and predator activity peaks.",
+    "how_to_get_there": "Light aircraft from Lusaka or Livingstone, around an hour and a half, to the Busanga airstrip in Kafue National Park.",
+    "signature_experiences": "Game drives and guided walks among the lion prides and antelope herds of the Busanga Plains.",
+    "who_its_for": "Photographers and dedicated safari travellers who want an elegant six-tent camp in a remote, seasonal wilderness."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Shumba?",
+     "a": "Shumba occupies its own small island in the Busanga Plains, in the remote north-west of Kafue National Park, Zambia's oldest and largest protected area."
+    },
+    {
+     "q": "How do you get to Wilderness Shumba?",
+     "a": "By light aircraft from Lusaka or Livingstone to the Busanga airstrip inside Kafue National Park, a flight of around an hour and a half. The Busanga Plains have no road access for casual visitors."
+    },
+    {
+     "q": "When is the best time to visit Shumba?",
+     "a": "Shumba is open only from June to the end of October, when the plains have drained after the rains and predator activity is at its highest. The camp closes during the wet season while the plains flood."
+    },
+    {
+     "q": "How many tents does Shumba have?",
+     "a": "Six luxury tented suites on raised wooden platforms, each with indoor and outdoor showers and a double basin vanity."
+    },
+    {
+     "q": "Is Shumba suitable for families?",
+     "a": "Shumba has one family room: a large room with a double bed and two three-quarter beds separated by a screen. Wilderness does not publish a minimum age on the camp page, so confirm children's ages when booking."
+    },
+    {
+     "q": "What is Shumba known for?",
+     "a": "Lions. Shumba means lion in Tonga, and the Busanga Plains are known for large lion prides that leap the drying channels, along with cheetah, leopard, wild dog, red lechwe, puku and roan."
+    },
+    {
+     "q": "Who is Shumba best for?",
+     "a": "Wilderness describes the camp as giving access to a remote area favoured by photographers and true safari enthusiasts, with more polish than nearby Busanga Bush Camp."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "kafue",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -41273,45 +42186,45 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e9a38caa_2304b010f_69d4d97590d793b56ebeede6_1_FamilyRoom_1B9A6918_Toned.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d43468e1b_f46c225b4_69d4dd1e4c16c0afaf823526_2_MainAreas_1B9A7757_Toned.jpg"
    ],
-   "bestMonths": "May to October",
+   "bestMonths": "Year-round",
    "bestMonthsNote": "Dry season offers best wildlife viewing, warm days, and low water Victoria Falls with more accessible activities. The green season (November to April) brings lush scenery and migratory birds.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "wellness",
+    "conservation",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -17.8551,
-    "lng": 25.7877
+    "lat": -17.9125,
+    "lng": 25.8395
    },
    "airport": "Harry Mwanga Nkumbula International Airport LVI",
-   "airportDirections": "Fly into Livingstone LVI, road transfer 25 minutes to Toka Leya camp inside the national park",
+   "airportDirections": "Fly into Livingstone (LVI), then a short road transfer to camp, 12 km north-west of Victoria Falls.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Twelve spacious tented suites, including three for families, each with private decks over the river, indoor and outdoor showers, and king beds."
+     "Thirteen spacious tented suites, including three family units with an extra bedroom, each raised on wooden decks with views over the Zambezi River."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Morning and afternoon game drives",
-     "Guided rhino tracking on foot",
-     "Zambezi River cruises",
-     "Victoria Falls excursions",
-     "Spa and wellness",
-     "Birding and fishing"
+     "Game drives and walks in Mosi-oa-Tunya National Park",
+     "Guided white rhino walks with rangers",
+     "Sunrise and sunset Zambezi River cruises",
+     "Victoria Falls tours",
+     "Spa treatments",
+     "Birding and catch-and-release tiger fishing"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Riverfront setting in Mosi-oa-Tunya National Park",
-     "Infinity pool overlooking the Zambezi",
-     "Spa and wellness pavilion",
-     "Family-friendly with special activities",
-     "Solar power and eco-conscious design",
-     "Community partnerships with local schools"
-    ]
+    "paras": [
+     "Riverfront setting in Mosi-oa-Tunya National Park, 12 km north-west of Victoria Falls. Infinity pool overlooking the Zambezi. Spa treatments and an air-conditioned gym. Three family units. Pioneering energy-saving systems and riverine woodland rehabilitation. Cultural visits to Livingstone and local villages, schools and markets."
+    ],
+    "items": []
    },
    "onlyHere": [
     "Toka Leya is for the adventurous soul and the nature lover. Watch elephants on the riverbank, track rhinos, and feel the spray of Victoria Falls. All from a peaceful riverside base. Perfect for families, couples, solo travelers, and groups wanting wild adventure and eco luxury in Zambia."
@@ -41319,12 +42232,46 @@
    "why": [
     {
      "title": "Wild Zambezi, Home Comfort",
-     "body": "Wilderness Toka Leya offers the best of Zambia: big game, river magic, close-up rhino encounters, and private decks for sunset views. Ideal for couples, families, and anyone seeking a blend of action and serenity."
+     "body": "Wilderness Toka Leya pairs river magic, close-up white rhino encounters on foot and easy access to Victoria Falls, with private decks for sunset views. Ideal for couples, families, and anyone seeking a blend of action and serenity."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Good year-round: Victoria Falls is fullest March to May, and August to November brings clearer Falls views and better game viewing.",
+    "how_to_get_there": "Fly into Livingstone (LVI), then take a short road transfer to camp, 12 km north-west of Victoria Falls.",
+    "signature_experiences": "White rhino walks with rangers, Zambezi cruises, tiger fishing and an included visit to Victoria Falls.",
+    "who_its_for": "Couples and families wanting a riverside base for Victoria Falls, wildlife and wellness."
+   },
+   "faqs": [
+    {
+     "q": "Where is Wilderness Toka Leya?",
+     "a": "On the banks of the Zambezi River in Mosi-oa-Tunya National Park, Zambia, about 12 kilometres north-west of Victoria Falls."
+    },
+    {
+     "q": "How do you get to Toka Leya?",
+     "a": "Fly into Harry Mwanga Nkumbula International Airport (LVI) in Livingstone, then take a short road transfer to camp. The Victoria Falls entrance is around 30 minutes from camp."
+    },
+    {
+     "q": "When is the best time to visit Toka Leya?",
+     "a": "Toka Leya is good year-round. Victoria Falls is at full flow from March to May, while the dry season from August to November makes the Falls easier to view and photograph and brings better game viewing in the park."
+    },
+    {
+     "q": "How many tents does Toka Leya have?",
+     "a": "Thirteen tented suites raised on wooden decks overlooking the Zambezi, three of which are family units with an extra bedroom."
+    },
+    {
+     "q": "Is Toka Leya good for families?",
+     "a": "Yes. Three of the thirteen suites are family units with an extra bedroom and expansive decks."
+    },
+    {
+     "q": "What are the signature experiences at Toka Leya?",
+     "a": "Guided walks to see Zambia's only wild white rhino population with armed rangers, sunrise and sunset Zambezi cruises, catch-and-release tiger fishing, game drives and a complimentary visit to the Falls are included."
+    },
+    {
+     "q": "Who is Toka Leya best for?",
+     "a": "Travellers who want a luxury riverside base for Victoria Falls, wildlife and adventure activities, plus spa, gym and yoga time before or after a safari."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

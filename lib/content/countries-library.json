@@ -3206,20 +3206,20 @@
    ],
    "airports": [
     [
+     "Lusaka (LUN)",
+     "Serves 6 stays in the Ledger here"
+    ],
+    [
+     "Livingstone (LVI)",
+     "Serves 5 stays in the Ledger here"
+    ],
+    [
      "Mfuwe Airport (MFU)",
-     "Serves 3 stays in the Ledger here"
-    ],
-    [
-     "Kenneth Kaunda International Airport Lusaka (LUN)",
-     "Serves 3 stays in the Ledger here"
-    ],
-    [
-     "Jeki Airstrip (JEK)",
-     "Serves 2 stays in the Ledger here"
+     "Serves 4 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "MFU · LUN",
+   "flyInto": "LUN · LVI",
    "bestShort": "Jun–Oct",
    "atlasName": "Zambia"
   },
@@ -3310,7 +3310,7 @@
    "airports": [
     [
      "Victoria Falls International Airport (VFA)",
-     "Serves 4 stays in the Ledger here"
+     "Serves 5 stays in the Ledger here"
     ],
     [
      "Bumi Hills Airstrip (BZH)",

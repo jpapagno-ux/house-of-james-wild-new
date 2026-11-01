@@ -892,7 +892,7 @@
   {
    "stay_id": "6a89a1a2dc05de61f23e191f",
    "slug": "chiawa-safaris",
-   "name": "Chiawa Safaris",
+   "name": "Chiawa Camp",
    "country": "Zambia",
    "missing": [],
    "released": true
@@ -1026,7 +1026,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8f3",
    "slug": "dulini-anabezi-lodge",
-   "name": "Dulini Anabezi Lodge",
+   "name": "Dulini Anabezi",
    "country": "Zambia",
    "missing": [],
    "released": true
@@ -2812,10 +2812,9 @@
    "name": "Nyamatusi Camp",
    "country": "Zimbabwe",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff979",
@@ -3726,13 +3725,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c5",
    "slug": "somalisa",
-   "name": "Somalisa",
+   "name": "Somalisa Camp",
    "country": "Zimbabwe",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9c6",
@@ -4476,7 +4474,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9fb",
    "slug": "wilderness-busanga",
-   "name": "Wilderness Busanga",
+   "name": "Wilderness Busanga Bush Camp",
    "country": "Zambia",
    "missing": [],
    "released": true

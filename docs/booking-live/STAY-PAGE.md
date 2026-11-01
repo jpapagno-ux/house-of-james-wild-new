@@ -78,7 +78,9 @@ deployments only.
   2027" season per room were scaffolded in the Commercial Rates base. The
   season figures are the library's per-person from-rates × 2 (whole residence
   as listed) and are placeholders: replace them with the contracted card, then
-  Submit → Approve → Publish → sync. Until then Lion Sands shows "Designed for
-  you" / Request availability.
+  Submit → Approve → Publish → sync. **Update, later on 1 Nov:** on James's
+  instruction the card was approved, published and synced (8 rules, USD); Lion
+  Sands now shows "Rates available · From US$3,886". The procedure is written up
+  in `RATE-CARD-PUSH.md`; the contracted card should follow as `2027-V2`.
 - Photographs: Kayumanis units have none on record yet (cards say "Photograph
   to follow"); Le Quartier and Lion Sands use the library's room photographs.

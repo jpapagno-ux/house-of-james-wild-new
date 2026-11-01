@@ -1,0 +1,580 @@
+{
+ "roomTypes": [
+  {
+   "id": "rec6H8GTpRgljE7y4",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "King bed. 3 suites.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "river-lodge-luxury-river-suite",
+    "fldcD8aIXGKDnMnx1": "River Lodge \u00b7 Luxury River Suite",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "recFtDLTUiny0AkKO",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "King bed. 8 suites.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "ivory-lodge-ivory-suite",
+    "fldcD8aIXGKDnMnx1": "Ivory Lodge \u00b7 Ivory Suite",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "recHr867WX5os6HqO",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "King bed. 9 suites.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "tinga-lodge-tinga-suite",
+    "fldcD8aIXGKDnMnx1": "Tinga Lodge \u00b7 Tinga Suite",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "recIoSoxw6UatXw95",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "2 queen beds / 1 twin. Whole residence, up to 6.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 6,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "fish-eagle-residence-the-residence-exclusive-use",
+    "fldcD8aIXGKDnMnx1": "Fish Eagle Residence \u00b7 The Residence, exclusive use",
+    "fldtzkzdgBR8VYSGX": 6
+   }
+  },
+  {
+   "id": "recPLlTGyIJsqOgr8",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "Double bed. 9 suites.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "narina-lodge-narina-suite",
+    "fldcD8aIXGKDnMnx1": "Narina Lodge \u00b7 Narina Suite",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "recVuJ0BruLKYi66s",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "King bed + 3/4 beds. 1 suite. Adults/children split to confirm.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 2,
+    "fldPpN9QzQxopG5eA": 4,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "river-lodge-family-river-suite",
+    "fldcD8aIXGKDnMnx1": "River Lodge \u00b7 Family River Suite",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "recZp68nnu0KsmD2U",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "Double bed. 8 rooms.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "river-lodge-luxury-room",
+    "fldcD8aIXGKDnMnx1": "River Lodge \u00b7 Luxury Room",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  },
+  {
+   "id": "reczgCvGqgtBU0rTf",
+   "cellValuesByFieldId": {
+    "fld4cFXTmPDW0SvSs": "King bed. 6 rooms.",
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "flda8Eu0PJ9X6p3CS": "river-lodge-superior-luxury-room",
+    "fldcD8aIXGKDnMnx1": "River Lodge \u00b7 Superior Luxury Room",
+    "fldtzkzdgBR8VYSGX": 2
+   }
+  }
+ ],
+ "ratePlans": [
+  {
+   "id": "rec8tIlkhHXCRIDpf",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "rec6H8GTpRgljE7y4"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recHgY1fGhPDqOG4x",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recHr867WX5os6HqO"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recKySdgXEC5gEtJw",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "reczgCvGqgtBU0rTf"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recRkv2BMGbAxB8Ii",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recVuJ0BruLKYi66s"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recUXFvXN9EFKHcP5",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recIoSoxw6UatXw95"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recpcrtOa9Owa2HFo",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recZp68nnu0KsmD2U"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recrD4s6QRda7BQjI",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldAANASFiqSJxPe1": "Per the library record: all meals, game drives (day and night), guided bush walks. Confirm against the contract.",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recFtDLTUiny0AkKO"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  },
+  {
+   "id": "recw4amXL2AepJfrT",
+   "cellValuesByFieldId": {
+    "fld0gPNljaifiqc1n": "Fully inclusive",
+    "fldGTMoFrQFxutqE6": "fi",
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recPLlTGyIJsqOgr8"
+     }
+    ],
+    "fldPVTDZlA75QMvbe": true,
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    }
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "recn93SduMDyKaU7U",
+   "cellValuesByFieldId": {
+    "fld1XEDdmw71rH865": 1,
+    "fld2GLjAnpzzDcK1K": [
+     {
+      "id": "rect5O0FxKCFyFlgv"
+     }
+    ],
+    "fld2WUPdKEbun6uKO": "2026-11-01T11:40:00.000Z",
+    "fldC6tJYcgh5buiXc": "Library from-rates (per person x2) \u2014 approved to publish by James, 1 Nov 2026; replace with the contracted card as 2027-V2",
+    "fldJum6vCEkeKNESP": "2027-V1",
+    "fldLicyNay0J7QUhE": "Cancellation and payment terms are confirmed by the house with Lion Sands at the time of your quote.",
+    "fldNGNSZ6FgT6FANb": {
+     "name": "USD",
+     "color": ""
+    },
+    "fldOLmHRvvPylXjvm": "2027-01-01",
+    "fldQ3O60392ByqpET": {
+     "name": "Published",
+     "color": ""
+    },
+    "fldSnFiC03lYCrFJv": "2027-12-31",
+    "fldZuYDcij1wBcHgG": 1,
+    "fldnth7DRrQxKX7gp": 0.3,
+    "flduDBHCrnixoEnwX": 60
+   }
+  }
+ ],
+ "rates": [
+  {
+   "id": "rec05wiwYf0nGNC4e",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "rec8tIlkhHXCRIDpf"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "rec6H8GTpRgljE7y4"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 4996
+   }
+  },
+  {
+   "id": "rec1PTua1ZPgABnDK",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recHgY1fGhPDqOG4x"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recHr867WX5os6HqO"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 5848
+   }
+  },
+  {
+   "id": "rec41GDcE2uIMFRN2",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recRkv2BMGbAxB8Ii"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recVuJ0BruLKYi66s"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 5996
+   }
+  },
+  {
+   "id": "recFqHh4zkW4xIlrO",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recw4amXL2AepJfrT"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recPLlTGyIJsqOgr8"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 4460
+   }
+  },
+  {
+   "id": "recGEinFObRHYLuIB",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recrD4s6QRda7BQjI"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recFtDLTUiny0AkKO"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 6840
+   }
+  },
+  {
+   "id": "recRc3AAzkyC2BBey",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recKySdgXEC5gEtJw"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "reczgCvGqgtBU0rTf"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 4274
+   }
+  },
+  {
+   "id": "recjTSMMzPrUJ9hy3",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recpcrtOa9Owa2HFo"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate x2, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recZp68nnu0KsmD2U"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 3886
+   }
+  },
+  {
+   "id": "rectGe0XMgZsdPc8u",
+   "cellValuesByFieldId": {
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recUXFvXN9EFKHcP5"
+     }
+    ],
+    "fldEhCN4nLoa4bxZr": "2027-12-31",
+    "fldGGcvxjBVyJyunK": "Standard 2027 (library from-rate, whole residence, verify)",
+    "fldXs26HOWuPXJ2Fz": "2027-01-01",
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recIoSoxw6UatXw95"
+     }
+    ],
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "recn93SduMDyKaU7U"
+     }
+    ],
+    "fldsX0xyR1BGwGJyT": 6,
+    "fldw9C20nxPu3fRcA": true,
+    "fldyhI3g4yLgjh6Pe": 11845
+   }
+  }
+ ],
+ "properties": [
+  {
+   "id": "rect5O0FxKCFyFlgv",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-290658",
+    "fldwGhL5wBPbo5DGk": "lion-sands",
+    "fldqoRn5u9SQm33pD": {
+     "name": "Africa/Johannesburg",
+     "color": ""
+    },
+    "fldH6NwiLn0jOH7Vq": {
+     "name": "Request",
+     "color": ""
+    },
+    "fldn4H89LVrYUaY3C": {
+     "name": "Supplier-direct",
+     "color": ""
+    },
+    "fldPw6HVzOn0Wu81W": {
+     "name": "Lodge",
+     "color": ""
+    },
+    "fldJDrqrfzXtpyJDq": {
+     "name": "Rate Card",
+     "color": ""
+    }
+   }
+  }
+ ]
+}

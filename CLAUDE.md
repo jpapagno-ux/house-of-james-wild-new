@@ -32,3 +32,9 @@
 - Dated content (offers, departures, sailings, sessions) is hidden automatically once its end date
   passes; the site rebuilds daily. Weekly and monthly syncs (to be built) also re-check terms and
   pull new dates. One rule, one helper: `lib/dates.ts`. Full rule: `docs/site-rules.md`.
+
+## Where the house sells (James, 1 Nov 2026)
+- No Habitas properties anywhere (Habitas closed Tulum and Namibia; records are excluded in the library).
+- No Middle East stays, pages or maps (e.g. UAE, Oman, Jordan, Saudi Arabia, Qatar, Israel). Turkey may be added later.
+- Egypt and Morocco are Africa, not the Middle East, and can be sold.
+- No Malawi (James, 31 Oct 2026). Ethiopia is a future country (Lale's Camp held).

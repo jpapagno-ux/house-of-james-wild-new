@@ -56,7 +56,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         {/* 01 Hero: one frame, slow zoom, the name arrives after the image settles */}
         <DriftFrame a={hero} ratio="21:9" priority motion="zoom">
           <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; — {collectionNo(ef.collectionNumber)}</p>
-          <h1 className="ledger-h1 mt-3 !text-[3.2rem] md:!text-[6.4rem]">{NAME}</h1>
+          <h1 className="ledger-h1 mt-3 !text-[2.9rem] md:!text-[6.4rem]">{NAME}</h1>
           <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-2">Canyon Point, Utah</p>
           <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={d.planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><Link href={CANONICAL} className="text-[11px] tracking-[0.18em] uppercase text-white/80 hover:text-white">Save</Link></div>
         </DriftFrame>
@@ -75,7 +75,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         {TIGHT.cut.map((c, i) => {
           const a = cutFrames[i];
           return a ? (
-            <DriftFrame key={c.k} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[92svh]">
+            <DriftFrame key={c.k} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]">
               <p className="ledger-eyebrow !text-white/80">{i === 0 ? "Why it made the cut" : c.k}</p>
               <p className="mt-4 ledger-display text-[1.7rem] md:text-[2.9rem] leading-[1.12] max-w-3xl">{c.t}</p>
               {i === 0 && <p className="mt-6 text-[11px] tracking-[0.22em] uppercase text-white/60">01 / 03</p>}
@@ -99,7 +99,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
 
         {/* 05 Geography: the pan with coordinates, then the JW map */}
         <div id="place" className="scroll-mt-32">{(aerial ?? place) && <PanFrame src={mediaUrl((aerial ?? place)!, { width: 2560 })} alt={(aerial ?? place)!.alt} name={NAME} coords={COORDS} line="Canyon Point, in the far south of Utah, a few miles from the Arizona line. The nearest town is Page; the nearest water is Lake Powell." credit={(aerial ?? place)!.credit} />}</div>
-        <div className="max-w-ledger mx-auto px-5 md:px-10">
+        <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pb-16 md:pb-24"><div className="max-w-ledger mx-auto px-5 md:px-10">
           {chart && <LocationBlock chart={chart} name={NAME} pin={COORDS} heading="Southern Utah" rows={[["Airport", "Page Municipal (PGA) · about 25 min"], ["Also", "St George / Flagstaff 2.5 h · Phoenix / Las Vegas 4.5 h"]]} mark={<Roundel volume="stays" text={roundelText(NAME, COORDS, VOLUME_STYLES.stays.roman)} size={120} />} />}
 
           {/* 06 The stay */}
@@ -123,11 +123,11 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
             <div><p className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>Best for</p><ul className="mt-4 space-y-2 ledger-display text-[1.3rem]">{ef.whoItSuits.map((x) => <li key={x}>{x}</li>)}</ul></div>
             <div><p className="ledger-eyebrow">Less ideal for</p><ul className="mt-4 space-y-2 ledger-display text-[1.3rem] ledger-muted">{ef.whoItMayNotSuit.map((x) => <li key={x}>{x}</li>)}</ul><p className="mt-5 text-[14px] ledger-muted">Not sure? <Link href="/compass" className="underline underline-offset-4">Ask the Human Compass</Link>.</p></div>
           </section>
-        </div>
+        </div></div>
 
         {/* 10 Night: Worth Another Night over the dusk frame */}
         {night && (
-          <DriftFrame a={night} ratio="3:2" id="another-night" motion="slow" height="min-h-[92svh]" className="mt-16 md:mt-24">
+          <DriftFrame a={night} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]" className="mt-0">
             <p className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</p>
             <p className="mt-4 ledger-display text-[2rem] md:text-[3.6rem] leading-[1.08] max-w-3xl">{TIGHT.another}</p>
             {ef.worthAnotherNight && <p className="mt-5 max-w-xl text-[15px] md:text-[17px] text-white/85 leading-relaxed">{ef.worthAnotherNight.split(". ").slice(1, 3).join(". ")}.</p>}
@@ -142,7 +142,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
             <p className="mt-3 ledger-display text-[2rem] md:text-[3rem] leading-tight">Four nights at Canyon Point, designed around you.</p>
             <div className="mt-8"><Link href={d.planHref} className="ledger-btn ledger-btn--solid">Plan this journey</Link></div>
           </section>
-          <p className="py-8 text-[12.5px] ledger-muted">Mock C · {ink ? "Ink surface" : "Dusk plum surface"} · <Link href={other} className="underline underline-offset-2">switch to {ink ? "dusk plum" : "ink"}</Link> · Photography courtesy of Aman, preview rights only · <Link href="/preview/stay/amangiri-a" className="underline underline-offset-2">Mock A</Link> · <Link href="/preview/stay/amangiri-b" className="underline underline-offset-2">Mock B</Link></p>
+          <p className="py-8 text-[12.5px] ledger-muted">Mock C (chosen direction, fine-tuned) · {ink ? "Ink surface" : "Dusk plum surface"} · night → day → night · <Link href={other} className="underline underline-offset-2">switch to {ink ? "dusk plum" : "ink"}</Link> · Photography courtesy of Aman, preview rights only · <Link href="/preview/stay/amangiri-a" className="underline underline-offset-2">Mock A</Link> · <Link href="/preview/stay/amangiri-b" className="underline underline-offset-2">Mock B</Link></p>
         </div>
       </main>
       <ContactBar name={NAME} planHref={d.planHref} />

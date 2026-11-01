@@ -259,8 +259,12 @@ a:hover .jw-needle { animation-duration: 1.6s; }
    Scoped to .theme-ef-dark, used only by Exceptional Few pages that opt in. Overrides the house
    chrome classes inside that scope so the existing components render on the chosen surface
    without edits. Two surfaces: dusk plum (default) and ink (.surface-ink). */
-.theme-ef-dark { --ef-surface: #2B2430; --ef-ink: #EFE6DA; --ef-muted: rgba(239,230,218,0.68); --ef-line: rgba(239,230,218,0.22); --ef-sand: #C9A27E; --ef-earth: #D08A5B; --ef-landscape: #352D3B; --ef-shadow: rgba(239,230,218,0.6); --ef-accent: #C9A27E; --jw-accent: 201 162 126; --jw-accent-deep: 176 138 99; --jw-accent-light: 230 217 196; --jw-accent-hex: #C9A27E; --jw-accent-deep-hex: #B08A63; --jw-card: #352D3B; background: var(--ef-surface); color: var(--ef-ink); }
+.theme-ef-dark { --ef-surface: #2F2735; --ef-ink: #F1E8DC; --ef-muted: rgba(241,232,220,0.74); --ef-line: rgba(239,230,218,0.22); --ef-sand: #C9A27E; --ef-earth: #D08A5B; --ef-landscape: #352D3B; --ef-shadow: rgba(239,230,218,0.6); --ef-accent: #C9A27E; --jw-accent: 201 162 126; --jw-accent-deep: 176 138 99; --jw-accent-light: 230 217 196; --jw-accent-hex: #C9A27E; --jw-accent-deep-hex: #B08A63; --jw-card: #352D3B; background: var(--ef-surface); color: var(--ef-ink); }
 .theme-ef-dark.surface-ink { --ef-surface: #14130F; --ef-ink: #E6D9C4; --ef-landscape: #1F1D18; --jw-card: #1F1D18; }
+/* The day band: the practical middle of a dark Exceptional Few page lifts to desert ivory so rooms, map and
+   questions read as a Ledger page again; the night close drops back to the surface. */
+.theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #9E5B3C; --jw-card: #FFFFFF; --jw-accent: 158 91 60; --jw-accent-deep: 122 69 44; --jw-accent-hex: #9E5B3C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
+.theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }

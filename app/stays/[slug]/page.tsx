@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { placeGuideForStay } from "@/lib/content/guides";
@@ -74,10 +75,12 @@ import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 // The Exceptional Few™ (Stage 4): an optional editorial layer keyed on the Stay's Ledger ID.
 // Every module below is inside an `ef &&` guard; with no live designation the page is unchanged.
 import { collectionNo, efPathways, efThemeClass, exceptionalFewFor } from "@/lib/content/exceptional-few";
-import { assetFor, mediaUrl, storyFrames } from "@/lib/content/media-assets";
-import EFDesignation from "@/components/exceptional-few/EFDesignation";
+import { SIGNAL_LABEL } from "@/lib/content/exceptional-few";
+import { assetFor, assetsFor, mediaUrl, storyFrames } from "@/lib/content/media-assets";
 import EFSignals from "@/components/exceptional-few/EFSignals";
-import EFStory, { Credit, EFFrame } from "@/components/exceptional-few/EFStory";
+import { EFFrame } from "@/components/exceptional-few/EFStory";
+import DriftFrame from "@/components/exceptional-few/DriftFrame";
+import PanFrame from "@/components/exceptional-few/PanFrame";
 import WhoItSuits from "@/components/exceptional-few/WhoItSuits";
 import WorthAnotherNight from "@/components/exceptional-few/WorthAnotherNight";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
@@ -150,7 +153,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const efArch = ef ? assetFor(s.ledgerId, "architecture") : null;
   const efPlace = ef ? assetFor(s.ledgerId, "editorial_landscape") : null;
   const efStory = ef ? storyFrames(s.ledgerId) : null;
-  const efOwner = (credit: string) => credit.replace(/^(photography courtesy of|image ©|©)\s*/i, "").trim();
+  const efNight = ef ? assetFor(s.ledgerId, "night") : null;
+  const efAerial = ef ? (assetsFor(s.ledgerId, "editorial_landscape").find((a) => a.sort === 2) ?? null) : null;
+  // The approved direction (Mock C, 1 Nov 2026): night → day → night. Arrival and the three "why" screens sit on the
+  // dusk surface; the practical middle (overview → who it suits) lifts to desert ivory; Worth Another Night™ closes dark.
+  const efCuts = ef ? [efPlace, efArch, efStory?.interior ?? null] : [];
+  // Without a designation this renders nothing of its own (a fragment), so the production DOM is unchanged.
+  const DayBand = ef ? ({ children }: { children: React.ReactNode }) => <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pb-16 md:pb-24">{children}</div> : React.Fragment;
   const quick = [
     ...(ef ? [{ q: `Why is ${s.name} in The Exceptional Few?`, a: ef.whyItMadeTheCut[1] ?? ef.whyItMadeTheCut[0] ?? "" }, ...(ef.whoItMayNotSuit.length ? [{ q: `Who is ${s.name} less ideal for?`, a: `${ef.whoItMayNotSuit.join(", ")}. If that's you, the Human Compass will point you somewhere that is.` }] : [])] : []),
     ...(s.bestMonths ? [{ q: `When is the best time to visit ${s.name}?`, a: `${s.bestMonths}.${s.bestMonthsNote ? ` ${s.bestMonthsNote}` : ""}` }] : []),
@@ -166,39 +175,59 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const days = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), images.slice(1), 3, apart);
   const hostEarly = host.state === "available" && !!host.host;
   const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ...(ef ? [["Who it suits", "who"] as [string, string], ["Another night", "another-night"] as [string, string], ["Continue", "continue"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
-  const nav: [string, string][] = priced
+  const navAll: [string, string][] = priced
     ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["Included", "included"], ["Rooms & rates", "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
+  const nav: [string, string][] = navAll.filter(([, id]) => !ef || id !== "film");
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
   const place = placeGuideForStay(s.slug);
   const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={[s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? efThemeClass(ef) : ""].filter(Boolean).join(" ")}>
+    <div className={[s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : ""].filter(Boolean).join(" ")}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={efHero ? { url: mediaUrl(efHero, { ratio: "21:9", width: 2560 }), alt: efHero.alt } : images[0]} slides={efHero ? undefined : slides} credit={efHero ? efOwner(efHero.credit) : undefined} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={ef ? `The Exceptional Few™ — ${collectionNo(ef.collectionNumber)}` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={(ef?.heroLine ?? s.tagline) ?? undefined}
+        {ef && efHero ? (
+          <DriftFrame a={efHero} ratio="21:9" priority motion="zoom">
+            <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &mdash; {collectionNo(ef.collectionNumber)}</p>
+            <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{s.name}</h1>
+            <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{[place?.name, s.country].filter(Boolean).join(", ")}</p>
+            <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><span className="text-[11.5px] tracking-[0.18em] uppercase text-white/75">Ledger ID {s.ledgerId ?? "being filed"}</span></div>
+          </DriftFrame>
+        ) : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
-          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
         <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <StayActions slug={s.slug} name={s.name} />
-          <WhyFilm eyebrow={ef ? "The Exceptional Few" : undefined} title={ef ? "Why It Made the Cut" : whyTitle} blocks={ef ? [] : whyBlocks} paragraphs={ef ? ef.whyItMadeTheCut : whyParas} suited={suited} status={<>{ef && <div className="mb-3"><EFDesignation no={ef.collectionNumber} /></div>}{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{pw && <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={efArch ? mediaUrl(efArch, { ratio: "16:10", width: 1400 }) : (slides[1]?.url ?? slides[0]?.url)} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : efArch ? <p className="mt-2 flex justify-end"><Credit a={efArch} /></p> : undefined} />
           {ef && (
-            /* The Exceptional Few editorial row: James' Note · Wild Pathways · At a glance */
-            <section aria-label="James' note, pathways and at a glance" className="mt-12 md:mt-16 grid md:grid-cols-3 gap-8 md:gap-10 border-t ef-rule pt-8">
-              <div className="ef-module ledger-card border ledger-border p-6">
-                <p className="ledger-eyebrow ef-eyebrow">James&rsquo; note</p>
-                {ef.jamesNote ? <><p className="mt-3 ledger-display italic text-[1.35rem] leading-snug">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-4 flex items-end justify-between gap-4"><span className="text-[11.5px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><Signature className="w-20" /></div></> : <p className="mt-3 text-[14px] ledger-muted">Not yet written.</p>}
-              </div>
-              <div className="p-6 border ledger-border">
-                <p className="ledger-eyebrow">Wild Pathways</p>
-                {(pw ?? efPw) ? <div className="mt-4"><PathwayChips primary={(pw ?? efPw)!.primary} secondary={(pw ?? efPw)!.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div> : <p className="mt-3 text-[14px] ledger-muted">Classification pending in the Ledger.</p>}
-              </div>
-              <div className="p-6 border ledger-border"><EFSignals ef={ef} compact id="glance" /></div>
+            <section className="py-16 md:py-28 text-center" aria-label="The line">
+              {ef.heroLine && <p className="ledger-display text-[1.9rem] md:text-[3.4rem] leading-[1.12] max-w-4xl mx-auto">{ef.heroLine}</p>}
+              <div className="mt-7 flex flex-wrap justify-center gap-x-8 gap-y-3">{ef.signals.map((x) => <span key={x.key} className="ledger-eyebrow !text-[11px] !tracking-[0.26em]" style={{ color: "var(--ef-sand)" }}>{SIGNAL_LABEL[x.key]}</span>)}</div>
+              {(pw ?? efPw) && <div className="mt-6 flex justify-center"><PathwayChips primary={(pw ?? efPw)!.primary} secondary={(pw ?? efPw)!.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
+              {status && <p className="mt-6 ledger-eyebrow">{status}</p>}
             </section>
           )}
+          {ef && ef.whyItMadeTheCut.map((t, i) => { const a = efCuts[i]; return a ? (
+            <DriftFrame key={i} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]" className={i === 0 ? "" : "mt-1"}>
+              <p className="ledger-eyebrow !text-white/80">{i === 0 ? "Why it made the cut" : `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`}</p>
+              <p className="mt-4 ledger-display text-[1.45rem] md:text-[2.4rem] leading-[1.18] max-w-3xl">{t}</p>
+            </DriftFrame>
+          ) : <p key={i} id={i === 0 ? "why" : undefined} className="mt-8 ledger-display text-[1.3rem] md:text-[1.7rem] leading-[1.3] max-w-3xl">{t}</p>; })}
+          {!ef && <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{pw && <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />}
+          {ef && (
+            /* The Exceptional Few editorial row: James' Note · At a glance (pathways sit under the line above) */
+            <section aria-label="James' note and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
+              <div>
+                <p className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</p>
+                {ef.jamesNote ? <><p className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-4 flex items-end justify-between gap-4"><span className="text-[11.5px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><Signature className="w-20" /></div></> : <p className="mt-3 text-[14px] ledger-muted">Not yet written.</p>}
+              </div>
+              <div><EFSignals ef={ef} id="glance" /></div>
+            </section>
+          )}
+          {ef && efAerial && s.coords && <div id="place" className="scroll-mt-32"><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
+          <DayBand>
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
@@ -211,7 +240,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>
-            {ef && efStory ? <EFStory name={s.name} frames={efStory} /> : images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
+            {ef && efStory ? (
+              <section id="gallery" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end scroll-mt-32" aria-label="Two frames">
+                {efStory.human && <div className="md:col-span-5"><EFFrame a={efStory.human} ratio="4:5" sizes="(min-width: 768px) 40vw, 100vw" /></div>}
+                {(efStory.arrival ?? efStory.night) && <div className="md:col-span-7"><EFFrame a={(efStory.arrival ?? efStory.night)!} ratio="3:2" sizes="(min-width: 768px) 58vw, 100vw" /></div>}
+              </section>
+            ) : images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
             {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
             {!s.engine && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
           </>}
@@ -220,12 +254,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
           {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
-          {ef && efPlace && (
-            <section id="place" className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-label="The place">
-              <p className="ledger-eyebrow ef-eyebrow">The place</p>
-              <div className="mt-6 grid lg:grid-cols-[1.4fr_1fr] gap-8 lg:gap-12 items-start"><EFFrame a={efPlace} ratio="3:2" sizes="(min-width: 1024px) 58vw, 100vw" /><EFSignals ef={ef} id="signals-full" /></div>
-            </section>
-          )}
+          {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24 scroll-mt-32"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           {Object.keys(s.facts).length > 0 && (
@@ -274,7 +303,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
           <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />
           {ef && <WhoItSuits name={s.name} bestFor={ef.whoItSuits} lessIdealFor={ef.whoItMayNotSuit} />}
-          {ef?.worthAnotherNight && <WorthAnotherNight copy={ef.worthAnotherNight} />}
+          </DayBand>
+          {ef?.worthAnotherNight && (efNight ? (
+            <DriftFrame a={efNight} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]">
+              <p className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</p>
+              <p className="mt-4 ledger-display text-[1.7rem] md:text-[3rem] leading-[1.12] max-w-3xl">{ef.worthAnotherNight}</p>
+            </DriftFrame>
+          ) : <WorthAnotherNight copy={ef.worthAnotherNight} />)}
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} schema={s.faqs.length > 0 && s.reviewed} />
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">

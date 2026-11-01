@@ -263,7 +263,7 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark.surface-ink { --ef-surface: #14130F; --ef-ink: #E6D9C4; --ef-landscape: #1F1D18; --jw-card: #1F1D18; }
 /* The day band: the practical middle of a dark Exceptional Few page lifts to desert ivory so rooms, map and
    questions read as a Ledger page again; the night close drops back to the surface. */
-.theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #9E5B3C; --jw-card: #FFFFFF; --jw-accent: 158 91 60; --jw-accent-deep: 122 69 44; --jw-accent-hex: #9E5B3C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
+.theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #8A4C2C; --jw-card: #FFFFFF; --jw-accent: 138 76 44; --jw-accent-deep: 122 69 44; --jw-accent-hex: #8A4C2C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
 .theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }

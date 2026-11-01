@@ -30,7 +30,7 @@ export default function PanFrame({ src, alt, name, coords, line, credit }: { src
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
         <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-10">
-          <p className="ledger-eyebrow !text-white/80">Geography</p>
+          <h2 className="ledger-eyebrow !text-white/80">Geography</h2>
           <p className="ledger-display text-[2rem] md:text-[3.2rem] leading-none mt-2">{dms(coords.lat, "N", "S")} · {dms(coords.lng, "E", "W")}</p>
           {line && <p className="mt-3 max-w-2xl text-[15.5px] md:text-[17px] text-white/90">{line}</p>}
         </div>

@@ -17,7 +17,7 @@ export default function EFSignals({ ef, compact = false, id = "signals" }: { ef:
   if (!ef.signals.length) return null;
   return (
     <section id={id} aria-labelledby={`${id}-h`} className={compact ? "" : "mt-10"}>
-      <h3 id={`${id}-h`} className="ledger-eyebrow ef-eyebrow">At a glance</h3>
+      <h2 id={`${id}-h`} className="ledger-eyebrow ef-eyebrow">At a glance</h2>
       <ul className={`mt-3 ${compact ? "grid grid-cols-2 gap-x-6 gap-y-3" : "grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-5"}`}>
         {ef.signals.map((s) => (
           <li key={s.key} className="flex items-start gap-3">

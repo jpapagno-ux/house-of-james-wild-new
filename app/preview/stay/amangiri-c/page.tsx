@@ -76,7 +76,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
           const a = cutFrames[i];
           return a ? (
             <DriftFrame key={c.k} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]">
-              <p className="ledger-eyebrow !text-white/80">{i === 0 ? "Why it made the cut" : c.k}</p>
+              {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{ c.k}</p>}
               <p className="mt-4 ledger-display text-[1.7rem] md:text-[2.9rem] leading-[1.12] max-w-3xl">{c.t}</p>
               {i === 0 && <p className="mt-6 text-[11px] tracking-[0.22em] uppercase text-white/60">01 / 03</p>}
             </DriftFrame>
@@ -87,7 +87,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
           {/* 04 James' note · Pathways · signals, one open row */}
           <section aria-label="James' note, pathways and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
             <div>
-              <p className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</p>
+              <h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</h2>
               {ef.jamesNote && <><p className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-5 flex items-end justify-between gap-4 max-w-xl"><span className="text-[11px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><span className="invert opacity-90"><Signature className="w-24" /></span></div></>}
             </div>
             <div className="space-y-8">
@@ -120,15 +120,15 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
 
           {/* 09 Who it suits: two short columns */}
           <section id="who" className="mt-16 md:mt-24 grid md:grid-cols-2 gap-10 scroll-mt-32" aria-label="Who it suits">
-            <div><p className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>Best for</p><ul className="mt-4 space-y-2 ledger-display text-[1.3rem]">{ef.whoItSuits.map((x) => <li key={x}>{x}</li>)}</ul></div>
-            <div><p className="ledger-eyebrow">Less ideal for</p><ul className="mt-4 space-y-2 ledger-display text-[1.3rem] ledger-muted">{ef.whoItMayNotSuit.map((x) => <li key={x}>{x}</li>)}</ul><p className="mt-5 text-[14px] ledger-muted">Not sure? <Link href="/compass" className="underline underline-offset-4">Ask the Human Compass</Link>.</p></div>
+            <div><h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>Who it suits · best for</h2><ul className="mt-4 space-y-2 ledger-display text-[1.3rem]">{ef.whoItSuits.map((x) => <li key={x}>{x}</li>)}</ul></div>
+            <div><h3 className="ledger-eyebrow">Less ideal for</h3><ul className="mt-4 space-y-2 ledger-display text-[1.3rem] ledger-muted">{ef.whoItMayNotSuit.map((x) => <li key={x}>{x}</li>)}</ul><p className="mt-5 text-[14px] ledger-muted">Not sure? <Link href="/compass" className="underline underline-offset-4">Ask the Human Compass</Link>.</p></div>
           </section>
         </div></div>
 
         {/* 10 Night: Worth Another Night over the dusk frame */}
         {night && (
           <DriftFrame a={night} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]" className="mt-0">
-            <p className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</p>
+            <h2 className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</h2>
             <p className="mt-4 ledger-display text-[2rem] md:text-[3.6rem] leading-[1.08] max-w-3xl">{TIGHT.another}</p>
             {ef.worthAnotherNight && <p className="mt-5 max-w-xl text-[15px] md:text-[17px] text-white/85 leading-relaxed">{ef.worthAnotherNight.split(". ").slice(1, 3).join(". ")}.</p>}
           </DriftFrame>

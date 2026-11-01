@@ -211,7 +211,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           )}
           {ef && ef.whyItMadeTheCut.map((t, i) => { const a = efCuts[i]; return a ? (
             <DriftFrame key={i} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]" className={i === 0 ? "" : "mt-1"}>
-              <p className="ledger-eyebrow !text-white/80">{i === 0 ? "Why it made the cut" : `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`}</p>
+              {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{ `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`}</p>}
               <p className="mt-4 ledger-display text-[1.45rem] md:text-[2.4rem] leading-[1.18] max-w-3xl">{t}</p>
             </DriftFrame>
           ) : <p key={i} id={i === 0 ? "why" : undefined} className="mt-8 ledger-display text-[1.3rem] md:text-[1.7rem] leading-[1.3] max-w-3xl">{t}</p>; })}
@@ -220,7 +220,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             /* The Exceptional Few editorial row: James' Note · At a glance (pathways sit under the line above) */
             <section aria-label="James' note and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
               <div>
-                <p className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</p>
+                <h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</h2>
                 {ef.jamesNote ? <><p className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-4 flex items-end justify-between gap-4"><span className="text-[11.5px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><Signature className="w-20" /></div></> : <p className="mt-3 text-[14px] ledger-muted">Not yet written.</p>}
               </div>
               <div><EFSignals ef={ef} id="glance" /></div>
@@ -306,7 +306,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </DayBand>
           {ef?.worthAnotherNight && (efNight ? (
             <DriftFrame a={efNight} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]">
-              <p className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</p>
+              <h2 className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</h2>
               <p className="mt-4 ledger-display text-[1.7rem] md:text-[3rem] leading-[1.12] max-w-3xl">{ef.worthAnotherNight}</p>
             </DriftFrame>
           ) : <WorthAnotherNight copy={ef.worthAnotherNight} />)}

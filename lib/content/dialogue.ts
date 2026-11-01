@@ -230,3 +230,12 @@ export const IGGI_STANDING: DialogueLine[] = [
   { id: "iggi.nudge.save-folio", character: "iggi", context: { page: "stay" }, audience: "traveler", intent: "nudge", tone: "warm", origin: "ledger", text: "Save it to your Folio and it keeps its pathway colours wherever you take it.", asset: "iggi-wink", source: { kind: "ledger", author: "house" }, approval: { status: "approved", by: "James Papagno", on: "2026-10-30", note: "Approved in review, 30 Oct 2026; wording audit to follow (FOLLOW-UPS #17)" } },
   { id: "iggi.trade.suitability", character: "iggi", context: { page: "stay" }, audience: "trade", intent: "answer", tone: "practical", origin: "ledger", text: "For your client: who this suits, who it won't, the practical bits and the pathways it sits on. Nets and availability come from the desk, not from me.", source: { kind: "ledger", author: "house" }, approval: { status: "approved", by: "James Papagno", on: "2026-10-30", note: "Approved in review, 30 Oct 2026; wording audit to follow (FOLLOW-UPS #17)" } },
 ];
+
+// ---------------------------------------------------------------------------
+// The public feed shape (/api/v1/dialogue): what Iggi Core reads so the embed
+// speaks the same approved lines as the page bubbles. Approved only; the
+// approval note, source refs and asset ids stay in the repo.
+export type PublicLine = { id: string; character: CharacterId; intent: Intent; audience: Audience; tone: Tone; origin: Origin | null; text: string; context: DialogueContext; approvedOn: string | null };
+export function publicLines(lines: DialogueLine[], filter: Partial<{ character: CharacterId; page: string; audience: Audience; intent: Intent }> = {}): PublicLine[] {
+  return approvedDialogue(lines, filter).map((l) => ({ id: l.id, character: l.character, intent: l.intent, audience: l.audience, tone: l.tone, origin: l.origin ?? null, text: l.text, context: l.context, approvedOn: l.approval.on ?? null }));
+}

@@ -1,7 +1,7 @@
 // Phase 2F: James & Iggi dialogue governance (Foundation Brief §6).
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { DIALOGUE_ASSETS, IGGI_STANDING, approvedDialogue, iggiSampleLines, jamesVerdictLines, signoffLines, validateDialogue, type DialogueLine } from "../lib/content/dialogue.ts";
+import { DIALOGUE_ASSETS, IGGI_STANDING, approvedDialogue, iggiSampleLines, jamesVerdictLines, publicLines, signoffLines, validateDialogue, type DialogueLine } from "../lib/content/dialogue.ts";
 import { VERDICTS, SIGNOFFS } from "../lib/content/verdicts.ts";
 import { CHOSEN } from "../lib/content/voice/chosen.ts";
 import { SAMPLES } from "../lib/content/iggi.ts";
@@ -79,4 +79,13 @@ test("filters narrow by character, audience, page and record without leaking dra
   const leeu = approvedDialogue(REGISTER, { character: "james", intent: "verdict", record: "stay:leeu-estates" });
   assert.equal(leeu.length, 1);
   assert.equal(approvedDialogue(REGISTER, { character: "iggi", intent: "opener" }).length, 0, "no Iggi opener is approved yet");
+});
+
+test("the public feed carries approved lines only, with no approval notes, source refs or asset ids", () => {
+  const pub = publicLines(REGISTER, { character: "iggi" });
+  assert.ok(pub.length >= 6);
+  assert.ok(pub.every((l) => l.character === "iggi" && l.origin && l.text && l.approvedOn));
+  assert.ok(!pub.some((l) => "asset" in l || "source" in l || "approval" in l));
+  assert.equal(publicLines(REGISTER, { intent: "opener" }).length, 0, "samples never reach the feed");
+  assert.ok(publicLines(REGISTER, { character: "iggi", intent: "handoff", page: "compass" }).some((l) => l.id === "iggi.handoff.crux"));
 });

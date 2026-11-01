@@ -74,4 +74,4 @@ The rabbit the audit couldn't find is the house hare seal, already in the brand 
 | Stay page, under Follow the Pathway | `iggi.nudge.follow-pathway` + "Walk {pathway}." link | `NEXT_PUBLIC_PATHWAYS=on`, approved records only |
 | Compass, live pathway reading, safari-only | `iggi.handoff.crux` + "Ask Crux" (D4) | same; the preview keeps the plain handoff line |
 
-Still to do: the Iggi embed reads `dialogue()` once Iggi Core (Contract C3) ships its embed.
+**2F-ii complete (1 Nov 2026):** `GET /api/v1/dialogue` serves the approved lines (`publicLines()`; no approval notes, source refs or asset ids), and the embed URL carries `dialogueFeed` beside `advisorsFeed`. Iggi Core's side — reading the feed and speaking the lines verbatim — is item 3 of `docs/iggi/HANDOFF.md` §6, with the other effort.

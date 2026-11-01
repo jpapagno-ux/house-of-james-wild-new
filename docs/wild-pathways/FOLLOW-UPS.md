@@ -23,6 +23,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 30 Oct 2026 | Impact Notes batch 1 (21) | All published; Jaci's 27.2% and Angama US$20 pppn set `verified` by James; sync `568caca` |
 | 30 Oct 2026 | Phase 2D Compass pathway reading on live `/compass` | Approved; shipped behind the flag |
 | 30 Oct 2026 | Phase 2G SEO/AEO: keyword targets, tuned titles/descriptions, `llms.txt` pathways section | Shipped |
+| 1 Nov 2026 | 2F-ii feed: `/api/v1/dialogue` and `dialogueFeed` on the Iggi embed | Shipped |
 | 1 Nov 2026 | House-wide audit; pathway lists and Compass name only stays with a page | Shipped |
 | 1 Nov 2026 | Pathway pages as collections; soft safari handoff (#110) | Shipped |
 | 1 Nov 2026 | Compass reads the whole Ledger (#107): 426 stays + 11 journeys, pathway gate, /compass/ledger.json | Shipped |
@@ -45,7 +46,7 @@ Running record. One line per item; closed items stay for the audit trail.
 | 9 | Ten approved batch-1 records are not yet in the site export (Serian camps, Sheba's Secret Garden, Angama Safari Camp, Casa Koko): no site slug / not live. They surface when those records are published to the site | library | Open |
 | 10 | Phase 2F review | James | Closed 30 Oct 2026 — standing lines, wink / this-way expressions and sign-offs 2–7 approved |
 | 17 | **Pinned:** wording audit of Iggi's six standing lines (approved 30 Oct 2026 to unblock 2F-ii; James wants a later pass on the words) | James + this initiative | Open — pinned |
-| 18 | Phase 2F-ii: render the register — Iggi nudge under Follow the Pathway on stay pages and the Crux handoff on the Compass reading shipped (`components/dialogue/IggiLine`, `dialogueLine(id)`). Remaining: the Iggi embed reading `dialogue()` once Iggi Core lands its embed | this initiative | Partly closed 30 Oct 2026 — embed wiring waits on Iggi Core |
+| 18 | Phase 2F-ii: bubbles on stay pages and the Compass (30 Oct); `/api/v1/dialogue` feed + `dialogueFeed` on the embed URL (1 Nov). Site side closed; Core reads the feed per HANDOFF.md §6.3 | Iggi Core effort | Site side closed 1 Nov 2026 |
 | 12 | Naming: traveller's saved collection is the **Folio** ("Save to My Folio"); the **Ledger** is the house portfolio — its volumes and content vetted by James Wild. Decided by James 30 Oct 2026; no account copy changes | James | Closed |
 | 14 | Dulini Daunara Lodge linked to the Botswana destination in the library | James | Closed 30 Oct 2026 — relinked to South Africa (same destination as the other Dulini lodges) with James's approval; Okavango coordinates cleared, real pin still wanted |
 | 15 | Stay record: literal `<br/>` shows as text in the Airport field | this initiative | Closed 30 Oct 2026 — exporter `line()` strips tags and joins breaks with ' · ' for `airport_name`; Tswalu's committed JSON patched the same way ahead of the nightly sync |

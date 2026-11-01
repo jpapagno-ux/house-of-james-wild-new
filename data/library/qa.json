@@ -547,7 +547,7 @@
    "stay_id": "6a85bfb37f6eb35689bff8b3",
    "slug": "benguerra-island-by-and-beyond",
    "name": "Benguerra Island by & Beyond",
-   "country": "Tanzania",
+   "country": "Mozambique",
    "missing": [],
    "released": true
   },
@@ -1439,7 +1439,7 @@
    "stay_id": "6a85bfb37f6eb35689bff915",
    "slug": "gorongosa-safaris",
    "name": "Gorongosa Safaris Mozambique",
-   "country": "South Africa",
+   "country": "Mozambique",
    "missing": [],
    "released": true
   },
@@ -2436,6 +2436,16 @@
    "name": "Mara Toto Tree Camp by Great Plains",
    "country": "Kenya",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae726aa1a6dca745879a346",
+   "slug": "marataba",
+   "name": "Marataba",
+   "country": "South Africa",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

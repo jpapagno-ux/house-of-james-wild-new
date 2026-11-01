@@ -302,6 +302,7 @@ export const STAY_SLUGS: string[] = [
   "manyara-tree-lodge-by-and-beyond",
   "mara-plains-camp-by-great-plains",
   "mara-toto-tree-camp-by-great-plains",
+  "marataba",
   "masoala-forest-lodge",
   "matachica-resort-and-spa",
   "matetsi-victoria-falls",

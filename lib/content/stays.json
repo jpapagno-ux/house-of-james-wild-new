@@ -6,7 +6,7 @@
    "name": "& Beyond Amazon Explorer",
    "ledgerId": "STY-2026-995556",
    "country": "Brazil",
-   "countrySlug": "brazil",
+   "countrySlug": null,
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "lodge",
@@ -439,7 +439,7 @@
    "country": "Mozambique",
    "countrySlug": null,
    "regionSlug": "africa",
-   "misfiled": "Mozambique",
+   "misfiled": null,
    "category": "hotel",
    "tagline": "Where turquoise waters meet barefoot luxury",
    "quote": "Wake up to the sound of the ocean, explore coral reefs, and unwind in your private beach paradise",
@@ -2064,7 +2064,7 @@
    "name": "Anantara Mui Ne",
    "ledgerId": "STY-2026-000018",
    "country": "Vietnam",
-   "countrySlug": "vietnam",
+   "countrySlug": null,
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
@@ -2819,7 +2819,7 @@
    "name": "Ariel House",
    "ledgerId": "STY-2026-012448",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -3311,7 +3311,7 @@
    "name": "Awasi Atacama",
    "ledgerId": "STY-2026-000026",
    "country": "Bolivia",
-   "countrySlug": "bolivia",
+   "countrySlug": null,
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -3676,7 +3676,7 @@
    "name": "Santa Catarina",
    "ledgerId": "STY-2026-000028",
    "country": "Brazil",
-   "countrySlug": "brazil",
+   "countrySlug": null,
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -4059,7 +4059,7 @@
    "name": "Baymahni Island Escape",
    "ledgerId": "STY-2026-000035",
    "country": "Bahamas",
-   "countrySlug": "bahamas",
+   "countrySlug": null,
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
@@ -4813,7 +4813,7 @@
    "name": "Breac.House",
    "ledgerId": "STY-2026-000525",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -5810,7 +5810,7 @@
    "name": "Castle Leslie Estate",
    "ledgerId": "STY-2026-000055",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -6728,7 +6728,7 @@
    "name": "Clayoquot Wilderness Lodge",
    "ledgerId": "STY-2026-587688",
    "country": "Canada",
-   "countrySlug": "canada",
+   "countrySlug": null,
    "regionSlug": "usa-canada",
    "misfiled": null,
    "category": "lodge",
@@ -7304,7 +7304,7 @@
    "name": "Cork’s Vienna Woods",
    "ledgerId": "STY-2026-346989",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -8443,7 +8443,7 @@
    "name": "Dá Licença",
    "ledgerId": "STY-2026-000522",
    "country": "Portugal + Azores",
-   "countrySlug": "portugal",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -10223,7 +10223,7 @@
    "name": "Explora Atacama",
    "ledgerId": "STY-2026-000086",
    "country": "Bolivia",
-   "countrySlug": "bolivia",
+   "countrySlug": null,
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -10482,7 +10482,7 @@
    "name": "Room & Wild \n Fogo Island Inn",
    "ledgerId": "STY-2026-000098",
    "country": "Canada",
-   "countrySlug": "canada",
+   "countrySlug": null,
    "regionSlug": "usa-canada",
    "misfiled": null,
    "category": "hotel",
@@ -10826,7 +10826,7 @@
    "country": "Mozambique",
    "countrySlug": null,
    "regionSlug": "africa",
-   "misfiled": "Mozambique",
+   "misfiled": null,
    "category": "hotel",
    "tagline": "A conservation-led safari experience in one of Africa’s greatest wilderness restoration stories.",
    "quote": "Come not only to witness wildlife, but to experience the rebirth of an entire ecosystem.",
@@ -11317,7 +11317,7 @@
    "name": "Hayfield Manor",
    "ledgerId": "STY-2026-272684",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -15153,7 +15153,7 @@
    "name": "Kualoa Ranch",
    "ledgerId": "STY-2026-000136",
    "country": "Hawaii",
-   "countrySlug": "hawaii",
+   "countrySlug": null,
    "regionSlug": "usa-canada",
    "misfiled": null,
    "category": "hotel",
@@ -19561,6 +19561,136 @@
    "arrivalHubIds": []
   },
   {
+   "slug": "marataba",
+   "name": "Marataba",
+   "ledgerId": "STY-2026-000548",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A malaria-free Big Five safari in the Waterberg, with three ways to stay",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/marataba/g10"
+   ],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "May to September is cool and dry with sparse bush, the best for game viewing and the season for rhino interventions. October to April is green, with afternoon storms, baby animals and the best birding. The wildlife does not migrate, so game viewing is good all year.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "group_exclusive_use"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Thabazimbi Airstrip; OR Tambo International Airport (JNB), Johannesburg",
+   "airportDirections": "Fly to Thabazimbi Airstrip, then a road transfer: 40 minutes to Marataba Villa, 1 hour to Safari Lodge, 90 minutes to Mountain Lodge. Or drive from Johannesburg in about 3.5 hours.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Three ways to stay in Marakele National Park. Safari Lodge has fifteen canvas-and-stone tents on the plains, Family Tents with a kids' room among them, and welcomes all ages. Mountain Lodge has five rooms above Waterfall Valley, solar-powered and Scandinavian in feel, for guests 16 and over. Marataba Villa has four luxury tents on the banks of the Matlabas River, booked whole for one family or group, with its own team, chef and private vehicle."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Two game drives a day with a FGASA-accredited field guide, bush walks, morning and sunset water safaris on the Matlabas River, stargazing, and a night in the two-level Thabametsi Treehouse at the foot of the Waterberg. From April to September guests can join specialist vets on a rhino conservation intervention, photographed by the Creative Lab team at no extra cost."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Malaria-free, so it suits young children and anyone avoiding malaria tablets. The Big Five plus brown hyena, aardwolf, pangolin and more than 380 bird species, with black rhino the signature species. Marakele holds one of the world's largest colonies of endangered Cape vultures, more than 800 breeding pairs. Kosher cuisine at Safari Lodge from a dedicated kitchen. Wi-Fi at every lodge."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A Big Five safari a short hop from Johannesburg with no malaria, where a boat carries you up the Matlabas River to elephants drinking at the bank and a treehouse lets you sleep out under the Waterberg stars."
+   ],
+   "why": [
+    {
+     "title": "Three Lodges, One Wilderness",
+     "body": "Best for families with young children, couples who want the adults-only Mountain Lodge, and multigenerational groups who want a villa and vehicle of their own."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September for game viewing and rhino interventions; October to April for green bush, baby animals and birding.",
+    "how_to_get_there": "Fly to Thabazimbi Airstrip, then 40 to 90 minutes by road depending on the lodge; or drive from Johannesburg in about 3.5 hours.",
+    "who_its_for": "Families with young children, couples at the adults-only Mountain Lodge, and groups who want a private villa.",
+    "signature_experiences": "Water safaris on the Matlabas River, a treehouse sleep-out and hands-on rhino conservation."
+   },
+   "faqs": [
+    {
+     "q": "Is Marataba malaria-free?",
+     "a": "Yes. Marataba is in the malaria-free Waterberg, so it suits young children and anyone who would rather not take malaria tablets."
+    },
+    {
+     "q": "Can children stay at Marataba?",
+     "a": "Yes at Safari Lodge and Marataba Villa, which welcome all ages. Mountain Lodge is for guests 16 and over."
+    },
+    {
+     "q": "How do you get to Marataba from Johannesburg?",
+     "a": "Fly to Thabazimbi Airstrip and transfer by road (40 minutes to the Villa, 1 hour to Safari Lodge, 90 minutes to Mountain Lodge), or drive from Johannesburg in about 3.5 hours."
+    },
+    {
+     "q": "What is the difference between Safari Lodge, Mountain Lodge and Marataba Villa?",
+     "a": "Safari Lodge has 15 tents on the plains, welcomes families and runs scheduled game drives. Mountain Lodge has 5 rooms above a valley for guests 16 and over. Marataba Villa has 4 tents on the river for private use, with its own team and vehicle."
+    },
+    {
+     "q": "Can you book a single tent at Marataba Villa?",
+     "a": "No. The Villa is booked whole, all four tents with a private team, for one family or group."
+    },
+    {
+     "q": "When is the best time to visit Marataba?",
+     "a": "May to September for the best game viewing and rhino interventions; October to April for green bush, baby animals and birding. The wildlife does not migrate, so it is good all year."
+    },
+    {
+     "q": "What wildlife will you see at Marataba?",
+     "a": "The Big Five, plus giraffe, zebra, hippo, crocodile and more than 380 bird species. Black rhino is the signature species, and brown hyena, aardwolf and pangolin are possible."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [
+     "big_five",
+     "malaria_free",
+     "families"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "small_groups"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": []
+  },
+  {
    "slug": "masoala-forest-lodge",
    "name": "Masoala Forest Lodge",
    "ledgerId": "STY-2026-000163",
@@ -22323,7 +22453,7 @@
    "name": "No.1 Pery Square \n Limerick",
    "ledgerId": "STY-2026-522238",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -22705,7 +22835,7 @@
    "name": "Nomade \n Temple Ibiza",
    "ledgerId": "STY-2026-000193",
    "country": "Spain-Ibiza",
-   "countrySlug": "spain-ibiza",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -22802,7 +22932,7 @@
    "name": "Nomade Temple Madrid\nComing 2025",
    "ledgerId": "STY-2026-000194",
    "country": "Spain",
-   "countrySlug": "spain",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -24998,7 +25128,7 @@
    "name": "Pu'u O Hoku Ranch",
    "ledgerId": "STY-2026-000218",
    "country": "Hawaii",
-   "countrySlug": "hawaii",
+   "countrySlug": null,
    "regionSlug": "usa-canada",
    "misfiled": null,
    "category": "hotel",
@@ -30143,7 +30273,7 @@
    "name": "Six Senses \n Con Dao",
    "ledgerId": "STY-2026-000262",
    "country": "Vietnam",
-   "countrySlug": "vietnam",
+   "countrySlug": null,
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
@@ -30239,7 +30369,7 @@
    "name": "Six Senses \n Crans-Montana",
    "ledgerId": "STY-2026-000263",
    "country": "Switzerland",
-   "countrySlug": "switzerland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -30329,7 +30459,7 @@
    "name": "Six Senses \n Douro Valley",
    "ledgerId": "STY-2026-000264",
    "country": "Portugal + Azores",
-   "countrySlug": "portugal",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -30513,7 +30643,7 @@
    "name": "Six Senses \n Ibiza",
    "ledgerId": "STY-2026-000266",
    "country": "Spain-Ibiza",
-   "countrySlug": "spain-ibiza",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -30731,7 +30861,7 @@
    "name": "Six Senses \n Kyoto",
    "ledgerId": "STY-2026-000269",
    "country": "Japan",
-   "countrySlug": "japan",
+   "countrySlug": null,
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
@@ -30914,7 +31044,7 @@
    "name": "Six Senses \n Ninh Van Bay",
    "ledgerId": "STY-2026-000271",
    "country": "Vietnam",
-   "countrySlug": "vietnam",
+   "countrySlug": null,
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
@@ -31010,7 +31140,7 @@
    "name": "Six Senses \n Rome",
    "ledgerId": "STY-2026-000272",
    "country": "Italy",
-   "countrySlug": "italy",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "hotel",
@@ -34327,7 +34457,7 @@
    "name": "Room & Wild \n The Nami Project",
    "ledgerId": "STY-2026-000299",
    "country": "Canada",
-   "countrySlug": "canada",
+   "countrySlug": null,
    "regionSlug": "usa-canada",
    "misfiled": null,
    "category": "hotel",
@@ -36932,7 +37062,7 @@
    "name": "Uxua Casa \n Hotel & Spa",
    "ledgerId": "STY-2026-000326",
    "country": "Brazil",
-   "countrySlug": "brazil",
+   "countrySlug": null,
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "hotel",
@@ -39654,7 +39784,7 @@
    "name": "Wren Urban Nest",
    "ledgerId": "STY-2026-378648",
    "country": "Ireland",
-   "countrySlug": "ireland",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",
@@ -40367,7 +40497,7 @@
    "name": "Six Senses \n Residences Courchevel",
    "ledgerId": "STY-2026-109869",
    "country": "France",
-   "countrySlug": "france",
+   "countrySlug": null,
    "regionSlug": "europe",
    "misfiled": null,
    "category": "lodge",

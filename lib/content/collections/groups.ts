@@ -33,6 +33,12 @@ export const GROUPS: SisterGroup[] = [
     line: "Tented camps in northern Tanzania, four hours' game drive apart, from the central Serengeti to the Mara River.",
     slugs: ["nimali-serengeti", "nimali-mara"],
   },
+  {
+    key: "kayumanis",
+    name: "Kayumanis",
+    line: "Private pool villa estates across Bali: Ubud, Nusa Dua, Jimbaran and Sanur, each bookable live.",
+    slugs: ["kayumanis-ubud", "kayumanis-nusa-dua", "kayumanis-jimbaran-private-estates", "kayumanis-sanur"],
+  },
 ];
 
 export function sistersFor(slug: string): { group: SisterGroup; stays: StayData[] } | null {

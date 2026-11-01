@@ -40,10 +40,18 @@ function rooms(section: string): RateRoom[] {
   return out;
 }
 
+// Each rate plan sits under <h2 class="text-xl font-bold">Plan name</h2>, and the
+// name differs by property ("Non-Refundable", "Flexible Rate – Kayumanis Nusa
+// Dua"…), so plans are read from those headings. PLANS is the fallback for a
+// page without them.
+const PLAN_H2 = /<h2 class="text-xl font-bold"[^>]*>([^<]{2,120})<\/h2>/g;
+const tidy = (n: string) => { const t = n.replace(/\s+/g, " ").trim(); return t === t.toUpperCase() ? t.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase()) : t; };
+
 export function parseEngine(html: string): RatePlan[] {
   const stop = html.indexOf("properties in our collection");
   const end = stop > -1 ? stop : html.length;
-  const starts = PLANS.map((plan) => ({ plan, at: html.indexOf(plan) })).filter((x) => x.at > -1 && x.at < end).sort((a, b) => a.at - b.at);
+  let starts = [...html.matchAll(PLAN_H2)].filter((m) => (m.index ?? 0) < end).map((m) => ({ plan: tidy(m[1]), at: m.index ?? 0 }));
+  if (!starts.length) starts = PLANS.map((plan) => ({ plan, at: html.indexOf(plan) })).filter((x) => x.at > -1 && x.at < end).sort((a, b) => a.at - b.at);
   return starts
     .map((s, i) => ({ plan: s.plan, rooms: rooms(html.slice(s.at, i + 1 < starts.length ? starts[i + 1].at : end)) }))
     .filter((p) => p.rooms.length > 0);

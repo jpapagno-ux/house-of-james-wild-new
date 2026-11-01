@@ -95,6 +95,7 @@ export const BUILT: string[] = [
   "/destinations/europe/slovenia/ljubljana",
   "/destinations/europe/slovenia/logar-valley",
   "/destinations/europe/slovenia/brda",
+  "/destinations/south-america/bolivia/salar-de-uyuni",
   "/destinations/polar-arctic",
   "/journal",
   "/journal/monwana-couples-first-safari",

@@ -89,3 +89,14 @@ test("Slovenia has Ljubljana, the Logar Valley and Brda, linked as one route", (
     assert.deepEqual(g.onward!.map((o) => o.href).sort(), others, `${g.slug}: onward links don't cover the other places`);
   }
 });
+
+// Bolivia (1 Nov 2026): the Salar de Uyuni sits inside Bolivia, carries the flyover, and links across the
+// border to the Atacama, which links back.
+test("the Salar de Uyuni is a place in Bolivia, linked across the border to the Atacama", () => {
+  const g = GUIDES["salar-de-uyuni"];
+  assert.equal(g.parent, "bolivia");
+  assert.equal(g.flyover, "atacama-uyuni");
+  assert.equal(placeGuideForStay("explora-at-uyuni-flats")?.slug, "salar-de-uyuni");
+  assert.ok(g.onward!.some((o) => o.href === GUIDES.atacama.path));
+  assert.ok(GUIDES.atacama.onward!.some((o) => o.href === g.path));
+});

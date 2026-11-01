@@ -3310,10 +3310,14 @@
    "airports": [
     [
      "Victoria Falls International Airport (VFA)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 4 stays in the Ledger here"
     ],
     [
      "Bumi Hills Airstrip (BZH)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Livingstone Airport (LVI)",
      "Serves 1 stay in the Ledger here"
     ]
    ],

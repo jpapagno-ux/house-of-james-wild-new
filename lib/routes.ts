@@ -436,6 +436,7 @@ export const STAY_SLUGS: string[] = [
   "st-george-s-caye-resort",
   "stanley-livingstone-lodge",
   "sterrekopje",
+  "sushi-chuma",
   "suyian-lodge-by-and-beyond",
   "swale-camp",
   "tabacon-thermal-resort-spa",

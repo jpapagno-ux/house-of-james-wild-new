@@ -2713,91 +2713,6 @@
    "arrivalHubIds": []
   },
   {
-   "slug": "arenal-springs-camp-by-nayara",
-   "name": "Arenal Springs Camp by Nayara",
-   "ledgerId": "STY-2026-000021",
-   "country": "Costa Rica",
-   "countrySlug": "costa-rica",
-   "regionSlug": "central-america",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "“Where lush rainforest meets private plunge‑pool luxury under the volcano’s gaze.”",
-   "quote": "Embrace the wild. Discover yourself.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.",
-   "gallery": [],
-   "bestMonths": "December–April",
-   "bestMonthsNote": "These months bring dry weather and clear skies, perfect for volcano views, trail hikes, and sunset pool dips.",
-   "bestFor": [
-    "honeymoon",
-    "family"
-   ],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": 10.4711,
-    "lng": -84.6441
-   },
-   "airport": "Juan Santamaría International Airport (SJO); Liberia Guanacaste Airport (LIR)",
-   "airportDirections": "From SJO: ~2.5 hrs drive via Pan‑American Highway. From LIR: ~3 hrs via Route 1 north then Lake Arenal Road. SJO offers more daily flights and easier airport transfers.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Freestanding Casitas with plunge pools",
-     "Arenal Pool Casitas",
-     "Family‑friendly suites with daybeds"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Guided rainforest walks",
-     "Volcano‑view yoga",
-     "Zip‑lining & canopy tours",
-     "Horseback to La Fortuna Waterfall"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Swim‑up bar in the jungle pool",
-     "World‑class spa with volcanic‑mud treatments",
-     "Wine bar & Costa Rican cuisine",
-     "Personal host service",
-     "Eco‑certified hideaway designed within untouched rainforest"
-    ]
-   },
-   "onlyHere": [
-    "Hidden among 500 species of birds and wildflowers, each private bungalow offers plantation-crafted wood interiors, dual rain-showers, outdoor jacuzzis, and personal hosts, so guests can slow down, reconnect, and soak in self-discovery as nature envelops them."
-   ],
-   "why": [
-    {
-     "title": "Connection Catalyzed by the Wild",
-     "body": "Here, the rainforest isn’t a backdrop, it’s a sanctuary. Ideal for solo travelers wanting space to breathe, couples seeking private romance, and families yearning for shared jungle wonder, Nayara Gardens immerses each guest in regenerative luxury, wellness, and volcanic grandeur."
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-01",
-    "secondary": [],
-    "setting": "arenal",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": []
-  },
-  {
    "slug": "arenas-del-mar-resort",
    "name": "Arenas Del Mar Resort \n Costa Rica",
    "ledgerId": "STY-2026-000022",
@@ -9909,13 +9824,17 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "tanzania",
-    "intentions": [],
+    "intentions": [
+     "mobile_camp"
+    ],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -11381,14 +11300,15 @@
    "pathway": {
     "primary": "PATH-03",
     "secondary": [
-     "PATH-04"
+     "PATH-04",
+     "PATH-06"
     ],
     "setting": "mahale",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays"
@@ -15300,13 +15220,17 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "serengeti",
-    "intentions": [],
+    "intentions": [
+     "mobile_camp"
+    ],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -15521,13 +15445,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "ruaha",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -20423,8 +20349,8 @@
    "slug": "matetsi-victoria-falls",
    "name": "Matetsi Victoria Falls",
    "ledgerId": "STY-2026-000164",
-   "country": "Zambia",
-   "countrySlug": "zambia",
+   "country": "Zimbabwe",
+   "countrySlug": "zimbabwe",
    "regionSlug": "africa",
    "misfiled": null,
    "category": "hotel",
@@ -21928,13 +21854,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "serengeti",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -22640,6 +22568,118 @@
      "honeymoon",
      "solo",
      "conservation_minded"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "arenal-springs-camp-by-nayara",
+   "name": "Arenal Springs Camp by Nayara",
+   "ledgerId": "STY-2026-000021",
+   "country": "Costa Rica",
+   "countrySlug": "costa-rica",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Adults-only villas with private plunge pools on Nayara's Arenal campus.",
+   "quote": "Embrace the wild. Discover yourself.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.",
+   "gallery": [],
+   "bestMonths": "December–April",
+   "bestMonthsNote": "These months bring dry weather and clear skies, perfect for volcano views, trail hikes, and sunset pool dips.",
+   "bestFor": [
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 10.4711,
+    "lng": -84.6441
+   },
+   "airport": "Juan Santamaría International Airport (SJO); Liberia Guanacaste Airport (LIR)",
+   "airportDirections": "From SJO: ~2.5 hrs drive via Pan‑American Highway. From LIR: ~3 hrs via Route 1 north then Lake Arenal Road. SJO offers more daily flights and easier airport transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Freestanding Casitas with plunge pools",
+     "Arenal Pool Casitas",
+     "Family‑friendly suites with daybeds"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Guided rainforest walks",
+     "Volcano‑view yoga",
+     "Zip‑lining & canopy tours",
+     "Horseback to La Fortuna Waterfall"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Swim‑up bar in the jungle pool",
+     "World‑class spa with volcanic‑mud treatments",
+     "Wine bar & Costa Rican cuisine",
+     "Personal host service",
+     "Eco‑certified hideaway designed within untouched rainforest"
+    ]
+   },
+   "onlyHere": [
+    "Hidden among 500 species of birds and wildflowers, each private bungalow offers plantation-crafted wood interiors, dual rain-showers, outdoor jacuzzis, and personal hosts, so guests can slow down, reconnect, and soak in self-discovery as nature envelops them."
+   ],
+   "why": [
+    {
+     "title": "Connection Catalyzed by the Wild",
+     "body": "Here, the rainforest isn’t a backdrop, it’s a sanctuary. Ideal for solo travelers wanting space to breathe, couples seeking private romance, and families yearning for shared jungle wonder, Nayara Gardens immerses each guest in regenerative luxury, wellness, and volcanic grandeur."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April, the dry season, for the clearest views of Arenal Volcano; the green months are wetter in the afternoons and quieter.",
+    "how_to_get_there": "San José (SJO) is about 123 km and 2½ to 3 hours by road; Liberia (LIR) about 134 km and 3 hours. The house arranges the transfer.",
+    "signature_experiences": "A private villa with its own plunge pool in the rainforest below Arenal; footbridges across to Nayara Gardens and Nayara Tented Camp and their restaurants, hot springs and spa; a resident host for the stay.",
+    "who_its_for": "Couples and honeymooners who want a villa and a plunge pool of their own, with the whole Nayara campus a footbridge away. Adults only."
+   },
+   "faqs": [
+    {
+     "q": "Is Nayara Springs adults only?",
+     "a": "Yes. Nayara Springs is the adults-only villa retreat on Nayara's Arenal campus; families stay at Nayara Gardens or Nayara Tented Camp next door, linked by footbridges."
+    },
+    {
+     "q": "When is the best time to visit Nayara Springs?",
+     "a": "December to April is the dry season, with the best chance of a clear Arenal Volcano. The resort is open all year."
+    },
+    {
+     "q": "How do you get to Nayara Springs?",
+     "a": "By road from San José (SJO), about 2½ to 3 hours, or from Liberia (LIR), about 3 hours. The house arranges the transfer."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [],
+    "setting": "arenal",
+    "intentions": [
+     "rainforest",
+     "volcano",
+     "plunge_pool",
+     "privacy",
+     "wellness"
+    ],
+    "suitability": [
+     "couples",
+     "honeymoon"
     ],
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
@@ -26848,14 +26888,15 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [
-     "PATH-02"
+     "PATH-02",
+     "PATH-06"
     ],
     "setting": "lake_victoria",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -30663,13 +30704,15 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "maasai_mara",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -34009,6 +34052,122 @@
    "volumes": [
     "stays"
    ],
+   "arrivalHubIds": []
+  },
+  {
+   "slug": "sushi-chuma",
+   "name": "Sussi & Chuma Lodge, an A&K Sanctuary",
+   "ledgerId": "STY-2026-000285",
+   "country": "Zambia",
+   "countrySlug": "zambia",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Treehouse suites on the Zambezi, seven miles upstream from Victoria Falls",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sushi-chuma/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. February has low crowds for viewing the falls, April to June sees them at their fullest with frequent rainbows, white-water rafting runs July to October, and the Devil's Pool opens in late August. September is mild with good wildlife viewing in the park.",
+   "bestFor": [
+    "couples",
+    "family",
+    "conservation"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -17.740559,
+    "lng": 25.771109
+   },
+   "airport": "Harry Mwaanga Nkumbula International Airport, Livingstone (LVI)",
+   "airportDirections": "A 25-minute drive from Livingstone airport; return transfers are included. Livingstone is about an hour's flight from Lusaka.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve suites of 60 square metres for up to 24 guests, raised among mature ebony and jackalberry trees on a quiet bend of the Zambezi. Each air-conditioned, thatched treehouse has a netted four-poster bed, a standalone bathtub, a writing desk and a private deck over the river. The lodge has a riverside spa with an outdoor treatment room on stilts, a bar, lounge and sundowner deck."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Twice-daily activities in Mosi-oa-Tunya National Park, including game drives, walking safaris and rhino walks, plus guided tours of Victoria Falls from both the Zambian and Zimbabwean sides. On the Zambezi there are sundowner cruises, catch-and-release fishing and seasonal white-water rafting, and guests can take a scenic helicopter flight over the falls or visit Nakatindi village."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Meals, drinks including premium brands, game drives, walking safaris, sundowner cruises, fishing, Victoria Falls tours, village visits, park fees and Livingstone airport transfers are included. Wildlife often moves through the grounds, and the park holds more than 400 bird species. A&K Philanthropy supports Nakatindi School, the Chipego Bike Shop run by women mechanics, a health clinic and school meals nearby."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Treehouse suites in the canopy above the Zambezi, a 25-minute drive from Livingstone airport and 12 kilometres upriver from Victoria Falls, with rhino walks in the park on your doorstep."
+   ],
+   "why": [
+    {
+     "title": "The Falls, From the Trees",
+     "body": "Best for couples, families with children aged six and over, and anyone who wants Victoria Falls with a true safari lodge feel."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; April to June for the fullest falls, July to October for rafting.",
+    "how_to_get_there": "A 25-minute drive from Livingstone airport, with transfers included.",
+    "signature_experiences": "Rhino walks in Mosi-oa-Tunya, guided tours of both sides of Victoria Falls and sundowner cruises on the Zambezi.",
+    "who_its_for": "Couples and families with children aged six and over who want Victoria Falls with a safari lodge feel."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sussi & Chuma Lodge?",
+     "a": "On a quiet bend of the Zambezi River in Zambia's Mosi-oa-Tunya National Park, 12 kilometres (about seven miles) upriver from Victoria Falls."
+    },
+    {
+     "q": "How do you get to Sussi & Chuma Lodge?",
+     "a": "Fly to Harry Mwaanga Nkumbula International Airport in Livingstone, then drive about 25 minutes to the lodge. Return transfers are included."
+    },
+    {
+     "q": "How many suites does Sussi & Chuma have?",
+     "a": "Twelve treehouse suites of 60 square metres, for up to 24 guests."
+    },
+    {
+     "q": "Can children stay at Sussi & Chuma?",
+     "a": "Yes, from age six. Children aged 15 and under share accommodation with an adult."
+    },
+    {
+     "q": "When is the best time to visit Sussi & Chuma?",
+     "a": "The lodge is open all year. February is quiet for the falls, April to June is when they are fullest, and July to October is rafting season, with the Devil's Pool opening in late August."
+    },
+    {
+     "q": "What is included at Sussi & Chuma?",
+     "a": "All meals and drinks including premium brands, game drives, walking safaris, sundowner cruises, fishing, Victoria Falls tours, village visits, park fees, laundry and airport transfers."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": null,
    "arrivalHubIds": []
   },
   {
@@ -37610,13 +37769,17 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "serengeti",
-    "intentions": [],
+    "intentions": [
+     "mobile_camp"
+    ],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",
@@ -41292,13 +41455,17 @@
    "engine": null,
    "pathway": {
     "primary": "PATH-04",
-    "secondary": [],
+    "secondary": [
+     "PATH-06"
+    ],
     "setting": "serengeti",
-    "intentions": [],
+    "intentions": [
+     "mobile_camp"
+    ],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (Off the Map rule, 1 Nov 2026)",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays",

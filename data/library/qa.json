@@ -291,7 +291,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8c4",
    "slug": "arenal-springs-camp-by-nayara",
-   "name": "Arenal Springs Camp by Nayara",
+   "name": "Nayara Springs",
    "country": "Costa Rica",
    "missing": [],
    "released": true
@@ -2473,7 +2473,7 @@
    "stay_id": "6a85bfb37f6eb35689bff953",
    "slug": "matetsi-victoria-falls",
    "name": "Matetsi Victoria Falls",
-   "country": "Zambia",
+   "country": "Zimbabwe",
    "missing": [],
    "released": true
   },
@@ -3812,13 +3812,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9cc",
    "slug": "sushi-chuma",
-   "name": "Sussi & Chuma",
+   "name": "Sussi & Chuma Lodge, an A&K Sanctuary",
    "country": "Zambia",
-   "missing": [
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9cd",

@@ -106,11 +106,29 @@ begin
     ok := false;
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'B03 narrowed contributor cannot submit for other entities', 'pass', ok);
+  -- Contributors edit administrative data directly (James, 1 Nov 2026).
   begin
-    insert into public.contacts (organization_id, first_name) values (o_k, 'Nope');
+    insert into public.contacts (organization_id, first_name) values (o_k, 'Contributor added');
+    ok := true;
+  exception when others then ok := false; end;
+  r := r || jsonb_build_object('t', 'B04 contributor can create contacts', 'pass', ok);
+  begin
+    update public.contacts set title = 'Reservations' where organization_id = o_k and first_name = 'Contributor added';
+    get diagnostics n = row_count;
+    ok := n = 1;
+  exception when others then ok := false; end;
+  r := r || jsonb_build_object('t', 'B04b contributor can update contacts', 'pass', ok);
+  delete from public.contacts where organization_id = o_k and first_name = 'Contributor added';
+  get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'B04c contributor cannot remove contacts', 'pass', n = 0);
+  update public.organizations set website = 'https://contrib.rls.test' where id = o_k;
+  get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'B04d contributor can update company details', 'pass', n = 1);
+  begin
+    update public.organizations set name = 'Renamed by contributor' where id = o_k;
     ok := false;
   exception when others then ok := true; end;
-  r := r || jsonb_build_object('t', 'B04 contributor cannot create contacts', 'pass', ok);
+  r := r || jsonb_build_object('t', 'B04e contributor cannot rename the organization', 'pass', ok);
   select count(*) into n from public.contacts where id = con;
   r := r || jsonb_build_object('t', 'B05 contributor can read organization contacts', 'pass', n = 1);
 

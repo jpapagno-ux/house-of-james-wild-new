@@ -2,7 +2,7 @@ import { withMember } from "@/lib/platform/membership";
 import { dbError, error, invalid, jsonBody, ok } from "@/lib/platform/api";
 import { parseContact } from "@/lib/platform/validate";
 
-// POST /api/v1/partner/contacts — partner admins (and the house) add a contact directly.
+// POST /api/v1/partner/contacts — partner admins, contributors and the house add a contact directly.
 // Administrative data: no approval step, every change audited in the database.
 export const dynamic = "force-dynamic";
 

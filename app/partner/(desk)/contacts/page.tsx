@@ -12,7 +12,9 @@ const COMMS: Record<string, string> = { email: "Email", phone: "Phone", whatsapp
 export default async function Contacts() {
   const desk = await requireDesk("/partner/contacts");
   const [list, entities] = await Promise.all([contacts(desk), portfolio(desk)]);
-  const canEdit = desk.canAdmin || desk.houseEditor;
+  // Contributors edit contacts too (James, 1 Nov 2026); removing one stays with partner admins.
+  const canEdit = !!desk.membership || desk.houseEditor;
+  const canRemove = desk.canAdmin || desk.houseEditor;
   const name = new Map(entities.map((e) => [e.id, e.name]));
   const ents = entities.map((e) => ({ id: e.id, name: e.name }));
   return (
@@ -44,7 +46,7 @@ export default async function Contacts() {
               </dl>
               {c.notes && <p className="mt-2 text-[13.5px] ledger-muted whitespace-pre-line">{c.notes}</p>}
               {canEdit && (
-                <ContactCardActions entities={ents} contact={{
+                <ContactCardActions canRemove={canRemove} entities={ents} contact={{
                   id: c.id, firstName: c.first_name ?? "", lastName: c.last_name ?? "", title: c.title ?? "", email: c.email ?? "", mobile: c.mobile ?? "", whatsapp: c.whatsapp ?? "",
                   country: c.country ?? "", timezone: c.timezone ?? "", territory: c.territory ?? "", languages: c.languages.join(", "), roles: c.roles,
                   preferredCommunication: c.preferred_communication ?? "", newsletterOptIn: c.newsletter_opt_in, tradeOptIn: c.trade_opt_in, notes: c.notes ?? "",

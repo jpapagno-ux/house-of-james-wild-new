@@ -100,7 +100,7 @@ export function ContactEditor({ initial, entities, onClose }: { initial: Contact
   );
 }
 
-export function ContactCardActions({ contact, entities }: { contact: ContactDraft & { id: string }; entities: { id: string; name: string }[] }) {
+export function ContactCardActions({ contact, entities, canRemove = true }: { contact: ContactDraft & { id: string }; entities: { id: string; name: string }[]; canRemove?: boolean }) {
   const [open, setOpen] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const { busy, err, run } = useSubmit();
@@ -108,7 +108,7 @@ export function ContactCardActions({ contact, entities }: { contact: ContactDraf
   return (
     <div className="mt-3 flex flex-wrap items-center gap-4">
       <button type="button" onClick={() => setOpen(true)} className="ledger-btn-ghost uppercase">Edit</button>
-      {confirming
+      {!canRemove ? null : confirming
         ? <span className="inline-flex items-center gap-3 text-[13px]">Remove this contact?
             <button type="button" disabled={busy} onClick={() => run("DELETE", `/api/v1/partner/contacts/${contact.id}`, undefined, "Removed.")} className="ledger-btn-ghost uppercase">Yes, remove</button>
             <button type="button" onClick={() => setConfirming(false)} className="ledger-btn-ghost uppercase">Keep</button></span>

@@ -9,7 +9,7 @@ Partners contribute; James Wild & Co publishes.
 
 | Partners may | How |
 | --- | --- |
-| Edit contacts and company details | Directly, audited (`contacts`, `organizations` column grants) |
+| Edit contacts and company details (admins and contributors; only admins remove a contact) | Directly, audited (`contacts`, `organizations` column grants) |
 | Answer requests, send updates with links | `submissions` (status set by the database, not the client) |
 | Propose a change to an entry's name, category, country, region, time zone | `revisions` → only through `public.decide_revision()` by a house editor |
 | Invite teammates (admin / contributor, optionally narrowed) | `org_invitations` (token hash only) → `public.accept_org_invitation()` |
@@ -30,16 +30,20 @@ live value changed since (no silent overwrite).
   `content_requests`, `submissions`, `revisions` (+ `private.revision_fields` whitelist),
   `verifications`, `partner_applications`, `org_invitations`, `accept_org_invitation`,
   `set_team_member`, `decide_revision`, `decide_submission`, RLS, column grants, audit.
+- `20261101210000_partner_contributor_admin_data.sql` (James, 1 Nov 2026): contributors
+  edit contacts, contact links and company details like admins; house editors may correct
+  company details. Removing a contact stays with partner admins and the house. **Pending
+  live apply** — renamed to its recorded version once applied.
 
-Tests: `supabase/tests/rls_partner_desk.sql` (55 checks), passing on a local replay and on
-live (rolled back). `supabase/tests/drift_check/replay.sh` runs every RLS file locally.
+Tests: `supabase/tests/rls_partner_desk.sql` (59 checks), passing on a local replay; the
+first 55 also passed on live (rolled back), the full 59 run after the migration above. `supabase/tests/drift_check/replay.sh` runs every RLS file locally.
 
 ## Seed (`supabase/seed/partner_desk_stage1.sql`, idempotent, applied 1 Nov 2026)
 
 | Partner | Code | Entities |
 | --- | --- | --- |
 | Kayumanis Private Villa & Spa | PAR-000001 | Jimbaran 000128, Nusa Dua 000129, Ubud 000130 (published, names untouched); Sanur 000547 (Library ID), Nanjing 800001, Yangshuo 800002 (draft, PUBLIC_SOURCE) |
-| MORE Family Collection (brand Lion Sands) | PAR-000002 | Lion Sands Reserve 290658 (parent, published); River, Narina, Tinga, Ivory lodges; Fish Eagle and Hinkwenu residences (also Gatherings); Chalkley, Tinyeleti, Kingston treehouses — 800003…800011, all draft |
+| MORE Family Collection (brand Lion Sands) | PAR-000002 | Lion Sands Reserve 290658 (parent, published); River, Narina, Tinga, Ivory lodges; Fish Eagle and Hinkwenu villas (also Gatherings); Chalkley, Tinyeleti, Kingston treehouses — 800003…800011, all draft |
 
 17 content requests, one placeholder contact per partner (to verify). Rooms (8 on the
 reserve, 10 on the Kayumanis villas) and the Lion Sands 2027-V1 card are untouched.

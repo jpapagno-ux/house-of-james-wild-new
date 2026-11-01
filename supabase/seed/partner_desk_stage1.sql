@@ -10,7 +10,7 @@
 --     its Library Ledger ID STY-2026-000547; Nanjing and Yangshuo get Partner Desk IDs.
 --     All three new ones are draft + PUBLIC_SOURCE until Kayumanis confirms them.
 --   • Lion Sands: the reserve STY-2026-290658 stays the parent; four lodges, two
---     residences and three treehouses are draft child entities with Partner Desk IDs.
+--     villas (named "Villa", James 1 Nov 2026) and three treehouses are draft child entities with Partner Desk IDs.
 --     The 8 existing rooms and the 2027-V1 rate card stay on the reserve (Stage 2 moves them).
 --   • QA identities: *.example.test only, created WITHOUT a password here. Passwords are set
 --     separately and handed to James; they are never committed.
@@ -90,6 +90,12 @@ update public.properties set entity_type = 'reserve', volume_key = 'safaris',
   external_ids = external_ids || '{"library_reserve": "RSV-2026-000006"}'::jsonb
 where slug = 'lion-sands' and (volume_key is null or brand_id is null);
 
+-- Villas, not residences (James, 1 Nov 2026). Renames the two rows a first run created;
+-- Ledger IDs and Library links stay.
+update public.properties set name = replace(name, ' Residence', ' Villa'),
+  slug = replace(slug, '-residence', '-villa'), entity_type = 'villa', updated_at = now()
+where slug in ('lion-sands-fish-eagle-residence', 'lion-sands-hinkwenu-residence');
+
 insert into public.properties (legacy_cms_id, name, slug, category, country, country_code, region, publication_status,
   entity_type, entity_kind, volume_key, brand_id, destination_id, parent_property_id, provenance, external_ids)
 select private.next_ledger_id('STY'), v.name, v.slug, v.category, 'South Africa', 'ZA', 'africa', 'draft', v.etype, v.ekind, 'safaris',
@@ -101,8 +107,8 @@ from (values
   (2, 'Lion Sands Narina Lodge', 'lion-sands-narina-lodge', 'lodge', 'lodge', null, 'narina-lodge'),
   (3, 'Lion Sands Tinga Lodge', 'lion-sands-tinga-lodge', 'lodge', 'lodge', null, 'tinga-lodge'),
   (4, 'Lion Sands Ivory Lodge', 'lion-sands-ivory-lodge', 'lodge', 'lodge', null, 'ivory-lodge'),
-  (5, 'Lion Sands Fish Eagle Residence', 'lion-sands-fish-eagle-residence', 'family_residence', 'residence', null, 'fish-eagle-residence'),
-  (6, 'Lion Sands Hinkwenu Residence', 'lion-sands-hinkwenu-residence', 'family_residence', 'residence', null, 'hinkwenu-residence'),
+  (5, 'Lion Sands Fish Eagle Villa', 'lion-sands-fish-eagle-villa', 'family_residence', 'villa', null, 'fish-eagle-residence'),
+  (6, 'Lion Sands Hinkwenu Villa', 'lion-sands-hinkwenu-villa', 'family_residence', 'villa', null, 'hinkwenu-residence'),
   (7, 'Chalkley Treehouse', 'lion-sands-chalkley-treehouse', 'lodge', 'residence', 'treehouse', null),
   (8, 'Tinyeleti Treehouse', 'lion-sands-tinyeleti-treehouse', 'lodge', 'residence', 'treehouse', null),
   (9, 'Kingston Treehouse', 'lion-sands-kingston-treehouse', 'lodge', 'residence', 'treehouse', null)
@@ -110,13 +116,13 @@ from (values
 where not exists (select 1 from public.properties where slug = v.slug)
 order by v.ord;
 
--- volumes per entity (D-14): primary + residences also in Gatherings
+-- volumes per entity (D-14): primary + the two villas also in Gatherings
 insert into public.entity_volumes (property_id, volume_key, is_primary)
 select id, volume_key, true from public.properties where volume_key is not null
   and (slug like 'kayumanis-%' or slug like 'lion-sands%')
 on conflict do nothing;
 insert into public.entity_volumes (property_id, volume_key, is_primary)
-select id, 'gatherings', false from public.properties where slug in ('lion-sands-fish-eagle-residence', 'lion-sands-hinkwenu-residence')
+select id, 'gatherings', false from public.properties where slug in ('lion-sands-fish-eagle-villa', 'lion-sands-hinkwenu-villa')
 on conflict do nothing;
 
 -- ===== who is connected to what

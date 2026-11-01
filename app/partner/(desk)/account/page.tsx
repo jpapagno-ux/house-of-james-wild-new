@@ -31,7 +31,7 @@ export default async function Account({ searchParams }: { searchParams: Promise<
         <DataList rows={[["Company", org?.name ?? desk.org.name], ["Partner code", org?.partner_code ?? "—"], ["Head office", org?.hq_country ?? "—"]]} />
         <p className="mt-2 text-[12.5px] ledger-muted">The company name and partner code are kept by the house. Ask your James Wild &amp; Co contact to change them.</p>
         <div className="mt-6">
-          {desk.canAdmin || desk.houseEditor ? (
+          {desk.membership || desk.houseEditor ? (
             <CompanyForm initial={{ website: org?.website ?? "", phone: org?.phone ?? "", generalEmail: org?.general_email ?? "", address: org?.address ?? "", preferredCommunication: org?.preferred_communication ?? "", mediaKitUrl: org?.media_kit_url ?? "" }} />
           ) : (
             <DataList rows={[["Website", org?.website ?? "—"], ["General email", org?.general_email ?? "—"], ["Main phone", org?.phone ?? "—"], ["Media kit", org?.media_kit_url ?? "—"]]} />

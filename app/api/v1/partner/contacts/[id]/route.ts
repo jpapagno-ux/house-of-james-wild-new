@@ -3,7 +3,8 @@ import { dbError, error, invalid, jsonBody, ok } from "@/lib/platform/api";
 import { isUuid, parseContact } from "@/lib/platform/validate";
 
 // PATCH /api/v1/partner/contacts/:id — edit (whole record, as the form sends it).
-// DELETE /api/v1/partner/contacts/:id — archive (kept for the audit trail).
+// DELETE /api/v1/partner/contacts/:id — archive (kept for the audit trail). Contributors edit
+// contacts but removing one stays with partner admins and the house (James, 1 Nov 2026).
 export const dynamic = "force-dynamic";
 
 export const PATCH = withMember(async ({ req, desk, requestId, params }) => {
@@ -24,6 +25,7 @@ export const PATCH = withMember(async ({ req, desk, requestId, params }) => {
 
 export const DELETE = withMember(async ({ desk, requestId, params }) => {
   if (!isUuid(params.id)) return error("not_found", "Not found", requestId);
+  if (!desk.canAdmin && !desk.houseEditor) return error("forbidden", "Ask your partner admin to remove this contact", requestId);
   const { data, error: e } = await desk.sb.from("contacts").update({ status: "archived" }).eq("id", params.id).select("id");
   if (e) return dbError(e, requestId);
   if (!data?.length) return error("forbidden", "You can't remove this contact", requestId);

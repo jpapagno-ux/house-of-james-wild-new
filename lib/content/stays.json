@@ -19680,9 +19680,9 @@
      "couples",
      "small_groups"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "safaris",

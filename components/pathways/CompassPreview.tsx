@@ -85,9 +85,9 @@ export default function CompassPreview({ records: given, recordsUrl, live = fals
           </div>
 
           {out.handoff && (live && dialogueLine("iggi.handoff.crux") ? (
-            <IggiLine line={dialogueLine("iggi.handoff.crux")} className="mt-4"><a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></IggiLine>
+            <IggiLine line={dialogueLine("iggi.handoff.crux")} className="mt-4"><a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Go to the safari desk <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></IggiLine>
           ) : (
-            <p className="mt-4 border-l-2 border-crimson pl-4 text-[14.5px]"><span className="ledger-eyebrow ledger-crimson block mb-1">Safari reading</span>{out.handoff.line} <a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Ask Crux <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></p>
+            <p className="mt-4 border-l-2 border-crimson pl-4 text-[14.5px]"><span className="ledger-eyebrow ledger-crimson block mb-1">Safari reading</span>{out.handoff.line} <a href={out.handoff.href} className="underline underline-offset-2 hover:text-crimson">Go to the safari desk <ArrowRight className="inline w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></a></p>
           ))}
 
           {loading && <p className="mt-6 text-[15px] ledger-muted" aria-live="polite">Iggi is opening the Ledger…</p>}

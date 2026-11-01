@@ -159,7 +159,7 @@ export function readPathways(reading: Reading, records: Record_[], opts: { inclu
 
   // A reading that is only "wildlife" is a safari reading: Crux's territory.
   const safariOnly = wanted.length > 0 && wanted.every((p) => p === "PATH-04");
-  const handoff = safariOnly ? { to: "crux" as const, href: CRUX_HREF, line: "A pure safari reading belongs with Crux at Wild & Co Safaris, who knows every camp by reserve. The Ledger's safari stays are listed below for context." } : null;
+  const handoff = safariOnly ? { to: "crux" as const, href: CRUX_HREF, line: "A pure safari reading belongs with the house's safari desk, Wild & Co Safaris, who know every camp by reserve. The Ledger's safari stays are listed below for context." } : null;
 
   const parts = [
     wanted.length ? `drawn to ${wanted.map((p) => PATHWAY_NAMES[p]).join(" and ")}` : "open to any setting",

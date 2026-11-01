@@ -55,6 +55,7 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
       geo: { "@type": "GeoCoordinates", latitude: g.geo.lat, longitude: g.geo.lng },
       containedInPlace: parent ? { "@id": absoluteUrl(parent.id), name: parent.name } : { "@type": "Country", name: g.name },
       ...(stays.length ? { containsPlace: stays.map((s) => ({ "@id": absoluteUrl(`/stays/${s.slug}#stay`), name: s.name })) } : {}),
+      ...(g.ledgerId ? { identifier: { "@type": "PropertyValue", propertyID: "Ledger ID", value: g.ledgerId } } : {}),
       touristType: g.suits.map((s) => s.who),
       includesAttraction: g.highlights.map((h) => ({ "@type": "TouristAttraction", name: h.title, description: h.body })),
       image: slides.map((s) => s.url),

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { GUIDES, placeGuides, placeGuideForStay } from "../lib/content/guides.ts";
+import { GUIDES, LIBRARY_PLACES, placeGuides, placeGuideForStay } from "../lib/content/guides.ts";
 import { isBuilt } from "../lib/routes.ts";
 import { readFileSync } from "node:fs";
 
@@ -59,4 +59,20 @@ test("Rapa Nui's pins fall inside its inset and Rapa Nui is labelled on the regi
   const s = stayBySlug("nayara-hangaroa")!;
   assert.ok(s.coords!.lng > r.bounds.w && s.coords!.lng < r.bounds.e && s.coords!.lat > r.bounds.s && s.coords!.lat < r.bounds.n);
   assert.ok(REGION_LIB["south-america"].labels.areas.some((a) => a.text === "Rapa Nui"));
+});
+
+// Destination-first (Stage 2): library places (Destination records with a parent) are never
+// exported as countries, always sit under a live country, and their selected stays are filed
+// under that same country.
+test("library places are never countries and always have a live parent", () => {
+  for (const p of LIBRARY_PLACES) {
+    assert.ok(!COUNTRIES.some((c) => c.slug === p.slug), `${p.slug}: a place was exported as a country`);
+    assert.ok(COUNTRIES.some((c) => c.slug === p.parentSlug), `${p.slug}: parent ${p.parentSlug} is not a library country`);
+    if (p.ledgerId) assert.match(p.ledgerId, /^DST-\d{4}-\d{6}$/);
+    for (const slug of p.stays) {
+      const s = STAYS.find((x) => x.slug === slug);
+      assert.ok(s, `${p.slug}: ${slug} is not in the stays export`);
+      assert.equal(s!.countrySlug, p.parentSlug, `${p.slug}: ${slug} is filed under ${s!.countrySlug}`);
+    }
+  }
 });

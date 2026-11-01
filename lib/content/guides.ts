@@ -1,4 +1,5 @@
 import type { TripImg } from "./trips";
+import PLACES from "./places-library.json" with { type: "json" };
 
 // Destination guides: search-led pages for places people look up by name
 // ("Raja Ampat travel guide", "best time to visit Komodo"). Facts are sourced
@@ -19,6 +20,8 @@ export type Guide = {
   slug: string; region: string; country: string;
   /** The guide this one sits inside (Raja Ampat → indonesia), or a library country slug (Rapa Nui → chile). */
   parent?: string;
+  /** Permanent Ledger ID (DST-…), issued by the library once the place has its own Destination record. */
+  ledgerId?: string | null;
   name: string; path: string;
   /** Page chrome: "sea" is the voyage navy the Indonesia guides use; "stays" is Volume I's green. Defaults to "sea". */
   theme?: "sea" | "stays";
@@ -357,6 +360,20 @@ export const GUIDES: Record<string, Guide> = {
     ],
   },
 };
+
+// Destination-first (Stage 2): the library's own place records (scripts/export-places.py) carry the
+// Ledger ID, the parent and the stays selected through Stay Studio. They are merged onto the editorial
+// guide here, library first, so a place's identity and relationships come from the library and its
+// copy from this file. A library place with no guide yet is listed in LIBRARY_PLACES for the tests
+// and llms.txt, but has no page until its guide is written.
+export type LibraryPlace = { slug: string; name: string; ledgerId: string | null; parentSlug: string; regionSlug: string | null; subtitle: string | null; stays: string[] };
+export const LIBRARY_PLACES: LibraryPlace[] = (PLACES as { places: LibraryPlace[] }).places;
+for (const p of LIBRARY_PLACES) {
+  const g = GUIDES[p.slug];
+  if (!g || g.parent !== p.parentSlug) continue;
+  g.ledgerId = p.ledgerId ?? g.ledgerId ?? null;
+  g.stays = [...new Set([...(p.stays ?? []), ...(g.stays ?? [])])];
+}
 
 export const guideFor = (slug: string) => GUIDES[slug];
 export const placeGuides = (country: string) => Object.values(GUIDES).filter((g) => g.parent === country);

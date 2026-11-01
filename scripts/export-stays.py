@@ -164,6 +164,8 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "pathway": pathway_of(s), "volumes": volumes_of(s),
         # Stage 5 (Last Mile): ArrivalHub record ids this stay's airport text maps to (approved hubs resolve on the page).
         "arrivalHubIds": [str(x) for x in (s.get("arrival_hub_ids") or [])],
+        # Destination-first (Stage 2): the place (a Destination with a parent) this stay is selected for.
+        "placeSlug": (D.get(s.get("destination_place_id")) or {}).get("webflow_slug"),
     })
 for x in out: x.update(FIX.get(x["slug"], {}))
 for x in out:

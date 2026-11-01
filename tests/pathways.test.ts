@@ -179,3 +179,15 @@ test("pathway-apply batch: valid ids, pathway ids and snake_case settings only",
     for (const s of (r.secondary_pathways as string[] | undefined) ?? []) assert.ok(PATHWAYS[s as keyof typeof PATHWAYS], `${r.slug}: ${s}`);
   }
 });
+
+test("workflows parse as YAML (a bad file fails at startup with no log)", () => {
+  // No YAML parser in the test runner: catch the one shape that bit us, an unquoted
+  // `key: value` colon inside a plain-scalar `run:` line.
+  for (const f of ["pathway-apply.yml", "library-sync.yml"]) {
+    const y = readFileSync(new URL(`../.github/workflows/${f}`, import.meta.url), "utf8");
+    for (const line of y.split("\n")) {
+      const m = line.match(/^\s*run:\s+(\S.*)$/);
+      if (m && m[1] !== "|" && /:\s/.test(m[1])) assert.fail(`${f}: unquoted colon in plain-scalar run line: ${line.trim()}`);
+    }
+  }
+});

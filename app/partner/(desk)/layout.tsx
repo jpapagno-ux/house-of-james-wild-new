@@ -1,6 +1,5 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import SiteFooter from "@/components/ledger/SiteFooter";
 import Rail, { type RailItem } from "@/components/platform/Rail";
 import OrgSwitcher from "@/components/platform/OrgSwitcher";
 import { loadDesk } from "@/lib/platform/membership";
@@ -57,7 +56,6 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
           <div className="pt-6 md:pt-0 min-w-0">{children}</div>
         </div>
       </main>
-      <SiteFooter tone="linen" />
     </>
   );
 }

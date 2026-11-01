@@ -43,7 +43,7 @@ export function Section({ title, aside, children, id }: { title: string; aside?:
 }
 
 export function Panel({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`bg-paper-card border ledger-border p-5 md:p-6 ${className}`}>{children}</div>;
+  return <div className={`min-w-0 bg-paper-card border ledger-border p-5 md:p-6 ${className}`}>{children}</div>;
 }
 
 /** Definition list for record facts: label left, value right; stacks on phones. */
@@ -83,7 +83,7 @@ export function Empty({ title, children }: { title: string; children?: React.Rea
 export function HealthRing({ score, size = 96 }: { score: number; size?: number }) {
   const r = 42, c = 2 * Math.PI * r, off = c * (1 - Math.max(0, Math.min(100, score)) / 100);
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" role="img" aria-label={`Portfolio Health ${score}%`}>
+    <svg width={size} height={size} viewBox="0 0 100 100" className="shrink-0" role="img" aria-label={`Portfolio Health ${score}%`}>
       <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(45,42,38,0.12)" strokeWidth="5" />
       <circle cx="50" cy="50" r={r} fill="none" stroke="var(--jw-accent-hex)" strokeWidth="5" strokeDasharray={c} strokeDashoffset={off} strokeLinecap="butt" transform="rotate(-90 50 50)" />
       <text x="50" y="56" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="26" fill="#2D2A26">{score}%</text>

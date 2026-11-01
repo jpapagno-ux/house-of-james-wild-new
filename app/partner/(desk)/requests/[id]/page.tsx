@@ -31,7 +31,7 @@ export default async function RequestPage({ params }: { params: Promise<{ id: st
     <div>
       <p className="text-[13px] ledger-muted"><Link href="/partner/requests" className="hover:underline underline-offset-2">Requests</Link> / {r.reference}</p>
       <PageHead eyebrow={`${REQUEST_TYPE[r.request_type]} request`} title={r.requested_item} lead={<StatusPill {...REQUEST_STATUS[r.status]} />} />
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1fr]">
+      <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1fr]">
         <div>
           <DataList rows={[
             ["For", entity ? <Link key="e" href={`/partner/portfolio/${entity.legacy_cms_id}`} className="underline underline-offset-2">{entity.name}</Link> : desk.org.name],

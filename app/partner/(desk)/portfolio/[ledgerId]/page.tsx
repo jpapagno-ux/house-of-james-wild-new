@@ -50,7 +50,7 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
         <div className="mt-6"><Notice tone="attention" title="Drafted from public sources">The house drafted this entry from your own website. It stays off the public site until you confirm the facts; see the open request below.</Notice></div>
       )}
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1.25fr_1fr]">
+      <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-[1.25fr_1fr]">
         <div>
           <DataList rows={[
             ["Ledger ID", <LedgerId key="l" id={e.legacy_cms_id} />],
@@ -110,7 +110,7 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
       </Section>
 
       {canSubmit && (
-        <div className="grid gap-x-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
           <Section title="Propose a change">
             <p className="mb-4 text-[14px] ledger-muted">Changes go to the house for approval. Rooms, rates, offers and full content editing arrive in Stage 2.</p>
             <ProposeChange propertyId={e.id} fields={(["name", "category", "country", "region", "timezone"] as const).map((k) => ({ key: k, label: FIELD_LABEL[k], current: (e[k] as string | null) ?? null }))} />

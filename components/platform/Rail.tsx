@@ -49,7 +49,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
         <ul className="mt-2">
           {later.map((i) => (
             <li key={i.label} className="flex items-center justify-between gap-3 py-1.5 pl-3 text-[13.5px] ledger-muted">
-              <span>{i.label}</span><span className="text-[10px] tracking-[0.14em] uppercase">{i.soon}</span>
+              <span>{i.label}</span><span className="shrink-0 whitespace-nowrap text-[10px] tracking-[0.14em] uppercase">{i.soon}</span>
             </li>
           ))}
         </ul>

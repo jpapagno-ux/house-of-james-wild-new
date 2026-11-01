@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import SiteFooter from "@/components/ledger/SiteFooter";
 import { PARTNER_DESK } from "@/lib/platform/flags";
 
 // /desk/*: the house's side of the Partner Desk (James Wild & Co editors only).
@@ -17,7 +16,6 @@ export default function HouseDeskLayout({ children }: { children: React.ReactNod
     <>
       <SiteHeader />
       <main id="main" className="pt-8 md:pt-12 pb-20"><div className="max-w-ledger mx-auto px-5 md:px-10">{children}</div></main>
-      <SiteFooter tone="linen" />
     </>
   );
 }

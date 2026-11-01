@@ -40,7 +40,7 @@ export default async function Overview() {
       <PageHead eyebrow={viewing ? "Overview · viewing as James Wild & Co" : "Overview"} title={desk.org.name}
         lead={<>What the house holds for you, what it has asked for, and what is waiting for review. Nothing you send changes the website until James Wild &amp; Co approves it.</>} />
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.15fr]">
+      <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.15fr]">
         <Panel>
           <p className="ledger-eyebrow">Portfolio Health</p>
           <div className="mt-3 flex items-center gap-6">
@@ -80,7 +80,7 @@ export default async function Overview() {
         </ul>
       </Section>
 
-      <div className="grid gap-x-8 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
         <Section title="Updates awaiting review" aside={<TextLink href="/partner/submissions">All updates</TextLink>}>
           {awaiting.length === 0 ? <Empty title="Nothing waiting">Answer a request or propose a change from any entry in your portfolio.</Empty> : (
             <ul className="divide-y divide-ink/10 border-y ledger-border">
@@ -108,7 +108,7 @@ export default async function Overview() {
         </Section>
       </div>
 
-      <div className="grid gap-x-8 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
         <Section title="Media & Reels"><Empty title="The Media Library opens soon">Until then, answer media requests with links to originals. Vertical 9:16 and landscape 16:9, 8–20 seconds, no logos.</Empty></Section>
         <Section title="Partner Dispatch"><Empty title="No dispatches yet">The house&rsquo;s notes to partners will appear here.</Empty></Section>
       </div>

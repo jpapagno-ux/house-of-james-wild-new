@@ -17,7 +17,7 @@ export default async function Account({ searchParams }: { searchParams: Promise<
     <div>
       <PageHead eyebrow="Account" title="You and your company" />
       {sp.welcome && <div className="mt-6"><Notice tone="good" title="Welcome to the desk">Choose a password below so you can sign in directly next time.</Notice></div>}
-      <div className="grid gap-x-10 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-10 lg:grid-cols-2">
         <Section title="You">
           <DataList rows={[["Email", desk.user.email ?? "—"], ["Role", desk.membership ? ROLE_LABEL[desk.membership.role] : "James Wild & Co"]]} />
           <div className="mt-6"><ProfileForm initial={{ firstName: me?.first_name ?? "", lastName: me?.last_name ?? "", phone: me?.phone ?? "" }} /></div>

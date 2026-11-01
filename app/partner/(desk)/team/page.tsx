@@ -53,7 +53,7 @@ export default async function Team() {
       </Section>
 
       {manage && (
-        <div className="grid gap-x-8 lg:grid-cols-[1.2fr_1fr]">
+        <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-[1.2fr_1fr]">
           <Section title="Invite someone">
             <InviteForm entities={entities.map((e) => ({ id: e.id, name: e.name }))} />
             <dl className="mt-6 grid gap-2 text-[13.5px]">{Object.entries(ROLE_LINE).map(([k, v]) => <div key={k}><dt className="font-medium inline">{ROLE_LABEL[k]}: </dt><dd className="inline ledger-muted">{v}</dd></div>)}</dl>

@@ -77,7 +77,7 @@ A sensible shape:
 
 Some people prefer the savannah first and the gorillas last. Either works. What does not work is trying to do Akagera in a single night.
 
-For the Volcanoes we use Wilderness Bisate Reserve or Wilderness Sabyinyo, Singita Kwitonda Lodge, or One&Only Gorilla's Nest. Which one depends on how you like to stay, and whether you want the same company on both legs of the trip.
+For the Volcanoes we use Wilderness Bisate Reserve or Wilderness Sabyinyo, Singita Kwitonda Lodge, or One&Only Gorilla's Nest. Which one depends on how you like to stay, and whether you want the same company on both legs of the trip. For the Kigali nights we use Hemingways Retreat Kigali, a 20-room, solar-powered hotel in Kiyovu, about 20 minutes from the airport.
 
 ## When should you go?
 

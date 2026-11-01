@@ -11064,6 +11064,123 @@
    "placeSlug": null
   },
   {
+   "slug": "expedition-blue-lagoon",
+   "name": "Expedition Blue Lagoon",
+   "ledgerId": "STY-2026-000558",
+   "country": "Madagascar",
+   "countrySlug": "madagascar",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A seasonal boat, kayak and snorkel expedition to Cap Masoala, run exclusively for two to four guests",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/expedition-blue-lagoon/g10"
+   ],
+   "bestMonths": "September to early January",
+   "bestMonthsNote": "A seasonal expedition: it operates from September through to early January because of local weather, and does not run the rest of the year. Departures are on Sundays for the 10-night expedition and Wednesdays for the 11-night expedition. Humpback whales are sometimes seen in season.",
+   "bestFor": [
+    "adventure",
+    "couples",
+    "group_exclusive_use",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Maroantsetra (WMN)",
+   "airportDirections": "A private charter flight of about 90 minutes from Antananarivo to Maroantsetra, then by boat via Nosy Mangabe to Masoala Forest Lodge. Cap Masoala is reached only by boat from Masoala Forest Lodge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The expedition begins and ends at Masoala Forest Lodge, whose seven tented rooms are raised on stilted decks in the forest canopy above the beach. At Cap Masoala the base camp is Crusoe's Cabin, a timber cabin with running water and a flush toilet, built from 2018. On some expeditions nights are spent camping out on Nosy Behento, Nosy Nepato and other islets in light nylon dome tents with safari showers and short-drop toilets. Simple food, fresh air and midday siestas in shady hammocks set the pace."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Exploring the Blue Lagoon, its beaches, fringing reefs and offshore islets by kayak and outrigger pirogue, snorkelling the coves and a secret spot off Nosy Behento, and walking to old colonial lighthouses for sundowners. At Masoala Forest Lodge the itinerary adds primary rainforest walks for red ruffed lemurs and helmet vangas, night walks for lemurs, kayaking to the sacred island of Nosy Ndraindra, a village walk among rice, cinnamon, clove and vanilla, the Tampolo Cascades, snorkelling at Antalavia and a visit to Nosy Mangabe for leaf-tailed geckos and Brookesia chameleons. Humpback whales are sometimes seen in season."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Cap Masoala is the very tip of the Masoala Peninsula in northeastern Madagascar, beside Masoala National Park. Between some 15km of protective reef and 10km of white beaches lies a lagoon of about 1,500ha. A small rural population lives here largely from the sea, with a coastal trading boat calling every fortnight, and over 20 years has accepted Wild Expeditions and its guests as part of the community. Wild Expeditions bans single-use plastic in its Madagascar operation and uses solar power where possible."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Kilometres of white beaches and a reef-sheltered lagoon where, as Wild Expeditions puts it, the closest fellow tourist is at least 40km away."
+   ],
+   "why": [
+    {
+     "title": "A Lagoon With No One Else There",
+     "body": "Best for adventurous couples and small private groups of up to four who want reef, rainforest and lemurs far from other travellers, and are happy with a cabin and dome tents."
+    }
+   ],
+   "facts": {
+    "best_months": "September to early January only.",
+    "how_to_get_there": "Charter from Antananarivo to Maroantsetra, then boat only.",
+    "signature_experiences": "Kayak and pirogue on the Blue Lagoon, reef snorkelling and lemur night walks.",
+    "who_its_for": "Adventurous couples and private groups of two to four."
+   },
+   "faqs": [
+    {
+     "q": "Where is Expedition Blue Lagoon?",
+     "a": "At Cap Masoala, the tip of the Masoala Peninsula in northeastern Madagascar, reached from Wild Expeditions' Masoala Forest Lodge."
+    },
+    {
+     "q": "How do you get to Expedition Blue Lagoon?",
+     "a": "Fly about 90 minutes by charter from Antananarivo to Maroantsetra, take the boat to Masoala Forest Lodge, then continue by expedition boat to Cap Masoala. Access is only by boat."
+    },
+    {
+     "q": "Where do you sleep on Expedition Blue Lagoon?",
+     "a": "At Masoala Forest Lodge (seven tented rooms on stilted decks) at the start and end, and at Crusoe's Cabin, a timber cabin at Cap Masoala; some expeditions camp on islets in light nylon dome tents. It runs exclusively for 2 to 4 guests."
+    },
+    {
+     "q": "Can children join Expedition Blue Lagoon?",
+     "a": "Child rates apply under 16, but Wild Expeditions says it is not suitable for infants or very young children; ask for age-appropriate advice."
+    },
+    {
+     "q": "When does Expedition Blue Lagoon run?",
+     "a": "September to early January, because of local weather. Departures are Sundays (10 nights) and Wednesdays (11 nights)."
+    },
+    {
+     "q": "What do you do on Expedition Blue Lagoon?",
+     "a": "Kayaking, outrigger pirogue trips, snorkelling, beach walks and lighthouse sundowners on the lagoon, with rainforest and night walks for lemurs at Masoala."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "explora-el-calafate",
    "name": "Explora \n El Calafate",
    "ledgerId": "STY-2026-000088",
@@ -22611,77 +22728,85 @@
    "category": "hotel",
    "tagline": "Canopy treehouses where primary rainforest yields directly to coral-shelved ocean",
    "quote": "Wake to birdsong in the treetops, fall asleep to the sound of surf on a deserted beach.",
-   "hero": "https://www.masoalaforestlodge.com/wp-content/uploads/2016/10/gallery-community.jpg",
-   "gallery": [],
-   "bestMonths": "May – December",
-   "bestMonthsNote": "The dry season from May through December offers the best combination of wildlife sightings, calm seas, comfortable hiking conditions, and whale migration season between July and September. Rainforest conditions remain lush year-round, but these months provide the most accessible exploration opportunities.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g1",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/masoala-forest-lodge/g6"
+   ],
+   "bestMonths": "Late April to early January",
+   "bestMonthsNote": "Open late April to early January. October to December is driest; humpback whales July to September; closed early January to mid-April.",
    "bestFor": [
     "honeymoon",
     "adventure",
-    "luxury",
     "solo",
     "wildlife_photography"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -15.7057,
-    "lng": 50.2306
+    "lat": -15.4378,
+    "lng": 49.6891
    },
    "airport": "Maroantsetra Airport (WMN), Ivato International Airport, Antananarivo (TNR)",
-   "airportDirections": "Most guests arrive via Antananarivo (TNR), followed by a charter flight to Maroantsetra (WMN), then a 40-minute road transfer and approximately 2-hour boat journey to the lodge. (Classic Portfolio)",
+   "airportDirections": "Scheduled charter from Antananarivo to Maroantsetra on Sundays and Wednesdays (about 90 minutes), then 40 km by lodge boat via Nosy Mangabe.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Primary lowland rainforest meets a coral-shelved bay on the Masoala Peninsula",
-     "Elevated palm-thatched treehouses above the forest floor, plus beachfront rooms",
-     "Solar-powered, small-scale, and deliberately simple by design",
-     "Candlelit dinners on the beach and endemic wildlife in the canopy"
+     "Primary lowland rainforest meets a sheltered, coral-rich bay on the Masoala Peninsula",
+     "Seven palm-thatched treehouses on stilted wooden platforms, with a few metres of beach between each and the sea",
+     "A maximum of 14 guests, reached only on foot or by boat",
+     "A central beach house for lunch and dinner, and a sea deck for breakfast and afternoon tea"
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Guided rainforest walks for endemic lemurs and canopy birds",
-     "Night walks for chameleons and nocturnal frogs",
-     "Snorkeling and short kayak outings on a coral-rich bay",
-     "Seasonal humpback whale-watching in Antongil Bay (Jul-Sep)"
-    ]
+    "paras": [
+     "Your journey begins with a domestic flight to Maroantsetra followed by a motorboat crossing of Antongil Bay, a World Heritage area and important humpback whale breeding ground. The crossing sets the tone: ocean travel, the sense of arriving somewhere uncompromised, and immediate access to water-based exploration.",
+     "On site, guided rainforest walks trace game trails for birds, endemic lemurs and other canopy species. Night walks reveal nocturnal frogs and chameleons. Offshore, snorkeling and short kayak outings put coral gardens and reef fish within easy reach, and seasonal whale-watching trips leave directly from the lodge’s bay. Guides tailor each day to sightings and conditions, so activities feel handcrafted rather than prepackaged."
+    ],
+    "items": []
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Private rainforest reserve within Masoala National Park",
-     "Solar power and low-impact, septic-protected design",
-     "Organic, locally sourced meals",
+    "paras": [
+     "An 85 hectare private rainforest reserve bordering Masoala National Park, with seven marked trails",
+     "Solar power and low-impact design, with single-use plastic banned in the Madagascar operation",
+     "Natural history library, sea deck and massage tent",
      "Small-group naturalist guiding"
-    ]
+    ],
+    "items": []
    },
-   "onlyHere": [],
+   "onlyHere": [
+    "Wake in a treehouse with your feet almost in the water, snorkel the reef in front of camp",
+    "Explore the private reserve's marked trails on your own, a privilege not found in Madagascar's national parks",
+    "Nightly walks for nocturnal lemurs, with the aye-aye seen regularly",
+    "Boat arrival across Antongil Bay, a World Heritage Site and humpback whale breeding ground"
+   ],
    "why": [
     {
-     "title": null,
-     "body": "RAINFOREST MEETS OCEAN Masoala is one of the rare places where primary rainforest and coral-rich ocean meet within a single day’s exploration. You can begin a morning tracking canopy wildlife and finish the afternoon snorkeling a reef, all without lengthy transfers."
+     "title": "Rainforest meets ocean",
+     "body": "The Masoala Peninsula holds Madagascar's largest remaining tract of lowland rainforest, and at the lodge the forest comes down to a sheltered beach on the Tampolo Marine Reserve. A morning in the canopy with red ruffed lemurs and helmet vangas can end snorkelling right in front of camp."
     },
     {
-     "title": null,
-     "body": "BAREFOOT SECLUSION Accommodations favor quiet immersion over ostentation: palm-thatched treehouses, discreet beachfront rooms, and walkways that put the forest and shore at your doorstep. Privacy and uncomplicated service let you slow down and tune to the place."
+     "title": "Barefoot seclusion",
+     "body": "Seven palm-thatched treehouses, a maximum of 14 guests and access only on foot or by boat keep the lodge quiet and unhurried."
     },
     {
-     "title": null,
-     "body": "CONSERVATION AND LOCAL IMPACT The lodge sits within a private conservation reserve and partners with local communities and researchers. Guest stays contribute directly to habitat protection and field projects, and it is common to meet conservation staff during your visit."
+     "title": "Kayak roots, naturalist guiding",
+     "body": "The founders discovered Masoala on kayak expeditions in the late 1990s, and kayaking, pirogue sailing, forest walks and night walks remain at the heart of each stay."
     },
     {
-     "title": null,
-     "body": "NATURALIST GUIDING, SMALL GROUPS Local naturalist guides lead short, interpretive walks and boat trips that emphasize behavior and ecology rather than checklist tourism. Excursions are flexible, timed to tide, light and animal activity."
+     "title": "Wild sea access",
+     "body": "Snorkelling, kayaking and, from July to September, humpback whales in Antongil Bay are part of everyday life here rather than separate day trips."
     }
    ],
    "facts": {
-    "best_months": "June to October for drier weather and peak whale-watching; November to March is wetter and more tropical, with higher rainfall and possible cyclones.",
-    "how_to_get_there": "Fly to Maroantsetra, then take the lodge motorboat across Antongil Bay to the Masoala Peninsula. The boat transfer is the standard approach and is part of the journey experience.",
-    "who_its_for": "Travelers seeking intimate, nature-led stays: couples and honeymooners after seclusion and romance; active, adventurous guests who want rainforest trekking and snorkeling; lone travelers who value safety and small-group guiding; and wildlife photographers targeting endemic forest species and seasonal whales.",
-    "signature_experiences": "Guided canopy and lowland rainforest walks, night walks for nocturnal species, snorkeling and kayaking in a coral-rich bay, seasonal humpback whale-watching in Antongil Bay, and visits with conservation teams working on the Masoala Peninsula."
+    "best_months": "Open late April to early January. October to December is driest; humpback whales visit Antongil Bay July to September.",
+    "how_to_get_there": "Scheduled charter from Antananarivo to Maroantsetra on Sundays and Wednesdays, then 40 km by lodge boat across Antongil Bay via Nosy Mangabe.",
+    "signature_experiences": "Guided canopy and lowland rainforest walks, night walks for nocturnal species, snorkeling and kayaking in a coral-rich bay, seasonal humpback whale-watching in Antongil Bay, and visits with conservation teams working on the Masoala Peninsula.",
+    "who_its_for": "Travelers seeking intimate, nature-led stays: couples and honeymooners after seclusion and romance; active, adventurous guests who want rainforest trekking and snorkeling; lone travelers who value safety and small-group guiding; and wildlife photographers targeting endemic forest species and seasonal whales."
    },
    "faqs": [
     {
@@ -22690,11 +22815,11 @@
     },
     {
      "q": "How many rooms does Masoala Forest Lodge have?",
-     "a": "The lodge has seven elevated palm-thatched treehouses plus a small number of beachfront forest rooms, keeping the overall accommodation offering intentionally small-scale."
+     "a": "The lodge has seven palm-thatched treehouses on stilted wooden platforms, each a few metres from the sea, and takes a maximum of 14 guests, keeping it intentionally small-scale."
     },
     {
      "q": "What is the best time to visit Masoala Forest Lodge?",
-     "a": "The drier months from June to October are generally best for hiking and for whale watching; the austral summer and rainy season from November to March brings heavier rains and increased tropical activity but can include occasional cyclones."
+     "a": "The lodge is open from late April to early January. October to December is the driest period, humpback whales visit Antongil Bay from July to September, and the lodge closes from early January to mid-April."
     },
     {
      "q": "Is Masoala Forest Lodge good for families?",
@@ -22702,7 +22827,7 @@
     },
     {
      "q": "How do you get to Masoala Forest Lodge?",
-     "a": "Most journeys begin with a flight to Maroantsetra, followed by a motorboat crossing of Antongil Bay to the Masoala Peninsula, a voyage that brings you directly to the lodge’s bay."
+     "a": "By scheduled charter flight from Antananarivo to Maroantsetra on Sundays and Wednesdays (about 90 minutes), then 40 km by lodge boat across Antongil Bay via Nosy Mangabe, landing directly on the lodge's beach."
     },
     {
      "q": "What wildlife might I see at Masoala Forest Lodge?",
@@ -22720,7 +22845,8 @@
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-01"
+     "PATH-01",
+     "PATH-06"
     ],
     "setting": "masoala",
     "intentions": [],
@@ -23283,74 +23409,120 @@
    "regionSlug": "africa",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "Ultimate private island, wild luxury, Madagascar magic",
+   "tagline": "A private island off Madagascar's northeast coast, reached only by helicopter.",
    "quote": "Wake to turquoise seas, walk wild beaches, and explore a world of rare lemurs and coral reefs",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f62c5a54_56cc8cc34_682e7a72738f9780836d6187_Miavana_20Piazza_2016.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f8107d3f6_1b5c5b473_69aacd2adaf5e4d1215fe106_Miavana_Rooms__Lifestyle_Villa__C2_A9_Oliver_Fly_Photog.",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ad3a59cdf_f71b35697_69aacd2a8cf80296ce7257d8_Miavana_Rooms__Lifestyle_Villa__C2_A9_Oliver_Fly_Photog.",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/32a458f0a_de2cafc02_69aacd2ad365da29eda48ee2_Miavana_Rooms__Lifestyle_Villa__C2_A9_Oliver_Fly_Photog.",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0d8704a9b_cdade90d6_69aacc84eab582206fa77ec0_Miavana_Rooms__Lifestyle_Villa__C2_A9_Oliver_Fly_Photog.",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b1e31ca02_3aeef4536_69aacc1395ea329e80279550_Miavana_Rooms__Lifestyle_Villa__C2_A9_Oliver_Fly_Photog."
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/miavana-by-time-tide/g9"
    ],
-   "bestMonths": "April to November",
-   "bestMonthsNote": "April to November for dry season, clear waters, best diving and whale watching. December to March is rainy and less accessible.",
-   "bestFor": [],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Whales July to September, kiteboarding May to October, diving November to April, turtles nest December and hatch April.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "couples",
+    "adventure",
+    "conservation",
+    "group_exclusive_use"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -13.1589,
     "lng": 49.9794
    },
-   "airport": "Diego Suarez (Antsiranana) Airport (DIE)",
-   "airportDirections": "Arrive Diego Suarez Airport, then 30 minute helicopter transfer to Nosy Ankao. Private charters available.",
+   "airport": "Diego Suarez (DIE) or Nosy Be (NOS)",
+   "airportDirections": "Helicopter transfer from Diego Suarez or Nosy Be, arranged by Miavana.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Fourteen ultra-luxury beachfront villas, each with a private pool, lounge, direct beach access, and panoramic Indian Ocean views. Main village with dining, bar, rooftop terrace, infinity pool, and Explorers’ Center."
+     "Thirteen ocean-front villas: seven one-bedroom, four two-bedroom and two three-bedroom. Each villa has a private pool, open-plan lounge, indoor and outdoor dining areas, a study that converts to a children's bedroom, private butler service and an electric buggy.",
+     "The Piazza holds the restaurant and lounge, Toulou's Bar and wine cellar, an infinity pool overlooking the ocean, the Boutique and the Cabinet de Curiosities, with the Activities Centre and gym close by."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkeling and scuba diving",
+     "Snorkelling and scuba diving",
      "Lemur trekking",
-     "Whale watching (seasonal)",
+     "Whale watching (July to September)",
      "Blue safaris",
-     "Kite surfing",
+     "Kiteboarding",
      "Fishing",
-     "Private picnics",
+     "Mangrove cruises",
      "Helicopter excursions",
-     "Turtle tracking",
-     "Beach biking",
-     "Spa and wellness"
+     "Turtle monitoring",
+     "Bicycling and quad biking",
+     "Spa treatments and yoga"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private butler and chef",
-     "Unspoiled white-sand beaches",
-     "Exclusive marine reserve",
+     "Private butler service",
+     "Chefs on standby for in-villa dining at any hour",
+     "A 15,000 hectare marine protected area",
      "Guided forest and reef exploration",
      "Family and honeymoon friendly",
-     "Eco conscious and community minded",
+     "Conservation and community at its core",
      "Infinity pool"
     ]
    },
    "onlyHere": [
-    "Miavana is for adventure seekers, couples, families, honeymooners, and solo travelers seeking barefoot luxury, wild ocean and forest experiences, and true island exclusivity on Madagascar’s most remote coast."
+    "Miavana suits adventurous couples, families, honeymooners and private groups who want barefoot luxury, wild ocean and forest experiences, and a whole island in a remote archipelago that can only be reached by helicopter."
    ],
    "why": [
     {
      "title": "Where Wild Island Dreams Come True",
-     "body": "Miavana is perfect for anyone seeking ultimate privacy, marine adventure, and conservation impact. Best for honeymooners, families, adventure couples, and luxury seekers who want the rare and the wild."
+     "body": "Miavana brings together privacy, marine adventure and conservation, with Time + Tide's turtle monitoring and lemur work woven into island life. It suits honeymooners, families, adventurous couples and groups who want the rare and the wild."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Open year round: whales July to September, kiteboarding May to October, diving November to April.",
+    "how_to_get_there": "Helicopter transfer from Diego Suarez or Nosy Be to Nosy Ankao, the only way onto the island.",
+    "signature_experiences": "Scuba diving, kiteboarding, crowned lemur treks, blue safaris, fishing, turtle monitoring and helicopter excursions.",
+    "who_its_for": "Families, honeymooners, couples and private groups who want a whole island with sea and forest adventure."
+   },
+   "faqs": [
+    {
+     "q": "Where is Miavana?",
+     "a": "Miavana is on Nosy Ankao, the largest of five islands in a remote archipelago off the northeastern coast of Madagascar. The private island is around 10 square kilometres and is run by Time + Tide."
+    },
+    {
+     "q": "How do you get to Miavana?",
+     "a": "By helicopter only: a helicopter transfer from Diego Suarez or Nosy Be is the only way onto the island. Time + Tide also offers a seven-night Private Jet Package with return private jet flights from Johannesburg to Diego Suarez (minimum five adults)."
+    },
+    {
+     "q": "When is the best time to visit Miavana?",
+     "a": "Miavana is open year round. Humpback whales pass from July to September, kiteboarding is best from May to October, diving is best from November to April, and turtles nest in December with hatchlings in April."
+    },
+    {
+     "q": "What villas does Miavana have?",
+     "a": "Miavana has 13 ocean-front villas: 7 one-bedroom, 4 two-bedroom and 2 three-bedroom, each with a private pool, direct beach access and private butler service. The whole island can be booked for exclusive use by up to 42 guests."
+    },
+    {
+     "q": "Is Miavana good for children?",
+     "a": "Yes, all ages are welcome. Each villa has a study that converts to a children's bedroom, and the team builds a personalised adventure programme for children, from lemur tracking and turtle walks to crafts and guided quad biking."
+    },
+    {
+     "q": "What are the signature experiences at Miavana?",
+     "a": "Scuba diving with a PADI-certified dive centre, kiteboarding, lemur trekking for the island's crowned lemurs, blue safaris for dolphins and whales, fishing, turtle monitoring and helicopter excursions to places such as Ankarana and the Tsingy Rouge."
+    },
+    {
+     "q": "Who is Miavana best for?",
+     "a": "Families, honeymooners and couples, active travelers drawn to the sea, and groups who want a private island entirely to themselves."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -24712,8 +24884,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -23.8523,
-    "lng": -68.2439
+    "lat": -22.888,
+    "lng": -68.212
    },
    "airport": "El Loa Airport (CJC) , Calama, Chile",
    "airportDirections": "Approx. 1.5–2 hours drive from El Loa Airport (Calama) via desert highway transfer to San Pedro de Atacama region; private shuttle transfers commonly arranged by the lodge.",
@@ -41021,6 +41193,121 @@
    "placeSlug": null
   },
   {
+   "slug": "time-tide-tsara-komba",
+   "name": "Time + Tide Tsara Komba",
+   "ledgerId": "STY-2026-000557",
+   "country": "Madagascar",
+   "countrySlug": "madagascar",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eight ocean-view rooms and suites on the forested slopes of Nosy Komba",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/time-tide-tsara-komba/g10"
+   ],
+   "bestMonths": "Year-round",
+   "bestMonthsNote": "Open all year. Swimming with whale sharks and watching humpback whales from your terrace depend on the season; ask us for the best timing for each.",
+   "bestFor": [
+    "couples",
+    "family",
+    "adventure",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Nosy Be (NOS)",
+   "airportDirections": "A 20-minute boat transfer from Nosy Be to Nosy Komba. Transfers from Nosy Be Airport, Hell Ville Port or Ankify Port are arranged by road and boat.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight ocean-view rooms on the slopes of Nosy Komba: six Ocean View Rooms of 90sqm for up to three guests and two Ocean View Suites of 120sqm for up to four. Each has an en suite private bathroom, a private outdoor lounge area and terrace, double or twin beds, fans and linen mosquito nets. The main lodge has a dining area, lounge and outdoor relaxation spaces, with meals of Malagasy flavours made from fresh local ingredients. Wifi in the rooms is limited by design, to encourage time in nature."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "A forest-to-reef safari: lemur trekking in Lokobe National Park, guided walks in the island's forest in search of lemurs, chameleons and endemic species, scuba diving in the Nosy Be archipelago for all levels, snorkelling with turtles, stand-up paddle boarding and kayaking, sunset cruises through the mangroves, village tours, and private beach picnics or dinners. Depending on the season, guests can swim with whale sharks or watch humpback whales from their terrace. In-room spa treatments are available."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Nosy Komba is a forested island of volcanic origin off the northwest coast of Madagascar, about 25km2, a short boat ride from Nosy Be and a hub of the archipelago for snorkelling, diving and lemur trekking. The suites are built from natural materials. Time + Tide took on the lodge's established heritage and runs it on its values of sustainability, connection with local communities and conservation of the island's environment."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Forest and reef from the same doorstep: lemurs in the trees above the lodge, turtles in the water below, and village life on the island all around."
+   ],
+   "why": [
+    {
+     "title": "Forest to Reef on a Volcanic Island",
+     "body": "Best for couples and families with children of any age who want lemurs, snorkelling and diving in the Nosy Be archipelago from a small lodge of eight suites."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; whale sharks and humpback whales by season.",
+    "how_to_get_there": "Fly to Nosy Be, then a 20-minute boat transfer.",
+    "signature_experiences": "Lemur trekking in Lokobe, snorkelling with turtles and diving the Nosy Be archipelago.",
+    "who_its_for": "Couples and families with children of any age."
+   },
+   "faqs": [
+    {
+     "q": "Where is Time + Tide Tsara Komba?",
+     "a": "On the forested slopes of Nosy Komba, a small volcanic island in the Nosy Be archipelago off the northwest coast of Madagascar."
+    },
+    {
+     "q": "How do you get to Time + Tide Tsara Komba?",
+     "a": "Fly to Nosy Be, then take a 20-minute boat transfer to Nosy Komba."
+    },
+    {
+     "q": "How many rooms does Time + Tide Tsara Komba have?",
+     "a": "Eight: 6 Ocean View Rooms (90sqm, up to 3 guests) and 2 Ocean View Suites (120sqm, up to 4 guests), each with ocean views and a private terrace."
+    },
+    {
+     "q": "Can children stay at Time + Tide Tsara Komba?",
+     "a": "Yes. Time + Tide welcomes children of all ages."
+    },
+    {
+     "q": "When is the best time to visit Time + Tide Tsara Komba?",
+     "a": "The lodge is open all year. Whale shark swims and humpback whale sightings depend on the season."
+    },
+    {
+     "q": "What can you do at Time + Tide Tsara Komba?",
+     "a": "Lemur trekking in Lokobe National Park, forest walks, scuba diving, snorkelling with turtles, paddle boarding, kayaking, mangrove sunset cruises, village tours and private beach picnics."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": null
+   },
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "tokoriki-island-resort",
    "name": "Tokoriki Island Resort",
    "ledgerId": "STY-2026-000310",
@@ -43378,89 +43665,6 @@
    ],
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
-   ],
-   "placeSlug": null
-  },
-  {
-   "slug": "lales-camp-expeditions",
-   "name": "Lale’s Camp & Expeditions",
-   "ledgerId": "STY-2026-000329",
-   "country": "Madagascar",
-   "countrySlug": "madagascar",
-   "regionSlug": "africa",
-   "misfiled": "Library destination is South Africa; the property is in Masoala, Madagascar",
-   "category": "hotel",
-   "tagline": "Where Madagascar’s last great rainforest meets the Indian Ocean.",
-   "quote": "A barefoot sanctuary suspended between ancient rainforest and warm tropical sea.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/da6b14754_c2368f17c_6a063c3e0d62648b0390ff55_Lales-Camp-Banner-3-scaled.jpg",
-   "gallery": [],
-   "bestMonths": "May – December",
-   "bestMonthsNote": "The dry season from May through December offers the best combination of wildlife sightings, calm seas, comfortable hiking conditions, and whale migration season between July and September. Rainforest conditions remain lush year-round, but these months provide the most accessible exploration opportunities.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": -15.7057,
-    "lng": 50.2306
-   },
-   "airport": "Maroantsetra Airport (WMN), Ivato International Airport, Antananarivo (TNR)",
-   "airportDirections": "Most guests arrive via Antananarivo (TNR), followed by a charter flight to Maroantsetra (WMN), then a 40-minute road transfer and approximately 2-hour boat journey to the lodge. (Classic Portfolio)",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Luxury Safari Tents.Mobile Expedition Camps.Private Wilderness Suites.Remote Conservation Camps."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [
-     "Camel Safaris.Helicopter Expeditions.Walking Safaris.Samburu Cultural Encounters.Wildlife Tracking.Remote Fly Camping."
-    ],
-    "items": []
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Private expedition guiding",
-     "Luxury mobile safari setup",
-     "Remote Northern Kenya access",
-     "Conservation-led experiences",
-     "Authentic Samburu partnerships",
-     "Exclusive wilderness campsites",
-     "Personalized safari itineraries",
-     "Fire-side dining experiences"
-    ]
-   },
-   "onlyHere": [
-    "Lale’s Camp & Expeditions is built for travelers seeking a deeper kind of safari , one shaped by movement, storytelling, conservation, and connection to Kenya’s northern wilderness. Here, the experience goes far beyond game drives, offering immersive expeditions across landscapes few travelers ever reach."
-   ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-04",
-    "secondary": [
-     "PATH-06"
-    ],
-    "setting": "masoala",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays",
-    "safaris"
-   ],
-   "arrivalHubIds": [
-    "6ae6974caacf6fb717e46f6a",
-    "6ae6974c7fcae6c7fd228292",
-    "6ae6974ce9cbc8b0912b40c0"
    ],
    "placeSlug": null
   },

@@ -2066,43 +2066,24 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Madagascar",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "good",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best"
-     ]
-    }
-   ],
+   "months": [],
    "airports": [
     [
-     "Maroantsetra Airport (WMN)",
+     "Maroantsetra (WMN)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Nosy Be (NOS)",
      "Serves 2 stays in the Ledger here"
     ],
     [
      "Antananarivo (TNR)",
-     "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Airport (DIE)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "WMN · TNR",
-   "bestShort": "May–Dec",
+   "flyInto": "WMN · NOS",
+   "bestShort": "Ask James",
    "atlasName": "Madagascar"
   },
   {

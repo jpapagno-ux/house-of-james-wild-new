@@ -1282,6 +1282,16 @@
    "released": false
   },
   {
+   "stay_id": "6ae797bcc848b457ecf6692e",
+   "slug": "expedition-blue-lagoon",
+   "name": "Expedition Blue Lagoon",
+   "country": "Madagascar",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1a1c3df7f9aef1746e4",
    "slug": "expeditionary-safari-camps",
    "name": "Expeditionary Safari Camps",
@@ -1302,9 +1312,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff906",
    "slug": "explora-at-uyuni-flats",
-   "name": "Explora At Uyuni Flats",
+   "name": "Explora Uyuni",
    "country": "Bolivia",
    "missing": [
+    "coming_soon",
     "hero_photo",
     "stay_copy",
     "coordinates"
@@ -1926,6 +1937,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae7976fd6a9afcef8db176b",
+   "slug": "kachi-lodge",
+   "name": "Kachi Lodge",
+   "country": "Bolivia",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a9d4861056c71a19e0353f6",
    "slug": "kamalame-cay",
    "name": "Kamalame Cay",
@@ -2273,8 +2297,10 @@
    "slug": "lales-camp-expeditions",
    "name": "Lale’s Camp & Expeditions",
    "country": "South Africa",
-   "missing": [],
-   "released": true
+   "missing": [
+    "coming_soon"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1c5e7476fe9f4dde136",
@@ -2535,9 +2561,7 @@
    "slug": "masoala-forest-lodge",
    "name": "Masoala Forest Lodge",
    "country": "Madagascar",
-   "missing": [
-    "own_photos"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3241,6 +3265,19 @@
    "country": "South Africa",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae7976fd6a9afcef8db176c",
+   "slug": "samkani-camp",
+   "name": "Samkani Camp",
+   "country": "Bolivia",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff992",
@@ -4288,6 +4325,16 @@
    "name": "Time + Tide Mchenja",
    "country": "Zambia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae797bcc848b457ecf6692d",
+   "slug": "time-tide-tsara-komba",
+   "name": "Time + Tide Tsara Komba",
+   "country": "Madagascar",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

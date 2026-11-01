@@ -2038,5 +2038,145 @@
   "checked": "2026-11-01",
   "conditions": "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
   "volume": "voyages"
+ },
+ {
+  "id": "OFR-2026-000133",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "miavana-by-time-tide",
+  "name": "Stay 7, Pay 5 (Miavana by Time + Tide)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 7 nights at Miavana, pay for 5, with helicopter transfers included",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Travel year round in 2026, excluding the festive season (15 December to 15 January)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay a minimum of 7 nights at Miavana by Time + Tide and receive 2 nights complimentary, plus complimentary return helicopter transfers from Diego Suarez or Nosy Be to Miavana. Not valid 15 December to 15 January. Complimentary nights are applied to the lowest priced nights' accommodation; park fees and conservation levies apply to all complimentary nights. Special offers are mutually exclusive and cannot be combined with other Time + Tide offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000134",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "miavana-by-time-tide",
+  "name": "Stay 5 Nights or More (Miavana by Time + Tide)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 5 nights or more at Miavana and fly in by helicopter on the house",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Travel year round in 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay a minimum of 5 nights at Miavana by Time + Tide and receive complimentary return helicopter transfers from Diego Suarez or Nosy Be to Miavana. Special offers are mutually exclusive and cannot be combined with other Time + Tide offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000135",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "miavana-by-time-tide",
+  "name": "Honeymoon (Miavana by Time + Tide)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymooners: 50% off your partner's stay at Miavana, with helicopter transfers",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Travel year round in 2026, excluding the festive season (15 December to 15 January)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Stay a minimum of 5 nights within 6 months of your wedding and receive 50% off your partner's accommodation, plus complimentary return helicopter transfer from Diego Suarez or Nosy Be to Miavana. Not valid 15 December to 15 January. Special offers are mutually exclusive and cannot be combined with other Time + Tide offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000136",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "masoala-forest-lodge",
+  "name": "7-night Adventure, Stay 7 Pay 6 (Masoala Forest Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 7 nights at Masoala Forest Lodge, pay for 6",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-01-10",
+   "text": "Travel 22 April 2026 to 10 January 2027 (seasonal rates: 22 April to 31 August 2026 and 1 December 2026 to 10 January 2027; 1 September to 30 November 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "7-night Adventure package priced as Stay 7, Pay 6, per person sharing; single room rate available. Departures on Sundays or Wednesdays only. Includes transfers between Maroantsetra and the lodge, scheduled shared activities, all meals, non-alcoholic drinks and MFL flavoured rums, and laundry. Excludes flights between Antananarivo and Maroantsetra, community and conservation fee and gratuities. Children under 16 pay 50% of the adult accommodation rate; under 2 stay free sharing with a full-paying adult. Travel and medical evacuation insurance required. Wild Expeditions terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000137",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "masoala-forest-lodge",
+  "name": "7-night Honeymoon Adventure, Stay 7 Pay 5 (Masoala Forest Lodge)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Honeymooners: stay 7 nights at Masoala Forest Lodge, pay for 5",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-01-10",
+   "text": "Travel 22 April 2026 to 10 January 2027 (seasonal rates: 22 April to 31 August 2026 and 1 December 2026 to 10 January 2027; 1 September to 30 November 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "7-night Honeymoon Adventure package priced as Stay 7, Pay 5, per person sharing; no single rate. Departures on Sundays or Wednesdays only. Includes transfers between Maroantsetra and the lodge, scheduled shared activities, all meals, non-alcoholic drinks and MFL flavoured rums, and laundry. Excludes flights between Antananarivo and Maroantsetra, community and conservation fee and gratuities. Travel and medical evacuation insurance required. Wild Expeditions terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000138",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "masoala-forest-lodge",
+  "name": "10-night Adventure, Stay 10 Pay 8 (Masoala Forest Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 10 nights at Masoala Forest Lodge, pay for 8",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-01-10",
+   "text": "Travel 22 April 2026 to 10 January 2027 (seasonal rates: 22 April to 31 August 2026 and 1 December 2026 to 10 January 2027; 1 September to 30 November 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "10-night Adventure package priced as Stay 10, Pay 8, per person sharing; single room rate available. Departures on Sundays only. Includes transfers between Maroantsetra and the lodge, scheduled shared activities, all meals, non-alcoholic drinks and MFL flavoured rums, and laundry. Excludes flights between Antananarivo and Maroantsetra, community and conservation fee and gratuities. Children under 16 pay 50% of the adult accommodation rate; under 2 stay free sharing with a full-paying adult. Travel and medical evacuation insurance required. Wild Expeditions terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000139",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "masoala-forest-lodge",
+  "name": "11-night Adventure, Stay 11 Pay 9 (Masoala Forest Lodge)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 11 nights at Masoala Forest Lodge, pay for 9",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-01-10",
+   "text": "Travel 22 April 2026 to 10 January 2027 (seasonal rates: 22 April to 31 August 2026 and 1 December 2026 to 10 January 2027; 1 September to 30 November 2026)"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "11-night Adventure package priced as Stay 11, Pay 9, per person sharing; single room rate available. Departures on Wednesdays only. Includes transfers between Maroantsetra and the lodge, scheduled shared activities, all meals, non-alcoholic drinks and MFL flavoured rums, and laundry. Excludes flights between Antananarivo and Maroantsetra, community and conservation fee and gratuities. Children under 16 pay 50% of the adult accommodation rate; under 2 stay free sharing with a full-paying adult. Travel and medical evacuation insurance required. Wild Expeditions terms apply.",
+  "volume": "stays"
  }
 ]

@@ -13,6 +13,7 @@ import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
+import AdvisorChip from "@/components/advisor/AdvisorChip";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -207,6 +208,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             <div className="md:pt-8 space-y-8">
               {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
               <p className="text-[16px] leading-relaxed ledger-muted">{c.leading}</p>
+              {/* The advisor's light touch, up top (2 Nov 2026); the full "Who plans it" block stays below. */}
+              <AdvisorChip where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
             </div>
           </Reveal>
 

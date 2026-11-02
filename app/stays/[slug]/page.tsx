@@ -286,7 +286,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
               <p className="ledger-eyebrow ledger-crimson">{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>
               <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{boat ? "More Ships on These Waters" : <>More Stays We&rsquo;d Send You To</>}</h2>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={boat ? vesselOf(x.slug)?.name ?? x.name : x.name} id={x.ledgerId ?? ""} line={boat ? `${(vesselOf(x.slug)?.kind ?? "small ship").replace(/^\w/, (c) => c.toUpperCase())} sailing ${boat.name}` : x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
             </section>
           )}
           {IGGI_ON && (

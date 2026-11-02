@@ -30,13 +30,14 @@ live value changed since (no silent overwrite).
   `content_requests`, `submissions`, `revisions` (+ `private.revision_fields` whitelist),
   `verifications`, `partner_applications`, `org_invitations`, `accept_org_invitation`,
   `set_team_member`, `decide_revision`, `decide_submission`, RLS, column grants, audit.
-- `20261101210000_partner_contributor_admin_data.sql` (James, 1 Nov 2026): contributors
-  edit contacts, contact links and company details like admins; house editors may correct
-  company details. Removing a contact stays with partner admins and the house. **Pending
-  live apply** — renamed to its recorded version once applied.
+- `20261102111444_partner_contributor_admin_data.sql` (James, 1 Nov 2026; applied 2 Nov):
+  contributors edit contacts, contact links and company details like admins; house editors
+  may correct company details. Removing a contact stays with partner admins and the house.
+  Written as `ALTER POLICY` (nothing dropped).
 
-Tests: `supabase/tests/rls_partner_desk.sql` (59 checks), passing on a local replay; the
-first 55 also passed on live (rolled back), the full 59 run after the migration above. `supabase/tests/drift_check/replay.sh` runs every RLS file locally.
+Tests: `supabase/tests/rls_partner_desk.sql` (59 checks), passing on a local replay. Live
+policies are identical to the replay (all 74 `public` policies hash-matched, 2 Nov 2026); the
+first 55 checks also ran on live (rolled back) on 1 Nov. `supabase/tests/drift_check/replay.sh` runs every RLS file locally.
 
 ## Seed (`supabase/seed/partner_desk_stage1.sql`, idempotent, applied 1 Nov 2026)
 

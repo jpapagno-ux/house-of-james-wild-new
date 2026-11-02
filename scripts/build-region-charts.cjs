@@ -98,6 +98,21 @@ const REGIONS = {
     seas: [["South China Sea", 1.45, 104.85], ["Strait of Malacca", 1.55, 103.0]],
     areas: [["Sumatra", 0.25, 103.05], ["Bintan", 1.05, 104.38], ["Riau Islands", 0.35, 104.4]],
     marks: [["Singapore ✈", 1.364, 103.991, "airport"]] },
+  // Thailand's three coasts and the north, closer (James, 2 Nov 2026: region views "the way Indonesia was
+  // just done"). Same 1:10m stock and narrow width; the library country page opens on the Andaman coast and
+  // flies between these frames and the whole country (CHAINS in app/destinations/[region]/[country]/page.tsx).
+  "thailand-andaman": { country: "thailand", hires: true, width: 520, frame: [97.75, 7.45, 99.35, 8.95], focus: ["Thailand"],
+    seas: [["Andaman Sea", 7.62, 98.05], ["Phang Nga Bay", 8.2, 98.52]],
+    areas: [["Phuket", 7.88, 98.36], ["Khao Lak", 8.7, 98.36], ["Krabi", 8.18, 99.08]],
+    marks: [["Phuket ✈", 8.113, 98.317, "airport"], ["Krabi ✈", 8.099, 98.986, "airport"]] },
+  "thailand-gulf": { country: "thailand", hires: true, width: 520, frame: [99.55, 9.2, 100.4, 9.98], focus: ["Thailand"],
+    seas: [["Gulf of Thailand", 9.3, 100.2]],
+    areas: [["Koh Samui", 9.47, 99.93], ["Koh Phangan", 9.78, 100.03]],
+    marks: [["Samui ✈", 9.548, 100.062, "airport"]] },
+  "thailand-north": { country: "thailand", hires: true, width: 520, frame: [98.45, 18.35, 100.75, 20.55], focus: ["Thailand"],
+    areas: [["Chiang Mai", 18.92, 98.96], ["Golden Triangle", 20.47, 99.92]],
+    countries: [["MYANMAR", 20.15, 98.75], ["LAOS", 19.55, 100.55]],
+    marks: [["Chiang Mai ✈", 18.767, 98.963, "airport"], ["Chiang Rai ✈", 19.952, 99.883, "airport"]] },
   "polar-antarctica": { frame: [-82, -72, -44, -50], focus: ["Antarctica"], seas: [["Drake Passage", -58.5, -64], ["Weddell Sea", -68, -50], ["Bellingshausen Sea", -69.5, -79], ["Scotia Sea", -56.5, -50]], areas: [["Antarctic Peninsula", -66.2, -64.6], ["Ushuaia", -55.3, -67.6], ["Punta Arenas", -52.7, -71.6], ["South Shetland Islands", -61.6, -57.4]] },
   "polar-arctic": { frame: [-62, 58, 34, 82], focus: ["Greenland", "Iceland", "Norway"], seas: [["Greenland Sea", 75, -8], ["Norwegian Sea", 68, 3], ["Baffin Bay", 72.5, -63], ["Denmark Strait", 67, -26], ["Barents Sea", 74.5, 31]], areas: [["Svalbard", 80.3, 20], ["Reykjavík", 63.6, -21.94]] },
 };

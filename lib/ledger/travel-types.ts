@@ -17,7 +17,10 @@ const RULES: [string, RegExp][] = [
 ];
 const TAG: Record<string, string> = { family: "Families & generations", honeymoon: "Couples & honeymooners", couples: "Couples & honeymooners", wellness: "Wellness seekers", solo: "Solo travellers", adventure: "Walkers & the active", conservation: "Conservation-minded", food: "Food & wine lovers", wildlife_photography: "Photographers" };
 
-export function suitedTo(text: string, tags: string[] = [], max = 4): string[] {
+/** `name`: the place's own name, taken out of the text first, so a name never earns a type on its own
+ *  ("Galapagos Safari Camp" is not a Big Five safari). */
+export function suitedTo(text: string, tags: string[] = [], max = 4, name?: string): string[] {
+  if (name) text = text.split(name).join(" ");
   const out: string[] = [];
   for (const t of tags) { const m = TAG[t.toLowerCase()]; if (m && !out.includes(m)) out.push(m); }
   const scored = RULES.map(([name, re]) => [name, (text.match(new RegExp(re.source, "gi")) ?? []).length] as const).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]);

@@ -82,3 +82,18 @@ test("no new page duplicates an existing one, and the stubs are left for James",
   for (const slug of ["galapagos-safari-camp", "pikaia-lodge"]) assert.equal(stays.filter((s) => s.slug === slug).length, 1, slug);
   assert.equal(stays.filter((s) => /pikaia|safari camp/i.test(s.name) && /galapagos|pikaia/i.test(s.slug)).length, 2);
 });
+
+test("every new route is built and in LIVE_ROUTES (the sitemap); the stays are released", async () => {
+  const { isBuilt } = await import("../lib/routes.ts");
+  const site = read("lib/site.ts");
+  const routes = [...NEW.map((s) => `/voyages/ships/${s}`), ...["royal-galapagos", "galaxy-cruises", "ecoventura", "vianatura"].map((p) => `/partners/${p}`), "/destinations/south-america/ecuador-galapagos/galapagos"];
+  for (const r of routes) {
+    assert.ok(isBuilt(r), `${r} built`);
+    assert.ok(site.includes(`{ path: "${r}"`), `${r} in LIVE_ROUTES`);
+  }
+  const released = (JSON.parse(read("scripts/data/stay-release.json")).released as { slug: string }[]).map((x) => x.slug);
+  for (const s of ["galapagos-safari-camp", "pikaia-lodge"]) { assert.ok(released.includes(s), s); assert.ok(isBuilt(`/stays/${s}`), `/stays/${s} built`); }
+  const credits = JSON.parse(read("lib/content/photo-credits.json"));
+  assert.equal(credits["galapagos-safari-camp"], "Galapagos Safari Camp");
+  assert.equal(credits["pikaia-lodge"], "Pikaia Lodge");
+});

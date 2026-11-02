@@ -21,7 +21,8 @@ export default function IslandStays() {
   const ink = volumeInk("stays");
   const galapagos = SHIPS.filter((e) => e.waters === "galapagos");
   const fromBaltra = galapagos.filter((e) => e.data.itineraries.some((i) => /^Baltra/i.test(i.direction)));
-  const fromSanCristobal = galapagos.filter((e) => !fromBaltra.includes(e));
+  // Only ships whose published routes say where they start (Monserrat's are not readable, so she is in neither list).
+  const fromSanCristobal = galapagos.filter((e) => !fromBaltra.includes(e) && e.data.itineraries.some((i) => i.days.length && /^San Crist/i.test(i.direction)));
   const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}` : xs[0] ?? "");
   return (
     <HubSection eyebrow="Stay on the islands" title="Where Can You Stay on Land Before or After a Yacht?" id="island-stays-h">

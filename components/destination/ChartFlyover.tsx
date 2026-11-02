@@ -27,12 +27,15 @@ const STARS: [number, number, number, number][] = (() => {
 })();
 const btn = "inline-flex items-center gap-1.5 bg-paper/90 border ledger-border px-2 py-1 sm:px-3 sm:py-1.5 font-mono text-[9.5px] sm:text-[10.5px] tracking-[0.12em] uppercase";
 
-export default function ChartFlyover({ from, to, fromName, title, line, pins, unpinned = [], unesco, notes, focus, frames = [] }: {
+export default function ChartFlyover({ from, to, fromName, title, line, pins, unpinned = [], unesco, notes, focus, nightLine, frames = [] }: {
   from: ChartData; to: ChartData; fromName: string; title: string; line: string;
   pins: FlyPin[]; unpinned?: { name: string; href: string }[]; unesco: FlyUnesco[]; notes: string[]; frames?: FlyFrame[];
   /** After landing, ring one feature of the close chart (a salt flat) and offer a closer zoom onto it. */
   focus?: { name: string; line: string; zoomLabel: string; night?: string };
+  /** The night sky without a ringed feature (Rapa Nui): the line shown over it. */
+  nightLine?: string;
 }) {
+  const nightText = focus?.night ?? nightLine;
   const Wd = to.width, Hd = to.height, Wf = from.width, Hf = from.height, aspect = Wd / Hd;
   // The whole continent, and the close chart's frame on it, both widened to the box's aspect so the
   // landing lines up with the close chart.
@@ -154,6 +157,8 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
                 <rect width={Wd} height={Hd} fill="#0B1220" opacity="0.86" />
                 <ellipse cx={Wd * 0.55} cy={Hd * 0.42} rx={Wd * 0.85} ry={Hd * 0.13} fill="url(#fly-milky)" transform={`rotate(-38 ${Wd * 0.55} ${Hd * 0.42})`} />
                 {STARS.map(([sx, sy, r, d], i) => <circle key={i} cx={sx * Wd} cy={sy * Hd} r={r} fill="#F4F1ED" className="fly-star" style={{ animationDelay: `${d}s` }} />)}
+                {/* The coast in moonlight. */}
+                <path d={to.focus} fillRule="evenodd" fill="rgba(244,241,237,0.06)" stroke="rgba(244,241,237,0.65)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />
                 {to.overlays?.salt.map((sh) => <path key={sh.name} d={sh.d} fill="rgba(244,241,237,0.10)" stroke="rgba(244,241,237,0.75)" strokeWidth="1.2" vectorEffect="non-scaling-stroke" />)}
                 {to.overlays?.route && <path d={to.overlays.route} fill="none" stroke="rgba(244,241,237,0.6)" strokeWidth="1.4" strokeDasharray="1 6" strokeLinecap="round" vectorEffect="non-scaling-stroke" />}
               </g>
@@ -168,8 +173,8 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
               )}
             </svg>
             </div>
-            {focus?.night && (
-              <p className={`absolute top-4 inset-x-4 text-center ledger-display italic text-[1.05rem] md:text-[1.35rem] text-[#F4F1ED] transition-opacity duration-1000 pointer-events-none ${night && down ? "opacity-100" : "opacity-0"}`} aria-live="polite">{night && down ? focus.night : ""}</p>
+            {nightText && (
+              <p className={`absolute top-4 inset-x-4 text-center ledger-display italic text-[1.05rem] md:text-[1.35rem] text-[#F4F1ED] transition-opacity duration-1000 pointer-events-none ${night && down ? "opacity-100" : "opacity-0"}`} aria-live="polite">{night && down ? nightText : ""}</p>
             )}
             <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-2">
               <button type="button" onClick={play} className={btn}>
@@ -181,7 +186,7 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
                   <span className="hidden sm:inline">{zoomed ? "The whole corner" : focus.zoomLabel}</span><span className="sm:hidden">{zoomed ? "Zoom out" : "Zoom in"}</span>
                 </button>
               )}
-              {down && focus?.night && (
+              {down && nightText && (
                 <button type="button" onClick={() => setNight((n) => !n)} className={btn} aria-pressed={night}>
                   {night ? <Sun className="w-3 h-3" strokeWidth={1.6} aria-hidden="true" /> : <Moon className="w-3 h-3" strokeWidth={1.6} aria-hidden="true" />}
                   <span className="hidden sm:inline">{night ? "Back to day" : "See the night sky"}</span><span className="sm:hidden">{night ? "Day" : "Night sky"}</span>

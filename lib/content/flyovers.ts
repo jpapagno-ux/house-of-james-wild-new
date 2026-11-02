@@ -9,7 +9,7 @@ import { UNESCO, unescoUrl } from "./unesco";
 // (salt flats, reserves, route, marks, UNESCO ids) are set in scripts/build-region-charts.cjs.
 // First: South America → the Atacama and Uyuni (James, 1 Nov 2026). Next candidates: Santiago → Rapa Nui,
 // Ecuador → the Galápagos, Peru → the Sacred Valley, Chile → Torres del Paine.
-type Fly = { from: string; fromName: string; to: string; countries: string[]; title: string; line: string; notes: string[]; focus?: { name: string; line: string; zoomLabel: string; night?: string }; also?: string[] };
+type Fly = { from: string; fromName: string; to: string; countries: string[]; title: string; line: string; notes: string[]; focus?: { name: string; line: string; zoomLabel: string; night?: string }; nightLine?: string; also?: string[] };
 const FLYOVERS: Record<string, Fly> = {
   "atacama-uyuni": {
     from: "south-america", fromName: "South America", to: "atacama-uyuni", countries: ["chile", "bolivia"],
@@ -19,11 +19,20 @@ const FLYOVERS: Record<string, Fly> = {
     focus: { name: "Salar de Uyuni", line: "The largest salt flat on Earth", zoomLabel: "Zoom to the salt flat", night: "High, dry and dark: one of the great night skies" },
     notes: ["Red ring: the Salar de Uyuni. Dotted line: the classic San Pedro–Uyuni crossing, indicative.", "White: salt flats. Dashed: the Eduardo Avaroa Andean Fauna National Reserve, indicative outline."],
   },
+  // Rapa Nui (1 Nov 2026): the continent, then 3,700 km out across the Pacific to the island, where Rapa Nui
+  // National Park (UNESCO, 1995) is marked; the night sky over the Pacific.
+  "rapa-nui": {
+    from: "south-america", fromName: "South America", to: "rapa-nui", countries: ["chile"],
+    title: "Rapa Nui, 3,700 km Out",
+    line: "From the whole continent, out across the Pacific: Rapa Nui is a triangle of three volcanoes some 3,700 km west of mainland Chile, five and a half hours by air from Santiago. Hanga Roa and the airport sit on the south-west shore; the quarry, the platforms, the crater at Orongo and the walks are a short drive across the island.",
+    notes: ["Rapa Nui National Park covers much of the island; positions approximate."],
+    nightLine: "Thousands of kilometres from any city: the southern sky over the Pacific",
+  },
 };
 
 const charts = REGION_LIB as unknown as Record<string, ChartData>;
 export type FlyFrame = { src: string; alt: string; href: string; name: string; night: boolean };
-export type FlyoverProps = { from: ChartData; to: ChartData; fromName: string; title: string; line: string; pins: FlyPin[]; unpinned: { name: string; href: string }[]; unesco: FlyUnesco[]; notes: string[]; focus?: Fly["focus"]; frames: FlyFrame[] };
+export type FlyoverProps = { from: ChartData; to: ChartData; fromName: string; title: string; line: string; pins: FlyPin[]; unpinned: { name: string; href: string }[]; unesco: FlyUnesco[]; notes: string[]; focus?: Fly["focus"]; nightLine?: string; frames: FlyFrame[] };
 
 export function flyover(key: string): FlyoverProps | null {
   const f = FLYOVERS[key];
@@ -43,5 +52,5 @@ export function flyover(key: string): FlyoverProps | null {
   const unpinned = STAY_PAGES.filter((s) => f.also?.includes(s.slug) && !pins.some((p) => p.href === `/stays/${s.slug}`)).map((s) => ({ name: s.name, href: `/stays/${s.slug}` }));
   const ids = new Set((to.overlays?.unesco ?? []).map((u) => u.id));
   const unesco = UNESCO.filter((u) => ids.has(u.id)).map((u) => ({ id: u.id, name: u.name, year: u.year, url: unescoUrl(u.id) }));
-  return { from, to, fromName: f.fromName, title: f.title, line: f.line, pins, unesco, notes: f.notes, focus: f.focus, frames, unpinned };
+  return { from, to, fromName: f.fromName, title: f.title, line: f.line, pins, unesco, notes: f.notes, focus: f.focus, nightLine: f.nightLine, frames, unpinned };
 }

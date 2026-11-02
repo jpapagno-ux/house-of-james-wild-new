@@ -1,0 +1,26 @@
+{
+  "ledgerId": "STY-2026-290658", "slug": "lion-sands", "propertyName": "Lion Sands Game Reserve (Ivory, River, Narina, Tinga, Fish Eagle Residence)", "timeZone": "Africa/Johannesburg", "stayType": "Lodge",
+  "units": [
+    { "code": "ivory-lodge-ivory-suite", "name": "Ivory Lodge · Ivory Suite", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "King bed", "description": "8 suites" },
+    { "code": "river-lodge-luxury-room", "name": "River Lodge · Luxury Room", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "Double bed", "description": "8 rooms" },
+    { "code": "river-lodge-superior-luxury-room", "name": "River Lodge · Superior Luxury Room", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "King bed", "description": "6 rooms" },
+    { "code": "river-lodge-luxury-river-suite", "name": "River Lodge · Luxury River Suite", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "King bed", "description": "3 suites" },
+    { "code": "river-lodge-family-river-suite", "name": "River Lodge · Family River Suite", "maxAdults": 2, "maxChildren": 2, "maxOccupancy": 4, "bedConfiguration": "King bed + 3/4 beds", "description": "1 suite" },
+    { "code": "narina-lodge-narina-suite", "name": "Narina Lodge · Narina Suite", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "Double bed", "description": "9 suites" },
+    { "code": "tinga-lodge-tinga-suite", "name": "Tinga Lodge · Tinga Suite", "maxAdults": 2, "maxChildren": 0, "maxOccupancy": 2, "bedConfiguration": "King bed", "description": "9 suites" },
+    { "code": "fish-eagle-residence-the-residence-exclusive-use", "name": "Fish Eagle Residence · The Residence, exclusive use", "maxAdults": 6, "maxChildren": 0, "maxOccupancy": 6, "bedConfiguration": "2 queen beds / 1 twin", "description": "Whole residence, up to 6" }
+  ],
+  "plan": { "code": "fi", "name": "Fully inclusive", "boardBasis": "Fully inclusive", "refundability": "Refundable", "inclusions": "All meals, game drives (day and night), guided bush walks — confirm against the contract." },
+  "card": { "label": "2027-V1", "currency": "USD", "effectiveFrom": "2027-01-01", "effectiveTo": "2027-12-31", "contractReference": "Library from-rates (per person x2) — stand-in until the contracted card arrives as 2027-V2", "depositPercent": 0.3, "balanceDueDays": 60, "cancellationSummary": "A 30% deposit confirms the booking; the balance is due 60 days before arrival. Cancellation terms are confirmed by the house with Lion Sands at the time of your quote." },
+  "seasons": {
+    "ivory-lodge-ivory-suite": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 3420, "basis": "per_person_sharing" }],
+    "river-lodge-luxury-room": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 1943, "basis": "per_person_sharing" }],
+    "river-lodge-superior-luxury-room": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 2137, "basis": "per_person_sharing" }],
+    "river-lodge-luxury-river-suite": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 2498, "basis": "per_person_sharing" }],
+    "river-lodge-family-river-suite": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 2998, "basis": "per_person_sharing" }],
+    "narina-lodge-narina-suite": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 2230, "basis": "per_person_sharing" }],
+    "tinga-lodge-tinga-suite": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 2924, "basis": "per_person_sharing" }],
+    "fish-eagle-residence-the-residence-exclusive-use": [{ "season": "Standard 2027", "stayStart": "2027-01-01", "stayEnd": "2027-12-31", "nightly": 11845, "basis": "per_room", "baseOccupancy": 6 }]
+  },
+  "taxes": [{ "name": "VAT 15% (included in the rate)", "kind": "Tax", "basis": "% of room", "percent": 0.15, "includedInRate": true, "jurisdiction": "South Africa" }]
+}

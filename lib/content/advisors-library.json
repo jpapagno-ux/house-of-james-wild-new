@@ -7,7 +7,8 @@
    "pathways": [
     "PATH-04",
     "PATH-02",
-    "PATH-07"
+    "PATH-07",
+    "PATH-06"
    ],
    "volumes": [
     "safaris",
@@ -44,9 +45,9 @@
     "Routes by road"
    ],
    "availability": "open",
-   "matchNote": null,
-   "confirmed": null,
-   "updated": "2026-11-01",
+   "matchNote": "If everyone's going there, I'm probably not. I plan enough to get us in, then leave open days to see what's around the corner.",
+   "confirmed": "2026-11-02T11:30:00.000Z",
+   "updated": "2026-11-02",
    "marks": []
   },
   {

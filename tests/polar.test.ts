@@ -77,3 +77,16 @@ test("every polar voyage, every ship page and the partner page are in LIVE_ROUTE
   const reg = readFileSync(new URL("lib/content/ships/registry.ts", root), "utf8");
   for (const m of reg.matchAll(/\{ slug: "([^"]+)"[^\n]*\n[^\n]*page: true/g)) assert.ok(live.has(`/voyages/ships/${m[1]}`), m[1]);
 });
+
+test("Antarctica21 offers end with their booking deadline, so lib/dates.ts hides them", () => {
+  const src = readFileSync(new URL("lib/content/offers/offers.ts", root), "utf8");
+  for (const id of ["OFR-2026-000160", "OFR-2026-000161"]) {
+    const line = src.slice(src.indexOf(`id: "${id}"`), src.indexOf(`id: "${id}"`) + 900);
+    assert.match(line, /to: "2026-12-31"/, id);
+    assert.match(line, /partner: "antarctica21"/, id);
+  }
+});
+
+test("cabin cards never print an unpublished deck", () => {
+  assert.ok(!readFileSync(new URL("components/ships/CabinsDeck.tsx", root), "utf8").includes("Deck to confirm"));
+});

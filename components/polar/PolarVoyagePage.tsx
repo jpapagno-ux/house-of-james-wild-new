@@ -9,6 +9,8 @@ import { GalleryMosaic, RecordActionBar } from "@/components/record/Frame";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import ShipGlance from "@/components/ships/ShipGlance";
 import ShipCard from "@/components/ships/ShipCard";
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersFor } from "@/lib/content/offers/offers";
 import { shipCard } from "@/lib/content/ships/cards";
 import { registryShip } from "@/lib/content/ships/registry";
 import ShipNav from "@/components/ships/ShipNav";
@@ -140,6 +142,8 @@ export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {
               </dl>
             </div>
           </section>
+
+          <OfferPanel offers={offersFor(v.slug)} volume="voyages" title="Antarctica21 offers on this voyage" />
 
           <section className="mt-12 border ledger-border p-5 md:p-6 grid md:grid-cols-[1fr_auto] gap-4 items-center">
             <p className="text-[15.5px] leading-relaxed"><span className="ledger-eyebrow block mb-1">Operated by Antarctica21</span>Every voyage in Polar Crossings sails with Antarctica21, the Chilean company that says it pioneered the Antarctic air-cruise in 2003.</p>

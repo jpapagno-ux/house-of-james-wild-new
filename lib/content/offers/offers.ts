@@ -39,6 +39,12 @@ export type Offer = {
   image?: OfferImage;
   volume?: VolumeKey; // set in the library; decides the offer's colour and mark
   departure?: string; // Final Call: the departure date (ISO), shown as a date, never a countdown
+  /** The window is a booking deadline, not travel dates ("book by 31 December 2026"); the card says so. */
+  bookingWindow?: boolean;
+  /** Further pages the same offer belongs to (one promotion across several voyages). */
+  refs?: string[];
+  /** The partner whose offer it is (lib/content/partners), for the partner page. */
+  partner?: string;
 };
 
 const CAY = "cayuga-collection";
@@ -89,6 +95,19 @@ const HAND_KEPT: Offer[] = [
     conditions: "One partner's stay is 50% off. Travel by 31 December 2027 and within 6 months of the date on the marriage certificate. Not combinable with any other offer. Not available on Zein Nile Chateau. Abercrombie & Kent may withdraw the offer at any time. A&K terms apply.",
     source: "A&K offers page, honeymoon in Egypt with A&K Sanctuary", checked: "2026-11-01", volume: "voyages",
   })),
+
+  // ── 2026 · Antarctica21 (checked 2 Nov 2026, antarctica21.com/our-promotions) ──
+  // Booking-window savings on the polar voyages (James, 2 Nov 2026). They end with the booking deadline,
+  // so they hide on their own after 31 December 2026 (lib/dates.ts). The promotional "from" fare quoted
+  // on the Patagonia card is left out: that card gives a different length from the itinerary.
+  { id: "OFR-2026-000160", year: 2026, status: "Live", scope: "itinerary", ref: "classic-antarctica-air-cruise", partner: "antarctica21", name: "Classic Antarctica Air-Cruise", country: "Antarctica", program: "On the Horizon",
+    headline: "Save up to US$4,000 per person", travel: { from: "2026-11-02", to: "2026-12-31", text: "Book by 31 December 2026" }, bookingWindow: true,
+    conditions: "On select Classic Antarctica Air-Cruise departures, new bookings only. Antarctica21 sets which departures qualify; James confirms yours.",
+    source: "Antarctica21 promotions page", checked: "2026-11-02", volume: "voyages" },
+  { id: "OFR-2026-000161", year: 2026, status: "Live", scope: "itinerary", ref: "patagonia-chilean-fjords", refs: ["falkland-islands"], partner: "antarctica21", name: "Patagonia and Falklands sea voyages", country: "Chile", program: "On the Horizon",
+    headline: "Save up to US$1,000 per person", travel: { from: "2026-11-02", to: "2026-12-31", text: "Book by 31 December 2026" }, bookingWindow: true,
+    conditions: "On Antarctica21's Patagonia and Chilean Fjords and Falklands sea voyages, new bookings only. Antarctica21 terms apply.",
+    source: "Antarctica21 promotions page", checked: "2026-11-02", volume: "voyages" },
 ];
 
 // Offers filed in the Base44 library arrive with the nightly sync
@@ -102,5 +121,6 @@ export const OFFER_LEDGER: Offer[] = [...HAND_KEPT.filter((o) => !LIB_IDS.has(o.
 export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
 /** Offers a page may show: Live and not past its end (lib/dates.ts, the one date rule). */
 export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerEnd, on);
-export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref);
+export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref || (o.refs ?? []).includes(ref));
+export const offersForPartner = (partner: string, on = today()) => liveOffers(on).filter((o) => o.partner === partner);
 export const offersInCollection = (collection: string, on = today()) => liveOffers(on).filter((o) => o.collection === collection);

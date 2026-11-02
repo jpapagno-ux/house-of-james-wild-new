@@ -10,6 +10,8 @@ import { PlanClose } from "@/components/about/Parts";
 import { SectionHead } from "@/components/record/Sections";
 import { GalleryMosaic } from "@/components/record/Frame";
 import ShipCard from "@/components/ships/ShipCard";
+import OfferPanel from "@/components/ledger/OfferPanel";
+import { offersForPartner } from "@/lib/content/offers/offers";
 import { shipCard, type ShipCardData } from "@/lib/content/ships/cards";
 import { registryShip } from "@/lib/content/ships/registry";
 import { partnerPath, type Partner } from "@/lib/content/partners";
@@ -102,6 +104,8 @@ export default function PartnerPage({ p }: { p: Partner }) {
               {p.itineraries.href && <p className="mt-4"><Link href={p.itineraries.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>{p.itineraries.hrefLabel ?? "See them all"}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>}
             </section>
           )}
+
+          <OfferPanel offers={offersForPartner(p.slug)} volume="voyages" title={`Offers from ${p.name}`} />
 
           <section className={SEC} aria-labelledby="apart-h">
             <SectionHead eyebrow="In their words" title={`What Sets ${p.name} Apart, by Their Account?`} icon="tree-ring" />

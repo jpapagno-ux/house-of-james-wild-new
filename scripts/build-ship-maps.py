@@ -31,7 +31,7 @@ for waters in LABELS:
                 st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
             stops.append(st); prev = d
         stops[-1]["kind"] = "port"
-        route = {"id": rid, "type": "voyage", "destination": waters, "title": f"{it['name'].capitalize()} aboard {s['name']}",
+        route = {"id": rid, "type": "voyage", "destination": waters, "title": f"{it['name'][0].upper() + it['name'][1:]} aboard {s['name']}",
                  "subtitle": f"{it['nights']} nights · {it['direction'].split(' (')[0]} · {s['name']}",
                  "days": {str(d["day"]): d["title"] for d in it["days"]}, "stops": stops,
                  "map_note": "River course and positions approximate, not a navigational chart",

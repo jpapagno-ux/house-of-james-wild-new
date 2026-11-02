@@ -34,7 +34,11 @@ export function atlasRoutes(ships: ShipEntry[] = SHIPS): AtlasRoute[] {
     if (done.has(e.slug)) continue;
     const fleet = sig ? sets.filter((x) => x.sig === sig && x.e.reg.operator === e.reg.operator) : [{ e, sig }];
     fleet.forEach((x) => done.add(x.e.slug));
-    const group = fleet.length > 1 ? `${e.reg.operator} fleet` : e.data.name;
+    // "Ecoventura fleet" only when every ship of that operator on these waters shares the routes;
+    // otherwise the chip names the ships ("Theory and Evolve").
+    const all = ships.filter((x) => x.reg.operator === e.reg.operator && x.waters === e.waters);
+    const names = fleet.map((x) => x.e.data.name);
+    const group = fleet.length === 1 ? e.data.name : fleet.length === all.length ? `${e.reg.operator} fleet` : `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
     const members = fleet.length > 1 ? fleet.map((x) => ({ name: x.e.data.name, href: shipPath(x.e.slug) })) : undefined;
     out.push(...e.data.itineraries.filter((i) => i.days.length).map((i) => ({
       id: shipRouteId(e.data, i), label: shortRoute(i), href: shipPath(e.slug), where: WATERS_HUBS[e.waters].name, group, groupHref: shipPath(e.slug), members,

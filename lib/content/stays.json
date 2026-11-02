@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-01",
+ "exportedOn": "2026-11-02",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -4810,20 +4810,23 @@
   },
   {
    "slug": "be-tulum",
-   "name": "Be \n Tulum",
+   "name": "BE DESTINATION Tulum",
    "ledgerId": "STY-2026-000036",
    "country": "Mexico",
    "countrySlug": "mexico",
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Barefoot luxury where jungle tranquility meets the Caribbean Sea.",
+   "tagline": "A Caribbean beachfront resort where luxury merges with nature.",
    "quote": "The most meaningful journeys begin when luxury becomes simplicity.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/443e033cd_056411c40_682f2ffe35dc4f105ef78444_6b2bqM0tPEEz7VwLHj6BtOtlVg.webp",
    "gallery": [],
    "bestMonths": "November - May",
    "bestMonthsNote": "The best time to visit Be Tulum is between November and May when Riviera Maya experiences warm temperatures, low rainfall, gentle sea breezes and abundant sunshine. These months are ideal for enjoying the beach, wellness experiences, outdoor dining, cycling through Tulum, and exploring nearby cenotes and Mayan archaeological sites.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -4831,56 +4834,88 @@
     "lng": -87.447238
    },
    "airport": "Tulum International Airport (TQO) Cancún International Airport (CUN)",
-   "airportDirections": "Tulum International Airport (TQO)\nApproximately 55 km\nAround 55 minutes by car\nClosest international airport\nCancún International Airport (CUN)\nApproximately 135 km\nAround 2 hours by car\nLargest airport with the widest range of international flights\nRecommended Arrival Airport: Tulum International Airport (TQO)",
+   "airportDirections": "Cancún International Airport (CUN) is about 130 km, around 1.5 hours by road; Tulum International Airport (TQO) is closer.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Arena Suites",
-     "Aire Suites",
-     "Tierra Suites",
-     "Mar Suites",
-     "Ocean Suites",
-     "Premier Suites",
-     "Master Suites",
-     "Beachfront Suites"
+     "Alcove Suite with Plunge Pool",
+     "Palm Suite",
+     "Signature Suite with Plunge Pool",
+     "Air Suite with Plunge Pool",
+     "Sea Suite",
+     "Terrace Suite with Plunge Pool",
+     "Oceanfront Suite with Plunge Pool",
+     "Premier Oceanfront Suite with Plunge Pool",
+     "Premier Palm Suite"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beach Club",
-     "Spa Wellness",
-     "Yoga",
-     "Gastronomic Dining",
-     "Bicycle Exploration",
-     "Holistic Rituals",
-     "Ocean Relaxation",
-     "Cultural Discovery"
+     "Yäan Spa",
+     "Daily yoga and the Wellbeing Program",
+     "Mexican cuisine at Ocúmare",
+     "Beach dining at Mare'zia",
+     "Cultural events on the sky terrace and at the beach club",
+     "Bicycle exploring",
+     "Private events and celebrations"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-oriented boutique resort",
-     "Beachfront Caribbean location",
-     "Private plunge pools in select suites",
-     "Signature wellness spa",
-     "Multiple gourmet restaurants",
-     "Beach club experience",
-     "Contemporary eco-inspired architecture",
-     "Jungle pathways",
-     "Luxury concierge services",
-     "Outdoor relaxation spaces"
+     "Adults only: all guests and visitors 16 and over",
+     "Beachfront on the Caribbean at Km 10, Tulum hotel zone",
+     "Plunge pools in many suite categories",
+     "Yäan Spa and Wellbeing Program",
+     "Ocúmare and Mare'zia Beach restaurants",
+     "Beach club and sky terrace",
+     "Architecture designed to complement its natural setting",
+     "Bicycles for daytime use",
+     "Valet parking and round-the-clock front desk"
     ]
    },
    "onlyHere": [
     "Be Tulum is designed as a sanctuary where contemporary architecture blends naturally into the tropical landscape. Every suite, pathway and gathering space celebrates the beauty of the Riviera Maya while offering a peaceful atmosphere that encourages guests to slow down, reconnect and experience Tulum in an authentic, luxurious way."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Cancún International Airport (CUN), about 130 km and around 1.5 hours by road, or the closer Tulum International Airport (TQO). Prepaid private transfers from both, booked 48 hours ahead.",
+    "signature_experiences": "Yäan Spa and the Wellbeing Program, daily yoga, Ocúmare and Mare'zia Beach dining, sky terrace and beach club cultural events, bicycles.",
+    "who_its_for": "Adults 16 and over seeking a beachfront resort focused on spa, wellbeing and dining."
+   },
+   "faqs": [
+    {
+     "q": "Where is Be Tulum?",
+     "a": "Be Tulum, which now trades as BE DESTINATION Tulum, sits on the Caribbean shore at Km 10 of the Tulum to Boca Paila road in Tulum's hotel zone, Quintana Roo, Mexico."
+    },
+    {
+     "q": "How do I get to Be Tulum?",
+     "a": "The hotel says Cancún International Airport (CUN) is about 130 km (80 miles) away, usually around 1.5 hours by road. Tulum International Airport (TQO) is the closer gateway. The hotel arranges prepaid private transfers from both airports with at least 48 hours' notice."
+    },
+    {
+     "q": "Is Be Tulum adults only?",
+     "a": "Yes. The hotel states that all guests and visitors must be 16 years of age or older."
+    },
+    {
+     "q": "What rooms and suites does Be Tulum have?",
+     "a": "Suites include the Alcove, Signature, Air and Terrace Suites with plunge pool, the Palm Suite, the Sea Suite and the Oceanfront Suite with plunge pool. Premier Suites are the Premier Oceanfront Suite with plunge pool and the Premier Palm Suite. Casa Sastran is a separate five-bedroom villa with a private beach in Sian Ka'an, about 20 minutes away."
+    },
+    {
+     "q": "What is there to do at Be Tulum?",
+     "a": "Guests have Yäan Spa and its Wellbeing Program with daily yoga, Mexican cooking at Ocúmare, dining at Mare'zia Beach, and cultural events on the sky terrace and at the beach club. Bicycles are available for daytime exploring."
+    },
+    {
+     "q": "When is the best time to visit Be Tulum?",
+     "a": "The hotel does not name a best season. Most travellers plan Tulum for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Be Tulum best for?",
+     "a": "Adults aged 16 and over who want a beachfront resort built around spa, wellbeing and good food. The hotel notes its jungle terrain may be difficult for guests with mobility impairments."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -5020,17 +5055,27 @@
    "category": "lodge",
    "tagline": "A rainforest hideaway shaped by rivers, waterfalls, and Maya heritage.",
    "quote": "At Blancaneaux Lodge, the sound of the Privassion River sets the pace.",
-   "hero": "https://thecoppolahideaways.com/wp-content/uploads/2023/08/BL-Hero-1.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blancaneaux-lodge/g10"
+   ],
    "bestMonths": "November through May is generally the drier season and a popular time to visit. Rainfall is heavier during the green season, when waterfalls may be fuller.",
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
+    "couples",
     "family",
     "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "solo"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -5044,9 +5089,8 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Secluded in Belize’s Mountain Pine Ridge Forest Reserve",
-     "Cabins and villas tucked among rainforest and pine forest",
-     "The Privassion River runs through the lodge grounds",
+     "Secluded in Belize's 107,000-acre Mountain Pine Ridge Forest Reserve",
+     "Privassion Creek runs through the lodge grounds",
      "A quiet base for exploring waterfalls and Maya sites"
     ]
    },
@@ -5062,49 +5106,48 @@
    "features": {
     "paras": [],
     "items": [
-     "Riverfront setting in a protected forest reserve",
-     "Cabins and villas surrounded by forest",
-     "On-site dining at the lodge",
-     "Access to nature and Maya heritage excursions"
+     "Creekside setting in a protected forest reserve",
+     "Waterfall Spa, organic garden and stables on site",
+     "Powered by its own hydroelectric plant on Privassion Creek"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Blancaneaux Lodge feels immersed in nature, with cabins and villas set beside the Privassion River in the Mountain Pine Ridge Forest Reserve. Its remote setting brings together pine forest, rainforest, and the region’s waterfalls, while nearby Maya archaeological sites add a sense of place beyond the lodge grounds. Choose it for a restorative stay with access to both outdoor exploration and Belize’s cultural heritage."
+     "body": "Blancaneaux Lodge feels immersed in nature, with thatched cabañas and villas set above Privassion Creek in the Mountain Pine Ridge Forest Reserve. Its remote setting brings together pine forest, jungle and the region's waterfalls, while nearby Maya cities add a sense of place beyond the lodge grounds. Choose it for a restorative stay with access to both outdoor exploration and Belize's cultural heritage."
     }
    ],
    "facts": {
     "best_months": "November through May is generally the drier season and a popular time to visit. Rainfall is heavier during the green season, when waterfalls may be fuller.",
-    "how_to_get_there": "Travel by road from Belize City or San Ignacio, using a prearranged transfer or rental vehicle. The lodge is in Mountain Pine Ridge Forest Reserve, and the final approach uses rural roads.",
-    "who_its_for": "A nature-focused lodge for couples, families, solo travelers, and active guests seeking forest scenery, river quiet, waterfalls, and access to Maya heritage.",
-    "signature_experiences": "Explore Mountain Pine Ridge’s waterfalls, visit Caracol, walk forest trails, and ride horseback in the surrounding landscape."
+    "how_to_get_there": "From Belize City (BZE), the lodge can pre-book private charter flights, helicopters or land transfers. By road the drive takes about 2 to 2.5 hours.",
+    "signature_experiences": "Creek swimming holes and the Rio On Pools, horseback riding in the Mountain Pine Ridge, Caracol and Xunantunich, and the Waterfall Spa.",
+    "who_its_for": "Couples, families and active travelers seeking a 20-room creekside lodge in the Mountain Pine Ridge, with waterfalls, horses and Maya sites close by."
    },
    "faqs": [
     {
+     "q": "How do you get to Blancaneaux Lodge?",
+     "a": "Fly into Philip S. W. Goldson International Airport (BZE) in Belize City. The lodge's vacation planning office can pre-book private charter flights, helicopters or land transfers from BZE. Driving time from the airport is about 2 to 2.5 hours by road."
+    },
+    {
      "q": "What is Blancaneaux Lodge known for?",
-     "a": "Blancaneaux Lodge is a secluded lodge in Belize’s Mountain Pine Ridge Forest Reserve. It is known for its forest and river setting, access to waterfalls, and proximity to Maya sites such as Caracol."
+     "a": "Francis Ford Coppola bought the abandoned lodge in the early 1980s, used it as a family retreat, and opened it to the public in 1993. It sits on Privassion Creek in the 107,000-acre Mountain Pine Ridge Forest Reserve and runs off the grid on its own hydroelectric plant."
     },
     {
      "q": "How many rooms does Blancaneaux Lodge have?",
-     "a": "Blancaneaux Lodge has 20 accommodations, including cabins and villas. Room configurations and availability can vary."
+     "a": "Blancaneaux Lodge has 20 rooms: thatched cabañas and villas, from Garden View and Riverfront Cabañas to a Family Cabaña, Two-Bedroom Villas, the Enchanted Cottage and Francis Ford Coppola's Villa. Dwellings are not air-conditioned; they have ceiling fans and screened porches."
     },
     {
      "q": "What is the best time to visit Blancaneaux Lodge?",
-     "a": "Belize’s dry season, generally from November through May, is a popular time to visit. Conditions vary, and the green season can bring heavier rain and fuller waterfalls."
+     "a": "Belize's dry season, generally from November through May, is a popular time to visit. Conditions vary, and the green season can bring heavier rain and fuller waterfalls."
     },
     {
      "q": "Is Blancaneaux Lodge good for families?",
-     "a": "Yes. Its forest setting and access to guided walks, horseback riding, waterfalls, and Maya sites can suit families. Check with the lodge about age requirements and which activities are appropriate for children."
+     "a": "The lodge has a Family Cabaña and Two-Bedroom Villas for larger groups, and its stables offer rides for every level. Check with the lodge about which excursions suit your children's ages."
     },
     {
-     "q": "How do you get to Blancaneaux Lodge?",
-     "a": "The lodge is reached by road from Belize City or the inland town of San Ignacio. Guests typically arrange a transfer or rental vehicle, with the final approach taking place on rural roads."
-    },
-    {
-     "q": "What can you do near Blancaneaux Lodge?",
-     "a": "Nearby outings include visits to Mountain Pine Ridge’s waterfalls and the Maya archaeological site of Caracol. Guided nature walks and horseback riding are also available in the area."
+     "q": "What can you do at Blancaneaux Lodge?",
+     "a": "Swim in the creek's granite pools, walk to Big Rock Falls, spend an afternoon at the Rio On Pools, ride horseback, mountain bike or go sunrise birding. Farther out are the Maya cities of Caracol and Xunantunich, Cahal Pech, the Rio Frio Cave and a chocolate-making tour. The Waterfall Spa sits on the creek."
     }
    ],
    "reviewed": true,
@@ -5135,93 +5178,92 @@
   },
   {
    "slug": "blue-reef",
-   "name": "Blue Reef",
+   "name": "Blue Reef Beach Resort",
    "ledgerId": "STY-2026-137933",
    "country": "Belize",
    "countrySlug": "belize",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A Belize resort shaped by the pull of the Caribbean Sea.",
+   "tagline": "A 19-suite beachfront hotel on the Placencia Peninsula, once Robert's Grove.",
    "quote": "At Blue Reef, the character of a stay begins with its setting in Belize.",
    "hero": "https://www.bluereefbeach.com/wp-content/uploads/2023/05/hero-beach.jpg",
    "gallery": [],
    "bestMonths": "Not specified. Confirm the resort’s location and seasonal guidance before planning.",
    "bestMonthsNote": null,
    "bestFor": [
-    "honeymoon",
+    "couples",
     "family",
-    "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "adventure"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Placencia Municipal Airport (PLJ)",
+   "airportDirections": "Tropic Air from BZE to PLJ; complimentary shuttle, 6 minutes. By road about 2h15 from BZE.",
    "founderNote": "Coastal stay in The Belize Collection; alternative to Umaya for the Placencia leg of the Deep Belize journey.",
    "rooms": {
     "paras": [],
     "items": [
-     "Resort stay on Belize’s Caribbean coast",
-     "A base for exploring the surrounding region",
-     "Time shaped by the sea and tropical setting",
-     "Room details have not yet been provided"
+     "19 guest suites set along the beach on the Placencia Peninsula",
+     "Family suites with a king bed and twin bunks sleep 2 to 4",
+     "Six acres of beachfront and landscaped gardens"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Belize experiences depend on the resort’s location",
-     "Explore the coast when confirmed locally",
-     "Discover inland Belize with a planned excursion",
-     "Ask the resort about available activities"
+     "Dive and snorkel inside and outside the Mesoamerican Barrier Reef",
+     "Head out on fishing charters, spearfishing or island hopping",
+     "Explore Lubaantun, Nim Li Punit and the ATM cave"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Resort-style property in Belize",
-     "Specific design details not provided",
-     "Guiding and service details not provided",
-     "Sustainability practices not provided"
+     "Beachfront swimming pool with a swim-up bar",
+     "Bamboo Beach Bistro, a beachfront restaurant and bar",
+     "A pier over the sea and a marina with fuel on the lagoon side",
+     "Bicycles and paddleboards for exploring Maya Beach and Seine Bight"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Blue Reef is a resort in Belize, a country where Caribbean coast and inland landscapes offer very different ways to explore. Its appeal can be framed around a coastal stay and the opportunity to build a trip around the destination. Specific details about the resort’s setting, rooms, and activities have not been provided, so these should be confirmed before making more precise claims."
+     "body": "Blue Reef Beach Resort is the remodelled second life of Robert's Grove, a long-standing Placencia Peninsula address, now a 19-suite boutique hotel and a member of The Belize Collection. It sits at Mile 20.5 on the Placencia Road, nine minutes from Placencia Village, with a beachfront pool and bistro on one side and a working marina on the lagoon side. Choose it for an easygoing beach base with the reef, the cayes and southern Belize's rainforest and Maya sites all within reach."
     }
    ],
    "facts": {
-    "best_months": "Not specified. Confirm the resort’s location and seasonal guidance before planning.",
-    "how_to_get_there": "Blue Reef is in Belize. Exact location, nearest airport, and transfer details have not been provided.",
-    "who_its_for": "A resort stay in Belize. The property details supplied are not sufficient to identify its best-fit travelers.",
-    "signature_experiences": "No property-specific signature experiences have been provided."
+    "best_months": "Not stated on the resort's website.",
+    "how_to_get_there": "Fly Tropic Air from Belize City (BZE) to Placencia (PLJ); a complimentary shuttle meets guests for the 6-minute drive. By road, about 2 hours 15 minutes from BZE.",
+    "signature_experiences": "Barrier reef diving and snorkeling, fishing and spearfishing charters, island hopping, and inland tours to the Monkey River, Cockscomb Basin and Maya sites.",
+    "who_its_for": "Couples, families and divers or anglers who want a small beachfront base on the Placencia Peninsula with a marina on site."
    },
    "faqs": [
     {
-     "q": "What is Blue Reef known for?",
-     "a": "Blue Reef is identified as a resort in Belize. Further details about its setting, facilities, and signature experiences have not been provided."
+     "q": "How do you get to Blue Reef Beach Resort?",
+     "a": "Tropic Air flies daily from Belize City (BZE) to Placencia (PLJ), and a complimentary shuttle meets guests at PLJ for the 6-minute drive to the resort. By road it is about 2 hours 15 minutes from Philip Goldson International Airport, by rental car or private or shared driver."
     },
     {
-     "q": "How many rooms does Blue Reef have?",
-     "a": "The number of rooms has not been provided."
+     "q": "What is Blue Reef Beach Resort known for?",
+     "a": "Formerly Robert's Grove, it is a remodelled 19-suite boutique hotel on the Placencia Peninsula with a beachfront pool and swim-up bar, Bamboo Beach Bistro and a marina on the lagoon side. It is a member of The Belize Collection."
     },
     {
-     "q": "What is the best time to visit Blue Reef?",
-     "a": "The best time depends on the resort’s exact location and the experiences you want. Confirm seasonal conditions and property-specific recommendations before booking."
+     "q": "How many rooms does Blue Reef Beach Resort have?",
+     "a": "There are 19 guest suites: Pool View Suites, Sea View Suites, Seaview Suites, Seaview Family Suites and Premium Seaview Suites."
     },
     {
-     "q": "Is Blue Reef good for families?",
-     "a": "Family suitability cannot be confirmed from the information available. Details about family rooms, child-friendly activities, and services have not been provided."
+     "q": "Is Blue Reef Beach Resort good for families?",
+     "a": "Yes. Family suites with one king bed and twin bunk beds sleep a family of two to four, and the Premium Seaview Suite sleeps four."
     },
     {
-     "q": "How do you get to Blue Reef?",
-     "a": "Blue Reef is in Belize, but its precise location and transfer arrangements have not been provided. Confirm the nearest arrival point and onward transport with the resort."
+     "q": "What can you do at Blue Reef Beach Resort?",
+     "a": "Diving and snorkeling on the barrier reef, fishing charters, spearfishing, island hopping and a sunset lagoon cruise, plus inland tours to the Monkey River, Cockscomb Basin, Lubaantun, Nim Li Punit and the ATM cave. Bicycles and paddleboards are on site."
+    },
+    {
+     "q": "Where is Blue Reef Beach Resort?",
+     "a": "At Mile 20.5 on the Placencia Road, about nine minutes north of Placencia Village and six minutes from Placencia Municipal Airport (PLJ)."
     }
    ],
    "reviewed": true,
@@ -6531,13 +6573,19 @@
    "regionSlug": "caribbean-mexico",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "An exclusive beachfront sanctuary where the Caribbean meets the protected wilderness of Sian Ka'an.",
+   "tagline": "A private seafront retreat between the Caribbean and the Sian Ka'an lagoon.",
    "quote": "Disconnect from the ordinary and discover a place where luxury exists in harmony with untouched nature.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/casa-maya-kaan/hero",
    "gallery": [],
    "bestMonths": "November - April",
    "bestMonthsNote": "These months offer warm temperatures, lower humidity and calmer Caribbean waters, creating ideal conditions for boating, snorkeling, paddleboarding, wildlife observation and enjoying the secluded beaches of the Sian Ka'an Biosphere Reserve. The dry season also provides exceptional opportunities to experience the reserve's rich biodiversity in comfortable weather.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "couples",
+    "group_exclusive_use",
+    "wellness",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -6545,55 +6593,85 @@
     "lng": -87.4516
    },
    "airport": "Tulum International Airport (TQO) (Recommended) Cancún International Airport (CUN)",
-   "airportDirections": "Tulum International Airport (TQO)\nApprox. 55 km\nDriving Time: Approximately 1 hour 15 minutes, followed by access into the Sian Ka'an Biosphere Reserve. Cancún International Airport (CUN)\nApprox. 145 km\nDriving Time: Approximately 2.5–3 hours, depending on traffic and reserve access conditions.",
+   "airportDirections": "Fly to Tulum International Airport (TQO) or Cancún International Airport (CUN). Casa Maya Ka'an arranges a chauffeured transfer from Tulum; the house is about 12 km south of town inside the Sian Ka'an Biosphere Reserve, reached by a winding dirt road.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Private Beachfront Villa",
-     "Luxury Guest Suites",
-     "Ocean View Bedrooms",
-     "Family Accommodation",
-     "Exclusive Villa Rental"
+     "The Tortuga Suite with Ocean View",
+     "The Canopy Suite with Jungle View",
+     "The Tucàn Suite with Jungle View",
+     "The Seashell Deluxe Room with Ocean View",
+     "Seven Mariposa Bell Tents on the beach",
+     "The Sol Bungalows (under construction)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private Boat Excursions",
-     "Snorkelling Adventures",
-     "Paddleboarding",
-     "Kayaking",
-     "Birdwatching",
-     "Wildlife Encounters",
-     "Private Dining",
-     "Wellness Experiences"
+     "Kayaking and paddleboarding",
+     "Snorkelling and diving",
+     "Fishing",
+     "Catamaran sailing day",
+     "Guided biking",
+     "Punta Allen fishing village",
+     "Tulum and Cobá ruins",
+     "Temazcal ceremony and yoga"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Exclusive-use beachfront villa",
-     "Located within the Sian Ka'an Biosphere Reserve",
-     "Private Caribbean beach access",
-     "Oceanfront swimming pool",
-     "Personalized concierge service",
-     "Private chef experiences",
-     "Spacious indoor and outdoor living areas",
-     "Curated nature excursions",
-     "Luxury beachfront bedrooms",
-     "Sustainable design inspired by nature",
-     "Exceptional privacy",
-     "Immersive eco-luxury setting"
+     "Private seafront residence inside the Sian Ka'an Biosphere Reserve",
+     "Private white-sand beach and access to the Sian Ka'an lagoon",
+     "Rooms and suites decorated in traditional Oaxacan style",
+     "Full-board dining by a private chef",
+     "Qualified nanny for families",
+     "Private security",
+     "Signature massage, yoga and temazcal",
+     "Chauffeured transfer from Tulum"
     ]
    },
    "onlyHere": [
-    "Hidden within the protected landscapes of the Sian Ka'an Biosphere Reserve, Casa Maya Ka'an offers a rare opportunity to experience one of the Caribbean's most untouched destinations in complete privacy. Every stay is centred around personalized service, immersive nature experiences and effortless luxury, creating unforgettable moments surrounded by turquoise waters, mangroves and abundant wildlife."
+    "Inside the protected Sian Ka'an Biosphere Reserve, Casa Maya Ka'an sits on a private white-sand cove with the Caribbean on one side and the Sian Ka'an lagoon on the other. Stays centre on private-chef dining, the reserve's lagoons and reef, and a slower pace far from Tulum's busier beaches."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO) or Cancún (CUN); chauffeured transfer from Tulum, about 12 km south of town inside the Sian Ka'an Biosphere Reserve via a dirt road.",
+    "signature_experiences": "Private-chef full board, lagoon and sea activities (kayak, paddleboard, snorkel, dive, fishing), catamaran sailing, temazcal, yoga, Punta Allen.",
+    "who_its_for": "Couples, families, friends, retreat groups and wedding parties seeking privacy in Sian Ka'an."
+   },
+   "faqs": [
+    {
+     "q": "Where is Casa Maya Ka'an?",
+     "a": "Casa Maya Ka'an is a private seafront retreat on the Boca Paila strip inside the Sian Ka'an Biosphere Reserve, a UNESCO World Heritage Site, about 12 km south of Tulum. It looks over both the Caribbean Sea and the Sian Ka'an lagoon."
+    },
+    {
+     "q": "How do I get to Casa Maya Ka'an?",
+     "a": "The nearest airports are Tulum International (TQO) and Cancún International (CUN). Casa Maya Ka'an arranges a chauffeured transfer from Tulum, and the final approach is a winding dirt road through the reserve; Tulum town centre is about 40 minutes' drive."
+    },
+    {
+     "q": "What accommodation does Casa Maya Ka'an have?",
+     "a": "Three bedroom suites (the Tortuga Suite with ocean view, the Canopy Suite and the Tucàn Suite with jungle view) and the Seashell Deluxe Room with ocean view, plus seven Mariposa bell tents on the beach. The Sol Bungalows are under construction."
+    },
+    {
+     "q": "Is Casa Maya Ka'an good for families?",
+     "a": "Yes. The house welcomes families and offers a qualified nanny so parents can relax while children are looked after."
+    },
+    {
+     "q": "What can you do at Casa Maya Ka'an?",
+     "a": "Fishing, kayaking, paddleboarding, snorkelling and diving in the reserve, a catamaran sailing day, guided biking, yoga, signature massage and a temazcal ceremony. Punta Allen fishing village and the Tulum and Cobá ruins are within reach."
+    },
+    {
+     "q": "When is the best time to visit Casa Maya Ka'an?",
+     "a": "The house does not name a best season. Most travellers plan Sian Ka'an for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Casa Maya Ka'an best for?",
+     "a": "Couples, families, groups of friends, retreats and wedding parties who want privacy away from busier spots. Full-board dining is prepared by a private chef."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6601,7 +6679,8 @@
     "primary": "PATH-07",
     "secondary": [
      "PATH-04",
-     "PATH-02"
+     "PATH-02",
+     "PATH-06"
     ],
     "setting": "tulum",
     "intentions": [],
@@ -6825,7 +6904,7 @@
   },
   {
    "slug": "chable-yucatan",
-   "name": "Chablé\nYucatán",
+   "name": "Chablé Yucatán",
    "ledgerId": "STY-2026-000057",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -6849,41 +6928,49 @@
    ],
    "bestMonths": "November-April",
    "bestMonthsNote": "These months fall in Yucatán’s dry season, with lower humidity, minimal rain, more comfortable temperatures, and excellent conditions for outdoor, wellness, and forest activities.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "couples",
+    "honeymoon",
+    "food"
+   ],
    "status": "founder_vetted",
    "statusDate": "2026-11-01",
    "coords": null,
    "airport": "Mérida International Airport (MID)",
-   "airportDirections": "From Mérida International Airport (MID), Chablé Yucatán is about a 25–30 minute drive (~ 35 km) via rural roads.",
+   "airportDirections": "Mérida International Airport (MID), approximately 45 to 50 minutes by road.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Casitas with private plunge pools",
-     "Villas (1–3 bedrooms) with full amenities",
-     "The Royal Villa – the ultimate hideaway"
+     "Casitas with private pool (one king or two queen beds, 2 to 4 guests)",
+     "Family Villa (two bedrooms, 3 to 6 guests)",
+     "Presidential Villa (three bedrooms, 4 to 6 guests)",
+     "The Royal Villa (three bedrooms, 4 to 6 guests), the ultimate hideaway",
+     "The Residences"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Mayan heritage and ruin tours",
+     "Mayan heritage and ruin visits",
      "Cenote exploration and swimming",
-     "Wellness, yoga & spa immersions",
-     "On‑site farm & bee conservation experiences",
+     "Wellness, yoga and spa journeys",
+     "Melipona bee sanctuary and bee workshop",
      "Cycling and nature walks",
-     "Gastronomic & culinary journeys"
+     "Mayan kitchen class at Casita Maya",
+     "Wellness golf"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private plunge pools in each unit",
+     "Private pool with every casita and villa",
      "Spa built around a natural cenote",
-     "Seamless integration of architecture and jungle",
-     "Bikes and golf cart service for guests",
-     "Holistic wellness therapies",
-     "Farm‑to‑table cuisine and Mayan ritual elements"
+     "Architecture integrated with the jungle, within a restored hacienda",
+     "Bicycles at every casita and villa",
+     "Treatments drawn from Mayan healing traditions",
+     "Ingredients from the orchards and gardens on property"
     ]
    },
    "onlyHere": [
@@ -6892,12 +6979,46 @@
    "why": [
     {
      "title": null,
-     "body": "Chablé Yucatán offers a profound pause in the Mayan forest, where ancient energies, modern luxury, and ecological care converge. It is ideal for seekers of wellness, couples longing for deep reconnection, solo travelers wanting introspective time, and conscious minds craving a place that honours land and spirit."
+     "body": "Chablé Yucatán offers a profound pause in the Mayan forest, where history, modern design and ecological care converge. It is ideal for wellness seekers, couples looking for reconnection, solo travellers wanting time to reflect, and anyone looking for a place that honours land and culture."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "November to April, the dry season (as stated by the resort).",
+    "how_to_get_there": "Fly to Mérida International Airport (MID), approximately 45 to 50 minutes by road; private transfers available.",
+    "signature_experiences": "Cenote spa and Chablé Spa Journeys, Melipona bee sanctuary, Mayan kitchen class, cycling, cenotes, wellness golf.",
+    "who_its_for": "Couples, honeymooners and wellness travellers; families welcome with a Kids Club."
+   },
+   "faqs": [
+    {
+     "q": "Where is Chablé Yucatán?",
+     "a": "Chablé Yucatán is in the Mayan jungle of Chocholá, about 40 km (25 miles) from Mérida, Mexico. It combines a restored historic hacienda with private casitas and villas."
+    },
+    {
+     "q": "How do I get to Chablé Yucatán?",
+     "a": "Fly into Mérida International Airport (MID); the resort says the drive is approximately 45 to 50 minutes. Private airport transfers can be arranged."
+    },
+    {
+     "q": "What accommodation does Chablé Yucatán offer?",
+     "a": "Casitas of 200 sq m with one king or two queen beds and a private pool; the two-bedroom Family Villa; the three-bedroom Presidential Villa; and the three-bedroom Royal Villa, the resort's most exclusive private space. The Residences are also available."
+    },
+    {
+     "q": "Is Chablé Yucatán suitable for children?",
+     "a": "Families are welcome and there is a Kids Club, though the resort says it is particularly suited to travellers looking for tranquillity and wellness-focused stays. The Family Villa sleeps three to six."
+    },
+    {
+     "q": "What is the cenote spa at Chablé Yucatán?",
+     "a": "The spa is built around a natural cenote, a sacred freshwater sinkhole in Mayan culture. Treatments include three Chablé Spa Journeys drawn from ancestral techniques and performed by Mayan healers."
+    },
+    {
+     "q": "When is the best time to visit Chablé Yucatán?",
+     "a": "The resort says the best time is November to April, when the weather is dry and ideal for outdoor activities."
+    },
+    {
+     "q": "Who is Chablé Yucatán best for?",
+     "a": "Couples and honeymooners seeking privacy, and wellness travellers. Guests can add yoga, cycling, the stingless Melipona bee sanctuary, a Mayan kitchen class, cenote visits and wellness golf."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -8159,7 +8280,7 @@
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A private island hideaway on Belize’s southern reef.",
+   "tagline": "An adults-only, all-inclusive private island off southern Belize.",
    "quote": "Here, the day follows the tide, the breeze and the water beyond your veranda.",
    "hero": "https://www.cocoplumcay.com/wp-content/uploads/2020/04/aerial-coco-plum-cay-island.jpg",
    "gallery": [],
@@ -8167,80 +8288,79 @@
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
+    "couples",
     "adventure",
-    "luxury",
-    "solo"
+    "group_exclusive_use"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Dangriga Airport",
+   "airport": "Philip S. W. Goldson International Airport (BZE)",
    "airportDirections": "Guests are typically met for their arrival in Belize and travel to the resort via a 30-minute boat ride from Dangriga.",
    "founderNote": "Private island stay in the handpicked Belize collection.",
    "rooms": {
     "paras": [],
     "items": [
-     "Private island setting off Belize’s southern coast",
-     "Caribbean waters and reef scenery all around",
-     "Quiet, barefoot atmosphere made for slowing down",
-     "A secluded base for time on the water"
+     "21 private cabanas along the eastern shore of a 16-acre island",
+     "No more than 48 guests at a time",
+     "King beds and private balconies facing the Caribbean",
+     "A three-bedroom, three-bathroom overwater villa"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkel Belize’s southern reef",
-     "Explore nearby waters by kayak",
-     "Spend a day fishing in the Caribbean",
-     "Take a boat excursion along the coast"
+     "Snorkel and dive the barrier reef, a 10-minute boat ride away",
+     "Go fishing with local guides",
+     "Hike Maya ruins and zipline through the jungle on the mainland",
+     "Paddle or sail around the island"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private island location",
-     "Direct access to Caribbean waters",
-     "Intimate, low-key island atmosphere",
-     "Water-based experiences from the resort"
+     "Adults-only and locally owned",
+     "Kayaks, snorkel gear, paddleboards and a Hobie Cat included",
+     "Full island rentals for weddings and groups"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Coco Plum Island Resort offers the rare feeling of having a small island to yourself, with the Caribbean close at every turn. Its setting off Belize’s southern coast makes the water the natural focus of a stay, whether you are seeking unhurried island days or time exploring the surrounding reef. Choose it for seclusion, sea air and a slower rhythm, rather than a busy resort scene."
+     "body": "Coco Plum Island Resort is a locally owned, adults-only, all-inclusive island off Belize's southern coast, the only facility on its cay. Twenty-one cabanas line the eastern shore of the 16-acre island, and with no more than 48 guests at a time the beaches stay quiet. Meals, local drinks and water sports are included, the reef is ten minutes away by boat, and mainland tours can be added."
     }
    ],
    "facts": {
-    "best_months": "Late November through May is generally Belize’s drier season. Conditions vary, and June through November is typically wetter.",
-    "how_to_get_there": "Travel to Belize, then continue to Coco Plum Island Resort by boat. Confirm transfer details and timing directly with the resort.",
-    "who_its_for": "Travelers seeking a secluded Caribbean island stay, a slower pace and time on the water. The available information does not establish specific family facilities.",
-    "signature_experiences": "Snorkeling, kayaking, fishing and boat excursions are water-based experiences associated with the island setting. Verify current offerings with the resort."
+    "best_months": "Late November through May is generally Belize's drier season. Conditions vary, and June through November is typically wetter.",
+    "how_to_get_there": "Optional domestic flight from Belize City to Dangriga, or the shared shuttle from BZE to Dangriga included in packages (about 1.5 to 2.5 hours, per the resort); then a connecting boat to the island.",
+    "signature_experiences": "Reef snorkeling and diving ten minutes away, included water sports, mainland Maya ruins and ziplining, and full island buyouts.",
+    "who_its_for": "Adults only: couples, honeymooners and small groups seeking an all-inclusive private island with no more than 48 guests."
    },
    "faqs": [
     {
+     "q": "How do you get to Coco Plum Island Resort?",
+     "a": "Fly into Philip S. W. Goldson International Airport (BZE). From Belize City you can take a short domestic flight to Dangriga, or the shared ground shuttle to Dangriga included in packages (the resort's pages give about 1.5 to 2.5 hours); a connecting boat then takes you to the island. The reservations team arranges all local transfers."
+    },
+    {
      "q": "What is Coco Plum Island Resort known for?",
-     "a": "Coco Plum Island Resort is known for its private island setting off Belize’s southern coast and its relaxed, sea-focused atmosphere. It offers a secluded base for enjoying the Caribbean and nearby reef waters."
+     "a": "An adults-only, all-inclusive private island resort, locally owned and operating for over 25 years, about nine miles off Dangriga with the barrier reef a 10-minute boat ride away."
     },
     {
      "q": "How many rooms does Coco Plum Island Resort have?",
-     "a": "The available property information does not specify the number of rooms. Confirm current room inventory directly with the resort before booking."
+     "a": "There are 21 private cabanas along the island's eastern shore, plus a three-bedroom, three-bathroom overwater villa. The resort hosts no more than 48 guests at a time."
     },
     {
      "q": "What is the best time to visit Coco Plum Island Resort?",
-     "a": "Belize’s drier season generally runs from late November through May, while the wetter season is typically June through November. Weather varies, so check current conditions when planning."
+     "a": "Belize's drier season generally runs from late November through May, while the wetter season is typically June through November. Weather varies, so check current conditions when planning."
     },
     {
      "q": "Is Coco Plum Island Resort good for families?",
-     "a": "The property information provided does not confirm family rooms, child-focused activities or other family-specific services. Families should contact the resort to discuss ages, room arrangements and suitable activities."
+     "a": "No. Coco Plum is adults-only. The resort points families to its family-friendly sister resort, Manta Island Resort, also in Belize."
     },
     {
-     "q": "How do you get to Coco Plum Island Resort?",
-     "a": "Coco Plum Island Resort is reached by traveling to Belize and continuing to the island by boat. Confirm the current transfer arrangements and meeting point with the resort before travel."
-    },
-    {
-     "q": "What can you do during a stay at Coco Plum Island Resort?",
-     "a": "The island setting lends itself to time on the water, including snorkeling, kayaking, fishing and boat excursions. Ask the resort which activities are available and whether they require advance arrangements."
+     "q": "What is included at Coco Plum Island Resort?",
+     "a": "Packages include your cabana, all meals, snacks on scheduled tours, a daily bar snack, unlimited local alcoholic drinks, soft drinks and coffee, non-motorized water sports, and shared transfers from BZE. International flights are not included."
     }
    ],
    "reviewed": true,
@@ -8356,7 +8476,7 @@
   },
   {
    "slug": "conrad-tulum-riviera-maya",
-   "name": "Conrad Tulum \n Riviera Maya",
+   "name": "Conrad Tulum Riviera Maya",
    "ledgerId": "STY-2026-000064",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -8369,7 +8489,11 @@
    "gallery": [],
    "bestMonths": "November - May",
    "bestMonthsNote": "The Riviera Maya enjoys warm tropical weather throughout the year, but November through May generally provides the most comfortable conditions with lower humidity, abundant sunshine and calm Caribbean waters. These months are ideal for beach holidays, snorkeling, spa retreats and exploring nearby cenotes and archaeological sites while avoiding the wetter summer season.",
-   "bestFor": [],
+   "bestFor": [
+    "family",
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -8377,56 +8501,81 @@
     "lng": -87.4297
    },
    "airport": "Cancún International Airport (CUN) Tulum International Airport (TQO)",
-   "airportDirections": "Tulum International Airport (TQO)\nApproximately 75 km\nAround 1 hour driving\nRecommended for travelers visiting southern Riviera Maya\nCancún International Airport (CUN)\nApproximately 95 km\nAround 90 minutes driving\nLargest international gateway with the greatest airline selection",
+   "airportDirections": "Tulum International Airport (TQO) about 40.6 miles; Cancún International Airport (CUN) about 59.5 miles.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Ceiba Suites",
-     "Tropical View Suites",
-     "Nature View Suites",
-     "Ocean View Suites",
-     "Oceanfront Suites",
-     "Swim-Up Suites",
-     "Family Suites",
-     "Presidential Suites"
+     "Tropical View Guestrooms",
+     "Partial Ocean View Guestrooms",
+     "Ocean View Guestrooms",
+     "Ceiba Tropical View and Ocean View Suites",
+     "Ceiba Family Suite (two bedrooms)",
+     "Ceiba Governors Suite",
+     "Ceiba Presidential Suite"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beach Relaxation",
-     "Spa Wellness",
-     "Cenote Exploration",
-     "Mayan Cultural Experiences",
-     "Luxury Dining",
-     "Pool Escapes",
-     "Family Adventures",
-     "Fitness & Yoga"
+     "Conrad Spa Tulum",
+     "MYTHOS World Jungle Tour and The Stargazer",
+     "Chef-in-residence tasting menu at Autor",
+     "Five pools and the beach"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private Caribbean beachfront",
-     "Multi-level infinity pools",
-     "Conrad Spa Tulum",
+     "349 rooms and suites on the Caribbean",
+     "Five pools",
+     "Conrad Spa Tulum with sixteen treatment rooms",
      "Eleven restaurants and bars",
-     "Luxury suites with spacious terraces",
-     "Jungle-inspired architecture",
-     "Family-friendly amenities",
-     "Adults-only relaxation areas",
-     "Modern wellness facilities",
-     "Curated local experiences"
+     "MYTHOS World family programme",
+     "Ceiba Club adults-only enclave from 10 January 2027",
+     "Setting of jungle, mangroves and sea"
     ]
    },
    "onlyHere": [
     "Conrad Tulum Riviera Maya offers a distinctive luxury experience where contemporary architecture blends seamlessly with the surrounding mangroves, jungle and Caribbean coastline. Every pathway, pool and suite has been thoughtfully designed to celebrate nature while delivering exceptional comfort, creating a destination where guests experience both refined hospitality and authentic Riviera Maya beauty."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO), about 40.6 miles, or Cancún (CUN), about 59.5 miles; private van transfers through the resort.",
+    "signature_experiences": "Conrad Spa Tulum, MYTHOS World family discovery, 11 restaurants and bars including Autor tasting menu, five pools, included wellness experiences such as ocean breathwork, Mayan clay and cacao.",
+    "who_its_for": "Families, food lovers and spa-goers; adults-only Ceiba Club from 10 January 2027."
+   },
+   "faqs": [
+    {
+     "q": "Where is Conrad Tulum Riviera Maya?",
+     "a": "Conrad Tulum Riviera Maya is a bayfront resort where jungle and mangroves meet the Caribbean Sea, on the Riviera Maya coast north of Tulum, Mexico."
+    },
+    {
+     "q": "How do I get to Conrad Tulum Riviera Maya?",
+     "a": "Tulum International Airport (TQO) is about 40.6 miles (65 km) away and Cancún International Airport (CUN) about 59.5 miles (96 km), according to the resort. Private van transfers can be booked through the resort."
+    },
+    {
+     "q": "What rooms and suites does Conrad Tulum have?",
+     "a": "The resort has 349 rooms and suites: Tropical View, Partial Ocean View and Ocean View guestrooms, Ceiba suites and guestrooms, the Ceiba Family Suite with two bedrooms, the Ceiba Governors Suite and the Ceiba Presidential Suite."
+    },
+    {
+     "q": "Is Conrad Tulum family friendly?",
+     "a": "Yes. MYTHOS World is the resort's family programme, with age-specific discovery labs, a Jungle Tour and The Stargazer. From 10 January 2027 the Ceiba Club accommodations and areas will be reserved for guests aged 18 and over."
+    },
+    {
+     "q": "What dining and wellness does Conrad Tulum offer?",
+     "a": "There are 11 restaurants and bars, including Kengai, Ukai, Maratea and the chef-in-residence tasting menu at Autor, plus five pools and Conrad Spa Tulum with sixteen treatment rooms."
+    },
+    {
+     "q": "When is the best time to visit Conrad Tulum?",
+     "a": "The resort does not name a best season. Most travellers plan the Riviera Maya for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Conrad Tulum best for?",
+     "a": "Families who want a structured kids programme, food lovers who want choice, and spa-goers, with an adults-only Ceiba Club enclave from January 2027."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -14082,81 +14231,89 @@
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "A quiet lodge in Belize, with its defining details still to be discovered.",
+   "tagline": "A private 7,200-acre reserve in the Mountain Pine Ridge, with waterfalls and 100 miles of trails.",
    "quote": "A name can suggest seclusion, but the experience is shaped by the place itself.",
    "hero": "https://www.hiddenvalleyinn.com/wp-content/uploads/2023/05/hero-image.jpg",
    "gallery": [],
    "bestMonths": "Not confirmed. The lodge's precise location and seasonal experiences have not been provided.",
    "bestMonthsNote": null,
    "bestFor": [
-    "solo"
+    "family",
+    "couples",
+    "adventure",
+    "conservation"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "San Ignacio (CYD-Town Airstrip)",
+   "airport": "Philip S. W. Goldson International Airport (BZE)",
    "airportDirections": "The lodge is approximately a 51 minute drive from the San Ignacio Town Airstrip.",
    "founderNote": "Protected wilderness, waterfalls and quiet , 7,200 acres of Mountain Pine Ridge with forest trails, waterfalls and swimming areas.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "Set in Belize, in the heart of Central America",
-     "A lodge stay with a sense of retreat",
-     "Room types have not yet been specified",
-     "Distinctive experiences remain to be confirmed"
-    ]
+    "paras": [
+     "A private jungle lodge on a 7,200-acre reserve in the Mountain Pine Ridge",
+     "Garden cottages with wood-burning fireplaces and a Family Cottage that sleeps four",
+     "Valley View Villas with heated plunge infinity pools, in one- and two-bedroom layouts",
+     "The Fire Tower, four storeys above the forest floor, and two Wilderness Villas"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Activities have not been confirmed",
-     "Guided excursions have not been confirmed",
-     "Wildlife viewing opportunities have not been confirmed",
-     "Local experiences have not been confirmed"
+     "Hike the reserve's trails to waterfalls and swimming pools",
+     "Reserve Butterfly Falls for a private day",
+     "Watch birds through pine savanna and broadleaf forest",
+     "Take guided night walks and waterfall picnics"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Property category: lodge",
-     "Located in Belize",
-     "Room types not yet provided",
-     "Design and service details not confirmed"
-    ]
+    "paras": [
+     "More than 100 miles of private hiking trails to waterfalls and viewpoints",
+     "Menus drawn from Maya and Mestizo traditions, local farms and wild ingredients",
+     "Solar power, water collection and composting",
+     "100% Belizean owned and operated"
+    ],
+    "items": []
    },
-   "onlyHere": [],
+   "onlyHere": [
+    "Sleep in the Fire Tower, built in the tradition of old logging fire lookouts, with 360-degree views",
+    "Have Butterfly Falls and its natural pool to yourself for the day",
+    "Arrive by helicopter over 1,000 Foot Falls in about 20 minutes from Belize City",
+    "Let children loose on a kids' trail with tire swings and evening bonfires"
+   ],
    "why": [
     {
      "title": null,
-     "body": "Hidden Valley Lodge is identified as a lodge in Belize, but no verified details are available about its setting, design, guiding, or activities. Those specifics matter when choosing a stay, so we have kept this description grounded in what is known rather than suggesting experiences or amenities that have not been confirmed. Ask the lodge directly about its location, accommodation, and available excursions before planning a visit."
+     "body": "Hidden Valley is a private lodge tucked inside its own 7,200-acre reserve in the Mountain Pine Ridge, where pine forest gives way to rainforest and more than 100 miles of trails lead to waterfalls and swimming holes. The Roe family acquired it in 2001 to protect the forest, and it is 100% Belizean owned and operated. Rooms range from fireside cottages to villas with heated plunge pools, and the lodge is set up for families as well as couples."
     }
    ],
    "facts": {
-    "best_months": "Not confirmed. The lodge's precise location and seasonal experiences have not been provided.",
-    "how_to_get_there": "Located in Belize. The nearest arrival point, route, and transfer arrangements have not been provided.",
-    "who_its_for": "Travelers considering a lodge stay in Belize. Room options, family facilities, and activity offerings are not yet confirmed.",
-    "signature_experiences": "No property-specific signature experiences have been provided."
+    "best_months": "Not stated on the lodge's website.",
+    "how_to_get_there": "Helicopter from Belize City in roughly 20 minutes, or about 2.5 hours by road from BZE (45 minutes from San Ignacio); the lodge recommends its private transfer.",
+    "signature_experiences": "Waterfall hikes on 100 miles of private trails, a private day at Butterfly Falls, the Fire Tower, and Maya and Mestizo cooking.",
+    "who_its_for": "Families, couples and hikers seeking a private reserve with waterfalls, trails and space; Fire Tower and Wilderness Villas are adults-only."
    },
    "faqs": [
     {
+     "q": "How do you get to Hidden Valley Lodge?",
+     "a": "Private helicopter or fixed-wing transfers can be arranged; the helicopter takes roughly 20 minutes from Belize City, with optional detours over 1,000 Foot Falls and the Great Blue Hole. By road it is about 2.5 hours from Philip Goldson International Airport, about 45 minutes from San Ignacio, and the lodge recommends its own private transfer."
+    },
+    {
      "q": "What is Hidden Valley Lodge known for?",
-     "a": "It is listed as a lodge in Belize. Further details about its setting, features, or signature experiences have not been provided."
+     "a": "A private 7,200-acre reserve in the Mountain Pine Ridge with more than 100 miles of hiking trails and hidden waterfalls, owned by the Roe family since 2001 and 100% Belizean owned and operated."
     },
     {
-     "q": "How many rooms does Hidden Valley Lodge have?",
-     "a": "The room count has not been provided. Confirm availability and accommodation details with the lodge."
-    },
-    {
-     "q": "What is the best time to visit Hidden Valley Lodge?",
-     "a": "The lodge's precise location and seasonal activities have not been provided, so a property-specific recommendation cannot be confirmed. Check local conditions for your travel dates before booking."
+     "q": "What kinds of rooms does Hidden Valley Lodge have?",
+     "a": "Three garden cottages with wood-burning fireplaces, a Family Cottage, Valley View Villas (single, deluxe and two-bedroom) with heated plunge infinity pools, the Fire Tower, and two Wilderness Villas with 24/7 butler service and heated plunge pools."
     },
     {
      "q": "Is Hidden Valley Lodge good for families?",
-     "a": "Family facilities, room configurations, and child-friendly activities have not been confirmed. Contact the lodge to ask about suitability for your children's ages."
+     "a": "Yes. The lodge offers kids' menus at every meal, a kids' trail with tire swings, s'mores and family bonfires, and a Family Cottage that sleeps four. The Fire Tower and Wilderness Villas are adults-only (18+)."
     },
     {
-     "q": "How do you get to Hidden Valley Lodge?",
-     "a": "The lodge is in Belize, but its precise location and transfer options have not been provided. Ask the property for the nearest arrival point and directions."
+     "q": "What can you do at Hidden Valley Lodge?",
+     "a": "Hike the private trail network to waterfalls and viewpoints with a map and radio, swim in natural pools, reserve Butterfly Falls for the day, birdwatch, and join guided night walks, waterfall picnics or cooking with the kitchen team."
     }
    ],
    "reviewed": true,
@@ -14429,8 +14586,11 @@
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/holistika/hero",
    "gallery": [],
    "bestMonths": "November - April",
-   "bestMonthsNote": "For WES editorial planning, the drier months from November through April offer the most comfortable rhythm for outdoor yoga, jungle walks, pool time and wider Tulum exploration. December through March are likely to feel busiest, while November and April may better suit travelers seeking a quieter transition-season stay.",
-   "bestFor": [],
+   "bestMonthsNote": "The drier months from November through April suit outdoor yoga, jungle walks and pool time.",
+   "bestFor": [
+    "wellness",
+    "couples"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -14462,27 +14622,60 @@
    "features": {
     "paras": [],
     "items": [
-     "Twenty-Four Jungle Rooms",
-     "Yoga Shalas",
+     "Jungle boutique hotel and holistic centre",
+     "Yoga shalas",
      "The Dome",
-     "Jungle Pools",
-     "Tierra Plant-Based Restaurant",
+     "Jungle pools",
+     "Tierra vegan and vegetarian restaurant",
      "Jungle Art Walk",
      "Treehouse",
-     "Pottery Space",
-     "Fire Circle",
+     "Pottery space",
+     "Fire circle",
      "Yom Yom Foodtique",
      "Holistika Boutique",
-     "Retreat Facilities"
+     "Retreat facilities"
     ]
    },
    "onlyHere": [
     "Only here can a morning yoga practice flow into nourishing plant-based food, a barefoot jungle art walk, an afternoon beside the pool and an evening sound experience beneath the Dome. Holistika brings sleep, movement, creativity, ritual and community together inside one living wellness sanctuary."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO) or Cancún (CUN); the hotel is 1 km off Highway 307 on Tulum's jungle outskirts.",
+    "signature_experiences": "Daily yoga, temazcal, cacao ceremony, sound healing in the Dome, Jungle Art Walk, Tierra plant-based restaurant.",
+    "who_its_for": "Wellness and yoga travellers, couples, community-minded guests and retreat groups."
+   },
+   "faqs": [
+    {
+     "q": "Where is Holistika?",
+     "a": "Holistika is a wellness boutique hotel in the jungle on the outskirts of Tulum, about 7 km from Paraíso Beach and 1 km from Highway 307, Quintana Roo, Mexico."
+    },
+    {
+     "q": "How do I get to Holistika?",
+     "a": "The nearest airports are Tulum International (TQO) and Cancún International (CUN); the hotel does not publish transfer times. It sits 1 km off Highway 307 and about 15 minutes from the Zamná archaeological zone."
+    },
+    {
+     "q": "What rooms does Holistika offer?",
+     "a": "Single Rooms on the second floor, pool front with a private balcony; Double Rooms on the ground level, pool front; and the Beehive, a shared community stay. Rooms have WiFi and air conditioning."
+    },
+    {
+     "q": "What wellness experiences are offered at Holistika?",
+     "a": "Daily yoga from Hatha and Vinyasa to Kundalini and acro yoga, temazcal, cacao ceremonies, sonic experiences in the Dome and therapeutic massage."
+    },
+    {
+     "q": "What else is on site at Holistika?",
+     "a": "Yoga shalas, the Dome, jungle pools, Tierra vegan and vegetarian restaurant, Yom Yom Foodtique, the Jungle Art Walk, a treehouse, a pottery space, a fire circle and a boutique."
+    },
+    {
+     "q": "When is the best time to visit Holistika?",
+     "a": "The hotel does not name a best season. Most travellers plan Tulum for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Holistika best for?",
+     "a": "Wellness and yoga travellers, couples, and guests who want community; the hotel also hosts retreats."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -14509,7 +14702,7 @@
   },
   {
    "slug": "hotel-bardo",
-   "name": "Hotel \n Bardo",
+   "name": "Hotel Bardo",
    "ledgerId": "STY-2026-000107",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -14522,7 +14715,10 @@
    "gallery": [],
    "bestMonths": "November - May",
    "bestMonthsNote": "The dry season from November through May offers warm tropical weather, comfortable humidity and abundant sunshine, making it the ideal time to enjoy Hotel Bardo's outdoor wellness spaces, private plunge pools, yoga sessions and nearby beaches and cenotes. These months provide the perfect setting for a relaxing boutique escape immersed in nature.",
-   "bestFor": [],
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -14533,15 +14729,11 @@
    "airportDirections": "Tulum International Airport (TQO)\nApproximately 42 km\nAround 45 minutes by car\nClosest international airport\nCancún International Airport (CUN)\nApproximately 118 km\nAround 1 hour 50 minutes by car\nLargest airport with extensive international connections\nRecommended Arrival Airport: Tulum International Airport (TQO)",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Jungle Villas",
-     "Pool Villas",
-     "Luxury Villas",
-     "Garden Villas",
-     "Private Plunge Pool Villas",
-     "Signature Villas"
-    ]
+    "paras": [
+     "Private Pool Villas.",
+     "Private Jungle Garden Villas."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -14559,25 +14751,56 @@
    "features": {
     "paras": [],
     "items": [
-     "Adults-only boutique hotel",
-     "Private plunge pool villas",
-     "Jungle-inspired architecture",
-     "Holistic wellness experiences",
-     "Signature restaurant",
-     "Outdoor swimming pool",
-     "Concierge services",
-     "Lush tropical gardens",
-     "Open-air design",
-     "Peaceful atmosphere"
+     "Adults-only villa hotel",
+     "Loft-style villas of about 60 sq m with private jungle gardens",
+     "Private pools in Pool Villas",
+     "Heated pool access for Superior category rooms",
+     "The Spa 13",
+     "Milum restaurant and The Kinky Room bar",
+     "Decor by local artisans",
+     "Temazcal and sound healing"
     ]
    },
    "onlyHere": [
-    "Hotel Bardo is more than a boutique hotel, it's a sanctuary intentionally designed to foster calm, privacy and personal wellbeing. Surrounded by tropical gardens, every villa embraces indoor-outdoor living while encouraging guests to disconnect from daily routines and reconnect with nature through thoughtful design and immersive hospitality."
+    "Hotel Bardo is built around the idea of transition and the soul's journey, drawing on the Mexican tradition of Día de Muertos. Every villa opens to a private jungle garden, and the art, lighting and rituals are designed to encourage calm and introspection."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO) or Cancún (CUN); the hotel is in Tulum at Río Otate and Río Basca.",
+    "signature_experiences": "Temazcal, sound healing, Bardo Recovery ice bath, The Spa 13, Milum restaurant and The Kinky Room bar.",
+    "who_its_for": "Adults only; couples and wellness travellers."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hotel Bardo?",
+     "a": "Hotel Bardo is a jungle villa hotel in Tulum, at Río Otate and Río Basca, Tulum, Quintana Roo, Mexico."
+    },
+    {
+     "q": "How do I get to Hotel Bardo?",
+     "a": "The nearest airports are Tulum International (TQO) and Cancún International (CUN); the hotel does not publish transfer times. James Wild & Co can arrange the transfer."
+    },
+    {
+     "q": "Is Hotel Bardo adults only?",
+     "a": "Yes. The hotel describes its villas as adults only."
+    },
+    {
+     "q": "What villas does Hotel Bardo have?",
+     "a": "Private Pool Villas and Private Jungle Garden Villas. Each loft-style villa is about 60 sq m (645 sq ft) with a living room, bedroom and a bathroom with semi-exterior shower, opening to a private jungle garden; Superior category rooms have access to a heated pool."
+    },
+    {
+     "q": "What experiences does Hotel Bardo offer?",
+     "a": "Temazcal, sound healing, yoga and the Bardo Recovery ice bath, with treatments at The Spa 13 influenced by Mayan healing traditions. Meals are served at Milum restaurant or in your villa, with drinks at The Kinky Room bar."
+    },
+    {
+     "q": "When is the best time to visit Hotel Bardo?",
+     "a": "The hotel does not name a best season. Most travellers plan Tulum for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Hotel Bardo best for?",
+     "a": "Adult couples and wellness travellers looking for a private, introspective villa stay in Tulum."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -14618,7 +14841,9 @@
    "gallery": [],
    "bestMonths": "November to April",
    "bestMonthsNote": "November to April is Tulum's dry season, with warm sea, lower humidity and the best beach days.",
-   "bestFor": [],
+   "bestFor": [
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -14661,9 +14886,38 @@
      "body": "Best for couples, friends traveling together, food lovers and anyone who wants the beach on the doorstep and a lively table at night."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO) or Cancún (CUN); the hotel is at Km 8.5, Tulum to Boca Paila road.",
+    "signature_experiences": "Central 100-seat restaurant, beach club, music, Distrito Panamera.",
+    "who_its_for": "Travellers who want an oceanfront boutique hotel with a lively restaurant, beach club and music."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hotel Panamera?",
+     "a": "Hotel Panamera is an oceanfront boutique hotel on Tulum beach at Km 8.5 of the Tulum to Boca Paila road, and part of Distrito Panamera."
+    },
+    {
+     "q": "How do I get to Hotel Panamera?",
+     "a": "The nearest airports are Tulum International (TQO) and Cancún International (CUN); the hotel does not publish transfer times. James Wild & Co can arrange the transfer."
+    },
+    {
+     "q": "How many rooms does Hotel Panamera have?",
+     "a": "36 rooms, set around a central 100-seat restaurant and beach club."
+    },
+    {
+     "q": "What is Hotel Panamera known for?",
+     "a": "Design, food and music, which the hotel says play a fundamental role in its culture, along with its restaurant and beach club on the sand."
+    },
+    {
+     "q": "When is the best time to visit Hotel Panamera?",
+     "a": "The hotel does not name a best season. Most travellers plan Tulum for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Hotel Panamera best for?",
+     "a": "Like-minded travellers who want beach life with a sense of community, and food and music lovers."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -16585,24 +16839,23 @@
   },
   {
    "slug": "jaguar-reef-lodge",
-   "name": "Jaguar Reef Lodge",
+   "name": "The Lodge at Jaguar Reef",
    "ledgerId": "STY-2026-936143",
    "country": "Belize",
    "countrySlug": "belize",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A barefoot retreat on Belize’s Caribbean coast.",
+   "tagline": "A beachfront lodge minutes from the Garifuna village of Hopkins.",
    "quote": "Here, the rhythm of the sea sets the pace.",
    "hero": "https://www.jaguarreefbelize.com/wp-content/uploads/2020/08/JRL_FINAL2020_stacked-WHITE.png",
    "gallery": [],
    "bestMonths": "December through May is generally the drier season and a popular time for outdoor activities. Conditions vary by year.",
    "bestMonthsNote": null,
    "bestFor": [
-    "honeymoon",
-    "adventure",
-    "luxury",
-    "solo"
+    "family",
+    "couples",
+    "adventure"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -16613,67 +16866,66 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Set on the Caribbean coast near Hopkins, Belize",
-     "A relaxed resort base for reef and inland adventures",
-     "Sea breezes, tropical greenery, and an easygoing coastal mood",
-     "A place to balance time on the water with time ashore"
+     "Beachfront suites and villas near Hopkins on Belize's southern coast",
+     "Deluxe Suites, a Seafront Suite and two-bedroom villas",
+     "Every room air-conditioned, with a porch or balcony facing the sea"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkel or dive among Belize Barrier Reef marine life",
-     "Take a boat trip along the coast",
-     "Explore rainforest reserves and waterfalls inland",
-     "Visit Maya archaeological sites in southern Belize"
+     "Snorkel or dive the Belize Barrier Reef",
+     "Paddle, sail or cycle straight from the beach",
+     "Learn about Garifuna food and music in Hopkins",
+     "Head inland to rainforest reserves and Maya sites"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Caribbean-facing setting near Hopkins",
-     "Access to reef and inland excursions",
-     "Relaxed resort atmosphere",
-     "Coastal base for exploring southern Belize"
+     "Beachfront dining and a lounge bar",
+     "Swim-up pool bar and a separate kids' pool",
+     "Big Dock Ceviche Bar, Charlie's Pool Bar and Don Tonito's Pizzeria",
+     "Spa, plus kayaks, bicycles, a Hobie Cat and paddleboards"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Jaguar Reef Lodge pairs a Caribbean shoreline setting with access to the varied landscapes of southern Belize. Stay for a quieter coastal rhythm, then venture out toward the Belize Barrier Reef or inland rainforest and Maya sites. Its appeal is the contrast: days shaped by sea and sun, with Belize’s adventurous interior within reach."
+     "body": "For over twenty years The Lodge at Jaguar Reef has been a beachfront base near Hopkins, the Garifuna fishing village on Belize's southern coast. Suites and villas face the sea along raked-sand paths, with a swim-up pool bar, a kids' pool and beachfront dining close by. Its appeal is the mix: easy days on the water, Garifuna culture next door, and Belize's reef and rainforest within reach."
     }
    ],
    "facts": {
     "best_months": "December through May is generally the drier season and a popular time for outdoor activities. Conditions vary by year.",
-    "how_to_get_there": "Travel to southern Belize via the international airport, then continue toward Hopkins by road or domestic flight. Confirm transfer options and journey times with the lodge.",
-    "who_its_for": "Travelers seeking a relaxed Caribbean-coast stay with opportunities to explore Belize’s reef and inland landscapes.",
-    "signature_experiences": "Reef outings, coastal boat trips, and excursions inland to rainforest scenery, waterfalls, and Maya sites."
+    "how_to_get_there": "Fly about 15 minutes from BZE to Dangriga, then drive about 30 minutes; or drive about 2.5 hours from BZE. Book flights and transfers at least 72 hours ahead.",
+    "signature_experiences": "Barrier reef snorkeling and diving, water sports from the beach, Garifuna culture in Hopkins, and inland rainforest and Maya site tours.",
+    "who_its_for": "Families, couples and active travelers who want an easygoing beachfront base near Hopkins, with water sports on site and reef and rainforest tours nearby."
    },
    "faqs": [
     {
-     "q": "What is Jaguar Reef Lodge known for?",
-     "a": "Jaguar Reef Lodge is a coastal resort near Hopkins, Belize, known for its Caribbean setting and access to reef and inland experiences. It offers a relaxed base for exploring southern Belize."
+     "q": "How do you get to The Lodge at Jaguar Reef?",
+     "a": "Fly about 15 minutes from Belize International Airport (BZE) to Dangriga, then drive about 30 minutes to Hopkins. Alternatively, book a shuttle or rent a car for the drive of about 2.5 hours from BZE. Flight and transfer arrangements need to be booked at least 72 hours before arrival."
     },
     {
-     "q": "How many rooms does Jaguar Reef Lodge have?",
-     "a": "The number of rooms is not specified in the available property information. Confirm the current room count directly with the lodge before booking."
+     "q": "What is The Lodge at Jaguar Reef known for?",
+     "a": "A beachfront lodge minutes from the Garifuna fishing village of Hopkins, with beachfront dining, a swim-up pool bar, a kids' pool and water sports from kayaks to a Hobie Cat. It is part of The Belize Collection."
     },
     {
-     "q": "What is the best time to visit Jaguar Reef Lodge?",
-     "a": "Belize’s drier season, generally from December through May, is often favored for outdoor travel. Weather varies, so check local conditions for your dates."
+     "q": "What kinds of rooms does The Lodge at Jaguar Reef have?",
+     "a": "Deluxe Suites (lower and upper level), a Seafront Suite, Standard Two-Bedroom Villas, Two-Bedroom Seaview Villas with pool and a Two-Bedroom Penthouse with plunge pool. All accommodations are air-conditioned."
     },
     {
-     "q": "Is Jaguar Reef Lodge good for families?",
-     "a": "The available information does not confirm family-specific facilities, family rooms, or children’s programs. Ask the lodge about suitability for your children and the activities available during your stay."
+     "q": "What is the best time to visit The Lodge at Jaguar Reef?",
+     "a": "Belize's drier season, generally from December through May, is often favored for outdoor travel. Weather varies, so check local conditions for your dates."
     },
     {
-     "q": "How do you get to Jaguar Reef Lodge?",
-     "a": "Jaguar Reef Lodge is near Hopkins in southern Belize. Travelers typically reach the area via Belize’s international airport and continue by road or domestic flight, with the final arrangements depending on their itinerary."
+     "q": "Is The Lodge at Jaguar Reef good for families?",
+     "a": "Yes. There is a kids' pool, two-bedroom villas, and one child under 12 stays free when sharing a room with parents."
     },
     {
-     "q": "What can you do near Jaguar Reef Lodge?",
-     "a": "The coast offers access to Belize Barrier Reef excursions, while inland trips can include rainforest landscapes, waterfalls, and Maya archaeological sites. Activities and availability depend on conditions and local operators."
+     "q": "What can you do at The Lodge at Jaguar Reef?",
+     "a": "Kayaks, bicycles, a Hobie Cat and paddleboards are on site, along with the spa. Reef snorkeling and diving, Hopkins village and inland rainforest and Maya site tours can be arranged."
     }
    ],
    "reviewed": true,
@@ -16891,14 +17143,14 @@
    "quote": "At Ka’ana, the day can move from a rainforest trail to the stillness of a private garden.",
    "hero": "https://www.kaanabelize.com/assets/images/hero-home.jpg",
    "gallery": [],
-   "bestMonths": "December to May",
+   "bestMonths": "November to May",
    "bestMonthsNote": "These months fall during the dry season, offering the best weather for exploring Maya ruins and enjoying outdoor activities in the Cayo district.",
    "bestFor": [
-    "honeymoon",
+    "couples",
     "family",
+    "honeymoon",
     "adventure",
-    "luxury",
-    "solo"
+    "wellness"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -16909,10 +17161,9 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Boutique resort in Belize’s Cayo District",
-     "Close to San Ignacio and Maya archaeological sites",
-     "A calm, garden-set retreat between adventures",
-     "A polished base for exploring inland Belize"
+     "Boutique hotel on the edge of the wilderness in San Ignacio, Cayo",
+     "Five Balam Rooms in a hacienda-style house",
+     "Signature Villas of one to three bedrooms, each with a private pool"
     ]
    },
    "experiences": {
@@ -16927,49 +17178,49 @@
    "features": {
     "paras": [],
     "items": [
-     "Boutique resort setting near San Ignacio",
-     "Garden surroundings and a relaxed atmosphere",
-     "Convenient access to Cayo’s cultural sites",
-     "A comfortable base for inland Belize excursions"
+     "Pool set in tropical gardens",
+     "Spa using local botanicals and traditional Maya techniques",
+     "La Ceiba restaurant and Wallace Bar",
+     "Organic gardens and a nightly fireside s'mores gathering"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Ka’ana Resort brings a quieter, more considered feel to a stay in Belize’s Cayo District. Set near San Ignacio, it makes a comfortable base for exploring the region’s Maya sites, rivers and rainforest, while offering a peaceful place to return to at day’s end. Choose it for the contrast: inland adventures by day, a more private resort atmosphere by night."
+     "body": "Ka'ana, whose name means \"heavenly place\" in the Maya language, is a boutique hotel on the edge of the wilderness in San Ignacio, minutes from the town and close to Cayo's Maya sites, caves and rivers. Rooms, suites and villas sit in tropical gardens around the pool and spa, and the guest experience team arranges excursions from Xunantunich to the ATM cave. Choose it for the contrast: inland adventures by day, a garden retreat by night."
     }
    ],
    "facts": {
-    "best_months": "December to May is Belize’s generally drier season and a practical time for outdoor activities in the Cayo District. Conditions vary by year.",
-    "how_to_get_there": "Ka’ana Resort is near San Ignacio in Belize’s Cayo District. Access is by road from Philip S. W. Goldson International Airport near Belize City; ask the resort about current transfers.",
-    "who_its_for": "Travelers seeking a comfortable boutique base for exploring inland Belize, including Maya archaeological sites and the Cayo region’s natural landscapes. It may suit couples, families and solo travelers, subject to current room and activity arrangements.",
-    "signature_experiences": "Explore nearby Maya sites such as Xunantunich and Cahal Pech, and arrange excursions into the Cayo region’s rivers, caves and rainforest."
+    "best_months": "Dry season November through May; rainy season June through October, per the resort.",
+    "how_to_get_there": "Fly into BZE, then travel by road to San Ignacio in the Cayo District. Confirm transfers with the resort.",
+    "signature_experiences": "Xunantunich and the ATM cave, Maya cooking classes, the spa, and nightly fireside s'mores.",
+    "who_its_for": "Couples and families seeking a garden boutique base in San Ignacio for Maya sites, caves and spa time."
    },
    "faqs": [
     {
-     "q": "What is Ka'ana Resort known for?",
-     "a": "Ka’ana Resort is a boutique property in Belize’s Cayo District, near San Ignacio. It is a base for exploring Maya archaeological sites and the region’s rainforest, rivers and caves."
+     "q": "How do you get to Ka'ana Resort?",
+     "a": "International flights arrive at Philip S. W. Goldson International Airport (BZE), about 10 miles from Belize City. From there, Ka'ana is reached by road in San Ignacio, Cayo; confirm the transfer and journey time with the resort's guest experience team."
     },
     {
-     "q": "How many rooms does Ka'ana Resort have?",
-     "a": "The number of rooms is not confirmed in the information provided. Check directly with the resort for current room and availability details."
+     "q": "What is Ka'ana Resort known for?",
+     "a": "A boutique hotel in San Ignacio whose name means \"heavenly place\" in the Maya language, with garden villas, a spa rooted in Maya techniques, Maya cooking classes and guided adventures in western Belize."
+    },
+    {
+     "q": "What kinds of rooms does Ka'ana Resort have?",
+     "a": "Five Balam Rooms in a hacienda-style house, Casita Suites, Garden Suites with a private plunge pool, one- and two-bedroom villas, and new one-, two- and three-bedroom Signature Villas with private pools."
     },
     {
      "q": "What is the best time to visit Ka'ana Resort?",
-     "a": "Belize’s drier season generally runs from December through May, making these months a practical choice for outdoor excursions. Rainfall and conditions vary, so confirm local forecasts before traveling."
+     "a": "The resort describes the dry season as November through May and the rainy season as June through October. The annual average temperature is about 79°F (26°C)."
     },
     {
      "q": "Is Ka'ana Resort good for families?",
-     "a": "Ka’ana can suit families using San Ignacio as a base for cultural and outdoor excursions. Confirm age policies, family room arrangements and activity suitability with the resort, as room details are not provided here."
-    },
-    {
-     "q": "How do you get to Ka'ana Resort?",
-     "a": "Ka’ana Resort is near San Ignacio in Belize’s Cayo District. Travelers commonly reach the area by road from Philip S. W. Goldson International Airport near Belize City; confirm current transfer options with the resort."
+     "a": "Yes. Ka'ana offers family itineraries for younger children, older kids and three generations, and its two- and three-bedroom villas suit families travelling together."
     },
     {
      "q": "What can you do near Ka'ana Resort?",
-     "a": "The Cayo region offers access to Maya archaeological sites such as Xunantunich and Cahal Pech, as well as river, rainforest and cave excursions. Activity availability and logistics should be confirmed with the resort."
+     "a": "Visit Xunantunich, Caracol and Tikal, explore the ATM cave, go cave tubing and ziplining, take a Maya cooking class, ride horseback in Mountain Pine Ridge, or cross Vaca Lake by pontoon."
     }
    ],
    "reviewed": true,
@@ -16999,7 +17250,7 @@
   },
   {
    "slug": "kaaba-luum-mexico",
-   "name": "Kaaba Luum Wellness",
+   "name": "Kaaba Luum",
    "ledgerId": "STY-2026-000124",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -17022,7 +17273,11 @@
    ],
    "bestMonths": "Nov - April",
    "bestMonthsNote": "This period covers the dry season in the Yucatán: ideal weather for both jungle immersion and coastal trips. Less rain means clearer cenotes, sunny beach days at Tulum/Akumal, and a comfortable jungle climate, perfect for combining wellness, adventure, and relaxation.",
-   "bestFor": [],
+   "bestFor": [
+    "group_exclusive_use",
+    "wellness",
+    "family"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -17035,29 +17290,34 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Villa Aire (4-8 guests)",
-     "Villa Agua (4-8 guests)",
-     "Villa Tierra (4-8 guests)",
-     "Villa Fuego (4-8 guests)"
+     "Villa Tierra (sleeps 4 to 8)",
+     "Villa Agua",
+     "Villa Aire",
+     "Villa Fuego",
+     "The Casita (two bedrooms, sleeps 4)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Healing ceremonies & wellness rituals",
-     "Cenote exploration & jungle adventures",
-     "Ancient-ruins discovery",
-     "Beach & coastal day trips (Tulum & Akumal)",
-     "Private events & celebrations (retreats, weddings)"
+     "Yoga, sound baths and massage",
+     "Cenote swims",
+     "Mayan ruins tours",
+     "Local markets and artisans",
+     "Snorkelling, paddleboarding and sunset catamaran trips",
+     "Private retreats and celebrations"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private jungle villas with full kitchens & private pools",
-     "Rooftop terraces with jungle views",
-     "Over 100 on-site amenities & services",
-     "Wellness offerings, healing ceremonies, and private-group retreats"
+     "Private jungle estate for up to 36 guests",
+     "Full private buyout available",
+     "Villas with kitchen areas, plunge pools and rooftop terraces",
+     "Shared pool, palapas and rooftop lounges",
+     "Ether Lounge for yoga, sound baths and workshops",
+     "Chef-prepared meals",
+     "Dedicated host and event team"
     ]
    },
    "onlyHere": [
@@ -17066,12 +17326,45 @@
    "why": [
     {
      "title": null,
-     "body": "Kaaba Luum is the kind of place where you can unplug, reconnect with nature, and savour deep peace."
+     "body": "Kaaba Luum is a private jungle estate where a group can unplug, reconnect with nature and let a dedicated team handle every detail."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Cancún (CUN) or Tulum (TQO); concierge transfer from Cancún airport to the villa.",
+    "signature_experiences": "Private buyout, chef-prepared meals, rooftop lounges, Ether Lounge sound baths and yoga, cenotes, ruins and catamaran trips.",
+    "who_its_for": "Retreat groups of 16 to 32, celebrations, families and private buyouts of up to 36."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kaaba Luum?",
+     "a": "Kaaba Luum is a boutique private estate in the Mayan jungle of Quintana Roo, near Tulum on Mexico's Riviera Maya."
+    },
+    {
+     "q": "How do I get to Kaaba Luum?",
+     "a": "Fly into Cancún International Airport (CUN) or Tulum International Airport (TQO). The estate's concierge handles the journey from Cancún airport to your villa door; it does not publish transfer times."
+    },
+    {
+     "q": "What accommodation does Kaaba Luum have?",
+     "a": "Four elemental villas (Tierra, Agua, Aire and Fuego), each with two private queen suites upstairs and a flexible downstairs, plus a two-bedroom Casita with its own plunge pool. Together the estate holds up to 36 guests."
+    },
+    {
+     "q": "Can you book Kaaba Luum privately?",
+     "a": "Yes. For buyouts the entire property is yours, with no shared pools or other guests, and retreats are planned for groups of 16 to 32. Individual stays can also be booked."
+    },
+    {
+     "q": "What experiences does Kaaba Luum offer?",
+     "a": "Chef-prepared meals, yoga, sound baths and massage on the estate, plus cenote swims, Mayan ruins tours, markets, snorkelling, paddleboarding and sunset catamaran trips, all arranged by a dedicated host."
+    },
+    {
+     "q": "When is the best time to visit Kaaba Luum?",
+     "a": "The estate does not name a best season. Most travellers plan the Riviera Maya for the drier months, roughly November to April; James Wild & Co can advise on your dates."
+    },
+    {
+     "q": "Who is Kaaba Luum best for?",
+     "a": "Retreat hosts, celebration groups and families who want a private jungle estate with a team that handles the details."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -20225,7 +20518,7 @@
   },
   {
    "slug": "la-valise-tulum",
-   "name": "La Valise \n Tulum",
+   "name": "La Valise Tulum",
    "ledgerId": "STY-2026-000142",
    "country": "Mexico",
    "countrySlug": "mexico",
@@ -20236,9 +20529,12 @@
    "quote": "Luxury becomes unforgettable when nature is your closest companion.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8332b1642_67d760173_6a4fc71336ef2bf35f1333e7_La-Valise-Aerial-Shot.jpg",
    "gallery": [],
-   "bestMonths": "November - ",
+   "bestMonths": "November to April",
    "bestMonthsNote": "These months provide warm tropical temperatures, refreshing Caribbean breezes, and generally drier weather, ideal for enjoying beachfront relaxation, ocean swimming, outdoor dining, wellness experiences, and exploring Tulum's natural beauty. The shoulder season in May also offers excellent conditions with fewer visitors while maintaining pleasant weather.",
-   "bestFor": [],
+   "bestFor": [
+    "wellness",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -20246,50 +20542,87 @@
     "lng": -87.4478
    },
    "airport": "Tulum International Airport (TQO) Cancún International Airport (CUN)",
-   "airportDirections": "Tulum International Airport (TQO)\nApprox. 50 km\nDriving time: 45–60 minutes\nRecommended for the shortest arrival. Cancún International Airport (CUN)\nApprox. 120 km\nDriving time: 2–2.5 hours\nIdeal for the greatest selection of international flights.",
+   "airportDirections": "Tulum International Airport (TQO) is about 30 miles away. From Cancún International Airport (CUN), Highway 307 south to Tulum takes approximately 90 minutes, then the beach road to Km 8.7. Private transfers via the concierge.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Beachfront Suites",
-     "Jungle Suites",
-     "Ocean View Suites",
-     "Signature Luxury Suites"
+     "Beachfront Master Suite",
+     "Beachfront Upper and Lower Suites",
+     "Cenote Master Suite",
+     "Cenote Suite Lower",
+     "Signature Suites Upper and Lower",
+     "Jungle Suites Upper and Lower",
+     "Garden Suites Upper and Lower",
+     "Jungle View Room and Garden View Rooms"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Beachfront Relaxation",
-     "Oceanfront Dining",
-     "Wellness Moments",
-     "Caribbean Sunrises",
-     "Jungle Discovery",
-     "Slow Luxury Living"
+     "La Valise Spa",
+     "Yoga",
+     "Ceremonies",
+     "Culinary experiences",
+     "The Voyage Within",
+     "Beach club days",
+     "Cycling the beach road"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Boutique beachfront hotel",
-     "Direct Caribbean beach access",
-     "Thoughtfully designed luxury suites",
-     "Indoor-outdoor living spaces",
-     "Oceanfront dining",
-     "Tropical gardens",
-     "Personalized guest service",
-     "Peaceful atmosphere",
-     "Luxury amenities",
-     "Prime Tulum Beach location"
+     "22 suites in two 11-suite buildings, one beach, one jungle",
+     "Private plunge pool with each suite",
+     "Natural cenote and swimming pools",
+     "Private beach and beach club",
+     "NÜ Tulum and beach and jungle restaurants",
+     "La Valise Spa",
+     "Personal concierge service",
+     "Bicycles for guest use",
+     "Guests aged 12 and over"
     ]
    },
    "onlyHere": [
     "La Valise Tulum captures the effortless spirit of Tulum through beautifully designed suites that celebrate both the Caribbean coastline and the surrounding tropical landscape. Every stay blends relaxed sophistication with genuine warmth, creating an intimate escape where every sunrise, every meal, and every quiet moment feels deeply personal."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Tulum (TQO), about 30 miles away; or fly to Cancún (CUN), about 90 minutes to Tulum on Highway 307, then the beach road to Km 8.7. Private transfers via concierge.",
+    "signature_experiences": "Private plunge pools, natural cenote, NÜ Tulum, private beach club, La Valise Spa, yoga, ceremonies, The Voyage Within.",
+    "who_its_for": "Guests 12 and over seeking privacy in a small beach and jungle hotel."
+   },
+   "faqs": [
+    {
+     "q": "Where is La Valise Tulum?",
+     "a": "La Valise Tulum is on Tulum's south beach at Km 8.7 of the Tulum to Boca Paila road, in a protected natural area of Tulum, Quintana Roo, Mexico."
+    },
+    {
+     "q": "How do I get to La Valise Tulum?",
+     "a": "The hotel is about 30 miles from Tulum International Airport (TQO). From Cancún International Airport (CUN), Highway 307 south to Tulum takes approximately 90 minutes, then the beach road. Private transfers can be booked through the concierge 30 days to 24 hours before arrival."
+    },
+    {
+     "q": "Is La Valise Tulum adults only?",
+     "a": "Children are welcome from age 12; the hotel and its experiences are designed for travellers aged 12 and over."
+    },
+    {
+     "q": "What suites does La Valise Tulum have?",
+     "a": "22 suites in two 11-suite buildings, one on the beach and one in the jungle, each with a private plunge pool. Categories include Beachfront Master Suite, Beachfront Upper and Lower, Cenote Master Suite, Cenote Suite Lower, Signature, Jungle and Garden Suites, and Jungle View and Garden View Rooms."
+    },
+    {
+     "q": "What is there to do at La Valise Tulum?",
+     "a": "NÜ Tulum restaurant, a private beach and beach club, pools and a natural cenote, La Valise Spa, yoga, ceremonies, culinary experiences and The Voyage Within, with bicycles for guest use."
+    },
+    {
+     "q": "When is the best time to visit La Valise Tulum?",
+     "a": "The hotel does not name a best season, though it notes December and January are high season. Most travellers plan Tulum for the drier months, roughly November to April."
+    },
+    {
+     "q": "Who is La Valise Tulum best for?",
+     "a": "Guests aged 12 and over who want privacy over spectacle in a small beach and jungle hotel."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23452,10 +23785,8 @@
    "bestMonthsNote": "These months offer the most optimal weather and conditions for a visit.",
    "bestFor": [
     "honeymoon",
-    "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "couples",
+    "wellness"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -23466,10 +23797,9 @@
    "rooms": {
     "paras": [],
     "items": [
-     "A secluded beachfront setting on Ambergris Caye",
-     "Thatched casitas and villas set among tropical gardens",
-     "Caribbean views, with the Belize Barrier Reef offshore",
-     "An intimate, adults-oriented atmosphere"
+     "33 thatched casitas and villas across ten beachfront acres",
+     "Caribbean views, with the Belize Barrier Reef one mile offshore",
+     "An adults-only retreat"
     ]
    },
    "experiences": {
@@ -23484,49 +23814,48 @@
    "features": {
     "paras": [],
     "items": [
-     "Thatched-roof casitas and villas",
-     "Beachfront setting on Ambergris Caye",
-     "On-site spa",
-     "Access to reef excursions and water activities"
+     "Mambo Restaurant, Mambo Bistro and Danny's Tree Bar",
+     "Jade Spa, using papaya, banana and coffee in its treatments",
+     "Kayaks and beach bikes on site"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Matachica pairs a quiet stretch of Ambergris Caye shoreline with easy access to the Belize Barrier Reef. Its thatched-roof casitas and villas sit among gardens, giving the resort a relaxed, individual feel rather than the scale of a conventional beach hotel. Spend unhurried hours by the water, then head out to snorkel or dive the reef, or return for a spa treatment and dinner. It suits travelers drawn to Caribbean simplicity with thoughtful comforts."
+     "body": "Matachica pairs a quiet stretch of northern Ambergris Caye shoreline with the Belize Barrier Reef a mile offshore. Its 33 thatched-roof casitas and villas sit among palms and sandy paths, giving the adults-only resort a relaxed, individual feel rather than the scale of a conventional beach hotel. Spend unhurried hours by the water, head out to snorkel or dive the reef, or return for a treatment at Jade Spa and dinner at Mambo."
     }
    ],
    "facts": {
-    "best_months": "December through May is generally Belize’s drier season and a popular period for visiting. Weather and sea conditions vary by month.",
-    "how_to_get_there": "Fly to Philip S. W. Goldson International Airport, connect to San Pedro on Ambergris Caye by domestic flight or water taxi, then arrange a resort transfer.",
-    "who_its_for": "Best suited to couples, solo travelers and guests seeking a quiet beachfront stay with access to reef activities. The resort is primarily adults-oriented.",
-    "signature_experiences": "Snorkeling and diving excursions to the Belize Barrier Reef, time on Ambergris Caye’s shoreline, and spa treatments at the resort."
+    "best_months": "December through May is generally Belize's drier season and a popular period for visiting. Weather and sea conditions vary by month.",
+    "how_to_get_there": "Fly 15 minutes from BZE to San Pedro or take the 1.5-hour ferry; a resort captain meets you in San Pedro for the 10-minute boat ride.",
+    "signature_experiences": "Reef diving and snorkeling at Hol Chan and Mexico Rocks, Jade Spa treatments, and dinners at Mambo Restaurant.",
+    "who_its_for": "Adults only: couples, honeymooners and small groups of friends seeking a quiet beachfront stay with reef access."
    },
    "faqs": [
     {
+     "q": "How do you get to Matachica Resort & Spa?",
+     "a": "Fly from Philip Goldson International Airport (BZE) to San Pedro in about 15 minutes, or take the island ferry from Belize City in about 1.5 hours. In San Pedro, a Matachica captain meets you and takes you to the resort by boat, about 10 minutes."
+    },
+    {
      "q": "What is Matachica Resort & Spa known for?",
-     "a": "Matachica is known for its thatched-roof casitas and villas, beachfront setting on Ambergris Caye, and access to Belize Barrier Reef activities. The resort also has an on-site spa."
+     "a": "An adults-only resort of thatched, brightly painted casitas and villas on ten beachfront acres of northern Ambergris Caye, with Jade Spa and the Mambo Restaurant."
     },
     {
      "q": "How many rooms does Matachica Resort & Spa have?",
-     "a": "Matachica has 32 casitas and villas. Confirm current accommodation counts and categories directly with the resort, as inventory may change."
+     "a": "Matachica has 33 casitas and villas: Seabreeze Beach Bungalows and Casitas, Seafront Beach Casitas, Seafront Luxury Suites with plunge pools, and two-bedroom Seabreeze and Seafront Luxury Villas."
     },
     {
      "q": "What is the best time to visit Matachica Resort & Spa?",
-     "a": "Belize’s drier season, generally December through May, is a popular time to visit. Conditions vary, so check seasonal weather and sea conditions when planning reef activities."
+     "a": "Belize's drier season, generally December through May, is a popular time to visit. Conditions vary, so check seasonal weather and sea conditions when planning reef activities."
     },
     {
      "q": "Is Matachica Resort & Spa good for families?",
-     "a": "Matachica is primarily an adults-oriented resort, so it may not be the best fit for families traveling with children. Check the resort’s current age policy before booking."
-    },
-    {
-     "q": "How do you get to Matachica Resort & Spa?",
-     "a": "Travelers typically fly into Belize’s Philip S. W. Goldson International Airport, continue to San Pedro on Ambergris Caye by domestic flight or water taxi, then arrange a transfer to the resort. Confirm transfer arrangements with Matachica before travel."
+     "a": "Matachica is adults-only, so it does not accept children. Its two-bedroom villas are designed for adult families or groups of friends."
     },
     {
      "q": "Can guests snorkel or dive from Matachica Resort & Spa?",
-     "a": "The resort provides access to excursions on the Belize Barrier Reef, including snorkeling and diving opportunities. Availability and conditions depend on the day and should be confirmed with the property."
+     "a": "Yes. The reef is about a mile offshore. The resort arranges reef dives, shark and ray snorkeling at Hol Chan, Mexico Rocks and sunset reef tours, plus mainland cave tubing and Maya ruins."
     }
    ],
    "reviewed": true,
@@ -38028,14 +38357,14 @@
   },
   {
    "slug": "sleeping-giant-rainforest-lodge",
-   "name": "Sleeping Giant Rainforest Lodge",
+   "name": "The Rainforest Lodge at Sleeping Giant",
    "ledgerId": "STY-2026-669876",
    "country": "Belize",
    "countrySlug": "belize",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "lodge",
-   "tagline": "A rainforest retreat beneath Belize’s Sleeping Giant",
+   "tagline": "A riverside jungle lodge in the Sibun River Valley, beneath the Sleeping Giant.",
    "quote": "Here, the rainforest sets the pace, with the Sleeping Giant rising beyond the trees.",
    "hero": "https://www.sleepinggiantbelize.com/wp-content/uploads/2021/04/the-rainforest-lodge-at-sleeping-giant-hero.jpg",
    "gallery": [],
@@ -38043,7 +38372,8 @@
    "bestMonthsNote": null,
    "bestFor": [
     "adventure",
-    "solo"
+    "couples",
+    "family"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -38052,69 +38382,73 @@
    "airportDirections": "The lodge offers road transfers from the airport, which takes approximately 1.5 to 2 hours, or guests can arrive via private helicopter transfer.",
    "founderNote": "Rainforest lodge in Cayo and the Sibun River Valley; part of The Belize Collection.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "Rainforest setting beneath Belize’s Sleeping Giant",
-     "A quiet base for exploring inland Belize",
-     "Green surroundings and a slower, nature-led pace",
-     "Close to the landscapes of the Maya Mountains"
-    ]
+    "paras": [
+     "31 air-conditioned rooms, cottages and suites, with no TVs",
+     "Set in the Sibun River Valley, bordered by the 10,000-acre Sibun Nature Reserve",
+     "From Riverside Rooms to Jungle Cottages with plunge pool and a Rainforest Tented Camp",
+     "Hardwood furnishings handcrafted and designed in Belize"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Explore rainforest trails and surrounding landscapes",
-     "Take in views of the Sleeping Giant",
-     "Discover inland Belize’s rivers and natural scenery",
-     "Visit nearby Maya Mountain landscapes"
+     "Paddle the Sibun River in a complimentary kayak",
+     "Ride horseback or take the horse and buggy through the orchards",
+     "Explore the trails on an e-bike"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Rainforest lodge setting",
-     "Distinctive Sleeping Giant backdrop",
-     "Inland Belize location",
-     "Nature-focused atmosphere"
+     "Grove House Restaurant and Don Tonito's Pizzeria",
+     "Orchards that supply juice and the kitchen",
+     "Four rope bridges over the river and jungle trails",
+     "The Nest, a two-level treehouse deck"
     ]
    },
-   "onlyHere": [],
+   "onlyHere": [
+    "Enter the Mayan Ceremonial Cave behind the lodge, reserved for guests of The Belize Collection",
+    "Book a private breakfast or dinner up on the Cliff, with a 360-degree view",
+    "Knead tortillas in a Maya cooking class",
+    "Arrive by helicopter in about 30 minutes from the international airport"
+   ],
    "why": [
     {
      "title": null,
-     "body": "Sleeping Giant Rainforest Lodge brings you into the lush interior of Belize, where rainforest surrounds the lodge and the Sleeping Giant gives the landscape its distinctive profile. It is a nature-led place to pause between explorations, with the setting itself shaping the stay. Choose it for a quieter side of Belize, away from the coast, and for a base from which to experience the country’s inland scenery."
+     "body": "The Rainforest Lodge at Sleeping Giant sits just off the Hummingbird Highway in the Sibun River Valley, at the foothills of the Maya Mountains, facing the ridge that gives it its name. It began as an orchard, and the orchards still feed the Grove House kitchen. With rope bridges, river kayaks and a ceremonial cave on the property, much of the adventure starts at your door, and it is one of the closer inland lodges to the international airport."
     }
    ],
    "facts": {
-    "best_months": "November to May is generally Belize’s drier season and a common choice for outdoor travel. Rain is possible year-round.",
-    "how_to_get_there": "Sleeping Giant Rainforest Lodge is in inland Belize. Specific airport transfers, road routes, and travel times should be confirmed with the property.",
-    "who_its_for": "A nature-focused stay for travelers seeking rainforest surroundings and a quieter base in Belize’s interior. Family facilities, room options, and solo-traveler arrangements should be confirmed directly.",
-    "signature_experiences": "Enjoy the lodge’s rainforest setting beneath the Sleeping Giant and explore the natural landscapes of inland Belize. Confirm available guided activities with the property."
+    "best_months": "November to May is generally Belize's drier season and a common choice for outdoor travel. Rain is possible year-round.",
+    "how_to_get_there": "Helicopter from BZE in about 30 minutes (book 30 days ahead), or a road transfer of about 1 to 1.5 hours (book 48 hours ahead).",
+    "signature_experiences": "Sibun River kayaking, the gazebo hike and rope bridges, horseback riding, the Mayan Ceremonial Cave and private dining on the Cliff.",
+    "who_its_for": "Couples, families and active travelers who want a jungle lodge with river, trails and horses on the doorstep, close to the international airport."
    },
    "faqs": [
     {
-     "q": "What is Sleeping Giant Rainforest Lodge known for?",
-     "a": "Sleeping Giant Rainforest Lodge is known for its rainforest setting in inland Belize, beneath the distinctive Sleeping Giant mountain. It offers a nature-focused base for exploring the surrounding landscape."
+     "q": "How do you get to The Rainforest Lodge at Sleeping Giant?",
+     "a": "Private helicopter transfers with Astrum Helicopters fly from Belize International Airport (BZE) to the lodge in about 30 minutes, with scenic routes over the Maya Mountains or the Blue Hole; book at least 30 days ahead. By road, the lodge's transfer from BZE takes about 1 to 1.5 hours; book at least 48 hours ahead."
     },
     {
-     "q": "How many rooms does Sleeping Giant Rainforest Lodge have?",
-     "a": "The room count has not been provided in the available property information. Please confirm directly with the lodge for current accommodation details."
+     "q": "What is The Rainforest Lodge at Sleeping Giant known for?",
+     "a": "A jungle lodge in the Sibun River Valley facing the Sleeping Giant ridge, bordered by the 10,000-acre Sibun Nature Reserve, with orchards, rope bridges and river kayaking on the property."
     },
     {
-     "q": "What is the best time to visit Sleeping Giant Rainforest Lodge?",
-     "a": "Belize’s drier season, generally from November through May, is often preferred for outdoor exploration. Conditions vary, so check local weather before planning activities."
+     "q": "How many rooms does The Rainforest Lodge at Sleeping Giant have?",
+     "a": "The lodge has 31 air-conditioned accommodations with no TVs, including Riverside and Riverview Rooms, Creekside Cottages, Jungle Cottages with plunge pool, Riverview and Mountain View Suites, a Mountain View Penthouse, the Owner's Jungle House and a Rainforest Tented Camp."
     },
     {
-     "q": "Is Sleeping Giant Rainforest Lodge good for families?",
-     "a": "Family suitability cannot be confirmed from the available property information. Ask the lodge about its room configurations, child policies, and activities for children before booking."
+     "q": "What is the best time to visit The Rainforest Lodge at Sleeping Giant?",
+     "a": "Belize's drier season, generally from November through May, is often preferred for outdoor exploration. Conditions vary, so check local weather before planning activities."
     },
     {
-     "q": "How do you get to Sleeping Giant Rainforest Lodge?",
-     "a": "The lodge is in inland Belize, but specific transfer routes and journey times have not been provided. Confirm current transport options with the property when arranging your trip."
+     "q": "Is The Rainforest Lodge at Sleeping Giant good for families?",
+     "a": "The lodge describes its horse and buggy ride through the orchards as suited to families, and horseback rides cater to all ages and experience levels. Ask the lodge about room configurations for your group."
     },
     {
-     "q": "What can you do around Sleeping Giant Rainforest Lodge?",
-     "a": "The lodge’s rainforest setting makes it a base for experiencing inland Belize’s natural landscapes. Confirm which guided activities and excursions are currently available directly with the property."
+     "q": "What can you do at The Rainforest Lodge at Sleeping Giant?",
+     "a": "Hike to the gazebo lookout, kayak the Sibun River, cross the four rope bridges, ride horses or e-bikes, take a Maya cooking class, climb the Nest treehouse, dine on the Cliff, or explore the Mayan Ceremonial Cave behind the lodge."
     }
    ],
    "reviewed": true,
@@ -38840,7 +39174,7 @@
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A private-island hideaway on Belize’s barrier reef",
+   "tagline": "An adults-only private island resort seven miles off Belize City.",
    "quote": "Here, the day moves between turquoise water, reef and the quiet rhythm of island life.",
    "hero": "https://belizeislandparadise.com/images/home-hero.jpg",
    "gallery": [],
@@ -38848,8 +39182,8 @@
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
+    "couples",
     "adventure",
-    "luxury",
     "solo"
    ],
    "status": "unclassified",
@@ -38859,69 +39193,68 @@
    "airportDirections": "The resort provides a boat transfer from the mainland, which is approximately a 20-minute ride from Belize City.",
    "founderNote": "Private island stay in the handpicked Belize collection.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "Small private island off the coast of Belize City",
-     "Caribbean beach and clear, reef-fringed waters",
-     "Relaxed, barefoot atmosphere away from the mainland",
-     "Easy access to snorkeling, diving and island excursions"
-    ]
+    "paras": [
+     "12 thatch cabanas: six overwater on a half-moon dock, four oceanfront and two in the gardens",
+     "Three private suites in an oceanfront villa",
+     "King beds, Belizean hardwoods, air conditioning and a porch with hammock",
+     "No TVs or phones; Wi-Fi in the main lodge only"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkel the Belize Barrier Reef",
-     "Scuba dive Belize’s reef sites",
-     "Explore nearby cayes by boat",
-     "Spend unhurried hours swimming and kayaking"
+     "Dive or snorkel the Belize Barrier Reef, less than a mile away",
+     "Book guided fishing in advance",
+     "Try scuba in the pool with an instructor"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private-island setting near Belize City",
-     "Access to reef and marine excursions",
-     "Intimate resort scale",
-     "Laid-back Caribbean island atmosphere"
+     "Full meal plan, served banquet style on the outdoor dining porch",
+     "On-site dive staff with refresher and certification courses",
+     "Unlimited kayaks, Hobie Cats, paddleboards and snorkel gear",
+     "Saline swimming pool and the Sand Bar lounge"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "St. George’s Caye Resort pairs the intimacy of a small island stay with access to the Belize Barrier Reef. Days are shaped by the water, from snorkeling and diving to boat excursions, while evenings settle into the quiet pace of a caye with no mainland bustle. It suits travelers who want a comfortable base for exploring Belize’s marine life without giving up the feeling of being somewhere genuinely removed."
+     "body": "St. George's Caye Resort is a small, adults-only retreat on a private residential island seven miles from Belize City, with no roads, cars or public transport. Twelve thatch cabanas and three villa suites sit steps from the water, meals are included and shared banquet style, and the reef is less than a mile away. It suits divers, couples and anyone who wants island quiet without a long transfer, and it makes mainland day trips easy."
     }
    ],
    "facts": {
-    "best_months": "December to May is Belize’s generally drier season and a popular period to visit. Weather and sea conditions vary by date.",
-    "how_to_get_there": "Travel to Belize City, then arrange a boat transfer to St. George’s Caye. Confirm transfer details and schedules with the resort.",
-    "who_its_for": "Travelers seeking a small-island Caribbean stay with access to reef activities, including couples, solo travelers and active visitors.",
-    "signature_experiences": "Snorkeling and scuba diving on the Belize Barrier Reef, boat excursions to nearby cayes, and relaxed time swimming or kayaking."
+    "best_months": "Year round, per the resort; more rain falls June to November, mostly on the mainland rather than the cayes.",
+    "how_to_get_there": "Staff meet guests at BZE and transfer by private van and boat to the island, seven miles off Belize City. Transfers included with stays of four nights or more.",
+    "signature_experiences": "Barrier reef diving and snorkeling, overwater cabanas on the Sunset Dock, sandbar dining and mainland jungle day trips.",
+    "who_its_for": "Adults (15+, 13+ for divers): couples, divers and solo travelers seeking a small, unplugged private island with meals included."
    },
    "faqs": [
     {
-     "q": "What is St. George’s Caye Resort known for?",
-     "a": "St. George’s Caye Resort is known for its private-island setting off Belize City and access to the Belize Barrier Reef. Guests come for a relaxed caye stay with opportunities for snorkeling, diving and boat excursions."
+     "q": "How do you get to St. George's Caye Resort?",
+     "a": "Fly into Philip S. W. Goldson International Airport (BZE). Staff meet you at the airport and take you by private van to the resort's marina, then by boat to the island, seven miles off Belize City. Airport transfers are included with stays of four nights or longer."
     },
     {
-     "q": "How many rooms does St. George’s Caye Resort have?",
-     "a": "Room count information was not provided in the available property details. Confirm the current total directly with the resort before booking."
+     "q": "What is St. George's Caye Resort known for?",
+     "a": "An intimate, adults-only resort on a private island seven miles from Belize City, and one of Belize's original diving lodges, with the barrier reef less than a mile away."
     },
     {
-     "q": "What is the best time to visit St. George’s Caye Resort?",
-     "a": "Belize’s drier season generally runs from December through May, making these months a popular time to visit. Conditions vary, and travelers should check seasonal weather and marine conditions for their dates."
+     "q": "How many rooms does St. George's Caye Resort have?",
+     "a": "There are 12 thatch cabanas (six overwater, four oceanfront and two garden) and three private suites in an oceanfront villa. Each has a king bed, air conditioning, an en-suite bathroom and a covered porch with hammock."
     },
     {
-     "q": "Is St. George’s Caye Resort good for families?",
-     "a": "The island setting and water-based activities may appeal to families, but family facilities, age guidance and child-specific services were not confirmed in the available details. Ask the resort about suitability for your children before booking."
+     "q": "What is the best time to visit St. George's Caye Resort?",
+     "a": "The resort describes Belize as good year round. There is more rainfall between June and November, but most weeks are still sunny, and it rains far less on the cayes than on the mainland. Underwater visibility is excellent in spring."
     },
     {
-     "q": "How do you get to St. George’s Caye Resort?",
-     "a": "The resort is on St. George’s Caye, off the coast of Belize City, so reaching it requires a transfer by boat. Confirm current transfer arrangements and schedules with the resort."
+     "q": "Is St. George's Caye Resort good for families?",
+     "a": "The resort welcomes guests aged 15 and older (13 and older for divers), so it is not suited to families with younger children."
     },
     {
-     "q": "What can you do from St. George’s Caye Resort?",
-     "a": "The resort’s setting provides access to snorkeling, scuba diving and boat excursions around nearby cayes. Swimming and kayaking are also possible, subject to current resort offerings and conditions."
+     "q": "What can you do at St. George's Caye Resort?",
+     "a": "Dive and snorkel the reef with the on-site dive team, use the kayaks, Hobie Cats and paddleboards, swim in the saline pool, book guided fishing, or take mainland day trips to Maya ruins, cave tubing and ziplining."
     }
    ],
    "reviewed": true,
@@ -40459,7 +40792,7 @@
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A private island retreat on Belize’s southern coast.",
+   "tagline": "An all-inclusive private island for 30 guests, nine miles off Dangriga.",
    "quote": "Here, the rhythm of the day follows the sea.",
    "hero": "https://thatchcayebelize.com/wp-content/uploads/2022/05/Thatch-Caye-Resort-Overwater-Bungalow-1.jpg",
    "gallery": [],
@@ -40467,10 +40800,9 @@
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
-    "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "couples",
+    "family",
+    "adventure"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -40482,69 +40814,69 @@
    "airportDirections": "Guests take a 15 minute commuter flight from BZE to Dangriga Airstrip, followed by a 25 minute boat ride to the resort.",
    "founderNote": "Private-island, overwater accommodations with kayaks, paddleboards, reef excursions and long views across the sea.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "A small private island off Belize’s southern coast",
-     "Caribbean water, reef scenery, and a barefoot pace",
-     "Thatched-roof accommodations close to the shore",
-     "An intimate base for exploring Belize’s marine world"
-    ]
+    "paras": [
+     "Overwater bungalows and oceanfront cabanas for only 30 guests at a time",
+     "Premier Overwater Bungalows with private patio and hammock",
+     "Premier Oceanfront Cabana with a private rooftop deck",
+     "A Penthouse Oceanfront Cabana with an indoor lounge and room for an extra guest"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkel Belize’s surrounding reef waters",
-     "Explore by kayak or paddleboard",
-     "Head out by boat to nearby cayes",
-     "Spend unhurried hours swimming in the Caribbean"
+     "Dive and snorkel the Belize Barrier Reef, 15 minutes away by boat",
+     "Snorkel from shore in the swimming cove",
+     "Paddle out on kayaks, paddleboards or a Hobie Cat",
+     "Book fishing charters and island hopping"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private island setting off Belize’s southern coast",
-     "Distinctive thatched-roof island architecture",
-     "Sea-centered activities from the resort",
-     "Boat access creates a sense of escape"
+     "All-inclusive: three chef-prepared meals, snacks and cocktails daily",
+     "Ingredients from Muy'Ono Farms",
+     "On-site 5-Star PADI dive shop",
+     "Starfish Bar over a swimming cove, open-air gym and massage palapa"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Thatch Caye is a private island resort reached by boat from the coast of Belize. Its thatched-roof setting and easy access to the surrounding Caribbean waters make it a natural choice for travelers who want their stay to revolve around the sea. Come for a quieter island rhythm, with the option to spend your days exploring nearby reefs and waters rather than moving between mainland destinations."
+     "body": "Thatch Caye Resort is an all-inclusive private island nine miles off Dangriga, hosting only 30 guests at a time in overwater bungalows and oceanfront cabanas. Meals, drinks and non-motorized water sports are included, the barrier reef is a 15-minute boat ride away with an on-site PADI dive shop, and the staff-to-guest ratio is one to one. It suits honeymooners, divers and families who want an unplugged island with company at the communal table."
     }
    ],
    "facts": {
-    "best_months": "December to May is generally Belize’s drier season and a popular time to visit. Conditions can vary by year.",
-    "how_to_get_there": "Reach the resort by boat from Belize’s mainland. Confirm the transfer point, schedule, and booking arrangements directly with the property.",
-    "who_its_for": "Travelers seeking a private-island stay, a relaxed Caribbean pace, and access to marine activities. Confirm family-specific facilities directly with the resort.",
-    "signature_experiences": "Snorkeling, swimming, kayaking, and paddleboarding in the waters around the island, with boat outings to nearby cayes and reef areas."
+    "best_months": "December to May is generally Belize's drier season and a popular time to visit. Conditions can vary by year.",
+    "how_to_get_there": "Commuter flight or van from BZE to Dangriga, then the included 35-minute boat from Pelican Beach Resort (daily 2:30pm and 4:30pm).",
+    "signature_experiences": "Barrier reef diving with the on-site PADI shop, overwater bungalows, snorkeling from shore and communal farm-to-table dinners.",
+    "who_its_for": "Honeymooners, divers and families seeking an all-inclusive, unplugged private island for 30 guests."
    },
    "faqs": [
     {
-     "q": "What is Thatch Caye Resort known for?",
-     "a": "Thatch Caye Resort is known for its private-island setting off Belize’s southern coast, thatched-roof accommodations, and access to Caribbean waters and nearby reef scenery."
+     "q": "How do you get to Thatch Caye Resort?",
+     "a": "Fly into Philip S. W. Goldson International Airport (BZE), then take a commuter flight to the Dangriga Airstrip (arrive in Belize City by 3:00pm) or the Muy'Ono Explorer van (arrive by 11:30am). From the dock at Pelican Beach Resort, the included boat transfer to the island takes about 35 minutes, departing daily at 2:30pm and 4:30pm."
     },
     {
-     "q": "How many rooms does Thatch Caye Resort have?",
-     "a": "The number of rooms is not confirmed in the available property information. Check directly with the resort for current accommodation details."
+     "q": "What is Thatch Caye Resort known for?",
+     "a": "An all-inclusive private island nine miles off Dangriga with overwater bungalows, a MICHELIN Key award, and an on-site PADI dive shop 15 minutes from the barrier reef."
+    },
+    {
+     "q": "How many guests does Thatch Caye Resort host?",
+     "a": "Thatch Caye hosts only 30 guests at a time, in Premier Overwater Bungalows, Overwater Bungalows, Premier Oceanfront Cabanas, Oceanfront Cabanas and a Penthouse Oceanfront Cabana."
     },
     {
      "q": "What is the best time to visit Thatch Caye Resort?",
-     "a": "Belize’s drier season generally runs from December through May, making it a popular period for island and water activities. Weather varies, so check seasonal conditions before booking."
+     "a": "Belize's drier season generally runs from December through May, making it a popular period for island and water activities. Weather varies, so check seasonal conditions before booking."
     },
     {
      "q": "Is Thatch Caye Resort good for families?",
-     "a": "The available information does not confirm family-specific facilities, family suites, or children’s activities. Families should contact the resort to confirm whether its accommodations and boat transfers suit their needs."
+     "a": "Yes. Thatch Caye welcomes guests of all ages. For families, the resort suggests the Penthouse, which has an additional bed, or adjoining Overwater Bungalows."
     },
     {
-     "q": "How do you get to Thatch Caye Resort?",
-     "a": "Thatch Caye is reached by boat from Belize’s mainland, with the resort located off the southern coast. Confirm the transfer’s departure point and arrangements with the property before travel."
-    },
-    {
-     "q": "What can you do at Thatch Caye Resort?",
-     "a": "The island setting lends itself to swimming, snorkeling, kayaking, and paddleboarding. Boat outings can also provide access to nearby cayes and reef waters."
+     "q": "What is included at Thatch Caye Resort?",
+     "a": "Three daily chef-prepared meals, snacks and handcrafted cocktails, kayaks, paddleboards, a Hobie Cat, snorkeling from shore and round-trip boat transfers from Dangriga. Guided dives, fishing charters, island hopping and massages are add-ons."
     }
    ],
    "reviewed": true,
@@ -41351,30 +41683,29 @@
    "quote": "At Chaa Creek, the forest is not a backdrop, it is part of the stay.",
    "hero": "https://chaacreek.com/wp-content/uploads/2024/05/Chaa-Creek-Hero.jpg",
    "gallery": [],
-   "bestMonths": "The supplied property information does not specify the best months to visit. Check Belize’s seasonal conditions and confirm current guidance before booking.",
+   "bestMonths": "November to May",
    "bestMonthsNote": null,
    "bestFor": [
-    "honeymoon",
+    "couples",
     "family",
+    "honeymoon",
     "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "wellness"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "San Ignacio Town Airstrip",
+   "airport": "Philip S. W. Goldson International Airport (BZE)",
    "airportDirections": "The property is located approximately 15 minutes' drive from the town of San Ignacio.",
    "founderNote": "Immersive rainforest stay shaped by natural history, wildlife and active discovery.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "Belizean rainforest setting in the Cayo District",
-     "A nature-focused lodge shaped by its landscape",
-     "Guided encounters with local wildlife and Maya heritage",
-     "Quiet river and jungle moments between explorations"
-    ]
+    "paras": [
+     "28 accommodations above the Macal River Valley in Cayo",
+     "Cottages, suites and private villas set in tropical gardens",
+     "Ix Chel Luxury Rainforest Villas with plunge pools and a personal butler",
+     "Rustic Belize Rainforest Retreat (formerly Macal River Camp) also on the reserve"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -41388,49 +41719,49 @@
    "features": {
     "paras": [],
     "items": [
-     "Expert-led nature and heritage experiences",
-     "Rainforest setting in Belize’s Cayo region",
-     "On-site birding and butterfly encounters",
-     "Eco-focused approach to exploration"
+     "A 500-acre private nature reserve with trails for riding and hiking",
+     "Full-service Hilltop Spa overlooking the Macal River Valley",
+     "Butterfly Farm and Natural History Centre",
+     "5% of room revenue goes to community projects"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "The Lodge at Chaa Creek brings the rainforest into the rhythm of a Belize stay, with guided activities that connect guests to wildlife, rivers and Maya traditions. Rather than treating the jungle as scenery, the lodge makes it the focus of each day, from birdwatching and medicinal plant walks to exploring nearby ancient Maya sites. It suits travelers seeking an immersive, nature-led base in the Cayo region."
+     "body": "Mick and Lucy Fleming welcomed their first guests at Chaa Creek in 1981, making it one of Belize's first eco-resorts. Today its 28 accommodations look over the Macal River Valley within a 500-acre private reserve, with a hilltop spa, a butterfly farm and miles of riding and hiking trails. It suits travelers who want the rainforest at the center of their days, with Maya sites close by in the Cayo District."
     }
    ],
    "facts": {
-    "best_months": "The supplied property information does not specify the best months to visit. Check Belize’s seasonal conditions and confirm current guidance before booking.",
-    "how_to_get_there": "The Lodge at Chaa Creek is located in Belize’s Cayo region. The supplied information does not detail airport access, drive times or transfers; contact the lodge for current arrival arrangements.",
-    "who_its_for": "Travelers drawn to rainforest scenery, guided wildlife encounters and Maya heritage, including couples, families, solo guests and active explorers. Confirm room configurations and child-specific arrangements directly with the lodge.",
-    "signature_experiences": "Guided jungle treks, river canoeing, birdwatching, butterfly encounters, Maya medicinal plant walks and exploration of ancient Maya sites."
+    "best_months": "Dry season November to May; green season June to October, per the lodge.",
+    "how_to_get_there": "Helicopter from BZE with Astrum Helicopters, or about 2 hours by private ground transfer (about 1.5 hours self-drive) via the George Price Highway and Chial Road.",
+    "signature_experiences": "Macal River canoeing, horseback riding on the reserve, the butterfly farm, the medicinal plants trail and the Hilltop Spa.",
+    "who_its_for": "Couples, families and nature lovers seeking a rainforest lodge on a 500-acre reserve near San Ignacio."
    },
    "faqs": [
     {
+     "q": "How do you get to The Lodge at Chaa Creek?",
+     "a": "Helicopter transfers with Astrum Helicopters can be arranged from Philip S. W. Goldson International Airport (BZE). Private ground transfers take about 2 hours; self-drivers take the George Price Highway toward San Ignacio and Benque Viejo, then the Chial Road, about 1.5 hours in total."
+    },
+    {
      "q": "What is The Lodge at Chaa Creek known for?",
-     "a": "The Lodge at Chaa Creek is known for its rainforest setting in Belize’s Cayo region and its nature- and heritage-focused experiences. Activities include guided jungle treks, birdwatching, river canoeing and Maya medicinal plant walks."
+     "a": "One of Belize's first eco-resorts, opened by Mick and Lucy Fleming in 1981 on the banks of the Macal River, with a 500-acre private reserve, the Hilltop Spa and a butterfly farm."
     },
     {
      "q": "How many rooms does The Lodge at Chaa Creek have?",
-     "a": "The available property information provided here does not specify the number of rooms. Check directly with the lodge for current accommodation details."
+     "a": "The lodge has 28 accommodations, from cottages and suites to private villas, including the Ix Chel Luxury Rainforest Villas with plunge pools and butler service."
     },
     {
      "q": "What is the best time to visit The Lodge at Chaa Creek?",
-     "a": "The property information provided here does not specify seasonal conditions or ideal travel months. Confirm current weather and travel advice for Belize before planning your stay."
+     "a": "The lodge describes the dry season, November to May, as ideal for sunshine and outdoor adventures, and the green season, June to October, as lush with fewer crowds and occasional rain."
     },
     {
      "q": "Is The Lodge at Chaa Creek good for families?",
-     "a": "The lodge offers guided nature experiences, including jungle exploration, birdwatching and canoeing, which may appeal to families. The information provided does not specify family rooms, age restrictions or child-specific programs, so confirm those details with the lodge."
+     "a": "The lodge welcomes families, with villas available individually or together for groups, and tours and packages for all ages and fitness levels."
     },
     {
-     "q": "How do you get to The Lodge at Chaa Creek?",
-     "a": "The Lodge at Chaa Creek is in Belize’s Cayo region. The arrival route and transfer options are not specified in the supplied property information, so arrange current directions and transport with the lodge."
-    },
-    {
-     "q": "What experiences can guests enjoy at The Lodge at Chaa Creek?",
-     "a": "Experiences described for the property include guided jungle treks, wildlife encounters, river canoeing, birdwatching, Maya medicinal plant walks and butterfly encounters. Guests can also explore ancient Maya sites."
+     "q": "What can you do at The Lodge at Chaa Creek?",
+     "a": "Horseback riding and hiking on the reserve, canoeing the Macal River, the Maya medicinal plants trail, the butterfly farm and natural history museum, night tours, an organic farm tour and rainforest RTV safaris, plus nearby Maya sites."
     }
    ],
    "reviewed": true,
@@ -43166,11 +43497,10 @@
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
+    "couples",
     "family",
     "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "solo"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -43214,34 +43544,34 @@
    ],
    "facts": {
     "best_months": "December through May is generally the drier season and a popular period to visit Belize. Check current seasonal conditions when choosing dates.",
-    "how_to_get_there": "Travel to Placencia on Belize’s southern coast, commonly by domestic flight from Belize City, then continue by road to Turtle Inn. Confirm current flight and transfer arrangements with the property.",
-    "who_its_for": "Travelers seeking a relaxed Caribbean beachfront stay with distinctive Balinese-inspired design, access to Placencia village, and opportunities for coastal excursions. Suitable for couples, families, and solo travelers; confirm family-specific services directly.",
-    "signature_experiences": "Enjoy the Caribbean shoreline, explore the Placencia Peninsula, and arrange outings to the Belize Barrier Reef, nearby cayes, or inland landscapes."
+    "how_to_get_there": "Fly from Belize City (BZE) to the Placencia airstrip (PLJ) with Tropic Air, about 35 minutes; the airstrip is about five minutes from Turtle Inn. Private charter and helicopter arrivals can be arranged, or drive about 3 to 3.5 hours from Belize City.",
+    "signature_experiences": "Diving and snorkeling the Belize Barrier Reef, sunset cruises, the Sunset Spa, and inland trips to Cockscomb Basin, the Monkey River and Maya sites.",
+    "who_its_for": "Couples, families and solo travelers seeking a barefoot Caribbean stay in one of 28 thatched cottages and villas, with Placencia village a short walk away."
    },
    "faqs": [
     {
+     "q": "How do you get to Turtle Inn?",
+     "a": "Fly into Philip S. W. Goldson International Airport (BZE) in Belize City, then take a Tropic Air flight of about 35 minutes to the Placencia airstrip (PLJ), about five minutes from Turtle Inn. Private charter and helicopter arrivals can be arranged. By road, a private transfer or rental car takes about 3 to 3.5 hours."
+    },
+    {
      "q": "What is Turtle Inn known for?",
-     "a": "Turtle Inn is known for its beachfront setting near Placencia village, thatched-roof cottages, and Balinese-inspired design. It is a relaxed base for exploring Belize’s coast."
+     "a": "Francis and Eleanor Coppola found this stretch of Placencia beach in 2001. Its thatched dwellings sit on the sand, furnished in hand-carved Balinese wood, and Placencia village is a short walk or bicycle ride along the shore."
     },
     {
      "q": "How many rooms does Turtle Inn have?",
-     "a": "Turtle Inn has 25 cottages and villas. Accommodation configurations and availability should be confirmed directly with the property."
+     "a": "Turtle Inn has 28 dwellings: thatched cottages and villas ranging from Garden View Cottages to Seafront Villas, plus the standalone Stella's Starfish Cottage, Roman's Lagoon Bungalow, Francis' Family Pavilion and Sofia's Beach House, each with its own private pool. Bedrooms are air-conditioned."
     },
     {
      "q": "What is the best time to visit Turtle Inn?",
-     "a": "Belize’s dry season, generally December through May, is a popular time to visit. Conditions vary, and travelers should check seasonal weather before planning."
+     "a": "Belize's dry season, generally December through May, is a popular time to visit. Conditions vary, and travelers should check seasonal weather before planning."
     },
     {
      "q": "Is Turtle Inn good for families?",
-     "a": "Yes. Its beachside setting and access to coastal outings can suit families, though travelers should confirm age-specific activities and accommodation arrangements directly with the property."
-    },
-    {
-     "q": "How do you get to Turtle Inn?",
-     "a": "Turtle Inn is near Placencia village on Belize’s southern coast. Travelers commonly fly to Placencia from Belize City, then continue by road to the resort; confirm current flight and transfer options when booking."
+     "a": "Yes. The two-bedroom villas, Family Pavilion, Lagoon Bungalow, Starfish Cottage and Beach House were designed with families in mind, the restaurants offer children's menus, and there is a kids' gelato bar."
     },
     {
      "q": "What can you do from Turtle Inn?",
-     "a": "Guests can arrange coastal outings such as snorkeling, kayaking, and boat trips, as well as excursions inland. Activities and availability vary by season and conditions."
+     "a": "On the water: scuba diving from the resort's dive shop, snorkeling, fishing, paddleboarding and sunset cruises. Inland: Cockscomb Basin Wildlife Sanctuary, the Monkey River, and the Maya sites of Lubaantun and Nim Li Punit. At the resort there is the Sunset Spa, a gym, pickleball and bicycles."
     }
    ],
    "reviewed": true,
@@ -43509,26 +43839,23 @@
   },
   {
    "slug": "umaya-resort-and-marina",
-   "name": "Umaya Resort & Marina",
+   "name": "Umaya Resort & Adventures",
    "ledgerId": "STY-2026-146899",
    "country": "Belize",
    "countrySlug": "belize",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A marina-side base for discovering Belize’s Placencia Peninsula.",
+   "tagline": "Beachfront and lagoon-side suites on Placencia's Maya Beach.",
    "quote": "At Umaya, the water is part of the welcome, from the lagoon-side setting to the marina.",
    "hero": "https://www.travelbelize.org/wp-content/uploads/2021/03/UMAYA-resort.jpg",
    "gallery": [],
    "bestMonths": "January to September",
    "bestMonthsNote": "While rates fluctuate throughout the year, the resort remains a popular destination for travelers seeking beachside lounging and adventure across these months.",
    "bestFor": [
-    "honeymoon",
     "family",
-    "adventure",
-    "luxury",
-    "solo",
-    "wildlife_photography"
+    "couples",
+    "adventure"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -43539,67 +43866,66 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Set on the Placencia Peninsula in southern Belize",
-     "A resort with a marina beside the Caribbean coast",
-     "A relaxed base for exploring land and water",
-     "Resort comforts in a distinctly Belizean setting"
+     "Set on the northern stretch of the Placencia Peninsula at Maya Beach",
+     "Apartment-style floorplans with spacious private balconies",
+     "Two-bedroom penthouses on both the beach and lagoon sides"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Explore the Placencia Peninsula and its coastal communities",
-     "Get out on the water from the resort marina",
-     "Discover Belize’s nearby reefs and marine life",
-     "Take guided excursions into the peninsula’s inland landscapes"
+     "Snorkel or dive the Belize Barrier Reef offshore",
+     "Kayak the mangrove channels or sail the Placencia Lagoon",
+     "Take a Monkey River boat trip for howler monkeys and manatees",
+     "Head inland to Xunantunich, the ATM cave or St. Herman's Cave tubing"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Waterfront resort setting on the Placencia Peninsula",
-     "On-site marina for water access",
-     "Resort amenities in a coastal Belize location",
-     "Positioned for peninsula and marine excursions"
+     "Beachside swimming pool and the Fyah beach bar",
+     "In Lak'ech Spa",
+     "Casa de Maiz and Don Tonito's for waterfront dining",
+     "Kayaks, hammocks and beach chairs"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Umaya Resort & Marina pairs a waterfront resort setting with access to the Placencia Peninsula, where Caribbean waters, inland landscapes and Belizean village life meet. The marina gives the stay a practical connection to the water, while the resort offers a comfortable place to return to between outings. Choose it for a coastal Belize stay shaped by both the shoreline and the experiences beyond it."
+     "body": "Umaya Resort & Adventures sits on the northern stretch of the Placencia Peninsula, with the Caribbean on one side and a mangrove-lined lagoon on the other. Its one- and two-bedroom suites have apartment-style layouts and private balconies, which suit families and friends travelling together. Between the beachside pool, the spa and the resort's tour desk for reef and rainforest outings, it works as a relaxed base for southern Belize."
     }
    ],
    "facts": {
-    "best_months": "December through May is generally Belize’s drier season and a popular period for visiting. Weather and sea conditions vary.",
-    "how_to_get_there": "Travel to the Placencia Peninsula in southern Belize, commonly via Belize City followed by a domestic flight or road transfer. Confirm current connections and transfers with the resort.",
-    "who_its_for": "Travelers seeking a waterfront resort base for exploring the Placencia Peninsula, Belize’s coast and nearby waters.",
-    "signature_experiences": "A stay shaped by the resort’s marina setting, with opportunities to explore the peninsula and arrange outings on the water."
+    "best_months": "December through May is generally Belize's drier season and a popular period for visiting. Weather and sea conditions vary.",
+    "how_to_get_there": "Tropic Air flies from Belize City to Placencia's airstrip (PLJ). Umaya is at Maya Beach on the Placencia Road. Confirm transfers with the resort.",
+    "signature_experiences": "Barrier reef snorkeling, mangrove kayaking, Monkey River wildlife trips, and inland days to Xunantunich, the ATM cave and St. Herman's Cave.",
+    "who_its_for": "Families and groups of friends who want apartment-style suites on the Placencia Peninsula, with reef and jungle tours arranged on site."
    },
    "faqs": [
     {
-     "q": "What is Umaya Resort & Marina known for?",
-     "a": "Umaya Resort & Marina is a waterfront resort on Belize’s Placencia Peninsula, known for its marina and coastal setting. It offers a base for exploring the peninsula and nearby waters."
+     "q": "How do you get to Umaya Resort & Adventures?",
+     "a": "Tropic Air flies from Belize City (BZE) to the Placencia airstrip (PLJ); the drive from Belize City is longer. Umaya is at Maya Beach on the Placencia Road. The resort's website does not publish transfer details, so confirm the flight and transfer with the resort team when booking."
     },
     {
-     "q": "How many rooms does Umaya Resort & Marina have?",
-     "a": "A verified room count is not available in the supplied property information. Check directly with the resort for current accommodation details."
+     "q": "What is Umaya Resort & Adventures known for?",
+     "a": "Spacious one- and two-bedroom suites on the Placencia Peninsula, a beachside pool with the Fyah beach bar, the In Lak'ech Spa, and a tour program covering the reef, the jungle and Maya sites."
     },
     {
-     "q": "What is the best time to visit Umaya Resort & Marina?",
-     "a": "Belize’s drier season, generally December through May, is a popular time to visit. Conditions vary, so check local weather and marine forecasts when planning."
+     "q": "How many rooms does Umaya Resort & Adventures have?",
+     "a": "The resort's website lists its suite types rather than a total: one-bedroom and two-bedroom suites and two-bedroom penthouses, each in beachfront or lagoon bayview versions."
     },
     {
-     "q": "Is Umaya Resort & Marina good for families?",
-     "a": "Its resort setting and location on the Placencia Peninsula can suit families looking for a coastal base. Confirm available family accommodation, child facilities and activities with the resort before booking."
+     "q": "What is the best time to visit Umaya Resort & Adventures?",
+     "a": "Belize's drier season, generally December through May, is a popular time to visit. Conditions vary, so check local weather and marine forecasts when planning."
     },
     {
-     "q": "How do you get to Umaya Resort & Marina?",
-     "a": "Umaya is on the Placencia Peninsula in southern Belize. Travelers typically reach the area via Belize City, then continue by domestic flight or road transfer; confirm the best route and current transfer options with the resort."
+     "q": "Is Umaya Resort & Adventures good for families?",
+     "a": "Its one- and two-bedroom suites are designed for families and friends travelling together, and the resort can suggest suites for families with little ones or guests who wish to avoid stairs."
     },
     {
-     "q": "Can guests access the water from Umaya Resort & Marina?",
-     "a": "The property has a marina, providing a point of access for water-based outings. Ask the resort about available boat services, excursions and any advance booking requirements."
+     "q": "What can you do from Umaya Resort & Adventures?",
+     "a": "Snorkel or dive the barrier reef, kayak the mangroves, sail the lagoon, take the Monkey River tour, go cave tubing at St. Herman's Cave, visit Xunantunich and the inland Blue Hole, or explore the ATM cave. Tours carry 12.5% sales tax and a 10% resort fee."
     }
    ],
    "reviewed": true,
@@ -48075,16 +48401,16 @@
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A private island hideaway on Belize’s Caribbean coast.",
+   "tagline": "Monolithic dome suites on the beach, a mile south of San Pedro.",
    "quote": "Here, the day moves between turquoise water, sea air, and the quiet of your own island retreat.",
    "hero": "https://www.xanaduislandresort.com/wp-content/uploads/2022/09/hero-image.jpg",
    "gallery": [],
    "bestMonths": "Not specified. Check seasonal conditions in Belize and confirm your dates with the resort.",
    "bestMonthsNote": null,
    "bestFor": [
-    "honeymoon",
-    "luxury",
-    "solo"
+    "couples",
+    "family",
+    "honeymoon"
    ],
    "status": "unclassified",
    "statusDate": null,
@@ -48093,65 +48419,69 @@
    "airportDirections": "The resort provides free airport transportation, and the airport is a 7-minute drive from the property.",
    "founderNote": "Suite-style island accommodations on Ambergris Caye for families and multigenerational travelers.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "Private island setting on Belize’s Caribbean coast",
-     "Caribbean waters and a distinctly secluded atmosphere",
-     "A resort stay shaped by its island surroundings",
-     "Room and villa details are not yet confirmed"
-    ]
+    "paras": [
+     "20 condominium suites in five monolithic domes and one conventional building",
+     "Studio, one-, two- and three-bedroom and loft suites",
+     "Ocean, garden or pool views, including treetop and oceanfront suites",
+     "Air conditioning, ceiling fans, full kitchens and private furnished decks"
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Explore the Caribbean coast from an island base",
-     "Spend unhurried time by the water",
-     "Discover Belize’s coastal surroundings",
-     "Plan island outings after confirming local availability"
+     "Snorkel and dive the Belize Barrier Reef offshore",
+     "Paddle or cycle from the resort",
+     "Explore San Pedro Town, a mile to the north",
+     "Join an island food tour or a mainland adventure tour"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Island setting in Belize",
-     "Caribbean coastal atmosphere",
-     "Resort-style stay",
-     "Accommodation details to be confirmed"
+     "Beachfront on Ambergris Caye, facing the Belize Barrier Reef",
+     "Domes built from 1998 to withstand storms",
+     "Green Globe certified, the first island property in Belize to earn it",
+     "Complimentary kayaks, bicycles and paddleboards"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Xanadu Island Resort offers a chance to experience Belize from an island base, with the Caribbean close at hand and a quieter pace than a mainland stay. Its appeal lies in that coastal setting and the sense of escape it creates. Specific accommodation details, services, and activities have not been provided, so confirm what is available before planning around particular experiences."
+     "body": "Xanadu Island Resort sits on the beach a mile south of San Pedro Town on Ambergris Caye, close enough for the town's restaurants and far enough for quiet gardens and sea views. Its 20 suites are set in monolithic domes, a building style the founders chose for strength against storms, and each has a full kitchen and private deck. It suits couples and families who like space, independence and the reef on the doorstep."
     }
    ],
    "facts": {
-    "best_months": "Not specified. Check seasonal conditions in Belize and confirm your dates with the resort.",
-    "how_to_get_there": "Located in Belize. Specific airport, transfer, and arrival information has not been provided.",
-    "who_its_for": "Travelers drawn to a Caribbean island setting and a resort stay. Family facilities, room types, and solo-traveler arrangements are not confirmed.",
-    "signature_experiences": "The property’s island setting and Caribbean coastal atmosphere. Specific activities and excursions have not been provided."
+    "best_months": "Not stated on the resort's website.",
+    "how_to_get_there": "Fly BZE to San Pedro (about 20 minutes) or take a 90-minute water taxi from Belize City; any taxi from the San Pedro airstrip or terminal to Xanadu is paid by the resort.",
+    "signature_experiences": "Staying in a monolithic dome, reef snorkeling and diving, complimentary kayaks, bicycles and paddleboards, and San Pedro food tours.",
+    "who_its_for": "Couples and families who want a self-catering beachfront suite on Ambergris Caye, a mile from San Pedro Town."
    },
    "faqs": [
     {
+     "q": "How do you get to Xanadu Island Resort?",
+     "a": "Fly from Belize International Airport (BZE) to San Pedro (SPR) in about 20 minutes, with flights roughly hourly; flights from the Belize City Municipal Airport also take 20 minutes. Water taxis from Belize City take about 90 minutes. In San Pedro, take any taxi to Xanadu and the resort pays the driver."
+    },
+    {
      "q": "What is Xanadu Island Resort known for?",
-     "a": "Xanadu Island Resort is a resort in Belize with a Caribbean island setting. Further property details were not provided."
+     "a": "Beachfront suites built as monolithic domes, a mile south of San Pedro Town on Ambergris Caye, and an environmental focus: it was the first island property in Belize certified by Green Globe."
     },
     {
      "q": "How many rooms does Xanadu Island Resort have?",
-     "a": "The room count has not been provided. Confirm the current inventory directly with the resort."
-    },
-    {
-     "q": "What is the best time to visit Xanadu Island Resort?",
-     "a": "The best time depends on your travel priorities and conditions during your dates. Check current seasonal weather and local travel guidance before booking."
+     "a": "There are 20 condominium suites in five domes and one conventional building: studio, one-bedroom, two-bedroom, three-bedroom and loft suites, each with a full kitchen."
     },
     {
      "q": "Is Xanadu Island Resort good for families?",
-     "a": "Family suitability cannot be confirmed from the details provided. Ask the resort about room configurations, child-friendly facilities, and activities before booking."
+     "a": "Its one- to three-bedroom suites have full kitchens and living space, and the resort publishes children's fares for San Pedro flights. Confirm the right suite for your group with the resort."
     },
     {
-     "q": "How do you get to Xanadu Island Resort?",
-     "a": "The property is in Belize, but arrival details and transfer options have not been provided. Contact the resort for current directions and arrangements."
+     "q": "Is Xanadu on a private island?",
+     "a": "No. Xanadu is on Ambergris Caye, on the beach about a mile south of San Pedro Town."
+    },
+    {
+     "q": "What can you do at Xanadu Island Resort?",
+     "a": "Use the complimentary kayaks, bicycles and paddleboards, swim at the pool or beach, snorkel and dive the barrier reef, and book island food tours or adventure tours to the mainland."
     }
    ],
    "reviewed": true,

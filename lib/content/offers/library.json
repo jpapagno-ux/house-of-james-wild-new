@@ -2298,5 +2298,265 @@
   "checked": "2026-11-01",
   "conditions": "The Thermal Experience (3 night stay: Ephemeral Table Experience, Coffee Tasting Experience, Tucanes Restaurant Dinner, Tabacon History & Nature Trail, Daily Breakfast, Yoga Class) or The Wellness Experience (3-night stay: Healthy Cooking Class Experience, 50-minute spa treatment, Tabacon History & Nature Trail, Sustainable activity). Minimum 3-night stay; available only for new reservations and subject to availability; rates based on double occupancy. Offers included in this package cannot be combined with other promotions, contracts, or group reservations. Regular Season: November 1 to December 17, 2026. Prices are subject to change without prior notice. Spa treatments are available only for guests 16 years of age and older.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000146",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "blue-reef",
+  "name": "Fall for Belize (Blue Reef Beach Resort)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 2 nights or more and save 15% on accommodations, plus a $100 resort credit.",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-20",
+   "text": "Travel November 1, 2026 to December 20, 2026; book by December 15, 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Minimum stay 2 nights. Booking dates: now to December 15, 2026. Travel dates: November 1, 2026 to December 20, 2026. Cannot be combined with other offers. Blue Reef Beach Resort terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000147",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "jaguar-reef-lodge",
+  "name": "Fall for Belize (The Lodge at Jaguar Reef)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 2 nights or more and save 15% on accommodations, plus a $100 resort credit.",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Travel November 1, 2026 to December 31, 2026; book by December 15, 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Minimum stay 2 nights. Booking dates: now to December 15, 2026. Travel dates: November 1, 2026 to December 31, 2026. Terms and conditions apply. Not valid with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000148",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "sleeping-giant-rainforest-lodge",
+  "name": "Fall for Belize (The Rainforest Lodge at Sleeping Giant)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 2 nights or more and save 15% on accommodations, plus a $100 resort credit.",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Travel November 1, 2026 to December 31, 2026; book by December 15, 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Minimum stay 2 nights. Booking dates: now to December 15, 2026. Travel dates: November 1, 2026 to December 31, 2026. Terms and conditions apply. Not valid with other offers.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000150",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "thatch-caye-resort",
+  "name": "50% Off Black Friday Sale (Thatch Caye Resort)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Book by December 3, 2026 and save 50% on your luxurious all-inclusive getaway.",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-12-17",
+   "text": "Travel now to December 17, 2027; book by December 3, 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "50% off all room types. Book by December 3, 2026. Travel period: now to December 17, 2027. Cannot be combined with other offers. Thatch Caye Resort terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000151",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "chable-yucatan",
+  "name": "3rd Night On Us (Chablé Yucatán)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Enjoy a third night on us at Chablé Yucatán",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Book by 30 November 2026; travel until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "A minimum stay of 3 consecutive nights is required. Applies to all room categories. Includes welcome amenity, complimentary mini-bar restocked daily, daily breakfast for two at the restaurant and a $150 USD resort credit per stay, per room. Room service is not included in the breakfast offer. Does not apply to groups. Resort credit is not valid toward the room rate, holds no cash value and may only be applied to selected F&B experiences and spa treatments. Cannot be combined with other promotions; subject to availability. Chablé terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000152",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "chable-maroma",
+  "name": "3rd Night On Us (Chablé Maroma)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Enjoy a third night on us at Chablé Maroma",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-19",
+   "text": "Book by 30 November 2026; travel until 19 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "A minimum stay of 3 consecutive nights is required. Applies to all room categories. Includes welcome amenity, complimentary mini-bar restocked daily, daily breakfast for two at the restaurant and a $150 USD resort credit per stay, per room. Room service is not included in the breakfast offer. Does not apply to groups. Resort credit is not valid toward the room rate, holds no cash value and may only be applied to selected F&B experiences and spa treatments. Cannot be combined with other promotions; subject to availability. Chablé terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000153",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "chable-yucatan",
+  "name": "The Grand Tour (Chablé Yucatán)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Two mesmerizing destinations in one unforgettable round trip: Chablé Maroma and Chablé Yucatán",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Travel until 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "In Chablé Yucatán: three nights in a Casita with a plunge pool, daily breakfast for two at Ki'ol, welcome amenity and bottle of wine, Cacao Transformation culinary experience for two, Spa hydrotherapy circuit and daily recreational activities. In Chablé Maroma: two nights in a villa with a plunge pool, welcome amenity, daily breakfast for two at Kaban, Spa hydrotherapy circuit, USD $50 spa credit per person per stay, daily recreational activities and transportation for two from Chablé Maroma to Chablé Yucatán. Check-in from 15:00, check-out 12:00. Subject to availability. Non-cumulative with other promotions; does not apply to groups. Chablé terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000154",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "chable-maroma",
+  "name": "The Grand Tour (Chablé Maroma)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Two mesmerizing destinations in one unforgettable round trip: Chablé Maroma and Chablé Yucatán",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Travel until 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "In Chablé Maroma: two nights in a villa with a plunge pool, welcome amenity, daily breakfast for two at Kaban, Spa hydrotherapy circuit, USD $50 spa credit per person per stay, daily recreational activities and transportation for two from Chablé Maroma to Chablé Yucatán. In Chablé Yucatán: three nights in a Casita with a plunge pool, daily breakfast for two at Ki'ol, welcome amenity and bottle of wine, Cacao Transformation culinary experience for two, Spa hydrotherapy circuit and daily recreational activities. Check-in from 15:00, check-out 12:00. Subject to availability. Non-cumulative with other promotions; does not apply to groups. Chablé terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000155",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "hotel-bardo",
+  "name": "End-of-Year at Bardo (Hotel Bardo)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Enjoy a fantastic 35% off from our regular rates during your stay with us",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-31",
+   "text": "Throughout December 2026, excluding the peak season from 28 December to 6 January"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "35% off regular rates when booked directly with the hotel. Benefits available throughout December, except for the peak season from 28 December to 6 January. Cannot be combined with other existing promotions. Hotel Bardo terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000156",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "nizuc-resort-spa",
+  "name": "Stay More, Save More (NIZUC Resort & Spa)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay longer in Paradise and enjoy up to 20% off room rates",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-15",
+   "text": "Stays through 15 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Up to 20% off room rates with daily buffet breakfast for two and 10% off spa treatments. Subject to availability; some restrictions may apply. Not combinable with other offers. NIZUC terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000157",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "nizuc-resort-spa",
+  "name": "Early Booking Bonus (NIZUC Resort & Spa)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Enjoy our advance booking room rates and receive amazing upgrades when you book your stay in advance",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-18",
+   "text": "Travel through 18 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Valid for new reservations only, subject to availability. Some restrictions and blackout dates may apply. Not combinable with other offers. NIZUC terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000158",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "nizuc-resort-spa",
+  "name": "Preferred Suites (NIZUC Resort & Spa)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Enjoy special discounted rates on suites",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-18",
+   "text": "Book by 16 December 2026 for stays through 18 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Special discounted rates on suites. Subject to availability; some restrictions may apply. Not combinable with other offers. NIZUC terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000159",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "nizuc-resort-spa",
+  "name": "NIZUC Bed & Breakfast (NIZUC Resort & Spa)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Begin each radiant morning at NIZUC with a curated daily breakfast for two at Café de la Playa",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2026-12-18",
+   "text": "Travel through 18 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-01",
+  "conditions": "Daily breakfast for two at Café de la Playa. Subject to availability. Not combinable with other offers. NIZUC terms apply.",
+  "volume": "stays"
  }
 ]

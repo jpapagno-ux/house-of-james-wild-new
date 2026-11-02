@@ -592,19 +592,19 @@
    "airports": [
     [
      "Philip S. W. Goldson International Airport (BZE)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 6 stays in the Ledger here"
+    ],
+    [
+     "Placencia Municipal Airport (PLJ)",
+     "Serves 2 stays in the Ledger here"
     ],
     [
      "Dangriga Airstrip (DGA)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Placencia Airstrip (PLJ)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "BZE · DGA",
+   "flyInto": "BZE · PLJ",
    "bestShort": "Nov–May",
    "atlasName": "Belize"
   },
@@ -848,78 +848,151 @@
    "region": "south-america",
    "regionName": "South America",
    "ledgerId": "DST-2026-000038",
-   "subtitle": "Where Nature Moves with Rhythm",
-   "leading": "Rainforest, river, and coastline come together in a landscape rich with life and colour. From the Amazon canopy to sweeping beaches and dramatic mountainsides, the scenery is vibrant and diverse. Stays reflect this natural abundance, each offering a window into Brazil’s wild beauty. Explore biodiverse waterways, wander through lush jungle trails, or relax on golden sands warmed by the South Atlantic. Brazil invites openness, energy, and connection to nature’s rhythm.",
+   "subtitle": "The Amazon, the Pantanal, Rio and the coast",
+   "leading": "The Rio Negro and the Anavilhanas islands above Manaus, jaguars on the rivers of the Pantanal, Rio under its forest, the falls at Iguaçu and the beaches of southern Bahia. Brazil is several trips joined by domestic flights, so the house picks two or three and builds around them.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68630057bbd3ea24c5c73f44_BrazilAerialHero1.jpg",
     "alt": "Brazil, South America"
    },
    "story": [
     {
-     "eyebrow": "Where Nature Moves with Rhythm",
-     "title": "A Land of Rainforest, Coastlines, and Living Energy",
+     "eyebrow": "The Amazon, the Pantanal, Rio and the coast",
+     "title": "A Country Best Taken in Pieces",
      "blocks": [
       {
-       "p": "Brazil is a country of scale and vitality, where vast rainforests, powerful rivers, and sunlit coastlines create a landscape that feels alive in every direction. From the Amazon to the Atlantic, nature and culture move together in constant rhythm, shaping an experience that is both dynamic and immersive."
-      },
-      {
-       "p": "Travel here is about energy and contrast. Exploring dense jungle, standing before thundering waterfalls, and experiencing vibrant coastal life reveal a rhythm that feels bold, colorful, and deeply expressive."
-      },
-      {
-       "p": "For those seeking nature, culture, and movement, Brazil offers an experience that feels expansive, engaging, and unforgettable."
-      },
-      {
-       "p": "Journeys are designed with local expertise and access to both wild environments and cultural centers, creating experiences that feel seamless, immersive, and deeply connected."
+       "p": "Brazil does not fit in one trip, and it shouldn't try. The house starts with water, the Amazon around Manaus or the Pantanal for jaguars, then adds Iguaçu, Rio or the coast at the end. The Amazon basin runs through Peru, Ecuador and Brazil, and each has its own river voyages, set out on the Voyages side of the house."
       }
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697e08a2dc6e41fc26b91d51_DJI_0341.webp",
-      "alt": "Brazil: A Land of Rainforest, Coastlines, and Living Energy"
+      "alt": "Brazil: A Country Best Taken in Pieces"
      }
     },
     {
-     "eyebrow": "Find Your Rhythm in Brazil",
-     "title": "Where Nature, Culture & Energy Collide",
+     "eyebrow": "Where the house sends you",
+     "title": "The Amazon, the Pantanal, Iguaçu and Rio",
      "blocks": [
       {
-       "h": "Traveler Personalities",
-       "p": "Adventure seekers exploring diverse landscapes; cultural travelers drawn to music and movement; photographers chasing color and contrast; and conscious travelers seeking immersive, nature driven experiences."
+       "h": "The Amazon: Manaus and the Rio Negro",
+       "p": "Manaus is the way in. Below the city the dark Rio Negro meets the pale Solimões, and for a stretch the two run side by side before they mix. Upriver, Anavilhanas National Park at Novo Airão, up to four hours by road from Manaus, holds one of the largest river archipelagos in the world. UNESCO lists it in the Central Amazon Conservation Complex, with pink river dolphins, giant otters, manatees and the arapaima. From March to August the forest floods and you go by canoe through the igapó. From September to February the water drops and the beaches come up."
       },
       {
-       "h": "Experiences You Can’t Find Anywhere Else",
-       "p": "Explore the Amazon rainforest, stand before the power of Iguazu Falls, experience the energy of Rio, and unwind along tropical coastlines where culture and nature meet."
+       "h": "The Pantanal",
+       "p": "One of the largest wetlands in the world, in UNESCO's words, spread across Mato Grosso and Mato Grosso do Sul. ICMBio counts 463 bird species and 124 mammals. From October to April the rivers spill over and flood the plain. When the water draws back into the rivers and small lakes, the house goes looking for jaguars. UNESCO says the Pantanal Conservation Area, on the Bolivian border, probably has the largest jaguar population in the region."
       },
       {
-       "h": "Not Just a Trip. A Transformation.",
-       "p": "Plan your Brazil journey with our travel designers and experience one of the world’s most vibrant destinations."
+       "h": "Iguaçu Falls",
+       "p": "The Iguaçu River forms the border with Argentina here, in the state of Paraná. The falls run nearly three kilometres wide, with drops of up to 80 metres; the best known is the Garganta do Diabo, the Devil's Throat. Iguaçu was the first Brazilian park inscribed by UNESCO as natural World Heritage, in 1986. A day or two is enough."
+      },
+      {
+       "h": "Rio de Janeiro and the coast",
+       "p": "Rio sits between the sea and Tijuca National Park, the most visited federal protected area in Brazil, with about two million visitors a year and Christ the Redeemer inside it. Walk the forest in the morning and finish on the beach. For the slow end of a trip, Trancoso and the southern Bahia coast are reached through Porto Seguro, and the Santa Catarina coast further south has quieter bays and islands."
       }
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697e08abe773ae7dbfc89e31_470.webp",
-      "alt": "Brazil: Where Nature, Culture & Energy Collide"
+      "alt": "Brazil: The Amazon, the Pantanal, Iguaçu and Rio"
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Amazon, high water: March to August. Amazon, low water: September to February. Pantanal, dry season: May to September."
+    ],
+    [
+     "Getting there",
+     "Fly into São Paulo Guarulhos (GRU) or Rio de Janeiro Galeão (GIG). Domestic flights connect to Manaus (MAO) for the Amazon, Cuiabá (CGB) or Campo Grande (CGR) for the Pantanal, Foz do Iguaçu (IGU) for the falls and Porto Seguro (BPS) for Trancoso."
+    ],
+    [
+     "Who it suits",
+     "Couples, families and photographers who want wildlife and water first, river dolphins and flooded forest in the Amazon or jaguars in the Pantanal, then a few days of falls, city or beach."
+    ],
+    [
+     "Signature experiences",
+     "A canoe through flooded igapó forest in Anavilhanas, the meeting of the waters below Manaus, jaguars on the Pantanal rivers, the Devil's Throat at Iguaçu and the forest trails of Tijuca above Rio."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit the Brazilian Amazon?",
+     "a": "Both seasons work; they are different trips. High water runs March to August: the forest floods and you explore the igapó by canoe. Low water runs September to February: the rivers drop and the beaches come up along the Rio Negro. That is the pattern at Anavilhanas, above Manaus."
+    },
+    {
+     "q": "When is the best time to see jaguars in the Pantanal?",
+     "a": "May to September, the dry season. From October to April the rains flood the plain. As the water draws back into the rivers and small lakes, wildlife has fewer places to be, and jaguars are easier to find from a boat. UNESCO notes the Pantanal Conservation Area probably holds the largest jaguar population in the region."
+    },
+    {
+     "q": "How do you get to Brazil and the Amazon?",
+     "a": "Most international flights land at São Paulo Guarulhos (GRU) or Rio de Janeiro Galeão (GIG). For the Amazon, connect to Manaus (MAO); Anavilhanas is up to four hours from there by road. For the Pantanal, fly to Cuiabá (CGB) or Campo Grande (CGR)."
+    },
+    {
+     "q": "Should you choose an Amazon river cruise or a lodge?",
+     "a": "A cruise moves every day and covers more river: the Rio Negro, Anavilhanas and the side channels by skiff, with your cabin coming along. A lodge stays put, so you get to know one stretch of forest on foot and by canoe. The Amazon basin runs through Peru, Ecuador and Brazil, and the house has river voyages in each, set out on the Voyages side."
+    },
+    {
+     "q": "How many days do you need in Brazil?",
+     "a": "Ten to fourteen days covers two or three regions: four nights in the Amazon or the Pantanal, two at Iguaçu and the rest in Rio or on the coast. Distances are long and most moves are a domestic flight, so allow three or four days per region."
+    },
+    {
+     "q": "Can you combine the Amazon with Iguaçu or Rio?",
+     "a": "Yes, and most trips do. Fly from Manaus to Foz do Iguaçu (IGU) or Rio, usually with a connection. Iguaçu needs a day or two; the falls form the border with Argentina. Finish in Rio, or on the coast at Trancoso through Porto Seguro."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Brazil",
+     "area": "Amazon, high water",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good"
+     ]
+    },
+    {
+     "area": "Amazon, low water",
      "note": "From the Ledger's best-months notes",
      "months": [
       "best",
       "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
       "best",
       "best",
       "best",
       "best"
+     ]
+    },
+    {
+     "area": "Pantanal, dry season",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good"
      ]
     }
    ],
@@ -939,7 +1012,7 @@
    ],
    "transfers": [],
    "flyInto": "FLN · NVT",
-   "bestShort": "Jul–Dec",
+   "bestShort": "Year-round",
    "atlasName": "Brazil"
   },
   {

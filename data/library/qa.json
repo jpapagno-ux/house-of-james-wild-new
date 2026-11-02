@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-01",
+ "checkedOn": "2026-11-02",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -496,7 +496,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8d3",
    "slug": "be-tulum",
-   "name": "Be Tulum",
+   "name": "BE DESTINATION Tulum",
    "country": "Mexico",
    "missing": [],
    "released": true
@@ -671,15 +671,13 @@
    "slug": "blancaneaux-lodge",
    "name": "Blancaneaux Lodge",
    "country": "Belize",
-   "missing": [
-    "own_photos"
-   ],
+   "missing": [],
    "released": true
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc23",
    "slug": "blue-reef",
-   "name": "Blue Reef",
+   "name": "Blue Reef Beach Resort",
    "country": "Belize",
    "missing": [
     "coordinates",
@@ -1893,7 +1891,7 @@
   {
    "stay_id": "6a9c3ddc48b7e640309dbc21",
    "slug": "jaguar-reef-lodge",
-   "name": "Jaguar Reef Lodge",
+   "name": "The Lodge at Jaguar Reef",
    "country": "Belize",
    "missing": [
     "coordinates",
@@ -1931,7 +1929,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff92b",
    "slug": "kaaba-luum-mexico",
-   "name": "Kaaba Luum Wellness",
+   "name": "Kaaba Luum",
    "country": "Mexico",
    "missing": [],
    "released": true
@@ -3835,7 +3833,7 @@
   {
    "stay_id": "6a9c3ddc48b7e640309dbc1a",
    "slug": "sleeping-giant-rainforest-lodge",
-   "name": "Sleeping Giant Rainforest Lodge",
+   "name": "The Rainforest Lodge at Sleeping Giant",
    "country": "Belize",
    "missing": [
     "coordinates",
@@ -4458,7 +4456,7 @@
   {
    "stay_id": "6a9c3ddc48b7e640309dbc22",
    "slug": "umaya-resort-and-marina",
-   "name": "Umaya Resort & Marina",
+   "name": "Umaya Resort & Adventures",
    "country": "Belize",
    "missing": [
     "coordinates",

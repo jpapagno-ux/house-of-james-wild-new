@@ -29,6 +29,8 @@ export type Guide = {
   zoom?: "galapagos" | "rapa-nui";
   /** A flyover from the continent into a close chart (lib/content/flyovers.ts), drawn under the facts. */
   flyover?: "atacama-uyuni" | "rapa-nui" | "portugal" | "greece";
+  /** A country guide (Indonesia): list every released stay filed under the country, founder favourites first. */
+  countryStays?: boolean;
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
   stays?: string[];
   /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
@@ -59,7 +61,7 @@ export type Guide = {
 };
 
 const COMPARE: { label: string; raja: string; komodo: string }[] = [
-  { label: "Best months", raja: "October to April", komodo: "May to September (dry season)" },
+  { label: "Best months", raja: "October to April", komodo: "April to June and September to December (Indonesia's tourism board)" },
   { label: "Getting there", raja: "Fly to Sorong, usually via Jakarta or Makassar", komodo: "Fly to Labuan Bajo, a short hop from Bali" },
   { label: "What it's famous for", raja: "Karst lagoons, the richest reefs on Earth, birds of paradise", komodo: "Komodo dragons, Padar's ridges, Pink Beach, mantas" },
   { label: "In the water", raja: "Gentler currents, warm water, snorkelling every day", komodo: "Stronger currents at the big dive sites, cooler and clearer water" },
@@ -79,6 +81,21 @@ const SOURCES_KOMODO = [
   { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
 ];
 
+// Indonesia country guide (2 Nov 2026): official sources only (Indonesia's tourism board, UNESCO, the
+// Raja Ampat Marine Park Authority). The third-party sources stay on the Raja Ampat and Komodo guides for now.
+const SOURCES_INDONESIA = [
+  { title: "Wonderful Indonesia: weather and seasons", url: "https://www.indonesia.travel/id/en/general-information/weather-climate-seasons" },
+  { title: "Wonderful Indonesia: a first-timer's guide to Komodo National Park", url: "https://www.indonesia.travel/jp-en/travel-ideas/unveil-the-lands-of-dragons-firsttimers-guide-to-komodo-national-park/" },
+  { title: "Wonderful Indonesia: Raja Ampat", url: "https://www.indonesia.travel/au/en/travel-ideas/marine/discover-raja-ampat-travel-inspiration-to-indonesias-heavenly-eastern-archipelago" },
+  { title: "Wonderful Indonesia: Lombok and Sumba", url: "https://www.indonesia.travel/de/en/destination/bali-nusa-tenggara/west-nusa-tenggara/lombok---sumba" },
+  { title: "Wonderful Indonesia: Lombok", url: "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/west-nusa-tenggara/lombok" },
+  { title: "Wonderful Indonesia: types of Indonesian visas", url: "https://www.indonesia.travel/us/en/travel-ideas/culture/types-of-indonesian-visas-you-need-to-know" },
+  { title: "Wonderful Indonesia: the e-VOA", url: "https://www.indonesia.travel/us/en/news-update/electronic-visa-on-arrival-e-voa-launched-to-ease-travelers-entry-process-to-indonesia" },
+  { title: "UNESCO World Heritage: Komodo National Park", url: "https://whc.unesco.org/en/list/609/" },
+  { title: "Raja Ampat Marine Park Authority: entry card", url: "https://kkprajaampat.com/en/entry-card/" },
+  { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
+];
+
 export const GUIDES: Record<string, Guide> = {
   indonesia: {
     slug: "indonesia", region: "asia", country: "indonesia", name: "Indonesia", path: "/destinations/asia/indonesia",
@@ -90,32 +107,42 @@ export const GUIDES: Record<string, Guide> = {
     eyebrow: "Destinations · Asia · Indonesia",
     h1: "Indonesia, by Sea",
     tagline: "Seventeen thousand islands, and the best of them reached by boat",
+    // A country guide lists every released stay in the country (founder favourites first), not a place selection.
+    countryStays: true,
     slides: [
       { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Jungle-covered karst islands rising from turquoise lagoons in Raja Ampat, West Papua" },
       { url: `${KOM}padar-island-aerial`, alt: "Padar Island's ridges and crescent bays from the air, Komodo National Park" },
       { url: `${CLD}wildco/voyages/vessels/aliikai/DJI_0472-1`, alt: "The phinisi Aliikai under full sail from the air" },
       { url: `${CLD}wildco/voyages/home-hero/03-over-under-reef`, alt: "Half above, half below the waterline: a snorkeller over a coral reef beneath a forested island" },
     ],
-    answer: "Indonesia's two great sea journeys are Raja Ampat, in West Papua, and Komodo National Park, east of Bali, with the Spice Islands of the Banda Sea between them. Raja Ampat holds the richest reefs on Earth and is best from October to April; Komodo has the dragons, Padar's ridges and the mantas, and is best from May to September. Both are best seen from a small boat. Aboard the phinisi Aliikai you can follow the seasons: Komodo in the dry months, the Spice Islands in October, Raja Ampat through the northern winter.",
-    facts: [["Where", "Eastern Indonesia: West Papua, the Banda Sea and the Lesser Sundas"], ["Best for the sea", "Raja Ampat Oct–Apr · Komodo May–Sep · Banda Sea Oct"], ["Fly into", "Bali (DPS) or Jakarta (CGK), then on to Sorong or Labuan Bajo"], ["How to see it", "By small phinisi, on a shared voyage or a private charter"], ["Vetted by", "James Wild · sailed Raja Ampat aboard Aliikai, November 2024"]],
+    answer: "Indonesia's two great sea journeys are Raja Ampat, in West Papua, and Komodo National Park, east of Bali, with the Spice Islands of the Banda Sea between them. Raja Ampat holds the richest reefs on Earth and is best from October to April; Komodo has the dragons, Padar's ridges and the mantas, and is best from April to June and September to December. Both are best seen from a small boat. On land, Bali and Java are driest from April to October, and Sumba's surf runs from May to October. James visited Bali and Sumba in November 2024, and the house now files nineteen Indonesian stays, from Ubud's valleys to NIHI's surf breaks.",
+    facts: [["Where", "Bali and Lombok, Sumba and Flores, West Papua, the Banda Sea and the Riau Islands"], ["Seasons", "Bali and Java Apr to Oct · Komodo Apr to Jun and Sep to Dec · Raja Ampat Oct to Apr · Sumba surf May to Oct"], ["Fly into", "Bali (DPS) or Jakarta (CGK), both e-VOA airports, then on to Labuan Bajo, Sorong or Sumba"], ["Visa", "Visa on Arrival or the e-VOA for most visitors; check fees on the official immigration site"], ["How to see it", "Bali and Sumba by land, the eastern islands by small phinisi"], ["Vetted by", "James Wild · Bali and Sumba stays, November 2024 · sailed Raja Ampat aboard Aliikai, November 2024"]],
     proof: "James sailed Raja Ampat aboard the phinisi Aliikai with his son in November 2024. It's the voyage he would book again, and the reason Indonesia's sea routes are in the Ledger.",
+    // Seasons by region from Indonesia's official tourism board (indonesia.travel, see sources);
+    // the Spice Islands row is the Banda Sea window Aliikai sails.
     months: [
+      { area: "Bali and Java", note: "Dry April to October, wet November to March", months: M("wwwBBBBBBBww") },
+      { area: "Komodo", note: "Flores · rains disrupt boats January to March; dragons harder to spot in July and August", months: M("wwwBBBggBBBB") },
       { area: "Raja Ampat", note: "West Papua · calmest seas", months: M("BBBBwwwwwBBB") },
-      { area: "Komodo", note: "Flores · dry season", months: M("wwgBBBBBBggw") },
+      { area: "Sumba", note: "Surf May to October · the Pasola usually February to March", months: M("wggwBBBBBBww") },
       { area: "Spice Islands", note: "Banda Sea · between monsoons", months: M("wwwgwwwwwBgw") },
     ],
-    airports: [["Bali (DPS)", "The usual international gateway; 1 hour on to Labuan Bajo"], ["Jakarta (CGK)", "Direct flights on to Sorong, about 4 hours"], ["Makassar (UPG)", "The common connection for Sorong, about 2 hours"]],
-    transfers: [["Bali → Labuan Bajo (LBJ)", "About 1 hour by air, for Komodo"], ["Jakarta → Sorong (SOQ)", "About 4 hours, direct, for Raja Ampat"], ["Makassar → Sorong", "About 2 hours, direct"], ["Ambon (AMQ)", "The gateway for the Banda Sea and the Spice Islands"]],
+    airports: [["Bali (DPS)", "Ngurah Rai, the main gateway and an e-VOA airport"], ["Jakarta (CGK)", "Soekarno Hatta, an e-VOA airport, with flights on to Sorong"], ["Labuan Bajo (LBJ)", "On Flores, for Komodo National Park"], ["Sorong (SOQ)", "Domine Eduard Osok Airport, for Raja Ampat"], ["Lombok (LOP)", "Lombok International Airport, daily flights from Bali"], ["Sumba (TMC, WGP)", "Tambolaka in the west, Umbu Mehang Kunda at Waingapu in the east"]],
+    transfers: [["Bali to Labuan Bajo", "About 1.5 hours by air, for Komodo"], ["Bali to Tambolaka", "About an hour by air, for West Sumba"], ["Jakarta to Sorong", "About 4 to 5 hours by air, or via Makassar or Manado"], ["Sorong to Waisai", "About 2 hours by fast ferry, into Raja Ampat"], ["Ambon (AMQ)", "The gateway for the Banda Sea and the Spice Islands"]],
     highlights: [
       { title: "Raja Ampat", line: "West Papua · Oct–Apr", body: "Karst lagoons, mantas at Arborek and the richest coral reefs on Earth, in the far east of the archipelago.", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Karst islands in Raja Ampat's lagoons" } },
       { title: "Komodo National Park", line: "Flores · May–Sep", body: "Dragons on Rinca, the climb up Padar, Pink Beach and the mantas of Karang Makassar, an hour from Bali.", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island from the air" } },
       { title: "The Spice Islands", line: "Banda Sea · October", body: "Nutmeg islands, old Dutch forts and walls of coral, sailed in the short calm between the monsoons." },
+      { title: "Bali", line: "Ubud and the south coast · Apr to Oct", body: "Rice terraces and temples around Ubud, clifftops on the Bukit and black sand at Tabanan: the island most journeys start from." },
+      { title: "Sumba", line: "West Sumba · surf May to Oct", body: "Long left-hand surf breaks, horse culture and the Pasola, an hour's flight east of Bali." },
     ],
     suits: [
       { who: "First-time Raja Ampat travellers", line: "The classic northern loop in the calm season, every transfer handled from Sorong.", href: "/destinations/asia/indonesia/raja-ampat", label: "Raja Ampat guide" },
       { who: "First-timers to Indonesia", line: "Komodo's best-known sights in four nights, an hour's flight from Bali.", href: "/destinations/asia/indonesia/komodo", label: "Komodo guide" },
       { who: "Divers and snorkellers", line: "The Coral Triangle's reefs, with guided diving and Nitrox aboard.", href: "/voyages/ships/aliikai", label: "Aliikai" },
       { who: "Families and private groups", line: "A whole phinisi for up to 15, on your own route.", href: "/voyages/ships/aliikai#charter", label: "Private charter" },
+      { who: "Surfers", line: "Sumba and Rote in the May to October surf season, at NIHI's two resorts.", href: "/stays/nihi", label: "NIHI Sumba" },
+      { who: "Couples and wellness travellers", line: "Ubud's river valleys and spas, then a few nights on the coast.", href: "#stays", label: "Where to stay" },
     ],
     howTo: {
       title: "How to See It",
@@ -123,7 +150,7 @@ export const GUIDES: Record<string, Guide> = {
       options: [
         { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#departures", label: "Aliikai's 2027 dates" },
         { name: "A private charter", body: "Take the whole yacht for your family or group, and draw the route yourself. From three nights in Komodo, seven in Raja Ampat.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
-        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "/plan", label: "Plan it with James" },
+        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "#stays", label: "The Bali stays" },
       ],
     },
     places: [
@@ -132,14 +159,21 @@ export const GUIDES: Record<string, Guide> = {
     ],
     voyageWaters: ["Raja Ampat", "Komodo"],
     faqs: [
-      { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from May to September. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
-      { q: "What is the best time to visit eastern Indonesia by boat?", a: "Raja Ampat from October to April, Komodo from May to September, and the Banda Sea in October, between the monsoons. Small ships like Aliikai move with those seasons." },
-      { q: "How do you get to Raja Ampat and Komodo?", a: "For Komodo, fly to Labuan Bajo, about an hour from Bali. For Raja Ampat, fly to Sorong in West Papua, direct from Jakarta or Makassar. Boats meet you at both airports." },
+      // From the Indonesia Destination record (approved 2 Nov 2026; official sources listed below).
+      { q: "When is the best time to visit Indonesia?", a: "April to October, the dry season across most of the country including Bali and Java. The wet season runs from November to March. Raja Ampat is the exception, best from October to April when its seas are calmest." },
+      { q: "When is the best time to visit Komodo National Park?", a: "April to June and September to December. September to November is best for manta rays, whale sharks and dragons; January to March rains often disrupt boat trips, and July and August are the dragons' mating season, when they are harder to spot." },
+      { q: "When is the best time to visit Raja Ampat?", a: "October to April, when the seas are calmer for snorkelling and diving. Visitors buy a Raja Ampat marine park entry card from the Marine Park Authority in Waisai, IDR 700,000 for international visitors and valid for twelve months." },
+      { q: "Do I need a visa for Indonesia?", a: "Most visitors need a visa, either Visa on Arrival or the electronic e-VOA, which can be applied for online before departure or in transit and is accepted at 16 airports including Bali and Jakarta. A small number of countries are visa exempt. Fees and length of stay change, so check the official immigration site before you travel." },
+      { q: "How do you get to Komodo from Bali?", a: "Fly about 1.5 hours from Bali to Labuan Bajo on Flores, the gateway to Komodo National Park. A park permit is bought at the park office in Labuan Bajo, and a local guide is mandatory for treks to see the dragons." },
+      { q: "Is Komodo National Park a UNESCO World Heritage Site?", a: "Yes. Komodo National Park was inscribed in 1991. It covers 219,322 hectares, centred on the volcanic islands of Komodo, Rinca and Padar, and is home to an estimated 5,700 Komodo dragons." },
+      { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from April to June and September to December. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
+      { q: "How do you get to Raja Ampat?", a: "Fly to Sorong in West Papua, about 4 to 5 hours from Jakarta or via Makassar or Manado, then take the 2-hour fast ferry to Waisai, or join your boat in Sorong." },
       { q: "Can you combine Raja Ampat and Komodo in one trip?", a: "Yes, with a flight between Sorong and Labuan Bajo via Makassar or Bali, but the best seasons barely overlap. Most travellers choose one per trip, or sail Aliikai's Sorong–Ambon crossing in April or October to link Raja Ampat with the Banda Sea." },
       { q: "Has James been to Raja Ampat?", a: "Yes. James sailed Raja Ampat aboard the phinisi Aliikai in November 2024, and he has been designing journeys since 1983." },
+      { q: "Which Indonesian stays has James been to?", a: "In November 2024 James visited Bali and Sumba. COMO Shambhala Estate, COMO Canggu, Tanah Gajah, the four Kayumanis villas, Viceroy Bali, The Ungasan and Soori Bali are founder favourites; Capella Ubud, Bambu Indah and NIHI Sumba are founder inspected. NIHI Rote opened in 2026: James has vetted it but not yet stayed." },
     ],
     geo: { lat: -3.5, lng: 125.5 },
-    sources: [...SOURCES_RAJA, ...SOURCES_KOMODO.slice(0, 2)],
+    sources: SOURCES_INDONESIA,
   },
 
   "raja-ampat": {

@@ -21,6 +21,7 @@ jobs:
           for n in Komodo "Raja%20Ampat" "Spice%20Islands" "Ring%20of%20Fire" "Eastern%20Lesser%20Sunda" Wakatobi; do f=$(echo $n | sed 's/%20/-/g'); curl -sSL -A "Mozilla/5.0" -o "pdf/it-$f.pdf" "$B/12.%20Itineraries/Itineraries%202025/Rascal%20Voyages%20${n}%20Itinerary%202025.pdf" || true; done
           ls -la pdf
           python3 extract.py
+          python3 crawl.py || true
       - run: |
           git config user.name "extract-bot"; git config user.email "noreply@github.com"
           git add out; git commit -m "extracted"; git push

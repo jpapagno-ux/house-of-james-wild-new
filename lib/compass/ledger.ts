@@ -5,13 +5,13 @@ import type { PreviewRecord } from "@/components/pathways/CompassPreview";
 import { pathwayStays, pathwayVessels } from "@/lib/content/pathways";
 import { pathwayTrips } from "@/lib/content/pathways/trips";
 import { suitabilityFrom } from "@/lib/compass/pathway-adapter";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import { statusLine, type HouseStatus } from "@/lib/ledger/status";
 import { recordHref } from "@/lib/ledger/urls";
 
 export function compassLedger(): { stays: PreviewRecord[]; journeys: PreviewRecord[] } {
   const stays: PreviewRecord[] = pathwayStays().map((r) => {
-    const v = verdictFor(`stay:${r.slug}`);
+    const v = stayVerdict(r.slug, r.stay.status);
     const documented = r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"));
     return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions,
       suitability: suitabilityFrom(r.stay.bestFor, r.suitability), classificationStatus: r.classificationStatus, classifiedBy: "", impact: [], impactDocumented: documented, founderMark: r.stay.status ?? null, kind: "stay",

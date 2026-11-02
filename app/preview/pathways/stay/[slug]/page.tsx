@@ -7,7 +7,7 @@ import MarginNote from "@/components/notes/MarginNote";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
 import { PathwayChips } from "@/components/pathways/Pathway";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import { onPathway, pathwayStays } from "@/lib/content/pathways";
 import { pathwayPreviewHref, stayPreviewHref } from "@/lib/content/pathways/preview";
 import { altFor } from "@/lib/content/stays";
@@ -38,7 +38,7 @@ export default async function StayPathwayPreview({ params }: { params: Promise<{
   const s = r.stay;
   const hero = { url: s.hero!, alt: altFor(s.hero!, s.name, s.country) };
   const status = statusLine(s.status as HouseStatus, s.statusDate);
-  const verdict = verdictFor(`stay:${s.slug}`);
+  const verdict = stayVerdict(s.slug, s.status);
   const suited = suitedTo([s.tagline, ...s.why.map((w) => w.body), ...s.features.paras, ...s.features.items, ...s.experiences.paras].join(" "), s.bestFor, 5);
   const why = s.why.length ? s.why.map((w) => ({ title: w.title ?? undefined, body: w.body })) : [{ body: s.tagline ?? "Filed in the Ledger." }];
   const related = onPathway(r.primaryPathway, { includeDrafts: true }).filter((x) => x.slug !== r.slug).map((x) => ({ ...x, href: stayPreviewHref(x.slug) }));

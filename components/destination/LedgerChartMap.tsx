@@ -152,7 +152,8 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
         <div className={`mt-3 ${legend === "below" ? "" : `lg:mt-0 lg:absolute ${legend === "top-left" ? "lg:left-3 lg:top-3" : legend === "bottom-right" ? "lg:right-3 lg:bottom-3" : "lg:left-3 lg:bottom-3"}`} bg-paper/95 border ledger-border shadow-[0_6px_20px_rgba(45,42,38,0.15)] p-3 md:p-4 lg:max-w-[62%]`}>
           <p className="ledger-eyebrow ledger-crimson">Legend</p>
           <ul className="mt-2 space-y-1.5">
-            {CATEGORY_ORDER.map((k) => {
+            {/* Only the kinds of record filed on this map (James, 1 Nov 2026: no "African reserves (0)" on Portugal). */}
+            {CATEGORY_ORDER.filter((k) => (counts[k] || 0) > 0).map((k) => {
               const cat = CATEGORIES[k];
               const n = counts[k] || 0;
               const active = on.has(k);

@@ -299,6 +299,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
 /* amangiri (Canyon Point, Utah): sandstone, muted rust, desert ivory, dusk grey-plum, pale limestone. */
 .theme-ef-amangiri { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+/* hermes (Galápagos, Via Natura's catamaran, 2 Nov 2026): deep sea tones. Sea glass, Pacific teal, salt white, basalt, pale surf. */
+.theme-ef-hermes { --ef-sand: #8FB3BF; --ef-earth: #2E6A78; --ef-landscape: #EEF3F2; --ef-shadow: #3D5560; --ef-accent: #D3E2E3; }
+/* amandira (Aman's phinisi, Indonesia, 2 Nov 2026): warm teak and indigo. Teak, burnt teak, sail cream, indigo dusk, rope. */
+.theme-ef-amandira { --ef-sand: #C08A55; --ef-earth: #8A5A2E; --ef-landscape: #F4ECE1; --ef-shadow: #3A3A5C; --ef-accent: #E5D3BC; }
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }
@@ -316,6 +320,12 @@ a:hover .jw-needle { animation-duration: 1.6s; }
    questions read as a Ledger page again; the night close drops back to the surface. */
 .theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #8A4C2C; --jw-card: #FFFFFF; --jw-accent: 138 76 44; --jw-accent-deep: 122 69 44; --jw-accent-hex: #8A4C2C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
 .theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
+/* Vessel surfaces (2 Nov 2026): the same night, day, night, on the sea's own palette. One more class than the
+   defaults above, so these win only on a designated vessel; Amangiri keeps the dusk plum and desert ivory. */
+.theme-ef-dark.theme-ef-hermes { --ef-surface: #0E2530; --ef-ink: #E9F0EE; --ef-muted: rgba(233,240,238,0.74); --ef-line: rgba(233,240,238,0.2); --ef-sand: #8FB3BF; --ef-earth: #6FA3AE; --ef-landscape: #13303C; --ef-shadow: rgba(233,240,238,0.6); --ef-accent: #8FB3BF; --jw-accent: 143 179 191; --jw-accent-deep: 111 163 174; --jw-accent-light: 211 226 227; --jw-accent-hex: #8FB3BF; --jw-accent-deep-hex: #6FA3AE; --jw-card: #13303C; }
+.theme-ef-dark.theme-ef-hermes .ef-day { --ef-surface: #EEF3F2; --ef-ink: #1F2A2E; --ef-muted: rgba(31,42,46,0.68); --ef-line: rgba(31,42,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3D5560; --ef-earth: #245A66; --jw-card: #FFFFFF; --jw-accent: 36 90 102; --jw-accent-deep: 28 72 82; --jw-accent-hex: #245A66; --jw-accent-deep-hex: #1C4852; }
+.theme-ef-dark.theme-ef-amandira { --ef-surface: #1B1F3A; --ef-ink: #F2E9DC; --ef-muted: rgba(242,233,220,0.74); --ef-line: rgba(242,233,220,0.2); --ef-sand: #C08A55; --ef-earth: #D49A62; --ef-landscape: #232849; --ef-shadow: rgba(242,233,220,0.6); --ef-accent: #C08A55; --jw-accent: 192 138 85; --jw-accent-deep: 166 115 66; --jw-accent-light: 229 211 188; --jw-accent-hex: #C08A55; --jw-accent-deep-hex: #A67342; --jw-card: #232849; }
+.theme-ef-dark.theme-ef-amandira .ef-day { --ef-surface: #F4ECE1; --ef-ink: #2A2522; --ef-muted: rgba(42,37,34,0.68); --ef-line: rgba(42,37,34,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3A3A5C; --ef-earth: #8A5A2E; --jw-card: #FFFFFF; --jw-accent: 138 90 46; --jw-accent-deep: 116 74 36; --jw-accent-hex: #8A5A2E; --jw-accent-deep-hex: #744A24; }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }

@@ -1,0 +1,121 @@
+{
+ "id": "amandira-labuan-bajo-to-amanwana-moyo-island-stops",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "Amanwana Expedition aboard Amandira",
+ "subtitle": "Stops in order · Labuan Bajo to Amanwana, Moyo Island · Amandira",
+ "days": {
+  "1": "Labuan Bajo",
+  "2": "Sebayur Kecil to Padar",
+  "3": "Loh Buaya and Tatawa Besar",
+  "4": "Satonda",
+  "5": "Whale sharks and Moyo",
+  "6": "Arrive at Amanwana"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Labuan Bajo",
+   "lat": -8.49,
+   "lng": 119.88,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Padar",
+   "lat": -8.65,
+   "lng": 119.57,
+   "mode": "sea",
+   "path": [
+    [
+     119.88,
+     -8.49
+    ],
+    [
+     119.57,
+     -8.65
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Rinca",
+   "lat": -8.65,
+   "lng": 119.71,
+   "mode": "sea",
+   "path": [
+    [
+     119.57,
+     -8.65
+    ],
+    [
+     119.71,
+     -8.65
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Satonda",
+   "lat": -8.11,
+   "lng": 117.75,
+   "mode": "sea",
+   "path": [
+    [
+     119.71,
+     -8.65
+    ],
+    [
+     117.75,
+     -8.11
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Moyo",
+   "lat": -8.24,
+   "lng": 117.6,
+   "mode": "sea",
+   "path": [
+    [
+     117.75,
+     -8.11
+    ],
+    [
+     117.6,
+     -8.24
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Amanwana",
+   "lat": -8.27,
+   "lng": 117.52,
+   "mode": "sea",
+   "path": [
+    [
+     117.6,
+     -8.24
+    ],
+    [
+     117.52,
+     -8.27
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

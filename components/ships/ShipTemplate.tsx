@@ -17,6 +17,7 @@ import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
 import ShipFilm from "./ShipFilm";
 import ShipItinerary from "./ShipItinerary";
 import ShipNav from "./ShipNav";
+import type { ShipEF } from "./ShipEntrance";
 
 // The shared ship page (Voyages, approved by James 1 Nov 2026). One frame for
 // every vessel, in this order:
@@ -50,21 +51,30 @@ export type ShipFrame = {
   jsonld: object[];
   /** Wild Pathways chips, as on stay pages (shown with the pathways flag on). */
   pathway?: ShipPathway;
+  /** The Exceptional Few™ entrance (ShipEntrance), when the vessel carries a published designation. */
+  ef?: ShipEF | null;
 };
 
 export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode }) {
   const host = hostFor(ship.host.key);
   const primary = VOYAGE_PATHWAYS_ON && ship.pathway ? pathwayOf(ship.pathway.primary) : undefined;
   const secondary = primary && ship.pathway ? ship.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
+  const ef = ship.ef ?? null;
+  // A designated vessel: night (hero, the line, the cuts), day (the practical middle) and night (the close),
+  // as Amangiri. Without one this renders exactly as before.
+  const Day = ef ? ({ children }: { children: ReactNode }) => <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pt-2 pb-16 md:pb-24">{children}</div> : ({ children }: { children: ReactNode }) => <>{children}</>;
   return (
-    <div className="theme-sea theme-sea-page">
+    <div className={ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"}>
       <SiteHeader overlay tuck />
-      <main id="main">
-        <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />
+      <main id="main" className={ef ? "overflow-x-clip" : undefined}>
+        {ef ? ef.hero : <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />}
         <ShipNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-4"><Breadcrumbs trail={ship.crumbs} touch /></div>
-          {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
+          {!ef && primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
+          {ef?.opening}
+          <Day>
+          {ef && <div className="pt-12 md:pt-16">{ship.glance}</div>}
           <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} />
           {lead}
           {ship.film && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
@@ -73,11 +83,14 @@ export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFr
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={ship.host.name} kind="vessel" /></div>
           {after}
           <FaqBlock faqs={ship.faqs.map(([q, a]) => ({ q, a }))} title={ship.faqTitle} />
+          {ef?.suits}
+          </Day>
+          {ef?.close}
         </div>
         {host.state === "available" && <CallingCard who={HOST_KIND.vessel.who} />}
       </main>
       <RecordActionBar price={ship.action.price} basis={ship.action.basis} cta={ship.action.cta} href={ship.action.href} house={ship.action.house} />
-      <JsonLd data={ship.jsonld} />
+      <JsonLd data={ef ? [...ship.jsonld, ef.jsonld] : ship.jsonld} />
     </div>
   );
 }

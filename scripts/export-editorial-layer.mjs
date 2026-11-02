@@ -33,7 +33,10 @@ const key = (label) => label.toLowerCase();
 const ef = (await table("Exceptional Few")).map((f) => {
   const lineByKey = Object.fromEntries(lines(f.signal_lines).map((l) => { const i = l.indexOf(":"); return [key(l.slice(0, i).trim()), l.slice(i + 1).trim()]; }));
   return {
-    id: f.exceptional_few_id, stayId: f.stay_id, staySlug: f.stay_slug ?? null, stayName: f.stay_name ?? null,
+    // entity_type "vessel" (2 Nov 2026): the row is keyed on vessel_slug, a ships registry slug, not a Ledger ID.
+    id: f.exceptional_few_id, entityType: f.entity_type === "vessel" ? "vessel" : "stay",
+    stayId: f.stay_id ?? null, staySlug: f.stay_slug ?? null, stayName: f.stay_name ?? null,
+    ...(f.entity_type === "vessel" ? { vesselSlug: f.vessel_slug ?? null, vesselName: f.vessel_name ?? null } : {}),
     designationStatus: f.designation_status ?? "proposed", collectionNumber: f.collection_number ?? 0,
     heroLine: f.hero_line ?? null, whyItMadeTheCut: paras(f.why_it_made_the_cut),
     jamesNote: f.james_note ? { text: f.james_note.trim(), where: f.james_note_where ?? "", when: f.james_note_when ?? "" } : null,
@@ -47,10 +50,13 @@ const ef = (await table("Exceptional Few")).map((f) => {
 // Tripwire (Stage 3, H): every stay_id must be a real Ledger ID that exists in the Stay export.
 const LEDGER_ID = /^STY-\d{4}-\d{6}$/;
 const staySlugs = new Set((JSON.parse(fs.readFileSync("lib/content/stays.json", "utf8")).stays).map((s) => s.ledgerId));
-const bad = ef.filter((e) => !LEDGER_ID.test(e.stayId) || !staySlugs.has(e.stayId));
+// A vessel row instead needs a vessel_slug that is a ship in lib/content/ships/registry.ts.
+const registry = fs.readFileSync("lib/content/ships/registry.ts", "utf8");
+const isShip = (slug) => !!slug && registry.includes(`slug: "${slug}"`);
+const bad = ef.filter((e) => (e.entityType === "vessel" ? !isShip(e.vesselSlug) : !LEDGER_ID.test(e.stayId ?? "") || !staySlugs.has(e.stayId)));
 if (bad.length) {
   const strict = !process.argv.includes("--allow-placeholders");
-  console[strict ? "error" : "warn"](`Exceptional Few rows whose stay_id is not a filed Ledger ID: ${bad.map((e) => `${e.id} (${e.stayId})`).join(", ")}`);
+  console[strict ? "error" : "warn"](`Exceptional Few rows whose stay_id is not a filed Ledger ID (or whose vessel_slug is not a registry ship): ${bad.map((e) => `${e.id} (${e.stayId ?? e.vesselSlug})`).join(", ")}`);
   if (strict) { console.error("Refusing to export. Pass --allow-placeholders for a noindex preview build."); process.exit(1); }
 }
 

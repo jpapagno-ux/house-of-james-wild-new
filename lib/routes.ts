@@ -74,6 +74,8 @@ export const BUILT: string[] = [
   "/voyages/ships/ecoventura-evolve-yacht",
   "/voyages/ships/alya-catamaran-galapagos",
   "/voyages/ships/sirius-yacht-galapagos",
+  "/voyages/ships/hermes-galapagos",
+  "/voyages/ships/amandira",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

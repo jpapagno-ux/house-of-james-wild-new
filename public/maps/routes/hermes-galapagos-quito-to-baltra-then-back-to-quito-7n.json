@@ -1,0 +1,175 @@
+{
+ "id": "hermes-galapagos-quito-to-baltra-then-back-to-quito-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Hermes with Quito: 9-day programme, 7 nights aboard aboard Hermes",
+ "subtitle": "7 nights · Quito to Baltra, then back to Quito · Hermes",
+ "days": {
+  "1": "Arrive in Quito",
+  "2": "Fly to Baltra and the Santa Cruz highlands",
+  "3": "Rabida and Bartolome",
+  "4": "South Plaza and Santa Fe",
+  "5": "San Cristobal and Santa Fe",
+  "6": "Isla Lobos and Cerro Tijeretas",
+  "7": "Gardner Bay and Punta Suarez",
+  "8": "Punta Cormorant and Post Office Bay",
+  "9": "Back to Quito"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Quito",
+   "lat": -0.2201,
+   "lng": -78.5123,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -78.5123,
+     -0.2201
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Rabida",
+   "lat": -0.41,
+   "lng": -90.71,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3134,
+     -0.7432
+    ],
+    [
+     -90.71,
+     -0.41
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "South Plaza",
+   "lat": -0.5833,
+   "lng": -90.1667,
+   "mode": "sea",
+   "path": [
+    [
+     -90.71,
+     -0.41
+    ],
+    [
+     -90.1667,
+     -0.5833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.1667,
+     -0.5833
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Quito",
+   "lat": -0.2201,
+   "lng": -78.5123,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -78.5123,
+     -0.2201
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

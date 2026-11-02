@@ -9,7 +9,7 @@ import { VESSELS } from "../lib/content/vessels.ts";
 const root = new URL("../", import.meta.url);
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const records = new Map<string, { slug: string; itineraries: { direction: string; nights: number | null; days: unknown[] }[] }>();
-for (const dir of ["nile", "amazon", "galapagos"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+for (const dir of ["nile", "amazon", "galapagos", "indonesia"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
   const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8"));
   records.set(r.slug, r);
 }
@@ -30,7 +30,7 @@ test("every ship with a page has a primary pathway, a rate basis, and a route fi
     const r = records.get(s.slug);
     if (!r) continue; // Aliikai: her chart is the 10 Day Raja Ampat North route file
     for (const it of r.itineraries.filter((i) => i.days.length)) {
-      const id = `${s.slug}-${slug(it.direction)}-${it.nights}n`;
+      const id = `${s.slug}-${slug(it.direction)}-${it.nights != null ? `${it.nights}n` : "stops"}`;
       assert.ok(existsSync(new URL(`public/maps/routes/${id}.json`, root)), `${id}.json`);
     }
   }

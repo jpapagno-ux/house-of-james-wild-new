@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import ComingStamp from "./ComingStamp";
+import LedgerCorners from "./LedgerCorners";
+import { WcEditorialLine, WcLedgerColumn } from "./WcButtons";
 import s from "./coming.module.css";
 import {
   DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByRegionView, groupByYear, parseQuery, regionCounts, sortComing, toQuery, yearCounts, viewStatus,
@@ -46,6 +48,24 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
     });
   }, []);
 
+  // The bar sits exactly under the site header, whose height changes when it gains its scrolled rule (76 to 80px
+  // on phones, 165 to 169px on desktop). The header's bottom and the bar's bottom are measured and written to
+  // --wc-head and --wc-stick on <html>, so the bar's top and every card's scroll margin follow them exactly.
+  useEffect(() => {
+    const root = document.documentElement, head = document.querySelector("header"), bar = document.querySelector<HTMLElement>("[data-wc-bar]");
+    if (!head || !bar) return;
+    let raf = 0;
+    const set = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => {
+      const h = Math.max(0, Math.round(head.getBoundingClientRect().bottom));
+      root.style.setProperty("--wc-head", `${h}px`);
+      root.style.setProperty("--wc-stick", `${h + Math.round(bar.offsetHeight)}px`);
+    }); };
+    set();
+    const ro = new ResizeObserver(set); ro.observe(head); ro.observe(bar);
+    window.addEventListener("scroll", set, { passive: true }); window.addEventListener("resize", set);
+    return () => { ro.disconnect(); window.removeEventListener("scroll", set); window.removeEventListener("resize", set); cancelAnimationFrame(raf); };
+  }, []);
+
   const shown = useMemo(() => sortComing(filterComing(items, st), st.sort), [items, st]);
   const groups = useMemo(() => (st.group === "region" ? groupByRegionView(shown, regions) : groupByYear(shown, st.sort)), [shown, st.sort, st.group, regions]);
   const regionChips = useMemo(() => regionCounts(items, regions), [items, regions]);
@@ -57,23 +77,23 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
   let n = 0;
 
   // Chip colours live in coming.module.css (aria-pressed), so both looks style them.
-  const chip = `${s.chip} shrink-0 inline-flex items-center gap-1.5 h-9 px-3.5 text-[12px] tracking-[0.06em] whitespace-nowrap`;
+  const chip = `${s.chip} shrink-0 inline-flex items-center gap-1.5 h-11 md:h-9 px-3.5 text-[12px] tracking-[0.06em] whitespace-nowrap`;
   const sep = `${s.sep} shrink-0 w-px h-5 mx-1`;
 
   return (
     <div className={`${s.explorer} overflow-x-clip`}>
-      <div className={`${s.bar} sticky top-[76px] lg:top-[164px] z-30`} role="search" aria-label="Search what's coming">
+      <div data-wc-bar className={`${s.bar} ${s.barTop} sticky top-[76px] lg:top-[164px] z-30`} role="search" aria-label="Search what's coming">
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-3 md:py-4">
           <div className="flex items-center gap-3">
             <label className="relative flex-1 min-w-0 md:max-w-sm">
               <span className="sr-only">Search by property or country</span>
               <svg aria-hidden="true" viewBox="0 0 24 24" className={`${s.icon} absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4`}><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="1.6" /><path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
-              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Lodge or country" className={`${s.field} w-full h-10 pl-9 pr-3 text-[15px]`} />
+              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Lodge or country" className={`${s.field} w-full h-11 md:h-10 pl-9 pr-3 text-[16px] md:text-[15px]`} />
             </label>
             <label className="shrink-0 flex items-center gap-2">
               <span className="hidden md:inline font-mono text-[10.5px] tracking-[0.2em] uppercase ledger-muted">Sort</span>
               <span className="sr-only md:hidden">Sort</span>
-              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className={`${s.field} h-10 max-w-[44vw] md:max-w-none px-2 md:px-2.5 text-[13.5px] md:text-[14px]`}>
+              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className={`${s.field} h-11 md:h-10 max-w-[44vw] md:max-w-none px-2 md:px-2.5 text-[13.5px] md:text-[14px]`}>
                 {SORTS.map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
               </select>
             </label>
@@ -117,8 +137,8 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             <p className="ledger-display italic text-[2rem] md:text-[2.6rem] leading-tight">Nothing on the horizon matches that yet.</p>
             <p className="mt-4 text-[16px] ledger-muted">Try another country or year, or clear the filters to see everything filed.</p>
             <div className="mt-8 flex justify-center gap-3 flex-wrap">
-              <button type="button" className={`ledger-btn ledger-btn--solid ${s.primary}`} onClick={() => update(clear)}>Clear the filters</button>
-              <Link href="/plan?from=whats-coming" className={`ledger-btn ${s.secondary}`}>Ask James</Link>
+              <WcEditorialLine legacy="ledger-btn ledger-btn--solid" onClick={() => update(clear)}>Clear the filters</WcEditorialLine>
+              <WcEditorialLine legacy="ledger-btn" href="/plan?from=whats-coming">Ask James</WcEditorialLine>
             </div>
           </div>
         )}
@@ -140,17 +160,18 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
 
 function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
   return (
-    <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}
+    <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} relative grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}
       style={c.pathway ? { ["--pw" as string]: c.pathway.accent, ["--pw-text" as string]: c.pathway.text, ["--pw-tint" as string]: c.pathway.tint } : undefined}>
+      <LedgerCorners id={`lc-${c.slug}`} wear />
       <div className={`${s.imgCol} lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
-        <div className={`${s.frame} ${s.frameBg} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`}>
+        <div className={`${s.frame} ${s.frameBg} relative aspect-square sm:aspect-[4/3] md:aspect-[16/10] overflow-hidden`}>
           {c.hero ? (
             <>
               <Image src={c.hero.src} alt={c.hero.alt} fill quality={85} sizes="(min-width: 1400px) 800px, (min-width: 1024px) 58vw, 100vw" className="object-cover" />
               {c.hero.credit && <span className="absolute bottom-2 right-3 font-mono text-[9.5px] tracking-[0.12em] text-white/80 [text-shadow:0_1px_4px_rgba(0,0,0,0.6)]">{c.hero.credit}</span>}
             </>
           ) : <ColourField c={c} />}
-          <div className={`absolute top-4 ${flip ? "left-4" : "right-4"} md:top-6 ${flip ? "md:left-6" : "md:right-6"}`}>
+          <div className={`${s.stampSpot} absolute top-4 ${flip ? "left-4" : "right-4"} md:top-6 ${flip ? "md:left-6" : "md:right-6"}`}>
             <ComingStamp status={c.status} date={c.date} id={c.slug} size={136} rotate={flip ? 7 : -7} />
           </div>
         </div>
@@ -185,9 +206,9 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
             </Link>
           </div>
         )}
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <Link href={c.plan} className={`ledger-btn ledger-btn--solid ${s.primary}`}>Plan with James</Link>
-          {c.href && <Link href={c.href} className={`ledger-btn ${s.secondary}`}>View the stay</Link>}
+        <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-8 gap-y-4">
+          <WcLedgerColumn legacy={`ledger-btn ledger-btn--solid ${s.tap}`} href={c.plan}>Plan with James</WcLedgerColumn>
+          {c.href && <WcEditorialLine legacy={`ledger-btn ${s.tap}`} href={c.href}>View the stay</WcEditorialLine>}
         </div>
       </div>
     </article>
@@ -200,11 +221,13 @@ function ColourField({ c }: { c: ExplorerItem }) {
     <div className={`${s.colourField} absolute inset-0 text-white flex flex-col justify-between p-6 md:p-10`} style={{ ["--f-from" as string]: c.field.from, ["--f-to" as string]: c.field.to, ["--f-glow" as string]: c.field.glow }}>
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full opacity-[0.18]" preserveAspectRatio="none" viewBox="0 0 400 250">
         {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M0 ${170 + i * 11} Q 100 ${164 + i * 11} 200 ${170 + i * 11} T 400 ${170 + i * 11}`} fill="none" stroke="white" strokeWidth="0.6" />)}
-        <circle cx="300" cy="170" r="46" fill="none" stroke="white" strokeWidth="0.6" /><line x1="0" y1="170" x2="400" y2="170" stroke="white" strokeWidth="0.8" />
+        <line x1="0" y1="170" x2="400" y2="170" stroke="white" strokeWidth="0.8" />
       </svg>
+      {/* The sun on the horizon: its own SVG so it stays round whatever the frame's shape. */}
+      <svg aria-hidden="true" className="absolute right-[12%] top-[68%] -translate-y-1/2 w-[23%] aspect-square opacity-[0.18]" viewBox="0 0 100 100"><circle cx="50" cy="50" r="49" fill="none" stroke="white" strokeWidth="1" vectorEffect="non-scaling-stroke" /></svg>
       <p className="relative font-mono text-[10.5px] tracking-[0.26em] uppercase text-white/75">{c.country}</p>
       <div className="relative">
-        <p className="ledger-display text-[2.6rem] sm:text-[3.4rem] lg:text-[4.2rem] leading-[0.95] tracking-[-0.015em] max-w-[14ch]">{c.name}</p>
+        <p className={`${s.fieldName} ledger-display leading-[0.95] tracking-[-0.015em] max-w-[14ch]`}>{c.name}</p>
         <p className="mt-4 ledger-display italic text-[1rem] md:text-[1.1rem] text-white/75">Photographs when the brand releases them.</p>
       </div>
     </div>

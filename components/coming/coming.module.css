@@ -26,6 +26,9 @@
   --jw-house-oxblood: #4A1A20;       /* hero ground */
   --jw-house-garnet: #2A1416;        /* hero ground, photo fade */
   --jw-house-stone: #F4F2EF;         /* Stone Mist: the answer band */
+  --jw-house-warm-stone: #8C8277;    /* Warm Stone: the year numerals (large text, 3.8:1 on white) */
+  --jw-house-leather: #5A1F23;       /* ledger corner guards, light edge */
+  --jw-house-leather-deep: #3A1C1F;  /* ledger corner guards, deep edge */
 }
 :global(html[data-look="a"]) .onlyB, :global(html:not([data-look="a"])) .onlyA { display: none !important; }
 
@@ -112,20 +115,14 @@
 @keyframes cue { 0%, 100% { transform: translateY(0); opacity: 0.9; } 50% { transform: translateY(6px); opacity: 0.5; } }
 @media (prefers-reduced-motion: reduce) { .cue { animation: none; } }
 
-/* ── Buttons (B): squared, 2px radius, double keyline, Cormorant 600 caps ── */
-:global(html:not([data-look="a"])) .primary, :global(html:not([data-look="a"])) .secondary {
-  border-radius: 2px; padding: 12px 22px; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; }
-:global(html:not([data-look="a"])) .primary { background: #FFFFFF; color: var(--jw-house-crimson); border: 1px solid var(--jw-house-crimson);
-  box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgb(139 37 37 / 0.4); }
-:global(html:not([data-look="a"])) .primary:hover { background: #FFFFFF; color: var(--jw-house-crimson); box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px var(--jw-house-crimson); }
-:global(html:not([data-look="a"])) .secondary { background: transparent; color: var(--jw-house-graphite); border: 1px solid var(--jw-house-keyline); box-shadow: none; }
-:global(html:not([data-look="a"])) .secondary:hover { background: transparent; color: var(--jw-house-graphite); border-color: var(--jw-house-graphite); }
-
 /* ── Cards ──────────────────────────────────────────────── */
 .frame img { transition: transform 1.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
 .card:hover .frame img, .card:focus-within .frame img { transform: scale(1.04); }
-.anchor { scroll-margin-top: 230px; }
-@media (min-width: 1024px) { .anchor { scroll-margin-top: 300px; } }
+/* Anchors land just under the sticky bar: --wc-stick is the header's bottom plus the bar's height, measured live
+   (ComingExplorer); the fixed values are the fallback before it is measured. */
+.anchor { scroll-margin-top: calc(var(--wc-stick, 214px) + 16px); }
+@media (min-width: 1024px) { .anchor { scroll-margin-top: calc(var(--wc-stick, 286px) + 16px); } }
+.barTop { top: var(--wc-head, 76px) !important; }
 
 /* Scroll reveal: visible by default; browsers with scroll-driven animations rise the card in. */
 @media (prefers-reduced-motion: no-preference) {
@@ -168,9 +165,9 @@
 :global(html[data-look="a"]) .chip[aria-pressed="true"] .count { color: rgb(255 255 255 / 0.8); }
 :global(html[data-look="a"]) .sep { background: rgb(45 42 38 / 0.15); }
 
-/* Year bands: huge Cormorant numerals in the soft crimson tint (B); ocean blue (A). */
+/* Year bands: huge, light Cormorant numerals in Warm Stone (B, James 2 Nov 2026); ocean blue (A). */
 .yearHead { border-bottom: 1px solid var(--jw-house-hairline); }
-.yearNumC { color: var(--jw-house-blush); }
+.yearNumC { color: var(--jw-house-warm-stone); font-weight: 300; }
 :global(html[data-look="a"]) .yearHead { border-bottom-color: var(--jw-rule, #B5D3D0); }
 :global(html[data-look="a"]) .yearNumC { color: var(--jw-action); }
 
@@ -185,7 +182,7 @@
 :global(html[data-look="a"]) .panel { padding: 0; }
 .cardHead { border-bottom: 1px solid var(--jw-house-graphite); padding-bottom: 10px; }
 :global(html[data-look="a"]) .cardHead { border: 0; padding: 0; justify-content: flex-start; }
-:global(html:not([data-look="a"])) .nameB { font-size: 2.5rem; color: var(--jw-house-graphite); }
+:global(html:not([data-look="a"])) .nameB { color: var(--jw-house-graphite); }
 .tagline { color: var(--jw-house-slate); }
 :global(html[data-look="a"]) .tagline { color: rgb(45 42 38 / 0.8); }
 .ruleY { border-block: 1px solid var(--jw-house-hairline); }
@@ -212,3 +209,73 @@
 .stepNum { color: var(--jw-house-graphite); }
 :global(html[data-look="a"]) .step { border-top-color: var(--jw-action); }
 :global(html[data-look="a"]) .stepNum { color: var(--jw-action); }
+
+/* ── Ledger corners (house look) ── */
+.corners { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.corner { position: absolute; width: var(--corner, 28px); height: var(--corner, 28px); display: block; filter: drop-shadow(0 1px 1px rgb(26 24 22 / 0.25)); }
+.cornerTL { top: var(--corner-off-top, 0); left: var(--corner-off-side, 0); }
+.cornerBR { bottom: var(--corner-off-side, 0); right: var(--corner-off-side, 0); transform: rotate(180deg); }
+.wear { position: absolute; inset: 0; background: radial-gradient(120px 120px at 100% 0%, rgb(46 43 40 / 0.03), transparent 70%), radial-gradient(120px 120px at 0% 100%, rgb(46 43 40 / 0.03), transparent 70%); }
+@media (prefers-reduced-transparency: reduce) { .cornerFx { display: none; } .cornerShape { fill: var(--jw-house-leather-deep); } .corner { filter: none; } .wear { display: none; } }
+@media (forced-colors: active) { .cornerFx, .wear { display: none; } .cornerShape { fill: CanvasText; } .corner { filter: none; } }
+/* Sizes: cards 28px (20px on phones) sitting over the card's border; the hero frame 44px (28px on phones). */
+:global(html:not([data-look="a"])) .card { --corner: 20px; --corner-off-top: -2px; --corner-off-side: -1px; }
+@media (min-width: 768px) { :global(html:not([data-look="a"])) .card { --corner: 28px; } }
+.heroCorners { position: absolute; inset: 0; z-index: 1; pointer-events: none; --corner: 28px; }
+@media (min-width: 768px) { .heroCorners { --corner: 44px; } }
+
+/* ── Responsive (James, 2 Nov 2026: every breakpoint from 360 to 1920) ── */
+/* Hero height: 100vh first, then the small-viewport unit so mobile browser bars never cut the hero. */
+.heroH { height: 100vh; height: 100svh; }
+/* Safe areas (notch, home indicator): side padding never under the inset; the bottom clears the home indicator and
+   the phone's fixed bottom nav. */
+.heroInner { padding-left: max(1.25rem, env(safe-area-inset-left)); padding-right: max(1.25rem, env(safe-area-inset-right)); padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+@media (min-width: 768px) { .heroInner { padding-left: max(2.5rem, env(safe-area-inset-left)); padding-right: max(2.5rem, env(safe-area-inset-right)); padding-bottom: calc(5rem + env(safe-area-inset-bottom)); } }
+/* Card names scale with the viewport (B), 32px on the smallest phone to 40px. */
+:global(html:not([data-look="a"])) .nameB { font-size: clamp(2rem, 1.55rem + 1.9vw, 2.5rem); }
+/* Buttons: at least 44px tall everywhere; full width on phones. */
+.tap { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+@media (max-width: 639px) { .tap { width: 100%; } }
+/* Touch tablets (768 and 1024, portrait and landscape): controls keep 44px tap targets on any coarse pointer. */
+@media (pointer: coarse) { .chip, .field { min-height: 44px; } }
+
+/* ── House button family, What's Coming copy (James, 2 Nov 2026; WcButtons.tsx). Swap for the shared House
+   Standard component at merge. House look only: concept A keeps its ledger-btn styles and hides the extra parts. ── */
+.lcolCell, .elineArrow { display: none; }
+:global(html:not([data-look="a"])) .lcol { display: inline-flex; align-items: stretch; height: 56px; min-height: 56px; padding: 0; border: 1px solid var(--jw-house-graphite-deep); border-radius: 0; background: transparent; box-shadow: none; color: var(--jw-house-graphite-deep); text-decoration: none; }
+:global(html:not([data-look="a"])) .lcol:hover { background: transparent; color: var(--jw-house-graphite-deep); }
+:global(html:not([data-look="a"])) .lcolLabel { display: flex; align-items: center; flex: 1 1 auto; padding: 0 24px; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; white-space: nowrap; }
+:global(html:not([data-look="a"])) .lcolCell { display: flex; align-items: center; justify-content: center; flex: none; width: 56px; background: var(--jw-house-crimson); transition: width 0.3s cubic-bezier(0.2, 0.7, 0.2, 1); }
+:global(html:not([data-look="a"])) .lcol:hover .lcolCell, :global(html:not([data-look="a"])) .lcol:focus-visible .lcolCell { width: 84px; }
+:global(html:not([data-look="a"])) .lcol:focus-visible { outline: 2px solid var(--jw-house-crimson); outline-offset: 3px; }
+:global(html:not([data-look="a"])) .lcolDark, :global(html:not([data-look="a"])) .lcolDark:hover { border-color: #FFFFFF; color: #FFFFFF; }
+:global(html:not([data-look="a"])) .lcolDark:focus-visible { outline-color: #FFFFFF; }
+@media (max-width: 639px) { :global(html:not([data-look="a"])) .lcol { width: 100%; } }
+
+:global(html:not([data-look="a"])) .eline { position: relative; display: inline-flex; align-items: center; gap: 14px; min-height: 44px; padding: 0 0 6px; border: 0; border-radius: 0; background: none; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none;
+  color: var(--jw-house-graphite); font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 1.3rem; letter-spacing: 0; text-transform: none; text-decoration: none; width: auto; justify-content: flex-start; }
+:global(html:not([data-look="a"])) .eline:hover { background: none; color: var(--jw-house-graphite); }
+:global(html:not([data-look="a"])) .eline::after { content: ""; position: absolute; left: 0; bottom: 4px; height: 1px; width: 28%; background: var(--jw-house-crimson); transition: width 0.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
+:global(html:not([data-look="a"])) .elineArrow { display: block; position: relative; width: 34px; height: 1px; background: var(--jw-house-crimson); transition: width 0.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
+:global(html:not([data-look="a"])) .elineArrow::after { content: ""; position: absolute; right: 0; top: -4px; width: 9px; height: 9px; border-top: 1px solid var(--jw-house-crimson); border-right: 1px solid var(--jw-house-crimson); transform: rotate(45deg); transform-origin: 70% 30%; }
+:global(html:not([data-look="a"])) .eline:hover::after, :global(html:not([data-look="a"])) .eline:focus-visible::after { width: 100%; }
+:global(html:not([data-look="a"])) .eline:hover .elineArrow, :global(html:not([data-look="a"])) .eline:focus-visible .elineArrow { width: 60px; }
+:global(html:not([data-look="a"])) .eline:focus-visible { outline: 2px solid var(--jw-house-crimson); outline-offset: 4px; }
+/* On dark grounds (hero, banner) crimson would disappear into oxblood: the line and arrow take the blush tint. */
+:global(html:not([data-look="a"])) .elineDark, :global(html:not([data-look="a"])) .elineDark:hover { color: var(--jw-house-ivory); }
+:global(html:not([data-look="a"])) .elineDark::after, :global(html:not([data-look="a"])) .elineDark .elineArrow { background: var(--jw-house-blush); }
+:global(html:not([data-look="a"])) .elineDark .elineArrow::after { border-color: var(--jw-house-blush); }
+:global(html:not([data-look="a"])) .elineDark:focus-visible { outline-color: var(--jw-house-blush); }
+@media (prefers-reduced-motion: reduce) { .lcolCell, .eline::after, .elineArrow { transition: none !important; } }
+/* Concept A banner buttons: white ghost buttons on the navy band, as the first preview. */
+:global(html[data-look="a"]) .bannerA { border-color: #FFFFFF; color: #FFFFFF; background: transparent; }
+:global(html[data-look="a"]) .bannerAQuiet { border-color: rgb(255 255 255 / 0.5); color: rgb(255 255 255 / 0.9); }
+:global(html[data-look="a"]) .bannerA:hover { background: #FFFFFF; color: #2D2A26; }
+/* Phones: the date stamp scales down so it never sits on a colour field's name (the frame is square there). */
+@media (max-width: 639px) { .stampSpot :global(svg) { width: 96px; height: 96px; } }
+.fieldName { font-size: clamp(2rem, 1.1rem + 3.4vw, 4.2rem); }
+/* Desktop (B): the photograph fills the card's full height beside the text, no white bands. */
+@media (min-width: 1024px) {
+  :global(html:not([data-look="a"])) .imgCol { align-self: stretch; }
+  :global(html:not([data-look="a"])) .imgCol .frame { height: 100%; aspect-ratio: auto; min-height: 420px; }
+}

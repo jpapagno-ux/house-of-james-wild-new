@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import s from "./coming.module.css";
+import LedgerCorners from "./LedgerCorners";
 
 export type HeroSlide = { slug: string; src: string; alt: string; credit: string | null; name: string; country: string | null; line: string; href: string };
 
@@ -23,7 +24,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
   const delay = (i: number) => (i === 0 ? "0s" : `-${T - i * HOLD}s`);
   const anim = (name: string, i: number) => (n < 2 ? (name === "jwcKb" ? `jwcKb 24s ease-in-out infinite alternate` : "none") : `${name} ${T}s ${name === "jwcKb" ? "linear" : "ease-in-out"} ${delay(i)} infinite`);
   return (
-    <section className={`${s.hero} relative h-[100svh] min-h-[560px] w-full overflow-hidden text-white`} aria-labelledby="coming-title">
+    <section className={`${s.hero} ${s.heroH} relative min-h-[560px] w-full overflow-hidden text-white`} aria-labelledby="coming-title">
       <style dangerouslySetInnerHTML={{ __html: keyframes(n) }} />
       <div className="absolute inset-0" aria-hidden={n ? undefined : true}>
         {slides.map((sl, i) => (
@@ -35,7 +36,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
         ))}
       </div>
       <div className={`absolute inset-0 ${s.heroShade}`} aria-hidden="true" />
-      <div className="relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20">
+      <div className={`${s.heroInner} relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20`}>
         <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}><span className={s.onlyB}>The Ledger &middot; What&rsquo;s Coming</span><span className={s.onlyA}>James Wild &amp; Co &middot; Filed before they open</span></p>
         <h1 id="coming-title" className={`${s.heroTitle} ledger-display mt-4 text-[4.1rem] leading-[0.88] sm:text-[6rem] md:text-[8.5rem] lg:text-[11rem] tracking-[-0.03em]`}>{title}</h1>
         <p className={`mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase ${s.heroCount}`}>{line}</p>
@@ -56,6 +57,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
         Scroll<span aria-hidden="true">&#8595;</span>
       </a>
       {count ? <HorizonStamp n={count} /> : null}
+      <div className={s.heroCorners}><LedgerCorners id="lc-hero" /></div>
       <div id="hero-end" className="absolute bottom-0 h-px w-full" aria-hidden="true" />
     </section>
   );

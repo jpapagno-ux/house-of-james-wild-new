@@ -7,6 +7,7 @@ import ComingHero, { type HeroSlide } from "@/components/coming/ComingHero";
 import ComingTicker from "@/components/coming/ComingTicker";
 import ComingExplorer, { type ExplorerItem } from "@/components/coming/ComingExplorer";
 import LookScript from "@/components/coming/LookScript";
+import { WcEditorialLine } from "@/components/coming/WcButtons";
 import { mainBoard } from "@/lib/content/board";
 import { comingPathway } from "@/lib/content/coming-pathways";
 import { pathwayChipsFor } from "@/lib/content/pathways";
@@ -97,7 +98,7 @@ export default function WhatsComingPage() {
       <SiteHeader overlay />
       <main id="main">
         <ComingHero slides={slides} count={items.length} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
-          <a href="#the-board" className={`${glass} self-start md:self-end`}>See every opening<span aria-hidden="true">&#8595;</span></a>
+          <WcEditorialLine href="#the-board" tone="dark" legacy={`${glass} self-start md:self-end min-h-[48px]`}>See every opening</WcEditorialLine>
         </ComingHero>
         <div id="the-board"><ComingTicker entries={mainBoard(items, day)} label="Coming and on offer" more={false} /></div>
 

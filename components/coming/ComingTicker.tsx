@@ -18,7 +18,7 @@ export default function ComingTicker({ entries, label = "What's coming", compact
   const summary = [opens ? `${opens} ${opens === 1 ? "opening" : "openings"}` : "", offers ? `${offers} ${offers === 1 ? "offer" : "offers"}` : ""].filter(Boolean).join(" and ");
   const row = (hidden: boolean) => entries.map((e) => (
     <li key={e.key} className="flex items-center shrink-0">
-      <Link href={e.href} tabIndex={hidden ? -1 : undefined} className={`group flex items-center gap-3 md:gap-4 ${compact ? "px-5 py-3" : "px-6 md:px-8 py-4"} font-mono uppercase whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-white`}>
+      <Link href={e.href} tabIndex={hidden ? -1 : undefined} className={`group flex items-center gap-3 md:gap-4 ${compact ? "px-5 py-[14px]" : "px-6 md:px-8 py-4"} min-h-[44px] font-mono uppercase whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-white`}>
         {e.kind === "opening" ? <><span className={`${s.odot} ${s.onlyB}`} aria-hidden="true" /><Sun /></> : <span className={s.pct} aria-hidden="true">%</span>}
         <span className="sr-only">{e.kind === "opening" ? "Opening:" : "Offer:"}</span>
         <span className={`${s.place} text-[10.5px] md:text-[11px] tracking-[0.22em]`}>{e.place ?? "The Ledger"}</span>

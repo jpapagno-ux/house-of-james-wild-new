@@ -40,7 +40,7 @@ function Person({ a, place, markLine, compact, credential }: { a: Advisor; place
       <Link href={a.profileHref ?? "/about/team#advisors"} className="shrink-0"><Headshot a={a} size={compact ? 40 : 52} /></Link>
       <div className="min-w-0">
         <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="font-mono text-[10.5px] ledger-crimson">{a.ledgerId}</span></p>
-        <p className="text-[12.5px] ledger-muted mt-0.5 truncate">
+        <p className="text-[12.5px] ledger-muted mt-0.5 sm:truncate">
           {markLine ?? `Knows ${place}`}{paths.length ? <> · {paths.map((p, i) => <span key={p.id}>{i > 0 ? ", " : ""}<Link href={pathwayHref(p.key)} className="hover:ledger-crimson">{p.name}</Link></span>)}</> : null}
         </p>
         {credential && <p className="text-[12.5px] mt-0.5" style={{ color: GREEN_INK }}>{credential}</p>}

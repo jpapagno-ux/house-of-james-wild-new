@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { RecordCard } from "@/components/hub/Hub";
-import { HOUSE_CRIMSON } from "@/components/record/Sections";
 import { stayBySlug, vesselBySlug } from "@/lib/content/stays";
 import { vessel } from "@/lib/content/vessels";
 import { shipBySlug, shipPath } from "@/lib/content/ships";
@@ -37,7 +36,7 @@ function Block({ id, eyebrow, title, intro, cards }: { id: string; eyebrow: stri
       <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map(({ key, ...c }) => <li key={key}><RecordCard {...c} /></li>)}
       </ul>
-      <Link href="/plan?place=Indonesia" className="ledger-btn mt-8 inline-flex" style={{ background: HOUSE_CRIMSON, borderColor: HOUSE_CRIMSON, color: "#F4F1ED" }}>Plan with James</Link>
+      <Link href="/plan?place=Indonesia" className="ledger-btn ledger-btn--house mt-8">Plan with James</Link>
     </section>
   );
 }

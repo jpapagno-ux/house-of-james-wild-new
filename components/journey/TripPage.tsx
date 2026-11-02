@@ -400,7 +400,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
-  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#D6EEF0] text-[#0C4A54]" : "bg-[#DCE8DF] text-[#25543B]";
+  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-graphite text-white" : "bg-mist text-graphite";
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />
@@ -572,7 +572,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.10)]" aria-hidden="true" />
             {heroMark}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>

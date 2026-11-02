@@ -8,7 +8,7 @@ import type { Tone } from "@/lib/platform/labels";
 const TONE: Record<Tone, string> = {
   neutral: "border-ink/25 text-ink/75 bg-paper",
   progress: "border-sea-deep/35 text-sea-deep bg-coast-mist",
-  good: "border-forest/35 text-forest bg-[#EEF1EA]",
+  good: "border-forest/35 text-forest bg-mist",
   attention: "border-rust/40 text-rust bg-rust-wash",
   closed: "border-ink/15 text-ink/55 bg-paper-card",
 };
@@ -61,7 +61,7 @@ export function DataList({ rows }: { rows: [string, React.ReactNode][] }) {
 }
 
 export function Notice({ tone = "neutral", title, children }: { tone?: "neutral" | "attention" | "good"; title?: string; children: React.ReactNode }) {
-  const c = tone === "attention" ? "border-l-rust bg-rust-wash" : tone === "good" ? "border-l-forest bg-[#EEF1EA]" : "border-l-ink/40 bg-paper-card";
+  const c = tone === "attention" ? "border-l-rust bg-rust-wash" : tone === "good" ? "border-l-forest bg-mist" : "border-l-ink/40 bg-paper-card";
   return (
     <div role={tone === "attention" ? "status" : undefined} className={`border-l-[3px] ${c} px-4 py-3 text-[14.5px] leading-relaxed`}>
       {title && <p className="font-medium">{title}</p>}

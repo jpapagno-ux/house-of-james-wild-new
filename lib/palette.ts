@@ -1,46 +1,78 @@
-// The Deep Sea palette (James, 2 Nov 2026): "Deeper blues and deeper colours. Stick to just blues,
-// aquas, and even some aqua turquoise greens, not so much browns and olives. Match the stamps to
-// these as well." One source for the colours of the house's buttons, Wild Pathways chips and offer
-// stamps. Every fill below carries white text at WCAG AA (4.5:1 or better; ratios in
-// docs/brand-colours.md). Light tints sit behind the outlined (secondary) chips.
+// THE HOUSE STANDARD (James approved, 2 Nov 2026; warm neutrals and the Heritage volumes confirmed the same day).
+// One source for the house's colours. A restrained, studio approach: five warm tones, one accent, one gradient.
+// Photography carries the colour; pages are paper, stone mist and ink. Replaces the Deep Sea buttons, the
+// Tidewater sea-green/aqua bands and the leathers (Field Olive included). app/globals.css carries the same
+// values as --jw-* tokens; scripts/check-palette.mjs fails the build on drift, on a colour outside the house in a
+// button, chip or band, or on text below AA.
 //
 // Rules
-// • Buttons and calls to action read --jw-action / --jw-action-deep (app/globals.css), never a hex.
-// • House Crimson (#8B2525) is kept for the house seal, the logo and its rule line only.
-// • No browns, golds, tans or olives on chips, buttons or offer stamps:
-//   scripts/check-palette.mjs flags them.
-// • The volume inks (lib/volumes.ts) and The Exceptional Few's per-property palettes are separate.
-// • River voyages (James, 2 Nov 2026) carry their own waters set, still no browns, golds or olives:
-//   the Amazon in rainforest greens, the Nile in lapis with deep Nile turquoise, and the By River
-//   hub between the two. They apply through .theme-waters-* (globals.css) on those hubs and ships.
+// • Pages are Paper. Stone Mist is the only band colour; two bands never sit in a row (the second goes Paper).
+// • Warm Stone is for numerals, keylines and large secondary words; small text uses Warm Stone text (AA).
+// • House Crimson is the single accent: the seal, the logo and its rule, Ledger IDs, key dates and the
+//   main action "Plan with James". One or two crimson touches per screen. No other accent on general pages.
+// • The one gradient, Ink to Garnet (from the warm ink), is only for hero photo fades, the ticker band and the opening.
+// • Volumes (lib/volumes.ts, the Heritage set) show as a 5px tab, map pins and an occasional volume-mist panel;
+//   never sections, buttons or chips. Volume words use the volume's deep value.
+// • Warm mists are allowed as quiet panels: Stone Mist and the six volume mists, these exact tints only.
+//   Still no parchment textures, no browns, golds or tans as grounds.
+// • Buttons, chips, fields and tabs are squared (2px), never pills.
+// • Protected and unchanged: the river waters (below), The Exceptional Few's per-property palettes,
+//   the seal artwork and founder marks.
 //
 // Kept import-free so plain Node (tests, scripts/check-palette.mjs) can read it.
 
+export type HouseToneKey = "paper" | "mist" | "stone" | "stoneText" | "graphite" | "ink" | "keyline" | "hairline";
+export const HOUSE = {
+  paper: "#FFFFFF", // page ground, cards
+  mist: "#F4F2EF", // Stone Mist: the only band colour
+  stone: "#8C8277", // Warm Stone: numerals, keylines, large secondary words
+  stoneText: "#6B635A", // Warm Stone text: small secondary text (AA on Paper and Stone Mist)
+  graphite: "#2E2B28", // text, rules, active chips
+  ink: "#1A1816", // darkest grounds, the footer
+  keyline: "#CFC8BF", // light keylines: secondary button and chip borders, rules
+  hairline: "#DCD7D0", // borders: fine card rules
+};
+
+/** The footer (James, 2 Nov 2026): a warm Ink ground fading to garnet-black, ivory and stone type, labels in a soft
+ *  crimson, warm rules. On Ink: body 14.6:1, soft 8.3:1, legal 4.9:1, label 8.6:1. */
+export const FOOTER = { ground: "#1A1816", groundEnd: "#241A19", body: "#E9E4DE", soft: "#B8AFA5", legal: "#8C8277", label: "#D7A7AA", rule: "#3D3934", field: "#5A534B" };
+
+/** The single accent. */
+export const CRIMSON = { fill: "#8B2525", deep: "#6E1C1C" };
+
+/** The one gradient, Ink to Garnet: hero photo fades, the ticker band and the opening only. */
+export const GRADIENT = { stops: ["#1A1816", "#2E2B28", "#3A1C1F", "#5A1F23"], heroFade: "rgba(38,20,22,0.88)" };
+
+/** The main action ("Plan with James"): crimson on Paper, white keylines on dark or photographs. */
+export const ACTION = { fill: CRIMSON.fill, hover: CRIMSON.deep };
+
+/** Every colour a general page may show (chromatic or neutral). The audit and the palette check read it. */
+export const HOUSE_SET = [HOUSE.paper, HOUSE.mist, HOUSE.stone, HOUSE.stoneText, HOUSE.graphite, HOUSE.ink, HOUSE.keyline, HOUSE.hairline, CRIMSON.fill, CRIMSON.deep, ...GRADIENT.stops];
+
+// Wild Pathways keep their colour only as a small 6px dot beside the printed name (chips are squared
+// graphite outlines). These are the eight dot colours; they never fill a chip, button or band.
 export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass";
 export type Swatch = { name: string; fill: string; tint: string };
-
-/** The eight deep fills, each with its light tint. */
 export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
-  navy: { name: "Deep Navy", fill: "#162D54", tint: "#E9ECF2" },
-  ocean: { name: "Ocean Blue", fill: "#1A4A80", tint: "#E8EEF6" },
-  cerulean: { name: "Deep Cerulean", fill: "#1C6BAE", tint: "#E8F1F9" },
-  slate: { name: "Ink Slate", fill: "#3D4C66", tint: "#ECEFF3" },
-  teal: { name: "Deep Teal", fill: "#0C5D61", tint: "#E6F1F1" },
-  aqua: { name: "Deep Aqua", fill: "#08697F", tint: "#E5F2F5" },
-  turquoise: { name: "Turquoise Green", fill: "#11705A", tint: "#E8F3EF" },
-  seaGlass: { name: "Sea Glass", fill: "#4A736D", tint: "#EDF2F1" },
+  navy: { name: "Deep Navy", fill: "#162D54", tint: "#FFFFFF" },
+  ocean: { name: "Ocean Blue", fill: "#1A4A80", tint: "#FFFFFF" },
+  cerulean: { name: "Deep Cerulean", fill: "#1C6BAE", tint: "#FFFFFF" },
+  slate: { name: "Ink Slate", fill: "#3D4C66", tint: "#FFFFFF" },
+  teal: { name: "Deep Teal", fill: "#0C5D61", tint: "#FFFFFF" },
+  aqua: { name: "Deep Aqua", fill: "#08697F", tint: "#FFFFFF" },
+  turquoise: { name: "Turquoise Green", fill: "#11705A", tint: "#FFFFFF" },
+  seaGlass: { name: "Sea Glass", fill: "#4A736D", tint: "#FFFFFF" },
 };
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */
 export const STAMP_AQUA = { onLight: "#1A8A8A", onDark: "#8FD6CF" };
 
-/** The main action (buttons, "Plan with James", "Hold a cabin", the phone action bar): ocean blue, deep teal on hover. */
-export const ACTION = { fill: DEEP_SEA.ocean.fill, hover: DEEP_SEA.teal.fill };
-
+// River voyages (James, 2 Nov 2026), protected under the House Standard: their own set through the waters
+// context (.theme-waters-*), still no browns, golds or olives. Their buttons are squared like every other.
 export type WatersKey = "amazon" | "nile" | "river";
 export type WatersSet = { name: string; action: string; hover: string; accent: string; accentDeep: string; light: string; card: string };
 
-/** River voyages: their own set, through the waters context. accent = words and selected chips; card = the card (white under Tidewater; the band is TIDEWATER.bands). */
+/** River voyages: their own set, through the waters context. accent = words and selected chips; card = the card (Paper; their pale band is set in globals.css). */
 export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
   // Emerald, deep jungle green, river teal.
   amazon: { name: "Amazon rainforest", action: "#0A6B4E", hover: "#1D5A3B", accent: "#1A4F36", accentDeep: "#123A27", light: "#C4DCCF", card: "#FFFFFF" },
@@ -50,25 +82,5 @@ export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
   river: { name: "By River", action: "#0E6467", hover: "#23428F", accent: "#0E4F52", accentDeep: "#0A3A3C", light: "#C2DCDD", card: "#FFFFFF" },
 };
 
-/** The waters context a ship or hub takes, by its registry waters key. Sea waters keep the Deep Sea set. */
+/** The waters context a ship or hub takes, by its registry waters key. Sea waters follow the House Standard. */
 export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : "");
-
-
-// Tidewater grounds (James chose it, 2 Nov 2026: "C Tidewater, go … or maybe rotate"). Site-wide: a near-white page
-// ground, white cards, fine aqua rules, and section bands that rotate gently between two pale tints, never two of
-// the same in a row. Each volume leads with its own tint. No sand, tan, cream or parchment grounds. Protected and
-// unchanged: The Exceptional Few's dark and day bands, Europe's aubergine, the seal and logo, founder marks and
-// the hourglass. Read in app/globals.css as --jw-ground, --jw-rule-fine, --jw-rule and --jw-band-rgb /
-// --jw-band-alt-rgb (Tailwind bg-paper-card and bg-sand read the band); scripts/check-palette.mjs holds them in step.
-export const TIDEWATER = {
-  ground: "#FCFDFD",
-  card: "#FFFFFF",
-  ruleFine: "#D3E6E4", // .ledger-border
-  rule: "#B5D3D0", // .ledger-rule
-  bands: {
-    seaGreen: "#E8F3EE", // the house and Stays lead with it
-    aqua: "#E5F2F4", // Voyages lead with it
-    amazon: "#E7F2EA", // pale rainforest green
-    nile: "#E8EDF8", // pale lapis
-  },
-};

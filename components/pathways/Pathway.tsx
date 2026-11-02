@@ -3,24 +3,25 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { PATHWAY_LIST, type Pathway, type PathwayId } from "@/lib/pathways";
 
-// Wild Pathways kit: the chip, the card and the marker. Each element scopes
+// Wild Pathways kit: the chip, the card and the marker. The House Standard: graphite chips, the colour only a dot. Each element scopes
 // its own colour through .pathway-0n (globals.css), so a pathway never
 // re-tints the page or the volume accent around it. The name is always
 // printed: colour is a second signal, never the only one.
 
 const scope = (p: Pathway) => `pathway-${p.id.slice(-2)}`;
 
-/** Small labelled chip: primary pathway solid, secondary pathways on their tint. */
+/** Small labelled chip (The House Standard): a squared graphite-outline chip with the pathway name; the pathway's
+ *  colour survives only as the 6px dot. The primary chip has the graphite border, the rest the light keyline. */
 export function PathwayChip({ pathway: p, primary = false, href }: { pathway: Pathway; primary?: boolean; href?: string }) {
-  const cls = `${scope(p)} inline-flex items-center gap-1.5 border px-2.5 py-1 text-[11px] tracking-[0.14em] uppercase font-medium ${primary ? "bg-pathway border-pathway text-white" : "bg-pathway-tint border-pathway/30 text-pathway-text"}`;
+  const cls = `${scope(p)} house-chip ${primary ? "house-chip--primary" : "house-chip--quiet"}`;
   const body = (
     <>
-      <span className="w-1.5 h-1.5 rounded-full bg-current shrink-0" aria-hidden="true" />
+      <span className="w-1.5 h-1.5 rounded-full bg-pathway shrink-0" aria-hidden="true" />
       <span>{p.name}</span>
       {primary && <span className="sr-only"> (primary pathway)</span>}
     </>
   );
-  return href ? <Link href={href} className={`${cls} hover:opacity-90`}>{body}</Link> : <span className={cls}>{body}</span>;
+  return href ? <Link href={href} className={cls}>{body}</Link> : <span className={cls}>{body}</span>;
 }
 
 /** A row of chips for a record: the primary first, then the rest. */
@@ -36,8 +37,8 @@ export function PathwayChips({ primary, secondary, hrefFor }: { primary: Pathway
 /** Pathway card for the Stays landing: a photograph, the name, the setting and the house line. */
 export function PathwayCard({ pathway: p, image, href, count, large = false }: { pathway: Pathway; image?: { url: string; alt: string } | null; href: string; count?: number; large?: boolean }) {
   return (
-    <Link href={href} className={`${scope(p)} group block h-full bg-paper border ledger-border hover:border-pathway transition-colors`}>
-      <div className={`relative ${large ? "aspect-[16/9] lg:aspect-[2/1]" : "aspect-[4/3]"} bg-pathway-tint overflow-hidden`}>
+    <Link href={href} className={`${scope(p)} group block h-full bg-paper border ledger-border hover:border-graphite transition-colors`}>
+      <div className={`relative ${large ? "aspect-[16/9] lg:aspect-[2/1]" : "aspect-[4/3]"} bg-mist overflow-hidden`}>
         {image ? <Image src={image.url} alt={image.alt} fill sizes={large ? "(min-width: 1024px) 560px, 100vw" : "(min-width: 1024px) 360px, (min-width: 640px) 45vw, 90vw"} className="object-cover group-hover:scale-[1.03] transition-transform duration-700" /> : null}
         <span className="absolute left-3 top-3 h-2.5 w-2.5 rounded-full bg-pathway ring-2 ring-white/90" aria-hidden="true" />
       </div>

@@ -47,6 +47,7 @@ import { pathway } from "@/lib/pathways";
 import { REGION_PATHWAYS } from "@/lib/content/region-pathways";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { volumeInk } from "@/lib/volumes";
+import { undash } from "@/lib/content/ships/types";
 import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES, placeGuides } from "@/lib/content/guides";
@@ -238,8 +239,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays, coming: x.coming }));
   const answer = coming
-    ? `${c.name} is on the James Wild & Co map ahead of its stays: the house is vetting them now, and each will be filed under a permanent Ledger ID when it is approved.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${airports.length ? ` Fly into ${airports.map((a) => a[0]).join(" or ")}.` : ""} James plans ${c.name} now: the route, the season and the right coast for your dates.`
-    : `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+    ? `${c.name} is on the James Wild & Co map ahead of its stays: the house is vetting them now, and each will be filed under a permanent Ledger ID when it is approved.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${undash(c.bestShort)}.` : ""}${airports.length ? ` Fly into ${airports.map((a) => a[0]).join(" or ")}.` : ""} James plans ${c.name} now: the route, the season and the right coast for your dates.`
+    : `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${undash(c.bestShort)}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
   const chapters: [string, string][] = coming ? [["The map", "the-map"], ["Stays", "stays"], ...(c.story.length ? [["The story", "story"] as [string, string]] : []), ["When to go", "when"], ["Plan", "plan"]] : [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -254,7 +255,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
                 <div><dt className="ledger-eyebrow !text-white/70">{coming ? "Stays" : "In the Ledger"}</dt><dd className="ledger-display text-2xl">{coming ? "Coming soon" : `${all.length} ${all.length === 1 ? "stay" : "stays"}`}</dd></div>
                 <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
-                <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
+                <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort ? undash(c.bestShort) : c.bestShort}</dd></div>
                 <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>
               </dl>
             </>

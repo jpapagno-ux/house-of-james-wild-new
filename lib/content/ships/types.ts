@@ -261,7 +261,8 @@ export const factOf = (s: Pick<ShipRecord, "facts">, re: RegExp) => s.facts.find
 /** Strips em and en dashes from partner copy (house rule: none in visible copy). */
 export function undash(t: string): string {
   const M = "(January|February|March|April|May|June|July|August|September|October|November|December)";
-  return t.replace(new RegExp(`${M}\\s+-\\s+${M}`, "g"), "$1 to $2").replace(/(\w)\s+-\s+(\w)/g, "$1, $2").replace(/\s*[\u2014]\s*/g, ", ").replace(/(\d)\s*\u2013\s*(\d)/g, "$1 to $2").replace(/\s*\u2013\s*/g, ", ");
+  const S = "(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*";
+  return t.replace(new RegExp(`${M}\\s+-\\s+${M}`, "g"), "$1 to $2").replace(new RegExp(`\\b(${S})\\s*[\u2013\u2014-]\\s*(${S})\\b`, "g"), "$1 to $3").replace(/(\w)\s+-\s+(\w)/g, "$1, $2").replace(/\s*[\u2014]\s*/g, ", ").replace(/(\d)\s*\u2013\s*(\d)/g, "$1 to $2").replace(/\s*\u2013\s*/g, ", ");
 }
 
 /** One colour per cabin type, shared by the cabin cards, the deck-plan legend and Dates & rates.

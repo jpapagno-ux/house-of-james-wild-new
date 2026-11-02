@@ -332,7 +332,7 @@ export default function Compass({ country = "Costa Rica", stays, advisorHref = "
 
           {/* The hand-over */}
           <div className="mt-10 grid md:grid-cols-3 gap-4">
-            <Link href={enquire()} className="bg-action hover:bg-action-deep transition-colors p-5 flex items-start gap-3" data-event="compass_enquire">
+            <Link href={enquire()} className="bg-graphite text-white hover:bg-ink-deep transition-colors p-5 flex items-start gap-3" data-event="compass_enquire">
               <PenLine className="w-5 h-5 mt-0.5 shrink-0" strokeWidth={1.5} aria-hidden="true" />
               <span><span className="block ledger-display text-xl">Send my reading</span><span className="block text-[13.5px] text-white/80 mt-1">Your shortlist, your route and the hidden place, answered by James personally.</span></span>
             </Link>

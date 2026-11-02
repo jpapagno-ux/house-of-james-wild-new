@@ -38,6 +38,7 @@ import { PathwayChip } from "@/components/pathways/Pathway";
 import { pathway } from "@/lib/pathways";
 import { REGION_PATHWAYS } from "@/lib/content/region-pathways";
 import { volumeInk } from "@/lib/volumes";
+import { undash } from "@/lib/content/ships/types";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
@@ -84,7 +85,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
   // Regions told by their waters rather than countries (the polar regions) list their voyages too.
   const WATERS: Record<string, string[]> = { "polar-antarctica": ["antarctica"] };
   const journeys = [...r.countries.flatMap((c) => (c.slug ? journeysFor(c.slug) : [])), ...(WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k))];
-  const doors: Door[] = r.countries.map((c) => ({ name: c.name, href: `${path}/${c.slug}`, image: c.image, imageAlt: `${c.name}, ${r.name}`, line: c.line, stays: c.stays, coming: c.coming, bestMonths: c.bestMonths ?? undefined, compass: c.slug === "costa-rica", routes: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "route").length || undefined : undefined, voyages: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "voyage").length || undefined : undefined }));
+  const doors: Door[] = r.countries.map((c) => ({ name: c.name, href: `${path}/${c.slug}`, image: c.image, imageAlt: `${c.name}, ${r.name}`, line: c.line, stays: c.stays, coming: c.coming, bestMonths: c.bestMonths ? undash(c.bestMonths) : undefined, compass: c.slug === "costa-rica", routes: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "route").length || undefined : undefined, voyages: c.slug ? journeysFor(c.slug).filter((j) => j.kind === "voyage").length || undefined : undefined }));
   const cards = r.countries.filter((c) => c.coming && !c.stays);
   const top = r.countries.filter((c) => c.stays > 0).sort((a, b) => b.stays - a.stays).slice(0, 4);
   const answer = top.length
@@ -190,7 +191,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
               <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{r.name} at a Glance</h2>
               <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-6">
-                {Object.entries(r.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{FACT_LABEL[k] ?? k}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}
+                {Object.entries(r.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{FACT_LABEL[k] ?? k}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{typeof v === "string" ? undash(v) : v}</dd></div>)}
               </dl>
             </section>
           )}
@@ -203,7 +204,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
               <p className="ledger-eyebrow !text-white/70">Not sure where in {r.name}?</p>
               <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2">Let the Compass Choose, <span className="italic">Then Talk to a Person.</span></h2>
               <p className="mt-3 text-[16px] text-white/75 max-w-2xl">A few questions about who&rsquo;s travelling, the kind of place and the month, and it reads the Ledger for you.</p>
-              <Link href="/compass" className="mt-5 inline-block bg-action hover:bg-action-deep transition-colors px-6 py-3 text-[12px] uppercase tracking-[0.18em]">Take the Compass</Link>
+              <Link href="/compass" className="mt-5 ledger-btn ledger-btn--solid">Take the Compass</Link>
             </div>
             <CompassRose bearing={250} className="hidden md:block w-[160px] h-[160px]" />
           </section>

@@ -75,6 +75,8 @@ export type ShipRecord = {
   quote?: string;
   /** Glance-bar wording where the facts would run long (Aliikai's guests line). */
   glance?: Partial<Record<"route" | "guests" | "ages", string>>;
+  /** The operator publishes one schedule for a fleet (Ecoventura): Dates & rates says so. */
+  fleetSchedule?: string;
   /** Status line under "Why we chose her", in place of the operator line. */
   proofLine?: string;
 };

@@ -12,9 +12,10 @@ export function shipMap(e: ShipEntry): { html: string; figCss?: string } | null 
     const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
     return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: "nile", chart: NILE_CHART, title: `Route map of ${s.name} on the Nile` }) } : null;
   }
-  if (e.waters === "amazon") {
+  if (e.waters === "amazon" || e.waters === "galapagos") {
+    const where = e.waters === "amazon" ? "in the Peruvian Amazon" : "in the Galapagos";
     const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
-    return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: "amazon", title: `Route map of ${s.name} in the Peruvian Amazon` }) } : null;
+    return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: e.waters, title: `Route map of ${s.name} ${where}`, kicker: e.waters === "amazon" ? "THE VOYAGE · BY RIVER" : "THE VOYAGE · BY SEA" }) } : null;
   }
   if (e.slug === "aliikai") {
     const trip = TRIPS["10-day-raja-ampat-north"];

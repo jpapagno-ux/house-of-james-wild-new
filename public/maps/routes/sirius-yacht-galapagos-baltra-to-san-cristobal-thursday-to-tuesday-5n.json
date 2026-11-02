@@ -1,0 +1,121 @@
+{
+ "id": "sirius-yacht-galapagos-baltra-to-san-cristobal-thursday-to-tuesday-5n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary c: northern route, 5 nights aboard Galaxy Sirius",
+ "subtitle": "5 nights · Baltra to San Cristobal, Thursday to Tuesday · Galaxy Sirius",
+ "days": {
+  "1": "Arrive Baltra, Las Bachas",
+  "2": "Rabida and Chinese Hat",
+  "3": "North Seymour and Santa Cruz Highlands",
+  "4": "Santiago and Bartolome",
+  "5": "Genovesa",
+  "6": "San Cristobal, fly out"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Rabida",
+   "lat": -0.41,
+   "lng": -90.71,
+   "mode": "sea",
+   "path": [
+    [
+     -90.33,
+     -0.49
+    ],
+    [
+     -90.71,
+     -0.41
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "North Seymour",
+   "lat": -0.3967,
+   "lng": -90.29,
+   "mode": "sea",
+   "path": [
+    [
+     -90.71,
+     -0.41
+    ],
+    [
+     -90.29,
+     -0.3967
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Bartolome",
+   "lat": -0.2833,
+   "lng": -90.55,
+   "mode": "sea",
+   "path": [
+    [
+     -90.29,
+     -0.3967
+    ],
+    [
+     -90.55,
+     -0.2833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.55,
+     -0.2833
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

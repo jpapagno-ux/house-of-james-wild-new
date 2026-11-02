@@ -60,15 +60,23 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   { slug: "beyond-amazon-explorer", name: "andBeyond Amazon Explorer", operator: "andBeyond", kind: "river-yacht", types: ["river"], waters: ["amazon"], country: ["Peru"],
     pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true, staySlug: "beyond-amazon-explorer" },
 
+  // The Galapagos (filed 1 Nov 2026). Ecoventura: Off the Map because Ecoventura calls route B "remote and
+  // pristine"; whole-yacht charter published. Galaxy Cruises: charters published; no Off the Map.
+  { slug: "ecoventura-origin-yacht", name: "Origin", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-origin-yacht" },
+  { slug: "ecoventura-theory-yacht", name: "Theory", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-theory-yacht" },
+  { slug: "ecoventura-evolve-yacht", name: "Evolve", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-evolve-yacht" },
+  { slug: "alya-catamaran-galapagos", name: "Alya", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "alya-catamaran-galapagos" },
+  { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos" },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "celestia-yacht" },
   { slug: "silolona", name: "Silolona", operator: "Silolona", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "silolona-sojourns" },
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
-  { slug: "ecoventura-evolve", name: "Ecoventura Evolve", operator: "Ecoventura", kind: "yacht", types: ["expedition"], waters: ["galapagos"], country: ["Ecuador"], pathway: null, charter: null, rateBasis: null, status: "filed", page: false, staySlug: "ecoventura-evolve-yacht" },
-  { slug: "ecoventura-origin", name: "Ecoventura Origin", operator: "Ecoventura", kind: "yacht", types: ["expedition"], waters: ["galapagos"], country: ["Ecuador"], pathway: null, charter: null, rateBasis: null, status: "filed", page: false, staySlug: "ecoventura-origin-yacht" },
-  { slug: "ecoventura-theory", name: "Ecoventura Theory", operator: "Ecoventura", kind: "yacht", types: ["expedition"], waters: ["galapagos"], country: ["Ecuador"], pathway: null, charter: null, rateBasis: null, status: "filed", page: false, staySlug: "ecoventura-theory-yacht" },
-  { slug: "galaxy-alya", name: "Galaxy Alya", operator: null, kind: "catamaran", types: ["sailing", "charter"], waters: ["galapagos"], country: ["Ecuador"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "alya-catamaran-galapagos" },
-  { slug: "galaxy-sirius", name: "Galaxy Sirius", operator: null, kind: "yacht", types: ["sailing", "charter"], waters: ["galapagos"], country: ["Ecuador"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "sirius-yacht-galapagos" },
 ];
 
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */

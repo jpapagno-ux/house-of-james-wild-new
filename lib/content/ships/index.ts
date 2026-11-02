@@ -1,6 +1,7 @@
 import { ALIIKAI_RECORD } from "./aliikai";
 import { NILE_SHIPS } from "./nile";
 import { AMAZON_SHIPS } from "./amazon";
+import { GALAPAGOS_SHIPS } from "./galapagos";
 import { SHIP_REGISTRY, WATERS_HUBS, type RegistryShip, type Waters } from "./registry";
 import type { ShipRecord } from "./types";
 
@@ -22,6 +23,7 @@ const FILED: { data: ShipRecord; credit?: string; offerRefs: string[] }[] = [
   { data: ALIIKAI_RECORD, offerRefs: ["aliikai"] },
   ...NILE_SHIPS.map(({ data, offerRefs }) => ({ data, credit: "A&K Sanctuary", offerRefs: [data.slug, ...offerRefs] })),
   ...AMAZON_SHIPS,
+  ...GALAPAGOS_SHIPS,
 ];
 // Every registry ship with a page, in registry order. A page ship without a record fails the build.
 export const SHIPS: ShipEntry[] = SHIP_REGISTRY.filter((r) => r.page).map((reg) => {
@@ -33,6 +35,6 @@ export const SHIPS: ShipEntry[] = SHIP_REGISTRY.filter((r) => r.page).map((reg) 
 export const shipBySlug = (slug: string) => SHIPS.find((s) => s.slug === slug);
 export const shipPath = (slug: string) => `/voyages/ships/${slug}`;
 export const waterFor = (e: ShipEntry) => WATERS[e.waters];
-/** The other ships on the same waters (sister ships), in filing order. */
-export const sistersOf = (e: ShipEntry) => SHIPS.filter((x) => x.waters === e.waters && x.slug !== e.slug);
+/** Sister ships: the same operator on the same waters, in registry order. */
+export const sistersOf = (e: ShipEntry) => SHIPS.filter((x) => x.waters === e.waters && x.slug !== e.slug && x.reg.operator === e.reg.operator);
 export const shipsOn = (w: Waters) => SHIPS.filter((x) => x.waters === w).map((x) => x.data);

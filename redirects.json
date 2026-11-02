@@ -75,6 +75,31 @@
     "statusCode": 301
   },
   {
+    "source": "/stays/ecoventura-origin-yacht",
+    "destination": "/voyages/ships/ecoventura-origin-yacht",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/ecoventura-theory-yacht",
+    "destination": "/voyages/ships/ecoventura-theory-yacht",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/ecoventura-evolve-yacht",
+    "destination": "/voyages/ships/ecoventura-evolve-yacht",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/alya-catamaran-galapagos",
+    "destination": "/voyages/ships/alya-catamaran-galapagos",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/sirius-yacht-galapagos",
+    "destination": "/voyages/ships/sirius-yacht-galapagos",
+    "statusCode": 301
+  },
+  {
     "source": "/stays/beyond-amazon-explorer",
     "destination": "/voyages/ships/beyond-amazon-explorer",
     "statusCode": 301

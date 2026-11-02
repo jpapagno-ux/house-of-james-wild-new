@@ -167,7 +167,8 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
         {s.departures.length > 0 && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={datesIntro} />
-            <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={cruise} basis={basis} title={journeys.length ? "Cruise fares by season" : undefined} note={publicNote(s.pricesNote)} />
+            {s.fleetSchedule && <p className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">The {s.operator} fleet schedule</span>{t(s.fleetSchedule)}</p>}
+            <DatesRates ship={s.fleetSchedule ? `${s.operator} fleet` : s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={cruise} basis={basis} title={journeys.length ? "Cruise fares by season" : s.fleetSchedule ? `${s.operator} departures, fleet wide` : undefined} note={publicNote(s.pricesNote)} />
             <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} basis={basis} title={`Aboard ${s.name} inside ${s.operator} journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">

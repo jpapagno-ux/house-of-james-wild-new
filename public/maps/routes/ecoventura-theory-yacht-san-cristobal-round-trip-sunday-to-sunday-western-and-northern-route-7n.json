@@ -1,0 +1,157 @@
+{
+ "id": "ecoventura-theory-yacht-san-cristobal-round-trip-sunday-to-sunday-western-and-northern-route-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary b: volcanic wonders, 7 nights aboard Theory",
+ "subtitle": "7 nights · San Cristobal round trip, Sunday to Sunday · Theory",
+ "days": {
+  "1": "Puerto Baquerizo Moreno and Leon Dormido",
+  "2": "Prince Philip's Steps and Darwin Bay",
+  "3": "Black Turtle Cove and Cerro Dragon",
+  "4": "Punta Espinoza and Urbina Bay",
+  "5": "Elizabeth Bay and Tagus Cove",
+  "6": "Puerto Egas",
+  "7": "Highlands and Charles Darwin Station",
+  "8": "Interpretation Center and fly out"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.33,
+     -0.49
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Fernandina",
+   "lat": -0.2667,
+   "lng": -91.4417,
+   "mode": "sea",
+   "path": [
+    [
+     -90.33,
+     -0.49
+    ],
+    [
+     -91.4417,
+     -0.2667
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Isabela",
+   "lat": -0.6,
+   "lng": -91.08,
+   "mode": "sea",
+   "path": [
+    [
+     -91.4417,
+     -0.2667
+    ],
+    [
+     -91.08,
+     -0.6
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Santiago",
+   "lat": -0.245,
+   "lng": -90.86,
+   "mode": "sea",
+   "path": [
+    [
+     -91.08,
+     -0.6
+    ],
+    [
+     -90.86,
+     -0.245
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.86,
+     -0.245
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3134,
+     -0.7432
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

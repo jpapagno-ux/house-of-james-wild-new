@@ -9,7 +9,7 @@ import { VESSELS } from "../lib/content/vessels.ts";
 const root = new URL("../", import.meta.url);
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const records = new Map<string, { slug: string; itineraries: { direction: string; nights: number | null; days: unknown[] }[] }>();
-for (const dir of ["nile", "amazon"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+for (const dir of ["nile", "amazon", "galapagos"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
   const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8"));
   records.set(r.slug, r);
 }

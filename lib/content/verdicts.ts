@@ -62,14 +62,15 @@ export const VERDICTS: Record<string, Verdict> = {
   "stay:soori-bali": { approvedOn: "2026-11-02", where: "South-west Bali", when: "November 2024", tags: ["Unexpected beauty", "Look closer"], text: ["Soori sits between rice terraces and a black sand beach on Bali's quieter south-west coast, and the architecture is exceptional.", "I would go back for the calm. I'm confident sending couples, families and groups who want design-led privacy and a sunrise at Tanah Lot."] },
   "stay:nihi": { approvedOn: "2026-11-02", where: "Sumba, Indonesia", when: "November 2024", tags: ["Worth your time?", "Curiosity"], text: ["NIHI is Sumba at its wildest: Occy's Left for the surfers, Sandalwood ponies in the sea and the Spa Safari up in the rice valleys. Exceptional, all of it.", "I would go back in a heartbeat. I'm confident sending surfers, riders, couples and families who are happy to travel a little further for it."] },
   "stay:capella-ubud": { approvedOn: "2026-11-02", where: "Keliki Valley, Bali", when: "November 2024", tags: ["Curiosity", "After dark"], text: ["A tented camp in the Keliki Valley forest, built without cutting a single tree, and exceptional from the tents to the open-fire dinners at Api Jiwa.", "I would go back tomorrow. I'm confident sending couples and families who want life under canvas with village culture and real comfort."] },
+  "stay:wilderness-qorokwe": { approvedOn: "2026-11-02", where: "Okavango Delta, Botswana", when: "May 2026", tags: ["Worth your time?", "After dark"], text: ["Qorokwe is a solar-powered tented camp on a hippo lagoon, in a concession bordering Moremi, and it is exceptional from the infinity pool to the night drives.", "A founder favourite, and I would go back tomorrow. I'm confident sending families and anyone who wants land and water in one stay, with mokoro and boating when the water allows."] },
+  // Ulum Moab: James confirmed 2025 (2 Nov 2026); the Ledger date was corrected the same day.
+  "stay:ulum-moab": { approvedOn: "2026-11-02", where: "Moab, Utah", when: "2025", tags: ["Worth your time?", "After dark"], text: ["Ulum puts canvas suites in Utah's red rock country, close to Arches and Canyonlands, and it is exceptional for families.", "My favorite family stay, and I would go back. I'm confident sending families who want the national parks by day and the desert stars by night."] },
   "stay:bambu-indah": { approvedOn: "2026-11-02", where: "Sayan Ridge, Bali", when: "November 2024", tags: ["Curiosity", "Look closer"], text: ["Bambu Indah is a working family experiment on the Sayan Ridge: antique Javanese houses, rice from the paddy below and spring-fed pools by the Ayung River. Exceptional, and like nowhere else on the island.", "I would go back. I'm confident sending couples, families and wellness travellers who are happy with open-air rooms and a lot of nature."] },
 };
 
 // Written but NOT published (2 Nov 2026): nothing reads this map on a page. Each waits on one thing.
-//   Ulum Moab: James's records give 2023 (memory: vetted April 2023) and the Ledger gives 2024; confirm the year.
 //   Casa Koko: its stay page is not live yet (site_status coming_soon).
 export const DRAFT_VERDICTS: Record<string, Verdict & { hold: string }> = {
-  "stay:ulum-moab": { hold: "Year conflicts (2023 vs 2024)", where: "Moab, Utah", when: "2023", tags: ["Worth your time?", "After dark"], text: ["Ulum puts canvas suites in Utah's red rock country, close to Arches and Canyonlands, and it is exceptional for families.", "My favorite family stay, and I would go back. I'm confident sending families who want the national parks by day and the desert stars by night."] },
   "stay:casa-koko": { hold: "Stay page not live", where: "Punta Mita, Mexico", when: "September 2025", tags: ["Worth your time?"], text: ["One house, nine bedrooms, a staff of twenty and a surf break out front in Punta Mita. Exceptional for three generations under one roof.", "I would go back, and I'm confident sending families who want the whole house to themselves. Ask me about the whale shark swim."] },
 };
 
@@ -115,4 +116,6 @@ export const SCRIPT: Record<string, string> = {
   "stay:nihi": "The edge of wildness. JW",
   "stay:capella-ubud": "Under canvas. JW",
   "stay:bambu-indah": "Rice from the paddy. JW",
+  "stay:wilderness-qorokwe": "Over the lagoon. JW",
+  "stay:ulum-moab": "Red rock, all day. JW",
 };

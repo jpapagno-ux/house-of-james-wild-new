@@ -1,0 +1,898 @@
+{
+ "title": "Deep Belize · overland",
+ "crumbs": [
+  "Home",
+  "Overland",
+  "Belize",
+  "Deep Belize"
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-BZ-D09</span>",
+ "h1note": "",
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Route, Day by Day",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "stripcols": "",
+ "feat_title": "",
+ "features": [],
+ "navon": "Overland",
+ "map_eyebrow": "The route, drawn",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "exp_title": "What you will do, stop by stop",
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": []
+ },
+ "kind": "overland",
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "copy_approved": true,
+ "prices_final": false,
+ "booking_live": false,
+ "dayintro": "Each day as James would plan it. Open a day for the detail, or send it to the map.",
+ "id": "deep-belize",
+ "h1": "Deep Belize",
+ "sub": "10 Days · 9 Nights · Belize, the Rainforest and the Reef",
+ "side": [
+  [
+   "1",
+   "Mountain Pine Ridge",
+   "Days 1 to 4",
+   "From Belize City (BZE) by charter, helicopter or road"
+  ],
+  [
+   "2",
+   "Thatch Caye",
+   "Days 5 to 9",
+   "About 15 min by air to Dangriga, then a 35-minute boat"
+  ],
+  [
+   "E",
+   "Belize City (BZE)",
+   "Day 10",
+   "Boat and a short flight, then flights home"
+  ]
+ ],
+ "meta": [
+  [
+   "Journey code",
+   "JW-BZ-D09"
+  ],
+  [
+   "Country",
+   "Belize"
+  ],
+  [
+   "Duration",
+   "10 days / 9 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · by air or road, then by boat"
+  ],
+  [
+   "In · Out",
+   "Belize City (BZE) · Belize City (BZE)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to availability"
+  ],
+  [
+   "Best months",
+   "December to May; Blancaneaux names November to May inland"
+  ],
+  [
+   "Island",
+   "Thatch Caye is all-inclusive, for 30 guests at a time"
+  ],
+  [
+   "Designed by",
+   "James Wild · designing Belize journeys since 1992"
+  ]
+ ],
+ "quote": "\"Belize rewards travelers who do more than one thing well.\"",
+ "overview_title": "What Is the Best Belize Itinerary for the Rainforest and the Reef?",
+ "answer": "Deep Belize is James Wild & Co's ten-day answer: four nights at Blancaneaux Lodge in the Mountain Pine Ridge for waterfalls, horses, caves and the Maya cities, then five at Thatch Caye Resort, an all-inclusive private island for 30 guests nine miles off Dangriga, with the barrier reef fifteen minutes away by boat. Fly into Belize City (BZE): Blancaneaux books charter flights, helicopters or the road, and Thatch Caye is a short flight to Dangriga and a boat.",
+ "striptitle": "Ten days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#4F6B3A"
+  ],
+  [
+   "D2",
+   "#4F6B3A"
+  ],
+  [
+   "D3",
+   "#4F6B3A"
+  ],
+  [
+   "D4",
+   "#4F6B3A"
+  ],
+  [
+   "D5",
+   "#7C9488"
+  ],
+  [
+   "D6",
+   "#7C9488"
+  ],
+  [
+   "D7",
+   "#7C9488"
+  ],
+  [
+   "D8",
+   "#7C9488"
+  ],
+  [
+   "D9",
+   "#7C9488"
+  ],
+  [
+   "D10",
+   "#1F1D1B"
+  ]
+ ],
+ "strip_labels": [
+  "Blancaneaux · the Mountain Pine Ridge",
+  "Thatch Caye · the barrier reef",
+  "Home"
+ ],
+ "days": [
+  {
+   "stayLinks": [
+    [
+     "Blancaneaux Lodge",
+     "/stays/blancaneaux-lodge"
+    ],
+    [
+     "Hidden Valley Lodge",
+     "/stays/hidden-valley-lodge"
+    ]
+   ],
+   "n": "DAY 01",
+   "title": "Belize City to the Mountain Pine Ridge",
+   "line": "By charter, helicopter or road from BZE",
+   "body": "From Belize City (BZE), Blancaneaux pre-books private charter flights, helicopters or land transfers; by road the drive takes about 2 to 2.5 hours. The lodge's thatched cabañas and villas sit above Privassion Creek in the 107,000-acre Mountain Pine Ridge Forest Reserve.",
+   "stay": "Blancaneaux Lodge",
+   "meals": "Confirmed with your quote",
+   "move": "Charter, helicopter or road · about 2 to 2.5 hr by road",
+   "acts": "Arrival · Privassion Creek",
+   "img": "PHOTO · BLANCANEAUX LODGE",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Mountain Pine Ridge",
+   "stageMeta": "DAYS 1 TO 4 · 4 NIGHTS · THE RAINFOREST",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Blancaneaux Lodge",
+     "/stays/blancaneaux-lodge"
+    ],
+    [
+     "Hidden Valley Lodge",
+     "/stays/hidden-valley-lodge"
+    ]
+   ],
+   "n": "DAY 02",
+   "title": "Creeks and the Rio On Pools",
+   "line": "Blancaneaux Lodge, Mountain Pine Ridge",
+   "body": "Creek swimming holes and the Rio On Pools, then horseback riding in the Mountain Pine Ridge, where pine forest meets jungle and the region's waterfalls.",
+   "stay": "Blancaneaux Lodge",
+   "meals": "Confirmed with your quote",
+   "move": "By horse or on foot",
+   "acts": "Rio On Pools · horseback riding",
+   "img": "PHOTO · BLANCANEAUX LODGE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Blancaneaux Lodge",
+     "/stays/blancaneaux-lodge"
+    ],
+    [
+     "Hidden Valley Lodge",
+     "/stays/hidden-valley-lodge"
+    ]
+   ],
+   "n": "DAY 03",
+   "title": "Caracol, Xunantunich or the caves",
+   "line": "The Maya world of western Belize",
+   "body": "The Maya cities of Caracol or Xunantunich, or the caves: ATM, Crystal and Barton Creek, where you canoe through.",
+   "stay": "Blancaneaux Lodge",
+   "meals": "Confirmed with your quote",
+   "move": "By road",
+   "acts": "Caracol or Xunantunich · the caves",
+   "img": "PHOTO · BELIZE RAINFOREST",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Blancaneaux Lodge",
+     "/stays/blancaneaux-lodge"
+    ],
+    [
+     "Hidden Valley Lodge",
+     "/stays/hidden-valley-lodge"
+    ]
+   ],
+   "n": "DAY 04",
+   "title": "The Waterfall Spa",
+   "line": "Blancaneaux Lodge, Mountain Pine Ridge",
+   "body": "A slower day: the Waterfall Spa, the creek and the forest around the lodge.",
+   "stay": "Blancaneaux Lodge",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Waterfall Spa · the creek",
+   "img": "PHOTO · BLANCANEAUX LODGE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Thatch Caye Resort",
+     "/stays/thatch-caye-resort"
+    ],
+    [
+     "Turtle Inn",
+     "/stays/turtle-inn"
+    ]
+   ],
+   "n": "DAY 05",
+   "title": "The Pine Ridge to the cayes",
+   "line": "By air to Dangriga, then by boat",
+   "body": "Back to Belize City by charter, helicopter or road, then a commuter flight of about 15 minutes (or a van) to Dangriga, and Thatch Caye's included 35-minute boat from Pelican Beach Resort, which leaves daily at 2:30pm and 4:30pm.",
+   "stay": "Thatch Caye Resort",
+   "meals": "All-inclusive: meals and drinks included",
+   "move": "Air, then boat · about 15 min flight, 35 min boat",
+   "acts": "Transfer day · the overwater deck",
+   "img": "PHOTO · THATCH CAYE",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Thatch Caye",
+   "stageMeta": "DAYS 5 TO 9 · 5 NIGHTS · THE REEF",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Thatch Caye Resort",
+     "/stays/thatch-caye-resort"
+    ],
+    [
+     "Turtle Inn",
+     "/stays/turtle-inn"
+    ]
+   ],
+   "n": "DAY 06",
+   "title": "The barrier reef",
+   "line": "Fifteen minutes by boat from the island",
+   "body": "The barrier reef is a 15-minute boat ride away, with an on-site PADI dive shop, and you can snorkel straight from shore.",
+   "stay": "Thatch Caye Resort",
+   "meals": "All-inclusive: meals and drinks included",
+   "move": "By boat",
+   "acts": "Diving · snorkelling",
+   "img": "PHOTO · THATCH CAYE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Thatch Caye Resort",
+     "/stays/thatch-caye-resort"
+    ],
+    [
+     "Turtle Inn",
+     "/stays/turtle-inn"
+    ]
+   ],
+   "n": "DAY 07",
+   "title": "Kayaks and paddleboards",
+   "line": "Thatch Caye, nine miles off Dangriga",
+   "body": "Non-motorized water sports are included: kayaks and paddleboards off the island.",
+   "stay": "Thatch Caye Resort",
+   "meals": "All-inclusive: meals and drinks included",
+   "move": "On the water",
+   "acts": "Kayaks · paddleboards",
+   "img": "PHOTO · THATCH CAYE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Thatch Caye Resort",
+     "/stays/thatch-caye-resort"
+    ],
+    [
+     "Turtle Inn",
+     "/stays/turtle-inn"
+    ]
+   ],
+   "n": "DAY 08",
+   "title": "Thirty guests, one table",
+   "line": "Thatch Caye, nine miles off Dangriga",
+   "body": "The island takes only 30 guests at a time, with one member of staff to each guest, and dinner is communal and farm to table.",
+   "stay": "Thatch Caye Resort",
+   "meals": "All-inclusive: meals and drinks included",
+   "move": "On foot",
+   "acts": "The reef again · communal dinner",
+   "img": "PHOTO · THATCH CAYE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Thatch Caye Resort",
+     "/stays/thatch-caye-resort"
+    ],
+    [
+     "Turtle Inn",
+     "/stays/turtle-inn"
+    ]
+   ],
+   "n": "DAY 09",
+   "title": "Unplugged",
+   "line": "Thatch Caye, nine miles off Dangriga",
+   "body": "A free day on the island: the reef, the water or the hammock on your patio.",
+   "stay": "Thatch Caye Resort",
+   "meals": "All-inclusive: meals and drinks included",
+   "move": "On foot",
+   "acts": "Free day",
+   "img": "PHOTO · THATCH CAYE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 10",
+   "title": "Home through Belize City",
+   "line": "By boat, then a short flight",
+   "body": "The boat back to Dangriga and the commuter flight of about 15 minutes to Belize City (BZE) for flights home.",
+   "stay": "Flights home",
+   "meals": "Confirmed with your quote",
+   "move": "Boat, then air",
+   "acts": "Departure",
+   "img": "PHOTO · BELIZE",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "getThere": {
+  "eyebrow": "How to get there",
+  "title": "Charter, Helicopter, Then the Boat",
+  "intro": "Everything starts at Belize City (BZE). Flights and helicopters come first wherever a lodge offers them; road times only as each lodge states them.",
+  "points": [
+   [
+    "By charter or helicopter to Blancaneaux",
+    "From BZE, Blancaneaux pre-books private charter flights, helicopters or land transfers. By road the drive takes about 2 to 2.5 hours."
+   ],
+   [
+    "By air and boat to Thatch Caye",
+    "A commuter flight of about 15 minutes, or a van, from BZE to Dangriga, then the included 35-minute boat from Pelican Beach Resort, daily at 2:30pm and 4:30pm."
+   ],
+   [
+    "Inland instead: Hidden Valley by helicopter",
+    "Hidden Valley Lodge is roughly 20 minutes by helicopter from Belize City, over 1,000 Foot Falls, or about 2.5 hours by road from BZE."
+   ],
+   [
+    "On the coast instead: Turtle Inn",
+    "Fly about 35 minutes from BZE to the Placencia airstrip (PLJ), five minutes from Turtle Inn; private charter and helicopter arrivals can be arranged, or drive about 3 to 3.5 hours."
+   ]
+  ]
+ },
+ "herofacts": [
+  [
+   "Duration",
+   "10 days · 9 nights"
+  ],
+  [
+   "Route",
+   "Mountain Pine Ridge → Thatch Caye"
+  ],
+  [
+   "Travel",
+   "Charter or helicopter, air, boat"
+  ],
+  [
+   "Best months",
+   "December to May"
+  ]
+ ],
+ "suits": [
+  [
+   "Honeymooners",
+   "A creekside cabaña, then an overwater bungalow.",
+   "Thatch Caye names honeymooners first; Blancaneaux is a Coppola hideaway in the forest."
+  ],
+  [
+   "Divers",
+   "Fifteen minutes to the barrier reef.",
+   "Thatch Caye has its own PADI dive shop, and you can snorkel from shore."
+  ],
+  [
+   "Families",
+   "Horses, caves, then a private island.",
+   "Both Blancaneaux and Thatch Caye name families among the travellers they suit."
+  ],
+  [
+   "Active travellers",
+   "Creeks, horses, caves and Maya cities first.",
+   "Four nights in the Mountain Pine Ridge before the island."
+  ]
+ ],
+ "twice": [
+  [
+   "Short on time on arrival",
+   "The road to the Mountain Pine Ridge takes about 2 to 2.5 hours.",
+   "Blancaneaux pre-books charter flights and helicopters from Belize City."
+  ],
+  [
+   "Wanting a village nearby",
+   "Thatch Caye is an unplugged private island for 30 guests.",
+   "Turtle Inn on the Placencia Peninsula is a short walk from Placencia village."
+  ]
+ ],
+ "experiences": [
+  {
+   "kicker": "Blancaneaux · Days 1 to 4",
+   "title": "The Rio On Pools",
+   "info": "Creek swimming holes and the Rio On Pools in the Mountain Pine Ridge.",
+   "dur": "",
+   "incl": "",
+   "season": "November to May"
+  },
+  {
+   "kicker": "Blancaneaux · Days 1 to 4",
+   "title": "Horseback in the Pine Ridge",
+   "info": "Horseback riding in the Mountain Pine Ridge Forest Reserve.",
+   "dur": "",
+   "incl": "",
+   "season": "November to May"
+  },
+  {
+   "kicker": "Western Belize · Day 3",
+   "title": "Caracol and Xunantunich",
+   "info": "The Maya cities of Caracol and Xunantunich, or the ATM, Crystal and Barton Creek caves.",
+   "dur": "",
+   "incl": "",
+   "season": "November to May"
+  },
+  {
+   "kicker": "Thatch Caye · Days 5 to 9",
+   "title": "The barrier reef",
+   "info": "Diving with the on-site PADI shop, fifteen minutes by boat, or snorkelling from shore.",
+   "dur": "",
+   "incl": "",
+   "season": "December to May"
+  },
+  {
+   "kicker": "Thatch Caye · Days 5 to 9",
+   "title": "Overwater bungalows",
+   "info": "Premier Overwater Bungalows with a private patio and hammock, or an oceanfront cabana with a rooftop deck.",
+   "dur": "",
+   "incl": "",
+   "season": "December to May"
+  },
+  {
+   "kicker": "Thatch Caye · evenings",
+   "title": "The communal table",
+   "info": "Communal farm-to-table dinners, with meals and drinks included.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  }
+ ],
+ "lodges_title": "The rainforest, then the reef",
+ "lodges": [
+  {
+   "name": "Blancaneaux Lodge",
+   "line": "Mountain Pine Ridge · Days 1 to 4",
+   "chips": [
+    "4 nights",
+    "20 rooms",
+    "Coppola hideaway"
+   ],
+   "photos": [
+    "Blancaneaux Lodge"
+   ],
+   "body": "Thatched cabañas and villas above Privassion Creek in the 107,000-acre Mountain Pine Ridge Forest Reserve, where pine forest meets jungle and waterfalls, with the Rio On Pools, horses, the Waterfall Spa and the Maya cities of Caracol and Xunantunich close by.",
+   "rows": [
+    [
+     "Location",
+     "Mountain Pine Ridge Forest Reserve, Cayo"
+    ],
+    [
+     "Nights",
+     "4 · Days 1 to 4"
+    ],
+    [
+     "Getting there",
+     "From BZE by private charter flight, helicopter or land transfer; by road about 2 to 2.5 hours"
+    ],
+    [
+     "Best months",
+     "November through May, the drier season"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/blancaneaux-lodge\">Blancaneaux Lodge</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Hidden Valley Lodge",
+   "line": "Mountain Pine Ridge · the other choice for Days 1 to 4",
+   "chips": [
+    "7,200-acre reserve",
+    "100 miles of trails",
+    "Helicopter 20 min"
+   ],
+   "photos": [
+    "Hidden Valley Lodge"
+   ],
+   "body": "A private lodge inside its own 7,200-acre reserve in the Mountain Pine Ridge, with more than 100 miles of trails to waterfalls and swimming holes, Butterfly Falls to yourself for a day and the Fire Tower. Belizean owned and operated.",
+   "rows": [
+    [
+     "Location",
+     "Mountain Pine Ridge, 45 minutes from San Ignacio"
+    ],
+    [
+     "Nights",
+     "4 · Days 1 to 4, in place of Blancaneaux"
+    ],
+    [
+     "Getting there",
+     "Helicopter from Belize City in roughly 20 minutes, or about 2.5 hours by road from BZE"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/hidden-valley-lodge\">Hidden Valley Lodge</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Thatch Caye Resort",
+   "line": "Off Dangriga · Days 5 to 9",
+   "chips": [
+    "5 nights",
+    "All-inclusive",
+    "30 guests"
+   ],
+   "photos": [
+    "Thatch Caye Resort"
+   ],
+   "body": "An all-inclusive private island nine miles off Dangriga for 30 guests at a time, in overwater bungalows and oceanfront cabanas. Meals, drinks and non-motorized water sports are included, the reef is 15 minutes away by boat with an on-site PADI dive shop, and there is one member of staff to each guest.",
+   "rows": [
+    [
+     "Location",
+     "Nine miles off Dangriga"
+    ],
+    [
+     "Nights",
+     "5 · Days 5 to 9"
+    ],
+    [
+     "Rooms",
+     "Premier Overwater Bungalows, Premier Oceanfront Cabana, Penthouse Oceanfront Cabana"
+    ],
+    [
+     "Meals",
+     "All-inclusive"
+    ],
+    [
+     "Getting there",
+     "About 15 minutes by commuter flight from BZE to Dangriga, then the included 35-minute boat from Pelican Beach Resort"
+    ],
+    [
+     "Best months",
+     "December to May, the drier season"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/thatch-caye-resort\">Thatch Caye Resort</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Turtle Inn",
+   "line": "Placencia · the other choice for Days 5 to 9",
+   "chips": [
+    "28 cottages and villas",
+    "Coppola hideaway",
+    "Village nearby"
+   ],
+   "photos": [
+    "Turtle Inn"
+   ],
+   "body": "A barefoot Caribbean hideaway on the Placencia Peninsula: thatched-roof cottages and villas with Balinese-inspired details, a short walk from Placencia village, with the barrier reef, sunset cruises and the Sunset Spa.",
+   "rows": [
+    [
+     "Location",
+     "Placencia Peninsula"
+    ],
+    [
+     "Nights",
+     "5 · Days 5 to 9, in place of Thatch Caye"
+    ],
+    [
+     "Getting there",
+     "About 35 minutes by air from BZE to Placencia (PLJ), five minutes from the property; charter and helicopter can be arranged"
+    ],
+    [
+     "Best months",
+     "December through May, the drier season"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/turtle-inn\">Turtle Inn</a>"
+    ]
+   ]
+  }
+ ],
+ "incl": [
+  "Nine nights: four at Blancaneaux Lodge (or Hidden Valley Lodge) and five at Thatch Caye Resort (or Turtle Inn)",
+  "Transfers from Belize City to the Mountain Pine Ridge and back, by charter, helicopter or road as you choose",
+  "Commuter flights Belize City to Dangriga and back, and Thatch Caye's included boat",
+  "At Thatch Caye: meals, drinks and non-motorized water sports",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to and from Belize City",
+  "Travel insurance",
+  "Diving, Maya site and cave excursions, quoted with your dates",
+  "Meals at Blancaneaux not included in your rate",
+  "Gratuities"
+ ],
+ "founder": {
+  "eyebrow": "Designed by the founder",
+  "title": "A Few Nights Inland, Then the Caribbean",
+  "p1": "James Papagno has been designing Belize journeys since 1992. He has not stayed at Blancaneaux Lodge or Thatch Caye Resort; both are filed from the properties' own information.",
+  "p2": "Belize rewards travellers who do more than one thing well, so the route does two: four nights in the Mountain Pine Ridge for the waterfalls, caves and Maya cities, then five on a private island on the second-largest barrier reef on earth.",
+  "film": "Founder's film to come"
+ },
+ "approve": {
+  "title": "The rainforest, then the reef",
+  "seal_bottom": "MOUNTAIN PINE RIDGE · THATCH CAYE",
+  "seal_mark": "BELIZE SINCE 1992",
+  "why": [
+   "Four nights inland and five on the reef, so neither half is a stopover.",
+   "Charter flights and helicopters first, wherever the lodges offer them.",
+   "Every stay on the route has its own page in the Ledger."
+  ],
+  "quote": "A few nights inland, then the Caribbean."
+ },
+ "vettedLine": "Designed by James Wild",
+ "faqs": [
+  [
+   "What is the best Belize itinerary for the rainforest and the reef?",
+   "Ten days and nine nights: four at Blancaneaux Lodge in the Mountain Pine Ridge, then five at Thatch Caye Resort, an all-inclusive private island nine miles off Dangriga. Fly in and out of Belize City (BZE)."
+  ],
+  [
+   "How do you get to Blancaneaux Lodge?",
+   "From Belize City (BZE), the lodge pre-books private charter flights, helicopters or land transfers. By road the drive takes about 2 to 2.5 hours."
+  ],
+  [
+   "How do you get to Thatch Caye?",
+   "A commuter flight of about 15 minutes, or a van, from BZE to Dangriga, then the resort's included 35-minute boat from Pelican Beach Resort, daily at 2:30pm and 4:30pm."
+  ],
+  [
+   "When is the best time to go?",
+   "December to May. Blancaneaux names November through May as the drier season inland; in the green season rain is heavier and the waterfalls may be fuller. Thatch Caye names December to May as the drier season on the reef."
+  ],
+  [
+   "Is Thatch Caye all-inclusive?",
+   "Yes: meals, drinks and non-motorized water sports are included, for only 30 guests at a time, with an on-site PADI dive shop."
+  ],
+  [
+   "Which other lodges can we choose?",
+   "Inland, Hidden Valley Lodge, The Lodge at Chaa Creek, Ka'ana Resort or The Rainforest Lodge at Sleeping Giant. On the coast, Turtle Inn at Placencia, Matachica on Ambergris Caye or Coco Plum Island Resort off Dangriga. Each has its own page in the Ledger."
+  ],
+  [
+   "Can we add Tikal?",
+   "Yes. Guatemala is next door: Bolontiku on Lake Petén Itzá can meet guests coming from Belize at the Melchor de Mencos border, about 1 hour 35 minutes from its dock. Guatemala in 7 Days is the house's Guatemala route."
+  ],
+  [
+   "Has James stayed at these lodges?",
+   "No. James has designed Belize journeys since 1992, but he has not stayed at Blancaneaux Lodge or Thatch Caye Resort; both are filed from the properties' own information."
+  ],
+  [
+   "How much does Deep Belize cost?",
+   "It is quoted against your dates and travellers. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More routes nearby",
+ "related": [
+  [
+   "JW-GT-A07 · 7 DAYS",
+   "Guatemala in 7 Days",
+   "Antigua, Lake Atitlán and Tikal; Bolontiku meets guests at the Belize border."
+  ],
+  [
+   "JW-MX-C09 · 10 DAYS",
+   "Yucatán and the Riviera Maya, with Chablé",
+   "A hacienda near Mérida, Tulum, then Maroma Beach."
+  ],
+  [
+   "DESTINATION",
+   "Belize",
+   "Every stay in Belize, the months to go and the routes."
+  ]
+ ],
+ "relatedHrefs": [
+  "/overland/guatemala/guatemala-in-7-days",
+  "/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
+  "/destinations/central-america/belize"
+ ],
+ "slides": [
+  {
+   "kicker": "Deep Belize · Belize",
+   "title": "Deep Belize",
+   "line": "Four nights by the waterfalls of the Mountain Pine Ridge, then five on a private island on the reef.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#25321F 0%,#4F6B3A 50%,#7C9488 100%)"
+  }
+ ],
+ "map_title": "The Mountain Pine Ridge to the Reef",
+ "map_coord": "17°02′N 88°57′W · JW-BZ-D09",
+ "seo": {
+  "path": "/overland/belize/deep-belize",
+  "title": "Deep Belize: 10-Day Rainforest and Reef Itinerary, Blancaneaux to Thatch Caye",
+  "description": "Ten days in Belize: four nights at Blancaneaux Lodge in the Mountain Pine Ridge, then five at Thatch Caye, an all-inclusive private island on the barrier reef. Designed by James Wild.",
+  "keywords": [
+   "Belize itinerary",
+   "Belize rainforest and reef",
+   "Blancaneaux Lodge",
+   "Thatch Caye Resort",
+   "10-day Belize itinerary"
+  ]
+ },
+ "touristType": [
+  "Honeymooners",
+  "Divers",
+  "Families"
+ ],
+ "bestFor": {
+  "who": "Honeymooners",
+  "why": "A creekside cabaña in the Pine Ridge, then an overwater bungalow on the reef."
+ },
+ "photoCredit": "Photographs courtesy of The Family Coppola Hideaways, Thatch Caye Resort and Hidden Valley.",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/belize/deep-belize#trip",
+   "name": "Deep Belize",
+   "url": "https://www.jameswildco.com/overland/belize/deep-belize",
+   "description": "Deep Belize is James Wild & Co's ten-day answer: four nights at Blancaneaux Lodge in the Mountain Pine Ridge for waterfalls, horses, caves and the Maya cities, then five at Thatch Caye Resort, an all-inclusive private island for 30 guests nine miles off Dangriga, with the barrier reef fifteen minutes away by boat. Fly into Belize City (BZE): Blancaneaux books charter flights, helicopters or the road, and Thatch Caye is a short flight to Dangriga and a boat.",
+   "touristType": [
+    "Honeymooners",
+    "Divers",
+    "Families"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 3,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Mountain Pine Ridge",
+       "description": "Days 1 to 4 · Blancaneaux Lodge",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 17.03651,
+        "longitude": -88.95317
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Thatch Caye, off Dangriga",
+       "description": "Days 5 to 9 · Thatch Caye Resort",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.874528,
+        "longitude": -88.121583
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Belize City (BZE)",
+       "description": "Day 10 · flights home"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

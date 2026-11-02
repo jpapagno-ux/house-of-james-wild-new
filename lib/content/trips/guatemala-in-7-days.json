@@ -1,0 +1,692 @@
+{
+ "title": "Guatemala in 7 Days · overland",
+ "crumbs": [
+  "Home",
+  "Overland",
+  "Guatemala",
+  "Guatemala in 7 Days"
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-GT-A07</span>",
+ "h1note": "",
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Route, Day by Day",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "stripcols": "",
+ "feat_title": "",
+ "features": [],
+ "navon": "Overland",
+ "map_eyebrow": "The route, drawn",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "exp_title": "What you will do, stop by stop",
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": []
+ },
+ "kind": "overland",
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "copy_approved": true,
+ "prices_final": false,
+ "booking_live": false,
+ "dayintro": "Each day as James would plan it. Open a day for the detail, or send it to the map.",
+ "id": "guatemala-in-7-days",
+ "h1": "Guatemala in 7 Days",
+ "sub": "7 Days · 6 Nights · Antigua, Lake Atitlán and Tikal",
+ "side": [
+  [
+   "S",
+   "Guatemala City (GUA)",
+   "Day 1",
+   "By road to Antigua, 45 min to 1.5 hr"
+  ],
+  [
+   "1",
+   "Antigua",
+   "Days 1 to 2",
+   "By road into the highlands"
+  ],
+  [
+   "2",
+   "Lake Atitlán",
+   "Days 3 to 4",
+   "By road to Guatemala City, 2.5 to 4 hr, then about an hour by air to Flores"
+  ],
+  [
+   "3",
+   "Lake Petén Itzá",
+   "Days 5 to 6",
+   "Boat, then about an hour by air to Guatemala City"
+  ],
+  [
+   "E",
+   "Guatemala City (GUA)",
+   "Day 7",
+   "Flights home"
+  ]
+ ],
+ "meta": [
+  [
+   "Journey code",
+   "JW-GT-A07"
+  ],
+  [
+   "Country",
+   "Guatemala"
+  ],
+  [
+   "Duration",
+   "7 days / 6 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · by road, by air, by boat"
+  ],
+  [
+   "In · Out",
+   "Guatemala City (GUA) · Guatemala City (GUA), by way of Flores (FRS)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to availability"
+  ],
+  [
+   "Best months",
+   "November to April, the dry season"
+  ],
+  [
+   "Climate at the lake",
+   "24 to 34°C all year at Bolontiku, as the hotel states"
+  ],
+  [
+   "Stays",
+   "Bolontiku on Lake Petén Itzá; James books Antigua and Atitlán for your dates"
+  ]
+ ],
+ "quote": "\"Give Bolontiku time for both the lake and the archaeology; it isn't a quick Tikal stop.\"",
+ "overview_title": "What Is the Best 7-Day Guatemala Itinerary?",
+ "answer": "The best 7-day Guatemala itinerary, as James Wild & Co draws it, is two nights in Antigua, two on Lake Atitlán and two at Bolontiku on Lake Petén Itzá, for Tikal at first light. Fly into La Aurora (GUA) in Guatemala City, go by road to the highlands, then fly about an hour to Flores (FRS) for the Petén. James books the right house in Antigua and on Atitlán for your dates.",
+ "striptitle": "Seven days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#6B4A33"
+  ],
+  [
+   "D2",
+   "#6B4A33"
+  ],
+  [
+   "D3",
+   "#7C9488"
+  ],
+  [
+   "D4",
+   "#7C9488"
+  ],
+  [
+   "D5",
+   "#4F6B3A"
+  ],
+  [
+   "D6",
+   "#4F6B3A"
+  ],
+  [
+   "D7",
+   "#1F1D1B"
+  ]
+ ],
+ "strip_labels": [
+  "Antigua · the old capital",
+  "Lake Atitlán · the highlands",
+  "Lake Petén Itzá · Tikal",
+  "Home"
+ ],
+ "days": [
+  {
+   "stayLinks": [],
+   "n": "DAY 01",
+   "title": "Into Antigua",
+   "line": "By road from Guatemala City · 45 minutes to 1.5 hours",
+   "body": "Land at La Aurora International Airport (GUA) in Guatemala City. Antigua has no airport of its own; it is 45 minutes to an hour and a half away by road, depending on traffic.",
+   "stay": "James books the right house in Antigua for your dates",
+   "meals": "Confirmed with your quote",
+   "move": "By road · 45 min to 1.5 hr",
+   "acts": "Arrival · the cobbled grid",
+   "img": "PHOTO · GUATEMALA",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Antigua",
+   "stageMeta": "DAYS 1 TO 2 · 2 NIGHTS · THE OLD CAPITAL",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 02",
+   "title": "The old capital",
+   "line": "Antigua, at about 1,500 metres",
+   "body": "Antigua was the capital of the Captaincy-General of Guatemala until the Santa Marta earthquakes of 1773 moved it to what is now Guatemala City. What stayed is a grid of cobbled streets at about 1,500 metres, churches with low bell towers built for earthquakes, and the ruins of the ones that fell. UNESCO inscribed it in 1979.",
+   "stay": "James books the right house in Antigua for your dates",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Churches · ruins · the streets",
+   "img": "PHOTO · GUATEMALA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 03",
+   "title": "Antigua to Lake Atitlán",
+   "line": "By road into the highlands",
+   "body": "By road to Lake Atitlán, which fills a volcanic caldera formed about 84,000 years ago, under the San Pedro, Tolimán and Atitlán volcanoes. Panajachel is the way in.",
+   "stay": "James books the right house on Atitlán for your dates",
+   "meals": "Confirmed with your quote",
+   "move": "By road · drive time set with your dates",
+   "acts": "Transfer day · the lake",
+   "img": "PHOTO · GUATEMALA",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Lake Atitlán",
+   "stageMeta": "DAYS 3 TO 4 · 2 NIGHTS · THE HIGHLANDS",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 04",
+   "title": "The lake by boat",
+   "line": "Between the Maya towns of Atitlán",
+   "body": "Boats run from Panajachel's docks to San Marcos La Laguna, San Juan La Laguna, Santiago Atitlán and the other Maya towns on the shore.",
+   "stay": "James books the right house on Atitlán for your dates",
+   "meals": "Confirmed with your quote",
+   "move": "By boat",
+   "acts": "Lake towns by boat",
+   "img": "PHOTO · GUATEMALA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Bolontiku",
+     "/stays/boluntiku-hotel"
+    ]
+   ],
+   "n": "DAY 05",
+   "title": "Up to the Petén",
+   "line": "By road, by air, then by boat",
+   "body": "By road from the lake to Guatemala City, 2.5 to 4 hours depending on traffic and the town you leave from, then a flight of about an hour to Flores (FRS). Bolontiku's team takes you to the municipal dock for a complimentary 10 to 15 minute boat ride across Lake Petén Itzá.",
+   "stay": "Bolontiku",
+   "meals": "Confirmed with your quote",
+   "move": "Road, then air, then boat",
+   "acts": "Transfer day · a swim in the lake",
+   "img": "PHOTO · BOLONTIKU POOL",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 03",
+   "stageName": "Lake Petén Itzá",
+   "stageMeta": "DAYS 5 TO 6 · 2 NIGHTS · THE PETÉN",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Bolontiku",
+     "/stays/boluntiku-hotel"
+    ]
+   ],
+   "n": "DAY 06",
+   "title": "Tikal at first light",
+   "line": "Tikal National Park, just over an hour from Bolontiku",
+   "body": "Tikal is just over an hour from Bolontiku. The park covers 57,600 hectares of forest, wetland and savannah, and UNESCO lists it for both its Maya city and its wildlife: five wild cats, howler and spider monkeys and more than 300 bird species. The city was lived in from about 600 BC until around 900 AD. Go at first light, before the heat, then back to the lake to swim, kayak or book the private temazcal.",
+   "stay": "Bolontiku",
+   "meals": "Confirmed with your quote",
+   "move": "By road",
+   "acts": "Tikal · lake swimming · temazcal",
+   "img": "PHOTO · LAKE PETÉN ITZÁ",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 07",
+   "title": "Home through Guatemala City",
+   "line": "By boat, then a flight of about an hour",
+   "body": "The boat back across Lake Petén Itzá, then a flight of about an hour from Flores (FRS) to Guatemala City (GUA) for flights home.",
+   "stay": "Flights home",
+   "meals": "Confirmed with your quote",
+   "move": "Boat, then air",
+   "acts": "Departure",
+   "img": "PHOTO · BOLONTIKU AT NIGHT",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "getThere": {
+  "eyebrow": "How to get there",
+  "title": "Two Halves, One Short Flight Apart",
+  "intro": "Guatemala is less than 500 km from north to south, but the mountain roads are slow, so the route splits it in two: the highlands by road, the Petén by air.",
+  "points": [
+   [
+    "Fly into Guatemala City (GUA)",
+    "Most international flights land at La Aurora, about 2.5 to 3 hours from Miami or Houston, with a direct flight from Madrid. Antigua is 45 minutes to an hour and a half away by road."
+   ],
+   [
+    "Fly to Flores (FRS) for Tikal",
+    "Daily flights of about an hour connect Guatemala City with Mundo Maya International Airport at Flores. Bolontiku's team meets you for a complimentary 10 to 15 minute boat ride across Lake Petén Itzá."
+   ],
+   [
+    "The highlands by road",
+    "Lake Atitlán is 2.5 to 4 hours by road from Guatemala City, depending on traffic and the town. Panajachel is the way in, and boats cross from its docks to the other lakeside towns."
+   ],
+   [
+    "From Belize",
+    "By road, the crossing is Melchor de Mencos. Bolontiku can meet guests coming from Belize at the border, about 1 hour 35 minutes from its dock."
+   ]
+  ]
+ },
+ "herofacts": [
+  [
+   "Duration",
+   "7 days · 6 nights"
+  ],
+  [
+   "Route",
+   "Antigua → Atitlán → Tikal"
+  ],
+  [
+   "Travel",
+   "Road, air, boat"
+  ],
+  [
+   "Best months",
+   "November to April"
+  ]
+ ],
+ "suits": [
+  [
+   "Couples",
+   "Cobbled streets, a volcanic lake, then a temple at dawn.",
+   "Bolontiku names couples among the travellers it suits."
+  ],
+  [
+   "Families",
+   "Tikal's monkeys and a lake you can swim in.",
+   "Bolontiku welcomes families; its stretch of Lake Petén Itzá is one of the few where you can swim."
+  ],
+  [
+   "Photographers and walkers",
+   "Antigua on foot, Atitlán by boat, Tikal at first light.",
+   "Maya history and living Maya towns in one trip."
+  ],
+  [
+   "First-time visitors",
+   "The two halves of Guatemala in a week.",
+   "The highlands by road, the Petén by air."
+  ]
+ ],
+ "twice": [
+  [
+   "Wanting short travel days",
+   "Day 5 is long: the road to Guatemala City, the flight to Flores and the boat to Bolontiku.",
+   "Ask James to start in the Petén instead, or add a night."
+  ],
+  [
+   "Travelling in Holy Week",
+   "Holy Week draws the biggest crowds of the year.",
+   "Book early; Antigua's processions over sawdust carpets are the reason."
+  ]
+ ],
+ "experiences": [
+  {
+   "kicker": "Antigua · Days 1 to 2",
+   "title": "Antigua on foot",
+   "info": "Cobbled streets at about 1,500 metres, earthquake-proof churches and the ruins of the ones that fell; a UNESCO World Heritage site since 1979.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Lake Atitlán · Days 3 to 4",
+   "title": "The lake towns by boat",
+   "info": "From Panajachel to San Marcos La Laguna, San Juan La Laguna and Santiago Atitlán, under the San Pedro, Tolimán and Atitlán volcanoes.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Tikal · Day 6",
+   "title": "Tikal at first light",
+   "info": "A Maya city lived in from about 600 BC to around 900 AD, in 57,600 hectares of forest with five wild cats, howler and spider monkeys and more than 300 bird species.",
+   "dur": "",
+   "incl": "",
+   "season": "November to April is driest"
+  },
+  {
+   "kicker": "Bolontiku · Days 5 to 6",
+   "title": "A swim in Lake Petén Itzá",
+   "info": "Lake swimming and kayaking from one of the few stretches of the lake where you can swim.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Bolontiku · Days 5 to 6",
+   "title": "The private temazcal",
+   "info": "Bolontiku's private Temazcal sweat lodge, after the temples.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "From Bolontiku",
+   "title": "Yaxhá and El Mirador",
+   "info": "Bolontiku's other tours go to Yaxhá and El Mirador; Yaxhá is a day trip from the lake.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  }
+ ],
+ "lodges_title": "The stay on file",
+ "lodges": [
+  {
+   "name": "Bolontiku",
+   "line": "Lake Petén Itzá · Days 5 to 6",
+   "chips": [
+    "2 nights",
+    "15 suites",
+    "Cayuga Collection"
+   ],
+   "photos": [
+    "Bolontiku pool",
+    "Lake Petén Itzá",
+    "Bolontiku at night"
+   ],
+   "body": "A 15-suite lakeside hotel on Lake Petén Itzá, named after the nine Mayan gods said to guide life and destiny, on one of the few stretches of the lake where you can swim, with a private Temazcal sweat lodge and Tikal just over an hour away. A member of the Cayuga Collection.",
+   "rows": [
+    [
+     "Location",
+     "Lake Petén Itzá, near Flores and Tikal"
+    ],
+    [
+     "Nights",
+     "2 · Days 5 to 6"
+    ],
+    [
+     "Rooms",
+     "Lake Breeze Suites (31.4 m², carved-stone Jacuzzis), Lake View and Garden View Suites"
+    ],
+    [
+     "Getting there",
+     "Fly Guatemala City (GUA) to Flores (FRS), about an hour, then a complimentary 10 to 15 minute boat across the lake"
+    ],
+    [
+     "Best months",
+     "November to April, the dry season; May to October is green season"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/boluntiku-hotel\">Bolontiku</a>"
+    ]
+   ]
+  }
+ ],
+ "incl": [
+  "Six nights: two in Antigua and two on Lake Atitlán, in houses James books for your dates, and two at Bolontiku",
+  "Road transfers: Guatemala City to Antigua, Antigua to Lake Atitlán, and Lake Atitlán to Guatemala City",
+  "Flights Guatemala City to Flores and back",
+  "Bolontiku's complimentary boat across Lake Petén Itzá",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights to and from Guatemala City",
+  "Travel insurance",
+  "Tikal National Park entry and guiding, quoted with your dates",
+  "Meals not included in your rate",
+  "Gratuities"
+ ],
+ "founder": {
+  "eyebrow": "Designed by the founder",
+  "title": "The Highlands by Road, the Petén by Air",
+  "p1": "James has not stayed at Bolontiku. It is filed from the hotel's own information and the Cayuga Collection's, and the route is drawn from the house's Guatemala page and the official sources behind it: UNESCO for Tikal and Antigua.",
+  "p2": "Guatemala looks small on the map. It isn't, once you're on the road. So the route treats it as two trips joined by a one-hour flight: Antigua and Atitlán first, then the Petén, with two nights at the lake so Tikal gets a whole morning.",
+  "film": "Founder's film to come"
+ },
+ "approve": {
+  "title": "Two trips, one short flight apart",
+  "seal_bottom": "ANTIGUA · ATITLÁN · TIKAL",
+  "seal_mark": "GUATEMALA",
+  "why": [
+   "Two nights in each place, so Tikal gets a whole morning at first light.",
+   "The highlands by road and the Petén by air, as the house's Guatemala page sets it out.",
+   "Bolontiku, the stay on the route, has its own page in the Ledger."
+  ],
+  "quote": "Guatemala looks small on the map. It isn't, once you're on the road."
+ },
+ "vettedLine": "Designed by James Wild",
+ "faqs": [
+  [
+   "What is the best 7-day Guatemala itinerary?",
+   "Two nights in Antigua, two on Lake Atitlán and two at Bolontiku on Lake Petén Itzá, with Tikal at first light on day six. Fly into Guatemala City (GUA), go by road to the highlands and fly about an hour to Flores (FRS) for the Petén."
+  ],
+  [
+   "How do you get to Tikal?",
+   "Fly to Flores, then drive about 65 km, an hour to an hour and a half, to Tikal National Park; from Bolontiku it is just over an hour. UNESCO listed Tikal in 1979 for both its Maya city and its forest."
+  ],
+  [
+   "Where do we stay in Antigua and on Lake Atitlán?",
+   "James books the right house in Antigua and on Atitlán for your dates. Bolontiku, on Lake Petén Itzá, is the stay on this route with its own page in the Ledger."
+  ],
+  [
+   "When is the best time to visit Guatemala?",
+   "November to April, the dry season, when Tikal's trails are in better shape and the volcanoes around Lake Atitlán are clearest. May to October is the rainy season: greener and quieter, with most of the rain in the afternoon. Holy Week draws the biggest crowds, so book early."
+  ],
+  [
+   "How far is Antigua from the airport?",
+   "45 minutes to an hour and a half by road from La Aurora in Guatemala City, depending on traffic. Antigua has no airport of its own."
+  ],
+  [
+   "Can we add Belize?",
+   "Yes. Belize is next door: Flores to Belize City is 3 to 4 hours by road through the Melchor de Mencos border, and Bolontiku can meet guests coming from Belize at the border. Deep Belize is the house's Belize route."
+  ],
+  [
+   "Has James stayed at Bolontiku?",
+   "No. Bolontiku is filed from the hotel's own information and the Cayuga Collection's. James says so plainly on every page where he hasn't been."
+  ],
+  [
+   "How much does this route cost?",
+   "It is quoted against your dates and travellers. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More routes nearby",
+ "related": [
+  [
+   "JW-BZ-D09 · 10 DAYS",
+   "Deep Belize",
+   "The rainforest and the reef, next door by road through Melchor de Mencos."
+  ],
+  [
+   "JW-MX-C09 · 10 DAYS",
+   "Yucatán and the Riviera Maya, with Chablé",
+   "A hacienda near Mérida, Tulum, then Maroma Beach."
+  ],
+  [
+   "DESTINATION",
+   "Guatemala",
+   "When to go, how to get there and where the house sends you."
+  ]
+ ],
+ "relatedHrefs": [
+  "/overland/belize/deep-belize",
+  "/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
+  "/destinations/central-america/guatemala"
+ ],
+ "slides": [
+  {
+   "kicker": "Guatemala in 7 Days · Guatemala",
+   "title": "Guatemala in 7 Days",
+   "line": "Antigua under its volcanoes, a boat across Atitlán, then Tikal at first light.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#3B2F25 0%,#6B4A33 50%,#7C9488 100%)"
+  }
+ ],
+ "map_title": "The Petén, Drawn",
+ "map_coord": "16°58′N 89°56′W · JW-GT-A07",
+ "seo": {
+  "path": "/overland/guatemala/guatemala-in-7-days",
+  "title": "Guatemala in 7 Days: Antigua, Lake Atitlán and Tikal Itinerary",
+  "description": "The best 7-day Guatemala itinerary: two nights in Antigua, two on Lake Atitlán and two at Bolontiku on Lake Petén Itzá for Tikal at first light. Designed by James Wild.",
+  "keywords": [
+   "7-day Guatemala itinerary",
+   "Guatemala in 7 days",
+   "Antigua Atitlán Tikal itinerary",
+   "Bolontiku",
+   "Tikal at sunrise"
+  ]
+ },
+ "touristType": [
+  "Couples",
+  "Families"
+ ],
+ "bestFor": {
+  "who": "Couples",
+  "why": "Antigua, a volcanic lake and Tikal at first light in one week."
+ },
+ "photoCredit": "Photographs of Bolontiku courtesy of Bolontiku and the Cayuga Collection.",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/guatemala/guatemala-in-7-days#trip",
+   "name": "Guatemala in 7 Days",
+   "url": "https://www.jameswildco.com/overland/guatemala/guatemala-in-7-days",
+   "description": "The best 7-day Guatemala itinerary, as James Wild & Co draws it, is two nights in Antigua, two on Lake Atitlán and two at Bolontiku on Lake Petén Itzá, for Tikal at first light. Fly into La Aurora (GUA) in Guatemala City, go by road to the highlands, then fly about an hour to Flores (FRS) for the Petén. James books the right house in Antigua and on Atitlán for your dates.",
+   "touristType": [
+    "Couples",
+    "Families"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 6,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Guatemala City (GUA)",
+       "description": "Day 1 · arrival"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Antigua",
+       "description": "Days 1 to 2"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Lake Atitlán",
+       "description": "Days 3 to 4"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Lake Petén Itzá",
+       "description": "Days 5 to 6 · Bolontiku",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 16.96289,
+        "longitude": -89.92657
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Tikal National Park",
+       "description": "Day 6 · first light",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 17.24,
+        "longitude": -89.62
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Guatemala City (GUA)",
+       "description": "Day 7 · flights home"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

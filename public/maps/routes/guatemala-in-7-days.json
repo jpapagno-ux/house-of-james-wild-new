@@ -1,0 +1,43 @@
+{
+ "id": "guatemala-in-7-days",
+ "type": "overland",
+ "title": "Guatemala in 7 Days",
+ "subtitle": "7 days · 6 nights · the Petén leg",
+ "code": "JW-GT-A07",
+ "days": {
+  "1": "Into Antigua",
+  "2": "The old capital",
+  "3": "Antigua to Lake Atitlán",
+  "4": "The lake by boat",
+  "5": "Up to the Petén",
+  "6": "Tikal at first light",
+  "7": "Home through Guatemala City"
+ },
+ "stops": [
+  {
+   "day": 5,
+   "name": "Bolontiku, Lake Petén Itzá",
+   "lat": 16.96289,
+   "lng": -89.92657,
+   "kind": "lodge"
+  },
+  {
+   "day": 6,
+   "name": "Tikal National Park",
+   "lat": 17.24,
+   "lng": -89.62,
+   "mode": "road",
+   "kind": "site"
+  },
+  {
+   "day": 6,
+   "name": "Back to Bolontiku",
+   "lat": 16.96289,
+   "lng": -89.92657,
+   "mode": "road",
+   "kind": "lodge",
+   "nolabel": true
+  }
+ ],
+ "map_note": "Bolontiku from its own pin; Tikal from the house's Guatemala chart. Antigua and Atitlán have no stay on file yet, so they are not drawn."
+}

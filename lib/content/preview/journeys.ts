@@ -69,6 +69,18 @@ const RAW: Record<string, Journey[]> = {
   antarctica: [
     { kind: "voyage", ledgerId: "PCS-A21-POL", title: "Polar Circle Air-Cruise", eyebrow: "Magellan Explorer or Discoverer · Antarctica", nights: 9, line: "Punta Arenas → fly to King George Island → the Antarctic Circle → Punta Arenas", bestMonths: "February", href: recordHref("voyage", "antarctica21-polar-circle-air-cruise", "antarctica"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_800/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs", status: null, price: { amount: 24995, basis: "per person, 2027, double [confirm]" }, contentStatus: "approved" },
   ],
+  // Central America (James approved the three routes, 2 Nov 2026). Stops are the stays' own pins
+  // (stays.json); a stay with no pin on file (Chablé Yucatán) is left off the line, never placed by guess.
+  // Tikal has no stay, so its point is read off the house's Guatemala chart (lib/charts/countries.json).
+  mexico: [
+    { kind: "route", ledgerId: "JW-MX-C09", title: "Yucatán and the Riviera Maya, with Chablé", eyebrow: "Two Chablé hotels, forest to sea", nights: 9, line: "Mérida → Chablé Yucatán → Tulum → Chablé Maroma → Cancún", bestMonths: "December to April", href: recordHref("route", "yucatan-and-the-riviera-maya-with-chable", "mexico"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_900/q_auto:good/f_jpg/jwco/stays/chable-maroma/hero", status: "house_approved", statusYear: 2026, stops: [{ lat: 20.2143, lng: -87.4299 }, { lat: 20.7203, lng: -86.9699 }], contentStatus: "approved" },
+  ],
+  guatemala: [
+    { kind: "route", ledgerId: "JW-GT-A07", title: "Guatemala in 7 Days", eyebrow: "Antigua, Lake Atitlán and Tikal", nights: 6, line: "Guatemala City → Antigua → Lake Atitlán → Flores → Tikal → Guatemala City", bestMonths: "November to April", href: recordHref("route", "guatemala-in-7-days", "guatemala"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_900/q_auto:good/f_jpg/jwco/stays/boluntiku-hotel/g4", status: "house_approved", statusYear: 2026, stops: [{ lat: 16.96289, lng: -89.92657 }, { lat: 17.24, lng: -89.62 }], contentStatus: "approved" },
+  ],
+  belize: [
+    { kind: "route", ledgerId: "JW-BZ-D09", title: "Deep Belize", eyebrow: "The rainforest, then the reef", nights: 9, line: "Belize City → Mountain Pine Ridge → Dangriga → Thatch Caye → Belize City", bestMonths: "December to May", href: recordHref("route", "deep-belize", "belize"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_900/q_auto:good/f_jpg/jwco/stays/thatch-caye-resort/hero", status: "house_approved", statusYear: 2026, stops: [{ lat: 17.03651, lng: -88.95317 }, { lat: 16.874528, lng: -88.121583 }], contentStatus: "approved" },
+  ],
   botswana: [
     { kind: "route", ledgerId: "ITN-LAND-2026-713648", title: "Grand Kwando Botswana", eyebrow: "The house Botswana circuit", nights: 12, line: "Maun → Lagoon → Lebala → Splash → Tau Pan → Maun", bestMonths: "May to October", href: recordHref("route", "grand-kwando-botswana", "botswana"), image: `${MEDIA}/08c77d237_generated_image.png`, status: "founder_traveled", contentStatus: "published" },
     { kind: "route", ledgerId: "ITN-LAND-2026-380777", title: "Classic Kwando Circuit", eyebrow: "Kwando Botswana", nights: 10, line: "Maun → Lagoon → Lebala → Pom Pom → Maun", bestMonths: "May to October", href: recordHref("route", "classic-kwando-circuit-lagoon-lebala-pom-pom", "botswana"), image: `${MEDIA}/4bd65272d_generated_image.png`, status: "founder_traveled", contentStatus: "published" },

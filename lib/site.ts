@@ -284,6 +284,10 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/south-africa/leopards-through-the-lens", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/south-africa/three-generations-at-pioneer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/south-africa/track-your-life-with-boyd-varty", priority: 0.7, changeFrequency: "monthly" },
+  // Central America Overland routes: approved by James, 2 Nov 2026.
+  { path: "/overland/mexico/yucatan-and-the-riviera-maya-with-chable", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/guatemala/guatemala-in-7-days", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/belize/deep-belize", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

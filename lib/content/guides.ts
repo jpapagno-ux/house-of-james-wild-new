@@ -28,7 +28,7 @@ export type Guide = {
   /** A Ledger chart inset (lib/charts/regions.json via IslandZoom) drawn under the facts: island groups too small for the country chart. */
   zoom?: "galapagos" | "rapa-nui";
   /** A flyover from the continent into a close chart (lib/content/flyovers.ts), drawn under the facts. */
-  flyover?: "atacama-uyuni";
+  flyover?: "atacama-uyuni" | "rapa-nui";
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
   stays?: string[];
   /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
@@ -295,7 +295,7 @@ export const GUIDES: Record<string, Guide> = {
   // Cloudinary library yet; until it lands the hero is the property's own frame, credited.
   "rapa-nui": {
     slug: "rapa-nui", region: "south-america", country: "chile", parent: "chile", name: "Rapa Nui", path: "/destinations/south-america/chile/rapa-nui",
-    theme: "stays", zoom: "rapa-nui", stays: ["nayara-hangaroa"],
+    theme: "stays", flyover: "rapa-nui", stays: ["nayara-hangaroa"],
     proofEyebrow: "On the founder's list · not yet visited",
     seo: {
       title: "Rapa Nui (Easter Island) Guide: When to Go, Getting There & Where to Stay",

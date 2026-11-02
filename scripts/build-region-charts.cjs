@@ -33,7 +33,9 @@ const REGIONS = {
   // Rapa Nui (Easter Island), closer: the Chile chart frames the mainland on purpose, so the island's
   // pins live here, as an inset on the Chile page and on the Rapa Nui guide. 1:10m stock, like Galápagos.
   "rapa-nui": { country: "chile", hires: true, frame: [-109.55, -27.27, -109.17, -27.0], focus: ["Chile"], seas: [["Pacific Ocean", -27.24, -109.5]],
-    areas: [["Hanga Roa ✈", -27.15, -109.43], ["Rano Kau · Orongo", -27.19, -109.43], ["Rano Raraku", -27.105, -109.3], ["Ahu Tongariki", -27.15, -109.265], ["Anakena", -27.07, -109.32], ["Terevaka", -27.085, -109.38], ["Poike", -27.09, -109.24]] },
+    areas: [["Hanga Roa ✈", -27.15, -109.43], ["Rano Kau · Orongo", -27.19, -109.43], ["Rano Raraku", -27.105, -109.3], ["Ahu Tongariki", -27.15, -109.265], ["Anakena", -27.07, -109.32], ["Terevaka", -27.085, -109.38], ["Poike", -27.09, -109.24]],
+    // The UNESCO layer (Rapa Nui National Park, 1995): shown on the inset and as the landing of the flyover.
+    unesco: ["715"] },
   // The Atacama and Uyuni, closer (James, 1 Nov 2026): the landing chart of the South America flyover.
   // Chile and Bolivia in ink, the salt flats, the Eduardo Avaroa reserve, the classic crossing and the
   // UNESCO sites in the frame. Outlines of the salt flats and the reserve are indicative, drawn by hand.

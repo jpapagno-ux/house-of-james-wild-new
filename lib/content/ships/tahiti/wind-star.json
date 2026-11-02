@@ -1,0 +1,217 @@
+{
+ "slug": "wind-star",
+ "name": "Wind Star",
+ "brandLine": "A four-masted sailing yacht",
+ "operator": "Windstar",
+ "type": "sailing yacht",
+ "waters": "French Polynesia",
+ "country": "French Polynesia",
+ "status": "launching",
+ "launch": "2027-03",
+ "seo": {
+  "title": "Wind Star in Tahiti from March 2027: Windstar's 148-Guest Sailing Yacht | James Wild & Co",
+  "description": "Wind Star, Windstar's four-masted sailing yacht for 148 guests, sails French Polynesia year round from March 2027 on the 7-night Dreams of Tahiti, Mondays from Papeete, calling at Raiatea every week.",
+  "keywords": [
+   "Wind Star",
+   "Windstar Wind Star",
+   "Dreams of Tahiti",
+   "Wind Star Tahiti 2027",
+   "sailing yacht Tahiti",
+   "Windstar sailing ship Tahiti"
+  ]
+ },
+ "tagline": "Four masts, 148 guests, and Raiatea every week from March 2027.",
+ "answer": "Wind Star is Windstar's four-masted sailing yacht for 148 guests. From March 2027 she sails French Polynesia year round on the 7-night Dreams of Tahiti, with weekly Monday departures from Papeete, and every voyage visits Raiatea. Her six self-furling sails carry 21,500 sq ft of canvas; she was refreshed under Windstar's Setting Sails programme.",
+ "facts": [
+  [
+   "Guests",
+   "148"
+  ],
+  [
+   "Crew",
+   "105"
+  ],
+  [
+   "Cabins",
+   "73 ocean view staterooms and 1 Owner's Suite"
+  ],
+  [
+   "Length",
+   "360 ft at the waterline, 440 ft with the bowsprit"
+  ],
+  [
+   "Masts and sails",
+   "4 masts of 204 ft; 6 self-furling sails, 21,500 sq ft"
+  ],
+  [
+   "Gross tonnage",
+   "5,736"
+  ],
+  [
+   "Decks",
+   "4"
+  ],
+  [
+   "Registry",
+   "Bahamas"
+  ],
+  [
+   "Port",
+   "Papeete, Tahiti"
+  ],
+  [
+   "In Tahiti",
+   "From March 2027, year round"
+  ]
+ ],
+ "overview": [
+  "Wind Star is a four-masted sailing yacht: four masts of 204 feet carry six triangular, self-furling, computer-operated sails, 21,500 square feet of Dacron. Windstar gives her speed as up to 15.8 knots with the wind, and 10 knots on engines alone.",
+  "She carries 148 guests with 105 crew. Windstar lists 73 deluxe ocean view staterooms and one Owner's Suite, and her restaurants as Amphora, the Veranda and Candles, all open seating and complimentary. She was redesigned under Windstar's Setting Sails programme.",
+  "From March 2027 she joins Star Breeze in French Polynesia, sailing the 7-night Dreams of Tahiti every week from Papeete, Monday departures, and every voyage calls at Raiatea, which Windstar's release describes as the ancestral homeland of the Māori people."
+ ],
+ "why": [
+  "A real sailing yacht in Tahiti: four masts and six sails, for 148 guests.",
+  "Raiatea every week, the island that shares its lagoon with Taha'a, James's favourite in French Polynesia.",
+  "Seven nights from Papeete on a Monday, so a week of sailing fits neatly between nights on land."
+ ],
+ "hero": {
+  "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+  "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+ },
+ "gallery": [
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
+   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
+   "alt": "Island life on the water in French Polynesia"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Owner's Suite",
+   "count": 1,
+   "size": "220 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Up to 2 guests"
+   ]
+  },
+  {
+   "type": "Category AX Deluxe",
+   "count": 24,
+   "size": "188 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 3 guests"
+   ]
+  },
+  {
+   "type": "Category A",
+   "count": 12,
+   "size": "188 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 2 guests"
+   ]
+  },
+  {
+   "type": "Category BX Deluxe",
+   "count": 24,
+   "size": "188 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 3 guests"
+   ]
+  },
+  {
+   "type": "Category B",
+   "count": 13,
+   "size": "188 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 3 guests"
+   ]
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Dreams of Tahiti, 7 nights",
+   "nights": 7,
+   "direction": "Papeete round trip, Mondays, calling at Raiatea",
+   "days": []
+  }
+ ],
+ "departures": [],
+ "datesPublished": false,
+ "routesNote": "Windstar publishes Dreams of Tahiti as a 7-night Papeete round trip that calls at Raiatea every week; its other ports are set in Windstar's booking tool, so ask James for the day by day for your week.",
+ "pricesNote": "Windstar quotes fares by cabin in its booking tool; James confirms yours. No fares are filed here.",
+ "inclusions": [
+  "All open-seating dining at Amphora, the Veranda and Candles",
+  "24-hour in-room dining"
+ ],
+ "exclusions": [
+  "Flights to Tahiti"
+ ],
+ "children": "Windstar's Wind Star page publishes no minimum age; ask James for the policy on your sailing.",
+ "faqs": [
+  [
+   "When does Wind Star sail in Tahiti?",
+   "From March 2027, year round, per Windstar."
+  ],
+  [
+   "What is Dreams of Tahiti?",
+   "Wind Star's 7-night voyage from Papeete, with weekly Monday departures; every voyage visits Raiatea."
+  ],
+  [
+   "How many guests does Wind Star carry?",
+   "148, with 105 crew."
+  ],
+  [
+   "Is Wind Star a real sailing ship?",
+   "Yes. Four masts of 204 feet and six self-furling sails with 21,500 sq ft of canvas."
+  ],
+  [
+   "How big are the cabins?",
+   "188 sq ft for the ocean view staterooms; the Owner's Suite is 220 sq ft."
+  ],
+  [
+   "Can I add Taha'a to a Wind Star week?",
+   "Yes. Taha'a shares Raiatea's lagoon, about 30 minutes across by boat, so Le Taha'a or Vahine Private Island sit naturally before or after a sailing."
+  ],
+  [
+   "Where should I stay before sailing?",
+   "A night on Tahiti first: InterContinental Tahiti or Le Tahiti by Pearl Resorts, both in the Ledger."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "148 guests under sail, with open-seating dining."
+  },
+  {
+   "who": "Sailors at heart",
+   "line": "Four masts and six sails, the classic Windstar ship."
+  },
+  {
+   "who": "Taha'a lovers",
+   "line": "Raiatea every week, Taha'a across the lagoon."
+  }
+ ],
+ "sources": [
+  "https://www.windstarcruises.com/ships/wind-star/",
+  "https://www.windstarcruises.com/press-media/press-releases/Windstar-Cruises-Returns-Iconic-Sailing"
+ ],
+ "film": null
+}

@@ -193,5 +193,10 @@
     "source": "/stays/club-paradise-palawan",
     "destination": "/stays/discovery-coron",
     "permanent": true
+  },
+  {
+    "source": "/stays/windstar-cruise-sv-star-breeze",
+    "destination": "/voyages/ships/star-breeze",
+    "permanent": true
   }
 ]

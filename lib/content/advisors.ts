@@ -76,8 +76,9 @@ const CARDS: Advisor[] = [
       adv: "ADV-1982-000001", sample: false, since: 1983, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
       countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
-      // "Tahiti specialist": listed by Tahiti Tourisme (James, 2 Nov 2026); surfing Tahiti since 1995.
-      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Tahiti specialist"],
+      // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
+      // URL to follow, so no link yet); surfing Tahiti since 1995.
+      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Gold Certified Tahiti Specialist"],
       line: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
       entries: [
         { ledgerId: "STY-2026-056524", name: "Wilderness DumaTau", place: "Linyanti · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Elephants cross the channel at four. Nobody is late for that." },

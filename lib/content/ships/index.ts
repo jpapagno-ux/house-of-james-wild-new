@@ -5,6 +5,7 @@ import { GALAPAGOS_SHIPS } from "./galapagos";
 import { POLAR_SHIPS } from "./polar";
 import { INDONESIA_SHIPS } from "./indonesia";
 import { PHILIPPINES_SHIPS } from "./philippines";
+import { TAHITI_SHIPS } from "./tahiti";
 import { SHIP_REGISTRY, WATERS_HUBS, type RegistryShip, type Waters } from "./registry";
 import type { ShipRecord } from "./types";
 
@@ -30,6 +31,7 @@ const FILED: { data: ShipRecord; credit?: string; offerRefs: string[] }[] = [
   ...POLAR_SHIPS,
   ...INDONESIA_SHIPS,
   ...PHILIPPINES_SHIPS,
+  ...TAHITI_SHIPS,
 ];
 // Every registry ship with a page, in registry order. A page ship without a record fails the build.
 export const SHIPS: ShipEntry[] = SHIP_REGISTRY.filter((r) => r.page).map((reg) => {

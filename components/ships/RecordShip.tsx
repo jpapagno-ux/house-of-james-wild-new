@@ -91,12 +91,19 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
     ...(extra.jsonld ?? []),
   ];
 
-  const cabinCount = s.cabins.reduce((a, c) => a + (c.count ?? 0), 0) || s.cabins.length;
+  // Counted only when every cabin type publishes its count; otherwise the number of cabin types.
+  const counted = s.cabins.every((c) => typeof c.count === "number");
+  const cabinCount = counted ? s.cabins.reduce((a, c) => a + (c.count ?? 0), 0) : s.cabins.length;
+  const cabinWord = counted ? "cabins and suites" : `cabin ${s.cabins.length === 1 ? "type" : "types"}`;
+  const anyCabinFrom = s.cabins.some((c) => cabinFrom(s, c.type) !== null);
+  // Some operators publish one lowest fare, not a fare per cabin (Delfin III, Anakonda).
+  const oneFare = cruise.length > 0 && cruise.every((d) => Object.keys(d.prices).every((k) => !s.cabins.some((c) => k === c.type || k.startsWith(`${c.type} (`))));
   const cabinIntro = basis === "per-night"
     ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
-    : `${cabinCount} cabins and suites${guests ? ` for ${guests} guests` : ""}. ${cruise.length ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : `Rates are on request: ${s.operator} publishes no cruise-only fare for her.`}`;
+    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")} guests` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
   const datesIntro = basis === "per-night"
     ? "Every published sailing by month, with its length and the fare per person for the voyage."
+    : oneFare ? "Only the lowest published fare is shown below, per person, two sharing; James confirms the fare for your cabin and dates."
     : cruise.length ? (cruise.some((d) => d.dateTo) ? `Cruise fares by season as ${s.operator} publishes them, per person for each cabin type.` : "Every published departure by month, with the fare per person for each cabin type.")
       : `${s.operator} publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside ${s.operator} land and cruise journeys, listed below with their full-journey fares.`;
 
@@ -129,7 +136,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
       lead={<>
         {extra.top}
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
-          status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {s.operator}, {s.brandLine}</>}</p>} />
+          status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {s.operator}{s.brandLine && s.brandLine !== s.operator ? `, ${s.brandLine}` : ""}</>}</p>} />
         {s.suits.length > 0 && (
           <ul id="suits" className={`mt-6 grid gap-4 md:grid-cols-2 ${s.suits.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`} aria-label={`Who ${s.name} suits`}>
             {s.suits.map((x) => (
@@ -160,8 +167,8 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
         {extra.body}
         {s.departures.length === 0 && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail Next?`} icon="sun" />
-            <NoDates name={s.name} planHref={plan} />
+            <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
+            <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />
           </section>
         )}
         {s.departures.length > 0 && (
@@ -193,7 +200,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
                       <div className="p-4">
                         <p className="ledger-eyebrow ledger-crimson">{kindLabel(x.type)} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
-                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "new dates to be announced" : "rates on request"}</p>
+                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "dates and fares: ask us" : "rates on request"}</p>
                       </div>
                     </Link>
                   </li>

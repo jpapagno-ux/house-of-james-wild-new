@@ -29,8 +29,8 @@ export function shipCard(r: RegistryShip): ShipCardData | null {
     const guests = s.glance?.guests ?? factOf(s, /guest/i);
     return {
       slug: r.slug, name: s.name, href: registryHref(r), eyebrow, line: undash(s.tagline), image: { url: s.hero.url, alt: s.hero.alt }, credit: e.credit,
-      facts: [["Nights", nightsLabel(s).replace(" nights", "")], ["Guests", guests ?? "To confirm"]],
-      price: p.kind === "cruise" ? { label: "From", amount: p.amount } : p.kind === "journey" ? { label: "Journeys", amount: p.amount } : p.kind === "tba" ? { label: "New dates", amount: "Ask James" } : { label: "Rates", amount: "On request" },
+      facts: [["Nights", nightsLabel(s).replace(" nights", "")], ["Guests", guests ? guests.replace(/\s*\(.*?\)/, "") : "Ask us"]],
+      price: p.kind === "cruise" ? { label: "From", amount: p.amount } : p.kind === "journey" ? { label: "Journeys", amount: p.amount } : p.kind === "tba" ? { label: "Rates", amount: "Ask us" } : { label: "Rates", amount: "On request" },
       low: fromPrice(s), pathway: pw, types: r.types, waters: r.waters, page: true, status: s.status,
     };
   }

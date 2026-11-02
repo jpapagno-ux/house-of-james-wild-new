@@ -26,7 +26,8 @@ function brief(c: ShipCardData): string {
   if (!e) return `${c.name} (${c.eyebrow.toLowerCase().replace(" · ", ", ")}; ship page to follow)`;
   const s = e.data;
   const g = s.glance?.guests ?? factOf(s, /guest/i);
-  const parts = [c.eyebrow.replace(" · ", ", ").replace(/^\w/, (x) => x.toLowerCase()), nightsLabel(s), g ? `${g} guests` : null, c.price ? (c.price.label === "From" ? `from ${c.price.amount}` : c.price.label === "Journeys" ? `${s.operator} journeys from ${c.price.amount}` : c.price.amount.toLowerCase()) : null, /^launching/.test(s.status) ? s.status : null];
+  const gw = g ? g.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to") : null;
+  const parts = [c.eyebrow.replace(" · ", ", ").replace(/^\w/, (x) => x.toLowerCase()), nightsLabel(s), gw ? `${gw} guests` : null, c.price ? (c.price.label === "From" ? `from ${c.price.amount}` : c.price.label === "Journeys" ? `${s.operator} journeys from ${c.price.amount}` : c.price.amount.toLowerCase()) : null, /^launching/.test(s.status) ? s.status : null];
   return `${c.name} (${parts.filter(Boolean).join("; ")})`;
 }
 const briefs = (cs: ShipCardData[]) => cs.map(brief).join(". ");
@@ -53,7 +54,7 @@ export function typeHub(t: VoyageType): HubProps {
     title: "Small-Ship River Cruises", intro: T.line,
     answer: `Voyages files ${cards.length} river ships: ${briefs(cards)}. On the Nile, a riverboat carries more guests with more cabin choice; the dahabiya is a sailing boat for twelve. Each ship page lists her cabins, deck plan, day by day and every published fare.`,
     faqs: [
-      { q: "Which river cruises does James Wild & Co sell?", a: `${list(cards.map((c) => c.name))}: A&K Sanctuary on the Nile and andBeyond in the Peruvian Amazon.` },
+      { q: "Which river cruises does James Wild & Co sell?", a: `${list(cards.map((c) => c.name))}: A&K Sanctuary on the Nile, and ${list([...new Set(cards.filter((c) => c.waters.includes("amazon")).map((c) => c.eyebrow.split(" · ")[1]).filter(Boolean))])} in the Amazon.` },
       { q: "How long are the river cruises?", a: `${list(live.map((c) => `${c.name} ${SHIPS.find((e) => e.slug === c.slug) ? nightsLabel(SHIPS.find((e) => e.slug === c.slug)!.data) : ""}`))}.` },
       FARES,
     ],
@@ -97,17 +98,19 @@ export function watersHub(w: Waters): HubProps {
   const filed = filedOnly(cards);
   const base = { path: W.path, name: W.name, eyebrow: `Volume 04 · Voyages · ${W.countries.join(", ")}`, question: titleCase(W.question), cards, related: { title: "Which Other Waters?", tiles: [...watersTiles(w), polarTile] } };
   if (w === "amazon") {
-    const e = SHIPS.find((x) => x.waters === "amazon");
+    // By country, in the hub's order (Peru, Ecuador, Brazil), from each ship's own record.
+    const byCountry = W.countries.map((k) => ({ k, cs: cards.filter((c) => shipsInWaters("amazon").find((r) => r.slug === c.slug)?.country.includes(k)) })).filter((x) => x.cs.length);
+    const port = (slug: string) => SHIPS.find((e) => e.slug === slug)?.data.glance?.route ?? null;
     return { ...base,
-      title: "Small-Ship Amazon River Cruises", intro: "River yachts in the Amazon basin: Peru first, with Ecuador and Brazil to follow.",
-      answer: e ? `One small ship is filed so far: ${e.data.answer} ${cards[0]?.price?.label === "From" ? `Cruise fares start at ${cards[0].price.amount} per person, two sharing.` : ""}` : "No Amazon ship is filed yet.",
+      title: "Small-Ship Amazon River Cruises", intro: "Small river ships in the Amazon basin of Peru, Ecuador and Brazil, each filed from her operator's own site.",
+      answer: `Voyages files ${cards.length} small ships in the Amazon. ${byCountry.map(({ k, cs }) => `In ${k}: ${briefs(cs)}.`).join(" ")} The right one depends on the river and the length of trip you want: each ship page lists her cabins, her day by day and her published fares, or says "ask us" where the operator publishes none.`,
       faqs: [
-        { q: "Where do Amazon cruises start?", a: e ? "andBeyond Amazon Explorer boards at Nauta, about two hours by road from Iquitos airport in Peru." : "Ask James." },
-        { q: "Which countries does the Amazon hub cover?", a: "Peru, Ecuador and Brazil. Peru is filed first; ships in Ecuador and Brazil are added as their operators' material is filed." },
+        { q: "Where do Amazon cruises start?", a: byCountry.map(({ k, cs }) => `${k}: ${cs.map((c) => `${c.name}, ${(port(c.slug) ?? "ask us").toLowerCase()}`).join("; ")}`).join(". ") + "." },
+        { q: "Which countries does the Amazon hub cover?", a: `Peru, Ecuador and Brazil: ${byCountry.map(({ k, cs }) => `${cs.length} in ${k}`).join(", ")} so far.` },
         FARES,
       ],
-      adding: "More Amazon ships, in Peru, Ecuador and Brazil, are added as their photographs and operators' material are filed.",
-      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to Peru, then sails it day by day from Nauta." } };
+      adding: "More Amazon ships are added as their photographs and operators' material are filed.",
+      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to the Amazon, then sails it day by day." } };
   }
   if (w === "galapagos") {
     const yachts = cards.filter((c) => /^Yacht/.test(c.eyebrow)), cats = cards.filter((c) => /^Catamaran/.test(c.eyebrow));

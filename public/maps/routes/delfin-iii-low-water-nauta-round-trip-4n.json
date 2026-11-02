@@ -1,0 +1,109 @@
+{
+ "id": "delfin-iii-low-water-nauta-round-trip-4n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "4-night low water aboard Delfin III",
+ "subtitle": "4 nights · Low water, Nauta round trip · Delfin III",
+ "days": {
+  "1": "Arrive",
+  "2": "Yanayacu Pucate",
+  "3": "Nauta Caño",
+  "4": "Yarapa River",
+  "5": "Disembark"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos to Nauta, Marañón River",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Amazon Natural Park, Yanayacu Pucate",
+   "lat": -4.5,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.8,
+     -4.5
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Fundo Casual, Nauta Caño",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -4.5
+    ],
+    [
+     -73.5781,
+     -4.5076
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "San José de Paranapura, Yarapa River",
+   "lat": -4.62,
+   "lng": -73.62,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.62,
+     -4.62
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Nauta to Iquitos",
+   "lat": -3.7437,
+   "lng": -73.2516,
+   "mode": "sea",
+   "path": [
+    [
+     -73.62,
+     -4.62
+    ],
+    [
+     -73.2516,
+     -3.7437
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

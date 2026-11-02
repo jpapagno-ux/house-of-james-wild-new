@@ -1,0 +1,556 @@
+{
+ "slug": "delfin-iii",
+ "name": "Delfin III",
+ "brandLine": "Delfín Amazon Cruises",
+ "operator": "Delfín Amazon Cruises",
+ "type": "riverboat",
+ "waters": "Marañón, Ucayali and Amazon rivers",
+ "country": "Peru",
+ "status": "sailing",
+ "seo": {
+  "title": "Delfin III Amazon Cruise, Peru | James Wild & Co",
+  "description": "Delfin III, Delfin Amazon Cruises' largest boat: 22 suites, up to 43 guests, built in Iquitos. 3 or 4 nights from Nauta into Pacaya-Samiria.",
+  "keywords": [
+   "Delfin III",
+   "Delfin Amazon Cruises",
+   "Peru Amazon cruise",
+   "Pacaya-Samiria",
+   "Relais & Chateaux Amazon"
+  ]
+ },
+ "tagline": "Built in the Iquitos docks, with a bathtub in the bow.",
+ "answer": "Delfin III is the largest boat of Delfín Amazon Cruises, a Relais & Châteaux member in Peru. She has 22 suites in four categories for up to 43 guests and sails three or four nights round trip from Nauta into the Pacaya-Samiria National Reserve, with high and low water routes. Children 7 and over sail.",
+ "facts": [
+  [
+   "Suites",
+   "22 in four categories (Owner's, Corner, Upper, Suite)"
+  ],
+  [
+   "Guests",
+   "Up to 43 (departure list) or 44 (home page)"
+  ],
+  [
+   "Built",
+   "In the Iquitos docks by local artisans"
+  ],
+  [
+   "Route",
+   "Nauta round trip, 3 or 4 nights"
+  ],
+  [
+   "On board",
+   "Lounge, gym, dining room, sun deck and pool, boutique, spa"
+  ],
+  [
+   "Children",
+   "7 and over"
+  ]
+ ],
+ "overview": [
+  "Delfin III is the newest and largest of the Delfín fleet, built in Iquitos by local artisans. Delfín says it has led trips into Pacaya-Samiria for nearly two decades and is a Relais & Châteaux member.",
+  "The Owner's Suite fills the bow: about 600 sq ft with 180-degree windows, a lounge and a soaking tub. Corner Suites on the main deck are about 253 sq ft with 90-degree windows and include a 30-minute spa treatment and laundry. Upper Suites on the second deck and Suites on the main deck are about 237 sq ft."
+ ],
+ "why": [
+  "Delfín publishes full rates for 2026 and 2027 by suite, and builds its boats in Iquitos. Delfin III includes juices, soft drinks, select alcohol, domestic beer and house wine at meals."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/hero",
+  "alt": "Owner's Suite at the bow of Delfin III",
+  "credit": "Delfín Amazon Cruises"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g1",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g2",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g3",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g4",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g5",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g6",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g7",
+   "alt": "Common area on board Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g8",
+   "alt": "Owner's Suite on Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g9",
+   "alt": "Owner's Suite on Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g10",
+   "alt": "Corner Suite on Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g11",
+   "alt": "Suite on Delfin III",
+   "credit": "Delfín Amazon Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/g12",
+   "alt": "Guests kayaking and swimming on a Delfin Amazon Cruises excursion",
+   "credit": "Delfín Amazon Cruises"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Owner's Suite",
+   "count": 1,
+   "size": "about 600 sq ft",
+   "beds": "King",
+   "deck": "Bow",
+   "features": [
+    "180-degree windows",
+    "Private lounge",
+    "Soaking tub"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/cabin-owners",
+    "alt": "Owner's Suite on Delfin III",
+    "credit": "Delfín Amazon Cruises"
+   }
+  },
+  {
+   "type": "Corner Suite",
+   "count": null,
+   "size": "about 253 sq ft (23.5 sq m)",
+   "beds": "King",
+   "deck": "Main deck, forward",
+   "features": [
+    "90-degree windows",
+    "30-minute spa treatment per guest",
+    "Laundry included"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/cabin-corner",
+    "alt": "Corner Suite on Delfin III",
+    "credit": "Delfín Amazon Cruises"
+   }
+  },
+  {
+   "type": "Upper Suite",
+   "count": null,
+   "size": "237 sq ft",
+   "beds": null,
+   "deck": "Second deck",
+   "features": [
+    "Floor-to-ceiling windows",
+    "Seating area"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/cabin-upper",
+    "alt": "Upper Suite on Delfin III",
+    "credit": "Delfín Amazon Cruises"
+   }
+  },
+  {
+   "type": "Suite",
+   "count": null,
+   "size": "237 sq ft (same layout as Upper)",
+   "beds": null,
+   "deck": "Main deck",
+   "features": [
+    "Panoramic windows"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/delfin-iii/cabin-suite",
+    "alt": "Suite on Delfin III",
+    "credit": "Delfín Amazon Cruises"
+   }
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "3-night high water",
+   "nights": 3,
+   "direction": "High water, Nauta round trip",
+   "season": "High water (November to June)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Arrive",
+     "place": "Iquitos to Nauta",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Arrive Iquitos, embark and orientation, then a night safari."
+    },
+    {
+     "day": 2,
+     "title": "Shaman ceremony",
+     "place": "Amazon Natural Park, Yanayacu Pucate",
+     "lat": -4.5,
+     "lng": -73.8,
+     "summary": "Morning shaman ceremony at Amazon Natural Park; afternoon kayaking and piranha fishing on the Yanayacu Pucate."
+    },
+    {
+     "day": 3,
+     "title": "Confluence",
+     "place": "Fundo Casual, Amazon confluence",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Trail walk at Fundo Casual, then a community visit at the meeting of the rivers."
+    },
+    {
+     "day": 4,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Disembark, with a stop at a tropical fish aquarium and a melipona bee project."
+    }
+   ]
+  },
+  {
+   "name": "4-night high water",
+   "nights": 4,
+   "direction": "High water, Nauta round trip",
+   "season": "High water (November to June)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Arrive",
+     "place": "Iquitos to Nauta",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Arrive Iquitos, embark and orientation; documentary or film night."
+    },
+    {
+     "day": 2,
+     "title": "Dorado River",
+     "place": "Yanallpa and Dorado rivers",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "Skiff on the Yanallpa River; kayaking and a night safari on the Dorado River."
+    },
+    {
+     "day": 3,
+     "title": "Pacaya River",
+     "place": "Pacaya River",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "A full day on the Pacaya River, with swimming near pink river dolphins."
+    },
+    {
+     "day": 4,
+     "title": "Yarapa River",
+     "place": "Yarapa River, Amazon confluence",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "Skiff on the Yarapa, a community visit and the confluence; afternoon trail walk at Fundo Casual."
+    },
+    {
+     "day": 5,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Disembark, with the tropical fish aquarium and melipona bees."
+    }
+   ]
+  },
+  {
+   "name": "3-night low water",
+   "nights": 3,
+   "direction": "Low water, Nauta round trip",
+   "season": "Low water (June to November)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Arrive",
+     "place": "Iquitos to Nauta, Marañón River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Arrive Iquitos, embark and head onto the Marañón."
+    },
+    {
+     "day": 2,
+     "title": "Yanayacu Pucate",
+     "place": "Amazon Natural Park, Yanayacu Pucate",
+     "lat": -4.5,
+     "lng": -73.8,
+     "summary": "Exploration and shaman ceremony; afternoon kayaking and swimming near pink river dolphins."
+    },
+    {
+     "day": 3,
+     "title": "Nauta Caño",
+     "place": "Nauta Caño, Fundo Casual",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Piranha fishing and a community visit; afternoon trail walk and the Amazon confluence."
+    },
+    {
+     "day": 4,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Disembark, with the tropical fish aquarium and melipona bees."
+    }
+   ]
+  },
+  {
+   "name": "4-night low water",
+   "nights": 4,
+   "direction": "Low water, Nauta round trip",
+   "season": "Low water (June to November)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Arrive",
+     "place": "Iquitos to Nauta, Marañón River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Arrive Iquitos, embark and a skiff on the Marañón."
+    },
+    {
+     "day": 2,
+     "title": "Yanayacu Pucate",
+     "place": "Amazon Natural Park, Yanayacu Pucate",
+     "lat": -4.5,
+     "lng": -73.8,
+     "summary": "Shaman ceremony, then an Amazon beach and swimming near pink river dolphins."
+    },
+    {
+     "day": 3,
+     "title": "Nauta Caño",
+     "place": "Fundo Casual, Nauta Caño",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Trail walk; afternoon piranha fishing and a night safari."
+    },
+    {
+     "day": 4,
+     "title": "Yarapa River",
+     "place": "San José de Paranapura, Yarapa River",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "Community visit at San José de Paranapura; afternoon skiff on the Yarapa."
+    },
+    {
+     "day": 5,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Disembark, with the tropical fish aquarium and melipona bees."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2026-01-01",
+   "dateTo": "2026-12-14",
+   "season": "2026 regular",
+   "itinerary": "3-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 5400,
+    "Corner Suite": 4700,
+    "Upper Suite": 4400,
+    "Suite": 4200
+   }
+  },
+  {
+   "date": "2026-01-01",
+   "dateTo": "2026-12-14",
+   "season": "2026 regular",
+   "itinerary": "4-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 7200,
+    "Corner Suite": 6200,
+    "Upper Suite": 5800,
+    "Suite": 5600
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "dateTo": "2026-12-31",
+   "season": "2026 festive",
+   "itinerary": "3-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 5600,
+    "Corner Suite": 4900,
+    "Upper Suite": 4600,
+    "Suite": 4400
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "dateTo": "2026-12-31",
+   "season": "2026 festive",
+   "itinerary": "4-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 7400,
+    "Corner Suite": 6400,
+    "Upper Suite": 6000,
+    "Suite": 5800
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-12-14",
+   "season": "2027 regular",
+   "itinerary": "3-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 6300,
+    "Corner Suite": 5500,
+    "Upper Suite": 5200,
+    "Suite": 5000
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-12-14",
+   "season": "2027 regular",
+   "itinerary": "4-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 8400,
+    "Corner Suite": 7200,
+    "Upper Suite": 6800,
+    "Suite": 6600
+   }
+  },
+  {
+   "date": "2027-12-15",
+   "dateTo": "2027-12-31",
+   "season": "2027 festive",
+   "itinerary": "3-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 7200,
+    "Corner Suite": 6200,
+    "Upper Suite": 5900,
+    "Suite": 5600
+   }
+  },
+  {
+   "date": "2027-12-15",
+   "dateTo": "2027-12-31",
+   "season": "2027 festive",
+   "itinerary": "4-night",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Owner's Suite": 9600,
+    "Corner Suite": 8300,
+    "Upper Suite": 7800,
+    "Suite": 7500
+   }
+  }
+ ],
+ "pricesNote": "Per person sharing, USD, as published by Delfín Amazon Cruises. Only the lowest published fare is shown; the fare for each suite is confirmed when you ask. Single supplement: 50% on Suites and Upper Suites, 75% on Owner's and Corner Suites. Deposit US$750 per person; balance 90 days before sailing.",
+ "inclusions": [
+  "All meals on board (box lunch and dinner on arrival day, breakfast and box lunch on departure day)",
+  "All excursions and equipment, including rubber boots and rain ponchos",
+  "Transfers between Iquitos airport and Nauta on the recommended LATAM flights",
+  "Entrance fee to the Pacaya-Samiria National Reserve",
+  "Juices, soft drinks, coffee, tea, water, select alcoholic drinks and domestic beer; house wine with lunch and dinner"
+ ],
+ "exclusions": [
+  "Flights to and from Iquitos",
+  "Medical emergencies and evacuation",
+  "Gratuities (suggested US$250 for 3 nights, US$320 for 4, US$500 for 7)",
+  "Other transport",
+  "Additional bar, minibar and boutique purchases"
+ ],
+ "children": "Minimum age 7. Children 11 and under get 20% off the adult rate.",
+ "faqs": [
+  [
+   "Where does Delfin III sail?",
+   "Round trip from Nauta, near Iquitos, into the Pacaya-Samiria National Reserve in Peru, on three or four night routes that change with high and low water."
+  ],
+  [
+   "How much does it cost?",
+   "The lowest published fare is under Dates and rates; James confirms the fare for your suite and dates. Festive sailings from 15 December cost more."
+  ],
+  [
+   "What is the Owner's Suite?",
+   "About 600 sq ft at the bow, with 180-degree windows, a private lounge and a soaking tub."
+  ],
+  [
+   "Can children come?",
+   "From age 7. Children 11 and under get 20% off."
+  ],
+  [
+   "What is included?",
+   "Meals, excursions and gear, reserve fees, airport transfers on the recommended flights and, on Delfin III, soft drinks, select alcohol and house wine at meals."
+  ],
+  [
+   "Is there a single supplement?",
+   "Yes: 50% on Suites and Upper Suites, waived for up to two solo guests per departure outside the holidays, and 75% on Owner's and Corner Suites."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "The bow suite with a tub is the one to ask for."
+  },
+  {
+   "who": "Families with children 7 and over",
+   "line": "A 20% child rate to age 11."
+  },
+  {
+   "who": "Solo travellers",
+   "line": "Two waived single supplements per sailing."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-01",
+  "secondary": [
+   "PATH-04"
+  ]
+ },
+ "sources": [
+  "https://www.delfinamazoncruises.com/our-vessels-delfin-iii/",
+  "https://www.delfinamazoncruises.com/departure-list/",
+  "https://www.delfinamazoncruises.com/"
+ ],
+ "film": null,
+ "rateBasis": "per-cruise",
+ "glance": {
+  "guests": "43 or 44",
+  "route": "Nauta round trip"
+ }
+}

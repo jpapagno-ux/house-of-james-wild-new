@@ -60,6 +60,16 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   { slug: "beyond-amazon-explorer", name: "andBeyond Amazon Explorer", operator: "andBeyond", kind: "river-yacht", types: ["river"], waters: ["amazon"], country: ["Peru"],
     pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true, staySlug: "beyond-amazon-explorer" },
 
+  // More Amazon ships (filed 2 Nov 2026 from each operator's site). MV Premium is Brazil's one ship for now.
+  { slug: "aria-amazon", name: "Aria Amazon", operator: "Aqua Expeditions", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Peru"],
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+  { slug: "delfin-iii", name: "Delfin III", operator: "Delfín Amazon Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Peru"],
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+  { slug: "anakonda-amazon-cruise", name: "Anakonda", operator: "Anakonda Amazon Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Ecuador"],
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+  { slug: "amazon-clipper-premium", name: "MV Premium", operator: "Amazon Clipper Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Brazil"],
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+
   // The Galapagos (filed 1 Nov 2026). Ecoventura: Off the Map because Ecoventura calls route B "remote and
   // pristine"; whole-yacht charter published. Galaxy Cruises: charters published; no Off the Map.
   { slug: "ecoventura-origin-yacht", name: "Origin", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
@@ -81,7 +91,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
-  river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and a river yacht in the Peruvian Amazon." },
+  river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
   sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and a wooden schooner in Indonesia." },
   expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos; polar ships sail with Polar Crossings." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },

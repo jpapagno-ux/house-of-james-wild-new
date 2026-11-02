@@ -1,0 +1,398 @@
+{
+ "slug": "aria-amazon",
+ "name": "Aria Amazon",
+ "brandLine": "Aqua Expeditions",
+ "operator": "Aqua Expeditions",
+ "type": "riverboat",
+ "waters": "Marañón, Ucayali and Amazon rivers",
+ "country": "Peru",
+ "status": "sailing",
+ "seo": {
+  "title": "Aria Amazon Cruise from Nauta, Peru | James Wild & Co",
+  "description": "Aria Amazon by Aqua Expeditions: 16 suites, 32 guests, 26 crew. Three, four or seven nights from Nauta into Peru's Pacaya-Samiria reserve.",
+  "keywords": [
+   "Aria Amazon",
+   "Aqua Expeditions Amazon",
+   "Peru Amazon cruise",
+   "Pacaya-Samiria cruise",
+   "Nauta river cruise"
+  ]
+ },
+ "tagline": "Sixteen suites with floor-to-ceiling glass, three decks, and the Marañón outside.",
+ "answer": "Aria Amazon is Aqua Expeditions' 16-suite riverboat in the Peruvian Amazon. She carries 32 guests with 26 crew and sails three, four or seven nights round trip from Nauta, near Iquitos, on the Marañón and Ucayali rivers into the Pacaya-Samiria National Reserve. She suits couples and families who want a short, well-run river trip.",
+ "facts": [
+  [
+   "Suites",
+   "16 design suites, 4 interconnecting"
+  ],
+  [
+   "Guests",
+   "32"
+  ],
+  [
+   "Crew",
+   "26"
+  ],
+  [
+   "Decks",
+   "3"
+  ],
+  [
+   "Designer",
+   "Jordi Puig"
+  ],
+  [
+   "Route",
+   "Nauta round trip, 3, 4 or 7 nights"
+  ],
+  [
+   "Length",
+   "Ask us"
+  ],
+  [
+   "Children",
+   "Ask us"
+  ]
+ ],
+ "overview": [
+  "Aria Amazon was designed by Jordi Puig and custom built for the Peruvian Amazon. She is the sister ship to Aqua Nera and carries 32 guests in 16 river-facing suites across three decks, with 26 crew.",
+  "Every suite is the same design suite for two, with a king or twin beds, a daybed by floor-to-ceiling windows and a walk-in rain shower. Suites 103 and 105, and 104 and 106, connect. The top deck holds the shared spaces, with views all round. Excursions run from the first deck."
+ ],
+ "why": [
+  "One suite type means no upsell and no bad cabin."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/hero",
+  "alt": "Aria Amazon river cruise ship on the Amazon in Peru",
+  "credit": "Aqua Expeditions"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g2",
+   "alt": "Social spaces on board Aria Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g3",
+   "alt": "Shared space on board Aria Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g4",
+   "alt": "Interior space on board Aria Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g5",
+   "alt": "Aria Amazon suites and lounge areas",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g7",
+   "alt": "Dining on board Aria Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g8",
+   "alt": "Kayaking on an Aqua Expeditions Amazon trip in Peru",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g9",
+   "alt": "Canoeing on an Aqua Expeditions Amazon trip in Peru",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g10",
+   "alt": "Fishing on an Aqua Expeditions Amazon trip in Peru",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g11",
+   "alt": "Design Suite with twin beds on Aria Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/g12",
+   "alt": "Interconnecting Design Suites on Aria Amazon",
+   "credit": "Aqua Expeditions"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Design Suite",
+   "count": 16,
+   "size": null,
+   "beds": "King or twin",
+   "deck": "First and second decks (8 each)",
+   "features": [
+    "Floor-to-ceiling panoramic windows",
+    "Daybed lounge area",
+    "Walk-in rain shower",
+    "Air conditioning",
+    "Safe",
+    "4 interconnecting (103 and 105, 104 and 106)"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/cabin-design",
+    "alt": "Design Suite on Aria Amazon with floor to ceiling windows",
+    "credit": "Aqua Expeditions"
+   }
+  }
+ ],
+ "deckPlans": [
+  {
+   "deck": "Observation deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/deck-observation",
+    "alt": "Aria Amazon observation deck plan",
+    "credit": "Aqua Expeditions"
+   },
+   "cabins": []
+  },
+  {
+   "deck": "Second deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/deck-second",
+    "alt": "Aria Amazon second deck plan with Design Suites",
+    "credit": "Aqua Expeditions"
+   },
+   "cabins": [
+    "Design Suite"
+   ]
+  },
+  {
+   "deck": "First deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aria-amazon/deck-first",
+    "alt": "Aria Amazon first deck plan with Design Suites",
+    "credit": "Aqua Expeditions"
+   },
+   "cabins": [
+    "Design Suite"
+   ]
+  }
+ ],
+ "itineraries": [
+  {
+   "name": "3-night Amazon Discovery Cruise",
+   "nights": 3,
+   "direction": "Nauta round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embarkation",
+     "place": "Iquitos to Nauta, Marañón River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Iquitos to Nauta, board, and out onto the Marañón River."
+    },
+    {
+     "day": 2,
+     "title": "Yacapana Islands",
+     "place": "Amazon River, Yacapana Islands, Nauta Caño",
+     "lat": -4.5,
+     "lng": -73.8,
+     "summary": "The Amazon River, the Yacapana Islands and the Nauta Caño River."
+    },
+    {
+     "day": 3,
+     "title": "Yanayacu Pucate",
+     "place": "Yanayacu Pucate River, Marañón River",
+     "lat": -4.5,
+     "lng": -73.8,
+     "summary": "The Yanayacu Pucate River, a village visit and jungle walks."
+    },
+    {
+     "day": 4,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Nauta town and the Manatee Rescue Center, then transfer to the airport."
+    }
+   ]
+  },
+  {
+   "name": "4-night Amazon Explorer Cruise",
+   "nights": 4,
+   "direction": "Nauta round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embarkation",
+     "place": "Iquitos to Nauta, Marañón River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "Iquitos to Nauta, board, and out onto the Marañón River."
+    },
+    {
+     "day": 2,
+     "title": "Dorado Lake",
+     "place": "Ucayali River, Yanallpa Creek, Dorado Lake",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "Up the Ucayali to Yanallpa Creek and Dorado Lake."
+    },
+    {
+     "day": 3,
+     "title": "Puinahua",
+     "place": "Ucayali, Puinahua and Zapote rivers",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "The Ucayali, Puinahua and Zapote rivers."
+    },
+    {
+     "day": 4,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Ucayali and Yarapa rivers",
+     "lat": -4.62,
+     "lng": -73.62,
+     "summary": "Clavero Lake, then the Ucayali and Yarapa rivers."
+    },
+    {
+     "day": 5,
+     "title": "Disembark",
+     "place": "Nauta to Iquitos",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "Nauta town and the Manatee Rescue Centre, then transfer to the airport."
+    }
+   ]
+  },
+  {
+   "name": "7-night Amazon Expeditions Cruise",
+   "nights": 7,
+   "direction": "Nauta round trip",
+   "days": [],
+   "note": "Day-by-day not fetched; Aqua sells it with 5% savings included."
+  }
+ ],
+ "departures": [
+  {
+   "date": "2026-11-13",
+   "dateTo": "2026-11-16",
+   "itinerary": "3-night Amazon Discovery Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 3860
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "dateTo": "2026-11-20",
+   "itinerary": "7-night Amazon Expeditions Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 8580
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "dateTo": "2026-11-20",
+   "itinerary": "4-night Amazon Explorer Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 5150
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "dateTo": "2026-11-23",
+   "itinerary": "3-night Amazon Discovery Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 3860
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "dateTo": "2026-11-30",
+   "itinerary": "3-night Amazon Discovery Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 3860
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "dateTo": "2026-12-04",
+   "itinerary": "7-night Amazon Expeditions Cruise",
+   "direction": "Nauta round trip",
+   "status": null,
+   "prices": {
+    "Design Suite (from)": 8580
+   }
+  }
+ ],
+ "pricesNote": "From prices per adult, USD, as published by Aqua Expeditions. Boarding at Nauta in the afternoon (4:30pm), disembarking at 9:00am.",
+ "inclusions": [
+  "small-group excursions with expert guides",
+  "Entrance fee to the Pacaya-Samiria Reserve",
+  "High-speed satellite internet",
+  "Laundry service"
+ ],
+ "children": "",
+ "faqs": [
+  [
+   "Where does Aria Amazon sail?",
+   "Round trip from Nauta, about two hours from Iquitos, on the Marañón, Ucayali and Amazon rivers in and around the Pacaya-Samiria National Reserve in Peru."
+  ],
+  [
+   "How long are the cruises?",
+   "Three, four or seven nights. The 3-night Discovery works the Marañón side; the 4-night Explorer goes up the Ucayali to Dorado and Clavero lakes."
+  ],
+  [
+   "How much does it cost?",
+   "Aqua Expeditions publishes fares sailing by sailing. Those still to sail are under Dates and rates; for later dates, ask us."
+  ],
+  [
+   "What are the suites like?",
+   "All 16 are the same design suite for two, with floor-to-ceiling windows, a daybed, a walk-in rain shower and king or twin beds. Four connect in pairs."
+  ],
+  [
+   "How many guests?",
+   "Up to 32, with 26 crew."
+  ],
+  [
+   "How do I get there?",
+   "Fly Lima to Iquitos; Aqua meets guests at its airport counter and transfers them to Nauta for a 4:30pm boarding."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "One suite type, all with the same window."
+  },
+  {
+   "who": "Families",
+   "line": "Two pairs of connecting suites."
+  },
+  {
+   "who": "Short trips",
+   "line": "Three nights is enough to see the reserve's edge."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-01",
+  "secondary": [
+   "PATH-04"
+  ]
+ },
+ "sources": [
+  "https://www.aquaexpeditions.com/cruise-ships/aria-amazon",
+  "https://www.aquaexpeditions.com/destinations/amazon-river-cruise",
+  "https://book.aquaexpeditions.com/events/6922",
+  "https://book.aquaexpeditions.com/events/6974"
+ ],
+ "film": null,
+ "rateBasis": "per-cruise",
+ "glance": {
+  "route": "Nauta round trip"
+ }
+}

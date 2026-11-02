@@ -1,0 +1,276 @@
+{
+ "slug": "amazon-clipper-premium",
+ "name": "MV Premium",
+ "brandLine": "Amazon Clipper Cruises",
+ "operator": "Amazon Clipper Cruises",
+ "type": "riverboat",
+ "waters": "Rio Negro and Amazon River",
+ "country": "Brazil",
+ "status": "sailing",
+ "seo": {
+  "title": "MV Premium, Amazon Clipper Cruises, Manaus | James Wild & Co",
+  "description": "MV Premium by Amazon Clipper: 16 outside cabins for 32 guests, sailing two to five nights from Manaus on the Rio Negro and Amazon, through Anavilhanas.",
+  "keywords": [
+   "Amazon Clipper",
+   "MV Premium",
+   "Rio Negro cruise",
+   "Manaus Amazon cruise",
+   "Anavilhanas"
+  ]
+ },
+ "tagline": "Sixteen outside cabins from Manaus, up the Rio Negro.",
+ "answer": "MV Premium is Amazon Clipper Cruises' largest boat, sailing from Manaus in the Brazilian Amazon. She carries 32 guests in 16 outside cabins over four decks. Cruises run two nights on the Amazon River, three nights on the Rio Negro through Anavilhanas National Park, or five nights combining both. Amazon Clipper publishes no fares; ask us for a quote.",
+ "facts": [
+  [
+   "Cabins",
+   "16 outside cabins (14 to 15.75 sq m), 2 with balcony, 2 triple options"
+  ],
+  [
+   "Guests",
+   "32"
+  ],
+  [
+   "Decks",
+   "4"
+  ],
+  [
+   "Port",
+   "Manaus"
+  ],
+  [
+   "Routes",
+   "2, 3 or 5 nights"
+  ]
+ ],
+ "overview": [
+  "Amazon Clipper says it pioneered boat cruises from Manaus. MV Premium is its comfort boat: 16 outside cabins with two lower beds or a queen, private bathroom with hot shower, air conditioning and a safe; two on the restaurant deck have balconies.",
+  "Meals are buffet in an air-conditioned dining room. There is a covered leisure deck, a lecture room and a sun deck."
+ ],
+ "why": [
+  "The simplest way to put the Rio Negro and Anavilhanas into a Brazil trip, with short sailings from Manaus."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/hero",
+  "alt": "MV Premium, Amazon Clipper Cruises, on the river near Manaus",
+  "credit": "Amazon Clipper"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g1",
+   "alt": "MV Premium on the river in the Brazilian Amazon",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g2",
+   "alt": "MV Premium cruising in the Brazilian Amazon",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g3",
+   "alt": "Covered leisure deck on MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g4",
+   "alt": "Leisure deck on MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g5",
+   "alt": "Lounge on board MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g6",
+   "alt": "Sun deck on MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g7",
+   "alt": "Cabin on MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g8",
+   "alt": "Twin cabin on MV Premium",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g9",
+   "alt": "Canoe tour in the flooded forest on an Amazon Clipper cruise",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g10",
+   "alt": "Canoe tour at sunset on the Rio Negro with Amazon Clipper",
+   "credit": "Amazon Clipper"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/g11",
+   "alt": "Catwalk through the flooded forest on an Amazon Clipper cruise",
+   "credit": "Amazon Clipper"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Outside Cabin",
+   "count": 16,
+   "size": "14 to 15.75 sq m",
+   "beds": "Two lower beds or a queen",
+   "deck": "Main deck (8) and restaurant deck (8)",
+   "features": [
+    "Hot shower",
+    "Air conditioning",
+    "Safe",
+    "2 with private balcony",
+    "2 triple options on main deck"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/cabin-outside",
+    "alt": "Outside cabin with twin beds on MV Premium",
+    "credit": "Amazon Clipper"
+   }
+  }
+ ],
+ "deckPlans": [
+  {
+   "deck": "Main deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/deck-main",
+    "alt": "MV Premium main deck plan with 8 cabins",
+    "credit": "Amazon Clipper"
+   },
+   "cabins": [
+    "Outside Cabin"
+   ]
+  },
+  {
+   "deck": "Restaurant deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/deck-restaurant",
+    "alt": "MV Premium restaurant deck plan with restaurant and 8 cabins",
+    "credit": "Amazon Clipper"
+   },
+   "cabins": [
+    "Outside Cabin"
+   ]
+  },
+  {
+   "deck": "Leisure deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/deck-leisure",
+    "alt": "MV Premium leisure deck plan with bar and lecture room",
+    "credit": "Amazon Clipper"
+   },
+   "cabins": []
+  },
+  {
+   "deck": "Sun deck",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amazon-clipper-premium/deck-sun",
+    "alt": "MV Premium sun deck plan",
+    "credit": "Amazon Clipper"
+   },
+   "cabins": []
+  }
+ ],
+ "itineraries": [
+  {
+   "name": "3-night Negro River Cruise",
+   "nights": 3,
+   "direction": "Manaus round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "Boarding",
+     "place": "Manaus, Rio Negro",
+     "lat": -3.119,
+     "lng": -60.0217,
+     "summary": "Meet at 14:00, board and head up the Rio Negro; an evening canoe into small creeks for caimans and frogs."
+    },
+    {
+     "day": 2,
+     "title": "Anavilhanas",
+     "place": "Anavilhanas National Park",
+     "lat": -2.6208,
+     "lng": -60.9436,
+     "summary": "Early canoe for parrots and toucans, a jungle walk and a swim, then the channels of Anavilhanas National Park."
+    },
+    {
+     "day": 3,
+     "title": "Community",
+     "place": "Rio Negro",
+     "lat": -2.6208,
+     "lng": -60.9436,
+     "summary": "Piranha fishing, then a visit to a local community to see Amazon fruits and manioc preparation."
+    }
+   ],
+   "note": "Day 4 not captured from the fetched page."
+  },
+  {
+   "name": "2-night Amazon River Cruise",
+   "nights": 2,
+   "direction": "Manaus round trip",
+   "days": []
+  },
+  {
+   "name": "5-night Amazon & Negro River Cruise",
+   "nights": 5,
+   "direction": "Manaus round trip",
+   "days": []
+  }
+ ],
+ "departures": [],
+ "pricesNote": "Amazon Clipper Cruises publishes no dates or fares on its own site; ask us for a quote.",
+ "inclusions": [],
+ "children": "",
+ "faqs": [
+  [
+   "Where does MV Premium sail?",
+   "From Manaus, on the Rio Negro and the Amazon River in Brazil."
+  ],
+  [
+   "How long are the cruises?",
+   "Two nights on the Amazon, three on the Rio Negro, or five combining both."
+  ],
+  [
+   "How many guests?",
+   "32 in 16 outside cabins."
+  ],
+  [
+   "Do cabins have balconies?",
+   "Two of the sixteen do."
+  ],
+  [
+   "How much is it?",
+   "Amazon Clipper does not publish prices on its site; ask us for a quote."
+  ],
+  [
+   "What is Anavilhanas?",
+   "A national park of river islands on the Rio Negro that the 3-night cruise runs through by boat and canoe."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Brazil itineraries",
+   "line": "A short add-on from Manaus."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-01",
+  "secondary": [
+   "PATH-04"
+  ]
+ },
+ "sources": [
+  "https://www.amazonclipper.com.br/",
+  "https://www.amazonclipper.com.br/our-ships/mv-premium/",
+  "https://www.amazonclipper.com.br/our-cruises/negro-river-cruise/"
+ ],
+ "film": null,
+ "rateBasis": "per-cruise",
+ "glance": {
+  "route": "Manaus round trip"
+ },
+ "datesPublished": false
+}

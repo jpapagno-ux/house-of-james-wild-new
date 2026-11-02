@@ -36,13 +36,13 @@ const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} a
 
 export const metadata = buildMetadata({
   title: "Small-Ship Voyages and Sailing Yachts",
-  description: `${cards.length} small ships and sailing yachts filed by James Wild & Co: Nile riverboats and a dahabiya, Galápagos yachts, the Peruvian Amazon and phinisis in Indonesia.`,
+  description: `${cards.length} small ships and sailing yachts filed by James Wild & Co: Nile riverboats and a dahabiya, Galápagos yachts, Amazon river ships and phinisis in Indonesia.`,
   path: PATH,
   image: { url: FILMS.aliikai.poster, alt: FILMS.aliikai.alt },
 });
 
 const FAQS = [
-  { q: "What kind of ships does James Wild & Co sell?", a: `Small ships and sailing yachts, never the big ones. Voyages files ${cards.length} today: A&K Sanctuary riverboats and a dahabiya on the Nile, andBeyond's Amazon Explorer in the Peruvian Amazon, Ecoventura and Galaxy Cruises yachts in the Galápagos, and phinisis in Indonesia, Aliikai among them.` },
+  { q: "What kind of ships does James Wild & Co sell?", a: `Small ships and sailing yachts, never the big ones. Voyages files ${cards.length} today: A&K Sanctuary riverboats and a dahabiya on the Nile, Amazon river ships in Peru, Ecuador and Brazil, Ecoventura and Galaxy Cruises yachts in the Galápagos, and phinisis in Indonesia, Aliikai among them.` },
   { q: "Can we charter a whole ship for our group?", a: `Yes. ${list(charterNames)} can be taken private for one party. Aliikai is ${usd(aliikai.charter!.from!)} a night plus 11% tax for up to 15 guests; the others are priced on enquiry, and James confirms every rate live.` },
   { q: "Do you plan voyages to Antarctica and the Arctic?", a: "Yes, through Polar Crossings, James's polar platform at polarcrossings.com. The polar ships are planned there, not in Voyages." },
   { q: "Has James sailed these ships himself?", a: "He sailed Raja Ampat aboard Aliikai in November 2024, and her page says so. The other ships are filed from their operators' own material, and their pages make no claim that he has sailed them." },

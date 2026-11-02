@@ -75,6 +75,8 @@ export type ShipRecord = {
   quote?: string;
   /** Glance-bar wording where the facts would run long (Aliikai's guests line). */
   glance?: Partial<Record<"route" | "guests" | "ages", string>>;
+  /** false when the operator publishes no dates or fares at all (MV Premium): the panel says "Ask us". */
+  datesPublished?: boolean;
   /** The operator publishes one schedule for a fleet (Ecoventura): Dates & rates says so. */
   fleetSchedule?: string;
   /** Status line under "Why we chose her", in place of the operator line. */
@@ -156,7 +158,8 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
 export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
-  if (!s.departures.length) return { kind: "tba", label: "Dates", amount: "To be announced", basis: "new dates to be announced, ask James" };
+  // No published (or no remaining) dates or fares: "Ask us", never an invented "from".
+  if (!s.departures.length) return { kind: "tba", label: "Rates", amount: "Ask us", basis: "no published dates or fares to show; ask James" };
   const f = fromPrice(s);
   if (f) return { kind: "cruise", label: "From", amount: `US$${f.toLocaleString("en-US")}`, basis: "per person, cruise only, two sharing" };
   const j = journeyFrom(s);

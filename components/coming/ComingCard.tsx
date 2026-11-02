@@ -6,7 +6,7 @@ import { type Coming, statusLine, sourceHost } from "@/lib/content/whats-coming"
 // and the house's position (pencilled until James has been). No photo when
 // the brand hasn't given one; never a borrowed one.
 export default function ComingCard({ c, compact = false }: { c: Coming; compact?: boolean }) {
-  const plan = `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name} — hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`;
+  const plan = `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`;
   const host = sourceHost(c.source);
   return (
     <article className="bg-paper border ledger-border h-full flex flex-col" aria-labelledby={`coming-${c.slug}`}>

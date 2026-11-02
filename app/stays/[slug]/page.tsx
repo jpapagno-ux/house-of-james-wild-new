@@ -93,6 +93,7 @@ import WhoItSuits from "@/components/exceptional-few/WhoItSuits";
 import WorthAnotherNight from "@/components/exceptional-few/WorthAnotherNight";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
 import Signature from "@/components/record/Signature";
+import ComingBanner from "@/components/coming/ComingBanner";
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
 // breadcrumbs › overview (quote, in short, facts, the full entry) › gallery ›
@@ -246,6 +247,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
         <RecordNav items={nav} cta={priced ? "Check live rates" : `Plan this ${noun}`} ctaHref={priced ? "#rates" : planHref} />
+        <ComingBanner slug={s.slug} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           {boat && (

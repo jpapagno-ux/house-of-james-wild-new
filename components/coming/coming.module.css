@@ -1,0 +1,145 @@
+/* What's Coming (James, 2 Nov 2026): the departures board, the cinematic hero, the explorer and the timeline, in the
+   House Standard. Colours come from main's --jw-* tokens (app/globals.css, lib/palette.ts HOUSE, CRIMSON, GRADIENT,
+   FOOTER); the only additions are the three What's Coming tints on dark grounds (lib/palette.ts COMING_TINTS: blush
+   232 196 198, blush soft 233 220 221, dot 194 74 74). Buttons are main's shared family (.ledger-btn editorial line,
+   .ledger-btn--solid ledger column); chips are main's .house-chip. Crimson only for Ledger IDs, dates, the board's
+   rule and dots, and Plan with James. */
+
+/* ── Board ──────────────────────────────────────────────── */
+.board { position: relative; overflow: hidden; color: #E9E4DE; background: var(--jw-ink);
+  border-top: 1px solid var(--jw-crimson); border-bottom: 1px solid #3D3934; }
+.viewport { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+.track { display: flex; width: max-content; animation: board var(--board-dur, 40s) linear infinite; }
+.track:hover, .track:focus-within, .board:focus-within .track { animation-play-state: paused; }
+.group { display: flex; flex: none; }
+@keyframes board { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.boardLabel { border-right: 1px solid #3D3934; color: #E9E4DE; }
+.boardMore a { border-left: 1px solid #3D3934; color: #E9E4DE; }
+.boardMore a:hover { color: #FFFFFF; background: rgb(255 255 255 / 0.04); }
+.bname { color: #E9E4DE; font-size: 13px; letter-spacing: 0.12em; }
+.place { color: #B8AFA5; }
+.flap { display: inline-block; padding: 3px 9px; border-radius: 2px; color: #E9E4DE; border: 1px solid #3D3934; }
+.flapOffer { color: rgb(232 196 198); border-color: rgb(232 196 198 / 0.35); }
+.tail { color: #B8AFA5; }
+.diamond { color: #3D3934; }
+.odot { width: 7px; height: 7px; border-radius: 999px; background: rgb(194 74 74); flex: none; }
+.pct { font-size: 13px; font-weight: 600; letter-spacing: 0; color: rgb(232 196 198); width: 12px; text-align: center; }
+.dot { width: 7px; height: 7px; border-radius: 999px; background: rgb(194 74 74); animation: pulse 2.4s ease-out infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgb(194 74 74 / 0.6); } 70% { box-shadow: 0 0 0 9px rgb(194 74 74 / 0); } 100% { box-shadow: 0 0 0 0 rgb(194 74 74 / 0); } }
+@media (prefers-reduced-motion: reduce) {
+  .viewport { overflow-x: auto; mask-image: none; scrollbar-width: thin; }
+  .track { animation: none; }
+  .group[aria-hidden="true"] { display: none; }
+  .dot { animation: none; }
+}
+
+/* ── Stay-page banner: the Ink to Garnet gradient (main's .jw-gradient sets the ground and the dark-button rules) ── */
+.banner { color: #FFFFFF; }
+
+/* ── Hero: the garnet end of the Ink to Garnet gradient behind the photograph, the house photo fade below ── */
+.hero { background: linear-gradient(150deg, #5A1F23, #3A1C1F 45%, #1A1816); }
+.heroH { height: 100vh; height: 100svh; }
+.slide { position: absolute; inset: 0; }
+.kb { position: absolute; inset: 0; will-change: transform; }
+.heroShade { background: linear-gradient(180deg, rgb(26 24 22 / 0.45) 0%, transparent 20%), var(--jw-hero-fade); }
+.heroKicker { color: rgb(232 196 198); }
+.heroTitle { color: #FFFFFF; font-size: clamp(3.6rem, 10vw, 6rem) !important; line-height: 0.92 !important; letter-spacing: -0.015em; }
+.heroCount { color: rgb(233 220 221); }
+.heroRule { border-color: rgb(232 196 198 / 0.35); }
+.horizon { color: rgb(232 196 198); }
+.heroInner { padding-left: max(1.25rem, env(safe-area-inset-left)); padding-right: max(1.25rem, env(safe-area-inset-right)); padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+@media (min-width: 768px) { .heroInner { padding-left: max(2.5rem, env(safe-area-inset-left)); padding-right: max(2.5rem, env(safe-area-inset-right)); padding-bottom: calc(5rem + env(safe-area-inset-bottom)); } }
+.caption { opacity: 0; visibility: hidden; }
+.caption[data-first="true"] { opacity: 1; visibility: visible; }
+@media (prefers-reduced-motion: reduce) {
+  .slide, .kb, .caption { animation: none !important; }
+  .slide:not(:first-child) { opacity: 0 !important; }
+  .caption:not([data-first="true"]) { opacity: 0 !important; visibility: hidden !important; }
+  .caption[data-first="true"] { opacity: 1 !important; visibility: visible !important; }
+}
+.cue { animation: cue 2.6s ease-in-out infinite; }
+@keyframes cue { 0%, 100% { transform: translateY(0); opacity: 0.9; } 50% { transform: translateY(6px); opacity: 0.5; } }
+@media (prefers-reduced-motion: reduce) { .cue { animation: none; } }
+
+/* ── Explorer: Paper ground, graphite type, main's squared chips ── */
+.explorer { color: var(--jw-graphite); background: var(--jw-paper); }
+.bar { background: rgb(255 255 255 / 0.96); border-bottom: 1px solid var(--jw-hairline); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+/* The bar sits exactly under the site header: --wc-head is the header's measured bottom (ComingExplorer). */
+.barTop { top: var(--wc-head, 76px) !important; }
+.field { color: var(--jw-graphite); background: var(--jw-paper); border: 1px solid var(--jw-keyline); border-radius: 2px; }
+.field::placeholder { color: var(--jw-stone-text); }
+.field:focus { outline: none; border-color: var(--jw-graphite); }
+.icon { color: var(--jw-stone-text); }
+.chip { padding-inline: 12px; }
+.count { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 400; letter-spacing: 0; color: var(--jw-stone-text); }
+.chip[aria-pressed="true"] .count { color: rgb(255 255 255 / 0.72); }
+.sep { background: var(--jw-hairline); }
+.chips { scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+/* Touch screens (phones, 768 and 1024 tablets): controls keep 44px tap targets. */
+@media (pointer: coarse) { .chip, .field { min-height: 44px; } }
+
+/* Year bands: huge, light Cormorant numerals in Warm Stone. */
+.yearNum { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; line-height: 0.8; letter-spacing: -0.04em; color: var(--jw-stone); }
+.yearHead { border-bottom: 1px solid var(--jw-hairline); }
+
+/* Cards: Paper with a hairline border, image left and text right on every card. The paired pathway shows only as
+   the 6px dot on its chip (House Standard: no pathway fills or rules). */
+.card { background: var(--jw-paper); border: 1px solid var(--jw-hairline); gap: 0 !important; --corner: 20px; --corner-off-top: -1px; --corner-off-side: -1px; }
+@media (min-width: 768px) { .card { --corner: 28px; } }
+@media (min-width: 1024px) {
+  .imgCol, .textCol { order: 0 !important; }
+  .imgCol { align-self: stretch; }
+  .imgCol .frame { height: 100%; aspect-ratio: auto !important; min-height: 420px; }
+}
+.frame img { transition: transform 1.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.card:hover .frame img, .card:focus-within .frame img { transform: scale(1.04); }
+.frameBg { background: var(--jw-ink); }
+.panel { padding: 24px 22px 30px; }
+@media (min-width: 1024px) { .panel { padding: 40px 44px 40px 40px; } }
+.cardHead { border-bottom: 1px solid var(--jw-graphite); padding-bottom: 10px; }
+.nameB { color: var(--jw-graphite); font-size: clamp(2rem, 1.55rem + 1.9vw, 2.5rem) !important; }
+.tagline { color: var(--jw-stone-text); }
+.ruleY { border-block: 1px solid var(--jw-hairline); }
+/* The date line: Cormorant italic in crimson. */
+.line { color: var(--jw-crimson); font-family: 'Cormorant Garamond', Georgia, serif !important; font-style: italic; font-size: 1.35rem !important; letter-spacing: 0 !important; text-transform: none !important; }
+.noteText { color: var(--jw-stone-text); }
+/* No brand photograph yet: the garnet end of the house gradient, the name set large. */
+.colourField { background: linear-gradient(150deg, #5A1F23, #3A1C1F 45%, #1A1816); }
+.fieldName { font-size: clamp(2rem, 1.1rem + 3.4vw, 4.2rem); }
+/* "Pair it with": main's squared chip, the pathway's colour only as a 6px dot beside the printed name. */
+.pair { text-transform: none; letter-spacing: 0.04em; font-size: 13px; padding: 8px 12px; }
+.pairDot { width: 6px; height: 6px; border-radius: 999px; background: var(--pw); }
+/* Buttons (main's family): full width on phones; every tap target at least 44px. */
+.tapLine { min-height: 44px; }
+@media (max-width: 639px) { .tapCol { width: 100%; } }
+/* Phones: the date stamp scales down so it never sits on a colour field's name (the frame is square there). */
+@media (max-width: 639px) { .stampSpot :global(svg) { width: 96px; height: 96px; } }
+
+/* Anchors land 16px under the sticky bar: --wc-stick is the header's bottom plus the bar's height, measured live. */
+.anchor { scroll-margin-top: calc(var(--wc-stick, 214px) + 16px); }
+@media (min-width: 1024px) { .anchor { scroll-margin-top: calc(var(--wc-stick, 286px) + 16px); } }
+
+/* Scroll reveal: visible by default; browsers with scroll-driven animations rise the card in. */
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal { animation: rise linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; }
+  }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(48px); } to { opacity: 1; transform: none; } }
+
+/* ── The page's answer band: Stone Mist with a hairline ── */
+.faq { background: var(--jw-mist) !important; border-top: 1px solid var(--jw-hairline); }
+.step { border-top: 2px solid var(--jw-graphite); }
+.stepNum { color: var(--jw-graphite); }
+
+/* ── Ledger corners: oxblood leather guards from the gradient's garnet stops (LedgerCorners.tsx) ── */
+.corners { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.corner { position: absolute; width: var(--corner, 28px); height: var(--corner, 28px); display: block; filter: drop-shadow(0 1px 1px rgb(26 24 22 / 0.25)); }
+.cornerTL { top: var(--corner-off-top, 0); left: var(--corner-off-side, 0); }
+.cornerBR { bottom: var(--corner-off-side, 0); right: var(--corner-off-side, 0); transform: rotate(180deg); }
+.wear { position: absolute; inset: 0; background: radial-gradient(120px 120px at 100% 0%, rgb(46 43 40 / 0.03), transparent 70%), radial-gradient(120px 120px at 0% 100%, rgb(46 43 40 / 0.03), transparent 70%); }
+.heroCorners { position: absolute; inset: 0; z-index: 1; pointer-events: none; --corner: 28px; }
+@media (min-width: 768px) { .heroCorners { --corner: 44px; } }
+@media (prefers-reduced-transparency: reduce) { .cornerFx { display: none; } .cornerShape { fill: #3A1C1F; } .corner { filter: none; } .wear { display: none; } }
+@media (forced-colors: active) { .cornerFx, .wear { display: none; } .cornerShape { fill: CanvasText; } .corner { filter: none; } }

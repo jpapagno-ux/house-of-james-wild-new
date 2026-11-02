@@ -43,6 +43,13 @@ export const CRIMSON = { fill: "#8B2525", deep: "#6E1C1C" };
 /** The one gradient, Ink to Garnet: hero photo fades, the ticker band and the opening only. */
 export const GRADIENT = { stops: ["#1A1816", "#2E2B28", "#3A1C1F", "#5A1F23"], heroFade: "rgba(38,20,22,0.88)" };
 
+/** What's Coming (James approved on the design canvas, 2 Nov 2026): the only tints it adds to the house set, all on
+ *  dark grounds (the Ink to Garnet hero, the ticker band). Blush: the hero eyebrow and the board's offer "%";
+ *  blush soft: the hero count line; dot: the board's opening dots. Its oxblood corner guards are the gradient's
+ *  garnet stops (GRADIENT.stops[3] to [2]) and its numerals Warm Stone, so they need no token of their own.
+ *  scripts/check-palette.mjs holds components/coming and app/whats-coming to the house set plus these. */
+export const COMING_TINTS = { blush: "#E8C4C6", blushSoft: "#E9DCDD", dot: "#C24A4A" };
+
 /** The main action ("Plan with James"): crimson on Paper, white keylines on dark or photographs. */
 export const ACTION = { fill: CRIMSON.fill, hover: CRIMSON.deep };
 

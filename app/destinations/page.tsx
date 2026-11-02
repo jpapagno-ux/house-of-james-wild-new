@@ -29,7 +29,7 @@ export default function DestinationsHub() {
               <li key={r.slug}>
                 <GuardLink as="div" href={`/destinations/${r.slug}`} className="group relative block aspect-[4/3] overflow-hidden bg-ink text-white">
                   {r.hero && <Image src={r.hero} alt={`${r.name}: ${r.tagline}`} fill sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}
-                  <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
+                  <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.15)] to-transparent" />
                   <span className="absolute left-5 right-5 bottom-4">
                     <span className="block ledger-eyebrow !text-white/80">{r.stayCount ? `${r.stayCount} stays · ${r.countries.length} ${r.countries.length === 1 ? "country" : "countries"}` : "Being filed now"}</span>
                     <span className="block ledger-display text-[1.8rem] leading-tight mt-1">{r.name}</span>

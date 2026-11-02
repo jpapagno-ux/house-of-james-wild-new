@@ -108,7 +108,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
         <div className="hidden lg:block pt-12 pb-10">
           <Link href={picked?.href ?? "/"} onClick={onClose} className="relative block h-full min-h-[420px] bg-ink text-white overflow-hidden" aria-label={picked ? `Enter ${picked.label}` : "Enter"}>
             {VOLS.map((v) => { const p = volumePhoto(v); return p ? <Image key={v.href} src={p.url} alt="" fill sizes="33vw" className={`object-cover transition-opacity duration-500 ${pick === v.href ? "opacity-100" : "opacity-0"}`} /> : null; })}
-            <span className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+            <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.15)] to-transparent" />
             <span className="absolute inset-x-0 top-0 h-1" style={{ background: picked?.tone ?? "var(--jw-accent-hex)" }} />
             <span className="absolute left-7 right-7 bottom-7">
               <span className="block ledger-eyebrow !text-white/75">Volume {picked ? numOf(picked) : ""}</span>

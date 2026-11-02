@@ -21,7 +21,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 //   natural setting has its own ink for tags, VIP and Horizon stamps.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const OX = "#7A1E1E";
+const OX = "#8B2525"; // House Crimson (The House Standard, lib/palette.ts CRIMSON)
 const TEAL = "#0C5D61"; // Deep Teal, lib/palette.ts (offer stamps in the Deep Sea family, James 2 Nov 2026)
 const LIGHT = "#F4F1EC";
 const SERIF = "'Cormorant Garamond', Georgia, serif";

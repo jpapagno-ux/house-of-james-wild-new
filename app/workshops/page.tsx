@@ -65,7 +65,7 @@ export default function WorkshopsPage() {
       <main id="main" className="pb-20">
         <header className="relative w-full h-[62svh] md:h-[72svh] min-h-[440px] max-h-[820px] overflow-hidden bg-ink text-white">
           <Image src={HERO.url} alt={HERO.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.30)] to-[rgba(26,24,22,0.40)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-14">
             <p className="ledger-eyebrow !text-white/80">{W.eyebrow}</p>
             <h1 className="ledger-display text-[2.6rem] md:text-[4.4rem] leading-none mt-3">{W.title}</h1>

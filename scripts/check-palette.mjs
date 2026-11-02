@@ -1,62 +1,126 @@
-// One volume palette, house-wide (James, 30 Oct 2026: "stay in the one direction for color so
-// there are no more confusions on new additions"). lib/volumes.ts is the only place a volume colour
-// is written. This check runs before every build and fails it if anything drifts:
-//  • the CSS .vol-* inks (app/globals.css) and Tailwind's vol.* colours must equal the volume pads;
-//  • the nav's volume tones (lib/site.ts) and map categories (lib/ledger/categories.ts) must read
-//    from lib/volumes.ts, not carry their own hex.
+// The House Standard (James approved, 2 Nov 2026, warm neutrals and Heritage volumes confirmed the same day): five
+// warm tones, one accent, one gradient; volumes told apart by a 5px tab, map pins and an occasional volume mist. lib/palette.ts holds the house tones, lib/volumes.ts the only volume colours. This check runs
+// before every build and fails it if anything drifts:
+//  • the Heritage volumes (lib/volumes.ts): volume words (deep) reach AA on Paper and on the volume mist;
+//  • no volume hex outside lib/volumes.ts (CSS, Tailwind, components, pages, maps): volumes flow from tokens, so a
+//    new volume set is one edit (volumeCss() is injected by app/layout.tsx; Tailwind vol.* / leather.* read its vars);
+//  • app/globals.css carries the house tones, the crimson action, the graphite general accent, Stone Mist bands with a
+//    Paper alternate, and the one gradient, all equal to lib/palette.ts;
+//  • text tones reach WCAG AA where they are used; buttons are squared (2px) and wear no colour but the house's;
+//  • pathway chips are graphite outlines on paper (the pathway colour only as a dot);
+//  • the retired Deep Sea action, Tidewater bands, Field Olive and parchment grounds do not come back.
+// Protected and checked separately: the river waters (.theme-waters-*), The Exceptional Few's palettes, map pins.
 // Run: node scripts/check-palette.mjs
 import fs from "node:fs";
-const read = (f) => fs.readFileSync(new URL(`../${f}`, import.meta.url), "utf8");
-const vol = read("lib/volumes.ts");
-const pads = {};
-for (const m of vol.matchAll(/key: "(\w+)",[^]*?pad: "(#[0-9A-Fa-f]{6})"/g)) pads[m[1]] = m[2].toUpperCase();
-const errs = [];
-if (Object.keys(pads).length !== 6) errs.push(`lib/volumes.ts: expected 6 volume pads, found ${Object.keys(pads).length}`);
-const css = read("app/globals.css");
-for (const [k, v] of Object.entries(pads)) {
-  const m = css.match(new RegExp(`\\.vol-${k} \\{ --vol: (#[0-9A-Fa-f]{6}); \\}`));
-  if (!m) errs.push(`app/globals.css: .vol-${k} missing`); else if (m[1].toUpperCase() !== v) errs.push(`app/globals.css: .vol-${k} is ${m[1]}, the palette says ${v}`);
-}
-const tw = read("tailwind.config.ts").match(/vol: \{([^}]*)\}/);
-for (const [k, v] of Object.entries(pads)) {
-  const m = tw && tw[1].match(new RegExp(`${k}: "(#[0-9A-Fa-f]{6})"`));
-  if (!m) errs.push(`tailwind.config.ts: vol.${k} missing`); else if (m[1].toUpperCase() !== v) errs.push(`tailwind.config.ts: vol.${k} is ${m[1]}, the palette says ${v}`);
-}
-if (/tone: "#/.test(read("lib/site.ts"))) errs.push("lib/site.ts: a volume tone is a hex; use volumeInk(\"<volume>\") from lib/volumes.ts");
-if (/color: "#/.test(read("lib/ledger/categories.ts"))) errs.push("lib/ledger/categories.ts: a map category colour is a hex; use volumeInk(\"<volume>\")");
-// On the Horizon (James, 2 Nov 2026): its colours are derived from the Voyages tokens in lib/volumes.ts
-// (HORIZON); the stamp itself must not carry a hex of its own.
-if (!/export const HORIZON[^]*VOLUME_STYLES\.voyages\.pad/.test(vol)) errs.push("lib/volumes.ts: HORIZON must derive its ink from the Voyages pad");
-if (/#[0-9A-Fa-f]{6}/.test(read("components/ledger/HorizonMark.tsx").replace(/#000|#fff/gi, ""))) errs.push("components/ledger/HorizonMark.tsx: a colour is a hex; read HORIZON from lib/volumes.ts");
+import path from "node:path";
+const root = new URL("..", import.meta.url).pathname;
+const read = (f) => fs.readFileSync(path.join(root, f), "utf8");
+const errs = [], warns = [];
 
-// Deep Sea palette (James, 2 Nov 2026): buttons, Wild Pathways chips and offer stamps in blues, aquas and
-// turquoise greens; no browns, golds, tans or olives. lib/palette.ts is the source.
-const pal = read("lib/palette.ts");
+// ---------- colour maths ----------
 const rgbOf = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
 const lum = (h) => { const [r, g, b] = rgbOf(h).map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
 const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m); return (x + 0.05) / (y + 0.05); };
-// Earth tones: orange through yellow-green hues (15°–100°) with any real saturation, or a warm grey-brown.
-const earthy = (h) => {
-  const [r, g, b] = rgbOf(h); const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn, l = (mx + mn) / 2;
-  if (d < 0.02) return false; // neutral grey
-  const sat = d / (1 - Math.abs(2 * l - 1));
-  let hue = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; hue = (hue * 60 + 360) % 360;
-  return hue >= 15 && hue <= 100 && sat > 0.1 && (l < 0.9 || sat > 0.35); // paper whites (#F4F1ED) pass, brown tints (#F7EFE6) do not
-};
-const sea = {};
-for (const m of pal.matchAll(/(\w+): \{ name: "[^"]+", fill: "(#[0-9A-F]{6})", tint: "(#[0-9A-F]{6})" \}/g)) sea[m[1]] = { fill: m[2], tint: m[3] };
-if (Object.keys(sea).length !== 8) errs.push(`lib/palette.ts: expected 8 Deep Sea swatches, found ${Object.keys(sea).length}`);
-const fills = new Set(Object.values(sea).map((x) => x.fill)), tints = new Set(Object.values(sea).map((x) => x.tint));
-const cssKey = { navy: "navy", ocean: "ocean", cerulean: "cerulean", slate: "slate", teal: "teal", aqua: "aqua", turquoise: "turquoise", seaGlass: "glass" };
-for (const [k, v] of Object.entries(sea)) {
-  if (ratio("#FFFFFF", v.fill) < 4.5) errs.push(`lib/palette.ts: white on ${k} ${v.fill} is ${ratio("#FFFFFF", v.fill).toFixed(2)}:1, below AA`);
-  if (ratio(v.fill, v.tint) < 4.5) errs.push(`lib/palette.ts: ${k} on its tint is below AA`);
-  if (!css.includes(`--jw-sea-${cssKey[k]}: ${v.fill};`)) errs.push(`app/globals.css: --jw-sea-${cssKey[k]} must be ${v.fill}`);
+const hsl = (h) => { const [r, g, b] = rgbOf(h); const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn, l = (mx + mn) / 2; const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1)); let hue = d === 0 ? 0 : mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; return { h: (hue * 60 + 360) % 360, s, l, d }; };
+const earthy = (h) => { const { h: hue, s, l, d } = hsl(h); return d >= 0.02 && hue >= 15 && hue <= 100 && s > 0.1 && (l < 0.9 || s > 0.35); };
+const chromatic = (h) => hsl(h).d >= 0.1; // anything that is not a warm or cool near-neutral
+const ch = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(" ");
+
+// ---------- volumes: one source ----------
+const vol = read("lib/volumes.ts");
+const vols = {};
+for (const m of vol.matchAll(/key: "(\w+)",[^]*?leather: "(#[0-9A-Fa-f]{6})"[^]*?pad: "(#[0-9A-Fa-f]{6})"[^]*?deep: "(#[0-9A-Fa-f]{6})"/g)) vols[m[1]] = { leather: m[2].toUpperCase(), pad: m[3].toUpperCase(), deep: m[4].toUpperCase() };
+if (Object.keys(vols).length !== 6) errs.push(`lib/volumes.ts: expected 6 volumes with leather, pad and deep, found ${Object.keys(vols).length}`);
+if (!/export function volumeCss\(/.test(vol)) errs.push("lib/volumes.ts: volumeCss() must generate the volume CSS");
+if (!/volumeCss\(\)/.test(read("app/layout.tsx"))) errs.push("app/layout.tsx: must inject volumeCss() from lib/volumes.ts");
+const volHex = new Map();
+for (const [k, v] of Object.entries(vols)) for (const [n, h] of Object.entries(v)) volHex.set(h, `${k} ${n}`);
+// Volume words use the deep value: it must reach AA on Paper and on the volume's own mist.
+for (const m of vol.matchAll(/key: "(\w+)",[^]*?deep: "(#[0-9A-Fa-f]{6})"[^]*?tint: "(#[0-9A-Fa-f]{6})"/g)) {
+  if (ratio(m[2], "#FFFFFF") < 4.5) errs.push(`lib/volumes.ts: ${m[1]} deep ${m[2]} is below AA on Paper`);
+  if (ratio(m[2], m[3]) < 4.5) errs.push(`lib/volumes.ts: ${m[1]} deep ${m[2]} is below AA on its mist ${m[3]}`);
 }
-const act = pal.match(/export const ACTION = \{ fill: DEEP_SEA\.(\w+)\.fill, hover: DEEP_SEA\.(\w+)\.fill \}/);
-if (!act) errs.push("lib/palette.ts: ACTION must read two DEEP_SEA fills");
-else if (!css.includes(`--jw-action: ${sea[act[1]]?.fill}; --jw-action-deep: ${sea[act[2]]?.fill};`)) errs.push(`app/globals.css: :root --jw-action / --jw-action-deep must be ${sea[act[1]]?.fill} / ${sea[act[2]]?.fill} (lib/palette.ts ACTION)`);
-// River waters sets: same contrast rule, no earth tones, and the CSS in step.
+const houseHex = new Set([...(read("lib/palette.ts").match(/export const HOUSE = \{([^}]*)\}/)?.[1] ?? "").matchAll(/#[0-9A-F]{6}/g)].map((m) => m[0]));
+const PROTECTED_DIRS = ["app/whats-coming", "components/coming", "lib/content/whats-coming"]; // another build in flight: warn only
+const walk = (d) => fs.existsSync(path.join(root, d)) ? fs.readdirSync(path.join(root, d), { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]) : [];
+const scan = [...walk("app"), ...walk("components"), ...walk("lib"), "tailwind.config.ts", ...walk("public/maps")].filter((f) => /\.(tsx?|css|m?js)$/.test(f) && !f.endsWith("lib/volumes.ts") && !f.includes("lib/content/library") && !f.endsWith(".json"));
+for (const f of scan) {
+  const src = read(f);
+  for (const m of src.matchAll(/#[0-9A-Fa-f]{6}\b/g)) {
+    const which = volHex.get(m[0].toUpperCase());
+    if (!which || houseHex.has(m[0].toUpperCase())) continue; // Stays Limestone shares Warm Stone with the house
+    // a protected theme (The Exceptional Few, river waters) or a pathway dot may share a hex by coincidence
+    const line = src.slice(src.lastIndexOf("\n", m.index) + 1, src.indexOf("\n", m.index));
+    if (/theme-ef|theme-waters|--ef-|WATERS_PALETTE|accent: "#/.test(line)) continue;
+    const msg = `${f}: ${m[0]} is the ${which} volume colour; read it from lib/volumes.ts (volumeInk / volumeLeather / volumeText or the --vol-* variables)`;
+    (PROTECTED_DIRS.some((d) => f.startsWith(d)) ? warns : errs).push(msg);
+  }
+}
+const tw = read("tailwind.config.ts");
+for (const k of Object.keys(vols)) {
+  if (!tw.includes(`${k}: "var(--vol-${k}-ink)"`)) errs.push(`tailwind.config.ts: vol.${k} must read var(--vol-${k}-ink)`);
+  if (!tw.includes(`${k}: "var(--vol-${k}-leather)"`)) errs.push(`tailwind.config.ts: leather.${k} must read var(--vol-${k}-leather)`);
+}
+if (/tone: "#/.test(read("lib/site.ts"))) errs.push("lib/site.ts: a volume tone is a hex; use volumeInk(\"<volume>\") from lib/volumes.ts");
+if (/color: "#/.test(read("lib/ledger/categories.ts"))) errs.push("lib/ledger/categories.ts: a map category colour is a hex; use volumeInk(\"<volume>\")");
+if (!/export const HORIZON[^]*VOLUME_STYLES\.voyages\.pad/.test(vol)) errs.push("lib/volumes.ts: HORIZON must derive its ink from the Voyages pad");
+if (/#[0-9A-Fa-f]{6}/.test(read("components/ledger/HorizonMark.tsx").replace(/#000|#fff/gi, ""))) errs.push("components/ledger/HorizonMark.tsx: a colour is a hex; read HORIZON from lib/volumes.ts");
+
+// ---------- the house tones ----------
+const pal = read("lib/palette.ts");
+const block = (name) => Object.fromEntries([...(pal.match(new RegExp(`export const ${name} = \\{([^}]*)\\}`))?.[1] ?? "").matchAll(/(\w+): "(#[0-9A-F]{6})"/g)].map((x) => [x[1], x[2]]));
+const H = block("HOUSE"), C = block("CRIMSON");
+for (const k of ["paper", "mist", "stone", "stoneText", "graphite", "ink", "keyline", "hairline"]) if (!H[k]) errs.push(`lib/palette.ts: HOUSE.${k} missing`);
+if (C.fill !== "#8B2525") errs.push("lib/palette.ts: CRIMSON.fill must be House Crimson #8B2525");
+const css = read("app/globals.css");
+const cssVar = { paper: "--jw-paper", mist: "--jw-mist", stone: "--jw-stone", stoneText: "--jw-stone-text", graphite: "--jw-graphite", ink: "--jw-ink", keyline: "--jw-keyline", hairline: "--jw-hairline" };
+for (const [k, v] of Object.entries(cssVar)) if (H[k] && !css.includes(`${v}: ${H[k]};`)) errs.push(`app/globals.css: ${v} must be ${H[k]} (lib/palette.ts HOUSE.${k})`);
+if (!css.includes(`--jw-crimson: ${C.fill}; --jw-crimson-deep: ${C.deep};`)) errs.push("app/globals.css: --jw-crimson / --jw-crimson-deep out of step with lib/palette.ts CRIMSON");
+if (!/export const ACTION = \{ fill: CRIMSON\.fill, hover: CRIMSON\.deep \}/.test(pal)) errs.push("lib/palette.ts: ACTION must be House Crimson (the main action, Plan with James)");
+if (!css.includes(`:root { --jw-action: ${C.fill}; --jw-action-deep: ${C.deep}; }`)) errs.push("app/globals.css: :root --jw-action must be House Crimson");
+if (H.graphite && !css.includes(`:root { --jw-accent: ${ch(H.graphite)}; --jw-accent-deep: ${H.ink && ch(H.ink)};`)) errs.push("app/globals.css: the general accent (--jw-accent) must be Graphite, deepening to Ink: crimson is kept for its few touches");
+if (H.mist && !css.includes(`--jw-ground: ${H.paper}; --jw-rule-fine: ${H.hairline}; --jw-rule: ${H.keyline}; --jw-band-rgb: ${ch(H.mist)}; --jw-band-alt-rgb: ${ch(H.paper)};`)) errs.push("app/globals.css: grounds must be Paper, hairline and keyline rules, Stone Mist bands with a Paper alternate (lib/palette.ts HOUSE)");
+const grad = pal.match(/stops: \[([^\]]*)\]/)?.[1].match(/#[0-9A-F]{6}/g) ?? [];
+if (grad.join() !== "#1A1816,#2E2B28,#3A1C1F,#5A1F23") errs.push("lib/palette.ts: GRADIENT must be Ink to Garnet (#1A1816, #2E2B28, #3A1C1F, #5A1F23)");
+if (!css.includes(`--jw-gradient: linear-gradient(90deg, ${grad.join(", ")})`)) errs.push("app/globals.css: --jw-gradient out of step with lib/palette.ts GRADIENT");
+// AA where used
+const need = [["stoneText", "paper"], ["stoneText", "mist"], ["graphite", "paper"], ["graphite", "mist"], ["paper", "graphite"], ["paper", "ink"]];
+for (const [a, b] of need) if (H[a] && H[b] && ratio(H[a], H[b]) < 4.5) errs.push(`lib/palette.ts: ${a} on ${b} is ${ratio(H[a], H[b]).toFixed(2)}:1, below AA`);
+if (ratio(C.fill, H.paper) < 4.5 || ratio(C.fill, H.mist) < 4.5) errs.push("lib/palette.ts: crimson words fall below AA on Paper or Stone Mist");
+for (const k of ["paper", "mist", "stone", "stoneText", "graphite", "ink", "keyline", "hairline"]) if (H[k] && chromatic(H[k])) errs.push(`lib/palette.ts: HOUSE.${k} ${H[k]} is not a neutral`);
+// the eyebrow and muted text are Warm Stone text
+if (!/\.ledger-muted \{ color: #6B635A; \}/.test(css)) errs.push("app/globals.css: .ledger-muted must be Warm Stone text #6B635A (AA)");
+
+// ---------- buttons, chips and pills ----------
+const cssNoComments = css.replace(/\/\*[^]*?\*\//g, "");
+const btnRules = [...cssNoComments.matchAll(/^[^\n{]*\.ledger-btn[^{]*\{[^}]*\}/gm)].map((m) => m[0]).filter((r) => !/theme-ef/.test(r));
+const base = btnRules.find((r) => /^\s*\.ledger-btn \{/.test(r));
+if (!base || !/border-radius: 2px;/.test(base)) errs.push("app/globals.css: .ledger-btn must be squared (border-radius: 2px)");
+if (base && !/Cormorant Garamond[^;]*; font-weight: 600;[^}]*text-transform: uppercase/.test(base)) errs.push("app/globals.css: .ledger-btn type must be Cormorant Garamond 600, uppercase");
+if (!/\.ledger-btn--house, a\.ledger-btn\[href\^="\/plan"\] \{[^}]*border-color: var\(--jw-action\); color: var\(--jw-action\);[^}]*inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px/.test(css)) errs.push("app/globals.css: Plan with James (.ledger-btn--house and every .ledger-btn to /plan) must be white with crimson words and a double keyline");
+for (const r of btnRules) for (const h of r.match(/#[0-9A-Fa-f]{6}/g) ?? []) if (chromatic(h) && h.toUpperCase() !== C.fill) errs.push(`app/globals.css: a button rule carries a colour outside the House Standard ${h}: ${r.trim().slice(0, 70)}…`);
+if (/\.ledger-btn[^{]*\{[^}]*border-radius: (?:9999|999|50%|1\.?\d*rem)/.test(css)) errs.push("app/globals.css: a button is a pill; squared (2px) only");
+if (!/\.jw-chip \{[^}]*border-radius: 2px;/.test(css)) errs.push("app/globals.css: .jw-chip must be squared (2px)");
+if (!/:is\(a, button, input, select, textarea, label, summary\)\.rounded-full/.test(css)) errs.push("app/globals.css: the no-pills rule (rounded-full on interactive elements squared to 2px) is missing");
+
+// ---------- pathways: graphite chips, colour only as a dot ----------
+const fills = new Set([...pal.matchAll(/fill: "(#[0-9A-F]{6})", tint: "#FFFFFF"/g)].map((m) => m[1]));
+if (fills.size !== 8) errs.push(`lib/palette.ts: expected 8 pathway dot colours (DEEP_SEA) on Paper tints, found ${fills.size}`);
+const pw = read("lib/pathways.ts");
+for (const m of pw.matchAll(/id: "(PATH-\d\d)"[^]*?accent: "(#\w{6})", text: "(#\w{6})", tint: "(#\w{6})"/g)) {
+  const [, id, a, t, ti] = m;
+  if (!fills.has(a.toUpperCase())) errs.push(`lib/pathways.ts: ${id} dot ${a} is not one of the eight pathway dot colours (lib/palette.ts DEEP_SEA)`);
+  if (t.toUpperCase() !== H.graphite) errs.push(`lib/pathways.ts: ${id} text must be Graphite ${H.graphite} (chips are graphite outlines)`);
+  if (ti.toUpperCase() !== H.paper) errs.push(`lib/pathways.ts: ${id} tint must be Paper ${H.paper} (no pathway fills)`);
+}
+for (const m of css.matchAll(/--jw-path-\d\d(-text|-tint): (#\w{6});/g)) if (m[2].toUpperCase() !== (m[1] === "-text" ? H.graphite : H.paper)) errs.push(`app/globals.css: ${m[0]} must be ${m[1] === "-text" ? "Graphite" : "Paper"}`);
+
+// ---------- stamps (marks, unchanged) ----------
+const aq = pal.match(/STAMP_AQUA = \{ onLight: "(#\w{6})", onDark: "(#\w{6})" \}/);
+if (!aq || !vol.includes(`const SUN_AQUA = "${aq[1]}", SUN_AQUA_DARK = "${aq[2]}"`)) errs.push("lib/volumes.ts: the On the Horizon sun must equal STAMP_AQUA in lib/palette.ts");
+if (/const BRASS|#B08657/i.test(vol)) errs.push("lib/volumes.ts: the brass sun is retired (James, 2 Nov 2026)");
+
+// ---------- river waters (protected): contrast, no earth tones, CSS in step ----------
 for (const m of pal.matchAll(/(amazon|nile|river): \{ name: "[^"]+", action: "(#\w{6})", hover: "(#\w{6})", accent: "(#\w{6})", accentDeep: "(#\w{6})", light: "(#\w{6})", card: "(#\w{6})" \}/g)) {
   const [, k, action, hover, accent, , , card] = m;
   for (const [n, h] of [["action", action], ["hover", hover], ["accent", accent]]) {
@@ -65,44 +129,18 @@ for (const m of pal.matchAll(/(amazon|nile|river): \{ name: "[^"]+", action: "(#
   }
   if (!new RegExp(`\\.theme-waters-${k}[^{]*\\{[^}]*--jw-accent-hex: ${accent};[^}]*--jw-card: ${card}; --jw-action: ${action}; --jw-action-deep: ${hover};`).test(css)) errs.push(`app/globals.css: .theme-waters-${k} is out of step with lib/palette.ts WATERS_PALETTE.${k}`);
 }
-// Buttons read the action token, never a hex or the page accent.
-// (The Exceptional Few's own scoped overrides keep their per-property palette and are skipped.)
-for (const line of css.split("\n").filter((l) => !l.includes(".theme-ef"))) for (const m of line.matchAll(/\.ledger-btn[\w-]*(?::hover)? \{[^}]*\}/g)) {
-  for (const h of m[0].match(/#[0-9A-Fa-f]{6}/g) ?? []) if (earthy(h)) errs.push(`app/globals.css: a button rule carries an earth tone ${h}: ${m[0].slice(0, 60)}…`);
-  if (/--jw-accent/.test(m[0])) errs.push(`app/globals.css: a button rule reads the page accent; use --jw-action: ${m[0].slice(0, 60)}…`);
+
+// ---------- retired: they do not come back ----------
+const retired = { "#1A4A80;\\s*--jw-action-deep": "the Deep Sea action", "--jw-sea-": "the Deep Sea tokens", "232 243 238": "the Tidewater sea-green band", "#E8F3EE": "the Tidewater sea-green band", "#4D4C27": "Field Olive", "#46452A": "Field Olive", "#F6F4F0": "the parchment panel", "#EFEAE0": "the sand ground", "#F1F8F6": "the Tidewater header wash" };
+for (const f of ["app/globals.css", "tailwind.config.ts", ...walk("components").filter((f) => /\.tsx?$/.test(f) && !PROTECTED_DIRS.some((d) => f.startsWith(d)))]) {
+  const src = read(f);
+  for (const [re, what] of Object.entries(retired)) if (new RegExp(re, "i").test(src)) errs.push(`${f}: ${what} is retired under the House Standard (James, 2 Nov 2026)`);
 }
-// Pathway chips: every accent is a Deep Sea fill, every tint a Deep Sea tint, none an earth tone.
-const pw = read("lib/pathways.ts");
-for (const m of pw.matchAll(/id: "(PATH-\d\d)"[^]*?accent: "(#\w{6})", text: "(#\w{6})", tint: "(#\w{6})"/g)) {
-  const [, id, a, t, ti] = m;
-  if (!fills.has(a.toUpperCase())) errs.push(`lib/pathways.ts: ${id} accent ${a} is not a Deep Sea fill (lib/palette.ts)`);
-  if (!tints.has(ti.toUpperCase())) errs.push(`lib/pathways.ts: ${id} tint ${ti} is not a Deep Sea tint`);
-  for (const h of [a, t, ti]) if (earthy(h)) errs.push(`lib/pathways.ts: ${id} ${h} is a brown, gold, tan or olive`);
-}
-for (const m of css.matchAll(/--jw-path-\d\d(?:-text|-tint)?: (#\w{6});/g)) if (earthy(m[1])) errs.push(`app/globals.css: pathway token ${m[0]} is an earth tone`);
-// Stamps: the On the Horizon sun is the stamp aqua; the Time Rewarded offer stamp is a Deep Sea fill.
-const aq = pal.match(/STAMP_AQUA = \{ onLight: "(#\w{6})", onDark: "(#\w{6})" \}/);
-if (!aq || !vol.includes(`const SUN_AQUA = "${aq[1]}", SUN_AQUA_DARK = "${aq[2]}"`)) errs.push("lib/volumes.ts: the On the Horizon sun must equal STAMP_AQUA in lib/palette.ts");
-if (/const BRASS|#B08657/i.test(vol)) errs.push("lib/volumes.ts: the brass sun is retired (James, 2 Nov 2026)");
-const offer = read("components/ledger/Marks.tsx").match(/const TEAL = "(#\w{6})"/);
-if (!offer || !fills.has(offer[1].toUpperCase())) errs.push("components/ledger/Marks.tsx: the Time Rewarded offer stamp must be inked in a Deep Sea fill (TEAL)");
-for (const f of ["components/pathways/Pathway.tsx", "components/ledger/HorizonMark.tsx"]) for (const m of read(f).matchAll(/#[0-9A-Fa-f]{6}\b/g)) if (earthy(m[0])) errs.push(`${f}: ${m[0]} is an earth tone`);
-// Tidewater grounds (James, 2 Nov 2026): CSS in step with lib/palette.ts TIDEWATER; ink and muted ink AA on the
-// ground and every band; no sand, tan, cream or parchment.
-const blend = (fg, bg, a) => "#" + [1, 3, 5].map((i) => Math.round(parseInt(fg.slice(i, i + 2), 16) * a + parseInt(bg.slice(i, i + 2), 16) * (1 - a)).toString(16).padStart(2, "0")).join("");
-const tide = Object.fromEntries([...pal.slice(pal.indexOf("export const TIDEWATER")).matchAll(/(\w+): "(#[0-9A-F]{6})"/g)].map((x) => [x[1], x[2]]));
-const ch = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(" ");
-for (const [k, v] of [["ground", `--jw-ground: ${tide.ground};`], ["ruleFine", `--jw-rule-fine: ${tide.ruleFine};`], ["rule", `--jw-rule: ${tide.rule};`], ["seaGreen", `--jw-band-rgb: ${tide.seaGreen && ch(tide.seaGreen)};`], ["aqua", `${tide.aqua && ch(tide.aqua)}`], ["amazon", `--jw-band-rgb: ${tide.amazon && ch(tide.amazon)};`], ["nile", `--jw-band-rgb: ${tide.nile && ch(tide.nile)};`]])
-  if (!tide[k] || !css.includes(v)) errs.push(`app/globals.css: Tidewater ${k} is out of step with lib/palette.ts TIDEWATER`);
-for (const k of ["ground", "card", "seaGreen", "aqua", "amazon", "nile"]) {
-  const bg = tide[k]; if (!bg) continue;
-  if (ratio(blend("#2D2A26", bg, 0.68), bg) < 4.5) errs.push(`lib/palette.ts: muted ink on Tidewater ${k} ${bg} is below AA`);
-  if (earthy(bg)) errs.push(`lib/palette.ts: Tidewater ${k} ${bg} is a sand or tan`);
-}
-for (const f of ["components/ships/DatesRates.tsx", "components/journey/TripPage.tsx"]) if (/bg-\[#F1E2B8\]/.test(read(f))) errs.push(`${f}: the gold "few left" pill is retired; use the aqua tint #D6EEF0`);
-if (/card: "#F6F4F0"|sand: \{ DEFAULT: "#EFEAE0"/.test(read("tailwind.config.ts"))) errs.push("tailwind.config.ts: paper.card and sand must read the Tidewater band, not parchment");
+for (const f of ["components/ships/DatesRates.tsx", "components/journey/TripPage.tsx"]) if (/bg-\[#F1E2B8\]/.test(read(f))) errs.push(`${f}: the gold "few left" pill is retired`);
+
+if (warns.length) console.warn("\nHouse Standard palette warnings (another build in flight):\n  " + warns.join("\n  ") + "\n");
 if (errs.length) {
-  console.error("\nVolume palette check failed. lib/volumes.ts is the only source of volume colours (docs/brand-colours.md).\n  " + errs.join("\n  ") + "\n");
+  console.error("\nHouse Standard palette check failed (docs/brand-colours.md). lib/palette.ts holds the house tones, lib/volumes.ts the only volume colours.\n  " + errs.join("\n  ") + "\n");
   process.exit(1);
 }
-console.log("Volume palette: one source, in step. Deep Sea palette: buttons, chips and offer stamps in blues and aquas, AA.");
+console.log("The House Standard: five tones, one accent, one gradient, in step. Volume colours from lib/volumes.ts only. Buttons squared, AA.");

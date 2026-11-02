@@ -1,13 +1,20 @@
 # House rules for anyone building this site
 
-## Colour (locked by James, 30 Oct 2026)
-- Volume colours come only from `lib/volumes.ts` (`volumeInk`, `volumeLightInk`). Never write a
-  volume hex anywhere else. `npm run check:palette` runs before every build and fails on drift.
-- Destination-page sections are inked by their volume (stays green, safaris saddle, gatherings
-  claret, overland olive, voyages navy), matching the map pins.
-- House Crimson is for the house: seal, logo and its rule line, Ledger IDs. Never a volume colour. Buttons and "Plan with James" wear the Deep Sea action (`--jw-action`, ocean blue, deep teal on hover); grounds are Tidewater (lib/palette.ts). No tan, sand or parchment grounds (James, 2 Nov 2026).
-- Wild Pathways are small theme chips linking to the pathway; they never replace a volume colour.
-- Region pathway chips (approved 31 Oct 2026) live in `lib/content/region-pathways.ts`.
+## Colour: The House Standard (James approved, 2 Nov 2026)
+- Five warm tones, one accent, one gradient: Paper `#FFFFFF`, Stone Mist `#F4F2EF` (the only band), Warm Stone
+  `#8C8277` (text `#6B635A`), Graphite `#2E2B28`, Ink `#1A1816`; keylines `#CFC8BF`, borders `#DCD7D0`. Source:
+  `lib/palette.ts`. Photography carries the colour.
+- House Crimson `#8B2525` is the single accent: seal, logo and rule, Ledger IDs, key dates, "Plan with James".
+  One or two crimson touches per screen. `--jw-accent` / `.ledger-crimson` / `text-crimson` are Graphite now; use
+  `text-house` / `.ledger-id` for real crimson.
+- The one gradient, Ink to Garnet (`#1A1816, #2E2B28, #3A1C1F, #5A1F23`): hero photo fades, the ticker, the opening.
+- Volumes (the Heritage set) come only from `lib/volumes.ts`: a 5px tab, map pins and an occasional volume-mist
+  panel, never sections, buttons or chips; volume words use the deep (`volumeInk`). Never write a volume hex anywhere
+  else: `volumeCss()` feeds the CSS variables and `npm run check:palette` (before every build) fails on drift.
+- Buttons, chips, fields and tabs are squared (2px), never pills: `.ledger-btn` (secondary), `.ledger-btn--house`
+  (Plan with James; every `.ledger-btn` to `/plan` wears it), `.ledger-btn--light` on dark, `.jw-chip`.
+- Pathway chips are graphite outlines with a 6px pathway dot. River waters and The Exceptional Few are protected.
+- No em or en dashes in public copy; no parchment textures; no browns, golds or tans as grounds.
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per
   image, folders = public_id path (see `docs/brand-colours.md`, "Media").
 - Full rule: `docs/brand-colours.md`.

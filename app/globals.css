@@ -4,75 +4,118 @@
 
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
-  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #FFFFFF; }
-  /* The Deep Sea palette (James, 2 Nov 2026; lib/palette.ts is the source, checked by scripts/check-palette.mjs).
-     Buttons and calls to action read --jw-action, never the page accent, so a volume page never turns a button
-     brown or olive and House Crimson stays with the seal. Ocean blue, deep teal on hover. */
-  :root { --jw-sea-navy: #162D54; --jw-sea-ocean: #1A4A80; --jw-sea-cerulean: #1C6BAE; --jw-sea-slate: #3D4C66; --jw-sea-teal: #0C5D61; --jw-sea-aqua: #08697F; --jw-sea-turquoise: #11705A; --jw-sea-glass: #4A736D; --jw-action: #1A4A80; --jw-action-deep: #0C5D61; }
-  /* Tidewater (James chose it, 2 Nov 2026; lib/palette.ts TIDEWATER): a near-white ground, white cards, fine aqua rules,
-     and section bands that rotate gently, pale sea-green then pale aqua, never two of the same in a row. Each volume
-     leads with its own pale tint (Stays sea-green, Voyages aqua, Amazon green, Nile lapis). No sand, tan or parchment. */
-  :root { --jw-ground: #FCFDFD; --jw-rule-fine: #D3E6E4; --jw-rule: #B5D3D0; --jw-band-rgb: 232 243 238; --jw-band-alt-rgb: 229 242 244; }
-  .theme-sea, :root:has(.theme-sea-page) { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; }
-  /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
-  .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
-  /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
-  :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
+  /* THE HOUSE STANDARD (James approved, 2 Nov 2026; lib/palette.ts is the source, checked by scripts/check-palette.mjs).
+     Five tones, one accent, one gradient. Paper grounds, Stone Mist the only band, Warm Stone keylines and numerals, Graphite
+     text and rules, Ink the darkest grounds. House Crimson is the single accent: the seal, the logo and its rule,
+     Ledger IDs, key dates and "Plan with James" (--jw-crimson). The general accent (--jw-accent, read by
+     .ledger-crimson, text-crimson, border-crimson) is Graphite, so eyebrows, hovers and rules stay quiet and the
+     crimson touches stay one or two per screen. Volumes never re-tint the page: they show a 5px leather tab. */
+  :root { --jw-paper: #FFFFFF; --jw-mist: #F4F2EF; --jw-stone: #8C8277; --jw-stone-text: #6B635A; --jw-graphite: #2E2B28; --jw-ink: #1A1816; --jw-keyline: #CFC8BF; --jw-hairline: #DCD7D0; --jw-crimson: #8B2525; --jw-crimson-deep: #6E1C1C; }
+  :root { --jw-accent: 46 43 40; --jw-accent-deep: 26 24 22; --jw-accent-light: 207 200 191; --jw-accent-hex: #2E2B28; --jw-accent-deep-hex: #1A1816; --jw-card: #FFFFFF; }
+  /* The main action: House Crimson ("Plan with James"). The river waters re-tint it; nothing else does. */
+  :root { --jw-action: #8B2525; --jw-action-deep: #6E1C1C; }
+  /* The one gradient, Ink to Garnet: hero photo fades, the ticker band and the opening only. */
+  :root { --jw-gradient: linear-gradient(90deg, #1A1816, #2E2B28, #3A1C1F, #5A1F23); --jw-gradient-v: linear-gradient(180deg, #1A1816, #2E2B28, #3A1C1F, #5A1F23); --jw-hero-fade: linear-gradient(180deg, rgba(38,20,22,0) 0%, rgba(38,20,22,0) 45%, rgba(38,20,22,0.88) 100%); }
+  /* Grounds: Paper page and cards, hairline rules, Stone Mist the only band (the alternate is Paper, so two Stone Mist bands
+     never sit in a row). */
+  :root { --jw-ground: #FFFFFF; --jw-rule-fine: #DCD7D0; --jw-rule: #CFC8BF; --jw-band-rgb: 244 242 239; --jw-band-alt-rgb: 255 255 255; }
+  /* Voyages and the Aliikai listings: the house tones (the navy accent is retired; the volume shows by its tab). */
+  .theme-sea { --jw-card: #FFFFFF; }
   /* Smooth scrolling is opted into by Next through data-scroll-behavior on <html>
      (app/layout.tsx), so the router can still jump instantly on navigation and
      Back/Forward. A CSS rule here fought that and left new pages opening mid-scroll
      (audit, 30 Oct 2026). Only in-page anchor jumps stay smooth. */
   html { overflow-x: clip; }
   html:focus-within { scroll-behavior: smooth; }
-  body { background: var(--jw-ground); color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body { background: var(--jw-ground); color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } }
 }
 
 @layer components {
-  /* House chrome: the display scale, raised (30 Oct 2026). Titles tracked a
-     touch tight so Cormorant reads as a wordmark, not a paragraph. */
-  .ledger-h1 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.015em; line-height: 1.02; text-wrap: balance; font-size: 2.6rem; }
-  @media (min-width: 768px) { .ledger-h1 { font-size: 4.2rem; } }
-  @media (min-width: 1024px) { .ledger-h1 { font-size: 5.4rem; } }
-  .ledger-h2 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.01em; line-height: 1.08; text-wrap: balance; font-size: 2rem; }
+  /* The House Standard type scale: Cormorant Garamond display, light 400 at large sizes with a generous,
+     tight line-height for heroes; Manrope body; IBM Plex Mono for eyebrows, Ledger IDs and dates. */
+  .ledger-h1 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.01em; line-height: 0.98; text-wrap: balance; font-size: 2.6rem; }
+  @media (min-width: 768px) { .ledger-h1 { font-size: 4.2rem; line-height: 0.95; } }
+  @media (min-width: 1024px) { .ledger-h1 { font-size: 5.4rem; line-height: 0.92; } }
+  .ledger-h2 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.005em; line-height: 1.04; text-wrap: balance; font-size: 2rem; }
   @media (min-width: 768px) { .ledger-h2 { font-size: 3rem; } }
-  /* Volume tones, read by dots, tabs and the chapter rail */
-  /* Volume inks: the one palette (lib/volumes.ts pads, approved 29 Oct 2026). scripts/check-palette.mjs keeps these in step. */
-  .vol-stays { --vol: #3E5A3A; } .vol-safaris { --vol: #7A4A24; } .vol-gatherings { --vol: #86232C; } .vol-voyages { --vol: #2A3D5C; } .vol-europe { --vol: #4E2E46; } .vol-overland { --vol: #4D4C27; }
-  .ledger-page { background: var(--jw-ground); color: #2D2A26; }
+  .ledger-page { background: var(--jw-ground); color: #2E2B28; }
   .ledger-card { background: var(--jw-card); }
-  .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
+  .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 2px rgba(26, 24, 22, 0.08); border: 1px solid var(--jw-hairline); }
   .ledger-crimson { color: var(--jw-accent-hex); }
   .ledger-crimson-border { border-color: var(--jw-accent-hex); }
+  /* The real House Crimson, for the few things that wear it: the seal, the logo, Ledger IDs, key dates. */
+  .house-crimson { color: var(--jw-crimson); }
+  .ledger-id { font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.12em; color: var(--jw-crimson); }
   .ledger-border { border-color: var(--jw-rule-fine); }
   .ledger-rule { border-color: var(--jw-rule); }
-  .ledger-muted { color: rgba(45, 42, 38, 0.68); }
+  .ledger-muted { color: #6B635A; }
   .ledger-display { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; }
   .ledger-body { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
   .ledger-hand { font-family: 'Caveat', cursive; }
   .ledger-eyebrow {
-    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
     font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 0.24em;
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(45, 42, 38, 0.68); /* was 0.55 (3.43:1); 0.68 clears WCAG AA on white and card (James, 30 Oct 2026) */
+    color: #6B635A; /* Warm Stone text: AA on Paper and Stone Mist */
   }
+  /* Nav labels: small uppercase tracked Manrope (the header, the menu and the footer keep the sans). */
+  .ledger-nav, header .ledger-eyebrow, footer nav .ledger-eyebrow { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 600; letter-spacing: 0.18em; }
+
+  /* Buttons (The House Standard): squared (2px), double keyline, never pills. Cormorant Garamond 600, uppercase,
+     tracked 0.18em, 15px. One class family, so every page follows.
+     .ledger-btn            secondary: graphite words, 1px keyline border
+     .ledger-btn--house     primary, "Plan with James": white fill, crimson words and border, inner crimson keyline
+                            (every .ledger-btn that opens /plan wears it too)
+     .ledger-btn--solid     a filled action that is not Plan with James: graphite fill, white words, inner white keyline
+     on dark or photographs: transparent, white words, 1px white border and an inner white keyline */
   .ledger-btn {
-    display: inline-flex; align-items: center; gap: .5rem;
-    border: 1px solid var(--jw-action); color: var(--jw-action);
-    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 500; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
-    padding: 9px 18px; background: transparent; cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
+    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+    border: 1px solid #CFC8BF; border-radius: 2px; color: #2E2B28; background: #FFFFFF;
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 600; font-size: 15px; line-height: 1.1; letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 10px 20px; cursor: pointer; min-height: 44px;
+    box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgba(46, 43, 40, 0.12);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   }
-  .ledger-btn:hover { background: var(--jw-action); color: #F4F1ED; }
-  .ledger-btn--solid { background: var(--jw-action); color: #F4F1ED; padding: 12px 22px; }
-  .ledger-btn--solid:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); }
-  .ledger-btn--house { background: var(--jw-action); border-color: var(--jw-action); color: #F4F1ED; }
-  .ledger-btn--house:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); color: #F4F1ED; }
-  .ledger-btn-ghost { color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
-  .ledger-btn-ghost:hover { color: var(--jw-action); border-color: var(--jw-action); }
+  .ledger-btn:hover { border-color: #2E2B28; color: #1A1816; box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgba(46, 43, 40, 0.35); }
+  .ledger-btn--solid { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; box-shadow: inset 0 0 0 3px #2E2B28, inset 0 0 0 4px rgba(255, 255, 255, 0.3); }
+  .ledger-btn--solid:hover { background: #1A1816; border-color: #1A1816; color: #FFFFFF; box-shadow: inset 0 0 0 3px #1A1816, inset 0 0 0 4px rgba(255, 255, 255, 0.4); }
+  .ledger-btn--house, a.ledger-btn[href^="/plan"] { background: #FFFFFF; border-color: var(--jw-action); color: var(--jw-action); box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 40%, transparent); }
+  .ledger-btn--house:hover, a.ledger-btn[href^="/plan"]:hover { background: #FFFFFF; border-color: var(--jw-action-deep); color: var(--jw-action-deep); box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 70%, transparent); }
+  .ledger-btn--light,
+  :is([class*="bg-ink"], [class*="bg-black"], [class*="bg-crimson"], [class*="bg-coast"], [class*="bg-forest"], .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn,
+  .ledger-btn[class*="!text-white"], .ledger-btn[class*="!text-paper"] {
+    background: transparent !important; color: #FFFFFF !important; border-color: rgba(255, 255, 255, 0.7) !important;
+    box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px rgba(255, 255, 255, 0.3) !important;
+  }
+  .ledger-btn--light:hover,
+  :is([class*="bg-ink"], [class*="bg-black"], [class*="bg-crimson"], [class*="bg-coast"], [class*="bg-forest"], .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn:hover,
+  .ledger-btn[class*="!text-white"]:hover, .ledger-btn[class*="!text-paper"]:hover { background: rgba(255, 255, 255, 0.08) !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+  .ledger-btn:disabled { opacity: .5; cursor: not-allowed; }
+  .ledger-btn-ghost { color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 600; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid #CFC8BF; padding-bottom: 2px; }
+  .ledger-btn-ghost:hover { color: #1A1816; border-color: #2E2B28; }
+  /* Chips, filter pills, date pills, tabs and search fields (The House Standard): squared, graphite and warm stone on
+     white; active = graphite fill and white words, or a crimson underline. */
+  .jw-chip { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 11px; }
+  .jw-chip:hover { border-color: #2E2B28; }
+  .jw-chip[aria-pressed="true"], .jw-chip[aria-selected="true"], .jw-chip[aria-current="true"], .jw-chip[aria-current="page"], .jw-chip.is-active { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+  .jw-tab[aria-selected="true"], .jw-tab[aria-current="page"], .jw-tab.is-active { box-shadow: inset 0 -2px 0 var(--jw-crimson); }
+  /* No pills anywhere: an interactive or labelled element that asked for a full radius is squared to 2px.
+     Dots, avatars, pins and the seal (no padding, or not interactive) keep their round. */
+  :is(a, button, input, select, textarea, label, summary).rounded-full,
+  :is(span, li, div, p)[class*="px-"].rounded-full,
+  :is(a, button, input, select, textarea, label, summary)[class*="rounded-"]:not([class*="rounded-none"]):not(.jw-round),
+  :is(span, li, div, p)[class*="px-"][class*="rounded-"]:not(.jw-round) { border-radius: 2px; }
+  /* The volume tab: a thin leather edge (about 5px) in the volume's leather. Set --vol-leather on the element
+     (or read it from the page's .theme-vol-* scope). Never a coloured section, button, chip or fill. */
+  .vol-tab { box-shadow: inset 5px 0 0 var(--vol-leather, #2E2B28); padding-left: calc(5px + .9rem); }
+  .vol-tab-top { box-shadow: inset 0 5px 0 var(--vol-leather, #2E2B28); }
+  /* The one gradient: hero photo fades, the ticker band and the opening. */
+  .jw-hero-fade { background: var(--jw-hero-fade); }
+  .jw-gradient { background: var(--jw-gradient); color: #FFFFFF; }
 }
 
 /* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */
@@ -169,8 +212,8 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 @media (prefers-reduced-motion: reduce) { .jw-ring, .jw-ripple { animation: none; } .jw-ripple { opacity: 0; } }
 
 /* Route pages: copy still to confirm, and photo frames waiting for a photo */
-.jw-flag { background: #F1E2B8; color: #5E3F22; padding: 0 0.2em; border-radius: 1px; }
-.jw-ph { background-color: #E4DED3; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }
+.jw-flag { background: #F4F2EF; color: #2E2B28; box-shadow: inset 0 -1px 0 #8C8277; padding: 0 0.2em; border-radius: 1px; }
+.jw-ph { background-color: #F4F2EF; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }
 
 /* The voyage tag swings a little on its string */
 @keyframes jw-sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
@@ -192,7 +235,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .journal-list li { padding: .55em 0 .55em 1.4em; border-bottom: 1px solid rgba(45,42,38,.14); position: relative; line-height: 1.45; }
 .journal-list li::before { content: ""; position: absolute; left: .2em; top: 1.05em; width: .45em; height: .45em; border: 1px solid rgb(var(--jw-accent)); transform: rotate(45deg); }
 .journal-steps { list-style: none; padding: 0; display: grid; gap: .6em; }
-.journal-steps li { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: .7em 1em; background: #EAE6DF; }
+.journal-steps li { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: .7em 1em; background: #F4F2EF; }
 .journal-toc { margin-top: 2.5rem; border-top: 1px solid rgba(45,42,38,.2); border-bottom: 1px solid rgba(45,42,38,.2); padding-block: 1.25rem; }
 .journal-toc ol { margin-top: .75rem; display: grid; gap: .45rem; }
 .journal-toc li { display: grid; grid-template-columns: 2.2rem 1fr; align-items: baseline; font-size: 16.5px; line-height: 1.35; }
@@ -211,22 +254,12 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 }
 
 /* Outside @layer so Tailwind never drops a theme chosen from data. */
-/* The six volumes (volume kit, 29 Oct 2026): each volume's leather colour drives the accent on its pages. lib/volumes.ts is the source. */
-.theme-vol-stays { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #FFFFFF; }
-:root:has(.theme-vol-stays-page) { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #FFFFFF; }
-.theme-vol-safaris { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #FFFFFF; }
-:root:has(.theme-vol-safaris-page) { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #FFFFFF; }
-.theme-vol-gatherings { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #FFFFFF; }
-:root:has(.theme-vol-gatherings-page) { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #FFFFFF; }
-.theme-vol-voyages { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
-:root:has(.theme-vol-voyages-page) { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
-.theme-vol-europe { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
-:root:has(.theme-vol-europe-page) { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
-.theme-vol-overland { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #FFFFFF; }
-:root:has(.theme-vol-overland-page) { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #FFFFFF; }
+/* The six volumes (The House Standard, 2 Nov 2026): a volume no longer re-tints the page. Its scope sets only the
+   leather for the 5px volume tab (--vol-leather) and its ink for small marks (--vol). Those rules, and the .vol-*
+   inks, are generated from lib/volumes.ts (volumeCss(), injected by app/layout.tsx): no volume hex lives here. */
 
 /* ---------- Volume kit: stamps, offer marks, Final Call board (components/ledger/VolumeKit.tsx) ---------- */
-.jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 3px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
+.jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 2px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
 .jw-flap::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(0, 0, 0, 0.45); }
 .jw-flap-col { display: block; animation: jw-flap 9s steps(1) infinite; }
 @keyframes jw-flap { 0% { transform: translateY(0); } 2% { transform: translateY(calc(var(--h) * -1)); } 4% { transform: translateY(calc(var(--h) * -2)); } 6% { transform: translateY(calc(var(--h) * -3)); } 8% { transform: translateY(calc(var(--h) * -4)); } 10% { transform: translateY(calc(var(--h) * -5)); } 12% { transform: translateY(calc(var(--h) * -6)); } 14%, 100% { transform: translateY(calc(var(--h) * -7)); } }
@@ -238,24 +271,25 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 }
 
 /* ---------- Wild Pathways: semantic tokens (lib/pathways.ts is the source; Phase 1a, 30 Oct 2026) ----------
-   Deep Sea family from 2 Nov 2026 (lib/palette.ts): blues, aquas and turquoise greens, no browns, golds or olives.
+   The House Standard (2 Nov 2026): the accent survives only as the 6px dot on a squared graphite-outline chip;
+   the text variant is Graphite and the tint is Paper for every pathway.
    Additive only. House tokens, the six volume themes and --jw-accent are untouched: a pathway
    never re-tints a page, it colours its own card, chip, marker or rule. Each pathway has an
    accent (fills, markers), an AA text variant (words on white or card) and a tint (quiet wash).
    The name is always printed beside the colour. */
 :root {
-  --jw-path-01: #11705A; --jw-path-01-text: #11705A; --jw-path-01-tint: #E8F3EF;
-  --jw-path-02: #0C5D61; --jw-path-02-text: #0C5D61; --jw-path-02-tint: #E6F1F1;
-  --jw-path-03: #1C6BAE; --jw-path-03-text: #1C6BAE; --jw-path-03-tint: #E8F1F9;
-  --jw-path-04: #1A4A80; --jw-path-04-text: #1A4A80; --jw-path-04-tint: #E8EEF6;
-  --jw-path-05: #4A736D; --jw-path-05-text: #4A736D; --jw-path-05-tint: #EDF2F1;
-  --jw-path-06: #3D4C66; --jw-path-06-text: #3D4C66; --jw-path-06-tint: #ECEFF3;
-  --jw-path-07: #162D54; --jw-path-07-text: #162D54; --jw-path-07-tint: #E9ECF2;
-  --jw-path-08: #08697F; --jw-path-08-text: #08697F; --jw-path-08-tint: #E5F2F5;
-  /* Where Your Stay Gives Back (the Wild & Co. Impact Note): soft sage panel, forest copy, selective rust */
-  --jw-impact-panel: #E6E9DD; --jw-impact-copy: #405A45; --jw-impact-highlight: #94512F;
+  --jw-path-01: #11705A; --jw-path-01-text: #2E2B28; --jw-path-01-tint: #FFFFFF;
+  --jw-path-02: #0C5D61; --jw-path-02-text: #2E2B28; --jw-path-02-tint: #FFFFFF;
+  --jw-path-03: #1C6BAE; --jw-path-03-text: #2E2B28; --jw-path-03-tint: #FFFFFF;
+  --jw-path-04: #1A4A80; --jw-path-04-text: #2E2B28; --jw-path-04-tint: #FFFFFF;
+  --jw-path-05: #4A736D; --jw-path-05-text: #2E2B28; --jw-path-05-tint: #FFFFFF;
+  --jw-path-06: #3D4C66; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
+  --jw-path-07: #162D54; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
+  --jw-path-08: #08697F; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
+  /* Where Your Stay Gives Back (the Wild & Co. Impact Note): Stone Mist panel, Graphite copy, Warm Stone text mark (House Standard) */
+  --jw-impact-panel: #F4F2EF; --jw-impact-copy: #2E2B28; --jw-impact-highlight: #6B635A;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
-  --jw-char-james: #2D2A26; --jw-char-james-accent: #8B2525; --jw-char-iggi: #405A45;
+  --jw-char-james: #2E2B28; --jw-char-james-accent: #8B2525; --jw-char-iggi: #6B635A;
 }
 /* A pathway-scoped element: .pathway-01 … .pathway-08 set --jw-path (and its text/tint) for the chip, card or marker inside. */
 .pathway-01 { --jw-path: var(--jw-path-01); --jw-path-text: var(--jw-path-01-text); --jw-path-tint: var(--jw-path-01-tint); }
@@ -366,8 +400,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark .text-ink, .theme-ef-dark .ledger-display, .theme-ef-dark .ledger-h1 { color: var(--ef-ink); }
 .theme-ef-dark header:not(.bg-transparent) { background: var(--ef-surface) !important; border-color: var(--ef-line) !important; color: var(--ef-ink) !important; }
 .theme-ef-dark header .\!text-ink, .theme-ef-dark nav .\!text-ink { color: var(--ef-ink) !important; }
-.theme-ef-dark .ledger-btn:hover, .theme-ef-dark .ledger-btn--solid { color: var(--ef-surface); }
-.theme-ef-dark .ledger-btn--solid:hover { color: var(--ef-surface); }
+/* The Exceptional Few keeps its own accent on buttons (protected), but squared like the house. */
+.theme-ef-dark .ledger-btn, .theme-ef-dark a.ledger-btn[href^="/plan"], .theme-ef-dark .ledger-btn--house { background: transparent; border-color: var(--jw-action); color: var(--jw-action); box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 35%, transparent); }
+.theme-ef-dark .ledger-btn:hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:hover, .theme-ef-dark .ledger-btn--solid { background: var(--jw-action); border-color: var(--jw-action); color: var(--ef-surface); }
+.theme-ef-dark .ledger-btn--solid:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); color: var(--ef-surface); }
 .theme-ef-dark #record-bar { background: var(--ef-surface) !important; border-color: var(--ef-line); color: var(--ef-ink); }
 .theme-ef-dark .ef-rule { border-color: var(--ef-line); }
 .theme-ef-dark .bg-ef-earth { background: var(--ef-earth); }
@@ -394,10 +430,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-waters-amazon, .theme-waters-amazon .theme-sea, :root:has(.theme-waters-amazon) { --jw-accent: 26 79 54; --jw-accent-deep: 18 58 39; --jw-accent-light: 196 220 207; --jw-accent-hex: #1A4F36; --jw-accent-deep-hex: #123A27; --jw-card: #FFFFFF; --jw-action: #0A6B4E; --jw-action-deep: #1D5A3B; --jw-band-rgb: 231 242 234; --jw-band-alt-rgb: 229 242 244; }
 .theme-waters-nile, .theme-waters-nile .theme-sea, :root:has(.theme-waters-nile) { --jw-accent: 27 52 113; --jw-accent-deep: 18 37 80; --jw-accent-light: 197 206 230; --jw-accent-hex: #1B3471; --jw-accent-deep-hex: #122550; --jw-card: #FFFFFF; --jw-action: #23428F; --jw-action-deep: #0A6570; --jw-band-rgb: 232 237 248; --jw-band-alt-rgb: 229 242 244; }
 .theme-waters-river, .theme-waters-river .theme-sea, :root:has(.theme-waters-river) { --jw-accent: 14 79 82; --jw-accent-deep: 10 58 60; --jw-accent-light: 194 220 221; --jw-accent-hex: #0E4F52; --jw-accent-deep-hex: #0A3A3C; --jw-card: #FFFFFF; --jw-action: #0E6467; --jw-action-deep: #23428F; --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 231 242 234; }
-/* The logo is not re-coloured by the waters: the header keeps the Voyages navy it wears on every voyage page. */
-:is(.theme-waters-amazon, .theme-waters-nile, .theme-waters-river) header { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; }
-/* Tidewater rotation: a banded section that follows a sibling banded section takes the other tint, the next one goes back, and so on,
-   so two bands of the same tint never sit in a row. (The Exceptional Few keeps its own bands: its rules are !important.) */
+/* The logo is not re-coloured by the waters: the header keeps the house tones (the logo reads --jw-crimson). */
+:is(.theme-waters-amazon, .theme-waters-nile, .theme-waters-river) header { --jw-accent: 46 43 40; --jw-accent-deep: 26 24 22; --jw-accent-light: 207 200 191; --jw-accent-hex: #2E2B28; --jw-accent-deep-hex: #1A1816; }
+/* Band rhythm (The House Standard): Stone Mist is the only band; a banded section that follows a sibling banded section goes Paper,
+   the next one Stone Mist again, so two Stone Mist bands never run together. (The Exceptional Few keeps its own bands: its rules are !important.) */
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: inherit; }
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }

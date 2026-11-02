@@ -31,7 +31,7 @@ function Player({ film, on, className }: { film: ShortFilm; on: boolean; classNa
 
 function Credit({ film }: { film: ShortFilm }) {
   return (
-    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white pointer-events-none">
+    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[rgba(38,20,22,0.88)] to-transparent text-white pointer-events-none">
       <p className="ledger-display text-[15px] leading-tight">James Wild &amp; Co.</p>
       <p className="ledger-eyebrow !text-[9px] !text-white/75 mt-1">{film.credit}</p>
     </div>

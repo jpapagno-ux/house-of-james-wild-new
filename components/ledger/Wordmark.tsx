@@ -8,8 +8,9 @@ import { SITE } from "@/lib/site";
 export type WordmarkStyle = "editorial" | "seal" | "plain";
 
 export default function Wordmark({ style = "editorial", light = false, size = 1, rule = true, line = true, fullLine = true }: { style?: WordmarkStyle; light?: boolean; size?: number; rule?: boolean; line?: boolean; fullLine?: boolean }) {
-  const color = light ? "#F4F1ED" : style === "plain" ? undefined : "var(--jw-accent-hex)";
-  const sub = light ? "rgba(244,241,237,0.8)" : "var(--jw-accent-hex)";
+  // House Crimson (The House Standard): the logo always wears the true crimson, never the page accent.
+  const color = light ? "#FFFFFF" : style === "plain" ? undefined : "var(--jw-crimson)";
+  const sub = light ? "rgba(255,255,255,0.8)" : "var(--jw-crimson)";
   return (
     <span className="flex flex-col min-w-0" style={{ color }}>
       {style === "seal" ? (
@@ -21,7 +22,7 @@ export default function Wordmark({ style = "editorial", light = false, size = 1,
       ) : (
         <span className="font-display whitespace-nowrap leading-none" style={{ fontWeight: 700, letterSpacing: "-0.02em", fontSize: `${2.6 * size}rem` }}>James Wild &amp; Co.</span>
       )}
-      {rule && <span className="block h-px mt-2" style={{ background: light ? "rgba(244,241,237,0.4)" : "rgb(var(--jw-accent) / 0.35)" }} aria-hidden="true" />}
+      {rule && <span className="block h-px mt-2" style={{ background: light ? "rgba(255,255,255,0.4)" : "color-mix(in srgb, var(--jw-crimson) 35%, transparent)" }} aria-hidden="true" />}
       {line && (
         <span className="ledger-eyebrow whitespace-nowrap" style={{ color: sub, fontSize: `${10 * Math.max(size, 0.85)}px`, letterSpacing: "0.32em", marginTop: rule ? 6 : 8 }}>
           Exploring since {SITE.exploringSince}

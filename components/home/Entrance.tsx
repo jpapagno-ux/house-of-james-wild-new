@@ -101,7 +101,7 @@ export function VolumeStrip() {
           <li key={d.key} className="group relative overflow-hidden bg-ink text-white lg:flex-1 lg:hover:flex-[3.2] lg:focus-within:flex-[3.2] transition-[flex] duration-700 ease-[cubic-bezier(.22,1,.36,1)] min-h-[260px] lg:min-h-0" style={{ ["--vol" as string]: tone(d.key) }}>
             <Link href={d.path} className="absolute inset-0 block focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label={`Enter ${d.name}`}>
               {d.image && <Image src={d.image} alt={d.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />}
-              <span className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/10" />
+              <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.25)] to-[rgba(26,24,22,0.10)]" />
               <span className="absolute inset-x-0 top-0 h-1" style={{ background: "var(--vol)" }} />
               <span className="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end">
                 <span className="ledger-eyebrow !text-white/80">Volume {["I", "II", "III", "IV", "V", "VI"][i]}</span>

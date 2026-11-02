@@ -23,6 +23,10 @@
 // Lives ocean blue, The Art of Stillness sea glass, Off the Map ink slate, A Place of Our Own deep navy,
 // Rooted in Place deep aqua. The earlier earth tones (and the addendum's proposals) are retired;
 // scripts/check-palette.mjs fails the build on a brown, gold, tan or olive here.
+//
+// The House Standard (James approved, 2 Nov 2026): pathway chips are squared graphite-outline chips
+// with the pathway name; the accent survives only as a small 6px dot. `text` is Graphite and `tint`
+// is Paper for every pathway, so no chip, card or panel takes a pathway fill.
 
 // Kept import-free (like lib/ledger/travel-types.ts) so plain Node can test it.
 // VolumeKey mirrors lib/volumes.ts; tests assert the two lists agree.
@@ -50,42 +54,42 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   "PATH-01": {
     id: "PATH-01", key: "into-the-green", name: "Into the Green", setting: "Rainforest and jungle",
     line: "Canopy, cloud forest and the river roads between them.",
-    accent: "#11705A", text: "#11705A", tint: "#E8F3EF", onAccent: "white", volumes: ["stays", "overland"],
+    accent: "#11705A", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland"],
   },
   "PATH-02": {
     id: "PATH-02", key: "between-tides", name: "Between Tides", setting: "Islands and oceans",
     line: "Atolls, reefs and the small ships that reach them.",
-    accent: "#0C5D61", text: "#0C5D61", tint: "#E6F1F1", onAccent: "white", volumes: ["stays", "voyages"],
+    accent: "#0C5D61", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "voyages"],
   },
   "PATH-03": {
     id: "PATH-03", key: "above-it-all", name: "Above It All", setting: "Mountains and highlands",
     line: "Thin air, long views and the quiet above the tree line.",
-    accent: "#1C6BAE", text: "#1C6BAE", tint: "#E8F1F9", onAccent: "white", volumes: ["stays", "overland", "europe"],
+    accent: "#1C6BAE", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland", "europe"],
   },
   "PATH-04": {
     id: "PATH-04", key: "where-the-wild-lives", name: "Where the Wild Lives", setting: "Wildlife and wilderness",
     line: "Game drives, guides and the conservancies that keep the wild wild.",
-    accent: "#1A4A80", text: "#1A4A80", tint: "#E8EEF6", onAccent: "white", volumes: ["safaris", "stays"],
+    accent: "#1A4A80", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["safaris", "stays"],
   },
   "PATH-05": {
     id: "PATH-05", key: "the-art-of-stillness", name: "The Art of Stillness", setting: "Wellness and restoration",
     line: "Hot springs, slow mornings and places built for doing less.",
-    accent: "#4A736D", text: "#4A736D", tint: "#EDF2F1", onAccent: "white", volumes: ["stays", "europe"],
+    accent: "#4A736D", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "europe"],
   },
   "PATH-06": {
     id: "PATH-06", key: "off-the-map", name: "Off the Map", setting: "Hidden and undiscovered",
     line: "Places with no signpost, filed before anyone else found them.",
-    accent: "#3D4C66", text: "#3D4C66", tint: "#ECEFF3", onAccent: "white", volumes: ["overland", "stays", "europe"],
+    accent: "#3D4C66", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["overland", "stays", "europe"],
   },
   "PATH-07": {
     id: "PATH-07", key: "a-place-of-our-own", name: "A Place of Our Own", setting: "Private residences",
     line: "Whole houses, whole islands, whole camps: one party, one roof.",
-    accent: "#162D54", text: "#162D54", tint: "#E9ECF2", onAccent: "white", volumes: ["gatherings", "stays"],
+    accent: "#162D54", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["gatherings", "stays"],
   },
   "PATH-08": {
     id: "PATH-08", key: "rooted-in-place", name: "Rooted in Place", setting: "Heritage and culture",
     line: "Working farms, old houses and hosts whose families never left.",
-    accent: "#08697F", text: "#08697F", tint: "#E5F2F5", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
+    accent: "#08697F", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
   },
 };
 
@@ -101,9 +105,9 @@ export function pathway(idOrKey: string | null | undefined): Pathway | undefined
 
 /** The Impact Note ("Where Your Stay Gives Back") palette, addendum §5. */
 export const IMPACT = {
-  panel: "#E6E9DD", // soft sage
-  copy: "#405A45", // forest green: copy and icons (6.17:1 on the panel)
-  highlight: "#94512F", // selective rust, the house's existing residence rust
+  panel: "#F4F2EF", // Stone Mist (House Standard, 2 Nov 2026; was soft sage)
+  copy: "#2E2B28", // Graphite: copy and icons (12.6:1 on Stone Mist)
+  highlight: "#6B635A", // Warm Stone text: the quiet "pending review" mark (5.5:1 on Stone Mist; was rust)
 } as const;
 
 export type ImpactStatus = "verified" | "partner_reported" | "pending_review" | "unavailable";

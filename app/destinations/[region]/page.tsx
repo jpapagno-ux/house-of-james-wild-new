@@ -203,7 +203,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
               <p className="ledger-eyebrow !text-white/70">Not sure where in {r.name}?</p>
               <h2 className="ledger-display text-[1.75rem] md:text-4xl mt-2">Let the Compass Choose, <span className="italic">Then Talk to a Person.</span></h2>
               <p className="mt-3 text-[16px] text-white/75 max-w-2xl">A few questions about who&rsquo;s travelling, the kind of place and the month, and it reads the Ledger for you.</p>
-              <Link href="/compass" className="mt-5 inline-block bg-action hover:bg-action-deep transition-colors px-6 py-3 text-[12px] uppercase tracking-[0.18em]">Take the Compass</Link>
+              <Link href="/compass" className="mt-5 ledger-btn ledger-btn--solid">Take the Compass</Link>
             </div>
             <CompassRose bearing={250} className="hidden md:block w-[160px] h-[160px]" />
           </section>

@@ -41,7 +41,6 @@ export const BUILT: string[] = [
   "/overland/south-africa/three-generations-at-pioneer",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
-  "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
   "/voyages/ships/aliikai",
   // The Nile waters hub and the A&K Sanctuary ships (approved by James, 1 Nov 2026)
   "/voyages/nile",

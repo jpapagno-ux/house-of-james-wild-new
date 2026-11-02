@@ -61,3 +61,10 @@ test("labels and the lowest from", () => {
   assert.equal(monthsLabel(g(["2027-03", "2027-04"])), "March and April 2027");
   assert.equal(lowestFrom([g(["2027-02"], { status: "sold-out", prices: { From: 100 } }), g(["2027-02"], { prices: { From: 900 } })]), 900);
 });
+
+test("the old Polar Circle page 301s to its polar page", () => {
+  const redirects = JSON.parse(readFileSync(new URL("redirects.json", root), "utf8")) as { source: string; destination: string; statusCode?: number }[];
+  const r = redirects.find((x) => x.source === "/voyages/antarctica/antarctica21-polar-circle-air-cruise");
+  assert.equal(r?.destination, "/voyages/polar/polar-circle-air-cruise");
+  assert.equal(r?.statusCode, 301);
+});

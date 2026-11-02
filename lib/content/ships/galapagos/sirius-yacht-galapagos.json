@@ -1714,5 +1714,8 @@
   "https://galaxycruises.com/terms-and-conditions"
  ],
  "film": null,
- "rateBasis": "per-cruise"
+ "rateBasis": "per-cruise",
+ "glance": {
+  "route": "Baltra and San Cristobal"
+ }
 }

@@ -1363,10 +1363,6 @@
   {
    "who": "First-time visitors",
    "line": "One 7-night loop covers the classic southern islands or the volcanic west."
-  },
-  {
-   "who": "Travellers with two weeks",
-   "line": "A and B back to back for 14 nights, with 5% off the second week."
   }
  ],
  "pathway": {
@@ -1390,5 +1386,8 @@
  ],
  "film": null,
  "rateBasis": "per-cruise",
- "fleetSchedule": "Ecoventura publishes one weekly schedule for Origin, Theory and Evolve together; we confirm which yacht sails your week when you ask."
+ "fleetSchedule": "Ecoventura publishes one weekly schedule for Origin, Theory and Evolve together; we confirm which yacht sails your week when you ask.",
+ "glance": {
+  "route": "San Cristobal round trip"
+ }
 }

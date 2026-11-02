@@ -81,10 +81,10 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
-  river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and dahabiyas on the Nile, with the Amazon to follow." },
-  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis in Indonesia and catamarans in the Galápagos." },
-  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts in the Galápagos; the polar ships sail with Polar Crossings." },
-  charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a dahabiya or a riverboat taken private for your party." },
+  river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and a river yacht in the Peruvian Amazon." },
+  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and a wooden schooner in Indonesia." },
+  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos; polar ships sail with Polar Crossings." },
+  charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
 
 /** The waters hubs. `countries` is what the hub covers; ships fill it as they are filed. */

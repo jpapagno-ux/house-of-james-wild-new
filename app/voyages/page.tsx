@@ -1,91 +1,97 @@
+import Link from "next/link";
+import { Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { FILMS } from "@/lib/content/films";
 import JsonLd from "@/components/ledger/JsonLd";
+import FaqBlock from "@/components/ledger/FaqBlock";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
-import { JourneyCard } from "@/components/destination/Journeys";
-import { journeysFor } from "@/lib/content/preview/journeys";
-import { LEDGER_COUNTS } from "@/lib/ledger/counts";
+import RouteAtlas from "@/components/journey/RouteAtlas";
+import ShipCard from "@/components/ships/ShipCard";
+import TripFinder from "@/components/ships/TripFinder";
+import VoyageTiles, { type Tile } from "@/components/ships/VoyageTiles";
+import { FILMS } from "@/lib/content/films";
 import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { graph, touristTrip } from "@/lib/schema";
-import RouteAtlas from "@/components/journey/RouteAtlas";
-import { routeIdFor } from "@/lib/content/route-files";
-import Link from "next/link";
-import NileShipCards from "@/components/ships/NileShipCards";
-import { shipsOn } from "@/lib/content/ships";
-import { RecordCard } from "@/components/hub/Hub";
-import { PathwayChips } from "@/components/pathways/Pathway";
-import { VESSEL_RECORDS, pageReady } from "@/lib/content/stays";
-import { VESSEL_WATERS, vessel, vesselHref, watersOf, type VesselWaters } from "@/lib/content/vessels";
-import { vesselChipsFor } from "@/lib/content/pathways";
-import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
+import { graph } from "@/lib/schema";
+import { NILE_CHART } from "@/lib/content/ships/routes";
+import { atlasRoutes } from "@/lib/content/ships/atlas";
+import { allCards, shipCard, tally, typeCards, watersCards, VOYAGE_TYPES, WATERS_HUBS } from "@/lib/content/ships/cards";
+import { registryShip, type VoyageType, type Waters } from "@/lib/content/ships/registry";
+import { usd } from "@/lib/pricing";
 
-// /voyages: Volume 04 hub shell. Small ships and sailing yachts; the
-// Aliikai voyages first. Voyage pages build from James's sample files.
+// /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
+// order people choose: how to sail, which waters, every route on one chart, the ship James has
+// sailed, the whole ship, the finder, then questions. Every list reads the ships registry.
+// Antarctica is not built here: the polar card opens Polar Crossings.
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Small-Ship Voyages and Sailing Yachts", description: `Small ships and sailing yachts, never the big ones: ${LEDGER_COUNTS.vessels} vessels in the James Wild & Co Ledger, from Raja Ampat phinisis to polar expedition ships.`, path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
+const POLAR = "https://polarcrossings.com";
+const TYPES: VoyageType[] = ["river", "sailing", "expedition", "charter"];
+const WATERS: Waters[] = ["nile", "amazon", "galapagos", "indonesia"];
+
+const cards = allCards();
+const charterNames = cards.filter((c) => c.types.includes("charter") && c.page).map((c) => c.name);
+const aliikai = registryShip("aliikai")!;
+const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}` : xs[0] ?? "");
+
+export const metadata = buildMetadata({
+  title: "Small-Ship Voyages and Sailing Yachts",
+  description: `${cards.length} small ships and sailing yachts filed by James Wild & Co: Nile riverboats and a dahabiya, Galápagos yachts, the Peruvian Amazon and phinisis in Indonesia.`,
+  path: PATH,
+  image: { url: FILMS.aliikai.poster, alt: FILMS.aliikai.alt },
+});
+
+const FAQS = [
+  { q: "What kind of ships does James Wild & Co sell?", a: `Small ships and sailing yachts, never the big ones. Voyages files ${cards.length} today: A&K Sanctuary riverboats and a dahabiya on the Nile, andBeyond's Amazon Explorer in the Peruvian Amazon, Ecoventura and Galaxy Cruises yachts in the Galápagos, and phinisis in Indonesia, Aliikai among them.` },
+  { q: "Can we charter a whole ship for our group?", a: `Yes. ${list(charterNames)} can be taken private for one party. Aliikai is ${usd(aliikai.charter!.from!)} a night plus 11% tax for up to 15 guests; the others are priced on enquiry, and James confirms every rate live.` },
+  { q: "Do you plan voyages to Antarctica and the Arctic?", a: "Yes, through Polar Crossings, James's polar platform at polarcrossings.com. The polar ships are planned there, not in Voyages." },
+  { q: "Has James sailed these ships himself?", a: "He sailed Raja Ampat aboard Aliikai in November 2024, and her page says so. The other ships are filed from their operators' own material, and their pages make no claim that he has sailed them." },
+  { q: "How are voyage fares shown?", a: "Per person, two sharing, as each operator publishes them: by the cruise for most ships, by the night for Aliikai's cabins. Past departures drop off on their own, and every fare is confirmed live when you ask." },
+];
 
 export default function VoyagesHub() {
-  const voyages = journeysFor("indonesia");
-  const polar = journeysFor("antarctica");
-  const nile = shipsOn("nile");
-  // Vessels filed in the Stay library (lib/content/vessels.ts, 1 Nov 2026): listed here by waters until
-  // each gets its ship page in its country pass. One with a ship page already (Aliikai) shows above.
-  const coming = (Object.keys(VESSEL_WATERS) as VesselWaters[]).map((w) => ({ w, ...VESSEL_WATERS[w], ships: VESSEL_RECORDS.filter((s) => pageReady(s) && !vessel(s.slug)?.ship && watersOf(s.slug) === w) })).filter((g) => g.ships.length);
+  // The Whole Ship's "from" is a charter rate (the whole yacht, a night), never a per-person fare.
+  const typeTiles: Tile[] = TYPES.map((t) => { const x = tally(typeCards(t)); return { key: t, name: VOYAGE_TYPES[t].name, href: VOYAGE_TYPES[t].path, line: VOYAGE_TYPES[t].line, count: x.count, from: t === "charter" ? `${usd(aliikai.charter!.from!)} a night` : x.from }; });
+  const watersTiles: Tile[] = [
+    ...WATERS.map((w) => { const x = tally(watersCards(w)); return { key: w, name: WATERS_HUBS[w].name, href: WATERS_HUBS[w].path, line: WATERS_HUBS[w].countries.join(", "), count: x.count, from: x.from }; }),
+    { key: "polar", name: "Antarctica and the Arctic", href: POLAR, line: "Polar ships sail with Polar Crossings, James's polar platform.", external: true },
+  ];
+  const sailed = [shipCard(aliikai)!];
+  const charters = cards.filter((c) => c.types.includes("charter"));
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
-      <HubShell name="Voyages" film={{ poster: FILMS.aliikai.poster, alt: FILMS.aliikai.alt, eyebrow: "Aboard Aliikai · Komodo", title: "Small ships and sailing yachts, never the big ones.", credit: FILMS.aliikai.credit, href: `https://www.youtube.com/watch?v=${FILMS.aliikai.id}` }} path={PATH} eyebrow="Volume 04 · Voyages" title="Small Ships and Sailing Yachts, Never the Big Ones" intro={V.intro} browse={V.browse}
-        answer={`James Wild & Co's Voyages volume files ${LEDGER_COUNTS.vessels} small ships and sailing yachts and the voyages they sail, from phinisis in Raja Ampat and Komodo to expedition ships in the polar regions. Each voyage lists its ports in order, the cabins and the fare per person, and James, 44 years on the road and sailing since 1989, has sailed many of them himself: Aliikai through Raja Ampat in November 2024 among them.`}
-        filling="Ship pages, cabin by cabin, and 2027–2028 departures fill from the Ledger export as each voyage page is built.">
-        <RouteAtlas id="voyages-atlas" kind="voyage" dest="raja-ampat" eyebrow="The voyage atlas · by sea" title="Every Voyage on One Chart"
-          line="Pick a voyage and the globe sails to it, then plays it day by day: Raja Ampat's karst islands, the Komodo dragons, and south over the Drake to the Antarctic Circle."
-          routes={[...voyages.map((j) => ({ j, where: "Indonesia" })), ...polar.map((j) => ({ j, where: "Antarctica" }))].flatMap(({ j, where }) => { const id = routeIdFor(j.href); return id ? [{ id, label: j.title, href: j.href, where }] : []; })} />
-        <HubSection eyebrow="Indonesia" title="Aboard Aliikai" id="aliikai-h">
-          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{voyages.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
-          <p className="mt-6 text-[15px]">
-            <span className="ledger-eyebrow mr-2">The waters</span>
-            <Link href="/destinations/asia/indonesia/raja-ampat" className="underline underline-offset-4 hover:ledger-crimson">Raja Ampat guide</Link>
-            <span className="ledger-muted"> · </span>
-            <Link href="/destinations/asia/indonesia/komodo" className="underline underline-offset-4 hover:ledger-crimson">Komodo guide</Link>
-            <span className="ledger-muted"> · </span>
-            <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Everything in Indonesia</Link>
-          </p>
+      <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
+        film={{ poster: FILMS.aliikai.poster, alt: FILMS.aliikai.alt, eyebrow: "The film", title: "Aboard Aliikai in Komodo", credit: FILMS.aliikai.credit, href: `https://www.youtube.com/watch?v=${FILMS.aliikai.id}` }}
+        answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos and Indonesia. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
+        filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">
+        <HubSection eyebrow="Four ways to sail" title="How Do You Want to Sail?" id="types-h"><VoyageTiles tiles={typeTiles} /></HubSection>
+        <HubSection eyebrow="The waters" title="Which Waters?" id="waters-h"><VoyageTiles tiles={watersTiles} cols={5} /></HubSection>
+        <RouteAtlas id="voyages-atlas" kind="voyage" dest="nile" chart={NILE_CHART} legend="river-sea" kicker="THE VOYAGES · BY RIVER AND SEA" eyebrow="The voyage atlas" title="Where Do the Ships Sail?"
+          line="Every route in Voyages on one chart. Pick a route above the chart and the globe flies to it, then sails it day by day."
+          routes={atlasRoutes()} />
+        <HubSection eyebrow="Sailed by the founder" title="Which Ships Has James Sailed?" id="sailed-h">
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{sailed.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>
+          <p className="mt-3 text-[14px] ledger-muted max-w-2xl">James sailed Raja Ampat aboard Aliikai in November 2024, ten days from Sorong to the Wayag karsts and back.</p>
         </HubSection>
-        {nile.length > 0 && (
-          <HubSection eyebrow="Egypt" title="On the Nile, with A&K Sanctuary" id="nile-h" more={{ label: "Which Nile cruise?", href: "/voyages/nile" }}>
-            <NileShipCards ships={nile} />
-          </HubSection>
-        )}
-        {coming.length > 0 && (
-          <HubSection eyebrow="Filed, ship pages to follow" title="Ships Coming to the Ledger" id="ships-coming-h">
-            <p className="text-[15.5px] ledger-muted max-w-2xl">Small ships and sailing yachts James has filed, by the waters they sail. Each gets a full ship page, cabin by cabin with dates and fares, in its country&rsquo;s pass; until then each opens on its Ledger record.</p>
-            {coming.map((g) => (
-              <div key={g.w} className="mt-8">
-                <p className="ledger-eyebrow">{g.name}{g.country && g.country !== g.name ? ` · ${g.country}` : ""}</p>
-                <ul className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-                  {g.ships.map((s) => { const chips = PATHWAYS_ON ? vesselChipsFor(s.slug) : null; return (
-                    <li key={s.slug} className="flex flex-col gap-3">
-                      <RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline?.replace(/^["“]|["”]$/g, "") ?? ""} image={{ url: s.hero as string, alt: `${s.name}, ${g.name}` }} href={vesselHref(s.slug)} eyebrow={`Voyage · ${g.name}`} volume="voyages" />
-                      {chips && <PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} />}
-                    </li>
-                  ); })}
-                </ul>
-              </div>
-            ))}
-          </HubSection>
-        )}
-        {polar.length > 0 && (
-          <HubSection eyebrow="The polar regions" title="To the Antarctic Circle" id="polar-h">
-            <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{polar.map((j) => <li key={j.ledgerId}><JourneyCard j={j} /></li>)}</ul>
-            <p className="mt-6 text-[15px]"><span className="ledger-eyebrow mr-2">The waters</span><Link href="/destinations/polar-antarctica" className="underline underline-offset-4 hover:ledger-crimson">Antarctica guide</Link></p>
-          </HubSection>
-        )}
+        <section className="mt-12 md:mt-16" aria-labelledby="charter-h">
+          <div className="grid md:grid-cols-[1.3fr_1fr] gap-6 md:gap-10 items-center ledger-paper border ledger-border p-6 md:p-8">
+            <div>
+              <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><Users className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />The Whole Ship</p>
+              <h2 id="charter-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Would You Rather Take the Whole Ship?</h2>
+              <p className="mt-3 text-[16px] leading-relaxed">{charters.length} ships can be chartered whole for one party: {list(charters.map((c) => c.name))}.</p>
+              <Link href={VOYAGE_TYPES.charter.path} className="mt-5 ledger-btn ledger-btn--solid">See every charter</Link>
+            </div>
+            <p className="md:text-right"><span className="ledger-eyebrow block">Aliikai, the whole yacht</span><span className="ledger-display text-5xl ledger-crimson">{usd(aliikai.charter!.from!)}</span><span className="block text-[13px] ledger-muted">per night · up to 15 guests · + 11% tax</span></p>
+          </div>
+        </section>
+        <HubSection eyebrow="Not sure?" title="Which Ship Fits Your Trip?" id="finder-h">
+          <TripFinder cards={cards} types={TYPES.map((t) => ({ key: t, name: VOYAGE_TYPES[t].name }))} waters={WATERS.map((w) => ({ key: w, name: WATERS_HUBS[w].name }))} />
+        </HubSection>
         <AdvisorScroll volume="voyages" title="Who sails with the small ships" />
+        <FaqBlock faqs={FAQS} title="What Should You Know Before You Sail?" />
       </HubShell>
-      <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", itemListElement: [...voyages, ...polar].map((j, i) => ({ "@type": "ListItem", position: i + 1, item: touristTrip({ path: j.href, name: j.title, description: j.line }) })) } })} />
+      <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", numberOfItems: cards.length, itemListElement: cards.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: absoluteUrl(c.href) })) } })} />
     </div>
   );
 }

@@ -12,7 +12,8 @@ import { hostFor } from "@/lib/content/hosts";
 import type { ShipFilm as FilmData, ShipItinerary as Itin, ShipPathway } from "@/lib/content/ships/types";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import { pathway as pathwayOf, type Pathway } from "@/lib/pathways";
-import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
+import { pathwayHref } from "@/lib/content/pathways/flag";
+import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
 import ShipFilm from "./ShipFilm";
 import ShipItinerary from "./ShipItinerary";
 import ShipNav from "./ShipNav";
@@ -53,7 +54,7 @@ export type ShipFrame = {
 
 export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode }) {
   const host = hostFor(ship.host.key);
-  const primary = PATHWAYS_ON && ship.pathway ? pathwayOf(ship.pathway.primary) : undefined;
+  const primary = VOYAGE_PATHWAYS_ON && ship.pathway ? pathwayOf(ship.pathway.primary) : undefined;
   const secondary = primary && ship.pathway ? ship.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
   return (
     <div className="theme-sea theme-sea-page">

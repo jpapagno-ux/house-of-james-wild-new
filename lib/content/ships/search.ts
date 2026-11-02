@@ -50,6 +50,9 @@ export const SEARCH_PAGES: { where: Partial<Record<SearchWhere, PageLink>>; who:
     polar: { label: "Polar Crossings", href: POLAR_PATH },
   },
   who: {
+    couple: { label: "Honeymoons and couples, compared", href: "/voyages/honeymoon" },
+    family: { label: "Family voyages: ages, cabins and programmes", href: "/voyages/family" },
+    solo: { label: "Solo voyages: single supplements compared", href: "/voyages/solo" },
     group: { label: "The Whole Ship: charters for your group", href: "/voyages/charter" },
   },
   what: {

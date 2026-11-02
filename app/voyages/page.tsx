@@ -20,6 +20,7 @@ import { allCards, shipCard, tally, typeCards, watersCards, VOYAGE_TYPES, WATERS
 import { registryShip, type VoyageType, type Waters } from "@/lib/content/ships/registry";
 import { usd } from "@/lib/pricing";
 import { polarTile } from "@/lib/content/ships/hubs";
+import { categoryTiles } from "@/lib/content/ships/categories";
 import { POLAR_VOYAGES } from "@/lib/content/polar";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
@@ -74,6 +75,7 @@ export default function VoyagesHub() {
         </HubSection>
         <HubSection eyebrow="Four ways to sail" title="How Do You Want to Sail?" id="types-h"><VoyageTiles tiles={typeTiles} /></HubSection>
         <HubSection eyebrow="The waters" title="Which Waters?" id="waters-h"><VoyageTiles tiles={watersTiles} cols={5} /></HubSection>
+        <HubSection eyebrow="Who is sailing" title="Who Is the Voyage For?" id="who-h"><VoyageTiles tiles={categoryTiles()} cols={3} /></HubSection>
         <RouteAtlas id="voyages-atlas" kind="voyage" dest="nile" chart={NILE_CHART} legend="river-sea" kicker="THE VOYAGES · BY RIVER AND SEA" eyebrow="The voyage atlas" title="Where Do the Ships Sail?"
           line="Every route in Voyages on one chart. Pick a route above the chart and the globe flies to it, then sails it day by day."
           routes={atlasRoutes()} />

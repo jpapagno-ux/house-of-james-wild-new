@@ -45,7 +45,15 @@ export type Offer = {
   refs?: string[];
   /** The partner whose offer it is (lib/content/partners), for the partner page. */
   partner?: string;
+  /** Voyages only: the offer's type under On the Horizon (James, 2 Nov 2026). Synced from the library's
+   *  `offer_type` when set; otherwise `voyageOfferType` maps the offer from its program and terms. */
+  offerType?: VoyageOfferType;
 };
+
+/** The voyage offer types under On the Horizon (James, 2 Nov 2026, voyages plan Part 5). "On the Horizon"
+ *  alone is a general saving that fits none of the others (Antarctica21's booking-window savings). */
+export type VoyageOfferType = "Final Call" | "Book Early" | "Solo" | "Celebrations" | "Family" | "Whole Ship" | "On the Horizon";
+export const VOYAGE_OFFER_TYPES: VoyageOfferType[] = ["Final Call", "Book Early", "Solo", "Celebrations", "Family", "Whole Ship", "On the Horizon"];
 
 const CAY = "cayuga-collection";
 const SRC = "Cayuga Collection official special offers page";
@@ -117,10 +125,32 @@ const FROM_LIBRARY = LIBRARY as Offer[];
 const LIB_IDS = new Set(FROM_LIBRARY.map((o) => o.id));
 export const OFFER_LEDGER: Offer[] = [...HAND_KEPT.filter((o) => !LIB_IDS.has(o.id)), ...FROM_LIBRARY];
 
+// Typed by James (2 Nov 2026): A&K's Nile honeymoon offer is Celebrations; Antarctica21's two booking-window
+// savings stay On the Horizon (general). The library's own `offer_type` wins once it is set there.
+const TYPE_BY_ID: Record<string, VoyageOfferType> = {
+  "OFR-2026-000129": "Celebrations", "OFR-2026-000130": "Celebrations", "OFR-2026-000131": "Celebrations", "OFR-2026-000132": "Celebrations",
+  "OFR-2026-000160": "On the Horizon", "OFR-2026-000161": "On the Horizon",
+};
+/** A voyage offer's type: the filed type, James's typing by ID, then a reading of its program and terms. */
+export function voyageOfferType(o: Pick<Offer, "id" | "program" | "headline" | "name" | "offerType">): VoyageOfferType {
+  if (o.offerType) return o.offerType;
+  if (TYPE_BY_ID[o.id]) return TYPE_BY_ID[o.id];
+  if (o.program === "Final Call") return "Final Call";
+  if (o.program === "Book Early") return "Book Early";
+  const t = `${o.headline} ${o.name}`;
+  if (/honeymoon|anniversar|celebrat/i.test(t)) return "Celebrations";
+  if (/\bsolo\b|single supplement/i.test(t)) return "Solo";
+  if (/famil|child|kids/i.test(t)) return "Family";
+  if (/charter|whole (ship|yacht|boat)/i.test(t)) return "Whole Ship";
+  return "On the Horizon";
+}
+
 /** When an offer ends: its travel window, or a Final Call's departure date if that comes first. */
 export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
 /** Offers a page may show: Live and not past its end (lib/dates.ts, the one date rule). */
 export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerEnd, on);
 export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref || (o.refs ?? []).includes(ref));
 export const offersForPartner = (partner: string, on = today()) => liveOffers(on).filter((o) => o.partner === partner);
+/** Live voyage offers of one type (the honeymoon page shows Celebrations). */
+export const voyageOffersOfType = (t: VoyageOfferType, on = today()) => liveOffers(on).filter((o) => o.volume === "voyages" && voyageOfferType(o) === t);
 export const offersInCollection = (collection: string, on = today()) => liveOffers(on).filter((o) => o.collection === collection);

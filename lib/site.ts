@@ -275,6 +275,10 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/amazon", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/galapagos", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/indonesia", priority: 0.8, changeFrequency: "monthly" },
+  // Voyages category pages (James, 2 Nov 2026), answer-first with a comparison table.
+  { path: "/voyages/honeymoon", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/family", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/solo", priority: 0.8, changeFrequency: "weekly" },
   { path: "/voyages/ships/beyond-amazon-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/aria-amazon", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/delfin-iii", priority: 0.7, changeFrequency: "monthly" },

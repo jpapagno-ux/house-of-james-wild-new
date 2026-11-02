@@ -21,7 +21,7 @@ export function OfferCard({ offer, volume: pageVolume }: { offer: Offer; volume:
       <div>
         <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: v.leather }}>{offer.program}{late && v.finalCall ? ` · ${v.finalCall}` : ""}</p>
         <p className="ledger-display text-[1.6rem] leading-tight mt-1">{offer.headline}</p>
-        <p className="mt-2 text-[15px] leading-relaxed">{offer.name} · {late || offer.bookingWindow ? offer.travel.text : `travel ${offer.travel.text}`}.{offer.conditions ? ` ${offer.conditions}` : ""}</p>
+        <p className="mt-2 text-[15px] leading-relaxed">{offer.name} · {late || offer.bookingWindow || /^(travel|book)\b/i.test(offer.travel.text) ? offer.travel.text : `travel ${offer.travel.text}`}.{offer.conditions ? ` ${offer.conditions}` : ""}</p>
         <p className="mt-2 font-mono text-[10.5px] ledger-muted">{offer.id} · terms checked {offer.checked}</p>
       </div>
     </div>

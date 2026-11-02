@@ -295,5 +295,25 @@ begin
   select count(*) into n from private.audit_logs where entity_type = 'properties' and entity_id = k1::text and action = 'update' and actor_id = jw;
   r := r || jsonb_build_object('t', 'F02 the approved entity change is audited to the editor', 'pass', n = 1);
 
+  -- ===== (G) Ledger IDs (D-20): new IDs only from private.next_ledger_id()
+  -- (checked from the sequence's settings, so running the test never burns a real ID)
+  select count(*) into n from pg_sequences where schemaname = 'private' and sequencename = 'ledger_entity_seq'
+    and start_value = 800001 and max_value <= 899999;
+  r := r || jsonb_build_object('t', 'G01 new Ledger IDs come from the Partner Desk block (800001-899999)', 'pass',
+    n = 1 and position('ledger_entity_seq' in pg_get_functiondef('private.next_ledger_id(text)'::regprocedure)) > 0);
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  begin
+    perform private.next_ledger_id('STY');
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'G02 partners cannot mint Ledger IDs', 'pass', ok);
+  begin
+    insert into public.properties (legacy_cms_id, name, slug) values ('STY-2026-000999', 'Hand-typed', 'rls-hand-typed');
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'G03 partners cannot create entities or type a Ledger ID', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
   raise exception 'PARTNER_DESK_RLS %', r;
 end $$;

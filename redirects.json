@@ -168,5 +168,10 @@
     "source": "/stays/rayvadee-resort",
     "destination": "/stays/rayavadee",
     "statusCode": 301
+  },
+  {
+    "source": "/stays/club-paradise-palawan",
+    "destination": "/stays/discovery-coron",
+    "permanent": true
   }
 ]

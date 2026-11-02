@@ -57,6 +57,8 @@ import { journeysFor } from "@/lib/content/preview/journeys";
 import { recordHref } from "@/lib/ledger/urls";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
+import PhilippinesSections from "@/components/destination/PhilippinesSections";
+import { APPROX } from "@/lib/content/philippines";
 
 // /destinations/[region]/[country]: the country page. Hero slider + counts ›
 // region/country bar › the Ledger chart map (every stay, linked) › in short ›
@@ -106,16 +108,28 @@ const CHAINS: Record<string, { key: string; label: string; sub: string; /** Wher
     { key: "thailand-gulf", label: "Gulf islands", sub: "Koh Samui and its neighbours, best December to June. Samui's own airport (USM) is minutes from most stays." },
     { key: "thailand-north", label: "The north", sub: "Chiang Mai on the Mae Ping and the Golden Triangle on the Mekong, best in the cool season, November to February." },
   ],
+  // The Philippines by island group (James, 2 Nov 2026). Months are the Department of Tourism's. Stays without a
+  // brand pin sit at their island or town, marked approximate (lib/content/philippines.ts APPROX).
+  philippines: [
+    { key: "philippines-palawan", label: "Palawan", tag: "below", sub: "El Nido and Taytay, Coron and the Calamian Islands, and Cuyo. El Nido is best December to April, Coron late November to May. Fly into El Nido (ENI) or Busuanga (USU)." },
+    { key: "philippines-sulu", label: "Tubbataha & the Sulu Sea", tag: "below", sub: "Tubbataha Reefs, a UNESCO marine park, as a dive flag, and the Underground River near Puerto Princesa (PPS), both at their UNESCO points." },
+    { key: "philippines-visayas", label: "The Visayas", sub: "Bohol's Panglao and Anda, Dauin and Apo Island on Negros, and Mactan by the Cebu hub (CEB). Apo Island is best November to May." },
+    { key: "philippines-siargao", label: "Siargao", sub: "General Luna and Cloud 9. March to September is the dry season; surf is biggest September to November. Fly into Sayak (IAO)." },
+    { key: "philippines-camiguin", label: "Camiguin", sub: "A volcanic island in the Bohol Sea, with Mount Hibok-Hibok above Mambajao and White Island offshore." },
+  ],
 };
 /** What the last view, the whole country, is called on the chain control. */
-const WHOLE_LABEL: Record<string, string> = { indonesia: "The whole archipelago", thailand: "All of Thailand" };
+const WHOLE_LABEL: Record<string, string> = { indonesia: "The whole archipelago", thailand: "All of Thailand", philippines: "All of the Philippines" };
+/** A stay's position: its filed pin, else (the Philippines) its island or town, approximate. */
+const posOf = (s: { slug: string; coords: { lat: number; lng: number } | null }) => s.coords ?? (APPROX[s.slug] ? { lat: APPROX[s.slug].lat, lng: APPROX[s.slug].lng } : null);
+const approxKind = (slug: string, kind: string) => (APPROX[slug] ? `${kind} · ${APPROX[slug].where}, approximate` : kind);
 
 function chainViews(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]): ChainView[] {
   const LIB = REGION_LIB as unknown as Record<string, ChartData>;
   const frames = chains.map((c) => ({ ...c, chart: LIB[c.key] })).filter((c) => c.chart);
   const coordsOf = (id: string) => {
     if (id.startsWith("voyage-")) { const j = journeysFor(slug).find((x) => `voyage-${x.ledgerId}` === id); return j ? routeStart(j.href) : null; }
-    return staysIn(slug).find((s) => s.slug === id)?.coords ?? null;
+    const st = staysIn(slug).find((s) => s.slug === id); return st ? posOf(st) : null;
   };
   const inFrame = (c: ChartData, p: { lat: number; lng: number }) => p.lng >= c.bounds.w && p.lng <= c.bounds.e && p.lat >= c.bounds.s && p.lat <= c.bounds.n;
   const chainOf = (id: string) => { const p = coordsOf(id); return p ? frames.find((f) => inFrame(f.chart, p))?.label ?? null : null; };
@@ -204,9 +218,10 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const flyInto = hubs.length ? hubs.filter((h) => h.kind === "airport" && h.code).slice(0, 2).map((h) => h.code).join(" · ") || c.flyInto : c.flyInto;
   const featured = pages.slice(0, 9);
   const journeys = journeysFor(c.slug);
-  const items: MapItem[] = all.filter((s) => s.coords).map((s) => {
-    const q = projectOn(chart, s.coords!.lat, s.coords!.lng);
-    return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
+  const items: MapItem[] = all.filter((s) => posOf(s)).map((s) => {
+    const p = posOf(s)!;
+    const q = projectOn(chart, p.lat, p.lng);
+    return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.coords ? s.category ?? "stay" : approxKind(s.slug, s.category ?? "stay"), href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
   });
   for (const r of RESERVES.filter((x) => x.stay.countrySlug === c.slug && x.stay.coords)) {
     const q = projectOn(chart, r.stay.coords!.lat, r.stay.coords!.lng);
@@ -292,6 +307,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <p className="text-[16px] ledger-muted max-w-md">{coming ? "The places the house plans around. Stays will be pinned here as each one is vetted and filed; until then, James plans the route with you." : "Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James."}</p>
             </div>
             {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : CHAINS[c.slug] ? <ChainChartMap country={c.name} views={chainViews(c.slug, c.name, chart, items, CHAINS[c.slug])} /> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
+            {c.slug === "philippines" && <p className="mt-4 text-[13.5px] ledger-muted italic max-w-3xl">Positions are approximate until each stay&rsquo;s pin is filed: stays whose brands publish no pin sit at their island or town. The red and white flags mark dive sites, one line each below.</p>}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
@@ -300,6 +316,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           {placeGuides(c.slug).length > 0 && (
             <Doors id="places" eyebrow={`Inside ${c.name}`} title={`Where to Go in ${c.name}`} doors={placeGuides(c.slug).map((g) => ({ name: g.name, href: g.path, image: guideSlides(g)[0]?.url ?? null, imageAlt: guideSlides(g)[0]?.alt, line: g.tagline, stays: (g.stays ?? []).length, bestMonths: g.facts.find(([k]) => k === "Best time")?.[1] }))} />
           )}
+
+          {c.slug === "philippines" && !coming && <PhilippinesSections />}
 
           {/* Destination card: one panel where the stays will be, inked as the Stays volume, the action in House Crimson */}
           {coming && (

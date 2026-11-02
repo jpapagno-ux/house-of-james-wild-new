@@ -41,6 +41,10 @@ export const UNESCO: UnescoSite[] = [
   { id: "978", name: "Old Town of Corfu", country: "greece", year: 2007, lat: 39.6243, lng: 19.9217 },
   { id: "1695", name: "Zagori Cultural Landscape", country: "greece", year: 2023, lat: 39.88, lng: 20.75 },
   { id: "1733", name: "Minoan Palatial Centres", country: "greece", year: 2025, lat: 35.298, lng: 25.163 },
+  // Philippines (the Philippines map, 2 Nov 2026): Tubbataha from UNESCO document 217721 (updated position),
+  // the Underground River from UNESCO document 217072.
+  { id: "653", name: "Tubbataha Reefs Natural Park", country: "philippines", year: 1993, lat: 8.902705, lng: 119.910237 },
+  { id: "652", name: "Puerto-Princesa Subterranean River National Park", country: "philippines", year: 1999, lat: 10.167, lng: 118.917 },
   // Transnational
   { id: "1459", name: "Qhapaq Ñan, Andean Road System", country: "chile,bolivia,peru,ecuador,argentina,colombia", year: 2014, lat: null, lng: null },
 ];

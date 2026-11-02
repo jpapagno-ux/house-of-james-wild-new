@@ -3316,25 +3316,103 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Palawan: December to April in El Nido (calmest seas), late November to May in Coron, November to May in Puerto Princesa. Siargao: March to September for the dry season, with the biggest surf from September to November. Visayas: November to May at Apo Island, December to May at Moalboal, both per the Department of Tourism."
+    ],
+    [
+     "Getting there",
+     "Fly into Manila, Clark or Cebu, then connect. Puerto Princesa International Airport (PPS) is about 1 hour 15 minutes from Manila. AirSwift flies to Lio Airport (ENI) in El Nido, about 1 hour 20 minutes from Manila. Coron is reached by flying to Busuanga, about 1 to 1.5 hours from Manila. Sayak Airport (IAO) on Siargao is about 2 hours from Manila and 1 hour from Cebu. Dumaguete Sibulan Airport (DGT) serves Dauin and Apo Island."
+    ],
+    [
+     "Who it suits",
+     "Island seekers, surfers, divers and families who want limestone lagoons, private islands and warm Filipino hospitality, from Palawan's Bacuit Bay and Calamian Islands to Siargao's breaks and the reefs of the Visayas."
+    ],
+    [
+     "Signature experiences",
+     "Island hopping in El Nido's Bacuit Archipelago of 45 islands and islets; Coron's lagoons and 1944 wrecks; the 8.2 km Puerto Princesa Underground River, a UNESCO site; surfing Cloud 9 on Siargao; Apo Island's community marine sanctuary; the sardine run at Moalboal; Tubbataha Reefs, a UNESCO marine park in the Sulu Sea."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit the Philippines?",
+     "a": "November to May is the dry season for most island areas. In El Nido the best window is December to April; in Coron, late November to May. Siargao's dry season runs March to September, and its biggest surf arrives September to November. June to October brings rain and boat cancellations."
+    },
+    {
+     "q": "Do I need a visa for the Philippines?",
+     "a": "Citizens of 157 countries, including the United States, United Kingdom, Canada, Australia and all EU states, may enter visa free for up to 30 days. You need a passport valid at least six months beyond your stay and a return or onward ticket. Extensions are made at a Bureau of Immigration office."
+    },
+    {
+     "q": "What is eTravel?",
+     "a": "eTravel is the free online arrival registration every arriving traveller completes, up to 72 hours before arrival, at etravel.gov.ph, the only official site. You show the QR code before boarding and on arrival."
+    },
+    {
+     "q": "How do you get to Palawan?",
+     "a": "Fly from Manila to Puerto Princesa (about 1 hour 15 minutes), to Lio Airport in El Nido on AirSwift (about 1 hour 20 minutes), or to Busuanga for Coron. Many island resorts then continue by boat."
+    },
+    {
+     "q": "What is the Puerto Princesa Underground River?",
+     "a": "It is an 8.2 km navigable river through limestone caves that flows straight into the sea, inside a UNESCO World Heritage park about 76 km northwest of Puerto Princesa. Visitor numbers are capped daily, so book two to four weeks ahead, especially December to May."
+    },
+    {
+     "q": "What are the Philippines' natural UNESCO World Heritage Sites?",
+     "a": "Tubbataha Reefs Natural Park, inscribed in 1993 and extended in 2006, and Puerto Princesa Subterranean River National Park, inscribed in 1999. The country has six World Heritage properties in all, including the Baroque Churches of the Philippines and the Rice Terraces of the Philippine Cordilleras."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Philippines",
+     "area": "Palawan",
      "note": "From the Ledger's best-months notes",
      "months": [
       "best",
       "best",
       "best",
       "best",
+      "best",
       "good",
       "good",
       "good",
       "good",
       "good",
+      "best",
+      "best"
+     ]
+    },
+    {
+     "area": "Siargao",
+     "note": "From the Ledger's best-months notes",
+     "months": [
       "good",
       "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good"
+     ]
+    },
+    {
+     "area": "Visayas",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
       "best"
      ]
     }
@@ -3342,16 +3420,20 @@
    "airports": [
     [
      "El Nido (ENI)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 6 stays in the Ledger here"
     ],
     [
-     "Sayak Airport (IAO)",
-     "Serves 1 stay in the Ledger here"
+     "Busuanga (USU)",
+     "Serves 4 stays in the Ledger here"
+    ],
+    [
+     "Bohol-Panglao International Airport (TAG)",
+     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "ENI · IAO",
-   "bestShort": "Dec–Apr",
+   "flyInto": "ENI · USU",
+   "bestShort": "Year-round",
    "atlasName": "Philippines"
   },
   {
@@ -4022,7 +4104,7 @@
   },
   {
    "slug": "tahiti",
-   "name": "Tahiti",
+   "name": "French Polynesia (Tahiti)",
    "region": "oceania",
    "regionName": "Oceania",
    "ledgerId": "DST-2026-000056",
@@ -4030,7 +4112,7 @@
    "leading": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour. Waterfalls slip through dense forest, black sand beaches curve along the coast, and flowers scent the warm air. Stays here offer tranquility framed by ocean horizons and tropical greenery. Experience the clarity of the lagoon through snorkeling or kayaking, explore coastal paths, or relax into the island’s unhurried pace. Tahiti invites deep rest shaped by nature’s beauty.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
-    "alt": "Tahiti, Oceania"
+    "alt": "French Polynesia (Tahiti), Oceania"
    },
    "story": [
     {
@@ -4055,7 +4137,7 @@
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
-      "alt": "Tahiti: A Remote Paradise of Water, Light, and Island Life"
+      "alt": "French Polynesia (Tahiti): A Remote Paradise of Water, Light, and Island Life"
      }
     },
     {
@@ -4080,49 +4162,99 @@
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
-      "alt": "Tahiti: Where Island Life and Ocean Beauty Flow Together"
+      "alt": "French Polynesia (Tahiti): Where Island Life and Ocean Beauty Flow Together"
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Dry season May to October, wet season November to April, 20 to 30°C year round. Society Islands: lagoons best May to October. Tuamotu: diving all year, warmest water November to April. Marquesas: year round. Austral: whales July to October. Gambier: lagoon outings November to May. Surf at Teahupo'o: May to October southern swells (Tahiti Tourisme)."
+    ],
+    [
+     "Getting there",
+     "All international flights land at Tahiti Faa'a International Airport (PPT). Nonstop from Los Angeles (about 8 hours), San Francisco (about 8h30) and Honolulu (about 6 hours). Air Tahiti then flies to all five archipelagos: Moorea in 15 minutes, Raiatea and Huahine 40 to 45, Bora Bora 50, Rangiroa 1 hour, Fakarava 1h10. Ferries cross to Moorea in about 30 minutes."
+    ],
+    [
+     "Who it suits",
+     "Couples on lagoon islands, divers in the Tuamotu passes, surfers at Teahupo'o, and travelers who want culture and hiking in the Marquesas."
+    ],
+    [
+     "Signature experiences",
+     "Diving Fakarava's Tumakohua Pass and Rangiroa's Tiputa Pass, watching Teahupo'o break, Taputapuātea on Raiatea and the Marquesas (both UNESCO World Heritage), and island hopping by air, ferry or small ship."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit French Polynesia?",
+     "a": "May to October is the dry season, with sunny days and lower humidity; November to April is warmer and wetter. Diving in the Tuamotu is good all year, and Teahupo'o's big swells come May to October."
+    },
+    {
+     "q": "Do US and EU travelers need a visa for Tahiti?",
+     "a": "EU citizens need no visa, and Tahiti Tourisme says many countries are exempt for tourist stays under three months. Everyone needs a valid passport. Check France's official visa site for your nationality before you book."
+    },
+    {
+     "q": "How do you fly to Tahiti?",
+     "a": "Every international flight lands at Tahiti Faa'a (PPT). Nonstops run from Los Angeles in about 8 hours, San Francisco in about 8h30 and Honolulu in about 6."
+    },
+    {
+     "q": "How do you get between the islands?",
+     "a": "Air Tahiti flies to all five archipelagos and sells multi island passes; ferries link Tahiti and Moorea in about 30 minutes and run to Huahine, Raiatea, Taha'a and Bora Bora two or three times a week; small ships such as Windstar and Aranui 5 cover longer routes."
+    },
+    {
+     "q": "What are the five archipelagos?",
+     "a": "The Society Islands (Tahiti, Moorea, Bora Bora, Taha'a), the Tuamotu (the largest chain of atolls in the world, with Rangiroa, Fakarava and Tikehau), the Marquesas, the Austral Islands and the Gambier."
+    },
+    {
+     "q": "Is any of French Polynesia a UNESCO site?",
+     "a": "Yes. Taputapuātea on Raiatea was inscribed in 2017 and Te Henua Enata, the Marquesas Islands, in 2024. Fakarava and six neighbouring atolls form a UNESCO biosphere reserve."
+    },
+    {
+     "q": "How do you get to Taha'a?",
+     "a": "Taha'a has no airport. Fly from Tahiti to Raiatea with Air Tahiti, then cross the shared lagoon by boat; Tahiti Tourisme puts the crossing at about 30 minutes."
+    },
+    {
+     "q": "Can you fly from Bora Bora straight to the atolls?",
+     "a": "Yes. Air Tahiti flies Bora Bora direct to Rangiroa, Tikehau and Fakarava, so a trip can go from the Society Islands to the Tuamotu without returning to Tahiti."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Tahiti",
+     "area": "Across French Polynesia (Tahiti)",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "good",
-      "good",
       "best",
       "best",
       "best",
       "best",
       "best",
       "best",
-      "good",
-      "good"
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best"
      ]
     }
    ],
    "airports": [
     [
      "Tahiti Faa'a International Airport (PPT)",
-     "Serves 6 stays in the Ledger here"
+     "Serves 7 stays in the Ledger here"
+    ],
+    [
+     "Bora Bora Airport (BOB)",
+     "Serves 3 stays in the Ledger here"
     ],
     [
      "Raiatea Airport (RFP)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Bora Bora Airport (BOB)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "PPT · RFP",
+   "flyInto": "PPT · BOB",
    "bestShort": "May–Oct",
    "atlasName": "Fr. Polynesia"
   },

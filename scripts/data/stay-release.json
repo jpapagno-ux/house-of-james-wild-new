@@ -1166,8 +1166,9 @@
    "batch": "2026-10-28 Tahiti"
   },
   {
-   "slug": "la-tahaa",
-   "batch": "2026-10-28 Tahiti"
+   "slug": "le-tahaa",
+   "batch": "2026-10-28 Tahiti",
+   "note": "Renamed from la-tahaa (typo), 2 Nov 2026; /stays/la-tahaa redirects."
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -1927,6 +1928,78 @@
   },
   {
    "slug": "el-nido-resorts-pangulasian-island",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "intercontinental-tahiti-resort-spa",
+   "batch": "2026-11-02 French Polynesia"
+  },
+  {
+   "slug": "the-st-regis-bora-bora-resort",
+   "batch": "2026-11-02 French Polynesia"
+  },
+  {
+   "slug": "conrad-bora-bora-nui",
+   "batch": "2026-11-02 French Polynesia"
+  },
+  {
+   "slug": "amanpulo",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "amorita-resort",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "amun-ini-beach-resort-and-spa",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "atmosphere-resorts-and-spa",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "banwa-private-island",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "bintana-sa-paraiso",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "busuanga-bay-lodge",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "cauayan-boutique-private-island",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "discovery-coron",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "flower-island-resort",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "hotel-okura-manila",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "kalinaw-resort",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "sangat-island-dive-resort",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "the-bayleaf-intramuros",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "two-seasons-coron-island-resort",
    "batch": "2026-11-02 library sync"
   }
  ]

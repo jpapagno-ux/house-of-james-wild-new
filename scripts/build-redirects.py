@@ -64,6 +64,7 @@ def country_from_title(t):
 # Hand-mapped records whose old slug differs from the new one
 SPECIAL = {
     "aliikai-voyage": ("/voyages/ships/aliikai", "Aliikai vessel profile"),
+    "la-tahaa": ("/stays/le-tahaa", "renamed stay (slug typo), 2 Nov 2026"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
     "tswalu-motse": ("/safaris/tswalu-reserve/motse", "Tswalu camp"),
     "tswalu-loapi-tented-suites": ("/safaris/tswalu-reserve/loapi", "Tswalu camp"),

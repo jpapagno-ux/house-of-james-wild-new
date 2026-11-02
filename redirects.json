@@ -170,6 +170,11 @@
     "statusCode": 301
   },
   {
+    "source": "/stays/la-tahaa",
+    "destination": "/stays/le-tahaa",
+    "permanent": true
+  },
+  {
     "source": "/stays/club-paradise-palawan",
     "destination": "/stays/discovery-coron",
     "permanent": true

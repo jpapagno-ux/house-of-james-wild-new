@@ -326,6 +326,12 @@ export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: s
   return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord });
 }
 
+/** Real advisors who carry a Wild Pathway (Library DNA), James first, open or waitlisted only. */
+export function whoCarries(pathwayId: string): Advisor[] {
+  const real = ADVISORS.filter((a) => !a.sample && a.dna?.pathways.includes(pathwayId) && a.dna.availability !== "closed");
+  return real.sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0));
+}
+
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });
 export const initials = (name: string) => name.split(" ").map((p) => p[0]).join("").slice(0, 2).toUpperCase();
 

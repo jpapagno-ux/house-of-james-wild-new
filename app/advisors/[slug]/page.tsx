@@ -8,24 +8,28 @@ import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { DeskFolios, DeskIdCard, DeskSends, DeskSheet, DeskTies } from "@/components/advisor/DeskPage";
 import { Prose, PlanClose } from "@/components/about/Parts";
-import { ADVISORS, advisorBySlug } from "@/lib/content/advisors";
+import { ADVISORS, advisorProfile } from "@/lib/content/advisors";
+import AdvisorDnaBlock from "@/components/advisor/AdvisorDnaBlock";
+import { PATHWAYS, type PathwayId } from "@/lib/pathways";
+import { COUNTRIES } from "@/lib/content/countries";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
-// /advisors/[slug]: an advisor's profile. Built only for advisors with a bio
-// on file (James's is /about/founder). Hero › in short › about › first-hand
-// travel › ask about › plan with › the rest of the team. Noindex until the
-// advisor's title and copy are approved.
+// /advisors/[slug]: an advisor's profile. Built for every real advisor with a bio
+// on file OR Library DNA (Stage 4b, 2 Nov 2026); James's is /about/founder. Hero ›
+// in short › Advisor DNA (what the Library holds: Pathways, places, their line, their
+// marks) › about (when a bio exists) › plan with › the rest of the team. Noindex until
+// the advisor's title and copy are approved (James's call per advisor).
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return ADVISORS.filter((a) => a.bio.length && a.slug !== "james-papagno").map((a) => ({ slug: a.slug }));
+  return ADVISORS.filter((a) => (a.bio.length || (!a.sample && a.dna)) && a.slug !== "james-papagno").map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const a = advisorBySlug((await params).slug);
+  const a = advisorProfile((await params).slug);
   if (!a) return {};
   return buildMetadata({
     title: `${a.name}, ${a.role} at James Wild & Co`,
@@ -37,11 +41,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function AdvisorPage({ params }: { params: Promise<{ slug: string }> }) {
-  const a = advisorBySlug((await params).slug);
+  const a = advisorProfile((await params).slug);
   if (!a) notFound();
   const path = `/advisors/${a.slug}`;
   const others = ADVISORS.filter((x) => x.slug !== a.slug && (x.portrait || x.bio.length));
-  const answer = `${a.name} is a ${a.role.toLowerCase()} with James Wild & Co, the founder-led travel house exploring since 1982. ${a.intro ?? ""} ${a.firstName} plans from the Ledger of stays, camps, ships and routes James has vetted in person, and you can start planning with ${a.firstName} directly.`;
+  const dnaPlaces = (a.dna?.countries ?? []).map((c) => COUNTRIES.find((x) => x.slug === c)?.name ?? c.replace(/-/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase()));
+  const dnaPaths = (a.dna?.pathways ?? []).map((p) => PATHWAYS[p as PathwayId]?.name ?? p);
+  const answer = `${a.name} (${a.ledgerId}) is a ${a.role.toLowerCase()} with James Wild & Co, the founder-led travel house exploring since 1982. ${a.intro ?? ""}${dnaPlaces.length ? ` ${a.firstName} knows ${dnaPlaces.join(", ")}.` : ""}${dnaPaths.length ? ` Journeys ${a.firstName} plans: ${dnaPaths.join(", ")}.` : ""}${a.dna?.matchNote ? ` In ${a.firstName}'s words: "${a.dna.matchNote}"` : ""} ${a.firstName} plans from the Ledger of stays, camps, ships and routes James has vetted in person, and you can start planning with ${a.firstName} directly.`;
   return (
     <>
       <SiteHeader />
@@ -62,6 +68,8 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
 
           <div className="mt-12"><AnswerBlock>{answer}</AnswerBlock></div>
 
+          <AdvisorDnaBlock a={a} />
+
           {a.desk && (
             <>
               <div className="mt-10"><DeskIdCard a={a} /></div>
@@ -71,7 +79,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             </>
           )}
 
-          <section className="mt-10 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16" aria-labelledby="about-heading">
+          {a.bio.length > 0 && <section className="mt-10 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16" aria-labelledby="about-heading">
             <div>
               <p className="ledger-eyebrow ledger-crimson">About {a.firstName}</p>
               <h2 id="about-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">How {a.firstName} Travels</h2>
@@ -95,7 +103,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
                 <p className="mt-2 text-[16px] ledger-muted leading-relaxed">Tell {a.firstName} where you&rsquo;re drawn and when. You&rsquo;ll get a drafted journey from the Ledger, a conversation to shape it, and a quote. Nothing is booked until you&rsquo;ve approved it.</p>
               </div>
             </aside>
-          </section>
+          </section>}
 
           {a.desk && <DeskTies a={a} />}
 
@@ -116,7 +124,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
           <PlanClose title={`Start with ${a.firstName}.`} line={`Send ${a.firstName} the place you can't stop thinking about. You'll hear back from a person, not a form.`} />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path) })} />
+      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.dna?.matchNote ?? a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path), identifier: { "@type": "PropertyValue", propertyID: "Advisor ID", value: a.ledgerId }, ...(dnaPlaces.length || dnaPaths.length ? { knowsAbout: [...dnaPlaces, ...dnaPaths] } : {}), ...(a.dna?.languages.length ? { knowsLanguage: a.dna.languages } : {}) })} />
     </>
   );
 }

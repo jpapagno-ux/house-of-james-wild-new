@@ -160,7 +160,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/albert-alvarez", // Stage 4b: profile from Library DNA
   },
   {
     slug: "sofia-marchetti",
@@ -250,7 +250,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/carlos-alger", // Stage 4b: profile from Library DNA
   },
   {
     // James, 1 Nov 2026: Marissa, his daughter, joins the roster. ADV issued by the Library
@@ -267,7 +267,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/marissa-held", // Stage 4b: profile from Library DNA
   },
 ];
 
@@ -292,6 +292,8 @@ export const FIELD_PARTNERS: FieldPartner[] = [
 ];
 
 export const advisorBySlug = (slug: string) => ADVISORS.find((a) => a.slug === slug && a.bio.length > 0);
+/** An advisor with a profile page: a bio on file (as before, stand-ins included and labelled), or a real advisor with Library DNA (Stage 4b). */
+export const advisorProfile = (slug: string) => ADVISORS.find((a) => a.slug === slug && (a.bio.length > 0 || (!a.sample && !!a.dna)));
 
 // ---- The Advisor Desk: who knows a place ----------------------------------
 // Advisors with a desk, founder excluded (his page is /about/founder).

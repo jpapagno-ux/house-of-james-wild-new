@@ -12,6 +12,7 @@ export const COMING_PATHWAYS: Record<string, ComingPathway> = {
   "beyond-xaranna-okavango-delta-camp-by-and-beyond": { id: "PATH-04", basis: "suggested", why: "Okavango Delta wildlife camp, as Singita Elela" },
   "anantara-siam-bangkok": { id: "PATH-08", basis: "suggested", why: "Bangkok landmark hotel; Jim Thompson Suite; heritage and culture" },
   "the-chedi-aquarius-koh-chang": { id: "PATH-02", basis: "suggested", why: "Island resort on Koh Chang, Gulf of Thailand" },
+  "intercontinental-bora-bora-thalasso-spa": { id: "PATH-02", basis: "suggested", why: "Overwater villas on a Bora Bora motu, as the house files Conrad, St. Regis and Le Bora Bora" },
   "six-senses-uluwatu": { id: "PATH-05", basis: "suggested", why: "Clifftop wellness resort, as the house files Six Senses and Anantara Ubud" },
 };
 

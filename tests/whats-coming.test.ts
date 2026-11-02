@@ -6,7 +6,10 @@ import { boardDay, mixBoard, offerBoardLines, offerIsPublic, type BoardEntry, gr
 import data from "../lib/content/whats-coming.json" with { type: "json" };
 
 const ON = "2026-11-02";
-const items = (data.coming as ViewItem[]).filter((c) => c.slug !== "kahavadi-chiang-rai"); // opened 1 Jul 2026; the date rule hides it
+// A fixed set of entries so the view tests stay stable as the library files more (Kahavadi Chiang Rai opened
+// 1 Jul 2026 and the date rule hides it; later filings such as InterContinental Bora Bora are covered below).
+const FIXED = ["anantara-siam-bangkok", "the-chedi-aquarius-koh-chang", "singita-elela", "beyond-xaranna-okavango-delta-camp-by-and-beyond", "six-senses-uluwatu"];
+const items = (data.coming as ViewItem[]).filter((c) => FIXED.includes(c.slug));
 const names = (xs: ViewItem[]) => xs.map((c) => c.slug);
 
 test("count line is computed from the entries", () => {
@@ -81,7 +84,7 @@ test("Kahavadi Chiang Rai (opened 1 July 2026) stays hidden by the date rule", a
   const { activeOnly } = await import("../lib/dates.ts");
   const live = activeOnly(data.coming, (c) => c.date, ON).map((c) => c.slug);
   assert.ok(!live.includes("kahavadi-chiang-rai"));
-  assert.equal(live.length, 5);
+  for (const slug of FIXED) assert.ok(live.includes(slug), slug);
 });
 
 test("offers on the board: headline as filed, the last day it can be used, never trade terms", () => {

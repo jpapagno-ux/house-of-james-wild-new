@@ -80,5 +80,29 @@ export function nextDate<T>(items: readonly T[], getStart: (item: T) => string |
   return starts[0] ?? null;
 }
 
+/** An ISO day moved by `n` days (negative for earlier); null when the date cannot be read. */
+export function addDays(date: string | null | undefined, n: number): string | null {
+  const e = endOf(date);
+  if (!e) return null;
+  const d = new Date(`${e}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * Offers (James, 2 Nov 2026): an offer shows until 30 days before it ends; a Final Call shows until
+ * 14 days before its departure (the one exception), never past its own window. Returns the last day
+ * the offer may show, for activeOnly.
+ */
+export const OFFER_LEAD_DAYS = 30;
+export const FINAL_CALL_LEAD_DAYS = 14;
+export function offerShowsUntil(o: { program: string; travel: { to: string }; departure?: string }): string | null {
+  if (o.program === "Final Call" && o.departure) {
+    const a = addDays(o.departure, -FINAL_CALL_LEAD_DAYS), b = endOf(o.travel.to);
+    return a && b && b < a ? b : a;
+  }
+  return addDays(o.travel.to, -OFFER_LEAD_DAYS);
+}
+
 /** The line shown wherever a ship or voyage has no remaining dated departures. */
 export const NO_DATES = { title: "New dates to be announced", line: "The published dates have all sailed. Ask James for the next season's dates and fares." };

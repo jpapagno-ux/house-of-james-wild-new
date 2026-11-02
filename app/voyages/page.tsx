@@ -20,7 +20,8 @@ import { allCards, shipCard, tally, typeCards, watersCards, VOYAGE_TYPES, WATERS
 import { registryShip, type VoyageType, type Waters } from "@/lib/content/ships/registry";
 import { usd } from "@/lib/pricing";
 import { polarTile } from "@/lib/content/ships/hubs";
-import { categoryTiles } from "@/lib/content/ships/categories";
+import { categoryTiles, mergeOffers } from "@/lib/content/ships/categories";
+import { hubOffers } from "@/lib/content/offers/hub";
 import { POLAR_VOYAGES } from "@/lib/content/polar";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
@@ -62,6 +63,7 @@ export default function VoyagesHub() {
   ];
   const sailed = [shipCard(aliikai)!];
   const search = searchItems();
+  const voyageOffers = mergeOffers(hubOffers().filter((o) => o.volumeKey === "voyages"));
   const charters = cards.filter((c) => c.types.includes("charter"));
   return (
     <div className="theme-sea theme-sea-page">
@@ -92,6 +94,16 @@ export default function VoyagesHub() {
               <Link href={VOYAGE_TYPES.charter.path} className="mt-5 ledger-btn ledger-btn--solid">See every charter</Link>
             </div>
             <p className="md:text-right"><span className="ledger-eyebrow block">Aliikai, the whole yacht</span><span className="ledger-display text-5xl ledger-crimson">{usd(aliikai.charter!.from!)}</span><span className="block text-[13px] ledger-muted">per night · up to 15 guests · + 11% tax</span></p>
+          </div>
+        </section>
+        <section className="mt-12 md:mt-16" aria-labelledby="horizon-h">
+          <div className="grid md:grid-cols-[1.3fr_1fr] gap-6 md:gap-10 items-center ledger-paper border ledger-border p-6 md:p-8">
+            <div>
+              <p className="ledger-eyebrow ledger-crimson">On the Horizon</p>
+              <h2 id="horizon-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Which Voyage Offers Are On Now?</h2>
+              <p className="mt-3 text-[16px] leading-relaxed">{voyageOffers.length ? `${voyageOffers.length} voyage ${voyageOffers.length === 1 ? "offer is" : "offers are"} filed: ${list(voyageOffers.map((o) => o.headline.replace(/^Honeymoon: /, "honeymoon, ")))}.` : "No voyage offers are filed right now."} Every one sits beside its real terms.</p>
+              <Link href="/offers#voyages" className="mt-5 ledger-btn ledger-btn--solid">See every offer</Link>
+            </div>
           </div>
         </section>
         <AdvisorScroll volume="voyages" title="Who sails with the small ships" unlinked={["gatherings"]} />

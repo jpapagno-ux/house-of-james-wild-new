@@ -7,15 +7,17 @@
 // reused, even when an offer ends or is withdrawn.
 //
 // Program names (James, 27 Oct 2026): "Worth Another Night" = a free night on
-// a shorter stay; "Time Rewarded" = a reward for staying longer; "On the
-// Horizon" = suggested name for voyage savings, not yet in use. "Final Call"
+// a shorter stay; "Time Rewarded" = a reward for staying longer. "On the
+// Horizon" (James, 2 Nov 2026) = the site-wide name for offers: one hub,
+// /offers, with a section per volume; Stays keep their two marks inside it and
+// voyage offers carry a type (VoyageOfferType). "Final Call"
 // (James, 29 Oct 2026) = last-minute savings on a departure, Voyages and
 // Overland only; drawn as a split-flap board (components/ledger/OfferPanel). "Book Early"
 // = a hotel's early-booking discount (working name, James to confirm).
 
 import type { VolumeKey } from "@/lib/volumes";
 import LIBRARY from "./library.json";
-import { activeOnly, today } from "@/lib/dates";
+import { activeOnly, offerShowsUntil, today } from "@/lib/dates";
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection" | "itinerary";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
@@ -147,8 +149,9 @@ export function voyageOfferType(o: Pick<Offer, "id" | "program" | "headline" | "
 
 /** When an offer ends: its travel window, or a Final Call's departure date if that comes first. */
 export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
-/** Offers a page may show: Live and not past its end (lib/dates.ts, the one date rule). */
-export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerEnd, on);
+/** Offers a page may show: Live, and inside the date rule (lib/dates.ts): every offer hides 30 days
+ *  before it ends; a Final Call shows until 14 days before its departure (James, 2 Nov 2026). */
+export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerShowsUntil, on);
 export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref || (o.refs ?? []).includes(ref));
 export const offersForPartner = (partner: string, on = today()) => liveOffers(on).filter((o) => o.partner === partner);
 /** Live voyage offers of one type (the honeymoon page shows Celebrations). */

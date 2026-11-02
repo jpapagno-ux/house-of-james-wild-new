@@ -1,4 +1,5 @@
-import type { Offer } from "@/lib/content/offers/offers";
+import { voyageOfferType, type Offer } from "@/lib/content/offers/offers";
+import { dayLabel } from "@/lib/content/ships/types";
 import { VOLUME_STYLES, type VolumeKey } from "@/lib/volumes";
 import { FinalCallBoard, TimeMark } from "@/components/ledger/VolumeKit";
 
@@ -13,14 +14,17 @@ export function OfferCard({ offer, volume: pageVolume }: { offer: Offer; volume:
   const volume = offer.volume ?? pageVolume;
   const v = VOLUME_STYLES[volume];
   const late = offer.program === "Final Call" && LATE.includes(volume);
+  // Voyage offers sit under On the Horizon with their type (James, 2 Nov 2026); the others keep their program.
+  const label = volume === "voyages" ? `On the Horizon · ${voyageOfferType(offer)}` : offer.program;
   return (
     <div className="border bg-white p-5 md:p-6 flex flex-col gap-4" style={{ borderColor: v.leather }}>
       <div className="flex items-center justify-center min-h-[150px]">
         {late ? <FinalCallBoard volume={volume as "voyages" | "overland"} saving={offer.headline.length <= 12 ? offer.headline : "SAVE NOW"} cell={24} /> : <TimeMark volume={volume} size={140} />}
       </div>
       <div>
-        <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: v.leather }}>{offer.program}{late && v.finalCall ? ` · ${v.finalCall}` : ""}</p>
+        <p className="font-mono text-[10.5px] tracking-[0.18em] uppercase" style={{ color: v.leather }}>{label}{late && v.finalCall ? ` · ${v.finalCall}` : ""}</p>
         <p className="ledger-display text-[1.6rem] leading-tight mt-1">{offer.headline}</p>
+        {late && offer.departure && <p className="mt-1 font-mono text-[12px] tracking-[0.12em] uppercase">Departs {dayLabel(offer.departure)}</p>}
         <p className="mt-2 text-[15px] leading-relaxed">{offer.name} · {late || offer.bookingWindow || /^(travel|book)\b/i.test(offer.travel.text) ? offer.travel.text : `travel ${offer.travel.text}`}.{offer.conditions ? ` ${offer.conditions}` : ""}</p>
         <p className="mt-2 font-mono text-[10.5px] ledger-muted">{offer.id} · terms checked {offer.checked}</p>
       </div>

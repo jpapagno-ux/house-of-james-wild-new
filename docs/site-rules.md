@@ -17,11 +17,16 @@ pull new dates.
 Never write `new Date()` comparisons for content elsewhere; call the helper. Tests:
 `tests/dates.test.ts` (each passes a fixed "today").
 
+**Offers: the 30-day rule (James, 2 Nov 2026).** An offer stops showing 30 days before its window
+ends, so nobody is shown a saving they can no longer use. Final Call is the one exception: it shows
+until 14 days before its departure, with the departure date printed, never a countdown. Both read
+`offerShowsUntil` in `lib/dates.ts`.
+
 **What it covers**
 
 | Content | Where | Ends on |
 |---|---|---|
-| Offers (Offer Ledger, Cayuga cards) | `lib/content/offers/offers.ts` `liveOffers()` | travel window end, or a Final Call's departure if earlier |
+| Offers (Offer Ledger, Cayuga cards, On the Horizon) | `lib/content/offers/offers.ts` `liveOffers()` | 30 days before the travel or booking window ends; a Final Call 14 days before its departure (`offerShowsUntil`) |
 | Nile ship departures and season bands | `lib/content/ships/nile/index.ts` | `dateTo`, else `date` (a band under way stays) |
 | Aliikai sailings and voyage-page sailings | `lib/content/ships/aliikai.ts`, `lib/content/trips.ts` | the sailing date |
 | House Sessions | `lib/content/workshops.ts` | the session's day; then only its recording shows |

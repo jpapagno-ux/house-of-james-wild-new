@@ -14,6 +14,8 @@ import { shipMap } from "@/lib/content/ships/maps";
 import ShipTemplate from "./ShipTemplate";
 import CabinsDeck from "./CabinsDeck";
 import DatesRates from "./DatesRates";
+import DatesGrid from "./DatesGrid";
+import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
 import ShipGlance from "./ShipGlance";
 
@@ -54,6 +56,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
   const ages = s.glance?.ages ?? factOf(s, /child|age/i);
   const route = s.glance?.route ?? routeOf(s);
   const plan = `/plan?trip=${encodeURIComponent(s.name)}`;
+  const planFor = (what: string, date: string, full: boolean) => `/plan?trip=${encodeURIComponent(what)}&date=${encodeURIComponent(date)}${full ? "&waitlist=1" : ""}`;
   const t = (x: string) => undash(x);
   const map = shipMap(entry);
   const glanceBasis = basis === "per-night" && price.kind === "cruise" ? "per person for the voyage, two sharing, plus tax" : price.basis;
@@ -175,7 +178,10 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={datesIntro} />
             {s.fleetSchedule && <p className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">The {s.operator} fleet schedule</span>{t(s.fleetSchedule)}</p>}
-            <DatesRates ship={s.fleetSchedule ? `${s.operator} fleet` : s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={cruise} basis={basis} title={journeys.length ? "Cruise fares by season" : s.fleetSchedule ? `${s.operator} departures, fleet wide` : undefined} note={publicNote(s.pricesNote)} />
+            {cruise.length > 0 && <>
+              {(journeys.length > 0 || s.fleetSchedule) && <h3 className="mt-8 ledger-display text-[22px] md:text-[24px]">{journeys.length ? "Cruise fares by season" : `${s.operator} departures, fleet wide`}</h3>}
+              <DatesGrid ship={s.name} data={datesData(s, planFor)} note={publicNote(s.pricesNote)} />
+            </>}
             <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} basis={basis} title={`Aboard ${s.name} inside ${s.operator} journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">

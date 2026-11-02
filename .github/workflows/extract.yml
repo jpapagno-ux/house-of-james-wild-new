@@ -1,0 +1,26 @@
+name: Extract Rascal brochure photos (temporary)
+on:
+  push:
+    branches: [tmp/rascal-photos]
+permissions:
+  contents: write
+jobs:
+  x:
+    if: "!contains(github.event.head_commit.message, 'extracted')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pymupdf pillow
+      - run: |
+          set -x
+          mkdir -p pdf out
+          B="https://www.rascalvoyages.com/hubfs"
+          curl -sSL -A "Mozilla/5.0" -o pdf/rascal.pdf "$B/13.%20Yacht%20Information/Rascal%20Voyages%20RASCAL%20Yacht%20Info%20Deck%202026.pdf"
+          curl -sSL -A "Mozilla/5.0" -o pdf/rebel.pdf "$B/13.%20Yacht%20Information/Rascal%20Voyages%20REBEL%20Yacht%20Info%20Deck%202026.pdf"
+          curl -sSL -A "Mozilla/5.0" -o pdf/el-aleph.pdf "$B/13.%20Yacht%20Information/Rascal%20Voyages%20EL%20ALEPH%202025.pdf"
+          for n in Komodo "Raja%20Ampat" "Spice%20Islands" "Ring%20of%20Fire" "Eastern%20Lesser%20Sunda" Wakatobi; do f=$(echo $n | sed 's/%20/-/g'); curl -sSL -A "Mozilla/5.0" -o "pdf/it-$f.pdf" "$B/12.%20Itineraries/Itineraries%202025/Rascal%20Voyages%20${n}%20Itinerary%202025.pdf" || true; done
+          ls -la pdf
+          python3 extract.py
+      - run: |
+          git config user.name "extract-bot"; git config user.email "noreply@github.com"
+          git add out; git commit -m "extracted"; git push

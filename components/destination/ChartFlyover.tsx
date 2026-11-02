@@ -27,9 +27,9 @@ const STARS: [number, number, number, number][] = (() => {
 })();
 const btn = "inline-flex items-center gap-1.5 bg-paper/90 border ledger-border px-2 py-1 sm:px-3 sm:py-1.5 font-mono text-[9.5px] sm:text-[10.5px] tracking-[0.12em] uppercase";
 
-export default function ChartFlyover({ from, to, fromName, title, line, pins, unesco, notes, focus, frames = [] }: {
+export default function ChartFlyover({ from, to, fromName, title, line, pins, unpinned = [], unesco, notes, focus, frames = [] }: {
   from: ChartData; to: ChartData; fromName: string; title: string; line: string;
-  pins: FlyPin[]; unesco: FlyUnesco[]; notes: string[]; frames?: FlyFrame[];
+  pins: FlyPin[]; unpinned?: { name: string; href: string }[]; unesco: FlyUnesco[]; notes: string[]; frames?: FlyFrame[];
   /** After landing, ring one feature of the close chart (a salt flat) and offer a closer zoom onto it. */
   focus?: { name: string; line: string; zoomLabel: string; night?: string };
 }) {
@@ -204,10 +204,11 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
           <p className="ledger-eyebrow ledger-crimson inline-flex items-center gap-1.5"><Plane className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />The chart, flying in</p>
           <h3 id="flyover-title" className="ledger-display text-[1.6rem] md:text-[2rem] mt-2 leading-tight">{title}</h3>
           <p className="mt-3 text-[16px] leading-relaxed ledger-muted">{line}</p>
-          {pins.length > 0 && (
+          {pins.length + unpinned.length > 0 && (
             <>
               <p className="ledger-eyebrow mt-6">Stays on this chart</p>
               <ul className="mt-2 space-y-1.5 text-[15px]">
+                {unpinned.map((p) => <li key={p.href} className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full border-2 border-dashed border-ink bg-paper" aria-hidden="true" /><Link href={p.href} className="underline underline-offset-4">{p.name}</Link><span className="text-[12px] ledger-muted">· pin to come</span></li>)}
                 {pins.map((p) => <li key={p.href} className="flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full border-2 border-ink bg-paper" aria-hidden="true" /><Link href={p.href} className="underline underline-offset-4">{p.name}</Link></li>)}
               </ul>
             </>

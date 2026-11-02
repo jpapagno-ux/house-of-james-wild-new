@@ -23,7 +23,7 @@ const FLYOVERS: Record<string, Fly> = {
 
 const charts = REGION_LIB as unknown as Record<string, ChartData>;
 export type FlyFrame = { src: string; alt: string; href: string; name: string; night: boolean };
-export type FlyoverProps = { from: ChartData; to: ChartData; fromName: string; title: string; line: string; pins: FlyPin[]; unesco: FlyUnesco[]; notes: string[]; focus?: Fly["focus"]; frames: FlyFrame[] };
+export type FlyoverProps = { from: ChartData; to: ChartData; fromName: string; title: string; line: string; pins: FlyPin[]; unpinned: { name: string; href: string }[]; unesco: FlyUnesco[]; notes: string[]; focus?: Fly["focus"]; frames: FlyFrame[] };
 
 export function flyover(key: string): FlyoverProps | null {
   const f = FLYOVERS[key];
@@ -39,7 +39,9 @@ export function flyover(key: string): FlyoverProps | null {
       .filter((u, i, a) => u && a.indexOf(u) === i && !u.endsWith(".")) // a truncated file name never renders
       .slice(0, 4)
       .map((src) => ({ src, alt: `${s.name}, ${f.title.replace(/^The /, "the ")}`, href: `/stays/${s.slug}`, name: s.name, night: /night|dusk|star|firepit/i.test(src) })));
+  // Stays on the chart without a confirmed pin yet (Explora Uyuni): listed and linked, not drawn.
+  const unpinned = STAY_PAGES.filter((s) => f.also?.includes(s.slug) && !pins.some((p) => p.href === `/stays/${s.slug}`)).map((s) => ({ name: s.name, href: `/stays/${s.slug}` }));
   const ids = new Set((to.overlays?.unesco ?? []).map((u) => u.id));
   const unesco = UNESCO.filter((u) => ids.has(u.id)).map((u) => ({ id: u.id, name: u.name, year: u.year, url: unescoUrl(u.id) }));
-  return { from, to, fromName: f.fromName, title: f.title, line: f.line, pins, unesco, notes: f.notes, focus: f.focus, frames };
+  return { from, to, fromName: f.fromName, title: f.title, line: f.line, pins, unesco, notes: f.notes, focus: f.focus, frames, unpinned };
 }

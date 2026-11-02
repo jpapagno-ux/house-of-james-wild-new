@@ -1529,30 +1529,16 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Ecuador & Galápagos",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good"
-     ]
-    }
+   "months": [],
+   "airports": [
+    [
+     "Seymour Airport (GPS)",
+     "Serves 2 stays in the Ledger here"
+    ]
    ],
-   "airports": [],
    "transfers": [],
-   "flyInto": "Ask James",
-   "bestShort": "Jun–Nov",
+   "flyInto": "GPS",
+   "bestShort": "Ask James",
    "atlasName": "Ecuador"
   },
   {

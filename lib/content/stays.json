@@ -2965,8 +2965,13 @@
    "category": "hotel",
    "tagline": "Elevated Jungle Serenity",
    "quote": "Set high above Bali’s lush jungle valleys, Anantara Ubud invites you into a world of stillness, wellness and immersive connection to nature.",
-   "hero": "/img/b44/9c5aa49ce_50b556778_697a9782732a6d452c442fa5_eeec3138.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/hero",
    "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/g5",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0fb8c62eb_4832d2c8b_69dcbba440ad8e769eaf4a20_anantara_ubud_bali_resort_suite_restroom_1920x1037.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3ff062fd2_80ea6313e_69dcbbb08c7c7896c3b5f58f_anantara_ubud_bali_resort_forest_view_suite_bedroom_192.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6011c2658_8b6838ca5_69dcbbe0ef518b637dd6fc15_anantara_ubud_bali_resort_forest_view_suite_livingroom_.",
@@ -8934,10 +8939,18 @@
    "category": "hotel",
    "tagline": "A Retreat for Change and Renewal",
    "quote": "A sanctuary where nature, wellness, and design converge. COMO Shambhala Estate is more than a resort, it’s a way of life.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f460cec7_1370c3a44_6a86af6a3a386fe0b22828e8_como-shambhala-estate-hero.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a0799f2f8_57c716389_698455a5f46ed6739ff37b75_terrace-suite-bed-view.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/bf6e4eac5_416d872f9_698455a058aeeb16c559500c_terrace-suite-bathroom.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g10"
    ],
    "bestMonths": "May to September",
    "bestMonthsNote": "Dry season with ideal weather for outdoor yoga, nature walks, and holistic programs in Ubud’s peaceful highlands.",
@@ -13422,6 +13435,159 @@
     "6ae69743534ce9347649211f",
     "6ae69744a272964ca74e7085"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "galapagos-safari-camp",
+   "name": "Galapagos Safari Camp",
+   "ledgerId": "STY-2026-000582",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "A tented camp of nine Safari Tents and a three-bedroom Family Suite on 55 hectares of rewilded land in the Santa Cruz highlands, on the border of Galápagos National Park.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/galapagos-safari-camp/g10"
+   ],
+   "bestMonths": "All year",
+   "bestMonthsNote": "The camp calls both seasons excellent: warm and wet from about January to July, cool and dry from about July to December, each with an unpredictable two-week spell of more extreme conditions.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Seymour Airport (GPS), Baltra",
+   "airportDirections": "Fly from Quito (about 2 hours) or Guayaquil (about 1.5 hours) to Baltra. The camp is about 45 minutes away: a 10-minute drive to the Itabaca Channel, a boat across, then about 30 minutes by car into the highlands. Puerto Ayora is about 30 minutes by car.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Nine Safari Tents of 70 m², each including a 14 m² deck. Two of them are Family Safari Tents, with two bedrooms and two bathrooms over 90 m².",
+     "The Family Suite: three bedrooms and three bathrooms for up to six, the only unit with optional air conditioning and the only one with a stair-free link to the main lodge."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Day boats to uninhabited islands: shared (capped at 16 guests and not only the camp's), with a private guide, or on a privately chartered boat.",
+     "Giant tortoises on and around the camp's land, and Darwin's finches at the pool.",
+     "Snorkelling and short hikes, open to children from six."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "The main lodge, with its dining room and observation deck over the national park.",
+     "A small swimming pool heated by solar panels and a heat pump.",
+     "A massage tent.",
+     "Wi-Fi throughout.",
+     "A Kids' Club in the school holidays, in the late afternoons (not childcare)."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The only tented camp in the Galápagos highlands, set among the misty Scalesia forest on former cattle farmland the camp has rewilded, on the border of the national park."
+   ],
+   "why": [
+    {
+     "title": "Land first, then the islands",
+     "body": "Galapagos Safari Camp suits families and couples who want a base on land: tortoises by the tents, day boats to the uninhabited islands, and a short drive to Baltra for a yacht afterwards. There is no minimum age, and the Family Suite sleeps six."
+    },
+    {
+     "title": null,
+     "body": "Best suited for:"
+    },
+    {
+     "title": null,
+     "body": "Families"
+    },
+    {
+     "title": null,
+     "body": "Couples"
+    }
+   ],
+   "facts": {
+    "best_months": "All year: warm and wet from about January to July, cool and dry from about July to December.",
+    "how_to_get_there": "Fly from Quito or Guayaquil to Baltra; the camp is about 45 minutes away by road, boat across the Itabaca Channel and road.",
+    "signature_experiences": "Day boats to uninhabited islands, giant tortoises around camp, snorkelling and short hikes.",
+    "who_its_for": "Families, couples and multi-generational groups who want a land base in the Galápagos highlands."
+   },
+   "faqs": [
+    {
+     "q": "Where is Galapagos Safari Camp?",
+     "a": "In the highlands of Santa Cruz Island, on 55 hectares of private, rewilded land on the border of Galápagos National Park, looking out over the park and the Pacific."
+    },
+    {
+     "q": "How many tents are there?",
+     "a": "Nine Safari Tents, two of them two-bedroom Family Safari Tents, plus a three-bedroom Family Suite that sleeps six."
+    },
+    {
+     "q": "How do you get to Galapagos Safari Camp?",
+     "a": "Fly from Quito or Guayaquil to Baltra. The camp is about 45 minutes away: a 10-minute drive to the Itabaca Channel, a short boat crossing, then about 30 minutes by car into the highlands."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "Yes, with no minimum age. Children six and over can join most activities, and a Kids' Club runs in the school holidays, in the late afternoons; it is not childcare."
+    },
+    {
+     "q": "When is the best time to go?",
+     "a": "The camp calls both seasons excellent: warm and wet from about January to July, cool and dry from about July to December."
+    },
+    {
+     "q": "How do you see the other islands?",
+     "a": "By day boat to uninhabited islands: shared (up to 16 guests, not only the camp's), with a private guide, or on a privately chartered boat."
+    },
+    {
+     "q": "Is there air conditioning and Wi-Fi?",
+     "a": "Wi-Fi reaches every tent. Only the Family Suite has optional air conditioning; the tents rely on the highland air."
+    },
+    {
+     "q": "Is the camp suitable for limited mobility?",
+     "a": "The tents are reached by paths with steps. The Family Suite is the only unit with a stair-free connection to the main lodge."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-02",
+     "PATH-01"
+    ],
+    "setting": "galapagos",
+    "intentions": [
+     "rare_wildlife",
+     "regeneration"
+    ],
+    "suitability": [
+     "families",
+     "couples",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -18808,7 +18974,12 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g2",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g3",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g4",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g5"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g10"
    ],
    "bestMonths": null,
    "bestMonthsNote": null,
@@ -28475,12 +28646,18 @@
    "category": "hotel",
    "tagline": "Barefoot Paradise, Naturally Yours",
    "quote": "Find your island, One-Bedroom Beach House. Two-Bedroom Beach House. Three-Bedroom Beach House. Whole Island Exclusive Use.wake to the sound of waves, walk sandy paths, and rediscover time with people you love. Nikoi is wild, simple, and simply unforgettable.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e56d6864b_643e1263a_696751862f0717c724d720b0_nikoi-island-herojpg.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/hero",
    "gallery": [
-    "/img/b44/e74e151b2_99a1331b8_69675d258548ec633653164f_cf1213_8cd6e156214f45dd92c2ef43702456a3_mv2.avif",
-    "/img/b44/d12715842_85003041e_69675c72144106d053d11f00_kids_20in_20bunkroom_20_2_.avif",
-    "/img/b44/9d052a438_04839016f_69675b0be1b2ea9160a82670_nikoi-island-one-bedroom-beach-house.avif",
-    "/img/b44/d537d6d66_57a4ab415_69675d0161fad8e95aecc5a3_Untitled.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g10"
    ],
    "bestMonths": "March–October",
    "bestMonthsNote": "Dry season is best for swimming, snorkeling, and beach life, calm seas, clear skies, and warm temperatures year-round.",
@@ -31837,6 +32014,156 @@
     "6ae69752000af1fe55f77ec1",
     "6ae69751fd469736b2d7029e"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "pikaia-lodge",
+   "name": "Pikaia Lodge",
+   "ledgerId": "STY-2026-000583",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Fourteen rooms on 31 private hectares at 450 metres in the Santa Cruz highlands, with its own giant tortoise reserve and its own yacht.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pikaia-lodge/g10"
+   ],
+   "bestMonths": "All year",
+   "bestMonthsNote": "Warm season roughly December to May, with the warmest water and calm seas; cooler and drier June to November, with nutrient-rich currents. Pikaia names no single best month.",
+   "bestFor": [
+    "family",
+    "luxury",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Seymour Airport (GPS), Baltra",
+   "airportDirections": "Fly about two hours from mainland Ecuador to Baltra. Pikaia's included transfer crosses the Itabaca Channel by ferry and drives up into the highlands; the Baltra VIP lounge is included.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fourteen rooms in four categories, each with unobstructed Pacific views: Terrace, Balcony, Garden Suite and Pool Suite."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Adventure Packages of 3 to 7 nights (3-night minimum) with a cabin aboard M/Y Vision Pikaia, visiting two islands a day and returning to the lodge at night.",
+     "Indulge & Unwind stays (2-night minimum) and bed and breakfast stays.",
+     "Giant tortoises in the lodge's own reserve."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Its own giant tortoise reserve on the property",
+     "The Sumaq Spa",
+     "A swimming pool",
+     "Starlink Wi-Fi at the lodge and aboard the yacht",
+     "Transfers and the Baltra VIP lounge included"
+    ]
+   },
+   "onlyHere": [
+    "A lodge on the rim of an extinct volcanic crater in the Santa Cruz highlands, with a giant tortoise reserve on its own land and its own yacht to reach the other islands by day."
+   ],
+   "why": [
+    {
+     "title": "Islands by day, the lodge by night",
+     "body": "Pikaia suits travellers who want the outer islands without sleeping at sea: its yacht visits two islands a day and brings you back to the crater rim each evening. It pairs naturally with a week aboard a yacht from Baltra."
+    },
+    {
+     "title": null,
+     "body": "Best suited for:"
+    },
+    {
+     "title": null,
+     "body": "Couples"
+    },
+    {
+     "title": null,
+     "body": "Families"
+    }
+   ],
+   "facts": {
+    "best_months": "All year: warm water and calm seas from about December to May; cooler and drier from June to November.",
+    "how_to_get_there": "Fly to Baltra, about two hours from mainland Ecuador; Pikaia's included transfer crosses the Itabaca Channel and drives up into the highlands.",
+    "signature_experiences": "Day trips aboard the private yacht M/Y Vision Pikaia, the lodge's own giant tortoise reserve and the Sumaq Spa.",
+    "who_its_for": "Couples and families who want the islands by day and a lodge on land by night."
+   },
+   "faqs": [
+    {
+     "q": "Where is Pikaia Lodge?",
+     "a": "On 31 private hectares at 450 metres in the highlands of Santa Cruz, at the edge of an extinct volcanic crater, with its own giant tortoise reserve."
+    },
+    {
+     "q": "How many rooms does Pikaia have?",
+     "a": "Fourteen, in four categories: Terrace, Balcony, Garden Suite and Pool Suite, all with Pacific views."
+    },
+    {
+     "q": "How do you get to Pikaia?",
+     "a": "Fly about two hours from mainland Ecuador to Baltra; Pikaia's included transfer crosses the Itabaca Channel by ferry and drives up into the highlands, with its VIP lounge at Baltra."
+    },
+    {
+     "q": "Does Pikaia have its own yacht?",
+     "a": "Yes. Adventure Packages include a cabin for your group aboard the private yacht M/Y Vision Pikaia, which visits two islands a day before you return to the lodge."
+    },
+    {
+     "q": "How long should I stay?",
+     "a": "Adventure Packages run 3 to 7 nights with a 3-night minimum. Shorter Indulge & Unwind stays (2-night minimum) and bed and breakfast stays are also offered."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "December to May brings warm water and calm seas; June to November is cooler and drier, with nutrient-rich currents around the islands. Pikaia names no single best month."
+    },
+    {
+     "q": "Are children welcome?",
+     "a": "Ask us. Pikaia's own pages differ on the youngest age (its rates page says 8, its FAQ gives no minimum), so James confirms it with Pikaia for your dates."
+    },
+    {
+     "q": "Is there Wi-Fi?",
+     "a": "Yes, Starlink satellite internet at the lodge and aboard the yacht."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-02",
+     "PATH-03"
+    ],
+    "setting": "galapagos",
+    "intentions": [
+     "rare_wildlife"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -40617,13 +40944,18 @@
    "category": "hotel",
    "tagline": "A refined sanctuary where rice‑terrace serenity meets ocean‑edge elegance.",
    "quote": "Step into a place where architecture, rice terraces and beach merge. A transformative escape in harmony with nature.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/08fd600ed_112cf6bcf_684c2e7d2ab7ef348722b04a_soori-bali-home-offers-2.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a1e6829c_090bbbf7a_684c2f88613fd0d7d019de2b_soori-bali-upscale-dining-special-occasion-ombak.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/24927814d_77c85abf6_684c2f6e0c985519dac3e08f_index-offers-01.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/954f4041c_cf87248c4_684c2f88802e0d851f7d7365_soori-bali-SCDA-Chan-Soo-Khian.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d44a7b7f1_243e54645_684c2e7d2ab7ef348722b04a_soori-bali-home-offers-2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6f88fc97d_4089d8d0f_684c2f88b6aa28dfba6eca5e_index-awarded-03.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g10"
    ],
    "bestMonths": "April–June; September–November",
    "bestMonthsNote": "These shoulder‑season months offer mild weather, fewer crowds, clearer skies, and lower rates. Perfect for wellness, exploring rice‑terrace trails and uninterrupted beach views.",
@@ -47011,7 +47343,7 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47dd75282_d4a782fb4_684349b066390f222830addf_Viceroy-Bali-Main-Pool-85-1-e1707190963418.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1893bff4_0acfd9c60_6844af62f42c40a34198b5f9_facilities-private-yoga.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8ee2a1b12_53479befb_6844af6e34eee4f54e3a890e_Wellness-Retreat-Bali-6-scaled.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8b1a23ed8_1721c4d6e_6844af1545b1c11bea638aea_czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS83azA0Zy9NQUYySzA.",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g7",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2b840fccb_f175749ae_6844af691cb96c5fd36d442f_Wellness-Retreat-Bali-9.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a43e2aac_b44fbe80d_68443b181cb96c5fd344624f_wellness-balinese-blessing.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/934aefd37_3a1a7bdad_684a45884da4ac2f60eb067e_vice_regal_2_swimming_pool.webp",

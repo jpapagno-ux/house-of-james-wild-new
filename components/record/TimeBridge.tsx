@@ -39,7 +39,7 @@ export default function TimeBridge({ tz, place, zoneLabel, window = [9, 17] }: {
       <p className="ledger-eyebrow flex items-center gap-2"><Clock className="w-3.5 h-3.5 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Mind the clocks</p>
       <p className="mt-2 text-[15px] leading-relaxed">
         {place} runs on {zoneLabel}.{" "}
-        {v ? <>It&rsquo;s <strong className="font-medium">{v.there}</strong> there now, {ahead}. The host keeps {window[0]}am–{window[1] - 12}pm local; for you that&rsquo;s <strong className="font-medium">{v.from}–{v.to}</strong>{v.dayShift}.</> : <>Your own hours appear here once the page knows your time zone.</>}
+        {v ? <>It&rsquo;s <strong className="font-medium">{v.there}</strong> there now, {ahead}. The host keeps {window[0]}am to {window[1] - 12}pm local; for you that&rsquo;s <strong className="font-medium">{v.from} to {v.to}</strong>{v.dayShift}.</> : <>Your own hours appear here once the page knows your time zone.</>}
       </p>
       <p className="mt-1.5 text-[13px] ledger-muted">Calendly shows every slot in your time zone, so nobody joins at 3am by accident.</p>
     </div>

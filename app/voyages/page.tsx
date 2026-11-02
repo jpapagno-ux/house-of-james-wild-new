@@ -88,7 +88,7 @@ export default function VoyagesHub() {
         <HubSection eyebrow="Not sure?" title="Which Ship Fits Your Trip?" id="finder-h">
           <TripFinder cards={cards} types={TYPES.map((t) => ({ key: t, name: VOYAGE_TYPES[t].name }))} waters={WATERS.map((w) => ({ key: w, name: WATERS_HUBS[w].name }))} />
         </HubSection>
-        <AdvisorScroll volume="voyages" title="Who sails with the small ships" />
+        <AdvisorScroll volume="voyages" title="Who sails with the small ships" unlinked={["gatherings"]} />
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Sail?" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", numberOfItems: cards.length, itemListElement: cards.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: absoluteUrl(c.href) })) } })} />

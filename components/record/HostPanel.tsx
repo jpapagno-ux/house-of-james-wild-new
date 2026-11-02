@@ -128,9 +128,9 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
             <a href={host.calendlyUrl} className="ledger-btn inline-flex items-center gap-2 !bg-crimson !text-paper hover:!bg-ink hover:!border-ink" data-event="host_call_click" data-host-state="available" data-call="group">
               <span className="relative inline-flex" aria-hidden="true"><span className="jw-ripple absolute -inset-1 rounded-full border border-paper/70" /><PhoneCall className="jw-ring w-4 h-4" strokeWidth={1.7} /></span> Book the group call
             </a>
-            <span className="text-[13px] ledger-muted">Calendly · 30–45 minutes · video · no obligation to book</span>
+            <span className="text-[13px] ledger-muted">Calendly · 30 to 45 minutes · video · no obligation to book</span>
           </div>
-          <FadeNote>The best way to decide. Ask anything; watch how they answer. — JW</FadeNote>
+          <FadeNote>The best way to decide. Ask anything; watch how they answer. JW</FadeNote>
         </div>
         <div className="ledger-paper border ledger-border p-6 md:p-7">
           <p className="ledger-eyebrow flex items-center gap-2"><ListChecks className="w-3.5 h-3.5 ledger-crimson" strokeWidth={1.5} aria-hidden="true" /> Start with the facts</p>

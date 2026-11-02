@@ -39,4 +39,8 @@ export type Partner = {
   organization: { foundingDate?: string; locality?: string; country?: string; memberOf?: string[] };
   sources: string[];
   checked: string;
+  /** The founder's testimony where James has vetted a partner without going aboard (the vetted-only wording). */
+  founder?: { eyebrow: string; proof: string };
+  /** Registry ships that sail the signature charter journeys (lib/content/ships/journeys.ts): the page shows them. */
+  journeys?: string[];
 };

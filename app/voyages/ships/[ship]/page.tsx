@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import RecordShip from "@/components/ships/RecordShip";
 import { aliikaiExtra } from "@/components/ships/AliikaiShip";
 import { StayBeforeYouSail } from "@/components/stays/IndonesiaPairings";
+import CharterJourneys from "@/components/ships/CharterJourneys";
+import { JOURNEY_FLEETS, sailsJourneys } from "@/lib/content/ships/journeys";
 import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
@@ -34,6 +36,9 @@ export default async function ShipPage({ params }: P) {
   // James's card with his surf and dive line on Aliikai and the Galápagos ships (James, 2 Nov 2026).
   const base = e.slug === "aliikai" ? aliikaiExtra() : {};
   const sail = <StayBeforeYouSail vessel={e.slug} name={e.data.name} />;
+  // The signature charter journeys (James, 2 Nov 2026) on the Rascal Voyages and Silolona Sojourns yachts.
+  const fleet = JOURNEY_FLEETS.find((f) => f.ships.includes(e.slug));
+  const journeys = sailsJourneys(e.slug) ? <CharterJourneys ship={e.data.name} ships={[e.slug]} partner={fleet?.partner} /> : null;
   const ocean = founderOceanForVoyage(shipPath(e.slug), e.waters);
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

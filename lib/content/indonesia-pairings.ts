@@ -33,10 +33,18 @@ export const PAIRINGS: Pairing[] = [
   { vessel: "mutiara-laut", embark: "Labuan Bajo", seasons: ["komodo"], region: "Komodo, Alor, the Spice Islands and Papua",
     before: BALI_BEFORE, after: SUMBA_AFTER,
     note: "Labuan Bajo is about 1.5 hours from Bali by air. Sumba links to Labuan Bajo on the Wings Air flight NIHI publishes, so it is an easy next leg." },
-  { vessel: "silolona-sojourns", embark: "Labuan Bajo", seasons: ["komodo", "raja-ampat"], region: "Eastern Indonesia, Raja Ampat, Banda and Papua",
+  { vessel: "silolona", embark: "Labuan Bajo", seasons: ["komodo", "raja-ampat"], region: "Eastern Indonesia, Raja Ampat, Banda and Papua",
     before: BALI_BEFORE, after: SUMBA_AFTER,
     note: "A private charter: start with a Bali night, then fly on to meet her. On Komodo routes, Sumba is the natural place to finish." },
-  { vessel: "celestia-yacht", embark: null, seasons: ["komodo", "raja-ampat"], region: "Raja Ampat, Komodo and the Spice Islands",
+  { vessel: "celestia", embark: null, seasons: ["komodo", "raja-ampat"], region: "Raja Ampat, Komodo and the Spice Islands",
+    before: BALI_BEFORE, after: SUMBA_AFTER,
+    note: "A private charter: start with a Bali night, then fly on to meet her. On Komodo routes, Sumba is the natural place to finish." },
+  // The fleets filed 2 Nov 2026 (James): Rascal Voyages from Labuan Bajo (Komodo) and Sorong (Raja Ampat), per its itineraries;
+  // Silolona Sojourns' second phinisi, Si Datu Bua, on Silolona's year.
+  ...(["rascal", "rebel", "el-aleph"] as const).map((vessel): Pairing => ({ vessel, embark: "Labuan Bajo or Sorong", seasons: ["komodo", "raja-ampat"], region: "Komodo from Labuan Bajo, Raja Ampat and Misool from Sorong",
+    before: BALI_BEFORE, after: SUMBA_AFTER,
+    note: "Labuan Bajo is about 1.5 hours from Bali by air, and Sorong is reached from Bali or Jakarta, so a few nights in Bali first breaks the journey. After a Komodo week, Sumba is a short hop away." })),
+  { vessel: "si-datu-bua", embark: "Labuan Bajo", seasons: ["komodo", "raja-ampat"], region: "Eastern Indonesia, Raja Ampat, Banda and Papua",
     before: BALI_BEFORE, after: SUMBA_AFTER,
     note: "A private charter: start with a Bali night, then fly on to meet her. On Komodo routes, Sumba is the natural place to finish." },
   { vessel: "amandira", embark: null, seasons: [], region: "Aman's phinisi in Indonesian waters",
@@ -60,7 +68,7 @@ export const SISTER: Record<string, { slug: string; line: string }> = {
 export const ROUTE: { leg: string; nights: number | null; options: string[] }[] = [
   { leg: "Ubud", nights: 3, options: ["capella-ubud", "amandari", "tanah-gajah"] },
   { leg: "The coast", nights: 2, options: ["soori-bali", "ungasan-clifftops"] },
-  { leg: "Komodo by phinisi, from Labuan Bajo", nights: null, options: ["mutiara-laut", "celestia-yacht", "silolona-sojourns"] },
+  { leg: "Komodo by phinisi, from Labuan Bajo", nights: null, options: ["mutiara-laut", "celestia", "silolona", "rascal"] },
   { leg: "Sumba", nights: null, options: ["nihi", "cap-karoso"] },
 ];
 

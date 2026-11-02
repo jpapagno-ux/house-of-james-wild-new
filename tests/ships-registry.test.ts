@@ -62,7 +62,8 @@ test("polar ships are Antarctica21's, listed in Polar Crossings (James, 2 Nov 20
 test("the filters the hubs run", () => {
   assert.ok(shipsInWaters("nile").length >= 5);
   assert.ok(shipsOfType("charter").some((s) => s.slug === "aliikai"));
-  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile")));
+  // Rooted in Place: the Nile ships, and Silolona Sojourns (Banda's spice history, Asmat and Toraja; voyages plan, Part 2).
+  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile") || s.operator === "Silolona Sojourns"));
 });
 
 test("vessels.ts is built from the registry", () => {
@@ -75,7 +76,9 @@ test("a vessel with a ship page 301s from her stay URL (as Aliikai's does)", () 
   for (const s of SHIP_REGISTRY.filter((x) => x.page && x.staySlug)) {
     const r = redirects.find((x) => x.source === `/stays/${s.staySlug}`);
     assert.ok(r, `${s.staySlug} redirects`);
-    assert.equal(r!.destination, `/voyages/ships/${s.slug}`);
+    // A record retired into several ships (rascal-voyages) goes to its operator's partner page.
+    const shared = SHIP_REGISTRY.filter((x) => x.staySlug === s.staySlug).length > 1;
+    assert.equal(r!.destination, shared ? "/partners/rascal-voyages" : `/voyages/ships/${s.slug}`);
     assert.equal(r!.statusCode, 301);
   }
 });

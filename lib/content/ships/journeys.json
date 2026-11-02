@@ -1,0 +1,103 @@
+{
+ "journeys": [
+  {
+   "slug": "komodo-and-flores-charter",
+   "name": "Komodo and Flores by Private Yacht",
+   "short": "Komodo and Flores",
+   "region": "komodo",
+   "nights": 6,
+   "embark": "Labuan Bajo, Flores",
+   "line": "Komodo dragons ashore, the pink beaches and the manta points, a week from Labuan Bajo with the whole yacht to yourselves.",
+   "answer": "A private charter week in Komodo starts and ends at Labuan Bajo on Flores, about an hour's flight from Bali. A typical six nights walks with Komodo dragons on Komodo Island, swims off the pink beaches, drifts with turtles at Siaba Besar and snorkels or dives with manta rays at Taka Makassar, then adds Gili Banta and South Komodo's Manta Alley. Indonesia's tourism board names April to June and September to December as the best months; the yachts sail Komodo from May. Charter Rascal, Rebel or El Aleph from US$12,000 a night, or Silolona and Si Datu Bua on request.",
+   "intro": "Built from Rascal Voyages' published Komodo itinerary and its two-night extension, with the places Silolona Sojourns names for the park. Each yacht sets her own order with you, so the days below are a typical week and indicative.",
+   "hero": { "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/rascal/hero", "alt": "Rascal under sail in the Lintah Strait, Komodo National Park", "credit": "Rascal Voyages" },
+   "season": { "best": "April to June and September to December", "by": "Wonderful Indonesia, Indonesia's tourism board", "url": "https://www.indonesia.travel/jp-en/travel-ideas/unveil-the-lands-of-dragons-firsttimers-guide-to-komodo-national-park/" },
+   "operatorSeasons": [
+    { "operator": "Rascal Voyages", "months": "May to October", "url": "https://www.rascalvoyages.com/voyages/komodo" },
+    { "operator": "Silolona Sojourns", "months": "May to September (Komodo, Flores and Alor)", "url": "https://www.silolona.com/destination" }
+   ],
+   "park": "Komodo National Park has been a UNESCO World Heritage Site since 1991. It covers 219,322 hectares around the volcanic islands of Komodo, Rinca and Padar, home to the Komodo dragon, and a guide or park ranger leads every walk to see them.",
+   "parkUrl": "https://whc.unesco.org/en/list/609/",
+   "days": [
+    { "day": 1, "title": "Labuan Bajo to Sebayor", "place": "Sebayor Island", "lat": -8.505, "lng": 119.712, "summary": "Board in Labuan Bajo and sail to Sebayor for a first swim, snorkel or dive, watching for white-spotted eagle rays; sundowners facing Sangeang volcano.", "indicative": true },
+    { "day": 2, "title": "Sape Bay and the pink beaches", "place": "Sape Bay", "lat": -8.56, "lng": 119.33, "summary": "The pink beaches by kayak or from the water, long-tailed macaques ashore and blacktip reef sharks in the shallows.", "indicative": true },
+    { "day": 3, "title": "Komodo Island, Siaba Besar and Gili Lawa", "place": "Komodo Island (Loh Liang)", "lat": -8.567, "lng": 119.505, "summary": "A guided walk at Loh Liang to look for Komodo dragons, Timor deer and yellow-crested cockatoos, then turtles at Siaba Besar and an evening at Gili Lawa Darat.", "indicative": true },
+    { "day": 4, "title": "Gili Banta", "place": "Gili Banta", "lat": -8.414, "lng": 119.315, "summary": "Snorkel or dive where, in Rascal Voyages' words, Pacific and Indian Ocean currents converge.", "indicative": true },
+    { "day": 5, "title": "South Komodo and Manta Alley", "place": "South Komodo", "lat": -8.74, "lng": 119.43, "summary": "South Komodo's soft coral reefs and Manta Alley, the second half of Rascal Voyages' two-night extension.", "indicative": true },
+    { "day": 6, "title": "Taka Makassar, Tatawa Besar and Seraya", "place": "Taka Makassar", "lat": -8.533, "lng": 119.583, "summary": "Snorkel or dive with manta rays, walk the white sandbar of Taka Makassar, then a lantern-lit dinner on a beach.", "indicative": true },
+    { "day": 7, "title": "Seraya to Labuan Bajo", "place": "Labuan Bajo", "lat": -8.4964, "lng": 119.8877, "summary": "A last morning in the water, then into port after lunch, with dolphins sometimes in the wake.", "indicative": true }
+   ],
+   "longer": [
+    "Rascal Voyages adds Komodo village and a night dive (one night), Sangeang volcano and its black-sand beaches (three nights) or the Ring of Fire on to Sumbawa Besar or Bali, with whale sharks and Moyo Island's Mata Jitu waterfall (four nights).",
+    "Silolona Sojourns sails on east along Flores to Alor from May to September, for weaving villages, volcanoes and the reefs off Alor's bays."
+   ],
+   "dive": [
+    { "name": "Siaba Besar", "day": 3, "lat": -8.55, "lng": 119.62, "note": "Hawksbill and green turtles" },
+    { "name": "Gili Banta", "day": 4, "lat": -8.414, "lng": 119.315, "note": "Where two oceans' currents meet" },
+    { "name": "Manta Alley", "day": 5, "lat": -8.74, "lng": 119.43, "note": "South Komodo's soft corals and mantas" },
+    { "name": "Taka Makassar", "day": 6, "lat": -8.533, "lng": 119.583, "note": "Manta rays and a white sandbar" }
+   ],
+   "faqs": [
+    ["Which yachts can we charter for Komodo?", "Rascal Voyages' Rascal, Rebel and El Aleph, each for up to 10 guests, and Silolona Sojourns' Silolona, for 10 adults, and Si Datu Bua, for 6. All five are chartered whole, with their own crew and route."],
+    ["How much does a private Komodo charter cost?", "Rascal Voyages publishes US$12,000 a night plus taxes for Rascal and El Aleph and US$13,500 for Rebel, with airport transfers, park fees and activities included and alcohol extra. Silolona Sojourns quotes on request. A six-night week on Rascal is US$72,000 plus taxes for up to ten guests."],
+    ["When is the best time to charter in Komodo?", "Indonesia's tourism board names April to June and September to December. Rascal Voyages sails Komodo from May to October and Silolona Sojourns from May to September."],
+    ["How do we get to Labuan Bajo?", "Rascal Voyages notes daily flights to Labuan Bajo from Bali, about an hour, and from Jakarta, about two; the port is about ten minutes from the airport, and the crew meet you there."],
+    ["Will we see Komodo dragons?", "Walks to see them are led by a guide or park ranger, at Loh Liang on Komodo Island on this route. Rascal Voyages notes the dragons are found only on Komodo, Rinca, Flores and Gili Motang; they are wild animals, so no operator promises a sighting."],
+    ["Can children come?", "Yes. Rascal Voyages welcomes children and runs a family focused voyage, and Silolona Sojourns can add a child's bed to every cabin. Neither publishes a minimum age."]
+   ]
+  },
+  {
+   "slug": "raja-ampat-and-misool-charter",
+   "name": "Raja Ampat and Misool by Private Yacht",
+   "short": "Raja Ampat and Misool",
+   "region": "raja-ampat",
+   "nights": 7,
+   "embark": "Sorong, West Papua",
+   "line": "The Dampier Strait's reefs, manta rays at Arborek and the limestone lagoons of Misool, a week from Sorong.",
+   "answer": "A private charter week in Raja Ampat starts and ends in Sorong. A typical seven nights crosses to Waigeo's blue river at Kali Biru, dives Cape Kri and the Dampier Strait, swims with manta rays at Arborek, climbs to Penemu's viewpoint, then sails south to Misool for its jellyfish lake, pinnacles and hidden lagoons. Indonesia's tourism board names October to April as the season, and both fleets sail Raja Ampat then. Charter Rascal, Rebel or El Aleph from US$12,000 a night, or Silolona and Si Datu Bua on request.",
+   "intro": "Rascal Voyages publishes this week day by day; Silolona Sojourns draws each route to order and names Misool and the uninhabited Wayag islands. Each yacht sets her own order with you, so the days below are a typical week and indicative.",
+   "hero": { "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/arcterra/destinations/raja-ampat/silolona-raja-ampat-02", "alt": "Karst islands and lagoons of Raja Ampat, West Papua", "credit": "Silolona Sojourns" },
+   "season": { "best": "October to April", "by": "Wonderful Indonesia, Indonesia's tourism board", "url": "https://www.indonesia.travel/au/en/travel-ideas/marine/discover-raja-ampat-travel-inspiration-to-indonesias-heavenly-eastern-archipelago" },
+   "operatorSeasons": [
+    { "operator": "Rascal Voyages", "months": "October to April", "url": "https://www.rascalvoyages.com/voyages/raja-ampat" },
+    { "operator": "Silolona Sojourns", "months": "October to April (Raja Ampat, Papua and Banda)", "url": "https://www.silolona.com/destination" }
+   ],
+   "park": "Every visitor to Raja Ampat needs the marine park entry card issued by the Raja Ampat Marine Park Authority; Rascal Voyages includes park fees in its rates.",
+   "parkUrl": "https://kkprajaampat.com/en/entry-card/",
+   "days": [
+    { "day": 1, "title": "Sorong to Kali Biru, Waigeo", "place": "Kali Biru", "lat": -0.30, "lng": 130.74, "summary": "Board in Sorong and cross to Waigeo for the blue river of Kali Biru, Papuan hornbills and sea eagles.", "indicative": true },
+    { "day": 2, "title": "Mioskon, Kri and Mansuar", "place": "Cape Kri", "lat": -0.556, "lng": 130.687, "summary": "Dive or snorkel the Dampier Strait at Mioskon, Cape Kri and Sawandarek, and visit a village with its tribal leader.", "indicative": true },
+    { "day": 3, "title": "The Yeben archipelago", "place": "Yeben", "lat": -0.62, "lng": 130.30, "summary": "Thriving reefs, turtles and wobbegong sharks, and a beach of your own for the day.", "indicative": true },
+    { "day": 4, "title": "Arborek and Penemu", "place": "Arborek", "lat": -0.565, "lng": 130.52, "summary": "Manta rays at manta point and the corals of Melissa's Garden, then the walk up to Penemu's viewpoint over its lagoons.", "indicative": true },
+    { "day": 5, "title": "Misool: Tomolol and Yilliet", "place": "Tomolol, Misool", "lat": -1.93, "lng": 130.42, "summary": "A lake of stingless jellyfish, then Misool's first reefs at Yilliet Kecil and Romeo; a night swim for the epaulette walking shark.", "indicative": true },
+    { "day": 6, "title": "Fiabacet and Tomolol", "place": "Fiabacet, Misool", "lat": -2.04, "lng": 130.36, "summary": "Puri Pinnacle for devil rays, the climb to Pucak Harfat, Tomolol's ancient rock art and dinner on a beach.", "indicative": true },
+    { "day": 7, "title": "Sagof and Balbulol", "place": "Balbulol, Misool", "lat": -1.98, "lng": 130.12, "summary": "A last dive at Two Tree, then kayaks and paddleboards inside Balbulol's lagoon.", "indicative": true },
+    { "day": 8, "title": "Sorong", "place": "Sorong", "lat": -0.8762, "lng": 131.2558, "summary": "Breakfast aboard, then the crew take you to the airport.", "indicative": true }
+   ],
+   "longer": [
+    "Rascal Voyages recommends at least seven nights and says Raja Ampat can fill fourteen: two more nights for the Bird's Head Peninsula, four for more of the north and south, or six on to Triton Bay and its whale sharks, ending at Kaimana.",
+    "Silolona Sojourns adds the uninhabited Wayag islands and their viewpoints, Cenderawasih Bay's whale sharks, Tribal Papua and the Banda Islands between October and April."
+   ],
+   "dive": [
+    { "name": "Cape Kri", "day": 2, "lat": -0.556, "lng": 130.687, "note": "374 fish species on one dive, the record Rascal Voyages cites" },
+    { "name": "Arborek manta point", "day": 4, "lat": -0.565, "lng": 130.52, "note": "Manta rays; Melissa's Garden nearby" },
+    { "name": "Yilliet Kecil", "day": 5, "lat": -2.08, "lng": 130.25, "note": "Barracuda, batfish and pygmy seahorses" },
+    { "name": "Puri Pinnacle", "day": 6, "lat": -2.04, "lng": 130.36, "note": "Devil rays and oceanic mantas" },
+    { "name": "Two Tree", "day": 7, "lat": -1.98, "lng": 130.12, "note": "An overhang and bumphead parrotfish" }
+   ],
+   "faqs": [
+    ["Which yachts can we charter for Raja Ampat and Misool?", "Rascal Voyages' Rascal, Rebel and El Aleph, each for up to 10 guests, and Silolona Sojourns' Silolona, for 10 adults, and Si Datu Bua, for 6. All five are chartered whole."],
+    ["How much does a private Raja Ampat charter cost?", "Rascal Voyages publishes US$12,000 a night plus taxes for Rascal and El Aleph and US$13,500 for Rebel, with airport transfers, park fees and activities included and alcohol extra. A seven-night week on Rascal is US$84,000 plus taxes for up to ten guests. Silolona Sojourns quotes on request."],
+    ["When is the best time to charter in Raja Ampat?", "October to April, per Indonesia's tourism board; both fleets sail Raja Ampat in those months."],
+    ["Does the week reach Misool?", "Yes. Rascal Voyages' published seven nights spend three days in Misool: the jellyfish lake at Tomolol, Puri Pinnacle and the lagoon at Balbulol. Silolona Sojourns names Misool's limestone peaks among its Raja Ampat routes."],
+    ["How do we get to Sorong?", "Rascal Voyages notes multiple daily flights to Sorong from Jakarta and Bali; the port is about 20 minutes from the airport, and the crew meet you."],
+    ["Do we need a park permit?", "Yes: the Raja Ampat marine park entry card. Rascal Voyages includes park fees in its rates; James confirms how Silolona Sojourns handles it for your charter."]
+   ]
+  }
+ ],
+ "fleets": [
+  { "operator": "Rascal Voyages", "partner": "rascal-voyages", "ships": ["rascal", "rebel", "el-aleph"], "line": "Three phinisis for up to 10 guests each, at published nightly rates with park fees and activities included." },
+  { "operator": "Silolona Sojourns", "partner": "silolona-sojourns", "ships": ["silolona", "si-datu-bua"], "line": "Two Konjo-built phinisis, for ten adults and for six, chartered whole and quoted on request." }
+ ],
+ "founderFavourite": []
+}

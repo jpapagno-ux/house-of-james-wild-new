@@ -1,0 +1,121 @@
+{
+ "id": "celestia-labuan-bajo-round-trip-5n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "6 Days, 5 Nights Komodo National Park aboard Celestia",
+ "subtitle": "5 nights · Labuan Bajo round trip · Celestia",
+ "days": {
+  "1": "Labuan Bajo to the Sebayur islands",
+  "2": "Gili Lawa Darat and Gili Lawa Laut",
+  "3": "Gili Banta",
+  "4": "Manta Point, Karang Makassar, Padar",
+  "5": "Pink Beach, Rinca, Kalong",
+  "6": "Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sebayur Besar",
+   "lat": -8.505,
+   "lng": 119.712,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gili Lawa Darat",
+   "lat": -8.443,
+   "lng": 119.565,
+   "mode": "sea",
+   "path": [
+    [
+     119.712,
+     -8.505
+    ],
+    [
+     119.565,
+     -8.443
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Gili Banta",
+   "lat": -8.414,
+   "lng": 119.315,
+   "mode": "sea",
+   "path": [
+    [
+     119.565,
+     -8.443
+    ],
+    [
+     119.315,
+     -8.414
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Padar",
+   "lat": -8.65,
+   "lng": 119.585,
+   "mode": "sea",
+   "path": [
+    [
+     119.315,
+     -8.414
+    ],
+    [
+     119.585,
+     -8.65
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Rinca",
+   "lat": -8.65,
+   "lng": 119.72,
+   "mode": "sea",
+   "path": [
+    [
+     119.585,
+     -8.65
+    ],
+    [
+     119.72,
+     -8.65
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "mode": "sea",
+   "path": [
+    [
+     119.72,
+     -8.65
+    ],
+    [
+     119.8877,
+     -8.4964
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

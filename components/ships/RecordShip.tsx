@@ -22,6 +22,8 @@ import ShipGlance from "./ShipGlance";
 import PublishedFares from "./PublishedFares";
 import { partnerForShip, partnerPath } from "@/lib/content/partners";
 import LengthFares from "./LengthFares";
+import CharterRates from "./CharterRates";
+import FounderProof from "@/components/record/FounderProof";
 import { shipEntrance } from "./ShipEntrance";
 import type { ExceptionalFew } from "@/lib/content/exceptional-few";
 
@@ -104,7 +106,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
   const oneFare = cruise.length > 0 && cruise.every((d) => Object.keys(d.prices).every((k) => !s.cabins.some((c) => k === c.type || k.startsWith(`${c.type} (`))));
   const cabinIntro = basis === "per-night"
     ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
-    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")} guests` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : published ? `${s.operator} publishes one fare per route, not by cabin: see Dates & rates, and James confirms the fare for your cabin.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
+    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")}${/adults?$/.test(guests) ? "" : " guests"}` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : published ? `${s.operator} publishes one fare per route, not by cabin: see Dates & rates, and James confirms the fare for your cabin.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : (s.charterRates?.length || s.cabinFrom) ? `${s.operator} publishes a rate for the whole yacht${s.cabinFrom ? " and a from rate per cabin" : ""}, not by cabin type: see Dates & rates.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
   const datesIntro = basis === "per-night"
     ? "Every published sailing by month, with its length and the fare per person for the voyage."
     : published && cruise.length ? `The departures ${s.operator}'s booking engine showed, with the fare ${s.fareBasis ?? "per person"}; below them, every fare it publishes by year and length.`
@@ -169,6 +171,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         ef: entrance,
       }}
       lead={<>
+        {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}
         {extra.top}
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
           status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {partner ? <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">{s.operator}</Link> : s.operator}{s.brandLine && s.brandLine !== s.operator && s.brandLine !== s.name ? `, ${s.brandLine}` : ""}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</>}</p>} />
@@ -183,7 +186,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
             ))}
           </ul>
         )}
-        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} />{credit && <p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}</p>}</>}
+        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} />{credit && <p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}{s.galleryNote ? `. ${t(s.galleryNote)}` : ""}</p>}</>}
         {extra.lead}
       </>}
       body={<>
@@ -231,7 +234,14 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
             {inclTerms}
           </section>
         )}
-        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && (
+        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && ((s.charterRates?.length ?? 0) > 0 || s.cabinFrom) && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost to Charter?`} icon="sun" intro={`${s.operator} publishes ${s.name}'s whole-yacht rate${s.cabinFrom ? " and a from rate for single cabins" : ""}, not dated departures, so James confirms the dates you want.`} />
+            <CharterRates ship={s.name} rates={s.charterRates ?? []} basis={s.charterBasis} cabinFrom={s.cabinFrom} planHref={plan} note={publicNote(s.pricesNote)} />
+            {inclTerms}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && !(s.charterRates?.length) && !s.cabinFrom && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
             <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />
@@ -271,7 +281,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
                       <div className="p-4">
                         <p className="ledger-eyebrow ledger-crimson">{kindLabel(x.type)} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
-                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "dates and fares: ask us" : "rates on request"}</p>
+                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "charter" ? `chartered whole from ${f.amount} a night` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "dates and fares: ask us" : "rates on request"}</p>
                       </div>
                     </Link>
                   </li>

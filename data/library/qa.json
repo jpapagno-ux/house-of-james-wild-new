@@ -485,10 +485,8 @@
    "slug": "bambu-indah",
    "name": "Bambu Indah",
    "country": "Indonesia",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d0",
@@ -496,10 +494,9 @@
    "name": "Banyan Tree Krabi",
    "country": "Thailand",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d1",
@@ -1037,11 +1034,9 @@
    "name": "COMO Canggu",
    "country": "Indonesia",
    "missing": [
-    "coming_soon",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae88519887ca89f9c60b6b3",
@@ -1049,11 +1044,9 @@
    "name": "COMO Uma Ubud",
    "country": "Indonesia",
    "missing": [
-    "coming_soon",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8ef",
@@ -2944,11 +2937,8 @@
    "slug": "nihi-rote",
    "name": "NIHI Rote",
    "country": "Indonesia",
-   "missing": [
-    "coming_soon",
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96a",
@@ -3368,8 +3358,8 @@
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff98b",
-   "slug": "rayvadee-resort",
-   "name": "Rayavadee Resort",
+   "slug": "rayavadee",
+   "name": "Rayavadee",
    "country": "Thailand",
    "missing": [],
    "released": true
@@ -3973,8 +3963,10 @@
    "slug": "six-senses-uluwatu",
    "name": "Six Senses Uluwatu Bali",
    "country": "Indonesia",
-   "missing": [],
-   "released": true
+   "missing": [
+    "coming_soon"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9c2",

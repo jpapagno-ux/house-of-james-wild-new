@@ -1828,13 +1828,12 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g10"
    ],
-   "bestMonths": "May through October generally offers the driest conditions for visiting Ubud, though Amandari is open and compelling throughout the year.",
-   "bestMonthsNote": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The resort does not name a best season on its own site.",
    "bestFor": [
-    "honeymoon",
-    "family",
-    "luxury",
-    "solo"
+    "wellness",
+    "adventure",
+    "family"
    ],
    "status": "unclassified",
    "statusDate": "",
@@ -1880,35 +1879,39 @@
     }
    ],
    "facts": {
-    "best_months": "No specific best months are provided. Plan around Bali’s seasonal weather and the Ubud experiences you want to prioritize.",
-    "how_to_get_there": "Amandari is near Ubud, above the Ayung River valley in Bali, Indonesia. Detailed airport transfer information is not provided.",
-    "who_its_for": "Travelers seeking a quiet, high-end Balinese retreat with personalized service, private courtyards, village access, and nearby Ubud culture. It can suit couples, families, and solo travelers.",
-    "signature_experiences": "Rice-field and village walks, Ubud galleries and temples, Balinese dance and artisan traditions, and quiet time beside the pool above the Ayung valley."
+    "best_months": "Aman does not name a best season for Amandari, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "Around a one and a half hour drive north of Ngurah Rai International Airport (DPS); the concierge arranges transfers.",
+    "signature_experiences": "The dawn Melukat Water Blessing at Tirta Empul, valley treks, Ayung River rafting and time with Amandari's resident spiritual healer.",
+    "who_its_for": "Travellers who want Balinese culture, village life and spiritual wellness in a quiet setting near Ubud."
    },
    "faqs": [
     {
-     "q": "What is Amandari known for?",
-     "a": "Amandari is known for its Balinese village-inspired design, private courtyards, and hillside setting above the Ayung River valley. The retreat combines personalized hospitality with access to Ubud’s cultural life, nearby rice fields, and village paths."
-    },
-    {
-     "q": "How many rooms does Amandari have?",
-     "a": "The available property information does not specify Amandari’s total number of rooms. Room types are not currently linked on this page."
-    },
-    {
-     "q": "What is the best time to visit Amandari?",
-     "a": "The available property information does not identify a single best month to visit Amandari. Travel planning should account for Bali’s seasonal weather and the experiences you want to prioritize around Ubud."
-    },
-    {
-     "q": "Is Amandari good for families?",
-     "a": "Amandari can suit families who value a peaceful setting, cultural exploration, and time outdoors around Ubud. Specific family room configurations and child-focused services should be confirmed before booking."
+     "q": "Where is Amandari?",
+     "a": "Amandari is in the village of Kedewatan near Ubud, Bali, on the edge of the Ayung River Gorge. Aman describes it as designed after a traditional Balinese village, close to the artistic centre of Ubud."
     },
     {
      "q": "How do you get to Amandari?",
-     "a": "Amandari is located near Ubud, above the Ayung River valley in Bali, Indonesia. The available property information does not provide a detailed transfer route or travel time, so arrival arrangements should be confirmed with the property."
+     "a": "Amandari is around a one and a half hour drive north of Denpasar's Ngurah Rai International Airport (DPS). Round-trip airport transfers are included with Aman's Discover Indonesia offer; for other stays, the concierge arranges transfers."
     },
     {
-     "q": "What can guests do near Amandari?",
-     "a": "Guests can walk through rice fields and villages, explore Ubud’s galleries and temples, and encounter Balinese dance, music, and artisan traditions. The retreat also provides a quiet base for relaxing beside the pool above the valley."
+     "q": "When is the best time to visit Amandari?",
+     "a": "Aman does not name a best season for Amandari. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "What accommodation does Amandari have?",
+     "a": "Amandari has thatched Pavilions (Garden, Garden Pool, Valley and Duplex Pavilions) and Villas (Ayung Pool Villa, Ayung Pool Duplex Villa, Asmara Pool Villa and the One-, Two- and Three-Bedroom Amandari Villas). All Villas have private pools; Pavilions have outdoor soaking tubs, with private pools in some."
+    },
+    {
+     "q": "Is Amandari good for families?",
+     "a": "Aman's Villa Escape offer pairs Aman Villas at Nusa Dua with Amandari as a family stay, and the multi-bedroom Villas suit groups. Aman's site does not publish an age policy for Amandari."
+    },
+    {
+     "q": "What are Amandari's signature experiences?",
+     "a": "Aman names the dawn Melukat Water Blessing at Tirta Empul Temple, guided by a village storyteller, as a signature experience. Other options include valley treks, cycling, Class II rafting on the Ayung River, Balinese dance with Kedewatan village and sessions with the resident spiritual healer."
+    },
+    {
+     "q": "Who is Amandari best for?",
+     "a": "Amandari suits travellers who want Balinese village life and culture close at hand, wellness rooted in local healing traditions and a quiet base near Ubud."
     }
    ],
    "reviewed": true,
@@ -2388,28 +2391,31 @@
    "gallery": [
     "/img/b44/ec1d01259_cf5860176_697a96a9a1d4510b9decb60f_20120bbc.avif"
    ],
-   "bestMonths": "January to April",
-   "bestMonthsNote": "Sunniest weather, calm seas, and warm evenings, ideal for swimming, watersports, and exploring Koh Samui’s beaches.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 9.5614,
-    "lng": 100.026
+    "lat": 9.562105,
+    "lng": 100.025012
    },
    "airport": "Samui International Airport (USM)",
-   "airportDirections": "15 minutes by taxi or resort transfer from Samui International Airport; direct flights from Bangkok and regional hubs.",
+   "airportDirections": "Samui International Airport (USM) is a 15 minute drive. Without a direct flight, fly to Surat Thani, then about 60 minutes by bus to the port and 90 minutes by ferry.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Premier Garden View Room",
-     "Deluxe Sea View Room",
-     "Junior Garden View Suite",
-     "Junior Sea View Suite",
-     "Royal Sea View Suite",
-     "Beachfront Pool Suite",
-     "Family Suite"
+     "Premier Garden View Room (26)",
+     "Deluxe Garden View Room (28)",
+     "Deluxe Sea View Room (6)",
+     "Junior Garden Suite (22)",
+     "Garden View Suite (8)",
+     "Garden Pool Suite (6)",
+     "Sea View Suite (4)",
+     "Luxury Beach Front View Suite (4)",
+     "Luxury Beach Front Pool Suite (2)",
+     "Two Bedroom Pool Suite"
     ]
    },
    "experiences": {
@@ -2440,23 +2446,58 @@
      "body": "Enjoy the perfect blend of adventure and downtime, watersports, Thai spa rituals, poolside cocktails, family fun, and island exploration. Anantara Bophut is the ideal home base for couples, families, and anyone chasing tropical dreams."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Anantara on the pages read.",
+    "how_to_get_there": "Samui International Airport (USM) is a 15 minute drive. Without a direct flight, fly to Surat Thani on the mainland, then about 60 minutes by bus to the port and 90 minutes by ferry. No helicopter or seaplane is published.",
+    "signature_experiences": "106 rooms and suites in low rise shingled buildings on Bophut Beach, a short walk from Fisherman's Village; Anantara Spa among 3,000 sqm of lotus ponds and gardens; Spice Spoons cooking classes.",
+    "who_its_for": "Families and couples. Children up to 11 stay free sharing with parents, and the Baan Ling Noi kids' club runs activities."
+   },
+   "faqs": [
+    {
+     "q": "Where is Anantara Bophut?",
+     "a": "On Bophut Beach on Koh Samui's northern shore, a short stroll from Fisherman's Village."
+    },
+    {
+     "q": "How far is it from Samui airport?",
+     "a": "About 15 minutes by car. You can also fly to Surat Thani and take a bus and ferry, about 2.5 hours in all."
+    },
+    {
+     "q": "Is Anantara Bophut good for children?",
+     "a": "Yes. Children up to 11 stay free when sharing with parents, and the Baan Ling Noi kids' club has a range of activities."
+    },
+    {
+     "q": "How many rooms does it have?",
+     "a": "106 rooms and suites, from 32 sqm Premier Garden View rooms to beachfront and pool suites and a 114 sqm Two Bedroom Pool Suite."
+    },
+    {
+     "q": "Which suites have a pool?",
+     "a": "The Garden Pool Suites, the Luxury Beach Front Pool Suites and the Two Bedroom Pool Suite."
+    },
+    {
+     "q": "What is the spa like?",
+     "a": "Anantara Spa has six garden treatment suites set among 3,000 sqm of lotus ponds and gardens, open 10 am to 10 pm."
+    },
+    {
+     "q": "Where can I eat?",
+     "a": "Guilty for South American and Nikkei, Thin Thai for modern Thai, TAN Beach Lounge on the sand, plus Designer Dining and Spice Spoons cooking classes."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-08"
     ],
     "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -2479,27 +2520,28 @@
    "quote": "Wake to the river’s hush, the scent of frangipani, and the flavors of northern Thailand at your doorstep.",
    "hero": "/img/b44/53a5ac815_efe1f022e_697a94fe5417b2419891930f_0f949810.avif",
    "gallery": [],
-   "bestMonths": "November to February",
-   "bestMonthsNote": "Cool, dry weather makes for perfect city walks, cycling, outdoor dining, and clear river views.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 18.7881,
-    "lng": 99.0039
+    "lat": 18.781603,
+    "lng": 99.003716
    },
    "airport": "Chiang Mai International Airport (CNX)",
-   "airportDirections": "15-minute drive from Chiang Mai International Airport to the resort. Private car transfers and taxis available.",
+   "airportDirections": "Chiang Mai International Airport (CNX) is a 15 minute drive; the resort arranges a private car or van. The Golden Triangle is about four hours by road.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Deluxe Room",
-     "Deluxe River View Room",
-     "Kasara Suite",
-     "Kasara River View Suite",
-     "Serviced Suites with Kitchenettes",
-     "The Colonial House Suite"
+     "Deluxe Garden View Room (40)",
+     "Deluxe River View Room (12)",
+     "Lanna Garden View Suite (21)",
+     "Lanna River View Suite (8)",
+     "Lanna Riverfront Suite (3)",
+     "Lanna Garden Terrace Suite (1)",
+     "Lanna Pool Suite (1)"
     ]
    },
    "experiences": {
@@ -2530,9 +2572,43 @@
      "body": "Experience the best of Chiang Mai, quiet luxury, culinary journeys, spa days, river adventures, and tailored cultural immersion. Ideal for every traveler who wants to be at the heart of the city but away from the crowds."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Anantara on the pages read.",
+    "how_to_get_there": "Chiang Mai International Airport (CNX) is a 15 minute drive; the resort meets you and arranges a private car or van. The Golden Triangle is about four hours by road. No helicopter is published for this resort.",
+    "signature_experiences": "86 rooms and suites in a low rise building around a garden courtyard on the Mae Ping River, a few minutes from the city centre; 1921 House and its Brit Bar; a 34 metre riverside pool; Anantara Spa.",
+    "who_its_for": "Couples and travellers who want a city base on the river. Babysitting is offered."
+   },
+   "faqs": [
+    {
+     "q": "Where is Anantara Chiang Mai?",
+     "a": "On the Mae Ping River on Charoen Prathet Road, a few minutes from the centre of Chiang Mai."
+    },
+    {
+     "q": "How far is it from Chiang Mai airport?",
+     "a": "About 15 minutes by car. The resort meets you at the airport and arranges a private car or van."
+    },
+    {
+     "q": "How many rooms does Anantara Chiang Mai have?",
+     "a": "86 rooms and suites: 52 Deluxe rooms with garden or river views and 34 Lanna suites, including one Lanna Pool Suite."
+    },
+    {
+     "q": "Which suite is the largest?",
+     "a": "The Lanna Garden Terrace Suite at 150 sqm. The Lanna Pool Suite, at 140 sqm, is the only suite with its own pool."
+    },
+    {
+     "q": "What is 1921 House?",
+     "a": "A steakhouse and grill in the resort's historic house, with the Brit Bar and The Verandah, where afternoon tea is served."
+    },
+    {
+     "q": "Is there a pool?",
+     "a": "Yes. A 34 metre riverside pool, open from 7 am to 7 pm."
+    },
+    {
+     "q": "Can I combine it with the Golden Triangle?",
+     "a": "Yes. Anantara Golden Triangle is about four hours by road, and Anantara offers joint packages such as Jungle to City Journey."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -2545,8 +2621,8 @@
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -2566,7 +2642,7 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "Where Luxury Meets the Elephant’s Domain",
-   "quote": "Awaken to mist rising over jungle hills, share breakfast with elephants, and discover the stories of the Golden Triangle.",
+   "quote": "Awaken to mist rising over jungle hills, walk with rescued elephants and their mahouts, and discover the stories of the Golden Triangle.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/711c7d068_91b933acb_6967686e51d930cc39367c75_anantara-golden-triangle-chiang-rai.jpg",
    "gallery": [
     "/img/b44/6d827c3a0_b6485dac7_6970b68108ffd82bfbcc4be8_eb313771.avif",
@@ -2580,26 +2656,26 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e85cc35be_812757345_6967652cbd4fbe474fdec773_anantara-golden-triangle-_-jungle-bubble-lodge-_1920x10.",
     "/img/b44/180b362d3_8aa375062_6970b681f99144b43ae7875b_a1e51e7c.avif"
    ],
-   "bestMonths": "November to February",
-   "bestMonthsNote": "Cool, clear weather ideal for elephant walks, outdoor dining, and scenic exploration in Northern Thailand.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 20.3533,
-    "lng": 100.0833
+    "lat": 20.367307,
+    "lng": 100.077547
    },
    "airport": "Chiang Rai International Airport (CEI)",
-   "airportDirections": "Approximately 60 minutes by car from Chiang Rai International Airport to the resort. Private transfers can be arranged.",
+   "airportDirections": "By helicopter, a 70 minute charter from Chiang Mai for up to six guests lands at a helipad near the resort (book 72 hours ahead). By road it is about one hour from Chiang Rai International Airport (CEI), or about 4.5 hours from Chiang Mai. The Explorer's Arrival goes by private car to Chiang Saen, then by longtail boat on the Mekong.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Mekong Explorer Tent",
-     "Jungle Bubble Suite",
-     "Family Suite",
-     "Family Suite",
-     "Three Country View Suites"
+     "Deluxe Three Country View Room (40)",
+     "Three Country View Suite",
+     "Mekong Explorer Suite (4)",
+     "Mekong Explorer Family Suite (6)",
+     "Mekong Explorer Tent (2)"
     ]
    },
    "experiences": {
@@ -2628,24 +2704,62 @@
      "body": "Stay for the serenity of mountain views, the companionship of rescued elephants, and the vibrant culture of Northern Thailand. Ideal for couples, families, and adventurers seeking meaningful travel in a landscape where nature, luxury, and heritage intertwine."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Anantara on the pages read.",
+    "how_to_get_there": "By helicopter: a 70 minute charter from Chiang Mai, for up to six guests, lands at a helipad near the resort (book 72 hours ahead). By road: about one hour from Chiang Rai International Airport (CEI), or about 4.5 hours from Chiang Mai. The Explorer's Arrival goes by private car to Chiang Saen, then by longtail boat on the Mekong to the resort's jetty.",
+    "signature_experiences": "A 160 acre bamboo jungle on a ridge above the Mekong and Ruak rivers, where Thailand, Laos and Myanmar meet; rescued elephants of the Golden Triangle Asian Elephant Foundation; Walking with Giants; Jungle Bubbles; Spa by Nature.",
+    "who_its_for": "Couples, families and anyone drawn to elephants. Suites take two adults and two children, Mekong Explorer Family Suites take up to six adults and a child, and childcare is offered."
+   },
+   "faqs": [
+    {
+     "q": "Where is Anantara Golden Triangle?",
+     "a": "On a ridge in Chiang Saen, northern Thailand, above the Mekong and Ruak rivers, looking across to Laos and Myanmar."
+    },
+    {
+     "q": "How do I get to Anantara Golden Triangle?",
+     "a": "The fastest way is a 70 minute helicopter charter from Chiang Mai, landing near the resort. By road it is about an hour from Chiang Rai airport, or you can arrive by longtail boat on the Mekong from Chiang Saen."
+    },
+    {
+     "q": "Can you ride the elephants?",
+     "a": "Anantara offers no riding. Guests walk with the rescued elephants and their mahouts, observe them on the Elephant Learning Experience, or learn mahout customs as an Elephant Guardian."
+    },
+    {
+     "q": "How many rooms does it have?",
+     "a": "Anantara's fact sheet lists 63: 40 Deluxe Three Country View Rooms, Three Country View Suites, 4 Mekong Explorer Suites, 6 Mekong Explorer Family Suites and 2 Mekong Explorer Tents, plus the Jungle Bubbles."
+    },
+    {
+     "q": "What are the Jungle Bubbles?",
+     "a": "Transparent bubbles on a wooden deck among the elephants, booked as a dusk to dawn experience with dinner and breakfast. The Jungle Bubble Lodge adds two bedrooms and a plunge pool."
+    },
+    {
+     "q": "Is it good for families?",
+     "a": "Yes. Suites take two adults and two children, the Mekong Explorer Family Suites take up to six adults and a child, and childcare is available."
+    },
+    {
+     "q": "What else is nearby?",
+     "a": "The Hall of Opium, the Golden Triangle at Sop Ruak, historic Chiang Saen, Doi Mae Salong tea plantations, Mae Sai and Doi Tung."
+    },
+    {
+     "q": "Is there an all inclusive option?",
+     "a": "Yes. The Golden Triangle Luxury Explorer packages include all meals, daily activities, a spa treatment and Chiang Rai airport transfers; the stay longer version needs three nights."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
-    "primary": "PATH-08",
+    "primary": "PATH-04",
     "secondary": [
-     "PATH-05",
-     "PATH-04"
+     "PATH-08",
+     "PATH-01"
     ],
     "setting": "golden_triangle",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -2675,28 +2789,31 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dc01ad0d4_7cab859fb_69a964b7208e809f73c004ec_deluxe-pool-access-03-944-x-510.jpeg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b412188f9_2cf743286_69a95cf8d06b7cce73f0d819_deluxe-sea-view-balcony-2-944-x-510.jpeg"
    ],
-   "bestMonths": "November to March",
-   "bestMonthsNote": "Sunny, mild weather, ideal for beach time, market tours, and family adventures by the sea.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 12.601,
-    "lng": 99.9561
+    "lat": 12.616348,
+    "lng": 99.953279
    },
    "airport": "Hua Hin Airport (HHQ)",
-   "airportDirections": "20 minutes by car from Hua Hin Airport, 2.5 hours from Bangkok’s Suvarnabhumi Airport by highway or resort transfer.",
+   "airportDirections": "Hua Hin Airport (HHQ) is a two minute drive. From Bangkok it is about three hours by road, with limousine pick up at Suvarnabhumi, or around four hours by train from Bang Sue to Hua Hin station, 6 km away.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Premium Garden View Room",
-     "Premium Sea View Room",
-     "Junior Lagoon View Suite",
-     "Lagoon View Suite",
-     "Lagoon Pool Access Suite",
-     "Two Bedroom Lagoon View Suite",
-     "Private Villas"
+     "Garden View Room",
+     "Deluxe Garden View rooms (terrace or balcony)",
+     "Deluxe Sea View rooms (terrace or balcony)",
+     "Pool Access Room",
+     "Lagoon View Junior Suite",
+     "Anantara Garden View Suite",
+     "Club Anantara Seaview Suite",
+     "Two-Bedroom Family Suite",
+     "Two-Bedroom Family Pool Suite",
+     "Three Bedroom Seaview Penthouse"
     ]
    },
    "experiences": {
@@ -2727,23 +2844,58 @@
      "body": "Escape to the Thai coast for world-class hospitality, tropical gardens, beachfront dining, and local experiences. Perfect for families, wellness seekers, couples, and anyone wanting a taste of authentic Thailand."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Anantara on the pages read.",
+    "how_to_get_there": "Hua Hin Airport (HHQ) is a two minute drive from the resort. From Bangkok, it is about three hours by road on Phetkasem Road, with limousine pick up at Suvarnabhumi, or around four hours by train from Bang Sue to Hua Hin station, 6 km away. Private planes can be chartered; no helicopter or seaplane is published.",
+    "signature_experiences": "Anantara's first resort, relaunched on 1 November 2025 with 171 renovated rooms and suites in gardens on the Hua Hin seafront, the favourite seaside town of Thai royalty; Anantara Spa; Sea. Fire. Salt.",
+    "who_its_for": "Families and couples. The 2025 renovation added a new Kids' Club, a Mini Farm, two bedroom family suites and a dedicated adults' lagoon pool and bar; select rooms are pet friendly."
+   },
+   "faqs": [
+    {
+     "q": "Has Anantara Hua Hin been renovated?",
+     "a": "Yes. Minor Hotels says the resort relaunched on 1 November 2025 with 171 newly renovated rooms and suites, a new Kids' Club, a Mini Farm and new pool access rooms and family suites."
+    },
+    {
+     "q": "How far is Anantara Hua Hin from the airport?",
+     "a": "Hua Hin Airport is a two minute drive. From Bangkok, allow about three hours by road; the resort sends limousines to Suvarnabhumi."
+    },
+    {
+     "q": "Is Anantara Hua Hin good for families?",
+     "a": "Yes. There is a new Kids' Club with a weekly activity schedule, a Mini Farm, childcare, and two bedroom family suites of 128 sqm, some with a full size pool."
+    },
+    {
+     "q": "Is there somewhere just for adults?",
+     "a": "Yes. The renovation added a dedicated adults' lagoon pool and bar."
+    },
+    {
+     "q": "Can I bring my dog?",
+     "a": "Yes. Select rooms have dedicated space for pets, and Anantara runs a Paws, Play and Stay package."
+    },
+    {
+     "q": "Where is Anantara Hua Hin?",
+     "a": "On Phetkasem Beach Road at the heart of Hua Hin, set in gardens on the coast, with Fisherman's Pier just to the south."
+    },
+    {
+     "q": "Where can I eat at Anantara Hua Hin?",
+     "a": "Sea. Fire. Salt. for Mediterranean lunch and dinner, Rim Nam for traditional Thai, Baan Thalia for Italian, Issara Café for breakfast, and Designer Dining anywhere on the grounds."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-08"
     ],
     "setting": "hua_hin",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -2963,7 +3115,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Elevated Jungle Serenity",
+   "tagline": null,
    "quote": "Set high above Bali’s lush jungle valleys, Anantara Ubud invites you into a world of stillness, wellness and immersive connection to nature.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anantara-ubud-bali/hero",
    "gallery": [
@@ -2977,9 +3129,13 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6011c2658_8b6838ca5_69dcbbe0ef518b637dd6fc15_anantara_ubud_bali_resort_forest_view_suite_livingroom_.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a5f3d0d63_9695ea884_69dcbc2f5f498b1b7ced5642_anantara_ubud_bali_resort_suite_bathroom_1920x1037.jpg"
    ],
-   "bestMonths": "May to September",
-   "bestMonthsNote": "Dry season offers cooler temperatures, ideal for outdoor exploration, wellness activities and jungle experiences.",
-   "bestFor": [],
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The resort does not name a best season on its own site.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "adventure"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -2992,48 +3148,83 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Forest View Suite",
-     "Valley View Suite",
-     "Pool Villa",
-     "One Bedroom Pool Villa",
-     "Two Bedroom Forest Pool Villa"
+     "Premier Room",
+     "Forest View Room",
+     "Payangan Suite",
+     "One Bedroom Forest View Pool Villa",
+     "One Bedroom Panoramic View Pool Villa",
+     "Two Bedroom Pool Villa",
+     "Two Bedroom Forest View Pool Villa"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Jungle Treks",
-     "Yoga & Meditation",
-     "Balinese Rituals",
-     "Waterfall Visits",
-     "Culinary Journeys",
-     "Spa Treatments",
-     "Cultural Exploration"
+     "Guided jeep adventure through Alas Tar forest",
+     "Mountain hikes",
+     "Sacred temple visits",
+     "Sunrise yoga",
+     "Spa treatments",
+     "Cultural exploration"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Infinity pools overlooking jungle valleys",
-     "wellness focused design",
-     "open air dining experiences",
-     "Anantara Spa",
-     "curated cultural immersion",
-     "elevated rainforest setting"
+     "85 rooms, suites and pool villas",
+     "Infinity pools and a villa host in every villa",
+     "Anantara Spa and wellness centre",
+     "Kids' club, teens' club and kids' pool, plus an adult-only pool",
+     "Heated swimming pool",
+     "Complimentary shuttle"
     ]
    },
    "onlyHere": [
-    "Anantara Ubud Bali offers a deeply calming retreat above the rainforest canopy, where each moment is guided by nature’s rhythm. It is a place for travelers seeking quiet luxury, wellness and connection in one of Bali’s most spiritual landscapes."
+    "Anantara Ubud Bali sits in Payangan's rainforest with views to Mount Agung, a calm retreat where experiences are shaped for adults, teens and children alike."
    ],
    "why": [
     {
      "title": "Where Jungle Stillness Meets Elevated Living",
-     "body": "Stay for panoramic jungle views, immersive wellness and refined Balinese hospitality. Anantara Ubud is ideal for couples, wellness seekers, solo travelers and those looking to slow down and reconnect in nature."
+     "body": "Stay for rainforest views, spa and wellness, and guided nature and cultural explorations. Anantara Ubud suits families, with kids' and teens' clubs, and wellness seekers looking to slow down."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Anantara does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "A scenic 120-minute drive from Ngurah Rai International Airport (DPS), about 50 km.",
+    "signature_experiences": "A guided jeep adventure through Alas Tar forest, mountain hikes, sacred temple visits and Anantara Spa.",
+    "who_its_for": "Families, with kids' and teens' clubs, and wellness seekers who want rainforest calm north of Ubud."
+   },
+   "faqs": [
+    {
+     "q": "Where is Anantara Ubud Bali Resort?",
+     "a": "Anantara Ubud Bali Resort is on Jalan Raya Puhu in Payangan, in the northern part of Ubud, where rainforest meets views of Mount Agung. Ubud centre is 10 km away."
+    },
+    {
+     "q": "How do you get to Anantara Ubud Bali?",
+     "a": "By road: Anantara describes a scenic 120-minute drive from Ngurah Rai International Airport (DPS), about 50 km away. Anantara does not publish a helicopter option on the pages we checked."
+    },
+    {
+     "q": "When is the best time to visit Anantara Ubud Bali?",
+     "a": "Anantara does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "How many rooms does Anantara Ubud Bali have?",
+     "a": "The resort has 85 keys: 6 Premier Rooms, 38 Forest View Rooms, 6 Payangan Suites, 21 One Bedroom Forest View Pool Villas, 6 Two Bedroom Pool Villas and 8 Two Bedroom Forest View Pool Villas. The two-bedroom villas are the largest at 160 sqm."
+    },
+    {
+     "q": "Is Anantara Ubud Bali good for families?",
+     "a": "Yes. Anantara calls the resort family-friendly, with a kids' pool, kids' club and teens' club, and experiences designed for adults, teens and children."
+    },
+    {
+     "q": "What experiences does Anantara Ubud Bali offer?",
+     "a": "Highlights include a guided jeep adventure through villages, rice fields and Alas Tar forest, mountain hikes and sacred temple visits, plus sunrise yoga and Anantara Spa."
+    },
+    {
+     "q": "Who is Anantara Ubud Bali best for?",
+     "a": "It suits families and wellness seekers who want a rainforest setting away from central Ubud, with guided nature and cultural explorations close at hand."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -4951,6 +5142,226 @@
    "placeSlug": null
   },
   {
+   "slug": "bambu-indah",
+   "name": "Bambu Indah",
+   "ledgerId": "STY-2026-000032",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "24 freestanding houses, nests and tents on the Sayan Ridge above the Ayung River",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bambu-indah/g10"
+   ],
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The resort does not name a best season on its own site.",
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "food"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2024-11-01",
+   "coords": {
+    "lat": -8.5121895,
+    "lng": 115.2384593
+   },
+   "airport": "Ngurah Rai International Airport (DPS)",
+   "airportDirections": "About 1.5 hours north of Ngurah Rai International Airport in Denpasar. Bambu Indah can arrange airport pick-up and drop-off, a private car and driver, and VIP fast-track immigration.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "24 freestanding Houses, Nests and Tents, each one different. Teak Houses: eleven antique Javanese houses, restored and expanded (Elora & Orin, Jambu, Jawalama, Kelapa, Kuning, Kuno, Limasan, Manggis, Padi, Pagoda and Pawon). Signature Houses: seven bamboo houses (Copper, Full Moon, Moon, New Moon, Riverbend, Sumba and the Treehouse, set in the branches of two bunut trees). Nests & Tents: Dove, Kingfisher, Starling, Swift and two Mahogany Tents.",
+     "Most have open-air bathrooms and only a handful have walls. All have air-conditioned beds under mosquito nets, French linens, rain showers and a minibar of complimentary local drinks and homemade treats. Village-side houses sit at the top of the ridge near the entrance; Riverside houses run down to the water and can involve steps, stairs or rocky paths. Rates include breakfast at Riverside Warung."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "More than 15 spring-fed pools beside the Ayung River, with bamboo bales and a pod hung over the current, plus a salt-water pool at the top of the ridge. Nature walks past regenerated rice paddies and a 500-year-old banyan, Trash Walks along the river, and Bird Walks with local experts. Rice planting and harvesting several times a year. Bamboo tours of Green Village and Green School. Massage and healing in treatment pods, yoga in an open-air shala over a canal (on request, extra fee) and a meditation cave reached by a hand-dug tunnel. The team also arranges rafting, cycling, temple blessings and other Bali outings. Most experiences carry extra fees; some are seasonal."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "John and Cynthia Hardy began in 2005 with antique Javanese bridal houses next to their own home outside Ubud, and still live next door. They call it an accidental hotel and an experiment in regenerative hospitality: bamboo over cement, no plastic or chemicals, upcycled houses and furniture. Much of the bamboo building is by Ibuku, the design studio of John's daughter Elora Hardy.",
+     "The property is planted with food instead of lawns. Rice paddies supply all the rice served, ducks and two cows do the fertilising, and much of the cooking is done over wood-fired Balinese stoves. Tembaga, the restaurant, is built around longevity and anti-inflammatory food at a communal table made from 70,000 upcycled chopsticks. A bamboo elevator rises to the Sunset Bar over the Bongkasa rice fields."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A working family experiment rather than a resort: the Hardys live next door, the rice in your bowl came from the paddy below, and you can help plant or harvest the next crop."
+   ],
+   "why": [
+    {
+     "title": "Bamboo, River and Rice",
+     "body": "Best for couples, families and wellness travellers who want Ubud's jungle up close, with open-air houses and a hotel that grows its own food."
+    }
+   ],
+   "facts": {
+    "best_months": "Bambu Indah does not publish a best season on its site; confirm timing with your advisor.",
+    "how_to_get_there": "About 1.5 hours from Denpasar (DPS); the hotel arranges transfers.",
+    "signature_experiences": "The spring-fed river pools, rice planting or harvesting, and dinner at Tembaga.",
+    "who_its_for": "Couples, families and wellness travellers who want nature close."
+   },
+   "faqs": [
+    {
+     "q": "Where is Bambu Indah?",
+     "a": "On the Sayan Ridge outside Ubud, Bali, on a jungle gorge running down to the Ayung River, about a 15-minute drive from Ubud."
+    },
+    {
+     "q": "How do you get to Bambu Indah from Denpasar airport?",
+     "a": "It is about 1.5 hours north of Ngurah Rai International Airport (DPS). Bambu Indah can arrange airport transfers, a private car and driver, and VIP fast-track immigration."
+    },
+    {
+     "q": "How many rooms does Bambu Indah have?",
+     "a": "Bambu Indah has 24 freestanding Houses, Nests and Tents: eleven Teak Houses, seven Signature Houses including the Treehouse and Riverbend House, and the Dove, Kingfisher, Starling and Swift Nests plus the Mahogany Tents. Village-side houses sit at the top of the ridge; Riverside houses step down towards the water."
+    },
+    {
+     "q": "Can children stay at Bambu Indah?",
+     "a": "Yes. Several houses are marked for family and friends, and the hotel runs a family stay with river activities and kite making. Riverside houses involve steps and rocky paths, and the Treehouse is reached by a narrow spiral staircase."
+    },
+    {
+     "q": "What can you do at Bambu Indah?",
+     "a": "Swim in the spring-fed river pools, join a nature, trash or bird walk, plant or harvest rice in season, tour Green Village and Green School, and book massage, yoga or the meditation cave."
+    },
+    {
+     "q": "Who is Bambu Indah best for?",
+     "a": "Couples, families and wellness travellers who are happy with open-air rooms, uneven paths and a lot of nature, and who care how a hotel is built and fed."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "banyan-tree-krabi",
+   "name": "Banyan Tree \n Krabi",
+   "ledgerId": "STY-2026-000033",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Pool suites and villas on the northern tip of Tubkaek Beach, Krabi.",
+   "quote": null,
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/834887bf6_9e2c39a82_6904be69fd335409ea32bf27_BTTHKB_KP_1020_guest-room_beachfront-pool-villa_HR0002.",
+   "gallery": [],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "Banyan Tree says November to April, and adds that clear days are also possible in the May to October rainy season, though less reliably.",
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Krabi International Airport (KBV)",
+   "airportDirections": "Krabi International Airport (KBV) is 40 km away, about a 45 minute drive.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Garden Pool Suite",
+     "Partial Ocean Pool Suite",
+     "Wellbeing Sanctuary Pool Suite",
+     "Premium Ocean Pool Suite",
+     "Two-Bedroom Ocean Pool Suite",
+     "Deluxe Garden Pool Villa",
+     "Beachfront Pool Villa",
+     "Two-Bedroom Beachfront Pool Villa",
+     "Presidential Beachfront Pool Villa"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {
+    "best_months": "November to April, per Banyan Tree, which adds that clear days are also possible in the May to October rainy season, though less reliably.",
+    "how_to_get_there": "Fly into Krabi International Airport (KBV), 40 km away, about a 45 minute drive. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "72 suites and villas, every one with a private pool, at the northernmost point of secluded Tubkaek Beach; Banyan Tree Spa and a Wellbeing Sanctuary.",
+    "who_its_for": "Couples and families. One bedroom suites take 2 adults and 1 child aged 4 to 12; there is a Kids' Club, and two bedroom suites and villas sleep four."
+   },
+   "faqs": [
+    {
+     "q": "Where is Banyan Tree Krabi?",
+     "a": "At the northernmost point of Tubkaek Beach in Krabi, on Thailand's Andaman coast."
+    },
+    {
+     "q": "How far is Banyan Tree Krabi from the airport?",
+     "a": "About 45 minutes by road from Krabi International Airport, which is 40 km away. No helicopter or seaplane is published."
+    },
+    {
+     "q": "How many rooms does Banyan Tree Krabi have?",
+     "a": "72 suites and villas, from 99 sqm pool suites to the 587 sqm Presidential Beachfront Pool Villa."
+    },
+    {
+     "q": "When is the best time to visit Banyan Tree Krabi?",
+     "a": "November to April, Banyan Tree says. Clear days can still come in the May to October rainy season, but less reliably."
+    },
+    {
+     "q": "Is Banyan Tree Krabi good for families?",
+     "a": "Yes. There is a Kids' Club, one bedroom suites take two adults and one child aged 4 to 12, and the two bedroom suite and villa sleep four."
+    },
+    {
+     "q": "Does every room have a pool?",
+     "a": "Yes. Every suite and villa Banyan Tree lists is a pool suite or pool villa."
+    },
+    {
+     "q": "What is the largest villa?",
+     "a": "The Presidential Beachfront Pool Villa: 587 sqm on the beach, sleeping six, with a private swimming pool and a jet pool."
+    },
+    {
+     "q": "Is there a wellness option?",
+     "a": "Yes. The Wellbeing Sanctuary Pool Suites and the Banyan Tree Spa sit alongside a Wellbeing Sanctuary package with daily classes and meals."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "bateleur-camp-by-and-beyond",
    "name": "Bateleur Camp \n By & Beyond",
    "ledgerId": "STY-2026-000034",
@@ -6139,6 +6550,268 @@
    "placeSlug": null
   },
   {
+   "slug": "como-uma-canggu",
+   "name": "COMO Canggu",
+   "ledgerId": "STY-2026-000579",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A beachfront COMO on Echo Beach, with surf lessons and Play by COMO",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-canggu/g10"
+   ],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "COMO says rainfall is lowest from May to September, with frequent cooling breezes from June to August.",
+   "bestFor": [
+    "family",
+    "adventure"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
+   "coords": null,
+   "airport": "Ngurah Rai International Airport (DPS)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "COMO lists 119 rooms and suites.",
+     "Penthouses: 12 three-bedroom duplexes with rooftop pools and private butler service.",
+     "Residences, Suites and Rooms."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Surf lessons with Tropicsurf for beginners and intermediates",
+     "Purification ceremony at Tirta Empul temple",
+     "Tanah Lot temple tour",
+     "Play by COMO for children"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Beachfront on Echo Beach, near Batu Bolong",
+     "COMO Beach Club, a modern take on a surf shack",
+     "One complimentary group class a day",
+     "Play by COMO for ages 4 to 12",
+     "Surfing with Tropicsurf"
+    ]
+   },
+   "onlyHere": [
+    "A COMO beach resort on Canggu's surf coast, from the Penthouses with rooftop pools to the COMO Beach Club."
+   ],
+   "why": [
+    {
+     "title": "Surf, Sand and COMO Calm",
+     "body": "COMO Canggu puts a COMO Shambhala retreat on Echo Beach, with a calm stretch of sand for learners, surf lessons with Tropicsurf and Play by COMO for children aged 4 to 12."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September, when COMO says rainfall is lowest, with frequent cooling breezes from June to August.",
+    "how_to_get_there": "About 90 minutes by car from Ngurah Rai International Airport (DPS). COMO can arrange a private transfer; no helicopter transfer is published.",
+    "signature_experiences": "Surf lessons with Tropicsurf, COMO Beach Club, the COMO Shambhala lagoon pool, a Tirta Empul purification ceremony and a Tanah Lot temple tour.",
+    "who_its_for": "Families, with Play by COMO for ages 4 to 12, and beginner and intermediate surfers."
+   },
+   "faqs": [
+    {
+     "q": "Where is COMO Canggu?",
+     "a": "COMO Canggu is a beachside resort on Jalan Pantai Batu Mejan at Echo Beach, Canggu, on Bali's south coast, near Batu Bolong."
+    },
+    {
+     "q": "How do you get to COMO Canggu?",
+     "a": "COMO Canggu is about a 90-minute drive from Ngurah Rai International Airport (DPS). Taxis are available at the airport and COMO can arrange a private transfer. COMO does not publish a helicopter transfer."
+    },
+    {
+     "q": "When is the best time to visit COMO Canggu?",
+     "a": "COMO says the best time to visit is May through September, when rainfall is lowest, and notes frequent cooling breezes from June to August."
+    },
+    {
+     "q": "What rooms does COMO Canggu have?",
+     "a": "COMO lists 119 rooms and suites across Rooms, Suites, Residences and Penthouses. The 12 Penthouses are three-bedroom duplexes with rooftop pools and private butler service."
+    },
+    {
+     "q": "Is COMO Canggu good for families?",
+     "a": "Yes. Play by COMO is for children aged 4 to 12. COMO says children under five dine free and children aged six to twelve get 50 percent off meals."
+    },
+    {
+     "q": "Can you surf at COMO Canggu?",
+     "a": "Yes. COMO offers surfing with its partner Tropicsurf, with lessons for beginner and intermediate surfers, and the beachfront has a calm stretch of sand for learners."
+    },
+    {
+     "q": "What wellness is there at COMO Canggu?",
+     "a": "COMO Shambhala has a lagoon pool, fitness centre, Pilates and yoga studios and steam rooms. One group class a day, an in-room yoga mat and meditation videos are complimentary."
+    },
+    {
+     "q": "What is there to do beyond the beach?",
+     "a": "COMO arranges a purification ceremony at Tirta Empul temple in north-east Ubud and a Tanah Lot temple tour, and the COMO Beach Club is a modern take on a surf shack."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "iggi-draft",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "como-uma-ubud",
+   "name": "COMO Uma Ubud",
+   "ledgerId": "STY-2026-000580",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "COMO calm in Ubud, a short walk from town above the Tjampuhan Valley",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-uma-ubud/g10"
+   ],
+   "bestMonths": "May to September",
+   "bestMonthsNote": "COMO says May to September is the best time to visit, when there is less humidity.",
+   "bestFor": [
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Ngurah Rai International Airport (DPS)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "46 suites along planted corridors.",
+     "Larger pool villas with landscaped courtyards, infinity plunge pools and sun terraces, some looking over the Tjampuhan Valley or the jungle canopy."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Tjampuhan Ridge Walk",
+     "Guided Ubud biking",
+     "Keliki Village Walk, with a traditional market"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Kemiri, for traditional Indonesian dishes",
+     "Uma Cucina, a street-side Italian-inspired restaurant and lounge bar",
+     "Daily yoga sessions and morning walks included",
+     "A complimentary scheduled shuttle to Ubud town"
+    ]
+   },
+   "onlyHere": [
+    "A COMO Shambhala retreat in Ubud's artists' town, with the Tjampuhan Ridge Walk starting from the front door."
+   ],
+   "why": [
+    {
+     "title": "Ubud on Foot, COMO at Heart",
+     "body": "COMO Uma Ubud sits in Kedewatan, an easy walk or a five-minute shuttle from Ubud town, with hikes from the front door, daily yoga and COMO Shambhala Spa."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September, when COMO says there is less humidity.",
+    "how_to_get_there": "About 90 minutes by car from Ngurah Rai International Airport (DPS). COMO can arrange a private transfer at additional cost; no helicopter transfer is published.",
+    "signature_experiences": "The Tjampuhan Ridge Walk from the front door, daily yoga, COMO Shambhala Spa, and Kemiri for Indonesian cooking.",
+    "who_its_for": "Couples and wellness travellers who want to walk into Ubud and come back to a quiet COMO retreat."
+   },
+   "faqs": [
+    {
+     "q": "Where is COMO Uma Ubud?",
+     "a": "COMO Uma Ubud is on Jalan Raya Sanggingan in Kedewatan, Ubud, in Bali's artists' town, about five minutes from Ubud town centre."
+    },
+    {
+     "q": "How do you get to COMO Uma Ubud?",
+     "a": "COMO Uma Ubud is about a 90-minute drive from Ngurah Rai International Airport (DPS). Taxis are available at the airport and COMO can arrange a private transfer at additional cost. COMO does not publish a helicopter transfer."
+    },
+    {
+     "q": "When is the best time to visit COMO Uma Ubud?",
+     "a": "COMO says the best time to visit is May through September, when there is less humidity."
+    },
+    {
+     "q": "What rooms does COMO Uma Ubud have?",
+     "a": "There are 46 suites set along planted corridors, and larger pool villas with landscaped courtyards, infinity plunge pools and sun terraces, some with views over the Tjampuhan Valley or the jungle canopy."
+    },
+    {
+     "q": "What wellness is included?",
+     "a": "Daily yoga sessions and morning walks, an in-room yoga mat with meditation videos, and access to the Shambhala pool and fitness centre are included. COMO Shambhala Spa offers Balinese massages, holistic therapies and personalised programmes."
+    },
+    {
+     "q": "Where can you eat at COMO Uma Ubud?",
+     "a": "Kemiri serves traditional Indonesian dishes with contemporary takes on neighbouring cuisines, and Uma Cucina is a street-side restaurant and lounge bar with Italian-inspired food."
+    },
+    {
+     "q": "What is there to do around COMO Uma Ubud?",
+     "a": "Hikes start from the front door, including the Tjampuhan Ridge Walk. COMO also arranges a Kintamani temples and volcanoes tour, guided Ubud biking and a Keliki village walk with a traditional market."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-01",
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "iggi-draft",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "camp-hwange-muddy-teak",
    "name": "Camp Hwange & Muddy Teak",
    "ledgerId": "STY-2026-000049",
@@ -6365,7 +7038,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A Sanctuary for the Curious Epicurean Perched on the edge of a vibrant coral reef.",
+   "tagline": "Forty rooms and twenty villas on a coral reef shore in West Sumba",
    "quote": "Welcome to Your Wild Refuge Set along the vibrant coral-fringed shores of Sumba, Cap Karoso is your soulful base for exploration. Where turquoise lagoons meet timeless villages and island traditions.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/71558fb49_f77859b0a_683a8e8b1b0de7dd8261c90a_1_20ARCHITECTURE_2024_20MICHAEL_20GRAY_20_1_.jpg",
    "gallery": [
@@ -6380,9 +7053,14 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e60a8c857_c767c897b_683a93a21b3190fc20767a3f_Cap_20Karoso_20Sumba_20WoYo_20villa_20pool_20view_201-m.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/35ee1efae_eded2f2aa_683a93a245d714537f0714e4_IMG_5393.jpg"
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "This period avoids the long monsoon rains, offering tranquil seas, sunny skies, and the fullness of the resort’s garden and farming activities. Perfect for beach, culture, wellness, and outdoor discovery.",
-   "bestFor": [],
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Indonesia's dry season, per the official tourism board. Cap Karoso describes December to March or April as the rainy season and June to August as the cooler months.",
+   "bestFor": [
+    "family",
+    "wellness",
+    "adventure",
+    "food"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -6395,60 +7073,84 @@
    "rooms": {
     "paras": [],
     "items": [
+     "40 rooms and 20 villas",
      "Studio",
      "Terrace Studio",
      "Beach Suite",
-     "2-Bedroom Garden Suite",
-     "2-Bedroom Duplex - Villa Maghailo",
-     "2-Bedroom Villa - Villa Ndara",
-     "3-Bedroom Villa - Villa Wo'yo",
-     "3-Bedroom Beachfront Villa - Villa Ghan'nu"
+     "Two-Bedroom Garden Suite",
+     "Duplex Villa",
+     "Two-Bedroom Villa",
+     "Three-Bedroom Villa",
+     "Beachfront Villa"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Sumba Authentic Cultural Experiences",
-     "Equine Therapy",
-     "Shamanic Healing",
-     "Hike, SUP, Snorkeling and Surfing",
-     "Waterfall Treks",
-     "Farm Tours & Chef's Table",
-     "Beach Dining",
-     "Art Workshops",
-     "Yoga Flow & Healing Spa"
+     "Sandalwood horse riding",
+     "Shamanic Healing Journey",
+     "Surfing, snorkelling, hiking and paddleboarding",
+     "Boat trips to snorkelling spots, secluded beaches and surf breaks",
+     "Farm experiences in composting and natural fertiliser",
+     "Daily yoga and meditation with Sumbanese teachers"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "On Site Organic Farm",
-     "Horseback Beach Trails",
-     "Karoso Beach Access",
-     "24 Stylish Villas & Studios Luxury",
-     "Zero Waster Initiatives",
-     "Julang's Chef Table",
-     "Malala Spa",
-     "Remote Island Privacy",
-     "Proximity to Natural Wonders",
-     "Wellness Cuisine",
-     "Artist Residency Program"
+     "Horseback rides on Sumbanese sandalwood horses",
+     "Karoso Lagoon for swimming and snorkelling",
+     "40 rooms and 20 villas",
+     "Julang restaurant",
+     "Malala Spa, set in a traditional Sumbanese house",
+     "Artist residencies and craft ateliers",
+     "KarosoKids club for ages 4 to 12"
     ]
    },
    "onlyHere": [],
    "why": [
     {
      "title": null,
-     "body": "Cap Karoso is more than a stay. It’s your gateway to the soul of Sumba. Rooted in culture, wrapped in nature, and elevated by conscious luxury, this is where slow exploration meets refined indulgence. Let us guide your journey. One rich in flavor, discovery, and unforgettable connection."
+     "body": "Cap Karoso is more than a stay. It is a launchpad for exploring Sumba, rooted in culture and wrapped in nature, where slow exploration meets refined indulgence."
     },
     {
      "title": null,
-     "body": "Cap Karoso is where design‑led architecture, regenerative farming, community empowerment and immersive island rituals converge in a traveler’s dream. Perfect for: Adventure & Nature seekers discovering Suma’s wild coast; Wellness & Health travelers drawn to spa, shamanic healing, yoga; Conservation & Eco Mindfulness visitors valuing regenerative impact; Couples & Honeymooners craving seclusion and bespoke dining; Creative Epicureans eager for chef residencies and farm‑driven gastronomy."
+     "body": "Cap Karoso suits adventure and nature seekers discovering Sumba's wild coast; wellness travellers drawn to Malala Spa, shamanic healing and yoga; families with the KarosoKids club; and curious epicureans eager for farm-driven food."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Cap Karoso describes December to March or April as the rainy season and June to August as the cooler months.",
+    "how_to_get_there": "A 15-minute helicopter flight, or a one-hour flight from Bali to Tambolaka and a 50-minute drive.",
+    "signature_experiences": "Farm-to-table dining from its own farm, the Shamanic Healing Journey, surf and snorkel boat trips, and the KarosoKids club.",
+    "who_its_for": "Curious epicureans, families and travellers who want culture, wellness and Sumba's wild coast."
+   },
+   "faqs": [
+    {
+     "q": "Where is Cap Karoso?",
+     "a": "Cap Karoso sits on the shores of a coral reef in West Sumba, Indonesia, surrounded by turquoise lagoons and traditional villages."
+    },
+    {
+     "q": "How do I get to Cap Karoso?",
+     "a": "You can arrive by helicopter on a short 15-minute scenic flight. Otherwise, fly about one hour from Bali (Denpasar) to Tambolaka (TMC), then drive 50 minutes to the resort; the team can arrange your transfer."
+    },
+    {
+     "q": "How many rooms and villas does Cap Karoso have?",
+     "a": "Cap Karoso has 40 rooms and 20 villas, from Studios and Beach Suites to two and three-bedroom villas and a Beachfront Villa."
+    },
+    {
+     "q": "Is Cap Karoso good for families?",
+     "a": "Yes. The Karoso Kids Club is complimentary for ages 4 to 12, nanny services are available for children of all ages from morning until midnight, and the villas have private pools and open-air kitchens."
+    },
+    {
+     "q": "What is the weather like at Cap Karoso?",
+     "a": "Cap Karoso describes Sumba as one of Indonesia's sunniest islands. The rainy season runs from December to March or April, with short bursts of rain followed by sunshine; June to August are the cooler months."
+    },
+    {
+     "q": "What can you do at Cap Karoso?",
+     "a": "Surfing, snorkelling, hiking, horse riding, cultural excursions and wellness, including daily yoga and the Shamanic Healing Journey at Malala Spa. The three-hectare biological farm supplies nearly all the fruit and vegetables for the restaurant."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6753,18 +7455,24 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Jungle Luxury, Balinese Spirit",
+   "tagline": "Twenty-two tents and one lodge in the conserved forest of the Keliki Valley",
    "quote": "Hidden among the rainforest’s canopy, Capella Ubud invites you to discover bold adventure and bespoke comfort inspired by Bali’s explorers and artisans.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c8c8665f6_1ed34aa7a_6984639fccef2317e28a6b55_Capella-Ubud-Hero_20.jpg",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5f97c4658_32eff3874_69847ae7e38545ec53c475b2_ubud-accommodation-rainforest-tent-saltwaterpool.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f4cd07afd_438b06628_69847bda07399d64cb1342eb_ubud-accommodation-dining-intentbreakfast.jpg"
    ],
-   "bestMonths": "May to September",
-   "bestMonthsNote": "Dry season offers ideal weather for jungle walks, outdoor dining, and spa rituals.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The resort does not name a best season on its own site.",
+   "bestFor": [
+    "family",
+    "adventure",
+    "wellness",
+    "conservation",
+    "group_exclusive_use"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.4449,
     "lng": 115.2669
@@ -6773,46 +7481,70 @@
    "airportDirections": "90-minute drive from Ngurah Rai International Airport to Capella Ubud Bali. Resort can arrange private transfers through lush countryside.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Terrace Tent",
-     "Rainforest Tent",
-     "River Tent",
-     "Keliki Valley Tent",
-     "Two-Bedroom Lodge"
-    ]
+    "paras": [
+     "One Bedroom Terrace Tent. One Bedroom Forest Tent. One Bedroom Valley Tent. One Bedroom Keliki Tent. Two Bedroom Lodge.",
+     "23 tents in all, each with a private pool."
+    ],
+    "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Jungle Walks",
-     "Balinese Rituals",
-     "Private Yoga",
-     "Rice Field Cycling",
-     "Purification Ceremonies",
-     "Culinary Classes",
-     "Spa Treatments",
-     "Cultural Tours"
-    ]
+    "paras": [
+     "Jungle hikes. Mountain bike trails. Aerial yoga. Melukat purification ritual. Keliki wood carving and gamelan with the Capella Culturists. Cooking classes. Spa treatments."
+    ],
+    "items": []
    },
    "features": {
     "paras": [
-     "Unique tented retreats with saltwater pools, rainforest showers, handcrafted antiques, open-air living, gourmet dining, signature Auriga Spa, and inspired cultural programs."
+     "Tents designed by Bill Bensley, each with a private pool (heated in the Keliki Tents and the Lodge), indoor and outdoor rainshowers, a hammered copper bath and antique furnishings. Dining at Mads Lange and Api Jiwa, the Mortar and Pestle Bar, Auriga Wellness and Capella Culturist programmes."
     ],
     "items": []
    },
    "onlyHere": [
-    "Capella Ubud is for couples, families, solo travelers, wellness seekers, and anyone who treasures nature and artistry. Each stay is a blend of comfort, creativity, and wild discovery in Bali’s green heart."
+    "A jungle camp inspired by explorers of the 1800s, built around the Keliki Valley forest without cutting a single tree, where many of the team come from Keliki Village and share its traditions with guests."
    ],
    "why": [
     {
      "title": "Where Imagination Meets the Rainforest",
-     "body": "Stay for luxury under canvas, holistic wellness, fine cuisine, and a sense of adventure. Capella Ubud is perfect for explorers, honeymooners, families, and those looking for inspiration and connection."
+     "body": "Stay for life under canvas, Auriga wellness, open-fire dining at Api Jiwa and days in Keliki Village with the Capella Culturists. The Two Bedroom Lodge suits families and small groups."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Capella does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "Return transfers from Ngurah Rai International Airport are included for stays of four nights or more.",
+    "signature_experiences": "Keliki Village days with the Capella Culturists, the Melukat ritual at Auriga, open-fire dining at Api Jiwa and Adventure Wellness hikes and rides.",
+    "who_its_for": "Travellers who want a Bill Bensley tented camp with village culture and active wellness, and families in the Two Bedroom Lodge."
+   },
+   "faqs": [
+    {
+     "q": "Where is Capella Ubud, Bali?",
+     "a": "Capella Ubud, Bali is a tented camp in the conserved forest of the Keliki Valley at Desa Keliki, Tegallalang, in Bali's Ubud area. Architect Bill Bensley designed it as a tribute to the spirit of early European settlers of the 1800s."
+    },
+    {
+     "q": "How do you get to Capella Ubud?",
+     "a": "Capella includes return airport transfers from Bali's Ngurah Rai International Airport for stays of four nights or more. The brand does not publish a transfer time."
+    },
+    {
+     "q": "When is the best time to visit Capella Ubud?",
+     "a": "Capella does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "How many tents does Capella Ubud have?",
+     "a": "There are 23 tents, each with a private pool: 3 One Bedroom Terrace Tents, 6 Forest Tents, 7 Valley Tents and 6 Keliki Tents (each 173 sqm), plus 1 Two Bedroom Lodge (217 sqm). The Keliki Tents and the Lodge have heated pools."
+    },
+    {
+     "q": "Is Capella Ubud good for families?",
+     "a": "Capella describes the Two Bedroom Lodge as ideal for families and small groups, and its Jungle Family Escape offer is built around the Lodge. Api Jiwa, the open-fire dinner, welcomes guests aged eight and above."
+    },
+    {
+     "q": "What are Capella Ubud's signature experiences?",
+     "a": "Capella Culturists plan days in Keliki Village, from wood carving and gamelan to temple festival preparations, and Auriga Wellness offers the Melukat cleansing ritual. Api Jiwa serves a multicourse dinner cooked over rice straw fires, and Adventure Wellness runs boot camps, aerial yoga, mountain bike trails and jungle hikes."
+    },
+    {
+     "q": "Who is Capella Ubud best for?",
+     "a": "Capella Ubud suits travellers who want a design-led tented camp, Balinese village culture and active wellness, and families or small groups taking the Two Bedroom Lodge."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -8937,7 +9669,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A Retreat for Change and Renewal",
+   "tagline": null,
    "quote": "A sanctuary where nature, wellness, and design converge. COMO Shambhala Estate is more than a resort, it’s a way of life.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/hero",
    "gallery": [
@@ -8953,10 +9685,14 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/como-shambhala-estate/g10"
    ],
    "bestMonths": "May to September",
-   "bestMonthsNote": "Dry season with ideal weather for outdoor yoga, nature walks, and holistic programs in Ubud’s peaceful highlands.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonthsNote": "COMO says May to September is the best time to visit, when there is less humidity.",
+   "bestFor": [
+    "wellness",
+    "family",
+    "group_exclusive_use"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.4326,
     "lng": 115.2603
@@ -8965,45 +9701,77 @@
    "airportDirections": "Approximately 90 minutes by car from Ngurah Rai International Airport to COMO Shambhala Estate through scenic Ubud hills and river valleys.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Garden Room",
-     "Terrace Suite",
-     "COMO Villa",
-     "Retreat Villa",
-     "Private Residence"
-    ]
+    "paras": [
+     "Pool Villas: One-bedroom, Two-bedroom, Two-bedroom Garden and Three-bedroom.",
+     "Suites: Terrace Suite, Estate Suite, COMO Shambhala Suite and COMO Suite in Umabona.",
+     "Residences: Wanakasa, Tirta Ening, Tejasuara, Bayugita and Umabona."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Yoga & Meditation",
-     "Wellness Consultations",
-     "Ayurvedic Therapies",
-     "River Walks",
-     "Detox Programs",
-     "Nutrition Workshops",
-     "Spa Treatments"
+     "Yoga and Qi Gong",
+     "Wellness consultations",
+     "Ayurveda",
+     "Kedara water garden picnic",
+     "Water purification ceremony at Tirta Empul",
+     "Herb walk and jamu class",
+     "Spa treatments"
     ]
    },
    "features": {
     "paras": [
-     "Nestled among the lush forests of Ubud, COMO Shambhala Estate is a flagship wellness retreat offering personalized health programs. With holistic therapies, nutritious cuisine, and world-class specialists, every stay is designed to nurture body, mind, and spirit."
+     "Set in a 22-acre riverine forest just beyond Ubud, COMO Shambhala Estate offers bespoke wellness programmes with holistic therapies, COMO Shambhala Cuisine and specialists including Ayurvedic doctors, nutritionists and physiotherapists. Facilities include a 25m lap pool, a spring-fed vitality pool, gyms, yoga and Pilates studios and nine treatment rooms."
     ],
     "items": []
    },
    "onlyHere": [
-    "COMO Shambhala Estate offers transformative wellness experiences led by resident experts in yoga, nutrition, and healing. Set by the Ayung River, this estate is both tranquil and empowering, a place for deep rest and real change."
+    "COMO Shambhala Estate draws on The Source, a natural spring revered by the Balinese, and is aligned with four key Balinese temples. Set above the Ayung River, it is a traditional place of purification and a retreat for change."
    ],
    "why": [
     {
      "title": "Where Wellness Becomes a Way of Being",
-     "body": "Stay for renewal, reflection, and connection. Ideal for solo travelers, couples, and anyone seeking holistic transformation through mindful living, nutrition, and movement surrounded by nature."
+     "body": "Stay for renewal through personalised Wellness Paths, healthy cuisine and movement in the forest. Ideal for a dedicated wellness retreat, and for families and groups who can take a multi-suite Residence."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "COMO says May to September is the best time to visit, when there is less humidity.",
+    "how_to_get_there": "About a 90-minute drive from Ngurah Rai International Airport (DPS), with private transfers arranged on request.",
+    "signature_experiences": "Wellness Paths such as Ayurveda and Fit to Perform, the Kedara water garden picnic and a water purification ceremony at Tirta Empul.",
+    "who_its_for": "Wellness seekers on a multi-night Wellness Path, and families or groups taking a private Residence."
+   },
+   "faqs": [
+    {
+     "q": "Where is COMO Shambhala Estate?",
+     "a": "COMO Shambhala Estate is in a private 22-acre riverine forest at Payangan, just beyond Ubud, overlooking the Ayung River Valley. COMO puts it 15 to 20 minutes from Ubud town."
+    },
+    {
+     "q": "How do you get to COMO Shambhala Estate?",
+     "a": "The Estate is about a 90-minute drive from Ngurah Rai International Airport (DPS). COMO arranges private transfers at US$75 each way, plus 21 per cent tax and service."
+    },
+    {
+     "q": "When is the best time to visit COMO Shambhala Estate?",
+     "a": "COMO says the best time to visit is May to September, when there is less humidity. Temperatures in Ubud average about 27°C year-round."
+    },
+    {
+     "q": "What accommodation does COMO Shambhala Estate have?",
+     "a": "COMO lists four Pool Villas (One-bedroom, Two-bedroom, Two-bedroom Garden and Three-bedroom), four suite types (Terrace Suite, Estate Suite, COMO Shambhala Suite and the COMO Suite in Umabona) and five multi-suite Residences: Wanakasa, Tirta Ening, Tejasuara, Bayugita and Umabona."
+    },
+    {
+     "q": "Is COMO Shambhala Estate suitable for children?",
+     "a": "Yes. COMO calls the Estate a family-friendly wellness retreat, extra beds and baby cots can be arranged, and the Residences and multi-bedroom villas suit larger families and groups."
+    },
+    {
+     "q": "What wellness programmes does COMO Shambhala Estate offer?",
+     "a": "Multi-day Wellness Paths include Integrated Wellness, Ayurveda, Fit to Perform, Nourish to Glow and Connect to Rebalance, supervised by specialists including Ayurvedic doctors, nutritionists and physiotherapists. Beyond the spa, guests can picnic at the Kedara water garden by the Ayung River, join a water purification ceremony at Tirta Empul or trek Mount Batur."
+    },
+    {
+     "q": "Who is COMO Shambhala Estate best for?",
+     "a": "It suits travellers seeking a structured wellness retreat, with Wellness Paths requiring three to six nights, and families or groups who want a whole Residence to themselves."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -18476,32 +19244,36 @@
    "category": "hotel",
    "tagline": "A Sanctuary for the Senses",
    "quote": "Discover a world where nature, spirituality, and science come together to restore balance and renew the spirit.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/928eea61f_040a5e033_698445debb52e1c091773189_Kamalaya-Koh-Samui.jpg",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4c8137819_d22e66e53_69844dfd8ae3f0db6d9347df_kamalaya-koh-samui-pool-villa-balchony.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6a9c7d0c1_6efc4aad2_69844df18c3aa28dc30c96ff_kamalaya-koh-samui-pool-villa.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c2d46473d_765f0a952_69844c9b0636bab507c70e70_superior-sea-view-suites-samui-01.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kamalaya-koh-samui/g10"
    ],
-   "bestMonths": "December to April",
-   "bestMonthsNote": "Ideal weather with warm days, calm seas, and low humidity, perfect for wellness retreats and outdoor healing sessions.",
+   "bestMonths": null,
+   "bestMonthsNote": "Kamalaya does not name best months. Its FAQ says Samui's rainy season runs from late October to December, heaviest in October and November, and that February is the only true dry month.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 9.4111,
-    "lng": 100.0376
+    "lat": 9.423254,
+    "lng": 100.007876
    },
    "airport": "Samui International Airport (USM)",
-   "airportDirections": "45-minute drive from Samui International Airport to Kamalaya. Private transfers can be arranged by the resort.",
+   "airportDirections": "Samui International Airport (USM) is about 25 km away, roughly a 45 minute drive.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Hillside Room",
-     "Villa",
-     "Sea View Suite",
-     "Pool Villa"
-    ]
+    "paras": [
+     "Rooms: Hillside Room, Hillside Room Garden View, Hillside Room Sea View, Rocktop Room. Suites: Suite Sea View, Superior Suite Garden View, Superior Suite Sea View, Garden Pool Suite, Penthouse Pool Suite (one or two bedrooms). Villas: Villa Garden View, Villa Sea View, Plunge Pool Villa, Beachfront Villa, Beachfront Pool Villa (one or two bedrooms), Rock Top Pool Villa (one or two bedrooms)."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -18529,21 +19301,62 @@
      "body": "Kamalaya is ideal for guests seeking meaningful rest, healing, and reconnection. Designed for solo travelers, couples, and groups, it provides a holistic environment to slow down, reset, and nurture wellbeing."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Kamalaya. Its FAQ says Samui's rainy season runs from late October to December, heaviest in October and November, and that February is the only true dry month.",
+    "how_to_get_there": "Fly into Samui International Airport (USM). Kamalaya is about 25 km away, roughly a 45 minute drive. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "A wellness sanctuary of 76 rooms and villas on Laem Set Beach on Samui's south coast, built around a centuries old cave once used by Buddhist monks for meditation.",
+    "who_its_for": "Adults on a wellness programme. Each room needs one adult on a pre booked programme. Children 0 to 16 may stay only in the private villa categories, one child per villa, and cannot join wellness activities; Kamalaya says it is not recommended for infants and children."
+   },
+   "faqs": [
+    {
+     "q": "What is Kamalaya?",
+     "a": "A wellness sanctuary and holistic spa resort on Laem Set Beach, on Koh Samui's south coast, with 76 rooms and villas around a cave once used by Buddhist monks for meditation."
+    },
+    {
+     "q": "How far is Kamalaya from Samui airport?",
+     "a": "About 25 km, roughly a 45 minute drive. No helicopter or seaplane transfer is published."
+    },
+    {
+     "q": "Do I have to join a wellness programme?",
+     "a": "Yes, in effect. Kamalaya asks that each booked room has at least one adult on a pre booked wellness programme."
+    },
+    {
+     "q": "Can children stay at Kamalaya?",
+     "a": "Only in the private villas, and Kamalaya says it is not recommended for infants and children. One child aged 0 to 16 may share a villa with parents, with no child concessions, and children cannot join wellness activities."
+    },
+    {
+     "q": "When is the rainy season at Kamalaya?",
+     "a": "Late October to December, heaviest in October and November, according to Kamalaya. It names February as the only true dry month and says most showers are brief."
+    },
+    {
+     "q": "Is there a minimum stay?",
+     "a": "Over peak season, 20 December to 11 January, the minimum stay is 7 nights."
+    },
+    {
+     "q": "What room types are there?",
+     "a": "Hillside and Rocktop rooms from 35 sqm, sea and garden view suites, pool suites and penthouses, and villas up to the Rock Top Pool Villa of up to 306 sqm with one or two bedrooms."
+    },
+    {
+     "q": "Are there current offers?",
+     "a": "Yes. Book Early, Rejuvenate More gives up to 20% off stays of 8 nights or more booked 60 days ahead, for stays to 31 October 2027, and returning guests get a free night on 8 night stays through 2027."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-05",
-    "secondary": [],
+    "secondary": [
+     "PATH-08",
+     "PATH-02"
+    ],
     "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -18761,7 +19574,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "“Twenty vast villas, one whisper-quiet bay.”",
+   "tagline": "Twenty private pool villas in a former coconut grove near Jimbaran Beach",
    "quote": "At Kayumanis Jimbaran Estates, you don’t just stay, you return to yourself. Here, cradled by jungle and silence, every breath becomes a ritual and every moment a quiet revival of the soul.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/62404c465_ae3a28d34_6a7d8c8bcb1620fccd872e4e_kayumanis-jimbaran-private-estates-hero-image.webp",
    "gallery": [
@@ -18776,11 +19589,14 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8037ba567_3f8c04376_6875d511b71c6f91f7498ac8_6875b1d44d0f7f00ff95821a_Kayumanis-Jimbaran-ButlerServi.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c263ec865_642ada07f_6875d511b71c6f91f7498ae9_6875b2626fcb88f036f221ec_Kayumanis-Jimbaran-Floating-Di."
    ],
-   "bestMonths": "May – September",
-   "bestMonthsNote": "These months sit neatly between monsoon bursts, giving travellers sun-drenched days, golden sunsets and cleaner surf breaks while turtle-nesting season peaks on nearby beaches.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Kayumanis does not name a best season on its own site.",
+   "bestFor": [
+    "honeymoon",
+    "family"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.77281,
     "lng": 115.170267
@@ -18790,44 +19606,79 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "One-Bedroom Private Estate Pool Villa – 500 m². Two-Bedroom Private Estate Pool Villa – 600 m²."
+     "One-Bedroom Private Pool Villa, 500 sqm, king or twin beds.",
+     "Two-Bedroom Private Pool Villa, 600 sqm, king and twin or two king beds.",
+     "Each villa has a semi-open living room, a kitchenette and an open-air garden bath."
     ],
     "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Floating sunrise breakfast served in-pool",
-     "Market walk & Balinese cooking class with Chef",
-     "Sunset seafood ritual on Jimbaran Beach",
-     "Private yoga beneath coconut palms",
-     "Traditional Javanese joglo dining journey",
-     "Bicycle ride to Uluwatu cliff-top temple sunset dance"
+     "Floating breakfast in your villa pool",
+     "Cooking class",
+     "Jimbaran sunset cruise",
+     "Candlelit or BBQ dinner in the villa",
+     "Spa treatments at Kayumanis Spa Jimbaran",
+     "A walk to Jimbaran Beach and its seafood cafes"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "24-hr butler for every villa",
-     "Unlimited-time breakfast anywhere, anytime",
-     "Complimentary return airport transfer",
-     "Free local shuttle & bicycles",
-     "Private pools large enough for laps",
-     "Child-friendly extras (daybeds, cribs, cooking fun)"
+     "24-hour butler service for every villa",
+     "Unlimited-time breakfast",
+     "Free return airport transfer",
+     "Free private shuttle within the local area",
+     "A private pool in every villa"
     ]
    },
    "onlyHere": [
-    "Couple, family, solo or multi-gen: if you dream of space, shade and sea-air without the resort crowds, Kayumanis delivers. Villas outsize many city apartments, palms dance overhead, and Jimbaran’s famed sunset seafood cafés sit an easy wander away. Honeymooners adore the candle-lit gazebos; surfers slip to Balangan at dawn; wellness seekers float from villa to spa and back again."
+    "A villa estate inspired by the community of a traditional Balinese village, spread across a former coconut grove with towering palms, minutes from Jimbaran's white sand sunset beach and the nearby fishing village."
    ],
    "why": [
     {
-     "title": "\"Slow-Life Luxury Wrapped in Coconut Palms\"",
-     "body": "Stay for the barefoot distance to Jimbaran Bay, the always-on butler intuition, and villas so private even the birds whisper. Perfect for Honeymoon & Couples, Family & Generational escapes, Wellness & Health resets, Solo reflection trips and anyone who values Conservation-minded hospitality (glass-bottle programme, organic gardens, reef-safe amenities)."
+     "title": "Village Living Under the Palms",
+     "body": "Stay for space and privacy in a 500 or 600 sqm pool villa, a butler on call around the clock and an easy walk to Jimbaran Beach. Kayumanis welcomes honeymooners and families alike."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Kayumanis does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "A free return airport transfer from Ngurah Rai International Airport (DPS) is included with every villa.",
+    "signature_experiences": "Floating breakfasts, in-villa candlelit and BBQ dinners, Kayumanis Spa Jimbaran and a Jimbaran sunset cruise.",
+    "who_its_for": "Honeymooners and families who want a private pool villa within walking distance of Jimbaran Beach."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kayumanis Jimbaran?",
+     "a": "Kayumanis Jimbaran Private Estate & Spa is in the fishing village of Jimbaran in south Bali. It is set in a former coconut grove within walking distance of Jimbaran Beach and its seafood cafes."
+    },
+    {
+     "q": "How do you get to Kayumanis Jimbaran?",
+     "a": "Every villa booking includes a free return airport transfer from Bali's Ngurah Rai International Airport (DPS). Kayumanis does not publish a transfer time."
+    },
+    {
+     "q": "When is the best time to visit Kayumanis Jimbaran?",
+     "a": "Kayumanis does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "How many villas does Kayumanis Jimbaran have?",
+     "a": "There are 20 villas in two categories: the One-Bedroom Private Pool Villa (500 sqm) and the Two-Bedroom Private Pool Villa (600 sqm). Each has a private pool, a semi-open living room, a kitchenette, an open-air garden bath and 24-hour butler service."
+    },
+    {
+     "q": "Is Kayumanis Jimbaran good for families?",
+     "a": "Yes. Kayumanis runs a Jimbaran Family Escape package with a family cooking class and BBQ dinner for two adults and two children under 12."
+    },
+    {
+     "q": "What experiences does Kayumanis Jimbaran offer?",
+     "a": "Packages feature floating breakfasts, in-villa candlelit and BBQ dinners, treatments at Kayumanis Spa Jimbaran, cooking classes and a Jimbaran sunset cruise. Unlimited-time breakfast and daily afternoon tea are included."
+    },
+    {
+     "q": "Who is Kayumanis Jimbaran best for?",
+     "a": "Kayumanis describes it as made for honeymooners seeking a luxury getaway and for families who want quality time together, each in a private pool villa near the beach."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": "kayumanis-jimbaran-private-estates-",
@@ -18862,7 +19713,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "\"“Adults-only barefoot luxury on Bali’s quietest shore.\"",
+   "tagline": "Private pool villas with a butler and private beach access in Nusa Dua",
    "quote": "Trade deadlines for the rustle of coconut palms and discover how slow travel unlocks Bali’s gentle soul.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/148f30b4c_b9f235274_687a71880595ef58afb24653_KayumanisNusaDua_TwoBedroom_Exterior2.webp",
    "gallery": [
@@ -18877,11 +19728,15 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0482bd28_8b5095d97_687a71941a4b06c1eacd6bf3_KayumanisNusaDua_TwoBedroom_Exterior.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/574de1feb_8e260b83c_687a71944768b11e3a2094ce_KayumanisNusaDua_TwoBedroom_Bedroom1.webp"
    ],
-   "bestMonths": "April – June & September – October",
-   "bestMonthsNote": "These months sit neatly outside Bali’s wet season (Nov–Mar) and major July/August crowds, promising calmer seas for snorkeling, cooler trekking temperatures and value-added packages.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Kayumanis does not name a best season on its own site.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.79438,
     "lng": 115.22796
@@ -18892,46 +19747,79 @@
    "rooms": {
     "paras": [],
     "items": [
-     "One-Bedroom Private Pool Villa, 300 m²",
-     "Two-Bedroom Residence Pool Villa, 500 m²",
-     "Three-Bedroom Owner Pool Villa, 700 m²",
-     "Honeymoon Suite Pool Villa with round bed, 600 m²"
+     "One-Bedroom Private Pool Villa, 300 sqm",
+     "Two-Bedroom Residence Pool Villa, 500 sqm",
+     "Three-Bedroom Private Pool Villa, 700 sqm"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Sunrise yoga on the private beach",
-     "Floating breakfast served in your pool",
-     "Guided cycle to the sea-temple at Geger",
-     "Traditional Balinese cooking class in-villa",
-     "Sunset sailing in Benoa Bay",
-     "Purifying Melukat water-blessing at Tirta Empul"
+     "Daily yoga class",
+     "Floating breakfast in your villa pool",
+     "Complimentary bicycles",
+     "Sambal and dessert cooking class",
+     "Beach picnic lunch",
+     "Balinese dance class and making Balinese offerings"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-only (16+), ensuring serenity",
-     "Unlimited-time à-la-carte breakfast anywhere, any hour",
-     "24-hour dedicated butler per villa",
-     "Complimentary car service within Nusa Dua & Jimbaran",
-     "Private stretch of Samuh Beach with loungers & bar",
-     "Return airport transfers included"
+     "Families welcome, with a Bali Family Getaway package",
+     "Unlimited-time breakfast",
+     "24-hour butler service in every villa",
+     "Free private car transfers within the local area",
+     "Private access to a private beach and beach bar",
+     "Free return airport transfer"
     ]
    },
    "onlyHere": [
-    "Whether you’re a honeymoon duo seeking candle-lit dinners on a floating platform, a solo nomad yearning for solitude and spa rituals, or a family plotting a multi-villa reunion, Kayumanis wraps you in teak-wood privacy while keeping Bali’s cultural heart at your doorstep."
+    "Whether you are a honeymooning couple or a family, Kayumanis gives you a walled garden villa with its own pool and a personal butler, a short walk from the white sand of Nusa Dua."
    ],
    "why": [
     {
-     "title": "\"Hidden Havens for the Slow-Travel Soul\"",
-     "body": "Choose Kayumanis if you crave the freedom of a private residence with the polish of a five-star resort. Best for Couples & Honeymooners (secluded villas and romantic packages), Solo Wellness Seekers (round-the-clock spa, yoga, healthy menus), and Small Families or Generational Groups booking multiple villas side-by-side."
+     "title": "Quiet Villas Near the Sand",
+     "body": "Choose Kayumanis Nusa Dua for the privacy of your own pool villa with the service of a resort. Best for honeymooners and couples, and for families booking the Two- or Three-Bedroom villas."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Kayumanis does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "About 25 minutes from Ngurah Rai International Airport (DPS). A free return airport transfer is included with every villa.",
+    "signature_experiences": "Private beach and beach bar access, floating breakfasts, beach picnic lunches and Balinese massages.",
+    "who_its_for": "Honeymooning couples and families who want a private pool villa with a butler near Nusa Dua's beach."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kayumanis Nusa Dua?",
+     "a": "Kayumanis Nusa Dua Private Villa & Spa is in the heart of Nusa Dua in south Bali, an enclave known for its long white sand beach. The villas are steps from a secluded beach, and every stay includes access to the private beach and beach bar."
+    },
+    {
+     "q": "How do you get to Kayumanis Nusa Dua?",
+     "a": "Kayumanis Nusa Dua is about 25 minutes from Bali's Ngurah Rai International Airport (DPS), and every villa category includes a free return airport transfer."
+    },
+    {
+     "q": "When is the best time to visit Kayumanis Nusa Dua?",
+     "a": "Kayumanis does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "What villas does Kayumanis Nusa Dua have?",
+     "a": "There are four private pool villa categories: the One-Bedroom Private Pool Villa (300 sqm), Two-Bedroom Residence Pool Villa (500 sqm), Three-Bedroom Private Pool Villa (700 sqm) and the One-Bedroom Suite Private Pool Villa, a 600 sqm honeymoon suite with a round bed."
+    },
+    {
+     "q": "Can children stay at Kayumanis Nusa Dua?",
+     "a": "Yes. Children 12 and under dine free from the children's menu and have breakfast at no extra cost when staying with parents, cribs are free on request, and in-villa babysitting is available for a charge. The Bali Family Getaway package and the Two- and Three-Bedroom villas suit families."
+    },
+    {
+     "q": "What experiences does Kayumanis Nusa Dua offer?",
+     "a": "Guests have access to a private beach and beach bar, complimentary bicycles and resort activities including yoga, Balinese dance, cooking classes and making Balinese offerings. Packages add floating breakfasts, beach picnic lunches, in-villa candlelit dinners and Balinese massages."
+    },
+    {
+     "q": "Who is Kayumanis Nusa Dua best for?",
+     "a": "Kayumanis designs packages for honeymooning couples and for families, each in a walled villa with its own pool and a 24-hour butler."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": "kayumanis-nusa-dua",
@@ -18966,7 +19854,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Eleven private pool villas in a Balinese village garden in Sanur",
+   "tagline": "Private pool villas in a Balinese village garden in Sanur",
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/hero",
    "gallery": [
@@ -18981,11 +19869,14 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kayumanis-sanur/g10"
    ],
-   "bestMonths": null,
-   "bestMonthsNote": null,
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Kayumanis does not name a best season on its own site.",
+   "bestFor": [
+    "family",
+    "couples"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.699655,
     "lng": 115.25746
@@ -18995,33 +19886,63 @@
    "founderNote": null,
    "rooms": {
     "paras": [
-     "Eleven private pool villas set along a stone path through a garden laid out like a traditional Balinese village. One-Bedroom Pool Villas sit in walled gardens with a thatched lounge pavilion and in-villa dining; Two- and Three-Bedroom Pool Villas add open-plan living pavilions, kitchenettes and larger pools with timber sundecks."
+     "Just 11 private pool villas set along a stone path through a garden laid out like a traditional Balinese village.",
+     "One-Bedroom Villa with Private Pool, 400 sqm, for 2 adults and 1 child under 12.",
+     "Two-Bedroom Villa with Private Pool, 600 sqm, for up to 4 adults.",
+     "Three-Bedroom Villa with Private Pool, 800 sqm, with a generously sized pool, for up to 6 adults and 1 child under 12."
     ],
     "items": []
    },
    "experiences": {
     "paras": [
-     "Spa treatments, sunrise breakfasts, beach picnics, romantic in-villa dinners, high tea and cooking classes. A shuttle within Sanur during the day."
+     "Spa treatments, beach picnic lunches at Kayumanis Seaside Sanur, candlelit dinners in the villa, afternoon tea, family cooking classes and a Kecak cultural experience package."
     ],
     "items": []
    },
    "features": {
     "paras": [
-     "In Sanur, Bali's relaxed east-coast village, with a beach facility on Sanur beach. Kayumanis Spa Sanur in its own garden compound, and Kayumanis Resto Sanur by the sea for Indonesian cooking and island-fresh dishes. 24-hour butler service."
+     "In Sanur, Bali's laid-back east coast village with a white sand beach. Kayumanis Spa Sanur in its own garden compound, and Kayumanis Resto Sanur for authentic Indonesian cooking and beach-inspired light bites. 24-hour butler service, unlimited-time breakfast and a free private shuttle within the local area."
     ],
     "items": []
    },
-   "onlyHere": [
-    "A villa compound inspired by a traditional Balinese village, where every villa has its own walled garden and pool and a butler on call around the clock."
-   ],
-   "why": [
+   "onlyHere": [],
+   "why": [],
+   "facts": {
+    "best_months": "Kayumanis does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "Kayumanis Sanur's packages include return transfers from Ngurah Rai International Airport (DPS).",
+    "signature_experiences": "Beach picnic lunches at Kayumanis Seaside Sanur, in-villa candlelit dinners, family cooking classes and a Kecak cultural experience.",
+    "who_its_for": "Couples and families who want a private pool villa with a butler in Sanur's quiet beach village."
+   },
+   "faqs": [
     {
-     "title": "A Village of Your Own",
-     "body": "Best for couples, families and friends who want a private pool villa within easy reach of the beach."
+     "q": "Where is Kayumanis Sanur?",
+     "a": "Kayumanis Sanur Private Villa & Spa is on Jalan Tirta Akasa in Sanur, a laid-back village on Bali's east coast with a white sand beach sheltered by gentle waters."
+    },
+    {
+     "q": "How do you get to Kayumanis Sanur?",
+     "a": "Kayumanis Sanur's Summer Gateway, Romantic Rhythm and Splash Family packages include return airport transfers from Bali's Ngurah Rai International Airport (DPS). Kayumanis does not publish a transfer time."
+    },
+    {
+     "q": "When is the best time to visit Kayumanis Sanur?",
+     "a": "Kayumanis does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "What villas does Kayumanis Sanur have?",
+     "a": "Kayumanis Sanur is a collection of just 11 units in three private pool villa categories: One-Bedroom (400 sqm), Two-Bedroom (600 sqm) and Three-Bedroom (800 sqm). Each comes with a 24-hour butler, unlimited-time breakfast and daily afternoon tea."
+    },
+    {
+     "q": "Is Kayumanis Sanur good for families?",
+     "a": "Yes. The Splash Family package includes a family cooking class for two adults and a child under 12, the One-Bedroom Villa takes 2 adults and a child under 12, and the Three-Bedroom Villa takes up to 6 adults and a child under 12."
+    },
+    {
+     "q": "What experiences does Kayumanis Sanur offer?",
+     "a": "Packages include beach picnic lunches at Kayumanis Seaside Sanur, candlelit dinners in the villa, family cooking classes and massages for two, and there is a Kecak Cultural Experience package. Unlimited-time breakfast and daily afternoon tea are included."
+    },
+    {
+     "q": "Who is Kayumanis Sanur best for?",
+     "a": "Kayumanis Sanur suits couples and families who want a walled pool villa and a 24-hour butler in a quiet beach village."
     }
    ],
-   "facts": {},
-   "faqs": [],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -19054,7 +19975,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "\"Your private luxe sanctuary in the heart of Bali’s wild forest.\"",
+   "tagline": "Private pool villas in a tropical forest above the Ayung River",
    "quote": "At Kayumanis Ubud, you don’t just stay. You return to yourself. Here, cradled by jungle and silence, every breath becomes a ritual and every moment a quiet revival of the soul.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ebc470484_7e9d81db8_686f05495623166e15ba3c8e_Kayumanis_20Ubud_20-_20Resort_20-_20Aeriel.webp",
    "gallery": [
@@ -19069,11 +19990,15 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/cac599290_92f9dbfcc_686f045d7f02fbe042abddeb_Kayumanis_20Ubud_20-_20Residence_20Pool_20Villa_20-_20E.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/519d5e541_099418391_686f0462262fcec314fa5b87_Kayumanis_20Ubud_20-_20Residence_20Pool_20Villa_20-_20E."
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "These months bring Bali’s dry season, sunny skies, lush greenery, cooler evenings. Ideal for walks in the rainforest, poolside lounging, and cultural exploration without heavy rains.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Kayumanis does not name a best season on its own site.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.5032,
     "lng": 115.26
@@ -19082,50 +20007,80 @@
    "airportDirections": "About 55 km (~70 min by car) from DPS. The property offers a private airport transfer (approx USD 60), or you can arrange local car service. This is the most convenient airport for travelers.",
    "founderNote": null,
    "rooms": {
-    "paras": [
-     "One‑Bedroom Deluxe Pool Villa with private plunge pool and butler service.",
-     "Kayumanis Suite (Honeymoon Villa) perched over jungle valley.",
-     "Owner’s Three‑Bedroom Pool Villa for families or groups up to six adults."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "One Bedroom Private Pool Villa, 300 sqm",
+     "One Bedroom Deluxe Pool Villa, 350 sqm",
+     "One Bedroom Honeymoon Suite Pool Villa with jungle and valley views",
+     "Two Bedroom Residence Pool Villa, 600 sqm, for families or friends"
+    ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Ayung River valley trekking and jungle picnics",
-     "Balinese cooking classes and market tours",
-     "Guided cycling through rice terraces and village paths",
-     "Yoga and wellness sessions amidst nature",
-     "Private candlelit in‑villa dinners"
+     "Guided rice paddy trekking",
+     "Ayung riverside picnic",
+     "Cooking class with herb garden tour",
+     "Yoga, jamu making and Balinese offerings classes",
+     "Floating breakfast in your villa pool"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "All‑villa design with private pool and walled gardens",
-     "24‑hour personal butler service",
-     "Restaurant dining overlooking the Ayung River valley",
-     "Open‑air spa sanctuary across a ravine",
-     "Unlimited in‑villa breakfast service at any time",
-     "Complimentary shuttle within Ubud area; airport transfer available"
+     "A private swimming pool in every villa",
+     "24-hour butler service",
+     "Kayumanis Spa Ubud, elevated over the Ayung River",
+     "Unlimited-time breakfast",
+     "Shuttle service within Ubud centre"
     ]
    },
    "onlyHere": [
-    "Families seeking generational memories, couples craving intimacy, solo travelers longing for quiet rejuvenation, they all find sanctuary here. With complete villa privacy, personalized butlers, serene spa treatments, gourmet dining amid rainforest, and experiences rooted in local culture, Kayumanis Ubudis uniquely curated for longer stays and deeper connection. Dive into Bali differently, slow, sustainable, soulful."
+    "A villa hideaway cocooned within tropical forest overlooking the Ayung River, part of a traditional Balinese village, with Kayumanis Spa Ubud raised over the river and Dining Corner high above the valley."
    ],
    "why": [
     {
-     "title": "\"Escape into Bali’s Hidden Jungle Luxury\"",
-     "body": "Kayumanis Ubud is made for romance-seeking couples, mindful solo travelers, and small family groups wanting to unwind in total privacy."
-    },
-    {
-     "title": null,
-     "body": "From the thatched villas framed by cinnamon trees to the rice‑terrace views and Ayung River murmurs, every detail blends luxury with nature and culture. Personalized service and a focus on slow travel make this retreat a transformative experience."
+     "title": "Forest Privacy Above the Ayung",
+     "body": "Kayumanis Ubud suits couples on a romantic getaway or honeymoon and families taking the larger villas, all wanting privacy away from mainstream activity. Every villa has its own pool and a butler on call around the clock."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Kayumanis does not name a best season, so ask James Wild & Co for timing advice.",
+    "how_to_get_there": "Kayumanis Ubud is reached by road from Ngurah Rai International Airport (DPS) via the Bali Mandara Toll Road and Jalan Raya Sayan.",
+    "signature_experiences": "An Ayung riverside picnic, rice paddy trekking, a cooking class with herb garden tour and Kayumanis Spa Ubud above the river.",
+    "who_its_for": "Honeymooners and couples in the one-bedroom villas, and families or groups of up to six in the larger villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kayumanis Ubud?",
+     "a": "Kayumanis Ubud Private Villas & Spa is in Sayan village near Ubud, cocooned within tropical forest overlooking the Ayung River and part of a traditional Balinese village."
+    },
+    {
+     "q": "How do you get to Kayumanis Ubud?",
+     "a": "Kayumanis publishes driving directions from Bali's Ngurah Rai International Airport (DPS) via the Bali Mandara Toll Road, Batubulan and Jalan Raya Sayan, but no transfer time. Its 7 Nights Long Stay Package includes a one-way airport transfer, and every villa includes a shuttle within Ubud centre."
+    },
+    {
+     "q": "When is the best time to visit Kayumanis Ubud?",
+     "a": "Kayumanis does not name a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "What villas does Kayumanis Ubud have?",
+     "a": "There are five private pool villa categories: One Bedroom Private Pool Villa (300 sqm), One Bedroom Deluxe Pool Villa (350 sqm), One Bedroom Honeymoon Suite Pool Villa, Two Bedroom Residence Pool Villa (600 sqm) and Three Bedroom Owner's Pool Villa (700 sqm). Every villa has its own swimming pool and 24-hour butler service."
+    },
+    {
+     "q": "Is Kayumanis Ubud good for families?",
+     "a": "The Three Bedroom Owner's Pool Villa is designed for families and groups of up to six guests, and the Two Bedroom Residence Pool Villa sleeps four. Kayumanis does not publish an age policy."
+    },
+    {
+     "q": "What experiences does Kayumanis Ubud offer?",
+     "a": "Experiences include an Ayung riverside picnic, a guided one-hour rice field trek, a market tour and cooking lesson in your villa, a starlight dinner and complimentary afternoon tea. Resort activities on the hotel schedule include yoga, jamu making and Balinese offering making."
+    },
+    {
+     "q": "Who is Kayumanis Ubud best for?",
+     "a": "Kayumanis presents its one-bedroom villas for romantic getaways and honeymoons, and its larger villas for families and groups who want privacy away from mainstream activity."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": "kayumanis-ubud",
@@ -26791,6 +27746,147 @@
    "placeSlug": null
   },
   {
+   "slug": "nihi-rote",
+   "name": "NIHI Rote",
+   "ledgerId": "STY-2026-000581",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "NIHI's surf villas on Bo'a Beach, Indonesia's southernmost island",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nihi-rote/g10"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "NIHI says surf on Rote is most consistent from May to October, the dry season.",
+   "bestFor": [
+    "adventure",
+    "family"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-01-01",
+   "coords": {
+    "lat": -10.9374604,
+    "lng": 122.8433056
+   },
+   "airport": "Rote Airport (RTI), via Kupang (KOE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "21 Villas and Duplex Estates, each with a private plunge pool",
+     "Ume Bo'a Garden and Ume Bo'a Beach: one bedroom, for 2 adults",
+     "Ume Leo Garden and Ume Leo Beach: two bedrooms, for 4 adults"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Surfing Bo'a and Rote's other breaks.",
+     "Surfari boat trips of 2, 4 or 8 hours.",
+     "Diving, with intro dives and PADI courses.",
+     "Mountain biking, including the Oe Lulik Adventure to Lake Oehela.",
+     "Mangrove paddleboarding, Telaga Nirwana lagoon and a Do'o Island expedition.",
+     "Rotenese dance, Ikat weaving, Ti'i Langga hat making and cooking workshops."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Full board, with non-alcoholic drinks",
+     "Round-trip shared transfers from the airport or ferry port",
+     "A dedicated Guest Kapten for every villa",
+     "Meti Spa and daily yoga and movement sessions",
+     "An on-site clinic with International SOS",
+     "The Rote Hospitality Academy"
+    ]
+   },
+   "onlyHere": [
+    "A NIHI resort that is also a school: the non-profit Rote Hospitality Academy trains local Rotenese youth alongside the guests."
+   ],
+   "why": [
+    {
+     "title": "Surf at the Front Door",
+     "body": "NIHI Rote sits on Bo'a Beach in front of the Bo'a Barrel, on Indonesia's southernmost island, with full board, a Guest Kapten for every villa and a hospitality academy training young Rotenese."
+    }
+   ],
+   "facts": {
+    "best_months": "NIHI says surf on Rote is most consistent from May to October, the dry season.",
+    "how_to_get_there": "No helicopter is published. Fly Bali to Kupang (Super Air Jet, daily), then about 30 minutes to Rote with Susi Air or Wings Air on set days, or take the daily fast ferry of about 2 hours. Shared transfers to the resort are included. A private plane can be chartered from Kupang to Rote.",
+    "signature_experiences": "The Bo'a Barrel wave in front of the villas, Surfari boat trips to remote breaks, diving, Meti Spa, and Rotenese cultural workshops.",
+    "who_its_for": "Surfers, surfing families and travellers who want a remote island with full board and the Rote Hospitality Academy at its heart."
+   },
+   "faqs": [
+    {
+     "q": "Where is NIHI Rote?",
+     "a": "NIHI Rote is on Bo'a Beach on the southwest coast of Rote, Indonesia's southernmost island, in East Nusa Tenggara. Guests reach Rote through Kupang in West Timor."
+    },
+    {
+     "q": "How do you get to NIHI Rote?",
+     "a": "NIHI does not publish a helicopter transfer. Fly from Bali to Kupang (Super Air Jet runs daily), then take the roughly 30-minute flight to Rote with Susi Air or Wings Air on set days, or the daily fast ferry of about 2 hours. Round-trip shared transfers from the airport or port are included; NIHI gives the drive as about 60 minutes in its FAQs and about 90 minutes on its travel page. A private plane can be chartered from Kupang to Rote."
+    },
+    {
+     "q": "When is the best time to visit NIHI Rote?",
+     "a": "NIHI says surf on Rote is most consistent from May to October, the dry season. It does not name a separate best time to visit."
+    },
+    {
+     "q": "What villas does NIHI Rote have?",
+     "a": "There are 21 Villas and Duplex Estates, each with a private plunge pool: one-bedroom Ume Bo'a villas for two, two-bedroom Ume Leo villas for four, and Ume Nanaru duplexes with two bedrooms and a lofted bunk, in garden or beach settings."
+    },
+    {
+     "q": "What is included at NIHI Rote?",
+     "a": "Full board (breakfast, lunch, dinner and snacks), non-alcoholic drinks, daily laundry, daily yoga and movement sessions, and round-trip shared transfers are included. Alcohol, spa treatments and special dining cost extra."
+    },
+    {
+     "q": "Is NIHI Rote good for surfers?",
+     "a": "Yes. Rote has more than 15 surfable waves, including Bo'a in front of the resort and T-Land at Nemberala. Squealers suits beginners, Bo'a and T-Land suit experienced surfers, and Surfari boat trips reach remote breaks."
+    },
+    {
+     "q": "Can families stay at NIHI Rote?",
+     "a": "Yes. NIHI lists family-friendly activities and cultural workshops, the Ume Leo villas suit surfing families, and homemade baby food can be prepared on request. The gym is for adults and older teens."
+    },
+    {
+     "q": "What is the Rote Hospitality Academy?",
+     "a": "A non-profit vocational school founded in 2024 that trains local Rotenese youth in hospitality. It runs alongside the resort, and guest interaction with students is optional."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06",
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "iggi-draft",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "nihi",
    "name": "NIHI Sumba \n The Edge of Wildness",
    "ledgerId": "STY-2026-000186",
@@ -26799,7 +27895,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Discover the Spirit of Sumba at NIHI",
+   "tagline": "Discover the spirit of Sumba at NIHI",
    "quote": "Nihi Sumba - The Edge of Wildness. “Walk barefoot along an ancient way, find yourself in the heart of Sumba. This is transformation through nature.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c606e7e85_90e66e845_685884c86bc168792032059e_NIHI_SUMBA_Resort_Aerial.webp",
    "gallery": [
@@ -26814,54 +27910,98 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/43e7241ab_75195bcef_6858525e9388a073674fbbeb_NIHI_SUMBA_PutriKasambi_Exterior.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ae9cb6976_817f3bc03_68583d49b280ee48f38c9191_NIHI_SUMBA_Lulu_Amahu_Exterior3.webp"
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "These are the dry season months: ideal for surfing, beach riding, trekking, village visits, and spa treks with clear skies.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "May to September",
+   "bestMonthsNote": "NIHI says May to the end of September brings moderate to high surf, with the biggest swells in July and August and the calmest winds in May and September.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "solo",
+    "family",
+    "wellness",
+    "adventure"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -9.7776308,
     "lng": 119.3762222
    },
    "airport": "Tambolaka Airport (TMC); alternative: Kupang (KOE)",
-   "airportDirections": "Tambolaka (TMC) is ~1 hr flight from Bali, then a scenic 90‑minute drive. The resort arranges open‑jeep transfers; we recommend flying into Tambolaka for ease.",
+   "airportDirections": "Tambolaka (TMC) is about an hour's flight from Bali, then a 90-minute drive; NIHI arranges the transfer. NIHI also offers helicopter transfers from Bali or Tambolaka.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "24 unique Sumbanease custom designed luxury villas",
-     "One‑bedroom villas with private plunge pools",
-     "Two‑ to five‑bedroom estate villas with cliff‑top views",
-     "Exclusive Raja Mandaka six‑bedroom generation family estate"
-    ]
+    "paras": [
+     "31 villas and estates set along Nihiwatu Beach, each designed as a private sanctuary.",
+     "One-bedroom villas for honeymooners, solo travellers and couples, some with private plunge pools facing Occy's Left.",
+     "Family estates such as the four-bedroom Marangga Family Estate, and The Treehouse with three elevated king bedrooms.",
+     "Raja Mandaka, the estate's principal residence, with uninterrupted views of the Sumbanese coastline."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "World‑class surfing at Occy’s Left",
-     "Private horseback rides through surf and jungle",
-     "Spa‑Safari in remote rice valleys",
-     "Stand‑up paddleboarding on Wanukaka River",
-     "Fishing, diving & snorkeling expeditions"
+     "Surfing at Occy's Left, limited to 15 registered surfers per day",
+     "Beach rides, trail rides and swimming with Sandalwood horses",
+     "The Spa Safari at Nihioka Valley",
+     "Wanukaka River Adventure, stand-up paddle and boat charters",
+     "Snorkeling, fishing and spearfishing",
+     "Waterfall visits, treks and Tenun Ikat weaving with local communities"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Each villa features its own infinity pool",
-     "Farm to Table Dining Expressions: (Meals) & Drinks are Included",
-     "Dedicated “Kapten” butler service",
-     "Organic garden, chocolate factory & equestrian wellness center",
-     "Open‑air spa pavilions in pandanus groves"
-    ]
+    "paras": [
+     "Villas set before the two and a half kilometre stretch of Nihiwatu Beach.",
+     "Chris & Charly's Chocolate Factory, home base of the NIHI Wildlings Kids Club.",
+     "The Riding & Racquet Club, with Sandalwood ponies, polo by the sea, tennis and padel.",
+     "Nihioka Spa, perched above a secluded cove.",
+     "Restaurants and bars including Ombak, Kaboku, Nio Beach Club and the Boathouse Bar."
+    ],
+    "items": []
    },
-   "onlyHere": [
-    "At Nihi Sumba you’ll unplug from the ordinary and plug into the wild. Whether you’re a solo wanderer seeking self‑reflection, a couple embracing romance in untouched privacy, or a family weaving together multi‑generational stories, this remote sanctuary rewards slow living, cultural immersion, and transformative play."
-   ],
+   "onlyHere": [],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "NIHI says May to the end of September brings moderate to high surf, with the biggest swells in July and August and the calmest winds in May and September.",
+    "how_to_get_there": "Charter a helicopter from Bali or from Tambolaka to the resort, or fly about an hour from Bali to Lede Kalumbang (Tambolaka) Airport and take the included 90-minute transfer.",
+    "signature_experiences": "Surfing Occy's Left (limited to 15 surfers a day), the Spa Safari at Nihioka, riding and swimming with Sandalwood ponies, and the NIHI Wildlings Kids Club.",
+    "who_its_for": "Surfers, horse lovers, couples, and families, with villa collections for honeymooners, solo travellers and couples, families and friends, and groups."
+   },
+   "faqs": [
+    {
+     "q": "Where is NIHI Sumba?",
+     "a": "NIHI Sumba is at Hoba Wawi, Wanokaka, in West Sumba, East Nusa Tenggara, Indonesia. Its villas sit before the two and a half kilometre stretch of Nihiwatu Beach."
+    },
+    {
+     "q": "How do I get to NIHI Sumba?",
+     "a": "By helicopter, chartered direct from Bali or from Tambolaka airport to the resort, with strict weight limits and luggage sent overland. Otherwise fly from Bali (DPS) to Lede Kalumbang Airport, formerly Tambolaka (TMC), on one of two daily flights of about one hour to one hour 15 minutes, then take the included 90-minute transfer in a shared open-air safari vehicle; a private car or a private plane charter can also be arranged."
+    },
+    {
+     "q": "When is the best time to visit NIHI Sumba?",
+     "a": "For surf, NIHI says to expect moderate to high surf from May to the end of September, with the biggest swells in July and August and the calmest winds in May and September; mornings are usually best before the trade winds pick up. The Pasola ceremonies take place nearby in February and March."
+    },
+    {
+     "q": "How many villas does NIHI Sumba have?",
+     "a": "NIHI Sumba has 31 villas and estates, from one-bedroom honeymoon retreats and a three-bedroom treehouse to family estates such as the four-bedroom Marangga Family Estate. No two villas are alike."
+    },
+    {
+     "q": "Is NIHI Sumba good for children?",
+     "a": "Yes. The NIHI Wildlings Kids Club runs daily from 9:00 AM to 4:00 PM for children aged 4 to 12, and babysitters can be arranged with several days' notice. Kids' pony club and riding lessons are also offered."
+    },
+    {
+     "q": "Can you surf at NIHI Sumba?",
+     "a": "Yes. The resort sits before Occy's Left, and NIHI limits the wave to 15 registered surfers per day, so surf sessions should be booked ahead."
+    },
+    {
+     "q": "What is the Spa Safari at NIHI Sumba?",
+     "a": "The Spa Safari is NIHI's signature spa journey at Nihioka in a secluded valley. Guests arrive by a 120-minute coastal trek, a 90-minute horseback ride or cycle, or a 15-minute drive, then have breakfast on the treehouse platform before their treatments."
+    },
+    {
+     "q": "Does NIHI have another resort?",
+     "a": "Yes. NIHI Rote and its Hospitality Academy opened on Rote Island in 2026, beside the Bo'a Barrel surf break, about 2 hours 20 minutes from Bali. It has 21 villas and duplex estates, each with a private plunge pool."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -28644,7 +29784,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Barefoot Paradise, Naturally Yours",
+   "tagline": "Barefoot, wild and full of energy",
    "quote": "Find your island, One-Bedroom Beach House. Two-Bedroom Beach House. Three-Bedroom Beach House. Whole Island Exclusive Use.wake to the sound of waves, walk sandy paths, and rediscover time with people you love. Nikoi is wild, simple, and simply unforgettable.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/hero",
    "gallery": [
@@ -28659,9 +29799,14 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nikoi-island/g10"
    ],
-   "bestMonths": "March–October",
-   "bestMonthsNote": "Dry season is best for swimming, snorkeling, and beach life, calm seas, clear skies, and warm temperatures year-round.",
-   "bestFor": [],
+   "bestMonths": "March to October",
+   "bestMonthsNote": "March to October is usually the dry season and best for snorkelling and beach time; November to February suits sailing.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "honeymoon",
+    "conservation"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -28674,46 +29819,78 @@
    "rooms": {
     "paras": [],
     "items": [
-     "One-Bedroom Beach House",
-     "Two-Bedroom Beach House",
-     "Three-Bedroom Beach House",
-     "Whole Island Exclusive Use"
+     "18 villas with 28 rooms, built with driftwood and alang alang roofing",
+     "One Bedroom Beach Villa",
+     "One Bedroom Beach Villa with Bunkroom",
+     "Two Bedroom Beach Villa with Bunkroom",
+     "Two Bedroom Pool Villa on the north beach, with a private pool",
+     "Three Bedroom Pool Villa with three cottages and a private pool",
+     "Whole island bookings for up to 56 guests"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkeling",
-     "Kayaking",
-     "Sailing",
-     "Beach Picnics",
-     "Guided Nature Walks",
-     "Spa Treatments",
-     "Yoga",
-     "Kids’ Club",
-     "Cooking Classes",
-     "Volleyball",
-     "Open-Air Cinema"
+     "Snorkelling and diving",
+     "Kayaking and stand-up paddleboarding",
+     "Sailing and windsurfing",
+     "Jungle zip line and rock climbing",
+     "Tennis and croquet on grass courts",
+     "Cooking classes and island walks",
+     "Yoga on request"
     ]
    },
    "features": {
     "paras": [
-     "Beautiful driftwood beach houses, each steps from the sea with open-air living and private decks. White sand beaches. Coral reefs. Award-winning eco-design. Family-friendly and safe. Organic food. Solar-powered. Complimentary water sports equipment."
+     "A 15-hectare private island 8 km off Bintan.",
+     "Open-air villas designed for natural ventilation, with no air conditioning.",
+     "A pristine coral reef all around the island.",
+     "Kids club, spa, art studio and pool.",
+     "Daily menus from local fishers, markets and the island farm, with Indonesian dishes in the main dining area and Mediterranean-inspired plates at Restaurant Biru.",
+     "Water sports equipment free to use unless otherwise specified."
     ],
     "items": []
    },
-   "onlyHere": [
-    "Nikoi is perfect for couples, families, groups, or solo travelers seeking privacy, barefoot luxury, and connection to nature. Swim, explore, or just be, in a place that’s both wild and welcoming."
-   ],
+   "onlyHere": [],
    "why": [
     {
      "title": "Wild Beauty, Pure Simplicity",
-     "body": "Stay for total privacy, stunning natural beauty, laid-back luxury, and the sense that time slows down. Ideal for couples, families, honeymooners, and anyone who wants their own private island paradise with a positive impact."
+     "body": "Nikoi is a family escape like holidays used to be: unplugged and joyfully unstructured, where kids roam free while grown-ups linger over long lunches. It is a member of The Long Run, and its founders established The Island Foundation to support learning in local island communities."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "March to October is usually the dry season and best for snorkelling and beach time; November to February suits sailing.",
+    "how_to_get_there": "A 60-minute ferry from Singapore to Bintan, a 60-minute private car to Kawal and a 20-minute speedboat, under three hours with no flights.",
+    "signature_experiences": "Reef snorkelling, sailing, kayaking and paddleboarding with free equipment, a jungle zip line and the kids club.",
+    "who_its_for": "Families above all, plus groups who can book the whole island for up to 56 guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nikoi Island?",
+     "a": "Nikoi is a 15-hectare private island 8 km off the east coast of Bintan in the Riau Archipelago, Indonesia, less than 85 km from Singapore."
+    },
+    {
+     "q": "How do I get to Nikoi Island?",
+     "a": "No flights are needed: take the ferry from Singapore's Tanah Merah terminal to Bintan (about 1 hour), then a car across Bintan (about 1 hour) and a 20-minute speedboat to the island, about two and a half hours in all. Ferry tickets are bought separately through Bintan Resorts Ferries."
+    },
+    {
+     "q": "When is the best time to visit Nikoi?",
+     "a": "March to October is usually the dry season and ideal for snorkelling and sunbathing, while November to February suits sailing. Sea turtles usually hatch between June and October."
+    },
+    {
+     "q": "How many villas does Nikoi have?",
+     "a": "Nikoi has 18 villas with 28 rooms across beach villas and pool villas, and the whole island can be booked for 56 guests."
+    },
+    {
+     "q": "Is Nikoi good for families?",
+     "a": "Yes. Nikoi describes itself as a family escape with a kids club, and its beach villas can add a bunkroom for children. Its sister island Cempedak is adults-only."
+    },
+    {
+     "q": "What can you do on Nikoi?",
+     "a": "Snorkelling on the surrounding reef, kayaking, stand-up paddleboarding, sailing, windsurfing and diving, plus a jungle zip line, rock climbing, tennis and cooking classes. Most equipment is free to use."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -32744,8 +33921,8 @@
    "placeSlug": null
   },
   {
-   "slug": "rayvadee-resort",
-   "name": "Rayavadee Resort",
+   "slug": "rayavadee",
+   "name": "Rayavadee",
    "ledgerId": "STY-2026-000220",
    "country": "Thailand",
    "countrySlug": "thailand",
@@ -32754,28 +33931,30 @@
    "category": "hotel",
    "tagline": "Where Jungle Meets the Sea, Krabi’s Crown Jewel",
    "quote": "Wake to the call of tropical birds, step from your villa into emerald gardens, and wander white sand beaches at the heart of Krabi’s natural beauty.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d0ad072e3_edaa3a399_69e282fc17c48d466e5076ab_a64353bb-1.webp",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1e5eab3d0_8497713cc_69e88b055da6a2835410acdd_401thumb.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5408b93c0_71810bfdd_69e88b0b155ae145219412d9_fav-room2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d54b81f4c_f79515de0_69e88b0b593cbb3f73fa4d42_fav-room3.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/658ed8211_6c251eb30_69e88b0bcef977a0d3be70cd_raitalayvilla.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d59440b37_471c6a5c6_69e88b0b7c19b7dcdc48bbd0_room-deluxe.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/094e94b85_7554241d7_69e88b0bd56a145f847fcc37_room-family-105.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c24fd01ee_8e60cfb2b_69e88b0b79e8e729acfde674_room-family-pavil.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6eb2a959f_52a20b718_69e88b0bd96dda502c859742_room-phranang.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rayavadee/g10"
    ],
-   "bestMonths": "November to April",
-   "bestMonthsNote": "Dry, sunny weather, ideal for beach days, kayaking, and exploring the islands and cliffs of Krabi.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
     "lat": 8.0061,
     "lng": 98.8377
    },
    "airport": "Krabi International Airport (KBV)",
-   "airportDirections": "45-minute drive plus a short boat transfer from Krabi International Airport. Private transfers can be arranged.",
+   "airportDirections": "From Krabi International Airport (KBV), about 20 minutes by car or van to Nong Nuch pier, then about 20 minutes by boat to the resort beach. From Phuket, a private speedboat takes about 90 minutes from the marina. Boat departures depend on the weather.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -32785,8 +33964,11 @@
      "Pool Pavilion",
      "Family Pavilion",
      "Family Pavilion with Pool",
-     "Rayavadee Villa",
-     "Phranang Villa"
+     "Family Villa",
+     "The Raitalay Villa",
+     "The Rayavadee Villa",
+     "Phranang Villa 401",
+     "Phranang Villa 404"
     ]
    },
    "experiences": {
@@ -32818,27 +34000,61 @@
      "body": "Enjoy the best of Thailand’s coast, hidden beaches, limestone cliffs, authentic cuisine, private villas, and local adventures. Rayavadee is ideal for relaxation, romance, and once-in-a-lifetime family getaways."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by Rayavadee on the pages read.",
+    "how_to_get_there": "Fly into Krabi International Airport (KBV): about 20 minutes by car or van to Nong Nuch pier, then about 20 minutes by boat to the resort beach. From Phuket, a private speedboat takes about 90 minutes from the marina, or allow 3.5 to 4 hours overland to the pier. No helicopter or seaplane transfer is published. Boat departures depend on the weather.",
+    "signature_experiences": "94 two storey pavilions and 7 villas on the Phranang Peninsula in Krabi Marine National Park, a few minutes' walk from Railay and Phranang beaches; four dining venues and a full service spa.",
+    "who_its_for": "Couples and families who want a beach resort inside a marine national park, with family pavilions and villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Rayavadee?",
+     "a": "On the Phranang Peninsula in Krabi Marine National Park, on Thailand's Andaman coast, a few minutes' walk from Railay and Phranang beaches."
+    },
+    {
+     "q": "How do I get to Rayavadee?",
+     "a": "Fly into Krabi. It is about 20 minutes by road to Nong Nuch pier, then about 20 minutes by boat to the resort. From Phuket, a private speedboat takes about 90 minutes. No helicopter or seaplane is published."
+    },
+    {
+     "q": "How many rooms does Rayavadee have?",
+     "a": "Rayavadee describes 94 two storey pavilions and 7 villas, so 101 in all."
+    },
+    {
+     "q": "Does Rayavadee have family rooms?",
+     "a": "Yes. The Family Pavilion adds a ground floor bedroom with two queen beds, the Family Pavilion with Pool has two bedrooms and a 3 by 8 metre pool, and there is a Family Villa."
+    },
+    {
+     "q": "Which pavilions have a private pool?",
+     "a": "The Pool Pavilion and the Family Pavilion with Pool each have a 3 by 8 metre private pool, and The Rayavadee Villa has its own free form pool with a built in jacuzzi."
+    },
+    {
+     "q": "Can I reach Rayavadee by road?",
+     "a": "No. The last leg is always by boat from Nong Nuch pier or from Phuket, and departures depend on the weather."
+    },
+    {
+     "q": "What is there to eat at Rayavadee?",
+     "a": "Rayavadee has four dining venues and a full service spa."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
+     "PATH-01",
      "PATH-07"
     ],
     "setting": "krabi",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
-    "stays",
-    "gatherings"
+    "stays"
    ],
    "arrivalHubIds": [
     "6ae69759963a83ad3edf296f"
@@ -39794,34 +41010,42 @@
    "category": "hotel",
    "tagline": "Tropical hillside luxury overlooking one of Thailand's most beautiful coastlines.",
    "quote": "Wake with the ocean. End the day beneath a sky painted in gold.",
-   "hero": "/img/b44/462e737fd_6c9f7d060_6a461014fd0d6e940f8947c5_3b80b579.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f5afc3c51_9929eae7c_6a46123f99bb23ab1e5930a2_159dbb3b.webp",
-    "/img/b44/057a497d8_7270555ca_6a46123f872d5ebf77346a1e_823f0013.avif",
-    "/img/b44/9546bcdfe_fca00e5a3_6a46123fcc80b063849722ca_d1ac5734.avif",
-    "/img/b44/4710d053d_a7871bf5d_6a46123fa7e26ac666137bcf_d142205d.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-samui/g10"
    ],
-   "bestMonths": "January - March & July - August",
-   "bestMonthsNote": "These months typically offer the best combination of sunshine, calm seas, lower rainfall, and ideal conditions for enjoying Koh Samui's beaches, marine activities, wellness experiences, and outdoor adventures.",
+   "bestMonths": "December to March; April to September for the sea",
+   "bestMonthsNote": "Six Senses says December to March is cooler for outdoor days, April to September is best for snorkelling, diving, kayaking and whale sharks, and rain usually falls from late October through November.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 9.5744,
-    "lng": 100.0773
+    "lat": 9.59163,
+    "lng": 100.06835
    },
    "airport": "Samui International Airport (USM)",
-   "airportDirections": "Samui International Airport (USM)\nApproximately 8 km from the resort\nAround 15–20 minutes by private vehicle\nRecommended Arrival Airport: Samui International Airport (USM)",
+   "airportDirections": "A 15 minute drive from Samui International Airport (USM); the resort arranges private car or minibus transfers.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
      "Hideaway Villa",
-     "Ocean View Villa",
-     "Oceanfront Pool Villa",
-     "Pool Villa Suite",
-     "Oceanfront Retreat",
-     "Private Residences"
+     "Ocean Villa",
+     "Hideaway Pool Villa",
+     "Ocean View Pool Villa",
+     "Ocean Front Pool Villa",
+     "Ocean Front Pool Villa Suite",
+     "The Ocean Retreat",
+     "The Beach Reserve"
     ]
    },
    "experiences": {
@@ -39854,130 +41078,68 @@
     "Located on the northern tip of Koh Samui, Six Senses Samui combines tropical island charm with world-class wellness and sustainability. The resort's elevated setting delivers breathtaking sea views while creating a sense of privacy and tranquility that feels far removed from everyday life."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to March for cooler weather and outdoor days; April to September for snorkelling, diving, kayaking and the best chance of whale sharks. Six Senses says rain usually falls from late October through November, with November the wettest month.",
+    "how_to_get_there": "Fly into Samui International Airport (USM). The resort is a 15 minute drive away, and it arranges private car or minibus transfers. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "Hillside villas over the Gulf of Thailand on Samui's northeast tip, most with a private infinity pool; snorkelling, diving and whale shark season from April to September; Six Senses Spa.",
+    "who_its_for": "Couples and families. Daily kids' activities and babysitting on request; one child 11 or under has a complimentary breakfast in one bedroom villas. Guests must be 18 or over to book."
+   },
+   "faqs": [
+    {
+     "q": "What kind of villas does Six Senses Samui have?",
+     "a": "Eight types, from the 130 sqm Hideaway Villa and Ocean Villa, which have no private pool, to pool villas of 160 sqm and two bedroom houses: The Ocean Retreat at 600 sqm and The Beach Reserve at 900 sqm, each sleeping six."
+    },
+    {
+     "q": "How far is Six Senses Samui from the airport?",
+     "a": "About 15 minutes by car from Samui International Airport. The resort arranges private car or minibus transfers; no helicopter or seaplane is published."
+    },
+    {
+     "q": "When is the best time to visit Six Senses Samui?",
+     "a": "It depends on what you want. Six Senses calls December to March the coolest months for outdoor days, and April to September the best time for snorkelling, diving and whale sharks. November is the wettest month."
+    },
+    {
+     "q": "Can you see whale sharks from Six Senses Samui?",
+     "a": "Six Senses says April to September gives your best chance to spot whale sharks, alongside the best snorkelling, diving and kayaking."
+    },
+    {
+     "q": "Is Six Senses Samui good for children?",
+     "a": "Yes. There are daily kids' activities and babysitting on request, children under 5 eat free from the children's menu, and children 11 and under get complimentary breakfast under the resort's villa rules."
+    },
+    {
+     "q": "Which villa suits a family or a group?",
+     "a": "The Ocean Retreat and The Beach Reserve each have two bedrooms and sleep six. The Ocean Front Pool Villa Suite sleeps four."
+    },
+    {
+     "q": "Do the villas have private pools?",
+     "a": "Most do. The pool villas, suite and houses have private infinity pools; the Hideaway Villa and Ocean Villa do not."
+    },
+    {
+     "q": "Is there an age rule for booking?",
+     "a": "Yes. Guests must be at least 18 to make a reservation, and anyone under 18 must travel with an adult."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
-    "primary": "PATH-05",
+    "primary": "PATH-02",
     "secondary": [
-     "PATH-02",
+     "PATH-05",
      "PATH-07"
     ],
     "setting": "koh_samui",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
-    "stays",
-    "gatherings"
+    "stays"
    ],
    "arrivalHubIds": [
     "6ae6975a7f9f2127514d41e1"
-   ],
-   "placeSlug": null
-  },
-  {
-   "slug": "six-senses-uluwatu",
-   "name": "Six Senses \n Uluwatu Bali",
-   "ledgerId": "STY-2026-000274",
-   "country": "Indonesia",
-   "countrySlug": "indonesia",
-   "regionSlug": "asia",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Clifftop wellness, sacred Balinese culture, and endless Indian Ocean horizons.",
-   "quote": "Where the edge of the earth meets the beginning of your next chapter.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a95f79d54_0f41a3f1a_6a3a814bfcbf2114d5625350_69ffc102.webp",
-   "gallery": [
-    "/img/b44/eb9a174d1_c7ab65907_6a3a81ab3e875b33c66d13cc_dce26ff6.avif",
-    "/img/b44/47833ad86_fc62c3bd4_6a3a81b140d8ef298cae15f8_9d4cb0f4.avif",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c57bd18af_5216df7ef_6a3a81ad0a909a3b40252d7f_8bcf9f4c.jpg",
-    "/img/b44/b943754ec_91d7c01e4_6a3a81b5752f935fbc017033_8b27c215.avif"
-   ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "The dry season between April and October offers clear skies, lower humidity, spectacular sunsets, excellent surfing conditions, and ideal weather for outdoor wellness activities, cultural exploration, and ocean adventures.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": -8.8454,
-    "lng": 115.0842
-   },
-   "airport": "Ngurah Rai International Airport (DPS)",
-   "airportDirections": "Ngurah Rai International Airport (DPS) is approximately 18 km from the resort.\nEstimated transfer time:\n45–60 minutes by private vehicle depending on traffic.\nDPS is the recommended arrival airport for all guests.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Sky Suite",
-     "Ocean Suite",
-     "Cliff Pool Villa",
-     "Ocean View Villa",
-     "Two-Bedroom Villa",
-     "Three-Bedroom Residence"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Wellness Programs",
-     "Balinese Rituals",
-     "Yoga & Meditation",
-     "Surf Adventures",
-     "Temple Exploration",
-     "Sustainability Experiences"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Clifftop Indian Ocean location",
-     "Private pool villas",
-     "Six Senses Spa",
-     "Integrated wellness screening",
-     "Earth Lab sustainability center",
-     "Infinity pools",
-     "Multiple dining venues",
-     "Balinese-inspired architecture",
-     "Ocean-view suites",
-     "Wellness-focused experiences"
-    ]
-   },
-   "onlyHere": [
-    "Perched high above the Indian Ocean, Six Senses Uluwatu Bali delivers one of Bali's most spectacular luxury experiences. Ancient spiritual traditions, innovative wellness, breathtaking sunsets, and meaningful sustainability create a destination that inspires travelers to slow down, reconnect, and experience Bali beyond the ordinary."
-   ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-05",
-    "secondary": [
-     "PATH-07",
-     "PATH-02"
-    ],
-    "setting": "bukit",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays",
-    "gatherings"
-   ],
-   "arrivalHubIds": [
-    "6ae6974822d90def7dcf0341"
    ],
    "placeSlug": null
   },
@@ -39992,33 +41154,44 @@
    "category": "hotel",
    "tagline": "An iconic Thai island sanctuary overlooking the legendary seascapes of Phang Nga Bay.",
    "quote": "Some views become memories long before you leave.",
-   "hero": "/img/b44/60151b8e2_d0a184d7e_6a4761ee741e9c9a87f73ce0_ba5a5389.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9001bae20_2828e4c69_6a4762cc4d0083350ce5fc01_6ce74717.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a1d70f8ab_03ec6bb64_6a4762e3f40b127ecf16370f_9cccee1a.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1a89b6146_bc8bfcd84_6a4762f3c4ac975de2e29ab1_8dc0687e.webp",
-    "/img/b44/ba9994337_4acbe117d_6a47637b111b1374295409e6_518459a0.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/six-senses-yao-noi/g10"
    ],
-   "bestMonths": "November - April",
-   "bestMonthsNote": "These months provide the best weather conditions for exploring Phang Nga Bay, with calm seas, sunny skies, lower humidity, and ideal conditions for boating, kayaking, island hopping, and outdoor wellness experiences.",
+   "bestMonths": "October to April",
+   "bestMonthsNote": "Six Senses says sunseekers come from October to April, which is also its diving season; the resort is open all year.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": 8.1109,
-    "lng": 98.6183
+    "lat": 8.11969,
+    "lng": 98.62543
    },
-   "airport": "Phuket International Airport (HKT) Krabi International Airport (KBV)",
-   "airportDirections": "Phuket International Airport (HKT)\nApproximately 45–60 minutes by vehicle and speedboat transfer\nPrimary arrival airport for most guests\nKrabi International Airport (KBV)\nApproximately 60–90 minutes via vehicle and boat transfer\nRecommended Arrival Airport: Phuket International Airport (HKT)",
+   "airport": "Phuket International Airport (HKT)",
+   "airportDirections": "A 30 minute drive from Phuket International Airport (HKT) to Ao Po Grand Marina, then a 40 minute speedboat to Koh Yao Noi: about 70 minutes in all. Private car and speedboat transfers also run from Krabi (KBV). Boat times depend on the weather.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
      "Hideaway Pool Villa",
+     "Hideaway Pool Villa Suite",
      "Ocean Pool Villa",
-     "Beachfront Pool Villa Suite",
+     "Ocean Deluxe Pool Villa",
      "Ocean Panorama Pool Villa",
-     "Family Villa",
+     "Beachfront Pool Villa",
+     "Beachfront Pool Villa Suite",
+     "Hideaway Two-Bedroom Pool Villa",
+     "Ocean Two-Bedroom Pool Villa",
+     "The View",
      "The Ocean Retreat"
     ]
    },
@@ -40052,9 +41225,47 @@
     "Few destinations in the world offer scenery as dramatic as Phang Nga Bay. Six Senses Yao Noi allows travelers to experience this iconic landscape through private villas, world-class wellness, authentic Thai hospitality, and meaningful sustainability initiatives, all while surrounded by nature's most spectacular architecture."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "October to April. Six Senses says sunseekers come from October to April, which is also its diving season; the resort is open all year.",
+    "how_to_get_there": "Fly into Phuket (HKT). The resort meets you for a 30 minute drive to Ao Po Grand Marina, then a 40 minute speedboat to Koh Yao Noi, about 70 minutes in all. Private car and speedboat transfers also run from Krabi (KBV); Six Senses gives no journey time for that route. No helicopter or seaplane transfer is published. Boat times depend on the weather.",
+    "signature_experiences": "Views across the limestone karsts of Phang Nga Bay from every villa type, island hopping, Six Senses Spa, and a Guest Experience Maker for every villa.",
+    "who_its_for": "Couples and families who want a private pool villa in Phang Nga Bay. Children up to 11 stay free in their parents' villa using existing beds, and activities start at age 4."
+   },
+   "faqs": [
+    {
+     "q": "How many villas does Six Senses Yao Noi have?",
+     "a": "Six Senses does not publish a total. It lists 11 villa types, every one with a private infinity pool, from the 154 sqm Hideaway Pool Villa to The Ocean Retreat, a 500 sqm two bedroom duplex with direct beach access."
+    },
+    {
+     "q": "How do I get to Six Senses Yao Noi?",
+     "a": "Fly into Phuket. The resort meets you at the airport for a 30 minute drive to Ao Po Grand Marina, then a 40 minute speedboat to the island. Private transfers can also be arranged from Krabi. No helicopter or seaplane transfer is published."
+    },
+    {
+     "q": "When is the best time to visit Six Senses Yao Noi?",
+     "a": "October to April. Six Senses says that is when sunseekers come and when the diving season runs, though the resort is open all year."
+    },
+    {
+     "q": "Is Six Senses Yao Noi good for children?",
+     "a": "Yes. Children up to 11 stay free in their parents' villa using existing beds, activities for ages 4 and up include kayaking, cycling, cooking and Muay Thai, and babysitting is available."
+    },
+    {
+     "q": "Which villa suits a family?",
+     "a": "The two bedroom pool villas and the Beachfront Pool Villa Suite each sleep up to five. The Ocean Retreat also sleeps five, across two bedrooms and 500 sqm on the beach."
+    },
+    {
+     "q": "Where exactly is Six Senses Yao Noi?",
+     "a": "On Koh Yao Noi in Phang Nga Bay, Phang Nga province, looking out over the bay's limestone karsts."
+    },
+    {
+     "q": "Does every villa have its own pool?",
+     "a": "Yes. Every villa type Six Senses lists has a private infinity pool, and each stay comes with a Guest Experience Maker who plans your days."
+    },
+    {
+     "q": "Can weather affect the boat transfer?",
+     "a": "Yes. Six Senses says transfers depend on the weather, which can change departure and arrival times."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -40068,12 +41279,11 @@
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
-    "stays",
-    "gatherings"
+    "stays"
    ],
    "arrivalHubIds": [
     "6ae6975a0354a9239ccf6f99",
@@ -40942,7 +42152,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A refined sanctuary where rice‑terrace serenity meets ocean‑edge elegance.",
+   "tagline": "48 pool villas between Mount Batukaru's rice terraces and a black sand beach",
    "quote": "Step into a place where architecture, rice terraces and beach merge. A transformative escape in harmony with nature.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/hero",
    "gallery": [
@@ -40957,62 +42167,105 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/soori-bali/g10"
    ],
-   "bestMonths": "April–June; September–November",
-   "bestMonthsNote": "These shoulder‑season months offer mild weather, fewer crowds, clearer skies, and lower rates. Perfect for wellness, exploring rice‑terrace trails and uninterrupted beach views.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Soori Bali does not name a best season on its own site.",
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "conservation"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.576728,
     "lng": 115.054772
    },
    "airport": "Ngurah Rai International Airport (DPS)",
-   "airportDirections": "DPS is approximately 90 minutes drive (~70 km) to Soori Bali. Arrange private transfers (IDR ~1,727,000) at booking or use a pre‑booked taxi. For serenity, avoid rush hours in Denpasar and plan arrival early in the day.",
+   "airportDirections": "Ngurah Rai International Airport (DPS) is about 90 minutes by road from Soori Bali. Arrange a private transfer when you book, and plan to arrive early in the day to avoid Denpasar traffic.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Mountain & Rice Paddies Pool Villa with private pool and garden views",
-     "Beach Pool Villa steps from the black sand shoreline",
-     "Ocean Pool Villa elevated over tropical gardens with ocean vistas",
-     "Deluxe Ocean Pool Villa with sea‑view bathtub and extra space",
-     "Three‑Bedroom to Soori Estate residences for families or groups"
+     "48 villas, all with private pools",
+     "Ocean Pool Villa",
+     "Deluxe Ocean Pool Villa with Indian Ocean views",
+     "Mountain / Rice Paddies Pool Villa",
+     "Beach Pool Villa, one or two bedrooms"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Sunrise yoga and meditation over the ocean",
-     "Guided spiritual journey to Tanah Lot temple",
-     "Organic garden tours and local produce sampling",
-     "Private cycling through rice‑paddy lanes",
-     "Traditional Balinese workshops (rice planting, crafts)",
-     "Spa rituals using locally sourced products"
+     "Signature spiritual journey to Tanah Lot",
+     "Cultural, community and wellness journeys",
+     "Younger Guests Journeys for children",
+     "Complimentary rice paddy walks, yoga and tai chi",
+     "Soori Spa treatments",
+     "Snorkelling and diving arranged by the Leisure Concierge"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "EarthCheck Gold certified sustainable design",
-     "Bioclimatic architecture enabling natural cooling and lighting",
-     "Zero groundwater extraction and 50% reduced water use strategies",
-     "Locally sourced materials and ingredients (85% from region)",
-     "Personal villa hosts / butlers for tailored service",
-     "Each villa includes private infinity pool and open‑air spaces"
-    ]
+    "paras": [
+     "Certified to the EC3 Global EarthCheck Standard for Building, Planning and Design.",
+     "Architecture, interiors and landscape by SCDA, crafted from local materials.",
+     "Private pool in every villa.",
+     "Four dining options: Cotta, Ombak, The Reading Room and Keiyo.",
+     "Soori Spa, infinity pool, bar, 24-hour gym and library.",
+     "Fresh produce from nearby farms and spices from the resort's own garden."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Soori Bali is made for travelers seeking more than luxury. Couples yearning for a mindful escape, adventurous solo travelers seeking genuine cultural immersion, and families or groups desiring spacious privacy framed by rice terraces and black‑sand beaches. Here, you’ll lounge in open‑air pavilions, unwind in interiors that breathe with the climate, and dine on produce harvested just minutes away. It's an experience of design‑led serenity rooted in place."
+    "Soori Bali is made for travellers seeking more than luxury: couples wanting a mindful escape, travellers seeking cultural connection, and families or groups wanting spacious privacy between rice terraces and a black sand beach. Here you dine on produce from nearby farms and spices from the resort's own garden, in architecture designed to belong to its place."
    ],
    "why": [
     {
-     "title": "A Sanctuary Where Design Meets Nature’s Rhythm",
-     "body": "Soori Bali blends architectural artistry by SCDA with the rhythms of Bali’s landscape and culture. It’s perfect for Honeymoon & Couples seeking romance and minimalism, Adventure & Nature lovers seeking immersion in rice‑paddy life and coastline, Solo travelers seeking mindful connection, and Conservation‑Mindful guests who value sustainable luxury."
+     "title": "A Sanctuary Where Design Meets Nature's Rhythm",
+     "body": "Soori Bali blends SCDA's architecture with the rhythms of Bali's landscape and culture. It suits couples seeking calm, families and groups who want space, guests drawn to wellness journeys, and travellers who value its EarthCheck-certified design."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Soori Bali does not publish a best season on its site; confirm timing with your advisor.",
+    "how_to_get_there": "A little over an hour by road from Ngurah Rai International Airport (DPS), about 32 to 34 km. The direct-booking Soori Escape package includes a one-way airport pick-up.",
+    "signature_experiences": "Sunrise at Tanah Lot on a Spiritual Journey, Soori Spa, Wellness and Cultural Journeys, and beachside dining at Ombak.",
+    "who_its_for": "Couples, families and groups who want design-led privacy, culture and wellness on Bali's quieter south-west coast."
+   },
+   "faqs": [
+    {
+     "q": "Where is Soori Bali?",
+     "a": "Soori Bali is on Bali's south-western coast at Desa Kelating, Kerambitan, in Tabanan Regency. It sits between Mount Batukaru, terraced rice fields and a 1 km stretch of volcanic black sand beach, about 12.7 km from Tanah Lot temple."
+    },
+    {
+     "q": "How do I get to Soori Bali?",
+     "a": "Soori Bali is a little over an hour by road from Ngurah Rai International Airport (DPS), about 32 to 34 km away. The direct-booking Soori Escape package includes a one-way airport pick-up. Soori does not publish a helicopter option."
+    },
+    {
+     "q": "When is the best time to visit Soori Bali?",
+     "a": "Soori does not publish a best season. James Wild & Co can advise on timing around your plans."
+    },
+    {
+     "q": "How many villas does Soori Bali have?",
+     "a": "Soori Bali has 48 villas and residences, every one with a private pool and mountain or ocean views. One-bedroom choices are the Ocean, Deluxe Ocean, Mountain and Rice Paddies, and Beach Pool Villas; groups take the three and four-bedroom Residences, the Deluxe Four-Bedroom Residence, the six-bedroom Soori Residence or the ten-bedroom Soori Estate."
+    },
+    {
+     "q": "What is The Soori Estate?",
+     "a": "The Soori Estate is a ten-bedroom private residence on 5,250 sqm of beachfront land, which Soori calls the single largest residence in Bali. It has four private infinity pools plus a 20 m infinity pool with jacuzzi, butler service, and sleeps up to 20 adults and 4 children."
+    },
+    {
+     "q": "Is Soori Bali good for families?",
+     "a": "Yes. One-bedroom villas take two adults and a child, the Residences and the Estate sleep extended families, and Younger Guests Journeys are tailored to children through nature, the local community and Balinese culture. Soori does not publish a minimum age."
+    },
+    {
+     "q": "What experiences does Soori Bali offer?",
+     "a": "Soori's Journeys are full or half-day experiences priced on enquiry: Spiritual Journeys such as sunrise at Tanah Lot, plus Cultural, Community, Wellness and Younger Guests Journeys. Soori Spa pairs local therapists with visiting international practitioners, and the concierge arranges snorkelling and diving."
+    },
+    {
+     "q": "Who designed Soori Bali?",
+     "a": "Architect Soo K. Chan of SCDA designed Soori Bali and is its owner; SCDA handled the architecture, interiors and landscape. Dining is at Cotta, Ombak, The Reading Room and Keiyo."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -42047,7 +43300,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "An Artistic and Luxurious Resort in Ubud",
+   "tagline": "Twenty-four art-filled suites and villas on a six-hectare rice paddy estate near Ubud",
    "quote": "Escape to Tanah Gajah in Ubud, Bali. This secluded 20-villa resort offers a tranquil retreat surrounded by rice paddies and rich Balinese culture.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9d72e1054_83d289dc8_68366ffe50f07a74d3f85f03_1_20-_20aerial_20hero_20shot_201_20-_20tanah_20gajah_20.",
    "gallery": [
@@ -42062,11 +43315,16 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/754276264_5da4037e9_683a3a101be677436f621b0d_Two_20Bedroom_20Club_20Family_20Pool_20Villa_20-_20priv.",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/93a00bd09_e3adc92f1_683a3a1036f0e372a58313f8_Two_20Bedroom_20Club_20Family_20Pool_20Villa_20-_20Seco."
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "Bali enjoys a tropical climate with two distinct seasons: the dry season (April to October) and the wet season (November to March). Temperatures sit between 26–30°C year-round, but rainfall and humidity define the experience. The dry season brings clear skies, low humidity and calm seas, which is ideal for beach holidays and outdoor exploration.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Tanah Gajah does not name a best season on its own site.",
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "family",
+    "wellness"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.523367,
     "lng": 115.275902
@@ -42077,47 +43335,83 @@
    "rooms": {
     "paras": [],
     "items": [
-     "1 Bedroom Chub Suite",
-     "1 Bedroom Club Pool Villa",
-     "Premier 1 Bedroom Club Pool Villa",
-     "2 Bedroom Club Family Pool Villa",
+     "One Bedroom Club Suite",
+     "One Bedroom Club Pool Villa",
+     "Premier One Bedroom Club Pool Villa",
+     "Two Bedroom Club Family Pool Villa",
      "The Hadiprana Estate"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Spa & Wellness",
-     "Hot Air Balloon Experience",
-     "ATV and Hiking Excursions",
-     "Elephant Gate Romance",
-     "Balinese Kitchen Culture",
-     "Cooking Classes",
-     "Private Dinning Experiences/Options",
-     "Romantic Boat Rides"
+     "Spa and holistic healing",
+     "Hot air balloon adventure",
+     "Guided rice paddy treks",
+     "Elephant Gate Romance dinner",
+     "Balinese Kitchen Culture cooking workshop",
+     "Kecak dance and royal Balinese dinner",
+     "Private dining experiences",
+     "Romantic picnic boat"
     ]
    },
    "features": {
-    "paras": [],
-    "items": [
-     "Large Suite Villas",
-     "Floating Breakfast",
-     "Farm to Table Dining",
-     "Large Estate Pool and Spa"
-    ]
+    "paras": [
+     "Just 24 suites and villas on six hectares of gardens and working rice paddies.",
+     "Club benefits including butler service, afternoon tea and sunset cocktails.",
+     "Floating breakfast in the main pool or your villa's private pool.",
+     "The Hadiprana Estate with a 10 x 6 m private pool and outdoor jacuzzi.",
+     "The Spa at the edge of the paddy fields.",
+     "The founder's art collection throughout the estate."
+    ],
+    "items": []
    },
    "onlyHere": [
-    "Hidden among the lush undulating hills of Bali’s culture-rich highlands, Tanah Gajah, Once the private estate of renowned Indonesian architect Hendra Hadiprana, sits among thriving rice fields as far as the eye can see. At Tanah Gajah, you're not just visiting Bali; you're immersing yourself in a living canvas of art, nature, and spirituality. It's a place where every moment tells a story, guiding you to rediscover yourself amidst the serenity of Ubud."
+    "Hidden among the hills of Bali's culture-rich highlands, Tanah Gajah, once the private estate of Indonesian art collector Hendra Hadiprana, sits among thriving rice fields as far as the eye can see. Here you are immersed in a living canvas of art, nature and spirituality, guided to rediscover yourself in the serenity of Ubud."
    ],
    "why": [
     {
-     "title": "Most Amazing Stay in Ubud",
-     "body": "Tanah Gajah embodies the spirit of James Wild & Co by offering transformative experiences that connect guests with nature, culture, and self. Its commitment to sustainability, cultural preservation, and personal growth makes it a perfect fit for travelers seeking meaningful journeys."
+     "title": "An Intimate Estate in Ubud",
+     "body": "Tanah Gajah fits James Wild & Co by offering experiences that connect guests with nature, culture and self. With only 24 suites and villas on six hectares, most of the land is given to gardens and working rice paddies, and culture and holistic healing sit at the centre of a stay."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Tanah Gajah does not publish a best season on its site; confirm timing with your advisor.",
+    "how_to_get_there": "Fly into Ngurah Rai International Airport (DPS) and take a private car transfer arranged by the resort to Ubud.",
+    "signature_experiences": "Hot air ballooning, rice paddy treks, a romantic picnic boat, Kecak dance and holistic healing at The Spa.",
+    "who_its_for": "Couples, families and wellness seekers who want a small, art-filled estate among working rice paddies."
+   },
+   "faqs": [
+    {
+     "q": "Where is Tanah Gajah?",
+     "a": "Tanah Gajah, a Resort by Hadiprana, sits among rice fields just outside the artists' village of Ubud in Bali's highlands, on the former estate of Indonesian art collector Hendra Hadiprana."
+    },
+    {
+     "q": "How do I get to Tanah Gajah?",
+     "a": "Fly into Ngurah Rai International Airport (DPS); the resort can arrange a private car airport transfer. Club benefits include car service to and from Ubud centre."
+    },
+    {
+     "q": "How many villas does Tanah Gajah have?",
+     "a": "Tanah Gajah has just 24 suites and villas set across six hectares of tropical gardens and working rice paddies."
+    },
+    {
+     "q": "What room types are there at Tanah Gajah?",
+     "a": "One Bedroom Club Suite, One Bedroom Club Pool Villa, Premier One Bedroom Club Pool Villa, Two Bedroom Club Family Pool Villa, and The Hadiprana Estate with a 10 x 6 m private pool and outdoor jacuzzi."
+    },
+    {
+     "q": "Is Tanah Gajah good for families?",
+     "a": "Yes. The Two Bedroom Club Family Pool Villa sleeps two adults and two children, and the resort offers an Art of Family Fun package."
+    },
+    {
+     "q": "What experiences does Tanah Gajah offer?",
+     "a": "Signature experiences include Bali's first licensed hot air balloon adventure, guided rice paddy treks, a romantic picnic boat on a jungle lake, Balinese Kitchen Culture cooking workshops, Kecak dance at the resort's amphitheatre, and dinner at the Elephant Gate."
+    },
+    {
+     "q": "When is the best time to visit Tanah Gajah?",
+     "a": "Tanah Gajah does not publish a best season. James Wild & Co can advise on timing around your plans."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -46943,7 +48237,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "“Perched on the edge of infinity: luxury without compromise”",
+   "tagline": "Perched above the Indian Ocean on the cliffs of Uluwatu",
    "quote": "Where cliffs fall away and horizons stretch forever. Find yourself here, in the quiet majesty of a resort built for the soul.",
    "hero": "/img/b44/ccab19a2f_7005a7e41_68d32c1d1c8db0ae37d74000_135e7196.avif",
    "gallery": [
@@ -46958,55 +48252,97 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eee7602b3_36f29acf0_68d426ec57d8aa7021f84ea9_2f04ef7a.webp",
     "/img/b44/158ce7dfa_c5e2b17fd_68d426ece1896751d32c2ad8_3c3d3ffa.avif"
    ],
-   "bestMonths": "April‑June & September‑October",
-   "bestMonthsNote": "These shoulder‑seasons offer great weather: less rain, more stable skies, fewer crowds, excellent visibility (for ocean views & sunsets).",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The Ungasan does not name a best season on its own site.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "couples",
+    "solo",
+    "wellness"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.846188,
     "lng": 115.149528
    },
-   "airport": "Ngurah Rai International Airport (Denpasar) , DPS",
-   "airportDirections": "From (DPS) to The Ungasan Clifftop Resort is about 40‑minute drive, depending on traffic. You'll travel south on the Bukit Peninsula; the resort is perched up on the cliffs above the southern coast, so expect some winding roads and dramatic elevation changes.",
-   "founderNote": null,
+   "airport": "Ngurah Rai International Airport (DPS), Denpasar",
+   "airportDirections": "About 25 to 30 minutes by car from Ngurah Rai International Airport (DPS) in normal traffic, south along the Bukit Peninsula to the cliffs. Return airport transfers are included in all rates.",
+   "founderNote": "Spectacular service. One of my favorites, tucked away with amazing views of Uluwatu and a beach bar that just keeps you coming back.",
    "rooms": {
     "paras": [],
     "items": [
-     "One‑Bedroom Ocean View Suite",
-     "One‑Bedroom Plunge‑Pool Suite",
-     "One‑Bedroom Garden View Suite"
+     "One-Bedroom Ocean View Suite",
+     "One-Bedroom Plunge Pool Suite",
+     "One-Bedroom Garden View Suite"
     ]
    },
    "experiences": {
+    "paras": [],
+    "items": [
+     "Sundays Beach Club with kayaking, paddleboarding and snorkelling",
+     "Visits to Pura Luhur Uluwatu temple, a short drive away",
+     "Sunsets and ocean views from the cliffs"
+    ]
+   },
+   "features": {
     "paras": [
-     "Wellness & spiritual retreats (balinese healing, yoga, internal reflection). Private beach & Sundays Beach Club access with water sports. Cultural excursions to Uluwatu Temple, GWK Cultural Park and local villages. Sunset cliff walks & ocean views."
+     "Set 150 metres above the Indian Ocean on limestone cliffs.",
+     "Each villa a self-contained compound with a private infinity or lap pool and kitchen.",
+     "Dedicated butler service for every villa and suite.",
+     "Complimentary access to Sundays Beach Club, with water sports equipment.",
+     "Waatu clifftop restaurant, cooking over coals.",
+     "Full-service spa and a wellness programme rooted in Balinese spiritual tradition."
     ],
     "items": []
    },
-   "features": {
-    "paras": [],
-    "items": [
-     "Clifftop infinity pools overlooking the Indian Ocean – dramatic vistas",
-     "Private plunge pools & spacious indoor‑outdoor living for each villa",
-     "Bespoke in‑villa service and butlers",
-     "Access to a private beach and beach club privileges",
-     "World‑class dining using local produce",
-     "Spa & wellness offerings that integrate Balinese traditions"
-    ]
-   },
    "onlyHere": [
-    "At The Ungasan Clifftop Resort, the combination of scale, privacy, and immersive design is rare. Whether you are travelling as a solo seeker of peace, a couple in search of romance, a family desiring space, or a group wanting both luxury and togetherness, this is a place to stretch time. Linger over meals, rest by the sea, wander the cliffs and leave slower, richer."
+    "At The Ungasan Clifftop Resort, the combination of villa privacy and full resort service is rare. Whether you are travelling alone, as a couple in a one-bedroom suite, or as a family or group in your own villa compound, this is a place to stretch time. Linger over meals, rest by the sea, wander the cliffs and leave slower."
    ],
    "why": [
     {
      "title": null,
-     "body": "Ungasan Clifftops blends drama and calm in equal measure: the clifftop vistas deliver sweeping views and sunsets; the private villas deliver comfort and intimacy."
+     "body": "Ungasan Clifftops blends drama and calm in equal measure: the clifftop setting delivers sweeping views and sunsets, while seven private villa compounds deliver comfort and intimacy."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "The Ungasan does not publish a best season on its site; confirm timing with your advisor.",
+    "how_to_get_there": "About 25 to 30 minutes by car from Ngurah Rai International Airport, with return transfers included.",
+    "signature_experiences": "Sundays Beach Club with water sports, Waatu clifftop dining, and a spiritual wellness programme.",
+    "who_its_for": "Families and groups taking a whole villa compound, and couples or solo travellers in the one-bedroom suites."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Ungasan Clifftop Resort?",
+     "a": "The Ungasan is in Ungasan, Uluwatu, at the southern tip of Bali's Bukit Peninsula, set 150 metres above the Indian Ocean on limestone cliffs. It is not in Seminyak, which is about 45 minutes away."
+    },
+    {
+     "q": "How far is The Ungasan from Bali airport?",
+     "a": "About 25 to 30 minutes by car from Ngurah Rai International Airport (DPS) in normal traffic, and return airport transfers are included in all rates."
+    },
+    {
+     "q": "How many villas does The Ungasan have?",
+     "a": "Seven villas, each a self-contained compound with a private infinity or lap pool, kitchen and dedicated butler team, plus one-bedroom suites within the Villa Nora and Villa Chintamani compounds."
+    },
+    {
+     "q": "Is The Ungasan good for families?",
+     "a": "Yes. Villas come in three, four or five-bedroom configurations, and Villa Ambar has interconnecting bedrooms suited to families with young children."
+    },
+    {
+     "q": "Does The Ungasan have a private beach?",
+     "a": "Guests get complimentary access, priority and reserved sunbeds at Sundays Beach Club at the base of the cliff, reached by funicular. Sundays is also open to the public."
+    },
+    {
+     "q": "What wellness does The Ungasan offer?",
+     "a": "A structured wellness programme including the Signature Spiritual Wellness Experience with in-house practitioner Guru Ji Bagus, a Melukat purification ritual, healing bowls, yoga and cliffside meditation, plus a full-service spa."
+    },
+    {
+     "q": "When is the best time to visit The Ungasan?",
+     "a": "The Ungasan does not publish a best season. Villas have a two-night minimum and suites one night, year-round. James Wild & Co can advise on timing around your plans."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -47334,7 +48670,7 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Viceroy Bali",
+   "tagline": "A family-run retreat of 40 pool villas above an Ubud valley",
    "quote": "Imagine waking up to the gentle sounds of the jungle, the scent of frangipani in the air, and the promise of a day filled with discovery and serenity",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4e5594453_796c05e0f_6843490b50fe8a604d7ca7cd_Viceroy-Bali-Main-Pool-2.jpg",
    "gallery": [
@@ -47349,11 +48685,17 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/934aefd37_3a1a7bdad_684a45884da4ac2f60eb067e_vice_regal_2_swimming_pool.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1abbc4fb8_42fd06d48_684a43cc61cac81b516cb8f5_Vice-Regal-outside-of-whole-villa_20_1_.webp"
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "These months constitute Bali's dry season, offering pleasant weather ideal for outdoor activities, cultural festivals, and exploring the island's natural beauty",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "bestMonths": "April to October",
+   "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Viceroy Bali does not name a best season on its own site.",
+   "bestFor": [
+    "honeymoon",
+    "couples",
+    "family",
+    "wellness",
+    "food"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2024-11-01",
    "coords": {
     "lat": -8.493478,
     "lng": 115.276498
@@ -47364,32 +48706,33 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Terrace Pool Villa",
-     "Deluxe Terrace Pool Villa",
-     "Vice Regal Villa",
-     "Viceroy Villa",
-     "Elephant Villa"
+     "Pool Suite",
+     "Terrace Villa",
+     "Deluxe Terrace Villa",
+     "Premium Club Pool Villa",
+     "Elephant Villa",
+     "Two Bedroom Family Deluxe Villa",
+     "Vice Regal Villa (two bedrooms)",
+     "The Viceroy Villa (two bedrooms, 15-metre heated pool)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Adventure & nature",
-     "Wellness & health",
-     "Balinese cooking classes",
-     "Solo travelers",
-     "Helicopter tours - Private Helipad",
-     "Conservation and Eco Mindfulness"
+     "Helicopter transfers and scenic tours from the private helipad",
+     "Private yoga sessions in the gardens or your villa",
+     "Spa treatments and couples massage",
+     "Squash and gym",
+     "Tours and local attractions around Ubud"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private infinity pools in every villa",
-     "Two World Class Restaurants",
-     "Spa, Gym & Wellness Focused",
-     "Helipad for Exclusive Arrivals & Adventures",
-     "Villas with Exclusive Benefits"
+     "40 private pool villas with heated pools and valley views",
+     "Heated infinity pools in the Deluxe Terrace Villas",
+     "Spa, gym and squash court",
+     "Private helipad for helicopter arrivals and tours"
     ]
    },
    "onlyHere": [],
@@ -47400,12 +48743,46 @@
     },
     {
      "title": null,
-     "body": "Experience the pinnacle of Balinese elegance and tranquility"
+     "body": "Swaying palms, dramatic valley views and private pools, with nowhere else to be."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Viceroy Bali does not publish a best season on its site; confirm timing with your advisor.",
+    "how_to_get_there": "By helicopter to the resort's own private helipad, or by private limousine from Ngurah Rai International Airport (DPS). Viceroy does not publish a transfer time.",
+    "signature_experiences": "Helicopter arrivals and tours, Apéritif fine dining, private yoga, cooking classes and couples spa treatments.",
+    "who_its_for": "Honeymooners and couples first, plus families in the two-bedroom villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Viceroy Bali?",
+     "a": "Viceroy Bali is in Banjar Nagi, Ubud, on a ridge overlooking the Petanu River valley, which Viceroy calls the Valley of the Kings. It is about a 15-minute drive from Ubud."
+    },
+    {
+     "q": "How do I get to Viceroy Bali?",
+     "a": "Viceroy has its own private helipad and offers discreet helicopter arrivals from Ngurah Rai International Airport (DPS), as well as limousine transfers by road. Viceroy does not publish a flight or drive time on the pages we checked."
+    },
+    {
+     "q": "How many villas does Viceroy Bali have?",
+     "a": "Viceroy is a family-run retreat of 40 private pool villas with valley views, including 24 Deluxe Terrace Villas and 4 Terrace Villas."
+    },
+    {
+     "q": "Are children welcome at Viceroy Bali?",
+     "a": "Yes. Viceroy states there is no minimum age, and parents of young children sign an indemnity at check-in. The Little Explorers programme offers supervised activities, and the Family Package (two nights or more) adds kids' meals at CasCades, a free extra bed and one children's activity per stay."
+    },
+    {
+     "q": "What are the dining options at Viceroy Bali?",
+     "a": "CasCades serves gourmet all-day dining, Apéritif is the award-winning fine dining degustation restaurant, and Pinstripe is the cocktail bar."
+    },
+    {
+     "q": "Who is Viceroy Bali best for?",
+     "a": "Viceroy calls itself a secluded haven for romantics, adventurers and the mindful, and notes that many guests are on their honeymoon; families can book two-bedroom villas such as the Vice Regal and The Viceroy Villa."
+    },
+    {
+     "q": "When is the best time to visit Viceroy Bali?",
+     "a": "Viceroy does not publish a best season on its site. James Wild & Co can advise on timing around your plans."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,

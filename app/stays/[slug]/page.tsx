@@ -57,6 +57,8 @@ import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
 import { sessionsFor } from "@/lib/content/workshops";
 import { collectionForStay, offerForStay } from "@/lib/content/collections/cayuga";
+import ExtensionChip from "@/components/journey/ExtensionChip";
+import { EXTENSIONS, CAYUGA_COSTA_RICA_EXTENSION } from "@/lib/content/extensions";
 import { sistersFor } from "@/lib/content/collections/groups";
 import { routesThrough } from "@/lib/content/trips";
 import { recordHref } from "@/lib/ledger/urls";
@@ -339,7 +341,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           )}
           {collectionForStay(s.slug) && (
             <section aria-label="Part of a collection" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div><p className="ledger-eyebrow ledger-crimson">Part of a collection</p><p className="ledger-display text-[1.5rem] mt-1">{s.name} is one of seven Cayuga Collection hotels</p><p className="mt-1 text-[15px] ledger-muted">Sustainably run boutique hotels across Costa Rica, Panama, Nicaragua and Guatemala, and how to pair them.</p>{offerForStay(s.slug) && <p className="mt-3 text-[15.5px]"><span className="ledger-eyebrow ledger-crimson mr-2">{offerForStay(s.slug)!.program}</span>{offerForStay(s.slug)!.headline}, travel {offerForStay(s.slug)!.travel}.</p>}</div>
+              <div><p className="ledger-eyebrow ledger-crimson">Part of a collection</p><p className="ledger-display text-[1.5rem] mt-1">{s.name} is one of seven Cayuga Collection hotels</p><p className="mt-1 text-[15px] ledger-muted">Sustainably run boutique hotels across Costa Rica, Panama, Nicaragua and Guatemala, and how to pair them.</p>{offerForStay(s.slug) && <p className="mt-3 text-[15.5px]"><span className="ledger-eyebrow ledger-crimson mr-2">{offerForStay(s.slug)!.program}</span>{offerForStay(s.slug)!.headline}, travel {offerForStay(s.slug)!.travel}.</p>}{s.countrySlug === "costa-rica" && <ExtensionChip className="mt-4" {...EXTENSIONS[CAYUGA_COSTA_RICA_EXTENSION]} />}</div>
               <Link href={offerForStay(s.slug) ? `${collectionForStay(s.slug)!.path}#offers` : collectionForStay(s.slug)!.path} className="ledger-btn self-start md:self-center">{offerForStay(s.slug) ? "See the offer" : "See the collection"}</Link>
             </section>
           )}

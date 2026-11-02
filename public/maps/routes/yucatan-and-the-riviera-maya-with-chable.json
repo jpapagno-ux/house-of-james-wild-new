@@ -1,0 +1,37 @@
+{
+ "id": "yucatan-and-the-riviera-maya-with-chable",
+ "type": "overland",
+ "title": "Yucatán and the Riviera Maya, with Chablé",
+ "subtitle": "10 days · 9 nights · Mérida to Maroma Beach",
+ "code": "JW-MX-C09",
+ "days": {
+  "1": "Mérida to the Mayan forest",
+  "2": "The cenote spa",
+  "3": "The Mayan kitchen",
+  "4": "Yucatán to Tulum",
+  "5": "Ruins, cenotes and Sian Ka'an",
+  "6": "Thai on the cliff",
+  "7": "Tulum to Maroma Beach",
+  "8": "The water ceremony",
+  "9": "Jorge Vallejo's table",
+  "10": "Home from Cancún"
+ },
+ "stops": [
+  {
+   "day": 4,
+   "name": "Mezzanine Tulum",
+   "lat": 20.2143,
+   "lng": -87.4299,
+   "kind": "lodge"
+  },
+  {
+   "day": 7,
+   "name": "Chablé Maroma",
+   "lat": 20.7203,
+   "lng": -86.9699,
+   "mode": "road",
+   "kind": "lodge"
+  }
+ ],
+ "map_note": "Positions from the stays' own pins. Chablé Yucatán has no pin on file yet, so the chart starts at Tulum."
+}

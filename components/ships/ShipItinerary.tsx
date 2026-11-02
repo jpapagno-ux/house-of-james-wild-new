@@ -7,7 +7,7 @@ import ItineraryScroller from "./ItineraryScroller";
 // every route page: globe fly-in, the boat gliding along the route, day by day) beside the day
 // log. `map.html` is the chart block (lib/content/ships/routes.ts, or a trip's engraved figure);
 // its routes are in the same order as the itineraries with days, so R0, R1… match the tabs.
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
 export default function ShipItinerary({ ship, itineraries: given, map, title, intro, eyebrow = "The voyage, day by day", routesNote, combinations }: { ship: string; itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[] }) {
   // An itinerary without days: a private charter (route set with the guest), or a route the

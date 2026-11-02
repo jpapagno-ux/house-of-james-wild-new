@@ -22,7 +22,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
   const q = encodeURIComponent(place);
   const planHref = (a: Advisor) => `/plan?advisor=${a.slug}&q=${q}`;
   return (
-    <section id="plan" className="mt-20 md:mt-28 grid md:grid-cols-2 gap-6 scroll-mt-32 lg:scroll-mt-[212px] border-t ledger-rule pt-10" aria-label={`Plan ${place}`}>
+    <section id="plan" className="mt-20 md:mt-28 grid md:grid-cols-2 gap-6 border-t ledger-rule pt-10" aria-label={`Plan ${place}`}>
       <div className="ledger-paper p-6 md:p-8 h-full">
         <p className="ledger-eyebrow ledger-crimson">Advisors who know {place}</p>
         <div className="mt-4 flex items-center gap-4">

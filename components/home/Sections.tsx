@@ -119,7 +119,7 @@ export function HouseStory() {
 export function VolumeDoors() {
   const v = HOME.volumes;
   return (
-    <section id="volumes" className={`${SECTION} scroll-mt-28`} aria-labelledby="volumes-heading">
+    <section id="volumes" className={`${SECTION}`} aria-labelledby="volumes-heading">
       <p className="ledger-eyebrow">The house, in six volumes</p>
       <h2 id="volumes-heading" className={H2}>Choose Your Way In</h2>
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -328,7 +328,7 @@ export function FilmSection() {
   const f = HOME.film;
   const l = HOME.hero.loop;
   return (
-    <section id="film" className={`${SECTION} scroll-mt-28`} aria-labelledby="film-heading">
+    <section id="film" className={`${SECTION}`} aria-labelledby="film-heading">
       <div className="flex items-center gap-2">
         <Film className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
         <p className="ledger-eyebrow">{f.eyebrow}</p>

@@ -87,7 +87,7 @@ export default function Journeys({ country, journeys, chart, id = "journeys" }: 
   const routes = journeys.filter((j) => j.kind === "route").length;
   const voyages = journeys.length - routes;
   return (
-    <section id={id} style={routes && voyages ? undefined : { borderTopColor: volumeInk(routes ? "overland" : "voyages") }} className="mt-16 md:mt-24 border-t-2 ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} style={routes && voyages ? undefined : { borderTopColor: volumeInk(routes ? "overland" : "voyages") }} className="mt-16 md:mt-24 border-t-2 ledger-rule pt-8 md:pt-10" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <p className="ledger-eyebrow">{routes > 0 && <span style={{ color: volumeInk("overland") }}>{routes} overland {routes === 1 ? "route" : "routes"}</span>}{routes > 0 && voyages > 0 && <span className="ledger-muted"> · </span>}{voyages > 0 && <span style={{ color: volumeInk("voyages") }}>{voyages} small-ship {voyages === 1 ? "voyage" : "voyages"}</span>}</p>

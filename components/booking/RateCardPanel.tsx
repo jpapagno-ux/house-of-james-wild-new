@@ -46,7 +46,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
   const window = Object.values(years).map((y) => `${new Date(y.validFrom + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })} to ${new Date(y.validTo + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}`).join(" and ");
 
   return (
-    <section id="rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="rates-heading">
+    <section id="rates" className="mt-16 md:mt-24" aria-labelledby="rates-heading">
       <p className="ledger-eyebrow">Rates · {partner} published rate card</p>
       <h2 id="rates-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Choose Your Stay at {name}</h2>
       <form className="mt-6 flex flex-wrap items-end gap-3 md:gap-4 px-4 md:px-5 py-3 border ledger-border bg-paper/95" onSubmit={(e) => e.preventDefault()}>

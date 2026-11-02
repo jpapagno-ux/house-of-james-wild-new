@@ -27,6 +27,15 @@
      (audit, 30 Oct 2026). Only in-page anchor jumps stay smooth. */
   html { overflow-x: clip; }
   html:focus-within { scroll-behavior: smooth; }
+  /* Anchor landing (scroll audit, 2 Nov 2026): one offset for every #link, "On this page" tab and
+     scrollIntoView, tied to the real height of the sticky chrome instead of a per-section
+     scroll-mt guess. Header: 3px rule + 76px bar (+1 border) on phones; + 116px bar + 48px volume
+     line on desktop. Pages with a sticky section bar ([data-subnav], 48px + border, sitting at
+     top 76 / 164) add it. 12px of air so the heading never kisses the bar. */
+  :root { --jw-header-h: 80px; --jw-subnav-h: 0px; --jw-anchor-air: 12px; }
+  @media (min-width: 1024px) { :root { --jw-header-h: 168px; } }
+  :root:has([data-subnav]) { --jw-subnav-h: 45px; } /* bar bottom = top (76 / 164) + 49 = header + 45 */
+  html { scroll-padding-top: calc(var(--jw-header-h) + var(--jw-subnav-h) + var(--jw-anchor-air)); }
   body { background: var(--jw-ground); color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } }

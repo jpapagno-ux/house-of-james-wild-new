@@ -35,7 +35,7 @@ export default function CabinsDeck({ cabins, decks, credit, basis, cabinTitle, d
 
   return (
     <>
-      <section id="cabins" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-label={cabinTitle}>
+      <section id="cabins" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-label={cabinTitle}>
         {heads.cabins}
         {cabinIntro && <p className="sr-only">{cabinIntro}</p>}
         <ul className="mt-8 flex lg:grid lg:grid-cols-3 gap-4 lg:gap-5 overflow-x-auto lg:overflow-visible snap-x snap-mandatory -mx-5 px-5 lg:mx-0 lg:px-0 pb-3 [scrollbar-width:thin]">
@@ -71,7 +71,7 @@ export default function CabinsDeck({ cabins, decks, credit, basis, cabinTitle, d
       </section>
 
       {plan && (
-        <section id="deck-plan" ref={deckRef} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-label={deckTitle}>
+        <section id="deck-plan" ref={deckRef} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-label={deckTitle}>
           {heads.decks}
           {decks.length > 1 && (
             <div role="tablist" aria-label="Decks" className="mt-6 flex gap-2 overflow-x-auto [scrollbar-width:none] -mx-5 px-5 md:mx-0 md:px-0">

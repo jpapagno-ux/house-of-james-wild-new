@@ -68,7 +68,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
   });
 
   return (
-    <section id={`${id}-atlas`} className="mt-12 md:mt-16 scroll-mt-32" aria-labelledby={`${id}-h`}>
+    <section id={`${id}-atlas`} className="mt-12 md:mt-16" aria-labelledby={`${id}-h`}>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <p className="ledger-eyebrow" style={{ color: ink }}>{eyebrow}</p>

@@ -9,6 +9,7 @@ import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, LINKED_VOLUMES as VOL
 import { REGION_DATA } from "@/lib/content/regions";
 import { HOME } from "@/lib/content/home";
 import { live } from "@/lib/routes";
+import { lockScroll } from "@/lib/scroll-lock";
 import { JwcoSeal } from "./Marks";
 import Wordmark from "./Wordmark";
 import CompassSpin from "./CompassSpin";
@@ -36,10 +37,11 @@ function volumePhoto(v: MegaMenu): { url: string; alt: string } | null {
 export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; onClose: () => void; onSearch: () => void }) {
   const [pick, setPick] = useState<string>(VOLS[0]?.href ?? "/stays");
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    const release = lockScroll();
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    if (open) window.addEventListener("keydown", onKey);
-    return () => { window.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+    window.addEventListener("keydown", onKey);
+    return () => { window.removeEventListener("keydown", onKey); release(); };
   }, [open, onClose]);
 
   const picked = VOLS.find((v) => v.href === pick) ?? VOLS[0];

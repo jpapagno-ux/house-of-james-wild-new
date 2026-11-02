@@ -90,7 +90,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         </div>
 
         {/* 05 Geography: the pan with coordinates, then the JW map */}
-        <div id="place" className="scroll-mt-32">{(aerial ?? place) && <PanFrame src={mediaUrl((aerial ?? place)!, { width: 2560 })} alt={(aerial ?? place)!.alt} name={NAME} coords={COORDS} line="Canyon Point, in the far south of Utah, a few miles from the Arizona line. The nearest town is Page; the nearest water is Lake Powell." credit={(aerial ?? place)!.credit} />}</div>
+        <div id="place" className="">{(aerial ?? place) && <PanFrame src={mediaUrl((aerial ?? place)!, { width: 2560 })} alt={(aerial ?? place)!.alt} name={NAME} coords={COORDS} line="Canyon Point, in the far south of Utah, a few miles from the Arizona line. The nearest town is Page; the nearest water is Lake Powell." credit={(aerial ?? place)!.credit} />}</div>
         <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pb-16 md:pb-24"><div className="max-w-ledger mx-auto px-5 md:px-10">
           {chart && <LocationBlock chart={chart} name={NAME} pin={COORDS} heading="Southern Utah" rows={[["Airport", "Page Municipal (PGA) · about 25 min"], ["Also", "St George / Flagstaff 2.5 h · Phoenix / Las Vegas 4.5 h"]]} mark={<Roundel volume="stays" text={roundelText(NAME, COORDS, VOLUME_STYLES.stays.roman)} size={120} />} />}
 
@@ -98,20 +98,20 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
           <RoomsLedger id="rooms" eyebrow="The stay" title="Where You'll Sleep" rooms={d.rooms.map((r) => ({ ...r, note: r.note?.split(".")[0] + "." }))} unit="suite" />
 
           {/* 07 Two frames, no grid */}
-          <section id="story" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end scroll-mt-32" aria-label="Two frames">
+          <section id="story" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end" aria-label="Two frames">
             {story.human && <div className="md:col-span-5"><EFFrame a={story.human} ratio="4:5" sizes="(min-width: 768px) 40vw, 100vw" /></div>}
             {d.experiences[0] && <div className="md:col-span-7"><EFFrame a={d.experiences[0]} ratio="3:2" sizes="(min-width: 768px) 58vw, 100vw" /></div>}
           </section>
 
           {/* 08 What you'll do: four lines, no accordion */}
-          <section id="experiences" className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32" aria-labelledby="exp-h">
+          <section id="experiences" className="mt-16 md:mt-24 border-t ef-rule pt-8" aria-labelledby="exp-h">
             <p className="ledger-eyebrow">What the place allows</p>
             <h2 id="exp-h" className="ledger-display text-[1.9rem] md:text-[3rem] mt-2">Pick Two. Leave the Afternoons Alone.</h2>
             <ul className="mt-8 grid md:grid-cols-2 gap-x-12">{d.days.map((x) => <li key={x.title} className="py-4 border-b ef-rule"><span className="ledger-display text-[1.3rem]">{x.title}</span><span className="block text-[14px] ledger-muted mt-1">{x.note.split(".")[0]}.</span></li>)}</ul>
           </section>
 
           {/* 09 Who it suits: two short columns */}
-          <section id="who" className="mt-16 md:mt-24 grid md:grid-cols-2 gap-10 scroll-mt-32" aria-label="Who it suits">
+          <section id="who" className="mt-16 md:mt-24 grid md:grid-cols-2 gap-10" aria-label="Who it suits">
             <div><h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>Who it suits · best for</h2><ul className="mt-4 space-y-2 ledger-display text-[1.3rem]">{ef.whoItSuits.map((x) => <li key={x}>{x}</li>)}</ul></div>
             <div><h3 className="ledger-eyebrow">Less ideal for</h3><ul className="mt-4 space-y-2 ledger-display text-[1.3rem] ledger-muted">{ef.whoItMayNotSuit.map((x) => <li key={x}>{x}</li>)}</ul><p className="mt-5 text-[14px] ledger-muted">Not sure? <Link href="/compass" className="underline underline-offset-4">Ask the Human Compass</Link>.</p></div>
           </section>
@@ -126,7 +126,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         )}
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div id="questions" className="scroll-mt-32"><FaqBlock faqs={d.faqs.slice(0, 3)} title={`${NAME}, Answered Straight`} schema={false} /></div>
+          <div id="questions" className=""><FaqBlock faqs={d.faqs.slice(0, 3)} title={`${NAME}, Answered Straight`} schema={false} /></div>
           <ContinueTheJourney pathways={pw ? [pw.primary, ...pw.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={[]} compassHref="/compass" hostHref={null} />
           <section className="mt-16 md:mt-24 py-16 text-center border-t ef-rule" aria-label="Plan">
             <p className="ledger-eyebrow">Plan with James</p>

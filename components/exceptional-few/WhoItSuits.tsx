@@ -8,7 +8,7 @@ import { Compass } from "lucide-react";
 export default function WhoItSuits({ name, bestFor, lessIdealFor, compassHref = "/compass", id = "who" }: { name: string; bestFor: string[]; lessIdealFor: string[]; compassHref?: string; id?: string }) {
   if (!bestFor.length && !lessIdealFor.length) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px] ef-module" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8 ef-module" aria-labelledby={`${id}-heading`}>
       <p className="ledger-eyebrow ef-eyebrow">Who it suits</p>
       <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">Is {name} for You?</h2>
       <div className="mt-8 grid md:grid-cols-2 gap-8 md:gap-12">

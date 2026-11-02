@@ -430,7 +430,8 @@ el('prev').addEventListener('click',function(){S.follow=null;jump(S.phase==='leg
 el('next').addEventListener('click',function(){S.follow=null;jump(S.k+1)});
 function zoomBy(z){S.manual=true;S.playing=false;S.lnR=clamp(S.lnR+z,Math.log(200),Math.log(CFG.zoomMax||90000))}
 el('zin').addEventListener('click',function(){zoomBy(.45)});el('zout').addEventListener('click',function(){zoomBy(-.45)});
-stage.addEventListener('wheel',function(e){e.preventDefault();zoomBy(-e.deltaY*.0018)},{passive:false});
+/* scroll audit 2 Nov 2026: the wheel zooms only with Ctrl/Cmd held or once the reader has clicked into the chart; otherwise the page scrolls past it */
+stage.addEventListener('wheel',function(e){if(!(e.ctrlKey||e.metaKey||document.activeElement===stage))return;e.preventDefault();zoomBy(-e.deltaY*.0018)},{passive:false});
 var drag=null;
 stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;drag={x:e.clientX,y:e.clientY,lam:S.lam,phi:S.phi,id:e.pointerId,moved:false}});
 stage.addEventListener('pointermove',function(e){if(!drag||e.pointerId!==drag.id)return;var dx=e.clientX-drag.x,dy=e.clientY-drag.y;

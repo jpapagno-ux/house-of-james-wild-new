@@ -1,5 +1,6 @@
 "use client";
 
+import { lockScroll } from "@/lib/scroll-lock";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, BedDouble, CalendarDays, Check, RefreshCcw, Users, X } from "lucide-react";
@@ -33,7 +34,7 @@ export function Checkout({ pick, q, nights, name, included, excluded, policies, 
   const [done, setDone] = useState(false);
   const [f, setF] = useState({ name: "", email: "", phone: "" });
   const ok = f.name.trim().length > 1 && /.+@.+\..+/.test(f.email) && agreed;
-  useEffect(() => { const k = (e: KeyboardEvent) => e.key === "Escape" && onClose(); document.addEventListener("keydown", k); document.body.style.overflow = "hidden"; return () => { document.removeEventListener("keydown", k); document.body.style.overflow = ""; }; }, [onClose]);
+  useEffect(() => { const k = (e: KeyboardEvent) => e.key === "Escape" && onClose(); document.addEventListener("keydown", k); const release = lockScroll(); return () => { document.removeEventListener("keydown", k); release(); }; }, [onClose]);
   return (
     <div className="fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-labelledby="co-title">
       <button type="button" className="absolute inset-0 bg-black/45" aria-label="Close checkout" onClick={onClose} />
@@ -135,7 +136,7 @@ export default function BookingPanel({ property, name, rooms, included, excluded
   const pricedCount = rooms.filter((r) => live[norm(r.name)]).length;
 
   return (
-    <section id="rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="rates-heading">
+    <section id="rates" className="mt-16 md:mt-24" aria-labelledby="rates-heading">
       <p className="ledger-eyebrow">Live rates · booking engine by Tag Albie</p>
       <h2 id="rates-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Choose Your Room at {name}</h2>
 

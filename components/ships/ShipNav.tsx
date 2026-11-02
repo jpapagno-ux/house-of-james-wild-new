@@ -45,7 +45,7 @@ export default function ShipNav({ items, cta, ctaHref, house = false }: { items:
   };
 
   return (
-    <nav aria-label="On this page" data-ship-nav className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] [html[data-chrome=tucked]_&]:top-0 lg:top-[164px] z-30 transition-[top] duration-300">
+    <nav data-subnav aria-label="On this page" data-ship-nav className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] [html[data-chrome=tucked]_&]:top-0 lg:top-[164px] z-30 transition-[top] duration-300">
       <div className="max-w-ledger mx-auto px-5 md:px-10 flex items-center gap-5">
         <div ref={rail} className="flex-1 min-w-0 flex items-stretch gap-1 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,black_90%,transparent)] -ml-3">
           {items.map(([label, id]) => (

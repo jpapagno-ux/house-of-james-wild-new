@@ -149,7 +149,7 @@ export const GUIDES: Record<string, Guide> = {
       title: "How to See It",
       intro: "Eastern Indonesia's best places are islands without roads. The way in is a boat, and the right boat decides the trip.",
       options: [
-        { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#departures", label: "Aliikai's 2027 dates" },
+        { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#dates", label: "Aliikai's 2027 dates" },
         { name: "A private charter", body: "Take the whole yacht for your family or group, and draw the route yourself. From three nights in Komodo, seven in Raja Ampat.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
         { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "#stays", label: "The Bali stays" },
       ],
@@ -234,7 +234,7 @@ export const GUIDES: Record<string, Guide> = {
       intro: "Three ways in, from easiest to most yours.",
       options: [
         { name: "The 10 Day Raja Ampat North, aboard Aliikai", body: "The voyage James sailed: Sorong round trip through Kri, the Passage, Penemu, Wayag, Wofoh, Arborek, Mansuar and Batanta. 2027 sailings in February, November and December, from US$7,650 per person.", href: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", label: "See the voyage" },
-        { name: "A shorter or southern voyage", body: "Seven-night sailings through the north and centre, or south to Misool, from January to April and in December.", href: "/voyages/ships/aliikai#departures", label: "All 2027 dates" },
+        { name: "A shorter or southern voyage", body: "Seven-night sailings through the north and centre, or south to Misool, from January to April and in December.", href: "/voyages/ships/aliikai#dates", label: "All 2027 dates" },
         { name: "The whole yacht", body: "Charter Aliikai for your family or group, minimum seven nights in Raja Ampat, and choose your own anchorages.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
       ],
     },
@@ -306,7 +306,7 @@ export const GUIDES: Record<string, Guide> = {
       intro: "By boat from Labuan Bajo. The question is how long, and whose boat.",
       options: [
         { name: "The 5 Day Komodo Island, aboard Aliikai", body: "Four nights: Sebayur, Gili Lawa, Manta Point, Padar, Pink Beach, Rinca and Kalong. 2027 sailings on 15 and 22 September, from US$3,400 per person.", href: "/voyages/komodo/aliikai-5-day-komodo-island", label: "See the voyage" },
-        { name: "Three, five or six nights", body: "Aliikai sails Komodo from late May to September on voyages of three to six nights, plus two whale shark voyages in July.", href: "/voyages/ships/aliikai#departures", label: "All 2027 dates" },
+        { name: "Three, five or six nights", body: "Aliikai sails Komodo from late May to September on voyages of three to six nights, plus two whale shark voyages in July.", href: "/voyages/ships/aliikai#dates", label: "All 2027 dates" },
         { name: "The whole yacht", body: "Charter Aliikai for your family or group, minimum three nights in Komodo.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
       ],
     },

@@ -34,7 +34,7 @@ export default function EFStory({ name, frames, id = "story" }: { name: string; 
   const { arrival, interior, human, night } = frames;
   if (!arrival && !interior && !human && !night) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8" aria-labelledby={`${id}-heading`}>
       <p className="ledger-eyebrow ef-eyebrow">The photographic story</p>
       <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">{name}, in Four Frames</h2>
       <div className="mt-8 grid gap-5 md:grid-cols-12 md:grid-rows-[auto_auto]">

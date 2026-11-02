@@ -63,7 +63,7 @@ export default function ForAdvisorsPage() {
             </div>
           </section>
 
-          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
+          <section id="terms" className="mt-16 md:mt-24 bg-coast-deep text-paper p-6 md:p-10 grid lg:grid-cols-[1fr_1.2fr] gap-8" aria-labelledby="terms-heading">
             <div>
               <p className="ledger-eyebrow !text-coast-light">The terms, filed plainly</p>
               <h2 id="terms-heading" className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight mt-2">The Shared Commission Split</h2>
@@ -80,7 +80,7 @@ export default function ForAdvisorsPage() {
           </section>
 
           {/* The Desk (Stage 5, 31 Oct 2026): what an advisor of the house works with, and the door to it. */}
-          <section id="desk" className="mt-16 md:mt-24 ledger-paper p-6 md:p-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="desk-heading">
+          <section id="desk" className="mt-16 md:mt-24 ledger-paper p-6 md:p-10" aria-labelledby="desk-heading">
             <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-start">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">The Desk</p>

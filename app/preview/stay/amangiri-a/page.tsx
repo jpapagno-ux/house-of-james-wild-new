@@ -61,7 +61,7 @@ export default function AmangiriMockA() {
             </div>
             <div><EFSignals ef={ef} compact id="glance" /></div>
           </OpenRow>
-          <section id="place" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-label="The place">
+          <section id="place" className="mt-16 md:mt-24" aria-label="The place">
             {chart && <LocationBlock chart={chart} name={NAME} pin={COORDS} heading="Southern Utah" rows={[["Airport", "Page Municipal (PGA), about 25 minutes by road"], ["Also", "St George or Flagstaff about 2.5 h; Phoenix or Las Vegas about 4.5 h"]]} note="Transfer times as stated by the property." mark={<Roundel volume="stays" text={roundelText(NAME, COORDS, VOLUME_STYLES.stays.roman)} size={120} />} />}
           </section>
           <RoomsLedger id="rooms" eyebrow="The stay" title="Where You'll Sleep" rooms={d.rooms} unit="suite" />
@@ -69,7 +69,7 @@ export default function AmangiriMockA() {
           <ImageAccordion id="experiences" eyebrow="What you'll do" title="What the Place Allows" icon="mountain-sun" items={d.days} start={0} />
           <WhoItSuits name={NAME} bestFor={ef.whoItSuits} lessIdealFor={ef.whoItMayNotSuit} />
           {ef.worthAnotherNight && <WorthAnotherNight copy={ef.worthAnotherNight} />}
-          <div id="questions" className="scroll-mt-32"><FaqBlock faqs={d.faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
+          <div id="questions" className=""><FaqBlock faqs={d.faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
           <ContinueTheJourney pathways={pw ? [pw.primary, ...pw.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={[]} compassHref="/compass" hostHref={null} />
           <TalkToUs name={NAME} planHref={d.planHref} />
           <PlanBand place={NAME} compassHref="/compass" where={{ regionSlug: "usa-canada", volume: "stays" }} />

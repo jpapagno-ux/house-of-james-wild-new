@@ -266,3 +266,20 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-needle { transform-box: view-box; transform-origin: 50% 50%; animation: jw-needle 7s ease-in-out infinite; }
 a:hover .jw-needle { animation-duration: 1.6s; }
 @media (prefers-reduced-motion: reduce) { .jw-needle { animation: none; } }
+
+/* Atlases with the ship and route picker (components/journey/AtlasPicker, James 2 Nov 2026):
+   the engine's stacked route buttons step aside, and play, pause, speed and the day buttons sit
+   on one compact row in sentence case, never letterspaced capitals. */
+.jw-atlas .jwc .ctrlbar .routes { display: none !important; }
+.jw-atlas .jwc .ctrlbar { flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 8px 14px; padding-top: 8px; padding-bottom: 8px; }
+.jw-atlas .jwc .ctrlbar .ctrlrow { flex-wrap: nowrap; gap: 10px; flex: none; }
+.jw-atlas .jwc .ctrlbar .legend { display: none; }
+.jw-atlas .jwc .ctrlbar .days { flex: 1 1 auto; min-width: 0; padding-bottom: 0; }
+.jw-atlas .jwc .ctrlbar button { letter-spacing: normal !important; text-transform: lowercase; font-size: 13px; min-height: 36px; }
+.jw-atlas .jwc .ctrlbar button::first-letter { text-transform: uppercase; }
+.jw-atlas .jwc .overlay .ovk, .jw-atlas .jwc .readout .row1 { letter-spacing: .04em !important; }
+/* The no-script list of every route: folded on phones; open on wide screens where supported. */
+@media (min-width: 768px) {
+  .jw-atlas-list > summary { display: none !important; }
+  .jw-atlas-list::details-content { content-visibility: visible; display: block; height: auto; }
+}

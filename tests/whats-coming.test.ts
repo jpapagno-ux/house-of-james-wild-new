@@ -2,7 +2,7 @@
 // oldest", the departures-board labels and the countdown. A fixed "today" keeps results stable.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { boardStatus, countLine, countdown, daysTo, filterComing, groupByYear, parseQuery, sortComing, toQuery, type ViewItem } from "../lib/content/coming-view.ts";
+import { groupByRegionView, regionCounts, boardStatus, countLine, countdown, daysTo, filterComing, groupByYear, parseQuery, sortComing, toQuery, type ViewItem } from "../lib/content/coming-view.ts";
 import data from "../lib/content/whats-coming.json" with { type: "json" };
 
 const ON = "2026-11-02";
@@ -59,12 +59,27 @@ test("countdown only for exact dates", () => {
 });
 
 test("query string round trip; defaults left out; junk ignored", () => {
-  const s = parseQuery("?country=botswana&year=2027&sort=latest&status=rebuilding&q=delta");
-  assert.deepEqual(s, { q: "delta", country: "botswana", year: "2027", status: "rebuilding", sort: "latest" });
-  assert.equal(toQuery(s), "?q=delta&country=botswana&year=2027&status=rebuilding&sort=latest");
+  const s = parseQuery("?country=botswana&year=2027&sort=latest&status=rebuilding&q=delta&region=africa&group=region");
+  assert.deepEqual(s, { q: "delta", region: "africa", country: "botswana", year: "2027", status: "rebuilding", sort: "latest", group: "region" });
+  assert.equal(toQuery(s), "?q=delta&region=africa&country=botswana&year=2027&status=rebuilding&sort=latest&group=region");
   assert.equal(toQuery(parseQuery("?sort=bogus&status=x")), "");
 });
 
 test("no em or en dashes in What's Coming copy", () => {
   for (const c of data.coming) for (const v of [c.note, c.tagline, c.name]) assert.ok(!/[–—]/.test(v ?? ""), `${c.slug}: ${v}`);
+});
+
+test("region: grouped in the house's region order, filter by region", () => {
+  const regions = [{ slug: "africa", name: "Africa" }, { slug: "asia", name: "Asia" }];
+  const g = groupByRegionView(sortComing(items, "soonest"), regions);
+  assert.deepEqual(g.map((x) => [x.label, x.items.length]), [["Africa", 2], ["Asia", 3]]);
+  assert.deepEqual(regionCounts(items, regions).map((r) => r.count), [2, 3]);
+  assert.equal(filterComing(items, { q: "", region: "asia", country: null, year: null, status: null }).length, 3);
+});
+
+test("Kahavadi Chiang Rai (opened 1 July 2026) stays hidden by the date rule", async () => {
+  const { activeOnly } = await import("../lib/dates.ts");
+  const live = activeOnly(data.coming, (c) => c.date, ON).map((c) => c.slug);
+  assert.ok(!live.includes("kahavadi-chiang-rai"));
+  assert.equal(live.length, 5);
 });

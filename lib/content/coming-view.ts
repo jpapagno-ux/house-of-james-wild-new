@@ -9,9 +9,10 @@ export type ViewItem = {
   status: string; date: string | null;
 };
 export type Sort = "soonest" | "latest" | "filed";
-export type ViewState = { q: string; country: string | null; year: string | null; status: ViewStatus | null; sort: Sort };
+export type Group = "year" | "region";
+export type ViewState = { q: string; region: string | null; country: string | null; year: string | null; status: ViewStatus | null; sort: Sort; group: Group };
 
-export const DEFAULT_STATE: ViewState = { q: "", country: null, year: null, status: null, sort: "soonest" };
+export const DEFAULT_STATE: ViewState = { q: "", region: null, country: null, year: null, status: null, sort: "soonest", group: "year" };
 export const SORTS: { key: Sort; label: string }[] = [
   { key: "soonest", label: "Opening soonest" },
   { key: "latest", label: "Latest first" },
@@ -44,9 +45,10 @@ export const yearLabel = (key: string): string => (key === TBC ? "Date to come" 
 
 const fold = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
-export function filterComing<T extends ViewItem>(items: readonly T[], s: Pick<ViewState, "q" | "country" | "year" | "status">): T[] {
+export function filterComing<T extends ViewItem>(items: readonly T[], s: Partial<Pick<ViewState, "region">> & Pick<ViewState, "q" | "country" | "year" | "status">): T[] {
   const words = fold(s.q.trim()).split(/\s+/).filter(Boolean);
   return items.filter((c) => {
+    if (s.region && c.regionSlug !== s.region) return false;
     if (s.country && c.countrySlug !== s.country) return false;
     if (s.year && yearKey(c) !== s.year) return false;
     if (s.status && viewStatus(c.status) !== s.status) return false;
@@ -83,6 +85,25 @@ export function groupByYear<T extends ViewItem>(items: readonly T[], sort: Sort)
     if (g) g.items.push(c); else out.push({ key: k, label: yearLabel(k), items: [c] });
   }
   return out;
+}
+
+/**
+ * Region groups (PR #201, James 2 Nov 2026: "the page scales by region"): one group per region in the
+ * order the house lists regions, entries inside each in the order the sort gave them.
+ */
+export function groupByRegionView<T extends ViewItem>(items: readonly T[], regions: readonly { slug: string; name: string }[]): { key: string; label: string; items: T[] }[] {
+  const order = new Map(regions.map((r, i) => [r.slug, i]));
+  const out: { key: string; label: string; items: T[] }[] = [];
+  for (const c of items) {
+    const k = c.regionSlug ?? "elsewhere";
+    const g = out.find((x) => x.key === k);
+    if (g) g.items.push(c); else out.push({ key: k, label: regions.find((r) => r.slug === k)?.name ?? "Elsewhere", items: [c] });
+  }
+  return out.sort((a, b) => (order.get(a.key) ?? 99) - (order.get(b.key) ?? 99));
+}
+/** Region chips with counts, in the house's region order. */
+export function regionCounts(items: readonly ViewItem[], regions: readonly { slug: string; name: string }[]): { slug: string; name: string; count: number }[] {
+  return groupByRegionView(items, regions).map((g) => ({ slug: g.key, name: g.label, count: g.items.length }));
 }
 
 /** Whole days from `today` to an exact date (YYYY-MM-DD); null for a month, a year or no date. */
@@ -138,27 +159,31 @@ export function yearCounts(items: readonly ViewItem[]): { key: string; label: st
 }
 
 const SORT_KEYS = new Set<Sort>(["soonest", "latest", "filed"]);
-/** ?q=&country=&year=&status=&sort= into a view state; unknown values fall back to the default. */
+/** ?q=&region=&country=&year=&status=&sort=&group= into a view state; unknown values fall back to the default. */
 export function parseQuery(search: string): ViewState {
   const p = new URLSearchParams(search);
   const sort = p.get("sort") as Sort | null;
   const status = p.get("status");
   return {
     q: (p.get("q") ?? "").slice(0, 80),
+    region: p.get("region") || null,
     country: p.get("country") || null,
     year: p.get("year") || null,
     status: status === "opening" || status === "rebuilding" ? status : null,
     sort: sort && SORT_KEYS.has(sort) ? sort : "soonest",
+    group: p.get("group") === "region" ? "region" : "year",
   };
 }
 /** The query string for a state, default values left out ("" for the default view). */
 export function toQuery(s: ViewState): string {
   const p = new URLSearchParams();
   if (s.q.trim()) p.set("q", s.q.trim());
+  if (s.region) p.set("region", s.region);
   if (s.country) p.set("country", s.country);
   if (s.year) p.set("year", s.year);
   if (s.status) p.set("status", s.status);
   if (s.sort !== "soonest") p.set("sort", s.sort);
+  if (s.group !== "year") p.set("group", s.group);
   const q = p.toString();
   return q ? `?${q}` : "";
 }

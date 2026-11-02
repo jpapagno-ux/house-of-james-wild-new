@@ -12,6 +12,9 @@ import { today } from "@/lib/dates";
 import { DEEP_SEA } from "@/lib/palette";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { faqPage, graph, ids } from "@/lib/schema";
+import REGIONS from "@/lib/content/regions.json";
+
+const REGION_LIST = (REGIONS as { regions: { slug: string; name: string }[] }).regions.map((r) => ({ slug: r.slug, name: r.name }));
 
 // /whats-coming: lodges announced, opening or being rebuilt, filed before they open (James, 31 Oct
 // 2026), redesigned 2 Nov 2026 ("designed in the same style but unique"): a cinematic hero, a
@@ -24,6 +27,7 @@ const lower = (x: string) => x.charAt(0).toLowerCase() + x.slice(1);
 const QUESTION = "What new luxury lodges and hotels open in 2026 and 2027?";
 
 function answerFor(items: Coming[]): string {
+  if (!items.length) return "Nothing is pencilled at James Wild & Co right now. New and rebuilt lodges are filed here from the brands' own announcements, pencilled until James has stayed; the house can hold a place before opening.";
   const opening = items.filter((c) => viewStatus(c.status) === "opening");
   const back = items.filter((c) => viewStatus(c.status) === "rebuilding");
   const say = (c: Coming) => `${c.name} in ${c.country ?? "the Ledger"} (${lower(statusLine(c))})`;
@@ -38,7 +42,7 @@ export function generateMetadata() {
   const items = sortComing(comingOn(today()), "soonest");
   return buildMetadata({
     title: "What's Coming: New Luxury Lodges and Hotels, 2026 to 2027",
-    description: `${countLine(items)}: ${items.slice(0, 3).map((c) => c.name).join(", ")} and more, filed before they open. Search by country, sort by date.`,
+    description: items.length ? `${countLine(items)}: ${items.slice(0, 3).map((c) => c.name).join(", ")} and more, filed before they open. Search by country, sort by date.` : "New and rebuilt lodges, filed before they open. The house holds a place; James vets on opening.",
     path: PATH, // canonical ignores ?country=&year=&sort=
     image: (() => { const h = items.map(comingHero).find(Boolean); return h ? { url: h.src, alt: h.alt } : undefined; })(),
   });
@@ -74,12 +78,14 @@ export default function WhatsComingPage() {
     <>
       <SiteHeader overlay />
       <main id="main">
-        <ComingHero slides={slides} title="What's Coming" line={countLine(items)}>
+        <ComingHero slides={slides} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
           <a href="#the-board" className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink self-start md:self-end">See every opening</a>
         </ComingHero>
         <div id="the-board"><ComingTicker items={items} label="What's coming" more={false} /></div>
 
-        <ComingExplorer items={explorer} />
+        {items.length ? <ComingExplorer items={explorer} regions={REGION_LIST} /> : (
+          <p className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 ledger-display italic text-[1.8rem]">Nothing is pencilled right now. New openings appear here as the brands announce them.</p>
+        )}
 
         <section className="bg-paper-card mt-10" aria-labelledby="faq-heading">
           <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-16 md:py-24 grid lg:grid-cols-12 gap-10">

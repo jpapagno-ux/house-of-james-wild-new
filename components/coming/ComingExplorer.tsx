@@ -6,8 +6,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import ComingStamp from "./ComingStamp";
 import s from "./coming.module.css";
 import {
-  DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByYear, parseQuery, sortComing, toQuery, yearCounts,
-  type Sort, type ViewItem, type ViewState,
+  DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByRegionView, groupByYear, parseQuery, regionCounts, sortComing, toQuery, yearCounts,
+  type Group, type Sort, type ViewItem, type ViewState,
 } from "@/lib/content/coming-view";
 
 export type ExplorerItem = ViewItem & {
@@ -19,9 +19,9 @@ export type ExplorerItem = ViewItem & {
 
 // The explorer under the hero: search, country, year and status chips, three sorts, and the timeline.
 // The server renders the default view (every entry, soonest first) so all of it is in the HTML; the
-// state lives in the query string (?q=&country=&year=&status=&sort=) so a filtered view can be shared
+// state lives in the query string (?q=&region=&country=&year=&status=&sort=&group=) so a filtered view can be shared
 // and the back button walks through it. The canonical URL stays /whats-coming.
-export default function ComingExplorer({ items }: { items: ExplorerItem[] }) {
+export default function ComingExplorer({ items, regions }: { items: ExplorerItem[]; regions: { slug: string; name: string }[] }) {
   const [st, setSt] = useState<ViewState>(DEFAULT_STATE);
 
   useEffect(() => {
@@ -42,10 +42,13 @@ export default function ComingExplorer({ items }: { items: ExplorerItem[] }) {
   }, []);
 
   const shown = useMemo(() => sortComing(filterComing(items, st), st.sort), [items, st]);
-  const groups = useMemo(() => groupByYear(shown, st.sort), [shown, st.sort]);
-  const countries = useMemo(() => countryCounts(items), [items]);
+  const groups = useMemo(() => (st.group === "region" ? groupByRegionView(shown, regions) : groupByYear(shown, st.sort)), [shown, st.sort, st.group, regions]);
+  const regionChips = useMemo(() => regionCounts(items, regions), [items, regions]);
+  // Country chips narrow to the chosen region.
+  const countries = useMemo(() => countryCounts(st.region ? items.filter((c) => c.regionSlug === st.region) : items), [items, st.region]);
   const years = useMemo(() => yearCounts(items), [items]);
-  const filtered = !!(st.q.trim() || st.country || st.year || st.status);
+  const filtered = !!(st.q.trim() || st.region || st.country || st.year || st.status);
+  const clear = { q: "", region: null, country: null, year: null, status: null };
   let n = 0;
 
   const chip = (on: boolean) =>
@@ -69,10 +72,23 @@ export default function ComingExplorer({ items }: { items: ExplorerItem[] }) {
                 {SORTS.map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
               </select>
             </label>
+            <div role="group" aria-label="Group by" className="shrink-0 hidden sm:flex h-10 border ledger-border bg-white">
+              {(["year", "region"] as Group[]).map((g) => { const on = st.group === g; return (
+                <button key={g} type="button" aria-pressed={on} onClick={() => update({ group: g })} className={`px-3 text-[12.5px] ${on ? "text-white" : "text-ink hover:text-[color:var(--jw-action)]"}`} style={on ? { background: "var(--jw-action)" } : undefined}>By {g}</button>
+              ); })}
+            </div>
             <p className="hidden lg:block ml-auto font-mono text-[11px] tracking-[0.16em] uppercase ledger-muted" aria-live="polite">{filtered ? `${shown.length} of ${items.length} shown` : `All ${items.length} shown`}</p>
           </div>
           <div className={`${s.chips} mt-3 -mx-5 px-5 md:mx-0 md:px-0 flex items-center gap-2 overflow-x-auto`}>
-            <button type="button" className={chip(!filtered)} style={onStyle(!filtered)} aria-pressed={!filtered} onClick={() => update({ q: "", country: null, year: null, status: null })}>All</button>
+            {(["year", "region"] as Group[]).map((g) => { const on = st.group === g; return (
+              <button key={g} type="button" className={`sm:hidden ${chip(on)}`} style={onStyle(on)} aria-pressed={on} onClick={() => update({ group: g })}>By {g}</button>
+            ); })}
+            <span className="sm:hidden shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
+            <button type="button" className={chip(!filtered)} style={onStyle(!filtered)} aria-pressed={!filtered} onClick={() => update(clear)}>All</button>
+            {regionChips.length > 1 && <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />}
+            {regionChips.length > 1 && regionChips.map((r) => { const on = st.region === r.slug; return (
+              <button key={r.slug} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ region: on ? null : r.slug, country: null })}><span className="uppercase tracking-[0.12em] text-[11px]">{r.name}</span><span className={`font-mono text-[10.5px] ${on ? "text-white/80" : "text-ink/50"}`}>{r.count}</span></button>
+            ); })}
             <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
             {countries.map((c) => { const on = st.country === c.slug; return (
               <button key={c.slug} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ country: on ? null : c.slug })}>{c.name}<span className={`font-mono text-[10.5px] ${on ? "text-white/80" : "text-ink/50"}`}>{c.count}</span></button>
@@ -96,7 +112,7 @@ export default function ComingExplorer({ items }: { items: ExplorerItem[] }) {
             <p className="ledger-display italic text-[2rem] md:text-[2.6rem] leading-tight">Nothing on the horizon matches that yet.</p>
             <p className="mt-4 text-[16px] ledger-muted">Try another country or year, or clear the filters to see everything filed.</p>
             <div className="mt-8 flex justify-center gap-3 flex-wrap">
-              <button type="button" className="ledger-btn ledger-btn--solid" onClick={() => update({ q: "", country: null, year: null, status: null })}>Clear the filters</button>
+              <button type="button" className="ledger-btn ledger-btn--solid" onClick={() => update(clear)}>Clear the filters</button>
               <Link href="/plan?from=whats-coming" className="ledger-btn">Ask James</Link>
             </div>
           </div>
@@ -104,8 +120,8 @@ export default function ComingExplorer({ items }: { items: ExplorerItem[] }) {
         {groups.map((g) => (
           <section key={g.key} aria-labelledby={`year-${g.key}`} className="pt-16 md:pt-24">
             <header className="flex items-end gap-5 md:gap-8 border-b ledger-rule pb-4 md:pb-6">
-              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${g.key === "tbc" || g.key === "all" ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`} style={{ color: "var(--jw-action)" }}>{g.label}</h2>
-              <p className="pb-2 md:pb-5 font-mono text-[11px] md:text-[12px] tracking-[0.2em] uppercase ledger-muted">{g.items.length} {g.items.length === 1 ? "entry" : "entries"}</p>
+              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${!/^\d{4}$/.test(g.key) ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`} style={{ color: "var(--jw-action)" }}>{g.label}</h2>
+              <p className="pb-2 md:pb-5 font-mono text-[11px] md:text-[12px] tracking-[0.2em] uppercase ledger-muted">{g.items.length} {g.items.length === 1 ? "opening" : "openings"}</p>
             </header>
             <ol className="mt-10 md:mt-16 space-y-20 md:space-y-32">
               {g.items.map((c) => { const flip = n++ % 2 === 1; return <li key={c.slug}><Feature c={c} flip={flip} /></li>; })}

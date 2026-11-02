@@ -95,16 +95,16 @@ export function AdvisorStrip({ place, countrySlug, regionSlug, volume, ledgerId,
         <ul className="grid sm:grid-cols-3 gap-4">
           {shown.map((a) => {
             const c = advisorCounts(a);
-            const here = a.desk!.entries.filter((e) => (ledgerId ? e.ledgerId === ledgerId : countrySlug ? e.countrySlug === countrySlug : regionSlug ? e.regionSlug === regionSlug : volume ? e.volume === volume : true));
+            const here = (a.desk?.entries ?? []).filter((e) => (ledgerId ? e.ledgerId === ledgerId : countrySlug ? e.countrySlug === countrySlug : regionSlug ? e.regionSlug === regionSlug : volume ? e.volume === volume : true));
             const mark = here.find((e) => e.theirs)?.theirs ?? null;
-            const note = here.find((e) => e.note)?.note ?? a.desk!.line;
+            const note = here.find((e) => e.note)?.note ?? (a.desk?.line ?? a.line ?? "");
             return (
               <li key={a.slug} className="bg-paper border ledger-border flex flex-col">
                 <div className="p-4 flex items-center gap-3 border-b ledger-border">
                   <Headshot a={a} size={48} />
                   <div className="min-w-0">
                     <p className="ledger-display text-[18px] leading-tight truncate">{a.name}</p>
-                    <p className="font-mono text-[10.5px] tracking-[0.1em] ledger-muted mt-0.5">{a.desk!.adv}{a.sample ? " · stand-in" : ""}</p>
+                    <p className="font-mono text-[10.5px] tracking-[0.1em] ledger-muted mt-0.5">{(a.desk?.adv ?? a.ledgerId)}{a.sample ? " · stand-in" : ""}</p>
                   </div>
                 </div>
                 <div className="p-4 flex flex-col gap-3 flex-1">
@@ -142,13 +142,13 @@ export function AdvisorScroll({ regionSlug, volume, title }: { regionSlug?: stri
       </div>
       <ul className="mt-6 flex gap-4 overflow-x-auto pb-3 -mx-5 px-5 md:mx-0 md:px-0 snap-x">
         {advisors.map((a) => {
-          const es = a.desk!.entries.filter((e) => (regionSlug ? e.regionSlug === regionSlug : true) && (volume ? e.volume === volume : true));
+          const es = (a.desk?.entries ?? []).filter((e) => (regionSlug ? e.regionSlug === regionSlug : true) && (volume ? e.volume === volume : true));
           const places = Array.from(new Set(es.map((e) => e.place.split(" · ").pop()))).slice(0, 3).join(" · ");
           return (
             <li key={a.slug} className="snap-start shrink-0 w-[260px] bg-paper border ledger-border p-4 flex flex-col gap-3">
               <div className="flex items-center gap-3"><Headshot a={a} size={56} /><div className="min-w-0"><p className="ledger-display text-[18px] leading-tight">{a.name}</p><p className="ledger-eyebrow !text-[9.5px] mt-0.5 truncate">{a.role.replace(" · stand-in", "")}{a.sample ? " · stand-in" : ""}</p></div></div>
               <p className="text-[13.5px] ledger-muted leading-snug">{places}</p>
-              <ul className="flex flex-wrap gap-1.5">{a.desk!.volumes.map((v) => <li key={v}><Link href={VOLUME_HREF[v]} className="text-[11px] border ledger-border px-2 py-0.5 hover:ledger-crimson">{VOLUME_LABEL[v]}</Link></li>)}</ul>
+              <ul className="flex flex-wrap gap-1.5">{(a.desk?.volumes ?? a.dna?.volumes ?? []).map((v) => <li key={v}><Link href={VOLUME_HREF[v]} className="text-[11px] border ledger-border px-2 py-0.5 hover:ledger-crimson">{VOLUME_LABEL[v]}</Link></li>)}</ul>
               <div className="mt-auto pt-2 flex items-center justify-between">
                 {a.profileHref && <Link href={a.profileHref} className="text-[14px] hover:ledger-crimson">The desk →</Link>}
                 <Link href={`/plan?advisor=${a.slug}`} className="ledger-btn-ghost">Plan</Link>

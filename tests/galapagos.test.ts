@@ -53,3 +53,17 @@ test("Horizon's three dated deals are Final Calls that stay live until their dep
     assert.equal(activeOnly([o], offerLastDay, "2027-07-07").length, 0);
   }
 });
+
+test("the Galápagos is a place inside Ecuador & Galápagos with its two stays, the official fees and six FAQs", async () => {
+  const { GUIDES, placeGuideForStay } = await import("../lib/content/guides.ts");
+  const g = GUIDES.galapagos;
+  assert.equal(g.parent, "ecuador-galapagos");
+  assert.equal(g.path, "/destinations/south-america/ecuador-galapagos/galapagos");
+  assert.deepEqual(g.stays, ["galapagos-safari-camp", "pikaia-lodge"]);
+  assert.equal(placeGuideForStay("pikaia-lodge")?.slug, "galapagos");
+  const facts = JSON.stringify(g.facts);
+  for (const x of ["US$200", "US$100", "US$20", "1978"]) assert.ok(facts.includes(x), x);
+  assert.equal(g.faqs.length, 6);
+  assert.ok(g.sources.every((s) => /unesco\.org|galapagos\.gob\.ec|ecuador\.travel/.test(s.url)), "official sources only");
+  assert.doesNotMatch(JSON.stringify(g), /[–—]/);
+});

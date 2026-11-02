@@ -134,6 +134,7 @@ export const BUILT: string[] = [
   "/destinations/asia/indonesia/komodo",
   "/destinations/south-america/chile/rapa-nui",
   "/destinations/south-america/chile/atacama",
+  "/destinations/south-america/ecuador-galapagos/galapagos", // a place inside Ecuador & Galápagos (James approved, 2 Nov 2026)
   "/destinations/south-america/chile/patagonia",
   "/destinations/europe/slovenia/ljubljana",
   "/destinations/europe/slovenia/logar-valley",

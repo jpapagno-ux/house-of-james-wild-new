@@ -1,6 +1,7 @@
 import VoyageHub from "@/components/ships/VoyageHub";
 import ShipCard from "@/components/ships/ShipCard";
 import FleetBrowser from "@/components/ships/FleetBrowser";
+import IslandStays from "@/components/ships/IslandStays";
 import { galapagosFleet, watersHub } from "@/lib/content/ships/hubs";
 import { partnerBySlug, partnerPath } from "@/lib/content/partners";
 import { PATHWAY_LIST } from "@/lib/pathways";
@@ -23,5 +24,5 @@ export default function Page() {
       items={F.items.map((i) => ({ ...i, node: <ShipCard c={H.cards.find((c) => c.slug === i.slug)!} /> }))}
     />
   );
-  return <VoyageHub {...H} ships={ships} />;
+  return <VoyageHub {...H} ships={ships} after={<IslandStays />} />;
 }

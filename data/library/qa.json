@@ -14,6 +14,16 @@
    "released": false
   },
   {
+   "stay_id": "6ae86a86abf66f88c2c86516",
+   "slug": "acro-suites",
+   "name": "Acro Suites",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b5",
    "slug": "aguas-claras",
    "name": "Aguas Claras",
@@ -333,6 +343,14 @@
    "slug": "arijiju-laikipia",
    "name": "Arijiju Private",
    "country": "Kenya",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c8651a",
+   "slug": "aristi-mountain-resort",
+   "name": "Aristi Mountain Resort & Villas",
+   "country": "Greece",
    "missing": [],
    "released": true
   },
@@ -1053,6 +1071,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae86a86abf66f88c2c86514",
+   "slug": "domes-white-coast-milos",
+   "name": "Domes White Coast Milos",
+   "country": "Greece",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8f2",
    "slug": "dukes-camp-okavango",
    "name": "Duke's Camp Okavango",
@@ -1271,6 +1297,14 @@
    "slug": "etosha-mountain-lodge",
    "name": "Etosha Mountain Lodge",
    "country": "Namibia",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c86511",
+   "slug": "eumelia",
+   "name": "Eumelia",
+   "country": "Greece",
    "missing": [],
    "released": true
   },
@@ -1550,6 +1584,16 @@
    "name": "Grootbos Private Nature Reserve",
    "country": "South Africa",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c86513",
+   "slug": "gundari",
+   "name": "Gundari",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1971,6 +2015,14 @@
    "released": true
   },
   {
+   "stay_id": "6ae86a86abf66f88c2c86515",
+   "slug": "kapari-natural-resort",
+   "name": "Kapari Natural Resort",
+   "country": "Greece",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff92d",
    "slug": "kappa-senses",
    "name": "Kappa Senses",
@@ -1984,14 +2036,11 @@
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff92e",
-   "slug": "katikies-santorina",
-   "name": "Katikies Villa Santorini",
+   "slug": "katikies-santorini",
+   "name": "Katikies Santorini",
    "country": "Greece",
-   "missing": [
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff92f",
@@ -2066,6 +2115,14 @@
     "stay_copy"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c86510",
+   "slug": "kinsterna-hotel",
+   "name": "Kinsterna Hotel",
+   "country": "Greece",
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff935",
@@ -2595,6 +2652,26 @@
    "released": false
   },
   {
+   "stay_id": "6ae86a86abf66f88c2c86518",
+   "slug": "mediterraneo-kastellorizo",
+   "name": "Hotel Mediterraneo Kastellorizo",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c86517",
+   "slug": "melenos-lindos",
+   "name": "Melenos Lindos",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff955",
    "slug": "meno-a-kwena-camp",
    "name": "Meno A Kwena Camp",
@@ -2857,6 +2934,16 @@
    "released": true
   },
   {
+   "stay_id": "6ae86a86abf66f88c2c86519",
+   "slug": "nobelos-seaside-lodge",
+   "name": "Nobelos Seaside Lodge",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff96e",
    "slug": "nomad-tanzania-lamai",
    "name": "Nomad Tanzania Lamai Serengeti",
@@ -2978,11 +3065,10 @@
   {
    "stay_id": "6a89a1c1068f9bd5581d420f",
    "slug": "one-only-kea-island",
-   "name": "One & Only Kea Island",
+   "name": "One&Only Kéa Island",
    "country": "Greece",
    "missing": [
-    "hero_photo",
-    "stay_copy",
+    "name_check",
     "coordinates"
    ],
    "released": false
@@ -3963,6 +4049,14 @@
    "slug": "tahi",
    "name": "Tahi New Zealand",
    "country": "New Zealand",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae86a86abf66f88c2c86512",
+   "slug": "tainaron-blue-retreat",
+   "name": "Tainaron Blue Retreat",
+   "country": "Greece",
    "missing": [],
    "released": true
   },

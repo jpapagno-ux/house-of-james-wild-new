@@ -37,6 +37,43 @@
    ]
   },
   {
+   "slug": "crete",
+   "name": "Crete",
+   "ledgerId": "DST-2026-000102",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "Greece's largest island",
+   "stays": [
+    "acro-suites"
+   ]
+  },
+  {
+   "slug": "cyclades",
+   "name": "Cyclades",
+   "ledgerId": "DST-2026-000103",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "Folegandros, Milos, Santorini and Kea, Greece",
+   "stays": [
+    "domes-white-coast-milos",
+    "gundari",
+    "kapari-natural-resort",
+    "katikies-santorini"
+   ]
+  },
+  {
+   "slug": "dodecanese",
+   "name": "Dodecanese",
+   "ledgerId": "DST-2026-000101",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "Rhodes and Kastelorizo, Greece",
+   "stays": [
+    "mediterraneo-kastellorizo",
+    "melenos-lindos"
+   ]
+  },
+  {
    "slug": "douro-valley",
    "name": "Douro Valley",
    "ledgerId": "DST-2026-000097",
@@ -45,6 +82,17 @@
    "subtitle": "The Alto Douro wine region, Portugal",
    "stays": [
     "six-senses-douro-valley"
+   ]
+  },
+  {
+   "slug": "ionian-islands",
+   "name": "Ionian Islands",
+   "ledgerId": "DST-2026-000100",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "Zakynthos and the Ionian, Greece",
+   "stays": [
+    "nobelos-seaside-lodge"
    ]
   },
   {
@@ -85,6 +133,19 @@
    ]
   },
   {
+   "slug": "peloponnese",
+   "name": "Peloponnese",
+   "ledgerId": "DST-2026-000104",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "Monemvasia, the Mani and Laconia, Greece",
+   "stays": [
+    "eumelia",
+    "kinsterna-hotel",
+    "tainaron-blue-retreat"
+   ]
+  },
+  {
    "slug": "rapa-nui",
    "name": "Rapa Nui",
    "ledgerId": "DST-2026-000088",
@@ -105,6 +166,17 @@
    "subtitle": "Uyuni and the Altiplano, Bolivia",
    "stays": [
     "explora-at-uyuni-flats"
+   ]
+  },
+  {
+   "slug": "zagori",
+   "name": "Zagori",
+   "ledgerId": "DST-2026-000099",
+   "parentSlug": "greece",
+   "regionSlug": "europe",
+   "subtitle": "The Pindus mountains, Epirus, Greece",
+   "stays": [
+    "aristi-mountain-resort"
    ]
   }
  ]

@@ -121,7 +121,7 @@ old path,new path,why,old title
 /book/jacks-private-camp,/stays/jacks-private-camp,booking page -> stay page,Book your stay at Jacks Private Camp | Wild Earth Stays
 /book/kaaba-luum-mexico,/stays/kaaba-luum-mexico,booking page -> stay page,Book your stay at Kaaba Luum Mexico | Wild Earth Stays
 /book/kamalaya-koh-samui,/stays/kamalaya-koh-samui,booking page -> stay page,Book your stay at Kamalaya Koh Samui | Wild Earth Stays
-/book/katikies-santorini,/destinations/europe,booking page -> not on the new site yet; region page (greece country page not built yet),Book your stay at Katikies Villa Santorini | Wild Earth Stays
+/book/katikies-santorini,/destinations/europe/greece,booking page -> not on the new site yet; country page,Book your stay at Katikies Villa Santorini | Wild Earth Stays
 /book/khwai-leadwood-camp,/stays/khwai-leadwood-camp,booking page -> stay page,Book your stay at Khwai Leadwood Camp | Wild Earth Stays
 /book/khwai-lediba,/stays/khwai-lediba,booking page -> stay page,Book your stay at Khwai Lediba | Wild Earth Stays
 /book/kichakani-camp,/stays/kichakani-camp,booking page -> stay page,Book your stay at Kichakani Camp | Wild Earth Stays
@@ -368,7 +368,7 @@ old path,new path,why,old title
 /country/fiji,/destinations/oceania/fiji,country page,
 /country/florida,/destinations/usa-canada,region page (florida country page not built yet),
 /country/france,/destinations/europe/france,country page,
-/country/greece,/destinations/europe,region page (greece country page not built yet),
+/country/greece,/destinations/europe/greece,country page,
 /country/hawaii,/destinations/usa-canada/hawaii,country page,
 /country/iceland,/destinations/polar-arctic/iceland,country page,
 /country/indonesia,/destinations/asia/indonesia,country page,
@@ -580,7 +580,7 @@ old path,new path,why,old title
 /property/jao-camp,/stays/jao-camp,stay page,Jao Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/kaaba-luum-mexico,/stays/kaaba-luum-mexico,stay page,Kaaba Luum Mexico | Luxury Stays in Mexico | Wild Earth Stays
 /property/kamalaya-koh-samui,/stays/kamalaya-koh-samui,stay page,Kamalaya Koh Samui | Luxury Stays in Thailand | Wild Earth Stays
-/property/katikies-santorina,/destinations/europe,not on the new site yet; region page (greece country page not built yet),Katikies Villa Santorini | Luxury Stays in Greece | Wild Earth Stays
+/property/katikies-santorina,/destinations/europe/greece,not on the new site yet; country page,Katikies Villa Santorini | Luxury Stays in Greece | Wild Earth Stays
 /property/kayumanis-jimbaran-private-estates,/stays/kayumanis-jimbaran-private-estates,stay page,Kayumanis Jimbaran Private Estates | Luxury Stays in Indonesia | Wild Earth Stays
 /property/kayumanis-nusa-dua,/stays/kayumanis-nusa-dua,stay page,Kayumanis Nusa Dua | Luxury Stays in Indonesia | Wild Earth Stays
 /property/kayumanis-ubud,/stays/kayumanis-ubud,stay page,Kayumanis Ubud | Luxury Stays in Indonesia | Wild Earth Stays

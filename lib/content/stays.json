@@ -1000,6 +1000,105 @@
    "placeSlug": null
   },
   {
+   "slug": "acro-suites",
+   "name": "Acro Suites",
+   "ledgerId": "STY-2026-000572",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A wellbeing resort on the cliffs of Mononaftis Bay, with a yoga shala, a Byzantine-style hammam and an olive-grove restaurant.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616176/wildco/greece/acro-suites/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616177/wildco/greece/acro-suites/resort.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616178/wildco/greece/acro-suites/cave-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616179/wildco/greece/acro-suites/gaia-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616181/wildco/greece/acro-suites/eleonas.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Heraklion (HER)",
+   "airportDirections": "West of Heraklion along the north coast; private transfers from Heraklion airport can be arranged by the hotel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Wave, Wave XL, Loft, Gaia and Cave Suites, most with private pools, and villas from the one-bedroom Sunset Villa to the Grand Summer House for families and groups."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Daily yoga at the Asana Yoga Shala, including beginners",
+     "The Byzantine-style hammam Bath House",
+     "Cretan dinners in the olive grove at Eleonas",
+     "Heraklion and the north coast of Crete"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Restaurants Cremnos, Eleonas and UMI",
+     "CIRCLE Cocktail Commons pool bar",
+     "Spa menu",
+     "Private transfers from Heraklion airport; free parking"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Rocky cliffs above Mononaftis Bay at Agia Pelagia, on the north coast of Crete west of Heraklion, with wide views over the Aegean."
+    },
+    {
+     "title": "People",
+     "body": "Part of the Cretan group Omicron Hotels. Eleonas, the Cretan restaurant, sits in an olive grove at the centre of the resort; Cave Suites are carved into the rock and finished with marble from ancient Festos."
+    },
+    {
+     "title": "Impact",
+     "body": "Not yet documented: the group's sustainability document could not be read, so nothing is claimed here until we have seen it."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "On Mononaftis Bay at Agia Pelagia, west of Heraklion; the hotel arranges private transfers from Heraklion airport.",
+    "signature_experiences": "Daily yoga at the shala, the hammam Bath House, dinner in the olive grove at Eleonas, and a Cave Suite carved into the rock.",
+    "who_its_for": "Couples and friends who want a wellbeing stay in Crete, with yoga every day and a private pool above the sea."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "crete",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "crete"
+  },
+  {
    "slug": "aguas-claras",
    "name": "Aguas Claras",
    "ledgerId": "STY-2026-000006",
@@ -3633,6 +3732,111 @@
     "6ae6974aa6d0fa13bbe23ed1"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "aristi-mountain-resort",
+   "name": "Aristi Mountain Resort & Villas",
+   "ledgerId": "STY-2026-000566",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A stone village resort in the Zagori, above the Vikos Gorge and below the Towers of Astraka, open all year.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616304/wildco/greece/aristi-mountain-resort/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616305/wildco/greece/aristi-mountain-resort/mountains.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616306/wildco/greece/aristi-mountain-resort/resort.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616307/wildco/greece/aristi-mountain-resort/executive-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616308/wildco/greece/aristi-mountain-resort/fireplace.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616309/wildco/greece/aristi-mountain-resort/vikos-gorge.jpg"
+   ],
+   "bestMonths": "Open all year",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "adventure",
+    "family",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 39.933706,
+    "lng": 20.670278
+   },
+   "airport": "Ioannina (IOA)",
+   "airportDirections": "48 km from Ioannina airport; about 140 km from Preveza and about 420 km from Athens airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twenty-six rooms in eight stone buildings around a garden, each with its own entrance and balcony, from Double Rooms to Executive Suites with fireplaces; plus two-storey villas and the two-bedroom Aristi Residence on its own plot."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Vikos Gorge trek from Monodendri, about six hours",
+     "Rafting the Voidomatis River past the Agion Anargiron Monastery",
+     "Geotrails, photography workshops and traditional weaving",
+     "Cooking classes from the garden"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Year-round heated indoor pool with mountain views",
+     "Hammam, sauna and summer outdoor pool",
+     "Salvia restaurant, from the resort's own garden",
+     "Open all year"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "The village of Aristi in the Zagori, Epirus, in the Pindus mountains, overlooking the Vikos Gorge and the Towers of Astraka. The Zagori Cultural Landscape is a UNESCO World Heritage site."
+    },
+    {
+     "title": "People",
+     "body": "Founder Vassilis Iosifidis discovered the village and began the project in 1999, building it over about three years with architect Thomas Tsatsopoulos. Salvia, the restaurant, cooks from its own greenhouse and organic garden."
+    },
+    {
+     "title": "Impact",
+     "body": "Built from regional stone and timber, a Beyond Green member pledged to eliminate single-use plastic, and a co-founder of the Zagori Excellence Network promoting sustainable tourism across the area's 46 villages. The resort also helps preserve local churches and monasteries."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year.",
+    "how_to_get_there": "48 km from Ioannina airport, in the village of Aristi in the Zagori, Epirus.",
+    "signature_experiences": "The Vikos Gorge trek, rafting the Voidomatis, the stone villages of the Zagori, and a heated indoor pool facing the mountains.",
+    "who_its_for": "Walkers, couples and families who want Greece's mountains rather than its islands: gorges, stone villages and a fire in the evening."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "zagori",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "zagori"
   },
   {
    "slug": "armendaris-ted-turner-reserve",
@@ -9416,6 +9620,106 @@
    "placeSlug": null
   },
   {
+   "slug": "domes-white-coast-milos",
+   "name": "Domes White Coast Milos",
+   "ledgerId": "STY-2026-000564",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "White Cycladic cubes over the Sarakiniko coast of Milos, every suite with its own infinity pool. Adults only.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616161/wildco/greece/domes-white-coast-milos/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616163/wildco/greece/domes-white-coast-milos/sunset.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616164/wildco/greece/domes-white-coast-milos/suites.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616165/wildco/greece/domes-white-coast-milos/private-pool.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616166/wildco/greece/domes-white-coast-milos/suite-bedroom.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.74453,
+    "lng": 24.481722
+   },
+   "airport": "Milos (MLO)",
+   "airportDirections": "7.5 km from Milos Island National Airport; the hotel arranges transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Thirty sea-view suites, each with a private terrace and infinity plunge pool; Deluxe Suites are 27 to 29 m² with a king bed for two."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The lunar coastline of Sarakiniko",
+     "Sunsets from the suite terrace",
+     "In-suite massages from the Soma spa",
+     "Dinner at Makris"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Adults only, from 16",
+     "Restaurant Makris, with in-suite dining",
+     "Two outdoor pools",
+     "Airport transfers and free parking"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Mytakas, on the north coast of Milos, with 180-degree views over the white volcanic coastline of Sarakiniko. The island's airport is 7.5 km away."
+    },
+    {
+     "title": "People",
+     "body": "White, cube-shaped suites by architect Giorgos Tsolakis, drawn from Cycladic villages. Restaurant Makris is led by chef patron Petros Dimas, and the Soma spa brings its treatments to the suite."
+    },
+    {
+     "title": "Impact",
+     "body": "The resort follows the Domes group's sustainability practices; nothing property-specific is claimed here until we have seen it."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "7.5 km from Milos airport, on the island's north coast near Sarakiniko; the hotel arranges transfers.",
+    "signature_experiences": "Sarakiniko's white rock, sunsets from your own infinity pool, dinner at Makris, and in-suite treatments.",
+    "who_its_for": "Couples and honeymooners (adults only, 16+) who want a private pool, a serious restaurant and the Milos coastline."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
+  },
+  {
    "slug": "great-plains-duba-plains",
    "name": "Duba Plains Camp by Great Plains",
    "ledgerId": "STY-2026-258200",
@@ -11744,6 +12048,110 @@
    "placeSlug": null
   },
   {
+   "slug": "eumelia",
+   "name": "Eumelia",
+   "ledgerId": "STY-2026-000570",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "guesthouse",
+   "tagline": "Four farmhouses on a regenerative organic farm in Laconia, among ancient olives and old Greek vines.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616118/wildco/greece/eumelia/farm.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616122/wildco/greece/eumelia/lavender-house.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616124/wildco/greece/eumelia/lavender-house-2.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616127/wildco/greece/eumelia/lavender-house-3.jpg"
+   ],
+   "bestMonths": "Open all year; the olive harvest retreat is in the autumn",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "food",
+    "wellness",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.921549,
+    "lng": 22.729768
+   },
+   "airport": "Kalamata (KLX)",
+   "airportDirections": "About 1 hour 45 minutes by road from Kalamata airport, or about 3 hours 30 minutes from Athens airport. The farm advises against using GPS for the last stretch.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Grape Vine, Lavender, Almond Tree and Sunflower Houses: each with a bedroom, a living room with fireplace, a kitchen, a private garden and a large veranda over the farm and the mountains."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Farm tours led by the owner",
+     "Olive oil and wine tastings",
+     "Cooking classes and soap making",
+     "The autumn Olive Harvest Retreat",
+     "Hiking, biking and yoga"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Farm-to-table food from produce picked daily, with natural wines",
+     "COCO-MAT mattresses and linen",
+     "Geothermal in-floor heating",
+     "Open all year"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "An organic farm near Gouves in Laconia, in the southern Peloponnese, with an ancient olive grove of Myrtolia, Koroneiki and Agrelia trees and a vineyard of Kydonitsa, Athiri, Moschofilero and Agiorgitiko grapes, open all year."
+    },
+    {
+     "title": "People",
+     "body": "A farm run by its owners, who lead the farm tours themselves. Days follow the farm: olive oil and wine tastings, cooking classes, soap making and an olive harvest retreat each autumn."
+    },
+    {
+     "title": "Impact",
+     "body": "Farmed with organic, regenerative, biodynamic and permaculture methods, and accredited as a Slow Food Farm. The houses are bioclimatic, heated by geothermal energy and solar water, and grey and black water is recycled to water the gardens and trees."
+    }
+   ],
+   "facts": {
+    "best_months": "Open all year; the olive harvest retreat is in the autumn.",
+    "how_to_get_there": "About 1h45 by road from Kalamata airport or 3h30 from Athens airport, in Laconia in the southern Peloponnese.",
+    "signature_experiences": "Owner-led farm tours, olive oil and wine tastings, cooking classes, and the autumn olive harvest.",
+    "who_its_for": "Slow travellers, food lovers and families who want to stay on a working organic farm and take part in it."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "peloponnese",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "peloponnese"
+  },
+  {
    "slug": "expedition-blue-lagoon",
    "name": "Expedition Blue Lagoon",
    "ledgerId": "STY-2026-000558",
@@ -13760,6 +14168,106 @@
     "6ae697512f7e87b5a5f5986c"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "gundari",
+   "name": "Gundari",
+   "ledgerId": "STY-2026-000565",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-seven suites and villas with their own pools on 80 untouched acres of Folegandros cliff.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616151/wildco/greece/gundari/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616153/wildco/greece/gundari/resort-1.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616156/wildco/greece/gundari/resort-2.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616159/wildco/greece/gundari/suite-1.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616161/wildco/greece/gundari/suite-2.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Athens (ATH), then ferry or helicopter",
+   "airportDirections": "Daily ferries from Athens, Milos and Santorini (about 50 minutes by fast ferry from the nearest islands). Helicopter transfers from Athens and private boat pick-ups can be arranged; the port is 5 km and the heliport 2 km from the hotel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twenty-seven suites and villas, all with sea views and private pools: Standard and Junior Suites, cave suites built into the cliff edge, and three- and four-bedroom villas for six to eight guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private boat trips to hidden bays, caves, Polyaigos, Milos and Sifnos",
+     "Guided hikes on old island paths",
+     "Scuba diving and snorkelling",
+     "Sunset dinners at Sikinos Winery",
+     "Traditional cooking classes"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Restaurant Orizon",
+     "A vinyl-only hi-fi listening bar and a swim-up pool bar",
+     "Spa with native herbs, sound baths and yoga",
+     "Helicopter and private-boat transfers on request"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "About 80 acres of undeveloped cliff above the Aegean on Folegandros, near Petousis, the island's first farming settlement, and a resting point for birds migrating between Europe and Africa. Chora is 3 km away."
+    },
+    {
+     "title": "People",
+     "body": "Designed by the Athens studio Block722 in a simple Cycladic style from natural materials. Restaurant Orizon cooks contemporary Greek food with Cycladic produce from local farms, and there is a vinyl-only listening bar."
+    },
+    {
+     "title": "Impact",
+     "body": "More than 600 native seedlings were collected before building and replanted afterwards, and the stonework uses rock dug out on site. Water and pool heating are solar, wastewater is treated and reused for irrigation, and the carbon footprint is measured through EarthCheck."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "By ferry from Athens, Milos or Santorini, or by helicopter from Athens; the port is 5 km away and Chora 3 km.",
+    "signature_experiences": "Boat days to Polyaigos and the hidden bays, hikes on old island paths, dinner at Orizon, and records in the listening bar.",
+    "who_its_for": "Couples and small groups who want a quiet Cycladic island and a private pool, with the old paths and boats on the doorstep."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
   },
   {
    "slug": "gwe-gwe-beach",
@@ -17712,6 +18220,205 @@
    "placeSlug": null
   },
   {
+   "slug": "kapari-natural-resort",
+   "name": "Kapari Natural Resort",
+   "ledgerId": "STY-2026-000568",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family house that survived the 1956 earthquake, now seventeen rooms on the caldera at Imerovigli.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616174/wildco/greece/kapari-natural-resort/suite.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616168/wildco/greece/kapari-natural-resort/hero.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616170/wildco/greece/kapari-natural-resort/building.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616172/wildco/greece/kapari-natural-resort/pool.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616175/wildco/greece/kapari-natural-resort/honeymoon-suite.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.434055,
+    "lng": 25.421478
+   },
+   "airport": "Santorini (JTR)",
+   "airportDirections": "8 km from Santorini airport and 10 km from the port; the hotel arranges transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seventeen rooms and suites in six categories, from Vanilla Rooms to Honeymoon Suites; Spa Premium Rooms have indoor jacuzzis and Kapari Up & High has a large outdoor one."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The caldera walk from Imerovigli towards Skaros Rock",
+     "Massages and private wellness treatments",
+     "Dinner and wine at the Kapari Wine Restaurant"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Pool with Aegean views",
+     "Kapari Wine Restaurant",
+     "Breakfast with homemade pastries; room service 8 am to 10 pm",
+     "Transfers on arrival and departure"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Imerovigli, on the caldera rim of Santorini, looking towards Skaros Rock and the Aegean; Fira is 2 km away."
+    },
+    {
+     "title": "People",
+     "body": "Much of Imerovigli was destroyed in the 1956 earthquake. Rena and Takis Adamidis restored one of the few old houses that survived, and their son Philip Adamidis made the estate into a small resort in 2010, Cycladic in its building and minimal inside."
+    },
+    {
+     "title": "Impact",
+     "body": "Not documented on the brand site beyond the building's 'green' design; nothing more is claimed here."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "8 km from Santorini airport and 10 km from the port, on the caldera at Imerovigli; 2 km from Fira.",
+    "signature_experiences": "Caldera views to Skaros Rock, the walk along the rim, the Kapari Wine Restaurant, and in-room jacuzzis.",
+    "who_its_for": "Couples and honeymooners who want Santorini's caldera in a small, family-made hotel rather than a large resort."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
+  },
+  {
+   "slug": "katikies-santorini",
+   "name": "Katikies Santorini",
+   "ledgerId": "STY-2026-000127",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Two houses on the caldera cliffs of Oia: Pelagos in the heart of the village, Gea on its quieter edge.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616284/wildco/greece/katikies-santorini/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616286/wildco/greece/katikies-santorini/pelagos-house.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616288/wildco/greece/katikies-santorini/terraces.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616290/wildco/greece/katikies-santorini/pools.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616291/wildco/greece/katikies-santorini/gea-house.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "luxury"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": 36.461973,
+    "lng": 25.382531
+   },
+   "airport": "Santorini (JTR)",
+   "airportDirections": "Oia is 11 km from Fira at the northern tip of the island; the nearest beach is about a 10-minute drive.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seventeen suite categories of 30 to 50 m², eleven at Pelagos House and six at Gea House, all with private verandas; some with private or plunge pools."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Sunset from Oia, steps from Pelagos House",
+     "Boat trips and land tours with Katikies Club",
+     "A private motor yacht to Mykonos"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Three infinity pools",
+     "Botrini's Restaurant and three lounges",
+     "Katikies Santorini Spa",
+     "Children over 13"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Oia, at the northern tip of Santorini, on the caldera cliffs. Pelagos House is in the village centre, steps from its sunset lookouts; Gea House is on Oia's quieter edge, facing the caldera and the volcano."
+    },
+    {
+     "title": "People",
+     "body": "The flagship of the Katikies hotel group, a member of The Leading Hotels of the World, with Botrini's restaurant and three infinity pools."
+    },
+    {
+     "title": "Impact",
+     "body": "A supporter of HELMEPA, the Hellenic Marine Environment Protection Association, since 2022, with its own kitchen garden and locally sourced menus."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "In Oia at the northern tip of Santorini, 11 km from Fira.",
+    "signature_experiences": "Sunset over the caldera, three infinity pools, dinner at Botrini's, and a boat day with Katikies Club.",
+    "who_its_for": "Couples and honeymooners (children over 13) who want the classic Oia caldera view from a house in the village."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
+  },
+  {
    "slug": "kayumanis-jimbaran-private-estates",
    "name": "Kayumanis \n Jimbaran Private Estates",
    "ledgerId": "STY-2026-000128",
@@ -18512,6 +19219,110 @@
     "6ae6974ba3052349b192dd30"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "kinsterna-hotel",
+   "name": "Kinsterna Hotel",
+   "ledgerId": "STY-2026-000573",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A restored Monemvasia mansion among its own vines, olives and citrus, looking out to the castle rock.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616108/wildco/greece/kinsterna-hotel/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616109/wildco/greece/kinsterna-hotel/estate-aerial.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616111/wildco/greece/kinsterna-hotel/mansion.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616113/wildco/greece/kinsterna-hotel/byzantine-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616114/wildco/greece/kinsterna-hotel/pool-villa.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616116/wildco/greece/kinsterna-hotel/sterna-restaurant.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "food",
+    "wine",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.644544,
+    "lng": 23.015348
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Nine room types across rooms and suites, residences and a villa, from the Manor Room to the Kinsterna Pool Villa: 120 m², for up to six, with a semi-private heated pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The estate's own Monemvasia-Malvasia wine",
+     "The castle town of Monemvasia, seven kilometres away",
+     "Old estate trails, signposted with the municipality",
+     "Herb gardens and beehives on the estate"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Sterna restaurant, Mouries all-day restaurant and Linos Tavern",
+     "Belvedere Bar, Mouries Bar and Pool Bar",
+     "Estate produce: wine, marmalades, spoon sweets",
+     "Babysitting and airport transfers on request"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Seven kilometres south-west of Monemvasia, a mansion that mixes Byzantine, Ottoman and Venetian building stands at the centre of a 50-acre estate of olive trees, vineyards and citrus, with the castle rock in view. It takes its name from the great cistern in the inner courtyard."
+    },
+    {
+     "title": "People",
+     "body": "The Kapitsini family bought the house in 1870; Lina Kapitsini, remembered as the last 'lady' of Monemvasia, lived here until the 1970s. Abandoned after 1980, it was restored from 2006 under the Ephorate of Byzantine Antiquities and opened as a hotel in 2010. The kitchen is led by executive chef George Hapsas."
+    },
+    {
+     "title": "Impact",
+     "body": "The estate built its own solar park in 2024 and gives its surplus power to vulnerable households and local churches. More than 60% of its produce comes from local farmers, over 250 native plant species grow on the estate, and old trails have been signposted with the Municipality of Monemvasia. Green Key member."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "About 7 km south-west of Monemvasia in the south-eastern Peloponnese. Airport transfers can be arranged by the hotel.",
+    "signature_experiences": "The estate's own Monemvasia-Malvasia wine, dinner at Sterna, the castle town of Monemvasia, and walks on the estate's old trails.",
+    "who_its_for": "Couples, food and wine lovers, and families who want a restored historic estate with its own vineyard rather than a beach resort."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "peloponnese",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "peloponnese"
   },
   {
    "slug": "kokoko-camp-by-asilia",
@@ -24255,6 +25066,207 @@
    "placeSlug": null
   },
   {
+   "slug": "mediterraneo-kastellorizo",
+   "name": "Hotel Mediterraneo Kastellorizo",
+   "ledgerId": "STY-2026-000567",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seven rooms on the harbour of Greece's easternmost island, with a suite you can swim from before breakfast.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616198/wildco/greece/mediterraneo-kastelorizo/breakfast.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616194/wildco/greece/mediterraneo-kastelorizo/hero.webp",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616195/wildco/greece/mediterraneo-kastelorizo/harbour.webp",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616196/wildco/greece/mediterraneo-kastelorizo/sea-suite.webp",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616197/wildco/greece/mediterraneo-kastelorizo/sea-view-room.webp"
+   ],
+   "bestMonths": "June to August for swimming; September and October for warmth and quiet; May or October for walking and wildflowers",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "solo"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Kastellorizo, via Rhodes (RHO)",
+   "airportDirections": "A daily Olympic Air flight from Rhodes takes about 25 minutes; ferries from Rhodes take about 3.5 to 4 hours. Walk along the harbour from the village or take a sea-taxi to the door.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven rooms: Sea View and Garden View Rooms and a ground-floor Sea View Suite that opens straight onto the water. The whole hotel can also be taken as a private villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Blue Cave",
+     "Clifftop trails, quiet coves and hidden swimming spots",
+     "A swim off the quay before breakfast",
+     "The Water Festival in high summer"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Breakfast on the harbour-view terrace",
+     "Sea-taxi to the door",
+     "Whole-hotel buyouts for families and retreats",
+     "Marie's Shop"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Kastellorizo, the easternmost island of Greece, just across a narrow channel from the Turkish coast. The hotel sits on the harbour front, a few minutes' walk from the village."
+    },
+    {
+     "title": "People",
+     "body": "A modest waterfront pension that the Parisian architect Marie Rivalant made into her first hotel in 2000, its rooms each designed individually."
+    },
+    {
+     "title": null,
+     "body": "Impact"
+    },
+    {
+     "title": null,
+     "body": "Not documented on the brand site; nothing is claimed here."
+    }
+   ],
+   "facts": {
+    "best_months": "June to August for swimming; September and October for warmth and quiet; May or October for walking.",
+    "how_to_get_there": "Fly from Rhodes (about 25 minutes, daily) or take the ferry from Rhodes; the hotel is on the harbour, directly across from the ferry terminal.",
+    "signature_experiences": "A swim from the quay before breakfast, the Blue Cave, clifftop trails, and breakfast on the harbour terrace.",
+    "who_its_for": "Couples and independent travellers who want a tiny, far-flung island and a harbour-front room, not a resort."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "dodecanese",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "dodecanese"
+  },
+  {
+   "slug": "melenos-lindos",
+   "name": "Melenos Lindos",
+   "ledgerId": "STY-2026-000571",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A handful of suites in carved sandstone and cedar, on the threshold of the acropolis of Lindos.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616183/wildco/greece/melenos-lindos/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616184/wildco/greece/melenos-lindos/panorama.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616188/wildco/greece/melenos-lindos/lobby.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616190/wildco/greece/melenos-lindos/superior-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616192/wildco/greece/melenos-lindos/honeymoon-suite.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "culture"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Rhodes (RHO)",
+   "airportDirections": "Private transfers from Rhodes airport or harbour can be arranged when booking; staff meet guests at the Lindos village square.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Double, Honeymoon, Senior and Superior Suites and a two-bedroom Master Suite facing the acropolis; Superior Suites have private terraces over Lindos harbour. Two villas, Villa Melenos and Villa Venetoklis, are also offered."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The acropolis of Lindos, steps away",
+     "Lindos harbour and its bay",
+     "The medieval town of Rhodes, a UNESCO site"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "À la carte breakfast included",
+     "Traditional Greek and Aegean cooking",
+     "COCO-MAT mattresses and FRETTE linen",
+     "Staff meet you in the village square and carry your luggage"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Lindos on Rhodes, on the threshold of the ancient acropolis, in a protected village where every building has to belong. The hotel was laid out on 1,000 m² as a small village of its own."
+    },
+    {
+     "title": "People",
+     "body": "Made over fourteen years by Michalis Melenos, a native of Lindos. Designed after early 17th-century Lindian mansions by artist-designer Donald H. Green, with carved sandstone, Katrani cedar and pebble mosaics by local craftsmen."
+    },
+    {
+     "title": "Impact",
+     "body": "Built from local stone, cedar, beach pebbles and marble fragments; the kitchen uses herbs and vegetables grown on site and preserves from the hotel's own orchard, and buys from local suppliers."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "In Lindos on the east coast of Rhodes; the hotel arranges transfers from Rhodes airport or harbour and meets you in the village square.",
+    "signature_experiences": "The acropolis of Lindos on your doorstep, a terrace over the harbour, and rooms of carved sandstone, cedar and pebble mosaic.",
+    "who_its_for": "Couples who love craft, history and a view, and want to stay inside one of the Aegean's great village sites."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "dodecanese",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "dodecanese"
+  },
+  {
    "slug": "meno-a-kwena-camp",
    "name": "Meno A Kwena Camp",
    "ledgerId": "STY-2026-000166",
@@ -27957,6 +28969,106 @@
     "6ae69747144930d65f54ca37"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "nobelos-seaside-lodge",
+   "name": "Nobelos Seaside Lodge",
+   "ledgerId": "STY-2026-000574",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "guesthouse",
+   "tagline": "Four suites in a family's stone mansion above the sea on the quiet north coast of Zakynthos.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616294/wildco/greece/nobelos-seaside-lodge/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616296/wildco/greece/nobelos-seaside-lodge/lodge.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616298/wildco/greece/nobelos-seaside-lodge/coast.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616301/wildco/greece/nobelos-seaside-lodge/navagio-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616303/wildco/greece/nobelos-seaside-lodge/blue-cave-suite.jpg"
+   ],
+   "bestMonths": "Open May to October",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Zakynthos (ZTH)",
+   "airportDirections": "32 km from Zakynthos airport; about 300 metres before the small port of Agios Nikolaos. Transfers on request.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Four themed suites: Navagio and Sfodilas for up to four guests, Blue Cave and Trachilas for two. Breakfast is served in the suite or on the shaded terraces."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "By boat to the Blue Caves and Navagio",
+     "Yacht and sailing charters",
+     "The ferry to Kefalonia, 500 metres away",
+     "Organic lunches at the Bio Restaurant"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private beach",
+     "Bio Restaurant, open all day",
+     "Transfers, car, helicopter and yacht hire on request",
+     "Open May to October"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "The north-east coast of Zakynthos at Agios Nikolaos, Volimes, fifty metres from the sea, with the Blue Caves two nautical miles away and Navagio five."
+    },
+    {
+     "title": "People",
+     "body": "The Nobelos family's stone mansion, built in the old Zakynthian style and furnished with handmade Venetian-style pieces, lace and rare engravings of the island."
+    },
+    {
+     "title": "Impact",
+     "body": "The family's Bio Restaurant, which it describes as the only organic restaurant on Zakynthos, buys daily from local farmers and fishermen."
+    }
+   ],
+   "facts": {
+    "best_months": "Open May to October.",
+    "how_to_get_there": "32 km from Zakynthos airport on the island's north-east coast, beside the port of Agios Nikolaos; transfers on request.",
+    "signature_experiences": "Boat days to the Blue Caves and Navagio, a private beach, and organic lunches at the family's restaurant.",
+    "who_its_for": "Couples and small families who want the quiet end of Zakynthos, close to the Blue Caves and Navagio by boat."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "ionian-islands",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "ionian-islands"
   },
   {
    "slug": "nomad-tanzania-lamai",
@@ -40224,6 +41336,108 @@
     "6ae6974e462820454c7ce501"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "tainaron-blue-retreat",
+   "name": "Tainaron Blue Retreat",
+   "ledgerId": "STY-2026-000569",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "guesthouse",
+   "tagline": "Four rooms in a 19th-century Maniot stone tower, a few kilometres from the southern tip of mainland Europe.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616130/wildco/greece/tainaron-blue-retreat/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616132/wildco/greece/tainaron-blue-retreat/coast.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616134/wildco/greece/tainaron-blue-retreat/tower.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616137/wildco/greece/tainaron-blue-retreat/master-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616138/wildco/greece/tainaron-blue-retreat/junior-suite.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616140/wildco/greece/tainaron-blue-retreat/executive-double.jpg"
+   ],
+   "bestMonths": "Open late May to the end of October",
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "solo"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 36.436772,
+    "lng": 22.465641
+   },
+   "airport": "Kalamata (KLX)",
+   "airportDirections": "125 km by road from Kalamata airport; 340 km from Athens airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Four rooms: the Master Suite at the top of the tower, on two levels with a sea view; a Junior Suite with mountain view; an Executive Double with sea view; and a Classic Double beside the tower."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Cape Tainaron, the southern tip of mainland Europe",
+     "The tower villages of the deep Mani",
+     "Maniot dinners at the guests-only restaurant"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Outdoor infinity hydrotherapy pool and sun terrace",
+     "Stone patio and outdoor shrine",
+     "Artworks by sculptor Nikos Karalis",
+     "Coco-mat mattresses and linen"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "The deep Mani, near Vathia, a few kilometres from Cape Tainaron, the southernmost point of mainland Greece and of mainland Europe. The tower looks over the southern slopes of Mount Taygetos to the sea."
+    },
+    {
+     "title": "People",
+     "body": "An early-19th-century three-storey defensive tower, converted into a guest house with its structure kept unchanged inside and out. The restaurant, for guests only, serves Maniot and Mediterranean dishes from traditional recipes developed with chef George Samoilis."
+    },
+    {
+     "title": "Impact",
+     "body": "Not documented in detail on the brand site beyond the tower's careful restoration and its ecological amenities; nothing more is claimed here."
+    }
+   ],
+   "facts": {
+    "best_months": "Open late May to the end of October.",
+    "how_to_get_there": "125 km from Kalamata airport or 340 km from Athens airport, in the deep Mani near Vathia.",
+    "signature_experiences": "Sea views from the top of the tower, the infinity hydrotherapy pool, Maniot dinners, and Cape Tainaron nearby.",
+    "who_its_for": "Couples and travellers over 12 who want somewhere truly remote: four rooms in a stone tower at the end of the Peloponnese."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "peloponnese",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "peloponnese"
   },
   {
    "slug": "tanah-gajah",

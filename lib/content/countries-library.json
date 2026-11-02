@@ -1624,6 +1624,93 @@
    "atlasName": "France"
   },
   {
+   "slug": "greece",
+   "name": "Greece",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000069",
+   "subtitle": "Where History Meets the Sea",
+   "leading": "Whitewashed villages, olive groves, and crystal blue waters set a scene both iconic and serene. Islands scatter across the Aegean, each with its own blend of culture and coastal beauty. Stays highlight simplicity, light, and deep connection to sea. Sail between islands, explore ancient ruins, or swim in quiet coves warmed by Mediterranean sun. Greece invites easy movement, lingering meals, and pure coastal bliss.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6838cb11546a2a02b5708831_santorini-oia-sadie-teper-jbxbza3dwbi-unsplash.webp",
+    "alt": "Greece, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Where History Meets the Sea",
+     "title": "A Land of Islands, Light, and Timeless Beauty",
+     "blocks": [
+      {
+       "p": "Greece is a place where ancient history and coastal beauty exist in perfect harmony. Sunlit islands, whitewashed villages, and deep blue seas create a landscape that feels both iconic and deeply rooted in time. Every setting carries a sense of story shaped by centuries of culture and tradition."
+      },
+      {
+       "p": "Travel here is about immersion in atmosphere and simplicity. Walking through historic ruins, drifting between islands, and experiencing life along the sea reveal a rhythm that is warm, relaxed, and quietly vibrant."
+      },
+      {
+       "p": "For those seeking culture, beauty, and a slower pace, Greece offers an experience that feels effortless and enduring."
+      },
+      {
+       "p": "Greece for Culture and Coastal Explorers Greece preserves its rich heritage through archaeological sites, traditional architecture, and island communities closely tied to the sea. Its natural beauty and cultural legacy remain deeply connected."
+      },
+      {
+       "p": "Journeys are designed with local insight and access to both iconic destinations and lesser known islands, creating experiences that feel immersive, balanced, and authentic."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0dcaee61f1b67b427fe32_Greece%20-%20Section%201%20Image.jpg",
+      "alt": "Greece: A Land of Islands, Light, and Timeless Beauty"
+     }
+    },
+    {
+     "eyebrow": "Find Your Flow in Greece",
+     "title": "Where Island Life and Ancient Culture Align",
+     "blocks": [
+      {
+       "h": "Traveler Personalities",
+       "p": "Cultural explorers drawn to history and mythology, island lovers seeking coastal beauty, photographers chasing light and architecture, and lifestyle travelers looking for relaxed and meaningful escapes."
+      },
+      {
+       "h": "Experiences You Can’t Find Anywhere Else",
+       "p": "Explore ancient ruins, sail between islands, swim in clear Mediterranean waters, and experience a way of life shaped by history, sea, and tradition."
+      },
+      {
+       "p": "These journeys connect you with Greece’s landscapes and culture in a way that feels timeless, immersive, and deeply enjoyable."
+      },
+      {
+       "h": "Not Just a Trip. A Transformation.",
+       "p": "Plan your Greece journey with our travel designers and create an experience shaped by culture, beauty, and discovery."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0dcb663cb38172b5a9047_Greece%20-%20Section%202%20Image.jpg",
+      "alt": "Greece: Where Island Life and Ancient Culture Align"
+     }
+    }
+   ],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [],
+   "airports": [
+    [
+     "Kalamata (KLX)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Santorini (JTR)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Rhodes (RHO)",
+     "Serves 2 stays in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "KLX · JTR",
+   "bestShort": "Ask James",
+   "atlasName": "Greece"
+  },
+  {
    "slug": "guatemala",
    "name": "Guatemala",
    "region": "central-america",

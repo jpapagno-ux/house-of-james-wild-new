@@ -1005,6 +1005,17 @@
    "released": true
   },
   {
+   "stay_id": "6ae8707bb3d5b36ad443b088",
+   "slug": "como-parrot-cay",
+   "name": "COMO Parrot Cay",
+   "country": "Turks Caicos",
+   "missing": [
+    "coming_soon",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8ee",
    "slug": "como-shambhala-estate",
    "name": "Como Shambhala Estate",

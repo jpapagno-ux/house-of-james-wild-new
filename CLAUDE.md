@@ -16,7 +16,8 @@
   `.ledger-btn-ghost`: Cormorant italic, crimson arrow and rule), the seal once on the homepage (`.jw-seal-cta`).
   Chips, filters, tabs and search stay squared graphite (`.house-chip`), never pills. Never style a button per page.
 - Pathway chips are graphite outlines with a 6px pathway dot. River waters and The Exceptional Few are protected.
-- No em or en dashes in public copy; no parchment textures; no browns, golds or tans as grounds.
+- No em or en dashes in public copy; no parchment textures. Tans sparingly (James, 2 Nov 2026: "I like tans but not
+  everywhere"): an occasional tan panel, tag or accent is fine; never the ground of every section or page.
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per
   image, folders = public_id path (see `docs/brand-colours.md`, "Media").
 - Full rule: `docs/brand-colours.md`.

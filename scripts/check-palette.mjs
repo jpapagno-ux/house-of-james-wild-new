@@ -137,7 +137,7 @@ for (const m of pal.matchAll(/(amazon|nile|river): \{ name: "[^"]+", action: "(#
 }
 
 // ---------- retired: they do not come back ----------
-const retired = { "#1A4A80;\\s*--jw-action-deep": "the Deep Sea action", "--jw-sea-": "the Deep Sea tokens", "232 243 238": "the Tidewater sea-green band", "#E8F3EE": "the Tidewater sea-green band", "#4D4C27": "Field Olive", "#46452A": "Field Olive", "#F6F4F0": "the parchment panel", "#EFEAE0": "the sand ground", "#F1F8F6": "the Tidewater header wash" };
+const retired = { "#1A4A80;\\s*--jw-action-deep": "the Deep Sea action", "--jw-sea-": "the Deep Sea tokens", "232 243 238": "the Tidewater sea-green band", "#E8F3EE": "the Tidewater sea-green band", "#4D4C27": "Field Olive", "#46452A": "Field Olive", "#F1F8F6": "the Tidewater header wash" };
 for (const f of ["app/globals.css", "tailwind.config.ts", ...walk("components").filter((f) => /\.tsx?$/.test(f) && !PROTECTED_DIRS.some((d) => f.startsWith(d)))]) {
   const src = read(f);
   for (const [re, what] of Object.entries(retired)) if (new RegExp(re, "i").test(src)) errs.push(`${f}: ${what} is retired under the House Standard (James, 2 Nov 2026)`);

@@ -3,7 +3,7 @@ import { viewStatus } from "@/lib/content/coming-view";
 
 // The What's Coming stamp: cut in the On the Horizon line (components/ledger/HorizonMark.tsx), a 4-weight
 // outer ring, a hairline, compass ticks and mono ring lettering, with the status and the date set in the
-// field in serif figures. Inked in the onDark HORIZON set on a deep disc so it reads over any photograph.
+// field in Plex Mono figures (the house's ledger type for dates). Inked in the onDark HORIZON set on a deep disc so it reads over any photograph.
 const MONO = "IBM Plex Mono, ui-monospace, monospace";
 const SERIF = "Cormorant Garamond, Georgia, serif";
 const MON = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
@@ -14,9 +14,9 @@ export default function ComingStamp({ status, date, size = 132, id, rotate = -8 
   const [y, m, d] = (date ?? "").split("-");
   const lines: { text: string; size: number; font: string; dy: number; spacing?: number }[] = !date
     ? [{ text: "Date", size: 30, font: SERIF, dy: 98 }, { text: "to come", size: 22, font: SERIF, dy: 122 }]
-    : d ? [{ text: String(Number(d)), size: 46, font: SERIF, dy: 112 }, { text: `${MON[Number(m) - 1]} ${y}`, size: 11, font: MONO, dy: 132, spacing: 2 }]
-    : m ? [{ text: MON[Number(m) - 1] ?? "", size: 34, font: SERIF, dy: 106 }, { text: y, size: 13, font: MONO, dy: 128, spacing: 2.4 }]
-    : [{ text: y, size: 42, font: SERIF, dy: 116 }];
+    : d ? [{ text: String(Number(d)), size: 38, font: MONO, dy: 112 }, { text: `${MON[Number(m) - 1]} ${y}`, size: 11, font: MONO, dy: 132, spacing: 2 }]
+    : m ? [{ text: MON[Number(m) - 1] ?? "", size: 30, font: MONO, dy: 108 }, { text: y, size: 13, font: MONO, dy: 130, spacing: 2.4 }]
+    : [{ text: y, size: 32, font: MONO, dy: 114 }];
   const ticks = Array.from({ length: 48 }, (_, i) => {
     const a = ((i * 7.5 - 90) * Math.PI) / 180, major = i % 6 === 0;
     const r1 = major ? 79 : 82, r2 = 86;

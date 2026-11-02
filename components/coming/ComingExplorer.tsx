@@ -63,12 +63,12 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             <label className="relative flex-1 min-w-0 md:max-w-sm">
               <span className="sr-only">Search by property or country</span>
               <svg aria-hidden="true" viewBox="0 0 24 24" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-ink/50"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="1.6" /><path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
-              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Search a lodge or a country" className="w-full h-10 pl-9 pr-3 border ledger-border bg-white text-[15px] placeholder:text-ink/45 focus:outline-none focus:border-[color:var(--jw-action)]" />
+              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Lodge or country" className="w-full h-10 pl-9 pr-3 border ledger-border bg-white text-[15px] placeholder:text-ink/45 focus:outline-none focus:border-[color:var(--jw-action)]" />
             </label>
             <label className="shrink-0 flex items-center gap-2">
               <span className="hidden md:inline font-mono text-[10.5px] tracking-[0.2em] uppercase ledger-muted">Sort</span>
               <span className="sr-only md:hidden">Sort</span>
-              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className="h-10 border ledger-border bg-white px-2.5 text-[14px] focus:outline-none focus:border-[color:var(--jw-action)]">
+              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className="h-10 max-w-[44vw] md:max-w-none border ledger-border bg-white px-2 md:px-2.5 text-[13.5px] md:text-[14px] focus:outline-none focus:border-[color:var(--jw-action)]">
                 {SORTS.map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
               </select>
             </label>
@@ -137,7 +137,7 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
   return (
     <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}>
       <div className={`lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
-        <div className={`${s.frame} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`}>
+        <div className={`${s.frame} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`} style={{ background: "var(--jw-sea-navy)" }}>
           {c.hero ? (
             <>
               <Image src={c.hero.src} alt={c.hero.alt} fill quality={85} sizes="(min-width: 1400px) 800px, (min-width: 1024px) 58vw, 100vw" className="object-cover" />
@@ -145,7 +145,7 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
             </>
           ) : <ColourField c={c} />}
           <div className={`absolute top-4 ${flip ? "left-4" : "right-4"} md:top-6 ${flip ? "md:left-6" : "md:right-6"}`}>
-            <ComingStamp status={c.status} date={c.date} id={c.slug} size={112} rotate={flip ? 7 : -7} />
+            <ComingStamp status={c.status} date={c.date} id={c.slug} size={136} rotate={flip ? 7 : -7} />
           </div>
         </div>
       </div>

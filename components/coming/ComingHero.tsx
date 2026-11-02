@@ -37,9 +37,9 @@ export default function ComingHero({ slides, title, line, children }: { slides: 
       </div>
       <div className={`absolute inset-0 ${s.heroShade}`} aria-hidden="true" />
       <div className="relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20">
-        <p className="font-mono text-[11px] md:text-[12px] tracking-[0.3em] uppercase text-white/85">James Wild &amp; Co &middot; Filed before they open</p>
+        <p className="font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-white/85">James Wild &amp; Co &middot; Filed before they open</p>
         <h1 id="coming-title" className="ledger-display mt-4 text-[4.1rem] leading-[0.88] sm:text-[6rem] md:text-[8.5rem] lg:text-[11rem] tracking-[-0.03em]">{title}</h1>
-        <p className="mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.18em] uppercase text-white/90">{line}</p>
+        <p className="mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase text-white/90">{line}</p>
         <div className="mt-8 md:mt-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-t border-white/25 pt-5">
           <div className="relative min-h-[3.6rem] md:min-h-[3.4rem] flex-1">
             {slides.map((sl, i) => (

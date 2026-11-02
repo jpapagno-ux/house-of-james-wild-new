@@ -1,0 +1,930 @@
+{
+ "title": "Yucatán and the Riviera Maya, with Chablé · overland",
+ "crumbs": [
+  "Home",
+  "Overland",
+  "Mexico",
+  "Yucatán and the Riviera Maya, with Chablé"
+ ],
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-MX-C09</span>",
+ "h1note": "",
+ "mark1": "",
+ "mark2": "",
+ "markline": "",
+ "heroalt": "",
+ "herolabel": "",
+ "dayeyebrow": "Day by day",
+ "daytitle": "The Route, Day by Day",
+ "staylabel": "Stay",
+ "movelabel": "Getting there",
+ "stripcols": "",
+ "feat_title": "",
+ "features": [],
+ "navon": "Overland",
+ "map_eyebrow": "The route, drawn",
+ "dates_head": [
+  "Rates",
+  "Quoted against your dates",
+  ""
+ ],
+ "exp_title": "What you will do, stop by stop",
+ "calc": {
+  "title": "Build your price",
+  "note": "",
+  "opts": [
+   {
+    "label": "Quoted against your dates",
+    "sub": "",
+    "pp": 0,
+    "photo": "",
+    "sleeps": "",
+    "bed": "",
+    "size": "",
+    "feats": ""
+   }
+  ],
+  "adds": [
+   {
+    "label": "Nômade Temple Holbox",
+    "sub": "Add nights on Holbox Island after Chablé Maroma. Adults 18 and over. From Cancún, 2 to 2.5 hours by road to Chiquilá, then about 30 minutes across.",
+    "pp": 0
+   }
+  ]
+ },
+ "kind": "overland",
+ "ctaline": "Tell Iggi your month and your crew, or text James on 561.479.6355. He'll call with a plan.",
+ "ctabtn": "Plan This Journey",
+ "copy_approved": true,
+ "prices_final": false,
+ "booking_live": false,
+ "dayintro": "Each day as James would plan it. Open a day for the detail, or send it to the map.",
+ "id": "yucatan-and-the-riviera-maya-with-chable",
+ "h1": "Yucatán and the Riviera Maya, with Chablé",
+ "sub": "10 Days · 9 Nights · Mexico, Mérida to Cancún",
+ "side": [
+  [
+   "1",
+   "Chablé Yucatán",
+   "Days 1 to 3",
+   "From Mérida (MID), about 45 to 50 min by road"
+  ],
+  [
+   "2",
+   "Tulum",
+   "Days 4 to 6",
+   "By road across the peninsula"
+  ],
+  [
+   "3",
+   "Maroma Beach",
+   "Days 7 to 9",
+   "By road up the coast"
+  ],
+  [
+   "E",
+   "Cancún (CUN)",
+   "Day 10",
+   "About 35 to 40 min by road, then flights home"
+  ]
+ ],
+ "meta": [
+  [
+   "Journey code",
+   "JW-MX-C09"
+  ],
+  [
+   "Country",
+   "Mexico"
+  ],
+  [
+   "Duration",
+   "10 days / 9 nights"
+  ],
+  [
+   "Journey type",
+   "Overland · by private car"
+  ],
+  [
+   "In · Out",
+   "Mérida (MID) · Cancún (CUN)"
+  ],
+  [
+   "Dates",
+   "Private · any day you choose, subject to availability"
+  ],
+  [
+   "Best months",
+   "December to April, when all three stays name their best season"
+  ],
+  [
+   "Ages",
+   "Mezzanine Tulum 16 and over; Nômade Temple Tulum takes all ages"
+  ],
+  [
+   "Vetted by",
+   "James Wild · Chablé Yucatán and Chablé Maroma inspected and approved, 2026"
+  ]
+ ],
+ "quote": "\"Mexico invites immersion through culture, nature, and spirited hospitality.\"",
+ "overview_title": "What Is the Best Yucatán and Riviera Maya Itinerary?",
+ "answer": "The best Yucatán and Riviera Maya itinerary, as James Wild & Co draws it, is ten days between two Chablé hotels: three nights at Chablé Yucatán, the hacienda in the Mayan forest near Mérida, three at Mezzanine Tulum, above the sea inside Tulum's protected Jaguar Park, and three at Chablé Maroma, seventy private pool villas on Maroma Beach. Fly into Mérida (MID) and home from Cancún (CUN), with every leg by private car.",
+ "striptitle": "Ten days at a glance",
+ "strip": [
+  [
+   "D1",
+   "#4F6B3A"
+  ],
+  [
+   "D2",
+   "#4F6B3A"
+  ],
+  [
+   "D3",
+   "#4F6B3A"
+  ],
+  [
+   "D4",
+   "#7C9488"
+  ],
+  [
+   "D5",
+   "#7C9488"
+  ],
+  [
+   "D6",
+   "#7C9488"
+  ],
+  [
+   "D7",
+   "#6B4A33"
+  ],
+  [
+   "D8",
+   "#6B4A33"
+  ],
+  [
+   "D9",
+   "#6B4A33"
+  ],
+  [
+   "D10",
+   "#1F1D1B"
+  ]
+ ],
+ "strip_labels": [
+  "Chablé Yucatán · the Mayan forest",
+  "Tulum · Jaguar Park",
+  "Chablé Maroma · Maroma Beach",
+  "Home"
+ ],
+ "days": [
+  {
+   "stayLinks": [
+    [
+     "Chablé Yucatán",
+     "/stays/chable-yucatan"
+    ]
+   ],
+   "n": "DAY 01",
+   "title": "Mérida to the Mayan forest",
+   "line": "By road from Mérida airport · about 45 to 50 minutes",
+   "body": "Land at Mérida International Airport (MID). Chablé Yucatán is about 45 to 50 minutes away by road, and private transfers are available. The hacienda sits in the Mayan forest, and every casita has its own pool.",
+   "stay": "Chablé Yucatán",
+   "meals": "Confirmed with your quote",
+   "move": "By road · about 45 to 50 min",
+   "acts": "Arrival · the casita pool",
+   "img": "PHOTO · CHABLÉ YUCATÁN",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 01",
+   "stageName": "Chablé Yucatán",
+   "stageMeta": "DAYS 1 TO 3 · 3 NIGHTS · NEAR MÉRIDA",
+   "mark": "Founder inspected & approved · 2026"
+  },
+  {
+   "stayLinks": [
+    [
+     "Chablé Yucatán",
+     "/stays/chable-yucatan"
+    ]
+   ],
+   "n": "DAY 02",
+   "title": "The cenote spa",
+   "line": "Chablé Yucatán, in the Mayan forest",
+   "body": "The cenote spa and the Chablé Spa Journeys, then the Melipona bee sanctuary on the estate.",
+   "stay": "Chablé Yucatán",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Cenote spa · Melipona bee sanctuary",
+   "img": "PHOTO · CHABLÉ YUCATÁN",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Chablé Yucatán",
+     "/stays/chable-yucatan"
+    ]
+   ],
+   "n": "DAY 03",
+   "title": "The Mayan kitchen",
+   "line": "Chablé Yucatán, in the Mayan forest",
+   "body": "A Mayan kitchen class, cycling and the cenotes around the hacienda. Families are welcome here, with a Kids Club.",
+   "stay": "Chablé Yucatán",
+   "meals": "Confirmed with your quote",
+   "move": "On foot or by bicycle",
+   "acts": "Mayan kitchen class · cycling · cenotes",
+   "img": "PHOTO · CHABLÉ YUCATÁN",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Mezzanine Tulum",
+     "/stays/mezzanine-tulum"
+    ],
+    [
+     "Nômade Temple Tulum",
+     "/stays/nomade-tulum"
+    ]
+   ],
+   "n": "DAY 04",
+   "title": "Yucatán to Tulum",
+   "line": "By road across the peninsula",
+   "body": "By private car from Chablé Yucatán to Tulum. Mezzanine sits at Km 4.4 on the Tulum to Boca Paila road, inside Jaguar Park, a protected area between the jungle and the Caribbean, steps from the Mayan ruins. Guests are asked to follow the park's guidelines on access and preservation.",
+   "stay": "Mezzanine Tulum",
+   "meals": "Confirmed with your quote",
+   "move": "By road · drive time set with your dates",
+   "acts": "Transfer day · sea views",
+   "img": "PHOTO · MEZZANINE TULUM",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 02",
+   "stageName": "Tulum",
+   "stageMeta": "DAYS 4 TO 6 · 3 NIGHTS · JAGUAR PARK",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Mezzanine Tulum",
+     "/stays/mezzanine-tulum"
+    ],
+    [
+     "Nômade Temple Tulum",
+     "/stays/nomade-tulum"
+    ]
+   ],
+   "n": "DAY 05",
+   "title": "Ruins, cenotes and Sian Ka'an",
+   "line": "Mezzanine Tulum, inside Jaguar Park",
+   "body": "Mezzanine's own packages go to the cenotes, the ancient canals, the Mayan ruins and Sian Ka'an.",
+   "stay": "Mezzanine Tulum",
+   "meals": "Confirmed with your quote",
+   "move": "By car or on foot",
+   "acts": "Cenotes · canals · the ruins · Sian Ka'an",
+   "img": "PHOTO · MEZZANINE TULUM",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Mezzanine Tulum",
+     "/stays/mezzanine-tulum"
+    ],
+    [
+     "Nômade Temple Tulum",
+     "/stays/nomade-tulum"
+    ]
+   ],
+   "n": "DAY 06",
+   "title": "Thai on the cliff",
+   "line": "Mezzanine Tulum, above the sea",
+   "body": "A day for the view and the beach below, dinner on the cliffside Thai terrace, and Hotel Mi Amor, the sister property three minutes away, with its restaurant and infinity pool.",
+   "stay": "Mezzanine Tulum",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Beach · Thai terrace · Hotel Mi Amor",
+   "img": "PHOTO · MEZZANINE TULUM",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Chablé Maroma",
+     "/stays/chable-maroma"
+    ]
+   ],
+   "n": "DAY 07",
+   "title": "Tulum to Maroma Beach",
+   "line": "By road up the Riviera Maya",
+   "body": "North by private car to Chablé Maroma on Maroma Beach: seventy villas designed by Paulina Morán in a protected stretch of jungle, each with a private terrace, a plunge pool and the Chablé moon shower.",
+   "stay": "Chablé Maroma",
+   "meals": "Confirmed with your quote",
+   "move": "By road · drive time set with your dates",
+   "acts": "Transfer day · the villa pool",
+   "img": "PHOTO · CHABLÉ MAROMA",
+   "imgAlt": "",
+   "head": true,
+   "stage": "St 03",
+   "stageName": "Maroma Beach",
+   "stageMeta": "DAYS 7 TO 9 · 3 NIGHTS · RIVIERA MAYA",
+   "mark": "Founder inspected & approved · 2026"
+  },
+  {
+   "stayLinks": [
+    [
+     "Chablé Maroma",
+     "/stays/chable-maroma"
+    ]
+   ],
+   "n": "DAY 08",
+   "title": "The water ceremony",
+   "line": "Chablé Maroma, Maroma Beach",
+   "body": "The water ceremony and the temazcal, or a day of cenote diving.",
+   "stay": "Chablé Maroma",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Water ceremony · temazcal · cenote diving",
+   "img": "PHOTO · CHABLÉ MAROMA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [
+    [
+     "Chablé Maroma",
+     "/stays/chable-maroma"
+    ]
+   ],
+   "n": "DAY 09",
+   "title": "Jorge Vallejo's table",
+   "line": "Chablé Maroma, Maroma Beach",
+   "body": "A last day on the private beach, and Jorge Vallejo's cooking at every table.",
+   "stay": "Chablé Maroma",
+   "meals": "Confirmed with your quote",
+   "move": "On foot",
+   "acts": "Private beach · dinner",
+   "img": "PHOTO · CHABLÉ MAROMA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  },
+  {
+   "stayLinks": [],
+   "n": "DAY 10",
+   "title": "Home from Cancún",
+   "line": "By road to CUN · about 35 to 40 minutes",
+   "body": "Chablé Maroma is about 35 to 40 minutes by car from Cancún International Airport (CUN), and Chablé can arrange the private transfer.",
+   "stay": "Flights home",
+   "meals": "Confirmed with your quote",
+   "move": "By road · about 35 to 40 min",
+   "acts": "Departure",
+   "img": "PHOTO · CHABLÉ MAROMA",
+   "imgAlt": "",
+   "head": false,
+   "stage": "",
+   "stageName": "",
+   "stageMeta": "",
+   "mark": ""
+  }
+ ],
+ "getThere": {
+  "eyebrow": "How to get there",
+  "title": "In at Mérida, Out at Cancún",
+  "intro": "Fly into one airport and home from another, with the peninsula crossed by private car. Transfer times are given only where the hotel publishes them.",
+  "points": [
+   [
+    "Fly into Mérida (MID)",
+    "Chablé Yucatán is about 45 to 50 minutes by road from Mérida International Airport, with private transfers available."
+   ],
+   [
+    "Across the peninsula by road",
+    "Chablé Yucatán to Tulum, and Tulum to Maroma Beach, are by private car. Neither leg has a published drive time, so James sets them when he plans your dates."
+   ],
+   [
+    "Fly home from Cancún (CUN)",
+    "Chablé Maroma is about 35 to 40 minutes by car from Cancún International Airport, and Chablé can arrange private transfers."
+   ],
+   [
+    "Tulum's own airport",
+    "Mezzanine lists Tulum International (TQO), about 45 km and 45 to 60 minutes away, for the shortest transfer, and Cancún, about 120 km and 2 to 2.5 hours, for the widest choice of flights."
+   ]
+  ]
+ },
+ "herofacts": [
+  [
+   "Duration",
+   "10 days · 9 nights"
+  ],
+  [
+   "Route",
+   "Mérida → Tulum → Maroma Beach"
+  ],
+  [
+   "Travel",
+   "Private car"
+  ],
+  [
+   "Best months",
+   "December to April"
+  ]
+ ],
+ "suits": [
+  [
+   "Couples",
+   "A hacienda pool in the forest, then a villa on the sand.",
+   "Chablé names couples and honeymooners first at both of its hotels."
+  ],
+  [
+   "Wellness travellers",
+   "A cenote spa, then a water ceremony and temazcal.",
+   "Chablé Yucatán's Spa Journeys, then Chablé Maroma's water ceremony."
+  ],
+  [
+   "Food lovers",
+   "A Mayan kitchen, a Thai terrace and Jorge Vallejo.",
+   "A cooking class at Chablé Yucatán, Mezzanine's cliffside Thai kitchen and Jorge Vallejo's cooking at Chablé Maroma."
+  ],
+  [
+   "Culture first",
+   "The Mayan ruins on the doorstep in Tulum.",
+   "Mezzanine sits inside Jaguar Park, steps from the ruins, with packages to Sian Ka'an."
+  ]
+ ],
+ "twice": [
+  [
+   "Travelling with children under 16",
+   "Mezzanine Tulum takes guests aged 16 and over.",
+   "Nômade Temple Tulum welcomes all ages, with family rooms and a two-bedroom villa with its own pool; Chablé Yucatán has a Kids Club."
+  ],
+  [
+   "Wanting the Caribbean from day one",
+   "The first three nights are inland, in the Mayan forest.",
+   "Ask James to swap the order and finish at the hacienda, flying home from Mérida."
+  ]
+ ],
+ "experiences": [
+  {
+   "kicker": "Chablé Yucatán · Days 1 to 3",
+   "title": "The cenote spa",
+   "info": "The cenote spa and the Chablé Spa Journeys at the hacienda.",
+   "dur": "",
+   "incl": "",
+   "season": "November to April"
+  },
+  {
+   "kicker": "Chablé Yucatán · Days 1 to 3",
+   "title": "The Melipona bee sanctuary",
+   "info": "Chablé Yucatán's sanctuary for the Melipona bee, and a Mayan kitchen class.",
+   "dur": "",
+   "incl": "",
+   "season": "November to April"
+  },
+  {
+   "kicker": "Mezzanine Tulum · Days 4 to 6",
+   "title": "Cenotes, canals and Sian Ka'an",
+   "info": "Mezzanine's packages to the cenotes, the ancient canals, the Mayan ruins and Sian Ka'an.",
+   "dur": "",
+   "incl": "",
+   "season": "November to April"
+  },
+  {
+   "kicker": "Mezzanine Tulum · evenings",
+   "title": "Thai on the cliffside terrace",
+   "info": "Thai dining on Mezzanine's cliffside terrace, above the sea.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  },
+  {
+   "kicker": "Chablé Maroma · Days 7 to 9",
+   "title": "The water ceremony and temazcal",
+   "info": "Chablé Maroma's water ceremony and temazcal, or cenote diving.",
+   "dur": "",
+   "incl": "",
+   "season": "December to April"
+  },
+  {
+   "kicker": "Chablé Maroma · every table",
+   "title": "Jorge Vallejo's cooking",
+   "info": "Jorge Vallejo's cooking at every table at Chablé Maroma.",
+   "dur": "",
+   "incl": "",
+   "season": "All year"
+  }
+ ],
+ "lodges_title": "Three stays, forest to sea",
+ "lodges": [
+  {
+   "name": "Chablé Yucatán",
+   "line": "Near Mérida · Days 1 to 3",
+   "chips": [
+    "3 nights",
+    "Private pool casitas",
+    "Kids Club"
+   ],
+   "photos": [
+    "Chablé Yucatán"
+   ],
+   "body": "A hacienda in the Mayan forest near Mérida, with casitas that each have a private pool, a cenote spa, a Melipona bee sanctuary and a Mayan kitchen. Chablé names it for couples, honeymooners and wellness travellers; families are welcome with a Kids Club.",
+   "rows": [
+    [
+     "Location",
+     "In the Mayan forest near Mérida, Yucatán"
+    ],
+    [
+     "Nights",
+     "3 · Days 1 to 3"
+    ],
+    [
+     "Rooms",
+     "Casitas with private pool, family, presidential and royal villas"
+    ],
+    [
+     "Getting there",
+     "Mérida International Airport (MID), about 45 to 50 minutes by road; private transfers available"
+    ],
+    [
+     "Best months",
+     "November to April, the dry season"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/chable-yucatan\">Chablé Yucatán</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Mezzanine Tulum",
+   "line": "Tulum · Days 4 to 6",
+   "chips": [
+    "3 nights",
+    "16 and over",
+    "Inside Jaguar Park"
+   ],
+   "photos": [
+    "Mezzanine Tulum"
+   ],
+   "body": "A small hotel above the sea, one of the few inside Jaguar Park, the protected stretch of Tulum between the jungle and the Caribbean, steps from the Mayan ruins. Three room categories, a Thai kitchen on the cliffside terrace and packages to the cenotes, canals and Sian Ka'an.",
+   "rows": [
+    [
+     "Location",
+     "Carretera Tulum to Boca Paila Km 4.4, inside Jaguar Park"
+    ],
+    [
+     "Nights",
+     "3 · Days 4 to 6"
+    ],
+    [
+     "Rooms",
+     "Penthouse with plunge pool, sea view room, interior room"
+    ],
+    [
+     "Getting there",
+     "Tulum (TQO) 45 to 60 minutes; Cancún (CUN) 2 to 2.5 hours; transfers booked by the concierge"
+    ],
+    [
+     "Best months",
+     "November to April, the dry season as Mezzanine describes it"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/mezzanine-tulum\">Mezzanine Tulum</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Nômade Temple Tulum",
+   "line": "Tulum · the family choice for Days 4 to 6",
+   "chips": [
+    "All ages",
+    "Family rooms",
+    "Three restaurants"
+   ],
+   "photos": [
+    "Nômade Temple Tulum"
+   ],
+   "body": "On the beach where the Mayan jungle meets the Caribbean, with breathwork, ice baths, stargazing and yoga, live music through the week and three restaurants. Families are welcome, with family rooms and a two-bedroom villa with its own pool.",
+   "rows": [
+    [
+     "Location",
+     "Carretera Tulum to Boca Paila Km 10.5"
+    ],
+    [
+     "Nights",
+     "3 · Days 4 to 6, in place of Mezzanine"
+    ],
+    [
+     "Getting there",
+     "Cancún (CUN), 130 km, about 2 hours by road; private transport booked at least 48 hours ahead"
+    ],
+    [
+     "Best months",
+     "November to April"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/nomade-tulum\">Nômade Temple Tulum</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Chablé Maroma",
+   "line": "Maroma Beach · Days 7 to 9",
+   "chips": [
+    "3 nights",
+    "70 pool villas",
+    "Private beach"
+   ],
+   "photos": [
+    "Chablé Maroma"
+   ],
+   "body": "Seventy villas by Paulina Morán in a protected stretch of jungle on Maroma Beach, each with a private terrace, a plunge pool and the Chablé moon shower, a private beach on the Caribbean and Jorge Vallejo's cooking at every table.",
+   "rows": [
+    [
+     "Location",
+     "Maroma Beach, Riviera Maya"
+    ],
+    [
+     "Nights",
+     "3 · Days 7 to 9"
+    ],
+    [
+     "Rooms",
+     "Treetop, Jungle and Serenity Pool Villas"
+    ],
+    [
+     "Getting there",
+     "About 35 to 40 minutes by car from Cancún (CUN); private transfers arranged by Chablé"
+    ],
+    [
+     "Best months",
+     "December to April, warm and dry"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/chable-maroma\">Chablé Maroma</a>"
+    ]
+   ]
+  },
+  {
+   "name": "Nômade Temple Holbox",
+   "line": "Holbox Island · an optional extension",
+   "chips": [
+    "Adults 18+",
+    "Yum Balam reserve"
+   ],
+   "photos": [
+    "Nômade Temple Holbox"
+   ],
+   "body": "A wellness retreat on Holbox Island, where the Caribbean meets the Gulf of Mexico, inside the Yum Balam Nature Reserve: thirty rooms through three levels of jungle, from canvas-walled Moon Temple rooms to treehouses.",
+   "rows": [
+    [
+     "Location",
+     "Holbox Island, Yum Balam Nature Reserve"
+    ],
+    [
+     "Nights",
+     "Optional, after Chablé Maroma"
+    ],
+    [
+     "Getting there",
+     "From Cancún (CUN), 2 to 2.5 hours by road to Chiquilá port, then about 30 minutes across to Holbox"
+    ],
+    [
+     "Best months",
+     "November to April"
+    ],
+    [
+     "Stay page",
+     "<a href=\"/stays/nomade-holbox\">Nômade Temple Holbox</a>"
+    ]
+   ]
+  }
+ ],
+ "incl": [
+  "Nine nights as listed: three at Chablé Yucatán, three at Mezzanine Tulum (or Nômade Temple Tulum), three at Chablé Maroma",
+  "Private transfers: Mérida airport to Chablé Yucatán, between the stays, and Chablé Maroma to Cancún airport",
+  "24-hour support from James Wild & Co. while you travel"
+ ],
+ "excl": [
+  "International flights into Mérida and home from Cancún",
+  "Travel insurance",
+  "Meals, spa and experiences not included in your rate",
+  "Gratuities"
+ ],
+ "founder": {
+  "eyebrow": "Designed by the founder",
+  "title": "Chablé at Both Ends of the Peninsula",
+  "p1": "James inspected Chablé Yucatán and Chablé Maroma in person and approved both for the Ledger in 2026. He has not stayed at Mezzanine Tulum; it is filed from the hotel's own information.",
+  "p2": "The route follows the airports: in at Mérida for the hacienda, down to Tulum for the ruins and the cenotes, then up the coast to Maroma Beach for the last three nights, 35 to 40 minutes from Cancún.",
+  "film": "Founder's film to come"
+ },
+ "approve": {
+  "title": "In at Mérida, out at Cancún",
+  "seal_bottom": "YUCATÁN · RIVIERA MAYA",
+  "seal_mark": "CHABLÉ 2026",
+  "why": [
+   "Chablé Yucatán and Chablé Maroma are both marked Founder inspected & approved in the Ledger, 2026.",
+   "Three nights in each place, as the house advises for every route.",
+   "Every stay on the route has its own page in the Ledger."
+  ],
+  "quote": "Three or four nights in each setting is usually more rewarding than changing hotels every second day."
+ },
+ "proof": "James inspected Chablé Yucatán and Chablé Maroma in person in 2026 and approved both for the Ledger. He has not stayed at Mezzanine Tulum.",
+ "vettedLine": "Chablé Yucatán and Chablé Maroma inspected in person by James Wild",
+ "faqs": [
+  [
+   "What is the best Yucatán and Riviera Maya itinerary?",
+   "Ten days and nine nights: three at Chablé Yucatán near Mérida, three at Mezzanine Tulum inside Jaguar Park and three at Chablé Maroma on Maroma Beach, flying into Mérida (MID) and home from Cancún (CUN)."
+  ],
+  [
+   "How do you get to Chablé Yucatán?",
+   "Fly to Mérida International Airport (MID). The hacienda is about 45 to 50 minutes away by road, and private transfers are available."
+  ],
+  [
+   "How far is Chablé Maroma from Cancún airport?",
+   "About 35 to 40 minutes by car from Cancún International Airport (CUN). Chablé can arrange private transfers."
+  ],
+  [
+   "When is the best time to go?",
+   "December to April suits all three stays. Chablé Yucatán and Mezzanine name November to April, the dry season, and Mezzanine calls May to October the wet season. Chablé Maroma names December to April, warm and dry."
+  ],
+  [
+   "Can we bring children?",
+   "Mezzanine Tulum takes guests aged 16 and over. For a family, James books Nômade Temple Tulum instead, which welcomes all ages, with family rooms and a two-bedroom villa with its own pool. Chablé Yucatán has a Kids Club."
+  ],
+  [
+   "Can we add Holbox?",
+   "Yes. Nômade Temple Holbox is an adults-only (18+) retreat inside the Yum Balam Nature Reserve. From Cancún it is 2 to 2.5 hours by road to Chiquilá port, then about 30 minutes across to the island."
+  ],
+  [
+   "Has James stayed at these hotels?",
+   "James inspected Chablé Yucatán and Chablé Maroma in person and approved both in 2026. He has not stayed at Mezzanine Tulum or Nômade Temple Tulum; both are filed from the hotels' own information."
+  ],
+  [
+   "How much does this route cost?",
+   "It is quoted against your dates and travellers. James Wild & Co does not publish a fixed price for this route."
+  ]
+ ],
+ "reltitle": "More routes nearby",
+ "related": [
+  [
+   "JW-BZ-D09 · 10 DAYS",
+   "Deep Belize",
+   "Four nights in the Mountain Pine Ridge, then five on a private island off Dangriga."
+  ],
+  [
+   "JW-GT-A07 · 7 DAYS",
+   "Guatemala in 7 Days",
+   "Antigua, Lake Atitlán and Tikal at first light from Bolontiku."
+  ],
+  [
+   "DESTINATION",
+   "Mexico",
+   "Every stay in Mexico, the months to go and the routes."
+  ]
+ ],
+ "relatedHrefs": [
+  "/overland/belize/deep-belize",
+  "/overland/guatemala/guatemala-in-7-days",
+  "/destinations/caribbean-mexico/mexico"
+ ],
+ "slides": [
+  {
+   "kicker": "Yucatán and the Riviera Maya · Mexico",
+   "title": "Yucatán and the Riviera Maya, with Chablé",
+   "line": "A hacienda in the Mayan forest, a cliff above Tulum, then a pool villa on Maroma Beach.",
+   "photo": "",
+   "bg": "linear-gradient(160deg,#25321F 0%,#4F6B3A 55%,#7C9488 100%)"
+  }
+ ],
+ "map_title": "Mérida to the Riviera Maya",
+ "map_coord": "20°13′N 87°26′W · JW-MX-C09",
+ "seo": {
+  "path": "/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
+  "title": "10-Day Yucatán and Riviera Maya Itinerary with Chablé",
+  "description": "Ten days in Mexico: three nights at Chablé Yucatán near Mérida, three at Mezzanine Tulum and three at Chablé Maroma on Maroma Beach. In at Mérida, out at Cancún. Designed by James Wild.",
+  "keywords": [
+   "Yucatán itinerary",
+   "Riviera Maya itinerary",
+   "Chablé Yucatán",
+   "Chablé Maroma",
+   "Mérida to Tulum itinerary"
+  ]
+ },
+ "touristType": [
+  "Couples",
+  "Wellness travellers"
+ ],
+ "bestFor": {
+  "who": "Couples",
+  "why": "A hacienda pool in the Mayan forest, then a villa on Maroma Beach."
+ },
+ "photoCredit": "Photographs courtesy of Chablé, Mezzanine Tulum and Nômade.",
+ "jsonld": [
+  {
+   "@context": "https://schema.org",
+   "@type": "TouristTrip",
+   "@id": "https://www.jameswildco.com/overland/mexico/yucatan-and-the-riviera-maya-with-chable#trip",
+   "name": "Yucatán and the Riviera Maya, with Chablé",
+   "url": "https://www.jameswildco.com/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
+   "description": "The best Yucatán and Riviera Maya itinerary, as James Wild & Co draws it, is ten days between two Chablé hotels: three nights at Chablé Yucatán, the hacienda in the Mayan forest near Mérida, three at Mezzanine Tulum, above the sea inside Tulum's protected Jaguar Park, and three at Chablé Maroma, seventy private pool villas on Maroma Beach. Fly into Mérida (MID) and home from Cancún (CUN), with every leg by private car.",
+   "touristType": [
+    "Couples",
+    "Wellness travellers"
+   ],
+   "provider": {
+    "@type": "TravelAgency",
+    "name": "James Wild & Co",
+    "url": "https://www.jameswildco.com",
+    "telephone": "+1-561-479-6355",
+    "email": "james@jameswildco.com",
+    "identifier": [
+     "FL Seller of Travel ST45327",
+     "IATAN 10783883"
+    ]
+   },
+   "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 4,
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Chablé Yucatán, near Mérida",
+       "description": "Days 1 to 3 · from Mérida (MID)"
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Tulum",
+       "description": "Days 4 to 6 · Mezzanine Tulum",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.2143,
+        "longitude": -87.4299
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Maroma Beach, Riviera Maya",
+       "description": "Days 7 to 9 · Chablé Maroma",
+       "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.7203,
+        "longitude": -86.9699
+       }
+      }
+     },
+     {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+       "@type": "TouristDestination",
+       "name": "Cancún International Airport (CUN)",
+       "description": "Day 10 · flights home"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

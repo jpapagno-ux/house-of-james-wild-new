@@ -1,0 +1,157 @@
+{
+ "id": "amandira-from-sorong-stops",
+ "type": "voyage",
+ "destination": "raja-ampat",
+ "title": "Raja Ampat Expedition aboard Amandira",
+ "subtitle": "Stops in order · From Sorong · Amandira",
+ "days": {
+  "1": "Sorong to Mioskon",
+  "2": "The Waigeo coast and Yanggefo",
+  "3": "Across the Equator to Wayag",
+  "4": "Mount Pindito",
+  "5": "A pearl farm and its reef",
+  "6": "Kawe",
+  "7": "Aljui Bay",
+  "8": "Arborek"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Mioskon",
+   "lat": -0.5,
+   "lng": 130.72,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Yanggefo",
+   "lat": -0.54,
+   "lng": 130.63,
+   "mode": "sea",
+   "path": [
+    [
+     130.72,
+     -0.5
+    ],
+    [
+     130.63,
+     -0.54
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Wayag",
+   "lat": 0.17,
+   "lng": 130.03,
+   "mode": "sea",
+   "path": [
+    [
+     130.63,
+     -0.54
+    ],
+    [
+     130.03,
+     0.17
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Wayag",
+   "lat": 0.16,
+   "lng": 130.05,
+   "mode": "sea",
+   "path": [
+    [
+     130.03,
+     0.17
+    ],
+    [
+     130.05,
+     0.16
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Waigeo",
+   "lat": -0.1,
+   "lng": 130.4,
+   "mode": "sea",
+   "path": [
+    [
+     130.05,
+     0.16
+    ],
+    [
+     130.4,
+     -0.1
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Kawe",
+   "lat": 0.0,
+   "lng": 130.13,
+   "mode": "sea",
+   "path": [
+    [
+     130.4,
+     -0.1
+    ],
+    [
+     130.13,
+     0.0
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Aljui Bay",
+   "lat": -0.12,
+   "lng": 130.27,
+   "mode": "sea",
+   "path": [
+    [
+     130.13,
+     0.0
+    ],
+    [
+     130.27,
+     -0.12
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Arborek",
+   "lat": -0.565,
+   "lng": 130.52,
+   "mode": "sea",
+   "path": [
+    [
+     130.27,
+     -0.12
+    ],
+    [
+     130.52,
+     -0.565
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

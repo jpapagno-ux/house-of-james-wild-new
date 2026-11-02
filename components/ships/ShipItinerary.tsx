@@ -19,7 +19,8 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
   const list = itineraries.map((it) => ({
     name: it.name,
     direction: it.direction,
-    nights: it.nights ?? it.days.length - 1,
+    // A route the operator gives as ordered stops with no length keeps nights null (never a count from the stops).
+    nights: it.nights ?? (it.days.some((d) => d.label?.startsWith("Stop")) ? null : it.days.length - 1),
     days: it.days.map((d) => ({ day: d.day, title: d.title, place: d.place, summary: d.summary, label: d.label, indicative: d.indicative })),
   }));
   return (

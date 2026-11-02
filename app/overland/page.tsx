@@ -15,7 +15,7 @@ import RouteAtlas from "@/components/journey/RouteAtlas";
 // /overland: Volume 05 hub shell. Routes James designed, by country.
 const PATH = "/overland";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Botswana, South Africa", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
+export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Mexico, Guatemala, Belize, Botswana, South Africa", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
 
 // South Africa's destination card (James, 30 Oct 2026): the country page, with Wild & Co
 // Safaris as the cross-reference. Londolozi's own photograph, credited beside the card.
@@ -26,7 +26,7 @@ function zaDoor(routes: number): Door {
 
 export default function OverlandHub() {
   const za = journeysFor("south-africa");
-  const groups = [{ name: "Costa Rica", list: journeysFor("costa-rica") }, { name: "Botswana", list: journeysFor("botswana") }, { name: "South Africa", list: za, door: zaDoor(za.length) }];
+  const groups = [{ name: "Costa Rica", list: journeysFor("costa-rica") }, { name: "Mexico", list: journeysFor("mexico") }, { name: "Guatemala", list: journeysFor("guatemala") }, { name: "Belize", list: journeysFor("belize") }, { name: "Botswana", list: journeysFor("botswana") }, { name: "South Africa", list: za, door: zaDoor(za.length) }];
   const all = groups.flatMap((g) => g.list);
   return (
     <>
@@ -38,7 +38,7 @@ export default function OverlandHub() {
           line="Pick a route and the globe flies to it, then plays it day by day: Costa Rica coast to coast, the Sabi Sand to the Cape."
           routes={all.filter((j) => j.kind === "route").map((j) => ({ id: j.href.split("/").pop()!, label: j.title, href: j.href, where: groups.find((g) => g.list.includes(j))!.name }))} />
         {groups.map((g) => (
-          <HubSection key={g.name} eyebrow={`${g.list.length} routes`} title={g.name} id={`${g.name}-h`.replace(/\s/g, "-").toLowerCase()}>
+          <HubSection key={g.name} eyebrow={`${g.list.length} ${g.list.length === 1 ? "route" : "routes"}`} title={g.name} id={`${g.name}-h`.replace(/\s/g, "-").toLowerCase()}>
             {g.door && (
               <div className="mb-8 grid gap-5 md:grid-cols-[minmax(0,380px)_1fr] items-center">
                 <DoorCard d={g.door} />

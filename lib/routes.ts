@@ -39,6 +39,9 @@ export const BUILT: string[] = [
   "/overland/south-africa/leopards-through-the-lens",
   "/overland/south-africa/track-your-life-with-boyd-varty",
   "/overland/south-africa/three-generations-at-pioneer",
+  "/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
+  "/overland/guatemala/guatemala-in-7-days",
+  "/overland/belize/deep-belize",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
   "/voyages/ships/aliikai",
@@ -79,6 +82,8 @@ export const BUILT: string[] = [
   "/voyages/ships/ecoventura-evolve-yacht",
   "/voyages/ships/alya-catamaran-galapagos",
   "/voyages/ships/sirius-yacht-galapagos",
+  "/voyages/ships/hermes-galapagos",
+  "/voyages/ships/amandira",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

@@ -12,6 +12,8 @@ export type RankEntry = { ledgerId: string; countrySlug: string | null; regionSl
 export type RankMark = { ledgerId: string; mark: string };
 export type RankDna = { countries: string[]; volumes: string[]; availability: string; marks: RankMark[] } | null | undefined;
 export type Rankable<T> = { a: T; slug: string; entries: RankEntry[]; dna: RankDna; deskCountries: string[]; deskVolumes: string[] };
+const SLEPT = new Set(["Stayed", "Sailed It"]);
+
 export type Where = { countrySlug?: string | null; regionSlug?: string | null; volume?: string; ledgerId?: string | null };
 
 export function rankAdvisors<T>(pool: Rankable<T>[], where: Where, opts: { defaultSlug: string; countryOfRecord: (ledgerId: string) => string | null }): { advisors: T[]; slept: number; carried: number } {
@@ -31,7 +33,8 @@ export function rankAdvisors<T>(pool: Rankable<T>[], where: Where, opts: { defau
     : [];
   return {
     advisors: [...hits.map((x) => x.r.a), ...marked.map((r) => r.a), ...knows.map((r) => r.a)],
-    slept: hits.filter((x) => x.es.some((e) => e.theirs && e.theirs.mark !== "Sent Guests")).length + marked.filter((r) => markHere(r).some((m) => m.mark !== "Sent Guests")).length,
+    // "Has stayed" / "slept here" counts only a night: Stayed, or Sailed It on a ship. Walked It is an inspection, not a stay (2 Nov 2026).
+    slept: hits.filter((x) => x.es.some((e) => e.theirs && SLEPT.has(e.theirs.mark))).length + marked.filter((r) => markHere(r).some((m) => SLEPT.has(m.mark))).length,
     carried: hits.reduce((n, x) => n + x.es.length, 0) + marked.reduce((n, r) => n + markHere(r).length, 0),
   };
 }

@@ -12,7 +12,8 @@ export type ShipPathway = { primary: PathwayId; secondary: PathwayId[] };
 /** `label`: a day block the operator publishes as one ("Days 3 to 6"); `indicative`: the research split a
  *  published block across days, so the order is a guide only (the page says so). */
 export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string; label?: string; indicative?: boolean };
-/** nights null and no days: a private charter whose route is set with the guest. */
+/** nights null and no days: a private charter whose route is set with the guest. nights null with days: the operator
+ *  lists the stops in order but publishes no length (Amandira), so the days are labelled stops, never nights. */
 /** `short`: the atlas chip label where directions repeat (polar voyages); `href`: the voyage's own page. */
 export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[]; short?: string; href?: string };
 /** `night`: the published rate per person per night (ships priced by the night, `rateBasis: "per-night"`). */
@@ -36,6 +37,9 @@ export const packages = (s: Pick<ShipRecord, "departures">) => s.departures.filt
 export const isBand = (d: ShipDeparture) => !!d.dateTo;
 /** How the operator prices her: the whole cruise per person (A&K), or per person per night by cabin (Aliikai). */
 export type RateBasis = "per-cruise" | "per-night";
+/** A fare by cruise length (Via Natura publishes no dated departures, only a fare for each length and year):
+ *  per person and, where published, the full-vessel charter, both in USD, keyed by year. */
+export type LengthFare = { duration: string; nights: number; perPerson: Record<string, number>; charter?: Record<string, number> };
 /** A film: a YouTube id, or an id with a title. null shows the "Film coming soon" panel. */
 export type ShipFilm = string | { id: string; title?: string } | null;
 
@@ -78,7 +82,7 @@ export type ShipRecord = {
   /** A line in the house voice above the answer (Aliikai: James's own words). */
   quote?: string;
   /** Glance-bar wording where the facts would run long (Aliikai's guests line). */
-  glance?: Partial<Record<"route" | "guests" | "ages", string>>;
+  glance?: Partial<Record<"route" | "guests" | "ages" | "nights", string>>;
   /** false when the operator publishes no dates or fares at all (MV Premium): the panel says "Ask us". */
   datesPublished?: boolean;
   /** The operator publishes one schedule for a fleet (Ecoventura): Dates & rates says so. */
@@ -87,6 +91,10 @@ export type ShipRecord = {
   proofLine?: string;
   /** Departures known only by month (lib/content/ships/months.ts), until exact dates are filed. */
   monthly?: MonthDeparture[];
+  /** Fares by cruise length when no dated departures are published (Hermes): the panel says "Ask us for dates". */
+  lengthFares?: LengthFare[];
+  /** Payment and cancellation terms as the operator publishes them, printed under Dates & rates. */
+  terms?: string[];
 };
 
 /** The rate basis in words, for Dates & rates and the cabin cards. */
@@ -97,9 +105,17 @@ export const filmId = (f: ShipFilm | undefined) => (!f ? null : typeof f === "st
 const prices = (d: ShipDeparture) => Object.values(d.prices).filter((p): p is number => typeof p === "number" && p > 0);
 const open = (d: ShipDeparture) => !/full|sold/i.test(d.status ?? "");
 
+/** The lowest per-person fare by cruise length, any year (Hermes). */
+export function lengthFrom(s: { lengthFares?: LengthFare[] }): { price: number; fare: LengthFare; year: string } | null {
+  let best: { price: number; fare: LengthFare; year: string } | null = null;
+  for (const f of s.lengthFares ?? []) for (const [year, p] of Object.entries(f.perPerson)) if (p > 0 && (!best || p < best.price)) best = { price: p, fare: f, year };
+  return best;
+}
+
 /** Lowest published cruise fare per person across open departures (all if none open). Package journeys never count. */
-export function fromPrice(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): number | null {
+export function fromPrice(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; lengthFares?: LengthFare[] }): number | null {
   const cruise = cruiseOnly(s);
+  if (!cruise.length && s.lengthFares?.length) return lengthFrom(s)?.price ?? null;
   if (!cruise.length && s.monthly?.length) return lowestFrom(s.monthly);
   const pool = cruise.filter(open).length ? cruise.filter(open) : cruise;
   const all = pool.flatMap(prices);
@@ -164,7 +180,10 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 /** What a card or glance bar says about price: a cruise fare, an A&K journey fare (labelled), or on request. */
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
-export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; lengthFares?: LengthFare[] }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+  // Fares by cruise length only (no dated departures published): the lowest, with its length and year.
+  const lf = !s.departures.length ? lengthFrom(s) : null;
+  if (lf) return { kind: "cruise", label: "From", amount: `US$${lf.price.toLocaleString("en-US")}`, basis: `per person, cruise only, ${lf.fare.nights} nights, ${lf.year} fare` };
   // Month-level departures only (dates in the operator's booking tool): the lowest published "from".
   const m = !s.departures.length && s.monthly?.length ? lowestFrom(s.monthly) : null;
   if (m) return { kind: "cruise", label: "From", amount: `US$${m.toLocaleString("en-US")}`, basis: "per person, double cabin, as the operator shows it" };
@@ -178,10 +197,12 @@ export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthD
 }
 
 /** "4 to 7 nights" or "4 nights". */
-export function nightsLabel(s: Pick<ShipRecord, "itineraries"> & Partial<Pick<ShipRecord, "departures">>): string {
-  // Sailings that carry their own length (Aliikai) give the true range; else the itineraries.
+export function nightsLabel(s: Pick<ShipRecord, "itineraries"> & Partial<Pick<ShipRecord, "departures" | "lengthFares" | "glance">>): string {
+  if (s.glance?.nights) return s.glance.nights;
+  // Sailings that carry their own length (Aliikai) give the true range; then fares by length (Hermes); else the itineraries.
   const dep = (s.departures ?? []).map((d) => d.nights).filter((x): x is number => typeof x === "number");
-  const n = [...new Set(dep.length ? dep : s.itineraries.map((i) => i.nights).filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
+  const fares = (s.lengthFares ?? []).map((f) => f.nights);
+  const n = [...new Set(dep.length ? dep : fares.length ? fares : s.itineraries.map((i) => i.nights).filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
   if (!n.length) return "";
   return n.length === 1 ? `${n[0]} nights` : `${n[0]} to ${n[n.length - 1]} nights`;
 }

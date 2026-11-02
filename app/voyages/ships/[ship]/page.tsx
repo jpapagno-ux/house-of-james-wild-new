@@ -4,6 +4,7 @@ import { aliikaiExtra } from "@/components/ships/AliikaiShip";
 import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
+import { exceptionalFewForVessel } from "@/lib/content/exceptional-few";
 
 // /voyages/ships/<ship>: every vessel on the one shared ship template
 // (components/ships/RecordShip): the ship, her day by day, cabins, deck plan and
@@ -25,5 +26,6 @@ export async function generateMetadata({ params }: P) {
 export default async function ShipPage({ params }: P) {
   const e = shipBySlug((await params).ship);
   if (!e) notFound();
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={e.slug === "aliikai" ? aliikaiExtra() : undefined} />;
+  // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={e.slug === "aliikai" ? aliikaiExtra() : undefined} ef={exceptionalFewForVessel(e.slug)} />;
 }

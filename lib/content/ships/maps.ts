@@ -22,6 +22,11 @@ export function shipMap(e: ShipEntry): { html: string; figCss?: string } | null 
     const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
     return routes.length && routes.every(Boolean) ? chartFor(routes.map((r) => r!), `jwmap-${s.slug}`, `Route map of ${s.name}'s Antarctica21 voyages`) : null;
   }
+  // Indonesia on the shared template (Amandira): her route files, stops in the operator's order.
+  if (e.waters === "indonesia" && e.slug !== "aliikai") {
+    const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
+    return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: String(routes[0]!.destination ?? "raja-ampat"), title: `Route map of ${s.name} in Indonesia`, kicker: "THE VOYAGE · UNDER SAIL" }) } : null;
+  }
   if (e.slug === "aliikai") {
     const trip = TRIPS["10-day-raja-ampat-north"];
     const html = trip ? mapHtml(trip) : "";

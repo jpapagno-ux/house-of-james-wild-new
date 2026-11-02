@@ -10,6 +10,9 @@ import zaLens from "./trips/leopards-through-the-lens.json";
 import zaTrack from "./trips/track-your-life-with-boyd-varty.json";
 import zaPioneer from "./trips/three-generations-at-pioneer.json";
 import polarCircle from "./trips/polar-circle-air-cruise.json";
+import mxChable from "./trips/yucatan-and-the-riviera-maya-with-chable.json";
+import gtSeven from "./trips/guatemala-in-7-days.json";
+import bzDeep from "./trips/deep-belize.json";
 import { activeGroups } from "@/lib/dates";
 
 // Journeys (overland) and voyages, from James's route files. Each record is
@@ -68,10 +71,16 @@ export type Trip = {
   bestFor?: { who: string; why: string };
   /** The founder's testimony for this page: when he went, or plainly that he hasn't. */
   proof?: string;
+  /** How to get there: flights and helicopters first where a stay states them, then the legs between stays. */
+  getThere?: { eyebrow: string; title: string; intro: string; points: [string, string][] };
+  /** The line under the summary in place of "Vetted in person by James Wild", for a route whose stays he has not all visited. */
+  vettedLine?: string;
   /** Why the route suits a first visit to the destination. */
   firstTime?: { eyebrow: string; title: string; intro: string; points: [string, string][] };
   /** Stay/vessel slugs whose live offers show on this route (Offer Ledger). */
   offerRefs?: string[];
+  /** Extension chips under the stays, by key in lib/content/extensions.ts (components/journey/ExtensionChip). */
+  extensions?: string[];
   /** One line under the summary naming whose photographs the page uses. */
   photoCredit?: string;
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };
@@ -93,6 +102,11 @@ const FILED: Record<string, Trip> = {
   "leopards-through-the-lens": zaLens as unknown as Trip,
   "track-your-life-with-boyd-varty": zaTrack as unknown as Trip,
   "three-generations-at-pioneer": zaPioneer as unknown as Trip,
+  // Central America (James approved the three routes, 2 Nov 2026). Live stays only (stays.json +
+  // stay-release.json); facts from the stays' and the country pages' own records. No offers shown.
+  "yucatan-and-the-riviera-maya-with-chable": mxChable as unknown as Trip,
+  "guatemala-in-7-days": gtSeven as unknown as Trip,
+  "deep-belize": bzDeep as unknown as Trip,
 };
 
 // Sailings past their date are dropped here (lib/dates.ts), and a group left

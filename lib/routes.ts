@@ -23,6 +23,7 @@ export const BUILT: string[] = [
   "/whats-coming",
   "/for-advisors/apply",
   "/partners",
+  "/partners/*", // partner pages (lib/content/partners)
   "/travel-notes",
   "/field-guides",
   "/stays",

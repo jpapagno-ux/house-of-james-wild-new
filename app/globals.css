@@ -326,6 +326,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark.theme-ef-hermes .ef-day { --ef-surface: #EEF3F2; --ef-ink: #1F2A2E; --ef-muted: rgba(31,42,46,0.68); --ef-line: rgba(31,42,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3D5560; --ef-earth: #245A66; --jw-card: #FFFFFF; --jw-accent: 36 90 102; --jw-accent-deep: 28 72 82; --jw-accent-hex: #245A66; --jw-accent-deep-hex: #1C4852; }
 .theme-ef-dark.theme-ef-amandira { --ef-surface: #1B1F3A; --ef-ink: #F2E9DC; --ef-muted: rgba(242,233,220,0.74); --ef-line: rgba(242,233,220,0.2); --ef-sand: #C08A55; --ef-earth: #D49A62; --ef-landscape: #232849; --ef-shadow: rgba(242,233,220,0.6); --ef-accent: #C08A55; --jw-accent: 192 138 85; --jw-accent-deep: 166 115 66; --jw-accent-light: 229 211 188; --jw-accent-hex: #C08A55; --jw-accent-deep-hex: #A67342; --jw-card: #232849; }
 .theme-ef-dark.theme-ef-amandira .ef-day { --ef-surface: #F4ECE1; --ef-ink: #2A2522; --ef-muted: rgba(42,37,34,0.68); --ef-line: rgba(42,37,34,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3A3A5C; --ef-earth: #8A5A2E; --jw-card: #FFFFFF; --jw-accent: 138 90 46; --jw-accent-deep: 116 74 36; --jw-accent-hex: #8A5A2E; --jw-accent-deep-hex: #744A24; }
+/* The ship section nav sits on the night surface of a designated vessel, so its links stay legible. */
+.theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
+.theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }
+.theme-ef-dark [data-ship-nav] .ledger-eyebrow.ledger-crimson { color: var(--ef-ink); }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }

@@ -5,6 +5,7 @@ import Theory from "./ecoventura-theory-yacht.json";
 import Evolve from "./ecoventura-evolve-yacht.json";
 import Alya from "./alya-catamaran-galapagos.json";
 import Sirius from "./sirius-yacht-galapagos.json";
+import Hermes from "./hermes-galapagos.json";
 
 // The Galápagos yachts, filed 1 Nov 2026 from ecoventura.com and Galaxy Cruises' own site and
 // booking feed (photographs: each operator). Ecoventura publishes one weekly schedule for its
@@ -20,4 +21,7 @@ export const GALAPAGOS_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: s
   { data: rec(Evolve), offerRefs: [], credit: "Ecoventura" },
   { data: rec(Alya), offerRefs: [], credit: "Galaxy Cruises" },
   { data: rec(Sirius), offerRefs: [], credit: "Galaxy Cruises" },
+  // Via Natura's Hermes (filed 2 Nov 2026 from vianatura.com; photographs: Vianatura). No dated departures are
+  // published, so she carries fares by cruise length (lengthFares) and "Ask us for dates".
+  { data: rec(Hermes), offerRefs: [], credit: "Vianatura" },
 ];

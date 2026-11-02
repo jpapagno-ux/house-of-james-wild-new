@@ -87,6 +87,19 @@ if (/const BRASS|#B08657/i.test(vol)) errs.push("lib/volumes.ts: the brass sun i
 const offer = read("components/ledger/Marks.tsx").match(/const TEAL = "(#\w{6})"/);
 if (!offer || !fills.has(offer[1].toUpperCase())) errs.push("components/ledger/Marks.tsx: the Time Rewarded offer stamp must be inked in a Deep Sea fill (TEAL)");
 for (const f of ["components/pathways/Pathway.tsx", "components/ledger/HorizonMark.tsx"]) for (const m of read(f).matchAll(/#[0-9A-Fa-f]{6}\b/g)) if (earthy(m[0])) errs.push(`${f}: ${m[0]} is an earth tone`);
+// Tidewater grounds (James, 2 Nov 2026): CSS in step with lib/palette.ts TIDEWATER; ink and muted ink AA on the
+// ground and every band; no sand, tan, cream or parchment.
+const blend = (fg, bg, a) => "#" + [1, 3, 5].map((i) => Math.round(parseInt(fg.slice(i, i + 2), 16) * a + parseInt(bg.slice(i, i + 2), 16) * (1 - a)).toString(16).padStart(2, "0")).join("");
+const tide = Object.fromEntries([...pal.slice(pal.indexOf("export const TIDEWATER")).matchAll(/(\w+): "(#[0-9A-F]{6})"/g)].map((x) => [x[1], x[2]]));
+const ch = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(" ");
+for (const [k, v] of [["ground", `--jw-ground: ${tide.ground};`], ["ruleFine", `--jw-rule-fine: ${tide.ruleFine};`], ["rule", `--jw-rule: ${tide.rule};`], ["seaGreen", `--jw-band-rgb: ${tide.seaGreen && ch(tide.seaGreen)};`], ["aqua", `${tide.aqua && ch(tide.aqua)}`], ["amazon", `--jw-band-rgb: ${tide.amazon && ch(tide.amazon)};`], ["nile", `--jw-band-rgb: ${tide.nile && ch(tide.nile)};`]])
+  if (!tide[k] || !css.includes(v)) errs.push(`app/globals.css: Tidewater ${k} is out of step with lib/palette.ts TIDEWATER`);
+for (const k of ["ground", "card", "seaGreen", "aqua", "amazon", "nile"]) {
+  const bg = tide[k]; if (!bg) continue;
+  if (ratio(blend("#2D2A26", bg, 0.68), bg) < 4.5) errs.push(`lib/palette.ts: muted ink on Tidewater ${k} ${bg} is below AA`);
+  if (earthy(bg)) errs.push(`lib/palette.ts: Tidewater ${k} ${bg} is a sand or tan`);
+}
+if (/card: "#F6F4F0"|sand: \{ DEFAULT: "#EFEAE0"/.test(read("tailwind.config.ts"))) errs.push("tailwind.config.ts: paper.card and sand must read the Tidewater band, not parchment");
 if (errs.length) {
   console.error("\nVolume palette check failed. lib/volumes.ts is the only source of volume colours (docs/brand-colours.md).\n  " + errs.join("\n  ") + "\n");
   process.exit(1);

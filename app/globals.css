@@ -4,22 +4,27 @@
 
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
-  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #F6F4F0; }
+  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #FFFFFF; }
   /* The Deep Sea palette (James, 2 Nov 2026; lib/palette.ts is the source, checked by scripts/check-palette.mjs).
      Buttons and calls to action read --jw-action, never the page accent, so a volume page never turns a button
      brown or olive and House Crimson stays with the seal. Ocean blue, deep teal on hover. */
   :root { --jw-sea-navy: #162D54; --jw-sea-ocean: #1A4A80; --jw-sea-cerulean: #1C6BAE; --jw-sea-slate: #3D4C66; --jw-sea-teal: #0C5D61; --jw-sea-aqua: #08697F; --jw-sea-turquoise: #11705A; --jw-sea-glass: #4A736D; --jw-action: #1A4A80; --jw-action-deep: #0C5D61; }
+  /* Tidewater (James chose it, 2 Nov 2026; lib/palette.ts TIDEWATER): a near-white ground, white cards, fine aqua rules,
+     and section bands that rotate gently, pale sea-green then pale aqua, never two of the same in a row. Each volume
+     leads with its own pale tint (Stays sea-green, Voyages aqua, Amazon green, Nile lapis). No sand, tan or parchment. */
+  :root { --jw-ground: #FCFDFD; --jw-rule-fine: #D3E6E4; --jw-rule: #B5D3D0; --jw-band-rgb: 232 243 238; --jw-band-alt-rgb: 229 242 244; }
+  .theme-sea, :root:has(.theme-sea-page) { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; }
   /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
-  .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+  .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
   /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
-  :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+  :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
   /* Smooth scrolling is opted into by Next through data-scroll-behavior on <html>
      (app/layout.tsx), so the router can still jump instantly on navigation and
      Back/Forward. A CSS rule here fought that and left new pages opening mid-scroll
      (audit, 30 Oct 2026). Only in-page anchor jumps stay smooth. */
   html { overflow-x: clip; }
   html:focus-within { scroll-behavior: smooth; }
-  body { background: #FFFFFF; color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  body { background: var(--jw-ground); color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } }
 }
@@ -35,13 +40,13 @@
   /* Volume tones, read by dots, tabs and the chapter rail */
   /* Volume inks: the one palette (lib/volumes.ts pads, approved 29 Oct 2026). scripts/check-palette.mjs keeps these in step. */
   .vol-stays { --vol: #3E5A3A; } .vol-safaris { --vol: #7A4A24; } .vol-gatherings { --vol: #86232C; } .vol-voyages { --vol: #2A3D5C; } .vol-europe { --vol: #4E2E46; } .vol-overland { --vol: #4D4C27; }
-  .ledger-page { background: #FFFFFF; color: #2D2A26; }
+  .ledger-page { background: var(--jw-ground); color: #2D2A26; }
   .ledger-card { background: var(--jw-card); }
   .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
   .ledger-crimson { color: var(--jw-accent-hex); }
   .ledger-crimson-border { border-color: var(--jw-accent-hex); }
-  .ledger-border { border-color: rgba(45, 42, 38, 0.16); }
-  .ledger-rule { border-color: rgba(45, 42, 38, 0.28); }
+  .ledger-border { border-color: var(--jw-rule-fine); }
+  .ledger-rule { border-color: var(--jw-rule); }
   .ledger-muted { color: rgba(45, 42, 38, 0.68); }
   .ledger-display { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; }
   .ledger-body { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
@@ -199,18 +204,18 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 
 /* Outside @layer so Tailwind never drops a theme chosen from data. */
 /* The six volumes (volume kit, 29 Oct 2026): each volume's leather colour drives the accent on its pages. lib/volumes.ts is the source. */
-.theme-vol-stays { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
-:root:has(.theme-vol-stays-page) { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
-.theme-vol-safaris { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
-:root:has(.theme-vol-safaris-page) { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
-.theme-vol-gatherings { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
-:root:has(.theme-vol-gatherings-page) { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
-.theme-vol-voyages { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
-:root:has(.theme-vol-voyages-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+.theme-vol-stays { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #FFFFFF; }
+:root:has(.theme-vol-stays-page) { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #FFFFFF; }
+.theme-vol-safaris { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #FFFFFF; }
+:root:has(.theme-vol-safaris-page) { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #FFFFFF; }
+.theme-vol-gatherings { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #FFFFFF; }
+:root:has(.theme-vol-gatherings-page) { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #FFFFFF; }
+.theme-vol-voyages { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
+:root:has(.theme-vol-voyages-page) { --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 232 243 238; --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #FFFFFF; }
 .theme-vol-europe { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
 :root:has(.theme-vol-europe-page) { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
-.theme-vol-overland { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
-:root:has(.theme-vol-overland-page) { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
+.theme-vol-overland { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #FFFFFF; }
+:root:has(.theme-vol-overland-page) { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #FFFFFF; }
 
 /* ---------- Volume kit: stamps, offer marks, Final Call board (components/ledger/VolumeKit.tsx) ---------- */
 .jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 3px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
@@ -356,8 +361,13 @@ a:hover .jw-needle { animation-duration: 1.6s; }
    descendant selector outranks the .theme-sea inside, and the :root rule (later than .theme-sea-page) re-tints
    the header and progress bar. Buttons, accents, selected chips and the quiet card tint follow; pathway chips
    keep their own pathway colours. */
-.theme-waters-amazon, .theme-waters-amazon .theme-sea, :root:has(.theme-waters-amazon) { --jw-accent: 26 79 54; --jw-accent-deep: 18 58 39; --jw-accent-light: 196 220 207; --jw-accent-hex: #1A4F36; --jw-accent-deep-hex: #123A27; --jw-card: #EEF5F1; --jw-action: #0A6B4E; --jw-action-deep: #1D5A3B; }
-.theme-waters-nile, .theme-waters-nile .theme-sea, :root:has(.theme-waters-nile) { --jw-accent: 27 52 113; --jw-accent-deep: 18 37 80; --jw-accent-light: 197 206 230; --jw-accent-hex: #1B3471; --jw-accent-deep-hex: #122550; --jw-card: #EEF1F8; --jw-action: #23428F; --jw-action-deep: #0A6570; }
-.theme-waters-river, .theme-waters-river .theme-sea, :root:has(.theme-waters-river) { --jw-accent: 14 79 82; --jw-accent-deep: 10 58 60; --jw-accent-light: 194 220 221; --jw-accent-hex: #0E4F52; --jw-accent-deep-hex: #0A3A3C; --jw-card: #EDF4F4; --jw-action: #0E6467; --jw-action-deep: #23428F; }
+.theme-waters-amazon, .theme-waters-amazon .theme-sea, :root:has(.theme-waters-amazon) { --jw-accent: 26 79 54; --jw-accent-deep: 18 58 39; --jw-accent-light: 196 220 207; --jw-accent-hex: #1A4F36; --jw-accent-deep-hex: #123A27; --jw-card: #FFFFFF; --jw-action: #0A6B4E; --jw-action-deep: #1D5A3B; --jw-band-rgb: 231 242 234; --jw-band-alt-rgb: 229 242 244; }
+.theme-waters-nile, .theme-waters-nile .theme-sea, :root:has(.theme-waters-nile) { --jw-accent: 27 52 113; --jw-accent-deep: 18 37 80; --jw-accent-light: 197 206 230; --jw-accent-hex: #1B3471; --jw-accent-deep-hex: #122550; --jw-card: #FFFFFF; --jw-action: #23428F; --jw-action-deep: #0A6570; --jw-band-rgb: 232 237 248; --jw-band-alt-rgb: 229 242 244; }
+.theme-waters-river, .theme-waters-river .theme-sea, :root:has(.theme-waters-river) { --jw-accent: 14 79 82; --jw-accent-deep: 10 58 60; --jw-accent-light: 194 220 221; --jw-accent-hex: #0E4F52; --jw-accent-deep-hex: #0A3A3C; --jw-card: #FFFFFF; --jw-action: #0E6467; --jw-action-deep: #23428F; --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 231 242 234; }
 /* The logo is not re-coloured by the waters: the header keeps the Voyages navy it wears on every voyage page. */
 :is(.theme-waters-amazon, .theme-waters-nile, .theme-waters-river) header { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; }
+/* Tidewater rotation: a banded section that follows a sibling banded section takes the other tint, the next one goes back, and so on,
+   so two bands of the same tint never sit in a row. (The Exceptional Few keeps its own bands: its rules are !important.) */
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: inherit; }
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }

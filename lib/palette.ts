@@ -40,15 +40,35 @@ export const ACTION = { fill: DEEP_SEA.ocean.fill, hover: DEEP_SEA.teal.fill };
 export type WatersKey = "amazon" | "nile" | "river";
 export type WatersSet = { name: string; action: string; hover: string; accent: string; accentDeep: string; light: string; card: string };
 
-/** River voyages: their own set, through the waters context. accent = words and selected chips; card = the quiet panel. */
+/** River voyages: their own set, through the waters context. accent = words and selected chips; card = the card (white under Tidewater; the band is TIDEWATER.bands). */
 export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
   // Emerald, deep jungle green, river teal.
-  amazon: { name: "Amazon rainforest", action: "#0A6B4E", hover: "#1D5A3B", accent: "#1A4F36", accentDeep: "#123A27", light: "#C4DCCF", card: "#EEF5F1" },
+  amazon: { name: "Amazon rainforest", action: "#0A6B4E", hover: "#1D5A3B", accent: "#1A4F36", accentDeep: "#123A27", light: "#C4DCCF", card: "#FFFFFF" },
   // Lapis, deep Nile turquoise. No sand or ochre.
-  nile: { name: "Nile lapis", action: "#23428F", hover: "#0A6570", accent: "#1B3471", accentDeep: "#122550", light: "#C5CEE6", card: "#EEF1F8" },
+  nile: { name: "Nile lapis", action: "#23428F", hover: "#0A6570", accent: "#1B3471", accentDeep: "#122550", light: "#C5CEE6", card: "#FFFFFF" },
   // The By River hub sits between the two: river teal, lapis on hover.
-  river: { name: "By River", action: "#0E6467", hover: "#23428F", accent: "#0E4F52", accentDeep: "#0A3A3C", light: "#C2DCDD", card: "#EDF4F4" },
+  river: { name: "By River", action: "#0E6467", hover: "#23428F", accent: "#0E4F52", accentDeep: "#0A3A3C", light: "#C2DCDD", card: "#FFFFFF" },
 };
 
 /** The waters context a ship or hub takes, by its registry waters key. Sea waters keep the Deep Sea set. */
 export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : "");
+
+
+// Tidewater grounds (James chose it, 2 Nov 2026: "C Tidewater, go … or maybe rotate"). Site-wide: a near-white page
+// ground, white cards, fine aqua rules, and section bands that rotate gently between two pale tints, never two of
+// the same in a row. Each volume leads with its own tint. No sand, tan, cream or parchment grounds. Protected and
+// unchanged: The Exceptional Few's dark and day bands, Europe's aubergine, the seal and logo, founder marks and
+// the hourglass. Read in app/globals.css as --jw-ground, --jw-rule-fine, --jw-rule and --jw-band-rgb /
+// --jw-band-alt-rgb (Tailwind bg-paper-card and bg-sand read the band); scripts/check-palette.mjs holds them in step.
+export const TIDEWATER = {
+  ground: "#FCFDFD",
+  card: "#FFFFFF",
+  ruleFine: "#D3E6E4", // .ledger-border
+  rule: "#B5D3D0", // .ledger-rule
+  bands: {
+    seaGreen: "#E8F3EE", // the house and Stays lead with it
+    aqua: "#E5F2F4", // Voyages lead with it
+    amazon: "#E7F2EA", // pale rainforest green
+    nile: "#E8EDF8", // pale lapis
+  },
+};

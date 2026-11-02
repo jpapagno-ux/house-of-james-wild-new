@@ -84,12 +84,39 @@ their pathway colours.
 | Nile (lapis) | Lapis `#23428F` 9.34:1 | Nile Turquoise `#0A6570` 6.76:1 | `#1B3471` 11.82:1 | `#EEF1F8` |
 | By River | River Teal `#0E6467` 6.91:1 | Lapis `#23428F` 9.34:1 | `#0E4F52` 9.30:1 | `#EDF4F4` |
 
+## 6. Tidewater grounds (James chose it, 2 Nov 2026)
+
+Site-wide: a near-white page ground, white cards, fine aqua rules, and section bands that rotate gently
+between two pale tints, so two bands of the same tint never sit in a row (the rotation runs over sibling
+banded sections). Each volume leads with its own tint. `lib/palette.ts` TIDEWATER is the source; the
+palette check holds the CSS in step and keeps muted ink AA on every band.
+
+| Token | Value | Use |
+|---|---|---|
+| `--jw-ground` | `#FCFDFD` | page ground (body, `.ledger-page`) |
+| `--jw-card` | `#FFFFFF` | cards (`.ledger-card`, `.ledger-paper`) on every volume except Europe |
+| `--jw-rule-fine` | `#D3E6E4` | `.ledger-border` |
+| `--jw-rule` | `#B5D3D0` | `.ledger-rule` |
+| Band, pale sea-green | `#E8F3EE` | leads on the house and Stays (and Safaris, Gatherings, Overland) |
+| Band, pale aqua | `#E5F2F4` | leads on Voyages; the alternate everywhere else |
+| Band, Amazon | `#E7F2EA` | Amazon hubs, ships and voyages (alternate: aqua) |
+| Band, Nile | `#E8EDF8` | Nile hubs, ships and voyages (alternate: aqua) |
+
+Tailwind `bg-paper-card` and `bg-sand` read the band (`--jw-band-rgb`), so every former parchment panel,
+image well and band follows. The atlas (`public/maps/jw-chart.css`, `jw-maps.css`), the header's lower
+edge, the Linen footer and the "few left" dates pill moved off parchment and gold too.
+
+Protected, unchanged: The Exceptional Few's dark and day bands, Europe's aubergine (and its card tint),
+Gatherings marks, the seal and logo, founder marks and the hourglass. The paper ephemera (postcards,
+luggage tags, margin notes, the verdict card) keep their paper colour: they are objects, not grounds.
+
 ## Retired
 
 The header tones introduced on 30 Oct 2026 (#8B2525 stays, #A5692A, #405A45, #1E5F73, #94512F,
 #5B3A5E) are retired as volume colours. Do not reintroduce them for volumes. The earth-tone pathway
 accents (#38634B, #426E79, #73786C, #936F49, #737769, #766B63, #94512F, #8D6958), the brass Horizon sun
-(#B08657) and the rust Time Rewarded stamp are retired from 2 Nov 2026.
+(#B08657) and the rust Time Rewarded stamp are retired from 2 Nov 2026, as are the parchment grounds
+(#F6F4F0 panel, #EFEAE0 sand, the linen footer, the atlas parchment).
 
 # Media: one Cloudinary library for every site
 

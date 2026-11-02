@@ -12,7 +12,7 @@ for f in "$ROOT"/supabase/migrations/*.sql; do $P -d "$DB" -f "$f" >/dev/null ||
 echo "replayed $(ls "$ROOT"/supabase/migrations/*.sql | wc -l) migrations"
 # The RLS tests expect the published Ledger stays; seed 76 stand-ins (one is leeu-estates).
 $P -d "$DB" -c "insert into public.properties (legacy_cms_id, name, slug) select 'STY-2026-'||lpad(g::text,6,'0'), 'Test stay '||g, case when g=1 then 'leeu-estates' else 'test-stay-'||g end from generate_series(1,76) g"
-for t in rls_phase1 rls_phase2; do
+for t in rls_phase1 rls_phase2 rls_partner_desk; do
   out=$($P -d "$DB" -f "$ROOT/supabase/tests/$t.sql" 2>&1 || true)
   python3 -c 'import sys,re,json
 r=json.loads(re.search(r"(\[.*\])",sys.argv[2],re.S).group(1)); bad=[x["t"] for x in r if not x["pass"]]

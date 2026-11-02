@@ -3,6 +3,8 @@ import type { EmailOtpType } from "@supabase/supabase-js";
 import { supabaseServer } from "@/lib/booking-live/supabase/server";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { safeNext } from "@/lib/booking-live/validate";
+import { PARTNER_DESK } from "@/lib/platform/flags";
+import { safePartnerNext } from "@/lib/platform/validate";
 
 // GET /auth/callback — the sign-in link's return. Two ways in:
 //
@@ -19,8 +21,12 @@ const OTP_TYPES: EmailOtpType[] = ["email", "magiclink", "signup", "invite", "re
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
-  if (!FLAGS.accounts) return new NextResponse("Not found", { status: 404 });
-  const next = safeNext(url.searchParams.get("next"));
+  const raw = url.searchParams.get("next");
+  // Partner Desk links return to /partner or /desk; everything else is Booking Live.
+  const desk = !!raw && /^\/(partner|desk)(\/|$|\?)/.test(raw);
+  if (desk ? !PARTNER_DESK : !FLAGS.accounts) return new NextResponse("Not found", { status: 404 });
+  const next = desk ? safePartnerNext(raw) : safeNext(raw);
+  const signIn = desk ? "/partner/login" : "/account/sign-in";
   const tokenHash = url.searchParams.get("token_hash");
   const type = url.searchParams.get("type") as EmailOtpType | null;
   const code = url.searchParams.get("code");
@@ -29,13 +35,13 @@ export async function GET(req: Request) {
   if (tokenHash && type && OTP_TYPES.includes(type)) {
     const { error } = await sb.auth.verifyOtp({ token_hash: tokenHash, type });
     if (!error) return NextResponse.redirect(new URL(next, url.origin));
-    return NextResponse.redirect(new URL("/account/sign-in?error=link", url.origin));
+    return NextResponse.redirect(new URL(`${signIn}?error=link`, url.origin));
   }
   if (code) {
     const { error } = await sb.auth.exchangeCodeForSession(code);
     if (!error) return NextResponse.redirect(new URL(next, url.origin));
     // Most often: the link was opened in a different browser or device.
-    return NextResponse.redirect(new URL("/account/sign-in?error=device", url.origin));
+    return NextResponse.redirect(new URL(`${signIn}?error=device`, url.origin));
   }
-  return NextResponse.redirect(new URL("/account/sign-in?error=link", url.origin));
+  return NextResponse.redirect(new URL(`${signIn}?error=link`, url.origin));
 }

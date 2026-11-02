@@ -1,0 +1,250 @@
+{
+ "slug": "classic-antarctica-air-cruise",
+ "name": "Classic Antarctica Air-Cruise",
+ "operatorName": "Classic Antarctica Air-Cruise",
+ "operator": "Antarctica21",
+ "style": "fly-both",
+ "flight": "Round trip: fly south, fly north",
+ "route": "Punta Arenas round trip",
+ "short": "Classic Antarctica",
+ "nights": 7,
+ "nightsText": null,
+ "days": 8,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "end": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 88 on either ship",
+ "regions": [
+  "peninsula"
+ ],
+ "length": "short",
+ "monthChips": [
+  "season"
+ ],
+ "months": [],
+ "seo": {
+  "title": "Classic Antarctica Air-Cruise by Antarctica21: 8 Days",
+  "description": "Antarctica21's most popular trip: fly two hours from Punta Arenas to King George Island and spend four days on the Antarctic Peninsula aboard an 88-guest Magellan ship.",
+  "keywords": [
+   "Classic Antarctica Air-Cruise",
+   "Antarctica fly cruise",
+   "Antarctica without the Drake",
+   "Antarctica21"
+  ]
+ },
+ "tagline": "Antarctica21's most popular air-cruise: eight days, no Drake crossing.",
+ "answer": "The Classic Antarctica Air-Cruise is Antarctica21's eight-day, seven-night trip from Punta Arenas, Chile, and the one it calls its most popular. Guests fly about two hours to King George Island, then spend four days aboard Magellan Explorer or Magellan Discoverer, 88 guests at most, among the South Shetland Islands and the western Antarctic Peninsula.",
+ "overview": [
+  "Days 3 to 6 are spent between the South Shetland Islands and the western Antarctic Peninsula, with daily Zodiac landings led by guides and talks on board. Antarctica21 says the route may include the Antarctic Sound, the Gerlache Strait and the Penola Strait."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/1",
+  "alt": "Zodiac excursion in Antarctica",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/1",
+   "alt": "Zodiac excursion in Antarctica",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/2",
+   "alt": "A whale tail rising from the water in Antarctica",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/3",
+   "alt": "Travellers walking across the snow in Antarctica",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Start of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Arrive in Punta Arenas and transfer to the hotel. Check in at Explorers House before 2 PM for the mandatory briefing, then the welcome dinner."
+  },
+  {
+   "day": 2,
+   "title": "Scheduled flight to Antarctica",
+   "place": "King George Island, South Shetland Islands",
+   "lat": -62.2,
+   "lng": -58.96,
+   "summary": "A flight of about two hours to King George Island. Guests walk past Chile's Frei Station and Russia's Bellingshausen Station to the shore, then board the ship by Zodiac."
+  },
+  {
+   "day": 3,
+   "title": "Exploring Antarctica: South Shetland Islands",
+   "place": "South Shetland Islands",
+   "lat": -62.6,
+   "lng": -59.9,
+   "summary": "Landings and Zodiac cruises chosen on the day.",
+   "indicative": true
+  },
+  {
+   "day": 4,
+   "title": "Exploring Antarctica: Antarctic Sound",
+   "place": "Antarctic Sound (possible)",
+   "lat": -63.4,
+   "lng": -56.8,
+   "summary": "Listed by Antarctica21 as a possible area.",
+   "indicative": true
+  },
+  {
+   "day": 5,
+   "title": "Exploring Antarctica: Gerlache Strait",
+   "place": "Gerlache Strait (possible)",
+   "lat": -64.55,
+   "lng": -62.45,
+   "summary": "Listed as a possible area.",
+   "indicative": true
+  },
+  {
+   "day": 6,
+   "title": "Exploring Antarctica: Penola Strait or South Shetlands",
+   "place": "Penola Strait (possible)",
+   "lat": -65.25,
+   "lng": -64.2,
+   "summary": "Listed as a possible area, before the ship returns to King George Island.",
+   "indicative": true
+  },
+  {
+   "day": 7,
+   "title": "Scheduled return flight",
+   "place": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Fly from King George Island back to Punta Arenas and transfer to the hotel for the night. Meals in Punta Arenas that evening are at your own expense."
+  },
+  {
+   "day": 8,
+   "title": "End of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Breakfast at the hotel, then a group transfer to Punta Arenas airport."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {
+  "magellan-explorer": 15995,
+  "magellan-discoverer": 23795
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [],
+   "monthsText": null,
+   "count": null,
+   "prices": {},
+   "priceText": "From US$17,995 pp, triple occupancy (2026-27 season announcement)",
+   "status": null
+  },
+  {
+   "season": "2027-28",
+   "months": [],
+   "monthsText": null,
+   "count": null,
+   "prices": {
+    "magellan-explorer": 15995,
+    "magellan-discoverer": 23795
+   },
+   "priceText": null,
+   "status": null
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Group airport and hotel transfers in Punta Arenas on Day 1 and the last day",
+  "Welcome dinner at Explorers House",
+  "Two nights with breakfast at the Cabo de Hornos Hotel or similar",
+  "Round trip flight between Punta Arenas and King George Island and the ship cruise",
+  "Guided shore landings, Zodiac excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch and a la carte dinner on board, with wine, beer, juice, soft drinks, coffee, tea and snacks",
+  "Contingency plan, loan of waterproof boots and the IAATO passenger fee",
+  "Access to Explorers House in Punta Arenas"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Meals in Punta Arenas on the evening of the return flight",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)",
+  "Extra hotel nights (sold as a Hotel and Transfer Package)"
+ ],
+ "optional": [
+  {
+   "name": "Sea kayaking",
+   "note": "Selected departures only. Up to 20 paddlers in two alternating groups of 10, per Antarctica21's 2027-28 season note."
+  },
+  {
+   "name": "Hiking and snowshoeing",
+   "note": "Small group led by a guide, selected departures only."
+  },
+  {
+   "name": "Hotel and Transfer Package",
+   "note": "Extra nights at the Cabo de Hornos Hotel or similar with group transfers."
+  }
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate.",
+ "faqs": [
+  [
+   "How long is the Classic Antarctica Air-Cruise?",
+   "Eight days and seven nights, starting and ending in Punta Arenas, with four days exploring Antarctica."
+  ],
+  [
+   "Do I have to sail the Drake Passage?",
+   "No. You fly over it both ways, about two hours each way."
+  ],
+  [
+   "Which ships sail it?",
+   "Magellan Explorer and Magellan Discoverer, up to 88 guests each."
+  ],
+  [
+   "What happens if weather delays the flight?",
+   "Antarctica21 flies only when King George Island weather allows. Outbound, it keeps trying from Day 1 until 2 PM on Day 4, with Punta Arenas tours, meals and the Day 1 hotel covered while guests wait. If guests still cannot fly by then, the trip is cancelled and Antarctica21 refunds 100% of the cruise fare. On the way back, the ship keeps cruising until the flight is cleared, or guests fly up to a day early."
+  ],
+  [
+   "How much luggage can I take on the flight?",
+   "25 kg (55 lb) per person in total, hand luggage included, with no single item over 20 kg. Extra allowance cannot be bought. On the Classic and Polar Circle air-cruises, excess luggage is held in Punta Arenas until you return."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "First time Antarctic travellers",
+   "line": "The shortest round trip by air, with four days on the ice."
+  },
+  {
+   "who": "Travellers short on time",
+   "line": "Eight days door to door from Punta Arenas."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-03"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/classic-antarctica-air-cruise",
+  "https://www.antarctica21.com/our-promotions",
+  "https://www.antarctica21.com/journal/announcing-our-2026-27-antarctic-air-cruise-season"
+ ],
+ "checked": "2026-11-02"
+}

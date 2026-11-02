@@ -67,7 +67,7 @@ const RAW: Record<string, Journey[]> = {
   // Antarctica (James, 30 Oct 2026: "push Antarctica21 fly-in voyage"). From the Ledger's Polar Crossings
   // record PCS-A21-POL (Verified Status "To verify"); copy awaiting James, so the page is noindex.
   antarctica: [
-    { kind: "voyage", ledgerId: "PCS-A21-POL", title: "Polar Circle Air-Cruise", eyebrow: "Magellan Explorer or Discoverer · Antarctica", nights: 9, line: "Punta Arenas → fly to King George Island → the Antarctic Circle → Punta Arenas", bestMonths: "February", href: recordHref("voyage", "antarctica21-polar-circle-air-cruise", "antarctica"), image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_800/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs", status: null, price: { amount: 24995, basis: "per person, 2027, double [confirm]" }, contentStatus: "approved" },
+    { kind: "voyage", ledgerId: "PCS-A21-POL", title: "Polar Circle Air-Cruise", eyebrow: "Magellan Explorer or Discoverer · Antarctica", nights: 9, line: "Punta Arenas → fly to King George Island → toward the Polar Circle → Punta Arenas", bestMonths: "February", href: "/voyages/polar/polar-circle-air-cruise", image: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_800/q_auto:good/f_jpg/wildco/guides/antarctic-peninsula/destination/zodiac-between-giant-icebergs", status: null, price: { amount: 24995, basis: "per person, double cabin, Magellan Explorer" }, contentStatus: "approved" },
   ],
   // Central America (James approved the three routes, 2 Nov 2026). Stops are the stays' own pins
   // (stays.json); a stay with no pin on file (Chablé Yucatán) is left off the line, never placed by guess.

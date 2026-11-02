@@ -11,7 +11,8 @@ import { ChevronDown } from "lucide-react";
 
 declare global { interface Window { chartDay?: (k: string, d: number) => void; chartRoute?: (k: string, scroll?: boolean) => void; onChartDay?: (k: string, d: number, auto: boolean) => void } }
 
-export type ScrollerDay = { day: number; title: string; place: string; summary: string };
+/** `label`: a block of days published as one ("Days 3 to 6"); `indicative`: the day order is a guide only. */
+export type ScrollerDay = { day: number; title: string; place: string; summary: string; label?: string; indicative?: boolean };
 export type ScrollerItinerary = { name: string; direction: string; nights: number; days: ScrollerDay[] };
 
 // `map` is the chart block, rendered on the server and passed through untouched, so React never
@@ -134,7 +135,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
                     <span className={`w-10 h-10 shrink-0 rounded-full flex items-center justify-center font-mono text-[13px] border transition-colors ${on || (active != null && i < active) ? "bg-crimson text-paper border-crimson" : "ledger-border"}`}>{String(d.day).padStart(2, "0")}</span>
                     <span className="flex-1 min-w-0">
                       <span className="block ledger-display text-[19px] md:text-[21px] leading-snug">{d.title}</span>
-                      <span className="block ledger-eyebrow mt-0.5">{d.place}</span>
+                      <span className="block ledger-eyebrow mt-0.5">{d.label ? `${d.label} · ` : ""}{d.place}{d.indicative ? " · Indicative" : ""}</span>
                     </span>
                     <ChevronDown className={`w-5 h-5 shrink-0 ledger-crimson transition-transform ${open ? "rotate-180" : ""}`} strokeWidth={1.5} aria-hidden="true" />
                   </button>

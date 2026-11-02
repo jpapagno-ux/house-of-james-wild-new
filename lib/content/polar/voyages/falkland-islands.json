@@ -1,0 +1,207 @@
+{
+ "slug": "falkland-islands",
+ "name": "Falkland Islands",
+ "operatorName": "Falklands (Malvinas)",
+ "operator": "Antarctica21",
+ "style": "sail-both",
+ "flight": "None: sail both ways",
+ "route": "Ushuaia round trip",
+ "short": "Falklands",
+ "nights": 9,
+ "nightsText": null,
+ "days": 10,
+ "daysText": null,
+ "start": {
+  "place": "Ushuaia, Argentina",
+  "airportOrPort": "Port of Ushuaia"
+ },
+ "end": {
+  "place": "Ushuaia, Argentina",
+  "airportOrPort": "Port of Ushuaia"
+ },
+ "ships": [
+  "magellan-explorer"
+ ],
+ "guests": "Up to 96",
+ "regions": [
+  "south-georgia-falklands"
+ ],
+ "length": "medium",
+ "monthChips": [
+  "apr"
+ ],
+ "months": [
+  "April 2028"
+ ],
+ "seo": {
+  "title": "Falkland Islands Voyage by Antarctica21: 10 Days",
+  "description": "Ten days round trip from Ushuaia aboard Magellan Explorer: New Island, Steeple Jason, Volunteer Point, Sea Lion Island and West Point. April 2028.",
+  "keywords": [
+   "Falkland Islands cruise",
+   "Falklands expedition",
+   "Magellan Explorer",
+   "Antarctica21"
+  ]
+ },
+ "tagline": "Ten days island hopping the Falklands.",
+ "answer": "Falklands (Malvinas) is Antarctica21's ten-day, nine-night sea voyage, round trip from Ushuaia aboard Magellan Explorer with up to 96 guests. Six days among the islands take in New Island, Steeple Jason, Saunders, Volunteer Point, Port Stanley, Sea Lion Island, Pebble, Keppel and West Point. The published departure is April 2028.",
+ "overview": [
+  "A short sea voyage focused on Falklands wildlife: albatross, rockhopper and king penguins, elephant seals and sea lions."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falkland-islands/1",
+  "alt": "Penguin colony on a rocky hillside above a sandy beach and turquoise sea in the Falklands",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falkland-islands/1",
+   "alt": "Penguin colony on a rocky hillside above a sandy beach and turquoise sea in the Falklands",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falkland-islands/2",
+   "alt": "Coastal landscape in the Falkland Islands",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Embarkation",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Board (boarding closes at 16:00) and sail the Beagle Channel."
+  },
+  {
+   "day": 2,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -53.2,
+   "lng": -64.0,
+   "summary": "Lectures and time on board."
+  },
+  {
+   "day": 3,
+   "title": "New Island and Carcass Island",
+   "place": "New Island",
+   "lat": -51.72,
+   "lng": -61.29,
+   "summary": "Cliffs and seabird colonies, then Carcass Island's hills and beaches."
+  },
+  {
+   "day": 4,
+   "title": "Steeple Jason and Saunders Island",
+   "place": "Steeple Jason Island",
+   "lat": -51.03,
+   "lng": -61.22,
+   "summary": "Possible landing at a large black browed albatross colony, then king penguins on Saunders."
+  },
+  {
+   "day": 5,
+   "title": "Volunteer Point and Port Stanley",
+   "place": "Volunteer Point",
+   "lat": -51.52,
+   "lng": -57.83,
+   "summary": "King penguin colony, then the capital."
+  },
+  {
+   "day": 6,
+   "title": "Bleaker Island and Sea Lion Island",
+   "place": "Sea Lion Island",
+   "lat": -52.43,
+   "lng": -59.08,
+   "summary": "Birdlife and penguins on Bleaker, elephant seals and sea lions at Bull Point, a sunset transit of Falkland Sound."
+  },
+  {
+   "day": 7,
+   "title": "Pebble Island and Keppel Island",
+   "place": "Pebble Island",
+   "lat": -51.31,
+   "lng": -59.6,
+   "summary": "Birdlife on Pebble, trails and a historic mission site on Keppel."
+  },
+  {
+   "day": 8,
+   "title": "West Point Island",
+   "place": "West Point Island",
+   "lat": -51.35,
+   "lng": -60.68,
+   "summary": "An easy hike to albatross and rockhopper cliffs and a Falklands tea."
+  },
+  {
+   "day": 9,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -53.2,
+   "lng": -64.0,
+   "summary": "Return toward South America."
+  },
+  {
+   "day": 10,
+   "title": "Disembarkation",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Arrive and disembark."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {
+  "magellan-explorer": 6795
+ },
+ "departures": [
+  {
+   "season": "2027-28",
+   "months": [
+    "2028-04"
+   ],
+   "monthsText": "April 2028",
+   "count": null,
+   "prices": {
+    "magellan-explorer": 6795
+   },
+   "priceText": null,
+   "status": null
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Ship cruise as described",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch, a la carte dinner, wine, beer, soft drinks, coffee, tea and snacks",
+  "Loan of waterproof boots for landings"
+ ],
+ "exclusions": [],
+ "optional": [],
+ "children": "Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "Which ship sails the Falklands voyage?",
+   "Magellan Explorer, the only ship listed for it."
+  ],
+  [
+   "When is it?",
+   "April 2028 in the 2027-28 season."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Birders",
+   "line": "Steeple Jason's albatross colony and West Point's rockhopper cliffs."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": []
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/falkland-islands",
+  "https://www.antarctica21.com/our-promotions"
+ ],
+ "checked": "2026-11-02"
+}

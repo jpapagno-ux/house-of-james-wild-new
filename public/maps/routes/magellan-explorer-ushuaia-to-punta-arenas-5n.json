@@ -1,0 +1,123 @@
+{
+ "id": "magellan-explorer-ushuaia-to-punta-arenas-5n",
+ "type": "voyage",
+ "destination": "polar",
+ "title": "Antarctica Express Air-Cruise aboard Magellan Explorer",
+ "subtitle": "5 nights · Ushuaia to Punta Arenas · Magellan Explorer",
+ "days": {
+  "1": "Start of the air-cruise",
+  "2": "Cape Horn and the Drake Passage",
+  "3": "Drake Passage",
+  "4": "Drake Passage and Antarctica",
+  "5": "Antarctica and return flight",
+  "6": "End of the air-cruise"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Ushuaia and the Beagle Channel",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cape Horn",
+   "lat": -55.98,
+   "lng": -67.27,
+   "mode": "sea",
+   "path": [
+    [
+     -68.303,
+     -54.8019
+    ],
+    [
+     -67.27,
+     -55.98
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Drake Passage",
+   "lat": -58.5,
+   "lng": -65.0,
+   "mode": "sea",
+   "path": [
+    [
+     -67.27,
+     -55.98
+    ],
+    [
+     -65.0,
+     -58.5
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "South Shetland Islands",
+   "lat": -62.6,
+   "lng": -59.9,
+   "mode": "sea",
+   "path": [
+    [
+     -65.0,
+     -58.5
+    ],
+    [
+     -59.9,
+     -62.6
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "air"
+  },
+  {
+   "day": 6,
+   "name": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "sea",
+   "path": [
+    [
+     -70.9171,
+     -53.1638
+    ],
+    [
+     -70.9171,
+     -53.1638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Drake Passage",
+    "lat": -58.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Scotia Sea",
+    "lat": -57.0,
+    "lng": -45.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Antarctic Peninsula",
+    "lat": -67.0,
+    "lng": -63.5,
+    "kind": "region"
+   }
+  ]
+ }
+}

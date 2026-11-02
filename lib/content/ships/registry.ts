@@ -19,7 +19,9 @@
 import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia";
+/** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia";
+export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht";
 
 export type RegistryShip = {
@@ -83,6 +85,14 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
     pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos" },
 
+  // Polar Crossings (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
+  // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
+  // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
+  { slug: "magellan-explorer", name: "Magellan Explorer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+  { slug: "magellan-discoverer", name: "Magellan Discoverer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "celestia-yacht" },
   { slug: "silolona", name: "Silolona", operator: "Silolona", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "silolona-sojourns" },
@@ -93,7 +103,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
   sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and a wooden schooner in Indonesia." },
-  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos; polar ships sail with Polar Crossings." },
+  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, and Polar Crossings: Antarctica21's polar air-cruises and voyages." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
 
@@ -103,6 +113,8 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   amazon: { name: "The Amazon", path: "/voyages/amazon", countries: ["Peru", "Ecuador", "Brazil"], question: "What is the best small-ship Amazon cruise?" },
   galapagos: { name: "The Galápagos", path: "/voyages/galapagos", countries: ["Ecuador"], question: "Yacht or catamaran in the Galápagos?" },
   indonesia: { name: "Indonesia", path: "/voyages/indonesia", countries: ["Indonesia"], question: "What does a Raja Ampat phinisi cost?" },
+  antarctica: { name: "Polar Crossings", path: "/voyages/polar", countries: ["Antarctica"], question: "Fly or sail the Drake?" },
+  patagonia: { name: "Patagonia", path: "/voyages/polar", countries: ["Chile", "Argentina"], question: "Which voyage sails the Chilean fjords?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

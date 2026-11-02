@@ -18,14 +18,15 @@ import { atlasRoutes } from "@/lib/content/ships/atlas";
 import { allCards, shipCard, tally, typeCards, watersCards, VOYAGE_TYPES, WATERS_HUBS } from "@/lib/content/ships/cards";
 import { registryShip, type VoyageType, type Waters } from "@/lib/content/ships/registry";
 import { usd } from "@/lib/pricing";
+import { polarTile } from "@/lib/content/ships/hubs";
+import { POLAR_VOYAGES } from "@/lib/content/polar";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
 // order people choose: how to sail, which waters, every route on one chart, the ship James has
 // sailed, the whole ship, the finder, then questions. Every list reads the ships registry.
-// Antarctica is not built here: the polar card opens Polar Crossings.
+// The polar card opens Polar Crossings on this site (/voyages/polar, James, 2 Nov 2026).
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-const POLAR = "https://polarcrossings.com";
 const TYPES: VoyageType[] = ["river", "sailing", "expedition", "charter"];
 const WATERS: Waters[] = ["nile", "amazon", "galapagos", "indonesia"];
 
@@ -44,7 +45,7 @@ export const metadata = buildMetadata({
 const FAQS = [
   { q: "What kind of ships does James Wild & Co sell?", a: `Small ships and sailing yachts, never the big ones. Voyages files ${cards.length} today: A&K Sanctuary riverboats and a dahabiya on the Nile, Amazon river ships in Peru, Ecuador and Brazil, Ecoventura and Galaxy Cruises yachts in the Galápagos, and phinisis in Indonesia, Aliikai among them.` },
   { q: "Can we charter a whole ship for our group?", a: `Yes. ${list(charterNames)} can be taken private for one party. Aliikai is ${usd(aliikai.charter!.from!)} a night plus 11% tax for up to 15 guests; the others are priced on enquiry, and James confirms every rate live.` },
-  { q: "Do you plan voyages to Antarctica and the Arctic?", a: "Yes, through Polar Crossings, James's polar platform at polarcrossings.com. The polar ships are planned there, not in Voyages." },
+  { q: "Do you plan voyages to Antarctica?", a: `Yes. Polar Crossings, the house's polar arm under To the Edges, files all ${POLAR_VOYAGES.length} Antarctica21 itineraries, from air-cruises over the Drake Passage to sea voyages to South Georgia, each with its own page.` },
   { q: "Has James sailed these ships himself?", a: "He sailed Raja Ampat aboard Aliikai in November 2024, and her page says so. The other ships are filed from their operators' own material, and their pages make no claim that he has sailed them." },
   { q: "How are voyage fares shown?", a: "Per person, two sharing, as each operator publishes them: by the cruise for most ships, by the night for Aliikai's cabins. Past departures drop off on their own, and every fare is confirmed live when you ask." },
 ];
@@ -54,7 +55,7 @@ export default function VoyagesHub() {
   const typeTiles: Tile[] = TYPES.map((t) => { const x = tally(typeCards(t)); return { key: t, name: VOYAGE_TYPES[t].name, href: VOYAGE_TYPES[t].path, line: VOYAGE_TYPES[t].line, count: x.count, from: t === "charter" ? `${usd(aliikai.charter!.from!)} a night` : x.from }; });
   const watersTiles: Tile[] = [
     ...WATERS.map((w) => { const x = tally(watersCards(w)); return { key: w, name: WATERS_HUBS[w].name, href: WATERS_HUBS[w].path, line: WATERS_HUBS[w].countries.join(", "), count: x.count, from: x.from }; }),
-    { key: "polar", name: "Antarctica and the Arctic", href: POLAR, line: "Polar ships sail with Polar Crossings, James's polar platform.", external: true },
+    polarTile,
   ];
   const sailed = [shipCard(aliikai)!];
   const charters = cards.filter((c) => c.types.includes("charter"));
@@ -63,7 +64,7 @@ export default function VoyagesHub() {
       <SiteHeader />
       <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
         film={{ poster: FILMS.aliikai.poster, alt: FILMS.aliikai.alt, eyebrow: "The film", title: "Aboard Aliikai in Komodo", credit: FILMS.aliikai.credit, href: `https://www.youtube.com/watch?v=${FILMS.aliikai.id}` }}
-        answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos and Indonesia. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
+        answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Crossings, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
         filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">
         <HubSection eyebrow="Four ways to sail" title="How Do You Want to Sail?" id="types-h"><VoyageTiles tiles={typeTiles} /></HubSection>
         <HubSection eyebrow="The waters" title="Which Waters?" id="waters-h"><VoyageTiles tiles={watersTiles} cols={5} /></HubSection>

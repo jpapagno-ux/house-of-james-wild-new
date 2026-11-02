@@ -2,6 +2,7 @@ import { ALIIKAI_RECORD } from "./aliikai";
 import { NILE_SHIPS } from "./nile";
 import { AMAZON_SHIPS } from "./amazon";
 import { GALAPAGOS_SHIPS } from "./galapagos";
+import { POLAR_SHIPS } from "./polar";
 import { SHIP_REGISTRY, WATERS_HUBS, type RegistryShip, type Waters } from "./registry";
 import type { ShipRecord } from "./types";
 
@@ -14,7 +15,7 @@ export type { Waters };
 export type ShipEntry = { slug: string; kind: "record"; waters: Waters; reg: RegistryShip; data: ShipRecord; credit?: string; offerRefs: string[] };
 
 /** Waters with a hub page of their own (/voyages/<waters>). Hubs join this list as they are built. */
-const HUBS_BUILT: Waters[] = ["nile", "amazon", "galapagos", "indonesia"];
+const HUBS_BUILT: Waters[] = ["nile", "amazon", "galapagos", "indonesia", "antarctica"];
 export const WATERS: Partial<Record<Waters, { name: string; path: string; country: string }>> = Object.fromEntries(
   HUBS_BUILT.map((w) => [w, { name: WATERS_HUBS[w].name, path: WATERS_HUBS[w].path, country: WATERS_HUBS[w].countries.join(", ") }]),
 );
@@ -24,6 +25,7 @@ const FILED: { data: ShipRecord; credit?: string; offerRefs: string[] }[] = [
   ...NILE_SHIPS.map(({ data, offerRefs }) => ({ data, credit: "A&K Sanctuary", offerRefs: [data.slug, ...offerRefs] })),
   ...AMAZON_SHIPS,
   ...GALAPAGOS_SHIPS,
+  ...POLAR_SHIPS,
 ];
 // Every registry ship with a page, in registry order. A page ship without a record fails the build.
 export const SHIPS: ShipEntry[] = SHIP_REGISTRY.filter((r) => r.page).map((reg) => {

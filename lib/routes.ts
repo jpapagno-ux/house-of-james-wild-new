@@ -23,6 +23,7 @@ export const BUILT: string[] = [
   "/whats-coming",
   "/for-advisors/apply",
   "/partners",
+  "/partners/*", // partner pages (lib/content/partners)
   "/travel-notes",
   "/field-guides",
   "/stays",
@@ -43,7 +44,6 @@ export const BUILT: string[] = [
   "/overland/belize/deep-belize",
   "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north",
   "/voyages/komodo/aliikai-5-day-komodo-island",
-  "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
   "/voyages/ships/aliikai",
   // The Nile waters hub and the A&K Sanctuary ships (approved by James, 1 Nov 2026)
   "/voyages/nile",
@@ -55,18 +55,23 @@ export const BUILT: string[] = [
   "/voyages/amazon",
   "/voyages/galapagos",
   "/voyages/indonesia",
+  // Polar Crossings on this site: the Antarctica21 voyages (James, 2 Nov 2026)
+  "/voyages/polar",
+  "/voyages/polar/*",
+  "/voyages/ships/magellan-explorer",
+  "/voyages/ships/magellan-discoverer",
   "/voyages/ships/nile-adventurer",
   "/voyages/ships/nile-seray",
   "/voyages/ships/sun-boat-iii",
   "/voyages/ships/sun-boat-iv",
   "/voyages/ships/zein-nile-chateau",
-  // andBeyond Amazon Explorer (filed 1 Nov 2026; out of LIVE_ROUTES until James signs her off)
+  // The Amazon ships (in LIVE_ROUTES since James approved publishing Voyages, 2 Nov 2026)
   "/voyages/ships/beyond-amazon-explorer",
   "/voyages/ships/aria-amazon",
   "/voyages/ships/delfin-iii",
   "/voyages/ships/anakonda-amazon-cruise",
   "/voyages/ships/amazon-clipper-premium",
-  // The Galapagos yachts (filed 1 Nov 2026; out of LIVE_ROUTES until James signs them off)
+  // The Galapagos yachts (in LIVE_ROUTES since James approved publishing Voyages, 2 Nov 2026)
   "/voyages/ships/ecoventura-origin-yacht",
   "/voyages/ships/ecoventura-theory-yacht",
   "/voyages/ships/ecoventura-evolve-yacht",
@@ -212,6 +217,7 @@ export const STAY_SLUGS: string[] = [
   "capella-ubud",
   "cardamom-tented-camp",
   "casa-maya-kaan",
+  "casa-palopo",
   "castle-leslie",
   "celestia-yacht",
   "chable-maroma",
@@ -562,6 +568,7 @@ export const STAY_SLUGS: string[] = [
   "velaa-private-island",
   "vermejo-ted-turner-reserve",
   "viceroy-bali",
+  "villa-bokeh",
   "wilderness-bisate-lodge",
   "wilderness-bisate-reserve",
   "wilderness-busanga",

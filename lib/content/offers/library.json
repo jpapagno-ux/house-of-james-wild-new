@@ -2558,5 +2558,45 @@
   "checked": "2026-11-01",
   "conditions": "Daily breakfast for two at Café de la Playa. Subject to availability. Not combinable with other offers. NIZUC terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000160",
+  "year": 2026,
+  "status": "Live",
+  "scope": "itinerary",
+  "ref": "classic-antarctica-air-cruise",
+  "name": "Classic Antarctica Air-Cruise savings (Antarctica21)",
+  "country": "",
+  "program": "On the Horizon",
+  "headline": "Save up to US$4,000 per person",
+  "travel": {
+   "from": "2026-11-02",
+   "to": "2026-12-31",
+   "text": "Book by 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Select departures; new bookings only; as published by Antarctica21.",
+  "volume": "voyages"
+ },
+ {
+  "id": "OFR-2026-000161",
+  "year": 2026,
+  "status": "Live",
+  "scope": "itinerary",
+  "ref": "patagonia-chilean-fjords",
+  "name": "Patagonia and Falklands sea voyage savings (Antarctica21)",
+  "country": "",
+  "program": "On the Horizon",
+  "headline": "Save up to US$1,000 per person",
+  "travel": {
+   "from": "2026-11-02",
+   "to": "2026-12-31",
+   "text": "Book by 31 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Patagonia & Chilean Fjords and Falkland Islands voyages; new bookings only; as published by Antarctica21.",
+  "volume": "voyages"
  }
 ]

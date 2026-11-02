@@ -17,6 +17,7 @@ import DatesRates from "./DatesRates";
 import DatesGrid from "./DatesGrid";
 import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
+import MonthDepartures from "./MonthDepartures";
 import ShipGlance from "./ShipGlance";
 
 // Every ship on the one shared template (voyages plan, 1 Nov 2026): Aliikai and the
@@ -94,7 +95,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
   const oneFare = cruise.length > 0 && cruise.every((d) => Object.keys(d.prices).every((k) => !s.cabins.some((c) => k === c.type || k.startsWith(`${c.type} (`))));
   const cabinIntro = basis === "per-night"
     ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
-    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")} guests` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
+    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")} guests` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
   const datesIntro = basis === "per-night"
     ? "Every published sailing by month, with its length and the fare per person for the voyage."
     : oneFare ? "Only the lowest published fare is shown below, per person, two sharing; James confirms the fare for your cabin and dates."
@@ -159,7 +160,19 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
           }}
         />
         {extra.body}
-        {s.departures.length === 0 && (
+        {s.departures.length === 0 && (s.monthly?.length ?? 0) > 0 && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={`${s.operator} publishes the months, the number of sailings and the fares from for each voyage; exact dates and fares by cabin come from its live booking tool, and James confirms them when you ask.`} />
+            <MonthDepartures groups={s.monthly!} showItinerary priceName={() => s.name} planHref={(g) => `${planFor(`${g.itinerary ?? s.name}, ${s.name}`, g.months[0] ?? g.season ?? "", g.status === "sold-out")}`} note={publicNote(s.pricesNote)} />
+            {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
+              <div className="mt-10 grid md:grid-cols-2 gap-8">
+                {s.inclusions.length > 0 && <div><p className="ledger-eyebrow ledger-crimson">Included</p><ul className="mt-3 space-y-2">{s.inclusions.map((x) => <li key={x} className="flex gap-2 text-[15px]"><Check className="w-4 h-4 mt-0.5 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+                {(s.exclusions?.length ?? 0) > 0 && <div><p className="ledger-eyebrow">Not included</p><ul className="mt-3 space-y-2">{s.exclusions!.map((x) => <li key={x} className="flex gap-2 text-[15px] ledger-muted"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+              </div>
+            )}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
             <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />

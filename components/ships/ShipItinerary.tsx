@@ -20,7 +20,7 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
     name: it.name,
     direction: it.direction,
     nights: it.nights ?? it.days.length - 1,
-    days: it.days.map((d) => ({ day: d.day, title: d.title, place: d.place, summary: d.summary })),
+    days: it.days.map((d) => ({ day: d.day, title: d.title, place: d.place, summary: d.summary, label: d.label, indicative: d.indicative })),
   }));
   return (
     <section id="itinerary" className={SEC}>

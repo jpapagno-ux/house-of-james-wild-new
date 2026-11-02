@@ -8,6 +8,8 @@ import { OfferStamp } from "@/components/ledger/Marks";
 import { FieldIcon } from "@/components/ledger/FieldIcon";
 import { SectionHead, Prose, JamesNote } from "@/components/about/Parts";
 import { PARTNERS } from "@/lib/content/house";
+import { PARTNER_LIST, partnerPath } from "@/lib/content/partners";
+import Image from "next/image";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
@@ -42,6 +44,25 @@ export default function PartnersPage() {
             <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={SUBMIT} className="ledger-btn ledger-btn--solid">Tell us about your place</Link><Link href="/the-ledger" className="ledger-btn-ghost">How the Ledger works</Link></div>
           </header>
           <AnswerBlock>{p.answer}</AnswerBlock>
+
+          <section className="mt-12 md:mt-16" aria-labelledby="our-partners-heading">
+            <SectionHead eyebrow="On the Ledger" title="Who Does the House Work With?" id="our-partners-heading" />
+            <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {PARTNER_LIST.map((x) => (
+                <li key={x.slug}>
+                  <Link href={partnerPath(x.slug)} className="group h-full flex flex-col border ledger-border bg-paper hover:border-crimson/60">
+                    <span className="relative aspect-[16/10] bg-paper-card overflow-hidden"><Image src={x.hero.url} alt={x.hero.alt} fill sizes="(min-width: 1024px) 380px, 90vw" className="object-cover" /></span>
+                    <span className="p-4 flex flex-col flex-1">
+                      <span className="ledger-eyebrow ledger-crimson">{x.kind}</span>
+                      <span className="ledger-display text-[1.35rem] mt-1">{x.name}</span>
+                      <span className="mt-1.5 text-[14.5px] ledger-muted leading-snug">{x.line}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-[12px] ledger-muted">Photographs: {[...new Set(PARTNER_LIST.map((x) => x.credit))].join(", ")}.</p>
+          </section>
 
           <section className="mt-12 md:mt-16" aria-labelledby="aims-heading">
             <SectionHead eyebrow="Our mission" title="Embrace and Promote Travel With Purpose" id="aims-heading" />

@@ -160,7 +160,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/albert-alvarez", // Stage 4b: profile from Library DNA
   },
   {
     slug: "sofia-marchetti",
@@ -250,7 +250,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/carlos-alger", // Stage 4b: profile from Library DNA
   },
   {
     // James, 1 Nov 2026: Marissa, his daughter, joins the roster. ADV issued by the Library
@@ -267,7 +267,7 @@ const CARDS: Advisor[] = [
     bio: [],
     specialties: [],
     traveled: [],
-    profileHref: null,
+    profileHref: "/advisors/marissa-held", // Stage 4b: profile from Library DNA
   },
 ];
 
@@ -292,6 +292,8 @@ export const FIELD_PARTNERS: FieldPartner[] = [
 ];
 
 export const advisorBySlug = (slug: string) => ADVISORS.find((a) => a.slug === slug && a.bio.length > 0);
+/** An advisor with a profile page: a bio on file (as before, stand-ins included and labelled), or a real advisor with Library DNA (Stage 4b). */
+export const advisorProfile = (slug: string) => ADVISORS.find((a) => a.slug === slug && (a.bio.length > 0 || (!a.sample && !!a.dna)));
 
 // ---- The Advisor Desk: who knows a place ----------------------------------
 // Advisors with a desk, founder excluded (his page is /about/founder).
@@ -322,6 +324,12 @@ export const countryOfRecord = (ledgerId: string) => COUNTRY_OF_RECORD.get(ledge
 export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }): AdvisorsFor {
   const pool = PLACE_ADVISORS.map((a) => ({ a, slug: a.slug, entries: a.desk?.entries ?? [], dna: a.dna, deskCountries: a.desk?.countries ?? [], deskVolumes: a.desk?.volumes ?? [] }));
   return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord });
+}
+
+/** Real advisors who carry a Wild Pathway (Library DNA), James first, open or waitlisted only. */
+export function whoCarries(pathwayId: string): Advisor[] {
+  const real = ADVISORS.filter((a) => !a.sample && a.dna?.pathways.includes(pathwayId) && a.dna.availability !== "closed");
+  return real.sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0));
 }
 
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });

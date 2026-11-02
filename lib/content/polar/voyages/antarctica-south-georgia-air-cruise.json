@@ -1,0 +1,262 @@
+{
+ "slug": "antarctica-south-georgia-air-cruise",
+ "name": "Antarctica and South Georgia Air-Cruise",
+ "operatorName": "Antarctica & South Georgia Air-Cruise",
+ "operator": "Antarctica21",
+ "style": "fly-one",
+ "flight": "One way. Fly South 2026-27 and 2027-28: fly Punta Arenas to King George Island, sail to Ushuaia. Fly North 2027-28: sail from Ushuaia, fly back to Punta Arenas. 2028-29: Punta Arenas round trip.",
+ "route": "Punta Arenas to Ushuaia",
+ "short": "Antarctica and South Georgia",
+ "nights": 17,
+ "nightsText": null,
+ "days": 18,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile (Fly South)",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "end": {
+  "place": "Ushuaia, Argentina (Fly South)",
+  "airportOrPort": "Port of Ushuaia"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 88 on either ship",
+ "regions": [
+  "peninsula",
+  "south-georgia-falklands"
+ ],
+ "length": "long",
+ "monthChips": [
+  "mar"
+ ],
+ "months": [
+  "March"
+ ],
+ "seo": {
+  "title": "Antarctica and South Georgia Air-Cruise: 18 Days",
+  "description": "Fly from Punta Arenas to Antarctica, explore the Peninsula, then sail to South Georgia's king penguins and on to Ushuaia. Antarctica21, 18 days, March.",
+  "keywords": [
+   "Antarctica and South Georgia cruise",
+   "South Georgia king penguins",
+   "Antarctica21 air-cruise",
+   "Shackleton grave Grytviken"
+  ]
+ },
+ "tagline": "Fly in, sail out: the Peninsula, Elephant Island and South Georgia.",
+ "answer": "The Antarctica and South Georgia Air-Cruise is Antarctica21's eighteen-day, seventeen-night voyage. Guests fly from Punta Arenas to King George Island, explore the Antarctic Peninsula, pass Elephant Island, spend four days at South Georgia including Grytviken and St Andrews Bay, then sail to Ushuaia. It runs in March on 88-guest Magellan ships.",
+ "overview": [
+  "The longest Antarctica21 air-cruise. Four days on the Peninsula, Elephant Island seen from the ship, then four days at South Georgia with its king penguin colonies and Shackleton's grave at Grytviken, before the crossing to the Beagle Channel."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-south-georgia-air-cruise/2",
+  "alt": "King penguins in South Georgia",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-south-georgia-air-cruise/1",
+   "alt": "Mountains of South Georgia",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-south-georgia-air-cruise/2",
+   "alt": "King penguins in South Georgia",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-south-georgia-air-cruise/3",
+   "alt": "A fur seal in the Antarctic landscape",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Start of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Arrive in Punta Arenas and transfer to the hotel. Check in at Explorers House before 2 PM for the mandatory briefing, then the welcome dinner."
+  },
+  {
+   "day": 2,
+   "title": "Scheduled flight to Antarctica",
+   "place": "King George Island, South Shetland Islands",
+   "lat": -62.2,
+   "lng": -58.96,
+   "summary": "A flight of about two hours to King George Island. Guests walk past Chile's Frei Station and Russia's Bellingshausen Station to the shore, then board the ship by Zodiac."
+  },
+  {
+   "day": 3,
+   "title": "Exploring Antarctica",
+   "place": "South Shetland Islands and Antarctic Peninsula",
+   "lat": -64.55,
+   "lng": -62.45,
+   "summary": "Daily Zodiac landings and lectures; possible sites in the Gerlache Strait, Penola Strait and Antarctic Sound.",
+   "label": "Days 3 to 6"
+  },
+  {
+   "day": 7,
+   "title": "Elephant Island",
+   "place": "Elephant Island",
+   "lat": -61.1,
+   "lng": -55.2,
+   "summary": "Seen from the ship; a landing is unlikely."
+  },
+  {
+   "day": 8,
+   "title": "At sea toward South Georgia",
+   "place": "Scotia Sea",
+   "lat": -57.5,
+   "lng": -45.0,
+   "summary": "Historian and naturalist presentations on the way north.",
+   "label": "Days 8 to 9"
+  },
+  {
+   "day": 10,
+   "title": "South Georgia",
+   "place": "Grytviken, St Andrews Bay, Cooper Island",
+   "lat": -54.2811,
+   "lng": -36.5092,
+   "summary": "Grytviken and Shackleton's grave, St Andrews Bay and Cooper Island; Fortuna Bay, Salisbury Plain, Drygalski Fjord and Elsehul Bay if the weather allows.",
+   "label": "Days 10 to 13"
+  },
+  {
+   "day": 14,
+   "title": "At sea toward South America",
+   "place": "South Atlantic",
+   "lat": -55.0,
+   "lng": -55.0,
+   "summary": "Presentations on board during the crossing.",
+   "label": "Days 14 to 16"
+  },
+  {
+   "day": 17,
+   "title": "Beagle Channel",
+   "place": "Beagle Channel",
+   "lat": -54.88,
+   "lng": -67.8,
+   "summary": "Sailing past Tierra del Fuego and Navarino Island."
+  },
+  {
+   "day": 18,
+   "title": "Arrival in Ushuaia",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Disembark in Ushuaia."
+  }
+ ],
+ "itineraryNote": "Fly South version shown. Antarctica21 also publishes a 2027-28 Fly North version (Ushuaia to South Georgia, then the Peninsula, flying to Punta Arenas on Day 17) and a 2028-29 Punta Arenas round trip ending with Puerto Williams.",
+ "fromByShip": {
+  "magellan-explorer": 17995,
+  "magellan-discoverer": 24995
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2027-03"
+   ],
+   "monthsText": "March",
+   "count": 1,
+   "prices": {},
+   "priceText": "From US$18,995 pp, triple occupancy (2026-27 season announcement)",
+   "status": null,
+   "direction": "Fly South"
+  },
+  {
+   "season": "2027-28",
+   "months": [
+    "2028-03"
+   ],
+   "monthsText": "March",
+   "count": 1,
+   "prices": {
+    "magellan-explorer": 17995,
+    "magellan-discoverer": 24995
+   },
+   "priceText": null,
+   "status": null,
+   "direction": "Fly South or Fly North"
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Airport and hotel group transfers",
+  "One hotel night with breakfast in Punta Arenas (Cabo de Hornos Hotel or similar)",
+  "Welcome dinner at Explorers House",
+  "Ship cruise and flight between Punta Arenas and King George Island, as per the itinerary",
+  "All meals and beverages on board, alcoholic and non alcoholic",
+  "Loan of waterproof boots, contingency plan and the IAATO passenger fee",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Access to Explorers House"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Meals in Punta Arenas on the evening of the return flight",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)",
+  "Extra hotel nights (sold as a Hotel and Transfer Package)"
+ ],
+ "optional": [
+  {
+   "name": "Sea kayaking",
+   "note": "Selected departures only. Up to 20 paddlers in two alternating groups of 10, per Antarctica21's 2027-28 season note."
+  },
+  {
+   "name": "Hiking and snowshoeing",
+   "note": "Small group led by a guide, selected departures only."
+  },
+  {
+   "name": "Hotel and Transfer Package",
+   "note": "Extra nights at the Cabo de Hornos Hotel or similar with group transfers."
+  }
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate.",
+ "faqs": [
+  [
+   "Do you land at South Georgia?",
+   "Yes. Antarctica21 plans four days there, including Grytviken, St Andrews Bay and Cooper Island, with more sites if the weather allows."
+  ],
+  [
+   "Is Elephant Island a landing?",
+   "Antarctica21 says a landing is unlikely; it is seen from the ship."
+  ],
+  [
+   "Which way does it go?",
+   "Fly South in 2026-27 and 2027-28 (fly to Antarctica, sail to Ushuaia). A Fly North version is also listed for 2027-28."
+  ],
+  [
+   "What happens if weather delays the flight?",
+   "Antarctica21 flies only when King George Island weather allows. Outbound, it keeps trying from Day 1 until 2 PM on Day 4, with Punta Arenas tours, meals and the Day 1 hotel covered while guests wait. If guests still cannot fly by then, the trip is cancelled and Antarctica21 refunds 100% of the cruise fare. On the way back, the ship keeps cruising until the flight is cleared, or guests fly up to a day early."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Wildlife travellers",
+   "line": "King penguin colonies at South Georgia plus the Peninsula."
+  },
+  {
+   "who": "Polar history readers",
+   "line": "Elephant Island and Shackleton's grave at Grytviken on one voyage."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-06",
+   "PATH-03"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/antarctica-south-georgia-air-cruise"
+ ],
+ "checked": "2026-11-02"
+}

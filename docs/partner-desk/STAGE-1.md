@@ -35,7 +35,7 @@ live value changed since (no silent overwrite).
   may correct company details. Removing a contact stays with partner admins and the house.
   Written as `ALTER POLICY` (nothing dropped).
 
-Tests: `supabase/tests/rls_partner_desk.sql` (59 checks), passing on a local replay. Live
+Tests: `supabase/tests/rls_partner_desk.sql` (62 checks, incl. G01–G03 Ledger ID rule D-20), passing on a local replay. Live
 policies are identical to the replay (all 74 `public` policies hash-matched, 2 Nov 2026); the
 first 55 checks also ran on live (rolled back) on 1 Nov. `supabase/tests/drift_check/replay.sh` runs every RLS file locally.
 

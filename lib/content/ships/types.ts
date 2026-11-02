@@ -4,13 +4,17 @@
 // own site (CLAUDE.md, "Sources").
 
 import type { PathwayId } from "@/lib/pathways";
+import { lowestFrom, type MonthDeparture } from "./months.ts";
 
 export type ShipImage = { url: string; alt: string; credit?: string };
 /** Wild Pathways on a ship (James, 1 Nov 2026): house classification, printed as the same chips as stay pages. */
 export type ShipPathway = { primary: PathwayId; secondary: PathwayId[] };
-export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string };
+/** `label`: a day block the operator publishes as one ("Days 3 to 6"); `indicative`: the research split a
+ *  published block across days, so the order is a guide only (the page says so). */
+export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string; label?: string; indicative?: boolean };
 /** nights null and no days: a private charter whose route is set with the guest. */
-export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[] };
+/** `short`: the atlas chip label where directions repeat (polar voyages); `href`: the voyage's own page. */
+export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[]; short?: string; href?: string };
 /** `night`: the published rate per person per night (ships priced by the night, `rateBasis: "per-night"`). */
 export type ShipCabin = { type: string; count: number | null; size: string | null; beds: string | null; deck: string | null; features: string[]; image?: ShipImage | null; night?: number | null };
 export type ShipDeckPlan = { deck: string; image: ShipImage; cabins: string[] };
@@ -81,6 +85,8 @@ export type ShipRecord = {
   fleetSchedule?: string;
   /** Status line under "Why we chose her", in place of the operator line. */
   proofLine?: string;
+  /** Departures known only by month (lib/content/ships/months.ts), until exact dates are filed. */
+  monthly?: MonthDeparture[];
 };
 
 /** The rate basis in words, for Dates & rates and the cabin cards. */
@@ -92,8 +98,9 @@ const prices = (d: ShipDeparture) => Object.values(d.prices).filter((p): p is nu
 const open = (d: ShipDeparture) => !/full|sold/i.test(d.status ?? "");
 
 /** Lowest published cruise fare per person across open departures (all if none open). Package journeys never count. */
-export function fromPrice(s: Pick<ShipRecord, "departures">): number | null {
+export function fromPrice(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): number | null {
   const cruise = cruiseOnly(s);
+  if (!cruise.length && s.monthly?.length) return lowestFrom(s.monthly);
   const pool = cruise.filter(open).length ? cruise.filter(open) : cruise;
   const all = pool.flatMap(prices);
   return all.length ? Math.min(...all) : null;
@@ -157,7 +164,10 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 /** What a card or glance bar says about price: a cruise fare, an A&K journey fare (labelled), or on request. */
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
-export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+  // Month-level departures only (dates in the operator's booking tool): the lowest published "from".
+  const m = !s.departures.length && s.monthly?.length ? lowestFrom(s.monthly) : null;
+  if (m) return { kind: "cruise", label: "From", amount: `US$${m.toLocaleString("en-US")}`, basis: "per person, double cabin, as the operator shows it" };
   // No published (or no remaining) dates or fares: "Ask us", never an invented "from".
   if (!s.departures.length) return { kind: "tba", label: "Rates", amount: "Ask us", basis: "no published dates or fares to show; ask James" };
   const f = fromPrice(s);

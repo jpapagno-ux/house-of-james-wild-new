@@ -1,0 +1,349 @@
+{
+ "slug": "magellan-explorer",
+ "name": "Magellan Explorer",
+ "brandLine": "Antarctica21",
+ "operator": "Antarctica21",
+ "type": "expedition ship",
+ "waters": "Antarctic waters",
+ "country": "Chile and Argentina",
+ "status": "sailing",
+ "seo": {
+  "title": "Magellan Explorer: Antarctica21 Air-Cruise Ship",
+  "description": "Magellan Explorer, Antarctica21's 90.7 m expedition ship built for air-cruises: 88 guests on air-cruises, 96 on sea voyages, seven cabin categories, PC6 ice class, launched 2019.",
+  "keywords": [
+   "Magellan Explorer",
+   "Antarctica21 ship",
+   "Antarctica air-cruise ship",
+   "Magellan Explorer cabins",
+   "Magellan Explorer deck plan"
+  ]
+ },
+ "tagline": "The ship Antarctica21 calls the first built for Antarctic air-cruises.",
+ "answer": "Magellan Explorer is Antarctica21's 90.7 m expedition ship, launched in 2019 and described by the company as the first expedition vessel custom designed for Antarctic air-cruises. She carries up to 88 guests on air-cruises and 96 on sea voyages in seven cabin categories, with 60 staff and crew, and sails the Peninsula, South Georgia, the Falklands and the Chilean fjords.",
+ "facts": [
+  [
+   "Length",
+   "90.7 m"
+  ],
+  [
+   "Breadth",
+   "16.2 m"
+  ],
+  [
+   "Launched",
+   "2019"
+  ],
+  [
+   "Ice class",
+   "LR PC6; built to Polar Code specifications"
+  ],
+  [
+   "Engines",
+   "Diesel, 3,440 kW"
+  ],
+  [
+   "Cruising speed",
+   "14 knots in open water"
+  ],
+  [
+   "Guests",
+   "Up to 88 on air-cruises; 96 on sea voyages"
+  ],
+  [
+   "Staff and crew",
+   "60"
+  ],
+  [
+   "Cabin categories",
+   "7"
+  ],
+  [
+   "Decks",
+   "Deck plans cover Decks 2 to 5"
+  ],
+  [
+   "Shipyard",
+   "ASENAV, Valdivia, Chile"
+  ],
+  [
+   "Lifesaving",
+   "2 enclosed lifeboats and 8 life rafts, total capacity 320"
+  ],
+  [
+   "Children",
+   "8 and over on air-cruises; 12 and over on sea voyages"
+  ]
+ ],
+ "overview": [
+  "Magellan Explorer was built in Chile for Antarctica21's fly and sail model: construction began in 2016 and she launched in 2019. She is sized to keep every guest ashore at a landing within Antarctic visitor limits, with up to 88 guests on air-cruises.",
+  "Public spaces include a glass enclosed observation lounge with a presentation room, a forward facing observation deck, a library, a gym designed with Anytime Fitness, a dining room with panoramic windows, the Antarctica Lounge bar and a sauna. Every cabin has a sitting area, wardrobe, individual heating and a bathroom with shower and heated floors; all except the Porthole cabins have outdoor seating."
+ ],
+ "why": [
+  "Antarctica21 calls her the world's first expedition vessel custom designed for Antarctic air-cruise operations. Her environmental list includes Tier III emissions compliance through selective catalytic reduction, heat recovery, reverse osmosis water, ballast water treatment and fuel optimisation monitoring."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/hero",
+  "alt": "Magellan Explorer sailing in front of a glacier between rocky snow capped mountains",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g1",
+   "alt": "Guests in jackets on the deck of Magellan Explorer looking out at icy water and snow capped mountains",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g2",
+   "alt": "Magellan Explorer at anchor in Antarctica",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g3",
+   "alt": "Magellan Explorer navigating icy waters surrounded by floating ice in Antarctica",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g4",
+   "alt": "Bar in the Antarctica Lounge aboard Magellan Explorer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g5",
+   "alt": "The glass enclosed Antarctica Lounge aboard Magellan Explorer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g6",
+   "alt": "Dining room with panoramic windows aboard Magellan Explorer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g7",
+   "alt": "Library aboard Magellan Explorer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/g8",
+   "alt": "Sauna aboard Magellan Explorer",
+   "credit": "Antarctica21"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Deluxe Suite",
+   "count": null,
+   "size": "44 sq m (480 sq ft)",
+   "beds": "King or two twins",
+   "deck": "Deck 4",
+   "features": [
+    "Two balconies",
+    "Living area with queen sofa bed",
+    "Two bathrooms",
+    "Minibar and snacks"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-deluxe-suite",
+    "alt": "Deluxe Suite aboard Magellan Explorer"
+   }
+  },
+  {
+   "type": "Triple Suite",
+   "count": null,
+   "size": "44 sq m (480 sq ft)",
+   "beds": "Two twins and one queen",
+   "deck": null,
+   "features": [
+    "Two balconies",
+    "Two bedrooms and a separate living area",
+    "Two bathrooms",
+    "Minibar, snacks and bathrobes"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-triple-suite",
+    "alt": "Rendering of the Triple Suite aboard Magellan Explorer"
+   }
+  },
+  {
+   "type": "Penthouse Suite",
+   "count": null,
+   "size": "33 sq m (360 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Sitting room with sofa",
+    "Minibar and snacks",
+    "Larger bathroom with separate shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-penthouse-suite",
+    "alt": "Penthouse Suite aboard Magellan Explorer"
+   }
+  },
+  {
+   "type": "Deluxe Veranda Cabin",
+   "count": null,
+   "size": "22 sq m (240 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Two room layout with armchair",
+    "Minibar",
+    "Larger bathroom"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-deluxe-veranda",
+    "alt": "Deluxe Veranda Cabin with a double bed aboard Magellan Explorer"
+   }
+  },
+  {
+   "type": "Veranda Cabin",
+   "count": null,
+   "size": "19 sq m (210 sq ft)",
+   "beds": "King or two twins",
+   "deck": "Deck 3",
+   "features": [
+    "Private balcony",
+    "Armchair",
+    "Separate shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-veranda",
+    "alt": "Veranda Cabin with twin beds aboard Magellan Explorer"
+   }
+  },
+  {
+   "type": "Single Veranda Cabin",
+   "count": null,
+   "size": "18 sq m (200 sq ft)",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Sitting area and balcony",
+    "No single supplement"
+   ],
+   "image": null
+  },
+  {
+   "type": "Porthole Cabin",
+   "count": null,
+   "size": "18 sq m (200 sq ft)",
+   "beds": "King or two twins",
+   "deck": "Deck 3",
+   "features": [
+    "Porthole, no balcony",
+    "Two armchairs",
+    "Separate shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/cabin-porthole",
+    "alt": "Porthole Cabin aboard Magellan Explorer"
+   }
+  }
+ ],
+ "deckPlans": [
+  {
+   "deck": "All decks, air-cruise configuration 2026-27",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/deck-plan-air-cruise-2026-27",
+    "alt": "Magellan Explorer deck plan for 2026 to 27 air cruises"
+   },
+   "cabins": [
+    "Deluxe Suite",
+    "Triple Suite",
+    "Penthouse Suite",
+    "Deluxe Veranda Cabin",
+    "Veranda Cabin",
+    "Single Veranda Cabin",
+    "Porthole Cabin"
+   ]
+  },
+  {
+   "deck": "All decks, sea voyage configuration 2026-27",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-explorer/deck-plan-sea-voyage-2026-27",
+    "alt": "Magellan Explorer deck plan for 2026 to 27 sea voyages"
+   },
+   "cabins": [
+    "Deluxe Suite",
+    "Triple Suite",
+    "Penthouse Suite",
+    "Deluxe Veranda Cabin",
+    "Veranda Cabin",
+    "Single Veranda Cabin",
+    "Porthole Cabin"
+   ]
+  }
+ ],
+ "itineraries": [],
+ "departures": [],
+ "pricesNote": "From fares are per person, double cabin, in US dollars, as Antarctica21 shows them. Dated departures and fares by cabin load in Antarctica21's live booking tool and are added here as they are confirmed. Dedicated single cabins carry no single supplement; in shared cabin categories Antarctica21 charges an 85% supplement on some cabins and 100% on the rest.",
+ "inclusions": [
+  "Expedition cruise with guided shore landings, Zodiac excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch and a la carte dinner, with wine, beer, juice, soft drinks, coffee, tea and snacks",
+  "Loan of waterproof boots, contingency plan and IAATO passenger fee",
+  "On air-cruises: the flight or flights between Punta Arenas and King George Island, Punta Arenas hotel night or nights at the Cabo de Hornos Hotel or similar, transfers and access to Explorers House"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)"
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate. Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "How many guests does Magellan Explorer carry?",
+   "Up to 88 on air-cruises and 96 on sea voyages, with 60 staff and crew."
+  ],
+  [
+   "Does every cabin have a balcony?",
+   "No. All categories except the Porthole Cabin have private outdoor seating."
+  ],
+  [
+   "What makes her different?",
+   "Antarctica21 describes her as the world's first expedition vessel custom designed for Antarctic air-cruise operations, built to Polar Code specifications with LR PC6 ice class."
+  ],
+  [
+   "Which trips does she sail?",
+   "Classic Antarctica, Polar Circle, Antarctica Express and Antarctica and South Georgia air-cruises, plus the Patagonia and Chilean Fjords, Falklands, Falklands and South Georgia, and Falklands, South Georgia and Antarctica sea voyages."
+  ],
+  [
+   "Can solo travellers avoid a supplement?",
+   "Yes, in the Single Veranda Cabin, which carries no supplement."
+  ],
+  [
+   "Is there a doctor on board?",
+   "Antarctica21 says its ships have a small infirmary and a licensed doctor. Medical insurance with aero medical evacuation is required."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Value minded air-cruise travellers",
+   "line": "Lower from prices than Magellan Discoverer on every shared itinerary."
+  },
+  {
+   "who": "Solo travellers",
+   "line": "A Single Veranda Cabin with no supplement."
+  },
+  {
+   "who": "Families of three",
+   "line": "A Triple Suite with two bedrooms and two bathrooms."
+  }
+ ],
+ "sources": [
+  "https://www.antarctica21.com/ship/magellan-explorer",
+  "https://www.antarctica21.com/our-company",
+  "https://www.antarctica21.com/journal/what-antarctica21-small-ship-is-right-for-you",
+  "https://www.antarctica21.com/travel-tips-antarctica"
+ ],
+ "film": null,
+ "glance": {
+  "route": "From Punta Arenas, Ushuaia or Puerto Montt",
+  "guests": "Up to 88 on air-cruises, 96 on sea voyages",
+  "ages": "8+ on air-cruises, 12+ on sea voyages"
+ },
+ "rateBasis": "per-cruise",
+ "photoCredit": "Antarctica21",
+ "checked": "2026-11-02"
+}

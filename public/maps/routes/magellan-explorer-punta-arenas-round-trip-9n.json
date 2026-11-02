@@ -1,0 +1,186 @@
+{
+ "id": "magellan-explorer-punta-arenas-round-trip-9n",
+ "type": "voyage",
+ "destination": "polar",
+ "title": "Polar Circle Air-Cruise aboard Magellan Explorer",
+ "subtitle": "9 nights · Punta Arenas round trip · Magellan Explorer",
+ "days": {
+  "1": "Start of the air-cruise",
+  "2": "Scheduled flight to Antarctica",
+  "3": "Exploring Antarctica: South Shetland Islands",
+  "4": "Exploring Antarctica: Gerlache Strait",
+  "5": "Exploring Antarctica: Penola Strait",
+  "6": "Exploring Antarctica: Crystal Sound",
+  "7": "Exploring Antarctica: western Peninsula",
+  "8": "Exploring Antarctica: South Shetland Islands",
+  "9": "Scheduled return flight",
+  "10": "End of the air-cruise"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "King George Island, South Shetland Islands",
+   "lat": -62.2,
+   "lng": -58.96,
+   "mode": "air",
+   "kind": "airstrip"
+  },
+  {
+   "day": 3,
+   "name": "South Shetland Islands",
+   "lat": -62.6,
+   "lng": -59.9,
+   "mode": "sea",
+   "path": [
+    [
+     -58.96,
+     -62.2
+    ],
+    [
+     -59.9,
+     -62.6
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Gerlache Strait (possible)",
+   "lat": -64.55,
+   "lng": -62.45,
+   "mode": "sea",
+   "path": [
+    [
+     -59.9,
+     -62.6
+    ],
+    [
+     -62.45,
+     -64.55
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Penola Strait (possible)",
+   "lat": -65.25,
+   "lng": -64.2,
+   "mode": "sea",
+   "path": [
+    [
+     -62.45,
+     -64.55
+    ],
+    [
+     -64.2,
+     -65.25
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Crystal Sound, toward the Polar Circle (possible)",
+   "lat": -66.4,
+   "lng": -66.6,
+   "mode": "sea",
+   "path": [
+    [
+     -64.2,
+     -65.25
+    ],
+    [
+     -66.6,
+     -66.4
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Western Antarctic Peninsula",
+   "lat": -64.75,
+   "lng": -62.9,
+   "mode": "sea",
+   "path": [
+    [
+     -66.6,
+     -66.4
+    ],
+    [
+     -62.9,
+     -64.75
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "South Shetland Islands",
+   "lat": -62.3,
+   "lng": -59.2,
+   "mode": "sea",
+   "path": [
+    [
+     -62.9,
+     -64.75
+    ],
+    [
+     -59.2,
+     -62.3
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "air"
+  },
+  {
+   "day": 10,
+   "name": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "sea",
+   "path": [
+    [
+     -70.9171,
+     -53.1638
+    ],
+    [
+     -70.9171,
+     -53.1638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Drake Passage",
+    "lat": -58.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Scotia Sea",
+    "lat": -57.0,
+    "lng": -45.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Antarctic Peninsula",
+    "lat": -67.0,
+    "lng": -63.5,
+    "kind": "region"
+   }
+  ]
+ }
+}

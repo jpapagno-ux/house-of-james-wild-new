@@ -1,0 +1,211 @@
+{
+ "slug": "magellan-discoverer-inaugural-air-cruise",
+ "name": "Magellan Discoverer Inaugural Air-Cruise",
+ "operatorName": "Magellan Discoverer Inaugural Air-Cruise",
+ "operator": "Antarctica21",
+ "style": "fly-one",
+ "flight": "One way: sail from Punta Arenas via Ushuaia and the Drake, fly back from King George Island",
+ "route": "Punta Arenas round trip via Ushuaia",
+ "short": "Inaugural",
+ "nights": 9,
+ "nightsText": null,
+ "days": 10,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Port of Punta Arenas"
+ },
+ "end": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "ships": [
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 88",
+ "regions": [
+  "peninsula",
+  "patagonia"
+ ],
+ "length": "medium",
+ "monthChips": [
+  "dec"
+ ],
+ "months": [
+  "December 2026"
+ ],
+ "seo": {
+  "title": "Magellan Discoverer Inaugural Air-Cruise, Dec 2026",
+  "description": "The first voyage of Antarctica21's Magellan Discoverer: sail from Punta Arenas through Patagonia and the Beagle Channel, cross the Drake, then fly home from Antarctica. December 2026.",
+  "keywords": [
+   "Magellan Discoverer inaugural",
+   "Antarctica21 inaugural voyage",
+   "Magellan Discoverer December 2026"
+  ]
+ },
+ "tagline": "The maiden voyage: Patagonia, the Drake by sea, a flight home.",
+ "answer": "The Magellan Discoverer Inaugural Air-Cruise is a single ten-day, nine-night departure in December 2026. The new ship sails from Punta Arenas through the Strait of Magellan, Glacier Alley and the Beagle Channel, crosses the Drake Passage, spends three days in Antarctica, then guests fly back to Punta Arenas. Antarctica21's page shows it as sold out.",
+ "overview": [
+  "A one off voyage that brings Magellan Discoverer south for her first season. It is the only Antarctica21 air-cruise that sails out of Punta Arenas through Patagonia before the Drake."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/magellan-discoverer-inaugural-air-cruise/1",
+  "alt": "Rocky wooded shore in front of a large blue glacier in southern Patagonia",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/magellan-discoverer-inaugural-air-cruise/1",
+   "alt": "Rocky wooded shore in front of a large blue glacier in southern Patagonia",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/magellan-discoverer-inaugural-air-cruise/2",
+   "alt": "Guests in cold weather gear riding an inflatable boat through icy water with forest behind",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g1",
+   "alt": "Profile view of Magellan Discoverer",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Start of the air-cruise",
+   "place": "Strait of Magellan and Cape Froward",
+   "lat": -53.896,
+   "lng": -71.299,
+   "summary": "Sail from Punta Arenas along the Strait of Magellan to Cape Froward, home to Magellanic penguins and cormorants."
+  },
+  {
+   "day": 2,
+   "title": "Southern Patagonia",
+   "place": "Glacier Alley, Garibaldi Glacier",
+   "lat": -54.85,
+   "lng": -69.9,
+   "summary": "Glacier Alley, with an optional Zodiac outing at Garibaldi Glacier."
+  },
+  {
+   "day": 3,
+   "title": "Beagle Channel",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Free time in Ushuaia, then the Beagle Channel toward Antarctica."
+  },
+  {
+   "day": 4,
+   "title": "Drake Passage",
+   "place": "Drake Passage",
+   "lat": -58.5,
+   "lng": -65.0,
+   "summary": "Crossing to the South Shetland Islands.",
+   "label": "Days 4 to 5"
+  },
+  {
+   "day": 6,
+   "title": "Explore Antarctica",
+   "place": "South Shetland Islands and western Antarctic Peninsula",
+   "lat": -63.5,
+   "lng": -61.0,
+   "summary": "Daily Zodiac landings among ice filled fjords, route set by conditions and wildlife.",
+   "label": "Days 6 to 8"
+  },
+  {
+   "day": 9,
+   "title": "Scheduled return flight",
+   "place": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Fly from King George Island back to Punta Arenas and transfer to the hotel for the night. Meals in Punta Arenas that evening are at your own expense."
+  },
+  {
+   "day": 10,
+   "title": "End of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Breakfast at the hotel, then a group transfer to Punta Arenas airport."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {},
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2026-12"
+   ],
+   "monthsText": "December 2026",
+   "count": 1,
+   "prices": {},
+   "priceText": null,
+   "status": "sold-out"
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Group airport and hotel transfers in Punta Arenas",
+  "Expedition cruise on Magellan Discoverer",
+  "One hotel night with breakfast at the Cabo de Hornos Hotel (Day 9)",
+  "Flight from King George Island to Punta Arenas",
+  "Guided shore landings, Zodiac excursions, lectures and entertainment",
+  "Buffet breakfast and lunch, a la carte dinner, selected drinks and snacks on board",
+  "Contingency plan, loan of waterproof boots and the IAATO passenger fee",
+  "Access to Explorers House"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Meals in Punta Arenas on the evening of the return flight",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)",
+  "Extra hotel nights (sold as a Hotel and Transfer Package)"
+ ],
+ "optional": [
+  {
+   "name": "Sea kayaking",
+   "note": "Selected departures only. Up to 20 paddlers in two alternating groups of 10, per Antarctica21's 2027-28 season note."
+  },
+  {
+   "name": "Hiking and snowshoeing",
+   "note": "Small group led by a guide, selected departures only."
+  },
+  {
+   "name": "Hotel and Transfer Package",
+   "note": "Extra nights at the Cabo de Hornos Hotel or similar with group transfers."
+  }
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate.",
+ "faqs": [
+  [
+   "Can I still book the inaugural?",
+   "Antarctica21's page shows the departure as sold out."
+  ],
+  [
+   "Does it cross the Drake by sea?",
+   "Yes, southbound. Guests fly back from King George Island."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Ship enthusiasts",
+   "line": "The first sailing of a new hybrid electric polar ship."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-03"
+  ]
+ },
+ "status": "sold-out",
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/inaugural-air-cruise",
+  "https://www.antarctica21.com/journal/announcing-our-2026-27-antarctic-air-cruise-season"
+ ],
+ "checked": "2026-11-02"
+}

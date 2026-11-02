@@ -1,12 +1,13 @@
 import { SHIPS } from "./index";
 import { cardsFor, tally, type ShipCardData } from "./cards";
-import { SHIP_REGISTRY, VOYAGE_TYPES, WATERS_HUBS, registryShip, shipsInWaters, shipsOfType, type VoyageType, type Waters } from "./registry";
+import { POLAR_WATERS, SHIP_REGISTRY, VOYAGE_TYPES, WATERS_HUBS, registryShip, shipsInWaters, shipsOfType, type VoyageType, type Waters } from "./registry";
 import { atlasRoutes } from "./atlas";
 import { NILE_CHART } from "./routes";
 import { ALIIKAI_SHIP } from "./aliikai";
 import { factOf, nightsLabel } from "./types";
 import type { HubProps } from "@/components/ships/VoyageHub";
 import type { Tile } from "@/components/ships/VoyageTiles";
+import { POLAR_PATH, POLAR_VOYAGES, voyageFrom } from "@/lib/content/polar";
 
 // The copy for every Voyages hub, built from the registry and the ships' own records: each
 // opening answers the question people search, in facts the ship pages already carry. No hub
@@ -17,8 +18,10 @@ const SMALL = new Set(["a", "an", "the", "for", "or", "in", "of", "to", "and", "
 const titleCase = (q: string) => q.split(" ").map((w, i) => (i > 0 && SMALL.has(w) ? w : w.split("-").map((x) => x.charAt(0).toUpperCase() + x.slice(1)).join("-"))).join(" ");
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}` : xs[0] ?? "");
-const POLAR = "https://polarcrossings.com";
-const polarTile: Tile = { key: "polar", name: "Antarctica and the Arctic", href: POLAR, line: "Polar ships sail with Polar Crossings, James's polar platform.", external: true };
+// The polar card opens Polar Crossings on this site (/voyages/polar, James, 2 Nov 2026); only that
+// page links out to polarcrossings.com.
+const polarLows = POLAR_VOYAGES.map(voyageFrom).filter((n): n is number => typeof n === "number");
+export const polarTile: Tile = { key: "polar", name: "Polar Crossings", href: POLAR_PATH, line: "Antarctica, South Georgia, the Falklands and Patagonia with Antarctica21.", note: `${POLAR_VOYAGES.length} itineraries`, from: polarLows.length ? usd(Math.min(...polarLows)) : null };
 
 /** "Origin (yacht, Ecoventura; 7 nights; 20 guests; from US$10,950)" from the ship's own record. */
 function brief(c: ShipCardData): string {
@@ -37,11 +40,11 @@ function typeTiles(except: VoyageType): Tile[] {
   return (Object.keys(VOYAGE_TYPES) as VoyageType[]).filter((t) => t !== except).map((t) => { const x = tally(cardsFor(shipsOfType(t))); return { key: t, name: VOYAGE_TYPES[t].name, href: VOYAGE_TYPES[t].path, line: VOYAGE_TYPES[t].line, count: x.count, from: x.from }; });
 }
 function watersTiles(except?: Waters): Tile[] {
-  return (Object.keys(WATERS_HUBS) as Waters[]).filter((w) => w !== except).map((w) => { const x = tally(cardsFor(shipsInWaters(w))); return { key: w, name: WATERS_HUBS[w].name, href: WATERS_HUBS[w].path, line: WATERS_HUBS[w].countries.join(", "), count: x.count, from: x.from }; });
+  return (Object.keys(WATERS_HUBS) as Waters[]).filter((w) => w !== except && !POLAR_WATERS.includes(w)).map((w) => { const x = tally(cardsFor(shipsInWaters(w))); return { key: w, name: WATERS_HUBS[w].name, href: WATERS_HUBS[w].path, line: WATERS_HUBS[w].countries.join(", "), count: x.count, from: x.from }; });
 }
 const routesFor = (cards: ShipCardData[]) => atlasRoutes(SHIPS.filter((e) => cards.some((c) => c.slug === e.slug)));
 const FARES = { q: "How are the fares shown?", a: "Per person, two sharing, as each operator publishes them, with past departures removed automatically. Every fare and every cabin is confirmed live when you ask." };
-const POLAR_FAQ = { q: "Where are the polar voyages?", a: "Antarctica and the Arctic are planned with Polar Crossings, James's polar platform at polarcrossings.com, not in Voyages." };
+const POLAR_FAQ = { q: "Where are the polar voyages?", a: `In Polar Crossings, the house's polar arm under To the Edges: all ${POLAR_VOYAGES.length} Antarctica21 itineraries, each with its own page.` };
 
 export function typeHub(t: VoyageType): HubProps {
   const T = VOYAGE_TYPES[t];
@@ -70,14 +73,18 @@ export function typeHub(t: VoyageType): HubProps {
     ],
     adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
     atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's Raja Ampat and Komodo routes: pick one and the globe sails it day by day." } };
-  if (t === "expedition") return { ...base,
+  if (t === "expedition") {
+    const gal = cards.filter((c) => c.waters.includes("galapagos")), pol = cards.filter((c) => c.waters.includes("antarctica"));
+    const where = [gal.length ? `${list(gal.map((c) => c.name))} in the Galápagos` : "", pol.length ? `${list(pol.map((c) => c.name))} in Antarctica, South Georgia, the Falklands and Patagonia` : ""].filter(Boolean);
+    return { ...base,
     title: "Small Expedition Ships", intro: T.line,
-    answer: `Voyages files ${cards.length} expedition ships, all in the Galápagos: ${briefs(cards)}. Antarctica and the Arctic sail with Polar Crossings, James's polar platform.`,
+    answer: `Voyages files ${cards.length} expedition ships: ${briefs(cards)}. Every Antarctica21 itinerary, with its own page, sits in Polar Crossings, the house's polar arm.`,
     faqs: [
-      { q: "Which expedition ships does James Wild & Co sell?", a: `${list(cards.map((c) => c.name))} in the Galápagos.` },
+      { q: "Which expedition ships does James Wild & Co sell?", a: `${list(where)}.` },
       POLAR_FAQ, FARES,
     ],
-    atlas: { routes: routesFor(cards), legend: "sea", dest: "galapagos", kicker: "THE VOYAGES · TO THE EDGES", title: "Where Do the Expedition Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day." } };
+    atlas: { routes: routesFor(gal), legend: "sea", dest: "galapagos", kicker: "THE VOYAGES · TO THE EDGES", title: "Where Do the Galápagos Expedition Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day. The polar routes have their own chart in Polar Crossings." } };
+  }
   // charter
   const a = registryShip("aliikai")!;
   return { ...base,

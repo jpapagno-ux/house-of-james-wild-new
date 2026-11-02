@@ -1,0 +1,277 @@
+{
+ "id": "magellan-explorer-punta-arenas-round-trip-16n",
+ "type": "voyage",
+ "destination": "polar",
+ "title": "Falklands and South Georgia aboard Magellan Explorer",
+ "subtitle": "16 nights · Punta Arenas round trip · Magellan Explorer",
+ "days": {
+  "1": "Punta Arenas, embarkation",
+  "2": "At sea",
+  "3": "Saunders Island and West Point Island",
+  "4": "Port Stanley",
+  "5": "Days 5 to 6: At sea",
+  "7": "Elsehul Bay",
+  "8": "Grytviken and Fortuna Bay",
+  "9": "Gold Harbour and Drygalski Fjord",
+  "10": "St Andrews Bay and Ocean Harbour",
+  "11": "Salisbury Plain",
+  "12": "Days 12 to 14: At sea",
+  "15": "Bleaker Island",
+  "16": "At sea",
+  "17": "Punta Arenas, disembarkation"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "South Atlantic",
+   "lat": -52.5,
+   "lng": -64.0,
+   "mode": "sea",
+   "path": [
+    [
+     -70.9171,
+     -53.1638
+    ],
+    [
+     -64.0,
+     -52.5
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Saunders Island, Falklands",
+   "lat": -51.37,
+   "lng": -60.08,
+   "mode": "sea",
+   "path": [
+    [
+     -64.0,
+     -52.5
+    ],
+    [
+     -60.08,
+     -51.37
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Port Stanley",
+   "lat": -51.6921,
+   "lng": -57.8589,
+   "mode": "sea",
+   "path": [
+    [
+     -60.08,
+     -51.37
+    ],
+    [
+     -57.8589,
+     -51.6921
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "South Atlantic",
+   "lat": -53.5,
+   "lng": -46.0,
+   "mode": "sea",
+   "path": [
+    [
+     -57.8589,
+     -51.6921
+    ],
+    [
+     -46.0,
+     -53.5
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Elsehul Bay, South Georgia",
+   "lat": -54.02,
+   "lng": -37.98,
+   "mode": "sea",
+   "path": [
+    [
+     -46.0,
+     -53.5
+    ],
+    [
+     -37.98,
+     -54.02
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Grytviken",
+   "lat": -54.2811,
+   "lng": -36.5092,
+   "mode": "sea",
+   "path": [
+    [
+     -37.98,
+     -54.02
+    ],
+    [
+     -36.5092,
+     -54.2811
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Gold Harbour",
+   "lat": -54.62,
+   "lng": -35.93,
+   "mode": "sea",
+   "path": [
+    [
+     -36.5092,
+     -54.2811
+    ],
+    [
+     -35.93,
+     -54.62
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "St Andrews Bay",
+   "lat": -54.43,
+   "lng": -36.18,
+   "mode": "sea",
+   "path": [
+    [
+     -35.93,
+     -54.62
+    ],
+    [
+     -36.18,
+     -54.43
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Salisbury Plain",
+   "lat": -54.05,
+   "lng": -37.35,
+   "mode": "sea",
+   "path": [
+    [
+     -36.18,
+     -54.43
+    ],
+    [
+     -37.35,
+     -54.05
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "South Atlantic",
+   "lat": -53.0,
+   "lng": -48.0,
+   "mode": "sea",
+   "path": [
+    [
+     -37.35,
+     -54.05
+    ],
+    [
+     -48.0,
+     -53.0
+    ]
+   ]
+  },
+  {
+   "day": 15,
+   "name": "Bleaker Island, Falklands",
+   "lat": -52.2,
+   "lng": -58.85,
+   "mode": "sea",
+   "path": [
+    [
+     -48.0,
+     -53.0
+    ],
+    [
+     -58.85,
+     -52.2
+    ]
+   ]
+  },
+  {
+   "day": 16,
+   "name": "South Atlantic",
+   "lat": -52.8,
+   "lng": -64.0,
+   "mode": "sea",
+   "path": [
+    [
+     -58.85,
+     -52.2
+    ],
+    [
+     -64.0,
+     -52.8
+    ]
+   ]
+  },
+  {
+   "day": 17,
+   "name": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "sea",
+   "path": [
+    [
+     -64.0,
+     -52.8
+    ],
+    [
+     -70.9171,
+     -53.1638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Drake Passage",
+    "lat": -58.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Scotia Sea",
+    "lat": -57.0,
+    "lng": -45.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Antarctic Peninsula",
+    "lat": -67.0,
+    "lng": -63.5,
+    "kind": "region"
+   }
+  ]
+ }
+}

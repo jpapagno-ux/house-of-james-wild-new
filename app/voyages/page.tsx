@@ -7,7 +7,8 @@ import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import RouteAtlas from "@/components/journey/RouteAtlas";
 import ShipCard from "@/components/ships/ShipCard";
-import TripFinder from "@/components/ships/TripFinder";
+import VoyageSearch from "@/components/ships/VoyageSearch";
+import { SEARCH_PAGES, searchItems, searchMonths } from "@/lib/content/ships/search";
 import VoyageTiles, { type Tile } from "@/components/ships/VoyageTiles";
 import { FILMS } from "@/lib/content/films";
 import { VOLUMES } from "@/lib/site";
@@ -23,7 +24,8 @@ import { POLAR_VOYAGES } from "@/lib/content/polar";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
 // order people choose: how to sail, which waters, every route on one chart, the ship James has
-// sailed, the whole ship, the finder, then questions. Every list reads the ships registry.
+// sailed, the whole ship, then questions. "Find your voyage" (where, when, who, what, length, budget and a
+// typeahead, James 2 Nov 2026) opens the page, ahead of the tiles. Every list reads the ships registry.
 // The polar card opens Polar Crossings on this site (/voyages/polar, James, 2 Nov 2026).
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
@@ -58,6 +60,7 @@ export default function VoyagesHub() {
     polarTile,
   ];
   const sailed = [shipCard(aliikai)!];
+  const search = searchItems();
   const charters = cards.filter((c) => c.types.includes("charter"));
   return (
     <div className="theme-sea theme-sea-page">
@@ -66,6 +69,9 @@ export default function VoyagesHub() {
         film={{ poster: FILMS.aliikai.poster, alt: FILMS.aliikai.alt, eyebrow: "The film", title: "Aboard Aliikai in Komodo", credit: FILMS.aliikai.credit, href: `https://www.youtube.com/watch?v=${FILMS.aliikai.id}` }}
         answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Crossings, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
         filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">
+        <HubSection eyebrow="Search every filed ship" title="Find Your Voyage" id="finder-h">
+          <VoyageSearch items={search} months={searchMonths(search)} pages={SEARCH_PAGES} />
+        </HubSection>
         <HubSection eyebrow="Four ways to sail" title="How Do You Want to Sail?" id="types-h"><VoyageTiles tiles={typeTiles} /></HubSection>
         <HubSection eyebrow="The waters" title="Which Waters?" id="waters-h"><VoyageTiles tiles={watersTiles} cols={5} /></HubSection>
         <RouteAtlas id="voyages-atlas" kind="voyage" dest="nile" chart={NILE_CHART} legend="river-sea" kicker="THE VOYAGES · BY RIVER AND SEA" eyebrow="The voyage atlas" title="Where Do the Ships Sail?"
@@ -86,9 +92,6 @@ export default function VoyagesHub() {
             <p className="md:text-right"><span className="ledger-eyebrow block">Aliikai, the whole yacht</span><span className="ledger-display text-5xl ledger-crimson">{usd(aliikai.charter!.from!)}</span><span className="block text-[13px] ledger-muted">per night · up to 15 guests · + 11% tax</span></p>
           </div>
         </section>
-        <HubSection eyebrow="Not sure?" title="Which Ship Fits Your Trip?" id="finder-h">
-          <TripFinder cards={cards} types={TYPES.map((t) => ({ key: t, name: VOYAGE_TYPES[t].name }))} waters={WATERS.map((w) => ({ key: w, name: WATERS_HUBS[w].name }))} />
-        </HubSection>
         <AdvisorScroll volume="voyages" title="Who sails with the small ships" unlinked={["gatherings"]} />
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Sail?" />
       </HubShell>

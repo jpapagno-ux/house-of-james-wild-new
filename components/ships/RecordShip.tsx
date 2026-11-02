@@ -32,8 +32,6 @@ export type ShipExtra = {
   heroFilm?: ShortFilm;
   stamp?: ReactNode;
   eyebrow?: string;
-  /** Sections of her own, each with a nav item placed before Dates & rates (`before`) or before FAQ. */
-  nav?: { label: string; id: string; before?: "dates" | "faq" }[];
   top?: ReactNode;
   lead?: ReactNode;
   body?: ReactNode;
@@ -61,16 +59,9 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
   const map = shipMap(entry);
   const glanceBasis = basis === "per-night" && price.kind === "cruise" ? "per person for the voyage, two sharing, plus tax" : price.basis;
 
-  const own = extra.nav ?? [];
-  const nav: [string, string][] = [
-    ["Overview", "overview"], ["Itinerary", "itinerary"], ["Cabins", "cabins"],
-    ...(s.deckPlans.length ? [["Deck plan", "deck-plan"] as [string, string]] : []),
-    ...own.filter((x) => x.before === "dates").map((x) => [x.label, x.id] as [string, string]),
-    ["Dates & rates", "dates"],
-    ...(offers.length ? [["Offers", "offers"] as [string, string]] : []),
-    ...own.filter((x) => x.before !== "dates").map((x) => [x.label, x.id] as [string, string]),
-    ["FAQ", "faq-heading"],
-  ];
+  // Five stops (James, 2 Nov 2026): the overview and why-we-chose-her read as The Ship; cabins and
+  // the deck plan share one stop; offers and a ship's own extras sit inside the nearest section.
+  const nav: [string, string][] = [["The Ship", "overview"], ["Itineraries", "itinerary"], [s.deckPlans.length ? "Cabins & Deck Plan" : "Cabins", "cabins"], ["Dates & Rates", "dates"], ["FAQ", "faq-heading"]];
   const crumbs = [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, ...(w ? [{ name: w.name, path: w.path }] : []), { name: s.name, path }];
 
   const trips = s.itineraries.filter((it) => it.days.length).map((it) => {

@@ -30,7 +30,6 @@ export function aliikaiExtra(): ShipExtra {
     heroFilm: FILMS.aliikai,
     eyebrow: `Wild & Co Voyages · The vessel · ${s.ledgerId}`,
     stamp: <FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />,
-    nav: [{ label: "Voyages", id: "voyages", before: "dates" }, { label: "Charter", id: "charter" }],
     jsonld: [{
       "@context": "https://schema.org",
       "@type": "ItemList",

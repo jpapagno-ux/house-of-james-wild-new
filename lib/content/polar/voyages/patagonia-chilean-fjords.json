@@ -1,0 +1,232 @@
+{
+ "slug": "patagonia-chilean-fjords",
+ "name": "Patagonia and Chilean Fjords",
+ "operatorName": "Patagonia & Chilean Fjords",
+ "operator": "Antarctica21",
+ "style": "sail-both",
+ "flight": "None: one way between ports",
+ "route": "Puerto Montt to Ushuaia",
+ "short": "Chilean fjords",
+ "nights": 8,
+ "nightsText": "8 or 10",
+ "days": 9,
+ "daysText": "9 or 11",
+ "start": {
+  "place": "Puerto Montt, Chile (southbound) or Ushuaia, Argentina (northbound)",
+  "airportOrPort": "Port of Puerto Montt or Port of Ushuaia"
+ },
+ "end": {
+  "place": "Ushuaia, Argentina (southbound) or Puerto Montt, Chile (northbound)",
+  "airportOrPort": "Port of Ushuaia or Port of Puerto Montt"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 96",
+ "regions": [
+  "patagonia"
+ ],
+ "length": "medium",
+ "monthChips": [
+  "sep-oct",
+  "apr"
+ ],
+ "months": [
+  "September",
+  "April"
+ ],
+ "seo": {
+  "title": "Patagonia and Chilean Fjords by Antarctica21",
+  "description": "Sail the Chilean fjords between Puerto Montt and Ushuaia: Pio XI Glacier, Caleta Tortel, Bernardo O'Higgins National Park and Glacier Alley. Nine or eleven days.",
+  "keywords": [
+   "Chilean fjords cruise",
+   "Patagonia expedition cruise",
+   "Puerto Montt to Ushuaia",
+   "Antarctica21"
+  ]
+ },
+ "tagline": "The fjords between Puerto Montt and Ushuaia.",
+ "answer": "Patagonia and Chilean Fjords is Antarctica21's one way sea voyage between Puerto Montt, Chile, and Ushuaia, Argentina, run in both directions. The 2026-27 version is nine days and eight nights; 2027-28 is eleven days and ten nights and adds Madre de Dios Island and Torres del Paine. It sails in September and April with up to 96 guests.",
+ "overview": [
+  "The repositioning voyages that bring the ships south in spring and north in autumn, through the channels, glaciers and stilt villages of Chilean Patagonia."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/patagonia-chilean-fjords/2",
+  "alt": "Expedition ship sailing an icy fjord between steep rocky mountains with a waterfall",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/patagonia-chilean-fjords/1",
+   "alt": "Calm water before rocky wooded islands backed by a large blue glacier",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/patagonia-chilean-fjords/2",
+   "alt": "Expedition ship sailing an icy fjord between steep rocky mountains with a waterfall",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/patagonia-chilean-fjords/3",
+   "alt": "Kayakers on calm water near a massive blue glacier with forested cliffs",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Embarkation",
+   "place": "Puerto Montt",
+   "lat": -41.4693,
+   "lng": -72.9424,
+   "summary": "Board 15:00 to 16:00 and sail toward the Gulf of Corcovado."
+  },
+  {
+   "day": 2,
+   "title": "Puyuhuapi Channel",
+   "place": "Puyuhuapi",
+   "lat": -44.32,
+   "lng": -72.56,
+   "summary": "Fjords and channels near Puerto Aysen and Magdalena Island; dolphins, whales and otters possible."
+  },
+  {
+   "day": 3,
+   "title": "Moraleda Channel",
+   "place": "Chonos Archipelago and San Rafael National Park",
+   "lat": -45.6,
+   "lng": -73.8,
+   "summary": "Cruising near San Rafael National Park if the weather allows."
+  },
+  {
+   "day": 4,
+   "title": "Gulf of Penas and Caleta Tortel",
+   "place": "Caleta Tortel",
+   "lat": -47.7966,
+   "lng": -73.5354,
+   "summary": "The crossing, then an afternoon visit to the village if the weather permits."
+  },
+  {
+   "day": 5,
+   "title": "Messier Channel and Pio XI Glacier",
+   "place": "Pio XI Glacier",
+   "lat": -49.2,
+   "lng": -74.0,
+   "summary": "The English Narrows and views of the Southern Patagonian Ice Field."
+  },
+  {
+   "day": 6,
+   "title": "Bernardo O'Higgins National Park",
+   "place": "Peel Fjord, Amalia or El Brujo Glacier",
+   "lat": -50.95,
+   "lng": -73.8,
+   "summary": "Zodiac excursion among ice floes."
+  },
+  {
+   "day": 7,
+   "title": "Day at sea",
+   "place": "Strait of Magellan, Francisco Coloane Marine Park",
+   "lat": -53.6,
+   "lng": -72.3,
+   "summary": "Whales possible along the marine park coast."
+  },
+  {
+   "day": 8,
+   "title": "Beagle Channel and Garibaldi Fjord",
+   "place": "Glacier Alley",
+   "lat": -54.85,
+   "lng": -69.9,
+   "summary": "Glaciers along the channel and Garibaldi Fjord."
+  },
+  {
+   "day": 9,
+   "title": "Disembarkation",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Morning arrival."
+  }
+ ],
+ "itineraryNote": "Nine day southbound (2026-27) shown. Antarctica21 also publishes a nine day northbound and eleven day southbound and northbound versions (2027-28: Kent Island, Madre de Dios Island, Las Montañas Channel, a Torres del Paine bus excursion, Seno de Agostini and Yendegaia National Park).",
+ "fromByShip": {
+  "magellan-explorer": 6495,
+  "magellan-discoverer": 8795
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2026-09",
+    "2027-04"
+   ],
+   "monthsText": "September, April",
+   "count": null,
+   "prices": {
+    "magellan-explorer": 6495,
+    "magellan-discoverer": 8795
+   },
+   "priceText": null,
+   "status": null,
+   "nights": 8
+  },
+  {
+   "season": "2027-28",
+   "months": [
+    "2027-09",
+    "2028-04"
+   ],
+   "monthsText": "September, April",
+   "count": null,
+   "prices": {},
+   "priceText": null,
+   "status": null,
+   "nights": 10
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Ship cruise per the itinerary",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch, a la carte dinner, selected drinks and snacks",
+  "Loan of waterproof boots, contingency plan and the IAATO passenger fee",
+  "Access to the Antarctica21 Travel App"
+ ],
+ "exclusions": [],
+ "optional": [
+  {
+   "name": "Sea kayaking",
+   "note": "Led by a Kayak Master"
+  }
+ ],
+ "children": "Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "Does this voyage go to Antarctica?",
+   "No. It sails the Chilean fjords between Puerto Montt and Ushuaia."
+  ],
+  [
+   "How long is it?",
+   "Nine days in 2026-27 and eleven days in 2027-28, in either direction."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers pairing Patagonia with an air-cruise",
+   "line": "Ends in Ushuaia, close to the air-cruise gateways."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-06",
+  "secondary": [
+   "PATH-04"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/patagonia-chilean-fjords",
+  "https://www.antarctica21.com/our-promotions"
+ ],
+ "checked": "2026-11-02"
+}

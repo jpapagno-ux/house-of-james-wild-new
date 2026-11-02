@@ -1,0 +1,259 @@
+{
+ "slug": "falklands-south-georgia-antarctica",
+ "name": "Falklands, South Georgia and Antarctica",
+ "operatorName": "Falklands (Malvinas), South Georgia & Antarctica",
+ "operator": "Antarctica21",
+ "style": "sail-both",
+ "flight": "None: sail both ways",
+ "route": "Punta Arenas to Ushuaia",
+ "short": "Falklands, South Georgia, Antarctica",
+ "nights": 19,
+ "nightsText": null,
+ "days": 20,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Port of Punta Arenas"
+ },
+ "end": {
+  "place": "Ushuaia, Argentina",
+  "airportOrPort": "Port of Ushuaia"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 96 on sea voyages",
+ "regions": [
+  "peninsula",
+  "south-georgia-falklands"
+ ],
+ "length": "long",
+ "monthChips": [
+  "sep-oct"
+ ],
+ "months": [
+  "September",
+  "October"
+ ],
+ "seo": {
+  "title": "Falklands, South Georgia and Antarctica: 20 Days",
+  "description": "Antarctica21's grand sea voyage from Punta Arenas: the Falklands, South Georgia's king penguins, Elephant Island and the Antarctic Peninsula, ending in Ushuaia.",
+  "keywords": [
+   "Falklands South Georgia Antarctica cruise",
+   "Antarctica21 sea voyage",
+   "South Georgia king penguins"
+  ]
+ },
+ "tagline": "Twenty days through the whole South Atlantic arc.",
+ "answer": "Falklands (Malvinas), South Georgia and Antarctica is Antarctica21's twenty-day, nineteen-night sea voyage from Punta Arenas to Ushuaia. It calls at Saunders, West Point and Port Stanley, spends four days at South Georgia, passes Elephant Island and gives four days to the Peninsula. It sails in September and October with up to 96 guests.",
+ "overview": [
+  "A full sea voyage with no flight. It links the Falklands, South Georgia and the Antarctic Peninsula in one southbound sweep."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia-antarctica/2",
+  "alt": "Magellan Explorer in South Georgia",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia-antarctica/1",
+   "alt": "Two albatrosses with white heads and black backs resting close together",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia-antarctica/2",
+   "alt": "Magellan Explorer in South Georgia",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia-antarctica/3",
+   "alt": "Whales surfacing in Antarctica",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Punta Arenas",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Group transfer from Explorers House to the ship; introductory talk on the Strait of Magellan."
+  },
+  {
+   "day": 2,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -52.5,
+   "lng": -64.0,
+   "summary": "Toward the Falklands; lectures begin."
+  },
+  {
+   "day": 3,
+   "title": "Saunders and West Point Islands",
+   "place": "Saunders Island, Falklands",
+   "lat": -51.37,
+   "lng": -60.08,
+   "summary": "Rockhopper and gentoo penguins and black browed albatross; optional hike and a Falklands tea."
+  },
+  {
+   "day": 4,
+   "title": "Port Stanley",
+   "place": "Port Stanley",
+   "lat": -51.6921,
+   "lng": -57.8589,
+   "summary": "Guided walk or time on your own in town."
+  },
+  {
+   "day": 5,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -53.5,
+   "lng": -46.0,
+   "summary": "Crossing toward South Georgia.",
+   "label": "Days 5 to 6"
+  },
+  {
+   "day": 7,
+   "title": "Elsehul Bay",
+   "place": "Elsehul Bay, South Georgia",
+   "lat": -54.02,
+   "lng": -37.98,
+   "summary": "Evening Zodiac cruise, subject to the crossing and permits."
+  },
+  {
+   "day": 8,
+   "title": "Salisbury Plain and Possession Bay",
+   "place": "Salisbury Plain",
+   "lat": -54.05,
+   "lng": -37.35,
+   "summary": "King penguins; Zodiac cruise or nearby visits."
+  },
+  {
+   "day": 9,
+   "title": "Grytviken, Fortuna Bay and Stromness",
+   "place": "Grytviken",
+   "lat": -54.2811,
+   "lng": -36.5092,
+   "summary": "Whaling station, museum and Shackleton's grave; king penguins; optional Shackleton walk."
+  },
+  {
+   "day": 10,
+   "title": "St Andrews Bay and Drygalski Fjord",
+   "place": "St Andrews Bay",
+   "lat": -54.43,
+   "lng": -36.18,
+   "summary": "Large king penguin colony and elephant seals; fjord cruise if the weather allows."
+  },
+  {
+   "day": 11,
+   "title": "At sea",
+   "place": "Scotia Sea",
+   "lat": -58.0,
+   "lng": -45.0,
+   "summary": "Crossing toward Antarctica.",
+   "label": "Days 11 to 12"
+  },
+  {
+   "day": 13,
+   "title": "Elephant Island",
+   "place": "Elephant Island",
+   "lat": -61.1,
+   "lng": -55.2,
+   "summary": "Seen from the ship or a Zodiac; landing unlikely."
+  },
+  {
+   "day": 14,
+   "title": "Antarctic Peninsula and South Shetland Islands",
+   "place": "Antarctic Sound and Gerlache Strait",
+   "lat": -63.4,
+   "lng": -57.0,
+   "summary": "Possible sites include Brown Bluff, Half Moon Island, Deception Island and Cuverville Island.",
+   "label": "Days 14 to 17"
+  },
+  {
+   "day": 18,
+   "title": "At sea",
+   "place": "Drake Passage",
+   "lat": -58.5,
+   "lng": -65.0,
+   "summary": "Return crossing.",
+   "label": "Days 18 to 19"
+  },
+  {
+   "day": 20,
+   "title": "Ushuaia",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Arrival and disembarkation."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {
+  "magellan-explorer": 15995,
+  "magellan-discoverer": 18995
+ },
+ "departures": [
+  {
+   "season": null,
+   "months": [],
+   "monthsText": "September, October",
+   "count": null,
+   "prices": {
+    "magellan-explorer": 15995,
+    "magellan-discoverer": 18995
+   },
+   "priceText": null,
+   "status": "not-open"
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Access to Explorers House in Punta Arenas",
+  "Expedition cruise per the itinerary",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch, a la carte dinner, selected drinks and snacks",
+  "Loan of waterproof boots, contingency plan and the IAATO passenger fee"
+ ],
+ "exclusions": [],
+ "optional": [
+  {
+   "name": "Sea kayaking"
+  },
+  {
+   "name": "Hotel and Transfer Package"
+  }
+ ],
+ "children": "Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "Is there a flight on this voyage?",
+   "No. It sails both ways, from Punta Arenas to Ushuaia."
+  ],
+  [
+   "Can I book it now?",
+   "Antarctica21's page says this voyage is not currently open for booking."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers with three weeks",
+   "line": "The Falklands, South Georgia and Antarctica in one voyage."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-06",
+  "secondary": [
+   "PATH-04"
+  ]
+ },
+ "status": "not-open",
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/falklands-malvinas-south-georgia-antarctica"
+ ],
+ "checked": "2026-11-02"
+}

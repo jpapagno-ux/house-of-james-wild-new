@@ -148,5 +148,15 @@
     "source": "/book/wilderness-kwetsani",
     "destination": "/stays/kwetsani-camp",
     "permanent": true
+  },
+  {
+    "source": "/voyages/antarctica/antarctica21-polar-circle-air-cruise",
+    "destination": "/voyages/polar/polar-circle-air-cruise",
+    "statusCode": 301
+  },
+  {
+    "source": "/voyages/antarctica",
+    "destination": "/voyages/polar",
+    "statusCode": 301
   }
 ]

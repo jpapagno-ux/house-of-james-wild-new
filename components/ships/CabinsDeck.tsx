@@ -50,8 +50,8 @@ export default function CabinsDeck({ cabins, decks, credit, basis, cabinTitle, d
                     {c.count != null && <span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">{c.count} {c.count === 1 ? "cabin" : "cabins"}</span>}
                   </div>
                   <div className="p-4 flex-1 flex flex-col w-full">
-                    <p className="flex items-center gap-2 ledger-eyebrow"><span className="w-3 h-3 rounded-full shrink-0" style={{ background: colour(c.type) }} aria-hidden="true" />{c.deck ?? "Deck to confirm"}</p>
-                    <h3 className="ledger-display text-[21px] mt-1 leading-snug">{c.type}</h3>
+                    {c.deck && <p className="flex items-center gap-2 ledger-eyebrow"><span className="w-3 h-3 rounded-full shrink-0" style={{ background: colour(c.type) }} aria-hidden="true" />{c.deck}</p>}
+                    <h3 className={`ledger-display text-[21px] leading-snug flex items-center gap-2 ${c.deck ? "mt-1" : ""}`}>{!c.deck && <span className="w-3 h-3 rounded-full shrink-0" style={{ background: colour(c.type) }} aria-hidden="true" />}{c.type}</h3>
                     <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[13.5px] ledger-muted">
                       {c.size && <li className="flex items-center gap-1.5"><Maximize2 className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{c.size}</li>}
                       {c.beds && <li className="flex items-center gap-1.5"><BedDouble className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{c.beds}</li>}

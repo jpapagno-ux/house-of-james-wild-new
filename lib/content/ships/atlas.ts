@@ -15,6 +15,7 @@ const ALIIKAI: AtlasRoute[] = [
 
 /** "Route A · 7 nights", "High water · 3 nights", "Luxor to Aswan · 4 nights". */
 export function shortRoute(it: ShipItinerary): string {
+  if (it.short) return it.short;
   const n = it.nights ? ` · ${it.nights} nights` : "";
   const letter = it.name.match(/^Itinerary ([A-Z])\b/);
   if (letter) return `Route ${letter[1]}${n}`;

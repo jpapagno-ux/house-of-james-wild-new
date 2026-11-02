@@ -2,6 +2,7 @@ import { TRIPS } from "@/lib/content/trips";
 import { mapHtml } from "@/lib/content/trip-pages";
 import { NILE_CHART, readRoute, shipMapHtml, shipRouteId } from "./routes";
 import type { ShipEntry } from "./index";
+import { chartFor } from "@/lib/content/polar/maps";
 
 // The route chart for a ship page, from the one engine (public/maps/jw-chart.js):
 // the Nile ships draw each itinerary's route file over the river overlay; Aliikai
@@ -16,6 +17,10 @@ export function shipMap(e: ShipEntry): { html: string; figCss?: string } | null 
     const where = e.waters === "amazon" ? "in the Peruvian Amazon" : "in the Galapagos";
     const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
     return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: e.waters, title: `Route map of ${s.name} ${where}`, kicker: e.waters === "amazon" ? "THE VOYAGE · BY RIVER" : "THE VOYAGE · BY SEA" }) } : null;
+  }
+  if (e.waters === "antarctica") {
+    const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
+    return routes.length && routes.every(Boolean) ? chartFor(routes.map((r) => r!), `jwmap-${s.slug}`, `Route map of ${s.name}'s Antarctica21 voyages`) : null;
   }
   if (e.slug === "aliikai") {
     const trip = TRIPS["10-day-raja-ampat-north"];

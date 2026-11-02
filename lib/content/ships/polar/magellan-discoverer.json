@@ -1,0 +1,312 @@
+{
+ "slug": "magellan-discoverer",
+ "name": "Magellan Discoverer",
+ "brandLine": "Antarctica21",
+ "operator": "Antarctica21",
+ "type": "hybrid electric expedition ship",
+ "waters": "Antarctic waters",
+ "country": "Chile and Argentina",
+ "status": "new for the 2026-27 season",
+ "seo": {
+  "title": "Magellan Discoverer: Antarctica21's Hybrid Ship",
+  "description": "Magellan Discoverer, Antarctica21's new 94 m hybrid electric expedition ship from 2026-27: 88 guests on air-cruises, 96 on sea voyages, five all balcony cabin categories, PC6 ice class.",
+  "keywords": [
+   "Magellan Discoverer",
+   "Antarctica21 new ship",
+   "hybrid expedition ship Antarctica",
+   "Magellan Discoverer cabins",
+   "Magellan Discoverer deck plan"
+  ]
+ },
+ "tagline": "Antarctica21's new hybrid electric ship, every cabin with a balcony.",
+ "answer": "Magellan Discoverer is Antarctica21's new 94 m expedition ship, sister to Magellan Explorer, entering service in the 2026-27 Antarctic season. Built by ASENAV in Valdivia, Chile, she has hybrid electric propulsion, PC6 ice class, five cabin categories all with private balconies, and carries up to 88 guests on air-cruises and 96 on sea voyages, with 67 staff and crew.",
+ "facts": [
+  [
+   "Length",
+   "94 m"
+  ],
+  [
+   "Beam",
+   "17.2 m"
+  ],
+  [
+   "Draft",
+   "4.3 m"
+  ],
+  [
+   "Shipyard",
+   "ASENAV, Valdivia, Chile"
+  ],
+  [
+   "Debut",
+   "2026-27 Antarctic season"
+  ],
+  [
+   "Ice class",
+   "PC6"
+  ],
+  [
+   "Propulsion",
+   "Hybrid electric: 2 x 1,800 kW diesel engines, ABB hybrid DC grid with Corvus Energy batteries, ABB Azipod 360 degree propulsion"
+  ],
+  [
+   "Stabilisers",
+   "Retractable fin stabilisers by Fincantieri"
+  ],
+  [
+   "Cruising speed",
+   "14 knots in open water"
+  ],
+  [
+   "Guests",
+   "Up to 88 on air-cruises; 96 on sea voyages"
+  ],
+  [
+   "Staff and crew",
+   "67"
+  ],
+  [
+   "Cabin categories",
+   "5, all with private balconies"
+  ],
+  [
+   "Decks",
+   "Deck plans cover Decks 2 to 7"
+  ],
+  [
+   "Lifesaving",
+   "2 lifeboats (124 total) and 8 life rafts (120 total)"
+  ],
+  [
+   "Children",
+   "8 and over on air-cruises; 12 and over on sea voyages"
+  ]
+ ],
+ "overview": [
+  "Magellan Discoverer is the second ship Antarctica21 has had built at ASENAV in Valdivia; her first steel was cut in 2024 and she debuts in the 2026-27 season. Antarctica21 calls her the first hybrid electric polar ship built in the Americas.",
+  "On board: a Panoramic Lounge with bar, a library, a gym by Anytime Fitness, a dining room that seats all guests at once, a sauna with a panoramic window, a gift shop, a protected barbecue area and a wet and dry science lab used for citizen science. Every cabin opens onto a private balcony and has a sitting area and a bathroom with heated floors."
+ ],
+ "why": [
+  "Her ABB hybrid system allows low noise, zero emission running in sensitive areas, per Antarctica21, alongside selective catalytic reduction, exhaust heat recovery, reverse osmosis water and ballast water treatment."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/hero",
+  "alt": "Aerial view of Magellan Discoverer",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g1",
+   "alt": "Profile view of Magellan Discoverer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g2",
+   "alt": "Magellan Discoverer sailing through icy water",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g3",
+   "alt": "Panoramic Lounge with bar and snowy views aboard Magellan Discoverer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g4",
+   "alt": "Library with bookshelves and armchairs aboard Magellan Discoverer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g5",
+   "alt": "Rendering of the dining room with wide windows aboard Magellan Discoverer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g6",
+   "alt": "Wood panelled sauna with a window onto icy mountains aboard Magellan Discoverer",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/g7",
+   "alt": "Gym with treadmills bikes and weights aboard Magellan Discoverer",
+   "credit": "Antarctica21"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Family Veranda Suite",
+   "count": null,
+   "size": "52 sq m (560 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Two rooms with connecting door",
+    "Two bathrooms",
+    "Fridges, safes and TVs"
+   ],
+   "image": null
+  },
+  {
+   "type": "Triple Veranda Suite",
+   "count": null,
+   "size": "52 sq m (560 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Two rooms with connecting door",
+    "Two bathrooms"
+   ],
+   "image": null
+  },
+  {
+   "type": "Grand Veranda Suite",
+   "count": null,
+   "size": "38 sq m (409 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Living area with sofa bed",
+    "Walk in closet",
+    "Fridge, safe and TV"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/cabin-grand-veranda-suite",
+    "alt": "Rendering of a Grand Veranda Suite with king bed and sofa aboard Magellan Discoverer"
+   }
+  },
+  {
+   "type": "Deluxe Veranda Cabin",
+   "count": null,
+   "size": "26 sq m (280 sq ft)",
+   "beds": "King or two twins",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Desk, bench and coffee table",
+    "Fridge, safe and TV"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/cabin-deluxe-veranda",
+    "alt": "Rendering of a Deluxe Veranda Cabin aboard Magellan Discoverer"
+   }
+  },
+  {
+   "type": "Single Veranda Cabin",
+   "count": null,
+   "size": "26 sq m (280 sq ft)",
+   "beds": "King",
+   "deck": null,
+   "features": [
+    "Private balcony",
+    "Desk, bench and coffee table",
+    "Fridge, safe and TV",
+    "No single supplement for solo travellers"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/cabin-veranda-balcony",
+    "alt": "Rendering of a balcony cabin with a king bed and a view of snowy mountains aboard Magellan Discoverer"
+   }
+  }
+ ],
+ "deckPlans": [
+  {
+   "deck": "All decks, air-cruise configuration 2026-27 and 2027-28",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/deck-plan-air-cruise-2026-28",
+    "alt": "Magellan Discoverer deck plan for air cruises in the 2026 to 27 and 2027 to 28 seasons"
+   },
+   "cabins": [
+    "Family Veranda Suite",
+    "Triple Veranda Suite",
+    "Grand Veranda Suite",
+    "Deluxe Veranda Cabin",
+    "Single Veranda Cabin"
+   ]
+  },
+  {
+   "deck": "All decks, sea voyage configuration 2026-27 and 2027-28",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/magellan-discoverer/deck-plan-sea-voyage-2026-28",
+    "alt": "Magellan Discoverer deck plan for sea voyages in the 2026 to 27 and 2027 to 28 seasons"
+   },
+   "cabins": [
+    "Family Veranda Suite",
+    "Triple Veranda Suite",
+    "Grand Veranda Suite",
+    "Deluxe Veranda Cabin",
+    "Single Veranda Cabin"
+   ]
+  }
+ ],
+ "itineraries": [],
+ "departures": [],
+ "pricesNote": "From fares are per person, double cabin, in US dollars, as Antarctica21 shows them. Dated departures and fares by cabin load in Antarctica21's live booking tool and are added here as they are confirmed. Dedicated single cabins carry no single supplement; in shared cabin categories Antarctica21 charges an 85% supplement on some cabins and 100% on the rest.",
+ "inclusions": [
+  "Expedition cruise with guided shore landings, Zodiac excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch and a la carte dinner, with wine, beer, juice, soft drinks, coffee, tea and snacks",
+  "Loan of waterproof boots, contingency plan and IAATO passenger fee",
+  "On air-cruises: the flight or flights between Punta Arenas and King George Island, Punta Arenas hotel night or nights at the Cabo de Hornos Hotel or similar, transfers and access to Explorers House"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)"
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate. Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "When does Magellan Discoverer start sailing?",
+   "In the 2026-27 Antarctic season. Her inaugural air-cruise is in December 2026 and is shown as sold out."
+  ],
+  [
+   "How many guests does she carry?",
+   "Up to 88 on air-cruises and 96 on sea voyages, with 67 staff and crew."
+  ],
+  [
+   "Is she hybrid?",
+   "Yes. Antarctica21 describes hybrid electric propulsion with ABB Azipods and Corvus Energy batteries, and calls her the first hybrid electric polar ship built in the Americas."
+  ],
+  [
+   "Do all cabins have balconies?",
+   "Yes. All five categories open onto private balconies."
+  ],
+  [
+   "How is she different from Magellan Explorer?",
+   "She is slightly larger (94 m against 90.7 m), hybrid electric, all balcony, with 67 staff and crew against 60, and a science lab. Her from prices are higher on every shared itinerary."
+  ],
+  [
+   "Which trips does she sail?",
+   "The inaugural air-cruise, Classic Antarctica, Polar Circle, Antarctica Express and Antarctica and South Georgia air-cruises, plus Patagonia and Chilean Fjords, Falklands and South Georgia, and Falklands, South Georgia and Antarctica sea voyages."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers who want a balcony",
+   "line": "Every cabin category has one."
+  },
+  {
+   "who": "Families of four",
+   "line": "Family Veranda Suites with two rooms and two bathrooms."
+  },
+  {
+   "who": "Lower impact travellers",
+   "line": "Hybrid electric running in sensitive areas."
+  }
+ ],
+ "sources": [
+  "https://www.antarctica21.com/ship/magellan-discoverer",
+  "https://www.antarctica21.com/our-company",
+  "https://www.antarctica21.com/journal/what-antarctica21-small-ship-is-right-for-you"
+ ],
+ "film": null,
+ "glance": {
+  "route": "From Punta Arenas, Ushuaia or Puerto Montt",
+  "guests": "Up to 88 on air-cruises, 96 on sea voyages",
+  "ages": "8+ on air-cruises, 12+ on sea voyages"
+ },
+ "rateBasis": "per-cruise",
+ "photoCredit": "Antarctica21",
+ "checked": "2026-11-02"
+}

@@ -1,7 +1,8 @@
-// The Exceptional Few™: an editorial layer applied to existing Stay records, read
-// from the Airtable editorial-layer export (scripts/export-editorial-layer.mjs →
-// exceptional-few.json). A Stay is never duplicated here; each row points at the
-// canonical Ledger ID and the page joins on it. Words only: signals are never a
+// The Exceptional Few™: an editorial layer applied to existing Stay records and, since
+// 2 Nov 2026, to vessels, read from the Airtable editorial-layer export
+// (scripts/export-editorial-layer.mjs → exceptional-few.json). A record is never duplicated
+// here: a stay row points at the canonical Ledger ID, a vessel row at the ships registry slug
+// (lib/content/ships/registry.ts), and the page joins on it. Words only: signals are never a
 // score, and nothing here prints a star or a number out of a hundred.
 import data from "./exceptional-few.json";
 import { PATHWAYS, type Pathway } from "@/lib/pathways";
@@ -10,7 +11,11 @@ export type SignalKey = "place" | "privacy" | "design" | "access" | "humanity" |
 export const SIGNAL_LABEL: Record<SignalKey, string> = { place: "Place", privacy: "Privacy", design: "Design", access: "Access", humanity: "Humanity", rarity: "Rarity" };
 
 export type ExceptionalFew = {
-  id: string; stayId: string; staySlug: string; stayName: string;
+  id: string;
+  /** "stay" (keyed on stayId, the Ledger ID) or "vessel" (keyed on vesselSlug, the ships registry slug). Absent means stay. */
+  entityType?: "stay" | "vessel";
+  stayId: string | null; staySlug: string | null; stayName: string | null;
+  vesselSlug?: string | null; vesselName?: string | null;
   designationStatus: "proposed" | "under review" | "designated" | "withdrawn";
   collectionNumber: number;
   heroLine: string | null;
@@ -36,9 +41,19 @@ export const EXCEPTIONAL_FEW: ExceptionalFew[] = (data.records as ExceptionalFew
 /** The designation for a Stay, by its canonical Ledger ID. Only a designated row in an allowed publication status counts; production allows "published" only. */
 export function exceptionalFewFor(stayId: string | null | undefined, allow: PublicationStatus[] = LIVE): ExceptionalFew | null {
   if (!stayId) return null;
-  return EXCEPTIONAL_FEW.find((e) => e.stayId === stayId && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
+  return EXCEPTIONAL_FEW.find((e) => (e.entityType ?? "stay") === "stay" && e.stayId === stayId && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
 }
-/** Every live designation, in collection order (for the future landing page and the Continue rail). */
+/** The designation for a vessel, by its ships registry slug. Same rule: designated, and "published" only in production. */
+export function exceptionalFewForVessel(slug: string | null | undefined, allow: PublicationStatus[] = LIVE): ExceptionalFew | null {
+  if (!slug) return null;
+  return EXCEPTIONAL_FEW.find((e) => e.entityType === "vessel" && e.vesselSlug === slug && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
+}
+/** The id its media assets are filed under (media-assets.json entityId): the Ledger ID, or "ship:<slug>". */
+export const efEntityId = (e: ExceptionalFew) => (e.entityType === "vessel" ? `ship:${e.vesselSlug}` : e.stayId);
+/** Where a designation lives on the site. */
+export const efHref = (e: ExceptionalFew) => (e.entityType === "vessel" ? `/voyages/ships/${e.vesselSlug}` : `/stays/${e.staySlug}`);
+export const efName = (e: ExceptionalFew) => (e.entityType === "vessel" ? e.vesselName : e.stayName) ?? "";
+/** Every live designation, stays and vessels, in collection order (for the future landing page and the Continue rail). */
 export const EXCEPTIONAL_FEW_LIVE = EXCEPTIONAL_FEW.filter((e) => e.designationStatus === "designated" && LIVE.includes(e.publicationStatus)).sort((a, b) => a.collectionNumber - b.collectionNumber);
 
 export const collectionNo = (n: number) => `No. ${String(n).padStart(3, "0")}`;

@@ -72,7 +72,7 @@ export function typeHub(t: VoyageType): HubProps {
       FARES,
     ],
     adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's Raja Ampat and Komodo routes: pick one and the globe sails it day by day." } };
+    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's and Amandira's routes in Raja Ampat and Komodo: pick one and the globe sails it day by day." } };
   if (t === "expedition") {
     const gal = cards.filter((c) => c.waters.includes("galapagos")), pol = cards.filter((c) => c.waters.includes("antarctica"));
     const where = [gal.length ? `${list(gal.map((c) => c.name))} in the Galápagos` : "", pol.length ? `${list(pol.map((c) => c.name))} in Antarctica, South Georgia, the Falklands and Patagonia` : ""].filter(Boolean);
@@ -120,30 +120,33 @@ export function watersHub(w: Waters): HubProps {
       atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to the Amazon, then sails it day by day." } };
   }
   if (w === "galapagos") {
-    const yachts = cards.filter((c) => /^Yacht/.test(c.eyebrow)), cats = cards.filter((c) => /^Catamaran/.test(c.eyebrow));
+    const yachts = cards.filter((c) => /^Yacht/.test(c.eyebrow)), cats = cards.filter((c) => /^Catamaran · Galaxy/.test(c.eyebrow));
+    // Ships beyond Ecoventura's yachts and Galaxy's catamarans (Via Natura's Hermes), each in her own brief.
+    const others = cards.filter((c) => !yachts.includes(c) && !cats.includes(c));
     const grp = (cs: ShipCardData[]) => { const ss = cs.map((c) => SHIPS.find((e) => e.slug === c.slug)!.data); const g = [...new Set(ss.map((s) => factOf(s, /guest/i)))].join(" or "); const n = [...new Set(ss.map((s) => nightsLabel(s)))].join(" or "); const t = tally(cs); return `${g} guests for ${n} at a time${t.from ? `, from ${t.from}` : ""}`; };
     return { ...base,
       title: "Galápagos Yachts and Catamarans", intro: "Small expedition yachts and catamarans in the Galápagos Islands, Ecuador.",
-      answer: `Yacht or catamaran in the Galápagos comes down to length of trip and size. Ecoventura's yachts ${list(yachts.map((c) => c.name))} take ${grp(yachts)}, from San Cristobal. Galaxy Cruises' catamarans ${list(cats.map((c) => c.name))} take ${grp(cats)}. Every fare is per person, two sharing, cruise only.`,
+      answer: `Yacht or catamaran in the Galápagos comes down to length of trip and size. Ecoventura's yachts ${list(yachts.map((c) => c.name))} take ${grp(yachts)}, from San Cristobal. Galaxy Cruises' catamarans ${list(cats.map((c) => c.name))} take ${grp(cats)}.${others.length ? ` Also filed: ${briefs(others)}.` : ""} Every fare is per person, two sharing, cruise only.`,
       faqs: [
         { q: "Is a yacht or a catamaran better in the Galápagos?", a: `It depends on the trip you want. The Ecoventura yachts sail week-long loops for ${factOf(SHIPS.find((e) => e.slug === yachts[0]?.slug)!.data, /guest/i)} guests; the Galaxy catamarans run shorter 4 and 5 night routes for ${factOf(SHIPS.find((e) => e.slug === cats[0]?.slug)!.data, /guest/i)}.` },
-        { q: "Can we charter a whole Galápagos yacht?", a: "Yes. Ecoventura and Galaxy Cruises both publish private charters; James quotes them for your dates." },
+        { q: "Can we charter a whole Galápagos yacht?", a: `Yes. ${list([...new Set(cards.filter((c) => c.types.includes("charter")).map((c) => shipsInWaters("galapagos").find((r) => r.slug === c.slug)?.operator).filter((o): o is string => !!o))])} all publish private charters; James quotes them for your dates.` },
         FARES,
       ],
       atlas: { routes: routesFor(cards), legend: "sea", dest: "galapagos", kicker: "THE GALÁPAGOS · BY SEA", title: "Where Do the Galápagos Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day." } };
   }
   if (w === "indonesia") {
     const s = ALIIKAI_SHIP;
+    const amandira = cards.some((c) => c.slug === "amandira" && c.page);
     return { ...base,
       title: "Indonesia by Phinisi: Raja Ampat and Komodo", intro: "Hand-built phinisis and a wooden schooner in Raja Ampat, Komodo and the Banda Sea.",
-      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024.${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
+      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024.${amandira ? ` Aman's Amandira, a 52-metre phinisi for up to 10 guests in five cabins, sails as a private charter; Aman publishes no rates, so James quotes her.` : ""}${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
       faqs: [
         { q: "When is the best time for Raja Ampat and Komodo by boat?", a: "Aliikai sails Komodo from May to September, the Spice Islands in October and Raja Ampat from November to April, when its seas are calmest." },
-        { q: "Can we charter a phinisi privately?", a: `Yes. Aliikai is ${usd(s.charter.rate)} a night plus 11% tax for up to 15 guests, minimum 7 nights in Raja Ampat and 3 in Komodo.` },
+        { q: "Can we charter a phinisi privately?", a: `Yes. Aliikai is ${usd(s.charter.rate)} a night plus 11% tax for up to 15 guests, minimum 7 nights in Raja Ampat and 3 in Komodo.${amandira ? " Amandira is chartered only, for up to 10 guests; Aman quotes her on request." : ""}` },
         FARES,
       ],
       adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Phinisis Sail?", line: "Aliikai's Raja Ampat and Komodo voyages: pick one and the globe sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Phinisis Sail?", line: "Aliikai's and Amandira's Raja Ampat and Komodo voyages: pick one and the globe sails it day by day." } };
   }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],

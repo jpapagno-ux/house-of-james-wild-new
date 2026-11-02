@@ -9,7 +9,10 @@ ROOT = sys.argv[1]
 LABELS = {
   "amazon": [{"text": "Amazon", "lat": -4.35, "lng": -73.3, "kind": "sea"}, {"text": "Pacaya-Samiria", "lat": -4.9, "lng": -74.2, "kind": "region"}],
   "galapagos": [{"text": "Pacific Ocean", "lat": -1.3, "lng": -91.6, "kind": "sea"}],
+  "indonesia": [{"text": "Indonesia", "lat": -4.0, "lng": 125.0, "kind": "sea"}],
 }
+# Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
+DEST = {"From Sorong": "raja-ampat"}
 OUT = os.path.join(ROOT, "public/maps/routes")
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -21,7 +24,9 @@ for waters in LABELS:
     s = json.load(open(os.path.join(SHIPS, f)))
     for it in s["itineraries"]:
         if not it["days"]: continue
-        rid = f"{s['slug']}-{slug(it['direction'])}-{it['nights']}n"
+        # A route whose length is not published (stops in the operator's order) ends in "-stops".
+        rid = f"{s['slug']}-{slug(it['direction'])}-{str(it['nights']) + 'n' if it['nights'] is not None else 'stops'}"
+        dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else waters
         stops, prev = [], None
         for d in it["days"]:
             st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
@@ -31,10 +36,10 @@ for waters in LABELS:
                 st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
             stops.append(st); prev = d
         stops[-1]["kind"] = "port"
-        route = {"id": rid, "type": "voyage", "destination": waters, "title": f"{it['name'][0].upper() + it['name'][1:]} aboard {s['name']}",
-                 "subtitle": f"{it['nights']} nights · {it['direction'].split(' (')[0]} · {s['name']}",
+        route = {"id": rid, "type": "voyage", "destination": dest, "title": f"{it['name'][0].upper() + it['name'][1:]} aboard {s['name']}",
+                 "subtitle": f"{str(it['nights']) + ' nights' if it['nights'] is not None else 'Stops in order'} · {it['direction'].split(' (')[0]} · {s['name']}",
                  "days": {str(d["day"]): d["title"] for d in it["days"]}, "stops": stops,
-                 "map_note": "River course and positions approximate, not a navigational chart",
+                 "map_note": ("Course" if waters == "indonesia" else "River course") + " and positions approximate, not a navigational chart",
                  "fallback": {"labels": LABELS[waters]}}
         json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
         print(rid)

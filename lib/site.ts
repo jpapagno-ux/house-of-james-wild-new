@@ -293,6 +293,8 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/ecoventura-evolve-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/alya-catamaran-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/sirius-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-discoverer", priority: 0.7, changeFrequency: "monthly" },
   // Polar Crossings and the Antarctica21 voyages, and the Antarctica21 partner page (James, 2 Nov 2026).

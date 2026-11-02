@@ -156,6 +156,15 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // Galaxy Cruises: over 6 on shared departures; single occupancy 1.5 times the sharing rate; snorkelling gear, kayaks and paddleboards; two naturalist guides.
     traits: { minChildAge: 7, childNote: "Over 6 on shared departures; any age on a charter", single: { kind: "percent", pct: 50, note: "Single occupancy 1.5 times the sharing rate" }, activities: ["wildlife", "snorkelling", "kayaking"] } },
 
+  // Via Natura's Hermes (filed 2 Nov 2026 from vianatura.com): the Galapagos rule, Where the Wild Lives first and
+  // Between Tides second, plus A Place of Our Own for the published whole-vessel charter (up to 20; from US$134,805
+  // for 3 nights in 2026). No Off the Map: Via Natura calls no Hermes route remote. The Exceptional Few No. 002.
+  { slug: "hermes-galapagos", name: "Hermes", operator: "Via Natura", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-07"] }, charter: { whole: true, from: 134805, basis: "voyage" }, rateBasis: "per-cruise", status: "sailing", page: true,
+    // vianatura.com: no minimum age (15% off a child under 12 sharing with two adults); single supplement 75% on a King/Twin
+    // Suite in 2026, none in the two Single Suites; snorkel gear, kayaks and paddleboards; island walks; a spa with a hammam.
+    traits: { childNote: "No minimum age published; 15% off a child under 12 sharing with two adults", single: { kind: "percent", pct: 75, note: "75% on a King/Twin Suite in 2026 (2027 not published); the two Single Suites sell at the standard fare" }, activities: ["wildlife", "snorkelling", "kayaking", "hiking", "slow"] } },
+
   // Polar Crossings (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
   // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
   // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
@@ -169,6 +178,15 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // antarctica21.com: 8 and over on air-cruises, 12 on sea voyages; Single Veranda Cabins with no supplement (85% or 100% in
     // shared cabins); two cabin types with a connecting door; optional sea kayaking and hiking at extra cost.
     traits: { minChildAge: 8, childNote: "8 and over on air-cruises (1.20 m and 30 kg); 12 and over on sea voyages", single: { kind: "none", note: "None in the Single Veranda Cabins; 85% or 100% in shared cabin categories" }, connecting: true, activities: ["wildlife", "kayaking", "hiking"] } },
+
+  // Aman's Amandira (filed 2 Nov 2026 from aman.com): Between Tides, A Place of Our Own (a private yacht for one
+  // party, charter only) and Off the Map, because Aman calls the Alor Islands remote. No rates published. The Exceptional Few No. 003.
+  { slug: "amandira", name: "Amandira", operator: "Aman", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-07", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    // aman.com: Komodo dragons and whale sharks; a dive master, dive gear and a dive boat; kayaks and paddleboards; the Pindito
+    // and Gunung Api climbs; Ikat weaving and Penama villages on Alor; in-cabin massage and beach yoga; under sail and motor.
+    // No child age or single supplement published (a private charter).
+    traits: { childNote: "No age policy published by Aman", activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow", "sailing"], dives: true } },
 
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "celestia-yacht" },

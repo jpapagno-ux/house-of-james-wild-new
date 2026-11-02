@@ -19,6 +19,9 @@ import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
 import MonthDepartures from "./MonthDepartures";
 import ShipGlance from "./ShipGlance";
+import LengthFares from "./LengthFares";
+import { shipEntrance } from "./ShipEntrance";
+import type { ExceptionalFew } from "@/lib/content/exceptional-few";
 
 // Every ship on the one shared template (voyages plan, 1 Nov 2026): Aliikai and the
 // A&K Sanctuary Nile fleet print the same sections, headings, nav and CTA. A ship with
@@ -40,7 +43,7 @@ export type ShipExtra = {
   jsonld?: object[];
 };
 
-export default function RecordShip({ entry, sisters, extra = {} }: { entry: ShipEntry; sisters: ShipEntry[]; extra?: ShipExtra }) {
+export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { entry: ShipEntry; sisters: ShipEntry[]; extra?: ShipExtra; ef?: ExceptionalFew | null }) {
   const s = entry.data as ShipRecord;
   const w = waterFor(entry);
   const path = shipPath(s.slug);
@@ -72,7 +75,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
       "@type": "TouristTrip",
       "@id": absoluteUrl(`${path}#${it.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`),
       name: `${it.name} aboard ${s.name}`,
-      description: t(`${it.nights} nights in ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`),
+      description: t(`${it.nights != null ? `${it.nights} nights` : "A voyage"} in ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`),
       touristType: s.suits.map((x) => x.who),
       itinerary: { "@type": "ItemList", itemListElement: it.days.map((d, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Place", name: d.place, geo: { "@type": "GeoCoordinates", latitude: d.lat, longitude: d.lng } } })) },
       // Season bands, never invented sailing dates: each fare is valid from the band's start to its end.
@@ -102,6 +105,35 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
     : cruise.length ? (cruise.some((d) => d.dateTo) ? `Cruise fares by season as ${s.operator} publishes them, per person for each cabin type.` : "Every published departure by month, with the fare per person for each cabin type.")
       : `${s.operator} publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside ${s.operator} land and cruise journeys, listed below with their full-journey fares.`;
 
+  // Included, not included and the operator's published terms, for ships whose Dates & rates has no departure grid.
+  const inclTerms = (
+    <>
+      {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
+          {s.inclusions.length > 0 && <div><p className="ledger-eyebrow ledger-crimson">Included</p><ul className="mt-3 space-y-2">{s.inclusions.map((x) => <li key={x} className="flex gap-2 text-[15px]"><Check className="w-4 h-4 mt-0.5 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+          {(s.exclusions?.length ?? 0) > 0 && <div><p className="ledger-eyebrow">Not included</p><ul className="mt-3 space-y-2">{s.exclusions!.map((x) => <li key={x} className="flex gap-2 text-[15px] ledger-muted"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+        </div>
+      )}
+      {(s.terms?.length ?? 0) > 0 && (
+        <div className="mt-10 max-w-3xl">
+          <p className="ledger-eyebrow">Payment and cancellation, as {s.operator} publishes them</p>
+          <ul className="mt-3 space-y-2 text-[15px] leading-relaxed ledger-muted list-disc pl-5">{s.terms!.map((x) => <li key={x}>{t(x)}</li>)}</ul>
+        </div>
+      )}
+    </>
+  );
+  // Routes given as stops in the operator's order, with no length (Amandira): say so above the log.
+  const stopsOnly = s.itineraries.some((i) => i.days.length && i.nights == null);
+  const lengths = s.lengthFares ?? [];
+  // The Exceptional Few™ entrance, only for a vessel with a published designation and an approved hero.
+  const entrance = ef ? shipEntrance({
+    ef, name: s.name, path, planHref: plan, pathway: s.pathway, proof: s.proofLine ? t(s.proofLine).split(" · ")[0] : null,
+    line: t(`${kindLabel(s.type)} · ${s.waters}, ${s.country}`),
+    priceLine: price.kind === "cruise" ? `From ${price.amount} per person` : null,
+    closeFacts: [guests ? `${guests.replace(/^Up to/, "Up to")} guests` : null, nightsLabel(s), t(route)].filter(Boolean) as string[],
+    absolute: absoluteUrl,
+  }) : null;
+
   return (
     <ShipTemplate
       ship={{
@@ -119,14 +151,15 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
         cta: { label: "Plan with James", href: plan, house: true },
         // Each fact once: route, nights, guests and ages live in the glance bar, cabins in Cabins.
         overview: { quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
-        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read." },
-        film: extra.heroFilm ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
+        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read."}${stopsOnly ? ` ${s.operator} lists the stops of these routes in order but publishes no day numbers or length, so they are numbered as stops, a guide only.` : ""}` },
+        film: extra.heroFilm || entrance ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
         faqTitle: `What Else Should You Know About ${s.name}?`,
         host: { key: `voyage:${s.slug}`, name: s.name },
         action: { price: price.kind === "cruise" ? price.amount : undefined, basis: basis === "per-night" ? "pp, voyage" : "pp, cruise", cta: "Plan with James", href: plan, house: true },
         crumbs,
         jsonld,
+        ef: entrance,
       }}
       lead={<>
         {extra.top}
@@ -172,10 +205,18 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
             )}
           </section>
         )}
-        {s.departures.length === 0 && !(s.monthly?.length) && (
+        {s.departures.length === 0 && !(s.monthly?.length) && lengths.length > 0 && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, by Length of Cruise?`} icon="sun" intro={`${s.operator} publishes a fare for each cruise length and year, and no dated departures; James confirms the dates when you ask.`} />
+            <LengthFares ship={s.name} fares={lengths} planHref={plan} note={publicNote(s.pricesNote)} maxGuests={Number(factOf(s, /^guests$/i)) || undefined} />
+            {inclTerms}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && lengths.length === 0 && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
             <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />
+            {s.terms?.length ? inclTerms : null}
           </section>
         )}
         {s.departures.length > 0 && (

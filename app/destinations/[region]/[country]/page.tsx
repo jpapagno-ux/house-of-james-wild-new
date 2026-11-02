@@ -99,9 +99,18 @@ const CHAINS: Record<string, { key: string; label: string; sub: string; /** Wher
     { key: "indonesia-raja-ampat", label: "Raja Ampat", sub: "West Papua's islands, from Wayag in the north to Misool in the south. Voyages leave from Sorong; Waisai is the park's town." },
     { key: "indonesia-sumatra-riau", label: "Sumatra & Riau", tag: "below", sub: "The Riau Islands off Sumatra's coast, a short ferry from Singapore. Nikoi sits off Bintan's east coast." },
   ],
+  // Thailand's coasts and the north (James, 2 Nov 2026: region views "the way Indonesia was just done").
+  // Months are the Tourism Authority of Thailand's, as on the country's When to go band.
+  thailand: [
+    { key: "thailand-andaman", label: "Andaman coast", tag: "below", sub: "Phuket, Phang Nga Bay, Krabi and Khao Lak, best November to April. Fly into Phuket (HKT) or Krabi (KBV)." },
+    { key: "thailand-gulf", label: "Gulf islands", sub: "Koh Samui and its neighbours, best December to June. Samui's own airport (USM) is minutes from most stays." },
+    { key: "thailand-north", label: "The north", sub: "Chiang Mai on the Mae Ping and the Golden Triangle on the Mekong, best in the cool season, November to February." },
+  ],
 };
+/** What the last view, the whole country, is called on the chain control. */
+const WHOLE_LABEL: Record<string, string> = { indonesia: "The whole archipelago", thailand: "All of Thailand" };
 
-function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]) {
+function chainViews(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]): ChainView[] {
   const LIB = REGION_LIB as unknown as Record<string, ChartData>;
   const frames = chains.map((c) => ({ ...c, chart: LIB[c.key] })).filter((c) => c.chart);
   const coordsOf = (id: string) => {
@@ -118,7 +127,7 @@ function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[]
     return { key: f.key, label: f.label, sub: f.sub, width: f.chart.width, height: f.chart.height, items: list, origin: `${(((b.x + b.w / 2) / whole.width) * 100).toFixed(1)}% ${(((b.y + b.h / 2) / whole.height) * 100).toFixed(1)}%`,
       chart: <LedgerChart chart={f.chart} texture="engraved" title={`Ledger chart of ${f.label}, ${name}, with its stays and voyages`} /> };
   });
-  views.push({ key: "whole", label: "The whole archipelago", sub: `All of ${name}, with each chain's frame marked. Pick a chain above to fly in.`, width: whole.width, height: whole.height, items: onWhole,
+  views.push({ key: "whole", label: WHOLE_LABEL[slug] ?? `All of ${name}`, sub: slug === "indonesia" ? `All of ${name}, with each chain's frame marked. Pick a chain above to fly in.` : `All of ${name}, with each region's frame marked. Pick one above to fly in.`, width: whole.width, height: whole.height, items: onWhole,
     chart: (
       <div className="relative">
         <LedgerChart chart={whole} texture="engraved" title={`Ledger chart of ${name} with its stays and voyages`} />
@@ -132,7 +141,12 @@ function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[]
         </svg>
       </div>
     ) });
-  const total = onWhole.length;
+  return views;
+}
+
+function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]) {
+  const views = chainViews(slug, name, whole, items, chains);
+  const total = views[views.length - 1]?.items.length ?? 0;
   return (
     <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
       <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {total} on the chart</p>
@@ -277,7 +291,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">{coming ? "The places the house plans around. Stays will be pinned here as each one is vetted and filed; until then, James plans the route with you." : "Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James."}</p>
             </div>
-            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
+            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : CHAINS[c.slug] ? <ChainChartMap country={c.name} views={chainViews(c.slug, c.name, chart, items, CHAINS[c.slug])} /> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>

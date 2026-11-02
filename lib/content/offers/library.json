@@ -2679,5 +2679,85 @@
   "checked": "2026-11-02",
   "conditions": "For returning Kamalaya guests. Minimum 8 nights; one free night per stay. Book by 9 December 2027 for stays from 1 March to 17 December 2027. Kamalaya terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000168",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "le-tahaa",
+  "name": "Advance Booking Benefits (Le Taha'a)",
+  "country": "",
+  "program": "Book Early",
+  "headline": "20% off, booked 90 days ahead",
+  "travel": {
+   "from": "2027-01-01",
+   "to": "2027-03-31",
+   "text": "Stays 1 January to 31 March 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Book at least 90 days before arrival. 20% off any stay between 1 January and 31 March 2027. Le Taha'a's terms apply; the house confirms eligibility when you book.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000169",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "the-brando-tetiaroa",
+  "name": "Fly Free (The Brando)",
+  "country": "",
+  "program": "On the Horizon",
+  "headline": "Free flights from Papeete to Tetiaroa",
+  "travel": {
+   "from": "2026-04-01",
+   "to": "2027-03-31",
+   "text": "Travel 1 April 2026 to 31 March 2027; book by 31 March 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Minimum 3 nights on the All Inclusive package. Free Air Tetiaroa flights for 2, 4 or 6 passengers depending on the villa. Book before 31 March 2027. Combinable with Stay 5 Pay 4. The Brando's terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000170",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "the-brando-tetiaroa",
+  "name": "Stay 5 Pay 4 (The Brando)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 5 nights, pay 4",
+  "travel": {
+   "from": "2026-11-02",
+   "to": "2027-03-30",
+   "text": "Stays through 30 March 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Five nights on the All Inclusive package. Combinable with Fly Free. The Brando's terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000171",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "the-brando-tetiaroa",
+  "name": "Kids Fly, Stay, Dine & Play Free (The Brando)",
+  "country": "",
+  "program": "On the Horizon",
+  "headline": "Children under 12 fly, stay, dine and play free",
+  "travel": {
+   "from": "2026-02-12",
+   "to": "2028-03-31",
+   "text": "Travel 12 February 2026 to 31 March 2028; book by 31 March 2028"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Minimum 3 nights. Children under 12; up to two children per villa. Booking window 15 January 2026 to 31 March 2028. The Brando's terms apply.",
+  "volume": "stays"
  }
 ]

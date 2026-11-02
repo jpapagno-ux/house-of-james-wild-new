@@ -7,6 +7,9 @@
 // Order: marked on this record / in this country (James first, then by guests)
 //   → the advisor's own Library mark here
 //   → states they know the country (and works in the volume), unless closed.
+// On a region page (a region and no country) the last step reads the countries the advisor
+// states in that region (opts.regionOf), so a real advisor with Library DNA and no Desk is
+// named on "Who knows Europe" just as on the country page (audit, 2 Nov 2026).
 
 export type RankEntry = { ledgerId: string; countrySlug: string | null; regionSlug: string | null; volume: string; guests: number; theirs: { mark: string } | null };
 export type RankMark = { ledgerId: string; mark: string };
@@ -16,7 +19,7 @@ const SLEPT = new Set(["Stayed", "Sailed It"]);
 
 export type Where = { countrySlug?: string | null; regionSlug?: string | null; volume?: string; ledgerId?: string | null };
 
-export function rankAdvisors<T>(pool: Rankable<T>[], where: Where, opts: { defaultSlug: string; countryOfRecord: (ledgerId: string) => string | null }): { advisors: T[]; slept: number; carried: number } {
+export function rankAdvisors<T>(pool: Rankable<T>[], where: Where, opts: { defaultSlug: string; countryOfRecord: (ledgerId: string) => string | null; regionOf?: (countrySlug: string) => string | null }): { advisors: T[]; slept: number; carried: number } {
   const match = (e: RankEntry) =>
     (where.ledgerId ? e.ledgerId === where.ledgerId : true) &&
     (where.countrySlug ? e.countrySlug === where.countrySlug : true) &&
@@ -28,8 +31,10 @@ export function rankAdvisors<T>(pool: Rankable<T>[], where: Where, opts: { defau
   const marked = pool.filter((r) => !hits.some((h) => h.r === r) && markHere(r).length);
   const countries = (r: Rankable<T>) => r.dna?.countries ?? r.deskCountries;
   const volumes = (r: Rankable<T>) => r.dna?.volumes ?? r.deskVolumes;
-  const knows = where.countrySlug
-    ? pool.filter((r) => !hits.some((h) => h.r === r) && !marked.includes(r) && countries(r).includes(where.countrySlug!) && (!where.volume || volumes(r).includes(where.volume)) && r.dna?.availability !== "closed")
+  const statesHere = (r: Rankable<T>) =>
+    where.countrySlug ? countries(r).includes(where.countrySlug) : where.regionSlug && opts.regionOf ? countries(r).some((c) => opts.regionOf!(c) === where.regionSlug) : false;
+  const knows = where.countrySlug || where.regionSlug
+    ? pool.filter((r) => !hits.some((h) => h.r === r) && !marked.includes(r) && statesHere(r) && (!where.volume || volumes(r).includes(where.volume)) && r.dna?.availability !== "closed")
     : [];
   return {
     advisors: [...hits.map((x) => x.r.a), ...marked.map((r) => r.a), ...knows.map((r) => r.a)],

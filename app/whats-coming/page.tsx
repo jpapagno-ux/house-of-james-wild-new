@@ -3,8 +3,9 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import JsonLd from "@/components/ledger/JsonLd";
-import ComingCard from "@/components/coming/ComingCard";
-import { COMING, statusLine } from "@/lib/content/whats-coming";
+import ComingBoard from "@/components/coming/ComingBoard";
+import { COMING, groupByRegion, statusLine } from "@/lib/content/whats-coming";
+import REGIONS from "@/lib/content/regions.json";
 
 const lower = (x: string) => x.charAt(0).toLowerCase() + x.slice(1); // "opens 11 December 2026", months kept
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -16,13 +17,15 @@ import { graph, ids } from "@/lib/schema";
 const PATH = "/whats-coming";
 export const metadata = buildMetadata({
   title: "What's Coming: New and Rebuilt Lodges, Filed Before They Open",
-  description: `${COMING.map((c) => `${c.name} (${lower(statusLine(c))})`).join(", ")}. The house holds a place; James vets on opening.`,
+  description: COMING.length ? `${COMING.map((c) => `${c.name} (${lower(statusLine(c))})`).join(", ")}. The house holds a place; James vets on opening.` : "New and rebuilt lodges, filed before they open. The house holds a place; James vets on opening.",
   path: PATH,
   noindex: false,
 });
 
 export default function WhatsComingPage() {
-  const answer = `What's coming at James Wild & Co: ${COMING.map((c) => `${c.name} in ${c.country ?? "the Ledger"}, ${lower(statusLine(c))}`).join("; ")}. Each is filed from the brand's own announcement, pencilled until James has stayed; the house can hold a place before opening.`;
+  const answer = COMING.length
+    ? `What's coming at James Wild & Co: ${COMING.map((c) => `${c.name} in ${c.country ?? "the Ledger"}, ${lower(statusLine(c))}`).join("; ")}. Each is filed from the brand's own announcement, pencilled until James has stayed; the house can hold a place before opening.`
+    : "Nothing is pencilled at James Wild & Co right now. New and rebuilt lodges are filed here from the brands' own announcements, pencilled until James has stayed; the house can hold a place before opening.";
   return (
     <>
       <SiteHeader />
@@ -35,9 +38,9 @@ export default function WhatsComingPage() {
             <p className="mt-4 text-[18px] ledger-muted leading-relaxed">New lodges and rebuilt ones, from the brands&rsquo; own announcements. Each is pencilled in the Ledger: a page and a number, no mark until James has slept there. If you want to be first, the house holds the place.</p>
           </header>
           <div className="mt-10"><AnswerBlock>{answer}</AnswerBlock></div>
-          <ul className="mt-10 grid gap-6 md:grid-cols-2">
-            {COMING.map((c) => <li key={c.slug}><ComingCard c={c} /></li>)}
-          </ul>
+          <div className="mt-10">
+            {COMING.length ? <ComingBoard groups={groupByRegion(COMING, (REGIONS as { regions: { slug: string; name: string }[] }).regions)} /> : <p className="text-[16px] ledger-muted">Nothing is pencilled right now. New openings appear here as the brands announce them.</p>}
+          </div>
           <section className="mt-16 border-t ledger-rule pt-8 grid md:grid-cols-3 gap-8" aria-labelledby="how-heading">
             <div><p className="ledger-eyebrow ledger-crimson">How it works</p><h2 id="how-heading" className="ledger-display text-[1.6rem] mt-2">Pencilled, then marked.</h2></div>
             <ol className="md:col-span-2 grid sm:grid-cols-3 gap-6">

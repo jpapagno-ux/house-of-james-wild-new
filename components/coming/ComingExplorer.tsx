@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import ComingStamp from "./ComingStamp";
 import LedgerCorners from "./LedgerCorners";
-import { WcEditorialLine, WcLedgerColumn } from "./WcButtons";
 import s from "./coming.module.css";
 import {
   DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByRegionView, groupByYear, parseQuery, regionCounts, sortComing, toQuery, yearCounts, viewStatus,
@@ -16,7 +15,6 @@ export type ExplorerItem = ViewItem & {
   tagline: string | null; note: string | null; bestMonths: string | null; airport: string | null; href: string | null;
   when: string; line: string; countdown: string | null; plan: string;
   hero: { src: string; alt: string; credit: string | null } | null;
-  field: { from: string; to: string; glow: string };
   pathway: { key: string; name: string; accent: string; text: string; tint: string; basis: "approved" | "suggested" } | null;
 };
 
@@ -38,11 +36,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
   const update = useCallback((patch: Partial<ViewState>, mode: "push" | "replace" = "push") => {
     setSt((prev) => {
       const next = { ...prev, ...patch };
-      // Keep ?look= (concept A or B, for comparison) across filter changes.
-      const look = new URLSearchParams(window.location.search).get("look");
-      const q = toQuery(next);
-      const withLook = look ? `${q ? `${q}&` : "?"}look=${encodeURIComponent(look)}` : q;
-      const url = `${window.location.pathname}${withLook}${mode === "push" ? "" : window.location.hash}`;
+      const url = `${window.location.pathname}${toQuery(next)}${mode === "push" ? "" : window.location.hash}`;
       if (mode === "push") window.history.pushState(null, "", url); else window.history.replaceState(null, "", url);
       return next;
     });
@@ -77,7 +71,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
   let n = 0;
 
   // Chip colours live in coming.module.css (aria-pressed), so both looks style them.
-  const chip = `${s.chip} shrink-0 inline-flex items-center gap-1.5 h-11 md:h-9 px-3.5 text-[12px] tracking-[0.06em] whitespace-nowrap`;
+  const chip = `house-chip ${s.chip} shrink-0 h-11 md:h-9 whitespace-nowrap`;
   const sep = `${s.sep} shrink-0 w-px h-5 mx-1`;
 
   return (
@@ -99,7 +93,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             </label>
             <div role="group" aria-label="Group by" className="shrink-0 hidden sm:flex h-10">
               {(["year", "region"] as Group[]).map((g) => { const on = st.group === g; return (
-                <button key={g} type="button" aria-pressed={on} onClick={() => update({ group: g })} className={`${s.chip} px-3 text-[12.5px] ${g === "region" ? "-ml-px" : ""}`}>By {g}</button>
+                <button key={g} type="button" aria-pressed={on} onClick={() => update({ group: g })} className={`house-chip ${s.chip} h-10 ${g === "region" ? "-ml-px" : ""}`}>By {g}</button>
               ); })}
             </div>
             <p className="hidden lg:block ml-auto font-mono text-[11px] tracking-[0.16em] uppercase ledger-muted" aria-live="polite">{filtered ? `${shown.length} of ${items.length} shown` : `All ${items.length} shown`}</p>
@@ -112,7 +106,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             <button type="button" className={chip} aria-pressed={!filtered} onClick={() => update(clear)}>All</button>
             {regionChips.length > 1 && <span className={sep} aria-hidden="true" />}
             {regionChips.length > 1 && regionChips.map((r) => { const on = st.region === r.slug; return (
-              <button key={r.slug} type="button" className={chip} aria-pressed={on} onClick={() => update({ region: on ? null : r.slug, country: null })}><span className="uppercase tracking-[0.12em] text-[11px]">{r.name}</span><span className={`font-mono text-[10.5px] ${s.count}`}>{r.count}</span></button>
+              <button key={r.slug} type="button" className={chip} aria-pressed={on} onClick={() => update({ region: on ? null : r.slug, country: null })}>{r.name}<span className={`font-mono text-[10.5px] ${s.count}`}>{r.count}</span></button>
             ); })}
             <span className={sep} aria-hidden="true" />
             {countries.map((c) => { const on = st.country === c.slug; return (
@@ -120,7 +114,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             ); })}
             <span className={sep} aria-hidden="true" />
             {years.map((y) => { const on = st.year === y.key; return (
-              <button key={y.key} type="button" className={chip} aria-pressed={on} onClick={() => update({ year: on ? null : y.key })}><span className="font-mono">{y.label}</span><span className={`font-mono text-[10.5px] ${s.count}`}>{y.count}</span></button>
+              <button key={y.key} type="button" className={chip} aria-pressed={on} onClick={() => update({ year: on ? null : y.key })}>{y.label}<span className={`font-mono text-[10.5px] ${s.count}`}>{y.count}</span></button>
             ); })}
             <span className={sep} aria-hidden="true" />
             {STATUS_CHIPS.map((x) => { const on = st.status === x.key; return (
@@ -137,15 +131,15 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             <p className="ledger-display italic text-[2rem] md:text-[2.6rem] leading-tight">Nothing on the horizon matches that yet.</p>
             <p className="mt-4 text-[16px] ledger-muted">Try another country or year, or clear the filters to see everything filed.</p>
             <div className="mt-8 flex justify-center gap-3 flex-wrap">
-              <WcEditorialLine legacy="ledger-btn ledger-btn--solid" onClick={() => update(clear)}>Clear the filters</WcEditorialLine>
-              <WcEditorialLine legacy="ledger-btn" href="/plan?from=whats-coming">Ask James</WcEditorialLine>
+              <button type="button" className="ledger-btn" onClick={() => update(clear)}>Clear the filters</button>
+              <Link href="/plan?from=whats-coming" className="ledger-btn ledger-btn--solid">Ask James</Link>
             </div>
           </div>
         )}
         {groups.map((g) => (
           <section key={g.key} aria-labelledby={`year-${g.key}`} className="pt-16 md:pt-28">
-            <header className={`${s.yearHead} flex items-end gap-5 md:gap-8 pb-4 md:pb-6`} style={{ ["--pw" as string]: g.items.find((x) => x.pathway)?.pathway?.accent }}>
-              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${s.yearNumC} ${!/^\d{4}$/.test(g.key) ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`}>{g.label}</h2>
+            <header className={`${s.yearHead} flex items-end gap-5 md:gap-8 pb-4 md:pb-6`} >
+              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${!/^\d{4}$/.test(g.key) ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`}>{g.label}</h2>
               <p className="pb-2 md:pb-5 font-mono text-[11px] md:text-[12px] tracking-[0.2em] uppercase ledger-muted">{g.items.length} {g.items.length === 1 ? "opening" : "openings"}</p>
             </header>
             <ol className="mt-10 md:mt-16 space-y-20 md:space-y-32">
@@ -161,7 +155,7 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
 function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
   return (
     <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} relative grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}
-      style={c.pathway ? { ["--pw" as string]: c.pathway.accent, ["--pw-text" as string]: c.pathway.text, ["--pw-tint" as string]: c.pathway.tint } : undefined}>
+      style={c.pathway ? { ["--pw" as string]: c.pathway.accent } : undefined}>
       <LedgerCorners id={`lc-${c.slug}`} wear />
       <div className={`${s.imgCol} lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
         <div className={`${s.frame} ${s.frameBg} relative aspect-square sm:aspect-[4/3] md:aspect-[16/10] overflow-hidden`}>
@@ -178,8 +172,8 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
       </div>
       <div className={`${s.panel} ${s.textCol} lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
         <div className={`${s.cardHead} flex items-baseline justify-between gap-3 font-mono text-[11px] tracking-[0.22em] uppercase`}>
-          <p className="ledger-muted">{c.country ?? "The Ledger"}<span className={s.onlyB}> &middot; {statusWord(c.status)}</span>{c.ledgerId && <span className={s.onlyA}> &middot;</span>}</p>
-          {c.ledgerId && <p className="ledger-crimson shrink-0">{c.ledgerId}</p>}
+          <p className="ledger-muted">{c.country ?? "The Ledger"} &middot; {statusWord(c.status)}</p>
+          {c.ledgerId && <p className="ledger-id shrink-0">{c.ledgerId}</p>}
         </div>
         <h3 id={`${c.slug}-name`} className={`${s.nameB} ledger-display text-[2.3rem] md:text-[3.2rem] leading-[1.02] mt-4 tracking-[-0.01em]`}>
           {c.href ? <Link href={c.href} className="hover:underline underline-offset-[6px] decoration-1">{c.name}</Link> : c.name}
@@ -199,16 +193,16 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
         {c.pathway && (
           <div className="mt-7">
             <p className="font-mono text-[10px] tracking-[0.22em] uppercase ledger-muted">Pair it with</p>
-            <Link href={`/pathways/${c.pathway.key}`} className={`${s.pair} mt-2`} aria-label={`Pair it with the Wild Pathway ${c.pathway.name}`}>
+            <Link href={`/pathways/${c.pathway.key}`} className={`house-chip ${s.pair} mt-2`} aria-label={`Pair it with the Wild Pathway ${c.pathway.name}`}>
               <span className={s.pairDot} aria-hidden="true" />
-              <span className="ledger-display text-[1.15rem] leading-none">{c.pathway.name}</span>
-              <span className="font-mono text-[9.5px] tracking-[0.2em] uppercase opacity-70">Wild Pathway</span>
+              <span>{c.pathway.name}</span>
+              <span className="house-chip--quiet opacity-80">Wild Pathway</span>
             </Link>
           </div>
         )}
         <div className="mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-8 gap-y-4">
-          <WcLedgerColumn legacy={`ledger-btn ledger-btn--solid ${s.tap}`} href={c.plan}>Plan with James</WcLedgerColumn>
-          {c.href && <WcEditorialLine legacy={`ledger-btn ${s.tap}`} href={c.href}>View the stay</WcEditorialLine>}
+          <Link href={c.plan} className={`ledger-btn ledger-btn--solid ${s.tapCol}`}>Plan with James</Link>
+          {c.href && <Link href={c.href} className={`ledger-btn ${s.tapLine}`}>View the stay</Link>}
         </div>
       </div>
     </article>
@@ -218,7 +212,7 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
 // No brand photograph yet: a Deep Sea colour field with the name set large, never a stand-in image.
 function ColourField({ c }: { c: ExplorerItem }) {
   return (
-    <div className={`${s.colourField} absolute inset-0 text-white flex flex-col justify-between p-6 md:p-10`} style={{ ["--f-from" as string]: c.field.from, ["--f-to" as string]: c.field.to, ["--f-glow" as string]: c.field.glow }}>
+    <div className={`${s.colourField} absolute inset-0 text-white flex flex-col justify-between p-6 md:p-10`}>
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full opacity-[0.18]" preserveAspectRatio="none" viewBox="0 0 400 250">
         {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M0 ${170 + i * 11} Q 100 ${164 + i * 11} 200 ${170 + i * 11} T 400 ${170 + i * 11}`} fill="none" stroke="white" strokeWidth="0.6" />)}
         <line x1="0" y1="170" x2="400" y2="170" stroke="white" strokeWidth="0.8" />

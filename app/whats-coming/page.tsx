@@ -6,8 +6,6 @@ import JsonLd from "@/components/ledger/JsonLd";
 import ComingHero, { type HeroSlide } from "@/components/coming/ComingHero";
 import ComingTicker from "@/components/coming/ComingTicker";
 import ComingExplorer, { type ExplorerItem } from "@/components/coming/ComingExplorer";
-import LookScript from "@/components/coming/LookScript";
-import { WcEditorialLine } from "@/components/coming/WcButtons";
 import { mainBoard } from "@/lib/content/board";
 import { comingPathway } from "@/lib/content/coming-pathways";
 import { pathwayChipsFor } from "@/lib/content/pathways";
@@ -15,10 +13,7 @@ import { pathway as pathwayById } from "@/lib/pathways";
 import { comingHero, comingOn, statusLine, type Coming } from "@/lib/content/whats-coming";
 import { countLine, countdown, sortComing, viewStatus, yearOf } from "@/lib/content/coming-view";
 import { today } from "@/lib/dates";
-import { DEEP_SEA } from "@/lib/palette";
 import cs from "@/components/coming/coming.module.css";
-
-const glass = cs.glass;
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { faqPage, graph, ids } from "@/lib/schema";
 import REGIONS from "@/lib/content/regions.json";
@@ -57,15 +52,6 @@ export function generateMetadata() {
   });
 }
 
-// Deep Sea pairs for the colour fields of entries without a photograph, chosen by the slug.
-const FIELDS = [
-  { from: DEEP_SEA.navy.fill, to: DEEP_SEA.ocean.fill, glow: DEEP_SEA.cerulean.fill },
-  { from: DEEP_SEA.teal.fill, to: DEEP_SEA.navy.fill, glow: DEEP_SEA.aqua.fill },
-  { from: DEEP_SEA.aqua.fill, to: DEEP_SEA.navy.fill, glow: DEEP_SEA.turquoise.fill },
-  { from: DEEP_SEA.slate.fill, to: DEEP_SEA.navy.fill, glow: DEEP_SEA.cerulean.fill },
-];
-const fieldFor = (slug: string) => FIELDS[[...slug].reduce((a, ch) => a + ch.charCodeAt(0), 0) % FIELDS.length];
-
 // The Wild Pathway each entry pairs with: the stay record's approved primary when it has one, else the house
 // suggestion in lib/content/coming-pathways.ts. Only the eight existing pathways.
 function pairFor(slug: string): ExplorerItem["pathway"] {
@@ -84,7 +70,7 @@ export default function WhatsComingPage() {
     status: c.status, date: c.date, tagline: c.tagline, note: c.note, bestMonths: c.bestMonths, airport: c.airport, href: c.href,
     when: statusLine(c), line: statusLine(c), countdown: countdown(c.date, day),
     plan: `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`,
-    hero: comingHero(c), field: fieldFor(c.slug), pathway: pairFor(c.slug),
+    hero: comingHero(c), pathway: pairFor(c.slug),
   }));
   const slides: HeroSlide[] = items.flatMap((c) => {
     const h = comingHero(c);
@@ -94,11 +80,10 @@ export default function WhatsComingPage() {
 
   return (
     <>
-      <LookScript />
       <SiteHeader overlay />
       <main id="main">
         <ComingHero slides={slides} count={items.length} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
-          <WcEditorialLine href="#the-board" tone="dark" legacy={`${glass} self-start md:self-end min-h-[48px]`}>See every opening</WcEditorialLine>
+          <a href="#the-board" className="ledger-btn ledger-btn--light self-start md:self-end min-h-[48px]">See every opening</a>
         </ComingHero>
         <div id="the-board"><ComingTicker entries={mainBoard(items, day)} label="Coming and on offer" more={false} /></div>
 

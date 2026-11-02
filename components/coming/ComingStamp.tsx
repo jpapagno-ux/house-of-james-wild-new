@@ -1,12 +1,12 @@
-import { HOUSE_LEDGER } from "@/lib/palette";
+import { CRIMSON, HOUSE } from "@/lib/palette";
 import { viewStatus } from "@/lib/content/coming-view";
 
 // The What's Coming stamp, pressed like a ledger stamp (James, 2 Nov 2026: "transparent ... like stamping
 // a ledger"): no disc, no drop shadow, one ink, and a stamp-pad texture (worn ink, tuned to stay
 // legible at banner and card sizes). Cut in the On the Horizon line: a 4-weight outer ring, a hairline,
 // compass ticks and mono ring lettering, with the status and the date in Plex Mono figures.
-// Inks come from HOUSE_LEDGER (the What's Coming house look), never a volume or Deep Sea blue:
-//   tone "dark"  ivory house ink, for the garnet banner and over photographs (a hairline ink shadow keeps
+// Inks come from the House Standard (lib/palette.ts), never a volume or Deep Sea blue:
+//   tone "dark"  white house ink, for the garnet banner and over photographs (a hairline ink shadow keeps
 //                it legible on bright skies; the ground still shows through everywhere the ink does not)
 //   tone "light" House Crimson, pressed into white pages and cards (multiply, like ink on paper)
 const MONO = "IBM Plex Mono, ui-monospace, monospace";
@@ -27,7 +27,7 @@ function stampInk(id: string, seed: number) {
 const MON = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
 
 export default function ComingStamp({ status, date, size = 132, id, rotate = -8, tone = "dark" }: { status: string; date: string | null; size?: number; id: string; rotate?: number; tone?: "dark" | "light" }) {
-  const ink = tone === "dark" ? HOUSE_LEDGER.ivory : HOUSE_LEDGER.crimson;
+  const ink = tone === "dark" ? HOUSE.paper : CRIMSON.fill;
   const word = viewStatus(status) === "rebuilding" ? (date ? "REOPENS" : "REIMAGINED") : "OPENS";
   const [y, m, d] = (date ?? "").split("-");
   const lines: { text: string; size: number; font: string; dy: number; spacing?: number }[] = !date
@@ -61,7 +61,7 @@ ${lines.map((l) => `<text x="100" y="${l.dy}" text-anchor="middle" font-family="
         // Light: pressed into the paper. Dark: a hairline shadow that hugs the ink only (no disc), so the
         // stamp stays legible over a bright photograph and the ground shows through everywhere else.
         mixBlendMode: tone === "light" ? "multiply" : undefined,
-        filter: tone === "dark" ? "drop-shadow(0 0 1.2px rgba(20,12,12,0.55))" : undefined,
+        filter: tone === "dark" ? "drop-shadow(0 0 1.2px rgba(26,24,22,0.55))" : undefined,
       }}
       dangerouslySetInnerHTML={{ __html: svg }} />
   );

@@ -41,7 +41,7 @@ for (const m of vol.matchAll(/key: "(\w+)",[^]*?deep: "(#[0-9A-Fa-f]{6})"[^]*?ti
   if (ratio(m[2], m[3]) < 4.5) errs.push(`lib/volumes.ts: ${m[1]} deep ${m[2]} is below AA on its mist ${m[3]}`);
 }
 const houseHex = new Set(["HOUSE", "FOOTER"].flatMap((n) => [...(read("lib/palette.ts").match(new RegExp(`export const ${n} = \\{([^}]*)\\}`))?.[1] ?? "").matchAll(/#[0-9A-F]{6}/g)].map((m) => m[0])));
-const PROTECTED_DIRS = ["app/whats-coming", "components/coming", "lib/content/whats-coming"]; // another build in flight: warn only
+const PROTECTED_DIRS = []; // What's Coming (PR #202) is now held to the House Standard like every other page; see its block below
 const walk = (d) => fs.existsSync(path.join(root, d)) ? fs.readdirSync(path.join(root, d), { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]) : [];
 const scan = [...walk("app"), ...walk("components"), ...walk("lib"), "tailwind.config.ts", ...walk("public/maps")].filter((f) => /\.(tsx?|css|m?js)$/.test(f) && !f.endsWith("lib/volumes.ts") && !f.includes("lib/content/library") && !f.endsWith(".json"));
 for (const f of scan) {
@@ -143,6 +143,28 @@ for (const f of ["app/globals.css", "tailwind.config.ts", ...walk("components").
   for (const [re, what] of Object.entries(retired)) if (new RegExp(re, "i").test(src)) errs.push(`${f}: ${what} is retired under the House Standard (James, 2 Nov 2026)`);
 }
 for (const f of ["components/ships/DatesRates.tsx", "components/journey/TripPage.tsx"]) if (/bg-\[#F1E2B8\]/.test(read(f))) errs.push(`${f}: the gold "few left" pill is retired`);
+
+// ---------- What's Coming (PR #202, James 2 Nov 2026) ----------
+// Its components and page use only the house set (HOUSE, FOOTER, CRIMSON, GRADIENT) plus the three tints it adds on
+// dark grounds (COMING_TINTS: blush, blush soft, the board's opening dot), its corner guards are the gradient's garnet
+// stops, and it never redefines tokens or styles a button of its own (main's .ledger-btn family and .house-chip).
+{
+  const tintsM = pal.match(/export const COMING_TINTS = \{([^}]*)\}/);
+  if (!tintsM) errs.push("lib/palette.ts: COMING_TINTS missing (What's Coming)");
+  const tints = [...(tintsM?.[1] ?? "").matchAll(/#[0-9A-Fa-f]{6}/g)].map((m) => m[0].toUpperCase());
+  for (const t of tints) { if (earthy(t)) errs.push(`lib/palette.ts: COMING_TINTS ${t} is a brown, gold or tan`); }
+  for (const t of tints.slice(0, 2)) if (ratio(t, H.ink) < 4.5) errs.push(`lib/palette.ts: COMING_TINTS ${t} is below AA on Ink`);
+  const allowed = new Set(["#FFFFFF", "#000000", ...houseHex, ...Object.values(H).map((x) => x.toUpperCase()), C.fill, C.deep, ...grad, ...tints].map((x) => x.toUpperCase()));
+  const rgbOf = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(" ");
+  const allowedRgb = new Set([...allowed].map(rgbOf));
+  for (const f of [...walk("components/coming"), ...walk("app/whats-coming")].filter((f) => /\.(tsx?|css)$/.test(f))) {
+    const src = read(f).replace(/\/\*[\s\S]*?\*\//g, "").replace(/^\s*\/\/.*$/gm, "");
+    for (const m of src.matchAll(/#[0-9A-Fa-f]{6}\b/g)) if (!allowed.has(m[0].toUpperCase())) errs.push(`${f}: ${m[0]} is outside the House Standard and COMING_TINTS`);
+    for (const m of src.matchAll(/rgba?\((\d+)[ ,]+(\d+)[ ,]+(\d+)/g)) { const k = `${m[1]} ${m[2]} ${m[3]}`; if (!allowedRgb.has(k) && k !== "0 0 0" && k !== "255 255 255") errs.push(`${f}: rgb(${k}) is outside the House Standard and COMING_TINTS`); }
+    if (/--jw-[a-z-]+:\s*#/.test(src)) errs.push(`${f}: What's Coming must read main's --jw-* tokens, not define its own`);
+    if (/--jw-sea-|DEEP_SEA\./.test(src) && !/pathway/i.test(f)) errs.push(`${f}: the Deep Sea set is retired here (pathway dots come from lib/pathways.ts)`);
+  }
+}
 
 if (warns.length) console.warn("\nHouse Standard palette warnings (another build in flight):\n  " + warns.join("\n  ") + "\n");
 if (errs.length) {

@@ -65,9 +65,8 @@ function filteredVoyages(req: NextRequest) {
   return res;
 }
 
-// 4. What's Coming: the concept comparison (?look=a, James, 2 Nov 2026) and filtered views are never indexed;
-//    the canonical stays /whats-coming.
-const COMING_PARAMS = ["look", "q", "region", "country", "year", "status", "sort", "group"];
+// 4. What's Coming: filtered views are never indexed; the canonical stays /whats-coming.
+const COMING_PARAMS = ["q", "region", "country", "year", "status", "sort", "group"];
 function filteredComing(req: NextRequest) {
   if (req.nextUrl.pathname !== "/whats-coming" || !COMING_PARAMS.some((f) => req.nextUrl.searchParams.has(f))) return null;
   const res = NextResponse.next();
@@ -88,7 +87,7 @@ export const config = {
     "/property/:path*", "/stay/:path*", "/book/:path*", "/country/:path*", "/itinerary/:path*", "/memoir/:path*", "/wellness-retreats/:path*", "/Contact", "/wild-earth-portfolio", "/find-stay", "/coming-soon", "/agent-application", "/influencer-application", "/request-itinerary", "/booking-itinerary", "/booking-form-retreat", "/wellness-retreats",
     // Voyages hubs (filtered views get noindex)
     "/voyages", "/voyages/:path*",
-    // What's Coming (concept and filtered views get noindex)
+    // What's Coming (filtered views get noindex)
     "/whats-coming",
     // Booking Live private routes (session refresh)
     "/account/:path*", "/auth/:path*", "/booking/:path*", "/api/v1/me/:path*", "/api/v1/quotes", "/api/v1/ops/:path*",

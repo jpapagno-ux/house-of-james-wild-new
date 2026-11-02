@@ -1,72 +1,31 @@
-/* What's Coming (James, 2 Nov 2026): the departures board, the cinematic hero, the explorer and the timeline.
-   Two looks for comparison:
-   - Concept B, the default: HOUSE colours, approved by James on the design canvas, 2 Nov 2026. Oxblood to garnet
-     hero, graphite board with a House Crimson rule, white body, squared double-keyline buttons.
-   - Concept A (html[data-look="a"], /whats-coming?look=a): the first preview, Deep Sea navy and the blue action.
-
-   SCOPED EXCEPTION to the site colour rule (CLAUDE.md: buttons wear --jw-action). The --jw-house-* tokens below
-   exist ONLY inside the What's Coming components (hero, board, banner, explorer, the page's answer band). They
-   are mirrored in lib/palette.ts HOUSE_LEDGER and held in step by scripts/check-palette.mjs. No global button
-   rule is changed. The neutrals are WARM (James, 2 Nov 2026) and match the site-wide House Standard being built on
-   branch house-standard; keep them in this one block so the two can be unified at merge. Crimson is used only for the Ledger ID, dates, the board's rule and dots, and Plan with James. */
-.hero, .board, .banner, .explorer, .faq {
-  --jw-house-crimson: #8B2525;       /* House Crimson: Ledger ID, dates, board rule, Plan with James */
-  --jw-house-crimson-bright: #C24A4A; /* opening dots on the graphite board */
-  --jw-house-blush: #E8C4C6;         /* soft crimson tint: hero eyebrow, stamp, year numerals, offer % */
-  --jw-house-blush-soft: #E9DCDD;    /* hero count line */
-  --jw-house-ivory: #FCFDFD;         /* hero title, active chip text */
-  --jw-house-graphite: #2E2B28;      /* body type, card header rule, active chip */
-  --jw-house-graphite-deep: #1A1816; /* the board's band */
-  --jw-house-graphite-rule: #3D3934; /* the board's lower rule */
-  --jw-house-slate: #6B635A;         /* body text (warm, James 2 Nov 2026) */
-  --jw-house-muted: #6B635A;         /* small labels on white (AA 5.7:1) */
-  --jw-house-mist: #D9DDE1;          /* board type */
-  --jw-house-keyline: #CFC8BF;       /* secondary buttons, chips, fields */
-  --jw-house-hairline: #DCD7D0;      /* card borders, rules */
-  --jw-house-oxblood: #4A1A20;       /* hero ground */
-  --jw-house-garnet: #2A1416;        /* hero ground, photo fade */
-  --jw-house-stone: #F4F2EF;         /* Stone Mist: the answer band */
-  --jw-house-warm-stone: #8C8277;    /* Warm Stone: the year numerals (large text, 3.8:1 on white) */
-  --jw-house-leather: #5A1F23;       /* ledger corner guards, light edge */
-  --jw-house-leather-deep: #3A1C1F;  /* ledger corner guards, deep edge */
-}
-:global(html[data-look="a"]) .onlyB, :global(html:not([data-look="a"])) .onlyA { display: none !important; }
+/* What's Coming (James, 2 Nov 2026): the departures board, the cinematic hero, the explorer and the timeline, in the
+   House Standard. Colours come from main's --jw-* tokens (app/globals.css, lib/palette.ts HOUSE, CRIMSON, GRADIENT,
+   FOOTER); the only additions are the three What's Coming tints on dark grounds (lib/palette.ts COMING_TINTS: blush
+   232 196 198, blush soft 233 220 221, dot 194 74 74). Buttons are main's shared family (.ledger-btn editorial line,
+   .ledger-btn--solid ledger column); chips are main's .house-chip. Crimson only for Ledger IDs, dates, the board's
+   rule and dots, and Plan with James. */
 
 /* ── Board ──────────────────────────────────────────────── */
-.board { position: relative; overflow: hidden; color: var(--jw-house-mist); background: var(--jw-house-graphite-deep);
-  border-top: 1px solid var(--jw-house-crimson); border-bottom: 1px solid var(--jw-house-graphite-rule); }
+.board { position: relative; overflow: hidden; color: #E9E4DE; background: var(--jw-ink);
+  border-top: 1px solid var(--jw-crimson); border-bottom: 1px solid #3D3934; }
 .viewport { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
 .track { display: flex; width: max-content; animation: board var(--board-dur, 40s) linear infinite; }
 .track:hover, .track:focus-within, .board:focus-within .track { animation-play-state: paused; }
 .group { display: flex; flex: none; }
 @keyframes board { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.boardLabel { border-right: 1px solid var(--jw-house-graphite-rule); color: var(--jw-house-mist); }
-.boardMore a { border-left: 1px solid var(--jw-house-graphite-rule); color: var(--jw-house-mist); }
-.boardMore a:hover { color: white; background: rgb(255 255 255 / 0.04); }
-.bname { color: var(--jw-house-mist); }
-:global(html:not([data-look="a"])) .bname { font-size: 13px; letter-spacing: 0.12em; }
-.place { color: rgb(217 221 225 / 0.6); }
-.flap { display: inline-block; padding: 3px 9px; border-radius: 2px; color: var(--jw-house-mist); border: 1px solid var(--jw-house-graphite-rule); }
-.flapOffer { color: var(--jw-house-blush); border-color: rgb(232 196 198 / 0.35); }
-.tail { color: rgb(217 221 225 / 0.6); }
-.diamond { color: var(--jw-house-graphite-rule); }
-.odot { width: 7px; height: 7px; border-radius: 999px; background: var(--jw-house-crimson-bright); flex: none; }
-.pct { font-size: 13px; font-weight: 600; letter-spacing: 0; color: var(--jw-house-blush); width: 12px; text-align: center; }
-.dot { --pulse: 194 74 74; width: 7px; height: 7px; border-radius: 999px; background: rgb(var(--pulse)); animation: pulse 2.4s ease-out infinite; }
-@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgb(var(--pulse) / 0.6); } 70% { box-shadow: 0 0 0 9px rgb(var(--pulse) / 0); } 100% { box-shadow: 0 0 0 0 rgb(var(--pulse) / 0); } }
-
-/* Concept A board: flat Deep Sea navy, aqua marks (STAMP_AQUA.onDark 143 214 207), white type. */
-:global(html[data-look="a"]) .board { background: var(--jw-sea-navy); border: 0; color: white; }
-:global(html[data-look="a"]) .boardLabel, :global(html[data-look="a"]) .boardMore a { border-color: rgb(255 255 255 / 0.15); color: rgb(255 255 255 / 0.85); }
-:global(html[data-look="a"]) .bname { color: white; }
-:global(html[data-look="a"]) .place, :global(html[data-look="a"]) .sun { color: rgb(143 214 207); }
-:global(html[data-look="a"]) .flap { border: 0; color: rgb(255 255 255 / 0.9); background: rgb(255 255 255 / 0.08); box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0.35), inset 0 1px 0 rgb(255 255 255 / 0.06); }
-:global(html[data-look="a"]) .flapOffer { background: rgb(143 214 207 / 0.14); }
-:global(html[data-look="a"]) .tail { color: rgb(255 255 255 / 0.7); }
-:global(html[data-look="a"]) .diamond { color: rgb(255 255 255 / 0.3); }
-:global(html[data-look="a"]) .pct { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 3px; font-size: 11.5px; color: var(--jw-sea-navy); background: rgb(143 214 207); }
-:global(html[data-look="a"]) .dot { --pulse: 143 214 207; }
-
+.boardLabel { border-right: 1px solid #3D3934; color: #E9E4DE; }
+.boardMore a { border-left: 1px solid #3D3934; color: #E9E4DE; }
+.boardMore a:hover { color: #FFFFFF; background: rgb(255 255 255 / 0.04); }
+.bname { color: #E9E4DE; font-size: 13px; letter-spacing: 0.12em; }
+.place { color: #B8AFA5; }
+.flap { display: inline-block; padding: 3px 9px; border-radius: 2px; color: #E9E4DE; border: 1px solid #3D3934; }
+.flapOffer { color: rgb(232 196 198); border-color: rgb(232 196 198 / 0.35); }
+.tail { color: #B8AFA5; }
+.diamond { color: #3D3934; }
+.odot { width: 7px; height: 7px; border-radius: 999px; background: rgb(194 74 74); flex: none; }
+.pct { font-size: 13px; font-weight: 600; letter-spacing: 0; color: rgb(232 196 198); width: 12px; text-align: center; }
+.dot { width: 7px; height: 7px; border-radius: 999px; background: rgb(194 74 74); animation: pulse 2.4s ease-out infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgb(194 74 74 / 0.6); } 70% { box-shadow: 0 0 0 9px rgb(194 74 74 / 0); } 100% { box-shadow: 0 0 0 0 rgb(194 74 74 / 0); } }
 @media (prefers-reduced-motion: reduce) {
   .viewport { overflow-x: auto; mask-image: none; scrollbar-width: thin; }
   .track { animation: none; }
@@ -74,35 +33,22 @@
   .dot { animation: none; }
 }
 
-/* ── Stay-page banner ───────────────────────────────────── */
-.banner { background: linear-gradient(100deg, var(--jw-house-oxblood), var(--jw-house-garnet) 50%, var(--jw-house-graphite-deep)); }
-:global(html[data-look="a"]) .banner { background: linear-gradient(100deg, var(--jw-sea-navy), var(--jw-sea-teal)); }
+/* ── Stay-page banner: the Ink to Garnet gradient (main's .jw-gradient sets the ground and the dark-button rules) ── */
+.banner { color: #FFFFFF; }
 
-/* ── Hero ───────────────────────────────────────────────── */
-.hero { background: linear-gradient(150deg, var(--jw-house-oxblood), var(--jw-house-garnet) 45%, var(--jw-house-graphite-deep)); }
-:global(html[data-look="a"]) .hero { background: var(--jw-sea-navy); }
+/* ── Hero: the garnet end of the Ink to Garnet gradient behind the photograph, the house photo fade below ── */
+.hero { background: linear-gradient(150deg, #5A1F23, #3A1C1F 45%, #1A1816); }
+.heroH { height: 100vh; height: 100svh; }
 .slide { position: absolute; inset: 0; }
 .kb { position: absolute; inset: 0; will-change: transform; }
-/* B: the photograph fades into oxblood and garnet at the bottom; a light shade at the top keeps the header legible. */
-.heroShade { background: linear-gradient(180deg, rgb(26 24 22 / 0.45) 0%, transparent 20%, transparent 40%, rgb(42 20 22 / 0.85) 100%); }
-:global(html[data-look="a"]) .heroShade { background: linear-gradient(180deg, rgb(10 20 40 / 0.55) 0%, rgb(10 20 40 / 0.05) 30%, rgb(10 20 40 / 0.1) 55%, rgb(8 18 36 / 0.82) 100%); }
-.heroKicker { color: var(--jw-house-blush); }
-.heroTitle { color: var(--jw-house-ivory); }
-.heroCount { color: var(--jw-house-blush-soft); }
+.heroShade { background: linear-gradient(180deg, rgb(26 24 22 / 0.45) 0%, transparent 20%), var(--jw-hero-fade); }
+.heroKicker { color: rgb(232 196 198); }
+.heroTitle { color: #FFFFFF; font-size: clamp(3.6rem, 10vw, 6rem) !important; line-height: 0.92 !important; letter-spacing: -0.015em; }
+.heroCount { color: rgb(233 220 221); }
 .heroRule { border-color: rgb(232 196 198 / 0.35); }
-:global(html:not([data-look="a"])) .heroTitle { font-size: clamp(3.6rem, 10vw, 6rem); line-height: 0.92; letter-spacing: -0.015em; }
-:global(html[data-look="a"]) .heroKicker { color: rgb(255 255 255 / 0.85); }
-:global(html[data-look="a"]) .heroTitle { color: white; }
-:global(html[data-look="a"]) .heroCount { color: rgb(255 255 255 / 0.9); }
-:global(html[data-look="a"]) .heroRule { border-color: rgb(255 255 255 / 0.25); }
-.horizon { color: var(--jw-house-blush); }
-/* The hero button: ivory on the photograph, squared, a double keyline in the soft crimson tint (B). */
-.glass { display: inline-flex; align-items: center; gap: 10px; padding: 13px 22px; border-radius: 2px; color: var(--jw-house-ivory); background: transparent;
-  border: 1px solid var(--jw-house-blush); box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px rgb(232 196 198 / 0.4);
-  font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; transition: background 0.3s; }
-.glass:hover { background: rgb(232 196 198 / 0.12); }
-:global(html[data-look="a"]) .glass { border-radius: 0; border-color: white; box-shadow: none; font-family: var(--font-mono, ui-monospace), monospace; font-weight: 400; font-size: 11px; letter-spacing: 0.24em; }
-:global(html[data-look="a"]) .glass:hover { background: white; color: var(--jw-sea-navy); }
+.horizon { color: rgb(232 196 198); }
+.heroInner { padding-left: max(1.25rem, env(safe-area-inset-left)); padding-right: max(1.25rem, env(safe-area-inset-right)); padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+@media (min-width: 768px) { .heroInner { padding-left: max(2.5rem, env(safe-area-inset-left)); padding-right: max(2.5rem, env(safe-area-inset-right)); padding-bottom: calc(5rem + env(safe-area-inset-bottom)); } }
 .caption { opacity: 0; visibility: hidden; }
 .caption[data-first="true"] { opacity: 1; visibility: visible; }
 @media (prefers-reduced-motion: reduce) {
@@ -115,14 +61,64 @@
 @keyframes cue { 0%, 100% { transform: translateY(0); opacity: 0.9; } 50% { transform: translateY(6px); opacity: 0.5; } }
 @media (prefers-reduced-motion: reduce) { .cue { animation: none; } }
 
-/* ── Cards ──────────────────────────────────────────────── */
+/* ── Explorer: Paper ground, graphite type, main's squared chips ── */
+.explorer { color: var(--jw-graphite); background: var(--jw-paper); }
+.bar { background: rgb(255 255 255 / 0.96); border-bottom: 1px solid var(--jw-hairline); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+/* The bar sits exactly under the site header: --wc-head is the header's measured bottom (ComingExplorer). */
+.barTop { top: var(--wc-head, 76px) !important; }
+.field { color: var(--jw-graphite); background: var(--jw-paper); border: 1px solid var(--jw-keyline); border-radius: 2px; }
+.field::placeholder { color: var(--jw-stone-text); }
+.field:focus { outline: none; border-color: var(--jw-graphite); }
+.icon { color: var(--jw-stone-text); }
+.chip { padding-inline: 12px; }
+.count { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 400; letter-spacing: 0; color: var(--jw-stone-text); }
+.chip[aria-pressed="true"] .count { color: rgb(255 255 255 / 0.72); }
+.sep { background: var(--jw-hairline); }
+.chips { scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+/* Touch screens (phones, 768 and 1024 tablets): controls keep 44px tap targets. */
+@media (pointer: coarse) { .chip, .field { min-height: 44px; } }
+
+/* Year bands: huge, light Cormorant numerals in Warm Stone. */
+.yearNum { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300; line-height: 0.8; letter-spacing: -0.04em; color: var(--jw-stone); }
+.yearHead { border-bottom: 1px solid var(--jw-hairline); }
+
+/* Cards: Paper with a hairline border, image left and text right on every card. The paired pathway shows only as
+   the 6px dot on its chip (House Standard: no pathway fills or rules). */
+.card { background: var(--jw-paper); border: 1px solid var(--jw-hairline); gap: 0 !important; --corner: 20px; --corner-off-top: -1px; --corner-off-side: -1px; }
+@media (min-width: 768px) { .card { --corner: 28px; } }
+@media (min-width: 1024px) {
+  .imgCol, .textCol { order: 0 !important; }
+  .imgCol { align-self: stretch; }
+  .imgCol .frame { height: 100%; aspect-ratio: auto !important; min-height: 420px; }
+}
 .frame img { transition: transform 1.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
 .card:hover .frame img, .card:focus-within .frame img { transform: scale(1.04); }
-/* Anchors land just under the sticky bar: --wc-stick is the header's bottom plus the bar's height, measured live
-   (ComingExplorer); the fixed values are the fallback before it is measured. */
+.frameBg { background: var(--jw-ink); }
+.panel { padding: 24px 22px 30px; }
+@media (min-width: 1024px) { .panel { padding: 40px 44px 40px 40px; } }
+.cardHead { border-bottom: 1px solid var(--jw-graphite); padding-bottom: 10px; }
+.nameB { color: var(--jw-graphite); font-size: clamp(2rem, 1.55rem + 1.9vw, 2.5rem) !important; }
+.tagline { color: var(--jw-stone-text); }
+.ruleY { border-block: 1px solid var(--jw-hairline); }
+/* The date line: Cormorant italic in crimson. */
+.line { color: var(--jw-crimson); font-family: 'Cormorant Garamond', Georgia, serif !important; font-style: italic; font-size: 1.35rem !important; letter-spacing: 0 !important; text-transform: none !important; }
+.noteText { color: var(--jw-stone-text); }
+/* No brand photograph yet: the garnet end of the house gradient, the name set large. */
+.colourField { background: linear-gradient(150deg, #5A1F23, #3A1C1F 45%, #1A1816); }
+.fieldName { font-size: clamp(2rem, 1.1rem + 3.4vw, 4.2rem); }
+/* "Pair it with": main's squared chip, the pathway's colour only as a 6px dot beside the printed name. */
+.pair { text-transform: none; letter-spacing: 0.04em; font-size: 13px; padding: 8px 12px; }
+.pairDot { width: 6px; height: 6px; border-radius: 999px; background: var(--pw); }
+/* Buttons (main's family): full width on phones; every tap target at least 44px. */
+.tapLine { min-height: 44px; }
+@media (max-width: 639px) { .tapCol { width: 100%; } }
+/* Phones: the date stamp scales down so it never sits on a colour field's name (the frame is square there). */
+@media (max-width: 639px) { .stampSpot :global(svg) { width: 96px; height: 96px; } }
+
+/* Anchors land 16px under the sticky bar: --wc-stick is the header's bottom plus the bar's height, measured live. */
 .anchor { scroll-margin-top: calc(var(--wc-stick, 214px) + 16px); }
 @media (min-width: 1024px) { .anchor { scroll-margin-top: calc(var(--wc-stick, 286px) + 16px); } }
-.barTop { top: var(--wc-head, 76px) !important; }
 
 /* Scroll reveal: visible by default; browsers with scroll-driven animations rise the card in. */
 @media (prefers-reduced-motion: no-preference) {
@@ -132,150 +128,18 @@
 }
 @keyframes rise { from { opacity: 0; transform: translateY(48px); } to { opacity: 1; transform: none; } }
 
-.yearNum { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; line-height: 0.8; letter-spacing: -0.04em; }
-.chips { scrollbar-width: none; }
-.chips::-webkit-scrollbar { display: none; }
+/* ── The page's answer band: Stone Mist with a hairline ── */
+.faq { background: var(--jw-mist) !important; border-top: 1px solid var(--jw-hairline); }
+.step { border-top: 2px solid var(--jw-graphite); }
+.stepNum { color: var(--jw-graphite); }
 
-/* ── Explorer (B: white ground, graphite type, squared controls) ── */
-.explorer { color: var(--jw-house-graphite); background: #FFFFFF; }
-:global(html:not([data-look="a"])) .explorer :global(.ledger-muted) { color: var(--jw-house-muted); }
-:global(html[data-look="a"]) .explorer { color: inherit; background: transparent; }
-
-.bar { background: rgb(255 255 255 / 0.96); border-bottom: 1px solid var(--jw-house-hairline); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
-:global(html[data-look="a"]) .bar { background: rgb(252 253 253 / 0.95); border-bottom-color: var(--jw-rule-fine, #D3E6E4); }
-.field { color: var(--jw-house-graphite); background: #FFFFFF; border: 1px solid var(--jw-house-keyline); border-radius: 2px; }
-.field::placeholder { color: var(--jw-house-muted); }
-.field:focus { outline: none; border-color: var(--jw-house-graphite); }
-.icon { color: var(--jw-house-muted); }
-:global(html[data-look="a"]) .field { border-radius: 0; border-color: var(--jw-rule-fine, #D3E6E4); color: #2D2A26; }
-:global(html[data-look="a"]) .field::placeholder { color: rgb(45 42 38 / 0.45); }
-:global(html[data-look="a"]) .field:focus { border-color: var(--jw-action); }
-:global(html[data-look="a"]) .icon { color: rgb(45 42 38 / 0.5); }
-
-.chip { color: var(--jw-house-graphite); background: #FFFFFF; border: 1px solid var(--jw-house-keyline); border-radius: 2px; transition: border-color 0.2s, background 0.2s, color 0.2s; }
-.chip:hover { border-color: var(--jw-house-graphite); }
-.chip[aria-pressed="true"] { color: var(--jw-house-ivory); background: var(--jw-house-graphite); border-color: var(--jw-house-graphite); }
-.count { color: var(--jw-house-muted); }
-.chip[aria-pressed="true"] .count { color: rgb(252 253 253 / 0.72); }
-.sep { background: var(--jw-house-hairline); }
-:global(html[data-look="a"]) .chip { border-radius: 0; color: #2D2A26; border-color: var(--jw-rule-fine, #D3E6E4); }
-:global(html[data-look="a"]) .chip:hover { border-color: var(--jw-action); }
-:global(html[data-look="a"]) .chip[aria-pressed="true"] { color: white; background: var(--jw-action); border-color: var(--jw-action); }
-:global(html[data-look="a"]) .count { color: rgb(45 42 38 / 0.5); }
-:global(html[data-look="a"]) .chip[aria-pressed="true"] .count { color: rgb(255 255 255 / 0.8); }
-:global(html[data-look="a"]) .sep { background: rgb(45 42 38 / 0.15); }
-
-/* Year bands: huge, light Cormorant numerals in Warm Stone (B, James 2 Nov 2026); ocean blue (A). */
-.yearHead { border-bottom: 1px solid var(--jw-house-hairline); }
-.yearNumC { color: var(--jw-house-warm-stone); font-weight: 300; }
-:global(html[data-look="a"]) .yearHead { border-bottom-color: var(--jw-rule, #B5D3D0); }
-:global(html[data-look="a"]) .yearNumC { color: var(--jw-action); }
-
-/* Cards (B): white, a 1px hairline border, image left and text right on every card, a 2px keyline at the top in
-   the colour of the Wild Pathway it pairs with (--pw). A: unbordered, alternating, as the first preview. */
-:global(html:not([data-look="a"])) .card { background: #FFFFFF; border: 1px solid var(--jw-house-hairline); border-top: 2px solid var(--pw, var(--jw-house-hairline)); gap: 0; }
-@media (min-width: 1024px) { :global(html:not([data-look="a"])) .imgCol, :global(html:not([data-look="a"])) .textCol { order: 0; } }
-.frameBg { background: var(--jw-house-graphite-deep); }
-:global(html[data-look="a"]) .frameBg { background: var(--jw-sea-navy); }
-.panel { padding: 24px 22px 30px; }
-@media (min-width: 1024px) { .panel { padding: 40px 44px 40px 40px; } }
-:global(html[data-look="a"]) .panel { padding: 0; }
-.cardHead { border-bottom: 1px solid var(--jw-house-graphite); padding-bottom: 10px; }
-:global(html[data-look="a"]) .cardHead { border: 0; padding: 0; justify-content: flex-start; }
-:global(html:not([data-look="a"])) .nameB { color: var(--jw-house-graphite); }
-.tagline { color: var(--jw-house-slate); }
-:global(html[data-look="a"]) .tagline { color: rgb(45 42 38 / 0.8); }
-.ruleY { border-block: 1px solid var(--jw-house-hairline); }
-:global(html[data-look="a"]) .ruleY { border-color: var(--jw-rule-fine, #D3E6E4); }
-/* The date line: Cormorant italic in crimson (B); Plex Mono caps in the action blue (A). */
-.line { color: var(--jw-house-crimson); }
-:global(html:not([data-look="a"])) .line { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.35rem; letter-spacing: 0; text-transform: none; }
-:global(html[data-look="a"]) .line { color: var(--jw-action); }
-.noteText { color: var(--jw-house-slate); }
-:global(html[data-look="a"]) .noteText { color: inherit; }
-
-/* No brand photograph yet: a colour field with the name set large. B: oxblood to graphite; A: the Deep Sea pair. */
-.colourField { background: linear-gradient(150deg, var(--jw-house-oxblood), var(--jw-house-garnet) 45%, var(--jw-house-graphite-deep)); }
-:global(html[data-look="a"]) .colourField { background: radial-gradient(120% 90% at 85% 10%, var(--f-glow), transparent 60%), linear-gradient(160deg, var(--f-from), var(--f-to)); }
-
-/* "Pair it with": the Wild Pathway chip, squared, in its own pathway colour. Name always printed beside the colour. */
-.pair { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 11px; border-radius: 2px; color: var(--pw-text); background: var(--pw-tint); border: 1px solid color-mix(in srgb, var(--pw) 35%, white); transition: border-color 0.2s; }
-.pair:hover { border-color: var(--pw); }
-.pairDot { width: 9px; height: 9px; border-radius: 999px; background: var(--pw); }
-
-/* ── The page's answer band (B: Stone Mist with a hairline; A: the Tidewater band) ── */
-:global(html:not([data-look="a"])) .faq { background: var(--jw-house-stone); border-top: 1px solid var(--jw-house-hairline); }
-.step { border-top: 2px solid var(--jw-house-graphite); }
-.stepNum { color: var(--jw-house-graphite); }
-:global(html[data-look="a"]) .step { border-top-color: var(--jw-action); }
-:global(html[data-look="a"]) .stepNum { color: var(--jw-action); }
-
-/* ── Ledger corners (house look) ── */
+/* ── Ledger corners: oxblood leather guards from the gradient's garnet stops (LedgerCorners.tsx) ── */
 .corners { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
 .corner { position: absolute; width: var(--corner, 28px); height: var(--corner, 28px); display: block; filter: drop-shadow(0 1px 1px rgb(26 24 22 / 0.25)); }
 .cornerTL { top: var(--corner-off-top, 0); left: var(--corner-off-side, 0); }
 .cornerBR { bottom: var(--corner-off-side, 0); right: var(--corner-off-side, 0); transform: rotate(180deg); }
 .wear { position: absolute; inset: 0; background: radial-gradient(120px 120px at 100% 0%, rgb(46 43 40 / 0.03), transparent 70%), radial-gradient(120px 120px at 0% 100%, rgb(46 43 40 / 0.03), transparent 70%); }
-@media (prefers-reduced-transparency: reduce) { .cornerFx { display: none; } .cornerShape { fill: var(--jw-house-leather-deep); } .corner { filter: none; } .wear { display: none; } }
-@media (forced-colors: active) { .cornerFx, .wear { display: none; } .cornerShape { fill: CanvasText; } .corner { filter: none; } }
-/* Sizes: cards 28px (20px on phones) sitting over the card's border; the hero frame 44px (28px on phones). */
-:global(html:not([data-look="a"])) .card { --corner: 20px; --corner-off-top: -2px; --corner-off-side: -1px; }
-@media (min-width: 768px) { :global(html:not([data-look="a"])) .card { --corner: 28px; } }
 .heroCorners { position: absolute; inset: 0; z-index: 1; pointer-events: none; --corner: 28px; }
 @media (min-width: 768px) { .heroCorners { --corner: 44px; } }
-
-/* ── Responsive (James, 2 Nov 2026: every breakpoint from 360 to 1920) ── */
-/* Hero height: 100vh first, then the small-viewport unit so mobile browser bars never cut the hero. */
-.heroH { height: 100vh; height: 100svh; }
-/* Safe areas (notch, home indicator): side padding never under the inset; the bottom clears the home indicator and
-   the phone's fixed bottom nav. */
-.heroInner { padding-left: max(1.25rem, env(safe-area-inset-left)); padding-right: max(1.25rem, env(safe-area-inset-right)); padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
-@media (min-width: 768px) { .heroInner { padding-left: max(2.5rem, env(safe-area-inset-left)); padding-right: max(2.5rem, env(safe-area-inset-right)); padding-bottom: calc(5rem + env(safe-area-inset-bottom)); } }
-/* Card names scale with the viewport (B), 32px on the smallest phone to 40px. */
-:global(html:not([data-look="a"])) .nameB { font-size: clamp(2rem, 1.55rem + 1.9vw, 2.5rem); }
-/* Buttons: at least 44px tall everywhere; full width on phones. */
-.tap { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
-@media (max-width: 639px) { .tap { width: 100%; } }
-/* Touch tablets (768 and 1024, portrait and landscape): controls keep 44px tap targets on any coarse pointer. */
-@media (pointer: coarse) { .chip, .field { min-height: 44px; } }
-
-/* ── House button family, What's Coming copy (James, 2 Nov 2026; WcButtons.tsx). Swap for the shared House
-   Standard component at merge. House look only: concept A keeps its ledger-btn styles and hides the extra parts. ── */
-.lcolCell, .elineArrow { display: none; }
-:global(html:not([data-look="a"])) .lcol { display: inline-flex; align-items: stretch; height: 56px; min-height: 56px; padding: 0; border: 1px solid var(--jw-house-graphite-deep); border-radius: 0; background: transparent; box-shadow: none; color: var(--jw-house-graphite-deep); text-decoration: none; }
-:global(html:not([data-look="a"])) .lcol:hover { background: transparent; color: var(--jw-house-graphite-deep); }
-:global(html:not([data-look="a"])) .lcolLabel { display: flex; align-items: center; flex: 1 1 auto; padding: 0 24px; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; white-space: nowrap; }
-:global(html:not([data-look="a"])) .lcolCell { display: flex; align-items: center; justify-content: center; flex: none; width: 56px; background: var(--jw-house-crimson); transition: width 0.3s cubic-bezier(0.2, 0.7, 0.2, 1); }
-:global(html:not([data-look="a"])) .lcol:hover .lcolCell, :global(html:not([data-look="a"])) .lcol:focus-visible .lcolCell { width: 84px; }
-:global(html:not([data-look="a"])) .lcol:focus-visible { outline: 2px solid var(--jw-house-crimson); outline-offset: 3px; }
-:global(html:not([data-look="a"])) .lcolDark, :global(html:not([data-look="a"])) .lcolDark:hover { border-color: #FFFFFF; color: #FFFFFF; }
-:global(html:not([data-look="a"])) .lcolDark:focus-visible { outline-color: #FFFFFF; }
-@media (max-width: 639px) { :global(html:not([data-look="a"])) .lcol { width: 100%; } }
-
-:global(html:not([data-look="a"])) .eline { position: relative; display: inline-flex; align-items: center; gap: 14px; min-height: 44px; padding: 0 0 6px; border: 0; border-radius: 0; background: none; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none;
-  color: var(--jw-house-graphite); font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; font-size: 1.3rem; letter-spacing: 0; text-transform: none; text-decoration: none; width: auto; justify-content: flex-start; }
-:global(html:not([data-look="a"])) .eline:hover { background: none; color: var(--jw-house-graphite); }
-:global(html:not([data-look="a"])) .eline::after { content: ""; position: absolute; left: 0; bottom: 4px; height: 1px; width: 28%; background: var(--jw-house-crimson); transition: width 0.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
-:global(html:not([data-look="a"])) .elineArrow { display: block; position: relative; width: 34px; height: 1px; background: var(--jw-house-crimson); transition: width 0.4s cubic-bezier(0.2, 0.7, 0.2, 1); }
-:global(html:not([data-look="a"])) .elineArrow::after { content: ""; position: absolute; right: 0; top: -4px; width: 9px; height: 9px; border-top: 1px solid var(--jw-house-crimson); border-right: 1px solid var(--jw-house-crimson); transform: rotate(45deg); transform-origin: 70% 30%; }
-:global(html:not([data-look="a"])) .eline:hover::after, :global(html:not([data-look="a"])) .eline:focus-visible::after { width: 100%; }
-:global(html:not([data-look="a"])) .eline:hover .elineArrow, :global(html:not([data-look="a"])) .eline:focus-visible .elineArrow { width: 60px; }
-:global(html:not([data-look="a"])) .eline:focus-visible { outline: 2px solid var(--jw-house-crimson); outline-offset: 4px; }
-/* On dark grounds (hero, banner) crimson would disappear into oxblood: the line and arrow take the blush tint. */
-:global(html:not([data-look="a"])) .elineDark, :global(html:not([data-look="a"])) .elineDark:hover { color: var(--jw-house-ivory); }
-:global(html:not([data-look="a"])) .elineDark::after, :global(html:not([data-look="a"])) .elineDark .elineArrow { background: var(--jw-house-blush); }
-:global(html:not([data-look="a"])) .elineDark .elineArrow::after { border-color: var(--jw-house-blush); }
-:global(html:not([data-look="a"])) .elineDark:focus-visible { outline-color: var(--jw-house-blush); }
-@media (prefers-reduced-motion: reduce) { .lcolCell, .eline::after, .elineArrow { transition: none !important; } }
-/* Concept A banner buttons: white ghost buttons on the navy band, as the first preview. */
-:global(html[data-look="a"]) .bannerA { border-color: #FFFFFF; color: #FFFFFF; background: transparent; }
-:global(html[data-look="a"]) .bannerAQuiet { border-color: rgb(255 255 255 / 0.5); color: rgb(255 255 255 / 0.9); }
-:global(html[data-look="a"]) .bannerA:hover { background: #FFFFFF; color: #2D2A26; }
-/* Phones: the date stamp scales down so it never sits on a colour field's name (the frame is square there). */
-@media (max-width: 639px) { .stampSpot :global(svg) { width: 96px; height: 96px; } }
-.fieldName { font-size: clamp(2rem, 1.1rem + 3.4vw, 4.2rem); }
-/* Desktop (B): the photograph fills the card's full height beside the text, no white bands. */
-@media (min-width: 1024px) {
-  :global(html:not([data-look="a"])) .imgCol { align-self: stretch; }
-  :global(html:not([data-look="a"])) .imgCol .frame { height: 100%; aspect-ratio: auto; min-height: 420px; }
-}
+@media (prefers-reduced-transparency: reduce) { .cornerFx { display: none; } .cornerShape { fill: #3A1C1F; } .corner { filter: none; } .wear { display: none; } }
+@media (forced-colors: active) { .cornerFx, .wear { display: none; } .cornerShape { fill: CanvasText; } .corner { filter: none; } }

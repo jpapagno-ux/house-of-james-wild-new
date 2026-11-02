@@ -24,7 +24,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
   const delay = (i: number) => (i === 0 ? "0s" : `-${T - i * HOLD}s`);
   const anim = (name: string, i: number) => (n < 2 ? (name === "jwcKb" ? `jwcKb 24s ease-in-out infinite alternate` : "none") : `${name} ${T}s ${name === "jwcKb" ? "linear" : "ease-in-out"} ${delay(i)} infinite`);
   return (
-    <section className={`${s.hero} ${s.heroH} relative min-h-[560px] w-full overflow-hidden text-white`} aria-labelledby="coming-title">
+    <section className={`${s.hero} ${s.heroH} jw-onphoto relative min-h-[560px] w-full overflow-hidden text-white`} aria-labelledby="coming-title">
       <style dangerouslySetInnerHTML={{ __html: keyframes(n) }} />
       <div className="absolute inset-0" aria-hidden={n ? undefined : true}>
         {slides.map((sl, i) => (
@@ -37,7 +37,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
       </div>
       <div className={`absolute inset-0 ${s.heroShade}`} aria-hidden="true" />
       <div className={`${s.heroInner} relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20`}>
-        <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}><span className={s.onlyB}>The Ledger &middot; What&rsquo;s Coming</span><span className={s.onlyA}>James Wild &amp; Co &middot; Filed before they open</span></p>
+        <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}>The Ledger &middot; What&rsquo;s Coming</p>
         <h1 id="coming-title" className={`${s.heroTitle} ledger-display mt-4 text-[4.1rem] leading-[0.88] sm:text-[6rem] md:text-[8.5rem] lg:text-[11rem] tracking-[-0.03em]`}>{title}</h1>
         <p className={`mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase ${s.heroCount}`}>{line}</p>
         <div className={`mt-8 md:mt-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-t ${s.heroRule} pt-5`}>
@@ -63,12 +63,12 @@ export default function ComingHero({ slides, title, line, count, children }: { s
   );
 }
 
-// Concept B: a circular "On the Horizon" stamp, a double hairline ring in the soft crimson tint, with the number
+// A circular "On the Horizon" stamp, a double hairline ring in the soft crimson tint, with the number
 // of entries set in the field (computed from the data). Decorative: the same count is in the line under the title.
 function HorizonStamp({ n }: { n: number }) {
   const ring = "ON THE HORIZON \u00B7 WHAT\u2019S COMING \u00B7 ";
   return (
-    <svg aria-hidden="true" viewBox="0 0 160 160" className={`${s.horizon} ${s.onlyB} absolute right-5 md:right-10 top-[118px] md:top-[200px] w-[96px] h-[96px] md:w-[148px] md:h-[148px] rotate-[-8deg]`}>
+    <svg aria-hidden="true" viewBox="0 0 160 160" className={`${s.horizon} absolute right-5 md:right-10 top-[118px] md:top-[200px] w-[96px] h-[96px] md:w-[148px] md:h-[148px] rotate-[-8deg]`}>
       <defs><path id="hz-ring" d="M80 80 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0" /></defs>
       <circle cx="80" cy="80" r="74" fill="none" stroke="currentColor" strokeWidth="0.9" />
       <circle cx="80" cy="80" r="69" fill="none" stroke="currentColor" strokeWidth="0.6" />

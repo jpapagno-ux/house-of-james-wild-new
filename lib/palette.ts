@@ -43,6 +43,13 @@ export const CRIMSON = { fill: "#8B2525", deep: "#6E1C1C" };
 /** The one gradient, Ink to Garnet: hero photo fades, the ticker band and the opening only. */
 export const GRADIENT = { stops: ["#1A1816", "#2E2B28", "#3A1C1F", "#5A1F23"], heroFade: "rgba(38,20,22,0.88)" };
 
+/** What's Coming (James approved on the design canvas, 2 Nov 2026): the only tints it adds to the house set, all on
+ *  dark grounds (the Ink to Garnet hero, the ticker band). Blush: the hero eyebrow and the board's offer "%";
+ *  blush soft: the hero count line; dot: the board's opening dots. Its oxblood corner guards are the gradient's
+ *  garnet stops (GRADIENT.stops[3] to [2]) and its numerals Warm Stone, so they need no token of their own.
+ *  scripts/check-palette.mjs holds components/coming and app/whats-coming to the house set plus these. */
+export const COMING_TINTS = { blush: "#E8C4C6", blushSoft: "#E9DCDD", dot: "#C24A4A" };
+
 /** The main action ("Plan with James"): crimson on Paper, white keylines on dark or photographs. */
 export const ACTION = { fill: CRIMSON.fill, hover: CRIMSON.deep };
 
@@ -66,9 +73,6 @@ export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */
 export const STAMP_AQUA = { onLight: "#1A8A8A", onDark: "#8FD6CF" };
-// Pearl (What's Coming concept B, 2 Nov 2026): cool silver-white type on the deep-sea gradients, never warm.
-// The brand contrast accent on dark is STAMP_AQUA.onDark. Mirrored as rgb() in components/coming/coming.module.css.
-export const PEARL = { ink: "#F2F5F7", soft: "#C7D3DB" };
 
 // River voyages (James, 2 Nov 2026), protected under the House Standard: their own set through the waters
 // context (.theme-waters-*), still no browns, golds or olives. Their buttons are squared like every other.

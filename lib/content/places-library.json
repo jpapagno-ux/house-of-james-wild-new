@@ -1,6 +1,17 @@
 {
  "places": [
   {
+   "slug": "alentejo",
+   "name": "Alentejo",
+   "ledgerId": "DST-2026-000098",
+   "parentSlug": "portugal",
+   "regionSlug": "europe",
+   "subtitle": "Évora, Estremoz and the Alqueva, Portugal",
+   "stays": [
+    "da-licenca"
+   ]
+  },
+  {
    "slug": "atacama",
    "name": "Atacama",
    "ledgerId": "DST-2026-000090",
@@ -23,6 +34,17 @@
    "subtitle": "Goriška Brda, Slovenia",
    "stays": [
     "alma-vista"
+   ]
+  },
+  {
+   "slug": "douro-valley",
+   "name": "Douro Valley",
+   "ledgerId": "DST-2026-000097",
+   "parentSlug": "portugal",
+   "regionSlug": "europe",
+   "subtitle": "The Alto Douro wine region, Portugal",
+   "stays": [
+    "six-senses-douro-valley"
    ]
   },
   {

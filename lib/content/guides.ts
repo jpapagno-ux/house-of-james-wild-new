@@ -28,7 +28,7 @@ export type Guide = {
   /** A Ledger chart inset (lib/charts/regions.json via IslandZoom) drawn under the facts: island groups too small for the country chart. */
   zoom?: "galapagos" | "rapa-nui";
   /** A flyover from the continent into a close chart (lib/content/flyovers.ts), drawn under the facts. */
-  flyover?: "atacama-uyuni" | "rapa-nui";
+  flyover?: "atacama-uyuni" | "rapa-nui" | "portugal";
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
   stays?: string[];
   /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
@@ -737,6 +737,127 @@ export const GUIDES: Record<string, Guide> = {
     sources: [
       { title: "Explora: Travesía Atacama–Uyuni", url: "https://www.explora.com/travesia-atacama-uyuni/" },
       { title: "Explora Uyuni in the Ledger", url: "/stays/explora-at-uyuni-flats" },
+    ],
+  },
+  // Portugal, destination-first (1 Nov 2026, Wave 1): two places, each with the stay the house selected, linked
+  // as one route and carrying the Europe → Portugal flyover. Travel facts from Visit Portugal, UNESCO and Dark
+  // Sky Alqueva; property facts from the stays' own records. James plans Dá Licença; he has not been yet.
+  alentejo: {
+    slug: "alentejo", region: "europe", country: "portugal", parent: "portugal", name: "Alentejo", path: "/destinations/europe/portugal/alentejo",
+    theme: "stays", stays: ["da-licenca"], flyover: "portugal",
+    proofEyebrow: "On the founder's list · not yet visited",
+    seo: {
+      title: "Alentejo Guide: Évora, Dark Sky Alqueva Stargazing & Where to Stay",
+      description: "The Alentejo, Portugal: olive and cork plains, white hill towns, Évora (UNESCO) and Dark Sky Alqueva, the world's first Starlight Tourism Destination. Best in spring and autumn, under two hours from Lisbon, with the stay the house has selected.",
+      keywords: ["Alentejo travel guide", "where to stay in the Alentejo", "Dark Sky Alqueva stargazing", "Évora UNESCO", "Alentejo boutique hotel", "Lisbon to Alentejo"],
+    },
+    eyebrow: "Destinations · Europe · Portugal",
+    h1: "Alentejo",
+    tagline: "Évora, Estremoz and the Alqueva, Portugal: wide plains, white towns and some of Europe's darkest skies",
+    slides: [],
+    slidesFromStay: { slug: "da-licenca", alt: "Dá Licença among the olive hills of the Alentejo, Portugal", credit: "Photograph courtesy of Dá Licença" },
+    answer: "The Alentejo is Portugal's great interior: rolling plains of olive groves, cork oaks and vineyards between Lisbon and the Spanish border, with white hill towns and the walled city of Évora, a UNESCO World Heritage site. To the south-east lies Dark Sky Alqueva, the first place in the world certified as a Starlight Tourism Destination, averaging some 286 clear nights a year. Spring and autumn are the months for it; summer is very hot. Estremoz is under two hours' drive from Lisbon, and three or four nights lets the quiet work.",
+    facts: [["Where", "Eastern Portugal, between Lisbon and the Spanish border"], ["Best time", "Spring (April to June) and autumn (September and October); summers are very hot"], ["Fly into", "Lisbon (LIS), then under two hours by road to Estremoz"], ["How long", "Three or four nights"], ["Night sky", "Dark Sky Alqueva: the first Starlight Tourism Destination, about 286 clear nights a year"], ["In the Ledger", "On the founder's list · James plans to visit Dá Licença"]],
+    proof: "James hasn't been to the Alentejo yet; Dá Licença is on his own list to visit. It is in the Ledger because the house's Portugal research and the stay's own record put it there, and the page says so plainly.",
+    months: [
+      { area: "Alentejo", note: "Best in spring and autumn · hot summers", months: M("gggBBBgggBBg") },
+    ],
+    airports: [["Lisbon (LIS)", "Humberto Delgado Airport, the gateway; under two hours by road to Estremoz"], ["Porto (OPO)", "For travellers pairing the Alentejo with the Douro"]],
+    transfers: [["Lisbon → Estremoz", "Under two hours by road"], ["Estremoz → Évora", "About 45 minutes by road"], ["Alentejo → Douro", "About four hours by road, or via Lisbon and Porto"]],
+    highlights: [
+      { title: "Évora", line: "UNESCO, 1986", body: "A walled city with a Roman temple at its heart and whitewashed streets around it." },
+      { title: "Dark Sky Alqueva", line: "Stargazing", body: "The first Starlight Tourism Destination in the world: more than 10,000 square kilometres around the Alqueva lake, and about 286 clear nights a year." },
+      { title: "White towns and marble", line: "Estremoz, Elvas", body: "Hill towns of whitewash and marble, and the fortifications of Elvas, a UNESCO site on the border." },
+      { title: "Olives, cork and wine", line: "The plains", body: "Long lunches, estate wines and a landscape of olive groves and cork oaks that changes slowly with the light." },
+    ],
+    suits: [
+      { who: "Couples after silence", line: "An art-filled retreat among the olive hills.", href: "/stays/da-licenca", label: "Dá Licença" },
+      { who: "Stargazers", line: "Dark Sky Alqueva, the first Starlight Tourism Destination, to the south-east." },
+      { who: "Portugal in two chapters", line: "The Alentejo's plains and the Douro's terraces, through Lisbon and Porto.", href: "/destinations/europe/portugal", label: "Portugal" },
+    ],
+    howTo: {
+      title: "How to See the Alentejo",
+      intro: "Stay in one place and drive out. The towns, the wineries and the dark skies are all within reach of a quiet base.",
+      options: [
+        { name: "Three or four nights in the olive hills", body: "Évora for a day, Estremoz and Elvas for another, and a night under the Alqueva skies.", href: "#stays", label: "The stay the house selected" },
+        { name: "Pair it with the Douro", body: "North to the Douro's terraced vineyards for the second half of the trip.", href: "/destinations/europe/portugal/douro-valley", label: "The Douro Valley" },
+        { name: "Plan it with James", body: "Tell the house when you can travel and it will set the base, the nights and the order.", href: "/plan?place=Alentejo", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Continue through Portugal",
+    onward: [
+      { name: "Douro Valley", href: "/destinations/europe/portugal/douro-valley", line: "Terraced vineyards along the river, east of Porto" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "When is the best time to visit the Alentejo?", a: "Spring (April to June) and autumn (September and October), for warm days and green or golden plains. July and August are very hot; winter is quiet and mild." },
+      { q: "How far is the Alentejo from Lisbon?", a: "Close. Estremoz is under two hours by road from Lisbon and Évora about an hour and a half." },
+      { q: "What is Dark Sky Alqueva?", a: "A protected dark-sky area of more than 10,000 square kilometres around the Alqueva lake in the Alentejo, and the first place in the world certified as a Starlight Tourism Destination. It averages about 286 clear nights a year." },
+      { q: "Which UNESCO World Heritage sites are in the Alentejo?", a: "The Historic Centre of Évora (inscribed 1986) and the Garrison Border Town of Elvas and its Fortifications (2012)." },
+    ],
+    geo: { lat: 38.57, lng: -7.91 },
+    sources: [
+      { title: "Euronews: Europe's best stargazing destination is in Portugal", url: "https://www.euronews.com/travel/2026/05/28/europes-best-stargazing-destination-is-in-portugal" },
+      { title: "Dá Licença in the Ledger", url: "/stays/da-licenca" },
+    ],
+  },
+  "douro-valley": {
+    slug: "douro-valley", region: "europe", country: "portugal", parent: "portugal", name: "Douro Valley", path: "/destinations/europe/portugal/douro-valley",
+    theme: "stays", stays: ["six-senses-douro-valley"], flyover: "portugal",
+    proofEyebrow: "On the founder's list · not yet visited",
+    seo: {
+      title: "Douro Valley Guide: Best Time, the Harvest, Port Wine & Where to Stay",
+      description: "The Douro Valley, Portugal: the Alto Douro Wine Region (UNESCO), terraced vineyards along the river, Port and the harvest in September. How to get there from Porto, when to go and the stay the house has selected.",
+      keywords: ["Douro Valley travel guide", "best time to visit the Douro Valley", "Douro Valley hotel", "Douro harvest", "Porto to Douro Valley", "Alto Douro Wine Region"],
+    },
+    eyebrow: "Destinations · Europe · Portugal",
+    h1: "Douro Valley",
+    tagline: "The Alto Douro wine region, Portugal: terraced vineyards falling to the river, home of Port",
+    slides: [],
+    slidesFromStay: { slug: "six-senses-douro-valley", alt: "Six Senses Douro Valley above the river and the vineyards, Portugal", credit: "Photograph courtesy of Six Senses" },
+    answer: "The Douro Valley is the river valley east of Porto where Port has been made for centuries, its hillsides cut into terraces of vines. The Alto Douro Wine Region is a UNESCO World Heritage site, inscribed in 2001. Spring and autumn are the best months, and the harvest, usually in September, is the valley at its liveliest. It is about an hour and a half by road from Porto, or a slower and lovelier journey by train along the river. Three nights is right: a quinta or two, a day on the water, and long lunches above the vines.",
+    facts: [["Where", "Northern Portugal, along the Douro river east of Porto"], ["Best time", "April to June and September to November; the harvest is usually in September"], ["Fly into", "Porto (OPO), about an hour and a half by road"], ["How long", "Three nights"], ["UNESCO", "Alto Douro Wine Region, inscribed 2001"], ["In the Ledger", "Filed from the house's Portugal research · not yet founder-visited"]],
+    proof: "James hasn't stayed in the Douro yet. It is in the Ledger because the house's Portugal research and the stay's own record put it there; the page says so plainly.",
+    months: [
+      { area: "Douro Valley", note: "Best spring and autumn · harvest in September", months: M("gggBBBggBBBg") },
+    ],
+    airports: [["Porto (OPO)", "Francisco Sá Carneiro Airport, the gateway; about an hour and a half by road"], ["Lisbon (LIS)", "For travellers pairing the Douro with the Alentejo"]],
+    transfers: [["Porto → the Douro", "About an hour and a half by road, or by train along the river"], ["Douro → Alentejo", "About four hours by road, or via Porto and Lisbon"]],
+    highlights: [
+      { title: "The terraces", line: "UNESCO, 2001", body: "Hillsides cut into terraces of vines for centuries, falling steeply to the river." },
+      { title: "The harvest", line: "September", body: "The valley at its busiest and best, when the grapes come in at the quintas." },
+      { title: "The river", line: "By boat and by train", body: "A day on the water, or the railway that runs along the river bank east of Porto." },
+      { title: "Port and the quintas", line: "Tastings", body: "Wine estates on every bend, most of them happy to pour for visitors who book ahead." },
+    ],
+    suits: [
+      { who: "Wine lovers and couples", line: "A quinta above the river, with a spa and the vineyards around it.", href: "/stays/six-senses-douro-valley", label: "Six Senses Douro Valley" },
+      { who: "Wellness seekers", line: "Slow days among the vines, with time for the spa." },
+      { who: "Portugal in two chapters", line: "The Douro's terraces and the Alentejo's plains, through Porto and Lisbon.", href: "/destinations/europe/portugal", label: "Portugal" },
+    ],
+    howTo: {
+      title: "How to See the Douro Valley",
+      intro: "Stay in the valley rather than visiting from Porto. The light on the terraces at the end of the day is the reason to be there.",
+      options: [
+        { name: "Three nights in the valley", body: "A quinta or two, a morning on the river and long lunches above the vines; September if you want the harvest.", href: "#stays", label: "The stay the house selected" },
+        { name: "Pair it with the Alentejo", body: "South to the Alentejo's plains and dark skies for the second half of the trip.", href: "/destinations/europe/portugal/alentejo", label: "The Alentejo" },
+        { name: "Plan it with James", body: "Tell the house when you can travel and it will set the quinta, the nights and the order.", href: "/plan?place=Douro%20Valley", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Continue through Portugal",
+    onward: [
+      { name: "Alentejo", href: "/destinations/europe/portugal/alentejo", line: "Olive plains, white towns and the darkest skies in Portugal" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "When is the best time to visit the Douro Valley?", a: "April to June and September to November. The harvest, usually in September, is the liveliest time; summers are hot in the valley." },
+      { q: "How do you get from Porto to the Douro Valley?", a: "By road in about an hour and a half, or by train along the river, a slower and more scenic journey. Most quintas arrange transfers." },
+      { q: "Is the Douro Valley a UNESCO World Heritage site?", a: "Yes. The Alto Douro Wine Region was inscribed in 2001 for its terraced vineyard landscape, shaped by centuries of winemaking." },
+      { q: "How many days do you need in the Douro Valley?", a: "Three nights is right: time for a couple of quintas, a day on the river and an unhurried lunch above the vines." },
+    ],
+    geo: { lat: 41.16, lng: -7.79 },
+    sources: [
+      { title: "UNESCO: Alto Douro Wine Region", url: "https://whc.unesco.org/en/list/1046" },
+      { title: "Six Senses Douro Valley in the Ledger", url: "/stays/six-senses-douro-valley" },
     ],
   },
 };

@@ -1,0 +1,78 @@
+{
+  "exportedOn": "2026-11-01",
+  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs",
+  "records": [
+    {
+      "id": "EF-001",
+      "stayId": "STY-2026-000563",
+      "staySlug": "amangiri",
+      "stayName": "Amangiri",
+      "designationStatus": "designated",
+      "collectionNumber": 1,
+      "heroLine": "The building disappears. The landscape stays.",
+      "whyItMadeTheCut": [
+        "Place. Nine hundred acres of the Colorado Plateau with nothing built on the horizon but the horizon. Aman found the one fold in the rock where a resort could vanish, and put it there.",
+        "Design. Concrete poured the colour of the mesa, so the architecture reads as geology. You walk past it before you see it.",
+        "Privacy. Thirty-four suites, ten tents and two villas on land you could lose a town in. The quiet is the amenity."
+      ],
+      "jamesNote": {
+        "text": "I send people here when they tell me they want to be somewhere, not at something. If a group wants it entirely to themselves, Camp Sarika can be yours in full. The rest of Amangiri — ask me.",
+        "where": "Canyon Point",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "900 private acres of the Colorado Plateau, with the mesa as the only neighbour."
+        },
+        {
+          "key": "privacy",
+          "line": "34 suites and ten pavilions, no through-traffic, no lobby crowd."
+        },
+        {
+          "key": "design",
+          "line": "Concrete, glass and silence, poured around the rock rather than on top of it."
+        },
+        {
+          "key": "access",
+          "line": "Page airstrip 25 minutes away; slot canyons and a via ferrata on the property."
+        },
+        {
+          "key": "rarity",
+          "line": "There is no second Amangiri, and Aman is not building one."
+        }
+      ],
+      "pathwaysOverride": [
+        "off-the-map",
+        "the-art-of-stillness",
+        "above-it-all"
+      ],
+      "worthAnotherNight": "Four nights. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came.",
+      "whoItSuits": [
+        "Landscape-first travellers",
+        "Privacy seekers",
+        "Design travellers",
+        "Milestone trips",
+        "Couples",
+        "Travellers who value quiet"
+      ],
+      "whoItMayNotSuit": [
+        "Nightlife-focused travellers",
+        "Travellers wanting a large social resort",
+        "Travellers who prefer urban activity"
+      ],
+      "continueRefs": [
+        "stay:ulum-moab",
+        "pathway:off-the-map",
+        "pathway:the-art-of-stillness",
+        "pathway:above-it-all",
+        "compass"
+      ],
+      "selectionDate": "2026-11-01",
+      "paletteKey": "amangiri",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-01",
+      "reviewStatus": "approved"
+    }
+  ]
+}

@@ -19,6 +19,14 @@ export const UNESCO: UnescoSite[] = [
   { id: "1178", name: "Humberstone and Santa Laura Saltpeter Works", country: "chile", year: 2005, lat: -20.206, lng: -69.794 },
   { id: "1214", name: "Sewell Mining Town", country: "chile", year: 2006, lat: -34.084, lng: -70.384 },
   { id: "1634", name: "Chinchorro Culture, Arica and Parinacota", country: "chile", year: 2021, lat: -18.48, lng: -70.32 },
+  // Portugal (the flyover into Portugal, 1 Nov 2026)
+  { id: "263", name: "Monastery of the Hieronymites and Tower of Belém in Lisbon", country: "portugal", year: 1983, lat: 38.697, lng: -9.206 },
+  { id: "361", name: "Historic Centre of Évora", country: "portugal", year: 1986, lat: 38.571, lng: -7.909 },
+  { id: "723", name: "Cultural Landscape of Sintra", country: "portugal", year: 1995, lat: 38.787, lng: -9.39 },
+  { id: "755", name: "Historic Centre of Oporto", country: "portugal", year: 1996, lat: 41.141, lng: -8.611 },
+  { id: "866", name: "Prehistoric Rock Art Sites in the Côa Valley", country: "portugal", year: 1998, lat: 41.08, lng: -7.11 },
+  { id: "1046", name: "Alto Douro Wine Region", country: "portugal", year: 2001, lat: 41.13, lng: -7.42 },
+  { id: "1367", name: "Garrison Border Town of Elvas and its Fortifications", country: "portugal", year: 2012, lat: 38.881, lng: -7.163 },
   // Transnational
   { id: "1459", name: "Qhapaq Ñan, Andean Road System", country: "chile,bolivia,peru,ecuador,argentina,colombia", year: 2014, lat: null, lng: null },
 ];

@@ -100,3 +100,12 @@ test("the Salar de Uyuni is a place in Bolivia, linked across the border to the 
   assert.ok(g.onward!.some((o) => o.href === GUIDES.atacama.path));
   assert.ok(GUIDES.atacama.onward!.some((o) => o.href === g.path));
 });
+
+// Portugal (Wave 1, 1 Nov 2026): the Alentejo and the Douro, each with its selected stay, linked as one route.
+test("Portugal has the Alentejo and the Douro Valley, linked as one route", () => {
+  assert.deepEqual(placeGuides("portugal").map((x) => x.slug).sort(), ["alentejo", "douro-valley"]);
+  assert.equal(placeGuideForStay("da-licenca")?.slug, "alentejo");
+  assert.equal(placeGuideForStay("six-senses-douro-valley")?.slug, "douro-valley");
+  assert.ok(GUIDES.alentejo.onward!.some((o) => o.href === GUIDES["douro-valley"].path));
+  assert.ok(GUIDES["douro-valley"].onward!.some((o) => o.href === GUIDES.alentejo.path));
+});

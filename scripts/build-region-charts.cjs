@@ -52,6 +52,19 @@ const REGIONS = {
     route: [[-68.20,-22.91],[-67.80,-22.86],[-67.82,-22.80],[-67.78,-22.20],[-67.88,-22.05],[-67.98,-21.27],[-67.62,-20.24],[-66.83,-20.46]],
     marks: [["San Pedro de Atacama", -22.91, -68.2, "town"], ["Uyuni ✈", -20.46, -66.83, "town"], ["Calama ✈", -22.498, -68.904, "airport"], ["Laguna Colorada", -22.2, -67.78, "water"], ["Licancabur", -22.83, -67.88, "peak"]],
     unesco: ["420", "566", "1178", "1634"] },
+  // Portugal, closer (1 Nov 2026): the landing chart of the Europe flyover. The Douro wine region and Dark Sky
+  // Alqueva as dashed outlines (indicative), the two places' towns, and the UNESCO sites in the frame.
+  "portugal-close": { country: "portugal", hires: true, frame: [-10.6, 36.8, -4.9, 42.3], focus: ["Portugal"],
+    seas: [["Atlantic Ocean", 39.6, -10.0]],
+    countries: [["SPAIN", 40.1, -5.9]],
+    reserves: [
+      ["Douro wine region", [[-7.98,41.24],[-7.6,41.3],[-7.2,41.28],[-6.85,41.18],[-6.9,41.0],[-7.3,41.02],[-7.7,41.06],[-7.98,41.09]], [-7.45, 41.35]],
+      ["Dark Sky Alqueva", [[-7.75,38.62],[-7.25,38.6],[-7.05,38.35],[-7.15,38.05],[-7.55,37.98],[-7.85,38.2]], [-7.45, 38.0]],
+    ],
+    marks: [["Lisbon ✈", 38.72, -9.14, "town"], ["Porto ✈", 41.15, -8.61, "town"], ["Estremoz", 38.844, -7.586, "town"], ["Pinhão", 41.19, -7.546, "town"], ["Alqueva", 38.25, -7.42, "water"]],
+    unesco: ["263", "361", "723", "755", "866", "1046", "1367"],
+    // Short labels on the chart (the full names are listed beside it); "" = the mark alone, a town names it.
+    unescoLabels: { "263": "", "361": "Évora", "723": "Sintra", "755": "", "866": "Côa Valley", "1046": "Alto Douro", "1367": "Elvas" } },
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
@@ -89,7 +102,7 @@ function overlays(cfg, P) {
     route: cfg.route ? "M" + cfg.route.map((p) => P(p).join(",")).join("L") : null,
     marks: (cfg.marks || []).map(([text, lat, lng, kind]) => { const [x, y] = P([lng, lat]); return { text, x, y, kind }; }),
     countries: (cfg.countries || []).map(([text, lat, lng]) => { const [x, y] = P([lng, lat]); return { text, x, y }; }),
-    unesco: (cfg.unesco || []).map((id) => UNESCO.find((u) => u.id === id)).filter((u) => u && u.lat != null).map((u) => { const [x, y] = P([u.lng, u.lat]); return { id: u.id, name: u.name, label: u.name.replace(/^(City of |Historic City of |Historic Quarter of )/, "").split(/,| and /)[0].replace(/ Culture$/, ""), year: u.year, x, y }; }),
+    unesco: (cfg.unesco || []).map((id) => UNESCO.find((u) => u.id === id)).filter((u) => u && u.lat != null).map((u) => { const [x, y] = P([u.lng, u.lat]); return { id: u.id, name: u.name, label: cfg.unescoLabels && u.id in cfg.unescoLabels ? cfg.unescoLabels[u.id] : u.name.replace(/^(City of |Historic City of |Historic Quarter of )/, "").split(/,| and /)[0].replace(/ Culture$/, ""), year: u.year, x, y }; }),
   };
 }
 
@@ -155,7 +168,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
       areas: (cfg.areas || []).map(L),
     },
     lats, lngs,
-    ...(cfg.salt || cfg.unesco ? { overlays: overlays(cfg, P) } : {}),
+    ...(cfg.salt || cfg.unesco || cfg.reserves ? { overlays: overlays(cfg, P) } : {}),
   };
   console.log(slug, W, H, "focus:", [...focusNames].join(", "), "points:", raw.length);
 }

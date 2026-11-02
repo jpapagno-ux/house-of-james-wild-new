@@ -311,6 +311,17 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/tao-philippines", priority: 0.7, changeFrequency: "monthly" },
+  // The Indonesian fleets, partners and charter weeks (James approved, 2 Nov 2026).
+  { path: "/voyages/ships/rascal", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/rebel", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/el-aleph", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/silolona", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/si-datu-bua", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/celestia", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/indonesia/komodo-and-flores-charter", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/voyages/indonesia/raja-ampat-and-misool-charter", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/partners/rascal-voyages", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/silolona-sojourns", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-discoverer", priority: 0.7, changeFrequency: "monthly" },
   // Polar Crossings and the Antarctica21 voyages, and the Antarctica21 partner page (James, 2 Nov 2026).

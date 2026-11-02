@@ -1,0 +1,103 @@
+{
+ "id": "rascal-labuan-bajo-round-trip-4n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "Komodo National Park, 4 nights aboard Rascal",
+ "subtitle": "4 nights · Labuan Bajo round trip · Rascal",
+ "days": {
+  "1": "Labuan Bajo to Sebayor Island",
+  "2": "Sape Bay and the pink beaches",
+  "3": "Komodo Island, Siaba Besar and Gili Lawa Darat",
+  "4": "Taka Makassar, Tatawa Besar and Seraya",
+  "5": "Seraya to Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sebayor Island",
+   "lat": -8.505,
+   "lng": 119.712,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Sape Bay",
+   "lat": -8.56,
+   "lng": 119.33,
+   "mode": "sea",
+   "path": [
+    [
+     119.712,
+     -8.505
+    ],
+    [
+     119.33,
+     -8.56
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Komodo Island (Loh Liang)",
+   "lat": -8.567,
+   "lng": 119.505,
+   "mode": "sea",
+   "path": [
+    [
+     119.33,
+     -8.56
+    ],
+    [
+     119.505,
+     -8.567
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Taka Makassar",
+   "lat": -8.533,
+   "lng": 119.583,
+   "mode": "sea",
+   "path": [
+    [
+     119.505,
+     -8.567
+    ],
+    [
+     119.583,
+     -8.533
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "mode": "sea",
+   "path": [
+    [
+     119.583,
+     -8.533
+    ],
+    [
+     119.8877,
+     -8.4964
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

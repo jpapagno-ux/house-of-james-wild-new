@@ -40,7 +40,7 @@ export function ShipGrid({ cards }: { cards: ShipCardData[] }) {
   return (
     <>
       <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{cards.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>
-      <p className="mt-3 text-[12px] ledger-muted">{credits.length ? `Photographs: ${credits.join(", ")}. ` : ""}&ldquo;From&rdquo; is the lowest published fare per person, two sharing, for the cruise or voyage.</p>
+      <p className="mt-3 text-[12px] ledger-muted">{credits.length ? `Photographs: ${credits.join(", ")}. ` : ""}&ldquo;From&rdquo; is the lowest published fare per person, two sharing, for the cruise or voyage.{cards.some((c) => c.price?.label === "Yacht / night") ? " \u201cYacht / night\u201d is the operator's published rate for the whole yacht, a night, plus tax." : ""}</p>
     </>
   );
 }

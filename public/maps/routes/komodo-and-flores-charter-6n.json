@@ -1,0 +1,163 @@
+{
+ "id": "komodo-and-flores-charter-6n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "Komodo and Flores by Private Yacht",
+ "subtitle": "A typical week · 6 nights · from Labuan Bajo",
+ "days": {
+  "1": "Labuan Bajo to Sebayor",
+  "2": "Sape Bay and the pink beaches",
+  "3": "Komodo Island, Siaba Besar and Gili Lawa",
+  "4": "Gili Banta",
+  "5": "South Komodo and Manta Alley",
+  "6": "Taka Makassar, Tatawa Besar and Seraya",
+  "7": "Seraya to Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sebayor Island",
+   "lat": -8.505,
+   "lng": 119.712,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Sape Bay",
+   "lat": -8.56,
+   "lng": 119.33,
+   "mode": "sea",
+   "path": [
+    [
+     119.712,
+     -8.505
+    ],
+    [
+     119.33,
+     -8.56
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Komodo Island (Loh Liang)",
+   "lat": -8.567,
+   "lng": 119.505,
+   "mode": "sea",
+   "path": [
+    [
+     119.33,
+     -8.56
+    ],
+    [
+     119.505,
+     -8.567
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Gili Banta",
+   "lat": -8.414,
+   "lng": 119.315,
+   "mode": "sea",
+   "path": [
+    [
+     119.505,
+     -8.567
+    ],
+    [
+     119.315,
+     -8.414
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "South Komodo",
+   "lat": -8.74,
+   "lng": 119.43,
+   "mode": "sea",
+   "path": [
+    [
+     119.315,
+     -8.414
+    ],
+    [
+     119.43,
+     -8.74
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Taka Makassar",
+   "lat": -8.533,
+   "lng": 119.583,
+   "mode": "sea",
+   "path": [
+    [
+     119.43,
+     -8.74
+    ],
+    [
+     119.583,
+     -8.533
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "mode": "sea",
+   "path": [
+    [
+     119.583,
+     -8.533
+    ],
+    [
+     119.8877,
+     -8.4964
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart; days indicative",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   },
+   {
+    "text": "⚑ Siaba Besar",
+    "lat": -8.55,
+    "lng": 119.62,
+    "kind": "sea-small"
+   },
+   {
+    "text": "⚑ Gili Banta",
+    "lat": -8.414,
+    "lng": 119.315,
+    "kind": "sea-small"
+   },
+   {
+    "text": "⚑ Manta Alley",
+    "lat": -8.74,
+    "lng": 119.43,
+    "kind": "sea-small"
+   },
+   {
+    "text": "⚑ Taka Makassar",
+    "lat": -8.533,
+    "lng": 119.583,
+    "kind": "sea-small"
+   }
+  ]
+ }
+}

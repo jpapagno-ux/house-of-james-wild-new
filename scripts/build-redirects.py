@@ -64,6 +64,10 @@ def country_from_title(t):
 # Hand-mapped records whose old slug differs from the new one
 SPECIAL = {
     "aliikai-voyage": ("/voyages/ships/aliikai", "Aliikai vessel profile"),
+    # The Indonesian fleets (James, 2 Nov 2026): Rascal Voyages' record retired into three ships (its partner page).
+    "rascal-voyages": ("/partners/rascal-voyages", "Rascal Voyages fleet: Rascal, Rebel and El Aleph"),
+    "silolona-sojourns": ("/voyages/ships/silolona", "Silolona vessel profile"),
+    "celestia-yacht": ("/voyages/ships/celestia", "Celestia vessel profile"),
     "la-tahaa": ("/stays/le-tahaa", "renamed stay (slug typo), 2 Nov 2026"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
     "tswalu-motse": ("/safaris/tswalu-reserve/motse", "Tswalu camp"),

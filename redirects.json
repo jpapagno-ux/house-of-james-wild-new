@@ -168,5 +168,10 @@
     "source": "/stays/rayvadee-resort",
     "destination": "/stays/rayavadee",
     "statusCode": 301
+  },
+  {
+    "source": "/stays/la-tahaa",
+    "destination": "/stays/le-tahaa",
+    "permanent": true
   }
 ]

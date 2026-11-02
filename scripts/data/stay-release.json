@@ -1166,8 +1166,9 @@
    "batch": "2026-10-28 Tahiti"
   },
   {
-   "slug": "la-tahaa",
-   "batch": "2026-10-28 Tahiti"
+   "slug": "le-tahaa",
+   "batch": "2026-10-28 Tahiti",
+   "note": "Renamed from la-tahaa (typo), 2 Nov 2026; /stays/la-tahaa redirects."
   },
   {
    "slug": "pearl-resort-le-tikehau",
@@ -1928,6 +1929,18 @@
   {
    "slug": "el-nido-resorts-pangulasian-island",
    "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "intercontinental-tahiti-resort-spa",
+   "batch": "2026-11-02 French Polynesia"
+  },
+  {
+   "slug": "the-st-regis-bora-bora-resort",
+   "batch": "2026-11-02 French Polynesia"
+  },
+  {
+   "slug": "conrad-bora-bora-nui",
+   "batch": "2026-11-02 French Polynesia"
   }
  ]
 }

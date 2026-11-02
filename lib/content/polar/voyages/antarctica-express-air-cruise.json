@@ -1,0 +1,222 @@
+{
+ "slug": "antarctica-express-air-cruise",
+ "name": "Antarctica Express Air-Cruise",
+ "operatorName": "Antarctica Express Air-Cruise",
+ "operator": "Antarctica21",
+ "style": "fly-one",
+ "flight": "One way. Regular: sail south from Ushuaia, fly north to Punta Arenas. Reverse: fly south from Punta Arenas, sail north to Ushuaia. 2028-29: Punta Arenas round trip.",
+ "route": "Ushuaia to Punta Arenas",
+ "short": "Antarctica Express",
+ "nights": 5,
+ "nightsText": null,
+ "days": 6,
+ "daysText": null,
+ "start": {
+  "place": "Ushuaia, Argentina (regular) or Punta Arenas, Chile (reverse)",
+  "airportOrPort": "Port of Ushuaia (regular); Punta Arenas airport (reverse)"
+ },
+ "end": {
+  "place": "Punta Arenas, Chile (regular) or Ushuaia, Argentina (reverse)",
+  "airportOrPort": "Punta Arenas airport (regular); Port of Ushuaia (reverse)"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 88 on either ship",
+ "regions": [
+  "peninsula",
+  "patagonia"
+ ],
+ "length": "short",
+ "monthChips": [
+  "nov",
+  "mar"
+ ],
+ "months": [
+  "November",
+  "March"
+ ],
+ "seo": {
+  "title": "Antarctica Express Air-Cruise by Antarctica21: 6 Days",
+  "description": "Antarctica21's introductory trip: sail from Ushuaia past Cape Horn and across the Drake, land in the South Shetlands, then fly back to Punta Arenas. Six days, November and March.",
+  "keywords": [
+   "Antarctica Express Air-Cruise",
+   "short Antarctica cruise",
+   "Cape Horn and Antarctica",
+   "Antarctica21"
+  ]
+ },
+ "tagline": "Six days: Cape Horn, the Drake by sea, and a flight home.",
+ "answer": "The Antarctica Express Air-Cruise is Antarctica21's six-day, five-night introduction to Antarctica. On the regular route guests board in Ushuaia, sail the Beagle Channel to Cape Horn and across the Drake Passage to the South Shetland Islands, then fly from King George Island to Punta Arenas. A reverse route flies south first. It runs in November and March.",
+ "overview": [
+  "The one air-cruise that sails the Drake Passage. Antarctica21 positions it as an introductory option: two days crossing with lectures and seabirds, one day in the South Shetland Islands with a first penguin landing, then the flight north."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-express-air-cruise/1",
+  "alt": "Guests on a land excursion in an icy Antarctic landscape",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-express-air-cruise/1",
+   "alt": "Guests on a land excursion in an icy Antarctic landscape",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/antarctica-express-air-cruise/2",
+   "alt": "Chinstrap penguin standing on snowy ground under a bright sky",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Start of the air-cruise",
+   "place": "Ushuaia and the Beagle Channel",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Board in Ushuaia in the afternoon and sail the Beagle Channel toward Puerto Williams, then on toward Cape Horn."
+  },
+  {
+   "day": 2,
+   "title": "Cape Horn and the Drake Passage",
+   "place": "Cape Horn",
+   "lat": -55.98,
+   "lng": -67.27,
+   "summary": "A Zodiac landing at Cape Horn if the weather allows, then out into the Drake Passage."
+  },
+  {
+   "day": 3,
+   "title": "Drake Passage",
+   "place": "Drake Passage",
+   "lat": -58.5,
+   "lng": -65.0,
+   "summary": "Lectures on board and watching for seabirds and whales."
+  },
+  {
+   "day": 4,
+   "title": "Drake Passage and Antarctica",
+   "place": "South Shetland Islands",
+   "lat": -62.6,
+   "lng": -59.9,
+   "summary": "Arrival in the South Shetland Islands, first icebergs and a first landing at a penguin colony."
+  },
+  {
+   "day": 5,
+   "title": "Antarctica and return flight",
+   "place": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Disembark at Fildes Bay on King George Island and fly to Punta Arenas. One hotel night. Meals in Punta Arenas are not included."
+  },
+  {
+   "day": 6,
+   "title": "End of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Breakfast at the hotel, then a group transfer to Punta Arenas airport."
+  }
+ ],
+ "itineraryNote": "Regular route shown. Antarctica21 also publishes a reverse 'Fly South and Sail North' version and a 2028-29 Punta Arenas round trip with a flight to Puerto Williams on Day 1.",
+ "fromByShip": {
+  "magellan-explorer": 5995,
+  "magellan-discoverer": 8495
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2026-11",
+    "2027-03"
+   ],
+   "monthsText": "November, March",
+   "count": 2,
+   "prices": {},
+   "priceText": "From US$5,995 pp, triple occupancy (2026-27 season announcement)",
+   "status": null
+  },
+  {
+   "season": "2027-28",
+   "months": [
+    "2027-11",
+    "2028-03"
+   ],
+   "monthsText": "November, March",
+   "count": 2,
+   "prices": {
+    "magellan-explorer": 5995,
+    "magellan-discoverer": 8495
+   },
+   "priceText": null,
+   "status": null
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Group transfers in Punta Arenas between hotel and airport",
+  "One night with breakfast in Punta Arenas (Cabo de Hornos Hotel or similar)",
+  "Ship cruise and one way flight between King George Island and Punta Arenas",
+  "Buffet breakfast and lunch and a la carte dinner on board, with wine, beer, juice, soft drinks, coffee, tea, water and snacks",
+  "Loan of waterproof boots, contingency plan and the IAATO passenger fee",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Access to Explorers House in Punta Arenas"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Meals in Punta Arenas on the evening of the return flight",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)",
+  "Extra hotel nights (sold as a Hotel and Transfer Package)"
+ ],
+ "optional": [
+  {
+   "name": "Hotel and Transfer Package",
+   "note": "Extra nights at the Cabo de Hornos Hotel or similar with group transfers."
+  }
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate.",
+ "faqs": [
+  [
+   "Does the Antarctica Express cross the Drake Passage by sea?",
+   "Yes, one way. The regular route sails from Ushuaia across the Drake and flies back; the reverse route flies south and sails north."
+  ],
+  [
+   "How long is it?",
+   "Six days and five nights, with one day in the South Shetland Islands."
+  ],
+  [
+   "What if the return flight cannot go?",
+   "The ship keeps cruising until the flight is cleared. Antarctica21 states that no refund applies on itineraries that start in Ushuaia."
+  ],
+  [
+   "How much luggage can I take on the flight?",
+   "25 kg (55 lb) per person in total, hand luggage included, with no single item over 20 kg. Extra allowance cannot be bought. On the Classic and Polar Circle air-cruises, excess luggage is held in Punta Arenas until you return."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers testing the idea of Antarctica",
+   "line": "The shortest and lowest priced Antarctica21 trip."
+  },
+  {
+   "who": "Cape Horn collectors",
+   "line": "A landing at Cape Horn is attempted on Day 2."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-03"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/antarctica-express-air-cruise",
+  "https://www.antarctica21.com/antarctic-flights-guide"
+ ],
+ "checked": "2026-11-02"
+}

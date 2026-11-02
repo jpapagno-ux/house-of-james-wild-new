@@ -1,0 +1,251 @@
+{
+ "slug": "falklands-south-georgia",
+ "name": "Falklands and South Georgia",
+ "operatorName": "Falklands (Malvinas) & South Georgia",
+ "operator": "Antarctica21",
+ "style": "sail-both",
+ "flight": "None: sail both ways",
+ "route": "Punta Arenas round trip",
+ "short": "Falklands and South Georgia",
+ "nights": 16,
+ "nightsText": null,
+ "days": 17,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Port of Punta Arenas"
+ },
+ "end": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Port of Punta Arenas"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 96 on sea voyages",
+ "regions": [
+  "south-georgia-falklands"
+ ],
+ "length": "long",
+ "monthChips": [
+  "sep-oct"
+ ],
+ "months": [
+  "September",
+  "October"
+ ],
+ "seo": {
+  "title": "Falklands and South Georgia by Antarctica21: 17 Days",
+  "description": "A round trip from Punta Arenas to the Falklands and five days at South Georgia: king penguins, Grytviken, Gold Harbour and Salisbury Plain. September and October.",
+  "keywords": [
+   "Falklands and South Georgia cruise",
+   "South Georgia expedition",
+   "Antarctica21"
+  ]
+ },
+ "tagline": "Seventeen days for king penguins and the Falklands.",
+ "answer": "Falklands (Malvinas) and South Georgia is Antarctica21's seventeen-day, sixteen-night sea voyage, round trip from Punta Arenas. It calls at Saunders, West Point and Port Stanley, spends five days at South Georgia from Elsehul to Salisbury Plain, and stops at Bleaker Island on the way back. It sails in September and October with up to 96 guests.",
+ "overview": [
+  "A sub Antarctic voyage that does not go to the Antarctic continent. Five days at South Georgia make it the deepest South Georgia stay in the Antarctica21 programme."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia/1",
+  "alt": "King penguins standing on a wet sandy beach with waves behind",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia/1",
+   "alt": "King penguins standing on a wet sandy beach with waves behind",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/falklands-south-georgia/2",
+   "alt": "King penguins on grassy ground in front of a large colony",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Punta Arenas, embarkation",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Free time at Explorers House, afternoon transfer to the port, then the Strait of Magellan."
+  },
+  {
+   "day": 2,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -52.5,
+   "lng": -64.0,
+   "summary": "Lectures begin on the way to the Falklands."
+  },
+  {
+   "day": 3,
+   "title": "Saunders Island and West Point Island",
+   "place": "Saunders Island, Falklands",
+   "lat": -51.37,
+   "lng": -60.08,
+   "summary": "Rockhopper and gentoo penguins and nesting albatross; optional hike and tea at West Point."
+  },
+  {
+   "day": 4,
+   "title": "Port Stanley",
+   "place": "Port Stanley",
+   "lat": -51.6921,
+   "lng": -57.8589,
+   "summary": "Guided or self guided time among the town's memorials and museums."
+  },
+  {
+   "day": 5,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -53.5,
+   "lng": -46.0,
+   "summary": "Presentations on South Georgia; whale and seabird watching.",
+   "label": "Days 5 to 6"
+  },
+  {
+   "day": 7,
+   "title": "Elsehul Bay",
+   "place": "Elsehul Bay, South Georgia",
+   "lat": -54.02,
+   "lng": -37.98,
+   "summary": "Afternoon arrival, subject to conditions and government approval; possible evening Zodiac cruise."
+  },
+  {
+   "day": 8,
+   "title": "Grytviken and Fortuna Bay",
+   "place": "Grytviken",
+   "lat": -54.2811,
+   "lng": -36.5092,
+   "summary": "Customs, the museum and Shackleton's grave, then king penguins at Fortuna Bay or Stromness and an optional Shackleton walk."
+  },
+  {
+   "day": 9,
+   "title": "Gold Harbour and Drygalski Fjord",
+   "place": "Gold Harbour",
+   "lat": -54.62,
+   "lng": -35.93,
+   "summary": "King penguins, elephant seals and hanging glaciers; fjord cruise if the weather allows."
+  },
+  {
+   "day": 10,
+   "title": "St Andrews Bay and Ocean Harbour",
+   "place": "St Andrews Bay",
+   "lat": -54.43,
+   "lng": -36.18,
+   "summary": "Large king penguin colony, whaling remains and a shipwreck."
+  },
+  {
+   "day": 11,
+   "title": "Salisbury Plain",
+   "place": "Salisbury Plain",
+   "lat": -54.05,
+   "lng": -37.35,
+   "summary": "King penguins, weather permitting, then the route back toward the Falklands."
+  },
+  {
+   "day": 12,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -53.0,
+   "lng": -48.0,
+   "summary": "Education programme continues.",
+   "label": "Days 12 to 14"
+  },
+  {
+   "day": 15,
+   "title": "Bleaker Island",
+   "place": "Bleaker Island, Falklands",
+   "lat": -52.2,
+   "lng": -58.85,
+   "summary": "Evening landing at a bird reserve."
+  },
+  {
+   "day": 16,
+   "title": "At sea",
+   "place": "South Atlantic",
+   "lat": -52.8,
+   "lng": -64.0,
+   "summary": "Toward the Strait of Magellan."
+  },
+  {
+   "day": 17,
+   "title": "Punta Arenas, disembarkation",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Group transfer to the town centre."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {
+  "magellan-explorer": 10995,
+  "magellan-discoverer": 15995
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2026-09",
+    "2026-10"
+   ],
+   "monthsText": "September, October",
+   "count": null,
+   "prices": {
+    "magellan-explorer": 10995,
+    "magellan-discoverer": 15995
+   },
+   "priceText": null,
+   "status": null
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Access to Explorers House in Punta Arenas",
+  "Ship cruise per the programme",
+  "Guided shore excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch, a la carte dinner, wine, beer, juice, soft drinks, coffee, tea, water and snacks",
+  "Loan of waterproof boots, contingency plan and the IAATO passenger fee"
+ ],
+ "exclusions": [],
+ "optional": [
+  {
+   "name": "Hotel and Transfer Package"
+  }
+ ],
+ "children": "Sea voyages: minimum age 12, per Antarctica21's travel tips FAQ.",
+ "faqs": [
+  [
+   "Does this voyage go to Antarctica?",
+   "No. It covers the Falklands and South Georgia, round trip from Punta Arenas."
+  ],
+  [
+   "How many days at South Georgia?",
+   "Five, from Elsehul Bay on Day 7 to Salisbury Plain on Day 11."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "King penguin seekers",
+   "line": "Five days at South Georgia's largest colonies."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-06"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/falklands-south-georgia"
+ ],
+ "checked": "2026-11-02"
+}

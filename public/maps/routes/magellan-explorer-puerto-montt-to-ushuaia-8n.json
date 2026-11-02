@@ -1,0 +1,187 @@
+{
+ "id": "magellan-explorer-puerto-montt-to-ushuaia-8n",
+ "type": "voyage",
+ "destination": "polar",
+ "title": "Patagonia and Chilean Fjords aboard Magellan Explorer",
+ "subtitle": "8 nights · Puerto Montt to Ushuaia · Magellan Explorer",
+ "days": {
+  "1": "Embarkation",
+  "2": "Puyuhuapi Channel",
+  "3": "Moraleda Channel",
+  "4": "Gulf of Penas and Caleta Tortel",
+  "5": "Messier Channel and Pio XI Glacier",
+  "6": "Bernardo O'Higgins National Park",
+  "7": "Day at sea",
+  "8": "Beagle Channel and Garibaldi Fjord",
+  "9": "Disembarkation"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Puerto Montt",
+   "lat": -41.4693,
+   "lng": -72.9424,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Puyuhuapi",
+   "lat": -44.32,
+   "lng": -72.56,
+   "mode": "sea",
+   "path": [
+    [
+     -72.9424,
+     -41.4693
+    ],
+    [
+     -72.56,
+     -44.32
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Chonos Archipelago and San Rafael National Park",
+   "lat": -45.6,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -72.56,
+     -44.32
+    ],
+    [
+     -73.8,
+     -45.6
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Caleta Tortel",
+   "lat": -47.7966,
+   "lng": -73.5354,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -45.6
+    ],
+    [
+     -73.5354,
+     -47.7966
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Pio XI Glacier",
+   "lat": -49.2,
+   "lng": -74.0,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5354,
+     -47.7966
+    ],
+    [
+     -74.0,
+     -49.2
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Peel Fjord, Amalia or El Brujo Glacier",
+   "lat": -50.95,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -74.0,
+     -49.2
+    ],
+    [
+     -73.8,
+     -50.95
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Strait of Magellan, Francisco Coloane Marine Park",
+   "lat": -53.6,
+   "lng": -72.3,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -50.95
+    ],
+    [
+     -72.3,
+     -53.6
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Glacier Alley",
+   "lat": -54.85,
+   "lng": -69.9,
+   "mode": "sea",
+   "path": [
+    [
+     -72.3,
+     -53.6
+    ],
+    [
+     -69.9,
+     -54.85
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "mode": "sea",
+   "path": [
+    [
+     -69.9,
+     -54.85
+    ],
+    [
+     -68.303,
+     -54.8019
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Drake Passage",
+    "lat": -58.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Scotia Sea",
+    "lat": -57.0,
+    "lng": -45.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Antarctic Peninsula",
+    "lat": -67.0,
+    "lng": -63.5,
+    "kind": "region"
+   }
+  ]
+ }
+}

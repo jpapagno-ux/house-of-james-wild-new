@@ -1,0 +1,285 @@
+{
+ "slug": "polar-circle-air-cruise",
+ "name": "Polar Circle Air-Cruise",
+ "operatorName": "Polar Circle Air-Cruise",
+ "operator": "Antarctica21",
+ "style": "fly-both",
+ "flight": "Round trip: fly south, fly north",
+ "route": "Punta Arenas round trip",
+ "short": "Polar Circle",
+ "nights": 9,
+ "nightsText": null,
+ "days": 10,
+ "daysText": null,
+ "start": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "end": {
+  "place": "Punta Arenas, Chile",
+  "airportOrPort": "Punta Arenas airport (PUQ)"
+ },
+ "ships": [
+  "magellan-explorer",
+  "magellan-discoverer"
+ ],
+ "guests": "Up to 88 on either ship",
+ "regions": [
+  "peninsula",
+  "polar-circle"
+ ],
+ "length": "medium",
+ "monthChips": [
+  "feb"
+ ],
+ "months": [
+  "February"
+ ],
+ "seo": {
+  "title": "Polar Circle Air-Cruise by Antarctica21: 10 Days",
+  "description": "Fly over the Drake Passage from Punta Arenas, then sail the Antarctic Peninsula south toward the Polar Circle on an 88-guest Magellan ship. Ten days, February only.",
+  "keywords": [
+   "Polar Circle Air-Cruise",
+   "Antarctic Circle cruise",
+   "fly to Antarctica",
+   "Antarctica21",
+   "Magellan Discoverer",
+   "Magellan Explorer"
+  ]
+ },
+ "tagline": "Fly the Drake, then sail south toward 66 degrees 33 minutes.",
+ "answer": "The Polar Circle Air-Cruise is Antarctica21's ten-day, nine-night voyage from Punta Arenas, Chile. Guests fly about two hours to King George Island, then spend six days aboard Magellan Explorer or Magellan Discoverer, 88 guests at most, sailing the western Antarctic Peninsula and aiming far south toward the Polar Circle. It runs in February.",
+ "overview": [
+  "Antarctica21's longest air-cruise on the Peninsula. After the flight in, the ship spends Days 3 to 8 between the South Shetland Islands and the western Antarctic Peninsula, with daily Zodiac landings, small group hikes and exploratory Zodiac outings.",
+  "The route is set by ice and weather. Antarctica21 says it may include the Gerlache and Penola straits and Crystal Sound, with the goal of sailing far south toward the Polar Circle."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/polar-circle-air-cruise/3",
+  "alt": "Zodiac excursion among the ice in Antarctica",
+  "credit": "Antarctica21"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/polar-circle-air-cruise/1",
+   "alt": "Chinstrap penguin standing on snow with wings spread",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/polar-circle-air-cruise/2",
+   "alt": "Guests on snowshoes watching penguins on a snowy shore with icebergs beyond",
+   "credit": "Antarctica21"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/voyages/polar-circle-air-cruise/3",
+   "alt": "Zodiac excursion among the ice in Antarctica",
+   "credit": "Antarctica21"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "Start of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Arrive in Punta Arenas and transfer to the hotel. Check in at Explorers House before 2 PM for the mandatory briefing, then the welcome dinner."
+  },
+  {
+   "day": 2,
+   "title": "Scheduled flight to Antarctica",
+   "place": "King George Island, South Shetland Islands",
+   "lat": -62.2,
+   "lng": -58.96,
+   "summary": "A flight of about two hours to King George Island. Guests walk past Chile's Frei Station and Russia's Bellingshausen Station to the shore, then board the ship by Zodiac."
+  },
+  {
+   "day": 3,
+   "title": "Exploring Antarctica: South Shetland Islands",
+   "place": "South Shetland Islands",
+   "lat": -62.6,
+   "lng": -59.9,
+   "summary": "Landings and Zodiac cruises among the South Shetland Islands, chosen by the expedition team on the day.",
+   "indicative": true
+  },
+  {
+   "day": 4,
+   "title": "Exploring Antarctica: Gerlache Strait",
+   "place": "Gerlache Strait (possible)",
+   "lat": -64.55,
+   "lng": -62.45,
+   "summary": "Antarctica21 lists the Gerlache Strait as a possible route.",
+   "indicative": true
+  },
+  {
+   "day": 5,
+   "title": "Exploring Antarctica: Penola Strait",
+   "place": "Penola Strait (possible)",
+   "lat": -65.25,
+   "lng": -64.2,
+   "summary": "Antarctica21 lists the Penola Strait as a possible route.",
+   "indicative": true
+  },
+  {
+   "day": 6,
+   "title": "Exploring Antarctica: Crystal Sound",
+   "place": "Crystal Sound, toward the Polar Circle (possible)",
+   "lat": -66.4,
+   "lng": -66.6,
+   "summary": "The aim is to sail far south toward the Polar Circle, ice and weather permitting.",
+   "indicative": true
+  },
+  {
+   "day": 7,
+   "title": "Exploring Antarctica: western Peninsula",
+   "place": "Western Antarctic Peninsula",
+   "lat": -64.75,
+   "lng": -62.9,
+   "summary": "Northbound landings and Zodiac outings along the western Peninsula.",
+   "indicative": true
+  },
+  {
+   "day": 8,
+   "title": "Exploring Antarctica: South Shetland Islands",
+   "place": "South Shetland Islands",
+   "lat": -62.3,
+   "lng": -59.2,
+   "summary": "Back toward King George Island, with landings if conditions allow.",
+   "indicative": true
+  },
+  {
+   "day": 9,
+   "title": "Scheduled return flight",
+   "place": "King George Island to Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Fly from King George Island back to Punta Arenas and transfer to the hotel for the night. Meals in Punta Arenas that evening are at your own expense."
+  },
+  {
+   "day": 10,
+   "title": "End of the air-cruise",
+   "place": "Punta Arenas",
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "summary": "Breakfast at the hotel, then a group transfer to Punta Arenas airport."
+  }
+ ],
+ "itineraryNote": null,
+ "fromByShip": {
+  "magellan-explorer": 24995,
+  "magellan-discoverer": 34995
+ },
+ "departures": [
+  {
+   "season": "2026-27",
+   "months": [
+    "2027-02"
+   ],
+   "monthsText": "February",
+   "count": 2,
+   "prices": {},
+   "priceText": "From US$26,995 pp, triple occupancy (2026-27 season announcement)",
+   "status": null
+  },
+  {
+   "season": "2027-28",
+   "months": [
+    "2028-02"
+   ],
+   "monthsText": "February",
+   "count": 2,
+   "prices": {
+    "magellan-explorer": 24995,
+    "magellan-discoverer": 34995
+   },
+   "priceText": null,
+   "status": null
+  }
+ ],
+ "sailings": [],
+ "inclusions": [
+  "Pre and post voyage information",
+  "Group airport and hotel transfers in Punta Arenas on Day 1 and the last day",
+  "Welcome dinner at Explorers House",
+  "Two nights with breakfast at the Cabo de Hornos Hotel or similar",
+  "Round trip flight between Punta Arenas and King George Island and the ship cruise",
+  "Guided shore landings, Zodiac excursions, lectures and onboard entertainment",
+  "Buffet breakfast and lunch and a la carte dinner on board, with wine, beer, juice, soft drinks, coffee, tea and snacks",
+  "Contingency plan, loan of waterproof boots and the IAATO passenger fee",
+  "Access to Explorers House in Punta Arenas"
+ ],
+ "exclusions": [
+  "International flights to and from the gateway city",
+  "Meals in Punta Arenas on the evening of the return flight",
+  "Medical insurance with aero medical evacuation cover (required by Antarctica21)",
+  "Optional sea kayaking, hiking and snowshoeing (priced separately)",
+  "Extra hotel nights (sold as a Hotel and Transfer Package)"
+ ],
+ "optional": [
+  {
+   "name": "Sea kayaking",
+   "note": "Selected departures only. Up to 20 paddlers in two alternating groups of 10, per Antarctica21's 2027-28 season note."
+  },
+  {
+   "name": "Hiking and snowshoeing",
+   "note": "Small group led by a guide, selected departures only."
+  },
+  {
+   "name": "Hotel and Transfer Package",
+   "note": "Extra nights at the Cabo de Hornos Hotel or similar with group transfers."
+  }
+ ],
+ "children": "Air-cruises: children must be at least 8 years old, at least 1.20 m (3.9 ft) tall and weigh 30 kg or more, travel with a responsible adult who signs a waiver. Children under 12 receive a 5% discount on the per person rate.",
+ "faqs": [
+  [
+   "Do you cross the Antarctic Circle?",
+   "Antarctica21 describes the goal as sailing far south toward the Polar Circle, via waters that may include the Gerlache and Penola straits and Crystal Sound. Ice and weather decide how far the ship gets."
+  ],
+  [
+   "Do I have to sail the Drake Passage?",
+   "No. You fly over it both ways, about two hours from Punta Arenas to King George Island."
+  ],
+  [
+   "Which ships sail it?",
+   "Magellan Explorer and Magellan Discoverer, each with a maximum of 88 guests on air-cruises."
+  ],
+  [
+   "When does it run?",
+   "February. Antarctica21 announced two departures in each of the 2026-27 and 2027-28 seasons. Exact dates are not in the page text."
+  ],
+  [
+   "What happens if weather delays the flight?",
+   "Antarctica21 flies only when King George Island weather allows. Outbound, it keeps trying from Day 1 until 2 PM on Day 4, with Punta Arenas tours, meals and the Day 1 hotel covered while guests wait. If guests still cannot fly by then, the trip is cancelled and Antarctica21 refunds 100% of the cruise fare. On the way back, the ship keeps cruising until the flight is cleared, or guests fly up to a day early."
+  ],
+  [
+   "How much luggage can I take on the flight?",
+   "25 kg (55 lb) per person in total, hand luggage included, with no single item over 20 kg. Extra allowance cannot be bought. On the Classic and Polar Circle air-cruises, excess luggage is held in Punta Arenas until you return."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers who want more than the classic route",
+   "line": "Six days on the Peninsula and a push south toward the Polar Circle."
+  },
+  {
+   "who": "Anyone avoiding the Drake",
+   "line": "About two hours in the air each way."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-06",
+  "secondary": [
+   "PATH-04",
+   "PATH-03"
+  ]
+ },
+ "status": null,
+ "photoCredit": "Antarctica21",
+ "sources": [
+  "https://www.antarctica21.com/our-expeditions/polar-circle-air-cruise",
+  "https://www.antarctica21.com/journal/introducing-our-2027-28-antarctic-air-cruises",
+  "https://www.antarctica21.com/journal/announcing-our-2026-27-antarctic-air-cruise-season",
+  "https://www.antarctica21.com/antarctic-flights-guide",
+  "https://www.antarctica21.com/travel-tips-antarctica"
+ ],
+ "checked": "2026-11-02"
+}

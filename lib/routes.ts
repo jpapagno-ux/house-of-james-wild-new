@@ -52,6 +52,8 @@ export const BUILT: string[] = [
   "/voyages/amazon",
   "/voyages/galapagos",
   "/voyages/indonesia",
+  // Polar Crossings on this site: the Antarctica21 voyages (James, 2 Nov 2026)
+  "/voyages/polar",
   "/voyages/ships/nile-adventurer",
   "/voyages/ships/nile-seray",
   "/voyages/ships/sun-boat-iii",

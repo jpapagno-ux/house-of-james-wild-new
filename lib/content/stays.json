@@ -5,18 +5,16 @@
    "slug": "beyond-amazon-explorer",
    "name": "& Beyond Amazon Explorer",
    "ledgerId": "STY-2026-995556",
-   "country": "Brazil",
-   "countrySlug": "brazil",
+   "country": "Peru",
+   "countrySlug": "peru",
    "regionSlug": "south-america",
    "misfiled": null,
    "category": "lodge",
    "tagline": "A small-ship voyage into the Amazon’s hidden waterways.",
    "quote": "You wake to the river, not an alarm, and the forest is the first thing you hear.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/abedd9488_cc71c1a22_684d69778fbf35ca00918a57_494c0f04bc3e12b789100588c260a703.jpg",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f205aa08_06247b82e_684d698e7652007f82e1e866_Amandira-East-Indonesian-Archipelago-Upper-Deck-01-1024."
-   ],
-   "bestMonths": "July to December for drier trails and concentrated wildlife viewing; January to June for high-water canoeing and flooded-forest experiences.",
+   "gallery": [],
+   "bestMonths": "High water, December to June, takes the skiffs into flooded forest and lakes. Low water, July to early December, opens forest trails and oxbow lakes. The price is the same in both seasons.",
    "bestMonthsNote": null,
    "bestFor": [
     "honeymoon",
@@ -72,39 +70,39 @@
     }
    ],
    "facts": {
-    "best_months": "July to December for drier trails and concentrated wildlife viewing; January to June for high-water canoeing and flooded-forest experiences.",
-    "how_to_get_there": "Fly to Manaus, then join the vessel via an arranged transfer by road or river from the city; logistical details are coordinated by the operator.",
-    "who_its_for": "Travelers seeking intimate, expedition-style luxury: couples and honeymooners, small families with older children, solo travelers, adventure seekers and wildlife photographers.",
-    "signature_experiences": "Skiff and canoe excursions into narrow tributaries, dawn birding from the river, nocturnal spotlighting for caimans and night birds, visits to riverside communities."
+    "best_months": "High water, December to June, for flooded forest by skiff. Low water, July to early December, for forest trails, oxbow lakes, dolphins and wading birds. Same price in both seasons.",
+    "how_to_get_there": "Fly to Iquitos, Peru (arrive by 14:00). andBeyond transfers guests about two hours by road to Nauta, where the yacht boards. Cruises run 3, 4 or 7 nights, Nauta round trip.",
+    "signature_experiences": "Skiff outings into Pacaya-Samiria, guided forest walks, kayaking, night excursions and visits to riverside communities.",
+    "who_its_for": "Families with children 8 and over, couples on a first Amazon trip, and small groups who want the whole yacht."
    },
    "faqs": [
     {
-     "q": "What is & Beyond Amazon Explorer known for?",
-     "a": "& Beyond Amazon Explorer is known for intimate, small-ship voyages on the Amazon that combine wildlife-focused excursions, experienced naturalist guiding and immersive access to remote river channels."
+     "q": "Where does the andBeyond Amazon Explorer sail?",
+     "a": "In the Peruvian Amazon. She boards at Nauta, about two hours by road from Iquitos airport, and sails the Marañón, Ucayali and Amazon rivers in and around the Pacaya-Samiria National Reserve. She does not sail from Manaus in Brazil."
     },
     {
-     "q": "How many rooms does & Beyond Amazon Explorer have?",
-     "a": "The Amazon Explorer is an intimate river vessel with a limited number of cabins designed to keep group sizes small; contact & Beyond for current cabin configuration and maximum capacity."
+     "q": "When does she start sailing?",
+     "a": "andBeyond lists her launch as December 2026, with sailings from 15 December 2026."
     },
     {
-     "q": "What is the best time to visit & Beyond Amazon Explorer?",
-     "a": "For easier jungle trails and concentrated wildlife viewing, the drier months around July to December are often preferred; the higher-water season, roughly January to June, brings flooded-forest canoeing and different bird and fish activity."
+     "q": "How many guests and suites does she have?",
+     "a": "Up to 32 guests in 15 suites: 12 Luxury, 2 Superior and 1 Deluxe."
     },
     {
-     "q": "Is & Beyond Amazon Explorer good for families?",
-     "a": "Yes, the vessel can suit families, particularly those with older children who can participate in guided excursions; check age restrictions and activity suitability with & Beyond when booking."
+     "q": "High water or low water?",
+     "a": "High water, December to June, puts the skiffs into flooded forest and lakes such as El Dorado. Low water, July to early December, opens forest trails and oxbow lakes such as Clavero, and andBeyond rates it well for dolphins and wading birds. The price is the same."
     },
     {
-     "q": "How do you get to & Beyond Amazon Explorer?",
-     "a": "Most guests fly to Manaus, Brazil, and then join the vessel via transfers arranged by the operator; & Beyond coordinates logistics from Manaus to the boarding point."
+     "q": "What is included?",
+     "a": "Meals, soft drinks, house wine, local spirits and beer, laundry, Starlink internet, binoculars, all scheduled excursions, transfers between Iquitos airport and Nauta, and the Iquitos city tour. Flights, premium drinks, spa treatments, the floatplane and gratuities are extra."
     },
     {
-     "q": "Are meals and excursions included on the Amazon Explorer?",
-     "a": "Meals and scheduled daily excursions led by the on-board naturalist team are typically included; confirm inclusions and any optional activities with & Beyond when booking."
+     "q": "Can children come?",
+     "a": "Ages 8 and over on scheduled sailings, with a maximum of 8 children on board. Any age can sail on a private charter. Eight Luxury Suites connect in pairs for families."
     },
     {
-     "q": "What should I pack for a voyage on the Amazon Explorer?",
-     "a": "Pack light, breathable clothing, a waterproof jacket, insect repellent, binoculars and a good camera; bring sturdy shoes for short jungle walks and a compact daypack for excursions."
+     "q": "Is she wheelchair accessible?",
+     "a": "No. andBeyond lists her as not wheelchair accessible."
     }
    ],
    "reviewed": true,
@@ -114,8 +112,7 @@
    "pathway": {
     "primary": "PATH-01",
     "secondary": [
-     "PATH-04",
-     "PATH-06"
+     "PATH-04"
     ],
     "setting": "amazon",
     "intentions": [],
@@ -1817,6 +1814,131 @@
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "amangiri",
+   "name": "Amangiri",
+   "ledgerId": "STY-2026-000563",
+   "country": "Utah",
+   "countrySlug": "utah",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "The building disappears. The landscape stays.",
+   "quote": "I send people here when they tell me they want to be somewhere, not at something.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-hero-mesa-landscape",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-aerial-resort-in-rock",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-mesa-wing-slot-window",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/canyon-point-red-rock-golden-hour",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-desert-suite-window",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-slot-canyon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-via-ferrata-climb",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/lake-powell-from-the-air",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-riders-crossing-desert",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/usa/utah/amangiri/amangiri-exterior-dusk-pavilions"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "honeymoon",
+    "group_exclusive_use",
+    "adventure"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-01",
+   "coords": {
+    "lat": 37.0183,
+    "lng": -111.6165
+   },
+   "airport": "Page Municipal Airport (PGA)",
+   "airportDirections": "Page (PGA) is about 25 minutes by car, as stated by Aman.",
+   "founderNote": "Vetted by James. Not yet stayed; no founder stamp until he has.",
+   "rooms": {
+    "paras": [],
+    "items": [
+     "34 suites",
+     "Camp Sarika, ten tented pavilions, each with a private pool",
+     "Four-Bedroom Mesa Home, with a private infinity pool",
+     "Six-Bedroom Ridge Villa, on its own nine-acre plot"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Slot canyon walks",
+     "Via ferrata",
+     "Private air tours over Lake Powell",
+     "Lake Powell by boat",
+     "Horseback across the desert"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "More than 900 acres of the Colorado Plateau",
+     "Architecture poured low into the rock",
+     "Slot canyons on the property",
+     "Via ferrata routes on the formations",
+     "Camp Sarika can be taken in full",
+     "Spa and pool built around the rock"
+    ]
+   },
+   "onlyHere": [
+    "Amangiri sits on more than 900 acres of the Colorado Plateau at Canyon Point, in the far south of Utah. The resort has 34 suites; a short drive away are the ten tented pavilions of Camp Sarika, and there are two private homes, the four-bedroom Mesa Home and the six-bedroom Ridge Villa.",
+    "Camp Sarika can be bought out in full for a private celebration or retreat, as Aman states. For exclusive use of the whole of Amangiri, ask James; it is arranged directly with Aman and depends on the dates."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [
+    {
+     "q": "Why is Amangiri in The Exceptional Few?",
+     "a": "Place, design and privacy. Nine hundred acres of the Colorado Plateau with nothing built on the horizon; concrete poured the colour of the mesa, so the architecture reads as geology; thirty-four suites, ten tents and two villas on land you could lose a town in."
+    },
+    {
+     "q": "Can you take Amangiri privately?",
+     "a": "Camp Sarika, the ten tented pavilions, can be bought out in full for a private celebration or retreat, as Aman states. For exclusive use of the whole of Amangiri, ask James; it is arranged directly with Aman and depends on the dates."
+    },
+    {
+     "q": "How do you get to Amangiri?",
+     "a": "Fly into Page (PGA), about 25 minutes by car, as stated by Aman. James arranges the car with your booking."
+    },
+    {
+     "q": "Is Amangiri worth another night?",
+     "a": "Four nights. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came."
+    },
+    {
+     "q": "Who is Amangiri less ideal for?",
+     "a": "Nightlife-focused travellers, travellers wanting a large social resort, and travellers who prefer urban activity. If that's you, the Human Compass will point you somewhere that is."
+    },
+    {
+     "q": "How do I book Amangiri?",
+     "a": "Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-05",
+     "PATH-03"
+    ],
+    "setting": "desert",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-01"
    },
    "volumes": [
     "stays"
@@ -4819,8 +4941,19 @@
    "category": "hotel",
    "tagline": "A Caribbean beachfront resort where luxury merges with nature.",
    "quote": "The most meaningful journeys begin when luxury becomes simplicity.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/443e033cd_056411c40_682f2ffe35dc4f105ef78444_6b2bqM0tPEEz7VwLHj6BtOtlVg.webp",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/be-tulum/g10"
+   ],
    "bestMonths": "November - May",
    "bestMonthsNote": "The best time to visit Be Tulum is between November and May when Riviera Maya experiences warm temperatures, low rainfall, gentle sea breezes and abundant sunshine. These months are ideal for enjoying the beach, wellness experiences, outdoor dining, cycling through Tulum, and exploring nearby cenotes and Mayan archaeological sites.",
    "bestFor": [
@@ -6586,8 +6719,19 @@
    "category": "lodge",
    "tagline": "A private seafront retreat between the Caribbean and the Sian Ka'an lagoon.",
    "quote": "Disconnect from the ordinary and discover a place where luxury exists in harmony with untouched nature.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/casa-maya-kaan/hero",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-maya-kaan/g10"
+   ],
    "bestMonths": "November - April",
    "bestMonthsNote": "These months offer warm temperatures, lower humidity and calmer Caribbean waters, creating ideal conditions for boating, snorkeling, paddleboarding, wildlife observation and enjoying the secluded beaches of the Sian Ka'an Biosphere Reserve. The dry season also provides exceptional opportunities to experience the reserve's rich biodiversity in comfortable weather.",
    "bestFor": [
@@ -6924,18 +7068,18 @@
    "category": "hotel",
    "tagline": "“A Hacienda in the Wild. Your Sanctuary in the Mayan Forest”",
    "quote": "Lose track of time, awaken your senses, and let the forest become your guide.",
-   "hero": "/img/b44/c199ad3d6_5b561d6e3_68e15309a1e9b286885391e7_chable_yucatan_overview.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/hero",
    "gallery": [
-    "/img/b44/71bc273b0_32aa4d5b3_68e1567254d6ce41f9c6e313_chable_yucatan_pool.avif",
-    "/img/b44/f2427e909_65b5889b8_68e15672dcdc5d1597006528_chable_yucatan_terrace_20_1_.avif",
-    "/img/b44/3e358b0f5_a11ce2bab_68e156724b00f3655a5f4a99_chable_yucatan_bar.avif",
-    "/img/b44/68948b658_c9a012cde_68e15672f0050bd55b943f40_chable_yucatan_pool2.avif",
-    "/img/b44/f8ff06a72_b59b3a5c4_68e15672758a8e7928e23432_chable_yucatan_restaurant.avif",
-    "/img/b44/09d55c7f3_6be13aba7_68e156723bc7ffd8ffcce482_chable_yucatan_presidential_villa_exterior_20_1_.avif",
-    "/img/b44/4e6214c0a_0e92e0999_68e15428bfead8fc0869c2d4_chable_yucatan_whystayhereimage.avif",
-    "/img/b44/4bc078ac4_fad9d406e_68e1540da0248cabd8c27285_chable_yucatan_adventures_20_1_.avif",
-    "/img/b44/2acfecc21_1850c29c2_68e15309a1e9b286885391e7_chable_yucatan_overview.avif",
-    "/img/b44/92b085986_7a16bd662_68e152cd1f12c7f04a7b11ec_chable_yucatan_facts.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chable-yucatan/g10"
    ],
    "bestMonths": "November-April",
    "bestMonthsNote": "These months fall in Yucatán’s dry season, with lower humidity, minimal rain, more comfortable temperatures, and excellent conditions for outdoor, wellness, and forest activities.",
@@ -8293,8 +8437,19 @@
    "category": "resort",
    "tagline": "An adults-only, all-inclusive private island off southern Belize.",
    "quote": "Here, the day follows the tide, the breeze and the water beyond your veranda.",
-   "hero": "https://www.cocoplumcay.com/wp-content/uploads/2020/04/aerial-coco-plum-cay-island.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/coco-plum-island-resort/g10"
+   ],
    "bestMonths": "Late November through May is generally Belize’s drier season. Conditions vary, and June through November is typically wetter.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -14244,8 +14399,19 @@
    "category": "lodge",
    "tagline": "A private 7,200-acre reserve in the Mountain Pine Ridge, with waterfalls and 100 miles of trails.",
    "quote": "A name can suggest seclusion, but the experience is shaped by the place itself.",
-   "hero": "https://www.hiddenvalleyinn.com/wp-content/uploads/2023/05/hero-image.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hidden-valley-lodge/g10"
+   ],
    "bestMonths": "Not confirmed. The lodge's precise location and seasonal experiences have not been provided.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -14594,8 +14760,19 @@
    "category": "hotel",
    "tagline": "Go deeper into the jungle, and come closer to yourself.",
    "quote": "Sometimes going somewhere new is really a way of returning to what matters.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/holistika/hero",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/holistika/g10"
+   ],
    "bestMonths": "November - April",
    "bestMonthsNote": "The drier months from November through April suit outdoor yoga, jungle walks and pool time.",
    "bestFor": [
@@ -14722,8 +14899,19 @@
    "category": "hotel",
    "tagline": "Private jungle villas designed for mindful luxury and meaningful escapes.",
    "quote": "Sometimes the greatest luxury is simply having space to reconnect with yourself.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/50610be76_98287db5a_6a4fc682b4035da3daa2ba25_hotel-bardo.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-bardo/g10"
+   ],
    "bestMonths": "November - May",
    "bestMonthsNote": "The dry season from November through May offers warm tropical weather, comfortable humidity and abundant sunshine, making it the ideal time to enjoy Hotel Bardo's outdoor wellness spaces, private plunge pools, yoga sessions and nearby beaches and cenotes. These months provide the perfect setting for a relaxing boutique escape immersed in nature.",
    "bestFor": [
@@ -14848,8 +15036,19 @@
    "category": "hotel",
    "tagline": "A design-led beach hotel on the Tulum coast, built around food, music and the sea",
    "quote": null,
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mexico/hotel-panamera/hero",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-panamera/g10"
+   ],
    "bestMonths": "November to April",
    "bestMonthsNote": "November to April is Tulum's dry season, with warm sea, lower humidity and the best beach days.",
    "bestFor": [
@@ -17163,8 +17362,19 @@
    "category": "resort",
    "tagline": "A quiet base for exploring Belize’s Maya heartland.",
    "quote": "At Ka’ana, the day can move from a rainforest trail to the stillness of a private garden.",
-   "hero": "https://www.kaanabelize.com/assets/images/hero-home.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ka-ana-resort/g10"
+   ],
    "bestMonths": "November to May",
    "bestMonthsNote": "These months fall during the dry season, offering the best weather for exploring Maya ruins and enjoying outdoor activities in the Cayo district.",
    "bestFor": [
@@ -17281,17 +17491,18 @@
    "category": "hotel",
    "tagline": "“Your private jungle sanctuary, where healing, connection, and adventure meet.”",
    "quote": "Leave the noise behind. Step into silence, nature, and your truest self.",
-   "hero": "/img/b44/0fc763c78_628b6d812_692ca55498d56de2a2069feb_8fb8976e-1.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/33b278116_76027898b_692c69943dfa7e7ea23c8476_439585181.jpg",
-    "/img/b44/47b393d56_50d70a3c0_692c69940ae08d76762fcf14_w1024h681x0y0-db464e43.avif",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2c49a3548_9040a759f_692c699466b7c7edf8275da9_kaaba-luum-hotel-retreat.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a473d7f7_c9429f9ea_692c696460478bcb07fd832c_kaaba-luum-hotel-retreat-1.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e38ffb9ed_04ff61baf_692c699497fc7af0a543cefd_1000_1729658591.jpg",
-    "/img/b44/d63abbab1_8bb82cc14_692c8b429d856e310b6d9a93_9f0d8de6.avif",
-    "/img/b44/95b83c800_90cdb9285_692c8b4230ae29e12479a82d_e6e0bc90.avif",
-    "/img/b44/da5ea836d_f9d390f45_692c8b4165ed6e597f3db514_e9566423.avif",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a5ae275ec_cdedec0fe_692c8b4230ae29e12479a83f_a2ac5eee.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kaaba-luum-mexico/g10"
    ],
    "bestMonths": "Nov - April",
    "bestMonthsNote": "This period covers the dry season in the Yucatán: ideal weather for both jungle immersion and coastal trips. Less rain means clearer cenotes, sunny beach days at Tulum/Akumal, and a comfortable jungle climate, perfect for combining wellness, adventure, and relaxation.",
@@ -20549,8 +20760,19 @@
    "category": "hotel",
    "tagline": "Where the Caribbean meets effortless luxury.",
    "quote": "Luxury becomes unforgettable when nature is your closest companion.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8332b1642_67d760173_6a4fc71336ef2bf35f1333e7_La-Valise-Aerial-Shot.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-valise-tulum/g10"
+   ],
    "bestMonths": "November to April",
    "bestMonthsNote": "These months provide warm tropical temperatures, refreshing Caribbean breezes, and generally drier weather, ideal for enjoying beachfront relaxation, ocean swimming, outdoor dining, wellness experiences, and exploring Tulum's natural beauty. The shoulder season in May also offers excellent conditions with fewer visitors while maintaining pleasant weather.",
    "bestFor": [
@@ -23801,8 +24023,19 @@
    "category": "resort",
    "tagline": "A barefoot hideaway on Belize’s northern reef.",
    "quote": "Here, the day moves between turquoise water, reef and the quiet rhythm of the shore.",
-   "hero": "https://thelightercollection.com/matachica/assets/images/hero.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/g10"
+   ],
    "bestMonths": "December to April",
    "bestMonthsNote": "These months offer the most optimal weather and conditions for a visit.",
    "bestFor": [
@@ -38388,8 +38621,19 @@
    "category": "lodge",
    "tagline": "A riverside jungle lodge in the Sibun River Valley, beneath the Sleeping Giant.",
    "quote": "Here, the rainforest sets the pace, with the Sleeping Giant rising beyond the trees.",
-   "hero": "https://www.sleepinggiantbelize.com/wp-content/uploads/2021/04/the-rainforest-lodge-at-sleeping-giant-hero.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sleeping-giant-rainforest-lodge/g10"
+   ],
    "bestMonths": "November to May is generally Belize’s drier season and a common choice for outdoor travel. Rain is possible year-round.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -40827,8 +41071,19 @@
    "category": "resort",
    "tagline": "An all-inclusive private island for 30 guests, nine miles off Dangriga.",
    "quote": "Here, the rhythm of the day follows the sea.",
-   "hero": "https://thatchcayebelize.com/wp-content/uploads/2022/05/Thatch-Caye-Resort-Overwater-Bungalow-1.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/g10"
+   ],
    "bestMonths": "December to May is generally Belize’s drier season and a popular time to visit. Conditions can vary by year.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -41714,8 +41969,19 @@
    "category": "lodge",
    "tagline": "A rainforest lodge where Belize’s wild heart meets Maya heritage.",
    "quote": "At Chaa Creek, the forest is not a backdrop, it is part of the stay.",
-   "hero": "https://chaacreek.com/wp-content/uploads/2024/05/Chaa-Creek-Hero.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-lodge-at-chaa-creek/g10"
+   ],
    "bestMonths": "November to May",
    "bestMonthsNote": null,
    "bestFor": [
@@ -48458,8 +48724,19 @@
    "category": "resort",
    "tagline": "Monolithic dome suites on the beach, a mile south of San Pedro.",
    "quote": "Here, the day moves between turquoise water, sea air, and the quiet of your own island retreat.",
-   "hero": "https://www.xanaduislandresort.com/wp-content/uploads/2022/09/hero-image.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/xanadu-island-resort/g10"
+   ],
    "bestMonths": "Not specified. Check seasonal conditions in Belize and confirm your dates with the resort.",
    "bestMonthsNote": null,
    "bestFor": [

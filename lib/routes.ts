@@ -118,6 +118,7 @@ export const STAY_SLUGS: string[] = [
   "alma-vista",
   "alya-catamaran-galapagos",
   "amandari",
+  "amangiri",
   "amazon-field-station-byinkaterra",
   "ambiente-tm-sedona",
   "amor-arenal",

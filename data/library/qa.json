@@ -109,6 +109,14 @@
    "released": false
   },
   {
+   "stay_id": "6ae8025a67479cbf03e91799",
+   "slug": "amangiri",
+   "name": "Amangiri",
+   "country": "Utah",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b8",
    "slug": "amankila",
    "name": "Amankila",
@@ -569,7 +577,7 @@
    "stay_id": "6a89a1b2ec5a3d5a71b977f9",
    "slug": "beyond-amazon-explorer",
    "name": "& Beyond Amazon Explorer",
-   "country": "Brazil",
+   "country": "Peru",
    "missing": [
     "coordinates"
    ],
@@ -974,8 +982,7 @@
    "name": "Coco Plum Island Resort",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -1609,8 +1616,7 @@
    "name": "Hidden Valley Lodge",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -1919,8 +1925,7 @@
    "name": "Ka'ana Resort",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -2566,8 +2571,7 @@
    "name": "Matachica Resort & Spa",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -3834,8 +3838,7 @@
    "name": "The Rainforest Lodge at Sleeping Giant",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -4035,9 +4038,7 @@
    "slug": "thatch-caye-resort",
    "name": "Thatch Caye Resort",
    "country": "Belize",
-   "missing": [
-    "own_photos"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4144,8 +4145,7 @@
    "name": "The Lodge at Chaa Creek",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -4810,8 +4810,7 @@
    "name": "Xanadu Island Resort",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },

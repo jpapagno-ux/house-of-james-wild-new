@@ -1390,7 +1390,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 36.232971,
+    "lng": -121.76275
+   },
    "airport": "Monterey Regional Airport (MRY), San Francisco International Airport (SFO), San Jose Mineta International Airport (SJC)",
    "airportDirections": "From Monterey Regional (MRY) → ~1 hour drive. From San Francisco (SFO) → ~2.5–3 hour drive,",
    "founderNote": null,
@@ -12513,7 +12516,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 0.133117,
+    "lng": 38.137183
+   },
    "airport": null,
    "airportDirections": null,
    "founderNote": null,
@@ -14818,10 +14824,7 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": {
-    "lat": -33.9072,
-    "lng": 19.1211
-   },
+   "coords": null,
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "Fly to Cape Town International Airport, 1 hour scenic drive to Franschhoek. Transfers and car hire available.",
    "founderNote": null,
@@ -21454,7 +21457,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.1,
+    "lng": 23.3
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -21872,7 +21878,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.5,
+    "lng": 23.6
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -22266,7 +22275,10 @@
    ],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -19.55,
+    "lng": 23.65
+   },
    "airport": "Maun Airport",
    "airportDirections": "Light aircraft transfer from Maun Airport to the local airstrip.",
    "founderNote": "First stayed with Kwando in 2012. Struck by the warmth of the service and by how intimate the locations are: fewer rooms, far fewer vehicles, and more wildlife, especially predators. That density of sightings for the price makes Kwando better value for the money than the larger branded safari circuits.",
@@ -23919,7 +23931,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -16.6833,
+    "lng": -151.4333
+   },
    "airport": "Raiatea Airport (RFP)",
    "airportDirections": "From Raiatea, the resort is reached via a ~35‑minute speedboat transfer. Alternatively, guests may fly by helicopter from Bora Bora (≈14 minutes) to enjoy a scenic approach.",
    "founderNote": null,
@@ -27833,7 +27848,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -8.5489,
+    "lng": 119.8559
+   },
    "airport": "Komodo International Airport (LBJ), Flores",
    "airportDirections": "6 km/15 min from LBJ to Labuan Bajo Harbor; port transfers via tender included. Ideal gateway for Komodo & Raja Ampat itineraries.",
    "founderNote": null,
@@ -29971,7 +29989,10 @@
    "bestFor": [],
    "status": "founder_vetted",
    "statusDate": "2017-01-01",
-   "coords": null,
+   "coords": {
+    "lat": -1.174167,
+    "lng": 35.074722
+   },
    "airport": "Preferred airstrip: Mara North Airstrip (Mara North)",
    "airportDirections": "losest arrival by light aircraft to Mara North Airstrip; from there, short game-drive (or boat/foot, depending on location) to camp. Ideal for seamless safari-arrival access.",
    "founderNote": "James has worked with Alex Walker since 2017; Serian's camps are vetted and Founder Favorites. Serian is our preferred fly-camping partner.",
@@ -32704,7 +32725,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 46.8985,
+    "lng": -113.9387
+   },
    "airport": "Nearest major: Missoula International Airport (MSO)",
    "airportDirections": "The resort is about a 35‑minute drive (or ≈ 35 mi northeast) from Missoula International Airport. Transfers to/from MSO are included in most home or tent bookings.",
    "founderNote": null,
@@ -37245,7 +37269,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -8.7123,
+    "lng": 119.7021
+   },
    "airport": "Komodo International Airport (LBJ); also reachable via Denpasar (DPS), Bali.",
    "airportDirections": "From LBJ: ~20 min drive to harbor, transfers included. From DPS: 1‑hr domestic flight to LBJ, then harbor pickup.",
    "founderNote": null,
@@ -42303,7 +42330,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 5.318,
+    "lng": 73.015
+   },
    "airport": "Velana International Airport (MLE)",
    "airportDirections": "A 30 minute seaplane flight from Velana International Airport (MLE) in Male direct to Soneva Fushi.",
    "founderNote": null,
@@ -42425,7 +42455,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 5.567,
+    "lng": 73.001
+   },
    "airport": "Velana International Airport (MLE)",
    "airportDirections": "Soneva Jani is in Noonu Atoll, home to Maafaru International Airport. Soneva does not publish the transfer time from Male on the pages read.",
    "founderNote": null,
@@ -42542,7 +42575,10 @@
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": 6.7,
+    "lng": 72.9
+   },
    "airport": "Velana International Airport (MLE)",
    "airportDirections": "A 75 minute seaplane flight direct from Velana International Airport (MLE) in Male, or a 55 minute private charter. Soneva also lists a 25 minute seaplane from Maafaru International Airport and a one hour speedboat from Kulhudhuffushi Airport.",
    "founderNote": null,
@@ -50130,8 +50166,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -20.4496,
-    "lng": 14.2998
+    "lat": -20.44944,
+    "lng": 14.3025
    },
    "airport": "Doro Nawas Airstrip, Twyfelfontein Airstrip",
    "airportDirections": "Fly to Windhoek, connect by light aircraft to Doro Nawas or Twyfelfontein Airstrip, 30 minute road transfer to camp",
@@ -50361,8 +50397,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -19.374,
-    "lng": 13.1501
+    "lat": -19.37444,
+    "lng": 13.15
    },
    "airport": "Hoanib Airstrip",
    "airportDirections": "Reached only by light aircraft with Wilderness Air, landing at the dedicated Hoanib Airstrip within the concession.",

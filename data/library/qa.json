@@ -77,9 +77,7 @@
    "slug": "alila-ventana-big-sur",
    "name": "Alila Ventana Big Sur",
    "country": "California",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1254,9 +1252,7 @@
    "slug": "elsas-kopje",
    "name": "Elsas Kopje Meru Kenya",
    "country": "Kenya",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -1599,7 +1595,9 @@
    "slug": "gorongosa-safaris",
    "name": "Gorongosa Safaris Mozambique",
    "country": "Mozambique",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2308,7 +2306,6 @@
    "name": "Kwando 4 Rivers Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2349,7 +2346,6 @@
    "name": "Kwando Mma Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2390,7 +2386,6 @@
    "name": "Kwando Rra Dinare Camp",
    "country": "Botswana",
    "missing": [
-    "coordinates",
     "own_photos"
    ],
    "released": true
@@ -2454,9 +2449,7 @@
    "slug": "la-tahaa",
    "name": "Le Taha’a by Pearl Resorts",
    "country": "Tahiti",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2869,9 +2862,7 @@
    "slug": "mutiara-laut",
    "name": "Mutiara Laut “Pearl of the Sea”",
    "country": "Indonesia",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2989,9 +2980,7 @@
    "slug": "ngare-camp-by-serian",
    "name": "Ngare Camp Serian",
    "country": "Kenya",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3260,9 +3249,7 @@
    "slug": "paws-up-resort",
    "name": "Paws Up Resort",
    "country": "Montana",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3706,9 +3693,7 @@
    "slug": "silolona-sojourns",
    "name": "Silolona Sojourns Indonesia",
    "country": "Indonesia",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4107,9 +4092,7 @@
    "slug": "soneva-fushi-maldives",
    "name": "Soneva Fushi",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4117,9 +4100,7 @@
    "slug": "soneva-jani-maldives",
    "name": "Soneva Jani",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4127,9 +4108,7 @@
    "slug": "soneva-secret-maldives",
    "name": "Soneva Secret",
    "country": "Maldives",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {

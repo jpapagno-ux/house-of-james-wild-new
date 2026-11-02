@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
+import { PathwayAdvisors } from "@/components/advisor/AdvisorChip";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
@@ -75,6 +76,7 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
           <HubSection eyebrow="On this pathway" title={items.length ? `${items.length} ${items.length === 1 ? "Entry" : "Entries"} in the Ledger, by Region` : "Filling From the Ledger"} id="entries-h">
             {items.length ? <PathwayCollection items={items} pathway={p} hrefFor={(x) => pathwayHref(x.key)} /> : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
           </HubSection>
+          <PathwayAdvisors pathwayId={p.id} className="mt-12 md:mt-16 border-t ledger-rule pt-8" />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
           <FaqBlock faqs={faqs} title={`Questions About ${p.name}`} />
           <HubSection eyebrow="Index" title="The Other Pathways" id="others-h"><PathwayIndex hrefFor={(x) => pathwayHref(x.key)} pictured={PATHWAY_LIST.map((x) => x.id)} /></HubSection>

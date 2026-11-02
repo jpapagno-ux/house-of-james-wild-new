@@ -132,7 +132,6 @@
    "name": "Amankila",
    "country": "Indonesia",
    "missing": [
-    "correct_hero_photo",
     "stay_copy"
    ],
    "released": false
@@ -143,7 +142,6 @@
    "name": "Amanwana",
    "country": "Indonesia",
    "missing": [
-    "correct_hero_photo",
     "stay_copy"
    ],
    "released": false
@@ -853,6 +851,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6ae881c8893ed417b706ce0c",
+   "slug": "casa-palopo",
+   "name": "Casa Palopó",
+   "country": "Guatemala",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8e5",
@@ -1973,6 +1981,17 @@
    "country": "Botswana",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae881c8893ed417b706ce0e",
+   "slug": "jicaro-island-lodge",
+   "name": "Jícaro Island Lodge",
+   "country": "Nicaragua",
+   "missing": [
+    "coming_soon",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a9c3ddc48b7e640309dbc18",
@@ -3897,7 +3916,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c1",
    "slug": "six-senses-uluwatu",
-   "name": "Six Senses Uluwatu Balir",
+   "name": "Six Senses Uluwatu Bali",
    "country": "Indonesia",
    "missing": [],
    "released": true
@@ -4673,6 +4692,16 @@
    "name": "Viceroy Bali Ubud's Sanctuary",
    "country": "Indonesia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae881c8893ed417b706ce0d",
+   "slug": "villa-bokeh",
+   "name": "Villa Bokéh",
+   "country": "Guatemala",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

@@ -7,7 +7,10 @@
 --   • Destinations needed by these entities, all draft, no DST IDs (the Library issues those).
 --   • Kayumanis: the three published Bali villas gain volume/destination/brand only
 --     (names untouched; the Jimbaran rename goes through a revision). Sanur is added with
---     its Library Ledger ID STY-2026-000547; Nanjing and Yangshuo get Partner Desk IDs.
+--     its Library Ledger ID STY-2026-000547 (published on /stays/kayumanis-sanur; D-01/D-20:
+--     an ID that already exists in the Library is carried over verbatim, never re-minted;
+--     STY-2026-800012 was minted for it in error on 1 Nov and is retired). Nanjing and
+--     Yangshuo are new, so their IDs come from private.next_ledger_id().
 --     All three new ones are draft + PUBLIC_SOURCE until Kayumanis confirms them.
 --   • Lion Sands: the reserve STY-2026-290658 stays the parent; four lodges, two
 --     villas (named "Villa", James 1 Nov 2026) and three treehouses are draft child entities with Partner Desk IDs.
@@ -70,6 +73,7 @@ insert into public.properties (legacy_cms_id, name, slug, category, country, cou
 select v.lid, v.name, v.slug, 'villa', v.country, v.cc, 'asia', 'draft', 'property', 'stays',
   (select id from public.brands where slug = 'kayumanis'), (select id from public.destinations where slug = v.dest), 'PUBLIC_SOURCE', '{}'::jsonb
 from (values
+  -- Library Ledger ID, copied from lib/content/stays.json (ledgerId) — not hand-typed, not minted.
   ('STY-2026-000547', 'Kayumanis Sanur Private Villa & Spa', 'kayumanis-sanur', 'Indonesia', 'ID', 'sanur')) v(lid, name, slug, country, cc, dest)
 where not exists (select 1 from public.properties where slug = v.slug);
 

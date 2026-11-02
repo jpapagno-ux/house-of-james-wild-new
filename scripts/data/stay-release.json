@@ -1864,6 +1864,14 @@
   {
    "slug": "one-only-kea-island",
    "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "casa-palopo",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "villa-bokeh",
+   "batch": "2026-11-02 library sync"
   }
  ]
 }

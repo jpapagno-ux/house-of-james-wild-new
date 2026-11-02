@@ -68,3 +68,12 @@ test("the old Polar Circle page 301s to its polar page", () => {
   assert.equal(r?.destination, "/voyages/polar/polar-circle-air-cruise");
   assert.equal(r?.statusCode, 301);
 });
+
+test("every polar voyage, every ship page and the partner page are in LIVE_ROUTES (the sitemap)", () => {
+  const site = readFileSync(new URL("lib/site.ts", root), "utf8");
+  const live = new Set([...site.matchAll(/\{ path: "([^"]+)"/g)].map((m) => m[1]));
+  for (const { v } of voyages) assert.ok(live.has(`/voyages/polar/${v.slug}`), v.slug);
+  for (const p of ["/voyages/polar", "/partners/antarctica21", "/voyages/rivers", "/voyages/sailing", "/voyages/expedition", "/voyages/charter", "/voyages/amazon", "/voyages/galapagos", "/voyages/indonesia"]) assert.ok(live.has(p), p);
+  const reg = readFileSync(new URL("lib/content/ships/registry.ts", root), "utf8");
+  for (const m of reg.matchAll(/\{ slug: "([^"]+)"[^\n]*\n[^\n]*page: true/g)) assert.ok(live.has(`/voyages/ships/${m[1]}`), m[1]);
+});

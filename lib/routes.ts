@@ -62,13 +62,13 @@ export const BUILT: string[] = [
   "/voyages/ships/sun-boat-iii",
   "/voyages/ships/sun-boat-iv",
   "/voyages/ships/zein-nile-chateau",
-  // andBeyond Amazon Explorer (filed 1 Nov 2026; out of LIVE_ROUTES until James signs her off)
+  // The Amazon ships (in LIVE_ROUTES since James approved publishing Voyages, 2 Nov 2026)
   "/voyages/ships/beyond-amazon-explorer",
   "/voyages/ships/aria-amazon",
   "/voyages/ships/delfin-iii",
   "/voyages/ships/anakonda-amazon-cruise",
   "/voyages/ships/amazon-clipper-premium",
-  // The Galapagos yachts (filed 1 Nov 2026; out of LIVE_ROUTES until James signs them off)
+  // The Galapagos yachts (in LIVE_ROUTES since James approved publishing Voyages, 2 Nov 2026)
   "/voyages/ships/ecoventura-origin-yacht",
   "/voyages/ships/ecoventura-theory-yacht",
   "/voyages/ships/ecoventura-evolve-yacht",

@@ -1,0 +1,138 @@
+{
+ "advisors": [
+  {
+   "slug": "james-papagno",
+   "ledgerId": "ADV-1982-000001",
+   "name": "James Papagno",
+   "pathways": [
+    "PATH-04",
+    "PATH-02",
+    "PATH-07"
+   ],
+   "volumes": [
+    "safaris",
+    "stays",
+    "voyages",
+    "gatherings",
+    "overland",
+    "europe"
+   ],
+   "countries": [
+    "south-africa",
+    "botswana",
+    "tanzania",
+    "kenya",
+    "zambia",
+    "indonesia",
+    "tahiti",
+    "mexico",
+    "utah"
+   ],
+   "partyTypes": [
+    "family",
+    "group"
+   ],
+   "languages": [
+    "English"
+   ],
+   "specialties": [
+    "First safaris",
+    "Private reserves",
+    "Small ships & sailing yachts",
+    "Islands & reefs",
+    "Family gatherings",
+    "Routes by road"
+   ],
+   "availability": "open",
+   "matchNote": null,
+   "confirmed": null,
+   "updated": "2026-11-01",
+   "marks": []
+  },
+  {
+   "slug": "kristina-larson",
+   "ledgerId": "ADV-2026-000001",
+   "name": "Kristina Larson",
+   "pathways": [
+    "PATH-04",
+    "PATH-08",
+    "PATH-02"
+   ],
+   "volumes": [
+    "safaris",
+    "stays",
+    "gatherings"
+   ],
+   "countries": [
+    "south-africa",
+    "botswana",
+    "kenya",
+    "tanzania"
+   ],
+   "partyTypes": [
+    "family",
+    "couple",
+    "friends"
+   ],
+   "languages": [],
+   "specialties": [
+    "Africa (her favourite)",
+    "Local cultures",
+    "Outdoor adventures",
+    "The people you meet along the way",
+    "Family journeys",
+    "Adventure & culture",
+    "Island escapes"
+   ],
+   "availability": "open",
+   "matchNote": null,
+   "confirmed": null,
+   "updated": "2026-11-01",
+   "marks": []
+  },
+  {
+   "slug": "anthony-papagno",
+   "ledgerId": "ADV-2026-000002",
+   "name": "Anthony Papagno",
+   "pathways": [
+    "PATH-04",
+    "PATH-03",
+    "PATH-02",
+    "PATH-01"
+   ],
+   "volumes": [
+    "voyages",
+    "stays",
+    "overland"
+   ],
+   "countries": [
+    "indonesia",
+    "ecuador-galapagos",
+    "costa-rica"
+   ],
+   "partyTypes": [],
+   "languages": [
+    "English"
+   ],
+   "specialties": [
+    "Nature & wildlife",
+    "Hikes & trails",
+    "Islands & reefs",
+    "Rainforest & cloud forest",
+    "Small ships & sailing yachts"
+   ],
+   "availability": "open",
+   "matchNote": null,
+   "confirmed": null,
+   "updated": "2026-11-01",
+   "marks": [
+    {
+     "ledgerId": "STY-2026-882896",
+     "mark": "Sailed It",
+     "when": "Nov 2024",
+     "note": "Raja Ampat aboard Aliikai with James, Nov 2024 (stated on his site profile)."
+    }
+   ]
+  }
+ ]
+}

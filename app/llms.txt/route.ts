@@ -12,7 +12,8 @@ import { HUBS, hubsForStay, transfersForStay, hubLabel, transferLine, KIND_LABEL
 import { recordHref } from "@/lib/ledger/urls";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { RESERVES } from "@/lib/content/reserves";
-import { ADVISORS, DEFAULT_ADVISOR } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor } from "@/lib/content/advisors";
+import { PATHWAY_NAMES } from "@/lib/compass/pathway-adapter";
 
 // llms.txt — a plain-language map of the house for AI assistants and answer
 // engines: who James is, what the Ledger standard means, where each volume
@@ -70,7 +71,23 @@ export function GET() {
     "",
     "## Advisors of the house (Advisor ID · name · what they carry)",
     // Real advisors only: stand-in profiles exist to test the layout and never reach an answer engine.
-    ...ADVISORS.filter((a) => a.desk && !a.sample && (a.profileHref || a.slug === DEFAULT_ADVISOR)).map((a) => `- ${a.desk!.adv} · [${a.name}](${absoluteUrl(a.profileHref ?? "/about/founder")}) · ${a.role}${a.desk!.specialties.length ? `: ${a.desk!.specialties.join(", ")}` : ""}`),
+    // Stage 4b: what they carry comes from the Library's Advisor DNA (what the advisor states), the Desk's list as fallback.
+    ...ADVISORS.filter((a) => (a.desk || a.dna) && !a.sample && (a.profileHref || a.slug === DEFAULT_ADVISOR)).map((a) => {
+      const specialties = a.dna?.specialties.length ? a.dna.specialties : a.desk?.specialties ?? [];
+      const countries = (a.dna?.countries ?? a.desk?.countries ?? []).map((c) => COUNTRIES.find((x) => x.slug === c)?.name ?? c.replace(/-/g, " ").replace(/\b\w/g, (ch) => ch.toUpperCase()));
+      const pathways = (a.dna?.pathways ?? []).map((p) => PATHWAY_NAMES[p as keyof typeof PATHWAY_NAMES] ?? p);
+      return `- ${a.ledgerId} · [${a.name}](${absoluteUrl(a.profileHref ?? "/about/founder")}) · ${a.role}${specialties.length ? `: ${specialties.join(", ")}` : ""}${countries.length ? ` · knows ${countries.join(", ")}` : ""}${pathways.length ? ` · pathways: ${pathways.join(", ")}` : ""}${a.line ? ` · in their words: "${a.line}"` : ""}`;
+    }),
+    "",
+    "## Who plans it, by country (the Ledger's answer; James heads every page while the house is in testing)",
+    ...COUNTRIES.map((c) => {
+      const { advisors } = advisorsFor({ countrySlug: c.slug });
+      const real = advisors.filter((a) => !a.sample);
+      const james = ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
+      const lead = JAMES_HEADS_EVERY_PAGE ? james : real[0] ?? james;
+      const others = real.filter((a) => a !== lead).slice(0, 3);
+      return `- ${c.name}${c.ledgerId ? ` (${c.ledgerId})` : ""}: ${lead.name} (${lead.ledgerId})${others.length ? `, with ${others.map((a) => `${a.name} (${a.ledgerId})`).join(", ")}` : ""}`;
+    }),
     "",
     "## Stays in the Ledger (Ledger ID · stay · country)",
     ...STAYS.filter((s) => pageReady(s) && s.ledgerId).map((s) => `- ${s.ledgerId} · [${s.name}](${absoluteUrl(recordHref("stay", s.slug))})${s.country ? ` · ${s.country}` : ""}${s.tagline ? `: ${s.tagline.replace(/^"|"$/g, "")}` : ""}`),

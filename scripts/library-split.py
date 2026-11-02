@@ -15,4 +15,6 @@ json.dump({"exportedAt": x["exportedAt"], "entities": x.get("impact_notes") or [
 # Stage 5 (Last Mile): approved arrival hubs and transfers; absent from older exports.
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("arrival_hubs") or []}, open(ROOT / "data/library/arrival-hubs.json", "w"), ensure_ascii=False)
 json.dump({"exportedAt": x["exportedAt"], "entities": x.get("transfers") or []}, open(ROOT / "data/library/transfers.json", "w"), ensure_ascii=False)
-print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films,", len(x.get("impact_notes") or []), "impact notes,", len(x.get("arrival_hubs") or []), "arrival hubs,", len(x.get("transfers") or []), "transfers, exported", x["exportedAt"])
+# Stage 4b: public advisors' DNA and their own marks; absent from older exports.
+json.dump({"exportedAt": x["exportedAt"], "entities": x.get("advisors") or []}, open(ROOT / "data/library/advisors.json", "w"), ensure_ascii=False)
+print(len(x["stays"]), "stays,", len(x["destinations"]), "destinations,", len(x.get("offers") or []), "offers,", len(x.get("films") or []), "films,", len(x.get("impact_notes") or []), "impact notes,", len(x.get("arrival_hubs") or []), "arrival hubs,", len(x.get("transfers") or []), "transfers,", len(x.get("advisors") or []), "advisors, exported", x["exportedAt"])

@@ -6,7 +6,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import ComingStamp from "./ComingStamp";
 import s from "./coming.module.css";
 import {
-  DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByRegionView, groupByYear, parseQuery, regionCounts, sortComing, toQuery, yearCounts,
+  DEFAULT_STATE, SORTS, STATUS_CHIPS, countryCounts, filterComing, groupByRegionView, groupByYear, parseQuery, regionCounts, sortComing, toQuery, yearCounts, viewStatus,
   type Group, type Sort, type ViewItem, type ViewState,
 } from "@/lib/content/coming-view";
 
@@ -117,8 +117,8 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
             <p className="ledger-display italic text-[2rem] md:text-[2.6rem] leading-tight">Nothing on the horizon matches that yet.</p>
             <p className="mt-4 text-[16px] ledger-muted">Try another country or year, or clear the filters to see everything filed.</p>
             <div className="mt-8 flex justify-center gap-3 flex-wrap">
-              <button type="button" className="ledger-btn ledger-btn--solid" onClick={() => update(clear)}>Clear the filters</button>
-              <Link href="/plan?from=whats-coming" className="ledger-btn">Ask James</Link>
+              <button type="button" className={`ledger-btn ledger-btn--solid ${s.primary}`} onClick={() => update(clear)}>Clear the filters</button>
+              <Link href="/plan?from=whats-coming" className={`ledger-btn ${s.secondary}`}>Ask James</Link>
             </div>
           </div>
         )}
@@ -142,8 +142,8 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
   return (
     <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}
       style={c.pathway ? { ["--pw" as string]: c.pathway.accent, ["--pw-text" as string]: c.pathway.text, ["--pw-tint" as string]: c.pathway.tint } : undefined}>
-      <div className={`lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
-        <div className={`${s.frame} ${s.frameB} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`} style={{ background: "var(--jw-sea-navy)" }}>
+      <div className={`${s.imgCol} lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
+        <div className={`${s.frame} ${s.frameBg} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`}>
           {c.hero ? (
             <>
               <Image src={c.hero.src} alt={c.hero.alt} fill quality={85} sizes="(min-width: 1400px) 800px, (min-width: 1024px) 58vw, 100vw" className="object-cover" />
@@ -155,11 +155,12 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
           </div>
         </div>
       </div>
-      <div className={`${s.panel} lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
-        <p className="font-mono text-[11px] tracking-[0.22em] uppercase ledger-muted">
-          {c.country ?? "The Ledger"}{c.ledgerId && <> &middot; <span className={`${s.idPill} ledger-crimson`}>{c.ledgerId}</span></>}
-        </p>
-        <h3 id={`${c.slug}-name`} className="ledger-display text-[2.3rem] md:text-[3.2rem] leading-[1.02] mt-3 tracking-[-0.01em]">
+      <div className={`${s.panel} ${s.textCol} lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
+        <div className={`${s.cardHead} flex items-baseline justify-between gap-3 font-mono text-[11px] tracking-[0.22em] uppercase`}>
+          <p className="ledger-muted">{c.country ?? "The Ledger"}<span className={s.onlyB}> &middot; {statusWord(c.status)}</span>{c.ledgerId && <span className={s.onlyA}> &middot;</span>}</p>
+          {c.ledgerId && <p className="ledger-crimson shrink-0">{c.ledgerId}</p>}
+        </div>
+        <h3 id={`${c.slug}-name`} className={`${s.nameB} ledger-display text-[2.3rem] md:text-[3.2rem] leading-[1.02] mt-4 tracking-[-0.01em]`}>
           {c.href ? <Link href={c.href} className="hover:underline underline-offset-[6px] decoration-1">{c.name}</Link> : c.name}
         </h3>
         {c.tagline && <p className={`${s.tagline} ledger-display italic text-[1.25rem] md:text-[1.45rem] leading-snug mt-3`}>{c.tagline}</p>}
@@ -167,7 +168,7 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
           <p className={`${s.line} font-mono text-[12px] tracking-[0.16em] uppercase`}>{c.line}</p>
           {c.countdown && <p className="font-mono text-[12px] tracking-[0.16em] uppercase ledger-muted">{c.countdown}</p>}
         </div>
-        {c.note && <p className="mt-5 text-[16.5px] leading-relaxed">{c.note}</p>}
+        {c.note && <p className={`${s.noteText} mt-5 text-[16.5px] leading-relaxed`}>{c.note}</p>}
         {(c.bestMonths || c.airport) && (
           <dl className="mt-6 grid sm:grid-cols-2 gap-4 text-[14.5px]">
             {c.bestMonths && <div><dt className="font-mono text-[10px] tracking-[0.2em] uppercase ledger-muted">Best months</dt><dd className="mt-1">{c.bestMonths}</dd></div>}
@@ -185,8 +186,8 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
           </div>
         )}
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          <Link href={c.plan} className="ledger-btn ledger-btn--solid">Plan with James</Link>
-          {c.href && <Link href={c.href} className="ledger-btn">View the stay</Link>}
+          <Link href={c.plan} className={`ledger-btn ledger-btn--solid ${s.primary}`}>Plan with James</Link>
+          {c.href && <Link href={c.href} className={`ledger-btn ${s.secondary}`}>View the stay</Link>}
         </div>
       </div>
     </article>
@@ -196,7 +197,7 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
 // No brand photograph yet: a Deep Sea colour field with the name set large, never a stand-in image.
 function ColourField({ c }: { c: ExplorerItem }) {
   return (
-    <div className="absolute inset-0 text-white flex flex-col justify-between p-6 md:p-10" style={{ background: `radial-gradient(120% 90% at 85% 10%, ${c.field.glow}, transparent 60%), linear-gradient(160deg, ${c.field.from}, ${c.field.to})` }}>
+    <div className={`${s.colourField} absolute inset-0 text-white flex flex-col justify-between p-6 md:p-10`} style={{ ["--f-from" as string]: c.field.from, ["--f-to" as string]: c.field.to, ["--f-glow" as string]: c.field.glow }}>
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full opacity-[0.18]" preserveAspectRatio="none" viewBox="0 0 400 250">
         {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M0 ${170 + i * 11} Q 100 ${164 + i * 11} 200 ${170 + i * 11} T 400 ${170 + i * 11}`} fill="none" stroke="white" strokeWidth="0.6" />)}
         <circle cx="300" cy="170" r="46" fill="none" stroke="white" strokeWidth="0.6" /><line x1="0" y1="170" x2="400" y2="170" stroke="white" strokeWidth="0.8" />
@@ -208,4 +209,9 @@ function ColourField({ c }: { c: ExplorerItem }) {
       </div>
     </div>
   );
+}
+
+/** "Opening" or "Being reimagined", from the same labels as the status chips. */
+function statusWord(status: string): string {
+  return STATUS_CHIPS.find((x) => x.key === viewStatus(status))?.label ?? "Opening";
 }

@@ -5,7 +5,7 @@ import { comingOn, whenLabel } from "@/lib/content/whats-coming";
 import { stayBoard } from "@/lib/content/board";
 import { countdown, sortComing, viewStatus } from "@/lib/content/coming-view";
 import { today } from "@/lib/dates";
-import { DEEP_SEA } from "@/lib/palette";
+import s from "./coming.module.css";
 
 // On a stay page that is itself coming (Singita Elela): "Opening 11 December 2026", the days to go, and
 // the board of the other openings in its region. Renders nothing for a stay that is open.
@@ -20,7 +20,7 @@ export default function ComingBanner({ slug }: { slug: string }) {
   const left = countdown(c.date, day);
   const board = stayBoard(sortComing(all, "soonest"), c, day);
   return (
-    <aside aria-label={`${c.name}: ${headline}`} className="text-white" style={{ background: `linear-gradient(100deg, ${DEEP_SEA.navy.fill}, ${DEEP_SEA.teal.fill})` }}>
+    <aside aria-label={`${c.name}: ${headline}`} className={`${s.banner} text-white`}>
       <div className="max-w-ledger mx-auto px-5 md:px-10 py-6 md:py-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-10">
         <div className="hidden md:block shrink-0"><ComingStamp status={c.status} date={c.date} id={`banner-${c.slug}`} size={104} rotate={-6} /></div>
         <div className="flex-1 min-w-0">

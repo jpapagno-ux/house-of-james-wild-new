@@ -96,7 +96,7 @@ export default function WhatsComingPage() {
       <LookScript />
       <SiteHeader overlay />
       <main id="main">
-        <ComingHero slides={slides} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
+        <ComingHero slides={slides} count={items.length} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
           <a href="#the-board" className={`${glass} self-start md:self-end`}>See every opening<span aria-hidden="true">&#8595;</span></a>
         </ComingHero>
         <div id="the-board"><ComingTicker entries={mainBoard(items, day)} label="Coming and on offer" more={false} /></div>
@@ -105,7 +105,7 @@ export default function WhatsComingPage() {
           <p className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 ledger-display italic text-[1.8rem]">Nothing is pencilled right now. New openings appear here as the brands announce them.</p>
         )}
 
-        <section className="bg-paper-card mt-10" aria-labelledby="faq-heading">
+        <section className={`${cs.faq} bg-paper-card`} aria-labelledby="faq-heading">
           <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-16 md:py-24 grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-4">
               <div className="mb-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "What's coming", path: PATH }]} /></div>
@@ -116,7 +116,7 @@ export default function WhatsComingPage() {
               <AnswerBlock label={`In short${years.length ? `, ${years.join(" and ")}` : ""}`}>{answer}</AnswerBlock>
               <ol className="mt-10 grid sm:grid-cols-3 gap-6">
                 {[["01", "Filed", "A lodge is announced or rebuilt; the house files it from the brand's own site, with a Ledger ID."], ["02", "Held", "Ask James to hold a place for the opening season. Nothing is booked until you approve a quote."], ["03", "Marked", "James stays. The pencil becomes a mark, with the year, or the page is quietly taken down."]].map(([k, t, l]) => (
-                  <li key={k} className="border-t-2 pt-3" style={{ borderColor: "var(--jw-action)" }}><span className="font-mono text-[13px]" style={{ color: "var(--jw-action)" }}>{k}</span><h3 className="ledger-display text-[1.35rem] mt-1">{t}</h3><p className="mt-1.5 text-[15px] ledger-muted leading-relaxed">{l}</p></li>
+                  <li key={k} className={`${cs.step} pt-3`}><span className={`${cs.stepNum} font-mono text-[13px]`}>{k}</span><h3 className="ledger-display text-[1.35rem] mt-1">{t}</h3><p className="mt-1.5 text-[15px] ledger-muted leading-relaxed">{l}</p></li>
                 ))}
               </ol>
               <p className="mt-10 text-[15px] ledger-muted">Looking for places already marked? <Link href="/safaris" className="underline underline-offset-4">The Safaris volume</Link> &middot; <Link href="/stays" className="underline underline-offset-4">The Ledger of stays</Link></p>

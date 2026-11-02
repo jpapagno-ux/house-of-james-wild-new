@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DEEP_SEA } from "@/lib/palette";
 import s from "./coming.module.css";
 
 export type HeroSlide = { slug: string; src: string; alt: string; credit: string | null; name: string; country: string | null; line: string; href: string };
@@ -19,12 +18,12 @@ function keyframes(n: number): string {
 @keyframes jwcCap{0%{opacity:1;visibility:visible;transform:none}${p(HOLD - 0.4)}{opacity:1;visibility:visible;transform:none}${p(HOLD + 0.4)}{opacity:0;visibility:hidden;transform:translateY(8px)}${p(T - 0.6)}{opacity:0;visibility:hidden;transform:translateY(8px)}100%{opacity:1;visibility:visible;transform:none}}`;
 }
 
-export default function ComingHero({ slides, title, line, children }: { slides: HeroSlide[]; title: string; line: string; children?: React.ReactNode }) {
+export default function ComingHero({ slides, title, line, count, children }: { slides: HeroSlide[]; title: string; line: string; count?: number; children?: React.ReactNode }) {
   const n = slides.length, T = n * HOLD;
   const delay = (i: number) => (i === 0 ? "0s" : `-${T - i * HOLD}s`);
   const anim = (name: string, i: number) => (n < 2 ? (name === "jwcKb" ? `jwcKb 24s ease-in-out infinite alternate` : "none") : `${name} ${T}s ${name === "jwcKb" ? "linear" : "ease-in-out"} ${delay(i)} infinite`);
   return (
-    <section className="relative h-[100svh] min-h-[560px] w-full overflow-hidden text-white" style={{ background: DEEP_SEA.navy.fill }} aria-labelledby="coming-title">
+    <section className={`${s.hero} relative h-[100svh] min-h-[560px] w-full overflow-hidden text-white`} aria-labelledby="coming-title">
       <style dangerouslySetInnerHTML={{ __html: keyframes(n) }} />
       <div className="absolute inset-0" aria-hidden={n ? undefined : true}>
         {slides.map((sl, i) => (
@@ -37,9 +36,9 @@ export default function ComingHero({ slides, title, line, children }: { slides: 
       </div>
       <div className={`absolute inset-0 ${s.heroShade}`} aria-hidden="true" />
       <div className="relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20">
-        <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}>James Wild &amp; Co &middot; Filed before they open</p>
+        <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}><span className={s.onlyB}>The Ledger &middot; What&rsquo;s Coming</span><span className={s.onlyA}>James Wild &amp; Co &middot; Filed before they open</span></p>
         <h1 id="coming-title" className={`${s.heroTitle} ledger-display mt-4 text-[4.1rem] leading-[0.88] sm:text-[6rem] md:text-[8.5rem] lg:text-[11rem] tracking-[-0.03em]`}>{title}</h1>
-        <p className="mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase text-white/90">{line}</p>
+        <p className={`mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase ${s.heroCount}`}>{line}</p>
         <div className={`mt-8 md:mt-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-t ${s.heroRule} pt-5`}>
           <div className="relative min-h-[3.6rem] md:min-h-[3.4rem] flex-1">
             {slides.map((sl, i) => (
@@ -56,7 +55,25 @@ export default function ComingHero({ slides, title, line, children }: { slides: 
       <a href="#the-board" className={`${s.cue} absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1 font-mono text-[10px] tracking-[0.3em] uppercase text-white/75`}>
         Scroll<span aria-hidden="true">&#8595;</span>
       </a>
+      {count ? <HorizonStamp n={count} /> : null}
       <div id="hero-end" className="absolute bottom-0 h-px w-full" aria-hidden="true" />
     </section>
+  );
+}
+
+// Concept B: a circular "On the Horizon" stamp, a double hairline ring in the soft crimson tint, with the number
+// of entries set in the field (computed from the data). Decorative: the same count is in the line under the title.
+function HorizonStamp({ n }: { n: number }) {
+  const ring = "ON THE HORIZON \u00B7 WHAT\u2019S COMING \u00B7 ";
+  return (
+    <svg aria-hidden="true" viewBox="0 0 160 160" className={`${s.horizon} ${s.onlyB} absolute right-5 md:right-10 top-[118px] md:top-[200px] w-[96px] h-[96px] md:w-[148px] md:h-[148px] rotate-[-8deg]`}>
+      <defs><path id="hz-ring" d="M80 80 m-58 0 a58 58 0 1 1 116 0 a58 58 0 1 1 -116 0" /></defs>
+      <circle cx="80" cy="80" r="74" fill="none" stroke="currentColor" strokeWidth="0.9" />
+      <circle cx="80" cy="80" r="69" fill="none" stroke="currentColor" strokeWidth="0.6" />
+      <circle cx="80" cy="80" r="46" fill="none" stroke="currentColor" strokeWidth="0.6" />
+      <text fill="currentColor" fontFamily="IBM Plex Mono, ui-monospace, monospace" fontSize="8.6" letterSpacing="2.2"><textPath href="#hz-ring">{ring}{ring}</textPath></text>
+      <text x="80" y="86" textAnchor="middle" fill="currentColor" fontFamily="Cormorant Garamond, Georgia, serif" fontSize="34">{n}</text>
+      <text x="80" y="102" textAnchor="middle" fill="currentColor" fontFamily="IBM Plex Mono, ui-monospace, monospace" fontSize="6.8" letterSpacing="1.8">FILED</text>
+    </svg>
   );
 }

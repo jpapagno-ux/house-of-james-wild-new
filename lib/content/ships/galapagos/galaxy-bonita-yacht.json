@@ -1,0 +1,412 @@
+{
+ "slug": "galaxy-bonita-yacht",
+ "name": "Galaxy Bonita",
+ "brandLine": "Galaxy Bonita",
+ "operator": "Galaxy Cruises",
+ "type": "motor yacht",
+ "waters": "Galapagos Islands",
+ "country": "Ecuador",
+ "status": "sailing",
+ "seo": {
+  "title": "Galaxy Bonita Yacht Galapagos: Cruises | James Wild & Co",
+  "description": "Galaxy Bonita, a 16-guest Galapagos family motor yacht with 8 cabins. 4-night Southern and Eastern and 6-night Western routes, all from Baltra.",
+  "keywords": [
+   "Galaxy Bonita",
+   "Bonita yacht Galapagos",
+   "Galaxy Cruises Bonita",
+   "Galapagos family yacht",
+   "16 guest Galapagos yacht",
+   "budget Galapagos cruise",
+   "Galapagos cruise 2026"
+  ]
+ },
+ "tagline": "A 16-guest family yacht with three routes, all from Baltra.",
+ "answer": "Galaxy Bonita is a 16-guest motor yacht that Galaxy Cruises calls a family cruise yacht, with 8 cabins, 9 crew, a cruise director and one bilingual naturalist guide. Every route starts and ends at Baltra: a 6-night Western Route and 4-night Southern and Eastern routes, from US$2,900 per person in 2026. Children over 6 on shared departures.",
+ "facts": [
+  [
+   "Cabins",
+   "8, in three types (counts not published)"
+  ],
+  [
+   "Guests",
+   "16"
+  ],
+  [
+   "Crew",
+   "9, plus a cruise director"
+  ],
+  [
+   "Naturalist guides",
+   "1 bilingual (English and Spanish)"
+  ],
+  [
+   "Category",
+   "Naturalist cruise (Galaxy's label; no class grade on the page)"
+  ],
+  [
+   "Routes",
+   "Western 6 nights, Southern 4 nights, Eastern 4 nights, all Baltra round trips"
+  ],
+  [
+   "Wi-Fi",
+   "Listed, no details"
+  ],
+  [
+   "Children",
+   "Over 6 on shared departures; any age on charter (Galaxy terms)"
+  ]
+ ],
+ "overview": [
+  "Galaxy Bonita is a motor yacht that Galaxy Cruises describes as a family cruise yacht. She takes 16 guests in eight cabins of three types.",
+  "On board there is a sundeck with 360-degree views, relaxation areas, an indoor dining room, a 24-hour coffee and tea station and a bar. Kayaks, paddleboards, snorkel gear and wetsuits are included.",
+  "Every route starts and ends at Baltra. The 6-night Western Route covers Santiago, western Isabela, Fernandina and the Santa Cruz highlands. The 4-night Southern Route covers Floreana, Espanola and San Cristobal. The 4-night Eastern Route covers South Plaza, Genovesa, Santiago and Bartolome."
+ ],
+ "why": [
+  "The most affordable boat in this set, at US$2,900 per person for 4 nights in 2026, and Galaxy pitches her at families.",
+  "All three routes start at Baltra, so they join easily: Southern plus Eastern gives 8 nights covering the south and Genovesa."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/hero",
+  "alt": "Galaxy Bonita yacht in the Galapagos"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g1",
+   "alt": "Galaxy Bonita exterior",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g2",
+   "alt": "Couple on the bow of Galaxy Bonita at sunset",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g3",
+   "alt": "Guest with a drink on the upper deck of Galaxy Bonita",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g4",
+   "alt": "Friends relaxing on the upper deck of Galaxy Bonita",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g5",
+   "alt": "Guests watching the sunset from Galaxy Bonita",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g6",
+   "alt": "Galapagos penguins on a rock",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g7",
+   "alt": "Galapagos sea lions on a rock",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g8",
+   "alt": "Blue-footed boobies on a rock at sunset",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g9",
+   "alt": "Blue-footed booby with Galaxy Bonita in the background",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/galaxy-bonita-yacht/g10",
+   "alt": "Birds over the ocean at sunset",
+   "credit": "Galaxy Cruises"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Cabin",
+   "count": 8,
+   "size": null,
+   "beds": "not published",
+   "deck": "not published",
+   "features": [
+    "Galaxy lists three cabin types without counts"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Itinerary A: Western Route, 6 nights",
+   "nights": 6,
+   "direction": "Baltra to Baltra, Sunday to Saturday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive Baltra airport, transfer to the yacht and Dragon Hill, Santa Cruz",
+     "place": "Santa Cruz",
+     "lat": -0.54,
+     "lng": -90.45,
+     "summary": "Morning: arrive Baltra airport, transfer to the yacht. Afternoon: Dragon Hill, Santa Cruz."
+    },
+    {
+     "day": 2,
+     "title": "Espumilla Beach or Buccaneer Cove and Egas Port",
+     "place": "Santiago",
+     "lat": -0.245,
+     "lng": -90.86,
+     "summary": "Morning: Espumilla Beach or Buccaneer Cove. Afternoon: Egas Port."
+    },
+    {
+     "day": 3,
+     "title": "Vicente Roca Point, Isabela and Espinoza Point, Fernandina",
+     "place": "Isabela",
+     "lat": -0.05,
+     "lng": -91.55,
+     "summary": "Morning: Vicente Roca Point, Isabela. Afternoon: Espinoza Point, Fernandina."
+    },
+    {
+     "day": 4,
+     "title": "Urbina Bay and Tagus Cove",
+     "place": "Isabela",
+     "lat": -0.37,
+     "lng": -91.23,
+     "summary": "Morning: Urbina Bay. Afternoon: Tagus Cove."
+    },
+    {
+     "day": 5,
+     "title": "Elizabeth Bay and Moreno Point",
+     "place": "Isabela",
+     "lat": -0.6,
+     "lng": -91.08,
+     "summary": "Morning: Elizabeth Bay. Afternoon: Moreno Point."
+    },
+    {
+     "day": 6,
+     "title": "Charles Darwin Station and Santa Cruz Highlands",
+     "place": "Santa Cruz",
+     "lat": -0.7432,
+     "lng": -90.3134,
+     "summary": "Morning: Charles Darwin Station. Afternoon: Santa Cruz Highlands."
+    },
+    {
+     "day": 7,
+     "title": "Twin Craters, Santa Cruz, then transfer to Baltra airport",
+     "place": "Santa Cruz",
+     "lat": -0.63,
+     "lng": -90.34,
+     "summary": "Morning: Twin Craters, Santa Cruz, then transfer to Baltra airport."
+    }
+   ]
+  },
+  {
+   "name": "Itinerary B: Southern Route, 4 nights",
+   "nights": 4,
+   "direction": "Baltra to Baltra, Saturday to Wednesday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive Baltra airport, transfer to the yacht and Santa Cruz Highlands",
+     "place": "Santa Cruz",
+     "lat": -0.63,
+     "lng": -90.34,
+     "summary": "Morning: arrive Baltra airport, transfer to the yacht. Afternoon: Santa Cruz Highlands."
+    },
+    {
+     "day": 2,
+     "title": "Cormorant Point and Devil's Crown and Post Office Bay",
+     "place": "Floreana",
+     "lat": -1.24,
+     "lng": -90.43,
+     "summary": "Morning: Cormorant Point and Devil's Crown. Afternoon: Post Office Bay."
+    },
+    {
+     "day": 3,
+     "title": "Suarez Point and Gardner Bay and Osborn Islet",
+     "place": "Espanola",
+     "lat": -1.383,
+     "lng": -89.733,
+     "summary": "Morning: Suarez Point. Afternoon: Gardner Bay and Osborn Islet."
+    },
+    {
+     "day": 4,
+     "title": "Interpretation Center and Kicker Rock and Lobos Island",
+     "place": "San Cristobal",
+     "lat": -0.9017,
+     "lng": -89.6103,
+     "summary": "Morning: Interpretation Center and Kicker Rock. Afternoon: Lobos Island."
+    },
+    {
+     "day": 5,
+     "title": "Bachas Beach, Santa Cruz, then transfer to Baltra airport",
+     "place": "Santa Cruz",
+     "lat": -0.49,
+     "lng": -90.33,
+     "summary": "Morning: Bachas Beach, Santa Cruz, then transfer to Baltra airport."
+    }
+   ]
+  },
+  {
+   "name": "Itinerary C: Eastern Route, 4 nights",
+   "nights": 4,
+   "direction": "Baltra to Baltra, Wednesday to Sunday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive Baltra airport, transfer to the yacht and South Plaza",
+     "place": "South Plaza",
+     "lat": -0.5833,
+     "lng": -90.1667,
+     "summary": "Morning: arrive Baltra airport, transfer to the yacht. Afternoon: South Plaza."
+    },
+    {
+     "day": 2,
+     "title": "Black Turtle Cove and Santa Cruz Highlands",
+     "place": "Santa Cruz",
+     "lat": -0.49,
+     "lng": -90.33,
+     "summary": "Morning: Black Turtle Cove. Afternoon: Santa Cruz Highlands."
+    },
+    {
+     "day": 3,
+     "title": "Darwin Bay and El Barranco",
+     "place": "Genovesa",
+     "lat": 0.3167,
+     "lng": -89.9583,
+     "summary": "Morning: Darwin Bay. Afternoon: El Barranco."
+    },
+    {
+     "day": 4,
+     "title": "Sullivan Bay, Santiago and Bartolome",
+     "place": "Santiago",
+     "lat": -0.29,
+     "lng": -90.58,
+     "summary": "Morning: Sullivan Bay, Santiago. Afternoon: Bartolome."
+    },
+    {
+     "day": 5,
+     "title": "North Seymour, then transfer to Baltra airport",
+     "place": "North Seymour",
+     "lat": -0.3967,
+     "lng": -90.29,
+     "summary": "Morning: North Seymour, then transfer to Baltra airport."
+    }
+   ]
+  }
+ ],
+ "departures": [],
+ "pricesNote": "Per person, cruise only, USD, as published on galaxycruises.com/bonita-yacht on 2 Nov 2026, labelled 2026 price: Western (6 nights) US$4,350, Southern and Eastern (4 nights) US$2,900. Occupancy basis not stated. Dated departures were not captured: Galaxy's booking feed loads in the browser and could not be read on 2 Nov 2026. Galaxy publishes 2026 itinerary prices only on the yacht page; 2027 prices are not published there.",
+ "inclusions": [
+  "Airport assistance on the cruise start date",
+  "Bilingual (English and Spanish) naturalist guide",
+  "Cruise director and personalised crew service",
+  "All meals from lunch on day one to breakfast on the last day",
+  "A snack after each activity (except the last day) and a welcome cocktail",
+  "Unlimited purified water, coffee and tea",
+  "All visits, excursions and activities in the itinerary",
+  "Use of docks and ferries",
+  "Snorkel gear (mask, snorkel, fins) and wetsuits",
+  "Transport and refuelling in the Galapagos Marine Reserve",
+  "Airport to canal transport (Lobitos bus)",
+  "Kayaks and paddleboards in designated areas"
+ ],
+ "exclusions": [
+  "International flights to and from Ecuador",
+  "Flights between Quito or Guayaquil and the Galapagos",
+  "Galapagos National Park entrance fee, US$200 per person",
+  "Transit Control Card, US$20 per person",
+  "Alcoholic and soft drinks",
+  "Tips",
+  "Personal expenses",
+  "Travel insurance (Galaxy calls it highly recommended)"
+ ],
+ "children": "Galaxy Cruises' terms accept children over 6 on shared departures and children of any age on a full charter; under-12s share a cabin with an adult or sleep in a cabin next to their parents. The booking form prices children aged 6 to 11 separately. Galaxy calls Bonita a family cruise yacht.",
+ "faqs": [
+  [
+   "How many guests does Galaxy Bonita carry?",
+   "Sixteen, in eight cabins, with nine crew, a cruise director and one bilingual naturalist guide."
+  ],
+  [
+   "Where do Galaxy Bonita cruises start?",
+   "Every route starts and ends at Baltra."
+  ],
+  [
+   "Which routes does she sail?",
+   "A 6-night Western Route, a 4-night Southern Route and a 4-night Eastern Route with Genovesa."
+  ],
+  [
+   "How much does a Galaxy Bonita cruise cost?",
+   "Galaxy's 2026 prices are US$2,900 per person for 4 nights and US$4,350 for the 6-night Western Route. Flights and park fees are extra."
+  ],
+  [
+   "Is Galaxy Bonita good for families?",
+   "Galaxy calls her a family cruise yacht. Its terms accept children over 6 on shared departures and any age on a charter."
+  ],
+  [
+   "What is on board?",
+   "A 360-degree sundeck, an indoor dining room, a bar and a 24-hour coffee and tea station."
+  ],
+  [
+   "Can I charter her?",
+   "Galaxy's booking form offers a whole-boat charter; the price is quoted on request."
+  ],
+  [
+   "What is included?",
+   "Meals, snacks, water, coffee and tea, guided excursions, snorkel gear, wetsuits, kayaks and paddleboards, and airport transfers. Drinks, tips and park fees are extra."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Families",
+   "line": "Galaxy's family cruise yacht."
+  },
+  {
+   "who": "Budget-conscious travellers",
+   "line": "From US$2,900 for 4 nights."
+  },
+  {
+   "who": "Short trips",
+   "line": "4-night routes from Baltra."
+  },
+  {
+   "who": "Western islands seekers",
+   "line": "A 6-night Western Route."
+  }
+ ],
+ "sources": [
+  "https://galaxycruises.com/bonita-yacht",
+  "https://galaxycruises.com/assets/documents/en/b2b-info/bonita/bonita-guideline-en.pdf",
+  "https://galaxycruises.com/terms-and-conditions"
+ ],
+ "film": null,
+ "published": [
+  {
+   "year": "2026",
+   "rows": [
+    {
+     "length": "Western Route, 6 nights",
+     "nights": 6,
+     "prices": {
+      "Per person": 4350
+     }
+    },
+    {
+     "length": "Southern Route, 4 nights",
+     "nights": 4,
+     "prices": {
+      "Per person": 2900
+     }
+    },
+    {
+     "length": "Eastern Route, 4 nights",
+     "nights": 4,
+     "prices": {
+      "Per person": 2900
+     }
+    }
+   ]
+  }
+ ],
+ "publishedNote": "Galaxy Cruises publishes its 2026 fare for each route on the yacht's own page; 2027 fares are not published there yet. Ask us for 2027.",
+ "fareBasis": "per person, as published"
+}

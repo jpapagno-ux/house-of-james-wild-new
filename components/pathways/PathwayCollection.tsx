@@ -4,7 +4,7 @@ import type { PathwayStay } from "@/lib/content/pathways";
 import type { Pathway } from "@/lib/pathways";
 import { REGIONS } from "@/lib/site";
 import { altFor } from "@/lib/content/stays";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import SafeLink from "@/components/ledger/SafeLink";
 import MoreCards, { type SlimCard } from "@/components/pathways/MoreCards";
 import { PATHWAY_LIST } from "@/lib/pathways";
@@ -47,7 +47,7 @@ export function collect(items: PathwayStay[], pathwayId: string): Block[] {
 /** The one-line answer for a region block: counts a reader (or an answer engine) can quote. */
 export function blockAnswer(b: Block, pathway: Pathway): string {
   const n = b.items.length;
-  const verdicts = b.items.filter((r) => !!verdictFor(`stay:${r.slug}`)).length;
+  const verdicts = b.items.filter((r) => !!stayVerdict(r.slug, r.stay.status)).length;
   const giving = b.items.filter((r) => r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"))).length;
   const founder = b.items.filter((r) => (r.stay.status ?? "").startsWith("founder")).length;
   const where = b.countries.length === 1 ? b.countries[0].label : `${b.countries.length} countries, led by ${b.countries.slice(0, 3).map((c) => c.label).join(", ")}`;

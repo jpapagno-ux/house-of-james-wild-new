@@ -17,7 +17,7 @@ import { GUIDES, RAJA_VS_KOMODO, type Guide } from "@/lib/content/guides";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { countryBySlug } from "@/lib/content/countries";
 import { regionBySlug } from "@/lib/content/regions";
-import { stayBySlug } from "@/lib/content/stays";
+import { pageReady, stayBySlug, staysIn } from "@/lib/content/stays";
 import { guideSlides } from "@/lib/content/guide-slides";
 import { RecordCard } from "@/components/hub/Hub";
 import IslandZoom from "@/components/destination/IslandZoom";
@@ -42,7 +42,10 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
   const region = regionBySlug(g.region);
   const voyages = journeysFor(g.country).filter((j) => g.voyageWaters.some((w) => j.eyebrow.includes(w)));
   const compare = SEA_PAIR.has(g.slug);
-  const stays = (g.stays ?? []).map((slug) => stayBySlug(slug)).filter((s): s is NonNullable<typeof s> => !!s && !!s.hero);
+  const RANK: Record<string, number> = { founder_returned: 0, founder_visited: 1, founder_vetted: 2 };
+  const stays = g.countryStays
+    ? staysIn(g.country).filter((s) => !!s.hero && pageReady(s)).sort((a, b) => (RANK[a.status ?? ""] ?? 9) - (RANK[b.status ?? ""] ?? 9) || a.name.localeCompare(b.name))
+    : (g.stays ?? []).map((slug) => stayBySlug(slug)).filter((s): s is NonNullable<typeof s> => !!s && !!s.hero);
   const slides = guideSlides(g);
   const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: region?.name ?? g.region, path: `/destinations/${g.region}` }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
   const nav: [string, string][] = [["In short", "overview"], ["When to go", "when"], ["Highlights", "highlights"], ...(g.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["Who it suits", "suits"], ...(stays.length ? [["Where to stay", "stays"] as [string, string]] : []), ["How to see it", "how"], ...(voyages.length ? [["Voyages", "journeys"] as [string, string]] : []), ...(compare ? [["Raja Ampat vs Komodo", "compare"] as [string, string]] : []), ["FAQ", "faq-heading"]];

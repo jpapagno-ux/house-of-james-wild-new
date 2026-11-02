@@ -28,7 +28,7 @@ import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
-import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
+import { HERO_MARK, SCRIPT, stayVerdict } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
 import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
@@ -48,7 +48,8 @@ import type { ChartData } from "@/components/destination/LedgerChart";
 import { BEST_FOR, STAYS, STAY_PAGES, VESSEL_PAGES, VESSEL_RECORDS, staysIn, stayBySlug, vesselBySlug, pageReady, altFor } from "@/lib/content/stays";
 import { VESSEL_WATERS, vessel as vesselOf, vesselHref, watersOf } from "@/lib/content/vessels";
 import { regionBySlug } from "@/lib/content/regions";
-import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
+import { ContinueBySea, StayBeforeYouSail } from "@/components/stays/IndonesiaPairings";
+import { founderProof, stampForStatus, statusLine, VETTED_UNVISITED, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
 import { entryNo, roundelText, sealFor, volumeInk, VOLUME_STYLES } from "@/lib/volumes";
@@ -150,13 +151,13 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const noun = boat ? "voyage" : "stay";
   const region = s.regionSlug ? regionBySlug(s.regionSlug) : undefined;
   const countryPath = region && s.countrySlug ? `/destinations/${region.slug}/${s.countrySlug}` : null;
-  const status = statusLine(s.status as HouseStatus, s.statusDate);
-  const stamp = stampForStatus(s.status as HouseStatus);
+  const status = statusLine(s.status as HouseStatus, s.statusDate, s.slug);
+  const stamp = stampForStatus(s.status as HouseStatus, s.slug);
   // The library files many safari camps as "hotel"; the name is the better witness.
   const named = /\b(camp|lodge|villa|resort|residence|house|island)\b/i.exec(s.name)?.[1]?.toLowerCase();
   const kind = boat ? boat.kind : (s.category === "hotel" && named ? (named === "villa" ? "private villa" : named === "island" ? "private island" : named) : null) ?? ((s.category && KIND[s.category]) || "stay");
   const bestFor = s.bestFor.map((b) => BEST_FOR[b] ?? b).slice(0, 4);
-  const suited = suitedTo([s.tagline, s.quote, ...s.why.map((w) => `${w.title ?? ""} ${w.body}`), ...s.onlyHere, ...s.rooms.items, ...s.rooms.paras, ...s.experiences.items, ...s.experiences.paras, ...s.features.items, ...s.features.paras].filter(Boolean).join(" "), s.bestFor);
+  const suited = suitedTo([s.tagline, s.quote, ...s.why.map((w) => `${w.title ?? ""} ${w.body}`), ...s.onlyHere, ...s.rooms.items, ...s.rooms.paras, ...s.experiences.items, ...s.experiences.paras, ...s.features.items, ...s.features.paras].filter(Boolean).join(" "), s.bestFor, 4, s.name);
   const answer = boat ? `${s.name} is a ${kind} sailing ${boat.name}, filed in the James Wild & Co Voyages volume${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.bestMonths ? ` Best months: ${undash(s.bestMonths).replace(/\s+/g, " ").trim().replace(/\.$/, "")}.` : ""} Her ship page, cabin by cabin with dates and fares, is being built; until then plan the voyage with James or an advisor.` : `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
   const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(boat ? [["Volume", "Voyages"] as [string, string], ["Waters", boat.name] as [string, string]] : s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: altFor(u as string, s.name, s.country, i) }));
@@ -172,7 +173,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const slides = heroSlides(`stay:${s.slug}`, s.name, s.country);
   const video = VIDEOS[`stay:${s.slug}`] ?? priced?.video ?? null;
   const host = hostFor(`stay:${s.slug}`);
-  const verdict = verdictFor(`stay:${s.slug}`);
+  const verdict = stayVerdict(s.slug, s.status);
   const note = houseNote({ key: `stay:${s.slug}`, name: s.name, bestMonths: s.bestMonths, airport: s.airport, suited, rooms: s.rooms.items });
   // Stage 5 (Last Mile): approved Ledger hubs and transfer legs for this stay. Empty until the library approves them.
   const hubs = hubsForStay(s);
@@ -283,7 +284,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <DayBand>
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
-          {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
+          {founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow={L.days} title={L.daysTitle} intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? (boat ? undefined : "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone.")} icon="mountain-sun" items={days} start={null} />}
@@ -367,6 +368,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {/* Stage 4b: who plans it — the Ledger's answer for this record (marks here first, then who states they know the country). */}
           <WhoPlans where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} />
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} schema={s.faqs.length > 0 && s.reviewed} />
+          {/* Indonesia cross-sell (B7): yachts get "Stay before you sail", Bali, Sumba and Rote stays "Continue by sea". */}
+          {boat ? <StayBeforeYouSail vessel={s.slug} name={s.name} /> : <ContinueBySea stay={s.slug} />}
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
               <p className="ledger-eyebrow ledger-crimson">{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>

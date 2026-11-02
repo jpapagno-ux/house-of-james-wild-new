@@ -6,7 +6,7 @@ import CompassPreview, { type PreviewRecord } from "@/components/pathways/Compas
 import { pathwayStays } from "@/lib/content/pathways";
 import { pathwayPreviewHref, stayPreviewHref } from "@/lib/content/pathways/preview";
 import { PATHWAY_LIST } from "@/lib/pathways";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import { statusLine, type HouseStatus } from "@/lib/ledger/status";
 import { buildMetadata } from "@/lib/seo";
 
@@ -21,9 +21,9 @@ export default function CompassPathwaysPreview() {
   const pathwayHref = Object.fromEntries(PATHWAY_LIST.map((p) => [p.id, pathwayPreviewHref(p.key)]));
   // Only plain data crosses to the client component: no stay objects, no joined pathway objects.
   const records: PreviewRecord[] = pathwayStays({ includeDrafts: true }).map((r) => {
-    const v = verdictFor(`stay:${r.slug}`);
+    const v = stayVerdict(r.slug, r.stay.status);
     return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions, suitability: r.suitability, classificationStatus: r.classificationStatus, classifiedBy: r.classifiedBy, impact: r.impact,
-      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: stayPreviewHref(r.slug), pathwayHref };
+      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate, r.slug), href: stayPreviewHref(r.slug), pathwayHref };
   });
 
   return (

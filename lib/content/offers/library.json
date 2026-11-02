@@ -2619,5 +2619,65 @@
   "conditions": "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply.",
   "volume": "voyages",
   "departure": "2027-06-22"
+ },
+ {
+  "id": "OFR-2026-000165",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "kamalaya-koh-samui",
+  "name": "Book Early, Rejuvenate More (Kamalaya Koh Samui)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Up to 20% off stays of 8 nights or more, booked 60 days ahead",
+  "travel": {
+   "from": "2026-11-02",
+   "to": "2027-10-31",
+   "text": "Stays to 31 October 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "Book at least 60 days before arrival; minimum 8 nights. 10% off for 8 to 10 nights, 15% for 11 to 20 nights, 20% for 21 nights or more. Kamalaya terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000166",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "kamalaya-koh-samui",
+  "name": "Repeat Guests Offer 2026 (Kamalaya Koh Samui)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "One free night per stay for returning guests",
+  "travel": {
+   "from": "2026-11-02",
+   "to": "2026-12-19",
+   "text": "Stays to 19 December 2026; book by 11 December 2026"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "For returning Kamalaya guests. Minimum 8 nights; one free night per stay. Book by 11 December 2026 for stays to 19 December 2026. Kamalaya terms apply.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000167",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "kamalaya-koh-samui",
+  "name": "Repeat Guests Offer 2027 (Kamalaya Koh Samui)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "One free night per stay for returning guests",
+  "travel": {
+   "from": "2027-03-01",
+   "to": "2027-12-17",
+   "text": "1 March to 17 December 2027; book by 9 December 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-02",
+  "conditions": "For returning Kamalaya guests. Minimum 8 nights; one free night per stay. Book by 9 December 2027 for stays from 1 March to 17 December 2027. Kamalaya terms apply.",
+  "volume": "stays"
  }
 ]

@@ -6,12 +6,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // White pages from 29 Oct 2026 (volume kit); paper.card is the quiet panel tone.
-        paper: { DEFAULT: "#FFFFFF", card: "#F6F4F0" },
+        // White pages from 29 Oct 2026 (volume kit); Tidewater grounds from 2 Nov 2026 (lib/palette.ts TIDEWATER).
+        paper: { DEFAULT: "#FFFFFF", card: "rgb(var(--jw-band-rgb) / <alpha-value>)" }, // card = the section band (Tidewater, 2 Nov 2026): pale sea-green or pale aqua, rotating; globals.css
         ink: { DEFAULT: "#2D2A26", muted: "rgba(45, 42, 38, 0.68)", faint: "rgba(45, 42, 38, 0.68)" /* was 0.55; AA fix, 30 Oct 2026 */ },
         // The accent is a CSS variable so a section can re-tint it: crimson by default,
         // sea blues inside .theme-sea (voyages and the Aliikai listings).
         crimson: { DEFAULT: "rgb(var(--jw-accent) / <alpha-value>)", deep: "rgb(var(--jw-accent-deep) / <alpha-value>)", light: "rgb(var(--jw-accent-light) / <alpha-value>)" },
+        // The main action (James, 2 Nov 2026): buttons and calls to action; a variable so the river waters can re-tint it. lib/palette.ts.
+        action: { DEFAULT: "var(--jw-action)", deep: "var(--jw-action-deep)" },
         sea: { DEFAULT: "#1E5F73", deep: "#123B55", teal: "#146663", lagoon: "#2F8A86", shallows: "#46B3AC", mist: "#E3EBEC", light: "#9CCFD8" },
         coast: { DEFAULT: "#22656E", deep: "#1D4F56", mist: "#E4EEEC", light: "#A9D3D6" },
         rust: { DEFAULT: "#94512F", wash: "#F7EFE6" },
@@ -22,7 +24,7 @@ const config: Config = {
         ef: { sand: "var(--ef-sand)", earth: "var(--ef-earth)", landscape: "var(--ef-landscape)", shadow: "var(--ef-shadow)", accent: "var(--ef-accent)" },
         // House chrome (30 Oct 2026): warm neutrals for bands between white pages,
         // never for the page itself; and one tone per volume for dots, tabs and rails.
-        sand: { DEFAULT: "#EFEAE0", deep: "#E4DDD0", ink: "#6B6257" },
+        sand: { DEFAULT: "rgb(var(--jw-band-alt-rgb) / <alpha-value>)", deep: "rgb(var(--jw-band-rgb) / <alpha-value>)", ink: "#6B6257" }, // sand grounds retired (Tidewater): the band tints
         forest: { DEFAULT: "#2F4034", light: "#B9C7B0" },
         vol: { stays: "#3E5A3A", safaris: "#7A4A24", gatherings: "#86232C", voyages: "#2A3D5C", europe: "#4E2E46", overland: "#4D4C27" }, // = lib/volumes.ts pads; checked by scripts/check-palette.mjs
       },

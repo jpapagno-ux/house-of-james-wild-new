@@ -107,7 +107,7 @@ export function RecordActionBar({ price, basis, cta = "Enquire", href = "/plan",
           {price ? <><span className="ledger-eyebrow block !text-[9.5px]">From</span><span className="ledger-display text-xl ledger-crimson">{price}</span> <span className="text-[11px] ledger-muted">{basis}</span></> : <span className="ledger-eyebrow">Quoted for your dates</span>}
         </div>
         <a href={`tel:${SITE.phone.tel}`} aria-label="Call the house" className="w-11 h-11 border ledger-border flex items-center justify-center"><Phone className="w-4 h-4" strokeWidth={1.5} /></a>
-        <Link href={href} className="ledger-btn ledger-btn--solid !h-11" style={house ? { background: "#8B2525", borderColor: "#8B2525" } : undefined}>{cta}</Link>
+        <Link href={href} className={`ledger-btn ledger-btn--solid !h-11${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </div>
   );

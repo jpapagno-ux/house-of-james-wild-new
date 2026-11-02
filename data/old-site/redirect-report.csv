@@ -60,7 +60,7 @@ old path,new path,why,old title
 /book/como-parrot-cay,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (turks-caicos country page not built yet),Book your stay at Como Parrot Cay | Wild Earth Stays
 /book/como-shambhala-estate,/stays/como-shambhala-estate,booking page -> stay page,Book your stay at Como Shambhala Estate | Wild Earth Stays
 /book/como-uma-canggu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Canggu | Wild Earth Stays
-/book/como-uma-ubud,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Uma Ubud | Wild Earth Stays
+/book/como-uma-ubud,/stays/como-uma-ubud,booking page -> stay page,Book your stay at COMO Uma Ubud | Wild Earth Stays
 /book/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,booking page -> stay page,Book your stay at Conrad Tulum Riviera Maya | Wild Earth Stays
 /book/coot-club,/stays/coot-club,booking page -> stay page,Book your stay at Coot Club | Wild Earth Stays
 /book/cottars-1920-camp,/stays/cottars-1920-camp,booking page -> stay page,Book your stay at Cottars 1920 Camp | Wild Earth Stays
@@ -257,7 +257,7 @@ old path,new path,why,old title
 /book/six-senses-residences-courchevel,/stays/six-senses-residences-courchevel,booking page -> stay page,Book your stay at ​Six Senses Residences Courchevel | Wild Earth Stays
 /book/six-senses-rome,/stays/six-senses-rome,booking page -> stay page,Book your stay at Six Senses Rome | Wild Earth Stays
 /book/six-senses-samui,/stays/six-senses-samui,booking page -> stay page,Book your stay at Six Senses Samui | Wild Earth Stays
-/book/six-senses-uluwatu,/stays/six-senses-uluwatu,booking page -> stay page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
+/book/six-senses-uluwatu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
 /book/six-senses-yao-noi,/stays/six-senses-yao-noi,booking page -> stay page,Book your stay at Six Senses Yao Noi | Wild Earth Stays
 /book/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,booking page -> stay page,Book your stay at Six Senses Zil Pasyon | Wild Earth Stays
 /book/somalisa-acacia,/stays/somalisa-acacia,booking page -> stay page,Book your stay at Somalisa Acacia | Wild Earth Stays
@@ -508,7 +508,7 @@ old path,new path,why,old title
 /property/como-canggu,/destinations/asia/indonesia,not on the new site yet; country page,COMO Canggu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/como-parrot-cay,/destinations/caribbean-mexico,not on the new site yet; region page (turks-caicos country page not built yet),Como Parrot Cay | Luxury Stays in Turks Caicos | Wild Earth Stays
 /property/como-shambhala-estate,/stays/como-shambhala-estate,stay page,Como Shambhala Estate | Luxury Stays in Indonesia | Wild Earth Stays
-/property/como-uma-ubud,/destinations/asia/indonesia,not on the new site yet; country page,COMO Uma Ubud | Luxury Stays in Indonesia | Wild Earth Stays
+/property/como-uma-ubud,/stays/como-uma-ubud,stay page,COMO Uma Ubud | Luxury Stays in Indonesia | Wild Earth Stays
 /property/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,stay page,Conrad Tulum Riviera Maya | Luxury Stays in Mexico | Wild Earth Stays
 /property/coot-club,/stays/coot-club,stay page,Coot Club | Luxury Stays in South Africa | Wild Earth Stays
 /property/corks-vienna-woods,/stays/corks-vienna-woods,stay page,Cork’s Vienna Woods | Luxury Stays in Ireland | Wild Earth Stays
@@ -689,7 +689,7 @@ old path,new path,why,old title
 /property/quinlan-cooke-cahersiveen,/destinations/europe/ireland,not on the new site yet; country page,"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
-/property/rayvadee-resort,/stays/rayvadee-resort,stay page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
+/property/rayvadee-resort,/destinations/asia/thailand,not on the new site yet; country page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/royal-davui-island-resort,/stays/royal-davui-island-resort,stay page,Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/royal-malewane,/stays/royal-malewane,stay page,Royal Malewane | Luxury Stays in South Africa | Wild Earth Stays
 /property/rubondo-island-camp-asilia,/stays/rubondo-island-camp-asilia,stay page,Rubondo Island Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
@@ -744,7 +744,7 @@ old path,new path,why,old title
 /property/six-senses-residences-courchevel,/stays/six-senses-residences-courchevel,stay page,​Six Senses Residences Courchevel | Luxury Stays in France | Wild Earth Stays
 /property/six-senses-rome,/stays/six-senses-rome,stay page,Six Senses Rome | Luxury Stays in Italy | Wild Earth Stays
 /property/six-senses-samui,/stays/six-senses-samui,stay page,Six Senses Samui | Luxury Stays in Thailand | Wild Earth Stays
-/property/six-senses-uluwatu,/stays/six-senses-uluwatu,stay page,Six Senses Uluwatu | Luxury Stays in Indonesia | Wild Earth Stays
+/property/six-senses-uluwatu,/destinations/asia/indonesia,not on the new site yet; country page,Six Senses Uluwatu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/six-senses-yao-noi,/stays/six-senses-yao-noi,stay page,Six Senses Yao Noi | Luxury Stays in Thailand | Wild Earth Stays
 /property/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,stay page,Six Senses Zil Pasyon | Luxury Stays in Seychelles | Wild Earth Stays
 /property/skybeds-khwai,/stays/skybeds-khwai,stay page,Skybeds Khwai | Luxury Stays in Botswana | Wild Earth Stays
@@ -1081,13 +1081,13 @@ old path,new path,why,old title
 /stay/como-shambhala-estate-two-bedroom-pool-villa,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Two-bedroom Pool Villa at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-umabona,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Umabona at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-wanakasa,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Wanakasa at Como Shambhala Estate | Wild Earth Stays
-/stay/como-uma-ubud-como-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,COMO Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-garden-pool-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Garden Pool Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-pool-suite,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Pool Suite at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-terrace-room,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Terrace Room at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-ubud-room,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Ubud Room at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-uma-pool-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Uma Pool Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-uma-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Uma Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-como-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,COMO Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-garden-pool-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Garden Pool Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-pool-suite,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Pool Suite at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-terrace-room,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Terrace Room at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-ubud-room,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Ubud Room at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-uma-pool-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Uma Pool Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-uma-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Uma Villa at COMO Uma Ubud | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-1-king-mobility-accessible-with-roll-in-shower,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,1 King Mobility Accessible with Roll in Shower at Conrad Tulum Riviera Maya | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-ceiba-governors-suite-1-king-bedroom,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,Ceiba Governors Suite 1 King Bedroom at Conrad Tulum Riviera Maya | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-ceiba-ocean-view-guestroom-with-2-queen-beds,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,Ceiba Ocean View Guestroom with 2 Queen Beds at Conrad Tulum Riviera Maya | Wild Earth Stays
@@ -1734,15 +1734,15 @@ old path,new path,why,old title
 /stay/six-senses-samui-oceanfront-pool-villa-suites,/stays/six-senses-samui,room of six-senses-samui -> stay page,Oceanfront Pool Villa Suite at Six Senses Samui | Wild Earth Stays
 /stay/six-senses-samui-oceanfront-retreat,/stays/six-senses-samui,room of six-senses-samui -> stay page,Ocean Retreat at Six Senses Samui | Wild Earth Stays
 /stay/six-senses-samui-the-beach-reserve,/stays/six-senses-samui,room of six-senses-samui -> stay page,The Beach Reserve at Six Senses Samui | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villa-one-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa - One Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villa-two-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa Two-Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villathree-bedroom-residence,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa Three-Bedroom Residence at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-ocean-view-villa,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Ocean View Villa at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-presidential-villa,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Presidential Villa at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-penthouse-with-pool---two-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Penthouse with Pool - Two Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-pool-suite,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Pool Suite at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-suite,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Suite at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-the-retreat,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,The Retreat at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villa-one-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa - One Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villa-two-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa Two-Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villathree-bedroom-residence,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa Three-Bedroom Residence at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-ocean-view-villa,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Ocean View Villa at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-presidential-villa,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Presidential Villa at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-penthouse-with-pool---two-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Penthouse with Pool - Two Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-pool-suite,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Pool Suite at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-suite,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Suite at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-the-retreat,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,The Retreat at Six Senses Uluwatu | Wild Earth Stays
 /stay/six-senses-yao-noi-beachfront-pool-villa,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Beachfront Pool Villa at Six Senses Yao Noi | Wild Earth Stays
 /stay/six-senses-yao-noi-beachfront-pool-villa-suite,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Beachfront Pool Villa Suite at Six Senses Yao Noi | Wild Earth Stays
 /stay/six-senses-yao-noi-hideaway-four-bedroom-pool-villa,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Hideaway Four-Bedroom Pool Villa at Six Senses Yao Noi | Wild Earth Stays

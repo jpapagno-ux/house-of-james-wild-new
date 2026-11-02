@@ -18,6 +18,11 @@
 //   a place on James's list, not yet vetted → HorizonStamp (never on a Ledger record)
 //   an Overland route           → OverlandStamp (field tested + year, or designed by)
 
+// Founder vetted without a stay (James, 2 Nov 2026): NIHI Rote opened in 2026 and he has not been
+// yet, but he vetted it for the Ledger ("both are a surfer's dream spot"). The record keeps
+// house_status founder_vetted; the site never prints an in-person claim for these slugs.
+export const VETTED_UNVISITED = new Set<string>(["nihi-rote"]);
+
 export type HouseStatus =
   | "unclassified"
   | "founder_visited"
@@ -34,7 +39,8 @@ export type LedgerStampKind =
   | "Under observation"
   | "Gathering verified";
 
-export function stampForStatus(status?: HouseStatus | null): LedgerStampKind | null {
+export function stampForStatus(status?: HouseStatus | null, slug?: string): LedgerStampKind | null {
+  if (slug && VETTED_UNVISITED.has(slug)) return null;
   switch (status) {
     case "founder_returned":
       return "Founder favorite";
@@ -49,9 +55,10 @@ export function stampForStatus(status?: HouseStatus | null): LedgerStampKind | n
 
 // The plain-words line shown beside every record (and used in alt text and
 // schema descriptions), e.g. "Founder stayed · 2026".
-export function statusLine(status?: HouseStatus | null, date?: string | null): string | null {
+export function statusLine(status?: HouseStatus | null, date?: string | null, slug?: string): string | null {
   const year = date ? date.slice(0, 4) : "";
   const withYear = (s: string) => (year ? `${s} · ${year}` : s);
+  if (slug && VETTED_UNVISITED.has(slug) && status === "founder_vetted") return withYear("Founder vetted");
   switch (status) {
     case "founder_returned":
       return withYear("Founder favorite");
@@ -69,8 +76,9 @@ export function statusLine(status?: HouseStatus | null, date?: string | null): s
 }
 
 /** The founder's testimony for a record, from house_status only. Null when he hasn't been. */
-export function founderProof(name: string, status?: HouseStatus | null, date?: string | null): string | null {
+export function founderProof(name: string, status?: HouseStatus | null, date?: string | null, slug?: string): string | null {
   const year = date ? date.slice(0, 4) : "";
+  if (slug && VETTED_UNVISITED.has(slug) && status === "founder_vetted") return `James vetted ${name} for the Ledger${year ? ` in ${year}` : ""}. He has not stayed there yet, and says so.`;
   switch (status) {
     case "founder_returned":
       return `James stayed at ${name}${year ? ` in ${year}` : ""}: a founder favourite.`;

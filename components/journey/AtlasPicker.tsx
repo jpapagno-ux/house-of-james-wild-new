@@ -11,19 +11,34 @@ declare global { interface Window { chartRoute?: (k: string, scroll?: boolean) =
 // chips with short labels. Sentence case, 44px targets. Picking a route tells the chart engine
 // (window.chartRoute, jw-chart's own API) to fly to it; the engine's own stacked route buttons
 // are hidden on atlases (globals.css, .jw-atlas).
-export type PickerGroup = { label: string; href: string; members?: { name: string; href: string }[]; routes: { key: string; label: string }[] };
+export type PickerGroup = { label: string; href: string; members?: { name: string; href: string }[]; section?: string; routes: { key: string; label: string }[] };
+// On a busy atlas (more than six ship chips across several operators, the Galápagos) a first row offers
+// the operators, so the ship row stays short on a phone.
+const BUSY = 6;
 
 export default function AtlasPicker({ groups, ink }: { groups: PickerGroup[]; ink: string }) {
   const [g, setG] = useState(0);
   const [r, setR] = useState(groups[0]?.routes[0]?.key ?? "R0");
+  const sections = [...new Set(groups.map((x) => x.section).filter((x): x is string => !!x))];
+  const sectioned = sections.length > 1 && groups.length > BUSY;
+  const [sec, setSec] = useState(groups[0]?.section ?? "");
   const pick = (key: string) => { setR(key); window.chartRoute?.(key, false); };
   const group = groups[g];
+  const shown = groups.map((x, i) => ({ x, i })).filter(({ x }) => !sectioned || x.section === sec);
   const chip = (on: boolean) => `shrink-0 inline-flex items-center min-h-[44px] px-4 border text-[14px] whitespace-nowrap transition-colors ${on ? "text-paper" : "ledger-border hover:border-current"}`;
   if (!group) return null;
   return (
     <div className="mt-5">
+      {sectioned && (
+        <div role="group" aria-label="Choose an operator" className="flex gap-2 overflow-x-auto [scrollbar-width:none] -mx-5 px-5 md:mx-0 md:px-0 pb-1 mb-1">
+          {sections.map((x) => {
+            const first = groups.findIndex((y) => y.section === x);
+            return <button key={x} type="button" aria-pressed={x === sec} onClick={() => { setSec(x); setG(first); pick(groups[first].routes[0].key); }} className={`shrink-0 inline-flex items-center min-h-[44px] px-3 text-[13px] uppercase tracking-[0.08em] border-b-2 whitespace-nowrap ${x === sec ? "" : "border-transparent ledger-muted hover:text-ink"}`} style={x === sec ? { borderColor: ink, color: ink } : undefined}>{x}<span className="ml-1.5 opacity-70">{groups.filter((y) => y.section === x).length}</span></button>;
+          })}
+        </div>
+      )}
       <div role="group" aria-label="Choose a ship" className="flex gap-2 overflow-x-auto [scrollbar-width:none] -mx-5 px-5 md:mx-0 md:px-0 pb-1">
-        {groups.map((x, i) => (
+        {shown.map(({ x, i }) => (
           <button key={x.label} type="button" aria-pressed={i === g} onClick={() => { setG(i); pick(x.routes[0].key); }} className={chip(i === g)} style={i === g ? { background: ink, borderColor: ink } : undefined}>
             {x.label}<span className="ml-2 text-[12px] opacity-75">{x.routes.length}</span>
           </button>

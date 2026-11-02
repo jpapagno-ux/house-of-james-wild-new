@@ -1,0 +1,157 @@
+{
+ "id": "galapagos-horizon-trimaran-san-cristobal-to-baltra-saturday-to-saturday-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "8-day cruise A: San Cristobal to Baltra, 7 nights aboard Galapagos Horizon",
+ "subtitle": "7 nights · San Cristobal to Baltra, Saturday to Saturday · Galapagos Horizon",
+ "days": {
+  "1": "arrive San Cristobal, transfer to the yacht and David Rodriguez Breeding Center",
+  "2": "Pitt Point and Witch Hill and Kicker Rock",
+  "3": "Suarez Point and Gardner Bay and Islet, Osborn Islet",
+  "4": "Bachas Beach, Santa Cruz and Bartolome",
+  "5": "Egas Port, Santiago and Rabida Island",
+  "6": "Darwin Bay and El Barranco",
+  "7": "Mosquera Islet and Santa Cruz Highlands and Fausto Llerena Breeding Center",
+  "8": "North Seymour Island, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "San Cristobal",
+   "lat": -0.71,
+   "lng": -89.26,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.26,
+     -0.71
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.26,
+     -0.71
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Bartolome",
+   "lat": -0.2833,
+   "lng": -90.55,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.55,
+     -0.2833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Santiago",
+   "lat": -0.245,
+   "lng": -90.86,
+   "mode": "sea",
+   "path": [
+    [
+     -90.55,
+     -0.2833
+    ],
+    [
+     -90.86,
+     -0.245
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.86,
+     -0.245
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.34,
+     -0.63
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "North Seymour",
+   "lat": -0.3967,
+   "lng": -90.29,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.29,
+     -0.3967
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

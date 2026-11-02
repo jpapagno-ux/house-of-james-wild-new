@@ -81,7 +81,8 @@ export const deskCounts = (d: DeskProfile) => ({
   carried: d.entries.length,
   guests: d.entries.reduce((n, e) => n + e.guests, 0),
   folios: new Set(d.entries.flatMap((e) => e.folios)).size,
-  slept: d.entries.filter((e) => e.theirs && e.theirs.mark !== "Sent Guests").length,
+  // A night only (Stayed, Sailed It); Walked It is an inspection, not a stay.
+  slept: d.entries.filter((e) => e.theirs && (e.theirs.mark === "Stayed" || e.theirs.mark === "Sailed It")).length,
 });
 
 export const GREEN_INK = "#2F6B3A"; // the advisor's ink, approved Oct 2026

@@ -1,0 +1,121 @@
+{
+ "id": "new-galapagos-sea-star-san-cristobal-to-baltra-tuesday-to-sunday-5n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "6-day cruise A: San Cristobal to Baltra, 5 nights aboard New Galapagos Sea Star",
+ "subtitle": "5 nights · San Cristobal to Baltra, Tuesday to Sunday · New Galapagos Sea Star",
+ "days": {
+  "1": "arrive San Cristobal, transfer to the yacht and David Rodriguez Breeding Center",
+  "2": "Suarez Point and Gardner Bay and Islet, Osborn Islet",
+  "3": "Cormorant Point and Devil's Crown and Baroness Viewing Point and Post Office Bay",
+  "4": "Santa Fe Island and South Plaza Island",
+  "5": "North Seymour Island and Bachas Beach, Santa Cruz",
+  "6": "Mosquera Islet, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santa Fe",
+   "lat": -0.82,
+   "lng": -90.06,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.06,
+     -0.82
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "North Seymour",
+   "lat": -0.3967,
+   "lng": -90.29,
+   "mode": "sea",
+   "path": [
+    [
+     -90.06,
+     -0.82
+    ],
+    [
+     -90.29,
+     -0.3967
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Mosquera",
+   "lat": -0.41,
+   "lng": -90.28,
+   "mode": "sea",
+   "path": [
+    [
+     -90.29,
+     -0.3967
+    ],
+    [
+     -90.28,
+     -0.41
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

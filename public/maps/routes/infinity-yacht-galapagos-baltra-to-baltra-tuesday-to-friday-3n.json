@@ -1,0 +1,85 @@
+{
+ "id": "infinity-yacht-galapagos-baltra-to-baltra-tuesday-to-friday-3n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "4-day cruise A: Baltra round trip, 3 nights aboard Infinity",
+ "subtitle": "3 nights · Baltra to Baltra, Tuesday to Friday · Infinity",
+ "days": {
+  "1": "arrive Baltra, transfer to the yacht and Black Turtle Cove, Santa Cruz",
+  "2": "El Barranco and Darwin Bay",
+  "3": "Sullivan Bay, Santiago and Rabida Island",
+  "4": "Fausto Llerena Breeding Center, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.33,
+     -0.49
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Santiago",
+   "lat": -0.29,
+   "lng": -90.58,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.58,
+     -0.29
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.58,
+     -0.29
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

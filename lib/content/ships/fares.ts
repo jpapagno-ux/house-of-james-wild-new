@@ -34,8 +34,10 @@ function status(d: ShipDeparture): Sailing["status"] {
 
 const routeShort = (s: ShipRecord, name: string) => {
   const it = s.itineraries.find((i) => i.name === name);
-  const m = name.match(/^Itinerary ([A-Z])\b/);
+  const m = name.match(/^Itinerary ([A-Z](?:\+[A-Z])*)(?![A-Za-z])/);
   if (m) return `Route ${m[1]}`;
+  const rg = name.match(/^(\d+-day) (?:\w+ )?cruise ([A-Z])\b/i);
+  if (rg) return `${rg[1]} ${rg[2]}`;
   return undash(it ? it.direction.split(" (")[0].split(", ")[0] : name);
 };
 

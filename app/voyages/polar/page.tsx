@@ -8,7 +8,6 @@ import { HubShell, HubSection } from "@/components/hub/Hub";
 import RouteAtlas, { type AtlasRoute } from "@/components/journey/RouteAtlas";
 import ShipCard from "@/components/ships/ShipCard";
 import PolarFinder, { type FinderRow } from "@/components/polar/PolarFinder";
-import { HOUSE_CRIMSON } from "@/components/record/Sections";
 import { voyageCard } from "@/lib/content/polar/cards";
 import { LENGTHS, MONTH_CHIPS, POLAR_CROSSINGS_URL, POLAR_PATH, POLAR_SHIP_NAMES, POLAR_VOYAGES, REGIONS, STYLES, polarRouteId, usd, voyageFrom, voyagePath, type PolarStyle } from "@/lib/content/polar";
 import { VOYAGE_TYPES, registryShip } from "@/lib/content/ships/registry";
@@ -110,7 +109,7 @@ export default function PolarPage() {
               <h3 className="ledger-display text-[26px] leading-tight mt-1">MS Roald Amundsen</h3>
               <p className="mt-3 text-[16px] leading-relaxed">James sailed the Antarctic Peninsula aboard her in February to March 2020. The photographs here are his.</p>
               <p className="mt-2 text-[14.5px] ledger-muted leading-relaxed">She is not booked through this page. Ask James about sailing with HX, or about how she compares with the Antarctica21 ships above.</p>
-              <Link href={`/plan?trip=${encodeURIComponent("Antarctica, MS Roald Amundsen (HX)")}`} className="mt-5 self-start ledger-btn ledger-btn--solid inline-flex items-center min-h-[44px]" style={{ background: HOUSE_CRIMSON, borderColor: HOUSE_CRIMSON }}>Plan with James</Link>
+              <Link href={`/plan?trip=${encodeURIComponent("Antarctica, MS Roald Amundsen (HX)")}`} className="mt-5 self-start ledger-btn ledger-btn--solid ledger-btn--house inline-flex items-center min-h-[44px]">Plan with James</Link>
             </div>
           </article>
         </HubSection>

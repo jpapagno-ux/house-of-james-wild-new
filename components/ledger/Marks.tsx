@@ -22,7 +22,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const OX = "#7A1E1E";
-const RUST = "#94512F";
+const TEAL = "#0C5D61"; // Deep Teal, lib/palette.ts (offer stamps in the Deep Sea family, James 2 Nov 2026)
 const LIGHT = "#F4F1EC";
 const SERIF = "'Cormorant Garamond', Georgia, serif";
 const MONO = "'IBM Plex Mono', ui-monospace, monospace";
@@ -303,12 +303,12 @@ export function JwcoSeal({ size = 96, tone = "ink", rotate = 0, className }: { s
   );
 }
 
-// ── 6. "Time Rewarded" offer stamp (rust) — verified offers only ───────────────
+// ── 6. "Time Rewarded" offer stamp (deep teal; was rust until 2 Nov 2026) — verified offers only ───────────────
 // Wild Earth Stays offers read "buy 3, stay 4": pass stay=4 pay=3.
 const ORD = ["", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"];
 export function OfferStamp({ stay = 4, pay = 3, size = 170, rotate = -9, tone = "ink" }: { stay?: number; pay?: number; size?: number; rotate?: number; tone?: Tone }) {
   const id = useId().replace(/[^a-zA-Z0-9]/g, "");
-  const c = tone === "light" ? LIGHT : RUST;
+  const c = tone === "light" ? LIGHT : TEAL;
   const free = Math.max(1, stay - pay);
   const big = free === 1 ? `${ORD[stay] || stay + "th"} NIGHT` : `${free} NIGHTS`;
   return (

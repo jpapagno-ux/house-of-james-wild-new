@@ -1,18 +1,18 @@
 /*! jw-chart.css · James Wild & Co (jameswildco.com) animated itinerary chart · Ledger palette
    Fonts and colours follow tailwind.config.ts / app/globals.css: Playfair Display, EB Garamond, IBM Plex Mono;
-   paper #F4F1ED, card #EAE6DF, ink #2D2A26. --jwc-vol is the route's accent, set per map. */
-.jwc{--leaf:#FBF8F1;--paper:#F4F1ED;--paper-2:#EAE6DF;--sepia:rgba(45,42,38,.68);--jwc-ink-soft:rgba(45,42,38,.68);--rule:rgba(45,42,38,.28);--deep:#2D2A26;
- --mid:var(--jwc-vol,#1E5F73);--river:var(--jwc-vol,#1E5F73);--copper:var(--jwc-vol,#8B2525);--brass:#C9B79F;
+   paper #F3F8F7, card #E5F0EF (Tidewater, 2 Nov 2026; were parchment #F4F1ED and #EAE6DF), ink #2D2A26. --jwc-vol is the route's accent, set per map. */
+.jwc{--leaf:#FFFFFF;--paper:#F3F8F7;--paper-2:#E5F0EF;--sepia:rgba(45,42,38,.68);--jwc-ink-soft:rgba(45,42,38,.68);--rule:rgba(45,42,38,.28);--deep:#2D2A26;
+ --mid:var(--jwc-vol,#1E5F73);--river:var(--jwc-vol,#1E5F73);--copper:var(--jwc-vol,#8B2525);--brass:#B5D3D0;
  --type:'IBM Plex Mono',ui-monospace,monospace;--serif:'Playfair Display',Georgia,serif;--display:'IBM Plex Mono',ui-monospace,monospace;--body:'EB Garamond',Georgia,serif;
  color:#2D2A26;font-family:var(--body)}
 .jwc button{font-family:'EB Garamond',Georgia,serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;min-height:40px;padding:0 14px;background:transparent;color:#2D2A26;border:1px solid rgba(45,42,38,.28);border-radius:0;cursor:pointer;line-height:1;transition:background .2s ease,color .2s ease}
 .jwc button:hover{border-color:var(--jwc-vol);color:var(--jwc-vol)}
-.jwc button[aria-pressed="true"],.jwc .days button.on{background:var(--jwc-vol);border-color:var(--jwc-vol);color:#F4F1ED}
+.jwc button[aria-pressed="true"],.jwc .days button.on{background:var(--jwc-vol);border-color:var(--jwc-vol);color:#F3F8F7}
 .jwc .days button{font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.08em}
 .jwc .days button{transition:none}
-.jwc .days button.passed:not(.on){background:#EAE6DF;color:#2D2A26}
+.jwc .days button.passed:not(.on){background:#E5F0EF;color:#2D2A26}
 .jwc button:focus-visible{outline:2px solid var(--jwc-vol);outline-offset:2px}
-.jwc .zoom button{background:rgba(244,241,237,.94);font-family:'IBM Plex Mono',ui-monospace,monospace;text-transform:none;letter-spacing:0}
+.jwc .zoom button{background:rgba(252,253,253,.94);font-family:'IBM Plex Mono',ui-monospace,monospace;text-transform:none;letter-spacing:0}
 .jwc .routes[hidden]{display:none}
 .jwc .overlay .ovk{color:var(--jwc-vol);font-size:10.5px;letter-spacing:.2em}
 .jwc .overlay h3{font-weight:400!important}
@@ -26,7 +26,7 @@
 .jwc .stage.dragging{cursor:grabbing}
 .jwc .stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
 .jwc .hud{position:absolute;left:10px;right:64px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--type);font-size:11.5px;color:var(--sepia);pointer-events:none;font-variant-numeric:tabular-nums}
-.jwc .hud span{background:rgba(244,241,237,.9);padding:1px 4px}
+.jwc .hud span{background:rgba(252,253,253,.9);padding:1px 4px}
 .jwc .zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
 .jwc .zoom button{width:44px;height:44px;font-size:22px;padding:0}
 .jwc .platecap{font-family:var(--serif);font-style:italic;color:var(--sepia);font-size:16px;text-align:center}
@@ -60,7 +60,7 @@
 .jwc{display:flex;flex-direction:column;gap:12px}
 .jwc .stage{width:100%;max-width:100%;aspect-ratio:auto;height:clamp(440px,82vh,900px);margin:0}
 @media (max-width:700px){.jwc .stage{height:74vh}}
-.jwc .overlay{position:absolute;left:14px;top:14px;max-width:min(420px,calc(100% - 84px));display:flex;flex-direction:column;gap:6px;background:rgba(244,241,237,.92);border:1px solid var(--rule);padding:12px 14px;pointer-events:none}
+.jwc .overlay{position:absolute;left:14px;top:14px;max-width:min(420px,calc(100% - 84px));display:flex;flex-direction:column;gap:6px;background:rgba(252,253,253,.92);border:1px solid var(--rule);padding:12px 14px;pointer-events:none}
 .jwc .overlay .ovk{font-family:var(--display);font-size:12px;letter-spacing:.22em;color:var(--copper)}
 .jwc .overlay h3{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.4vw,30px);line-height:1.05;color:var(--deep);text-wrap:balance}
 .jwc .overlay p{margin:0;font-size:14px;color:var(--sepia);font-style:italic}
@@ -80,7 +80,7 @@
 @media (max-width:700px){.jwc .overlay .ovk{display:none}.jwc .overlay .way{font-size:15px;line-height:1.3}.jwc .overlay{max-width:calc(100% - 76px)}.jwc .hud span:nth-child(n+3){display:none}}
 
 /* inside the page's chart / survey frame (jw-maps.css): the frame is the border */
-.jw-frame .jwc{gap:10px;padding-bottom:12px;background:#FBF8F1}
+.jw-frame .jwc{gap:10px;padding-bottom:12px;background:#FFFFFF}
 .jw-frame .jwc .stage{border:0;outline:0;box-shadow:none;height:clamp(460px,72vh,760px)}
 .jw-frame .jwc .ctrlbar,.jw-frame .jwc details.coords,.jw-frame .jwc .platecap{padding-left:14px;padding-right:14px}
 .jw-frame .jwc .ctrlbar{border-bottom-color:rgba(45,42,38,.18)}

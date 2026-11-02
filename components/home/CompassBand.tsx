@@ -36,7 +36,7 @@ export default function CompassBand() {
           ))}
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-5">
-          <Link href="/compass" className="bg-crimson hover:bg-crimson-deep transition-colors px-6 py-3 text-[12px] uppercase tracking-[0.18em]">Take the Compass</Link>
+          <Link href="/compass" className="bg-action hover:bg-action-deep transition-colors px-6 py-3 text-[12px] uppercase tracking-[0.18em]">Take the Compass</Link>
           <Link href="/plan" className="text-[14px] text-white/80 hover:text-white border-b border-white/30">Or plan with James</Link>
         </div>
       </div>

@@ -29,6 +29,8 @@ export type Guide = {
   zoom?: "galapagos" | "rapa-nui";
   /** A flyover from the continent into a close chart (lib/content/flyovers.ts), drawn under the facts. */
   flyover?: "atacama-uyuni" | "rapa-nui" | "portugal" | "greece";
+  /** A country guide (Indonesia): list every released stay filed under the country, founder favourites first. */
+  countryStays?: boolean;
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */
   stays?: string[];
   /** IMAGE FOLLOW-UP: no landscape photography of its own yet, so the hero borrows this stay's own frames (lib/content/guide-slides.ts). */
@@ -59,7 +61,7 @@ export type Guide = {
 };
 
 const COMPARE: { label: string; raja: string; komodo: string }[] = [
-  { label: "Best months", raja: "October to April", komodo: "May to September (dry season)" },
+  { label: "Best months", raja: "October to April", komodo: "April to June and September to December (Indonesia's tourism board)" },
   { label: "Getting there", raja: "Fly to Sorong, usually via Jakarta or Makassar", komodo: "Fly to Labuan Bajo, a short hop from Bali" },
   { label: "What it's famous for", raja: "Karst lagoons, the richest reefs on Earth, birds of paradise", komodo: "Komodo dragons, Padar's ridges, Pink Beach, mantas" },
   { label: "In the water", raja: "Gentler currents, warm water, snorkelling every day", komodo: "Stronger currents at the big dive sites, cooler and clearer water" },
@@ -79,6 +81,21 @@ const SOURCES_KOMODO = [
   { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
 ];
 
+// Indonesia country guide (2 Nov 2026): official sources only (Indonesia's tourism board, UNESCO, the
+// Raja Ampat Marine Park Authority). The third-party sources stay on the Raja Ampat and Komodo guides for now.
+const SOURCES_INDONESIA = [
+  { title: "Wonderful Indonesia: weather and seasons", url: "https://www.indonesia.travel/id/en/general-information/weather-climate-seasons" },
+  { title: "Wonderful Indonesia: a first-timer's guide to Komodo National Park", url: "https://www.indonesia.travel/jp-en/travel-ideas/unveil-the-lands-of-dragons-firsttimers-guide-to-komodo-national-park/" },
+  { title: "Wonderful Indonesia: Raja Ampat", url: "https://www.indonesia.travel/au/en/travel-ideas/marine/discover-raja-ampat-travel-inspiration-to-indonesias-heavenly-eastern-archipelago" },
+  { title: "Wonderful Indonesia: Lombok and Sumba", url: "https://www.indonesia.travel/de/en/destination/bali-nusa-tenggara/west-nusa-tenggara/lombok---sumba" },
+  { title: "Wonderful Indonesia: Lombok", url: "https://www.indonesia.travel/gb/en/destination/bali-nusa-tenggara/west-nusa-tenggara/lombok" },
+  { title: "Wonderful Indonesia: types of Indonesian visas", url: "https://www.indonesia.travel/us/en/travel-ideas/culture/types-of-indonesian-visas-you-need-to-know" },
+  { title: "Wonderful Indonesia: the e-VOA", url: "https://www.indonesia.travel/us/en/news-update/electronic-visa-on-arrival-e-voa-launched-to-ease-travelers-entry-process-to-indonesia" },
+  { title: "UNESCO World Heritage: Komodo National Park", url: "https://whc.unesco.org/en/list/609/" },
+  { title: "Raja Ampat Marine Park Authority: entry card", url: "https://kkprajaampat.com/en/entry-card/" },
+  { title: "Aliikai: 2027 rates and departures with James Wild & Co", url: "/voyages/ships/aliikai" },
+];
+
 export const GUIDES: Record<string, Guide> = {
   indonesia: {
     slug: "indonesia", region: "asia", country: "indonesia", name: "Indonesia", path: "/destinations/asia/indonesia",
@@ -90,32 +107,42 @@ export const GUIDES: Record<string, Guide> = {
     eyebrow: "Destinations · Asia · Indonesia",
     h1: "Indonesia, by Sea",
     tagline: "Seventeen thousand islands, and the best of them reached by boat",
+    // A country guide lists every released stay in the country (founder favourites first), not a place selection.
+    countryStays: true,
     slides: [
       { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Jungle-covered karst islands rising from turquoise lagoons in Raja Ampat, West Papua" },
       { url: `${KOM}padar-island-aerial`, alt: "Padar Island's ridges and crescent bays from the air, Komodo National Park" },
       { url: `${CLD}wildco/voyages/vessels/aliikai/DJI_0472-1`, alt: "The phinisi Aliikai under full sail from the air" },
       { url: `${CLD}wildco/voyages/home-hero/03-over-under-reef`, alt: "Half above, half below the waterline: a snorkeller over a coral reef beneath a forested island" },
     ],
-    answer: "Indonesia's two great sea journeys are Raja Ampat, in West Papua, and Komodo National Park, east of Bali, with the Spice Islands of the Banda Sea between them. Raja Ampat holds the richest reefs on Earth and is best from October to April; Komodo has the dragons, Padar's ridges and the mantas, and is best from May to September. Both are best seen from a small boat. Aboard the phinisi Aliikai you can follow the seasons: Komodo in the dry months, the Spice Islands in October, Raja Ampat through the northern winter.",
-    facts: [["Where", "Eastern Indonesia: West Papua, the Banda Sea and the Lesser Sundas"], ["Best for the sea", "Raja Ampat Oct–Apr · Komodo May–Sep · Banda Sea Oct"], ["Fly into", "Bali (DPS) or Jakarta (CGK), then on to Sorong or Labuan Bajo"], ["How to see it", "By small phinisi, on a shared voyage or a private charter"], ["Vetted by", "James Wild · sailed Raja Ampat aboard Aliikai, November 2024"]],
+    answer: "Indonesia's two great sea journeys are Raja Ampat, in West Papua, and Komodo National Park, east of Bali, with the Spice Islands of the Banda Sea between them. Raja Ampat holds the richest reefs on Earth and is best from October to April; Komodo has the dragons, Padar's ridges and the mantas, and is best from April to June and September to December. Both are best seen from a small boat. On land, Bali and Java are driest from April to October, and Sumba's surf runs from May to October. James visited Bali and Sumba in November 2024, and the house now files nineteen Indonesian stays, from Ubud's valleys to NIHI's surf breaks.",
+    facts: [["Where", "Bali and Lombok, Sumba and Flores, West Papua, the Banda Sea and the Riau Islands"], ["Seasons", "Bali and Java Apr to Oct · Komodo Apr to Jun and Sep to Dec · Raja Ampat Oct to Apr · Sumba surf May to Oct"], ["Fly into", "Bali (DPS) or Jakarta (CGK), both e-VOA airports, then on to Labuan Bajo, Sorong or Sumba"], ["Visa", "Visa on Arrival or the e-VOA for most visitors; check fees on the official immigration site"], ["How to see it", "Bali and Sumba by land, the eastern islands by small phinisi"], ["Vetted by", "James Wild · Bali and Sumba stays, November 2024 · sailed Raja Ampat aboard Aliikai, November 2024"]],
     proof: "James sailed Raja Ampat aboard the phinisi Aliikai with his son in November 2024. It's the voyage he would book again, and the reason Indonesia's sea routes are in the Ledger.",
+    // Seasons by region from Indonesia's official tourism board (indonesia.travel, see sources);
+    // the Spice Islands row is the Banda Sea window Aliikai sails.
     months: [
+      { area: "Bali and Java", note: "Dry April to October, wet November to March", months: M("wwwBBBBBBBww") },
+      { area: "Komodo", note: "Flores · rains disrupt boats January to March; dragons harder to spot in July and August", months: M("wwwBBBggBBBB") },
       { area: "Raja Ampat", note: "West Papua · calmest seas", months: M("BBBBwwwwwBBB") },
-      { area: "Komodo", note: "Flores · dry season", months: M("wwgBBBBBBggw") },
+      { area: "Sumba", note: "Surf May to October · the Pasola usually February to March", months: M("wggwBBBBBBww") },
       { area: "Spice Islands", note: "Banda Sea · between monsoons", months: M("wwwgwwwwwBgw") },
     ],
-    airports: [["Bali (DPS)", "The usual international gateway; 1 hour on to Labuan Bajo"], ["Jakarta (CGK)", "Direct flights on to Sorong, about 4 hours"], ["Makassar (UPG)", "The common connection for Sorong, about 2 hours"]],
-    transfers: [["Bali → Labuan Bajo (LBJ)", "About 1 hour by air, for Komodo"], ["Jakarta → Sorong (SOQ)", "About 4 hours, direct, for Raja Ampat"], ["Makassar → Sorong", "About 2 hours, direct"], ["Ambon (AMQ)", "The gateway for the Banda Sea and the Spice Islands"]],
+    airports: [["Bali (DPS)", "Ngurah Rai, the main gateway and an e-VOA airport"], ["Jakarta (CGK)", "Soekarno Hatta, an e-VOA airport, with flights on to Sorong"], ["Labuan Bajo (LBJ)", "On Flores, for Komodo National Park"], ["Sorong (SOQ)", "Domine Eduard Osok Airport, for Raja Ampat"], ["Lombok (LOP)", "Lombok International Airport, daily flights from Bali"], ["Sumba (TMC, WGP)", "Tambolaka in the west, Umbu Mehang Kunda at Waingapu in the east"]],
+    transfers: [["Bali to Labuan Bajo", "About 1.5 hours by air, for Komodo"], ["Bali to Tambolaka", "About an hour by air, for West Sumba"], ["Jakarta to Sorong", "About 4 to 5 hours by air, or via Makassar or Manado"], ["Sorong to Waisai", "About 2 hours by fast ferry, into Raja Ampat"], ["Ambon (AMQ)", "The gateway for the Banda Sea and the Spice Islands"]],
     highlights: [
       { title: "Raja Ampat", line: "West Papua · Oct–Apr", body: "Karst lagoons, mantas at Arborek and the richest coral reefs on Earth, in the far east of the archipelago.", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Karst islands in Raja Ampat's lagoons" } },
       { title: "Komodo National Park", line: "Flores · May–Sep", body: "Dragons on Rinca, the climb up Padar, Pink Beach and the mantas of Karang Makassar, an hour from Bali.", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island from the air" } },
       { title: "The Spice Islands", line: "Banda Sea · October", body: "Nutmeg islands, old Dutch forts and walls of coral, sailed in the short calm between the monsoons." },
+      { title: "Bali", line: "Ubud and the south coast · Apr to Oct", body: "Rice terraces and temples around Ubud, clifftops on the Bukit and black sand at Tabanan: the island most journeys start from." },
+      { title: "Sumba", line: "West Sumba · surf May to Oct", body: "Long left-hand surf breaks, horse culture and the Pasola, an hour's flight east of Bali." },
     ],
     suits: [
       { who: "First-time Raja Ampat travellers", line: "The classic northern loop in the calm season, every transfer handled from Sorong.", href: "/destinations/asia/indonesia/raja-ampat", label: "Raja Ampat guide" },
       { who: "First-timers to Indonesia", line: "Komodo's best-known sights in four nights, an hour's flight from Bali.", href: "/destinations/asia/indonesia/komodo", label: "Komodo guide" },
       { who: "Divers and snorkellers", line: "The Coral Triangle's reefs, with guided diving and Nitrox aboard.", href: "/voyages/ships/aliikai", label: "Aliikai" },
       { who: "Families and private groups", line: "A whole phinisi for up to 15, on your own route.", href: "/voyages/ships/aliikai#charter", label: "Private charter" },
+      { who: "Surfers", line: "Sumba and Rote in the May to October surf season, at NIHI's two resorts.", href: "/stays/nihi", label: "NIHI Sumba" },
+      { who: "Couples and wellness travellers", line: "Ubud's river valleys and spas, then a few nights on the coast.", href: "#stays", label: "Where to stay" },
     ],
     howTo: {
       title: "How to See It",
@@ -123,7 +150,7 @@ export const GUIDES: Record<string, Guide> = {
       options: [
         { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#departures", label: "Aliikai's 2027 dates" },
         { name: "A private charter", body: "Take the whole yacht for your family or group, and draw the route yourself. From three nights in Komodo, seven in Raja Ampat.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
-        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "/plan", label: "Plan it with James" },
+        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "#stays", label: "The Bali stays" },
       ],
     },
     places: [
@@ -132,14 +159,21 @@ export const GUIDES: Record<string, Guide> = {
     ],
     voyageWaters: ["Raja Ampat", "Komodo"],
     faqs: [
-      { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from May to September. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
-      { q: "What is the best time to visit eastern Indonesia by boat?", a: "Raja Ampat from October to April, Komodo from May to September, and the Banda Sea in October, between the monsoons. Small ships like Aliikai move with those seasons." },
-      { q: "How do you get to Raja Ampat and Komodo?", a: "For Komodo, fly to Labuan Bajo, about an hour from Bali. For Raja Ampat, fly to Sorong in West Papua, direct from Jakarta or Makassar. Boats meet you at both airports." },
+      // From the Indonesia Destination record (approved 2 Nov 2026; official sources listed below).
+      { q: "When is the best time to visit Indonesia?", a: "April to October, the dry season across most of the country including Bali and Java. The wet season runs from November to March. Raja Ampat is the exception, best from October to April when its seas are calmest." },
+      { q: "When is the best time to visit Komodo National Park?", a: "April to June and September to December. September to November is best for manta rays, whale sharks and dragons; January to March rains often disrupt boat trips, and July and August are the dragons' mating season, when they are harder to spot." },
+      { q: "When is the best time to visit Raja Ampat?", a: "October to April, when the seas are calmer for snorkelling and diving. Visitors buy a Raja Ampat marine park entry card from the Marine Park Authority in Waisai, IDR 700,000 for international visitors and valid for twelve months." },
+      { q: "Do I need a visa for Indonesia?", a: "Most visitors need a visa, either Visa on Arrival or the electronic e-VOA, which can be applied for online before departure or in transit and is accepted at 16 airports including Bali and Jakarta. A small number of countries are visa exempt. Fees and length of stay change, so check the official immigration site before you travel." },
+      { q: "How do you get to Komodo from Bali?", a: "Fly about 1.5 hours from Bali to Labuan Bajo on Flores, the gateway to Komodo National Park. A park permit is bought at the park office in Labuan Bajo, and a local guide is mandatory for treks to see the dragons." },
+      { q: "Is Komodo National Park a UNESCO World Heritage Site?", a: "Yes. Komodo National Park was inscribed in 1991. It covers 219,322 hectares, centred on the volcanic islands of Komodo, Rinca and Padar, and is home to an estimated 5,700 Komodo dragons." },
+      { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from April to June and September to December. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
+      { q: "How do you get to Raja Ampat?", a: "Fly to Sorong in West Papua, about 4 to 5 hours from Jakarta or via Makassar or Manado, then take the 2-hour fast ferry to Waisai, or join your boat in Sorong." },
       { q: "Can you combine Raja Ampat and Komodo in one trip?", a: "Yes, with a flight between Sorong and Labuan Bajo via Makassar or Bali, but the best seasons barely overlap. Most travellers choose one per trip, or sail Aliikai's Sorong–Ambon crossing in April or October to link Raja Ampat with the Banda Sea." },
       { q: "Has James been to Raja Ampat?", a: "Yes. James sailed Raja Ampat aboard the phinisi Aliikai in November 2024, and he has been designing journeys since 1983." },
+      { q: "Which Indonesian stays has James been to?", a: "In November 2024 James visited Bali and Sumba. COMO Shambhala Estate, COMO Canggu, Tanah Gajah, the four Kayumanis villas, Viceroy Bali, The Ungasan and Soori Bali are founder favourites; Capella Ubud, Bambu Indah and NIHI Sumba are founder inspected. NIHI Rote opened in 2026: James has vetted it but not yet stayed." },
     ],
     geo: { lat: -3.5, lng: 125.5 },
-    sources: [...SOURCES_RAJA, ...SOURCES_KOMODO.slice(0, 2)],
+    sources: SOURCES_INDONESIA,
   },
 
   "raja-ampat": {
@@ -287,6 +321,106 @@ export const GUIDES: Record<string, Guide> = {
     ],
     geo: { lat: -8.55, lng: 119.49 },
     sources: SOURCES_KOMODO,
+  },
+
+  // The Galápagos: a place inside Ecuador & Galápagos (James approved, 2 Nov 2026). Facts only from UNESCO, the
+  // Galápagos National Park Directorate (galapagos.gob.ec, which collects the entry fee and sets the visit rules),
+  // the Galápagos Government Council and Ecuador's Ministry of Tourism (ecuador.travel), as filed in the Galápagos
+  // review; no month-by-month wildlife calendar is printed because none of those pages gives one. The two stays
+  // are the partners' own records; the founder has not been yet (no founder marks). IMAGE FOLLOW-UP: no Galápagos
+  // landscape photography of the house's own yet, so the hero borrows Galapagos Safari Camp's frames, credited.
+  galapagos: {
+    slug: "galapagos", region: "south-america", country: "ecuador-galapagos", parent: "ecuador-galapagos", name: "Galápagos", path: "/destinations/south-america/ecuador-galapagos/galapagos",
+    theme: "sea", zoom: "galapagos", stays: ["galapagos-safari-camp", "pikaia-lodge"],
+    proofEyebrow: "On the founder's list · not yet visited",
+    seo: {
+      title: "Galápagos Islands Guide: Park Fee, When to Go, Getting There",
+      description: "The Galápagos, Ecuador: the first World Heritage Site (1978). The US$200 park fee and US$20 transit card, the two seasons, flights from Quito and Guayaquil, and where to stay and sail.",
+      keywords: ["Galapagos travel guide", "Galapagos park fee", "Galapagos transit control card", "best time to visit the Galapagos", "how to get to the Galapagos", "Galapagos lodge", "Galapagos yacht"],
+    },
+    eyebrow: "Destinations · South America · Ecuador & Galápagos",
+    h1: "Galápagos",
+    tagline: "Volcanic islands about 1,000 km off Ecuador, where three ocean currents meet: the first place on the World Heritage List",
+    slides: [],
+    slidesFromStay: { slug: "galapagos-safari-camp", alt: "The Santa Cruz highlands from Galapagos Safari Camp, Galápagos", credit: "Photograph courtesy of Galapagos Safari Camp" },
+    answer: "The Galápagos are Ecuador's volcanic islands, about 1,000 km off the coast where three ocean currents meet; with the City of Quito they were the first places inscribed on the World Heritage List, in 1978. You reach them only by domestic flight from Quito or Guayaquil, to Baltra or San Cristóbal. Foreign visitors pay a US$200 park entry fee (US$100 under 12) on arrival and buy a US$20 Transit Control Card before flying. The islands are a year-round destination: December to May brings warm, clear water for snorkelling; June to November is cooler, and Ecuador's tourism ministry calls it the best time for sharks, penguins and seabirds. The house offers both ways to see them: a small yacht between the islands, or a lodge on Santa Cruz with day boats.",
+    facts: [
+      ["Where", "About 1,000 km off the coast of Ecuador, at the confluence of three ocean currents (UNESCO)"],
+      ["Protected", "UNESCO World Heritage Site since 1978; national park since 1959 over 97% of the land; marine reserve since 1986, 133,000 km² since 1998"],
+      ["Park entry fee", "US$200 for foreign visitors 12 and over, US$100 under 12, under 2s free; paid to park rangers on arrival (Galápagos National Park Directorate); confirmed when you book"],
+      ["Transit Control Card", "US$20, from the Galápagos Government Council before you fly; keep it until you leave"],
+      ["Fly into", "Seymour Airport (GPS) on Baltra or San Cristóbal (SCY), from Quito or Guayaquil only"],
+      ["Best time", "Year-round: warm, clear water December to May; cooler June to November"],
+      ["Visitor sites", "176 in the national park: 91 marine and 85 on land"],
+      ["In the Ledger", "Partner-vetted yachts and lodges · not yet founder-visited"],
+    ],
+    proof: "James hasn't been to the Galápagos yet. Every yacht and lodge here is vetted and approved by the partners who run them, with their own photographs, and James plans to sail the islands soon; the page says so plainly.",
+    months: [
+      { area: "In the water", note: "Warm, clear water for snorkelling, December to May (Ministry of Tourism)", months: M("BBBBBggggggB") },
+      { area: "Wildlife at sea", note: "Cooler, Humboldt Current: sharks, penguins and seabirds, June to November (Ministry of Tourism)", months: M("gggggBBBBBBg") },
+    ],
+    airports: [["Seymour Airport (GPS), Baltra", "Where most yachts board; a bus and a barge across the Itabaca Channel link it to Santa Cruz"], ["San Cristóbal (SCY)", "Beside Puerto Baquerizo Moreno; Ecoventura's yachts sail from here"], ["Quito (UIO) and Guayaquil (GYE)", "The only airports with flights to the islands"]],
+    transfers: [["Quito → Galápagos", "About 2.5 to 3 hours by air, with a stop"], ["Guayaquil → Galápagos", "About 1.5 to 2 hours by air"], ["Baltra → Santa Cruz", "Bus and barge across the Itabaca Channel; cruise guests are met by their naturalist guide"]],
+    highlights: [
+      { title: "The first World Heritage Site", line: "1978", body: "With the City of Quito, the Galápagos were the first two properties ever inscribed on UNESCO's World Heritage List." },
+      { title: "Where three currents meet", line: "The ocean", body: "UNESCO describes the islands as lying at the confluence of three ocean currents, about 1,000 km off the Ecuadorian coast." },
+      { title: "Darwin's islands", line: "Evolution", body: "Darwin's visit in 1835 inspired his theory of evolution by natural selection, in UNESCO's words." },
+      { title: "127 islands, islets and rocks", line: "The archipelago", body: "Nineteen of them large, per UNESCO; the national park covers 97% of the land." },
+      { title: "A marine reserve", line: "Below the surface", body: "Created in 1986 and extended to 133,000 km² in 1998, per UNESCO." },
+      { title: "176 visitor sites", line: "On land and at sea", body: "The Galápagos National Park Directorate lists 91 marine sites and 85 on land." },
+    ],
+    firstTime: {
+      title: "Before You Go: Fees, Cards and the Park's Rules",
+      intro: "The Galápagos are a national park, and arriving is a short checklist. These are the official rules, as the Park Directorate and the Government Council publish them.",
+      points: [
+        ["The park fee", "US$200 for foreign visitors 12 and over, US$100 under 12 and free for under 2s, paid to park rangers at Baltra or San Cristóbal; half goes to managing and conserving the protected areas."],
+        ["The Transit Control Card", "US$20, from the Galápagos Government Council at Quito or Guayaquil airport (the tourism ministry says it is bought online and presented there). Keep it until you leave."],
+        ["Biosecurity", "Checked luggage is inspected at Quito or Guayaquil before check-in, carry-on is checked for organic products on arrival, and the cabin is sprayed before landing."],
+        ["Two metres", "Keep two metres from wildlife, cameras included, and never touch or feed the animals."],
+        ["Take nothing, stay on the trail", "Take nothing from the islands, not even stones or sand, keep to marked trails, and travel only with authorised operators."],
+      ],
+    },
+    suits: [
+      { who: "Families", line: "A tented camp on Santa Cruz with no minimum age, and yachts that take children from 6 or of any age on a charter.", href: "/stays/galapagos-safari-camp", label: "Galapagos Safari Camp" },
+      { who: "Couples", line: "A lodge on a crater rim with its own yacht by day, or a yacht with a balcony on every cabin.", href: "/stays/pikaia-lodge", label: "Pikaia Lodge" },
+      { who: "Snorkellers", line: "December to May, when the ministry says the water is warm and clear." },
+      { who: "Wildlife lovers", line: "June to November, which the ministry calls the best time for sharks, penguins and seabirds.", href: "/voyages/galapagos", label: "Galápagos yachts" },
+    ],
+    howTo: {
+      title: "How to See the Galápagos",
+      intro: "Two ways in: sleep aboard a small yacht that moves between islands, or stay on Santa Cruz and see them by day boat. Many do both.",
+      options: [
+        { name: "A small yacht, 3 to 14 nights", body: "Yachts and catamarans from four partners, for 12 to 20 guests, sailing between the islands with naturalist guides.", href: "/voyages/galapagos", label: "Every Galápagos ship" },
+        { name: "A lodge on Santa Cruz", body: "Galapagos Safari Camp or Pikaia Lodge in the highlands, with day boats to other islands; Pikaia has its own yacht.", href: "#stays", label: "The stays the house selected" },
+        { name: "Land, then sea", body: "A few nights on Santa Cruz, then a yacht that boards at Baltra, the airport both lodges are reached from.", href: "/voyages/galapagos#island-stays-h", label: "How the pairing works" },
+        { name: "Plan it with James", body: "Tell the house what you want from the islands and it will set the season, the yacht and the lodge.", href: "/plan?place=Gal%C3%A1pagos", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Continue through Ecuador",
+    onward: [
+      { name: "Ecuador & Galápagos", href: "/destinations/south-america/ecuador-galapagos", line: "The Andes, Quito and the Amazon on the mainland" },
+      { name: "The Amazon by river", href: "/voyages/amazon", line: "Small river ships in Ecuador, Peru and Brazil" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "How much is the Galápagos entry fee?", a: "US$200 for foreign visitors 12 and over and US$100 under 12, paid to park rangers on arrival at Baltra or San Cristóbal. Under 2s are free. The Galápagos National Park Directorate sets it; the house confirms the current amount when you book." },
+      { q: "What is the Galápagos Transit Control Card?", a: "A US$20 card from the Galápagos Government Council, issued at Quito or Guayaquil airport before your flight. Keep it until you leave the islands." },
+      { q: "How do you get to the Galápagos?", a: "Only by domestic flight from Quito or Guayaquil, to Baltra (Seymour Airport) or San Cristóbal: about 2.5 to 3 hours from Quito, with a stop, and 1.5 to 2 hours from Guayaquil." },
+      { q: "When is the best time to visit the Galápagos?", a: "Year-round. December to May brings warm, clear water for snorkelling; June to November is cooler, and Ecuador's tourism ministry calls it the best time for sharks, penguins and seabirds." },
+      { q: "What are the main Galápagos park rules?", a: "Keep two metres from wildlife, never touch or feed animals, take nothing away, stay on marked trails and travel only with authorised operators, as the Galápagos National Park Directorate sets out." },
+      { q: "Why are the Galápagos a World Heritage Site?", a: "They were among the first two properties ever inscribed, in 1978: islands about 1,000 km offshore where three ocean currents meet, whose wildlife inspired Darwin's theory of evolution." },
+    ],
+    geo: { lat: -0.7, lng: -90.5 },
+    sources: [
+      { title: "UNESCO World Heritage Centre: Galápagos Islands", url: "https://whc.unesco.org/en/list/1/" },
+      { title: "UNESCO: the first World Heritage properties, 1978", url: "https://whc.unesco.org/en/events/1468/" },
+      { title: "Galápagos National Park Directorate: entry fee", url: "https://galapagos.gob.ec/tributo-de-ingreso/" },
+      { title: "Galápagos National Park Directorate: arriving in the islands (fee, Transit Control Card, biosecurity)", url: "https://galapagos.gob.ec/informacion-de-interes-para-la-llegada-a-las-islas/" },
+      { title: "Galápagos National Park Directorate: the visit rules campaign", url: "https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/" },
+      { title: "Galápagos National Park Directorate: visitor sites", url: "http://www.galapagos.gob.ec/en/sitios-de-visita/" },
+      { title: "Ecuador Ministry of Tourism: how to get to the Galápagos and when to go", url: "https://ecuador.travel/como-llegar-a-galapagos/" },
+      { title: "Ecuador Ministry of Tourism: the Galápagos", url: "https://onlyin.ecuador.travel/galapagos/" },
+    ],
   },
 
   // Rapa Nui: the first destination-first place under a library country (Chile → Rapa Nui →

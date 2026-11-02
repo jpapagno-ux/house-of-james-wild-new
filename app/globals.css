@@ -123,6 +123,14 @@
   .ship-route .jw-frame.chart { padding: 6px; }
 }
 @media (min-width: 1024px) { .ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: calc(100svh - 430px); min-height: 360px; } }
+/* On a chart narrower than 480px the overlay card shrinks to one line (day and status), so it
+   never covers half the map (voyages audit, 1 Nov 2026). */
+.ship-route { container-type: inline-size; }
+@container (max-width: 480px) {
+  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
+  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
+  .jwc .overlay .readout { border-top: 0; padding: 0; }
+}
 
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
 @keyframes jw-spin { to { transform: rotate(360deg); } }

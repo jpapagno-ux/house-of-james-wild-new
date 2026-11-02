@@ -63,7 +63,8 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
   if (film) {
     return (
       <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
-        <ShortFilmBackdrop film={film} />
+        {/* the framed film clears the header and its volume row (mobile 80px, desktop 168px) */}
+        <ShortFilmBackdrop film={film} frame="top-[100px] lg:top-[192px] bottom-[52px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/5 to-black/75 landscape:from-black/25 landscape:via-transparent landscape:to-black/45" />
         <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
         {body}

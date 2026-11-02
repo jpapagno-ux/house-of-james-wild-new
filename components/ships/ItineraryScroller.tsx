@@ -25,14 +25,32 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
   const last = useRef<string>("");
   const it = itineraries[tab];
 
+  // The chart follows the log, never the other way round (audit, 1 Nov 2026: the list read Day 3
+  // while the chart still showed the globe). If the engine is not ready yet, the day waits and is
+  // sent the moment window.chartDay appears, so the chart opens on the day in view.
+  const pending = useRef<{ t: number; i: number } | null>(null);
   const sail = (t: number, i: number) => {
     const d = itineraries[t]?.days[i];
-    if (!d || typeof window.chartDay !== "function") return;
+    if (!d) return;
     const k = `${t}:${d.day}`;
     if (last.current === k) return;
+    if (typeof window.chartDay !== "function") { pending.current = { t, i }; return; }
     last.current = k;
+    pending.current = null;
     window.chartDay(`R${t}`, d.day);
   };
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      if (!pending.current || typeof window.chartDay !== "function") return;
+      const p = pending.current;
+      pending.current = null;
+      last.current = "";
+      sail(p.t, p.i);
+    }, 250);
+    const stop = window.setTimeout(() => window.clearInterval(id), 20000);
+    return () => { window.clearInterval(id); window.clearTimeout(stop); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // when the chart plays on its own, the log follows it
   useEffect(() => {
@@ -64,12 +82,9 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
     if (!list || !("IntersectionObserver" in window)) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const items = Array.from(list.querySelectorAll<HTMLElement>("[data-day-index]"));
+    // With reduced motion the log follows taps only, so the list and the chart never disagree.
+    if (reduce) return;
     const seen = new Set<number>();
-    let touched = false;
-    const start = () => { touched = true; };
-    window.addEventListener("wheel", start, { passive: true, once: true });
-    window.addEventListener("touchmove", start, { passive: true, once: true });
-    window.addEventListener("keydown", start, { once: true });
     const io = new IntersectionObserver((entries) => {
       for (const e of entries) {
         const i = Number((e.target as HTMLElement).dataset.dayIndex);
@@ -78,10 +93,10 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
       if (!seen.size) return;
       const i = Math.max(...seen);
       setActive(i);
-      if (!reduce && touched) sail(tab, i);
+      sail(tab, i);
     }, { rootMargin: "-42% 0px -52% 0px" });
     items.forEach((el) => io.observe(el));
-    return () => { io.disconnect(); window.removeEventListener("wheel", start); window.removeEventListener("touchmove", start); window.removeEventListener("keydown", start); };
+    return () => io.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
 

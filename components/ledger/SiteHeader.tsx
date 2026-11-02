@@ -124,8 +124,13 @@ function DestinationsMenu({ light }: { light: boolean }) {
   );
 }
 
-export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
+// tuck (ship pages, voyages audit 1 Nov 2026): on phones the header slides away while the reader
+// scrolls down past the hero and comes back on the way up, so the page's own sticky section nav
+// and action bar are the only fixed chrome. It marks <html data-chrome="tucked"> so sticky
+// elements below can rise into the space.
+export default function SiteHeader({ overlay = false, tuck = false }: { overlay?: boolean; tuck?: boolean }) {
   const [solid, setSolid] = useState(!overlay);
+  const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
   const [searching, setSearching] = useState(false);
 
@@ -159,13 +164,33 @@ export default function SiteHeader({ overlay = false }: { overlay?: boolean }) {
   }, [overlay]);
 
 
+  useEffect(() => {
+    if (!tuck) return;
+    let last = window.scrollY;
+    const root = document.documentElement;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const end = document.getElementById("hero-end");
+      const past = end ? end.getBoundingClientRect().top <= 0 : y > 400;
+      const phone = window.innerWidth < 1024;
+      const down = y > last + 4, up = y < last - 4;
+      if (Math.abs(y - last) > 4) last = y;
+      const next = phone && past && (down || (!up && root.dataset.chrome === "tucked"));
+      setTucked(next);
+      if (next) root.dataset.chrome = "tucked"; else delete root.dataset.chrome;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onScroll); delete root.dataset.chrome; };
+  }, [tuck]);
+
   const light = overlay && !solid && !open;
   const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block whitespace-nowrap hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
 
   return (
     <>
     <header
-      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-colors duration-500 ${
+      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-[background-color,transform] duration-300 ${tucked && !open ? "-translate-y-full" : ""} ${
         light ? "bg-transparent text-white" : "bg-gradient-to-b from-paper via-paper to-[#FBF5F4] backdrop-blur border-b ledger-border text-ink"
       }`}
     >

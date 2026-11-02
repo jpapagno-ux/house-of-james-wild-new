@@ -1,54 +1,82 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { Check, X } from "lucide-react";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import { SectionHead, WhyChose } from "@/components/record/Sections";
 import { GalleryMosaic } from "@/components/record/Frame";
 import { offersFor } from "@/lib/content/offers/offers";
 import { absoluteUrl } from "@/lib/seo";
-import { cabinFrom, cruiseOnly, factOf, nightsLabel, packages, priceLine, pricedCabins, publicNote, routeOf, undash, type ShipRecord } from "@/lib/content/ships/types";
+import { filmSchema, type ShortFilm } from "@/lib/content/films";
+import { cabinFrom, cruiseOnly, factOf, nightsLabel, packages, priceLine, pricedCabins, publicNote, rateBasisOf, routeOf, undash, type ShipRecord } from "@/lib/content/ships/types";
 import { shipPath, waterFor, type ShipEntry } from "@/lib/content/ships";
+import { shipMap } from "@/lib/content/ships/maps";
 import ShipTemplate from "./ShipTemplate";
 import CabinsDeck from "./CabinsDeck";
 import DatesRates from "./DatesRates";
 import NoDates from "./NoDates";
 import ShipGlance from "./ShipGlance";
-import { NILE_CHART, readRoute, shipMapHtml, shipRouteId } from "@/lib/content/ships/routes";
 
-// A ship filed as data (lib/content/ships/<waters>/<slug>.json) on the shared
-// template: the A&K Sanctuary Nile fleet first. Every photograph is credited
-// to its owner, every price is derived from the published departures.
+// Every ship on the one shared template (voyages plan, 1 Nov 2026): Aliikai and the
+// A&K Sanctuary Nile fleet print the same sections, headings, nav and CTA. A ship with
+// more to say (Aliikai's charter, first-time route and founder story) passes it in
+// through `extra`, which slots into the same frame. Every price is derived from the
+// published departures; every photograph is credited to its owner where one is filed.
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
 
-export default function RecordShip({ entry, sisters }: { entry: ShipEntry; sisters: ShipEntry[] }) {
+export type ShipExtra = {
+  /** A vessel's own short film playing as the hero; the film slot below then steps aside. */
+  heroFilm?: ShortFilm;
+  stamp?: ReactNode;
+  eyebrow?: string;
+  /** Sections of her own, each with a nav item placed before Dates & rates (`before`) or before FAQ. */
+  nav?: { label: string; id: string; before?: "dates" | "faq" }[];
+  top?: ReactNode;
+  lead?: ReactNode;
+  body?: ReactNode;
+  after?: ReactNode;
+  jsonld?: object[];
+};
+
+export default function RecordShip({ entry, sisters, extra = {} }: { entry: ShipEntry; sisters: ShipEntry[]; extra?: ShipExtra }) {
   const s = entry.data as ShipRecord;
-  const w = waterFor(entry)!;
+  const w = waterFor(entry);
   const path = shipPath(s.slug);
   const credit = entry.credit;
   const price = priceLine(s);
+  const basis = rateBasisOf(s);
   const types = pricedCabins(s);
   const cruise = cruiseOnly(s);
   const journeys = packages(s);
   const offers = entry.offerRefs.flatMap((r) => offersFor(r));
-  const guests = factOf(s, /guest/i);
-  const ages = factOf(s, /child|age/i);
-  const route = routeOf(s);
+  const guests = s.glance?.guests ?? factOf(s, /guest/i);
+  const ages = s.glance?.ages ?? factOf(s, /child|age/i);
+  const route = s.glance?.route ?? routeOf(s);
   const plan = `/plan?trip=${encodeURIComponent(s.name)}`;
   const t = (x: string) => undash(x);
-  // The house route chart: one route file per itinerary with days, in tab order.
-  const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
-  const map = routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: "nile", chart: NILE_CHART, title: `Route map of ${s.name} on the Nile` }) } : null;
+  const map = shipMap(entry);
+  const glanceBasis = basis === "per-night" && price.kind === "cruise" ? "per person for the voyage, two sharing, plus tax" : price.basis;
 
-  const nav: [string, string][] = [["Overview", "overview"], ["Itinerary", "itinerary"], ["Cabins", "cabins"], ...(s.deckPlans.length ? [["Deck plan", "deck-plan"] as [string, string]] : []), ["Dates & rates", "dates"] as [string, string], ...(offers.length ? [["Offers", "offers"] as [string, string]] : []), ["FAQ", "faq-heading"]];
+  const own = extra.nav ?? [];
+  const nav: [string, string][] = [
+    ["Overview", "overview"], ["Itinerary", "itinerary"], ["Cabins", "cabins"],
+    ...(s.deckPlans.length ? [["Deck plan", "deck-plan"] as [string, string]] : []),
+    ...own.filter((x) => x.before === "dates").map((x) => [x.label, x.id] as [string, string]),
+    ["Dates & rates", "dates"],
+    ...(offers.length ? [["Offers", "offers"] as [string, string]] : []),
+    ...own.filter((x) => x.before !== "dates").map((x) => [x.label, x.id] as [string, string]),
+    ["FAQ", "faq-heading"],
+  ];
+  const crumbs = [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, ...(w ? [{ name: w.name, path: w.path }] : []), { name: s.name, path }];
 
-  const trips = s.itineraries.map((it) => {
+  const trips = s.itineraries.filter((it) => it.days.length).map((it) => {
     const deps = cruise.filter((d) => d.itinerary === it.name || d.itinerary.includes(it.name) || /either/i.test(d.direction));
     const low = (d: (typeof deps)[number]) => Math.min(...Object.values(d.prices).filter((p): p is number => typeof p === "number" && p > 0));
     return {
       "@type": "TouristTrip",
       "@id": absoluteUrl(`${path}#${it.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`),
       name: `${it.name} aboard ${s.name}`,
-      description: `${it.nights} nights on the ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`,
+      description: t(`${it.nights} nights in ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`),
       touristType: s.suits.map((x) => x.who),
       itinerary: { "@type": "ItemList", itemListElement: it.days.map((d, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Place", name: d.place, geo: { "@type": "GeoCoordinates", latitude: d.lat, longitude: d.lng } } })) },
       // Season bands, never invented sailing dates: each fare is valid from the band's start to its end.
@@ -57,9 +85,19 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
     };
   });
   const jsonld = [
-    { "@context": "https://schema.org", "@type": "ItemList", "@id": absoluteUrl(`${path}#voyages`), name: `${s.name} voyages`, itemListElement: trips.map((item, i) => ({ "@type": "ListItem", position: i + 1, item })) },
-    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [["Home", "/"], ["Voyages", "/voyages"], [w.name, w.path], [s.name, path]].map(([name, p], i) => ({ "@type": "ListItem", position: i + 1, name, item: absoluteUrl(p) })) },
+    ...(trips.length ? [{ "@context": "https://schema.org", "@type": "ItemList", "@id": absoluteUrl(`${path}#itineraries`), name: `${s.name} itineraries`, itemListElement: trips.map((item, i) => ({ "@type": "ListItem", position: i + 1, item })) }] : []),
+    ...(extra.heroFilm ? [filmSchema(extra.heroFilm, absoluteUrl(path))] : []),
+    ...(extra.jsonld ?? []),
   ];
+
+  const cabinCount = s.cabins.reduce((a, c) => a + (c.count ?? 0), 0) || s.cabins.length;
+  const cabinIntro = basis === "per-night"
+    ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
+    : `${cabinCount} cabins and suites${guests ? ` for ${guests} guests` : ""}. ${cruise.length ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : `Rates are on request: ${s.operator} publishes no cruise-only fare for her.`}`;
+  const datesIntro = basis === "per-night"
+    ? "Every published sailing by month, with its length and the fare per person for the voyage."
+    : cruise.length ? (cruise.some((d) => d.dateTo) ? `Cruise fares by season as ${s.operator} publishes them, per person for each cabin type.` : "Every published departure by month, with the fare per person for each cabin type.")
+      : `${s.operator} publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside ${s.operator} land and cruise journeys, listed below with their full-journey fares.`;
 
   return (
     <ShipTemplate
@@ -67,47 +105,58 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
         name: s.name,
         path,
         hero: s.hero,
+        heroFilm: extra.heroFilm,
         heroCredit: credit,
         pathway: s.pathway,
-        eyebrow: `Wild & Co Voyages · ${s.brandLine} · ${s.waters}, ${s.country}`,
+        eyebrow: extra.eyebrow ?? t(`Wild & Co Voyages · ${s.brandLine} · ${s.waters}, ${s.country}`),
         tagline: t(s.tagline),
-        glance: <ShipGlance label={price.label} price={price.amount} basis={price.basis} facts={[["Route", route], ["Nights", nightsLabel(s)], ["Guests", guests ?? "To confirm"], ["Ages", ages ?? "Ask us"]]} cta={{ label: "Plan with James", href: plan }} />,
+        stamp: extra.stamp,
+        glance: <ShipGlance compact={!!extra.heroFilm} label={price.label} price={price.amount} basis={glanceBasis} facts={[["Route", t(route)], ["Nights", nightsLabel(s)], ["Guests", guests ?? "To confirm"], ["Ages", ages ? t(ages) : "Ask us"]]} cta={{ label: "Plan with James", href: plan }} />,
         nav,
         cta: { label: "Plan with James", href: plan, house: true },
         // Each fact once: route, nights, guests and ages live in the glance bar, cabins in Cabins.
-        overview: { answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
-        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, days: i.days.map((d) => ({ ...d, title: t(d.title), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: s.itineraries.length > 1 ? "Pick a direction, then scroll the log: the chart sails the river day by day as you read." : "Scroll the log and the chart sails the river day by day as you read." },
-        film: { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
+        overview: { quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
+        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read." },
+        film: extra.heroFilm ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
         faqTitle: `What Else Should You Know About ${s.name}?`,
         host: { key: `voyage:${s.slug}`, name: s.name },
-        action: { price: price.kind === "cruise" ? price.amount : undefined, basis: "pp, cruise", cta: "Plan with James", href: plan, house: true },
-        crumbs: [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: w.name, path: w.path }, { name: s.name, path }],
+        action: { price: price.kind === "cruise" ? price.amount : undefined, basis: basis === "per-night" ? "pp, voyage" : "pp, cruise", cta: "Plan with James", href: plan, house: true },
+        crumbs,
         jsonld,
       }}
       lead={<>
+        {extra.top}
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
-          status={<p className="text-[14px] ledger-muted"><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {s.operator}, {s.brandLine}</p>} />
+          status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {s.operator}, {s.brandLine}</>}</p>} />
         {s.suits.length > 0 && (
-          <ul id="suits" className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4" aria-label={`Who ${s.name} suits`}>
-            {s.suits.map((x) => <li key={x.who} className="border ledger-border p-4"><h3 className="ledger-display text-[18px] leading-snug">{t(x.who)}</h3><p className="mt-1.5 text-[14.5px] leading-relaxed ledger-muted">{t(x.line)}</p></li>)}
+          <ul id="suits" className={`mt-6 grid gap-4 md:grid-cols-2 ${s.suits.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`} aria-label={`Who ${s.name} suits`}>
+            {s.suits.map((x) => (
+              <li key={x.who} className="border ledger-border p-4 flex flex-col">
+                <h3 className="ledger-display text-[18px] leading-snug">{t(x.who)}</h3>
+                <p className="mt-1.5 text-[14.5px] leading-relaxed ledger-muted flex-1">{t(x.line)}</p>
+                {x.href && x.voyage && <Link href={x.href} className="mt-3 self-start inline-flex items-center min-h-[44px] ledger-btn-ghost">{t(x.voyage)} →</Link>}
+              </li>
+            ))}
           </ul>
         )}
-        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} /><p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}</p></>}
+        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} />{credit && <p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}</p>}</>}
+        {extra.lead}
       </>}
       body={<>
         <CabinsDeck
-          cabins={s.cabins.map((c) => ({ ...c, features: c.features.map(t), from: cabinFrom(s, c.type) }))}
+          cabins={s.cabins.map((c) => ({ ...c, type: c.type, features: c.features.map(t), from: cabinFrom(s, c.type) }))}
           decks={s.deckPlans}
           credit={credit}
-          basis="per person, double"
+          basis={basis === "per-night" ? "per person, per night" : "per person, double"}
           cabinTitle="Cabins"
           deckTitle="Deck plan"
           heads={{
-            cabins: <SectionHead eyebrow="Cabins & suites" title={`Which Cabin Should You Choose on ${s.name}?`} icon="tree-ring" intro={`${s.cabins.reduce((a, c) => a + (c.count ?? 0), 0) || s.cabins.length} cabins and suites${guests ? ` for ${guests} guests` : ""}. ${cruise.length ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : "Rates are on request: A&K publishes no cruise-only fare for her."}`} />,
+            cabins: <SectionHead eyebrow="Cabins & suites" title={`Which Cabin Should You Choose on ${s.name}?`} icon="tree-ring" intro={cabinIntro} />,
             decks: <SectionHead eyebrow="Deck plan" title="Where Is Each Cabin on the Ship?" icon="wave" />,
           }}
         />
+        {extra.body}
         {s.departures.length === 0 && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail Next?`} icon="sun" />
@@ -116,10 +165,9 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
         )}
         {s.departures.length > 0 && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun"
-              intro={cruise.length ? (cruise.some((d) => d.dateTo) ? "Cruise fares by season as Abercrombie & Kent publishes them, per person for each cabin type." : "Every published departure by month, with the fare per person for each cabin type.") : `Abercrombie & Kent publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside A&K land and cruise journeys, listed below with their full-journey fares.`} />
-            <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={cruise} title={journeys.length ? "Cruise fares by season" : undefined} note={publicNote(s.pricesNote)} />
-            <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} title={`Aboard ${s.name} inside A&K journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />
+            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={datesIntro} />
+            <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={cruise} basis={basis} title={journeys.length ? "Cruise fares by season" : undefined} note={publicNote(s.pricesNote)} />
+            <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} basis={basis} title={`Aboard ${s.name} inside ${s.operator} journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">
                 {s.inclusions.length > 0 && <div><p className="ledger-eyebrow ledger-crimson">Included</p><ul className="mt-3 space-y-2">{s.inclusions.map((x) => <li key={x} className="flex gap-2 text-[15px]"><Check className="w-4 h-4 mt-0.5 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
@@ -131,7 +179,7 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
         <OfferPanel offers={offers} volume="voyages" title="Offers aboard" />
         {sisters.length > 0 && (
           <section id="sisters" className={SEC}>
-            <SectionHead eyebrow={`${s.brandLine.replace(/^an?\s+/i, "")} fleet · ${s.waters}`} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} />
+            <SectionHead eyebrow={t(`${s.brandLine.replace(/^an?\s+/i, "")} fleet · ${s.waters}`)} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} />
             <ul className="mt-7 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5 md:mx-0 md:px-0">
               {sisters.map((e) => {
                 const x = e.data as ShipRecord;
@@ -143,17 +191,18 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
                       <div className="p-4">
                         <p className="ledger-eyebrow ledger-crimson">{x.type === "dahabiya" ? "Dahabiya" : "Riverboat"} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
-                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `from ${f.amount}` : f.kind === "journey" ? `A&K journeys from ${f.amount}` : f.kind === "tba" ? "new dates to be announced" : "rates on request"}</p>
+                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "new dates to be announced" : "rates on request"}</p>
                       </div>
                     </Link>
                   </li>
                 );
               })}
             </ul>
-            <p className="mt-1 text-[12px] ledger-muted">Photographs: {credit}</p>
+            {credit && <p className="mt-1 text-[12px] ledger-muted">Photographs: {credit}</p>}
           </section>
         )}
       </>}
+      after={extra.after}
     />
   );
 }

@@ -65,7 +65,7 @@ export function ShortFilmPanel({ film, className = "", sizes = "(max-width: 768p
  * 9:16 film to 16:9 would lose two-thirds of it and soften the picture).
  * Only the player for the screen's current shape loads.
  */
-export function ShortFilmBackdrop({ film, top = 116, bottom = 52 }: { film: ShortFilm; top?: number; bottom?: number }) {
+export function ShortFilmBackdrop({ film, top = 116, bottom = 52, frame }: { film: ShortFilm; top?: number; bottom?: number; /** Classes placing the framed film on wide screens (top/bottom), in place of `top`/`bottom`. */ frame?: string }) {
   const reduce = useReducedMotionSafe();
   const [ready, setReady] = useState(false);
   const [tall, setTall] = useState<boolean | null>(null);
@@ -90,7 +90,7 @@ export function ShortFilmBackdrop({ film, top = 116, bottom = 52 }: { film: Shor
       </div>
       <div className="absolute inset-0 overflow-hidden portrait:hidden" aria-hidden="true">
         <Image src={film.poster} alt="" fill priority quality={60} sizes="100vw" className="object-cover scale-110 blur-2xl brightness-[0.55] saturate-[1.15]" />
-        <div className="absolute right-[5vw] xl:right-[9vw] aspect-[9/16] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.75)] ring-1 ring-white/25" style={{ top, bottom }}>
+        <div className={`absolute right-[5vw] xl:right-[9vw] aspect-[9/16] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.75)] ring-1 ring-white/25 ${frame ?? ""}`} style={frame ? undefined : { top, bottom }}>
           <Image src={film.poster} alt="" fill priority quality={85} sizes="40vw" className="object-cover" />
           <Player film={film} on={ready && tall === false} className="inset-0 w-full h-full scale-[1.08]" />
           <Credit film={film} />

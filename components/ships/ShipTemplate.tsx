@@ -5,7 +5,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
-import { Overview, RecordHero, RecordNav, type Img } from "@/components/record/Sections";
+import { Overview, RecordHero, type Img } from "@/components/record/Sections";
 import { RecordActionBar } from "@/components/record/Frame";
 import type { ShortFilm } from "@/lib/content/films";
 import { hostFor } from "@/lib/content/hosts";
@@ -15,10 +15,11 @@ import { pathway as pathwayOf, type Pathway } from "@/lib/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import ShipFilm from "./ShipFilm";
 import ShipItinerary from "./ShipItinerary";
+import ShipNav from "./ShipNav";
 
 // The shared ship page (Voyages, approved by James 1 Nov 2026). One frame for
 // every vessel, in this order:
-//   hero + glance → section nav → overview (the AEO answer first) → [lead]
+//   hero + glance → sticky section nav (ShipNav: 44px targets, scroll-spy) → overview (the AEO answer first) → [lead]
 //   → film slot → animated itinerary → [body: cabins, deck plan, dates, offers,
 //   sister ships…] → host → [after] → FAQ (+ FAQPage) → phone action bar.
 // A ship brings its data and, where it has more to say (Aliikai's charter and
@@ -38,7 +39,8 @@ export type ShipFrame = {
   cta: { label: string; href: string; house?: boolean };
   overview: { quote?: string; answer: string; facts: [string, string][]; paragraphs: string[] };
   itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string };
-  film: { film: FilmData | undefined; poster: Img; credit?: string };
+  /** The film slot; null when the vessel's own film already plays as the hero (never "Film coming soon" then). */
+  film: { film: FilmData | undefined; poster: Img; credit?: string } | null;
   faqs: [string, string][];
   faqTitle: string;
   host: { key: string; name: string };
@@ -55,16 +57,16 @@ export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFr
   const secondary = primary && ship.pathway ? ship.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
   return (
     <div className="theme-sea theme-sea-page">
-      <SiteHeader overlay />
+      <SiteHeader overlay tuck />
       <main id="main">
         <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />
-        <RecordNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
+        <ShipNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div className="pt-6"><Breadcrumbs trail={ship.crumbs} /></div>
+          <div className="pt-4"><Breadcrumbs trail={ship.crumbs} touch /></div>
           {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
           <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} />
           {lead}
-          <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />
+          {ship.film && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
           <ShipItinerary ship={ship.name} {...ship.itinerary} />
           {body}
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={ship.host.name} kind="vessel" /></div>

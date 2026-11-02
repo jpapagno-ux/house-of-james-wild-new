@@ -28,7 +28,7 @@ export const metadata = buildMetadata({
 function answer() {
   const parts = ships.map((s) => {
     const g = factOf(s, /guest/i);
-    return `${s.name} (${s.type === "dahabiya" ? "a dahabiya" : "a riverboat"}${g ? ` for ${g} guests` : ""}, ${nightsLabel(s)}${s.status !== "sailing" ? `, ${s.status}` : ""}${s.suits[0] ? `; best for ${s.suits[0].who.toLowerCase()}` : ""})`;
+    return `${s.name} (${s.type === "dahabiya" ? "a dahabiya" : "a riverboat"}${g ? ` for ${g} guests` : ""}, ${nightsLabel(s)}${s.status !== "sailing" ? `, ${s.status}` : ""}${s.suits[0] ? `; best for ${s.suits[0].who.charAt(0).toLowerCase()}${s.suits[0].who.slice(1)}` : ""})`;
   });
   return `Abercrombie & Kent sails ${ships.length} A&K Sanctuary ships on the Nile: ${parts.join(". ")}. Each ship below lists its cabins, deck plan, day by day and published fares${Number.isFinite(low) ? `; cruise-only fares start at ${usd(low)} per person` : ""}.`;
 }

@@ -2060,6 +2060,141 @@
    "placeSlug": null
   },
   {
+   "slug": "amanpuri",
+   "name": "Amanpuri",
+   "ledgerId": "STY-2026-000584",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Aman's first resort, on its own peninsula above the Andaman Sea on Phuket's west coast",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpuri/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Phuket International Airport (HKT)",
+   "airportDirections": "A 30 minute drive from Phuket International Airport (HKT).",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Aman's fact sheet lists 40 guest pavilions and 40 villas.",
+     "Pavilions: Pavilion, Garden Pavilion, Garden Pool Pavilion, Partial Ocean Pool Pavilion, Ocean Pool Pavilion, Deluxe Ocean Pool Pavilion, Premium Ocean Pool Pavilion and the Two-Bedroom Pool Pavilion.",
+     "Villas: Garden and Ocean Villas of three to nine bedrooms, each with a private swimming pool, a dedicated Villa Host and a personal Thai chef, including the Five-Bedroom Ocean and Garden Villas and the Nine-Bedroom Ocean Villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Phang Nga Bay excursions",
+     "Similan and Phi Phi island trips",
+     "Scuba diving",
+     "Beach watersports",
+     "Cruising on the Andaman Sea",
+     "Wellness immersions"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Holistic Wellness Centre with 12 treatment rooms",
+     "27 metre main pool and 20 metre lap pool",
+     "Four floodlit tennis courts",
+     "Eco-Beach Discovery Centre for children 5 and above",
+     "PADI dive centre and beach watersports",
+     "Eight places to eat and drink, including Arva, Nama and Buabok"
+    ]
+   },
+   "onlyHere": [
+    "Aman began here. Amanpuri was the first property in the Aman portfolio, and it still presides over its own peninsula on Phuket's west coast."
+   ],
+   "why": [
+    {
+     "title": "Where Aman Began",
+     "body": "Pool pavilions on a hillside above a private stretch of Phuket's west coast, and villas of three to nine bedrooms with their own pools, a Villa Host and a personal Thai chef, for families and groups who want a whole house with Aman behind it."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Aman on the pages read.",
+    "how_to_get_there": "Fly into Phuket International Airport (HKT); Amanpuri is a 30 minute drive away. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "Aman's first resort, on its own peninsula at Pansea Beach; pool pavilions and villas of three to nine bedrooms; the Holistic Wellness Centre; excursions to Phang Nga Bay, the Similan Islands and Phi Phi.",
+    "who_its_for": "Couples in the pavilions, and families and groups in the villas, which come with a Villa Host and a personal Thai chef. Children 5 and above have daily programmes at the Eco-Beach Discovery Centre."
+   },
+   "faqs": [
+    {
+     "q": "Where is Amanpuri?",
+     "a": "On its own peninsula at Pansea Beach on Phuket's west coast, in Cherngtalay, Thalang District."
+    },
+    {
+     "q": "How far is Amanpuri from Phuket airport?",
+     "a": "Aman says it is a 30 minute drive from Phuket International Airport (HKT)."
+    },
+    {
+     "q": "How many pavilions and villas does Amanpuri have?",
+     "a": "Aman's fact sheet lists 40 guest pavilions and 40 villas. The pavilions sit on a hillside linked by raised walkways; the villas have three to nine bedrooms."
+    },
+    {
+     "q": "What are Amanpuri's largest villas?",
+     "a": "The Nine-Bedroom Ocean Villa, with nine king bedrooms, a private pool, a live in housekeeper and a Thai chef. Aman's fact sheet gives the nine bedroom villas 6,300 to 10,800 sqm of land. Five-Bedroom Ocean and Garden Villas are also offered."
+    },
+    {
+     "q": "What comes with an Amanpuri villa?",
+     "a": "A private swimming pool, a dedicated Villa Host and a personal Thai chef, plus living and dining rooms, a kitchen and outdoor salas, according to Aman."
+    },
+    {
+     "q": "Is Amanpuri good for children?",
+     "a": "Yes. The Eco-Beach Discovery Centre runs daily programmes for children aged 5 and above, with a 10 metre children's pool."
+    },
+    {
+     "q": "What wellness is there at Amanpuri?",
+     "a": "The Holistic Wellness Centre has 12 treatment rooms, a sauna, steam room, cold plunge, a gym, Pilates and Muay Thai studios, with free daily group wellness sessions."
+    },
+    {
+     "q": "Where do you eat at Amanpuri?",
+     "a": "Aman lists eight venues, including Buabok for Thai, Arva for Italian, Nama for Japanese, the Beach Terrace and The Sunset Terrace."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "amazon-field-station-byinkaterra",
    "name": "Amazon Field Station by Inkaterra",
    "ledgerId": "STY-2026-846378",
@@ -20107,6 +20242,137 @@
    "placeSlug": null
   },
   {
+   "slug": "keemala",
+   "name": "Keemala",
+   "ledgerId": "STY-2026-000587",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "38 pool villas on a forested hillside above Kamala, Phuket",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/keemala/g10"
+   ],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "Keemala calls November to April the dry season, with sunshine, low humidity and calm seas; May to October is the green season, with lush scenery and short showers.",
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Phuket International Airport (HKT)",
+   "airportDirections": "Keemala says the drive from Phuket International Airport (HKT) takes around 45 minutes in normal traffic. Airport transfers are extra and must be requested in advance.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "38 pool villas",
+     "16 Clay Pool Cottages, 126 sqm",
+     "7 Tent Pool Villas, 140 sqm",
+     "7 Tree Pool Houses, 169 sqm over two storeys",
+     "8 Bird's Nest Pool Villas, 185 sqm"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Mala Spa treatments",
+     "Holistic activities",
+     "Yoga and meditation",
+     "Cooking classes",
+     "Kamala Beach",
+     "Holistic retreats"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Every villa with a private pool",
+     "Mala Spa",
+     "Mala Restaurant, with Thai, Indian and raw and vegetarian options",
+     "Holistic activities included in villa rates",
+     "Fitness room"
+    ]
+   },
+   "onlyHere": [
+    "Villas built as clay cottages, canvas tents, two storey tree houses and woven bird's nests, scattered across a rainforest hillside inland from Kamala Beach."
+   ],
+   "why": [
+    {
+     "title": "A Village in the Rainforest",
+     "body": "Keemala's 38 pool villas take their shapes from the forest, from clay cottages to tree houses and bird's nests, with Mala Spa and holistic activities included in the villa rate."
+    }
+   ],
+   "facts": {
+    "best_months": "November to April is the dry season, Keemala says, with sunshine, low humidity and calm seas at about 26 to 32 degrees C. May to October is the green season, with short showers and livelier seas.",
+    "how_to_get_there": "Fly into Phuket International Airport (HKT). Keemala says the drive takes around 45 minutes in normal traffic; transfers are extra and booked in advance. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "Clay Pool Cottages, Tent Pool Villas, Tree Pool Houses and Bird's Nest Pool Villas on a forested hillside; Mala Spa; holistic activities included in villa rates.",
+    "who_its_for": "Couples above all. There is no kids' club or children's pool; children can join selected activities with parents, such as LEGO sessions and cooking classes, and must be accompanied by an adult at all times."
+   },
+   "faqs": [
+    {
+     "q": "Where is Keemala?",
+     "a": "In Kamala on Phuket's west coast, on a forested hillside inland from Kamala Beach."
+    },
+    {
+     "q": "How many villas does Keemala have?",
+     "a": "38 pool villas: 16 Clay Pool Cottages, 7 Tent Pool Villas, 7 Tree Pool Houses and 8 Bird's Nest Pool Villas, according to Keemala's FAQ. Keemala also lists Spa Sanctuary Villas."
+    },
+    {
+     "q": "Which is the largest villa?",
+     "a": "The Bird's Nest Pool Villa, at 185 sqm with a 30 sqm pool, in elevated woven architecture."
+    },
+    {
+     "q": "How far is Keemala from Phuket airport?",
+     "a": "Around 45 minutes by road in normal traffic, Keemala says. Airport transfers are extra and should be requested in advance."
+    },
+    {
+     "q": "When is the best time to visit Keemala?",
+     "a": "November to April, the dry season, according to Keemala. May to October is the green season, with lush scenery and short showers."
+    },
+    {
+     "q": "Is Keemala good for children?",
+     "a": "It is better suited to couples. There is no kids' club or children's pool, but children can join selected activities with their parents, and must be accompanied by an adult at all times."
+    },
+    {
+     "q": "What is included in a villa stay?",
+     "a": "Keemala says villa rates include full use of the fitness room and complimentary recreational and holistic activities."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "khwai-leadwood-camp",
    "name": "Khwai Leadwood Camp",
    "ledgerId": "STY-2026-000131",
@@ -34062,6 +34328,138 @@
    "placeSlug": null
   },
   {
+   "slug": "rosewood-phuket",
+   "name": "Rosewood Phuket",
+   "ledgerId": "STY-2026-000585",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Pavilions, villas and houses on a 600 metre beachfront at Emerald Bay",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/rosewood-phuket/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Phuket International Airport (HKT)",
+   "airportDirections": "Phuket International Airport (HKT) is about 40 km away; Rosewood says the drive takes about 60 to 90 minutes, depending on traffic.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rosewood's fact sheet lists 54 suites and 15 villas, plus its houses.",
+     "Pavilions: Garden Pool Pavilion, Partial Ocean View Pool Pavilion and Lagoon Pool Pavilion.",
+     "Villas: Partial Ocean View Pool Villa and Beachfront Pool Villa, with a dedicated butler.",
+     "Houses: The Palm House (four bedrooms, two pools, up to 12 guests), The Beach House (two bedrooms, up to 5 guests), The Coral House and The Ocean House."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Watersports on Emerald Bay",
+     "Thai cooking classes at Ta Khai",
+     "Asaya wellness journeys",
+     "Phuket Old Town",
+     "Padel and tennis",
+     "In villa barbecues"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "600 metre beachfront on Emerald Bay",
+     "Asaya, Rosewood's integrative wellness destination",
+     "Ta Khai for Southern Thai and seafood",
+     "Red Sauce for Italian",
+     "The Shack and Mai by the pool",
+     "Dedicated butler in the villas and houses"
+    ]
+   },
+   "onlyHere": [
+    "A hillside resort that runs down to its own 600 metre stretch of Emerald Bay, with houses of up to four bedrooms for families who want a beach house with Rosewood service."
+   ],
+   "why": [
+    {
+     "title": "A Beach House on Emerald Bay",
+     "body": "Rosewood Phuket sets pavilions and villas into a green hillside above a 600 metre beach, with houses like The Palm House, four bedrooms and two pools for up to twelve, looked after by a dedicated butler."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Rosewood on the pages read.",
+    "how_to_get_there": "Fly into Phuket International Airport (HKT), about 40 km away. Rosewood says the drive takes about 60 to 90 minutes depending on traffic. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "A 600 metre beachfront on Emerald Bay; pool pavilions, beachfront pool villas and houses of up to four bedrooms; Asaya wellness; Ta Khai and Red Sauce.",
+    "who_its_for": "Couples in the pavilions and villas, which take up to three guests, and families and groups in the houses: The Palm House sleeps up to 12 and The Beach House up to 5."
+   },
+   "faqs": [
+    {
+     "q": "Where is Rosewood Phuket?",
+     "a": "On a hillside along Emerald Bay in Patong, on Phuket's west coast, with a 600 metre beachfront."
+    },
+    {
+     "q": "How far is Rosewood Phuket from the airport?",
+     "a": "About 40 km from Phuket International Airport (HKT). Rosewood says the drive takes about 60 to 90 minutes, depending on traffic."
+    },
+    {
+     "q": "How many rooms does Rosewood Phuket have?",
+     "a": "Rosewood's fact sheet lists 54 suites and 15 villas, alongside its houses."
+    },
+    {
+     "q": "What is The Palm House?",
+     "a": "A house with two master bedrooms and two further bedrooms, a pool on each floor, two living rooms, a dining room for 12, a wine cellar and a lift. Rosewood gives its maximum occupancy as twelve, with a dedicated butler."
+    },
+    {
+     "q": "Which room suits a family?",
+     "a": "The houses. The Palm House sleeps up to 12 and The Beach House, two bedrooms, up to 5; a connecting Beachfront Pool Villa can add a third bedroom to The Beach House. Pavilions and villas take up to three guests."
+    },
+    {
+     "q": "Do the villas have private pools?",
+     "a": "Yes. The Beachfront Pool Villa has an infinity pool and a plunge pool on its terrace, with a dedicated butler, according to Rosewood."
+    },
+    {
+     "q": "What is Asaya?",
+     "a": "Rosewood Phuket's integrative wellness destination, offering personalised healing journeys including Traditional Thai Massage and Luk Pra Kob."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "royal-davui-island-resort",
    "name": "Royal Davui Island Resort",
    "ledgerId": "STY-2026-000221",
@@ -41878,7 +42276,7 @@
   },
   {
    "slug": "soneva-fushi-maldives",
-   "name": "Soneva Fushi Maldives \nOriginal Barefoot Luxury",
+   "name": "Soneva Fushi",
    "ledgerId": "STY-2026-000280",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -41900,23 +42298,24 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4613b1fc7_c11b05066_685db5c40c45cd2ca3de402d_fushistays--09.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b08d82126_a01824e28_685db5c4e661c5ee98929314_fushistays--10.jpg"
    ],
-   "bestMonths": "November–April (peak clarity & calm), June–September (green season & quiet luxury)",
-   "bestMonthsNote": "The dry season boasts azure skies, calm seas, and prime diving; green season delivers fewer guests, lush landscape, and value offerings with all-year whale shark and manta ray sightings.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Velana International Airport (MLE); seaplane transfer to Soneva platform",
-   "airportDirections": "30-minute scenic seaplane from MLE directly into the resort’s private sea runway. Luxurious, effortless arrival.",
+   "airport": "Velana International Airport (MLE)",
+   "airportDirections": "A 30 minute seaplane flight from Velana International Airport (MLE) in Male direct to Soneva Fushi.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "One‑Bedroom Beach or Water Villas (some with slides)",
-     "Crusoe Suites & Residences (2–9 bedrooms)",
-     "Private Beach Villas with pools",
-     "Over‑water Water Reserves & Sunset Retreats"
-    ]
+    "paras": [
+     "Villas, Crusoe suites and residences, beach villas, Water Reserves and estates of up to nine bedrooms.",
+     "1 Bedroom Crusoe with Pool, from 145 sqm; 1 Bedroom Soneva Fushi Villa Suite with Pool, 272 sqm; 1 Bedroom Soneva Fushi Family Suite with Pool, 360 sqm.",
+     "2 Bedroom Crusoe Residences and Soneva Fushi Villas with Pool; 3 and 4 Bedroom Beach Villas with Pool; 3 and 4 Bedroom Residences.",
+     "1 and 2 Bedroom Water Reserves with Slide.",
+     "Estates of 5, 6, 7 and 9 bedrooms, up to the 9 Bedroom Estate (Villa 11) at 3,048 sqm."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [
@@ -41943,23 +42342,53 @@
      "body": "This iconic resort, the pioneer of barefoot luxury, is perfect for explorers seeking soulful immersion. Families bond through glass‑blowing and treetop cinema, couples find romance in starlit decks, wellness travelers transform via spa and observatory, and solo guests rejuvenate in jungle solitude. With sustainable operations like solar-diesel hybrid power, coral restoration, and local empowerment, each stay is both a joy and a gesture of ecological care."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "All year. Soneva calls the Maldives an all season destination and says May to October, the monsoon season, is the best time for manta rays and other marine life.",
+    "how_to_get_there": "Fly into Velana International Airport (MLE) in Male, then a 30 minute seaplane direct to Soneva Fushi.",
+    "signature_experiences": "A private island, Kunfunadhoo, of 1,400 by 400 metres in Baa Atoll, a UNESCO World Biosphere Reserve; Water Reserves with slides; estates of up to nine bedrooms; The Den for children.",
+    "who_its_for": "Families and groups, with villas and estates of up to nine bedrooms and The Den, Soneva's zone for kids of all ages with a Lego room, cinema, arts and crafts space and a kids' cooking kitchen."
+   },
+   "faqs": [
+    {
+     "q": "Where is Soneva Fushi?",
+     "a": "On the private island of Kunfunadhoo in Baa Atoll, a UNESCO World Biosphere Reserve in the Maldives. Soneva says that at 1,400 by 400 metres it is one of the Maldives' largest island resorts."
+    },
+    {
+     "q": "How do you get to Soneva Fushi?",
+     "a": "Fly into Velana International Airport (MLE) in Male, then take a 30 minute seaplane direct to the resort, according to Soneva."
+    },
+    {
+     "q": "When is the best time to visit Soneva Fushi?",
+     "a": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life."
+    },
+    {
+     "q": "What villas does Soneva Fushi have?",
+     "a": "Crusoe suites and residences, Soneva Fushi villas and family suites with pools, beach villas and residences of three and four bedrooms, Water Reserves with slides, and estates of five to nine bedrooms. The 9 Bedroom Estate (Villa 11) covers 3,048 sqm."
+    },
+    {
+     "q": "Is Soneva Fushi good for children?",
+     "a": "Yes. The Den is Soneva's dedicated zone for kids of all ages, with a Lego room, cinema, arts and crafts space and a kids' cooking kitchen."
+    },
+    {
+     "q": "When did Soneva Fushi open?",
+     "a": "In 1995. Soneva says that when Soneva Fushi opened, Barefoot Luxury was born."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-05"
+     "PATH-07"
     ],
     "setting": "baa_atoll",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026, Soneva build)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -41971,7 +42400,7 @@
   },
   {
    "slug": "soneva-jani-maldives",
-   "name": "Soneva Jani Maldives \nExclusive Island & Overwater Residences",
+   "name": "Soneva Jani",
    "ledgerId": "STY-2026-000281",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -41991,23 +42420,23 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/309389688_d11453f85_685db7081fc6cce229f2dcf5_janistays--07.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/451f9550f_c899de44c_685db70769e4fa735e8f5533_janistays--08.jpg"
    ],
-   "bestMonths": "November–April (dry/high season), June–September (green surf season)",
-   "bestMonthsNote": "Nov–Apr yields crystal-clear skies & seas. Ideal for diving, stargazing, lagoon clarity. Jun–Sep brings fewer guests, vibrant surf and seasonal savings.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Velana International Airport (MLE); seaplane transfer to Medhufaru",
-   "airportDirections": "45-minute seaplane from MLE lands at bespoke Soneva platform. Fast, scenic, seamless.",
+   "airport": "Velana International Airport (MLE)",
+   "airportDirections": "Soneva Jani is in Noonu Atoll, home to Maafaru International Airport. Soneva does not publish the transfer time from Male on the pages read.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "One‑Bedroom Water Reserve (with slide)",
-     "Two‑Bedroom Water Retreat & Reserve",
-     "Three‑ to Five‑Bedroom Water Reserves",
-     "Island Villas & The Residences (3–5 bedroom)"
-    ]
+    "paras": [
+     "Overwater, island and beach villas, most with a slide.",
+     "1 Bedroom Water Reserve with Slide, 555 sqm; 2 Bedroom Water Reserve and Sunset Water Reserve with Slide, 772 sqm; 4 Bedroom Sunset Water Reserve with Slide (Villa 105), 1,421 sqm.",
+     "2 Bedroom Island Retreat with Slide, 446 sqm; 3 Bedroom Island Retreats with Slide; 3 and 4 Bedroom Island Reserves with Slide, up to 1,796 sqm.",
+     "1 Bedroom Beach Hideaway, 480 sqm."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [
@@ -42030,21 +42459,53 @@
      "body": "As one of the world’s most exclusive low-density resorts, Soneva Jani offers immersive, intimate island living in harmony with conservation. Thoughtfully crafted for families, honeymooners, solo retreaters, and eco-curious travelers, it blends barefoot elegance with over‑water magic, slides into the sea, private plunge pools, personal hosts, and sky‑lit nights. Sustainability isn’t an add-on. It’s woven into the fabric, from carbon-neutral operations to impactful plastic recycling and local empowerment."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "All year. Soneva calls the Maldives an all season destination and says May to October is the best time for manta rays and other marine life.",
+    "how_to_get_there": "Soneva Jani is in Noonu Atoll, which has Maafaru International Airport; Soneva does not publish the transfer time from Male on the pages read. A 30 minute seaplane links Soneva Jani and Soneva Secret.",
+    "signature_experiences": "Overwater villas with slides, island reserves of up to four bedrooms, and The Den, with a zipline, a pirate ship and a swim up mocktail bar.",
+    "who_its_for": "Couples in the one bedroom Water Reserves and Beach Hideaway, and families in the two to four bedroom Water and Island Reserves, with The Den for children."
+   },
+   "faqs": [
+    {
+     "q": "Where is Soneva Jani?",
+     "a": "In Noonu Atoll in the Maldives. Soneva calls it an iconic overwater sanctuary."
+    },
+    {
+     "q": "What villas does Soneva Jani have?",
+     "a": "Water Reserves of one, two and four bedrooms with slides, Island Retreats and Island Reserves of two to four bedrooms with slides, and a 1 Bedroom Beach Hideaway. The largest listed is the 3 Bedroom Island Reserve with Slide (Villa 34), 1,796 sqm."
+    },
+    {
+     "q": "Is Soneva Jani good for children?",
+     "a": "Yes. The Den is, in Soneva's words, a children's world unto itself, with a zipline, a pirate ship and a swim up mocktail bar."
+    },
+    {
+     "q": "When is the best time to visit Soneva Jani?",
+     "a": "Soneva calls the Maldives an all season destination, and says May to October, the monsoon season, is the best for manta rays and other marine life."
+    },
+    {
+     "q": "Can you combine Soneva Jani with Soneva Secret?",
+     "a": "Yes. Soneva lists a 30 minute seaplane flight from Soneva Jani to Soneva Secret, or a full day cruise on Soneva in Aqua."
+    },
+    {
+     "q": "What is Soneva Jani's OECM status?",
+     "a": "Soneva announced in August 2026 that Soneva Jani is the first resort in the Maldives to achieve OECM status."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
-    "secondary": [],
+    "secondary": [
+     "PATH-07"
+    ],
     "setting": "noonu",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026, Soneva build)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays"
@@ -42056,7 +42517,7 @@
   },
   {
    "slug": "soneva-secret-maldives",
-   "name": "Soneva Secret \nUltra‑Bespoke Island Retreat",
+   "name": "Soneva Secret",
    "ledgerId": "STY-2026-000282",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -42076,21 +42537,22 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5357181a0_54196c746_685db76aa3a8ee9bd8f33997_secretstays-07.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e803dcba4_92333d350_685db76ad9a8a8dd699a520e_secretstays-08.jpg"
    ],
-   "bestMonths": "November–April (crystal clarity, calm seas); June–September (lower occupancy, unique marine sightings)",
-   "bestMonthsNote": "Dry season delivers max visibility and marine spectacle. Green season invites solitude, surf, and soft light rituals.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Velana International Airport (MLE) + seaplane transfer",
-   "airportDirections": "Seaplane flight (~75 min) directly to resort jetty. Scenic, serene, seamless arrival.",
+   "airport": "Velana International Airport (MLE)",
+   "airportDirections": "A 75 minute seaplane flight direct from Velana International Airport (MLE) in Male, or a 55 minute private charter. Soneva also lists a 25 minute seaplane from Maafaru International Airport and a one hour speedboat from Kulhudhuffushi Airport.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Beach Hideaway Villas (1–2 bedroom)",
-     "Overwater Hideaway Villas with slides & pools",
-     "Floating Castaway Villa (premium exclusive experience)"
+     "Beach villas and overwater Sea Lofts on Dhipparufushi",
+     "One-Bedroom Beach Villa, 448 sqm",
+     "Two-Bedroom Overwater Sea Loft, 1,108 sqm",
+     "Two-Bedroom Beach Pavilion, 1,158 sqm"
     ]
    },
    "experiences": {
@@ -42116,23 +42578,54 @@
      "body": "Soneva Secret redefines privacy-led luxury through minimalist design, eco-conscious operations, and heartfelt service. Ideal for travelers seeking deep reconnection, romantic retreats, wellness seekers, families craving bond and wonder, or solo souls pursuing quiet awe. Here, personal butlers curate every moment while marine giants glide just beyond your deck. True barefoot stewardship at its rarest."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "All year. Soneva calls the Maldives an all season destination and says May to October is the best time for manta rays and other marine life.",
+    "how_to_get_there": "A 75 minute seaplane direct from Velana International Airport (MLE) in Male, or a 55 minute private charter. Alternatives: a 25 minute seaplane from Maafaru International Airport, or a one hour speedboat from Kulhudhuffushi Airport. Soneva advises against the five hour speedboat from Male.",
+    "signature_experiences": "The remote island of Dhipparufushi at the westernmost tip of the Maldives; overwater Sea Lofts and beach villas; links to Soneva Fushi and Soneva Jani by seaplane or on Soneva in Aqua.",
+    "who_its_for": "Couples and small families who want privacy above all; Soneva's line is that at Soneva Secret privacy is the whole point."
+   },
+   "faqs": [
+    {
+     "q": "Where is Soneva Secret?",
+     "a": "On the remote island of Dhipparufushi at the westernmost tip of the Maldives, in Haa Dhaalu Atoll."
+    },
+    {
+     "q": "How do you get to Soneva Secret?",
+     "a": "A 75 minute seaplane direct from Velana International Airport in Male, or a 55 minute private charter. Soneva also lists a 25 minute seaplane from Maafaru and a one hour speedboat from Kulhudhuffushi, and advises against the five hour speedboat from Male."
+    },
+    {
+     "q": "What villas does Soneva Secret have?",
+     "a": "One-Bedroom Beach Villas, One-Bedroom Overwater Sea Lofts and Horizon Overwater Villas, a Two-Bedroom Overwater Sea Loft and a Two-Bedroom Beach Pavilion of 1,158 sqm."
+    },
+    {
+     "q": "Can you combine Soneva Secret with the other Soneva resorts?",
+     "a": "Yes. Soneva lists a 40 minute seaplane from Soneva Fushi, a 30 minute seaplane from Soneva Jani, or a full day cruise from either on Soneva in Aqua."
+    },
+    {
+     "q": "When is the best time to visit Soneva Secret?",
+     "a": "Soneva calls the Maldives an all season destination, and says May to October is the best season for manta rays and other marine life."
+    },
+    {
+     "q": "Are there rules for infants on the transfer?",
+     "a": "Soneva says transfers for infants under two are free, with no seaplane seat or baggage allowance."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
+     "PATH-06",
      "PATH-07"
     ],
     "setting": "maldives",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (2 Nov 2026, Soneva build)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays",
@@ -45480,6 +45973,134 @@
    "arrivalHubIds": [
     "6ae697486953910e892991b9"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "the-sarojin",
+   "name": "The Sarojin",
+   "ledgerId": "STY-2026-000588",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "56 residences in gardens beside an 11 km beach at Khao Lak",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-sarojin/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "The Sarojin does not name best months; it offers year round swimming and water sports.",
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Phuket International Airport (HKT)",
+   "airportDirections": "One hour's drive from Phuket International Airport (HKT), 88.7 km.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "56 residences.",
+     "28 Garden Residences, 95 sqm.",
+     "14 Pool Residences, 120 sqm, with a private pool.",
+     "14 Jacuzzi Pool Suites, 150 sqm, upper floor with a heated whirlpool pavilion.",
+     "2-Bedroom Pool Residence, 215 sqm, connecting a Garden and a Pool Residence."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Island day trips",
+     "Local diving",
+     "Watersports and Hobie Cat sailing",
+     "Culinary classes",
+     "Yoga",
+     "Pathways Spa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "About 10 acres of tropical gardens with direct beach access",
+     "An 11 km white sand beach",
+     "Pathways Spa with open air treatment pavilions",
+     "Dining under the Ficus tree",
+     "A la carte breakfast",
+     "MICHELIN Two Keys, per the brand"
+    ]
+   },
+   "onlyHere": [
+    "A small boutique resort of 56 residences on Khao Lak's long beach, for adults and families with children 10 and older."
+   ],
+   "why": [
+    {
+     "title": "Quiet on a Long Beach",
+     "body": "The Sarojin keeps to 56 residences in ten acres of gardens on an 11 km beach at Khao Lak, and welcomes families with children 10 years and older."
+    }
+   ],
+   "facts": {
+    "best_months": "Not named by The Sarojin, which says swimming and water sports run year round.",
+    "how_to_get_there": "One hour's drive from Phuket International Airport (HKT), 88.7 km, according to The Sarojin. No helicopter or seaplane transfer is published.",
+    "signature_experiences": "56 residences in about 10 acres of tropical gardens on an 11 km white sand beach; Pathways Spa; island day trips.",
+    "who_its_for": "Couples, and families with children 10 years and older."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Sarojin?",
+     "a": "In Khao Lak, Phang Nga Province, in about 10 acres of tropical gardens with direct access to an 11 km white sand beach."
+    },
+    {
+     "q": "How far is The Sarojin from Phuket airport?",
+     "a": "One hour's drive, 88.7 km, from Phuket International Airport (HKT)."
+    },
+    {
+     "q": "Does The Sarojin accept children?",
+     "a": "The Sarojin says it is ideal for families with children 10 years and older."
+    },
+    {
+     "q": "How many residences are there?",
+     "a": "56: 28 Garden Residences, 14 Pool Residences and 14 Jacuzzi Pool Suites, with a 2-Bedroom Pool Residence formed by connecting a Garden and a Pool Residence."
+    },
+    {
+     "q": "Which residences have a pool?",
+     "a": "The 120 sqm Pool Residences have a 5.5 by 3.5 metre pool in their own garden; the Jacuzzi Pool Suites have a heated outdoor whirlpool pavilion on an upper floor terrace."
+    },
+    {
+     "q": "What is the spa?",
+     "a": "Pathways Spa, with open air treatment pavilions, a facial room and a relaxation lounge."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

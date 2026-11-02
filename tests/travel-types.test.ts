@@ -10,7 +10,7 @@ test("travel types come from the record's words", () => {
 });
 
 test("a place's own name never earns a type (Galapagos Safari Camp is not a Big Five safari)", () => {
-  const t = suitedTo("Galapagos Safari Camp suits families. Day boats from Galapagos Safari Camp.", [], 4, "Galapagos Safari Camp");
+  const t = suitedTo("Galapagos Safari Camp suits families. Nine Safari Tents and two Family Safari Tents. Day boats from Galapagos Safari Camp.", [], 4, "Galapagos Safari Camp");
   assert.ok(!t.includes("Big Five safari"));
   assert.ok(t.includes("Families & generations"));
 });

@@ -6,7 +6,8 @@
 const RULES: [string, RegExp][] = [
   ["Families & generations", /\bfamil|\bkids?\b|children|generation|interleading|multi-gen/i],
   ["Couples & honeymooners", /honeymoon|\bcouples?\b|romanc|romantic|adults[- ]only/i],
-  ["Big Five safari", /big[- ]?(five|5)|leopard|\blions?\b|game drive|safari/i],
+  // "Safari Tent" is a kind of tent, not a safari (Galapagos Safari Camp), so it earns nothing on its own.
+  ["Big Five safari", /big[- ]?(five|5)|leopard|\blions?\b|game drive|safari(?!\s+tents?\b)/i],
   ["Wellness seekers", /\bspa\b|wellness|yoga|hot spring|restor/i],
   ["Food & wine lovers", /\bwine|vineyard|culinar|gastronom|\bchef|cuisine|tasting/i],
   ["Private groups (exclusive use)", /exclusive[- ]use|private villa|residence|sleeps up to|whole (house|villa)|groups? of/i],

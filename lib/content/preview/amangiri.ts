@@ -1,11 +1,11 @@
 // Amangiri preview data, shared by the three /preview/stay/amangiri* mocks.
 // Record facts are hand-set from Aman's own site (aman.com/resorts/amangiri, 1 Nov
-// 2026) until the Stay is filed in Stay Studio; the ID is a declared placeholder.
+// 2026) The Stay is filed in Stay Studio as STY-2026-000563.
 import type { Room } from "@/components/record/Sections";
 import { assetFor, assetsFor, mediaUrl, storyFrames, type MediaAsset, type MediaRights } from "@/lib/content/media-assets";
 import { exceptionalFewFor, type PublicationStatus } from "@/lib/content/exceptional-few";
 
-export const STAY_ID = "STY-2026-AMANGIRI"; // provisional
+export const STAY_ID = "STY-2026-000563"; // Ledger ID, filed in Stay Studio 1 Nov 2026
 export const NAME = "Amangiri";
 export const CANONICAL = "/stays/amangiri";
 export const COORDS = { lat: 37.0183, lng: -111.6165 };
@@ -27,7 +27,7 @@ export function amangiri() {
   const night = assetFor(STAY_ID, "night", allow);
   const planHref = `/plan?trip=${encodeURIComponent(NAME)}`;
   const answer = `${NAME} is a resort at Canyon Point in southern Utah, on more than 900 acres of the Colorado Plateau, with 34 suites, the ten tented pavilions of Camp Sarika, a four-bedroom Mesa Home and a six-bedroom Ridge Villa. Camp Sarika can be taken in full; for the whole of Amangiri, enquire with James. Designated in The Exceptional Few by James Wild & Co for its setting, its privacy, its design and its access. Nearest airport: Page Municipal (PGA), about 25 minutes by road. Plan it with James or an advisor.`;
-  const facts: [string, string][] = [["Ledger ID", "Being filed"], ["Country", "United States"], ["Setting", "Canyon Point, Utah · Colorado Plateau"], ["Airport", "Page Municipal (PGA) · about 25 min"]];
+  const facts: [string, string][] = [["Ledger ID", "STY-2026-000563"], ["Country", "United States"], ["Setting", "Canyon Point, Utah · Colorado Plateau"], ["Airport", "Page Municipal (PGA) · about 25 min"]];
   const rooms: Room[] = [
     { name: "The Suites", image: roomPhotos[0] ? mediaUrl(roomPhotos[0], { ratio: "16:10", width: 1200 }) : null, units: 34, note: "Girijaala, Orchard, Desert, Desert Pool, Mesa Pool and the Amangiri Suite: concrete, glass and the mesa in every window." },
     { name: "Camp Sarika", image: roomPhotos[2] ? mediaUrl(roomPhotos[2], { ratio: "16:10", width: 1200 }) : null, units: 10, plunge: true, note: "Ten tented pavilions a short drive from the main resort, each with its own plunge pool, one with two bedrooms." },

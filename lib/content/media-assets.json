@@ -3,8 +3,8 @@
   "source": "Airtable appI1mRPBsoA1ZOla · Media Assets (tblwpK7zS0zT1adIu) · scripts/export-editorial-layer.mjs · pixels in Cloudinary jhlnq5h5",
   "assets": [
     {
-      "mediaId": "STY-2026-AMANGIRI-hero-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-hero-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-hero-mesa-landscape",
       "role": "hero",
@@ -23,8 +23,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-architecture-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-architecture-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-mesa-wing-slot-window",
       "role": "architecture",
@@ -43,8 +43,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-editorial_landscape-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-editorial_landscape-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/canyon-point-red-rock-golden-hour",
       "role": "editorial_landscape",
@@ -63,8 +63,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-editorial_landscape-2",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-editorial_landscape-2",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-aerial-resort-in-rock",
       "role": "editorial_landscape",
@@ -83,8 +83,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-detail-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-detail-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-desert-suite-window",
       "role": "detail",
@@ -103,8 +103,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-editorial_portrait-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-editorial_portrait-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-riders-crossing-desert",
       "role": "editorial_portrait",
@@ -123,8 +123,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-night-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-night-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-exterior-dusk-pavilions",
       "role": "night",
@@ -143,8 +143,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-experience-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-experience-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-slot-canyon",
       "role": "experience",
@@ -163,8 +163,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-experience-2",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-experience-2",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-via-ferrata-climb",
       "role": "experience",
@@ -183,8 +183,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-experience-3",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-experience-3",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/lake-powell-from-the-air",
       "role": "experience",
@@ -203,8 +203,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-room-1",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-room-1",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-girijaala-suite",
       "role": "room",
@@ -223,8 +223,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-room-2",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-room-2",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/amangiri-desert-pool-suite-courtyard",
       "role": "room",
@@ -243,8 +243,8 @@
       "focalPoint": null
     },
     {
-      "mediaId": "STY-2026-AMANGIRI-room-3",
-      "entityId": "STY-2026-AMANGIRI",
+      "mediaId": "STY-2026-000563-room-3",
+      "entityId": "STY-2026-000563",
       "entityType": "stay",
       "publicId": "wildco/usa/utah/amangiri/camp-sarika-pavilion-dusk",
       "role": "room",

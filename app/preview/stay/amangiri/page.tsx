@@ -39,7 +39,7 @@ import { graph, ids, imageObject, lodging } from "@/lib/schema";
 // Photography: Aman's own renditions in Cloudinary, credited, rights to_verify —
 // shown here only because the page is a noindex preview (lib/content/media-assets.ts).
 
-const STAY_ID = "STY-2026-AMANGIRI"; // provisional: replaced by the Ledger ID at filing
+const STAY_ID = "STY-2026-000563"; // Ledger ID, filed in Stay Studio 1 Nov 2026
 const NAME = "Amangiri";
 const PATH = "/preview/stay/amangiri";
 const CANONICAL = "/stays/amangiri";
@@ -73,7 +73,7 @@ export default function AmangiriPreview() {
 
   // Record facts from Aman's own site (verified 1 Nov 2026); the Ledger record supersedes these at filing.
   const answer = `${NAME} is a resort at Canyon Point in southern Utah, on more than 900 acres of the Colorado Plateau, with 34 suites, the ten tented pavilions of Camp Sarika and a six-bedroom villa. Designated ${collectionNo(ef.collectionNumber)} in The Exceptional Few by James Wild & Co for its setting, its privacy, its design and its access. Nearest airport: Page Municipal (PGA), about 25 minutes by road. Plan it with James or an advisor.`;
-  const facts: [string, string][] = [["Ledger ID", "Being filed"], ["Country", "United States"], ["Setting", "Canyon Point, Utah · Colorado Plateau"], ["Airport", "Page Municipal (PGA) · about 25 min"], ["The Exceptional Few", collectionNo(ef.collectionNumber)]];
+  const facts: [string, string][] = [["Ledger ID", "STY-2026-000563"], ["Country", "United States"], ["Setting", "Canyon Point, Utah · Colorado Plateau"], ["Airport", "Page Municipal (PGA) · about 25 min"], ["The Exceptional Few", collectionNo(ef.collectionNumber)]];
   const rooms: Room[] = [
     { name: "The Suites", image: roomPhotos[0] ? mediaUrl(roomPhotos[0], { ratio: "16:10", width: 1200 }) : null, units: 34, note: "Girijaala, Orchard, Desert, Desert Pool, Mesa Pool and the Amangiri Suite: concrete, glass and the mesa in every window." },
     { name: "Camp Sarika", image: roomPhotos[2] ? mediaUrl(roomPhotos[2], { ratio: "16:10", width: 1200 }) : null, units: 10, plunge: true, note: "Ten tented pavilions a short drive from the main resort, each with its own plunge pool, one with two bedrooms." },
@@ -108,7 +108,7 @@ export default function AmangiriPreview() {
             title={NAME}
             tagline={ef.heroLine ?? undefined}
             credit={rightsOwner(hero)}
-            glance={<GlanceBar glance={{ facts: [["Best months", "Ask James"], ["Fly into", "Page (PGA) · 25 min"], ["Ledger ID", "Being filed"]], cta: { label: "Plan this journey", href: planHref } }} />}
+            glance={<GlanceBar glance={{ facts: [["Best months", "Ask James"], ["Fly into", "Page (PGA) · 25 min"], ["Ledger ID", "STY-2026-000563"]], cta: { label: "Plan this journey", href: planHref } }} />}
           />
         )}
         <RecordNav items={nav} cta="Plan this journey" ctaHref={planHref} />

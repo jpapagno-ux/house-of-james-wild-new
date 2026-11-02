@@ -44,6 +44,14 @@ export const BUILT: string[] = [
   "/voyages/ships/aliikai",
   // The Nile waters hub and the A&K Sanctuary ships (approved by James, 1 Nov 2026)
   "/voyages/nile",
+  // Voyages type and waters hubs (voyages plan, approved by James 1 Nov 2026)
+  "/voyages/rivers",
+  "/voyages/sailing",
+  "/voyages/expedition",
+  "/voyages/charter",
+  "/voyages/amazon",
+  "/voyages/galapagos",
+  "/voyages/indonesia",
   "/voyages/ships/nile-adventurer",
   "/voyages/ships/nile-seray",
   "/voyages/ships/sun-boat-iii",

@@ -1,19 +1,16 @@
-import SiteHeader from "@/components/ledger/SiteHeader";
-import JsonLd from "@/components/ledger/JsonLd";
-import { HubShell, HubSection } from "@/components/hub/Hub";
-import NileShipCards from "@/components/ships/NileShipCards";
-import RouteAtlas from "@/components/journey/RouteAtlas";
 import Link from "next/link";
-import { NILE_CHART, shipRouteId } from "@/lib/content/ships/routes";
-import { shipPath, shipsOn, WATERS } from "@/lib/content/ships";
+import { HubSection } from "@/components/hub/Hub";
+import VoyageHub from "@/components/ships/VoyageHub";
+import { watersHub } from "@/lib/content/ships/hubs";
+import { shipsOn } from "@/lib/content/ships";
 import { factOf, fromPrice, nightsLabel, priceLine, routeOf, undash } from "@/lib/content/ships/types";
-import { absoluteUrl, buildMetadata } from "@/lib/seo";
-import { graph } from "@/lib/schema";
+import { buildMetadata } from "@/lib/seo";
 
-// /voyages/nile: the Nile waters hub (Egypt). Lists the A&K Sanctuary ships,
-// and answers "which one?" from the ships' own data only.
-const W = WATERS.nile!;
-const PATH = W.path;
+// /voyages/nile: the Nile waters hub (Egypt) on the shared hub frame (VoyageHub). Lists the
+// A&K Sanctuary ships from the registry and answers "Which Nile cruise should I choose?" from
+// the ships' own data only, then compares them side by side.
+const H = watersHub("nile");
+const PATH = H.path;
 const ships = shipsOn("nile");
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 const low = Math.min(...ships.map((s) => fromPrice(s) ?? Infinity));
@@ -33,21 +30,15 @@ function answer() {
   return `Abercrombie & Kent sails ${ships.length} A&K Sanctuary ships on the Nile: ${parts.join(". ")}. Each ship below lists its cabins, deck plan, day by day and published fares${Number.isFinite(low) ? `; cruise-only fares start at ${usd(low)} per person` : ""}.`;
 }
 
+const FAQS = [
+  { q: "Riverboat or dahabiya on the Nile?", a: `A riverboat carries more guests with more cabin choice and a pool; the dahabiya, ${ships.filter((s) => s.type === "dahabiya").map((s) => `${s.name} (${factOf(s, /guest/i)} guests)`).join(", ")}, is a traditional Nile sailing boat sold as a private charter or by the cabin inside A&K journeys.` },
+  { q: "How long is a Nile cruise?", a: `${ships.map((s) => `${s.name}: ${nightsLabel(s)}`).join("; ")}, between Luxor and Aswan.` },
+  { q: "How are the Nile fares shown?", a: "As Abercrombie & Kent publishes them: per person, two sharing, by season and cabin, with past seasons removed automatically. Where A&K sells a ship only inside a land and cruise journey, the page says so and labels the fare." },
+];
+
 export default function NileHub() {
-  const trail = [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: W.name, path: PATH }];
   return (
-    <div className="theme-sea theme-sea-page">
-      <SiteHeader />
-      <HubShell name={W.name} path={PATH} trail={trail} eyebrow="Volume 04 · Voyages · Egypt" title="Nile Cruises Aboard the A&K Sanctuary Ships"
-        intro="Riverboats and a dahabiya between Luxor and Aswan, each one filed with its cabins, deck plan, day by day and every published date."
-        answer={answer()}
-        filling="More Nile dates, and the voyages James sails himself, fill from the Ledger as they are filed.">
-        <HubSection eyebrow="The A&K Sanctuary fleet" title="Which Nile Cruise Should You Choose?" id="nile-ships">
-          <NileShipCards ships={ships} />
-        </HubSection>
-        <RouteAtlas id="nile-atlas" kind="voyage" dest="nile" chart={NILE_CHART} figure kicker="THE NILE · BY RIVER" eyebrow="The routes · by river" title="Every Nile Route on One Chart"
-          line="Pick a ship and a direction: the globe flies to Egypt and sails the river day by day, Luxor to Aswan and back, and on to Abu Simbel."
-          routes={ships.flatMap((s) => s.itineraries.filter((i) => i.days.length).map((i) => ({ id: shipRouteId(s, i), label: `${s.name}: ${i.direction}`, href: `/voyages/ships/${s.slug}`, where: `${i.nights} nights` })))} />
+    <VoyageHub {...H} answer={answer()} faqs={FAQS} after={<>
         <HubSection eyebrow="Side by side" title="How Do the Nile Ships Compare?" id="nile-compare">
           <div className="hidden md:block overflow-x-auto border ledger-border">
             <table className="w-full text-[14px] border-collapse min-w-[760px]">
@@ -87,11 +78,6 @@ export default function NileHub() {
           </ul>
           <p className="mt-3 text-[12.5px] ledger-muted">Fares as published by Abercrombie &amp; Kent on 1 November 2026; we confirm them live when you ask.</p>
         </HubSection>
-      </HubShell>
-      <JsonLd data={graph(
-        { "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Nile cruises", mainEntity: { "@type": "ItemList", itemListElement: ships.map((s, i) => ({ "@type": "ListItem", position: i + 1, url: absoluteUrl(shipPath(s.slug)), name: s.name })) } },
-        { "@type": "BreadcrumbList", itemListElement: trail.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: absoluteUrl(c.path) })) },
-      )} />
-    </div>
+    </>} />
   );
 }

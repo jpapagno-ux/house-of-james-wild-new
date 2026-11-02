@@ -14,7 +14,7 @@ export type { Waters };
 export type ShipEntry = { slug: string; kind: "record"; waters: Waters; reg: RegistryShip; data: ShipRecord; credit?: string; offerRefs: string[] };
 
 /** Waters with a hub page of their own (/voyages/<waters>). Hubs join this list as they are built. */
-const HUBS_BUILT: Waters[] = ["nile"];
+const HUBS_BUILT: Waters[] = ["nile", "amazon", "galapagos", "indonesia"];
 export const WATERS: Partial<Record<Waters, { name: string; path: string; country: string }>> = Object.fromEntries(
   HUBS_BUILT.map((w) => [w, { name: WATERS_HUBS[w].name, path: WATERS_HUBS[w].path, country: WATERS_HUBS[w].countries.join(", ") }]),
 );

@@ -14,7 +14,25 @@
 // Public fields only: no personal email or phone numbers here.
 
 import { SAMPLE_DESKS, samplePortrait } from "./advisor-samples";
-import { deskCounts, type DeskProfile, type Volume } from "./advisor-desk";
+import { deskCounts, type AdvisorMark, type DeskProfile, type Volume } from "./advisor-desk";
+import libraryDna from "./advisors-library.json";
+import staysData from "./stays.json";
+import { rankAdvisors } from "@/lib/advisors/rank";
+
+// Stage 4b (1 Nov 2026): Advisor DNA comes from the Intelligence Library's Person
+// records (scripts/export-advisors.py → advisors-library.json), the only source
+// for it (Contract C5: DNA is what the advisor states, confirmed by them on their
+// own DNA page). It is merged over the hand-written card by slug. The advisor's
+// own marks on Ledger records live there too. Stand-ins never appear in that
+// file; their sample desks stay here, labelled.
+export type AdvisorDna = {
+  pathways: string[]; volumes: Volume[]; countries: string[]; partyTypes: string[]; languages: string[]; specialties: string[];
+  availability: "open" | "waitlist" | "closed";
+  matchNote: string | null; // the advisor's own line, present only once THEY confirmed it
+  confirmed: string | null; updated: string | null;
+  marks: { ledgerId: string; mark: AdvisorMark; when: string | null; note: string | null }[];
+};
+const DNA_BY_SLUG = new Map((libraryDna as { advisors: (AdvisorDna & { slug: string; ledgerId: string })[] }).advisors.map((d) => [d.slug, d]));
 
 export type Advisor = {
   slug: string;
@@ -32,11 +50,12 @@ export type Advisor = {
   ledgerId: string; // Person.ledger_id in the Intelligence Library (ADV-…), the Library being the sole issuer (Contract C2); James's 1982 ID is the one grandfathered exception
   sample?: boolean; // invented to show the layout; labelled as such everywhere
   desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
+  dna?: AdvisorDna; // Stage 4b: from the Library, merged at load (real advisors only)
 };
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 
-export const ADVISORS: Advisor[] = [
+const CARDS: Advisor[] = [
   {
     slug: "james-papagno",
     ledgerId: "ADV-1982-000001",
@@ -252,6 +271,16 @@ export const ADVISORS: Advisor[] = [
   },
 ];
 
+/** Library DNA merged over the card. A confirmed match line becomes the advisor's `line` (their words, never ours). */
+function withDna(a: Advisor): Advisor {
+  if (a.sample) return a;
+  const d = DNA_BY_SLUG.get(a.slug);
+  if (!d) return a;
+  const { slug: _s, ledgerId: _l, ...dna } = d;
+  return { ...a, dna, line: a.line ?? dna.matchNote ?? null };
+}
+export const ADVISORS: Advisor[] = CARDS.map(withDna);
+
 // In the field with us: partners who aren't James Wild & Co booking
 // advisors, shown with their own affiliation (old WES team page, 25 Oct 2026).
 export type FieldPartner = { name: string; role: string; org: string; line: string; portrait: { url: string; alt: string }; href?: string };
@@ -274,27 +303,25 @@ export const defaultAdvisor = () => ADVISORS.find((a) => a.slug === DEFAULT_ADVI
 
 // Advisors with a Desk, the founder included (he is ADV-0001).
 export const DESK_ADVISORS = ADVISORS.filter((a) => a.desk);
+// Advisors the house can name for a place: a Desk (entries) or Library DNA (countries, marks).
+export const PLACE_ADVISORS = ADVISORS.filter((a) => a.desk || a.dna);
+
+// HANDOFF §1: while the house is in testing James heads every page. "Who plans it"
+// keeps him as the lead and names the matched advisor beside him ("with …").
+// Flip to false when James ends testing; the ranking below already carries the answer.
+export const JAMES_HEADS_EVERY_PAGE = true;
 
 export type AdvisorsFor = { advisors: Advisor[]; slept: number; carried: number };
 
+/** Country slug of a Ledger record, for the advisor's own marks (which carry only the record's ID). Data only — no import cycle. */
+const COUNTRY_OF_RECORD = new Map<string, string>(((staysData as { stays: { ledgerId: string | null; countrySlug: string | null }[] }).stays).filter((x) => x.ledgerId && x.countrySlug).map((x) => [x.ledgerId as string, x.countrySlug as string]));
+export const countryOfRecord = (ledgerId: string) => COUNTRY_OF_RECORD.get(ledgerId) ?? null;
+
 // Advisors who carry entries in a country, a region, a volume, or a specific
-// Ledger record. "slept" counts those whose own mark is Stayed / Walked / Sailed.
+// Ledger record; the ranking itself lives in lib/advisors/rank.ts (tested).
 export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }): AdvisorsFor {
-  const match = (e: DeskProfile["entries"][number]) =>
-    (where.ledgerId ? e.ledgerId === where.ledgerId : true) &&
-    (where.countrySlug ? e.countrySlug === where.countrySlug : true) &&
-    (where.regionSlug ? e.regionSlug === where.regionSlug : true) &&
-    (where.volume ? e.volume === where.volume : true);
-  const hits = DESK_ADVISORS.map((a) => ({ a, es: a.desk!.entries.filter(match) })).filter((x) => x.es.length);
-  hits.sort((x, y) => (x.a.slug === DEFAULT_ADVISOR ? -1 : y.a.slug === DEFAULT_ADVISOR ? 1 : y.es.reduce((n, e) => n + e.guests, 0) - x.es.reduce((n, e) => n + e.guests, 0)));
-  // After those with a marked entry here: advisors who state they know the country
-  // (desk.countries) but have no marked stay in it yet — they still should be asked.
-  const knows = where.countrySlug ? DESK_ADVISORS.filter((a) => !hits.some((h) => h.a === a) && a.desk!.countries.includes(where.countrySlug!) && (!where.volume || a.desk!.volumes.includes(where.volume))) : [];
-  return {
-    advisors: [...hits.map((x) => x.a), ...knows],
-    slept: hits.filter((x) => x.es.some((e) => e.theirs && e.theirs.mark !== "Sent Guests")).length,
-    carried: hits.reduce((n, x) => n + x.es.length, 0),
-  };
+  const pool = PLACE_ADVISORS.map((a) => ({ a, slug: a.slug, entries: a.desk?.entries ?? [], dna: a.dna, deskCountries: a.desk?.countries ?? [], deskVolumes: a.desk?.volumes ?? [] }));
+  return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord });
 }
 
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });

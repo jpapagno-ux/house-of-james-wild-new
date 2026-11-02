@@ -85,7 +85,7 @@ export const ABOUT = {
     { year: "1989", title: "Under sail", line: "Sailing begins, with surfing, diving and reefs at every anchorage along the way." },
     { year: "1990", title: "On the record", line: "IATAN membership, held ever since." },
     { year: "1990s", title: "Costa Rica, early", line: "A wholesale firm working the first days of surf, dive and soft-adventure travel to Central America. Dominical, '95." },
-    { year: "1996", title: "Tahiti", line: "The first of many seasons surfing and diving French Polynesia. Taha'a becomes the favourite." },
+    { year: "1995", title: "Tahiti", line: "The first trip surfs Teahupo'o. He has guided surf travel in French Polynesia ever since, and Tahiti Tourisme lists him as a Tahiti specialist. Taha'a becomes the favourite." },
     { year: "2011", title: "Africa", line: "Safari design begins, and the Ledger's camps are vetted reserve by reserve." },
     { year: "Today", title: "Six volumes, one Ledger", line: "Stays, Safaris, Gatherings, Voyages, Overland and Other Europe, all filed the same way. James is still travelling to vet them." },
   ],
@@ -137,7 +137,7 @@ export const FOUNDER = {
     paragraphs: [
       "In 1982 he packed a surfboard in Hollywood, Florida and flew to Eleuthera, a wild, little-known island in the Bahamas. There was no resort. There was Gregory Town, one bakery, and a dirt path down to Surfer's Beach, where a cave above the break was home for a week. It wasn't just a surf trip. It was the start of everything since.",
       "By the 1990s the calling was a business: a wholesale firm working the earliest days of surf, dive and soft-adventure travel to Central America. Dive travel followed, and with it expedition-style itineraries into waters few travellers had reached.",
-      "From there the map kept opening: Tahiti from 1996, Africa from 2011, Antarctica, Raja Ampat. Every one designed because he'd walked it, sailed it or slept in it himself.",
+      "From there the map kept opening: Tahiti from 1995, Africa from 2011, Antarctica, Raja Ampat. Every one designed because he'd walked it, sailed it or slept in it himself.",
     ],
   },
   fieldLog: [

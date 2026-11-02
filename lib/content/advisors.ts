@@ -76,7 +76,8 @@ const CARDS: Advisor[] = [
       adv: "ADV-1982-000001", sample: false, since: 1983, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
       countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
-      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road"],
+      // "Tahiti specialist": listed by Tahiti Tourisme (James, 2 Nov 2026); surfing Tahiti since 1995.
+      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Tahiti specialist"],
       line: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
       entries: [
         { ledgerId: "STY-2026-056524", name: "Wilderness DumaTau", place: "Linyanti · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Elephants cross the channel at four. Nobody is late for that." },
@@ -321,9 +322,14 @@ export const countryOfRecord = (ledgerId: string) => COUNTRY_OF_RECORD.get(ledge
 
 // Advisors who carry entries in a country, a region, a volume, or a specific
 // Ledger record; the ranking itself lives in lib/advisors/rank.ts (tested).
+/** Region of a country (from the Ledger's own records, already loaded above; no second import for the
+ *  client bundles), so a region page can name the advisors who state a country in it. */
+const REGION_OF_COUNTRY = new Map<string, string>(((staysData as { stays: { countrySlug: string | null; regionSlug: string | null }[] }).stays).filter((x) => x.countrySlug && x.regionSlug).map((x) => [x.countrySlug as string, x.regionSlug as string]));
+export const regionOfCountry = (countrySlug: string) => REGION_OF_COUNTRY.get(countrySlug) ?? null;
+
 export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }): AdvisorsFor {
   const pool = PLACE_ADVISORS.map((a) => ({ a, slug: a.slug, entries: a.desk?.entries ?? [], dna: a.dna, deskCountries: a.desk?.countries ?? [], deskVolumes: a.desk?.volumes ?? [] }));
-  return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord });
+  return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord, regionOf: regionOfCountry });
 }
 
 /** Real advisors who carry a Wild Pathway (Library DNA), James first, open or waitlisted only. */

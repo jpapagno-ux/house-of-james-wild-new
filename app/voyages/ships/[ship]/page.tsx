@@ -6,6 +6,8 @@ import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
 import { exceptionalFewForVessel } from "@/lib/content/exceptional-few";
+import FounderOcean from "@/components/advisor/FounderOcean";
+import { founderOceanForVoyage } from "@/lib/content/founder-ocean";
 
 // /voyages/ships/<ship>: every vessel on the one shared ship template
 // (components/ships/RecordShip): the ship, her day by day, cabins, deck plan and
@@ -29,7 +31,9 @@ export default async function ShipPage({ params }: P) {
   if (!e) notFound();
   // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
   // Indonesia cross-sell (B7): "Stay before you sail" after the ship, for the Indonesian yachts.
+  // James's card with his surf and dive line on Aliikai and the Galápagos ships (James, 2 Nov 2026).
   const base = e.slug === "aliikai" ? aliikaiExtra() : {};
   const sail = <StayBeforeYouSail vessel={e.slug} name={e.data.name} />;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{sail}</> }} ef={exceptionalFewForVessel(e.slug)} />;
+  const ocean = founderOceanForVoyage(shipPath(e.slug), e.waters);
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

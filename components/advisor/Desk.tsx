@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { GREEN_INK, VOLUME_HREF, VOLUME_LABEL, type DeskEntry, type Volume } from "@/lib/content/advisor-desk";
-import { advisorCounts, advisorsFor, initials, type Advisor } from "@/lib/content/advisors";
+import { advisorCounts, advisorsFor, initials, regionOfCountry, type Advisor } from "@/lib/content/advisors";
+import { COUNTRIES } from "@/lib/content/countries";
 import { sampleHeadshot } from "@/lib/content/advisor-samples";
 import { STAYS } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
@@ -108,8 +109,9 @@ export function AdvisorStrip({ place, countrySlug, regionSlug, volume, ledgerId,
                   </div>
                 </div>
                 <div className="p-4 flex flex-col gap-3 flex-1">
-                  {mark ? <InkMark by="advisor" mark={`${a.firstName} ${mark.mark.toLowerCase() === "stayed" ? "stayed" : mark.mark.toLowerCase()}`} when={mark.when} /> : <InkMark by="advisor" mark="Sent guests" />}
-                  <p className="text-[14.5px] leading-snug">&ldquo;{note}&rdquo;</p>
+                  {/* "Sent guests" only when their entries here carry guests; an advisor who only states the place reads "Knows …" (audit, 2 Nov 2026). */}
+                  {mark ? <InkMark by="advisor" mark={`${a.firstName} ${mark.mark.toLowerCase() === "stayed" ? "stayed" : mark.mark.toLowerCase()}`} when={mark.when} /> : here.some((e) => e.guests > 0) ? <InkMark by="advisor" mark="Sent guests" /> : <InkMark by="advisor" mark={`Knows ${place}`} />}
+                  {note && <p className="text-[14.5px] leading-snug">&ldquo;{note}&rdquo;</p>}
                   <p className="ledger-eyebrow mt-auto">{c.carried} carried · {c.guests} sent · {c.folios} folios</p>
                   <div className="flex items-center justify-between gap-3 pt-1">
                     {a.profileHref && <Link href={a.profileHref} className="inline-flex items-center gap-1.5 text-[14px] hover:ledger-crimson">The desk <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>}
@@ -144,7 +146,9 @@ export function AdvisorScroll({ regionSlug, volume, title, unlinked = ["gatherin
       <ul className="mt-6 flex gap-4 overflow-x-auto pb-3 -mx-5 px-5 md:mx-0 md:px-0 snap-x">
         {advisors.map((a) => {
           const es = (a.desk?.entries ?? []).filter((e) => (regionSlug ? e.regionSlug === regionSlug : true) && (volume ? e.volume === volume : true));
-          const places = Array.from(new Set(es.map((e) => e.place.split(" · ").pop()))).slice(0, 3).join(" · ");
+          // An advisor with Library DNA and no entries here: the countries they state in this region (audit, 2 Nov 2026).
+          const stated = regionSlug && !es.length ? (a.dna?.countries ?? []).filter((c) => regionOfCountry(c) === regionSlug).map((c) => COUNTRIES.find((x) => x.slug === c)?.name ?? c) : [];
+          const places = Array.from(new Set([...es.map((e) => e.place.split(" · ").pop()), ...stated])).slice(0, 3).join(" · ");
           return (
             <li key={a.slug} className="snap-start shrink-0 w-[260px] bg-paper border ledger-border p-4 flex flex-col gap-3">
               <div className="flex items-center gap-3"><Headshot a={a} size={56} /><div className="min-w-0"><p className="ledger-display text-[18px] leading-tight">{a.name}</p><p className="ledger-eyebrow !text-[9.5px] mt-0.5 truncate">{a.role.replace(" · stand-in", "")}{a.sample ? " · stand-in" : ""}</p></div></div>

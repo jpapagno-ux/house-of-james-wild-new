@@ -18,7 +18,7 @@ function Chip({ x, colour, onOpen }: { x: Sailing; colour: string; onOpen: (x: S
   const full = x.status === "Full";
   return (
     <button type="button" onClick={() => onOpen(x)} aria-label={`${x.when}, ${x.routeLabel}${x.status ? `, ${x.status}` : ""}`}
-      className={`relative flex flex-col items-start min-w-[4.75rem] min-h-[56px] pl-3 pr-2.5 py-1.5 border ledger-border bg-paper text-left hover:border-crimson transition-colors ${full ? "opacity-60" : ""}`}
+      className={`relative flex flex-col items-start min-w-[4.75rem] min-h-[56px] pl-3 pr-2.5 py-1.5 border ledger-border bg-paper text-left hover:border-[var(--jw-action)] transition-colors ${full ? "opacity-60" : ""}`}
       style={{ borderLeft: `4px solid ${colour}` }}>
       <span className={`ledger-display text-[18px] leading-none ${full ? "line-through" : ""}`}>{x.day} <span className="text-[13px]">{x.month.slice(0, 3)}</span></span>
       <span className="text-[11.5px] ledger-muted leading-tight mt-1 whitespace-nowrap">{x.status ?? (x.nights ? `${x.nights} nights` : x.routeLabel)}</span>
@@ -39,7 +39,7 @@ export default function DatesGrid({ ship, data, note, basis }: { ship: string; d
   const months = useMemo(() => { const m = new Map<string, Sailing[]>(); for (const x of shown) m.set(x.month, [...(m.get(x.month) ?? []), x]); return [...m.entries()]; }, [shown]);
   const price = (ps: [string, number][]) => (cabin ? ps.filter(([k]) => k === cabin || k.startsWith(`${cabin} (`)) : ps);
   const windows = data.windows.filter((w) => price(w.prices).length || w.prices[0]?.[0] === "From");
-  const chip = (on: boolean) => `inline-flex items-center min-h-[44px] px-3.5 border text-[14px] whitespace-nowrap ${on ? "border-crimson bg-crimson text-paper" : "ledger-border hover:border-crimson"}`;
+  const chip = (on: boolean) => `inline-flex items-center min-h-[44px] px-3.5 border text-[14px] whitespace-nowrap ${on ? "border-[var(--jw-action)] bg-[var(--jw-action)] text-white" : "ledger-border hover:border-[var(--jw-action)]"}`;
 
   return (
     <div className="mt-8">

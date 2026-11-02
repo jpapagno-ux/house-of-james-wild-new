@@ -1815,8 +1815,19 @@
    "category": "hotel",
    "tagline": "A secluded Balinese village retreat above the Ayung River valley.",
    "quote": "At Amandari, private courtyards open onto the living culture and landscapes of Ubud.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/indonesia/amandari/hero",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amandari/g10"
+   ],
    "bestMonths": "May through October generally offers the driest conditions for visiting Ubud, though Amandari is open and compelling throughout the year.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -2967,8 +2978,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -8.3915,
-    "lng": 115.219
+    "lat": -8.39158,
+    "lng": 115.271558
    },
    "airport": "Ngurah Rai International Airport (DPS)",
    "airportDirections": "Approximately 90 minutes by car from Ngurah Rai International Airport through scenic countryside and forest roads.",
@@ -7056,6 +7067,163 @@
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "casa-palopo",
+   "name": "Casa Palopó",
+   "ledgerId": "STY-2026-000576",
+   "country": "Guatemala",
+   "countrySlug": "guatemala",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A house of 15 rooms and suites and a three-bedroom villa on Lake Atitlán, at Santa Catarina Palopó in Guatemala's highlands.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casa-palopo/g10"
+   ],
+   "bestMonths": "November to April",
+   "bestMonthsNote": "Casa Palopó calls the dry season, November to April, a perfect time to enjoy the lake. From May to October showers are usually brief and followed by clear skies.",
+   "bestFor": [
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "La Aurora International Airport (GUA), Guatemala City",
+   "airportDirections": "Helicopter first: Casa Palopó has a helipad, and James arranges the flight. By road, the hotel puts the drive from Guatemala City at 3 to 3.5 hours, with a private transfer it coordinates.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six Deluxe rooms, each for up to 2 guests: San Lucas, San Juan, San Marcos, San Andrés, San Rafael with its mountain view, and San Francisco Superior.",
+     "Nine Suites for 2 or 3 guests: Santa Catarina, San Antonio, San Pablo, Santa Clara, San Pedro, Santiago and Cerro de Oro, with Tolimán and Atitlán in the villa.",
+     "Villa Palopó: three bedrooms with king beds and a lake view, for up to 9 guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Yoga by the lake with local teachers",
+     "A shamanic ceremony in the Maya tradition, about 1 hour 15 minutes",
+     "Guided birdwatching for native and migratory species",
+     "The Rostro Maya hike, timed for sunrise",
+     "Painting alongside local families in Santa Catarina Palopó",
+     "Foil boarding on the lake",
+     "Stargazing over the lake by telescope"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Kinnik, family-style dining between the terrace garden and the lake",
+     "A spa, with sound healing and in-room bath rituals",
+     "An honesty bar by the pool",
+     "Kayaks and paddle boards for the lake at dawn",
+     "A helipad",
+     "One MICHELIN Key, awarded in 2025"
+    ]
+   },
+   "onlyHere": [
+    "Casa Palopó is a colourful, art-filled house on Lake Atitlán where Maya culture shapes the stay: paint with the families of Santa Catarina Palopó, collect the morning's eggs from the coop for breakfast, then look at the stars over the lake through a telescope."
+   ],
+   "why": [
+    {
+     "title": "Lake Atitlán, slowly",
+     "body": "Casa Palopó suits couples who want the lake at an easy pace with Maya culture close at hand: the lake towns, a shaman's ceremony, a sunrise climb up Rostro Maya. Villa Palopó takes a group of up to nine, and Villa Bokéh, its sister hotel, makes Antigua the natural first stop."
+    },
+    {
+     "title": null,
+     "body": "Best suited for:"
+    },
+    {
+     "title": null,
+     "body": "Couples"
+    },
+    {
+     "title": null,
+     "body": "Culture"
+    }
+   ],
+   "facts": {
+    "best_months": "November to April is the dry season; from May to October showers are usually brief and followed by clear skies.",
+    "how_to_get_there": "Fly into La Aurora International Airport (GUA) in Guatemala City. Casa Palopó has a helipad; by road it is 3 to 3.5 hours, with a private transfer the hotel coordinates.",
+    "signature_experiences": "Yoga by the lake, a shamanic ceremony in the Maya tradition, art and culture in San Juan La Laguna, and a sunrise hike up Rostro Maya.",
+    "who_its_for": "Couples and small groups who want Lake Atitlán at an easy pace, with Maya culture, art and wellness close at hand."
+   },
+   "faqs": [
+    {
+     "q": "Where is Casa Palopó?",
+     "a": "On Lake Atitlán at Santa Catarina Palopó, Sololá, in Guatemala's highlands, at km 6.8 on the road to San Antonio Palopó. Its sister hotel, Villa Bokéh, is in Antigua."
+    },
+    {
+     "q": "How do you get to Casa Palopó?",
+     "a": "By helicopter or by road from La Aurora International Airport (GUA) in Guatemala City. The hotel has a helipad, and it puts the drive at 3 to 3.5 hours, with a private transfer it coordinates."
+    },
+    {
+     "q": "How many rooms does Casa Palopó have?",
+     "a": "Fifteen rooms and suites and one villa: six Deluxe rooms for 2, nine Suites for 2 or 3, and Villa Palopó, with three king bedrooms for up to 9 guests."
+    },
+    {
+     "q": "When is the best time to visit Casa Palopó?",
+     "a": "November to April, the dry season, which the hotel calls a perfect time to enjoy the lake. From May to October showers are usually brief and followed by clear skies."
+    },
+    {
+     "q": "What is there to do at Casa Palopó?",
+     "a": "Yoga by the lake, kayaks and paddle boards at dawn, a shamanic ceremony of about an hour and a quarter, guided birdwatching, a sunrise hike up Rostro Maya, painting with families in Santa Catarina Palopó, and art and culture in San Juan La Laguna."
+    },
+    {
+     "q": "Where do you eat at Casa Palopó?",
+     "a": "Palopó 6.8, chef Jorge Peralta's restaurant, cooks the dishes of the twelve lakeside villages over fire and smoke, daily from 7 am to 9 pm, with room service in the same hours. Kinnik serves family-style meals between the terrace garden and the lake."
+    },
+    {
+     "q": "Can you combine Casa Palopó with Antigua?",
+     "a": "Yes. Casa Palopó and Villa Bokéh in Antigua are sister hotels, and the hotels suggest Antigua first, then the lake. On James Wild & Co's Guatemala in 7 Days route they are the two highland stays before Tikal."
+    },
+    {
+     "q": "Does Casa Palopó have a MICHELIN Key?",
+     "a": "Yes. Casa Palopó received one MICHELIN Key in 2025, and Villa Bokéh received two."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03",
+     "PATH-05"
+    ],
+    "setting": "guatemala",
+    "intentions": [
+     "heritage",
+     "restoration"
+    ],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -26481,8 +26649,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -9.722,
-    "lng": 119.487
+    "lat": -9.7776308,
+    "lng": 119.3762222
    },
    "airport": "Tambolaka Airport (TMC); alternative: Kupang (KOE)",
    "airportDirections": "Tambolaka (TMC) is ~1 hr flight from Bali, then a scenic 90‑minute drive. The resort arranges open‑jeep transfers; we recommend flying into Tambolaka for ease.",
@@ -39389,7 +39557,7 @@
   },
   {
    "slug": "six-senses-uluwatu",
-   "name": "Six Senses \n Uluwatu Balir",
+   "name": "Six Senses \n Uluwatu Bali",
    "ledgerId": "STY-2026-000274",
    "country": "Indonesia",
    "countrySlug": "indonesia",
@@ -40463,8 +40631,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -8.571539,
-    "lng": 115.061258
+    "lat": -8.576728,
+    "lng": 115.054772
    },
    "airport": "Ngurah Rai International Airport (DPS)",
    "airportDirections": "DPS is approximately 90 minutes drive (~70 km) to Soori Bali. Arrange private transfers (IDR ~1,727,000) at booking or use a pre‑booked taxi. For serenity, avoid rush hours in Denpasar and plan arrival early in the day.",
@@ -46464,8 +46632,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -8.367699,
-    "lng": 114.570167
+    "lat": -8.846188,
+    "lng": 115.149528
    },
    "airport": "Ngurah Rai International Airport (Denpasar) , DPS",
    "airportDirections": "From (DPS) to The Ungasan Clifftop Resort is about 40‑minute drive, depending on traffic. You'll travel south on the Bukit Peninsula; the resort is perched up on the cliffs above the southern coast, so expect some winding roads and dramatic elevation changes.",
@@ -46855,8 +47023,8 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": {
-    "lat": -8.4861,
-    "lng": 115.2817
+    "lat": -8.493478,
+    "lng": 115.276498
    },
    "airport": "Ngurah Rai International Airport (DPS)",
    "airportDirections": "Approximately 45 km (1.5-hour drive). Recommended for international travelers.",
@@ -46929,6 +47097,166 @@
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "villa-bokeh",
+   "name": "Villa Bokéh",
+   "ledgerId": "STY-2026-000577",
+   "country": "Guatemala",
+   "countrySlug": "guatemala",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifteen rooms and suites among gardens in the shadow of the volcanoes, about 3 km from the centre of Antigua Guatemala.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/villa-bokeh/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "family",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "La Aurora International Airport (GUA), Guatemala City",
+   "airportDirections": "Helicopter first: Villa Bokéh has a helipad, and James arranges the flight. By road, the hotel arranges a private transfer from the airport; it puts Antigua about 45 minutes from Guatemala City. Shuttles and tuk-tuks run into town.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Two Deluxe rooms with outdoor patios, each for 2: Añil (52.67 m²) and Lavanda (27.03 m²).",
+     "Nine Junior Suites, 44 to 59 m²: Azul, Lino (terrace with a firepit and an outdoor bathtub), Ocre, Esmeralda, Ónix, Siena, Olivo, Rosada and Celeste. Ocre, Esmeralda and Celeste sleep 4.",
+     "Two Suites: Indigo (83.33 m², garden view, for 3) and Negra (58.76 m², balcony view, for 4).",
+     "Menta, the Premium Suite: 96.61 m², two queen beds and a balcony view, for 4.",
+     "Marfil, the Master Suite: 67.18 m² with a terrace, for 2."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "A guided walk past Antigua's Cathedral, La Merced and San Francisco.",
+     "A shopping tour of artisan boutiques, textiles and jewellery.",
+     "An ATV tour of Ciudad Vieja, San Pedro las Huertas and El Cerro de la Cruz.",
+     "The Notebook Experience: a canoe across the lagoon for two, with a picnic.",
+     "Yoga with local instructors, and a garden walk.",
+     "The Signature Bokéh bath ritual, with bougainvillea flowers.",
+     "For families: an elf hunt in the gardens, eggs from the chicken coop for breakfast, mega Jenga and cricket."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Casa Cristal, rustic and farm-driven, from breakfast through dinner",
+     "Gardens with QR-coded plants, and a lagoon for canoeing",
+     "Spa treatments: massage, reflexology and facials",
+     "An honesty bar with a view",
+     "A helipad",
+     "Two MICHELIN Keys, awarded in 2025"
+    ]
+   },
+   "onlyHere": [
+    "Villa Bokéh sits in the shadow of Antigua's volcanoes, about 3 km from the old centre, among gardens and a lagoon: canoe across it to a picnic for two, take a bougainvillea bath, then eat Guatemala then and now at Bokéh 3.1."
+   ],
+   "why": [
+    {
+     "title": "Antigua by day, gardens by night",
+     "body": "Villa Bokéh suits couples and families who want Antigua's churches and cobbled streets by day and a quiet estate to come back to. Several suites sleep four, the gardens hold family games, and Casa Palopó on Lake Atitlán is its sister hotel for the next leg."
+    },
+    {
+     "title": null,
+     "body": "Best suited for:"
+    },
+    {
+     "title": null,
+     "body": "Couples"
+    },
+    {
+     "title": null,
+     "body": "Families"
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly into La Aurora International Airport (GUA) in Guatemala City. Villa Bokéh has a helipad and arranges a private transfer by road; the hotel puts Antigua about 45 minutes from the city.",
+    "signature_experiences": "A guided walk through Antigua, a canoe and picnic on the lagoon, a bougainvillea bath ritual, and dinner at Bokéh 3.1.",
+    "who_its_for": "Couples and families who want Antigua by day and a quiet garden estate by night."
+   },
+   "faqs": [
+    {
+     "q": "Where is Villa Bokéh?",
+     "a": "In Panorama, La Antigua Guatemala, about 3.1 km from the centre of Antigua, among gardens in the shadow of the volcanoes."
+    },
+    {
+     "q": "How do you get to Villa Bokéh?",
+     "a": "Fly into La Aurora International Airport (GUA) in Guatemala City. The hotel has a helipad and arranges a private transfer by road, and it puts Antigua about 45 minutes from the city. Shuttles and tuk-tuks take guests into town."
+    },
+    {
+     "q": "How many rooms does Villa Bokéh have?",
+     "a": "Fifteen: two Deluxe rooms and 13 suites, from the 27 m² Lavanda to Menta, the 96.61 m² Premium Suite. Lino has a terrace with a firepit and an outdoor bathtub."
+    },
+    {
+     "q": "Is Villa Bokéh good for families?",
+     "a": "Yes. Ocre, Esmeralda, Celeste, Negra and Menta sleep four, and the hotel runs family activities: an elf hunt in the gardens with a map from reception, eggs from the chicken coop for breakfast, and mega Jenga and cricket."
+    },
+    {
+     "q": "What is there to do at Villa Bokéh?",
+     "a": "A guided walk past Antigua's Cathedral, La Merced and San Francisco, an ATV tour of nearby villages, a canoe across the lagoon with a picnic for two, yoga, a garden walk and spa treatments."
+    },
+    {
+     "q": "Where do you eat at Villa Bokéh?",
+     "a": "Bokéh 3.1, led by executive chef Marcos Sáenz, formerly of Mugaritz, cooks Guatemalan dishes then and now, daily from 7 am to 10 pm. Casa Cristal is rustic and farm-driven, from breakfast through dinner."
+    },
+    {
+     "q": "Can you combine Villa Bokéh with Lake Atitlán?",
+     "a": "Yes. Villa Bokéh and Casa Palopó on Lake Atitlán are sister hotels, and they suggest beginning in Antigua and going on to the lake. On James Wild & Co's Guatemala in 7 Days route they are the two highland stays before Tikal."
+    },
+    {
+     "q": "Does Villa Bokéh have MICHELIN Keys?",
+     "a": "Yes. Villa Bokéh received two MICHELIN Keys in 2025."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05",
+     "PATH-03"
+    ],
+    "setting": "guatemala",
+    "intentions": [
+     "heritage",
+     "food_and_wine",
+     "restoration"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

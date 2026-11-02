@@ -320,6 +320,11 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/polar/falklands-south-georgia", priority: 0.7, changeFrequency: "weekly" },
   { path: "/voyages/polar/falklands-south-georgia-antarctica", priority: 0.7, changeFrequency: "weekly" },
   { path: "/partners/antarctica21", priority: 0.6, changeFrequency: "monthly" },
+  // The Galápagos partners (James approved, 2 Nov 2026).
+  { path: "/partners/royal-galapagos", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/galaxy-cruises", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/ecoventura", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/vianatura", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },
   // Journal post and House Sessions: approved 27 Oct 2026.

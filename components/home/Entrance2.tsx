@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { HOME } from "@/lib/content/home";
 import { ADVISORS, initials } from "@/lib/content/advisors";
 import { PATHWAYS } from "@/lib/pathways";
-import { VOLUMES } from "@/lib/site";
+import { LINKED_VOLUMES as VOLUMES, VOLUMES as EVERY_VOLUME } from "@/lib/site";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { PATHWAYS_INDEX_HREF, pathwayHref } from "@/lib/content/pathways/flag";
@@ -59,10 +59,10 @@ export function HouseUnderStrip() {
         <p className="ledger-eyebrow ledger-crimson">Six volumes, one Ledger</p>
         <h2 className="ledger-h2 mt-2">Every place, filed where it belongs.</h2>
         <ul className="mt-6 divide-y ledger-border border-t border-b ledger-border">
-          {VOLUMES.map((v, i) => (
+          {VOLUMES.map((v) => (
             <li key={v.href}>
               <Link href={v.href} className="group flex items-baseline gap-4 py-3.5 hover:ledger-crimson">
-                <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{["I", "II", "III", "IV", "V", "VI"][i]}</span>
+                <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{["I", "II", "III", "IV", "V", "VI"][EVERY_VOLUME.findIndex((x) => x.href === v.href)]}</span>
                 <span className="min-w-0"><span className="ledger-display text-[1.25rem]">{v.label}</span>{counts[v.href] && <span className="ledger-eyebrow ml-2">{counts[v.href]}</span>}<span className="block text-[14px] ledger-muted leading-snug mt-0.5">{v.intro}</span></span>
               </Link>
             </li>

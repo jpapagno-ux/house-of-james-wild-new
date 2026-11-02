@@ -34,6 +34,8 @@ export function organization(): Thing {
     founder: { "@id": ids.founder },
     identifier: SITE.credentials.map((c) => ({ "@type": "PropertyValue", propertyID: c.label, value: c.value })),
     memberOf: SITE.memberships.map((m) => ({ "@type": "Organization", name: m })),
+    // House brands named without links (Gatherings is never linked from the site, James 2 Nov 2026).
+    brand: [{ "@type": "Brand", name: "Wild & Co Gatherings" }],
     sameAs: SITE.social.map((s) => s.url),
   };
 }

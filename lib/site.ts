@@ -214,6 +214,12 @@ export const LEGAL_NAV: NavLink[] = [
   { label: "Privacy", href: "/legal/privacy" },
 ];
 
+/** The volumes the header, menus and footer link to. Gatherings is a house brand named in
+ *  plain text, never linked from shared chrome (James, 2 Nov 2026). */
+export const LINKED_VOLUMES = VOLUMES.filter((v) => v.href !== "/gatherings");
+/** The house's lines, as plain text for the footer ("Stays · Voyages · Safaris · Gatherings"). */
+export const HOUSE_LINE = ["Stays", "Voyages", "Safaris", "Gatherings"];
+
 // Pages that are built AND indexable. The sitemap lists only these. Built
 // pages awaiting sign-off stay noindex and off this list (see lib/routes.ts
 // for the link guard's BUILT list). Grows step by step.

@@ -38,7 +38,7 @@ export default function ChooseYourWay({ place, stayVol, featured, stayCount, sta
         ...safariStays.slice(0, Math.max(0, 8 - res.length)).map((s) => card(s, "safaris")),
       ], more("/safaris", "The safari desk", SF)) },
     residences.length > 0 && { key: "gatherings", label: "Gatherings", count: residences.length, ink: G, pin: { show: ["residence"] },
-      content: grid(residences.slice(0, 8).map((s) => card(s, "gatherings")), more("/gatherings", "Family residences, all regions", G)) },
+      content: grid(residences.slice(0, 8).map((s) => card(s, "gatherings")), null) },
     voyages.length > 0 && { key: "voyages", label: "Voyages", count: voyages.length, ink: V, pin: { show: ["vessel"] }, content: jgrid(voyages, more("/voyages", "All voyages", V)) },
     routes.length > 0 && { key: "routes", label: "Overland routes", count: routes.length, ink: O, content: jgrid(routes, more("/overland", "All Overland routes", O)) },
   ].filter(Boolean) as VolumeTab[];

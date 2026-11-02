@@ -1,7 +1,7 @@
 import { VOLUME_ORDER, volumeInk, volumeLightInk } from "@/lib/volumes";
 import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
-import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, VOLUMES as ALL_VOLUMES } from "@/lib/site";
+import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, LINKED_VOLUMES as ALL_VOLUMES, HOUSE_LINE, VOLUMES as EVERY_VOLUME } from "@/lib/site";
 import { live } from "@/lib/routes";
 import { JwcoSeal } from "./Marks";
 
@@ -63,17 +63,19 @@ export default function SiteFooter({ tone = DEFAULT_TONE }: { tone?: FooterTone 
 
       {/* the six volumes as tabs */}
       <nav aria-label="The volumes" className="max-w-[1400px] mx-auto px-5 md:px-10">
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0.5">
-          {VOLUMES.map((v, i) => (
+        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0.5">
+          {VOLUMES.map((v) => (
             <li key={v.href}>
               <Link href={v.href} className="block h-full p-4 transition-colors" style={{ background: T.tabBg, borderTop: `3px solid ${dark ? LIGHT[v.tone ?? ""] ?? "#E8A598" : v.tone ?? "#8B2525"}` }}>
-                <span className="ledger-eyebrow !text-[9px]" style={{ color: T.muted }}>Volume {NUM[i]}</span>
+                <span className="ledger-eyebrow !text-[9px]" style={{ color: T.muted }}>Volume {NUM[EVERY_VOLUME.findIndex((x) => x.href === v.href)]}</span>
                 <span className="block ledger-display text-[1.35rem] leading-none mt-1.5">{v.label}</span>
                 <span className="block text-[12.5px] leading-snug mt-2 line-clamp-2" style={{ color: T.muted }}>{v.intro}</span>
               </Link>
             </li>
           ))}
         </ul>
+        {/* The house's lines in plain text; Gatherings is named, never linked (James, 2 Nov 2026). */}
+        <p className="mt-4 text-[14px]" style={{ color: T.muted }}><span className="ledger-eyebrow !text-[10px] mr-2">The House</span>{HOUSE_LINE.join(" · ")}</p>
       </nav>
 
       {/* columns */}

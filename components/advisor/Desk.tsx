@@ -129,7 +129,7 @@ export function AdvisorStrip({ place, countrySlug, regionSlug, volume, ledgerId,
 // A horizontal scroll of every advisor who knows a region: used on the
 // region pages and the volume hubs.
 // `unlinked`: volumes whose chips print as plain labels on this page (Voyages never links to Gatherings).
-export function AdvisorScroll({ regionSlug, volume, title, unlinked = [] }: { regionSlug?: string | null; volume?: Volume; title: string; unlinked?: string[] }) {
+export function AdvisorScroll({ regionSlug, volume, title, unlinked = ["gatherings"] }: { regionSlug?: string | null; volume?: Volume; title: string; unlinked?: string[] }) {
   const { advisors } = advisorsFor({ regionSlug, volume });
   if (!advisors.length) return null;
   return (

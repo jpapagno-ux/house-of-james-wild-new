@@ -10,7 +10,7 @@ import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
 import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
-import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
+import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, LINKED_VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
 
 // Link guard: in production only built pages appear in the menus.

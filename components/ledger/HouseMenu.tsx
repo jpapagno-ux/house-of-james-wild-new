@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { X, Search, Phone } from "lucide-react";
-import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, VOLUMES, type MegaMenu } from "@/lib/site";
+import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, LINKED_VOLUMES as VOLUMES, VOLUMES as EVERY_VOLUME, type MegaMenu } from "@/lib/site";
 import { REGION_DATA } from "@/lib/content/regions";
 import { HOME } from "@/lib/content/home";
 import { live } from "@/lib/routes";
@@ -22,7 +22,9 @@ import CompassSpin from "./CompassSpin";
 const VOLS = live(VOLUMES) as MegaMenu[];
 const REGS = live(REGIONS);
 const EXTRA = live([...MAIN_EXTRA, ...UTILITY_NAV]);
-const NUM = ["I", "II", "III", "IV", "V", "VI"];
+const ROMAN = ["I", "II", "III", "IV", "V", "VI"];
+// A volume keeps its own number (Voyages is IV) even though Gatherings is not listed here.
+const numOf = (v: { href: string }) => ROMAN[EVERY_VOLUME.findIndex((x) => x.href === v.href)] ?? "";
 
 function volumePhoto(v: MegaMenu): { url: string; alt: string } | null {
   const h = HOME.volumes.find((x) => x.path === v.href);
@@ -65,7 +67,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
             {VOLS.map((v, i) => (
               <li key={v.href} className="border-b ledger-border" onMouseEnter={() => setPick(v.href)} onFocus={() => setPick(v.href)}>
                 <Link href={v.href} onClick={onClose} className="group flex items-baseline gap-5 py-3.5 lg:py-4">
-                  <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{NUM[i]}</span>
+                  <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{numOf(v)}</span>
                   <span className={`ledger-display text-[2rem] lg:text-[2.6rem] leading-none whitespace-nowrap transition-colors ${pick === v.href ? "ledger-crimson" : ""}`}>{v.label}</span>
                   <span className="hidden xl:block ml-auto text-right text-[12.5px] ledger-muted max-w-[200px] leading-snug opacity-0 group-hover:opacity-100 transition">{v.intro}</span>
                 </Link>
@@ -109,7 +111,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
             <span className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
             <span className="absolute inset-x-0 top-0 h-1" style={{ background: picked?.tone ?? "var(--jw-accent-hex)" }} />
             <span className="absolute left-7 right-7 bottom-7">
-              <span className="block ledger-eyebrow !text-white/75">Volume {NUM[VOLS.indexOf(picked)] ?? ""}</span>
+              <span className="block ledger-eyebrow !text-white/75">Volume {picked ? numOf(picked) : ""}</span>
               <span className="block ledger-display text-[2.4rem] leading-none mt-2">{picked?.label}</span>
               <span className="block text-[14.5px] text-white/85 mt-3 max-w-sm leading-snug">{picked?.intro}</span>
               <span className="mt-4 inline-flex ledger-eyebrow !text-[11px] !text-white">Enter {picked?.label} →</span>

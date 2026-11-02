@@ -43,9 +43,12 @@ test("no em or en dashes in the Galápagos files", () => {
   assert.doesNotMatch(read("lib/content/partners/galapagos.ts"), /[–—]/);
 });
 
-test("Horizon's three dated deals are Final Calls that stay live until their departure", () => {
+test("Horizon's 22 June deal is a Final Call live until its departure; the full 6 July sailing's deals are gone", async () => {
   const src = read("lib/content/offers/offers.ts");
-  for (const [id, dep] of [["OFR-2026-000162", "2027-06-22"], ["OFR-2026-000163", "2027-07-06"], ["OFR-2026-000164", "2027-07-06"]]) {
+  const { liveOffers } = await import("../lib/content/offers/offers.ts").catch(() => ({ liveOffers: null as null }));
+  assert.ok(!src.includes('"OFR-2026-000163", "2027') && !src.includes('"OFR-2026-000164", "2027'), "6 July deals removed");
+  if (liveOffers) assert.ok(!liveOffers("2026-11-02").some((o) => o.id === "OFR-2026-000163" || o.id === "OFR-2026-000164"));
+  for (const [id, dep] of [["OFR-2026-000162", "2027-06-22"]]) {
     assert.ok(src.includes(`"${id}", "${dep}"`), id);
     const o = { program: "Final Call", travel: { to: dep }, departure: dep };
     assert.equal(offerLastDay(o), dep);

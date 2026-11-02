@@ -122,13 +122,13 @@ const HAND_KEPT: Offer[] = [
   // ── 2026 · Royal Galapagos, Galapagos Horizon (James approved, 2 Nov 2026) ──
   // The only dated deals Royal Galapagos' booking engine showed on 2 Nov 2026, each on one departure, so each is
   // a Final Call that stays live until its departure day (valid_to). Filed in the Base44 library as
-  // OFR-2026-000162 to 000164; kept here until the nightly sync carries them. Its undated promotions (free hotel
+  // OFR-2026-000162 to 000164; kept here until the nightly sync carries them. 000163 and 000164 (the 6 July 2027
+  // sailing, US$500 off and US$8,000 off the charter) were archived on 2 Nov 2026 (James): Royal Galapagos shows
+  // that sailing as full. Their IDs are never reused. Its undated promotions (free hotel
   // nights, 2X1, standing group and child discounts) are not shown (house rule).
   ...([
     ["OFR-2026-000162", "2027-06-22", "22 June 2027", "Galapagos Horizon, 22 June 2027 Northern islands", "US$1,000 off per person", "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply."],
-    ["OFR-2026-000163", "2027-07-06", "6 July 2027", "Galapagos Horizon, 6 July 2027 Northern islands", "US$500 off per person", "On the 6 July 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,845 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply."],
-    ["OFR-2026-000164", "2027-07-06", "6 July 2027", "Galapagos Horizon whole-yacht charter, 6 July 2027", "US$8,000 off the whole yacht", "A whole-yacht charter of Galapagos Horizon for up to 16 on the 6 July 2027 sailing of the 5-day Northern islands cruise (4 nights): US$80,450 instead of US$88,450. New bookings only; subject to availability. Royal Galapagos terms apply."],
-  ] as const).map(([id, dep, words, name, headline, conditions]): Offer => ({
+          ] as const).map(([id, dep, words, name, headline, conditions]): Offer => ({
     id, year: 2026, status: "Live", scope: "vessel", ref: "galapagos-horizon-trimaran", partner: "royal-galapagos", name, country: "Ecuador", program: "Final Call",
     headline, travel: { from: "2026-11-02", to: dep, text: `Departs ${words}` }, departure: dep, conditions,
     source: "Royal Galapagos booking engine", checked: "2026-11-02", volume: "voyages",
@@ -151,7 +151,7 @@ const TYPE_BY_ID: Record<string, VoyageOfferType> = {
   "OFR-2026-000129": "Celebrations", "OFR-2026-000130": "Celebrations", "OFR-2026-000131": "Celebrations", "OFR-2026-000132": "Celebrations",
   "OFR-2026-000160": "On the Horizon", "OFR-2026-000161": "On the Horizon",
   // Royal Galapagos' Galapagos Horizon departure deals: Final Call (James, 2 Nov 2026).
-  "OFR-2026-000162": "Final Call", "OFR-2026-000163": "Final Call", "OFR-2026-000164": "Final Call",
+  "OFR-2026-000162": "Final Call",
 };
 /** A voyage offer's type: the filed type, James's typing by ID, then a reading of its program and terms. */
 export function voyageOfferType(o: Pick<Offer, "id" | "program" | "headline" | "name" | "offerType">): VoyageOfferType {

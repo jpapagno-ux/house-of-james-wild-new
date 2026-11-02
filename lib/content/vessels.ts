@@ -8,6 +8,8 @@
 // labelled "Voyage" and noindex. A vessel with `ship` set already has /voyages/ships/<ship>,
 // and its stay URL 301s there (redirects.json). Pure module: no JSON imports, so tests load it.
 
+import { SHIP_REGISTRY } from "./ships/registry.ts";
+
 export type VesselWaters = "galapagos" | "indonesia" | "amazon" | "elsewhere";
 export type Vessel = { slug: string; name: string; kind: string; waters: VesselWaters; ship?: string };
 
@@ -18,19 +20,11 @@ export const VESSEL_WATERS: Record<VesselWaters, { name: string; country: string
   elsewhere: { name: "Other waters", country: null },
 };
 
-export const VESSELS: Vessel[] = [
-  { slug: "aliikai-voyage", name: "Aliikai", kind: "phinisi", waters: "indonesia", ship: "aliikai" },
-  { slug: "celestia-yacht", name: "Celestia", kind: "phinisi yacht", waters: "indonesia" },
-  { slug: "silolona-sojourns", name: "Silolona", kind: "phinisi yacht", waters: "indonesia" },
-  { slug: "mutiara-laut", name: "Mutiara Laut", kind: "wooden schooner", waters: "indonesia" },
-  { slug: "ecoventura-evolve-yacht", name: "Ecoventura Evolve", kind: "yacht", waters: "galapagos" },
-  { slug: "ecoventura-origin-yacht", name: "Ecoventura Origin", kind: "yacht", waters: "galapagos" },
-  { slug: "ecoventura-theory-yacht", name: "Ecoventura Theory", kind: "yacht", waters: "galapagos" },
-  { slug: "alya-catamaran-galapagos", name: "Galaxy Alya", kind: "catamaran", waters: "galapagos" },
-  { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", kind: "yacht", waters: "galapagos" },
-  // andbeyond.com files her in the Peruvian Amazon (the library record says Brazil; flagged in Stay Studio).
-  { slug: "beyond-amazon-explorer", name: "andBeyond Amazon Explorer", kind: "river expedition yacht", waters: "amazon" },
-];
+// Built from the ships registry (lib/content/ships/registry.ts): every registry ship filed in the
+// Stay library is a vessel here, and one with a ship page points its stay URL there.
+export const VESSELS: Vessel[] = SHIP_REGISTRY.filter((s) => s.staySlug).map((s) => ({
+  slug: s.staySlug!, name: s.name, kind: s.kind, waters: (s.waters[0] === "nile" ? "elsewhere" : s.waters[0]) as VesselWaters, ...(s.page ? { ship: s.slug } : {}),
+}));
 
 export const VESSEL_SLUGS = new Set(VESSELS.map((v) => v.slug));
 export const vessel = (slug: string) => VESSELS.find((v) => v.slug === slug);

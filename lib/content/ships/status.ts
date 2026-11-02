@@ -19,5 +19,9 @@ export function statusOf(s: Pick<ShipRecord, "status" | "launch">, on?: string):
 export function launchSafe(text: string, s: Pick<ShipRecord, "launch">, on?: string): string {
   if (!s.launch || !launched(s, on)) return text;
   const w = launchWords(s.launch).replace(" ", "\\s+");
-  return text.replace(new RegExp(`,?\\s*launching(\\s+in)?\\s+${w}`, "gi"), "").replace(/\s{2,}/g, " ");
+  return text
+    .replace(new RegExp(`,?\\s*launching(\\s+in)?\\s+${w}`, "gi"), "")
+    .replace(new RegExp(`starts sailing (.+?) in ${w}`, "gi"), "sails $1")
+    .replace(new RegExp(`\\s+from ${w}(?=[:.,])`, "gi"), "")
+    .replace(/\s{2,}/g, " ");
 }

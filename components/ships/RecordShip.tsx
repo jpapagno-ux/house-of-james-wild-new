@@ -22,6 +22,7 @@ import ShipGlance from "./ShipGlance";
 // more to say (Aliikai's charter, first-time route and founder story) passes it in
 // through `extra`, which slots into the same frame. Every price is derived from the
 // published departures; every photograph is credited to its owner where one is filed.
+const kindLabel = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
 
 export type ShipExtra = {
@@ -189,7 +190,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
                     <Link href={shipPath(x.slug)} className="group block h-full ledger-paper border ledger-border hover:border-crimson/60">
                       <div className="relative aspect-[4/3] border-b ledger-rule bg-paper-card overflow-hidden"><Image src={x.hero.url} alt={x.hero.alt} fill sizes="(min-width: 1024px) 270px, 78vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" /></div>
                       <div className="p-4">
-                        <p className="ledger-eyebrow ledger-crimson">{x.type === "dahabiya" ? "Dahabiya" : "Riverboat"} · {nightsLabel(x)}</p>
+                        <p className="ledger-eyebrow ledger-crimson">{kindLabel(x.type)} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
                         <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "new dates to be announced" : "rates on request"}</p>
                       </div>

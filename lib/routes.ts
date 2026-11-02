@@ -49,6 +49,8 @@ export const BUILT: string[] = [
   "/voyages/ships/sun-boat-iii",
   "/voyages/ships/sun-boat-iv",
   "/voyages/ships/zein-nile-chateau",
+  // andBeyond Amazon Explorer (filed 1 Nov 2026; out of LIVE_ROUTES until James signs her off)
+  "/voyages/ships/beyond-amazon-explorer",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

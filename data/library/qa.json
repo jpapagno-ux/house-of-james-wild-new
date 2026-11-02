@@ -135,6 +135,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce0",
+   "slug": "amanpulo",
+   "name": "Amanpulo",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6ae8bd919444e668a1395912",
    "slug": "amanpuri",
    "name": "Amanpuri",
@@ -189,6 +202,32 @@
    "country": "Costa Rica",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce5",
+   "slug": "amorita-resort",
+   "name": "Amorita Resort",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce4",
+   "slug": "amun-ini-beach-resort-and-spa",
+   "name": "Amun Ini Beach Resort & Spa",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8bd",
@@ -350,6 +389,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6cdb",
+   "slug": "ariara-island",
+   "name": "Ariara Island",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a899f059da243cd44b3edb2",
    "slug": "ariel-house",
    "name": "Ariel House",
@@ -434,6 +486,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce3",
+   "slug": "atmosphere-resorts-and-spa",
+   "name": "Atmosphere Resorts & Spa",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c8",
    "slug": "atzaro-okavango-camp",
    "name": "Atzaró Okavango",
@@ -508,6 +573,19 @@
    "country": "Indonesia",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce1",
+   "slug": "banwa-private-island",
+   "name": "Banwa Private Island",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d0",
@@ -699,6 +777,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce6",
+   "slug": "bintana-sa-paraiso",
+   "name": "Bintana sa Paraiso",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a89a1a2a1ed379c848caef5",
    "slug": "birkenhead-house",
    "name": "Birkenhead House",
@@ -765,6 +856,19 @@
    "country": "Zimbabwe",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ceb",
+   "slug": "busuanga-bay-lodge",
+   "name": "Busuanga Bay Lodge",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8de",
@@ -897,6 +1001,19 @@
    "country": "Ireland",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6cd9",
+   "slug": "cauayan-boutique-private-island",
+   "name": "Cauayan Boutique Private Island",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1bc6e7bc1d0700009fe",
@@ -1128,6 +1245,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6cdd",
+   "slug": "discovery-coron",
+   "name": "Discovery Coron",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6ae86a86abf66f88c2c86514",
    "slug": "domes-white-coast-milos",
    "name": "Domes White Coast Milos",
@@ -1228,6 +1358,44 @@
    "slug": "el-mapi-byinkaterra",
    "name": "El MaPi byInkaterra",
    "country": "Peru",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8ed6f56cef2669e661fe0",
+   "slug": "el-nido-resorts-apulit-island",
+   "name": "Apulit Island",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed6f56cef2669e661fde",
+   "slug": "el-nido-resorts-lagen-island",
+   "name": "Lagen Island",
+   "country": "Philippines",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8ed6f56cef2669e661fdf",
+   "slug": "el-nido-resorts-miniloc-island",
+   "name": "Miniloc Island",
+   "country": "Philippines",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8eccaf2cbe23c7136b7dd",
+   "slug": "el-nido-resorts-pangulasian-island",
+   "name": "Pangulasian Island",
+   "country": "Philippines",
    "missing": [],
    "released": true
   },
@@ -1515,6 +1683,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6cda",
+   "slug": "flower-island-resort",
+   "name": "Flower Island Resort",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff911",
    "slug": "fogo-island-inn",
    "name": "Room & Wild Fogo Island Inn",
@@ -1531,7 +1712,7 @@
     "hero_photo",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9d46027650cc04166342d7",
@@ -1789,6 +1970,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce7",
+   "slug": "hotel-okura-manila",
+   "name": "Hotel Okura Manila",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff91c",
    "slug": "hotel-panamera",
    "name": "Hotel Panamera",
@@ -1837,6 +2031,19 @@
    "name": "Huilo Huilo Biological Reserve",
    "country": "Chile & Easter Island",
    "missing": [
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6cdc",
+   "slug": "huma-island-resort-and-spa",
+   "name": "Huma Island Resort & Spa",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
     "stay_copy",
     "coordinates"
    ],
@@ -2088,6 +2295,19 @@
    "slug": "kahavadi-chiang-rai",
    "name": "Kahavadi Chiang Rai",
    "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce2",
+   "slug": "kalinaw-resort",
+   "name": "Kalinaw Resort",
+   "country": "Philippines",
    "missing": [
     "coming_soon",
     "hero_photo",
@@ -3513,6 +3733,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6cdf",
+   "slug": "sangat-island-dive-resort",
+   "name": "Sangat Island Dive Resort",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff992",
    "slug": "sans-camp",
    "name": "San Camp",
@@ -3643,6 +3876,19 @@
     "stay_copy"
    ],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6cea",
+   "slug": "shangri-la-mactan-cebu",
+   "name": "Shangri-La Mactan, Cebu",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae65cf9a1294e6908611d77",
@@ -4289,6 +4535,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce9",
+   "slug": "the-bayleaf-intramuros",
+   "name": "The Bayleaf Intramuros",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9d6",
    "slug": "the-beach-tulum",
    "name": "The Beach Tulum",
@@ -4430,6 +4689,19 @@
     "coming_soon",
     "coordinates",
     "own_photos"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6ce8",
+   "slug": "the-peninsula-manila",
+   "name": "The Peninsula Manila",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
    ],
    "released": false
   },
@@ -4665,6 +4937,19 @@
    "name": "Turtle Island",
    "country": "Fiji",
    "missing": [
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8ed8ba6295b5316ea6cde",
+   "slug": "two-seasons-coron-island-resort",
+   "name": "Two Seasons Coron Island Resort & Spa",
+   "country": "Philippines",
+   "missing": [
+    "coming_soon",
     "hero_photo",
     "stay_copy",
     "coordinates"

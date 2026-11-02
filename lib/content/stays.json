@@ -12262,6 +12262,423 @@
    "placeSlug": null
   },
   {
+   "slug": "el-nido-resorts-lagen-island",
+   "name": "Lagen\nIsland",
+   "ledgerId": "STY-2026-000594",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "The reimagined Lagen, between the Napuro forest and a lagoon, with Two MICHELIN Keys",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-lagen-island/g10"
+   ],
+   "bestMonths": "December to April",
+   "bestMonthsNote": "El Nido Resorts does not publish best months. The Department of Tourism gives December to April as El Nido's best months, with the calmest seas.",
+   "bestFor": [
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 11.09415,
+    "lng": 119.388779
+   },
+   "airport": "Lio Airport, El Nido (ENI)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Water Villa: 52.55 square metres above the lagoon, king bed, for 2",
+     "Forest Suite: 62 square metres, Royal King bed and soaking tub, for 3",
+     "Forest Deluxe: 44 square metres, king or twin beds, for 2",
+     "Forest Room: about 41 square metres, king or twin beds, for 3"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private dining in caves, coves and on sandbars",
+     "Island hopping",
+     "Hiking and nature trails",
+     "Night kayaking on clear kayaks",
+     "Weddings on the Lagen Sandbar or Entalula Island"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "The Clubhouse Restaurant",
+     "The Boat House lounge under the limestone cliffs",
+     "The Beach Club",
+     "Lagen Spa and gym, with a Watsu pool, sauna and steam room",
+     "Yoga studio",
+     "Two MICHELIN Keys, 2026"
+    ]
+   },
+   "onlyHere": [
+    "A resort rebuilt around Filipino craft, with clay, wood, fabric and rattan by Filipino makers, between an old forest and a lagoon."
+   ],
+   "why": [
+    {
+     "title": "Lagen, Reimagined",
+     "body": "Lagen reopened in September 2025 as El Nido Resorts' newly transformed eco sanctuary, set between the ancient Napuro forest and a limestone lagoon. Water villas stand above the lagoon, forest rooms look into the trees, and the new spa is one of the largest in Palawan. The MICHELIN Guide gave it Two MICHELIN Keys in 2026."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April, El Nido's best months per the Department of Tourism. El Nido Resorts does not publish its own.",
+    "how_to_get_there": "Chartered flights are available. Commercial flights reach Lio Airport in El Nido from Clark, Cebu and Bohol; the resort team meets arrivals for a 30 minute boat transfer to Lagen.",
+    "signature_experiences": "The new Lagen Spa, private dining in caves and on sandbars, island hopping and forest trails.",
+    "who_its_for": "Couples, and anyone after a quiet, design-led island with a strong spa."
+   },
+   "faqs": [
+    {
+     "q": "Where is Lagen Island?",
+     "a": "Off El Nido in northern Palawan. Lagen is one of El Nido Resorts' islands, set between the Napuro forest and a lagoon framed by limestone cliffs."
+    },
+    {
+     "q": "How do you get to Lagen?",
+     "a": "Fly to Lio Airport in El Nido, on commercial flights from Clark, Cebu and Bohol or by charter. The resort team meets you and a 30 minute boat takes you to Lagen."
+    },
+    {
+     "q": "Is Lagen newly renovated?",
+     "a": "Yes. El Nido Resorts relaunched Lagen as a newly transformed island from 12 September 2025, with new rooms, a new spa and gym and work by Filipino makers."
+    },
+    {
+     "q": "What rooms does Lagen have?",
+     "a": "Water Villas of about 53 square metres above the lagoon, Forest Suites of 62 square metres with a soaking tub, and Forest Deluxe and Forest Rooms looking into the Napuro forest."
+    },
+    {
+     "q": "What is the Lagen Spa like?",
+     "a": "El Nido Resorts calls it the largest and most holistic wellness destination in Palawan, with gardens, a reflection pond, a Watsu pool, plunge pools, a steam room, a sauna, private treatment rooms, a gym and a yoga studio."
+    },
+    {
+     "q": "Where can you eat at Lagen?",
+     "a": "The Clubhouse Restaurant, The Boat House lounge under the cliffs and The Beach Club, plus private dining in caves, coves and on sandbars."
+    },
+    {
+     "q": "Can you get married at Lagen?",
+     "a": "Yes. Weddings of up to 120 guests are held on the Lagen Sandbar, on Entalula Island or in the Ceremonial Hall."
+    },
+    {
+     "q": "What awards has Lagen won?",
+     "a": "El Nido Resorts lists Two MICHELIN Keys 2026 from the MICHELIN Guide and a 2026 Hotel Design award for Asia Pacific."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "el-nido-resorts-miniloc-island",
+   "name": "Miniloc\nIsland",
+   "ledgerId": "STY-2026-000595",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "El Nido's original island of discovery, with water cottages under the cliffs",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-miniloc-island/g10"
+   ],
+   "bestMonths": "December to April",
+   "bestMonthsNote": "El Nido Resorts does not publish best months. The Department of Tourism gives December to April as El Nido's best months, with the calmest seas.",
+   "bestFor": [
+    "family",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Lio Airport, El Nido (ENI)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Water Cottage: 24 square metres on stilts over the lagoon, for 2",
+     "Cliff Cottage: 46 square metres, for up to 5",
+     "Deluxe Seaview Room: 44 square metres",
+     "Beachside Room: 32 square metres",
+     "Garden Cottage and Garden Cottage Twin: 28 square metres"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Nature discovery expeditions",
+     "Island hopping in Bacuit Bay",
+     "Viewing decks and forest paths"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Thatched rooms with private verandas",
+     "Treatment rooms and gym",
+     "Viewing decks and nature paths"
+    ]
+   },
+   "onlyHere": [
+    "Rooms on stilts beside Miniloc's limestone cliffs, with verandas hanging over the lagoon."
+   ],
+   "why": [
+    {
+     "title": "Rustic Island Adventure",
+     "body": "Miniloc is El Nido Resorts' island of discovery in Bacuit Bay, set against dramatic cliffs, with thatched cottages, rooms on stilts above the lagoon and an easier price than its sister islands. El Nido Resorts pitches it to the young and young at heart."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April, El Nido's best months per the Department of Tourism. El Nido Resorts does not publish its own.",
+    "how_to_get_there": "Fly to Lio Airport in El Nido. Miniloc's page does not publish transfer details; El Nido Resorts' other islands are reached by boat from Lio with coordinated transfers.",
+    "signature_experiences": "Nature discovery expeditions, island hopping and the water cottages under the cliffs.",
+    "who_its_for": "Families and younger travellers looking for a lively, good value island."
+   },
+   "faqs": [
+    {
+     "q": "Where is Miniloc Island?",
+     "a": "In Bacuit Bay off El Nido in northern Palawan. Miniloc is one of El Nido Resorts' islands, set against dramatic limestone cliffs."
+    },
+    {
+     "q": "Who is Miniloc best for?",
+     "a": "El Nido Resorts pitches Miniloc as an eco discovery island for the young and young at heart, and its two-level Seaview Rooms and Cliff Cottages suit families."
+    },
+    {
+     "q": "What rooms does Miniloc have?",
+     "a": "Water Cottages on stilts over the lagoon, two-level Seaview Rooms, Cliff Cottages for up to five, Deluxe Seaview Rooms, Beachside Rooms and Garden Cottages."
+    },
+    {
+     "q": "How is Miniloc different from Pangulasian and Lagen?",
+     "a": "Miniloc is the rustic one: thatched rooms and nature discovery expeditions at rates El Nido Resorts says honour the island's generosity, while Pangulasian and Lagen are its luxury islands."
+    },
+    {
+     "q": "How do you get to Miniloc?",
+     "a": "Fly to Lio Airport in El Nido and continue by boat. Miniloc's page does not publish transfer times, so the house confirms them with El Nido Resorts when it books."
+    },
+    {
+     "q": "Is there a spa at Miniloc?",
+     "a": "Yes. Miniloc has treatment rooms for bespoke therapies and a fully equipped gym."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "families",
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "el-nido-resorts-pangulasian-island",
+   "name": "Pangulasian\nIsland",
+   "ledgerId": "STY-2026-000593",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Forty-two villas on the Island of the Sun, with a 750 metre beach in Bacuit Bay",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/el-nido-resorts-pangulasian-island/g10"
+   ],
+   "bestMonths": "December to April",
+   "bestMonthsNote": "El Nido Resorts does not publish best months. The Department of Tourism gives December to April as El Nido's best months, with the calmest seas; June to October is rainy and boat tours are often cancelled.",
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 11.113386,
+    "lng": 119.335729
+   },
+   "airport": "Lio Airport, El Nido (ENI)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "42 villas in four types.",
+     "Canopy Villas (8): 89 square metres, 15 to 18 metres up in the forest canopy, the only villas with an ensuite bathtub.",
+     "Beach Villas (24): 86 square metres, opening onto the beach by the infinity pool.",
+     "Pool Villas (6): 86 square metres with a plunge pool off the veranda.",
+     "Kalaw Villas (4): 86 square metres in a hidden cove on the west end, sharing a lap pool and a 55 square metre living space."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Diving and PADI courses, including Bubble Maker for children",
+     "Snorkelling, kayaking and paddleboarding",
+     "Island hopping and lagoon tours in Bacuit Bay",
+     "Private sunset cruises and beach dinners",
+     "Nature walks"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Amianan Restaurant, Beach Bar and Pool Bar",
+     "Pangulasian Spa and gym",
+     "Infinity pool",
+     "PADI Dive Center and Marine Sports Center",
+     "Library and lounge",
+     "One MICHELIN Key, 2026"
+    ]
+   },
+   "onlyHere": [
+    "Villas set 15 to 18 metres up in the forest canopy, on an island El Nido Resorts calls the Island of the Sun for its sunrises and sunsets."
+   ],
+   "why": [
+    {
+     "title": "The Island of the Sun",
+     "body": "Pangulasian is El Nido Resorts' eco luxury island in Bacuit Bay: a 750 metre white beach backed by tropical forest, a protected marine sanctuary at the door and 42 contemporary Filipino villas, some of them in the treetops. The MICHELIN Guide gave it One MICHELIN Key in 2026."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April, El Nido's best months per the Department of Tourism. El Nido Resorts does not publish its own.",
+    "how_to_get_there": "Chartered flights are available. Commercial flights reach Lio Airport in El Nido from Clark, Cebu and Bohol; coordinated land and boat transfers from Lio are included in every stay. El Nido Resorts' fact sheet gives 10 to 15 minutes by club car to its jetty lounge, then 30 to 45 minutes by boat, with the last boat at 4pm.",
+    "signature_experiences": "Diving and snorkelling in the marine sanctuary, island hopping and lagoon tours in Bacuit Bay, the spa, and dinners on the beach.",
+    "who_its_for": "Couples and honeymooners, and families: each villa sleeps up to three adults, or two adults and two children aged 12 and under."
+   },
+   "faqs": [
+    {
+     "q": "Where is Pangulasian Island?",
+     "a": "In Bacuit Bay off El Nido in northern Palawan. It is one of El Nido Resorts' islands, with a 750 metre white beach backed by tropical forest."
+    },
+    {
+     "q": "How do you get to Pangulasian?",
+     "a": "Fly to Lio Airport in El Nido, on commercial flights from Clark, Cebu and Bohol or by charter. Land and boat transfers from Lio are included in every stay: a short club car ride to the El Nido Resorts jetty lounge, then 30 to 45 minutes by boat."
+    },
+    {
+     "q": "Is there a last boat to the island?",
+     "a": "Yes. El Nido Resorts' fact sheet says the last boat transfer to the resort leaves at 4pm, because of Coast Guard rules on night navigation, so late afternoon arrivals are not recommended."
+    },
+    {
+     "q": "What villas does Pangulasian have?",
+     "a": "Forty-two: 8 Canopy Villas of 89 square metres set high in the forest, 24 Beach Villas and 6 Pool Villas of 86 square metres, and 4 Kalaw Villas in a hidden cove sharing a lap pool and a living space."
+    },
+    {
+     "q": "Is Pangulasian good for diving and snorkelling?",
+     "a": "Yes. The island has a PADI Dive Center offering Discover Scuba, fun dives, night dives and courses, and a protected marine sanctuary right off the beach for snorkelling."
+    },
+    {
+     "q": "Is Pangulasian good for families?",
+     "a": "Yes. Every villa sleeps two adults and two children aged 12 and under, the Kalaw Villas suit families and friends travelling together, and the dive centre runs Bubble Maker for children."
+    },
+    {
+     "q": "What awards has Pangulasian won?",
+     "a": "El Nido Resorts lists One MICHELIN Key 2026 from the MICHELIN Guide, a Triple Crown Award from Conde Nast Traveller UK and a 2026 DestinAsian Readers' Choice Award."
+    },
+    {
+     "q": "When is the best time to visit Pangulasian?",
+     "a": "The Department of Tourism gives December to April as El Nido's best months, with the calmest seas. June to October is rainy and boat tours are often cancelled."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "elephann-pan-khwai",
    "name": "Elephant Pan Khwai",
    "ledgerId": "STY-2026-000074",
@@ -14344,6 +14761,125 @@
     "6ae69743534ce9347649211f",
     "6ae69744a272964ca74e7085"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "four-seasons-tented-camp-golden-triangle",
+   "name": "Four Seasons Tented Camp \n Golden Triangle",
+   "ledgerId": "STY-2026-000586",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Fifteen tents and a two bedroom lodge where the Ruak meets the Mekong",
+   "quote": null,
+   "hero": null,
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Chiang Rai International Airport (CEI)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "15 tents and one Explorer's Lodge, 16 in all.",
+     "Golden Triangle Tent, Mekong Tent and Bamboo Tent: 54 sqm, up to three guests, decks over the Ruak River with outdoor showers or wooden hot tubs.",
+     "Explorer's Lodge: two bedrooms, 232 sqm, up to six guests, with a private infinity pool over the jungle canopy."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "My Elephant & I, with the camp's own mahouts",
+     "Golden Triangle Asian Elephant Foundation visit",
+     "Fishing with Locals on the Ruak River",
+     "Open air spa",
+     "Camp picnics",
+     "Camp sundowners"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Set amid bamboo jungle where Myanmar and Laos converge",
+     "At the confluence of the Ruak and Mekong rivers",
+     "Open air platform spa over a jungle valley",
+     "All inclusive two, three and four night packages",
+     "Opened January 2006"
+    ]
+   },
+   "onlyHere": [
+    "Fifteen tents in a bamboo jungle at the point where Thailand, Myanmar and Laos meet, with stays sold as all inclusive packages."
+   ],
+   "why": [
+    {
+     "title": "A Camp at the Meeting of Three Countries",
+     "body": "Four Seasons sets fifteen tents and one two bedroom lodge above the Ruak River, close to where it joins the Mekong, and sells stays as all inclusive packages of two to four nights with meals, drinks, spa and exploration."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Four Seasons on the pages read.",
+    "how_to_get_there": "Chiang Rai International Airport (CEI) is the nearest airport. Four Seasons does not publish the transfer time on the pages read; no helicopter or seaplane is published.",
+    "signature_experiences": "Tents on decks over the Ruak River near its confluence with the Mekong; My Elephant & I, walking with a herd of elephants and the camp's own mahouts through grasslands to the river; an open air platform spa.",
+    "who_its_for": "Couples in the tents, which take up to three, and families or small groups in the two bedroom Explorer's Lodge, which takes up to six."
+   },
+   "faqs": [
+    {
+     "q": "Where is Four Seasons Tented Camp Golden Triangle?",
+     "a": "In Chiang Saen District, Chiang Rai, at the confluence of the Ruak and Mekong rivers, amid bamboo jungle where Myanmar and Laos converge."
+    },
+    {
+     "q": "How many tents are there?",
+     "a": "Fifteen tents and one two bedroom Explorer's Lodge, 16 in all, according to Four Seasons."
+    },
+    {
+     "q": "How big are the tents?",
+     "a": "Each tent is 54 sqm and sleeps three, with a private deck over the Ruak River and either an outdoor shower or a wooden hot tub."
+    },
+    {
+     "q": "What is the Explorer's Lodge?",
+     "a": "A two bedroom lodge of 232 sqm for up to six guests, with a private infinity pool and terrace over the jungle canopy."
+    },
+    {
+     "q": "Is the camp all inclusive?",
+     "a": "Stays are sold as two, three and four night packages. Four Seasons says the four night package covers meals and beverages, spa, exploration and more."
+    },
+    {
+     "q": "What is the elephant experience?",
+     "a": "My Elephant & I: Four Seasons says you explore the wilderness with a herd of elephants as the camp's own mahouts guide you through grasslands to the river. A visit to the Golden Triangle Asian Elephant Foundation is offered off site."
+    },
+    {
+     "q": "When did the camp open?",
+     "a": "January 2006, according to Four Seasons' camp facts."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-01",
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

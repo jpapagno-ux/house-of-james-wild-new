@@ -1916,6 +1916,18 @@
   {
    "slug": "four-seasons-tented-camp-golden-triangle",
    "batch": "2026-11-02 Thailand"
+  },
+  {
+   "slug": "el-nido-resorts-lagen-island",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "el-nido-resorts-miniloc-island",
+   "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "el-nido-resorts-pangulasian-island",
+   "batch": "2026-11-02 library sync"
   }
  ]
 }

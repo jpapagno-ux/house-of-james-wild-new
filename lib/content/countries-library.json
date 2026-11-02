@@ -3324,30 +3324,34 @@
      "area": "Across Philippines",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
       "best",
       "best",
       "best",
       "best",
       "good",
-      "good"
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best"
      ]
     }
    ],
    "airports": [
+    [
+     "El Nido (ENI)",
+     "Serves 3 stays in the Ledger here"
+    ],
     [
      "Sayak Airport (IAO)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "IAO",
-   "bestShort": "Mar–Oct",
+   "flyInto": "ENI · IAO",
+   "bestShort": "Dec–Apr",
    "atlasName": "Philippines"
   },
   {

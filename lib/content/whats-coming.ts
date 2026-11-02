@@ -42,3 +42,17 @@ export function statusLine(c: Coming): string {
 export function sourceHost(url: string | null): string | null {
   try { return url ? new URL(url).hostname.replace(/^www\./, "") : null; } catch { return null; }
 }
+
+// The page scales by region (James, 2 Nov 2026): one group per region, in the order the house lists
+// regions, and inside each group by opening date (undated last), then name. Past openings have already
+// left COMING through the date rule above, so a group with nothing left simply doesn't appear.
+export type ComingGroup = { slug: string; name: string; items: Coming[] };
+export function groupByRegion(items: readonly Coming[], regions: readonly { slug: string; name: string }[]): ComingGroup[] {
+  const order = new Map(regions.map((r, i) => [r.slug, i]));
+  const by = new Map<string, Coming[]>();
+  for (const c of items) { const k = c.regionSlug ?? "elsewhere"; by.set(k, [...(by.get(k) ?? []), c]); }
+  return [...by.entries()]
+    .sort(([a], [b]) => (order.get(a) ?? 99) - (order.get(b) ?? 99))
+    .map(([slug, list]) => ({ slug, name: regions.find((r) => r.slug === slug)?.name ?? "Elsewhere",
+      items: [...list].sort((a, b) => (a.date ?? "9999").localeCompare(b.date ?? "9999") || a.name.localeCompare(b.name)) }));
+}

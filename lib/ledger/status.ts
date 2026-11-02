@@ -21,7 +21,12 @@
 // Founder vetted without a stay (James, 2 Nov 2026): NIHI Rote opened in 2026 and he has not been
 // yet, but he vetted it for the Ledger ("both are a surfer's dream spot"). The record keeps
 // house_status founder_vetted; the site never prints an in-person claim for these slugs.
-export const VETTED_UNVISITED = new Set<string>(["nihi-rote"]);
+export const VETTED_UNVISITED = new Set<string>(["nihi-rote",
+  // Thailand (James, 2 Nov 2026): "they are all vetted and I'm visiting soon". Vetted only, no visit or stay
+  // claim, until he has been; then the record's house_status changes and the slug comes off this list.
+  "six-senses-yao-noi", "six-senses-samui", "rayavadee", "kamalaya-koh-samui", "banyan-tree-krabi",
+  "anantara-hua-hin", "anantara-golden-triangle-chiang-rai", "anantara-chiang-mai-resort", "anantara-bophut-koh-samui-resort",
+  "amanpuri", "rosewood-phuket", "four-seasons-tented-camp-golden-triangle", "keemala", "the-sarojin"]);
 
 export type HouseStatus =
   | "unclassified"

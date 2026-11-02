@@ -69,6 +69,7 @@ SPECIAL = {
     "tswalu-loapi-tented-suites": ("/safaris/tswalu-reserve/loapi", "Tswalu camp"),
     "tswalu-tarkuni-homestead-villa": ("/safaris/tswalu-reserve/tarkuni", "Tswalu residence"),
     "gwe-gwe-beach": ("/stays/gwe-gwe-beach-lodge", "duplicate record retired 29 Oct 2026"),
+    "rayvadee-resort": ("/stays/rayavadee", "slug typo fixed 2 Nov 2026 (Rayavadee)"),
 }
 
 def stay_target(slug):

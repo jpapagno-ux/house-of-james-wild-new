@@ -1450,10 +1450,6 @@
    "batch": "2026-10-28 cleared on review"
   },
   {
-   "slug": "rayvadee-resort",
-   "batch": "2026-10-28 cleared on review"
-  },
-  {
    "slug": "chable-yucatan",
    "batch": "2026-10-28 cleared on review"
   },
@@ -1916,6 +1912,10 @@
   {
    "slug": "the-sarojin",
    "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "four-seasons-tented-camp-golden-triangle",
+   "batch": "2026-11-02 Thailand"
   }
  ]
 }

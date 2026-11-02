@@ -163,5 +163,10 @@
     "source": "/stays/promos",
     "destination": "/offers#stays",
     "permanent": true
+  },
+  {
+    "source": "/stays/rayvadee-resort",
+    "destination": "/stays/rayavadee",
+    "statusCode": 301
   }
 ]

@@ -48,7 +48,7 @@ old path,new path,why,old title
 /book/casa-maya-kaan,/stays/casa-maya-kaan,booking page -> stay page,Book your stay at Casa Maya Kaan | Wild Earth Stays
 /book/castaway-island,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Castaway Island | Wild Earth Stays
 /book/castle-leslie,/stays/castle-leslie,booking page -> stay page,Book your stay at Castle Leslie | Wild Earth Stays
-/book/celestia-yacht,/stays/celestia-yacht,booking page -> stay page,Book your stay at Celestia Yacht | Wild Earth Stays
+/book/celestia-yacht,/voyages/ships/celestia,booking page -> Celestia vessel profile,Book your stay at Celestia Yacht | Wild Earth Stays
 /book/chable-yucatan,/stays/chable-yucatan,booking page -> stay page,Book your stay at Chable Yucatan | Wild Earth Stays
 /book/chamilandu-lodge,/stays/chamilandu-lodge,booking page -> stay page,Book your stay at Chamilandu Lodge | Wild Earth Stays
 /book/cheetah-plains,/stays/cheetah-plains,booking page -> stay page,Book your stay at Cheetah Plains | Wild Earth Stays
@@ -203,7 +203,7 @@ old path,new path,why,old title
 /book/post-ranch-inn,/stays/post-ranch-inn,booking page -> stay page,Book your stay at Post Ranch Inn | Wild Earth Stays
 /book/puu-o-hoku-ranch,/stays/pu-u-hoko-ranch,booking page -> stay page,Book your stay at Pu&#x27;u O Hoku Ranch | Wild Earth Stays
 /book/radhoo-tulum,/stays/radhoo-tulum,booking page -> stay page,Book your stay at Radhoo Tulum | Wild Earth Stays
-/book/rascal-voyages,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Rascal Voyages | Wild Earth Stays
+/book/rascal-voyages,/partners/rascal-voyages,"booking page -> Rascal Voyages fleet: Rascal, Rebel and El Aleph",Book your stay at Rascal Voyages | Wild Earth Stays
 /book/rekero-camp-by-asilia,/stays/asilia-rekero-camp,booking page -> stay page,Book your stay at  Asilia Rekero Camp | Wild Earth Stays
 /book/roald-edmundsen,/destinations/polar-antarctica,booking page -> not on the new site yet; region page (antarctica-cruises country page not built yet),Book your stay at HX Cruise Roald Edmundsen | Wild Earth Stays
 /book/royal-davui-island-resort,/stays/royal-davui-island-resort,booking page -> stay page,Book your stay at Royal Davui Island Resort | Wild Earth Stays
@@ -223,7 +223,7 @@ old path,new path,why,old title
 /book/seseka-thornybush,/destinations/africa/south-africa,booking page -> not on the new site yet; country page,Book your stay at Seseka Thornybush  | Wild Earth Stays
 /book/shinta-mani-wild,/stays/shinta-mani-wild,booking page -> stay page,Book your stay at Shinta Mani Wild | Wild Earth Stays
 /book/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,booking page -> stay page,Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
-/book/silolona-sojourns,/stays/silolona-sojourns,booking page -> stay page,Book your stay at Silolona Sojourns  | Wild Earth Stays
+/book/silolona-sojourns,/voyages/ships/silolona,booking page -> Silolona vessel profile,Book your stay at Silolona Sojourns  | Wild Earth Stays
 /book/singita-boulders-lodge,/stays/singita-boulders,booking page -> stay page,Book your stay at Singita Boulders Lodge | Wild Earth Stays
 /book/singita-castleton,/stays/singita-castleton,booking page -> stay page,Book your stay at Singita Castleton | Wild Earth Stays
 /book/singita-ebony-lodge,/stays/singita-ebony,booking page -> stay page,Book your stay at Singita Ebony Lodge | Wild Earth Stays
@@ -495,7 +495,7 @@ old path,new path,why,old title
 /property/casa-maya-kaan,/stays/casa-maya-kaan,stay page,Casa Maya Kaan | Luxury Stays in Mexico | Wild Earth Stays
 /property/castaway-island,/destinations/oceania/fiji,not on the new site yet; country page,Castaway Island | Luxury Stays in Fiji | Wild Earth Stays
 /property/castle-leslie,/stays/castle-leslie,stay page,Castle Leslie | Luxury Stays in Ireland | Wild Earth Stays
-/property/celestia-yacht,/stays/celestia-yacht,stay page,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
+/property/celestia-yacht,/voyages/ships/celestia,Celestia vessel profile,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
 /property/chable-yucatan,/stays/chable-yucatan,stay page,Chable Yucatan | Luxury Stays in Mexico | Wild Earth Stays
 /property/chamilandu-lodge,/stays/chamilandu-lodge,stay page,Chamilandu Lodge | Luxury Stays in Zambia | Wild Earth Stays
 /property/cheetah-plains,/stays/cheetah-plains,stay page,Cheetah Plains | Luxury Stays in South Africa | Wild Earth Stays
@@ -688,7 +688,7 @@ old path,new path,why,old title
 /property/pu-u-hoko-ranch,/stays/pu-u-hoko-ranch,stay page,Pu&#x27;u O Hoku Ranch | Luxury Stays in Hawaii | Wild Earth Stays
 /property/quinlan-cooke-cahersiveen,/destinations/europe/ireland,not on the new site yet; country page,"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
-/property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
+/property/rascal-voyages,/partners/rascal-voyages,"Rascal Voyages fleet: Rascal, Rebel and El Aleph",Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
 /property/rayvadee-resort,/stays/rayavadee,slug typo fixed 2 Nov 2026 (Rayavadee),Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/royal-davui-island-resort,/stays/royal-davui-island-resort,stay page,Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/royal-malewane,/stays/royal-malewane,stay page,Royal Malewane | Luxury Stays in South Africa | Wild Earth Stays
@@ -708,7 +708,7 @@ old path,new path,why,old title
 /property/seseka-thornybush,/destinations/africa/south-africa,not on the new site yet; country page,Seseka Thornybush  | Luxury Stays in South Africa | Wild Earth Stays
 /property/shinta-mani-wild,/stays/shinta-mani-wild,stay page,Shinta Mani Wild | Luxury Stays in Cambodia | Wild Earth Stays
 /property/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,stay page,Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
-/property/silolona-sojourns,/stays/silolona-sojourns,stay page,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
+/property/silolona-sojourns,/voyages/ships/silolona,Silolona vessel profile,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
 /property/singita-boulders,/stays/singita-boulders,stay page,Singita Boulders Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-castleton,/stays/singita-castleton,stay page,Singita Castleton | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-ebony,/stays/singita-ebony,stay page,Singita Ebony Lodge | Luxury Stays in South Africa | Wild Earth Stays
@@ -1020,10 +1020,10 @@ old path,new path,why,old title
 /stay/castaway-island-north-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,North Beach Bure at Castaway Island | Wild Earth Stays
 /stay/castaway-island-ocean-view-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,Ocean View Bure at Castaway Island | Wild Earth Stays
 /stay/castaway-island-south-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,South Beach Bure at Castaway Island | Wild Earth Stays
-/stay/celestia-deluxe-cabin,/stays/celestia-yacht,room of celestia-yacht -> stay page,Deluxe Cabin at Celestia Yacht | Wild Earth Stays
-/stay/celestia-master-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Master Suite at Celestia Yacht | Wild Earth Stays
-/stay/celestia-owners-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
-/stay/celestia-private-charter,/stays/celestia-yacht,room of celestia-yacht -> stay page,Celestia Private Charter at Celestia Yacht | Wild Earth Stays
+/stay/celestia-deluxe-cabin,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Deluxe Cabin at Celestia Yacht | Wild Earth Stays
+/stay/celestia-master-suite,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Master Suite at Celestia Yacht | Wild Earth Stays
+/stay/celestia-owners-suite,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
+/stay/celestia-private-charter,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Celestia Private Charter at Celestia Yacht | Wild Earth Stays
 /stay/chable-yucatan-casita,/stays/chable-yucatan,room of chable-yucatan -> stay page,Casita at Chable Yucatan | Wild Earth Stays
 /stay/chable-yucatan-family-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Family Villa at Chable Yucatan | Wild Earth Stays
 /stay/chable-yucatan-presidential-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Presidential Villa at Chable Yucatan | Wild Earth Stays
@@ -1578,11 +1578,11 @@ old path,new path,why,old title
 /stay/senda-monteverde-lodge-senda-casita,/stays/senda-monteverde-lodge,room of senda-monteverde-lodge -> stay page,Senda Casita at Senda Monteverde Lodge | Wild Earth Stays
 /stay/senda-monteverde-lodge-superior-room,/stays/senda-monteverde-lodge,room of senda-monteverde-lodge -> stay page,Superior Room at Senda Monteverde Lodge | Wild Earth Stays
 /stay/serian-serengeti-lamai-camp,/stays/serengeti-lamai-camp-by-serian,room of serengeti-lamai-camp-by-serian -> stay page,Serian Lamai Tented Suite at Serengeti Lamai Camp by Serian | Wild Earth Stays
-/stay/silolona-sojourns-asmat-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Asmat Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-bali-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Bali Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-borneo-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Borneo Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-java-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Java Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-sumba-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Sumba Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-asmat-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Asmat Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-bali-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Bali Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-borneo-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Borneo Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-java-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Java Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-sumba-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Sumba Cabin at Silolona Sojourns  | Wild Earth Stays
 /stay/singita-boulders-lodge-family-suite,/stays/singita-boulders,room of singita-boulders -> stay page,Family Suite at Singita Boulders Lodge | Wild Earth Stays
 /stay/singita-boulders-lodge-suite,/stays/singita-boulders,room of singita-boulders -> stay page,Suite at Singita Boulders Lodge | Wild Earth Stays
 /stay/singita-castleton-exclusive-use-villa,/stays/singita-castleton,room of singita-castleton -> stay page,Exclusive Use Villa at Singita Castleton | Wild Earth Stays

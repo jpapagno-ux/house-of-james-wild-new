@@ -2682,7 +2682,7 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g10"
    ],
-   "bestMonths": "Not published",
+   "bestMonths": null,
    "bestMonthsNote": "Amorita does not publish best months, and the Department of Tourism pages read give none for Bohol.",
    "bestFor": [
     "honeymoon",
@@ -2816,7 +2816,7 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g10"
    ],
-   "bestMonths": "Not published",
+   "bestMonths": null,
    "bestMonthsNote": "Amun Ini does not publish best months, and the Department of Tourism pages read give none for Bohol.",
    "bestFor": [
     "adventure",
@@ -6558,7 +6558,7 @@
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g9",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g10"
    ],
-   "bestMonths": "Not published",
+   "bestMonths": null,
    "bestMonthsNote": "Bintana sa Paraiso does not publish best months, and the Department of Tourism pages read give none for Camiguin.",
    "bestFor": [
     "honeymoon"
@@ -26324,10 +26324,7 @@
    "bestFor": [],
    "status": "founder_vetted",
    "statusDate": "2026-11-02",
-   "coords": {
-    "lat": -16.6833,
-    "lng": -151.4333
-   },
+   "coords": null,
    "airport": "Raiatea Airport (RFP)",
    "airportDirections": "Fly from Tahiti Faa'a (PPT) to Raiatea (RFP) with Air Tahiti, then take the resort's shuttle boat or helicopter transfer to Motu Tautau. The resort does not publish transfer times; Tahiti Tourisme puts Raiatea to Taha'a at about 30 minutes by boat.",
    "founderNote": null,
@@ -35304,10 +35301,7 @@
    "bestFor": [],
    "status": "founder_vetted",
    "statusDate": "2026-11-02",
-   "coords": {
-    "lat": -16.5006,
-    "lng": -151.7416
-   },
+   "coords": null,
    "airport": "Bora Bora Airport (BOB) Tahiti Faa'a International Airport (PPT)",
    "airportDirections": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, then take the resort boat to Motu Tevairoa. Ask for the current transfer time when you book.",
    "founderNote": null,

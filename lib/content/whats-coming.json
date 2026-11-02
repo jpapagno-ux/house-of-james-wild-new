@@ -92,6 +92,24 @@
    "volume": null
   },
   {
+   "slug": "intercontinental-bora-bora-thalasso-spa",
+   "name": "InterContinental Bora Bora Resort & Thalasso Spa",
+   "ledgerId": "STY-2026-000620",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "status": "rebuilding",
+   "date": null,
+   "note": "Closed since 1 June 2026 for a top to bottom renovation; InterContinental has not yet published a reopening date.",
+   "tagline": "Overwater villas on Motu Piti Aau, and French Polynesia's only Thalasso spa.",
+   "hero": null,
+   "source": null,
+   "href": null,
+   "bestMonths": "May to October",
+   "airport": "Bora Bora Airport (BOB)",
+   "volume": null
+  },
+  {
    "slug": "six-senses-uluwatu",
    "name": "Six Senses Uluwatu Bali",
    "ledgerId": "STY-2026-000274",

@@ -1679,6 +1679,7 @@
    "name": "Four Seasons Resort Bora Bora",
    "country": "French Polynesia (Tahiti)",
    "missing": [
+    "coming_soon",
     "hero_photo",
     "coordinates"
    ],
@@ -2131,7 +2132,6 @@
    "missing": [
     "coming_soon",
     "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false
@@ -2727,7 +2727,9 @@
    "slug": "le-tahaa",
    "name": "Le Taha'a by Pearl Resorts",
    "country": "French Polynesia (Tahiti)",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3483,7 +3485,9 @@
    "slug": "pearl-resort-le-bora-bora",
    "name": "Le Bora Bora by Pearl Resorts",
    "country": "French Polynesia (Tahiti)",
-   "missing": [],
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

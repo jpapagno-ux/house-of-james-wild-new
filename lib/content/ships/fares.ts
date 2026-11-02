@@ -11,6 +11,13 @@ export type Sailing = { id: string; date: string; dateTo: string | null; day: st
 export type DatesData = { windows: FareWindow[]; sailings: Sailing[]; routes: { name: string; label: string; colour: string }[]; cabins: { type: string; colour: string }[]; bands: boolean };
 
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+/** "20 and 27 Dec 2026", "28 Dec 2026 and 4 Jan 2027". */
+function compactDates(ds: string[]): string {
+  const by = new Map<string, string[]>();
+  for (const d of ds) { const k = d.slice(0, 7); by.set(k, [...(by.get(k) ?? []), String(Number(d.slice(8, 10)))]); }
+  const parts = [...by.entries()].map(([k, n]) => `${n.length > 1 ? `${n.slice(0, -1).join(", ")} and ${n[n.length - 1]}` : n[0]} ${MON[+k.slice(5) - 1]} ${k.slice(0, 4)}`);
+  return parts.join(" and ");
+}
 const days = (a: string, b: string) => (Date.parse(b) - Date.parse(a)) / 86400000;
 const priced = (d: ShipDeparture) => Object.entries(d.prices).filter((e): e is [string, number] => typeof e[1] === "number" && e[1] > 0);
 /** A sailing has its own dates; a band is a season that one fare covers (over two weeks long). */
@@ -60,7 +67,7 @@ export function datesData(s: ShipRecord, plan: (what: string, date: string, full
     if (perNight) label = `${ds[0].nights} nights`;
     else if (!isSailing(ds[0])) label = ds[0].season ? undash(ds[0].season) : `${dayLabel(from)} to ${dayLabel(to)}`;
     else if (!shared) label = `${yrs.join(" and ")} fares`;
-    else if (ds.length <= 3) label = `${sorted.map((d) => dayLabel(d.date)).join(", ")} sailing${ds.length > 1 ? "s" : ""}`;
+    else if (ds.length <= 3) label = `${compactDates(sorted.map((d) => d.date))} sailing${ds.length > 1 ? "s" : ""}`;
     else { const a = from.slice(0, 7), b = (sorted[sorted.length - 1].date).slice(0, 7); label = a.slice(0, 4) === b.slice(0, 4) ? `${MON[+a.slice(5) - 1]} to ${MON[+b.slice(5) - 1]} ${a.slice(0, 4)}` : `${MON[+a.slice(5) - 1]} ${a.slice(0, 4)} to ${MON[+b.slice(5) - 1]} ${b.slice(0, 4)}`; }
     const sub = [routeNote, !isSailing(ds[0]) ? `${dayLabel(from)} to ${dayLabel(to)}, one fare for any sailing that starts in it` : `${ds.length} sailing${ds.length > 1 ? "s" : ""}`].filter(Boolean).join(" · ");
     const lowest = Math.min(...ds.flatMap((d) => priced(d).map(([, p]) => p)));

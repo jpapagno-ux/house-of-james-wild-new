@@ -63,9 +63,9 @@ export default function DatesGrid({ ship, data, note }: { ship: string; data: Da
       {/* Fares, once per rate window */}
       <ul className="mt-6 border-t ledger-rule">
         {windows.map((w) => (
-          <li key={w.key} className="border-b ledger-rule py-3.5 grid md:grid-cols-[14rem_1fr_auto] gap-x-6 gap-y-1 items-baseline">
-            <p><span className="ledger-display text-[19px]">{w.label}</span>{w.sub && <span className="block text-[12.5px] ledger-muted">{w.sub}</span>}</p>
-            <p className="text-[15px]">{price(w.prices).map(([k, v], i) => <span key={k} className="whitespace-nowrap">{i > 0 && <span className="ledger-muted"> · </span>}{k === "From" ? "From " : `${k} `}<strong className="font-medium ledger-crimson">{usd(v)}</strong></span>)}</p>
+          <li key={w.key} className="border-b ledger-rule py-3.5 grid grid-cols-1 md:grid-cols-[14rem_minmax(0,1fr)_auto] gap-x-6 gap-y-1 items-baseline">
+            <p className="min-w-0"><span className="ledger-display text-[19px]">{w.label}</span>{w.sub && <span className="block text-[12.5px] ledger-muted">{w.sub}</span>}</p>
+            <p className="min-w-0 text-[15px] flex flex-wrap gap-x-1">{price(w.prices).map(([k, v], i) => <span key={k} className="whitespace-nowrap">{i > 0 && <span className="ledger-muted">· </span>}{k === "From" ? "From " : `${k} `}<strong className="font-medium ledger-crimson">{usd(v)}</strong></span>)}</p>
             {data.bands && <a href={w.plan} className="ledger-btn-ghost inline-flex items-center min-h-[44px] justify-self-start md:justify-self-end">Hold a cabin</a>}
           </li>
         ))}

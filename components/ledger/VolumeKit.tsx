@@ -44,7 +44,7 @@ export function VolumeIconSvg({ volume, size = 20, stroke = 2.4, className }: { 
 }
 
 // Stamp-pad ink: soft bleed, fine grain, patchy pressure and a little wobble.
-function padFilter(id: string, seed: number) {
+export function padFilter(id: string, seed: number) {
   return `<filter id="${id}" x="-8%" y="-8%" width="116%" height="116%">
 <feMorphology in="SourceGraphic" operator="dilate" radius="0.35" result="bl"/><feGaussianBlur in="bl" stdDeviation="0.35" result="soft"/>
 <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="${seed}" result="fine"/>

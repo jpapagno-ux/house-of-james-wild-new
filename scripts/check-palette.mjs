@@ -24,6 +24,10 @@ for (const [k, v] of Object.entries(pads)) {
 }
 if (/tone: "#/.test(read("lib/site.ts"))) errs.push("lib/site.ts: a volume tone is a hex; use volumeInk(\"<volume>\") from lib/volumes.ts");
 if (/color: "#/.test(read("lib/ledger/categories.ts"))) errs.push("lib/ledger/categories.ts: a map category colour is a hex; use volumeInk(\"<volume>\")");
+// On the Horizon (James, 2 Nov 2026): its colours are derived from the Voyages tokens in lib/volumes.ts
+// (HORIZON); the stamp itself must not carry a hex of its own.
+if (!/export const HORIZON[^]*VOLUME_STYLES\.voyages\.pad/.test(vol)) errs.push("lib/volumes.ts: HORIZON must derive its ink from the Voyages pad");
+if (/#[0-9A-Fa-f]{6}/.test(read("components/ledger/HorizonMark.tsx").replace(/#000|#fff/gi, ""))) errs.push("components/ledger/HorizonMark.tsx: a colour is a hex; read HORIZON from lib/volumes.ts");
 if (errs.length) {
   console.error("\nVolume palette check failed. lib/volumes.ts is the only source of volume colours (docs/brand-colours.md).\n  " + errs.join("\n  ") + "\n");
   process.exit(1);

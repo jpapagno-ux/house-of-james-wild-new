@@ -15,6 +15,7 @@ import json, sys, re
 
 PROGRAMS = {"Worth Another Night", "Time Rewarded", "Final Call", "Book Early", "On the Horizon"}
 SCOPES = {"stay": "stay", "residence": "residence", "vessel": "vessel", "reserve": "reserve", "itinerary": "itinerary"}
+OFFER_TYPES = {"Final Call", "Book Early", "Solo", "Celebrations", "Family", "Whole Ship", "On the Horizon"}
 VOLUMES = {"stays", "safaris", "gatherings", "voyages", "europe", "overland"}
 MON = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
@@ -46,6 +47,8 @@ def main(src, out):
         if o.get("conditions"): rec["conditions"] = o["conditions"].strip()
         if o.get("volume") in VOLUMES: rec["volume"] = o["volume"]
         if dep: rec["departure"] = dep
+        # Voyage offers carry a type under On the Horizon (James, 2 Nov 2026); untyped ones are mapped in offers.ts.
+        if o.get("offer_type") in OFFER_TYPES: rec["offerType"] = o["offer_type"]
         keep.append(rec)
     keep.sort(key=lambda r: r["id"])
     json.dump(keep, open(out, "w"), ensure_ascii=False, indent=1)

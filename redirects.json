@@ -158,5 +158,10 @@
     "source": "/voyages/antarctica",
     "destination": "/voyages/polar",
     "statusCode": 301
+  },
+  {
+    "source": "/stays/promos",
+    "destination": "/offers#stays",
+    "permanent": true
   }
 ]

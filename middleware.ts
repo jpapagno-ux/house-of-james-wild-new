@@ -55,8 +55,9 @@ async function refreshSession(req: NextRequest) {
   return res;
 }
 
-// 3. Filtered Voyages hub views (?pathway=, ?type=, ?waters=) are never indexed (James, 1 Nov 2026).
-const FILTERS = ["pathway", "type", "waters"];
+// 3. Filtered Voyages views (?pathway=, ?type=, ?waters=, and the search: ?where=, ?when=, ?who=, ?ages=,
+//    ?what=, ?len=, ?budget=, ?q=) are never indexed (James, 1 and 2 Nov 2026).
+const FILTERS = ["pathway", "type", "waters", "where", "when", "who", "ages", "what", "len", "budget", "q"];
 function filteredVoyages(req: NextRequest) {
   if (!req.nextUrl.pathname.startsWith("/voyages") || !FILTERS.some((f) => req.nextUrl.searchParams.has(f))) return null;
   const res = NextResponse.next();

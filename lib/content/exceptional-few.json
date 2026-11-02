@@ -141,9 +141,9 @@
       ],
       "selectionDate": "2026-11-02",
       "paletteKey": "parrot-cay",
-      "publicationStatus": "draft",
-      "reviewStatus": "draft",
-      "reviewDate": null
+      "publicationStatus": "approved",
+      "reviewStatus": "approved",
+      "reviewDate": "2026-11-02"
     }
   ]
 }

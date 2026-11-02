@@ -125,7 +125,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
             <p className="mt-2 text-[13px] ledger-muted">Families and groups: bring whoever has a say, or a veto. Everyone hears the same answers at once.</p>
           </div>
           <div className="mt-7 flex flex-wrap items-center gap-4">
-            <a href={host.calendlyUrl} className="ledger-btn inline-flex items-center gap-2 !bg-crimson !text-paper hover:!bg-ink hover:!border-ink" data-event="host_call_click" data-host-state="available" data-call="group">
+            <a href={host.calendlyUrl} className="ledger-btn ledger-btn--house inline-flex items-center gap-2" data-event="host_call_click" data-host-state="available" data-call="group">
               <span className="relative inline-flex" aria-hidden="true"><span className="jw-ripple absolute -inset-1 rounded-full border border-paper/70" /><PhoneCall className="jw-ring w-4 h-4" strokeWidth={1.7} /></span> Book the group call
             </a>
             <span className="text-[13px] ledger-muted">Calendly · 30 to 45 minutes · video · no obligation to book</span>

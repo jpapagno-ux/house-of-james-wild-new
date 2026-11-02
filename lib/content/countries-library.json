@@ -2563,26 +2563,7 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Maldives",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "best",
-      "best"
-     ]
-    }
-   ],
+   "months": [],
    "airports": [
     [
      "Velana International Airport (MLE)",
@@ -2599,7 +2580,7 @@
    ],
    "transfers": [],
    "flyInto": "MLE · DRV",
-   "bestShort": "Nov–Apr",
+   "bestShort": "Ask James",
    "atlasName": "Maldives"
   },
   {
@@ -4299,12 +4280,94 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Andaman coast (Phuket, Krabi, Phi Phi): November to April. Gulf islands (Samui, Phangan): December to June. The north (Chiang Mai, Chiang Rai): November to February, the cool season (Tourism Authority of Thailand)."
+    ],
+    [
+     "Getting there",
+     "Bangkok has two international airports, Suvarnabhumi (BKK) and Don Mueang (DMK); Chiang Mai, Chiang Rai, Phuket, Hat Yai, Udon Thani and Krabi also have international airports (Tourism Authority of Thailand). From 15 September 2026, nationals of 60 countries and territories, including the United States, United Kingdom, Canada, Australia and every EU member state, may stay up to 30 days visa free for tourism; everyone else applies at thaievisa.go.th (Tourism Authority of Thailand; Ministry of Foreign Affairs). Every non Thai national submits the Thailand Digital Arrival Card online within 3 days before arrival, with no fee (Immigration Bureau, tdac.immigration.go.th)."
+    ],
+    [
+     "Who it suits",
+     "Beach and island travellers, families, wellness seekers, divers, and anyone drawn to temples, food and the hill country of the north."
+    ],
+    [
+     "Signature experiences",
+     "Phang Nga Bay's limestone karsts; the Andaman marine parks, where the Similan Islands reopened on 15 October 2026 and Maya Bay on 1 October, with e tickets at six parks (Tourism Authority of Thailand); Samui's wellness retreats; the Golden Triangle on the Mekong; and nine UNESCO World Heritage properties, from Sukhothai and Ayutthaya to the Khao Yai forests (UNESCO)."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Thailand?",
+     "a": "November to February is the cool season, which the Tourism Authority of Thailand calls a fantastic time to travel. For beaches, the Andaman coast is best from November to April and the Gulf islands from December to June. Source: Tourism Authority of Thailand (tatnews.org, November 2020)."
+    },
+    {
+     "q": "Which coast should I choose, Andaman or Gulf?",
+     "a": "It depends on the month. Phuket, Krabi and Phi Phi on the Andaman side are best from November to April, while Samui and Phangan in the Gulf are best from December to June, so the two coasts cover most of the year between them. Source: Tourism Authority of Thailand."
+    },
+    {
+     "q": "Do I need a visa for Thailand?",
+     "a": "Not for short holidays from most Western countries. Since 15 September 2026, nationals of 60 countries and territories, including the US, UK, Canada, Australia and the EU, can stay up to 30 days visa free for tourism, and land border entries under the exemption are generally limited to twice a calendar year. Others apply on the official e Visa site, thaievisa.go.th. Sources: Tourism Authority of Thailand (tatnews.org, September 2026); Ministry of Foreign Affairs (mfa.go.th, 3 September 2026)."
+    },
+    {
+     "q": "What is the Thailand Digital Arrival Card?",
+     "a": "An online form that replaced the paper arrival card. All non Thai nationals must submit it within 3 days before arriving, at tdac.immigration.go.th, and the official site says no fee is required. Source: Thai Immigration Bureau (tdac.immigration.go.th)."
+    },
+    {
+     "q": "When can I visit the Similan Islands and Maya Bay?",
+     "a": "In the dry season. The Similan Islands reopened on 15 October 2026 after a five month monsoon closure and Maya Bay reopened on 1 October; six marine parks, including Similan, Surin and Phi Phi, have used e tickets since October 2025, and the dry season proper should settle in by December. Source: Tourism Authority of Thailand (tatnews.org, October 2026)."
+    },
+    {
+     "q": "Which airports serve Thailand?",
+     "a": "Bangkok's Suvarnabhumi and Don Mueang, plus international airports at Chiang Mai, Chiang Rai, Phuket, Hat Yai, Udon Thani and Krabi. Source: Tourism Authority of Thailand (tourismthailand.org)."
+    },
+    {
+     "q": "What are Thailand's UNESCO World Heritage sites?",
+     "a": "Thailand has nine. They include the historic towns of Sukhothai and Ayutthaya, Ban Chiang, the Thungyai Huai Kha Khaeng sanctuaries, the Dong Phayayen Khao Yai and Kaeng Krachan forest complexes, Si Thep (2023) and Phu Phrabat (2024). Source: UNESCO World Heritage Centre (whc.unesco.org)."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Thailand",
+     "area": "Andaman coast (Phuket, Krabi, Phi Phi)",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    },
+    {
+     "area": "Gulf islands (Samui, Phangan)",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best"
+     ]
+    },
+    {
+     "area": "The north (Chiang Mai, Chiang Rai)",
      "note": "From the Ledger's best-months notes",
      "months": [
       "best",
@@ -4324,21 +4387,21 @@
    ],
    "airports": [
     [
+     "Phuket International Airport (HKT)",
+     "Serves 5 stays in the Ledger here"
+    ],
+    [
      "Samui International Airport (USM)",
      "Serves 3 stays in the Ledger here"
     ],
     [
      "Krabi International Airport (KBV)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Chiang Mai International Airport (CNX)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "USM · KBV",
-   "bestShort": "Nov–Feb",
+   "flyInto": "HKT · USM",
+   "bestShort": "Nov–Jun",
    "atlasName": "Thailand"
   },
   {

@@ -191,7 +191,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
     <>
     <header
       className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-[background-color,transform] duration-300 ${tucked && !open ? "-translate-y-full" : ""} ${
-        light ? "bg-transparent text-white" : "bg-gradient-to-b from-paper via-paper to-[#FBF5F4] backdrop-blur border-b ledger-border text-ink"
+        light ? "bg-transparent text-white" : "bg-gradient-to-b from-paper via-paper to-[#F1F8F6] backdrop-blur border-b ledger-border text-ink"
       }`}
     >
       {!light && <div className="h-[3px]" style={{ background: "linear-gradient(90deg, #6E1C1C, #8B2525 40%, #C0574A 70%, #8B2525)" }} aria-hidden="true" />}
@@ -241,7 +241,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           <Link
             href={PLAN_CTA.href}
             className={`inline-flex items-center whitespace-nowrap h-10 px-3.5 sm:px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
-              light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-crimson !text-crimson hover:bg-crimson hover:!text-paper"
+              light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-action !text-action hover:bg-action hover:!text-paper"
             }`}
           >
             <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>

@@ -81,15 +81,16 @@ export const volumeForHref = (href: string): VolumeKey | null => {
 
 // On the Horizon (James, 2 Nov 2026): the offers stamp's colour set, derived from the Voyages tokens
 // so it sits inside the navy volume: the ink is the Voyages pad, the sea a step toward its light tint,
-// the deep its hover, and the rising sun the house's ship's brass (the hourglass sand). `onDark` is the
-// set for navy or photographic grounds: the Voyages light tint, with the brass lifted toward white.
-// Kept here, next to the volumes, so lib/volumes.ts stays the one place a volume colour is written.
+// the deep its hover, and the rising sun in sea aqua (James, 2 Nov 2026: the brass sun is retired;
+// "match the stamps to these as well"). `onDark` is the set for navy or photographic grounds: the
+// Voyages light tint, with the aqua lifted toward white. The two aquas equal STAMP_AQUA in
+// lib/palette.ts (scripts/check-palette.mjs holds them in step; this file stays import-free).
 const mix = (a: string, b: string, t: number) => "#" + [0, 2, 4].map((i) => Math.round(parseInt(a.slice(1 + i, 3 + i), 16) * (1 - t) + parseInt(b.slice(1 + i, 3 + i), 16) * t).toString(16).padStart(2, "0")).join("").toUpperCase();
-const BRASS = "#B08657";
+const SUN_AQUA = "#1A8A8A", SUN_AQUA_DARK = "#8FD6CF"; // = STAMP_AQUA in lib/palette.ts
 export type HorizonTokens = { ink: string; sea: string; deep: string; sun: string; ground: string };
 export const HORIZON: { onLight: HorizonTokens; onDark: HorizonTokens } = {
-  onLight: { ink: VOLUME_STYLES.voyages.pad, sea: mix(VOLUME_STYLES.voyages.pad, hex(VOLUME_STYLES.voyages.light), 0.35), deep: VOLUME_STYLES.voyages.deep, sun: BRASS, ground: VOLUME_STYLES.voyages.tint },
-  onDark: { ink: hex(VOLUME_STYLES.voyages.light), sea: mix(hex(VOLUME_STYLES.voyages.light), VOLUME_STYLES.voyages.pad, 0.3), deep: "#FFFFFF", sun: mix(BRASS, "#FFFFFF", 0.35), ground: VOLUME_STYLES.voyages.leather },
+  onLight: { ink: VOLUME_STYLES.voyages.pad, sea: mix(VOLUME_STYLES.voyages.pad, hex(VOLUME_STYLES.voyages.light), 0.35), deep: VOLUME_STYLES.voyages.deep, sun: SUN_AQUA, ground: VOLUME_STYLES.voyages.tint },
+  onDark: { ink: hex(VOLUME_STYLES.voyages.light), sea: mix(hex(VOLUME_STYLES.voyages.light), VOLUME_STYLES.voyages.pad, 0.3), deep: "#FFFFFF", sun: SUN_AQUA_DARK, ground: VOLUME_STYLES.voyages.leather },
 };
 
 export const VOLUME_ORDER: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];

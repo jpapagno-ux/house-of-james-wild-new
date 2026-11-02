@@ -21,6 +21,7 @@ import { Reveal } from "@/components/ledger/Motion";
 import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
+import ChainChartMap, { type ChainView } from "@/components/destination/ChainChartMap";
 import Compass from "@/components/destination/Compass";
 import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
@@ -88,6 +89,59 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   return buildMetadata({ title: `${c.name}: ${n} Vetted ${n === 1 ? "Stay" : "Stays"}, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted ${n === 1 ? "stay" : "stays"} mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: c.hero.src ? { url: c.hero.src, alt: c.hero.alt } : undefined });
 }
 
+// Island chains, closer (James, 2 Nov 2026: "zoom in on the island chains with some textures"). Each chain
+// has its own 1:10m chart (scripts/build-region-charts.cjs); the map opens on the first and flies between
+// them, with the whole archipelago as the last view. Pins are the same stays and voyage ports as above.
+const CHAINS: Record<string, { key: string; label: string; sub: string; /** Where the frame's name sits on the whole-country chart. */ tag?: "above" | "below" }[]> = {
+  indonesia: [
+    { key: "indonesia-bali-lombok", label: "Bali & Lombok", tag: "below", sub: "Ubud's valleys, the Bukit's cliffs and the south coast, with Lombok across the strait. Most stays are an hour or so from Denpasar (DPS)." },
+    { key: "indonesia-sumba-flores", label: "Sumba & Flores", sub: "Komodo National Park off Flores, the surf coast of West Sumba, and Rote at the southern tip of the country. Labuan Bajo, Tambolaka and Kupang are the airports." },
+    { key: "indonesia-raja-ampat", label: "Raja Ampat", sub: "West Papua's islands, from Wayag in the north to Misool in the south. Voyages leave from Sorong; Waisai is the park's town." },
+    { key: "indonesia-sumatra-riau", label: "Sumatra & Riau", tag: "below", sub: "The Riau Islands off Sumatra's coast, a short ferry from Singapore. Nikoi sits off Bintan's east coast." },
+  ],
+};
+
+function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]) {
+  const LIB = REGION_LIB as unknown as Record<string, ChartData>;
+  const frames = chains.map((c) => ({ ...c, chart: LIB[c.key] })).filter((c) => c.chart);
+  const coordsOf = (id: string) => {
+    if (id.startsWith("voyage-")) { const j = journeysFor(slug).find((x) => `voyage-${x.ledgerId}` === id); return j ? routeStart(j.href) : null; }
+    return staysIn(slug).find((s) => s.slug === id)?.coords ?? null;
+  };
+  const inFrame = (c: ChartData, p: { lat: number; lng: number }) => p.lng >= c.bounds.w && p.lng <= c.bounds.e && p.lat >= c.bounds.s && p.lat <= c.bounds.n;
+  const chainOf = (id: string) => { const p = coordsOf(id); return p ? frames.find((f) => inFrame(f.chart, p))?.label ?? null : null; };
+  const onWhole = items.filter((i) => i.x! >= 0 && i.y! >= 0 && i.x! <= whole.width && i.y! <= whole.height).map((i) => ({ ...i, area: chainOf(i.id) ?? i.area ?? `Elsewhere in ${name}` }));
+  const box = (c: ChartData) => { const a = projectOn(whole, c.bounds.n, c.bounds.w), b = projectOn(whole, c.bounds.s, c.bounds.e); return { x: a.x, y: a.y, w: b.x - a.x, h: b.y - a.y }; };
+  const views: ChainView[] = frames.map((f) => {
+    const list = items.map((i) => ({ i, p: coordsOf(i.id) })).filter((r) => r.p && inFrame(f.chart, r.p)).map(({ i, p }) => { const q = projectOn(f.chart, p!.lat, p!.lng); return { ...i, x: q.x, y: q.y, area: f.label }; });
+    const b = box(f.chart);
+    return { key: f.key, label: f.label, sub: f.sub, width: f.chart.width, height: f.chart.height, items: list, origin: `${(((b.x + b.w / 2) / whole.width) * 100).toFixed(1)}% ${(((b.y + b.h / 2) / whole.height) * 100).toFixed(1)}%`,
+      chart: <LedgerChart chart={f.chart} texture="engraved" title={`Ledger chart of ${f.label}, ${name}, with its stays and voyages`} /> };
+  });
+  views.push({ key: "whole", label: "The whole archipelago", sub: `All of ${name}, with each chain's frame marked. Pick a chain above to fly in.`, width: whole.width, height: whole.height, items: onWhole,
+    chart: (
+      <div className="relative">
+        <LedgerChart chart={whole} texture="engraved" title={`Ledger chart of ${name} with its stays and voyages`} />
+        <svg viewBox={`0 0 ${whole.width} ${whole.height}`} className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true">
+          {frames.map((f) => { const b = box(f.chart); return (
+            <g key={f.key}>
+              <rect x={b.x} y={b.y} width={b.w} height={b.h} fill="none" stroke="#8B2525" strokeOpacity="0.7" strokeWidth="1.3" strokeDasharray="5 4" vectorEffect="non-scaling-stroke" />
+              <text x={b.x + 4} y={f.tag === "below" ? b.y + b.h + 19 : b.y - 7} fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="17" fontStyle="italic" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{f.label}</text>
+            </g>
+          ); })}
+        </svg>
+      </div>
+    ) });
+  const total = onWhole.length;
+  return (
+    <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
+      <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {total} on the chart</p>
+      <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-5">{name}, Chain by Chain</h2>
+      <ChainChartMap country={name} views={views} initial={views[0]?.key} />
+    </section>
+  );
+}
+
 // A country told as a guide (Indonesia) gets the same Ledger chart as a country page: every stay
 // with a position, and each voyage at its first port (James, 30 Oct 2026: pin all locations).
 function guideMap(slug: string, name: string) {
@@ -103,6 +157,8 @@ function guideMap(slug: string, name: string) {
   const pinned = items.filter((i) => i.x! >= 0 && i.y! >= 0 && i.x! <= chart.width && i.y! <= chart.height);
   if (!pinned.length) return null;
   const tally = (k: MapItem["category"]) => pinned.filter((i) => i.category === k).length;
+  const chains = CHAINS[slug];
+  if (chains) return chainMap(slug, name, chart, items, chains);
   return (
     <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
       <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {pinned.length} on the chart</p>

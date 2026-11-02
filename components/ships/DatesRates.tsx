@@ -17,7 +17,7 @@ function pill(d: ShipDeparture) {
   const s = d.status ?? "";
   if (FULL.test(s) || left === 0) return { label: "Full", full: true, cls: "bg-ink/10 text-ink/60 line-through decoration-ink/30" };
   if (/call/i.test(d.note ?? "")) return { label: "Ask us", full: false, cls: "border ledger-border text-ink/70" };
-  if (/few|left|limited/i.test(s) || (left != null && left <= 3)) return { label: left != null ? `${left} cabin${left === 1 ? "" : "s"} left` : "Few left", full: false, cls: "bg-[#F1E2B8] text-[#5E3F22]" };
+  if (/few|left|limited/i.test(s) || (left != null && left <= 3)) return { label: left != null ? `${left} cabin${left === 1 ? "" : "s"} left` : "Few left", full: false, cls: "bg-[#D6EEF0] text-[#0C4A54]" };
   if (/open|available/i.test(s) || left != null) return { label: "Open", full: false, cls: "bg-[#DCE8DF] text-[#25543B]" };
   return { label: "Ask us", full: false, cls: "border ledger-border text-ink/70" };
 }

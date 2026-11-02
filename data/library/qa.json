@@ -137,6 +137,16 @@
    "released": false
   },
   {
+   "stay_id": "6ae8bd919444e668a1395912",
+   "slug": "amanpuri",
+   "name": "Amanpuri",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b9",
    "slug": "amanwana",
    "name": "Amanwana",
@@ -232,6 +242,19 @@
    "country": "Vietnam",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8bdd9323a8197a341c3ae",
+   "slug": "anantara-siam-bangkok",
+   "name": "Anantara Siam Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8c2",
@@ -485,10 +508,8 @@
    "slug": "bambu-indah",
    "name": "Bambu Indah",
    "country": "Indonesia",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d0",
@@ -496,10 +517,9 @@
    "name": "Banyan Tree Krabi",
    "country": "Thailand",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d1",
@@ -1037,11 +1057,9 @@
    "name": "COMO Canggu",
    "country": "Indonesia",
    "missing": [
-    "coming_soon",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae88519887ca89f9c60b6b3",
@@ -1049,11 +1067,9 @@
    "name": "COMO Uma Ubud",
    "country": "Indonesia",
    "missing": [
-    "coming_soon",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8ef",
@@ -1509,6 +1525,17 @@
    "country": "Canada",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8bd919444e668a1395914",
+   "slug": "four-seasons-tented-camp-golden-triangle",
+   "name": "Four Seasons Tented Camp Golden Triangle",
+   "country": "Thailand",
+   "missing": [
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a9d46027650cc04166342d7",
@@ -2059,6 +2086,19 @@
    "released": false
   },
   {
+   "stay_id": "6ae8bdd9323a8197a341c3af",
+   "slug": "kahavadi-chiang-rai",
+   "name": "Kahavadi Chiang Rai",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a9d4861056c71a19e0353f6",
    "slug": "kamalame-cay",
    "name": "Kamalame Cay",
@@ -2139,6 +2179,16 @@
    "released": true
   },
   {
+   "stay_id": "6ae8bd919444e668a1395915",
+   "slug": "keemala",
+   "name": "Keemala",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff932",
    "slug": "khwai-leadwood-camp",
    "name": "Khwai Leadwood Camp",
@@ -2187,6 +2237,19 @@
    "country": "Greece",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8bdd9323a8197a341c3ad",
+   "slug": "kiri-private-reserve",
+   "name": "Kiri Private Reserve",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff935",
@@ -2944,11 +3007,8 @@
    "slug": "nihi-rote",
    "name": "NIHI Rote",
    "country": "Indonesia",
-   "missing": [
-    "coming_soon",
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff96a",
@@ -3368,8 +3428,8 @@
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff98b",
-   "slug": "rayvadee-resort",
-   "name": "Rayavadee Resort",
+   "slug": "rayavadee",
+   "name": "Rayavadee",
    "country": "Thailand",
    "missing": [],
    "released": true
@@ -3385,6 +3445,16 @@
     "own_photos"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6ae8bd919444e668a1395913",
+   "slug": "rosewood-phuket",
+   "name": "Rosewood Phuket",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff98c",
@@ -3973,8 +4043,10 @@
    "slug": "six-senses-uluwatu",
    "name": "Six Senses Uluwatu Bali",
    "country": "Indonesia",
-   "missing": [],
-   "released": true
+   "missing": [
+    "coming_soon"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9c2",
@@ -4033,7 +4105,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c7",
    "slug": "soneva-fushi-maldives",
-   "name": "Soneva Fushi Maldives Original Barefoot Luxury",
+   "name": "Soneva Fushi",
    "country": "Maldives",
    "missing": [
     "coordinates"
@@ -4043,7 +4115,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c8",
    "slug": "soneva-jani-maldives",
-   "name": "Soneva Jani Maldives Exclusive Island & Overwater Residences",
+   "name": "Soneva Jani",
    "country": "Maldives",
    "missing": [
     "coordinates"
@@ -4053,7 +4125,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9c9",
    "slug": "soneva-secret-maldives",
-   "name": "Soneva Secret Ultra‑Bespoke Island Retreat",
+   "name": "Soneva Secret",
    "country": "Maldives",
    "missing": [
     "coordinates"
@@ -4254,6 +4326,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8bdd9323a8197a341c3b0",
+   "slug": "the-chedi-aquarius-koh-chang",
+   "name": "The Chedi Aquarius Koh Chang",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a9d46027650cc04166342d8",
    "slug": "the-cove-eleuthera",
    "name": "The Cove Eleuthera",
@@ -4407,6 +4492,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6ae8bd919444e668a1395916",
+   "slug": "the-sarojin",
+   "name": "The Sarojin",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9df",

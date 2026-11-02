@@ -30560,6 +30560,105 @@
    "placeSlug": null
   },
   {
+   "slug": "one-only-kea-island",
+   "name": "One&Only Kéa Island",
+   "ledgerId": "STY-2026-962536",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "An all-villa resort above Vroskopos Bay on Kéa, the Cycladic island closest to Athens.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616274/wildco/greece/one-only-kea-island/hero.jpg",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616279/wildco/greece/one-only-kea-island/pool.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616280/wildco/greece/one-only-kea-island/cliff-villa.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616281/wildco/greece/one-only-kea-island/spa.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/v1793616283/wildco/greece/one-only-kea-island/beach.jpg"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "couples",
+    "luxury"
+   ],
+   "status": null,
+   "statusDate": null,
+   "coords": null,
+   "airport": "Athens (ATH)",
+   "airportDirections": "15 minutes by private helicopter from Athens airport to the resort's helipad, or 30 minutes by road to Lavrio and 45 minutes by speedboat. The public ferry from Lavrio takes about an hour. Transfers do not run at night.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Villas only: Cliff Villas of 75 m² with sea or panoramic views, Family Bay View Villas a short walk from the beach, a Two-Bedroom Grand Panoramic Villa and a Three-Bedroom Grand Seafront Villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Yacht days in the Aegean",
+     "Diving on historic shipwrecks",
+     "Village explorations and archaeological experiences",
+     "E-bike tours and tennis"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Atria, Bond Beach Club, Kaiki Pool Bar and Èpicora wine bar",
+     "Three-storey One&Only Spa with indoor-outdoor pool",
+     "KidsOnly programme",
+     "Private helipad"
+    ]
+   },
+   "onlyHere": [],
+   "why": [
+    {
+     "title": "Place",
+     "body": "Kéa, or Tzia, the closest of the Cyclades to Athens, where the resort overlooks Vroskopos Bay and its 100-metre sandy beach. Fifteen minutes by helicopter from Athens airport, or 45 minutes by speedboat from Lavrio."
+    },
+    {
+     "title": "People",
+     "body": "A One&Only resort of villas only, many with their own pools. Atria cooks Greek and Mediterranean food with fish from Kéa's waters and the resort's own herbs and produce."
+    },
+    {
+     "title": "Impact",
+     "body": "The resort says it follows eco-conscious practices to protect the island and its marine life; nothing more specific is claimed here until we have seen it."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "15 minutes by helicopter from Athens airport, or by road to Lavrio (30 minutes) and speedboat (45 minutes). No transfers run at night.",
+    "signature_experiences": "The beach at Vroskopos Bay, yacht days, diving on historic wrecks, and the three-storey spa.",
+    "who_its_for": "Families and couples who want a full-service island resort within easy reach of Athens, with villas and a sandy beach."
+   },
+   "faqs": [],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Claude (draft for James)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
+  },
+  {
    "slug": "open-sky",
    "name": "Open Sky Zion",
    "ledgerId": "STY-2026-000203",

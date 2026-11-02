@@ -3068,10 +3068,9 @@
    "name": "One&Only Kéa Island",
    "country": "Greece",
    "missing": [
-    "name_check",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff97a",

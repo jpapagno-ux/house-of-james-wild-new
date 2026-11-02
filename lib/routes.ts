@@ -408,6 +408,7 @@ export const STAY_SLUGS: string[] = [
   "ol-pejeta-bush-camp-asilia",
   "olas-tulum",
   "one-only-gorillas-nest",
+  "one-only-kea-island",
   "open-sky",
   "pacuare-lodge",
   "paws-up-resort",

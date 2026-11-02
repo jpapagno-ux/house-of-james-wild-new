@@ -1,4 +1,5 @@
 import Link from "next/link";
+import portal from "@/components/platform/portal.module.css";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Rail, { type RailItem } from "@/components/platform/Rail";
 import OrgSwitcher from "@/components/platform/OrgSwitcher";
@@ -37,9 +38,10 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
   return (
     <>
       <SiteHeader />
-      <div className="border-b ledger-border border-t-2 border-t-[#0C5D61] bg-white">
+      <div className={portal.portal}>
+      <div className="border-b ledger-border border-t-2 border-t-[#8B2525] bg-white">
         <div className="max-w-ledger mx-auto px-5 md:px-10 py-3 flex flex-wrap items-center gap-x-5 gap-y-2">
-          <p className="ledger-eyebrow text-[#0C5D61]">Partner Desk</p>
+          <p className="ledger-eyebrow text-[#8B2525]">Partner Desk</p>
           <p className="ledger-display text-[1.2rem] leading-none">{desk.org.name}</p>
           {desk.org.partner_code && <span className="font-mono text-[11.5px] tracking-[0.06em] ledger-crimson">{desk.org.partner_code}</span>}
           <div className="ml-auto flex flex-wrap items-center gap-4 text-[13px]">
@@ -56,6 +58,7 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
           <div className="pt-6 md:pt-0 min-w-0">{children}</div>
         </div>
       </main>
+      </div>
     </>
   );
 }

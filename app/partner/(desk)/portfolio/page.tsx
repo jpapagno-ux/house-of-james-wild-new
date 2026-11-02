@@ -33,7 +33,7 @@ export default async function Portfolio() {
               const pub = PUBLICATION[e.publication_status] ?? PUBLICATION.draft;
               return (
                 <li key={e.id}>
-                  <Link href={`/partner/portfolio/${e.legacy_cms_id}`} className="group grid gap-2 py-4 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-[#F4F8F8] -mx-3 px-3">
+                  <Link href={`/partner/portfolio/${e.legacy_cms_id}`} className="group grid gap-2 py-4 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-[#F7F5F2] -mx-3 px-3">
                     <div className="min-w-0">
                       <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                         <span className="ledger-display text-[1.3rem] leading-tight group-hover:underline underline-offset-4 decoration-1">{e.name}</span>

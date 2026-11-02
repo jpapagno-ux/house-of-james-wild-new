@@ -19,7 +19,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
           {items.map((i) => (
             <li key={i.href}>
               <Link href={i.href} aria-current={isActive(i.href) ? "page" : undefined}
-                className={`ledger-eyebrow inline-flex items-center gap-1.5 py-3 border-b-2 ${isActive(i.href) ? "text-[#0C5D61] border-[#0C5D61]" : "border-transparent"}`}>
+                className={`ledger-eyebrow inline-flex items-center gap-1.5 py-3 border-b-2 ${isActive(i.href) ? "text-[#8B2525] border-[#8B2525]" : "border-transparent"}`}>
                 {i.label}{i.count ? <span className="tabular-nums">· {i.count}</span> : null}
               </Link>
             </li>
@@ -35,7 +35,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
             return (
               <li key={i.href} className="border-b ledger-border">
                 <Link href={i.href} aria-current={on ? "page" : undefined}
-                  className={`flex items-center justify-between gap-3 py-2.5 pl-3 pr-2 text-[14px] border-l-2 transition-colors ${on ? "border-[#0C5D61] text-[#0C5D61] font-medium bg-[#E6F1F1]" : "border-transparent hover:bg-[#F4F8F8]"}`}>
+                  className={`flex items-center justify-between gap-3 py-2.5 pl-3 pr-2 text-[14px] border-l-2 transition-colors ${on ? "border-[#8B2525] text-[#8B2525] font-medium bg-[#F3ECEA]" : "border-transparent hover:bg-[#F7F5F2]"}`}>
                   <span>{i.label}</span>
                   {i.count ? <span className="text-[11px] tabular-nums border ledger-border px-1.5 leading-5" aria-label={`${i.count} open`}>{i.count}</span> : null}
                 </Link>

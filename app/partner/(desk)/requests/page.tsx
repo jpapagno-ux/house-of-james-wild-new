@@ -27,7 +27,7 @@ export default async function Requests() {
           <ul className="divide-y divide-ink/10 border-y ledger-border">
             {g.rows.map((r) => (
               <li key={r.id}>
-                <Link href={`/partner/requests/${r.id}`} className="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-[#F4F8F8] -mx-3 px-3">
+                <Link href={`/partner/requests/${r.id}`} className="grid gap-1 py-3 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-[#F7F5F2] -mx-3 px-3">
                   <div className="min-w-0">
                     <p className="font-medium">{r.requested_item}{r.priority === "high" && <span className="ml-2 text-[11px] tracking-[0.14em] uppercase text-[#8B2525]">Priority</span>}</p>
                     <p className="text-[13px] ledger-muted">{REQUEST_TYPE[r.request_type]} · {r.property_id ? name.get(r.property_id) : desk.org.name} · {r.reference}{r.due_date ? ` · due ${niceDate(r.due_date)}` : ""}</p>

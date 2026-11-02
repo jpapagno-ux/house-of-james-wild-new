@@ -8,6 +8,9 @@ import { Overview, RecordHero, SectionHead } from "@/components/record/Sections"
 import { GalleryMosaic, RecordActionBar } from "@/components/record/Frame";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import ShipGlance from "@/components/ships/ShipGlance";
+import ShipCard from "@/components/ships/ShipCard";
+import { shipCard } from "@/lib/content/ships/cards";
+import { registryShip } from "@/lib/content/ships/registry";
 import ShipNav from "@/components/ships/ShipNav";
 import ShipItinerary from "@/components/ships/ShipItinerary";
 import MonthDepartures from "@/components/ships/MonthDepartures";
@@ -101,16 +104,15 @@ export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {
           <section id="ships" className={SEC}>
             <SectionHead eyebrow="The ships" title={v.ships.length > 1 ? "Which Ship Should You Choose?" : `Which Ship Sails the ${v.name}?`} icon="wave"
               intro={v.ships.length > 1 ? `The voyage is the same on either ship; the cabins and the fare are what change. ${t(v.guests)}.` : `${t(v.guests)}.`} />
-            <ul className={`mt-6 grid gap-4 ${v.ships.length > 1 ? "md:grid-cols-2" : ""}`}>
-              {v.ships.map((s) => (
-                <li key={s} className="border ledger-border p-5 flex flex-col">
-                  <p className="ledger-eyebrow">Expedition ship · Antarctica21</p>
-                  <h3 className="ledger-display text-[24px] mt-1">{shipName(s)}</h3>
-                  <p className="mt-2 text-[15px]">{v.fromByShip[s] && v.status !== "sold-out" ? <>From <strong className="font-medium ledger-crimson">{usd(v.fromByShip[s])}</strong> per person, double cabin</> : v.status === "sold-out" ? "Shown as sold out" : "Fares: ask us"}</p>
-                  <Link href={`/voyages/ships/${s}`} className="mt-auto pt-4 self-start inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">Her cabins and deck plan<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
-                </li>
-              ))}
+            <ul className={`mt-6 grid gap-5 sm:grid-cols-2 ${v.ships.length > 1 ? "" : "lg:grid-cols-3"}`}>
+              {v.ships.map((slug) => {
+                const c = shipCard(registryShip(slug)!);
+                if (!c) return null;
+                const own = v.fromByShip[slug] && v.status !== "sold-out" ? { label: "This voyage", amount: usd(v.fromByShip[slug]) } : v.status === "sold-out" ? { label: "Status", amount: "Sold out" } : { label: "Rates", amount: "Ask us" };
+                return <li key={slug}><ShipCard c={{ ...c, price: own, facts: c.facts.filter(([k]) => k === "Guests") }} /></li>;
+              })}
             </ul>
+            <p className="mt-3 text-[12px] ledger-muted">Photographs: Antarctica21. &ldquo;This voyage&rdquo; is the lowest fare per person, double cabin, Antarctica21 shows for this itinerary on that ship.</p>
           </section>
 
           <section id="dates" className={SEC}>

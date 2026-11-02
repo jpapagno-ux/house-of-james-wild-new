@@ -11,7 +11,8 @@ import PolarFinder, { type FinderRow } from "@/components/polar/PolarFinder";
 import { HOUSE_CRIMSON } from "@/components/record/Sections";
 import { voyageCard } from "@/lib/content/polar/cards";
 import { LENGTHS, MONTH_CHIPS, POLAR_CROSSINGS_URL, POLAR_PATH, POLAR_SHIP_NAMES, POLAR_VOYAGES, REGIONS, STYLES, polarRouteId, usd, voyageFrom, voyagePath, type PolarStyle } from "@/lib/content/polar";
-import { VOYAGE_TYPES } from "@/lib/content/ships/registry";
+import { VOYAGE_TYPES, registryShip } from "@/lib/content/ships/registry";
+import { shipCard } from "@/lib/content/ships/cards";
 import { volumeInk } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
@@ -68,6 +69,7 @@ export default function PolarPage() {
     { key: "ship", label: "Ship", options: Object.entries(POLAR_SHIP_NAMES).map(([key, label]) => ({ key, label })) },
   ];
   const items = V.map((v) => ({ slug: v.slug, keys: { style: [v.style], region: v.regions, length: [v.length], month: v.monthChips, ship: v.ships }, node: <ShipCard c={voyageCard(v)} /> }));
+  const fleet = Object.keys(POLAR_SHIP_NAMES).map((slug) => shipCard(registryShip(slug)!)).filter((c): c is NonNullable<typeof c> => !!c);
   const atlas: AtlasRoute[] = V.map((v) => ({
     id: polarRouteId(v), label: `${v.short} · ${v.nights} nights`, href: voyagePath(v.slug), where: v.route, group: STYLES[v.style].name, groupHref: `${POLAR_PATH}#finder-h`,
     members: byStyle(v.style).map((x) => ({ name: x.name, href: voyagePath(x.slug) })),
@@ -87,6 +89,11 @@ export default function PolarPage() {
 
         <RouteAtlas id="polar-atlas" kind="voyage" dest="polar" legend="sea" kicker="POLAR CROSSINGS · BY AIR AND SEA" eyebrow="The routes" title="Where Do the Voyages Go?"
           line="Every Antarctica21 route on one chart, grouped by trip style. Pick one and the globe flies to it, then sails it day by day." routes={atlas} />
+
+        <HubSection eyebrow="The fleet · Antarctica21" title="Which Ships Sail Them?" id="fleet-h">
+          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{fleet.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>
+          <p className="mt-3 text-[12px] ledger-muted">Photographs: Antarctica21. Up to 88 guests on an air-cruise and 96 on a sea voyage, on either ship.</p>
+        </HubSection>
 
         <HubSection eyebrow="Sailed by the founder" title="Which Polar Ship Has James Sailed?" id="sailed-h">
           <article className="grid md:grid-cols-[1.4fr_1fr] gap-6 md:gap-8 ledger-paper border ledger-border p-4 md:p-6" style={{ borderTopColor: ink, borderTopWidth: 3 }}>

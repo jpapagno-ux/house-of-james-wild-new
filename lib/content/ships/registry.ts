@@ -85,6 +85,14 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
     pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos" },
 
+  // Polar Crossings (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
+  // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
+  // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
+  { slug: "magellan-explorer", name: "Magellan Explorer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+  { slug: "magellan-discoverer", name: "Magellan Discoverer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "celestia-yacht" },
   { slug: "silolona", name: "Silolona", operator: "Silolona", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "silolona-sojourns" },

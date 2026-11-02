@@ -2,7 +2,7 @@
 // oldest", the departures-board labels and the countdown. A fixed "today" keeps results stable.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { groupByRegionView, regionCounts, boardStatus, countLine, countdown, daysTo, filterComing, groupByYear, parseQuery, sortComing, toQuery, type ViewItem } from "../lib/content/coming-view.ts";
+import { boardDay, mixBoard, offerBoardLines, offerIsPublic, type BoardEntry, groupByRegionView, regionCounts, boardStatus, countLine, countdown, daysTo, filterComing, groupByYear, parseQuery, sortComing, toQuery, type ViewItem } from "../lib/content/coming-view.ts";
 import data from "../lib/content/whats-coming.json" with { type: "json" };
 
 const ON = "2026-11-02";
@@ -83,3 +83,28 @@ test("Kahavadi Chiang Rai (opened 1 July 2026) stays hidden by the date rule", a
   assert.ok(!live.includes("kahavadi-chiang-rai"));
   assert.equal(live.length, 5);
 });
+
+test("offers on the board: headline as filed, the last day it can be used, never trade terms", () => {
+  assert.equal(boardDay("2027-03-31"), "31 MAR 2027");
+  assert.deepEqual(offerBoardLines({ headline: "Stay 4 nights, save 10%", program: "Time Rewarded" }, "2027-03-31"), { flap: "STAY 4 NIGHTS, SAVE 10%", tail: "TRAVEL BY 31 MAR 2027" });
+  assert.deepEqual(offerBoardLines({ headline: "Save 20%", program: "Book Early", bookingWindow: true }, "2026-12-31"), { flap: "SAVE 20%", tail: "BOOK BY 31 DEC 2026" });
+  assert.deepEqual(offerBoardLines({ headline: "Save 30%", program: "Final Call", departure: "2026-12-04" }, "2026-12-04"), { flap: "SAVE 30%", tail: "DEPARTS 4 DEC 2026" });
+  assert.equal(offerIsPublic({ headline: "Agent commission 15%", name: "x" }), false);
+  assert.equal(offerIsPublic({ headline: "Net rates from $900", name: "x" }), false);
+  assert.equal(offerIsPublic({ headline: "Stay 7 nights, pay 6", name: "Bedwell Safari" }), true);
+});
+
+test("the board deals offers between openings, openings in order", () => {
+  const e = (key: string, kind: BoardEntry["kind"]): BoardEntry => ({ key, kind, place: null, name: key, flap: "", href: "/" });
+  const mixed = mixBoard([e("a", "opening"), e("b", "opening")], [e("1", "offer"), e("2", "offer"), e("3", "offer")]);
+  assert.deepEqual(mixed.map((x) => x.key), ["a", "1", "2", "b", "3"]);
+  assert.deepEqual(mixBoard([], [e("1", "offer")]).map((x) => x.key), ["1"]);
+});
+
+test("every coming entry pairs with an existing Wild Pathway", async () => {
+  const { COMING_PATHWAYS } = await import("../lib/content/coming-pathways.ts");
+  const { PATHWAYS } = await import("../lib/pathways.ts");
+  const live = activeOnlyFor(ON);
+  for (const slug of live) assert.ok(COMING_PATHWAYS[slug] && PATHWAYS[COMING_PATHWAYS[slug].id], `${slug} has no pathway`);
+});
+function activeOnlyFor(on: string) { return (data.coming as { slug: string; date: string | null }[]).filter((c) => !c.date || c.date.length < 10 || c.date >= on).map((c) => c.slug); }

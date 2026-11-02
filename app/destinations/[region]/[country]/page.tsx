@@ -62,6 +62,7 @@ import { graph, ids } from "@/lib/schema";
 import PhilippinesSections from "@/components/destination/PhilippinesSections";
 import { APPROX } from "@/lib/content/philippines";
 import ComingTicker from "@/components/coming/ComingTicker";
+import { countryBoard } from "@/lib/content/board";
 import { comingOn } from "@/lib/content/whats-coming";
 import { today } from "@/lib/dates";
 
@@ -268,7 +269,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">{heading}</div></HeroSlider>
             : <section className="relative bg-ink text-white bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)]" aria-label={c.name}><div className="max-w-ledger mx-auto px-5 md:px-10 pt-36 md:pt-52 pb-12 md:pb-16">{heading}</div></section>;
         })()}
-        <ComingTicker items={comingOn(today()).filter((x) => x.countrySlug === c.slug)} label={`Coming to ${c.name}`} compact />
+        <ComingTicker entries={countryBoard(comingOn(today()), c.slug)} label={`${c.name}: coming and on offer`} compact />
 
         <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">

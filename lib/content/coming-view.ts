@@ -187,3 +187,45 @@ export function toQuery(s: ViewState): string {
   const q = p.toString();
   return q ? `?${q}` : "";
 }
+
+// ── The board: openings and live offers (James, 2 Nov 2026: "add updated specials and savings for the ticker") ──
+
+/** One entry on a departures board. Openings carry a sun mark; offers a % tag. */
+export type BoardEntry = {
+  key: string;
+  kind: "opening" | "offer";
+  place: string | null; // country, set small
+  name: string; // property
+  flap: string; // OPENS 11 DEC 2026 · STAY 4 NIGHTS, SAVE 10%
+  tail?: string; // BOOK BY 31 MAR 2027
+  href: string;
+};
+
+// Trade terms never reach a public board (house rule: no commission or net rates on the site).
+const TRADE = /commission|\bnet\b|net rate|agent rate|trade rate/i;
+export const offerIsPublic = (o: { headline: string; name: string; conditions?: string }) => !TRADE.test(o.headline) && !TRADE.test(o.name);
+
+/** 2027-03-31 -> 31 MAR 2027 (the board's own date style). */
+export function boardDay(iso: string | null | undefined): string | null {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso ?? "");
+  return m ? `${Number(m[3])} ${MON[Number(m[2]) - 1]} ${m[1]}` : null;
+}
+
+/** The offer's line on the board: the headline as filed, and the last day it can be used. */
+export function offerBoardLines(o: { headline: string; program: string; bookingWindow?: boolean; departure?: string }, lastDay: string | null): { flap: string; tail?: string } {
+  const flap = o.headline.replace(/\s+/g, " ").trim().toUpperCase();
+  const day = boardDay(lastDay);
+  if (!day) return { flap };
+  if (o.program === "Final Call" && o.departure && o.departure === lastDay) return { flap, tail: `DEPARTS ${day}` };
+  return { flap, tail: `${o.bookingWindow ? "BOOK BY" : "TRAVEL BY"} ${day}` };
+}
+
+/** Openings first in their order, the offers dealt in between them as evenly as they go. */
+export function mixBoard(openings: readonly BoardEntry[], offers: readonly BoardEntry[]): BoardEntry[] {
+  if (!openings.length) return [...offers];
+  if (!offers.length) return [...openings];
+  const per = Math.ceil(offers.length / openings.length);
+  const out: BoardEntry[] = [];
+  openings.forEach((o, i) => { out.push(o, ...offers.slice(i * per, (i + 1) * per)); });
+  return out;
+}

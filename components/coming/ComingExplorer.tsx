@@ -15,6 +15,7 @@ export type ExplorerItem = ViewItem & {
   when: string; line: string; countdown: string | null; plan: string;
   hero: { src: string; alt: string; credit: string | null } | null;
   field: { from: string; to: string; glow: string };
+  pathway: { key: string; name: string; accent: string; text: string; tint: string; basis: "approved" | "suggested" } | null;
 };
 
 // The explorer under the hero: search, country, year and status chips, three sorts, and the timeline.
@@ -35,7 +36,11 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
   const update = useCallback((patch: Partial<ViewState>, mode: "push" | "replace" = "push") => {
     setSt((prev) => {
       const next = { ...prev, ...patch };
-      const url = `${window.location.pathname}${toQuery(next)}${mode === "push" ? "" : window.location.hash}`;
+      // Keep ?look= (concept A or B, for comparison) across filter changes.
+      const look = new URLSearchParams(window.location.search).get("look");
+      const q = toQuery(next);
+      const withLook = look ? `${q ? `${q}&` : "?"}look=${encodeURIComponent(look)}` : q;
+      const url = `${window.location.pathname}${withLook}${mode === "push" ? "" : window.location.hash}`;
       if (mode === "push") window.history.pushState(null, "", url); else window.history.replaceState(null, "", url);
       return next;
     });
@@ -51,55 +56,55 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
   const clear = { q: "", region: null, country: null, year: null, status: null };
   let n = 0;
 
-  const chip = (on: boolean) =>
-    `shrink-0 inline-flex items-center gap-1.5 h-9 px-3.5 border text-[12px] tracking-[0.06em] whitespace-nowrap transition-colors ${on ? "text-white" : "bg-white ledger-border text-ink hover:border-[color:var(--jw-action)]"}`;
-  const onStyle = (on: boolean) => (on ? { background: "var(--jw-action)", borderColor: "var(--jw-action)" } : undefined);
+  // Chip colours live in coming.module.css (aria-pressed), so both looks style them.
+  const chip = `${s.chip} shrink-0 inline-flex items-center gap-1.5 h-9 px-3.5 text-[12px] tracking-[0.06em] whitespace-nowrap`;
+  const sep = `${s.sep} shrink-0 w-px h-5 mx-1`;
 
   return (
-    <>
-      <div className="sticky top-[76px] lg:top-[164px] z-30 bg-paper/95 backdrop-blur border-b ledger-border" role="search" aria-label="Search what's coming">
+    <div className={`${s.explorer} overflow-x-clip`}>
+      <div className={`${s.bar} sticky top-[76px] lg:top-[164px] z-30`} role="search" aria-label="Search what's coming">
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-3 md:py-4">
           <div className="flex items-center gap-3">
             <label className="relative flex-1 min-w-0 md:max-w-sm">
               <span className="sr-only">Search by property or country</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-ink/50"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="1.6" /><path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
-              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Lodge or country" className="w-full h-10 pl-9 pr-3 border ledger-border bg-white text-[15px] placeholder:text-ink/45 focus:outline-none focus:border-[color:var(--jw-action)]" />
+              <svg aria-hidden="true" viewBox="0 0 24 24" className={`${s.icon} absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4`}><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="1.6" /><path d="M20 20l-3.5-3.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" /></svg>
+              <input type="search" value={st.q} onChange={(e) => update({ q: e.target.value }, "replace")} placeholder="Lodge or country" className={`${s.field} w-full h-10 pl-9 pr-3 text-[15px]`} />
             </label>
             <label className="shrink-0 flex items-center gap-2">
               <span className="hidden md:inline font-mono text-[10.5px] tracking-[0.2em] uppercase ledger-muted">Sort</span>
               <span className="sr-only md:hidden">Sort</span>
-              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className="h-10 max-w-[44vw] md:max-w-none border ledger-border bg-white px-2 md:px-2.5 text-[13.5px] md:text-[14px] focus:outline-none focus:border-[color:var(--jw-action)]">
+              <select value={st.sort} onChange={(e) => update({ sort: e.target.value as Sort })} className={`${s.field} h-10 max-w-[44vw] md:max-w-none px-2 md:px-2.5 text-[13.5px] md:text-[14px]`}>
                 {SORTS.map((o) => <option key={o.key} value={o.key}>{o.label}</option>)}
               </select>
             </label>
-            <div role="group" aria-label="Group by" className="shrink-0 hidden sm:flex h-10 border ledger-border bg-white">
+            <div role="group" aria-label="Group by" className="shrink-0 hidden sm:flex h-10">
               {(["year", "region"] as Group[]).map((g) => { const on = st.group === g; return (
-                <button key={g} type="button" aria-pressed={on} onClick={() => update({ group: g })} className={`px-3 text-[12.5px] ${on ? "text-white" : "text-ink hover:text-[color:var(--jw-action)]"}`} style={on ? { background: "var(--jw-action)" } : undefined}>By {g}</button>
+                <button key={g} type="button" aria-pressed={on} onClick={() => update({ group: g })} className={`${s.chip} px-3 text-[12.5px] ${g === "region" ? "-ml-px" : ""}`}>By {g}</button>
               ); })}
             </div>
             <p className="hidden lg:block ml-auto font-mono text-[11px] tracking-[0.16em] uppercase ledger-muted" aria-live="polite">{filtered ? `${shown.length} of ${items.length} shown` : `All ${items.length} shown`}</p>
           </div>
           <div className={`${s.chips} mt-3 -mx-5 px-5 md:mx-0 md:px-0 flex items-center gap-2 overflow-x-auto`}>
             {(["year", "region"] as Group[]).map((g) => { const on = st.group === g; return (
-              <button key={g} type="button" className={`sm:hidden ${chip(on)}`} style={onStyle(on)} aria-pressed={on} onClick={() => update({ group: g })}>By {g}</button>
+              <button key={g} type="button" className={`sm:hidden ${chip}`} aria-pressed={on} onClick={() => update({ group: g })}>By {g}</button>
             ); })}
-            <span className="sm:hidden shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
-            <button type="button" className={chip(!filtered)} style={onStyle(!filtered)} aria-pressed={!filtered} onClick={() => update(clear)}>All</button>
-            {regionChips.length > 1 && <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />}
+            <span className={`sm:hidden ${sep}`} aria-hidden="true" />
+            <button type="button" className={chip} aria-pressed={!filtered} onClick={() => update(clear)}>All</button>
+            {regionChips.length > 1 && <span className={sep} aria-hidden="true" />}
             {regionChips.length > 1 && regionChips.map((r) => { const on = st.region === r.slug; return (
-              <button key={r.slug} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ region: on ? null : r.slug, country: null })}><span className="uppercase tracking-[0.12em] text-[11px]">{r.name}</span><span className={`font-mono text-[10.5px] ${on ? "text-white/80" : "text-ink/50"}`}>{r.count}</span></button>
+              <button key={r.slug} type="button" className={chip} aria-pressed={on} onClick={() => update({ region: on ? null : r.slug, country: null })}><span className="uppercase tracking-[0.12em] text-[11px]">{r.name}</span><span className={`font-mono text-[10.5px] ${s.count}`}>{r.count}</span></button>
             ); })}
-            <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
+            <span className={sep} aria-hidden="true" />
             {countries.map((c) => { const on = st.country === c.slug; return (
-              <button key={c.slug} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ country: on ? null : c.slug })}>{c.name}<span className={`font-mono text-[10.5px] ${on ? "text-white/80" : "text-ink/50"}`}>{c.count}</span></button>
+              <button key={c.slug} type="button" className={chip} aria-pressed={on} onClick={() => update({ country: on ? null : c.slug })}>{c.name}<span className={`font-mono text-[10.5px] ${s.count}`}>{c.count}</span></button>
             ); })}
-            <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
+            <span className={sep} aria-hidden="true" />
             {years.map((y) => { const on = st.year === y.key; return (
-              <button key={y.key} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ year: on ? null : y.key })}><span className="font-mono">{y.label}</span><span className={`font-mono text-[10.5px] ${on ? "text-white/80" : "text-ink/50"}`}>{y.count}</span></button>
+              <button key={y.key} type="button" className={chip} aria-pressed={on} onClick={() => update({ year: on ? null : y.key })}><span className="font-mono">{y.label}</span><span className={`font-mono text-[10.5px] ${s.count}`}>{y.count}</span></button>
             ); })}
-            <span className="shrink-0 w-px h-5 bg-ink/15 mx-1" aria-hidden="true" />
+            <span className={sep} aria-hidden="true" />
             {STATUS_CHIPS.map((x) => { const on = st.status === x.key; return (
-              <button key={x.key} type="button" className={chip(on)} style={onStyle(on)} aria-pressed={on} onClick={() => update({ status: on ? null : x.key })}>{x.label}</button>
+              <button key={x.key} type="button" className={chip} aria-pressed={on} onClick={() => update({ status: on ? null : x.key })}>{x.label}</button>
             ); })}
           </div>
           <p className="lg:hidden mt-2 font-mono text-[10.5px] tracking-[0.16em] uppercase ledger-muted" aria-live="polite">{filtered ? `${shown.length} of ${items.length} shown` : `All ${items.length} shown`}</p>
@@ -118,9 +123,9 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
           </div>
         )}
         {groups.map((g) => (
-          <section key={g.key} aria-labelledby={`year-${g.key}`} className="pt-16 md:pt-24">
-            <header className="flex items-end gap-5 md:gap-8 border-b ledger-rule pb-4 md:pb-6">
-              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${!/^\d{4}$/.test(g.key) ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`} style={{ color: "var(--jw-action)" }}>{g.label}</h2>
+          <section key={g.key} aria-labelledby={`year-${g.key}`} className="pt-16 md:pt-28">
+            <header className={`${s.yearHead} flex items-end gap-5 md:gap-8 pb-4 md:pb-6`} style={{ ["--pw" as string]: g.items.find((x) => x.pathway)?.pathway?.accent }}>
+              <h2 id={`year-${g.key}`} className={`${s.yearNum} ${s.yearNumC} ${!/^\d{4}$/.test(g.key) ? "text-[3.4rem] md:text-[6.5rem] italic" : "text-[6rem] md:text-[12rem]"}`}>{g.label}</h2>
               <p className="pb-2 md:pb-5 font-mono text-[11px] md:text-[12px] tracking-[0.2em] uppercase ledger-muted">{g.items.length} {g.items.length === 1 ? "opening" : "openings"}</p>
             </header>
             <ol className="mt-10 md:mt-16 space-y-20 md:space-y-32">
@@ -129,15 +134,16 @@ export default function ComingExplorer({ items, regions }: { items: ExplorerItem
           </section>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
 function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
   return (
-    <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}>
+    <article id={c.slug} aria-labelledby={`${c.slug}-name`} className={`${s.card} ${s.anchor} ${s.reveal} grid lg:grid-cols-12 gap-7 lg:gap-14 items-center`}
+      style={c.pathway ? { ["--pw" as string]: c.pathway.accent, ["--pw-text" as string]: c.pathway.text, ["--pw-tint" as string]: c.pathway.tint } : undefined}>
       <div className={`lg:col-span-7 ${flip ? "lg:order-2" : ""}`}>
-        <div className={`${s.frame} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`} style={{ background: "var(--jw-sea-navy)" }}>
+        <div className={`${s.frame} ${s.frameB} relative aspect-[4/3] md:aspect-[16/10] overflow-hidden`} style={{ background: "var(--jw-sea-navy)" }}>
           {c.hero ? (
             <>
               <Image src={c.hero.src} alt={c.hero.alt} fill quality={85} sizes="(min-width: 1400px) 800px, (min-width: 1024px) 58vw, 100vw" className="object-cover" />
@@ -149,16 +155,16 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
           </div>
         </div>
       </div>
-      <div className={`lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
+      <div className={`${s.panel} lg:col-span-5 ${flip ? "lg:order-1" : ""}`}>
         <p className="font-mono text-[11px] tracking-[0.22em] uppercase ledger-muted">
-          {c.country ?? "The Ledger"}{c.ledgerId && <> &middot; <span className="ledger-crimson">{c.ledgerId}</span></>}
+          {c.country ?? "The Ledger"}{c.ledgerId && <> &middot; <span className={`${s.idPill} ledger-crimson`}>{c.ledgerId}</span></>}
         </p>
         <h3 id={`${c.slug}-name`} className="ledger-display text-[2.3rem] md:text-[3.2rem] leading-[1.02] mt-3 tracking-[-0.01em]">
           {c.href ? <Link href={c.href} className="hover:underline underline-offset-[6px] decoration-1">{c.name}</Link> : c.name}
         </h3>
-        {c.tagline && <p className="ledger-display italic text-[1.25rem] md:text-[1.45rem] leading-snug mt-3 text-ink/80">{c.tagline}</p>}
-        <div className="mt-6 flex flex-wrap items-baseline gap-x-5 gap-y-2 border-y ledger-border py-3">
-          <p className="font-mono text-[12px] tracking-[0.16em] uppercase" style={{ color: "var(--jw-action)" }}>{c.line}</p>
+        {c.tagline && <p className={`${s.tagline} ledger-display italic text-[1.25rem] md:text-[1.45rem] leading-snug mt-3`}>{c.tagline}</p>}
+        <div className={`${s.ruleY} mt-6 flex flex-wrap items-baseline gap-x-5 gap-y-2 py-3`}>
+          <p className={`${s.line} font-mono text-[12px] tracking-[0.16em] uppercase`}>{c.line}</p>
           {c.countdown && <p className="font-mono text-[12px] tracking-[0.16em] uppercase ledger-muted">{c.countdown}</p>}
         </div>
         {c.note && <p className="mt-5 text-[16.5px] leading-relaxed">{c.note}</p>}
@@ -167,6 +173,16 @@ function Feature({ c, flip }: { c: ExplorerItem; flip: boolean }) {
             {c.bestMonths && <div><dt className="font-mono text-[10px] tracking-[0.2em] uppercase ledger-muted">Best months</dt><dd className="mt-1">{c.bestMonths}</dd></div>}
             {c.airport && <div><dt className="font-mono text-[10px] tracking-[0.2em] uppercase ledger-muted">Fly into</dt><dd className="mt-1">{c.airport}</dd></div>}
           </dl>
+        )}
+        {c.pathway && (
+          <div className="mt-7">
+            <p className="font-mono text-[10px] tracking-[0.22em] uppercase ledger-muted">Pair it with</p>
+            <Link href={`/pathways/${c.pathway.key}`} className={`${s.pair} mt-2`} aria-label={`Pair it with the Wild Pathway ${c.pathway.name}`}>
+              <span className={s.pairDot} aria-hidden="true" />
+              <span className="ledger-display text-[1.15rem] leading-none">{c.pathway.name}</span>
+              <span className="font-mono text-[9.5px] tracking-[0.2em] uppercase opacity-70">Wild Pathway</span>
+            </Link>
+          </div>
         )}
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Link href={c.plan} className="ledger-btn ledger-btn--solid">Plan with James</Link>

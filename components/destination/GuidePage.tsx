@@ -14,6 +14,10 @@ import PlanBand from "@/components/destination/PlanBand";
 import FounderProof from "@/components/record/FounderProof";
 import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { GUIDES, RAJA_VS_KOMODO, type Guide } from "@/lib/content/guides";
+import ComingTicker from "@/components/coming/ComingTicker";
+import { countryBoard } from "@/lib/content/board";
+import { comingOn } from "@/lib/content/whats-coming";
+import { today } from "@/lib/dates";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { countryBySlug } from "@/lib/content/countries";
 import { regionBySlug } from "@/lib/content/regions";
@@ -73,6 +77,8 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
       <SiteHeader overlay />
       <main id="main">
         <RecordHero image={slides[0]} slides={slides} eyebrow={g.eyebrow} title={g.h1} tagline={g.tagline} />
+        {/* Country guides (Indonesia) carry the What's Coming board, like library country pages. */}
+        {!g.parent && <ComingTicker entries={countryBoard(comingOn(today()), g.country)} label={`${g.name}: coming and on offer`} compact />}
         <RecordNav items={nav} cta="Plan it with James" ctaHref={`/plan?place=${encodeURIComponent(g.name)}`} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>

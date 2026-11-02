@@ -2,6 +2,7 @@ import Link from "next/link";
 import ComingTicker from "./ComingTicker";
 import ComingStamp from "./ComingStamp";
 import { comingOn, whenLabel } from "@/lib/content/whats-coming";
+import { stayBoard } from "@/lib/content/board";
 import { countdown, sortComing, viewStatus } from "@/lib/content/coming-view";
 import { today } from "@/lib/dates";
 import { DEEP_SEA } from "@/lib/palette";
@@ -17,7 +18,7 @@ export default function ComingBanner({ slug }: { slug: string }) {
   const when = whenLabel(c.date);
   const headline = back ? (when ? `Reopening ${when}` : "Being reimagined") : when ? `Opening ${when}` : "Opening soon";
   const left = countdown(c.date, day);
-  const others = sortComing(all.filter((x) => x.slug !== slug && x.regionSlug && x.regionSlug === c.regionSlug), "soonest");
+  const board = stayBoard(sortComing(all, "soonest"), c, day);
   return (
     <aside aria-label={`${c.name}: ${headline}`} className="text-white" style={{ background: `linear-gradient(100deg, ${DEEP_SEA.navy.fill}, ${DEEP_SEA.teal.fill})` }}>
       <div className="max-w-ledger mx-auto px-5 md:px-10 py-6 md:py-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-10">
@@ -32,7 +33,7 @@ export default function ComingBanner({ slug }: { slug: string }) {
           <Link href={`/whats-coming#${c.slug}`} className="ledger-btn !border-white/50 !text-white/90 hover:!bg-white hover:!text-ink">All that&rsquo;s coming</Link>
         </div>
       </div>
-      {others.length > 0 && <ComingTicker items={others} label={`Also coming in ${c.regionSlug!.charAt(0).toUpperCase()}${c.regionSlug!.slice(1).replace(/-/g, " ")}`} compact />}
+      {board.length > 0 && <ComingTicker entries={board} label={c.regionSlug ? `Also in ${c.regionSlug.charAt(0).toUpperCase()}${c.regionSlug.slice(1).replace(/-/g, " ")}` : "Also coming"} compact />}
     </aside>
   );
 }

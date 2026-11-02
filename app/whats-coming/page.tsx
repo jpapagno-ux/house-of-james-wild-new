@@ -6,10 +6,18 @@ import JsonLd from "@/components/ledger/JsonLd";
 import ComingHero, { type HeroSlide } from "@/components/coming/ComingHero";
 import ComingTicker from "@/components/coming/ComingTicker";
 import ComingExplorer, { type ExplorerItem } from "@/components/coming/ComingExplorer";
+import LookScript from "@/components/coming/LookScript";
+import { mainBoard } from "@/lib/content/board";
+import { comingPathway } from "@/lib/content/coming-pathways";
+import { pathwayChipsFor } from "@/lib/content/pathways";
+import { pathway as pathwayById } from "@/lib/pathways";
 import { comingHero, comingOn, statusLine, type Coming } from "@/lib/content/whats-coming";
 import { countLine, countdown, sortComing, viewStatus, yearOf } from "@/lib/content/coming-view";
 import { today } from "@/lib/dates";
 import { DEEP_SEA } from "@/lib/palette";
+import cs from "@/components/coming/coming.module.css";
+
+const glass = cs.glass;
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { faqPage, graph, ids } from "@/lib/schema";
 import REGIONS from "@/lib/content/regions.json";
@@ -57,6 +65,15 @@ const FIELDS = [
 ];
 const fieldFor = (slug: string) => FIELDS[[...slug].reduce((a, ch) => a + ch.charCodeAt(0), 0) % FIELDS.length];
 
+// The Wild Pathway each entry pairs with: the stay record's approved primary when it has one, else the house
+// suggestion in lib/content/coming-pathways.ts. Only the eight existing pathways.
+function pairFor(slug: string): ExplorerItem["pathway"] {
+  const rec = pathwayChipsFor(slug)?.primary;
+  const sug = comingPathway(slug);
+  const p = rec ?? (sug ? pathwayById(sug.id) : undefined);
+  return p ? { key: p.key, name: p.name, accent: p.accent, text: p.text, tint: p.tint, basis: rec ? "approved" : sug?.basis ?? "suggested" } : null;
+}
+
 export default function WhatsComingPage() {
   const day = today();
   const items = sortComing(comingOn(day), "soonest");
@@ -66,7 +83,7 @@ export default function WhatsComingPage() {
     status: c.status, date: c.date, tagline: c.tagline, note: c.note, bestMonths: c.bestMonths, airport: c.airport, href: c.href,
     when: statusLine(c), line: statusLine(c), countdown: countdown(c.date, day),
     plan: `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`,
-    hero: comingHero(c), field: fieldFor(c.slug),
+    hero: comingHero(c), field: fieldFor(c.slug), pathway: pairFor(c.slug),
   }));
   const slides: HeroSlide[] = items.flatMap((c) => {
     const h = comingHero(c);
@@ -76,12 +93,13 @@ export default function WhatsComingPage() {
 
   return (
     <>
+      <LookScript />
       <SiteHeader overlay />
       <main id="main">
         <ComingHero slides={slides} title="What's Coming" line={items.length ? countLine(items) : "Nothing is pencilled right now"}>
-          <a href="#the-board" className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink self-start md:self-end">See every opening</a>
+          <a href="#the-board" className={`${glass} self-start md:self-end`}>See every opening<span aria-hidden="true">&#8595;</span></a>
         </ComingHero>
-        <div id="the-board"><ComingTicker items={items} label="What's coming" more={false} /></div>
+        <div id="the-board"><ComingTicker entries={mainBoard(items, day)} label="Coming and on offer" more={false} /></div>
 
         {items.length ? <ComingExplorer items={explorer} regions={REGION_LIST} /> : (
           <p className="max-w-[1400px] mx-auto px-5 md:px-10 py-24 ledger-display italic text-[1.8rem]">Nothing is pencilled right now. New openings appear here as the brands announce them.</p>

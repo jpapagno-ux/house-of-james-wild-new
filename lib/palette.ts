@@ -66,6 +66,9 @@ export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */
 export const STAMP_AQUA = { onLight: "#1A8A8A", onDark: "#8FD6CF" };
+// Pearl (What's Coming concept B, 2 Nov 2026): cool silver-white type on the deep-sea gradients, never warm.
+// The brand contrast accent on dark is STAMP_AQUA.onDark. Mirrored as rgb() in components/coming/coming.module.css.
+export const PEARL = { ink: "#F2F5F7", soft: "#C7D3DB" };
 
 // River voyages (James, 2 Nov 2026), protected under the House Standard: their own set through the waters
 // context (.theme-waters-*), still no browns, golds or olives. Their buttons are squared like every other.

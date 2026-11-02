@@ -2,15 +2,37 @@
    scroll reveal. Colours arrive as inline custom properties from lib/palette.ts; no hex here. */
 
 /* ── Ticker ─────────────────────────────────────────────── */
-.board { position: relative; overflow: hidden; }
+/* Concept B (default): night-ocean navy into deep teal, fine aqua hairlines, pearl type, aqua marks.
+   Concept A (html[data-look="a"]): the flat navy board of the first preview. Pearl = PEARL.ink (242 245 247),
+   aqua = STAMP_AQUA.onDark (143 214 207), both from lib/palette.ts. */
+.board { position: relative; overflow: hidden; color: rgb(242 245 247);
+  background: linear-gradient(100deg, var(--jw-sea-navy) 0%, color-mix(in srgb, var(--jw-sea-navy) 60%, var(--jw-sea-ocean)) 38%, var(--jw-sea-teal) 100%);
+  border-block: 1px solid rgb(143 214 207 / 0.32); }
+.board::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgb(255 255 255 / 0.06), transparent 45%); }
 .viewport { overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
 .track { display: flex; width: max-content; animation: board var(--board-dur, 40s) linear infinite; }
 .track:hover, .track:focus-within, .board:focus-within .track { animation-play-state: paused; }
 .group { display: flex; flex: none; }
 @keyframes board { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-.flap { display: inline-block; padding: 3px 8px; border-radius: 2px; background: rgb(255 255 255 / 0.08); box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0.35), inset 0 1px 0 rgb(255 255 255 / 0.06); }
-.dot { width: 7px; height: 7px; border-radius: 999px; background: var(--board-sun); box-shadow: 0 0 0 0 var(--board-sun); animation: pulse 2.4s ease-out infinite; }
+.boardLabel { border-right: 1px solid rgb(143 214 207 / 0.25); color: rgb(242 245 247 / 0.85); }
+.boardMore a { border-left: 1px solid rgb(143 214 207 / 0.25); color: rgb(242 245 247 / 0.85); }
+.boardMore a:hover { color: rgb(242 245 247); background: rgb(255 255 255 / 0.05); }
+.place { color: rgb(143 214 207); }
+.flap { display: inline-block; padding: 3px 9px; border-radius: 2px; color: rgb(242 245 247); background: rgb(255 255 255 / 0.07); border: 1px solid rgb(143 214 207 / 0.28); }
+.flapOffer { background: rgb(143 214 207 / 0.12); border-color: rgb(143 214 207 / 0.55); }
+.tail { color: rgb(242 245 247 / 0.7); }
+.diamond { color: rgb(143 214 207 / 0.45); }
+.sun { color: rgb(143 214 207); }
+.pct { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 3px; font-size: 11.5px; letter-spacing: 0; font-weight: 600; color: var(--jw-sea-navy); background: rgb(143 214 207); }
+.dot { width: 7px; height: 7px; border-radius: 999px; background: rgb(143 214 207); box-shadow: 0 0 0 0 rgb(143 214 207); animation: pulse 2.4s ease-out infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgb(143 214 207 / 0.6); } 70% { box-shadow: 0 0 0 9px rgb(143 214 207 / 0); } 100% { box-shadow: 0 0 0 0 rgb(143 214 207 / 0); } }
+
+:global(html[data-look="a"]) .board { background: var(--jw-sea-navy); border-block: 0; }
+:global(html[data-look="a"]) .board::after { display: none; }
+:global(html[data-look="a"]) .boardLabel, :global(html[data-look="a"]) .boardMore a { border-color: rgb(255 255 255 / 0.15); }
+:global(html[data-look="a"]) .flap { border: 0; background: rgb(255 255 255 / 0.08); box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0.35), inset 0 1px 0 rgb(255 255 255 / 0.06); }
+:global(html[data-look="a"]) .flapOffer { background: rgb(143 214 207 / 0.14); }
+:global(html[data-look="a"]) .diamond { color: rgb(255 255 255 / 0.3); }
 
 @media (prefers-reduced-motion: reduce) {
   .viewport { overflow-x: auto; mask-image: none; scrollbar-width: thin; }
@@ -22,7 +44,20 @@
 /* ── Hero ───────────────────────────────────────────────── */
 .slide { position: absolute; inset: 0; }
 .kb { position: absolute; inset: 0; will-change: transform; }
-.heroShade { background: linear-gradient(180deg, rgb(10 20 40 / 0.55) 0%, rgb(10 20 40 / 0.05) 30%, rgb(10 20 40 / 0.1) 55%, rgb(8 18 36 / 0.82) 100%); }
+.heroShade { background: linear-gradient(180deg, rgb(10 20 40 / 0.6) 0%, rgb(10 20 40 / 0.05) 30%, rgb(10 24 44 / 0.15) 52%, color-mix(in srgb, var(--jw-sea-navy) 92%, transparent) 100%), radial-gradient(90% 60% at 100% 100%, color-mix(in srgb, var(--jw-sea-teal) 55%, transparent), transparent 70%); }
+:global(html[data-look="a"]) .heroShade { background: linear-gradient(180deg, rgb(10 20 40 / 0.55) 0%, rgb(10 20 40 / 0.05) 30%, rgb(10 20 40 / 0.1) 55%, rgb(8 18 36 / 0.82) 100%); }
+/* Concept B: pearl title, an aqua hairline, a glass button over the photograph. */
+.heroTitle { color: rgb(242 245 247); text-shadow: 0 2px 40px rgb(8 18 36 / 0.35); }
+.heroRule { border-color: rgb(143 214 207 / 0.45); }
+.heroKicker { color: rgb(143 214 207); }
+:global(html[data-look="a"]) .heroTitle { color: inherit; text-shadow: none; }
+:global(html[data-look="a"]) .heroRule { border-color: rgb(255 255 255 / 0.25); }
+:global(html[data-look="a"]) .heroKicker { color: rgb(255 255 255 / 0.85); }
+.glass { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; font-family: var(--font-mono, ui-monospace), monospace; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: rgb(242 245 247);
+  background: rgb(255 255 255 / 0.08); border: 1px solid rgb(242 245 247 / 0.35); backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2); transition: background 0.3s, border-color 0.3s; }
+.glass:hover { background: rgb(255 255 255 / 0.16); border-color: rgb(143 214 207 / 0.8); }
+:global(html[data-look="a"]) .glass { backdrop-filter: none; -webkit-backdrop-filter: none; background: transparent; border-color: white; }
+:global(html[data-look="a"]) .glass:hover { background: white; color: var(--jw-sea-navy); }
 .caption { opacity: 0; visibility: hidden; }
 .caption[data-first="true"] { opacity: 1; visibility: visible; }
 @media (prefers-reduced-motion: reduce) {
@@ -52,3 +87,81 @@
 .yearNum { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; line-height: 0.8; letter-spacing: -0.04em; }
 .chips { scrollbar-width: none; }
 .chips::-webkit-scrollbar { display: none; }
+
+/* ── Explorer and timeline ─────────────────────────────────
+   Concept B (default): the timeline sits on a deep night-ocean ground (navy, ocean, teal) with pearl type and
+   aqua hairlines; the controls are dark glass; each card and year band is tinted by the Wild Pathway it pairs
+   with (--pw, from lib/pathways.ts). Concept A keeps the light Tidewater page of the first preview. */
+.explorer { color: rgb(242 245 247); background:
+  radial-gradient(70% 40% at 100% 20%, color-mix(in srgb, var(--jw-sea-teal) 45%, transparent), transparent 70%),
+  radial-gradient(60% 30% at 0% 70%, color-mix(in srgb, var(--jw-sea-ocean) 55%, transparent), transparent 70%),
+  linear-gradient(180deg, var(--jw-sea-navy) 0%, color-mix(in srgb, var(--jw-sea-navy) 85%, black) 55%, color-mix(in srgb, var(--jw-sea-teal) 40%, var(--jw-sea-navy)) 100%); }
+:global(html:not([data-look="a"])) .explorer :global(.ledger-muted) { color: rgb(199 211 219 / 0.85); }
+:global(html:not([data-look="a"])) .explorer :global(.ledger-btn:not(.ledger-btn--solid)) { color: rgb(242 245 247); border-color: rgb(242 245 247 / 0.45); background: transparent; }
+:global(html:not([data-look="a"])) .explorer :global(.ledger-btn:not(.ledger-btn--solid)):hover { border-color: rgb(143 214 207); color: rgb(143 214 207); }
+:global(html:not([data-look="a"])) .explorer :global(.ledger-btn--solid) { box-shadow: 0 0 0 1px rgb(143 214 207 / 0.35); }
+:global(html[data-look="a"]) .explorer { color: inherit; background: transparent; }
+
+.bar { background: color-mix(in srgb, var(--jw-sea-navy) 78%, transparent); border-bottom: 1px solid rgb(143 214 207 / 0.3); backdrop-filter: blur(18px) saturate(1.3); -webkit-backdrop-filter: blur(18px) saturate(1.3); }
+:global(html[data-look="a"]) .bar { background: rgb(252 253 253 / 0.95); border-bottom: 1px solid var(--jw-rule-fine, #D3E6E4); }
+.field { color: rgb(242 245 247); background: rgb(255 255 255 / 0.06); border: 1px solid rgb(242 245 247 / 0.22); }
+.field::placeholder { color: rgb(199 211 219 / 0.6); }
+.field:focus { outline: none; border-color: rgb(143 214 207); }
+.field option { color: #162D54; }
+.icon { color: rgb(199 211 219 / 0.7); }
+:global(html[data-look="a"]) .field { color: inherit; background: white; border-color: var(--jw-rule-fine, #D3E6E4); }
+:global(html[data-look="a"]) .field::placeholder { color: rgb(45 42 38 / 0.45); }
+:global(html[data-look="a"]) .field:focus { border-color: var(--jw-action); }
+:global(html[data-look="a"]) .icon { color: rgb(45 42 38 / 0.5); }
+
+.chip { color: rgb(242 245 247 / 0.9); background: rgb(255 255 255 / 0.04); border: 1px solid rgb(242 245 247 / 0.2); transition: border-color 0.2s, background 0.2s, color 0.2s; }
+.chip:hover { border-color: rgb(143 214 207 / 0.7); }
+.chip[aria-pressed="true"] { color: rgb(242 245 247); background: rgb(143 214 207 / 0.16); border-color: rgb(143 214 207); }
+.count { color: rgb(199 211 219 / 0.6); }
+.chip[aria-pressed="true"] .count { color: rgb(143 214 207); }
+.sep { background: rgb(143 214 207 / 0.25); }
+:global(html[data-look="a"]) .chip { color: #2D2A26; background: white; border-color: var(--jw-rule-fine, #D3E6E4); }
+:global(html[data-look="a"]) .chip:hover { border-color: var(--jw-action); }
+:global(html[data-look="a"]) .chip[aria-pressed="true"] { color: white; background: var(--jw-action); border-color: var(--jw-action); }
+:global(html[data-look="a"]) .count { color: rgb(45 42 38 / 0.5); }
+:global(html[data-look="a"]) .chip[aria-pressed="true"] .count { color: rgb(255 255 255 / 0.8); }
+:global(html[data-look="a"]) .sep { background: rgb(45 42 38 / 0.15); }
+
+/* Year bands: the numeral in pearl over a wash of the band's pathway colour (B); ocean blue on white (A). */
+.yearHead { position: relative; border-bottom: 1px solid rgb(143 214 207 / 0.3); }
+.yearHead::before { content: ""; position: absolute; inset: -120px -10vw -160px -10vw; z-index: -1; pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--pw, var(--jw-sea-ocean)) 75%, transparent), transparent) 0 50% / 70% 100% no-repeat; }
+.yearHead { isolation: isolate; }
+.yearNumC { color: rgb(242 245 247); }
+.yearNumC em, .yearAccent { color: rgb(143 214 207); }
+:global(html[data-look="a"]) .yearHead { border-bottom-color: var(--jw-rule, #B5D3D0); }
+:global(html[data-look="a"]) .yearHead::before { display: none; }
+:global(html[data-look="a"]) .yearNumC { color: var(--jw-action); }
+
+/* Cards: the text column is a glass panel washed in the pathway colour, with an aqua hairline (B). */
+.panel { position: relative; padding: 28px; border: 1px solid rgb(143 214 207 / 0.22);
+  background: linear-gradient(150deg, color-mix(in srgb, var(--pw, var(--jw-sea-ocean)) 55%, transparent) 0%, rgb(255 255 255 / 0.03) 55%, transparent 100%); }
+.panel::before { content: ""; position: absolute; left: -1px; top: 28px; bottom: 28px; width: 2px; background: linear-gradient(180deg, rgb(143 214 207), color-mix(in srgb, var(--pw, var(--jw-sea-ocean)) 60%, rgb(143 214 207))); }
+@media (min-width: 768px) { .panel { padding: 40px; } }
+.ruleY { border-block: 1px solid rgb(143 214 207 / 0.25); }
+.line { color: rgb(143 214 207); }
+.tagline { color: rgb(242 245 247 / 0.82); }
+.idPill { display: inline-block; padding: 1px 7px; border-radius: 2px; background: rgb(242 245 247); }
+.frameB { box-shadow: 0 30px 80px -30px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(143 214 207 / 0.18); }
+:global(html[data-look="a"]) .panel { padding: 0; border: 0; background: none; }
+:global(html[data-look="a"]) .panel::before { display: none; }
+:global(html[data-look="a"]) .ruleY { border-color: var(--jw-rule-fine, #D3E6E4); }
+:global(html[data-look="a"]) .line { color: var(--jw-action); }
+:global(html[data-look="a"]) .tagline { color: rgb(45 42 38 / 0.8); }
+:global(html[data-look="a"]) .idPill { padding: 0; background: none; }
+:global(html[data-look="a"]) .frameB { box-shadow: none; }
+
+/* "Pair it with": the Wild Pathway chip. Name always printed beside the colour. */
+.pair { display: inline-flex; align-items: center; gap: 10px; padding: 9px 16px 9px 12px; border: 1px solid rgb(143 214 207 / 0.55); color: rgb(242 245 247); background: var(--pw); box-shadow: 0 12px 30px -14px var(--pw); transition: border-color 0.2s, filter 0.2s; }
+.pair:hover { border-color: rgb(143 214 207); filter: brightness(1.15); }
+.pairDot { width: 9px; height: 9px; border-radius: 999px; background: rgb(143 214 207); }
+:global(html[data-look="a"]) .pair { color: var(--pw-text); background: var(--pw-tint); border-color: color-mix(in srgb, var(--pw) 35%, white); box-shadow: none; }
+:global(html[data-look="a"]) .pair:hover { border-color: var(--pw); filter: none; }
+:global(html[data-look="a"]) .pairDot { background: var(--pw); }
+
+.emptyTitle { color: inherit; }

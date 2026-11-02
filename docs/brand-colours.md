@@ -24,7 +24,9 @@ written). `app/globals.css` carries the tokens; `npm run check:palette` runs bef
 - Stone Mist is the only band. A banded section that follows another banded section goes Paper, so two bands never
   run together.
 - Warm mists are allowed as quiet panels: Stone Mist and the six volume mists (section 4), these exact tints only.
-  Still no parchment textures, no browns, golds or tans as grounds.
+  Still no parchment textures. **Tans sparingly** (James, 2 Nov 2026: "I like tans but not everywhere, only sparingly;
+  remove the tan rule house wide"): an occasional tan panel, tag, stamp or accent is welcome; Stone Mist stays the
+  band, so tan is never the ground of every section or page. The old "no tans as grounds" ban is lifted.
 
 ## 2. One accent: House Crimson `#8B2525`
 

@@ -65,6 +65,8 @@ export const VERDICTS: Record<string, Verdict> = {
   "stay:wilderness-qorokwe": { approvedOn: "2026-11-02", where: "Okavango Delta, Botswana", when: "May 2026", tags: ["Worth your time?", "After dark"], text: ["Qorokwe is a solar-powered tented camp on a hippo lagoon, in a concession bordering Moremi, and it is exceptional from the infinity pool to the night drives.", "A founder favourite, and I would go back tomorrow. I'm confident sending families and anyone who wants land and water in one stay, with mokoro and boating when the water allows."] },
   // Ulum Moab: James confirmed 2025 (2 Nov 2026); the Ledger date was corrected the same day.
   "stay:ulum-moab": { approvedOn: "2026-11-02", where: "Moab, Utah", when: "2025", tags: ["Worth your time?", "After dark"], text: ["Ulum puts canvas suites in Utah's red rock country, close to Arches and Canyonlands, and it is exceptional for families.", "My favorite family stay, and I would go back. I'm confident sending families who want the national parks by day and the desert stars by night."] },
+  // InterContinental Tahiti: James stayed in May 2025 and calls it a founder favourite (2 Nov 2026). Facts from its page only.
+  "stay:intercontinental-tahiti-resort-spa": { approvedOn: "2026-11-02", where: "Tahiti, French Polynesia", when: "May 2025", tags: ["Worth your time?", "Unexpected beauty"], text: ["Overwater bungalows, the Fare I'a lagoonarium and an infinity pool facing Moorea, on the island where every international flight lands. As a first or last night in French Polynesia, it is exceptional.", "A founder favourite, and I would go back. I'm confident sending clients here before the outer islands or after them; book Le Lotus for dinner over the water."] },
   "stay:bambu-indah": { approvedOn: "2026-11-02", where: "Sayan Ridge, Bali", when: "November 2024", tags: ["Curiosity", "Look closer"], text: ["Bambu Indah is a working family experiment on the Sayan Ridge: antique Javanese houses, rice from the paddy below and spring-fed pools by the Ayung River. Exceptional, and like nowhere else on the island.", "I would go back. I'm confident sending couples, families and wellness travellers who are happy with open-air rooms and a lot of nature."] },
 };
 
@@ -118,4 +120,5 @@ export const SCRIPT: Record<string, string> = {
   "stay:bambu-indah": "Rice from the paddy. JW",
   "stay:wilderness-qorokwe": "Over the lagoon. JW",
   "stay:ulum-moab": "Red rock, all day. JW",
+  "stay:intercontinental-tahiti-resort-spa": "First night, last night. JW",
 };

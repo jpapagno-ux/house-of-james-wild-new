@@ -1,5 +1,6 @@
 import type { TripImg } from "./trips";
 import PLACES from "./places-library.json" with { type: "json" };
+import { TAHITI_GUIDES } from "./guides-tahiti.ts";
 
 // Destination guides: search-led pages for places people look up by name
 // ("Raja Ampat travel guide", "best time to visit Komodo"). Facts are sourced
@@ -1361,6 +1362,8 @@ export const GUIDES: Record<string, Guide> = {
       { title: "Aristi Mountain Resort: how to get here", url: "https://www.aristi.eu/en/how-get-here" },
     ],
   },
+  // French Polynesia (Tahiti) place guides (2 Nov 2026): lib/content/guides-tahiti.ts
+  ...TAHITI_GUIDES,
 };
 
 // Destination-first (Stage 2): the library's own place records (scripts/export-places.py) carry the

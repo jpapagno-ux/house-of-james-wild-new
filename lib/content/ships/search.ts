@@ -48,6 +48,7 @@ export const SEARCH_PAGES: { where: Partial<Record<SearchWhere, PageLink>>; who:
     galapagos: { label: "The Galápagos, ship by ship", href: WATERS_HUBS.galapagos.path },
     indonesia: { label: "Indonesia, ship by ship", href: WATERS_HUBS.indonesia.path },
     polar: { label: "Polar Crossings", href: POLAR_PATH },
+    tahiti: { label: "French Polynesia: Windstar's ships", href: WATERS_HUBS.tahiti.path },
   },
   who: {
     couple: { label: "Honeymoons and couples, compared", href: "/voyages/honeymoon" },

@@ -20,7 +20,7 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
@@ -270,6 +270,16 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
     pathway: { primary: "PATH-02", secondary: ["PATH-07", "PATH-06"] }, charter: { whole: true, from: 13500, basis: "night" }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "celestia-yacht",
     traits: { childNote: "No age limit published; families with young children have sailed her", activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "slow"], dives: true } },
+  // Windstar in French Polynesia (James, 2 Nov 2026), filed from windstarcruises.com. Star Breeze is an all-suite
+  // motor yacht (never "sailing"); Wind Star is the four-masted sailing yacht, in Tahiti from March 2027. Between
+  // Tides first. Star Breeze's old Stay record (windstar-cruise-sv-star-breeze) is retired; its URL redirects here.
+  // James has sailed Windstar in Tahiti but which ship is a follow-up, so neither carries a "sailed" mark.
+  { slug: "star-breeze", name: "Star Breeze", operator: "Windstar", kind: "motor-yacht", types: ["expedition"], waters: ["tahiti"], country: ["French Polynesia"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["snorkelling", "culture", "slow"] } },
+  { slug: "wind-star", name: "Wind Star", operator: "Windstar", kind: "yacht", types: ["sailing"], waters: ["tahiti"], country: ["French Polynesia"],
+    pathway: { primary: "PATH-02", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2027-03", page: true,
+    traits: { activities: ["sailing", "snorkelling", "culture", "slow"] } },
 
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
@@ -278,7 +288,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
-  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea." },
+  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea, and Windstar's four-masted Wind Star in Tahiti from March 2027." },
   expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, Polar Crossings: Antarctica21's polar air-cruises and voyages, and TAO's island expeditions in Palawan." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
@@ -293,6 +303,8 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   patagonia: { name: "Patagonia", path: "/voyages/polar", countries: ["Chile", "Argentina"], question: "Which voyage sails the Chilean fjords?" },
   // No hub page yet: TAO lives on its ship page and the Philippines country page.
   philippines: { name: "The Philippines", path: "/destinations/asia/philippines", countries: ["Philippines"], question: "How do you travel from El Nido to Coron?" },
+  // No /voyages hub of its own yet: the tile and search land on the country page's "Sail it" section.
+  tahiti: { name: "French Polynesia (Tahiti)", path: "/destinations/oceania/tahiti#sail", countries: ["French Polynesia"], question: "Which Windstar ship sails Tahiti?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

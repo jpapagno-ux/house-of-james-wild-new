@@ -51,6 +51,7 @@ import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES, placeGuides } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
+import FrenchPolynesia from "@/components/destination/FrenchPolynesia";
 import { regionBySlug } from "@/lib/content/regions";
 import { pageReady, staysIn } from "@/lib/content/stays";
 import { journeysFor } from "@/lib/content/preview/journeys";
@@ -311,6 +312,9 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
+
+          {/* French Polynesia (Tahiti): lagoon atlas, island-hopping routes, Windstar and Pearl (2 Nov 2026). */}
+          {c.slug === "tahiti" && <FrenchPolynesia />}
 
           {/* Destination-first: the places inside this country (Chile → Atacama, Patagonia, Rapa Nui), as the region page's own door cards. */}
           {placeGuides(c.slug).length > 0 && (

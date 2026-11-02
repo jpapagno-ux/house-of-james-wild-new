@@ -5,7 +5,7 @@ import { founderOceanForCountry, founderOceanForPathway, founderOceanForVoyage, 
 
 test("the stated places carry the line; other countries carry none", () => {
   for (const c of ["costa-rica", "bahamas", "ecuador-galapagos", "peru", "panama", "indonesia", "tahiti"]) assert.ok(founderOceanForCountry(c), c);
-  assert.match(founderOceanForCountry("tahiti")!, /^Tahiti specialist: .*1995/);
+  assert.match(founderOceanForCountry("tahiti")!, /^Gold Certified Tahiti Specialist: .*1995/);
   assert.equal(founderOceanForCountry("kenya"), null);
   assert.equal(founderOceanForCountry(null), null);
   assert.equal(SURFED_AND_DIVED.includes("philippines"), false, "the Philippines is not stated as surfed or dived");

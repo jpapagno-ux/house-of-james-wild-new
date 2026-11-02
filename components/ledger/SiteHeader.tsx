@@ -241,7 +241,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           <Link
             href={PLAN_CTA.href}
             className={`inline-flex items-center whitespace-nowrap h-10 px-3.5 sm:px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
-              light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-crimson !text-crimson hover:bg-crimson hover:!text-paper"
+              light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-action !text-action hover:bg-action hover:!text-paper"
             }`}
           >
             <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>

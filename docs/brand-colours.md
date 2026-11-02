@@ -30,8 +30,9 @@ Journeys split by kind, overland routes in Olive and voyages in Navy. Use
 
 ## 3. Crimson is the house
 
-House Crimson/Oxblood (`#8B2525`) is for the house itself: headings' accents, the JW seal and
-logo, Ledger IDs, and "Plan with James". It is never used as a volume colour.
+House Crimson/Oxblood (`#8B2525`) is for the house itself: the JW seal, the logo and its rule line,
+headings' accents and Ledger IDs. It is never used as a volume colour. From 2 Nov 2026 it is no
+longer a button colour: "Plan with James" and every main action wear the Deep Sea action (section 5).
 
 ## 4. Pathways are theme chips, never a volume colour
 
@@ -39,10 +40,56 @@ The eight Wild Pathways (`lib/pathways.ts`) cut across volumes. They appear as s
 link to the pathway (e.g. "Where the Wild Lives" on Africa) and never replace a volume's ink on a
 section, card, pin or stamp. Region → pathway chips live in `lib/content/region-pathways.ts`.
 
+## 5. The Deep Sea palette: buttons, pathway chips and offer stamps
+
+James, 2 Nov 2026: "Deeper blues and deeper colours. Stick to just blues, aquas, and even some aqua
+turquoise greens, not so much browns and olives. Match the stamps to these as well."
+`lib/palette.ts` is the source; `app/globals.css` carries the same values as `--jw-sea-*`, and
+`npm run check:palette` fails the build on drift, on a fill below AA, or on a brown, gold, tan or
+olive in a chip, button or offer stamp.
+
+| Token | Fill | White on fill | Tint (outlined chips) | Pathway |
+|---|---|---|---|---|
+| Deep Navy `--jw-sea-navy` | `#162D54` | 13.66:1 | `#E9ECF2` | PATH-07 A Place of Our Own |
+| Ocean Blue `--jw-sea-ocean` | `#1A4A80` | 8.99:1 | `#E8EEF6` | PATH-04 Where the Wild Lives |
+| Deep Cerulean `--jw-sea-cerulean` | `#1C6BAE` | 5.58:1 | `#E8F1F9` | PATH-03 Above It All |
+| Ink Slate `--jw-sea-slate` | `#3D4C66` | 8.66:1 | `#ECEFF3` | PATH-06 Off the Map |
+| Deep Teal `--jw-sea-teal` | `#0C5D61` | 7.63:1 | `#E6F1F1` | PATH-02 Between Tides |
+| Deep Aqua `--jw-sea-aqua` | `#08697F` | 6.29:1 | `#E5F2F5` | PATH-08 Rooted in Place |
+| Turquoise Green `--jw-sea-turquoise` | `#11705A` | 6.02:1 | `#E8F3EF` | PATH-01 Into the Green |
+| Sea Glass `--jw-sea-glass` | `#4A736D` | 5.30:1 | `#EDF2F1` | PATH-05 The Art of Stillness |
+
+- **Buttons and calls to action** read `--jw-action` (Ocean Blue) and `--jw-action-deep` (Deep Teal,
+  hover); Tailwind `bg-action` / `text-action`; `.ledger-btn--house` for "Plan with James". They never
+  read the page accent, so a Stays, Safaris or Overland page no longer turns its buttons green, saddle
+  or olive. One main action colour per page.
+- **Pathway chips**: the primary chip is the solid fill with white text; secondary chips are the tint
+  with the fill as text and a 30% fill border. The pathway name is always printed.
+- **Stamps**: the On the Horizon sun is Stamp Aqua (`#1A8A8A` on light, `#8FD6CF` on dark) with the
+  Voyages navy ink; the Time Rewarded offer stamp is inked in Deep Teal.
+- **Unchanged**: the seal and logo, the volume inks and volume stamps (section 1), the founder marks,
+  The Exceptional Few's per-property palettes (their buttons follow their own accent) and Europe's
+  aubergine.
+
+### River waters (James, 2 Nov 2026)
+
+River voyages carry their own set, still without browns, golds or olives, through `.theme-waters-*`
+on the Amazon and Nile hubs, their ship and voyage pages, and the By River hub (layouts under
+`app/voyages/`). Buttons, accents, selected chips and the card tint follow; pathway chips keep
+their pathway colours.
+
+| Waters | Button | Hover | Accent (words, selected chips) | Card |
+|---|---|---|---|---|
+| Amazon (rainforest) | Emerald `#0A6B4E` 6.51:1 | Jungle `#1D5A3B` 8.15:1 | `#1A4F36` 9.48:1 | `#EEF5F1` |
+| Nile (lapis) | Lapis `#23428F` 9.34:1 | Nile Turquoise `#0A6570` 6.76:1 | `#1B3471` 11.82:1 | `#EEF1F8` |
+| By River | River Teal `#0E6467` 6.91:1 | Lapis `#23428F` 9.34:1 | `#0E4F52` 9.30:1 | `#EDF4F4` |
+
 ## Retired
 
 The header tones introduced on 30 Oct 2026 (#8B2525 stays, #A5692A, #405A45, #1E5F73, #94512F,
-#5B3A5E) are retired as volume colours. Do not reintroduce them for volumes.
+#5B3A5E) are retired as volume colours. Do not reintroduce them for volumes. The earth-tone pathway
+accents (#38634B, #426E79, #73786C, #936F49, #737769, #766B63, #94512F, #8D6958), the brass Horizon sun
+(#B08657) and the rust Time Rewarded stamp are retired from 2 Nov 2026.
 
 # Media: one Cloudinary library for every site
 

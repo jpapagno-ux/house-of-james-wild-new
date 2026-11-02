@@ -22,11 +22,12 @@ const LIGHT: Record<string, string> = Object.fromEntries(VOLUME_ORDER.map((k) =>
 
 // Footer tones (James, 30 Oct 2026): the crimson block read too dark, so the
 // footer takes a light, warm ground that sits with all six volume colours.
-// Linen is the house default; the others stay for comparison.
+// Linen is the house default; the others stay for comparison. Buttons on the light tones wear the
+// Deep Sea action (James, 2 Nov 2026); the crimson seal and accent stay the house's.
 export type FooterTone = "linen" | "parchment" | "stone" | "crimson";
 const TONES: Record<FooterTone, { bg: string; ink: string; muted: string; accent: string; rule: string; btn: string; tabBg: string; tabHover: string; seal: "ink" | "light"; field: string; label: string }> = {
-  linen: { bg: "linear-gradient(180deg, #F3EEE6 0%, #EAE3D7 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.16)", btn: "#8B2525", tabBg: "rgba(255,255,255,0.55)", tabHover: "rgba(255,255,255,0.9)", seal: "ink", field: "rgba(45,42,38,0.35)", label: "Linen" },
-  parchment: { bg: "linear-gradient(180deg, #F8F4EC 0%, #EFE8DB 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.14)", btn: "#8B2525", tabBg: "rgba(255,255,255,0.6)", tabHover: "rgba(255,255,255,0.95)", seal: "ink", field: "rgba(45,42,38,0.3)", label: "Parchment" },
+  linen: { bg: "linear-gradient(180deg, #F3EEE6 0%, #EAE3D7 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.16)", btn: "var(--jw-action)", tabBg: "rgba(255,255,255,0.55)", tabHover: "rgba(255,255,255,0.9)", seal: "ink", field: "rgba(45,42,38,0.35)", label: "Linen" },
+  parchment: { bg: "linear-gradient(180deg, #F8F4EC 0%, #EFE8DB 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.14)", btn: "var(--jw-action)", tabBg: "rgba(255,255,255,0.6)", tabHover: "rgba(255,255,255,0.95)", seal: "ink", field: "rgba(45,42,38,0.3)", label: "Parchment" },
   stone: { bg: "linear-gradient(180deg, #E9E5DE 0%, #DDD7CC 100%)", ink: "#2F4034", muted: "rgba(47,64,52,0.72)", accent: "#8B2525", rule: "rgba(47,64,52,0.18)", btn: "#2F4034", tabBg: "rgba(255,255,255,0.5)", tabHover: "rgba(255,255,255,0.85)", seal: "ink", field: "rgba(47,64,52,0.35)", label: "Stone" },
   crimson: { bg: "linear-gradient(180deg, #8B2525 0%, #6E1C1C 55%, #4F1414 100%)", ink: "#F4F1ED", muted: "rgba(244,241,237,0.75)", accent: "#E8A598", rule: "rgba(244,241,237,0.18)", btn: "#F4F1ED", tabBg: "rgba(244,241,237,0.05)", tabHover: "rgba(244,241,237,0.1)", seal: "light", field: "rgba(244,241,237,0.4)", label: "Crimson" },
 };

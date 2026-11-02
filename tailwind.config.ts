@@ -12,6 +12,8 @@ const config: Config = {
         // The accent is a CSS variable so a section can re-tint it: crimson by default,
         // sea blues inside .theme-sea (voyages and the Aliikai listings).
         crimson: { DEFAULT: "rgb(var(--jw-accent) / <alpha-value>)", deep: "rgb(var(--jw-accent-deep) / <alpha-value>)", light: "rgb(var(--jw-accent-light) / <alpha-value>)" },
+        // The main action (James, 2 Nov 2026): buttons and calls to action; a variable so the river waters can re-tint it. lib/palette.ts.
+        action: { DEFAULT: "var(--jw-action)", deep: "var(--jw-action-deep)" },
         sea: { DEFAULT: "#1E5F73", deep: "#123B55", teal: "#146663", lagoon: "#2F8A86", shallows: "#46B3AC", mist: "#E3EBEC", light: "#9CCFD8" },
         coast: { DEFAULT: "#22656E", deep: "#1D4F56", mist: "#E4EEEC", light: "#A9D3D6" },
         rust: { DEFAULT: "#94512F", wash: "#F7EFE6" },

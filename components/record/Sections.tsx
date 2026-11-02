@@ -99,7 +99,8 @@ export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stay
 }
 
 /* In-page navigation ------------------------------------------------------ */
-// House Crimson, for "Plan with James" only (docs/brand-colours.md, 3).
+// House Crimson: the seal, the logo and its rule line only (docs/brand-colours.md, 3). "Plan with James"
+// and every main action wear the Deep Sea action instead (.ledger-btn--house, James 2 Nov 2026).
 export const HOUSE_CRIMSON = "#8B2525";
 export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = false }: { items: [string, string][]; cta?: string; ctaHref?: string; house?: boolean }) {
   return (
@@ -110,7 +111,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
             <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
-        <Link href={ctaHref} className="hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0" style={house ? { background: HOUSE_CRIMSON, borderColor: HOUSE_CRIMSON, color: "#F4F1ED" } : undefined}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );

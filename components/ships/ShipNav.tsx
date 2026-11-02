@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { HOUSE_CRIMSON } from "@/components/record/Sections";
 
 // The sticky "On this page" bar for ship pages (voyages audit, 1 Nov 2026): every link a
 // 44px tap target, and a scroll-spy that lights the section in view and scrolls its tab
@@ -56,7 +55,7 @@ export default function ShipNav({ items, cta, ctaHref, house = false }: { items:
             </a>
           ))}
         </div>
-        <Link href={ctaHref} className="hidden sm:inline-flex items-center min-h-[44px] ledger-btn !py-2 !px-4 shrink-0" style={house ? { background: HOUSE_CRIMSON, borderColor: HOUSE_CRIMSON, color: "#F4F1ED" } : undefined}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden sm:inline-flex items-center min-h-[44px] ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );

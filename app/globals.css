@@ -5,6 +5,10 @@
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
   :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #F6F4F0; }
+  /* The Deep Sea palette (James, 2 Nov 2026; lib/palette.ts is the source, checked by scripts/check-palette.mjs).
+     Buttons and calls to action read --jw-action, never the page accent, so a volume page never turns a button
+     brown or olive and House Crimson stays with the seal. Ocean blue, deep teal on hover. */
+  :root { --jw-sea-navy: #162D54; --jw-sea-ocean: #1A4A80; --jw-sea-cerulean: #1C6BAE; --jw-sea-slate: #3D4C66; --jw-sea-teal: #0C5D61; --jw-sea-aqua: #08697F; --jw-sea-turquoise: #11705A; --jw-sea-glass: #4A736D; --jw-action: #1A4A80; --jw-action-deep: #0C5D61; }
   /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
   .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
   /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
@@ -52,16 +56,18 @@
   }
   .ledger-btn {
     display: inline-flex; align-items: center; gap: .5rem;
-    border: 1px solid var(--jw-accent-hex); color: var(--jw-accent-hex);
+    border: 1px solid var(--jw-action); color: var(--jw-action);
     font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 500; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
     padding: 9px 18px; background: transparent; cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
   }
-  .ledger-btn:hover { background: var(--jw-accent-hex); color: #F4F1ED; }
-  .ledger-btn--solid { background: var(--jw-accent-hex); color: #F4F1ED; padding: 12px 22px; }
-  .ledger-btn--solid:hover { background: var(--jw-accent-deep-hex); border-color: var(--jw-accent-deep-hex); }
+  .ledger-btn:hover { background: var(--jw-action); color: #F4F1ED; }
+  .ledger-btn--solid { background: var(--jw-action); color: #F4F1ED; padding: 12px 22px; }
+  .ledger-btn--solid:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); }
+  .ledger-btn--house { background: var(--jw-action); border-color: var(--jw-action); color: #F4F1ED; }
+  .ledger-btn--house:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); color: #F4F1ED; }
   .ledger-btn-ghost { color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
-  .ledger-btn-ghost:hover { color: var(--jw-accent-hex); border-color: var(--jw-accent-hex); }
+  .ledger-btn-ghost:hover { color: var(--jw-action); border-color: var(--jw-action); }
 }
 
 /* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */
@@ -219,19 +225,20 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 }
 
 /* ---------- Wild Pathways: semantic tokens (lib/pathways.ts is the source; Phase 1a, 30 Oct 2026) ----------
+   Deep Sea family from 2 Nov 2026 (lib/palette.ts): blues, aquas and turquoise greens, no browns, golds or olives.
    Additive only. House tokens, the six volume themes and --jw-accent are untouched: a pathway
    never re-tints a page, it colours its own card, chip, marker or rule. Each pathway has an
    accent (fills, markers), an AA text variant (words on white or card) and a tint (quiet wash).
    The name is always printed beside the colour. */
 :root {
-  --jw-path-01: #38634B; --jw-path-01-text: #38634B; --jw-path-01-tint: #EBF0EC;
-  --jw-path-02: #426E79; --jw-path-02-text: #426E79; --jw-path-02-tint: #ECF2F3;
-  --jw-path-03: #73786C; --jw-path-03-text: #696D62; --jw-path-03-tint: #F0F1EF;
-  --jw-path-04: #936F49; --jw-path-04-text: #866642; --jw-path-04-tint: #F5F0EA;
-  --jw-path-05: #737769; --jw-path-05-text: #6C7062; --jw-path-05-tint: #F2F3F0;
-  --jw-path-06: #766B63; --jw-path-06-text: #766B63; --jw-path-06-tint: #F1EFEE;
-  --jw-path-07: #94512F; --jw-path-07-text: #94512F; --jw-path-07-tint: #F7EFE6;
-  --jw-path-08: #8D6958; --jw-path-08-text: #876554; --jw-path-08-tint: #F4F0EE;
+  --jw-path-01: #11705A; --jw-path-01-text: #11705A; --jw-path-01-tint: #E8F3EF;
+  --jw-path-02: #0C5D61; --jw-path-02-text: #0C5D61; --jw-path-02-tint: #E6F1F1;
+  --jw-path-03: #1C6BAE; --jw-path-03-text: #1C6BAE; --jw-path-03-tint: #E8F1F9;
+  --jw-path-04: #1A4A80; --jw-path-04-text: #1A4A80; --jw-path-04-tint: #E8EEF6;
+  --jw-path-05: #4A736D; --jw-path-05-text: #4A736D; --jw-path-05-tint: #EDF2F1;
+  --jw-path-06: #3D4C66; --jw-path-06-text: #3D4C66; --jw-path-06-tint: #ECEFF3;
+  --jw-path-07: #162D54; --jw-path-07-text: #162D54; --jw-path-07-tint: #E9ECF2;
+  --jw-path-08: #08697F; --jw-path-08-text: #08697F; --jw-path-08-tint: #E5F2F5;
   /* Where Your Stay Gives Back (the Wild & Co. Impact Note): soft sage panel, forest copy, selective rust */
   --jw-impact-panel: #E6E9DD; --jw-impact-copy: #405A45; --jw-impact-highlight: #94512F;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
@@ -316,6 +323,8 @@ a:hover .jw-needle { animation-duration: 1.6s; }
    questions read as a Ledger page again; the night close drops back to the surface. */
 .theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #8A4C2C; --jw-card: #FFFFFF; --jw-accent: 138 76 44; --jw-accent-deep: 122 69 44; --jw-accent-hex: #8A4C2C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
 .theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
+/* The Exceptional Few keeps its per-property palette on buttons too: the action follows that page's own accent. */
+.theme-ef-dark, .theme-ef-dark .ef-day { --jw-action: var(--jw-accent-hex); --jw-action-deep: var(--jw-accent-deep-hex); }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }
@@ -340,3 +349,15 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .ef-arrive > * { animation: ef-arrive 1.1s ease-out 0.5s both; }
 .ef-arrive > *:nth-child(2) { animation-delay: 0.75s; } .ef-arrive > *:nth-child(3) { animation-delay: 1s; } .ef-arrive > *:nth-child(4) { animation-delay: 1.25s; }
 @media (prefers-reduced-motion: reduce) { .ef-arrive > * { animation: none !important; } }
+
+/* ---------- River voyages: the waters context (James, 2 Nov 2026; lib/palette.ts WATERS_PALETTE) ----------
+   The Amazon in rainforest greens, the Nile in lapis with deep Nile turquoise, the By River hub between them.
+   Still no browns, golds or olives. Set on a wrapper round the hub or ship page (display: contents); the
+   descendant selector outranks the .theme-sea inside, and the :root rule (later than .theme-sea-page) re-tints
+   the header and progress bar. Buttons, accents, selected chips and the quiet card tint follow; pathway chips
+   keep their own pathway colours. */
+.theme-waters-amazon, .theme-waters-amazon .theme-sea, :root:has(.theme-waters-amazon) { --jw-accent: 26 79 54; --jw-accent-deep: 18 58 39; --jw-accent-light: 196 220 207; --jw-accent-hex: #1A4F36; --jw-accent-deep-hex: #123A27; --jw-card: #EEF5F1; --jw-action: #0A6B4E; --jw-action-deep: #1D5A3B; }
+.theme-waters-nile, .theme-waters-nile .theme-sea, :root:has(.theme-waters-nile) { --jw-accent: 27 52 113; --jw-accent-deep: 18 37 80; --jw-accent-light: 197 206 230; --jw-accent-hex: #1B3471; --jw-accent-deep-hex: #122550; --jw-card: #EEF1F8; --jw-action: #23428F; --jw-action-deep: #0A6570; }
+.theme-waters-river, .theme-waters-river .theme-sea, :root:has(.theme-waters-river) { --jw-accent: 14 79 82; --jw-accent-deep: 10 58 60; --jw-accent-light: 194 220 221; --jw-accent-hex: #0E4F52; --jw-accent-deep-hex: #0A3A3C; --jw-card: #EDF4F4; --jw-action: #0E6467; --jw-action-deep: #23428F; }
+/* The logo is not re-coloured by the waters: the header keeps the Voyages navy it wears on every voyage page. */
+:is(.theme-waters-amazon, .theme-waters-nile, .theme-waters-river) header { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; }

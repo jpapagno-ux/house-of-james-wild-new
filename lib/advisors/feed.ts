@@ -16,19 +16,26 @@ export type AdvisorFeed = {
   specialties: string[]; volumes: { key: Volume; label: string }[]; countries: string[]; languages: string[]; base: string | null;
   counts: { carried: number; guests: number; folios: number; slept: number };
   entries: AdvisorFeedEntry[];
+  // Stage 4b: the Library's Advisor DNA (Contract C5), the same record matchAdvisor reads; null for stand-ins.
+  dna: { pathways: string[]; partyTypes: string[]; availability: string; confirmed: string | null; marks: { ledgerId: string; mark: string; when: string | null; note: string | null }[] } | null;
 };
 
 const BASE = "https://house-of-james-wild-new.vercel.app";
 
 export function advisorFeed(a: Advisor): AdvisorFeed | null {
-  if (!a.desk) return null;
+  // A Desk (entries) or Library DNA makes an advisor nameable; a card alone does not.
+  if (!a.desk && !a.dna) return null;
   const d = a.desk;
+  const dna = a.dna ?? null;
   return {
-    slug: a.slug, name: a.name, firstName: a.firstName, role: a.role, adv: a.ledgerId ?? d.adv, standIn: !!a.sample, isDefault: a.slug === DEFAULT_ADVISOR,
-    profile: `${BASE}${a.profileHref ?? "/about/team#advisors"}`, plan: `${BASE}/plan?advisor=${a.slug}`, portrait: a.portrait?.url ?? null, line: d.line,
-    specialties: d.specialties, volumes: d.volumes.map((v) => ({ key: v, label: VOLUME_LABEL[v] })), countries: d.countries, languages: d.languages, base: d.base,
+    slug: a.slug, name: a.name, firstName: a.firstName, role: a.role, adv: a.ledgerId ?? d?.adv ?? "", standIn: !!a.sample, isDefault: a.slug === DEFAULT_ADVISOR,
+    profile: `${BASE}${a.profileHref ?? "/about/team#advisors"}`, plan: `${BASE}/plan?advisor=${a.slug}`, portrait: a.portrait?.url ?? null, line: a.line ?? d?.line ?? "",
+    specialties: dna?.specialties.length ? dna.specialties : d?.specialties ?? a.specialties,
+    volumes: (dna?.volumes ?? d?.volumes ?? []).map((v) => ({ key: v, label: VOLUME_LABEL[v] })),
+    countries: dna?.countries ?? d?.countries ?? [], languages: dna?.languages.length ? dna.languages : d?.languages ?? [], base: d?.base ?? null,
     counts: advisorCounts(a),
-    entries: d.entries.map((e) => ({
+    dna: dna ? { pathways: dna.pathways, partyTypes: dna.partyTypes, availability: dna.availability, confirmed: dna.confirmed, marks: dna.marks } : null,
+    entries: (d?.entries ?? []).map((e) => ({
       ledgerId: e.ledgerId, name: e.name, place: e.place, countrySlug: e.countrySlug, regionSlug: e.regionSlug, volume: e.volume,
       founderMark: e.james.mark, founderYear: e.james.year ?? null, founderFavourite: !!e.james.favourite,
       advisorMark: e.theirs?.mark ?? null, advisorWhen: e.theirs?.when ?? null, note: e.note ?? null,

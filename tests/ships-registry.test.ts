@@ -1,0 +1,74 @@
+// The ships registry (voyages plan, Part 2): every ship has a type, waters, and (once on a page)
+// a primary pathway and a route file for each day-by-day itinerary. Part 3 rules are checked too.
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { SHIP_REGISTRY, shipsInWaters, shipsOfType, shipsOnPathway } from "../lib/content/ships/registry.ts";
+import { VESSELS } from "../lib/content/vessels.ts";
+
+const root = new URL("../", import.meta.url);
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const records = new Map<string, { slug: string; itineraries: { direction: string; nights: number | null; days: unknown[] }[] }>();
+for (const dir of ["nile", "amazon", "galapagos"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+  const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8"));
+  records.set(r.slug, r);
+}
+
+test("every ship has a type, waters and country; slugs are unique", () => {
+  assert.equal(new Set(SHIP_REGISTRY.map((s) => s.slug)).size, SHIP_REGISTRY.length);
+  for (const s of SHIP_REGISTRY) {
+    assert.ok(s.types.length > 0, `${s.slug} type`);
+    assert.ok(s.waters.length > 0, `${s.slug} waters`);
+    assert.ok(s.country.length > 0, `${s.slug} country`);
+  }
+});
+
+test("every ship with a page has a primary pathway, a rate basis, and a route file per itinerary", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.page)) {
+    assert.ok(s.pathway?.primary, `${s.slug} primary pathway`);
+    assert.ok(s.rateBasis, `${s.slug} rate basis`);
+    const r = records.get(s.slug);
+    if (!r) continue; // Aliikai: her chart is the 10 Day Raja Ampat North route file
+    for (const it of r.itineraries.filter((i) => i.days.length)) {
+      const id = `${s.slug}-${slug(it.direction)}-${it.nights}n`;
+      assert.ok(existsSync(new URL(`public/maps/routes/${id}.json`, root)), `${id}.json`);
+    }
+  }
+  assert.ok(existsSync(new URL("public/maps/routes/10-day-raja-ampat-north.json", root)));
+});
+
+test("Part 3 pathway rules: one primary, at most two secondaries; no Between Tides on rivers; Amazon is Into the Green", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.pathway)) {
+    assert.ok(s.pathway!.secondary.length <= 2, `${s.slug} at most two secondaries`);
+    if (s.types.includes("river")) assert.ok(![s.pathway!.primary, ...s.pathway!.secondary].includes("PATH-02"), `${s.slug}: no Between Tides on a river`);
+    if (s.waters.includes("amazon")) assert.equal(s.pathway!.primary, "PATH-01");
+  }
+  assert.deepEqual(SHIP_REGISTRY.find((s) => s.slug === "aliikai")!.pathway, { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] });
+  assert.deepEqual(SHIP_REGISTRY.find((s) => s.slug === "zein-nile-chateau")!.pathway, { primary: "PATH-08", secondary: ["PATH-07"] });
+});
+
+test("no polar ship in Voyages (Antarctica sails with Polar Crossings)", () => {
+  for (const s of SHIP_REGISTRY) assert.ok(!/roald|amundsen|magellan/i.test(s.name), s.name);
+  assert.ok(!SHIP_REGISTRY.some((s) => s.country.includes("Antarctica")));
+});
+
+test("the filters the hubs run", () => {
+  assert.ok(shipsInWaters("nile").length >= 5);
+  assert.ok(shipsOfType("charter").some((s) => s.slug === "aliikai"));
+  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile")));
+});
+
+test("vessels.ts is built from the registry", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.staySlug)) assert.ok(VESSELS.some((v) => v.slug === s.staySlug), s.slug);
+  assert.equal(VESSELS.find((v) => v.slug === "beyond-amazon-explorer")?.ship, "beyond-amazon-explorer");
+});
+
+test("a vessel with a ship page 301s from her stay URL (as Aliikai's does)", () => {
+  const redirects = JSON.parse(readFileSync(new URL("redirects.json", root), "utf8")) as { source: string; destination: string; statusCode?: number }[];
+  for (const s of SHIP_REGISTRY.filter((x) => x.page && x.staySlug)) {
+    const r = redirects.find((x) => x.source === `/stays/${s.staySlug}`);
+    assert.ok(r, `${s.staySlug} redirects`);
+    assert.equal(r!.destination, `/voyages/ships/${s.slug}`);
+    assert.equal(r!.statusCode, 301);
+  }
+});

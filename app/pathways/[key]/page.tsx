@@ -15,6 +15,10 @@ import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 import { tripsOnPathway } from "@/lib/content/pathways/trips";
 import PathwayCollection from "@/components/pathways/PathwayCollection";
+import ShipCard from "@/components/ships/ShipCard";
+import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
+import { VOYAGE_LINES, voyageQuestion, voyagesOnPathway } from "@/lib/content/ships/pathways";
+import { vessel } from "@/lib/content/vessels";
 
 // /pathways/[key]: one Wild Pathway's collection page (Phase 2C). Lists the
 // Ledger records James has APPROVED on it, each under its own canonical card
@@ -37,7 +41,11 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
   const items = onPathway(p.id); // approved only
   // 2B: approved voyages and routes, primary first; then vessels filed in the Stay library, which list
   // here as Voyages and never among the stays (lib/content/vessels.ts, 1 Nov 2026).
-  const trips = [...tripsOnPathway(p.id), ...vesselsOnPathway(p.id)];
+  // "On the water" (Voyages, James 1 Nov 2026): ships from the registry, headed by the pathway's voyage
+  // line, sorted by next sailing. A vessel with a ship page lists there, not again among the journeys.
+  const water = VOYAGE_PATHWAYS_ON && VOYAGE_LINES[p.id] ? voyagesOnPathway(p.id) : [];
+  const trips = [...tripsOnPathway(p.id), ...vesselsOnPathway(p.id).filter((v) => !(VOYAGE_PATHWAYS_ON && vessel(v.stay.slug)?.ship))];
+  const faqs = water.length ? [...PATHWAY_FAQS[p.id], { q: `Which ${VOYAGE_LINES[p.id]!.toLowerCase()} does James Wild & Co plan?`, a: `${water.map((c) => c.name).join(", ")}: each ship page lists her cabins, day by day and published fares.` }] : PATHWAY_FAQS[p.id];
   const path = `/pathways/${p.key}`;
   const trail = [{ name: "Home", path: "/" }, { name: "Pathways", path: "/pathways" }, { name: p.name, path }];
   return (
@@ -58,17 +66,23 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
               </ul>
             </HubSection>
           )}
+          {water.length > 0 && (
+            <HubSection eyebrow={`On the water · ${water.length} ${water.length === 1 ? "ship" : "ships"}`} title={voyageQuestion(p.id)!} id="water-h">
+              <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{water.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>
+              <p className="mt-3 text-[12px] ledger-muted">Sorted by next published sailing. &ldquo;From&rdquo; is the lowest published fare per person, two sharing.</p>
+            </HubSection>
+          )}
           <HubSection eyebrow="On this pathway" title={items.length ? `${items.length} ${items.length === 1 ? "Entry" : "Entries"} in the Ledger, by Region` : "Filling From the Ledger"} id="entries-h">
             {items.length ? <PathwayCollection items={items} pathway={p} hrefFor={(x) => pathwayHref(x.key)} /> : <p className="text-[15px] ledger-muted">No approved entry yet on {p.name}. The volumes it draws on: {p.volumes.map((v) => VOLUME_STYLES[v].label).join(", ")}.</p>}
           </HubSection>
           {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: p.key, pathway: p.id, ledgerId: p.id, sourcePage: path, volume: p.volumes[0] ?? "stays" }} heading={`Ask Iggi about ${p.name}`} lead={`Iggi keeps to stays the house has approved on this Pathway, and says which Ledger entry each answer comes from.`} />}
-          <FaqBlock faqs={PATHWAY_FAQS[p.id]} title={`Questions About ${p.name}`} />
+          <FaqBlock faqs={faqs} title={`Questions About ${p.name}`} />
           <HubSection eyebrow="Index" title="The Other Pathways" id="others-h"><PathwayIndex hrefFor={(x) => pathwayHref(x.key)} pictured={PATHWAY_LIST.map((x) => x.id)} /></HubSection>
         </HubShell>
       </div>
       <JsonLd data={graph(
         { "@type": "CollectionPage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: p.name, description: p.line, isPartOf: { "@id": ids.website }, publisher: { "@id": ids.house },
-          mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length + trips.length, itemListElement: [...items.map((r) => ({ name: r.stay.name, href: r.href })), ...trips.map((t) => ({ name: t.name, href: t.href }))].map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x.name, url: absoluteUrl(x.href) })) } },
+          mainEntity: { "@type": "ItemList", name: `${p.name}: ${p.setting}`, numberOfItems: items.length + trips.length + water.length, itemListElement: [...items.map((r) => ({ name: r.stay.name, href: r.href })), ...trips.map((t) => ({ name: t.name, href: t.href })), ...water.map((c) => ({ name: c.name, href: c.href }))].map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x.name, url: absoluteUrl(x.href) })) } },
       )} />
     </>
   );

@@ -1,0 +1,109 @@
+{
+ "id": "anakonda-amazon-cruise-coca-round-trip-4n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "4-night Wednesday to Sunday aboard Anakonda",
+ "subtitle": "4 nights · Coca round trip · Anakonda",
+ "days": {
+  "1": "Wednesday",
+  "2": "Thursday",
+  "3": "Friday",
+  "4": "Saturday",
+  "5": "Sunday"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Quito to Coca, Napo River",
+   "lat": -0.4625,
+   "lng": -76.9872,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Lower Napo, Yasuní",
+   "lat": -0.53,
+   "lng": -76.38,
+   "mode": "sea",
+   "path": [
+    [
+     -76.9872,
+     -0.4625
+    ],
+    [
+     -76.38,
+     -0.53
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Napo River",
+   "lat": -0.53,
+   "lng": -76.38,
+   "mode": "sea",
+   "path": [
+    [
+     -76.38,
+     -0.53
+    ],
+    [
+     -76.38,
+     -0.53
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Canopy tower",
+   "lat": -0.53,
+   "lng": -76.38,
+   "mode": "sea",
+   "path": [
+    [
+     -76.38,
+     -0.53
+    ],
+    [
+     -76.38,
+     -0.53
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Puerto Providencia to Coca",
+   "lat": -0.4625,
+   "lng": -76.9872,
+   "mode": "sea",
+   "path": [
+    [
+     -76.38,
+     -0.53
+    ],
+    [
+     -76.9872,
+     -0.4625
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "anakonda-amazon-cruise-coca-round-trip-3n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "3-night Sunday to Wednesday aboard Anakonda",
+ "subtitle": "3 nights · Coca round trip · Anakonda",
+ "days": {
+  "1": "Sunday",
+  "2": "Monday",
+  "3": "Tuesday",
+  "4": "Wednesday"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Quito to Coca, Napo River",
+   "lat": -0.4625,
+   "lng": -76.9872,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Pañacocha",
+   "lat": -0.425,
+   "lng": -76.07,
+   "mode": "sea",
+   "path": [
+    [
+     -76.9872,
+     -0.4625
+    ],
+    [
+     -76.07,
+     -0.425
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Parrot clay licks",
+   "lat": -0.53,
+   "lng": -76.38,
+   "mode": "sea",
+   "path": [
+    [
+     -76.07,
+     -0.425
+    ],
+    [
+     -76.38,
+     -0.53
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Puerto Providencia to Coca",
+   "lat": -0.4625,
+   "lng": -76.9872,
+   "mode": "sea",
+   "path": [
+    [
+     -76.38,
+     -0.53
+    ],
+    [
+     -76.9872,
+     -0.4625
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

@@ -27,8 +27,8 @@ export const BUILT: string[] = [
   "/field-guides",
   "/stays",
   "/europe",
-  // Wild Pathways (Phase 2C): built only while NEXT_PUBLIC_PATHWAYS=on; the pages 404 otherwise.
-  ...(process.env.NEXT_PUBLIC_PATHWAYS === "on" ? ["/pathways", "/pathways/*"] : []),
+  // Wild Pathways: on site-wide since the Voyages launch; NEXT_PUBLIC_PATHWAYS=off removes them.
+  ...(process.env.NEXT_PUBLIC_PATHWAYS !== "off" ? ["/pathways", "/pathways/*"] : []),
   // Journeys and voyages from James's route files (lib/content/trips)
   "/overland/costa-rica/two-oceans-one-volcano",
   "/overland/costa-rica/the-original-costa-route-7-days",
@@ -44,11 +44,31 @@ export const BUILT: string[] = [
   "/voyages/ships/aliikai",
   // The Nile waters hub and the A&K Sanctuary ships (approved by James, 1 Nov 2026)
   "/voyages/nile",
+  // Voyages type and waters hubs (voyages plan, approved by James 1 Nov 2026)
+  "/voyages/rivers",
+  "/voyages/sailing",
+  "/voyages/expedition",
+  "/voyages/charter",
+  "/voyages/amazon",
+  "/voyages/galapagos",
+  "/voyages/indonesia",
   "/voyages/ships/nile-adventurer",
   "/voyages/ships/nile-seray",
   "/voyages/ships/sun-boat-iii",
   "/voyages/ships/sun-boat-iv",
   "/voyages/ships/zein-nile-chateau",
+  // andBeyond Amazon Explorer (filed 1 Nov 2026; out of LIVE_ROUTES until James signs her off)
+  "/voyages/ships/beyond-amazon-explorer",
+  "/voyages/ships/aria-amazon",
+  "/voyages/ships/delfin-iii",
+  "/voyages/ships/anakonda-amazon-cruise",
+  "/voyages/ships/amazon-clipper-premium",
+  // The Galapagos yachts (filed 1 Nov 2026; out of LIVE_ROUTES until James signs them off)
+  "/voyages/ships/ecoventura-origin-yacht",
+  "/voyages/ships/ecoventura-theory-yacht",
+  "/voyages/ships/ecoventura-evolve-yacht",
+  "/voyages/ships/alya-catamaran-galapagos",
+  "/voyages/ships/sirius-yacht-galapagos",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

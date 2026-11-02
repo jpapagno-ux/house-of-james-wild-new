@@ -61,12 +61,13 @@ test("'from' prices come only from remaining departures", () => {
   assert.equal(priceLine(live).amount, "US$1,800");
 });
 
-test("a ship with no dates left says new dates are to be announced", () => {
+test("a ship with no dates left shows no 'from' and says ask us", () => {
   const gone = withActiveDepartures({ departures: [dep("2026-09-01", "2026-10-31", 1000)] }, ON);
   assert.equal(gone.departures.length, 0);
   const p = priceLine(gone);
   assert.equal(p.kind, "tba");
-  assert.equal(p.amount, "To be announced");
+  assert.equal(p.amount, "Ask us");
+  assert.match(p.basis, /ask James/);
 });
 
 test("a past departure injected into a real ship file (Nile Adventurer) is hidden", () => {

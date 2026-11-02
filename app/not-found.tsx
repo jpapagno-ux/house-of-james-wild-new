@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { VOLUMES } from "@/lib/site";
+import { LINKED_VOLUMES as VOLUMES } from "@/lib/site";
 
 export default function NotFound() {
   return (

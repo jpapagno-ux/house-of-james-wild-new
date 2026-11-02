@@ -128,7 +128,8 @@ export function AdvisorStrip({ place, countrySlug, regionSlug, volume, ledgerId,
 
 // A horizontal scroll of every advisor who knows a region: used on the
 // region pages and the volume hubs.
-export function AdvisorScroll({ regionSlug, volume, title }: { regionSlug?: string | null; volume?: Volume; title: string }) {
+// `unlinked`: volumes whose chips print as plain labels on this page (Voyages never links to Gatherings).
+export function AdvisorScroll({ regionSlug, volume, title, unlinked = ["gatherings"] }: { regionSlug?: string | null; volume?: Volume; title: string; unlinked?: string[] }) {
   const { advisors } = advisorsFor({ regionSlug, volume });
   if (!advisors.length) return null;
   return (
@@ -148,7 +149,7 @@ export function AdvisorScroll({ regionSlug, volume, title }: { regionSlug?: stri
             <li key={a.slug} className="snap-start shrink-0 w-[260px] bg-paper border ledger-border p-4 flex flex-col gap-3">
               <div className="flex items-center gap-3"><Headshot a={a} size={56} /><div className="min-w-0"><p className="ledger-display text-[18px] leading-tight">{a.name}</p><p className="ledger-eyebrow !text-[9.5px] mt-0.5 truncate">{a.role.replace(" · stand-in", "")}{a.sample ? " · stand-in" : ""}</p></div></div>
               <p className="text-[13.5px] ledger-muted leading-snug">{places}</p>
-              <ul className="flex flex-wrap gap-1.5">{a.desk!.volumes.map((v) => <li key={v}><Link href={VOLUME_HREF[v]} className="text-[11px] border ledger-border px-2 py-0.5 hover:ledger-crimson">{VOLUME_LABEL[v]}</Link></li>)}</ul>
+              <ul className="flex flex-wrap gap-1.5">{a.desk!.volumes.map((v) => <li key={v}>{unlinked.includes(v) ? <span className="text-[11px] border ledger-border px-2 py-0.5">{VOLUME_LABEL[v]}</span> : <Link href={VOLUME_HREF[v]} className="text-[11px] border ledger-border px-2 py-0.5 hover:ledger-crimson">{VOLUME_LABEL[v]}</Link>}</li>)}</ul>
               <div className="mt-auto pt-2 flex items-center justify-between">
                 {a.profileHref && <Link href={a.profileHref} className="text-[14px] hover:ledger-crimson">The desk →</Link>}
                 <Link href={`/plan?advisor=${a.slug}`} className="ledger-btn-ghost">Plan</Link>

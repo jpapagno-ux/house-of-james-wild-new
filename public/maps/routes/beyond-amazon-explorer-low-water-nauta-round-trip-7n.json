@@ -1,0 +1,163 @@
+{
+ "id": "beyond-amazon-explorer-low-water-nauta-round-trip-7n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "7-night low water aboard andBeyond Amazon Explorer",
+ "subtitle": "7 nights · Low water, Nauta round trip · andBeyond Amazon Explorer",
+ "days": {
+  "1": "Tuesday: arrival",
+  "2": "Wednesday",
+  "3": "Thursday",
+  "4": "Friday",
+  "5": "Saturday",
+  "6": "Sunday",
+  "7": "Monday",
+  "8": "Tuesday: departure"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos to Nauta",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Confluence of the Ucayali and Marañón",
+   "lat": -4.4667,
+   "lng": -73.45,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.45,
+     -4.4667
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Ucayali River, Clavero Lake",
+   "lat": -4.62,
+   "lng": -73.62,
+   "mode": "sea",
+   "path": [
+    [
+     -73.45,
+     -4.4667
+    ],
+    [
+     -73.62,
+     -4.62
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Ucayali River to Marañón River",
+   "lat": -4.62,
+   "lng": -73.62,
+   "mode": "sea",
+   "path": [
+    [
+     -73.62,
+     -4.62
+    ],
+    [
+     -73.62,
+     -4.62
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marañón River, Nauta",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "mode": "sea",
+   "path": [
+    [
+     -73.62,
+     -4.62
+    ],
+    [
+     -73.5781,
+     -4.5076
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Marañón River, San Isidro",
+   "lat": -4.5,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.8,
+     -4.5
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Marañón River",
+   "lat": -4.5,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -4.5
+    ],
+    [
+     -73.8,
+     -4.5
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Nauta to Iquitos",
+   "lat": -3.7437,
+   "lng": -73.2516,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -4.5
+    ],
+    [
+     -73.2516,
+     -3.7437
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

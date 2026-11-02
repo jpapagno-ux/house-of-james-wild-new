@@ -10,6 +10,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
+import { undash } from "@/lib/content/ships/types";
 import LiveRatesBand from "@/components/record/LiveRatesBand";
 import RateCardSection from "@/components/booking/RateCardSection";
 import FullFrame from "@/components/record/FullFrame";
@@ -126,9 +127,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   });
 }
 
+const MONTH = "(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)";
+/** "Jan–Apr, Oct–Dec – best for calm seas" → "Jan to Apr, Oct to Dec, best for calm seas". */
+function vesselMonths(t: string): string {
+  return t.replace(new RegExp(`${MONTH}\\s*[\u2013\u2014-]\\s*${MONTH}`, "g"), "$1 to $2").replace(/\s+[\u2013\u2014]\s+/g, ", ").replace(/\s+/g, " ").trim();
+}
+
 export default async function StayPage({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
-  const s = stayBySlug(slug) ?? vesselBySlug(slug);
+  const found = stayBySlug(slug) ?? vesselBySlug(slug);
+  // A vessel prints her registry name ("Celestia", not the library's slogan title) and her
+  // seasons without dashes ("Jan to Apr"), until her ship page is built.
+  const s = found && !stayBySlug(slug) ? { ...found, name: vesselOf(found.slug)?.name ?? found.name, bestMonths: found.bestMonths ? vesselMonths(found.bestMonths) : found.bestMonths } : found;
   if (!s || !s.hero) notFound();
   const path = `/stays/${s.slug}`;
   // A vessel awaiting its ship page: a Voyage, not a stay (lib/content/vessels.ts).
@@ -143,8 +153,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const kind = boat ? boat.kind : (s.category === "hotel" && named ? (named === "villa" ? "private villa" : named === "island" ? "private island" : named) : null) ?? ((s.category && KIND[s.category]) || "stay");
   const bestFor = s.bestFor.map((b) => BEST_FOR[b] ?? b).slice(0, 4);
   const suited = suitedTo([s.tagline, s.quote, ...s.why.map((w) => `${w.title ?? ""} ${w.body}`), ...s.onlyHere, ...s.rooms.items, ...s.rooms.paras, ...s.experiences.items, ...s.experiences.paras, ...s.features.items, ...s.features.paras].filter(Boolean).join(" "), s.bestFor);
-  const answer = boat ? `${s.name} is a ${kind} sailing ${boat.name}, filed in the James Wild & Co Voyages volume${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/^["“]|["”]$/g, "").replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""} Her ship page, cabin by cabin with dates and fares, is being built; until then plan the voyage with James or an advisor.` : `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
-  const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(boat ? [["Volume", "Voyages"] as [string, string], ["Waters", boat.name] as [string, string]] : s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
+  const answer = boat ? `${s.name} is a ${kind} sailing ${boat.name}, filed in the James Wild & Co Voyages volume${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.bestMonths ? ` Best months: ${undash(s.bestMonths).replace(/\s+/g, " ").trim().replace(/\.$/, "")}.` : ""} Her ship page, cabin by cabin with dates and fares, is being built; until then plan the voyage with James or an advisor.` : `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
+  const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(boat ? [["Volume", "Voyages"] as [string, string], ["Waters", boat.name] as [string, string]] : s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: altFor(u as string, s.name, s.country, i) }));
   const more = boat ? VESSEL_RECORDS.filter((x) => x.slug !== s.slug && pageReady(x) && watersOf(x.slug) === watersOf(s.slug)).slice(0, 4)
     : s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
@@ -166,9 +176,19 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const gatewayHub = hubsForCountry(s.country).find((h) => h.gatewayOvernight && h.gatewayRef && h.gatewayRef !== s.slug) ?? null;
   const gatewayStay = gatewayHub ? STAYS.find((x) => x.slug === gatewayHub.gatewayRef && pageReady(x)) ?? null : null;
   const timedLegs = legs.filter((t) => transferLine(t));
-  const whyTitle = s.why[0]?.title ?? `Why ${s.name} Made the Cut`;
-  const whyBlocks = s.why.length ? s.why.map((w, i) => ({ title: i === 0 && s.why[0]?.title ? null : w.title, body: w.body })) : [];
-  const whyParas = s.why.length ? [] : (s.onlyHere.length ? s.onlyHere.slice(0, 2) : [s.tagline].filter(Boolean) as string[]);
+  // Vessels still on this template read as ships (James, 2 Nov 2026): ship section names, no
+  // marketing subtitles, and a factual line (kind, waters, seasons) in place of the slogan.
+  const L = boat
+    ? { why: "Why sail her", overview: "The ship", apart: "What makes her different", apartTitle: "What Makes Her Different?", days: "Days aboard", daysTitle: "What Does a Day on Board Look Like?", rooms: "Cabins", roomsTitle: "Which Cabin Is Yours?", rates: "Cabins & rates" }
+    : { why: "Why it's here", overview: "Overview", apart: "What sets it apart", apartTitle: "Why It's Not Just Another Pretty Place", days: "What you'll do", daysTitle: "How to Fill the Days (or Not)", rooms: "Rooms", roomsTitle: "Where You'll Sleep", rates: "Rooms & rates" };
+  const seasons = boat && s.bestMonths ? undash(s.bestMonths).replace(/\s+/g, " ").trim() : null;
+  const tagline = boat ? `${boat.kind.charAt(0).toUpperCase()}${boat.kind.slice(1)} sailing ${boat.name}${seasons && seasons.length <= 110 ? `. Best months: ${seasons}` : ""}` : s.tagline;
+  // A slogan ("Voyages That Transform, Waters That Whisper"): short, every word capitalised, no figures.
+  const slogan = (x: string) => { const w = x.replace(/[,:.!]/g, "").split(/\s+/).filter(Boolean); return w.length > 1 && w.length <= 8 && !/\d/.test(x) && w.every((y) => /^[A-Z&]/.test(y)); };
+  const keep = (xs: string[]) => (boat ? xs.filter((x) => !slogan(x)) : xs);
+  const whyTitle = boat ? `Why Sail ${s.name}?` : s.why[0]?.title ?? `Why ${s.name} Made the Cut`;
+  const whyBlocks = s.why.length ? s.why.map((w, i) => ({ title: (i === 0 && s.why[0]?.title) || (boat && w.title && slogan(w.title)) ? null : w.title, body: w.body })) : [];
+  const whyParas = s.why.length ? [] : (s.onlyHere.length ? s.onlyHere.slice(0, 2) : [boat ? null : s.tagline].filter(Boolean) as string[]);
   // The Exceptional Few: null for every stay without a published designation (production allows "published" only; assets "approved" only).
   const ef = exceptionalFewFor(s.ledgerId);
   const efPw = ef ? efPathways(ef, s.pathway) : null;
@@ -185,7 +205,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const DayBand = ef ? ({ children }: { children: React.ReactNode }) => <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pb-16 md:pb-24">{children}</div> : React.Fragment;
   const quick = [
     ...(ef ? [{ q: `Why is ${s.name} in The Exceptional Few?`, a: ef.whyItMadeTheCut[1] ?? ef.whyItMadeTheCut[0] ?? "" }, ...(ef.whoItMayNotSuit.length ? [{ q: `Who is ${s.name} less ideal for?`, a: `${ef.whoItMayNotSuit.join(", ")}. If that's you, the Human Compass will point you somewhere that is.` }] : [])] : []),
-    ...(s.bestMonths ? [{ q: `When is the best time to visit ${s.name}?`, a: `${s.bestMonths}.${s.bestMonthsNote ? ` ${s.bestMonthsNote}` : ""}` }] : []),
+    ...(s.bestMonths ? [{ q: boat ? `When does ${s.name} sail?` : `When is the best time to visit ${s.name}?`, a: `${boat ? undash(s.bestMonths) : s.bestMonths}.${s.bestMonthsNote ? ` ${s.bestMonthsNote}` : ""}` }] : []),
     ...(suited.length ? [{ q: `Who is ${s.name} best suited to?`, a: `${suited.join(", ")}. If that's you, it's worth a conversation; if it isn't, the house will point you somewhere that is.` }] : []),
     ...(hubs.length
       ? [{ q: `How do you get to ${s.name}?`, a: `${hubs[0].kind === "airport" || hubs[0].kind === "airstrip" ? "Fly into" : "Arrive at"} ${hubLabel(hubs[0])}${hubs.length > 1 ? ` (or ${hubs.slice(1).map(hubLabel).join(", ")})` : ""}.${timedLegs.length ? ` ${timedLegs.map((t) => `From ${hubLabel(t.hub)} it is ${transferLine(t)}, as stated by the property.`).join(" ")}` : " The transfer time is not yet on record with the house."} James arranges arrival and the car with your booking.` }]
@@ -194,12 +214,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     { q: `How do I book ${s.name}?`, a: `Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked.` },
   ];
   const overviewParas = s.why.length ? s.onlyHere : s.onlyHere.slice(2);
-  const apart = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), images.slice(1));
-  const days = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), images.slice(1), 3, apart);
+  const apart = momentsFor(s.slug, rowsFrom(keep(s.features.items), s.features.paras), images.slice(1));
+  const days = momentsFor(s.slug, rowsFrom(keep(s.experiences.items), s.experiences.paras), images.slice(1), 3, apart);
   const hostEarly = host.state === "available" && !!host.host;
-  const baseNav: [string, string][] = [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [["Rooms", "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ...(ef ? [["Who it suits", "who"] as [string, string], ["Another night", "another-night"] as [string, string], ["Continue", "continue"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
+  const baseNav: [string, string][] = [[L.why, "why"], ["Film", "film"], [L.overview, "overview"], ...(apart.length ? [[L.apart, "features"] as [string, string]] : []), ...(days.length ? [[L.days, "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [[L.rooms, "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ...(ef ? [["Who it suits", "who"] as [string, string], ["Another night", "another-night"] as [string, string], ["Continue", "continue"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
   const navAll: [string, string][] = priced
-    ? [["Why it's here", "why"], ["Film", "film"], ["Overview", "overview"], ...(apart.length ? [["What sets it apart", "features"] as [string, string]] : []), ...(days.length ? [["What you'll do", "experiences"] as [string, string]] : []), ["Included", "included"], ["Rooms & rates", "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
+    ? [[L.why, "why"], ["Film", "film"], [L.overview, "overview"], ...(apart.length ? [[L.apart, "features"] as [string, string]] : []), ...(days.length ? [[L.days, "experiences"] as [string, string]] : []), ["Included", "included"], [L.rates, "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
   const nav: [string, string][] = navAll.filter(([, id]) => !ef || id !== "film");
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
@@ -217,7 +237,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{[place?.name, s.country].filter(Boolean).join(", ")}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><span className="text-[11.5px] tracking-[0.18em] uppercase text-white/75">Ledger ID {s.ledgerId ?? "being filed"}</span></div>
           </DriftFrame>
-        ) : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+        ) : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
         <RecordNav items={nav} cta={priced ? "Check live rates" : `Plan this ${noun}`} ctaHref={priced ? "#rates" : planHref} />
@@ -244,7 +264,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <p className="mt-4 ledger-display text-[1.45rem] md:text-[2.4rem] leading-[1.18] max-w-3xl">{t}</p>
             </DriftFrame>
           ) : <p key={i} id={i === 0 ? "why" : undefined} className="mt-8 ledger-display text-[1.3rem] md:text-[1.7rem] leading-[1.3] max-w-3xl">{t}</p>; })}
-          {!ef && <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{chips && <div className="mt-3"><PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />}
+          {!ef && <WhyFilm eyebrow={boat ? L.why : undefined} title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{chips && <div className="mt-3"><PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />}
           {ef && (
             /* The Exceptional Few editorial row: James' Note · At a glance (pathways sit under the line above) */
             <section aria-label="James' note and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
@@ -261,10 +281,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
-          {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
-          {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
-          {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
-          {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" icon="mountain-sun" body={s.experiences.paras[0]} />}
+          {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}
+          {days.length > 0 && <ImageAccordion id="experiences" eyebrow={L.days} title={L.daysTitle} intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? (boat ? undefined : "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone.")} icon="mountain-sun" items={days} start={null} />}
+          {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow={L.apart} title={L.apartTitle} icon="frond" body={s.features.paras[0]} />}
+          {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow={L.days} title={L.daysTitle} icon="mountain-sun" body={s.experiences.paras[0]} />}
           {priced ? <>
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
@@ -281,10 +301,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
-          {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow="Rooms & suites" title="Where You'll Sleep" icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
+          {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24 scroll-mt-32"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
-          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
@@ -344,7 +364,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
               <p className="ledger-eyebrow ledger-crimson">{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>
               <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{boat ? "More Ships on These Waters" : <>More Stays We&rsquo;d Send You To</>}</h2>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={boat ? vesselOf(x.slug)?.name ?? x.name : x.name} id={x.ledgerId ?? ""} line={boat ? `${(vesselOf(x.slug)?.kind ?? "small ship").replace(/^\w/, (c) => c.toUpperCase())} sailing ${boat.name}` : x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
             </section>
           )}
           {IGGI_ON && (

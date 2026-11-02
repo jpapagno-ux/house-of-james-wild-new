@@ -1,0 +1,103 @@
+{
+ "id": "sirius-yacht-galapagos-san-cristobal-to-baltra-tuesday-to-saturday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary A: Southern Route, 4 nights aboard Galaxy Sirius",
+ "subtitle": "4 nights · San Cristobal to Baltra, Tuesday to Saturday · Galaxy Sirius",
+ "days": {
+  "1": "Arrive San Cristobal, Isla Lobos",
+  "2": "Espanola",
+  "3": "Floreana",
+  "4": "Santa Fe and South Plaza",
+  "5": "Charles Darwin Station, fly out"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.858,
+   "lng": -89.561,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.561,
+     -0.858
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "South Plaza",
+   "lat": -0.5833,
+   "lng": -90.1667,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.1667,
+     -0.5833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.1667,
+     -0.5833
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

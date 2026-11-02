@@ -123,6 +123,14 @@
   .ship-route .jw-frame.chart { padding: 6px; }
 }
 @media (min-width: 1024px) { .ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: calc(100svh - 430px); min-height: 360px; } }
+/* On a chart narrower than 480px the overlay card shrinks to one line (day and status), so it
+   never covers half the map (voyages audit, 1 Nov 2026). */
+.ship-route { container-type: inline-size; }
+@container (max-width: 480px) {
+  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
+  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
+  .jwc .overlay .readout { border-top: 0; padding: 0; }
+}
 
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
 @keyframes jw-spin { to { transform: rotate(360deg); } }
@@ -259,6 +267,30 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 a:hover .jw-needle { animation-duration: 1.6s; }
 @media (prefers-reduced-motion: reduce) { .jw-needle { animation: none; } }
 
+/* Atlases with the ship and route picker (components/journey/AtlasPicker, James 2 Nov 2026):
+   the engine's stacked route buttons step aside, and play, pause, speed and the day buttons sit
+   on one compact row in sentence case, never letterspaced capitals. */
+.jw-atlas .jwc .ctrlbar .routes { display: none !important; }
+.jw-atlas .jwc .ctrlbar { flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 8px 14px; padding-top: 8px; padding-bottom: 8px; }
+.jw-atlas .jwc .ctrlbar .ctrlrow { flex-wrap: nowrap; gap: 10px; flex: none; }
+.jw-atlas .jwc .ctrlbar .legend { display: none; }
+.jw-atlas .jwc .ctrlbar .days { flex: 1 1 auto; min-width: 0; padding-bottom: 0; }
+.jw-atlas .jwc .ctrlbar button { letter-spacing: normal !important; text-transform: lowercase; font-size: 13px; min-height: 36px; }
+.jw-atlas .jwc .ctrlbar button::first-letter { text-transform: uppercase; }
+.jw-atlas .jwc .overlay .ovk, .jw-atlas .jwc .readout .row1 { letter-spacing: .04em !important; }
+@media (max-width: 767px) { .jw-atlas .jwc .ctrlbar { flex-wrap: wrap; } .jw-atlas .jwc .ctrlbar .days { flex-basis: 100%; } }
+/* On a narrow atlas the overlay card shrinks to one line, as on ship pages. */
+.jw-atlas { container-type: inline-size; }
+@container (max-width: 480px) {
+  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
+  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
+  .jwc .overlay .readout { border-top: 0; padding: 0; }
+}
+/* The no-script list of every route: folded on phones; open on wide screens where supported. */
+@media (min-width: 768px) {
+  .jw-atlas-list > summary { display: none !important; }
+  .jw-atlas-list::details-content { content-visibility: visible; display: block; height: auto; }
+}
 /* ---------- The Exceptional Few™: contextual tokens (Stage 4, 1 Nov 2026) ----------
    Additive only. A designated Stay keeps its white page, Stays green marks and House
    Crimson; the five --ef-* tokens tint only the Exceptional Few modules. One palette per

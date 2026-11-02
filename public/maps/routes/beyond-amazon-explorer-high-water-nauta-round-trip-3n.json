@@ -1,0 +1,91 @@
+{
+ "id": "beyond-amazon-explorer-high-water-nauta-round-trip-3n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "3-night high water aboard andBeyond Amazon Explorer",
+ "subtitle": "3 nights · High water, Nauta round trip · andBeyond Amazon Explorer",
+ "days": {
+  "1": "Saturday: arrival",
+  "2": "Sunday",
+  "3": "Monday",
+  "4": "Tuesday: departure"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos to Nauta",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marañón River",
+   "lat": -4.5,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.8,
+     -4.5
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marañón River",
+   "lat": -4.5,
+   "lng": -73.8,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -4.5
+    ],
+    [
+     -73.8,
+     -4.5
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Nauta to Iquitos",
+   "lat": -3.7437,
+   "lng": -73.2516,
+   "mode": "sea",
+   "path": [
+    [
+     -73.8,
+     -4.5
+    ],
+    [
+     -73.2516,
+     -3.7437
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

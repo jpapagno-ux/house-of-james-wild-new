@@ -1,0 +1,73 @@
+{
+ "id": "amazon-clipper-premium-manaus-round-trip-3n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "3-night Negro River Cruise aboard MV Premium",
+ "subtitle": "3 nights · Manaus round trip · MV Premium",
+ "days": {
+  "1": "Boarding",
+  "2": "Anavilhanas",
+  "3": "Community"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Manaus, Rio Negro",
+   "lat": -3.119,
+   "lng": -60.0217,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Anavilhanas National Park",
+   "lat": -2.6208,
+   "lng": -60.9436,
+   "mode": "sea",
+   "path": [
+    [
+     -60.0217,
+     -3.119
+    ],
+    [
+     -60.9436,
+     -2.6208
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Rio Negro",
+   "lat": -2.6208,
+   "lng": -60.9436,
+   "mode": "sea",
+   "path": [
+    [
+     -60.9436,
+     -2.6208
+    ],
+    [
+     -60.9436,
+     -2.6208
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

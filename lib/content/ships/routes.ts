@@ -38,9 +38,9 @@ export function routeFigure({ id, routes, chart, label }: { id: string; routes: 
 
 /** The chart block for one or more routes: config for the engine, and the ordered stops as the
  *  fallback search engines and no-JS readers see (the engine draws over it). */
-export function shipMapHtml({ id, routes, destination, chart, title }: { id: string; routes: RouteFile[]; destination: string; chart?: object; title: string }) {
+export function shipMapHtml({ id, routes, destination, chart, title, kicker = "THE VOYAGE · BY RIVER" }: { id: string; routes: RouteFile[]; destination: string; chart?: object; title: string; kicker?: string }) {
   const ink = VOLUME_STYLES.voyages.pad;
-  const cfg = JSON.stringify({ routes: routes.map((r) => ({ ...r, short: r.title })), kind: "voyage", destination, chart, kicker: "THE VOYAGE · BY RIVER", caption: "" }).replace(/</g, "\\u003c");
+  const cfg = JSON.stringify({ routes: routes.map((r) => ({ ...r, short: r.title })), kind: "voyage", destination, chart, kicker, caption: "" }).replace(/</g, "\\u003c");
   const lists = routes.map((r) => `<p style="margin: 0 0 6px; font-size: 13px"><strong>${esc(r.title)}</strong></p><ol style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 6px 18px; margin: 0 0 14px; padding: 0; list-style: none; font-size: 14px">${r.stops.map((s) => `<li><span class="mono">Day ${esc(s.day)}</span> ${esc(s.name)}</li>`).join("")}</ol>`).join("");
   return `<div id="${esc(id)}" data-keep="1" data-gen="1" class="jw-maps jw-site" data-jw-map="itinerary" style="--jw-overland: ${ink}; --jw-voyages: ${ink}; --jw-acc: ${ink}">` +
     `<script type="application/json">${cfg}</script>` +

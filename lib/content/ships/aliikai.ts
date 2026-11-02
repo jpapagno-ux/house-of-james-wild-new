@@ -1,8 +1,8 @@
 import ra from "../trips/10-day-raja-ampat-north.json";
 import { SAMPLE_ALIIKAI as S } from "../preview/aliikai";
 import type { Trip } from "../trips";
-import { activeGroups } from "@/lib/dates";
-import type { ShipItinerary, ShipPathway } from "./types";
+import { activeGroups, endOf } from "@/lib/dates";
+import type { ShipCabin, ShipDeparture, ShipItinerary, ShipPathway, ShipRecord } from "./types";
 
 // The Aliikai vessel profile. Yacht, spaces, cabins and the 2027 schedule come
 // from aliikai-voyage.com (filed on the voyage records, checked 26 Oct 2026, and
@@ -39,9 +39,9 @@ export const ALIIKAI_SHIP = {
   slug: "aliikai",
   name: "Aliikai",
   ledgerId: "STY-2026-882896",
-  // Wild Pathways (1 Nov 2026, for James's approval): Between Tides first; Where the Wild Lives for the
-  // reefs, mantas and dragons; Off the Map for the Wayag and Misool routes and the Banda Sea crossings.
-  pathway: { primary: "PATH-02", secondary: ["PATH-04", "PATH-06"] } as ShipPathway,
+  // Wild Pathways (James, 1 Nov 2026): Between Tides first (the water is the activity), Off the Map for
+  // the Wayag and Misool routes and the Banda Sea crossings, A Place of Our Own for the whole-yacht charter.
+  pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] } as ShipPathway,
   path: "/voyages/ships/aliikai",
   seo: {
     title: "Aliikai Phinisi Yacht: Raja Ampat & Komodo Liveaboard, 2027 Rates",
@@ -115,4 +115,64 @@ export const ALIIKAI_ITINERARY: ShipItinerary = {
     lng: POS[i]?.[1] ?? POS[0][1],
     summary: d.body,
   })),
+};
+
+// ---------------------------------------------------------------------------
+// Aliikai on the shared ship record (voyages plan, 1 Nov 2026): the same shape as the
+// Nile ships, so one template prints every vessel. Every value is read from the module
+// above (aliikai-voyage.com via the voyage records); nothing is new copy except headings.
+// She is priced by the night (`rateBasis: "per-night"`): each cabin carries its nightly
+// rate, and each sailing its published voyage fare in an ocean-view cabin with portholes.
+
+const S0 = ALIIKAI_SHIP;
+// Cabins as filed; Koon & Savu and Dayak & Abui are two cabins each (seven in all).
+const COUNTS: Record<string, number> = { "Deluxe Ocean View · Koon & Savu": 2, "Ocean View · Dayak & Abui": 2 };
+const CABINS: ShipCabin[] = S0.cabins.map((c) => ({
+  type: c.name, count: COUNTS[c.name] ?? 1, size: null, beds: `${c.bed}, sleeps ${c.sleeps}`, deck: c.deck,
+  features: c.feats, image: c.photos[0] ?? null, night: c.night,
+}));
+/** The cabin the published voyage fares are for (ocean view with portholes). */
+export const ALIIKAI_FARE_CABIN = "Ocean View · Dayak & Abui";
+const DEPARTURES: ShipDeparture[] = groups.flatMap((g) => g.sailings.map((x) => {
+  const [, leg] = x.date.split(" · ");
+  return {
+    date: endOf(x.date) ?? x.date, itinerary: g.name.replace("↔", "to"), direction: leg ?? `From ${WHERE[g.name]?.from ?? "port to confirm"}`,
+    status: x.status, prices: { [ALIIKAI_FARE_CABIN]: x.price }, nights: x.nights, voyage: PAGES[g.name]?.href,
+  };
+}));
+
+export const ALIIKAI_RECORD: ShipRecord = {
+  slug: "aliikai",
+  name: "Aliikai",
+  brandLine: "a hand-built phinisi",
+  operator: "Aliikai Voyage",
+  type: "phinisi",
+  waters: "Indonesia",
+  country: "Indonesia",
+  status: "sailing",
+  seo: S0.seo,
+  tagline: S0.tagline,
+  answer: S0.answer,
+  quote: S0.quote,
+  // Charter sits in the overview (audit, 1 Nov 2026); the glance bar keeps route, nights, guests and ages.
+  facts: [...S0.facts, ["Charter", `The whole yacht, ${usd(S0.charter.rate)} a night plus 11% tax`]],
+  overview: [S0.blurb, S0.charter.text],
+  why: [...S0.why.paragraphs, ...S0.onlyHere],
+  hero: S0.gallery[0],
+  gallery: S0.gallery,
+  cabins: CABINS,
+  deckPlans: [],
+  itineraries: [ALIIKAI_ITINERARY],
+  departures: DEPARTURES,
+  pricesNote: "Voyage fares are per person in an ocean-view cabin with portholes, double occupancy, plus 11% tax and 7% Florida sales tax; the other cabins are priced by the night (see Cabins). Travelling solo, the single supplement is 50% of the nightly rate.",
+  inclusions: [],
+  children: "",
+  faqs: S0.faqs,
+  suits: S0.suits,
+  sources: [S0.source, S0.depSource].filter(Boolean) as string[],
+  film: null,
+  pathway: S0.pathway,
+  rateBasis: "per-night",
+  glance: { route: "Raja Ampat, Komodo, Banda Sea", guests: "14, or 15 on charter" },
+  proofLine: "Field verified · 2024 · James sailed Raja Ampat aboard Aliikai in November 2024",
 };

@@ -10,8 +10,10 @@ import ItineraryScroller from "./ItineraryScroller";
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
 
 export default function ShipItinerary({ ship, itineraries: given, map, title, intro, eyebrow = "The voyage, day by day" }: { ship: string; itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string }) {
-  // A private charter has no fixed days: its route is set with the guest.
-  const charters = given.filter((i) => !i.days.length);
+  // An itinerary without days: a private charter (route set with the guest), or a route the
+  // operator publishes no day by day for ("ask us"), never an invented one.
+  const charters = given.filter((i) => !i.days.length && /charter/i.test(`${i.name} ${i.direction}`));
+  const undated = given.filter((i) => !i.days.length && !/charter/i.test(`${i.name} ${i.direction}`));
   const itineraries = given.filter((i) => i.days.length > 0);
   if (!itineraries.length) return null;
   const list = itineraries.map((it) => ({
@@ -23,10 +25,11 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
   return (
     <section id="itinerary" className={SEC}>
       <SectionHead eyebrow={eyebrow} title={title} icon="wave" intro={intro} />
+      {undated.map((c) => <p key={c.name} className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">{c.name}{c.nights ? `, ${c.nights} nights` : ""}</span>The operator publishes no day by day for this route; ask us and James will send it.</p>)}
       {charters.map((c) => <p key={c.name} className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">{c.name}</span>The route of a private charter ({c.direction}) is set with you; the chart follows the published {itineraries.length > 1 ? "routes" : "route"} she sails.</p>)}
       {map && <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />}
       {map?.figCss && <link rel="stylesheet" href={map.figCss} precedence="default" />}
-      <ItineraryScroller ship={ship} itineraries={list} map={map ? <div className="ship-route sticky top-[124px] lg:top-[228px] z-10 bg-paper" dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
+      <ItineraryScroller ship={ship} itineraries={list} map={map ? <div className="ship-route sticky top-[124px] [html[data-chrome=tucked]_&]:top-[48px] lg:top-[228px] z-10 bg-paper transition-[top] duration-300" dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
       {map && <MapBoot />}
     </section>
   );

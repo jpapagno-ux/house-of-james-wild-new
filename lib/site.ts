@@ -110,11 +110,12 @@ export const VOLUMES: MegaMenu[] = [
     tone: volumeInk("voyages"),
     intro: "Small ships and sailing yachts, never the big ones.",
     browse: [
-      { label: "Departures 2027–2028", href: "/voyages/departures" },
-      { label: "Charter a whole yacht", href: "/voyages/charter" },
-      { label: "Polar", href: "/voyages?region=polar" },
-      { label: "Islands", href: "/voyages?region=islands" },
-      { label: "Sailing yachts", href: "/voyages?type=yacht" },
+      { label: "By River", href: "/voyages/rivers" },
+      { label: "Under Sail", href: "/voyages/sailing" },
+      { label: "To the Edges", href: "/voyages/expedition" },
+      { label: "The Whole Ship", href: "/voyages/charter" },
+      { label: "The Nile", href: "/voyages/nile" },
+      { label: "The Galápagos", href: "/voyages/galapagos" },
     ],
     ledger: [],
   },
@@ -137,7 +138,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },
       { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
-      { label: "River cruises, before or after", href: "/voyages?region=rivers" },
+      { label: "River cruises, before or after", href: "/voyages/rivers" },
     ],
     ledger: [],
   },
@@ -212,6 +213,12 @@ export const LEGAL_NAV: NavLink[] = [
   { label: "Terms", href: "/legal/terms" },
   { label: "Privacy", href: "/legal/privacy" },
 ];
+
+/** The volumes the header, menus and footer link to. Gatherings is a house brand named in
+ *  plain text, never linked from shared chrome (James, 2 Nov 2026). */
+export const LINKED_VOLUMES = VOLUMES.filter((v) => v.href !== "/gatherings");
+/** The house's lines, as plain text for the footer ("Stays · Voyages · Safaris · Gatherings"). */
+export const HOUSE_LINE = ["Stays", "Voyages", "Safaris", "Gatherings"];
 
 // Pages that are built AND indexable. The sitemap lists only these. Built
 // pages awaiting sign-off stay noindex and off this list (see lib/routes.ts

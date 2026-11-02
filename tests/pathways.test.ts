@@ -118,11 +118,12 @@ test("Phase 2A: the library export wins, the override file fills gaps, and bad l
   assert.equal(lib[0].impact[0].kind, "levy", "library impact notes replace the override's");
 });
 
-test("Phase 2C: the pathways flag is off unless exactly 'on', and every pathway has house copy", async () => {
+test("Phase 2C: the pathways flag is on unless 'off', and every pathway has house copy", async () => {
   const { readPathwaysFlag } = await import("../lib/content/pathways/flag.ts");
-  assert.equal(readPathwaysFlag({}), false);
-  assert.equal(readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: "true" }), false);
+  // On by default since the Voyages launch; only "off" turns it off.
+  assert.equal(readPathwaysFlag({}), true);
   assert.equal(readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: "on" }), true);
+  assert.equal(readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: "off" }), false);
   const { PATHWAY_ANSWER, PATHWAY_FAQS } = await import("../lib/content/pathways/copy.ts");
   for (const p of PATHWAY_LIST) {
     assert.ok(PATHWAY_ANSWER[p.id].length > 120, `${p.id} answer`);

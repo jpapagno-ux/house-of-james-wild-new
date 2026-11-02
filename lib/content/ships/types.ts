@@ -11,7 +11,8 @@ export type ShipPathway = { primary: PathwayId; secondary: PathwayId[] };
 export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string };
 /** nights null and no days: a private charter whose route is set with the guest. */
 export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[] };
-export type ShipCabin = { type: string; count: number | null; size: string | null; beds: string | null; deck: string | null; features: string[]; image?: ShipImage | null };
+/** `night`: the published rate per person per night (ships priced by the night, `rateBasis: "per-night"`). */
+export type ShipCabin = { type: string; count: number | null; size: string | null; beds: string | null; deck: string | null; features: string[]; image?: ShipImage | null; night?: number | null };
 export type ShipDeckPlan = { deck: string; image: ShipImage; cabins: string[] };
 /** A departure, or (A&K) a season band: `date` to `dateTo`, one fare for every sailing in it. */
 // priceBasis "package": the fare is for a whole A&K land and cruise journey (never a cruise fare);
@@ -22,11 +23,15 @@ export type ShipDeparture = {
   prices: Record<string, number | null>; priceBasis?: "cruise" | "package"; package?: ShipPackage | null;
   cabinsLeft?: Record<string, number> | null; note?: string | null; voyage?: string;
   singlePrices?: Record<string, number | null>; childPrices?: Record<string, number | null>;
+  /** Nights on this sailing, when sailings differ in length (Aliikai). */
+  nights?: number;
 };
 export const isPackage = (d: ShipDeparture) => d.priceBasis === "package";
 export const cruiseOnly = (s: Pick<ShipRecord, "departures">) => s.departures.filter((d) => !isPackage(d));
 export const packages = (s: Pick<ShipRecord, "departures">) => s.departures.filter(isPackage);
 export const isBand = (d: ShipDeparture) => !!d.dateTo;
+/** How the operator prices her: the whole cruise per person (A&K), or per person per night by cabin (Aliikai). */
+export type RateBasis = "per-cruise" | "per-night";
 /** A film: a YouTube id, or an id with a title. null shows the "Film coming soon" panel. */
 export type ShipFilm = string | { id: string; title?: string } | null;
 
@@ -56,12 +61,30 @@ export type ShipRecord = {
   exclusions?: string[];
   children: string;
   faqs: [string, string][];
-  suits: { who: string; line: string }[];
+  /** Who she suits; `href` and `voyage` point a traveller at the voyage that fits them. */
+  suits: { who: string; line: string; href?: string; voyage?: string }[];
   sources: string[];
   film: ShipFilm;
   /** Optional Wild Pathways (house classification, not operator copy). */
   pathway?: ShipPathway;
+  /** How fares are published; "per-cruise" when absent. */
+  rateBasis?: RateBasis;
+  /** First sailing month or day ("2026-11"): the status reads "launching <month>" until it has passed. */
+  launch?: string;
+  /** A line in the house voice above the answer (Aliikai: James's own words). */
+  quote?: string;
+  /** Glance-bar wording where the facts would run long (Aliikai's guests line). */
+  glance?: Partial<Record<"route" | "guests" | "ages", string>>;
+  /** false when the operator publishes no dates or fares at all (MV Premium): the panel says "Ask us". */
+  datesPublished?: boolean;
+  /** The operator publishes one schedule for a fleet (Ecoventura): Dates & rates says so. */
+  fleetSchedule?: string;
+  /** Status line under "Why we chose her", in place of the operator line. */
+  proofLine?: string;
 };
+
+/** The rate basis in words, for Dates & rates and the cabin cards. */
+export const rateBasisOf = (s: Pick<ShipRecord, "rateBasis">): RateBasis => s.rateBasis ?? "per-cruise";
 
 export const filmId = (f: ShipFilm | undefined) => (!f ? null : typeof f === "string" ? f : f.id);
 
@@ -77,7 +100,9 @@ export function fromPrice(s: Pick<ShipRecord, "departures">): number | null {
 }
 
 /** Lowest published fare per person for one cabin type, from the departures. */
-export function cabinFrom(s: Pick<ShipRecord, "departures">, type: string): number | null {
+export function cabinFrom(s: Pick<ShipRecord, "departures"> & Partial<Pick<ShipRecord, "cabins" | "rateBasis">>, type: string): number | null {
+  // Priced by the night: the cabin's own published nightly rate.
+  if (s.rateBasis === "per-night") return s.cabins?.find((c) => c.type === type)?.night ?? null;
   // A cabin can be priced by deck ("Standard Cabin (Nile Deck)"): its lowest deck is its "from".
   const all = cruiseOnly(s).flatMap((d) => Object.entries(d.prices).filter(([k]) => k === type || k.startsWith(`${type} (`)).map(([, p]) => p)).filter((p): p is number => typeof p === "number" && p > 0);
   return all.length ? Math.min(...all) : null;
@@ -133,7 +158,8 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
 export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
-  if (!s.departures.length) return { kind: "tba", label: "Dates", amount: "To be announced", basis: "new dates to be announced, ask James" };
+  // No published (or no remaining) dates or fares: "Ask us", never an invented "from".
+  if (!s.departures.length) return { kind: "tba", label: "Rates", amount: "Ask us", basis: "no published dates or fares to show; ask James" };
   const f = fromPrice(s);
   if (f) return { kind: "cruise", label: "From", amount: `US$${f.toLocaleString("en-US")}`, basis: "per person, cruise only, two sharing" };
   const j = journeyFrom(s);
@@ -142,8 +168,10 @@ export function priceLine(s: Pick<ShipRecord, "departures">): { kind: "cruise" |
 }
 
 /** "4 to 7 nights" or "4 nights". */
-export function nightsLabel(s: Pick<ShipRecord, "itineraries">): string {
-  const n = [...new Set(s.itineraries.map((i) => i.nights).filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
+export function nightsLabel(s: Pick<ShipRecord, "itineraries"> & Partial<Pick<ShipRecord, "departures">>): string {
+  // Sailings that carry their own length (Aliikai) give the true range; else the itineraries.
+  const dep = (s.departures ?? []).map((d) => d.nights).filter((x): x is number => typeof x === "number");
+  const n = [...new Set(dep.length ? dep : s.itineraries.map((i) => i.nights).filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
   if (!n.length) return "";
   return n.length === 1 ? `${n[0]} nights` : `${n[0]} to ${n[n.length - 1]} nights`;
 }

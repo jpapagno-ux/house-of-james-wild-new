@@ -197,7 +197,7 @@ old path,new path,why,old title
 /book/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,booking page -> stay page,Book your stay at Pearl Resort Le Tikehau | Wild Earth Stays
 /book/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,booking page -> stay page,Book your stay at Pearl Resort Vahine Private Island | Wild Earth Stays
 /book/phinda-homestead-by-beyond,/stays/phinda-homestead-by-and-beyond,booking page -> stay page,Book your stay at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/book/pikaia-lodge,/destinations/south-america/ecuador-galapagos,booking page -> not on the new site yet; country page,Book your stay at Pikaia Lodge | Wild Earth Stays
+/book/pikaia-lodge,/destinations/south-america,booking page -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Book your stay at Pikaia Lodge | Wild Earth Stays
 /book/pods-camp-bay,/stays/pods-camp-bay,booking page -> stay page,Book your stay at Pods Camp Bay | Wild Earth Stays
 /book/ponto-dos-gachos,/destinations/south-america/brazil,booking page -> not on the new site yet; country page,Book your stay at Ponta Dos Ganchos | Wild Earth Stays
 /book/post-ranch-inn,/stays/post-ranch-inn,booking page -> stay page,Book your stay at Post Ranch Inn | Wild Earth Stays
@@ -363,7 +363,7 @@ old path,new path,why,old title
 /country/chile,/destinations/south-america/chile,country page,
 /country/colorado,/destinations/usa-canada,region page (colorado country page not built yet),
 /country/costa-rica,/destinations/central-america/costa-rica,country page,
-/country/ecuador-galapagos,/destinations/south-america/ecuador-galapagos,country page,
+/country/ecuador-galapagos,/destinations/south-america,region page (ecuador-galapagos country page not built yet),
 /country/falkland-islands,/destinations/south-america,region page (falkland-islands country page not built yet),
 /country/fiji,/destinations/oceania/fiji,country page,
 /country/florida,/destinations/usa-canada,region page (florida country page not built yet),
@@ -681,7 +681,7 @@ old path,new path,why,old title
 /property/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,stay page,Pearl Resort Le Tikehau | Luxury Stays in Tahiti | Wild Earth Stays
 /property/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,stay page,Pearl Resort Vahine Private Island | Luxury Stays in Tahiti | Wild Earth Stays
 /property/phinda-homestead-by-and-beyond,/stays/phinda-homestead-by-and-beyond,stay page,Phinda Homestead by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
-/property/pikaia-lodge,/destinations/south-america/ecuador-galapagos,not on the new site yet; country page,Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
+/property/pikaia-lodge,/destinations/south-america,not on the new site yet; region page (ecuador-galapagos country page not built yet),Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
 /property/pods-camp-bay,/stays/pods-camp-bay,stay page,Pods Camp Bay | Luxury Stays in South Africa | Wild Earth Stays
 /property/ponta-dos-ganchos,/destinations/south-america/brazil,not on the new site yet; country page,Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
 /property/post-ranch-inn,/stays/post-ranch-inn,stay page,Post Ranch Inn | Luxury Stays in California | Wild Earth Stays
@@ -1534,10 +1534,10 @@ old path,new path,why,old title
 /stay/pearl-resort-vahine-private-island-overwater-bungalow,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Overwater Bungalow at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/pearl-resort-vahine-private-island-private-royal-villa,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Private Royal Villa at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/phinda-homestead-by-beyond-exclusive-use-villa,/stays/phinda-homestead-by-and-beyond,room of phinda-homestead-by-and-beyond -> stay page,Exclusive Use Villa at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/stay/pikaia-lodge-balcony-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Balcony Rooms at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-garden-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Garden Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-pool-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Pool Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-terrace-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Terrace Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-balcony-rooms,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Balcony Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-garden-suite,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Garden Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-pool-suite,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Pool Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-terrace-rooms,/destinations/south-america,room of pikaia-lodge -> not on the new site yet; region page (ecuador-galapagos country page not built yet),Terrace Rooms at Pikaia Lodge | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-full-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Full Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-tree-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Tree &amp; Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-pacific-suite,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Pacific Suite at Post Ranch Inn | Wild Earth Stays

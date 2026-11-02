@@ -5187,8 +5187,19 @@
    "category": "resort",
    "tagline": "A 19-suite beachfront hotel on the Placencia Peninsula, once Robert's Grove.",
    "quote": "At Blue Reef, the character of a stay begins with its setting in Belize.",
-   "hero": "https://www.bluereefbeach.com/wp-content/uploads/2023/05/hero-beach.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g10"
+   ],
    "bestMonths": "Not specified. Confirm the resort’s location and seasonal guidance before planning.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -10235,7 +10246,7 @@
    "arrivalHubIds": [
     "6ae697507315f045b9524ae9"
    ],
-   "placeSlug": null
+   "placeSlug": "alentejo"
   },
   {
    "slug": "ecocamp-patagonia",
@@ -16848,8 +16859,19 @@
    "category": "resort",
    "tagline": "A beachfront lodge minutes from the Garifuna village of Hopkins.",
    "quote": "Here, the rhythm of the sea sets the pace.",
-   "hero": "https://www.jaguarreefbelize.com/wp-content/uploads/2020/08/JRL_FINAL2020_stacked-WHITE.png",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/jaguar-reef-lodge/g10"
+   ],
    "bestMonths": "December through May is generally the drier season and a popular time for outdoor activities. Conditions vary by year.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -37024,7 +37046,7 @@
   },
   {
    "slug": "six-senses-douro-valley",
-   "name": "Six Senses \n Douro Valley",
+   "name": "Six Senses Douro Valley",
    "ledgerId": "STY-2026-000264",
    "country": "Portugal + Azores",
    "countrySlug": "portugal",
@@ -37114,7 +37136,7 @@
     "6ae69750e9b81c7de1fe3f39",
     "6ae6975059e8c030833fc9ca"
    ],
-   "placeSlug": null
+   "placeSlug": "douro-valley"
   },
   {
    "slug": "six-senses-fiji",
@@ -39176,8 +39198,19 @@
    "category": "resort",
    "tagline": "An adults-only private island resort seven miles off Belize City.",
    "quote": "Here, the day moves between turquoise water, reef and the quiet rhythm of island life.",
-   "hero": "https://belizeislandparadise.com/images/home-hero.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-george-s-caye-resort/g10"
+   ],
    "bestMonths": "December to May is Belize’s generally drier season and a popular period to visit. Weather and sea conditions vary by date.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -43491,8 +43524,19 @@
    "category": "resort",
    "tagline": "A barefoot Caribbean hideaway on Belize’s Placencia Peninsula",
    "quote": "At Turtle Inn, days unfold between the sea, the garden, and the village.",
-   "hero": "https://thecoppolahideaways.com/wp-content/uploads/2023/08/turtle-inn-hero.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/turtle-inn/g10"
+   ],
    "bestMonths": "December through May is generally the drier season and a popular period to visit Belize. Check current seasonal conditions when choosing dates.",
    "bestMonthsNote": null,
    "bestFor": [
@@ -43848,8 +43892,19 @@
    "category": "resort",
    "tagline": "Beachfront and lagoon-side suites on Placencia's Maya Beach.",
    "quote": "At Umaya, the water is part of the welcome, from the lagoon-side setting to the marina.",
-   "hero": "https://www.travelbelize.org/wp-content/uploads/2021/03/UMAYA-resort.jpg",
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/umaya-resort-and-marina/g10"
+   ],
    "bestMonths": "January to September",
    "bestMonthsNote": "While rates fluctuate throughout the year, the resort remains a popular destination for travelers seeking beachside lounging and adventure across these months.",
    "bestFor": [

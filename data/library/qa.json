@@ -680,8 +680,7 @@
    "name": "Blue Reef Beach Resort",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -1894,8 +1893,7 @@
    "name": "The Lodge at Jaguar Reef",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -3903,8 +3901,7 @@
    "name": "St. George's Caye Resort",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -4406,8 +4403,7 @@
    "name": "Turtle Inn",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },
@@ -4459,8 +4455,7 @@
    "name": "Umaya Resort & Adventures",
    "country": "Belize",
    "missing": [
-    "coordinates",
-    "own_photos"
+    "coordinates"
    ],
    "released": true
   },

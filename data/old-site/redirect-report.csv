@@ -130,7 +130,7 @@ old path,new path,why,old title
 /book/kudadoo-private-island,/stays/kudadoo-private-island,booking page -> stay page,Book your stay at Kudadoo Private Island | Wild Earth Stays
 /book/kura-boutique-resort,/stays/kura-boutique-resort,booking page -> stay page,Book your stay at Kura Boutique Resort | Wild Earth Stays
 /book/la-cle-south-africa,/stays/la-cle,booking page -> stay page,Book your stay at La Clé | Wild Earth Stays
-/book/la-tahaa,/stays/la-tahaa,booking page -> stay page,Book your stay at Le Taha&#x27;a | Wild Earth Stays
+/book/la-tahaa,/stays/le-tahaa,"booking page -> renamed stay (slug typo), 2 Nov 2026",Book your stay at Le Taha&#x27;a | Wild Earth Stays
 /book/la-valise-tulum,/stays/la-valise-tulum,booking page -> stay page,Book your stay at La Valise Tulum | Wild Earth Stays
 /book/lake-manyara-tree-lodge-by-beyond,/stays/manyara-tree-lodge-by-and-beyond,booking page -> stay page,Book your stay at Lake Manyara Tree Lodge By &amp; Beyond | Wild Earth Stays
 /book/lalibela-reserve,/safaris/lalibela-reserve,booking page -> safari reserve,Book your stay at Lalibela Reserve | Wild Earth Stays
@@ -606,7 +606,7 @@ old path,new path,why,old title
 /property/kwando-tau-pan,/stays/kwando-tau-pan,stay page,Kwando Tau Pan | Luxury Stays in Botswana | Wild Earth Stays
 /property/la-cle,/stays/la-cle,stay page,La Clé | Luxury Stays in South Africa | Wild Earth Stays
 /property/la-residence,/stays/la-residence,stay page,La Residence | Luxury Stays in South Africa | Wild Earth Stays
-/property/la-tahaa,/stays/la-tahaa,stay page,Le Taha&#x27;a | Luxury Stays in Tahiti | Wild Earth Stays
+/property/la-tahaa,/stays/le-tahaa,"renamed stay (slug typo), 2 Nov 2026",Le Taha&#x27;a | Luxury Stays in Tahiti | Wild Earth Stays
 /property/la-valise-tulum,/stays/la-valise-tulum,stay page,La Valise Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/lalibela-reserve,/safaris/lalibela-reserve,safari reserve,Lalibela Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/lamai-serengeti,/destinations/africa/tanzania,not on the new site yet; country page,Lamai Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
@@ -1268,14 +1268,14 @@ old path,new path,why,old title
 /stay/la-cle-galerie-villa,/stays/la-cle,room of la-cle -> stay page,Galerie Villa at La Clé | Wild Earth Stays
 /stay/la-cle-grange-villa,/stays/la-cle,room of la-cle -> stay page,Grange Villa at La Clé | Wild Earth Stays
 /stay/la-cle-village-rooms-and-suites,/stays/la-cle,room of la-cle -> stay page,Village Rooms and Suites at La Clé | Wild Earth Stays
-/stay/la-tahaa-bora-bora-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Bora Bora Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-end-of-pontoon-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,End‑of‑Pontoon Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-premium-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Premium Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-royal-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Royal Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-sunset-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Sunset Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-tahaa-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Taha’a Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-tahaa-premium-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Taha’a Premium Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-bora-bora-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Bora Bora Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-end-of-pontoon-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",End‑of‑Pontoon Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-premium-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Premium Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-royal-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Royal Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-sunset-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Sunset Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-tahaa-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Taha’a Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-tahaa-premium-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Taha’a Premium Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
 /stay/la-valise-tulum-beachfront-master-suite,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Beachfront Master Suite at La Valise Tulum | Wild Earth Stays
 /stay/la-valise-tulum-cenote-master-suite---jungle-side,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Cenote Master Suite - Jungle Side at La Valise Tulum | Wild Earth Stays
 /stay/la-valise-tulum-cenote-suite-lower---jungle-side,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Cenote Suite Lower - Jungle Side at La Valise Tulum | Wild Earth Stays

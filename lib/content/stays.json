@@ -2063,6 +2063,150 @@
    "placeSlug": null
   },
   {
+   "slug": "amanpulo",
+   "name": "Amanpulo",
+   "ledgerId": "STY-2026-000604",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "The only resort on Pamalican Island, reached by Amanpulo's own flights to its own airstrip",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanpulo/g10"
+   ],
+   "bestMonths": "December to March (kitesurf season)",
+   "bestMonthsNote": "Aman does not publish one best season. Kitesurfing runs December to March at the Kite Surf Centre, and green and hawksbill turtles come ashore to nest from June to October.",
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Clark International Airport (CRK), then Amanpulo's private flight",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Casitas built into the forest canopy, on the hillside or along the beach.",
+     "Aman's fact sheet lists 43 casitas of 68 square metres (Treetop, Hillside, Deluxe Hillside, Treetop Pool, Beach and Beach Pool) and one Grand Beach Pool Casita of 257 square metres.",
+     "17 villas of one to four bedrooms, each with its own beach frontage, pool, private chef and butler, and one club car per bedroom."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Diving and PADI courses, with most sites under 10 minutes by boat",
+     "Snorkelling on reefs that begin 300 metres from shore",
+     "Kitesurfing from December to March",
+     "Turtle nesting, June to October",
+     "Sunset cruises, fishing and sailing lessons",
+     "Tennis, cycling and a jungle obstacle course"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Clubhouse Restaurant, Beach Club, Lagoon Club and The Picnic Grove",
+     "The floating bamboo Kawayan Bar",
+     "Hilltop Aman Spa and gym",
+     "PADI Dive Centre",
+     "Kite Surf Centre (December to March)",
+     "Organic farm",
+     "Private airstrip and the Amanpulo Lounge at Clark"
+    ]
+   },
+   "onlyHere": [
+    "Pamalican is a nesting site for green and hawksbill turtles, and when the flights stop for the day the island's airstrip becomes a go-kart track."
+   ],
+   "why": [
+    {
+     "title": "An Island With Its Own Airstrip",
+     "body": "Amanpulo is the only resort on Pamalican, a small island in the Cuyo Archipelago ringed by white sand and reefs that start 300 metres offshore. Guests fly in from Amanpulo's own lounge at Clark on a twin turboprop that lands on the island's private airstrip, about 90 minutes away."
+    }
+   ],
+   "facts": {
+    "best_months": "Kitesurfing runs December to March; turtles nest June to October, per Aman. Aman does not publish one best season.",
+    "how_to_get_there": "By private scheduled flight only: Amanpulo's 12 seat twin engine turboprop flies from the Amanpulo Lounge hangar at Clark International Airport (CRK) to the island's own airstrip in about 90 minutes, twice daily. Private charters from other airports can be arranged. Car transfers from Manila (MNL) or Clark to the lounge are complimentary for same day connections.",
+    "signature_experiences": "Diving with the PADI Dive Centre, the Kawayan floating bar, kitesurfing, turtle nesting and the hilltop Aman Spa.",
+    "who_its_for": "Couples, and families or friends taking a villa with its own chef and butler."
+   },
+   "faqs": [
+    {
+     "q": "Where is Amanpulo?",
+     "a": "On Pamalican Island in the Cuyo Archipelago of northern Palawan, in the Sulu Sea. Amanpulo is the only resort on the island."
+    },
+    {
+     "q": "How do you get to Amanpulo?",
+     "a": "Only by Amanpulo's private scheduled flights, which leave the Amanpulo Lounge hangar at Clark International Airport and land on the island's own airstrip after about 90 minutes. Private charters from other airports can also be arranged."
+    },
+    {
+     "q": "Do Amanpulo's flights leave from Manila?",
+     "a": "No, they leave from Clark, about two hours by road from Manila. Amanpulo's team meets guests at Manila or Clark international airports, and car transfers to the Clark lounge are complimentary for same day connections."
+    },
+    {
+     "q": "What accommodation does Amanpulo have?",
+     "a": "Casitas in the forest canopy, on the hillside or on the beach, including the 257 square metre Grand Beach Pool Casita, and villas of up to four bedrooms with their own beach frontage, pool, private chef and butler."
+    },
+    {
+     "q": "Is the diving good at Amanpulo?",
+     "a": "Yes. Amanpulo has its own PADI Dive Centre, reefs start 300 metres from shore, visibility runs 20 to 30 metres and most dive sites are less than 10 minutes away by boat."
+    },
+    {
+     "q": "When can you see turtles at Amanpulo?",
+     "a": "Pamalican is a nesting site for green and hawksbill turtles. Aman says laying females come ashore every year from June to October."
+    },
+    {
+     "q": "When is kitesurfing season?",
+     "a": "December to March, at Amanpulo's Kite Surf Centre, with instruction for all levels."
+    },
+    {
+     "q": "Is Amanpulo good for families?",
+     "a": "Yes. The villas sleep families with a private chef, butler and club cars, the Dive Centre runs Bubble Maker for children, and children aged 2 to 11 fly at a child fare."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "amanpuri",
    "name": "Amanpuri",
    "ledgerId": "STY-2026-000584",
@@ -2512,6 +2656,269 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "amorita-resort",
+   "name": "Amorita\nResort",
+   "ledgerId": "STY-2026-000609",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A clifftop resort above Alona Beach, 10 minutes from Bohol-Panglao airport",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amorita-resort/g10"
+   ],
+   "bestMonths": "Not published",
+   "bestMonthsNote": "Amorita does not publish best months, and the Department of Tourism pages read give none for Bohol.",
+   "bestFor": [
+    "honeymoon",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bohol-Panglao International Airport (TAG)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "98 rooms, suites and villas.",
+     "Deluxe Room (35 square metres) and Junior Suite (40).",
+     "One Bedroom Suite and One Bedroom Sea View Suite: 80 square metres.",
+     "Two Bedroom Sea View Suite: 120 square metres.",
+     "Pool Villa (120 square metres of garden) and Sea View Pool Villa, each with a plunge pool.",
+     "Two Bedroom Pool Villa: 240 square metres with a lap pool and private lawn."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Sunrise yoga, twice a week",
+     "Paddleboarding off Alona Beach",
+     "Free archery sessions",
+     "Sunset cocktails on Wednesdays and Fridays",
+     "Dolphin watching"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Four dining outlets, including Saffron and Tomar",
+     "Two infinity pools, M.Marinera and Azotea",
+     "Sea Tree Spa and gym",
+     "Secret Cove",
+     "ASEAN Green Hotel Award Hall of Famer"
+    ]
+   },
+   "onlyHere": [
+    "A secret cove under the cliff, with loungers on the rocks and the sound of the waves."
+   ],
+   "why": [
+    {
+     "title": "On the Cliff at Alona",
+     "body": "Amorita sits on a limestone cliff at the southern edge of Panglao Island, above Alona Beach and the Bohol Sea. It has 98 rooms, suites and villas, two infinity pools and the Sea Tree Spa, is an ASEAN Green Hotel Award Hall of Famer, and is ten minutes from Bohol-Panglao International Airport."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Amorita or the Department of Tourism pages read.",
+    "how_to_get_there": "Ten minutes by car from Bohol-Panglao International Airport. Amorita's packages include round-trip airport transfers.",
+    "signature_experiences": "The clifftop pools, the Sea Tree Spa, sunrise yoga and sunsets over Alona Beach.",
+    "who_its_for": "Couples in the pool villas and families in the two-bedroom suites and villa."
+   },
+   "faqs": [
+    {
+     "q": "Where is Amorita Resort?",
+     "a": "On a limestone cliff at the southern edge of Panglao Island, Bohol, above Alona Beach and the Bohol Sea."
+    },
+    {
+     "q": "How far is Amorita from the airport?",
+     "a": "About ten minutes from Bohol-Panglao International Airport."
+    },
+    {
+     "q": "How many rooms does Amorita have?",
+     "a": "Ninety-eight rooms, suites and villas, from 35 square metre Deluxe Rooms to the 240 square metre Two Bedroom Pool Villa with its own lap pool."
+    },
+    {
+     "q": "Does Amorita have pool villas?",
+     "a": "Yes. Pool Villas and Sea View Pool Villas have their own plunge pools, and the Two Bedroom Pool Villa has a lap pool and private lawn."
+    },
+    {
+     "q": "What is there to do at Amorita?",
+     "a": "Sunrise yoga, paddleboarding, free archery, sunset cocktails twice a week, the Sea Tree Spa and dolphin watching trips."
+    },
+    {
+     "q": "Is Amorita eco friendly?",
+     "a": "Amorita says it is an ASEAN Green Hotel Award Hall of Famer."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "amun-ini-beach-resort-and-spa",
+   "name": "Amun Ini\nBeach Resort",
+   "ledgerId": "STY-2026-000608",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Sixteen rooms above a white beach on Bohol's quiet east coast, with its own dive centre",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amun-ini-beach-resort-and-spa/g10"
+   ],
+   "bestMonths": "Not published",
+   "bestMonthsNote": "Amun Ini does not publish best months, and the Department of Tourism pages read give none for Bohol.",
+   "bestFor": [
+    "adventure",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bohol-Panglao International Airport (TAG)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "16 air conditioned rooms with sea view terraces",
+     "Deluxe King Room: 60 square metres, king bed",
+     "Deluxe Twin Room: 50 square metres, two single beds"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling, kayaking and paddleboarding",
+     "Nature walks, mountain biking and hiking",
+     "Lamanok Island and its caves",
+     "Tours to the Chocolate Hills and a tarsier reserve",
+     "Candijay falls and Cadapdapan rice terraces"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Infinity pool over the Bohol Sea",
+     "The Hilotarium spa, based on the Filipino hilot tradition",
+     "SSI dive centre with a camera room",
+     "Chill out terrace",
+     "Amun Ini Reef Relief conservation work"
+    ]
+   },
+   "onlyHere": [
+    "A spa with no walls on a rocky overhang above the beach, where the only music is the waves."
+   ],
+   "why": [
+    {
+     "title": "Bohol's Quiet Side",
+     "body": "Amun Ini is a small resort of 16 rooms at Anda on the far east end of Bohol, away from the busier parts of the island. An infinity pool looks across the Bohol Sea to Camiguin, the spa sits open to the waves on a rocky overhang, and more than 38 dive sites lie within minutes."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Amun Ini or the Department of Tourism pages read.",
+    "how_to_get_there": "Amun Ini does not publish transfer details. It is at Anda on Bohol's east end; the house arranges the drive from Bohol-Panglao International Airport.",
+    "signature_experiences": "Diving Anda's walls and critter sites, the Hilotarium spa, and country tours to the Chocolate Hills and a tarsier reserve.",
+    "who_its_for": "Divers and couples who want a small, quiet resort away from Panglao."
+   },
+   "faqs": [
+    {
+     "q": "Where is Amun Ini?",
+     "a": "At Candabong in Anda, on the east end of Bohol, far from the more crowded parts of the island."
+    },
+    {
+     "q": "How many rooms does Amun Ini have?",
+     "a": "Sixteen air conditioned rooms: Deluxe King Rooms of 60 square metres and Deluxe Twin Rooms of 50, all with sea view terraces."
+    },
+    {
+     "q": "Is Amun Ini good for diving?",
+     "a": "Yes. Its SSI dive centre has more than 38 dive sites, all less than 10 minutes from the dive shop, with two guided dives morning and afternoon, a mandarin dive at 5pm and a night dive at 6pm."
+    },
+    {
+     "q": "Is there a spa?",
+     "a": "Yes. The Hilotarium sits open to the sea on a rocky overhang and bases its treatments on hilot, the traditional Filipino healing massage, with therapists from the surrounding villages."
+    },
+    {
+     "q": "What can you do on land?",
+     "a": "Nature walks, mountain biking and hiking, Lamanok Island and its caves, Candijay falls, the Cadapdapan rice terraces, and tours to the Chocolate Hills and a tarsier reserve."
+    },
+    {
+     "q": "How do you get to Amun Ini?",
+     "a": "Amun Ini does not publish transfer times. The house arranges the drive from Bohol-Panglao International Airport to Anda."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -4505,6 +4912,144 @@
    "placeSlug": null
   },
   {
+   "slug": "atmosphere-resorts-and-spa",
+   "name": "Atmosphere\nResorts & Spa",
+   "ledgerId": "STY-2026-000607",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A garden resort on the Dauin coast, between the mountains and the sea, across from Apo Island",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/atmosphere-resorts-and-spa/g10"
+   ],
+   "bestMonths": "November to May",
+   "bestMonthsNote": "Atmosphere does not publish best months. The Department of Tourism gives November to May for Apo Island, a short boat ride away; June to October boats are often cancelled.",
+   "bestFor": [
+    "family",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 9.160001,
+    "lng": 123.244305
+   },
+   "airport": "Dumaguete Sibulan Airport (DGT)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Pool Suites with private pools.",
+     "Deluxe and Premium Suites, and Garden Studios with a separate lounge and kitchen.",
+     "Family Suites (4): 90 square metres, up to 4 guests.",
+     "Duplex Family Suites (3): 120 square metres, two connected bedrooms, up to 6.",
+     "Penthouses (4): 205 square metres, two bedrooms and a kitchen, up to 5."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Apo Island by boat",
+     "Freediving courses",
+     "A day in the kitchen with the chefs",
+     "Visits to the Atmosphere Soup Kitchen"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Garden spa, named Best Luxury Garden Spa in Asia by the resort",
+     "PADI dive centre with a marine biologist on the team",
+     "Swimming pools and outdoor gym",
+     "Snorkelling equipment for overnight guests",
+     "Kids diving and snorkel guides for children"
+    ]
+   },
+   "onlyHere": [
+    "Apo Island's reefs are a short boat ride away, and the resort's Soup Kitchen feeds up to 80 local children five days a week."
+   ],
+   "why": [
+    {
+     "title": "Dauin, Between Mountains and Sea",
+     "body": "Atmosphere sits among coconut plantations on the Dauin coast of Negros Oriental, between the mountains and the sea and across the water from Apo Island. It is a family friendly garden resort with an award winning spa, and its own house reef where turtles feed."
+    }
+   ],
+   "facts": {
+    "best_months": "November to May for Apo Island, per the Department of Tourism. Atmosphere does not publish its own.",
+    "how_to_get_there": "Fly to Dumaguete from Manila (just over an hour) or Cebu. Atmosphere collects you by private van, about 30 minutes, booked 48 hours ahead. You can also come overland from Cebu with a 30 minute ferry, or by ferry from Cebu City or Bohol.",
+    "signature_experiences": "Diving and snorkelling the house reef and Apo Island, the garden spa and the Treehouse dinners.",
+    "who_its_for": "Families, divers and couples looking for a relaxed garden resort with a strong spa."
+   },
+   "faqs": [
+    {
+     "q": "Where is Atmosphere Resorts & Spa?",
+     "a": "At Maayong Tubig in Dauin, Negros Oriental, near the city of Dumaguete, between the mountains and the sea and across from Apo Island."
+    },
+    {
+     "q": "How do you get to Atmosphere?",
+     "a": "Fly to Dumaguete, just over an hour from Manila, or from Cebu. Atmosphere can collect you by private van if you contact it 48 hours ahead. Ferries also run from Cebu and sometimes from Bohol."
+    },
+    {
+     "q": "Is Atmosphere good for families?",
+     "a": "Yes. It has Family Suites for four, Duplex Family Suites for six and two-bedroom Penthouses, kids dining, snorkel guides for children and babysitting on dive boats. In July and August children under 12 stay free."
+    },
+    {
+     "q": "Is the diving good at Atmosphere?",
+     "a": "Yes. Atmosphere says Apo Island is a short boat ride away, the Dauin coast is known for rare critters, and its house reef has turtles and mandarinfish at dusk. Its PADI centre takes small groups of up to four divers per guide."
+    },
+    {
+     "q": "What rooms does Atmosphere have?",
+     "a": "Pool Suites, Deluxe and Premium Suites, Garden Studios with a kitchen, Family Suites, Duplex Family Suites and two-bedroom Penthouses, all set in tropical gardens with private terraces."
+    },
+    {
+     "q": "What is included in a stay?",
+     "a": "Daily breakfast, wifi, filtered water with reusable bottles, use of the pools and outdoor gym, snorkelling equipment and a short head massage during your stay."
+    },
+    {
+     "q": "Does Atmosphere support the local community?",
+     "a": "Yes. Its Soup Kitchen gives up to 80 children a balanced lunch five days a week, and guests can visit free of charge."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "families",
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "atzaro-okavango-camp",
    "name": "Atzaró Okavango",
    "ledgerId": "STY-2026-000025",
@@ -5391,6 +5936,153 @@
    "placeSlug": null
   },
   {
+   "slug": "banwa-private-island",
+   "name": "Banwa\nPrivate Island",
+   "ledgerId": "STY-2026-000605",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A whole island in a protected marine sanctuary, with six beach villas and spring water pools",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/banwa-private-island/g10"
+   ],
+   "bestMonths": "November to May",
+   "bestMonthsNote": "Banwa does not publish best months. The Department of Tourism gives November to May for Puerto Princesa, where Banwa's road and boat route starts, and December to April for El Nido.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Puerto Princesa (PPS), El Nido (ENI) or San Vicente; or direct helicopter",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Six beachfront villas, each with a spring water pool",
+     "South Two and North Two Villas: 2 bedrooms, 4 to 6 guests",
+     "South West Villa: 4 bedrooms, 8 to 12 guests",
+     "Axis Garden Rooms: 12 bedrooms for 12 to 24 guests",
+     "All inclusive; up to 40 guests on the island"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Kayaks, paddleboards, Hobie sailing and catamarans",
+     "The Tabon bird sanctuary walk",
+     "Barbacan River mangrove cruise",
+     "Sunset cruise to Pagbu Island for the flying fox flyout",
+     "Ilian River and Bagong Bayan Falls",
+     "Stargazing"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Latitude restaurant, with in-villa dining",
+     "Meridian Centre for massage, gym, yoga and Pilates studio",
+     "PADI dive centre and house reef",
+     "Nine hole golf course and tennis",
+     "Artesian spring water well, bottled as Banwater",
+     "Organic farm on Palawan",
+     "Kids team"
+    ]
+   },
+   "onlyHere": [
+    "Banwa has recorded its 10,000th hawksbill turtle nesting, and at Pagbu Island nearby tens of thousands of flying foxes leave for Palawan five minutes after sunset."
+   ],
+   "why": [
+    {
+     "title": "The Whole Island, Mosquito Free",
+     "body": "Banwa is a private island in a protected marine sanctuary off Palawan, inside the UNESCO Palawan Biosphere Reserve. It has six beachfront villas that Banwa calls among the largest in the world, each with a pool of spring water from the island's own artesian well, and it takes up to 40 guests. The island is mosquito free and run with its Aquos Foundation, which has recorded 10,000 hawksbill turtle nestings."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Banwa. The Department of Tourism gives December to April for El Nido and November to May for Puerto Princesa.",
+    "how_to_get_there": "By direct helicopter transfer to the island. Or fly to Puerto Princesa, El Nido or San Vicente, then about 2 hours by road and about 25 minutes by Banwa speedboat.",
+    "signature_experiences": "Whole-island privacy, diving the house reef, turtle conservation with the Aquos Foundation, river cruises and the Pagbu Island flying foxes.",
+    "who_its_for": "Couples, families of any size and groups taking the island, up to 40 guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Banwa Private Island?",
+     "a": "Off Palawan in the Sulu Sea, in a protected marine sanctuary inside the UNESCO Palawan Biosphere Reserve."
+    },
+    {
+     "q": "How do you get to Banwa?",
+     "a": "By direct helicopter transfer, or by flying to Puerto Princesa, El Nido or San Vicente, driving about two hours and crossing by Banwa speedboat in about 25 minutes."
+    },
+    {
+     "q": "How many villas does Banwa have?",
+     "a": "Six beachfront villas of one, two and four bedrooms, each with a spring water pool, plus the 12 bedroom Axis Garden Rooms. The island takes up to 40 guests."
+    },
+    {
+     "q": "Can you take the whole island?",
+     "a": "Yes. Banwa offers island charters for families, celebrations and corporate events, and weddings for up to 40 guests."
+    },
+    {
+     "q": "Is Banwa all inclusive?",
+     "a": "Yes. Banwa is offered on an all inclusive basis, with international and Filipino cuisine of your choice in the villa or at the Latitude restaurant."
+    },
+    {
+     "q": "Is Banwa good for diving?",
+     "a": "Yes. It has its own PADI dive centre, a house reef reached from the beach or jetty, and more than 15 dive sites within an hour, including wrecks."
+    },
+    {
+     "q": "Is Banwa good for children?",
+     "a": "Yes. A dedicated kids team runs a programme for the whole family, and the Tabon bird sanctuary walk suits children and adults."
+    },
+    {
+     "q": "Are there mosquitoes on Banwa?",
+     "a": "Banwa says the island is completely mosquito free."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-02",
+     "PATH-06"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "private_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "banyan-tree-krabi",
    "name": "Banyan Tree \n Krabi",
    "ledgerId": "STY-2026-000033",
@@ -5840,6 +6532,133 @@
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "bintana-sa-paraiso",
+   "name": "Bintana\nsa Paraiso",
+   "ledgerId": "STY-2026-000610",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Two small hideaways on volcanic Camiguin, one by a hot spring that runs into the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bintana-sa-paraiso/g10"
+   ],
+   "bestMonths": "Not published",
+   "bestMonthsNote": "Bintana sa Paraiso does not publish best months, and the Department of Tourism pages read give none for Camiguin.",
+   "bestFor": [
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Camiguin",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Naasag: hillside villas with private infinity pools and butler style service, above the Bohol Sea.",
+     "Binunsaran: bamboo rooms in the jungle with hammocks, large bathrooms and in-room breakfast, a shared pool and views of White Island."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The hot spring at Naasag",
+     "Stargazing from the villas",
+     "Spa treatments by the pool",
+     "Exploring Camiguin"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A natural hot spring steps from Naasag",
+     "Joshua + Luke restaurant at Binunsaran",
+     "Spa and couples massage",
+     "Floating breakfasts",
+     "Pet friendly"
+    ]
+   },
+   "onlyHere": [
+    "A hot spring a few steps away that runs straight into the sea, under the volcano."
+   ],
+   "why": [
+    {
+     "title": "A Window to Paradise",
+     "body": "Bintana sa Paraiso, Bisaya for window to paradise, is two small boutique hideaways on Camiguin. At Naasag, villas with private infinity pools sit on a hillside at the foot of Mount Hibok-Hibok, steps from a secluded hot spring that flows into the Bohol Sea. At Binunsaran, bamboo rooms in the jungle look out to White Island."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by the hotel or the Department of Tourism pages read.",
+    "how_to_get_there": "Bintana sa Paraiso does not publish transfer details. The house arranges the journey to Camiguin and on to Mambajao.",
+    "signature_experiences": "The Naasag hot spring, private infinity pools facing the Bohol Sea, and the jungle at Binunsaran with views of White Island.",
+    "who_its_for": "Honeymooners and couples at Naasag; nature lovers and wellness seekers at Binunsaran."
+   },
+   "faqs": [
+    {
+     "q": "Where is Bintana sa Paraiso?",
+     "a": "On Camiguin Island, in two places: Naasag, on a hillside at the foot of Mount Hibok-Hibok above the Bohol Sea, and Binunsaran, in the jungle looking out to White Island."
+    },
+    {
+     "q": "What does Bintana sa Paraiso mean?",
+     "a": "Window to paradise, in Bisaya."
+    },
+    {
+     "q": "Which location suits couples?",
+     "a": "Naasag, which has private infinity pools in every room, butler style service and a secluded hot spring steps away. The hotel calls it ideal for honeymooners."
+    },
+    {
+     "q": "What is Binunsaran like?",
+     "a": "An eco luxury mountaintop retreat in the jungle, built of bamboo, with hammocks, large bathrooms, in-room breakfast, a shared pool, the Joshua + Luke restaurant and views of White Island."
+    },
+    {
+     "q": "Is there a spa?",
+     "a": "Yes. Treatments include couples massage by the pool, body scrubs, deep tissue massage, facials and reflexology."
+    },
+    {
+     "q": "Are pets allowed?",
+     "a": "Yes. Bintana sa Paraiso describes both resorts as pet friendly."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-03",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -6685,6 +7504,143 @@
     "6ae6975c551eb032b92a9bb9",
     "6ae6975ce57b8ac515e24326"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "busuanga-bay-lodge",
+   "name": "Busuanga\nBay Lodge",
+   "ledgerId": "STY-2026-000615",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A boutique lodge on Busuanga's bay, for the nights between flights and boats",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/busuanga-bay-lodge/g10"
+   ],
+   "bestMonths": "Late November to May",
+   "bestMonthsNote": "Busuanga Bay Lodge does not publish best months. The Department of Tourism gives late November to May for Coron.",
+   "bestFor": [
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 12.023871,
+    "lng": 119.974586
+   },
+   "airport": "Francisco B. Reyes Airport, Busuanga (USU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "41 units: 38 rooms and 3 two-bedroom villas",
+     "Two-Bedroom Villa: about 187 square metres, plunge pool, up to 4",
+     "Clubhouse Suite: 60 square metres with a bathtub",
+     "Hilltop Suite: 45 square metres, the best views",
+     "Waterfront King and Twin: 53 square metres",
+     "Bayview Bungalow and Clubhouse Superior: 35 square metres"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Diving, with SDI courses from Discover Scuba to Rescue Diver",
+     "Kayaking and paddleboarding",
+     "Private tours to the Lusong Gunboat, Coral Garden and Calumbuyan",
+     "Pass Island, Maltatayoc and Black Island",
+     "Calauit Safari Park"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Pavilion Restaurant",
+     "Infinity pool and gym",
+     "Daily light breakfast",
+     "Non motorised water sports",
+     "Dive courses at the lodge"
+    ]
+   },
+   "onlyHere": [
+    "The Lusong Gunboat, a Second World War wreck shallow enough to snorkel, is one of the lodge's private tours."
+   ],
+   "why": [
+    {
+     "title": "Between the Airport and the Islands",
+     "body": "Busuanga Bay Lodge is a boutique resort hotel on the bay of Busuanga, with 41 rooms, suites and villas looking over mountain and sea. It is the house's overnight on the Calamian side, before or after the islands."
+    }
+   ],
+   "facts": {
+    "best_months": "Late November to May for Coron, per the Department of Tourism. The lodge does not publish its own.",
+    "how_to_get_there": "Fly to Busuanga, about 45 minutes to an hour from Manila, Clark, Cebu, Puerto Princesa, El Nido and Boracay. Round-trip airport transfers are included for direct bookings of at least two nights.",
+    "signature_experiences": "Diving and snorkelling tours to the Lusong Gunboat and Coral Garden, island days and Calauit Safari Park.",
+    "who_its_for": "Travellers who need a comfortable night near Busuanga airport, and families in the two-bedroom villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Busuanga Bay Lodge?",
+     "a": "On the bay of Busuanga Island in the Calamian group of northern Palawan, the island where Coron's airport is."
+    },
+    {
+     "q": "How do you get to Busuanga Bay Lodge?",
+     "a": "Fly to Busuanga, about 45 minutes to an hour from Manila, Clark, Cebu, Puerto Princesa, El Nido or Boracay. Round-trip airport transfers are included with direct bookings of two nights or more."
+    },
+    {
+     "q": "How many rooms does it have?",
+     "a": "Forty-one: 38 rooms and suites and three private two-bedroom villas of about 187 square metres with plunge pools."
+    },
+    {
+     "q": "Is breakfast included?",
+     "a": "Yes. Rooms include a daily light breakfast, use of the gym and infinity pool, and non motorised water sports."
+    },
+    {
+     "q": "Can you dive from Busuanga Bay Lodge?",
+     "a": "Yes. Diving is a home activity, with SDI courses from Discover Scuba to Rescue Diver and specialty courses such as wreck, deep and nitrox."
+    },
+    {
+     "q": "What tours can the lodge arrange?",
+     "a": "Private tours to the Lusong Gunboat wreck, Coral Garden, Calumbuyan, Pass Island, Maltatayoc and Black Island, and to Calauit Safari Park."
+    },
+    {
+     "q": "Is there wifi?",
+     "a": "Limited satellite wifi is available at the Pavilion Restaurant."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -8206,6 +9162,150 @@
     "6ae666174efda236c530e858",
     "6ae666174efda236c530e85e"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "cauayan-boutique-private-island",
+   "name": "Cauayan Boutique\nPrivate Island",
+   "ledgerId": "STY-2026-000597",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A private island in Bacuit Bay with just 30 villas, eight of them with their own pools",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/cauayan-boutique-private-island/g10"
+   ],
+   "bestMonths": "December to April",
+   "bestMonthsNote": "Cauayan does not publish best months. The Department of Tourism gives December to April as El Nido's best months, with the calmest seas.",
+   "bestFor": [
+    "honeymoon",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 11.2613249,
+    "lng": 119.3530502
+   },
+   "airport": "Lio Airport, El Nido (ENI)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Cauayan has 30 villas in eight types",
+     "Lagoon Villa and Beach View Villa: 55 square metres, up to 2 guests",
+     "Beach Front Villa: 70 square metres, up to 3 guests",
+     "Water Villa: 60 square metres, up to 2 guests"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Island hopping, group or private, with guided snorkelling stops",
+     "Sunrise and sunset hikes to the island's summit",
+     "Sunset cruise",
+     "Kayaking and paddleboarding to the mangroves and limestone cliffs",
+     "Floating brunch in the Pool Villas",
+     "Private dinners by the beach, in a gazebo or over the water"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Infinity pool facing the beach",
+     "Hapag sa Cauayan restaurant and Inom sa Cauayan bar",
+     "Haplos sa Cauayan spa",
+     "Cauayan Diving Center, with PADI courses",
+     "Solar power plant and desalination",
+     "Fitness centre and boutique"
+    ]
+   },
+   "onlyHere": [
+    "One of the few private islands in Bacuit Bay, with its own pool villas and a 25 minute speedboat from El Nido Port."
+   ],
+   "why": [
+    {
+     "title": "Thirty Villas on Their Own Island",
+     "body": "Cauayan is a private island in El Nido's Bacuit Bay with just 30 villas, from lagoon and water villas to 185 square metre pool villas with optional butler service. The island runs on solar power and its own desalinated water, and the boat from El Nido Port takes 20 to 30 minutes."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April, El Nido's best months per the Department of Tourism. Cauayan does not publish its own.",
+    "how_to_get_there": "Fly to Lio Airport (ENI) in El Nido. Cauayan meets guests at the terminal for a 20 minute drive to El Nido Port, then a 20 to 30 minute speedboat. Arrivals after 4pm are not advised because of night navigation rules. Breakfast and round-trip land and boat transfers are included in the rate.",
+    "signature_experiences": "Island hopping and snorkelling in Bacuit Bay, diving with the Cauayan Diving Center, sunset hikes, a sunset cruise and private dinners over the water.",
+    "who_its_for": "Couples and honeymooners, and families in the larger pool villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Cauayan Boutique Private Island?",
+     "a": "Cauayan is a private island in Bacuit Bay, El Nido, Palawan, about 25 minutes by speedboat from El Nido Port."
+    },
+    {
+     "q": "How do you get to Cauayan?",
+     "a": "Fly to Lio Airport in El Nido, where Cauayan's representative meets you. A 20 minute van ride takes you to El Nido Port, then a 20 to 30 minute speedboat crosses to the island. Round-trip land and boat transfers are included in the rate."
+    },
+    {
+     "q": "Can you arrive late in the day?",
+     "a": "Cauayan advises against flights landing after 4pm, because boat transfers follow the Philippine Coast Guard's night navigation rules. A 7am departing flight is also not advised, since guests leave the island at least three hours before their flight."
+    },
+    {
+     "q": "What villas does Cauayan have?",
+     "a": "Thirty villas in eight types: Lagoon and Beach View Villas of 55 square metres, Beach Front Villas of 70, Water Villas of 60, and four kinds of Cauayan Pool Villa of 185 square metres for up to four guests, with optional butler service."
+    },
+    {
+     "q": "Is Cauayan good for diving?",
+     "a": "Yes. The Cauayan Diving Center runs PADI courses and says it has more than 18 sites near the island for all levels, from 6 to 30 metres."
+    },
+    {
+     "q": "Are children welcome at Cauayan?",
+     "a": "Yes. Children aged 5 and under sharing a bed stay free with breakfast. Children aged 6 to 11 sharing a bed pay a nightly child supplement, which includes breakfast and transfers."
+    },
+    {
+     "q": "Is Cauayan all-inclusive?",
+     "a": "Breakfast is included. Cauayan also offers full board and two all-inclusive meal plans, Infinity Indulgence and the three-night-minimum Infinity Luxe Experience, which must cover the whole stay."
+    },
+    {
+     "q": "How sustainable is Cauayan?",
+     "a": "The island runs mainly on its own solar power plant, makes drinking water by desalination, treats its wastewater for irrigation, composts, grows herbs and vegetables for the kitchen and supports turtle nesting and reef projects in El Nido."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -9932,6 +11032,108 @@
    "placeSlug": null
   },
   {
+   "slug": "conrad-bora-bora-nui",
+   "name": "Conrad Bora Bora Nui",
+   "ledgerId": "STY-2026-000618",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Overwater, hillside and garden villas on Bora Bora's private motu with a mountain.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/conrad-bora-bora-nui/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/conrad-bora-bora-nui/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/conrad-bora-bora-nui/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/conrad-bora-bora-nui/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/conrad-bora-bora-nui/g4"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Bora Bora Airport (BOB)",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, then the resort's boat. Ask for the transfer time when you book.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Overwater villas",
+     "Hillside lagoon view suites",
+     "Villas on the land",
+     "Presidential Overwater Villa"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "On Bora Bora's private motu with a mountain, in Conrad's words",
+     "Hina Spa",
+     "Overwater, hillside and garden villas"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {
+    "best_months": "The resort does not publish a best season. Tahiti Tourisme puts the Society Islands' dry season at May to October.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, about 50 minutes, then the resort's boat. Conrad does not publish the transfer time.",
+    "signature_experiences": "Overwater villas, Hina Spa, the Iriatai wine bar and the hillside views from its own motu.",
+    "who_its_for": "Couples and families who want a choice of overwater, hillside or garden villas on a quieter motu."
+   },
+   "faqs": [
+    {
+     "q": "Where is Conrad Bora Bora Nui?",
+     "a": "On its own motu in the Bora Bora lagoon, which Conrad calls Bora Bora's private motu with a mountain."
+    },
+    {
+     "q": "What kinds of rooms are there?",
+     "a": "Overwater villas, hillside lagoon view suites and villas on the land, up to a Presidential Overwater Villa."
+    },
+    {
+     "q": "Where do you eat?",
+     "a": "Banyan, Upa Upa Lounge Bar, Tamure Beach Grill, Tarava Pool Bar and Iriatai, which Conrad describes as five unique restaurants and bars."
+    },
+    {
+     "q": "Is there a spa?",
+     "a": "Yes, Hina Spa."
+    },
+    {
+     "q": "How do you get there?",
+     "a": "Fly from Tahiti to Bora Bora with Air Tahiti, about 50 minutes, then the resort's boat; ask for the transfer time when you book."
+    },
+    {
+     "q": "Is any work under way at the resort?",
+     "a": "Conrad's site carries a Resort Enhancements notice; the house checks what it affects when you book."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (French Polynesia build)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "conrad-tulum-riviera-maya",
    "name": "Conrad Tulum Riviera Maya",
    "ledgerId": "STY-2026-000064",
@@ -10704,6 +11906,131 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "discovery-coron",
+   "name": "Discovery\nCoron",
+   "ledgerId": "STY-2026-000601",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 19 hectare island resort off Coron, formerly Club Paradise Palawan",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/discovery-coron/g10"
+   ],
+   "bestMonths": "Late November to May",
+   "bestMonthsNote": "Discovery Coron does not publish best months. The Department of Tourism gives late November to May for Coron.",
+   "bestFor": [
+    "family",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Francisco B. Reyes Airport, Busuanga (USU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "74 suites and villas.",
+     "Garden Suite and Oceanview Suite (40 square metres, two queens or a king, balcony and day bed).",
+     "Sunrise Villa Premier, Sunset Villa and Nature Villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Hikes through the island's forest",
+     "Beach days on the jungle-fringed shore"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Dugong Bar",
+     "Spa",
+     "In-room dining and turndown"
+    ]
+   },
+   "onlyHere": [
+    "A long-running Calamian island resort on its own 19 hectares, inside the Palawan Biosphere Reserve."
+   ],
+   "why": [
+    {
+     "title": "Formerly Club Paradise",
+     "body": "Discovery Coron, formerly Club Paradise Palawan, is an exclusive 19 hectare island property off Coron, inside the UNESCO Palawan Biosphere Reserve. It has 74 suites and villas beside a jungle-fringed beach, now run under the Discovery name."
+    }
+   ],
+   "facts": {
+    "best_months": "Late November to May for Coron, per the Department of Tourism. Discovery Coron does not publish its own.",
+    "how_to_get_there": "Fly to Busuanga for Coron. Discovery Coron does not publish transfer times on the pages read; the house confirms them when it books.",
+    "signature_experiences": "An island of its own off Coron, forest hikes and the beach.",
+    "who_its_for": "Couples and families wanting a full-service island resort near Coron."
+   },
+   "faqs": [
+    {
+     "q": "Is Discovery Coron the same as Club Paradise?",
+     "a": "Yes. The resort's own site says Discovery Coron was formerly Club Paradise Palawan."
+    },
+    {
+     "q": "Where is Discovery Coron?",
+     "a": "On an exclusive 19 hectare island property off Coron in northern Palawan, inside the UNESCO Palawan Biosphere Reserve."
+    },
+    {
+     "q": "How many rooms does it have?",
+     "a": "Seventy-four suites and villas: Garden and Oceanview Suites, Sunrise Villa Premier, Sunset Villas and Nature Villas."
+    },
+    {
+     "q": "What is the Oceanview Suite like?",
+     "a": "Forty square metres with two queen beds or a king, a private balcony and a day bed, beside the jungle-fringed beach."
+    },
+    {
+     "q": "How do you get to Discovery Coron?",
+     "a": "Fly to Busuanga airport for Coron. The resort's pages read do not give transfer times, so the house confirms them when booking."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "The Department of Tourism gives late November to May for Coron, with the clearest water from March to May."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -14672,6 +15999,150 @@
    "placeSlug": null
   },
   {
+   "slug": "flower-island-resort",
+   "name": "Flower Island\nResort",
+   "ledgerId": "STY-2026-000598",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A small barefoot island in Taytay Bay, reached by speedboat, seaplane or helicopter",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/flower-island-resort/g10"
+   ],
+   "bestMonths": "December to April",
+   "bestMonthsNote": "Flower Island does not publish best months. The Department of Tourism gives December to April as the best months for El Nido, the nearest airport.",
+   "bestFor": [
+    "honeymoon",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 11.137186,
+    "lng": 119.6548762
+   },
+   "airport": "Lio Airport, El Nido (ENI), or Puerto Princesa (PPS)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Standard Bamboo Suite: 31 square metres, beach view, 2 guests",
+     "Deluxe Beach Villa: 43 square metres, beachfront veranda",
+     "Designer Villa: 84 square metres, Balinese inspired, open-air bathroom",
+     "Presidential Villa: 250 square metres, beachfront, with butler service"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Scuba diving at nearby sites, and freediving",
+     "Island hopping and snorkelling",
+     "Private island picnics",
+     "Trekking to The Peak and its lighthouse",
+     "Kayaking and paddleboarding from the beach",
+     "A working pearl farm tour"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Pearl Restaurant and Spigao Bar, Asian and Filipino",
+     "Spa and massage",
+     "Seaside pool",
+     "Mini gym and activity court",
+     "Jewelmer boutique of South Sea pearls",
+     "Speedboat transfers"
+    ]
+   },
+   "onlyHere": [
+    "A Taytay Bay island with a working pearl farm next door, a Jewelmer pearl boutique and its own lighthouse peak."
+   ],
+   "why": [
+    {
+     "title": "A Quiet Island in Taytay Bay",
+     "body": "Flower Island is a private island off Taytay in northern Palawan, far from the El Nido boat traffic. The resort has looked after the island's plants and wildlife for more than three decades, and its house reef is right off the beach."
+    }
+   ],
+   "facts": {
+    "best_months": "December to April for El Nido, the nearest airport, per the Department of Tourism. Flower Island does not publish its own.",
+    "how_to_get_there": "By charter: a seaplane from Puerto Princesa with a one hour scenic flight (up to 4 passengers), or a helicopter round trip from Manila (up to 4). Or fly to El Nido, drive about an hour to Sibaltan Pier and take the included 45 minute speedboat; or fly to Puerto Princesa, drive about 3 hours to Taytay Pier and take a speedboat of about an hour.",
+    "signature_experiences": "Diving and freediving, island hopping, private island picnics, the hike to The Peak and a pearl farm tour.",
+    "who_its_for": "Couples and families looking for a quiet island away from the El Nido crowds."
+   },
+   "faqs": [
+    {
+     "q": "Where is Flower Island Resort?",
+     "a": "On Big Budacan Island in Barangay Casian, Taytay, northern Palawan, in Taytay Bay away from the El Nido island circuit."
+    },
+    {
+     "q": "Can you fly to Flower Island by seaplane or helicopter?",
+     "a": "Yes. Flower Island offers a seaplane from Puerto Princesa with Horizon Sun Charters, including a one hour scenic flight over the Palawan islands, and a round-trip helicopter from Manila. Each takes up to four passengers."
+    },
+    {
+     "q": "How do you get there without a charter?",
+     "a": "Fly to El Nido, take a private van of about an hour to Sibaltan Pier, then the 45 minute speedboat included in the room package. Or fly to Puerto Princesa, drive about three hours to Taytay Pier and take a speedboat of about an hour."
+    },
+    {
+     "q": "What rooms does Flower Island have?",
+     "a": "The stay page lists the Standard Bamboo Suite of 31 square metres, the Deluxe Beach Villa of 43, the Designer Villa of 84 and the Presidential Villa of 250 square metres with butler service."
+    },
+    {
+     "q": "Is there good snorkelling and diving at Flower Island?",
+     "a": "The resort offers scuba diving at nearby sites with licensed divers, freediving in the calm water around the island, and island hopping with snorkelling stops."
+    },
+    {
+     "q": "Is breakfast included?",
+     "a": "Yes. Flower Island includes a breakfast buffet. Meals are at the Pearl Restaurant and Spigao Bar, serving Asian and Filipino food."
+    },
+    {
+     "q": "Who is Flower Island best for?",
+     "a": "Flower Island says it suits couples, families and travellers looking for a quiet island getaway with curated experiences."
+    },
+    {
+     "q": "What else is there to do?",
+     "a": "Hike to The Peak and its lighthouse, kayak or paddleboard from the beach, take a private picnic on a nearby island, or visit a working pearl farm to see how pearls are grown."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "fogo-island-inn",
    "name": "Room & Wild \n Fogo Island Inn",
    "ledgerId": "STY-2026-000098",
@@ -17310,6 +18781,134 @@
    "placeSlug": null
   },
   {
+   "slug": "hotel-okura-manila",
+   "name": "Hotel Okura\nManila",
+   "ledgerId": "STY-2026-000611",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A Japanese hotel opposite NAIA Terminal 3, with hinoki cypress baths",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-okura-manila/g10"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "A city hotel used for first and last nights; the islands' seasons are on the Philippines page.",
+   "bestFor": [
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 14.519536,
+    "lng": 121.017976
+   },
+   "airport": "Ninoy Aquino International Airport (MNL), Terminal 3",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Rooms, king or twin",
+     "Premier Corner Rooms",
+     "Palace Suites with a hinoki tub and rainfall shower"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "A seasonal kaiseki dinner at Yamazato",
+     "A soak in a hinoki cypress tub",
+     "An easy walk to Terminal 3 for early flights to Palawan and the Visayas"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Yamazato, Japanese fine dining with teppanyaki and sushi counters",
+     "Okura At Home",
+     "In-room dining",
+     "The Rooftop",
+     "Fitness centre"
+    ]
+   },
+   "onlyHere": [
+    "Hinoki cypress tubs handcrafted in Nagano, a short walk from Manila's Terminal 3."
+   ],
+   "why": [
+    {
+     "title": "Japan, Opposite the Airport",
+     "body": "Hotel Okura Manila stands opposite Terminal 3 of Ninoy Aquino International Airport, at Newport World Resorts in Pasay. It brings Okura's Japanese hospitality to Manila: Hinoki-yu rooms with tubs of Japanese cypress handmade in Nagano, and Yamazato, the hotel's Japanese fine dining restaurant. The house uses it for the night before or after the islands."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round; a gateway hotel for first and last nights.",
+    "how_to_get_there": "Okura says it is opposite Ninoy Aquino International Airport Terminal 3.",
+    "signature_experiences": "Kaiseki at Yamazato and the Hinoki-yu Rooms.",
+    "who_its_for": "Travellers connecting through Manila who want a quiet, refined night by the airport."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hotel Okura Manila?",
+     "a": "At 2 Portwood Street, Newport World Resorts, Newport City, Pasay, opposite Ninoy Aquino International Airport Terminal 3."
+    },
+    {
+     "q": "Why stay at Okura before Palawan?",
+     "a": "It is opposite NAIA Terminal 3, so an early domestic connection the next morning is easy after a long-haul arrival."
+    },
+    {
+     "q": "What are the Hinoki-yu Rooms?",
+     "a": "Rooms with tubs of hinoki, Japanese cypress, handcrafted by artisans from Nagiso Town in Nagano Prefecture, in king or twin layouts."
+    },
+    {
+     "q": "Where can you eat?",
+     "a": "Yamazato, the hotel's signature Japanese fine dining restaurant with teppanyaki and sushi counters, plus Okura At Home and in-room dining."
+    },
+    {
+     "q": "Which rooms does Okura have?",
+     "a": "Deluxe Rooms, Premier Corner Rooms, Hinoki-yu Rooms and Palace Suites, the suites with a hinoki tub and rainfall shower."
+    },
+    {
+     "q": "How do you book Okura safely?",
+     "a": "Okura warns that people reselling its rooms on social media are not connected to the hotel. The house books through the hotel's official channels."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "city",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "hotel-panamera",
    "name": "Hotel Panamera",
    "ledgerId": "STY-2026-000109",
@@ -18498,6 +20097,128 @@
    "arrivalHubIds": [
     "6ae6974f296589197583f634"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "intercontinental-tahiti-resort-spa",
+   "name": "InterContinental Tahiti Resort & Spa",
+   "ledgerId": "STY-2026-000616",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Tahiti's lagoon resort facing Moorea: 246 rooms, overwater bungalows and the Fare I'a lagoonarium.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/intercontinental-tahiti-resort-spa/g5"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the dry season at May to October.",
+   "bestFor": [],
+   "status": "founder_returned",
+   "statusDate": "2025-05-01",
+   "coords": {
+    "lat": -17.5720742,
+    "lng": -149.6194924
+   },
+   "airport": "Tahiti Faa'a International Airport (PPT)",
+   "airportDirections": "Every international flight lands at Tahiti Faa'a (PPT); the resort is on Tahiti's west coast. Ask for transfer timing when you book.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Classic Room (26 sq m, 2 adults and 1 child)",
+     "Premium Room (37 sq m, 3 adults or 2 adults and 2 children)",
+     "Premium Deluxe Room (37 sq m, 2 adults)",
+     "Junior Suite (44 sq m, 2 adults and 1 child)",
+     "One Bedroom Suite Ocean View (120 sq m, 2 adults and 1 child)",
+     "Overwater Bungalow Ocean View (37 sq m, 2 adults and 2 children)",
+     "Overwater Bungalow Moorea View (37 sq m, 2 adults and 1 child)"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling the Fare I'a lagoonarium",
+     "A guided sea turtle tour, Te mana o te moana",
+     "Scuba diving with the resort's dive partner",
+     "Padel and tennis courts",
+     "Land, air and sea excursions from Tahiti"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "246 rooms, including overwater bungalows and a villa",
+     "Views across the lagoon to Moorea",
+     "Fare I'a, a protected lagoonarium",
+     "A freshwater infinity pool and the Lotus swim up bar",
+     "Algotherm Dermo Ocean Spa",
+     "Le Lotus overwater restaurant and Te Tiare"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {
+    "best_months": "The resort does not publish a best season. Tahiti Tourisme puts the dry season at May to October.",
+    "how_to_get_there": "Every international flight lands at Tahiti Faa'a (PPT); the resort is on Tahiti's west coast. Ask for transfer timing when you book.",
+    "signature_experiences": "The Fare I'a lagoonarium, the infinity pool facing Moorea, Le Lotus overwater restaurant, the sea turtle tour and Algotherm Dermo Ocean Spa.",
+    "who_its_for": "Travelers starting or ending a French Polynesia trip on Tahiti who want overwater bungalows and a lagoon on day one, and families who want connecting rooms."
+   },
+   "faqs": [
+    {
+     "q": "How many rooms does InterContinental Tahiti have?",
+     "a": "246 rooms in eight three level buildings and over the water: 161 Classic Rooms, 60 Premium Rooms, a One Bedroom Suite, 23 overwater bungalows and an Overwater Villa."
+    },
+    {
+     "q": "Does InterContinental Tahiti have overwater bungalows?",
+     "a": "Yes. The resort has Ocean View and Moorea View Overwater Bungalows, eight Motu Suite Overwater Bungalows and one Overwater Villa with a view of Moorea."
+    },
+    {
+     "q": "What is the lagoonarium?",
+     "a": "Fare I'a Reserve, a protected lagoon habitat inside the resort, home to a wide array of marine life."
+    },
+    {
+     "q": "Where do you eat?",
+     "a": "Te Tiare for Polynesian and international cuisine, Le Lotus for French cuisine over the water, Huriama Garden for tapas, the Lotus swim up bar, the Tiki Bar and the Lobby Bar Terrace."
+    },
+    {
+     "q": "Is there a spa?",
+     "a": "Yes. Algotherm Dermo Ocean Spa."
+    },
+    {
+     "q": "Has James Wild stayed here?",
+     "a": "Yes. James stayed at InterContinental Tahiti in May 2025 and calls it a founder favourite."
+    },
+    {
+     "q": "Can you combine it with InterContinental Bora Bora?",
+     "a": "The resort lists an Island Hopping Special: an extra 5% off when you stay at two or more InterContinental resorts in French Polynesia. It publishes no end date, so the house confirms it when you book."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (French Polynesia build)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -19905,6 +21626,142 @@
     "6ae6974d696b4469b6c2b952",
     "6ae6974d2f7e87b5a5f59865"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "kalinaw-resort",
+   "name": "Kalinaw\nResort",
+   "ledgerId": "STY-2026-000606",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Six oceanfront villas with infinity pools, 800 metres from Cloud 9",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/kalinaw-resort/g10"
+   ],
+   "bestMonths": "March to September",
+   "bestMonthsNote": "Kalinaw does not publish best months. The Department of Tourism gives March to September as Siargao's best months overall and September to November as surf season, with the Siargao International Surfing Cup usually in late October.",
+   "bestFor": [
+    "honeymoon",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Sayak Airport, Siargao (IAO)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six villas, all facing the ocean, each with a private infinity pool.",
+     "Pool Deluxe Villas (4): 96 square metres, for 2 adults and 2 children under 12.",
+     "Pavilion Pool Villa (1): 195 square metres, 2 bedrooms, for up to 6.",
+     "Pool Suite Villa (1): 203 square metres, 2 master bedrooms and a private garden, for up to 6."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Surfing at Cloud 9, 800 metres away",
+     "Exploring Siargao's lagoons and islands",
+     "Motorbike hire",
+     "Massages in the villa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Private infinity pool in every villa",
+     "A la carte breakfast served in the villa",
+     "Private kitchen, 6:30am to 10pm",
+     "Filipino and southern European cooking with a French touch",
+     "Fibre internet",
+     "In-villa massage"
+    ]
+   },
+   "onlyHere": [
+    "Six villas only, each with an infinity pool facing the lagoon, a few minutes from the most famous wave in the Philippines."
+   ],
+   "why": [
+    {
+     "title": "Six Villas by Cloud 9",
+     "body": "Kalinaw is an exclusive resort of six oceanfront villas on Siargao, each with its own infinity pool, 800 metres from the Cloud 9 surf break. Two French designers from Paris built it, drawing on art, architecture, fashion, street culture and skateboarding, and since 2023 it has been fully exclusive."
+    }
+   ],
+   "facts": {
+    "best_months": "March to September is Siargao's best season overall, and September to November is surf season, per the Department of Tourism. Kalinaw does not publish its own.",
+    "how_to_get_there": "Fly to Sayak Airport (IAO) on Siargao. Kalinaw's private van transfer to and from the airport is included.",
+    "signature_experiences": "Surfing Cloud 9, island and lagoon days around Siargao, and dinners by the pool or on the beach.",
+    "who_its_for": "Couples, surfers and families, with two-bedroom villas for up to six."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kalinaw Resort?",
+     "a": "In General Luna on Siargao Island, between Cloud 9 and the centre of General Luna, 800 metres from the Cloud 9 surf break."
+    },
+    {
+     "q": "How do you get to Kalinaw?",
+     "a": "Fly to Sayak Airport on Siargao. Kalinaw includes a private van transfer to and from the airport."
+    },
+    {
+     "q": "How many villas does Kalinaw have?",
+     "a": "Six, all facing the ocean with private infinity pools: four Pool Deluxe Villas, the Pavilion Pool Villa and the Pool Suite Villa."
+    },
+    {
+     "q": "Is Kalinaw good for surfers?",
+     "a": "Yes. The resort is 800 metres from Cloud 9, Siargao's world famous surf break."
+    },
+    {
+     "q": "When is surf season on Siargao?",
+     "a": "The Department of Tourism gives September to November as Siargao's surf season, with the Siargao International Surfing Cup usually in late October. March to September is the best time overall."
+    },
+    {
+     "q": "Is Kalinaw good for families?",
+     "a": "Yes. Pool Deluxe Villas take two adults and two children under 12, the two-bedroom villas take up to six, children under two stay free and cribs are available."
+    },
+    {
+     "q": "Is breakfast included?",
+     "a": "Yes. A complimentary a la carte breakfast is served at your villa, and the kitchen is open from 6:30am to 10pm for room service."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -24440,15 +26297,15 @@
    "placeSlug": null
   },
   {
-   "slug": "la-tahaa",
-   "name": "Le Taha’a\nby Pearl Resorts",
+   "slug": "le-tahaa",
+   "name": "Le Taha'a by Pearl Resorts",
    "ledgerId": "STY-2026-000146",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "“Where the lagoon meets luxury and nature whispers your name”",
+   "tagline": "A Relais & Châteaux island resort on Motu Tautau, with a coral garden at the door.",
    "quote": "May your spirit unwind in the hush of waves, your heart reawaken in the light of dawn. Welcome to a true island sanctuary.",
    "hero": "/img/b44/820c47752_01171d195_68dd6194c1307bfa2b873d83_aerial-view-le-taha-a.avif",
    "gallery": [
@@ -24462,47 +26319,50 @@
     "/img/b44/e83198ef1_9ca134d4f_68dd62aa59bf2be06164cd88_royal-beach-villa-with.avif",
     "/img/b44/1514521d7_344baab70_68dd6395443be8fbc9e688a2_overwater-suite_20_1_.avif"
    ],
-   "bestMonths": "April - October",
-   "bestMonthsNote": "These months coincide with the drier season in Tahiti’s isles. You’ll enjoy more consistent sunshine, lower humidity, and calmer seas. Ideal for snorkeling, lagoon excursions, and outdoor dining.",
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October, the best months for lagoon outings; snorkelling is good all year.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
     "lat": -16.6833,
     "lng": -151.4333
    },
    "airport": "Raiatea Airport (RFP)",
-   "airportDirections": "From Raiatea, the resort is reached via a ~35‑minute speedboat transfer. Alternatively, guests may fly by helicopter from Bora Bora (≈14 minutes) to enjoy a scenic approach.",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Raiatea (RFP) with Air Tahiti, then take the resort's shuttle boat or helicopter transfer to Motu Tautau. The resort does not publish transfer times; Tahiti Tourisme puts Raiatea to Taha'a at about 30 minutes by boat.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Taha’a Overwater Suites",
-     " Pool Beach Villas",
-     " Beach Villas with Plunge Pools",
-     " Royal Beach Villas"
+     "Taha'a Overwater Suite (969 sq ft)",
+     "Taha'a Premium Overwater Suite (969 sq ft)",
+     "Sunset Overwater Suite (969 sq ft)",
+     "Bora Bora Overwater Suite (969 sq ft)",
+     "End of Pontoon Overwater Suite (969 sq ft)",
+     "Pool Beach Villa (1,937 sq ft)",
+     "Premium Pool Beach Villa (1,937 sq ft)",
+     "Royal Beach Villa with Pool (two bedrooms, 2,800 sq ft)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Snorkeling coral gardens & reef safaris",
-     " Vanilla & pearl farm tours",
-     " Lagoon cruises & motu picnics",
-     " Polynesian cultural classes & dance",
-     " Spa treatments in bamboo gardens",
-     " Heli‑scenic flights to Bora Bora"
+     "Snorkelling the coral garden at any hour",
+     "Island tours and hikes on Taha'a",
+     "Visits to Taha'a's vanilla growers",
+     "Excursions to Taputapuātea on Raiatea",
+     "Massages at Tāvai Spa"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Intimate , only ~59 villas, preserving serenity",
-     " Authentic Polynesian design & decor",
-     " Diverse dining: three restaurants + private dinners",
-     " Lagoon frontage from every villa; direct water access",
-     " Strong reef conservation and coral garden",
-     " Member of Relais & Châteaux, high standards"
+     "Fifty nine overwater suites and beach villas",
+     "A coral garden reached straight from the resort",
+     "Three restaurants: Hawaiki Nui, Titiraina and Tipairua",
+     "Tāvai Spa",
+     "Member of Relais & Châteaux",
+     "Two Michelin Keys, per Pearl Resorts"
     ]
    },
    "onlyHere": [
@@ -24514,9 +26374,47 @@
      "body": "Choose Le Taha’a for its rare blend of seclusion, authenticity, and gracious service. Ideal for couples seeking a romance escape, nature lovers desiring underwater intimacy, and small families wanting calm luxury. Its balance of privacy and immersive island culture makes it perfect for travelers desiring depth more than spectacle."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Le Taha'a does not publish a best season. Tahiti Tourisme puts the Society Islands' dry season at May to October, the best months for lagoon outings, with snorkelling good all year.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Raiatea (RFP) with Air Tahiti, then transfer to Motu Tautau. The resort lists shuttle boat and helicopter transfers but does not publish times, so confirm them at booking.",
+    "signature_experiences": "Snorkelling the coral garden at any hour, Tāvai Spa, island tours and Taha'a's vanilla growers, and excursions to Taputapuātea on Raiatea, a UNESCO World Heritage site.",
+    "who_its_for": "Couples and families who want a quiet motu with a coral garden to snorkel from the beach, and travelers who want Raiatea's marae of Taputapuātea within reach."
+   },
+   "faqs": [
+    {
+     "q": "How many suites and villas does Le Taha'a have?",
+     "a": "Fifty nine overwater suites and beach villas, on Motu Tautau in the Taha'a lagoon. The overwater suites are 969 sq ft; the Pool Beach Villas are 1,937 sq ft."
+    },
+    {
+     "q": "What is the largest villa at Le Taha'a?",
+     "a": "The Royal Beach Villa with Pool: 2,800 sq ft, two en suite bedrooms, a private wellness area and direct beach access."
+    },
+    {
+     "q": "Can you snorkel straight from the resort?",
+     "a": "Yes. The coral garden is reached directly from the resort and guests can explore it on their own at any time of day. Snorkel gear and water shoes are lent free."
+    },
+    {
+     "q": "Where do you eat at Le Taha'a?",
+     "a": "There are three restaurants, Hawaiki Nui, Titiraina and Tipairua, plus the Manuia Bar by the pool, the Tiki Bar and an ice cream parlour."
+    },
+    {
+     "q": "Is Le Taha'a a Relais & Châteaux hotel?",
+     "a": "Yes, it is a member of Relais & Châteaux. Pearl Resorts also reports two Michelin Keys for Le Taha'a."
+    },
+    {
+     "q": "How do you get to Le Taha'a?",
+     "a": "Fly from Tahiti Faa'a to Raiatea with Air Tahiti, then take the resort's transfer to Motu Tautau. Shuttle boat and helicopter transfers are offered; ask for current times when you book."
+    },
+    {
+     "q": "What is there to do beyond the lagoon?",
+     "a": "Island tours and hikes on Taha'a, car or bike hire, visits to vanilla growers, and excursions to Raiatea, including the marae of Taputapuātea."
+    },
+    {
+     "q": "Can you combine Le Taha'a with Bora Bora?",
+     "a": "Yes. Le Taha'a is one of the hotels Pearl names for its Islands Dream Offer: 25% off accommodation when you book at least one night at Le Bora Bora and one at Le Taha'a, booked through Pearl's reservations team."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -29403,16 +31301,28 @@
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Barefoot Luxury, Island Spirit",
+   "tagline": "Ten villas on Siargao's southeastern tip, all inclusive, formerly Dedon Island",
    "quote": "Rediscover freedom and connection on Siargao’s palm-fringed shore, where every day is your own private adventure.",
-   "hero": "/img/b44/eb8b4a572_1a6380771_69714c14c9bcc8f1b08a482b_d1eabb9bjpg.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/hero",
    "gallery": [
-    "/img/b44/c8db24b58_8a619258e_697cbeb2c2ddafc71f20dec6_nph_villas-garden_2025_001_2.avif",
-    "/img/b44/c0c5b72bc_b49a6d15a_697cbde2d6986c340bddf5ee_nph_villas-ocean_2025_001_2.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nay-palad-hideaway/g10"
    ],
-   "bestMonths": "March–October",
-   "bestMonthsNote": "Dry, sunny weather for surfing, island hopping, and beach activities, surfing is best August to November, dry season best for all travelers.",
-   "bestFor": [],
+   "bestMonths": "March to October",
+   "bestMonthsNote": "Nay Palad gives March to October, the dry season, as its recommended time. It says surf is best from September to May, when a TropicSurf instructor is based at the resort.",
+   "bestFor": [
+    "family",
+    "group_exclusive_use",
+    "honeymoon"
+   ],
    "status": "unclassified",
    "statusDate": null,
    "coords": {
@@ -29420,65 +31330,109 @@
     "lng": 126.1639
    },
    "airport": "Sayak Airport (IAO), Siargao",
-   "airportDirections": "45-minute drive from Sayak Airport; transfers arranged by the resort.",
+   "airportDirections": "Private plane, charter and helicopter arrivals on request. Otherwise a host meets you at Sayak baggage claim for a drive of about 40 minutes.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Ocean Villa",
-     "Garden Villa",
-     "Superior Family Villa",
-     "Treehouse Villa",
-     "Exclusive Use"
-    ]
+    "paras": [
+     "Ten villas in four types, all included in the resort's all inclusive rate.",
+     "Perlah Villa (1): about 270 sqm inside, two master bedrooms and two double bedrooms, three bathrooms, up to 9 guests. Private pool, private beach, tree platform, fireplace and movie projector.",
+     "Coral Villa (1): about 135 sqm, two master bedrooms plus two children's beds in the attic, up to 7 guests. Private pool, private garden and home cinema.",
+     "Ocean View Villas (4): about 100 sqm, a master bedroom and an upstairs king bedroom, up to 6 guests, ocean views from the deck.",
+     "Garden View Villas (4): about 105 sqm, a master bedroom and an upstairs king bedroom, up to 6 guests, set in the garden.",
+     "Garden and Ocean View Villas can be set up as one bedroom villas on request. The whole resort can be booked for exclusive use, up to 60 guests."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Island Hopping",
-     "Surfing",
-     "Stand-Up Paddleboarding",
-     "Mangrove Kayaking",
-     "Beach Picnics",
-     "Cultural Excursions",
-     "Yoga & Wellness",
-     "Sunset Cruises",
-     "Sandbank Dining",
-     "Children’s Activities"
+     "Surfing Cloud 9 with TropicSurf instructors, a short boat ride away",
+     "Island hopping to Pansukian, Daku and Guyam",
+     "Kayaking and paddleboarding in the century-old mangroves",
+     "The Nature Explorer tour of 104 hectares of mangroves",
+     "Fish dome making for reef recovery",
+     "Land tours to Magpupungko rock pools",
+     "Cooking classes"
     ]
    },
    "features": {
-    "paras": [
-     "Handcrafted villas with sea or garden views, open-air baths, private terraces, beach access, infinity pool, treehouse lounge, gourmet restaurant, barefoot luxury service, on-site spa, yoga studio, children’s play zone."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "Ten villas, two with private pools",
+     "All inclusive: meals, most drinks and most activities",
+     "Spa and yoga",
+     "Children's Village and treehouse platform",
+     "Padel court",
+     "Outdoor cinema between the palms",
+     "Organic farm and Gypsies Village"
+    ]
    },
    "onlyHere": [
-    "Nay Palad Hideaway is made for families, couples, friends, and solo travelers seeking personalized barefoot luxury, vibrant Filipino hospitality, wellness, and endless island adventures in an intimate, eco-conscious setting."
+    "Perlah Villa, about 270 square metres with its own pool and private beach, and a whole hideaway that books for up to 60."
    ],
    "why": [
     {
-     "title": "Your Island Hideaway, Redefined",
-     "body": "Stay for iconic surf, turquoise lagoons, wild nature, warm service, and playful, all-inclusive luxury, perfect for couples, families, groups, and anyone craving true freedom."
+     "title": "A Barefoot Hideaway on Siargao",
+     "body": "Nay Palad Hideaway, formerly Dedon Island Resort, is ten villas on the southeastern tip of Siargao, beside 104 hectares of mangroves the resort protects. It is all inclusive, children have their own village, Cloud 9 is a short boat ride away, and the whole hideaway can be taken for up to 60 guests."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "March to October is the dry season and the brand's recommended time to visit. Surf is best from September to May, when a TropicSurf instructor is based at the resort.",
+    "how_to_get_there": "Private flights first: the resort's reservations team can arrange private plane, charter and helicopter arrivals on request (no routes or times published). Otherwise fly to Manila, Cebu or Clark, connect to Siargao's Sayak Airport (IAO), and a resort host meets you at baggage claim for the drive of about 40 minutes by jeepney or van.",
+    "signature_experiences": "Surfing with a TropicSurf instructor (September to May), Cloud 9 and more than 20 nearby breaks, island hopping, snorkelling, kayaking, paddleboarding, cycling, hiking, yoga, spa and the chef's cooking class. Most activities are in the rate.",
+    "who_its_for": "Families, couples, friends and groups who want a small, barefoot all inclusive hideaway on Siargao, with surf, island hopping and room for children. The whole resort can be taken for exclusive use, up to 60 guests."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nay Palad Hideaway?",
+     "a": "Nay Palad Hideaway is on the southeastern tip of Siargao Island in Surigao del Norte, Philippines, at Malinao, General Luna. It was formerly known as Dedon Island Resort."
+    },
+    {
+     "q": "How many villas does Nay Palad Hideaway have?",
+     "a": "Ten. There is one Perlah Villa for up to 9 guests, one Coral Villa for up to 7, four Ocean View Villas and four Garden View Villas for up to 6 each."
+    },
+    {
+     "q": "Can we book the whole resort?",
+     "a": "Yes. Nay Palad Hideaway can be booked for exclusive use for up to 60 guests."
+    },
+    {
+     "q": "How do you get to Nay Palad Hideaway?",
+     "a": "Fly to Manila, Cebu or Clark and connect to Sayak Airport (IAO) on Siargao. A host meets you at baggage claim for the drive of about 40 minutes. The reservations team can also arrange private plane, charter and helicopter arrivals."
+    },
+    {
+     "q": "When is the best time to visit?",
+     "a": "March to October is the dry season and the resort's recommended time. Surf is best from September to May."
+    },
+    {
+     "q": "Is Nay Palad Hideaway good for surfers?",
+     "a": "Yes. Cloud 9 and more than 20 other breaks are nearby, and a TropicSurf instructor is at the resort from September to May."
+    },
+    {
+     "q": "Is Nay Palad Hideaway good for children?",
+     "a": "Yes. There is a Children's Village with trampolines, swings and shaded huts, a treehouse platform with slides, and a children's place in the chef's cooking class. Babysitting can be arranged on request."
+    },
+    {
+     "q": "What is included in the rate?",
+     "a": "All meals, all drinks except Champagne and premium wines, most activities including surfing, snorkelling and island hopping, spa treatments, yoga, laundry and Sayak Airport transfers. Gratuities are extra."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-07"
+     "PATH-07",
+     "PATH-05",
+     "PATH-08"
     ],
     "setting": "siargao",
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
    },
    "volumes": [
     "stays",
@@ -33334,39 +35288,40 @@
   },
   {
    "slug": "pearl-resort-le-bora-bora",
-   "name": "Pearl Resort \n Le Borabora",
+   "name": "Le Bora Bora by Pearl Resorts",
    "ledgerId": "STY-2026-000209",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "An iconic Bora Bora escape where Polynesian authenticity meets legendary lagoon luxury.",
+   "tagline": "A five star resort on Motu Tevairoa, with pool villas and overwater bungalows facing Mount Otemanu.",
    "quote": "Some destinations exceed expectations. Bora Bora redefines them.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4741bc1f8_ef7b1e129_6a4fcdef0ad16239178b6946_panoramic-view-of-mount.jpg",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months typically provide sunny days, lower humidity, calm lagoon conditions, and exceptional visibility for snorkeling, boating, and exploring Bora Bora's natural beauty.",
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October, the best months for lagoon outings.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
     "lat": -16.5006,
     "lng": -151.7416
    },
    "airport": "Bora Bora Airport (BOB) Tahiti Faa'a International Airport (PPT)",
-   "airportDirections": "Guests arrive via Tahiti Faa'a International Airport (PPT), connect to Bora Bora Airport (BOB), and then take a short resort boat transfer directly to Motu Tevairoa.",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, then take the resort boat to Motu Tevairoa. Ask for the current transfer time when you book.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Garden Villa with Pool",
-     "Beach Villa with Pool",
-     "Premium Beach Villa with Pool",
-     "Overwater Bungalow",
-     "End of Pontoon Overwater Bungalow",
-     "Premium Overwater Bungalow",
-     "Royal Pool Villa"
+     "Garden Villa with Pool (1,313 sq ft)",
+     "Beach Villa with Pool (1,550 sq ft)",
+     "Overwater Bungalow (850 sq ft)",
+     "Lagoon Overwater Bungalow (850 sq ft)",
+     "Otemanu Overwater Bungalow (850 sq ft)",
+     "Pool Overwater Villa (1,001 sq ft)",
+     "End of Pontoon Overwater Suite with Pool (1,830 sq ft)",
+     "Royal Beach Villa with Pool (two bedrooms, 4,693 sq ft)"
     ]
    },
    "experiences": {
@@ -33383,24 +35338,55 @@
    "features": {
     "paras": [],
     "items": [
-     "Private motu location",
-     "Views of Mount Otemanu",
-     "Overwater bungalows and villas",
-     "Private plunge pools",
-     "Coral-rich lagoon access",
-     "Tāvai Spa",
-     "Polynesian architecture",
-     "Oceanfront dining",
-     "Authentic cultural experiences"
+     "On Motu Tevairoa, facing Mount Otemanu",
+     "Villas and overwater suites with their own pools",
+     "Tāvai Spa above a lily covered water garden",
+     "A 42 acre botanical garden and a sculpture gallery",
+     "Five star classification",
+     "Two Michelin Keys in 2025, per Pearl Resorts"
     ]
    },
    "onlyHere": [
     "Le Bora Bora occupies one of the most spectacular settings in the South Pacific. Positioned on a secluded private motu and surrounded by Bora Bora's famous turquoise lagoon, the resort combines luxury, culture, and nature into one of the world's most sought-after island experiences. Every moment here is framed by water, mountains, and endless horizons."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "The resort does not publish a best season. Tahiti Tourisme puts the Society Islands' dry season at May to October, the best months for lagoon outings.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, about 50 minutes per Air Tahiti, then take the resort boat to Motu Tevairoa. The transfer time is not published on leborabora.com.",
+    "signature_experiences": "Tāvai Spa above a lily covered water garden, a 42 acre botanical garden and an art and sculpture gallery, swimming and wildlife outings on a solar powered catamaran, and Polynesian music and dance.",
+    "who_its_for": "Couples and families who want a villa or overwater suite with its own pool, and travelers who want Bora Bora's lagoon from a quieter motu."
+   },
+   "faqs": [
+    {
+     "q": "Where is Le Bora Bora?",
+     "a": "On Motu Tevairoa, a motu in the Bora Bora lagoon off Vaitape, with views of Mount Otemanu."
+    },
+    {
+     "q": "Is Le Bora Bora a five star resort?",
+     "a": "Yes. The resort describes itself as a five star hotel, and Pearl Resorts reports that it received two Michelin Keys in 2025."
+    },
+    {
+     "q": "What kinds of rooms are there?",
+     "a": "Eight categories: Garden and Beach Villas with Pool, three overwater bungalow types (Overwater, Lagoon and Otemanu), the Pool Overwater Villa, the End of Pontoon Overwater Suite with Pool, and the Royal Beach Villa with Pool."
+    },
+    {
+     "q": "Are there overwater rooms with a pool?",
+     "a": "Yes. The Pool Overwater Villa (1,001 sq ft) and the End of Pontoon Overwater Suite with Pool (1,830 sq ft, up to four guests) both have their own pool."
+    },
+    {
+     "q": "What is the largest villa?",
+     "a": "The Royal Beach Villa with Pool: 4,693 sq ft, two bedrooms each with its own garden, three private plunge pools, for up to six adults and two children under 13."
+    },
+    {
+     "q": "How do you get to Le Bora Bora?",
+     "a": "Fly from Tahiti to Bora Bora with Air Tahiti, then take the resort boat to Motu Tevairoa. Ask for the current transfer time when you book."
+    },
+    {
+     "q": "What is the Islands Dream Offer?",
+     "a": "Yes. Pearl's Islands Dream Offer takes 25% off accommodation when you book at least one night at Le Bora Bora and one at Le Taha'a, Le Tikehau, Le Tahiti or Le Nuku Hiva (10% on Le Nuku Hiva's package). It is listed as available all year, is booked through Pearl's reservations team, and does not combine with other offers."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -33425,39 +35411,34 @@
   },
   {
    "slug": "pearl-resort-le-nuku-hiva",
-   "name": "Pearl Resort \n Le Nuku Hiva",
+   "name": "Le Nuku Hiva by Pearl Resorts",
    "ledgerId": "STY-2026-000210",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Discover the untamed heart of French Polynesia in the legendary Marquesas Islands.",
+   "tagline": "A Relais & Châteaux lodge of twenty bungalows above Taiohae Bay, base camp for the Marquesas.",
    "quote": "Adventure begins where the familiar ends.",
    "hero": "/img/b44/f173f1ecb_39f30b17e_6a4fcff4427763c1c40fe787_Le-Nuku-Hiva-Pearl-Resort-Front-Property.avif",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months generally provide warm temperatures, comfortable humidity, ideal hiking conditions, and excellent opportunities for cultural exploration and outdoor adventures throughout the Marquesas.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Tahiti Tourisme names no best season for the Marquesas: hiking, culture and archaeology run all year.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
     "lat": -8.9151,
     "lng": -140.0987
    },
    "airport": "Nuku Hiva Airport (NHV) Tahiti Faa'a International Airport (PPT)",
-   "airportDirections": "Guests typically arrive via PPT (Tahiti) and connect to NHV (Nuku Hiva Airport). The resort is located approximately 40–50 minutes by vehicle from the airport overlooking Taiohae Bay.",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Nuku Hiva (NHV) with Air Tahiti. The lodge does not publish its airport transfer time; ask when you book.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Mountain View Room",
-     "Bay View Room",
-     "Premium Bay View Room",
-     "Junior Suite",
-     "Premium Suite",
-     "Bungalow Suite"
-    ]
+    "paras": [
+     "Bay View Bungalow (19). Bay View Premium Bungalow (1)."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -33473,24 +35454,53 @@
    "features": {
     "paras": [],
     "items": [
-     "Panoramic Taiohae Bay views",
-     "Traditional Marquesan-inspired architecture",
-     "Infinity pool overlooking the bay",
-     "Remote island setting",
-     "Cultural immersion opportunities",
-     "Tropical gardens",
-     "Mountain and ocean panoramas",
-     "Gateway to Marquesan exploration",
-     "Authentic Polynesian hospitality"
+     "Twenty bungalows above Taiohae Bay",
+     "A pool and bar",
+     "A short walk to a black sand beach and Taiohae town",
+     "Member of Relais & Châteaux"
     ]
    },
    "onlyHere": [
     "Le Nuku Hiva offers an experience unlike anywhere else in French Polynesia. Far removed from the overwater resorts of the Society Islands, this destination reveals a landscape of towering cliffs, deep valleys, ancient traditions, and untamed beauty. It is a place where adventure and culture are inseparable."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Tahiti Tourisme lists hiking, culture, archaeology and crafts in the Marquesas as year round, with no best months.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Nuku Hiva with Air Tahiti, which flies to the Marquesas several times a week, direct or with stops; Nuku Hiva is about 1,406 km from Tahiti. The lodge does not publish its airport transfer time. Aranui 5 also calls at Taioha'e.",
+    "signature_experiences": "The Marquesas are a UNESCO World Heritage property, Te Henua Enata, inscribed in 2024. A short walk leads to a black sand beach and Taiohae town; the lodge has a pool and bar.",
+    "who_its_for": "Travelers who want the Marquesas' valleys, archaeology and culture from a small, comfortable base."
+   },
+   "faqs": [
+    {
+     "q": "How many bungalows does Le Nuku Hiva have?",
+     "a": "Twenty: 19 Bay View Bungalows and one Bay View Premium Bungalow, each for up to three guests."
+    },
+    {
+     "q": "Where is Le Nuku Hiva?",
+     "a": "On a hillside in a tropical garden above Taiohae Bay on Nuku Hiva, in the Marquesas, a short walk from a black sand beach and Taiohae town."
+    },
+    {
+     "q": "Is Le Nuku Hiva a Relais & Châteaux property?",
+     "a": "Yes. The lodge carries the Relais & Châteaux label."
+    },
+    {
+     "q": "Has the lodge been renovated?",
+     "a": "Yes. Pearl Resorts reports that the bungalows were renovated with woven pandanus ceilings, new furnishings, Marquesan motif tapestries and rebuilt bathrooms with double vanities."
+    },
+    {
+     "q": "How do you get to Nuku Hiva?",
+     "a": "Fly with Air Tahiti from Tahiti, direct or with stops, several times a week. Nuku Hiva is about 1,406 km from Tahiti and half an hour behind Tahiti time."
+    },
+    {
+     "q": "Are the Marquesas a UNESCO site?",
+     "a": "Yes. Te Henua Enata, the Marquesas Islands, is a mixed World Heritage property inscribed in 2024, and Nuku Hiva is one of its components."
+    },
+    {
+     "q": "Can you combine Le Nuku Hiva with Bora Bora?",
+     "a": "Yes. Le Nuku Hiva is one of the hotels named in Pearl's Islands Dream Offer with Le Bora Bora; on Le Nuku Hiva the saving is 10% on its package of accommodation, half board, excursions and airport transfers."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -33518,40 +35528,39 @@
   },
   {
    "slug": "pearl-resort-le-tahiti",
-   "name": "Pearl Resort \n Le Tahiti",
+   "name": "Le Tahiti by Pearl Resorts",
    "ledgerId": "STY-2026-000211",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Discover the island where authentic Tahitian culture meets oceanfront luxury.",
+   "tagline": "Ninety one rooms and suites on Lafayette Beach in Arue, the first and last night of a Tahiti journey.",
    "quote": "Sometimes the most unforgettable island experience begins before the journey even continues.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b4b6eaebb_ebfeef667_6a4fcf7066ac0f9d321c914b_le-tahiti-by-pearl-resorts.webp",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months generally offer pleasant temperatures, lower rainfall, excellent sightseeing conditions, comfortable beach weather, and ideal opportunities for exploring Tahiti's cultural and natural attractions.",
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the dry season at May to October.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": -17.5293,
-    "lng": -149.5037
+    "lat": -17.5181085,
+    "lng": -149.506609
    },
    "airport": "Tahiti Faa'a International Airport (PPT)",
-   "airportDirections": "Approximately 20 minutes by vehicle from Tahiti Faa'a International Airport. The resort is also located approximately 10 minutes from downtown Papeete.",
+   "airportDirections": "Land at Tahiti Faa'a International Airport (PPT); the resort is in Arue on Tahiti's north coast. Ask for transfer timing when you book.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Ocean View Room",
-     "Ocean View Room with Hot Tub",
-     "Ocean View Suite",
-     "Premium Ocean View Room",
-     "Premium Ocean View Suite",
-     "Premium Duplex",
-     "Signature Ocean Front Rooms",
-     "Royal Ocean Front Suite"
+     "Ocean View Room, with hot tub or kitchen options (463 sq ft)",
+     "Premium Ocean View Room, with hot tub or kitchen options (463 sq ft)",
+     "Ocean View Suite, with kitchen option (786 sq ft)",
+     "Premium Ocean View Suite (786 sq ft)",
+     "Premium Ocean View Duplex (786 sq ft)",
+     "Ocean Front Signature Room with Hot Tub (540 sq ft)",
+     "Ocean Front Signature Suite, with hot tub or kitchen (823 sq ft)"
     ]
    },
    "experiences": {
@@ -33568,25 +35577,53 @@
    "features": {
     "paras": [],
     "items": [
-     "Black volcanic sand beach location",
-     "Views across Matavai Bay to Moorea",
-     "Infinity swimming pool",
-     "Le Spa wellness center",
-     "Free shuttle to Papeete",
-     "Local arts and crafts market",
-     "Oceanfront dining",
-     "120 rooms and suites",
-     "Signature Suites with hot tubs",
-     "Royal Suite with private pool"
+     "Ninety one rooms and suites",
+     "Lafayette Beach, black volcanic sand",
+     "Suites with hot tubs or kitchens",
+     "A two bedroom Royal Suite with its own pool"
     ]
    },
    "onlyHere": [
     "Le Tahiti offers something few South Pacific resorts can claim: a dramatic black sand beach framed by lush mountains and endless ocean views. Here, travelers experience authentic Tahiti rather than simply passing through it. Every day begins with sunrise over Matavai Bay and ends with the colors of Moorea fading into the horizon."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by the resort. Tahiti Tourisme puts the dry season at May to October.",
+    "how_to_get_there": "Land at Tahiti Faa'a International Airport (PPT); the resort is in Arue on Tahiti's north coast. The resort site does not publish a drive time.",
+    "signature_experiences": "Lafayette's black sand beach, views toward Moorea, and an easy start or finish for Air Tahiti flights and Windstar sailings from Papeete.",
+    "who_its_for": "Travelers who want a night or two on Tahiti before or after the outer islands, and families who need a suite with a kitchen."
+   },
+   "faqs": [
+    {
+     "q": "How many rooms does Le Tahiti have?",
+     "a": "Ninety one rooms and suites, on Lafayette Beach in Arue."
+    },
+    {
+     "q": "What kind of beach is it?",
+     "a": "Lafayette Beach is black volcanic sand, on Tahiti's north coast."
+    },
+    {
+     "q": "Are there family suites?",
+     "a": "Yes. Ocean View Suites sleep four adults or two adults and two children under 13, and the two bedroom Signature Suites sleep six adults."
+    },
+    {
+     "q": "What is the largest suite?",
+     "a": "The Ocean Front Royal 2 Bedroom Suite with Private Pool and Kitchen: 174 sq m (1,877 sq ft), with a private pool over Lafayette Beach, for up to six people."
+    },
+    {
+     "q": "Do any rooms have kitchens?",
+     "a": "Yes. Several room and suite types come with a kitchen, from the Ocean View Room with Kitchen to the Royal suite."
+    },
+    {
+     "q": "Why stay on Tahiti at all?",
+     "a": "Every international flight lands at Tahiti Faa'a, and Air Tahiti and Windstar start from Tahiti, so a night here makes the first or last connection easy."
+    },
+    {
+     "q": "Can you combine Le Tahiti with Bora Bora?",
+     "a": "Pearl's Islands Dream Offer takes 25% off accommodation when you book at least one night at Le Bora Bora and one at Le Tahiti. It is listed as available all year and is booked through Pearl's reservations team."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -33610,39 +35647,39 @@
   },
   {
    "slug": "pearl-resort-le-tikehau",
-   "name": "Pearl Resort \n Le Tikehau",
+   "name": "Le Tikehau by Pearl Resorts",
    "ledgerId": "STY-2026-000212",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Discover one of French Polynesia's most secluded island escapes, surrounded by a world-famous lagoon.",
+   "tagline": "Twenty nine bungalows on a pink sand motu in the Tuamotu, less than an hour's flight from Tahiti.",
    "quote": "The further you travel, the more extraordinary simplicity becomes.",
    "hero": "/img/b44/744fe25ab_2bbe59505_6a4fd03e84784d0f7e2a3b50_Front-Property-Pearl-Resort-Le-Tikehau.avif",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months generally provide warm temperatures, lower humidity, calmer seas, excellent snorkeling visibility, and ideal conditions for exploring the atoll and marine ecosystem.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Tahiti Tourisme rates the Tuamotu for beaches, snorkelling and diving all year, with the warmest water from November to April.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": -15.0069,
-    "lng": -148.2318
+    "lat": -15.1065714,
+    "lng": -148.1997506
    },
    "airport": "Tikehau Airport (TIH) Tahiti Faa'a International Airport (PPT)",
-   "airportDirections": "Guests typically arrive via PPT (Tahiti) before connecting to TIH (Tikehau Airport). The resort is then reached by a short boat transfer from the airport to the private motu.",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Tikehau (TIH) with Air Tahiti, then a 15 minute boat ride from the village to motu Tianoa.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
      "Overwater Bungalow",
      "Premium Overwater Bungalow",
+     "End of Pontoon Overwater Bungalow",
+     "Overwater Suite",
+     "Horizon Overwater Suite",
      "Beach Bungalow",
-     "Premium Beach Bungalow",
-     "Beach Suite with Pool",
-     "Premium Beach Villa with Pool",
-     "Royal Beach Villa"
+     "Royal Beach Villa with Pool"
     ]
    },
    "experiences": {
@@ -33659,24 +35696,54 @@
    "features": {
     "paras": [],
     "items": [
-     "Private pink sand islet location",
-     "Direct lagoon access",
-     "Overwater and beachfront accommodations",
-     "World-renowned marine biodiversity",
-     "Polynesian-inspired spa",
-     "Remote Tuamotu setting",
-     "Oceanfront dining experiences",
-     "Coral reef ecosystem",
-     "Exceptional snorkeling and diving"
+     "Twenty nine bungalows: 21 overwater, 8 on the beach",
+     "A pink sand motu, Tianoa, in Tikehau atoll",
+     "Two restaurants, Poreho and Te Reka Ika, and the Kaina Bar",
+     "Tāvai Spa",
+     "Scuba diving and snorkelling from the resort"
     ]
    },
    "onlyHere": [
     "Few destinations in the world feel as remote and untouched as Tikehau. Set on a tiny private motu surrounded by a vast turquoise lagoon, Le Tikehau delivers an authentic castaway experience elevated by luxury hospitality. Here, nature remains the main attraction, and every day is shaped by the rhythm of the ocean."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Tahiti Tourisme rates the Tuamotu for beaches, snorkelling and diving all year, with the warmest water from November to April and quieter spells September to November and February to April.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Tikehau with Air Tahiti; the resort says Tikehau is 220 miles north of Tahiti and less than an hour's flight. Air Tahiti also flies Bora Bora to Tikehau direct. The resort sits on motu Tianoa, a 15 minute boat ride from the village.",
+    "signature_experiences": "Snorkelling and scuba diving, kayaking, sunset cruises, lagoon picnics, village visits and Tāvai Spa.",
+    "who_its_for": "Couples and divers who want a small resort on an atoll lagoon, away from the Society Islands' crowds."
+   },
+   "faqs": [
+    {
+     "q": "How many rooms does Le Tikehau have?",
+     "a": "Twenty nine: 21 overwater suites and bungalows and 8 beach bungalows, on a pink sand motu in Tikehau atoll."
+    },
+    {
+     "q": "Where exactly is Le Tikehau?",
+     "a": "On motu Tianoa in Tikehau atoll, in the Tuamotu, a 15 minute boat ride from the village."
+    },
+    {
+     "q": "How do you get to Le Tikehau?",
+     "a": "Fly from Tahiti to Tikehau with Air Tahiti. The resort says the atoll is 220 miles north of Tahiti and less than an hour's flight away. Air Tahiti also lists a direct Bora Bora to Tikehau route."
+    },
+    {
+     "q": "Can you dive at Le Tikehau?",
+     "a": "Yes. Scuba diving is offered alongside snorkelling, kayaking, sunset cruises and lagoon picnics."
+    },
+    {
+     "q": "Where do you eat?",
+     "a": "Two restaurants, Poreho and Te Reka Ika, and the Kaina Bar."
+    },
+    {
+     "q": "Is Le Tikehau good for families?",
+     "a": "The Beach Bungalow and Overwater Suite each sleep two adults and two children under 13. The resort publishes no separate children's policy."
+    },
+    {
+     "q": "Can you combine Le Tikehau with another Pearl resort?",
+     "a": "Yes, with Le Bora Bora. Pearl's Islands Dream Offer takes 25% off accommodation when you book at least one night at Le Bora Bora and one at Le Tikehau; it is listed as available all year and is booked through Pearl's reservations team."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -33701,19 +35768,29 @@
   },
   {
    "slug": "pearl-resort-vahine-private-island",
-   "name": "Pearl Resort \n Vahine Private Island",
+   "name": "Vahine Private Island by Pearl Resorts",
    "ledgerId": "STY-2026-000213",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A hidden private island sanctuary where simplicity and luxury exist in perfect balance.",
+   "tagline": "A private motu in the Taha'a lagoon: nine bungalows and a royal villa for up to fourteen.",
    "quote": "Luxury isn't about having more. It's about needing less.",
-   "hero": "/img/b44/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif",
-   "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months generally offer calm lagoon conditions, warm temperatures, excellent snorkeling visibility, lower rainfall, and ideal weather for enjoying the private island environment and outdoor activities.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-11",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-12"
+   ],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October, best for lagoon outings.",
    "bestFor": [],
    "status": "founder_vetted",
    "statusDate": "2025-01-01",
@@ -33722,17 +35799,14 @@
     "lng": -151.5221
    },
    "airport": "Raiatea Airport (RFP) Tahiti Faa'a International Airport (PPT)",
-   "airportDirections": "Guests arrive via Tahiti Faa'a International Airport (PPT), connect to Raiatea Airport (RFP), and continue by boat transfer to Vahine Island. Total transfer from Raiatea typically takes approximately 35–45 minutes depending on sea conditions.",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Raiatea (RFP) with Air Tahiti, then cross the lagoon by boat. Tahiti Tourisme puts Raiatea to Taha'a at about 30 minutes by boat; Vahine does not publish its own transfer time.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Beach Bungalow",
-     "Deluxe Beach Bungalow",
-     "Overwater Bungalow",
-     "Premium Overwater Bungalow",
-     "Lagoon View Bungalow",
-     "Garden Bungalow"
+     "Overwater Bungalow (484 sq ft, up to 2 guests)",
+     "Beach Bungalow (538 sq ft, up to 2 guests)",
+     "Beach Suite (750 to 810 sq ft, up to 3 guests)"
     ]
    },
    "experiences": {
@@ -33749,24 +35823,53 @@
    "features": {
     "paras": [],
     "items": [
-     "Private motu location",
-     "Intimate boutique island resort",
-     "Beachfront and overwater accommodations",
-     "Coral reef access directly from the island",
-     "Views toward Bora Bora",
-     "Polynesian-inspired architecture",
-     "Remote island seclusion",
-     "Exceptional snorkeling opportunities",
-     "Oceanfront dining experiences"
+     "Nine bungalows on Motu Tuvahine",
+     "The Ari'i Vahine Royal Villa on its own motu, for up to 14",
+     "Beach and overwater bungalows",
+     "Kayaks and lagoon outings"
     ]
    },
    "onlyHere": [
     "Vahine Island is one of those rare destinations that feels entirely disconnected from the modern world. Surrounded by crystal-clear lagoon waters and coral reefs, this intimate private island retreat offers travelers an authentic escape where nature dictates the pace of every day."
    ],
    "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by the island. Tahiti Tourisme puts the Society Islands' dry season at May to October, best for lagoon outings.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Raiatea (RFP) with Air Tahiti; Taha'a has no airport. Tahiti Tourisme says Taha'a transfers from Raiatea are a boat trip of about 30 minutes, usually arranged by your hotel. Vahine does not publish its own transfer time.",
+    "signature_experiences": "Exploring the lagoon, kayaking, cultural activities, couples' massages and weddings.",
+    "who_its_for": "Couples who want one of the smallest island resorts in the lagoon, and families or friends who want the whole Royal Villa to themselves."
+   },
+   "faqs": [
+    {
+     "q": "How big is Vahine Private Island?",
+     "a": "Nine bungalows, by the sea or on stilts, plus the Ari'i Vahine Royal Villa, on Motu Tuvahine in the Taha'a lagoon."
+    },
+    {
+     "q": "Who runs Vahine Private Island?",
+     "a": "Pearl Resorts of Tahiti lists Vahine Private Island as the latest addition to its collection."
+    },
+    {
+     "q": "What is the Ari'i Vahine Royal Villa?",
+     "a": "A 12,669 sq ft villa on its own small motu, joined to Vahine by a bridge, with two master suites and four suites for up to 14 guests, a kitchen, a gym, a hammam and sauna, and an infinity pool. A chef is available on request."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "The Beach Suites take two adults plus one child aged 10 or older, or a third adult. The Royal Villa is described as suited to families and groups of friends."
+    },
+    {
+     "q": "How do you get to Vahine?",
+     "a": "Fly from Tahiti to Raiatea with Air Tahiti, then cross the lagoon by boat. Taha'a has no airport."
+    },
+    {
+     "q": "What is there to do?",
+     "a": "Lagoon exploring, kayaking, cultural activities, badminton and games, couples' massages and weddings."
+    },
+    {
+     "q": "Has James Wild visited?",
+     "a": "Yes. James vetted Vahine Private Island on Taha'a in 2025. He has not stayed there."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -35877,6 +37980,147 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "sangat-island-dive-resort",
+   "name": "Sangat Island\nDive Resort",
+   "ledgerId": "STY-2026-000603",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Native chalets on a limestone island in Coron Bay, with Second World War wrecks minutes away",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sangat-island-dive-resort/g10"
+   ],
+   "bestMonths": "October to May",
+   "bestMonthsNote": "Sangat says the best season for dive visibility is generally October through May; the rainy season from June to September can reduce visibility in some areas.",
+   "bestFor": [
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Francisco B. Reyes Airport, Busuanga (USU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beachfront and hillside chalets with two queen beds, for up to 4 guests.",
+     "Two hilltop chalets for 2 guests, one with air conditioning.",
+     "Lambingan Villa: a tri-level, two bedroom villa in a limestone cove with its own beach, reached by kayak or a hanging footbridge, for up to 7.",
+     "Robinson Crusoe Cottage: off resort, a rustic hideaway with a four week minimum stay.",
+     "Only three chalets have air conditioning and hot water; all have power 24 hours a day."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Wreck and reef diving, with PADI courses for beginners",
+     "Snorkelling with rental gear",
+     "Island hopping by boat",
+     "Kayaking to the Sangat Island hot springs, about 30 minutes",
+     "Picnics on Sub-Chaser Beach",
+     "Nature trekking and rock climbing"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Restaurant and bar",
+     "Dive shop with PADI instructors",
+     "Solar power",
+     "Organic island farm",
+     "Kayaks and paddleboards",
+     "Wifi in the common areas only"
+    ]
+   },
+   "onlyHere": [
+    "Eleven Japanese wrecks from 1944 lie minutes from the beach, and the Sangat Sub-Chaser dive site is a few hundred yards off Sub-Chaser Beach."
+   ],
+   "why": [
+    {
+     "title": "A Castaway Island in Coron Bay",
+     "body": "Sangat Island Dive Resort has been on the southwestern tip of Sangat Island since 1994: a 300 metre white beach under limestone cliffs, native chalets of bamboo and nipa palm, and Japanese wrecks from the Second World War a few minutes by boat."
+    }
+   ],
+   "facts": {
+    "best_months": "October to May for the clearest water, per Sangat; June to September rains can reduce visibility.",
+    "how_to_get_there": "Fly to Busuanga from Manila or Cebu. Sangat's driver meets you at the airport for a 30 minute drive to Bintuan pier or Coron town pier, then a 40 minute boat to the island.",
+    "signature_experiences": "Diving the Second World War wrecks of Coron Bay, kayaking to the hot springs, island hopping and the Lambingan Villa's private cove.",
+    "who_its_for": "Divers, and couples or families who like a simple, remote island."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sangat Island Dive Resort?",
+     "a": "On the southwestern tip of Sangat Island in Coron Bay, in the Calamian Islands of northern Palawan, about 40 minutes by boat from Coron."
+    },
+    {
+     "q": "How do you get to Sangat Island?",
+     "a": "Fly to Busuanga from Manila or Cebu. Sangat's shuttle driver meets you at the airport, drives about 30 minutes to Bintuan pier or Coron town pier, and a resort boat takes about 40 minutes to the island."
+    },
+    {
+     "q": "Is Sangat good for diving?",
+     "a": "Yes, it is a dive resort. Sangat says eleven Second World War Japanese wrecks are minutes from its beach, and it teaches PADI courses with its own instructors."
+    },
+    {
+     "q": "When is the best time to dive at Sangat?",
+     "a": "Sangat says visibility is generally best from October to May. Water is 28 to 30 degrees all year, and visibility ranges from about 7 to 30 metres with the tide."
+    },
+    {
+     "q": "What are the rooms like?",
+     "a": "Native style chalets on the beach and the hillside, two hilltop chalets and the tri-level Lambingan Villa with its own beach. They are built from bamboo and nipa palm with ceiling fans; only three chalets have air conditioning and hot water."
+    },
+    {
+     "q": "What is the Lambingan Villa?",
+     "a": "A tri-level, two bedroom villa set into a limestone cove, 200 metres from its nearest neighbour and reached only by kayak or a hanging footbridge. It sleeps a family of up to seven and has a rock shower grotto."
+    },
+    {
+     "q": "Is there wifi?",
+     "a": "Wifi is available around the clock in the restaurant, bar and front desk areas, but not in the chalets."
+    },
+    {
+     "q": "What else is there to do besides diving?",
+     "a": "Snorkelling, kayaking to the island's hot spring, island hopping, paddleboarding, nature treks and picnics on Sub-Chaser Beach."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],
@@ -45630,6 +47874,128 @@
    "placeSlug": null
   },
   {
+   "slug": "the-bayleaf-intramuros",
+   "name": "The Bayleaf\nIntramuros",
+   "ledgerId": "STY-2026-000613",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A boutique hotel inside Manila's walled city, near Fort Santiago and Rizal Park",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-bayleaf-intramuros/g10"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "A city hotel used for first and last nights; the islands' seasons are on the Philippines page.",
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Ninoy Aquino International Airport (MNL)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "57 rooms and suites",
+     "Superior Twin (23 square metres), Deluxe Twin, Queen and King",
+     "Premier Trio, Executive Suite and Bayleaf Suite"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Walking the walls and churches of Intramuros",
+     "Fort Santiago and Rizal Park, close by",
+     "Dinner on the Sky Deck"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Sky Deck restaurant",
+     "Raffaele and Atrium",
+     "Rain showers and city views",
+     "Events place"
+    ]
+   },
+   "onlyHere": [
+    "A night inside Manila's Spanish-era walls, run as the research and training hotel of the Lyceum of the Philippines University."
+   ],
+   "why": [
+    {
+     "title": "Inside the Walled City",
+     "body": "The Bayleaf stands inside Intramuros, Manila's walled city and its leading heritage site, close to Fort Santiago and Rizal Park. It has 57 rooms with views over the city and the Sky Deck restaurant, and it is the training hotel of the Lyceum of the Philippines University."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round; a gateway hotel for first and last nights.",
+    "how_to_get_there": "In Intramuros, central Manila. The Bayleaf does not publish an airport time; the house arranges a car from NAIA.",
+    "signature_experiences": "Exploring Intramuros on foot, Fort Santiago, and the Sky Deck.",
+    "who_its_for": "Travellers who want Manila's history at the door for a night or two."
+   },
+   "faqs": [
+    {
+     "q": "Where is The Bayleaf Intramuros?",
+     "a": "Inside Intramuros, Manila's historic walled city, near Rizal Park and Fort Santiago."
+    },
+    {
+     "q": "How many rooms does The Bayleaf have?",
+     "a": "Fifty-seven, from 23 square metre Superior Twins to the Bayleaf Suite."
+    },
+    {
+     "q": "Why stay in Intramuros?",
+     "a": "It puts the country's leading heritage site at the door, so a first or last day in Manila can be spent on the walls, in the churches and at Fort Santiago."
+    },
+    {
+     "q": "Where can you eat?",
+     "a": "The Sky Deck restaurant, plus Raffaele and the Atrium."
+    },
+    {
+     "q": "Who runs The Bayleaf?",
+     "a": "It is affiliated with the Lyceum of the Philippines University and serves as its research and training hotel for hospitality students."
+    },
+    {
+     "q": "How do you get there from the airport?",
+     "a": "The Bayleaf does not publish a transfer time. The house arranges a car from Ninoy Aquino International Airport."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "city",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "solo"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "the-beach-tulum",
    "name": "The Beach Tulum",
    "ledgerId": "STY-2026-000295",
@@ -45772,36 +48138,39 @@
   },
   {
    "slug": "the-brando-tetiaroa",
-   "name": "The Brando \n Tetiaroa Tahiti",
+   "name": "The Brando, Tetiaroa",
    "ledgerId": "STY-2026-000296",
-   "country": "Tahiti",
+   "country": "French Polynesia (Tahiti)",
    "countrySlug": "tahiti",
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "At The Brando, nature isn’t a backdrop, it’s the very soul of your stay.”",
+   "tagline": "Thirty five villas and one residence on Marlon Brando's atoll, twenty minutes by air from Tahiti.",
    "quote": "Here on Tetiaroa, you’ll find a place where your footprint lightens but your soul expands. Every sunrise brings discovery.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5640e9cfe_168febf65_685fe2771ea4e4bc2f0d0925_BOBY-BOBY-DJI_20240215054749_0084_D.jpg",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/30edbe837_bf1608be1_685fdb81d473748891478fc6_Brando_20Villa_20IG01_20high_20_C2_A9Johan_20Drone_20Ad."
    ],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "Dry season brings calm lagoons, sunny weather, optimal marine life visibility, and fewer rains. Perfect for snorkeling, spa days, and outdoor dining.",
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
    "coords": {
-    "lat": -17.023174,
-    "lng": -149.596015
+    "lat": -16.999,
+    "lng": -149.583
    },
    "airport": "Faa’a International Airport (PPT) – Tahiti Tetiaroa Airport (N/A) – on-site charter by Air Tetiaroa.",
-   "airportDirections": "Fly from PPT to Tetiaroa (20 min private flight). The resort arranges transfer; flights vary seasonally. For luxury travelers, charter flights via Faa’a are smoothest.",
+   "airportDirections": "Fly into Tahiti Faa'a (PPT), then take Air Tetiaroa's 20 minute flight to the atoll.",
    "founderNote": null,
    "rooms": {
-    "paras": [
-     "One‑Bedroom Villas. Private, outdoors‑integrated luxury with plunge pool and lagoon views. Two‑Bedroom Villas. Doubling up space for family or friends, with private decks and full amenities. Three‑Bedroom Villas & Teremoana Residence. For large groups or full privacy, featuring additional bedrooms, living/dining spaces and exclusive service."
-    ],
-    "items": []
+    "paras": [],
+    "items": [
+     "One Bedroom Villa (96 sq m, 2 adults and 2 children under 12)",
+     "Family One Bedroom Villa (96 sq m, 2 adults and 2 children under 18)",
+     "Two Bedroom Villa (168 sq m, 4 adults)",
+     "Three Bedroom Villa (246 sq m, 6 adults)"
+    ]
    },
    "experiences": {
     "paras": [],
@@ -45816,12 +48185,10 @@
    "features": {
     "paras": [],
     "items": [
-     "Sustainable design",
-     "In‑villa plunge pools & private beach decks",
-     "All‑inclusive gourmet by Michelin‑starred chef",
-     "Deep sea‑water cooling system reducing carbon footprint",
-     "Electric & human‑powered transport system",
-     "Restored island ecosystem and vibrant wildlife"
+     "Thirty five villas and the Teremoana Residence",
+     "Tetiaroa atoll, 20 minutes by Air Tetiaroa from Tahiti",
+     "Les Mutinés, Nami Teppanyaki, Beachcomber Cafe and Bob's Bar",
+     "The Tetiaroa Society's research on the atoll"
     ]
    },
    "onlyHere": [
@@ -45837,9 +48204,47 @@
      "body": "Tahiti is one of them. It’s not just the overwater bungalows or crystal lagoons that captivate; it’s the spirit of mana. The life force of Polynesia that draws you in and keeps you lingering longer than planned."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "Not published by The Brando. Tahiti Tourisme puts the Society Islands' dry season at May to October.",
+    "how_to_get_there": "Fly into Tahiti Faa'a (PPT), then take Air Tetiaroa's 20 minute flight to the atoll.",
+    "signature_experiences": "Tetiaroa's 12 motu, nine seabird species, turtles and rays, the Tetiaroa Society's research, and dining at Les Mutinés, Nami Teppanyaki, Beachcomber Cafe and Bob's Bar.",
+    "who_its_for": "Couples, families and groups who want a private atoll with real conservation behind it, and the Teremoana Residence for those travelling with staff."
+   },
+   "faqs": [
+    {
+     "q": "How many villas does The Brando have?",
+     "a": "Thirty five private villas and one private residence, the Teremoana Residence, on Tetiaroa atoll."
+    },
+    {
+     "q": "How do you get to The Brando?",
+     "a": "Fly into Tahiti Faa'a, then take Air Tetiaroa's 20 minute flight to Tetiaroa."
+    },
+    {
+     "q": "What is the Teremoana Residence?",
+     "a": "The largest stay: three en suite bedrooms plus a staff or kids' room, 279 sq m inside and as much again outdoors, a 22 sq m infinity pool, a full kitchen and an experience creator."
+    },
+    {
+     "q": "Is The Brando good for families?",
+     "a": "Yes. Family One Bedroom Villas sleep two adults and two children under 18, and the Kids Fly, Stay, Dine and Play Free offer runs for travel to 31 March 2028 for children under 12."
+    },
+    {
+     "q": "What is the history of Tetiaroa?",
+     "a": "Marlon Brando first saw Tetiaroa while filming Mutiny on the Bounty in the early 1960s. In 2009 the Brando Family Trust approved Pacific Beachcomber to build a 35 villa resort, which opened in 2014."
+    },
+    {
+     "q": "What conservation happens on the atoll?",
+     "a": "The nonprofit Tetiaroa Society studies and protects the atoll. Invasive rats were removed in 2020, helping native wildlife recover, and nine seabird species live on Tetiaroa."
+    },
+    {
+     "q": "Where do you eat?",
+     "a": "Les Mutinés for Polynesian fine dining, Nami Teppanyaki, Beachcomber Cafe, Bob's Bar and Te Manu Bar, plus private and in villa dining."
+    },
+    {
+     "q": "Are there current offers?",
+     "a": "Yes: Fly Free (Papeete to Tetiaroa flights, 3 nights, travel 1 April 2026 to 31 March 2027), Stay 5 Pay 4 (stays through 30 March 2027) and Kids Fly, Stay, Dine and Play Free (travel to 31 March 2028). Fly Free and Stay 5 Pay 4 apply to the All Inclusive package."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -46775,6 +49180,116 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "the-st-regis-bora-bora-resort",
+   "name": "The St. Regis Bora Bora Resort",
+   "ledgerId": "STY-2026-000617",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Overwater villas from 1,550 sq ft on Motu Ome'e, with a private lagoonarium and a spa on its own island.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-st-regis-bora-bora-resort/hero",
+   "gallery": [],
+   "bestMonths": "May to October",
+   "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-02",
+   "coords": {
+    "lat": -16.486419,
+    "lng": -151.696515
+   },
+   "airport": "Bora Bora Airport (BOB)",
+   "airportDirections": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, then a 20 minute boat ride to Motu Ome'e.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Overwater Superior Villa",
+     "Overwater Premier Suite Villa",
+     "Two Bedrooms Overwater Royal Suite Villa",
+     "Beach Front Suite Villa with Pool",
+     "The Royal Estate (1,200 sq m private compound)"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Overwater villas starting at 1,550 sq ft",
+     "The Royal Estate, a 1,200 sq m private compound",
+     "A private lagoonarium with snorkelling pontoons",
+     "The St. Regis Spa Bora Bora on its own island",
+     "Lagoon Restaurant, Bamboo, Te Pahu and Farniente Ristorante",
+     "A kids' club"
+    ]
+   },
+   "onlyHere": [],
+   "why": [],
+   "facts": {
+    "best_months": "The resort does not publish a best season. Tahiti Tourisme puts the Society Islands' dry season at May to October.",
+    "how_to_get_there": "Fly from Tahiti Faa'a (PPT) to Bora Bora (BOB) with Air Tahiti, about 50 minutes; the resort's shared boat transfer from the airport takes about 20 minutes.",
+    "signature_experiences": "Snorkelling the resort's private lagoonarium, The St. Regis Spa on its own island, and four restaurants including Lagoon and Farniente Ristorante.",
+    "who_its_for": "Couples who want a large overwater villa, and families or groups who want the Royal Estate or a beachfront pool villa with a kids' club on hand."
+   },
+   "faqs": [
+    {
+     "q": "Where is The St. Regis Bora Bora?",
+     "a": "On Motu Ome'e in the Bora Bora lagoon, a 20 minute boat ride from Bora Bora airport."
+    },
+    {
+     "q": "How big are the overwater villas?",
+     "a": "The resort says its overwater villas start at 1,550 sq ft."
+    },
+    {
+     "q": "What is the Royal Estate?",
+     "a": "A 1,200 sq m (13,000 sq ft) private compound within the resort, the largest stay at The St. Regis Bora Bora."
+    },
+    {
+     "q": "What is the Lagoonarium?",
+     "a": "A private underwater sanctuary inside the resort with several snorkelling pontoons; snorkel gear is lent free."
+    },
+    {
+     "q": "Where do you eat?",
+     "a": "Lagoon Restaurant, Bamboo, Te Pahu and Farniente Ristorante, with the Aparima Bar and the 727 Bar."
+    },
+    {
+     "q": "Is it good for families?",
+     "a": "Yes. The resort lists a kids' club and childcare on request."
+    },
+    {
+     "q": "How do you get there?",
+     "a": "Fly from Tahiti to Bora Bora with Air Tahiti, about 50 minutes, then take the resort's shared boat transfer, about 20 minutes."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (French Polynesia build)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -48206,6 +50721,147 @@
     "6ae697409300c15bed28823f",
     "6ae6974015191bd7aba6d4e6"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "two-seasons-coron-island-resort",
+   "name": "Two Seasons\nCoron",
+   "ledgerId": "STY-2026-000602",
+   "country": "Philippines",
+   "countrySlug": "philippines",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A self-sufficient island resort south of Coron, with a sandbar, a house reef and a turtle sanctuary",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/two-seasons-coron-island-resort/g10"
+   ],
+   "bestMonths": "Late November to May",
+   "bestMonthsNote": "Two Seasons does not publish best months. The Department of Tourism gives late November to May for Coron, with the best visibility from March to May.",
+   "bestFor": [
+    "family",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Francisco B. Reyes Airport, Busuanga (USU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Six bungalow types and four casita types.",
+     "Mountain and Seaview Bungalows: 34 square metres, 2 adults and 2 children.",
+     "Hilltop Bungalows: 50 square metres, 4 adults and 2 children.",
+     "Beach Bungalows: 45 square metres, on the beach or by the pool.",
+     "Island Tip Bungalows (36 square metres) and the single Sandbar Bungalow (42): adults only.",
+     "Forest, Mangrove, Hillside and Oceanview Casitas: 46 to 51 square metres, adults only."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Diving the Second World War wrecks of Coron",
+     "Snorkelling the Skeleton Wreck",
+     "Water sports from the Pawikan Aqua Sports Center",
+     "Dinner on the beach"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Sulu Restaurant and Bahura Bar",
+     "600 square metre adult and children's pool",
+     "Pawikan Aqua Sports Center",
+     "Fitness centre and children's playroom",
+     "Desalination, sewage treatment and solar water heating",
+     "Library and game room"
+    ]
+   },
+   "onlyHere": [
+    "A turtle and giant clam sanctuary of its own, with a sandbar running out to an islet."
+   ],
+   "why": [
+    {
+     "title": "Coron's First Eco Luxury Island",
+     "body": "Two Seasons sits on the Malaroyroy Peninsula of Bulalacao Island, 22 kilometres south of Coron Town. It calls itself the first eco friendly luxury island resort in Coron: a turtle and giant clam sanctuary with a sandbar to an islet, two beaches and a house reef, powered and watered by its own plants."
+    }
+   ],
+   "facts": {
+    "best_months": "Late November to May for Coron, per the Department of Tourism, with March to May best for visibility. Two Seasons does not publish its own.",
+    "how_to_get_there": "Fly to Busuanga (Coron), with direct flights from Clark, Cebu and El Nido. Allow 1.5 to 2 hours: 45 minutes to an hour by road to the Two Seasons Coron Bayside Hotel dock, then 45 minutes to an hour by boat. Boats run 6am to 4pm only, so take an early flight.",
+    "signature_experiences": "Wreck diving, the Coron lakes and lagoons, the house reef and sandbar, and beach dinners.",
+    "who_its_for": "Families in the bungalows, and couples in the adults only casitas and tip bungalows."
+   },
+   "faqs": [
+    {
+     "q": "Where is Two Seasons Coron?",
+     "a": "On the Malaroyroy Peninsula of Bulalacao Island, about 22 kilometres south of Coron Town in northern Palawan."
+    },
+    {
+     "q": "How do you get to Two Seasons Coron?",
+     "a": "Fly to Busuanga airport, with direct flights from Clark, Cebu and El Nido. A road transfer of 45 minutes to an hour takes you to the Two Seasons Coron Bayside Hotel dock, then a boat of 45 minutes to an hour to the island."
+    },
+    {
+     "q": "Are there flight times to avoid?",
+     "a": "Yes. Boats run only from 6am to 4pm under Coast Guard rules, so Two Seasons asks guests not to book the last flight in, to avoid return flights before 9:30am and to avoid connecting flights."
+    },
+    {
+     "q": "Can you take a boat from El Nido?",
+     "a": "Two Seasons discourages the ferry between El Nido and Coron because of frequent cancellations and recommends flying with Cebu Pacific instead."
+    },
+    {
+     "q": "What rooms are there?",
+     "a": "Six bungalow types from 34 to 50 square metres, several with room for children, and four adults only casitas of 46 to 51 square metres in the forest, mangroves and on the hill."
+    },
+    {
+     "q": "Is Two Seasons good for diving?",
+     "a": "Yes. Its instructors teach beginners, and experienced divers can dive Coron's Second World War Japanese wrecks, of which Two Seasons says 12 lie at accessible depths of 25 to 40 metres."
+    },
+    {
+     "q": "Is Two Seasons eco friendly?",
+     "a": "It runs its own desalination plant and sewage treatment plant, calls itself a zero waste discharge resort and uses solar panels for water heating, and the island is a turtle and giant clam sanctuary."
+    },
+    {
+     "q": "Is it good for families?",
+     "a": "Yes. The Mountain, Seaview, Beach and Hilltop Bungalows take children, and there is a 600 square metre adult and children's pool and a playroom."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [
+     "families",
+     "couples"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (approved 2 Nov 2026)",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

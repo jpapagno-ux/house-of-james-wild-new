@@ -140,12 +140,9 @@
    "name": "Amanpulo",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae8bd919444e668a1395912",
@@ -209,25 +206,19 @@
    "name": "Amorita Resort",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6ce4",
    "slug": "amun-ini-beach-resort-and-spa",
-   "name": "Amun Ini Beach Resort & Spa",
+   "name": "Amun Ini Beach Resort",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8bd",
@@ -395,8 +386,6 @@
    "country": "Philippines",
    "missing": [
     "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false
@@ -490,13 +479,8 @@
    "slug": "atmosphere-resorts-and-spa",
    "name": "Atmosphere Resorts & Spa",
    "country": "Philippines",
-   "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8c8",
@@ -580,12 +564,9 @@
    "name": "Banwa Private Island",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8d0",
@@ -782,12 +763,9 @@
    "name": "Bintana sa Paraiso",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a89a1a2a1ed379c848caef5",
@@ -862,13 +840,8 @@
    "slug": "busuanga-bay-lodge",
    "name": "Busuanga Bay Lodge",
    "country": "Philippines",
-   "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8de",
@@ -1007,13 +980,8 @@
    "slug": "cauayan-boutique-private-island",
    "name": "Cauayan Boutique Private Island",
    "country": "Philippines",
-   "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a89a1bc6e7bc1d0700009fe",
@@ -1187,6 +1155,16 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ef16d685943e616492be",
+   "slug": "conrad-bora-bora-nui",
+   "name": "Conrad Bora Bora Nui",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8ef",
    "slug": "conrad-tulum-riviera-maya",
    "name": "Conrad Tulum Riviera Maya",
@@ -1250,12 +1228,9 @@
    "name": "Discovery Coron",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae86a86abf66f88c2c86514",
@@ -1687,13 +1662,8 @@
    "slug": "flower-island-resort",
    "name": "Flower Island Resort",
    "country": "Philippines",
-   "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff911",
@@ -1702,6 +1672,17 @@
    "country": "Canada",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ef16d685943e616492bf",
+   "slug": "four-seasons-resort-bora-bora",
+   "name": "Four Seasons Resort Bora Bora",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae8bd919444e668a1395914",
@@ -1876,6 +1857,19 @@
    "released": true
   },
   {
+   "stay_id": "6ae8ef16d685943e616492c3",
+   "slug": "hanakee-lodge-hiva-oa",
+   "name": "Hanakee Hiva Oa Pearl Lodge",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a899f055f50d010d8553801",
    "slug": "hayfield-manor",
    "name": "Hayfield Manor",
@@ -1974,13 +1968,8 @@
    "slug": "hotel-okura-manila",
    "name": "Hotel Okura Manila",
    "country": "Philippines",
-   "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff91c",
@@ -2044,7 +2033,6 @@
    "missing": [
     "coming_soon",
     "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false
@@ -2132,6 +2120,27 @@
    "slug": "inkaterra-reserva-amazonica",
    "name": "Inkaterra Reserva Amazonica",
    "country": "Peru",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8ef16d685943e616492c0",
+   "slug": "intercontinental-bora-bora-thalasso-spa",
+   "name": "InterContinental Bora Bora Resort & Thalasso Spa",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae8eed24a138f85769bde11",
+   "slug": "intercontinental-tahiti-resort-spa",
+   "name": "InterContinental Tahiti Resort & Spa",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
@@ -2309,12 +2318,9 @@
    "name": "Kalinaw Resort",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a9d4861056c71a19e0353f6",
@@ -2665,14 +2671,6 @@
    "released": true
   },
   {
-   "stay_id": "6a85bfb37f6eb35689bff941",
-   "slug": "la-tahaa",
-   "name": "Le Taha’a by Pearl Resorts",
-   "country": "Tahiti",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6a85bfb37f6eb35689bff93d",
    "slug": "la-valise-tulum",
    "name": "La Valise Tulum",
@@ -2721,6 +2719,14 @@
    "slug": "le-quartier-francais",
    "name": "Le Quartier Francais South Africa",
    "country": "South Africa",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6a85bfb37f6eb35689bff941",
+   "slug": "le-tahaa",
+   "name": "Le Taha'a by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
@@ -3475,40 +3481,40 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff980",
    "slug": "pearl-resort-le-bora-bora",
-   "name": "Pearl Resort Le Borabora",
-   "country": "Tahiti",
+   "name": "Le Bora Bora by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff981",
    "slug": "pearl-resort-le-nuku-hiva",
-   "name": "Pearl Resort Le Nuku Hiva",
-   "country": "Tahiti",
+   "name": "Le Nuku Hiva by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff982",
    "slug": "pearl-resort-le-tahiti",
-   "name": "Pearl Resort Le Tahiti",
-   "country": "Tahiti",
+   "name": "Le Tahiti by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff983",
    "slug": "pearl-resort-le-tikehau",
-   "name": "Pearl Resort Le Tikehau",
-   "country": "Tahiti",
+   "name": "Le Tikehau by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff984",
    "slug": "pearl-resort-vahine-private-island",
-   "name": "Pearl Resort Vahine Private Island",
-   "country": "Tahiti",
+   "name": "Vahine Private Island by Pearl Resorts",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
@@ -3621,6 +3627,19 @@
    "country": "Mexico",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ef16d685943e616492c2",
+   "slug": "raimiti-fakarava",
+   "name": "Raimiti",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1cc8737377839e8d629",
@@ -3738,12 +3757,9 @@
    "name": "Sangat Island Dive Resort",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff992",
@@ -3880,12 +3896,11 @@
   {
    "stay_id": "6ae8ed8ba6295b5316ea6cea",
    "slug": "shangri-la-mactan-cebu",
-   "name": "Shangri-La Mactan, Cebu",
+   "name": "Shangri-La Mactan",
    "country": "Philippines",
    "missing": [
     "coming_soon",
     "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false
@@ -4540,12 +4555,9 @@
    "name": "The Bayleaf Intramuros",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9d6",
@@ -4558,8 +4570,8 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9d7",
    "slug": "the-brando-tetiaroa",
-   "name": "The Brando Tetiaroa Tahiti",
-   "country": "Tahiti",
+   "name": "The Brando, Tetiaroa",
+   "country": "French Polynesia (Tahiti)",
    "missing": [],
    "released": true
   },
@@ -4700,7 +4712,6 @@
    "missing": [
     "coming_soon",
     "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
    "released": false
@@ -4762,6 +4773,14 @@
    "missing": [
     "hero_photo"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8ef16d685943e616492bd",
+   "slug": "the-st-regis-bora-bora-resort",
+   "name": "The St. Regis Bora Bora Resort",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [],
    "released": true
   },
   {
@@ -4946,15 +4965,12 @@
   {
    "stay_id": "6ae8ed8ba6295b5316ea6cde",
    "slug": "two-seasons-coron-island-resort",
-   "name": "Two Seasons Coron Island Resort & Spa",
+   "name": "Two Seasons Coron",
    "country": "Philippines",
    "missing": [
-    "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9e8",
@@ -5083,6 +5099,19 @@
    "country": "Brazil",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6ae8ef16d685943e616492c1",
+   "slug": "vanira-lodge",
+   "name": "Vanira Lodge",
+   "country": "French Polynesia (Tahiti)",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9f6",
@@ -5327,9 +5356,10 @@
   {
    "stay_id": "6a89a1a7e46790ceb97f5bda",
    "slug": "windstar-cruise-sv-star-breeze",
-   "name": "Windstar Cruise SV Star Breeze",
-   "country": "Tahiti",
+   "name": "Star Breeze",
+   "country": "French Polynesia (Tahiti)",
    "missing": [
+    "coming_soon",
     "hero_photo",
     "coordinates"
    ],

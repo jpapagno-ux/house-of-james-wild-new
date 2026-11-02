@@ -2619,47 +2619,5 @@
   "conditions": "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply.",
   "volume": "voyages",
   "departure": "2027-06-22"
- },
- {
-  "id": "OFR-2026-000163",
-  "year": 2026,
-  "status": "Draft",
-  "scope": "vessel",
-  "ref": "galapagos-horizon-trimaran",
-  "name": "Galapagos Horizon, 6 July 2027 Northern islands (Royal Galapagos)",
-  "country": "",
-  "program": "Final Call",
-  "headline": "US$500 off per person",
-  "travel": {
-   "from": "2026-11-02",
-   "to": "2027-07-06",
-   "text": "Departs 6 July 2027"
-  },
-  "source": "Base44 library",
-  "checked": "2026-11-02",
-  "conditions": "On the 6 July 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,845 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply.",
-  "volume": "voyages",
-  "departure": "2027-07-06"
- },
- {
-  "id": "OFR-2026-000164",
-  "year": 2026,
-  "status": "Draft",
-  "scope": "vessel",
-  "ref": "galapagos-horizon-trimaran",
-  "name": "Galapagos Horizon whole-yacht charter, 6 July 2027 (Royal Galapagos)",
-  "country": "",
-  "program": "Final Call",
-  "headline": "US$8,000 off the whole yacht",
-  "travel": {
-   "from": "2026-11-02",
-   "to": "2027-07-06",
-   "text": "Departs 6 July 2027"
-  },
-  "source": "Base44 library",
-  "checked": "2026-11-02",
-  "conditions": "A whole-yacht charter of Galapagos Horizon for up to 16 on the 6 July 2027 sailing of the 5-day Northern islands cruise (4 nights): US$80,450 instead of US$88,450. New bookings only; subject to availability. Royal Galapagos terms apply.",
-  "volume": "voyages",
-  "departure": "2027-07-06"
  }
 ]

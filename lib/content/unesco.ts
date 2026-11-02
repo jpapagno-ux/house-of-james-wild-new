@@ -27,6 +27,20 @@ export const UNESCO: UnescoSite[] = [
   { id: "866", name: "Prehistoric Rock Art Sites in the Côa Valley", country: "portugal", year: 1998, lat: 41.08, lng: -7.11 },
   { id: "1046", name: "Alto Douro Wine Region", country: "portugal", year: 2001, lat: 41.13, lng: -7.42 },
   { id: "1367", name: "Garrison Border Town of Elvas and its Fortifications", country: "portugal", year: 2012, lat: 38.881, lng: -7.163 },
+  // Greece (the flyover into Greece, 2 Nov 2026)
+  { id: "392", name: "Temple of Apollo Epicurius at Bassae", country: "greece", year: 1986, lat: 37.43, lng: 21.9 },
+  { id: "393", name: "Archaeological Site of Delphi", country: "greece", year: 1987, lat: 38.482, lng: 22.501 },
+  { id: "404", name: "Acropolis, Athens", country: "greece", year: 1987, lat: 37.9715, lng: 23.7257 },
+  { id: "455", name: "Meteora", country: "greece", year: 1988, lat: 39.7217, lng: 21.6306 },
+  { id: "491", name: "Sanctuary of Asklepios at Epidaurus", country: "greece", year: 1988, lat: 37.596, lng: 23.079 },
+  { id: "493", name: "Medieval City of Rhodes", country: "greece", year: 1988, lat: 36.445, lng: 28.2275 },
+  { id: "511", name: "Archaeological Site of Mystras", country: "greece", year: 1989, lat: 37.0736, lng: 22.3667 },
+  { id: "517", name: "Archaeological Site of Olympia", country: "greece", year: 1989, lat: 37.638, lng: 21.63 },
+  { id: "530", name: "Delos", country: "greece", year: 1990, lat: 37.3967, lng: 25.2686 },
+  { id: "941", name: "Archaeological Sites of Mycenae and Tiryns", country: "greece", year: 1999, lat: 37.7308, lng: 22.7561 },
+  { id: "978", name: "Old Town of Corfu", country: "greece", year: 2007, lat: 39.6243, lng: 19.9217 },
+  { id: "1695", name: "Zagori Cultural Landscape", country: "greece", year: 2023, lat: 39.88, lng: 20.75 },
+  { id: "1733", name: "Minoan Palatial Centres", country: "greece", year: 2025, lat: 35.298, lng: 25.163 },
   // Transnational
   { id: "1459", name: "Qhapaq Ñan, Andean Road System", country: "chile,bolivia,peru,ecuador,argentina,colombia", year: 2014, lat: null, lng: null },
 ];

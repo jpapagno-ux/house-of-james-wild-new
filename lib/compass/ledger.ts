@@ -15,7 +15,7 @@ export function compassLedger(): { stays: PreviewRecord[]; journeys: PreviewReco
     const documented = r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"));
     return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions,
       suitability: suitabilityFrom(r.stay.bestFor, r.suitability), classificationStatus: r.classificationStatus, classifiedBy: "", impact: [], impactDocumented: documented, founderMark: r.stay.status ?? null, kind: "stay",
-      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: recordHref("stay", r.slug) };
+      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate, r.slug), href: recordHref("stay", r.slug) };
   });
   const journeys: PreviewRecord[] = pathwayTrips().map((t) => ({
     slug: t.slug, ledgerId: t.ledgerId, primaryPathway: t.primaryPathway, secondaryPathways: t.secondaryPathways, volumes: t.volumes, setting: t.setting, intentions: [], suitability: [],

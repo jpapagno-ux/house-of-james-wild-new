@@ -86,6 +86,14 @@
 /* Flyover: the continent's labels, graticule and compass step aside while the chart flies in. */
 .ledger-chart.fly-quiet .chart-fade { opacity: 0; transition: opacity .35s ease; }
 /* Flyover: the marching dotted ring around the feature the chart lands on (the Salar de Uyuni). */
+/* Island chains (Indonesia): each chain's chart grows in from where it sits on the archipelago. */
+.chain-fly .ledger-chart { animation: chain-fly .75s cubic-bezier(.2,.75,.2,1) both; transform-origin: var(--chain-origin, 50% 50%); }
+@keyframes chain-fly { from { transform: scale(.82); opacity: 0; filter: blur(2px); } to { transform: none; opacity: 1; filter: none; } }
+/* After the first view, switching chains is quick: the coast redraws in under a second and the pins follow. */
+.chain-fly.quick .ledger-chart.is-drawn .chart-ink { animation-duration: .9s, .5s; animation-delay: 0s, .35s; }
+.chain-fly.quick .ledger-chart .chart-fade { transition-delay: .45s; }
+.chain-fly.quick .ledger-pin-drop { animation-delay: .6s !important; }
+@media (prefers-reduced-motion: reduce) { .chain-fly .ledger-chart { animation: none; } }
 @keyframes fly-march { to { stroke-dashoffset: -26; } }
 .fly-ring { animation: fly-march 1.4s linear infinite; }
 .ledger-chart.fly-land .chart-fade { transition-delay: .25s; }

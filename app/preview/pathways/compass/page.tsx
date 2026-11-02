@@ -23,7 +23,7 @@ export default function CompassPathwaysPreview() {
   const records: PreviewRecord[] = pathwayStays({ includeDrafts: true }).map((r) => {
     const v = verdictFor(`stay:${r.slug}`);
     return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions, suitability: r.suitability, classificationStatus: r.classificationStatus, classifiedBy: r.classifiedBy, impact: r.impact,
-      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: stayPreviewHref(r.slug), pathwayHref };
+      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate, r.slug), href: stayPreviewHref(r.slug), pathwayHref };
   });
 
   return (

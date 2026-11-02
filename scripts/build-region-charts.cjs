@@ -17,7 +17,7 @@ const reserves = require("../lib/content/reserves.json");
 // Sri Lanka first, 1 Nov 2026) is inked on its region chart like a country with stays.
 const LIB_COUNTRIES = require("../lib/content/countries-library.json").countries;
 
-const W = 1000;
+const WIDTH = 1000;
 // Hand frames [w, s, e, n] and fixed focus countries where the stays alone would mislead.
 const REGIONS = {
   africa: { seas: [["Atlantic Ocean", -22, 4], ["Indian Ocean", -22, 50], ["Mozambique Channel", -18, 40.5]] },
@@ -79,6 +79,25 @@ const REGIONS = {
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
+  // Indonesia's island chains, closer (James, 2 Nov 2026: "zoom in on the island chains with some textures").
+  // 1:10m coastlines at a narrower width, so labels and pins read at phone size. The country guide opens on
+  // Bali and Lombok and flies between these frames (components/destination/ChainChartMap.tsx).
+  "indonesia-bali-lombok": { country: "indonesia", hires: true, width: 520, frame: [114.75, -9.12, 116.75, -7.95], focus: ["Indonesia"],
+    seas: [["Bali Sea", -8.08, 115.6], ["Indian Ocean", -9.05, 115.75], ["Lombok Strait", -8.5, 115.8]],
+    areas: [["Ubud", -8.27, 115.42], ["Bukit", -8.97, 115.02], ["Lombok", -8.6, 116.4]],
+    marks: [["Lombok ✈", -8.757, 116.276, "airport"]] },
+  "indonesia-sumba-flores": { country: "indonesia", hires: true, width: 520, frame: [116.9, -11.15, 123.9, -7.9], focus: ["Indonesia"],
+    seas: [["Flores Sea", -8.05, 121.0], ["Savu Sea", -9.75, 121.6], ["Indian Ocean", -10.95, 118.4]],
+    areas: [["Sumba", -9.72, 120.0], ["Flores", -8.43, 121.3], ["Sumbawa", -8.62, 117.65], ["Komodo", -8.9, 119.45], ["Rote", -11.08, 123.3]],
+    marks: [["Labuan Bajo ✈", -8.486, 119.889, "airport"], ["Tambolaka ✈", -9.409, 119.244, "airport"], ["Kupang ✈", -10.171, 123.671, "airport"]] },
+  "indonesia-raja-ampat": { country: "indonesia", hires: true, width: 520, frame: [129.0, -2.3, 131.9, 0.42], focus: ["Indonesia"],
+    seas: [["Pacific Ocean", 0.22, 131.0], ["Seram Sea", -2.15, 130.9]],
+    areas: [["Waigeo", -0.18, 130.75], ["Wayag", 0.2, 130.02], ["Misool", -1.72, 130.05], ["Batanta", -0.9, 130.6]],
+    marks: [["Sorong ✈", -0.926, 131.121, "airport"], ["Waisai", -0.43, 130.82, "town"]] },
+  "indonesia-sumatra-riau": { country: "indonesia", hires: true, width: 520, frame: [102.7, -0.25, 105.2, 1.75], focus: ["Indonesia"],
+    seas: [["South China Sea", 1.45, 104.85], ["Strait of Malacca", 1.55, 103.0]],
+    areas: [["Sumatra", 0.25, 103.05], ["Bintan", 1.05, 104.38], ["Riau Islands", 0.35, 104.4]],
+    marks: [["Singapore ✈", 1.364, 103.991, "airport"]] },
   "polar-antarctica": { frame: [-82, -72, -44, -50], focus: ["Antarctica"], seas: [["Drake Passage", -58.5, -64], ["Weddell Sea", -68, -50], ["Bellingshausen Sea", -69.5, -79], ["Scotia Sea", -56.5, -50]], areas: [["Antarctic Peninsula", -66.2, -64.6], ["Ushuaia", -55.3, -67.6], ["Punta Arenas", -52.7, -71.6], ["South Shetland Islands", -61.6, -57.4]] },
   "polar-arctic": { frame: [-62, 58, 34, 82], focus: ["Greenland", "Iceland", "Norway"], seas: [["Greenland Sea", 75, -8], ["Norwegian Sea", 68, 3], ["Baffin Bay", 72.5, -63], ["Denmark Strait", 67, -26], ["Barents Sea", 74.5, 31]], areas: [["Svalbard", 80.3, 20], ["Reykjavík", 63.6, -21.94]] },
 };
@@ -137,6 +156,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   }
   if (cfg.minN != null) B[3] = Math.max(B[3], cfg.minN); // keep Darwin and Wolf (Galápagos) on the chart
   const bounds = { w: +B[0].toFixed(3), s: +B[1].toFixed(3), e: +B[2].toFixed(3), n: +B[3].toFixed(3) };
+  const W = cfg.width || WIDTH; // the island-chain charts draw narrower, so labels and pins read at phone size
   const kx = W / (bounds.e - bounds.w), ky = kx / Math.cos(((bounds.s + bounds.n) / 2) * Math.PI / 180);
   const H = Math.round((bounds.n - bounds.s) * ky);
   const P = ([x, y]) => [+((x - bounds.w) * kx).toFixed(1), +((bounds.n - y) * ky).toFixed(1)];
@@ -179,7 +199,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
       areas: (cfg.areas || []).map(L),
     },
     lats, lngs,
-    ...(cfg.salt || cfg.unesco || cfg.reserves ? { overlays: overlays(cfg, P) } : {}),
+    ...(cfg.salt || cfg.unesco || cfg.reserves || cfg.marks ? { overlays: overlays(cfg, P) } : {}),
   };
   console.log(slug, W, H, "focus:", [...focusNames].join(", "), "points:", raw.length);
 }

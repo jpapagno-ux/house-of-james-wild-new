@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import RecordShip from "@/components/ships/RecordShip";
 import { aliikaiExtra } from "@/components/ships/AliikaiShip";
+import { StayBeforeYouSail } from "@/components/stays/IndonesiaPairings";
 import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
@@ -27,5 +28,8 @@ export default async function ShipPage({ params }: P) {
   const e = shipBySlug((await params).ship);
   if (!e) notFound();
   // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={e.slug === "aliikai" ? aliikaiExtra() : undefined} ef={exceptionalFewForVessel(e.slug)} />;
+  // Indonesia cross-sell (B7): "Stay before you sail" after the ship, for the Indonesian yachts.
+  const base = e.slug === "aliikai" ? aliikaiExtra() : {};
+  const sail = <StayBeforeYouSail vessel={e.slug} name={e.data.name} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{sail}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

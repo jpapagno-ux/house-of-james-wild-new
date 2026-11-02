@@ -742,10 +742,6 @@
    "batch": "2026-10-28 Indonesia"
   },
   {
-   "slug": "six-senses-uluwatu",
-   "batch": "2026-10-28 Indonesia"
-  },
-  {
    "slug": "aliikai-voyage",
    "batch": "2026-10-28 Indonesia"
   },
@@ -1880,6 +1876,22 @@
   {
    "slug": "pikaia-lodge",
    "batch": "2026-11-02 library sync"
+  },
+  {
+   "slug": "como-uma-canggu",
+   "batch": "2026-11-02 Indonesia approved"
+  },
+  {
+   "slug": "como-uma-ubud",
+   "batch": "2026-11-02 Indonesia approved"
+  },
+  {
+   "slug": "nihi-rote",
+   "batch": "2026-11-02 Indonesia approved"
+  },
+  {
+   "slug": "bambu-indah",
+   "batch": "2026-11-02 Indonesia approved"
   }
  ]
 }

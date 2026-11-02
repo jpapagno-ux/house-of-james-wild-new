@@ -8,7 +8,8 @@ import { ArrowRight } from "lucide-react";
 // by tier as each operator labels it, with filter chips for guests, length, price and type, so 17 ships
 // never become one endless scroll. Mobile first: each chip row scrolls sideways on a phone, targets are
 // 44px. Every card stays in the HTML (filters only hide), so the page reads whole without script.
-// A ?pathway= view filters to that pathway and is never indexed (as HubFilter).
+// A ?pathway= view filters to that pathway and is never indexed (as HubFilter). Chips use the Deep Sea action
+// colour (--jw-action), as the buttons do (palette, 2 Nov 2026).
 
 export type FleetItem = { slug: string; operator: string; tier: string; guests: number | null; nights: number[]; low: number | null; kind: string; pathways: string[]; node: ReactNode };
 export type FleetSection = { operator: string; href?: string; line: string; tiers: string[] };
@@ -54,7 +55,7 @@ export default function FleetBrowser({ items, sections, pathwayNames, credits }:
   const passes = (x: FleetItem) => rows.every((r) => { const k = on[r.name]; return !k || r.opts.find((o) => o.key === k)?.test(x); }) && (!path || x.pathways.includes(path));
   const shown = items.filter(passes);
   const any = Object.values(on).some(Boolean) || !!path;
-  const chip = (active: boolean) => `shrink-0 inline-flex items-center min-h-[44px] px-3.5 border text-[14px] whitespace-nowrap transition-colors ${active ? "border-crimson bg-crimson text-paper" : "ledger-border bg-paper hover:border-crimson"}`;
+  const chip = (active: boolean) => `shrink-0 inline-flex items-center min-h-[44px] px-3.5 border text-[14px] whitespace-nowrap transition-colors ${active ? "border-[var(--jw-action)] bg-[var(--jw-action)] text-white" : "ledger-border bg-paper hover:border-[var(--jw-action)]"}`;
 
   return (
     <div>

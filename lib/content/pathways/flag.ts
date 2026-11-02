@@ -1,9 +1,9 @@
-// Wild Pathways feature flag. Off unless NEXT_PUBLIC_PATHWAYS is exactly "on",
-// so production is byte-identical until James switches it on in Vercel →
-// Settings → Environment Variables (Preview first). Import-free so plain Node
-// can test it; same pattern as lib/booking-live/flags.ts.
+// Wild Pathways feature flag. On site-wide since the Voyages launch (James, 1 Nov 2026:
+// "pathway chips switch ON site-wide when Voyages launches"), in every build, whatever the
+// Vercel environment says; NEXT_PUBLIC_PATHWAYS=off is the emergency off switch.
+// Import-free so plain Node can test it; same pattern as lib/booking-live/flags.ts.
 export function readPathwaysFlag(env: Record<string, string | undefined>) {
-  return env.NEXT_PUBLIC_PATHWAYS === "on";
+  return env.NEXT_PUBLIC_PATHWAYS !== "off";
 }
 export const PATHWAYS_ON = readPathwaysFlag({ NEXT_PUBLIC_PATHWAYS: process.env.NEXT_PUBLIC_PATHWAYS });
 

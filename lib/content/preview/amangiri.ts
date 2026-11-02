@@ -26,12 +26,13 @@ export function amangiri() {
   const roomPhotos = assetsFor(STAY_ID, "room", allow);
   const night = assetFor(STAY_ID, "night", allow);
   const planHref = `/plan?trip=${encodeURIComponent(NAME)}`;
-  const answer = `${NAME} is a resort at Canyon Point in southern Utah, on more than 900 acres of the Colorado Plateau, with 34 suites, the ten tented pavilions of Camp Sarika and a six-bedroom villa. Designated in The Exceptional Few by James Wild & Co for its setting, its privacy, its design and its access. Nearest airport: Page Municipal (PGA), about 25 minutes by road. Plan it with James or an advisor.`;
+  const answer = `${NAME} is a resort at Canyon Point in southern Utah, on more than 900 acres of the Colorado Plateau, with 34 suites, the ten tented pavilions of Camp Sarika, a four-bedroom Mesa Home and a six-bedroom Ridge Villa. Camp Sarika can be taken in full; for the whole of Amangiri, enquire with James. Designated in The Exceptional Few by James Wild & Co for its setting, its privacy, its design and its access. Nearest airport: Page Municipal (PGA), about 25 minutes by road. Plan it with James or an advisor.`;
   const facts: [string, string][] = [["Ledger ID", "Being filed"], ["Country", "United States"], ["Setting", "Canyon Point, Utah · Colorado Plateau"], ["Airport", "Page Municipal (PGA) · about 25 min"]];
   const rooms: Room[] = [
     { name: "The Suites", image: roomPhotos[0] ? mediaUrl(roomPhotos[0], { ratio: "16:10", width: 1200 }) : null, units: 34, note: "Girijaala, Orchard, Desert, Desert Pool, Mesa Pool and the Amangiri Suite: concrete, glass and the mesa in every window." },
     { name: "Camp Sarika", image: roomPhotos[2] ? mediaUrl(roomPhotos[2], { ratio: "16:10", width: 1200 }) : null, units: 10, plunge: true, note: "Ten tented pavilions a short drive from the main resort, each with its own plunge pool, one with two bedrooms." },
-    { name: "The Villa", image: roomPhotos[1] ? mediaUrl(roomPhotos[1], { ratio: "16:10", width: 1200 }) : null, units: 1, note: "A six-bedroom ridge villa, taken whole." },
+    { name: "Mesa Home", image: null, units: 1, note: "Four bedrooms and a private infinity pool on the terrace, for a family or a small group, as described by Aman." },
+    { name: "Ridge Villa", image: roomPhotos[1] ? mediaUrl(roomPhotos[1], { ratio: "16:10", width: 1200 }) : null, units: 1, note: "Six bedrooms on its own nine-acre plot, with a 36-metre pool, private spa and gym. Taken whole." },
   ];
   const days = [
     { title: "Walk the slot canyons", image: experiences[0] ? mediaUrl(experiences[0], { ratio: "3:2", width: 1200 }) : undefined, alt: experiences[0]?.alt, note: "Narrow sandstone passages on the property's own ground, guided, in the cool of the morning." },
@@ -41,6 +42,7 @@ export function amangiri() {
   ];
   const faqs = ef ? [
     { q: `Why is ${NAME} in The Exceptional Few?`, a: ef.whyItMadeTheCut[1] ?? ef.whyItMadeTheCut[0] },
+    { q: `Can you take ${NAME} privately?`, a: "Camp Sarika, the ten tented pavilions, can be bought out in full for a private celebration or retreat, as Aman states. For exclusive use of the whole of Amangiri, ask James; it is arranged directly with Aman and depends on the dates." },
     { q: `Who is ${NAME} less ideal for?`, a: `${ef.whoItMayNotSuit.join(", ")}. If that's you, the Human Compass will point you somewhere that is.` },
     { q: `How do you get to ${NAME}?`, a: "Fly into Page Municipal Airport (PGA), about 25 minutes by road, as stated by the property. St George and Flagstaff are about 2.5 hours away; Phoenix and Las Vegas about 4.5 hours, through the parks. James arranges the car with your booking." },
     { q: `Is ${NAME} worth another night?`, a: ef.worthAnotherNight ?? "" },

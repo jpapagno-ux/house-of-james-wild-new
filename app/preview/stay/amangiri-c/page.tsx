@@ -10,6 +10,7 @@ import { Roundel } from "@/components/ledger/VolumeKit";
 import DriftFrame from "@/components/exceptional-few/DriftFrame";
 import PanFrame from "@/components/exceptional-few/PanFrame";
 import EFSignals from "@/components/exceptional-few/EFSignals";
+import NoteText from "@/components/exceptional-few/NoteText";
 import { EFFrame } from "@/components/exceptional-few/EFStory";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
 import LIB_CHARTS from "@/lib/charts/countries.json";
@@ -28,15 +29,6 @@ import { amangiri, CANONICAL, COORDS, NAME } from "@/lib/content/preview/amangir
 export const metadata = buildMetadata({ title: "Amangiri · Mock C, Dusk Bold (preview)", description: "Exceptional Few direction C: coloured surface, one frame per screen, slow drift.", path: "/preview/stay/amangiri-c", noindex: true });
 
 // Tight copy: what the page says when it says less.
-const TIGHT = {
-  line: "The building disappears. The landscape stays.",
-  cut: [
-    { k: "The place", t: "Nine hundred acres of the Colorado Plateau. Thirty-four suites, ten tents, one villa. The mesa owns the view." },
-    { k: "The access", t: "Slot canyons and a via ferrata on the property. Page's airstrip twenty-five minutes away. The parks a day in any direction." },
-    { k: "The verdict", t: "Not the most comfortable desert hotel in America. The one that lets the desert win." },
-  ],
-  another: "Four nights. The third is when you stop moving.",
-};
 
 export default async function AmangiriMockC({ searchParams }: { searchParams: Promise<{ surface?: string }> }) {
   const { surface } = await searchParams;
@@ -64,7 +56,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {/* 02 The line, alone */}
           <section className="py-20 md:py-32 text-center" aria-label="The line">
-            <p className="ledger-display text-[2rem] md:text-[3.6rem] leading-[1.1] max-w-4xl mx-auto">{TIGHT.line}</p>
+            <p className="ledger-display text-[2rem] md:text-[3.6rem] leading-[1.1] max-w-4xl mx-auto">{ef.heroLine}</p>
             <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3">
               {ef.signals.map((s) => <span key={s.key} className="ledger-eyebrow !text-[11px] !tracking-[0.26em]" style={{ color: "var(--ef-sand)" }}>{SIGNAL_LABEL[s.key]}</span>)}
             </div>
@@ -72,13 +64,13 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         </div>
 
         {/* 03 Why It Made the Cut: three screens, one frame and one line each */}
-        {TIGHT.cut.map((c, i) => {
-          const a = cutFrames[i];
+        {ef.whyItMadeTheCut.map((t, i) => {
+          const a = cutFrames[i]; const n = `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`;
           return a ? (
-            <DriftFrame key={c.k} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]">
-              {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{ c.k}</p>}
-              <p className="mt-4 ledger-display text-[1.7rem] md:text-[2.9rem] leading-[1.12] max-w-3xl">{c.t}</p>
-              {i === 0 && <p className="mt-6 text-[11px] tracking-[0.22em] uppercase text-white/60">01 / 03</p>}
+            <DriftFrame key={i} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]">
+              {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{n}</p>}
+              <p className="mt-4 ledger-display text-[1.7rem] md:text-[2.9rem] leading-[1.12] max-w-3xl">{t}</p>
+              {i === 0 && <p className="mt-6 text-[11px] tracking-[0.22em] uppercase text-white/60">{n}</p>}
             </DriftFrame>
           ) : null;
         })}
@@ -88,7 +80,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
           <section aria-label="James' note, pathways and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
             <div>
               <h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</h2>
-              {ef.jamesNote && <><p className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-5 flex items-end justify-between gap-4 max-w-xl"><span className="text-[11px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><span className="invert opacity-90"><Signature className="w-24" /></span></div></>}
+              {ef.jamesNote && <><NoteText text={ef.jamesNote.text} href={d.planHref} className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]" /><div className="mt-5 flex items-end justify-between gap-4 max-w-xl"><span className="text-[11px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><span className="invert opacity-90"><Signature className="w-24" /></span></div></>}
             </div>
             <div className="space-y-8">
               <div><p className="ledger-eyebrow">Wild Pathways</p>{pw && <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</div>
@@ -129,8 +121,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
         {night && (
           <DriftFrame a={night} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]" className="mt-0">
             <h2 className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</h2>
-            <p className="mt-4 ledger-display text-[2rem] md:text-[3.6rem] leading-[1.08] max-w-3xl">{TIGHT.another}</p>
-            {ef.worthAnotherNight && <p className="mt-5 max-w-xl text-[15px] md:text-[17px] text-white/85 leading-relaxed">{ef.worthAnotherNight.split(". ").slice(1, 3).join(". ")}.</p>}
+            {ef.worthAnotherNight && (() => { const [first, ...rest] = ef.worthAnotherNight.split(/(?<=\.)\s+/); return <><p className="mt-4 ledger-display text-[2rem] md:text-[3.6rem] leading-[1.08] max-w-3xl">{first}</p>{rest.length > 0 && <p className="mt-5 max-w-xl text-[15px] md:text-[17px] text-white/85 leading-relaxed">{rest.join(" ")}</p>}</>; })()}
           </DriftFrame>
         )}
 

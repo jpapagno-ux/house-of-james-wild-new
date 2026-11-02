@@ -78,6 +78,7 @@ import { collectionNo, efPathways, efThemeClass, exceptionalFewFor } from "@/lib
 import { SIGNAL_LABEL } from "@/lib/content/exceptional-few";
 import { assetFor, assetsFor, mediaUrl, storyFrames } from "@/lib/content/media-assets";
 import EFSignals from "@/components/exceptional-few/EFSignals";
+import NoteText from "@/components/exceptional-few/NoteText";
 import { EFFrame } from "@/components/exceptional-few/EFStory";
 import DriftFrame from "@/components/exceptional-few/DriftFrame";
 import PanFrame from "@/components/exceptional-few/PanFrame";
@@ -221,7 +222,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <section aria-label="James' note and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
               <div>
                 <h2 className="ledger-eyebrow" style={{ color: "var(--ef-sand)" }}>James&rsquo; note</h2>
-                {ef.jamesNote ? <><p className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]">&ldquo;{ef.jamesNote.text}&rdquo;</p><div className="mt-4 flex items-end justify-between gap-4"><span className="text-[11.5px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><Signature className="w-20" /></div></> : <p className="mt-3 text-[14px] ledger-muted">Not yet written.</p>}
+                {ef.jamesNote ? <><NoteText text={ef.jamesNote.text} href={planHref} className="mt-4 ledger-display italic text-[1.6rem] md:text-[2.2rem] leading-[1.25]" /><div className="mt-4 flex items-end justify-between gap-4"><span className="text-[11.5px] tracking-[0.12em] uppercase ledger-muted">{ef.jamesNote.where} · {ef.jamesNote.when}</span><Signature className="w-20" /></div></> : <p className="mt-3 text-[14px] ledger-muted">Not yet written.</p>}
               </div>
               <div><EFSignals ef={ef} id="glance" /></div>
             </section>
@@ -307,7 +308,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {ef?.worthAnotherNight && (efNight ? (
             <DriftFrame a={efNight} ratio="3:2" id="another-night" motion="slow" height="min-h-[82svh] md:min-h-[92svh]">
               <h2 className="ledger-eyebrow !text-white/80">Worth Another Night&trade;</h2>
-              <p className="mt-4 ledger-display text-[1.7rem] md:text-[3rem] leading-[1.12] max-w-3xl">{ef.worthAnotherNight}</p>
+              {(() => { const [first, ...rest] = ef.worthAnotherNight!.split(/(?<=\.)\s+/); return <><p className="mt-4 ledger-display text-[1.7rem] md:text-[3rem] leading-[1.12] max-w-3xl">{first}</p>{rest.length > 0 && <p className="mt-5 max-w-xl text-[15px] md:text-[17px] text-white/85 leading-relaxed">{rest.join(" ")}</p>}</>; })()}
             </DriftFrame>
           ) : <WorthAnotherNight copy={ef.worthAnotherNight} />)}
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} schema={s.faqs.length > 0 && s.reviewed} />

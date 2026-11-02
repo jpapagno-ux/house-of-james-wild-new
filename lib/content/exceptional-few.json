@@ -9,14 +9,14 @@
       "stayName": "Amangiri",
       "designationStatus": "designated",
       "collectionNumber": 1,
-      "heroLine": "You don't stay here because it's luxurious. You stay because the building disappears into a landscape that feels older than anything you have walked through.",
+      "heroLine": "The building disappears. The landscape stays.",
       "whyItMadeTheCut": [
-        "Amangiri sits on more than 900 acres of the Colorado Plateau at Canyon Point, where the Entrada sandstone rises straight out of the desert floor. The architecture is concrete and glass, poured low into the rock so that the mesa, not the building, owns the view. There are 34 suites and, a short drive away, the ten tented pavilions of Camp Sarika. That is the whole place.",
-        "It made the cut for three reasons that cannot be built elsewhere. The setting: a privately held stretch of the Grand Staircase country, with slot canyons and a via ferrata on the property itself. The restraint: no lobby to speak of, no signage, a pool poured around a rock that was already there. And the access: Page's airstrip is a 25-minute drive, Lake Powell is at the door, and the great parks of the Southwest are a day trip in any direction.",
-        "It is not the most comfortable desert hotel in America. It is the one that lets the desert win."
+        "Place. Nine hundred acres of the Colorado Plateau with nothing built on the horizon but the horizon. Aman found the one fold in the rock where a resort could vanish, and put it there.",
+        "Design. Concrete poured the colour of the mesa, so the architecture reads as geology. You walk past it before you see it.",
+        "Privacy. Thirty-four suites, ten tents and two villas on land you could lose a town in. The quiet is the amenity."
       ],
       "jamesNote": {
-        "text": "There are hotels with views. Then there are places where the landscape is the hotel.",
+        "text": "I send people here when they tell me they want to be somewhere, not at something. If a group wants it entirely to themselves, Camp Sarika can be yours in full. The rest of Amangiri — ask me.",
         "where": "Canyon Point",
         "when": "The Ledger, 2026"
       },
@@ -47,7 +47,7 @@
         "the-art-of-stillness",
         "above-it-all"
       ],
-      "worthAnotherNight": "Yes, and not for the spa. The first two days go to the canyons and the pool. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came. Four nights is the right number; add a night at Camp Sarika if you can.",
+      "worthAnotherNight": "Four nights. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came.",
       "whoItSuits": [
         "Landscape-first travellers",
         "Privacy seekers",
@@ -70,8 +70,9 @@
       ],
       "selectionDate": "2026-11-01",
       "paletteKey": "amangiri",
-      "publicationStatus": "draft",
-      "reviewDate": null
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-01",
+      "reviewStatus": "approved"
     }
   ]
 }

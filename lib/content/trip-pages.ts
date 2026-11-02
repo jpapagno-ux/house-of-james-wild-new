@@ -144,6 +144,13 @@ const CA = {
   bolontikuPool: STAY("boluntiku-hotel", "g4", "The pool and thatched roof at Bolontiku from above, beside Lake Petén Itzá", "Bolontiku"),
   bolontikuNight: STAY("boluntiku-hotel", "g7", "The pool lit at night under a full moon at Bolontiku", "Bolontiku"),
   bolontikuHero: STAY("boluntiku-hotel", "hero", "Bolontiku, on Lake Petén Itzá near Tikal", "Bolontiku"),
+  bokehHero: STAY("villa-bokeh", "hero", "Villa Bokéh, Antigua Guatemala", "Villa Bokéh"),
+  bokehSuite: STAY("villa-bokeh", "g4", "A suite at Villa Bokéh", "Villa Bokéh"),
+  bokehGrounds: STAY("villa-bokeh", "g2", "Villa Bokéh outside Antigua Guatemala", "Villa Bokéh"),
+  palopoHero: STAY("casa-palopo", "hero", "Casa Palopó on Lake Atitlán, Guatemala", "Casa Palopó"),
+  palopoLake: STAY("casa-palopo", "g1", "Casa Palopó above Lake Atitlán", "Casa Palopó"),
+  palopoSuite: STAY("casa-palopo", "g4", "A suite at Casa Palopó", "Casa Palopó"),
+  palopoVilla: STAY("casa-palopo", "g2", "Villa Palopó, the three-bedroom villa at Casa Palopó", "Casa Palopó"),
   petenItza: { url: `${CLD}jwco/collections/cayuga-collection/offers/bolontiku-lake`, alt: "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", credit: "Photograph courtesy of Bolontiku" },
   guatemala: { url: `${CLD}jwco/destinations/guatemala/hero`, alt: "Guatemala, Central America" },
   blancaneaux: STAY("blancaneaux-lodge", "hero", "Blancaneaux Lodge, above Privassion Creek in the Mountain Pine Ridge", "The Family Coppola Hideaways"),
@@ -161,6 +168,10 @@ const MX_IMAGES: Record<string, TripImg> = {
 };
 const GT_IMAGES: Record<string, TripImg> = {
   "PHOTO · GUATEMALA": CA.guatemala,
+  "PHOTO · VILLA BOKÉH": CA.bokehHero, "Villa Bokéh": CA.bokehHero, "Villa Bokéh suite": CA.bokehSuite,
+  "PHOTO · VILLA BOKÉH GROUNDS": CA.bokehGrounds, "Villa Bokéh grounds": CA.bokehGrounds,
+  "PHOTO · CASA PALOPÓ": CA.palopoHero, "Casa Palopó": CA.palopoHero, "Casa Palopó suite": CA.palopoSuite, "Villa Palopó": CA.palopoVilla,
+  "PHOTO · LAKE ATITLÁN": CA.palopoLake, "The lake towns by boat": CA.palopoLake,
   "PHOTO · BOLONTIKU POOL": CA.bolontikuPool, "Bolontiku pool": CA.bolontikuPool,
   "PHOTO · LAKE PETÉN ITZÁ": CA.petenItza, "Lake Petén Itzá": CA.petenItza, "A swim in Lake Petén Itzá": CA.petenItza,
   "PHOTO · BOLONTIKU AT NIGHT": CA.bolontikuNight, "Bolontiku at night": CA.bolontikuNight,
@@ -184,7 +195,7 @@ export const TRIP_SLIDES: Record<string, TripImg[]> = {
   "track-your-life-with-boyd-varty": [ZA.retreat, ZA.soundTherapy, ZA.healing, ZA.pioneerSuite, ZA.sunsetBoulder],
   "three-generations-at-pioneer": [ZA.pioneerSuite, ZA.cubsDen, ZA.sandRiver, ZA.sunsetBoulder, ZA.ellAir],
   "yucatan-and-the-riviera-maya-with-chable": [CA.chableYucatan, CA.mezzanine, CA.chableMaroma],
-  "guatemala-in-7-days": [CA.guatemala, CA.petenItza, CA.bolontikuPool, CA.bolontikuNight],
+  "guatemala-in-7-days": [CA.guatemala, CA.bokehHero, CA.palopoHero, CA.petenItza, CA.bolontikuPool],
   "deep-belize": [CA.blancaneaux, CA.belizeForest, CA.thatchCaye, CA.belize],
   // Cayuga's own photos (cayugacollection.com gallery), re-hosted on Cloudinary with alt and place.
   "the-original-costa-route-7-days": [

@@ -22,6 +22,8 @@ import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import ExpandAll from "./ExpandAll";
+import ExtensionChip from "./ExtensionChip";
+import { extension } from "@/lib/content/extensions";
 import { JourneyCard } from "@/components/destination/Journeys";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { isBuilt } from "@/lib/routes";
@@ -313,6 +315,11 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </li>
         ))}
       </ul>
+      {T.extensions?.length ? (
+        <div className="mt-10 flex flex-col items-start gap-3" aria-label="Extend the route">
+          {T.extensions.map((k) => extension(k)).filter((x) => !!x).map((x) => <ExtensionChip key={x!.stay} {...x!} />)}
+        </div>
+      ) : null}
       <OfferPanel offers={routeOffers} volume={voyage ? "voyages" : "stays"} title="Offers on this route" />
     </Sec>
   ) : null;

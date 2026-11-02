@@ -2,7 +2,7 @@
  "id": "guatemala-in-7-days",
  "type": "overland",
  "title": "Guatemala in 7 Days",
- "subtitle": "7 days · 6 nights · the Petén leg",
+ "subtitle": "7 days · 6 nights · Antigua, Atitlán and the Petén",
  "code": "JW-GT-A07",
  "days": {
   "1": "Into Antigua",
@@ -15,11 +15,27 @@
  },
  "stops": [
   {
+   "day": 1,
+   "name": "Villa Bokéh, Antigua",
+   "lat": 14.5586,
+   "lng": -90.7295,
+   "kind": "lodge"
+  },
+  {
+   "day": 3,
+   "name": "Casa Palopó, Lake Atitlán",
+   "lat": 14.7206,
+   "lng": -91.1336,
+   "mode": "road",
+   "kind": "lodge"
+  },
+  {
    "day": 5,
    "name": "Bolontiku, Lake Petén Itzá",
    "lat": 16.96289,
    "lng": -89.92657,
-   "kind": "lodge"
+   "kind": "lodge",
+   "mode": "air"
   },
   {
    "day": 6,
@@ -39,5 +55,5 @@
    "nolabel": true
   }
  ],
- "map_note": "Bolontiku from its own pin; Tikal from the house's Guatemala chart. Antigua and Atitlán have no stay on file yet, so they are not drawn."
+ "map_note": "Bolontiku from its own pin; Tikal from the house's Guatemala chart. Antigua and Santa Catarina Palopó are drawn at town level (positions approximate) until Villa Bokéh's and Casa Palopó's own map pins are filed in Stay Studio."
 }

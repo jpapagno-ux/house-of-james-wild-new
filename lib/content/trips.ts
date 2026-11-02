@@ -79,6 +79,8 @@ export type Trip = {
   firstTime?: { eyebrow: string; title: string; intro: string; points: [string, string][] };
   /** Stay/vessel slugs whose live offers show on this route (Offer Ledger). */
   offerRefs?: string[];
+  /** Extension chips under the stays, by key in lib/content/extensions.ts (components/journey/ExtensionChip). */
+  extensions?: string[];
   /** One line under the summary naming whose photographs the page uses. */
   photoCredit?: string;
   stamp?: { tint: string; tintName: string; label: string; where: string; sub: string; when: string; nudge: string; script: string; cta: string };

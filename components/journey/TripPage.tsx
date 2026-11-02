@@ -400,7 +400,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
-  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
+  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#D6EEF0] text-[#0C4A54]" : "bg-[#DCE8DF] text-[#25543B]";
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />

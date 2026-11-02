@@ -99,6 +99,7 @@ for (const k of ["ground", "card", "seaGreen", "aqua", "amazon", "nile"]) {
   if (ratio(blend("#2D2A26", bg, 0.68), bg) < 4.5) errs.push(`lib/palette.ts: muted ink on Tidewater ${k} ${bg} is below AA`);
   if (earthy(bg)) errs.push(`lib/palette.ts: Tidewater ${k} ${bg} is a sand or tan`);
 }
+for (const f of ["components/ships/DatesRates.tsx", "components/journey/TripPage.tsx"]) if (/bg-\[#F1E2B8\]/.test(read(f))) errs.push(`${f}: the gold "few left" pill is retired; use the aqua tint #D6EEF0`);
 if (/card: "#F6F4F0"|sand: \{ DEFAULT: "#EFEAE0"/.test(read("tailwind.config.ts"))) errs.push("tailwind.config.ts: paper.card and sand must read the Tidewater band, not parchment");
 if (errs.length) {
   console.error("\nVolume palette check failed. lib/volumes.ts is the only source of volume colours (docs/brand-colours.md).\n  " + errs.join("\n  ") + "\n");

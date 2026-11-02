@@ -883,6 +883,15 @@
    "faqs": [],
    "countries": [
     {
+     "name": "French Polynesia (Tahiti)",
+     "slug": "tahiti",
+     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+     "line": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour.",
+     "stays": 8,
+     "bestMonths": null,
+     "reviewed": false
+    },
+    {
      "name": "Australia",
      "slug": "australia",
      "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250916bef0bcef9e168487_GettyImages-1486555219.jpg",
@@ -908,25 +917,16 @@
      "stays": 4,
      "bestMonths": null,
      "reviewed": false
-    },
-    {
-     "name": "Tahiti",
-     "slug": "tahiti",
-     "image": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
-     "line": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour.",
-     "stays": 8,
-     "bestMonths": null,
-     "reviewed": false
     }
    ],
    "featured": [
     {
-     "name": "Pearl Resort Vahine Private Island",
+     "name": "Vahine Private Island by Pearl Resorts",
      "slug": "pearl-resort-vahine-private-island",
      "ledgerId": "STY-2026-000213",
      "tagline": "A hidden private island sanctuary where simplicity and luxury exist in perfect balance.",
      "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5418a95ca_7a112fc97_6a4fd0c262087e5e71a962d0_Pearl-Resort-Vahine-Private-Island-Beach-Suite.avif",
-     "country": "Tahiti",
+     "country": "French Polynesia (Tahiti)",
      "status": null,
      "statusDate": null,
      "reserveChild": false
@@ -943,12 +943,12 @@
      "reserveChild": false
     },
     {
-     "name": "Le Taha'a",
-     "slug": "la-tahaa",
+     "name": "Le Taha'a by Pearl Resorts",
+     "slug": "le-tahaa",
      "ledgerId": "STY-2026-000146",
      "tagline": "“Where the lagoon meets luxury and nature whispers your name”",
      "image": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/820c47752_01171d195_68dd6194c1307bfa2b873d83_aerial-view-le-taha-a.avif",
-     "country": "Tahiti",
+     "country": "French Polynesia (Tahiti)",
      "status": null,
      "statusDate": null,
      "reserveChild": false

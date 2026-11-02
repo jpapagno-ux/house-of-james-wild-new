@@ -97,6 +97,8 @@ export const BUILT: string[] = [
   "/voyages/ships/galaxy-orion-yacht",
   "/voyages/ships/hermes-galapagos",
   "/voyages/ships/amandira",
+  // TAO Philippines (the Philippines build, James approved, 2 Nov 2026)
+  "/voyages/ships/tao-philippines",
   // The Indonesian fleets and their signature charter weeks (James, 2 Nov 2026)
   "/voyages/ships/rascal",
   "/voyages/ships/rebel",
@@ -106,6 +108,9 @@ export const BUILT: string[] = [
   "/voyages/ships/celestia",
   "/voyages/indonesia/komodo-and-flores-charter",
   "/voyages/indonesia/raja-ampat-and-misool-charter",
+  // Windstar in French Polynesia (2 Nov 2026)
+  "/voyages/ships/star-breeze",
+  "/voyages/ships/wind-star",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)
@@ -149,6 +154,11 @@ export const BUILT: string[] = [
   "/destinations/south-america/chile/rapa-nui",
   "/destinations/south-america/chile/atacama",
   "/destinations/south-america/ecuador-galapagos/galapagos", // a place inside Ecuador & Galápagos (James approved, 2 Nov 2026)
+  // Places inside French Polynesia (Tahiti) (2 Nov 2026)
+  "/destinations/oceania/tahiti/tahaa",
+  "/destinations/oceania/tahiti/bora-bora",
+  "/destinations/oceania/tahiti/tuamotu",
+  "/destinations/oceania/tahiti/marquesas",
   "/destinations/south-america/chile/patagonia",
   "/destinations/europe/slovenia/ljubljana",
   "/destinations/europe/slovenia/logar-valley",

@@ -74,6 +74,24 @@
    "volume": null
   },
   {
+   "slug": "intercontinental-bora-bora-thalasso-spa",
+   "name": "InterContinental Bora Bora Resort & Thalasso Spa",
+   "ledgerId": "STY-2026-000620",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "status": "rebuilding",
+   "date": "2027",
+   "note": "Closed since 1 June 2026 for a full transformation; reopening in late 2027 as Regent Bora Bora, the Regent brand's debut in French Polynesia, with 84 overwater villas on a private motu facing Mount Otemanu.",
+   "tagline": "Overwater villas on Motu Piti Aau, and French Polynesia's only Thalasso spa.",
+   "hero": null,
+   "source": null,
+   "href": null,
+   "bestMonths": "May to October",
+   "airport": "Bora Bora Airport (BOB)",
+   "volume": null
+  },
+  {
    "slug": "beyond-xaranna-okavango-delta-camp-by-and-beyond",
    "name": "andBeyond Xaranna Okavango Delta Lodge",
    "ledgerId": "STY-2026-755100",

@@ -1,0 +1,262 @@
+{
+ "slug": "star-breeze",
+ "name": "Star Breeze",
+ "brandLine": "An all-suite yacht",
+ "operator": "Windstar",
+ "type": "all-suite yacht",
+ "waters": "French Polynesia",
+ "country": "French Polynesia",
+ "status": "sailing",
+ "seo": {
+  "title": "Star Breeze in Tahiti: Windstar's 312-Guest All-Suite Yacht | James Wild & Co",
+  "description": "Star Breeze is Windstar's 312-guest all-suite yacht, sailing French Polynesia year round from Papeete, with longer voyages to the Tuamotu, the Marquesas, Fiji and the Cook Islands.",
+  "keywords": [
+   "Star Breeze",
+   "Windstar Star Breeze",
+   "Star Breeze Tahiti",
+   "Windstar Tahiti cruise",
+   "small ship Tahiti",
+   "all-suite yacht French Polynesia"
+  ]
+ },
+ "tagline": "Windstar's all-suite yacht for 312, sailing Tahiti year round.",
+ "answer": "Star Breeze is Windstar's 312-guest all-suite yacht, and she sails French Polynesia year round, with voyages almost every week from Papeete. Beyond the Society Islands she sails longer voyages to the Tuamotu, the Marquesas, Fiji and the Cook Islands, which Windstar combines into Star Collector Voyages of up to 21 days. She is a motor yacht, not a sailing ship: Windstar's sailing yacht in Tahiti is Wind Star, from March 2027.",
+ "facts": [
+  [
+   "Guests",
+   "312"
+  ],
+  [
+   "Crew",
+   "200"
+  ],
+  [
+   "Suites",
+   "All suites, from 277 sq ft; Owner's Suites 575 sq ft with a private veranda"
+  ],
+  [
+   "Length",
+   "522 ft (159 m)"
+  ],
+  [
+   "Gross tonnage",
+   "12,995"
+  ],
+  [
+   "Guest decks",
+   "6"
+  ],
+  [
+   "Registry",
+   "Bahamas"
+  ],
+  [
+   "Speed",
+   "16 knots cruising"
+  ],
+  [
+   "Port",
+   "Papeete, Tahiti"
+  ]
+ ],
+ "overview": [
+  "Windstar describes Star Breeze as an all-suite yacht for 312 guests, with 200 crew across six guest decks. She is 522 feet long, driven by twin propellers and two Wartsila diesel engines, and cruises at 16 knots.",
+  "She is based in Tahiti year round, with voyages almost every week; Windstar's own page puts Tahiti about 8 hours from Los Angeles. Her upcoming voyages begin or end in Papeete, and some run on to Lautoka in Fiji, Singapore and Benoa in Bali.",
+  "On board: the Yacht Club Café, Basil + Bamboo, the Compass Rose Lounge and the Yacht Club, World Spa by Windstar with a complimentary sauna, a fitness centre, on-deck hot tubs and a water-access marina. Windstar says all dining is included in the fare."
+ ],
+ "why": [
+  "Year round in Tahiti, with voyages almost every week from Papeete, so a sailing fits around the islands rather than the other way round.",
+  "Longer routes than most: the Tuamotu, the Marquesas, Fiji and the Cook Islands, joined into Star Collector Voyages of up to 21 days.",
+  "Every cabin is a suite, and Windstar includes all dining, 24-hour room service and the water-access marina in the fare."
+ ],
+ "hero": {
+  "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+  "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+ },
+ "gallery": [
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
+   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
+   "alt": "Island life on the water in French Polynesia"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Owner's Suite",
+   "count": 4,
+   "size": "575 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Private veranda",
+    "Up to 3 guests",
+    "Ultimate Internet Package included"
+   ]
+  },
+  {
+   "type": "Broadmoor / Sea Island Suite",
+   "count": 2,
+   "size": "400 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Private veranda",
+    "Up to 2 guests",
+    "Ultimate Internet Package included"
+   ]
+  },
+  {
+   "type": "Deluxe Suite",
+   "count": 3,
+   "size": "468 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "French balcony",
+    "Up to 3 guests",
+    "Ultimate Internet Package included"
+   ]
+  },
+  {
+   "type": "Star Balcony Suite",
+   "count": 22,
+   "size": "277 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Balcony",
+    "Up to 3 guests"
+   ]
+  },
+  {
+   "type": "Balcony Suite",
+   "count": 36,
+   "size": "277 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Balcony",
+    "Up to 3 guests"
+   ]
+  },
+  {
+   "type": "Star Ocean View Suite",
+   "count": 21,
+   "size": "277 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 3 guests"
+   ]
+  },
+  {
+   "type": "Ocean View Suite",
+   "count": 58,
+   "size": "277 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Ocean view",
+    "Up to 3 guests (2 in the base category)"
+   ]
+  },
+  {
+   "type": "Star Porthole Suite",
+   "count": 10,
+   "size": "277 sq ft",
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Porthole",
+    "Up to 2 guests"
+   ]
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Society Islands voyages",
+   "nights": null,
+   "direction": "Papeete round trip",
+   "days": []
+  },
+  {
+   "name": "Star Collector Voyages (Tuamotu, Marquesas, Fiji, Cook Islands)",
+   "nights": null,
+   "direction": "From Papeete, up to 21 days",
+   "days": []
+  }
+ ],
+ "departures": [],
+ "datesPublished": false,
+ "routesNote": "Windstar publishes Star Breeze's Tahiti voyages in its live booking tool, not as a day by day the house can file; ask James for the dates and route for your month.",
+ "pricesNote": "Windstar quotes fares by suite in its booking tool; James confirms yours. No fares are filed here.",
+ "inclusions": [
+  "All dining, including specialty dining",
+  "24-hour room service",
+  "Gym and sauna",
+  "The water-access marina"
+ ],
+ "exclusions": [
+  "Wi-Fi outside the Owner's, Broadmoor / Sea Island and Deluxe suites (sold on board)",
+  "Flights to Tahiti"
+ ],
+ "children": "Windstar's Star Breeze page publishes no minimum age; ask James for the policy on your sailing.",
+ "faqs": [
+  [
+   "How many guests does Star Breeze carry?",
+   "312, in all-suite accommodation, with 200 crew."
+  ],
+  [
+   "Is Star Breeze a sailing ship?",
+   "No. Windstar describes her as an all-suite yacht. Its sailing yacht in Tahiti is Wind Star, a four-masted ship for 148 guests, from March 2027."
+  ],
+  [
+   "Does Star Breeze sail Tahiti all year?",
+   "Yes. Windstar says she sails Tahiti year round, with voyages almost every week."
+  ],
+  [
+   "Where does Star Breeze go beyond the Society Islands?",
+   "On longer voyages to the Tuamotu, the Marquesas, Fiji and the Cook Islands, which Windstar combines into Star Collector Voyages of up to 21 days."
+  ],
+  [
+   "Where do the voyages start?",
+   "In Papeete, Tahiti. Some voyages run on to Lautoka in Fiji, Singapore or Benoa in Bali."
+  ],
+  [
+   "What is included?",
+   "All dining, specialty dining included, 24-hour room service, the gym and sauna and the water-access marina, per Windstar."
+  ],
+  [
+   "How big are the suites?",
+   "From 277 sq ft; the four Owner's Suites are 575 sq ft with a private veranda."
+  ],
+  [
+   "Where should I stay before sailing?",
+   "A night on Tahiti first: InterContinental Tahiti or Le Tahiti by Pearl Resorts, both in the Ledger."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "Every cabin a suite, all dining included."
+  },
+  {
+   "who": "Island collectors",
+   "line": "The Tuamotu and the Marquesas on one voyage, up to 21 days."
+  },
+  {
+   "who": "First-timers in Tahiti",
+   "line": "Society Islands voyages almost every week from Papeete."
+  }
+ ],
+ "sources": [
+  "https://www.windstarcruises.com/ships/star-breeze/",
+  "https://www.windstarcruises.com/press-media/press-releases/Windstar-Cruises-Returns-Iconic-Sailing"
+ ],
+ "film": null
+}

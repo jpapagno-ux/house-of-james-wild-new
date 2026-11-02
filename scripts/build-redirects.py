@@ -69,6 +69,7 @@ SPECIAL = {
     "silolona-sojourns": ("/voyages/ships/silolona", "Silolona vessel profile"),
     "celestia-yacht": ("/voyages/ships/celestia", "Celestia vessel profile"),
     "la-tahaa": ("/stays/le-tahaa", "renamed stay (slug typo), 2 Nov 2026"),
+    "windstar-cruise-sv-star-breeze": ("/voyages/ships/star-breeze", "vessel moved to Voyages, 2 Nov 2026"),
     "monwana": ("/stays/monwana-thornybush", "renamed stay"),
     "tswalu-motse": ("/safaris/tswalu-reserve/motse", "Tswalu camp"),
     "tswalu-loapi-tented-suites": ("/safaris/tswalu-reserve/loapi", "Tswalu camp"),

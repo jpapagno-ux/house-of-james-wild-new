@@ -323,6 +323,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-hermes { --ef-sand: #8FB3BF; --ef-earth: #2E6A78; --ef-landscape: #EEF3F2; --ef-shadow: #3D5560; --ef-accent: #D3E2E3; }
 /* amandira (Aman's phinisi, Indonesia, 2 Nov 2026): warm teak and indigo. Teak, burnt teak, sail cream, indigo dusk, rope. */
 .theme-ef-amandira { --ef-sand: #C08A55; --ef-earth: #8A5A2E; --ef-landscape: #F4ECE1; --ef-shadow: #3A3A5C; --ef-accent: #E5D3BC; }
+/* vahine (Ari'i Vahine Royal Villa, Taha'a lagoon, 2 Nov 2026): lagoon turquoise, reef teal, coral white, deep pass, shallows. */
+.theme-ef-vahine { --ef-sand: #7CC4C2; --ef-earth: #1F6F78; --ef-landscape: #EEF6F5; --ef-shadow: #2F4D58; --ef-accent: #CFE7E5; }
+/* brando (Tetiaroa, 2 Nov 2026): atoll blue, ocean teal, salt white, deep Pacific, pale sand bar (cool). */
+.theme-ef-brando { --ef-sand: #8EB7CF; --ef-earth: #1A4A80; --ef-landscape: #EFF4F7; --ef-shadow: #2B3F55; --ef-accent: #D2E2EC; }
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }
@@ -346,6 +350,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark.theme-ef-hermes .ef-day { --ef-surface: #EEF3F2; --ef-ink: #1F2A2E; --ef-muted: rgba(31,42,46,0.68); --ef-line: rgba(31,42,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3D5560; --ef-earth: #245A66; --jw-card: #FFFFFF; --jw-accent: 36 90 102; --jw-accent-deep: 28 72 82; --jw-accent-hex: #245A66; --jw-accent-deep-hex: #1C4852; }
 .theme-ef-dark.theme-ef-amandira { --ef-surface: #1B1F3A; --ef-ink: #F2E9DC; --ef-muted: rgba(242,233,220,0.74); --ef-line: rgba(242,233,220,0.2); --ef-sand: #C08A55; --ef-earth: #D49A62; --ef-landscape: #232849; --ef-shadow: rgba(242,233,220,0.6); --ef-accent: #C08A55; --jw-accent: 192 138 85; --jw-accent-deep: 166 115 66; --jw-accent-light: 229 211 188; --jw-accent-hex: #C08A55; --jw-accent-deep-hex: #A67342; --jw-card: #232849; }
 .theme-ef-dark.theme-ef-amandira .ef-day { --ef-surface: #F4ECE1; --ef-ink: #2A2522; --ef-muted: rgba(42,37,34,0.68); --ef-line: rgba(42,37,34,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3A3A5C; --ef-earth: #8A5A2E; --jw-card: #FFFFFF; --jw-accent: 138 90 46; --jw-accent-deep: 116 74 36; --jw-accent-hex: #8A5A2E; --jw-accent-deep-hex: #744A24; }
+.theme-ef-dark.theme-ef-vahine { --ef-surface: #0F2A30; --ef-ink: #EAF3F2; --ef-muted: rgba(234,243,242,0.74); --ef-line: rgba(234,243,242,0.2); --ef-sand: #7CC4C2; --ef-earth: #6FB7B6; --ef-landscape: #15353C; --ef-shadow: rgba(234,243,242,0.6); --ef-accent: #7CC4C2; --jw-accent: 124 196 194; --jw-accent-deep: 111 183 182; --jw-accent-light: 207 231 229; --jw-accent-hex: #7CC4C2; --jw-accent-deep-hex: #6FB7B6; --jw-card: #15353C; }
+.theme-ef-dark.theme-ef-vahine .ef-day { --ef-surface: #EEF6F5; --ef-ink: #1E2B2E; --ef-muted: rgba(30,43,46,0.68); --ef-line: rgba(30,43,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2F4D58; --ef-earth: #1F6F78; --jw-card: #FFFFFF; --jw-accent: 31 111 120; --jw-accent-deep: 24 88 96; --jw-accent-hex: #1F6F78; --jw-accent-deep-hex: #185860; }
+.theme-ef-dark.theme-ef-brando { --ef-surface: #0E1F33; --ef-ink: #EAF0F5; --ef-muted: rgba(234,240,245,0.74); --ef-line: rgba(234,240,245,0.2); --ef-sand: #8EB7CF; --ef-earth: #7FAAC6; --ef-landscape: #142A42; --ef-shadow: rgba(234,240,245,0.6); --ef-accent: #8EB7CF; --jw-accent: 142 183 207; --jw-accent-deep: 127 170 198; --jw-accent-light: 210 226 236; --jw-accent-hex: #8EB7CF; --jw-accent-deep-hex: #7FAAC6; --jw-card: #142A42; }
+.theme-ef-dark.theme-ef-brando .ef-day { --ef-surface: #EFF4F7; --ef-ink: #1E2833; --ef-muted: rgba(30,40,51,0.68); --ef-line: rgba(30,40,51,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2B3F55; --ef-earth: #1A4A80; --jw-card: #FFFFFF; --jw-accent: 26 74 128; --jw-accent-deep: 12 93 97; --jw-accent-hex: #1A4A80; --jw-accent-deep-hex: #0C5D61; }
 /* The ship section nav sits on the night surface of a designated vessel, so its links stay legible. */
 .theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }

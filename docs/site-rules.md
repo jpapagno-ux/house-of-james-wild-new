@@ -17,16 +17,17 @@ pull new dates.
 Never write `new Date()` comparisons for content elsewhere; call the helper. Tests:
 `tests/dates.test.ts` (each passes a fixed "today").
 
-**Offers: the 30-day rule (James, 2 Nov 2026).** An offer stops showing 30 days before its window
-ends, so nobody is shown a saving they can no longer use. Final Call is the one exception: it shows
-until 14 days before its departure, with the departure date printed, never a countdown. Both read
-`offerShowsUntil` in `lib/dates.ts`.
+**Offers (James, 2 Nov 2026).** Every offer stays live until the day it expires (its end date,
+inclusive), in every volume. A Final Call stays live until its own end date and never past its
+departure, with the departure date printed, never a countdown. Both read `offerLastDay` in
+`lib/dates.ts`. The 30-day rule is a curation rule only: an offer that ends within 30 days of being
+filed is not filed. It never takes a live offer down early.
 
 **What it covers**
 
 | Content | Where | Ends on |
 |---|---|---|
-| Offers (Offer Ledger, Cayuga cards, On the Horizon) | `lib/content/offers/offers.ts` `liveOffers()` | 30 days before the travel or booking window ends; a Final Call 14 days before its departure (`offerShowsUntil`) |
+| Offers (Offer Ledger, Cayuga cards, On the Horizon) | `lib/content/offers/offers.ts` `liveOffers()` | the day the travel or booking window ends (inclusive); a Final Call its own end date, never past its departure (`offerLastDay`) |
 | Nile ship departures and season bands | `lib/content/ships/nile/index.ts` | `dateTo`, else `date` (a band under way stays) |
 | Aliikai sailings and voyage-page sailings | `lib/content/ships/aliikai.ts`, `lib/content/trips.ts` | the sailing date |
 | House Sessions | `lib/content/workshops.ts` | the session's day; then only its recording shows |

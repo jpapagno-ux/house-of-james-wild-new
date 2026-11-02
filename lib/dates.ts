@@ -80,28 +80,19 @@ export function nextDate<T>(items: readonly T[], getStart: (item: T) => string |
   return starts[0] ?? null;
 }
 
-/** An ISO day moved by `n` days (negative for earlier); null when the date cannot be read. */
-export function addDays(date: string | null | undefined, n: number): string | null {
-  const e = endOf(date);
-  if (!e) return null;
-  const d = new Date(`${e}T00:00:00Z`);
-  d.setUTCDate(d.getUTCDate() + n);
-  return d.toISOString().slice(0, 10);
-}
-
 /**
- * Offers (James, 2 Nov 2026): an offer shows until 30 days before it ends; a Final Call shows until
- * 14 days before its departure (the one exception), never past its own window. Returns the last day
- * the offer may show, for activeOnly.
+ * Offers (James, 2 Nov 2026): every offer stays live through the day it expires (its window's end,
+ * inclusive), in every volume. A Final Call ends on its own end date and never runs past its departure.
+ * The 30-day rule is a curation rule only: an offer is not filed if it ends within 30 days of filing.
+ * It does not take a live offer down early. Returns the offer's last live day, for activeOnly.
  */
-export const OFFER_LEAD_DAYS = 30;
-export const FINAL_CALL_LEAD_DAYS = 14;
-export function offerShowsUntil(o: { program: string; travel: { to: string }; departure?: string }): string | null {
+export function offerLastDay(o: { program: string; travel: { to: string }; departure?: string }): string | null {
+  const end = endOf(o.travel.to);
   if (o.program === "Final Call" && o.departure) {
-    const a = addDays(o.departure, -FINAL_CALL_LEAD_DAYS), b = endOf(o.travel.to);
-    return a && b && b < a ? b : a;
+    const dep = endOf(o.departure);
+    return end && dep && dep < end ? dep : end ?? dep;
   }
-  return addDays(o.travel.to, -OFFER_LEAD_DAYS);
+  return end;
 }
 
 /** The line shown wherever a ship or voyage has no remaining dated departures. */

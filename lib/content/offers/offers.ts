@@ -17,7 +17,7 @@
 
 import type { VolumeKey } from "@/lib/volumes";
 import LIBRARY from "./library.json";
-import { activeOnly, offerShowsUntil, today } from "@/lib/dates";
+import { activeOnly, offerLastDay, today } from "@/lib/dates";
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection" | "itinerary";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
@@ -149,9 +149,10 @@ export function voyageOfferType(o: Pick<Offer, "id" | "program" | "headline" | "
 
 /** When an offer ends: its travel window, or a Final Call's departure date if that comes first. */
 export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
-/** Offers a page may show: Live, and inside the date rule (lib/dates.ts): every offer hides 30 days
- *  before it ends; a Final Call shows until 14 days before its departure (James, 2 Nov 2026). */
-export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerShowsUntil, on);
+/** Offers a page may show: Live, and not past the day they expire (lib/dates.ts offerLastDay, James,
+ *  2 Nov 2026): every offer stays live through its end date; a Final Call through its own end date and
+ *  never past its departure. The 30-day rule applies only when an offer is first filed (see docs/site-rules.md). */
+export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerLastDay, on);
 export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref || (o.refs ?? []).includes(ref));
 export const offersForPartner = (partner: string, on = today()) => liveOffers(on).filter((o) => o.partner === partner);
 /** Live voyage offers of one type (the honeymoon page shows Celebrations). */

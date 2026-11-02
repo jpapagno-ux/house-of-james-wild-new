@@ -95,18 +95,20 @@ test("nextDate is the first date still to come", () => {
   assert.equal(nextDate([{ d: "2026-01-01" }], (x) => x.d, ON), null);
 });
 
-test("offers hide 30 days before they end; a Final Call shows until 14 days before departure (James, 2 Nov 2026)", async () => {
-  const { addDays, offerShowsUntil } = await import("../lib/dates.ts");
-  assert.equal(addDays("2026-12-31", -30), "2026-12-01");
-  assert.equal(addDays("2027-03", -14), "2027-03-17");
+test("offers stay live through the day they expire; a Final Call never past its departure (James, 2 Nov 2026)", async () => {
+  const { offerLastDay } = await import("../lib/dates.ts");
   const general = { program: "On the Horizon", travel: { to: "2026-12-31" } };
-  assert.equal(offerShowsUntil(general), "2026-12-01");
-  assert.equal(activeOnly([general], offerShowsUntil, "2026-12-01").length, 1);
-  assert.equal(activeOnly([general], offerShowsUntil, "2026-12-02").length, 0);
-  const fc = { program: "Final Call", travel: { from: "2026-11-01", to: "2027-01-20" }, departure: "2027-01-20" };
-  assert.equal(offerShowsUntil(fc), "2027-01-06");
-  assert.equal(activeOnly([fc], offerShowsUntil, "2027-01-06").length, 1);
-  assert.equal(activeOnly([fc], offerShowsUntil, "2027-01-07").length, 0);
-  // A Final Call whose booking window closes first ends with its window.
-  assert.equal(offerShowsUntil({ program: "Final Call", travel: { to: "2026-12-15" }, departure: "2027-02-01" }), "2026-12-15");
+  assert.equal(offerLastDay(general), "2026-12-31");
+  assert.equal(activeOnly([general], offerLastDay, "2026-12-31").length, 1);
+  assert.equal(activeOnly([general], offerLastDay, "2027-01-01").length, 0);
+  // A Final Call runs to its own end date...
+  const fc = { program: "Final Call", travel: { to: "2027-01-10" }, departure: "2027-01-20" };
+  assert.equal(offerLastDay(fc), "2027-01-10");
+  assert.equal(activeOnly([fc], offerLastDay, "2027-01-10").length, 1);
+  assert.equal(activeOnly([fc], offerLastDay, "2027-01-11").length, 0);
+  // ...and never past its departure, with no 14-day cutoff.
+  const late = { program: "Final Call", travel: { to: "2027-02-28" }, departure: "2027-01-20" };
+  assert.equal(offerLastDay(late), "2027-01-20");
+  assert.equal(activeOnly([late], offerLastDay, "2027-01-20").length, 1);
+  assert.equal(activeOnly([late], offerLastDay, "2027-01-21").length, 0);
 });

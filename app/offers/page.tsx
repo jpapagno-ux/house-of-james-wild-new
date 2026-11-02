@@ -16,8 +16,8 @@ import { graph } from "@/lib/schema";
 // /offers: On the Horizon, the site-wide name for offers (James, 2 Nov 2026; voyages plan Part 5).
 // One hub, a section per volume. Stays and Safaris keep Worth Another Night and Time Rewarded with
 // their volume's time mark; voyage offers are typed (Final Call on the split-flap board, Book Early,
-// Solo, Celebrations, Family, Whole Ship, On the Horizon). Every offer passes the date rule
-// (lib/dates.ts): hidden 30 days before it ends, a Final Call 14 days before its departure.
+// Solo, Celebrations, Family, Whole Ship, On the Horizon). Every offer stays live until the day it
+// expires (lib/dates.ts offerLastDay); a Final Call never past its departure.
 const PATH = "/offers";
 const TITLE = "On the Horizon: Travel Offers and Savings";
 
@@ -45,10 +45,10 @@ export default function OffersHub() {
   const offers = hubOffers();
   const secs = sections(offers);
   const count = (v: string) => secs.find((s) => s.volume === v)?.count ?? 0;
-  const answer = `On the Horizon is where the house files every offer it can stand behind: ${secs.map((s) => `${words(s.count, "offer", "offers")} in ${s.label}`).join(", ")}. Each sits beside its real terms, links to the page it belongs to, and leaves this page 30 days before it ends; a Final Call stays until 14 days before its departure. James applies whichever fits your dates when you book.`;
+  const answer = `On the Horizon is where the house files every offer it can stand behind: ${secs.map((s) => `${words(s.count, "offer", "offers")} in ${s.label}`).join(", ")}. Each sits beside its real terms, links to the page it belongs to, and stays here until the day it expires; a Final Call never runs past its departure. James applies whichever fits your dates when you book.`;
   const faqs = [
     { q: "What is On the Horizon?", a: "The house's name for offers, across every volume: free nights and longer-stay rewards at lodges and camps, and voyage savings by type. Every offer is a partner's own, filed with its terms." },
-    { q: "Why do offers disappear before they end?", a: "Each offer leaves the page 30 days before its window closes, so nobody plans around a saving they can no longer use. A Final Call is the exception: it stays until 14 days before the departure, and always shows the departure date." },
+    { q: "How long does an offer stay here?", a: "Until the day it expires. A Final Call stays until its own end date and never past the departure, and always shows the departure date, never a countdown." },
     { q: "What is a Final Call?", a: MEANING["Final Call"] },
     { q: "Can offers be combined?", a: "Usually not; each offer's terms say so. James checks every offer live and applies whichever fits your dates." },
   ];
@@ -59,7 +59,7 @@ export default function OffersHub() {
       <HubShell name="On the Horizon" path={PATH} eyebrow="The House · Offers" title={TITLE}
         intro="Every live offer the house has filed, volume by volume, each beside its real terms."
         answer={answer}
-        filling="Offers fill from the Offer Ledger and the nightly library sync; each leaves this page 30 days before it ends, a Final Call 14 days before its departure.">
+        filling="Offers fill from the Offer Ledger and the nightly library sync; each leaves this page the day after it expires.">
         <div className="mt-2 mb-8 flex items-center gap-5 md:gap-8">
           <span className="md:hidden shrink-0"><HorizonMark size={120} rotate={-6} tone="clean" id="hub" /></span>
           <span className="hidden md:block shrink-0"><HorizonMark size={190} rotate={-6} tone="clean" id="hubl" /></span>

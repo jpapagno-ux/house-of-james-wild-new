@@ -7,8 +7,8 @@ import { VOLUME_ORDER, VOLUME_STYLES, type VolumeKey } from "@/lib/volumes";
 
 // On the Horizon (James, 2 Nov 2026): the one offers hub, /offers, with a section per volume.
 // Stays and Safaris keep their two programs (Worth Another Night, Time Rewarded, and Book Early
-// where filed); voyage offers are grouped by type. Every offer is live under the date rule
-// (lib/dates.ts: 30 days before it ends; Final Call 14 days before departure) and links to the page
+// where filed); voyage offers are grouped by type. Every offer stays live until the day it expires
+// (lib/dates.ts offerLastDay; a Final Call never past its departure) and links to the page
 // it belongs to when that page is built. Nothing here is new copy: terms are the Offer Ledger's.
 
 export type HubOffer = Offer & { href: string | null; place: string | null; volumeKey: VolumeKey; type: VoyageOfferType | null };
@@ -58,7 +58,7 @@ export const MEANING: Record<string, string> = {
   "Worth Another Night": "A free night on a shorter stay.",
   "Time Rewarded": "A reward for staying longer.",
   "Book Early": "A saving for booking well ahead.",
-  "Final Call": "Late cabins released on a departure. Shown with the departure date until 14 days before it sails, never a countdown.",
+  "Final Call": "Late cabins released on a departure, shown with the departure date, never a countdown.",
   Solo: "A lower or waived single supplement.",
   Celebrations: "Honeymoons and anniversaries.",
   Family: "Savings for children or for families sailing together.",

@@ -8,6 +8,14 @@ import { ArrowRight, MessageCircle, Search, X } from "lucide-react";
 import { DESK_ADVISORS } from "@/lib/content/advisors";
 import { VOLUME_LABEL } from "@/lib/content/advisor-desk";
 import { GREEN_INK } from "@/lib/content/advisor-desk";
+import { VESSEL_SLUGS, vesselHref } from "@/lib/content/vessels";
+
+// Vessels filed as stays are Voyages (lib/content/vessels.ts): they file under "Ships & voyages",
+// never "Stays", and point at their ship page where one is built.
+const asVoyage = (x: Item): Item => {
+  const slug = x.t === "stay" && x.u.startsWith("/stays/") ? x.u.slice(7) : null;
+  return slug && VESSEL_SLUGS.has(slug) ? { ...x, k: "Ship", u: vesselHref(slug) } : x;
+};
 
 // SearchPanel — the house search, opened from the header (or "/" and Ctrl/⌘+K).
 // The index (/search/index.json) is generated from the Ledger on every
@@ -66,7 +74,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
     if (!open || docs) return;
     fetch("/search/index.json")
       .then((r) => r.json())
-      .then((j: { items: Item[] }) => setDocs([...j.items, ...ADVISOR_ITEMS].map((x, id) => ({ ...x, id }))))
+      .then((j: { items: Item[] }) => setDocs([...j.items.map(asVoyage), ...ADVISOR_ITEMS].map((x, id) => ({ ...x, id }))))
       .catch(() => setDocs(ADVISOR_ITEMS.map((x, id) => ({ ...x, id }))));
   }, [open, docs]);
 

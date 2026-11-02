@@ -26,6 +26,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 D = {d["webflow_slug"]: d for d in json.load(open(sys.argv[1]))["entities"] if d.get("webflow_slug")}
 STAYS = json.load(open(ROOT / "lib/content/stays.json"))["stays"]
+# Vessels are Voyages, not stays (lib/content/vessels.ts, James 1 Nov 2026): never counted here.
+_VT = ROOT / "lib/content/vessels.ts"
+VESSELS = set(re.findall(r'slug: "([^"]+)"', _VT.read_text())) if _VT.exists() else set()
+STAYS = [s for s in STAYS if s["slug"] not in VESSELS and s.get("category") != "cruise"]
 REGIONS = {r["slug"]: r["name"] for r in json.load(open(ROOT / "lib/content/regions.json"))["regions"]}
 SKIP = {"costa-rica", "south-africa", "indonesia"}
 ATLAS = {"chile": "Chile", "ecuador-galapagos": "Ecuador", "tahiti": "Fr. Polynesia", "spain-ibiza": "Spain", "portugal": "Portugal",

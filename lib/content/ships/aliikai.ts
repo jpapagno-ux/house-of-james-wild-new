@@ -2,7 +2,7 @@ import ra from "../trips/10-day-raja-ampat-north.json";
 import { SAMPLE_ALIIKAI as S } from "../preview/aliikai";
 import type { Trip } from "../trips";
 import { activeGroups } from "@/lib/dates";
-import type { ShipItinerary } from "./types";
+import type { ShipItinerary, ShipPathway } from "./types";
 
 // The Aliikai vessel profile. Yacht, spaces, cabins and the 2027 schedule come
 // from aliikai-voyage.com (filed on the voyage records, checked 26 Oct 2026, and
@@ -39,6 +39,9 @@ export const ALIIKAI_SHIP = {
   slug: "aliikai",
   name: "Aliikai",
   ledgerId: "STY-2026-882896",
+  // Wild Pathways (1 Nov 2026, for James's approval): Between Tides first; Where the Wild Lives for the
+  // reefs, mantas and dragons; Off the Map for the Wayag and Misool routes and the Banda Sea crossings.
+  pathway: { primary: "PATH-02", secondary: ["PATH-04", "PATH-06"] } as ShipPathway,
   path: "/voyages/ships/aliikai",
   seo: {
     title: "Aliikai Phinisi Yacht: Raja Ampat & Komodo Liveaboard, 2027 Rates",

@@ -3,6 +3,7 @@
 import data from "./regions.json";
 import LIBRARY from "./countries-library.json";
 import STAY_ROWS from "./stays.json";
+import { isVessel, VESSEL_SLUGS } from "./vessels";
 
 export type RegionCountry = { name: string; slug: string | null; image: string | null; line: string; stays: number; bestMonths: string | null; reviewed: boolean; /** destination card: on the site before its stays */ coming?: boolean };
 export type RegionStay = { name: string; slug: string; ledgerId: string | null; tagline: string | null; image: string; country: string; status: string | null; statusDate: string | null; reserveChild: boolean };
@@ -28,7 +29,11 @@ const fix = (u: string | null) => (u && /media\.base44\.com\/images\/public\/[^/
 type LibCountry = { slug: string; name: string; region: string; subtitle?: string; leading?: string; hero?: { src?: string | null } | null; bestShort?: string; contentStatus?: string; staysComing?: boolean };
 type StayRow = { volumes?: string[] | null; reviewed?: boolean; slug: string; name: string; ledgerId: string | null; tagline: string | null; hero: string | null; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null; reserveChild?: boolean; misfiled?: unknown };
 const LIB = (LIBRARY.countries as LibCountry[]);
-const ROWS = (STAY_ROWS.stays as StayRow[]).filter((x) => !x.misfiled);
+const ALL_ROWS = (STAY_ROWS.stays as (StayRow & { category?: string | null })[]).filter((x) => !x.misfiled);
+// Vessels are Voyages, not stays (lib/content/vessels.ts): out of every count and featured card.
+// regions.json counts come straight from the library, so its vessels are taken off here too.
+const ROWS: StayRow[] = ALL_ROWS.filter((x) => !isVessel(x));
+const vesselsIn = (slug: string | null) => (slug ? ALL_ROWS.filter((x) => x.countrySlug === slug && isVessel(x)).length : 0);
 // next/image serves only these hosts (next.config.ts)
 const OK_HOST = /^(\/|https:\/\/(res\.cloudinary\.com|cdn\.prod\.website-files\.com|media\.base44\.com|base44\.app|[a-z0-9-]+\.supabase\.co)\/)/;
 const countIn = (slug: string) => ROWS.filter((x) => x.countrySlug === slug).length;
@@ -40,18 +45,18 @@ export const REGION_DATA: RegionData[] = (data.regions as RegionData[]).map((r) 
     ...(countIn(c.slug) === 0 ? { coming: true } : {}),
   }));
   const comingSlugs = new Set(LIB.filter((c) => c.staysComing).map((c) => c.slug));
-  const countries = [...r.countries.map((c) => ({ ...c, image: fix(c.image), stays: Math.max(c.stays, c.slug ? countIn(c.slug) : 0) })).map((c) => (c.stays === 0 && c.slug && comingSlugs.has(c.slug) ? { ...c, coming: true } : c)), ...added].sort((a, b) => b.stays - a.stays);
+  const countries = [...r.countries.map((c) => ({ ...c, image: fix(c.image), stays: Math.max(c.stays - vesselsIn(c.slug), c.slug ? countIn(c.slug) : 0) })).map((c) => (c.stays === 0 && c.slug && comingSlugs.has(c.slug) ? { ...c, coming: true } : c)), ...added].sort((a, b) => b.stays - a.stays);
   // Featured stays must have a page (the stays export); stays filed under the region's own volume
   // (Europe: Volume V, Dá Licença first) and reviewed stays lead the top-up.
   const ROW_SLUGS = new Set(ROWS.map((x) => x.slug));
-  const featured = r.featured.map((f) => ({ ...f, image: fix(f.image) as string })).filter((f) => OK_HOST.test(f.image ?? "") && ROW_SLUGS.has(f.slug));
+  const featured = r.featured.map((f) => ({ ...f, image: fix(f.image) as string })).filter((f) => OK_HOST.test(f.image ?? "") && ROW_SLUGS.has(f.slug) && !VESSEL_SLUGS.has(f.slug));
   const lead = (x: StayRow & { volumes?: string[] | null; reviewed?: boolean }) => (x.volumes?.includes(r.slug) ? 0 : 2) + (x.reviewed ? 0 : 1);
   if (featured.length < 4) {
     const seen = new Set(featured.map((f) => f.slug));
     for (const x of ROWS.filter((x) => x.regionSlug === r.slug && x.hero && OK_HOST.test(fix(x.hero) ?? "") && !x.reserveChild && !seen.has(x.slug)).sort((a, b) => lead(a) - lead(b)).slice(0, 4 - featured.length))
       featured.push({ name: x.name, slug: x.slug, ledgerId: x.ledgerId, tagline: x.tagline, image: fix(x.hero) as string, country: x.country ?? "", status: x.status, statusDate: x.statusDate, reserveChild: false });
   }
-  const stayCount = Math.max(r.stayCount, countries.reduce((n, c) => n + c.stays, 0));
+  const stayCount = Math.max(r.stayCount - ALL_ROWS.filter((x) => x.regionSlug === r.slug && isVessel(x)).length, countries.reduce((n, c) => n + c.stays, 0));
   return { ...r, hero: fix(r.hero), gallery: r.gallery.map((g) => fix(g) as string), countries, featured, stayCount };
 });
 export const EXPORTED_ON = data.exportedOn;

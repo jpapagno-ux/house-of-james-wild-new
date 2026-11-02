@@ -68,6 +68,7 @@ export default function RecordShip({ entry, sisters }: { entry: ShipEntry; siste
         path,
         hero: s.hero,
         heroCredit: credit,
+        pathway: s.pathway,
         eyebrow: `Wild & Co Voyages · ${s.brandLine} · ${s.waters}, ${s.country}`,
         tagline: t(s.tagline),
         glance: <ShipGlance label={price.label} price={price.amount} basis={price.basis} facts={[["Route", route], ["Nights", nightsLabel(s)], ["Guests", guests ?? "To confirm"], ["Ages", ages ?? "Ask us"]]} cta={{ label: "Plan with James", href: plan }} />,

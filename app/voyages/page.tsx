@@ -14,6 +14,12 @@ import { routeIdFor } from "@/lib/content/route-files";
 import Link from "next/link";
 import NileShipCards from "@/components/ships/NileShipCards";
 import { shipsOn } from "@/lib/content/ships";
+import { RecordCard } from "@/components/hub/Hub";
+import { PathwayChips } from "@/components/pathways/Pathway";
+import { VESSEL_RECORDS, pageReady } from "@/lib/content/stays";
+import { VESSEL_WATERS, vessel, vesselHref, watersOf, type VesselWaters } from "@/lib/content/vessels";
+import { vesselChipsFor } from "@/lib/content/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 
 // /voyages: Volume 04 hub shell. Small ships and sailing yachts; the
 // Aliikai voyages first. Voyage pages build from James's sample files.
@@ -25,6 +31,9 @@ export default function VoyagesHub() {
   const voyages = journeysFor("indonesia");
   const polar = journeysFor("antarctica");
   const nile = shipsOn("nile");
+  // Vessels filed in the Stay library (lib/content/vessels.ts, 1 Nov 2026): listed here by waters until
+  // each gets its ship page in its country pass. One with a ship page already (Aliikai) shows above.
+  const coming = (Object.keys(VESSEL_WATERS) as VesselWaters[]).map((w) => ({ w, ...VESSEL_WATERS[w], ships: VESSEL_RECORDS.filter((s) => pageReady(s) && !vessel(s.slug)?.ship && watersOf(s.slug) === w) })).filter((g) => g.ships.length);
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
@@ -48,6 +57,24 @@ export default function VoyagesHub() {
         {nile.length > 0 && (
           <HubSection eyebrow="Egypt" title="On the Nile, with A&K Sanctuary" id="nile-h" more={{ label: "Which Nile cruise?", href: "/voyages/nile" }}>
             <NileShipCards ships={nile} />
+          </HubSection>
+        )}
+        {coming.length > 0 && (
+          <HubSection eyebrow="Filed, ship pages to follow" title="Ships Coming to the Ledger" id="ships-coming-h">
+            <p className="text-[15.5px] ledger-muted max-w-2xl">Small ships and sailing yachts James has filed, by the waters they sail. Each gets a full ship page, cabin by cabin with dates and fares, in its country&rsquo;s pass; until then each opens on its Ledger record.</p>
+            {coming.map((g) => (
+              <div key={g.w} className="mt-8">
+                <p className="ledger-eyebrow">{g.name}{g.country && g.country !== g.name ? ` · ${g.country}` : ""}</p>
+                <ul className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                  {g.ships.map((s) => { const chips = PATHWAYS_ON ? vesselChipsFor(s.slug) : null; return (
+                    <li key={s.slug} className="flex flex-col gap-3">
+                      <RecordCard name={s.name} id={s.ledgerId ?? ""} line={s.tagline?.replace(/^["“]|["”]$/g, "") ?? ""} image={{ url: s.hero as string, alt: `${s.name}, ${g.name}` }} href={vesselHref(s.slug)} eyebrow={`Voyage · ${g.name}`} volume="voyages" />
+                      {chips && <PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} />}
+                    </li>
+                  ); })}
+                </ul>
+              </div>
+            ))}
           </HubSection>
         )}
         {polar.length > 0 && (

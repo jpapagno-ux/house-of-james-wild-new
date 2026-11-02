@@ -9,7 +9,10 @@ import { Overview, RecordHero, RecordNav, type Img } from "@/components/record/S
 import { RecordActionBar } from "@/components/record/Frame";
 import type { ShortFilm } from "@/lib/content/films";
 import { hostFor } from "@/lib/content/hosts";
-import type { ShipFilm as FilmData, ShipItinerary as Itin } from "@/lib/content/ships/types";
+import type { ShipFilm as FilmData, ShipItinerary as Itin, ShipPathway } from "@/lib/content/ships/types";
+import { PathwayChips } from "@/components/pathways/Pathway";
+import { pathway as pathwayOf, type Pathway } from "@/lib/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import ShipFilm from "./ShipFilm";
 import ShipItinerary from "./ShipItinerary";
 
@@ -42,10 +45,14 @@ export type ShipFrame = {
   action: { price?: string; basis?: string; cta: string; href?: string; house?: boolean };
   crumbs: { name: string; path: string }[];
   jsonld: object[];
+  /** Wild Pathways chips, as on stay pages (shown with the pathways flag on). */
+  pathway?: ShipPathway;
 };
 
 export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode }) {
   const host = hostFor(ship.host.key);
+  const primary = PATHWAYS_ON && ship.pathway ? pathwayOf(ship.pathway.primary) : undefined;
+  const secondary = primary && ship.pathway ? ship.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader overlay />
@@ -54,6 +61,7 @@ export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFr
         <RecordNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={ship.crumbs} /></div>
+          {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
           <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} />
           {lead}
           <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />

@@ -41,12 +41,13 @@ import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
-import { BEST_FOR, STAYS, STAY_PAGES, staysIn, stayBySlug, pageReady, altFor } from "@/lib/content/stays";
+import { BEST_FOR, STAYS, STAY_PAGES, VESSEL_PAGES, VESSEL_RECORDS, staysIn, stayBySlug, vesselBySlug, pageReady, altFor } from "@/lib/content/stays";
+import { VESSEL_WATERS, vessel as vesselOf, vesselHref, watersOf } from "@/lib/content/vessels";
 import { regionBySlug } from "@/lib/content/regions";
 import { founderProof, stampForStatus, statusLine, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
-import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
+import { entryNo, roundelText, sealFor, volumeInk, VOLUME_STYLES } from "@/lib/volumes";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
@@ -61,7 +62,7 @@ import GatewayNight from "@/components/stays/GatewayNight";
 import EuropePlate from "@/components/stays/EuropePlate";
 import { EUROPE_PLATES } from "@/lib/content/europe-plates";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
-import { graph, ids, imageObject, lodging } from "@/lib/schema";
+import { graph, ids, imageObject, lodging, touristTrip } from "@/lib/schema";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
 import IggiLine from "@/components/dialogue/IggiLine";
@@ -69,7 +70,7 @@ import { dialogueLine } from "@/lib/content/dialogue-register";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import { IGGI_ON } from "@/lib/iggi/flag";
-import { onPathway, pathwayStays } from "@/lib/content/pathways";
+import { onPathway, pathwayStays, vesselChipsFor } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
@@ -78,16 +79,30 @@ import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 // › rooms › experiences › features › location › facts & FAQ (reviewed records)
 // › more stays in the country › plan. Built for every live stay with a hero
 // photo and content; marks come only from house_status.
+//
+// Vessels filed in the Stay library (lib/content/vessels.ts, James 1 Nov 2026) keep this page
+// until their ship page is built in the country pass: labelled "Voyage", noindex, inked in the
+// Voyages navy, out of every Stays list. A vessel with a ship page 301s there (redirects.json).
 
 export const dynamicParams = false;
-export function generateStaticParams() { return STAY_PAGES.map((s) => ({ slug: s.slug })); }
+export function generateStaticParams() { return [...STAY_PAGES, ...VESSEL_PAGES].map((s) => ({ slug: s.slug })); }
 
 const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA };
 const KIND: Record<string, string> = { hotel: "hotel", lodge: "lodge", villa: "private villa", camp: "camp", resort: "resort", residence: "residence" };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const s = stayBySlug((await params).slug);
+  const slug = (await params).slug;
+  const s = stayBySlug(slug) ?? vesselBySlug(slug);
   if (!s) return {};
+  if (!stayBySlug(slug)) {
+    const w = VESSEL_WATERS[watersOf(s.slug)];
+    return buildMetadata({
+      title: fitTitle([`${vesselOf(s.slug)?.name ?? s.name}, ${w.name}: Voyage`, `${vesselOf(s.slug)?.name ?? s.name}: Voyage`, s.name]),
+      description: `${s.tagline ? `${s.tagline} ` : ""}${s.name}, a ${vesselOf(s.slug)?.kind ?? "small ship"} sailing ${w.name}, filed in the James Wild & Co Voyages volume.`.slice(0, 300),
+      path: `/stays/${s.slug}`, noindex: true, // a ship page replaces it in the country pass
+      image: s.hero ? { url: s.hero, alt: s.name } : undefined,
+    });
+  }
   return buildMetadata({
     title: fitTitle([`${s.name}${s.country ? `, ${s.country}` : ""}: Vetted Stay`, `${s.name}${s.country ? `, ${s.country}` : ""}`, s.name]),
     description: (s.tagline ? `${s.tagline} ` : "") + `${s.name}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` (${s.ledgerId})` : ""}.${s.bestMonths ? ` Best ${s.bestMonths}.` : ""}`.slice(0, 300),
@@ -97,27 +112,34 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function StayPage({ params }: { params: Promise<{ slug: string }> }) {
-  const s = stayBySlug((await params).slug);
+  const slug = (await params).slug;
+  const s = stayBySlug(slug) ?? vesselBySlug(slug);
   if (!s || !s.hero) notFound();
   const path = `/stays/${s.slug}`;
+  // A vessel awaiting its ship page: a Voyage, not a stay (lib/content/vessels.ts).
+  const boat = !stayBySlug(slug) ? { ...VESSEL_WATERS[watersOf(s.slug)], kind: vesselOf(s.slug)?.kind ?? "small ship" } : null;
+  const noun = boat ? "voyage" : "stay";
   const region = s.regionSlug ? regionBySlug(s.regionSlug) : undefined;
   const countryPath = region && s.countrySlug ? `/destinations/${region.slug}/${s.countrySlug}` : null;
   const status = statusLine(s.status as HouseStatus, s.statusDate);
   const stamp = stampForStatus(s.status as HouseStatus);
   // The library files many safari camps as "hotel"; the name is the better witness.
   const named = /\b(camp|lodge|villa|resort|residence|house|island)\b/i.exec(s.name)?.[1]?.toLowerCase();
-  const kind = (s.category === "hotel" && named ? (named === "villa" ? "private villa" : named === "island" ? "private island" : named) : null) ?? ((s.category && KIND[s.category]) || "stay");
+  const kind = boat ? boat.kind : (s.category === "hotel" && named ? (named === "villa" ? "private villa" : named === "island" ? "private island" : named) : null) ?? ((s.category && KIND[s.category]) || "stay");
   const bestFor = s.bestFor.map((b) => BEST_FOR[b] ?? b).slice(0, 4);
   const suited = suitedTo([s.tagline, s.quote, ...s.why.map((w) => `${w.title ?? ""} ${w.body}`), ...s.onlyHere, ...s.rooms.items, ...s.rooms.paras, ...s.experiences.items, ...s.experiences.paras, ...s.features.items, ...s.features.paras].filter(Boolean).join(" "), s.bestFor);
-  const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
-  const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
+  const answer = boat ? `${s.name} is a ${kind} sailing ${boat.name}, filed in the James Wild & Co Voyages volume${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/^["“]|["”]$/g, "").replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""} Her ship page, cabin by cabin with dates and fares, is being built; until then plan the voyage with James or an advisor.` : `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} ${status ? `${status}.` : "Vetted for the Ledger by the house."} Plan it with James or an advisor.`;
+  const facts: [string, string][] = [["Ledger ID", s.ledgerId ?? "Being filed"], ...(boat ? [["Volume", "Voyages"] as [string, string], ["Waters", boat.name] as [string, string]] : s.country ? [["Country", s.country] as [string, string]] : []), ...(s.bestMonths ? [["Best months", s.bestMonths] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : bestFor.length ? [["Best for", bestFor.join(", ")] as [string, string]] : []), ...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(status ? [["The Ledger", status] as [string, string]] : [])];
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: altFor(u as string, s.name, s.country, i) }));
-  const more = s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
+  const more = boat ? VESSEL_RECORDS.filter((x) => x.slug !== s.slug && pageReady(x) && watersOf(x.slug) === watersOf(s.slug)).slice(0, 4)
+    : s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
   const planHref = `/plan?trip=${encodeURIComponent(s.name)}`;
   // Wild Pathways: only an APPROVED classification renders, and only with the flag on.
-  const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
+  const pw = PATHWAYS_ON && !boat ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
+  // A vessel keeps its pathway tags (shown as chips), listed under Voyages on the pathway pages.
+  const chips = pw ? { primary: pw.primary, secondary: pw.secondary } : PATHWAYS_ON && boat ? vesselChipsFor(s.slug) : null;
   const slides = heroSlides(`stay:${s.slug}`, s.name, s.country);
   const video = VIDEOS[`stay:${s.slug}`] ?? priced?.video ?? null;
   const host = hostFor(`stay:${s.slug}`);
@@ -151,24 +173,30 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     : baseNav;
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
   const place = placeGuideForStay(s.slug);
-  const trail = [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
+  const trail = boat ? [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : ""}>
+    <div className={boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : ""}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={`${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
+        <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={s.tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
-          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: "Plan this stay", href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
-        <RecordNav items={nav} cta={priced ? "Check live rates" : "Plan this stay"} ctaHref={priced ? "#rates" : planHref} />
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />
+        <RecordNav items={nav} cta={priced ? "Check live rates" : `Plan this ${noun}`} ctaHref={priced ? "#rates" : planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
+          {boat && (
+            <aside aria-label="A voyage" className="mt-6 border ledger-border p-5 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div><p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Voyage · {boat.name}</p><p className="mt-1 text-[15.5px]">{s.name} is a {boat.kind}, filed in the Voyages volume, not among the stays. Her ship page, cabins, routes, dates and fares, is being built; until then this is her Ledger record.</p></div>
+              <Link href="/voyages#ships-coming-h" className="ledger-btn self-start md:self-center">All voyages</Link>
+            </aside>
+          )}
           <StayActions slug={s.slug} name={s.name} />
-          <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{pw && <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
+          <WhyFilm title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{chips && <div className="mt-3"><PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {founderProof(s.name, s.status as HouseStatus, s.statusDate) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate)!} seal={sealFor(stamp)} note={s.founderNote} className="mt-10 max-w-3xl" />}
-          <OfferPanel offers={offersFor(s.slug)} volume="stays" title={`Offers at ${s.name}`} />
+          <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? "The short list of reasons it made the Ledger, and a few you only notice on the second day."} icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone."} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" body={s.features.paras[0]} />}
@@ -222,7 +250,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <Link href={offerForStay(s.slug) ? `${collectionForStay(s.slug)!.path}#offers` : collectionForStay(s.slug)!.path} className="ledger-btn self-start md:self-center">{offerForStay(s.slug) ? "See the offer" : "See the collection"}</Link>
             </section>
           )}
-          {sistersFor(s.slug) && (
+          {!boat && sistersFor(s.slug) && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="sisters-heading">
               <p className="ledger-eyebrow ledger-crimson">Sister lodges · {sistersFor(s.slug)!.group.name}</p>
               <h2 id="sisters-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} Has Family</h2>
@@ -236,14 +264,14 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           <FaqBlock faqs={s.faqs.length ? s.faqs : quick} title={`${s.name}, Answered Straight`} schema={s.faqs.length > 0 && s.reviewed} />
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
-              <p className="ledger-eyebrow ledger-crimson">Also in {s.country}</p>
-              <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">More Stays We&rsquo;d Send You To</h2>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
+              <p className="ledger-eyebrow ledger-crimson">{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>
+              <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{boat ? "More Ships on These Waters" : <>More Stays We&rsquo;d Send You To</>}</h2>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
             </section>
           )}
           {IGGI_ON && (
             /* Iggi Intelligence Core, Stage 2 (flag NEXT_PUBLIC_IGGI=on): Iggi answers from the Ledger with this stay as page context. */
-            <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />
+            <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: boat ? "voyages" : s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />
           )}
           {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
           {pw && <>
@@ -262,7 +290,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <ContactPill name={s.name} planHref={planHref} />
       {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: FILM_CREDITS[video.id]?.title ?? video.title, description: FILM_CREDITS[video.id] ? `${FILM_CREDITS[video.id].seriesLine}, filmed at ${s.name}. ${FILM_CREDITS[video.id].credit}.` : `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25", ...filmCreditSchema(video.id) }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
-      <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, locality: place?.name, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}), ...(hubs.length ? { potentialAction: hubs.map((h) => { const leg = legs.find((t) => t.hub.id === h.id); return { "@type": "TravelAction", name: `Travel from ${hubLabel(h)} to ${s.name}`, fromLocation: hubSchema(h), toLocation: { "@type": "Place", name: s.name, ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}) }, ...(leg?.minutes ? { distance: leg.km ? `${leg.km} km` : undefined, description: `${transferLine(leg)}, as stated by the property`, identifier: leg.ledgerId ?? undefined } : { description: "Transfer time not yet recorded by the house" }) }; }) } : {}) })} />
+      {boat ? <JsonLd data={graph(touristTrip({ path, name: s.name, description: answer }))} /> : <JsonLd data={graph({ ...lodging({ path, name: s.name, description: answer, image: (slides.length ? slides : images).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return PHOTO_CREDIT[s.slug] ? imageObject(u, i.alt, PHOTO_CREDIT[s.slug]) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, locality: place?.name, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }), ...(apart.length ? { amenityFeature: apart.map((a) => ({ "@type": "LocationFeatureSpecification", name: a.title, value: true })) } : {}), ...(suited.length ? { audience: suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...suited].filter(Boolean).join(", ") } : {}), ...(hubs.length ? { potentialAction: hubs.map((h) => { const leg = legs.find((t) => t.hub.id === h.id); return { "@type": "TravelAction", name: `Travel from ${hubLabel(h)} to ${s.name}`, fromLocation: hubSchema(h), toLocation: { "@type": "Place", name: s.name, ...(s.coords ? { geo: { "@type": "GeoCoordinates", latitude: s.coords.lat, longitude: s.coords.lng } } : {}) }, ...(leg?.minutes ? { distance: leg.km ? `${leg.km} km` : undefined, description: `${transferLine(leg)}, as stated by the property`, identifier: leg.ledgerId ?? undefined } : { description: "Transfer time not yet recorded by the house" }) }; }) } : {}) })} />}
     </div>
   );
 }

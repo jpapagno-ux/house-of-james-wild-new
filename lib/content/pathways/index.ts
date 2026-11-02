@@ -10,7 +10,8 @@ export type { PathwayRecord };
 import map from "./pathway-map.json";
 import impactLib from "./impact-library.json";
 import { mergeRecords, pathway, type ImpactStatement, type Pathway, type PathwayId, type PathwayRecord } from "@/lib/pathways";
-import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
+import { STAYS, VESSEL_RECORDS, pageReady, type StayData } from "@/lib/content/stays";
+import { VESSEL_WATERS, vesselHref, watersOf } from "@/lib/content/vessels";
 import { recordHref } from "@/lib/ledger/urls";
 
 
@@ -56,4 +57,47 @@ export { validatePathwayMap } from "@/lib/pathways";
 export function pathwayChipsFor(slug: string): { primary: Pathway; secondary: Pathway[] } | null {
   const r = pathwayStays().find((x) => x.slug === slug);
   return r ? { primary: r.primary, secondary: r.secondary } : null;
+}
+
+/**
+ * Vessels on the pathways (James, 1 Nov 2026): boats filed in the Stay library keep their approved
+ * pathway tags but list as Voyages, never as stays (lib/content/vessels.ts). Same shape the pathway
+ * pages and the Compass use for journeys; each links to the vessel's current page.
+ */
+export type PathwayVessel = {
+  slug: string; kind: "voyage"; name: string; line: string; country: string | null; ledgerId: string | null; href: string;
+  hero: { url: string; alt: string } | null; primaryPathway: PathwayId; secondaryPathways: PathwayId[]; primary: Pathway; secondary: Pathway[];
+  volumes: PathwayRecord["volumes"]; setting: string; status: "draft" | "approved"; stay: StayData;
+};
+const VESSEL_MAP: PathwayRecord[] = mergeRecords(VESSEL_RECORDS, [], IMPACT_BY_REF);
+
+export function pathwayVessels(opts: { includeDrafts?: boolean } = {}): PathwayVessel[] {
+  const out: PathwayVessel[] = [];
+  for (const r of VESSEL_MAP) {
+    if (!opts.includeDrafts && r.classificationStatus !== "approved") continue;
+    const stay = VESSEL_RECORDS.find((s) => s.slug === r.slug);
+    const primary = pathway(r.primaryPathway);
+    if (!stay || !primary || (!opts.includeDrafts && !pageReady(stay))) continue;
+    const country = VESSEL_WATERS[watersOf(stay.slug)].country ?? stay.country;
+    out.push({
+      slug: r.slug, kind: "voyage", name: stay.name, line: stay.tagline ?? "", country, ledgerId: stay.ledgerId, href: vesselHref(stay.slug),
+      hero: stay.hero ? { url: stay.hero, alt: `${stay.name}${country ? `, ${country}` : ""}` } : null,
+      primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, primary,
+      secondary: r.secondaryPathways.map((p) => pathway(p)).filter((p): p is Pathway => !!p),
+      volumes: r.volumes.includes("voyages") ? r.volumes : ["voyages"], setting: r.setting, status: r.classificationStatus === "approved" ? "approved" : "draft", stay,
+    });
+  }
+  return out;
+}
+
+/** Vessels on one pathway, primary first. */
+export function vesselsOnPathway(id: PathwayId, opts?: { includeDrafts?: boolean }): PathwayVessel[] {
+  const all = pathwayVessels(opts);
+  return [...all.filter((v) => v.primaryPathway === id), ...all.filter((v) => v.secondaryPathways.includes(id))];
+}
+
+/** Approved pathway chips for a vessel, by its stay-library slug. */
+export function vesselChipsFor(slug: string): { primary: Pathway; secondary: Pathway[] } | null {
+  const v = pathwayVessels().find((x) => x.slug === slug);
+  return v ? { primary: v.primary, secondary: v.secondary } : null;
 }

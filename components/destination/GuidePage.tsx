@@ -168,7 +168,8 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
                   <p className="font-mono text-[11px] tracking-[0.14em] ledger-crimson">{i === 0 ? "THE HOUSE'S PICK" : `OPTION ${i + 1}`}</p>
                   <h3 className="ledger-display text-[20px] mt-1">{o.name}</h3>
                   <p className="mt-2 text-[15px] leading-relaxed ledger-muted flex-1">{o.body}</p>
-                  {o.href && <Link href={o.href} className={`mt-5 self-start ${i === 0 ? "ledger-btn ledger-btn--solid" : "ledger-btn-ghost"}`}>{o.label}</Link>}
+                  {/* One selected stay: the button opens it by name, rather than scrolling to the list. */}
+                  {o.href && (() => { const one = o.href === "#stays" && stays.length === 1 ? stays[0] : null; return <Link href={one ? `/stays/${one.slug}` : o.href} className={`mt-5 self-start ${i === 0 ? "ledger-btn ledger-btn--solid" : "ledger-btn-ghost"}`}>{one ? one.name : o.label}</Link>; })()}
                 </li>
               ))}
             </ol>

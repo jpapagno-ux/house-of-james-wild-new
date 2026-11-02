@@ -109,3 +109,17 @@ test("Portugal has the Alentejo and the Douro Valley, linked as one route", () =
   assert.ok(GUIDES.alentejo.onward!.some((o) => o.href === GUIDES["douro-valley"].path));
   assert.ok(GUIDES["douro-valley"].onward!.some((o) => o.href === GUIDES.alentejo.path));
 });
+
+// Greece (Wave 1, 2 Nov 2026): six places, every approved stay on one of them, all on the Greece flyover.
+test("Greece has six places, each with its approved stays and the Greece flyover", () => {
+  const want = ["crete", "cyclades", "dodecanese", "ionian-islands", "peloponnese", "zagori"];
+  assert.deepEqual(placeGuides("greece").map((x) => x.slug).sort(), want);
+  for (const slug of want) {
+    assert.equal(GUIDES[slug].flyover, "greece");
+    assert.ok(GUIDES[slug].stays!.length > 0, slug);
+    for (const o of GUIDES[slug].onward!) assert.ok(want.some((w) => GUIDES[w].path === o.href), `${slug} → ${o.href}`);
+  }
+  assert.equal(placeGuideForStay("kinsterna-hotel")?.slug, "peloponnese");
+  assert.equal(placeGuideForStay("gundari")?.slug, "cyclades");
+  assert.equal(placeGuideForStay("aristi-mountain-resort")?.slug, "zagori");
+});

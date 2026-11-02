@@ -65,6 +65,17 @@ const REGIONS = {
     unesco: ["263", "361", "723", "755", "866", "1046", "1367"],
     // Short labels on the chart (the full names are listed beside it); "" = the mark alone, a town names it.
     unescoLabels: { "263": "", "361": "Évora", "723": "Sintra", "755": "", "866": "Côa Valley", "1046": "Alto Douro", "1367": "Elvas" } },
+  // Greece, closer (2 Nov 2026): the landing chart of the Europe flyover, from Zagori and Corfu to Crete,
+  // Rhodes and Kastellorizo. The house's places named, and Greece's UNESCO sites in the frame.
+  "greece-close": { country: "greece", frame: [19.0, 34.6, 30.0, 41.9], focus: ["Greece"],
+    seas: [["Ionian Sea", 37.6, 20.0], ["Aegean Sea", 38.9, 25.0], ["Sea of Crete", 35.95, 25.0]],
+    countries: [["TÜRKİYE", 38.8, 28.6]],
+    areas: [["Peloponnese", 37.55, 22.1], ["Cyclades", 37.0, 25.9], ["Dodecanese", 36.75, 27.55], ["Crete", 35.05, 24.6], ["Zagori", 40.12, 20.95], ["Ionian Islands", 38.6, 20.15]],
+    marks: [["Athens ✈", 37.9838, 23.7275, "town"]],
+    unesco: ["392", "393", "404", "455", "491", "493", "511", "517", "530", "941", "978", "1695", "1733"],
+    unescoLabels: { "392": "Bassae", "393": "Delphi", "404": "", "455": "Meteora", "491": "Epidaurus", "493": "Rhodes", "511": "Mystras", "517": "Olympia", "530": "Delos", "941": "Mycenae", "978": "Corfu", "1695": "", "1733": "Knossos" } },
+  // Europe, wide (2 Nov 2026): the opening view of the Greece flyover only (the Europe region chart stays as it is).
+  "europe-wide": { frame: [-12, 33.5, 33, 58.5], focus: ["Greece"], seas: [["Atlantic Ocean", 46, -9], ["Mediterranean Sea", 35.6, 17], ["Aegean Sea", 38.6, 25], ["Black Sea", 43.2, 31.5]] },
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
@@ -148,7 +159,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   for (const g of cfg.hires ? FEATS10 : FEATS) {
     const d = geomPath(g.geometry); if (!d) continue;
     const big = polysOf(g.geometry).map((p) => S(p[0])).filter((r) => inside(ringBox(r))).sort((a, b) => area(b) - area(a))[0];
-    const lab = big ? (() => { const [x, y] = centroid(big); return x > bounds.w && x < bounds.e && y > bounds.s && y < bounds.n ? { a: area(big), x: P([x, y])[0], y: P([x, y])[1], text: g.properties.name.replace("United Republic of ", "").replace("Dem. Rep. Congo", "DR Congo").replace("United States of America", "United States").toUpperCase() } : null; })() : null;
+    const lab = big ? (() => { const [x, y] = centroid(big); return x > bounds.w && x < bounds.e && y > bounds.s && y < bounds.n ? { a: area(big), x: P([x, y])[0], y: P([x, y])[1], text: g.properties.name.replace("United Republic of ", "").replace("Dem. Rep. Congo", "DR Congo").replace("United States of America", "United States").replace(/^Macedonia$/, "North Macedonia").toUpperCase() } : null; })() : null;
     if (focusNames.has(g.properties.name)) { focus += d; if (lab && !cfg.hires) flabels.push(lab); }
     else { neighbors.push({ name: g.properties.name, d }); if (lab) nlabels.push(lab); }
   }

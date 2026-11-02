@@ -37,6 +37,14 @@ const FLYOVERS: Record<string, Fly> = {
     notes: ["Dashed: the Douro wine region and Dark Sky Alqueva, indicative outlines; positions approximate."],
     nightLine: "Dark Sky Alqueva: the first Starlight Tourism Destination in the world",
   },
+  // Greece (2 Nov 2026): Europe, then Greece from Zagori and Corfu to Crete, Rhodes and Kastellorizo, with the
+  // house's places named and Greece's UNESCO sites (Minoan Palatial Centres, 2025; Zagori, 2023) in the frame.
+  greece: {
+    from: "europe-wide", fromName: "Europe", to: "greece-close", countries: ["greece"],
+    title: "Greece, from the Mountains to the Islands",
+    line: "From the whole of Europe to its south-eastern corner: Zagori's stone villages in the Pindus mountains, the Peloponnese with Mystras and Monemvasia, the Cyclades scattered across the Aegean, Crete to the south, and the Dodecanese out towards the Turkish coast, as far as Kastellorizo.",
+    notes: ["Positions approximate."],
+  },
 };
 
 const charts = REGION_LIB as unknown as Record<string, ChartData>;

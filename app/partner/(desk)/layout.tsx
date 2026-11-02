@@ -25,21 +25,21 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
     { href: "/partner/support", label: "Support" },
   ];
   const later: RailItem[] = [
-    { href: "#", label: "Content", soon: "Stage 2" },
-    { href: "#", label: "Rooms & Accommodation", soon: "Stage 2" },
-    { href: "#", label: "Rates & Offers", soon: "Stage 2" },
-    { href: "#", label: "Media Library", soon: "Stage 3" },
-    { href: "#", label: "Partner Dispatch", soon: "Stage 3" },
-    { href: "#", label: "Founder Notes", soon: "Stage 3" },
-    { href: "#", label: "Resources", soon: "Stage 3" },
+    { href: "#", label: "Content", soon: "soon" },
+    { href: "#", label: "Rooms & Accommodation", soon: "soon" },
+    { href: "#", label: "Rates & Offers", soon: "soon" },
+    { href: "#", label: "Media Library", soon: "soon" },
+    { href: "#", label: "Partner Dispatch", soon: "soon" },
+    { href: "#", label: "Founder Notes", soon: "soon" },
+    { href: "#", label: "Resources", soon: "soon" },
   ];
   const who = desk.membership ? ROLE_LABEL[desk.membership.role] : "James Wild & Co · viewing";
   return (
     <>
       <SiteHeader />
-      <div className="border-b ledger-rule bg-paper-card">
+      <div className="border-b ledger-border border-t-2 border-t-[#0C5D61] bg-white">
         <div className="max-w-ledger mx-auto px-5 md:px-10 py-3 flex flex-wrap items-center gap-x-5 gap-y-2">
-          <p className="ledger-eyebrow ledger-crimson">Partner Desk</p>
+          <p className="ledger-eyebrow text-[#0C5D61]">Partner Desk</p>
           <p className="ledger-display text-[1.2rem] leading-none">{desk.org.name}</p>
           {desk.org.partner_code && <span className="font-mono text-[11.5px] tracking-[0.06em] ledger-crimson">{desk.org.partner_code}</span>}
           <div className="ml-auto flex flex-wrap items-center gap-4 text-[13px]">

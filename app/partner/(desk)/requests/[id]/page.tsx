@@ -45,7 +45,7 @@ export default async function RequestPage({ params }: { params: Promise<{ id: st
         </div>
         <div>
           {answerable ? (
-            <div className="bg-paper-card border ledger-border p-5 md:p-6"><p className="ledger-display text-[1.4rem] mb-4">{r.status === "changes_requested" ? "Send what the house asked for" : "Answer this request"}</p><ReplyForm requestId={r.id} defaultTitle={r.requested_item} /></div>
+            <div className="bg-white border ledger-border p-5 md:p-6"><p className="ledger-display text-[1.4rem] mb-4">{r.status === "changes_requested" ? "Send what the house asked for" : "Answer this request"}</p><ReplyForm requestId={r.id} defaultTitle={r.requested_item} /></div>
           ) : (
             <Notice>{desk.membership ? "This request has been answered. The house will tell you if anything more is needed." : "Viewing as James Wild & Co. Partners answer requests from here."}</Notice>
           )}

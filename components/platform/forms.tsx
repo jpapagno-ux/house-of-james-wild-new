@@ -27,7 +27,7 @@ function useSubmit() {
   return { busy, err, done, run, setErr };
 }
 const Msg = ({ err, done }: { err: { message: string } | null; done: string | null }) =>
-  err ? <p role="alert" className="text-[14px] ledger-crimson">{err.message}</p> : done ? <p role="status" className="text-[14px] text-forest">{done}</p> : null;
+  err ? <p role="alert" className="text-[14px] ledger-crimson">{err.message}</p> : done ? <p role="status" className="text-[14px] text-[#11705A]">{done}</p> : null;
 
 // ===== Contacts
 export type ContactDraft = {
@@ -121,7 +121,7 @@ export function ContactCardActions({ contact, entities, canRemove = true }: { co
 export function AddContact({ entities }: { entities: { id: string; name: string }[] }) {
   const [open, setOpen] = useState(false);
   return open
-    ? <div className="bg-paper-card border ledger-border p-5"><p className="ledger-display text-[1.3rem] mb-4">New contact</p><ContactEditor initial={blankContact} entities={entities} onClose={() => setOpen(false)} /></div>
+    ? <div className="bg-white border ledger-border p-5"><p className="ledger-display text-[1.3rem] mb-4">New contact</p><ContactEditor initial={blankContact} entities={entities} onClose={() => setOpen(false)} /></div>
     : <button type="button" onClick={() => setOpen(true)} className="ledger-btn">Add a contact</button>;
 }
 

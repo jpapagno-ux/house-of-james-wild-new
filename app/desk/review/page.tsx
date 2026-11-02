@@ -50,7 +50,7 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
               {s.partner_note && <p className="mt-3 text-[15px] whitespace-pre-line border-l-2 border-ink/20 pl-3">{s.partner_note}</p>}
               {s.documents.length > 0 && <ul className="mt-2 text-[14px]">{s.documents.map((d, i) => <li key={i}><a href={d.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{d.name}</a> <span className="ledger-muted text-[12px] break-all">{d.url}</span></li>)}</ul>}
               {s.revisions.map((r) => (
-                <div key={r.id} className="mt-4 bg-paper-card border ledger-border p-4">
+                <div key={r.id} className="mt-4 bg-white border ledger-border p-4">
                   <div className="flex flex-wrap items-baseline justify-between gap-2"><p className="ledger-eyebrow">{FIELD_LABEL[r.field] ?? r.field} · {r.target_table === "properties" ? "entry" : "room"}</p><StatusPill {...REVISION_STATUS[r.status]} /></div>
                   <div className="mt-2 grid gap-2 sm:grid-cols-2 text-[15px]">
                     <div><p className="text-[12px] ledger-muted">On file</p><p className="line-through decoration-ink/30">{showValue(r.current_value)}</p></div>

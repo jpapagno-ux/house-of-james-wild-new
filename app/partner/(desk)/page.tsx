@@ -104,7 +104,7 @@ export default async function Overview() {
               ))}
             </ul>
           )}
-          <p className="mt-3 text-[13px] ledger-muted">Send rate sheets in reply to the house&rsquo;s rate requests. Entering rates on the desk arrives in Stage 2.</p>
+          <p className="mt-3 text-[13px] ledger-muted">Send rate sheets in reply to the house&rsquo;s rate requests. Entering rates on the desk is coming soon.</p>
         </Section>
       </div>
 

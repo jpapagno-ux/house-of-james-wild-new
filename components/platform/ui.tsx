@@ -1,16 +1,17 @@
 import Link from "next/link";
 import type { Tone } from "@/lib/platform/labels";
 
-// Partner Desk primitives on the production Ledger tokens: white page, paper-card
-// panels, hairline rules, Cormorant headings, Manrope text, square corners, no shadows.
-// Status tones use house chrome (forest, sea, rust), never a volume colour (CLAUDE.md).
+// Partner Desk primitives on the production Ledger tokens: white working surfaces, hairline rules,
+// Cormorant headings, Manrope text, square corners, no shadows (lib/platform/theme.ts).
+// Status tones come from one fixed set shared by every portal: Deep Sea blues and greens for progress
+// and done, House Crimson only for "needs you". Never a volume colour, never rust or forest (retired).
 
 const TONE: Record<Tone, string> = {
-  neutral: "border-ink/25 text-ink/75 bg-paper",
-  progress: "border-sea-deep/35 text-sea-deep bg-coast-mist",
-  good: "border-forest/35 text-forest bg-[#EEF1EA]",
-  attention: "border-rust/40 text-rust bg-rust-wash",
-  closed: "border-ink/15 text-ink/55 bg-paper-card",
+  neutral: "border-ink/25 text-ink/75 bg-white",
+  progress: "border-[#1A4A80]/30 text-[#1A4A80] bg-[#E8EEF6]",
+  good: "border-[#11705A]/30 text-[#11705A] bg-[#E8F3EF]",
+  attention: "border-[#8B2525]/30 text-[#8B2525] bg-[#F6ECEC]",
+  closed: "border-ink/15 text-ink/55 bg-white",
 };
 
 export function StatusPill({ label, tone = "neutral" }: { label: string; tone?: Tone }) {
@@ -43,7 +44,7 @@ export function Section({ title, aside, children, id }: { title: string; aside?:
 }
 
 export function Panel({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <div className={`min-w-0 bg-paper-card border ledger-border p-5 md:p-6 ${className}`}>{children}</div>;
+  return <div className={`min-w-0 bg-white border ledger-border p-5 md:p-6 ${className}`}>{children}</div>;
 }
 
 /** Definition list for record facts: label left, value right; stacks on phones. */
@@ -61,7 +62,7 @@ export function DataList({ rows }: { rows: [string, React.ReactNode][] }) {
 }
 
 export function Notice({ tone = "neutral", title, children }: { tone?: "neutral" | "attention" | "good"; title?: string; children: React.ReactNode }) {
-  const c = tone === "attention" ? "border-l-rust bg-rust-wash" : tone === "good" ? "border-l-forest bg-[#EEF1EA]" : "border-l-ink/40 bg-paper-card";
+  const c = tone === "attention" ? "border-l-[#8B2525] bg-[#F6ECEC]" : tone === "good" ? "border-l-[#11705A] bg-[#E8F3EF]" : "border-l-[#0C5D61] bg-[#F4F8F8]";
   return (
     <div role={tone === "attention" ? "status" : undefined} className={`border-l-[3px] ${c} px-4 py-3 text-[14.5px] leading-relaxed`}>
       {title && <p className="font-medium">{title}</p>}
@@ -85,7 +86,7 @@ export function HealthRing({ score, size = 96 }: { score: number; size?: number 
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" className="shrink-0" role="img" aria-label={`Portfolio Health ${score}%`}>
       <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(45,42,38,0.12)" strokeWidth="5" />
-      <circle cx="50" cy="50" r={r} fill="none" stroke="var(--jw-accent-hex)" strokeWidth="5" strokeDasharray={c} strokeDashoffset={off} strokeLinecap="butt" transform="rotate(-90 50 50)" />
+      <circle cx="50" cy="50" r={r} fill="none" stroke="#0C5D61" strokeWidth="5" strokeDasharray={c} strokeDashoffset={off} strokeLinecap="butt" transform="rotate(-90 50 50)" />
       <text x="50" y="56" textAnchor="middle" fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="26" fill="#2D2A26">{score}%</text>
     </svg>
   );
@@ -93,7 +94,7 @@ export function HealthRing({ score, size = 96 }: { score: number; size?: number 
 
 export function CheckLine({ state, label, detail }: { state: "ok" | "attention" | "missing"; label: string; detail: string }) {
   const mark = state === "ok" ? "✓" : state === "attention" ? "!" : "–";
-  const cls = state === "ok" ? "text-forest border-forest/40" : state === "attention" ? "text-rust border-rust/50" : "text-ink/50 border-ink/30";
+  const cls = state === "ok" ? "text-[#11705A] border-[#11705A]/40" : state === "attention" ? "text-[#8B2525] border-[#8B2525]/45" : "text-ink/50 border-ink/30";
   return (
     <li className="flex items-start gap-3 py-2">
       <span aria-hidden="true" className={`mt-[2px] inline-flex h-5 w-5 shrink-0 items-center justify-center border text-[12px] font-semibold ${cls}`}>{mark}</span>

@@ -34,7 +34,7 @@ export default async function Submissions() {
                     <tr key={r.id} className="border-t border-ink/10 align-top">
                       <td className="py-2 pr-3">{FIELD_LABEL[r.field] ?? r.field}</td>
                       <td className="py-2 pr-3 ledger-muted">{showValue(r.current_value)}</td>
-                      <td className="py-2 pr-3">{showValue(r.proposed_value)}{r.final_value !== null && r.final_value !== undefined && showValue(r.final_value) !== showValue(r.proposed_value) && <span className="block text-[12.5px] text-forest">Published as: {showValue(r.final_value)}</span>}</td>
+                      <td className="py-2 pr-3">{showValue(r.proposed_value)}{r.final_value !== null && r.final_value !== undefined && showValue(r.final_value) !== showValue(r.proposed_value) && <span className="block text-[12.5px] text-[#11705A]">Published as: {showValue(r.final_value)}</span>}</td>
                       <td className="py-2 hidden sm:table-cell"><StatusPill {...REVISION_STATUS[r.status]} /></td>
                     </tr>
                   ))}

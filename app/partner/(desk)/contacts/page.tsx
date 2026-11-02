@@ -28,7 +28,7 @@ export default async function Contacts() {
         {list.map((c) => {
           const full = [c.first_name, c.last_name].filter(Boolean).join(" ") || c.title || "Contact";
           return (
-            <li key={c.id} className={`border p-4 md:p-5 ${c.status === "to_verify" ? "border-rust/50" : "ledger-border"}`}>
+            <li key={c.id} className={`border p-4 md:p-5 ${c.status === "to_verify" ? "border-[#8B2525]/35" : "ledger-border"}`}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0"><p className="ledger-display text-[1.3rem] leading-tight">{full}</p>{c.title && full !== c.title && <p className="text-[13.5px] ledger-muted">{c.title}</p>}</div>
                 {c.status === "to_verify" && <StatusPill label="To confirm" tone="attention" />}

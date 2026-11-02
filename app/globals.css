@@ -258,3 +258,53 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-needle { transform-box: view-box; transform-origin: 50% 50%; animation: jw-needle 7s ease-in-out infinite; }
 a:hover .jw-needle { animation-duration: 1.6s; }
 @media (prefers-reduced-motion: reduce) { .jw-needle { animation: none; } }
+
+/* ---------- The Exceptional Few™: contextual tokens (Stage 4, 1 Nov 2026) ----------
+   Additive only. A designated Stay keeps its white page, Stays green marks and House
+   Crimson; the five --ef-* tokens tint only the Exceptional Few modules. One palette per
+   property (palette_key in the Exceptional Few table). No volume hex lives here, so
+   scripts/check-palette.mjs is unaffected. */
+.theme-ef { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+/* amangiri (Canyon Point, Utah): sandstone, muted rust, desert ivory, dusk grey-plum, pale limestone. */
+.theme-ef-amangiri { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+.ef-module { --jw-card: var(--ef-landscape); }
+.ef-eyebrow { color: var(--ef-earth); }
+.ef-rule { border-color: var(--ef-sand); }
+.ef-caption { color: var(--ef-shadow); }
+.ef-wash { background: var(--ef-landscape); }
+.ef-tint { background: var(--ef-accent); }
+
+/* ---------- The Exceptional Few™: dark surface + timed drift (Mock C, 1 Nov 2026) ----------
+   Scoped to .theme-ef-dark, used only by Exceptional Few pages that opt in. Overrides the house
+   chrome classes inside that scope so the existing components render on the chosen surface
+   without edits. Two surfaces: dusk plum (default) and ink (.surface-ink). */
+.theme-ef-dark { --ef-surface: #2F2735; --ef-ink: #F1E8DC; --ef-muted: rgba(241,232,220,0.74); --ef-line: rgba(239,230,218,0.22); --ef-sand: #C9A27E; --ef-earth: #D08A5B; --ef-landscape: #352D3B; --ef-shadow: rgba(239,230,218,0.6); --ef-accent: #C9A27E; --jw-accent: 201 162 126; --jw-accent-deep: 176 138 99; --jw-accent-light: 230 217 196; --jw-accent-hex: #C9A27E; --jw-accent-deep-hex: #B08A63; --jw-card: #352D3B; background: var(--ef-surface); color: var(--ef-ink); }
+.theme-ef-dark.surface-ink { --ef-surface: #14130F; --ef-ink: #E6D9C4; --ef-landscape: #1F1D18; --jw-card: #1F1D18; }
+/* The day band: the practical middle of a dark Exceptional Few page lifts to desert ivory so rooms, map and
+   questions read as a Ledger page again; the night close drops back to the surface. */
+.theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #8A4C2C; --jw-card: #FFFFFF; --jw-accent: 138 76 44; --jw-accent-deep: 122 69 44; --jw-accent-hex: #8A4C2C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
+.theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
+.theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
+.theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
+.theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }
+.theme-ef-dark .text-ink, .theme-ef-dark .ledger-display, .theme-ef-dark .ledger-h1 { color: var(--ef-ink); }
+.theme-ef-dark header:not(.bg-transparent) { background: var(--ef-surface) !important; border-color: var(--ef-line) !important; color: var(--ef-ink) !important; }
+.theme-ef-dark header .\!text-ink, .theme-ef-dark nav .\!text-ink { color: var(--ef-ink) !important; }
+.theme-ef-dark .ledger-btn:hover, .theme-ef-dark .ledger-btn--solid { color: var(--ef-surface); }
+.theme-ef-dark .ledger-btn--solid:hover { color: var(--ef-surface); }
+.theme-ef-dark #record-bar { background: var(--ef-surface) !important; border-color: var(--ef-line); color: var(--ef-ink); }
+.theme-ef-dark .ef-rule { border-color: var(--ef-line); }
+.theme-ef-dark .bg-ef-earth { background: var(--ef-earth); }
+.theme-ef-dark .text-ef-earth { color: var(--ef-earth); }
+/* Timed drift: the frame breathes on its own clock; scroll never drives it. */
+@keyframes ef-zoom { from { transform: scale(1); } to { transform: scale(1.07); } }
+@keyframes ef-pan { from { transform: scale(1.08) translateX(1.5%); } to { transform: scale(1.08) translateX(-1.5%); } }
+.ef-drift { animation: ef-zoom 14s ease-out forwards; will-change: transform; }
+.ef-drift-pan { animation: ef-pan 18s ease-in-out forwards; will-change: transform; }
+.ef-drift-slow { animation-duration: 24s; }
+@media (prefers-reduced-motion: reduce) { .ef-drift, .ef-drift-pan { animation: none !important; transform: none !important; } }
+/* Text arrives after the image settles. */
+@keyframes ef-arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+.ef-arrive > * { animation: ef-arrive 1.1s ease-out 0.5s both; }
+.ef-arrive > *:nth-child(2) { animation-delay: 0.75s; } .ef-arrive > *:nth-child(3) { animation-delay: 1s; } .ef-arrive > *:nth-child(4) { animation-delay: 1.25s; }
+@media (prefers-reduced-motion: reduce) { .ef-arrive > * { animation: none !important; } }

@@ -18,6 +18,8 @@ const config: Config = {
         // Wild Pathways (lib/pathways.ts): read the scoped variables set by .pathway-0n; see globals.css.
         pathway: { DEFAULT: "var(--jw-path)", text: "var(--jw-path-text)", tint: "var(--jw-path-tint)" },
         impact: { panel: "#E6E9DD", copy: "#405A45", highlight: "#94512F" },
+        // The Exceptional Few™ (globals.css .theme-ef): contextual, property-driven; variables, never hex.
+        ef: { sand: "var(--ef-sand)", earth: "var(--ef-earth)", landscape: "var(--ef-landscape)", shadow: "var(--ef-shadow)", accent: "var(--ef-accent)" },
         // House chrome (30 Oct 2026): warm neutrals for bands between white pages,
         // never for the page itself; and one tone per volume for dots, tabs and rails.
         sand: { DEFAULT: "#EFEAE0", deep: "#E4DDD0", ink: "#6B6257" },

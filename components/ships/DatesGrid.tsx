@@ -26,7 +26,7 @@ function Chip({ x, colour, onOpen }: { x: Sailing; colour: string; onOpen: (x: S
   );
 }
 
-export default function DatesGrid({ ship, data, note }: { ship: string; data: DatesData; note?: string }) {
+export default function DatesGrid({ ship, data, note, basis }: { ship: string; data: DatesData; note?: string; basis?: string }) {
   const [route, setRoute] = useState<string | null>(null);
   const [cabin, setCabin] = useState<string | null>(null);
   const [open, setOpen] = useState<Sailing | null>(null);
@@ -97,7 +97,7 @@ export default function DatesGrid({ ship, data, note }: { ship: string; data: Da
         </>
       )}
 
-      <p className="mt-4 text-[12.5px] ledger-muted max-w-3xl">{data.bands ? "One fare covers any sailing that starts in the season. " : ""}{note} Availability is confirmed live when you ask.</p>
+      <p className="mt-4 text-[12.5px] ledger-muted max-w-3xl">{data.bands ? "One fare covers any sailing that starts in the season. " : ""}{note ? `${note} ` : ""}Availability is confirmed live when you ask.</p>
 
       {open && (
         <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center bg-black/40" onClick={() => setOpen(null)}>
@@ -108,7 +108,7 @@ export default function DatesGrid({ ship, data, note }: { ship: string; data: Da
             </div>
             {open.status && <p className="mt-2 text-[14px]">{open.status}</p>}
             <dl className="mt-4 border-t ledger-rule text-[15px]">{price(open.prices).map(([k, v]) => <div key={k} className="flex justify-between gap-3 py-2 border-b ledger-rule"><dt className="ledger-muted">{k}</dt><dd className="whitespace-nowrap">{usd(v)}</dd></div>)}</dl>
-            <p className="mt-2 text-[12px] ledger-muted">Per person, two sharing.</p>
+            <p className="mt-2 text-[12px] ledger-muted">{basis ? `${basis.charAt(0).toUpperCase()}${basis.slice(1)}.` : "Per person, two sharing."}</p>
             <a href={open.plan} className="mt-4 ledger-btn ledger-btn--solid w-full justify-center min-h-[48px] inline-flex items-center">{open.status === "Full" ? "Join the waitlist" : "Hold a cabin"}</a>
           </div>
         </div>

@@ -1,0 +1,139 @@
+{
+ "id": "galapagos-angel-yacht-baltra-to-baltra-monday-to-sunday-selected-departures-6n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "7-day cruise D: Baltra round trip, 6 nights aboard Galapagos Angel",
+ "subtitle": "6 nights · Baltra to Baltra, Monday to Sunday · Galapagos Angel",
+ "days": {
+  "1": "arrive Baltra, transfer to the yacht and Bartolome",
+  "2": "Vicente Roca Point, Isabela and Espinoza Point, Fernandina",
+  "3": "Tagus Cove and Elizabeth Bay",
+  "4": "Urbina Bay and Moreno Point",
+  "5": "Sierra Negra Volcano and Arnaldo Tupiza Breeding Center",
+  "6": "Devil's Crown and Cormorant Point and Post Office Bay",
+  "7": "Mosquera Islet, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bartolome",
+   "lat": -0.2833,
+   "lng": -90.55,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Isabela",
+   "lat": -0.05,
+   "lng": -91.55,
+   "mode": "sea",
+   "path": [
+    [
+     -90.55,
+     -0.2833
+    ],
+    [
+     -91.55,
+     -0.05
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Isabela",
+   "lat": -0.27,
+   "lng": -91.37,
+   "mode": "sea",
+   "path": [
+    [
+     -91.55,
+     -0.05
+    ],
+    [
+     -91.37,
+     -0.27
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Isabela",
+   "lat": -0.37,
+   "lng": -91.23,
+   "mode": "sea",
+   "path": [
+    [
+     -91.37,
+     -0.27
+    ],
+    [
+     -91.23,
+     -0.37
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Isabela",
+   "lat": -0.956,
+   "lng": -90.965,
+   "mode": "sea",
+   "path": [
+    [
+     -91.23,
+     -0.37
+    ],
+    [
+     -90.965,
+     -0.956
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -90.965,
+     -0.956
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Mosquera",
+   "lat": -0.41,
+   "lng": -90.28,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.28,
+     -0.41
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

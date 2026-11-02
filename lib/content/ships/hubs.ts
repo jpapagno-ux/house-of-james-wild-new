@@ -1,10 +1,11 @@
 import { SHIPS } from "./index";
 import { cardsFor, tally, type ShipCardData } from "./cards";
-import { POLAR_WATERS, SHIP_REGISTRY, VOYAGE_TYPES, WATERS_HUBS, registryShip, shipsInWaters, shipsOfType, type VoyageType, type Waters } from "./registry";
+import { POLAR_WATERS, SHIP_REGISTRY, TIER_ORDER, VOYAGE_TYPES, WATERS_HUBS, registryShip, shipsInWaters, shipsOfType, type VoyageType, type Waters } from "./registry";
 import { atlasRoutes } from "./atlas";
 import { NILE_CHART } from "./routes";
 import { ALIIKAI_SHIP } from "./aliikai";
-import { factOf, nightsLabel } from "./types";
+import { factOf, fromPrice, nightsLabel } from "./types";
+import { pathway } from "@/lib/pathways";
 import type { HubProps } from "@/components/ships/VoyageHub";
 import type { Tile } from "@/components/ships/VoyageTiles";
 import { POLAR_PATH, POLAR_VOYAGES, voyageFrom } from "@/lib/content/polar";
@@ -120,17 +121,26 @@ export function watersHub(w: Waters): HubProps {
       atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to the Amazon, then sails it day by day." } };
   }
   if (w === "galapagos") {
-    const yachts = cards.filter((c) => /^Yacht/.test(c.eyebrow)), cats = cards.filter((c) => /^Catamaran/.test(c.eyebrow));
-    const grp = (cs: ShipCardData[]) => { const ss = cs.map((c) => SHIPS.find((e) => e.slug === c.slug)!.data); const g = [...new Set(ss.map((s) => factOf(s, /guest/i)))].join(" or "); const n = [...new Set(ss.map((s) => nightsLabel(s)))].join(" or "); const t = tally(cs); return `${g} guests for ${n} at a time${t.from ? `, from ${t.from}` : ""}`; };
+    const F = galapagosFleet();
+    const ops = F.sections.map((x) => `${x.operator} (${F.items.filter((i) => i.operator === x.operator).length})`);
+    const of = (k: string[]) => F.items.filter((i) => k.includes(i.kind));
+    const cats = of(["catamaran"]), tri = of(["trimaran"]), yachts = of(["yacht", "motor-yacht"]);
+    const gRange = (xs: typeof F.items) => { const g = xs.map((x) => x.guests).filter((n): n is number => n != null); const a = Math.min(...g), b = Math.max(...g); return a === b ? `${a}` : `${a} to ${b}`; };
+    const nRange = (xs: typeof F.items) => { const n = xs.flatMap((x) => x.nights); return `${Math.min(...n)} to ${Math.max(...n)} nights`; };
+    const name = (slug: string) => cards.find((c) => c.slug === slug)?.name ?? slug;
+    const x = tally(cards);
+    const tiers = TIER_ORDER.map((t) => [t, F.items.filter((i) => i.tier === t).map((i) => name(i.slug))] as const).filter(([, n]) => n.length);
     return { ...base,
-      title: "Galápagos Yachts and Catamarans", intro: "Small expedition yachts and catamarans in the Galápagos Islands, Ecuador.",
-      answer: `Yacht or catamaran in the Galápagos comes down to length of trip and size. Ecoventura's yachts ${list(yachts.map((c) => c.name))} take ${grp(yachts)}, from San Cristobal. Galaxy Cruises' catamarans ${list(cats.map((c) => c.name))} take ${grp(cats)}. Every fare is per person, two sharing, cruise only.`,
+      title: "Galápagos Yachts and Catamarans", intro: `${cards.length} small expedition yachts and catamarans in the Galápagos Islands, Ecuador, from four partners, grouped by partner and tier.`,
+      answer: `Yacht or catamaran in the Galápagos comes down to trip length, group size and tier. The house files ${cards.length} ships from ${list(ops)}. The catamarans, ${list(cats.map((c) => name(c.slug)))}, take ${gRange(cats)} guests on ${nRange(cats)}${tri.length ? `; ${list(tri.map((c) => name(c.slug)))} is a trimaran, which Royal Galapagos calls the only one sailing the islands` : ""}; the ${yachts.length} yachts take ${gRange(yachts)} guests on ${nRange(yachts)}.${x.from ? ` Fares start at ${x.from} per person, as each operator publishes them, cruise only.` : ""}`,
       faqs: [
-        { q: "Is a yacht or a catamaran better in the Galápagos?", a: `It depends on the trip you want. The Ecoventura yachts sail week-long loops for ${factOf(SHIPS.find((e) => e.slug === yachts[0]?.slug)!.data, /guest/i)} guests; the Galaxy catamarans run shorter 4 and 5 night routes for ${factOf(SHIPS.find((e) => e.slug === cats[0]?.slug)!.data, /guest/i)}.` },
-        { q: "Can we charter a whole Galápagos yacht?", a: "Yes. Ecoventura and Galaxy Cruises both publish private charters; James quotes them for your dates." },
-        FARES,
+        { q: "Is a yacht or a catamaran better in the Galápagos?", a: `It depends on the trip. The catamarans (${list(cats.map((c) => name(c.slug)))}) carry ${gRange(cats)} guests; the yachts carry ${gRange(yachts)}, from Galaxy Stella for 12 to Infinity and the Ecoventura yachts for 20. Lengths run from ${nRange(F.items)}, and each ship page lists her routes day by day.` },
+        { q: "Which Galápagos ships are Luxury and which First Class?", a: `As the operators label them: ${tiers.map(([t, n]) => `${t === "Naturalist" ? "Galaxy Cruises' naturalist yachts, with no class grade published" : t}: ${list([...n])}`).join(". ")}.` },
+        { q: "Why do most ships show fares but no dates?", a: "Most operators keep their dated departures in a live booking tool, so their pages print the fares as published, by year and length, with \"Ask us for dates\". James checks what is open for yours. Nothing is shown as a date that the operator has not published." },
+        { q: "Can we charter a whole Galápagos yacht?", a: "Yes. Ecoventura, Royal Galapagos, Galaxy Cruises and Vianatura all charter their yachts whole; Royal Galapagos and Vianatura publish whole-yacht prices on each ship page, and James quotes the others for your dates." },
+        { q: "How are the fares shown?", a: "Per person as each operator publishes them, cruise only. Some publish the occupancy basis and some do not, so the pages say \"as published\". Flights, the US$200 national park fee and the US$20 transit card are extra. Every fare is confirmed live when you ask." },
       ],
-      atlas: { routes: routesFor(cards), legend: "sea", dest: "galapagos", kicker: "THE GALÁPAGOS · BY SEA", title: "Where Do the Galápagos Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "sea", dest: "galapagos", kicker: "THE GALÁPAGOS · BY SEA", title: "Where Do the Galápagos Ships Sail?", line: "Every Galápagos route on one chart: pick a partner, then a ship and a route, and the globe sails it day by day." } };
   }
   if (w === "indonesia") {
     const s = ALIIKAI_SHIP;
@@ -151,3 +161,23 @@ export function watersHub(w: Waters): HubProps {
 }
 
 export const ALL_SHIPS_COUNT = SHIP_REGISTRY.length;
+
+/** The Galápagos fleet for the hub's FleetBrowser: each ship's partner, tier, guests, lengths, "from" and type,
+ *  read from her registry row and record. Partners in the order the house lists them. */
+export const GALAPAGOS_PARTNERS: { operator: string; partner: string; line: string }[] = [
+  { operator: "Royal Galapagos", partner: "royal-galapagos", line: "An Ecuadorian company sailing small yachts in the islands since 2012: five Luxury yachts, among them the trimaran Galapagos Horizon, and two First Class." },
+  { operator: "Galaxy Cruises", partner: "galaxy-cruises", line: "A Quito operator with an office in Puerto Ayora, sailing catamarans and yachts for 12 to 16 guests." },
+  { operator: "Ecoventura", partner: "ecoventura", line: "Three 20-guest expedition yachts, Relais & Châteaux members, on 7-night loops from San Cristóbal." },
+  { operator: "Vianatura", partner: "vianatura", line: "Owner of the First Class motor yacht Monserrat, refurbished in 2025, with routes that stack from 3 to 14 nights." },
+];
+export function galapagosFleet() {
+  const rows = shipsInWaters("galapagos").filter((r) => r.page);
+  const items = rows.map((r) => {
+    const s = SHIPS.find((e) => e.slug === r.slug)!.data;
+    const g = factOf(s, /guest/i);
+    const nights = [...new Set([...s.itineraries.map((i) => i.nights), ...(s.combinations ?? []).map((c) => c.nights)].filter((n): n is number => typeof n === "number"))].sort((a, b) => a - b);
+    return { slug: r.slug, operator: r.operator ?? "", tier: r.tier ?? "Luxury", guests: g ? Number(g.match(/\d+/)?.[0] ?? NaN) || null : null, nights, low: fromPrice(s), kind: r.kind, pathways: r.pathway ? [r.pathway.primary, ...r.pathway.secondary].map((p) => pathway(p)?.key ?? p) : [] };
+  });
+  const sections = GALAPAGOS_PARTNERS.filter((p) => items.some((i) => i.operator === p.operator)).map((p) => ({ operator: p.operator, partner: p.partner, line: p.line, tiers: TIER_ORDER.filter((t) => items.some((i) => i.operator === p.operator && i.tier === t)) }));
+  return { items, sections };
+}

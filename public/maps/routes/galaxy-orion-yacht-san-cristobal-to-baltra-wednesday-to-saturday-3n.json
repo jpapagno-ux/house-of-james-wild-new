@@ -1,0 +1,85 @@
+{
+ "id": "galaxy-orion-yacht-san-cristobal-to-baltra-wednesday-to-saturday-3n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary A: Southern Route, 3 nights aboard Galaxy Orion",
+ "subtitle": "3 nights · San Cristobal to Baltra, Wednesday to Saturday · Galaxy Orion",
+ "days": {
+  "1": "arrive San Cristobal airport, transfer to the yacht and Lobos Island",
+  "2": "Suarez Point and Gardner Bay",
+  "3": "Post Office Bay and Cormorant Point",
+  "4": "Charles Darwin Station, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.858,
+   "lng": -89.561,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.561,
+     -0.858
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

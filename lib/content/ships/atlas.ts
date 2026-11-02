@@ -17,8 +17,13 @@ const ALIIKAI: AtlasRoute[] = [
 export function shortRoute(it: ShipItinerary): string {
   if (it.short) return it.short;
   const n = it.nights ? ` · ${it.nights} nights` : "";
-  const letter = it.name.match(/^Itinerary ([A-Z])\b/);
+  const letter = it.name.match(/^Itinerary ([A-Z](?:\+[A-Z])*)(?![A-Za-z])/);
   if (letter) return `Route ${letter[1]}${n}`;
+  // Royal Galapagos names its weeks by length and letter ("8-day cruise A"): "8-day A · 7 nights".
+  const rg = it.name.match(/^(\d+-day) (?:\w+ )?cruise ([A-Z])\b/i);
+  if (rg) return `${rg[1]} ${rg[2]}${n}`;
+  const rgn = it.name.match(/^(\d+-day) (\w+) cruise\b/i);
+  if (rgn) return `${rgn[1]} ${rgn[2].toLowerCase()}${n}`;
   const head = it.direction.split(" (")[0].split(", ")[0];
   return `${head}${n}`;
 }
@@ -42,7 +47,7 @@ export function atlasRoutes(ships: ShipEntry[] = SHIPS): AtlasRoute[] {
     const group = fleet.length === 1 ? e.data.name : fleet.length === all.length ? `${e.reg.operator} fleet` : `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
     const members = fleet.length > 1 ? fleet.map((x) => ({ name: x.e.data.name, href: shipPath(x.e.slug) })) : undefined;
     out.push(...e.data.itineraries.filter((i) => i.days.length).map((i) => ({
-      id: shipRouteId(e.data, i), label: shortRoute(i), href: shipPath(e.slug), where: WATERS_HUBS[e.waters].name, group, groupHref: shipPath(e.slug), members,
+      id: shipRouteId(e.data, i), label: shortRoute(i), href: shipPath(e.slug), where: WATERS_HUBS[e.waters].name, group, groupHref: shipPath(e.slug), members, section: e.reg.operator ?? undefined,
     })));
   }
   return out;

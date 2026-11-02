@@ -8,3 +8,5 @@ export type { Partner } from "./types";
 export const PARTNER_LIST: Partner[] = [ANTARCTICA21];
 export const partnerBySlug = (slug: string) => PARTNER_LIST.find((p) => p.slug === slug);
 export const partnerPath = (slug: string) => `/partners/${slug}`;
+/** The partner whose fleet a ship sails in (her page links to the partner page). */
+export const partnerForShip = (ship: string) => PARTNER_LIST.find((p) => p.fleet?.includes(ship));

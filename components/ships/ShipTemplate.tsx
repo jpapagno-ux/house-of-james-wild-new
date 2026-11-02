@@ -39,7 +39,7 @@ export type ShipFrame = {
   nav: [string, string][];
   cta: { label: string; href: string; house?: boolean };
   overview: { quote?: string; answer: string; facts: [string, string][]; paragraphs: string[] };
-  itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string };
+  itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[] };
   /** The film slot; null when the vessel's own film already plays as the hero (never "Film coming soon" then). */
   film: { film: FilmData | undefined; poster: Img; credit?: string } | null;
   faqs: [string, string][];

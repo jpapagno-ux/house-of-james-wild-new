@@ -1,0 +1,121 @@
+{
+ "id": "ecogalaxy-catamaran-baltra-to-baltra-saturday-to-thursday-5n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary B: Western Route, 5 nights aboard EcoGalaxy",
+ "subtitle": "5 nights · Baltra to Baltra, Saturday to Thursday · EcoGalaxy",
+ "days": {
+  "1": "arrive Baltra airport, transfer to the catamaran and Santa Cruz Highlands",
+  "2": "Moreno Point and Elizabeth Bay",
+  "3": "Urbina Bay and Tagus Cove",
+  "4": "Espinoza Point, Fernandina and Albemarle Point, Isabela",
+  "5": "Egas Port and Espumilla Beach or Buccaneer Cove",
+  "6": "Black Turtle Cove, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Isabela",
+   "lat": -0.71,
+   "lng": -91.33,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -91.33,
+     -0.71
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Isabela",
+   "lat": -0.37,
+   "lng": -91.23,
+   "mode": "sea",
+   "path": [
+    [
+     -91.33,
+     -0.71
+    ],
+    [
+     -91.23,
+     -0.37
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Fernandina",
+   "lat": -0.2667,
+   "lng": -91.4417,
+   "mode": "sea",
+   "path": [
+    [
+     -91.23,
+     -0.37
+    ],
+    [
+     -91.4417,
+     -0.2667
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Santiago",
+   "lat": -0.245,
+   "lng": -90.86,
+   "mode": "sea",
+   "path": [
+    [
+     -91.4417,
+     -0.2667
+    ],
+    [
+     -90.86,
+     -0.245
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "mode": "sea",
+   "path": [
+    [
+     -90.86,
+     -0.245
+    ],
+    [
+     -90.33,
+     -0.49
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

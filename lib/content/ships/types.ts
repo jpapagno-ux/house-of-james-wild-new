@@ -5,6 +5,7 @@
 
 import type { PathwayId } from "@/lib/pathways";
 import { lowestFrom, type MonthDeparture } from "./months.ts";
+import { isPast, today } from "../../dates.ts";
 
 export type ShipImage = { url: string; alt: string; credit?: string };
 /** Wild Pathways on a ship (James, 1 Nov 2026): house classification, printed as the same chips as stay pages. */
@@ -17,6 +18,12 @@ export type ShipDay = { day: number; title: string; place: string; lat: number; 
 export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[]; short?: string; href?: string };
 /** `night`: the published rate per person per night (ships priced by the night, `rateBasis: "per-night"`). */
 export type ShipCabin = { type: string; count: number | null; size: string | null; beds: string | null; deck: string | null; features: string[]; image?: ShipImage | null; night?: number | null };
+/** A published fare card (James, 2 Nov 2026): where an operator publishes fares by year and length but no
+ *  dated departures we can read (Royal Galapagos, Galaxy Cruises, Vianatura), the page prints the fares as
+ *  published, by year and length, with "Ask us for dates". Never a made-up date. `charter`: the whole-yacht
+ *  price for that length, when published. A year drops out once it has passed (lib/dates.ts). */
+export type PublishedFareRow = { length: string; nights: number | null; prices: Record<string, number>; charter?: number | null; note?: string };
+export type PublishedFares = { year: string; rows: PublishedFareRow[] };
 export type ShipDeckPlan = { deck: string; image: ShipImage; cabins: string[] };
 /** A departure, or (A&K) a season band: `date` to `dateTo`, one fare for every sailing in it. */
 // priceBasis "package": the fare is for a whole A&K land and cruise journey (never a cruise fare);
@@ -87,6 +94,16 @@ export type ShipRecord = {
   proofLine?: string;
   /** Departures known only by month (lib/content/ships/months.ts), until exact dates are filed. */
   monthly?: MonthDeparture[];
+  /** Fares as published, by year and length (see PublishedFares). */
+  published?: PublishedFares[];
+  /** A line under the published fares (what the operator does not publish). */
+  publishedNote?: string;
+  /** The occupancy basis as the operator gives it ("per person, as published" where it is not stated). */
+  fareBasis?: string;
+  /** Route combinations the operator sells (Monserrat's A+B and so on). */
+  combinations?: { name: string; nights: number }[];
+  /** Shown in place of the day by day when the operator publishes none we can read. */
+  routesNote?: string;
 };
 
 /** The rate basis in words, for Dates & rates and the cabin cards. */
@@ -98,21 +115,30 @@ const prices = (d: ShipDeparture) => Object.values(d.prices).filter((p): p is nu
 const open = (d: ShipDeparture) => !/full|sold/i.test(d.status ?? "");
 
 /** Lowest published cruise fare per person across open departures (all if none open). Package journeys never count. */
-export function fromPrice(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): number | null {
+/** Published fare years still current (a year counts to 31 December, lib/dates.ts). */
+export const currentPublished = (s: { published?: PublishedFares[] }, on: string = today()) => (s.published ?? []).filter((y) => !isPast(y.year, on));
+/** Lowest published per person fare across the years still current; whole-yacht prices never count. */
+export function publishedFrom(s: { published?: PublishedFares[] }, cabin?: string): number | null {
+  const all = currentPublished(s).flatMap((y) => y.rows.flatMap((r) => Object.entries(r.prices).filter(([k]) => !cabin || k === cabin).map(([, v]) => v))).filter((v) => v > 0);
+  return all.length ? Math.min(...all) : null;
+}
+
+export function fromPrice(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; published?: PublishedFares[] }): number | null {
   const cruise = cruiseOnly(s);
   if (!cruise.length && s.monthly?.length) return lowestFrom(s.monthly);
+  if (!cruise.length && s.published?.length) return publishedFrom(s);
   const pool = cruise.filter(open).length ? cruise.filter(open) : cruise;
   const all = pool.flatMap(prices);
   return all.length ? Math.min(...all) : null;
 }
 
 /** Lowest published fare per person for one cabin type, from the departures. */
-export function cabinFrom(s: Pick<ShipRecord, "departures"> & Partial<Pick<ShipRecord, "cabins" | "rateBasis">>, type: string): number | null {
+export function cabinFrom(s: Pick<ShipRecord, "departures"> & Partial<Pick<ShipRecord, "cabins" | "rateBasis" | "published">>, type: string): number | null {
   // Priced by the night: the cabin's own published nightly rate.
   if (s.rateBasis === "per-night") return s.cabins?.find((c) => c.type === type)?.night ?? null;
   // A cabin can be priced by deck ("Standard Cabin (Nile Deck)"): its lowest deck is its "from".
   const all = cruiseOnly(s).flatMap((d) => Object.entries(d.prices).filter(([k]) => k === type || k.startsWith(`${type} (`)).map(([, p]) => p)).filter((p): p is number => typeof p === "number" && p > 0);
-  return all.length ? Math.min(...all) : null;
+  return all.length ? Math.min(...all) : publishedFrom(s, type);
 }
 
 /** Cabin types that carry a price on at least one departure, in cabin order. */
@@ -164,24 +190,28 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 /** What a card or glance bar says about price: a cruise fare, an A&K journey fare (labelled), or on request. */
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
-export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[] }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; published?: PublishedFares[]; fareBasis?: string }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
   // Month-level departures only (dates in the operator's booking tool): the lowest published "from".
   const m = !s.departures.length && s.monthly?.length ? lowestFrom(s.monthly) : null;
   if (m) return { kind: "cruise", label: "From", amount: `US$${m.toLocaleString("en-US")}`, basis: "per person, double cabin, as the operator shows it" };
+  // Fares published by year and length, no dated departures: the lowest, on the operator's own basis.
+  const pf = !s.departures.length ? publishedFrom(s) : null;
+  if (pf) return { kind: "cruise", label: "From", amount: `US$${pf.toLocaleString("en-US")}`, basis: `${s.fareBasis ?? "per person, as published"}, cruise only` };
   // No published (or no remaining) dates or fares: "Ask us", never an invented "from".
   if (!s.departures.length) return { kind: "tba", label: "Rates", amount: "Ask us", basis: "no published dates or fares to show; ask James" };
   const f = fromPrice(s);
-  if (f) return { kind: "cruise", label: "From", amount: `US$${f.toLocaleString("en-US")}`, basis: "per person, cruise only, two sharing" };
+  if (f) return { kind: "cruise", label: "From", amount: `US$${f.toLocaleString("en-US")}`, basis: s.fareBasis ? `${s.fareBasis}, cruise only` : "per person, cruise only, two sharing" };
   const j = journeyFrom(s);
   if (j) return { kind: "journey", label: "Journeys from", amount: `US$${j.price.toLocaleString("en-US")}`, basis: `per person for A&K's full ${j.name} journey, not the cruise alone` };
   return { kind: "request", label: "Rates", amount: "On request", basis: "private charter, priced on enquiry" };
 }
 
 /** "4 to 7 nights" or "4 nights". */
-export function nightsLabel(s: Pick<ShipRecord, "itineraries"> & Partial<Pick<ShipRecord, "departures">>): string {
-  // Sailings that carry their own length (Aliikai) give the true range; else the itineraries.
+export function nightsLabel(s: Pick<ShipRecord, "itineraries"> & Partial<Pick<ShipRecord, "departures" | "combinations">>): string {
+  // Sailings that carry their own length (Aliikai) give the true range; else the itineraries and
+  // any combinations the operator sells (Monserrat's routes stack to 14 nights).
   const dep = (s.departures ?? []).map((d) => d.nights).filter((x): x is number => typeof x === "number");
-  const n = [...new Set(dep.length ? dep : s.itineraries.map((i) => i.nights).filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
+  const n = [...new Set(dep.length ? dep : [...s.itineraries.map((i) => i.nights), ...(s.combinations ?? []).map((c) => c.nights)].filter((x): x is number => typeof x === "number"))].sort((a, b) => a - b);
   if (!n.length) return "";
   return n.length === 1 ? `${n[0]} nights` : `${n[0]} to ${n[n.length - 1]} nights`;
 }

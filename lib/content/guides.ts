@@ -323,6 +323,106 @@ export const GUIDES: Record<string, Guide> = {
     sources: SOURCES_KOMODO,
   },
 
+  // The Galápagos: a place inside Ecuador & Galápagos (James approved, 2 Nov 2026). Facts only from UNESCO, the
+  // Galápagos National Park Directorate (galapagos.gob.ec, which collects the entry fee and sets the visit rules),
+  // the Galápagos Government Council and Ecuador's Ministry of Tourism (ecuador.travel), as filed in the Galápagos
+  // review; no month-by-month wildlife calendar is printed because none of those pages gives one. The two stays
+  // are the partners' own records; the founder has not been yet (no founder marks). IMAGE FOLLOW-UP: no Galápagos
+  // landscape photography of the house's own yet, so the hero borrows Galapagos Safari Camp's frames, credited.
+  galapagos: {
+    slug: "galapagos", region: "south-america", country: "ecuador-galapagos", parent: "ecuador-galapagos", name: "Galápagos", path: "/destinations/south-america/ecuador-galapagos/galapagos",
+    theme: "sea", zoom: "galapagos", stays: ["galapagos-safari-camp", "pikaia-lodge"],
+    proofEyebrow: "On the founder's list · not yet visited",
+    seo: {
+      title: "Galápagos Islands Guide: Park Fee, When to Go, Getting There",
+      description: "The Galápagos, Ecuador: the first World Heritage Site (1978). The US$200 park fee and US$20 transit card, the two seasons, flights from Quito and Guayaquil, and where to stay and sail.",
+      keywords: ["Galapagos travel guide", "Galapagos park fee", "Galapagos transit control card", "best time to visit the Galapagos", "how to get to the Galapagos", "Galapagos lodge", "Galapagos yacht"],
+    },
+    eyebrow: "Destinations · South America · Ecuador & Galápagos",
+    h1: "Galápagos",
+    tagline: "Volcanic islands about 1,000 km off Ecuador, where three ocean currents meet: the first place on the World Heritage List",
+    slides: [],
+    slidesFromStay: { slug: "galapagos-safari-camp", alt: "The Santa Cruz highlands from Galapagos Safari Camp, Galápagos", credit: "Photograph courtesy of Galapagos Safari Camp" },
+    answer: "The Galápagos are Ecuador's volcanic islands, about 1,000 km off the coast where three ocean currents meet; with the City of Quito they were the first places inscribed on the World Heritage List, in 1978. You reach them only by domestic flight from Quito or Guayaquil, to Baltra or San Cristóbal. Foreign visitors pay a US$200 park entry fee (US$100 under 12) on arrival and buy a US$20 Transit Control Card before flying. The islands are a year-round destination: December to May brings warm, clear water for snorkelling; June to November is cooler, and Ecuador's tourism ministry calls it the best time for sharks, penguins and seabirds. The house offers both ways to see them: a small yacht between the islands, or a lodge on Santa Cruz with day boats.",
+    facts: [
+      ["Where", "About 1,000 km off the coast of Ecuador, at the confluence of three ocean currents (UNESCO)"],
+      ["Protected", "UNESCO World Heritage Site since 1978; national park since 1959 over 97% of the land; marine reserve since 1986, 133,000 km² since 1998"],
+      ["Park entry fee", "US$200 for foreign visitors 12 and over, US$100 under 12, under 2s free; paid to park rangers on arrival (Galápagos National Park Directorate); confirmed when you book"],
+      ["Transit Control Card", "US$20, from the Galápagos Government Council before you fly; keep it until you leave"],
+      ["Fly into", "Seymour Airport (GPS) on Baltra or San Cristóbal (SCY), from Quito or Guayaquil only"],
+      ["Best time", "Year-round: warm, clear water December to May; cooler June to November"],
+      ["Visitor sites", "176 in the national park: 91 marine and 85 on land"],
+      ["In the Ledger", "Partner-vetted yachts and lodges · not yet founder-visited"],
+    ],
+    proof: "James hasn't been to the Galápagos yet. Every yacht and lodge here is vetted and approved by the partners who run them, with their own photographs, and James plans to sail the islands soon; the page says so plainly.",
+    months: [
+      { area: "In the water", note: "Warm, clear water for snorkelling, December to May (Ministry of Tourism)", months: M("BBBBBggggggB") },
+      { area: "Wildlife at sea", note: "Cooler, Humboldt Current: sharks, penguins and seabirds, June to November (Ministry of Tourism)", months: M("gggggBBBBBBg") },
+    ],
+    airports: [["Seymour Airport (GPS), Baltra", "Where most yachts board; a bus and a barge across the Itabaca Channel link it to Santa Cruz"], ["San Cristóbal (SCY)", "Beside Puerto Baquerizo Moreno; Ecoventura's yachts sail from here"], ["Quito (UIO) and Guayaquil (GYE)", "The only airports with flights to the islands"]],
+    transfers: [["Quito → Galápagos", "About 2.5 to 3 hours by air, with a stop"], ["Guayaquil → Galápagos", "About 1.5 to 2 hours by air"], ["Baltra → Santa Cruz", "Bus and barge across the Itabaca Channel; cruise guests are met by their naturalist guide"]],
+    highlights: [
+      { title: "The first World Heritage Site", line: "1978", body: "With the City of Quito, the Galápagos were the first two properties ever inscribed on UNESCO's World Heritage List." },
+      { title: "Where three currents meet", line: "The ocean", body: "UNESCO describes the islands as lying at the confluence of three ocean currents, about 1,000 km off the Ecuadorian coast." },
+      { title: "Darwin's islands", line: "Evolution", body: "Darwin's visit in 1835 inspired his theory of evolution by natural selection, in UNESCO's words." },
+      { title: "127 islands, islets and rocks", line: "The archipelago", body: "Nineteen of them large, per UNESCO; the national park covers 97% of the land." },
+      { title: "A marine reserve", line: "Below the surface", body: "Created in 1986 and extended to 133,000 km² in 1998, per UNESCO." },
+      { title: "176 visitor sites", line: "On land and at sea", body: "The Galápagos National Park Directorate lists 91 marine sites and 85 on land." },
+    ],
+    firstTime: {
+      title: "Before You Go: Fees, Cards and the Park's Rules",
+      intro: "The Galápagos are a national park, and arriving is a short checklist. These are the official rules, as the Park Directorate and the Government Council publish them.",
+      points: [
+        ["The park fee", "US$200 for foreign visitors 12 and over, US$100 under 12 and free for under 2s, paid to park rangers at Baltra or San Cristóbal; half goes to managing and conserving the protected areas."],
+        ["The Transit Control Card", "US$20, from the Galápagos Government Council at Quito or Guayaquil airport (the tourism ministry says it is bought online and presented there). Keep it until you leave."],
+        ["Biosecurity", "Checked luggage is inspected at Quito or Guayaquil before check-in, carry-on is checked for organic products on arrival, and the cabin is sprayed before landing."],
+        ["Two metres", "Keep two metres from wildlife, cameras included, and never touch or feed the animals."],
+        ["Take nothing, stay on the trail", "Take nothing from the islands, not even stones or sand, keep to marked trails, and travel only with authorised operators."],
+      ],
+    },
+    suits: [
+      { who: "Families", line: "A tented camp on Santa Cruz with no minimum age, and yachts that take children from 6 or of any age on a charter.", href: "/stays/galapagos-safari-camp", label: "Galapagos Safari Camp" },
+      { who: "Couples", line: "A lodge on a crater rim with its own yacht by day, or a yacht with a balcony on every cabin.", href: "/stays/pikaia-lodge", label: "Pikaia Lodge" },
+      { who: "Snorkellers", line: "December to May, when the ministry says the water is warm and clear." },
+      { who: "Wildlife lovers", line: "June to November, which the ministry calls the best time for sharks, penguins and seabirds.", href: "/voyages/galapagos", label: "Galápagos yachts" },
+    ],
+    howTo: {
+      title: "How to See the Galápagos",
+      intro: "Two ways in: sleep aboard a small yacht that moves between islands, or stay on Santa Cruz and see them by day boat. Many do both.",
+      options: [
+        { name: "A small yacht, 3 to 14 nights", body: "Yachts and catamarans from four partners, for 12 to 20 guests, sailing between the islands with naturalist guides.", href: "/voyages/galapagos", label: "Every Galápagos ship" },
+        { name: "A lodge on Santa Cruz", body: "Galapagos Safari Camp or Pikaia Lodge in the highlands, with day boats to other islands; Pikaia has its own yacht.", href: "#stays", label: "The stays the house selected" },
+        { name: "Land, then sea", body: "A few nights on Santa Cruz, then a yacht that boards at Baltra, the airport both lodges are reached from.", href: "/voyages/galapagos#island-stays-h", label: "How the pairing works" },
+        { name: "Plan it with James", body: "Tell the house what you want from the islands and it will set the season, the yacht and the lodge.", href: "/plan?place=Gal%C3%A1pagos", label: "Plan it with James" },
+      ],
+    },
+    onwardEyebrow: "Continue through Ecuador",
+    onward: [
+      { name: "Ecuador & Galápagos", href: "/destinations/south-america/ecuador-galapagos", line: "The Andes, Quito and the Amazon on the mainland" },
+      { name: "The Amazon by river", href: "/voyages/amazon", line: "Small river ships in Ecuador, Peru and Brazil" },
+    ],
+    voyageWaters: [],
+    faqs: [
+      { q: "How much is the Galápagos entry fee?", a: "US$200 for foreign visitors 12 and over and US$100 under 12, paid to park rangers on arrival at Baltra or San Cristóbal. Under 2s are free. The Galápagos National Park Directorate sets it; the house confirms the current amount when you book." },
+      { q: "What is the Galápagos Transit Control Card?", a: "A US$20 card from the Galápagos Government Council, issued at Quito or Guayaquil airport before your flight. Keep it until you leave the islands." },
+      { q: "How do you get to the Galápagos?", a: "Only by domestic flight from Quito or Guayaquil, to Baltra (Seymour Airport) or San Cristóbal: about 2.5 to 3 hours from Quito, with a stop, and 1.5 to 2 hours from Guayaquil." },
+      { q: "When is the best time to visit the Galápagos?", a: "Year-round. December to May brings warm, clear water for snorkelling; June to November is cooler, and Ecuador's tourism ministry calls it the best time for sharks, penguins and seabirds." },
+      { q: "What are the main Galápagos park rules?", a: "Keep two metres from wildlife, never touch or feed animals, take nothing away, stay on marked trails and travel only with authorised operators, as the Galápagos National Park Directorate sets out." },
+      { q: "Why are the Galápagos a World Heritage Site?", a: "They were among the first two properties ever inscribed, in 1978: islands about 1,000 km offshore where three ocean currents meet, whose wildlife inspired Darwin's theory of evolution." },
+    ],
+    geo: { lat: -0.7, lng: -90.5 },
+    sources: [
+      { title: "UNESCO World Heritage Centre: Galápagos Islands", url: "https://whc.unesco.org/en/list/1/" },
+      { title: "UNESCO: the first World Heritage properties, 1978", url: "https://whc.unesco.org/en/events/1468/" },
+      { title: "Galápagos National Park Directorate: entry fee", url: "https://galapagos.gob.ec/tributo-de-ingreso/" },
+      { title: "Galápagos National Park Directorate: arriving in the islands (fee, Transit Control Card, biosecurity)", url: "https://galapagos.gob.ec/informacion-de-interes-para-la-llegada-a-las-islas/" },
+      { title: "Galápagos National Park Directorate: the visit rules campaign", url: "https://galapagos.gob.ec/campana-yo-si-cumplo-promueve-el-respeto-de-las-reglas-de-visita-en-galapagos/" },
+      { title: "Galápagos National Park Directorate: visitor sites", url: "http://www.galapagos.gob.ec/en/sitios-de-visita/" },
+      { title: "Ecuador Ministry of Tourism: how to get to the Galápagos and when to go", url: "https://ecuador.travel/como-llegar-a-galapagos/" },
+      { title: "Ecuador Ministry of Tourism: the Galápagos", url: "https://onlyin.ecuador.travel/galapagos/" },
+    ],
+  },
+
   // Rapa Nui: the first destination-first place under a library country (Chile → Rapa Nui →
   // Nayara Hangaroa). Facts from UNESCO and Chile's own tourism board; the stay's photographs are
   // the property's (library export). IMAGE FOLLOW-UP: no Rapa Nui landscape photography in the

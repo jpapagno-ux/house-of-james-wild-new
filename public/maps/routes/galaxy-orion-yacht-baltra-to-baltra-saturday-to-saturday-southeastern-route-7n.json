@@ -1,0 +1,157 @@
+{
+ "id": "galaxy-orion-yacht-baltra-to-baltra-saturday-to-saturday-southeastern-route-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary C+A: Southeastern Route, 7 nights aboard Galaxy Orion",
+ "subtitle": "7 nights · Baltra to Baltra, Saturday to Saturday · Galaxy Orion",
+ "days": {
+  "1": "arrive Baltra airport, transfer to the yacht and Bachas Beach",
+  "2": "Bartolome and Sullivan Bay, Santiago",
+  "3": "South Plaza and Santa Fe",
+  "4": "Witch Hill and Pitt Point",
+  "5": "San Cristobal Highlands and Lobos Island",
+  "6": "Suarez Point and Gardner Bay",
+  "7": "Post Office Bay and Cormorant Point",
+  "8": "Charles Darwin Station, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Bartolome",
+   "lat": -0.2833,
+   "lng": -90.55,
+   "mode": "sea",
+   "path": [
+    [
+     -90.33,
+     -0.49
+    ],
+    [
+     -90.55,
+     -0.2833
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "South Plaza",
+   "lat": -0.5833,
+   "lng": -90.1667,
+   "mode": "sea",
+   "path": [
+    [
+     -90.55,
+     -0.2833
+    ],
+    [
+     -90.1667,
+     -0.5833
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "San Cristobal",
+   "lat": -0.71,
+   "lng": -89.26,
+   "mode": "sea",
+   "path": [
+    [
+     -90.1667,
+     -0.5833
+    ],
+    [
+     -89.26,
+     -0.71
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.26,
+     -0.71
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

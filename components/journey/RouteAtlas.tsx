@@ -14,7 +14,8 @@ import { routeFigure } from "@/lib/content/ships/routes";
 // (search engines, no-JS readers, and the fallback if the chart can't load).
 
 /** `group` (a ship): the links under the chart list by group, so many routes stay readable. */
-export type AtlasRoute = { id: string; label: string; href: string; where: string; group?: string; groupHref?: string; members?: { name: string; href: string }[] };
+/** `section` (an operator): on a busy atlas the picker first offers the operators, then their ships. */
+export type AtlasRoute = { id: string; label: string; href: string; where: string; group?: string; groupHref?: string; members?: { name: string; href: string }[]; section?: string };
 /** Which legend the chart wears: river charts never say "By land / By sea" (voyages audit, 1 Nov 2026). */
 export type AtlasLegend = "land-sea" | "river" | "sea" | "river-sea";
 
@@ -62,7 +63,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
   found.forEach(({ r }, i) => {
     if (!r.group) return;
     let g = groups.find((x) => x.label === r.group);
-    if (!g) { g = { label: r.group, href: r.groupHref ?? r.href, members: r.members, routes: [] }; groups.push(g); }
+    if (!g) { g = { label: r.group, href: r.groupHref ?? r.href, members: r.members, section: r.section, routes: [] }; groups.push(g); }
     g.routes.push({ key: `R${i}`, label: r.label });
   });
 

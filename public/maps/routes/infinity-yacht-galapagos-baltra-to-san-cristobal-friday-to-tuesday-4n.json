@@ -1,0 +1,103 @@
+{
+ "id": "infinity-yacht-galapagos-baltra-to-san-cristobal-friday-to-tuesday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "5-day cruise A: Baltra to San Cristobal, 4 nights aboard Infinity",
+ "subtitle": "4 nights · Baltra to San Cristobal, Friday to Tuesday · Infinity",
+ "days": {
+  "1": "arrive Baltra, transfer to the first excursion and El Chato Tortoise Reserve",
+  "2": "Dragon Hill and Bachas Beach",
+  "3": "Post Office Bay and Cormorant Point or Devil's Crown",
+  "4": "Suarez Point and Gardner Bay and Islet, Osborn Islet",
+  "5": "Gianni Arismendy Interpretation Center, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Santa Cruz",
+   "lat": -0.54,
+   "lng": -90.45,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.45,
+     -0.54
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -90.45,
+     -0.54
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

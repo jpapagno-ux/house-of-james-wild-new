@@ -6,7 +6,8 @@
 const RULES: [string, RegExp][] = [
   ["Families & generations", /\bfamil|\bkids?\b|children|generation|interleading|multi-gen/i],
   ["Couples & honeymooners", /honeymoon|\bcouples?\b|romanc|romantic|adults[- ]only/i],
-  ["Big Five safari", /big[- ]?(five|5)|leopard|\blions?\b|game drive|safari/i],
+  // "Safari Tent" is a kind of tent, not a safari (Galapagos Safari Camp), so it earns nothing on its own.
+  ["Big Five safari", /big[- ]?(five|5)|leopard|\blions?\b|game drive|safari(?!\s+tents?\b)/i],
   ["Wellness seekers", /\bspa\b|wellness|yoga|hot spring|restor/i],
   ["Food & wine lovers", /\bwine|vineyard|culinar|gastronom|\bchef|cuisine|tasting/i],
   ["Private groups (exclusive use)", /exclusive[- ]use|private villa|residence|sleeps up to|whole (house|villa)|groups? of/i],
@@ -17,7 +18,10 @@ const RULES: [string, RegExp][] = [
 ];
 const TAG: Record<string, string> = { family: "Families & generations", honeymoon: "Couples & honeymooners", couples: "Couples & honeymooners", wellness: "Wellness seekers", solo: "Solo travellers", adventure: "Walkers & the active", conservation: "Conservation-minded", food: "Food & wine lovers", wildlife_photography: "Photographers" };
 
-export function suitedTo(text: string, tags: string[] = [], max = 4): string[] {
+/** `name`: the place's own name, taken out of the text first, so a name never earns a type on its own
+ *  ("Galapagos Safari Camp" is not a Big Five safari). */
+export function suitedTo(text: string, tags: string[] = [], max = 4, name?: string): string[] {
+  if (name) text = text.split(name).join(" ");
   const out: string[] = [];
   for (const t of tags) { const m = TAG[t.toLowerCase()]; if (m && !out.includes(m)) out.push(m); }
   const scored = RULES.map(([name, re]) => [name, (text.match(new RegExp(re.source, "gi")) ?? []).length] as const).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]);

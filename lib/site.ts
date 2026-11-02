@@ -259,6 +259,8 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/europe/greece/dodecanese", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/europe/greece/ionian-islands", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/europe/greece/zagori", priority: 0.8, changeFrequency: "monthly" },
+  // The Galápagos, a place inside Ecuador & Galápagos (James approved, 2 Nov 2026).
+  { path: "/destinations/south-america/ecuador-galapagos/galapagos", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
   // The Nile hub and the A&K Sanctuary ships: approved by James, 1 Nov 2026.
@@ -293,6 +295,19 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/ecoventura-evolve-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/alya-catamaran-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/sirius-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  // The Galápagos portfolio: twelve more ship pages (James approved, 2 Nov 2026).
+  { path: "/voyages/ships/galapagos-horizon-trimaran", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/infinity-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/new-galapagos-sea-star", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/natural-paradise-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/grand-majestic-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galapagos-angel-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/calipso-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/monserrat-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-stella-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/ecogalaxy-catamaran", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-bonita-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-orion-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
@@ -309,6 +324,11 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/polar/falklands-south-georgia", priority: 0.7, changeFrequency: "weekly" },
   { path: "/voyages/polar/falklands-south-georgia-antarctica", priority: 0.7, changeFrequency: "weekly" },
   { path: "/partners/antarctica21", priority: 0.6, changeFrequency: "monthly" },
+  // The Galápagos partners (James approved, 2 Nov 2026).
+  { path: "/partners/royal-galapagos", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/galaxy-cruises", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/ecoventura", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/vianatura", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },
   // Journal post and House Sessions: approved 27 Oct 2026.

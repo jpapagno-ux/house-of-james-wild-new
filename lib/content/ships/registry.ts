@@ -22,7 +22,11 @@ export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
 export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
-export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht";
+export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran";
+/** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
+ *  "Naturalist" is Galaxy Cruises' own label where it publishes no class grade (Galaxy Bonita, Galaxy Orion). */
+export type ShipTier = "Luxury" | "First Class" | "Naturalist";
+export const TIER_ORDER: ShipTier[] = ["Luxury", "First Class", "Naturalist"];
 
 /** What a guest can do on her voyages, as her operator's own material describes it. */
 export type Activity = "wildlife" | "diving" | "snorkelling" | "kayaking" | "hiking" | "culture" | "slow" | "sailing";
@@ -69,6 +73,8 @@ export type RegistryShip = {
   staySlug?: string;
   /** Search and category facts (see ShipTraits); absent until her record is filed. */
   traits?: ShipTraits;
+  /** The operator's class label, where it gives one (ShipTier). */
+  tier?: ShipTier;
 };
 
 export const SHIP_REGISTRY: RegistryShip[] = [
@@ -130,37 +136,75 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   // The Galapagos (filed 1 Nov 2026). Ecoventura: Off the Map because Ecoventura calls route B "remote and
   // pristine"; whole-yacht charter published. Galaxy Cruises: charters published; no Off the Map.
   { slug: "ecoventura-origin-yacht", name: "Origin", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-origin-yacht",
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-origin-yacht", tier: "Luxury",
     // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
     // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
     // Minimum child age differs between Ecoventura's own pages, so it is left out.
     traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "ecoventura-theory-yacht", name: "Theory", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-theory-yacht",
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-theory-yacht", tier: "Luxury",
     // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
     // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
     // Minimum child age differs between Ecoventura's own pages, so it is left out.
     traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "ecoventura-evolve-yacht", name: "Evolve", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-evolve-yacht",
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-evolve-yacht", tier: "Luxury",
     // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
     // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
     // Minimum child age differs between Ecoventura's own pages, so it is left out.
     traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "alya-catamaran-galapagos", name: "Alya", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "alya-catamaran-galapagos",
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "alya-catamaran-galapagos", tier: "Luxury",
     // Galaxy Cruises: over 6 on shared departures; single occupancy 1.5 times the sharing rate; snorkelling gear, kayaks and paddleboards; a naturalist guide; lava-field walks.
     traits: { minChildAge: 7, childNote: "Over 6 on shared departures; any age on a charter", single: { kind: "percent", pct: 50, note: "Single occupancy 1.5 times the sharing rate" }, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos",
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos", tier: "Luxury",
     // Galaxy Cruises: over 6 on shared departures; single occupancy 1.5 times the sharing rate; snorkelling gear, kayaks and paddleboards; two naturalist guides.
     traits: { minChildAge: 7, childNote: "Over 6 on shared departures; any age on a charter", single: { kind: "percent", pct: 50, note: "Single occupancy 1.5 times the sharing rate" }, activities: ["wildlife", "snorkelling", "kayaking"] } },
 
+  // The Galápagos portfolio (James, 2 Nov 2026), filed from each operator's own site; photographs partner
+  // approved, credited to the operator. Tiers as the operators label them. Royal Galapagos publishes a 50%
+  // single supplement, a 20% child discount with no minimum age, and whole-yacht charters for every yacht;
+  // Galaxy Cruises' terms take children over 6 on shared departures and any age on a full charter; Vianatura
+  // takes all ages and charges a single supplement it does not publish. Calipso's diving weeks are held for
+  // James's diving site, so she is filed as a naturalist yacht only.
+  ...([
+    ["galapagos-horizon-trimaran", "Galapagos Horizon", "trimaran", "Luxury", ["PATH-02"], { hiking: true }],
+    ["infinity-yacht-galapagos", "Infinity", "yacht", "Luxury", ["PATH-02", "PATH-06"], { connecting: true, hiking: true }],
+    ["new-galapagos-sea-star", "New Galapagos Sea Star", "yacht", "Luxury", ["PATH-02", "PATH-06"], { connecting: true, hiking: false }],
+    ["natural-paradise-yacht", "Natural Paradise", "yacht", "Luxury", ["PATH-02"], { hiking: true }],
+    ["grand-majestic-yacht", "Galapagos Grand Majestic", "yacht", "Luxury", ["PATH-02", "PATH-07"], { hiking: true }],
+    ["galapagos-angel-yacht", "Galapagos Angel", "motor-yacht", "First Class", ["PATH-02"], { hiking: true }],
+    ["calipso-yacht-galapagos", "Calipso", "yacht", "First Class", ["PATH-02"], { hiking: true }],
+  ] as const).map(([slug, name, kind, tier, secondary, x]): RegistryShip => ({
+    slug, name, operator: "Royal Galapagos", kind, types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: [...secondary] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, tier,
+    traits: { single: { kind: "percent", pct: 50, note: "Royal Galapagos publishes a 50% single supplement" }, ...("connecting" in x ? { connecting: true } : {}), activities: ["wildlife", "snorkelling", "kayaking", ...(x.hiking ? (["hiking"] as const) : [])] },
+  })),
+  // vianatura.com: all ages; a single supplement is charged but not published (its two single cabins carry none, per
+  // Vianatura's blog); snorkel gear, kayaks and paddleboards.
+  { slug: "monserrat-yacht-galapagos", name: "Monserrat", operator: "Vianatura", kind: "motor-yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, tier: "First Class",
+    traits: { minChildAge: 0, childNote: "All ages; 15% off under 12 travelling with two adults", single: { kind: "applies", note: "Vianatura charges a single supplement it does not publish; its two single cabins carry none, per its blog" }, activities: ["wildlife", "snorkelling", "kayaking"] } },
+  // galaxycruises.com: over 6 on shared departures, any age on a full charter (EcoGalaxy's own page says from 6);
+  // snorkel gear and kayaks. No single rate is published on these yachts' pages.
+  ...([
+    ["galaxy-stella-yacht", "Galaxy Stella", "motor-yacht", "Luxury", 7, "Over 6 on shared departures; any age on a charter"],
+    ["ecogalaxy-catamaran", "EcoGalaxy", "catamaran", "First Class", 6, "From 6, per Galaxy's EcoGalaxy page (its terms say over 6 on shared departures); any age on a charter"],
+    ["galaxy-bonita-yacht", "Galaxy Bonita", "motor-yacht", "Naturalist", 7, "Over 6 on shared departures; any age on a charter"],
+    ["galaxy-orion-yacht", "Galaxy Orion", "yacht", "Naturalist", 7, "Over 6 on shared departures; any age on a charter"],
+  ] as const).map(([slug, name, kind, tier, age, childNote]): RegistryShip => ({
+    slug, name, operator: "Galaxy Cruises", kind, types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, tier,
+    traits: { minChildAge: age, childNote, activities: ["wildlife", "snorkelling", "kayaking"] },
+  })),
   // Via Natura's Hermes (filed 2 Nov 2026 from vianatura.com): the Galapagos rule, Where the Wild Lives first and
   // Between Tides second, plus A Place of Our Own for the published whole-vessel charter (up to 20; from US$134,805
   // for 3 nights in 2026). No Off the Map: Via Natura calls no Hermes route remote. The Exceptional Few No. 002.
-  { slug: "hermes-galapagos", name: "Hermes", operator: "Via Natura", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-07"] }, charter: { whole: true, from: 134805, basis: "voyage" }, rateBasis: "per-cruise", status: "sailing", page: true,
+  { slug: "hermes-galapagos", name: "Hermes", operator: "Vianatura", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-07"] }, charter: { whole: true, from: 134805, basis: "voyage" }, rateBasis: "per-cruise", status: "sailing", page: true, tier: "Luxury",
+    // Operator written "Vianatura" here, as on its partner page and photo credits (it styles itself Via Natura too), so
+    // Hermes and Monserrat sit together on the hub, the atlas and as sisters. Tier: Luxury, as vianatura.com labels her.
     // vianatura.com: no minimum age (15% off a child under 12 sharing with two adults); single supplement 75% on a King/Twin
     // Suite in 2026, none in the two Single Suites; snorkel gear, kayaks and paddleboards; island walks; a spa with a hammam.
     traits: { childNote: "No minimum age published; 15% off a child under 12 sharing with two adults", single: { kind: "percent", pct: 75, note: "75% on a King/Twin Suite in 2026 (2027 not published); the two Single Suites sell at the standard fare" }, activities: ["wildlife", "snorkelling", "kayaking", "hiking", "slow"] } },

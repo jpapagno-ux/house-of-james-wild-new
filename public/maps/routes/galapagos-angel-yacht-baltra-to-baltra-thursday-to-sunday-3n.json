@@ -1,0 +1,85 @@
+{
+ "id": "galapagos-angel-yacht-baltra-to-baltra-thursday-to-sunday-3n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "4-day cruise A: Baltra round trip, 3 nights aboard Galapagos Angel",
+ "subtitle": "3 nights · Baltra to Baltra, Thursday to Sunday · Galapagos Angel",
+ "days": {
+  "1": "arrive Baltra, transfer to the yacht and Santa Cruz Highlands",
+  "2": "Gardner Bay and Islet, Osborn Islet and Suarez Point",
+  "3": "Santa Fe and South Plaza",
+  "4": "Black Turtle Cove, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Santa Fe",
+   "lat": -0.82,
+   "lng": -90.06,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.06,
+     -0.82
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "mode": "sea",
+   "path": [
+    [
+     -90.06,
+     -0.82
+    ],
+    [
+     -90.33,
+     -0.49
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

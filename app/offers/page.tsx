@@ -6,6 +6,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import { OfferCard } from "@/components/ledger/OfferPanel";
 import { TimeMark } from "@/components/ledger/VolumeKit";
+import HorizonMark from "@/components/ledger/HorizonMark";
 import { MEANING, hubOffers, offerSchema, sections, type HubOffer } from "@/lib/content/offers/hub";
 import { mergeOffers } from "@/lib/content/ships/categories";
 import { VOLUME_STYLES, volumeInk } from "@/lib/volumes";
@@ -59,6 +60,11 @@ export default function OffersHub() {
         intro="Every live offer the house has filed, volume by volume, each beside its real terms."
         answer={answer}
         filling="Offers fill from the Offer Ledger and the nightly library sync; each leaves this page 30 days before it ends, a Final Call 14 days before its departure.">
+        <div className="mt-2 mb-8 flex items-center gap-5 md:gap-8">
+          <span className="md:hidden shrink-0"><HorizonMark size={120} rotate={-6} tone="clean" id="hub" /></span>
+          <span className="hidden md:block shrink-0"><HorizonMark size={190} rotate={-6} tone="clean" id="hubl" /></span>
+          <p className="text-[15px] md:text-[17px] leading-relaxed max-w-xl">The house&rsquo;s stamp for its offers: a sun rising on the horizon, pressed beside every saving it has filed and checked. Stays keep their own time marks, Worth Another Night and Time Rewarded, inside it.</p>
+        </div>
         <nav aria-label="Offers by volume" className="mt-2">
           <ul className="flex flex-wrap gap-2">{secs.map((s) => <li key={s.volume}><a href={`#${s.volume}`} className="inline-flex items-center gap-2 min-h-[44px] px-3.5 border ledger-border bg-white text-[14.5px] hover:border-crimson"><span className="w-2 h-2 rounded-full" style={{ background: volumeInk(s.volume) }} aria-hidden="true" />{s.label}<span className="text-[12px] ledger-muted">{s.count}</span></a></li>)}</ul>
         </nav>

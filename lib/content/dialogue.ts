@@ -158,7 +158,7 @@ export function validateDialogue(lines: DialogueLine[], assets: DialogueAsset[] 
 // duplicating the words. The verdict text stays in verdicts.ts; the register
 // is the index that governs it.
 
-export type VerdictLike = { where: string; when: string; text: string[]; signoff?: string; sketch?: string };
+export type VerdictLike = { where: string; when: string; text: string[]; signoff?: string; sketch?: string; approvedOn?: string };
 export type SampleLike = { where: string; path: string; opener: string; answer: { tag: Origin; text: string }[] };
 
 const VERDICT_APPROVAL = { status: "approved" as const, by: "James Papagno", on: "2026-10-27", note: "Ledger Proofs sheet" };
@@ -173,7 +173,8 @@ export function jamesVerdictLines(verdicts: Record<string, VerdictLike>): Dialog
     text: v.text.join(" "),
     tone: "dry",
     source: { kind: "james-verdict", ref: `verdicts.ts#${key}`, author: "James Papagno" },
-    approval: VERDICT_APPROVAL,
+    // The founder verdicts of 2 Nov 2026 were written from James's own brief that day.
+    approval: v.approvedOn ? { status: "approved" as const, by: "James Papagno", on: v.approvedOn, note: "Founder verdicts brief, 2 Nov 2026" } : VERDICT_APPROVAL,
     asset: v.sketch === "cheetah" ? "cheetah-pencil" : undefined,
   }));
 }

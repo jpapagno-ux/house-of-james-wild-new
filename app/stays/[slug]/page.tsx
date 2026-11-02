@@ -28,7 +28,7 @@ import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
 import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
-import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
+import { HERO_MARK, SCRIPT, stayVerdict } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
 import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
@@ -172,7 +172,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const slides = heroSlides(`stay:${s.slug}`, s.name, s.country);
   const video = VIDEOS[`stay:${s.slug}`] ?? priced?.video ?? null;
   const host = hostFor(`stay:${s.slug}`);
-  const verdict = verdictFor(`stay:${s.slug}`);
+  const verdict = stayVerdict(s.slug, s.status);
   const note = houseNote({ key: `stay:${s.slug}`, name: s.name, bestMonths: s.bestMonths, airport: s.airport, suited, rooms: s.rooms.items });
   // Stage 5 (Last Mile): approved Ledger hubs and transfer legs for this stay. Empty until the library approves them.
   const hubs = hubsForStay(s);

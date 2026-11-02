@@ -242,6 +242,8 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/europe/slovenia/logar-valley", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/europe/slovenia/brda", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/south-america/bolivia/salar-de-uyuni", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/europe/portugal/alentejo", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/europe/portugal/douro-valley", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
   // The Nile hub and the A&K Sanctuary ships: approved by James, 1 Nov 2026.

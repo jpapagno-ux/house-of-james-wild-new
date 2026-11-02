@@ -28,6 +28,15 @@ const FLYOVERS: Record<string, Fly> = {
     notes: ["Rapa Nui National Park covers much of the island; positions approximate."],
     nightLine: "Thousands of kilometres from any city: the southern sky over the Pacific",
   },
+  // Portugal (1 Nov 2026): Europe, then the country from the Douro to the Alentejo, with the Douro wine region
+  // and Dark Sky Alqueva outlined and Portugal's UNESCO sites in the frame. Shown on both place guides.
+  portugal: {
+    from: "europe", fromName: "Europe", to: "portugal-close", countries: ["portugal"],
+    title: "Portugal, from the Douro to the Alentejo",
+    line: "From the whole of Europe to its western edge: the Douro, terraced vineyards along the river east of Porto, and the Alentejo, the wide plains of olives, cork oaks and white villages east of Lisbon, where Dark Sky Alqueva was the first place in the world certified as a Starlight Tourism Destination.",
+    notes: ["Dashed: the Douro wine region and Dark Sky Alqueva, indicative outlines; positions approximate."],
+    nightLine: "Dark Sky Alqueva: the first Starlight Tourism Destination in the world",
+  },
 };
 
 const charts = REGION_LIB as unknown as Record<string, ChartData>;

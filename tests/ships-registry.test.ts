@@ -62,3 +62,13 @@ test("vessels.ts is built from the registry", () => {
   for (const s of SHIP_REGISTRY.filter((x) => x.staySlug)) assert.ok(VESSELS.some((v) => v.slug === s.staySlug), s.slug);
   assert.equal(VESSELS.find((v) => v.slug === "beyond-amazon-explorer")?.ship, "beyond-amazon-explorer");
 });
+
+test("a vessel with a ship page 301s from her stay URL (as Aliikai's does)", () => {
+  const redirects = JSON.parse(readFileSync(new URL("redirects.json", root), "utf8")) as { source: string; destination: string; statusCode?: number }[];
+  for (const s of SHIP_REGISTRY.filter((x) => x.page && x.staySlug)) {
+    const r = redirects.find((x) => x.source === `/stays/${s.staySlug}`);
+    assert.ok(r, `${s.staySlug} redirects`);
+    assert.equal(r!.destination, `/voyages/ships/${s.slug}`);
+    assert.equal(r!.statusCode, 301);
+  }
+});

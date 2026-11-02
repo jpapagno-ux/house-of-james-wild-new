@@ -12,7 +12,7 @@ import { undash } from "@/lib/content/ships/types";
 // pages and the Indonesia hub. Each card says how long, from where, the best season and the lowest
 // published whole-yacht rate among the yachts that sail it. A Founder Favourite voyage shows only once a
 // partner has sent one (lib/content/ships/journeys.ts).
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 
 /** The lowest published nightly rate for the whole yacht among the given ships (or every journey ship). */

@@ -97,12 +97,19 @@ export function Checkout({ pick, q, nights, name, included, excluded, policies, 
   );
 }
 
+// The last answer per property, kept for the visit (scroll audit, 2 Nov 2026). On Back the
+// panel remounts; without this it re-asked the engine and the room cards grew by the live-rate
+// rows after the browser had restored the scroll position, so Back landed 75 to 190px off.
+type Kept = { q: { checkIn: string; checkOut: string; adults: number }; today: string; state: "ok" | "none" | "error"; res: Result | null; engine: string };
+const KEPT = new Map<string, Kept>();
+
 export default function BookingPanel({ property, name, rooms, included, excluded, policies, hostHref }: { property: string; name: string; rooms: PricedRoom[]; included: string[]; excluded: string[]; policies: string[]; hostHref?: string }) {
-  const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
-  const [today, setToday] = useState("");
-  const [state, setState] = useState<"idle" | "loading" | "ok" | "none" | "error">("idle");
-  const [res, setRes] = useState<Result | null>(null);
-  const [engine, setEngine] = useState("");
+  const kept = KEPT.get(property);
+  const [q, setQ] = useState(kept?.q ?? { checkIn: "", checkOut: "", adults: 2 });
+  const [today, setToday] = useState(kept?.today ?? "");
+  const [state, setState] = useState<"idle" | "loading" | "ok" | "none" | "error">(kept?.state ?? "idle");
+  const [res, setRes] = useState<Result | null>(kept?.res ?? null);
+  const [engine, setEngine] = useState(kept?.engine ?? "");
   const [tab, setTab] = useState<"room" | "house">("room");
   const [plan, setPlan] = useState<Record<string, string>>({});
   const [pick, setPick] = useState<Pick>(null);
@@ -120,9 +127,14 @@ export default function BookingPanel({ property, name, rooms, included, excluded
   }, [property]);
 
   useEffect(() => {
+    if (state === "ok" || state === "none" || state === "error") KEPT.set(property, { q, today, state, res, engine });
+  }, [property, q, today, state, res, engine]);
+
+  useEffect(() => {
+    if (KEPT.has(property)) return;
     const a = new Date(); setToday(iso(a)); a.setDate(a.getDate() + 45); const b = new Date(a); b.setDate(b.getDate() + 3);
     const d = { checkIn: iso(a), checkOut: iso(b), adults: 2 }; setQ(d); run(d);
-  }, [run]);
+  }, [run, property]);
 
   const live = useMemo(() => {
     const m: Record<string, Live> = {};

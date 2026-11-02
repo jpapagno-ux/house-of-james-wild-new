@@ -33,7 +33,7 @@ export default function IslandHops({ chart: c, nodes, legs, routes, unesco, stay
   const pos = (code: string) => (isSoc(code) ? ip(at[code].lat, at[code].lng) : at[code]);
 
   return (
-    <section id="island-hopping" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="hops-heading">
+    <section id="island-hopping" className="mt-16 md:mt-24" aria-labelledby="hops-heading">
       <p className="ledger-eyebrow ledger-crimson">Island hopping · Suggested pathways</p>
       <h2 id="hops-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">How to Hop the Islands of Tahiti</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">Seven routes the house plans most, drawn on Air Tahiti&rsquo;s network. Flights are the solid arcs, boats the dotted sea legs. Every international flight lands on Tahiti; from there, Air Tahiti flies to all five archipelagos.</p>

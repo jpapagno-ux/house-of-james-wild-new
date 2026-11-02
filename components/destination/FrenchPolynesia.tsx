@@ -48,7 +48,7 @@ export default function FrenchPolynesia() {
         </section>
       )}
 
-      <section id="sail" className="mt-16 md:mt-24 border-t-2 pt-8 scroll-mt-32 lg:scroll-mt-[212px]" style={{ borderTopColor: volumeInk("voyages") }} aria-labelledby="fp-sail-heading">
+      <section id="sail" className="mt-16 md:mt-24 border-t-2 pt-8" style={{ borderTopColor: volumeInk("voyages") }} aria-labelledby="fp-sail-heading">
         <p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Sail it · Windstar in French Polynesia</p>
         <h2 id="fp-sail-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Which Windstar Ship Sails Tahiti?</h2>
         <p className="mt-3 text-[16px] max-w-3xl">Star Breeze, Windstar&rsquo;s 312-guest all-suite yacht, sails Tahiti year round from Papeete. From March 2027 Wind Star, its four-masted sailing yacht for 148 guests, joins her on the 7-night Dreams of Tahiti, calling at Raiatea every week. James has sailed Windstar in these islands himself, with his wife.</p>

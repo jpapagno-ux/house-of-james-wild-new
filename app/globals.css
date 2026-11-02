@@ -511,3 +511,15 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: inherit; }
 section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
+
+/* Phones, record pages (scroll audit, 2 Nov 2026): before any scroll, the sticky "On this page"
+   tabs sit at the bottom of the first screen, right where the fixed #record-bar sits, so a first
+   tap landed on the bar. The bar now slides up over the first 120px of scroll, by the scroll
+   itself (no script). Browsers without scroll timelines keep today's always-visible bar, and
+   reduced motion shows it at once. */
+@supports (animation-timeline: scroll()) {
+  @media (max-width: 1023px) and (prefers-reduced-motion: no-preference) {
+    #record-bar { animation: jw-record-bar-in linear both; animation-timeline: scroll(root block); animation-range: 0 120px; }
+  }
+}
+@keyframes jw-record-bar-in { from { transform: translateY(100%); visibility: hidden; } 1% { visibility: visible; } to { transform: translateY(0); visibility: visible; } }

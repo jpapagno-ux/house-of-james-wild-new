@@ -31,7 +31,7 @@ import { graph } from "@/lib/schema";
 export const dynamicParams = false;
 export function generateStaticParams() { return JOURNEYS.map((j) => ({ journey: j.slug })); }
 type P = { params: Promise<{ journey: string }> };
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 
 export async function generateMetadata({ params }: P) {

@@ -114,7 +114,7 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
   const selected = [...points.map((p) => ({ id: `p:${p.name}`, name: p.name, line: p.line, source: p.source, href: null as string | null })), ...pins.map((s) => ({ id: `s:${s.slug}`, name: s.name, line: "In the Ledger: open its page for rooms, offers and how to get there.", source: "The brand's published position", href: s.href }))].find((x) => x.id === sel);
 
   return (
-    <section id="lagoons" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="lagoons-heading" style={{ ["--stay-ink" as string]: stayInk }}>
+    <section id="lagoons" className="mt-16 md:mt-24" aria-labelledby="lagoons-heading" style={{ ["--stay-ink" as string]: stayInk }}>
       <p className="ledger-eyebrow ledger-crimson">The lagoons, closer</p>
       <h2 id="lagoons-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Lagoon by Lagoon: Dive Passes, Motu and Where You Sleep</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">Pick an island to fly in. Every dive site, snorkel spot and surf break here is placed from Tahiti Tourisme&rsquo;s own map links; every resort pin is the brand&rsquo;s own. Pinch or use the buttons to zoom.</p>

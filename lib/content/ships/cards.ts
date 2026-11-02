@@ -16,7 +16,7 @@ export type ShipCardData = {
   types: VoyageType[]; waters: Waters[]; page: boolean; status: string;
 };
 
-const KIND: Record<string, string> = { riverboat: "Riverboat", dahabiya: "Dahabiya", phinisi: "Phinisi", catamaran: "Catamaran", yacht: "Yacht", schooner: "Schooner", "river-yacht": "River yacht", "motor-yacht": "Motor yacht", "expedition-ship": "Expedition ship" };
+const KIND: Record<string, string> = { riverboat: "Riverboat", dahabiya: "Dahabiya", phinisi: "Phinisi", catamaran: "Catamaran", yacht: "Yacht", schooner: "Schooner", "river-yacht": "River yacht", "motor-yacht": "Motor yacht", "expedition-ship": "Expedition ship", bangka: "Bangka" };
 
 export function shipCard(r: RegistryShip): ShipCardData | null {
   const e = SHIPS.find((x) => x.slug === r.slug);

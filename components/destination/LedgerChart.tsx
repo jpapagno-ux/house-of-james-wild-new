@@ -55,7 +55,9 @@ function Overlays({ o, fs = 1 }: { o: ChartOverlays; /** Label scale (the island
           <g key={m.text}>
             {m.kind === "town" && <circle cx={m.x} cy={m.y} r="3.2" fill="#2D2A26" />}
             {m.kind === "peak" && <path d={`M${m.x - 5} ${m.y + 4} L${m.x} ${m.y - 5} L${m.x + 5} ${m.y + 4} Z`} fill="none" stroke="#2D2A26" strokeWidth="1.1" />}
-            {m.kind !== "airport" && m.kind !== "town" && m.kind !== "peak" && <circle cx={m.x} cy={m.y} r="2.4" fill="none" stroke="#2D2A26" strokeWidth="1" />}
+            {/* Dive flag (the Philippines, 2 Nov 2026): the red flag with a white diagonal, in House Crimson. */}
+            {m.kind === "dive" && <g aria-hidden="true"><rect x={m.x - 5} y={m.y - 4} width="10" height="8" fill="#8B2525" stroke="#F4F1ED" strokeWidth="0.8" /><path d={`M${m.x - 5} ${m.y - 4} L${m.x + 5} ${m.y + 4}`} stroke="#F4F1ED" strokeWidth="1.8" /></g>}
+            {m.kind !== "airport" && m.kind !== "town" && m.kind !== "peak" && m.kind !== "dive" && <circle cx={m.x} cy={m.y} r="2.4" fill="none" stroke="#2D2A26" strokeWidth="1" />}
             <text x={m.x + (m.kind === "airport" ? 0 : 8)} y={m.y + (m.kind === "airport" ? 16 * fs : m.kind === "peak" ? -7 : 4)} textAnchor={m.kind === "airport" ? "middle" : "start"} fontSize={12.5 * fs}
               fontStyle={m.kind === "water" ? "italic" : "normal"} fill={m.kind === "water" ? "rgba(34,101,110,0.9)" : "rgba(45,42,38,0.85)"} stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{m.text}</text>
           </g>

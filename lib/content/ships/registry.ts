@@ -20,9 +20,9 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
-export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran";
+export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
  *  "Naturalist" is Galaxy Cruises' own label where it publishes no class grade (Galaxy Bonita, Galaxy Orion). */
 export type ShipTier = "Luxury" | "First Class" | "Naturalist";
@@ -232,6 +232,13 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // No child age or single supplement published (a private charter).
     traits: { childNote: "No age policy published by Aman", activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow", "sailing"], dives: true } },
 
+  // TAO Philippines (James, 2 Nov 2026, the Philippines build): island expeditions by local bangka between El Nido
+  // and Coron with nights in TAO's own basecamps, from taophilippines.com. Off the Map first (Linapacan's islands no
+  // resort reaches), Rooted in Place (an islander crew and the Tao Women's Association). Private trips for one party.
+  // taophilippines.com: 13 and over on shared expeditions unless agreed, all ages on holiday departures; snorkelling.
+  { slug: "tao-philippines", name: "TAO Philippines", operator: "TAO Philippines", kind: "bangka", types: ["expedition"], waters: ["philippines"], country: ["Philippines"],
+    pathway: { primary: "PATH-06", secondary: ["PATH-08", "PATH-02"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { minChildAge: 13, childNote: "13 and over on shared expeditions unless agreed; all ages on Christmas, Chinese New Year and Easter departures, or on a private trip", activities: ["snorkelling", "culture", "slow"] } },
   // The Indonesian yacht fleets (James, 2 Nov 2026; voyages plan Parts 12 and 16), filed from each operator's own
   // site. Rascal Voyages' three yachts retire the library Stay record "rascal-voyages" (its URL 301s to the partner
   // page); Silolona and Celestia move from their voyage-labelled stay pages (301s to the ship pages). Rascal and
@@ -272,7 +279,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
   sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea." },
-  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, and Polar Crossings: Antarctica21's polar air-cruises and voyages." },
+  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, Polar Crossings: Antarctica21's polar air-cruises and voyages, and TAO's island expeditions in Palawan." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
 
@@ -284,6 +291,8 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   indonesia: { name: "Indonesia", path: "/voyages/indonesia", countries: ["Indonesia"], question: "What does a Raja Ampat phinisi cost?" },
   antarctica: { name: "Polar Crossings", path: "/voyages/polar", countries: ["Antarctica"], question: "Fly or sail the Drake?" },
   patagonia: { name: "Patagonia", path: "/voyages/polar", countries: ["Chile", "Argentina"], question: "Which voyage sails the Chilean fjords?" },
+  // No hub page yet: TAO lives on its ship page and the Philippines country page.
+  philippines: { name: "The Philippines", path: "/destinations/asia/philippines", countries: ["Philippines"], question: "How do you travel from El Nido to Coron?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

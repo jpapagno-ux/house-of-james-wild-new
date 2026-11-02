@@ -62,7 +62,8 @@ test("polar ships are Antarctica21's, listed in Polar Crossings (James, 2 Nov 20
 test("the filters the hubs run", () => {
   assert.ok(shipsInWaters("nile").length >= 5);
   assert.ok(shipsOfType("charter").some((s) => s.slug === "aliikai"));
-  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile")));
+  // Rooted in Place on the water: the Nile, and TAO Philippines (James, 2 Nov 2026: Off the Map plus Rooted in Place).
+  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile") || s.slug === "tao-philippines"));
 });
 
 test("vessels.ts is built from the registry", () => {

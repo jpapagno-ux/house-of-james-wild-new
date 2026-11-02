@@ -97,6 +97,8 @@ export const BUILT: string[] = [
   "/voyages/ships/galaxy-orion-yacht",
   "/voyages/ships/hermes-galapagos",
   "/voyages/ships/amandira",
+  // TAO Philippines (the Philippines build, James approved, 2 Nov 2026)
+  "/voyages/ships/tao-philippines",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

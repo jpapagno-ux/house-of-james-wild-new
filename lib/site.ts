@@ -310,6 +310,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/galaxy-orion-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/tao-philippines", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-discoverer", priority: 0.7, changeFrequency: "monthly" },
   // Polar Crossings and the Antarctica21 voyages, and the Antarctica21 partner page (James, 2 Nov 2026).

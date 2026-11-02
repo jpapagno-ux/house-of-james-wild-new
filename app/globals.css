@@ -278,6 +278,14 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .jw-atlas .jwc .ctrlbar button { letter-spacing: normal !important; text-transform: lowercase; font-size: 13px; min-height: 36px; }
 .jw-atlas .jwc .ctrlbar button::first-letter { text-transform: uppercase; }
 .jw-atlas .jwc .overlay .ovk, .jw-atlas .jwc .readout .row1 { letter-spacing: .04em !important; }
+@media (max-width: 767px) { .jw-atlas .jwc .ctrlbar { flex-wrap: wrap; } .jw-atlas .jwc .ctrlbar .days { flex-basis: 100%; } }
+/* On a narrow atlas the overlay card shrinks to one line, as on ship pages. */
+.jw-atlas { container-type: inline-size; }
+@container (max-width: 480px) {
+  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
+  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
+  .jwc .overlay .readout { border-top: 0; padding: 0; }
+}
 /* The no-script list of every route: folded on phones; open on wide screens where supported. */
 @media (min-width: 768px) {
   .jw-atlas-list > summary { display: none !important; }

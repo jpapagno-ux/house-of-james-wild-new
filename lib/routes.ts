@@ -55,6 +55,11 @@ export const BUILT: string[] = [
   "/voyages/amazon",
   "/voyages/galapagos",
   "/voyages/indonesia",
+  "/offers", // On the Horizon, the offers hub (James, 2 Nov 2026)
+  // Voyages category pages (James, 2 Nov 2026): 3+ ships qualify on published facts
+  "/voyages/honeymoon",
+  "/voyages/family",
+  "/voyages/solo",
   // Polar Crossings on this site: the Antarctica21 voyages (James, 2 Nov 2026)
   "/voyages/polar",
   "/voyages/polar/*",

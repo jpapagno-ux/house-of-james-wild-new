@@ -1032,6 +1032,30 @@
    "released": true
   },
   {
+   "stay_id": "6ae88519887ca89f9c60b6b2",
+   "slug": "como-uma-canggu",
+   "name": "COMO Canggu",
+   "country": "Indonesia",
+   "missing": [
+    "coming_soon",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6ae88519887ca89f9c60b6b3",
+   "slug": "como-uma-ubud",
+   "name": "COMO Uma Ubud",
+   "country": "Indonesia",
+   "missing": [
+    "coming_soon",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8ef",
    "slug": "conrad-tulum-riviera-maya",
    "name": "Conrad Tulum Riviera Maya",
@@ -1508,6 +1532,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6ae8943ab5673f15264a853b",
+   "slug": "galapagos-safari-camp",
+   "name": "Galapagos Safari Camp",
+   "country": "Ecuador & Galapagos",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff912",
@@ -2906,6 +2940,17 @@
    "released": true
   },
   {
+   "stay_id": "6ae88519887ca89f9c60b6b4",
+   "slug": "nihi-rote",
+   "name": "NIHI Rote",
+   "country": "Indonesia",
+   "missing": [
+    "coming_soon",
+    "stay_copy"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff96a",
    "slug": "nikoi-island",
    "name": "Nikoi Island",
@@ -3214,6 +3259,16 @@
    "name": "Phinda Homestead by &Beyond",
    "country": "South Africa",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6ae8943ab5673f15264a853c",
+   "slug": "pikaia-lodge",
+   "name": "Pikaia Lodge",
+   "country": "Ecuador & Galapagos",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

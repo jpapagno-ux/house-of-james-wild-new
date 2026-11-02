@@ -1,4 +1,4 @@
-import { volumeInk } from "@/lib/volumes";
+import { volumeLeather } from "@/lib/volumes";
 import { INBOXES } from "./inbox";
 
 // The house configuration: one place for the name, domain, contact details,
@@ -55,7 +55,7 @@ export type MegaMenu = {
   intro: string;
   browse: NavLink[];
   ledger: NavLink[]; // filled from the Ledger export in step 5
-  tone?: string; // the volume's colour (lib/volumes.ts, never a hex here): dots in the header, tabs in the footer
+  tone?: string; // the volume's base (lib/volumes.ts volumeLeather, never a hex here): the 5px tab in the menus and footer, the header dot
 };
 
 // Utility row: trust and contact, above the main bar.
@@ -71,7 +71,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Stays",
     href: "/stays",
-    tone: volumeInk("stays"),
+    tone: volumeLeather("stays"),
     intro: "Lodges, camps, islands and houses James has vetted in person.",
     browse: [
       { label: "By land", href: "/stays?by=land" },
@@ -84,7 +84,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Safaris",
     href: "/safaris",
-    tone: volumeInk("safaris"),
+    tone: volumeLeather("safaris"),
     intro: "Camps by reserve, from the Sabi Sand to the Okavango.",
     browse: [
       { label: "By country", href: "/destinations/africa" },
@@ -96,7 +96,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Gatherings",
     href: "/gatherings",
-    tone: volumeInk("gatherings"),
+    tone: volumeLeather("gatherings"),
     intro: "Family residences for the generations who travel together.",
     browse: [
       { label: "Celebrations", href: "/gatherings?for=celebrations" },
@@ -107,7 +107,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Voyages",
     href: "/voyages",
-    tone: volumeInk("voyages"),
+    tone: volumeLeather("voyages"),
     intro: "Small ships and sailing yachts, never the big ones.",
     browse: [
       { label: "By River", href: "/voyages/rivers" },
@@ -123,7 +123,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Overland",
     href: "/overland",
-    tone: volumeInk("overland"),
+    tone: volumeLeather("overland"),
     intro: "Land routes James designed, with what to expect and what to avoid.",
     browse: [
       { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
@@ -134,7 +134,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Other Europe",
     href: "/europe",
-    tone: volumeInk("europe"),
+    tone: volumeLeather("europe"),
     intro: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.",
     browse: [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },

@@ -67,7 +67,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
             {VOLS.map((v, i) => (
               <li key={v.href} className="border-b ledger-border" onMouseEnter={() => setPick(v.href)} onFocus={() => setPick(v.href)}>
                 <Link href={v.href} onClick={onClose} className="group flex items-baseline gap-5 py-3.5 lg:py-4">
-                  <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{numOf(v)}</span>
+                  <span className="ledger-eyebrow w-7 shrink-0 border-l-[5px] pl-1.5" style={v.tone ? { borderColor: v.tone } : undefined}>{numOf(v)}</span>
                   <span className={`ledger-display text-[2rem] lg:text-[2.6rem] leading-none whitespace-nowrap transition-colors ${pick === v.href ? "ledger-crimson" : ""}`}>{v.label}</span>
                   <span className="hidden xl:block ml-auto text-right text-[12.5px] ledger-muted max-w-[200px] leading-snug opacity-0 group-hover:opacity-100 transition">{v.intro}</span>
                 </Link>
@@ -108,7 +108,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
         <div className="hidden lg:block pt-12 pb-10">
           <Link href={picked?.href ?? "/"} onClick={onClose} className="relative block h-full min-h-[420px] bg-ink text-white overflow-hidden" aria-label={picked ? `Enter ${picked.label}` : "Enter"}>
             {VOLS.map((v) => { const p = volumePhoto(v); return p ? <Image key={v.href} src={p.url} alt="" fill sizes="33vw" className={`object-cover transition-opacity duration-500 ${pick === v.href ? "opacity-100" : "opacity-0"}`} /> : null; })}
-            <span className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent" />
+            <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.15)] to-transparent" />
             <span className="absolute inset-x-0 top-0 h-1" style={{ background: picked?.tone ?? "var(--jw-accent-hex)" }} />
             <span className="absolute left-7 right-7 bottom-7">
               <span className="block ledger-eyebrow !text-white/75">Volume {picked ? numOf(picked) : ""}</span>

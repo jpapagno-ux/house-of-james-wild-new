@@ -15,7 +15,7 @@ import { JwcoSeal } from "@/components/ledger/Marks";
 // Wild Pathways, and the advisors as a scroll at the foot with James first.
 // James himself stays on /about/founder. Server rendered.
 
-const GREEN = "#2F6B3A";
+const GREEN = "#6B635A"; // the advisor ink, Warm Stone text under the House Standard (was green)
 
 /* What travellers get that a booking site can't ---------------------------- */
 export function ForTravellers() {
@@ -62,7 +62,7 @@ export function HouseUnderStrip() {
           {VOLUMES.map((v) => (
             <li key={v.href}>
               <Link href={v.href} className="group flex items-baseline gap-4 py-3.5 hover:ledger-crimson">
-                <span className="ledger-eyebrow w-7 shrink-0" style={v.tone ? { color: v.tone } : undefined}>{["I", "II", "III", "IV", "V", "VI"][EVERY_VOLUME.findIndex((x) => x.href === v.href)]}</span>
+                <span className="ledger-eyebrow w-7 shrink-0 border-l-[5px] pl-1.5" style={v.tone ? { borderColor: v.tone } : undefined}>{["I", "II", "III", "IV", "V", "VI"][EVERY_VOLUME.findIndex((x) => x.href === v.href)]}</span>
                 <span className="min-w-0"><span className="ledger-display text-[1.25rem]">{v.label}</span>{counts[v.href] && <span className="ledger-eyebrow ml-2">{counts[v.href]}</span>}<span className="block text-[14px] ledger-muted leading-snug mt-0.5">{v.intro}</span></span>
               </Link>
             </li>
@@ -121,8 +121,8 @@ export function PathwaysBand() {
           const href = pathwayHref(p.key);
           return (
             <li key={p.id}>
-              <Link href={href} className="group block h-full p-5 border transition-colors" style={{ background: p.tint, borderColor: `${p.accent}33` }}>
-                <span className="ledger-eyebrow" style={{ color: p.text }}>{p.id} · {p.setting}</span>
+              <Link href={href} className="group block h-full p-5 border ledger-border bg-paper hover:border-graphite transition-colors">
+                <span className="ledger-eyebrow inline-flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: p.accent }} aria-hidden="true" />{p.id} · {p.setting}</span>
                 <span className="block ledger-display text-[1.45rem] leading-tight mt-2" style={{ color: p.text }}>{p.name}</span>
                 <span className="block text-[14px] ledger-muted leading-snug mt-2">{p.line}</span>
                 <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] group-hover:gap-3 transition-all" style={{ color: p.text }}>Follow it <ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></span>

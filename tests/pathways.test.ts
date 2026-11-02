@@ -10,7 +10,7 @@ const lum = (hex: string) => {
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 };
 const contrast = (a: string, b: string) => { const [x, y] = [lum(a), lum(b)]; return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
-const WHITE = "#FFFFFF", CARD = "#F6F4F0", INK = "#2D2A26";
+const WHITE = "#FFFFFF", CARD = "#F4F2EF", INK = "#2E2B28"; // The House Standard: Paper, Stone Mist, Graphite
 
 test("eight pathways, stable IDs, unique keys, names and accents", () => {
   assert.equal(PATHWAY_ORDER.length, 8);
@@ -58,9 +58,11 @@ test("globals.css carries the same pathway and impact tokens as lib/pathways.ts"
   }
   assert.ok(css.includes(`--jw-impact-panel: ${IMPACT.panel};`));
   assert.ok(css.includes(`--jw-impact-copy: ${IMPACT.copy};`));
-  // The house root accent is untouched: pages still open in oxblood, volumes still re-tint.
-  assert.ok(css.includes(":root { --jw-accent: 139 37 37;"));
-  assert.ok(css.includes(".theme-vol-stays {"));
+  // The House Standard (2 Nov 2026): the general accent is Graphite, crimson is its own token, and volume scopes
+  // are generated from lib/volumes.ts (volumeCss), never written in the CSS.
+  assert.ok(css.includes(":root { --jw-accent: 46 43 40;"));
+  assert.ok(css.includes("--jw-crimson: #8B2525;"));
+  assert.ok(!css.includes(".theme-vol-stays {"), "volume scopes come from volumeCss(), not globals.css");
 });
 
 test("brief volume IDs alias the six live volumes without renumbering them", () => {
@@ -190,5 +192,17 @@ test("workflows parse as YAML (a bad file fails at startup with no log)", () => 
       const m = line.match(/^\s*run:\s+(\S.*)$/);
       if (m && m[1] !== "|" && /:\s/.test(m[1])) assert.fail(`${f}: unquoted colon in plain-scalar run line: ${line.trim()}`);
     }
+  }
+});
+
+test("The House Standard: volume CSS is generated from lib/volumes.ts and volume words reach AA", async () => {
+  const { volumeCss, volumeInk, volumeMark, VOLUME_ORDER: ORDER } = await import("../lib/volumes.ts");
+  const css = volumeCss();
+  for (const k of ORDER) {
+    assert.ok(css.includes(`--vol-${k}-leather: ${VOLUME_STYLES[k].leather};`), `${k} leather variable`);
+    assert.ok(css.includes(`.theme-vol-${k}, :root:has(.theme-vol-${k}-page)`), `${k} scope`);
+    assert.ok(contrast(volumeInk(k), WHITE) >= 4.5, `${k} words (deep) on Paper`);
+    assert.ok(contrast(volumeInk(k), VOLUME_STYLES[k].tint) >= 4.5, `${k} words on its mist`);
+    assert.equal(volumeMark(k), VOLUME_STYLES[k].pad, `${k} pins use the base`);
   }
 });

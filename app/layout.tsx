@@ -15,6 +15,7 @@ import "@fontsource/mrs-saint-delafield/400.css";
 import "@fontsource/homemade-apple/latin-400.css";
 import "@fontsource/caveat/500.css";
 import "./globals.css";
+import { volumeCss } from "@/lib/volumes";
 import JsonLd from "@/components/ledger/JsonLd";
 import SiteFooter from "@/components/ledger/SiteFooter";
 import MobileActionBar from "@/components/ledger/MobileActionBar";
@@ -36,11 +37,13 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
 };
 
-export const viewport: Viewport = { themeColor: "#F4F1ED", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#FFFFFF", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
+      {/* Volume colours come only from lib/volumes.ts (The House Standard): generated here, never written in CSS. */}
+      <head><style id="jw-volumes" dangerouslySetInnerHTML={{ __html: volumeCss() }} /></head>
       <body className="ledger-page ledger-body min-h-screen">
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[70] focus:bg-paper focus:px-4 focus:py-2">
           Skip to content

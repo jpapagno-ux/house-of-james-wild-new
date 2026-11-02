@@ -35,11 +35,11 @@ function VolumeMenu({ v, light }: { v: MegaMenu; light: boolean }) {
         <svg className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 group-hover:translate-y-px transition" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m2 3.5 3 3 3-3" /></svg>
       </Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-1/2 -translate-x-1/2 top-full pt-2 z-50">
-        <div className="w-[600px] ledger-page border ledger-border shadow-[0_18px_50px_rgba(45,42,38,0.18)] grid grid-cols-[1.1fr_1fr] gap-8 p-7 text-ink" style={v.tone ? { borderTop: `3px solid ${v.tone}` } : undefined}>
+        <div className="w-[600px] ledger-page border ledger-border shadow-[0_18px_50px_rgba(26,24,22,0.14)] grid grid-cols-[1.1fr_1fr] gap-8 p-7 text-ink" style={v.tone ? { borderTop: `5px solid ${v.tone}` } : undefined}>
           <div>
-            <p className="ledger-eyebrow" style={v.tone ? { color: v.tone } : undefined}>{v.label}</p>
+            <p className="ledger-eyebrow">{v.label}</p>
             <p className="ledger-display text-[1.35rem] leading-snug mt-2">{v.intro}</p>
-            <Link href={v.href} className="ledger-btn mt-5" style={v.tone ? { borderColor: v.tone, color: v.tone } : undefined}>Enter {v.label}</Link>
+            <Link href={v.href} className="ledger-btn mt-5">Enter {v.label}</Link>
           </div>
           <div className="space-y-4">
             {v.browse.length > 0 && <div>
@@ -84,7 +84,7 @@ function DestinationsMenu({ light }: { light: boolean }) {
     <li className="group relative">
       <Link href="/destinations" className={`${cls} !inline-flex items-center gap-2`}>Destinations<svg className="w-2.5 h-2.5 opacity-50 group-hover:opacity-100 transition" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="m2 3.5 3 3 3-3" /></svg></Link>
       <div className="invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:visible group-focus-within:opacity-100 group-focus-within:translate-y-0 transition duration-200 absolute left-0 top-full pt-2 z-50">
-        <div className="w-[960px] ledger-page border ledger-border border-t-[3px] border-t-crimson shadow-[0_18px_50px_rgba(45,42,38,0.18)] grid grid-cols-[1.25fr_1fr] text-ink">
+        <div className="w-[960px] ledger-page border ledger-border border-t-[3px] border-t-crimson shadow-[0_18px_50px_rgba(26,24,22,0.14)] grid grid-cols-[1.25fr_1fr] text-ink">
           <div className="p-6">
             <div className="flex items-baseline justify-between">
               <p className="ledger-eyebrow ledger-crimson">The ten regions</p>
@@ -112,7 +112,7 @@ function DestinationsMenu({ light }: { light: boolean }) {
               return src ? <img key={r.slug} src={src} alt="" loading="lazy" className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${pick === r.slug ? "opacity-100" : "opacity-0"}`} /> : null;
             })}
             {!hero && <span className="absolute inset-0 bg-coast-deep" />}
-            <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+            <span className="absolute inset-0 jw-hero-fade" />
             <span className="absolute left-6 right-6 bottom-5">
               <span className="block ledger-eyebrow !text-white/75">Vetted country by country</span>
               <span className="block ledger-display text-[2rem] leading-none mt-1">{picked?.label}</span>
@@ -191,10 +191,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
     <>
     <header
       className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-[background-color,transform] duration-300 ${tucked && !open ? "-translate-y-full" : ""} ${
-        light ? "bg-transparent text-white" : "bg-gradient-to-b from-paper via-paper to-[#F1F8F6] backdrop-blur border-b ledger-border text-ink"
+        light ? "bg-transparent text-white" : "bg-paper/95 backdrop-blur border-b ledger-border text-ink"
       }`}
     >
-      {!light && <div className="h-[3px]" style={{ background: "linear-gradient(90deg, #6E1C1C, #8B2525 40%, #C0574A 70%, #8B2525)" }} aria-hidden="true" />}
+      {/* The House Standard: the top edge is the volume tab (the volume's base on a volume page, a hairline elsewhere).
+          Kept at 3px so the sticky header height, and the anchor offsets that depend on it, do not move. */}
+      {!light && <div className="h-[3px]" style={{ background: "var(--vol-leather, var(--jw-hairline))" }} aria-hidden="true" />}
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
@@ -207,11 +209,11 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "ledger-border hover:border-crimson"}`}
-            aria-label="Search the Ledger"
+            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
+            aria-label="Ask the house: search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Where to?</span>
+            <span className="ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
             <kbd className="hidden xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
           </button>
         </div>
@@ -238,11 +240,10 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
             <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
           </ul>
+          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026). */}
           <Link
             href={PLAN_CTA.href}
-            className={`inline-flex items-center whitespace-nowrap h-10 px-3.5 sm:px-5 border ledger-eyebrow !text-[10.5px] transition-colors ${
-              light ? "border-white/80 !text-white hover:bg-white hover:!text-ink" : "border-action !text-action hover:bg-action hover:!text-paper"
-            }`}
+            className={`ledger-btn ledger-btn--house ledger-btn--compact ${light ? "ledger-btn--light" : ""}`}
           >
             <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>
           </Link>

@@ -33,7 +33,7 @@ export default function IslandZoom({ zoom, href, cta, className = "" }: { zoom: 
         <p className="mt-3 text-[16px] leading-relaxed ledger-muted max-w-xl">{z.line}</p>
         {href && <Link href={href} className="ledger-btn mt-5 inline-flex">{cta ?? "Open the guide"}</Link>}
       </div>
-      <figure className="order-1 md:order-2 border-[3px] border-double border-[#2A3D5C] bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
+      <figure className="order-1 md:order-2 border-[3px] border-double border-graphite bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
         <LedgerChart chart={chart} title={`Ledger chart of ${z.title.replace(/,.*$/, "")}, zoomed in`} />
         <figcaption className="px-3 py-2 border-t ledger-border font-mono text-[10px] tracking-[0.12em] uppercase ledger-muted flex justify-between"><span>Inset · 1:10m</span><span>Positions approximate</span></figcaption>
       </figure>

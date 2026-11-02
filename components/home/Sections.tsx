@@ -55,12 +55,13 @@ export function PlacesMarquee() {
   const places = REGIONS.flatMap((r) => r.countries.map((c) => c.label)).filter((p) => !p.includes("Cruises"));
   const row = [...places, ...places];
   return (
-    <div className="border-b ledger-rule py-5 overflow-hidden ledger-page" aria-hidden="true">
+    // The ticker band wears the one gradient, Ink to Garnet (The House Standard).
+    <div className="jw-gradient py-5 overflow-hidden" aria-hidden="true">
       <div className="ledger-marquee flex w-max gap-10 whitespace-nowrap">
         {row.map((p, i) => (
           <span key={i} className="flex items-center gap-10">
             <span className="ledger-display italic text-3xl md:text-4xl">{p}</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-crimson/60" />
+            <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
           </span>
         ))}
       </div>
@@ -389,12 +390,12 @@ export function JamesNote() {
 export function Stewards() {
   const s = HOME.stewards;
   return (
-    <section className="relative mt-20 md:mt-28 -mb-20 h-[80vh] min-h-[520px] overflow-hidden bg-[#123332]" aria-labelledby="stewards-heading">
+    <section className="relative mt-20 md:mt-28 -mb-20 h-[80vh] min-h-[520px] overflow-hidden bg-ink-deep" aria-labelledby="stewards-heading">
       <Image src={s.image.url} alt={s.image.alt} fill sizes="100vw" quality={85} className="object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#123332]/90 via-[#123332]/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1A1816]/90 via-[#2E2B28]/50 to-transparent" />
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex items-center">
         <Reveal className="max-w-2xl text-white">
-          <p className="ledger-eyebrow !text-[#beece0]/85">{s.eyebrow}</p>
+          <p className="ledger-eyebrow !text-white/80">{s.eyebrow}</p>
           <h2 id="stewards-heading" className="ledger-display text-4xl md:text-6xl leading-[1.08] mt-5">{s.line}</h2>
           <p className="text-white/85 text-[17px] leading-relaxed mt-6 max-w-lg">{s.text}</p>
           <Link href={s.cta.href} className="mt-8 inline-flex items-center h-11 px-7 border border-white/80 ledger-eyebrow !text-[11px] !text-white hover:bg-white hover:!text-ink transition-colors">

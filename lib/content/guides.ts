@@ -131,8 +131,8 @@ export const GUIDES: Record<string, Guide> = {
     airports: [["Bali (DPS)", "Ngurah Rai, the main gateway and an e-VOA airport"], ["Jakarta (CGK)", "Soekarno Hatta, an e-VOA airport, with flights on to Sorong"], ["Labuan Bajo (LBJ)", "On Flores, for Komodo National Park"], ["Sorong (SOQ)", "Domine Eduard Osok Airport, for Raja Ampat"], ["Lombok (LOP)", "Lombok International Airport, daily flights from Bali"], ["Sumba (TMC, WGP)", "Tambolaka in the west, Umbu Mehang Kunda at Waingapu in the east"]],
     transfers: [["Bali to Labuan Bajo", "About 1.5 hours by air, for Komodo"], ["Bali to Tambolaka", "About an hour by air, for West Sumba"], ["Jakarta to Sorong", "About 4 to 5 hours by air, or via Makassar or Manado"], ["Sorong to Waisai", "About 2 hours by fast ferry, into Raja Ampat"], ["Ambon (AMQ)", "The gateway for the Banda Sea and the Spice Islands"]],
     highlights: [
-      { title: "Raja Ampat", line: "West Papua · Oct–Apr", body: "Karst lagoons, mantas at Arborek and the richest coral reefs on Earth, in the far east of the archipelago.", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Karst islands in Raja Ampat's lagoons" } },
-      { title: "Komodo National Park", line: "Flores · May–Sep", body: "Dragons on Rinca, the climb up Padar, Pink Beach and the mantas of Karang Makassar, an hour from Bali.", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island from the air" } },
+      { title: "Raja Ampat", line: "West Papua · Oct to Apr", body: "Karst lagoons, mantas at Arborek and the richest coral reefs on Earth, in the far east of the archipelago.", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Karst islands in Raja Ampat's lagoons" } },
+      { title: "Komodo National Park", line: "Flores · May to Sep", body: "Dragons on Rinca, the climb up Padar, Pink Beach and the mantas of Karang Makassar, an hour from Bali.", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island from the air" } },
       { title: "The Spice Islands", line: "Banda Sea · October", body: "Nutmeg islands, old Dutch forts and walls of coral, sailed in the short calm between the monsoons." },
       { title: "Bali", line: "Ubud and the south coast · Apr to Oct", body: "Rice terraces and temples around Ubud, clifftops on the Bukit and black sand at Tabanan: the island most journeys start from." },
       { title: "Sumba", line: "West Sumba · surf May to Oct", body: "Long left-hand surf breaks, horse culture and the Pasola, an hour's flight east of Bali." },
@@ -155,8 +155,8 @@ export const GUIDES: Record<string, Guide> = {
       ],
     },
     places: [
-      { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The reefs at the end of the map", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Raja Ampat's karst lagoons" }, best: "Oct–Apr" },
-      { name: "Komodo National Park", href: "/destinations/asia/indonesia/komodo", line: "Dragons, mantas and a pink beach", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island, Komodo National Park" }, best: "May–Sep" },
+      { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The reefs at the end of the map", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Raja Ampat's karst lagoons" }, best: "Oct to Apr" },
+      { name: "Komodo National Park", href: "/destinations/asia/indonesia/komodo", line: "Dragons, mantas and a pink beach", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island, Komodo National Park" }, best: "May to Sep" },
     ],
     voyageWaters: ["Raja Ampat", "Komodo"],
     faqs: [
@@ -169,7 +169,7 @@ export const GUIDES: Record<string, Guide> = {
       { q: "Is Komodo National Park a UNESCO World Heritage Site?", a: "Yes. Komodo National Park was inscribed in 1991. It covers 219,322 hectares, centred on the volcanic islands of Komodo, Rinca and Padar, and is home to an estimated 5,700 Komodo dragons." },
       { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from April to June and September to December. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
       { q: "How do you get to Raja Ampat?", a: "Fly to Sorong in West Papua, about 4 to 5 hours from Jakarta or via Makassar or Manado, then take the 2-hour fast ferry to Waisai, or join your boat in Sorong." },
-      { q: "Can you combine Raja Ampat and Komodo in one trip?", a: "Yes, with a flight between Sorong and Labuan Bajo via Makassar or Bali, but the best seasons barely overlap. Most travellers choose one per trip, or sail Aliikai's Sorong–Ambon crossing in April or October to link Raja Ampat with the Banda Sea." },
+      { q: "Can you combine Raja Ampat and Komodo in one trip?", a: "Yes, with a flight between Sorong and Labuan Bajo via Makassar or Bali, but the best seasons barely overlap. Most travellers choose one per trip, or sail Aliikai's Sorong to Ambon crossing in April or October to link Raja Ampat with the Banda Sea." },
       { q: "Has James been to Raja Ampat?", a: "Yes. James sailed Raja Ampat aboard the phinisi Aliikai in November 2024, and he has been designing journeys since 1983." },
       { q: "Which Indonesian stays has James been to?", a: "In November 2024 James visited Bali and Sumba. COMO Shambhala Estate, COMO Canggu, Tanah Gajah, the four Kayumanis villas, Viceroy Bali, The Ungasan and Soori Bali are founder favourites; Capella Ubud, Bambu Indah and NIHI Sumba are founder inspected. NIHI Rote opened in 2026: James has vetted it but not yet stayed." },
     ],
@@ -181,7 +181,7 @@ export const GUIDES: Record<string, Guide> = {
     slug: "raja-ampat", region: "asia", country: "indonesia", parent: "indonesia", name: "Raja Ampat", path: "/destinations/asia/indonesia/raja-ampat",
     seo: {
       title: "Raja Ampat Travel Guide: Best Time, Getting There & Liveaboards",
-      description: "A Raja Ampat travel guide from a founder who sailed it in 2024: the best time to visit (Oct–Apr), how to get to Sorong, Wayag and the mantas, and the voyage built for a first Raja Ampat.",
+      description: "A Raja Ampat travel guide from a founder who sailed it in 2024: the best time to visit (Oct to Apr), how to get to Sorong, Wayag and the mantas, and the voyage built for a first Raja Ampat.",
       keywords: ["Raja Ampat travel guide", "best time to visit Raja Ampat", "how to get to Raja Ampat", "Raja Ampat liveaboard", "first time Raja Ampat", "Raja Ampat itinerary", "Wayag"],
     },
     eyebrow: "Destinations · Indonesia · West Papua",
@@ -256,7 +256,7 @@ export const GUIDES: Record<string, Guide> = {
     slug: "komodo", region: "asia", country: "indonesia", parent: "indonesia", name: "Komodo National Park", path: "/destinations/asia/indonesia/komodo",
     seo: {
       title: "Komodo National Park Guide: Best Time, Labuan Bajo & Boat Trips",
-      description: "Komodo National Park, an hour from Bali: the best time to visit (May–Sep), getting to Labuan Bajo, Padar, Pink Beach, the mantas and the dragons of Rinca, seen by small phinisi.",
+      description: "Komodo National Park, an hour from Bali: the best time to visit (May to Sep), getting to Labuan Bajo, Padar, Pink Beach, the mantas and the dragons of Rinca, seen by small phinisi.",
       keywords: ["Komodo National Park", "best time to visit Komodo", "Komodo boat trip from Labuan Bajo", "Komodo liveaboard", "Padar Island", "Pink Beach Komodo", "Komodo dragons Rinca"],
     },
     eyebrow: "Destinations · Indonesia · Flores",

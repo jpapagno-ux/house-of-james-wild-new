@@ -112,8 +112,8 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
   return (
     <section className="mt-12" aria-labelledby="flyover-title">
       <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] gap-6 lg:gap-10 items-start">
-        <figure className="min-w-0 border-[3px] border-double border-[#2A3D5C] bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
-          <div ref={box} className="relative overflow-hidden bg-[#E4EEEC]">
+        <figure className="min-w-0 border-[3px] border-double border-graphite bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
+          <div ref={box} className="relative overflow-hidden bg-mist">
             {safe ? (
               /* The still close chart: the same in-flow chart every country page draws (overlays included). */
               <div className="ledger-chart is-drawn"><LedgerChart chart={to} title={title} /></div>
@@ -246,7 +246,7 @@ function Filmstrip({ frames, night }: { frames: FlyFrame[]; night: boolean }) {
     <li key={`${copy ? "b" : "a"}${f.src}${i}`} aria-hidden={copy || undefined} className="shrink-0 pr-2">
       <Link href={f.href} tabIndex={copy ? -1 : undefined} className="group relative block w-[132px] sm:w-[168px] aspect-[3/2] overflow-hidden bg-paper-card">
         <Image src={sharpen(f.src)} alt={copy ? "" : f.alt} fill sizes="168px" className="object-cover transition-transform duration-700 group-hover:scale-[1.06]" />
-        <span className="absolute inset-x-0 bottom-0 px-2 pt-5 pb-1.5 bg-gradient-to-t from-black/65 to-transparent font-mono text-[9px] tracking-[0.12em] uppercase text-white truncate">{f.name}</span>
+        <span className="absolute inset-x-0 bottom-0 px-2 pt-5 pb-1.5 bg-gradient-to-t from-[rgba(38,20,22,0.88)] to-transparent font-mono text-[9px] tracking-[0.12em] uppercase text-white truncate">{f.name}</span>
       </Link>
     </li>
   ));

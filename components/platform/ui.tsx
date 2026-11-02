@@ -62,7 +62,7 @@ export function DataList({ rows }: { rows: [string, React.ReactNode][] }) {
 }
 
 export function Notice({ tone = "neutral", title, children }: { tone?: "neutral" | "attention" | "good"; title?: string; children: React.ReactNode }) {
-  const c = tone === "attention" ? "border-l-[#8B2525] bg-[#F6ECEC]" : tone === "good" ? "border-l-[#11705A] bg-[#E8F3EF]" : "border-l-[#8B2525] bg-[#F7F5F2]";
+  const c = tone === "attention" ? "border-l-[#8B2525] bg-[#F6ECEC]" : tone === "good" ? "border-l-[#11705A] bg-[#E8F3EF]" : "border-l-[#2E2B28] bg-[#F7F5F2]";
   return (
     <div role={tone === "attention" ? "status" : undefined} className={`border-l-[3px] ${c} px-4 py-3 text-[14.5px] leading-relaxed`}>
       {title && <p className="font-medium">{title}</p>}

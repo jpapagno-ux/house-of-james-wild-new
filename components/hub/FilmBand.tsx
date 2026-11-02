@@ -34,7 +34,7 @@ export default function FilmBand({ poster, alt, mp4, webm, eyebrow, title, credi
           <source src={mp4} type="video/mp4" />
         </video>
       )}
-      <span className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-black/20" aria-hidden="true" />
+      <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.10)] to-[rgba(26,24,22,0.20)]" aria-hidden="true" />
       <span className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
       <figcaption className="absolute left-6 right-6 bottom-6 md:left-10 md:right-10 md:bottom-9 flex flex-wrap items-end justify-between gap-4">
         <span>

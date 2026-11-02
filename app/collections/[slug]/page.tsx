@@ -56,7 +56,7 @@ export default async function CollectionPage({ params }: P) {
       <main id="main" className="pb-16">
         <header className="relative w-full h-[80svh] min-h-[520px] max-h-[1000px] overflow-hidden bg-ink text-white">
           <Image src={c.hero.url} alt={c.hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/35" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.35)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-16">
             <p className="ledger-eyebrow !text-white/80">{c.eyebrow}</p>
             <h1 className="ledger-display text-[2.5rem] md:text-[4.4rem] leading-[1.02] mt-3 max-w-4xl text-balance">{c.name}</h1>

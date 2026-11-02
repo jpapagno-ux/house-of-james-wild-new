@@ -5,6 +5,8 @@ import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
 import { exceptionalFewForVessel } from "@/lib/content/exceptional-few";
+import FounderOcean from "@/components/advisor/FounderOcean";
+import { founderOceanForVoyage } from "@/lib/content/founder-ocean";
 
 // /voyages/ships/<ship>: every vessel on the one shared ship template
 // (components/ships/RecordShip): the ship, her day by day, cabins, deck plan and
@@ -27,5 +29,8 @@ export default async function ShipPage({ params }: P) {
   const e = shipBySlug((await params).ship);
   if (!e) notFound();
   // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={e.slug === "aliikai" ? aliikaiExtra() : undefined} ef={exceptionalFewForVessel(e.slug)} />;
+  // James's card with his surf and dive line on Aliikai and the Galápagos ships (James, 2 Nov 2026).
+  const ocean = founderOceanForVoyage(shipPath(e.slug), e.waters);
+  const extra = { ...(e.slug === "aliikai" ? aliikaiExtra() : {}), ...(ocean ? { after: <FounderOcean line={ocean} place={e.data.name} /> } : {}) };
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={Object.keys(extra).length ? extra : undefined} ef={exceptionalFewForVessel(e.slug)} />;
 }

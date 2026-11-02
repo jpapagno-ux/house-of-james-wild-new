@@ -6,6 +6,7 @@ import { COUNTRIES } from "@/lib/content/countries";
 import { GREEN_INK, VOLUME_LABEL, type DeskEntry, type Volume } from "@/lib/content/advisor-desk";
 import { absoluteUrl } from "@/lib/seo";
 import { ids } from "@/lib/schema";
+import { founderOceanForCountry } from "@/lib/content/founder-ocean";
 
 // "Who plans this" — the roster's answer for a place, rendered on the page
 // (31 Oct 2026). The same answer Iggi gives from /api/v1/advisors, as text a
@@ -68,6 +69,7 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
         <div className="min-w-0">
           <p className="ledger-display text-[1.5rem] leading-tight"><Link href={lead.profileHref ?? "/about/team#advisors"} className="hover:ledger-crimson">{lead.name}</Link></p>
           <p className="ledger-eyebrow !text-[9.5px] mt-1" style={{ color: founder ? undefined : GREEN_INK }}>{lead.role}{lead.desk ? <span className="ledger-crimson"> · {lead.desk.adv}</span> : null}</p>
+          {founder && founderOceanForCountry(where.countrySlug) && <p className="mt-1.5 text-[14px]" style={{ color: GREEN_INK }}>{founderOceanForCountry(where.countrySlug)}</p>}
           {(lead.line ?? lead.desk?.line) && <p className="mt-3 ledger-display italic text-[1.1rem] leading-snug max-w-xl">&ldquo;{lead.line ?? lead.desk?.line}&rdquo;</p>}
           {entries.length > 0 && (
             <ul className="mt-4 grid gap-1.5 text-[15px]">

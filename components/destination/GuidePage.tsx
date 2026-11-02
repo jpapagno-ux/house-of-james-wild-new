@@ -207,7 +207,7 @@ export default function GuidePage({ g, map }: { g: Guide; /** The Ledger chart o
             <ul className="mt-2 space-y-1">{g.sources.map((s) => <li key={s.url}><a href={s.url} {...(s.url.startsWith("/") ? {} : { target: "_blank", rel: "noopener" })} className="underline underline-offset-4 hover:ledger-crimson">{s.title}</a></li>)}</ul>
           </section>
 
-          <PlanBand place={g.name} compassHref="/compass" />
+          <PlanBand place={g.name} compassHref="/compass" where={g.parent ? undefined : { countrySlug: g.country }} />
         </div>
       </main>
       <JsonLd data={schema} />

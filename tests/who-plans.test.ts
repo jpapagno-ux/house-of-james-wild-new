@@ -59,3 +59,14 @@ test("a volume filter respects the advisor's stated volumes", () => {
   assert.ok(!r.advisors.includes("kristina-larson"), "Kristina states safaris, stays, gatherings — not voyages");
   assert.ok(r.advisors.includes(JAMES));
 });
+
+test("a region page names the real advisors who state a country in that region (audit, 2 Nov 2026)", () => {
+  const regionOf = (c: string) => ({ kenya: "africa", "south-africa": "africa", indonesia: "asia", "costa-rica": "central-america" } as Record<string, string>)[c] ?? null;
+  const r = rankAdvisors(pool, { regionSlug: "africa" }, { defaultSlug: JAMES, countryOfRecord, regionOf });
+  assert.ok(r.advisors.includes("kristina-larson"), `Kristina states Kenya and South Africa; got ${r.advisors.join(", ")}`);
+  assert.ok(!r.advisors.includes("anthony-papagno"), "Anthony states no African country");
+  const ca = rankAdvisors(pool, { regionSlug: "central-america" }, { defaultSlug: JAMES, countryOfRecord, regionOf });
+  assert.deepEqual(ca.advisors, ["anthony-papagno"], "Costa Rica is Anthony's");
+  // Without the lookup the ranking stays as before: Desk entries only.
+  assert.ok(!rankAdvisors(pool, { regionSlug: "africa" }, { defaultSlug: JAMES, countryOfRecord }).advisors.includes("kristina-larson"));
+});

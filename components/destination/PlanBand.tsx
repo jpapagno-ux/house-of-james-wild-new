@@ -3,6 +3,7 @@ import TravelNotesForm from "@/components/TravelNotesForm";
 import { Headshot } from "@/components/advisor/Desk";
 import { ADVISORS, DEFAULT_ADVISOR, advisorsFor, type Advisor } from "@/lib/content/advisors";
 import type { Volume } from "@/lib/content/advisor-desk";
+import { founderOceanForCountry } from "@/lib/content/founder-ocean";
 
 // The close of every destination page: the advisors who know the place,
 // and Travel Notes for news of what's filed next.
@@ -16,7 +17,8 @@ export type PlanWhere = { countrySlug?: string | null; regionSlug?: string | nul
 
 export default function PlanBand({ place, compassHref = "#compass", where }: { place: string; compassHref?: string; where?: PlanWhere }) {
   const lead = ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
-  const others = where ? advisorsFor(where).advisors.filter((a) => a.slug !== DEFAULT_ADVISOR).slice(0, 3) : [];
+  // Real advisors before stand-ins, as in "Who plans this", so a stated advisor is never cut for a stand-in (audit, 2 Nov 2026).
+  const others = where ? advisorsFor(where).advisors.filter((a) => a.slug !== DEFAULT_ADVISOR).sort((x, y) => Number(!!x.sample) - Number(!!y.sample)).slice(0, 3) : [];
   const q = encodeURIComponent(place);
   const planHref = (a: Advisor) => `/plan?advisor=${a.slug}&q=${q}`;
   return (
@@ -28,6 +30,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
           <div>
             <p className="ledger-display text-xl">{lead.name}</p>
             <p className="ledger-eyebrow">{lead.role}</p>
+            {founderOceanForCountry(where?.countrySlug) && <p className="mt-1 text-[14px] ledger-muted">{founderOceanForCountry(where?.countrySlug)}</p>}
           </div>
         </div>
         {others.length > 0 && (

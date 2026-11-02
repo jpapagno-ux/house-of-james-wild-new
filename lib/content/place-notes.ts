@@ -46,7 +46,7 @@ export const COUNTRY_NOTES: Record<string, PlaceNote> = {
   australia: { line: "A continent pretending to be a country. Pick two regions and fly between them." },
   fiji: { line: "The Fijian welcome isn't a marketing line. Choose a small island and let it look after you." },
   "new-zealand": { line: "A continent of scenery on two islands. Drive less, stay longer." },
-  tahiti: { line: "My favourite since 1996, and Taha'a my favourite part of it. Go slow; the lagoon sets the pace." },
+  tahiti: { line: "My favourite since 1995, and Taha'a my favourite part of it. Go slow; the lagoon sets the pace." },
   argentina: { line: "Steak, Malbec and Patagonia, in that order of pace." },
   chile: { line: "Long enough to need two climates in one suitcase. Atacama and Patagonia, ideally not the same week." },
   "ecuador-galapagos": { line: "The animals haven't learned to be afraid; don't teach them. Choose the boat carefully, it's your whole trip." },

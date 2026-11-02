@@ -5,6 +5,7 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { pathwayHref } from "@/lib/content/pathways/flag";
 import { COUNTRIES } from "@/lib/content/countries";
 import { GREEN_INK, type Volume } from "@/lib/content/advisor-desk";
+import { founderOceanForCountry, founderOceanForPathway } from "@/lib/content/founder-ocean";
 
 // AdvisorChip — the advisor's light touch where the traveller is actually reading
 // (2 Nov 2026): the country page under the answer, the stay glance, the Pathway
@@ -32,7 +33,7 @@ export function chipFor(where: Where): { lead: Advisor; withA: Advisor | null; o
   return { lead, withA, others };
 }
 
-function Person({ a, place, markLine, compact }: { a: Advisor; place: string; markLine?: string | null; compact?: boolean }) {
+function Person({ a, place, markLine, compact, credential }: { a: Advisor; place: string; markLine?: string | null; compact?: boolean; credential?: string | null }) {
   const paths = pathNames(a);
   return (
     <div className="flex gap-3 items-start min-w-0">
@@ -42,6 +43,7 @@ function Person({ a, place, markLine, compact }: { a: Advisor; place: string; ma
         <p className="text-[12.5px] ledger-muted mt-0.5 truncate">
           {markLine ?? `Knows ${place}`}{paths.length ? <> · {paths.map((p, i) => <span key={p.id}>{i > 0 ? ", " : ""}<Link href={pathwayHref(p.key)} className="hover:ledger-crimson">{p.name}</Link></span>)}</> : null}
         </p>
+        {credential && <p className="text-[12.5px] mt-0.5" style={{ color: GREEN_INK }}>{credential}</p>}
         {!compact && a.line && <p className="mt-1 ledger-display italic text-[14.5px] leading-snug" style={{ color: GREEN_INK }}>&ldquo;{a.line}&rdquo;</p>}
       </div>
     </div>
@@ -62,7 +64,7 @@ export default function AdvisorChip({ where, place, compact = false, className =
     <aside className={`border ledger-border bg-paper p-4 md:p-5 ${className}`} aria-label={`Who plans ${place}`}>
       <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>Who plans {place}</p>
       <div className={`mt-3 grid gap-4 ${withA ? "md:grid-cols-2" : ""}`}>
-        <Person a={lead} place={knows} markLine={founder ? `Plans ${place} himself` : null} compact={compact} />
+        <Person a={lead} place={knows} markLine={founder ? `Plans ${place} himself` : null} compact={compact} credential={founder ? founderOceanForCountry(where.countrySlug) : null} />
         {withA && <Person a={withA} place={knows} markLine={markLine} compact={compact} />}
       </div>
       <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
@@ -95,6 +97,7 @@ export function PathwayAdvisors({ pathwayId, className = "" }: { pathwayId: Path
                 <div className="min-w-0">
                   <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="font-mono text-[10.5px] ledger-crimson">{a.ledgerId}</span></p>
                   {places.length > 0 && <p className="text-[12.5px] ledger-muted mt-0.5">{places.join(" · ")}</p>}
+                  {a.slug === DEFAULT_ADVISOR && founderOceanForPathway(pathwayId) && <p className="text-[12.5px] mt-0.5" style={{ color: GREEN_INK }}>{founderOceanForPathway(pathwayId)}</p>}
                   {a.line && <p className="mt-1.5 ledger-display italic text-[14px] leading-snug" style={{ color: GREEN_INK }}>&ldquo;{a.line}&rdquo;</p>}
                 </div>
               </div>

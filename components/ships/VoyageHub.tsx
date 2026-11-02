@@ -12,6 +12,8 @@ import VoyageTiles, { type Tile } from "./VoyageTiles";
 import type { ShipCardData } from "@/lib/content/ships/cards";
 import { absoluteUrl } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import FounderOcean from "@/components/advisor/FounderOcean";
+import { founderOceanForVoyage } from "@/lib/content/founder-ocean";
 
 // One frame for every Voyages hub, type or waters (voyages plan, Part 2): the search question
 // answered first (AEO), the ship cards from the registry, the routes on the chart, a short
@@ -46,6 +48,7 @@ export default function VoyageHub(h: HubProps) {
           <RouteAtlas id={`${h.path.split("/").pop()}-atlas`} kind="voyage" dest={h.atlas.dest} chart={h.atlas.chart} legend={h.atlas.legend} kicker={h.atlas.kicker} eyebrow="The routes" title={h.atlas.title} line={h.atlas.line} routes={h.atlas.routes} />
         )}
         {h.after}
+        {founderOceanForVoyage(h.path) && <FounderOcean line={founderOceanForVoyage(h.path)!} place={h.name} />}
         {h.related && <HubSection eyebrow="Keep looking" title={h.related.title} id="related-h"><VoyageTiles tiles={h.related.tiles} cols={h.related.tiles.length === 5 ? 5 : h.related.tiles.length === 3 ? 3 : 4} /></HubSection>}
         <FaqBlock faqs={h.faqs} title={`What Else Should You Know About ${h.name}?`} />
       </HubShell>

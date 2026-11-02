@@ -240,10 +240,10 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
             <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
           </ul>
-          {/* Plan with James, the main action (The House Standard): crimson double keyline on paper, white keylines over a film. */}
+          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026). */}
           <Link
             href={PLAN_CTA.href}
-            className={`ledger-btn ledger-btn--house whitespace-nowrap !min-h-0 h-10 !px-3.5 sm:!px-5 !text-[13px] sm:!text-[14px] ${light ? "ledger-btn--light" : ""}`}
+            className={`ledger-btn ledger-btn--house ledger-btn--compact ${light ? "ledger-btn--light" : ""}`}
           >
             <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>
           </Link>

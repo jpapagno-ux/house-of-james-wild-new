@@ -33,6 +33,10 @@ export const HOUSE = {
   hairline: "#DCD7D0", // borders: fine card rules
 };
 
+/** The footer (James, 2 Nov 2026): a warm Ink ground fading to garnet-black, ivory and stone type, labels in a soft
+ *  crimson, warm rules. On Ink: body 14.6:1, soft 8.3:1, legal 4.9:1, label 8.6:1. */
+export const FOOTER = { ground: "#1A1816", groundEnd: "#241A19", body: "#E9E4DE", soft: "#B8AFA5", legal: "#8C8277", label: "#D7A7AA", rule: "#3D3934", field: "#5A534B" };
+
 /** The single accent. */
 export const CRIMSON = { fill: "#8B2525", deep: "#6E1C1C" };
 

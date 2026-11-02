@@ -29,8 +29,8 @@ written). `app/globals.css` carries the tokens; `npm run check:palette` runs bef
 ## 2. One accent: House Crimson `#8B2525`
 
 Crimson (`--jw-crimson`, `text-house`, `.house-crimson`, `.ledger-id`) is for: the seal, the logo and its rule,
-Ledger IDs, key dates and the main action "Plan with James". **One or two crimson touches per screen.** No other
-accent colour on general pages.
+Ledger IDs, key dates and the main action "Plan with James". **One or two crimson touches per screen** (the arrows
+and rules of the button family are the approved exception). No other accent colour on general pages.
 
 The general accent that older components read (`--jw-accent`, `.ledger-crimson`, `text-crimson`, `border-crimson`,
 `bg-crimson`) is now **Graphite**, deepening to Ink. That one change keeps hundreds of eyebrows, hovers and active
@@ -69,22 +69,34 @@ How it flows (one edit swaps the set):
 - The header's top edge (`.vol-tab` idea, kept at 3px so the sticky height does not move), the mega-menu panels and
   the footer volume cards carry the tab; `.vol-tab` / `.vol-tab-top` give any element a 5px edge in `--vol-leather`.
 
-## 5. Buttons, chips and fields: squared
+## 5. The button family (James approved, 2 Nov 2026, 17:59), chips and fields
 
-- **Squared, 2px, double keyline, never pills.** Type: Cormorant Garamond 600, uppercase, 0.18em, 15px.
-- `.ledger-btn` (secondary): Graphite words, 1px `#CFC8BF` border, white fill, faint inner keyline.
-- `.ledger-btn--house` (primary, "Plan with James"): white fill, crimson words, 1px crimson border,
-  `box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgba(139,37,37,0.4)`. **Every `.ledger-btn` that links to
-  `/plan` wears it automatically.**
-- On dark or photographs (`.ledger-btn--light`, or any `.ledger-btn` inside `bg-ink*`, `bg-black*`, `.on-dark`,
-  `.jw-onphoto`, `.jw-gradient`): transparent, white words, 1px `rgba(255,255,255,0.7)` border, inner
-  `rgba(255,255,255,0.3)` keyline.
-- `.ledger-btn--solid`: a filled action that is not Plan with James: Graphite fill, white words, inner white keyline.
-- `.jw-chip` for chips, filter and date pills, tabs and search fields: squared, Graphite and Warm Stone on white;
+Three levels, one set of classes in `app/globals.css`; no page styles its own buttons.
+
+1. **The Ledger column**: the main action ("Plan with James", Hold a cabin, Check rates, Enquire, Send).
+   `.ledger-btn--house`, `.ledger-btn--solid`, `.ledger-btn--primary`, and **every `.ledger-btn` that links to
+   `/plan`**. A flex row 56px high (`.ledger-btn--compact` 48px, used in the header; 40px inside the sticky bars; full
+   width on phones in the page), 1px Ink `#1A1816` border, square. Label: Manrope 12px 600, uppercase, 0.24em, Ink,
+   24px in from the left. On the right a crimson `#8B2525` cell, 56px wide, holding a white 18x12 arrow (stroke 1.3);
+   on hover and focus it widens to 84px (300ms; no animation with reduced motion). Focus ring: 2px crimson outline,
+   3px offset. On dark or photographs (`.ledger-btn--light`, or inside `bg-ink*`, `.on-dark`, `.jw-onphoto`,
+   `.jw-gradient`) the border and label go white; the cell stays crimson. The river waters re-tint the cell
+   (`--jw-action`).
+2. **The editorial line**: quiet links and secondary actions (View the stay, Read more, See dates, All voyages, card
+   links): `.ledger-btn`, `.ledger-btn-ghost`. No box: Cormorant Garamond italic 22px (`.ledger-btn--lg` 28px; ghost
+   20px), Ink words, a crimson arrow that stretches from 34px to 60px on hover and a 1px crimson rule beneath that
+   grows from 28% to 100%. On dark the words go white and the arrow and rule take the soft crimson `#D7A7AA`.
+3. **The seal**: the signature moment, used once, in the homepage "James knows a place" band (`.jw-seal-cta`): a
+   64px round crimson wax seal (`radial-gradient(#A83636, #8B2525, #5E1717)`, "JW" in Cormorant) beside "Plan with
+   James" in Cormorant 26px, "HE ANSWERS PERSONALLY" in Plex Mono beneath; on hover the seal turns -14deg and scales
+   1.05.
+
+- The arrows and cells are pseudo-elements, so no markup changes when a page uses the classes.
+- **Chips, filters, tabs and search fields** stay squared graphite (`.house-chip`): Graphite and Warm Stone on white;
   active = Graphite fill and white words (`aria-pressed`, `aria-selected`, `aria-current`, `.is-active`), or a crimson
-  underline (`.jw-tab`).
-- A global rule squares any interactive or padded element that asked for `rounded-*` (dots, avatars and pins, with no
-  padding, keep their round; `.jw-round` opts out).
+  underline (`.jw-tab`). No pills: a global rule squares any interactive or padded element that asked for
+  `rounded-*` (dots, avatars and pins keep their round; `.jw-round` opts out).
+- The Exceptional Few keeps its own buttons (its accent, squared, no cell or arrow).
 
 ## 6. Type
 
@@ -108,7 +120,18 @@ Graphite border. Region pathway chips live in `lib/content/region-pathways.ts`.
 - Paper ephemera (postcards, luggage tags, margin notes, the verdict and calling cards) keep their paper colour:
   they are objects, not grounds.
 
-## 9. Copy
+## 9. The footer and "James knows a place"
+
+- Homepage, just above the footer: `HouseInvitation` (`components/ledger/SiteFooter.tsx`): a Stone Mist band, James's
+  portrait (4:5) with a 5px crimson tab and the round JW seal, "TALK TO THE HOUSE", "James knows a place." in
+  Cormorant 92px light, the seal action and the phone, then 1982 / 44 years / J.W.
+- The footer: warm Ink (`linear-gradient(180deg, #1A1816 70%, #241A19)`), `lib/palette.ts` `FOOTER` tones (body
+  `#E9E4DE`, secondary `#B8AFA5`, legal `#8C8277`, labels in Plex Mono soft crimson `#D7A7AA`, rules `#3D3934`,
+  field `#5A534B`). Top row: seal, "James Wild & Co." and the weekly entry field. Five columns: The Volumes (3x14px
+  Heritage tabs), Destinations, The House (with the trade links), Before You Go, Talk to the House. Then the
+  credentials and the legal line.
+
+## 10. Copy
 
 No em or en dashes in public copy.
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { undash } from "@/lib/content/ships/types";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { CATEGORIES, CATEGORY_ORDER, type MapCategory } from "@/lib/ledger/categories";
 
@@ -199,7 +200,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
                       <span className="ledger-display text-[16px] leading-snug block">{i.name}</span>
                       <span className="text-[12px] ledger-muted block">
                         {i.kind}
-                        {i.bestMonths ? ` · best ${i.bestMonths}` : ""}
+                        {i.bestMonths ? ` · best ${undash(i.bestMonths)}` : ""}
                         {i.x == null ? " · not yet pinned" : ""}
                         {i.isNew ? " · new" : ""}
                       </span>

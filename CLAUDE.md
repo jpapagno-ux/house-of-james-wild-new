@@ -11,8 +11,10 @@
 - Volumes (the Heritage set) come only from `lib/volumes.ts`: a 5px tab, map pins and an occasional volume-mist
   panel, never sections, buttons or chips; volume words use the deep (`volumeInk`). Never write a volume hex anywhere
   else: `volumeCss()` feeds the CSS variables and `npm run check:palette` (before every build) fails on drift.
-- Buttons, chips, fields and tabs are squared (2px), never pills: `.ledger-btn` (secondary), `.ledger-btn--house`
-  (Plan with James; every `.ledger-btn` to `/plan` wears it), `.ledger-btn--light` on dark, `.jw-chip`.
+- The button family (James, 2 Nov 2026): the Ledger column for the main action (`.ledger-btn--house` / `--solid` /
+  any `.ledger-btn` to `/plan`: 56px, Ink border, crimson arrow cell), the editorial line for quiet links (`.ledger-btn`,
+  `.ledger-btn-ghost`: Cormorant italic, crimson arrow and rule), the seal once on the homepage (`.jw-seal-cta`).
+  Chips, filters, tabs and search stay squared graphite (`.house-chip`), never pills. Never style a button per page.
 - Pathway chips are graphite outlines with a 6px pathway dot. River waters and The Exceptional Few are protected.
 - No em or en dashes in public copy; no parchment textures; no browns, golds or tans as grounds.
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per

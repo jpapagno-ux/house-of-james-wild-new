@@ -123,7 +123,7 @@ export const HOME = {
       {
         name: "Kalahari & Salt Pans", slug: "kalahari-and-salt-pans-tau-pan-nxai-pan", country: "botswana", subtitle: "Tau Pan and Nxai Pan", ledgerId: "ITN-LAND-2026-664245",
         tested: true, year: 2012,
-        facts: [["Length", "8 days · 7 nights"], ["Route", "Maun to Maun"], ["Style", "Private guided"], ["Best months", "Dec–Apr herds · May–Oct predators"]] as [string, string][],
+        facts: [["Length", "8 days · 7 nights"], ["Route", "Maun to Maun"], ["Style", "Private guided"], ["Best months", "Dec to Apr herds · May to Oct predators"]] as [string, string][],
         expect: ["Endless horizons from the raised decks of Tau Pan", "Walking the ancient sands with San Bushman guides", "The centuries-old baobabs of Nxai Pan"],
         avoid: ["Picking the wrong season: the zebra and springbok herds arrive with the summer rains", "Underpacking for winter nights, when desert temperatures drop sharply after dark"],
         stays: [["Kwando Tau Pan", "kwando-tau-pan"], ["Kwando Nxai Pan", "kwando-nxai-pan"]] as [string, string | null][],

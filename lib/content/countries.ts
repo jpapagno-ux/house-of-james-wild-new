@@ -52,7 +52,7 @@ const HAND: CountryData[] = [
     ],
     airports: [["San José (SJO)", "The central valley; every Costa Rica route starts or ends here"], ["Liberia (LIR)", "Closer to Arenal and the north"]],
     transfers: [["SJO → Arenal", "3 hours by road"], ["SJO → Manuel Antonio", "3 hours, or a 25-minute flight"], ["SJO → Osa Peninsula", "50-minute flight"], ["SJO → South Caribbean", "4 hours by road"]],
-    compass: true, flyInto: "SJO · LIR", bestShort: "Dec–Apr",
+    compass: true, flyInto: "SJO · LIR", bestShort: "Dec to Apr",
     postcard: {
       image: `${WF}/6863018671b62ea7c452cea0_CostaRicaMAHero1.jpg`, alt: "Costa Rica: rainforest, volcano and the Pacific coast",
       front: { eyebrow: "Greetings from Costa Rica · Route ITN-LAND-2026-418207", title: "The Classic", line: "Volcano, cloud forest, then the Pacific to dry off." },
@@ -99,7 +99,7 @@ const HAND: CountryData[] = [
     airports: [["Johannesburg (JNB)", "Connections to Hoedspruit and Skukuza for the Kruger lodges"], ["Cape Town (CPT)", "The Cape, the Winelands and the Garden Route"]],
     transfers: [["JNB → Hoedspruit / Skukuza", "About an hour by light aircraft"], ["CPT → Franschhoek", "About 55 minutes by road"], ["CPT → Hermanus", "About 1.5 hours by road"]],
     liveRates: { stay: "leeu-estates", property: "leeu-estates-resorts", name: "Leeu Estates", line: "Our first stay with live booking: the Franschhoek vineyard estate James inspected in May 2026, priced live from the booking desk for your dates." },
-    flyInto: "JNB · CPT", bestShort: "May–Oct safari",
+    flyInto: "JNB · CPT", bestShort: "May to Oct safari",
   },
 ];
 

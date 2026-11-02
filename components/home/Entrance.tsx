@@ -14,7 +14,7 @@ import { Reveal } from "@/components/ledger/Motion";
 // strip, and the house's stance, founder-led and advisor-built. Server
 // rendered; every word and link in the HTML.
 
-const GREEN = "#2F6B3A";
+const GREEN = "#6B635A"; // the advisor ink, Warm Stone text under the House Standard (was green)
 
 /* 1. The Ledger, counted: one bold band, hairlines, no ticker ------------ */
 export function CountedBand() {
@@ -102,12 +102,12 @@ export function VolumeStrip() {
             <Link href={d.path} className="absolute inset-0 block focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label={`Enter ${d.name}`}>
               {d.image && <Image src={d.image} alt={d.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />}
               <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.25)] to-[rgba(26,24,22,0.10)]" />
-              <span className="absolute inset-x-0 top-0 h-1" style={{ background: "var(--vol)" }} />
+              <span className="absolute inset-x-0 top-0 h-[5px]" style={{ background: "var(--vol)" }} />
               <span className="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end">
                 <span className="ledger-eyebrow !text-white/80">Volume {["I", "II", "III", "IV", "V", "VI"][i]}</span>
                 <span className="ledger-display text-[2.2rem] lg:text-[2.6rem] leading-none mt-2 lg:[writing-mode:vertical-rl] lg:rotate-180 lg:group-hover:[writing-mode:horizontal-tb] lg:group-hover:rotate-0 lg:absolute lg:left-8 lg:bottom-8 lg:group-hover:static transition-none">{d.name}</span>
                 <span className="lg:max-w-md lg:opacity-0 lg:translate-y-3 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition duration-500 delay-150">
-                  <span className="block text-[11px] uppercase tracking-[0.14em] mt-2" style={{ color: "var(--vol)", filter: "brightness(1.7)" }}>{d.brand}</span>
+                  <span className="block text-[11px] uppercase tracking-[0.14em] mt-2" style={{ color: "rgba(255,255,255,0.78)" }}>{d.brand}</span>
                   <span className="block text-[15.5px] text-white/90 leading-relaxed mt-3">{d.line}</span>
                   <span className="mt-5 inline-flex items-center gap-2 ledger-eyebrow !text-[11px] !text-white">Enter {d.name} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>
                 </span>

@@ -13,7 +13,7 @@ const scope = (p: Pathway) => `pathway-${p.id.slice(-2)}`;
 /** Small labelled chip (The House Standard): a squared graphite-outline chip with the pathway name; the pathway's
  *  colour survives only as the 6px dot. The primary chip has the graphite border, the rest the light keyline. */
 export function PathwayChip({ pathway: p, primary = false, href }: { pathway: Pathway; primary?: boolean; href?: string }) {
-  const cls = `${scope(p)} jw-chip ${primary ? "!border-graphite" : "!text-[#6B635A]"}`;
+  const cls = `${scope(p)} house-chip ${primary ? "house-chip--primary" : "house-chip--quiet"}`;
   const body = (
     <>
       <span className="w-1.5 h-1.5 rounded-full bg-pathway shrink-0" aria-hidden="true" />

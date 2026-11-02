@@ -58,7 +58,7 @@ export function ContactBar({ name, planHref, from }: { name: string; planHref: s
 // Desktop: a quiet card, bottom right.
 export function ContactPill({ name, planHref }: { name: string; planHref: string }) {
   return (
-    <div className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
+    <div data-quiet-actions className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
       <span className="text-[13px]"><span className="ledger-eyebrow block !text-[9.5px]">Ask about {name.length > 26 ? "this place" : name}</span><a href={`tel:${SITE.phone.tel}`} className="hover:ledger-crimson" data-event="call_click">{SITE.phone.display}</a></span>
       <Link href={planHref} className="ledger-btn !py-2 !px-3.5" data-event="enquire_click">Enquire</Link>
     </div>

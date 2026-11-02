@@ -40,7 +40,7 @@ for (const m of vol.matchAll(/key: "(\w+)",[^]*?deep: "(#[0-9A-Fa-f]{6})"[^]*?ti
   if (ratio(m[2], "#FFFFFF") < 4.5) errs.push(`lib/volumes.ts: ${m[1]} deep ${m[2]} is below AA on Paper`);
   if (ratio(m[2], m[3]) < 4.5) errs.push(`lib/volumes.ts: ${m[1]} deep ${m[2]} is below AA on its mist ${m[3]}`);
 }
-const houseHex = new Set([...(read("lib/palette.ts").match(/export const HOUSE = \{([^}]*)\}/)?.[1] ?? "").matchAll(/#[0-9A-F]{6}/g)].map((m) => m[0]));
+const houseHex = new Set(["HOUSE", "FOOTER"].flatMap((n) => [...(read("lib/palette.ts").match(new RegExp(`export const ${n} = \\{([^}]*)\\}`))?.[1] ?? "").matchAll(/#[0-9A-F]{6}/g)].map((m) => m[0])));
 const PROTECTED_DIRS = ["app/whats-coming", "components/coming", "lib/content/whats-coming"]; // another build in flight: warn only
 const walk = (d) => fs.existsSync(path.join(root, d)) ? fs.readdirSync(path.join(root, d), { withFileTypes: true }).flatMap((e) => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]) : [];
 const scan = [...walk("app"), ...walk("components"), ...walk("lib"), "tailwind.config.ts", ...walk("public/maps")].filter((f) => /\.(tsx?|css|m?js)$/.test(f) && !f.endsWith("lib/volumes.ts") && !f.includes("lib/content/library") && !f.endsWith(".json"));
@@ -48,7 +48,7 @@ for (const f of scan) {
   const src = read(f);
   for (const m of src.matchAll(/#[0-9A-Fa-f]{6}\b/g)) {
     const which = volHex.get(m[0].toUpperCase());
-    if (!which || houseHex.has(m[0].toUpperCase())) continue; // Stays Limestone shares Warm Stone with the house
+    if (!which || houseHex.has(m[0].toUpperCase())) continue; // Stays Limestone shares warm tones with the house and the footer
     // a protected theme (The Exceptional Few, river waters) or a pathway dot may share a hex by coincidence
     const line = src.slice(src.lastIndexOf("\n", m.index) + 1, src.indexOf("\n", m.index));
     if (/theme-ef|theme-waters|--ef-|WATERS_PALETTE|accent: "#/.test(line)) continue;
@@ -94,13 +94,19 @@ if (!/\.ledger-muted \{ color: #6B635A; \}/.test(css)) errs.push("app/globals.cs
 // ---------- buttons, chips and pills ----------
 const cssNoComments = css.replace(/\/\*[^]*?\*\//g, "");
 const btnRules = [...cssNoComments.matchAll(/^[^\n{]*\.ledger-btn[^{]*\{[^}]*\}/gm)].map((m) => m[0]).filter((r) => !/theme-ef/.test(r));
-const base = btnRules.find((r) => /^\s*\.ledger-btn \{/.test(r));
-if (!base || !/border-radius: 2px;/.test(base)) errs.push("app/globals.css: .ledger-btn must be squared (border-radius: 2px)");
-if (base && !/Cormorant Garamond[^;]*; font-weight: 600;[^}]*text-transform: uppercase/.test(base)) errs.push("app/globals.css: .ledger-btn type must be Cormorant Garamond 600, uppercase");
-if (!/\.ledger-btn--house, a\.ledger-btn\[href\^="\/plan"\] \{[^}]*border-color: var\(--jw-action\); color: var\(--jw-action\);[^}]*inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px/.test(css)) errs.push("app/globals.css: Plan with James (.ledger-btn--house and every .ledger-btn to /plan) must be white with crimson words and a double keyline");
-for (const r of btnRules) for (const h of r.match(/#[0-9A-Fa-f]{6}/g) ?? []) if (chromatic(h) && h.toUpperCase() !== C.fill) errs.push(`app/globals.css: a button rule carries a colour outside the House Standard ${h}: ${r.trim().slice(0, 70)}…`);
+const base = btnRules.find((r) => /^\s*\.ledger-btn, \.ledger-btn-ghost \{/.test(r));
+// The button family (James, 2 Nov 2026): the editorial line (base), the Ledger column (main action), the seal (once).
+if (!base || !/border-radius: (?:0|2px);/.test(base)) errs.push("app/globals.css: .ledger-btn must be square (border-radius 0 or 2px), never a pill");
+if (base && !/Cormorant Garamond[^;]*; font-style: italic;/.test(base)) errs.push("app/globals.css: the editorial line (.ledger-btn) must be Cormorant Garamond italic");
+if (!/\.ledger-btn::before, \.ledger-btn-ghost::before \{[^}]*width: 28%; background: #8B2525;/.test(cssNoComments)) errs.push("app/globals.css: the editorial line needs its 1px crimson rule (28% to 100%)");
+const col = cssNoComments.match(/\.ledger-btn\.ledger-btn--house, \.ledger-btn\.ledger-btn--solid, a\.ledger-btn\[href\^="\/plan"\], \.ledger-btn\.ledger-btn--primary \{([^}]*)\}/);
+if (!col || !/height: 56px;/.test(col[1]) || !/border: 1px solid #1A1816/.test(col[1]) || !/Manrope[^;]*; font-style: normal; font-weight: 600; font-size: 12px;[^}]*letter-spacing: 0\.24em; text-transform: uppercase;/.test(col[1])) errs.push("app/globals.css: the Ledger column (main action: .ledger-btn--house / --solid / to /plan) must be 56px, 1px Ink border, Manrope 12px 600 uppercase 0.24em");
+if (!/a\.ledger-btn\[href\^="\/plan"\]::after[^{]*\{[^}]*width: 56px;[^}]*background: var\(--jw-action\)/.test(cssNoComments)) errs.push("app/globals.css: the Ledger column needs its 56px crimson cell (var(--jw-action)) with the white arrow");
+if (!/a\.ledger-btn\[href\^="\/plan"\]:is\(:hover, :focus-visible\)::after[^{]*\{ width: 84px; \}/.test(cssNoComments)) errs.push("app/globals.css: the Ledger column cell must widen to 84px on hover and focus");
+if (!/\.jw-seal-cta__seal \{[^}]*radial-gradient\([^)]*#A83636[^)]*#8B2525[^)]*#5E1717/.test(cssNoComments)) errs.push("app/globals.css: the seal (.jw-seal-cta) must be the crimson wax seal");
+for (const r of btnRules) for (const h of r.match(/#[0-9A-Fa-f]{6}/g) ?? []) if (chromatic(h) && !["#8B2525", "#D7A7AA", "#A83636", "#5E1717"].includes(h.toUpperCase())) errs.push(`app/globals.css: a button rule carries a colour outside the House Standard ${h}: ${r.trim().slice(0, 70)}…`);
 if (/\.ledger-btn[^{]*\{[^}]*border-radius: (?:9999|999|50%|1\.?\d*rem)/.test(css)) errs.push("app/globals.css: a button is a pill; squared (2px) only");
-if (!/\.jw-chip \{[^}]*border-radius: 2px;/.test(css)) errs.push("app/globals.css: .jw-chip must be squared (2px)");
+if (!/\.house-chip \{[^}]*border-radius: 2px;/.test(css)) errs.push("app/globals.css: .house-chip must be squared (2px)");
 if (!/:is\(a, button, input, select, textarea, label, summary\)\.rounded-full/.test(css)) errs.push("app/globals.css: the no-pills rule (rounded-full on interactive elements squared to 2px) is missing");
 
 // ---------- pathways: graphite chips, colour only as a dot ----------
@@ -143,4 +149,4 @@ if (errs.length) {
   console.error("\nHouse Standard palette check failed (docs/brand-colours.md). lib/palette.ts holds the house tones, lib/volumes.ts the only volume colours.\n  " + errs.join("\n  ") + "\n");
   process.exit(1);
 }
-console.log("The House Standard: five tones, one accent, one gradient, in step. Volume colours from lib/volumes.ts only. Buttons squared, AA.");
+console.log("The House Standard: five tones, one accent, one gradient, in step. Volume colours from lib/volumes.ts only. The button family in place, AA.");

@@ -189,7 +189,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
                             <span className="ledger-display text-[17px] group-hover:ledger-crimson">{d.n}</span>
                             {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5">{d.g}</span>}
                           </span>
-                          <span className="ledger-eyebrow shrink-0 text-right" style={d.t === "advisor" ? { color: GREEN_INK } : undefined}>{d.k}{d.p ? ` · ${d.p}` : ""}</span>
+                          <span className="ledger-eyebrow min-w-0 max-w-[45%] text-right" style={d.t === "advisor" ? { color: GREEN_INK } : undefined}>{d.k}{d.p ? ` · ${d.p}` : ""}</span>
                         </Link>
                       </li>
                     ))}

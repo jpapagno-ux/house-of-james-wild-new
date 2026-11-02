@@ -10,7 +10,7 @@ export type WordmarkStyle = "editorial" | "seal" | "plain";
 export default function Wordmark({ style = "editorial", light = false, size = 1, rule = true, line = true, fullLine = true }: { style?: WordmarkStyle; light?: boolean; size?: number; rule?: boolean; line?: boolean; fullLine?: boolean }) {
   // House Crimson (The House Standard): the logo always wears the true crimson, never the page accent.
   const color = light ? "#FFFFFF" : style === "plain" ? undefined : "var(--jw-crimson)";
-  const sub = light ? "rgba(255,255,255,0.8)" : "var(--jw-crimson)";
+  const sub = light ? "rgba(255,255,255,0.8)" : "var(--jw-stone-text)"; // the house line in Warm Stone text, so the lockup is one crimson touch
   return (
     <span className="flex flex-col min-w-0" style={{ color }}>
       {style === "seal" ? (

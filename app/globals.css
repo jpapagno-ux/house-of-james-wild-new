@@ -62,46 +62,111 @@
     text-transform: uppercase;
     color: #6B635A; /* Warm Stone text: AA on Paper and Stone Mist */
   }
+  /* On dark grounds the eyebrow lifts to warm light words (AA on Ink and Graphite) unless a component sets its own colour. */
+  :is(footer, .bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-eyebrow:not([style*="color"]), :is(footer, .bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-muted { color: rgba(244, 242, 239, 0.74); }
+  /* The type scale floor: no eyebrow below 10px, even where a component asked for 9px. */
+  .ledger-eyebrow.ledger-eyebrow[class*="!text-[9"], .ledger-eyebrow.ledger-eyebrow[class*="!text-[8"] { font-size: 10px !important; }
   /* Nav labels: small uppercase tracked Manrope (the header, the menu and the footer keep the sans). */
   .ledger-nav, header .ledger-eyebrow, footer nav .ledger-eyebrow { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 600; letter-spacing: 0.18em; }
 
-  /* Buttons (The House Standard): squared (2px), double keyline, never pills. Cormorant Garamond 600, uppercase,
-     tracked 0.18em, 15px. One class family, so every page follows.
-     .ledger-btn            secondary: graphite words, 1px keyline border
-     .ledger-btn--house     primary, "Plan with James": white fill, crimson words and border, inner crimson keyline
-                            (every .ledger-btn that opens /plan wears it too)
-     .ledger-btn--solid     a filled action that is not Plan with James: graphite fill, white words, inner white keyline
-     on dark or photographs: transparent, white words, 1px white border and an inner white keyline */
-  .ledger-btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
-    border: 1px solid #CFC8BF; border-radius: 2px; color: #2E2B28; background: #FFFFFF;
-    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 600; font-size: 15px; line-height: 1.1; letter-spacing: 0.18em; text-transform: uppercase;
-    padding: 10px 20px; cursor: pointer; min-height: 44px;
-    box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgba(46, 43, 40, 0.12);
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  /* THE BUTTON FAMILY (James approved, 2 Nov 2026, 17:59). Three levels, one set of classes, so every page follows.
+     1. THE LEDGER COLUMN, the main action ("Plan with James", Hold a cabin, Check rates, Enquire, Send):
+        .ledger-btn--house, .ledger-btn--solid, .ledger-btn--primary and every .ledger-btn that opens /plan. A flex row,
+        56px high (48px compact, full width on phones), 1px Ink border, square; the label in Manrope 12px 600 uppercase
+        0.24em; on the right a crimson cell 56px wide holding a white arrow that widens to 84px on hover and focus.
+        On dark or photographs the border and label go white; the cell stays crimson.
+     2. THE EDITORIAL LINE, quiet links and secondary actions (.ledger-btn, .ledger-btn-ghost): no box, Cormorant
+        Garamond italic, Ink words, a crimson arrow that stretches from 34px to 60px and a 1px crimson rule beneath that
+        grows from 28% to 100%. On dark the words go white and the arrow and rule take the soft crimson #D7A7AA.
+     3. THE SEAL, the signature moment, once (the homepage "James knows a place"): .jw-seal-cta.
+     The river waters re-tint the cell through --jw-action; The Exceptional Few keeps its own buttons (below). */
+
+  /* 2. The editorial line (the base) */
+  .ledger-btn, .ledger-btn-ghost {
+    position: relative; display: inline-flex; align-items: center; gap: 14px; cursor: pointer;
+    border: 0; border-radius: 0; background: none; box-shadow: none; padding: 0 0 9px 0; min-height: 0;
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; font-size: 22px; line-height: 1.15; letter-spacing: 0; text-transform: none;
+    color: #1A1816; text-decoration: none;
   }
-  .ledger-btn:hover { border-color: #2E2B28; color: #1A1816; box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px rgba(46, 43, 40, 0.35); }
-  .ledger-btn--solid { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; box-shadow: inset 0 0 0 3px #2E2B28, inset 0 0 0 4px rgba(255, 255, 255, 0.3); }
-  .ledger-btn--solid:hover { background: #1A1816; border-color: #1A1816; color: #FFFFFF; box-shadow: inset 0 0 0 3px #1A1816, inset 0 0 0 4px rgba(255, 255, 255, 0.4); }
-  .ledger-btn--house, a.ledger-btn[href^="/plan"] { background: #FFFFFF; border-color: var(--jw-action); color: var(--jw-action); box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 40%, transparent); }
-  .ledger-btn--house:hover, a.ledger-btn[href^="/plan"]:hover { background: #FFFFFF; border-color: var(--jw-action-deep); color: var(--jw-action-deep); box-shadow: inset 0 0 0 3px #FFFFFF, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 70%, transparent); }
-  .ledger-btn--light,
-  :is([class*="bg-ink"], [class*="bg-black"], [class*="bg-crimson"], [class*="bg-coast"], [class*="bg-forest"], .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn,
-  .ledger-btn[class*="!text-white"], .ledger-btn[class*="!text-paper"] {
-    background: transparent !important; color: #FFFFFF !important; border-color: rgba(255, 255, 255, 0.7) !important;
-    box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px rgba(255, 255, 255, 0.3) !important;
+  .ledger-btn-ghost { font-size: 20px !important; letter-spacing: 0 !important; }
+  .ledger-btn-ghost.uppercase { text-transform: none; }
+  .ledger-btn--lg { font-size: 28px; }
+  .ledger-btn::after, .ledger-btn-ghost::after {
+    content: ""; flex: none; width: 34px; height: 12px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%238B2525' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#8B2525, #8B2525) left center / calc(100% - 1px) 1.3px no-repeat;
+    transition: width .3s ease;
   }
-  .ledger-btn--light:hover,
-  :is([class*="bg-ink"], [class*="bg-black"], [class*="bg-crimson"], [class*="bg-coast"], [class*="bg-forest"], .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn:hover,
-  .ledger-btn[class*="!text-white"]:hover, .ledger-btn[class*="!text-paper"]:hover { background: rgba(255, 255, 255, 0.08) !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+  .ledger-btn::before, .ledger-btn-ghost::before { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 28%; background: #8B2525; transition: width .3s ease; }
+  .ledger-btn:is(:hover, :focus-visible)::after, .ledger-btn-ghost:is(:hover, :focus-visible)::after { width: 60px; }
+  .ledger-btn:is(:hover, :focus-visible)::before, .ledger-btn-ghost:is(:hover, :focus-visible)::before { width: 100%; }
+  .ledger-btn:focus-visible, .ledger-btn-ghost:focus-visible { outline: 2px solid #8B2525; outline-offset: 4px; }
   .ledger-btn:disabled { opacity: .5; cursor: not-allowed; }
-  .ledger-btn-ghost { color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 600; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid #CFC8BF; padding-bottom: 2px; }
-  .ledger-btn-ghost:hover { color: #1A1816; border-color: #2E2B28; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost, .ledger-btn--light, .ledger-btn[class*="!text-white"], .ledger-btn[class*="!text-paper"] { color: #FFFFFF !important; background: none !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn::before, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost::before, .ledger-btn--light::before, .ledger-btn[class*="!text-white"]::before { background: #D7A7AA; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn::after, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost::after, .ledger-btn--light::after, .ledger-btn[class*="!text-white"]::after { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%23D7A7AA' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#D7A7AA, #D7A7AA) left center / calc(100% - 1px) 1.3px no-repeat; }
+
+  /* 1. The Ledger column (the main action) */
+  .ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary {
+    display: inline-flex; align-items: center; justify-content: flex-start; gap: 0; height: 56px; min-height: 0;
+    padding: 0 calc(56px + 40px) 0 24px !important; border: 1px solid #1A1816 !important; border-radius: 0; background: #FFFFFF; box-shadow: none !important;
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-style: normal; font-weight: 600; font-size: 12px; line-height: 1; letter-spacing: 0.24em; text-transform: uppercase;
+    color: #1A1816 !important; white-space: nowrap; max-width: 100%;
+  }
+  .ledger-btn.ledger-btn--house::before, .ledger-btn.ledger-btn--solid::before, a.ledger-btn[href^="/plan"]::before, .ledger-btn.ledger-btn--primary::before { display: none; }
+  .ledger-btn.ledger-btn--house::after, .ledger-btn.ledger-btn--solid::after, a.ledger-btn[href^="/plan"]::after, .ledger-btn.ledger-btn--primary::after {
+    content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 56px; height: auto;
+    background: var(--jw-action) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12' fill='none' stroke='white' stroke-width='1.3'%3E%3Cpath d='M0 6h16.6M11.6 1l5 5-5 5'/%3E%3C/svg%3E") center / 18px 12px no-repeat !important; transition: width .3s ease;
+  }
+  .ledger-btn.ledger-btn--house:is(:hover, :focus-visible)::after, .ledger-btn.ledger-btn--solid:is(:hover, :focus-visible)::after, a.ledger-btn[href^="/plan"]:is(:hover, :focus-visible)::after, .ledger-btn.ledger-btn--primary:is(:hover, :focus-visible)::after { width: 84px; }
+  .ledger-btn.ledger-btn--house:focus-visible, .ledger-btn.ledger-btn--solid:focus-visible, a.ledger-btn[href^="/plan"]:focus-visible, .ledger-btn.ledger-btn--primary:focus-visible { outline: 2px solid #8B2525; outline-offset: 3px; }
+  .ledger-btn.ledger-btn--compact { height: 48px !important; font-size: 11px; padding: 0 calc(48px + 32px) 0 18px !important; }
+  .ledger-btn.ledger-btn--compact::after { width: 48px !important; }
+  .ledger-btn.ledger-btn--compact:is(:hover, :focus-visible)::after { width: 72px !important; }
+  @media (max-width: 1023px) {
+    .ledger-btn.ledger-btn--compact { height: 40px !important; font-size: 10.5px; letter-spacing: 0.18em; padding: 0 calc(34px + 10px) 0 11px !important; }
+    .ledger-btn.ledger-btn--compact::after { width: 34px !important; background-size: 14px 10px !important; }
+    .ledger-btn.ledger-btn--compact:is(:hover, :focus-visible)::after { width: 44px !important; }
+  }
+  /* in a 48px bar (On this page, the ship nav, the contact card, the phone record bar) the column sits at 40px */
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary) { height: 40px; font-size: 11px; padding: 0 calc(44px + 28px) 0 16px !important; }
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)::after { width: 44px; }
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary):is(:hover, :focus-visible)::after { width: 64px; }
+  /* full width on phones, in the page (not in the header or the bars) */
+  @media (max-width: 639px) { main :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary):not(:is(header, nav, #record-bar, [data-quiet-actions], .flex-nowrap) *) { display: flex; width: 100%; max-width: 100%; height: auto; min-height: 56px; padding-top: 14px !important; padding-bottom: 14px !important; white-space: normal; line-height: 1.35; } }
+  /* on dark or photographs: white border and label, the cell stays crimson */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--house, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--solid, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) a.ledger-btn[href^="/plan"], :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--primary, .ledger-btn--light:is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, .ledger-btn.ledger-btn--primary, [href^="/plan"]), :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)[class*="!text-white"] { background: transparent !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+  /* a paper card inside a dark ground (a hero's glance card) is light again */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--house, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--solid, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) a.ledger-btn[href^="/plan"], :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--primary { background: #FFFFFF !important; border-color: #1A1816 !important; color: #1A1816 !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn:not(:is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)), :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn-ghost { color: #1A1816 !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn::before { background: #8B2525; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn::after { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%238B2525' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#8B2525, #8B2525) left center / calc(100% - 1px) 1.3px no-repeat; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-eyebrow:not([style*="color"]), :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-muted { color: #6B635A; }
+  @media (prefers-reduced-motion: reduce) { .ledger-btn::after, .ledger-btn::before, .ledger-btn-ghost::after, .ledger-btn-ghost::before { transition: none; } }
+
+  /* 3. The seal: the signature moment, used once (the homepage "James knows a place") */
+  .jw-seal-cta { display: inline-flex; align-items: center; gap: 18px; color: #1A1816; text-decoration: none; }
+  .jw-seal-cta__seal { flex: none; width: 64px; height: 64px; border-radius: 9999px; display: grid; place-items: center; color: #F4E9E4;
+    background: radial-gradient(circle at 35% 30%, #A83636 0%, #8B2525 55%, #5E1717 100%); box-shadow: inset 0 0 0 3px rgba(94, 23, 23, 0.55), inset 0 0 0 5px rgba(255, 255, 255, 0.12), 0 6px 14px rgba(94, 23, 23, 0.28);
+    font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.02em; transition: transform .35s ease; }
+  .jw-seal-cta:is(:hover, :focus-visible) .jw-seal-cta__seal { transform: rotate(-14deg) scale(1.05); }
+  .jw-seal-cta:focus-visible { outline: 2px solid #8B2525; outline-offset: 6px; }
+  .jw-seal-cta__label { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; line-height: 1.1; }
+  .jw-seal-cta__sub { display: block; margin-top: 6px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #6B635A; }
+  @media (prefers-reduced-motion: reduce) { .jw-seal-cta__seal { transition: none; } }
+
+  /* The invitation band sits straight on the footer. */
+  :root:has(main .jw-invitation:last-child) .site-footer { margin-top: 0; }
+  /* Chips on a dark ground: light keylines and words. */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .house-chip { background: transparent; color: rgba(244, 242, 239, 0.88) !important; border-color: rgba(244, 242, 239, 0.35) !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .house-chip { background: #FFFFFF; color: #2E2B28 !important; border-color: #CFC8BF !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .house-chip--primary { border-color: #2E2B28 !important; }
   /* Chips, filter pills, date pills, tabs and search fields (The House Standard): squared, graphite and warm stone on
      white; active = graphite fill and white words, or a crimson underline. */
-  .jw-chip { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 11px; }
-  .jw-chip:hover { border-color: #2E2B28; }
-  .jw-chip[aria-pressed="true"], .jw-chip[aria-selected="true"], .jw-chip[aria-current="true"], .jw-chip[aria-current="page"], .jw-chip.is-active { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+  .house-chip { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 11px; }
+  .house-chip:hover { border-color: #2E2B28; }
+  .house-chip--primary { border-color: #2E2B28; }
+  .house-chip--quiet { color: #6B635A; }
+  .house-chip[aria-pressed="true"], .house-chip[aria-selected="true"], .house-chip[aria-current="true"], .house-chip[aria-current="page"], .house-chip.is-active { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
   .jw-tab[aria-selected="true"], .jw-tab[aria-current="page"], .jw-tab.is-active { box-shadow: inset 0 -2px 0 var(--jw-crimson); }
   /* No pills anywhere: an interactive or labelled element that asked for a full radius is squared to 2px.
      Dots, avatars, pins and the seal (no padding, or not interactive) keep their round. */
@@ -400,10 +465,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark .text-ink, .theme-ef-dark .ledger-display, .theme-ef-dark .ledger-h1 { color: var(--ef-ink); }
 .theme-ef-dark header:not(.bg-transparent) { background: var(--ef-surface) !important; border-color: var(--ef-line) !important; color: var(--ef-ink) !important; }
 .theme-ef-dark header .\!text-ink, .theme-ef-dark nav .\!text-ink { color: var(--ef-ink) !important; }
-/* The Exceptional Few keeps its own accent on buttons (protected), but squared like the house. */
-.theme-ef-dark .ledger-btn, .theme-ef-dark a.ledger-btn[href^="/plan"], .theme-ef-dark .ledger-btn--house { background: transparent; border-color: var(--jw-action); color: var(--jw-action); box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px color-mix(in srgb, var(--jw-action) 35%, transparent); }
-.theme-ef-dark .ledger-btn:hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:hover, .theme-ef-dark .ledger-btn--solid { background: var(--jw-action); border-color: var(--jw-action); color: var(--ef-surface); }
-.theme-ef-dark .ledger-btn--solid:hover { background: var(--jw-action-deep); border-color: var(--jw-action-deep); color: var(--ef-surface); }
+/* The Exceptional Few keeps its own buttons (protected): its own accent, squared, no Ledger column cell or editorial arrow. */
+.theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost)::before, .theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost)::after { display: none !important; }
+.theme-ef-dark .ledger-btn, .theme-ef-dark a.ledger-btn[href^="/plan"], .theme-ef-dark .ledger-btn--house, .theme-ef-dark .ledger-btn--solid { height: auto !important; padding: 10px 20px !important; border: 1px solid var(--jw-action) !important; background: transparent !important; color: var(--jw-action) !important; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+.theme-ef-dark .ledger-btn:hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:hover, .theme-ef-dark .ledger-btn--solid { background: var(--jw-action) !important; color: var(--ef-surface) !important; }
 .theme-ef-dark #record-bar { background: var(--ef-surface) !important; border-color: var(--ef-line); color: var(--ef-ink); }
 .theme-ef-dark .ef-rule { border-color: var(--ef-line); }
 .theme-ef-dark .bg-ef-earth { background: var(--ef-earth); }

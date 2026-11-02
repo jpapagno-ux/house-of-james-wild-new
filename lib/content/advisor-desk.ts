@@ -85,4 +85,4 @@ export const deskCounts = (d: DeskProfile) => ({
   slept: d.entries.filter((e) => e.theirs && (e.theirs.mark === "Stayed" || e.theirs.mark === "Sailed It")).length,
 });
 
-export const GREEN_INK = "#2F6B3A"; // the advisor's ink, approved Oct 2026
+export const GREEN_INK = "#6B635A"; // the advisor's ink: Warm Stone text under the House Standard (was green #2F6B3A, Oct 2026)

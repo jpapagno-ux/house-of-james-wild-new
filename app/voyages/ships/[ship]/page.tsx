@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import RecordShip from "@/components/ships/RecordShip";
 import { aliikaiExtra } from "@/components/ships/AliikaiShip";
 import { StayBeforeYouSail } from "@/components/stays/IndonesiaPairings";
+import CharterJourneys from "@/components/ships/CharterJourneys";
+import { JOURNEY_FLEETS, sailsJourneys } from "@/lib/content/ships/journeys";
 import { FILMS } from "@/lib/content/films";
 import { SHIPS, shipBySlug, shipPath, sistersOf } from "@/lib/content/ships";
 import { buildMetadata } from "@/lib/seo";
@@ -31,5 +33,8 @@ export default async function ShipPage({ params }: P) {
   // Indonesia cross-sell (B7): "Stay before you sail" after the ship, for the Indonesian yachts.
   const base = e.slug === "aliikai" ? aliikaiExtra() : {};
   const sail = <StayBeforeYouSail vessel={e.slug} name={e.data.name} />;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{sail}</> }} ef={exceptionalFewForVessel(e.slug)} />;
+  // The signature charter journeys (James, 2 Nov 2026) on the Rascal Voyages and Silolona Sojourns yachts.
+  const fleet = JOURNEY_FLEETS.find((f) => f.ships.includes(e.slug));
+  const journeys = sailsJourneys(e.slug) ? <CharterJourneys ship={e.data.name} ships={[e.slug]} partner={fleet?.partner} /> : null;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, after: <>{base.after}{journeys}{sail}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

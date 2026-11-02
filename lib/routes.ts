@@ -97,6 +97,15 @@ export const BUILT: string[] = [
   "/voyages/ships/galaxy-orion-yacht",
   "/voyages/ships/hermes-galapagos",
   "/voyages/ships/amandira",
+  // The Indonesian fleets and their signature charter weeks (James, 2 Nov 2026)
+  "/voyages/ships/rascal",
+  "/voyages/ships/rebel",
+  "/voyages/ships/el-aleph",
+  "/voyages/ships/silolona",
+  "/voyages/ships/si-datu-bua",
+  "/voyages/ships/celestia",
+  "/voyages/indonesia/komodo-and-flores-charter",
+  "/voyages/indonesia/raja-ampat-and-misool-charter",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

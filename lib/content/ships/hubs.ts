@@ -31,7 +31,7 @@ function brief(c: ShipCardData): string {
   const s = e.data;
   const g = s.glance?.guests ?? factOf(s, /guest/i);
   const gw = g ? g.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to") : null;
-  const parts = [c.eyebrow.replace(" · ", ", ").replace(/^\w/, (x) => x.toLowerCase()), nightsLabel(s), gw ? `${gw} guests` : null, c.price ? (c.price.label === "From" ? `from ${c.price.amount}` : c.price.label === "Journeys" ? `${s.operator} journeys from ${c.price.amount}` : c.price.amount.toLowerCase()) : null, /^launching/.test(s.status) ? s.status : null];
+  const parts = [c.eyebrow.replace(" · ", ", ").replace(/^\w/, (x) => x.toLowerCase()), nightsLabel(s), gw ? `${gw} guests` : null, c.price ? (c.price.label === "From" ? `from ${c.price.amount}` : c.price.label === "Yacht / night" ? `the whole yacht from ${c.price.amount} a night` : c.price.label === "Journeys" ? `${s.operator} journeys from ${c.price.amount}` : c.price.amount.toLowerCase()) : null, /^launching/.test(s.status) ? s.status : null];
   return `${c.name} (${parts.filter(Boolean).join("; ")})`;
 }
 const briefs = (cs: ShipCardData[]) => cs.map(brief).join(". ");
@@ -73,7 +73,7 @@ export function typeHub(t: VoyageType): HubProps {
       FARES,
     ],
     adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's and Amandira's routes in Raja Ampat and Komodo: pick one and the globe sails it day by day." } };
+    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "The sailing ships' published routes in Raja Ampat, Komodo and the Spice Islands: pick one and the globe sails it day by day." } };
   if (t === "expedition") {
     const gal = cards.filter((c) => c.waters.includes("galapagos")), pol = cards.filter((c) => c.waters.includes("antarctica"));
     const where = [gal.length ? `${list(gal.map((c) => c.name))} in the Galápagos` : "", pol.length ? `${list(pol.map((c) => c.name))} in Antarctica, South Georgia, the Falklands and Patagonia` : ""].filter(Boolean);
@@ -90,7 +90,7 @@ export function typeHub(t: VoyageType): HubProps {
   const a = registryShip("aliikai")!;
   return { ...base,
     title: "Private Yacht and Small-Ship Charters", intro: T.line,
-    answer: `A whole-ship charter gives one party the boat, her crew and her route. Aliikai, for example: ${ALIIKAI_SHIP.charter.text} ${cards.length} ships charter whole in all: ${list(cards.map((c) => c.name))}. Charters other than Aliikai's are priced on enquiry, and James confirms every rate live.`,
+    answer: `A whole-ship charter gives one party the boat, her crew and her route. Aliikai, for example: ${ALIIKAI_SHIP.charter.text} ${cards.length} ships charter whole in all: ${list(cards.map((c) => c.name))}. Rascal Voyages and Celestia publish nightly rates for their yachts too; the others are priced on enquiry, and James confirms every rate live.`,
     faqs: [
       { q: "What does a whole-yacht charter include?", a: `On Aliikai: the whole yacht for up to 15 guests, crewed and catered, on your route and dates, at ${usd(a.charter!.from!)} a night plus 11% tax (minimum 7 nights in Raja Ampat, 3 in Komodo). Each ship's page says what her operator includes.` },
       { q: "Which ships can we charter?", a: `${list(cards.map((c) => c.name))}.` },
@@ -146,16 +146,19 @@ export function watersHub(w: Waters): HubProps {
   if (w === "indonesia") {
     const s = ALIIKAI_SHIP;
     const amandira = cards.some((c) => c.slug === "amandira" && c.page);
+    const rascal = registryShip("rascal"), rebel = registryShip("rebel"), celestia = registryShip("celestia");
     return { ...base,
-      title: "Indonesia by Phinisi: Raja Ampat and Komodo", intro: "Hand-built phinisis and a wooden schooner in Raja Ampat, Komodo and the Banda Sea.",
-      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024.${amandira ? ` Aman's Amandira, a 52-metre phinisi for up to 10 guests in five cabins, sails as a private charter; Aman publishes no rates, so James quotes her.` : ""}${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
+      title: "Indonesia by Phinisi: Raja Ampat and Komodo", intro: "Hand-built phinisis and yachts in Raja Ampat, Komodo and the Banda Sea, by the cabin or chartered whole.",
+      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024. Whole yachts charter from ${usd(rascal!.charter!.from!)} a night plus taxes on Rascal Voyages' Rascal and El Aleph (${usd(rebel!.charter!.from!)} on Rebel) and ${usd(celestia!.charter!.from!)} plus VAT on Celestia in 2026; Silolona Sojourns quotes Silolona and Si Datu Bua on request${amandira ? ", and Aman quotes Amandira" : ""}.${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
       faqs: [
-        { q: "When is the best time for Raja Ampat and Komodo by boat?", a: "Aliikai sails Komodo from May to September, the Spice Islands in October and Raja Ampat from November to April, when its seas are calmest." },
-        { q: "Can we charter a phinisi privately?", a: `Yes. Aliikai is ${usd(s.charter.rate)} a night plus 11% tax for up to 15 guests, minimum 7 nights in Raja Ampat and 3 in Komodo.${amandira ? " Amandira is chartered only, for up to 10 guests; Aman quotes her on request." : ""}` },
+        { q: "When is the best time for Raja Ampat and Komodo by boat?", a: "Indonesia's tourism board names October to April for Raja Ampat, and April to June and September to December for Komodo. The yachts follow the same year: Komodo from about May to September or October, Raja Ampat from October or November to April, with the Spice Islands on the crossings between." },
+        { q: "Can we charter a phinisi privately?", a: `Yes, every yacht here charters whole. Published rates: Aliikai ${usd(s.charter.rate)} a night plus 11% tax for up to 15; Rascal and El Aleph ${usd(rascal!.charter!.from!)} and Rebel ${usd(rebel!.charter!.from!)} a night plus taxes for up to 10; Celestia ${usd(celestia!.charter!.from!)} a night plus VAT in 2026 for up to 14. Silolona, Si Datu Bua${amandira ? " and Amandira" : ""} are quoted on request.` },
+        { q: "Can we book just one cabin?", a: "Yes, on Aliikai's shared voyages, and on Rascal Voyages' cabin voyages aboard Rascal and Rebel, from US$2,500 a night per cabin plus taxes. Silolona Sojourns, Celestia and Aman charter whole only." },
+        { q: "What does a week's charter look like?", a: "Two signature weeks run on both the Rascal Voyages and Silolona Sojourns fleets: Komodo and Flores, six nights from Labuan Bajo, and Raja Ampat and Misool, seven nights from Sorong. Each has its own page with the day by day, the season and the yachts." },
         FARES,
       ],
       adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Phinisis Sail?", line: "Aliikai's and Amandira's Raja Ampat and Komodo voyages: pick one and the globe sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Indonesian Yachts Sail?", line: "Every published Indonesian route on one chart: pick a yacht and a route, and the globe sails it day by day." } };
   }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],

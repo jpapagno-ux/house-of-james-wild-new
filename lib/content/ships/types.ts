@@ -112,7 +112,23 @@ export type ShipRecord = {
   lengthFares?: LengthFare[];
   /** Payment and cancellation terms as the operator publishes them, printed under Dates & rates. */
   terms?: string[];
+  /** Whole-yacht charter rates as the operator publishes them (Indonesia, James, 2 Nov 2026): one per year or
+   *  one standing rate, in USD, with the basis in words ("a night for the whole yacht, plus taxes"). */
+  charterRates?: { label: string; rate: number }[];
+  charterBasis?: string;
+  /** A published "from" for single cabins on the operator's scheduled voyages (Rascal and Rebel), dates on request. */
+  cabinFrom?: { rate: number; basis: string };
+  /** A line under the gallery credit (Silolona: some photographs may show her sister). */
+  galleryNote?: string;
+  /** The founder's testimony for a vetted vessel he has not been aboard (the NIHI Rote wording, lib/ledger/status.ts). */
+  founder?: { eyebrow: string; proof: string };
 };
+
+/** The lowest published whole-yacht nightly rate, still current (a year label drops once it has passed). */
+export function charterFrom(s: { charterRates?: { label: string; rate: number }[] }, on: string = today()): number | null {
+  const live = (s.charterRates ?? []).filter((r) => !/^\d{4}$/.test(r.label) || !isPast(r.label, on));
+  return live.length ? Math.min(...live.map((r) => r.rate)) : null;
+}
 
 /** The rate basis in words, for Dates & rates and the cabin cards. */
 export const rateBasisOf = (s: Pick<ShipRecord, "rateBasis">): RateBasis => s.rateBasis ?? "per-cruise";
@@ -206,7 +222,7 @@ export function journeyFrom(s: Pick<ShipRecord, "departures">): { price: number;
 /** What a card or glance bar says about price: a cruise fare, an A&K journey fare (labelled), or on request. */
 // Ship records reach the pages with past departures already removed (lib/dates.ts,
 // withActiveDepartures), so every "from" here reads only what is still to sail.
-export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; published?: PublishedFares[]; fareBasis?: string; lengthFares?: LengthFare[] }): { kind: "cruise" | "journey" | "request" | "tba"; label: string; amount: string; basis: string } {
+export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthDeparture[]; published?: PublishedFares[]; fareBasis?: string; lengthFares?: LengthFare[]; charterRates?: { label: string; rate: number }[]; charterBasis?: string }): { kind: "cruise" | "journey" | "request" | "tba" | "charter"; label: string; amount: string; basis: string } {
   // Fares by cruise length only (no dated departures published): the lowest, with its length and year.
   const lf = !s.departures.length ? lengthFrom(s) : null;
   if (lf) return { kind: "cruise", label: "From", amount: `US$${lf.price.toLocaleString("en-US")}`, basis: `per person, cruise only, ${lf.fare.nights} nights, ${lf.year} fare` };
@@ -216,6 +232,9 @@ export function priceLine(s: Pick<ShipRecord, "departures"> & { monthly?: MonthD
   // Fares published by year and length, no dated departures: the lowest, on the operator's own basis.
   const pf = !s.departures.length ? publishedFrom(s) : null;
   if (pf) return { kind: "cruise", label: "From", amount: `US$${pf.toLocaleString("en-US")}`, basis: `${s.fareBasis ?? "per person, as published"}, cruise only` };
+  // Whole-yacht charter only, at a published nightly rate (Rascal Voyages, Celestia): the yacht, never a per person fare.
+  const ch = !s.departures.length ? charterFrom(s) : null;
+  if (ch) return { kind: "charter", label: "Charter from", amount: `US$${ch.toLocaleString("en-US")}`, basis: s.charterBasis ?? "a night for the whole yacht, as published" };
   // No published (or no remaining) dates or fares: "Ask us", never an invented "from".
   if (!s.departures.length) return { kind: "tba", label: "Rates", amount: "Ask us", basis: "no published dates or fares to show; ask James" };
   const f = fromPrice(s);

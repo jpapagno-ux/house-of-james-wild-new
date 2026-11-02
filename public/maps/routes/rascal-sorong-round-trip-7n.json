@@ -1,0 +1,157 @@
+{
+ "id": "rascal-sorong-round-trip-7n",
+ "type": "voyage",
+ "destination": "raja-ampat",
+ "title": "Raja Ampat, 7 nights aboard Rascal",
+ "subtitle": "7 nights · Sorong round trip · Rascal",
+ "days": {
+  "1": "Sorong to Kali Biru, Waigeo",
+  "2": "Mioskon, Kri and Mansuar",
+  "3": "The Yeben archipelago",
+  "4": "Arborek and Penemu",
+  "5": "Misool: Tomolol and Yilliet",
+  "6": "Fiabacet and Tomolol",
+  "7": "Sagof and Balbulol",
+  "8": "Sorong"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Kali Biru",
+   "lat": -0.3,
+   "lng": 130.74,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cape Kri",
+   "lat": -0.556,
+   "lng": 130.687,
+   "mode": "sea",
+   "path": [
+    [
+     130.74,
+     -0.3
+    ],
+    [
+     130.687,
+     -0.556
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Yeben",
+   "lat": -0.62,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.687,
+     -0.556
+    ],
+    [
+     130.3,
+     -0.62
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Arborek",
+   "lat": -0.565,
+   "lng": 130.52,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -0.62
+    ],
+    [
+     130.52,
+     -0.565
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Tomolol, Misool",
+   "lat": -1.93,
+   "lng": 130.42,
+   "mode": "sea",
+   "path": [
+    [
+     130.52,
+     -0.565
+    ],
+    [
+     130.42,
+     -1.93
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Fiabacet, Misool",
+   "lat": -2.04,
+   "lng": 130.36,
+   "mode": "sea",
+   "path": [
+    [
+     130.42,
+     -1.93
+    ],
+    [
+     130.36,
+     -2.04
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Balbulol, Misool",
+   "lat": -1.98,
+   "lng": 130.12,
+   "mode": "sea",
+   "path": [
+    [
+     130.36,
+     -2.04
+    ],
+    [
+     130.12,
+     -1.98
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Sorong",
+   "lat": -0.8762,
+   "lng": 131.2558,
+   "mode": "sea",
+   "path": [
+    [
+     130.12,
+     -1.98
+    ],
+    [
+     131.2558,
+     -0.8762
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

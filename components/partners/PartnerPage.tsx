@@ -18,6 +18,8 @@ import { partnerPath, type Partner } from "@/lib/content/partners";
 import { volumeInk } from "@/lib/volumes";
 import { absoluteUrl } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import FounderProof from "@/components/record/FounderProof";
+import CharterJourneys from "@/components/ships/CharterJourneys";
 
 // The reusable partner page (/partners/<slug>, James, 2 Nov 2026): who they are, how they work,
 // the fleet (ship pages), the itineraries (their pages on this site), what sets them apart in
@@ -50,6 +52,7 @@ export default function PartnerPage({ p }: { p: Partner }) {
             </figure>
           </header>
           <AnswerBlock>{p.answer}</AnswerBlock>
+          {p.founder && <FounderProof proof={p.founder.proof} eyebrow={p.founder.eyebrow} className="mt-10 max-w-3xl" />}
 
           <section className={SEC} aria-labelledby="who-h">
             <SectionHead eyebrow="Who they are" title={`Who Are ${p.name}?`} icon="mountain-sun" />
@@ -104,6 +107,8 @@ export default function PartnerPage({ p }: { p: Partner }) {
               {p.itineraries.href && <p className="mt-4"><Link href={p.itineraries.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>{p.itineraries.hrefLabel ?? "See them all"}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>}
             </section>
           )}
+
+          {p.journeys && p.journeys.length > 0 && <CharterJourneys ships={p.journeys} partner={p.slug} title={`Where Do ${p.name}${p.name.endsWith("s") ? "'" : "'s"} Yachts Go for a Week?`} />}
 
           <OfferPanel offers={offersForPartner(p.slug)} volume="voyages" title={`Offers from ${p.name}`} />
 

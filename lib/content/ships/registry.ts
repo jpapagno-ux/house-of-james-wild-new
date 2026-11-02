@@ -232,16 +232,46 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // No child age or single supplement published (a private charter).
     traits: { childNote: "No age policy published by Aman", activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow", "sailing"], dives: true } },
 
+  // The Indonesian yacht fleets (James, 2 Nov 2026; voyages plan Parts 12 and 16), filed from each operator's own
+  // site. Rascal Voyages' three yachts retire the library Stay record "rascal-voyages" (its URL 301s to the partner
+  // page); Silolona and Celestia move from their voyage-labelled stay pages (301s to the ship pages). Rascal and
+  // Silolona are partners, founder vetted and founder favourites (James has not been aboard); Celestia is partner
+  // sourced, with no founder mark. Rates only as the operators publish them; commercial terms stay in the library.
+  // rascalvoyages.com: whole yacht only from Rascal Voyages' published nightly rate; cabin voyages on Rascal and Rebel;
+  // "We welcome little Rascals" (no minimum age); a PADI dive instructor and full scuba kit; kayaks and paddleboards;
+  // Komodo dragon walks, village visits, treks; yoga and massage on request.
+  ...([
+    ["rascal", "Rascal", 12000, { connecting: false }],
+    ["rebel", "Rebel", 13500, { connecting: false }],
+    ["el-aleph", "El Aleph", 12000, { connecting: true }],
+  ] as const).map(([slug, name, from, x]): RegistryShip => ({
+    slug, name, operator: "Rascal Voyages", kind: "yacht", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-07", "PATH-04"] }, charter: { whole: true, from, basis: "night" }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "rascal-voyages",
+    traits: { childNote: "Children welcome (\"We welcome little Rascals\"); no minimum age published", ...(x.connecting ? { connecting: true } : {}), activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow"], dives: true },
+  })),
+  // silolona.com: chartered whole only, no rates published; child extra beds in every cabin, no minimum age; diving with a
+  // PADI dive instructor, kayaking, paddleboarding and sport fishing; Banda, Asmat and Toraja culture; massage aboard;
+  // traditional sailing phinisis. Pathways as James assigned Silolona (Part 2): A Place of Our Own first, then Between
+  // Tides and Rooted in Place (Banda's spice history, Asmat and Toraja); The Art of Stillness dropped for the two-secondary rule.
+  ...([["silolona", "Silolona", "silolona-sojourns"], ["si-datu-bua", "Si Datu Bua", undefined]] as const).map(([slug, name, stay]): RegistryShip => ({
+    slug, name, operator: "Silolona Sojourns", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
+    pathway: { primary: "PATH-07", secondary: ["PATH-02", "PATH-08"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, ...(stay ? { staySlug: stay } : {}),
+    traits: { childNote: "Children welcome; child extra beds in every cabin, no minimum age published", activities: ["wildlife", "diving", "snorkelling", "kayaking", "culture", "slow", "sailing"], dives: true },
+  })),
+  // celestiayacht.com: whole yacht only, US$13,500 a night plus VAT in 2026; no age limit published; dive master and Nitrox;
+  // kayaks and paddleboards; the Padar and Gili Lawa treks; massages; a phinisi. Partner sourced, no founder mark.
+  { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-07", "PATH-06"] }, charter: { whole: true, from: 13500, basis: "night" }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "celestia-yacht",
+    traits: { childNote: "No age limit published; families with young children have sailed her", activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "slow"], dives: true } },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
-  { slug: "celestia", name: "Celestia", operator: "Celestia Yacht", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "celestia-yacht" },
-  { slug: "silolona", name: "Silolona", operator: "Silolona", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "silolona-sojourns" },
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
 ];
 
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
-  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and a wooden schooner in Indonesia." },
+  sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea." },
   expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, and Polar Crossings: Antarctica21's polar air-cruises and voyages." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };

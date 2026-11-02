@@ -12,7 +12,7 @@ LABELS = {
   "indonesia": [{"text": "Indonesia", "lat": -4.0, "lng": 125.0, "kind": "sea"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
-DEST = {"From Sorong": "raja-ampat"}
+DEST = {"From Sorong": "raja-ampat", "Sorong round trip": "raja-ampat", "Ambon to Sorong": "indonesia"}
 OUT = os.path.join(ROOT, "public/maps/routes")
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -43,3 +43,24 @@ for waters in LABELS:
                  "fallback": {"labels": LABELS[waters]}}
         json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
         print(rid)
+
+# The signature charter journeys (lib/content/ships/journeys.json, James 2 Nov 2026): one route file each,
+# <slug>-<nights>n, the same jw-route v1 shape as the ship routes, with the dive flags as chart labels.
+J = json.load(open(os.path.join(ROOT, "lib/content/ships/journeys.json")))
+for j in J["journeys"]:
+    rid = f"{j['slug']}-{j['nights']}n"
+    stops, prev = [], None
+    for d in j["days"]:
+        st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
+        if prev is None: st["kind"] = "port"
+        else:
+            st["mode"] = "sea"; st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
+        stops.append(st); prev = d
+    stops[-1]["kind"] = "port"
+    route = {"id": rid, "type": "voyage", "destination": j["region"], "title": j["name"],
+             "subtitle": f"A typical week · {j['nights']} nights · from {j['embark'].split(',')[0]}",
+             "days": {str(d["day"]): d["title"] for d in j["days"]}, "stops": stops,
+             "map_note": "Course and positions approximate, not a navigational chart; days indicative",
+             "fallback": {"labels": LABELS["indonesia"] + [{"text": f"⚑ {f['name']}", "lat": f["lat"], "lng": f["lng"], "kind": "sea-small"} for f in j["dive"]]}}
+    json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
+    print(rid)

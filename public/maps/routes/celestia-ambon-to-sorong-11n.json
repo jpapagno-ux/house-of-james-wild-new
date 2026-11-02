@@ -1,0 +1,229 @@
+{
+ "id": "celestia-ambon-to-sorong-11n",
+ "type": "voyage",
+ "destination": "indonesia",
+ "title": "12 Days, 11 Nights Spice Islands & Misool, Ambon to Sorong aboard Celestia",
+ "subtitle": "11 nights · Ambon to Sorong · Celestia",
+ "days": {
+  "1": "Tulehu Bay and Molana",
+  "2": "Saparua and Nusa Laut",
+  "3": "Suanggi and Banda Neira",
+  "4": "Run, Neilaka and Ai",
+  "5": "Banda Besar",
+  "6": "Hatta and Sahil",
+  "7": "Koon",
+  "8": "Misool",
+  "9": "Misool",
+  "10": "Misool",
+  "11": "Misool to Sorong",
+  "12": "Sorong"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tulehu, Ambon",
+   "lat": -3.588,
+   "lng": 128.33,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Nusa Laut",
+   "lat": -3.67,
+   "lng": 128.78,
+   "mode": "sea",
+   "path": [
+    [
+     128.33,
+     -3.588
+    ],
+    [
+     128.78,
+     -3.67
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Banda Neira",
+   "lat": -4.525,
+   "lng": 129.9,
+   "mode": "sea",
+   "path": [
+    [
+     128.78,
+     -3.67
+    ],
+    [
+     129.9,
+     -4.525
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Run",
+   "lat": -4.54,
+   "lng": 129.68,
+   "mode": "sea",
+   "path": [
+    [
+     129.9,
+     -4.525
+    ],
+    [
+     129.68,
+     -4.54
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Banda Besar",
+   "lat": -4.55,
+   "lng": 129.93,
+   "mode": "sea",
+   "path": [
+    [
+     129.68,
+     -4.54
+    ],
+    [
+     129.93,
+     -4.55
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Hatta",
+   "lat": -4.58,
+   "lng": 130.06,
+   "mode": "sea",
+   "path": [
+    [
+     129.93,
+     -4.55
+    ],
+    [
+     130.06,
+     -4.58
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Koon",
+   "lat": -3.85,
+   "lng": 130.87,
+   "mode": "sea",
+   "path": [
+    [
+     130.06,
+     -4.58
+    ],
+    [
+     130.87,
+     -3.85
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Misool",
+   "lat": -2.05,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.87,
+     -3.85
+    ],
+    [
+     130.3,
+     -2.05
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Misool",
+   "lat": -2.05,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -2.05
+    ],
+    [
+     130.3,
+     -2.05
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Misool",
+   "lat": -2.05,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -2.05
+    ],
+    [
+     130.3,
+     -2.05
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Misool",
+   "lat": -2.05,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -2.05
+    ],
+    [
+     130.3,
+     -2.05
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Sorong",
+   "lat": -0.8762,
+   "lng": 131.2558,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -2.05
+    ],
+    [
+     131.2558,
+     -0.8762
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

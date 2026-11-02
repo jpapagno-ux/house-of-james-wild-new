@@ -24,6 +24,33 @@ export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht";
 
+/** What a guest can do on her voyages, as her operator's own material describes it. */
+export type Activity = "wildlife" | "diving" | "snorkelling" | "kayaking" | "hiking" | "culture" | "slow" | "sailing";
+export const ACTIVITIES: Record<Activity, string> = {
+  wildlife: "Wildlife", diving: "Diving", snorkelling: "Snorkelling", kayaking: "Kayaking", hiking: "Hiking", culture: "Culture", slow: "Slow or wellness", sailing: "Sailing",
+};
+/** The single supplement as the operator publishes it: a percentage over the two-sharing fare (`pct` the lowest,
+ *  `max` the highest where it varies by season or cabin), none (a solo
+ *  cabin that carries none), or "applies" when the operator says one is charged but gives no figure. */
+export type SingleSupplement = { kind: "percent"; pct: number; max?: number; note?: string } | { kind: "none"; note?: string } | { kind: "applies"; note?: string };
+/**
+ * Facts for search and the category pages (James, 2 Nov 2026), read only from her filed record (which
+ * came from the operator's site). A field is left out where the operator does not publish it: never a
+ * guess, and never `false` for "not mentioned".
+ *   minChildAge: youngest age on shared departures (0 = all ages); childNote: the operator's wording
+ *   single:      the single supplement; connecting: connecting cabins published; kidsProgramme: a named
+ *                children's programme on board; activities: what the voyages offer; dives: guided diving aboard
+ */
+export type ShipTraits = {
+  minChildAge?: number;
+  childNote?: string;
+  single?: SingleSupplement;
+  connecting?: boolean;
+  kidsProgramme?: boolean;
+  activities?: Activity[];
+  dives?: boolean;
+};
+
 export type RegistryShip = {
   slug: string;
   name: string;
@@ -40,50 +67,94 @@ export type RegistryShip = {
   page: boolean;
   /** The vessel's record in the Stay library, when filed there. */
   staySlug?: string;
+  /** Search and category facts (see ShipTraits); absent until her record is filed. */
+  traits?: ShipTraits;
 };
 
 export const SHIP_REGISTRY: RegistryShip[] = [
   // Ships with pages ---------------------------------------------------------
   { slug: "aliikai", name: "Aliikai", operator: "Aliikai Voyage", kind: "phinisi", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"],
-    pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] }, charter: { whole: true, from: 10900, basis: "night" }, rateBasis: "per-night", status: "sailing", page: true, staySlug: "aliikai-voyage" },
+    pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] }, charter: { whole: true, from: 10900, basis: "night" }, rateBasis: "per-night", status: "sailing", page: true, staySlug: "aliikai-voyage",
+    // aliikai-voyage.com via her voyage files: single supplement 50% of the nightly rate; a full dive centre with Nitrox;
+    // kayaks and paddleboards; the bird of paradise hike, Komodo dragon walks and village visits; yoga and massages
+    // (owner's record STY-2026-882896); a phinisi under sail. No child age or connecting cabins published.
+    traits: { single: { kind: "percent", pct: 50, note: "50% of the nightly rate" }, activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow", "sailing"], dives: true } },
   { slug: "nile-adventurer", name: "Nile Adventurer", operator: "A&K Sanctuary", kind: "riverboat", types: ["river"], waters: ["nile"], country: ["Egypt"],
-    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // abercrombiekent.com: 10 and over; single rates about 1.5 times the sharing rate; Egyptologist-led temples; massage room.
+    traits: { minChildAge: 10, childNote: "10 and over; 15 and under share with an adult", single: { kind: "percent", pct: 50, note: "Single rates about 1.5 times the sharing rate" }, activities: ["culture", "slow"] } },
   { slug: "nile-seray", name: "Nile Seray", operator: "A&K Sanctuary", kind: "riverboat", types: ["river"], waters: ["nile"], country: ["Egypt"],
-    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-11", page: true },
+    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-11", page: true,
+    // abercrombiekent.com: 6 and over; single rates about 1.5 times the sharing rate; spa and gym.
+    traits: { minChildAge: 6, childNote: "6 and over; 15 and under share with an adult", single: { kind: "percent", pct: 50, note: "Single rates about 1.5 times the sharing rate" }, activities: ["culture", "slow"] } },
   // A&K sells Sun Boat III as a private charter or inside its Ultimate Egypt journey (abercrombiekent.com).
   { slug: "sun-boat-iii", name: "Sun Boat III", operator: "A&K Sanctuary", kind: "riverboat", types: ["river", "charter"], waters: ["nile"], country: ["Egypt"],
-    pathway: { primary: "PATH-08", secondary: [] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-08", secondary: [] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    // abercrombiekent.com: 10 and over; "a single supplement applies" (no figure published).
+    traits: { minChildAge: 10, childNote: "10 and over; under 15 share with an adult", single: { kind: "applies", note: "A&K says a single supplement applies; the figure is on request" }, activities: ["culture"] } },
   { slug: "sun-boat-iv", name: "Sun Boat IV", operator: "A&K Sanctuary", kind: "riverboat", types: ["river"], waters: ["nile"], country: ["Egypt"],
-    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // abercrombiekent.com: 10 and over; single rates published alongside (1.35 times the sharing rate May to September 2027,
+    // 1.5 times in the other rate periods); massage room and gym.
+    traits: { minChildAge: 10, childNote: "10 and over; under 15 share with an adult", single: { kind: "percent", pct: 35, max: 50, note: "35% from May to September 2027, 50% in the other rate periods" }, activities: ["culture", "slow"] } },
   { slug: "zein-nile-chateau", name: "Zein Nile Chateau", operator: "A&K Sanctuary", kind: "dahabiya", types: ["river", "charter"], waters: ["nile"], country: ["Egypt"],
-    pathway: { primary: "PATH-08", secondary: ["PATH-07"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-08", secondary: ["PATH-07"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    // abercrombiekent.com: children of all ages; a dahabiya under sail (slow sailing, Part 3). Single cabins only inside A&K journeys.
+    traits: { minChildAge: 0, childNote: "All ages", activities: ["culture", "sailing", "slow"] } },
 
   // andbeyond.com sails her in the Peruvian Amazon from Nauta, via Iquitos (the library record says Brazil; flagged).
   { slug: "beyond-amazon-explorer", name: "andBeyond Amazon Explorer", operator: "andBeyond", kind: "river-yacht", types: ["river"], waters: ["amazon"], country: ["Peru"],
-    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true, staySlug: "beyond-amazon-explorer" },
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true, staySlug: "beyond-amazon-explorer",
+    // andbeyond.com: 8 and over on scheduled cruises; single supplement 25%; eight Luxury Suites connect in pairs; WILDchild
+    // programme; skiffs, kayaks, forest walks, river communities; wellness centre.
+    traits: { minChildAge: 8, childNote: "8 and over on scheduled cruises; any age on a private charter", single: { kind: "percent", pct: 25 }, connecting: true, kidsProgramme: true, activities: ["wildlife", "kayaking", "hiking", "culture", "slow"] } },
 
   // More Amazon ships (filed 2 Nov 2026 from each operator's site). MV Premium is Brazil's one ship for now.
   { slug: "aria-amazon", name: "Aria Amazon", operator: "Aqua Expeditions", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Peru"],
-    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // Aqua Expeditions' site: two pairs of connecting suites; jungle walks, a village visit, the Manatee Rescue Center. No child age published.
+    traits: { connecting: true, activities: ["wildlife", "hiking", "culture"] } },
   { slug: "delfin-iii", name: "Delfin III", operator: "Delfín Amazon Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Peru"],
-    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // Delfín's site: 7 and over; single supplement 50% (75% on the top suites, waived for two solo guests a sailing); kayaking, pink dolphins, spa.
+    traits: { minChildAge: 7, childNote: "7 and over", single: { kind: "percent", pct: 50, max: 75, note: "50% on Suites and Upper Suites, 75% on Owner's and Corner Suites; waived for up to two solo guests per departure outside the holidays" }, activities: ["wildlife", "kayaking", "hiking", "culture", "slow"] } },
   { slug: "anakonda-amazon-cruise", name: "Anakonda", operator: "Anakonda Amazon Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Ecuador"],
-    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // Anakonda's site: four interconnected Standard Suites; birding, river dolphins, communities, a night forest walk; spa.
+    traits: { connecting: true, activities: ["wildlife", "hiking", "culture", "slow"] } },
   { slug: "amazon-clipper-premium", name: "MV Premium", operator: "Amazon Clipper Cruises", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Brazil"],
-    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // Amazon Clipper's site: canoe outings for caimans and birds, a jungle walk, a community visit.
+    traits: { activities: ["wildlife", "hiking", "culture"] } },
 
   // The Galapagos (filed 1 Nov 2026). Ecoventura: Off the Map because Ecoventura calls route B "remote and
   // pristine"; whole-yacht charter published. Galaxy Cruises: charters published; no Off the Map.
   { slug: "ecoventura-origin-yacht", name: "Origin", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-origin-yacht" },
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-origin-yacht",
+    // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
+    // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
+    // Minimum child age differs between Ecoventura's own pages, so it is left out.
+    traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "ecoventura-theory-yacht", name: "Theory", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-theory-yacht" },
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-theory-yacht",
+    // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
+    // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
+    // Minimum child age differs between Ecoventura's own pages, so it is left out.
+    traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "ecoventura-evolve-yacht", name: "Evolve", operator: "Ecoventura", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-evolve-yacht" },
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-06"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "ecoventura-evolve-yacht",
+    // ecoventura.com: a published single fare (US$19,950 against US$10,950 two sharing in 2026, US$21,000 against
+    // US$11,500 in 2027; double in festive weeks); two pairs of staterooms connect into Premium Suites; snorkelling, kayaks and paddleboards, hikes.
+    // Minimum child age differs between Ecoventura's own pages, so it is left out.
+    traits: { single: { kind: "percent", pct: 82, max: 100, note: "A single fare is published per sailing: about 82% over two sharing, 100% in festive weeks" }, connecting: true, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "alya-catamaran-galapagos", name: "Alya", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "alya-catamaran-galapagos" },
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "alya-catamaran-galapagos",
+    // Galaxy Cruises: over 6 on shared departures; single occupancy 1.5 times the sharing rate; snorkelling gear, kayaks and paddleboards; a naturalist guide; lava-field walks.
+    traits: { minChildAge: 7, childNote: "Over 6 on shared departures; any age on a charter", single: { kind: "percent", pct: 50, note: "Single occupancy 1.5 times the sharing rate" }, activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
   { slug: "sirius-yacht-galapagos", name: "Galaxy Sirius", operator: "Galaxy Cruises", kind: "catamaran", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos" },
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true, staySlug: "sirius-yacht-galapagos",
+    // Galaxy Cruises: over 6 on shared departures; single occupancy 1.5 times the sharing rate; snorkelling gear, kayaks and paddleboards; two naturalist guides.
+    traits: { minChildAge: 7, childNote: "Over 6 on shared departures; any age on a charter", single: { kind: "percent", pct: 50, note: "Single occupancy 1.5 times the sharing rate" }, activities: ["wildlife", "snorkelling", "kayaking"] } },
 
   // Via Natura's Hermes (filed 2 Nov 2026 from vianatura.com): the Galapagos rule, Where the Wild Lives first and
   // Between Tides second, plus A Place of Our Own for the published whole-vessel charter (up to 20; from US$134,805
@@ -95,9 +166,15 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
   // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
   { slug: "magellan-explorer", name: "Magellan Explorer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true },
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // antarctica21.com: 8 and over on air-cruises, 12 on sea voyages; Single Veranda Cabins with no supplement (85% or 100% in
+    // shared cabins); optional sea kayaking and hiking at extra cost.
+    traits: { minChildAge: 8, childNote: "8 and over on air-cruises (1.20 m and 30 kg); 12 and over on sea voyages", single: { kind: "none", note: "None in the Single Veranda Cabins; 85% or 100% in shared cabin categories" }, activities: ["wildlife", "kayaking", "hiking"] } },
   { slug: "magellan-discoverer", name: "Magellan Discoverer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
-    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true },
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2026-12", page: true,
+    // antarctica21.com: 8 and over on air-cruises, 12 on sea voyages; Single Veranda Cabins with no supplement (85% or 100% in
+    // shared cabins); two cabin types with a connecting door; optional sea kayaking and hiking at extra cost.
+    traits: { minChildAge: 8, childNote: "8 and over on air-cruises (1.20 m and 30 kg); 12 and over on sea voyages", single: { kind: "none", note: "None in the Single Veranda Cabins; 85% or 100% in shared cabin categories" }, connecting: true, activities: ["wildlife", "kayaking", "hiking"] } },
 
   // Aman's Amandira (filed 2 Nov 2026 from aman.com): Between Tides, A Place of Our Own (a private yacht for one
   // party, charter only) and Off the Map, because Aman calls the Alor Islands remote. No rates published. The Exceptional Few No. 003.

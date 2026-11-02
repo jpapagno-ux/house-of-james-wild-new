@@ -94,3 +94,21 @@ test("nextDate is the first date still to come", () => {
   assert.equal(nextDate(items, (x) => x.d, ON), "2026-12-05");
   assert.equal(nextDate([{ d: "2026-01-01" }], (x) => x.d, ON), null);
 });
+
+test("offers stay live through the day they expire; a Final Call never past its departure (James, 2 Nov 2026)", async () => {
+  const { offerLastDay } = await import("../lib/dates.ts");
+  const general = { program: "On the Horizon", travel: { to: "2026-12-31" } };
+  assert.equal(offerLastDay(general), "2026-12-31");
+  assert.equal(activeOnly([general], offerLastDay, "2026-12-31").length, 1);
+  assert.equal(activeOnly([general], offerLastDay, "2027-01-01").length, 0);
+  // A Final Call runs to its own end date...
+  const fc = { program: "Final Call", travel: { to: "2027-01-10" }, departure: "2027-01-20" };
+  assert.equal(offerLastDay(fc), "2027-01-10");
+  assert.equal(activeOnly([fc], offerLastDay, "2027-01-10").length, 1);
+  assert.equal(activeOnly([fc], offerLastDay, "2027-01-11").length, 0);
+  // ...and never past its departure, with no 14-day cutoff.
+  const late = { program: "Final Call", travel: { to: "2027-02-28" }, departure: "2027-01-20" };
+  assert.equal(offerLastDay(late), "2027-01-20");
+  assert.equal(activeOnly([late], offerLastDay, "2027-01-20").length, 1);
+  assert.equal(activeOnly([late], offerLastDay, "2027-01-21").length, 0);
+});

@@ -80,5 +80,20 @@ export function nextDate<T>(items: readonly T[], getStart: (item: T) => string |
   return starts[0] ?? null;
 }
 
+/**
+ * Offers (James, 2 Nov 2026): every offer stays live through the day it expires (its window's end,
+ * inclusive), in every volume. A Final Call ends on its own end date and never runs past its departure.
+ * The 30-day rule is a curation rule only: an offer is not filed if it ends within 30 days of filing.
+ * It does not take a live offer down early. Returns the offer's last live day, for activeOnly.
+ */
+export function offerLastDay(o: { program: string; travel: { to: string }; departure?: string }): string | null {
+  const end = endOf(o.travel.to);
+  if (o.program === "Final Call" && o.departure) {
+    const dep = endOf(o.departure);
+    return end && dep && dep < end ? dep : end ?? dep;
+  }
+  return end;
+}
+
 /** The line shown wherever a ship or voyage has no remaining dated departures. */
 export const NO_DATES = { title: "New dates to be announced", line: "The published dates have all sailed. Ask James for the next season's dates and fares." };

@@ -77,7 +77,7 @@ export const VOLUMES: MegaMenu[] = [
       { label: "By land", href: "/stays?by=land" },
       { label: "By water", href: "/stays?by=water" },
       { label: "New to the Ledger", href: "/stays/new" },
-      { label: "Stay longer, pay less", href: "/stays/promos" },
+      { label: "On the Horizon: offers", href: "/offers#stays" },
     ],
     ledger: [],
   },
@@ -116,6 +116,7 @@ export const VOLUMES: MegaMenu[] = [
       { label: "The Whole Ship", href: "/voyages/charter" },
       { label: "The Nile", href: "/voyages/nile" },
       { label: "The Galápagos", href: "/voyages/galapagos" },
+      { label: "On the Horizon: offers", href: "/offers#voyages" },
     ],
     ledger: [],
   },
@@ -190,6 +191,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     title: "Before You Go",
     links: [
       { label: "Plan with James", href: "/plan" },
+      { label: "On the Horizon: offers", href: "/offers" },
       { label: "The Compass", href: "/compass" },
       { label: "Free field guides", href: "/field-guides" },
       { label: "Find an advisor", href: "/about/team#advisors" },
@@ -275,6 +277,12 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/amazon", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/galapagos", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/indonesia", priority: 0.8, changeFrequency: "monthly" },
+  // On the Horizon, the site-wide offers hub (James, 2 Nov 2026).
+  { path: "/offers", priority: 0.8, changeFrequency: "daily" },
+  // Voyages category pages (James, 2 Nov 2026), answer-first with a comparison table.
+  { path: "/voyages/honeymoon", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/family", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/solo", priority: 0.8, changeFrequency: "weekly" },
   { path: "/voyages/ships/beyond-amazon-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/aria-amazon", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/delfin-iii", priority: 0.7, changeFrequency: "monthly" },

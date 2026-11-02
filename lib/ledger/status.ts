@@ -36,7 +36,9 @@ export const VETTED_UNVISITED = new Set<string>(["nihi-rote",
 // Founder favourite without a stay claim (James, 2 Nov 2026): Le Taha'a is his favourite in French Polynesia and
 // founder vetted, but he has not said he stayed there. The record keeps house_status founder_vetted; the site prints
 // the favourite stamp and "Founder favourite, vetted", never "stayed".
-export const FAVOURITE_VETTED = new Set<string>(["le-tahaa"]);
+// Nay Palad Hideaway (James, 2 Nov 2026): his favourite in the Philippines and founder vetted, the only founder
+// mark there; not stayed, so no stay line and no verdict.
+export const FAVOURITE_VETTED = new Set<string>(["le-tahaa", "nay-palad-hideaway"]);
 
 export type HouseStatus =
   | "unclassified"

@@ -13,7 +13,8 @@ declare global { interface Window { chartDay?: (k: string, d: number) => void; c
 
 /** `label`: a block of days published as one ("Days 3 to 6"); `indicative`: the day order is a guide only. */
 export type ScrollerDay = { day: number; title: string; place: string; summary: string; label?: string; indicative?: boolean };
-export type ScrollerItinerary = { name: string; direction: string; nights: number; days: ScrollerDay[] };
+/** nights null: the operator lists the stops in order but publishes no length (the days are labelled "Stop n"). */
+export type ScrollerItinerary = { name: string; direction: string; nights: number | null; days: ScrollerDay[] };
 
 // `map` is the chart block, rendered on the server and passed through untouched, so React never
 // rewrites the element the chart engine draws into.
@@ -115,7 +116,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
           {itineraries.map((x, i) => (
             <button key={x.name} role="tab" type="button" aria-selected={i === tab} onClick={() => pickTab(i)}
               className={`shrink-0 border px-4 py-2 text-left transition-colors ${i === tab ? "border-crimson bg-crimson text-paper" : "ledger-border hover:border-crimson"}`}>
-              <span className="block ledger-eyebrow !text-current">{x.nights} nights</span>
+              <span className="block ledger-eyebrow !text-current">{x.nights != null ? `${x.nights} nights` : "Stops in order"}</span>
               <span className="block text-[14.5px] whitespace-nowrap">{x.direction}</span>
             </button>
           ))}
@@ -124,7 +125,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
       <div className={`mt-5 grid gap-6 lg:gap-10 items-start ${map ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]" : ""}`}>
         {map && <div ref={mapRef} className="contents">{map}</div>}
         <div>
-          <p className="ledger-eyebrow mb-2" aria-live="polite">{it.name}{active != null ? ` · Day ${it.days[active]?.day} of ${it.days.length}` : ""}</p>
+          <p className="ledger-eyebrow mb-2" aria-live="polite">{it.name}{active != null ? ` · ${it.days[active]?.label?.startsWith("Stop") ? "Stop" : "Day"} ${it.days[active]?.day} of ${it.days.length}` : ""}</p>
           <ol ref={listRef} className="border-t ledger-rule" key={tab}>
             {it.days.map((d, i) => {
               const open = !closed.has(i);

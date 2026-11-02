@@ -15,7 +15,8 @@ const DIR = () => path.join(process.cwd(), "public/maps/routes");
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export const shipRouteId = (ship: Pick<ShipRecord, "slug">, it: ShipItinerary) => `${ship.slug}-${slug(it.direction)}-${it.nights}n`;
+// A route whose length is not published (stops in the operator's order) ends in "-stops", never an invented night count.
+export const shipRouteId = (ship: Pick<ShipRecord, "slug">, it: ShipItinerary) => `${ship.slug}-${slug(it.direction)}-${it.nights != null ? `${it.nights}n` : "stops"}`;
 export function readRoute(id: string): RouteFile | null {
   const f = path.join(DIR(), `${id}.json`);
   return fs.existsSync(f) ? (JSON.parse(fs.readFileSync(f, "utf8")) as RouteFile) : null;

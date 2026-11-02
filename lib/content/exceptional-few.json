@@ -1,6 +1,6 @@
 {
   "exportedOn": "2026-11-01",
-  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs",
+  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James",
   "records": [
     {
       "id": "EF-001",
@@ -72,6 +72,139 @@
       "paletteKey": "amangiri",
       "publicationStatus": "published",
       "reviewDate": "2026-11-01",
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "EF-002",
+      "entityType": "vessel",
+      "stayId": null,
+      "staySlug": null,
+      "stayName": null,
+      "vesselSlug": "hermes-galapagos",
+      "vesselName": "Hermes",
+      "designationStatus": "designated",
+      "collectionNumber": 2,
+      "heroLine": "Twenty guests, twenty crew, and a private jacuzzi in every suite.",
+      "whyItMadeTheCut": [
+        "Twenty guests and twenty crew. By the published numbers that is one crew member for every guest, with two butlers, one for each passenger deck, and two naturalist guides.",
+        "Every one of the twelve suites has a private balcony and a private ocean-view jacuzzi. The Owner Suite, at 72 square metres, has two.",
+        "A spa with a hammam and a massage room. Via Natura says Hermes was the first small ship in the Galápagos with a full-service spa."
+      ],
+      "jamesNote": null,
+      "signals": [
+        {
+          "key": "place",
+          "line": "The Galápagos Islands, on four routes Via Natura combines into cruises of 3 to 14 nights."
+        },
+        {
+          "key": "privacy",
+          "line": "Twelve suites for 20 guests, each with its own balcony and ocean-view jacuzzi."
+        },
+        {
+          "key": "humanity",
+          "line": "Twenty crew for 20 guests, including two butlers, a cruise director and two naturalist guides."
+        },
+        {
+          "key": "design",
+          "line": "A 50-metre motor catamaran built in 2025, with more than 730 square metres of social areas, per Via Natura."
+        },
+        {
+          "key": "access",
+          "line": "Sold by the suite or chartered whole for up to 20, with published charter rates for 2026 and 2027."
+        }
+      ],
+      "pathwaysOverride": [
+        "PATH-04",
+        "PATH-02",
+        "PATH-07"
+      ],
+      "worthAnotherNight": null,
+      "whoItSuits": [
+        "Couples",
+        "Private groups of up to 20",
+        "Solo travellers (two Single Suites at the standard fare)",
+        "Travellers short on time (3 and 4 night routes)"
+      ],
+      "whoItMayNotSuit": [
+        "Families who need a published minimum age or family departures (Via Natura publishes neither)",
+        "Travellers wanting a big-ship atmosphere",
+        "Travellers who want to book a fixed, dated departure online"
+      ],
+      "continueRefs": [
+        "pathway:where-the-wild-lives",
+        "pathway:between-tides",
+        "pathway:a-place-of-our-own"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "hermes",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02",
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "EF-003",
+      "entityType": "vessel",
+      "stayId": null,
+      "staySlug": null,
+      "stayName": null,
+      "vesselSlug": "amandira",
+      "vesselName": "Amandira",
+      "designationStatus": "designated",
+      "collectionNumber": 3,
+      "heroLine": "Five cabins, ten guests, one party aboard a hand-built phinisi.",
+      "whyItMadeTheCut": [
+        "A 52-metre, two-masted phinisi, handcrafted from local hardwoods by Konjo artisans. Aman, naval architect Michael Kasten and designer Deirdre Renniers spent five years on her; she was completed in 2014.",
+        "Five cabins for up to ten guests, and the whole yacht goes to one party. Aman calls her fully staffed and yours to command.",
+        "A crew of 14 by Aman's count, with two chefs, a dive master and a spa therapist, and the gear to dive, snorkel, kayak and paddleboard from the boat."
+      ],
+      "jamesNote": null,
+      "signals": [
+        {
+          "key": "design",
+          "line": "A 52-metre phinisi of local hardwoods, built by Konjo artisans and completed in 2014."
+        },
+        {
+          "key": "privacy",
+          "line": "Five cabins for up to 10 guests, sailed as a private yacht for one party."
+        },
+        {
+          "key": "humanity",
+          "line": "A crew of 14, including two chefs, a dive master and a spa therapist."
+        },
+        {
+          "key": "place",
+          "line": "Komodo, Raja Ampat, the Spice Islands and the Alor Islands, as Aman publishes them."
+        },
+        {
+          "key": "access",
+          "line": "Voyages begin at Labuan Bajo, Sorong, Ambon or Maumere, depending on the route."
+        }
+      ],
+      "pathwaysOverride": [
+        "PATH-02",
+        "PATH-07",
+        "PATH-06"
+      ],
+      "worthAnotherNight": null,
+      "whoItSuits": [
+        "One party of up to 10: a family or friends",
+        "Divers and snorkellers",
+        "Travellers pairing a voyage with Aman's Indonesian resorts"
+      ],
+      "whoItMayNotSuit": [
+        "Families with young children (Aman publishes no age policy)",
+        "Travellers wanting a big-ship atmosphere",
+        "Solo travellers hoping to book a single cabin on a shared departure"
+      ],
+      "continueRefs": [
+        "pathway:between-tides",
+        "pathway:a-place-of-our-own",
+        "pathway:off-the-map"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "amandira",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02",
       "reviewStatus": "approved"
     }
   ]

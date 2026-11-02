@@ -17,6 +17,7 @@ import Stella from "./galaxy-stella-yacht.json";
 import EcoGalaxy from "./ecogalaxy-catamaran.json";
 import Bonita from "./galaxy-bonita-yacht.json";
 import Orion from "./galaxy-orion-yacht.json";
+import Hermes from "./hermes-galapagos.json";
 
 // The Galápagos yachts, filed 1 Nov 2026 from ecoventura.com and Galaxy Cruises' own site and
 // booking feed (photographs: each operator). Ecoventura publishes one weekly schedule for its
@@ -44,4 +45,7 @@ export const GALAPAGOS_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: s
   ...[Infinity_, SeaStar, NaturalParadise, GrandMajestic, Angel, Calipso].map((x) => ({ data: rec(x), offerRefs: [], credit: "Royal Galapagos" })),
   { data: rec(Monserrat), offerRefs: [], credit: "Vianatura" },
   ...[Stella, EcoGalaxy, Bonita, Orion].map((x) => ({ data: rec(x), offerRefs: [], credit: "Galaxy Cruises" })),
+  // Via Natura's Hermes (filed 2 Nov 2026 from vianatura.com; photographs: Vianatura). No dated departures are
+  // published, so she carries fares by cruise length (lengthFares) and "Ask us for dates".
+  { data: rec(Hermes), offerRefs: [], credit: "Vianatura" },
 ];

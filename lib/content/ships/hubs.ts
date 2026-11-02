@@ -73,7 +73,7 @@ export function typeHub(t: VoyageType): HubProps {
       FARES,
     ],
     adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's Raja Ampat and Komodo routes: pick one and the globe sails it day by day." } };
+    atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "THE VOYAGES · UNDER SAIL", title: "Where Do the Sailing Ships Go?", line: "Aliikai's and Amandira's routes in Raja Ampat and Komodo: pick one and the globe sails it day by day." } };
   if (t === "expedition") {
     const gal = cards.filter((c) => c.waters.includes("galapagos")), pol = cards.filter((c) => c.waters.includes("antarctica"));
     const where = [gal.length ? `${list(gal.map((c) => c.name))} in the Galápagos` : "", pol.length ? `${list(pol.map((c) => c.name))} in Antarctica, South Georgia, the Falklands and Patagonia` : ""].filter(Boolean);
@@ -145,16 +145,17 @@ export function watersHub(w: Waters): HubProps {
   }
   if (w === "indonesia") {
     const s = ALIIKAI_SHIP;
+    const amandira = cards.some((c) => c.slug === "amandira" && c.page);
     return { ...base,
       title: "Indonesia by Phinisi: Raja Ampat and Komodo", intro: "Hand-built phinisis and a wooden schooner in Raja Ampat, Komodo and the Banda Sea.",
-      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024.${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
+      answer: `On Aliikai, a 40-metre phinisi for 14 guests, ${s.low !== null && s.high !== null ? `published shared voyages run from ${usd(s.low)} to ${usd(s.high)} per person for 3 to 11 nights, double occupancy, plus 11% tax` : "new shared-voyage dates are to be announced"}; by the night, cabins are US$850 to US$1,150 per person, and the whole yacht charters for ${usd(s.charter.rate)} a night. James sailed Raja Ampat aboard her in November 2024.${amandira ? ` Aman's Amandira, a 52-metre phinisi for up to 10 guests in five cabins, sails as a private charter; Aman publishes no rates, so James quotes her.` : ""}${filed.length ? ` ${list(filed)} are filed too, with ship pages to follow.` : ""}`,
       faqs: [
         { q: "When is the best time for Raja Ampat and Komodo by boat?", a: "Aliikai sails Komodo from May to September, the Spice Islands in October and Raja Ampat from November to April, when its seas are calmest." },
-        { q: "Can we charter a phinisi privately?", a: `Yes. Aliikai is ${usd(s.charter.rate)} a night plus 11% tax for up to 15 guests, minimum 7 nights in Raja Ampat and 3 in Komodo.` },
+        { q: "Can we charter a phinisi privately?", a: `Yes. Aliikai is ${usd(s.charter.rate)} a night plus 11% tax for up to 15 guests, minimum 7 nights in Raja Ampat and 3 in Komodo.${amandira ? " Amandira is chartered only, for up to 10 guests; Aman quotes her on request." : ""}` },
         FARES,
       ],
       adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
-      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Phinisis Sail?", line: "Aliikai's Raja Ampat and Komodo voyages: pick one and the globe sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Phinisis Sail?", line: "Aliikai's and Amandira's Raja Ampat and Komodo voyages: pick one and the globe sails it day by day." } };
   }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],
@@ -169,7 +170,7 @@ export const GALAPAGOS_PARTNERS: { operator: string; partner: string; line: stri
   { operator: "Royal Galapagos", partner: "royal-galapagos", line: "An Ecuadorian company sailing small yachts in the islands since 2012: five Luxury yachts, among them the trimaran Galapagos Horizon, and two First Class." },
   { operator: "Galaxy Cruises", partner: "galaxy-cruises", line: "A Quito operator with an office in Puerto Ayora, sailing catamarans and yachts for 12 to 16 guests." },
   { operator: "Ecoventura", partner: "ecoventura", line: "Three 20-guest expedition yachts, Relais & Châteaux members, on 7-night loops from San Cristóbal." },
-  { operator: "Vianatura", partner: "vianatura", line: "Owner of the First Class motor yacht Monserrat, refurbished in 2025, with routes that stack from 3 to 14 nights." },
+  { operator: "Vianatura", partner: "vianatura", line: "Owner of Hermes, a 50-metre catamaran launched in 2025 for 20 guests, and the First Class motor yacht Monserrat, whose routes stack from 3 to 14 nights." },
 ];
 export function galapagosFleet() {
   const rows = shipsInWaters("galapagos").filter((r) => r.page);

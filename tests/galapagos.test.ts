@@ -67,3 +67,18 @@ test("the Galápagos is a place inside Ecuador & Galápagos with its two stays, 
   assert.ok(g.sources.every((s) => /unesco\.org|galapagos\.gob\.ec|ecuador\.travel/.test(s.url)), "official sources only");
   assert.doesNotMatch(JSON.stringify(g), /[–—]/);
 });
+
+test("no new page duplicates an existing one, and the stubs are left for James", () => {
+  const stays = (JSON.parse(read("lib/content/stays.json")).stays as { slug: string; name: string }[]);
+  const redirects = JSON.parse(read("redirects.json")) as { source: string; destination: string }[];
+  for (const slug of NEW) {
+    const r = SHIP_REGISTRY.find((x) => x.slug === slug)!;
+    // No library Stay record for these ships (Galápagos review, section 6), so no old /stays URL to send on.
+    assert.equal(r.staySlug, undefined, slug);
+    assert.ok(!stays.some((s) => s.slug === slug || s.name.toLowerCase() === r.name.toLowerCase()), `${slug} duplicates a stay`);
+    assert.ok(!redirects.some((x) => x.source === `/voyages/ships/${slug}`), `${slug} is redirected away`);
+  }
+  // One record each for the two land stays.
+  for (const slug of ["galapagos-safari-camp", "pikaia-lodge"]) assert.equal(stays.filter((s) => s.slug === slug).length, 1, slug);
+  assert.equal(stays.filter((s) => /pikaia|safari camp/i.test(s.name) && /galapagos|pikaia/i.test(s.slug)).length, 2);
+});

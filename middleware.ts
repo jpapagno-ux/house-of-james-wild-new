@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import OLD_SITE from "@/lib/redirects/old-site.json";
 
-// One middleware, two jobs, each on its own paths (see matcher). Every other
+// One middleware, three jobs, each on its own paths (see matcher). Every other
 // public page — stays, safaris, voyages, destinations — never runs it.
 //
 // 1. Old wildearthstays.com URLs -> their page on the new site (301), so the old
@@ -50,8 +50,19 @@ async function refreshSession(req: NextRequest) {
   return res;
 }
 
+// 3. Filtered Voyages hub views (?pathway=, ?type=, ?waters=) are never indexed (James, 1 Nov 2026).
+const FILTERS = ["pathway", "type", "waters"];
+function filteredVoyages(req: NextRequest) {
+  if (!req.nextUrl.pathname.startsWith("/voyages") || !FILTERS.some((f) => req.nextUrl.searchParams.has(f))) return null;
+  const res = NextResponse.next();
+  res.headers.set("X-Robots-Tag", "noindex, follow");
+  return res;
+}
+
 export async function middleware(req: NextRequest) {
   if (PRIVATE.test(req.nextUrl.pathname)) return refreshSession(req);
+  const f = filteredVoyages(req);
+  if (f) return f;
   return oldSiteRedirect(req) ?? NextResponse.next();
 }
 
@@ -59,6 +70,8 @@ export const config = {
   matcher: [
     // Old site URL families (301 lookup)
     "/property/:path*", "/stay/:path*", "/book/:path*", "/country/:path*", "/itinerary/:path*", "/memoir/:path*", "/wellness-retreats/:path*", "/Contact", "/wild-earth-portfolio", "/find-stay", "/coming-soon", "/agent-application", "/influencer-application", "/request-itinerary", "/booking-itinerary", "/booking-form-retreat", "/wellness-retreats",
+    // Voyages hubs (filtered views get noindex)
+    "/voyages", "/voyages/:path*",
     // Booking Live private routes (session refresh)
     "/account/:path*", "/auth/:path*", "/booking/:path*", "/api/v1/me/:path*", "/api/v1/quotes", "/api/v1/ops/:path*",
   ],

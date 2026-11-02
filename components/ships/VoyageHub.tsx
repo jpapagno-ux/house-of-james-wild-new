@@ -4,7 +4,10 @@ import JsonLd from "@/components/ledger/JsonLd";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import RouteAtlas, { type AtlasLegend, type AtlasRoute } from "@/components/journey/RouteAtlas";
-import { ShipGrid } from "./ShipCard";
+import ShipCard, { ShipGrid } from "./ShipCard";
+import HubFilter from "./HubFilter";
+import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
+import { PATHWAY_LIST } from "@/lib/pathways";
 import VoyageTiles, { type Tile } from "./VoyageTiles";
 import type { ShipCardData } from "@/lib/content/ships/cards";
 import { absoluteUrl } from "@/lib/seo";
@@ -34,7 +37,9 @@ export default function VoyageHub(h: HubProps) {
         filling="Ships fill from the Ledger as each operator's own material is filed; nothing is listed before it is.">
         {h.before}
         <HubSection eyebrow={`${h.cards.length} ${h.cards.length === 1 ? "ship" : "ships"} filed`} title={h.question} id="ships-h">
-          {h.cards.length > 0 ? <ShipGrid cards={h.cards} /> : null}
+          {h.cards.length > 0 ? (VOYAGE_PATHWAYS_ON
+            ? <HubFilter names={Object.fromEntries(PATHWAY_LIST.map((p) => [p.key, p.name]))} items={h.cards.map((c) => ({ slug: c.slug, keys: c.pathway ? [c.pathway.primary, ...c.pathway.secondary].map((p) => p.key) : [], node: <ShipCard c={c} /> }))}><ShipGrid cards={h.cards} /></HubFilter>
+            : <ShipGrid cards={h.cards} />) : null}
           {h.adding && <p className="mt-6 border-l-2 border-crimson pl-4 text-[15px] max-w-2xl"><span className="ledger-eyebrow block mb-1">Ships being added</span>{h.adding}</p>}
         </HubSection>
         {h.atlas && h.atlas.routes.length > 0 && (

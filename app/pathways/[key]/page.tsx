@@ -7,7 +7,7 @@ import { IGGI_ON } from "@/lib/iggi/flag";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
 import { PathwayChips, PathwayIndex } from "@/components/pathways/Pathway";
 import { PATHWAY_LIST, pathway } from "@/lib/pathways";
-import { onPathway } from "@/lib/content/pathways";
+import { onPathway, vesselsOnPathway } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_ANSWER, PATHWAY_FAQS, PATHWAY_SEO } from "@/lib/content/pathways/copy";
 import { VOLUME_STYLES } from "@/lib/volumes";
@@ -35,7 +35,9 @@ export default async function PathwayPage({ params }: { params: Promise<{ key: s
   const { key } = await params; const p = pathway(key);
   if (!PATHWAYS_ON || !p) notFound();
   const items = onPathway(p.id); // approved only
-  const trips = tripsOnPathway(p.id); // 2B: approved voyages and routes, primary first
+  // 2B: approved voyages and routes, primary first; then vessels filed in the Stay library, which list
+  // here as Voyages and never among the stays (lib/content/vessels.ts, 1 Nov 2026).
+  const trips = [...tripsOnPathway(p.id), ...vesselsOnPathway(p.id)];
   const path = `/pathways/${p.key}`;
   const trail = [{ name: "Home", path: "/" }, { name: "Pathways", path: "/pathways" }, { name: p.name, path }];
   return (

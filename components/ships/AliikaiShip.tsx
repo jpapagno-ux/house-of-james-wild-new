@@ -66,6 +66,7 @@ export default function AliikaiShip() {
         path: s.path,
         hero: s.gallery[0],
         heroFilm: film,
+        pathway: s.pathway,
         eyebrow: `Wild & Co Voyages · The vessel · ${s.ledgerId}`,
         tagline: s.tagline,
         stamp: <FounderStamp kind="Field verified" year={2024} volume="voyages" size={140} />,

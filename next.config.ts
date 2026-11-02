@@ -25,7 +25,8 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return redirects as { source: string; destination: string; permanent: boolean }[];
+    // An entry may carry statusCode 301 instead of permanent (308) where a true 301 is wanted (aliikai-voyage).
+    return redirects as ({ source: string; destination: string; permanent: boolean } | { source: string; destination: string; statusCode: 301 | 308 })[];
   },
   async headers() {
     return isProd ? [] : [{ source: "/:path*", headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] }];

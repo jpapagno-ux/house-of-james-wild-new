@@ -3,7 +3,11 @@
 // is mapped onto the same template pieces. Every fact comes from the operator's
 // own site (CLAUDE.md, "Sources").
 
+import type { PathwayId } from "@/lib/pathways";
+
 export type ShipImage = { url: string; alt: string; credit?: string };
+/** Wild Pathways on a ship (James, 1 Nov 2026): house classification, printed as the same chips as stay pages. */
+export type ShipPathway = { primary: PathwayId; secondary: PathwayId[] };
 export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string };
 /** nights null and no days: a private charter whose route is set with the guest. */
 export type ShipItinerary = { name: string; nights: number | null; direction: string; days: ShipDay[] };
@@ -55,6 +59,8 @@ export type ShipRecord = {
   suits: { who: string; line: string }[];
   sources: string[];
   film: ShipFilm;
+  /** Optional Wild Pathways (house classification, not operator copy). */
+  pathway?: ShipPathway;
 };
 
 export const filmId = (f: ShipFilm | undefined) => (!f ? null : typeof f === "string" ? f : f.id);

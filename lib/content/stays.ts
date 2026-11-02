@@ -2,6 +2,7 @@
 // A stay gets its own page only when it has a hero photo and some content.
 import data from "./stays.json";
 import { HERO_OVERRIDE } from "./stay-media";
+import { isVessel, vessel } from "./vessels";
 
 type Block = { paras: string[]; items: string[] };
 export type StayData = {
@@ -38,9 +39,17 @@ const NAME_FIX: Record<string, string> = {
 };
 const cleanName = (s: StayData) => NAME_FIX[s.slug] ?? s.name.replace(/\s*\n\s*/g, " ").replace(/\s+/g, " ").trim();
 
-export const STAYS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}) }));
+const RECORDS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}) }));
+// Vessels filed as stays belong in Voyages (James, 1 Nov 2026; lib/content/vessels.ts): every
+// Stays list, count, pin and feed reads STAYS, so they never show as hotels.
+export const STAYS: StayData[] = RECORDS.filter((s) => !isVessel(s));
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
+/** Vessel records from the Stay export (Voyages side). */
+export const VESSEL_RECORDS: StayData[] = RECORDS.filter(isVessel);
+/** Vessels that keep a voyage-labelled, noindex /stays/<slug> page until their ship page is built; one with a ship page redirects instead. */
+export const VESSEL_PAGES = VESSEL_RECORDS.filter((s) => pageReady(s) && !vessel(s.slug)?.ship);
+export const vesselBySlug = (slug: string) => VESSEL_PAGES.find((s) => s.slug === slug);
 export const staysIn = (countrySlug: string) => STAYS.filter((s) => s.countrySlug === countrySlug);
 export const BEST_FOR: Record<string, string> = { honeymoon: "Honeymoons", family: "Families", adventure: "Adventure", luxury: "Luxury", solo: "Solo travel", wildlife_photography: "Wildlife photography", group_exclusive_use: "Groups and exclusive use", first_safari: "First safaris", wine: "Wine lovers" };
 

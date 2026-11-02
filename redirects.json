@@ -70,6 +70,11 @@
     "permanent": true
   },
   {
+    "source": "/stays/aliikai-voyage",
+    "destination": "/voyages/ships/aliikai",
+    "statusCode": 301
+  },
+  {
     "source": "/stays/lion-sands",
     "destination": "/safaris/lion-sands",
     "permanent": true

@@ -112,9 +112,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   });
 }
 
+const MONTH = "(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)";
+/** "Jan–Apr, Oct–Dec – best for calm seas" → "Jan to Apr, Oct to Dec, best for calm seas". */
+function vesselMonths(t: string): string {
+  return t.replace(new RegExp(`${MONTH}\\s*[\u2013\u2014-]\\s*${MONTH}`, "g"), "$1 to $2").replace(/\s+[\u2013\u2014]\s+/g, ", ").replace(/\s+/g, " ").trim();
+}
+
 export default async function StayPage({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
-  const s = stayBySlug(slug) ?? vesselBySlug(slug);
+  const found = stayBySlug(slug) ?? vesselBySlug(slug);
+  // A vessel prints her registry name ("Celestia", not the library's slogan title) and her
+  // seasons without dashes ("Jan to Apr"), until her ship page is built.
+  const s = found && !stayBySlug(slug) ? { ...found, name: vesselOf(found.slug)?.name ?? found.name, bestMonths: found.bestMonths ? vesselMonths(found.bestMonths) : found.bestMonths } : found;
   if (!s || !s.hero) notFound();
   const path = `/stays/${s.slug}`;
   // A vessel awaiting its ship page: a Voyage, not a stay (lib/content/vessels.ts).

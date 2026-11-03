@@ -111,3 +111,16 @@ test("the pilot pages read real coordinates from the repo", () => {
   const ulum = stays.find((s: { slug: string }) => s.slug === "ulum-moab");
   assert.ok(ulum?.coords, "Ulum Moab keeps its own coordinates");
 });
+
+test("satellite tiles never fade in from white, and the ground under them is not Paper", async () => {
+  const { satelliteLayer, groundOf, SKY_SATELLITE, TILE_CACHE, pixelRatioFor } = await import("../components/maps/terrain/style.ts");
+  const l = satelliteLayer() as { paint?: Record<string, unknown> };
+  assert.equal(l.paint?.["raster-fade-duration"], 0);
+  assert.notEqual(groundOf(true).toUpperCase(), "#FFFFFF");
+  assert.equal(groundOf(false), TERRAIN.ground);
+  for (const k of ["sky-color", "horizon-color", "fog-color"] as const) assert.notEqual(String(SKY_SATELLITE[k]).toUpperCase(), "#FFFFFF");
+  assert.ok(TILE_CACHE.maxTileCacheZoomLevels > 5);
+  assert.equal(pixelRatioFor(3, 390), 1.5);
+  assert.equal(pixelRatioFor(3, 1440), 2);
+  assert.equal(pixelRatioFor(1, 1440), 1);
+});

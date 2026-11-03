@@ -10,8 +10,9 @@ import { recordHref } from "@/lib/ledger/urls";
 import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /gatherings: Volume 03 hub shell. Family residences for the generations
+// /gatherings: Volume III hub shell. Family residences for the generations
 // who travel together.
 const PATH = "/gatherings";
 const V = VOLUMES.find((v) => v.href === PATH)!;
@@ -22,7 +23,7 @@ export default function GatheringsHub() {
   return (
     <>
       <SiteHeader overlay />
-      <HubShell name="Gatherings" entrance={<VolumeEntrance e={ENTRANCES.gatherings} />} path={PATH} eyebrow="Volume 03 · Gatherings" title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
+      <HubShell name="Gatherings" entrance={<VolumeEntrance e={ENTRANCES.gatherings} />} path={PATH} eyebrow={volumeEyebrow("gatherings")} title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
         answer="Gatherings is James Wild & Co's volume of family residences: private houses, estates and resort residences where several generations or a celebration can stay under one roof, with the adventures around them planned in. Each residence is filed in the Ledger with its own ID and notes on who it suits."
         filling="Residence pages, room by room with how each house sleeps a family, fill from the Ledger export.">
         <HubSection eyebrow="From the Ledger" title="A First Residence" id="res-h">

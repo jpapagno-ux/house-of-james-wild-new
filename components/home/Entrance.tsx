@@ -6,6 +6,7 @@ import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { REGION_DATA } from "@/lib/content/regions";
 import { ADVISORS, initials } from "@/lib/content/advisors";
 import { VOLUMES } from "@/lib/site";
+import { byVolumeOrder, romanForHref } from "@/lib/volumes";
 import { JwcoSeal } from "@/components/ledger/Marks";
 import { Reveal } from "@/components/ledger/Motion";
 
@@ -83,8 +84,8 @@ export function VolumeStrip() {
   const europeHero = REGION_DATA.find((r) => r.slug === "europe")?.hero ?? null;
   const doors = [
     ...HOME.volumes.map((v) => ({ key: v.key, name: v.name, brand: v.brand, path: v.path, line: v.line, image: v.image.url, alt: v.image.alt })),
-    { key: "europe", name: "Other Europe", brand: "Volume VI", path: "/europe", line: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.", image: europeHero ?? "", alt: "Other Europe" },
-  ];
+    { key: "europe", name: "Other Europe", brand: "The Other Europe", path: "/europe", line: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.", image: europeHero ?? "", alt: "Other Europe" },
+  ].sort(byVolumeOrder);
   const tone = (k: string) => VOLUMES.find((v) => v.href === `/${k}`)?.tone ?? "#8B2525";
   return (
     <section id="volumes" className="mt-16 md:mt-24" aria-labelledby="volumes-heading">
@@ -104,7 +105,7 @@ export function VolumeStrip() {
               <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.25)] to-[rgba(26,24,22,0.10)]" />
               <span className="absolute inset-x-0 top-0 h-[5px]" style={{ background: "var(--vol)" }} />
               <span className="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end">
-                <span className="ledger-eyebrow !text-white/80">Volume {["I", "II", "III", "IV", "V", "VI"][i]}</span>
+                <span className="ledger-eyebrow !text-white/80">Volume {romanForHref(d.path)}</span>
                 <span className="ledger-display text-[2.2rem] lg:text-[2.6rem] leading-none mt-2 lg:[writing-mode:vertical-rl] lg:rotate-180 lg:group-hover:[writing-mode:horizontal-tb] lg:group-hover:rotate-0 lg:absolute lg:left-8 lg:bottom-8 lg:group-hover:static transition-none">{d.name}</span>
                 <span className="lg:max-w-md lg:opacity-0 lg:translate-y-3 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition duration-500 delay-150">
                   <span className="block text-[11px] uppercase tracking-[0.14em] mt-2" style={{ color: "rgba(255,255,255,0.78)" }}>{d.brand}</span>

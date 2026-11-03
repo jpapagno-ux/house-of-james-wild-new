@@ -9,6 +9,7 @@ import { pathway } from "@/lib/pathways";
 import type { HubProps } from "@/components/ships/VoyageHub";
 import type { Tile } from "@/components/ships/VoyageTiles";
 import { POLAR_PATH, POLAR_VOYAGES, voyageFrom } from "@/lib/content/polar";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // The copy for every Voyages hub, built from the registry and the ships' own records: each
 // opening answers the question people search, in facts the ship pages already carry. No hub
@@ -53,7 +54,7 @@ export function typeHub(t: VoyageType): HubProps {
   const live = cards.filter((c) => c.page);
   const filed = filedOnly(cards);
   const x = tally(cards);
-  const base = { path: T.path, name: T.name, eyebrow: `Volume 04 · Voyages · ${T.name}`, question: titleCase(T.question), cards, related: { title: "How Else Could You Sail?", tiles: t === "expedition" ? [...typeTiles(t), polarTile] : typeTiles(t) } };
+  const base = { path: T.path, name: T.name, eyebrow: volumeEyebrow("voyages", "Voyages", T.name), question: titleCase(T.question), cards, related: { title: "How Else Could You Sail?", tiles: t === "expedition" ? [...typeTiles(t), polarTile] : typeTiles(t) } };
   if (t === "river") return { ...base,
     title: "Small-Ship River Cruises", intro: T.line,
     answer: `Voyages files ${cards.length} river ships: ${briefs(cards)}. On the Nile, a riverboat carries more guests with more cabin choice; the dahabiya is a sailing boat for twelve. Each ship page lists her cabins, deck plan, day by day and every published fare.`,
@@ -104,7 +105,7 @@ export function watersHub(w: Waters): HubProps {
   const W = WATERS_HUBS[w];
   const cards = cardsFor(shipsInWaters(w));
   const filed = filedOnly(cards);
-  const base = { path: W.path, name: W.name, eyebrow: `Volume 04 · Voyages · ${W.countries.join(", ")}`, question: titleCase(W.question), cards, related: { title: "Which Other Waters?", tiles: [...watersTiles(w), polarTile] } };
+  const base = { path: W.path, name: W.name, eyebrow: volumeEyebrow("voyages", "Voyages", W.countries.join(", ")), question: titleCase(W.question), cards, related: { title: "Which Other Waters?", tiles: [...watersTiles(w), polarTile] } };
   if (w === "amazon") {
     // By country, in the hub's order (Peru, Ecuador, Brazil), from each ship's own record.
     const byCountry = W.countries.map((k) => ({ k, cs: cards.filter((c) => shipsInWaters("amazon").find((r) => r.slug === c.slug)?.country.includes(k)) })).filter((x) => x.cs.length);

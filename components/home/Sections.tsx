@@ -9,6 +9,7 @@ import { HOME } from "@/lib/content/home";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { statusLine } from "@/lib/ledger/status";
 import { REGIONS, SITE } from "@/lib/site";
+import { romanForHref } from "@/lib/volumes";
 import { recordHref } from "@/lib/ledger/urls";
 import SafeLink, { GuardLink } from "@/components/ledger/SafeLink";
 
@@ -139,7 +140,7 @@ export function VolumeDoors() {
                   )}
                 </div>
                 <div className="p-5 flex flex-col flex-1">
-                  <p className="ledger-eyebrow">Volume {String(i + 1).padStart(2, "0")}</p>
+                  <p className="ledger-eyebrow">Volume {romanForHref(x.path)}</p>
                   <h3 className="ledger-display text-2xl mt-1">{x.name}</h3>
                   <p className="text-[11px] uppercase tracking-[0.14em] ledger-crimson mt-1">{x.brand}</p>
                   <p className="mt-3 text-[15px] leading-relaxed ledger-muted flex-1">{x.line}</p>

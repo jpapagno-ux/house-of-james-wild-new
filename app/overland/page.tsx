@@ -12,8 +12,9 @@ import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, touristTrip } from "@/lib/schema";
 import RouteAtlas from "@/components/journey/RouteAtlas";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /overland: Volume 05 hub shell. Routes James designed, by country.
+// /overland: Volume VI hub shell. Routes James designed, by country.
 const PATH = "/overland";
 const V = VOLUMES.find((v) => v.href === PATH)!;
 export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Mexico, Guatemala, Belize, Botswana, South Africa", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
@@ -32,7 +33,7 @@ export default function OverlandHub() {
   return (
     <>
       <SiteHeader overlay />
-      <HubShell name="Overland" entrance={<VolumeEntrance e={ENTRANCES.overland} />} path={PATH} eyebrow="Volume 05 · Overland" title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
+      <HubShell name="Overland" entrance={<VolumeEntrance e={ENTRANCES.overland} />} path={PATH} eyebrow={volumeEyebrow("overland")} title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
         answer="Overland is James Wild & Co's volume of land routes James designed: the stops in order, the drive or flight times between them, what to expect and what to avoid, and every stay along the way already vetted in the Ledger. Take a route as filed, or let James reshape it around your dates."
         filling="Each route opens its own page with the day-by-day plan, the map and the price builder; more countries are filed as James draws them.">
         <RouteAtlas id="overland-atlas" kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"

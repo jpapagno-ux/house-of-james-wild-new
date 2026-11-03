@@ -12,7 +12,7 @@ import { voyageCard } from "@/lib/content/polar/cards";
 import { LENGTHS, MONTH_CHIPS, POLAR_CROSSINGS_URL, POLAR_PATH, POLAR_SHIP_NAMES, POLAR_VOYAGES, REGIONS, STYLES, polarRouteId, usd, voyageFrom, voyagePath, type PolarStyle } from "@/lib/content/polar";
 import { VOYAGE_TYPES, registryShip } from "@/lib/content/ships/registry";
 import { shipCard } from "@/lib/content/ships/cards";
-import { volumeInk } from "@/lib/volumes";
+import { volumeEyebrow, volumeInk } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
@@ -76,7 +76,7 @@ export default function PolarPage() {
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
-      <HubShell name={NAME} path={POLAR_PATH} trail={trail} eyebrow={`Volume 04 · Voyages · ${VOYAGE_TYPES.expedition.name} · ${NAME}`}
+      <HubShell name={NAME} path={POLAR_PATH} trail={trail} eyebrow={volumeEyebrow("voyages", "Voyages", VOYAGE_TYPES.expedition.name, NAME)}
         title="Polar Crossings: Antarctica by Small Ship"
         intro="The house's polar arm. Antarctica21's air-cruises and sea voyages, from the Peninsula to South Georgia, the Falklands and the Chilean fjords."
         answer={ANSWER}

@@ -11,14 +11,15 @@
 // Quotes: a CHOSEN line (lib/content/voice/chosen.ts) shows everywhere. A line
 // still proposed in bank.json ("entrances") shows only on previews, tagged
 // "Draft for James"; production shows the approved fallback instead, so an
-// unapproved quote never goes live.
+// unapproved quote never goes live. All six are chosen (James, 3 Nov 2026:
+// Gatherings and Other Europe approved), so no draft tag shows today.
 import { CHOSEN } from "@/lib/content/voice/chosen";
 import { VOICE_BANK } from "@/lib/content/voice/james-voice";
 import { HOME, HOUSE_LOOP } from "@/lib/content/home";
 import { FILMS, type ShortFilm } from "@/lib/content/films";
 import { REGION_DATA } from "@/lib/content/regions";
 import { STAYS, altFor } from "@/lib/content/stays";
-import { VOLUME_STYLES, type VolumeKey } from "@/lib/volumes";
+import { VOLUME_STYLES, volumeEyebrow, type VolumeKey } from "@/lib/volumes";
 
 export type EntranceSlide = { url: string; alt: string };
 export type EntranceMedia =
@@ -28,7 +29,7 @@ export type EntranceMedia =
 
 export type Entrance = {
   key: VolumeKey;
-  eyebrow: string; // "VOL II · SAFARIS & RESERVES"
+  eyebrow: string; // "Volume II · Safaris & Reserves" (volumeEyebrow)
   title: string; // the volume name, the page's h1
   summary: [string, string]; // what the volume is · why it is in the house
   quote: { text: string; status: "chosen" | "draft"; id: string };
@@ -38,6 +39,7 @@ export type Entrance = {
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 const GETTY = (id: string) => `${CLD}/c_limit,w_2560/q_auto:good/f_jpg/GettyImages-${id}`;
+const CLDI = (publicId: string) => `${CLD}/c_limit,w_2560/q_auto:good/f_jpg/${publicId}`;
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
 
 /** True on previews and local builds; false only on the production deployment. */
@@ -51,7 +53,7 @@ function voice(id: string, fallback: string): Entrance["quote"] {
   return { text: CHOSEN[fallback], status: "chosen", id: fallback };
 }
 
-const eyebrow = (k: VolumeKey) => `Vol ${VOLUME_STYLES[k].roman} · ${VOLUME_STYLES[k].label}`;
+const eyebrow = (k: VolumeKey) => volumeEyebrow(k, VOLUME_STYLES[k].label);
 const stay = (slug: string) => STAYS.find((s) => s.slug === slug);
 const stayPhoto = (slug: string): EntranceSlide[] => {
   const s = stay(slug);
@@ -109,7 +111,13 @@ export const ENTRANCES: Record<VolumeKey, Entrance> = {
         { url: GETTY("1363882925"), alt: "Family and friends sharing breakfast on a shaded terrace above the sea" },
         ...(shelf("leeu-house") ? [shelf("leeu-house")!] : [{ url: `${B44}/ae294f982_cc67a2d17_6a230a0a714287d73d103c0e_5fdc91f8cde8e-Header.jpg`, alt: "The entrance garden at Leeu House, Franschhoek, with mountains above the village" }]),
         { url: GETTY("538264901"), alt: "A family group lying together on a beach near sunset, Poipu, Kauai" },
-        { url: GETTY("1205839281"), alt: "A traveller standing at the edge of an infinity pool, the water meeting green hills at sunset" },
+        // Added 3 Nov 2026 (James asked for six to eight): partner photographs from each brand's own
+        // record in the Ledger, rights approved in Cloudinary, credited in photo-credits.json.
+        // Getty 1205839281 (the homepage Stays card) is no longer repeated here.
+        { url: CLDI("gatherings/fish-eagle-villa-lion-sands/outside-dining-fish-eagle-villa"), alt: "Supper laid on a long table outside Fish Eagle Residence, Lion Sands, Sabi Sand, South Africa (photograph courtesy of MORE)" },
+        { url: CLDI("wildco/south-africa/thornybush/monwana-villa/monwana-villa-16"), alt: "Monwana Villa, an exclusive-use safari villa in the Thornybush Nature Reserve, South Africa (photograph courtesy of MORE)" },
+        { url: CLDI("wildco/tanzania/serengeti-west/singita-serengeti-house/singita-serengeti-house-pool"), alt: "By the pool at Singita Serengeti House, Singita Grumeti, Serengeti, Tanzania (photograph courtesy of Singita)" },
+        { url: CLDI("wildco/zimbabwe/malilangwe/singita-malilangwe-house/singita-malilangwe-house-breakfast"), alt: "Breakfast on the deck at Singita Malilangwe House, Malilangwe Wildlife Reserve, Zimbabwe (photograph courtesy of Singita)" },
       ],
     },
     plan: "/plan",

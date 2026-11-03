@@ -25,6 +25,7 @@ import { polarTile } from "@/lib/content/ships/hubs";
 import { categoryTiles, mergeOffers } from "@/lib/content/ships/categories";
 import { hubOffers } from "@/lib/content/offers/hub";
 import { POLAR_VOYAGES } from "@/lib/content/polar";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
 // order people choose: how to sail, which waters, every route on one chart, the ship James has
@@ -70,7 +71,7 @@ export default function VoyagesHub() {
   return (
     <div className="theme-sea theme-sea-page">
       <SiteHeader overlay />
-      <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
+      <HubShell name="Voyages" path={PATH} eyebrow={volumeEyebrow("voyages")} title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
         entrance={<VolumeEntrance e={ENTRANCES.voyages} />}
         answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Crossings, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
         filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">

@@ -10,6 +10,7 @@ import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
 import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
+import SignInDoors from "./SignInDoors";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, LINKED_VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
 import { setOverlay } from "@/lib/overlay";
@@ -250,6 +251,8 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
             <li className="hidden min-[1440px]:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
+            {/* Sign in — three doors: Traveler, Advisor, Partner (James, 3 Nov 2026) */}
+            <li><SignInDoors light={light} className={mainItem} /></li>
           </ul>
           {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
               Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,

@@ -1,5 +1,6 @@
 "use client";
 
+import { heroBox } from "@/lib/hero-box";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { motion } from "framer-motion";
@@ -51,11 +52,13 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
   }, []);
 
   if (!n) return null;
+  const box = heroBox(height);
   const s = slides[reduce ? 0 : i];
 
   return (
     <section
-      className={`relative ${height} overflow-hidden bg-ink text-white`}
+      className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`}
+      style={box.style}
       aria-roledescription="carousel"
       aria-label={label}
       onMouseEnter={() => setPaused(true)}
@@ -87,7 +90,8 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
       <div className="pointer-events-none absolute inset-3 md:inset-5 z-[2] border border-white/25" aria-hidden="true" />
 
       {/* Above the slides (the showing slide sits at z-index 1) so the title and stamp are never covered. */}
-      <div className="relative z-[3] h-full">{children}</div>
+      {/* The slider grows with its words (heroBox): the copy fills the frame and never runs under the header. */}
+      <div className="relative z-[3] flex-1 flex flex-col [&>*]:flex-1">{children}</div>
 
       {n > 1 && !reduce && (
         <div className={`absolute right-6 md:right-12 flex items-center gap-4 z-[4] ${controls === "top" ? "top-[92px] lg:top-[188px]" : "bottom-8 md:bottom-12"}`}>
@@ -101,10 +105,10 @@ export default function HeroSlider({ slides, interval = 4500, label, children, h
               </button>
             ))}
           </div>
-          <button type="button" onClick={() => go(-1)} aria-label="Previous photo" className="w-10 h-10 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-ink transition-colors">
+          <button type="button" onClick={() => go(-1)} aria-label="Previous photo" className="w-10 h-10 rounded-none border border-white/60 flex items-center justify-center hover:bg-white hover:text-ink transition-colors">
             <ChevronLeft className="w-4 h-4" strokeWidth={1.5} />
           </button>
-          <button type="button" onClick={() => go(1)} aria-label="Next photo" className="w-10 h-10 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-ink transition-colors">
+          <button type="button" onClick={() => go(1)} aria-label="Next photo" className="w-10 h-10 rounded-none border border-white/60 flex items-center justify-center hover:bg-white hover:text-ink transition-colors">
             <ChevronRight className="w-4 h-4" strokeWidth={1.5} />
           </button>
         </div>

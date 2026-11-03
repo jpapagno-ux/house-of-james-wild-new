@@ -35,11 +35,12 @@ export function shipEntrance({ ef, name, line, path, planHref, pathway, proof, p
     theme: `${efThemeClass(ef)} theme-ef-dark`,
     hero: (
       <DriftFrame a={hero} ratio="21:9" priority motion="zoom">
-        <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &middot; {no}</p>
+        <p data-hero-copy className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &middot; {no}</p>
         <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{name}</h1>
         <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{line}</p>
         <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3">
-          <Link href={planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan with James</Link>
+          {/* The house's main action, the Ledger column, white on the night photograph (hero arrows fix, 3 Nov 2026) */}
+          <Link href={planHref} className="ledger-btn ledger-btn--house ledger-btn--light">Plan with James</Link>
           {priceLine && <span className="text-[11.5px] tracking-[0.18em] uppercase text-white/75">{priceLine}</span>}
         </div>
       </DriftFrame>

@@ -43,7 +43,7 @@ export default function VolumeEntrance({ e }: { e: Entrance }) {
       <div className="pointer-events-none absolute inset-3 md:inset-5 z-[1] border border-white/20" aria-hidden="true" />
 
       <div className="jw-entrance__body relative z-[2] mx-auto max-w-[1400px] px-5 md:px-10 flex flex-col justify-end">
-        <div className={`grid gap-x-12 items-end ${quoteLeft ? "" : "lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]"}`}>
+        <div data-hero-copy className={`grid gap-x-12 items-end ${quoteLeft ? "" : "lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)]"}`}>
           <div className={quoteLeft ? "max-w-[46rem] landscape:lg:max-w-[min(46rem,52vw)]" : ""}>
             <p className="font-mono text-[10.5px] md:text-[11px] uppercase tracking-[0.28em] text-white/90 border-l-[5px] pl-3 leading-[1.4]" style={{ borderColor: volumeLeather(e.key) }}>
               {e.eyebrow}

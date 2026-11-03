@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { heroBox } from "@/lib/hero-box";
 import OnPageLink from "./OnPageLink";
 import { ShortFilmBackdrop } from "@/components/media/ShortFilm";
 import type { ShortFilm } from "@/lib/content/films";
@@ -39,8 +40,13 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 
 /* Hero ----------------------------------------------------------------- */
 export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, credit, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; credit?: string; height?: string }) {
+  // The hero grows rather than letting its words run up under the header: the copy always starts below the header
+  // and its volume row (76px phones, 167px from 1024) and the photo counter beneath it, and the header turns solid once the copy
+  // ([data-hero-copy]) reaches it (hero arrows fix, 3 Nov 2026).
+  const box = heroBox(height);
   const body = (
-      <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
+      <div className="relative flex-1 w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[140px] lg:pt-[200px] pb-8 md:pb-10">
+        <div data-hero-copy>
         {/* the note from the house: floats top-right on desktop, unless a founder stamp is there too — then the two sit together, bottom-right */}
         {tag && (stamp ? <div className="md:hidden">{tag}</div> : tag)}
         <div className="flex items-end justify-between gap-8">
@@ -57,12 +63,13 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
           )}
         </div>
         {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
+        </div>
       </div>
   );
   // A vessel's own short film plays as the hero (tall screens edge to edge, wide screens in a frame).
   if (film) {
     return (
-      <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
+      <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
         {/* the framed film clears the header and its volume row (mobile 80px, desktop 168px) */}
         <ShortFilmBackdrop film={film} frame="top-[100px] lg:top-[192px] bottom-[52px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/5 to-black/75 landscape:from-black/25 landscape:via-transparent landscape:to-black/45" />
@@ -77,7 +84,7 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
     return <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;
   }
   return (
-    <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
+    <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
       <Image src={sharpen(image.url)} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
@@ -111,7 +118,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
             <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
-        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex ledger-btn shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );

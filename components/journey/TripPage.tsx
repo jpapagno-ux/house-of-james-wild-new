@@ -583,7 +583,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         )}
         {Summary}
         <RecordNav items={nav} cta={voyage ? "Ask about dates" : "Plan this journey"} ctaHref="#enquire" />
-        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16">
+        {/* The first section follows the breadcrumb closely, without its rule: the full section gap there read as an
+            empty band between the breadcrumb and The Vessel (hero arrows fix, 3 Nov 2026). */}
+        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16 [&>div:first-child+section]:!mt-8 md:[&>div:first-child+section]:!mt-10 [&>div:first-child+section]:!border-t-0 [&>div:first-child+section]:!pt-0">
           <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>
           {order}
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />

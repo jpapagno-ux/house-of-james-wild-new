@@ -15,7 +15,7 @@ export default function DriftFrame({ a, ratio, height = "min-h-[100svh]", motion
         <Image src={mediaUrl(a, { ratio: ratio ?? "3:2", width: 2560 })} alt={a.alt} fill priority={priority} sizes="100vw" quality={85} className="object-cover" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-black/25" aria-hidden="true" />
-      <div className={`relative ${height} max-w-ledger mx-auto px-5 md:px-10 flex flex-col ${align === "center" ? "justify-center" : "justify-end"} pb-12 md:pb-16 ef-arrive`}>{children}</div>
+      <div className={`relative ${height} max-w-ledger mx-auto px-5 md:px-10 flex flex-col ${align === "center" ? "justify-center" : "justify-end"} pt-28 lg:pt-[200px] pb-12 md:pb-16 ef-arrive`}>{children}</div>
       <p className="absolute bottom-2 right-5 md:right-8 text-[10.5px] tracking-[0.08em] text-white/65">{a.caption ? `${a.caption} · ` : ""}{a.credit}</p>
     </section>
   );

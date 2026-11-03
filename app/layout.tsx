@@ -20,6 +20,7 @@ import { volumeCss } from "@/lib/volumes";
 import JsonLd from "@/components/ledger/JsonLd";
 import SiteFooter from "@/components/ledger/SiteFooter";
 import MobileActionBar from "@/components/ledger/MobileActionBar";
+import MapClear from "@/components/ledger/MapClear";
 import { ScrollProgress } from "@/components/ledger/Motion";
 import { founder, graph, organization, website } from "@/lib/schema";
 import { isIndexable } from "@/lib/seo";
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <SiteFooter />
         <MobileActionBar />
+        <MapClear />
         <JsonLd data={graph(organization(), founder(), website())} />
       </body>
     </html>

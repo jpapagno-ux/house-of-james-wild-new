@@ -215,12 +215,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
+            className={`hidden lg:inline-flex items-center justify-center gap-2.5 h-10 w-10 xl:w-auto xl:pl-3 xl:pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
             aria-label="Ask the house: search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
-            <kbd className="hidden xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
+            <span className="hidden xl:inline ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
+            <kbd className="hidden min-[1440px]:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
           </button>
         </div>
 
@@ -228,24 +228,28 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             with the house line beneath. Cream over a film. On phones the lockup
             is centred between Menu and Plan, the seal at 40, the wordmark at
             1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
-        <Link href="/" className="flex items-center gap-2 min-[380px]:gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
+        <Link href="/" className="flex items-center gap-2 min-[380px]:gap-2.5 md:gap-4 xl:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
           <span className={`hidden min-[380px]:block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
           <span className={`block min-[380px]:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={34} tone={light ? "light" : "ink"} /></span>
-          <span className={`hidden lg:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block xl:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={60} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden xl:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
           {/* phone lockup */}
           <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
-          {/* desktop lockup */}
-          <span className="hidden lg:block"><Wordmark style="editorial" light={light} size={1} /></span>
+          {/* desktop lockup: a smaller seal and wordmark from 1024 to 1279 so the centred lockup clears the side tools */}
+          <span className="hidden lg:block xl:hidden"><Wordmark style="editorial" light={light} size={0.88} /></span>
+          <span className="hidden xl:block"><Wordmark style="editorial" light={light} size={1} /></span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">
-          <ul className="hidden lg:flex items-center gap-4 mr-1">
+          {/* The reader's tools give way as the band narrows (header overlap fix, 3 Nov 2026): below 1280 they live in
+              the menu and "Ask the house" is the search glass alone; Compass returns at 1280, Journal and My Folio at 1440. */}
+          <ul className="hidden xl:flex items-center gap-4 mr-1">
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
-              <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
+              <li key={l.href} className="hidden min-[1440px]:block"><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
-            <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
+            <li className="hidden min-[1440px]:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
           </ul>
           {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
               Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,

@@ -124,3 +124,32 @@ test("satellite tiles never fade in from white, and the ground under them is not
   assert.equal(pixelRatioFor(3, 1440), 2);
   assert.equal(pixelRatioFor(1, 1440), 1);
 });
+
+test("in Satellite the imagery covers sea and land, with an earth and an ocean tone under loading tiles", async () => {
+  const { viewOps, satelliteIndex, SATELLITE } = await import("../components/maps/terrain/style.ts");
+  const base = [
+    { id: "background", type: "background" },
+    { id: "landcover", type: "fill", "source-layer": "landcover" },
+    { id: "river", type: "line", "source-layer": "waterway" },
+    { id: "water", type: "fill", "source-layer": "water" },
+    { id: "jw-hillshade", type: "hillshade" },
+    { id: "jw-satellite", type: "raster", layout: { visibility: "none" } },
+    { id: "road_minor", type: "line", "source-layer": "transportation", layout: { visibility: "none" } },
+    { id: "place_city", type: "symbol", "source-layer": "place" },
+  ];
+  assert.equal(satelliteIndex(base.filter((l) => l.id !== "jw-satellite")), 6);
+  const on = Object.fromEntries(viewOps(base, true, "terrain").map((o) => [`${o.id}.${o.prop}`, o.value]));
+  assert.equal(on["jw-satellite.visibility"], "visible");
+  assert.equal(on["background.background-color"], SATELLITE.ground);
+  assert.equal(on["water.fill-color"], SATELLITE.sea);
+  assert.equal(on["landcover.visibility"], "none");
+  assert.equal(on["river.visibility"], "none");
+  assert.equal(on["jw-hillshade.visibility"], "none");
+  assert.equal(on["place_city.visibility"], undefined); // labels stay
+  const off = Object.fromEntries(viewOps(base, false, "terrain").map((o) => [`${o.id}.${o.prop}`, o.value]));
+  assert.equal(off["landcover.visibility"], "visible");
+  assert.equal(off["road_minor.visibility"], "none"); // a layer hidden by the chart restyle stays hidden
+  assert.equal(off["water.fill-color"], TERRAIN.water);
+  assert.equal(off["jw-hillshade.visibility"], "visible");
+  assert.equal(viewOps(base, false, "flat").find((o) => o.id === "jw-hillshade")?.value, "none");
+});

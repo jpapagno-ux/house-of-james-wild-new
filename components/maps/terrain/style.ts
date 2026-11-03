@@ -33,7 +33,7 @@ export const SKY: SkySpecification = {
 /** Satellite view (fix for the white tile flash, 3 Nov 2026): while satellite tiles load, the map shows its background,
  *  and at pitch the sky and fog fill the horizon. In Satellite those are a muted earth tone close to the imagery (forest,
  *  reef and deep water read dark), not Paper, so a tile still loading never flashes white. Chart keeps Stone Mist. */
-export const SATELLITE = { ground: "#4B5042", sky: "#C7CBC4", horizon: "#9EA49A", fog: "#5F6556" };
+export const SATELLITE = { ground: "#4B5042", sea: "#1F3A44", sky: "#C7CBC4", horizon: "#9EA49A", fog: "#5F6556" };
 export const SKY_SATELLITE: SkySpecification = {
   "sky-color": SATELLITE.sky, "horizon-color": SATELLITE.horizon, "fog-color": SATELLITE.fog,
   "sky-horizon-blend": 0.6, "horizon-fog-blend": 0.7, "fog-ground-blend": 0.35, "atmosphere-blend": 0,
@@ -46,6 +46,33 @@ export const satelliteLayer = (): LayerSpecification => ({
   id: "jw-satellite", type: "raster", source: "jw-satellite", layout: { visibility: "none" },
   paint: { "raster-fade-duration": 0, "raster-resampling": "linear" },
 });
+/** Where the satellite layer sits (the pale-placeholder fix, 3 Nov 2026): above every fill and line of the base style,
+ *  so the imagery covers the whole map, sea included, and only the base style's labels, then our own route, stops and
+ *  pins, draw over it. Returns the index to insert at: the first symbol layer of the base style. */
+export const satelliteIndex = (layers: { type: string }[]) => { const i = layers.findIndex((l) => l.type === "symbol"); return i < 0 ? layers.length : i; };
+
+type Lyr = { id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown> };
+export type ViewOp = { id: string; kind: "layout" | "paint"; prop: string; value: unknown };
+/** The changes that switch the base style between Chart and Satellite. Under satellite, while a tile is still loading,
+ *  land shows the earth tone (the background) and sea a deep ocean tone (the vector water), never the chart's pale
+ *  fills; the chart's other fills, its hillshade and its lines step aside. Back in Chart every layer returns to the
+ *  visibility it had in the built style (`base`). */
+export function viewOps(base: Lyr[], on: boolean, relief: "terrain" | "flat" | undefined): ViewOp[] {
+  const ops: ViewOp[] = [];
+  const vis = (l: Lyr) => (l.layout?.visibility === "none" ? "none" : "visible");
+  for (const l of base) {
+    if (l.id === "jw-satellite") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "visible" : "none" });
+    else if (l.id === "jw-hillshade") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on || relief === "flat" ? "none" : vis(l) });
+    else if (l.id.startsWith("jw-")) continue; // our own route, stops and pins stay as they are
+    else if (l.type === "background") ops.push({ id: l.id, kind: "paint", prop: "background-color", value: groundOf(on) });
+    else if (l.type === "fill" && l["source-layer"] === "water") {
+      ops.push({ id: l.id, kind: "paint", prop: "fill-color", value: on ? SATELLITE.sea : TERRAIN.water });
+      ops.push({ id: l.id, kind: "paint", prop: "fill-outline-color", value: on ? SATELLITE.sea : TERRAIN.water });
+    } else if (l.type === "fill" || l.type === "line" || l.type === "fill-extrusion") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "none" : vis(l) });
+  }
+  return ops;
+}
+
 /** Tile cache and canvas: a larger cache (more zoom levels kept) so panning back and toggling views reuse tiles instead
  *  of refetching them, and the pixel ratio capped (1.5 on phones, 2 elsewhere) so fewer, faster tiles are drawn. */
 export const TILE_CACHE = { maxTileCacheSize: 1024, maxTileCacheZoomLevels: 8 };

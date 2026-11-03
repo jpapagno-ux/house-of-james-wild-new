@@ -111,7 +111,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
             <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
-        <Link href={ctaHref} className={`hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );

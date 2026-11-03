@@ -50,6 +50,16 @@ export const GRADIENT = { stops: ["#1A1816", "#2E2B28", "#3A1C1F", "#5A1F23"], h
  *  scripts/check-palette.mjs holds components/coming and app/whats-coming to the house set plus these. */
 export const COMING_TINTS = { blush: "#E8C4C6", blushSoft: "#E9DCDD", dot: "#C24A4A" };
 
+/** The 3D terrain pilot (components/maps/terrain, preview only): the basemap restyled to the house. Land is Stone Mist
+ *  with two warmer covers, water a soft verdigris-tinted neutral, roads and borders the house keylines, labels Graphite
+ *  on a Paper halo, hillshade in warm graphite shadows and paper highlights, the sky and fog in warm mist. Route lines
+ *  and pins are the volume bases (lib/volumes.ts) and the active stop House Crimson, so they need no token here. */
+export const TERRAIN = {
+  ground: "#F4F2EF", landcover: "#EEEBE6", park: "#ECE9E2", water: "#E4EBE8", waterLine: "#C9D6D1",
+  road: "#DCD7D0", boundary: "#CFC8BF", label: "#2E2B28", labelSoft: "#6B635A", halo: "#FFFFFF",
+  shadow: "#2E2B28", highlight: "#FFFFFF", accent: "#8C8277", sky: "#F4F2EF", horizon: "#FFFFFF", fog: "#F4F2EF",
+};
+
 /** The main action ("Plan with James"): crimson on Paper, white keylines on dark or photographs. */
 export const ACTION = { fill: CRIMSON.fill, hover: CRIMSON.deep };
 

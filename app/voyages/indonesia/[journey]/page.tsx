@@ -18,7 +18,8 @@ import { registryShip } from "@/lib/content/ships/registry";
 import { shipCard, type ShipCardData } from "@/lib/content/ships/cards";
 import { undash } from "@/lib/content/ships/types";
 import { partnerPath } from "@/lib/content/partners";
-import { volumeInk } from "@/lib/volumes";
+import { volumeInk, volumeMark } from "@/lib/volumes";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
@@ -85,6 +86,11 @@ export default async function JourneyPage({ params }: P) {
 
           <ShipItinerary ship={j.short} itineraries={[{ name: `${j.short}, ${j.nights} nights`, nights: j.nights, direction: `${j.embark.split(",")[0]} round trip`, days: j.days.map((d) => ({ ...d, title: t(d.title), summary: t(d.summary) })) }]} map={map}
             eyebrow="A typical week, day by day" title={`What Does a Week of ${j.short} Look Like?`} intro={`${t(j.intro)} Scroll the log and the chart sails the route as you read.`} />
+
+          {/* 3D terrain pilot (preview only, flag gated): directly below the route chart, which stays as it is. */}
+          {j.slug === "komodo-and-flores-charter" && <SeeIn3D kind="voyage" ink={volumeMark("voyages")} title={j.name} exaggeration={1.6}
+            route={{ name: j.short, stops: j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })) }}
+            intro="The same typical week over the land itself: the ridges of Komodo and western Flores standing up from the sea, with the yacht's line drawn day by day. Press Play the voyage, or turn the map yourself." />}
 
           <section id="dive-flags" className={SEC} aria-labelledby="dive-flags-h">
             <SectionHead eyebrow="For divers" title="Where Are the Dive Flags on This Route?" icon="wave" intro="A light touch: the sites the operators name on this week, with a PADI instructor or dive team aboard every yacht. The dive guide picks the sites on the day, by tide and conditions." />

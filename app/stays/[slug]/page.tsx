@@ -7,6 +7,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import GettingThere from "@/components/ledger/GettingThere";
 import { hubsForStay, hubsForCountry, transfersForStay, hubLabel, hubSchema, transferLine } from "@/lib/content/arrivals";
 import JsonLd from "@/components/ledger/JsonLd";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
 import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
@@ -52,7 +53,7 @@ import { ContinueBySea, StayBeforeYouSail } from "@/components/stays/IndonesiaPa
 import { founderProof, stampForStatus, statusLine, VETTED_UNVISITED, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
-import { entryNo, roundelText, sealFor, volumeInk, VOLUME_STYLES } from "@/lib/volumes";
+import { entryNo, roundelText, sealFor, volumeInk, volumeMark, VOLUME_STYLES } from "@/lib/volumes";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
@@ -312,6 +313,10 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          {/* 3D terrain pilot (preview only, flag gated): the stay's own pin over the canyon country, below its map. */}
+          {s.slug === "ulum-moab" && s.coords && <SeeIn3D kind="points" ink={volumeMark("stays")} title={`${s.name.replace(/\s+/g, " ")}, Utah`} exaggeration={1.4} playLabel="Turn the canyon country"
+            points={[{ name: s.name.replace(/\s+/g, " "), lat: s.coords.lat, lng: s.coords.lng }]}
+            intro="The stay's own pin with the red rock country round it raised in relief: mesas, buttes and the canyons cut between them. Press Turn the canyon country, or tilt the map yourself." />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />
           {Object.keys(s.facts).length > 0 && (

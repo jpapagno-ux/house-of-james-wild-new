@@ -531,3 +531,37 @@ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card,
   }
 }
 @keyframes jw-record-bar-in { from { transform: translateY(100%); visibility: hidden; } 1% { visibility: visible; } to { transform: translateY(0); visibility: visible; } }
+
+/* Volume grand entrances (preview, 2 Nov 2026): components/entrance/VolumeEntrance.tsx.
+   Full viewport (100svh with a 100vh fallback; min-height, so a long summary on a short phone grows the header
+   instead of clipping it), clear of the header at the top and the iPhone home indicator at the foot. The fade is
+   the one gradient: a light Ink scrim under the header, then Ink to Garnet rising from the foot. The Ken Burns
+   zoom runs 15.5s per photograph (a 14s hold plus the 1.5s crossfade); reduced motion keeps everything still. */
+.jw-entrance { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+/* Below lg the Quick actions bar (56px + the home indicator, components/ledger/MobileActionBar.tsx) is fixed at the
+   foot, so the cue, the controls and the copy all sit above it. */
+.jw-entrance { --jw-foot: calc(56px + env(safe-area-inset-bottom)); }
+@media (min-width: 1024px) { .jw-entrance { --jw-foot: 0px; } }
+.jw-entrance__body { flex: 1; width: 100%; padding-top: 112px; padding-bottom: calc(var(--jw-foot) + 5rem); }
+@media (min-width: 1024px) { .jw-entrance__body { padding-top: 196px; padding-bottom: 7.5rem; } }
+.jw-entrance__fade { background: linear-gradient(180deg, rgba(26,24,22,0.55) 0%, rgba(26,24,22,0) 24%, rgba(26,24,22,0) 30%, rgba(26,24,22,0.38) 52%, rgba(58,28,31,0.74) 78%, rgba(90,31,35,0.9) 100%); }
+@media (min-width: 1024px) { .jw-entrance__fade { background: linear-gradient(180deg, rgba(26,24,22,0.5) 0%, rgba(26,24,22,0) 26%, rgba(26,24,22,0) 42%, rgba(46,43,40,0.34) 62%, rgba(58,28,31,0.7) 84%, rgba(90,31,35,0.88) 100%); } }
+.jw-entrance__title { font-size: clamp(3.5rem, 15vw, 10.5rem); line-height: 0.88; letter-spacing: -0.02em; text-wrap: balance; }
+.jw-entrance__cue { bottom: calc(var(--jw-foot) + 1.25rem); }
+.jw-entrance__rail { bottom: calc(var(--jw-foot, 0px) + 1.25rem); }
+@media (min-width: 1024px) { .jw-entrance__cue, .jw-entrance__rail { bottom: 2rem; } }
+/* The homepage hero keeps its calls to action at the foot on phones, so its Pause film control sits top right, under the header. */
+@media (max-width: 1023px) { section[aria-label="Welcome"] .jw-entrance__rail { top: 92px; bottom: auto; } }
+.jw-entrance__cue-line { position: relative; }
+.jw-entrance__cue-line::after { content: ""; position: absolute; left: 0; top: -40%; width: 1px; height: 40%; background: #FFFFFF; animation: jw-cue 2.4s cubic-bezier(.65,0,.35,1) infinite; }
+@keyframes jw-cue { from { top: -40%; } to { top: 100%; } }
+@keyframes jw-kenburns { from { transform: scale(1); } to { transform: scale(1.12); } }
+.jw-kenburns { animation: jw-kenburns 15.5s linear both; will-change: transform; }
+.jw-kenburns--paused { animation-play-state: paused; }
+#volume { scroll-margin-top: 112px; }
+@media (min-width: 1024px) { #volume { scroll-margin-top: 208px; } }
+@media (prefers-reduced-motion: reduce) { .jw-kenburns, .jw-entrance__cue-line::after { animation: none; } }
+/* The soft handoff from an entrance into the volume: the opening title rises into place as it scrolls in
+   (scroll-driven, where supported; elsewhere it is simply there). */
+@keyframes jw-rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { .jw-volume-open { animation: jw-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; } } }

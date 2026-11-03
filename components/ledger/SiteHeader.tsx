@@ -12,6 +12,7 @@ import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, LINKED_VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
+import { setOverlay } from "@/lib/overlay";
 
 // Link guard: in production only built pages appear in the menus.
 const VOLUMES = live(ALL_VOLUMES).map((v) => ({ ...v, browse: live(v.browse), ledger: live(v.ledger) }));
@@ -133,6 +134,11 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
   const [searching, setSearching] = useState(false);
+
+  // The menu and search cover the page: raise the overlay signal so the homepage film
+  // and the volume entrances hold still underneath (lib/overlay.ts).
+  useEffect(() => { setOverlay("menu", open); return () => setOverlay("menu", false); }, [open]);
+  useEffect(() => { setOverlay("search", searching); return () => setOverlay("search", false); }, [searching]);
 
   // "/" or Ctrl/⌘+K opens search from anywhere (not while typing in a field).
   useEffect(() => {

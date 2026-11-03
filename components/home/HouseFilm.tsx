@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useOverlayOpen } from "@/lib/overlay";
 import { Play } from "lucide-react";
 
 // HouseFilm — the house film, click to play. Only a poster and a play button
@@ -21,6 +22,9 @@ type Props = {
 export default function HouseFilm({ title, caption, youtubeId, poster, posterAlt, mp4, webm }: Props) {
   const [playing, setPlaying] = useState(false);
   const video = useRef<HTMLVideoElement>(null);
+  // Opening the menu or search pauses the film (it never resumes on its own).
+  const overlay = useOverlayOpen();
+  useEffect(() => { if (overlay) video.current?.pause(); }, [overlay]);
 
   return (
     <div className="relative aspect-video w-full border ledger-border bg-ink overflow-hidden">

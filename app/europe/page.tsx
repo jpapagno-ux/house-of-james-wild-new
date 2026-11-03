@@ -1,9 +1,10 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
-import { HOUSE_LOOP } from "@/lib/content/home";
 import { STAYS, altFor, pageReady } from "@/lib/content/stays";
 import { REGION_DATA } from "@/lib/content/regions";
 import { recordHref } from "@/lib/ledger/urls";
@@ -39,7 +40,7 @@ export default function EuropeHub() {
   const total = EU.length;
   return (
     <>
-      <SiteHeader />
+      <SiteHeader overlay />
       <HubShell
         name="Other Europe"
         path={PATH}
@@ -47,7 +48,7 @@ export default function EuropeHub() {
         title="Not the Capitals and the Queues"
         intro={`${V.intro} ${total} stays across ${COUNTRIES.length} countries, every one filed in the Ledger.`}
         browse={V.browse}
-        film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "The Europe most travellers are never shown.", credit: "Film by Felix Studios", href: "/#film" }}
+        entrance={<VolumeEntrance e={ENTRANCES.europe} />}
         answer={`Other Europe is the sixth volume of the James Wild & Co Ledger: ${total} vetted stays across ${COUNTRIES.map(([c]) => c).join(", ")} — country houses, quintas, island retreats and alpine lodges away from the capitals — each with a permanent Ledger ID. The house pairs them with river cruises on the Douro, Danube and Rhône, planned either side of the boat, and plans three nights or more in each place.`}
         filling="Country pages for Ireland, Portugal, Spain, Italy, Switzerland and France open under Destinations as each is built; the Greek islands and Mallorca are there now."
         closeTitle="Tell James the valley you've always meant to find."

@@ -188,6 +188,10 @@ function slerp(a,b,t){var A=toV(a[0],a[1]),B=toV(b[0],b[1]);var w=Math.acos(clam
   if(s<1e-9)return [a[0]+(b[0]-a[0])*t,a[1]+wrap(b[1]-a[1])*t];var k1=Math.sin((1-t)*w)/s,k2=Math.sin(t*w)/s;
   return toLL([k1*A[0]+k2*B[0],k1*A[1]+k2*B[1],k1*A[2]+k2*B[2]])}
 function gcd(a,b){var A=toV(a[0],a[1]),B=toV(b[0],b[1]);return Math.acos(clamp(A[0]*B[0]+A[1]*B[1]+A[2]*B[2],-1,1))/D}
+/* the route's bounding-box diagonal in km; the zoom cap and fit padding that follow from it */
+function spanKm(l){var la=l.map(function(c){return c[0]}),lo=l.map(function(c){return c[1]});return gcd([Math.min.apply(0,la),Math.min.apply(0,lo)],[Math.max.apply(0,la),Math.max.apply(0,lo)])*D*6371}
+function spanCap(km){return km>800?1.2:km>200?1.6:km>50?2.5:4}
+function fitPad(fm,km){return CFG.fitPad!=null?CFG.fitPad:Math.max(km<50?0.006:0.02,fm*(km<200?0.14:0.22))}
 var SEG=30;
 function legPts(a,b){var o=[];for(var j=0;j<=SEG;j++)o.push(slerp(a,b,j/SEG));return o}
 function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
@@ -207,12 +211,14 @@ KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=
  for(var i=0;i<m.n;i++){var lp=legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
   var c=centroid(lp),md=0;lp.forEach(function(p){md=Math.max(md,gcd(c,p))});m.legR.push(clamp(215/((md+(CFG.pad||0.12))*D),320,CFG.maxR||14000));m.legA.push(md*2)}
  m.dayStart={};m.dayWp={};m.wp.forEach(function(w,i){if(m.dayStart[w.d]==null)m.dayStart[w.d]=i;m.dayWp[w.d]=m.dayWp[w.d]||[];if(!w.nf)m.dayWp[w.d].push(w.c)});m.wp.forEach(function(w,i){if(!m.dayWp[w.d].length){m.dayWp[w.d].push(w.c);if(m.wp[i+1])m.dayWp[w.d].push(m.wp[i+1].c)}});m.days=Object.keys(m.dayStart).map(Number).sort(function(a,b){return a-b});
- /* region first (map audit, 2 Nov 2026): the whole route, padded, is the opening view, and no day or chase zooms in
-    further than CFG.zoomCap (1.5) times it, so the route and its neighbours stay in view; never an extreme zoom */
+ /* region first (map audit, 2 Nov 2026): the whole route, padded, is the opening view. No day or chase zooms in further
+    than spanCap() times it (James, 3 Nov 2026: "perhaps zoom in more if shorter trips"): the cap follows the route's
+    bounding-box diagonal, and short routes get a tighter frame so they are not lost in open sea. */
  var all=m.wp.filter(function(w){return !w.v}).map(function(w){return w.c}),fc=centroid(all),fm=0;all.forEach(function(p){fm=Math.max(fm,gcd(fc,p))});
- m.fitC=fc;m.fitR=clamp(215/((fm+(CFG.fitPad||0.18)+fm*.12)*D),320,CFG.maxR||14000);m.capR=m.fitR*(CFG.zoomCap||1.5);
+ m.spanKm=spanKm(all);
+ m.fitC=fc;m.fitR=clamp(215/((fm+fitPad(fm,m.spanKm))*D),320,CFG.maxR||14000);m.capR=m.fitR*(CFG.zoomCap||spanCap(m.spanKm));
  m.legR=m.legR.map(function(r){return Math.min(r,m.capR)});
- m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+(CFG.dayPad||0.05))*D),320,CFG.dayMaxR||CFG.maxR||14000))})});
+ m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+Math.min(CFG.dayPad||0.05,Math.max(0.004,m.spanKm/111/12)))*D),320,CFG.maxR||14000))})});
 var HOLD=CFG.hold||1.2,HOLD_END=2.4,LNG=Math.log(270),START=CFG.start||[0,0];
 var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 var GLOBE=CFG.intro==='globe';
@@ -226,7 +232,7 @@ function startFly(toC,toLn){var from=[S.phi,S.lam],ang=gcd(from,toC),hi=Math.max
  var mid=Math.min(S.lnR,toLn,LNG+(hi-LNG)*(1-clamp(ang/25,0.12,1)));
  S.fly={from:from,to:toC,a:S.lnR,b:toLn,mid:mid,dur:clamp(1.8+ang/40,1.8,3.8)};S.phase='fly';S.t=0}
 function intro(){S.phase='intro';S.t=0;S.k=0;S.u=0}
-function setMode(k,keepFollow,quick){S.focus=false;S.mode=k;S.k=0;S.t=0;S.u=0;S.manual=false;if(!keepFollow)S.follow=null;var m=J[k],d0=m.wp[0].d;if(quick||reduce)startFly(m.dayC[d0],Math.log(m.dayR[d0]));else intro();if(!reduce)S.playing=true;buildUI();syncButtons()}
+function setMode(k,keepFollow,quick){S.focus=false;S.mode=k;var sm=J[k];stage.dataset.spanKm=Math.round(sm.spanKm);stage.dataset.zoomCap=(sm.capR/sm.fitR).toFixed(1);S.k=0;S.t=0;S.u=0;S.manual=false;if(!keepFollow)S.follow=null;var m=J[k],d0=m.wp[0].d;if(quick||reduce)startFly(m.dayC[d0],Math.log(m.dayR[d0]));else intro();if(!reduce)S.playing=true;buildUI();syncButtons()}
 function jump(i){var m=J[S.mode];S.k=clamp(i,0,m.n);S.u=S.k/m.n;S.t=0;S.phase='hold';S.manual=false}
 function showDay(d){var m=J[S.mode];if(m.dayStart[d]==null)return;var i=m.dayStart[d];S.follow=d;S.manual=false;S.playing=true;
  if(i>0){jump(i-1);S.t=HOLD*.75}else jump(0)}
@@ -246,7 +252,7 @@ function step(rdt){
  else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;
   var lu=clamp(S.t/dur,0,1),le=ease(lu);S.u=(S.k+le)/m.n;S.legU=lu;var d1=dayOf(m,S.k),d2=dayOf(m,S.k+1);
   var a=Math.log(m.dayR[d1]),b=Math.log(m.dayR[d2]),lg=Math.log(m.legR[S.k]);
-  var CH=CFG.chase||{},close=Math.log(Math.min(CFG.maxR||30000,m.capR,CH[lmode]||CH.d||36000)),hd=headAt(m,S.u);
+  var CH=CFG.chase||{},close=Math.log(Math.min(CFG.maxR||30000,m.capR,Math.max(m.fitR,CH[lmode]||CH.d||36000))),hd=headAt(m,S.u);
   var w8=clamp((close-lg)/1.6,0,1),sn=Math.sin(Math.PI*lu);
   tc=slerp(hd,centroid(m.legs[S.k]),w8*Math.pow(sn,.8)*.9);tl=close+(Math.min(lg,close)-close)*Math.pow(sn,.7);S.chase=true;
   if(lu>=1){S.k++;S.phase='hold';S.t=0}}
@@ -462,7 +468,7 @@ stage.setAttribute('tabindex','0');stage.addEventListener('keydown',function(e){
 var fsb=el('fs');if(fsb){var host=el('chart')||stage;var canFs=!!(host.requestFullscreen||host.webkitRequestFullscreen);if(!canFs)fsb.hidden=true;fsb.addEventListener('click',function(){try{var fe=document.fullscreenElement||document.webkitFullscreenElement;if(fe){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{var p=(host.requestFullscreen||host.webkitRequestFullscreen).call(host);if(p&&p.catch)p.catch(function(){fsb.hidden=true})}}catch(err){fsb.hidden=true}})}
 window.chartDay=function(k,d){if(!J[k])return;if(S.mode!==k)setMode(k,true,true);showDay(d)};
 window.chartFocus=function(keys,name){keys=(keys||[]).filter(function(k){return J[k]});if(!keys.length)return;var pts=[];keys.forEach(function(k){J[k].wp.forEach(function(w){if(!w.v)pts.push(w.c)})});var c=centroid(pts),md=0;pts.forEach(function(p){md=Math.max(md,gcd(c,p))});
- var r=clamp(215/((md+(CFG.fitPad||0.18)+md*.12)*D),320,CFG.maxR||14000);S.focus=true;S.focusName=name||'';S.follow=null;S.manual=false;S.playing=true;startFly(c,Math.log(r));if(name){setText('routeTitle',name);setText('routeSub',keys.length+(keys.length===1?' route':' routes')+'. Choose a ship and a route to sail one day by day.')}};
+ var r=clamp(215/((md+fitPad(md,spanKm(pts)))*D),320,CFG.maxR||14000);S.focus=true;S.focusName=name||'';S.follow=null;S.manual=false;S.playing=true;startFly(c,Math.log(r));if(name){setText('routeTitle',name);setText('routeSub',keys.length+(keys.length===1?' route':' routes')+'. Choose a ship and a route to sail one day by day.')}};
 window.chartRoute=function(k,scroll){if(J[k]){if(S.mode!==k||S.focus)setMode(k,false,false);if(scroll)stage.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})}};
 [['l110',CFG.globe||'data/land-110m.geo.json'],['region',CFG.region],['overlay',CFG.overlay],['contours',CFG.contours],['terrain',CFG.terrain&&CFG.terrain.src]].forEach(function(p){if(!p[1])return;fetch(p[1]).then(function(r){return r.json()}).then(function(j){if(p[0]==='region'&&j&&j.features)j={type:'FeatureCollection',features:j.features.filter(function(f){var L=f.properties&&f.properties.layer;return !L||L==='land'})};/* off the polar charts, Antarctica's antimeridian seam drew a band across the southern ocean (map audit, 2 Nov 2026) */if(p[0]==='l110'&&j&&j.features&&!/antarctica|polar/.test(String(CFG.region||''))&&!CFG.keepAntarctica)j={type:'FeatureCollection',features:j.features.filter(function(f){try{var b=d3.geoBounds(f);return b[1][1]>-60}catch(e){return true}})};if(p[0]==='terrain')j=j.map(function(q){return {c:[q[0],q[1]],v:toV(q[1],q[0]),t:q[2],l:q[3]}});data[p[0]]=j;landKey=''}).catch(function(){})});
 var IMG=null;if(CFG.img){var im=new Image();im.onload=function(){var c=document.createElement('canvas');c.width=im.width;c.height=im.height;var x=c.getContext('2d');var f=Math.round(Math.min(im.width,im.height)*.07);

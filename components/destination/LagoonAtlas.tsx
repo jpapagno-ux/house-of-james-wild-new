@@ -19,6 +19,10 @@ export type LagoonStayPin = { slug: string; name: string; href: string | null; l
 type Props = { lagoons: Lagoon[]; charts: Record<string, LagoonChart>; stays: LagoonStayPin[]; stayInk: string };
 
 const project = (c: LagoonChart, lat: number, lng: number) => ({ x: (lng - c.bounds.w) * c.kx, y: (c.bounds.n - lat) * c.ky });
+// The zoom cap by how far a route or place set spans (map audit, James 3 Nov 2026: "perhaps zoom in more if shorter
+// trips"): the bounding-box diagonal in km. Mirrors spanCap() in public/maps/jw-chart.js.
+export const spanCap = (km: number) => (km > 800 ? 1.2 : km > 200 ? 1.6 : km > 50 ? 2.5 : 4);
+const km = (a: [number, number], b: [number, number]) => { const R = 6371, D = Math.PI / 180, dLat = (b[0] - a[0]) * D, dLng = (b[1] - a[1]) * D; const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[0] * D) * Math.cos(b[0] * D) * Math.sin(dLng / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
 const inFrame = (c: LagoonChart, lat: number, lng: number) => lng >= c.bounds.w && lng <= c.bounds.e && lat >= c.bounds.s && lat <= c.bounds.n;
 
 function Marker({ kind, x, y, s }: { kind: MapPoint["kind"] | "stay"; x: number; y: number; s: number }) {
@@ -43,10 +47,26 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
   const last = useRef<{ d: number; cx: number; cy: number; x: number; y: number } | null>(null);
   const tapAt = useRef(0);
 
-  useEffect(() => { setView({ k: 1, x: 0, y: 0 }); setSel(null); }, [key]);
 
   const pins = useMemo(() => stays.filter((s) => lagoon.stays.includes(s.slug) && inFrame(c, s.lat, s.lng)), [stays, lagoon, c]);
   const points = useMemo(() => lagoon.points.filter((p) => inFrame(c, p.lat, p.lng)), [lagoon, c]);
+  // Opening view: the lagoon's own places (dives, snorkel spots, stays and the reef) fitted with padding, closer for a small
+  // lagoon, never deeper than spanCap of their span, so a short trip is not lost in open sea.
+  const fit = useMemo(() => {
+    // The places only (the reef outline spans the whole chart); never tighter than a box about 10 km across.
+    const ll: [number, number][] = [...points.map((p) => [p.lat, p.lng] as [number, number]), ...pins.map((p) => [p.lat, p.lng] as [number, number])].filter(([lat, lng]) => inFrame(c, lat, lng));
+    if (!ll.length) return { k: 1, x: 0, y: 0 };
+    const la = ll.map((p) => p[0]), lo = ll.map((p) => p[1]), mid = [(Math.min(...la) + Math.max(...la)) / 2, (Math.min(...lo) + Math.max(...lo)) / 2], h = 0.045;
+    const sw: [number, number] = [Math.min(...la, mid[0] - h), Math.min(...lo, mid[1] - h)], ne: [number, number] = [Math.max(...la, mid[0] + h), Math.max(...lo, mid[1] + h)];
+    const span = km(sw, ne), pad = span < 50 ? 0.12 : 0.2;
+    const a = project(c, ne[0], sw[1]), b = project(c, sw[0], ne[1]);
+    const bw = Math.max(1, b.x - a.x) * (1 + 2 * pad), bh = Math.max(1, b.y - a.y) * (1 + 2 * pad);
+    const k = Math.min(spanCap(span), 8, Math.max(1, Math.min(c.width / bw, c.height / bh)));
+    const cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2;
+    const x = Math.min(0, Math.max(c.width * (1 - k), c.width / 2 - cx * k)), y = Math.min(0, Math.max(c.height * (1 - k), c.height / 2 - cy * k));
+    return { k, x, y };
+  }, [points, pins, lagoon, c]);
+  useEffect(() => { setView(fit); setSel(null); }, [key, fit]);
   const reef = lagoon.reef ? "M" + lagoon.reef.map(([lng, lat]) => { const q = project(c, lat, lng); return `${q.x.toFixed(1)},${q.y.toFixed(1)}`; }).join("L") + "Z" : null;
 
   const clamp = useCallback((v: { k: number; x: number; y: number }) => {
@@ -184,7 +204,7 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
             <div className="absolute top-2 right-2 flex flex-col gap-1">
               <button type="button" aria-label="Zoom in" onClick={() => { setArmed(true); zoomAt(1.5, c.width / 2, c.height / 2); }} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><Plus className="w-4 h-4" /></button>
               <button type="button" aria-label="Zoom out" onClick={() => zoomAt(1 / 1.5, c.width / 2, c.height / 2)} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><Minus className="w-4 h-4" /></button>
-              <button type="button" aria-label="Reset the view" onClick={() => setView({ k: 1, x: 0, y: 0 })} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><RotateCcw className="w-4 h-4" /></button>
+              <button type="button" aria-label="Reset the view" onClick={() => setView(fit)} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><RotateCcw className="w-4 h-4" /></button>
             </div>
             {armed && <button type="button" onClick={() => setArmed(false)} className="absolute top-2 left-2 px-2.5 py-1 text-[11px] uppercase tracking-[0.14em] bg-white/90 border ledger-border">Done</button>}
           </div>

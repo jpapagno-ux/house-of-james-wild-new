@@ -87,8 +87,8 @@ export default async function JourneyPage({ params }: P) {
           <ShipItinerary ship={j.short} itineraries={[{ name: `${j.short}, ${j.nights} nights`, nights: j.nights, direction: `${j.embark.split(",")[0]} round trip`, days: j.days.map((d) => ({ ...d, title: t(d.title), summary: t(d.summary) })) }]} map={map}
             eyebrow="A typical week, day by day" title={`What Does a Week of ${j.short} Look Like?`} intro={`${t(j.intro)} Scroll the log and the chart sails the route as you read.`} />
 
-          {/* 3D terrain pilot (preview only, flag gated): directly below the route chart, which stays as it is. */}
-          {j.slug === "komodo-and-flores-charter" && <SeeIn3D kind="voyage" ink={volumeMark("voyages")} title={j.name} exaggeration={1.6}
+          {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): directly below the route chart, which stays as it is. */}
+          {j.slug === "komodo-and-flores-charter" && <SeeIn3D page="voyages/indonesia/komodo-and-flores-charter" kind="voyage" ink={volumeMark("voyages")} title={j.name} exaggeration={1.6}
             route={{ name: j.short, stops: j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })) }}
             intro="The same typical week over the land itself: the ridges of Komodo and western Flores standing up from the sea, with the yacht's line drawn day by day. Press Play the voyage, or turn the map yourself." />}
 

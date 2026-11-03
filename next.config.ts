@@ -9,15 +9,13 @@ import redirects from "./redirects.json";
 // production deployment, as a second lock beside robots.txt and meta robots.
 const isProd = process.env.VERCEL_ENV === "production" && process.env.NEXT_PUBLIC_INDEXING === "on";
 
-// The 3D terrain pilot (components/maps/terrain): on in preview deployments, off in production until James sets
-// NEXT_PUBLIC_TERRAIN_PILOT=true there. There is no Content-Security-Policy header on this site, so its tile hosts
-// (tiles.openfreemap.org, s3.amazonaws.com, api.maptiler.com) and MapLibre's blob: worker need no allowance; if a CSP
-// is added later it needs connect-src and img-src for those hosts and worker-src 'self' blob:.
-const terrainPilot = process.env.NEXT_PUBLIC_TERRAIN_PILOT ?? (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production" ? "true" : "false");
+// 3D terrain (components/maps/terrain): gated by a page allow-list in flag.ts, not by this config. There is no
+// Content-Security-Policy header on this site, so its tile hosts (tiles.openfreemap.org, s3.amazonaws.com,
+// api.maptiler.com) and MapLibre's worker need no allowance; if a CSP is added later it needs connect-src and img-src
+// for those hosts and worker-src 'self' blob:.
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
-  env: { NEXT_PUBLIC_TERRAIN_PILOT: terrainPilot },
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [75, 85],

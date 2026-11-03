@@ -76,10 +76,27 @@ test("a MapTiler key never prints", () => {
   for (const m of src.matchAll(/console\.(log|warn|error)\(([^;]*)\)/g)) assert.match(m[2], /redact\(|^"\[terrain pilot\]"$/, `unredacted log: ${m[0]}`);
 });
 
-test("the pilot is off in production unless James turns it on, and on in previews", () => {
-  const cfg = readFileSync(new URL("../next.config.ts", import.meta.url), "utf8");
-  assert.match(cfg, /NEXT_PUBLIC_TERRAIN_PILOT \?\? \(process\.env\.VERCEL_ENV && process\.env\.VERCEL_ENV !== "production" \? "true" : "false"\)/);
-  assert.match(readFileSync(new URL("../components/maps/terrain/flag.ts", import.meta.url), "utf8"), /NEXT_PUBLIC_TERRAIN_PILOT === "true"/);
+test("3D terrain shows only on the allow-listed pages", async () => {
+  const { TERRAIN_PAGES, terrainOn } = await import("../components/maps/terrain/flag.ts");
+  assert.deepEqual([...TERRAIN_PAGES].sort(), ["destinations/oceania/tahiti#tahaa", "stays/ulum-moab", "voyages/indonesia/komodo-and-flores-charter", "voyages/ships/natural-paradise-yacht"]);
+  for (const p of TERRAIN_PAGES) assert.equal(terrainOn(p), true);
+  assert.equal(terrainOn("voyages/indonesia/raja-ampat-and-misool-charter"), false);
+  assert.equal(terrainOn("stays/some-other-stay"), false);
+  assert.doesNotMatch(readFileSync(new URL("../next.config.ts", import.meta.url), "utf8"), /NEXT_PUBLIC_TERRAIN_PILOT:/);
+});
+
+test("flown legs arc along a great circle and the vehicle heads along the line", async () => {
+  const { arcOf, headingAt, isAir } = await import("../components/maps/terrain/geo.ts");
+  const arc = arcOf([115.17, -8.75], [119.89, -8.49], 20);
+  assert.equal(arc.length, 21);
+  assert.deepEqual(arc[0], [115.17, -8.75]);
+  assert.deepEqual(arc[20], [119.89, -8.49]);
+  assert.ok(isAir({ mode: "air" }) && isAir({ mode: "Flight" }) && !isAir({ mode: "sea" }) && !isAir({}));
+  const air = legsOf([{ lat: 0, lng: 0, name: "a" }, { lat: 0, lng: 10, name: "b", mode: "air" }]);
+  assert.ok(air[0].length > 2, "a flown leg is an arc, not a straight pair");
+  const h = headingAt([[0, 0], [0, 1], [1, 1]], 0.25);
+  assert.ok(Math.abs(h.bearing) < 0.5 && Math.abs(h.at[1] - 0.5) < 1e-3, "heading north on the first segment");
+  assert.ok(Math.abs(headingAt([[0, 0], [0, 1], [1, 1]], 1).bearing - 90) < 1, "heading east at the end");
 });
 
 test("the pilot pages read real coordinates from the repo", () => {

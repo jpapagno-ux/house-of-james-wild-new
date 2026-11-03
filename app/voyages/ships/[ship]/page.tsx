@@ -43,10 +43,10 @@ export default async function ShipPage({ params }: P) {
   const fleet = JOURNEY_FLEETS.find((f) => f.ships.includes(e.slug));
   const journeys = sailsJourneys(e.slug) ? <CharterJourneys ship={e.data.name} ships={[e.slug]} partner={fleet?.partner} /> : null;
   const ocean = founderOceanForVoyage(shipPath(e.slug), e.waters);
-  // 3D terrain pilot (preview only, flag gated): the volcanoes of the western islands under the 8-day weeks.
+  // 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the volcanoes of the western islands under the 8-day weeks.
   const terrain = e.slug === "natural-paradise-yacht" ? (() => {
     const weeks = (e.data as ShipRecord).itineraries.filter((i) => i.days.length && i.nights === 7).reverse(); // Week B first: the western volcanoes
-    return weeks.length ? <SeeIn3D kind="voyage" ink={volumeMark("voyages")} title={`${e.data.name} in the Galapagos`} exaggeration={1.8}
+    return weeks.length ? <SeeIn3D page="voyages/ships/natural-paradise-yacht" kind="voyage" ink={volumeMark("voyages")} title={`${e.data.name} in the Galapagos`} exaggeration={1.8}
       routes={weeks.map((w) => ({ name: w.name.split(":")[0], stops: w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })) }))}
       intro="Both 8-day weeks over the islands themselves: Isabela's and Fernandina's shield volcanoes, Santa Cruz's highlands and the low eastern islands, with the yacht's line drawn day by day." /> : null;
   })() : null;

@@ -2,7 +2,9 @@
 
 export type LngLat = [number, number];
 /** One stop of a route, or one point of a points view. Coordinates come only from repo data. */
-export type TerrainStop = { lat: number; lng: number; name: string; day?: number | string; note?: string; path?: LngLat[] };
+/** `mode` describes the leg arriving at this stop: "air" (a flight or air transfer marked in the repo's own data) draws a
+ *  dashed great-circle arc flown by a plane; anything else is sailed by the vessel. */
+export type TerrainStop = { lat: number; lng: number; name: string; day?: number | string; note?: string; path?: LngLat[]; mode?: string };
 export type TerrainRoute = { name: string; stops: TerrainStop[] };
 export type TerrainKind = "voyage" | "overland" | "points";
 
@@ -15,11 +17,31 @@ export function boundsOf(stops: TerrainStop[]): [LngLat, LngLat] {
   return [[Math.min(...xs), Math.min(...ys)], [Math.max(...xs), Math.max(...ys)]];
 }
 
-/** The legs of a route: leg i runs from stop i-1 to stop i, along the stop's own path when the repo has one. */
+const AIR = new Set(["air", "flight", "plane", "fly"]);
+/** Whether the leg arriving at this stop is flown (same vocabulary as the SVG chart engine's MODE table). */
+export const isAir = (s: Pick<TerrainStop, "mode">) => !!s.mode && AIR.has(s.mode.toLowerCase());
+
+/** A gentle great-circle arc from a to b, n segments (slerp on the sphere). */
+export function arcOf(a: LngLat, b: LngLat, n = 48): LngLat[] {
+  const r = Math.PI / 180, v = ([x, y]: LngLat) => [Math.cos(y * r) * Math.cos(x * r), Math.cos(y * r) * Math.sin(x * r), Math.sin(y * r)];
+  const p = v(a), q = v(b), d = Math.acos(Math.min(1, Math.max(-1, p[0] * q[0] + p[1] * q[1] + p[2] * q[2])));
+  if (d < 1e-9) return [a, b];
+  const out: LngLat[] = [];
+  for (let i = 0; i <= n; i++) {
+    const f = i / n, A = Math.sin((1 - f) * d) / Math.sin(d), B = Math.sin(f * d) / Math.sin(d);
+    const x = A * p[0] + B * q[0], y = A * p[1] + B * q[1], z = A * p[2] + B * q[2];
+    out.push([Math.atan2(y, x) / r, Math.atan2(z, Math.hypot(x, y)) / r]);
+  }
+  out[0] = a; out[n] = b;
+  return out;
+}
+
+/** The legs of a route: leg i runs from stop i-1 to stop i, along the stop's own path when the repo has one, or a
+ *  great-circle arc when the leg is flown. */
 export function legsOf(stops: TerrainStop[]): LngLat[][] {
   return stops.slice(1).map((s, i) => {
     const from = lngLat(stops[i]), to = lngLat(s);
-    const p = s.path && s.path.length >= 2 ? s.path : [from, to];
+    const p = s.path && s.path.length >= 2 ? s.path : isAir(s) ? arcOf(from, to) : [from, to];
     return p.map((c) => [c[0], c[1]] as LngLat);
   });
 }
@@ -40,6 +62,15 @@ export function partOf(line: LngLat[], t: number): LngLat[] {
     break;
   }
   return out;
+}
+
+/** Where a vehicle is after the first `t` of a polyline, and its heading (degrees, 0 = north). */
+export function headingAt(line: LngLat[], t: number): { at: LngLat; bearing: number } {
+  if (line.length < 2) return { at: line[0], bearing: 0 };
+  const part = partOf(line, t);
+  // partOf keeps line[0..k] and ends on segment k (line[k] to line[k+1]).
+  const k = Math.max(0, Math.min(part.length - 2, line.length - 2));
+  return { at: part[part.length - 1], bearing: bearingOf(line[k], line[k + 1]) };
 }
 
 /** Compass bearing from a to b, degrees (0 = north). */

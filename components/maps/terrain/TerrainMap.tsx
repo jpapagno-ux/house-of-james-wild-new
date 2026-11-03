@@ -5,10 +5,10 @@
 // Free sources by default (OpenFreeMap + AWS Terrarium); MapTiler when NEXT_PUBLIC_MAPTILER_KEY is set in Vercel env.
 // The key is read here only, never logged (errors are redacted), and must be domain-restricted in MapTiler.
 import { useCallback, useEffect, useRef, useState } from "react";
-import { AttributionControl, Map as MLMap, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
+import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, fontOf, groundStyle, houseStyle, redact } from "./style";
-import { bearingOf, boundsOf, clampSeabed, dayLabel, legsOf, lngLat, partOf, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
+import { bearingOf, boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lngLat, partOf, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
 const KEY = process.env.NEXT_PUBLIC_MAPTILER_KEY || "";
@@ -67,7 +67,14 @@ async function baseStyle(): Promise<{ style: StyleSpecification; maptiler: boole
 }
 
 const fc = (features: GeoJSON.Feature[]): GeoJSON.FeatureCollection => ({ type: "FeatureCollection", features });
-const line = (coords: LngLat[]): GeoJSON.Feature => ({ type: "Feature", properties: {}, geometry: { type: "LineString", coordinates: coords } });
+/** Route legs as features, each flagged `air` so flown legs draw dashed. */
+const legsFc = (legs: LngLat[][], air: boolean[]) => fc(legs.map((l, i) => ({ type: "Feature" as const, properties: { air: !!air[i] }, geometry: { type: "LineString" as const, coordinates: l } })).filter((f) => f.geometry.coordinates.length > 1));
+const airOf = (stops: TerrainStop[]) => stops.slice(1).map(isAir);
+
+// The vehicle on the route, drawn pointing north and rotated to the heading: the house vessel (graphite hull, crimson
+// pennant) under way, a small plane on a flown leg. About 22px, like the SVG charts' moving boat.
+const VESSEL = `<svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><path d="M11 1.5 C14.6 5 15.4 9.5 15 14.5 L14.2 20 H7.8 L7 14.5 C6.6 9.5 7.4 5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 6 V15.5" stroke="${HOUSE.paper}" stroke-width="1"/><path d="M11 6 L15.8 7.6 L11 9.2 Z" fill="${CRIMSON.fill}" stroke="${HOUSE.paper}" stroke-width=".6" stroke-linejoin="round"/></svg>`;
+const PLANE = `<svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><path d="M11 1.5 C11.9 1.5 12.3 2.6 12.3 4 V8.6 L20 13 V15 L12.3 12.6 V17.2 L14.6 19 V20.5 L11 19.5 L7.4 20.5 V19 L9.7 17.2 V12.6 L2 15 V13 L9.7 8.6 V4 C9.7 2.6 10.1 1.5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.1" stroke-linejoin="round"/><circle cx="11" cy="5" r="1" fill="${CRIMSON.fill}"/></svg>`;
 const stopsFc = (stops: TerrainStop[]) => fc(stops.map((s, i) => ({ type: "Feature", id: i, properties: { name: s.name }, geometry: { type: "Point", coordinates: lngLat(s) } })));
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -91,6 +98,10 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const next = useRef(1); // the next leg to fly when Play resumes
   const raf = useRef(0);
   const auto = useRef(false);
+  const vehicle = useRef<Marker | null>(null);
+  const vehicleAir = useRef<boolean | null>(null);
+  const activeRef = useRef(-1);
+  const restAtActive = useRef<() => void>(() => undefined);
   const [ready, setReady] = useState(false);
   const [routeIx, setRouteIx] = useState(0);
   const [active, setActive] = useState(-1);
@@ -121,12 +132,13 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         }
         const font = fontOf(style);
         const first = routes[0].stops;
-        style.sources["jw-route-all"] = { type: "geojson", data: fc(isRoute ? [line(legsOf(first).flat())] : []) };
-        style.sources["jw-route"] = { type: "geojson", data: fc(isRoute ? [line(legsOf(first).flat())] : []) };
+        style.sources["jw-route-all"] = { type: "geojson", data: isRoute ? legsFc(legsOf(first), airOf(first)) : fc([]) };
+        style.sources["jw-route"] = { type: "geojson", data: isRoute ? legsFc(legsOf(first), airOf(first)) : fc([]) };
         style.sources["jw-stops"] = { type: "geojson", data: stopsFc(first) };
         layers.push(
           { id: "jw-route-ghost", type: "line", source: "jw-route-all", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": HOUSE.stone, "line-width": 1.4, "line-opacity": 0.7, "line-dasharray": [2, 2] } },
-          { id: "jw-route-line", type: "line", source: "jw-route", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ink, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 12, 4.5] } },
+          { id: "jw-route-line", type: "line", source: "jw-route", filter: ["!", ["get", "air"]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ink, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 12, 4.5] } },
+          { id: "jw-route-air", type: "line", source: "jw-route", filter: ["get", "air"], layout: { "line-cap": "butt", "line-join": "round" }, paint: { "line-color": ink, "line-width": 2, "line-dasharray": [2, 2] } },
           { id: "jw-stops-dot", type: "circle", source: "jw-stops", paint: {
             "circle-radius": ["case", ["boolean", ["feature-state", "active"], false], 8, 5.5],
             "circle-color": ["case", ["boolean", ["feature-state", "active"], false], CRIMSON.fill, kind === "points" ? ink : HOUSE.graphite],
@@ -167,14 +179,22 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         });
         map.on("webglcontextlost", () => onFail());
         // A hand on the map takes over from the flight.
-        map.on("dragstart", () => { run.current++; cancelAnimationFrame(raf.current); setPlaying(false); });
+        map.on("dragstart", () => { run.current++; cancelAnimationFrame(raf.current); setPlaying(false); restAtActive.current(); });
+        if (isRoute) {
+          const el = document.createElement("div");
+          el.className = "jw-relief__vehicle";
+          el.setAttribute("aria-hidden", "true");
+          el.innerHTML = VESSEL;
+          vehicle.current = new Marker({ element: el, rotationAlignment: "map", pitchAlignment: "viewport" }).setLngLat(lngLat(first[0])).setRotation(bearingOf(lngLat(first[0]), lngLat(first[1]))).addTo(map);
+          vehicleAir.current = false;
+        }
         map.once("load", () => { if (dead) return; if (box.current) box.current.dataset.relief = map?.getTerrain() ? "terrain" : "flat"; setHasSat(!!map?.getLayer("jw-satellite")); setReady(true); onReady(); });
       } catch (err) {
         console.warn("[terrain pilot] could not start", redact(String((err as Error)?.message ?? err)));
         if (!dead) onFail();
       }
     })();
-    return () => { dead = true; token.current++; cancelAnimationFrame(frame.current); map?.remove(); mapRef.current = null; };
+    return () => { dead = true; token.current++; cancelAnimationFrame(frame.current); vehicle.current?.remove(); vehicle.current = null; map?.remove(); mapRef.current = null; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -183,9 +203,25 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     const m = mapRef.current;
     if (!m) return;
     stops.forEach((_, i) => m.setFeatureState({ source: "jw-stops", id: i }, { active: i === ix }));
+    activeRef.current = ix;
     setActive(ix);
   }, [stops]);
-  const setDrawn = (coords: LngLat[]) => (mapRef.current?.getSource("jw-route") as GeoJSONSource | undefined)?.setData(fc(coords.length > 1 ? [line(coords)] : []));
+  const setDrawn = (legs: LngLat[][]) => (mapRef.current?.getSource("jw-route") as GeoJSONSource | undefined)?.setData(legsFc(legs, airOf(stops)));
+  /** Put the vehicle at a point with a heading; a flown leg shows the plane. */
+  const moveVehicle = (at: LngLat, bearing: number, air: boolean) => {
+    const v = vehicle.current;
+    if (!v) return;
+    if (vehicleAir.current !== air) { v.getElement().innerHTML = air ? PLANE : VESSEL; vehicleAir.current = air; }
+    v.setLngLat(at).setRotation(bearing);
+  };
+  /** Rest the vehicle at a stop, facing along the leg that brought it there (or the first leg, at the start). */
+  const restVehicle = (ix: number) => {
+    if (!vehicle.current || stops.length < 2) return;
+    const i = Math.max(0, Math.min(ix, stops.length - 1));
+    const legs = legsOf(stops);
+    const leg = i > 0 ? legs[i - 1] : legs[0];
+    moveVehicle(lngLat(stops[i]), headingAt(leg, i > 0 ? 1 : 0).bearing, false);
+  };
   const legZoom = useCallback(() => {
     const m = mapRef.current;
     if (!m) return 11;
@@ -209,10 +245,11 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     run.current++;
     m.stop();
     (m.getSource("jw-stops") as GeoJSONSource).setData(stopsFc(stops));
-    const all = isRoute ? legsOf(stops).flat() : [];
-    (m.getSource("jw-route-all") as GeoJSONSource).setData(fc(isRoute ? [line(all)] : []));
+    const all = isRoute ? legsOf(stops) : [];
+    (m.getSource("jw-route-all") as GeoJSONSource).setData(legsFc(all, airOf(stops)));
     setDrawn(all);
     setStops(-1); setPlaying(false); setDone(false); next.current = 1;
+    restVehicle(0);
     overview(false);
   }, [ready, routeIx]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -221,13 +258,16 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     if (reduced) m.jumpTo({ ...opts, pitch: 60 });
     else m.flyTo({ ...opts, pitch: 60, duration: LEG_MS, curve: 1.2, essential: true });
   });
-  const grow = (leg: LngLat[], before: LngLat[], token: number) => new Promise<void>((res) => {
-    if (reduced) { setDrawn([...before, ...leg]); res(); return; }
+  // The line grows along the leg with the vehicle at its tip, turned to the heading of travel.
+  const grow = (leg: LngLat[], before: LngLat[][], air: boolean, token: number) => new Promise<void>((res) => {
+    if (reduced) { setDrawn([...before, leg]); moveVehicle(leg[leg.length - 1], headingAt(leg, 1).bearing, false); res(); return; }
     const t0 = performance.now();
     const step = (now: number) => {
       if (run.current !== token) return res();
       const t = Math.min(1, (now - t0) / LEG_MS);
-      setDrawn([...before, ...partOf(leg, t)]);
+      setDrawn([...before, partOf(leg, t)]);
+      const h = headingAt(leg, t);
+      moveVehicle(h.at, h.bearing, air && t < 1);
       if (t < 1) raf.current = requestAnimationFrame(step); else res();
     };
     raf.current = requestAnimationFrame(step);
@@ -242,7 +282,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     const legs = legsOf(stops);
     if (from <= 1) {
       // Back to the first stop to start the voyage.
-      setDrawn([]); setStops(0);
+      setDrawn([]); setStops(0); restVehicle(0);
       const b0 = stops.length > 1 ? bearingOf(lngLat(stops[0]), lngLat(stops[1])) : m.getBearing();
       await fly(m, { center: lngLat(stops[0]), zoom: z, bearing: b0 });
       if (reduced) await wait(1800);
@@ -258,11 +298,11 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     for (let i = from; i < stops.length; i++) {
       if (run.current !== token) return;
       next.current = i;
-      const before = isRoute ? legs.slice(0, i - 1).flat() : [];
+      const before = isRoute ? legs.slice(0, i - 1) : [];
       const target = lngLat(stops[i]);
       const bearing = kind === "points" ? m.getBearing() + 50 : bearingOf(lngLat(stops[i - 1]), target);
       const flight = fly(m, { center: target, zoom: z, bearing });
-      const growing = isRoute ? grow(legs[i - 1], before, token) : Promise.resolve();
+      const growing = isRoute ? grow(legs[i - 1], before, isAir(stops[i]), token) : Promise.resolve();
       await Promise.all([flight, growing]);
       if (run.current !== token) return;
       setStops(i);
@@ -271,7 +311,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     if (run.current !== token) return;
     next.current = 1;
     setPlaying(false); setDone(true);
-    if (isRoute) setDrawn(legs.flat());
+    if (isRoute) { setDrawn(legs); restVehicle(stops.length - 1); }
   }, [stops, isRoute, kind, reduced, legZoom, setStops]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const pause = () => {
@@ -279,7 +319,10 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     cancelAnimationFrame(raf.current);
     mapRef.current?.stop();
     setPlaying(false);
+    // Paused, the vehicle rests at the active day's stop.
+    if (activeRef.current >= 0) restVehicle(activeRef.current);
   };
+  restAtActive.current = () => { if (activeRef.current >= 0) restVehicle(activeRef.current); };
   const replay = () => { pause(); next.current = 1; void play(1); };
 
   // Autoplay once, when the frame is mostly in view (never with reduced motion).

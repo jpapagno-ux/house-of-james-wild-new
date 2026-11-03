@@ -26,7 +26,7 @@ export default function FrenchPolynesia() {
   const stayHref = Object.fromEntries(fp.filter(pageReady).map((s) => [s.slug, recordHref("stay", s.slug)]));
   const ships = watersCards("tahiti");
   const shipHref = Object.fromEntries(["star-breeze", "wind-star"].map((k) => { const r = registryShip(k); const c = r ? shipCard(r) : null; return [k, c ? { name: c.name, href: c.href } : null]; }).filter(([, v]) => v)) as Record<string, { name: string; href: string }>;
-  // 3D terrain pilot (preview only, flag gated): the Taha'a lagoon's own pins from the atlas (the Coral Garden from
+  // 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the Taha'a lagoon's own pins from the atlas (the Coral Garden from
   // Tahiti Tourisme, Vahine from its record). Le Taha'a has no published position yet and no pass is on record.
   const tahaa = LAGOONS.find((l) => l.key === "tahaa");
   const tahaaPins = tahaa ? [...pins.filter((p) => tahaa.stays.includes(p.slug)).map((p) => ({ name: p.name, lat: p.lat, lng: p.lng })), ...tahaa.points.map((p) => ({ name: p.name, lat: p.lat, lng: p.lng }))] : [];
@@ -34,7 +34,7 @@ export default function FrenchPolynesia() {
   return (
     <>
       <LagoonAtlas lagoons={LAGOONS} charts={CHARTS} stays={pins} stayInk={volumeInk("stays")} />
-      {tahaaPins.length > 0 && <SeeIn3D id="see-tahaa-in-3d" kind="points" ink={volumeMark("voyages")} title="The Taha'a lagoon" exaggeration={1.8} playLabel="Fly the lagoon" points={tahaaPins}
+      {tahaaPins.length > 0 && <SeeIn3D page="destinations/oceania/tahiti#tahaa" id="see-tahaa-in-3d" kind="points" ink={volumeMark("voyages")} title="The Taha'a lagoon" exaggeration={1.8} playLabel="Fly the lagoon" points={tahaaPins}
         intro="Taha'a and Raiatea rise from the lagoon they share: fly from Vahine on its motu to the Coral Garden on the west side." />}
       <IslandHops chart={CHARTS.whole} nodes={NODES} legs={LEGS} routes={ROUTES} unesco={MARQUESAS_UNESCO} stayHref={stayHref} shipHref={shipHref} airInk={volumeInk("voyages")} seaInk="#0C5D61" offerLine={ISLANDS_DREAM.name} />
 

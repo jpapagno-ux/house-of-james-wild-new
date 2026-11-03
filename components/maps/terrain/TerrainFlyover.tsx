@@ -63,7 +63,7 @@ export default function TerrainFlyover({ routes, route, points, kind, ink, title
   return (
     <section id={id} className="jw-relief mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${id}-h`} data-terrain-pilot="1">
       {head}
-      <div ref={ref} className="mt-6">
+      <div ref={ref} className="mt-6" data-map="terrain">
         {near && ok
           ? <TerrainMap routes={list} kind={k} ink={ink} exaggeration={exaggeration} reduced={reduced} playLabel={playLabel} title={title} onReady={() => undefined} onFail={() => setOk(false)} />
           : <div className="jw-relief__frame"><p className="jw-relief__wait">Raising the terrain</p></div>}

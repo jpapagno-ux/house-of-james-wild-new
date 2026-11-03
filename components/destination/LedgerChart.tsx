@@ -155,7 +155,7 @@ export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = fa
     </>
   );
   return bare ? <g role="img" aria-label={title}>{body}</g> : (
-    <svg viewBox={`0 0 ${W} ${H}`} className="block w-full h-auto" role="img" aria-label={title}>
+    <svg viewBox={`0 0 ${W} ${H}`} className="block w-full h-auto" role="img" aria-label={title} data-map="chart">
       {body}
     </svg>
   );

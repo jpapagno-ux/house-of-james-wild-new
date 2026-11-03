@@ -541,6 +541,20 @@ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card,
 }
 @keyframes jw-record-bar-in { from { transform: translateY(100%); visibility: hidden; } 1% { visibility: visible; } to { transform: translateY(0); visibility: visible; } }
 
+/* Maps stay clear (map fix, 3 Nov 2026): while a map ([data-map]) reaches the lower part of the screen,
+   components/ledger/MapClear.tsx marks <html data-map-clear> and the fixed bottom chrome (the stay page's
+   "Ask about" card and phone bar, the quick actions bar) slides down out of the way, so it never covers the
+   3D terrain map, its Chart/Satellite toggle or a Ledger chart. Reduced motion: it simply goes and comes back. */
+:is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) { transition: transform .35s ease, opacity .35s ease, visibility 0s linear 0s; }
+html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) {
+  animation: none; transform: translateY(calc(100% + 32px)); opacity: 0; visibility: hidden; pointer-events: none;
+  transition: transform .35s ease, opacity .35s ease, visibility 0s linear .35s;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]),
+  html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) { transition: none; }
+}
+
 /* Volume grand entrances (preview, 2 Nov 2026): components/entrance/VolumeEntrance.tsx.
    Full viewport (100svh with a 100vh fallback; min-height, so a long summary on a short phone grows the header
    instead of clipping it), clear of the header at the top and the iPhone home indicator at the foot. The fade is

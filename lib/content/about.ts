@@ -141,9 +141,9 @@ export const FOUNDER = {
   },
   fieldLog: [
     { year: "2020", place: "Antarctic Peninsula", line: "Aboard HX's MS Roald Amundsen, and stuck down there when the world shut down. He took his own photographs." },
-    { year: "2023", place: "Exumas & Moab", line: "In the Exumas with the Reef Ball Foundation; Ulum Moab vetted in April and named his favourite family stay." },
+    { year: "2023", place: "Exumas", line: "In the Exumas with the Reef Ball Foundation, on Stocking Island." },
     { year: "2024", place: "Raja Ampat", line: "Eleven days aboard the yacht Aliikai with his son, in November." },
-    { year: "2025", place: "Taha'a & Punta Mita", line: "Vahine Private Island vetted on Taha'a. Casa Koko in Punta Mita, the host met, and a swim with whale sharks." },
+    { year: "2025", place: "Taha'a, Punta Mita & Moab", line: "Vahine Private Island vetted on Taha'a. Casa Koko in Punta Mita, the host met, and a swim with whale sharks. Ulum Moab, his favourite family stay." },
     { year: "2026", place: "South Africa & Botswana", line: "Monwana, Lion Sands Ivory Lodge, Kirkman's Kamp, DumaTau, Mombo and Qorokwe, plus Jaci's and every Leeu Estates house." },
   ],
   next: { label: "Around the next corner", line: "Namibia's Skeleton Coast and Sossusvlei, diving Palawan, Thailand, the Azores, Greenland and Ireland." },

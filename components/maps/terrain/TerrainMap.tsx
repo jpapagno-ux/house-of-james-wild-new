@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteLayer } from "./style";
+import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps } from "./style";
 import { bearingOf, boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lngLat, partOf, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
@@ -102,6 +102,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const vehicleAir = useRef<boolean | null>(null);
   const activeRef = useRef(-1);
   const restAtActive = useRef<() => void>(() => undefined);
+  const baseLayers = useRef<{ id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown> }[]>([]);
   const [ready, setReady] = useState(false);
   const [routeIx, setRouteIx] = useState(0);
   const [active, setActive] = useState(-1);
@@ -127,9 +128,9 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         const layers = style.layers as LayerSpecification[];
         if (maptiler && KEY) {
           style.sources["jw-satellite"] = { type: "raster", url: MAPTILER.satellite(KEY), attribution: ATTRIBUTION.maptiler };
-          const at = layers.findIndex((l) => l.id === "jw-hillshade");
-          layers.splice(at < 0 ? layers.length : at, 0, satelliteLayer());
+          layers.splice(satelliteIndex(layers), 0, satelliteLayer());
         }
+        baseLayers.current = layers.map((l) => ({ ...l, layout: { ...((l as { layout?: object }).layout ?? {}) } })) as typeof baseLayers.current;
         const font = fontOf(style);
         const first = routes[0].stops;
         style.sources["jw-route-all"] = { type: "geojson", data: isRoute ? legsFc(legsOf(first), airOf(first)) : fc([]) };
@@ -339,11 +340,13 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const toggleSat = (on: boolean) => {
     const m = mapRef.current;
     if (!m?.getLayer("jw-satellite")) return;
-    // Ground, sky and fog switch with the view, so nothing still loading shows Paper under or behind the imagery; the
-    // chart's hillshade (paper highlights) is hidden under satellite rather than drawn over it.
-    m.setLayoutProperty("jw-satellite", "visibility", on ? "visible" : "none");
-    if (m.getLayer("jw-hillshade")) m.setLayoutProperty("jw-hillshade", "visibility", on || box.current?.dataset.relief === "flat" ? "none" : "visible");
-    for (const l of m.getStyle().layers) if (l.type === "background") m.setPaintProperty(l.id, "background-color", groundOf(on));
+    // Ground, sky and fog switch with the view, so nothing still loading shows Paper under or behind the imagery.
+    // The imagery covers the whole map, sea included; while a tile loads, land shows the earth tone and sea the deep
+    // ocean tone (style.ts viewOps), and only labels, the route, the stops and the vessel draw above it.
+    for (const op of viewOps(baseLayers.current, on, box.current?.dataset.relief as "terrain" | "flat" | undefined)) {
+      if (!m.getLayer(op.id)) continue;
+      if (op.kind === "layout") m.setLayoutProperty(op.id, op.prop as never, op.value as never); else m.setPaintProperty(op.id, op.prop as never, op.value as never);
+    }
     m.setSky(on ? SKY_SATELLITE : SKY);
     if (box.current) box.current.dataset.view = on ? "satellite" : "chart";
     setSat(on);

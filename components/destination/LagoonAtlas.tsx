@@ -132,26 +132,48 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
           <div ref={box} className="relative overflow-hidden select-none" style={{ aspectRatio: `${c.width} / ${c.height}`, maxHeight: "78svh", touchAction: armed ? "none" : "pan-y" }}
             onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
             <svg viewBox={`0 0 ${c.width} ${c.height}`} className="absolute inset-0 w-full h-full" role="img" aria-label={`Chart of ${lagoon.label}, ${lagoon.archipelago}, with its dive sites, snorkel spots and stays`}>
-              <rect width={c.width} height={c.height} fill="#E4EEEC" />
+              <rect width={c.width} height={c.height} fill="#F4F2EF" />
               <g transform={`translate(${view.x} ${view.y}) scale(${view.k})`}>
-                {reef && <path d={reef} fill="rgba(108,190,196,0.28)" stroke="#4A9BA3" strokeWidth={2 * inv} strokeDasharray={`${6 * inv} ${4 * inv}`} />}
-                <path d={c.land} fill="#EAEDE6" stroke="rgba(45,42,38,0.55)" strokeWidth={1.2 * inv} strokeLinejoin="round" />
+                {reef && <path d={reef} fill="rgba(207,200,191,0.38)" stroke="#8C8277" strokeWidth={2 * inv} strokeDasharray={`${6 * inv} ${4 * inv}`} />}
+                <path d={c.land} fill="#FFFFFF" stroke="rgba(45,42,38,0.55)" strokeWidth={1.2 * inv} strokeLinejoin="round" />
                 {lagoon.labels.map((l) => { const q = project(c, l.lat, l.lng); return (
                   <text key={l.text} x={q.x} y={q.y} textAnchor="middle" fontSize={(l.kind === "land" ? 30 : 22) * inv} fontStyle={l.kind === "water" ? "italic" : "normal"} fontFamily="'Cormorant Garamond', Georgia, serif"
-                    fill={l.kind === "water" ? "rgba(34,101,110,0.9)" : "rgba(45,42,38,0.85)"} stroke="#F4F1ED" strokeWidth={3 * inv} paintOrder="stroke">{l.text}</text>
+                    fill={l.kind === "water" ? "rgba(107,99,90,0.9)" : "rgba(45,42,38,0.85)"} stroke="#FFFFFF" strokeWidth={3 * inv} paintOrder="stroke">{l.text}</text>
                 ); })}
-                {points.map((p) => { const q = project(c, p.lat, p.lng); return (
-                  <g key={p.name} className="cursor-pointer" onClick={() => setSel(`p:${p.name}`)} role="button" aria-label={p.name}>
-                    <Marker kind={p.kind} x={q.x} y={q.y} s={inv * 1.7} />
-                    <text x={q.x + 19 * inv} y={q.y + 30 * inv} fontSize={21 * inv} fontFamily="'Cormorant Garamond', Georgia, serif" fill="#2D2A26" stroke="#F4F1ED" strokeWidth={3 * inv} paintOrder="stroke">{p.name}</text>
-                  </g>
-                ); })}
-                {pins.map((s) => { const q = project(c, s.lat, s.lng); return (
-                  <g key={s.slug} className="cursor-pointer" onClick={() => setSel(`s:${s.slug}`)} role="button" aria-label={s.name}>
-                    <Marker kind="stay" x={q.x} y={q.y} s={inv * 1.7} />
-                    <text x={q.x + 16 * inv} y={q.y - 16 * inv} fontSize={21 * inv} fontFamily="'Cormorant Garamond', Georgia, serif" fill="#2D2A26" stroke="#F4F1ED" strokeWidth={3 * inv} paintOrder="stroke">{s.name}</text>
-                  </g>
-                ); })}
+                {(() => {
+                  // Labels never sit on one another (map audit, 2 Nov 2026): each name tries right-above, right-below,
+                  // left-above, left-below of its marker; if every spot is taken the marker stays and the name is in the panel.
+                  const fs = 21 * inv, taken: number[][] = [];
+                  const hit = (b: number[]) => taken.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]);
+                  const spot = (x: number, y: number, text: string) => {
+                    const w = text.length * fs * 0.46;
+                    taken.push([x - 12 * inv, y - 12 * inv, x + 12 * inv, y + 12 * inv]);
+                    for (const [dx, dy, end] of [[16, -14, 0], [16, 30, 0], [-16, -14, 1], [-16, 30, 1]] as const) {
+                      const lx = x + dx * inv, ly = y + dy * inv, b = end ? [lx - w, ly - fs, lx, ly + 4 * inv] : [lx, ly - fs, lx + w, ly + 4 * inv];
+                      if (!hit(b)) { taken.push(b); return { x: lx, y: ly, anchor: (end ? "end" : "start") as "end" | "start" }; }
+                    }
+                    return null;
+                  };
+                  const pinAt = pins.map((s) => { const q = project(c, s.lat, s.lng); return { s, q, l: spot(q.x, q.y, s.name) }; });
+                  const ptAt = points.map((p) => { const q = project(c, p.lat, p.lng); return { p, q, l: spot(q.x, q.y, p.name) }; });
+                  const label = (l: { x: number; y: number; anchor: "end" | "start" } | null, text: string) => l && <text x={l.x} y={l.y} textAnchor={l.anchor} fontSize={fs} fontFamily="'Cormorant Garamond', Georgia, serif" fill="#2D2A26" stroke="#FFFFFF" strokeWidth={3 * inv} paintOrder="stroke">{text}</text>;
+                  return (
+                    <>
+                      {ptAt.map(({ p, q, l }) => (
+                        <g key={p.name} className="cursor-pointer" onClick={() => setSel(`p:${p.name}`)} role="button" aria-label={p.name}>
+                          <Marker kind={p.kind} x={q.x} y={q.y} s={inv * 1.7} />
+                          {label(l, p.name)}
+                        </g>
+                      ))}
+                      {pinAt.map(({ s, q, l }) => (
+                        <g key={s.slug} className="cursor-pointer" onClick={() => setSel(`s:${s.slug}`)} role="button" aria-label={s.name}>
+                          <Marker kind="stay" x={q.x} y={q.y} s={inv * 1.7} />
+                          {label(l, s.name)}
+                        </g>
+                      ))}
+                    </>
+                  );
+                })()}
               </g>
             </svg>
             {!armed && (

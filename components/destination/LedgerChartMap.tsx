@@ -113,7 +113,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
   return (
     <div className="grid lg:grid-cols-[1.55fr_1fr] gap-6 items-start">
       <div className="relative">
-        <div ref={box} className={`ledger-chart relative border ledger-rule overflow-hidden bg-coast-mist ${drawn ? "is-drawn" : ""}`}>
+        <div ref={box} className={`ledger-chart relative border ledger-border overflow-hidden bg-coast-mist ${drawn ? "is-drawn" : ""}`}>
           {chart}
           <svg viewBox={`0 0 ${width} ${height}`} className="absolute inset-0 w-full h-full" role="group" aria-label={`Stays pinned on the ${country} map`}>
             {drawn &&

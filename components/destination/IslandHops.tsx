@@ -52,8 +52,8 @@ export default function IslandHops({ chart: c, nodes, legs, routes, unesco, stay
             <defs>
               <marker id="hop-dot" viewBox="0 0 6 6" refX="3" refY="3" markerWidth="5" markerHeight="5"><circle cx="3" cy="3" r="2.4" fill={airInk} /></marker>
             </defs>
-            <rect width={c.width} height={c.height} fill="#E4EEEC" />
-            <path d={c.land} fill="#EAEDE6" stroke="rgba(45,42,38,0.55)" strokeWidth="1" />
+            <rect width={c.width} height={c.height} fill="#F4F2EF" />
+            <path d={c.land} fill="#FFFFFF" stroke="rgba(45,42,38,0.55)" strokeWidth="1" />
             {[["SOCIETY ISLANDS", -15.0, -151.9], ["TUAMOTU", -13.6, -146.4], ["MARQUESAS", -8.0, -137.6], ["AUSTRAL ISLANDS", -21.0, -150.8], ["GAMBIER", -22.4, -136.4]].map(([t, lat, lng]) => { const q = project(c, lat as number, lng as number); return <text key={t as string} x={q.x} y={q.y} fontSize="19" letterSpacing="6" fill="rgba(45,42,38,0.5)" textAnchor="middle">{t as string}</text>; })}
             {/* Tuamotu and Marquesas legs on the main chart; Society legs in the inset. */}
             {legs.filter((l) => !(isSoc(l.from) && isSoc(l.to))).map((l, i) => {

@@ -65,6 +65,10 @@ import ComingTicker from "@/components/coming/ComingTicker";
 import { countryBoard } from "@/lib/content/board";
 import { comingOn } from "@/lib/content/whats-coming";
 import { today } from "@/lib/dates";
+import CountryAtlas, { atlasNotes } from "@/components/maps/terrain/CountryAtlas";
+import { countryLayoutOn, liveBoardOn, showDrafts } from "@/lib/content/country-layout";
+import { liveBoard } from "@/lib/content/board";
+import { atlasOn } from "@/components/maps/terrain/flag";
 
 // /destinations/[region]/[country]: the country page. Hero slider + counts ›
 // region/country bar › the Ledger chart map (every stay, linked) › in short ›
@@ -206,7 +210,16 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const p = await params;
   const c = countryBySlug(p.region, p.country);
   const g = GUIDES[p.country];
-  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} map={guideMap(g.slug, g.name)} />;
+  // The country atlas (flag.ts atlasOn) sits directly under the Ledger chart.
+  if (!c && g && !g.parent && g.region === p.region) {
+    // The new country page (lib/content/country-layout.ts), Indonesia first; every other guide keeps its page.
+    if (countryLayoutOn(g.slug)) {
+      const regionName = regionBySlug(g.region)?.name ?? g.region;
+      const board = liveBoardOn(g.slug) ? liveBoard(comingOn(today()), { regionSlug: g.region, regionName, countrySlug: g.country }) : countryBoard(comingOn(today()), g.country);
+      return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} v2={{ atlas: <CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} />, board, boardLabel: `${g.name}: the live board`, notes: atlasNotes(g.slug), drafts: showDrafts() }} />;
+    }
+    return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} map={<>{guideMap(g.slug, g.name)}<CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /></>} />;
+  }
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;

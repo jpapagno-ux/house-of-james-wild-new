@@ -22,7 +22,7 @@ const legMs = (leg: LngLat[], air: boolean) => { const km = lengthKm(leg); retur
 
 // ---------- one-time globals: the worker (emitted by webpack as an asset) and the sea-level DEM protocol ----------
 let booted = false;
-function boot() {
+export function boot() {
   if (booted) return;
   booted = true;
   setWorkerUrl(new URL("maplibre-gl/dist/maplibre-gl-worker.mjs", import.meta.url).href);
@@ -49,7 +49,7 @@ function boot() {
   });
 }
 
-async function demSource(): Promise<RasterDEMSourceSpecification> {
+export async function demSource(): Promise<RasterDEMSourceSpecification> {
   if (KEY) {
     try {
       const tj = await (await fetch(MAPTILER.terrain(KEY))).json() as { tiles?: string[]; encoding?: string; tileSize?: number; minzoom?: number; maxzoom?: number; attribution?: string };
@@ -60,7 +60,7 @@ async function demSource(): Promise<RasterDEMSourceSpecification> {
   return { type: "raster-dem", tiles: [`${DEM_PROTOCOL}://terrarium/${AWS_TERRARIUM}`], encoding: "terrarium", tileSize: 256, maxzoom: 15, attribution: ATTRIBUTION.aws };
 }
 
-async function baseStyle(): Promise<{ style: StyleSpecification; maptiler: boolean }> {
+export async function baseStyle(): Promise<{ style: StyleSpecification; maptiler: boolean }> {
   const tries: [string, boolean, string][] = [...(KEY ? [[MAPTILER.style(KEY), true, `${ATTRIBUTION.maptiler} ${ATTRIBUTION.osm}`] as [string, boolean, string]] : []), [OFM_STYLE, false, `${ATTRIBUTION.ofm} ${ATTRIBUTION.osm}`]];
   for (const [url, mt, attribution] of tries) {
     try {

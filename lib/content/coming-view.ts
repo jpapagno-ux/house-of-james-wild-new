@@ -193,7 +193,12 @@ export function toQuery(s: ViewState): string {
 /** One entry on a departures board. Openings carry a sun mark; offers a % tag. */
 export type BoardEntry = {
   key: string;
-  kind: "opening" | "offer";
+  /** opening: What's Coming · offer: a live public offer · new: new to the Ledger · sailing: a voyage's next departure. */
+  kind: "opening" | "offer" | "new" | "sailing";
+  /** Its volume (lib/volumes.ts): a small tab in the volume's colour. */
+  volume?: import("@/lib/volumes").VolumeKey | null;
+  /** Set on a region top-up for a country board: "Also in Asia". */
+  also?: string;
   place: string | null; // country, set small
   name: string; // property
   flap: string; // OPENS 11 DEC 2026 · STAY 4 NIGHTS, SAVE 10%

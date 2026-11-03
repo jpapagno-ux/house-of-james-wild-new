@@ -11,3 +11,10 @@ export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 
 export const terrainOn = (page: string): page is TerrainPage =>
   process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (TERRAIN_PAGES as readonly string[]).includes(page);
+
+// The country atlas (Indonesia first). James said "go" to a preview on 3 Nov 2026 and then approved it going live
+// ("approved all move forward"), so it shows wherever this code is deployed, production included once the PR merges.
+// The terrain kill switch (NEXT_PUBLIC_TERRAIN_PILOT=false) turns it off everywhere.
+export const ATLAS_COUNTRIES = ["indonesia"] as const;
+export const atlasOn = (country: string) =>
+  process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (ATLAS_COUNTRIES as readonly string[]).includes(country);

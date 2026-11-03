@@ -198,15 +198,15 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
             </svg>
             {!armed && (
               <button type="button" onClick={() => setArmed(true)} className="absolute inset-0 flex items-end justify-center pb-4 bg-transparent" aria-label={`Explore the ${lagoon.label} chart: pinch or scroll to zoom`}>
-                <span className="px-3 py-1.5 text-[12px] uppercase tracking-[0.16em] bg-white/90 border ledger-border">Tap to explore and zoom</span>
+                <span className="inline-flex items-center min-h-[40px] px-4 bg-[#2E2B28] text-white text-[11px] font-semibold uppercase tracking-[0.16em] shadow-[inset_0_-3px_0_#8B2525]">Tap to explore</span>
               </button>
             )}
             <div className="absolute top-2 right-2 flex flex-col gap-1">
-              <button type="button" aria-label="Zoom in" onClick={() => { setArmed(true); zoomAt(1.5, c.width / 2, c.height / 2); }} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><Plus className="w-4 h-4" /></button>
+              <button type="button" aria-label="Zoom in" onClick={() => zoomAt(1.5, c.width / 2, c.height / 2)} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><Plus className="w-4 h-4" /></button>
               <button type="button" aria-label="Zoom out" onClick={() => zoomAt(1 / 1.5, c.width / 2, c.height / 2)} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><Minus className="w-4 h-4" /></button>
               <button type="button" aria-label="Reset the view" onClick={() => setView(fit)} className="w-9 h-9 grid place-items-center bg-white/95 border ledger-border hover:text-[var(--jw-action-deep)]"><RotateCcw className="w-4 h-4" /></button>
             </div>
-            {armed && <button type="button" onClick={() => setArmed(false)} className="absolute top-2 left-2 px-2.5 py-1 text-[11px] uppercase tracking-[0.14em] bg-white/90 border ledger-border">Done</button>}
+            {armed && <button type="button" onClick={() => setArmed(false)} className="absolute top-2 left-2 z-[3] inline-flex items-center min-h-[40px] px-4 bg-[#2E2B28] text-white text-[11px] font-semibold uppercase tracking-[0.16em] shadow-[inset_0_-3px_0_#8B2525]">Done</button>}
           </div>
           <figcaption className="mt-2 text-[12px] ledger-muted flex flex-wrap gap-x-4 gap-y-1 items-center">
             <span className="inline-flex items-center gap-1.5"><svg width="16" height="12" aria-hidden="true"><rect width="16" height="12" fill="#C8102E" /><path d="M0 0 L16 12" stroke="#fff" strokeWidth="3" /></svg>Dive site</span>

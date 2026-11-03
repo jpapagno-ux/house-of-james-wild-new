@@ -558,3 +558,7 @@ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card,
    (scroll-driven, where supported; elsewhere it is simply there). */
 @keyframes jw-rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
 @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { .jw-volume-open { animation: jw-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; } } }
+
+/* Touch screens only (map audit, 3 Nov 2026): the "Tap to explore" chips on zoomable maps. */
+.jw-touch-only { display: none !important; }
+@media (hover: none) and (pointer: coarse) { .jw-touch-only { display: inline-flex !important; } }

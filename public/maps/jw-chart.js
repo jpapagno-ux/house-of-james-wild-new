@@ -90,6 +90,8 @@
       '<div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="fs" aria-label="Full screen">⤢</button></div>' +
       '<div class="hud" aria-hidden="true"><span class="bar" id="hBar"></span><span id="hScale"></span><span id="hCentre"></span></div>' +
       '<p class="hint" id="hint" aria-hidden="true">Ctrl or Cmd and scroll to zoom</p>' +
+      '<button type="button" class="explore-btn" id="explore">Tap to explore</button>' +
+      '<button type="button" class="done-btn" id="done">Done</button>' +
       '</div>' +
       '<div class="ctrlbar">' +
       (o.routes.length > 1 ? '<div class="routes" role="group" aria-label="Choose a route">' + routeBtns + '</div>' : '<div class="routes" hidden>' + routeBtns + '</div>') +
@@ -221,6 +223,7 @@ KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=
  m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+Math.min(CFG.dayPad||0.05,Math.max(0.004,m.spanKm/111/12)))*D),320,CFG.maxR||14000))})});
 var HOLD=CFG.hold||1.2,HOLD_END=2.4,LNG=Math.log(270),START=CFG.start||[0,0];
 var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var COARSE=window.matchMedia&&matchMedia('(hover: none) and (pointer: coarse)').matches; /* touch screens: the day card steps aside for Tap to explore */
 var GLOBE=CFG.intro==='globe';
 var S={mode:KEYS[0],phase:'fly',lam:START[1],phi:START[0],lnR:LNG,k:0,t:0,u:0,speed:1,playing:!reduce,manual:false,follow:null,lastDay:null};
 if(!GLOBE){var m0=J[KEYS[0]];S.phi=m0.fitC[0];S.lam=m0.fitC[1];S.lnR=Math.log(m0.fitR)}
@@ -397,7 +400,7 @@ function draw(now){
  var u=S.phase==='fly'?0:S.u,f=u*m.n,li=Math.min(m.n-1,Math.floor(f)),r=f-li;
  m.legs.forEach(function(lp,j){var md=m.wp[j+1].m;line(lp,COL[md],1.8,md==='l'?[1,4]:(DASH[md].length?DASH[md]:[1,4]),.62)});
  if(u>.0005){m.legs.forEach(function(lp,j){var md=m.wp[j+1].m,seg=j<li?lp:(j===li?partU(lp,r):null);if(!seg)return;line(seg,PAPER,8);line(seg,COL[md],md==='a'?2.2:3.1,DASH[md])})}
- var drawn={},big=R>900;m.wp.forEach(function(w,j){if(w.v)return;var id=w.c.join();if(drawn[id])return;drawn[id]=1;var col=COL[(j?w.m:m.wp[1].m)],done=S.phase!=='fly'&&S.phase!=='intro'&&j<=S.k;if(done&&S.phase==='hold'&&j===S.k&&CFG.active)col=CFG.active;var q=dot(w.c,big?10:4.6,done?col:PAPER,col,1.7);
+ var drawn={},big=R>900;S.hits=[];m.wp.forEach(function(w,j){if(w.v)return;var id=w.c.join();if(drawn[id])return;drawn[id]=1;var col=COL[(j?w.m:m.wp[1].m)],done=S.phase!=='fly'&&S.phase!=='intro'&&j<=S.k;if(done&&S.phase==='hold'&&j===S.k&&CFG.active)col=CFG.active;var q=dot(w.c,big?10:4.6,done?col:PAPER,col,1.7);if(q)S.hits.push([q[0],q[1],j]);
   if(q&&big){ctx.font="700 11px "+FM;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=done?PAPER:col;ctx.fillText(String(w.d),q[0],q[1]+.5);ctx.textAlign='start';ctx.textBaseline='alphabetic'}});
  if(S.phase==='hold'){var w=m.wp[Math.min(S.k,m.n)],q=at(w.c);if(q){var rc=COL[S.k>0?w.m:m.wp[1].m]||INK;if(S.arrT<1.6&&!reduce){for(var ri=0;ri<2;ri++){var ph=clamp((S.arrT-ri*.35)/1.2,0,1);if(ph<=0||ph>=1)continue;ctx.save();ctx.globalAlpha=(1-ph)*.7;ctx.strokeStyle=rc;ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(q[0],q[1],10+ph*34,0,7);ctx.stroke();ctx.restore()}}
   ctx.save();ctx.globalAlpha=clamp(S.t/.5,0,1);label(w.n.split(' — ').pop(),q[0]+15,q[1]-13,INK,true);ctx.restore()}}
@@ -407,7 +410,7 @@ function draw(now){
   else if(vm==='s'||vm==='w'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* a vessel at anchor stays on the chart between legs (and parked at the start with reduced motion) */
   else{var mc=COL[vm]||INK;dot(sampleAt(m.pts,u),7,PAPER,mc,3.2);dot(sampleAt(m.pts,u),2.4,mc)}}
  var vg=ctx.createRadialGradient(CX,360,Math.min(VW,720)*.42,CX,360,Math.max(VW,720)*.78);vg.addColorStop(0,'rgba(36,32,26,0)');vg.addColorStop(1,'rgba(36,32,26,.13)');ctx.fillStyle=vg;ctx.fillRect(0,0,VW,720);
- var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';
+ var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'&&!(COARSE&&!S.exploring)){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';
   var fsz=30;ctx.font="italic "+FW+" 30px "+FD;var maxW=Math.max(220,VW-220),mw=ctx.measureText(DT).width;if(mw+90>maxW)fsz=Math.max(17,30*(maxW-90)/mw);ctx.font="italic "+FW+" "+fsz+"px "+FD;var tw=Math.min(maxW,ctx.measureText(DT).width+90);var bg=ctx.createLinearGradient(CX-tw/2-60,0,CX+tw/2+60,0);bg.addColorStop(0,'rgba(251,248,242,0)');bg.addColorStop(.18,'rgba(251,248,242,.92)');bg.addColorStop(.82,'rgba(251,248,242,.92)');bg.addColorStop(1,'rgba(251,248,242,0)');ctx.fillStyle=bg;ctx.fillRect(CX-tw/2-60,yy-50,tw+120,74);
   ctx.fillStyle=CFG.roseInk||INK;ctx.font="700 12px "+FM;var dl='D A Y   '+pad(S.cardD,2);ctx.fillText(dl,CX,yy-26);ctx.strokeStyle=CFG.roseInk||INK;ctx.lineWidth=1;var dw=ctx.measureText(dl).width/2+12;ctx.beginPath();ctx.moveTo(CX-dw-60*ca2,yy-30);ctx.lineTo(CX-dw,yy-30);ctx.moveTo(CX+dw,yy-30);ctx.lineTo(CX+dw+60*ca2,yy-30);ctx.stroke();
   ctx.fillStyle=INK;ctx.font="italic "+FW+" "+fsz+"px "+FD;ctx.fillText(DT,CX,yy+8);ctx.restore()}
@@ -427,7 +430,7 @@ function buildUI(){var m=J[S.mode],days=el('days'),led=el('ledger');days.innerHT
   var n=rb.querySelector('.n');n.textContent='D'+pad(w.d,2)+(w.t?' '+w.t:'');n.style.color=col;n.style.borderColor=col;
   rb.querySelector('.c').textContent=coord(w.c)+(i?'  · '+({s:'by sea',w:'by boat',l:'by road',f:'on foot',a:'by air'})[w.m]:'');
   rb.querySelector('.p').textContent=w.n;rb.addEventListener('click',function(){jump(i)});li.appendChild(rb);led.appendChild(li)});cache.on=null}
-function updatePanel(info){var m=J[S.mode];
+function updatePanel(info){var m=J[S.mode];var rr=String(Math.round(info.R));if(cache.rr!==rr){cache.rr=rr;stage.dataset.r=rr;stage.dataset.phase=S.phase}
  var kpp=(720/(stage.clientHeight||720))*6371/info.R,km=kpp*56,mag=Math.pow(10,Math.floor(Math.log10(km))),nk=[1,2,5,10].map(function(x){return x*mag}).filter(function(x){return x<=km}).pop()||mag;
  setText('hScale',(nk>=1?Math.round(nk).toLocaleString('en-US')+' km':Math.round(nk*1000)+' m'));var bw=Math.round(nk/kpp)+'px';if(cache.bw!==bw){cache.bw=bw;el('hBar').style.width=bw}
  setText('hCentre',coord([S.phi,S.lam]));
@@ -447,7 +450,7 @@ document.querySelectorAll('[data-speed]').forEach(function(b){b.addEventListener
 el('play').addEventListener('click',function(){S.playing=!S.playing;if(S.playing){S.manual=false;S.follow=null}});
 el('prev').addEventListener('click',function(){S.follow=null;jump(S.phase==='leg'?S.k:S.k-1)});
 el('next').addEventListener('click',function(){S.follow=null;jump(S.k+1)});
-function zoomBy(z){S.manual=true;S.playing=false;S.lnR=clamp(S.lnR+z,Math.log(200),Math.log(CFG.zoomMax||90000))}
+function zoomBy(z){S.manual=true;S.manualTs=Date.now();S.playing=false;S.lnR=clamp(S.lnR+z,Math.log(200),Math.log(CFG.zoomMax||90000))}
 el('zin').addEventListener('click',function(){zoomBy(.45)});el('zout').addEventListener('click',function(){zoomBy(-.45)});
 /* scroll audit 2 Nov 2026: the wheel zooms only with Ctrl/Cmd held or once the reader has clicked into the chart; otherwise the page scrolls past it */
 stage.addEventListener('wheel',function(e){if(!(e.ctrlKey||e.metaKey||document.activeElement===stage)){var h=el('hint');if(h){h.classList.add('on');clearTimeout(h._t);h._t=setTimeout(function(){h.classList.remove('on')},1400)}return}e.preventDefault();zoomBy(-e.deltaY*.0018)},{passive:false});
@@ -458,15 +461,34 @@ stage.addEventListener('pointerdown',function(e){if(e.pointerType!=='touch')retu
 stage.addEventListener('pointermove',function(e){if(e.pointerType!=='touch'||!tp[e.pointerId])return;tp[e.pointerId]={x:e.clientX,y:e.clientY};if(pinch&&tpn()===2){var k=Object.keys(tp),a=tp[k[0]],b=tp[k[1]],d=Math.hypot(a.x-b.x,a.y-b.y);if(d>0&&pinch.d>0){S.manual=true;S.playing=false;S.lnR=clamp(pinch.ln+Math.log(d/pinch.d),Math.log(200),Math.log(CFG.zoomMax||90000))}}},true);
 function tpEnd(e){delete tp[e.pointerId];if(tpn()<2)pinch=null}stage.addEventListener('pointerup',tpEnd,true);stage.addEventListener('pointercancel',tpEnd,true);
 var drag=null;
-stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;if(e.pointerType==='touch'&&tpn()<2){drag=null;return}drag={x:e.clientX,y:e.clientY,lam:S.lam,phi:S.phi,id:e.pointerId,moved:false}});
+stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;if(e.pointerType==='touch'&&tpn()<2&&!S.exploring){drag=null;return}drag={x:e.clientX,y:e.clientY,lam:S.lam,phi:S.phi,id:e.pointerId,moved:false}});
 stage.addEventListener('pointermove',function(e){if(!drag||e.pointerId!==drag.id)return;var dx=e.clientX-drag.x,dy=e.clientY-drag.y;
  if(!drag.moved&&Math.hypot(dx,dy)<4)return;if(!drag.moved){drag.moved=true;stage.setPointerCapture(e.pointerId);stage.classList.add('dragging');S.manual=true;S.playing=false}
  var R=Math.exp(S.lnR)*FIT,px=(stage.clientHeight||stage.clientWidth)/720,dpp=(1/(R*px))/D;S.lam=wrap(drag.lam-dx*dpp);S.phi=clamp(drag.phi+dy*dpp,-85,85)});
 function endDrag(){drag=null;stage.classList.remove('dragging')}
 stage.addEventListener('pointerup',endDrag);stage.addEventListener('pointercancel',endDrag);
 stage.setAttribute('tabindex','0');stage.addEventListener('keydown',function(e){var k=e.key;if(k===' '){e.preventDefault();el('play').click()}else if(k==='ArrowRight'){e.preventDefault();el('next').click()}else if(k==='ArrowLeft'){e.preventDefault();el('prev').click()}else if(k==='+'||k==='='){zoomBy(.45)}else if(k==='-'){zoomBy(-.45)}});
-var fsb=el('fs');if(fsb){var host=el('chart')||stage;var canFs=!!(host.requestFullscreen||host.webkitRequestFullscreen);if(!canFs)fsb.hidden=true;fsb.addEventListener('click',function(){try{var fe=document.fullscreenElement||document.webkitFullscreenElement;if(fe){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{var p=(host.requestFullscreen||host.webkitRequestFullscreen).call(host);if(p&&p.catch)p.catch(function(){fsb.hidden=true})}}catch(err){fsb.hidden=true}})}
-window.chartDay=function(k,d){if(!J[k])return;if(S.mode!==k)setMode(k,true,true);showDay(d)};
+/* Explore (map audit, 3 Nov 2026; James on iPhone: "tap and zoom don't work"). On a page the chart never takes a
+   finger: one finger scrolls the page, and the chart's own buttons (+, -, full screen, the days) always work. "Tap to
+   explore" (touch screens) lifts the chart into a full-screen layer where one finger pans, two fingers pinch, a double
+   tap zooms in and a tap on a stop sails to it; "Done" puts it back. The full-screen button does the same where the
+   browser has no element full screen (iPhone Safari). While exploring, or for 15 s after a zoom by hand, the day log's
+   scroll no longer moves the chart. */
+var chartEl=el('chart'),home=null;
+function explore(on){if(on===!!S.exploring)return;S.exploring=on;
+ if(on){home=document.createComment('jwc');chartEl.parentNode.insertBefore(home,chartEl);document.body.appendChild(chartEl);document.documentElement.classList.add('jwc-locked');S.manual=true;S.manualTs=Date.now();S.playing=false}
+ else{if(home&&home.parentNode){home.parentNode.insertBefore(chartEl,home);home.remove()}document.documentElement.classList.remove('jwc-locked');S.manualTs=Date.now()}
+ chartEl.classList.toggle('exploring',on);var b=on?el('done'):el('explore');if(b)try{b.focus({preventScroll:true})}catch(e){}resize();landKey=''}
+el('explore').addEventListener('click',function(){explore(true)});el('done').addEventListener('click',function(){explore(false)});
+addEventListener('keydown',function(e){if(S.exploring&&e.key==='Escape')explore(false)});
+var lastTap=0,tapAt=null;function toUnits(cx,cy){var r=stage.getBoundingClientRect(),k=720/(stage.clientHeight||720);return [(cx-r.left)*k,(cy-r.top)*k]}
+stage.addEventListener('pointerup',function(e){if(e.target.closest('button')||(drag&&drag.moved)||tpn()>0)return;if(e.pointerType==='touch'&&!S.exploring)return;
+ var u=toUnits(e.clientX,e.clientY),now=Date.now();
+ if(now-lastTap<320&&tapAt&&Math.hypot(u[0]-tapAt[0],u[1]-tapAt[1])<40){lastTap=0;var R=Math.exp(S.lnR)*FIT,dpp=1/(R*D);S.lam=wrap(S.lam+(u[0]-CX)*dpp);S.phi=clamp(S.phi-(u[1]-360)*dpp,-85,85);zoomBy(.6);return}
+ lastTap=now;tapAt=u;var best=null,bd=28;(S.hits||[]).forEach(function(h){var d=Math.hypot(h[0]-u[0],h[1]-u[1]);if(d<bd){bd=d;best=h}});
+ if(best){var j=best[2];setTimeout(function(){if(lastTap&&Date.now()-lastTap>=300){S.follow=null;jump(j);S.playing=true;S.manual=false;S.t=HOLD*.5}},330)}},true);
+var fsb=el('fs');if(fsb){var host=el('chart')||stage;var canFs=!!(host.requestFullscreen||host.webkitRequestFullscreen);if(!canFs){fsb.setAttribute('aria-label','Explore full screen');fsb.addEventListener('click',function(){explore(!S.exploring)})}else fsb.addEventListener('click',function(){try{var fe=document.fullscreenElement||document.webkitFullscreenElement;if(fe){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{var p=(host.requestFullscreen||host.webkitRequestFullscreen).call(host);if(p&&p.catch)p.catch(function(){fsb.hidden=true})}}catch(err){fsb.hidden=true}})}
+window.chartDay=function(k,d,src){if(!J[k])return;if(src==='scroll'&&(S.exploring||(S.manual&&Date.now()-(S.manualTs||0)<15000)))return;if(S.mode!==k)setMode(k,true,true);showDay(d)};
 window.chartFocus=function(keys,name){keys=(keys||[]).filter(function(k){return J[k]});if(!keys.length)return;var pts=[];keys.forEach(function(k){J[k].wp.forEach(function(w){if(!w.v)pts.push(w.c)})});var c=centroid(pts),md=0;pts.forEach(function(p){md=Math.max(md,gcd(c,p))});
  var r=clamp(215/((md+fitPad(md,spanKm(pts)))*D),320,CFG.maxR||14000);S.focus=true;S.focusName=name||'';S.follow=null;S.manual=false;S.playing=true;startFly(c,Math.log(r));if(name){setText('routeTitle',name);setText('routeSub',keys.length+(keys.length===1?' route':' routes')+'. Choose a ship and a route to sail one day by day.')}};
 window.chartRoute=function(k,scroll){if(J[k]){if(S.mode!==k||S.focus)setMode(k,false,false);if(scroll)stage.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})}};

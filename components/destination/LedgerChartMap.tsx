@@ -1,5 +1,6 @@
 "use client";
 
+import ZoomFrame from "./ZoomFrame";
 import Link from "next/link";
 import { undash } from "@/lib/content/ships/types";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
@@ -114,6 +115,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
     <div className="grid lg:grid-cols-[1.55fr_1fr] gap-6 items-start">
       <div className="relative">
         <div ref={box} className={`ledger-chart relative border ledger-border overflow-hidden bg-coast-mist ${drawn ? "is-drawn" : ""}`}>
+          <ZoomFrame label={`${country} map`} aspect={`${width} / ${height}`} layerClass="ledger-chart is-drawn bg-coast-mist">
           {chart}
           <svg viewBox={`0 0 ${width} ${height}`} className="absolute inset-0 w-full h-full" role="group" aria-label={`Stays pinned on the ${country} map`}>
             {drawn &&
@@ -126,6 +128,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
                     transform={`translate(${(i.x as number) + dx} ${(i.y as number) + dy})`}
                     onMouseEnter={() => setHover(i.id)}
                     onMouseLeave={() => setHover(null)}
+                    onClick={() => setHover((h) => (h === i.id ? null : i.id))}
                     className="cursor-pointer"
                   >
                     <g className="ledger-pin-drop" style={{ animationDelay: `${2.1 + n * 0.09}s` }}>
@@ -147,6 +150,7 @@ export default function LedgerChartMap({ country, chart, width, height, items, c
               <span className="block text-[11px] ledger-muted whitespace-nowrap">{hovered.kind}{hovered.area ? ` · ${hovered.area}` : ""}</span>
             </div>
           )}
+          </ZoomFrame>
         </div>
 
         {/* The legend, which is also the filter */}

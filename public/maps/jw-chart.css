@@ -84,3 +84,16 @@
 .jw-frame .jwc{gap:10px;background:#FFFFFF}
 .jw-frame .jwc .stage{border:0}
 .jw-frame .jwc .ctrlbar{border-bottom:0;padding-bottom:0}
+
+/* Explore (touch screens, and full screen where the browser has none, iPhone Safari): the chart lifts into a layer
+   over the page; one finger pans, two pinch, a double tap zooms in, a tap on a stop sails to it; Done puts it back. */
+.jwc .explore-btn,.jwc .done-btn{position:absolute;z-index:3;min-height:40px;padding:0 16px;background:#2E2B28;color:#FFFFFF;border:1px solid #2E2B28;box-shadow:inset 0 -3px 0 #8B2525;font-family:var(--body);font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.jwc .explore-btn{display:none;left:50%;bottom:40px;transform:translateX(-50%)}
+.jwc .done-btn{display:none;left:10px;top:10px}
+@media (hover:none) and (pointer:coarse){.jwc:not(.exploring) .explore-btn{display:inline-flex;align-items:center}}
+.jwc.exploring{position:fixed;inset:0;z-index:2147483000;margin:0;padding:10px 10px calc(10px + env(safe-area-inset-bottom));background:#FFFFFF;gap:8px;overflow:hidden}
+.jwc.exploring .head,.jwc.exploring details.coords,.jwc.exploring .platecap,.jwc.exploring .ctrlbar .legend,.jwc.exploring .ctrlbar .speed,.jwc.exploring .ctrlbar .routes,.jwc.exploring .overlay,.jwc.exploring .hint{display:none!important}
+.jwc.exploring .stage{flex:1 1 auto;aspect-ratio:auto;height:auto;max-height:none;min-height:0;touch-action:none;border:1px solid #DCD7D0}
+.jwc.exploring .done-btn{display:inline-flex;align-items:center}
+.jwc.exploring .ctrlbar{border-bottom:0;padding-bottom:0}
+html.jwc-locked,html.jwc-locked body{overflow:hidden;overscroll-behavior:none}

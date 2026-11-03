@@ -9,7 +9,7 @@ import { ChevronDown } from "lucide-react";
 // The chart itself honours prefers-reduced-motion; here, with reduced motion, the log only
 // follows taps, never the scroll. Without script the chart's fallback lists every stop.
 
-declare global { interface Window { chartDay?: (k: string, d: number) => void; chartRoute?: (k: string, scroll?: boolean) => void; onChartDay?: (k: string, d: number, auto: boolean) => void } }
+declare global { interface Window { chartDay?: (k: string, d: number, src?: string) => void; chartRoute?: (k: string, scroll?: boolean) => void; onChartDay?: (k: string, d: number, auto: boolean) => void } }
 
 /** `label`: a block of days published as one ("Days 3 to 6"); `indicative`: the day order is a guide only. */
 export type ScrollerDay = { day: number; title: string; place: string; summary: string; label?: string; indicative?: boolean };
@@ -34,7 +34,8 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
   // while the chart still showed the globe). If the engine is not ready yet, the day waits and is
   // sent the moment window.chartDay appears, so the chart opens on the day in view.
   const pending = useRef<{ t: number; i: number } | null>(null);
-  const sail = (t: number, i: number) => {
+  // src "scroll": the log moved under the reader; the chart ignores it while they are exploring or have just zoomed by hand.
+  const sail = (t: number, i: number, src?: string) => {
     const d = itineraries[t]?.days[i];
     if (!d) return;
     const k = `${t}:${d.day}`;
@@ -42,7 +43,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
     if (typeof window.chartDay !== "function") { pending.current = { t, i }; return; }
     last.current = k;
     pending.current = null;
-    window.chartDay(`R${t}`, d.day);
+    window.chartDay(`R${t}`, d.day, src);
   };
   useEffect(() => {
     const id = window.setInterval(() => {
@@ -98,7 +99,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
       if (!seen.size) return;
       const i = Math.max(...seen);
       setActive(i);
-      sail(tab, i);
+      sail(tab, i, "scroll");
     }, { rootMargin: "-42% 0px -52% 0px" });
     items.forEach((el) => io.observe(el));
     return () => io.disconnect();

@@ -22,6 +22,7 @@ import SiteFooter from "@/components/ledger/SiteFooter";
 import MobileActionBar from "@/components/ledger/MobileActionBar";
 import MapClear from "@/components/ledger/MapClear";
 import { ScrollProgress } from "@/components/ledger/Motion";
+import ScrollToTop from "@/components/ledger/ScrollToTop";
 import { founder, graph, organization, website } from "@/lib/schema";
 import { isIndexable } from "@/lib/seo";
 import { SITE } from "@/lib/site";
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <ScrollProgress />
+        <ScrollToTop />
         {children}
         <SiteFooter />
         <MobileActionBar />

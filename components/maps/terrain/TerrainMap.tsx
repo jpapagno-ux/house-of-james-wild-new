@@ -4,16 +4,21 @@
 // the section is near the viewport: MapLibre, its worker and its CSS never reach the main bundle or other pages.
 // Free sources by default (OpenFreeMap + AWS Terrarium); MapTiler when NEXT_PUBLIC_MAPTILER_KEY is set in Vercel env.
 // The key is read here only, never logged (errors are redacted), and must be domain-restricted in MapTiler.
-import { useCallback, useEffect, useRef, useState } from "react";
-import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type LngLatLike, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps } from "./style";
-import { bearingOf, boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lngLat, partOf, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
+import { boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
 const KEY = process.env.NEXT_PUBLIC_MAPTILER_KEY || "";
 const MAX_PITCH = 65; // MapTiler's limit; the free stack keeps the same cap
-const LEG_MS = 3500;
+const LEG_MS = 3500; // a points view: one pin to the next
+const HOME = { pitch: 58, bearing: -14 };
+const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+const turn = (from: number, to: number) => ((((to - from) % 360) + 540) % 360) - 180;
+/** Sailing time for a leg, by its routed length: long enough to read the islands going by, never a slog. */
+const legMs = (leg: LngLat[], air: boolean) => { const km = lengthKm(leg); return air ? Math.min(7000, Math.max(3800, 3000 + km * 4)) : Math.min(9000, Math.max(3800, 2600 + km * 90)); };
 
 // ---------- one-time globals: the worker (emitted by webpack as an asset) and the sea-level DEM protocol ----------
 let booted = false;
@@ -70,6 +75,9 @@ const fc = (features: GeoJSON.Feature[]): GeoJSON.FeatureCollection => ({ type: 
 /** Route legs as features, each flagged `air` so flown legs draw dashed. */
 const legsFc = (legs: LngLat[][], air: boolean[]) => fc(legs.map((l, i) => ({ type: "Feature" as const, properties: { air: !!air[i] }, geometry: { type: "LineString" as const, coordinates: l } })).filter((f) => f.geometry.coordinates.length > 1));
 const airOf = (stops: TerrainStop[]) => stops.slice(1).map(isAir);
+/** The legs the 3D map draws: each sea lane from the route file (the same path the engraved chart sails), its turns
+ *  rounded so line and vessel sweep round the headlands; flown legs stay great-circle arcs. */
+const routeLegs = (stops: TerrainStop[]) => legsOf(stops).map((l, i) => (isAir(stops[i + 1]) ? l : smoothLine(l)));
 
 // The vehicle on the route, drawn pointing north and rotated to the heading: the house vessel (graphite hull, crimson
 // pennant) under way, a small plane on a flown leg. About 22px, like the SVG charts' moving boat.
@@ -101,7 +109,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const vehicle = useRef<Marker | null>(null);
   const vehicleAir = useRef<boolean | null>(null);
   const activeRef = useRef(-1);
-  const restAtActive = useRef<() => void>(() => undefined);
+  const camFree = useRef(false); // a hand on the map: the auto camera stands down until Replay
   const baseLayers = useRef<{ id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown> }[]>([]);
   const [ready, setReady] = useState(false);
   const [routeIx, setRouteIx] = useState(0);
@@ -113,6 +121,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const route = routes[routeIx] ?? routes[0];
   const stops = route.stops;
   const isRoute = kind !== "points" && stops.length > 1;
+  const legs = useMemo(() => (isRoute ? routeLegs(stops) : []), [stops, isRoute]);
 
   // ---------- build the map once ----------
   useEffect(() => {
@@ -133,8 +142,10 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         baseLayers.current = layers.map((l) => ({ ...l, layout: { ...((l as { layout?: object }).layout ?? {}) } })) as typeof baseLayers.current;
         const font = fontOf(style);
         const first = routes[0].stops;
-        style.sources["jw-route-all"] = { type: "geojson", data: isRoute ? legsFc(legsOf(first), airOf(first)) : fc([]) };
-        style.sources["jw-route"] = { type: "geojson", data: isRoute ? legsFc(legsOf(first), airOf(first)) : fc([]) };
+        // The route lines are plain line layers: MapLibre drapes them on the terrain surface (sea level is flat, the
+        // seabed is clamped), so they lie on the water with no walls, offsets or extrusion at any pitch.
+        style.sources["jw-route-all"] = { type: "geojson", data: isRoute ? legsFc(routeLegs(first), airOf(first)) : fc([]) };
+        style.sources["jw-route"] = { type: "geojson", data: isRoute ? legsFc(routeLegs(first), airOf(first)) : fc([]) };
         style.sources["jw-stops"] = { type: "geojson", data: stopsFc(first) };
         layers.push(
           { id: "jw-route-ghost", type: "line", source: "jw-route-all", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": HOUSE.stone, "line-width": 1.4, "line-opacity": 0.7, "line-dasharray": [2, 2] } },
@@ -154,7 +165,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         map = new MLMap({
           container: box.current, style,
           ...(single ? { center: lngLat(first[0]), zoom: 12 } : { bounds: b, fitBoundsOptions: { padding: 56, maxZoom: 12.5 } }),
-          pitch: 58, bearing: -14, maxPitch: MAX_PITCH, cooperativeGestures: true, attributionControl: false,
+          pitch: reduced ? HOME.pitch : 40, bearing: HOME.bearing, maxPitch: MAX_PITCH, cooperativeGestures: true, attributionControl: false,
           maplibreLogo: false, fadeDuration: reduced ? 0 : 300, ...TILE_CACHE,
           pixelRatio: pixelRatioFor(window.devicePixelRatio, window.innerWidth),
           locale: {
@@ -180,14 +191,16 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
           }
         });
         map.on("webglcontextlost", () => onFail());
-        // A hand on the map takes over from the flight.
-        map.on("dragstart", () => { run.current++; cancelAnimationFrame(raf.current); setPlaying(false); restAtActive.current(); });
+        // A hand on the map (drag, zoom, turn or tilt, by mouse, wheel, touch or the buttons) takes over from the auto
+        // camera until Replay; the voyage itself sails on. Moves the camera makes itself carry no originalEvent.
+        const release = (e: { originalEvent?: unknown }) => { if (e.originalEvent) camFree.current = true; };
+        for (const ev of ["dragstart", "zoomstart", "rotatestart", "pitchstart"] as const) map.on(ev, release);
         if (isRoute) {
           const el = document.createElement("div");
           el.className = "jw-relief__vehicle";
           el.setAttribute("aria-hidden", "true");
           el.innerHTML = VESSEL;
-          vehicle.current = new Marker({ element: el, rotationAlignment: "map", pitchAlignment: "viewport" }).setLngLat(lngLat(first[0])).setRotation(bearingOf(lngLat(first[0]), lngLat(first[1]))).addTo(map);
+          vehicle.current = new Marker({ element: el, rotationAlignment: "map", pitchAlignment: "viewport" }).setLngLat(lngLat(first[0])).setRotation(headingAt(routeLegs(first)[0], 0).bearing).addTo(map);
           vehicleAir.current = false;
         }
         map.once("load", () => { if (dead) return; if (box.current) box.current.dataset.relief = map?.getTerrain() ? "terrain" : "flat"; setHasSat(!!map?.getLayer("jw-satellite")); setReady(true); onReady(); });
@@ -208,7 +221,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     activeRef.current = ix;
     setActive(ix);
   }, [stops]);
-  const setDrawn = (legs: LngLat[][]) => (mapRef.current?.getSource("jw-route") as GeoJSONSource | undefined)?.setData(legsFc(legs, airOf(stops)));
+  const setDrawn = (l: LngLat[][]) => (mapRef.current?.getSource("jw-route") as GeoJSONSource | undefined)?.setData(legsFc(l, airOf(stops)));
   /** Put the vehicle at a point with a heading; a flown leg shows the plane. */
   const moveVehicle = (at: LngLat, bearing: number, air: boolean) => {
     const v = vehicle.current;
@@ -218,27 +231,39 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   };
   /** Rest the vehicle at a stop, facing along the leg that brought it there (or the first leg, at the start). */
   const restVehicle = (ix: number) => {
-    if (!vehicle.current || stops.length < 2) return;
+    if (!vehicle.current || legs.length < 1) return;
     const i = Math.max(0, Math.min(ix, stops.length - 1));
-    const legs = legsOf(stops);
-    const leg = i > 0 ? legs[i - 1] : legs[0];
-    moveVehicle(lngLat(stops[i]), headingAt(leg, i > 0 ? 1 : 0).bearing, false);
+    moveVehicle(lngLat(stops[i]), headingAt(i > 0 ? legs[i - 1] : legs[0], i > 0 ? 1 : 0).bearing, false);
   };
   const legZoom = useCallback(() => {
     const m = mapRef.current;
     if (!m) return 11;
-    const b = boundsOf(stops);
-    const z = m.cameraForBounds(b, { padding: 40 })?.zoom ?? 10;
+    const z = m.cameraForBounds(boundsOf(stops), { padding: 40 })?.zoom ?? 10;
     return Math.min(kind === "points" ? 13 : z + 1.5, 12.5);
   }, [stops, kind]);
-  const overview = useCallback((animate: boolean) => {
-    const m = mapRef.current;
-    if (!m) return;
+  /** The whole route in frame: fitted to the routed lanes (boundsOf takes in every path), not just the stops. */
+  const overviewCam = useCallback((pitch = HOME.pitch, bearing = HOME.bearing) => {
+    const m = mapRef.current!;
     const b = boundsOf(stops);
-    const single = b[0][0] === b[1][0] && b[0][1] === b[1][1];
-    if (single) m.easeTo({ center: lngLat(stops[0]), zoom: 12, pitch: 58, bearing: -14, duration: animate ? 1200 : 0 });
-    else m.fitBounds(b, { padding: 56, maxZoom: 12.5, pitch: 58, bearing: -14, duration: animate ? 1200 : 0 });
+    if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) return { center: lngLat(stops[0]), zoom: 12, pitch, bearing };
+    const w = box.current?.clientWidth ?? 800;
+    const c = m.cameraForBounds(b, { padding: w < 600 ? 28 : 64, bearing });
+    return { center: (c?.center ?? lngLat(stops[0])) as LngLatLike, zoom: Math.min(12.5, (c?.zoom ?? 10) + (pitch > 30 ? 0.35 : 0)), pitch, bearing }; // a pitched view foreshortens: come in a touch
   }, [stops]);
+  /** One camera move, resolved when it lands (or is taken over). With reduced motion it is a cut. The auto camera stands
+   *  down once a hand is on the map; `force` is for a move the reader asked for (Overview). */
+  const cam = (opts: Parameters<MLMap["jumpTo"]>[0], ms: number, how: "fly" | "ease" = "ease", force = false) => new Promise<void>((res) => {
+    const m = mapRef.current;
+    if (!m || (camFree.current && !force)) return res();
+    if (reduced || ms <= 0) { m.jumpTo(opts); return res(); }
+    let over = false;
+    const fin = () => { if (!over) { over = true; clearTimeout(to); m.off("moveend", fin); res(); } };
+    const to = setTimeout(fin, ms + 500);
+    m.once("moveend", fin);
+    if (how === "fly") m.flyTo({ ...opts, duration: ms, curve: 1.35, easing: ease, essential: true });
+    else m.easeTo({ ...opts, duration: ms, easing: ease, essential: true });
+  });
+  const overview = useCallback((animate: boolean, force = true) => cam(overviewCam(), animate ? 2600 : 0, "fly", force), [overviewCam]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // A new route (Week A / Week B): fresh data, a static pitched overview.
   useEffect(() => {
@@ -247,33 +272,54 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     run.current++;
     m.stop();
     (m.getSource("jw-stops") as GeoJSONSource).setData(stopsFc(stops));
-    const all = isRoute ? legsOf(stops) : [];
-    (m.getSource("jw-route-all") as GeoJSONSource).setData(legsFc(all, airOf(stops)));
-    setDrawn(all);
+    (m.getSource("jw-route-all") as GeoJSONSource).setData(legsFc(legs, airOf(stops)));
+    setDrawn(legs);
     setStops(-1); setPlaying(false); setDone(false); next.current = 1;
     restVehicle(0);
-    overview(false);
+    if (routeIx > 0 || reduced) void cam(overviewCam(reduced ? HOME.pitch : 40), 0, "ease", true);
   }, [ready, routeIx]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const fly = (m: MLMap, opts: { center: LngLat; zoom: number; bearing: number }) => new Promise<void>((res) => {
-    m.once("moveend", () => res());
-    if (reduced) m.jumpTo({ ...opts, pitch: 60 });
-    else m.flyTo({ ...opts, pitch: 60, duration: LEG_MS, curve: 1.2, essential: true });
-  });
-  // The line grows along the leg with the vehicle at its tip, turned to the heading of travel.
-  const grow = (leg: LngLat[], before: LngLat[][], air: boolean, token: number) => new Promise<void>((res) => {
+  /** One sailed (or flown) leg: the line grows with the vessel at its tip, turned through the bends, and the camera rides
+   *  with it: a low-passed follow of the vessel, a slow bearing drift round it, pitch breathing between 45 and 65, and a
+   *  gentle pull back mid leg to show the islands going by. Every value eases from where the camera already is. */
+  const sail = (leg: LngLat[], before: LngLat[][], air: boolean, z: number, t0play: number, token: number) => new Promise<void>((res) => {
+    const m = mapRef.current;
+    if (!m) return res();
     if (reduced) { setDrawn([...before, leg]); moveVehicle(leg[leg.length - 1], headingAt(leg, 1).bearing, false); res(); return; }
-    const t0 = performance.now();
+    const ms = legMs(leg, air), km = lengthKm(leg);
+    const lift = air ? Math.min(3, Math.max(0.6, Math.log2(km / 15))) : km > 25 ? 0.6 : 0.25;
+    const c0 = m.getCenter();
+    let cc: LngLat = [c0.lng, c0.lat], cb = m.getBearing(), cp = m.getPitch(), cz = m.getZoom(), last = performance.now();
+    const start = last;
     const step = (now: number) => {
       if (run.current !== token) return res();
-      const t = Math.min(1, (now - t0) / LEG_MS);
-      setDrawn([...before, partOf(leg, t)]);
-      const h = headingAt(leg, t);
+      const t = Math.min(1, (now - start) / ms), dt = Math.min(64, now - last);
+      last = now;
+      const u = ease(t);
+      setDrawn([...before, partOf(leg, u)]);
+      const h = headingAt(leg, u);
       moveVehicle(h.at, h.bearing, air && t < 1);
+      if (!camFree.current) {
+        const clock = (now - t0play) / 1000;
+        const k = (tau: number) => 1 - Math.exp(-dt / tau);
+        cc = [cc[0] + (h.at[0] - cc[0]) * k(260), cc[1] + (h.at[1] - cc[1]) * k(260)];
+        const tb = h.bearing - 22 + 14 * Math.sin(clock * 0.45);
+        cb += Math.max(-dt * 0.03, Math.min(dt * 0.03, turn(cb, tb) * k(2200)));
+        cp += (Math.min(MAX_PITCH, 55 + 10 * Math.sin(clock * 0.6)) - cp) * k(1400);
+        cz += (z - lift * Math.sin(Math.PI * t) - cz) * k(900);
+        m.jumpTo({ center: cc, zoom: cz, bearing: cb, pitch: cp });
+      }
       if (t < 1) raf.current = requestAnimationFrame(step); else res();
     };
     raf.current = requestAnimationFrame(step);
   });
+  /** At an anchorage: a short pause with a slight orbit while the day label changes. */
+  const anchor = async (token: number) => {
+    const m = mapRef.current;
+    if (!m || run.current !== token) return;
+    if (reduced || camFree.current) return wait(reduced ? 2200 : 1100);
+    await cam({ bearing: m.getBearing() + 24, pitch: Math.max(50, Math.min(62, m.getPitch() + 4)) }, 2000);
+  };
 
   const play = useCallback(async (from = next.current) => {
     const m = mapRef.current;
@@ -281,40 +327,49 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     const token = ++run.current;
     setPlaying(true); setDone(false);
     const z = legZoom();
-    const legs = legsOf(stops);
+    const t0 = performance.now();
     if (from <= 1) {
-      // Back to the first stop to start the voyage.
-      setDrawn([]); setStops(0); restVehicle(0);
-      const b0 = stops.length > 1 ? bearingOf(lngLat(stops[0]), lngLat(stops[1])) : m.getBearing();
-      await fly(m, { center: lngLat(stops[0]), zoom: z, bearing: b0 });
-      if (reduced) await wait(1800);
+      camFree.current = false;
+      // The establishing shot: up to a wide, high view of the region, then ease down to the first stop.
+      setDrawn([]); setStops(-1); restVehicle(0);
+      const b0 = isRoute ? headingAt(legs[0], 0).bearing - 22 : HOME.bearing;
+      if (reduced) await cam({ center: lngLat(stops[0]), zoom: z, pitch: HOME.pitch, bearing: HOME.bearing }, 0);
+      else {
+        const wide = overviewCam(32, HOME.bearing - 16);
+        await cam({ ...wide, zoom: wide.zoom - 0.5 }, 1600, "ease");
+        if (run.current !== token) return;
+        await cam({ center: lngLat(stops[0]), zoom: z, pitch: 56, bearing: b0 }, 4600, "fly");
+      }
       if (run.current !== token) return;
+      setStops(0);
       if (stops.length === 1) {
         // One pin (a stay): a slow turn round it.
-        if (!reduced) await new Promise<void>((res) => { m.once("moveend", () => res()); m.easeTo({ bearing: m.getBearing() + 160, duration: 9000, easing: (t) => t }); });
+        if (!reduced && !camFree.current) await new Promise<void>((res) => { m.once("moveend", () => res()); m.easeTo({ bearing: m.getBearing() + 160, pitch: 62, duration: 9000, easing: (t) => t }); });
         if (run.current === token) { setPlaying(false); setDone(true); next.current = 1; }
         return;
       }
+      await anchor(token);
       from = 1;
     }
     for (let i = from; i < stops.length; i++) {
       if (run.current !== token) return;
       next.current = i;
-      const before = isRoute ? legs.slice(0, i - 1) : [];
-      const target = lngLat(stops[i]);
-      const bearing = kind === "points" ? m.getBearing() + 50 : bearingOf(lngLat(stops[i - 1]), target);
-      const flight = fly(m, { center: target, zoom: z, bearing });
-      const growing = isRoute ? grow(legs[i - 1], before, isAir(stops[i]), token) : Promise.resolve();
-      await Promise.all([flight, growing]);
+      if (isRoute) await sail(legs[i - 1], legs.slice(0, i - 1), isAir(stops[i]), z, t0, token);
+      else if (reduced) await cam({ center: lngLat(stops[i]), zoom: z, pitch: HOME.pitch, bearing: HOME.bearing }, 0);
+      else await cam({ center: lngLat(stops[i]), zoom: z, pitch: 58, bearing: m.getBearing() + 40 }, LEG_MS, "fly");
       if (run.current !== token) return;
+      if (reduced && isRoute) await cam({ center: lngLat(stops[i]), zoom: z, pitch: HOME.pitch, bearing: HOME.bearing }, 0);
       setStops(i);
-      await wait(reduced ? 2200 : 700);
+      await anchor(token);
     }
     if (run.current !== token) return;
     next.current = 1;
-    setPlaying(false); setDone(true);
     if (isRoute) { setDrawn(legs); restVehicle(stops.length - 1); }
-  }, [stops, isRoute, kind, reduced, legZoom, setStops]); // eslint-disable-line react-hooks/exhaustive-deps
+    // Fly out to the whole route, fitted to the routed lanes.
+    if (!camFree.current) await cam(overviewCam(50, m.getBearing() - 10), 3200, "fly");
+    if (run.current !== token) return;
+    setPlaying(false); setDone(true);
+  }, [stops, legs, isRoute, reduced, legZoom, setStops, overviewCam]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const pause = () => {
     run.current++;
@@ -324,7 +379,6 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     // Paused, the vehicle rests at the active day's stop.
     if (activeRef.current >= 0) restVehicle(activeRef.current);
   };
-  restAtActive.current = () => { if (activeRef.current >= 0) restVehicle(activeRef.current); };
   const replay = () => { pause(); next.current = 1; void play(1); };
 
   // Autoplay once, when the frame is mostly in view (never with reduced motion).
@@ -376,7 +430,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
           ? <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={pause} disabled={!ready}>Pause</button>
           : <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={() => void play()} disabled={!ready}>{next.current > 1 && !done ? "Resume" : playLabel}</button>}
         <button type="button" className="jw-relief__btn" onClick={replay} disabled={!ready}>Replay</button>
-        <button type="button" className="jw-relief__btn" onClick={() => { pause(); setStops(-1); overview(!reduced); }} disabled={!ready}>Overview</button>
+        <button type="button" className="jw-relief__btn" onClick={() => { pause(); setStops(-1); void overview(!reduced); }} disabled={!ready}>Overview</button>
         {hasSat && (
           <div className="jw-relief__bar-end" role="group" aria-label="Map style">
             <button type="button" className="jw-relief__btn" aria-pressed={!sat} onClick={() => toggleSat(false)}>Chart</button>

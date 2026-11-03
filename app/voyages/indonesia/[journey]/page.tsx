@@ -14,6 +14,7 @@ import ShipCard from "@/components/ships/ShipCard";
 import { journeyFrom } from "@/components/ships/CharterJourneys";
 import { JOURNEYS, JOURNEY_FLEETS, founderFavourites, journeyBySlug, journeyPath, journeyRouteId } from "@/lib/content/ships/journeys";
 import { readRoute, shipMapHtml } from "@/lib/content/ships/routes";
+import { terrainRoute } from "@/components/maps/terrain/routed";
 import { registryShip } from "@/lib/content/ships/registry";
 import { shipCard, type ShipCardData } from "@/lib/content/ships/cards";
 import { undash } from "@/lib/content/ships/types";
@@ -89,7 +90,7 @@ export default async function JourneyPage({ params }: P) {
 
           {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): directly below the route chart, which stays as it is. */}
           {j.slug === "komodo-and-flores-charter" && <SeeIn3D page="voyages/indonesia/komodo-and-flores-charter" kind="voyage" ink={volumeMark("voyages")} title={j.name} exaggeration={1.6}
-            route={{ name: j.short, stops: j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode })) }}
+            route={terrainRoute(j.short, route, j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode })))}
             intro="The same typical week over the land itself: the ridges of Komodo and western Flores standing up from the sea, with the yacht's line drawn day by day. Press Play the voyage, or turn the map yourself." />}
 
           <section id="dive-flags" className={SEC} aria-labelledby="dive-flags-h">

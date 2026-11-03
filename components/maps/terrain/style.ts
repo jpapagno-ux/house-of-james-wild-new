@@ -30,6 +30,27 @@ export const SKY: SkySpecification = {
   "sky-horizon-blend": 0.6, "horizon-fog-blend": 0.7, "fog-ground-blend": 0.35, "atmosphere-blend": 0,
 };
 
+/** Satellite view (fix for the white tile flash, 3 Nov 2026): while satellite tiles load, the map shows its background,
+ *  and at pitch the sky and fog fill the horizon. In Satellite those are a muted earth tone close to the imagery (forest,
+ *  reef and deep water read dark), not Paper, so a tile still loading never flashes white. Chart keeps Stone Mist. */
+export const SATELLITE = { ground: "#4B5042", sky: "#C7CBC4", horizon: "#9EA49A", fog: "#5F6556" };
+export const SKY_SATELLITE: SkySpecification = {
+  "sky-color": SATELLITE.sky, "horizon-color": SATELLITE.horizon, "fog-color": SATELLITE.fog,
+  "sky-horizon-blend": 0.6, "horizon-fog-blend": 0.7, "fog-ground-blend": 0.35, "atmosphere-blend": 0,
+};
+/** The background colour for each view: Stone Mist under the chart, the earth tone under satellite. */
+export const groundOf = (satellite: boolean) => (satellite ? SATELLITE.ground : TERRAIN.ground);
+/** The satellite raster layer: no fade-in from the background, so tiles appear at once over the earth tone, and the
+ *  parent tile stays drawn while its children load (MapLibre's default, kept by a long cross-fade of 0). */
+export const satelliteLayer = (): LayerSpecification => ({
+  id: "jw-satellite", type: "raster", source: "jw-satellite", layout: { visibility: "none" },
+  paint: { "raster-fade-duration": 0, "raster-resampling": "linear" },
+});
+/** Tile cache and canvas: a larger cache (more zoom levels kept) so panning back and toggling views reuse tiles instead
+ *  of refetching them, and the pixel ratio capped (1.5 on phones, 2 elsewhere) so fewer, faster tiles are drawn. */
+export const TILE_CACHE = { maxTileCacheSize: 1024, maxTileCacheZoomLevels: 8 };
+export const pixelRatioFor = (dpr: number, width: number) => Math.min(dpr || 1, width < 640 ? 1.5 : 2);
+
 /** Hillshade in warm graphite shadows and paper highlights. */
 export const hillshadeLayer = (source: string): LayerSpecification => ({
   id: "jw-hillshade", type: "hillshade", source,

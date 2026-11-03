@@ -1,0 +1,26 @@
+import { withMember } from "@/lib/platform/membership";
+import { dbError, error, invalid, jsonBody, ok } from "@/lib/platform/api";
+import { COMMISSION_KEEPER_ROLES, parseTermFields } from "@/lib/platform/commission";
+
+// POST /api/v1/partner/commission-terms — the house records what a partner pays (D-25).
+// Only house admins, portfolio managers and finance; the database enforces the same rule and
+// refuses a brand or property that belongs to another partner. Every change is audited.
+export const dynamic = "force-dynamic";
+
+export const POST = withMember(async ({ req, desk, requestId }) => {
+  if (!desk.org) return error("not_found", "Choose a partner first", requestId);
+  const keeper = desk.memberships.some((m) => m.status === "active" && m.organization.type === "internal" && COMMISSION_KEEPER_ROLES.includes(m.role));
+  if (!keeper) return error("forbidden", "Only the house keeps commercial terms", requestId);
+  const body = (await jsonBody(req)) as Record<string, unknown> | null;
+  const parsed = parseTermFields(body ?? {});
+  if (!parsed.ok) return invalid({ ok: false, message: parsed.message, field: parsed.field }, requestId);
+  const v = parsed.value;
+  const { data, error: e } = await desk.sb.from("commission_terms").insert({
+    organization_id: desk.org.id,
+    brand_id: v.scope === "brand" ? v.scopeId : null,
+    property_id: v.scope === "property" ? v.scopeId : null,
+    basis: v.basis, rate_bp: v.rateBp, effective_from: v.effectiveFrom, effective_to: v.effectiveTo, status: v.status, note: v.note,
+  }).select("id").single();
+  if (e) return dbError(e, requestId);
+  return ok({ id: data.id }, requestId);
+});

@@ -158,3 +158,20 @@ export async function documents(ctx: Ctx, opts: { archived?: boolean } = {}): Pr
   const { data } = await q.order("kind").order("created_at", { ascending: false });
   return (data ?? []) as unknown as DocumentRow[];
 }
+
+// ===== commission terms (D-25): RLS returns rows only to house finance and the org's partner admins
+export type CommissionTermRow = {
+  id: string; brand_id: string | null; property_id: string | null; basis: "commission" | "net"; rate_bp: number | null;
+  effective_from: string; effective_to: string | null; status: "to_confirm" | "confirmed" | "retired"; note: string | null;
+  contract_document_id: string | null; updated_at: string;
+};
+export async function commissionTerms(ctx: Ctx): Promise<CommissionTermRow[]> {
+  const { data } = await ctx.sb.from("commission_terms")
+    .select("id, brand_id, property_id, basis, rate_bp, effective_from, effective_to, status, note, contract_document_id, updated_at")
+    .eq("organization_id", ctx.org.id).order("status").order("effective_from", { ascending: false });
+  return (data ?? []) as unknown as CommissionTermRow[];
+}
+export async function orgBrands(ctx: Ctx): Promise<{ id: string; name: string }[]> {
+  const { data } = await ctx.sb.from("brands").select("id, name").eq("organization_id", ctx.org.id).order("name");
+  return (data ?? []) as { id: string; name: string }[];
+}

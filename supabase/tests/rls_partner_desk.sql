@@ -17,6 +17,7 @@ declare
   kc_mem uuid; req uuid; sub uuid; sub2 uuid; rev uuid; rev2 uuid; con uuid; inv uuid;
   n int; ok boolean; t text; pub_before int; pub_after int;
   pm uuid := gen_random_uuid(); je uuid := gen_random_uuid(); pm_mem uuid; dc uuid; dm1 uuid; dm2 uuid; ds uuid;
+  b_k uuid; b_m uuid; ct uuid; rb int; src text;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -413,6 +414,57 @@ begin
     select count(*) into n from public.partner_documents; ok := false;
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'H21 the public cannot read the document register', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (I) commission terms (D-25): house finance writes; partner admins read their own
+  perform set_config('role', 'postgres', true);
+  insert into public.brands (organization_id, name, slug) values (o_k, 'RLS Kayu brand', 'rls-kayu-brand') returning id into b_k;
+  insert into public.brands (organization_id, name, slug) values (o_m, 'RLS More brand', 'rls-more-brand') returning id into b_m;
+  update public.properties set brand_id = b_k where id in (k1, k2);
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  insert into public.commission_terms (organization_id, rate_bp, effective_from, status) values (o_k, 1500, '2026-01-01', 'confirmed') returning id into ct;
+  insert into public.commission_terms (organization_id, brand_id, rate_bp, effective_from, status) values (o_k, b_k, 1700, '2026-01-01', 'to_confirm');
+  insert into public.commission_terms (organization_id, property_id, rate_bp, effective_from, status) values (o_k, k1, 1800, '2026-01-01', 'confirmed');
+  r := r || jsonb_build_object('t', 'I01 a house admin records partner, brand and property commission', 'pass', ct is not null);
+  begin
+    insert into public.commission_terms (organization_id, brand_id, rate_bp, effective_from) values (o_k, b_m, 2000, '2026-01-01');
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'I02 a brand from another partner is refused', 'pass', ok);
+  select c.rate_bp, c.source into rb, src from private.commission_rate_for(k1, '2026-06-01') c;
+  r := r || jsonb_build_object('t', 'I03 a property term beats the brand term', 'pass', rb = 1800 and src = 'property');
+  select c.rate_bp, c.source into rb, src from private.commission_rate_for(k2, '2026-06-01') c;
+  r := r || jsonb_build_object('t', 'I04 a brand term beats the partner term', 'pass', rb = 1700 and src = 'brand');
+  select c.rate_bp, c.source into rb, src from private.commission_rate_for(k3, '2026-06-01') c;
+  r := r || jsonb_build_object('t', 'I05 the partner term covers the rest', 'pass', rb = 1500 and src = 'partner');
+  select count(*) into n from private.commission_rate_for(k1, '2025-06-01');
+  r := r || jsonb_build_object('t', 'I06 no rate before the terms start', 'pass', n = 0);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.commission_terms where organization_id = o_k;
+  r := r || jsonb_build_object('t', 'I07 the partner admin reads their own commission terms', 'pass', n = 3);
+  update public.commission_terms set rate_bp = 3000 where id = ct; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'I08 the partner admin cannot change them', 'pass', n = 0);
+  begin
+    insert into public.commission_terms (organization_id, rate_bp, effective_from) values (o_k, 100, '2026-01-01'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'I09 the partner admin cannot add terms', 'pass', ok);
+  select count(*) into n from private.commission_rate_for(k1, '2026-06-01');
+  r := r || jsonb_build_object('t', 'I10 rate look-ups are house-only', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.commission_terms;
+  r := r || jsonb_build_object('t', 'I11 a property manager sees no commission terms', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.commission_terms;
+  r := r || jsonb_build_object('t', 'I12 a house editor sees no commission terms', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.commission_terms where organization_id = o_k;
+  r := r || jsonb_build_object('t', 'I13 another partner sees none of them', 'pass', n = 0);
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  begin select count(*) into n from public.commission_terms; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'I14 the public cannot read commission terms', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

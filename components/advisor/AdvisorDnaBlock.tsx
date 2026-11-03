@@ -61,7 +61,7 @@ export default function AdvisorDnaBlock({ a, idBase = "dna" }: { a: Advisor; idB
               {d.marks.map((m) => { const s = stayOf.get(m.ledgerId); return (
                 <li key={m.ledgerId} className="py-3 grid gap-0.5">
                   <div className="flex flex-wrap items-baseline gap-x-3">
-                    <span className="font-mono text-[11px] ledger-crimson">{m.ledgerId}</span>
+                    <span className="ledger-id text-[11px]">{m.ledgerId}</span>
                     <span className="ledger-display text-[17px]">{s ? <Link href={recordHref("stay", s.slug)} className="hover:ledger-crimson">{s.name}</Link> : m.ledgerId}</span>
                     {s?.country && <span className="text-[13px] ledger-muted">{s.country}</span>}
                   </div>

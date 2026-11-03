@@ -39,7 +39,7 @@ function Person({ a, place, markLine, compact, credential }: { a: Advisor; place
     <div className="flex gap-3 items-start min-w-0">
       <Link href={a.profileHref ?? "/about/team#advisors"} className="shrink-0"><Headshot a={a} size={compact ? 40 : 52} /></Link>
       <div className="min-w-0">
-        <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="font-mono text-[10.5px] ledger-crimson">{a.ledgerId}</span></p>
+        <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="ledger-id text-[10.5px]">{a.ledgerId}</span></p>
         <p className="text-[12.5px] ledger-muted mt-0.5 sm:truncate">
           {markLine ?? `Knows ${place}`}{paths.length ? <> · {paths.map((p, i) => <span key={p.id}>{i > 0 ? ", " : ""}<Link href={pathwayHref(p.key)} className="hover:ledger-crimson">{p.name}</Link></span>)}</> : null}
         </p>
@@ -86,7 +86,7 @@ export function PathwayAdvisors({ pathwayId, className = "" }: { pathwayId: Path
     <section className={className} aria-labelledby="carries-heading">
       <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>Who carries this pathway</p>
       <h2 id="carries-heading" className="ledger-display text-[1.5rem] md:text-3xl mt-2">{p.name} is carried by {line}.</h2>
-      <p className="mt-2 text-[15px] ledger-muted max-w-2xl">The advisors of the house who state {p.name.toLowerCase()} as one of the journeys they plan — in the Ledger, in their own words. James heads every page while the house is in testing.</p>
+      <p className="mt-2 text-[15px] ledger-muted max-w-2xl">The advisors of the house who state {p.name.toLowerCase()} as one of the journeys they plan, in the Ledger, in their own words. James heads every page while the house is in testing.</p>
       <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {who.map((a) => {
           const places = (a.dna?.countries ?? []).slice(0, 4).map(countryName);
@@ -95,7 +95,7 @@ export function PathwayAdvisors({ pathwayId, className = "" }: { pathwayId: Path
               <div className="flex gap-3 items-start">
                 <Link href={a.profileHref ?? "/about/team#advisors"} className="shrink-0"><Headshot a={a} size={48} /></Link>
                 <div className="min-w-0">
-                  <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="font-mono text-[10.5px] ledger-crimson">{a.ledgerId}</span></p>
+                  <p className="leading-tight"><Link href={a.profileHref ?? "/about/team#advisors"} className="ledger-display text-[17px] hover:ledger-crimson">{a.name}</Link> <span className="ledger-id text-[10.5px]">{a.ledgerId}</span></p>
                   {places.length > 0 && <p className="text-[12.5px] ledger-muted mt-0.5">{places.join(" · ")}</p>}
                   {a.slug === DEFAULT_ADVISOR && founderOceanForPathway(pathwayId) && <p className="text-[12.5px] mt-0.5" style={{ color: GREEN_INK }}>{founderOceanForPathway(pathwayId)}</p>}
                   {a.line && <p className="mt-1.5 ledger-display italic text-[14px] leading-snug" style={{ color: GREEN_INK }}>&ldquo;{a.line}&rdquo;</p>}

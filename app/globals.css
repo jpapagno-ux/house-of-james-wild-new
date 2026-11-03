@@ -596,3 +596,6 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 /* Touch screens only (map audit, 3 Nov 2026): the "Tap to explore" chips on zoomable maps. */
 .jw-touch-only { display: none !important; }
 @media (hover: none) and (pointer: coarse) { .jw-touch-only { display: inline-flex !important; } }
+
+/* Sign-in doors (header), 3 Nov 2026 */
+@keyframes doorsIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }

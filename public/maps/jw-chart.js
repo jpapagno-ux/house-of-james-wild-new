@@ -60,7 +60,10 @@
       if (s.nolabel) w.nf = true;
       // "path": [[lng,lat], …] from the previous stop to this one. Its bends become unmarked steering
       // points (v), so the line follows the road or channel instead of a straight arc. At most 4 kept.
-      if (i > 0 && s.path && s.path.length > 2) {
+      // A sea lane (s.lane "sea": scripts/sealanes.py routed it round the charted land) is drawn whole, every turn
+      // kept, as one leg (w.p), so the line and the boat go round the islands exactly as the 3D map draws them.
+      if (i > 0 && s.lane === "sea" && s.path && s.path.length > 2) w.p = s.path.map(function (p) { return [+p[1], +p[0]]; });
+      else if (i > 0 && s.path && s.path.length > 2) {
         var inner = s.path.slice(1, -1), keep = Math.min(4, inner.length);
         for (var j = 0; j < keep; j++) {
           var p = inner[Math.round((j + 1) * (inner.length + 1) / (keep + 1)) - 1] || inner[j];
@@ -196,6 +199,9 @@ function spanCap(km){return km>800?1.2:km>200?1.6:km>50?2.5:4}
 function fitPad(fm,km){return CFG.fitPad!=null?CFG.fitPad:Math.max(km<50?0.006:0.02,fm*(km<200?0.14:0.22))}
 var SEG=30;
 function legPts(a,b){var o=[];for(var j=0;j<=SEG;j++)o.push(slerp(a,b,j/SEG));return o}
+/* a routed sea lane as SEG+1 points like any leg (the boat samples legs by index): every turn kept, the SEG steps shared
+   by length between its segments */
+function lanePts(p){var n=p.length-1;if(n<1||n>SEG)return legPts(p[0],p[n]);var L=[],T=0,i,j;for(i=0;i<n;i++){L.push(gcd(p[i],p[i+1])||1e-9);T+=L[i]}var k=L.map(function(l){return Math.max(1,Math.floor(l/T*SEG))}),s=k.reduce(function(a,b){return a+b},0),bi,bv;while(s<SEG){bi=0;bv=-1;for(j=0;j<n;j++)if(L[j]/k[j]>bv){bv=L[j]/k[j];bi=j}k[bi]++;s++}while(s>SEG){bi=-1;bv=1e18;for(j=0;j<n;j++)if(k[j]>1&&L[j]/(k[j]-1)<bv){bv=L[j]/(k[j]-1);bi=j}if(bi<0)break;k[bi]--;s--}var o=[p[0]];for(i=0;i<n;i++)for(j=1;j<=k[i];j++)o.push(slerp(p[i],p[i+1],j/k[i]));return o}
 /* a flown leg (mode air or helicopter) bows into a gentle arc above the straight course, the way a flight is drawn on a
    chart; the plane flies it. The bow is to the poleward side of the course, about a sixth of the leg's length. */
 function arcPts(a,b){var o=legPts(a,b),ml=Math.cos((a[0]+b[0])/2*Math.PI/180)||1e-6,dl=((b[1]-a[1]+540)%360)-180,dy=b[0]-a[0],dx=dl*ml,len=Math.hypot(dx,dy);if(len<1e-9)return o;
@@ -214,7 +220,7 @@ var DASH={s:[8,5],w:[8,5],l:[],f:[1,6],a:[5,5],h:[2,4]};
 var MODEWORD=Object.assign({s:'UNDERWAY',w:'ON THE WATER',l:'OVERLAND',f:'ON FOOT',a:'IN THE AIR',h:'BY HELICOPTER'},CFG.modeWord||{});
 var KEYS=Object.keys(J);
 KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=[];m.legA=[];
- for(var i=0;i<m.n;i++){var am=m.wp[i+1].m,lp=(am==='a'||am==='h')?arcPts(m.wp[i].c,m.wp[i+1].c):legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
+ for(var i=0;i<m.n;i++){var am=m.wp[i+1].m,lp=(am==='a'||am==='h')?arcPts(m.wp[i].c,m.wp[i+1].c):m.wp[i+1].p?lanePts(m.wp[i+1].p):legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
   var c=centroid(lp),md=0;lp.forEach(function(p){md=Math.max(md,gcd(c,p))});m.legR.push(clamp(215/((md+(CFG.pad||0.12))*D),320,CFG.maxR||14000));m.legA.push(md*2)}
  m.dayStart={};m.dayWp={};m.wp.forEach(function(w,i){if(m.dayStart[w.d]==null)m.dayStart[w.d]=i;m.dayWp[w.d]=m.dayWp[w.d]||[];if(!w.nf)m.dayWp[w.d].push(w.c)});m.wp.forEach(function(w,i){if(!m.dayWp[w.d].length){m.dayWp[w.d].push(w.c);if(m.wp[i+1])m.dayWp[w.d].push(m.wp[i+1].c)}});m.days=Object.keys(m.dayStart).map(Number).sort(function(a,b){return a-b});
  /* region first (map audit, 2 Nov 2026): the whole route, padded, is the opening view. No day or chase zooms in further

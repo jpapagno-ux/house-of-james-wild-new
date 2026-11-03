@@ -36,17 +36,43 @@ export function arcOf(a: LngLat, b: LngLat, n = 48): LngLat[] {
   return out;
 }
 
-/** The legs of a route: leg i runs from stop i-1 to stop i, along the stop's own path when the repo has one, or a
- *  great-circle arc when the leg is flown. */
+/** The legs of a route: leg i runs from stop i-1 to stop i. A flown leg is a great-circle arc; any other leg follows
+ *  the stop's own path from the route file (public/maps/routes: for a sailed leg, the sea lane round the land that
+ *  scripts/sealanes.py routes and the engraved chart draws), or a straight line when the file has none. */
 export function legsOf(stops: TerrainStop[]): LngLat[][] {
   return stops.slice(1).map((s, i) => {
     const from = lngLat(stops[i]), to = lngLat(s);
-    const p = s.path && s.path.length >= 2 ? s.path : isAir(s) ? arcOf(from, to) : [from, to];
+    const p = isAir(s) ? arcOf(from, to) : s.path && s.path.length >= 2 ? s.path : [from, to];
     return p.map((c) => [c[0], c[1]] as LngLat);
   });
 }
 
 const dist = (a: LngLat, b: LngLat) => Math.hypot((b[0] - a[0]) * Math.cos(((a[1] + b[1]) / 2) * Math.PI / 180), b[1] - a[1]);
+
+/** Rounds the turns of a routed sea lane (scripts/sealanes.py keeps 1 km off the charted coast; each corner is cut at
+ *  most `cutKm`, a fraction of that margin, so the rounded line stays at sea): a short quadratic curve at every inner
+ *  bend, so the line and the vessel sweep round a headland instead of snapping at a point. Ends are kept. */
+export function smoothLine(line: LngLat[], cutKm = 0.6, n = 8): LngLat[] {
+  if (line.length < 3) return line.slice();
+  const km = (a: LngLat, b: LngLat) => dist(a, b) * 111.32;
+  const lerp = (a: LngLat, b: LngLat, f: number): LngLat => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
+  const out: LngLat[] = [line[0]];
+  for (let i = 1; i < line.length - 1; i++) {
+    const p = line[i - 1], c = line[i], q = line[i + 1];
+    const d1 = km(p, c), d2 = km(c, q);
+    if (!d1 || !d2) { out.push(c); continue; }
+    const a = lerp(c, p, Math.min(cutKm, d1 * 0.3) / d1), b = lerp(c, q, Math.min(cutKm, d2 * 0.3) / d2);
+    for (let k = 0; k <= n; k++) {
+      const t = k / n;
+      out.push([(1 - t) ** 2 * a[0] + 2 * (1 - t) * t * c[0] + t * t * b[0], (1 - t) ** 2 * a[1] + 2 * (1 - t) * t * c[1] + t * t * b[1]]);
+    }
+  }
+  out.push(line[line.length - 1]);
+  return out;
+}
+
+/** Polyline length in km. */
+export const lengthKm = (line: LngLat[]) => line.slice(1).reduce((t, p, i) => t + dist(line[i], p) * 111.32, 0);
 
 /** The first `t` (0 to 1) of a polyline, by length. */
 export function partOf(line: LngLat[], t: number): LngLat[] {
@@ -64,13 +90,17 @@ export function partOf(line: LngLat[], t: number): LngLat[] {
   return out;
 }
 
-/** Where a vehicle is after the first `t` of a polyline, and its heading (degrees, 0 = north). */
-export function headingAt(line: LngLat[], t: number): { at: LngLat; bearing: number } {
+const tipOf = (line: LngLat[], t: number) => { const p = partOf(line, t); return p[p.length - 1]; };
+
+/** Where a vehicle is after the first `t` of a polyline, and its heading (degrees, 0 = north): the bearing across a
+ *  short window either side (`look`, a fraction of the line), so the vessel turns through a bend instead of snapping. */
+export function headingAt(line: LngLat[], t: number, look = 0.02): { at: LngLat; bearing: number } {
   if (line.length < 2) return { at: line[0], bearing: 0 };
-  const part = partOf(line, t);
-  // partOf keeps line[0..k] and ends on segment k (line[k] to line[k+1]).
-  const k = Math.max(0, Math.min(part.length - 2, line.length - 2));
-  return { at: part[part.length - 1], bearing: bearingOf(line[k], line[k + 1]) };
+  const tt = Math.max(0, Math.min(1, t));
+  const a = tipOf(line, Math.max(0, tt - look)), b = tipOf(line, Math.min(1, tt + look));
+  const at = tipOf(line, tt);
+  if (a[0] === b[0] && a[1] === b[1]) return { at, bearing: bearingOf(line[0], line[line.length - 1]) };
+  return { at, bearing: bearingOf(a, b) };
 }
 
 /** Compass bearing from a to b, degrees (0 = north). */

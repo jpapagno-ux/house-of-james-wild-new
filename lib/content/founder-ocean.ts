@@ -2,7 +2,7 @@
 // where the page is about the ocean. His own statement: he has surfed and dived in Costa Rica, the
 // Bahamas, the Galápagos, Peru, Panama and Indonesia; French Polynesia (Tahiti) since 1995, when his first trip surfed Teahupo'o, guiding and selling
 // surf travel there ever since, and a Gold Certified Tahiti Specialist (Tahiti Tourisme); the
-// Bahamas (Eleuthera) since 1983; diving and surfing for 44 years.
+// Bahamas (Eleuthera) since 1982, his first journey designed; diving and surfing for 44 years.
 //
 // Rules: the line speaks to the place, never to a stay or a sailing he has not stated. The one
 // sailing on record is Aliikai in Raja Ampat, November 2024. No dashes, one line per card.

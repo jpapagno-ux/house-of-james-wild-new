@@ -73,7 +73,7 @@ const CARDS: Advisor[] = [
     // he stayed at or walked, with the year; the marks are his own. While the
     // house is in testing he is the advisor on every page (DEFAULT_ADVISOR).
     desk: {
-      adv: "ADV-1982-000001", sample: false, since: 1983, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
+      adv: "ADV-1982-000001", sample: false, since: 1982, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
       countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
       // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
@@ -357,7 +357,7 @@ export const TEAM = {
     title: "Advisors Wanted: Learn the Ledger, Book With James Wild & Co",
     line: "New to travel, or new to us? James Wild & Co is a wholesaler and a hybrid host agency, and it's looking for advisors who'd rather sell what they know than what's in the brochure.",
     points: [
-      { icon: "compass", title: "Learn from the founder", line: "Training rooted in forty-four years on the road and journeys designed since 1983." },
+      { icon: "compass", title: "Learn from the founder", line: "Training rooted in forty-four years on the road and journeys designed since 1982." },
       { icon: "key", title: "Quote the Ledger", line: "Vetted stays, camps, ships and routes, each with a permanent ID and rates re-checked at enquiry." },
       { icon: "route", title: "Book under the house", line: "Plan and book as part of a hybrid host agency, with the house behind every booking." },
     ],

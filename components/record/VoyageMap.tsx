@@ -22,23 +22,23 @@ export default function VoyageMap({ stops, title }: { stops: Stop[]; title: stri
     <figure className="ledger-chart is-drawn border ledger-rule bg-coast-mist">
       <svg viewBox={`0 0 ${C.width} ${C.height}`} className="block w-full h-auto" role="img" aria-label={title}>
         <defs>
-          <pattern id="sea-hatch-ra" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="8" stroke="rgba(34,101,110,0.10)" strokeWidth="1" /></pattern>
+          <pattern id="sea-hatch-ra" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><line x1="0" y1="0" x2="0" y2="8" stroke="rgba(107,99,90,0.10)" strokeWidth="1" /></pattern>
         </defs>
         <rect width={C.width} height={C.height} fill="url(#sea-hatch-ra)" />
         <g stroke="rgba(45,42,38,0.12)" strokeDasharray="2 5">
           {C.lats.map((l) => <line key={l.v} x1="0" x2={C.width} y1={l.y} y2={l.y} />)}
           {C.lngs.map((l) => <line key={l.v} y1="0" y2={C.height} x1={l.x} x2={l.x} />)}
         </g>
-        <path d={C.land} pathLength={1} className="chart-ink" fill="#F4F1ED" stroke="#2D2A26" strokeWidth="1.2" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+        <path d={C.land} pathLength={1} className="chart-ink" fill="#FFFFFF" stroke="#2D2A26" strokeWidth="1.2" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
         <g fontFamily="'Cormorant Garamond', Georgia, serif" textAnchor="middle">
-          {C.labels.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={l.text === l.text.toUpperCase() ? 14 : 16} letterSpacing={l.text === l.text.toUpperCase() ? 6 : 2} fontStyle={l.text === l.text.toUpperCase() ? "normal" : "italic"} fill={l.text === l.text.toUpperCase() ? "rgba(45,42,38,0.45)" : "rgba(34,101,110,0.75)"}>{l.text}</text>)}
+          {C.labels.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={l.text === l.text.toUpperCase() ? 14 : 16} letterSpacing={l.text === l.text.toUpperCase() ? 6 : 2} fontStyle={l.text === l.text.toUpperCase() ? "normal" : "italic"} fill={l.text === l.text.toUpperCase() ? "rgba(45,42,38,0.45)" : "rgba(107,99,90,0.75)"}>{l.text}</text>)}
         </g>
         <path d={route} pathLength={1} fill="none" style={{stroke:"var(--jw-accent-hex)"}} strokeWidth="2.5" strokeDasharray="0.012 0.008" strokeLinecap="round" />
         {markers.map((m) => (
           <g key={m.name} transform={`translate(${m.x} ${m.y})`}>
-            <circle r="15" style={{fill:"var(--jw-accent-hex)"}} stroke="#F4F1ED" strokeWidth="3" />
-            <text y="5" textAnchor="middle" fontFamily="'IBM Plex Mono', monospace" fontSize={m.days.length > 1 ? 10 : 13} fill="#F4F1ED">{m.days.join("·")}</text>
-            <text x="22" y="5" fontFamily="'Cormorant Garamond', serif" fontSize="17" fill="#2D2A26" stroke="#F4F1ED" strokeWidth="4" paintOrder="stroke">{m.name}</text>
+            <circle r="15" style={{fill:"var(--jw-accent-hex)"}} stroke="#FFFFFF" strokeWidth="3" />
+            <text y="5" textAnchor="middle" fontFamily="'IBM Plex Mono', monospace" fontSize={m.days.length > 1 ? 10 : 13} fill="#FFFFFF">{m.days.join("·")}</text>
+            <text x="22" y="5" fontFamily="'Cormorant Garamond', serif" fontSize="17" fill="#2D2A26" stroke="#FFFFFF" strokeWidth="4" paintOrder="stroke">{m.name}</text>
           </g>
         ))}
         <g fontFamily="'IBM Plex Mono', monospace" fontSize="10" fill="rgba(45,42,38,0.5)">

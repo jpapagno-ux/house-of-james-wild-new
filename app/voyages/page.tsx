@@ -81,8 +81,8 @@ export default function VoyagesHub() {
         <HubSection eyebrow="Four ways to sail" title="How Do You Want to Sail?" id="types-h"><VoyageTiles tiles={typeTiles} /></HubSection>
         <HubSection eyebrow="The waters" title="Which Waters?" id="waters-h"><VoyageTiles tiles={watersTiles} cols={5} /></HubSection>
         <HubSection eyebrow="Who is sailing" title="Who Is the Voyage For?" id="who-h"><VoyageTiles tiles={categoryTiles()} cols={3} /></HubSection>
-        <RouteAtlas id="voyages-atlas" kind="voyage" dest="nile" chart={NILE_CHART} legend="river-sea" kicker="THE VOYAGES · BY RIVER AND SEA" eyebrow="The voyage atlas" title="Where Do the Ships Sail?"
-          line="Every route in Voyages on one chart. Pick a route above the chart and the globe flies to it, then sails it day by day."
+        <RouteAtlas id="voyages-atlas" globe kind="voyage" dest="nile" chart={NILE_CHART} legend="river-sea" kicker="THE VOYAGES · BY RIVER AND SEA" eyebrow="The voyage atlas" title="Where Do the Ships Sail?"
+          line="Every route in Voyages on one chart. Point to a region and the globe turns to it; pick a ship and a route and the chart sails it day by day."
           routes={atlasRoutes()} />
         <HubSection eyebrow="Sailed by the founder" title="Which Ships Has James Sailed?" id="sailed-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{sailed.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>

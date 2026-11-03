@@ -256,24 +256,20 @@
   .ledger-pin-drop, .ledger-pin-pulse { animation: none; }
 }
 
-/* Ship pages (components/ships): the house route chart (jw-chart) sits sticky beside the day log,
-   sized to fit beside it. The page's own tabs choose the route, so the engine's route buttons step
-   aside; on phones the day log replaces the engine's day row, legend and speed. */
-.ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: 36svh; min-height: 240px; }
-.ship-route .jwc .platecap, .ship-route .jwc details.coords, .ship-route .jwc .ctrlbar .routes { display: none; }
-@media (max-width: 1023px) {
-  .ship-route .jwc .ctrlbar .days, .ship-route .jwc .ctrlbar .legend, .ship-route .jwc .ctrlbar .speed, .ship-route .jwc .hud { display: none; }
-  .ship-route .jwc .overlay h3, .ship-route .jwc .overlay #routeSub { display: none; }
-  .ship-route .jw-frame.chart { padding: 6px; }
-}
-@media (min-width: 1024px) { .ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: calc(100svh - 430px); min-height: 360px; } }
-/* On a chart narrower than 480px the overlay card shrinks to one line (day and status), so it
-   never covers half the map (voyages audit, 1 Nov 2026). */
+/* Ship pages (components/ships): the house route chart (jw-chart) and the day log (map audit, 2 Nov 2026).
+   From 1280px the chart is sticky on the LEFT at 60% of the content (min 640px), 16:10, its height capped to the screen
+   under the header and the ship bar; the log on the right. From 768 to 1279 the chart runs full width above the log
+   at 16:10; under 768 full width at 4:5 with the day chips as one sideways row. The route's title, nights and ports sit
+   above (ItineraryScroller), so the engine's own header, route buttons, caption and coordinates ledger step aside. */
+.ship-route .jwc .head, .ship-route .jwc .platecap, .ship-route .jwc details.coords, .ship-route .jwc .ctrlbar .routes { display: none; }
+.ship-route .jwc .stage { aspect-ratio: 4 / 5; height: auto; max-height: 72svh; min-height: 300px; }
+@media (min-width: 768px) { .ship-route .jwc .stage { aspect-ratio: 16 / 10; max-height: 70svh; } }
+@media (min-width: 1280px) { .ship-route .jwc .stage { max-height: calc(100svh - 228px - 48px - 112px); min-height: 360px; } }
+@media (max-width: 767px) { .ship-route .jwc .ctrlbar .legend, .ship-route .jwc .ctrlbar .speed { display: none; } }
+/* On a chart narrower than 480px the day badge keeps to its first line (day and status). */
 .ship-route { container-type: inline-size; }
 @container (max-width: 480px) {
-  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
-  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
-  .jwc .overlay .readout { border-top: 0; padding: 0; }
+  .jwc .overlay .way { display: none !important; }
 }
 
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
@@ -433,9 +429,7 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 /* On a narrow atlas the overlay card shrinks to one line, as on ship pages. */
 .jw-atlas { container-type: inline-size; }
 @container (max-width: 480px) {
-  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
-  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
-  .jwc .overlay .readout { border-top: 0; padding: 0; }
+  .jwc .overlay .way { display: none !important; }
 }
 /* The no-script list of every route: folded on phones; open on wide screens where supported. */
 @media (min-width: 768px) {
@@ -579,3 +573,7 @@ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card,
    (scroll-driven, where supported; elsewhere it is simply there). */
 @keyframes jw-rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
 @supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { .jw-volume-open { animation: jw-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; } } }
+
+/* Touch screens only (map audit, 3 Nov 2026): the "Tap to explore" chips on zoomable maps. */
+.jw-touch-only { display: none !important; }
+@media (hover: none) and (pointer: coarse) { .jw-touch-only { display: inline-flex !important; } }

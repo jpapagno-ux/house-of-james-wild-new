@@ -46,7 +46,7 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
       {charters.map((c) => <p key={c.name} className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">{c.name}</span>The route of a private charter ({c.direction}) is set with you; the chart follows the published {itineraries.length > 1 ? "routes" : "route"} she sails.</p>)}
       {map && <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />}
       {map?.figCss && <link rel="stylesheet" href={map.figCss} precedence="default" />}
-      <ItineraryScroller ship={ship} itineraries={list} map={map ? <div className="ship-route sticky top-[124px] [html[data-chrome=tucked]_&]:top-[48px] lg:top-[228px] z-10 bg-paper transition-[top] duration-300" dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
+      <ItineraryScroller ship={ship} itineraries={list} map={map ? <div className="ship-route xl:sticky xl:top-[228px] z-10 bg-paper" dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
       {map && <MapBoot />}
     </section>
   );

@@ -9,7 +9,7 @@ import { ChevronDown } from "lucide-react";
 // The chart itself honours prefers-reduced-motion; here, with reduced motion, the log only
 // follows taps, never the scroll. Without script the chart's fallback lists every stop.
 
-declare global { interface Window { chartDay?: (k: string, d: number) => void; chartRoute?: (k: string, scroll?: boolean) => void; onChartDay?: (k: string, d: number, auto: boolean) => void } }
+declare global { interface Window { chartDay?: (k: string, d: number, src?: string) => void; chartRoute?: (k: string, scroll?: boolean) => void; onChartDay?: (k: string, d: number, auto: boolean) => void } }
 
 /** `label`: a block of days published as one ("Days 3 to 6"); `indicative`: the day order is a guide only. */
 export type ScrollerDay = { day: number; title: string; place: string; summary: string; label?: string; indicative?: boolean };
@@ -18,6 +18,9 @@ export type ScrollerItinerary = { name: string; direction: string; nights: numbe
 
 // `map` is the chart block, rendered on the server and passed through untouched, so React never
 // rewrites the element the chart engine draws into.
+// Day titles as the log shows them: the first letter capitalised (some operators publish "arrive San Cristobal").
+const cap = (x: string) => (x ? x.charAt(0).toUpperCase() + x.slice(1) : x);
+
 export default function ItineraryScroller({ ship, itineraries, map }: { ship: string; itineraries: ScrollerItinerary[]; map: ReactNode }) {
   const [tab, setTab] = useState(0);
   const [active, setActive] = useState<number | null>(null);
@@ -31,7 +34,8 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
   // while the chart still showed the globe). If the engine is not ready yet, the day waits and is
   // sent the moment window.chartDay appears, so the chart opens on the day in view.
   const pending = useRef<{ t: number; i: number } | null>(null);
-  const sail = (t: number, i: number) => {
+  // src "scroll": the log moved under the reader; the chart ignores it while they are exploring or have just zoomed by hand.
+  const sail = (t: number, i: number, src?: string) => {
     const d = itineraries[t]?.days[i];
     if (!d) return;
     const k = `${t}:${d.day}`;
@@ -39,7 +43,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
     if (typeof window.chartDay !== "function") { pending.current = { t, i }; return; }
     last.current = k;
     pending.current = null;
-    window.chartDay(`R${t}`, d.day);
+    window.chartDay(`R${t}`, d.day, src);
   };
   useEffect(() => {
     const id = window.setInterval(() => {
@@ -95,7 +99,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
       if (!seen.size) return;
       const i = Math.max(...seen);
       setActive(i);
-      sail(tab, i);
+      sail(tab, i, "scroll");
     }, { rootMargin: "-42% 0px -52% 0px" });
     items.forEach((el) => io.observe(el));
     return () => io.disconnect();
@@ -115,14 +119,21 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
         <div role="tablist" aria-label={`${ship} itineraries`} className="flex gap-2 overflow-x-auto [scrollbar-width:none] -mx-5 px-5 md:mx-0 md:px-0 pb-1">
           {itineraries.map((x, i) => (
             <button key={x.name} role="tab" type="button" aria-selected={i === tab} onClick={() => pickTab(i)}
-              className={`shrink-0 border px-4 py-2 text-left transition-colors ${i === tab ? "border-crimson bg-crimson text-paper" : "ledger-border hover:border-crimson"}`}>
-              <span className="block ledger-eyebrow !text-current">{x.nights != null ? `${x.nights} nights` : "Stops in order"}</span>
+              className={`house-chip jw-tab shrink-0 !flex-col !items-start !gap-0.5 !normal-case !tracking-normal !px-4 !py-2 text-left ${i === tab ? "is-active" : ""}`}>
+              <span className="block ledger-eyebrow !text-current !text-[10px]">{x.nights != null ? `${x.nights} nights` : "Stops in order"}</span>
               <span className="block text-[14.5px] whitespace-nowrap">{x.direction}</span>
             </button>
           ))}
         </div>
       )}
-      <div className={`mt-5 grid gap-6 lg:gap-10 items-start ${map ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)]" : ""}`}>
+      {/* The route's header sits above the chart, never on it (map audit, 2 Nov 2026): eyebrow, title, nights and ports. */}
+      <div className="mt-6 max-w-3xl">
+        <p className="ledger-eyebrow">{it.nights != null ? `${it.nights} nights` : "Stops in order"} · {new Set(it.days.map((d) => d.place)).size} ports of call</p>
+        <h3 className="ledger-display text-[1.5rem] md:text-[1.9rem] leading-tight mt-1">{cap(it.name)}</h3>
+        {it.days.length > 1 && <p className="mt-1 text-[14px] ledger-muted">{it.days[0].place} to {it.days[it.days.length - 1].place}{it.direction && it.direction !== it.name ? ` · ${it.direction}` : ""}</p>}
+      </div>
+      {/* From 1280px: the chart sticky on the left at 60% (min 640px), the log on the right. Below, the chart above the log. */}
+      <div className={`mt-5 grid gap-6 xl:gap-10 items-start ${map ? "xl:grid-cols-[minmax(640px,3fr)_minmax(0,2fr)]" : ""}`}>
         {map && <div ref={mapRef} className="contents">{map}</div>}
         <div>
           <p className="ledger-eyebrow mb-2" aria-live="polite">{it.name}{active != null ? ` · ${it.days[active]?.label?.startsWith("Stop") ? "Stop" : "Day"} ${it.days[active]?.day} of ${it.days.length}` : ""}</p>
@@ -135,7 +146,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
                   <button type="button" onClick={() => toggle(i)} aria-expanded={open} className="w-full flex items-center gap-4 py-4 px-1 text-left">
                     <span className={`w-10 h-10 shrink-0 rounded-full flex items-center justify-center font-mono text-[13px] border transition-colors ${on || (active != null && i < active) ? "bg-crimson text-paper border-crimson" : "ledger-border"}`}>{String(d.day).padStart(2, "0")}</span>
                     <span className="flex-1 min-w-0">
-                      <span className="block ledger-display text-[19px] md:text-[21px] leading-snug">{d.title}</span>
+                      <span className="block ledger-display text-[19px] md:text-[21px] leading-snug">{cap(d.title)}</span>
                       <span className="block ledger-eyebrow mt-0.5">{d.label ? `${d.label} · ` : ""}{d.place}{d.indicative ? " · Indicative" : ""}</span>
                     </span>
                     <ChevronDown className={`w-5 h-5 shrink-0 ledger-crimson transition-transform ${open ? "rotate-180" : ""}`} strokeWidth={1.5} aria-hidden="true" />

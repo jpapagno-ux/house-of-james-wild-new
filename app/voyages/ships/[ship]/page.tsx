@@ -47,7 +47,7 @@ export default async function ShipPage({ params }: P) {
   const terrain = e.slug === "natural-paradise-yacht" ? (() => {
     const weeks = (e.data as ShipRecord).itineraries.filter((i) => i.days.length && i.nights === 7).reverse(); // Week B first: the western volcanoes
     return weeks.length ? <SeeIn3D page="voyages/ships/natural-paradise-yacht" kind="voyage" ink={volumeMark("voyages")} title={`${e.data.name} in the Galapagos`} exaggeration={1.8}
-      routes={weeks.map((w) => ({ name: w.name.split(":")[0], stops: w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })) }))}
+      routes={weeks.map((w) => ({ name: w.name.split(":")[0], stops: w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode })) }))}
       intro="Both 8-day weeks over the islands themselves: Isabela's and Fernandina's shield volcanoes, Santa Cruz's highlands and the low eastern islands, with the yacht's line drawn day by day." /> : null;
   })() : null;
   return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, itineraryAfter: terrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;

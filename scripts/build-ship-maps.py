@@ -32,7 +32,9 @@ for waters in LABELS:
             st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
             if prev is None: st["kind"] = "port"
             else:
-                st["mode"] = "sea"
+                # The leg's mode comes from the day itself (lib/content/ships: "mode": "air" only where the operator's
+                # day says the guest flies), the one field the engraved chart and the 3D terrain map both read.
+                st["mode"] = d.get("mode", "sea")
                 st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
             stops.append(st); prev = d
         stops[-1]["kind"] = "port"
@@ -54,7 +56,7 @@ for j in J["journeys"]:
         st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
         if prev is None: st["kind"] = "port"
         else:
-            st["mode"] = "sea"; st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
+            st["mode"] = d.get("mode", "sea"); st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]
         stops.append(st); prev = d
     stops[-1]["kind"] = "port"
     route = {"id": rid, "type": "voyage", "destination": j["region"], "title": j["name"],

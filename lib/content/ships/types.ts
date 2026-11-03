@@ -12,7 +12,10 @@ export type ShipImage = { url: string; alt: string; credit?: string };
 export type ShipPathway = { primary: PathwayId; secondary: PathwayId[] };
 /** `label`: a day block the operator publishes as one ("Days 3 to 6"); `indicative`: the research split a
  *  published block across days, so the order is a guide only (the page says so). */
-export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string; label?: string; indicative?: boolean };
+/** `mode`: how the guest reaches this day's place from the one before. Absent means the vessel sails it; "air" only
+ *  where the operator's own day says the guest flies. The one field the engraved route chart (via
+ *  scripts/build-ship-maps.py) and the 3D terrain map (TerrainStop.mode) both read. */
+export type ShipDay = { day: number; title: string; place: string; lat: number; lng: number; summary: string; label?: string; indicative?: boolean; mode?: "air" | "sea" | "road" };
 /** nights null and no days: a private charter whose route is set with the guest. nights null with days: the operator
  *  lists the stops in order but publishes no length (Amandira), so the days are labelled stops, never nights. */
 /** `short`: the atlas chip label where directions repeat (polar voyages); `href`: the voyage's own page. */

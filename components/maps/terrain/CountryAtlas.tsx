@@ -59,7 +59,7 @@ export default function CountryAtlas({ country, name, regionSlug }: { country: s
   const stays = data.entries.filter((e) => e.kind === "stay");
   const voyages = data.entries.filter((e) => e.kind === "voyage");
   const group = (list: AtlasPoint[]) => [...new Set(list.map((p) => p.group))].map((g) => [g, list.filter((p) => p.group === g)] as const);
-  const intro = `Every stay and voyage in the Ledger in ${name}, on the terrain, with the World Heritage Sites, the dive sites our partners name and the volcano alert levels. Tap a pin for its card, or fly the route from Bali to Komodo and Raja Ampat.`;
+  const intro = `Every stay and voyage in the Ledger in ${name}, on the terrain, with the World Heritage Sites and the dive sites our partners name${data.volcanoes.length ? ", plus the volcano alert levels" : ""}. Tap a pin for its card, or fly the route from Bali to Komodo and Raja Ampat.`;
   // The real advisors who know the country (stand-ins never: lib/content/advisors.ts ADVISORS), James first.
   const advisors = advisorsFor({ countrySlug: country, regionSlug }).advisors.filter((a) => !a.sample);
   const planHref = (slug: string) => `/plan?advisor=${slug}&destination=${encodeURIComponent(country)}`;

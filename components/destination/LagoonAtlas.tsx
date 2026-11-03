@@ -82,12 +82,13 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
     return { x: ((clientX - r.left) / r.width) * c.width, y: ((clientY - r.top) / r.height) * c.height };
   };
 
-  // Wheel zoom only once the map is armed (a click or tap), so the page scroll is never captured by accident.
+  // Wheel zoom once the map is armed (a click or tap), or any time with Ctrl/Cmd held (map audit, 3 Nov 2026), so the
+  // page scroll is never captured by accident.
   useEffect(() => {
     const el = box.current;
     if (!el) return;
     const onWheel = (e: WheelEvent) => {
-      if (!armed) return;
+      if (!armed && !(e.ctrlKey || e.metaKey)) return;
       e.preventDefault();
       const p = toChart(e.clientX, e.clientY);
       zoomAt(e.deltaY < 0 ? 1.18 : 1 / 1.18, p.x, p.y);
@@ -116,15 +117,17 @@ export default function LagoonAtlas({ lagoons, charts, stays, stayInk }: Props) 
     if (list.length === 2) {
       const [a, b] = list;
       const d = Math.hypot(a.x - b.x, a.y - b.y), cx = (a.x + b.x) / 2, cy = (a.y + b.y) / 2;
+      // the deltas are read now: the state updater runs later, after last.current has moved on (it made every pan and
+      // pinch a no-op; map audit, 3 Nov 2026)
       if (last.current) {
         const p = toChart(cx, cy);
-        const f = d / last.current.d;
-        setView((v) => clamp({ k: v.k * f, x: p.x - (p.x - v.x) * f + (cx - last.current!.cx) * s, y: p.y - (p.y - v.y) * f + (cy - last.current!.cy) * s }));
+        const f = d / last.current.d, mx = (cx - last.current.cx) * s, my = (cy - last.current.cy) * s;
+        setView((v) => clamp({ k: v.k * f, x: p.x - (p.x - v.x) * f + mx, y: p.y - (p.y - v.y) * f + my }));
       }
       last.current = { d, cx, cy, x: 0, y: 0 };
     } else if (list.length === 1) {
       const p = list[0];
-      if (last.current) setView((v) => clamp({ ...v, x: v.x + (p.x - last.current!.cx) * s, y: v.y + (p.y - last.current!.cy) * s }));
+      if (last.current) { const mx = (p.x - last.current.cx) * s, my = (p.y - last.current.cy) * s; setView((v) => clamp({ ...v, x: v.x + mx, y: v.y + my })); }
       last.current = { d: 0, cx: p.x, cy: p.y, x: 0, y: 0 };
     }
   };

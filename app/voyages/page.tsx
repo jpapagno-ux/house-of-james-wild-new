@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import { AdvisorScroll } from "@/components/advisor/Desk";
@@ -23,6 +25,7 @@ import { polarTile } from "@/lib/content/ships/hubs";
 import { categoryTiles, mergeOffers } from "@/lib/content/ships/categories";
 import { hubOffers } from "@/lib/content/offers/hub";
 import { POLAR_VOYAGES } from "@/lib/content/polar";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // /voyages: the Voyages landing (voyages plan, Part 2, approved by James 1 Nov 2026), in the
 // order people choose: how to sail, which waters, every route on one chart, the ship James has
@@ -67,9 +70,9 @@ export default function VoyagesHub() {
   const charters = cards.filter((c) => c.types.includes("charter"));
   return (
     <div className="theme-sea theme-sea-page">
-      <SiteHeader />
-      <HubShell name="Voyages" path={PATH} eyebrow="Volume 04 · Voyages" title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
-        film={{ poster: FILMS.aliikai.poster, alt: FILMS.aliikai.alt, eyebrow: "The film", title: "Aboard Aliikai in Komodo", credit: FILMS.aliikai.credit, href: `https://www.youtube.com/watch?v=${FILMS.aliikai.id}` }}
+      <SiteHeader overlay />
+      <HubShell name="Voyages" path={PATH} eyebrow={volumeEyebrow("voyages")} title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
+        entrance={<VolumeEntrance e={ENTRANCES.voyages} />}
         answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Crossings, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
         filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">
         <HubSection eyebrow="Search every filed ship" title="Find Your Voyage" id="finder-h">

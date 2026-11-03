@@ -5,7 +5,8 @@ import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useState } from "react";
 import { X, Search, Phone } from "lucide-react";
-import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, LINKED_VOLUMES as VOLUMES, VOLUMES as EVERY_VOLUME, type MegaMenu } from "@/lib/site";
+import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, LINKED_VOLUMES as VOLUMES, type MegaMenu } from "@/lib/site";
+import { romanForHref } from "@/lib/volumes";
 import { REGION_DATA } from "@/lib/content/regions";
 import { HOME } from "@/lib/content/home";
 import { live } from "@/lib/routes";
@@ -23,9 +24,8 @@ import CompassSpin from "./CompassSpin";
 const VOLS = live(VOLUMES) as MegaMenu[];
 const REGS = live(REGIONS);
 const EXTRA = live([...MAIN_EXTRA, ...UTILITY_NAV]);
-const ROMAN = ["I", "II", "III", "IV", "V", "VI"];
-// A volume keeps its own number (Voyages is IV) even though Gatherings is not listed here.
-const numOf = (v: { href: string }) => ROMAN[EVERY_VOLUME.findIndex((x) => x.href === v.href)] ?? "";
+// A volume keeps its own roman from lib/volumes.ts (Voyages is IV) even though Gatherings is not listed here.
+const numOf = (v: { href: string }) => romanForHref(v.href);
 
 function volumePhoto(v: MegaMenu): { url: string; alt: string } | null {
   const h = HOME.volumes.find((x) => x.path === v.href);
@@ -66,7 +66,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
         <nav aria-label="The volumes" className="pt-8 lg:pt-12 pb-6">
           <p className="ledger-eyebrow ledger-crimson">The six volumes</p>
           <ul className="mt-4 border-t ledger-rule">
-            {VOLS.map((v, i) => (
+            {VOLS.map((v) => (
               <li key={v.href} className="border-b ledger-border" onMouseEnter={() => setPick(v.href)} onFocus={() => setPick(v.href)}>
                 <Link href={v.href} onClick={onClose} className="group flex items-baseline gap-5 py-3.5 lg:py-4">
                   <span className="ledger-eyebrow w-7 shrink-0 border-l-[5px] pl-1.5" style={v.tone ? { borderColor: v.tone } : undefined}>{numOf(v)}</span>

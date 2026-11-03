@@ -1,5 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import { HOUSE_LOOP } from "@/lib/content/home";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
@@ -15,8 +17,9 @@ import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 import ComingCard from "@/components/coming/ComingCard";
 import { COMING } from "@/lib/content/whats-coming";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /safaris: Volume 02 hub shell. Reserves and camps, Africa's countries,
+// /safaris: Volume II hub shell. Reserves and camps, Africa's countries,
 // the Botswana routes, and the hand-off to Wild & Co Safaris.
 const PATH = "/safaris";
 const V = VOLUMES.find((v) => v.href === PATH)!;
@@ -29,8 +32,8 @@ export default function SafarisHub() {
   const routes = journeysFor("botswana");
   return (
     <>
-      <SiteHeader />
-      <HubShell name="Safaris" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "Wild Together · filmed at Monwana, Thornybush", title: "A first safari, filmed by the people who took it.", credit: "Film by Felix Studios and Monwana", href: "https://www.youtube.com/watch?v=YR_8uiBObZ4" }} path={PATH} eyebrow="Volume 02 · Safaris" title="Africa's Reserves and Camps, Vetted Since 2011" intro={V.intro} browse={V.browse}
+      <SiteHeader overlay />
+      <HubShell name="Safaris" entrance={<VolumeEntrance e={ENTRANCES.safaris} />} film={{ poster: HOUSE_LOOP.poster, alt: HOUSE_LOOP.label, eyebrow: "Wild Together · filmed at Monwana, Thornybush", title: "A first safari, filmed by the people who took it.", credit: "Film by Felix Studios and Monwana", href: "https://www.youtube.com/watch?v=YR_8uiBObZ4" }} path={PATH} eyebrow={volumeEyebrow("safaris")} title="Africa's Reserves and Camps, Vetted Since 2011" intro={V.intro} browse={V.browse}
         answer="James Wild & Co's Safaris volume files African reserves and the camps inside them, from South Africa's Sabi Sand and Thornybush to Botswana's Okavango and Kalahari. James has designed safaris since 2011. Safaris are planned with James or an advisor and booked through Wild & Co Safaris, the house's safari platform, with partner guides on the ground."
         filling="Each reserve page lists its camps as their own Ledger entries; the reserve and camp pages fill from the Ledger export.">
         <HubSection eyebrow="Reserves · each with its own camps" title="The Reserves" id="reserves-h">

@@ -15,21 +15,26 @@ import type React from "react";
 // Gatherings, Voyages, Overland, Destinations, Journal). Each shows what's
 // filed today and fills from the Ledger export as the volume grows.
 
-export function HubShell({ eyebrow, title, intro, answer, path, name, browse = [], filling, children, closeTitle, trail, film }: {
+export function HubShell({ eyebrow, title, intro, answer, path, name, browse = [], filling, children, closeTitle, trail, film, entrance }: {
   eyebrow: string; title: string; intro: string; answer: string; path: string; name: string; browse?: NavLink[]; filling: string; children: React.ReactNode; closeTitle?: string;
   /** Visible breadcrumb trail. Defaults to Home › name; nested hubs pass the same trail they give the BreadcrumbList schema. */
   trail?: { name: string; path: string }[];
-  /** House chrome: a film band under the title (FilmBand props). */
+  /** House chrome: a film band under the title (FilmBand props); under a grand entrance it moves below the answer. */
   film?: FilmBandProps;
+  /** The page opens with a VolumeEntrance (components/entrance): it holds the page's h1, so the hub's title is
+   *  the h2 that opens the volume (#volume, the target of "Open the volume"), and no film band repeats the hero. */
+  entrance?: React.ReactNode;
 }) {
+  const Title = entrance ? "h2" : "h1";
   const chips = browse.filter((b) => !GUARD_ON || isBuilt(b.href));
   return (
-    <main id="main" className="pt-6 md:pt-10 pb-20">
-      <div className="max-w-ledger mx-auto px-5 md:px-10">
+    <main id="main" className={`${entrance ? "" : "pt-6 md:pt-10"} pb-20`}>
+      {entrance}
+      <div className={`max-w-ledger mx-auto px-5 md:px-10 ${entrance ? "pt-8 md:pt-12" : ""}`}>
         <div className="mb-6"><Breadcrumbs trail={trail ?? [{ name: "Home", path: "/" }, { name, path }]} /></div>
-        <header className="max-w-3xl">
+        <header id={entrance ? "volume" : undefined} className={`max-w-3xl ${entrance ? "jw-volume-open" : ""}`}>
           <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>
-          <h1 className="ledger-h1 mt-3">{title}</h1>
+          <Title className="ledger-h1 mt-3">{title}</Title>
           <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">{intro}</p>
           {chips.length > 0 && (
             <ul className="mt-6 flex flex-wrap gap-2" aria-label={`Browse ${name}`}>
@@ -37,8 +42,10 @@ export function HubShell({ eyebrow, title, intro, answer, path, name, browse = [
             </ul>
           )}
         </header>
-        {film && <FilmBand {...film} />}
+        {film && !entrance && <FilmBand {...film} />}
         <AnswerBlock>{answer}</AnswerBlock>
+        {/* Under an entrance a film band (a still and a link, never autoplay) sits after the answer, so it never repeats the hero. */}
+        {film && entrance && <FilmBand {...film} />}
         {children}
         <p className="mt-12 border-l-2 border-coast pl-4 text-[15px] ledger-muted max-w-2xl"><span className="ledger-eyebrow !text-coast-deep block mb-1">Filling from the Ledger</span>{filling}</p>
         <PlanClose title={closeTitle} />

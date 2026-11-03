@@ -9,6 +9,7 @@ import type { RecordKind } from "@/lib/ledger/urls";
 //  · Every image is a WES asset, a licensed Getty image (Cloudinary) or a
 //    Ledger image hosted on Base44; no AI imagery depicts a real property.
 import type { HouseStatus } from "@/lib/ledger/status";
+import { volumeEyebrow } from "@/lib/volumes";
 
 const HOME_CDN = "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5";
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
@@ -103,7 +104,7 @@ export const HOME = {
   },
 
   overland: {
-    eyebrow: "Volume 05 · Overland Expeditions",
+    eyebrow: volumeEyebrow("overland", "Overland Expeditions"),
     title: "Routes James Designed, Field Notes Included",
     intro:
       "Each one is a route James designed, with a field note on what to expect and what to avoid, and every stay on the way linked to its own entry. The stamp shows exactly how far the founder has taken it himself.",

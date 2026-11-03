@@ -1,20 +1,18 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 import { Play } from "lucide-react";
-import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 
 // FilmBand — a full-width film under a hub's title (house chrome, 30 Oct 2026).
-// A muted loop on a poster, a hairline ledger frame inset from the edges, the
+// A poster, a hairline ledger frame inset from the edges, the
 // eyebrow and title low left, and one way in. The loop is the house's own
 // footage (Felix Studios); the link opens the full film.
+// No autoplay (bug, 2 Nov 2026): the homepage film was looping here on every hub a
+// volume card or the menu opened, so it seemed to follow the visitor round the site.
+// The band is now a still and a way in; the film moves only on the homepage hero
+// and, by design, in the Stays and Voyages entrances (components/entrance).
 export type FilmBandProps = {
   poster: string;
   alt: string;
-  mp4?: string;
-  webm?: string;
   eyebrow: string;
   title: string;
   credit?: string;
@@ -22,18 +20,10 @@ export type FilmBandProps = {
   cta?: string;
 };
 
-export default function FilmBand({ poster, alt, mp4, webm, eyebrow, title, credit, href, cta = "Watch the film" }: FilmBandProps) {
-  const reduce = useReducedMotionSafe();
-  const [ready, setReady] = useState(false);
+export default function FilmBand({ poster, alt, eyebrow, title, credit, href, cta = "Watch the film" }: FilmBandProps) {
   return (
     <figure className="relative mt-10 md:mt-14 aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] overflow-hidden bg-ink text-white">
       <Image src={poster} alt={alt} fill sizes="(min-width: 1152px) 1152px, 100vw" quality={85} className="object-cover" />
-      {!reduce && mp4 && (
-        <video className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${ready ? "opacity-100" : "opacity-0"}`} autoPlay muted loop playsInline preload="metadata" aria-hidden="true" onCanPlay={() => setReady(true)}>
-          {webm && <source src={webm} type="video/webm" />}
-          <source src={mp4} type="video/mp4" />
-        </video>
-      )}
       <span className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.10)] to-[rgba(26,24,22,0.20)]" aria-hidden="true" />
       <span className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
       <figcaption className="absolute left-6 right-6 bottom-6 md:left-10 md:right-10 md:bottom-9 flex flex-wrap items-end justify-between gap-4">

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 // House type (James, 29 Oct 2026, option C): Cormorant Garamond for titles, Manrope for text.
+import "@fontsource/cormorant-garamond/300.css";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import "@fontsource/cormorant-garamond/500.css";

@@ -1,9 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
+import { useAmbientPlay } from "@/lib/useAmbientPlay";
+import { PauseControl } from "@/components/entrance/Controls";
 import { Play } from "lucide-react";
 
 // FilmHero — the top of the home page: the Wild Earth Stays film loops
@@ -13,6 +15,10 @@ import { Play } from "lucide-react";
 // rotating quote sit over it; the quote has no card (25 Oct 2026), just a
 // hairline and white type, so the film shows through.
 // Reduced motion → poster only, quotes don't rotate.
+// The film plays only here, only while the hero is on screen, never under the
+// House menu or search (it pauses the moment one opens), never with reduced
+// motion or Save-Data, and a "Pause film" control stops it (bug fix, 2 Nov 2026:
+// it had no autoPlay guard and kept running behind the menu).
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -29,6 +35,14 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
   const reduce = useReducedMotionSafe();
   const [q, setQ] = useState(0);
   const [ready, setReady] = useState(false);
+  const box = useRef<HTMLElement>(null);
+  const video = useRef<HTMLVideoElement>(null);
+  const film = useAmbientPlay(box);
+  useEffect(() => {
+    const v = video.current;
+    if (!v) return;
+    if (film.run) v.play().catch(() => {}); else v.pause();
+  }, [film.run, film.allowed]);
 
   useEffect(() => {
     if (reduce || quotes.length < 2) return;
@@ -39,13 +53,13 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
   const quote = quotes[q];
 
   return (
-    <section className="relative h-[100svh] min-h-[620px] overflow-hidden bg-ink text-white" aria-label="Welcome">
+    <section ref={box} className="relative h-[100svh] min-h-[620px] overflow-hidden bg-ink text-white" aria-label="Welcome">
       {/* Film first; the header rail sits transparent over it (house chrome) */}
       <Image src={loop.poster} alt={loop.label} fill priority quality={85} sizes="100vw" className="object-cover" />
-      {!reduce && (
+      {film.allowed && (
         <video
+          ref={video}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${ready ? "opacity-100" : "opacity-0"}`}
-          autoPlay
           muted
           loop
           playsInline
@@ -117,6 +131,8 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
           </motion.figure>
         </div>
       </div>
+
+      {film.allowed && <PauseControl paused={film.userPaused} onToggle={film.toggle} what="film" />}
 
       {/* The header turns solid once this passes under it */}
       <div id="hero-end" className="absolute bottom-0" />

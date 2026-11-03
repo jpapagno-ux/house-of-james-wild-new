@@ -20,6 +20,7 @@ declare
   b_k uuid; b_m uuid; ct uuid; rb int; src text;
   ba1 uuid; ba2 uuid; pol uuid; pol2 uuid; dd uuid;
   csub uuid; crev uuid; crev2 uuid; jt text;
+  rm1 uuid; rsub uuid; rrev uuid; rrev2 uuid;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -606,6 +607,40 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
   select count(*) into n from public.entity_content where id = k1;
   r := r || jsonb_build_object('t', 'K10 the partner sees the approved content', 'pass', n = 1);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (L) rooms: descriptive fields by revision; names and occupancy only by request
+  perform set_config('role', 'postgres', true);
+  insert into public.room_types (property_id, code, name, max_adults, max_occupancy) values (k1, 'rls-pool-villa', 'RLS Pool Villa', 2, 2) returning id into rm1;
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  insert into public.submissions (organization_id, property_id, kind, title, status) values (o_k, k1, 'rooms', 'Room update', 'draft') returning id into rsub;
+  insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'included', '["Breakfast", "Airport transfer"]') returning id into rrev;
+  insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'size_sqm', '300') returning id into rrev2;
+  r := r || jsonb_build_object('t', 'L01 a property manager proposes room inclusions and size', 'pass', rrev is not null and rrev2 is not null);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'name', '"Grand Villa"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'L02 a partner cannot rename a room by revision (the sync owns names)', 'pass', ok);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'max_occupancy', '4'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'L03 nor change occupancy', 'pass', ok);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'size_sqm', '"big"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'L04 size must be a number', 'pass', ok);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (rsub, 'room_types', rm1, 'unit_type', '"palace"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'L05 category must be one of the list', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  begin
+    insert into public.submissions (organization_id, property_id, kind, title, status) values (o_m, k1, 'rooms', 'x', 'draft') returning id into sub2;
+    insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (sub2, 'room_types', rm1, 'features', '["x"]'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'L06 another partner cannot propose for this room', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform public.decide_revision(rrev, 'approve');
+  perform public.decide_revision(rrev2, 'approve');
+  select count(*) into n from public.room_types where id = rm1 and included = array['Breakfast', 'Airport transfer'] and size_sqm = 300;
+  r := r || jsonb_build_object('t', 'L07 an editor approves; the room carries the new inclusions and size', 'pass', n = 1);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

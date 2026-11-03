@@ -7,12 +7,13 @@ import { toList } from "@/lib/platform/content";
 // Property content (Stage 2 §3.1). Partners edit any field in place and send once; only the
 // fields that changed are proposed. The house approves each field before anything is published.
 
-export type EditorField = { key: string; label: string; kind: "line" | "text" | "list"; max: number; help: string; start: string; pending: boolean };
+export type EditorField = { key: string; label: string; kind: "line" | "text" | "list" | "number" | "choice"; max: number; help: string; start: string; pending: boolean; choices?: { value: string; label: string }[] };
 
 const input = "mt-2 w-full bg-white border ledger-border px-3 py-2 text-[15px] leading-relaxed";
 const norm = (kind: EditorField["kind"], v: string) => (kind === "list" ? toList(v).join("\n") : v.replace(/\r\n/g, "\n").trim());
 
-export function ContentEditor({ propertyId, fields }: { propertyId: string; fields: EditorField[] }) {
+// The same editor serves property content and rooms: endpoint and target say where the proposal goes.
+export function ContentEditor({ propertyId, fields, endpoint = "/api/v1/partner/content", target }: { propertyId?: string; fields: EditorField[]; endpoint?: string; target?: Record<string, string> }) {
   const router = useRouter();
   const [vals, setVals] = useState<Record<string, string>>(Object.fromEntries(fields.map((f) => [f.key, f.start])));
   const [note, setNote] = useState("");
@@ -24,7 +25,7 @@ export function ContentEditor({ propertyId, fields }: { propertyId: string; fiel
     e.preventDefault();
     if (!changed.length) { setMsg({ ok: false, text: "Change at least one field before sending." }); return; }
     setBusy(true); setMsg(null);
-    const r = await api<{ reference: string }>("POST", "/api/v1/partner/content", { propertyId, changes: Object.fromEntries(changed.map((f) => [f.key, vals[f.key]])), note: note || null });
+    const r = await api<{ reference: string }>("POST", endpoint, { ...(target ?? { propertyId }), changes: Object.fromEntries(changed.map((f) => [f.key, vals[f.key]])), note: note || null });
     setBusy(false);
     if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
     setMsg({ ok: true, text: `Sent to the house as ${r.data.reference}. You'll see each field's decision under Updates & approvals.` });
@@ -44,7 +45,14 @@ export function ContentEditor({ propertyId, fields }: { propertyId: string; fiel
                 {edited && <span className="text-[12px] text-house">Changed</span>}
               </span>
               <span className="block text-[13.5px] ledger-muted mt-1">{f.help}</span>
-              {f.kind === "line"
+              {f.kind === "choice"
+                ? <select value={v} onChange={(e) => setVals({ ...vals, [f.key]: e.target.value })} className={`${input} max-w-xs`}>
+                    <option value="">Choose</option>
+                    {(f.choices ?? []).map((c) => <option key={c.value} value={c.value}>{c.label}</option>)}
+                  </select>
+                : f.kind === "number"
+                ? <input value={v} inputMode="decimal" onChange={(e) => setVals({ ...vals, [f.key]: e.target.value })} className={`${input} max-w-[10rem]`} />
+                : f.kind === "line"
                 ? <input value={v} maxLength={f.max} onChange={(e) => setVals({ ...vals, [f.key]: e.target.value })} className={input} />
                 : <textarea value={v} rows={f.kind === "list" ? Math.min(12, Math.max(4, v.split("\n").length + 1)) : 5}
                     maxLength={f.kind === "text" ? f.max : undefined} onChange={(e) => setVals({ ...vals, [f.key]: e.target.value })} className={input} />}

@@ -4,6 +4,7 @@ import { Empty, LedgerId, PageHead, StatusPill } from "@/components/platform/ui"
 import { requireHouse } from "@/lib/platform/membership";
 import { FIELD_LABEL, REVISION_STATUS, SUBMISSION_STATUS, niceDate, showValue } from "@/lib/platform/labels";
 import { CONTENT_FIELD } from "@/lib/platform/content";
+import { ROOM_FIELD } from "@/lib/platform/rooms";
 import { siteValue } from "@/lib/platform/content-site";
 
 // Content lists read one per line; everything else as before.
@@ -56,7 +57,7 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
               {s.documents.length > 0 && <ul className="mt-2 text-[14px]">{s.documents.map((d, i) => <li key={i}><a href={d.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{d.name}</a> <span className="ledger-muted text-[12px] break-all">{d.url}</span></li>)}</ul>}
               {s.revisions.map((r) => (
                 <div key={r.id} className="mt-4 bg-white border ledger-border p-4">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2"><p className="ledger-eyebrow">{r.target_table === "entity_content" ? CONTENT_FIELD[r.field]?.label ?? r.field : FIELD_LABEL[r.field] ?? r.field} · {r.target_table === "properties" ? "entry" : r.target_table === "entity_content" ? "content" : "room"}</p><StatusPill {...REVISION_STATUS[r.status]} /></div>
+                  <div className="flex flex-wrap items-baseline justify-between gap-2"><p className="ledger-eyebrow">{r.target_table === "entity_content" ? CONTENT_FIELD[r.field]?.label ?? r.field : r.target_table === "room_types" ? ROOM_FIELD[r.field]?.label ?? FIELD_LABEL[r.field] ?? r.field : FIELD_LABEL[r.field] ?? r.field} · {r.target_table === "properties" ? "entry" : r.target_table === "entity_content" ? "content" : "room"}</p><StatusPill {...REVISION_STATUS[r.status]} /></div>
                   <div className="mt-2 grid gap-2 sm:grid-cols-2 text-[15px]">
                     <div>
                       {(() => {

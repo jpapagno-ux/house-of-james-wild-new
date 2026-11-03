@@ -4,7 +4,7 @@ import { lockScroll } from "@/lib/scroll-lock";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, BedDouble, CalendarDays, Check, RefreshCcw, Users, X } from "lucide-react";
-import type { RatePlan } from "@/lib/rates";
+import { splitByAvailability, type RatePlan } from "@/lib/rates";
 import { FL_TAX_RATE } from "@/lib/pricing";
 import type { PricedRoom } from "@/lib/content/priced-stays";
 import Carousel from "./Carousel";
@@ -12,8 +12,10 @@ import Carousel from "./Carousel";
 // The booking panel for stays with live pricing. One search (dates, guests)
 // prices every room from the engine; each room is a card with its own photo
 // carousel, the live rate options and a Select button that opens the sample
-// checkout. Rooms the engine doesn't price for those dates keep their registry
-// "from" rate and offer a quote instead.
+// checkout. Once the engine answers, only the rooms it prices for those dates
+// are shown, cheapest first (James, 3 Nov 2026: "only select the rooms that are
+// available, especially over the holidays"); the rest fold into one line with
+// their registry "from" rate and a quote link. Static rate cards are untouched.
 
 type Result = { nights: number; adults: number; currency: string; engineUrl: string; plans: RatePlan[]; available: boolean; fetchedAt: string };
 type Live = { plan: string; total: number }[];
@@ -136,16 +138,19 @@ export default function BookingPanel({ property, name, rooms, included, excluded
     const d = { checkIn: iso(a), checkOut: iso(b), adults: 2 }; setQ(d); run(d);
   }, [run, property]);
 
-  const live = useMemo(() => {
-    const m: Record<string, Live> = {};
-    res?.plans.forEach((p) => p.rooms.forEach((r) => { (m[norm(r.name)] ??= []).push({ plan: p.plan, total: r.total }); }));
-    Object.values(m).forEach((l) => l.sort((a, b) => a.total - b.total));
-    return m;
-  }, [res]);
+  const split = useMemo(() => (res && state === "ok" ? splitByAvailability(rooms, res.plans) : null), [res, state, rooms]);
+  const liveFor = (r: PricedRoom): Live | undefined => split?.open.find((x) => x.room.name === r.name)?.offer.options;
+  const extras: PricedRoom[] = useMemo(() => (split?.extra ?? []).map((o) => ({ name: o.name, kind: "room" as const, photos: [] })), [split]);
+  const extraLive = (r: PricedRoom): Live | undefined => split?.extra.find((o) => o.name === r.name)?.options;
 
   const nights = res?.nights ?? 1;
-  const shown = rooms.filter((r) => r.kind === tab);
-  const pricedCount = rooms.filter((r) => live[norm(r.name)]).length;
+  // With live answers: open rooms only (cheapest first), plus anything the engine prices that the page doesn't list.
+  const openRooms: PricedRoom[] = split ? [...split.open.map((x) => x.room), ...extras] : rooms;
+  const closedRooms: PricedRoom[] = split ? split.closed : state === "none" ? rooms : [];
+  const tabCount = (k: PricedRoom["kind"]) => openRooms.filter((r) => r.kind === k).length;
+  const visibleTab = split && tabCount(tab) === 0 && tabCount(tab === "room" ? "house" : "room") > 0 ? (tab === "room" ? "house" : "room") : tab;
+  const shown = state === "none" ? [] : openRooms.filter((r) => r.kind === visibleTab);
+  const pricedCount = split ? openRooms.length : 0;
 
   return (
     <section id="rates" className="mt-16 md:mt-24" aria-labelledby="rates-heading">
@@ -159,25 +164,25 @@ export default function BookingPanel({ property, name, rooms, included, excluded
         <button type="submit" className="ledger-btn inline-flex items-center gap-2"><RefreshCcw className={`w-3.5 h-3.5 ${state === "loading" ? "animate-spin" : ""}`} strokeWidth={1.5} aria-hidden="true" /> See rates</button>
         <p className="w-full md:w-auto md:ml-auto text-[13px]" aria-live="polite">
           {state === "loading" && <span className="ledger-muted">Asking the booking engine…</span>}
-          {state === "ok" && <span className="ledger-crimson inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" aria-hidden="true" /> {pricedCount} of {rooms.length} priced live · {nights} {nights === 1 ? "night" : "nights"}</span>}
-          {state === "none" && <span>Nothing open for those dates. Try others, or ask James.</span>}
+          {state === "ok" && <span className="ledger-crimson inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" aria-hidden="true" /> {pricedCount} {pricedCount === 1 ? "room" : "rooms"} open for your dates · {nights} {nights === 1 ? "night" : "nights"}</span>}
+          {state === "none" && <span>Nothing is open for those dates. Try a day either side, or ask James: he often knows a way in.</span>}
           {state === "error" && <span>The engine didn&rsquo;t answer; registry rates shown.</span>}
         </p>
       </form>
 
       <div className="mt-6 flex gap-6 border-b ledger-rule" role="tablist" aria-label="Room types">
         {([["room", "Rooms & suites"], ["house", "Cottages & houses"]] as const).map(([k, l]) => (
-          <button key={k} type="button" role="tab" aria-selected={tab === k} onClick={() => setTab(k)} className={`pb-2.5 -mb-px ledger-eyebrow border-b-2 ${tab === k ? "border-crimson ledger-crimson" : "border-transparent"}`}>{l} <span className="ledger-muted">({rooms.filter((r) => r.kind === k).length})</span></button>
+          <button key={k} type="button" role="tab" aria-selected={visibleTab === k} onClick={() => setTab(k)} className={`pb-2.5 -mb-px ledger-eyebrow border-b-2 ${visibleTab === k ? "border-crimson ledger-crimson" : "border-transparent"}`}>{l} <span className="ledger-muted">({split ? tabCount(k) : rooms.filter((r) => r.kind === k).length})</span></button>
         ))}
       </div>
 
       <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((r) => {
-          const l = live[norm(r.name)];
+          const l = liveFor(r) ?? extraLive(r);
           const chosen = l?.find((x) => x.plan === plan[r.name]) ?? l?.[0];
           return (
             <li key={r.name} className="border ledger-border bg-paper flex flex-col">
-              <Carousel photos={r.photos} name={r.name} />
+              {r.photos.length > 0 && <Carousel photos={r.photos} name={r.name} />}
               <div className="p-4 flex flex-col flex-1">
                 <h3 className="ledger-display text-xl">{r.name}</h3>
                 <p className="mt-1 text-[13px] ledger-muted flex items-center gap-1.5"><BedDouble className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{[r.kind === "house" ? "Taken whole" : null, r.sleeps ? `Sleeps ${r.sleeps}` : null, r.beds].filter(Boolean).join(" · ") || "Details with your quote"}</p>
@@ -205,6 +210,20 @@ export default function BookingPanel({ property, name, rooms, included, excluded
           );
         })}
       </ul>
+      {split && shown.length === 0 && pricedCount > 0 && <p className="mt-6 text-[15px]">Nothing in this group is open for your dates; the other tab has rooms.</p>}
+      {closedRooms.length > 0 && (
+        <details className="mt-6 border-t ledger-rule pt-4" open={state === "none"}>
+          <summary className="cursor-pointer ledger-eyebrow">{closedRooms.length} {closedRooms.length === 1 ? "room is" : "rooms are"} not open for these dates</summary>
+          <ul className="mt-3 divide-y divide-ink/10">
+            {closedRooms.map((r) => (
+              <li key={r.name} className="flex flex-wrap items-baseline justify-between gap-3 py-2.5 text-[14.5px]">
+                <span>{r.name}{r.fromZar ? <span className="ledger-muted text-[13px]"> · from {zar(r.fromZar)} a night, registry rate</span> : null}</span>
+                <a href={`/plan?trip=${encodeURIComponent(`${name} · ${r.name}`)}&travellers=${q.adults}`} className="ledger-btn-ghost">Ask James</a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
       <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Live prices are the engine&rsquo;s totals for your dates in US dollars, before the hotel&rsquo;s taxes, refreshed every 15 minutes; 7% Florida sales tax is added at checkout. Registry rates are the estate&rsquo;s published nightly rates in South African rand. {engine && <a href={engine} className="underline underline-offset-2" data-event="booking_outbound">Open the booking engine</a>}</p>
 
       {pick && res && <Checkout pick={pick} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine={engine} hostHref={hostHref} onClose={() => setPick(null)} />}

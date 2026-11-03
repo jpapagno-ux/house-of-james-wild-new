@@ -10,6 +10,12 @@ import { isPast, today } from "../../dates.ts";
 // names them. Shown on both fleets' ship and partner pages and on /voyages/indonesia as "Charter the
 // whole yacht". Route files: public/maps/routes/<slug>-<nights>n.json (scripts/build-ship-maps.py).
 //
+// Sape Bay (Komodo day 2; the same stop in Rascal's and Rebel's 4-night itineraries): James confirmed on
+// 3 Nov 2026 that the anchorage is Sape, on the east coast of Sumbawa, facing the Sape Strait. Filed at
+// 8.57 S, 119.04 E, in the bay about 0.8 km off the shore: positioned from the chart coastline
+// (public/maps/data/komodo/base.geojson), approximate. The Indonesian gazetteer (rupabumi.big.go.id,
+// sinar.big.go.id) could not be reached to confirm it. It was filed at 8.56 S, 119.33 E, open water west of Komodo.
+//
 // Founder Favourite voyage (James, 2 Nov 2026): one slot per journey and partner, empty until a partner
 // sends an offer; it renders only when an entry exists here and its end date has not passed.
 

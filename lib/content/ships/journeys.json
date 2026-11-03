@@ -20,7 +20,7 @@
    "parkUrl": "https://whc.unesco.org/en/list/609/",
    "days": [
     { "day": 1, "title": "Labuan Bajo to Sebayor", "place": "Sebayor Island", "lat": -8.505, "lng": 119.712, "summary": "Board in Labuan Bajo and sail to Sebayor for a first swim, snorkel or dive, watching for white-spotted eagle rays; sundowners facing Sangeang volcano.", "indicative": true },
-    { "day": 2, "title": "Sape Bay and the pink beaches", "place": "Sape Bay", "lat": -8.56, "lng": 119.33, "summary": "The pink beaches by kayak or from the water, long-tailed macaques ashore and blacktip reef sharks in the shallows.", "indicative": true },
+    { "day": 2, "title": "Sape Bay and the pink beaches", "place": "Sape Bay", "lat": -8.57, "lng": 119.04, "summary": "The pink beaches by kayak or from the water, long-tailed macaques ashore and blacktip reef sharks in the shallows.", "indicative": true },
     { "day": 3, "title": "Komodo Island, Siaba Besar and Gili Lawa", "place": "Komodo Island (Loh Liang)", "lat": -8.567, "lng": 119.505, "summary": "A guided walk at Loh Liang to look for Komodo dragons, Timor deer and yellow-crested cockatoos, then turtles at Siaba Besar and an evening at Gili Lawa Darat.", "indicative": true },
     { "day": 4, "title": "Gili Banta", "place": "Gili Banta", "lat": -8.414, "lng": 119.315, "summary": "Snorkel or dive where, in Rascal Voyages' words, Pacific and Indian Ocean currents converge.", "indicative": true },
     { "day": 5, "title": "South Komodo and Manta Alley", "place": "South Komodo", "lat": -8.74, "lng": 119.43, "summary": "South Komodo's soft coral reefs and Manta Alley, the second half of Rascal Voyages' two-night extension.", "indicative": true },

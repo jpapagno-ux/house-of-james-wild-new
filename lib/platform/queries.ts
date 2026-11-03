@@ -144,3 +144,17 @@ export async function verificationsFor(ctx: Ctx, propertyId: string) {
   const { data } = await ctx.sb.from("verifications").select("aspect, status, note, verified_at, valid_until").eq("property_id", propertyId).order("aspect");
   return data ?? [];
 }
+
+export type DocumentRow = {
+  id: string; kind: "contract" | "commercial" | "supporting"; title: string; property_id: string | null; mime_type: string; size_bytes: number;
+  effective_from: string | null; expires_on: string | null; note: string | null; status: string; uploaded_by: string | null; created_at: string;
+};
+/** Documents this person may see for the organization in view (RLS decides: contracts only for admins). */
+export async function documents(ctx: Ctx, opts: { archived?: boolean } = {}): Promise<DocumentRow[]> {
+  let q = ctx.sb.from("partner_documents")
+    .select("id, kind, title, property_id, mime_type, size_bytes, effective_from, expires_on, note, status, uploaded_by, created_at")
+    .eq("organization_id", ctx.org.id);
+  q = opts.archived ? q.eq("status", "archived") : q.eq("status", "active");
+  const { data } = await q.order("kind").order("created_at", { ascending: false });
+  return (data ?? []) as unknown as DocumentRow[];
+}

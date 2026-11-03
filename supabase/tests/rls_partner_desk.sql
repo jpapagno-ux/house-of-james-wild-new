@@ -16,6 +16,7 @@ declare
   k1 uuid; k2 uuid; k3 uuid; m1 uuid;
   kc_mem uuid; req uuid; sub uuid; sub2 uuid; rev uuid; rev2 uuid; con uuid; inv uuid;
   n int; ok boolean; t text; pub_before int; pub_after int;
+  pm uuid := gen_random_uuid(); je uuid := gen_random_uuid(); pm_mem uuid; dc uuid; dm1 uuid; dm2 uuid; ds uuid;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -313,6 +314,105 @@ begin
     ok := false;
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'G03 partners cannot create entities or type a Ledger ID', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (H) documents and contracts (D-23): contracts for partner admins and house admins only
+  perform set_config('role', 'postgres', true);
+  insert into auth.users (id, email, email_confirmed_at, aud, role) values
+    (pm, 'k.pm@rls.test', now(), 'authenticated', 'authenticated'), (je, 'jw.editor@rls.test', now(), 'authenticated', 'authenticated');
+  insert into public.organization_memberships (user_id, organization_id, role) values (je, o_jw, 'jw_editor');
+  insert into public.organization_memberships (user_id, organization_id, role) values (pm, o_k, 'partner_contributor') returning id into pm_mem;
+  insert into public.entity_access (membership_id, property_id) values (pm_mem, k1);
+
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  begin
+    insert into public.partner_documents (organization_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+      values (o_k, 'contract', 'Agency agreement 2027', o_k::text || '/contract/agreement-2027.pdf', 'application/pdf', 1000, jw) returning id into dc;
+    ok := dc is not null;
+  exception when others then ok := false; end;
+  r := r || jsonb_build_object('t', 'H01 a house admin files the signed contract', 'pass', ok);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  insert into public.partner_documents (organization_id, property_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+    values (o_k, k1, 'commercial', 'Ubud 2027 rates', o_k::text || '/commercial/ubud-2027.pdf', 'application/pdf', 1000, ka) returning id into dm1;
+  insert into public.partner_documents (organization_id, property_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+    values (o_k, k2, 'commercial', 'Jimbaran 2027 rates', o_k::text || '/commercial/jimbaran-2027.pdf', 'application/pdf', 1000, ka) returning id into dm2;
+  insert into public.partner_documents (organization_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+    values (o_k, 'supporting', 'Fact sheet', o_k::text || '/supporting/fact-sheet.pdf', 'application/pdf', 1000, ka) returning id into ds;
+  r := r || jsonb_build_object('t', 'H02 a partner admin files commercial and supporting documents', 'pass', dm1 is not null and ds is not null);
+  select count(*) into n from public.partner_documents where id = dc;
+  r := r || jsonb_build_object('t', 'H03 the partner admin sees the contract', 'pass', n = 1);
+  begin
+    insert into public.partner_documents (organization_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+      values (o_k, 'contract', 'Forged', o_k::text || '/contract/forged.pdf', 'application/pdf', 1000, ka);
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'H04 a partner cannot file a contract', 'pass', ok);
+  update public.partner_documents set title = 'Changed' where id = dc; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'H05 a partner cannot change the contract', 'pass', n = 0);
+  delete from public.partner_documents where id in (dc, dm1, ds); get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'H06 a partner cannot delete documents', 'pass', n = 0);
+  update public.partner_documents set status = 'archived' where id = ds; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'H07 a partner admin archives a supporting document', 'pass', n = 1);
+  update public.partner_documents set status = 'active' where id = ds;
+
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_documents where id = dc;
+  r := r || jsonb_build_object('t', 'H08 a property manager cannot see the contract', 'pass', n = 0);
+  select count(*) into n from public.partner_documents where id = dm1;
+  r := r || jsonb_build_object('t', 'H09 a property manager sees commercial documents for their own property', 'pass', n = 1);
+  select count(*) into n from public.partner_documents where id = dm2;
+  r := r || jsonb_build_object('t', 'H10 ...but not for a property they do not manage', 'pass', n = 0);
+  select count(*) into n from public.partner_documents where id = ds;
+  r := r || jsonb_build_object('t', 'H11 a property manager sees company-wide supporting documents', 'pass', n = 1);
+  begin
+    insert into public.partner_documents (organization_id, property_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+      values (o_k, k2, 'supporting', 'Not mine', o_k::text || '/supporting/not-mine.pdf', 'application/pdf', 1000, pm);
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'H12 a property manager cannot file for another property', 'pass', ok);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_documents where id = dc;
+  r := r || jsonb_build_object('t', 'H13 a house editor cannot see the contract', 'pass', n = 0);
+  select count(*) into n from public.partner_documents where id in (dm1, dm2, ds);
+  r := r || jsonb_build_object('t', 'H14 a house editor sees commercial and supporting documents', 'pass', n = 3);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_documents where organization_id = o_k;
+  r := r || jsonb_build_object('t', 'H15 another partner sees none of these documents', 'pass', n = 0);
+
+  -- storage objects follow the register
+  perform set_config('role', 'postgres', true);
+  insert into storage.objects (bucket_id, name) values
+    ('partner-documents', o_k::text || '/contract/agreement-2027.pdf'), ('partner-documents', o_k::text || '/supporting/fact-sheet.pdf');
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  select count(*) into n from storage.objects where bucket_id = 'partner-documents' and name = o_k::text || '/contract/agreement-2027.pdf';
+  r := r || jsonb_build_object('t', 'H16 a property manager cannot open the contract file', 'pass', n = 0);
+  select count(*) into n from storage.objects where bucket_id = 'partner-documents' and name = o_k::text || '/supporting/fact-sheet.pdf';
+  r := r || jsonb_build_object('t', 'H17 a property manager opens a supporting file', 'pass', n = 1);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  select count(*) into n from storage.objects where bucket_id = 'partner-documents' and name = o_k::text || '/contract/agreement-2027.pdf';
+  r := r || jsonb_build_object('t', 'H18 the partner admin opens the contract file', 'pass', n = 1);
+  begin
+    insert into storage.objects (bucket_id, name) values ('partner-documents', o_k::text || '/contract/sneaky.pdf');
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'H19 a partner cannot upload into the contracts folder', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  begin
+    insert into storage.objects (bucket_id, name) values ('partner-documents', o_k::text || '/supporting/intruder.pdf');
+    ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'H20 another partner cannot upload into this organization', 'pass', ok);
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  begin
+    select count(*) into n from public.partner_documents; ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'H21 the public cannot read the document register', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

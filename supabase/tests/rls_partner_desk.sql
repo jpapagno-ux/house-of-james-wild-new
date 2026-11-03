@@ -21,6 +21,7 @@ declare
   ba1 uuid; ba2 uuid; pol uuid; pol2 uuid; dd uuid;
   csub uuid; crev uuid; crev2 uuid; jt text;
   rm1 uuid; rsub uuid; rrev uuid; rrev2 uuid;
+  rp1 uuid; rp2 uuid; dcm uuid;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -641,6 +642,41 @@ begin
   perform public.decide_revision(rrev2, 'approve');
   select count(*) into n from public.room_types where id = rm1 and included = array['Breakfast', 'Airport transfer'] and size_sqm = 300;
   r := r || jsonb_build_object('t', 'L07 an editor approves; the room carries the new inclusions and size', 'pass', n = 1);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (M) rates & offers: proposals the house loads into Airtable (D-08)
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  insert into public.rate_proposals (organization_id, property_id, kind, currency, payload, submitted_by)
+  values (o_k, k1, 'seasonal', 'USD', '{"rows":[{"season":"High","nightly":1250}]}', pm) returning id into rp1;
+  r := r || jsonb_build_object('t', 'M01 a property manager sends seasonal rates for their property', 'pass', rp1 is not null);
+  begin insert into public.rate_proposals (organization_id, property_id, kind, payload, submitted_by) values (o_k, k2, 'offer', '{"label":"x"}', pm); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'M02 but not for another property', 'pass', ok);
+  begin insert into public.rate_proposals (organization_id, property_id, kind, payload, status, submitted_by) values (o_k, k1, 'offer', '{"label":"x"}', 'loaded', pm); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'M03 a partner cannot mark rates loaded', 'pass', ok);
+  begin insert into public.rate_proposals (organization_id, property_id, kind, document_id, submitted_by) values (o_k, k1, 'rate_sheet', dc, pm); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'M04 a contract is not a rate sheet', 'pass', ok);
+  begin update public.rate_proposals set status = 'loaded', airtable_card = '2027-V1' where id = rp1; get diagnostics n = row_count; ok := n = 0;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'M05 a partner cannot load their own rates', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.rate_proposals;
+  r := r || jsonb_build_object('t', 'M06 another partner sees none of them', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  insert into public.rate_proposals (organization_id, property_id, kind, payload, submitted_by) values (o_k, k2, 'offer', '{"label":"Stay 4, pay 3"}', ka) returning id into rp2;
+  update public.rate_proposals set status = 'withdrawn' where id = rp2; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'M07 the sender can withdraw an open proposal', 'pass', n = 1);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  update public.rate_proposals set status = 'loaded', airtable_card = '2027-V1' where id = rp1; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'M08 the house marks rates loaded, with who and when', 'pass', n = 1
+    and exists (select 1 from public.rate_proposals where id = rp1 and reviewed_by = jw and reviewed_at is not null));
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  begin select count(*) into n from public.rate_proposals; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'M09 the public cannot read rate proposals', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

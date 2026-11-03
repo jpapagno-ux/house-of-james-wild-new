@@ -20,6 +20,7 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
     { href: "/partner/portfolio", label: "My Portfolio" },
     { href: "/partner/content", label: "Content" },
     { href: "/partner/rooms", label: "Rooms & Accommodation" },
+    { href: "/partner/rates", label: "Rates & Offers" },
     { href: "/partner/requests", label: "Requests", count: count ?? 0 },
     { href: "/partner/submissions", label: "Updates & approvals" },
     { href: "/partner/contacts", label: "Contacts" },
@@ -31,7 +32,6 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
     { href: "/partner/support", label: "Support" },
   ];
   const later: RailItem[] = [
-    { href: "#", label: "Rates & Offers", soon: "soon" },
     { href: "#", label: "Media Library", soon: "soon" },
     { href: "#", label: "Partner Dispatch", soon: "soon" },
     { href: "#", label: "Founder Notes", soon: "soon" },

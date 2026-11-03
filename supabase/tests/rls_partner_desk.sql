@@ -679,5 +679,51 @@ begin
   r := r || jsonb_build_object('t', 'M09 the public cannot read rate proposals', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
+  -- ===== (N) commission comes from Airtable Partner Brands (D-31); the desk keeps a synced copy
+  perform set_config('request.jwt.claims', '{"role":"service_role"}', true);
+  jt := public.sync_commission_terms(jsonb_build_array(
+    jsonb_build_object('record_id', 'recNKAYUAAAAAAAAA', 'brand', 'Kayu', 'partner_code', 'PAR-999901', 'rate_bp', 1700, 'confirmed', true),
+    jsonb_build_object('record_id', 'recNMOREAAAAAAAAA', 'brand', 'More', 'partner_code', 'PAR-999902', 'rate_bp', 2000, 'confirmed', false),
+    jsonb_build_object('record_id', 'recNNOCODEAAAAAAA', 'brand', 'Cayuga', 'partner_code', '', 'rate_bp', 2000, 'confirmed', true),
+    jsonb_build_object('record_id', 'recNUNKNOWNAAAAAA', 'brand', 'Tswalu', 'partner_code', 'PAR-123456', 'rate_bp', 2000, 'confirmed', true)
+  ))::text;
+  r := r || jsonb_build_object('t', 'N01 first sync adopts the partner''s own term and closes the old rate yesterday', 'pass',
+    exists (select 1 from public.commission_terms where id = ct and source = 'airtable' and airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to = current_date - 1 and rate_bp = 1500)
+    and exists (select 1 from public.commission_terms where organization_id = o_k and airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null
+                and rate_bp = 1700 and status = 'confirmed' and effective_from = current_date and contract_document_id = dc));
+  r := r || jsonb_build_object('t', 'N02 a partner without a term gets one, to confirm', 'pass',
+    exists (select 1 from public.commission_terms where organization_id = o_m and source = 'airtable' and rate_bp = 2000 and status = 'to_confirm' and brand_id is null and property_id is null));
+  r := r || jsonb_build_object('t', 'N03 rows without a known Partner Code are reported, never guessed', 'pass',
+    jt like '%Cayuga: no Partner Code%' and jt like '%Tswalu: no desk partner PAR-123456%');
+  select count(*) into n from public.commission_terms;
+  jt := public.sync_commission_terms(jsonb_build_array(
+    jsonb_build_object('record_id', 'recNKAYUAAAAAAAAA', 'brand', 'Kayu', 'partner_code', 'PAR-999901', 'rate_bp', 1700, 'confirmed', true),
+    jsonb_build_object('record_id', 'recNMOREAAAAAAAAA', 'brand', 'More', 'partner_code', 'PAR-999902', 'rate_bp', 2000, 'confirmed', true)))::text;
+  r := r || jsonb_build_object('t', 'N04 a second sync adds nothing; a confirmed contract confirms the term in place', 'pass',
+    n = (select count(*) from public.commission_terms)
+    and exists (select 1 from public.commission_terms where organization_id = o_m and source = 'airtable' and status = 'confirmed' and effective_to is null));
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  begin update public.commission_terms set rate_bp = 2500 where airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null; ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'N05 the house cannot retype a synced commission on the desk', 'pass', ok);
+  update public.commission_terms set contract_document_id = null where airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null; get diagnostics n = row_count;
+  update public.commission_terms set contract_document_id = dc where airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null;
+  r := r || jsonb_build_object('t', 'N06 but can still link the signed contract', 'pass', n = 1);
+  begin insert into public.commission_terms (organization_id, rate_bp, effective_from, source, airtable_record_id) values (o_k, 1, current_date, 'airtable', 'recNFAKEAAAAAAAAA'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'N07 nobody fakes a synced row', 'pass', ok);
+  begin delete from public.commission_terms where airtable_record_id = 'recNMOREAAAAAAAAA'; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'N08 nor deletes one', 'pass', ok);
+  begin perform public.sync_commission_terms('[]'::jsonb); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'N09 only the server sync can run it', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+  jt := public.sync_commission_terms(jsonb_build_array(
+    jsonb_build_object('record_id', 'recNKAYUAAAAAAAAA', 'brand', 'Kayu', 'partner_code', 'PAR-999901', 'rate_bp', 1800, 'confirmed', true)))::text;
+  r := r || jsonb_build_object('t', 'N10 a rate typed again the same day replaces it; a brand gone from Airtable is reported', 'pass',
+    (select count(*) from public.commission_terms where airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null and rate_bp = 1800) = 1
+    and (select count(*) from public.commission_terms where airtable_record_id = 'recNKAYUAAAAAAAAA') = 2
+    and jt like '%recNMOREAAAAAAAAA%');
+
   raise exception 'PARTNER_DESK_RLS %', r;
 end $$;

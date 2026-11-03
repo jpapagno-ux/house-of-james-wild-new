@@ -163,11 +163,11 @@ export async function documents(ctx: Ctx, opts: { archived?: boolean } = {}): Pr
 export type CommissionTermRow = {
   id: string; brand_id: string | null; property_id: string | null; basis: "commission" | "net"; rate_bp: number | null;
   effective_from: string; effective_to: string | null; status: "to_confirm" | "confirmed" | "retired"; note: string | null;
-  contract_document_id: string | null; updated_at: string;
+  contract_document_id: string | null; updated_at: string; source: "desk" | "airtable"; synced_at: string | null;
 };
 export async function commissionTerms(ctx: Ctx): Promise<CommissionTermRow[]> {
   const { data } = await ctx.sb.from("commission_terms")
-    .select("id, brand_id, property_id, basis, rate_bp, effective_from, effective_to, status, note, contract_document_id, updated_at")
+    .select("id, brand_id, property_id, basis, rate_bp, effective_from, effective_to, status, note, contract_document_id, updated_at, source, synced_at")
     .eq("organization_id", ctx.org.id).order("status").order("effective_from", { ascending: false });
   return (data ?? []) as unknown as CommissionTermRow[];
 }

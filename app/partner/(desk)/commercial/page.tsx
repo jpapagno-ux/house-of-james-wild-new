@@ -2,10 +2,13 @@ import { requireDesk } from "@/lib/platform/membership";
 import { commissionTerms, documents, orgBrands, portfolio, type CommissionTermRow } from "@/lib/platform/queries";
 import { COMMISSION_KEEPER_ROLES, TERM_STATUS_LABEL, calculateCommission, formatBp, formatMoney } from "@/lib/platform/commission";
 import { PageHead, Section, Empty, StatusPill, Notice } from "@/components/platform/ui";
-import { AddTerm, LinkContract, TermStatus } from "@/components/platform/CommissionForms";
+import { LinkContract, TermStatus } from "@/components/platform/CommissionForms";
+import { today } from "@/lib/dates";
 
 // Commercial terms (D-25): what this partner pays the house, by partner, brand or property.
 // The database shows these only to house finance and the partner's own admins.
+// D-31: commission is typed in one place, Airtable Partner Brands; the desk shows the synced copy
+// read-only. The house can still link the signed contract here.
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Commercial terms · Partner Desk", robots: { index: false, follow: false } };
 
@@ -30,8 +33,10 @@ export default async function Commercial() {
   const propName = new Map(entities.map((e) => [e.id, e.name]));
   const scopeOf = (t: CommissionTermRow) =>
     t.property_id ? propName.get(t.property_id) ?? "One property" : t.brand_id ? brandName.get(t.brand_id) ?? "One brand" : `All of ${desk.org.name}`;
-  const live = terms.filter((t) => t.status !== "retired");
-  const retired = terms.filter((t) => t.status === "retired");
+  const day = today();
+  const live = terms.filter((t) => t.status !== "retired" && (!t.effective_to || t.effective_to >= day));
+  const retired = terms.filter((t) => !live.includes(t));
+  const lastSync = terms.map((t) => t.synced_at).filter(Boolean).sort().at(-1);
   // A worked example on the main term, so the arithmetic is visible (house view only).
   const main = live.find((t) => t.basis === "commission" && t.rate_bp !== null);
   const example = main ? calculateCommission({ basis: "commission", lines: [{ kind: "accommodation", cents: 1_000_000 }], rateBp: main.rate_bp! }) : null;
@@ -47,11 +52,12 @@ export default async function Commercial() {
         {t.contract_document_id && contractTitle.has(t.contract_document_id) && (
           <p className="text-[13.5px] mt-1">Signed contract: <a className="ledger-btn-ghost" href={`/api/v1/partner/documents/${t.contract_document_id}/file`}>{contractTitle.get(t.contract_document_id)}</a></p>
         )}
+        {keeper && t.source === "airtable" && <p className="text-[12.5px] ledger-muted mt-1">From Airtable, Partner Brands{t.synced_at ? `, synced ${fmtDate(t.synced_at.slice(0, 10))}` : ""}</p>}
         {keeper && t.note && <p className="text-[13.5px] ledger-muted mt-1 whitespace-pre-line">{t.note}</p>}
       </div>
       <div className="flex flex-wrap items-center gap-3 sm:justify-end">
         <StatusPill label={TERM_STATUS_LABEL[t.status]} tone={t.status === "confirmed" ? "good" : t.status === "to_confirm" ? "attention" : "neutral"} />
-        {keeper && <TermStatus id={t.id} status={t.status} />}
+        {keeper && t.source === "desk" && <TermStatus id={t.id} status={t.status} />}
         {keeper && !t.contract_document_id && t.status !== "retired" && <LinkContract id={t.id} contracts={contracts} />}
       </div>
     </li>
@@ -61,10 +67,16 @@ export default async function Commercial() {
     <>
       <PageHead eyebrow="Commercial terms" title="Commission terms"
         lead={keeper ? "What this partner pays the house. The most specific term wins: a property over its brand, a brand over the whole partner. Advisors' shares and house earnings are worked out from these at booking." : "Your commission terms with James Wild & Co, as set out in your agreement. If anything here looks wrong, tell us through Support."} />
-      {keeper && <div className="mt-8"><AddTerm brands={brands} properties={entities.map((e) => ({ id: e.id, name: e.name }))} contracts={contracts} /></div>}
+      {keeper && (
+        <div className="mt-8">
+          <Notice title="Commission is kept in Airtable">
+            Type or change a commission in the Airtable rates base, table Partner Brands (Commission %, Contract status, and this partner&rsquo;s Partner Code {desk.org.partner_code ?? ""}). The desk picks it up on the next rates sync{lastSync ? `; last synced ${fmtDate(lastSync.slice(0, 10))}` : ""}. A lodge that differs gets its own Contract Terms row on its rate card.
+          </Notice>
+        </div>
+      )}
       <Section title="In force" aside={<span className="ledger-muted">{live.length}</span>}>
         {live.length ? <ul className="divide-y divide-ink/10 border-y ledger-border">{live.map(row)}</ul>
-          : <Empty title="No terms recorded yet">{keeper ? "Record the rate from the signed agreement above." : "The house will record your terms here."}</Empty>}
+          : <Empty title="No terms recorded yet">{keeper ? "Add this partner to Airtable Partner Brands with its Partner Code." : "The house will record your terms here."}</Empty>}
       </Section>
       {keeper && example && main && (
         <Section title="How it adds up">
@@ -78,7 +90,7 @@ export default async function Commercial() {
         </Section>
       )}
       {retired.length > 0 && (
-        <Section title="Retired" aside={<span className="ledger-muted">{retired.length}</span>}>
+        <Section title="Earlier terms" aside={<span className="ledger-muted">{retired.length}</span>}>
           <ul className="divide-y divide-ink/10 border-y ledger-border">{retired.map(row)}</ul>
         </Section>
       )}

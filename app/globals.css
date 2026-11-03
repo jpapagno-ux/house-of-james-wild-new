@@ -286,6 +286,21 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-nudge { opacity: 0; animation: jw-fade .9s ease-out 1.4s forwards, jw-nudge 2.6s ease-in-out 2.4s infinite; }
 @media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; opacity: 1; } }
 
+/* The house note on the hero (James, 3 Nov 2026): the round stamp pressed straight onto the photograph
+   (no paper card), and "a note from the house" as a link to the note. The arrow draws itself once
+   (1.2s), then its tip nudges 4px toward the note every 6s, three times. Nothing moves with reduced motion. */
+.jw-note-stamp { --jw-rot: -6deg; transform: rotate(var(--jw-rot)); filter: drop-shadow(0 0 4px rgba(0,0,0,.35)); animation: jw-stamp-press .85s cubic-bezier(.2,.9,.3,1.25) .2s both; }
+.jw-note-nudge { text-shadow: 0 1px 3px rgba(0,0,0,.75); }
+.jw-note-arrow { filter: drop-shadow(0 1px 2px rgba(0,0,0,.8)); animation: jw-note-nudge 6s ease-in-out 2.4s 3; }
+.jw-note-arrow path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: jw-note-draw 1.2s ease-out .9s forwards; }
+.jw-note-arrow path + path { animation-duration: .35s; animation-delay: 2.05s; }
+@keyframes jw-note-draw { to { stroke-dashoffset: 0; } }
+@keyframes jw-note-nudge { 0%, 14%, 100% { transform: translate(0, 0); } 7% { transform: translate(-1px, 4px); } }
+@media (prefers-reduced-motion: reduce) {
+  .jw-note-stamp, .jw-note-arrow { animation: none; }
+  .jw-note-arrow path, .jw-note-arrow path + path { animation: none; stroke-dashoffset: 0; }
+}
+
 /* The ringing phone on the group-call prompts: a short ring every few seconds, and a ripple. */
 @keyframes jw-ring { 0%, 64%, 100% { transform: rotate(0); } 68% { transform: rotate(-14deg); } 72% { transform: rotate(12deg); } 76% { transform: rotate(-10deg); } 80% { transform: rotate(8deg); } 84% { transform: rotate(-4deg); } 88% { transform: rotate(0); } }
 @keyframes jw-ripple { 0%, 60% { opacity: 0; transform: scale(1); } 66% { opacity: .7; } 100% { opacity: 0; transform: scale(1.55); } }

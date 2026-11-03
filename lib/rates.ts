@@ -58,3 +58,44 @@ export function parseEngine(html: string): RatePlan[] {
 }
 
 export const nightsBetween = (a: string, b: string) => Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
+
+// ===== Availability (James, 3 Nov 2026): with live pricing, show only what can be booked.
+// A room is open for the dates when the engine prices it in at least one plan; the engine leaves
+// sold-out and closed rooms unpriced, so they never reach parseEngine's output.
+export type RoomOffer = { name: string; options: { plan: string; total: number }[]; from: number };
+export const roomKey = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+/** One entry per room, its plans cheapest first, rooms cheapest first. */
+export function offersByRoom(plans: RatePlan[]): RoomOffer[] {
+  const m = new Map<string, RoomOffer>();
+  for (const p of plans) for (const r of p.rooms) {
+    const k = roomKey(r.name);
+    const o = m.get(k) ?? { name: r.name, options: [], from: Infinity };
+    if (!o.options.some((x) => x.plan === p.plan)) o.options.push({ plan: p.plan, total: r.total });
+    o.from = Math.min(o.from, r.total);
+    m.set(k, o);
+  }
+  const out = [...m.values()];
+  out.forEach((o) => o.options.sort((a, b) => a.total - b.total));
+  return out.sort((a, b) => a.from - b.from);
+}
+
+/** Matches the page's own rooms to the engine's: exact name first, then one name inside the other. */
+export function matchOffer(name: string, offers: RoomOffer[]): RoomOffer | undefined {
+  const k = roomKey(name);
+  return offers.find((o) => roomKey(o.name) === k)
+    ?? (k.length >= 6 ? offers.find((o) => { const ok = roomKey(o.name); return ok.length >= 6 && (ok.includes(k) || k.includes(ok)); }) : undefined);
+}
+
+/** Splits the page's rooms into open and not open; engine rooms the page doesn't list come back as extra. */
+export function splitByAvailability<T extends { name: string }>(rooms: T[], plans: RatePlan[]) {
+  const offers = offersByRoom(plans);
+  const used = new Set<string>();
+  const open: { room: T; offer: RoomOffer }[] = [], closed: T[] = [];
+  for (const r of rooms) {
+    const o = matchOffer(r.name, offers.filter((x) => !used.has(x.name)));
+    if (o) { used.add(o.name); open.push({ room: r, offer: o }); } else closed.push(r);
+  }
+  open.sort((a, b) => a.offer.from - b.offer.from);
+  return { open, closed, extra: offers.filter((o) => !used.has(o.name)) };
+}

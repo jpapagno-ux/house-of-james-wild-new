@@ -2,13 +2,14 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { ArrowUpRight, CalendarDays, RefreshCcw, Users } from "lucide-react";
-import type { RatePlan } from "@/lib/rates";
+import { offersByRoom, type RatePlan } from "@/lib/rates";
 import { FL_TAX_RATE } from "@/lib/pricing";
 
 // LiveRatesBand: the live booking-engine band for a stay page. Reads
 // /api/rates (15-minute cache) for the guest's dates and party, shows each
-// rate plan's rooms with per-night and stay totals, and deep-links into the
-// engine. If the engine can't be reached it says so plainly and keeps the
+// room the engine can sell for those dates once, cheapest first, with its other
+// rate plans beneath (James, 3 Nov 2026: only what is available), and deep-links
+// into the engine. If the engine can't be reached it says so plainly and keeps the
 // engine link, so the guest is never stuck.
 
 type Result = { nights: number; adults: number; currency: string; engineUrl: string; plans: RatePlan[]; available: boolean; fetchedAt: string };
@@ -60,14 +61,18 @@ export default function LiveRatesBand({ property, name }: { property: string; na
           {state === "none" && <p className="px-5 py-8">Nothing is available for those dates and that party. Try other dates, or ask James: he often knows a way in.</p>}
           {state === "ok" && res && (
             <div className="divide-y divide-[rgba(45,42,38,0.16)]">
-              {res.plans.flatMap((p) => p.rooms.map((r) => (
-                <div key={p.plan + r.name} className="grid grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-3 px-5 py-4 items-baseline">
-                  <div><p className="ledger-display text-xl">{r.name}</p><p className="ledger-eyebrow mt-0.5">{p.plan}</p></div>
-                  <p className="text-[14px] ledger-muted">{PLAN_NOTE[p.plan] ?? ""}</p>
-                  <p className="md:text-right"><span className="ledger-display text-xl">{fmt(r.total / res.nights, res.currency)}</span> <span className="ledger-eyebrow">/ night</span></p>
-                  <p className="md:text-right text-[14px] ledger-muted">{fmt(r.total, res.currency)} for {res.nights} {res.nights === 1 ? "night" : "nights"}<span className="block text-[12.5px]">{fmt(r.total * (1 + FL_TAX_RATE), res.currency)} with 7% Florida sales tax</span></p>
-                </div>
-              )))}
+              <p className="px-5 pt-4 ledger-eyebrow">{offersByRoom(res.plans).length} {offersByRoom(res.plans).length === 1 ? "room" : "rooms"} open for your dates</p>
+              {offersByRoom(res.plans).map((o) => {
+                const best = o.options[0];
+                return (
+                  <div key={o.name} className="grid grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr_1fr] gap-3 px-5 py-4 items-baseline">
+                    <div><p className="ledger-display text-xl">{o.name}</p><p className="ledger-eyebrow mt-0.5">{best.plan}</p></div>
+                    <p className="text-[14px] ledger-muted">{PLAN_NOTE[best.plan] ?? ""}{o.options.length > 1 && <span className="block text-[13px] mt-1">{o.options.slice(1).map((x) => `${x.plan}: ${fmt(x.total / res.nights, res.currency)} a night`).join(" · ")}</span>}</p>
+                    <p className="md:text-right"><span className="ledger-display text-xl">{fmt(best.total / res.nights, res.currency)}</span> <span className="ledger-eyebrow">/ night</span></p>
+                    <p className="md:text-right text-[14px] ledger-muted">{fmt(best.total, res.currency)} for {res.nights} {res.nights === 1 ? "night" : "nights"}<span className="block text-[12.5px]">{fmt(best.total * (1 + FL_TAX_RATE), res.currency)} with 7% Florida sales tax</span></p>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>

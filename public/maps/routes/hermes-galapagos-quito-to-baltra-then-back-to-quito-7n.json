@@ -28,7 +28,7 @@
    "name": "Santa Cruz",
    "lat": -0.7432,
    "lng": -90.3134,
-   "mode": "sea",
+   "mode": "air",
    "path": [
     [
      -78.5123,
@@ -147,7 +147,7 @@
    "name": "Quito",
    "lat": -0.2201,
    "lng": -78.5123,
-   "mode": "sea",
+   "mode": "air",
    "path": [
     [
      -90.43,

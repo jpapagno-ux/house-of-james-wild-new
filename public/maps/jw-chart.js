@@ -44,7 +44,7 @@
     kayak: "w", land: "l", road: "l", rail: "l", drive: "l", transfer: "l", walk: "f", foot: "f", hike: "f",
     heli: "h", helicopter: "h" };
   var LEGEND = { a: "By air", s: "Under way", w: "By boat", l: "Overland", f: "On foot", h: "By helicopter" };
-  var LG_STYLE = { a: "dotted", s: "dashed", w: "dashed", l: "solid", f: "dotted", h: "dotted" };
+  var LG_STYLE = { a: "dashed", s: "dashed", w: "dashed", l: "solid", f: "dotted", h: "dotted" };
 
   function cssVars(v) { return Object.keys(v).map(function (k) { return k + ":" + v[k]; }).join(";"); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -196,6 +196,10 @@ function spanCap(km){return km>800?1.2:km>200?1.6:km>50?2.5:4}
 function fitPad(fm,km){return CFG.fitPad!=null?CFG.fitPad:Math.max(km<50?0.006:0.02,fm*(km<200?0.14:0.22))}
 var SEG=30;
 function legPts(a,b){var o=[];for(var j=0;j<=SEG;j++)o.push(slerp(a,b,j/SEG));return o}
+/* a flown leg (mode air or helicopter) bows into a gentle arc above the straight course, the way a flight is drawn on a
+   chart; the plane flies it. The bow is to the poleward side of the course, about a sixth of the leg's length. */
+function arcPts(a,b){var o=legPts(a,b),ml=Math.cos((a[0]+b[0])/2*Math.PI/180)||1e-6,dl=((b[1]-a[1]+540)%360)-180,dy=b[0]-a[0],dx=dl*ml,len=Math.hypot(dx,dy);if(len<1e-9)return o;
+ var nx=-dy/len,ny=dx/len;if(ny<0){nx=-nx;ny=-ny}var h=len*.17;return o.map(function(c,j){var k=Math.sin(Math.PI*j/SEG)*h;return [c[0]+ny*k,c[1]+nx*k/ml]})}
 function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
 function sampleAt(p,u){var f=clamp(u,0,1)*(p.length-1),i=Math.floor(f),r=f-i;if(i>=p.length-1)return p[p.length-1];return slerp(p[i],p[i+1],r)}
 function partU(p,u){var f=clamp(u,0,1)*(p.length-1),i=Math.floor(f),o=p.slice(0,i+1);o.push(sampleAt(p,u));return o}
@@ -206,11 +210,11 @@ function coord(c){return dms(c[0],'N','S',2)+'  '+dms(wrap(c[1]),'E','W',3)}
 function geoLine(p){return {type:'LineString',coordinates:p.map(function(c){return [c[1],c[0]]})}}
 
 var COL=CFG.col,INK=CFG.ink||'#24201A';
-var DASH={s:[8,5],w:[8,5],l:[],f:[1,6],a:[2,6],h:[2,4]};
+var DASH={s:[8,5],w:[8,5],l:[],f:[1,6],a:[5,5],h:[2,4]};
 var MODEWORD=Object.assign({s:'UNDERWAY',w:'ON THE WATER',l:'OVERLAND',f:'ON FOOT',a:'IN THE AIR',h:'BY HELICOPTER'},CFG.modeWord||{});
 var KEYS=Object.keys(J);
 KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=[];m.legA=[];
- for(var i=0;i<m.n;i++){var lp=legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
+ for(var i=0;i<m.n;i++){var am=m.wp[i+1].m,lp=(am==='a'||am==='h')?arcPts(m.wp[i].c,m.wp[i+1].c):legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
   var c=centroid(lp),md=0;lp.forEach(function(p){md=Math.max(md,gcd(c,p))});m.legR.push(clamp(215/((md+(CFG.pad||0.12))*D),320,CFG.maxR||14000));m.legA.push(md*2)}
  m.dayStart={};m.dayWp={};m.wp.forEach(function(w,i){if(m.dayStart[w.d]==null)m.dayStart[w.d]=i;m.dayWp[w.d]=m.dayWp[w.d]||[];if(!w.nf)m.dayWp[w.d].push(w.c)});m.wp.forEach(function(w,i){if(!m.dayWp[w.d].length){m.dayWp[w.d].push(w.c);if(m.wp[i+1])m.dayWp[w.d].push(m.wp[i+1].c)}});m.days=Object.keys(m.dayStart).map(Number).sort(function(a,b){return a-b});
  /* region first (map audit, 2 Nov 2026): the whole route, padded, is the opening view. No day or chase zooms in further
@@ -238,6 +242,8 @@ function intro(){S.phase='intro';S.t=0;S.k=0;S.u=0}
 function setMode(k,keepFollow,quick){S.focus=false;S.mode=k;var sm=J[k];stage.dataset.spanKm=Math.round(sm.spanKm);stage.dataset.zoomCap=(sm.capR/sm.fitR).toFixed(1);S.k=0;S.t=0;S.u=0;S.manual=false;if(!keepFollow)S.follow=null;var m=J[k],d0=m.wp[0].d;if(quick||reduce)startFly(m.dayC[d0],Math.log(m.dayR[d0]));else intro();if(!reduce)S.playing=true;buildUI();syncButtons()}
 function jump(i){var m=J[S.mode];S.k=clamp(i,0,m.n);S.u=S.k/m.n;S.t=0;S.phase='hold';S.manual=false}
 function showDay(d){var m=J[S.mode];if(m.dayStart[d]==null)return;var i=m.dayStart[d];S.follow=d;S.manual=false;S.playing=true;
+ /* reduced motion: no leg is sailed or flown; the chart and the vehicle go straight to the day's stop */
+ if(reduce){jump(i);S.playing=false;syncButtons();return}
  if(i>0){jump(i-1);S.t=HOLD*.75}else jump(0)}
 function step(rdt){
  var dt=rdt*S.speed,m=J[S.mode],tc=null,tl=0;
@@ -246,20 +252,20 @@ function step(rdt){
  if(S.phase==='intro'){var d0=m.wp[0].d,T=m.dayC[d0];if(S.playing)S.t+=dt;var kz=1-Math.exp(-rdt*2);S.lnR+=(LNG-S.lnR)*kz;
   var targetLam=wrap(T[1]-40+S.t*16);S.lam=wrap(S.lam+wrap(targetLam-S.lam)*(1-Math.exp(-rdt*1.4)));S.phi+=(T[0]*.6-S.phi)*(1-Math.exp(-rdt*1.2));
   if(S.t>=(CFG.introT||3.2)&&!S.manual){if(m.wp[0].nf)startFly(centroid(m.legs[0]),Math.log(m.legR[0]));else startFly(T,Math.log(m.dayR[d0]))}if(S.lastDay!==d0){S.lastDay=d0;if(window.onChartDay)try{window.onChartDay(S.mode,d0,false)}catch(e){}}return}
- if(S.phase==='fly'){if(S.playing)S.t+=dt;var f=S.fly,uu=clamp(S.t/f.dur,0,1),e=ease(uu),c=slerp(f.from,f.to,e);
+ if(S.phase==='fly'){if(S.playing)S.t+=dt;var f=S.fly,uu=reduce?1:clamp(S.t/f.dur,0,1),e=ease(uu),c=slerp(f.from,f.to,e);
   S.phi=c[0];S.lam=c[1];S.lnR=uu<.5?f.a+(f.mid-f.a)*ease(uu*2):f.mid+(f.b-f.mid)*ease(uu*2-1);
   if(uu>=1){if(S.focus){S.t=f.dur;return}S.phase='hold';S.k=0;S.u=0;S.t=0}return}
  if(S.phase==='hold'){if(S.playing)S.t+=dt;S.u=S.k/m.n;var d=dayOf(m,S.k),hw=m.wp[S.k];if(hw.nf){var lk=S.k<m.n?S.k:S.k-1;tc=centroid(m.legs[lk]);tl=Math.log(m.legR[lk])}else{tc=m.dayC[d];tl=Math.log(m.dayR[d])}
   var gate=S.follow!=null&&S.k<m.n&&dayOf(m,S.k+1)>S.follow&&dayOf(m,S.k)>=S.follow;if(gate&&S.playing&&Date.now()-userTs>(CFG.resume||4000)&&S.t>HOLD*2){S.follow=null;gate=false}
   if(!gate&&S.t>=(S.k>=m.n?HOLD_END:(S.k>0&&m.wp[S.k].nf?0.05:HOLD))){if(S.k<m.n){S.phase='leg';S.t=0}else{S.follow=null;intro();return}}}
- else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;
+ else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;if(reduce)S.t=dur;
   var lu=clamp(S.t/dur,0,1),le=ease(lu);S.u=(S.k+le)/m.n;S.legU=lu;var d1=dayOf(m,S.k),d2=dayOf(m,S.k+1);
   var a=Math.log(m.dayR[d1]),b=Math.log(m.dayR[d2]),lg=Math.log(m.legR[S.k]);
   var CH=CFG.chase||{},close=Math.log(Math.min(CFG.maxR||30000,m.capR,Math.max(m.fitR,CH[lmode]||CH.d||36000))),hd=headAt(m,S.u);
   var w8=clamp((close-lg)/1.6,0,1),sn=Math.sin(Math.PI*lu);
   tc=slerp(hd,centroid(m.legs[S.k]),w8*Math.pow(sn,.8)*.9);tl=close+(Math.min(lg,close)-close)*Math.pow(sn,.7);S.chase=true;
   if(lu>=1){S.k++;S.phase='hold';S.t=0}}
- if(tc&&!S.manual){var fast=S.phase==='leg',kp=1-Math.exp(-rdt*(fast?9:4.5)),kz2=1-Math.exp(-rdt*(fast?4.5:3.2));var nc=slerp([S.phi,S.lam],tc,kp);S.phi=nc[0];S.lam=nc[1];S.lnR+=(tl-S.lnR)*kz2}
+ if(tc&&!S.manual){var fast=S.phase==='leg',kp=reduce?1:1-Math.exp(-rdt*(fast?9:4.5)),kz2=reduce?1:1-Math.exp(-rdt*(fast?4.5:3.2));var nc=slerp([S.phi,S.lam],tc,kp);S.phi=nc[0];S.lam=nc[1];S.lnR+=(tl-S.lnR)*kz2}
  var cd=S.phase==='fly'?m.wp[0].d:dayOf(m,S.phase==='leg'&&S.legU>.5?S.k+1:S.k);
  S.cardT=(S.cardT||0)+rdt;S.arrT=(S.arrT||0)+rdt;if(S.phase==='hold'&&S.holdK!==S.k){S.holdK=S.k;S.arrT=0}if(S.phase!=='hold')S.holdK=-1;
  if(cd!==S.lastDay){S.lastDay=cd;S.cardT=0;S.cardD=cd;if(window.onChartDay)try{window.onChartDay(S.mode,cd,S.playing&&!S.manual&&S.follow==null)}catch(e){}}
@@ -281,7 +287,7 @@ function rose(){ctx.save();ctx.translate(VW-48,622);ctx.scale(.6,.6);ctx.strokeS
  ctx.fillStyle=CFG.roseInk||INK;ctx.beginPath();ctx.moveTo(0,-52);ctx.lineTo(4,-8);ctx.lineTo(0,0);ctx.closePath();ctx.fill();
  ctx.fillStyle=INK;ctx.font="600 17px "+FT;ctx.textAlign='center';ctx.fillText('N',0,-58);ctx.restore()}
 function label(txt,x,y,color,italic){ctx.font=italic?"italic "+FW+" 18px "+FD:"700 12.5px "+FM;ctx.lineJoin='round';ctx.lineWidth=4.5;ctx.strokeStyle=PAPER;ctx.strokeText(txt,x,y);ctx.fillStyle=color||INK;ctx.fillText(txt,x,y)}
-var PAPER=CFG.paper||'#FBF8F1';
+var PAPER=CFG.paper||'#FBF8F1',ACC=CFG.active||'#8B2525';
 function icon(mode,x,y,ang){var col=COL[mode]||INK;ctx.save();ctx.translate(x,y);
  ctx.beginPath();ctx.arc(0,0,11,0,7);ctx.fillStyle=PAPER;ctx.fill();ctx.strokeStyle=col;ctx.lineWidth=2.4;ctx.stroke();
  ctx.fillStyle=col;ctx.strokeStyle=col;
@@ -304,7 +310,9 @@ function vYacht(col,now,moving){
  ctx.fillStyle=PAPER;ctx.fillRect(-7,-3,8,6);ctx.strokeRect(-7,-3,8,6);ctx.strokeStyle=INK;hatchRect(-7,-3,8,6,1.6);
  ctx.fillStyle=INK;for(var w=0;w<4;w++)ctx.fillRect(3.4,-3+w*1.7,1.1,.9);
  ctx.beginPath();ctx.arc(9,0,1.3,0,7);ctx.stroke();ctx.beginPath();ctx.ellipse(-13.8,0,1.4,3.4,0,0,7);ctx.fillStyle=col;ctx.fill();
- ctx.fillStyle=col;ctx.fillRect(-15.5,-.5,2,1)}
+ ctx.fillStyle=col;ctx.fillRect(-15.5,-.5,2,1);
+ /* the house pennant at the masthead, streaming aft: the one crimson touch (House Standard) */
+ ctx.beginPath();ctx.moveTo(9,-.4);ctx.lineTo(1.5,-4.2);ctx.lineTo(3.6,-1.6);ctx.lineTo(1.5,1);ctx.closePath();ctx.fillStyle=ACC;ctx.fill();ctx.strokeStyle=PAPER;ctx.lineWidth=.5;ctx.stroke()}
 function vPlane(col,now,alt){
  var sh=alt*22;ctx.save();ctx.globalAlpha=.16+alt*.06;ctx.translate(sh,sh*1.1);ctx.scale(.94,.94);planeShape('rgba(36,32,26,1)','rgba(36,32,26,1)',now,true);ctx.restore();
  var sc=1+alt*.35;ctx.scale(sc,sc);planeShape(PAPER,INK,now,false,col)}
@@ -313,7 +321,7 @@ function planeShape(fill,ink,now,flat,col){ctx.lineJoin='round';ctx.fillStyle=fi
  ctx.beginPath();ctx.moveTo(15,0);ctx.bezierCurveTo(14,-2.6,10,-3,6,-3);ctx.lineTo(-17,-1.8);ctx.lineTo(-20,-.8);ctx.lineTo(-20,.8);ctx.lineTo(-17,1.8);ctx.lineTo(6,3);ctx.bezierCurveTo(10,3,14,2.6,15,0);ctx.fill();if(!flat)ctx.stroke();
  ctx.beginPath();ctx.moveTo(-15,-1.4);ctx.lineTo(-18,-8);ctx.lineTo(-20,-8);ctx.lineTo(-19.2,-1.2);ctx.moveTo(-15,1.4);ctx.lineTo(-18,8);ctx.lineTo(-20,8);ctx.lineTo(-19.2,1.2);ctx.fill();if(!flat)ctx.stroke();
  if(flat)return;
- ctx.fillStyle=col||ink;ctx.fillRect(-14,-.7,22,1.4);ctx.fillStyle=ink;for(var i=0;i<4;i++)ctx.fillRect(-1+i*2.4,-2.2,1.2,.8);
+ ctx.fillStyle=ACC;ctx.fillRect(-14,-.7,22,1.4);ctx.fillStyle=ink;for(var i=0;i<4;i++)ctx.fillRect(-1+i*2.4,-2.2,1.2,.8);
  ctx.save();ctx.translate(15.6,0);ctx.globalAlpha=.35;ctx.beginPath();ctx.ellipse(0,0,1.2,7,0,0,7);ctx.stroke();ctx.globalAlpha=1;ctx.rotate(Math.sin(now/22)*.9);ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(0,-6.5);ctx.lineTo(0,6.5);ctx.stroke();ctx.restore()}
 function vHeli(col,now,alt){var sh=alt*16;ctx.save();ctx.globalAlpha=.18;ctx.translate(sh,sh);ctx.fillStyle=INK;ctx.beginPath();ctx.ellipse(2,0,8,4.5,0,0,7);ctx.fill();ctx.fillRect(-15,-1,12,2);ctx.restore();
  ctx.lineJoin='round';ctx.fillStyle=PAPER;ctx.strokeStyle=INK;ctx.lineWidth=1.1;ctx.beginPath();ctx.moveTo(10,0);ctx.bezierCurveTo(10,-5,2,-5.5,-3,-3.5);ctx.lineTo(-4,-1);ctx.lineTo(-17,-.8);ctx.lineTo(-17,.8);ctx.lineTo(-4,1);ctx.lineTo(-3,3.5);ctx.bezierCurveTo(2,5.5,10,5,10,0);ctx.fill();ctx.stroke();
@@ -325,7 +333,7 @@ function vJeep(col,now,moving){
  ctx.lineJoin='round';ctx.fillStyle=PAPER;ctx.strokeStyle=INK;ctx.lineWidth=1.2;
  ctx.fillStyle=INK;[[-6.5,-5.2],[4.5,-5.2],[-6.5,4],[4.5,4]].forEach(function(w){ctx.fillRect(w[0],w[1],3.6,1.4)});
  ctx.fillStyle=PAPER;ctx.beginPath();ctx.moveTo(-10,-4.4);ctx.lineTo(8.5,-4.4);ctx.quadraticCurveTo(10.5,-4.4,10.5,-2.4);ctx.lineTo(10.5,2.4);ctx.quadraticCurveTo(10.5,4.4,8.5,4.4);ctx.lineTo(-10,4.4);ctx.closePath();ctx.fill();ctx.stroke();
- ctx.fillStyle=col;ctx.globalAlpha=.28;ctx.fillRect(-8,-3.4,13,6.8);ctx.globalAlpha=1;ctx.strokeRect(-8,-3.4,13,6.8);hatchRect(-7.5,-3,12,6,1.5);
+ ctx.fillStyle=col;ctx.globalAlpha=.28;ctx.fillRect(-8,-3.4,13,6.8);ctx.globalAlpha=1;ctx.strokeRect(-8,-3.4,13,6.8);hatchRect(-7.5,-3,12,6,1.5);ctx.fillStyle=ACC;ctx.fillRect(-7.5,-.6,12,1.2);
  ctx.fillStyle=INK;ctx.fillRect(5.2,-3.4,1.4,6.8);ctx.fillRect(8.6,-3,.8,6);ctx.beginPath();ctx.arc(-11.2,0,2.4,0,7);ctx.fillStyle=PAPER;ctx.fill();ctx.stroke();ctx.beginPath();ctx.arc(-11.2,0,.9,0,7);ctx.fillStyle=INK;ctx.fill();
  ctx.fillRect(6.2,-5.6,1.2,1.2);ctx.fillRect(6.2,4.4,1.2,1.2)}
 function vWalk(col,now,moving,ang){
@@ -341,7 +349,7 @@ function vDhow(col,now,moving){
  for(var r=-6;r<8;r+=3.2){ctx.beginPath();ctx.moveTo(r,-3.6);ctx.lineTo(r,3.6);ctx.lineWidth=.5;ctx.stroke()}
  ctx.beginPath();ctx.moveTo(10,1);ctx.quadraticCurveTo(0,-14,-12,-9);ctx.lineTo(-6,1.5);ctx.closePath();ctx.fillStyle=col;ctx.globalAlpha=.32;ctx.fill();ctx.globalAlpha=1;ctx.lineWidth=1;ctx.stroke();
  ctx.save();ctx.clip();ctx.strokeStyle=INK;hatchRect(-13,-14,24,16,2.4);ctx.restore();ctx.beginPath();ctx.arc(1,0,1.1,0,7);ctx.fillStyle=INK;ctx.fill()}
-function vehicle(mode,x,y,ang,alt,now,moving){var SZ=Object.assign({s:1,w:.8,a:.9,h:.9,l:.55,f:.7},CFG.vehSize||{}),R=Math.exp(S.lnR)*FIT,sc=clamp(R/(CFG.vehScale||9000),1,CFG.vehMax||1.7)*(SZ[mode]||1);
+function vehicle(mode,x,y,ang,alt,now,moving){if(!moving||reduce)now=0;var SZ=Object.assign({s:1,w:.8,a:.9,h:.9,l:.55,f:.7},CFG.vehSize||{}),R=Math.exp(S.lnR)*FIT,sc=clamp(R/(CFG.vehScale||9000),1,CFG.vehMax||1.7)*(SZ[mode]||1);
  if(R<(CFG.vehScale||9000)*1.15&&!(mode==='a'||mode==='h')){icon(mode,x,y,ang);return}
  var col=COL[mode]||INK;ctx.save();ctx.translate(x,y);ctx.scale(sc,sc);
  if(mode==='f'){vWalk(col,now,moving,ang);ctx.restore();return}
@@ -407,7 +415,7 @@ function draw(now){
  var md2=m.wp[Math.min(m.n,li+1)].m,hq=at(sampleAt(m.pts,u));
  if(hq){var hp2=at(sampleAt(m.pts,Math.min(1,u+.003))),ang=hp2?Math.atan2(hp2[1]-hq[1],hp2[0]-hq[0]):0;var vm=S.phase==='leg'?md2:(S.k>0?m.wp[Math.min(S.k,m.n)].m:md2);if(S.phase!=='leg'&&S.lastAng!=null)ang=S.lastAng;if(S.phase==='leg')S.lastAng=ang;
   var alt=S.phase==='leg'&&(md2==='a'||md2==='h')?Math.sin(Math.PI*(S.legU||0)):0;if(S.phase==='leg'){var hr=26+8*Math.sin(now/380),hg=ctx.createRadialGradient(hq[0],hq[1],0,hq[0],hq[1],hr);hg.addColorStop(0,'rgba(255,253,246,.85)');hg.addColorStop(1,'rgba(255,253,246,0)');ctx.fillStyle=hg;ctx.beginPath();ctx.arc(hq[0],hq[1],hr,0,7);ctx.fill();vehicle(vm,hq[0],hq[1],ang,alt,now,true)}
-  else if(vm==='s'||vm==='w'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* a vessel at anchor stays on the chart between legs (and parked at the start with reduced motion) */
+  else if(vm!=='f'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* between legs the vehicle rests at the active stop, facing its heading: a vessel at anchor, a plane at the strip, the 4x4 at camp (and with reduced motion it only ever rests) */
   else{var mc=COL[vm]||INK;dot(sampleAt(m.pts,u),7,PAPER,mc,3.2);dot(sampleAt(m.pts,u),2.4,mc)}}
  var vg=ctx.createRadialGradient(CX,360,Math.min(VW,720)*.42,CX,360,Math.max(VW,720)*.78);vg.addColorStop(0,'rgba(36,32,26,0)');vg.addColorStop(1,'rgba(36,32,26,.13)');ctx.fillStyle=vg;ctx.fillRect(0,0,VW,720);
  var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'&&!(COARSE&&!S.exploring)){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';

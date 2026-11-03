@@ -239,6 +239,7 @@
      "place": "Santa Cruz",
      "lat": -0.7432,
      "lng": -90.3134,
+     "mode": "air",
      "summary": "Help with check-in in Quito, then the flight to Baltra. Afternoon in the Santa Cruz highlands for giant tortoises, lava tunnels, the tortoise breeding centre and Darwin's finches. First night aboard."
     },
     {
@@ -297,6 +298,7 @@
      "place": "Quito",
      "lat": -0.2201,
      "lng": -78.5123,
+     "mode": "air",
      "summary": "Disembark and fly back to Quito, with a private transfer to Casa Gangotena. The disembarkation port is not published."
     }
    ]

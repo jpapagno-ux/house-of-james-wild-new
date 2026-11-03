@@ -12,13 +12,13 @@ type Ctx = Pick<DeskContext, "sb" | "membership" | "house"> & { org: OrgSummary 
 
 export type Entity = {
   id: string; legacy_cms_id: string; name: string; slug: string; publication_status: string; entity_type: string | null; entity_kind: string | null;
-  volume_key: VolumeKey | null; parent_property_id: string | null; provenance: string | null; last_verified_at: string | null; updated_at: string;
+  volume_key: VolumeKey | null; parent_property_id: string | null; brand_id: string | null; provenance: string | null; last_verified_at: string | null; updated_at: string;
   country: string | null; category: string | null; region: string | null; timezone: string | null;
   destination: { name: string; slug: string; parent: { name: string } | null } | null;
   volumes: VolumeKey[];
 };
 
-const ENTITY_COLS = "id, legacy_cms_id, name, slug, publication_status, entity_type, entity_kind, volume_key, parent_property_id, provenance, last_verified_at, updated_at, country, category, region, timezone, destination:destinations!destination_id(name, slug, parent:destinations!parent_id(name)), entity_volumes(volume_key, is_primary)";
+const ENTITY_COLS = "id, legacy_cms_id, name, slug, brand_id, publication_status, entity_type, entity_kind, volume_key, parent_property_id, provenance, last_verified_at, updated_at, country, category, region, timezone, destination:destinations!destination_id(name, slug, parent:destinations!parent_id(name)), entity_volumes(volume_key, is_primary)";
 
 type Raw = Omit<Entity, "volumes"> & { entity_volumes: { volume_key: VolumeKey; is_primary: boolean }[] | null };
 const shape = (r: Raw): Entity => {

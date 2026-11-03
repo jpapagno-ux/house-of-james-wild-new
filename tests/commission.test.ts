@@ -59,3 +59,16 @@ test("term form: percentages become basis points", () => {
   const net = parseTermFields({ basis: "net", effectiveFrom: "2026-01-01" });
   assert.equal(net.ok && net.value.rateBp, null);
 });
+
+import { resolveTerm, type TermLike } from "../lib/platform/commission.ts";
+test("which term applies: property > brand > partner, by date", () => {
+  const t = (id: string, o: Partial<TermLike>): TermLike => ({ id, brand_id: null, property_id: null, basis: "commission", rate_bp: 2000, effective_from: "2026-01-01", effective_to: null, status: "confirmed", ...o });
+  const terms = [t("partner", {}), t("brand", { brand_id: "B", rate_bp: 1700 }), t("prop", { property_id: "P1", rate_bp: 1800 }),
+    t("brand27", { brand_id: "B", rate_bp: 1600, effective_from: "2027-01-01" }), t("old", { brand_id: "B", rate_bp: 1000, status: "retired" })];
+  assert.equal(resolveTerm(terms, { id: "P1", brand_id: "B" }, "2026-06-01")?.term.id, "prop");
+  assert.equal(resolveTerm(terms, { id: "P2", brand_id: "B" }, "2026-06-01")?.term.id, "brand");
+  assert.equal(resolveTerm(terms, { id: "P2", brand_id: "B" }, "2027-02-01")?.term.id, "brand27");
+  assert.equal(resolveTerm(terms, { id: "P3", brand_id: null }, "2026-06-01")?.source, "partner");
+  assert.equal(resolveTerm(terms, { id: "P3", brand_id: "OTHER" }, "2026-06-01")?.term.id, "partner");
+  assert.equal(resolveTerm(terms, { id: "P3", brand_id: null }, "2025-06-01"), null);
+});

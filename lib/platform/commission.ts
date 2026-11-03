@@ -102,3 +102,16 @@ export function parseTermFields(raw: Record<string, unknown>): { ok: true; value
   const note = s("note").slice(0, 1000) || null;
   return { ok: true, value: { scope, scopeId, basis, rateBp, effectiveFrom, effectiveTo, status, note } };
 }
+
+// ===== which term applies to a property (mirrors private.commission_rate_for in the database)
+export type TermLike = { id: string; brand_id: string | null; property_id: string | null; basis: "commission" | "net"; rate_bp: number | null; effective_from: string; effective_to: string | null; status: TermStatus };
+export type TermSource = "property" | "brand" | "partner";
+/** Most specific wins (property, then brand, then the whole partner); among equals, the latest start on or before the date. */
+export function resolveTerm<T extends TermLike>(terms: T[], entity: { id: string; brand_id: string | null }, on: string): { term: T; source: TermSource } | null {
+  const rank = (t: T) => (t.property_id ? 1 : t.brand_id ? 2 : 3);
+  const fits = terms.filter((t) => t.status !== "retired" && t.effective_from <= on && (!t.effective_to || t.effective_to >= on)
+    && (t.property_id === entity.id || (!t.property_id && (t.brand_id === null || t.brand_id === entity.brand_id))));
+  fits.sort((a, b) => rank(a) - rank(b) || (a.effective_from < b.effective_from ? 1 : a.effective_from > b.effective_from ? -1 : 0));
+  const t = fits[0];
+  return t ? { term: t, source: rank(t) === 1 ? "property" : rank(t) === 2 ? "brand" : "partner" } : null;
+}

@@ -2,7 +2,7 @@
   "name": "house-of-james-wild",
   "version": "0.1.0",
   "private": true,
-  "description": "House of James Wild & Co — jameswildco.com. Home of Wild Earth Stays.",
+  "description": "House of James Wild & Co \u2014 jameswildco.com. Home of Wild Earth Stays.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

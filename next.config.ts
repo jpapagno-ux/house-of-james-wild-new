@@ -9,6 +9,11 @@ import redirects from "./redirects.json";
 // production deployment, as a second lock beside robots.txt and meta robots.
 const isProd = process.env.VERCEL_ENV === "production" && process.env.NEXT_PUBLIC_INDEXING === "on";
 
+// 3D terrain (components/maps/terrain): gated by a page allow-list in flag.ts, not by this config. There is no
+// Content-Security-Policy header on this site, so its tile hosts (tiles.openfreemap.org, s3.amazonaws.com,
+// api.maptiler.com) and MapLibre's worker need no allowance; if a CSP is added later it needs connect-src and img-src
+// for those hosts and worker-src 'self' blob:.
+
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   images: {

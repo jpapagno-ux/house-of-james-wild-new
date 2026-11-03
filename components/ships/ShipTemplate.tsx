@@ -55,7 +55,7 @@ export type ShipFrame = {
   ef?: ShipEF | null;
 };
 
-export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode }) {
+export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode; itineraryAfter?: ReactNode }) {
   const host = hostFor(ship.host.key);
   const primary = VOYAGE_PATHWAYS_ON && ship.pathway ? pathwayOf(ship.pathway.primary) : undefined;
   const secondary = primary && ship.pathway ? ship.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
@@ -79,6 +79,7 @@ export default function ShipTemplate({ ship, lead, body, after }: { ship: ShipFr
           {lead}
           {ship.film && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
           <ShipItinerary ship={ship.name} {...ship.itinerary} />
+          {itineraryAfter}
           {body}
           <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={ship.host.name} kind="vessel" /></div>
           {after}

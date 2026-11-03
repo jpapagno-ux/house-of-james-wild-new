@@ -43,6 +43,8 @@ export type ShipExtra = {
   top?: ReactNode;
   lead?: ReactNode;
   body?: ReactNode;
+  /** Directly below the itinerary and its chart (the 3D terrain pilot). */
+  itineraryAfter?: ReactNode;
   after?: ReactNode;
   jsonld?: object[];
 };
@@ -292,6 +294,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
           </section>
         )}
       </>}
+      itineraryAfter={extra.itineraryAfter}
       after={extra.after}
     />
   );

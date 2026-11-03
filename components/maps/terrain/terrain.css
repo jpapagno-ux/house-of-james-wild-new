@@ -1,0 +1,36 @@
+/* The 3D terrain pilot (preview only): the frame, the day chip, the squared graphite controls and the attribution in
+   house type. House tones only (lib/palette.ts); the route colour arrives as --jw-relief-route from lib/volumes.ts. */
+.jw-relief__frame { position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: calc(100svh - var(--jw-header-h, 80px) - 48px); min-height: 320px; border: 1px solid #DCD7D0; background: #F4F2EF; overflow: hidden; }
+@media (max-width: 639px) { .jw-relief__frame { aspect-ratio: 4 / 5; } }
+.jw-relief__map { position: absolute; inset: 0; }
+.jw-relief__wait { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #6B635A; }
+
+/* The day chip: squared graphite, top left. */
+.jw-relief__day { position: absolute; z-index: 2; top: 12px; left: 12px; display: flex; align-items: stretch; max-width: calc(100% - 72px); pointer-events: none; }
+.jw-relief__day-n { background: #2E2B28; color: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; padding: 7px 10px; border-radius: 2px 0 0 2px; white-space: nowrap; }
+.jw-relief__day-name { background: #FFFFFF; color: #2E2B28; border: 1px solid #2E2B28; border-left: 0; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 13px; font-weight: 600; padding: 5px 10px; border-radius: 0 2px 2px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jw-relief__day--solo .jw-relief__day-name { border-left: 1px solid #2E2B28; border-radius: 2px; }
+
+/* Controls under the frame: squared graphite, never pills. */
+.jw-relief__bar { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.jw-relief__bar-end { margin-left: auto; display: flex; gap: 0; }
+.jw-relief__btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; }
+.jw-relief__btn:hover { border-color: #2E2B28; }
+.jw-relief__btn:focus-visible { outline: 2px solid #2E2B28; outline-offset: 2px; }
+.jw-relief__btn--main { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+.jw-relief__btn--main:hover { background: #1A1816; }
+.jw-relief__btn[aria-pressed="true"] { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+.jw-relief__btn:disabled { opacity: 0.45; cursor: default; }
+.jw-relief__bar-end .jw-relief__btn + .jw-relief__btn { border-left: 0; }
+.jw-relief__tabs { margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.jw-relief__note { margin-top: 10px; font-size: 12.5px; color: #6B635A; }
+
+/* MapLibre's own controls in house dress: squared, graphite, small. */
+.jw-relief .maplibregl-ctrl-group, .jw-relief .maplibregl-ctrl-group:not(:empty) { border-radius: 2px; box-shadow: none; border: 1px solid #CFC8BF; background: #FFFFFF; }
+.jw-relief .maplibregl-ctrl-group button { width: 36px; height: 36px; }
+.jw-relief .maplibregl-ctrl-group button + button { border-top: 1px solid #DCD7D0; }
+.jw-relief .maplibregl-ctrl-attrib { background: rgba(255, 255, 255, 0.82); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 10px; line-height: 1.5; color: #6B635A; padding: 1px 6px; border-radius: 2px 0 0 0; }
+.jw-relief .maplibregl-ctrl-attrib a { color: #2E2B28; }
+.jw-relief .maplibregl-ctrl-attrib.maplibregl-compact { border-radius: 2px; }
+.jw-relief .maplibregl-cooperative-gesture-screen { background: rgba(26, 24, 22, 0.55); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 15px; color: #FFFFFF; }
+.jw-relief__vehicle{width:22px;height:22px;pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(26,24,22,.35))}.jw-relief__vehicle svg{display:block}

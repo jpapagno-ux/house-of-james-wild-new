@@ -18,6 +18,7 @@ declare
   n int; ok boolean; t text; pub_before int; pub_after int;
   pm uuid := gen_random_uuid(); je uuid := gen_random_uuid(); pm_mem uuid; dc uuid; dm1 uuid; dm2 uuid; ds uuid;
   b_k uuid; b_m uuid; ct uuid; rb int; src text;
+  ba1 uuid; ba2 uuid; pol uuid; pol2 uuid; dd uuid;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -465,6 +466,104 @@ begin
   perform set_config('request.jwt.claims', '{"role":"anon"}', true);
   begin select count(*) into n from public.commission_terms; ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'I14 the public cannot read commission terms', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (J) advisor tiers, currencies, banking, policies, reminders (D-26)
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.advisor_tiers where (key, share_bp) in (('tier_1', 7500), ('tier_2', 7000), ('tier_3', 5500));
+  r := r || jsonb_build_object('t', 'J01 the house sees Tier 1 75%, Tier 2 70%, Tier 3 55%', 'pass', n = 3);
+  insert into public.advisor_tier_assignments (user_id, tier, effective_from) values (tr, 'tier_1', '2026-01-01');
+  r := r || jsonb_build_object('t', 'J02 a tiered advisor earns their tier, others the 70% default', 'pass',
+    private.advisor_share_for(tr, '2026-06-01') = 7500 and private.advisor_share_for(nw, '2026-06-01') = 7000);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.advisor_tiers;
+  r := r || jsonb_build_object('t', 'J03 partners never see advisor tiers or shares', 'pass', n = 0 and private.advisor_share_for(tr) is null);
+  perform set_config('request.jwt.claims', json_build_object('sub', tr, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.advisor_tier_assignments;
+  r := r || jsonb_build_object('t', 'J04 an advisor sees their own tier', 'pass', n = 1 and private.advisor_share_for(tr, '2026-06-01') = 7500);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  update public.organizations set primary_currency = 'ZAR', other_currencies = '{USD,EUR}' where id = o_k; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'J05 a partner chooses its currencies', 'pass', n = 1);
+  begin update public.organizations set other_currencies = '{dollars}' where id = o_k; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J06 only three-letter currency codes', 'pass', ok);
+
+  insert into public.partner_bank_accounts (organization_id, currency, account_holder, bank_name, bank_country, account_number, swift_bic, submitted_by)
+  values (o_k, 'IDR', 'PT Kayu', 'Bank RLS', 'ID', '1234567890', 'BKRLIDJA', ka) returning id into ba1;
+  r := r || jsonb_build_object('t', 'J07 a partner admin submits banking details', 'pass', ba1 is not null);
+  begin
+    insert into public.partner_bank_accounts (organization_id, currency, account_holder, bank_name, bank_country, account_number, status, submitted_by)
+    values (o_k, 'IDR', 'PT Kayu', 'Bank RLS', 'ID', '999999', 'verified', ka); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J08 a partner cannot mark its own details verified', 'pass', ok);
+  update public.partner_bank_accounts set status = 'verified' where id = ba1; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'J09 a partner cannot verify or change banking details', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', kc, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_bank_accounts;
+  r := r || jsonb_build_object('t', 'J10 contributors see no banking details', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_bank_accounts;
+  r := r || jsonb_build_object('t', 'J11 house editors see no banking details', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_bank_accounts;
+  r := r || jsonb_build_object('t', 'J12 another partner sees none', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  update public.partner_bank_accounts set status = 'verified' where id = ba1;
+  insert into public.partner_bank_accounts (organization_id, currency, account_holder, bank_name, bank_country, account_number, submitted_by)
+  values (o_k, 'IDR', 'PT Kayu', 'Bank RLS 2', 'ID', '5555666677', jw) returning id into ba2;
+  update public.partner_bank_accounts set status = 'verified' where id = ba2;
+  select count(*) into n from public.partner_bank_accounts where id = ba1 and status = 'superseded';
+  r := r || jsonb_build_object('t', 'J13 the house verifies; a newer account retires the old one', 'pass', n = 1
+    and exists (select 1 from public.partner_bank_accounts where id = ba2 and verified_by = jw and verified_at is not null));
+  perform set_config('role', 'postgres', true);
+  select count(*) into n from private.audit_logs where entity_type = 'partner_bank_accounts' and (after_snapshot::text like '%1234567890%' or before_snapshot::text like '%1234567890%' or after_snapshot::text like '%5555666677%');
+  r := r || jsonb_build_object('t', 'J14 the audit trail never holds a full account number', 'pass', n = 0
+    and exists (select 1 from private.audit_logs where entity_type = 'partner_bank_accounts' and after_snapshot ->> 'account_number' = '…7890'));
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  begin select count(*) into n from public.partner_bank_accounts; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J15 the public cannot read banking details', 'pass', ok);
+
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  begin insert into public.partner_policies (organization_id, kind, body, submitted_by) values (o_k, 'cancellation', 'x', pm); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J16 a property manager cannot submit a company-wide policy', 'pass', ok);
+  insert into public.partner_policies (organization_id, property_id, kind, body, submitted_by) values (o_k, k1, 'cancellation', '60 days: full refund', pm) returning id into pol;
+  r := r || jsonb_build_object('t', 'J17 a property manager submits a policy for their property', 'pass', pol is not null);
+  update public.partner_policies set status = 'approved' where id = pol; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'J18 partners cannot approve their own policy', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  insert into public.partner_policies (organization_id, kind, body, submitted_by) values (o_k, 'refund', 'Refunds within 14 days', ka) returning id into pol2;
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  update public.partner_policies set status = 'approved' where id in (pol, pol2); get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'J19 a house editor approves policies', 'pass', n = 2
+    and (select reviewed_by from public.partner_policies where id = pol) = je);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.partner_policies;
+  r := r || jsonb_build_object('t', 'J20 another partner sees none of them', 'pass', n = 0);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  begin update public.commission_terms set contract_document_id = ds where id = ct; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J21 a term links only to a contract', 'pass', ok or ds is null);
+  update public.commission_terms set contract_document_id = dc where id = ct; get diagnostics n = row_count;
+  r := r || jsonb_build_object('t', 'J22 a term links to its signed contract', 'pass', n = 1);
+
+  perform set_config('role', 'postgres', true);
+  update public.partner_documents set expires_on = current_date + 20 where id = dc;
+  select count(*) into n from private.document_reminders_due(current_date) d where d.document_id = dc and d.stage = '30_days' and 'k.admin@rls.test' = any(d.recipients);
+  r := r || jsonb_build_object('t', 'J23 an expiring contract is due a reminder to the partner admin', 'pass', n = 1);
+  perform public.document_reminder_sent(dc, '30_days', array['k.admin@rls.test']);
+  select count(*) into n from private.document_reminders_due(current_date) d where d.document_id = dc;
+  r := r || jsonb_build_object('t', 'J24 each reminder goes once', 'pass', n = 0);
+  update public.partner_documents set expires_on = current_date where id = dc;
+  select count(*) into n from private.document_reminders_due(current_date) d where d.document_id = dc and d.stage = 'expired';
+  r := r || jsonb_build_object('t', 'J25 on expiry a final reminder is due', 'pass', n = 1);
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  begin perform public.document_reminders_due(current_date); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'J26 only the server job can list reminders', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

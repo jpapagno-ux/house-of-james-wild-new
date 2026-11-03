@@ -175,3 +175,30 @@ export async function orgBrands(ctx: Ctx): Promise<{ id: string; name: string }[
   const { data } = await ctx.sb.from("brands").select("id, name").eq("organization_id", ctx.org.id).order("name");
   return (data ?? []) as { id: string; name: string }[];
 }
+
+// ===== banking details and policies (D-26): RLS decides who gets rows
+export type BankAccountRow = {
+  id: string; currency: string; account_holder: string; bank_name: string; bank_country: string; bank_address: string | null;
+  account_number: string | null; iban: string | null; swift_bic: string | null; routing_code: string | null; intermediary_bank: string | null;
+  note: string | null; status: "pending" | "verified" | "rejected" | "superseded"; verified_at: string | null; review_note: string | null; created_at: string;
+};
+export async function bankAccounts(ctx: Ctx): Promise<BankAccountRow[]> {
+  const { data } = await ctx.sb.from("partner_bank_accounts")
+    .select("id, currency, account_holder, bank_name, bank_country, bank_address, account_number, iban, swift_bic, routing_code, intermediary_bank, note, status, verified_at, review_note, created_at")
+    .eq("organization_id", ctx.org.id).order("created_at", { ascending: false });
+  return (data ?? []) as unknown as BankAccountRow[];
+}
+export type PolicyRow = {
+  id: string; property_id: string | null; kind: "cancellation" | "refund"; body: string | null; document_id: string | null; effective_from: string | null;
+  status: string; review_note: string | null; created_at: string;
+};
+export async function policies(ctx: Ctx): Promise<PolicyRow[]> {
+  const { data } = await ctx.sb.from("partner_policies")
+    .select("id, property_id, kind, body, document_id, effective_from, status, review_note, created_at")
+    .eq("organization_id", ctx.org.id).order("created_at", { ascending: false });
+  return (data ?? []) as unknown as PolicyRow[];
+}
+export async function orgCurrencies(ctx: Ctx): Promise<{ primary: string; others: string[] }> {
+  const { data } = await ctx.sb.from("organizations").select("primary_currency, other_currencies").eq("id", ctx.org.id).maybeSingle();
+  return { primary: (data?.primary_currency as string) ?? "USD", others: (data?.other_currencies as string[]) ?? [] };
+}

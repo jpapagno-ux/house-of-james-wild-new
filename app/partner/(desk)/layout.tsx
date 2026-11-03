@@ -23,6 +23,7 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
     { href: "/partner/contacts", label: "Contacts" },
     { href: "/partner/documents", label: "Documents" },
     { href: "/partner/commercial", label: "Commercial terms" },
+    { href: "/partner/payments", label: "Banking & policies" },
     { href: "/partner/team", label: "Team" },
     { href: "/partner/account", label: "Account" },
     { href: "/partner/support", label: "Support" },

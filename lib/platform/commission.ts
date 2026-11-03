@@ -115,3 +115,14 @@ export function resolveTerm<T extends TermLike>(terms: T[], entity: { id: string
   const t = fits[0];
   return t ? { term: t, source: rank(t) === 1 ? "property" : rank(t) === 2 ? "brand" : "partner" } : null;
 }
+
+// ===== advisor tiers (D-26, James, 3 Nov 2026). The database (public.advisor_tiers) is the source;
+// these mirror it for display and tests. Without a tier an advisor is on Tier 2.
+export const ADVISOR_TIERS = [
+  { key: "tier_1", label: "Tier 1", shareBp: 7500 },
+  { key: "tier_2", label: "Tier 2", shareBp: 7000 },
+  { key: "tier_3", label: "Tier 3", shareBp: 5500 },
+] as const;
+export type AdvisorTier = (typeof ADVISOR_TIERS)[number]["key"];
+export const advisorShareForTier = (tier: AdvisorTier | null | undefined): number =>
+  (ADVISOR_TIERS.find((t) => t.key === tier) ?? ADVISOR_TIERS[1]).shareBp;

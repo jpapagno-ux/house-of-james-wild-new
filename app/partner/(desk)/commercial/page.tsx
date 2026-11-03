@@ -1,8 +1,8 @@
 import { requireDesk } from "@/lib/platform/membership";
-import { commissionTerms, orgBrands, portfolio, type CommissionTermRow } from "@/lib/platform/queries";
+import { commissionTerms, documents, orgBrands, portfolio, type CommissionTermRow } from "@/lib/platform/queries";
 import { COMMISSION_KEEPER_ROLES, TERM_STATUS_LABEL, calculateCommission, formatBp, formatMoney } from "@/lib/platform/commission";
 import { PageHead, Section, Empty, StatusPill, Notice } from "@/components/platform/ui";
-import { AddTerm, TermStatus } from "@/components/platform/CommissionForms";
+import { AddTerm, LinkContract, TermStatus } from "@/components/platform/CommissionForms";
 
 // Commercial terms (D-25): what this partner pays the house, by partner, brand or property.
 // The database shows these only to house finance and the partner's own admins.
@@ -22,7 +22,10 @@ export default async function Commercial() {
       </>
     );
   }
-  const [terms, brands, entities] = await Promise.all([commissionTerms(desk), orgBrands(desk), portfolio(desk)]);
+  const [terms, brands, entities, docs] = await Promise.all([commissionTerms(desk), orgBrands(desk), portfolio(desk), documents(desk)]);
+  // Contracts come back only to those allowed to see them (partner admins; house admins and portfolio managers).
+  const contracts = docs.filter((d) => d.kind === "contract").map((d) => ({ id: d.id, title: d.title }));
+  const contractTitle = new Map(contracts.map((c) => [c.id, c.title]));
   const brandName = new Map(brands.map((b) => [b.id, b.name]));
   const propName = new Map(entities.map((e) => [e.id, e.name]));
   const scopeOf = (t: CommissionTermRow) =>
@@ -41,11 +44,15 @@ export default async function Commercial() {
           {t.basis === "net" ? "Net rates, the house sets the sell price" : "Commission on the room, land or vessel rate after offers; never on taxes or fees"}
           {" · "}from {fmtDate(t.effective_from)}{t.effective_to && <> to {fmtDate(t.effective_to)}</>}
         </p>
+        {t.contract_document_id && contractTitle.has(t.contract_document_id) && (
+          <p className="text-[13.5px] mt-1">Signed contract: <a className="ledger-btn-ghost" href={`/api/v1/partner/documents/${t.contract_document_id}/file`}>{contractTitle.get(t.contract_document_id)}</a></p>
+        )}
         {keeper && t.note && <p className="text-[13.5px] ledger-muted mt-1 whitespace-pre-line">{t.note}</p>}
       </div>
       <div className="flex flex-wrap items-center gap-3 sm:justify-end">
         <StatusPill label={TERM_STATUS_LABEL[t.status]} tone={t.status === "confirmed" ? "good" : t.status === "to_confirm" ? "attention" : "neutral"} />
         {keeper && <TermStatus id={t.id} status={t.status} />}
+        {keeper && !t.contract_document_id && t.status !== "retired" && <LinkContract id={t.id} contracts={contracts} />}
       </div>
     </li>
   );
@@ -54,7 +61,7 @@ export default async function Commercial() {
     <>
       <PageHead eyebrow="Commercial terms" title="Commission terms"
         lead={keeper ? "What this partner pays the house. The most specific term wins: a property over its brand, a brand over the whole partner. Advisors' shares and house earnings are worked out from these at booking." : "Your commission terms with James Wild & Co, as set out in your agreement. If anything here looks wrong, tell us through Support."} />
-      {keeper && <div className="mt-8"><AddTerm brands={brands} properties={entities.map((e) => ({ id: e.id, name: e.name }))} /></div>}
+      {keeper && <div className="mt-8"><AddTerm brands={brands} properties={entities.map((e) => ({ id: e.id, name: e.name }))} contracts={contracts} /></div>}
       <Section title="In force" aside={<span className="ledger-muted">{live.length}</span>}>
         {live.length ? <ul className="divide-y divide-ink/10 border-y ledger-border">{live.map(row)}</ul>
           : <Empty title="No terms recorded yet">{keeper ? "Record the rate from the signed agreement above." : "The house will record your terms here."}</Empty>}

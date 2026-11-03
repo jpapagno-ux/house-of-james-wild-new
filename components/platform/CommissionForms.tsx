@@ -9,7 +9,7 @@ import { api } from "@/lib/platform/client";
 const input = "mt-1 w-full bg-white border ledger-border px-3 py-2 text-[15px]";
 const lab = "block text-[13px] ledger-muted";
 
-export function AddTerm({ brands, properties }: { brands: { id: string; name: string }[]; properties: { id: string; name: string }[] }) {
+export function AddTerm({ brands, properties, contracts }: { brands: { id: string; name: string }[]; properties: { id: string; name: string }[]; contracts: { id: string; title: string }[] }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [scope, setScope] = useState<"partner" | "brand" | "property">(brands.length ? "brand" : "partner");
@@ -69,6 +69,12 @@ export function AddTerm({ brands, properties }: { brands: { id: string; name: st
           <option value="confirmed">Confirmed in the signed contract</option>
         </select>
       </label>
+      <label className={`${lab} sm:col-span-2`}>Signed contract it comes from
+        <select name="contractDocumentId" defaultValue="" className={input}>
+          <option value="">{contracts.length ? "Not linked yet" : "No contract filed yet (upload it under Documents)"}</option>
+          {contracts.map((c) => <option key={c.id} value={c.id}>{c.title}</option>)}
+        </select>
+      </label>
       <label className={`${lab} sm:col-span-2`}>Note<textarea name="note" rows={2} maxLength={1000} className={input} placeholder="Clause 4.1 of the 2026 agreement" /></label>
       <div className="flex flex-wrap items-center gap-4 sm:col-span-2">
         <button disabled={busy} className="ledger-btn">{busy ? "Saving" : "Save terms"}</button>
@@ -95,5 +101,26 @@ export function TermStatus({ id, status }: { id: string; status: "to_confirm" | 
       {status !== "retired" && <button type="button" disabled={busy} onClick={() => set("retired")} className="ledger-btn-ghost">Retire</button>}
       {err && <span role="alert" className="text-[13px] text-house">{err}</span>}
     </span>
+  );
+}
+
+export function LinkContract({ id, contracts }: { id: string; contracts: { id: string; title: string }[] }) {
+  const router = useRouter();
+  const [err, setErr] = useState<string | null>(null);
+  if (!contracts.length) return null;
+  async function link(doc: string) {
+    if (!doc) return;
+    setErr(null);
+    const r = await api("PATCH", `/api/v1/partner/commission-terms/${id}`, { contractDocumentId: doc });
+    if (!r.ok) setErr(r.message); else router.refresh();
+  }
+  return (
+    <label className="text-[13px] ledger-muted flex items-center gap-2">Link contract
+      <select defaultValue="" onChange={(e) => link(e.target.value)} className="bg-white border ledger-border px-2 py-1 text-[13px]">
+        <option value="">Choose</option>
+        {contracts.map((c) => <option key={c.id} value={c.id}>{c.title}</option>)}
+      </select>
+      {err && <span role="alert" className="text-house">{err}</span>}
+    </label>
   );
 }

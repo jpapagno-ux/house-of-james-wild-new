@@ -558,8 +558,7 @@ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card,
 @keyframes jw-kenburns { from { transform: scale(1); } to { transform: scale(1.12); } }
 .jw-kenburns { animation: jw-kenburns 15.5s linear both; will-change: transform; }
 .jw-kenburns--paused { animation-play-state: paused; }
-#volume { scroll-margin-top: 112px; }
-@media (min-width: 1024px) { #volume { scroll-margin-top: 208px; } }
+/* #volume lands under the header through the site-wide scroll-padding-top (scroll audit, #207); no extra margin here. */
 @media (prefers-reduced-motion: reduce) { .jw-kenburns, .jw-entrance__cue-line::after { animation: none; } }
 /* The soft handoff from an entrance into the volume: the opening title rises into place as it scrolls in
    (scroll-driven, where supported; elsewhere it is simply there). */

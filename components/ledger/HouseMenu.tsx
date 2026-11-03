@@ -66,7 +66,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
         <nav aria-label="The volumes" className="pt-8 lg:pt-12 pb-6">
           <p className="ledger-eyebrow ledger-crimson">The six volumes</p>
           <ul className="mt-4 border-t ledger-rule">
-            {VOLS.map((v, i) => (
+            {VOLS.map((v) => (
               <li key={v.href} className="border-b ledger-border" onMouseEnter={() => setPick(v.href)} onFocus={() => setPick(v.href)}>
                 <Link href={v.href} onClick={onClose} className="group flex items-baseline gap-5 py-3.5 lg:py-4">
                   <span className="ledger-eyebrow w-7 shrink-0 border-l-[5px] pl-1.5" style={v.tone ? { borderColor: v.tone } : undefined}>{numOf(v)}</span>

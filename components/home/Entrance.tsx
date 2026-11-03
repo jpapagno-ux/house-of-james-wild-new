@@ -98,7 +98,7 @@ export function VolumeStrip() {
       </div>
       {/* Desktop: a strip of six; the one under the pointer opens. Phones: stacked. */}
       <ul className="mt-8 md:mt-10 flex flex-col lg:flex-row lg:h-[640px] gap-1.5 px-5 md:px-10 max-w-[1400px] mx-auto">
-        {doors.map((d, i) => (
+        {doors.map((d) => (
           <li key={d.key} className="group relative overflow-hidden bg-ink text-white lg:flex-1 lg:hover:flex-[3.2] lg:focus-within:flex-[3.2] transition-[flex] duration-700 ease-[cubic-bezier(.22,1,.36,1)] min-h-[260px] lg:min-h-0" style={{ ["--vol" as string]: tone(d.key) }}>
             <Link href={d.path} className="absolute inset-0 block focus:outline-none focus-visible:ring-2 focus-visible:ring-white" aria-label={`Enter ${d.name}`}>
               {d.image && <Image src={d.image} alt={d.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]" />}

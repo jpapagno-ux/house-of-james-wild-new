@@ -29,7 +29,7 @@ export default function ComingBanner({ slug }: { slug: string }) {
           {left && <p className="mt-2 font-mono text-[12px] tracking-[0.18em] uppercase text-white/85">{left}</p>}
         </div>
         <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-x-8 gap-y-3 lg:shrink-0">
-          <Link href={`/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`} className="ledger-btn ledger-btn--solid">Ask James to hold a place</Link>
+          <Link href={`/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`} className="ledger-btn ledger-btn--solid"><span className="sm:hidden">Hold a place</span><span className="hidden sm:inline">Ask James to hold a place</span></Link>
           <Link href={`/whats-coming#${c.slug}`} className="ledger-btn min-h-[44px] inline-flex items-center">All that&rsquo;s coming</Link>
         </div>
       </div>

@@ -51,7 +51,7 @@ export function Stamp({ where, when, label = "The verdict", href = "#verdict", t
     else setTimeout(checks, 900);
   };
   return (
-    <div data-house-note className="relative z-20 mb-4 flex items-center gap-2.5 md:gap-3 lg:mb-0 lg:absolute lg:right-10 lg:top-[250px] lg:flex-row-reverse">
+    <div data-house-note className="relative z-20 mb-4 flex items-center gap-1.5 md:gap-2 lg:mb-0 lg:absolute lg:right-10 lg:top-[250px] lg:flex-row-reverse">
       {/* the stamp: ink only, transparent on the photograph */}
       <span className="jw-note-stamp block shrink-0 w-[68px] h-[68px] md:w-[96px] md:h-[96px] lg:w-[120px] lg:h-[120px]" style={{ color: tint }} aria-hidden="true">
         <svg viewBox="0 0 132 132" className="block w-full h-full overflow-visible">
@@ -71,15 +71,19 @@ export function Stamp({ where, when, label = "The verdict", href = "#verdict", t
         </svg>
       </span>
       {hasNote && (
+        // The words and their hand-drawn arrow point into the stamp beside them (James, 3 Nov 2026: "check the arrows
+        // on the listings"): from 1024 the stamp sits right of the words, below it the stamp sits left, so the row
+        // reverses and the arrow is mirrored. The arrow drops out under 360px, where the row has no room for it.
         <a href={`#${target}`} onClick={go} aria-label={name} data-house-nudge
-          className="jw-note-nudge group relative flex flex-col items-start lg:items-end py-1 pr-1 lg:pl-1 lg:pr-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/80"
+          className="jw-note-nudge group relative flex flex-row-reverse lg:flex-row items-center gap-1 md:gap-1.5 py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/80"
           style={{ color: tint }}>
           <span className="text-[14px] md:text-[19px] leading-[1.5] whitespace-nowrap -rotate-[4deg] decoration-1 underline-offset-[5px] group-hover:underline group-focus-visible:underline" style={{ fontFamily: "'Homemade Apple', cursive" }}>{words}</span>
-          {/* hand-drawn arrow, curving down toward the title and the note below it */}
-          <svg viewBox="0 0 44 34" className="jw-note-arrow w-9 h-7 md:w-11 md:h-[34px] -mt-0.5 ml-3 lg:ml-0 lg:mr-6 overflow-visible" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path pathLength={1} d="M38 3 C 36 16, 24 27, 6 30" />
-            <path pathLength={1} d="M13 24.5 L 5.5 30.2 L 13.5 33" />
-          </svg>
+          <span className="hidden min-[360px]:block shrink-0 -scale-x-100 lg:scale-x-100" aria-hidden="true">
+            <svg viewBox="0 0 44 28" className="jw-note-arrow block w-8 h-5 md:w-11 md:h-7 overflow-visible" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <path pathLength={1} d="M3 21 C 12 7, 26 5, 39 15" />
+              <path pathLength={1} d="M35.6 7.8 L 39 15 L 31 14.3" />
+            </svg>
+          </span>
         </a>
       )}
     </div>

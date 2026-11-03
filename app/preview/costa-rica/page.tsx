@@ -92,7 +92,7 @@ export default function CostaRicaPreview() {
       <SiteHeader overlay />
       <main id="main">
         <HeroSlider slides={slides} label={`${D.name} in photographs`}>
-          <div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
+          <div className="h-full w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[108px] lg:pt-[200px] pb-24 md:pb-28">
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{D.region.name} · Destination</p>
             <h1 className="ledger-display text-5xl md:text-7xl mt-3">{D.name}</h1>
             <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{D.subtitle}</p>

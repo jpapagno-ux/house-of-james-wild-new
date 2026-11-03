@@ -78,7 +78,7 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
 
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-28 pb-24 md:pb-20">
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 lg:gap-16 items-end">
-          <motion.div initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
+          <motion.div data-hero-copy initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</p>
             <h1 className="ledger-h1 lg:!text-[6rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
             <p className="text-[16px] md:text-xl text-white/85 mt-4 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{sub}</p>

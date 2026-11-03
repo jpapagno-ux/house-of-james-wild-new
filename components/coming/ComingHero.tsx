@@ -37,7 +37,7 @@ export default function ComingHero({ slides, title, line, count, children }: { s
       </div>
       <div className={`absolute inset-0 ${s.heroShade}`} aria-hidden="true" />
       <div className={`${s.heroInner} relative h-full max-w-[1400px] mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-20`}>
-        <p className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}>The Ledger &middot; What&rsquo;s Coming</p>
+        <p data-hero-copy className={`font-mono text-[11px] md:text-[12px] tracking-[0.2em] md:tracking-[0.3em] uppercase ${s.heroKicker}`}>The Ledger &middot; What&rsquo;s Coming</p>
         <h1 id="coming-title" className={`${s.heroTitle} ledger-display mt-4 text-[4.1rem] leading-[0.88] sm:text-[6rem] md:text-[8.5rem] lg:text-[11rem] tracking-[-0.03em]`}>{title}</h1>
         <p className={`mt-5 md:mt-6 font-mono text-[12.5px] md:text-[14px] tracking-[0.12em] md:tracking-[0.18em] uppercase ${s.heroCount}`}>{line}</p>
         <div className={`mt-8 md:mt-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-t ${s.heroRule} pt-5`}>

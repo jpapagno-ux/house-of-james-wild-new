@@ -291,7 +291,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-note-arrow path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: jw-note-draw 1.2s ease-out .9s forwards; }
 .jw-note-arrow path + path { animation-duration: .35s; animation-delay: 2.05s; }
 @keyframes jw-note-draw { to { stroke-dashoffset: 0; } }
-@keyframes jw-note-nudge { 0%, 14%, 100% { transform: translate(0, 0); } 7% { transform: translate(-1px, 4px); } }
+@keyframes jw-note-nudge { 0%, 14%, 100% { transform: translate(0, 0); } 7% { transform: translate(4px, 1px); } }
 @media (prefers-reduced-motion: reduce) {
   .jw-note-stamp, .jw-note-arrow { animation: none; }
   .jw-note-arrow path, .jw-note-arrow path + path { animation: none; stroke-dashoffset: 0; }
@@ -492,9 +492,14 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark header:not(.bg-transparent) { background: var(--ef-surface) !important; border-color: var(--ef-line) !important; color: var(--ef-ink) !important; }
 .theme-ef-dark header .\!text-ink, .theme-ef-dark nav .\!text-ink { color: var(--ef-ink) !important; }
 /* The Exceptional Few keeps its own buttons (protected): its own accent, squared, no Ledger column cell or editorial arrow. */
-.theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost)::before, .theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost)::after { display: none !important; }
-.theme-ef-dark .ledger-btn, .theme-ef-dark a.ledger-btn[href^="/plan"], .theme-ef-dark .ledger-btn--house, .theme-ef-dark .ledger-btn--solid { height: auto !important; padding: 10px 20px !important; border: 1px solid var(--jw-action) !important; background: transparent !important; color: var(--jw-action) !important; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
-.theme-ef-dark .ledger-btn:hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:hover, .theme-ef-dark .ledger-btn--solid { background: var(--jw-action) !important; color: var(--ef-surface) !important; }
+.theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost):not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light)::before, .theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost):not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light)::after { display: none !important; }
+.theme-ef-dark .ledger-btn:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark a.ledger-btn[href^="/plan"]:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark .ledger-btn--house:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark .ledger-btn--solid:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light) { height: auto !important; padding: 10px 20px !important; border: 1px solid var(--jw-action) !important; background: transparent !important; color: var(--jw-action) !important; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+.theme-ef-dark .ledger-btn:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light):hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light):hover, .theme-ef-dark .ledger-btn--solid:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light) { background: var(--jw-action) !important; color: var(--ef-surface) !important; }
+/* "Plan with James" stays the house's own action on a designated vessel (James, 3 Nov 2026): in the site header, the
+   ship's section nav and on the night photograph it is the approved Ledger column, a white outline with the House
+   Crimson arrow cell, never the property's accent. Everything else on the page keeps The Exceptional Few buttons. */
+.theme-ef-dark :is(header, [data-ship-nav]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary), .theme-ef-dark .ledger-btn.ledger-btn--house.ledger-btn--light { --jw-action: #8B2525; background: transparent !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+.theme-ef-dark :is(header, [data-ship-nav]) .jw-plan-cell { --jw-action: #8B2525; border-color: #FFFFFF; }
 .theme-ef-dark #record-bar { background: var(--ef-surface) !important; border-color: var(--ef-line); color: var(--ef-ink); }
 .theme-ef-dark .ef-rule { border-color: var(--ef-line); }
 .theme-ef-dark .bg-ef-earth { background: var(--ef-earth); }

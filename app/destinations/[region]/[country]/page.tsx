@@ -266,7 +266,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           );
           // No photograph on file (a destination card before its hero is chosen): an ink band, never a stand-in image.
           return slides.length
-            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">{heading}</div></HeroSlider>
+            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[108px] lg:pt-[200px] pb-24 md:pb-28">{heading}</div></HeroSlider>
             : <section className="relative bg-ink text-white bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)]" aria-label={c.name}><div className="max-w-ledger mx-auto px-5 md:px-10 pt-36 md:pt-52 pb-12 md:pb-16">{heading}</div></section>;
         })()}
         <ComingTicker entries={countryBoard(comingOn(today()), c.slug)} label={`${c.name}: coming and on offer`} compact />

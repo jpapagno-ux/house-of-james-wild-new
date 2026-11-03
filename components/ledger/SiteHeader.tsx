@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
 import Wordmark from "@/components/ledger/Wordmark";
 import { JwcoSeal } from "./Marks";
@@ -131,6 +131,7 @@ function DestinationsMenu({ light }: { light: boolean }) {
 // elements below can rise into the space.
 export default function SiteHeader({ overlay = false, tuck = false }: { overlay?: boolean; tuck?: boolean }) {
   const [solid, setSolid] = useState(!overlay);
+  const headerRef = useRef<HTMLElement>(null);
   const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
   const [searching, setSearching] = useState(false);
@@ -156,9 +157,17 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
 
   useEffect(() => {
     if (!overlay) return;
+    // The header takes its solid ground (Paper, Ink words, the #DCD7D0 keyline) as soon as the hero's words would
+    // pass under it: the first [data-hero-copy] block reaching the header's own bottom edge, or the hero's end,
+    // or, on a page without either, a small scroll (hero arrows fix, 3 Nov 2026). Transparent only while the
+    // photograph alone is under the volume row.
     const onScroll = () => {
+      const bar = headerRef.current?.getBoundingClientRect().bottom ?? 0;
+      const copy = document.querySelector("[data-hero-copy]");
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 164 : window.scrollY > 40);
+      const under = copy ? copy.getBoundingClientRect().top <= bar + 12 : false;
+      const past = end ? end.getBoundingClientRect().top <= bar : false;
+      setSolid(under || past || (!copy && window.scrollY > 24));
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -196,8 +205,9 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   return (
     <>
     <header
-      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-[background-color,transform] duration-300 ${tucked && !open ? "-translate-y-full" : ""} ${
-        light ? "bg-transparent text-white" : "bg-paper/95 backdrop-blur border-b ledger-border text-ink"
+      ref={headerRef}
+      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 border-b transition-[background-color,border-color,transform] duration-300 motion-reduce:transition-none ${tucked && !open ? "-translate-y-full" : ""} ${
+        light ? "bg-transparent border-transparent text-white" : "bg-paper border-[#DCD7D0] text-ink"
       }`}
     >
       {/* The House Standard: the top edge is the volume tab (the volume's base on a volume page, a hairline elsewhere).

@@ -23,7 +23,7 @@ export const SITE = {
   },
   exploringSince: "1982",
   sailingSince: "1989",
-  designingSince: "1983",
+  designingSince: "1982",
   safariSince: "2011",
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
   // hello@ is the house address: customer enquiries, Travel Notes and all

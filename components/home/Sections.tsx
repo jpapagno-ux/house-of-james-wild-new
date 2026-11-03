@@ -134,7 +134,7 @@ export function VolumeDoors() {
                   <Image src={x.image.url} alt={x.image.alt} fill sizes="(min-width: 1280px) 220px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-700" />
                   {"stamp" in x && x.stamp && (
                     <StampPress delay={0.35 + i * 0.08} className="absolute top-2 right-2 w-20 h-20 rounded-full bg-paper/95 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
-                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1983" className="w-full h-full" />
+                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1982" className="w-full h-full" />
                     </StampPress>
                   )}
                 </div>

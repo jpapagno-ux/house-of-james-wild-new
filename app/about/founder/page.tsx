@@ -19,7 +19,7 @@ import { founder, graph, ids } from "@/lib/schema";
 const PATH = "/about/founder";
 export const metadata = buildMetadata({
   title: "James Wild, Founder of James Wild & Co: 44 Years on the Road",
-  description: "Meet James Wild (James Papagno): exploring since 1982, designing journeys since 1983, safaris since 2011. IATAN since 1990, CLIA, PADI diver. His story and field log.",
+  description: "Meet James Wild (James Papagno): exploring since 1982, designing journeys since 1982, safaris since 2011. IATAN since 1990, CLIA, PADI diver. His story and field log.",
   path: PATH,
   image: IMG.surfersBeach,
   type: "article",

@@ -63,25 +63,24 @@ export const ABOUT = {
   subtitle: "A house of travel kept like a ledger, by a founder who still leaves a few days unplanned.",
   facts: [
     ["Exploring since", "1982"],
-    ["Designing journeys since", "1983"],
+    ["First journey designed", "1982"],
     ["Safaris since", "2011"],
     ["Every entry", "Vetted in person"],
   ] as [string, string][],
   answer:
-    "James Wild & Co is a founder-led travel house that has been exploring since 1982 and designing journeys since 1983. Every stay, safari camp, family residence, small ship and overland route in its Ledger has been walked, sailed or slept in first, then filed under a permanent ID. It serves travellers directly and the advisors who plan for them.",
+    "James Wild & Co is a founder-led travel house that has been exploring and designing journeys since 1982. Every stay, safari camp, family residence, small ship and overland route in its Ledger has been walked, sailed or slept in first, then filed under a permanent ID. It serves travellers directly and the advisors who plan for them.",
   why: {
     eyebrow: "Why we're still going",
     title: "Because the Map Never Runs Out",
     paragraphs: [
       "People ask why, after forty-four years, James is still at it. The honest answer: the map never runs out. There's always another coast he hasn't surfed, another reef he hasn't dropped onto, another lodge someone swears is the one.",
-      "It began on Eleuthera in 1982 with a surfboard, a cave above Surfer's Beach and no plan worth the name. The next year friends asked him to take them back, and the first James Wild trip was designed. He's been planning other people's best weeks ever since, and still leaves a few of his own unplanned.",
+      "It began on Eleuthera in 1982 with a surfboard, a cave above Surfer's Beach and no plan worth the name. That same year friends asked him to take them back, and the first James Wild journey was designed. He's been planning other people's best weeks ever since, and still leaves a few of his own unplanned.",
       "The house runs on the same instinct. Nothing goes in the Ledger on a brochure's word. And the next corner is already on the list.",
     ],
     quote: "It's not where you go. It's what's around the corner when you get there.",
   },
   years: [
-    { year: "1982", title: "Eleuthera", line: "A surfboard, Gregory Town's one bakery, and a week in a cave above Surfer's Beach. No Wi-Fi, no schedule. The seed is planted." },
-    { year: "1983", title: "The first trip designed", line: "Friends ask James to take them surfing on Eleuthera. Charlton meets them in North Eleuthera. The house's first journey." },
+    { year: "1982", title: "Eleuthera", line: "A surfboard, Gregory Town's one bakery, a cave above Surfer's Beach. Friends ask James to take them; Charlton meets them in North Eleuthera. The house's first journey." },
     { year: "1989", title: "Under sail", line: "Sailing begins, with surfing, diving and reefs at every anchorage along the way." },
     { year: "1990", title: "On the record", line: "IATAN membership, held ever since." },
     { year: "1990s", title: "Costa Rica, early", line: "A wholesale firm working the first days of surf, dive and soft-adventure travel to Central America. Dominical, '95." },
@@ -100,7 +99,7 @@ export const ABOUT = {
   jamesNote: "Forty-four years of boots on the ground. Everything in this Ledger I have walked, sailed or slept in myself, or sent someone I trust to do it for me. That's the whole of the standard.",
   faqs: [
     { q: "Is James Wild & Co the same house as Wild Earth Stays?", a: "Yes. The same founder, the same portfolio and the same standard, continued under the James Wild & Co name, with the Ledger as its record. Wild Earth Stays lives on as a volume of the house." },
-    { q: "How long has James been designing travel?", a: "James has been exploring since 1982, when he first surfed Eleuthera in the Bahamas, and designing journeys since 1983, when friends asked him to take them back. He has designed safaris since 2011." },
+    { q: "How long has James been designing travel?", a: "James has been exploring since 1982, when he first surfed Eleuthera in the Bahamas and friends asked him to take them back: his first journey designed. He has designed safaris since 2011." },
     { q: "Who does the house serve?", a: "Both sides of the desk: travellers who want a journey designed from first-hand knowledge, and travel advisors who quote the Ledger's vetted stays, routes and rates to their own clients." },
     { q: "What is James Wild's travel philosophy?", a: "Go someplace new and leave room for what's around the corner. Plan the bones of a journey, the flights, the transfers and the stays worth booking early, and leave space for whims, open days and the side road nobody put on the itinerary." },
     { q: "Can a James Wild itinerary include unplanned days?", a: "Yes, if you want them. Ask for open days and they stay open, with a short list of ideas from James rather than a schedule." },
@@ -122,7 +121,7 @@ export const FOUNDER = {
     ["The field", "Africa since 2011, Antarctica, the Pacific, the Americas"],
   ] as [string, string][],
   answer:
-    "James Wild is the founder and Chief Expedition Officer of James Wild & Co. His name is James Papagno. He has been exploring since 1982, designing journeys since 1983, sailing since 1989 and designing safaris since 2011. He is an IATAN member since 1990, a CLIA member and a PADI-certified diver, and he vets the Ledger's stays in person.",
+    "James Wild is the founder and Chief Expedition Officer of James Wild & Co. His name is James Papagno. He has been exploring and designing journeys since 1982, sailing since 1989 and designing safaris since 2011. He is an IATAN member since 1990, a CLIA member and a PADI-certified diver, and he vets the Ledger's stays in person.",
   thesis: {
     eyebrow: "The founder's thesis",
     title: "Why Character Leads, Not the Checklist",
@@ -160,7 +159,7 @@ export const FOUNDER = {
     "The wildest places on Earth don't just exist on maps. They live in our imagination, waiting to be awakened. Travel should challenge us, transform us, and remind us of our place in something far greater.",
   jamesNote: "I don't take orders for trips. I design journeys I'd take myself, and I have, since 1982.",
   faqs: [
-    { q: "Who is James Wild?", a: "James Wild is the founder and Chief Expedition Officer of James Wild & Co; his name is James Papagno. He has explored since 1982, designed journeys since 1983 and designed safaris since 2011, and he vets the house's stays in person." },
+    { q: "Who is James Wild?", a: "James Wild is the founder and Chief Expedition Officer of James Wild & Co; his name is James Papagno. He has explored and designed journeys since 1982 and designed safaris since 2011, and he vets the house's stays in person." },
     { q: "Has James been to the places he recommends?", a: "Everything in the Ledger has been walked, sailed or slept in by James or by someone he trusts. Where James went himself, the entry carries his founder mark and the year." },
     { q: "What are James's credentials?", a: "He has been an IATAN member since 1990, is a member of CLIA and is a PADI-certified diver. The house is a registered Florida Seller of Travel (ST45327) and holds IATA number 10783883." },
     { q: "Can I plan a trip with James directly?", a: "Yes. Start at Plan with James, or take the Compass and send your reading. If you already work with a travel advisor, the house works with them." },

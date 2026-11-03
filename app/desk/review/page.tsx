@@ -37,6 +37,7 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
         actions={<>
           <Link href="/desk/review" className={`ledger-btn ${sp.show === "decided" ? "" : "ledger-btn--solid"}`}>Waiting</Link>
           <Link href="/desk/review?show=decided" className={`ledger-btn ${sp.show === "decided" ? "ledger-btn--solid" : ""}`}>Decided</Link>
+          <Link href="/desk/commission" className="ledger-btn-ghost uppercase self-center">Commission check</Link>
           <Link href="/partner" className="ledger-btn-ghost uppercase self-center">Partner Desk</Link>
         </>} />
       {rows.length === 0 && <div className="mt-8"><Empty title={sp.show === "decided" ? "Nothing decided yet" : "Nothing waiting"}>Partner updates appear here as they arrive.</Empty></div>}

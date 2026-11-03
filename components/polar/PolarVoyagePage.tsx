@@ -34,7 +34,7 @@ import { absoluteUrl } from "@/lib/seo";
 // know before booking, FAQs and TouristTrip schema. Copy is Antarctica21's facts in the house
 // voice, kept short: the long-form polar guide is polarcrossings.com.
 
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const INDICATIVE = "Day order is indicative; the expedition team sets each day by weather and ice.";
 
 export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {

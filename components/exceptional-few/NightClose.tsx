@@ -7,7 +7,7 @@ import Signature from "@/components/record/Signature";
 // This is the one surface on an Exceptional Few page that is not white.
 export default function NightClose({ a, name, copy, id = "another-night" }: { a: MediaAsset; name: string; copy: string; id?: string }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 mx-[calc(50%-50vw)] relative min-h-[88svh] overflow-hidden bg-ink text-[#F3EDE2] scroll-mt-32" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 mx-[calc(50%-50vw)] relative min-h-[88svh] overflow-hidden bg-ink text-[#F3EDE2]" aria-labelledby={`${id}-heading`}>
       <Image src={mediaUrl(a, { ratio: "3:2", width: 2560 })} alt={a.alt} fill sizes="100vw" quality={85} className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/20" />
       <div className="relative max-w-ledger mx-auto px-5 md:px-10 min-h-[88svh] flex flex-col justify-end pb-12 md:pb-16">

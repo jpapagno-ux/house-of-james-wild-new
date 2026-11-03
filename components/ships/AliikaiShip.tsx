@@ -20,7 +20,7 @@ import type { ShipExtra } from "./RecordShip";
 // voyages she sails through the year, the whole-yacht charter and James's voyage.
 // Content is the page James approved on 27 Oct 2026; headings are questions and
 // every line passes through undash() (voyages audit, 1 Nov 2026).
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const t = undash;
 
 export function aliikaiExtra(): ShipExtra {

@@ -10,7 +10,7 @@ export default function DriftFrame({ a, ratio, height = "min-h-[100svh]", motion
 }) {
   const anim = motion === "pan" ? "ef-drift-pan" : motion === "slow" ? "ef-drift ef-drift-slow" : "ef-drift";
   return (
-    <section id={id} className={`relative ${height} mx-[calc(50%-50vw)] overflow-hidden bg-ink text-[#F3EDE2] scroll-mt-32 ${className}`} aria-label={a.caption ?? a.alt}>
+    <section id={id} className={`relative ${height} mx-[calc(50%-50vw)] overflow-hidden bg-ink text-[#F3EDE2] ${className}`} aria-label={a.caption ?? a.alt}>
       <div className={`absolute inset-0 ${anim}`}>
         <Image src={mediaUrl(a, { ratio: ratio ?? "3:2", width: 2560 })} alt={a.alt} fill priority={priority} sizes="100vw" quality={85} className="object-cover" />
       </div>

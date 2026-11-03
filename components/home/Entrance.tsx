@@ -87,7 +87,7 @@ export function VolumeStrip() {
   ];
   const tone = (k: string) => VOLUMES.find((v) => v.href === `/${k}`)?.tone ?? "#8B2525";
   return (
-    <section id="volumes" className="mt-16 md:mt-24 scroll-mt-28" aria-labelledby="volumes-heading">
+    <section id="volumes" className="mt-16 md:mt-24" aria-labelledby="volumes-heading">
       <div className="max-w-[1400px] mx-auto px-5 md:px-10 flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="ledger-eyebrow ledger-crimson">The house, in six volumes</p>

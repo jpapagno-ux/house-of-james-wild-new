@@ -20,7 +20,7 @@ export default function GettingThere({ name, hubs, transfers, gateway, idBase = 
   // A hub with a recorded leg to this stay leads; the rest keep the Ledger's order (airports first).
   const ordered = [...hubs].sort((a, b) => Number(!!legFor(b)?.minutes) - Number(!!legFor(a)?.minutes) || Number(!!legFor(b)) - Number(!!legFor(a)));
   return (
-    <section id={idBase} className="mt-16 md:mt-24 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${idBase}-heading`}>
+    <section id={idBase} className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby={`${idBase}-heading`}>
       <p className="ledger-eyebrow ledger-crimson flex items-center gap-2"><Plane className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /> Getting there</p>
       <h2 id={`${idBase}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Way In to {name}</h2>
       <dl className="mt-6 border-t ledger-rule">

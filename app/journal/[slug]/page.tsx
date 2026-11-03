@@ -70,7 +70,7 @@ function Figure({ f }: { f: JournalFigure }) {
 function Film({ p }: { p: JournalPost }) {
   if (!p.film) return null;
   return (
-    <section id="film" aria-labelledby="film-h" className="journal-wide my-14 md:my-20 scroll-mt-28">
+    <section id="film" aria-labelledby="film-h" className="journal-wide my-14 md:my-20">
       <div className="flex flex-wrap items-end justify-between gap-3 border-b ledger-rule pb-3 mb-5">
         <div><p className="ledger-eyebrow ledger-crimson">The film</p><h2 id="film-h" className="ledger-display text-[1.6rem] md:text-[2rem] mt-1">{p.title.split(":")[0]}, on film</h2></div>
         {p.youtube && <a href={p.youtube} target="_blank" rel="noopener" className="text-[14px] ledger-muted underline underline-offset-4 hover:ledger-crimson">Watch on YouTube</a>}
@@ -176,7 +176,7 @@ export default async function JournalPostPage({ params }: P) {
             const figs = p.figures.filter((f) => f.after === s.id);
             return (
               <div key={s.id}>
-                <section id={s.id === "lead" ? undefined : s.id} className="journal-col journal-prose scroll-mt-28" aria-labelledby={s.title ? `${s.id}-h` : undefined}>
+                <section id={s.id === "lead" ? undefined : s.id} className="journal-col journal-prose" aria-labelledby={s.title ? `${s.id}-h` : undefined}>
                   {s.title && <h2 id={`${s.id}-h`} className="ledger-display">{s.title}</h2>}
                   <Blocks blocks={s.blocks} lead={s.id === "lead"} />
                   {p.pull?.after === s.id && !p.pull.image && (

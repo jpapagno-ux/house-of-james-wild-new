@@ -253,7 +253,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {boat && (
             <aside aria-label="A voyage" className="mt-6 border ledger-border p-5 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Voyage · {boat.name}</p><p className="mt-1 text-[15.5px]">{s.name} is a {boat.kind}, filed in the Voyages volume, not among the stays. Her ship page, cabins, routes, dates and fares, is being built; until then this is her Ledger record.</p></div>
-              <Link href="/voyages#ships-coming-h" className="ledger-btn self-start md:self-center">All voyages</Link>
+              <Link href="/voyages#finder-h" className="ledger-btn self-start md:self-center">All voyages</Link>
             </aside>
           )}
           <StayActions slug={s.slug} name={s.name} />
@@ -282,7 +282,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <div><EFSignals ef={ef} id="glance" /></div>
             </section>
           )}
-          {ef && efAerial && s.coords && <div id="place" className="scroll-mt-32"><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
+          {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
@@ -297,7 +297,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>
             {ef && efStory ? (
-              <section id="gallery" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end scroll-mt-32" aria-label="Two frames">
+              <section id="gallery" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end" aria-label="Two frames">
                 {efStory.human && <div className="md:col-span-5"><EFFrame a={efStory.human} ratio="4:5" sizes="(min-width: 768px) 40vw, 100vw" /></div>}
                 {(efStory.arrival ?? efStory.night) && <div className="md:col-span-7"><EFFrame a={(efStory.arrival ?? efStory.night)!} ratio="3:2" sizes="(min-width: 768px) 58vw, 100vw" /></div>}
               </section>
@@ -310,7 +310,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
           {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
-          {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24 scroll-mt-32"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
+          {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />

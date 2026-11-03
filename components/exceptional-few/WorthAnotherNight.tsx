@@ -9,7 +9,7 @@ import type { VolumeKey } from "@/lib/volumes";
 export default function WorthAnotherNight({ copy, volume = "stays", id = "another-night" }: { copy: string; volume?: VolumeKey; id?: string }) {
   if (!copy) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8" aria-labelledby={`${id}-heading`}>
       <div className="grid md:grid-cols-[auto_1fr] gap-8 md:gap-12 items-start">
         <div className="hidden md:block"><TimeMark volume={volume} size={140} /></div>
         <div className="max-w-3xl">

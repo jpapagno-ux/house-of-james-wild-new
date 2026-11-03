@@ -18,13 +18,23 @@ const zar = (n: number) => `R${Math.round(n).toLocaleString("en-US")}`;
 
 type Props = { name: string; partner: string; years: Record<string, Year>; rowKeys: string[]; photo: string; included: string[]; excluded: string[]; policies: string[]; hostHref?: string; offers?: OfferRules; offersUntil?: string };
 
+// The reader's dates and party per stay, kept for the visit (scroll audit, 2 Nov 2026). The
+// default dates need the reader's clock, so they arrive after mount; on Back the panel
+// remounted empty and the priced rows appeared after the browser had restored the scroll
+// position, so Back landed 75 to 190px off. A remount now starts from what was shown.
+type Kept = { q: { checkIn: string; checkOut: string; adults: number }; kids: number[]; today: string };
+const KEPT = new Map<string, Kept>();
+
 export default function RateCardPanel({ name, partner, years, rowKeys, photo, included, excluded, policies, hostHref, offers, offersUntil }: Props) {
+  const kept = KEPT.get(name);
   const [choice, setChoice] = useState({ celebrating: false, returning: false });
-  const [q, setQ] = useState({ checkIn: "", checkOut: "", adults: 2 });
-  const [kids, setKids] = useState<number[]>([]);
-  const [today, setToday] = useState("");
+  const [q, setQ] = useState(kept?.q ?? { checkIn: "", checkOut: "", adults: 2 });
+  const [kids, setKids] = useState<number[]>(kept?.kids ?? []);
+  const [today, setToday] = useState(kept?.today ?? "");
   const [pick, setPick] = useState<{ room: PricedRoom; plan: string; total: number; pricing?: CheckoutPricing } | null>(null);
+  useEffect(() => { if (q.checkIn && today) KEPT.set(name, { q, kids, today }); }, [name, q, kids, today]);
   useEffect(() => {
+    if (KEPT.has(name)) return;
     const t = new Date(); setToday(iso(t));
     // Default to the first published window at least 30 days out.
     const soon = new Date(t.getTime() + 30 * 86400000);
@@ -32,7 +42,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
     const a = y && y.validFrom > iso(soon) ? new Date(y.validFrom + "T12:00:00Z") : soon;
     const b = new Date(a.getTime() + 3 * 86400000);
     setQ({ checkIn: iso(a), checkOut: iso(b), adults: 2 });
-  }, [years]);
+  }, [years, name]);
 
   const nights = q.checkIn && q.checkOut ? nightsOf(q.checkIn, q.checkOut) : 0;
   const year = useMemo(() => {
@@ -46,7 +56,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
   const window = Object.values(years).map((y) => `${new Date(y.validFrom + "T12:00:00Z").toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" })} to ${new Date(y.validTo + "T12:00:00Z").toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}`).join(" and ");
 
   return (
-    <section id="rates" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="rates-heading">
+    <section id="rates" className="mt-16 md:mt-24" aria-labelledby="rates-heading">
       <p className="ledger-eyebrow">Rates · {partner} published rate card</p>
       <h2 id="rates-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Choose Your Stay at {name}</h2>
       <form className="mt-6 flex flex-wrap items-end gap-3 md:gap-4 px-4 md:px-5 py-3 border ledger-border bg-paper/95" onSubmit={(e) => e.preventDefault()}>

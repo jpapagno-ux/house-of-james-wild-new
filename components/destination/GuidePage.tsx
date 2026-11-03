@@ -34,7 +34,7 @@ import { graph, imageObject } from "@/lib/schema";
 // or "best time to visit Komodo". Answer first, then the months and the way in,
 // the founder's testimony, what to see, who it suits, how to see it (the
 // voyages), Raja Ampat vs Komodo, FAQs with schema, and the sources.
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 // The Raja Ampat vs Komodo table belongs to the three Indonesia guides only.
 const SEA_PAIR = new Set(["indonesia", "raja-ampat", "komodo"]);
 

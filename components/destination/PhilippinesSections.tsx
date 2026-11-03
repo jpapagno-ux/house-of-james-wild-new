@@ -44,7 +44,7 @@ export default function PhilippinesSections() {
   return (
     <>
       {/* The founder advisor */}
-      <section id="founder" className="mt-16 md:mt-24 border-t ledger-rule pt-8 grid md:grid-cols-[1fr_1.4fr] gap-8 items-center scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="founder-heading">
+      <section id="founder" className="mt-16 md:mt-24 border-t ledger-rule pt-8 grid md:grid-cols-[1fr_1.4fr] gap-8 items-center" aria-labelledby="founder-heading">
         <div>
           <p className="ledger-eyebrow ledger-crimson">Your advisor for the Philippines</p>
           <h2 id="founder-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">James Papagno, Founder</h2>
@@ -57,7 +57,7 @@ export default function PhilippinesSections() {
       </section>
 
       {/* Dive flags, one line each */}
-      <section id="diving" className="mt-16 md:mt-24 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="dive-heading">
+      <section id="diving" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="dive-heading">
         <p className="ledger-eyebrow ledger-crimson">Dive flags on the map</p>
         <h2 id="dive-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where the Reefs Are</h2>
         <p className="mt-3 text-[15.5px] ledger-muted max-w-3xl">One line each, from the Department of Tourism and UNESCO. Positions on the map are approximate; Tubbataha and the Underground River sit at their UNESCO points. Stays near good diving say so on their own pages.</p>
@@ -72,7 +72,7 @@ export default function PhilippinesSections() {
       </section>
 
       {/* Where to stay, island by island */}
-      <section id="by-island" style={{ borderTopColor: ink }} className="mt-16 md:mt-24 border-t-2 pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="island-heading">
+      <section id="by-island" style={{ borderTopColor: ink }} className="mt-16 md:mt-24 border-t-2 pt-8" aria-labelledby="island-heading">
         <p className="ledger-eyebrow" style={{ color: ink }}>Where to stay</p>
         <h2 id="island-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">The Philippines, Island by Island</h2>
         <div className="mt-8 grid lg:grid-cols-2 gap-x-12 gap-y-12">
@@ -88,7 +88,7 @@ export default function PhilippinesSections() {
 
       {/* Private islands */}
       {pick(PRIVATE_ISLANDS).length > 0 && (
-        <section id="private-islands" className="mt-16 md:mt-24 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="private-heading">
+        <section id="private-islands" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="private-heading">
           <p className="ledger-eyebrow" style={{ color: ink }}>A Place of Our Own</p>
           <h2 id="private-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Private Islands</h2>
           <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -106,7 +106,7 @@ export default function PhilippinesSections() {
       )}
 
       {/* The Palawan route */}
-      <section id="palawan-route" className="mt-16 md:mt-24 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="route-heading">
+      <section id="palawan-route" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="route-heading">
         <p className="ledger-eyebrow ledger-crimson">A route the house draws</p>
         <h2 id="route-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Palawan: El Nido, by Bangka to Coron, Then a Private Island</h2>
         <ol className="mt-8 relative border-l-2 ledger-border ml-3 space-y-10">
@@ -126,7 +126,7 @@ export default function PhilippinesSections() {
 
       {/* Gateway hotels */}
       {pick(GATEWAYS.map((g) => g.slug)).length > 0 && (
-        <section id="gateways" className="mt-16 md:mt-24 border-t ledger-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="gateway-heading">
+        <section id="gateways" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="gateway-heading">
           <p className="ledger-eyebrow" style={{ color: ink }}>First and last nights</p>
           <h2 id="gateway-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Gateway Hotels</h2>
           <ul className="mt-6 grid md:grid-cols-3 gap-x-8 gap-y-4">

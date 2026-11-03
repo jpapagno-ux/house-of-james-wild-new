@@ -19,6 +19,7 @@ declare
   pm uuid := gen_random_uuid(); je uuid := gen_random_uuid(); pm_mem uuid; dc uuid; dm1 uuid; dm2 uuid; ds uuid;
   b_k uuid; b_m uuid; ct uuid; rb int; src text;
   ba1 uuid; ba2 uuid; pol uuid; pol2 uuid; dd uuid;
+  csub uuid; crev uuid; crev2 uuid; jt text;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -564,6 +565,47 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
   begin perform public.document_reminders_due(current_date); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'J26 only the server job can list reminders', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (K) property content: partners propose, editors approve (Stage 2 §3.1)
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  insert into public.submissions (organization_id, property_id, kind, title, status) values (o_k, k1, 'content', 'Content update', 'draft') returning id into csub;
+  insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (csub, 'entity_content', k1, 'inclusions', '["All meals", "Spa treatment"]') returning id into crev;
+  insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (csub, 'entity_content', k1, 'best_months', '"April to October"') returning id into crev2;
+  r := r || jsonb_build_object('t', 'K01 a property manager proposes content for their property', 'pass', crev is not null and crev2 is not null);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (csub, 'entity_content', k1, 'inclusions', '"not a list"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K02 a list field refuses plain text', 'pass', ok);
+  begin insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (csub, 'entity_content', k1, 'tagline', '"New tagline"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K03 editorial copy (the tagline) cannot be proposed', 'pass', ok);
+  begin insert into public.entity_content (id, overview) values (k2, 'Written straight in'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K04 partners never write content directly', 'pass', ok);
+  begin
+    insert into public.submissions (organization_id, property_id, kind, title, status) values (o_k, k2, 'content', 'x', 'draft') returning id into sub2;
+    insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (sub2, 'entity_content', k2, 'overview', '"x"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K05 a property manager cannot propose for another property', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  begin
+    insert into public.submissions (organization_id, property_id, kind, title, status) values (o_m, k1, 'content', 'x', 'draft') returning id into sub2;
+    insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (sub2, 'entity_content', k1, 'overview', '"x"'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K06 another partner cannot propose for this property', 'pass', ok);
+  select count(*) into n from public.entity_content where id = k1;
+  r := r || jsonb_build_object('t', 'K07 another partner cannot read this content', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  begin perform public.decide_revision(crev, 'approve'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'K08 partners cannot approve their own content', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform public.decide_revision(crev, 'approve');
+  jt := public.decide_revision(crev2, 'edit_approve', '"April to October, the dry season"', null);
+  select count(*) into n from public.entity_content where id = k1 and inclusions = '["All meals", "Spa treatment"]' and best_months = 'April to October, the dry season';
+  r := r || jsonb_build_object('t', 'K09 a house editor approves and edits; the content is stored', 'pass', n = 1 and jt = 'approved');
+  perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.entity_content where id = k1;
+  r := r || jsonb_build_object('t', 'K10 the partner sees the approved content', 'pass', n = 1);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

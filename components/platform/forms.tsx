@@ -318,7 +318,9 @@ export function DecideRevision({ id, proposed }: { id: string; proposed: string 
       </div>
       {mode && (
         <div className="grid gap-3 border-l-2 ledger-crimson-border pl-4">
-          {mode === "edit_approve" && <label className={lab}>Value to publish<input value={value} onChange={(e) => setValue(e.target.value)} className={input} /></label>}
+          {mode === "edit_approve" && <label className={lab}>Value to publish{proposed.length > 80 || proposed.includes("\n")
+            ? <textarea rows={Math.min(14, Math.max(4, value.split("\n").length + 1))} value={value} onChange={(e) => setValue(e.target.value)} className={input} />
+            : <input value={value} onChange={(e) => setValue(e.target.value)} className={input} />}</label>}
           <label className={lab}>{mode === "edit_approve" ? "Note to the partner (optional)" : "Note to the partner"}<textarea rows={2} value={note} onChange={(e) => setNote(e.target.value)} className={input} /></label>
           <div className="flex gap-3"><button type="button" disabled={busy} onClick={() => go(mode)} className="ledger-btn ledger-btn--solid disabled:opacity-50">Confirm</button><button type="button" onClick={() => setMode("")} className="ledger-btn-ghost uppercase">Cancel</button></div>
         </div>

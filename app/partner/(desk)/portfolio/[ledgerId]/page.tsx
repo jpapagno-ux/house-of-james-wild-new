@@ -44,7 +44,10 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
       <p className="text-[13px] ledger-muted"><Link href="/partner/portfolio" className="hover:underline underline-offset-2">My Portfolio</Link> / {e.name}</p>
       <PageHead eyebrow={e.volumes.map((v) => `Vol. ${VOLUME_STYLES[v].roman} ${v === "europe" ? "The Other Europe" : VOLUME_STYLES[v].short}`).join(" · ") || "Entry"} title={e.name}
         lead={<span className="flex flex-wrap items-center gap-3"><LedgerId id={e.legacy_cms_id} /><StatusPill {...pub} /><span className="text-[14px]">Health {score}%</span></span>}
-        actions={e.publication_status === "published" && stayBySlug(e.slug) ? <Link href={`/stays/${e.slug}`} className="ledger-btn-ghost uppercase" target="_blank" rel="noopener">See it on the website ↗</Link> : undefined} />
+        actions={<>
+          <Link href={`/partner/portfolio/${e.legacy_cms_id}/content`} className="ledger-btn">Update content</Link>
+          {e.publication_status === "published" && stayBySlug(e.slug) ? <Link href={`/stays/${e.slug}`} className="ledger-btn-ghost uppercase" target="_blank" rel="noopener">See it on the website ↗</Link> : null}
+        </>} />
 
       {e.provenance === "PUBLIC_SOURCE" && (
         <div className="mt-6"><Notice tone="attention" title="Drafted from public sources">The house drafted this entry from your own website. It stays off the public site until you confirm the facts; see the open request below.</Notice></div>

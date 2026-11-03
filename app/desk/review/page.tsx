@@ -3,6 +3,11 @@ import { DecideRevision, DecideSubmission } from "@/components/platform/forms";
 import { Empty, LedgerId, PageHead, StatusPill } from "@/components/platform/ui";
 import { requireHouse } from "@/lib/platform/membership";
 import { FIELD_LABEL, REVISION_STATUS, SUBMISSION_STATUS, niceDate, showValue } from "@/lib/platform/labels";
+import { CONTENT_FIELD } from "@/lib/platform/content";
+import { siteValue } from "@/lib/platform/content-site";
+
+// Content lists read one per line; everything else as before.
+const showLines = (v: unknown) => (Array.isArray(v) ? (v.length ? v.join("\n") : "\u2014") : showValue(v));
 
 export const metadata = { title: "Review queue" };
 
@@ -51,14 +56,21 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
               {s.documents.length > 0 && <ul className="mt-2 text-[14px]">{s.documents.map((d, i) => <li key={i}><a href={d.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{d.name}</a> <span className="ledger-muted text-[12px] break-all">{d.url}</span></li>)}</ul>}
               {s.revisions.map((r) => (
                 <div key={r.id} className="mt-4 bg-white border ledger-border p-4">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2"><p className="ledger-eyebrow">{FIELD_LABEL[r.field] ?? r.field} · {r.target_table === "properties" ? "entry" : "room"}</p><StatusPill {...REVISION_STATUS[r.status]} /></div>
+                  <div className="flex flex-wrap items-baseline justify-between gap-2"><p className="ledger-eyebrow">{r.target_table === "entity_content" ? CONTENT_FIELD[r.field]?.label ?? r.field : FIELD_LABEL[r.field] ?? r.field} · {r.target_table === "properties" ? "entry" : r.target_table === "entity_content" ? "content" : "room"}</p><StatusPill {...REVISION_STATUS[r.status]} /></div>
                   <div className="mt-2 grid gap-2 sm:grid-cols-2 text-[15px]">
-                    <div><p className="text-[12px] ledger-muted">On file</p><p className="line-through decoration-ink/30">{showValue(r.current_value)}</p></div>
-                    <div><p className="text-[12px] ledger-muted">Proposed</p><p className="font-medium">{showValue(r.proposed_value)}</p></div>
+                    <div>
+                      {(() => {
+                        const site = r.target_table === "entity_content" && r.current_value == null && s.property ? siteValue(s.property.legacy_cms_id, r.field) : null;
+                        return site
+                          ? <><p className="text-[12px] ledger-muted">On the site now</p><p className="whitespace-pre-line">{showLines(site)}</p></>
+                          : <><p className="text-[12px] ledger-muted">On file</p><p className="line-through decoration-ink/30 whitespace-pre-line">{showLines(r.current_value)}</p></>;
+                      })()}
+                    </div>
+                    <div><p className="text-[12px] ledger-muted">Proposed</p><p className="font-medium whitespace-pre-line">{showLines(r.proposed_value)}</p></div>
                   </div>
                   {r.partner_note && <p className="mt-2 text-[13.5px] ledger-muted">Partner: {r.partner_note}</p>}
                   {r.jw_note && <p className="mt-1 text-[13.5px]">House: {r.jw_note}</p>}
-                  {(r.status === "proposed" || r.status === "asked") && sp.show !== "decided" && <DecideRevision id={r.id} proposed={showValue(r.proposed_value)} />}
+                  {(r.status === "proposed" || r.status === "asked") && sp.show !== "decided" && <DecideRevision id={r.id} proposed={showLines(r.proposed_value)} />}
                 </div>
               ))}
               {s.revisions.length === 0 && sp.show !== "decided" && s.status !== "changes_requested" && <DecideSubmission id={s.id} />}

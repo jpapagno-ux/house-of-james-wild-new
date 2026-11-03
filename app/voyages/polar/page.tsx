@@ -87,7 +87,7 @@ export default function PolarPage() {
         </HubSection>
 
         <RouteAtlas id="polar-atlas" kind="voyage" dest="polar" legend="sea" kicker="POLAR CROSSINGS · BY AIR AND SEA" eyebrow="The routes" title="Where Do the Voyages Go?"
-          line="Every Antarctica21 route on one chart, grouped by trip style. Pick one and the globe flies to it, then sails it day by day." routes={atlas} />
+          line="Every Antarctica21 route on one chart, grouped by trip style. Pick one and the chart flies to it, then sails it day by day." routes={atlas} />
 
         <HubSection eyebrow="The fleet · Antarctica21" title="Which Ships Sail Them?" id="fleet-h">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{fleet.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>

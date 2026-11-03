@@ -15,7 +15,7 @@ import { routeFigure } from "@/lib/content/ships/routes";
 
 /** `group` (a ship): the links under the chart list by group, so many routes stay readable. */
 /** `section` (an operator): on a busy atlas the picker first offers the operators, then their ships. */
-export type AtlasRoute = { id: string; label: string; href: string; where: string; group?: string; groupHref?: string; members?: { name: string; href: string }[]; section?: string };
+export type AtlasRoute = { id: string; label: string; href: string; where: string; /** The waters for the region-first row (defaults to `where`). */ region?: string; group?: string; groupHref?: string; members?: { name: string; href: string }[]; section?: string };
 /** Which legend the chart wears: river charts never say "By land / By sea" (voyages audit, 1 Nov 2026). */
 export type AtlasLegend = "land-sea" | "river" | "sea" | "river-sea";
 
@@ -27,17 +27,18 @@ const read = (id: string): RouteFile | null => {
 };
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker, figure, legend = "land-sea" }: { id: string; legend?: AtlasLegend; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string; /** Draw the engraved route figure, boat and all, as the fallback (voyages without a hand-drawn figure). */ figure?: boolean }) {
+export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker, figure, legend = "land-sea", globe = false }: { id: string; legend?: AtlasLegend; /** Open on the globe (the global voyages atlas only); every other atlas opens fitted to its waters (map audit, 2 Nov 2026). */ globe?: boolean; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string; /** Draw the engraved route figure, boat and all, as the fallback (voyages without a hand-drawn figure). */ figure?: boolean }) {
   const found = routes.map((r) => ({ r, file: read(r.id) })).filter((x): x is { r: AtlasRoute; file: RouteFile } => !!x.file);
   if (!found.length) return null;
   const ink = kind === "voyage" ? VOLUME_STYLES.voyages.pad : VOLUME_STYLES.overland.pad;
+  const words = kind === "voyage" ? VOLUME_STYLES.voyages.deep : VOLUME_STYLES.overland.deep; // volume words use the deep (House Standard)
   const cfg = JSON.stringify({
     routes: found.map(({ r, file }) => ({ ...file, short: r.label })),
     kind,
     destination: dest,
     kicker: kicker ?? (kind === "voyage" ? "THE VOYAGES · BY SEA" : "THE ROUTES · BY LAND"),
-    ...(chart ? { chart } : {}),
-    caption: "Positions approximate. Choose a route above the chart; the globe flies to it and plays it day by day.",
+    chart: { ...(chart ?? {}), ...(globe ? { intro: "globe" } : {}) },
+    caption: globe ? "Positions approximate. Point to or tap a region to fly there first, then choose a ship and a route; the chart sails it day by day." : "Positions approximate. Choose a route above the chart; the chart flies to it and sails it day by day.",
   }).replace(/</g, "\\u003c");
   const grouped = found.some(({ r }) => r.group);
   const list = found.map(({ r, file }) => `<li><strong>${esc(grouped && r.group ? `${r.group}: ${r.label}` : r.label)}</strong> · ${esc(r.where)} · ${esc(file.stops.map((s) => s.name.split(" — ")[0]).join(" → "))}</li>`).join("");
@@ -54,7 +55,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
       ? `<div class="jw-frame chart"><figure class="jw-fallback" style="margin: 0; background: ${VOLUME_STYLES.voyages.tint}">` +
         routeFigure({ id: `${id}-fig`, routes: found.map((x) => x.file as Parameters<typeof routeFigure>[0]["routes"][number]), chart, label: title }) +
         `<figcaption style="padding: 14px 20px 16px">${listHtml}</figcaption>`
-      : `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="${esc(title)}" style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
+      : `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="${esc(title)}" style="margin: 0; background: #F4F2EF; padding: 18px 20px">` +
         listHtml) +
     `</figure></div></div>`;
 
@@ -63,7 +64,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
   found.forEach(({ r }, i) => {
     if (!r.group) return;
     let g = groups.find((x) => x.label === r.group);
-    if (!g) { g = { label: r.group, href: r.groupHref ?? r.href, members: r.members, section: r.section, routes: [] }; groups.push(g); }
+    if (!g) { g = { label: r.group, href: r.groupHref ?? r.href, members: r.members, section: r.section, region: r.region ?? r.where, routes: [] }; groups.push(g); }
     g.routes.push({ key: `R${i}`, label: r.label });
   });
 
@@ -71,7 +72,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
     <section id={`${id}-atlas`} className="mt-12 md:mt-16" aria-labelledby={`${id}-h`}>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <p className="ledger-eyebrow" style={{ color: ink }}>{eyebrow}</p>
+          <p className="ledger-eyebrow" style={{ color: words }}>{eyebrow}</p>
           <h2 id={`${id}-h`} className="ledger-display text-[1.9rem] md:text-[2.3rem] leading-tight mt-1">{title}</h2>
           <p className="mt-2 max-w-2xl text-[15px] ledger-muted">{line}</p>
         </div>
@@ -82,12 +83,12 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
         </p>
       </div>
       <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
-      {grouped && <AtlasPicker groups={groups} ink={ink} />}
+      {grouped && <AtlasPicker groups={groups} />}
       <div className={grouped ? "mt-3 jw-atlas" : "mt-5"} dangerouslySetInnerHTML={{ __html: html }} />
       {!grouped && (
         <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[14px]">
           {found.map(({ r }) => (
-            <li key={r.id}><Link href={r.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>{r.label}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></li>
+            <li key={r.id}><Link href={r.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: words }}>{r.label}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></li>
           ))}
         </ul>
       )}

@@ -64,7 +64,7 @@ export function typeHub(t: VoyageType): HubProps {
       FARES,
     ],
     adding: "Mekong and Europe's rivers, and more Amazon ships in Peru, Ecuador and Brazil, are added as each operator's material is filed.",
-    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE VOYAGES · BY RIVER", title: "Where Do the River Ships Sail?", line: "Every river route on one chart: pick one and the globe flies to it, then sails it day by day." } };
+    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE VOYAGES · BY RIVER", title: "Where Do the River Ships Sail?", line: "Every river route on one chart: pick one and the chart flies to it, then sails it day by day." } };
   if (t === "sailing") return { ...base,
     title: "Small Sailing Ships and Phinisis", intro: T.line,
     answer: `Voyages files ${cards.length} sailing ships, all in Indonesia: ${briefs(cards)}. Aliikai has her full page, cabin by cabin with every published sailing; James sailed Raja Ampat aboard her in November 2024.${filed.length ? ` ${list(filed)} open their Ledger records until their ship pages are built.` : ""}`,
@@ -119,7 +119,7 @@ export function watersHub(w: Waters): HubProps {
         FARES,
       ],
       adding: "More Amazon ships are added as their photographs and operators' material are filed.",
-      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to the Amazon, then sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the chart flies to the Amazon, then sails it day by day." } };
   }
   if (w === "galapagos") {
     const F = galapagosFleet();
@@ -163,7 +163,7 @@ export function watersHub(w: Waters): HubProps {
   }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],
-    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE NILE · BY RIVER", title: "Every Nile Route on One Chart", line: "Pick a ship and a direction: the globe flies to Egypt and sails the river day by day." } };
+    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE NILE · BY RIVER", title: "Every Nile Route on One Chart", line: "Pick a ship and a direction: the chart flies to Egypt and sails the river day by day." } };
 }
 
 export const ALL_SHIPS_COUNT = SHIP_REGISTRY.length;

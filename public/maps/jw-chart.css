@@ -1,87 +1,86 @@
-/*! jw-chart.css · James Wild & Co (jameswildco.com) animated itinerary chart · Ledger palette
-   Fonts and colours follow tailwind.config.ts / app/globals.css: Playfair Display, EB Garamond, IBM Plex Mono;
-   paper #F3F8F7, card #E5F0EF (Tidewater, 2 Nov 2026; were parchment #F4F1ED and #EAE6DF), ink #2D2A26. --jwc-vol is the route's accent, set per map. */
-.jwc{--leaf:#FFFFFF;--paper:#F3F8F7;--paper-2:#E5F0EF;--sepia:rgba(45,42,38,.68);--jwc-ink-soft:rgba(45,42,38,.68);--rule:rgba(45,42,38,.28);--deep:#2D2A26;
- --mid:var(--jwc-vol,#1E5F73);--river:var(--jwc-vol,#1E5F73);--copper:var(--jwc-vol,#8B2525);--brass:#B5D3D0;
- --type:'IBM Plex Mono',ui-monospace,monospace;--serif:'Playfair Display',Georgia,serif;--display:'IBM Plex Mono',ui-monospace,monospace;--body:'EB Garamond',Georgia,serif;
- color:#2D2A26;font-family:var(--body)}
-.jwc button{font-family:'EB Garamond',Georgia,serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;min-height:40px;padding:0 14px;background:transparent;color:#2D2A26;border:1px solid rgba(45,42,38,.28);border-radius:0;cursor:pointer;line-height:1;transition:background .2s ease,color .2s ease}
-.jwc button:hover{border-color:var(--jwc-vol);color:var(--jwc-vol)}
-.jwc button[aria-pressed="true"],.jwc .days button.on{background:var(--jwc-vol);border-color:var(--jwc-vol);color:#F3F8F7}
-.jwc .days button{font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.08em}
-.jwc .days button{transition:none}
-.jwc .days button.passed:not(.on){background:#E5F0EF;color:#2D2A26}
-.jwc button:focus-visible{outline:2px solid var(--jwc-vol);outline-offset:2px}
-.jwc .zoom button{background:rgba(252,253,253,.94);font-family:'IBM Plex Mono',ui-monospace,monospace;text-transform:none;letter-spacing:0}
-.jwc .routes[hidden]{display:none}
-.jwc .overlay .ovk{color:var(--jwc-vol);font-size:10.5px;letter-spacing:.2em}
-.jwc .overlay h3{font-weight:400!important}
-.jwc .way{font-family:'EB Garamond',Georgia,serif!important;font-size:19px!important}
-.jwc .coord{font-weight:500!important;font-size:clamp(15px,1.6vw,18px)!important;color:var(--jwc-vol)}
-.jwc .platecap{font-family:'EB Garamond',Georgia,serif;font-size:15px}
-.jwc .ledger .p{font-family:'EB Garamond',Georgia,serif}
-.jwc .ledger .n{font-weight:500}
-.jwc-fail{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(45,42,38,.68);border:1px dashed rgba(45,42,38,.28);padding:1rem}
-.jwc .stage{position:relative;width:100%;max-width:min(100%,800px);aspect-ratio:1/1;margin:0 auto;background:var(--leaf);border:1px solid var(--sepia);outline:1px solid var(--rule);outline-offset:5px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+/*! jw-chart.css · James Wild & Co (jameswildco.com) animated itinerary chart · The House Standard (map audit, 2 Nov 2026)
+   Warm neutrals: Paper #FFFFFF, Stone Mist #F4F2EF, Warm Stone text #6B635A, Graphite #2E2B28, Ink #1A1816, keyline #CFC8BF,
+   border #DCD7D0; House Crimson #8B2525 for the active day only. The route line is the page's volume base (--jw-acc, from
+   lib/volumes.ts); chips, zoom and playback controls are squared graphite. The route's title sits above the map (.head),
+   never on it: on the map only a compact day badge (top left), zoom and full screen (top right), a small rose and one
+   scale and coordinate line (bottom left).
+   Proportions: 16:10 from 768px (height capped to the screen), 4:5 on phones. */
+.jwc{--leaf:#FFFFFF;--paper:#FFFFFF;--paper-2:#F4F2EF;--sepia:#6B635A;--jwc-ink-soft:#6B635A;--rule:#DCD7D0;--deep:#1A1816;
+ --mid:var(--jwc-vol,#2E2B28);--river:var(--jwc-vol,#2E2B28);--copper:var(--jwc-vol,#2E2B28);--brass:#CFC8BF;
+ --type:'IBM Plex Mono',ui-monospace,monospace;--serif:'Cormorant Garamond',Georgia,serif;--display:'IBM Plex Mono',ui-monospace,monospace;--body:'Manrope',ui-sans-serif,system-ui,sans-serif;
+ color:#2E2B28;font-family:var(--body);display:flex;flex-direction:column;gap:12px}
+
+/* the header above the map: eyebrow, title, the line beneath */
+.jwc .head{display:flex;flex-direction:column;gap:4px}
+.jwc .head .ovk{font-family:var(--type);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#6B635A}
+.jwc .head h3{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,30px);line-height:1.08;color:#1A1816;text-wrap:balance}
+.jwc .head p{margin:0;font-size:13.5px;line-height:1.45;color:#6B635A}
+.jwc .head p:empty{display:none}
+
+/* the map */
+.jwc .stage{position:relative;width:100%;max-width:100%;aspect-ratio:16/10;height:auto;max-height:calc(100svh - 200px);min-height:320px;margin:0;background:var(--leaf);border:1px solid #DCD7D0;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none;overflow:hidden}
+@media (max-width:767px){.jwc .stage{aspect-ratio:4/5;max-height:78svh;min-height:300px}}
 .jwc .stage.dragging{cursor:grabbing}
 .jwc .stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.jwc .hud{position:absolute;left:10px;right:64px;bottom:8px;display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--type);font-size:11.5px;color:var(--sepia);pointer-events:none;font-variant-numeric:tabular-nums}
-.jwc .hud span{background:rgba(252,253,253,.9);padding:1px 4px}
-.jwc .zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
-.jwc .zoom button{width:44px;height:44px;font-size:22px;padding:0}
-.jwc .platecap{font-family:var(--serif);font-style:italic;color:var(--sepia);font-size:16px;text-align:center}
-.jwc .routes{display:flex;flex-wrap:wrap;gap:6px}
-.jwc .readout{background:var(--leaf);border:1px solid var(--rule);padding:12px 14px;display:flex;flex-direction:column;gap:4px;font-variant-numeric:tabular-nums}
-.jwc .readout .row1{display:flex;justify-content:space-between;gap:12px;font-family:var(--type);font-size:12.5px;letter-spacing:.08em;color:var(--sepia)}
-.jwc .coord{font-family:var(--type);font-weight:700;font-size:clamp(17px,1.9vw,21px)}
-.jwc .way{font-family:var(--serif);font-size:19px;font-weight:500}
-.jwc .days{display:flex;flex-wrap:wrap;gap:6px}
-.jwc .days button{min-width:44px;padding:0 6px}
-.jwc .days button.passed{background:var(--paper-2)}
-.jwc .ctrls{display:flex;flex-wrap:wrap;gap:6px}
+.jwc .stage:focus-visible{outline:2px solid #8B2525;outline-offset:3px}
+
+/* on the map: the day badge */
+.jwc .overlay{position:absolute;left:10px;top:10px;max-width:min(320px,calc(100% - 66px));background:rgba(255,255,255,.94);border:1px solid #DCD7D0;padding:6px 10px 7px;pointer-events:none}
+.jwc .readout{display:flex;flex-direction:column;gap:2px;font-variant-numeric:tabular-nums}
+.jwc .readout .row1{display:flex;gap:10px;font-family:var(--type);font-size:10.5px;letter-spacing:.16em;color:#2E2B28}
+.jwc .readout .row1 #status{color:#6B635A}
+.jwc .readout .row1 #status:empty{display:none}
+.jwc .way{font-family:var(--serif);font-size:16px;line-height:1.2;color:#1A1816;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.jwc .coord{display:none}
+
+/* on the map: zoom and full screen, squared graphite */
+.jwc .zoom{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}
+.jwc .zoom button{width:36px;height:36px;min-height:36px;padding:0;font-family:var(--type);font-size:18px;letter-spacing:0;text-transform:none;background:rgba(255,255,255,.94);color:#2E2B28;border:1px solid #2E2B28}
+.jwc .zoom button:hover{background:#2E2B28;color:#FFFFFF}
+.jwc .zoom button[hidden]{display:none}
+
+/* on the map: one line, the scale bar and the centre */
+.jwc .hud{position:absolute;left:10px;bottom:8px;max-width:calc(100% - 96px);display:flex;align-items:center;gap:8px;white-space:nowrap;overflow:hidden;font-family:var(--type);font-size:10.5px;letter-spacing:.04em;color:#6B635A;background:rgba(255,255,255,.9);padding:3px 7px;pointer-events:none;font-variant-numeric:tabular-nums}
+.jwc .hud .bar{display:inline-block;height:6px;border:1px solid #6B635A;border-top:0;min-width:12px}
+.jwc .hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;padding:8px 12px;background:rgba(26,24,22,.82);color:#FFFFFF;font-family:var(--body);font-size:13px;opacity:0;transition:opacity .25s ease;pointer-events:none}
+.jwc .hint.on{opacity:1}
+@media (max-width:767px){.jwc .hud span#hCentre{display:none}.jwc .hint{display:none}}
+
+/* controls beneath: playback, speed and the day chips, squared graphite with a crimson underline when active */
+.jwc button{font-family:var(--body);font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;min-height:40px;padding:0 14px;background:#FFFFFF;color:#2E2B28;border:1px solid #CFC8BF;border-radius:0;cursor:pointer;line-height:1;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.jwc button:hover{border-color:#2E2B28}
+.jwc button[aria-pressed="true"]{background:#2E2B28;border-color:#2E2B28;color:#FFFFFF;box-shadow:inset 0 -3px 0 #8B2525}
+.jwc button:focus-visible{outline:2px solid #8B2525;outline-offset:2px}
+.jwc .ctrlbar{display:flex;flex-direction:column;gap:10px;border-bottom:1px solid #DCD7D0;padding-bottom:12px}
+.jwc .ctrlrow{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between}
+.jwc .ctrls{display:flex;gap:6px}
 .jwc .speed{display:flex}
 .jwc .speed button+button{margin-left:-1px}
-.jwc .ledger{list-style:none;margin:0;padding:0;border-top:1px solid var(--sepia);max-height:420px;overflow-y:auto;font-variant-numeric:tabular-nums}
-.jwc .ledger li button{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;text-align:left;border:0;border-bottom:1px solid var(--rule);padding:8px 4px;min-height:44px;font-weight:400;letter-spacing:0;background:transparent;text-transform:none}
-.jwc .ledger li button:hover{background:var(--paper-2)}
-.jwc .ledger li button.on{background:var(--paper-2)}
-.jwc .ledger .n{font-family:var(--type);font-weight:700;font-size:11.5px;min-width:58px;height:28px;padding:0 6px;border:1.5px solid;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;grid-row:1/3;align-self:center}
-.jwc .ledger li button.on .n{box-shadow:0 0 0 2px var(--paper-2),0 0 0 3.5px currentColor}
-.jwc .ledger .c{font-family:var(--type);font-size:12px;color:var(--sepia)}
-.jwc .ledger .p{font-family:var(--body);font-size:15px;grid-column:2}
-.jwc .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--type);font-size:12px;color:var(--sepia)}
+.jwc .routes{display:flex;flex-wrap:wrap;gap:6px}
+.jwc .routes[hidden]{display:none}
+.jwc .days{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding-bottom:4px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.jwc .days button{flex:none;min-width:48px;padding:0 8px;font-family:var(--type);font-weight:500;letter-spacing:.08em;transition:none;scroll-snap-align:start}
+.jwc .days button.passed:not([aria-pressed="true"]){background:#F4F2EF}
+.jwc .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--type);font-size:11px;color:#6B635A}
 .jwc .legend i{display:inline-block;width:28px;margin-right:6px;vertical-align:middle}
-.jwc .lg-s{border-top:3px dashed var(--river)}
-.jwc .lg-l{border-top:3px solid var(--copper)}
-.jwc .lg-a{border-top:2px dotted var(--jwc-ink-soft)}
-.jwc .lg-f{border-top:3px dotted var(--copper)}
-.jwc .ctrlrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:space-between}
-.jwc details.coords summary{cursor:pointer;font-family:var(--type);font-size:12px;letter-spacing:.1em;color:var(--sepia);min-height:32px;display:flex;align-items:center}
-.jwc{display:flex;flex-direction:column;gap:12px}
-.jwc .stage{width:100%;max-width:100%;aspect-ratio:auto;height:clamp(440px,82vh,900px);margin:0}
-@media (max-width:700px){.jwc .stage{height:74vh}}
-.jwc .overlay{position:absolute;left:14px;top:14px;max-width:min(420px,calc(100% - 84px));display:flex;flex-direction:column;gap:6px;background:rgba(252,253,253,.92);border:1px solid var(--rule);padding:12px 14px;pointer-events:none}
-.jwc .overlay .ovk{font-family:var(--display);font-size:12px;letter-spacing:.22em;color:var(--copper)}
-.jwc .overlay h3{margin:0;font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.4vw,30px);line-height:1.05;color:var(--deep);text-wrap:balance}
-.jwc .overlay p{margin:0;font-size:14px;color:var(--sepia);font-style:italic}
-.jwc .overlay .readout{background:transparent;border:0;border-top:1px solid var(--rule);padding:8px 0 0}
-@media (max-width:700px){.jwc .overlay p,.jwc .overlay .coord{display:none}.jwc .overlay{padding:8px 10px}.jwc .overlay h3{font-size:20px}}
-.jwc .ctrlbar{display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--rule);padding-bottom:12px}
-.jwc .ctrlbar .ctrlrow{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
-.jwc .ctrlbar .days{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding-bottom:4px}
-.jwc .ctrlbar .days button{flex:none}
-.jwc details.coords{margin-top:-4px}
-.jwc .platecap{margin:0}
-.jwc:fullscreen{background:var(--paper);padding:0;gap:0;overflow:auto}
-.jwc:fullscreen .stage{height:100vh;border:0;outline:0}
-.jwc:-webkit-full-screen .stage{height:100vh}
-.jwc .stage:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
-.jwc .stage{box-shadow:0 18px 40px -28px rgba(45,42,38,.35)}
-@media (max-width:700px){.jwc .overlay .ovk{display:none}.jwc .overlay .way{font-size:15px;line-height:1.3}.jwc .overlay{max-width:calc(100% - 76px)}.jwc .hud span:nth-child(n+3){display:none}}
 
-/* inside the page's chart / survey frame (jw-maps.css): the frame is the border */
-.jw-frame .jwc{gap:10px;padding-bottom:12px;background:#FFFFFF}
-.jw-frame .jwc .stage{border:0;outline:0;box-shadow:none;height:clamp(460px,72vh,760px)}
-.jw-frame .jwc .ctrlbar,.jw-frame .jwc details.coords,.jw-frame .jwc .platecap{padding-left:14px;padding-right:14px}
-.jw-frame .jwc .ctrlbar{border-bottom-color:rgba(45,42,38,.18)}
-@media (max-width:700px){.jw-frame .jwc .stage{height:68vh}.jwc .overlay .ovk{display:none}.jwc .overlay .way{font-size:15px!important;line-height:1.3}.jwc .overlay{max-width:calc(100% - 76px)}.jwc .hud span:nth-child(n+3){display:none}}
+/* the coordinates ledger and caption */
+.jwc details.coords{margin-top:-4px}
+.jwc details.coords summary{cursor:pointer;font-family:var(--type);font-size:11px;letter-spacing:.12em;color:#6B635A;min-height:36px;display:flex;align-items:center}
+.jwc .ledger{list-style:none;margin:0;padding:0;border-top:1px solid #CFC8BF;max-height:420px;overflow-y:auto;font-variant-numeric:tabular-nums}
+.jwc .ledger li button{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;text-align:left;border:0;border-bottom:1px solid #DCD7D0;padding:8px 4px;min-height:44px;font-weight:400;letter-spacing:0;background:transparent;text-transform:none;box-shadow:none}
+.jwc .ledger li button:hover,.jwc .ledger li button.on{background:#F4F2EF}
+.jwc .ledger .n{font-family:var(--type);font-weight:500;font-size:11px;min-width:58px;height:26px;padding:0 6px;border:1px solid;display:inline-flex;align-items:center;justify-content:center;grid-row:1/3;align-self:center}
+.jwc .ledger .c{font-family:var(--type);font-size:11.5px;color:#6B635A}
+.jwc .ledger .p{font-family:var(--serif);font-size:16px;grid-column:2;color:#1A1816}
+.jwc .platecap{margin:0;font-family:var(--serif);font-style:italic;color:#6B635A;font-size:15px;text-align:center}
+.jwc-fail{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6B635A;border:1px dashed #CFC8BF;padding:1rem}
+
+.jwc:fullscreen{background:#FFFFFF;padding:16px;gap:8px;overflow:auto}
+.jwc:fullscreen .stage{aspect-ratio:auto;height:calc(100vh - 120px);max-height:none}
+.jwc:-webkit-full-screen .stage{aspect-ratio:auto;height:calc(100vh - 120px);max-height:none}
+
+/* inside the page's frame (jw-maps.css): the frame is the border */
+.jw-frame .jwc{gap:10px;background:#FFFFFF}
+.jw-frame .jwc .stage{border:0}
+.jw-frame .jwc .ctrlbar{border-bottom:0;padding-bottom:0}

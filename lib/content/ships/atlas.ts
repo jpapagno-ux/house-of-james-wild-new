@@ -9,8 +9,8 @@ import type { AtlasRoute } from "@/components/journey/RouteAtlas";
 // ("Ecoventura fleet" for Origin, Theory and Evolve), drawing each shared route once. Route chips
 // get short labels ("Route A · 7 nights"). Aliikai's routes are her two voyage pages' files.
 const ALIIKAI: AtlasRoute[] = [
-  { id: "10-day-raja-ampat-north", label: "10 Day Raja Ampat North", href: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", where: "Raja Ampat", group: "Aliikai", groupHref: "/voyages/ships/aliikai" },
-  { id: "5-day-komodo-island", label: "5 Day Komodo Island", href: "/voyages/komodo/aliikai-5-day-komodo-island", where: "Komodo", group: "Aliikai", groupHref: "/voyages/ships/aliikai" },
+  { id: "10-day-raja-ampat-north", label: "10 Day Raja Ampat North", href: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", where: "Raja Ampat", region: "Indonesia", group: "Aliikai", groupHref: "/voyages/ships/aliikai" },
+  { id: "5-day-komodo-island", label: "5 Day Komodo Island", href: "/voyages/komodo/aliikai-5-day-komodo-island", where: "Komodo", region: "Indonesia", group: "Aliikai", groupHref: "/voyages/ships/aliikai" },
 ];
 
 /** "Route A · 7 nights", "High water · 3 nights", "Luxor to Aswan · 4 nights". */

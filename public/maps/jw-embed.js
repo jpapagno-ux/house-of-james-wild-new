@@ -200,7 +200,8 @@
     var acc = (getComputedStyle(root).getPropertyValue("--jw-acc") || "").trim();
     var route = o.route, kind = o.kind || (route && route.type === "overland" ? "overland" : "voyage");
     var pal = {};
-    if (acc) { pal.vol = acc; pal.roseInk = acc; pal.col = { a: acc, s: acc, w: acc, l: acc, f: acc, h: acc }; }
+    /* the route line wears the page's volume base (--jw-acc); the rose, chips and frame stay Graphite (House Standard, map audit 2 Nov 2026) */
+    if (acc) { pal.col = { a: acc, s: acc, w: acc, l: acc, f: acc, h: acc }; }
     chartLib().then(function () {
       return window.JWChart.mount(host, { routes: o.routes || [route], dest: o.destination, kind: kind, kicker: o.kicker, caption: o.caption, alt: o.alt, palette: pal, chart: o.chart });
     }).then(function () {

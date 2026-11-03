@@ -200,7 +200,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
+      <div className="max-w-[1400px] mx-auto px-4 min-[380px]:px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3">
           <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
@@ -222,8 +222,9 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             with the house line beneath. Cream over a film. On phones the lockup
             is centred between Menu and Plan, the seal at 40, the wordmark at
             1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
-        <Link href="/" className="flex items-center gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
-          <span className={`block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
+        <Link href="/" className="flex items-center gap-2 min-[380px]:gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
+          <span className={`hidden min-[380px]:block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
+          <span className={`block min-[380px]:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={34} tone={light ? "light" : "ink"} /></span>
           <span className={`hidden lg:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
           {/* phone lockup */}
           <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
@@ -240,12 +241,15 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
             <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
           </ul>
-          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026). */}
+          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
+              Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,
+              aria-label "Plan with James"); the full column returns from 640px (header fix, 2 Nov 2026). */}
+          <Link href={PLAN_CTA.href} aria-label={PLAN_CTA.label} className={`jw-plan-cell sm:hidden ${light ? "jw-plan-cell--light" : ""}`} />
           <Link
             href={PLAN_CTA.href}
-            className={`ledger-btn ledger-btn--house ledger-btn--compact ${light ? "ledger-btn--light" : ""}`}
+            className={`ledger-btn ledger-btn--house ledger-btn--compact !hidden sm:!inline-flex ${light ? "ledger-btn--light" : ""}`}
           >
-            <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>
+            {PLAN_CTA.label}
           </Link>
         </div>
       </div>

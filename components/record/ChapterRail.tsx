@@ -19,12 +19,13 @@ export default function ChapterRail({ items }: { items: [string, string][] }) {
       for (const el of els) if (el.getBoundingClientRect().top <= line) cur = el.id;
       setOn(cur);
     };
-    let raf = 0;
-    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(pick); };
+    // A short timer, not requestAnimationFrame: it still runs in background tabs and on low-power phones.
+    let t = 0;
+    const onScroll = () => { if (!t) t = window.setTimeout(() => { t = 0; pick(); }, 80); };
     pick();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
-    return () => { cancelAnimationFrame(raf); window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onScroll); };
+    return () => { window.clearTimeout(t); window.removeEventListener("scroll", onScroll); window.removeEventListener("resize", onScroll); };
   }, [items]);
 
   useEffect(() => {

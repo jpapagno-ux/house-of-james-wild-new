@@ -9,6 +9,8 @@ import { PathwayChips } from "@/components/pathways/Pathway";
 import { readPathways, type Party, type Privacy, type Reading, type Season, type Setting } from "@/lib/compass/pathway-adapter";
 import { PATHWAYS, pathway, type PathwayRecord } from "@/lib/pathways";
 import { VOLUME_STYLES } from "@/lib/volumes";
+import CompassAtlas from "@/components/compass/CompassAtlas";
+import type { ChartData } from "@/components/destination/LedgerChart";
 
 // PREVIEW · the Compass pathway adapter, in two presentations: the
 // traveller's (Iggi leads, James's verdict mark where one exists) and the
@@ -20,6 +22,8 @@ export type PreviewRecord = PathwayRecord & {
   /** Pathway id → href. Optional per record; the component-level `pathwayHrefs` prop is the usual source (one map, not one per record). */
   pathwayHref?: Record<string, string>;
   impactDocumented?: boolean; founderMark?: string | null; kind?: "stay" | "voyage" | "route";
+  /** Where it is, for the Compass Atlas (stays and vessels; routes have none). */
+  coords?: { lat: number; lng: number } | null;
 };
 
 const SETTINGS: { id: Setting; label: string }[] = [
@@ -34,7 +38,7 @@ function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; chi
   return <button type="button" onClick={onClick} aria-pressed={on} className={`border px-3 py-1.5 text-[14px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <span className="sr-only">Selected: </span>}{children}</button>;
 }
 
-export default function CompassPreview({ records: given, recordsUrl, live = false, enquireHref = "/plan", pathwayHrefs = {} }: { records: PreviewRecord[]; recordsUrl?: string; live?: boolean; enquireHref?: string; pathwayHrefs?: Record<string, string> }) {
+export default function CompassPreview({ records: given, recordsUrl, live = false, enquireHref = "/plan", pathwayHrefs = {}, atlas }: { records: PreviewRecord[]; recordsUrl?: string; live?: boolean; enquireHref?: string; pathwayHrefs?: Record<string, string>; /** The world chart (lib/charts/regions.json "world"): when given, the fits are flown to on the Atlas. */ atlas?: ChartData }) {
   // With recordsUrl the whole Ledger loads once, after the page, so the Compass page itself stays light.
   const [fetched, setFetched] = useState<PreviewRecord[] | null>(null);
   const [loadError, setLoadError] = useState(false);
@@ -94,6 +98,10 @@ export default function CompassPreview({ records: given, recordsUrl, live = fals
           {loadError && <p className="mt-6 text-[15px] ledger-muted">The Ledger didn&rsquo;t open just now. Reload, or ask James directly.</p>}
           {!loading && !loadError && out.fits.length === 0 && <p className="mt-6 text-[15px] ledger-muted">{live ? "Nothing approved in the Ledger fits that reading yet. Choose another setting, or ask James directly." : "Nothing in the sample records fits that reading yet. Choose a setting, or start again."}</p>}
 
+          {/* Compass → Atlas (James, 3 Nov 2026): the places the reading chose, flown to on the world chart. */}
+          {live && atlas && out.fits.length > 0 && (
+            <CompassAtlas chart={atlas} explain={out.explain.replace(/^Iggi weighed: /, "Weighed: ")} fits={out.fits.map((f) => { const r = byslug[f.slug]; return r?.coords ? { slug: f.slug, name: r.name, href: r.href, country: r.country, lat: r.coords.lat, lng: r.coords.lng, ledgerId: r.ledgerId ?? null } : null; }).filter((x): x is NonNullable<typeof x> => !!x)} />
+          )}
           {live && out.fits.length > 0 && (
             <p className="mt-6 text-[15px]"><Link href={`${enquireHref}?pathways=${encodeURIComponent(out.fits.map((f) => f.slug).join(","))}`} className="ledger-btn--solid ledger-btn">Send this reading to James</Link><span className="ml-3 ledger-muted">A person finishes the trip. Nothing is booked here.</span></p>
           )}

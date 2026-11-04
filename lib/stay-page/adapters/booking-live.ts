@@ -1,3 +1,4 @@
+import { isEstimateSeason } from "@/lib/booking-live/estimates";
 import "server-only";
 import { createClient } from "@supabase/supabase-js";
 import { unstable_cache } from "next/cache";
@@ -58,7 +59,7 @@ async function fetchBookingLive(slug: string, stayName: string, liveEngineProper
   const { data: cards } = await cq;
   const cardFrom = new Map<string, DisplayPrice>();
   if (cards?.length) {
-    const { data: rules } = await sb.from("seasonal_rate_rules").select("rate_card_version_id, room_type_id, amount_minor, stay_start, stay_end").in("rate_card_version_id", cards.map((c) => c.id)).eq("active", true);
+    const { data: rules } = await sb.from("seasonal_rate_rules").select("rate_card_version_id, room_type_id, amount_minor, stay_start, stay_end, season").in("rate_card_version_id", cards.map((c) => c.id)).eq("active", true);
     for (const r of rules ?? []) {
       const card = cards.find((c) => c.id === r.rate_card_version_id);
       if (!card) continue;
@@ -66,7 +67,7 @@ async function fetchBookingLive(slug: string, stayName: string, liveEngineProper
       const prev = cardFrom.get(r.room_type_id);
       if (prev && prev.total.amount <= amount) continue;
       cardFrom.set(r.room_type_id, {
-        total: { amount, currency: card.currency }, perNight: { amount, currency: card.currency }, nights: 1, label: `${card.version_label} contracted rate`,
+        total: { amount, currency: card.currency }, perNight: { amount, currency: card.currency }, nights: 1, label: `${card.version_label} contracted rate`, estimate: isEstimateSeason(r.season),
         provenance: { sourceType: "RATE_CARD", provider: `Rate card ${card.version_label}${card.is_sample ? " (sample)" : ""}`, currency: card.currency, retrievedAt: null, verifiedAt: card.approved_at ?? null, validFrom: card.effective_from, validTo: card.effective_to, availability: "on_request", availabilityCheckedAt: null, reference: card.version_label },
       });
     }

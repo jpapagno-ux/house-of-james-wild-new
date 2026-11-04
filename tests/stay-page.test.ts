@@ -87,3 +87,10 @@ test("media: Cloudinary first, retired WES storage dropped, duplicates removed, 
   assert.match(c.hero!.url, /res\.cloudinary\.com.*wildco\/leeu\/max-house$/);
   assert.deepEqual(c.gallery.map((g) => g.source), ["cloudinary", "cloudinary", "legacy_cdn"]);
 });
+
+test("an estimated card reads 'to be confirmed' in its provenance line, a contracted one does not", async () => {
+  const { provenanceLine } = await import("../lib/stay-page/pricing.ts");
+  const p = { sourceType: "RATE_CARD" as const, provider: "Rate card 2027-V1", currency: "USD", retrievedAt: null, verifiedAt: "2026-11-01T00:00:00Z", validFrom: null, validTo: null, availability: "on_request" as const, availabilityCheckedAt: null, reference: "2027-V1" };
+  assert.match(provenanceLine(p, true), /^Estimated rate, to be confirmed · Rate card 2027-V1/);
+  assert.match(provenanceLine(p), /^Contracted rate · Rate card 2027-V1/);
+});

@@ -1,3 +1,4 @@
+import { TBC } from "@/lib/booking-live/estimates";
 import type { AccommodationPricingState, DisplayPrice } from "@/lib/stay-page/contract";
 import { formatMoney, pricingStatusLabel, provenanceLine } from "@/lib/stay-page/pricing";
 
@@ -34,7 +35,7 @@ export default function AccommodationPricingStatus({ state, compact = false }: {
       <div className="flex items-end justify-between gap-3">
         <StatusWord state={state} />
         {state.kind === "live" && state.options[0] && <Figure p={state.options[0]} size="text-xl" />}
-        {state.kind === "rate_card" && <span><span className="ledger-eyebrow mr-1.5">From</span><Figure p={state.from} size="text-xl" /></span>}
+        {state.kind === "rate_card" && <span className="text-right"><span className="ledger-eyebrow mr-1.5">From</span><Figure p={state.from} size="text-xl" />{state.from.estimate && <span className="block ledger-eyebrow !text-[10.5px]">{TBC}</span>}</span>}
       </div>
     );
   }
@@ -54,8 +55,8 @@ export default function AccommodationPricingStatus({ state, compact = false }: {
       )}
       {state.kind === "rate_card" && (
         <div className="mt-3 border-y ledger-border py-3">
-          <p><span className="ledger-eyebrow mr-1.5">From</span><Figure p={state.from} /></p>
-          <p className="mt-1 text-[12.5px] ledger-muted">{provenanceLine(state.from.provenance)}. A contracted rate is not a free room: the house confirms availability on request.</p>
+          <p><span className="ledger-eyebrow mr-1.5">From</span><Figure p={state.from} />{state.from.estimate && <span className="ml-2 ledger-eyebrow align-middle">{TBC}</span>}</p>
+          <p className="mt-1 text-[12.5px] ledger-muted">{provenanceLine(state.from.provenance, state.from.estimate)}. {state.from.estimate ? "Estimated from the property's published rates while the new rates are finalised; the house confirms the exact price before anything is held or charged." : "A contracted rate is not a free room: the house confirms availability on request."}</p>
         </div>
       )}
       {state.kind === "unavailable_for_dates" && <p className="mt-2 text-[15px]">The engine has nothing open here for those dates. Try other dates, or ask James: he often knows a way in.</p>}

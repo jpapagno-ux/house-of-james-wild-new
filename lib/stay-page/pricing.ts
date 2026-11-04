@@ -119,10 +119,10 @@ export function formatMoney(amount: number, currency: string): string {
 }
 
 /** A plain-words provenance line: "Live · Tag Albie booking engine · checked 1 Nov, 05:51". */
-export function provenanceLine(p: PricingProvenance): string {
+export function provenanceLine(p: PricingProvenance, estimate = false): string {
   const when = p.retrievedAt ?? p.availabilityCheckedAt ?? p.verifiedAt;
   const stamp = when ? new Date(when).toLocaleString("en-US", { dateStyle: "medium", timeStyle: p.retrievedAt ? "short" : undefined, timeZone: "UTC" }) : null;
-  const head = p.sourceType === "LIVE_DYNAMIC" ? "Live" : p.sourceType === "RATE_CARD" ? "Contracted rate" : "Reference";
+  const head = p.sourceType === "LIVE_DYNAMIC" ? "Live" : p.sourceType === "RATE_CARD" ? (estimate ? "Estimated rate, to be confirmed" : "Contracted rate") : "Reference";
   const avail = p.availability === "available" ? "available for your dates" : p.availability === "on_request" ? "availability confirmed on request" : p.availability === "unavailable" ? "not open on these dates" : null;
   return [head, p.provider, stamp ? `${p.retrievedAt ? "checked" : "verified"} ${stamp}` : null, avail].filter(Boolean).join(" · ");
 }

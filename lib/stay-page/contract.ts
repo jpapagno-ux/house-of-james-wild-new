@@ -55,6 +55,7 @@ export type DisplayPrice = {
   nights: number | null;
   label: string;                 // "Best Available Rate" / "2027 contracted rate"
   provenance: PricingProvenance;
+  estimate?: boolean;            // the card's season says the figure is an estimate ("to be confirmed", lib/booking-live/estimates.ts)
 };
 
 /** The traveler-facing pricing state of ONE accommodation, resolved per unit. */

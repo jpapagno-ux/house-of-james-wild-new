@@ -16,7 +16,7 @@ import Signature from "@/components/record/Signature";
 import HostPanel, { KIND as HOST_KIND, type HostKind } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
-import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
+import { Anchor, CalendarDays, Car, ChevronDown, Clock, Fish, MapPin, Mountain, Plane, Route, Ship, Sun, Tent, Trees, Users, Waves } from "lucide-react";
 import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
 import OfferPanel from "@/components/ledger/OfferPanel";
@@ -94,7 +94,10 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // "From" price: the lowest per-person option on file, with what it's based on.
   const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
   const def = T.calc.opts[(T.calc as { opt0?: number }).opt0 ?? 0];
-  const route = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i).join(" → ");
+  const stops = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i);
+  const route = stops.join(" → ");
+  // One quiet line icon per fact in the at-a-glance strip (graphite, House Standard).
+  const FACT_ICON: Record<string, typeof Clock> = { Duration: Clock, Vessel: Ship, Ships: Ship, From: MapPin, Route: Route, "2027 sailings": CalendarDays, Sailings: CalendarDays, When: CalendarDays, "Best months": Sun, Best: Sun, Group: Users, Party: Users, Travel: Plane, Vehicle: Car, Camp: Tent };
   // James's note for a day: the lodge's line on the first day there (overland),
   // or the experience filed for that day (voyage).
   const noteFor = (d: (typeof T.days)[number]) => {
@@ -527,9 +530,23 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <div className="max-w-ledger mx-auto px-5 md:px-10 py-6 md:py-7 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
         <div className="min-w-0">
           <p className="ledger-display text-[18px] md:text-[21px] leading-snug">{T.slides[0].line}</p>
-          <p className="mt-1 text-[13.5px] ledger-muted">{route}</p>
-          <dl className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-3">
-            {T.herofacts.map(([k, v]) => <div key={k}><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5">{v}</dd></div>)}
+          {/* The route as a line of stops (James, 4 Nov 2026: a clearer header for voyages and routes). */}
+          <ol className="mt-3 flex flex-wrap items-center gap-y-1.5 text-[13.5px]" aria-label="The route">
+            {stops.map((n, i) => (
+              <li key={n} className="inline-flex items-center">
+                <span className="inline-block w-[7px] h-[7px] mr-1.5 shrink-0" style={{ background: i === 0 || i === stops.length - 1 ? "#2E2B28" : "transparent", boxShadow: "inset 0 0 0 1.5px #2E2B28" }} aria-hidden="true" />
+                <span>{n}</span>
+                {i < stops.length - 1 && <span className="mx-2 w-4 h-px bg-[#CFC8BF]" aria-hidden="true" />}
+              </li>
+            ))}
+          </ol>
+          <dl className="mt-5 grid grid-cols-2 border-t border-l ledger-border">
+            {T.herofacts.map(([k, v]) => { const I = FACT_ICON[k] ?? null; return (
+              <div key={k} className="flex items-start gap-3 p-3 border-r border-b ledger-border bg-paper">
+                {I && <I className="w-[18px] h-[18px] mt-0.5 shrink-0 ledger-muted" strokeWidth={1.4} aria-hidden="true" />}
+                <div className="min-w-0"><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5 leading-snug">{v}</dd></div>
+              </div>
+            ); })}
           </dl>
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
           {T.photoCredit && <p className="mt-2 text-[12px] ledger-muted">{T.photoCredit}</p>}

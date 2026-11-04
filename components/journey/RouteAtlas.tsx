@@ -27,7 +27,7 @@ const read = (id: string): RouteFile | null => {
 };
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker, figure, legend = "land-sea", globe = false }: { id: string; legend?: AtlasLegend; /** Open on the globe (the global voyages atlas only); every other atlas opens fitted to its waters (map audit, 2 Nov 2026). */ globe?: boolean; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string; /** Draw the engraved route figure, boat and all, as the fallback (voyages without a hand-drawn figure). */ figure?: boolean }) {
+export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, line, chart, kicker, figure, legend = "land-sea", globe = false, links = true }: { id: string; /** The link row under the chart; off where the page lists the same routes below (Overland, James 4 Nov 2026). */ links?: boolean; legend?: AtlasLegend; /** Open on the globe (the global voyages atlas only); every other atlas opens fitted to its waters (map audit, 2 Nov 2026). */ globe?: boolean; kind: "overland" | "voyage"; routes: AtlasRoute[]; dest?: string; eyebrow: string; title: string; line: string; /** Engine options (e.g. a river overlay for the Nile). */ chart?: object; kicker?: string; /** Draw the engraved route figure, boat and all, as the fallback (voyages without a hand-drawn figure). */ figure?: boolean }) {
   const found = routes.map((r) => ({ r, file: read(r.id) })).filter((x): x is { r: AtlasRoute; file: RouteFile } => !!x.file);
   if (!found.length) return null;
   const ink = kind === "voyage" ? VOLUME_STYLES.voyages.pad : VOLUME_STYLES.overland.pad;
@@ -85,7 +85,7 @@ export default function RouteAtlas({ id, kind, routes, dest, eyebrow, title, lin
       <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
       {grouped && <AtlasPicker groups={groups} />}
       <div className={grouped ? "mt-3 jw-atlas" : "mt-5"} dangerouslySetInnerHTML={{ __html: html }} />
-      {!grouped && (
+      {!grouped && links && (
         <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[14px]">
           {found.map(({ r }) => (
             <li key={r.id}><Link href={r.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: words }}>{r.label}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></li>

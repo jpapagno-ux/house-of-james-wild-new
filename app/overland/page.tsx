@@ -36,7 +36,7 @@ export default function OverlandHub() {
       <HubShell name="Overland" entrance={<VolumeEntrance e={ENTRANCES.overland} />} path={PATH} eyebrow={volumeEyebrow("overland")} title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
         answer="Overland is James Wild & Co's volume of land routes James designed: the stops in order, the drive or flight times between them, what to expect and what to avoid, and every stay along the way already vetted in the Ledger. Take a route as filed, or let James reshape it around your dates."
         filling="Each route opens its own page with the day-by-day plan, the map and the price builder; more countries are filed as James draws them.">
-        <RouteAtlas id="overland-atlas" kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"
+        <RouteAtlas id="overland-atlas" links={false} kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"
           line="Pick a route and the chart flies to it, then plays it day by day: Costa Rica coast to coast, the Sabi Sand to the Cape."
           routes={all.filter((j) => j.kind === "route").map((j) => ({ id: j.href.split("/").pop()!, label: j.title, href: j.href, where: groups.find((g) => g.list.includes(j))!.name }))} />
         {groups.map((g) => (

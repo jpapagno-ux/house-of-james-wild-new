@@ -208,6 +208,77 @@
       "reviewStatus": "approved"
     },
     {
+      "id": "EF-004",
+      "stayId": "STY-2026-000575",
+      "staySlug": "como-parrot-cay",
+      "stayName": "COMO Parrot Cay",
+      "designationStatus": "designated",
+      "collectionNumber": 4,
+      "heroLine": "Modern luxury, and the good sense to let the island lead.",
+      "whyItMadeTheCut": [
+        "Place. More than a thousand acres of private island, reached by boat. You arrive slower than you left, and the sea does most of the talking.",
+        "Detail. Nothing here is loud. The care is in the small things: a pool at every house, a path straight to the sand, nothing in the way of the water.",
+        "Philosophy. COMO builds around wellbeing, not spectacle, and its founder's vision runs through the whole island. It is close to how we think about travel: the place first, everything else after."
+      ],
+      "jamesNote": {
+        "text": "Parrot Cay is modern luxury that knows when to step back. The place leads, the detail follows, and the way COMO sees the world is the way we do. If you want a Residence or an estate home to yourselves, ask me.",
+        "where": "Parrot Cay",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "More than 1,000 acres of private island in the Turks and Caicos."
+        },
+        {
+          "key": "privacy",
+          "line": "Every beach house, villa and Residence has its own pool; Residences and estate homes can be booked whole."
+        },
+        {
+          "key": "design",
+          "line": "Modern and quiet, close to the sand; the attention is in the detail."
+        },
+        {
+          "key": "access",
+          "line": "About 50 minutes from Providenciales airport: a short drive, then 35 minutes by boat."
+        },
+        {
+          "key": "humanity",
+          "line": "The COMO Shambhala Retreat, and a philosophy built on wellbeing."
+        }
+      ],
+      "pathwaysOverride": [
+        "between-tides",
+        "the-art-of-stillness",
+        "a-place-of-our-own"
+      ],
+      "worthAnotherNight": "Five nights. The first two you are still arriving. By the third, the island has set your pace.",
+      "whoItSuits": [
+        "Couples marking something",
+        "Families who want a house, not a room",
+        "Wellness-minded travellers",
+        "Privacy seekers",
+        "Beach-first travellers",
+        "Small groups taking a Residence or estate home"
+      ],
+      "whoItMayNotSuit": [
+        "Nightlife-focused travellers",
+        "Travellers who want a town to explore each evening",
+        "Travellers who prefer a large social resort"
+      ],
+      "continueRefs": [
+        "pathway:between-tides",
+        "pathway:the-art-of-stillness",
+        "pathway:a-place-of-our-own",
+        "compass"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "parrot-cay",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "reviewDate": "2026-11-02"
+    },
+    {
       "id": "EF-012",
       "stayId": "STY-2026-000213",
       "staySlug": "pearl-resort-vahine-private-island",

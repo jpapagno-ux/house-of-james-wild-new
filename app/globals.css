@@ -485,6 +485,13 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow.ledger-crimson { color: var(--ef-ink); }
 /* The Exceptional Few keeps its per-property palette on buttons too: the action follows that page's own accent. */
 .theme-ef-dark, .theme-ef-dark .ef-day { --jw-action: var(--jw-accent-hex); --jw-action-deep: var(--jw-accent-deep-hex); }
+/* The Exceptional Few: COMO Parrot Cay palette (2 Nov 2026). Night is the lagoon after dark, day is the
+   white sand, accents are dry sand and shallow-water turquoise. Scoped to its palette key; Amangiri unchanged.
+   Contrast (AA): ink 12.1:1, sand 9.2:1, lagoon 7.4:1 on the night surface; ink 13.2:1, lagoon 5.7:1 on the day band. */
+.theme-ef-parrot-cay { --ef-sand: #E3CFAE; --ef-earth: #1D6A6E; --ef-landscape: #F7F3EA; --ef-shadow: #2E4A4E; --ef-accent: #CFE8E4; }
+.theme-ef-parrot-cay.theme-ef-dark { --ef-surface: #0F3036; --ef-ink: #F2EEE4; --ef-muted: rgba(242,238,228,0.74); --ef-line: rgba(242,238,228,0.2); --ef-sand: #E3CFAE; --ef-earth: #7CC9C3; --ef-landscape: #15393F; --ef-shadow: rgba(242,238,228,0.6); --ef-accent: #7CC9C3; --jw-accent: 124 201 195; --jw-accent-deep: 96 172 166; --jw-accent-light: 207 232 228; --jw-accent-hex: #7CC9C3; --jw-accent-deep-hex: #60ACA6; --jw-card: #15393F; }
+.theme-ef-parrot-cay.theme-ef-dark .ef-day { --ef-surface: #F7F3EA; --ef-ink: #1E2B2E; --ef-muted: rgba(30,43,46,0.7); --ef-line: rgba(30,43,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2E4A4E; --ef-earth: #1D6A6E; --ef-sand: #1D6A6E; --jw-card: #FFFFFF; --jw-accent: 29 106 110; --jw-accent-deep: 24 90 94; --jw-accent-hex: #1D6A6E; --jw-accent-deep-hex: #185A5E; }
+.theme-ef-parrot-cay.theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-parrot-cay.theme-ef-dark .ef-day .ledger-btn:hover { color: #F7F3EA; }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }

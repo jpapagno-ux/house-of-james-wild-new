@@ -6,6 +6,7 @@ import { nightsLabel } from "./types";
 import type { HubProps } from "@/components/ships/VoyageHub";
 import type { Tile } from "@/components/ships/VoyageTiles";
 import { voyageOffersOfType, type Offer } from "@/lib/content/offers/offers";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // The Voyages category pages (James, 2 Nov 2026): /voyages/honeymoon, /voyages/family and
 // /voyages/solo. Each opens with the answer, then a comparison table built from the registry's
@@ -81,7 +82,7 @@ export function honeymoon(): HubProps & { table: CompareTable; offers: Offer[] }
   const suits = (r: RegistryShip) => entry(r).data.suits.find((x) => /couple|honeymoon/i.test(x.who))!.who;
   const answer = `${rows.length} small ships in the Ledger name couples or honeymooners among the travellers they suit: ${list(rows.map((r) => `${r.name} (${suits(r).replace(/^\w/, (c) => c.toLowerCase())})`))}.${ak && offerShips.length ? ` ${offerShips.length === 1 ? offerShips[0].name : list(offerShips.map((r) => r.name))} carry A&K's honeymoon offer: ${ak.headline.replace(/^Honeymoon: /, "").toLowerCase()}, ${ak.travel.text.replace(/^Travel/, "travel")}.` : ""} James confirms every fare and offer live before anything is booked.`;
   return {
-    path: CATEGORY_PATHS.honeymoon, name: "Honeymoons", eyebrow: "Volume 04 · Voyages · For two",
+    path: CATEGORY_PATHS.honeymoon, name: "Honeymoons", eyebrow: volumeEyebrow("voyages", "Voyages", "For two"),
     title: "Honeymoon Cruises and Small Ships for Couples",
     intro: "Small ships that suit two: Nile riverboats, Amazon river ships and Galápagos yachts, with the celebration offers filed on them.",
     question: "Which Small Ships Suit a Honeymoon?", answer, cards, table, offers: mergeOffers(celebrations),
@@ -114,7 +115,7 @@ export function family(): HubProps & { table: CompareTable } {
   const kids = all.filter((r) => r.traits?.kidsProgramme).map((r) => r.name);
   const answer = `${q.length} of the ${all.length} ships with pages publish a minimum age for children on shared sailings: ${list(ages)}. ${list(conn)} ${conn.length === 1 ? "has" : "have"} connecting cabins${kids.length ? `, and ${list(kids)} ${kids.length === 1 ? "runs" : "run"} a children's programme on board` : ""}. Several ships take younger children on a private charter.`;
   return {
-    path: CATEGORY_PATHS.family, name: "Family Voyages", eyebrow: "Volume 04 · Voyages · With children",
+    path: CATEGORY_PATHS.family, name: "Family Voyages", eyebrow: volumeEyebrow("voyages", "Voyages", "With children"),
     title: "Family Cruises on Small Ships: Ages, Cabins and Programmes",
     intro: "Every ship's minimum age for children, connecting cabins and kids' programme in one table, from each operator's own material.",
     question: "Which Small Ships Take Children?", answer, cards, table,
@@ -144,7 +145,7 @@ export function solo(): HubProps & { table: CompareTable } {
   const low = pct[0];
   const answer = `${q.length} ships publish what a solo traveller pays.${none.length ? ` ${list(none)} ${none.length === 1 ? "has" : "have"} single cabins with no supplement.` : ""}${low ? ` The lowest percentage is ${singleLabel(low.traits!.single)} on ${low.name}` : ""}; most others charge ${mostCommon(pct.map((r) => (r.traits!.single as { pct: number }).pct))}% over the two-sharing fare.${q.some((r) => r.slug === "delfin-iii") ? " Delfin III waives its supplement for up to two solo guests a sailing outside the holidays." : ""}`;
   return {
-    path: CATEGORY_PATHS.solo, name: "Solo Voyages", eyebrow: "Volume 04 · Voyages · Travelling alone",
+    path: CATEGORY_PATHS.solo, name: "Solo Voyages", eyebrow: volumeEyebrow("voyages", "Voyages", "Travelling alone"),
     title: "Solo Cruises on Small Ships: Single Supplements Compared",
     intro: "Every ship's single supplement in one table, lowest first, from each operator's own published fares.",
     question: "Which Small Ships Are Best for Solo Travellers?", answer, cards, table,

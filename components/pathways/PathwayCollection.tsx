@@ -90,7 +90,7 @@ export default function PathwayCollection({ items, pathway, hrefFor }: { items: 
         </nav>
       )}
       {blocks.map((b) => (
-        <section key={b.slug} id={`${pathway.key}-${b.slug}`} aria-labelledby={`${pathway.key}-${b.slug}-h`} className="scroll-mt-32">
+        <section key={b.slug} id={`${pathway.key}-${b.slug}`} aria-labelledby={`${pathway.key}-${b.slug}-h`} className="">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
             <div>
               <p className="ledger-eyebrow">{b.label} · {b.items.length}</p>

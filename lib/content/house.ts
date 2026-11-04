@@ -22,7 +22,7 @@ export const LEDGER = {
     [String(LEDGER_COUNTS.stays), "live stays"],
     [String(LEDGER_COUNTS.vessels), "vessels"],
     [String(LEDGER_COUNTS.journeys), "journeys"],
-    ["1983", "first journey designed"],
+    ["1982", "first journey designed"],
   ] as [string, string][],
   steps: [
     { n: "01", title: "Heard of", line: "A tip from a guide, a host, an advisor or a long dinner. It goes on James's list, not in the Ledger." },

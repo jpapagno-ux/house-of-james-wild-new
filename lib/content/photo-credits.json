@@ -167,5 +167,10 @@
   "pearl-resort-le-bora-bora": "Le Bora Bora, Pearl Resorts of Tahiti",
   "pearl-resort-le-tikehau": "Le Tikehau, Pearl Resorts of Tahiti",
   "pearl-resort-le-tahiti": "Le Tahiti, Pearl Resorts of Tahiti",
-  "pearl-resort-le-nuku-hiva": "Le Nuku Hiva, Pearl Resorts of Tahiti"
+  "pearl-resort-le-nuku-hiva": "Le Nuku Hiva, Pearl Resorts of Tahiti",
+  "_entrance_note": "Partner photographs on the volume entrances (lib/content/entrances.ts), by Cloudinary public_id. Keys start with '_' so they never override a stay's own credit; the credit is also written into each slide's alt text. Added 3 Nov 2026.",
+  "_entrance:gatherings/fish-eagle-villa-lion-sands/outside-dining-fish-eagle-villa": "MORE",
+  "_entrance:wildco/south-africa/thornybush/monwana-villa/monwana-villa-16": "MORE",
+  "_entrance:wildco/tanzania/serengeti-west/singita-serengeti-house/singita-serengeti-house-pool": "Singita",
+  "_entrance:wildco/zimbabwe/malilangwe/singita-malilangwe-house/singita-malilangwe-house-breakfast": "Singita"
 }

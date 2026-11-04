@@ -1,17 +1,19 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
-import { HOUSE_LOOP } from "@/lib/content/home";
 import { STAYS, altFor, pageReady } from "@/lib/content/stays";
 import { REGION_DATA } from "@/lib/content/regions";
 import { recordHref } from "@/lib/ledger/urls";
 import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import { volumeEyebrow, volumeRoman } from "@/lib/volumes";
 
-// /europe: Volume VI, Other Europe. Not the capitals and the queues: the
+// /europe: Volume V, Other Europe. Not the capitals and the queues: the
 // valleys, islands and river towns James keeps going back to, grouped by
 // country from the Ledger, with the river cruises as the cross-sell to
 // Voyages. Country pages under /destinations/europe open as each is built.
@@ -24,7 +26,7 @@ const region = REGION_DATA.find((r) => r.slug === "europe");
 
 export const metadata = buildMetadata({
   title: "Other Europe: The Valleys, Islands and River Towns, Vetted",
-  description: `Volume VI of the James Wild & Co Ledger: ${EU.length} stays across ${COUNTRIES.length} countries — Ireland's country houses, the Douro and the Alentejo, the Balearics, the Alps — not the capitals and the queues. Often paired with a river cruise.`,
+  description: `Volume ${volumeRoman("europe")} of the James Wild & Co Ledger: ${EU.length} stays across ${COUNTRIES.length} countries — Ireland's country houses, the Douro and the Alentejo, the Balearics, the Alps — not the capitals and the queues. Often paired with a river cruise.`,
   path: PATH,
 });
 
@@ -39,15 +41,15 @@ export default function EuropeHub() {
   const total = EU.length;
   return (
     <>
-      <SiteHeader />
+      <SiteHeader overlay />
       <HubShell
         name="Other Europe"
         path={PATH}
-        eyebrow="Volume VI · Other Europe"
+        eyebrow={volumeEyebrow("europe", "Other Europe")}
         title="Not the Capitals and the Queues"
         intro={`${V.intro} ${total} stays across ${COUNTRIES.length} countries, every one filed in the Ledger.`}
         browse={V.browse}
-        film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "The Europe most travellers are never shown.", credit: "Film by Felix Studios", href: "/#film" }}
+        entrance={<VolumeEntrance e={ENTRANCES.europe} />}
         answer={`Other Europe is the sixth volume of the James Wild & Co Ledger: ${total} vetted stays across ${COUNTRIES.map(([c]) => c).join(", ")} — country houses, quintas, island retreats and alpine lodges away from the capitals — each with a permanent Ledger ID. The house pairs them with river cruises on the Douro, Danube and Rhône, planned either side of the boat, and plans three nights or more in each place.`}
         filling="Country pages for Ireland, Portugal, Spain, Italy, Switzerland and France open under Destinations as each is built; the Greek islands and Mallorca are there now."
         closeTitle="Tell James the valley you've always meant to find."
@@ -70,7 +72,7 @@ export default function EuropeHub() {
           </HubSection>
         ))}
 
-        <HubSection eyebrow="Before or after" title="The River, Then the Valley" id="rivers-h" more={{ label: "Voyages, Volume IV", href: "/voyages" }}>
+        <HubSection eyebrow="Before or after" title="The River, Then the Valley" id="rivers-h" more={{ label: `Voyages, Volume ${volumeRoman("voyages")}`, href: "/voyages" }}>
           <div className="grid lg:grid-cols-[1.2fr_1fr] gap-8 items-start">
             <p className="text-[17px] leading-relaxed max-w-2xl">A river cruise is the easiest week in Europe: one unpacking, the towns come to you. The house plans the stays either side of it — a quinta above the Douro before Porto, a country house in the Wachau after the Danube — so the boat is the middle of the journey, not the whole of it. Ask for the river and James will draw the rest.</p>
             <ul className="space-y-2 text-[15px]">

@@ -53,7 +53,7 @@
     el = typeof el === "string" ? document.getElementById(el) : el;
     var map = new ML.Map({
       container: el, style: { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": C.sea } }] },
-      bounds: o.bounds, fitBoundsOptions: { padding: o.pad || 30 }, maxBounds: o.maxBounds, attributionControl: false, cooperativeGestures: PHONE,
+      bounds: o.bounds, fitBoundsOptions: { padding: o.pad || 30 }, maxBounds: o.maxBounds, attributionControl: false, cooperativeGestures: true, /* scroll audit 2 Nov 2026: Ctrl/Cmd + wheel on desktop, two fingers on phones, so the page always scrolls past a map */
       dragRotate: false, pitchWithRotate: false, maxZoom: o.maxZoom || 13, minZoom: o.minZoom || 3, renderWorldCopies: !!o.worldCopies
     });
     map.touchZoomRotate.disableRotation();

@@ -12,7 +12,7 @@ export default function ContinueTheJourney({ pathways, hrefFor, journeys = [], e
   pathways: Pathway[]; hrefFor: (p: Pathway) => string; journeys?: JourneyCard[]; exceptional?: JourneyCard[]; compassHref?: string; hostHref?: string | null; id?: string;
 }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ef-rule pt-8" aria-labelledby={`${id}-heading`}>
       <p className="ledger-eyebrow ef-eyebrow">Continue the journey</p>
       <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where This Leads</h2>
       <div className="mt-8 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3 -mx-5 px-5 md:mx-0 md:px-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:overflow-visible">

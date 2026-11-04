@@ -9,6 +9,7 @@ import { pathway } from "@/lib/pathways";
 import type { HubProps } from "@/components/ships/VoyageHub";
 import type { Tile } from "@/components/ships/VoyageTiles";
 import { POLAR_PATH, POLAR_VOYAGES, voyageFrom } from "@/lib/content/polar";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // The copy for every Voyages hub, built from the registry and the ships' own records: each
 // opening answers the question people search, in facts the ship pages already carry. No hub
@@ -53,7 +54,7 @@ export function typeHub(t: VoyageType): HubProps {
   const live = cards.filter((c) => c.page);
   const filed = filedOnly(cards);
   const x = tally(cards);
-  const base = { path: T.path, name: T.name, eyebrow: `Volume 04 · Voyages · ${T.name}`, question: titleCase(T.question), cards, related: { title: "How Else Could You Sail?", tiles: t === "expedition" ? [...typeTiles(t), polarTile] : typeTiles(t) } };
+  const base = { path: T.path, name: T.name, eyebrow: volumeEyebrow("voyages", "Voyages", T.name), question: titleCase(T.question), cards, related: { title: "How Else Could You Sail?", tiles: t === "expedition" ? [...typeTiles(t), polarTile] : typeTiles(t) } };
   if (t === "river") return { ...base,
     title: "Small-Ship River Cruises", intro: T.line,
     answer: `Voyages files ${cards.length} river ships: ${briefs(cards)}. On the Nile, a riverboat carries more guests with more cabin choice; the dahabiya is a sailing boat for twelve. Each ship page lists her cabins, deck plan, day by day and every published fare.`,
@@ -63,7 +64,7 @@ export function typeHub(t: VoyageType): HubProps {
       FARES,
     ],
     adding: "Mekong and Europe's rivers, and more Amazon ships in Peru, Ecuador and Brazil, are added as each operator's material is filed.",
-    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE VOYAGES · BY RIVER", title: "Where Do the River Ships Sail?", line: "Every river route on one chart: pick one and the globe flies to it, then sails it day by day." } };
+    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE VOYAGES · BY RIVER", title: "Where Do the River Ships Sail?", line: "Every river route on one chart: pick one and the chart flies to it, then sails it day by day." } };
   if (t === "sailing") return { ...base,
     title: "Small Sailing Ships and Phinisis", intro: T.line,
     answer: `Voyages files ${cards.length} sailing ships, all in Indonesia: ${briefs(cards)}. Aliikai has her full page, cabin by cabin with every published sailing; James sailed Raja Ampat aboard her in November 2024.${filed.length ? ` ${list(filed)} open their Ledger records until their ship pages are built.` : ""}`,
@@ -104,7 +105,7 @@ export function watersHub(w: Waters): HubProps {
   const W = WATERS_HUBS[w];
   const cards = cardsFor(shipsInWaters(w));
   const filed = filedOnly(cards);
-  const base = { path: W.path, name: W.name, eyebrow: `Volume 04 · Voyages · ${W.countries.join(", ")}`, question: titleCase(W.question), cards, related: { title: "Which Other Waters?", tiles: [...watersTiles(w), polarTile] } };
+  const base = { path: W.path, name: W.name, eyebrow: volumeEyebrow("voyages", "Voyages", W.countries.join(", ")), question: titleCase(W.question), cards, related: { title: "Which Other Waters?", tiles: [...watersTiles(w), polarTile] } };
   if (w === "amazon") {
     // By country, in the hub's order (Peru, Ecuador, Brazil), from each ship's own record.
     const byCountry = W.countries.map((k) => ({ k, cs: cards.filter((c) => shipsInWaters("amazon").find((r) => r.slug === c.slug)?.country.includes(k)) })).filter((x) => x.cs.length);
@@ -118,7 +119,7 @@ export function watersHub(w: Waters): HubProps {
         FARES,
       ],
       adding: "More Amazon ships are added as their photographs and operators' material are filed.",
-      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the globe flies to the Amazon, then sails it day by day." } };
+      atlas: { routes: routesFor(cards), legend: "river", dest: "amazon", kicker: "THE AMAZON · BY RIVER", title: "Where Do the Amazon Ships Sail?", line: "Pick a route and the chart flies to the Amazon, then sails it day by day." } };
   }
   if (w === "galapagos") {
     const F = galapagosFleet();
@@ -162,7 +163,7 @@ export function watersHub(w: Waters): HubProps {
   }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],
-    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE NILE · BY RIVER", title: "Every Nile Route on One Chart", line: "Pick a ship and a direction: the globe flies to Egypt and sails the river day by day." } };
+    atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE NILE · BY RIVER", title: "Every Nile Route on One Chart", line: "Pick a ship and a direction: the chart flies to Egypt and sails the river day by day." } };
 }
 
 export const ALL_SHIPS_COUNT = SHIP_REGISTRY.length;

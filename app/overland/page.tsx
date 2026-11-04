@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { HOUSE_LOOP } from "@/lib/content/home";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection } from "@/components/hub/Hub";
@@ -11,8 +12,9 @@ import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, touristTrip } from "@/lib/schema";
 import RouteAtlas from "@/components/journey/RouteAtlas";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /overland: Volume 05 hub shell. Routes James designed, by country.
+// /overland: Volume VI hub shell. Routes James designed, by country.
 const PATH = "/overland";
 const V = VOLUMES.find((v) => v.href === PATH)!;
 export const metadata = buildMetadata({ title: "Overland Routes Designed by James: Costa Rica, Mexico, Guatemala, Belize, Botswana, South Africa", description: "Land routes James Wild designed, stop by stop, with drive times, what to expect, what to avoid and every stay already vetted in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
@@ -30,12 +32,12 @@ export default function OverlandHub() {
   const all = groups.flatMap((g) => g.list);
   return (
     <>
-      <SiteHeader />
-      <HubShell name="Overland" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Earn the lodge by road.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 05 · Overland" title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
+      <SiteHeader overlay />
+      <HubShell name="Overland" entrance={<VolumeEntrance e={ENTRANCES.overland} />} path={PATH} eyebrow={volumeEyebrow("overland")} title="Routes James Designed, What to Avoid Included" intro={V.intro} browse={V.browse}
         answer="Overland is James Wild & Co's volume of land routes James designed: the stops in order, the drive or flight times between them, what to expect and what to avoid, and every stay along the way already vetted in the Ledger. Take a route as filed, or let James reshape it around your dates."
         filling="Each route opens its own page with the day-by-day plan, the map and the price builder; more countries are filed as James draws them.">
         <RouteAtlas id="overland-atlas" kind="overland" dest="costa-rica" eyebrow="The route atlas · by land" title="Every Route on One Chart"
-          line="Pick a route and the globe flies to it, then plays it day by day: Costa Rica coast to coast, the Sabi Sand to the Cape."
+          line="Pick a route and the chart flies to it, then plays it day by day: Costa Rica coast to coast, the Sabi Sand to the Cape."
           routes={all.filter((j) => j.kind === "route").map((j) => ({ id: j.href.split("/").pop()!, label: j.title, href: j.href, where: groups.find((g) => g.list.includes(j))!.name }))} />
         {groups.map((g) => (
           <HubSection key={g.name} eyebrow={`${g.list.length} ${g.list.length === 1 ? "route" : "routes"}`} title={g.name} id={`${g.name}-h`.replace(/\s/g, "-").toLowerCase()}>

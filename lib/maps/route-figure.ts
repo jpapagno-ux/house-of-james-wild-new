@@ -16,6 +16,9 @@ const H = 700;
 const esc = (x: unknown) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const f1 = (n: number) => n.toFixed(1);
 const SEA = new Set(["sea", "ship", "vessel", "boat", "zodiac", "kayak"]);
+const AIR = new Set(["air", "flight", "plane", "fly"]);
+/** House Crimson (lib/palette.ts CRIMSON.fill): the boat's pennant and the plane's cheat line, the one accent. */
+const CRIMSON = "#8B2525";
 
 /** Each leg in order: the mode it is travelled by and its points, [lng, lat]. */
 export function legsOf(r: FigureRoute) {
@@ -50,6 +53,16 @@ export function routeFigureSvg({ id, routes, overlay, ink, label }: { id: string
   const sc = Math.min((W * 0.62) / Math.max((x1 - x0) * kx, 0.05), (H * 0.8) / Math.max(y1 - y0, 0.05));
   const P = ([lng, lat]: [number, number]): [number, number] => [W / 2 + (lng - cx) * kx * sc, H / 2 - (lat - cy) * sc];
   const d = (pts: [number, number][]) => pts.map((p, i) => `${i ? "L" : "M"}${f1(P(p)[0])} ${f1(P(p)[1])}`).join("");
+  // A flown leg bows into a gentle arc above the straight course (the plane flies it), as on the live chart.
+  const arc = (pts: [number, number][]) => {
+    const [a, b] = [P(pts[0]), P(pts[pts.length - 1])];
+    const [dx, dy] = [b[0] - a[0], b[1] - a[1]];
+    const len = Math.hypot(dx, dy) || 1;
+    let [nx, ny] = [-dy / len, dx / len];
+    if (ny > 0) [nx, ny] = [-nx, -ny]; // bow upward on the page
+    const k = len * 0.17 * 2; // the quadratic's control point sits at twice the bow height
+    return `M${f1(a[0])} ${f1(a[1])}Q${f1((a[0] + b[0]) / 2 + nx * k)} ${f1((a[1] + b[1]) / 2 + ny * k)} ${f1(b[0])} ${f1(b[1])}`;
+  };
 
   // the river and lakes from the destination's chart overlay
   let water = "";
@@ -68,9 +81,13 @@ export function routeFigureSvg({ id, routes, overlay, ink, label }: { id: string
   }).join("");
 
   // every leg: dashed under way, solid ashore, dotted in the air
+  const flown: string[] = [];
   const legs = routes.flatMap((r) => legsOf(r)).map((l) => {
-    const dash = SEA.has(l.mode) ? "9 6" : l.mode === "air" || l.mode === "flight" ? "2 6" : "";
-    return `<path d="${d(l.pts)}" fill="none" stroke="${ink.route}" stroke-width="${SEA.has(l.mode) ? 2.6 : 1.8}" stroke-linecap="round"${dash ? ` stroke-dasharray="${dash}"` : ""}/>`;
+    const air = AIR.has(l.mode);
+    const dash = SEA.has(l.mode) ? "9 6" : air ? "7 7" : "";
+    const path = air ? arc(l.pts) : d(l.pts);
+    if (air && !flown.includes(path)) flown.push(path);
+    return `<path d="${path}" fill="none" stroke="${ink.route}" stroke-width="${SEA.has(l.mode) ? 2.6 : 1.8}" stroke-linecap="${air ? "butt" : "round"}"${dash ? ` stroke-dasharray="${dash}"` : ""}/>`;
   }).join("");
 
   // the stops, once each, with their names
@@ -91,7 +108,10 @@ export function routeFigureSvg({ id, routes, overlay, ink, label }: { id: string
   const courses: [number, number][][] = [];
   const seenCourse = new Set<string>();
   for (const r of routes) { const s = sailOf(r); const k = d(s); if (s.length > 1 && !seenCourse.has(k)) { seenCourse.add(k); courses.push(s); } }
-  const hull = `<g transform="scale(1.8)"><path d="M12 0Q7 -4.3 -1 -4.5L-8.5 -3.7Q-10.5 0 -8.5 3.7L-1 4.5Q7 4.3 12 0Z"/></g>`;
+  // The hull, bow to +x, with the house pennant streaming aft from the masthead.
+  const hull = `<g transform="scale(1.8)"><path d="M12 0Q7 -4.3 -1 -4.5L-8.5 -3.7Q-10.5 0 -8.5 3.7L-1 4.5Q7 4.3 12 0Z"/><path class="pn" d="M5 -.3L-1.6 -3.6L.2 -1.3L-1.6 .9Z"/></g>`;
+  // The plane, nose to +x, seen from above: graphite with a crimson cheat line.
+  const plane = `<g transform="scale(1.6)"><path d="M10 0C9.4 -1.3 7.6 -1.6 5 -1.6L2 -1.6L-2.5 -9H-4.6L-2.4 -1.6H-7.6L-9.6 -4.4H-11L-10 0L-11 4.4H-9.6L-7.6 1.6H-2.4L-4.6 9H-2.5L2 1.6L5 1.6C7.6 1.6 9.4 1.3 10 0Z"/><path class="pn" d="M-8 -.45H6V.45H-8Z"/></g>`;
   const boats = courses.slice(0, 4).map((c, i) => {
     const pid = `${id}-sail${i ? `-${i}` : ""}`;
     const dur = Math.round(8 + 2.5 * c.length / 2);
@@ -102,9 +122,21 @@ export function routeFigureSvg({ id, routes, overlay, ink, label }: { id: string
       `<g class="ship-park" transform="translate(${f1(a[0])} ${f1(a[1])}) rotate(${f1(ang)})">${hull}</g>`;
   }).join("");
 
+  // one plane for each flown leg, flying its arc and resting at the far end before the next pass
+  const planes = flown.slice(0, 4).map((path, i) => {
+    const pid = `${id}-fly${i ? `-${i}` : ""}`;
+    // "M ax ayQcx cy bx by": park at b, facing along the arc's last tangent (from the control point to b)
+    const n = path.replace(/[MQ]/g, " ").trim().split(/\s+/).map(Number);
+    const ang = (Math.atan2(n[5] - n[3], n[4] - n[2]) * 180) / Math.PI;
+    return `<path id="${pid}" d="${path}" fill="none"/>` +
+      `<g class="ship">${plane}<animateMotion dur="7s" begin="${0.8 + i * 1.2}s" repeatCount="indefinite" rotate="auto" calcMode="spline" keySplines="0.45 0 0.55 1;0 0 1 1" keyPoints="0;1;1" keyTimes="0;0.7;1"><mpath href="#${pid}"/></animateMotion></g>` +
+      `<g class="ship-park" transform="translate(${f1(n[4])} ${f1(n[5])}) rotate(${f1(ang)})">${plane}</g>`;
+  }).join("");
+
   const css = `<style>#${id} .ship path,#${id} .ship-park path{fill:${ink.boat};stroke:${ink.ground};stroke-width:1.4;paint-order:stroke}` +
+    `#${id} .ship path.pn,#${id} .ship-park path.pn{fill:${CRIMSON};stroke:none}` +
     `#${id} .ship-park{display:none}@media (prefers-reduced-motion: reduce){#${id} .ship{display:none}#${id} .ship-park{display:inline}}</style>`;
 
   return `<svg id="${esc(id)}" class="jw-route-figure" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="${esc(label)}" style="display: block; width: 100%; height: auto; background: ${ink.ground}">` +
-    css + water + labels + legs + stops + boats + `</svg>`;
+    css + water + labels + legs + stops + boats + planes + `</svg>`;
 }

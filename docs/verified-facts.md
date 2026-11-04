@@ -7,6 +7,7 @@ register is the cross-site reminder.
 
 | Property | Verified fact | Source | Confirmed |
 |---|---|---|---|
+| James Wild (founder) | **First journey designed 1982**: designing journeys since 1982, the same year as exploring since 1982 (Eleuthera). Not 1983. Sailing since 1989, Tahiti since 1995, safaris since 2011, IATAN since 1990 unchanged. | James | James, 2 Nov 2026 |
 | Wilderness Desert Rhino Camp (Namibia, Palmwag) | **6 suites**, not 8 tents. | wildernessdestinations.com | James, 1 Nov 2026 |
 | Wilderness Kulala Desert Lodge (Namibia, Sossusvlei) | **21 rooms** (not 23); a **swimming pool, not an infinity pool**. | wildernessdestinations.com | James, 1 Nov 2026 |
 | Wilderness Little Kulala (Namibia) | The star beds are **roll-out beds on the deck**. | wildernessdestinations.com | James, 1 Nov 2026 |

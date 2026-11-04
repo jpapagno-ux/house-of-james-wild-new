@@ -9,7 +9,8 @@ import { recordHref } from "@/lib/ledger/urls";
 import { registryShip } from "@/lib/content/ships/registry";
 import { shipCard, watersCards } from "@/lib/content/ships/cards";
 import { exceptionalFewFor, collectionNo } from "@/lib/content/exceptional-few";
-import { volumeInk } from "@/lib/volumes";
+import { volumeInk, volumeMark } from "@/lib/volumes";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
 
 // French Polynesia (Tahiti) country page modules (James, 2 Nov 2026), on the archipelago template (voyages plan
 // Part 15): the lagoon atlas, the island-hopping routes on Air Tahiti's network, the ships that sail here, the
@@ -25,10 +26,16 @@ export default function FrenchPolynesia() {
   const stayHref = Object.fromEntries(fp.filter(pageReady).map((s) => [s.slug, recordHref("stay", s.slug)]));
   const ships = watersCards("tahiti");
   const shipHref = Object.fromEntries(["star-breeze", "wind-star"].map((k) => { const r = registryShip(k); const c = r ? shipCard(r) : null; return [k, c ? { name: c.name, href: c.href } : null]; }).filter(([, v]) => v)) as Record<string, { name: string; href: string }>;
+  // 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the Taha'a lagoon's own pins from the atlas (the Coral Garden from
+  // Tahiti Tourisme, Vahine from its record). Le Taha'a has no published position yet and no pass is on record.
+  const tahaa = LAGOONS.find((l) => l.key === "tahaa");
+  const tahaaPins = tahaa ? [...pins.filter((p) => tahaa.stays.includes(p.slug)).map((p) => ({ name: p.name, lat: p.lat, lng: p.lng })), ...tahaa.points.map((p) => ({ name: p.name, lat: p.lat, lng: p.lng }))] : [];
   const ef = ["pearl-resort-vahine-private-island", "the-brando-tetiaroa"].map((slug) => { const s = ready(slug); const e = s ? exceptionalFewFor(s.ledgerId) : null; return s && e ? { s, e } : null; }).filter((x): x is NonNullable<typeof x> => !!x);
   return (
     <>
       <LagoonAtlas lagoons={LAGOONS} charts={CHARTS} stays={pins} stayInk={volumeInk("stays")} />
+      {tahaaPins.length > 0 && <SeeIn3D page="destinations/oceania/tahiti#tahaa" id="see-tahaa-in-3d" kind="points" ink={volumeMark("voyages")} title="The Taha'a lagoon" exaggeration={1.8} playLabel="Fly the lagoon" points={tahaaPins}
+        intro="Taha'a and Raiatea rise from the lagoon they share: fly from Vahine on its motu to the Coral Garden on the west side." />}
       <IslandHops chart={CHARTS.whole} nodes={NODES} legs={LEGS} routes={ROUTES} unesco={MARQUESAS_UNESCO} stayHref={stayHref} shipHref={shipHref} airInk={volumeInk("voyages")} seaInk="#0C5D61" offerLine={ISLANDS_DREAM.name} />
 
       {ef.length > 0 && (
@@ -48,7 +55,7 @@ export default function FrenchPolynesia() {
         </section>
       )}
 
-      <section id="sail" className="mt-16 md:mt-24 border-t-2 pt-8 scroll-mt-32 lg:scroll-mt-[212px]" style={{ borderTopColor: volumeInk("voyages") }} aria-labelledby="fp-sail-heading">
+      <section id="sail" className="mt-16 md:mt-24 border-t-2 pt-8" style={{ borderTopColor: volumeInk("voyages") }} aria-labelledby="fp-sail-heading">
         <p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Sail it · Windstar in French Polynesia</p>
         <h2 id="fp-sail-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Which Windstar Ship Sails Tahiti?</h2>
         <p className="mt-3 text-[16px] max-w-3xl">Star Breeze, Windstar&rsquo;s 312-guest all-suite yacht, sails Tahiti year round from Papeete. From March 2027 Wind Star, its four-masted sailing yacht for 148 guests, joins her on the 7-night Dreams of Tahiti, calling at Raiatea every week. James has sailed Windstar in these islands himself, with his wife.</p>

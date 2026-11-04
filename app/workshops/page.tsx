@@ -82,12 +82,12 @@ export default function WorkshopsPage() {
             <Route r={W.trade} cta={<><Link href="/for-advisors" className="ledger-btn">Enter the Advisor Desk</Link><Link href="/for-advisors" className="ledger-btn-ghost">Request advisor access</Link></>} />
           </div>
 
-          <section id="season" aria-labelledby="season-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-28">
+          <section id="season" aria-labelledby="season-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">
             <p className="ledger-eyebrow ledger-crimson">House Workshops · Everyone welcome</p>
             <h2 id="season-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">The Season Ahead</h2>
             <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">Live destination conversations with James, our hosts and our partners. Reserve a seat, ask your questions and get to know the place before you go.</p>
             {next.length ? (
-              <div className="mt-8 grid md:grid-cols-3 gap-5">{next.map((s) => <div key={s.slug} id={s.slug} className="scroll-mt-28"><SessionCard s={s} /></div>)}</div>
+              <div className="mt-8 grid md:grid-cols-3 gap-5">{next.map((s) => <div key={s.slug} id={s.slug} className=""><SessionCard s={s} /></div>)}</div>
             ) : (
               <div className="mt-8 grid md:grid-cols-[auto_1fr_auto] gap-6 items-center border ledger-border p-6 md:p-8">
                 <span className="w-14 h-14 rounded-full border ledger-rule flex items-center justify-center ledger-crimson" aria-hidden="true"><CalendarClock className="w-6 h-6" strokeWidth={1.25} /></span>

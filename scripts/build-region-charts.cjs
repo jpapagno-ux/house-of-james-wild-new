@@ -11,6 +11,10 @@ const FEATS = feature(topo, topo.objects.countries).features;
 // Small islands (the Galápagos zoom) draw from the 1:10m stock.
 const topo10 = require("world-atlas/countries-10m.json");
 const FEATS10 = feature(topo10, topo10.objects.countries).features;
+// The world chart draws from the 1:110m stock: a page-sized world needs no coastline detail, and the
+// Compass Atlas ships it to the browser.
+const topo110 = require("world-atlas/countries-110m.json");
+const FEATS110 = feature(topo110, topo110.objects.countries).features;
 const stays = require("../lib/content/stays.json").stays;
 const reserves = require("../lib/content/reserves.json");
 // Library country pages (scripts/export-countries.py). A destination card (staysComing, no stays yet:
@@ -139,6 +143,10 @@ const REGIONS = {
     seas: [["Bohol Sea", 9.28, 124.62]],
     areas: [["Camiguin", 9.17, 124.73], ["Hibok-Hibok", 9.2, 124.67]],
     marks: [["Camiguin ✈", 9.2535, 124.707, "airport"], ["Mambajao", 9.25, 124.72, "town"], ["White Island", 9.26, 124.66, "water"]] },
+  // The world (3 Nov 2026): the Compass Atlas. Every country holding a Ledger record in ink; the
+  // reading's fits are flown to on it (components/compass/CompassAtlas.tsx). Frame leaves out the
+  // poles and the empty Pacific so the inhabited world fills the chart.
+  world: { all: true, lowres: true, frame: [-170, -56, 180, 72], seas: [["Pacific Ocean", -10, -140], ["Atlantic Ocean", 10, -35], ["Indian Ocean", -22, 78], ["Southern Ocean", -50, 30]] },
   "polar-antarctica": { frame: [-82, -72, -44, -50], focus: ["Antarctica"], seas: [["Drake Passage", -58.5, -64], ["Weddell Sea", -68, -50], ["Bellingshausen Sea", -69.5, -79], ["Scotia Sea", -56.5, -50]], areas: [["Antarctic Peninsula", -66.2, -64.6], ["Ushuaia", -55.3, -67.6], ["Punta Arenas", -52.7, -71.6], ["South Shetland Islands", -61.6, -57.4]] },
   "polar-arctic": { frame: [-62, 58, 34, 82], focus: ["Greenland", "Iceland", "Norway"], seas: [["Greenland Sea", 75, -8], ["Norwegian Sea", 68, 3], ["Baffin Bay", 72.5, -63], ["Denmark Strait", 67, -26], ["Barents Sea", 74.5, 31]], areas: [["Svalbard", 80.3, 20], ["Reykjavík", 63.6, -21.94]] },
 };
@@ -152,7 +160,8 @@ const inFeat = (pt, f) => polysOf(f.geometry).some((p) => pip(pt, p[0]));
 
 const points = (slug) => {
   const only = REGIONS[slug].country;
-  const pts = stays.filter((s) => (only ? s.countrySlug === only : s.regionSlug === slug) && s.coords).map((s) => [s.coords.lng, s.coords.lat]);
+  const all = !!REGIONS[slug].all; // the world chart (the Compass Atlas): every Ledger point
+  const pts = stays.filter((s) => (all || (only ? s.countrySlug === only : s.regionSlug === slug)) && s.coords).map((s) => [s.coords.lng, s.coords.lat]);
   for (const r of reserves.reserves || reserves) if (!only && r.stay && r.stay.regionSlug === slug && r.stay.coords) pts.push([r.stay.coords.lng, r.stay.coords.lat]);
   return pts;
 };
@@ -217,7 +226,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   const cards = cfg.country || cfg.focus ? [] : LIB_COUNTRIES.filter((c) => c.region === slug && c.staysComing).map((c) => c.atlasName);
   const focusNames = new Set(cfg.focus || [...FEATS.filter((f) => raw.some((p) => inFeat(p, f))).map((f) => f.properties.name), ...cards]);
   let focus = ""; const neighbors = [], flabels = [], nlabels = [];
-  for (const g of cfg.hires ? FEATS10 : FEATS) {
+  for (const g of cfg.hires ? FEATS10 : cfg.lowres ? FEATS110 : FEATS) {
     const d = geomPath(g.geometry); if (!d) continue;
     const big = polysOf(g.geometry).map((p) => S(p[0])).filter((r) => inside(ringBox(r))).sort((a, b) => area(b) - area(a))[0];
     const lab = big ? (() => { const [x, y] = centroid(big); return x > bounds.w && x < bounds.e && y > bounds.s && y < bounds.n ? { a: area(big), x: P([x, y])[0], y: P([x, y])[1], text: g.properties.name.replace("United Republic of ", "").replace("Dem. Rep. Congo", "DR Congo").replace("United States of America", "United States").replace(/^Macedonia$/, "North Macedonia").toUpperCase() } : null; })() : null;

@@ -2,7 +2,6 @@ import Image from "next/image";
 import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
 import FounderProof from "@/components/record/FounderProof";
-import { ShortFilmPanel } from "@/components/media/ShortFilm";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -62,7 +61,7 @@ function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50v
 }
 
 function Sec({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
-  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] ${className}`}>{children}</section>;
+  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 ${className}`}>{children}</section>;
 }
 
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
@@ -329,17 +328,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Vessel = voyage && V ? (
     <Sec id="vessel">
       <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
-      {film ? (
-        // The vessel's own film beside the photographs: tall, silent, looping.
-        <div className="mt-8 grid md:grid-cols-[minmax(0,260px)_1fr] gap-2 md:h-[460px]">
-          <ShortFilmPanel film={film} className="w-full max-w-[420px] mx-auto md:max-w-none md:h-full md:w-auto" sizes="(max-width: 768px) 100vw, 260px" />
-          {V.gallery && V.gallery.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-rows-2 gap-2 md:h-full">
-              {V.gallery.slice(0, 4).map((g) => <Ph key={g.url} img={g} label={g.alt} className="aspect-[4/3] md:aspect-auto md:h-full" sizes="(max-width: 768px) 50vw, 30vw" />)}
-            </div>
-          )}
-        </div>
-      ) : V.gallery && V.gallery.length > 0 && (
+      {/* The vessel's own film plays in the hero (Aliikai voyages, James 3 Nov 2026), so the gallery is photographs only. */}
+      {V.gallery && V.gallery.length > 0 && (
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">
           {V.gallery.slice(0, 5).map((g, i) => <Ph key={g.url} img={g} label={g.alt} className={i === 0 ? "col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-full" : "aspect-[4/3] md:aspect-auto md:h-full"} sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />)}
         </div>
@@ -368,7 +358,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      {(V.cabins || V.cabinsNote) && <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[212px]">The cabins</h3>}
+      {(V.cabins || V.cabinsNote) && <h3 id="cabins" className="ledger-display text-2xl mt-12">The cabins</h3>}
       {(V.cabins || V.cabinsNote) && <p className="mt-1 text-[14px] ledger-muted"><Fx t={V.cabinsNote ?? "Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax."} /></p>}
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -448,7 +438,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <a href="#enquire" className="ledger-btn ledger-btn--solid mt-6 inline-flex">Ask James for a price</a>
     </Sec>
   ) : (
-    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate != null ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="#enquire" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
+    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate != null ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="/plan" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
       options={T.calc.opts.map((o, i) => ({ id: `o${i}`, label: o.label, pp: o.pp, detail: [o.sub, o.sleeps].filter(Boolean).join(" · ") }))}
       addOns={T.calc.adds.map((a, i) => ({ id: `a${i}`, label: a.label, pp: a.pp, detail: a.sub.replace(/\s*\[[^\]]+\]/g, "") }))} />
   );
@@ -521,7 +511,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const Enquire = (
-    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-[212px]">
+    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14">
       <p className="ledger-eyebrow !text-paper/70">{voyage ? "Wild & Co Voyages" : "Plan this journey"}</p>
       <p className="ledger-display text-2xl md:text-3xl mt-2 max-w-2xl">{T.ctaline}</p>
       <div className="mt-6 flex flex-wrap gap-4 items-center">
@@ -569,7 +559,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
+          <RecordHero image={slides[0]} slides={slides} film={film} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.10)]" aria-hidden="true" />
@@ -583,7 +573,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         )}
         {Summary}
         <RecordNav items={nav} cta={voyage ? "Ask about dates" : "Plan this journey"} ctaHref="#enquire" />
-        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16">
+        {/* The first section follows the breadcrumb closely, without its rule: the full section gap there read as an
+            empty band between the breadcrumb and The Vessel (hero arrows fix, 3 Nov 2026). */}
+        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16 [&>div:first-child+section]:!mt-8 md:[&>div:first-child+section]:!mt-10 [&>div:first-child+section]:!border-t-0 [&>div:first-child+section]:!pt-0">
           <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>
           {order}
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />

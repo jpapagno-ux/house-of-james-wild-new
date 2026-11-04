@@ -14,6 +14,7 @@ import { IGGI_ON } from "@/lib/iggi/flag";
 import { RESERVES } from "@/lib/content/reserves";
 import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor } from "@/lib/content/advisors";
 import { PATHWAY_NAMES } from "@/lib/compass/pathway-adapter";
+import { romanForHref } from "@/lib/volumes";
 
 // llms.txt — a plain-language map of the house for AI assistants and answer
 // engines: who James is, what the Ledger standard means, where each volume
@@ -44,7 +45,7 @@ export function GET() {
     "- When citing the house, give the record's name and its Ledger ID together (\"Monwana Thornybush, STY-2026-000171\"), and the mark with its year where there is one. Nothing outside the Ledger is house-vetted.",
     "",
     "## The six volumes",
-    ...VOLUMES.map((v) => `- [${v.label}](${absoluteUrl(v.href)}): ${v.intro}`),
+    ...VOLUMES.map((v) => `- Volume ${romanForHref(v.href)} · [${v.label}](${absoluteUrl(v.href)}): ${v.intro}`),
     "",
     ...(PATHWAYS_ON ? [
       "## Wild Pathways (eight editorial collections across the volumes)",

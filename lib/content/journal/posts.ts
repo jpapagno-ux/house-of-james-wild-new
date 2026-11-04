@@ -288,7 +288,7 @@ export const POSTS: Record<string, JournalPost> = {
     planPlace: "Africa",
     faqs: [
       { q: "What is Wild & Co Safaris?", a: "Wild & Co Safaris is the African safari house of James Wild & Co. It plans personalized, advisor-led safaris with experienced guides, carefully selected camps and detailed destination knowledge." },
-      { q: "Who founded Wild & Co Safaris?", a: "James Papagno, founder of James Wild & Co. He has 44 years of travel behind him, has designed journeys since 1983 and has been on safari across Africa since 2011." },
+      { q: "Who founded Wild & Co Safaris?", a: "James Papagno, founder of James Wild & Co. He has 44 years of travel behind him, has designed journeys since 1982 and has been on safari across Africa since 2011." },
       { q: "Does Wild & Co Safaris offer private safaris?", a: "Yes. Wild & Co Safaris specializes in personalized and privately designed African journeys for couples, families, honeymooners, small groups and returning safari travelers." },
       { q: "Which African destinations can Wild & Co Safaris plan?", a: "Journeys may include South Africa, Botswana, Kenya, Tanzania, Zambia, Zimbabwe, Namibia, Rwanda, Madagascar, the Seychelles and other carefully selected regions across Africa." },
       { q: "How does the safari-planning process begin?", a: "It begins with a conversation about your interests, preferred pace, travel history, wildlife priorities and the kind of experience you want. From there, Wild & Co Safaris recommends the right destinations, season, camps and journey structure." },

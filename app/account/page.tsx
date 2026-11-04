@@ -1,22 +1,31 @@
 import Link from "next/link";
 import { requireTraveler } from "@/lib/booking-live/account";
+import { quoteState } from "@/lib/booking-live/bookings";
 
 export const metadata = { title: "My Folio" };
 
 // The traveler's dashboard: counts and the latest of each shelf.
 export default async function AccountHome() {
   const { sb, user } = await requireTraveler("/account");
-  const [{ data: profile }, { count: saved }, { data: folios }] = await Promise.all([
+  const [{ data: profile }, { count: saved }, { data: folios }, { data: quotes }, { count: booked }] = await Promise.all([
     sb.from("profiles").select("first_name").eq("id", user.id).single(),
     sb.from("favorites").select("id", { count: "exact", head: true }),
     sb.from("folios").select("id, title, status, owner_user_id").order("updated_at", { ascending: false }).limit(4),
+    sb.from("quotes").select("status, advisor_status, expires_at, held_until").limit(100),
+    sb.from("bookings").select("id", { count: "exact", head: true }).in("status", ["confirmed", "deposit_paid", "paid"]),
   ]);
+  const open = (quotes ?? []).filter((q) => q.status !== "converted" && ["waiting", "held", "confirmed"].includes(quoteState(q))).length;
   const hello = profile?.first_name ? `Welcome back, ${profile.first_name}` : "Welcome to your Folio";
   return (
     <section>
       <h1 className="ledger-display text-[2rem] md:text-[2.6rem] leading-[1.1]">{hello}</h1>
       <p className="mt-3 text-[17px] max-w-2xl ledger-muted">A Folio is your shelf, not a booking. Save what calls to you; when it&rsquo;s time, the house confirms availability and prices with you directly.</p>
-      <div className="mt-8 grid gap-6 md:grid-cols-3">
+      <div className="mt-8 grid gap-6 md:grid-cols-4">
+        <Link href="/account/trips" className="border ledger-rule p-6 hover:bg-paper-card block">
+          <p className="ledger-eyebrow">Trips</p>
+          <p className="ledger-display text-[2.4rem] mt-2">{(booked ?? 0) + open}</p>
+          <p className="text-[13px] ledger-muted">{booked ?? 0} booked · {open} with the house</p>
+        </Link>
         <Link href="/account/favorites" className="border ledger-rule p-6 hover:bg-paper-card block">
           <p className="ledger-eyebrow">Saved stays</p>
           <p className="ledger-display text-[2.4rem] mt-2">{saved ?? 0}</p>

@@ -46,7 +46,7 @@ export default function AdvisorsIndex() {
           <header className="max-w-3xl">
             <p className="ledger-eyebrow ledger-crimson">Advisor-led · Advisor-built</p>
             <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">The Advisors of the House</h1>
-            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s DNA below is theirs — the journeys they plan, the places they know, their own line — stated and confirmed by them in the house Ledger.</p>
+            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s DNA below is theirs: the journeys they plan, the places they know, their own line, stated and confirmed by them in the house Ledger.</p>
           </header>
 
           <div className="mt-10"><AnswerBlock>{answer}</AnswerBlock></div>
@@ -59,7 +59,7 @@ export default function AdvisorsIndex() {
                   <AdvisorCard a={a} n={i + 1} />
                   {a.dna && (
                     <div className="px-1 text-[13.5px] leading-relaxed">
-                      <p><span className="font-mono text-[11px] ledger-crimson">{a.ledgerId}</span>{a.dna.pathways.length ? <> · {a.dna.pathways.map((p) => PATHWAYS[p as PathwayId]?.name ?? p).join(", ")}</> : null}</p>
+                      <p><span className="ledger-id text-[11px]">{a.ledgerId}</span>{a.dna.pathways.length ? <> · {a.dna.pathways.map((p) => PATHWAYS[p as PathwayId]?.name ?? p).join(", ")}</> : null}</p>
                       {a.dna.countries.length > 0 && <p className="ledger-muted mt-0.5">Knows {a.dna.countries.map(countryName).join(", ")}.</p>}
                       {a.dna.matchNote && <p className="mt-1 ledger-display italic text-[15px]" style={{ color: GREEN_INK }}>&ldquo;{a.dna.matchNote}&rdquo;</p>}
                     </div>
@@ -85,7 +85,7 @@ export default function AdvisorsIndex() {
             </section>
           )}
 
-          <PlanClose title="Start with the house." line="Tell us where you're drawn and when. James, or the advisor who knows the place, writes back — a person, not a form." />
+          <PlanClose title="Start with the house." line="Tell us where you're drawn and when. James, or the advisor who knows the place, writes back: a person, not a form." />
         </div>
       </main>
       <JsonLd data={graph(

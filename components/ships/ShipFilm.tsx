@@ -9,7 +9,7 @@ export default function ShipFilm({ film, name, poster, credit }: { film: FilmDat
   const id = filmId(film);
   const title = film && typeof film === "object" && film.title ? film.title : `${name}, the film`;
   return (
-    <section id="film" className="mt-16 md:mt-20 scroll-mt-32 lg:scroll-mt-[212px]" aria-label={`Film of ${name}`}>
+    <section id="film" className="mt-16 md:mt-20" aria-label={`Film of ${name}`}>
       <div className="relative aspect-[16/9] md:aspect-[21/9] border ledger-border overflow-hidden bg-ink">
         {id ? (
           <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`} title={title} loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" className="absolute inset-0 w-full h-full" />

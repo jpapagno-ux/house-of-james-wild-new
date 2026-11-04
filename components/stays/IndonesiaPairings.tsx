@@ -29,7 +29,7 @@ function vesselCard(p: Pairing): Card | null {
 function Block({ id, eyebrow, title, intro, cards }: { id: string; eyebrow: string; title: string; intro: string; cards: Card[] }) {
   if (!cards.length) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-h`}>
+    <section id={id} className="mt-16 md:mt-24" aria-labelledby={`${id}-h`}>
       <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>
       <h2 id={`${id}-h`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">{title}</h2>
       <p className="mt-3 text-[16px] leading-relaxed ledger-muted max-w-3xl">{intro}</p>

@@ -1,82 +1,97 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import PostMark from "./PostMark";
+import { useEffect, useId, useState, type MouseEvent } from "react";
 
-// The verdict's mark on the hero, in one of three styles while James
-// chooses: the luggage tag, a rubber stamp pressed onto the photograph, or a
-// small taped note, or the postmark (stamp, cancellation and a line in
-// James's hand). Preview any style on any verdict page with
-// ?mark=post|tag|stamp|note.
+// The house's mark on the hero (James, 3 Nov 2026: "the square needs to go"):
+// the round ink stamp alone, pressed straight onto the photograph in ivory
+// ink, no paper card, frame or shadow behind it. Beside it, in James's hand,
+// "a note from the house" with a hand-drawn arrow: a real link that scrolls
+// to the note on the page (the verdict, "Why it's here" or the founder's
+// note), clearing the sticky header through the site-wide scroll-padding.
+// The arrow draws itself once, then nudges toward the note a few times; no
+// motion with reduced motion. No note on the page, no nudge.
 export type MarkStyle = "post" | "tag" | "stamp" | "note";
-type P = { line: string; where: string; when: string; style: MarkStyle; image?: string; script?: string; label?: string; href?: string };
-// Journeys and voyages: the stamp inked in a colour from the destination's palette, with its own ring, nudge and link.
+type P = { line: string; where: string; when: string; style?: MarkStyle; image?: string; script?: string; label?: string; href?: string };
+// Journeys and voyages: the stamp inked in a colour from the destination's palette, with its own ring and nudge.
 type StampExtra = { tint?: string; sub?: string; nudge?: string; cta?: string };
 
-export function Stamp({ line, where, when, script, label = "The verdict", href = "#verdict", tint = "#fff3ea", sub, nudge, cta }: Omit<P, "style"> & StampExtra) {
-  const [open, setOpen] = useState(false);
-  const [seen, setSeen] = useState(false);
+export function Stamp({ where, when, label = "The verdict", href = "#verdict", tint = "#FFFDF7", sub, nudge }: Omit<P, "style"> & StampExtra) {
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, "");
+  const target = href.startsWith("#") ? href.slice(1) : "";
+  const [hasNote, setHasNote] = useState(false);
+  useEffect(() => { setHasNote(!!target && !!document.getElementById(target)); }, [target]);
   const year = when.match(/\d{4}/)?.[0] ?? when;
+  const words = nudge ?? (label === "The verdict" ? "the founder's take" : "a note from the house");
+  const name = nudge || label === "The verdict" ? `Read the note from the house: ${words}` : "Read the note from the house";
+  const go = (e: MouseEvent<HTMLAnchorElement>) => {
+    const t = document.getElementById(target);
+    if (!t) return;
+    e.preventDefault();
+    history.replaceState(null, "", `#${target}`);
+    const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    t.scrollIntoView({ behavior: still ? "auto" : "smooth", block: "start" });
+    if (!t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
+    t.focus({ preventScroll: true });
+    // Sections above can grow while the page scrolls past them (images and reveals load in), which
+    // leaves the note short of its mark: once the scroll settles, set it under the header again.
+    // (A reader who scrolls, taps or types meanwhile keeps control: the checks stop.)
+    let left = false;
+    const leave = () => { left = true; };
+    const evs = ["wheel", "touchstart", "keydown"] as const;
+    evs.forEach((ev) => window.addEventListener(ev, leave, { once: true, passive: true }));
+    const settle = () => {
+      if (left) return;
+      const pad = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      const off = t.getBoundingClientRect().top - pad;
+      const end = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+      if (Math.abs(off) > 4 && !end) t.scrollIntoView({ behavior: "auto", block: "start" });
+    };
+    const checks = () => { [120, 500, 1100].forEach((ms) => setTimeout(settle, ms)); setTimeout(() => evs.forEach((ev) => window.removeEventListener(ev, leave)), 1200); };
+    if ("onscrollend" in window) window.addEventListener("scrollend", checks, { once: true });
+    else setTimeout(checks, 900);
+  };
   return (
-    <div className="relative mb-5 md:mb-0 md:absolute md:right-10 md:top-[250px] z-20">
-      <button type="button" onClick={() => { setOpen((o) => !o); setSeen(true); }} aria-expanded={open} title="Tap to read the note" aria-label={`James Wild & Co · ${label}: tap to read the note`}
-        className="relative block w-[92px] h-[92px] md:w-[132px] md:h-[132px] rounded-full rotate-[-12deg] hover:rotate-[-6deg] transition-transform"
-        style={{ color: tint, boxShadow: `inset 0 0 0 3px ${tint}, inset 0 0 0 7px transparent, inset 0 0 0 8.5px ${tint}cc`, filter: "drop-shadow(0 1px 2px rgba(0,0,0,.65))" }}>
-        <svg viewBox="0 0 132 132" className="absolute inset-0 w-full h-full" aria-hidden="true">
-          <defs><path id="sr" d="M66 66 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" /><filter id="worn"><feTurbulence baseFrequency="1.4" numOctaves="1" seed="3" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter></defs>
-          <g filter="url(#worn)" fill="currentColor" style={{ fontFamily: "ui-monospace, monospace" }}>
-            <g className="jw-spin"><text fontSize="9.5" letterSpacing="2.6"><textPath href="#sr" startOffset="0">{`JAMES WILD & CO · ${label.toUpperCase()} ·`}</textPath></text></g>
+    <div data-house-note className="relative z-20 mb-4 flex items-center gap-1.5 md:gap-2 lg:mb-0 lg:absolute lg:right-10 lg:top-[250px] lg:flex-row-reverse">
+      {/* the stamp: ink only, transparent on the photograph */}
+      <span className="jw-note-stamp block shrink-0 w-[68px] h-[68px] md:w-[96px] md:h-[96px] lg:w-[120px] lg:h-[120px]" style={{ color: tint }} aria-hidden="true">
+        <svg viewBox="0 0 132 132" className="block w-full h-full overflow-visible">
+          <defs>
+            <path id={`${uid}r`} d="M66 66 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0" />
+            <filter id={`${uid}w`}><feTurbulence baseFrequency="1.4" numOctaves="1" seed="3" /><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.2 1.6" /><feComposite in="SourceGraphic" operator="in" /></filter>
+          </defs>
+          <g filter={`url(#${uid}w)`} fill="currentColor" style={{ fontFamily: "ui-monospace, monospace" }}>
+            <circle cx="66" cy="66" r="63" fill="none" stroke="currentColor" strokeWidth="3" />
+            <circle cx="66" cy="66" r="57.5" fill="none" stroke="currentColor" strokeWidth="1.3" />
+            <g className="jw-spin"><text fontSize="9.5" letterSpacing="2.6"><textPath href={`#${uid}r`} startOffset="0">{`JAMES WILD & CO · ${label.toUpperCase()} ·`}</textPath></text></g>
             <text x="66" y="60" textAnchor="middle" fontSize="24" style={{ fontFamily: "Georgia, serif", fontStyle: "italic" }}>JW</text>
             <line x1="40" y1="68" x2="92" y2="68" stroke="currentColor" strokeWidth="1" />
             <text x="66" y="81" textAnchor="middle" fontSize="8" letterSpacing="1.5">{where.toUpperCase().slice(0, 16)}</text>
             <text x="66" y="92" textAnchor="middle" fontSize="8" letterSpacing="1.5">{(sub ?? year).toUpperCase()}</text>
           </g>
         </svg>
-      </button>
-      {!open && !seen && (
-        <button type="button" onClick={() => { setOpen(true); setSeen(true); }} className="jw-nudge absolute left-[74px] top-[70px] md:left-auto md:right-[116px] md:top-[98px] flex md:flex-row-reverse items-end gap-0.5 drop-shadow-[0_1px_2px_rgba(0,0,0,.85)]" style={{ color: tint }} aria-label={`Read ${nudge ?? (label === "The verdict" ? "the founder's take" : "the note from the house")}`}>
-          {/* hand-drawn arrow: its tip sits on the stamp's lower edge (up-left on phones, up-right on desktop) */}
-          <svg viewBox="0 0 44 40" className="w-9 h-8 md:w-11 md:h-10 -scale-x-100 md:scale-x-100 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path d="M3 37 C 14 36, 30 28, 39 5" />
-            <path d="M31 8 L 39.5 4 L 41 13" />
-          </svg>
-          <span className="mb-[-6px] text-[15px] md:text-[19px] leading-none whitespace-nowrap -rotate-[4deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{nudge ?? (label === "The verdict" ? "the founder's take" : "a note from the house")}</span>
-        </button>
+      </span>
+      {hasNote && (
+        // The words and their hand-drawn arrow point into the stamp beside them (James, 3 Nov 2026: "check the arrows
+        // on the listings"): from 1024 the stamp sits right of the words, below it the stamp sits left, so the row
+        // reverses and the arrow is mirrored. The arrow drops out under 360px, where the row has no room for it.
+        <a href={`#${target}`} onClick={go} aria-label={name} data-house-nudge
+          className="jw-note-nudge group relative flex flex-row-reverse lg:flex-row items-center gap-1 md:gap-1.5 py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/80"
+          style={{ color: tint }}>
+          <span className="text-[14px] md:text-[19px] leading-[1.5] whitespace-nowrap -rotate-[4deg] decoration-1 underline-offset-[5px] group-hover:underline group-focus-visible:underline" style={{ fontFamily: "'Homemade Apple', cursive" }}>{words}</span>
+          <span className="hidden min-[360px]:block shrink-0 -scale-x-100 lg:scale-x-100" aria-hidden="true">
+            <svg viewBox="0 0 44 28" className="jw-note-arrow block w-8 h-5 md:w-11 md:h-7 overflow-visible" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <path pathLength={1} d="M3 21 C 12 7, 26 5, 39 15" />
+              <path pathLength={1} d="M35.6 7.8 L 39 15 L 31 14.3" />
+            </svg>
+          </span>
+        </a>
       )}
-      {open && (
-        <div className="absolute left-0 md:left-auto md:right-0 top-[100px] md:top-[140px] w-[260px] md:w-[290px] z-30 bg-[#fdfcf8] text-[#2b2622] border border-[#e7e1d4] p-4 shadow-[0_12px_28px_-12px_rgba(0,0,0,.55)]">
-          <p className="ledger-eyebrow !text-[9.5px] !text-[#8b3a2e]">{label} · {where} · {when}</p>
-          {script && <p className="mt-2 text-[15px] text-[#3b2716] -rotate-[2deg]" style={{ fontFamily: "'Homemade Apple', cursive" }}>{script}</p>}
-          <p className="mt-2 ledger-display italic text-[1rem] leading-snug">&ldquo;{line}&rdquo;</p>
-          <a href={href} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">{cta ?? (href === "#verdict" ? "Read the full note ↓" : "Read why it's here ↓")}</a>
-        </div>
-      )}
-    </div>
-  );
-}
-
-function TapedNote({ line, where, when }: Omit<P, "style">) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="relative mb-5 md:mb-0 md:absolute md:right-10 md:top-[256px] z-20">
-      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open}
-        className={`relative block text-left bg-[#fdfcf8] text-[#2b2622] rotate-[3deg] hover:rotate-[1deg] transition-all duration-500 shadow-[0_10px_22px_-10px_rgba(0,0,0,.6)] ${open ? "w-[250px] md:w-[280px] p-4" : "w-[138px] md:w-[168px] px-3 py-2.5"}`}>
-        <span className="absolute -top-2 left-1/2 -translate-x-1/2 w-12 h-4 bg-[#e9dfcb]/90 rotate-[-3deg]" aria-hidden="true" />
-        <span className="block ledger-eyebrow !text-[9px] !text-[#8b3a2e]">The verdict</span>
-        <span className={`ledger-display italic leading-snug mt-1 ${open ? "block text-[1rem]" : "text-[0.85rem] md:text-[0.92rem] line-clamp-2"}`}>&ldquo;{line}&rdquo;</span>
-        <span className="mt-1.5 flex items-center justify-between text-[9px] tracking-[0.14em] uppercase text-ink-faint"><span className="truncate">{open ? `${where} · ${when}` : when}</span><span className="ledger-display normal-case italic text-[13px] text-[#3b2716] tracking-normal">JW</span></span>
-        {open && <a href="#verdict" onClick={(e) => e.stopPropagation()} className="mt-3 inline-block text-[10.5px] tracking-[0.16em] uppercase underline underline-offset-4">Read the full note ↓</a>}
-      </button>
     </div>
   );
 }
 
 export default function HeroMark(p: P) {
-  const [style, setStyle] = useState<MarkStyle>(p.style);
-  useEffect(() => { const m = new URLSearchParams(location.search).get("mark"); if (m === "post" || m === "stamp" || m === "note") setStyle(m); }, []);
-  if (style === "post") return <PostMark line={p.line} where={p.where} when={p.when} image={p.image} script={p.script ?? "Worth your time. JW"} label={p.label} href={p.href} />;
-  if (style === "stamp") return <Stamp {...p} />;
-  if (style === "note") return <TapedNote {...p} />;
-  // The luggage tag is retired (James, 30 Oct 2026): a "tag" request draws the stamp.
+  // The postmark, the luggage tag and the taped note are retired (James, 30 Oct and 3 Nov 2026):
+  // every style draws the round ink stamp, with no paper behind it.
   return <Stamp {...p} />;
 }

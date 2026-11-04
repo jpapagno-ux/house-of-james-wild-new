@@ -112,7 +112,7 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
   return (
     <section className="mt-12" aria-labelledby="flyover-title">
       <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] gap-6 lg:gap-10 items-start">
-        <figure className="min-w-0 border-[3px] border-double border-graphite bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]">
+        <figure className="min-w-0 border-[3px] border-double border-graphite bg-paper shadow-[0_10px_30px_rgba(30,41,57,0.18)]" data-map="chart">
           <div ref={box} className="relative overflow-hidden bg-mist">
             {safe ? (
               /* The still close chart: the same in-flow chart every country page draws (overlays included). */

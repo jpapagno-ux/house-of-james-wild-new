@@ -23,7 +23,7 @@ export const SITE = {
   },
   exploringSince: "1982",
   sailingSince: "1989",
-  designingSince: "1983",
+  designingSince: "1982",
   safariSince: "2011",
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
   // hello@ is the house address: customer enquiries, Travel Notes and all
@@ -60,13 +60,15 @@ export type MegaMenu = {
 
 // Utility row: trust and contact, above the main bar.
 export const UTILITY_NAV: NavLink[] = [
+  { label: "How the house works", href: "/how-the-house-works" },
   { label: "The Compass", href: "/compass" },
   { label: "The Ledger", href: "/the-ledger" },
   { label: "Meet James", href: "/about/founder" },
   { label: "For Advisors", href: "/for-advisors" },
 ];
 
-// Main bar: the five volumes, then Destinations and Journal.
+// Main bar: the volumes in house order (I Stays, II Safaris, III Gatherings, IV Voyages,
+// V Europe, VI Overland: lib/volumes.ts), then Destinations and Journal.
 export const VOLUMES: MegaMenu[] = [
   {
     label: "Stays",
@@ -121,17 +123,6 @@ export const VOLUMES: MegaMenu[] = [
     ledger: [],
   },
   {
-    label: "Overland",
-    href: "/overland",
-    tone: volumeLeather("overland"),
-    intro: "Land routes James designed, with what to expect and what to avoid.",
-    browse: [
-      { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
-      { label: "Designed by James", href: "/overland?stamp=designed" },
-    ],
-    ledger: [],
-  },
-  {
     label: "Other Europe",
     href: "/europe",
     tone: volumeLeather("europe"),
@@ -140,6 +131,17 @@ export const VOLUMES: MegaMenu[] = [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },
       { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
       { label: "River cruises, before or after", href: "/voyages/rivers" },
+    ],
+    ledger: [],
+  },
+  {
+    label: "Overland",
+    href: "/overland",
+    tone: volumeLeather("overland"),
+    intro: "Land routes James designed, with what to expect and what to avoid.",
+    browse: [
+      { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
+      { label: "Designed by James", href: "/overland?stamp=designed" },
     ],
     ledger: [],
   },

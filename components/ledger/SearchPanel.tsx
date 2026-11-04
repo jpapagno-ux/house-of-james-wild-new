@@ -9,6 +9,7 @@ import { DESK_ADVISORS } from "@/lib/content/advisors";
 import { VOLUME_LABEL } from "@/lib/content/advisor-desk";
 import { GREEN_INK } from "@/lib/content/advisor-desk";
 import { VESSEL_SLUGS, vesselHref } from "@/lib/content/vessels";
+import { lockScroll } from "@/lib/scroll-lock";
 
 // Vessels filed as stays are Voyages (lib/content/vessels.ts): they file under "Ships & voyages",
 // never "Stays", and point at their ship page where one is built.
@@ -79,8 +80,10 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
   }, [open, docs]);
 
   useEffect(() => {
-    if (open) setTimeout(() => input.current?.focus(), 30);
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open) return;
+    const t = setTimeout(() => input.current?.focus({ preventScroll: true }), 30);
+    const release = lockScroll();
+    return () => { clearTimeout(t); release(); };
   }, [open]);
 
   useEffect(() => {

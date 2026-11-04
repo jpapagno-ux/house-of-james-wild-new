@@ -10,7 +10,8 @@ import { padFilter } from "@/components/ledger/VolumeKit";
 //
 //   tone "ink"   pressed from the stamp pad: texture and multiply, for white pages (hub, cards)
 //   tone "clean" no texture: crisp at badge sizes and in print
-//   tone "dark"  the onDark set, for navy grounds and photographs
+//   tone "dark"  the onDark set, for navy grounds and photographs; pressed with the same pad texture
+//                (James, 2 Nov 2026: every stamp reads like a ledger stamp, transparent, never a sticker)
 // Below 64px it draws the badge cut: bezel, sun, horizon and swell, no lettering.
 
 const MONO = "IBM Plex Mono, ui-monospace, monospace";
@@ -67,7 +68,7 @@ export function horizonSvg({ size = 180, tone = "ink", id = "hz" }: { size?: num
   const body = badge
     ? `<circle cx="100" cy="100" r="90" fill="none" stroke="${t.ink}" stroke-width="10"/><circle cx="100" cy="100" r="78" fill="none" stroke="${t.ink}" stroke-width="3"/>${motif(k, t, true)}`
     : `<circle cx="100" cy="100" r="93" fill="none" stroke="${t.ink}" stroke-width="4"/><circle cx="100" cy="100" r="88" fill="none" stroke="${t.ink}" stroke-width="1"/>${bezel(t)}${ringText(k, t)}<circle cx="100" cy="100" r="58" fill="none" stroke="${t.ink}" stroke-width="1.6"/>${motif(k, t, false)}`;
-  const textured = tone === "ink" && !badge;
+  const textured = tone !== "clean" && !badge;
   return `<svg viewBox="0 0 200 200" width="${size}" height="${size}" role="img" aria-label="On the Horizon, the James Wild &amp; Co offers stamp" style="overflow:visible">${textured ? `<defs>${padFilter(`${k}f`, 63)}</defs><g filter="url(#${k}f)">${body}</g>` : body}</svg>`;
 }
 

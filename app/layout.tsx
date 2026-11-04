@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 // House type (James, 29 Oct 2026, option C): Cormorant Garamond for titles, Manrope for text.
+import "@fontsource/cormorant-garamond/300.css";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
 import "@fontsource/cormorant-garamond/500.css";
@@ -19,7 +20,9 @@ import { volumeCss } from "@/lib/volumes";
 import JsonLd from "@/components/ledger/JsonLd";
 import SiteFooter from "@/components/ledger/SiteFooter";
 import MobileActionBar from "@/components/ledger/MobileActionBar";
+import MapClear from "@/components/ledger/MapClear";
 import { ScrollProgress } from "@/components/ledger/Motion";
+import ScrollToTop from "@/components/ledger/ScrollToTop";
 import { founder, graph, organization, website } from "@/lib/schema";
 import { isIndexable } from "@/lib/seo";
 import { SITE } from "@/lib/site";
@@ -49,9 +52,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <ScrollProgress />
+        <ScrollToTop />
         {children}
         <SiteFooter />
         <MobileActionBar />
+        <MapClear />
         <JsonLd data={graph(organization(), founder(), website())} />
       </body>
     </html>

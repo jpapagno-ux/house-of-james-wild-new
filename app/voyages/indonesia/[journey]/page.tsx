@@ -14,11 +14,13 @@ import ShipCard from "@/components/ships/ShipCard";
 import { journeyFrom } from "@/components/ships/CharterJourneys";
 import { JOURNEYS, JOURNEY_FLEETS, founderFavourites, journeyBySlug, journeyPath, journeyRouteId } from "@/lib/content/ships/journeys";
 import { readRoute, shipMapHtml } from "@/lib/content/ships/routes";
+import { terrainRoute } from "@/components/maps/terrain/routed";
 import { registryShip } from "@/lib/content/ships/registry";
 import { shipCard, type ShipCardData } from "@/lib/content/ships/cards";
 import { undash } from "@/lib/content/ships/types";
 import { partnerPath } from "@/lib/content/partners";
-import { volumeInk } from "@/lib/volumes";
+import { volumeInk, volumeMark } from "@/lib/volumes";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
@@ -31,7 +33,7 @@ import { graph } from "@/lib/schema";
 export const dynamicParams = false;
 export function generateStaticParams() { return JOURNEYS.map((j) => ({ journey: j.slug })); }
 type P = { params: Promise<{ journey: string }> };
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 
 export async function generateMetadata({ params }: P) {
@@ -85,6 +87,11 @@ export default async function JourneyPage({ params }: P) {
 
           <ShipItinerary ship={j.short} itineraries={[{ name: `${j.short}, ${j.nights} nights`, nights: j.nights, direction: `${j.embark.split(",")[0]} round trip`, days: j.days.map((d) => ({ ...d, title: t(d.title), summary: t(d.summary) })) }]} map={map}
             eyebrow="A typical week, day by day" title={`What Does a Week of ${j.short} Look Like?`} intro={`${t(j.intro)} Scroll the log and the chart sails the route as you read.`} />
+
+          {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): directly below the route chart, which stays as it is. */}
+          {j.slug === "komodo-and-flores-charter" && <SeeIn3D page="voyages/indonesia/komodo-and-flores-charter" kind="voyage" ink={volumeMark("voyages")} title={j.name} exaggeration={1.6}
+            route={terrainRoute(j.short, route, j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode })))}
+            intro="The same typical week over the land itself: the ridges of Komodo and western Flores standing up from the sea, with the yacht's line drawn day by day. Press Play the voyage, or turn the map yourself." />}
 
           <section id="dive-flags" className={SEC} aria-labelledby="dive-flags-h">
             <SectionHead eyebrow="For divers" title="Where Are the Dive Flags on This Route?" icon="wave" intro="A light touch: the sites the operators name on this week, with a PADI instructor or dive team aboard every yacht. The dive guide picks the sites on the day, by tide and conditions." />

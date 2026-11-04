@@ -132,6 +132,21 @@ export function volumeCss(): string {
 
 export const VOLUME_ORDER: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];
 
+// Volume numbering (James, 3 Nov 2026): one system everywhere, the romans above.
+// I Stays, II Safaris, III Gatherings, IV Voyages, V Europe, VI Overland. Never
+// write "Volume 05" or an index-based number: read the roman from here.
+/** A volume's roman numeral ("IV"). */
+export const volumeRoman = (k: VolumeKey) => VOLUME_STYLES[k].roman;
+/** The roman for a top-level path ("/europe" → "V"), or "" when the path is not a volume. */
+export const romanForHref = (href: string) => { const k = volumeForHref(href); return k ? VOLUME_STYLES[k].roman : ""; };
+/** The standard volume eyebrow: "Volume IV · Voyages", with optional extra parts after it. */
+export const volumeEyebrow = (k: VolumeKey, name: string = VOLUME_STYLES[k].short, ...rest: string[]) => [`Volume ${VOLUME_STYLES[k].roman}`, name, ...rest].join(" · ");
+/** Sorts anything with a volume path into the house order (I to VI). */
+export const byVolumeOrder = <T extends { href?: string; path?: string }>(a: T, b: T) => {
+  const i = (x: T) => { const k = volumeForHref(x.href ?? x.path ?? ""); return k ? VOLUME_ORDER.indexOf(k) : 99; };
+  return i(a) - i(b);
+};
+
 // Compatibility map for the Wild Pathways brief (Foundation V1.3 §3), whose
 // VOL-01…06 numbering differs from the romans James approved on 29 Oct 2026.
 // The brief's IDs are aliases only: nothing live is renumbered, and pages,

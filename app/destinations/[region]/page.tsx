@@ -32,6 +32,10 @@ import Doors, { type Door } from "@/components/destination/Doors";
 import ChooseYourWay from "@/components/destination/ChooseYourWay";
 import { touristTrip } from "@/lib/schema";
 import PlanBand from "@/components/destination/PlanBand";
+import ComingTicker from "@/components/coming/ComingTicker";
+import { liveBoard } from "@/lib/content/board";
+import { comingOn } from "@/lib/content/whats-coming";
+import { liveBoardOn } from "@/lib/content/country-layout";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import IslandZoom from "@/components/destination/IslandZoom";
 import { PathwayChip } from "@/components/pathways/Pathway";
@@ -113,7 +117,9 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           ? <RecordHero image={{ url: r.hero, alt: `${r.name}: ${r.tagline}` }} eyebrow="Destinations · Region" title={r.name} tagline={r.tagline} glance={<GlanceBar glance={glance} />} />
           : <div className="pt-36 pb-10 max-w-ledger mx-auto px-5 md:px-10"><p className="ledger-eyebrow ledger-crimson">Destinations · Region</p><h1 className="ledger-display text-[2.6rem] md:text-6xl mt-3">{r.name}</h1><p className="ledger-display italic text-xl mt-3 ledger-muted">{r.tagline}</p></div>}
 
-        <nav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
+        {/* The region's live board (lib/content/country-layout.ts liveBoardOn): every country in it, in one row. */}
+        {liveBoardOn(r.slug) && <ComingTicker entries={liveBoard(comingOn(), { regionSlug: r.slug, regionName: r.name })} label={`${r.name}: the live board`} compact />}
+        <nav data-subnav aria-label="Regions" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
               {REGIONS.map((x) => x.slug === r.slug
@@ -137,7 +143,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           </div>
 
           {chart && (mapItems.length > 0 || r.slug.startsWith("polar")) && (
-            <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="region-map-heading">
+            <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="region-map-heading">
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
                 <div>
                   <p className="ledger-eyebrow ledger-crimson">The Ledger in {r.name} · {mapItems.length} on the chart</p>
@@ -210,7 +216,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           </section>
 
           {guidesFor(r.slug).length > 0 && (
-            <section id="field-guides" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guides-heading">
+            <section id="field-guides" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="guides-heading">
               <p className="ledger-eyebrow ledger-crimson">Free to download or print</p>
               <h2 id="guides-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Field Guides for {r.name}</h2>
               <ul className="mt-8 grid gap-6 lg:grid-cols-2">{guidesFor(r.slug).map((fg) => <li key={fg.key}><GuideOffer guide={fg} source={`region:${r.slug}`} variant="compact" className="h-full" /></li>)}</ul>

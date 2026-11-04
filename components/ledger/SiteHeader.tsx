@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
 import Wordmark from "@/components/ledger/Wordmark";
 import { JwcoSeal } from "./Marks";
@@ -10,8 +10,10 @@ import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
 import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
+import SignInDoors from "./SignInDoors";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, LINKED_VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
+import { setOverlay } from "@/lib/overlay";
 
 // Link guard: in production only built pages appear in the menus.
 const VOLUMES = live(ALL_VOLUMES).map((v) => ({ ...v, browse: live(v.browse), ledger: live(v.ledger) }));
@@ -130,9 +132,15 @@ function DestinationsMenu({ light }: { light: boolean }) {
 // elements below can rise into the space.
 export default function SiteHeader({ overlay = false, tuck = false }: { overlay?: boolean; tuck?: boolean }) {
   const [solid, setSolid] = useState(!overlay);
+  const headerRef = useRef<HTMLElement>(null);
   const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
   const [searching, setSearching] = useState(false);
+
+  // The menu and search cover the page: raise the overlay signal so the homepage film
+  // and the volume entrances hold still underneath (lib/overlay.ts).
+  useEffect(() => { setOverlay("menu", open); return () => setOverlay("menu", false); }, [open]);
+  useEffect(() => { setOverlay("search", searching); return () => setOverlay("search", false); }, [searching]);
 
   // "/" or Ctrl/⌘+K opens search from anywhere (not while typing in a field).
   useEffect(() => {
@@ -150,9 +158,17 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
 
   useEffect(() => {
     if (!overlay) return;
+    // The header takes its solid ground (Paper, Ink words, the #DCD7D0 keyline) as soon as the hero's words would
+    // pass under it: the first [data-hero-copy] block reaching the header's own bottom edge, or the hero's end,
+    // or, on a page without either, a small scroll (hero arrows fix, 3 Nov 2026). Transparent only while the
+    // photograph alone is under the volume row.
     const onScroll = () => {
+      const bar = headerRef.current?.getBoundingClientRect().bottom ?? 0;
+      const copy = document.querySelector("[data-hero-copy]");
       const end = document.getElementById("hero-end");
-      setSolid(end ? end.getBoundingClientRect().top <= 164 : window.scrollY > 40);
+      const under = copy ? copy.getBoundingClientRect().top <= bar + 12 : false;
+      const past = end ? end.getBoundingClientRect().top <= bar : false;
+      setSolid(under || past || (!copy && window.scrollY > 24));
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -190,8 +206,9 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   return (
     <>
     <header
-      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 transition-[background-color,transform] duration-300 ${tucked && !open ? "-translate-y-full" : ""} ${
-        light ? "bg-transparent text-white" : "bg-paper/95 backdrop-blur border-b ledger-border text-ink"
+      ref={headerRef}
+      className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 border-b transition-[background-color,border-color,transform] duration-300 motion-reduce:transition-none ${tucked && !open ? "-translate-y-full" : ""} ${
+        light ? "bg-transparent border-transparent text-white" : "bg-paper border-[#DCD7D0] text-ink"
       }`}
     >
       {/* The House Standard: the top edge is the volume tab (the volume's base on a volume page, a hairline elsewhere).
@@ -200,7 +217,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
+      <div className="max-w-[1400px] mx-auto px-4 min-[380px]:px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3">
           <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
@@ -209,12 +226,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
+            className={`hidden lg:inline-flex items-center justify-center gap-2.5 h-10 w-10 xl:w-auto xl:pl-3 xl:pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
             aria-label="Ask the house: search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
-            <kbd className="hidden xl:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
+            <span className="hidden xl:inline ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
+            <kbd className="hidden min-[1440px]:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
           </button>
         </div>
 
@@ -222,30 +239,40 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             with the house line beneath. Cream over a film. On phones the lockup
             is centred between Menu and Plan, the seal at 40, the wordmark at
             1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
-        <Link href="/" className="flex items-center gap-2.5 md:gap-4 lg:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
-          <span className={`block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
-          <span className={`hidden lg:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
+        <Link href="/" className="flex items-center gap-2 min-[380px]:gap-2.5 md:gap-4 xl:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
+          <span className={`hidden min-[380px]:block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
+          <span className={`block min-[380px]:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={34} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block xl:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={60} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden xl:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
           {/* phone lockup */}
           <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
-          {/* desktop lockup */}
-          <span className="hidden lg:block"><Wordmark style="editorial" light={light} size={1} /></span>
+          {/* desktop lockup: a smaller seal and wordmark from 1024 to 1279 so the centred lockup clears the side tools */}
+          <span className="hidden lg:block xl:hidden"><Wordmark style="editorial" light={light} size={0.88} /></span>
+          <span className="hidden xl:block"><Wordmark style="editorial" light={light} size={1} /></span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">
-          <ul className="hidden lg:flex items-center gap-4 mr-1">
+          {/* The reader's tools give way as the band narrows (header overlap fix, 3 Nov 2026): below 1280 they live in
+              the menu and "Ask the house" is the search glass alone; Compass returns at 1280, Journal and My Folio at 1440. */}
+          <ul className="hidden xl:flex items-center gap-4 mr-1">
             {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
-              <li key={l.href}><Link href={l.href} className={mainItem}>{l.label}</Link></li>
+              <li key={l.href} className="hidden min-[1440px]:block"><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
             <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
-            <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
+            <li className="hidden min-[1440px]:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
+            {/* Sign in — three doors: Traveler, Advisor, Partner (James, 3 Nov 2026) */}
+            <li><SignInDoors light={light} className={mainItem} /></li>
           </ul>
-          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026). */}
+          {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
+              Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,
+              aria-label "Plan with James"); the full column returns from 640px (header fix, 2 Nov 2026). */}
+          <Link href={PLAN_CTA.href} aria-label={PLAN_CTA.label} className={`jw-plan-cell sm:hidden ${light ? "jw-plan-cell--light" : ""}`} />
           <Link
             href={PLAN_CTA.href}
-            className={`ledger-btn ledger-btn--house ledger-btn--compact ${light ? "ledger-btn--light" : ""}`}
+            className={`ledger-btn ledger-btn--house ledger-btn--compact !hidden sm:!inline-flex ${light ? "ledger-btn--light" : ""}`}
           >
-            <span className="sm:hidden">Plan</span><span className="hidden sm:inline">{PLAN_CTA.label}</span>
+            {PLAN_CTA.label}
           </Link>
         </div>
       </div>

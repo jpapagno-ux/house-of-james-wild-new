@@ -18,7 +18,7 @@ export default function VolumeTabs({ tabs, title, intro }: { tabs: VolumeTab[]; 
   };
   const active = tabs.find((t) => t.key === cur) ?? tabs[0];
   return (
-    <section id="choose" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-h`}>
+    <section id="choose" className="mt-16 md:mt-24" aria-labelledby={`${id}-h`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
         <div>
           <p className="ledger-eyebrow ledger-crimson">Choose your way</p>

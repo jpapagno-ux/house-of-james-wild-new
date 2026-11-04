@@ -149,7 +149,7 @@ export const GUIDES: Record<string, Guide> = {
       title: "How to See It",
       intro: "Eastern Indonesia's best places are islands without roads. The way in is a boat, and the right boat decides the trip.",
       options: [
-        { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#departures", label: "Aliikai's 2027 dates" },
+        { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#dates", label: "Aliikai's 2027 dates" },
         { name: "A private charter", body: "Take the whole yacht for your family or group, and draw the route yourself. From three nights in Komodo, seven in Raja Ampat.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
         { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "#stays", label: "The Bali stays" },
       ],
@@ -170,7 +170,7 @@ export const GUIDES: Record<string, Guide> = {
       { q: "Raja Ampat or Komodo: which is better?", a: "It depends on when you go and what you want. Raja Ampat has the richest reefs on Earth, calmer water and real remoteness, and is best from October to April. Komodo has the dragons, Padar and the mantas, is easier to reach from Bali, and is best from April to June and September to December. For a first visit to Indonesia, Komodo is the easier start; for divers and snorkellers, Raja Ampat is the one to build a trip around." },
       { q: "How do you get to Raja Ampat?", a: "Fly to Sorong in West Papua, about 4 to 5 hours from Jakarta or via Makassar or Manado, then take the 2-hour fast ferry to Waisai, or join your boat in Sorong." },
       { q: "Can you combine Raja Ampat and Komodo in one trip?", a: "Yes, with a flight between Sorong and Labuan Bajo via Makassar or Bali, but the best seasons barely overlap. Most travellers choose one per trip, or sail Aliikai's Sorong to Ambon crossing in April or October to link Raja Ampat with the Banda Sea." },
-      { q: "Has James been to Raja Ampat?", a: "Yes. James sailed Raja Ampat aboard the phinisi Aliikai in November 2024, and he has been designing journeys since 1983." },
+      { q: "Has James been to Raja Ampat?", a: "Yes. James sailed Raja Ampat aboard the phinisi Aliikai in November 2024, and he has been designing journeys since 1982." },
       { q: "Which Indonesian stays has James been to?", a: "In November 2024 James visited Bali and Sumba. COMO Shambhala Estate, COMO Canggu, Tanah Gajah, the four Kayumanis villas, Viceroy Bali, The Ungasan and Soori Bali are founder favourites; Capella Ubud, Bambu Indah and NIHI Sumba are founder inspected. NIHI Rote opened in 2026: James has vetted it but not yet stayed." },
     ],
     geo: { lat: -3.5, lng: 125.5 },
@@ -219,7 +219,7 @@ export const GUIDES: Record<string, Guide> = {
         ["Start with the north", "A Sorong round trip through the north and centre takes in the classic sights on a single loop. Save Misool for a second trip."],
         ["You don't need to dive", "Snorkelling here is as good as diving elsewhere. Kayaks and paddleboards fill the rest of the day."],
         ["Give it ten days", "Allow for the flights to Sorong. Ten days aboard leaves time to slow down once you're there."],
-        ["Ask someone who's been", "James sailed this route in November 2024 and has been designing journeys since 1983. He'll tell you what he'd change."],
+        ["Ask someone who's been", "James sailed this route in November 2024 and has been designing journeys since 1982. He'll tell you what he'd change."],
       ],
     },
     suits: [
@@ -234,7 +234,7 @@ export const GUIDES: Record<string, Guide> = {
       intro: "Three ways in, from easiest to most yours.",
       options: [
         { name: "The 10 Day Raja Ampat North, aboard Aliikai", body: "The voyage James sailed: Sorong round trip through Kri, the Passage, Penemu, Wayag, Wofoh, Arborek, Mansuar and Batanta. 2027 sailings in February, November and December, from US$7,650 per person.", href: "/voyages/raja-ampat/aliikai-10-day-raja-ampat-north", label: "See the voyage" },
-        { name: "A shorter or southern voyage", body: "Seven-night sailings through the north and centre, or south to Misool, from January to April and in December.", href: "/voyages/ships/aliikai#departures", label: "All 2027 dates" },
+        { name: "A shorter or southern voyage", body: "Seven-night sailings through the north and centre, or south to Misool, from January to April and in December.", href: "/voyages/ships/aliikai#dates", label: "All 2027 dates" },
         { name: "The whole yacht", body: "Charter Aliikai for your family or group, minimum seven nights in Raja Ampat, and choose your own anchorages.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
       ],
     },
@@ -306,7 +306,7 @@ export const GUIDES: Record<string, Guide> = {
       intro: "By boat from Labuan Bajo. The question is how long, and whose boat.",
       options: [
         { name: "The 5 Day Komodo Island, aboard Aliikai", body: "Four nights: Sebayur, Gili Lawa, Manta Point, Padar, Pink Beach, Rinca and Kalong. 2027 sailings on 15 and 22 September, from US$3,400 per person.", href: "/voyages/komodo/aliikai-5-day-komodo-island", label: "See the voyage" },
-        { name: "Three, five or six nights", body: "Aliikai sails Komodo from late May to September on voyages of three to six nights, plus two whale shark voyages in July.", href: "/voyages/ships/aliikai#departures", label: "All 2027 dates" },
+        { name: "Three, five or six nights", body: "Aliikai sails Komodo from late May to September on voyages of three to six nights, plus two whale shark voyages in July.", href: "/voyages/ships/aliikai#dates", label: "All 2027 dates" },
         { name: "The whole yacht", body: "Charter Aliikai for your family or group, minimum three nights in Komodo.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
       ],
     },

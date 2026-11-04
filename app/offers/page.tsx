@@ -69,7 +69,7 @@ export default function OffersHub() {
           <ul className="flex flex-wrap gap-2">{secs.map((s) => <li key={s.volume}><a href={`#${s.volume}`} className="inline-flex items-center gap-2 min-h-[44px] px-3.5 border ledger-border bg-white text-[14.5px] hover:border-crimson"><span className="w-2 h-2 rounded-full" style={{ background: volumeInk(s.volume) }} aria-hidden="true" />{s.label}<span className="text-[12px] ledger-muted">{s.count}</span></a></li>)}</ul>
         </nav>
         {secs.map((s) => (
-          <section key={s.volume} id={s.volume} className="mt-12 md:mt-16 border-t-[3px] pt-8 scroll-mt-32 lg:scroll-mt-[212px]" style={{ borderTopColor: volumeInk(s.volume) }} aria-labelledby={`${s.volume}-h`}>
+          <section key={s.volume} id={s.volume} className="mt-12 md:mt-16 border-t-[3px] pt-8" style={{ borderTopColor: volumeInk(s.volume) }} aria-labelledby={`${s.volume}-h`}>
             <p className="ledger-eyebrow" style={{ color: volumeInk(s.volume) }}>Volume {VOLUME_STYLES[s.volume].roman} · {words(s.count, "offer", "offers")}</p>
             <h2 id={`${s.volume}-h`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.volume === "voyages" ? "Voyage Offers, by Type" : `${s.label} Offers`}</h2>
             {s.groups.map((g) => (

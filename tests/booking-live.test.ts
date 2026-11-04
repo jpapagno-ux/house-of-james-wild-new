@@ -9,7 +9,14 @@ import { isUuid, isValidDate, parseFavorite, parseFolio, parseInvite, parseItem,
 const SB = { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co", NEXT_PUBLIC_SUPABASE_ANON_KEY: "k" };
 
 test("flags: everything is off by default", () => {
-  assert.deepEqual(readFlags({}), { accounts: false, save: false, share: false, quotes: false });
+  assert.deepEqual(readFlags({}), { accounts: false, save: false, share: false, quotes: false, payments: false });
+});
+
+test("flags: payments need accounts, quotes and the payments switch", () => {
+  const on = { ...SB, NEXT_PUBLIC_BOOKING_LIVE_ACCOUNTS: "on", NEXT_PUBLIC_BOOKING_LIVE_QUOTES: "on" };
+  assert.equal(readFlags({ ...on, NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS: "on" }).payments, true);
+  assert.equal(readFlags({ ...on }).payments, false);
+  assert.equal(readFlags({ ...SB, NEXT_PUBLIC_BOOKING_LIVE_ACCOUNTS: "on", NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS: "on" }).payments, false, "no quotes, no payments");
 });
 
 test("flags: only the exact word 'on' switches a flag", () => {

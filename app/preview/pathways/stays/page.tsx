@@ -11,6 +11,7 @@ import { STAYS, altFor } from "@/lib/content/stays";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { VOLUMES } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
+import { volumeEyebrow } from "@/lib/volumes";
 
 // PREVIEW · Stays landing with Wild Pathways (brief §9). Everything the live
 // /stays page has today, plus: six prominent pathway cards with all eight
@@ -31,7 +32,7 @@ export default function StaysPathwaysPreview() {
   return (
     <>
       <SiteHeader />
-      <HubShell name="Stays" path="/stays" eyebrow="Volume 01 · Stays" title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
+      <HubShell name="Stays" path="/stays" eyebrow={volumeEyebrow("stays")} title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
         answer={`James Wild & Co's Stays volume holds ${LEDGER_COUNTS.stays} live stays: safari lodges, island hideaways, mountain and desert retreats and city houses, each vetted in person or by a named partner and filed in the Ledger under a permanent ID. Eight Wild Pathways cut across them: editorial collections by setting and intention, so one stay can sit on several.`}
         filling="Pathway classifications fill from the Ledger as James approves each record's primary and secondary pathways." closeTitle="Not sure which pathway is yours?">
 

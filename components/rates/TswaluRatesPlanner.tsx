@@ -96,7 +96,7 @@ export default function TswaluRatesPlanner() {
         <p className="mt-4 text-[13px] ledger-muted">Tswalu&rsquo;s published rates, per night, fully inclusive and including 15% VAT. US dollars at R{ZAR_PER_USD} to US$1 ({FX_DATE}); Tswalu invoices in rand. Rates checked {TSWALU_RATES_CHECKED}.</p>
       </div>
 
-      <div id="calculator" className="lg:sticky lg:top-28 scroll-mt-28">
+      <div id="calculator" className="lg:sticky lg:top-28">
         <p className="ledger-eyebrow ledger-crimson">Price a stay</p>
         <TswaluCalculator rowId={rowId} onRowChange={setRowId} />
       </div>

@@ -56,7 +56,7 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
       {matched && (
         <p className="mt-3 text-[15.5px] leading-relaxed max-w-2xl">
           <Link href={matched.profileHref ?? "/about/team#advisors"} className="underline underline-offset-4 hover:ledger-crimson">{matched.name}</Link>
-          <span className="ledger-crimson"> · {matched.ledgerId}</span> knows {countryName}
+          <span className="ledger-id text-[12px]"> · {matched.ledgerId}</span> knows {countryName}
           {matched.dna?.pathways.length ? ` and carries ${matched.dna.pathways.slice(0, 2).map((p) => PATHWAY_NAMES[p as keyof typeof PATHWAY_NAMES] ?? p).join(" and ")}` : ""}
           {matched.line ? <>: &ldquo;{matched.line}&rdquo;</> : "."}
           {marks.length > 0 && <span className="block mt-1 text-[14px]" style={{ color: GREEN_INK }}>{marks.map((m) => `${m.mark}${m.when ? `, ${m.when}` : ""} · ${m.ledgerId}`).join(" · ")}</span>}
@@ -75,7 +75,7 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
             <ul className="mt-4 grid gap-1.5 text-[15px]">
               {entries.map((e) => (
                 <li key={e.ledgerId} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
-                  <span className="font-mono text-[11px] ledger-crimson tabular-nums">{e.ledgerId}</span>
+                  <span className="ledger-id text-[11px] tabular-nums">{e.ledgerId}</span>
                   <span>{e.href ? <Link href={e.href} className="underline underline-offset-4 hover:ledger-crimson">{e.name}</Link> : e.name}</span>
                   <span className="text-[13px]" style={{ color: founder ? "var(--jw-accent-hex)" : GREEN_INK }}>{e.theirs ? `${e.theirs.mark}${e.theirs.when ? `, ${e.theirs.when}` : ""}` : `${e.james.mark}${e.james.year ? ` ${e.james.year}` : ""}`}</span>
                   <span className="text-[12.5px] ledger-muted">{VOLUME_LABEL[e.volume]}</span>

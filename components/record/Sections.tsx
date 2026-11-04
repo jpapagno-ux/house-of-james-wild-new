@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { heroBox } from "@/lib/hero-box";
 import OnPageLink from "./OnPageLink";
-import { ShortFilmBackdrop } from "@/components/media/ShortFilm";
+import { FilmOrStill, ShortFilmBackdrop } from "@/components/media/ShortFilm";
 import type { ShortFilm } from "@/lib/content/films";
 import HeroSlider from "@/components/destination/HeroSlider";
 import { heroReady, sharpen } from "@/lib/content/sharpen";
@@ -21,7 +22,7 @@ import type { LedgerStampKind } from "@/lib/ledger/status";
 // Server components; the only motion is the Reveal / stamp wrappers.
 
 export type Img = { url: string; alt: string };
-const SECTION = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SECTION = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const H2 = "ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight";
 
 export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; title: string; icon?: FieldIconName; intro?: string }) {
@@ -39,30 +40,43 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 
 /* Hero ----------------------------------------------------------------- */
 export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, credit, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; credit?: string; height?: string }) {
-  const body = (
-      <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-8 md:pb-10">
+  // The hero grows rather than letting its words run up under the header: the copy always starts below the header
+  // and its volume row (76px phones, 167px from 1024) and the photo counter beneath it, and the header turns solid once the copy
+  // ([data-hero-copy]) reaches it (hero arrows fix, 3 Nov 2026).
+  const box = heroBox(height);
+  const copy = (withFilm: boolean) => (
+      // Over a film on a tall screen the film's credit sits at the foot, so the copy stops above it.
+      <div className={`relative flex-1 w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[140px] lg:pt-[200px] pb-8 md:pb-10 ${withFilm ? "portrait:!pb-12" : ""}`}>
+        <div data-hero-copy>
         {/* the note from the house: floats top-right on desktop, unless a founder stamp is there too — then the two sit together, bottom-right */}
         {tag && (stamp ? <div className="md:hidden">{tag}</div> : tag)}
         <div className="flex items-end justify-between gap-8">
-          <div className={film ? "landscape:max-w-[48vw]" : undefined}>
+          <div className={withFilm ? "landscape:max-w-[48vw]" : undefined}>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
             <h1 className="ledger-h1 mt-3">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
           {stamp && (
-            <div className={`hidden md:flex items-end gap-8 shrink-0 ${film ? "landscape:!hidden" : ""}`}>
+            <div className={`hidden md:flex items-end gap-8 shrink-0 ${withFilm ? "landscape:!hidden" : ""}`}>
               {tag && <div className="[&>div]:!static [&>div]:!mb-0 pb-2">{tag}</div>}
               <PhotoStamp>{stamp}</PhotoStamp>
             </div>
           )}
         </div>
-        {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
+        {glance && <div className={`mt-7 ${withFilm ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
+        </div>
       </div>
   );
+  const body = copy(!!film);
+  const still = copy(false);
   // A vessel's own short film plays as the hero (tall screens edge to edge, wide screens in a frame).
+  // A voyage page also brings its photographs: they stand in where the film cannot play (reduced
+  // motion, Save-Data), so the film appears once per page (Aliikai voyages, James 3 Nov 2026).
+  const ready = slides ? heroReady(slides) : undefined;
+  const photos = ready && ready.length > 1 ? <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{film ? still : body}</HeroSlider> : null;
   if (film) {
-    return (
-      <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
+    const filmHero = (
+      <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
         {/* the framed film clears the header and its volume row (mobile 80px, desktop 168px) */}
         <ShortFilmBackdrop film={film} frame="top-[100px] lg:top-[192px] bottom-[52px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/5 to-black/75 landscape:from-black/25 landscape:via-transparent landscape:to-black/45" />
@@ -71,13 +85,11 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
         <div id="hero-end" className="absolute bottom-0" />
       </section>
     );
+    return photos ? <FilmOrStill film={filmHero} still={photos} /> : filmHero;
   }
-  const ready = slides ? heroReady(slides) : undefined;
-  if (ready && ready.length > 1) {
-    return <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;
-  }
+  if (photos) return photos;
   return (
-    <section className={`relative ${height} overflow-hidden bg-ink text-white`} aria-label={title}>
+    <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
       <Image src={sharpen(image.url)} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
@@ -104,14 +116,14 @@ export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stay
 export const HOUSE_CRIMSON = "#8B2525";
 export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = false }: { items: [string, string][]; cta?: string; ctaHref?: string; house?: boolean }) {
   return (
-    <nav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
+    <nav data-subnav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
       <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
         <div className="flex-1 min-w-0 flex items-center gap-5 xl:gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,black_92%,transparent)]">
           {items.map(([label, id]) => (
             <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
           ))}
         </div>
-        <Link href={ctaHref} className={`hidden sm:inline-flex ledger-btn !py-2 !px-4 shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex ledger-btn shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );
@@ -120,7 +132,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
 /* Overview + facts ---------------------------------------------------------- */
 export function Overview({ quote, answer, facts, paragraphs }: { quote?: string; answer: string; facts: [string, string][]; paragraphs?: string[] }) {
   return (
-    <section id="overview" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
+    <section id="overview" className="pt-12 md:pt-16 grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
       <div>
         {quote && <p className="ledger-display italic text-2xl md:text-3xl leading-snug">&ldquo;{quote}&rdquo;</p>}
         <AnswerBlock>{answer}</AnswerBlock>
@@ -322,7 +334,7 @@ function OnlyHere({ title, paragraphs }: { title: string; paragraphs: string[] }
 /* Conservation ------------------------------------------------------------------ */
 export function Conservation({ id = "conservation", eyebrow, title, subtitle, intro, body, image }: { id?: string; eyebrow: string; title: string; subtitle?: string; intro?: string; body: string; image?: Img }) {
   return (
-    <section id={id} className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] bg-coast-mist -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
+    <section id={id} className="mt-16 md:mt-24 bg-coast-mist -mx-5 md:-mx-10 px-5 md:px-10 py-12 md:py-16">
       <div className={`grid ${image ? "lg:grid-cols-[1.3fr_1fr]" : ""} gap-10 items-center`}>
         <div>
           <p className="ledger-eyebrow !text-coast flex items-center gap-2"><Leaf className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /> {eyebrow}</p>

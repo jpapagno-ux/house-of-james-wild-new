@@ -33,7 +33,7 @@ import type { ExceptionalFew } from "@/lib/content/exceptional-few";
 // through `extra`, which slots into the same frame. Every price is derived from the
 // published departures; every photograph is credited to its owner where one is filed.
 const kindLabel = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
 export type ShipExtra = {
   /** A vessel's own short film playing as the hero; the film slot below then steps aside. */
@@ -43,6 +43,8 @@ export type ShipExtra = {
   top?: ReactNode;
   lead?: ReactNode;
   body?: ReactNode;
+  /** Directly below the itinerary and its chart (the 3D terrain pilot). */
+  itineraryAfter?: ReactNode;
   after?: ReactNode;
   jsonld?: object[];
 };
@@ -292,6 +294,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
           </section>
         )}
       </>}
+      itineraryAfter={extra.itineraryAfter}
       after={extra.after}
     />
   );

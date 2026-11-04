@@ -14,6 +14,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
+import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -61,6 +62,14 @@ import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 import PhilippinesSections from "@/components/destination/PhilippinesSections";
 import { APPROX } from "@/lib/content/philippines";
+import ComingTicker from "@/components/coming/ComingTicker";
+import { countryBoard } from "@/lib/content/board";
+import { comingOn } from "@/lib/content/whats-coming";
+import { today } from "@/lib/dates";
+import CountryAtlas, { atlasNotes } from "@/components/maps/terrain/CountryAtlas";
+import { countryLayoutOn, liveBoardOn, showDrafts } from "@/lib/content/country-layout";
+import { liveBoard } from "@/lib/content/board";
+import { atlasOn } from "@/components/maps/terrain/flag";
 
 // /destinations/[region]/[country]: the country page. Hero slider + counts ›
 // region/country bar › the Ledger chart map (every stay, linked) › in short ›
@@ -164,7 +173,7 @@ function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[]
   const views = chainViews(slug, name, whole, items, chains);
   const total = views[views.length - 1]?.items.length ?? 0;
   return (
-    <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
+    <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="guide-map-heading">
       <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {total} on the chart</p>
       <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-5">{name}, Chain by Chain</h2>
       <ChainChartMap country={name} views={views} initial={views[0]?.key} />
@@ -190,7 +199,7 @@ function guideMap(slug: string, name: string) {
   const chains = CHAINS[slug];
   if (chains) return chainMap(slug, name, chart, items, chains);
   return (
-    <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
+    <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="guide-map-heading">
       <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {pinned.length} on the chart</p>
       <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-6">{name}, Pinned</h2>
       <LedgerChartMap legend="below" country={name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${name} with its stays and voyages`} />} width={chart.width} height={chart.height} items={pinned} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
@@ -202,7 +211,16 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const p = await params;
   const c = countryBySlug(p.region, p.country);
   const g = GUIDES[p.country];
-  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} map={guideMap(g.slug, g.name)} />;
+  // The country atlas (flag.ts atlasOn) sits directly under the Ledger chart.
+  if (!c && g && !g.parent && g.region === p.region) {
+    // The new country page (lib/content/country-layout.ts), Indonesia first; every other guide keeps its page.
+    if (countryLayoutOn(g.slug)) {
+      const regionName = regionBySlug(g.region)?.name ?? g.region;
+      const board = liveBoardOn(g.slug) ? liveBoard(comingOn(today()), { regionSlug: g.region, regionName, countrySlug: g.country }) : countryBoard(comingOn(today()), g.country);
+      return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} v2={{ atlas: <CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} />, board, boardLabel: `${g.name}: the live board`, notes: atlasNotes(g.slug), drafts: showDrafts() }} />;
+    }
+    return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} map={<>{guideMap(g.slug, g.name)}<CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /></>} />;
+  }
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;
@@ -262,11 +280,12 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           );
           // No photograph on file (a destination card before its hero is chosen): an ink band, never a stand-in image.
           return slides.length
-            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">{heading}</div></HeroSlider>
+            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[108px] lg:pt-[200px] pb-24 md:pb-28">{heading}</div></HeroSlider>
             : <section className="relative bg-ink text-white bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)]" aria-label={c.name}><div className="max-w-ledger mx-auto px-5 md:px-10 pt-36 md:pt-52 pb-12 md:pb-16">{heading}</div></section>;
         })()}
+        <ComingTicker entries={countryBoard(comingOn(today()), c.slug)} label={`${c.name}: coming and on offer`} compact />
 
-        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
+        <nav data-subnav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
             <Link href={`/destinations/${c.region}`} className="ledger-eyebrow ledger-crimson">{c.regionName}</Link>
@@ -291,6 +310,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
               {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
               {!coming && <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />}
+              {/* The three instruments, one line (James, 3 Nov 2026): Read the Compass · Open the Atlas · Ask Iggi */}
+              <InstrumentsStrip atlasHref="#the-map" className="mt-6" />
             </div>
             <div className="md:pt-8 space-y-8">
               {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
@@ -300,7 +321,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </div>
           </Reveal>
 
-          <section id="the-map" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
+          <section id="the-map" className="pt-12 md:pt-16" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">{coming ? `The chart of ${c.name} · stays being filed` : `The Ledger in ${c.name} · ${all.length} filed`}</p>
@@ -326,7 +347,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
 
           {/* Destination card: one panel where the stays will be, inked as the Stays volume, the action in House Crimson */}
           {coming && (
-            <section id="stays" style={{ borderTopColor: volumeInk("stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-14 items-end" aria-labelledby="stays-heading">
+            <section id="stays" style={{ borderTopColor: volumeInk("stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-14 items-end" aria-labelledby="stays-heading">
               <div>
                 <p className="ledger-eyebrow" style={{ color: volumeInk("stays") }}>Stays in {c.name} · coming soon</p>
                 <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">The Stays Are Being Vetted. The Trip Can Start Now.</h2>
@@ -360,7 +381,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           {c.postcard && (
-            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
+            <section id="postcard" className="mt-16 md:mt-24 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">From the house, by return</p>
                 <h2 id="postcard-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">Every Enquiry Gets a Reply Worth Keeping</h2>
@@ -378,7 +399,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
           {/* Every stay filed here, by name: the index under the tabs (and every stay page linked for search) */}
-          {!coming && <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+          {!coming && <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow" style={{ color: volumeInk(c.region === "europe" ? "europe" : "stays") }}>From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">Every Stay Filed in {c.name}</h2>
             <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">{pages.map((s) => <li key={s.slug}><Link href={recordHref("stay", s.slug)} className="ledger-display text-[1.1rem] hover:ledger-crimson">{s.name}</Link>{s.ledgerId && <span className="ml-2 font-mono text-[11px] ledger-muted">{s.ledgerId}</span>}</li>)}</ul>
@@ -392,7 +413,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </Reveal>
           )}
 
-          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-[212px] space-y-16" aria-label={`${c.name}, the story`}>
+          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 space-y-16" aria-label={`${c.name}, the story`}>
             {c.story.map((st, i) => (
               <div key={st.title} className={st.image.src ? "grid md:grid-cols-2 gap-10 items-center" : "max-w-3xl"}>
                 <div className={i % 2 && st.image.src ? "md:order-2" : ""}>

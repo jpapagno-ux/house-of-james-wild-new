@@ -9,6 +9,7 @@ import { HOME } from "@/lib/content/home";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { statusLine } from "@/lib/ledger/status";
 import { REGIONS, SITE } from "@/lib/site";
+import { romanForHref } from "@/lib/volumes";
 import { recordHref } from "@/lib/ledger/urls";
 import SafeLink, { GuardLink } from "@/components/ledger/SafeLink";
 
@@ -119,7 +120,7 @@ export function HouseStory() {
 export function VolumeDoors() {
   const v = HOME.volumes;
   return (
-    <section id="volumes" className={`${SECTION} scroll-mt-28`} aria-labelledby="volumes-heading">
+    <section id="volumes" className={`${SECTION}`} aria-labelledby="volumes-heading">
       <p className="ledger-eyebrow">The house, in six volumes</p>
       <h2 id="volumes-heading" className={H2}>Choose Your Way In</h2>
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -134,12 +135,12 @@ export function VolumeDoors() {
                   <Image src={x.image.url} alt={x.image.alt} fill sizes="(min-width: 1280px) 220px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-700" />
                   {"stamp" in x && x.stamp && (
                     <StampPress delay={0.35 + i * 0.08} className="absolute top-2 right-2 w-20 h-20 rounded-full bg-paper/95 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
-                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1983" className="w-full h-full" />
+                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1982" className="w-full h-full" />
                     </StampPress>
                   )}
                 </div>
                 <div className="p-5 flex flex-col flex-1">
-                  <p className="ledger-eyebrow">Volume {String(i + 1).padStart(2, "0")}</p>
+                  <p className="ledger-eyebrow">Volume {romanForHref(x.path)}</p>
                   <h3 className="ledger-display text-2xl mt-1">{x.name}</h3>
                   <p className="text-[11px] uppercase tracking-[0.14em] ledger-crimson mt-1">{x.brand}</p>
                   <p className="mt-3 text-[15px] leading-relaxed ledger-muted flex-1">{x.line}</p>
@@ -328,7 +329,7 @@ export function FilmSection() {
   const f = HOME.film;
   const l = HOME.hero.loop;
   return (
-    <section id="film" className={`${SECTION} scroll-mt-28`} aria-labelledby="film-heading">
+    <section id="film" className={`${SECTION}`} aria-labelledby="film-heading">
       <div className="flex items-center gap-2">
         <Film className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
         <p className="ledger-eyebrow">{f.eyebrow}</p>

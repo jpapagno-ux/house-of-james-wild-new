@@ -10,7 +10,7 @@ export const REGION_NOTES: Record<string, PlaceNote> = {
   asia: { line: "Asia rewards the curious and punishes the over-scheduled. Leave one day blank; it fills itself." },
   "usa-canada": { line: "These wild places are bigger than they look on the map. Pack layers, and drive less than you think you should." },
   "central-america": { origin: true, line: "Costa Rica is where the house began. Two coasts, one volcano and more birds than adjectives. Start here; most people come back." },
-  "caribbean-mexico": { origin: true, line: "It all started on Eleuthera in 1983, with friends who wanted to surf. The Bahamas are coming to the Ledger; Mexico holds the fort till then." },
+  "caribbean-mexico": { origin: true, line: "It all started on Eleuthera in 1982, with friends who wanted to surf. The Bahamas are coming to the Ledger; Mexico holds the fort till then." },
   oceania: { line: "Fly far once, then slow right down. Tahiti taught me that, and Taha'a made sure it stuck." },
   "south-america": { line: "The Andes, Patagonia, the Galápagos: pick two per trip. The continent will wait for the third." },
   europe: { line: "Europe needs no introduction. Just a better hotel and an earlier ferry." },

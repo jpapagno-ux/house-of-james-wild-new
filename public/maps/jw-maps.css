@@ -125,3 +125,12 @@
 /* terrain key: the destination's palette as a band (page header, map frame) */
 .jw-terrain{display:flex;height:8px}.jw-terrain i{flex:1}
 @media (max-width:600px){.jw-compass{width:44px;right:8px;top:8px}.jw-compass svg{width:44px;height:44px}.jw-compass .hd{font-size:9px}.jw-steps{left:8px!important;top:8px!important;gap:4px}.jw-steps .jw-btn{padding:7px 7px;font-size:10px;letter-spacing:.06em}}
+
+/* The House Standard frame (map audit, 2 Nov 2026): every map frame is one 1px border (#DCD7D0) with two small
+   graphite ledger corner guards (top left, bottom right), on Paper. Replaces the teal dashed chart frame, the
+   survey ticks and the double-ruled atlas and estate frames. The fallback figure keeps its Stone Mist sea. */
+.jw-frame.chart,.jw-frame.survey,.jw-frame.atlas,.jw-frame.estate{padding:10px;border:1px solid #DCD7D0;outline:0;box-shadow:none;background:
+  linear-gradient(#2E2B28,#2E2B28) top left/16px 2px no-repeat,linear-gradient(#2E2B28,#2E2B28) top left/2px 16px no-repeat,
+  linear-gradient(#2E2B28,#2E2B28) bottom right/16px 2px no-repeat,linear-gradient(#2E2B28,#2E2B28) bottom right/2px 16px no-repeat,#FFFFFF}
+.jw-frame.chart .jw-map,.jw-frame.survey .jw-map,.jw-frame.atlas .jw-map{outline:1px solid #DCD7D0}
+@media (max-width:767px){.jw-frame.chart,.jw-frame.survey{padding:6px}}

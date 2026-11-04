@@ -1,5 +1,6 @@
 "use client";
 
+import { lockScroll } from "@/lib/scroll-lock";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useId, useMemo, useRef, useState, type ReactNode } from "react";
@@ -38,11 +39,10 @@ export default function VoyageSearch({ items, months, pages }: { items: SearchIt
   }, [s]);
   useEffect(() => {
     if (!sheet) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    const release = lockScroll();
     const esc = (e: KeyboardEvent) => e.key === "Escape" && setSheet(false);
     window.addEventListener("keydown", esc);
-    return () => { document.body.style.overflow = prev; window.removeEventListener("keydown", esc); };
+    return () => { release(); window.removeEventListener("keydown", esc); };
   }, [sheet]);
 
   const hits = useMemo(() => search(items, s), [items, s]);

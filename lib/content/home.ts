@@ -9,6 +9,7 @@ import type { RecordKind } from "@/lib/ledger/urls";
 //  · Every image is a WES asset, a licensed Getty image (Cloudinary) or a
 //    Ledger image hosted on Base44; no AI imagery depicts a real property.
 import type { HouseStatus } from "@/lib/ledger/status";
+import { volumeEyebrow } from "@/lib/volumes";
 
 const HOME_CDN = "https://cdn.prod.website-files.com/679d0f261523f5053f06eae5";
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
@@ -71,7 +72,7 @@ export const HOME = {
     { key: "safaris", name: "Safaris", brand: "Wild & Co Safaris", path: "/safaris", line: "Africa only: camps and reserves across the safari countries, with the islands of the Indian Ocean as add-ons.", proof: "Safari advisor since 2011", image: { url: GETTY("578876890", 900, 1200), alt: "A hot-air balloon drifting over acacia savanna dotted with grazing herds at sunrise" } },
     { key: "gatherings", name: "Gatherings", brand: "Wild & Co Gatherings", path: "/gatherings", line: "Generational travel: whole houses and resort residences for the family, with adventures planned for every age.", proof: "One roof, every generation", image: { url: GETTY("1363882925", 900, 1200), alt: "Family and friends sharing breakfast on a shaded terrace above the sea" } },
     { key: "voyages", name: "Voyages", brand: "Wild & Co Voyages", path: "/voyages", line: "Small ships and expedition voyages, from Raja Ampat phinisis to the polar collection.", proof: "Sailing since 1989", image: { url: GETTY("1326090846", 900, 1200), alt: "A classic two-masted sailing schooner under full sail on open water" } },
-    { key: "overland", name: "Overland", brand: "Overland Expeditions by James", path: "/overland", line: "Land routes James designed, many travelled himself, with what to expect, what to avoid, and every stay on the way already in the Ledger.", proof: "Designing journeys since 1983", stamp: true, image: { url: GETTY("906210770", 900, 1200), alt: "Two giraffes standing in golden grassland under a glowing sky" } },
+    { key: "overland", name: "Overland", brand: "Overland Expeditions by James", path: "/overland", line: "Land routes James designed, many travelled himself, with what to expect, what to avoid, and every stay on the way already in the Ledger.", proof: "Designing journeys since 1982", stamp: true, image: { url: GETTY("906210770", 900, 1200), alt: "Two giraffes standing in golden grassland under a glowing sky" } },
   ],
 
   standard: {
@@ -103,7 +104,7 @@ export const HOME = {
   },
 
   overland: {
-    eyebrow: "Volume 05 · Overland Expeditions",
+    eyebrow: volumeEyebrow("overland", "Overland Expeditions"),
     title: "Routes James Designed, Field Notes Included",
     intro:
       "Each one is a route James designed, with a field note on what to expect and what to avoid, and every stay on the way linked to its own entry. The stamp shows exactly how far the founder has taken it himself.",
@@ -166,7 +167,7 @@ export const HOME = {
   },
 
   jamesNote:
-    "It started in 1983 with friends who wanted to surf Eleuthera. Forty-four years on, the rule hasn't changed: go somewhere new, stay long enough to know it, and come home with a place you'd send your own family.",
+    "It started in 1982 with friends who wanted to surf Eleuthera. Forty-four years on, the rule hasn't changed: go somewhere new, stay long enough to know it, and come home with a place you'd send your own family.",
 
   stewards: {
     eyebrow: "We're stewards of nature",

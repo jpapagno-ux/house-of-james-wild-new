@@ -7,6 +7,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import GettingThere from "@/components/ledger/GettingThere";
 import { hubsForStay, hubsForCountry, transfersForStay, hubLabel, hubSchema, transferLine } from "@/lib/content/arrivals";
 import JsonLd from "@/components/ledger/JsonLd";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
 import { notFound } from "next/navigation";
 import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Frame";
 import { Features, FounderStamp, Overview, RecordHero, RecordNav } from "@/components/record/Sections";
@@ -41,6 +42,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorStrip } from "@/components/advisor/Desk";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
+import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
@@ -52,7 +54,7 @@ import { ContinueBySea, StayBeforeYouSail } from "@/components/stays/IndonesiaPa
 import { founderProof, stampForStatus, statusLine, VETTED_UNVISITED, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
-import { entryNo, roundelText, sealFor, volumeInk, VOLUME_STYLES } from "@/lib/volumes";
+import { entryNo, roundelText, sealFor, volumeInk, volumeMark, VOLUME_STYLES } from "@/lib/volumes";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
 import { postsForStay } from "@/lib/content/journal/posts";
@@ -93,6 +95,12 @@ import WhoItSuits from "@/components/exceptional-few/WhoItSuits";
 import WorthAnotherNight from "@/components/exceptional-few/WorthAnotherNight";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
 import Signature from "@/components/record/Signature";
+import ComingBanner from "@/components/coming/ComingBanner";
+import { assembleStayPage } from "@/lib/stay-page/assemble";
+import StayHero from "@/components/stay/StayHero";
+import StayEditorialIntro from "@/components/stay/StayEditorialIntro";
+import AccommodationCollection from "@/components/stay/AccommodationCollection";
+import { PreviewNote } from "@/components/record/Sections";
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
 // breadcrumbs › overview (quote, in short, facts, the full entry) › gallery ›
@@ -165,6 +173,14 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
     : s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
+  // Steps 1–2: the normalized Stay-page contract (editorial + Booking Live
+  // canonical units + media + pricing provenance). Assembled for every stay
+  // Booking Live lists with canonical units (one cached lookup per build);
+  // null otherwise, or if Booking Live can't be reached, in which case the page
+  // keeps its previous layout (BookingPanel for Leeu, rooms list for the rest).
+  const stayPage = await assembleStayPage(s);
+  // The legacy reference rate stays on the server: it orders units and feeds QA, never the browser.
+  const units = stayPage?.accommodations.map((u) => ({ ...u, legacyReference: null })) ?? [];
   const planHref = `/plan?trip=${encodeURIComponent(s.name)}`;
   // Wild Pathways: only an APPROVED classification renders, and only with the flag on.
   const pw = PATHWAYS_ON && !boat ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
@@ -223,8 +239,8 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const days = momentsFor(s.slug, rowsFrom(keep(s.experiences.items), s.experiences.paras), images.slice(1), 3, apart);
   const hostEarly = host.state === "available" && !!host.host;
   const baseNav: [string, string][] = [[L.why, "why"], ["Film", "film"], [L.overview, "overview"], ...(apart.length ? [[L.apart, "features"] as [string, string]] : []), ...(days.length ? [[L.days, "experiences"] as [string, string]] : []), ...(images.length > 2 ? [["Gallery", "gallery"] as [string, string]] : []), ...(s.engine ? [["Live rates", "live-rates"] as [string, string]] : []), ...(s.rooms.items.length || s.rooms.paras.length ? [[L.rooms, "rooms"] as [string, string]] : []), ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ...(ef ? [["Who it suits", "who"] as [string, string], ["Another night", "another-night"] as [string, string], ["Continue", "continue"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]];
-  const navAll: [string, string][] = priced
-    ? [[L.why, "why"], ["Film", "film"], [L.overview, "overview"], ...(apart.length ? [[L.apart, "features"] as [string, string]] : []), ...(days.length ? [[L.days, "experiences"] as [string, string]] : []), ["Included", "included"], [L.rates, "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
+  const navAll: [string, string][] = priced || stayPage
+    ? [[L.why, "why"], ["Film", "film"], [L.overview, "overview"], ...(apart.length ? [[L.apart, "features"] as [string, string]] : []), ...(days.length ? [[L.days, "experiences"] as [string, string]] : []), ...(priced ? [["Included", "included"] as [string, string]] : []), [L.rates, "rates"], ...(hostEarly ? [["Meet the host", "host"] as [string, string]] : []), ...(FULL_FRAME[s.slug] ? [["Full frame", "full-frame"] as [string, string]] : []), ...(s.coords && chart ? [["Location", "location"] as [string, string]] : []), ...(verdict ? [["The verdict", "verdict"] as [string, string]] : []), ["Talk to us", "talk"], ["Plan", "plan"]]
     : baseNav;
   const nav: [string, string][] = navAll.filter(([, id]) => !ef || id !== "film");
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
@@ -242,16 +258,20 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{[place?.name, s.country].filter(Boolean).join(", ")}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><span className="text-[11.5px] tracking-[0.18em] uppercase text-white/75">Ledger ID {s.ledgerId ?? "being filed"}</span></div>
           </DriftFrame>
-        ) : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
+        ) : stayPage ? <StayHero editorial={stayPage.editorial} slides={slides.map((x) => ({ url: x.url, alt: x.alt, source: "library" as const }))} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined}
+          stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
+          glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: { label: "Choose your stay", href: "#rates" } }} />} />
+        : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
-        <RecordNav items={nav} cta={priced ? "Check live rates" : `Plan this ${noun}`} ctaHref={priced ? "#rates" : planHref} />
+        <RecordNav items={nav} cta={priced || stayPage ? (stayPage && !stayPage.commerce.liveEngineProperty ? "Choose your stay" : "Check live rates") : `Plan this ${noun}`} ctaHref={priced || stayPage ? "#rates" : planHref} />
+        <ComingBanner slug={s.slug} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           {boat && (
             <aside aria-label="A voyage" className="mt-6 border ledger-border p-5 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Voyage · {boat.name}</p><p className="mt-1 text-[15.5px]">{s.name} is a {boat.kind}, filed in the Voyages volume, not among the stays. Her ship page, cabins, routes, dates and fares, is being built; until then this is her Ledger record.</p></div>
-              <Link href="/voyages#ships-coming-h" className="ledger-btn self-start md:self-center">All voyages</Link>
+              <Link href="/voyages#finder-h" className="ledger-btn self-start md:self-center">All voyages</Link>
             </aside>
           )}
           <StayActions slug={s.slug} name={s.name} />
@@ -280,7 +300,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               <div><EFSignals ef={ef} id="glance" /></div>
             </section>
           )}
-          {ef && efAerial && s.coords && <div id="place" className="scroll-mt-32"><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
+          {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
           <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
@@ -290,28 +310,39 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow={L.days} title={L.daysTitle} intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? (boat ? undefined : "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone.")} icon="mountain-sun" items={days} start={null} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow={L.apart} title={L.apartTitle} icon="frond" body={s.features.paras[0]} />}
           {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow={L.days} title={L.daysTitle} icon="mountain-sun" body={s.experiences.paras[0]} />}
-          {priced ? <>
+          {stayPage ? <>
+            {/* Stay-page contract (JWC Booking Live): units, media and pricing provenance, live rates from the engine per unit where the stay has one. */}
+            <StayEditorialIntro editorial={stayPage.editorial} showVerdict={false} />
+            {priced && <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />}
+            <AccommodationCollection units={units} commerce={stayPage.commerce} stayName={stayPage.editorial.name} staySlug={s.slug} />
+            {process.env.VERCEL_ENV !== "production" && stayPage.qa.length > 0 && <PreviewNote><p>Booking Live QA (preview only): {stayPage.qa.join(" ")}</p></PreviewNote>}
+          </> : priced ? <>
             <Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
             <BookingPanel hostHref={hostEarly ? "#host" : undefined} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} />
           </> : <>
             {ef && efStory ? (
-              <section id="gallery" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end scroll-mt-32" aria-label="Two frames">
+              <section id="gallery" className="mt-16 md:mt-24 grid md:grid-cols-12 gap-5 items-end" aria-label="Two frames">
                 {efStory.human && <div className="md:col-span-5"><EFFrame a={efStory.human} ratio="4:5" sizes="(min-width: 768px) 40vw, 100vw" /></div>}
                 {(efStory.arrival ?? efStory.night) && <div className="md:col-span-7"><EFFrame a={(efStory.arrival ?? efStory.night)!} ratio="3:2" sizes="(min-width: 768px) 58vw, 100vw" /></div>}
               </section>
             ) : images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
-            {s.engine && <LiveRatesBand property={s.engine} name={s.name} />}
-            {!s.engine && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
+            {s.engine && !stayPage && <LiveRatesBand property={s.engine} name={s.name} />}
+            {!s.engine && !stayPage && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
           </>}
           {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
-          {!priced && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
+          {!priced && !stayPage && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
-          {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24 scroll-mt-32"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
+          {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the stay's own pin over the canyon country, below its map. */}
+          {s.slug === "ulum-moab" && s.coords && <SeeIn3D page="stays/ulum-moab" kind="points" ink={volumeMark("stays")} title={`${s.name.replace(/\s+/g, " ")}, Utah`} exaggeration={1.4} playLabel="Turn the canyon country"
+            points={[{ name: s.name.replace(/\s+/g, " "), lat: s.coords.lat, lng: s.coords.lng }]}
+            intro="The stay's own pin with the red rock country round it raised in relief: mesas, buttes and the canyons cut between them. Press Turn the canyon country, or tilt the map yourself." />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />
+          <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : undefined} className="mt-8" />
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>

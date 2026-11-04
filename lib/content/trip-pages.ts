@@ -35,7 +35,7 @@ function builtMap(t: Trip, r: RouteFile, ink: string) {
   const items = r.stops.map((s) => `<li><span class="mono">Day ${esc(s.day)}</span> ${esc(s.name)}</li>`).join("");
   return `<div id="jwmap-${esc(t.id)}" data-keep="1" data-gen="1" class="jw-maps jw-site" data-jw-map="itinerary" style="--jw-overland: ${ink}; --jw-voyages: ${ink}; --jw-acc: ${ink}">` +
     `<script type="application/json">${cfg}</script>` +
-    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="Route of ${esc(r.title)}: ${esc(names.join(", "))}." style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
+    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="Route of ${esc(r.title)}: ${esc(names.join(", "))}." style="margin: 0; background: #F4F2EF; padding: 18px 20px">` +
     `<ol style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none">${items}</ol>` +
     `<figcaption style="display: flex; gap: 16px; font-size: 13px; background: #FBF8F1; padding: 10px 14px; margin: 14px -20px -18px"><span>${esc(r.subtitle ?? "")}</span><span class="mono" style="margin-left: auto; font-size: 10px; letter-spacing: .08em">POSITIONS APPROXIMATE</span></figcaption>` +
     `</figure></div></div>`;

@@ -1,4 +1,5 @@
 import { test } from "node:test";
+import { isFolioId } from "../lib/folio/shelf.ts";
 import assert from "node:assert/strict";
 import { validateEnquiry } from "../lib/enquiry.ts";
 
@@ -46,6 +47,7 @@ test("a listed advisor is addressed directly with hello@ copied", () => {
   assert.deepEqual(deliveryFor({ context: { advisor: "sofia-marchetti" } }, inboxes), { to: "hello@jameswildco.com", cc: [] });
   assert.deepEqual(deliveryFor({ context: { from: "advisor-application", advisor: "anthony-papagno" } }, inboxes), { to: "advisors@jameswildco.com", cc: [] });
 });
+test("JRN journey sketch ids are accepted as folios", () => { assert.ok(isFolioId("JRN-2026-000012")); assert.ok(isFolioId("FOL-2026-000012")); assert.ok(!isFolioId("STY-2026-000012")); });
 test("what Iggi learned travels with the enquiry", () => {
   const m = enquiryEmail({ ...base, context: { from: "iggi", advisor: "anthony-papagno", folio: "FOL-2026-000012", q: "Raja Ampat", notes: "Two divers, late Nov; <ruled out> liveaboards over 12 cabins." } });
   assert.match(m.subject, /^Trip enquiry \(from Iggi\)/);

@@ -333,6 +333,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             {c.slug === "philippines" && <p className="mt-4 text-[13.5px] ledger-muted italic max-w-3xl">Positions are approximate until each stay&rsquo;s pin is filed: stays whose brands publish no pin sit at their island or town. The red and white flags mark dive sites, one line each below.</p>}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
+            {/* Board 4: the 3D country atlas under the chart where it is switched on (components/maps/terrain/flag.ts). */}
+            {!coming && atlasOn(c.slug) && <CountryAtlas country={c.slug} name={c.slug === "tahiti" ? "French Polynesia" : c.name} regionSlug={c.region} />}
           </section>
 
           {/* French Polynesia (Tahiti): lagoon atlas, island-hopping routes, Windstar and Pearl (2 Nov 2026). */}

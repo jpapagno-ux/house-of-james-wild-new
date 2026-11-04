@@ -260,7 +260,7 @@ export default function AtlasMap({ data, title, reduced, onFail, initial }: Atla
   return (
     <>
       <div className="jw-relief__tabs" role="group" aria-label="Map layers">
-        {(Object.keys(LAYER_NAMES) as AtlasLayer[]).map((k) => (
+        {(Object.keys(LAYER_NAMES) as AtlasLayer[]).filter((k) => k === "pins" || counts[k] > 0 || (k === "volcanoes" && !!data.volcanoSource)).map((k) => (
           <button key={k} type="button" className="jw-relief__btn jw-atlas__chip" aria-pressed={on[k]} onClick={() => toggle(k)} data-layer={k}>
             <span className={`jw-atlas__key jw-atlas__key--${k}`} aria-hidden="true" />{LAYER_NAMES[k]}<span className="jw-atlas__n">{counts[k]}</span>
           </button>
@@ -316,7 +316,7 @@ export default function AtlasMap({ data, title, reduced, onFail, initial }: Atla
       <div className="jw-relief__bar">
         {flying
           ? <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={stop}>Stop</button>
-          : <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={() => void fly()} disabled={!ready || !data.flight.length}>Fly the route</button>}
+          : data.flight.length > 0 && <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={() => void fly()} disabled={!ready}>Fly the route</button>}
         <button type="button" className="jw-relief__btn" onClick={() => { stop(); setCard(null); overview(!reduced); }} disabled={!ready}>Overview</button>
         {hasSat && (
           <div className="jw-relief__bar-end" role="group" aria-label="Map style">

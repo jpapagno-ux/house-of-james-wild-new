@@ -2,7 +2,6 @@ import Image from "next/image";
 import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
 import FounderProof from "@/components/record/FounderProof";
-import { ShortFilmPanel } from "@/components/media/ShortFilm";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -329,17 +328,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Vessel = voyage && V ? (
     <Sec id="vessel">
       <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
-      {film ? (
-        // The vessel's own film beside the photographs: tall, silent, looping.
-        <div className="mt-8 grid md:grid-cols-[minmax(0,260px)_1fr] gap-2 md:h-[460px]">
-          <ShortFilmPanel film={film} className="w-full max-w-[420px] mx-auto md:max-w-none md:h-full md:w-auto" sizes="(max-width: 768px) 100vw, 260px" />
-          {V.gallery && V.gallery.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-rows-2 gap-2 md:h-full">
-              {V.gallery.slice(0, 4).map((g) => <Ph key={g.url} img={g} label={g.alt} className="aspect-[4/3] md:aspect-auto md:h-full" sizes="(max-width: 768px) 50vw, 30vw" />)}
-            </div>
-          )}
-        </div>
-      ) : V.gallery && V.gallery.length > 0 && (
+      {/* The vessel's own film plays in the hero (Aliikai voyages, James 3 Nov 2026), so the gallery is photographs only. */}
+      {V.gallery && V.gallery.length > 0 && (
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">
           {V.gallery.slice(0, 5).map((g, i) => <Ph key={g.url} img={g} label={g.alt} className={i === 0 ? "col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-full" : "aspect-[4/3] md:aspect-auto md:h-full"} sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />)}
         </div>
@@ -569,7 +559,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
+          <RecordHero image={slides[0]} slides={slides} film={film} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.10)]" aria-hidden="true" />

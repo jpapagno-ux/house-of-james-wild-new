@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { heroBox } from "@/lib/hero-box";
 import OnPageLink from "./OnPageLink";
-import { ShortFilmBackdrop } from "@/components/media/ShortFilm";
+import { FilmOrStill, ShortFilmBackdrop } from "@/components/media/ShortFilm";
 import type { ShortFilm } from "@/lib/content/films";
 import HeroSlider from "@/components/destination/HeroSlider";
 import { heroReady, sharpen } from "@/lib/content/sharpen";
@@ -44,31 +44,38 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
   // and its volume row (76px phones, 167px from 1024) and the photo counter beneath it, and the header turns solid once the copy
   // ([data-hero-copy]) reaches it (hero arrows fix, 3 Nov 2026).
   const box = heroBox(height);
-  const body = (
-      <div className="relative flex-1 w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[140px] lg:pt-[200px] pb-8 md:pb-10">
+  const copy = (withFilm: boolean) => (
+      // Over a film on a tall screen the film's credit sits at the foot, so the copy stops above it.
+      <div className={`relative flex-1 w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[140px] lg:pt-[200px] pb-8 md:pb-10 ${withFilm ? "portrait:!pb-12" : ""}`}>
         <div data-hero-copy>
         {/* the note from the house: floats top-right on desktop, unless a founder stamp is there too — then the two sit together, bottom-right */}
         {tag && (stamp ? <div className="md:hidden">{tag}</div> : tag)}
         <div className="flex items-end justify-between gap-8">
-          <div className={film ? "landscape:max-w-[48vw]" : undefined}>
+          <div className={withFilm ? "landscape:max-w-[48vw]" : undefined}>
             <p className="ledger-eyebrow !text-white/85">{eyebrow}</p>
             <h1 className="ledger-h1 mt-3">{title}</h1>
             {tagline && <p className="ledger-display italic text-lg md:text-2xl text-white/90 mt-3 max-w-2xl">{tagline}</p>}
           </div>
           {stamp && (
-            <div className={`hidden md:flex items-end gap-8 shrink-0 ${film ? "landscape:!hidden" : ""}`}>
+            <div className={`hidden md:flex items-end gap-8 shrink-0 ${withFilm ? "landscape:!hidden" : ""}`}>
               {tag && <div className="[&>div]:!static [&>div]:!mb-0 pb-2">{tag}</div>}
               <PhotoStamp>{stamp}</PhotoStamp>
             </div>
           )}
         </div>
-        {glance && <div className={`mt-7 ${film ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
+        {glance && <div className={`mt-7 ${withFilm ? "landscape:max-w-[54vw]" : ""}`}>{glance}</div>}
         </div>
       </div>
   );
+  const body = copy(!!film);
+  const still = copy(false);
   // A vessel's own short film plays as the hero (tall screens edge to edge, wide screens in a frame).
+  // A voyage page also brings its photographs: they stand in where the film cannot play (reduced
+  // motion, Save-Data), so the film appears once per page (Aliikai voyages, James 3 Nov 2026).
+  const ready = slides ? heroReady(slides) : undefined;
+  const photos = ready && ready.length > 1 ? <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{film ? still : body}</HeroSlider> : null;
   if (film) {
-    return (
+    const filmHero = (
       <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
         {/* the framed film clears the header and its volume row (mobile 80px, desktop 168px) */}
         <ShortFilmBackdrop film={film} frame="top-[100px] lg:top-[192px] bottom-[52px]" />
@@ -78,11 +85,9 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
         <div id="hero-end" className="absolute bottom-0" />
       </section>
     );
+    return photos ? <FilmOrStill film={filmHero} still={photos} /> : filmHero;
   }
-  const ready = slides ? heroReady(slides) : undefined;
-  if (ready && ready.length > 1) {
-    return <HeroSlider slides={ready.map((x) => ({ src: x.url, alt: x.alt }))} label={`${title} in photographs`} height={height} controls="top">{body}</HeroSlider>;
-  }
+  if (photos) return photos;
   return (
     <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
       <Image src={sharpen(image.url)} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />

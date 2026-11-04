@@ -3,9 +3,9 @@
 // records (Stay Studio, sourced from COMO). COMO's own count is 19 hotels and
 // resorts; we list the five the house sells.
 //
-// COMO Parrot Cay (STY-2026-000575) and COMO Alpina Dolomites (STY-2026-000624)
-// are filed in Stay Studio but not released yet, so their cards say their page
-// is being filed. Parrot Cay and Alpina photographs are marked rights
+// COMO Parrot Cay (STY-2026-000575) is filed in Stay Studio but not released,
+// so its card says its page is being filed. COMO Alpina Dolomites
+// (STY-2026-000624) was released on 4 Nov 2026. Parrot Cay and Alpina photographs are marked rights
 // "to_verify" in Cloudinary until COMO confirms use (media-kit email, 4 Nov).
 // Hidden from search (approved: false) until James approves the copy.
 
@@ -95,7 +95,7 @@ export const COMO = {
       image: img("wildco/italy/dolomites/como-alpina/como-alpina-snow-buildings-mountains", "COMO Alpina Dolomites under snow on the Alpe di Siusi, with the mountains behind", 1920, 1080),
       gallery: [],
       official: { who: "For skiers in winter and walkers in summer.", facts: "Eight room and suite types, a COMO Shambhala Retreat with a 22 m indoor pool, four restaurants and Play by COMO; about an hour from Bolzano." },
-      built: false,
+      built: true,
     },
   ] as CollectionHotel[],
   pairings: [

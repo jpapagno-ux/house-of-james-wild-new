@@ -66,7 +66,7 @@ export default function EntranceShort({ film, text }: { film: ShortFilm; text: s
       </div>
       {/* wide screens: the framed film on the right over a blurred still */}
       <div className="absolute inset-0 overflow-hidden portrait:hidden" aria-hidden="true">
-        <Image src={film.poster} alt="" fill priority quality={60} sizes="100vw" className="object-cover scale-110 blur-2xl brightness-[0.6] saturate-[1.1]" />
+        <Image src={film.poster} alt="" fill priority quality={75} sizes="100vw" className="object-cover scale-110 blur-2xl brightness-[0.6] saturate-[1.1]" />
         <div className="absolute right-[5vw] xl:right-[8vw] top-[132px] lg:top-[190px] bottom-[96px] aspect-[9/16] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.75)] ring-1 ring-white/25">
           <Image src={film.poster} alt="" fill quality={85} sizes="30vw" className="object-cover" />
           {on && tall === false && <Player film={film} run={run} className="inset-0 w-full h-full scale-[1.08]" />}

@@ -92,7 +92,7 @@ export function ShortFilmBackdrop({ film, top = 116, bottom = 52, frame }: { fil
         <Player film={film} on={ready && tall === true} className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-[1.08] w-[max(100vw,56.25svh)] h-[max(100svh,177.78vw)]" />
       </div>
       <div className="absolute inset-0 overflow-hidden portrait:hidden" aria-hidden="true">
-        <Image src={film.poster} alt="" fill priority quality={60} sizes="100vw" className="object-cover scale-110 blur-2xl brightness-[0.55] saturate-[1.15]" />
+        <Image src={film.poster} alt="" fill priority quality={75} sizes="100vw" className="object-cover scale-110 blur-2xl brightness-[0.55] saturate-[1.15]" />
         <div className={`absolute right-[5vw] xl:right-[9vw] aspect-[9/16] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.75)] ring-1 ring-white/25 ${frame ?? ""}`} style={frame ? undefined : { top, bottom }}>
           <Image src={film.poster} alt="" fill priority quality={85} sizes="40vw" className="object-cover" />
           <Player film={film} on={ready && tall === false} className="inset-0 w-full h-full scale-[1.08]" />

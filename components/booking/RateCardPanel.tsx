@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import HandNote from "@/components/notes/HandNote";
 import { BedDouble, CalendarDays, Users } from "lucide-react";
 import { BASIS_LABEL, applyOffers, estimate, nightsOf, type CardRow, type OfferRules, type Year } from "@/lib/rate-card";
 import type { PricedRoom } from "@/lib/content/priced-stays";
@@ -76,6 +77,8 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
           {nights < 1 ? <span>Choose a check-out after check-in.</span> : year ? <span className="ledger-crimson">Estimate for {nights} {nights === 1 ? "night" : "nights"} from {partner}&rsquo;s published card</span> : <span>{partner} has published rates for {window}. For other dates, ask James for a quote.</span>}
         </p>
       </form>
+
+      {year && nights > 0 && <HandNote arrow="down" className="mt-5 ml-1">Choosing a room sends a request, not a payment. The house checks price and space with the lodge first.</HandNote>}
 
       <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {rows.map((r: CardRow) => {

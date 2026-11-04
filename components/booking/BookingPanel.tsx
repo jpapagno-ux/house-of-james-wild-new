@@ -4,6 +4,7 @@ import { lockScroll } from "@/lib/scroll-lock";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, BedDouble, CalendarDays, Check, RefreshCcw, Users, X } from "lucide-react";
+import HandNote from "@/components/notes/HandNote";
 import { splitByAvailability, type RatePlan } from "@/lib/rates";
 import { FL_TAX_RATE } from "@/lib/pricing";
 import type { PricedRoom } from "@/lib/content/priced-stays";
@@ -169,6 +170,8 @@ export default function BookingPanel({ property, name, rooms, included, excluded
           {state === "error" && <span>The engine didn&rsquo;t answer; registry rates shown.</span>}
         </p>
       </form>
+
+      {state === "ok" && pricedCount > 0 && <HandNote arrow="down" className="mt-5 ml-1">These are the rooms open on your dates; the rest are folded away below.</HandNote>}
 
       <div className="mt-6 flex gap-6 border-b ledger-rule" role="tablist" aria-label="Room types">
         {([["room", "Rooms & suites"], ["house", "Cottages & houses"]] as const).map(([k, l]) => (

@@ -80,6 +80,7 @@ export const VOLUMES: MegaMenu[] = [
       { label: "By water", href: "/stays?by=water" },
       { label: "New to the Ledger", href: "/stays/new" },
       { label: "Our partner: COMO", href: "/collections/como" },
+      { label: "Our partner: Belmond", href: "/collections/belmond" },
       { label: "On the Horizon: offers", href: "/offers#stays" },
     ],
     ledger: [],
@@ -92,6 +93,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
+      { label: "Belmond: Cape Town to the Delta", href: "/collections/belmond" },
       { label: "Ask Crux, the safari guide", href: "/safaris/wild-co-safaris" },
     ],
     ledger: [],
@@ -364,6 +366,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/journal/africa-inspired-wild-and-co-safaris", priority: 0.7, changeFrequency: "monthly" },
   { path: "/collections/cayuga-collection", priority: 0.7, changeFrequency: "monthly" },
   { path: "/collections/como", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/collections/belmond", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },

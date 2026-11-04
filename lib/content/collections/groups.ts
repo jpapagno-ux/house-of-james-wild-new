@@ -70,6 +70,12 @@ export const GROUPS: SisterGroup[] = [
     slugs: ["lion-sands", "monwana-thornybush", "marataba", "cape-cadogan-boutique-hotel"],
   },
   {
+    key: "belmond",
+    name: "Belmond",
+    line: "Belmond in southern Africa: Mount Nelson in Cape Town, and two safari lodges in northern Botswana, Eagle Island in the Okavango Delta and Savute Elephant Lodge in Chobe.",
+    slugs: ["belmond-mount-nelson", "belmond-eagle-island-lodge", "belmond-savute-elephant-lodge"],
+  },
+  {
     key: "como",
     name: "COMO Hotels and Resorts",
     line: "COMO houses we plan, each with COMO Shambhala: three in Bali, a private island in Turks and Caicos, and in Italy a mountain hotel in the Dolomites and a castle estate in Chianti.",

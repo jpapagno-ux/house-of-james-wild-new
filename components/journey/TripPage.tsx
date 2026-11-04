@@ -30,6 +30,7 @@ import { InkStamp } from "@/components/ledger/VolumeKit";
 import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
+import RouteScrollSync from "./RouteScrollSync";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
@@ -120,7 +121,6 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         <>
           <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
           {!mapHtml.includes('data-gen="1"') && <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />}
-          <div className="mt-6" dangerouslySetInnerHTML={{ __html: mapHtml }} />
         </>
       ) : (
         // No chart engraved for these waters yet: the stops still list in order below.
@@ -128,12 +128,14 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <span className="bg-paper/85 px-3 py-2"><span className="block font-mono text-[11px] tracking-[0.14em] uppercase">The chart is being engraved</span><span className="block ledger-display text-[17px] mt-1">{route}</span></span>
         </div>
       )}
-      <ol className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3" aria-label="Stops in order">
+      <div className={mapHtml ? "mt-6 lg:grid lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:gap-8 lg:items-start" : ""}>
+      {mapHtml && <div className="lg:sticky lg:top-[230px]" dangerouslySetInnerHTML={{ __html: mapHtml }} />}
+      <ol id={`${mapId}-stops`} className={`mt-6 ${mapHtml ? "lg:mt-0 grid gap-2 sm:grid-cols-2 lg:grid-cols-1" : "grid gap-2 sm:grid-cols-2 lg:grid-cols-3"}`} aria-label="Stops in order">
         {T.side.map(([k, name, when, move]) => {
           const d = k === "S" ? 1 : k === "E" ? (voyage ? T.days.length : 12) : voyage ? parseInt(k, 10) : parseInt(when.replace(/\D+/g, " ").trim().split(" ")[0] || "1", 10);
           return (
             <li key={k + name}>
-              <button type="button" data-jw-day={mapHtml ? d : undefined} data-jw-for={mapHtml ? mapId : undefined} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3">
+              <button type="button" data-jw-day={mapHtml ? d : undefined} data-jw-for={mapHtml ? mapId : undefined} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3 transition-colors data-[on]:border-[#8B2525] data-[on]:bg-paper-card">
                 <span className="ledger-display ledger-crimson text-lg w-6 shrink-0">{k}</span>
                 <span><span className="ledger-display text-[17px]">{name}</span> <span className="ledger-muted text-[13px]">· {when}</span><span className="block text-[13px] ledger-muted">{move}</span></span>
               </button>
@@ -141,6 +143,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           );
         })}
       </ol>
+      </div>
+      {mapHtml && <RouteScrollSync list={`${mapId}-stops`} />}
     </Sec>
   );
 

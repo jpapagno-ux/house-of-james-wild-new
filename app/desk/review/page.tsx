@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DecideRevision, DecideSubmission } from "@/components/platform/forms";
-import { Empty, LedgerId, PageHead, StatusPill } from "@/components/platform/ui";
+import { Empty, LedgerId, Notice, PageHead, StatusPill } from "@/components/platform/ui";
 import { requireHouse } from "@/lib/platform/membership";
 import { FIELD_LABEL, REVISION_STATUS, SUBMISSION_STATUS, niceDate, showValue } from "@/lib/platform/labels";
 import { CONTENT_FIELD } from "@/lib/platform/content";
@@ -30,6 +30,10 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
     .select("id, reference, kind, title, partner_note, documents, status, submitted_at, created_at, jw_note, organization:organizations(name, partner_code), property:properties!property_id(name, legacy_cms_id, publication_status), request:content_requests!request_id(reference, requested_item), revisions(id, field, target_table, current_value, proposed_value, status, partner_note, jw_note)")
     .in("status", states).order("submitted_at", { ascending: true, nullsFirst: false }).limit(100);
   const rows = (data ?? []) as unknown as Row[];
+  // Publish run (D-18 A): approved property content waiting to reach the Library.
+  const { data: queued } = await desk.sb.from("revisions").select("target_id, property:properties!property_id(name)")
+    .eq("target_table", "entity_content").in("status", ["approved", "edited_approved"]).is("published_at", null).limit(500);
+  const queuedStays = [...new Set(((queued ?? []) as unknown as { property: { name: string } | null }[]).map((q) => q.property?.name).filter(Boolean))];
   return (
     <div>
       <PageHead eyebrow="House desk · James Wild & Co" title="Review queue"
@@ -40,6 +44,11 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
           <Link href="/desk/commission" className="ledger-btn-ghost uppercase self-center">Commission check</Link>
           <Link href="/partner" className="ledger-btn-ghost uppercase self-center">Partner Desk</Link>
         </>} />
+      {queuedStays.length > 0 && (
+        <div className="mt-6"><Notice title="Approved, waiting for the publish run">
+          Content for {queuedStays.join(", ")} goes to the Library in the next publish run: a pull request James merges, after which the stay pages follow. Room changes are live on the desk as soon as they are approved.
+        </Notice></div>
+      )}
       {rows.length === 0 && <div className="mt-8"><Empty title={sp.show === "decided" ? "Nothing decided yet" : "Nothing waiting"}>Partner updates appear here as they arrive.</Empty></div>}
       <ol className="mt-8 grid gap-5">
         {rows.map((s) => {

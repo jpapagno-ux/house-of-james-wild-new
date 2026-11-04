@@ -1,0 +1,7 @@
+{
+ "_note": "Publish run (D-18 A): content the house approved on the Partner Desk, applied to the Library by .github/workflows/content-apply.yml when this file is merged on main. Only airport_name, airport_directions, best_months and partner_facts can change. The publish-run workflow writes this file on its own branch and opens the PR; this starting copy is empty and applies nothing.",
+ "by": "",
+ "batch": "none-yet",
+ "appliedOn": "2026-11-04",
+ "records": []
+}

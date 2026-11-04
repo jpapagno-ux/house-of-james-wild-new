@@ -1,0 +1,62 @@
+# Publish run, step 1 (D-18 option A): what the house approved on the Partner Desk becomes a pull
+# request. The workflow asks the site for the pending batch (GitHub OIDC, no stored secret), writes
+# scripts/data/content-apply.json on a branch and opens a PR for James. Nothing reaches the Library
+# or the pages until that PR is merged (content-apply.yml does the rest).
+name: Publish run (prepare)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 10 * * 1-5" # weekday mornings, US Eastern; quiet days open nothing
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+concurrency:
+  group: publish-run
+  cancel-in-progress: false
+
+env:
+  SITE: https://www.jameswildco.com
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - name: Ask the site for the pending batch
+        id: batch
+        run: |
+          set -euo pipefail
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=jameswildco-publish-run" | jq -r .value)
+          curl -sSf --retry 2 -H "Authorization: Bearer $TOKEN" "$SITE/api/v1/internal/publish-run" -o batch.json
+          N=$(jq '.records | length' batch.json); NAME=$(jq -r .batch batch.json)
+          echo "records: $N  batch: $NAME"; jq -r '.skipped[]? | "skipped: \(.name) (\(.why))"' batch.json
+          echo "n=$N" >> "$GITHUB_OUTPUT"; echo "name=$NAME" >> "$GITHUB_OUTPUT"
+      - name: Open the pull request
+        if: steps.batch.outputs.n != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NAME: ${{ steps.batch.outputs.name }}
+        run: |
+          set -euo pipefail
+          if gh pr list --state open --search "Publish run in:title" --json number --jq '.[0].number' | grep -q .; then
+            echo "A publish run PR is already open; merge or close it first."; exit 0
+          fi
+          jq 'del(.skipped)' batch.json > scripts/data/content-apply.json
+          git config user.name "James Wild & Co publish run"
+          git config user.email "publish-run@users.noreply.github.com"
+          git checkout -b "publish-run/$NAME"
+          git add scripts/data/content-apply.json
+          git commit -m "Publish run $NAME: approved partner content to the Library"
+          git push -u origin "publish-run/$NAME"
+          {
+            echo "Content the house approved on the Partner Desk, ready for the Library. **Merging applies it**; closing discards nothing on the desk (it comes back in the next run)."
+            echo; echo "| Stay | Ledger ID | Changes |"; echo "| --- | --- | --- |"
+            jq -r '.records[] | "| \(.name) | \(.ledger_id) | \(.set | keys | join(", ")) |"' batch.json
+            echo; jq -r '.skipped[]? | "- Not included: \(.name) (\(.why))"' batch.json
+          } > body.md
+          gh pr create --base main --head "publish-run/$NAME" --title "Publish run $NAME" --body-file body.md

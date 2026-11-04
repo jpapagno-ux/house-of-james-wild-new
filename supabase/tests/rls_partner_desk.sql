@@ -725,5 +725,23 @@ begin
     and (select count(*) from public.commission_terms where airtable_record_id = 'recNKAYUAAAAAAAAA') = 2
     and jt like '%recNMOREAAAAAAAAA%');
 
+  -- ===== (O) publish run (D-18 A): approved content goes to the Library in a reviewed batch
+  perform set_config('role', 'postgres', true);
+  select count(*) into n from public.publish_run_pending() p where p.property_id = k1 and p.fields @> array['best_months', 'inclusions']
+    and p.content->>'best_months' = 'April to October, the dry season' and crev = any (p.revision_ids);
+  r := r || jsonb_build_object('t', 'O01 the run lists approved content with the approved values', 'pass', n = 1);
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  begin perform public.publish_run_pending(); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'O02 only the server can read the run', 'pass', ok);
+  begin perform public.publish_run_mark(array[crev], 'x'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'O03 nor stamp it', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+  n := public.publish_run_mark(array[crev, crev2], 'run-test-1');
+  r := r || jsonb_build_object('t', 'O04 after the Library takes it, the revisions are stamped once', 'pass', n = 2
+    and public.publish_run_mark(array[crev, crev2], 'run-test-2') = 0
+    and exists (select 1 from public.entity_content where id = k1 and published_at is not null)
+    and not exists (select 1 from public.publish_run_pending() p where p.property_id = k1));
+
   raise exception 'PARTNER_DESK_RLS %', r;
 end $$;

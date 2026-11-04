@@ -33,8 +33,6 @@ import { stampForStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
 import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
-import { regionBySlug } from "@/lib/content/regions";
-import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
 import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
@@ -67,8 +65,6 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   if (!x) notFound();
   const { r, c } = x;
   const path = `/safaris/${r.slug}/${c.slug}`, rpath = `/safaris/${r.slug}`;
-  const region = r.stay.regionSlug ? regionBySlug(r.stay.regionSlug) : undefined;
-  const countryPath = region && r.stay.countrySlug ? `/destinations/${region.slug}/${r.stay.countrySlug}` : null;
   const st = campStatus(r, c);
   const stamp = st ? stampForStatus(st.status) : null;
   const units = c.units.find((u) => /\d/.test(u)) ?? c.units[0] ?? "";
@@ -81,7 +77,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   const planHref = `/plan?trip=${encodeURIComponent(`${r.name} · ${c.name}`)}`;
   const answer = `${c.name} is a ${KIND_LABEL[c.kind].toLowerCase()} on ${r.name} in the ${r.area}, ${r.stay.country ?? "South Africa"}, filed in the James Wild & Co Ledger under the reserve's ${r.rsv}.${units ? ` ${units}.` : ""}${c.fromRate ? ` Registry rates start from ${usd(c.fromRate)}${c.kind === "camp" ? " per person, per night" : " as filed"}.` : ""}${r.stay.bestMonths ? ` Best months on the reserve: ${r.stay.bestMonths}.` : ""}${st ? ` ${st.line}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : ""} Plan it with James or an advisor through Wild & Co Safaris.`;
   const facts: [string, string][] = [["Reserve", `${r.name} · ${r.rsv}`], ["Type", KIND_LABEL[c.kind]], ...(units ? [["Suites", units] as [string, string]] : []), ...(caps.length ? [["Sleeps", Math.min(...caps) === Math.max(...caps) ? `${caps[0]} per suite` : `${Math.min(...caps)}–${Math.max(...caps)} per suite`] as [string, string]] : []), ...(c.fromRate ? [["From", `${usd(c.fromRate)} ${c.kind === "camp" ? "pp / night" : "as filed"}`] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ...(suited.length ? [["Best suited to", suited.join(", ")] as [string, string]] : []), ...(st ? [["The Ledger", `${stamp} · ${st.date.slice(0, 4)}`] as [string, string]] : [])];
-  const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path: rpath }, { name: c.name, path }];
+  const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(r.stay.country ? [{ name: r.stay.country, path: "/safaris#countries-h" }] : []), { name: r.name, path: rpath }, { name: c.name, path }];
   const siblings = r.camps.filter((o) => o.slug !== c.slug && campReady(o));
   const images = c.gallery.map((u, i) => ({ url: u, alt: `${c.name}, ${r.name}, photograph ${i + 1}` }));
   const apart = momentsFor(`camp:${r.slug}/${c.slug}`, c.features, images.slice(1));

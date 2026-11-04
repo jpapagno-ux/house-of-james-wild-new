@@ -19,6 +19,22 @@ export const GROUP_CONNECT_ON = true;
 // PLACEHOLDER until James's live Calendly group event is set.
 const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
 
+// One card for Matt across the MORE pages (see "MORE" below): same person, the page's own topics.
+function moreHost(key: string, property: string, place: string, rooms: string, area: string): Record<string, { state: HostConnect; host: Host }> {
+  return { [key]: { state: "available", host: {
+    name: "Matthew Christopher Smith", role: "Your host · International Sales Manager, MORE Collection", seats: 6,
+    tz: "Africa/Johannesburg", place: "Johannesburg", zoneLabel: "South Africa Standard Time (UTC+2)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=${property}`,
+    topics: [
+      rooms,
+      "What the rate includes and what's extra",
+      `Your dates against the best months in ${area}`,
+      area === "Cape Town" ? "Getting there: from Cape Town International, and pairing the city with a MORE safari lodge" : "Getting there: flights, the airstrip and the transfer",
+      "Children, celebrations, dietary needs, and anything that keeps you up at night",
+    ],
+  } } };
+}
+
 // SAMPLE host cards (sample: true): roles only, no names, until each property
 // confirms who takes the call. Topics come from the Ledger record.
 export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
@@ -61,6 +77,19 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
       "Children, celebrations, dietary needs, and anything that keeps you up at night",
     ],
   } },
+  // MORE (James, 4 Nov 2026): Matt is the host on every Lion Sands and MORE page "until they
+  // approve the other hosts per lodge". When MORE names a host for a lodge, give that page its own
+  // entry here (and its row in the Airtable Hosts table) in place of this one.
+  ...moreHost("camp:lion-sands/river-lodge", "lion-sands-river-lodge", "River Lodge", "The suites at River Lodge on the Sabie River and which suits your party", "the Sabi Sand"),
+  ...moreHost("camp:lion-sands/narina-lodge", "lion-sands-narina-lodge", "Narina Lodge", "The suites at Narina Lodge, up in the trees above the river, and which suits your party", "the Sabi Sand"),
+  ...moreHost("camp:lion-sands/tinga-lodge", "lion-sands-tinga-lodge", "Tinga Lodge", "The suites at Tinga Lodge in the Kruger and which suits your party", "the Kruger"),
+  ...moreHost("camp:lion-sands/fish-eagle-residence", "lion-sands-fish-eagle", "Fish Eagle Residence", "The residence on exclusive use: who sleeps where and what the team does for you", "the Sabi Sand"),
+  ...moreHost("camp:lion-sands/hinkwenu-residence", "lion-sands-hinkwenu", "Hinkwenu Residence", "The residence on exclusive use: who sleeps where and what the team does for you", "the Sabi Sand"),
+  ...moreHost("reserve:lion-sands", "lion-sands", "Lion Sands", "The four lodges and two residences at Lion Sands, and which suits your party", "the Sabi Sand"),
+  ...moreHost("stay:lion-sands", "lion-sands", "Lion Sands", "The four lodges and two residences at Lion Sands, and which suits your party", "the Sabi Sand"),
+  ...moreHost("stay:monwana-thornybush", "monwana", "Monwana", "The rooms at Monwana in Thornybush and which suits your party", "Thornybush"),
+  ...moreHost("stay:marataba", "marataba", "Marataba", "The lodges at Marataba in the Marakele and which suits your party", "the Waterberg"),
+  ...moreHost("stay:cape-cadogan-boutique-hotel", "cape-cadogan", "Cape Cadogan", "The rooms at Cape Cadogan in Gardens and which suits your party", "Cape Town"),
   "stay:wilderness-dumatau": { state: "available", host: {
     name: "Iain McConachie", role: "Your host · North America Retail Manager, Wilderness", seats: 6,
     tz: "America/Denver", place: "Denver", zoneLabel: "US Mountain Time",

@@ -69,6 +69,12 @@ export const GROUPS: SisterGroup[] = [
     line: "The More family's lodges and hotels in South Africa: Lion Sands in the Sabi Sand, Monwana in Thornybush, Marataba in the malaria-free Waterberg and Cape Cadogan in Cape Town.",
     slugs: ["lion-sands", "monwana-thornybush", "marataba", "cape-cadogan-boutique-hotel"],
   },
+  {
+    key: "como",
+    name: "COMO Hotels and Resorts",
+    line: "COMO houses we plan, each with COMO Shambhala: three in Bali, a private island in Turks and Caicos and a mountain hotel in the Dolomites.",
+    slugs: ["como-shambhala-estate", "como-uma-ubud", "como-uma-canggu", "como-parrot-cay", "como-alpina-dolomites"],
+  },
 ];
 
 export function sistersFor(slug: string): { group: SisterGroup; stays: StayData[] } | null {

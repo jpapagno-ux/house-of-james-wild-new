@@ -404,6 +404,64 @@
       "paletteKey": "brando",
       "publicationStatus": "published",
       "reviewDate": "2026-11-02"
+    },
+    {
+      "id": "EF-014",
+      "stayId": "STY-2026-000625",
+      "staySlug": "como-castello-del-nero",
+      "stayName": "COMO Castello Del Nero",
+      "designationStatus": "designated",
+      "collectionNumber": 14,
+      "heroLine": "A Chianti castle that still farms its land.",
+      "whyItMadeTheCut": [
+        "Place. Seven hundred and forty acres of Chianti between Florence and Siena. The vineyards and olive groves are the estate's own, and so is the wine and oil on the table.",
+        "Detail. A twelfth-century castle with its Renaissance frescoes kept, and interiors by Paola Navone that leave the old walls to speak.",
+        "Philosophy. COMO builds around wellbeing and the place, not spectacle. Here that means a COMO Shambhala Retreat inside a working farm, and a kitchen that starts in the garden."
+      ],
+      "jamesNote": null,
+      "signals": [
+        {
+          "key": "place",
+          "line": "A 740-acre estate in Chianti, between Florence and Siena."
+        },
+        {
+          "key": "design",
+          "line": "A twelfth-century castle with Renaissance frescoes; interiors by Paola Navone."
+        },
+        {
+          "key": "humanity",
+          "line": "Its own vineyards, olive groves and chef's garden; La Torre holds one Michelin star."
+        },
+        {
+          "key": "access",
+          "line": "35 to 45 minutes by car from Florence airport, with a shuttle to Florence and Siena."
+        }
+      ],
+      "pathwaysOverride": [
+        "rooted-in-place",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Four nights. One for the estate, one for Florence, one for Siena, and one with nowhere to be.",
+      "whoItSuits": [
+        "Food and wine travellers",
+        "Couples",
+        "Families taking Villa San Luigi",
+        "Travellers who want Florence and Siena as day trips"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want to walk out of the door into a town",
+        "Travellers who want a city hotel"
+      ],
+      "continueRefs": [
+        "pathway:rooted-in-place",
+        "pathway:the-art-of-stillness",
+        "compass"
+      ],
+      "selectionDate": "2026-11-04",
+      "paletteKey": "castello-del-nero",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "reviewDate": "2026-11-04"
     }
   ]
 }

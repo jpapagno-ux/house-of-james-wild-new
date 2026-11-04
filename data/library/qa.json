@@ -176,7 +176,7 @@
    "stay_id": "6a85bfb37f6eb35689bff8ba",
    "slug": "ambergris-caye",
    "name": "Ambergris Caye",
-   "country": "Turks Caicos",
+   "country": "Turks and Caicos",
    "missing": [
     "hero_photo",
     "stay_copy",
@@ -1129,12 +1129,11 @@
    "stay_id": "6ae8707bb3d5b36ad443b088",
    "slug": "como-parrot-cay",
    "name": "COMO Parrot Cay",
-   "country": "Turks Caicos",
+   "country": "Turks and Caicos",
    "missing": [
-    "coming_soon",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8ee",

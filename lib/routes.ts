@@ -286,6 +286,7 @@ export const STAY_SLUGS: string[] = [
   "coco-costa-rica",
   "coco-plum-island-resort",
   "como-alpina-dolomites",
+  "como-parrot-cay",
   "como-shambhala-estate",
   "como-uma-canggu",
   "como-uma-ubud",

@@ -4,6 +4,9 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
 import CompassBand from "@/components/home/CompassBand";
+import AskHouse from "@/components/home/AskHouse";
+import WhenToGoBand, { type WhenPlace } from "@/components/home/WhenToGoBand";
+import { COUNTRIES } from "@/lib/content/countries";
 import { CountedBand, VolumeStrip } from "@/components/home/Entrance";
 import { AdvisorsScroll, ForTravellers, HouseUnderStrip, PathwaysBand } from "@/components/home/Entrance2";
 import {
@@ -76,12 +79,21 @@ const pageSchema = graph(
   },
 );
 
+// Board 9: each country's filed month bands (the same lines as its page), best months only.
+const WHEN: WhenPlace[] = COUNTRIES.filter((c) => c.months.length).map((c) => ({
+  name: c.name, href: `/destinations/${c.region}/${c.slug}`,
+  areas: c.months.map((a) => ({ area: a.area, best: a.months.flatMap((v, i) => (v === "best" ? [i] : [])) })).filter((a) => a.best.length),
+})).filter((p) => p.areas.length)
+  // countries with stays filed come first; destination cards (stays coming) follow
+  .sort((a, b) => Number(!!COUNTRIES.find((c) => c.name === a.name)?.staysComing) - Number(!!COUNTRIES.find((c) => c.name === b.name)?.staysComing));
+
 export default function Home() {
   return (
     <>
       <SiteHeader overlay />
       <main id="main">
         <FilmHero {...HOME.hero} />
+        <AskHouse />
         {/* The entrance (house chrome): counted, the stance, six volumes, advisor-forward */}
         <CountedBand />
         <div className="max-w-[1400px] mx-auto px-5 md:px-10"><ForTravellers /></div>
@@ -91,6 +103,7 @@ export default function Home() {
           <PathwaysBand />
         </div>
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          <WhenToGoBand places={WHEN} />
           <CompassBand />
           <SignatureShelf />
           <OverlandRoutes />

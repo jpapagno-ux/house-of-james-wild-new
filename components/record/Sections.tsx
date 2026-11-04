@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { heroBox } from "@/lib/hero-box";
-import OnPageLink from "./OnPageLink";
+import ChapterRail from "./ChapterRail";
 import { FilmOrStill, ShortFilmBackdrop } from "@/components/media/ShortFilm";
 import type { ShortFilm } from "@/lib/content/films";
 import HeroSlider from "@/components/destination/HeroSlider";
@@ -118,11 +118,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
   return (
     <nav data-subnav aria-label="On this page" className="border-b ledger-rule bg-paper/95 backdrop-blur sticky top-[76px] lg:top-[164px] z-30">
       <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-5">
-        <div className="flex-1 min-w-0 flex items-center gap-5 xl:gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [mask-image:linear-gradient(to_right,black_92%,transparent)]">
-          {items.map(([label, id]) => (
-            <OnPageLink key={id} id={id} className="ledger-eyebrow hover:ledger-crimson">{label}</OnPageLink>
-          ))}
-        </div>
+        <ChapterRail items={items} />
         <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex ledger-btn shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>

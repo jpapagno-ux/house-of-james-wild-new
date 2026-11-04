@@ -90,7 +90,11 @@
         "Every one of the twelve suites has a private balcony and a private ocean-view jacuzzi. The Owner Suite, at 72 square metres, has two.",
         "A spa with a hammam and a massage room. Via Natura says Hermes was the first small ship in the Galápagos with a full-service spa."
       ],
-      "jamesNote": null,
+      "jamesNote": {
+        "text": "I send people to Hermes when they want the Galápagos without giving up a good night's sleep. Twenty guests, twenty crew, a butler on every deck. You'll be looked after before you know you needed it. Bringing the family or a group of friends? Take the whole ship.",
+        "where": "Galápagos",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
         {
           "key": "place",
@@ -157,7 +161,11 @@
         "Five cabins for up to ten guests, and the whole yacht goes to one party. Aman calls her fully staffed and yours to command.",
         "A crew of 14 by Aman's count, with two chefs, a dive master and a spa therapist, and the gear to dive, snorkel, kayak and paddleboard from the boat."
       ],
-      "jamesNote": null,
+      "jamesNote": {
+        "text": "Amandira is for the family that wants Indonesia to themselves. Ten guests, fourteen crew, two chefs and a dive master, and the whole boat bends around your day. Put an Aman on land at either end and ask me which route.",
+        "where": "Indonesia",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
         {
           "key": "design",
@@ -291,7 +299,11 @@
         "Scale. 12,669 square feet, two master suites and four suites, for up to fourteen guests: a whole island house for one family or one group of friends.",
         "Privacy. A kitchen, a gym, a hammam and sauna and an infinity pool of its own, with a chef on request. Next door, the rest of Vahine is nine bungalows."
       ],
-      "jamesNote": null,
+      "jamesNote": {
+        "text": "Taha'a is my favourite island in French Polynesia, and I was on Vahine in 2025. This is the house I'd give a family that wants a lagoon to itself: fourteen people, one motu, one bridge back to the world.",
+        "where": "Taha'a",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
         {
           "key": "place",
@@ -355,7 +367,11 @@
         "The residence. The Teremoana Residence has three en suite bedrooms and a staff or kids' room, 279 square metres inside and as much again outdoors, a 22 square metre infinity pool, a full kitchen and its own experience creator.",
         "The atoll itself. The nonprofit Tetiaroa Society studies and protects Tetiaroa. Invasive rats were removed in 2020, and nine seabird species live on the atoll."
       ],
-      "jamesNote": null,
+      "jamesNote": {
+        "text": "When someone asks me for the best week of their year, this is where I start. Marlon Brando's atoll, nine kinds of seabird, rays in the shallows, and a team that runs so quietly you only notice it when you leave. Bring the family? Take the Teremoana.",
+        "where": "Tetiaroa",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
         {
           "key": "place",
@@ -418,7 +434,11 @@
         "Detail. A twelfth-century castle with its Renaissance frescoes kept, and interiors by Paola Navone that leave the old walls to speak.",
         "Philosophy. COMO builds around wellbeing and the place, not spectacle. Here that means a COMO Shambhala Retreat inside a working farm, and a kitchen that starts in the garden."
       ],
-      "jamesNote": null,
+      "jamesNote": {
+        "text": "I send food and wine people here. A twelfth-century castle that still farms its 740 acres, oil from the trees outside on the table, and a Michelin star at La Torre. Four nights, and keep one of them free.",
+        "where": "Chianti",
+        "when": "The Ledger, 2026"
+      },
       "signals": [
         {
           "key": "place",

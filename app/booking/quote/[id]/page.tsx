@@ -5,6 +5,7 @@ import { isUuid } from "@/lib/booking-live/validate";
 import { quoteState, STATE_WORDS } from "@/lib/booking-live/bookings";
 import { Timeline } from "@/components/trips/TripCards";
 import { niceWhen } from "@/lib/booking-live/money";
+import { TBC, isEstimateSeason, seasonLabel } from "@/lib/booking-live/estimates";
 
 export const metadata = { title: "Your request" };
 
@@ -49,10 +50,10 @@ export default async function QuotePage({ params }: { params: Promise<{ id: stri
         <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Dates</dt><dd>{nice(q.arrival_date)} → {nice(q.departure_date)}</dd></div>
         <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Guests</dt><dd>{q.adults} adult{q.adults === 1 ? "" : "s"}{q.children ? `, ${q.children} child${q.children === 1 ? "" : "ren"}` : ""}</dd></div>
         <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Rate</dt><dd>{p.plan?.name}</dd></div>
-        {b.nights.map((n) => <div key={n.date} className="flex justify-between py-1.5 border-b ledger-border text-[14px]"><dt className="ledger-muted">{nice(n.date)} · {n.season}</dt><dd>{fmt(n.totalMinor, cur)}</dd></div>)}
+        {b.nights.map((n) => <div key={n.date} className="flex justify-between py-1.5 border-b ledger-border text-[14px]"><dt className="ledger-muted">{nice(n.date)} · {seasonLabel(n.season)}</dt><dd>{fmt(n.totalMinor, cur)}</dd></div>)}
         {b.discounts.map((d) => <div key={d.code} className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">{d.label}</dt><dd>− {fmt(d.amountMinor, cur)}</dd></div>)}
         {b.charges.filter((c) => !c.included).map((c) => <div key={c.id} className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">{c.name}</dt><dd>{fmt(c.amountMinor, cur)}</dd></div>)}
-        <div className="flex justify-between py-3 border-b ledger-rule"><dt className="ledger-display text-xl">Total</dt><dd className="ledger-display text-xl ledger-crimson">{fmt(Number(q.grand_total_minor), cur)}</dd></div>
+        <div className="flex justify-between py-3 border-b ledger-rule"><dt className="ledger-display text-xl">Total{b.nights.some((n) => isEstimateSeason(n.season)) && <span className="ml-2 ledger-eyebrow ledger-crimson align-middle">{TBC}</span>}</dt><dd className="ledger-display text-xl ledger-crimson">{fmt(Number(q.grand_total_minor), cur)}</dd></div>
         <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Deposit to confirm</dt><dd>{fmt(Number(q.deposit_due_minor), cur)}</dd></div>
         {q.balance_due_date && <div className="flex justify-between py-2.5 border-b ledger-rule"><dt className="ledger-muted">Balance due</dt><dd>{nice(q.balance_due_date)}</dd></div>}
       </dl>

@@ -72,8 +72,8 @@ export const GROUPS: SisterGroup[] = [
   {
     key: "como",
     name: "COMO Hotels and Resorts",
-    line: "COMO houses we plan, each with COMO Shambhala: three in Bali, a private island in Turks and Caicos and a mountain hotel in the Dolomites.",
-    slugs: ["como-shambhala-estate", "como-uma-ubud", "como-uma-canggu", "como-parrot-cay", "como-alpina-dolomites"],
+    line: "COMO houses we plan, each with COMO Shambhala: three in Bali, a private island in Turks and Caicos, and in Italy a mountain hotel in the Dolomites and a castle estate in Chianti.",
+    slugs: ["como-shambhala-estate", "como-uma-ubud", "como-uma-canggu", "como-parrot-cay", "como-alpina-dolomites", "como-castello-del-nero"],
   },
 ];
 

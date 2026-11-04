@@ -4,6 +4,7 @@ import { TRIPS } from "@/lib/content/trips";
 import { SHIPS } from "@/lib/content/ships";
 import { STAY_PAGES, VESSEL_PAGES } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
+import { EF_CARDS, EF_PATH, efCardForHref } from "@/lib/content/exceptional-few-cards";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -39,5 +40,8 @@ export function GET() {
   for (const t of Object.values(TRIPS)) {
     add({ t: "route", n: t.h1, u: t.seo.path, k: t.kind === "voyage" ? "Voyage" : "Overland route", p: t.crumbs[2] ?? null, r: null, f: [], g: t.sub || null });
   }
+  // The Exceptional Few: the collection itself, and its number on each place it holds.
+  items.unshift({ t: "stay", n: "The Exceptional Few", u: EF_PATH, k: "Collection", p: null, r: null, f: [], g: `${EF_CARDS.length} hand-numbered stays and ships: ${EF_CARDS.map((c) => c.name).join(", ")}` });
+  for (const i of items) { const c = efCardForHref(i.u); if (c) i.g = `The Exceptional Few, ${c.label}. ${i.g ?? ""}`.trim(); }
   return Response.json({ builtOn: new Date().toISOString().slice(0, 10), items });
 }

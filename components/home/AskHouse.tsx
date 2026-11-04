@@ -6,7 +6,7 @@ import SearchPanel from "@/components/ledger/SearchPanel";
 
 // Board 8, "Ask the house" as the front door (James approved, 3 Nov 2026). One question box on the homepage that
 // opens the house search with the words already typed; the answers are the house's own pages, nothing written here.
-const ASKS = ["Botswana", "Kenya", "Galápagos", "Tahiti", "Private island", "Honeymoon"];
+const ASKS = ["The Exceptional Few", "Botswana", "Kenya", "Galápagos", "Tahiti", "Private island", "Honeymoon"];
 
 export default function AskHouse() {
   const [q, setQ] = useState("");

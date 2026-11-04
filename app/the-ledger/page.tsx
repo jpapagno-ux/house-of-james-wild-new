@@ -9,6 +9,7 @@ import { JwcoSeal, Stamp } from "@/components/ledger/Marks";
 import { SectionHead, JamesNote, PlanClose } from "@/components/about/Parts";
 import { LEDGER } from "@/lib/content/house";
 import LedgerShelf from "@/components/ledger/LedgerShelf";
+import EFRibbon from "@/components/exceptional-few/EFRibbon";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
@@ -53,6 +54,7 @@ export default function LedgerPage() {
           <div className="mt-12"><AnswerBlock>{l.answer}</AnswerBlock></div>
 
           <LedgerShelf />
+          <EFRibbon />
           <section className="mt-12 md:mt-16" aria-labelledby="steps-heading">
             <SectionHead eyebrow="How a place gets in" title="From a Tip to a Ledger ID" id="steps-heading" />
             <ol className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

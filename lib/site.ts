@@ -130,6 +130,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },
       { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
+      { label: "Italy: the Dolomites", href: "/destinations/europe/italy" },
       { label: "River cruises, before or after", href: "/voyages/rivers" },
     ],
     ledger: [],
@@ -160,7 +161,7 @@ export const REGIONS: Region[] = [
   { label: "Caribbean & Mexico", slug: "caribbean-mexico", href: "/destinations/caribbean-mexico", countries: [{ label: "Mexico", href: "/destinations/caribbean-mexico/mexico" }] },
   { label: "Oceania", slug: "oceania", href: "/destinations/oceania", countries: [{ label: "Australia", href: "/destinations/oceania/australia" }, { label: "Fiji", href: "/destinations/oceania/fiji" }, { label: "New Zealand", href: "/destinations/oceania/new-zealand" }, { label: "Tahiti", href: "/destinations/oceania/tahiti" }] },
   { label: "South America", slug: "south-america", href: "/destinations/south-america", countries: [{ label: "Argentina", href: "/destinations/south-america/argentina" }, { label: "Chile & Easter Island", href: "/destinations/south-america/chile" }, { label: "Ecuador & Galapagos", href: "/destinations/south-america/ecuador-galapagos" }, { label: "Peru", href: "/destinations/south-america/peru" }] },
-  { label: "Europe", slug: "europe", href: "/destinations/europe", countries: [{ label: "Greece", href: "/destinations/europe/greece" }, { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" }] },
+  { label: "Europe", slug: "europe", href: "/destinations/europe", countries: [{ label: "Greece", href: "/destinations/europe/greece" }, { label: "Italy", href: "/destinations/europe/italy" }, { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" }] },
   { label: "Polar: Antarctica", slug: "polar-antarctica", href: "/destinations/polar-antarctica", countries: [] },
   { label: "Polar: Arctic", slug: "polar-arctic", href: "/destinations/polar-arctic", countries: [{ label: "Iceland", href: "/destinations/polar-arctic/iceland" }] },
 ];

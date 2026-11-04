@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-03",
+ "checkedOn": "2026-11-04",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -1110,6 +1110,16 @@
    "slug": "coco-plum-island-resort",
    "name": "Coco Plum Island Resort",
    "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb1393474e53a2437e3a2f",
+   "slug": "como-alpina-dolomites",
+   "name": "COMO Alpina Dolomites",
+   "country": "Italy",
    "missing": [
     "coordinates"
    ],

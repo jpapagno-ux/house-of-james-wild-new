@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-03",
+ "exportedOn": "2026-11-04",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -7638,6 +7638,102 @@
     "classifiedAt": "2026-11-02"
    },
    "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "como-alpina-dolomites",
+   "name": "COMO Alpina Dolomites",
+   "ledgerId": "STY-2026-000624",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "COMO in the Dolomites: ski from the door in winter, walk the high meadow in summer",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-snow-buildings-mountains",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-crowning-the-dolomites",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-room-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-terrace-room-outdoor",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-como-shambhala",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-wellness"
+   ],
+   "bestMonths": "December to March, June to October",
+   "bestMonthsNote": "COMO opens for the winter season (December to March, ski-in ski-out on the Dolomiti Superski) and the summer season (June to October), and closes in between.",
+   "bestFor": [
+    "family",
+    "luxury",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bolzano Airport (BZO)",
+   "airportDirections": "About 1 hour by car from Bolzano Airport, 2 hours from Innsbruck, and around 4 hours from Venice or Munich, as COMO states. Daytime car access to the Alpe di Siusi is restricted; the hotel arranges the transit permit, and a cableway runs from Siusi to Compatsch.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Mountain Rooms",
+     "Terrace Rooms",
+     "Chalet Rooms",
+     "Mountain Suites",
+     "Alpina Chalet Suite",
+     "Dolomites Chalet Suite",
+     "COMO Chalet Suite",
+     "COMO Suite, two bedrooms"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "About 1,800 metres on the Alpe di Siusi",
+     "Inside the UNESCO-listed Dolomites",
+     "Ski-in ski-out on the Dolomiti Superski",
+     "COMO Shambhala Retreat with a 22-metre indoor pool",
+     "Four restaurants and bars",
+     "Play by COMO for children aged 4 to 12"
+    ]
+   },
+   "onlyHere": [
+    "COMO Alpina Dolomites sits at about 1,800 metres on the Alpe di Siusi in South Tyrol, inside the UNESCO-listed Dolomites, as COMO describes it. The rooms and suites, the smallest 50 square metres, sit across a main building and a chalet wing, with mountain views throughout.",
+    "In winter the slopes of the Dolomiti Superski start at the door; in summer the meadows and trails do. The COMO Shambhala Retreat has nine treatment rooms and a heated 22-metre indoor pool."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "The Dolomites, Both Seasons COMO Alpina sits at about 1,800 metres on the Alpe di Siusi in South Tyrol, inside the UNESCO-listed Dolomites. In winter the Dolomiti Superski runs from the door; from June to October the same meadow is for walking, with a COMO Shambhala Retreat and a 22-metre indoor pool to come back to."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
     "stays"
    ],
    "arrivalHubIds": [],

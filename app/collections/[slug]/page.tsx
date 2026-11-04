@@ -30,7 +30,10 @@ const CAYUGA_COPY: Copy = {
   faqTitle: "Questions About the Cayuga Collection", source: "Hotel details from the Cayuga Collection; the roster is confirmed before booking.",
   planPlace: "Central America", galleryCredit: "Photographs: Cayuga Collection.",
 };
-type Collection = typeof CAYUGA & { orgName?: string; facts?: [string, string][]; copy?: Partial<Copy> };
+type Photo = { url: string; alt: string; w: number; h: number; hotel: string };
+/** A partner collection (COMO first, James 4 Nov 2026): big photographs, the brand credited by name. */
+type Partner = { eyebrow: string; line: string; credit: string; creditUrl: string; story: Photo[] };
+type Collection = typeof CAYUGA & { orgName?: string; facts?: [string, string][]; copy?: Partial<Copy>; partner?: Partner };
 const COLLECTIONS: Record<string, Collection> = { [CAYUGA.slug]: { ...CAYUGA, orgName: "Cayuga Collection" }, [COMO.slug]: COMO as unknown as Collection };
 const isCayuga = (c: Collection) => c.slug === CAYUGA.slug;
 type P = { params: Promise<{ slug: string }> };
@@ -87,7 +90,17 @@ export default async function CollectionPage({ params }: P) {
               {facts.map(([k, v]) => <div key={k} className="bg-paper p-4"><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[1.35rem] mt-1 leading-tight">{v}</dd></div>)}
             </dl>
           </div>
+          {c.partner && (
+            <p className="mt-2 text-[14px] ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-2">{c.partner.eyebrow}</span>{c.partner.line} <a href={c.partner.creditUrl} className="underline underline-offset-2 hover:text-ink" rel="noopener">{c.partner.credit}</a>.</p>
+          )}
 
+          {c.partner ? (
+            <section id="hotels" aria-labelledby="hotels-h" className={SEC}>
+              <p className="ledger-eyebrow ledger-crimson">The hotels</p>
+              <h2 id="hotels-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">{t.hotelsHeading}</h2>
+              <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">{t.hotelsLine}</p>
+            </section>
+          ) : (
           <section id="hotels" aria-labelledby="hotels-h" className={SEC}>
             <p className="ledger-eyebrow ledger-crimson">The hotels</p>
             <h2 id="hotels-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">{t.hotelsHeading}</h2>
@@ -118,7 +131,63 @@ export default async function CollectionPage({ params }: P) {
               })}
             </ul>
           </section>
+          )}
+        </div>
 
+        {c.partner && (
+          <ol className="mt-8 md:mt-12 space-y-14 md:space-y-24">
+            {c.hotels.map((h, i) => (
+              <li key={h.slug} id={h.slug}>
+                <figure className="relative w-full aspect-[4/5] sm:aspect-[16/10] lg:aspect-[21/9] max-h-[88svh] overflow-hidden bg-ink">
+                  {h.image && <Image src={h.image.url} alt={h.image.alt} fill sizes="100vw" quality={88} className="object-cover" />}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,24,22,0.78)] via-[rgba(26,24,22,0.10)] to-transparent" aria-hidden="true" />
+                  <figcaption className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-7 md:pb-12 text-white">
+                    <p className="ledger-eyebrow !text-white/80">{String(i + 1).padStart(2, "0")} · {h.country} · {h.setting}</p>
+                    <p className="ledger-display text-[2.2rem] md:text-[3.6rem] leading-[1.02] mt-2">{h.name}</p>
+                    <p className="mt-1 text-[15px] md:text-[17px] text-white/85">{h.where}</p>
+                  </div></figcaption>
+                </figure>
+                <div className="max-w-ledger mx-auto px-5 md:px-10 mt-6 md:mt-8 grid md:grid-cols-[1.3fr_1fr] gap-6 md:gap-14">
+                  <div>
+                    <p className="text-[17.5px] md:text-[19px] leading-relaxed">{h.line}</p>
+                    <p className="mt-3 text-[15px] leading-relaxed ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-1.5">{t.says}</span>{h.official.who} {h.official.facts}</p>
+                  </div>
+                  <div className="md:border-l md:ledger-border md:pl-8">
+                    <p className="ledger-eyebrow">James&rsquo;s call</p>
+                    <p className="mt-1 text-[16px] leading-relaxed">{h.choose}</p>
+                    <ul className="mt-4 flex flex-wrap gap-2">{h.bestFor.map((b) => <li key={b} className="house-chip border ledger-border px-2.5 py-0.5 text-[13px]">{b}</li>)}</ul>
+                    {h.built
+                      ? <Link href={`/stays/${h.slug}`} className="ledger-btn mt-5 inline-flex">See {h.name}</Link>
+                      : <p className="mt-5 text-[14px] ledger-muted italic">Its own page is being filed. Ask us about it in the meantime.</p>}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {c.partner && c.partner.story.length > 0 && (
+          <section id="story" aria-labelledby="story-h" className="mt-20 md:mt-32">
+            <div className="max-w-ledger mx-auto px-5 md:px-10">
+              <p className="ledger-eyebrow ledger-crimson">Across {c.name.replace(/ Hotels and Resorts$/, "")}</p>
+              <h2 id="story-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">The Places Themselves</h2>
+            </div>
+            <ul className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
+              {c.partner.story.map((g, i) => {
+                const span = ["md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-5 aspect-square", "md:col-span-7 aspect-[4/3] md:aspect-auto", "md:col-span-7 aspect-[4/3]", "md:col-span-5 aspect-[4/3] md:aspect-auto", "md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-6 aspect-square", "md:col-span-6 aspect-square"][i % 8];
+                return (
+                  <li key={g.url} className={`relative overflow-hidden bg-ink/5 ${span}`}>
+                    <Image src={g.url} alt={g.alt} fill sizes={span.includes("col-span-12") ? "100vw" : "(min-width: 768px) 60vw, 100vw"} quality={88} className="object-cover" />
+                    <span className="absolute left-3 bottom-3 bg-black/55 text-white text-[11px] tracking-[0.12em] uppercase px-2 py-0.5">{g.hotel}</span>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="max-w-ledger mx-auto px-5 md:px-10 mt-4 text-[12.5px] ledger-muted">{t.galleryCredit}</p>
+          </section>
+        )}
+
+        <div className="max-w-ledger mx-auto px-5 md:px-10">
           <section id="fit" aria-labelledby="fit-h" className={SEC}>
             <p className="ledger-eyebrow ledger-crimson">Who it suits</p>
             <h2 id="fit-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">{t.fitHeading}</h2>

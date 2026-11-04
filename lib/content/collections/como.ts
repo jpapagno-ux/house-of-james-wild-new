@@ -1,13 +1,8 @@
-// COMO Hotels and Resorts: the five COMO houses on the James Wild & Co list.
-// Facts come only from comohotels.com (checked 4 Nov 2026) and the live stay
-// records (Stay Studio, sourced from COMO). COMO's own count is 19 hotels and
-// resorts; we list the five the house sells.
-//
-// COMO Parrot Cay (STY-2026-000575) is filed in Stay Studio but not released,
-// so its card says its page is being filed. COMO Alpina Dolomites
-// (STY-2026-000624) was released on 4 Nov 2026. Parrot Cay and Alpina photographs are marked rights
-// "to_verify" in Cloudinary until COMO confirms use (media-kit email, 4 Nov).
-// Hidden from search (approved: false) until James approves the copy.
+// COMO Hotels and Resorts: the James Wild & Co partner section (James, 4 Nov 2026).
+// Facts come only from comohotels.com and the live stay records (Stay Studio,
+// sourced from COMO). COMO's own count is 19 hotels and resorts; we list the
+// houses the house sells. COMO approved its photographs for the house on
+// 4 Nov 2026 (rights "approved" in Cloudinary), credited to COMO by name.
 
 import type { CollectionHotel, CollectionImage } from "@/lib/content/collections/cayuga";
 
@@ -19,7 +14,7 @@ export const COMO = {
   name: "COMO Hotels and Resorts",
   orgName: "COMO Hotels and Resorts",
   path: "/collections/como",
-  approved: false, // awaiting James on the copy
+  approved: true, // James, 4 Nov 2026: a COMO partner section, his call; COMO approved its photographs
   founded: "",
   founders: ["Christina Ong"],
   countries: ["Indonesia", "Turks and Caicos", "Italy"],
@@ -31,7 +26,23 @@ export const COMO = {
   eyebrow: "The Collections · COMO",
   tagline: "A strong sense of place, modern luxury in natural settings, and wellness that runs through every house",
   answer: "COMO Hotels and Resorts is a group of 19 hotels and resorts led by founder-owner Christina Ong, built on what COMO calls thoughtful design, genuine hospitality and a strong sense of place. We plan five of them: three in Bali, a private island in Turks and Caicos and a mountain hotel in the Dolomites. Each carries COMO Shambhala, the group's holistic wellness practice, and each feels like where it is.",
-  hero: img("jwco/stays/como-shambhala-estate/hero", "COMO Shambhala Estate, Payangan, Bali", 1920, 1080),
+  hero: img("wildco/turks-and-caicos/parrot-cay/parrot-cay-walking-the-beach", "A person walking along the beach at COMO Parrot Cay", 1920, 1080),
+  partner: {
+    eyebrow: "A James Wild & Co partner",
+    line: "We plan COMO houses directly with COMO, and its photographs appear here with COMO's permission:",
+    credit: "COMO Hotels and Resorts",
+    creditUrl: "https://www.comohotels.com",
+    story: [
+      { ...img("wildco/turks-and-caicos/parrot-cay/parrot-cay-dock-over-the-water", "A guest standing on a dock over clear shallow water at COMO Parrot Cay", 1920, 1080), hotel: "COMO Parrot Cay" },
+      { ...img("wildco/italy/dolomites/como-alpina/como-alpina-crowning-the-dolomites", "COMO Alpina Dolomites on the Alpe di Siusi, South Tyrol", 1512, 1512), hotel: "COMO Alpina Dolomites" },
+      { ...img("jwco/stays/como-shambhala-estate/g2", "A guest sitting on a rock by the river at COMO Shambhala Estate", 1920, 1080), hotel: "COMO Shambhala Estate" },
+      { ...img("jwco/stays/como-uma-canggu/g2", "A guest walking on a deck at COMO Canggu", 1920, 1080), hotel: "COMO Canggu" },
+      { ...img("jwco/stays/como-uma-ubud/g2", "The pool among trees at COMO Uma Ubud", 1512, 1512), hotel: "COMO Uma Ubud" },
+      { ...img("wildco/turks-and-caicos/parrot-cay/parrot-cay-swimmer-clear-water", "A swimmer in clear Caribbean water off COMO Parrot Cay", 1920, 1080), hotel: "COMO Parrot Cay" },
+      { ...img("wildco/italy/dolomites/como-alpina/como-alpina-wellness", "Wellness at the COMO Shambhala Retreat, COMO Alpina Dolomites", 1512, 1512), hotel: "COMO Alpina Dolomites" },
+      { ...img("jwco/stays/como-shambhala-estate/g3", "Sun through the trees at COMO Shambhala Estate", 1920, 1080), hotel: "COMO Shambhala Estate" },
+    ],
+  },
   copy: {
     hotelsHeading: "Five Houses, One Way of Seeing",
     hotelsLine: "Same care, different ground: jungle river valley, Ubud ridge, Echo Beach, a Caribbean island and an alpine meadow.",
@@ -44,7 +55,7 @@ export const COMO = {
     faqTitle: "Questions About COMO Hotels and Resorts",
     source: "Hotel details from comohotels.com; the roster is confirmed before booking.",
     planPlace: "Bali, the Caribbean or the Dolomites",
-    galleryCredit: "Photographs courtesy of COMO Hotels.",
+    galleryCredit: "Photography courtesy of COMO Hotels and Resorts, used with permission.",
   },
   hotels: [
     {
@@ -85,7 +96,7 @@ export const COMO = {
       image: img("wildco/turks-and-caicos/parrot-cay/parrot-cay-beach-houses-and-trees", "Beach houses among the trees along the white sand at COMO Parrot Cay, Turks and Caicos", 1920, 1080),
       gallery: [],
       official: { who: "For privacy on a Caribbean island.", facts: "Beach houses and residences such as The Sanctuary, with a COMO Shambhala Retreat." },
-      built: false,
+      built: true,
     },
     {
       slug: "como-alpina-dolomites", name: "COMO Alpina Dolomites", country: "Italy", setting: "Alpine meadow, 1,800 m", where: "Alpe di Siusi, South Tyrol",

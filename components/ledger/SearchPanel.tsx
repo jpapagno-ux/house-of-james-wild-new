@@ -64,7 +64,7 @@ const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
   { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
 ];
 
-const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/['’]/g, "");
 
 export default function SearchPanel({ open, onClose, initialQuery = "", initialType = null }: { open: boolean; onClose: () => void; initialQuery?: string; initialType?: string | null }) {
   const [docs, setDocs] = useState<Doc[] | null>(null);

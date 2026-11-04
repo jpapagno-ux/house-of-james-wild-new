@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { api } from "./client";
+import { TBC, isEstimateSeason, seasonLabel, tbcNote } from "@/lib/booking-live/estimates";
 
 // Check Availability on a contracted card: dates + occupancy first (spec §11:
 // no bookable prices without them), then every room and rate with its
@@ -39,6 +40,7 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
   const [err, setErr] = useState("");
   const [res, setRes] = useState<SearchResult | null>(null);
   const [reserving, setReserving] = useState<string | null>(null);
+  const anyTbc = !!res?.options.some((o) => o.quote?.nights.some((n) => isEstimateSeason(n.season)));
 
   const childAges = () => f.kids.split(",").map((s) => s.trim()).filter(Boolean).map(Number);
   const body = (extra: object = {}) => ({ property: slug, arrival: f.arrival, departure: f.departure, adults: f.adults, childAges: childAges(), promoCode: f.promo || undefined, ...extra });
@@ -82,7 +84,8 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
       {res && res.hasCard && (
         <section aria-live="polite" className="grid gap-6">
           <div className="border-l-2 ledger-crimson-border pl-4 text-[14.5px]">
-            <p><strong>Request to Reserve.</strong> These are the house&rsquo;s contracted rates, not live availability. Nothing is held or charged: the house confirms the room with {name} and replies within 24 hours.</p>
+            <p><strong>Request to Reserve.</strong> {anyTbc ? "These are the house\u2019s rates for " + name : "These are the house\u2019s contracted rates"}, not live availability. Nothing is held or charged: the house confirms the room with {name} and replies within 24 hours.</p>
+            {anyTbc && <p className="mt-2">{tbcNote(name)}</p>}
           </div>
           {res.options.map((o) => {
             const key = `${o.room.code}:${o.plan.code}`;
@@ -94,6 +97,7 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
               </article>
             );
             const q = o.quote, cur = q.currency;
+            const tbc = q.nights.some((n) => isEstimateSeason(n.season));
             const added = q.charges.filter((c) => !c.included && c.kind !== "house_tax");
             const included = q.charges.filter((c) => c.included);
             return (
@@ -104,6 +108,7 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
                     <p className="text-[14px] ledger-muted">{o.plan.name} · {BOARD[o.plan.boardBasis] ?? o.plan.boardBasis}{o.plan.inclusions ? ` · ${o.plan.inclusions}` : ""}</p>
                   </div>
                   <div className="text-right">
+                    {tbc && <p className="ledger-eyebrow ledger-crimson mb-1">{TBC}</p>}
                     <p className="ledger-display text-[1.9rem] ledger-crimson leading-none">{fmt(q.grandTotalMinor, cur)}</p>
                     <p className="text-[12.5px] ledger-muted">for {q.nights.length} {q.nights.length === 1 ? "night" : "nights"}, all taxes shown below</p>
                   </div>
@@ -113,7 +118,7 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
                   <table className="w-full text-[14px]">
                     <thead><tr className="text-left ledger-muted"><th className="py-1 font-normal">Night</th><th className="font-normal">Season</th><th className="font-normal text-right">Room</th><th className="font-normal text-right">Extra guests</th><th className="font-normal text-right">Night total</th></tr></thead>
                     <tbody>{q.nights.map((n) => (
-                      <tr key={n.date} className="border-t ledger-border"><td className="py-1.5">{nice(n.date)}</td><td>{n.season}</td><td className="text-right">{fmt(n.baseMinor, cur)}</td><td className="text-right">{fmt(n.extraAdultsMinor + n.childrenMinor, cur)}</td><td className="text-right">{fmt(n.totalMinor, cur)}</td></tr>
+                      <tr key={n.date} className="border-t ledger-border"><td className="py-1.5">{nice(n.date)}</td><td>{seasonLabel(n.season)}</td><td className="text-right">{fmt(n.baseMinor, cur)}</td><td className="text-right">{fmt(n.extraAdultsMinor + n.childrenMinor, cur)}</td><td className="text-right">{fmt(n.totalMinor, cur)}</td></tr>
                     ))}</tbody>
                   </table>
                 </details>
@@ -122,7 +127,7 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
                   {q.discounts.map((d) => <Row key={d.code} k={d.label} v={`− ${fmt(d.amountMinor, cur)}`} />)}
                   {added.map((c) => <Row key={c.id} k={c.name} v={fmt(c.amountMinor, cur)} />)}
                   <Row k="Florida sales tax (7%)" v={fmt(q.floridaTaxMinor, cur)} />
-                  <div className="flex justify-between gap-4 py-3 border-b ledger-rule"><dt className="ledger-display text-xl">Total</dt><dd className="ledger-display text-xl ledger-crimson">{fmt(q.grandTotalMinor, cur)}</dd></div>
+                  <div className="flex justify-between gap-4 py-3 border-b ledger-rule"><dt className="ledger-display text-xl">Total{tbc && <span className="ml-2 ledger-eyebrow ledger-crimson align-middle">{TBC}</span>}</dt><dd className="ledger-display text-xl ledger-crimson">{fmt(q.grandTotalMinor, cur)}</dd></div>
                   {included.length > 0 && <p className="py-2 text-[13px] ledger-muted">Already in the rate: {included.map((c) => `${c.name} (${fmt(c.amountMinor, cur)})`).join(", ")}.</p>}
                   <Row k="Deposit to confirm" v={fmt(q.depositDueMinor, cur)} />
                   {q.balanceDueDate && <Row k={`Balance due ${nice(q.balanceDueDate)}`} v={fmt(q.balanceMinor, cur)} />}

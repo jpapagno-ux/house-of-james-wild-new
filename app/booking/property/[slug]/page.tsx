@@ -17,7 +17,7 @@ export default async function BookingPropertyPage({ params }: { params: Promise<
     <section className="grid gap-6">
       <p className="ledger-eyebrow"><Link href={`/stays/${slug}`} className="hover:opacity-60">{name}</Link> · Check Availability</p>
       <h1 className="ledger-display text-[2.1rem] md:text-[2.8rem] leading-[1.1]">Your dates at {name}</h1>
-      <p className="text-[16.5px] max-w-2xl">Choose dates and who&rsquo;s travelling. You&rsquo;ll see each room priced night by night from the house&rsquo;s contracted rates, with every tax and the deposit before you ask for anything.</p>
+      <p className="text-[16.5px] max-w-2xl">Choose dates and who&rsquo;s travelling. You&rsquo;ll see each room priced night by night from the house&rsquo;s rate card, with every tax and the deposit before you ask for anything.</p>
       <QuoteBuilder slug={slug} name={name} signedIn={Boolean(user)} />
     </section>
   );

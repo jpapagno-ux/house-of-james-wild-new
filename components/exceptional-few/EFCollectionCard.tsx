@@ -19,13 +19,14 @@ export default function EFCollectionCard({ c, pairs = true, priority = false }: 
       <div className="relative p-5 flex flex-col flex-1">
         <p className="ledger-eyebrow">{c.kind === "Ship" ? "Voyages · Ship" : "Stays"} · {c.place}</p>
         <h3 className="ledger-display text-[1.45rem] leading-tight mt-2"><SafeLink href={c.href} className="hover:underline underline-offset-4">{c.name}</SafeLink></h3>
-        {c.line && <p className="mt-2 text-[15.5px] leading-relaxed ledger-muted">{c.line}</p>}
         {c.why && (
-          <blockquote className="mt-4 border-l-2 border-[#8B2525] pl-3">
-            <p className="ledger-eyebrow">{c.whyByJames ? "Why James would stay" : "Why it made the cut"}</p>
-            <p className={`mt-1 text-[15px] leading-relaxed ${c.whyByJames ? "font-display italic text-[17px]" : ""}`}>{c.whyByJames ? `\u201C${c.why}\u201D` : c.why}</p>
+          <blockquote className="mt-3 border-l-2 border-[#8B2525] pl-3">
+            <p className="ledger-eyebrow text-house">{c.whyByJames ? "Why James sends people here" : "Why it made the cut"}</p>
+            <p className={`mt-1 leading-relaxed ${c.whyByJames ? "font-display italic text-[18px] leading-snug" : "text-[15px]"}`}>{c.whyByJames ? `\u201C${c.why}\u201D` : c.why}</p>
+            {c.whyByJames && <p className="mt-1 font-display italic text-[15px] text-[#6B635A]">JW</p>}
           </blockquote>
         )}
+        {c.line && <p className="mt-3 text-[15px] leading-relaxed ledger-muted">{c.line}</p>}
         {c.pathways.length > 0 && <ul className="mt-4 flex flex-wrap gap-2" aria-label="Wild Pathways">{c.pathways.slice(0, 3).map((p) => <li key={p.id} className="house-chip !text-[10px] !px-2 !py-1">{p.name}</li>)}</ul>}
         {pairs && c.pairs.length > 0 && (
           <div className="mt-5 pt-4 border-t ledger-rule">

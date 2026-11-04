@@ -27,7 +27,8 @@ test("vessel designations are published, point at registry ships with pages, and
     assert.equal(e.designationStatus, "designated");
     assert.equal(e.publicationStatus, "published");
     assert.equal(e.stayId, null);
-    assert.equal(e.jamesNote, null, "no founder note: James has not sailed her");
+    // James approved a note for each ship (4 Nov 2026). He has not sailed them, so a note may advise but never claim he was aboard.
+    if (e.jamesNote) assert.ok(!/\b(I|we) (sailed|was aboard|were aboard|stayed|boarded)\b|\baboard (her|with me)\b/i.test(e.jamesNote.text), "a ship note never claims James sailed her");
     assert.equal((e.whyItMadeTheCut as string[]).length, 3);
     assert.ok((e.whoItMayNotSuit as string[]).length > 0);
     const copy = JSON.stringify([e.heroLine, e.whyItMadeTheCut, e.signals, e.whoItSuits, e.whoItMayNotSuit]);

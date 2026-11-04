@@ -611,3 +611,6 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
    reader opened (nav audit P1-1, 3 Nov 2026: 369px on first load, about 1026px live at 1280; 865 then 1203px on phones). */
 #overland-atlas { min-height: 1180px; }
 @media (min-width: 768px) { #overland-atlas { min-height: 980px; } }
+
+/* Board 14: the "James knows a place" strip sits flush on the footer. */
+.jw-knows + .site-footer { margin-top: 0; }

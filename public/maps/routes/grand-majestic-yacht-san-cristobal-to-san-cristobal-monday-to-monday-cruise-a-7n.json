@@ -1,0 +1,211 @@
+{
+ "id": "grand-majestic-yacht-san-cristobal-to-san-cristobal-monday-to-monday-cruise-a-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "8-day cruise A: San Cristobal round trip, 7 nights aboard Galapagos Grand Majestic",
+ "subtitle": "7 nights · San Cristobal to San Cristobal, Monday to Monday · Galapagos Grand Majestic",
+ "days": {
+  "1": "arrive San Cristobal, transfer to the yacht and El Junco Lagoon",
+  "2": "Gardner Bay and Islet, Osborn Islet and Suarez Point",
+  "3": "Cormorant Point and Devil's Crown and Post Office Bay and Baroness Viewing Point",
+  "4": "Twin Craters and Fausto Llerena Breeding Center",
+  "5": "El Barranco and Darwin Bay",
+  "6": "Rabida Island and Chinese Hat Islet",
+  "7": "Witch Hill and Lobos Island",
+  "8": "Gianni Arismendy Interpretation Center, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.6363,
+     -0.9091
+    ],
+    [
+     -89.6396,
+     -0.9124
+    ],
+    [
+     -89.7653,
+     -1.3591
+    ],
+    [
+     -89.7653,
+     -1.3624
+    ],
+    [
+     -89.7587,
+     -1.369
+    ],
+    [
+     -89.7554,
+     -1.3723
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.4002,
+     -1.2286
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3158,
+     -0.7693
+    ],
+    [
+     -90.34,
+     -0.63
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.293,
+     -0.4528
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 6,
+   "name": "Rabida",
+   "lat": -0.41,
+   "lng": -90.71,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.5848,
+     -0.3726
+    ],
+    [
+     -90.6003,
+     -0.3778
+    ],
+    [
+     -90.71,
+     -0.41
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 7,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.71,
+     -0.41
+    ],
+    [
+     -90.2622,
+     -0.4691
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 8,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

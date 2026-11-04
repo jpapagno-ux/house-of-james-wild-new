@@ -18,6 +18,28 @@
 //   a place on James's list, not yet vetted → HorizonStamp (never on a Ledger record)
 //   an Overland route           → OverlandStamp (field tested + year, or designed by)
 
+// Founder vetted without a stay (James, 2 Nov 2026): NIHI Rote opened in 2026 and he has not been
+// yet, but he vetted it for the Ledger ("both are a surfer's dream spot"). The record keeps
+// house_status founder_vetted; the site never prints an in-person claim for these slugs.
+export const VETTED_UNVISITED = new Set<string>(["nihi-rote",
+  // Thailand (James, 2 Nov 2026): "they are all vetted and I'm visiting soon". Vetted only, no visit or stay
+  // claim, until he has been; then the record's house_status changes and the slug comes off this list.
+  "six-senses-yao-noi", "six-senses-samui", "rayavadee", "kamalaya-koh-samui", "banyan-tree-krabi",
+  "anantara-hua-hin", "anantara-golden-triangle-chiang-rai", "anantara-chiang-mai-resort", "anantara-bophut-koh-samui-resort",
+  "amanpuri", "rosewood-phuket", "four-seasons-tented-camp-golden-triangle", "keemala", "the-sarojin",
+  // French Polynesia (James, 2 Nov 2026): every Pearl Resorts property, The Brando and Hanakee are founder vetted;
+  // he has not said he stayed at any of them, so no in-person claim. (Vahine was inspected in 2025 and keeps the
+  // ordinary vetted wording; Le Taha'a is a founder favourite, below.)
+  "pearl-resort-le-bora-bora", "pearl-resort-le-tikehau", "pearl-resort-le-tahiti", "pearl-resort-le-nuku-hiva",
+  "the-brando-tetiaroa", "hanakee-lodge-hiva-oa"]);
+
+// Founder favourite without a stay claim (James, 2 Nov 2026): Le Taha'a is his favourite in French Polynesia and
+// founder vetted, but he has not said he stayed there. The record keeps house_status founder_vetted; the site prints
+// the favourite stamp and "Founder favourite, vetted", never "stayed".
+// Nay Palad Hideaway (James, 2 Nov 2026): his favourite in the Philippines and founder vetted, the only founder
+// mark there; not stayed, so no stay line and no verdict.
+export const FAVOURITE_VETTED = new Set<string>(["le-tahaa", "nay-palad-hideaway"]);
+
 export type HouseStatus =
   | "unclassified"
   | "founder_visited"
@@ -34,7 +56,9 @@ export type LedgerStampKind =
   | "Under observation"
   | "Gathering verified";
 
-export function stampForStatus(status?: HouseStatus | null): LedgerStampKind | null {
+export function stampForStatus(status?: HouseStatus | null, slug?: string): LedgerStampKind | null {
+  if (slug && FAVOURITE_VETTED.has(slug) && status === "founder_vetted") return "Founder favorite";
+  if (slug && VETTED_UNVISITED.has(slug)) return null;
   switch (status) {
     case "founder_returned":
       return "Founder favorite";
@@ -49,9 +73,11 @@ export function stampForStatus(status?: HouseStatus | null): LedgerStampKind | n
 
 // The plain-words line shown beside every record (and used in alt text and
 // schema descriptions), e.g. "Founder stayed · 2026".
-export function statusLine(status?: HouseStatus | null, date?: string | null): string | null {
+export function statusLine(status?: HouseStatus | null, date?: string | null, slug?: string): string | null {
   const year = date ? date.slice(0, 4) : "";
   const withYear = (s: string) => (year ? `${s} · ${year}` : s);
+  if (slug && FAVOURITE_VETTED.has(slug) && status === "founder_vetted") return withYear("Founder favourite, vetted");
+  if (slug && VETTED_UNVISITED.has(slug) && status === "founder_vetted") return withYear("Founder vetted");
   switch (status) {
     case "founder_returned":
       return withYear("Founder favorite");
@@ -69,8 +95,10 @@ export function statusLine(status?: HouseStatus | null, date?: string | null): s
 }
 
 /** The founder's testimony for a record, from house_status only. Null when he hasn't been. */
-export function founderProof(name: string, status?: HouseStatus | null, date?: string | null): string | null {
+export function founderProof(name: string, status?: HouseStatus | null, date?: string | null, slug?: string): string | null {
   const year = date ? date.slice(0, 4) : "";
+  if (slug && FAVOURITE_VETTED.has(slug) && status === "founder_vetted") return `${name} is a founder favourite: James vetted it for the Ledger${year ? ` in ${year}` : ""}.`;
+  if (slug && VETTED_UNVISITED.has(slug) && status === "founder_vetted") return `James vetted ${name} for the Ledger${year ? ` in ${year}` : ""}. He has not stayed there yet, and says so.`;
   switch (status) {
     case "founder_returned":
       return `James stayed at ${name}${year ? ` in ${year}` : ""}: a founder favourite.`;

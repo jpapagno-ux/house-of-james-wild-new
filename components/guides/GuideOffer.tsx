@@ -21,7 +21,7 @@ function Cover({ g, className = "" }: { g: FieldGuide; className?: string }) {
   // An image that failed before hydration never fires onError for React: check it once mounted.
   useEffect(() => { const i = ref.current; if (i && i.complete && !i.naturalWidth) setOk(false); }, []);
   return (
-    <div className={`relative bg-[#1E2939] text-paper flex flex-col justify-between p-4 aspect-[3/4] shadow-[0_10px_30px_rgba(30,41,57,0.25)] ${className}`}>
+    <div className={`relative bg-ink-deep text-paper flex flex-col justify-between p-4 aspect-[3/4] shadow-[0_10px_30px_rgba(30,41,57,0.25)] ${className}`}>
       {ok && g.cover ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img ref={ref} src={g.cover} alt={`Cover of ${g.title}`} className="absolute inset-0 w-full h-full object-cover" loading="lazy" onError={() => setOk(false)} />

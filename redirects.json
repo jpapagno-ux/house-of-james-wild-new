@@ -105,6 +105,21 @@
     "statusCode": 301
   },
   {
+    "source": "/stays/rascal-voyages",
+    "destination": "/partners/rascal-voyages",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/silolona-sojourns",
+    "destination": "/voyages/ships/silolona",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/celestia-yacht",
+    "destination": "/voyages/ships/celestia",
+    "statusCode": 301
+  },
+  {
     "source": "/stays/lion-sands",
     "destination": "/safaris/lion-sands",
     "permanent": true
@@ -158,5 +173,30 @@
     "source": "/voyages/antarctica",
     "destination": "/voyages/polar",
     "statusCode": 301
+  },
+  {
+    "source": "/stays/promos",
+    "destination": "/offers#stays",
+    "permanent": true
+  },
+  {
+    "source": "/stays/rayvadee-resort",
+    "destination": "/stays/rayavadee",
+    "statusCode": 301
+  },
+  {
+    "source": "/stays/la-tahaa",
+    "destination": "/stays/le-tahaa",
+    "permanent": true
+  },
+  {
+    "source": "/stays/club-paradise-palawan",
+    "destination": "/stays/discovery-coron",
+    "permanent": true
+  },
+  {
+    "source": "/stays/windstar-cruise-sv-star-breeze",
+    "destination": "/voyages/ships/star-breeze",
+    "permanent": true
   }
 ]

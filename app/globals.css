@@ -4,64 +4,200 @@
 
 /* ---------- The Ledger: house design tokens (from the Base44 home page) ---------- */
 @layer base {
-  :root { --jw-accent: 139 37 37; --jw-accent-deep: 110 28 28; --jw-accent-light: 232 165 152; --jw-accent-hex: #8B2525; --jw-accent-deep-hex: #6E1C1C; --jw-card: #F6F4F0; }
-  /* Sea palette, agreed for voyages and the Aliikai listings: Banda deep, Raja teal, lagoon, shallows */
-  .theme-sea { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
-  /* page chrome (header, progress bar) follows when a voyage page is open; kept separate so older browsers still get .theme-sea */
-  :root:has(.theme-sea-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
+  /* THE HOUSE STANDARD (James approved, 2 Nov 2026; lib/palette.ts is the source, checked by scripts/check-palette.mjs).
+     Five tones, one accent, one gradient. Paper grounds, Stone Mist the only band, Warm Stone keylines and numerals, Graphite
+     text and rules, Ink the darkest grounds. House Crimson is the single accent: the seal, the logo and its rule,
+     Ledger IDs, key dates and "Plan with James" (--jw-crimson). The general accent (--jw-accent, read by
+     .ledger-crimson, text-crimson, border-crimson) is Graphite, so eyebrows, hovers and rules stay quiet and the
+     crimson touches stay one or two per screen. Volumes never re-tint the page: they show a 5px leather tab. */
+  :root { --jw-paper: #FFFFFF; --jw-mist: #F4F2EF; --jw-stone: #8C8277; --jw-stone-text: #6B635A; --jw-graphite: #2E2B28; --jw-ink: #1A1816; --jw-keyline: #CFC8BF; --jw-hairline: #DCD7D0; --jw-crimson: #8B2525; --jw-crimson-deep: #6E1C1C; }
+  :root { --jw-accent: 46 43 40; --jw-accent-deep: 26 24 22; --jw-accent-light: 207 200 191; --jw-accent-hex: #2E2B28; --jw-accent-deep-hex: #1A1816; --jw-card: #FFFFFF; }
+  /* The main action: House Crimson ("Plan with James"). The river waters re-tint it; nothing else does. */
+  :root { --jw-action: #8B2525; --jw-action-deep: #6E1C1C; }
+  /* The one gradient, Ink to Garnet: hero photo fades, the ticker band and the opening only. */
+  :root { --jw-gradient: linear-gradient(90deg, #1A1816, #2E2B28, #3A1C1F, #5A1F23); --jw-gradient-v: linear-gradient(180deg, #1A1816, #2E2B28, #3A1C1F, #5A1F23); --jw-hero-fade: linear-gradient(180deg, rgba(38,20,22,0) 0%, rgba(38,20,22,0) 45%, rgba(38,20,22,0.88) 100%); }
+  /* Grounds: Paper page and cards, hairline rules, Stone Mist the only band (the alternate is Paper, so two Stone Mist bands
+     never sit in a row). */
+  :root { --jw-ground: #FFFFFF; --jw-rule-fine: #DCD7D0; --jw-rule: #CFC8BF; --jw-band-rgb: 244 242 239; --jw-band-alt-rgb: 255 255 255; }
+  /* Voyages and the Aliikai listings: the house tones (the navy accent is retired; the volume shows by its tab). */
+  .theme-sea { --jw-card: #FFFFFF; }
   /* Smooth scrolling is opted into by Next through data-scroll-behavior on <html>
      (app/layout.tsx), so the router can still jump instantly on navigation and
      Back/Forward. A CSS rule here fought that and left new pages opening mid-scroll
      (audit, 30 Oct 2026). Only in-page anchor jumps stay smooth. */
   html { overflow-x: clip; }
   html:focus-within { scroll-behavior: smooth; }
-  body { background: #FFFFFF; color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  /* Anchor landing (scroll audit, 2 Nov 2026): one offset for every #link, "On this page" tab and
+     scrollIntoView, tied to the real height of the sticky chrome instead of a per-section
+     scroll-mt guess. Header: 3px rule + 76px bar (+1 border) on phones; + 116px bar + 48px volume
+     line on desktop. Pages with a sticky section bar ([data-subnav], 48px + border, sitting at
+     top 76 / 164) add it. 12px of air so the heading never kisses the bar. */
+  :root { --jw-header-h: 80px; --jw-subnav-h: 0px; --jw-anchor-air: 12px; }
+  @media (min-width: 1024px) { :root { --jw-header-h: 168px; } }
+  :root:has([data-subnav]) { --jw-subnav-h: 45px; } /* bar bottom = top (76 / 164) + 49 = header + 45 */
+  html { scroll-padding-top: calc(var(--jw-header-h) + var(--jw-subnav-h) + var(--jw-anchor-air)); }
+  body { background: var(--jw-ground); color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
   :focus-visible { outline: 2px solid var(--jw-accent-hex); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { html:focus-within { scroll-behavior: auto; } }
 }
 
 @layer components {
-  /* House chrome: the display scale, raised (30 Oct 2026). Titles tracked a
-     touch tight so Cormorant reads as a wordmark, not a paragraph. */
-  .ledger-h1 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.015em; line-height: 1.02; text-wrap: balance; font-size: 2.6rem; }
-  @media (min-width: 768px) { .ledger-h1 { font-size: 4.2rem; } }
-  @media (min-width: 1024px) { .ledger-h1 { font-size: 5.4rem; } }
-  .ledger-h2 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -0.01em; line-height: 1.08; text-wrap: balance; font-size: 2rem; }
+  /* The House Standard type scale: Cormorant Garamond display, light 400 at large sizes with a generous,
+     tight line-height for heroes; Manrope body; IBM Plex Mono for eyebrows, Ledger IDs and dates. */
+  .ledger-h1 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.01em; line-height: 0.98; text-wrap: balance; font-size: 2.6rem; }
+  @media (min-width: 768px) { .ledger-h1 { font-size: 4.2rem; line-height: 0.95; } }
+  @media (min-width: 1024px) { .ledger-h1 { font-size: 5.4rem; line-height: 0.92; } }
+  .ledger-h2 { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -0.005em; line-height: 1.04; text-wrap: balance; font-size: 2rem; }
   @media (min-width: 768px) { .ledger-h2 { font-size: 3rem; } }
-  /* Volume tones, read by dots, tabs and the chapter rail */
-  /* Volume inks: the one palette (lib/volumes.ts pads, approved 29 Oct 2026). scripts/check-palette.mjs keeps these in step. */
-  .vol-stays { --vol: #3E5A3A; } .vol-safaris { --vol: #7A4A24; } .vol-gatherings { --vol: #86232C; } .vol-voyages { --vol: #2A3D5C; } .vol-europe { --vol: #4E2E46; } .vol-overland { --vol: #4D4C27; }
-  .ledger-page { background: #FFFFFF; color: #2D2A26; }
+  .ledger-page { background: var(--jw-ground); color: #2E2B28; }
   .ledger-card { background: var(--jw-card); }
-  .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 3px rgba(45, 42, 38, 0.12); }
+  .ledger-paper { background: var(--jw-card); box-shadow: 0 1px 2px rgba(26, 24, 22, 0.08); border: 1px solid var(--jw-hairline); }
   .ledger-crimson { color: var(--jw-accent-hex); }
   .ledger-crimson-border { border-color: var(--jw-accent-hex); }
-  .ledger-border { border-color: rgba(45, 42, 38, 0.16); }
-  .ledger-rule { border-color: rgba(45, 42, 38, 0.28); }
-  .ledger-muted { color: rgba(45, 42, 38, 0.68); }
+  /* The real House Crimson, for the few things that wear it: the seal, the logo, Ledger IDs, key dates. */
+  .house-crimson { color: var(--jw-crimson); }
+  .ledger-id { font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.12em; color: var(--jw-crimson); }
+  .ledger-border { border-color: var(--jw-rule-fine); }
+  .ledger-rule { border-color: var(--jw-rule); }
+  .ledger-muted { color: #6B635A; }
   .ledger-display { font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-weight: 500; }
   .ledger-body { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
   .ledger-hand { font-family: 'Caveat', cursive; }
   .ledger-eyebrow {
-    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
     font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 0.24em;
+    font-size: 10.5px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgba(45, 42, 38, 0.68); /* was 0.55 (3.43:1); 0.68 clears WCAG AA on white and card (James, 30 Oct 2026) */
+    color: #6B635A; /* Warm Stone text: AA on Paper and Stone Mist */
   }
-  .ledger-btn {
-    display: inline-flex; align-items: center; gap: .5rem;
-    border: 1px solid var(--jw-accent-hex); color: var(--jw-accent-hex);
-    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 500; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
-    padding: 9px 18px; background: transparent; cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease;
+  /* On dark grounds the eyebrow lifts to warm light words (AA on Ink and Graphite) unless a component sets its own colour. */
+  :is(footer, .bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-eyebrow:not([style*="color"]), :is(footer, .bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-muted { color: rgba(244, 242, 239, 0.74); }
+  /* The type scale floor: no eyebrow below 10px, even where a component asked for 9px. */
+  .ledger-eyebrow.ledger-eyebrow[class*="!text-[9"], .ledger-eyebrow.ledger-eyebrow[class*="!text-[8"] { font-size: 10px !important; }
+  /* Nav labels: small uppercase tracked Manrope (the header, the menu and the footer keep the sans). */
+  .ledger-nav, header .ledger-eyebrow, footer nav .ledger-eyebrow { font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-weight: 600; letter-spacing: 0.18em; }
+
+  /* THE BUTTON FAMILY (James approved, 2 Nov 2026, 17:59). Three levels, one set of classes, so every page follows.
+     1. THE LEDGER COLUMN, the main action ("Plan with James", Hold a cabin, Check rates, Enquire, Send):
+        .ledger-btn--house, .ledger-btn--solid, .ledger-btn--primary and every .ledger-btn that opens /plan. A flex row,
+        56px high (48px compact, full width on phones), 1px Ink border, square; the label in Manrope 12px 600 uppercase
+        0.24em; on the right a crimson cell 56px wide holding a white arrow that widens to 84px on hover and focus.
+        On dark or photographs the border and label go white; the cell stays crimson.
+     2. THE EDITORIAL LINE, quiet links and secondary actions (.ledger-btn, .ledger-btn-ghost): no box, Cormorant
+        Garamond italic, Ink words, a crimson arrow that stretches from 34px to 60px and a 1px crimson rule beneath that
+        grows from 28% to 100%. On dark the words go white and the arrow and rule take the soft crimson #D7A7AA.
+     3. THE SEAL, the signature moment, once (the homepage "James knows a place"): .jw-seal-cta.
+     The river waters re-tint the cell through --jw-action; The Exceptional Few keeps its own buttons (below). */
+
+  /* 2. The editorial line (the base) */
+  .ledger-btn, .ledger-btn-ghost {
+    position: relative; display: inline-flex; align-items: center; gap: 14px; cursor: pointer;
+    border: 0; border-radius: 0; background: none; box-shadow: none; padding: 0 0 9px 0; min-height: 0;
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 500; font-size: 22px; line-height: 1.15; letter-spacing: 0; text-transform: none;
+    color: #1A1816; text-decoration: none;
   }
-  .ledger-btn:hover { background: var(--jw-accent-hex); color: #F4F1ED; }
-  .ledger-btn--solid { background: var(--jw-accent-hex); color: #F4F1ED; padding: 12px 22px; }
-  .ledger-btn--solid:hover { background: var(--jw-accent-deep-hex); border-color: var(--jw-accent-deep-hex); }
-  .ledger-btn-ghost { color: #2D2A26; font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-size: 11px !important; letter-spacing: 0.18em; border-bottom: 1px solid rgba(45,42,38,0.35); padding-bottom: 2px; }
-  .ledger-btn-ghost:hover { color: var(--jw-accent-hex); border-color: var(--jw-accent-hex); }
+  .ledger-btn-ghost { font-size: 20px !important; letter-spacing: 0 !important; }
+  .ledger-btn-ghost.uppercase { text-transform: none; }
+  .ledger-btn--lg { font-size: 28px; }
+  .ledger-btn::after, .ledger-btn-ghost::after {
+    content: ""; flex: none; width: 34px; height: 12px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%238B2525' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#8B2525, #8B2525) left center / calc(100% - 1px) 1.3px no-repeat;
+    transition: width .3s ease;
+  }
+  .ledger-btn::before, .ledger-btn-ghost::before { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 28%; background: #8B2525; transition: width .3s ease; }
+  .ledger-btn:is(:hover, :focus-visible)::after, .ledger-btn-ghost:is(:hover, :focus-visible)::after { width: 60px; }
+  .ledger-btn:is(:hover, :focus-visible)::before, .ledger-btn-ghost:is(:hover, :focus-visible)::before { width: 100%; }
+  .ledger-btn:focus-visible, .ledger-btn-ghost:focus-visible { outline: 2px solid #8B2525; outline-offset: 4px; }
+  .ledger-btn:disabled { opacity: .5; cursor: not-allowed; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost, .ledger-btn--light, .ledger-btn[class*="!text-white"], .ledger-btn[class*="!text-paper"] { color: #FFFFFF !important; background: none !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn::before, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost::before, .ledger-btn--light::before, .ledger-btn[class*="!text-white"]::before { background: #D7A7AA; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn::after, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn-ghost::after, .ledger-btn--light::after, .ledger-btn[class*="!text-white"]::after { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%23D7A7AA' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#D7A7AA, #D7A7AA) left center / calc(100% - 1px) 1.3px no-repeat; }
+
+  /* 1. The Ledger column (the main action) */
+  .ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary {
+    display: inline-flex; align-items: center; justify-content: flex-start; gap: 0; height: 56px; min-height: 0;
+    padding: 0 calc(56px + 40px) 0 24px !important; border: 1px solid #1A1816 !important; border-radius: 0; background: #FFFFFF; box-shadow: none !important;
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; font-style: normal; font-weight: 600; font-size: 12px; line-height: 1; letter-spacing: 0.24em; text-transform: uppercase;
+    color: #1A1816 !important; white-space: nowrap; max-width: 100%;
+  }
+  .ledger-btn.ledger-btn--house::before, .ledger-btn.ledger-btn--solid::before, a.ledger-btn[href^="/plan"]::before, .ledger-btn.ledger-btn--primary::before { display: none; }
+  .ledger-btn.ledger-btn--house::after, .ledger-btn.ledger-btn--solid::after, a.ledger-btn[href^="/plan"]::after, .ledger-btn.ledger-btn--primary::after {
+    content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 56px; height: auto;
+    background: var(--jw-action) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12' fill='none' stroke='white' stroke-width='1.3'%3E%3Cpath d='M0 6h16.6M11.6 1l5 5-5 5'/%3E%3C/svg%3E") center / 18px 12px no-repeat !important; transition: width .3s ease;
+  }
+  .ledger-btn.ledger-btn--house:is(:hover, :focus-visible)::after, .ledger-btn.ledger-btn--solid:is(:hover, :focus-visible)::after, a.ledger-btn[href^="/plan"]:is(:hover, :focus-visible)::after, .ledger-btn.ledger-btn--primary:is(:hover, :focus-visible)::after { width: 84px; }
+  .ledger-btn.ledger-btn--house:focus-visible, .ledger-btn.ledger-btn--solid:focus-visible, a.ledger-btn[href^="/plan"]:focus-visible, .ledger-btn.ledger-btn--primary:focus-visible { outline: 2px solid #8B2525; outline-offset: 3px; }
+  .ledger-btn.ledger-btn--compact { height: 48px !important; font-size: 11px; padding: 0 calc(48px + 32px) 0 18px !important; }
+  .ledger-btn.ledger-btn--compact::after { width: 48px !important; }
+  .ledger-btn.ledger-btn--compact:is(:hover, :focus-visible)::after { width: 72px !important; }
+  @media (max-width: 1023px) {
+    .ledger-btn.ledger-btn--compact { height: 40px !important; font-size: 10.5px; letter-spacing: 0.18em; padding: 0 calc(34px + 10px) 0 11px !important; }
+    .ledger-btn.ledger-btn--compact::after { width: 34px !important; background-size: 14px 10px !important; }
+    .ledger-btn.ledger-btn--compact:is(:hover, :focus-visible)::after { width: 44px !important; }
+  }
+  /* The phone header (under 640px): "Plan with James" as the crimson arrow cell alone, 40px square, so the centred lockup
+     never collides with it (header fix, 2 Nov 2026). Labelled by aria-label; the river waters re-tint it via --jw-action. */
+  .jw-plan-cell { display: inline-flex; flex: none; width: 40px; height: 40px; border: 1px solid #1A1816; background: var(--jw-action) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12' fill='none' stroke='white' stroke-width='1.3'%3E%3Cpath d='M0 6h16.6M11.6 1l5 5-5 5'/%3E%3C/svg%3E") center / 16px 11px no-repeat; transition: background-position .3s ease; }
+  .jw-plan-cell:is(:hover, :focus-visible) { background-position: 60% center; }
+  .jw-plan-cell:focus-visible { outline: 2px solid #8B2525; outline-offset: 3px; }
+  .jw-plan-cell--light { border-color: #FFFFFF; }
+  @media (min-width: 640px) { .jw-plan-cell { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .jw-plan-cell { transition: none; } }
+  /* in a 48px bar (On this page, the ship nav, the contact card, the phone record bar) the column sits at 40px */
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary) { height: 40px; font-size: 11px; padding: 0 calc(44px + 28px) 0 16px !important; }
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)::after { width: 44px; }
+  :is(nav[aria-label="On this page"], [data-ship-nav], #record-bar, [data-quiet-actions]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary):is(:hover, :focus-visible)::after { width: 64px; }
+  /* full width on phones, in the page (not in the header or the bars) */
+  @media (max-width: 639px) { main :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary):not(:is(header, nav, #record-bar, [data-quiet-actions], .flex-nowrap) *) { display: flex; width: 100%; max-width: 100%; height: auto; min-height: 56px; padding-top: 14px !important; padding-bottom: 14px !important; white-space: normal; line-height: 1.35; } }
+  /* on dark or photographs: white border and label, the cell stays crimson */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--house, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--solid, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) a.ledger-btn[href^="/plan"], :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .ledger-btn.ledger-btn--primary, .ledger-btn--light:is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, .ledger-btn.ledger-btn--primary, [href^="/plan"]), :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)[class*="!text-white"] { background: transparent !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+  /* a paper card inside a dark ground (a hero's glance card) is light again */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--house, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--solid, :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) a.ledger-btn[href^="/plan"], :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn.ledger-btn--primary { background: #FFFFFF !important; border-color: #1A1816 !important; color: #1A1816 !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn:not(:is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary)), :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn-ghost { color: #1A1816 !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn::before { background: #8B2525; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-btn::after { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none' stroke='%238B2525' stroke-width='1.3'%3E%3Cpath d='M1 1l5 5-5 5'/%3E%3C/svg%3E") right center / 7px 12px no-repeat, linear-gradient(#8B2525, #8B2525) left center / calc(100% - 1px) 1.3px no-repeat; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-eyebrow:not([style*="color"]), :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .ledger-muted { color: #6B635A; }
+  @media (prefers-reduced-motion: reduce) { .ledger-btn::after, .ledger-btn::before, .ledger-btn-ghost::after, .ledger-btn-ghost::before { transition: none; } }
+
+  /* 3. The seal: the signature moment, used once (the homepage "James knows a place") */
+  .jw-seal-cta { display: inline-flex; align-items: center; gap: 18px; color: #1A1816; text-decoration: none; }
+  .jw-seal-cta__seal { flex: none; width: 64px; height: 64px; border-radius: 9999px; display: grid; place-items: center; color: #F4E9E4;
+    background: radial-gradient(circle at 35% 30%, #A83636 0%, #8B2525 55%, #5E1717 100%); box-shadow: inset 0 0 0 3px rgba(94, 23, 23, 0.55), inset 0 0 0 5px rgba(255, 255, 255, 0.12), 0 6px 14px rgba(94, 23, 23, 0.28);
+    font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 24px; letter-spacing: 0.02em; transition: transform .35s ease; }
+  .jw-seal-cta:is(:hover, :focus-visible) .jw-seal-cta__seal { transform: rotate(-14deg) scale(1.05); }
+  .jw-seal-cta:focus-visible { outline: 2px solid #8B2525; outline-offset: 6px; }
+  .jw-seal-cta__label { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; line-height: 1.1; }
+  .jw-seal-cta__sub { display: block; margin-top: 6px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #6B635A; }
+  @media (prefers-reduced-motion: reduce) { .jw-seal-cta__seal { transition: none; } }
+
+  /* The invitation band sits straight on the footer. */
+  :root:has(main .jw-invitation:last-child) .site-footer { margin-top: 0; }
+  /* Chips on a dark ground: light keylines and words. */
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) .house-chip { background: transparent; color: rgba(244, 242, 239, 0.88) !important; border-color: rgba(244, 242, 239, 0.35) !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .house-chip { background: #FFFFFF; color: #2E2B28 !important; border-color: #CFC8BF !important; }
+  :is(.bg-ink, .bg-ink-deep, .bg-black, .bg-graphite, [class*="bg-ink/8"], [class*="bg-ink/9"], [class*="bg-black/8"], [class*="bg-black/9"], .bg-crimson, .bg-crimson-deep, .bg-coast, .bg-coast-deep, .bg-forest, .on-dark, .jw-onphoto, .jw-gradient) :is(.bg-paper, .ledger-paper, .ledger-card, .bg-mist, .bg-paper-card, .on-light) .house-chip--primary { border-color: #2E2B28 !important; }
+  /* Chips, filter pills, date pills, tabs and search fields (The House Standard): squared, graphite and warm stone on
+     white; active = graphite fill and white words, or a crimson underline. */
+  .house-chip { display: inline-flex; align-items: center; gap: .45rem; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 11px; }
+  .house-chip:hover { border-color: #2E2B28; }
+  .house-chip--primary { border-color: #2E2B28; }
+  .house-chip--quiet { color: #6B635A; }
+  .house-chip[aria-pressed="true"], .house-chip[aria-selected="true"], .house-chip[aria-current="true"], .house-chip[aria-current="page"], .house-chip.is-active { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+  .jw-tab[aria-selected="true"], .jw-tab[aria-current="page"], .jw-tab.is-active { box-shadow: inset 0 -2px 0 var(--jw-crimson); }
+  /* No pills anywhere: an interactive or labelled element that asked for a full radius is squared to 2px.
+     Dots, avatars, pins and the seal (no padding, or not interactive) keep their round. */
+  :is(a, button, input, select, textarea, label, summary).rounded-full,
+  :is(span, li, div, p)[class*="px-"].rounded-full,
+  :is(a, button, input, select, textarea, label, summary)[class*="rounded-"]:not([class*="rounded-none"]):not(.jw-round),
+  :is(span, li, div, p)[class*="px-"][class*="rounded-"]:not(.jw-round) { border-radius: 2px; }
+  /* The volume tab: a thin leather edge (about 5px) in the volume's leather. Set --vol-leather on the element
+     (or read it from the page's .theme-vol-* scope). Never a coloured section, button, chip or fill. */
+  .vol-tab { box-shadow: inset 5px 0 0 var(--vol-leather, #2E2B28); padding-left: calc(5px + .9rem); }
+  .vol-tab-top { box-shadow: inset 0 5px 0 var(--vol-leather, #2E2B28); }
+  /* The one gradient: hero photo fades, the ticker band and the opening. */
+  .jw-hero-fade { background: var(--jw-hero-fade); }
+  .jw-gradient { background: var(--jw-gradient); color: #FFFFFF; }
 }
 
 /* ---------- Ephemera kit: the stamp press (components/ledger/Marks.tsx) ---------- */
@@ -86,6 +222,14 @@
 /* Flyover: the continent's labels, graticule and compass step aside while the chart flies in. */
 .ledger-chart.fly-quiet .chart-fade { opacity: 0; transition: opacity .35s ease; }
 /* Flyover: the marching dotted ring around the feature the chart lands on (the Salar de Uyuni). */
+/* Island chains (Indonesia): each chain's chart grows in from where it sits on the archipelago. */
+.chain-fly .ledger-chart { animation: chain-fly .75s cubic-bezier(.2,.75,.2,1) both; transform-origin: var(--chain-origin, 50% 50%); }
+@keyframes chain-fly { from { transform: scale(.82); opacity: 0; filter: blur(2px); } to { transform: none; opacity: 1; filter: none; } }
+/* After the first view, switching chains is quick: the coast redraws in under a second and the pins follow. */
+.chain-fly.quick .ledger-chart.is-drawn .chart-ink { animation-duration: .9s, .5s; animation-delay: 0s, .35s; }
+.chain-fly.quick .ledger-chart .chart-fade { transition-delay: .45s; }
+.chain-fly.quick .ledger-pin-drop { animation-delay: .6s !important; }
+@media (prefers-reduced-motion: reduce) { .chain-fly .ledger-chart { animation: none; } }
 @keyframes fly-march { to { stroke-dashoffset: -26; } }
 .fly-ring { animation: fly-march 1.4s linear infinite; }
 .ledger-chart.fly-land .chart-fade { transition-delay: .25s; }
@@ -112,24 +256,20 @@
   .ledger-pin-drop, .ledger-pin-pulse { animation: none; }
 }
 
-/* Ship pages (components/ships): the house route chart (jw-chart) sits sticky beside the day log,
-   sized to fit beside it. The page's own tabs choose the route, so the engine's route buttons step
-   aside; on phones the day log replaces the engine's day row, legend and speed. */
-.ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: 36svh; min-height: 240px; }
-.ship-route .jwc .platecap, .ship-route .jwc details.coords, .ship-route .jwc .ctrlbar .routes { display: none; }
-@media (max-width: 1023px) {
-  .ship-route .jwc .ctrlbar .days, .ship-route .jwc .ctrlbar .legend, .ship-route .jwc .ctrlbar .speed, .ship-route .jwc .hud { display: none; }
-  .ship-route .jwc .overlay h3, .ship-route .jwc .overlay #routeSub { display: none; }
-  .ship-route .jw-frame.chart { padding: 6px; }
-}
-@media (min-width: 1024px) { .ship-route .jw-frame .jwc .stage, .ship-route .jwc .stage { height: calc(100svh - 430px); min-height: 360px; } }
-/* On a chart narrower than 480px the overlay card shrinks to one line (day and status), so it
-   never covers half the map (voyages audit, 1 Nov 2026). */
+/* Ship pages (components/ships): the house route chart (jw-chart) and the day log (map audit, 2 Nov 2026).
+   From 1280px the chart is sticky on the LEFT at 60% of the content (min 640px), 16:10, its height capped to the screen
+   under the header and the ship bar; the log on the right. From 768 to 1279 the chart runs full width above the log
+   at 16:10; under 768 full width at 4:5 with the day chips as one sideways row. The route's title, nights and ports sit
+   above (ItineraryScroller), so the engine's own header, route buttons, caption and coordinates ledger step aside. */
+.ship-route .jwc .head, .ship-route .jwc .platecap, .ship-route .jwc details.coords, .ship-route .jwc .ctrlbar .routes { display: none; }
+.ship-route .jwc .stage { aspect-ratio: 4 / 5; height: auto; max-height: 72svh; min-height: 300px; }
+@media (min-width: 768px) { .ship-route .jwc .stage { aspect-ratio: 16 / 10; max-height: 70svh; } }
+@media (min-width: 1280px) { .ship-route .jwc .stage { max-height: calc(100svh - 228px - 48px - 112px); min-height: 360px; } }
+@media (max-width: 767px) { .ship-route .jwc .ctrlbar .legend, .ship-route .jwc .ctrlbar .speed { display: none; } }
+/* On a chart narrower than 480px the day badge keeps to its first line (day and status). */
 .ship-route { container-type: inline-size; }
 @container (max-width: 480px) {
-  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
-  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
-  .jwc .overlay .readout { border-top: 0; padding: 0; }
+  .jwc .overlay .way { display: none !important; }
 }
 
 /* Hero stamp: the ring turns slowly; the founder's-take nudge bobs. */
@@ -142,6 +282,21 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .jw-nudge { opacity: 0; animation: jw-fade .9s ease-out 1.4s forwards, jw-nudge 2.6s ease-in-out 2.4s infinite; }
 @media (prefers-reduced-motion: reduce) { .jw-spin, .jw-nudge { animation: none; opacity: 1; } }
 
+/* The house note on the hero (James, 3 Nov 2026): the round stamp pressed straight onto the photograph
+   (no paper card), and "a note from the house" as a link to the note. The arrow draws itself once
+   (1.2s), then its tip nudges 4px toward the note every 6s, three times. Nothing moves with reduced motion. */
+.jw-note-stamp { --jw-rot: -6deg; transform: rotate(var(--jw-rot)); filter: drop-shadow(0 0 4px rgba(0,0,0,.35)); animation: jw-stamp-press .85s cubic-bezier(.2,.9,.3,1.25) .2s both; }
+.jw-note-nudge { text-shadow: 0 1px 3px rgba(0,0,0,.75); }
+.jw-note-arrow { filter: drop-shadow(0 1px 2px rgba(0,0,0,.8)); animation: jw-note-nudge 6s ease-in-out 2.4s 3; }
+.jw-note-arrow path { stroke-dasharray: 1; stroke-dashoffset: 1; animation: jw-note-draw 1.2s ease-out .9s forwards; }
+.jw-note-arrow path + path { animation-duration: .35s; animation-delay: 2.05s; }
+@keyframes jw-note-draw { to { stroke-dashoffset: 0; } }
+@keyframes jw-note-nudge { 0%, 14%, 100% { transform: translate(0, 0); } 7% { transform: translate(4px, 1px); } }
+@media (prefers-reduced-motion: reduce) {
+  .jw-note-stamp, .jw-note-arrow { animation: none; }
+  .jw-note-arrow path, .jw-note-arrow path + path { animation: none; stroke-dashoffset: 0; }
+}
+
 /* The ringing phone on the group-call prompts: a short ring every few seconds, and a ripple. */
 @keyframes jw-ring { 0%, 64%, 100% { transform: rotate(0); } 68% { transform: rotate(-14deg); } 72% { transform: rotate(12deg); } 76% { transform: rotate(-10deg); } 80% { transform: rotate(8deg); } 84% { transform: rotate(-4deg); } 88% { transform: rotate(0); } }
 @keyframes jw-ripple { 0%, 60% { opacity: 0; transform: scale(1); } 66% { opacity: .7; } 100% { opacity: 0; transform: scale(1.55); } }
@@ -150,8 +305,8 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 @media (prefers-reduced-motion: reduce) { .jw-ring, .jw-ripple { animation: none; } .jw-ripple { opacity: 0; } }
 
 /* Route pages: copy still to confirm, and photo frames waiting for a photo */
-.jw-flag { background: #F1E2B8; color: #5E3F22; padding: 0 0.2em; border-radius: 1px; }
-.jw-ph { background-color: #E4DED3; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }
+.jw-flag { background: #F4F2EF; color: #2E2B28; box-shadow: inset 0 -1px 0 #8C8277; padding: 0 0.2em; border-radius: 1px; }
+.jw-ph { background-color: #F4F2EF; background-image: repeating-linear-gradient(135deg, rgba(45,42,38,0.07) 0 1px, transparent 1px 9px); border: 1px solid rgba(45,42,38,0.16); }
 
 /* The voyage tag swings a little on its string */
 @keyframes jw-sway { 0%, 100% { transform: rotate(-1.6deg); } 50% { transform: rotate(1.6deg); } }
@@ -173,7 +328,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .journal-list li { padding: .55em 0 .55em 1.4em; border-bottom: 1px solid rgba(45,42,38,.14); position: relative; line-height: 1.45; }
 .journal-list li::before { content: ""; position: absolute; left: .2em; top: 1.05em; width: .45em; height: .45em; border: 1px solid rgb(var(--jw-accent)); transform: rotate(45deg); }
 .journal-steps { list-style: none; padding: 0; display: grid; gap: .6em; }
-.journal-steps li { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: .7em 1em; background: #EAE6DF; }
+.journal-steps li { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: .7em 1em; background: #F4F2EF; }
 .journal-toc { margin-top: 2.5rem; border-top: 1px solid rgba(45,42,38,.2); border-bottom: 1px solid rgba(45,42,38,.2); padding-block: 1.25rem; }
 .journal-toc ol { margin-top: .75rem; display: grid; gap: .45rem; }
 .journal-toc li { display: grid; grid-template-columns: 2.2rem 1fr; align-items: baseline; font-size: 16.5px; line-height: 1.35; }
@@ -192,22 +347,12 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 }
 
 /* Outside @layer so Tailwind never drops a theme chosen from data. */
-/* The six volumes (volume kit, 29 Oct 2026): each volume's leather colour drives the accent on its pages. lib/volumes.ts is the source. */
-.theme-vol-stays { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
-:root:has(.theme-vol-stays-page) { --jw-accent: 46 59 44; --jw-accent-deep: 31 40 30; --jw-accent-light: 201 214 196; --jw-accent-hex: #2E3B2C; --jw-accent-deep-hex: #1F281E; --jw-card: #F1F4EF; }
-.theme-vol-safaris { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
-:root:has(.theme-vol-safaris-page) { --jw-accent: 107 66 38; --jw-accent-deep: 79 48 27; --jw-accent-light: 226 206 186; --jw-accent-hex: #6B4226; --jw-accent-deep-hex: #4F301B; --jw-card: #F7F1EB; }
-.theme-vol-gatherings { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
-:root:has(.theme-vol-gatherings-page) { --jw-accent: 101 29 34; --jw-accent-deep: 74 20 24; --jw-accent-light: 232 196 198; --jw-accent-hex: #651D22; --jw-accent-deep-hex: #4A1418; --jw-card: #F8F0F0; }
-.theme-vol-voyages { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
-:root:has(.theme-vol-voyages-page) { --jw-accent: 30 41 57; --jw-accent-deep: 18 26 38; --jw-accent-light: 190 201 218; --jw-accent-hex: #1E2939; --jw-accent-deep-hex: #121A26; --jw-card: #EFF2F6; }
-.theme-vol-europe { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
-:root:has(.theme-vol-europe-page) { --jw-accent: 59 38 52; --jw-accent-deep: 39 24 34; --jw-accent-light: 214 196 208; --jw-accent-hex: #3B2634; --jw-accent-deep-hex: #271822; --jw-card: #F5F0F3; }
-.theme-vol-overland { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
-:root:has(.theme-vol-overland-page) { --jw-accent: 70 69 42; --jw-accent-deep: 48 47 28; --jw-accent-light: 214 212 186; --jw-accent-hex: #46452A; --jw-accent-deep-hex: #302F1C; --jw-card: #F4F4EE; }
+/* The six volumes (The House Standard, 2 Nov 2026): a volume no longer re-tints the page. Its scope sets only the
+   leather for the 5px volume tab (--vol-leather) and its ink for small marks (--vol). Those rules, and the .vol-*
+   inks, are generated from lib/volumes.ts (volumeCss(), injected by app/layout.tsx): no volume hex lives here. */
 
 /* ---------- Volume kit: stamps, offer marks, Final Call board (components/ledger/VolumeKit.tsx) ---------- */
-.jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 3px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
+.jw-flap { position: relative; display: inline-block; margin-right: 3px; border-radius: 2px; overflow: hidden; text-align: center; color: #F4F1EA; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 500; }
 .jw-flap::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(0, 0, 0, 0.45); }
 .jw-flap-col { display: block; animation: jw-flap 9s steps(1) infinite; }
 @keyframes jw-flap { 0% { transform: translateY(0); } 2% { transform: translateY(calc(var(--h) * -1)); } 4% { transform: translateY(calc(var(--h) * -2)); } 6% { transform: translateY(calc(var(--h) * -3)); } 8% { transform: translateY(calc(var(--h) * -4)); } 10% { transform: translateY(calc(var(--h) * -5)); } 12% { transform: translateY(calc(var(--h) * -6)); } 14%, 100% { transform: translateY(calc(var(--h) * -7)); } }
@@ -219,23 +364,25 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 }
 
 /* ---------- Wild Pathways: semantic tokens (lib/pathways.ts is the source; Phase 1a, 30 Oct 2026) ----------
+   The House Standard (2 Nov 2026): the accent survives only as the 6px dot on a squared graphite-outline chip;
+   the text variant is Graphite and the tint is Paper for every pathway.
    Additive only. House tokens, the six volume themes and --jw-accent are untouched: a pathway
    never re-tints a page, it colours its own card, chip, marker or rule. Each pathway has an
    accent (fills, markers), an AA text variant (words on white or card) and a tint (quiet wash).
    The name is always printed beside the colour. */
 :root {
-  --jw-path-01: #38634B; --jw-path-01-text: #38634B; --jw-path-01-tint: #EBF0EC;
-  --jw-path-02: #426E79; --jw-path-02-text: #426E79; --jw-path-02-tint: #ECF2F3;
-  --jw-path-03: #73786C; --jw-path-03-text: #696D62; --jw-path-03-tint: #F0F1EF;
-  --jw-path-04: #936F49; --jw-path-04-text: #866642; --jw-path-04-tint: #F5F0EA;
-  --jw-path-05: #737769; --jw-path-05-text: #6C7062; --jw-path-05-tint: #F2F3F0;
-  --jw-path-06: #766B63; --jw-path-06-text: #766B63; --jw-path-06-tint: #F1EFEE;
-  --jw-path-07: #94512F; --jw-path-07-text: #94512F; --jw-path-07-tint: #F7EFE6;
-  --jw-path-08: #8D6958; --jw-path-08-text: #876554; --jw-path-08-tint: #F4F0EE;
-  /* Where Your Stay Gives Back (the Wild & Co. Impact Note): soft sage panel, forest copy, selective rust */
-  --jw-impact-panel: #E6E9DD; --jw-impact-copy: #405A45; --jw-impact-highlight: #94512F;
+  --jw-path-01: #11705A; --jw-path-01-text: #2E2B28; --jw-path-01-tint: #FFFFFF;
+  --jw-path-02: #0C5D61; --jw-path-02-text: #2E2B28; --jw-path-02-tint: #FFFFFF;
+  --jw-path-03: #1C6BAE; --jw-path-03-text: #2E2B28; --jw-path-03-tint: #FFFFFF;
+  --jw-path-04: #1A4A80; --jw-path-04-text: #2E2B28; --jw-path-04-tint: #FFFFFF;
+  --jw-path-05: #4A736D; --jw-path-05-text: #2E2B28; --jw-path-05-tint: #FFFFFF;
+  --jw-path-06: #3D4C66; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
+  --jw-path-07: #162D54; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
+  --jw-path-08: #08697F; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
+  /* Where Your Stay Gives Back (the Wild & Co. Impact Note): Stone Mist panel, Graphite copy, Warm Stone text mark (House Standard) */
+  --jw-impact-panel: #F4F2EF; --jw-impact-copy: #2E2B28; --jw-impact-highlight: #6B635A;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
-  --jw-char-james: #2D2A26; --jw-char-james-accent: #8B2525; --jw-char-iggi: #405A45;
+  --jw-char-james: #2E2B28; --jw-char-james-accent: #8B2525; --jw-char-iggi: #6B635A;
 }
 /* A pathway-scoped element: .pathway-01 … .pathway-08 set --jw-path (and its text/tint) for the chip, card or marker inside. */
 .pathway-01 { --jw-path: var(--jw-path-01); --jw-path-text: var(--jw-path-01-text); --jw-path-tint: var(--jw-path-01-tint); }
@@ -282,9 +429,7 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 /* On a narrow atlas the overlay card shrinks to one line, as on ship pages. */
 .jw-atlas { container-type: inline-size; }
 @container (max-width: 480px) {
-  .jwc .overlay { padding: 5px 9px; max-width: calc(100% - 76px); gap: 0; }
-  .jwc .overlay h3, .jwc .overlay #routeSub, .jwc .overlay .ovk, .jwc .overlay .coord, .jwc .overlay .way { display: none !important; }
-  .jwc .overlay .readout { border-top: 0; padding: 0; }
+  .jwc .overlay .way { display: none !important; }
 }
 /* The no-script list of every route: folded on phones; open on wide screens where supported. */
 @media (min-width: 768px) {
@@ -299,6 +444,14 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
 /* amangiri (Canyon Point, Utah): sandstone, muted rust, desert ivory, dusk grey-plum, pale limestone. */
 .theme-ef-amangiri { --ef-sand: #C9A27E; --ef-earth: #9E5B3C; --ef-landscape: #F3EDE2; --ef-shadow: #5B4F5A; --ef-accent: #E6D9C4; }
+/* hermes (Galápagos, Via Natura's catamaran, 2 Nov 2026): deep sea tones. Sea glass, Pacific teal, salt white, basalt, pale surf. */
+.theme-ef-hermes { --ef-sand: #8FB3BF; --ef-earth: #2E6A78; --ef-landscape: #EEF3F2; --ef-shadow: #3D5560; --ef-accent: #D3E2E3; }
+/* amandira (Aman's phinisi, Indonesia, 2 Nov 2026): warm teak and indigo. Teak, burnt teak, sail cream, indigo dusk, rope. */
+.theme-ef-amandira { --ef-sand: #C08A55; --ef-earth: #8A5A2E; --ef-landscape: #F4ECE1; --ef-shadow: #3A3A5C; --ef-accent: #E5D3BC; }
+/* vahine (Ari'i Vahine Royal Villa, Taha'a lagoon, 2 Nov 2026): lagoon turquoise, reef teal, coral white, deep pass, shallows. */
+.theme-ef-vahine { --ef-sand: #7CC4C2; --ef-earth: #1F6F78; --ef-landscape: #EEF6F5; --ef-shadow: #2F4D58; --ef-accent: #CFE7E5; }
+/* brando (Tetiaroa, 2 Nov 2026): atoll blue, ocean teal, salt white, deep Pacific, pale sand bar (cool). */
+.theme-ef-brando { --ef-sand: #8EB7CF; --ef-earth: #1A4A80; --ef-landscape: #EFF4F7; --ef-shadow: #2B3F55; --ef-accent: #D2E2EC; }
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }
@@ -316,14 +469,37 @@ a:hover .jw-needle { animation-duration: 1.6s; }
    questions read as a Ledger page again; the night close drops back to the surface. */
 .theme-ef-dark .ef-day { --ef-surface: #F3EDE2; --ef-ink: #2D2A26; --ef-muted: rgba(45,42,38,0.68); --ef-line: rgba(45,42,38,0.22); --ef-landscape: #FFFFFF; --ef-shadow: #5B4F5A; --ef-earth: #8A4C2C; --jw-card: #FFFFFF; --jw-accent: 138 76 44; --jw-accent-deep: 122 69 44; --jw-accent-hex: #8A4C2C; --jw-accent-deep-hex: #7A452C; background: var(--ef-surface); color: var(--ef-ink); }
 .theme-ef-dark .ef-day .ledger-btn--solid, .theme-ef-dark .ef-day .ledger-btn:hover { color: #F3EDE2; }
+/* Vessel surfaces (2 Nov 2026): the same night, day, night, on the sea's own palette. One more class than the
+   defaults above, so these win only on a designated vessel; Amangiri keeps the dusk plum and desert ivory. */
+.theme-ef-dark.theme-ef-hermes { --ef-surface: #0E2530; --ef-ink: #E9F0EE; --ef-muted: rgba(233,240,238,0.74); --ef-line: rgba(233,240,238,0.2); --ef-sand: #8FB3BF; --ef-earth: #6FA3AE; --ef-landscape: #13303C; --ef-shadow: rgba(233,240,238,0.6); --ef-accent: #8FB3BF; --jw-accent: 143 179 191; --jw-accent-deep: 111 163 174; --jw-accent-light: 211 226 227; --jw-accent-hex: #8FB3BF; --jw-accent-deep-hex: #6FA3AE; --jw-card: #13303C; }
+.theme-ef-dark.theme-ef-hermes .ef-day { --ef-surface: #EEF3F2; --ef-ink: #1F2A2E; --ef-muted: rgba(31,42,46,0.68); --ef-line: rgba(31,42,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3D5560; --ef-earth: #245A66; --jw-card: #FFFFFF; --jw-accent: 36 90 102; --jw-accent-deep: 28 72 82; --jw-accent-hex: #245A66; --jw-accent-deep-hex: #1C4852; }
+.theme-ef-dark.theme-ef-amandira { --ef-surface: #1B1F3A; --ef-ink: #F2E9DC; --ef-muted: rgba(242,233,220,0.74); --ef-line: rgba(242,233,220,0.2); --ef-sand: #C08A55; --ef-earth: #D49A62; --ef-landscape: #232849; --ef-shadow: rgba(242,233,220,0.6); --ef-accent: #C08A55; --jw-accent: 192 138 85; --jw-accent-deep: 166 115 66; --jw-accent-light: 229 211 188; --jw-accent-hex: #C08A55; --jw-accent-deep-hex: #A67342; --jw-card: #232849; }
+.theme-ef-dark.theme-ef-amandira .ef-day { --ef-surface: #F4ECE1; --ef-ink: #2A2522; --ef-muted: rgba(42,37,34,0.68); --ef-line: rgba(42,37,34,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3A3A5C; --ef-earth: #8A5A2E; --jw-card: #FFFFFF; --jw-accent: 138 90 46; --jw-accent-deep: 116 74 36; --jw-accent-hex: #8A5A2E; --jw-accent-deep-hex: #744A24; }
+.theme-ef-dark.theme-ef-vahine { --ef-surface: #0F2A30; --ef-ink: #EAF3F2; --ef-muted: rgba(234,243,242,0.74); --ef-line: rgba(234,243,242,0.2); --ef-sand: #7CC4C2; --ef-earth: #6FB7B6; --ef-landscape: #15353C; --ef-shadow: rgba(234,243,242,0.6); --ef-accent: #7CC4C2; --jw-accent: 124 196 194; --jw-accent-deep: 111 183 182; --jw-accent-light: 207 231 229; --jw-accent-hex: #7CC4C2; --jw-accent-deep-hex: #6FB7B6; --jw-card: #15353C; }
+.theme-ef-dark.theme-ef-vahine .ef-day { --ef-surface: #EEF6F5; --ef-ink: #1E2B2E; --ef-muted: rgba(30,43,46,0.68); --ef-line: rgba(30,43,46,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2F4D58; --ef-earth: #1F6F78; --jw-card: #FFFFFF; --jw-accent: 31 111 120; --jw-accent-deep: 24 88 96; --jw-accent-hex: #1F6F78; --jw-accent-deep-hex: #185860; }
+.theme-ef-dark.theme-ef-brando { --ef-surface: #0E1F33; --ef-ink: #EAF0F5; --ef-muted: rgba(234,240,245,0.74); --ef-line: rgba(234,240,245,0.2); --ef-sand: #8EB7CF; --ef-earth: #7FAAC6; --ef-landscape: #142A42; --ef-shadow: rgba(234,240,245,0.6); --ef-accent: #8EB7CF; --jw-accent: 142 183 207; --jw-accent-deep: 127 170 198; --jw-accent-light: 210 226 236; --jw-accent-hex: #8EB7CF; --jw-accent-deep-hex: #7FAAC6; --jw-card: #142A42; }
+.theme-ef-dark.theme-ef-brando .ef-day { --ef-surface: #EFF4F7; --ef-ink: #1E2833; --ef-muted: rgba(30,40,51,0.68); --ef-line: rgba(30,40,51,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2B3F55; --ef-earth: #1A4A80; --jw-card: #FFFFFF; --jw-accent: 26 74 128; --jw-accent-deep: 12 93 97; --jw-accent-hex: #1A4A80; --jw-accent-deep-hex: #0C5D61; }
+/* The ship section nav sits on the night surface of a designated vessel, so its links stay legible. */
+.theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
+.theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }
+.theme-ef-dark [data-ship-nav] .ledger-eyebrow.ledger-crimson { color: var(--ef-ink); }
+/* The Exceptional Few keeps its per-property palette on buttons too: the action follows that page's own accent. */
+.theme-ef-dark, .theme-ef-dark .ef-day { --jw-action: var(--jw-accent-hex); --jw-action-deep: var(--jw-accent-deep-hex); }
 .theme-ef-dark .ledger-eyebrow, .theme-ef-dark .ledger-muted, .theme-ef-dark .text-ink-muted, .theme-ef-dark .ef-caption { color: var(--ef-muted); }
 .theme-ef-dark .ledger-border, .theme-ef-dark .ledger-rule, .theme-ef-dark .divide-x > * { border-color: var(--ef-line); }
 .theme-ef-dark .ledger-paper, .theme-ef-dark .ledger-card, .theme-ef-dark .ledger-page, .theme-ef-dark .bg-paper, .theme-ef-dark .bg-paper-card, .theme-ef-dark .ef-wash { background: var(--jw-card) !important; color: var(--ef-ink); box-shadow: none; }
 .theme-ef-dark .text-ink, .theme-ef-dark .ledger-display, .theme-ef-dark .ledger-h1 { color: var(--ef-ink); }
 .theme-ef-dark header:not(.bg-transparent) { background: var(--ef-surface) !important; border-color: var(--ef-line) !important; color: var(--ef-ink) !important; }
 .theme-ef-dark header .\!text-ink, .theme-ef-dark nav .\!text-ink { color: var(--ef-ink) !important; }
-.theme-ef-dark .ledger-btn:hover, .theme-ef-dark .ledger-btn--solid { color: var(--ef-surface); }
-.theme-ef-dark .ledger-btn--solid:hover { color: var(--ef-surface); }
+/* The Exceptional Few keeps its own buttons (protected): its own accent, squared, no Ledger column cell or editorial arrow. */
+.theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost):not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light)::before, .theme-ef-dark :is(.ledger-btn, .ledger-btn-ghost):not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light)::after { display: none !important; }
+.theme-ef-dark .ledger-btn:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark a.ledger-btn[href^="/plan"]:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark .ledger-btn--house:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light), .theme-ef-dark .ledger-btn--solid:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light) { height: auto !important; padding: 10px 20px !important; border: 1px solid var(--jw-action) !important; background: transparent !important; color: var(--jw-action) !important; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-style: normal; font-weight: 600; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+.theme-ef-dark .ledger-btn:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light):hover, .theme-ef-dark a.ledger-btn[href^="/plan"]:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light):hover, .theme-ef-dark .ledger-btn--solid:not(:is(header, [data-ship-nav]) *):not(.ledger-btn--light) { background: var(--jw-action) !important; color: var(--ef-surface) !important; }
+/* "Plan with James" stays the house's own action on a designated vessel (James, 3 Nov 2026): in the site header, the
+   ship's section nav and on the night photograph it is the approved Ledger column, a white outline with the House
+   Crimson arrow cell, never the property's accent. Everything else on the page keeps The Exceptional Few buttons. */
+.theme-ef-dark :is(header, [data-ship-nav]) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary), .theme-ef-dark .ledger-btn.ledger-btn--house.ledger-btn--light { --jw-action: #8B2525; background: transparent !important; border-color: #FFFFFF !important; color: #FFFFFF !important; }
+.theme-ef-dark :is(header, [data-ship-nav]) .jw-plan-cell { --jw-action: #8B2525; border-color: #FFFFFF; }
 .theme-ef-dark #record-bar { background: var(--ef-surface) !important; border-color: var(--ef-line); color: var(--ef-ink); }
 .theme-ef-dark .ef-rule { border-color: var(--ef-line); }
 .theme-ef-dark .bg-ef-earth { background: var(--ef-earth); }
@@ -340,3 +516,91 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .ef-arrive > * { animation: ef-arrive 1.1s ease-out 0.5s both; }
 .ef-arrive > *:nth-child(2) { animation-delay: 0.75s; } .ef-arrive > *:nth-child(3) { animation-delay: 1s; } .ef-arrive > *:nth-child(4) { animation-delay: 1.25s; }
 @media (prefers-reduced-motion: reduce) { .ef-arrive > * { animation: none !important; } }
+
+/* ---------- River voyages: the waters context (James, 2 Nov 2026; lib/palette.ts WATERS_PALETTE) ----------
+   The Amazon in rainforest greens, the Nile in lapis with deep Nile turquoise, the By River hub between them.
+   Still no browns, golds or olives. Set on a wrapper round the hub or ship page (display: contents); the
+   descendant selector outranks the .theme-sea inside, and the :root rule (later than .theme-sea-page) re-tints
+   the header and progress bar. Buttons, accents, selected chips and the quiet card tint follow; pathway chips
+   keep their own pathway colours. */
+.theme-waters-amazon, .theme-waters-amazon .theme-sea, :root:has(.theme-waters-amazon) { --jw-accent: 26 79 54; --jw-accent-deep: 18 58 39; --jw-accent-light: 196 220 207; --jw-accent-hex: #1A4F36; --jw-accent-deep-hex: #123A27; --jw-card: #FFFFFF; --jw-action: #0A6B4E; --jw-action-deep: #1D5A3B; --jw-band-rgb: 231 242 234; --jw-band-alt-rgb: 229 242 244; }
+.theme-waters-nile, .theme-waters-nile .theme-sea, :root:has(.theme-waters-nile) { --jw-accent: 27 52 113; --jw-accent-deep: 18 37 80; --jw-accent-light: 197 206 230; --jw-accent-hex: #1B3471; --jw-accent-deep-hex: #122550; --jw-card: #FFFFFF; --jw-action: #23428F; --jw-action-deep: #0A6570; --jw-band-rgb: 232 237 248; --jw-band-alt-rgb: 229 242 244; }
+.theme-waters-river, .theme-waters-river .theme-sea, :root:has(.theme-waters-river) { --jw-accent: 14 79 82; --jw-accent-deep: 10 58 60; --jw-accent-light: 194 220 221; --jw-accent-hex: #0E4F52; --jw-accent-deep-hex: #0A3A3C; --jw-card: #FFFFFF; --jw-action: #0E6467; --jw-action-deep: #23428F; --jw-band-rgb: 229 242 244; --jw-band-alt-rgb: 231 242 234; }
+/* The logo is not re-coloured by the waters: the header keeps the house tones (the logo reads --jw-crimson). */
+:is(.theme-waters-amazon, .theme-waters-nile, .theme-waters-river) header { --jw-accent: 46 43 40; --jw-accent-deep: 26 24 22; --jw-accent-light: 207 200 191; --jw-accent-hex: #2E2B28; --jw-accent-deep-hex: #1A1816; }
+/* Band rhythm (The House Standard): Stone Mist is the only band; a banded section that follows a sibling banded section goes Paper,
+   the next one Stone Mist again, so two Stone Mist bands never run together. (The Exceptional Few keeps its own bands: its rules are !important.) */
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: inherit; }
+section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) ~ section:is(.bg-paper-card, .bg-sand, .bg-sand-deep) { --jw-band-rgb: var(--jw-band-alt-rgb); }
+
+/* Phones, record pages (scroll audit, 2 Nov 2026): before any scroll, the sticky "On this page"
+   tabs sit at the bottom of the first screen, right where the fixed #record-bar sits, so a first
+   tap landed on the bar. The bar now slides up over the first 120px of scroll, by the scroll
+   itself (no script). Browsers without scroll timelines keep today's always-visible bar, and
+   reduced motion shows it at once. */
+@supports (animation-timeline: scroll()) {
+  @media (max-width: 1023px) and (prefers-reduced-motion: no-preference) {
+    #record-bar { animation: jw-record-bar-in linear both; animation-timeline: scroll(root block); animation-range: 0 120px; }
+  }
+}
+@keyframes jw-record-bar-in { from { transform: translateY(100%); visibility: hidden; } 1% { visibility: visible; } to { transform: translateY(0); visibility: visible; } }
+
+/* Maps stay clear (map fix, 3 Nov 2026): while a map ([data-map]) reaches the lower part of the screen,
+   components/ledger/MapClear.tsx marks <html data-map-clear> and the fixed bottom chrome (the stay page's
+   "Ask about" card and phone bar, the quick actions bar) slides down out of the way, so it never covers the
+   3D terrain map, its Chart/Satellite toggle or a Ledger chart. Reduced motion: it simply goes and comes back. */
+:is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) { transition: transform .35s ease, opacity .35s ease, visibility 0s linear 0s; }
+html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) {
+  animation: none; transform: translateY(calc(100% + 32px)); opacity: 0; visibility: hidden; pointer-events: none;
+  transition: transform .35s ease, opacity .35s ease, visibility 0s linear .35s;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]),
+  html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quick actions"]) { transition: none; }
+}
+
+/* Volume grand entrances (preview, 2 Nov 2026): components/entrance/VolumeEntrance.tsx.
+   Full viewport (100svh with a 100vh fallback; min-height, so a long summary on a short phone grows the header
+   instead of clipping it), clear of the header at the top and the iPhone home indicator at the foot. The fade is
+   the one gradient: a light Ink scrim under the header, then Ink to Garnet rising from the foot. The Ken Burns
+   zoom runs 15.5s per photograph (a 14s hold plus the 1.5s crossfade); reduced motion keeps everything still. */
+.jw-entrance { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; }
+/* Below lg the Quick actions bar (56px + the home indicator, components/ledger/MobileActionBar.tsx) is fixed at the
+   foot, so the cue, the controls and the copy all sit above it. */
+.jw-entrance { --jw-foot: calc(56px + env(safe-area-inset-bottom)); }
+@media (min-width: 1024px) { .jw-entrance { --jw-foot: 0px; } }
+.jw-entrance__body { flex: 1; width: 100%; padding-top: 112px; padding-bottom: calc(var(--jw-foot) + 5rem); }
+@media (min-width: 1024px) { .jw-entrance__body { padding-top: 196px; padding-bottom: 7.5rem; } }
+.jw-entrance__fade { background: linear-gradient(180deg, rgba(26,24,22,0.55) 0%, rgba(26,24,22,0) 24%, rgba(26,24,22,0) 30%, rgba(26,24,22,0.38) 52%, rgba(58,28,31,0.74) 78%, rgba(90,31,35,0.9) 100%); }
+@media (min-width: 1024px) { .jw-entrance__fade { background: linear-gradient(180deg, rgba(26,24,22,0.5) 0%, rgba(26,24,22,0) 26%, rgba(26,24,22,0) 42%, rgba(46,43,40,0.34) 62%, rgba(58,28,31,0.7) 84%, rgba(90,31,35,0.88) 100%); } }
+.jw-entrance__title { font-size: clamp(3.5rem, 15vw, 10.5rem); line-height: 0.88; letter-spacing: -0.02em; text-wrap: balance; }
+.jw-entrance__cue { bottom: calc(var(--jw-foot) + 1.25rem); }
+.jw-entrance__rail { bottom: calc(var(--jw-foot, 0px) + 1.25rem); }
+@media (min-width: 1024px) { .jw-entrance__cue, .jw-entrance__rail { bottom: 2rem; } }
+/* The homepage hero keeps its calls to action at the foot on phones, so its Pause film control sits top right, under the header. */
+@media (max-width: 1023px) { section[aria-label="Welcome"] .jw-entrance__rail { top: 92px; bottom: auto; } }
+.jw-entrance__cue-line { position: relative; }
+.jw-entrance__cue-line::after { content: ""; position: absolute; left: 0; top: -40%; width: 1px; height: 40%; background: #FFFFFF; animation: jw-cue 2.4s cubic-bezier(.65,0,.35,1) infinite; }
+@keyframes jw-cue { from { top: -40%; } to { top: 100%; } }
+@keyframes jw-kenburns { from { transform: scale(1); } to { transform: scale(1.12); } }
+.jw-kenburns { animation: jw-kenburns 15.5s linear both; will-change: transform; }
+.jw-kenburns--paused { animation-play-state: paused; }
+/* #volume lands under the header through the site-wide scroll-padding-top (scroll audit, #207); no extra margin here. */
+@media (prefers-reduced-motion: reduce) { .jw-kenburns, .jw-entrance__cue-line::after { animation: none; } }
+/* The soft handoff from an entrance into the volume: the opening title rises into place as it scrolls in
+   (scroll-driven, where supported; elsewhere it is simply there). */
+@keyframes jw-rise { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) { .jw-volume-open { animation: jw-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 55%; } } }
+
+/* Touch screens only (map audit, 3 Nov 2026): the "Tap to explore" chips on zoomable maps. */
+.jw-touch-only { display: none !important; }
+@media (hover: none) and (pointer: coarse) { .jw-touch-only { display: inline-flex !important; } }
+
+/* Sign-in doors (header), 3 Nov 2026 */
+@keyframes doorsIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+
+/* Overland route atlas: reserve the live chart's height before the engine mounts, so Back returns to the card the
+   reader opened (nav audit P1-1, 3 Nov 2026: 369px on first load, about 1026px live at 1280; 865 then 1203px on phones). */
+#overland-atlas { min-height: 1180px; }
+@media (min-width: 768px) { #overland-atlas { min-height: 980px; } }

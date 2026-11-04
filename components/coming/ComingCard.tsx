@@ -6,7 +6,7 @@ import { type Coming, statusLine, sourceHost } from "@/lib/content/whats-coming"
 // and the house's position (pencilled until James has been). No photo when
 // the brand hasn't given one; never a borrowed one.
 export default function ComingCard({ c, compact = false }: { c: Coming; compact?: boolean }) {
-  const plan = `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name} — hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`;
+  const plan = `/plan?from=whats-coming&trip=${encodeURIComponent(`${c.name}: hold a place`)}${c.countrySlug ? `&destination=${c.countrySlug}` : ""}`;
   const host = sourceHost(c.source);
   return (
     <article className="bg-paper border ledger-border h-full flex flex-col" aria-labelledby={`coming-${c.slug}`}>
@@ -28,7 +28,7 @@ export default function ComingCard({ c, compact = false }: { c: Coming; compact?
           </dl>
         )}
         <div className="mt-auto pt-5 flex flex-wrap items-center gap-3">
-          <Link href={plan} className="ledger-btn ledger-btn--solid">Ask James to hold a place</Link>
+          <Link href={plan} className="ledger-btn ledger-btn--solid"><span className="sm:hidden">Hold a place</span><span className="hidden sm:inline">Ask James to hold a place</span></Link>
           {c.href && <Link href={c.href} className="ledger-btn">The page</Link>}
           {c.source && host && <a href={c.source} target="_blank" rel="noopener noreferrer" className="text-[13px] ledger-muted underline underline-offset-4 ml-auto">From {host}</a>}
         </div>

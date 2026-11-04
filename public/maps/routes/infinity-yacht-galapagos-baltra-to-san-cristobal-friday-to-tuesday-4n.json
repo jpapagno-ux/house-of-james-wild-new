@@ -1,0 +1,154 @@
+{
+ "id": "infinity-yacht-galapagos-baltra-to-san-cristobal-friday-to-tuesday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "5-day cruise A: Baltra to San Cristobal, 4 nights aboard Infinity",
+ "subtitle": "4 nights · Baltra to San Cristobal, Friday to Tuesday · Infinity",
+ "days": {
+  "1": "arrive Baltra, transfer to the first excursion and El Chato Tortoise Reserve",
+  "2": "Dragon Hill and Bachas Beach",
+  "3": "Post Office Bay and Cormorant Point or Devil's Crown",
+  "4": "Suarez Point and Gardner Bay and Islet, Osborn Islet",
+  "5": "Gianni Arismendy Interpretation Center, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Santa Cruz",
+   "lat": -0.54,
+   "lng": -90.45,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.45,
+     -0.54
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -90.45,
+     -0.54
+    ],
+    [
+     -90.497,
+     -0.5218
+    ],
+    [
+     -90.5307,
+     -0.5555
+    ],
+    [
+     -90.55,
+     -0.594
+    ],
+    [
+     -90.5548,
+     -0.6277
+    ],
+    [
+     -90.55,
+     -0.8058
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3906,
+     -1.2286
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -89.7554,
+     -1.3723
+    ],
+    [
+     -89.762,
+     -1.3657
+    ],
+    [
+     -89.7653,
+     -1.3624
+    ],
+    [
+     -89.7256,
+     -1.1738
+    ],
+    [
+     -89.6396,
+     -0.9124
+    ],
+    [
+     -89.6363,
+     -0.9091
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

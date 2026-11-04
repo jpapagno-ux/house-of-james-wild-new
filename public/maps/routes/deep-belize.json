@@ -1,0 +1,37 @@
+{
+ "id": "deep-belize",
+ "type": "overland",
+ "title": "Deep Belize",
+ "subtitle": "10 days · 9 nights · the Mountain Pine Ridge to Thatch Caye",
+ "code": "JW-BZ-D09",
+ "days": {
+  "1": "Belize City to the Mountain Pine Ridge",
+  "2": "Creeks and the Rio On Pools",
+  "3": "Caracol, Xunantunich or the caves",
+  "4": "The Waterfall Spa",
+  "5": "The Pine Ridge to the cayes",
+  "6": "The barrier reef",
+  "7": "Kayaks and paddleboards",
+  "8": "Thirty guests, one table",
+  "9": "Unplugged",
+  "10": "Home through Belize City"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Blancaneaux Lodge, Mountain Pine Ridge",
+   "lat": 17.03651,
+   "lng": -88.95317,
+   "kind": "lodge"
+  },
+  {
+   "day": 5,
+   "name": "Thatch Caye Resort",
+   "lat": 16.874528,
+   "lng": -88.121583,
+   "mode": "air",
+   "kind": "lodge"
+  }
+ ],
+ "map_note": "Positions from the stays' own pins."
+}

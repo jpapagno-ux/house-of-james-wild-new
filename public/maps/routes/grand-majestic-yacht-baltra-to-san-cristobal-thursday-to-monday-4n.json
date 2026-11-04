@@ -1,0 +1,130 @@
+{
+ "id": "grand-majestic-yacht-baltra-to-san-cristobal-thursday-to-monday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "5-day cruise A: Baltra to San Cristobal, 4 nights aboard Galapagos Grand Majestic",
+ "subtitle": "4 nights · Baltra to San Cristobal, Thursday to Monday · Galapagos Grand Majestic",
+ "days": {
+  "1": "arrive Baltra, transfer to the first excursion and Fausto Llerena Breeding Center, Santa Cruz",
+  "2": "El Barranco and Darwin Bay",
+  "3": "Rabida Island and Chinese Hat Islet",
+  "4": "Witch Hill and Lobos Island",
+  "5": "Gianni Arismendy Interpretation Center, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3134,
+     -0.7432
+    ],
+    [
+     -90.268,
+     -0.7561
+    ],
+    [
+     -90.2607,
+     -0.7561
+    ],
+    [
+     -90.1879,
+     -0.6832
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Rabida",
+   "lat": -0.41,
+   "lng": -90.71,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.5848,
+     -0.3726
+    ],
+    [
+     -90.6003,
+     -0.3778
+    ],
+    [
+     -90.71,
+     -0.41
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.71,
+     -0.41
+    ],
+    [
+     -90.2622,
+     -0.4691
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

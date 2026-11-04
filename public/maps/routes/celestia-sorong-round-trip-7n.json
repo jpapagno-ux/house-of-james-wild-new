@@ -1,0 +1,220 @@
+{
+ "id": "celestia-sorong-round-trip-7n",
+ "type": "voyage",
+ "destination": "raja-ampat",
+ "title": "8 Days, 7 Nights North & Central Raja Ampat aboard Celestia",
+ "subtitle": "7 nights · Sorong round trip · Celestia",
+ "days": {
+  "1": "Sorong",
+  "2": "Kri Peninsula",
+  "3": "The Passage",
+  "4": "Penemu Islands",
+  "5": "Wayag",
+  "6": "Wofoh",
+  "7": "Arborek and Mansuar",
+  "8": "Sorong"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sorong",
+   "lat": -0.8762,
+   "lng": 131.2558,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Kri",
+   "lat": -0.556,
+   "lng": 130.687,
+   "mode": "sea",
+   "path": [
+    [
+     131.2558,
+     -0.8762
+    ],
+    [
+     130.687,
+     -0.556
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Kabui Bay",
+   "lat": -0.44,
+   "lng": 130.56,
+   "mode": "sea",
+   "path": [
+    [
+     130.687,
+     -0.556
+    ],
+    [
+     130.6959,
+     -0.4583
+    ],
+    [
+     130.6959,
+     -0.4471
+    ],
+    [
+     130.6936,
+     -0.4426
+    ],
+    [
+     130.6869,
+     -0.4336
+    ],
+    [
+     130.6757,
+     -0.4224
+    ],
+    [
+     130.6307,
+     -0.3999
+    ],
+    [
+     130.624,
+     -0.3999
+    ],
+    [
+     130.5746,
+     -0.4269
+    ],
+    [
+     130.5634,
+     -0.4359
+    ],
+    [
+     130.56,
+     -0.44
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Penemu",
+   "lat": -0.565,
+   "lng": 130.28,
+   "mode": "sea",
+   "path": [
+    [
+     130.56,
+     -0.44
+    ],
+    [
+     130.5533,
+     -0.4444
+    ],
+    [
+     130.526,
+     -0.4421
+    ],
+    [
+     130.5123,
+     -0.4353
+    ],
+    [
+     130.4941,
+     -0.4353
+    ],
+    [
+     130.453,
+     -0.4558
+    ],
+    [
+     130.28,
+     -0.565
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Wayag",
+   "lat": -0.165,
+   "lng": 130.05,
+   "mode": "sea",
+   "path": [
+    [
+     130.28,
+     -0.565
+    ],
+    [
+     130.05,
+     -0.165
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Wofoh",
+   "lat": -0.27,
+   "lng": 130.2,
+   "mode": "sea",
+   "path": [
+    [
+     130.05,
+     -0.165
+    ],
+    [
+     130.2,
+     -0.27
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Arborek",
+   "lat": -0.565,
+   "lng": 130.52,
+   "mode": "sea",
+   "path": [
+    [
+     130.2,
+     -0.27
+    ],
+    [
+     130.4573,
+     -0.5336
+    ],
+    [
+     130.52,
+     -0.565
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 8,
+   "name": "Sorong",
+   "lat": -0.8762,
+   "lng": 131.2558,
+   "mode": "sea",
+   "path": [
+    [
+     130.52,
+     -0.565
+    ],
+    [
+     131.2558,
+     -0.8762
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

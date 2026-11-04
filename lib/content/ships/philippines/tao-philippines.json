@@ -1,0 +1,241 @@
+{
+ "slug": "tao-philippines",
+ "name": "TAO Philippines",
+ "brandLine": "TAO Philippines",
+ "operator": "TAO Philippines",
+ "type": "bangka",
+ "waters": "Palawan, El Nido to Coron",
+ "country": "Philippines",
+ "status": "sailing",
+ "seo": {
+  "title": "TAO Philippines: El Nido to Coron by Bangka and Island Camp | James Wild & Co",
+  "description": "TAO Philippines runs the original Palawan island expedition, since 2006: four or six days by local bangka between El Nido and Coron, nights in TAO's own off grid bamboo basecamps, with an island-born crew.",
+  "keywords": [
+   "TAO Philippines",
+   "El Nido to Coron expedition",
+   "Palawan island hopping",
+   "Linapacan",
+   "Camp Ngey Ngey",
+   "Tao Beach Farm"
+  ]
+ },
+ "tagline": "Four or six days by local bangka between El Nido and Coron, sleeping in TAO's own island camps.",
+ "answer": "TAO Philippines has run island expeditions in northern Palawan since 2006. The Tao Original crosses about 250 km of remote islands between El Nido and Coron in four days and four nights, in either direction, by local bangka with an island-born crew, the Lost Boys, and nights in TAO's off grid bamboo basecamps. The Tao Ultimate adds days in Bacuit Bay for six days and six nights. Joiners are 13 and over unless agreed, with children of all ages on Christmas, Chinese New Year and Easter departures, or any age on a private trip.",
+ "facts": [
+  [
+   "Route",
+   "El Nido to Coron or Coron to El Nido, about 250 km"
+  ],
+  [
+   "Lengths",
+   "Tao Original 4 days, 4 nights; Tao Ultimate 6 days, 6 nights (adds Bacuit Bay); El Nido Sailing 2 days, 2 nights on a historic paraw"
+  ],
+  [
+   "Boat",
+   "A local bangka with an island-born crew"
+  ],
+  [
+   "Nights",
+   "TAO's off grid bamboo basecamps, in tuka huts"
+  ],
+  [
+   "Ages",
+   "13 and over on shared expeditions unless agreed; all ages on Christmas, Chinese New Year and Easter departures, or on a private trip"
+  ],
+  [
+   "Since",
+   "2006"
+  ]
+ ],
+ "overview": [
+  "TAO calls itself the original Palawan expedition, run since 2006 by a collective of islanders. Guests travel between El Nido and Coron through West Busuanga, Linapacan and Daracoton Bay on a local bangka, away from the usual island-hopping crowds.",
+  "Nights are spent in TAO's own off grid bamboo basecamps, hidden in coves, jungles and island communities, in hand-built tuka huts whose bird-beak curves are shaped for shade and breeze. Tao Beach Farm at Dipnay, TAO's biggest working basecamp, ends the Coron to El Nido route; Camp Ngey Ngey, a private island camp in west Busuanga rebuilt from a typhoon-wrecked resort, ends the El Nido to Coron route.",
+  "Days are unhurried: snorkelling coral reefs from the boat, swimming to empty beaches, fishing with the crew, and family-style meals of farm vegetables and fresh seafood from a small galley."
+ ],
+ "why": [
+  "The most characterful way between the house's two Palawan hubs, El Nido and Coron: four or six days by bangka through islands no resort reaches, with nights in TAO's own camps.",
+  "Run by islanders, with the Lost Boys crew and the Tao Women's Association, and a business that invests in local education and livelihoods."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/hero",
+  "alt": "TAO Philippines expedition between El Nido and Coron, northern Palawan",
+  "credit": "TAO Philippines"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g1",
+   "alt": "TAO Philippines in northern Palawan, photograph 1 of 6",
+   "credit": "TAO Philippines"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g2",
+   "alt": "TAO Philippines in northern Palawan, photograph 2 of 6",
+   "credit": "TAO Philippines"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g3",
+   "alt": "TAO Philippines in northern Palawan, photograph 3 of 6",
+   "credit": "TAO Philippines"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g4",
+   "alt": "TAO Philippines in northern Palawan, photograph 4 of 6",
+   "credit": "TAO Philippines"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g5",
+   "alt": "TAO Philippines in northern Palawan, photograph 5 of 6",
+   "credit": "TAO Philippines"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/tao-philippines/g6",
+   "alt": "TAO Philippines in northern Palawan, photograph 6 of 6",
+   "credit": "TAO Philippines"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Tuka hut",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Open-sided bamboo huts in TAO's basecamps",
+    "Bird-beak curves designed for shade and the sea breeze",
+    "No wifi at the camps"
+   ]
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Tao Original (El Nido to Coron)",
+   "nights": 4,
+   "direction": "El Nido to Coron",
+   "days": [
+    {
+     "day": 1,
+     "title": "El Nido to Tao Beach Farm",
+     "place": "Dipnay, El Nido",
+     "lat": 11.33,
+     "lng": 119.47,
+     "summary": "A 07:30 start from the Tao office in El Nido (after the 18:00 group briefing the evening before), overland to San Fernando in the north of El Nido. Explore Daracoton Bay and sleep at Tao Beach Farm, Dipnay, the heart and home of Tao."
+    },
+    {
+     "day": 2,
+     "title": "Into the Linapacan islands",
+     "place": "Linapacan",
+     "lat": 11.47,
+     "lng": 119.86,
+     "summary": "An early start by boat to explore the remote Linapacan islands, with a night in another of Tao's own basecamps."
+    },
+    {
+     "day": 3,
+     "title": "Linapacan to south Culion",
+     "place": "South Culion",
+     "lat": 11.78,
+     "lng": 120.0,
+     "summary": "More of Linapacan, then the crossing to south Culion for the night."
+    },
+    {
+     "day": 4,
+     "title": "Up the Culion coast to Camp Ngey Ngey",
+     "place": "West Busuanga",
+     "lat": 12.03,
+     "lng": 119.88,
+     "summary": "Up the Culion coast to west Busuanga and a night at Camp Ngey Ngey, Tao's private island camp."
+    },
+    {
+     "day": 5,
+     "title": "Arrive in Coron",
+     "place": "Coron",
+     "lat": 11.998,
+     "lng": 120.204,
+     "summary": "Away after breakfast, into Coron town at about noon. Tao suggests an extra night or two at Camp Ngey Ngey."
+    }
+   ]
+  },
+  {
+   "name": "Tao Original (Coron to El Nido)",
+   "nights": 4,
+   "direction": "Coron to El Nido",
+   "days": []
+  },
+  {
+   "name": "Tao Ultimate (El Nido to Coron or Coron to El Nido)",
+   "nights": 6,
+   "direction": "Either direction, with Bacuit Bay added",
+   "days": []
+  }
+ ],
+ "departures": [],
+ "datesPublished": false,
+ "pricesNote": "TAO sells departures through its own booking calendar. James confirms dates and fares for your party.",
+ "routesNote": "TAO publishes the day by day for the El Nido to Coron route; the reverse route and the Tao Ultimate follow the same islands with Bacuit Bay added. Map positions are approximate.",
+ "inclusions": [
+  "The bangka and island-born crew",
+  "Nights in TAO's basecamps",
+  "Family-style meals",
+  "Snorkelling equipment",
+  "A massage in the islands"
+ ],
+ "exclusions": [],
+ "children": "13 and over on shared expeditions unless agreed in advance; children of all ages on Christmas, Chinese New Year and Easter departures, or any age on a private trip.",
+ "faqs": [
+  [
+   "How long is the TAO expedition?",
+   "The Tao Original is four days and four nights between El Nido and Coron, in either direction. The Tao Ultimate is six days and six nights, adding days in Bacuit Bay."
+  ],
+  [
+   "Where do you sleep?",
+   "In TAO's own off grid bamboo basecamps, in open-sided tuka huts. The El Nido to Coron route ends at Camp Ngey Ngey, TAO's private island camp in west Busuanga; the Coron to El Nido route ends at Tao Beach Farm in Dipnay."
+  ],
+  [
+   "Where does it start?",
+   "The El Nido route starts with a group briefing at the Tao office in El Nido at 18:00 the evening before, then a 07:30 departure. It arrives in Coron town at about noon on the last day."
+  ],
+  [
+   "Is there a minimum age?",
+   "13 for joiners unless agreed in advance, with no upper limit. Children of all ages join on Christmas, Chinese New Year and Easter departures, and private trips take any age."
+  ],
+  [
+   "Can we book a private trip?",
+   "Yes. TAO runs an El Nido Private Adventure and a Busuanga Private Adventure, with your own boat, crew and route."
+  ],
+  [
+   "Can you add nights at the end?",
+   "Yes. TAO offers extra nights at Camp Ngey Ngey or Tao Beach Farm, added from the booking."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples and friends who like a shared adventure",
+   "line": "A mixed group of all ages and nationalities on board and in the camps."
+  },
+  {
+   "who": "Adventurous families",
+   "line": "Holiday departures for children of all ages, or a private boat and crew."
+  },
+  {
+   "who": "Solo travellers",
+   "line": "TAO says solo travellers can join any expedition."
+  }
+ ],
+ "sources": [
+  "https://www.taophilippines.com/",
+  "https://www.taophilippines.com/experiences",
+  "https://www.taophilippines.com/experiences/original-el-nido-to-coron",
+  "https://www.taophilippines.com/experiences/camp-ngey-ngey",
+  "https://www.taophilippines.com/experiences/tao-dipnay-farm",
+  "https://www.taophilippines.com/experiences/family-vacation-philippines",
+  "https://www.taophilippines.com/about"
+ ],
+ "film": null,
+ "glance": {
+  "route": "El Nido to Coron, either direction",
+  "nights": "4 or 6 nights",
+  "ages": "13 and over, or all ages on holiday departures",
+  "guests": "Small shared groups, or private"
+ }
+}

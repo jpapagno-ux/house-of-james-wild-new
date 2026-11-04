@@ -3,10 +3,19 @@
 // stamp shape and stamp words. Pages, cards, stamps and offer marks read
 // from here; nothing else hard-codes a volume colour.
 //
-// Rules
-// • Pages are white. A volume's colour appears only on labels, buttons, the
-//   rule above the manifest and its marks.
-// • House Oxblood stays for the JW seal and Ledger IDs.
+// Rules (The House Standard, James approved 2 Nov 2026)
+// • Pages are paper, mist and ink. A volume is told apart by a thin leather
+//   TAB (about 5px edge) in its leather, never by coloured sections, buttons,
+//   chips or fills. Map pins, legends and stamps keep the volume inks (small marks).
+// • House Crimson stays for the JW seal, the logo, Ledger IDs, key dates and
+//   "Plan with James". It is never a volume colour.
+// • The Heritage set (natural pigments, warm to cool; James confirmed 2 Nov 2026):
+//   Gatherings Terracotta, Safaris Burnt Ochre, Overland Saffron, Europe Olive,
+//   Voyages Verdigris, Stays Limestone. Each has a base (the 5px tab, map pins and
+//   stamps: `leather` = `pad`), a deep (volume words, AA on Paper: `deep`), a light
+//   (marks on dark grounds) and a mist (an occasional quiet panel: `tint`).
+//   Base saffron, ochre and limestone fail AA as text: words always use the deep.
+// • This file is the only place a volume colour is written. Swap the set here.
 // • Founder marks print only from Ledger data (lib/ledger/status.ts).
 
 export type VolumeKey = "stays" | "safaris" | "gatherings" | "voyages" | "europe" | "overland";
@@ -19,13 +28,13 @@ export type VolumeStyle = {
   roman: string;
   label: string;
   short: string;
-  leather: string; // the binding: buttons, labels, rules
+  leather: string; // the binding: the volume tab (about 5px edge)
   leatherName: string;
-  pad: string; // stamp-pad ink, a step brighter so it reads on white
-  rgb: string; // leather as "r g b" for the --jw-accent variable
-  deep: string; // hover
-  light: string; // "r g b" tint
-  tint: string; // hex tint for quiet panels
+  pad: string; // the base: map pins, legends, stamps and dots (equal to leather in the Heritage set; never words)
+  rgb: string; // the base as "r g b" (no longer re-tints --jw-accent)
+  deep: string; // volume words (AA on Paper and the volume mist)
+  light: string; // "r g b": marks on dark grounds and photographs
+  tint: string; // quiet panels: Mist for every volume under the House Standard (no coloured fills)
   icon: VolumeIcon;
   stamp: StampShape;
   words: [string, string];
@@ -37,40 +46,45 @@ export type VolumeStyle = {
 export const VOLUME_STYLES: Record<VolumeKey, VolumeStyle> = {
   stays: {
     key: "stays", roman: "I", label: "Stays", short: "Stays",
-    leather: "#2E3B2C", leatherName: "Bottle Green", pad: "#3E5A3A", rgb: "46 59 44", deep: "#1F281E", light: "201 214 196", tint: "#F1F4EF",
+    leather: "#8C8277", leatherName: "Limestone", pad: "#8C8277", rgb: "140 130 119", deep: "#3D3934", light: "207 200 191", tint: "#F4F2EF",
     icon: "key", stamp: "circle", words: ["Slept", "Here"], ring: ["JAMES WILD & CO", "EXPLORING SINCE 1982"], timeMark: "hourglass",
   },
   safaris: {
     key: "safaris", roman: "II", label: "Safaris & Reserves", short: "Safaris",
-    leather: "#6B4226", leatherName: "Saddle Leather", pad: "#7A4A24", rgb: "107 66 38", deep: "#4F301B", light: "226 206 186", tint: "#F7F1EB",
+    leather: "#C2621E", leatherName: "Burnt Ochre", pad: "#C2621E", rgb: "194 98 30", deep: "#6B3510", light: "237 185 138", tint: "#FBF0E6",
     icon: "acacia", stamp: "postage", words: ["First", "Light"], ring: ["AFRICA · RESERVE POST", "VOL II"], timeMark: "hourglass",
   },
   gatherings: {
     key: "gatherings", roman: "III", label: "Gatherings", short: "Gatherings",
-    leather: "#651D22", leatherName: "Claret", pad: "#86232C", rgb: "101 29 34", deep: "#4A1418", light: "232 196 198", tint: "#F8F0F0",
+    leather: "#A2482E", leatherName: "Terracotta", pad: "#A2482E", rgb: "162 72 46", deep: "#5A2418", light: "221 164 142", tint: "#F7EDE8",
     icon: "house", stamp: "scallop", words: ["One", "Roof"], ring: ["GATHERING VERIFIED", "THREE GENERATIONS"], timeMark: "candle",
   },
   voyages: {
     key: "voyages", roman: "IV", label: "Voyages", short: "Voyages",
-    leather: "#1E2939", leatherName: "Admiralty Navy", pad: "#2A3D5C", rgb: "30 41 57", deep: "#121A26", light: "190 201 218", tint: "#EFF2F6",
+    leather: "#3F7A70", leatherName: "Verdigris", pad: "#3F7A70", rgb: "63 122 112", deep: "#1E3F3A", light: "169 204 196", tint: "#EDF4F2",
     icon: "sail", stamp: "porthole", words: ["Sailed", "Her"], ring: ["SHIP'S LOG", "SIGNED ABOARD"], timeMark: "shipclock", finalCall: "Last berths",
   },
   europe: {
     key: "europe", roman: "V", label: "Europe", short: "Europe",
-    leather: "#3B2634", leatherName: "Aubergine", pad: "#4E2E46", rgb: "59 38 52", deep: "#271822", light: "214 196 208", tint: "#F5F0F3",
+    leather: "#6E7537", leatherName: "Olive", pad: "#6E7537", rgb: "110 117 55", deep: "#353A1E", light: "194 199 154", tint: "#F2F3E8",
     icon: "dome", stamp: "arch", words: ["Grand", "Tour"], ring: ["JAMES WILD & CO", "VOL V"], timeMark: "sundial",
   },
   overland: {
     key: "overland", roman: "VI", label: "Overland & Expeditions", short: "Overland",
-    leather: "#46452A", leatherName: "Field Olive", pad: "#4D4C27", rgb: "70 69 42", deep: "#302F1C", light: "214 212 186", tint: "#F4F4EE",
+    leather: "#C4952A", leatherName: "Saffron", pad: "#C4952A", rgb: "196 149 42", deep: "#6B5212", light: "233 207 142", tint: "#FAF4E4",
     icon: "summit", stamp: "octagon", words: ["Off the", "Map"], ring: ["FIELD PERMIT", "BY ROAD · BY FOOT"], timeMark: "sundial", finalCall: "Open seats",
   },
 };
 
 /** "r g b" → "#RRGGBB". */
 const hex = (rgb: string) => "#" + rgb.split(" ").map((n) => (+n).toString(16).padStart(2, "0")).join("").toUpperCase();
-/** A volume's ink on white (labels, rules, dots, tabs, pins): its stamp-pad colour. The one volume colour. */
-export const volumeInk = (k: VolumeKey) => VOLUME_STYLES[k].pad;
+/** A volume's colour for words and rules on Paper (eyebrows, section rules, prices): its deep value, AA on Paper.
+ *  Under the Heritage set the bases (saffron, ochre, limestone) fail AA as text, so every word reads the deep. */
+export const volumeInk = (k: VolumeKey) => VOLUME_STYLES[k].deep;
+/** A volume's base for small marks on Paper: map pins, legends, dots and stamps. Never words. */
+export const volumeMark = (k: VolumeKey) => VOLUME_STYLES[k].pad;
+/** A volume's leather: the thin volume tab (about 5px edge). Never a section, button, chip or fill. */
+export const volumeLeather = (k: VolumeKey) => VOLUME_STYLES[k].leather;
 /** A volume's light ink, for marks on dark grounds (footer tabs on crimson, stamps on photographs). */
 export const volumeLightInk = (k: VolumeKey) => hex(VOLUME_STYLES[k].light);
 /** The volume a top-level path opens (/stays, /safaris … /destinations/europe). */
@@ -79,7 +93,59 @@ export const volumeForHref = (href: string): VolumeKey | null => {
   return (k as VolumeKey) in VOLUME_STYLES ? (k as VolumeKey) : null;
 };
 
+// On the Horizon (James, 2 Nov 2026): the offers stamp's colour set, derived from the Voyages tokens
+// so it sits inside the navy volume: the ink is the Voyages pad, the sea a step toward its light tint,
+// the deep its hover, and the rising sun in sea aqua (James, 2 Nov 2026: the brass sun is retired;
+// "match the stamps to these as well"). `onDark` is the set for navy or photographic grounds: the
+// Voyages light tint, with the aqua lifted toward white. The two aquas equal STAMP_AQUA in
+// lib/palette.ts (scripts/check-palette.mjs holds them in step; this file stays import-free).
+const mix = (a: string, b: string, t: number) => "#" + [0, 2, 4].map((i) => Math.round(parseInt(a.slice(1 + i, 3 + i), 16) * (1 - t) + parseInt(b.slice(1 + i, 3 + i), 16) * t).toString(16).padStart(2, "0")).join("").toUpperCase();
+const SUN_AQUA = "#1A8A8A", SUN_AQUA_DARK = "#8FD6CF"; // = STAMP_AQUA in lib/palette.ts
+export type HorizonTokens = { ink: string; sea: string; deep: string; sun: string; ground: string };
+export const HORIZON: { onLight: HorizonTokens; onDark: HorizonTokens } = {
+  onLight: { ink: VOLUME_STYLES.voyages.pad, sea: mix(VOLUME_STYLES.voyages.pad, hex(VOLUME_STYLES.voyages.light), 0.35), deep: VOLUME_STYLES.voyages.deep, sun: SUN_AQUA, ground: VOLUME_STYLES.voyages.tint },
+  onDark: { ink: hex(VOLUME_STYLES.voyages.light), sea: mix(hex(VOLUME_STYLES.voyages.light), VOLUME_STYLES.voyages.pad, 0.3), deep: "#FFFFFF", sun: SUN_AQUA_DARK, ground: VOLUME_STYLES.voyages.leather },
+};
+
+/** Alias of volumeInk: a volume's words use its deep value. */
+export const volumeText = (k: VolumeKey) => VOLUME_STYLES[k].deep;
+/** A volume's mist: an occasional quiet panel, never a section band. */
+export const volumeMist = (k: VolumeKey) => VOLUME_STYLES[k].tint;
+
+/**
+ * The volume CSS, generated from VOLUME_STYLES and injected once by app/layout.tsx, so no volume hex lives in
+ * app/globals.css or tailwind.config.ts and a new volume set is one edit here. Per volume it sets
+ *   :root                          --vol-<k>-leather, --vol-<k>-ink, --vol-<k>-deep, --vol-<k>-light (Tailwind vol.*, leather.*)
+ *   .vol-<k>                       --vol (the ink, for pins, dots and stamps)
+ *   .theme-vol-<k> / -page scope   --vol-leather (the 5px tab), --vol, --vol-deep
+ * Voyages also covers .theme-sea and .theme-sea-page (the voyage pages and the Aliikai listings).
+ */
+export function volumeCss(): string {
+  const root = VOLUME_ORDER.map((k) => { const v = VOLUME_STYLES[k]; return `--vol-${k}-leather: ${v.leather}; --vol-${k}-ink: ${v.pad}; --vol-${k}-deep: ${v.deep}; --vol-${k}-light: ${hex(v.light)}; --vol-${k}-mist: ${v.tint};`; }).join(" ");
+  const rules = VOLUME_ORDER.map((k) => {
+    const v = VOLUME_STYLES[k];
+    const scope = [`.theme-vol-${k}`, `:root:has(.theme-vol-${k}-page)`, ...(k === "voyages" ? [".theme-sea", ":root:has(.theme-sea-page)"] : [])].join(", ");
+    return `.vol-${k} { --vol: ${v.pad}; }\n${scope} { --vol-leather: ${v.leather}; --vol: ${v.pad}; --vol-deep: ${v.deep}; --vol-mist: ${v.tint}; }`;
+  }).join("\n");
+  return `:root { ${root} }\n${rules}`;
+}
+
 export const VOLUME_ORDER: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];
+
+// Volume numbering (James, 3 Nov 2026): one system everywhere, the romans above.
+// I Stays, II Safaris, III Gatherings, IV Voyages, V Europe, VI Overland. Never
+// write "Volume 05" or an index-based number: read the roman from here.
+/** A volume's roman numeral ("IV"). */
+export const volumeRoman = (k: VolumeKey) => VOLUME_STYLES[k].roman;
+/** The roman for a top-level path ("/europe" → "V"), or "" when the path is not a volume. */
+export const romanForHref = (href: string) => { const k = volumeForHref(href); return k ? VOLUME_STYLES[k].roman : ""; };
+/** The standard volume eyebrow: "Volume IV · Voyages", with optional extra parts after it. */
+export const volumeEyebrow = (k: VolumeKey, name: string = VOLUME_STYLES[k].short, ...rest: string[]) => [`Volume ${VOLUME_STYLES[k].roman}`, name, ...rest].join(" · ");
+/** Sorts anything with a volume path into the house order (I to VI). */
+export const byVolumeOrder = <T extends { href?: string; path?: string }>(a: T, b: T) => {
+  const i = (x: T) => { const k = volumeForHref(x.href ?? x.path ?? ""); return k ? VOLUME_ORDER.indexOf(k) : 99; };
+  return i(a) - i(b);
+};
 
 // Compatibility map for the Wild Pathways brief (Foundation V1.3 §3), whose
 // VOL-01…06 numbering differs from the romans James approved on 29 Oct 2026.

@@ -9,6 +9,8 @@ import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 import CompassPreview from "@/components/pathways/CompassPreview";
 import { compassLedger } from "@/lib/compass/ledger";
+import REGION_LIB from "@/lib/charts/regions.json";
+import type { ChartData } from "@/components/destination/LedgerChart";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_LIST } from "@/lib/pathways";
 
@@ -107,7 +109,8 @@ function PathwayReading() {
       <p className="ledger-eyebrow ledger-crimson">Wild Pathways</p>
       <h2 id="pathway-reading-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Or Let the Pathways Read You</h2>
       <p className="mt-3 max-w-2xl text-[16px] ledger-muted leading-relaxed">Eight editorial collections across the Ledger. Tell Iggi the setting you&rsquo;re drawn to and who&rsquo;s travelling; every suggestion names its pathway and the reason. {stays.length} approved stays and {journeys.length} journeys answer today.</p>
-      <CompassPreview records={records} recordsUrl="/compass/ledger.json" live enquireHref="/plan" pathwayHrefs={hrefs} />
+      {/* Compass → Atlas (James, 3 Nov 2026): the reading's fits flown to on the world chart. */}
+      <CompassPreview records={records} recordsUrl="/compass/ledger.json" live enquireHref="/plan" pathwayHrefs={hrefs} atlas={REGION_LIB.world as unknown as ChartData} />
     </section>
   );
 }

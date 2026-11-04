@@ -7,7 +7,7 @@ import MarginNote from "@/components/notes/MarginNote";
 import ImpactNote from "@/components/impact/ImpactNote";
 import FollowThePathway from "@/components/pathways/FollowThePathway";
 import { PathwayChips } from "@/components/pathways/Pathway";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import { onPathway, pathwayStays } from "@/lib/content/pathways";
 import { pathwayPreviewHref, stayPreviewHref } from "@/lib/content/pathways/preview";
 import { altFor } from "@/lib/content/stays";
@@ -38,7 +38,7 @@ export default async function StayPathwayPreview({ params }: { params: Promise<{
   const s = r.stay;
   const hero = { url: s.hero!, alt: altFor(s.hero!, s.name, s.country) };
   const status = statusLine(s.status as HouseStatus, s.statusDate);
-  const verdict = verdictFor(`stay:${s.slug}`);
+  const verdict = stayVerdict(s.slug, s.status);
   const suited = suitedTo([s.tagline, ...s.why.map((w) => w.body), ...s.features.paras, ...s.features.items, ...s.experiences.paras].join(" "), s.bestFor, 5);
   const why = s.why.length ? s.why.map((w) => ({ title: w.title ?? undefined, body: w.body })) : [{ body: s.tagline ?? "Filed in the Ledger." }];
   const related = onPathway(r.primaryPathway, { includeDrafts: true }).filter((x) => x.slug !== r.slug).map((x) => ({ ...x, href: stayPreviewHref(x.slug) }));
@@ -65,7 +65,7 @@ export default async function StayPathwayPreview({ params }: { params: Promise<{
           {(s.features.items.length > 0 || s.features.paras.length > 0) && <Features id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" icon="frond" items={s.features.items.length ? s.features.items : undefined} body={s.features.paras[0]} />}
 
           {/* Best Suited For */}
-          <section id="suited" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] border-t ledger-rule pt-8" aria-labelledby="suited-heading">
+          <section id="suited" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="suited-heading">
             <SectionHead eyebrow="Best suited for" title="Who'll Love It, and Who Might Not" />
             <ul className="mt-6 flex flex-wrap gap-2">{suited.map((x) => <li key={x} className="border ledger-border px-3 py-1.5 text-[14.5px]">{x}</li>)}</ul>
             <p className="mt-4 text-[14px] ledger-muted max-w-xl">Read from the record&rsquo;s own words and its Ledger tags; never guessed. Intentions on file: {r.intentions.map((i) => i.replace(/_/g, " ")).join(", ")}.</p>

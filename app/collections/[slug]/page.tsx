@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: P) {
   return buildMetadata({ title: c.seo.title, description: c.seo.description, path: c.path, image: { url: c.hero.url, alt: c.hero.alt }, noindex: !c.approved });
 }
 
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-28";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
 export default async function CollectionPage({ params }: P) {
   const { slug } = await params;
@@ -56,7 +56,7 @@ export default async function CollectionPage({ params }: P) {
       <main id="main" className="pb-16">
         <header className="relative w-full h-[80svh] min-h-[520px] max-h-[1000px] overflow-hidden bg-ink text-white">
           <Image src={c.hero.url} alt={c.hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/35" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.35)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-16">
             <p className="ledger-eyebrow !text-white/80">{c.eyebrow}</p>
             <h1 className="ledger-display text-[2.5rem] md:text-[4.4rem] leading-[1.02] mt-3 max-w-4xl text-balance">{c.name}</h1>
@@ -99,7 +99,7 @@ export default async function CollectionPage({ params }: P) {
                     </div>
                   </>
                 );
-                return <li key={h.slug} id={h.slug} className="scroll-mt-28">{h.built ? <Link href={`/stays/${h.slug}`} className="group block h-full border ledger-border hover:border-crimson/60 transition-colors">{inner}</Link> : <div className="h-full border ledger-border border-dashed">{inner}</div>}</li>;
+                return <li key={h.slug} id={h.slug} className="">{h.built ? <Link href={`/stays/${h.slug}`} className="group block h-full border ledger-border hover:border-crimson/60 transition-colors">{inner}</Link> : <div className="h-full border ledger-border border-dashed">{inner}</div>}</li>;
               })}
             </ul>
           </section>
@@ -166,7 +166,7 @@ export default async function CollectionPage({ params }: P) {
                       {list.map((x) => {
                         const h = slugOf(x.hotel);
                         return (
-                          <li key={x.hotel} id={`offer-${h?.slug ?? x.hotel}`} className="border ledger-border flex flex-col scroll-mt-28">
+                          <li key={x.hotel} id={`offer-${h?.slug ?? x.hotel}`} className="border ledger-border flex flex-col">
                             <div className="relative aspect-[4/3] overflow-hidden bg-ink/5"><Image src={x.image.url} alt={x.image.alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" quality={85} className="object-cover" /></div>
                             <div className="p-5 flex flex-col flex-1">
                               <p className="ledger-eyebrow ledger-crimson">{h ? `${h.country} · ${h.where}` : ""}</p>
@@ -189,14 +189,14 @@ export default async function CollectionPage({ params }: P) {
         </div>
 
         {GALLERY.length > 0 && (
-          <section id="gallery" aria-labelledby="gal-h" className="mt-16 md:mt-24 scroll-mt-28">
+          <section id="gallery" aria-labelledby="gal-h" className="mt-16 md:mt-24">
             <div className="max-w-ledger mx-auto px-5 md:px-10">
               <p className="ledger-eyebrow ledger-crimson">Across the collection</p>
               <h2 id="gal-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">The Places Themselves</h2>
               <nav aria-label="Gallery themes" className="mt-5 flex flex-wrap gap-2">{GALLERY.map((grp) => <a key={grp.key} href={`#g-${grp.key}`} className="border ledger-border px-3 py-1 text-[13.5px] hover:border-crimson/60">{grp.label} <span className="ledger-muted">{grp.images.length}</span></a>)}</nav>
             </div>
             {GALLERY.map((grp) => (
-              <div key={grp.key} id={`g-${grp.key}`} className="mt-10 scroll-mt-28">
+              <div key={grp.key} id={`g-${grp.key}`} className="mt-10">
                 <h3 className="max-w-ledger mx-auto px-5 md:px-10 ledger-display text-[1.35rem] md:text-[1.6rem] mb-4">{grp.label}</h3>
                 <ul className="grid grid-cols-2 md:grid-cols-4 gap-1.5 md:gap-2 px-1.5 md:px-2">
                   {grp.images.map((g, i) => (

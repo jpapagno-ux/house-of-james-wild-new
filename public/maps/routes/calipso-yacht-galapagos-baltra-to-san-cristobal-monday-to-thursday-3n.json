@@ -1,0 +1,90 @@
+{
+ "id": "calipso-yacht-galapagos-baltra-to-san-cristobal-monday-to-thursday-3n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "4-day Naturalist cruise: Baltra to San Cristobal, 3 nights aboard Calipso",
+ "subtitle": "3 nights · Baltra to San Cristobal, Monday to Thursday · Calipso",
+ "days": {
+  "1": "arrive Baltra, transfer to the yacht and South Plaza",
+  "2": "Post Office Bay and Baroness Viewing Point and Cormorant Point",
+  "3": "Santa Fe and Fausto Llerena Breeding Center, Santa Cruz",
+  "4": "Gianni Arismendy Interpretation Center, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "South Plaza",
+   "lat": -0.5833,
+   "lng": -90.1667,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -90.1667,
+     -0.5833
+    ],
+    [
+     -90.1942,
+     -0.6972
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Santa Fe",
+   "lat": -0.82,
+   "lng": -90.06,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.06,
+     -0.82
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.06,
+     -0.82
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

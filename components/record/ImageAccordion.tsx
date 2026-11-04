@@ -14,7 +14,7 @@ export default function ImageAccordion({ id, eyebrow, title, intro, icon, items,
   const [open, setOpen] = useState<number | null>(start);
   const uid = useId();
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${uid}-h`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${uid}-h`}>
       <div className="flex items-center gap-3">
         {icon && <FieldIcon name={icon} height={26} className="ledger-crimson" />}
         <p className="ledger-eyebrow">{eyebrow}</p>
@@ -38,7 +38,7 @@ export default function ImageAccordion({ id, eyebrow, title, intro, icon, items,
                 <div className="overflow-hidden" inert={!on || undefined}>
                   <div className="pb-6 md:pb-8 md:pl-10 grid md:grid-cols-[1.6fr_1fr] gap-5 md:gap-8 items-end">
                     {x.image && (
-                      <div className="relative aspect-[16/10] overflow-hidden bg-[#e9e3d6]">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-mist">
                         <Image src={x.image} alt={x.alt ?? x.title} fill sizes="(max-width: 768px) 100vw, 60vw" quality={85} loading="lazy" className={`object-cover transition-transform duration-[1600ms] ${on ? "scale-100" : "scale-105"}`} />
                       </div>
                     )}

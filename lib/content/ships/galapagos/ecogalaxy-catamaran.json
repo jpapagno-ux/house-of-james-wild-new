@@ -1,0 +1,403 @@
+{
+ "slug": "ecogalaxy-catamaran",
+ "name": "EcoGalaxy",
+ "brandLine": "EcoGalaxy",
+ "operator": "Galaxy Cruises",
+ "type": "catamaran",
+ "waters": "Galapagos Islands",
+ "country": "Ecuador",
+ "status": "sailing",
+ "seo": {
+  "title": "EcoGalaxy Catamaran Galapagos: Cruises | James Wild & Co",
+  "description": "EcoGalaxy, Galaxy Cruises' 16-guest First Class catamaran with 8 cabins and a 360-degree sundeck. 4 and 5-night Southern, Western and Northern routes.",
+  "keywords": [
+   "EcoGalaxy",
+   "EcoGalaxy catamaran",
+   "Galaxy Cruises EcoGalaxy",
+   "First Class Galapagos catamaran",
+   "sustainable Galapagos cruise",
+   "16 guest Galapagos catamaran",
+   "Galapagos cruise 2026"
+  ]
+ },
+ "tagline": "A First Class catamaran for 16, built with sustainability in mind.",
+ "answer": "EcoGalaxy is Galaxy Cruises' First Class expedition catamaran for 16 guests in 8 cabins, with 9 crew, a cruise director and one bilingual naturalist guide. Galaxy describes her as a sustainable catamaran using 50% less wood than a conventional vessel. She sails 4-night Southern and 5-night Western and Northern routes, from US$4,100 per person in 2026. Children from 6.",
+ "facts": [
+  [
+   "Cabins",
+   "8"
+  ],
+  [
+   "Guests",
+   "16"
+  ],
+  [
+   "Crew",
+   "9, plus a cruise director"
+  ],
+  [
+   "Naturalist guides",
+   "1 bilingual (English and Spanish)"
+  ],
+  [
+   "Category",
+   "First Class (Galaxy Cruises)"
+  ],
+  [
+   "Routes",
+   "Southern 4 nights, Western 5 nights, Northern 5 nights"
+  ],
+  [
+   "Wi-Fi",
+   "Listed, no details"
+  ],
+  [
+   "Children",
+   "From 6 years"
+  ]
+ ],
+ "overview": [
+  "EcoGalaxy is a twin-hull expedition catamaran run by Galaxy Cruises, which calls her a First Class sustainable catamaran. Galaxy says she uses 50% less wood than a conventional vessel and lists LED lighting, recycled materials, smart climate control and water purification and recirculation.",
+  "She takes 16 guests in eight cabins. Shared spaces include a 360-degree sundeck, an open-air deck, social lounges, a bar and a boutique. Kayaks, paddleboards, snorkel gear and wetsuits are on board.",
+  "The 4-night Southern Route runs from San Cristobal to Baltra via Espanola, Floreana, Santa Fe and South Plaza. The 5-night Western Route loops from Baltra through Isabela, Fernandina and Santiago. The 5-night Northern Route runs Baltra to San Cristobal via Rabida, North Seymour, Genovesa and Bartolome."
+ ],
+ "why": [
+  "A First Class price on a catamaran, with sustainability written into the build.",
+  "The three routes chain by day of the week: Southern, Western and Northern together make 14 nights without repeating a route."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/hero",
+  "alt": "EcoGalaxy catamaran in the Galapagos"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g1",
+   "alt": "EcoGalaxy catamaran exterior",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g3",
+   "alt": "EcoGalaxy sailing through the Galapagos",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g4",
+   "alt": "Guest watching the sunset from EcoGalaxy",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g5",
+   "alt": "Guest relaxing with an ocean view on EcoGalaxy",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g6",
+   "alt": "Marine iguana with the catamaran behind",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g7",
+   "alt": "Blue-footed boobies on a Galapagos island",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g8",
+   "alt": "Sea lion pup resting in the Galapagos",
+   "credit": "Galaxy Cruises"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecogalaxy-catamaran/g9",
+   "alt": "Guest admiring the view from the catamaran rail",
+   "credit": "Galaxy Cruises"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Cabin",
+   "count": 8,
+   "size": null,
+   "beds": "not published",
+   "deck": "not published",
+   "features": [
+    "Smart climate control",
+    "110V power and in-cabin safe (Galaxy guideline)"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Itinerary A: Southern Route, 4 nights",
+   "nights": 4,
+   "direction": "San Cristobal to Baltra, Tuesday to Saturday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive San Cristobal airport, transfer to the catamaran and Lobos Island",
+     "place": "San Cristobal",
+     "lat": -0.858,
+     "lng": -89.561,
+     "summary": "Morning: arrive San Cristobal airport, transfer to the catamaran. Afternoon: Lobos Island."
+    },
+    {
+     "day": 2,
+     "title": "Gardner Bay, Gardner Islet and Osborn Islet and Suarez Point",
+     "place": "Espanola",
+     "lat": -1.383,
+     "lng": -89.733,
+     "summary": "Morning: Gardner Bay, Gardner Islet and Osborn Islet. Afternoon: Suarez Point."
+    },
+    {
+     "day": 3,
+     "title": "Post Office Bay and Cormorant Point and Devil's Crown",
+     "place": "Floreana",
+     "lat": -1.24,
+     "lng": -90.43,
+     "summary": "Morning: Post Office Bay. Afternoon: Cormorant Point and Devil's Crown."
+    },
+    {
+     "day": 4,
+     "title": "Santa Fe and South Plaza",
+     "place": "Santa Fe",
+     "lat": -0.82,
+     "lng": -90.06,
+     "summary": "Morning: Santa Fe. Afternoon: South Plaza."
+    },
+    {
+     "day": 5,
+     "title": "Charles Darwin Station, Santa Cruz, then transfer to Baltra airport",
+     "place": "Santa Cruz",
+     "lat": -0.7432,
+     "lng": -90.3134,
+     "summary": "Morning: Charles Darwin Station, Santa Cruz, then transfer to Baltra airport."
+    }
+   ]
+  },
+  {
+   "name": "Itinerary B: Western Route, 5 nights",
+   "nights": 5,
+   "direction": "Baltra to Baltra, Saturday to Thursday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive Baltra airport, transfer to the catamaran and Santa Cruz Highlands",
+     "place": "Santa Cruz",
+     "lat": -0.63,
+     "lng": -90.34,
+     "summary": "Morning: arrive Baltra airport, transfer to the catamaran. Afternoon: Santa Cruz Highlands."
+    },
+    {
+     "day": 2,
+     "title": "Moreno Point and Elizabeth Bay",
+     "place": "Isabela",
+     "lat": -0.71,
+     "lng": -91.33,
+     "summary": "Morning: Moreno Point. Afternoon: Elizabeth Bay."
+    },
+    {
+     "day": 3,
+     "title": "Urbina Bay and Tagus Cove",
+     "place": "Isabela",
+     "lat": -0.37,
+     "lng": -91.23,
+     "summary": "Morning: Urbina Bay. Afternoon: Tagus Cove."
+    },
+    {
+     "day": 4,
+     "title": "Espinoza Point, Fernandina and Albemarle Point, Isabela",
+     "place": "Fernandina",
+     "lat": -0.2667,
+     "lng": -91.4417,
+     "summary": "Morning: Espinoza Point, Fernandina. Afternoon: Albemarle Point, Isabela."
+    },
+    {
+     "day": 5,
+     "title": "Egas Port and Espumilla Beach or Buccaneer Cove",
+     "place": "Santiago",
+     "lat": -0.245,
+     "lng": -90.86,
+     "summary": "Morning: Egas Port. Afternoon: Espumilla Beach or Buccaneer Cove."
+    },
+    {
+     "day": 6,
+     "title": "Black Turtle Cove, Santa Cruz, then transfer to Baltra airport",
+     "place": "Santa Cruz",
+     "lat": -0.49,
+     "lng": -90.33,
+     "summary": "Morning: Black Turtle Cove, Santa Cruz, then transfer to Baltra airport."
+    }
+   ]
+  },
+  {
+   "name": "Itinerary C: Northern Route, 5 nights",
+   "nights": 5,
+   "direction": "Baltra to San Cristobal, Thursday to Tuesday",
+   "days": [
+    {
+     "day": 1,
+     "title": "arrive Baltra airport, transfer to the catamaran and Bachas Beach",
+     "place": "Santa Cruz",
+     "lat": -0.49,
+     "lng": -90.33,
+     "summary": "Morning: arrive Baltra airport, transfer to the catamaran. Afternoon: Bachas Beach."
+    },
+    {
+     "day": 2,
+     "title": "Chinese Hat and Rabida",
+     "place": "Sombrero Chino",
+     "lat": -0.37,
+     "lng": -90.58,
+     "summary": "Morning: Chinese Hat. Afternoon: Rabida."
+    },
+    {
+     "day": 3,
+     "title": "North Seymour and Santa Cruz Highlands",
+     "place": "North Seymour",
+     "lat": -0.3967,
+     "lng": -90.29,
+     "summary": "Morning: North Seymour. Afternoon: Santa Cruz Highlands."
+    },
+    {
+     "day": 4,
+     "title": "El Barranco and Darwin Bay",
+     "place": "Genovesa",
+     "lat": 0.3167,
+     "lng": -89.9583,
+     "summary": "Morning: El Barranco. Afternoon: Darwin Bay."
+    },
+    {
+     "day": 5,
+     "title": "Sullivan Bay, Santiago and Bartolome",
+     "place": "Santiago",
+     "lat": -0.29,
+     "lng": -90.58,
+     "summary": "Morning: Sullivan Bay, Santiago. Afternoon: Bartolome."
+    },
+    {
+     "day": 6,
+     "title": "San Cristobal Interpretation Center, then transfer to San Cristobal airport",
+     "place": "San Cristobal",
+     "lat": -0.9017,
+     "lng": -89.6103,
+     "summary": "Morning: San Cristobal Interpretation Center, then transfer to San Cristobal airport."
+    }
+   ]
+  }
+ ],
+ "departures": [],
+ "pricesNote": "Per person, cruise only, USD, as published on galaxycruises.com/ecogalaxy-catamaran on 2 Nov 2026, labelled 2026 price: Southern (4 nights) US$4,100, Western and Northern (5 nights) US$5,100. Occupancy basis not stated. Dated departures were not captured: Galaxy's booking feed loads in the browser and could not be read on 2 Nov 2026. Galaxy publishes 2026 itinerary prices only on the yacht page; 2027 prices are not published there.",
+ "inclusions": [
+  "Airport assistance on the cruise start date",
+  "Bilingual (English and Spanish) naturalist guide",
+  "Cruise director and personalised crew service",
+  "All meals from lunch on day one to breakfast on the last day",
+  "A snack after each activity (except the last day) and a welcome cocktail",
+  "Unlimited purified water, coffee and tea",
+  "All visits, excursions and activities in the itinerary",
+  "Use of docks and ferries",
+  "Snorkel gear (mask, snorkel, fins) and wetsuits",
+  "Airport to canal and canal to airport transport (Lobitos bus)",
+  "Kayaks and paddleboards in authorised areas"
+ ],
+ "exclusions": [
+  "International flights to and from Ecuador",
+  "Flights between Quito or Guayaquil and the Galapagos",
+  "Galapagos National Park entrance fee, US$200 per person",
+  "Transit Control Card, US$20 per person",
+  "Alcoholic and soft drinks",
+  "Tips",
+  "Personal expenses",
+  "Travel insurance (Galaxy calls it highly recommended)"
+ ],
+ "children": "Galaxy says EcoGalaxy welcomes children from 6 years old; there is no babysitting, so families should check the itinerary activities. Galaxy Cruises' terms accept children over 6 on shared departures and children of any age on a full charter; under-12s share a cabin with an adult or sleep in a cabin next to their parents. The booking form prices children aged 6 to 11 separately.",
+ "faqs": [
+  [
+   "How many guests does EcoGalaxy carry?",
+   "Sixteen, in eight cabins, with nine crew, a cruise director and one bilingual naturalist guide."
+  ],
+  [
+   "What makes EcoGalaxy sustainable?",
+   "Galaxy says she uses 50% less wood than a conventional vessel, with LED lighting, recycled materials, smart climate control and water purification and recirculation."
+  ],
+  [
+   "Which routes does she sail?",
+   "A 4-night Southern Route from San Cristobal, a 5-night Western Route from Baltra and a 5-night Northern Route ending at San Cristobal."
+  ],
+  [
+   "How much does an EcoGalaxy cruise cost?",
+   "Galaxy's 2026 prices are US$4,100 per person for the Southern Route and US$5,100 for the Western or Northern Route. Flights and park fees are extra."
+  ],
+  [
+   "Can children sail?",
+   "Yes, from 6 years old. There is no babysitting on board."
+  ],
+  [
+   "What is the category?",
+   "Galaxy lists EcoGalaxy as First Class, a step below its Luxury catamarans Alya and Galaxy Sirius."
+  ],
+  [
+   "Can I charter EcoGalaxy?",
+   "Galaxy's booking form offers a whole-boat charter; the price is quoted on request."
+  ],
+  [
+   "What is included?",
+   "Meals, snacks, water, coffee and tea, guided excursions, snorkel gear, wetsuits, kayaks and paddleboards, and airport assistance. Drinks, tips, flights and park fees are extra."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Families with children 6 and up",
+   "line": "Galaxy welcomes children from 6."
+  },
+  {
+   "who": "Value-minded travellers",
+   "line": "A First Class catamaran price."
+  },
+  {
+   "who": "Sustainability-minded travellers",
+   "line": "Less wood, LED lighting and water recirculation, per Galaxy."
+  },
+  {
+   "who": "Two-week travellers",
+   "line": "Three routes that chain into 14 nights."
+  }
+ ],
+ "sources": [
+  "https://galaxycruises.com/ecogalaxy-catamaran",
+  "https://galaxycruises.com/assets/documents/en/b2b-info/ecogalaxy/ecogalaxy-guideline-en.pdf",
+  "https://galaxycruises.com/terms-and-conditions",
+  "https://galaxycruises.com/blog/ecogalaxy-totally-renovated/"
+ ],
+ "film": null,
+ "published": [
+  {
+   "year": "2026",
+   "rows": [
+    {
+     "length": "Southern Route, 4 nights",
+     "nights": 4,
+     "prices": {
+      "Per person": 4100
+     }
+    },
+    {
+     "length": "Western Route, 5 nights",
+     "nights": 5,
+     "prices": {
+      "Per person": 5100
+     }
+    },
+    {
+     "length": "Northern Route, 5 nights",
+     "nights": 5,
+     "prices": {
+      "Per person": 5100
+     }
+    }
+   ]
+  }
+ ],
+ "publishedNote": "Galaxy Cruises publishes its 2026 fare for each route on the yacht's own page; 2027 fares are not published there yet. Ask us for 2027.",
+ "fareBasis": "per person, as published"
+}

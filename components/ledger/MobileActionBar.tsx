@@ -13,7 +13,7 @@ export default function MobileActionBar() {
         <li><Link href="/destinations" className={item}><Map className="w-5 h-5" strokeWidth={1.25} />Destinations</Link></li>
         <li><Link href="/compass" className={item}><CompassSpin size={20} />Compass</Link></li>
         <li><a href={`tel:${SITE.phone.tel}`} className={item}><Phone className="w-5 h-5" strokeWidth={1.25} />Call</a></li>
-        <li><Link href="/plan" className={`${item} !text-crimson`}><PenLine className="w-5 h-5" strokeWidth={1.25} />Plan</Link></li>
+        <li><Link href="/plan" className={`${item} !text-action`}><PenLine className="w-5 h-5" strokeWidth={1.25} />Plan</Link></li>
       </ul>
     </nav>
   );

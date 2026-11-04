@@ -9,14 +9,14 @@ export default function ShipFilm({ film, name, poster, credit }: { film: FilmDat
   const id = filmId(film);
   const title = film && typeof film === "object" && film.title ? film.title : `${name}, the film`;
   return (
-    <section id="film" className="mt-16 md:mt-20 scroll-mt-32 lg:scroll-mt-[212px]" aria-label={`Film of ${name}`}>
+    <section id="film" className="mt-16 md:mt-20" aria-label={`Film of ${name}`}>
       <div className="relative aspect-[16/9] md:aspect-[21/9] border ledger-border overflow-hidden bg-ink">
         {id ? (
           <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0&modestbranding=1`} title={title} loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" className="absolute inset-0 w-full h-full" />
         ) : (
           <>
             <Image src={poster.url} alt={poster.alt} fill sizes="(min-width: 1024px) 1200px, 100vw" className="object-cover opacity-60 grayscale-[35%]" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-black/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.25)] to-[rgba(26,24,22,0.10)]" />
             <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
               <span className="w-14 h-14 rounded-full border border-white/60 flex items-center justify-center"><Film className="w-6 h-6" strokeWidth={1.25} aria-hidden="true" /></span>

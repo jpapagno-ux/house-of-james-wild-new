@@ -1,7 +1,8 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
 import { PreviewNote } from "@/components/record/Sections";
 import { buildMetadata } from "@/lib/seo";
-import { VOLUME_ORDER, VOLUME_STYLES } from "@/lib/volumes";
+import { HORIZON, VOLUME_ORDER, VOLUME_STYLES } from "@/lib/volumes";
+import HorizonMark, { HorizonBadge } from "@/components/ledger/HorizonMark";
 import { EmbossSeal, FinalCallBoard, InkStamp, PassportStamp, Roundel, TimeMark, VolumeIconSvg } from "@/components/ledger/VolumeKit";
 
 // Preview: the volume kit approved on 29 Oct 2026 (design canvas "House
@@ -81,6 +82,30 @@ export default function VolumeKitPreview() {
               <div className="bg-[#F4F2EE] p-6"><FinalCallBoard volume="voyages" saving="SAVE XX%" /></div>
               <div className="bg-[#F4F2EE] p-6"><FinalCallBoard volume="overland" saving="SAVE XX%" /></div>
             </div>
+          </section>
+
+          <section className="mt-16 border-t ledger-rule pt-8" id="on-the-horizon" data-horizon-sheet>
+            <p className="ledger-eyebrow">On the Horizon · the offers stamp (2 Nov 2026)</p>
+            <p className="mt-2 text-[15px] ledger-muted max-w-2xl">A compass bezel round a sun rising over the horizon and the swell, in the volume stamps&rsquo; engraved line. Colours derive from the Voyages tokens: ink, sea, deep and the house&rsquo;s ship&rsquo;s brass for the sun.</p>
+            <div className="mt-6 grid md:grid-cols-2 gap-6">
+              <div className="bg-white border ledger-border p-6 flex flex-wrap items-end gap-6">
+                <HorizonMark size={220} id="pvl" />
+                <HorizonMark size={120} tone="clean" id="pvl" />
+                <HorizonMark size={56} tone="clean" id="pvl" />
+                <HorizonMark size={28} tone="clean" id="pvl" />
+                <span className="basis-full"><HorizonBadge type="Celebrations" /></span>
+              </div>
+              <div className="p-6 flex flex-wrap items-end gap-6" style={{ background: HORIZON.onDark.ground, color: HORIZON.onDark.ink }}>
+                <HorizonMark size={220} tone="dark" id="pvd" />
+                <HorizonMark size={120} tone="dark" id="pvd" />
+                <HorizonMark size={56} tone="dark" id="pvd" />
+                <HorizonMark size={28} tone="dark" id="pvd" />
+                <span className="basis-full"><HorizonBadge type="Final Call" tone="dark" /></span>
+              </div>
+            </div>
+            <ul className="mt-4 flex flex-wrap gap-3 text-[12.5px] font-mono">
+              {(["onLight", "onDark"] as const).flatMap((g) => Object.entries(HORIZON[g]).map(([k, v]) => <li key={g + k} className="inline-flex items-center gap-2"><span className="w-4 h-4 border ledger-border" style={{ background: v }} aria-hidden="true" />{g}.{k} {v}</li>))}
+            </ul>
           </section>
 
           <PreviewNote>

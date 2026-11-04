@@ -13,6 +13,8 @@ import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
+import AdvisorChip from "@/components/advisor/AdvisorChip";
+import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -20,6 +22,7 @@ import { Reveal } from "@/components/ledger/Motion";
 import HeroSlider, { type Slide } from "@/components/destination/HeroSlider";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import LedgerChartMap, { type MapItem } from "@/components/destination/LedgerChartMap";
+import ChainChartMap, { type ChainView } from "@/components/destination/ChainChartMap";
 import Compass from "@/components/destination/Compass";
 import Postcard from "@/components/notes/Postcard";
 import Doors, { type Door } from "@/components/destination/Doors";
@@ -45,16 +48,28 @@ import { pathway } from "@/lib/pathways";
 import { REGION_PATHWAYS } from "@/lib/content/region-pathways";
 import { GUARD_ON, isBuilt } from "@/lib/routes";
 import { volumeInk } from "@/lib/volumes";
+import { undash } from "@/lib/content/ships/types";
 import { guidesFor } from "@/lib/content/field-guides";
 import { COUNTRIES, countryBySlug } from "@/lib/content/countries";
 import { GUIDES, placeGuides } from "@/lib/content/guides";
 import GuidePage from "@/components/destination/GuidePage";
+import FrenchPolynesia from "@/components/destination/FrenchPolynesia";
 import { regionBySlug } from "@/lib/content/regions";
 import { pageReady, staysIn } from "@/lib/content/stays";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { recordHref } from "@/lib/ledger/urls";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
+import PhilippinesSections from "@/components/destination/PhilippinesSections";
+import { APPROX } from "@/lib/content/philippines";
+import ComingTicker from "@/components/coming/ComingTicker";
+import { countryBoard } from "@/lib/content/board";
+import { comingOn } from "@/lib/content/whats-coming";
+import { today } from "@/lib/dates";
+import CountryAtlas, { atlasNotes } from "@/components/maps/terrain/CountryAtlas";
+import { countryLayoutOn, liveBoardOn, showDrafts } from "@/lib/content/country-layout";
+import { liveBoard } from "@/lib/content/board";
+import { atlasOn } from "@/components/maps/terrain/flag";
 
 // /destinations/[region]/[country]: the country page. Hero slider + counts ›
 // region/country bar › the Ledger chart map (every stay, linked) › in short ›
@@ -87,6 +102,85 @@ export async function generateMetadata({ params }: { params: Promise<{ region: s
   return buildMetadata({ title: `${c.name}: ${n} Vetted ${n === 1 ? "Stay" : "Stays"}, Routes and When to Go`, description: `${c.name} in the James Wild & Co Ledger: ${n} vetted ${n === 1 ? "stay" : "stays"} mapped, the best months by area, how to get there and journeys the house has drawn. ${c.subtitle}.`, path: `/destinations/${c.region}/${c.slug}`, image: c.hero.src ? { url: c.hero.src, alt: c.hero.alt } : undefined });
 }
 
+// Island chains, closer (James, 2 Nov 2026: "zoom in on the island chains with some textures"). Each chain
+// has its own 1:10m chart (scripts/build-region-charts.cjs); the map opens on the first and flies between
+// them, with the whole archipelago as the last view. Pins are the same stays and voyage ports as above.
+const CHAINS: Record<string, { key: string; label: string; sub: string; /** Where the frame's name sits on the whole-country chart. */ tag?: "above" | "below" }[]> = {
+  indonesia: [
+    { key: "indonesia-bali-lombok", label: "Bali & Lombok", tag: "below", sub: "Ubud's valleys, the Bukit's cliffs and the south coast, with Lombok across the strait. Most stays are an hour or so from Denpasar (DPS)." },
+    { key: "indonesia-sumba-flores", label: "Sumba & Flores", sub: "Komodo National Park off Flores, the surf coast of West Sumba, and Rote at the southern tip of the country. Labuan Bajo, Tambolaka and Kupang are the airports." },
+    { key: "indonesia-raja-ampat", label: "Raja Ampat", sub: "West Papua's islands, from Wayag in the north to Misool in the south. Voyages leave from Sorong; Waisai is the park's town." },
+    { key: "indonesia-sumatra-riau", label: "Sumatra & Riau", tag: "below", sub: "The Riau Islands off Sumatra's coast, a short ferry from Singapore. Nikoi sits off Bintan's east coast." },
+  ],
+  // Thailand's coasts and the north (James, 2 Nov 2026: region views "the way Indonesia was just done").
+  // Months are the Tourism Authority of Thailand's, as on the country's When to go band.
+  thailand: [
+    { key: "thailand-andaman", label: "Andaman coast", tag: "below", sub: "Phuket, Phang Nga Bay, Krabi and Khao Lak, best November to April. Fly into Phuket (HKT) or Krabi (KBV)." },
+    { key: "thailand-gulf", label: "Gulf islands", sub: "Koh Samui and its neighbours, best December to June. Samui's own airport (USM) is minutes from most stays." },
+    { key: "thailand-north", label: "The north", sub: "Chiang Mai on the Mae Ping and the Golden Triangle on the Mekong, best in the cool season, November to February." },
+  ],
+  // The Philippines by island group (James, 2 Nov 2026). Months are the Department of Tourism's. Stays without a
+  // brand pin sit at their island or town, marked approximate (lib/content/philippines.ts APPROX).
+  philippines: [
+    { key: "philippines-palawan", label: "Palawan", tag: "below", sub: "El Nido and Taytay, Coron and the Calamian Islands, and Cuyo. El Nido is best December to April, Coron late November to May. Fly into El Nido (ENI) or Busuanga (USU)." },
+    { key: "philippines-sulu", label: "Tubbataha & the Sulu Sea", tag: "below", sub: "Tubbataha Reefs, a UNESCO marine park, as a dive flag, and the Underground River near Puerto Princesa (PPS), both at their UNESCO points." },
+    { key: "philippines-visayas", label: "The Visayas", sub: "Bohol's Panglao and Anda, Dauin and Apo Island on Negros, and Mactan by the Cebu hub (CEB). Apo Island is best November to May." },
+    { key: "philippines-siargao", label: "Siargao", sub: "General Luna and Cloud 9. March to September is the dry season; surf is biggest September to November. Fly into Sayak (IAO)." },
+    { key: "philippines-camiguin", label: "Camiguin", sub: "A volcanic island in the Bohol Sea, with Mount Hibok-Hibok above Mambajao and White Island offshore." },
+  ],
+};
+/** What the last view, the whole country, is called on the chain control. */
+const WHOLE_LABEL: Record<string, string> = { indonesia: "The whole archipelago", thailand: "All of Thailand", philippines: "All of the Philippines" };
+/** A stay's position: its filed pin, else (the Philippines) its island or town, approximate. */
+const posOf = (s: { slug: string; coords: { lat: number; lng: number } | null }) => s.coords ?? (APPROX[s.slug] ? { lat: APPROX[s.slug].lat, lng: APPROX[s.slug].lng } : null);
+const approxKind = (slug: string, kind: string) => (APPROX[slug] ? `${kind} · ${APPROX[slug].where}, approximate` : kind);
+
+function chainViews(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]): ChainView[] {
+  const LIB = REGION_LIB as unknown as Record<string, ChartData>;
+  const frames = chains.map((c) => ({ ...c, chart: LIB[c.key] })).filter((c) => c.chart);
+  const coordsOf = (id: string) => {
+    if (id.startsWith("voyage-")) { const j = journeysFor(slug).find((x) => `voyage-${x.ledgerId}` === id); return j ? routeStart(j.href) : null; }
+    const st = staysIn(slug).find((s) => s.slug === id); return st ? posOf(st) : null;
+  };
+  const inFrame = (c: ChartData, p: { lat: number; lng: number }) => p.lng >= c.bounds.w && p.lng <= c.bounds.e && p.lat >= c.bounds.s && p.lat <= c.bounds.n;
+  const chainOf = (id: string) => { const p = coordsOf(id); return p ? frames.find((f) => inFrame(f.chart, p))?.label ?? null : null; };
+  const onWhole = items.filter((i) => i.x! >= 0 && i.y! >= 0 && i.x! <= whole.width && i.y! <= whole.height).map((i) => ({ ...i, area: chainOf(i.id) ?? i.area ?? `Elsewhere in ${name}` }));
+  const box = (c: ChartData) => { const a = projectOn(whole, c.bounds.n, c.bounds.w), b = projectOn(whole, c.bounds.s, c.bounds.e); return { x: a.x, y: a.y, w: b.x - a.x, h: b.y - a.y }; };
+  const views: ChainView[] = frames.map((f) => {
+    const list = items.map((i) => ({ i, p: coordsOf(i.id) })).filter((r) => r.p && inFrame(f.chart, r.p)).map(({ i, p }) => { const q = projectOn(f.chart, p!.lat, p!.lng); return { ...i, x: q.x, y: q.y, area: f.label }; });
+    const b = box(f.chart);
+    return { key: f.key, label: f.label, sub: f.sub, width: f.chart.width, height: f.chart.height, items: list, origin: `${(((b.x + b.w / 2) / whole.width) * 100).toFixed(1)}% ${(((b.y + b.h / 2) / whole.height) * 100).toFixed(1)}%`,
+      chart: <LedgerChart chart={f.chart} texture="engraved" title={`Ledger chart of ${f.label}, ${name}, with its stays and voyages`} /> };
+  });
+  views.push({ key: "whole", label: WHOLE_LABEL[slug] ?? `All of ${name}`, sub: slug === "indonesia" ? `All of ${name}, with each chain's frame marked. Pick a chain above to fly in.` : `All of ${name}, with each region's frame marked. Pick one above to fly in.`, width: whole.width, height: whole.height, items: onWhole,
+    chart: (
+      <div className="relative">
+        <LedgerChart chart={whole} texture="engraved" title={`Ledger chart of ${name} with its stays and voyages`} />
+        <svg viewBox={`0 0 ${whole.width} ${whole.height}`} className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true">
+          {frames.map((f) => { const b = box(f.chart); return (
+            <g key={f.key}>
+              <rect x={b.x} y={b.y} width={b.w} height={b.h} fill="none" stroke="#8B2525" strokeOpacity="0.7" strokeWidth="1.3" strokeDasharray="5 4" vectorEffect="non-scaling-stroke" />
+              <text x={b.x + 4} y={f.tag === "below" ? b.y + b.h + 19 : b.y - 7} fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="17" fontStyle="italic" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{f.label}</text>
+            </g>
+          ); })}
+        </svg>
+      </div>
+    ) });
+  return views;
+}
+
+function chainMap(slug: string, name: string, whole: ChartData, items: MapItem[], chains: (typeof CHAINS)[string]) {
+  const views = chainViews(slug, name, whole, items, chains);
+  const total = views[views.length - 1]?.items.length ?? 0;
+  return (
+    <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="guide-map-heading">
+      <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {total} on the chart</p>
+      <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-5">{name}, Chain by Chain</h2>
+      <ChainChartMap country={name} views={views} initial={views[0]?.key} />
+    </section>
+  );
+}
+
 // A country told as a guide (Indonesia) gets the same Ledger chart as a country page: every stay
 // with a position, and each voyage at its first port (James, 30 Oct 2026: pin all locations).
 function guideMap(slug: string, name: string) {
@@ -102,8 +196,10 @@ function guideMap(slug: string, name: string) {
   const pinned = items.filter((i) => i.x! >= 0 && i.y! >= 0 && i.x! <= chart.width && i.y! <= chart.height);
   if (!pinned.length) return null;
   const tally = (k: MapItem["category"]) => pinned.filter((i) => i.category === k).length;
+  const chains = CHAINS[slug];
+  if (chains) return chainMap(slug, name, chart, items, chains);
   return (
-    <section id="the-map" className="mt-12 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="guide-map-heading">
+    <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="guide-map-heading">
       <p className="ledger-eyebrow ledger-crimson">The Ledger in {name} · {pinned.length} on the chart</p>
       <h2 id="guide-map-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-6">{name}, Pinned</h2>
       <LedgerChartMap legend="below" country={name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${name} with its stays and voyages`} />} width={chart.width} height={chart.height} items={pinned} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />
@@ -115,7 +211,16 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const p = await params;
   const c = countryBySlug(p.region, p.country);
   const g = GUIDES[p.country];
-  if (!c && g && !g.parent && g.region === p.region) return <GuidePage g={g} map={guideMap(g.slug, g.name)} />;
+  // The country atlas (flag.ts atlasOn) sits directly under the Ledger chart.
+  if (!c && g && !g.parent && g.region === p.region) {
+    // The new country page (lib/content/country-layout.ts), Indonesia first; every other guide keeps its page.
+    if (countryLayoutOn(g.slug)) {
+      const regionName = regionBySlug(g.region)?.name ?? g.region;
+      const board = liveBoardOn(g.slug) ? liveBoard(comingOn(today()), { regionSlug: g.region, regionName, countrySlug: g.country }) : countryBoard(comingOn(today()), g.country);
+      return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} v2={{ atlas: <CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} />, board, boardLabel: `${g.name}: the live board`, notes: atlasNotes(g.slug), drafts: showDrafts() }} />;
+    }
+    return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} map={<>{guideMap(g.slug, g.name)}<CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /></>} />;
+  }
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;
@@ -133,9 +238,10 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const flyInto = hubs.length ? hubs.filter((h) => h.kind === "airport" && h.code).slice(0, 2).map((h) => h.code).join(" · ") || c.flyInto : c.flyInto;
   const featured = pages.slice(0, 9);
   const journeys = journeysFor(c.slug);
-  const items: MapItem[] = all.filter((s) => s.coords).map((s) => {
-    const q = projectOn(chart, s.coords!.lat, s.coords!.lng);
-    return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.category ?? "stay", href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
+  const items: MapItem[] = all.filter((s) => posOf(s)).map((s) => {
+    const p = posOf(s)!;
+    const q = projectOn(chart, p.lat, p.lng);
+    return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.coords ? s.category ?? "stay" : approxKind(s.slug, s.category ?? "stay"), href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
   });
   for (const r of RESERVES.filter((x) => x.stay.countrySlug === c.slug && x.stay.coords)) {
     const q = projectOn(chart, r.stay.coords!.lat, r.stay.coords!.lng);
@@ -151,8 +257,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays, coming: x.coming }));
   const answer = coming
-    ? `${c.name} is on the James Wild & Co map ahead of its stays: the house is vetting them now, and each will be filed under a permanent Ledger ID when it is approved.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${airports.length ? ` Fly into ${airports.map((a) => a[0]).join(" or ")}.` : ""} James plans ${c.name} now: the route, the season and the right coast for your dates.`
-    : `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${c.bestShort}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
+    ? `${c.name} is on the James Wild & Co map ahead of its stays: the house is vetting them now, and each will be filed under a permanent Ledger ID when it is approved.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${undash(c.bestShort)}.` : ""}${airports.length ? ` Fly into ${airports.map((a) => a[0]).join(" or ")}.` : ""} James plans ${c.name} now: the route, the season and the right coast for your dates.`
+    : `${c.name} has ${all.length} live ${all.length === 1 ? "stay" : "stays"} in the James Wild & Co Ledger, ${pages.length} with ${pages.length === 1 ? "its" : "their"} own page, each vetted in person or by a named partner and filed under a permanent Ledger ID.${c.months.length ? ` ${c.months.map((m) => `${m.area}: best ${monthsText(m.months)}`).join("; ")}.` : c.bestShort !== "Ask James" ? ` Best months: ${undash(c.bestShort)}.` : ""}${hubs.length ? ` Fly into ${hubs.filter((h) => h.kind === "airport").slice(0, 3).map(hubLabel).join(" or ")}.` : c.airports.length ? ` Fly into ${c.airports.map((a) => a[0]).join(" or ")}.` : ""}${journeys.length ? ` The house has drawn ${journeys.length} ${journeys.length === 1 ? "route" : "routes"} here.` : ""} Plan it with James or an advisor who knows the ground.`;
   const chapters: [string, string][] = coming ? [["The map", "the-map"], ["Stays", "stays"], ...(c.story.length ? [["The story", "story"] as [string, string]] : []), ["When to go", "when"], ["Plan", "plan"]] : [["The map", "the-map"], ...(c.compass ? [["Compass", "compass"] as [string, string]] : []), ...(live ? [["Live rates", "live-rates"] as [string, string]] : []), ["Choose your way", "choose"], ["When to go", "when"], ["Plan", "plan"]];
   return (
     <div className={c.region === "europe" ? "theme-vol-europe theme-vol-europe-page contents" : "contents"}>
@@ -167,18 +273,19 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <dl className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-4 max-w-3xl border-t border-white/30 pt-5">
                 <div><dt className="ledger-eyebrow !text-white/70">{coming ? "Stays" : "In the Ledger"}</dt><dd className="ledger-display text-2xl">{coming ? "Coming soon" : `${all.length} ${all.length === 1 ? "stay" : "stays"}`}</dd></div>
                 <div><dt className="ledger-eyebrow !text-white/70">Routes</dt><dd className="ledger-display text-2xl">{journeys.length || "Ask James"}</dd></div>
-                <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort}</dd></div>
+                <div><dt className="ledger-eyebrow !text-white/70">Best</dt><dd className="ledger-display text-2xl">{c.bestShort ? undash(c.bestShort) : c.bestShort}</dd></div>
                 <div><dt className="ledger-eyebrow !text-white/70">Fly into</dt><dd className="ledger-display text-2xl">{flyInto}</dd></div>
               </dl>
             </>
           );
           // No photograph on file (a destination card before its hero is chosen): an ink band, never a stand-in image.
           return slides.length
-            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">{heading}</div></HeroSlider>
+            ? <HeroSlider slides={slides} label={`${c.name} in photographs`}><div className="h-full w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[108px] lg:pt-[200px] pb-24 md:pb-28">{heading}</div></HeroSlider>
             : <section className="relative bg-ink text-white bg-[radial-gradient(90%_80%_at_100%_0%,rgba(34,101,110,0.55),transparent_62%)]" aria-label={c.name}><div className="max-w-ledger mx-auto px-5 md:px-10 pt-36 md:pt-52 pb-12 md:pb-16">{heading}</div></section>;
         })()}
+        <ComingTicker entries={countryBoard(comingOn(today()), c.slug)} label={`${c.name}: coming and on offer`} compact />
 
-        <nav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
+        <nav data-subnav aria-label={`${c.regionName} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6">
             <div className="flex-1 min-w-0 flex items-center gap-6 overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
             <Link href={`/destinations/${c.region}`} className="ledger-eyebrow ledger-crimson">{c.regionName}</Link>
@@ -203,14 +310,18 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
               {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
               {!coming && <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />}
+              {/* The three instruments, one line (James, 3 Nov 2026): Read the Compass · Open the Atlas · Ask Iggi */}
+              <InstrumentsStrip atlasHref="#the-map" className="mt-6" />
             </div>
             <div className="md:pt-8 space-y-8">
               {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}
               <p className="text-[16px] leading-relaxed ledger-muted">{c.leading}</p>
+              {/* The advisor's light touch, up top (2 Nov 2026); the full "Who plans it" block stays below. */}
+              <AdvisorChip where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
             </div>
           </Reveal>
 
-          <section id="the-map" className="pt-12 md:pt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
+          <section id="the-map" className="pt-12 md:pt-16" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">{coming ? `The chart of ${c.name} · stays being filed` : `The Ledger in ${c.name} · ${all.length} filed`}</p>
@@ -218,19 +329,25 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">{coming ? "The places the house plans around. Stays will be pinned here as each one is vetted and filed; until then, James plans the route with you." : "Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James."}</p>
             </div>
-            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
+            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : CHAINS[c.slug] ? <ChainChartMap country={c.name} views={chainViews(c.slug, c.name, chart, items, CHAINS[c.slug])} /> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
+            {c.slug === "philippines" && <p className="mt-4 text-[13.5px] ledger-muted italic max-w-3xl">Positions are approximate until each stay&rsquo;s pin is filed: stays whose brands publish no pin sit at their island or town. The red and white flags mark dive sites, one line each below.</p>}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
           </section>
+
+          {/* French Polynesia (Tahiti): lagoon atlas, island-hopping routes, Windstar and Pearl (2 Nov 2026). */}
+          {c.slug === "tahiti" && <FrenchPolynesia />}
 
           {/* Destination-first: the places inside this country (Chile → Atacama, Patagonia, Rapa Nui), as the region page's own door cards. */}
           {placeGuides(c.slug).length > 0 && (
             <Doors id="places" eyebrow={`Inside ${c.name}`} title={`Where to Go in ${c.name}`} doors={placeGuides(c.slug).map((g) => ({ name: g.name, href: g.path, image: guideSlides(g)[0]?.url ?? null, imageAlt: guideSlides(g)[0]?.alt, line: g.tagline, stays: (g.stays ?? []).length, bestMonths: g.facts.find(([k]) => k === "Best time")?.[1] }))} />
           )}
 
+          {c.slug === "philippines" && !coming && <PhilippinesSections />}
+
           {/* Destination card: one panel where the stays will be, inked as the Stays volume, the action in House Crimson */}
           {coming && (
-            <section id="stays" style={{ borderTopColor: volumeInk("stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-14 items-end" aria-labelledby="stays-heading">
+            <section id="stays" style={{ borderTopColor: volumeInk("stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-14 items-end" aria-labelledby="stays-heading">
               <div>
                 <p className="ledger-eyebrow" style={{ color: volumeInk("stays") }}>Stays in {c.name} · coming soon</p>
                 <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">The Stays Are Being Vetted. The Trip Can Start Now.</h2>
@@ -264,7 +381,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           )}
 
           {c.postcard && (
-            <section id="postcard" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
+            <section id="postcard" className="mt-16 md:mt-24 grid lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-14 items-center" aria-labelledby="postcard-heading">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">From the house, by return</p>
                 <h2 id="postcard-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">Every Enquiry Gets a Reply Worth Keeping</h2>
@@ -282,7 +399,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
           <AdvisorStrip place={c.name} countrySlug={c.slug} className="mt-16 md:mt-24" />
 
           {/* Every stay filed here, by name: the index under the tabs (and every stay page linked for search) */}
-          {!coming && <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+          {!coming && <section id="stays" style={{ borderTopColor: volumeInk(c.region === "europe" ? "europe" : "stays") }} className="mt-16 md:mt-24 border-t-2 pt-8 md:pt-10" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow" style={{ color: volumeInk(c.region === "europe" ? "europe" : "stays") }}>From the Ledger · {pages.length} stays with their own page</p>
             <h2 id="stays-heading" className="ledger-display text-[1.6rem] md:text-3xl mt-2">Every Stay Filed in {c.name}</h2>
             <ul className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2.5">{pages.map((s) => <li key={s.slug}><Link href={recordHref("stay", s.slug)} className="ledger-display text-[1.1rem] hover:ledger-crimson">{s.name}</Link>{s.ledgerId && <span className="ml-2 font-mono text-[11px] ledger-muted">{s.ledgerId}</span>}</li>)}</ul>
@@ -296,7 +413,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </Reveal>
           )}
 
-          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-[212px] space-y-16" aria-label={`${c.name}, the story`}>
+          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 space-y-16" aria-label={`${c.name}, the story`}>
             {c.story.map((st, i) => (
               <div key={st.title} className={st.image.src ? "grid md:grid-cols-2 gap-10 items-center" : "max-w-3xl"}>
                 <div className={i % 2 && st.image.src ? "md:order-2" : ""}>

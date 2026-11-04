@@ -51,7 +51,7 @@ export function GalleryMosaic({ images, title }: { images: Img[]; title: string 
   const [a, ...rest] = images;
   const tiles = rest.slice(0, 4);
   return (
-    <section id="gallery" className="mt-14 md:mt-16 scroll-mt-32 lg:scroll-mt-[212px]" aria-label={`Photographs of ${title}`}>
+    <section id="gallery" className="mt-14 md:mt-16" aria-label={`Photographs of ${title}`}>
       <div className="hidden md:grid grid-cols-4 grid-rows-2 gap-3 h-[460px]">
         <figure className="relative col-span-2 row-span-2 border ledger-border"><Image src={a.url} alt={a.alt} fill sizes="640px" className="object-cover" /></figure>
         {tiles.map((g, i) => (
@@ -75,7 +75,7 @@ export function LocationBlock({ chart, name, pin, others = [], heading, rows, no
   const p = projectOn(chart, pin.lat, pin.lng);
   const right = p.x > chart.width * 0.62;
   return (
-    <section id="location" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start" aria-labelledby="location-heading">
+    <section id="location" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 grid lg:grid-cols-[1.4fr_1fr] gap-8 items-start" aria-labelledby="location-heading">
       <div className="relative border ledger-rule overflow-hidden ledger-chart is-drawn">
         <LedgerChart chart={chart} title={`Where ${name} sits`} />
         <svg viewBox={`0 0 ${chart.width} ${chart.height}`} className="absolute inset-0 w-full h-full" aria-hidden="true">
@@ -107,7 +107,7 @@ export function RecordActionBar({ price, basis, cta = "Enquire", href = "/plan",
           {price ? <><span className="ledger-eyebrow block !text-[9.5px]">From</span><span className="ledger-display text-xl ledger-crimson">{price}</span> <span className="text-[11px] ledger-muted">{basis}</span></> : <span className="ledger-eyebrow">Quoted for your dates</span>}
         </div>
         <a href={`tel:${SITE.phone.tel}`} aria-label="Call the house" className="w-11 h-11 border ledger-border flex items-center justify-center"><Phone className="w-4 h-4" strokeWidth={1.5} /></a>
-        <Link href={href} className="ledger-btn ledger-btn--solid !h-11" style={house ? { background: "#8B2525", borderColor: "#8B2525" } : undefined}>{cta}</Link>
+        <Link href={href} className={`ledger-btn ledger-btn--solid !h-11${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </div>
   );

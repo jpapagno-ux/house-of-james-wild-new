@@ -1,5 +1,5 @@
 /*! jw-maps 1.0 · James Wild & Co. house map system · frames, chrome and markers */
-.jw-maps{--jw-sheet:#FBF8F1;--jw-ink:#1E2A30;--jw-mute:#5E6660;--jw-rule:#D8D0BF;--jw-sea:#EEF2EE;
+.jw-maps{--jw-sheet:#FFFFFF;--jw-ink:#1E2A30;--jw-mute:#5E6660;--jw-rule:#D8D0BF;--jw-sea:#E8F3EE;
   --jw-stays:#3E4A3A;--jw-voyages:#1F5673;--jw-overland:#8A6B3F;--jw-reef:#2AA9B8;
   --jw-display:"Cormorant Garamond",Georgia,"Times New Roman",serif;--jw-sc:"Cormorant SC","Cormorant Garamond",Georgia,serif;
   --jw-ui:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--jw-mono:"Courier Prime","Courier New",monospace}
@@ -46,22 +46,22 @@
 /* markers (MapLibre positions them absolutely) */
 .maplibregl-marker.jw-pin,.maplibregl-marker.jw-dep,.maplibregl-marker.jw-wp,.maplibregl-marker.jw-veh,.maplibregl-marker.jw-place,.maplibregl-marker.jw-ring{position:absolute}
 .jw-pin{width:14px;height:14px;cursor:pointer;--c:#8C7B5A}
-.jw-pin i{position:absolute;inset:0;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px #FBF8F1,0 0 0 3.2px var(--c)}
-.jw-pin i::after{content:"";position:absolute;inset:4.5px;border-radius:50%;background:#FBF8F1}
+.jw-pin i{position:absolute;inset:0;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px #FFFFFF,0 0 0 3.2px var(--c)}
+.jw-pin i::after{content:"";position:absolute;inset:4.5px;border-radius:50%;background:#FFFFFF}
 .jw-pin.know,.jw-pin.walked{--c:#3E4A3A}.jw-pin.keep{--c:#1E2A30}.jw-pin.who,.jw-pin.host{--c:#6F7A5E}.jw-pin.soon{--c:#8C7B5A}.jw-pin.dove{--c:#0E4A63}.jw-pin.sight{--c:#9C9282}
 .jw-pin.sight i{transform:scale(.7)}
-.jw-lb{position:absolute;left:19px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 12.5px/1 var(--jw-sc,Georgia,serif);letter-spacing:.05em;color:#1E2A30;text-shadow:0 0 3px #FBF8F1,0 0 3px #FBF8F1,0 0 2px #FBF8F1;pointer-events:none}
+.jw-lb{position:absolute;left:19px;top:50%;transform:translateY(-50%);white-space:nowrap;font:600 12.5px/1 var(--jw-sc,Georgia,serif);letter-spacing:.05em;color:#1E2A30;text-shadow:0 0 3px #FFFFFF,0 0 3px #FFFFFF,0 0 2px #FFFFFF;pointer-events:none}
 .jw-lb.up{top:-10px;transform:none}.jw-lb.left,.jw-dep .jw-lb.left{left:auto;right:19px}.jw-dep .jw-lb.left{right:25px}.jw-lb.small{font-size:11px;color:#5E6660}
-.jw-dep{width:20px;height:20px;background:#FBF8F1;border:1.5px solid #1F5673;color:#1F5673;display:grid;place-items:center}
+.jw-dep{width:20px;height:20px;background:#FFFFFF;border:1.5px solid #1F5673;color:#1F5673;display:grid;place-items:center}
 .jw-dep svg{width:13px;height:13px}.jw-dep .jw-lb{left:25px}
-.jw-wp{width:20px;height:20px;border-radius:50%;background:#FBF8F1;border:1.5px solid var(--acc,#1F5673);display:grid;place-items:center;font:700 10px var(--jw-mono,monospace);color:var(--acc,#1F5673)}
-.jw-wp.on{background:var(--acc,#1F5673);color:#FBF8F1}
+.jw-wp{width:20px;height:20px;border-radius:50%;background:#FFFFFF;border:1.5px solid var(--acc,#1F5673);display:grid;place-items:center;font:700 10px var(--jw-mono,monospace);color:var(--acc,#1F5673)}
+.jw-wp.on{background:var(--acc,#1F5673);color:#FFFFFF}
 .jw-wp .jw-lb{display:none;left:24px;font-size:12px}.jw-wp.show .jw-lb{display:block}
-.jw-place{font:600 11px/1 var(--jw-sc,Georgia,serif);letter-spacing:.22em;color:#5E6660;white-space:nowrap;text-shadow:0 0 3px #EEF2EE,0 0 3px #EEF2EE}
+.jw-place{font:600 11px/1 var(--jw-sc,Georgia,serif);letter-spacing:.22em;color:#5E6660;white-space:nowrap;text-shadow:0 0 3px #E8F3EE,0 0 3px #E8F3EE}
 .jw-place.big{font-size:15px;letter-spacing:.32em;color:#7d8378}
 .jw-veh{width:30px;height:30px;display:grid;place-items:center}
 .jw-veh svg{width:30px;height:30px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.25))}
-.jw-ring{font:italic 500 14px var(--jw-display,Georgia,serif);color:#3E4A3A;white-space:nowrap;text-shadow:0 0 3px #EEF2EE}
+.jw-ring{font:italic 500 14px var(--jw-display,Georgia,serif);color:#3E4A3A;white-space:nowrap;text-shadow:0 0 3px #E8F3EE}
 .maplibregl-ctrl-group{border-radius:0!important;box-shadow:none!important;border:1px solid #1E2A30}
 .maplibregl-ctrl-attrib{font-size:10px}
 .jw-itin{margin:0;padding-left:20px;display:grid;gap:4px}
@@ -125,3 +125,12 @@
 /* terrain key: the destination's palette as a band (page header, map frame) */
 .jw-terrain{display:flex;height:8px}.jw-terrain i{flex:1}
 @media (max-width:600px){.jw-compass{width:44px;right:8px;top:8px}.jw-compass svg{width:44px;height:44px}.jw-compass .hd{font-size:9px}.jw-steps{left:8px!important;top:8px!important;gap:4px}.jw-steps .jw-btn{padding:7px 7px;font-size:10px;letter-spacing:.06em}}
+
+/* The House Standard frame (map audit, 2 Nov 2026): every map frame is one 1px border (#DCD7D0) with two small
+   graphite ledger corner guards (top left, bottom right), on Paper. Replaces the teal dashed chart frame, the
+   survey ticks and the double-ruled atlas and estate frames. The fallback figure keeps its Stone Mist sea. */
+.jw-frame.chart,.jw-frame.survey,.jw-frame.atlas,.jw-frame.estate{padding:10px;border:1px solid #DCD7D0;outline:0;box-shadow:none;background:
+  linear-gradient(#2E2B28,#2E2B28) top left/16px 2px no-repeat,linear-gradient(#2E2B28,#2E2B28) top left/2px 16px no-repeat,
+  linear-gradient(#2E2B28,#2E2B28) bottom right/16px 2px no-repeat,linear-gradient(#2E2B28,#2E2B28) bottom right/2px 16px no-repeat,#FFFFFF}
+.jw-frame.chart .jw-map,.jw-frame.survey .jw-map,.jw-frame.atlas .jw-map{outline:1px solid #DCD7D0}
+@media (max-width:767px){.jw-frame.chart,.jw-frame.survey{padding:6px}}

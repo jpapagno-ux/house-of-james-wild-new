@@ -2,7 +2,6 @@ import Image from "next/image";
 import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
 import FounderProof from "@/components/record/FounderProof";
-import { ShortFilmPanel } from "@/components/media/ShortFilm";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -22,6 +21,8 @@ import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import ExpandAll from "./ExpandAll";
+import ExtensionChip from "./ExtensionChip";
+import { extension } from "@/lib/content/extensions";
 import { JourneyCard } from "@/components/destination/Journeys";
 import { journeysFor } from "@/lib/content/preview/journeys";
 import { isBuilt } from "@/lib/routes";
@@ -60,7 +61,7 @@ function Ph({ img, label, className = "", sizes = "(max-width: 768px) 100vw, 50v
 }
 
 function Sec({ id, children, className = "" }: { id: string; children: ReactNode; className?: string }) {
-  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px] ${className}`}>{children}</section>;
+  return <section id={id} className={`mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 ${className}`}>{children}</section>;
 }
 
 export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides = [], host, film }: { trip: Trip; mapHtml: string; images?: Record<string, TripImg>; hero?: TripImg; slides?: TripImg[]; host?: { key: string; name: string; kind: HostKind }; film?: ShortFilm }) {
@@ -77,7 +78,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // Where a voyage's waters sit for "compare the sailings": the place key journeysFor() files it under.
   const WATERS_PLACE: Record<string, { key: string; name: string; href: string }> = { "raja-ampat": { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, komodo: { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, antarctica: { key: "antarctica", name: "Antarctica", href: "/destinations/polar-antarctica" } };
   // The country crumb on an overland route goes to that country's destination page.
-  const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa" };
+  const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa", mexico: "/destinations/caribbean-mexico/mexico", guatemala: "/destinations/central-america/guatemala", belize: "/destinations/central-america/belize" };
   const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
   const h = host ? hostFor(host.key) : null;
   const hostOn = !!h && h.state !== "off";
@@ -87,7 +88,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
 
   const nav: [string, string][] = voyage
     ? [["The vessel", "vessel"], ["In short", "overview"], ...(T.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["The voyage", "route"], ["Dates & rates", "departures"], [T.founder.navLabel ?? "Sailed by James", "founder"], ["Who it suits", "suits"], ["Day by day", "days"], ["The fare", "included"], ["Experiences", "experiences"], ["Price", "price"], ...(hostOn ? [["Meet the crew", "host"] as [string, string]] : []), ["FAQ", "faq-heading"]]
-    : [["In short", "overview"], ["The route", "route"], ["Experiences", "experiences"], ["Who it suits", "suits"], ["Day by day", "days"], ["Included", "included"], ["The stays", "stays"], ["Price", "price"], ["The founder", "founder"], ["FAQ", "faq-heading"]];
+    : [["In short", "overview"], ["The route", "route"], ...(T.getThere ? [["Getting there", "getting-there"] as [string, string]] : []), ["Experiences", "experiences"], ["Who it suits", "suits"], ["Day by day", "days"], ["Included", "included"], ["The stays", "stays"], ["Price", "price"], ["The founder", "founder"], ["FAQ", "faq-heading"]];
 
   // "From" price: the lowest per-person option on file, with what it's based on.
   const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
@@ -154,13 +155,30 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   ) : null;
 
+  // How to get there (Central America routes, 2 Nov 2026): flights and helicopters first wherever a
+  // stay states them, then the legs between stays, each only as the property publishes it.
+  const GetThere = T.getThere ? (
+    <Sec id="getting-there">
+      <SectionHead eyebrow={T.getThere.eyebrow} title={T.getThere.title} icon="sun" intro={T.getThere.intro} />
+      <ol className="mt-8 grid gap-4 md:grid-cols-2">
+        {T.getThere.points.map(([h, b], i) => (
+          <li key={h} className="border ledger-border p-5 h-full">
+            <p className="font-mono text-[11px] tracking-[0.14em] ledger-crimson">{String(i + 1).padStart(2, "0")}</p>
+            <h3 className="ledger-display text-[20px] mt-1">{h}</h3>
+            <p className="mt-2 text-[15px] leading-relaxed ledger-muted">{b}</p>
+          </li>
+        ))}
+      </ol>
+    </Sec>
+  ) : null;
+
   const Overview = (
     <Sec id="overview">
       <SectionHead eyebrow="In short" title={T.overview_title} icon="sun" />
       <div className="mt-6 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-start">
         <div>
           <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}{T.bestFor && ` Best suited to ${T.bestFor.who.charAt(0).toLowerCase()}${T.bestFor.who.slice(1)}.`}</p>
-          <blockquote className="mt-6 border-l-2 border-crimson pl-5 ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.replace(/^"|"$/g, "")}&rdquo;<span className="block not-italic text-[14px] ledger-muted mt-2 font-serif">— James Wild</span></blockquote>
+          <blockquote className="mt-6 border-l-2 border-crimson pl-5 ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.replace(/^"|"$/g, "")}&rdquo;<span className="block not-italic text-[14px] ledger-muted mt-2 font-serif">James Wild</span></blockquote>
           {T.proof && <FounderProof proof={T.proof} className="mt-8" />}
         </div>
         <dl className="ledger-paper border ledger-border p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[14.5px]">
@@ -296,6 +314,11 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </li>
         ))}
       </ul>
+      {T.extensions?.length ? (
+        <div className="mt-10 flex flex-col items-start gap-3" aria-label="Extend the route">
+          {T.extensions.map((k) => extension(k)).filter((x) => !!x).map((x) => <ExtensionChip key={x!.stay} {...x!} />)}
+        </div>
+      ) : null}
       <OfferPanel offers={routeOffers} volume={voyage ? "voyages" : "stays"} title="Offers on this route" />
     </Sec>
   ) : null;
@@ -305,17 +328,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const Vessel = voyage && V ? (
     <Sec id="vessel">
       <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
-      {film ? (
-        // The vessel's own film beside the photographs: tall, silent, looping.
-        <div className="mt-8 grid md:grid-cols-[minmax(0,260px)_1fr] gap-2 md:h-[460px]">
-          <ShortFilmPanel film={film} className="w-full max-w-[420px] mx-auto md:max-w-none md:h-full md:w-auto" sizes="(max-width: 768px) 100vw, 260px" />
-          {V.gallery && V.gallery.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-rows-2 gap-2 md:h-full">
-              {V.gallery.slice(0, 4).map((g) => <Ph key={g.url} img={g} label={g.alt} className="aspect-[4/3] md:aspect-auto md:h-full" sizes="(max-width: 768px) 50vw, 30vw" />)}
-            </div>
-          )}
-        </div>
-      ) : V.gallery && V.gallery.length > 0 && (
+      {/* The vessel's own film plays in the hero (Aliikai voyages, James 3 Nov 2026), so the gallery is photographs only. */}
+      {V.gallery && V.gallery.length > 0 && (
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">
           {V.gallery.slice(0, 5).map((g, i) => <Ph key={g.url} img={g} label={g.alt} className={i === 0 ? "col-span-2 md:row-span-2 aspect-[4/3] md:aspect-auto md:h-full" : "aspect-[4/3] md:aspect-auto md:h-full"} sizes={i === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 50vw, 25vw"} />)}
         </div>
@@ -344,7 +358,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </div>
         )}
       </div>
-      {(V.cabins || V.cabinsNote) && <h3 id="cabins" className="ledger-display text-2xl mt-12 scroll-mt-32 lg:scroll-mt-[212px]">The cabins</h3>}
+      {(V.cabins || V.cabinsNote) && <h3 id="cabins" className="ledger-display text-2xl mt-12">The cabins</h3>}
       {(V.cabins || V.cabinsNote) && <p className="mt-1 text-[14px] ledger-muted"><Fx t={V.cabinsNote ?? "Seven cabins over three decks, every one en-suite with air conditioning. Rates are 2027 published, per person sharing, plus 11% tax."} /></p>}
       {V.cabins ? (
         <ul className="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -376,7 +390,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
-  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-[#F1E2B8] text-[#5E3F22]" : "bg-[#DCE8DF] text-[#25543B]";
+  const tone = (st: string) => /confirm|ask/i.test(st) ? "bg-ink/5 text-ink/70" : /full/i.test(st) ? "bg-ink/10 text-ink/60 line-through decoration-ink/30" : /left/i.test(st) ? "bg-graphite text-white" : "bg-mist text-graphite";
   const Departures = voyage && T.departures ? (
     <Sec id="departures">
       <SectionHead eyebrow={T.dates_head[0]} title={T.dates_head[1]} icon="sun" intro={T.dep_season} />
@@ -424,7 +438,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <a href="#enquire" className="ledger-btn ledger-btn--solid mt-6 inline-flex">Ask James for a price</a>
     </Sec>
   ) : (
-    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate != null ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="#enquire" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
+    <PriceBuilder kind={voyage ? "voyage" : "journey"} tripName={T.h1} taxRate={T.calc.taxRate} note={T.calc.taxRate != null ? `${T.calc.note} ${T.calc.soloNote ?? ""}` : undefined} maxTravellers={T.calc.maxG ?? 8} contactHref="/plan" defaultOption={`o${(T.calc as { opt0?: number }).opt0 ?? 0}`}
       options={T.calc.opts.map((o, i) => ({ id: `o${i}`, label: o.label, pp: o.pp, detail: [o.sub, o.sleeps].filter(Boolean).join(" · ") }))}
       addOns={T.calc.adds.map((a, i) => ({ id: `a${i}`, label: a.label, pp: a.pp, detail: a.sub.replace(/\s*\[[^\]]+\]/g, "") }))} />
   );
@@ -497,7 +511,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   );
 
   const Enquire = (
-    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14 scroll-mt-32 lg:scroll-mt-[212px]">
+    <section id="enquire" className="mt-16 md:mt-24 bg-ink text-paper px-6 py-10 md:p-14">
       <p className="ledger-eyebrow !text-paper/70">{voyage ? "Wild & Co Voyages" : "Plan this journey"}</p>
       <p className="ledger-display text-2xl md:text-3xl mt-2 max-w-2xl">{T.ctaline}</p>
       <div className="mt-6 flex flex-wrap gap-4 items-center">
@@ -518,7 +532,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           </dl>
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
           {T.photoCredit && <p className="mt-2 text-[12px] ledger-muted">{T.photoCredit}</p>}
-          <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> Vetted in person by James Wild · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>
+          <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> {T.vettedLine ?? "Vetted in person by James Wild"} · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>
         </div>
         <div className="lg:border-l ledger-rule lg:pl-8 flex flex-col gap-3 lg:min-w-[260px]">
           {onRequest ? <p><span className="ledger-eyebrow block">Price</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">On your dates</span><span className="block text-[12.5px] ledger-muted mt-1">Quoted against your dates, with current offers applied.</span></p> : <p><span className="ledger-eyebrow block">Starting at</span><span className="ledger-display ledger-crimson text-[2rem] leading-none">{usd(low.pp)}</span><span className="block text-[12.5px] ledger-muted mt-1">per person · {low.label.toLowerCase()}{low.sleeps ? `, ${low.sleeps.toLowerCase()}` : ""}{def && def !== low ? ` · ${def.label.toLowerCase()} ${usd(def.pp)}` : ""}</span>{T.calc.taxRate ? <span className="block text-[11.5px] ledger-muted italic">2027 published rate, plus {Math.round(T.calc.taxRate * 100)}% local tax and 7% Florida sales tax.</span> : T.calc.taxRate === 0 ? <span className="block text-[11.5px] ledger-muted italic">2027 rates, hotel taxes included, plus 7% Florida sales tax. Subject to lodge availability.</span> : <span className="block text-[11.5px] ledger-muted italic">Rate on file, plus 7% Florida sales tax; confirmed when you enquire.</span>}</p>}
@@ -530,7 +544,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
 
   const order = voyage
     ? [Vessel, Overview, FirstTime, Map, Departures, Founder, Suits, Days, Included, Experiences, Price, HostBlock]
-    : [Overview, FirstTime, Map, Experiences, Suits, Days, Included, Stays, Price, Founder];
+    : [Overview, FirstTime, Map, GetThere, Experiences, Suits, Days, Included, Stays, Price, Founder];
 
   // The founder's mark on the hero (James, 30 Oct 2026): the luggage tag is retired everywhere. Voyages
   // carry the nautical ship's-log stamp in the Voyages light ink; routes keep their own stamp. Both are
@@ -545,10 +559,10 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SiteHeader overlay />
       <main id="main">
         {slides.length ? (
-          <RecordHero image={slides[0]} slides={slides} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
+          <RecordHero image={slides[0]} slides={slides} film={film} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (
           <header className="relative min-h-[70svh] flex items-end text-paper" style={{ background: T.slides[0].bg }}>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" aria-hidden="true" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.10)]" aria-hidden="true" />
             {heroMark}
             <div className="relative max-w-ledger mx-auto w-full px-5 md:px-10 pb-10 md:pb-14 pt-40">
               <p className="ledger-eyebrow !text-paper/80">{T.slides[0].kicker}</p>
@@ -559,7 +573,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         )}
         {Summary}
         <RecordNav items={nav} cta={voyage ? "Ask about dates" : "Plan this journey"} ctaHref="#enquire" />
-        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16">
+        {/* The first section follows the breadcrumb closely, without its rule: the full section gap there read as an
+            empty band between the breadcrumb and The Vessel (hero arrows fix, 3 Nov 2026). */}
+        <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16 [&>div:first-child+section]:!mt-8 md:[&>div:first-child+section]:!mt-10 [&>div:first-child+section]:!border-t-0 [&>div:first-child+section]:!pt-0">
           <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>
           {order}
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />

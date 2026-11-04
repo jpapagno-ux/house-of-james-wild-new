@@ -9,6 +9,7 @@ import { HOME } from "@/lib/content/home";
 import { LEDGER_COUNTS } from "@/lib/ledger/counts";
 import { statusLine } from "@/lib/ledger/status";
 import { REGIONS, SITE } from "@/lib/site";
+import { romanForHref } from "@/lib/volumes";
 import { recordHref } from "@/lib/ledger/urls";
 import SafeLink, { GuardLink } from "@/components/ledger/SafeLink";
 
@@ -55,12 +56,13 @@ export function PlacesMarquee() {
   const places = REGIONS.flatMap((r) => r.countries.map((c) => c.label)).filter((p) => !p.includes("Cruises"));
   const row = [...places, ...places];
   return (
-    <div className="border-b ledger-rule py-5 overflow-hidden ledger-page" aria-hidden="true">
+    // The ticker band wears the one gradient, Ink to Garnet (The House Standard).
+    <div className="jw-gradient py-5 overflow-hidden" aria-hidden="true">
       <div className="ledger-marquee flex w-max gap-10 whitespace-nowrap">
         {row.map((p, i) => (
           <span key={i} className="flex items-center gap-10">
             <span className="ledger-display italic text-3xl md:text-4xl">{p}</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-crimson/60" />
+            <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
           </span>
         ))}
       </div>
@@ -118,7 +120,7 @@ export function HouseStory() {
 export function VolumeDoors() {
   const v = HOME.volumes;
   return (
-    <section id="volumes" className={`${SECTION} scroll-mt-28`} aria-labelledby="volumes-heading">
+    <section id="volumes" className={`${SECTION}`} aria-labelledby="volumes-heading">
       <p className="ledger-eyebrow">The house, in six volumes</p>
       <h2 id="volumes-heading" className={H2}>Choose Your Way In</h2>
       <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
@@ -133,12 +135,12 @@ export function VolumeDoors() {
                   <Image src={x.image.url} alt={x.image.alt} fill sizes="(min-width: 1280px) 220px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.04] transition-transform duration-700" />
                   {"stamp" in x && x.stamp && (
                     <StampPress delay={0.35 + i * 0.08} className="absolute top-2 right-2 w-20 h-20 rounded-full bg-paper/95 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
-                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1983" className="w-full h-full" />
+                      <OverlandStamp tested={false} bottom="OVERLAND · ROUTES BY" footer="SINCE 1982" className="w-full h-full" />
                     </StampPress>
                   )}
                 </div>
                 <div className="p-5 flex flex-col flex-1">
-                  <p className="ledger-eyebrow">Volume {String(i + 1).padStart(2, "0")}</p>
+                  <p className="ledger-eyebrow">Volume {romanForHref(x.path)}</p>
                   <h3 className="ledger-display text-2xl mt-1">{x.name}</h3>
                   <p className="text-[11px] uppercase tracking-[0.14em] ledger-crimson mt-1">{x.brand}</p>
                   <p className="mt-3 text-[15px] leading-relaxed ledger-muted flex-1">{x.line}</p>
@@ -327,7 +329,7 @@ export function FilmSection() {
   const f = HOME.film;
   const l = HOME.hero.loop;
   return (
-    <section id="film" className={`${SECTION} scroll-mt-28`} aria-labelledby="film-heading">
+    <section id="film" className={`${SECTION}`} aria-labelledby="film-heading">
       <div className="flex items-center gap-2">
         <Film className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
         <p className="ledger-eyebrow">{f.eyebrow}</p>
@@ -389,12 +391,12 @@ export function JamesNote() {
 export function Stewards() {
   const s = HOME.stewards;
   return (
-    <section className="relative mt-20 md:mt-28 -mb-20 h-[80vh] min-h-[520px] overflow-hidden bg-[#123332]" aria-labelledby="stewards-heading">
+    <section className="relative mt-20 md:mt-28 -mb-20 h-[80vh] min-h-[520px] overflow-hidden bg-ink-deep" aria-labelledby="stewards-heading">
       <Image src={s.image.url} alt={s.image.alt} fill sizes="100vw" quality={85} className="object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#123332]/90 via-[#123332]/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1A1816]/90 via-[#2E2B28]/50 to-transparent" />
       <div className="relative h-full max-w-ledger mx-auto px-5 md:px-10 flex items-center">
         <Reveal className="max-w-2xl text-white">
-          <p className="ledger-eyebrow !text-[#beece0]/85">{s.eyebrow}</p>
+          <p className="ledger-eyebrow !text-white/80">{s.eyebrow}</p>
           <h2 id="stewards-heading" className="ledger-display text-4xl md:text-6xl leading-[1.08] mt-5">{s.line}</h2>
           <p className="text-white/85 text-[17px] leading-relaxed mt-6 max-w-lg">{s.text}</p>
           <Link href={s.cta.href} className="mt-8 inline-flex items-center h-11 px-7 border border-white/80 ledger-eyebrow !text-[11px] !text-white hover:bg-white hover:!text-ink transition-colors">

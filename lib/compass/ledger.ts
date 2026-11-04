@@ -5,17 +5,17 @@ import type { PreviewRecord } from "@/components/pathways/CompassPreview";
 import { pathwayStays, pathwayVessels } from "@/lib/content/pathways";
 import { pathwayTrips } from "@/lib/content/pathways/trips";
 import { suitabilityFrom } from "@/lib/compass/pathway-adapter";
-import { verdictFor } from "@/lib/content/verdicts";
+import { stayVerdict } from "@/lib/content/verdicts";
 import { statusLine, type HouseStatus } from "@/lib/ledger/status";
 import { recordHref } from "@/lib/ledger/urls";
 
 export function compassLedger(): { stays: PreviewRecord[]; journeys: PreviewRecord[] } {
   const stays: PreviewRecord[] = pathwayStays().map((r) => {
-    const v = verdictFor(`stay:${r.slug}`);
+    const v = stayVerdict(r.slug, r.stay.status);
     const documented = r.impact.some((s) => !!s.source && (s.status === "verified" || s.status === "partner_reported"));
     return { slug: r.slug, ledgerId: r.ledgerId, primaryPathway: r.primaryPathway, secondaryPathways: r.secondaryPathways, volumes: r.volumes, setting: r.setting, intentions: r.intentions,
       suitability: suitabilityFrom(r.stay.bestFor, r.suitability), classificationStatus: r.classificationStatus, classifiedBy: "", impact: [], impactDocumented: documented, founderMark: r.stay.status ?? null, kind: "stay",
-      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate), href: recordHref("stay", r.slug) };
+      name: r.stay.name, country: r.stay.country, hero: r.stay.hero, bestMonths: r.stay.bestMonths, hasVerdict: !!v, verdictLine: v?.text[0] ?? null, statusLine: statusLine(r.stay.status as HouseStatus, r.stay.statusDate, r.slug), href: recordHref("stay", r.slug), coords: r.stay.coords ?? null };
   });
   const journeys: PreviewRecord[] = pathwayTrips().map((t) => ({
     slug: t.slug, ledgerId: t.ledgerId, primaryPathway: t.primaryPathway, secondaryPathways: t.secondaryPathways, volumes: t.volumes, setting: t.setting, intentions: [], suitability: [],
@@ -26,7 +26,7 @@ export function compassLedger(): { stays: PreviewRecord[]; journeys: PreviewReco
   const vessels: PreviewRecord[] = pathwayVessels().map((v) => ({
     slug: v.slug, ledgerId: v.ledgerId, primaryPathway: v.primaryPathway, secondaryPathways: v.secondaryPathways, volumes: v.volumes, setting: v.setting, intentions: [], suitability: suitabilityFrom(v.stay.bestFor, []),
     classificationStatus: v.status, classifiedBy: "", impact: [], impactDocumented: false, founderMark: v.stay.status ?? null, kind: "voyage",
-    name: v.name, country: v.country, hero: v.hero?.url ?? null, bestMonths: v.stay.bestMonths, hasVerdict: false, verdictLine: null, statusLine: statusLine(v.stay.status as HouseStatus, v.stay.statusDate), href: v.href,
+    name: v.name, country: v.country, hero: v.hero?.url ?? null, bestMonths: v.stay.bestMonths, hasVerdict: false, verdictLine: null, statusLine: statusLine(v.stay.status as HouseStatus, v.stay.statusDate), href: v.href, coords: v.stay.coords ?? null,
   }));
   return { stays, journeys: [...journeys, ...vessels] };
 }

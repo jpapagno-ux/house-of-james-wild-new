@@ -1,0 +1,206 @@
+{
+ "id": "galaxy-stella-yacht-baltra-to-baltra-wednesday-to-wednesday-eastern-and-southern-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary C+A: Eastern and Southern, 7 nights aboard Galaxy Stella",
+ "subtitle": "7 nights · Baltra to Baltra, Wednesday to Wednesday · Galaxy Stella",
+ "days": {
+  "1": "arrive Baltra airport, transfer to the yacht and North Seymour",
+  "2": "Santa Fe and South Plaza",
+  "3": "El Barranco and Darwin Bay",
+  "4": "Santa Cruz Highlands and Bachas Beach",
+  "5": "Kicker Rock and Lobos Island",
+  "6": "Suarez Point and Gardner Bay",
+  "7": "Cormorant Point and Post Office Bay",
+  "8": "Charles Darwin Station, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "North Seymour",
+   "lat": -0.3967,
+   "lng": -90.29,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Santa Fe",
+   "lat": -0.82,
+   "lng": -90.06,
+   "mode": "sea",
+   "path": [
+    [
+     -90.29,
+     -0.3967
+    ],
+    [
+     -90.1729,
+     -0.5429
+    ],
+    [
+     -90.06,
+     -0.82
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.06,
+     -0.82
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.332,
+     -0.5569
+    ],
+    [
+     -90.34,
+     -0.63
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.2185,
+     -0.6949
+    ],
+    [
+     -90.2134,
+     -0.6999
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 6,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -89.6363,
+     -0.9091
+    ],
+    [
+     -89.6396,
+     -0.9124
+    ],
+    [
+     -89.7653,
+     -1.3591
+    ],
+    [
+     -89.7653,
+     -1.3624
+    ],
+    [
+     -89.7587,
+     -1.369
+    ],
+    [
+     -89.7554,
+     -1.3723
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 7,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -90.4002,
+     -1.2286
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 8,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3134,
+     -0.7432
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

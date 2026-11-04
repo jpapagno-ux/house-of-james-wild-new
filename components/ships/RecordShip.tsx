@@ -19,6 +19,13 @@ import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
 import MonthDepartures from "./MonthDepartures";
 import ShipGlance from "./ShipGlance";
+import PublishedFares from "./PublishedFares";
+import { partnerForShip, partnerPath } from "@/lib/content/partners";
+import LengthFares from "./LengthFares";
+import CharterRates from "./CharterRates";
+import FounderProof from "@/components/record/FounderProof";
+import { shipEntrance } from "./ShipEntrance";
+import type { ExceptionalFew } from "@/lib/content/exceptional-few";
 
 // Every ship on the one shared template (voyages plan, 1 Nov 2026): Aliikai and the
 // A&K Sanctuary Nile fleet print the same sections, headings, nav and CTA. A ship with
@@ -26,7 +33,7 @@ import ShipGlance from "./ShipGlance";
 // through `extra`, which slots into the same frame. Every price is derived from the
 // published departures; every photograph is credited to its owner where one is filed.
 const kindLabel = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
-const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]";
+const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
 export type ShipExtra = {
   /** A vessel's own short film playing as the hero; the film slot below then steps aside. */
@@ -36,11 +43,13 @@ export type ShipExtra = {
   top?: ReactNode;
   lead?: ReactNode;
   body?: ReactNode;
+  /** Directly below the itinerary and its chart (the 3D terrain pilot). */
+  itineraryAfter?: ReactNode;
   after?: ReactNode;
   jsonld?: object[];
 };
 
-export default function RecordShip({ entry, sisters, extra = {} }: { entry: ShipEntry; sisters: ShipEntry[]; extra?: ShipExtra }) {
+export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { entry: ShipEntry; sisters: ShipEntry[]; extra?: ShipExtra; ef?: ExceptionalFew | null }) {
   const s = entry.data as ShipRecord;
   const w = waterFor(entry);
   const path = shipPath(s.slug);
@@ -58,6 +67,10 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
   const planFor = (what: string, date: string, full: boolean) => `/plan?trip=${encodeURIComponent(what)}&date=${encodeURIComponent(date)}${full ? "&waitlist=1" : ""}`;
   const t = (x: string) => undash(x);
   const map = shipMap(entry);
+  const partner = partnerForShip(s.slug);
+  // The fleet is the operator's when the brand line only restyles her own name ("Galaxy Alya", "Galapagos Horizon").
+  const fleetName = s.name.split(/\s+/).some((w) => w.length > 3 && s.brandLine.includes(w)) ? s.operator : s.brandLine.replace(/^an?\s+/i, "");
+  const published = (s.published?.length ?? 0) > 0;
   const glanceBasis = basis === "per-night" && price.kind === "cruise" ? "per person for the voyage, two sharing, plus tax" : price.basis;
 
   // Five stops (James, 2 Nov 2026): the overview and why-we-chose-her read as The Ship; cabins and
@@ -72,7 +85,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
       "@type": "TouristTrip",
       "@id": absoluteUrl(`${path}#${it.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`),
       name: `${it.name} aboard ${s.name}`,
-      description: t(`${it.nights} nights in ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`),
+      description: t(`${it.nights != null ? `${it.nights} nights` : "A voyage"} in ${s.waters}, ${it.direction}, aboard ${s.name}, ${s.brandLine}.`),
       touristType: s.suits.map((x) => x.who),
       itinerary: { "@type": "ItemList", itemListElement: it.days.map((d, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Place", name: d.place, geo: { "@type": "GeoCoordinates", latitude: d.lat, longitude: d.lng } } })) },
       // Season bands, never invented sailing dates: each fare is valid from the band's start to its end.
@@ -95,12 +108,42 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
   const oneFare = cruise.length > 0 && cruise.every((d) => Object.keys(d.prices).every((k) => !s.cabins.some((c) => k === c.type || k.startsWith(`${c.type} (`))));
   const cabinIntro = basis === "per-night"
     ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
-    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")} guests` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
+    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")}${/adults?$/.test(guests) ? "" : " guests"}` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : published ? `${s.operator} publishes one fare per route, not by cabin: see Dates & rates, and James confirms the fare for your cabin.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : (s.charterRates?.length || s.cabinFrom) ? `${s.operator} publishes a rate for the whole yacht${s.cabinFrom ? " and a from rate per cabin" : ""}, not by cabin type: see Dates & rates.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
   const datesIntro = basis === "per-night"
     ? "Every published sailing by month, with its length and the fare per person for the voyage."
+    : published && cruise.length ? `The departures ${s.operator}'s booking engine showed, with the fare ${s.fareBasis ?? "per person"}; below them, every fare it publishes by year and length.`
     : oneFare ? "Only the lowest published fare is shown below, per person, two sharing; James confirms the fare for your cabin and dates."
     : cruise.length ? (cruise.some((d) => d.dateTo) ? `Cruise fares by season as ${s.operator} publishes them, per person for each cabin type.` : "Every published departure by month, with the fare per person for each cabin type.")
       : `${s.operator} publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside ${s.operator} land and cruise journeys, listed below with their full-journey fares.`;
+
+  // Included, not included and the operator's published terms, for ships whose Dates & rates has no departure grid.
+  const inclTerms = (
+    <>
+      {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
+          {s.inclusions.length > 0 && <div><p className="ledger-eyebrow ledger-crimson">Included</p><ul className="mt-3 space-y-2">{s.inclusions.map((x) => <li key={x} className="flex gap-2 text-[15px]"><Check className="w-4 h-4 mt-0.5 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+          {(s.exclusions?.length ?? 0) > 0 && <div><p className="ledger-eyebrow">Not included</p><ul className="mt-3 space-y-2">{s.exclusions!.map((x) => <li key={x} className="flex gap-2 text-[15px] ledger-muted"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+        </div>
+      )}
+      {(s.terms?.length ?? 0) > 0 && (
+        <div className="mt-10 max-w-3xl">
+          <p className="ledger-eyebrow">Payment and cancellation, as {s.operator} publishes them</p>
+          <ul className="mt-3 space-y-2 text-[15px] leading-relaxed ledger-muted list-disc pl-5">{s.terms!.map((x) => <li key={x}>{t(x)}</li>)}</ul>
+        </div>
+      )}
+    </>
+  );
+  // Routes given as stops in the operator's order, with no length (Amandira): say so above the log.
+  const stopsOnly = s.itineraries.some((i) => i.days.length && i.nights == null);
+  const lengths = s.lengthFares ?? [];
+  // The Exceptional Few™ entrance, only for a vessel with a published designation and an approved hero.
+  const entrance = ef ? shipEntrance({
+    ef, name: s.name, path, planHref: plan, pathway: s.pathway, proof: s.proofLine ? t(s.proofLine).split(" · ")[0] : null,
+    line: t(`${kindLabel(s.type)} · ${s.waters}, ${s.country}`),
+    priceLine: price.kind === "cruise" ? `From ${price.amount} per person` : null,
+    closeFacts: [guests ? `${guests.replace(/^Up to/, "Up to")} guests` : null, nightsLabel(s), t(route)].filter(Boolean) as string[],
+    absolute: absoluteUrl,
+  }) : null;
 
   return (
     <ShipTemplate
@@ -119,19 +162,21 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
         cta: { label: "Plan with James", href: plan, house: true },
         // Each fact once: route, nights, guests and ages live in the glance bar, cabins in Cabins.
         overview: { quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
-        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read." },
-        film: extra.heroFilm ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
+        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read."}${stopsOnly ? ` ${s.operator} lists the stops of these routes in order but publishes no day numbers or length, so they are numbered as stops, a guide only.` : ""}`, routesNote: s.routesNote ? t(s.routesNote) : undefined, combinations: s.combinations },
+        film: extra.heroFilm || entrance ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
         faqTitle: `What Else Should You Know About ${s.name}?`,
         host: { key: `voyage:${s.slug}`, name: s.name },
         action: { price: price.kind === "cruise" ? price.amount : undefined, basis: basis === "per-night" ? "pp, voyage" : "pp, cruise", cta: "Plan with James", href: plan, house: true },
         crumbs,
         jsonld,
+        ef: entrance,
       }}
       lead={<>
+        {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}
         {extra.top}
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
-          status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {s.operator}{s.brandLine && s.brandLine !== s.operator ? `, ${s.brandLine}` : ""}</>}</p>} />
+          status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {partner ? <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">{s.operator}</Link> : s.operator}{s.brandLine && s.brandLine !== s.operator && s.brandLine !== s.name ? `, ${s.brandLine}` : ""}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</>}</p>} />
         {s.suits.length > 0 && (
           <ul id="suits" className={`mt-6 grid gap-4 md:grid-cols-2 ${s.suits.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`} aria-label={`Who ${s.name} suits`}>
             {s.suits.map((x) => (
@@ -143,7 +188,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
             ))}
           </ul>
         )}
-        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} />{credit && <p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}</p>}</>}
+        {s.gallery.length > 0 && <><GalleryMosaic images={s.gallery} title={s.name} />{credit && <p className="mt-2 text-[12px] ledger-muted">Photographs: {credit}{s.galleryNote ? `. ${t(s.galleryNote)}` : ""}</p>}</>}
         {extra.lead}
       </>}
       body={<>
@@ -172,10 +217,37 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
             )}
           </section>
         )}
-        {s.departures.length === 0 && !(s.monthly?.length) && (
+        {s.departures.length === 0 && !(s.monthly?.length) && published && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, and When Does She Sail?`} icon="sun" intro={`${s.operator} publishes ${s.name}'s fares by year and length; her dated departures sit in its live booking tool, so ask us for dates and James will confirm what is open.`} />
+            <PublishedFares s={s} planFor={(what) => planFor(`${what}, ${s.name}`, "", false)} />
+            {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
+              <div className="mt-10 grid md:grid-cols-2 gap-8">
+                {s.inclusions.length > 0 && <div><p className="ledger-eyebrow ledger-crimson">Included</p><ul className="mt-3 space-y-2">{s.inclusions.map((x) => <li key={x} className="flex gap-2 text-[15px]"><Check className="w-4 h-4 mt-0.5 shrink-0 ledger-crimson" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+                {(s.exclusions?.length ?? 0) > 0 && <div><p className="ledger-eyebrow">Not included</p><ul className="mt-3 space-y-2">{s.exclusions!.map((x) => <li key={x} className="flex gap-2 text-[15px] ledger-muted"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
+              </div>
+            )}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length > 0 && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, by Length of Cruise?`} icon="sun" intro={`${s.operator} publishes a fare for each cruise length and year, and no dated departures; James confirms the dates when you ask.`} />
+            <LengthFares ship={s.name} fares={lengths} planHref={plan} note={publicNote(s.pricesNote)} maxGuests={Number(factOf(s, /^guests$/i)) || undefined} />
+            {inclTerms}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && ((s.charterRates?.length ?? 0) > 0 || s.cabinFrom) && (
+          <section id="dates" className={SEC}>
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost to Charter?`} icon="sun" intro={`${s.operator} publishes ${s.name}'s whole-yacht rate${s.cabinFrom ? " and a from rate for single cabins" : ""}, not dated departures, so James confirms the dates you want.`} />
+            <CharterRates ship={s.name} rates={s.charterRates ?? []} basis={s.charterBasis} cabinFrom={s.cabinFrom} planHref={plan} note={publicNote(s.pricesNote)} />
+            {inclTerms}
+          </section>
+        )}
+        {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && !(s.charterRates?.length) && !s.cabinFrom && (
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
             <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />
+            {s.terms?.length ? inclTerms : null}
           </section>
         )}
         {s.departures.length > 0 && (
@@ -184,8 +256,9 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
             {s.fleetSchedule && <p className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">The {s.operator} fleet schedule</span>{t(s.fleetSchedule)}</p>}
             {cruise.length > 0 && <>
               {(journeys.length > 0 || s.fleetSchedule) && <h3 className="mt-8 ledger-display text-[22px] md:text-[24px]">{journeys.length ? "Cruise fares by season" : `${s.operator} departures, fleet wide`}</h3>}
-              <DatesGrid ship={s.name} data={datesData(s, planFor)} note={publicNote(s.pricesNote)} />
+              <DatesGrid ship={s.name} data={datesData(s, planFor)} note={published ? undefined : publicNote(s.pricesNote)} basis={s.fareBasis} />
             </>}
+            {published && <PublishedFares s={s} title="Every published fare, by year and length" planFor={(what) => planFor(`${what}, ${s.name}`, "", false)} />}
             <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} basis={basis} title={`Aboard ${s.name} inside ${s.operator} journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">
@@ -198,7 +271,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
         <OfferPanel offers={offers} volume="voyages" title="Offers aboard" />
         {sisters.length > 0 && (
           <section id="sisters" className={SEC}>
-            <SectionHead eyebrow={t(`${s.brandLine.replace(/^an?\s+/i, "")} fleet · ${s.waters}`)} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} />
+            <SectionHead eyebrow={t(`${fleetName} fleet · ${s.waters}`)} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} />
             <ul className="mt-7 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5 md:mx-0 md:px-0">
               {sisters.map((e) => {
                 const x = e.data as ShipRecord;
@@ -210,7 +283,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
                       <div className="p-4">
                         <p className="ledger-eyebrow ledger-crimson">{kindLabel(x.type)} · {nightsLabel(x)}</p>
                         <h3 className="ledger-display text-lg mt-1 leading-snug">{x.name}</h3>
-                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "dates and fares: ask us" : "rates on request"}</p>
+                        <p className="mt-1.5 text-[14px] ledger-muted leading-snug">{factOf(x, /guest/i) ? `${factOf(x, /guest/i)} guests` : t(x.tagline)} · {f.kind === "cruise" ? `sister ship from ${f.amount}` : f.kind === "charter" ? `chartered whole from ${f.amount} a night` : f.kind === "journey" ? `${x.operator} journeys from ${f.amount}` : f.kind === "tba" ? "dates and fares: ask us" : "rates on request"}</p>
                       </div>
                     </Link>
                   </li>
@@ -221,6 +294,7 @@ export default function RecordShip({ entry, sisters, extra = {} }: { entry: Ship
           </section>
         )}
       </>}
+      itineraryAfter={extra.itineraryAfter}
       after={extra.after}
     />
   );

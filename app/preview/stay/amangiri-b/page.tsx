@@ -61,7 +61,7 @@ export default function AmangiriMockB() {
             <div><EFSignals ef={ef} compact id="glance" /></div>
           </OpenRow>
         </div>
-        <div id="place" className="mt-16 md:mt-24 scroll-mt-32">
+        <div id="place" className="mt-16 md:mt-24">
           {(aerial ?? place) && <PanFrame src={mediaUrl((aerial ?? place)!, { width: 2560 })} alt={(aerial ?? place)!.alt} name={NAME} coords={COORDS} line="Canyon Point, in the far south of Utah, a few miles from the Arizona line. The nearest town is Page; the nearest water is Lake Powell." credit={(aerial ?? place)!.credit} />}
         </div>
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -71,7 +71,7 @@ export default function AmangiriMockB() {
           <ImageAccordion id="experiences" eyebrow="What you'll do" title="What the Place Allows" icon="mountain-sun" items={d.days} start={0} />
           <WhoItSuits name={NAME} bestFor={ef.whoItSuits} lessIdealFor={ef.whoItMayNotSuit} />
           {night && ef.worthAnotherNight && <NightClose a={night} name={NAME} copy={ef.worthAnotherNight} />}
-          <div id="questions" className="scroll-mt-32"><FaqBlock faqs={d.faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
+          <div id="questions" className=""><FaqBlock faqs={d.faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
           <ContinueTheJourney pathways={pw ? [pw.primary, ...pw.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={[]} compassHref="/compass" hostHref={null} />
           <TalkToUs name={NAME} planHref={d.planHref} />
           <PlanBand place={NAME} compassHref="/compass" where={{ regionSlug: "usa-canada", volume: "stays" }} />

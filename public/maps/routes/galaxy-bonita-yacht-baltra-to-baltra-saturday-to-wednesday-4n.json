@@ -1,0 +1,151 @@
+{
+ "id": "galaxy-bonita-yacht-baltra-to-baltra-saturday-to-wednesday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary B: Southern Route, 4 nights aboard Galaxy Bonita",
+ "subtitle": "4 nights · Baltra to Baltra, Saturday to Wednesday · Galaxy Bonita",
+ "days": {
+  "1": "arrive Baltra airport, transfer to the yacht and Santa Cruz Highlands",
+  "2": "Cormorant Point and Devil's Crown and Post Office Bay",
+  "3": "Suarez Point and Gardner Bay and Osborn Islet",
+  "4": "Interpretation Center and Kicker Rock and Lobos Island",
+  "5": "Bachas Beach, Santa Cruz, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.63,
+   "lng": -90.34,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Floreana",
+   "lat": -1.24,
+   "lng": -90.43,
+   "mode": "sea",
+   "path": [
+    [
+     -90.34,
+     -0.63
+    ],
+    [
+     -90.3158,
+     -0.7777
+    ],
+    [
+     -90.43,
+     -1.24
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Espanola",
+   "lat": -1.383,
+   "lng": -89.733,
+   "mode": "sea",
+   "path": [
+    [
+     -90.43,
+     -1.24
+    ],
+    [
+     -90.3906,
+     -1.2286
+    ],
+    [
+     -89.733,
+     -1.383
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "San Cristobal",
+   "lat": -0.9017,
+   "lng": -89.6103,
+   "mode": "sea",
+   "path": [
+    [
+     -89.733,
+     -1.383
+    ],
+    [
+     -89.7554,
+     -1.3723
+    ],
+    [
+     -89.762,
+     -1.3657
+    ],
+    [
+     -89.7653,
+     -1.3624
+    ],
+    [
+     -89.7256,
+     -1.1738
+    ],
+    [
+     -89.6396,
+     -0.9124
+    ],
+    [
+     -89.6363,
+     -0.9091
+    ],
+    [
+     -89.6103,
+     -0.9017
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "mode": "sea",
+   "path": [
+    [
+     -89.6103,
+     -0.9017
+    ],
+    [
+     -90.2497,
+     -0.48
+    ],
+    [
+     -90.2646,
+     -0.4751
+    ],
+    [
+     -90.319,
+     -0.485
+    ],
+    [
+     -90.33,
+     -0.49
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

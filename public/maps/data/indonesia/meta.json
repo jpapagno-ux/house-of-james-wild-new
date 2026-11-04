@@ -1,0 +1,11 @@
+{
+ "slug": "indonesia",
+ "name": "Indonesia",
+ "bbox": [
+  102.5,
+  -11.5,
+  135.5,
+  4.5
+ ],
+ "attribution": "Land: Natural Earth (house chart data, lib/charts/regions.json)"
+}

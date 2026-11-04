@@ -1,0 +1,106 @@
+/* The 3D terrain pilot (preview only): the frame, the day chip, the squared graphite controls and the attribution in
+   house type. House tones only (lib/palette.ts); the route colour arrives as --jw-relief-route from lib/volumes.ts. */
+.jw-relief__frame { position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: calc(100svh - var(--jw-header-h, 80px) - 48px); min-height: 320px; border: 1px solid #DCD7D0; background: #F4F2EF; overflow: hidden; }
+@media (max-width: 639px) { .jw-relief__frame { aspect-ratio: 4 / 5; } }
+.jw-relief__map { position: absolute; inset: 0; }
+.jw-relief__wait { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #6B635A; }
+
+/* The day chip: squared graphite, top left. */
+.jw-relief__day { position: absolute; z-index: 2; top: 12px; left: 12px; display: flex; align-items: stretch; max-width: calc(100% - 72px); pointer-events: none; }
+.jw-relief__day-n { background: #2E2B28; color: #FFFFFF; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; padding: 7px 10px; border-radius: 2px 0 0 2px; white-space: nowrap; }
+.jw-relief__day-name { background: #FFFFFF; color: #2E2B28; border: 1px solid #2E2B28; border-left: 0; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 13px; font-weight: 600; padding: 5px 10px; border-radius: 0 2px 2px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jw-relief__day--solo .jw-relief__day-name { border-left: 1px solid #2E2B28; border-radius: 2px; }
+
+/* Controls under the frame: squared graphite, never pills. */
+.jw-relief__bar { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.jw-relief__bar-end { margin-left: auto; display: flex; gap: 0; }
+.jw-relief__btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid #CFC8BF; border-radius: 2px; background: #FFFFFF; color: #2E2B28; font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; }
+.jw-relief__btn:hover { border-color: #2E2B28; }
+.jw-relief__btn:focus-visible { outline: 2px solid #2E2B28; outline-offset: 2px; }
+.jw-relief__btn--main { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+.jw-relief__btn--main:hover { background: #1A1816; }
+.jw-relief__btn[aria-pressed="true"] { background: #2E2B28; border-color: #2E2B28; color: #FFFFFF; }
+.jw-relief__btn:disabled { opacity: 0.45; cursor: default; }
+.jw-relief__bar-end .jw-relief__btn + .jw-relief__btn { border-left: 0; }
+.jw-relief__tabs { margin-bottom: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.jw-relief__note { margin-top: 10px; font-size: 12.5px; color: #6B635A; }
+
+/* MapLibre's own controls in house dress: squared, graphite, small. */
+.jw-relief .maplibregl-ctrl-group, .jw-relief .maplibregl-ctrl-group:not(:empty) { border-radius: 2px; box-shadow: none; border: 1px solid #CFC8BF; background: #FFFFFF; }
+.jw-relief .maplibregl-ctrl-group button { width: 36px; height: 36px; }
+.jw-relief .maplibregl-ctrl-group button + button { border-top: 1px solid #DCD7D0; }
+.jw-relief .maplibregl-ctrl-attrib { background: rgba(255, 255, 255, 0.82); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 10px; line-height: 1.5; color: #6B635A; padding: 1px 6px; border-radius: 2px 0 0 0; }
+.jw-relief .maplibregl-ctrl-attrib a { color: #2E2B28; }
+.jw-relief .maplibregl-ctrl-attrib.maplibregl-compact { border-radius: 2px; }
+.jw-relief .maplibregl-cooperative-gesture-screen { background: rgba(26, 24, 22, 0.55); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 15px; color: #FFFFFF; }
+.jw-relief__vehicle{width:22px;height:22px;pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(26,24,22,.35))}.jw-relief__vehicle svg{display:block}
+
+/* No white under the tiles (3 Nov 2026): the map container shows Stone Mist in Chart and the satellite earth tone
+   (style.ts SATELLITE.ground) in Satellite, so nothing loading flashes Paper. */
+.jw-relief__map { background: #F4F2EF; }
+.jw-relief__map[data-view="satellite"] { background: #4B5042; }
+.jw-relief__map .maplibregl-canvas { background: transparent; }
+/* The country atlas (preview): layer chips, the pin card, the volcano strip and the phone poster. Squared, house tones. */
+.jw-atlas__chip { gap: 8px; }
+.jw-atlas__n { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-weight: 400; letter-spacing: 0.06em; opacity: 0.75; }
+.jw-atlas__key { display: inline-block; width: 10px; height: 10px; border: 2px solid currentColor; flex: none; }
+.jw-atlas__key--pins { border-radius: 50%; background: var(--vol-stays-ink, #FFFFFF); }
+.jw-atlas__key--parks { background: #F4F2EF; }
+.jw-atlas__key--dives { border: 1px solid #FFFFFF; background: linear-gradient(45deg, transparent 38%, #FFFFFF 38%, #FFFFFF 62%, transparent 62%) , #8B2525; }
+.jw-atlas__key--volcanoes { border: 0; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 11px solid currentColor; }
+.jw-atlas__card { position: absolute; z-index: 3; top: 12px; left: 12px; width: min(300px, calc(100% - 72px)); max-height: calc(100% - 24px); overflow: auto; background: #FFFFFF; border: 1px solid #2E2B28; border-radius: 2px; padding: 12px 12px 10px; box-shadow: 0 6px 18px rgba(26, 24, 22, 0.16); }
+.jw-atlas__close { position: absolute; top: 2px; right: 4px; width: 32px; height: 32px; border: 0; background: transparent; color: #2E2B28; font-size: 20px; line-height: 1; cursor: pointer; }
+.jw-atlas__close:focus-visible { outline: 2px solid #2E2B28; }
+.jw-atlas__rows { display: grid; gap: 12px; }
+.jw-atlas__from { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #6B635A; padding-right: 28px; }
+.jw-atlas__row { display: grid; grid-template-columns: 76px 1fr; gap: 10px; align-items: start; }
+.jw-atlas__row:not(:has(img)) { grid-template-columns: 1fr; }
+.jw-atlas__img { width: 76px; height: 58px; object-fit: cover; display: block; background: #F4F2EF; }
+.jw-atlas__txt { min-width: 0; padding-right: 22px; }
+.jw-atlas__eyebrow { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: #6B635A; }
+.jw-atlas__name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; line-height: 1.15; color: #1A1816; }
+.jw-atlas__sub { margin-top: 2px; font-size: 12.5px; line-height: 1.4; color: #6B635A; }
+.jw-atlas__mark { margin-top: 4px; font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #8B2525; }
+.jw-atlas__link { display: inline-block; margin-top: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #2E2B28; border-bottom: 1px solid #2E2B28; }
+.jw-atlas__link:hover { border-color: #8B2525; }
+.jw-atlas__strip { position: absolute; z-index: 2; left: 12px; bottom: 34px; max-width: calc(100% - 24px); background: rgba(255, 255, 255, 0.94); border: 1px solid #CFC8BF; border-radius: 2px; padding: 7px 10px; font-size: 12.5px; color: #2E2B28; }
+.jw-atlas__strip a { text-decoration: underline; text-underline-offset: 3px; }
+.jw-atlas__poster { position: relative; border: 1px solid #DCD7D0; background: #F4F2EF; }
+.jw-atlas__tap { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); }
+.jw-atlas__wait { position: absolute; inset: auto 0 10px 0; }
+
+/* The atlas list as an accordion (James, 3 Nov 2026): real <details>, folded by default, every word in the served HTML.
+   House Standard: squared, #DCD7D0 hairlines, a crimson chevron. */
+.jw-atlas__index { border-top: 1px solid #DCD7D0; }
+.jw-atlas__acc { border-bottom: 1px solid #DCD7D0; }
+.jw-atlas__acc > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 12px 2px; }
+.jw-atlas__acc > summary::-webkit-details-marker { display: none; }
+.jw-atlas__acc > summary::after { content: ""; margin-left: auto; width: 9px; height: 9px; border-right: 1.5px solid #8B2525; border-bottom: 1.5px solid #8B2525; transform: rotate(45deg) translateY(-3px); transition: transform .2s ease; }
+.jw-atlas__acc[open] > summary::after { transform: rotate(-135deg) translateY(-1px); }
+.jw-atlas__acc > summary:focus-visible { outline: 2px solid #2E2B28; outline-offset: 2px; }
+.jw-atlas__acc-n { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; color: #6B635A; }
+.jw-atlas__acc-body { padding: 4px 2px 20px; }
+.jw-atlas__acc-body ul { display: grid; gap: 12px 32px; }
+@media (min-width: 768px) { .jw-atlas__acc-body ul { grid-template-columns: 1fr 1fr; } }
+.jw-atlas__acc-group + .jw-atlas__acc-group { margin-top: 16px; }
+.jw-atlas__acc-group ul { margin-top: 6px; }
+.jw-atlas__acc-row { display: flex; gap: 10px; align-items: flex-start; font-size: 13.5px; }
+.jw-atlas__acc-row > svg, .jw-atlas__acc-row > .jw-atlas__key { margin-top: 4px; }
+.jw-atlas__acc-pin { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #FFFFFF; box-shadow: 0 0 0 1px #CFC8BF; margin-top: 6px; flex: none; }
+.jw-atlas__acc-note { display: block; margin-top: 4px; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 15px; color: #2E2B28; }
+.jw-atlas__acc-note em { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-style: normal; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6B635A; margin-left: 4px; }
+.jw-atlas__note { margin: 8px 0 4px; padding-left: 10px; border-left: 2px solid #8B2525; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 15px; line-height: 1.3; }
+.jw-atlas__note footer { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-style: normal; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6B635A; margin-top: 2px; }
+.jw-atlas__ask { margin-top: 6px; font-size: 12.5px; }
+.jw-atlas__ask a { text-decoration: underline; text-underline-offset: 4px; }
+.jw-atlas__plan { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 14px 0; border-top: 1px solid #DCD7D0; border-bottom: 1px solid #DCD7D0; }
+.jw-atlas__plan ul { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.jw-atlas__plan li { display: flex; align-items: center; gap: 10px; }
+
+/* No jump when the 3D map replaces the poster on a wide screen (it loads by itself as the section nears): the poster
+   holds the map's own height, the 16:9 frame (capped like .jw-relief__frame) plus 112px of layer chips and controls,
+   so an anchor jump past the atlas lands where it aimed. Phones swap only on a tap. */
+.jw-atlas__shell { container-type: inline-size; }
+@media (min-width: 640px) {
+  .jw-atlas__shell .jw-atlas__poster { min-height: calc(clamp(320px, 56.25cqw, calc(100svh - var(--jw-header-h, 80px) - 48px)) + 112px); display: flex; flex-direction: column; justify-content: center; }
+}

@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { HOUSE_LOOP } from "@/lib/content/home";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { Stamp } from "@/components/ledger/Marks";
@@ -9,8 +10,9 @@ import { recordHref } from "@/lib/ledger/urls";
 import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /gatherings: Volume 03 hub shell. Family residences for the generations
+// /gatherings: Volume III hub shell. Family residences for the generations
 // who travel together.
 const PATH = "/gatherings";
 const V = VOLUMES.find((v) => v.href === PATH)!;
@@ -20,8 +22,8 @@ export default function GatheringsHub() {
   const leeu = HOME.shelf.entries.find((s) => s.slug === "leeu-house")!;
   return (
     <>
-      <SiteHeader />
-      <HubShell name="Gatherings" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Houses big enough for everyone who matters.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 03 · Gatherings" title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
+      <SiteHeader overlay />
+      <HubShell name="Gatherings" entrance={<VolumeEntrance e={ENTRANCES.gatherings} />} path={PATH} eyebrow={volumeEyebrow("gatherings")} title="Houses Big Enough for the Whole Family" intro={V.intro} browse={V.browse}
         answer="Gatherings is James Wild & Co's volume of family residences: private houses, estates and resort residences where several generations or a celebration can stay under one roof, with the adventures around them planned in. Each residence is filed in the Ledger with its own ID and notes on who it suits."
         filling="Residence pages, room by room with how each house sleeps a family, fill from the Ledger export.">
         <HubSection eyebrow="From the Ledger" title="A First Residence" id="res-h">

@@ -89,3 +89,25 @@ test("MORE offers: StayMORE, CelebrateMORE, Friends of MORE and the Villa exclus
   const v = estimate(villa, 4, { adults: 4, children: [] }); assert.ok(v.ok);
   if (v.ok) assert.equal(applyOffers(villa, v, { adults: 4, children: [] }, o, { celebrating: false, returning: false }).savings.length, 0);
 });
+
+import { offersByRoom, splitByAvailability } from "../lib/rates.ts";
+test("availability: only rooms the engine prices are open; cheapest first; extras kept", () => {
+  const plans = [
+    { plan: "Non Refundable", rooms: [{ name: "Terroir Cottage", total: 7000, display: "" }, { name: "Studio Room", total: 4500, display: "" }] },
+    { plan: "Best Available Rate", rooms: [{ name: "Studio Room", total: 5600, display: "" }, { name: "The Wine Suite", total: 9000, display: "" }] },
+  ];
+  const offers = offersByRoom(plans);
+  assert.deepEqual(offers.map((o) => [o.name, o.from, o.options.length]), [["Studio Room", 4500, 2], ["Terroir Cottage", 7000, 1], ["The Wine Suite", 9000, 1]]);
+  const page = [{ name: "Classic Room" }, { name: "Terroir Cottage" }, { name: "Studio Room" }, { name: "Protea House" }];
+  const s = splitByAvailability(page, plans);
+  assert.deepEqual(s.open.map((x) => x.room.name), ["Studio Room", "Terroir Cottage"]);
+  assert.deepEqual(s.closed.map((x) => x.name), ["Classic Room", "Protea House"]);
+  assert.deepEqual(s.extra.map((x) => x.name), ["The Wine Suite"]);
+});
+test("availability: engine names with a property prefix still match; nothing open when the engine is empty", () => {
+  const plans = [{ plan: "Flexible", rooms: [{ name: "Kayumanis Ubud One Bedroom Private Pool Villa", total: 1600, display: "" }] }];
+  const s = splitByAvailability([{ name: "One Bedroom Private Pool Villa" }, { name: "Three Bedroom Owner's Pool" }], plans);
+  assert.deepEqual(s.open.map((x) => x.room.name), ["One Bedroom Private Pool Villa"]);
+  assert.equal(s.extra.length, 0);
+  assert.equal(splitByAvailability([{ name: "A room" }], []).open.length, 0);
+});

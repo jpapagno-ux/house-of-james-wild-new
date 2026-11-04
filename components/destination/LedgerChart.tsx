@@ -35,13 +35,13 @@ export function UnescoMark({ x = 0, y = 0, r = 9 }: { x?: number; y?: number; r?
   const k = r / 9;
   return (
     <g transform={`translate(${x} ${y}) scale(${k})`} aria-hidden="true">
-      <circle r="9" fill="#F4F1ED" stroke="#2D2A26" strokeWidth="1.2" />
+      <circle r="9" fill="#FFFFFF" stroke="#2D2A26" strokeWidth="1.2" />
       <path d="M-5 -1.5 L0 -5 L5 -1.5 Z M-4 -0.5 V3.5 M-1.3 -0.5 V3.5 M1.3 -0.5 V3.5 M4 -0.5 V3.5 M-5.2 4.5 H5.2" fill="none" stroke="#2D2A26" strokeWidth="1.1" strokeLinejoin="round" />
     </g>
   );
 }
 
-function Overlays({ o }: { o: ChartOverlays }) {
+function Overlays({ o, fs = 1 }: { o: ChartOverlays; /** Label scale (the island-chain charts read larger). */ fs?: number }) {
   return (
     <g>
       {o.reserves.map((r) => <path key={r.name} d={r.d} className="chart-fade" fill="rgba(45,42,38,0.05)" stroke="rgba(45,42,38,0.55)" strokeWidth="1.2" strokeDasharray="5 4" vectorEffect="non-scaling-stroke" />)}
@@ -50,14 +50,16 @@ function Overlays({ o }: { o: ChartOverlays }) {
       <g className="chart-fade" fontFamily="'Cormorant Garamond', Georgia, serif" textAnchor="middle">
         {o.countries.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="15" letterSpacing="7" fill="rgba(45,42,38,0.45)">{l.text}</text>)}
         {o.salt.map((r) => <text key={r.name} x={r.x} y={r.y + 5} fontSize="15" fontStyle="italic" fill="rgba(45,42,38,0.8)" stroke="#FBFAF7" strokeWidth="3" paintOrder="stroke">{r.name}</text>)}
-        {o.reserves.map((r) => <text key={r.name} x={r.x} y={r.y + 4} fontSize="13" fontStyle="italic" fill="rgba(45,42,38,0.7)" stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{r.name}</text>)}
+        {o.reserves.map((r) => <text key={r.name} x={r.x} y={r.y + 4} fontSize="13" fontStyle="italic" fill="rgba(45,42,38,0.7)" stroke="#FFFFFF" strokeWidth="3" paintOrder="stroke">{r.name}</text>)}
         {o.marks.map((m) => (
           <g key={m.text}>
             {m.kind === "town" && <circle cx={m.x} cy={m.y} r="3.2" fill="#2D2A26" />}
             {m.kind === "peak" && <path d={`M${m.x - 5} ${m.y + 4} L${m.x} ${m.y - 5} L${m.x + 5} ${m.y + 4} Z`} fill="none" stroke="#2D2A26" strokeWidth="1.1" />}
-            {m.kind !== "airport" && m.kind !== "town" && m.kind !== "peak" && <circle cx={m.x} cy={m.y} r="2.4" fill="none" stroke="#2D2A26" strokeWidth="1" />}
-            <text x={m.x + (m.kind === "airport" ? 0 : 8)} y={m.y + (m.kind === "airport" ? 16 : m.kind === "peak" ? -7 : 4)} textAnchor={m.kind === "airport" ? "middle" : "start"} fontSize="12.5"
-              fontStyle={m.kind === "water" ? "italic" : "normal"} fill={m.kind === "water" ? "rgba(34,101,110,0.9)" : "rgba(45,42,38,0.85)"} stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{m.text}</text>
+            {/* Dive flag (the Philippines, 2 Nov 2026): the red flag with a white diagonal, in House Crimson. */}
+            {m.kind === "dive" && <g aria-hidden="true"><rect x={m.x - 5} y={m.y - 4} width="10" height="8" fill="#8B2525" stroke="#FFFFFF" strokeWidth="0.8" /><path d={`M${m.x - 5} ${m.y - 4} L${m.x + 5} ${m.y + 4}`} stroke="#FFFFFF" strokeWidth="1.8" /></g>}
+            {m.kind !== "airport" && m.kind !== "town" && m.kind !== "peak" && m.kind !== "dive" && <circle cx={m.x} cy={m.y} r="2.4" fill="none" stroke="#2D2A26" strokeWidth="1" />}
+            <text x={m.x + (m.kind === "airport" ? 0 : 8)} y={m.y + (m.kind === "airport" ? 16 * fs : m.kind === "peak" ? -7 : 4)} textAnchor={m.kind === "airport" ? "middle" : "start"} fontSize={12.5 * fs}
+              fontStyle={m.kind === "water" ? "italic" : "normal"} fill={m.kind === "water" ? "rgba(107,99,90,0.9)" : "rgba(45,42,38,0.85)"} stroke="#FFFFFF" strokeWidth="3" paintOrder="stroke">{m.text}</text>
           </g>
         ))}
       </g>
@@ -66,7 +68,7 @@ function Overlays({ o }: { o: ChartOverlays }) {
           <g key={u.id}>
             <title>{`${u.name} · UNESCO World Heritage, ${u.year}`}</title>
             <UnescoMark x={u.x} y={u.y} />
-            <text x={u.x + 13} y={u.y + 4} fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="12.5" fill="rgba(45,42,38,0.85)" stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{u.label ?? u.name}</text>
+            <text x={u.x + 13} y={u.y + 4} fontFamily="'Cormorant Garamond', Georgia, serif" fontSize="12.5" fill="rgba(45,42,38,0.85)" stroke="#FFFFFF" strokeWidth="3" paintOrder="stroke">{u.label ?? u.name}</text>
           </g>
         ))}
       </g>
@@ -83,13 +85,18 @@ export function projectOn(chart: ChartData, lat: number, lng: number) {
   return { x: (L - B.w) * kx, y: (B.n - lat) * ky };
 }
 
-export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = false }: { chart?: Chart; title: string; /** Draw as a <g> inside a parent SVG (the flyover animates the parent viewBox). */ bare?: boolean }) {
+export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = false, texture }: { chart?: Chart; title: string; /** Draw as a <g> inside a parent SVG (the flyover animates the parent viewBox). */ bare?: boolean;
+  /** "engraved": the island-chain treatment (Indonesia, 2 Nov 2026): a shoal tint around every coast and
+   *  engraved hatching with a light stipple on the land. Off by default, so every other chart is unchanged. */
+  texture?: "engraved" }) {
   const { width: W, height: H } = chart;
+  // The island-chain charts read larger at phone width; every other chart keeps its sizes.
+  const fs = texture === "engraved" ? 1.25 : 1;
   const body = (
     <>
       <defs>
         <pattern id="sea-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
-          <line x1="0" y1="0" x2="0" y2="8" stroke="rgba(34,101,110,0.10)" strokeWidth="1" />
+          <line x1="0" y1="0" x2="0" y2="8" stroke="rgba(107,99,90,0.10)" strokeWidth="1" />
         </pattern>
         {chart.overlays && (
           <pattern id="salt-crust" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -97,8 +104,15 @@ export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = fa
             <path d="M0 5 L5 0 M5 10 L10 5" stroke="rgba(45,42,38,0.12)" strokeWidth="0.8" />
           </pattern>
         )}
+        {texture === "engraved" && (
+          <pattern id="land-engrave" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(40)">
+            <line x1="0" y1="0" x2="0" y2="7" stroke="rgba(45,42,38,0.13)" strokeWidth="0.7" />
+            <circle cx="3.5" cy="2" r="0.55" fill="rgba(45,42,38,0.22)" />
+            <circle cx="3.5" cy="5.5" r="0.35" fill="rgba(45,42,38,0.14)" />
+          </pattern>
+        )}
       </defs>
-      <rect width={W} height={H} fill="#E4EEEC" />
+      <rect width={W} height={H} fill="#F4F2EF" />
       <rect width={W} height={H} fill="url(#sea-hatch)" />
 
       {/* Graticule */}
@@ -110,17 +124,25 @@ export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = fa
       {chart.neighbors.map((n) => (
         <path key={n.name} d={n.d} pathLength={1} className="chart-ink chart-ink--soft" fill="#EFEBE4" stroke="rgba(45,42,38,0.35)" strokeWidth="1" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
       ))}
-      <path d={chart.focus} fillRule="evenodd" pathLength={1} className="chart-ink" fill="#F4F1ED" stroke="#2D2A26" strokeWidth="1.4" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+      {/* Reef and shoal tint: two soft warm-stone halos hugging every coast (House Standard, map audit 2 Nov 2026), under the land. */}
+      {texture === "engraved" && (
+        <g className="chart-fade" aria-hidden="true">
+          <path d={chart.focus} fill="none" stroke="rgba(140,130,119,0.12)" strokeWidth="18" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+          <path d={chart.focus} fill="none" stroke="rgba(140,130,119,0.22)" strokeWidth="8" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+        </g>
+      )}
+      <path d={chart.focus} fillRule="evenodd" pathLength={1} className="chart-ink" fill="#FFFFFF" stroke="#2D2A26" strokeWidth="1.4" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
+      {texture === "engraved" && <path d={chart.focus} fillRule="evenodd" className="chart-fade" fill="url(#land-engrave)" aria-hidden="true" />}
 
-      {chart.overlays && <Overlays o={chart.overlays} />}
+      {chart.overlays && <Overlays o={chart.overlays} fs={fs} />}
 
       <g className="chart-fade" fontFamily="'Cormorant Garamond', Georgia, serif" textAnchor="middle">
-        {chart.labels.seas.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="17" fontStyle="italic" letterSpacing="3" fill="rgba(34,101,110,0.75)">{l.text}</text>)}
-        {chart.labels.neighbors.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="13" letterSpacing="5" fill="rgba(45,42,38,0.4)">{l.text}</text>)}
-        <text x={chart.labels.country.x} y={chart.labels.country.y} fontSize="18" letterSpacing="9" fill="rgba(45,42,38,0.7)">{chart.labels.country.text}</text>
-        {chart.labels.areas.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize="13.5" fontStyle="italic" fill="#8B2525" stroke="#F4F1ED" strokeWidth="3" paintOrder="stroke">{l.text}</text>)}
+        {chart.labels.seas.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={17 * fs} fontStyle="italic" letterSpacing="3" fill="rgba(107,99,90,0.75)">{l.text}</text>)}
+        {chart.labels.neighbors.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={13 * fs} letterSpacing="5" fill="rgba(45,42,38,0.4)">{l.text}</text>)}
+        <text x={chart.labels.country.x} y={chart.labels.country.y} fontSize={18 * fs} letterSpacing="9" fill="rgba(45,42,38,0.7)">{chart.labels.country.text}</text>
+        {chart.labels.areas.map((l) => <text key={l.text} x={l.x} y={l.y} fontSize={13.5 * fs} fontStyle="italic" fill="#8B2525" stroke="#FFFFFF" strokeWidth="3" paintOrder="stroke">{l.text}</text>)}
       </g>
-      <g className="chart-fade" fontFamily="'IBM Plex Mono', ui-monospace, monospace" fontSize="10" fill="rgba(45,42,38,0.5)">
+      <g className="chart-fade" fontFamily="'IBM Plex Mono', ui-monospace, monospace" fontSize={10 * fs} fill="rgba(45,42,38,0.5)">
         {chart.lats.map((l) => <text key={`tl${l.v}`} x="8" y={l.y - 4}>{Math.abs(l.v)}°{l.v < 0 ? "S" : "N"}</text>)}
         {chart.lngs.map((l) => <text key={`tg${l.v}`} x={l.x + 4} y={H - 8}>{Math.abs(l.v)}°{l.v < 0 ? "W" : "E"}</text>)}
       </g>
@@ -133,7 +155,7 @@ export default function LedgerChart({ chart = CHART_COSTA_RICA, title, bare = fa
     </>
   );
   return bare ? <g role="img" aria-label={title}>{body}</g> : (
-    <svg viewBox={`0 0 ${W} ${H}`} className="block w-full h-auto" role="img" aria-label={title}>
+    <svg viewBox={`0 0 ${W} ${H}`} className="block w-full h-auto" role="img" aria-label={title} data-map="chart">
       {body}
     </svg>
   );

@@ -49,7 +49,7 @@ test("aliikai-voyage redirects (301) to her ship page; the rest keep a voyage-la
   const r = redirects.find((x) => x.source === "/stays/aliikai-voyage");
   assert.deepEqual(r, { source: "/stays/aliikai-voyage", destination: "/voyages/ships/aliikai", statusCode: 301 });
   assert.equal(vesselHref("aliikai-voyage"), "/voyages/ships/aliikai");
-  for (const v of VESSELS.filter((x) => !x.ship)) {
+  for (const v of VESSELS.filter((x) => !x.ship && !x.href)) {
     assert.equal(vesselHref(v.slug), `/stays/${v.slug}`);
     assert.ok(!redirects.some((x) => x.source === `/stays/${v.slug}`), `${v.slug} keeps its page`);
   }

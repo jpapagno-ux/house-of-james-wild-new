@@ -22,6 +22,13 @@ export function shipMap(e: ShipEntry): { html: string; figCss?: string } | null 
     const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
     return routes.length && routes.every(Boolean) ? chartFor(routes.map((r) => r!), `jwmap-${s.slug}`, `Route map of ${s.name}'s Antarctica21 voyages`) : null;
   }
+  // Indonesia on the shared template (Amandira): her route files, stops in the operator's order.
+  if (e.waters === "indonesia" && e.slug !== "aliikai") {
+    const routes = s.itineraries.filter((i) => i.days.length).map((i) => readRoute(shipRouteId(s, i)));
+    // Routes in more than one region (Rascal's Komodo and Raja Ampat weeks) frame on their stops, not one region's box.
+    const dests = [...new Set(routes.map((r) => String(r?.destination ?? "raja-ampat")))];
+    return routes.length && routes.every(Boolean) ? { html: shipMapHtml({ id: `jwmap-${s.slug}`, routes: routes.map((r) => r!), destination: dests.length === 1 ? dests[0] : "indonesia", title: `Route map of ${s.name} in Indonesia`, kicker: "THE VOYAGE · UNDER SAIL" }) } : null;
+  }
   if (e.slug === "aliikai") {
     const trip = TRIPS["10-day-raja-ampat-north"];
     const html = trip ? mapHtml(trip) : "";

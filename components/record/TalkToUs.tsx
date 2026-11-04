@@ -16,7 +16,7 @@ export default function TalkToUs({ name, planHref }: { name: string; planHref: s
     ...(SITE.email ? [{ icon: Mail, title: "Write to us", line: "Prefer it in writing? So do we, sometimes. We read every one.", label: SITE.email, href: `mailto:${SITE.email}?subject=${subject}`, event: "email_click" }] : []),
   ];
   return (
-    <section id="talk" className="mt-16 md:mt-24 scroll-mt-32 lg:scroll-mt-[212px] border-t ledger-rule pt-10" aria-labelledby="talk-heading">
+    <section id="talk" className="mt-16 md:mt-24 border-t ledger-rule pt-10" aria-labelledby="talk-heading">
       <p className="ledger-eyebrow ledger-crimson">Talk to the house</p>
       <h2 id="talk-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Questions About {name}? Good. Ask Them Out Loud.</h2>
       <p className="mt-3 text-[16px] ledger-muted max-w-3xl">Forty-four years on the road taught James that the best trips start with a conversation, not a checkout. Pick whichever way suits you; nobody here will rush you.</p>
@@ -58,7 +58,7 @@ export function ContactBar({ name, planHref, from }: { name: string; planHref: s
 // Desktop: a quiet card, bottom right.
 export function ContactPill({ name, planHref }: { name: string; planHref: string }) {
   return (
-    <div className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
+    <div data-quiet-actions className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
       <span className="text-[13px]"><span className="ledger-eyebrow block !text-[9.5px]">Ask about {name.length > 26 ? "this place" : name}</span><a href={`tel:${SITE.phone.tel}`} className="hover:ledger-crimson" data-event="call_click">{SITE.phone.display}</a></span>
       <Link href={planHref} className="ledger-btn !py-2 !px-3.5" data-event="enquire_click">Enquire</Link>
     </div>

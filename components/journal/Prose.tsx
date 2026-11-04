@@ -57,7 +57,7 @@ export function Blocks({ blocks, lead = false }: { blocks: Block[]; lead?: boole
     <>
       {blocks.map((b, i) => {
         if (b.t === "p") return <p key={i} className={lead && i === 0 ? "journal-lead" : undefined}><Inline text={b.text} /></p>;
-        if (b.t === "h3") return <h3 key={i} id={b.id} className="ledger-display text-[1.35rem] leading-snug pt-2 scroll-mt-28">{b.text}</h3>;
+        if (b.t === "h3") return <h3 key={i} id={b.id} className="ledger-display text-[1.35rem] leading-snug pt-2">{b.text}</h3>;
         if (b.t === "ul") return <ul key={i} className="journal-list">{b.items.map((x) => <li key={x}><Inline text={x} /></li>)}</ul>;
         if (b.t === "ol") return <ol key={i} className="journal-steps">{b.items.map((x, n) => <li key={x}><span className="font-mono text-[12px] tracking-[0.14em] ledger-crimson">{String(n + 1).padStart(2, "0")}</span><span><Inline text={x} /></span></li>)}</ol>;
         return null;

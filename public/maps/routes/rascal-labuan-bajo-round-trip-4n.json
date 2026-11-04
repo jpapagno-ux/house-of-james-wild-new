@@ -1,0 +1,174 @@
+{
+ "id": "rascal-labuan-bajo-round-trip-4n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "Komodo National Park, 4 nights aboard Rascal",
+ "subtitle": "4 nights · Labuan Bajo round trip · Rascal",
+ "days": {
+  "1": "Labuan Bajo to Sebayor Island",
+  "2": "Sape Bay and the pink beaches",
+  "3": "Komodo Island, Siaba Besar and Gili Lawa Darat",
+  "4": "Taka Makassar, Tatawa Besar and Seraya",
+  "5": "Seraya to Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sebayor Island",
+   "lat": -8.505,
+   "lng": 119.712,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Sape Bay",
+   "lat": -8.57,
+   "lng": 119.04,
+   "mode": "sea",
+   "path": [
+    [
+     119.712,
+     -8.505
+    ],
+    [
+     119.4569,
+     -8.4182
+    ],
+    [
+     119.04,
+     -8.57
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Komodo Island (Loh Liang)",
+   "lat": -8.567,
+   "lng": 119.505,
+   "mode": "sea",
+   "path": [
+    [
+     119.04,
+     -8.57
+    ],
+    [
+     119.1718,
+     -8.5535
+    ],
+    [
+     119.175,
+     -8.5535
+    ],
+    [
+     119.3764,
+     -8.7495
+    ],
+    [
+     119.4659,
+     -8.7526
+    ],
+    [
+     119.4723,
+     -8.7495
+    ],
+    [
+     119.4755,
+     -8.7463
+    ],
+    [
+     119.4979,
+     -8.6135
+    ],
+    [
+     119.505,
+     -8.567
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Taka Makassar",
+   "lat": -8.533,
+   "lng": 119.583,
+   "mode": "sea",
+   "path": [
+    [
+     119.505,
+     -8.567
+    ],
+    [
+     119.5039,
+     -8.5794
+    ],
+    [
+     119.5198,
+     -8.5973
+    ],
+    [
+     119.522,
+     -8.5996
+    ],
+    [
+     119.5288,
+     -8.6018
+    ],
+    [
+     119.5697,
+     -8.6018
+    ],
+    [
+     119.5743,
+     -8.5996
+    ],
+    [
+     119.5788,
+     -8.5951
+    ],
+    [
+     119.597,
+     -8.5614
+    ],
+    [
+     119.5924,
+     -8.5502
+    ],
+    [
+     119.583,
+     -8.533
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "mode": "sea",
+   "path": [
+    [
+     119.583,
+     -8.533
+    ],
+    [
+     119.8877,
+     -8.4964
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

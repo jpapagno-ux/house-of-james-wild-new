@@ -7,15 +7,17 @@
 // reused, even when an offer ends or is withdrawn.
 //
 // Program names (James, 27 Oct 2026): "Worth Another Night" = a free night on
-// a shorter stay; "Time Rewarded" = a reward for staying longer; "On the
-// Horizon" = suggested name for voyage savings, not yet in use. "Final Call"
+// a shorter stay; "Time Rewarded" = a reward for staying longer. "On the
+// Horizon" (James, 2 Nov 2026) = the site-wide name for offers: one hub,
+// /offers, with a section per volume; Stays keep their two marks inside it and
+// voyage offers carry a type (VoyageOfferType). "Final Call"
 // (James, 29 Oct 2026) = last-minute savings on a departure, Voyages and
 // Overland only; drawn as a split-flap board (components/ledger/OfferPanel). "Book Early"
 // = a hotel's early-booking discount (working name, James to confirm).
 
 import type { VolumeKey } from "@/lib/volumes";
 import LIBRARY from "./library.json";
-import { activeOnly, today } from "@/lib/dates";
+import { activeOnly, offerLastDay, today } from "@/lib/dates";
 
 export type OfferScope = "stay" | "vessel" | "residence" | "reserve" | "collection" | "itinerary";
 export type OfferStatus = "Live" | "Awaiting terms" | "Draft" | "Ended" | "Withdrawn";
@@ -45,7 +47,15 @@ export type Offer = {
   refs?: string[];
   /** The partner whose offer it is (lib/content/partners), for the partner page. */
   partner?: string;
+  /** Voyages only: the offer's type under On the Horizon (James, 2 Nov 2026). Synced from the library's
+   *  `offer_type` when set; otherwise `voyageOfferType` maps the offer from its program and terms. */
+  offerType?: VoyageOfferType;
 };
+
+/** The voyage offer types under On the Horizon (James, 2 Nov 2026, voyages plan Part 5). "On the Horizon"
+ *  alone is a general saving that fits none of the others (Antarctica21's booking-window savings). */
+export type VoyageOfferType = "Final Call" | "Book Early" | "Solo" | "Celebrations" | "Family" | "Whole Ship" | "On the Horizon";
+export const VOYAGE_OFFER_TYPES: VoyageOfferType[] = ["Final Call", "Book Early", "Solo", "Celebrations", "Family", "Whole Ship", "On the Horizon"];
 
 const CAY = "cayuga-collection";
 const SRC = "Cayuga Collection official special offers page";
@@ -108,19 +118,63 @@ const HAND_KEPT: Offer[] = [
     headline: "Save up to US$1,000 per person", travel: { from: "2026-11-02", to: "2026-12-31", text: "Book by 31 December 2026" }, bookingWindow: true,
     conditions: "On Antarctica21's Patagonia and Chilean Fjords and Falklands sea voyages, new bookings only. Antarctica21 terms apply.",
     source: "Antarctica21 promotions page", checked: "2026-11-02", volume: "voyages" },
+
+  // ── 2026 · Royal Galapagos, Galapagos Horizon (James approved, 2 Nov 2026) ──
+  // The only dated deals Royal Galapagos' booking engine showed on 2 Nov 2026, each on one departure, so each is
+  // a Final Call that stays live until its departure day (valid_to). Filed in the Base44 library as
+  // OFR-2026-000162 to 000164; kept here until the nightly sync carries them. 000163 and 000164 (the 6 July 2027
+  // sailing, US$500 off and US$8,000 off the charter) were archived on 2 Nov 2026 (James): Royal Galapagos shows
+  // that sailing as full. Their IDs are never reused. Its undated promotions (free hotel
+  // nights, 2X1, standing group and child discounts) are not shown (house rule).
+  ...([
+    ["OFR-2026-000162", "2027-06-22", "22 June 2027", "Galapagos Horizon, 22 June 2027 Northern islands", "US$1,000 off per person", "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply."],
+          ] as const).map(([id, dep, words, name, headline, conditions]): Offer => ({
+    id, year: 2026, status: "Live", scope: "vessel", ref: "galapagos-horizon-trimaran", partner: "royal-galapagos", name, country: "Ecuador", program: "Final Call",
+    headline, travel: { from: "2026-11-02", to: dep, text: `Departs ${words}` }, departure: dep, conditions,
+    source: "Royal Galapagos booking engine", checked: "2026-11-02", volume: "voyages",
+  })),
 ];
 
 // Offers filed in the Base44 library arrive with the nightly sync
 // (scripts/export-offers.py). A library record replaces a hand-kept one with
 // the same ID, so terms can move into the library one offer at a time.
-const FROM_LIBRARY = LIBRARY as Offer[];
+// The library has no partner or page-ref field for a partner's offer, so the hand-kept copy's partner and
+// ref carry over by ID (the partner page lists its offers; the ship page reads its ref).
+const HAND_BY_ID = new Map(HAND_KEPT.map((o) => [o.id, o]));
+const FROM_LIBRARY = (LIBRARY as Offer[]).map((o) => { const h = HAND_BY_ID.get(o.id); return h?.partner ? { ...o, partner: o.partner ?? h.partner, ref: h.ref, refs: o.refs ?? h.refs, country: o.country || h.country } : o; });
 const LIB_IDS = new Set(FROM_LIBRARY.map((o) => o.id));
 export const OFFER_LEDGER: Offer[] = [...HAND_KEPT.filter((o) => !LIB_IDS.has(o.id)), ...FROM_LIBRARY];
 
+// Typed by James (2 Nov 2026): A&K's Nile honeymoon offer is Celebrations; Antarctica21's two booking-window
+// savings stay On the Horizon (general). The library's own `offer_type` wins once it is set there.
+const TYPE_BY_ID: Record<string, VoyageOfferType> = {
+  "OFR-2026-000129": "Celebrations", "OFR-2026-000130": "Celebrations", "OFR-2026-000131": "Celebrations", "OFR-2026-000132": "Celebrations",
+  "OFR-2026-000160": "On the Horizon", "OFR-2026-000161": "On the Horizon",
+  // Royal Galapagos' Galapagos Horizon departure deals: Final Call (James, 2 Nov 2026).
+  "OFR-2026-000162": "Final Call",
+};
+/** A voyage offer's type: the filed type, James's typing by ID, then a reading of its program and terms. */
+export function voyageOfferType(o: Pick<Offer, "id" | "program" | "headline" | "name" | "offerType">): VoyageOfferType {
+  if (o.offerType) return o.offerType;
+  if (TYPE_BY_ID[o.id]) return TYPE_BY_ID[o.id];
+  if (o.program === "Final Call") return "Final Call";
+  if (o.program === "Book Early") return "Book Early";
+  const t = `${o.headline} ${o.name}`;
+  if (/honeymoon|anniversar|celebrat/i.test(t)) return "Celebrations";
+  if (/\bsolo\b|single supplement/i.test(t)) return "Solo";
+  if (/famil|child|kids/i.test(t)) return "Family";
+  if (/charter|whole (ship|yacht|boat)/i.test(t)) return "Whole Ship";
+  return "On the Horizon";
+}
+
 /** When an offer ends: its travel window, or a Final Call's departure date if that comes first. */
 export const offerEnd = (o: Pick<Offer, "travel" | "departure">) => (o.departure && o.departure < o.travel.to ? o.departure : o.travel.to);
-/** Offers a page may show: Live and not past its end (lib/dates.ts, the one date rule). */
-export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerEnd, on);
+/** Offers a page may show: Live, and not past the day they expire (lib/dates.ts offerLastDay, James,
+ *  2 Nov 2026): every offer stays live through its end date; a Final Call through its own end date and
+ *  never past its departure. The 30-day rule applies only when an offer is first filed (see docs/site-rules.md). */
+export const liveOffers = (on = today()) => activeOnly(OFFER_LEDGER.filter((o) => o.status === "Live"), offerLastDay, on);
 export const offersFor = (ref: string, on = today()) => liveOffers(on).filter((o) => o.ref === ref || (o.refs ?? []).includes(ref));
 export const offersForPartner = (partner: string, on = today()) => liveOffers(on).filter((o) => o.partner === partner);
+/** Live voyage offers of one type (the honeymoon page shows Celebrations). */
+export const voyageOffersOfType = (t: VoyageOfferType, on = today()) => liveOffers(on).filter((o) => o.volume === "voyages" && voyageOfferType(o) === t);
 export const offersInCollection = (collection: string, on = today()) => liveOffers(on).filter((o) => o.collection === collection);

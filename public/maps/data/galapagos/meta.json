@@ -1,0 +1,11 @@
+{
+ "slug": "galapagos",
+ "name": "The Gal\u00e1pagos",
+ "bbox": [
+  -92.15,
+  -1.55,
+  -89.05,
+  1.75
+ ],
+ "attribution": "Land: Natural Earth (house chart data, lib/charts/regions.json)"
+}

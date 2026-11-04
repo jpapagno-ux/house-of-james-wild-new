@@ -65,7 +65,7 @@ export default function WorkshopsPage() {
       <main id="main" className="pb-20">
         <header className="relative w-full h-[62svh] md:h-[72svh] min-h-[440px] max-h-[820px] overflow-hidden bg-ink text-white">
           <Image src={HERO.url} alt={HERO.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.30)] to-[rgba(26,24,22,0.40)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-14">
             <p className="ledger-eyebrow !text-white/80">{W.eyebrow}</p>
             <h1 className="ledger-display text-[2.6rem] md:text-[4.4rem] leading-none mt-3">{W.title}</h1>
@@ -82,12 +82,12 @@ export default function WorkshopsPage() {
             <Route r={W.trade} cta={<><Link href="/for-advisors" className="ledger-btn">Enter the Advisor Desk</Link><Link href="/for-advisors" className="ledger-btn-ghost">Request advisor access</Link></>} />
           </div>
 
-          <section id="season" aria-labelledby="season-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-28">
+          <section id="season" aria-labelledby="season-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">
             <p className="ledger-eyebrow ledger-crimson">House Workshops · Everyone welcome</p>
             <h2 id="season-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">The Season Ahead</h2>
             <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">Live destination conversations with James, our hosts and our partners. Reserve a seat, ask your questions and get to know the place before you go.</p>
             {next.length ? (
-              <div className="mt-8 grid md:grid-cols-3 gap-5">{next.map((s) => <div key={s.slug} id={s.slug} className="scroll-mt-28"><SessionCard s={s} /></div>)}</div>
+              <div className="mt-8 grid md:grid-cols-3 gap-5">{next.map((s) => <div key={s.slug} id={s.slug} className=""><SessionCard s={s} /></div>)}</div>
             ) : (
               <div className="mt-8 grid md:grid-cols-[auto_1fr_auto] gap-6 items-center border ledger-border p-6 md:p-8">
                 <span className="w-14 h-14 rounded-full border ledger-rule flex items-center justify-center ledger-crimson" aria-hidden="true"><CalendarClock className="w-6 h-6" strokeWidth={1.25} /></span>

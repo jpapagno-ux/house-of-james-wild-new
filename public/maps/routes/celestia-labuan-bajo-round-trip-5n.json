@@ -1,0 +1,205 @@
+{
+ "id": "celestia-labuan-bajo-round-trip-5n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "6 Days, 5 Nights Komodo National Park aboard Celestia",
+ "subtitle": "5 nights · Labuan Bajo round trip · Celestia",
+ "days": {
+  "1": "Labuan Bajo to the Sebayur islands",
+  "2": "Gili Lawa Darat and Gili Lawa Laut",
+  "3": "Gili Banta",
+  "4": "Manta Point, Karang Makassar, Padar",
+  "5": "Pink Beach, Rinca, Kalong",
+  "6": "Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Sebayur Besar",
+   "lat": -8.505,
+   "lng": 119.712,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gili Lawa Darat",
+   "lat": -8.443,
+   "lng": 119.565,
+   "mode": "sea",
+   "path": [
+    [
+     119.712,
+     -8.505
+    ],
+    [
+     119.565,
+     -8.443
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Gili Banta",
+   "lat": -8.414,
+   "lng": 119.315,
+   "mode": "sea",
+   "path": [
+    [
+     119.565,
+     -8.443
+    ],
+    [
+     119.4546,
+     -8.4149
+    ],
+    [
+     119.332,
+     -8.4059
+    ],
+    [
+     119.3298,
+     -8.4082
+    ],
+    [
+     119.315,
+     -8.414
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Padar",
+   "lat": -8.65,
+   "lng": 119.585,
+   "mode": "sea",
+   "path": [
+    [
+     119.315,
+     -8.414
+    ],
+    [
+     119.3229,
+     -8.4018
+    ],
+    [
+     119.3252,
+     -8.3996
+    ],
+    [
+     119.4569,
+     -8.4153
+    ],
+    [
+     119.5591,
+     -8.476
+    ],
+    [
+     119.575,
+     -8.4917
+    ],
+    [
+     119.5818,
+     -8.5051
+    ],
+    [
+     119.5977,
+     -8.5635
+    ],
+    [
+     119.5841,
+     -8.6354
+    ],
+    [
+     119.585,
+     -8.65
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Rinca",
+   "lat": -8.65,
+   "lng": 119.72,
+   "mode": "sea",
+   "path": [
+    [
+     119.585,
+     -8.65
+    ],
+    [
+     119.5839,
+     -8.6309
+    ],
+    [
+     119.6316,
+     -8.5882
+    ],
+    [
+     119.6361,
+     -8.586
+    ],
+    [
+     119.6407,
+     -8.5882
+    ],
+    [
+     119.6588,
+     -8.6017
+    ],
+    [
+     119.72,
+     -8.65
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 6,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "mode": "sea",
+   "path": [
+    [
+     119.72,
+     -8.65
+    ],
+    [
+     119.7121,
+     -8.6287
+    ],
+    [
+     119.7166,
+     -8.6174
+    ],
+    [
+     119.8438,
+     -8.5051
+    ],
+    [
+     119.8574,
+     -8.4984
+    ],
+    [
+     119.8877,
+     -8.4964
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

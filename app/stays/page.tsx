@@ -1,5 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { HOUSE_LOOP } from "@/lib/content/home";
+import VolumeEntrance from "@/components/entrance/VolumeEntrance";
+import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
 import { AdvisorScroll } from "@/components/advisor/Desk";
 import { HubShell, HubSection, RecordCard } from "@/components/hub/Hub";
@@ -15,8 +16,9 @@ import { onPathway } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import { PATHWAY_CARD_STAY, PROMINENT } from "@/lib/content/pathways/preview";
 import { STAYS, altFor } from "@/lib/content/stays";
+import { volumeEyebrow } from "@/lib/volumes";
 
-// /stays: Volume 01 hub shell. Signature stays now; the full browse (by
+// /stays: Volume I hub shell. Signature stays now; the full browse (by
 // land / by water, region, setting) fills from the Ledger export.
 const PATH = "/stays";
 const V = VOLUMES.find((v) => v.href === PATH)!;
@@ -26,8 +28,8 @@ export default function StaysHub() {
   const items = HOME.shelf.entries;
   return (
     <>
-      <SiteHeader />
-      <HubShell name="Stays" film={{ poster: HOUSE_LOOP.poster, mp4: HOUSE_LOOP.mp4, webm: HOUSE_LOOP.webm, alt: HOUSE_LOOP.label, eyebrow: "The house film", title: "Wild places, by land and by water.", credit: "Film by Felix Studios", href: "/#film" }} path={PATH} eyebrow="Volume 01 · Stays" title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
+      <SiteHeader overlay />
+      <HubShell name="Stays" entrance={<VolumeEntrance e={ENTRANCES.stays} />} path={PATH} eyebrow={volumeEyebrow("stays")} title="Stays James Has Vetted, by Land and by Water" intro={V.intro} browse={V.browse}
         answer={`James Wild & Co's Stays volume holds ${LEDGER_COUNTS.stays} live stays: safari lodges, island hideaways, mountain and desert retreats and city houses, each vetted in person or by a named partner and filed in the Ledger under a permanent ID. Book a single stay, or build a journey around it with James or an advisor.`}
         filling="The full browse, by land or water, region, setting and who it suits, fills from the Ledger export as each stay page is built.">
         <HubSection eyebrow="From the Ledger" title="A Short Shelf of Signature Stays" id="shelf-h">

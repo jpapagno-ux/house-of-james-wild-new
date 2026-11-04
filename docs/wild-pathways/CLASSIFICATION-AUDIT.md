@@ -496,7 +496,7 @@ Note on batch 3 writes: 17 records whose second secondary pathway was unique to 
 | Anantara Golden Triangle Elephant Camp & Resort | Thailand | stay | Stillness | James (batch 3, drafted by Iggi) |
 | Tongabezi | Zambia | stay | Wild | James, 31 Oct 2026 |
 
-## Other Europe (Volume VI)
+## Other Europe (Volume V)
 
 | Record | Country | Primary | Secondary |
 |---|---|---|---|

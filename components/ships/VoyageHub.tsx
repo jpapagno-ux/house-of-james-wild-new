@@ -12,6 +12,8 @@ import VoyageTiles, { type Tile } from "./VoyageTiles";
 import type { ShipCardData } from "@/lib/content/ships/cards";
 import { absoluteUrl } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import FounderOcean from "@/components/advisor/FounderOcean";
+import { founderOceanForVoyage } from "@/lib/content/founder-ocean";
 
 // One frame for every Voyages hub, type or waters (voyages plan, Part 2): the search question
 // answered first (AEO), the ship cards from the registry, the routes on the chart, a short
@@ -26,6 +28,8 @@ export type HubProps = {
   atlas?: { routes: AtlasRoute[]; legend: AtlasLegend; dest: string; chart?: object; kicker: string; title: string; line: string };
   related?: { title: string; tiles: Tile[] };
   before?: ReactNode; after?: ReactNode; extraSchema?: Record<string, unknown>[];
+  /** Replaces the plain ship grid (the Galápagos groups its fleet by partner and tier, FleetBrowser). */
+  ships?: ReactNode;
 };
 
 export default function VoyageHub(h: HubProps) {
@@ -37,7 +41,7 @@ export default function VoyageHub(h: HubProps) {
         filling="Ships fill from the Ledger as each operator's own material is filed; nothing is listed before it is.">
         {h.before}
         <HubSection eyebrow={`${h.cards.length} ${h.cards.length === 1 ? "ship" : "ships"} filed`} title={h.question} id="ships-h">
-          {h.cards.length > 0 ? (VOYAGE_PATHWAYS_ON
+          {h.ships ? h.ships : h.cards.length > 0 ? (VOYAGE_PATHWAYS_ON
             ? <HubFilter names={Object.fromEntries(PATHWAY_LIST.map((p) => [p.key, p.name]))} items={h.cards.map((c) => ({ slug: c.slug, keys: c.pathway ? [c.pathway.primary, ...c.pathway.secondary].map((p) => p.key) : [], node: <ShipCard c={c} /> }))}><ShipGrid cards={h.cards} /></HubFilter>
             : <ShipGrid cards={h.cards} />) : null}
           {h.adding && <p className="mt-6 border-l-2 border-crimson pl-4 text-[15px] max-w-2xl"><span className="ledger-eyebrow block mb-1">Ships being added</span>{h.adding}</p>}
@@ -46,6 +50,7 @@ export default function VoyageHub(h: HubProps) {
           <RouteAtlas id={`${h.path.split("/").pop()}-atlas`} kind="voyage" dest={h.atlas.dest} chart={h.atlas.chart} legend={h.atlas.legend} kicker={h.atlas.kicker} eyebrow="The routes" title={h.atlas.title} line={h.atlas.line} routes={h.atlas.routes} />
         )}
         {h.after}
+        {founderOceanForVoyage(h.path) && <FounderOcean line={founderOceanForVoyage(h.path)!} place={h.name} />}
         {h.related && <HubSection eyebrow="Keep looking" title={h.related.title} id="related-h"><VoyageTiles tiles={h.related.tiles} cols={h.related.tiles.length === 5 ? 5 : h.related.tiles.length === 3 ? 3 : 4} /></HubSection>}
         <FaqBlock faqs={h.faqs} title={`What Else Should You Know About ${h.name}?`} />
       </HubShell>

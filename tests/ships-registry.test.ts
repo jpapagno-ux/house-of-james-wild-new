@@ -9,7 +9,7 @@ import { VESSELS } from "../lib/content/vessels.ts";
 const root = new URL("../", import.meta.url);
 const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const records = new Map<string, { slug: string; itineraries: { direction: string; nights: number | null; days: unknown[] }[] }>();
-for (const dir of ["nile", "amazon", "galapagos"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+for (const dir of ["nile", "amazon", "galapagos", "indonesia"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
   const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8"));
   records.set(r.slug, r);
 }
@@ -30,7 +30,7 @@ test("every ship with a page has a primary pathway, a rate basis, and a route fi
     const r = records.get(s.slug);
     if (!r) continue; // Aliikai: her chart is the 10 Day Raja Ampat North route file
     for (const it of r.itineraries.filter((i) => i.days.length)) {
-      const id = `${s.slug}-${slug(it.direction)}-${it.nights}n`;
+      const id = `${s.slug}-${slug(it.direction)}-${it.nights != null ? `${it.nights}n` : "stops"}`;
       assert.ok(existsSync(new URL(`public/maps/routes/${id}.json`, root)), `${id}.json`);
     }
   }
@@ -62,7 +62,8 @@ test("polar ships are Antarctica21's, listed in Polar Crossings (James, 2 Nov 20
 test("the filters the hubs run", () => {
   assert.ok(shipsInWaters("nile").length >= 5);
   assert.ok(shipsOfType("charter").some((s) => s.slug === "aliikai"));
-  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile")));
+  // Rooted in Place: the Nile ships, Silolona Sojourns (Banda, Asmat and Toraja; voyages plan, Part 2) and TAO Philippines (2 Nov 2026).
+  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile") || s.operator === "Silolona Sojourns" || s.slug === "tao-philippines"));
 });
 
 test("vessels.ts is built from the registry", () => {
@@ -75,7 +76,65 @@ test("a vessel with a ship page 301s from her stay URL (as Aliikai's does)", () 
   for (const s of SHIP_REGISTRY.filter((x) => x.page && x.staySlug)) {
     const r = redirects.find((x) => x.source === `/stays/${s.staySlug}`);
     assert.ok(r, `${s.staySlug} redirects`);
-    assert.equal(r!.destination, `/voyages/ships/${s.slug}`);
+    // A record retired into several ships (rascal-voyages) goes to its operator's partner page.
+    const shared = SHIP_REGISTRY.filter((x) => x.staySlug === s.staySlug).length > 1;
+    assert.equal(r!.destination, shared ? "/partners/rascal-voyages" : `/voyages/ships/${s.slug}`);
     assert.equal(r!.statusCode, 301);
+  }
+});
+
+// Search and category facts (James, 2 Nov 2026): read only from each ship's filed record; never a guess.
+type Rec = { slug: string; children?: string; facts?: [string, string][]; pricesNote?: string; overview?: string[]; faqs?: [string, string][]; cabins?: { features: string[] }[]; departures?: { prices: Record<string, number | null>; singlePrices?: Record<string, number | null> }[] };
+const full = new Map<string, Rec>();
+for (const dir of ["nile", "amazon", "galapagos", "polar"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+  const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8")) as Rec;
+  full.set(r.slug, r);
+}
+const text = (r: Rec) => JSON.stringify([r.children, r.facts, r.pricesNote, r.overview, r.faqs, r.cabins]);
+
+test("every ship with a page carries search traits, with diving only where she dives", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.page)) {
+    assert.ok(s.traits, `${s.slug} traits`);
+    const a = s.traits!.activities ?? [];
+    assert.equal(new Set(a).size, a.length, `${s.slug} activities are unique`);
+    assert.equal(a.includes("diving"), s.traits!.dives === true, `${s.slug}: diving is an activity exactly when she dives`);
+  }
+  // Filed vessels without a ship page have no record to read yet, so nothing is set.
+  for (const s of SHIP_REGISTRY.filter((x) => !x.page)) assert.equal(s.traits, undefined, s.slug);
+});
+
+test("a minimum child age is the one her record publishes", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.traits?.minChildAge !== undefined)) {
+    const r = full.get(s.slug);
+    if (!r) continue;
+    const t = text(r);
+    const age = s.traits!.minChildAge!;
+    if (age === 0) assert.match(t, /all ages/i, s.slug);
+    else assert.ok(new RegExp(`\\b(${age}|${age - 1})\\b`).test(r.children || t), `${s.slug}: ${age} in her record`);
+  }
+});
+
+test("a single supplement agrees with the single fares her record publishes", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.traits?.single?.kind === "percent")) {
+    const r = full.get(s.slug);
+    const pairs = (r?.departures ?? []).flatMap((d) => Object.entries(d.singlePrices ?? {}).map(([k, v]) => [d.prices[k], v] as const)).filter(([a, b]) => typeof a === "number" && typeof b === "number" && a > 0);
+    if (!pairs.length) continue;
+    const { pct, max = pct } = s.traits!.single as { pct: number; max?: number };
+    const seen = pairs.map(([a, b]) => ((b as number) / (a as number) - 1) * 100);
+    for (const x of seen) assert.ok(x >= pct - 2 && x <= max + 2, `${s.slug}: ${x.toFixed(1)}% is outside ${pct} to ${max}%`);
+    assert.ok(Math.abs(Math.min(...seen) - pct) <= 2, `${s.slug}: the lowest published supplement is ${Math.min(...seen).toFixed(1)}%, not ${pct}%`);
+  }
+  for (const s of SHIP_REGISTRY.filter((x) => x.traits?.single?.kind === "none")) assert.match(text(full.get(s.slug)!), /no single supplement/i, s.slug);
+});
+
+test("connecting cabins and a kids' programme are set only where her record says so", () => {
+  for (const s of SHIP_REGISTRY.filter((x) => x.traits?.connecting)) {
+    const r = full.get(s.slug);
+    if (r) assert.match(text(r), /connect/i, s.slug);
+  }
+  for (const s of SHIP_REGISTRY.filter((x) => x.traits?.kidsProgramme)) assert.match(text(full.get(s.slug)!), /WILDchild|programme/i, s.slug);
+  for (const s of SHIP_REGISTRY) {
+    assert.notEqual(s.traits?.connecting, false, `${s.slug}: unpublished stays unset, not false`);
+    assert.notEqual(s.traits?.kidsProgramme, false, `${s.slug}: unpublished stays unset, not false`);
   }
 });

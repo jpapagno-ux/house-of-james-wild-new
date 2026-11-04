@@ -19,33 +19,32 @@
      told apart by dash, the way the engraved figures do it. */
   var PALETTE = {
     voyage: {
-      paper: "#FBF8F1", seaFill: "#EEF2EE", seaInk: "#7E9BA3", waveInk: "#1E5F73",
-      landInk: "#1E2A30", landFill: "#E9E3D3", contourInk: "#9E9284", lineInk: "#CFD8D4",
-      roseInk: "#1E5F73", ink: "#1E2A30", riverInk: "#7E9BA3", roseBg: "rgba(251,248,241,.88)",
-      col: { a: "#2D2A26", s: "#1E5F73", w: "#146663", l: "#94512F", f: "#3F6B45", h: "#8B2525" },
-      vol: "#1E5F73"
+      paper: "#FFFFFF", seaFill: "#F4F2EF", seaInk: "#B8AFA5", waveInk: "#8C8277",
+      landInk: "#2E2B28", landFill: "#FFFFFF", contourInk: "#B8AFA5", lineInk: "#CFC8BF",
+      roseInk: "#2E2B28", ink: "#2E2B28", riverInk: "#8C8277", roseBg: "rgba(255,255,255,.9)",
+      col: { a: "#2E2B28", s: "#2E2B28", w: "#2E2B28", l: "#6B635A", f: "#6B635A", h: "#2E2B28" },
+      vol: "#2E2B28", active: "#8B2525"
     },
     overland: {
-      paper: "#FBF8F1", seaFill: "#EEF2EE", seaInk: "#7E9BA3", waveInk: "#22656E",
-      landInk: "#1E2A30", landFill: "#E9E3D3", contourInk: "#9E9284", lineInk: "#CFD8D4",
-      roseInk: "#8B2525", ink: "#1E2A30", riverInk: "#7E9BA3", roseBg: "rgba(251,248,241,.88)",
-      col: { a: "#2D2A26", s: "#1E5F73", w: "#22656E", l: "#94512F", f: "#3F6B45", h: "#8B2525" },
-      vol: "#8B2525"
+      paper: "#FFFFFF", seaFill: "#F4F2EF", seaInk: "#B8AFA5", waveInk: "#8C8277",
+      landInk: "#2E2B28", landFill: "#FFFFFF", contourInk: "#B8AFA5", lineInk: "#CFC8BF",
+      roseInk: "#2E2B28", ink: "#2E2B28", riverInk: "#8C8277", roseBg: "rgba(255,255,255,.9)",
+      col: { a: "#2E2B28", s: "#2E2B28", w: "#2E2B28", l: "#6B635A", f: "#6B635A", h: "#2E2B28" },
+      vol: "#2E2B28", active: "#8B2525"
     }
   };
-  var THEME = { fontDisp: "'Playfair Display', Georgia, 'Times New Roman', serif", fontText: "'EB Garamond', Georgia, 'Times New Roman', serif",
-    fontMono: "'IBM Plex Mono', ui-monospace, monospace", dispWeight: 400, cartouche: "James Wild & Co",
-    vars: { "--leaf": "#FBF8F1", "--paper": "#F4F1ED", "--paper-2": "#EAE6DF", "--sepia": "rgba(45,42,38,.68)", "--jwc-ink-soft": "rgba(45,42,38,.68)",
-      "--rule": "rgba(45,42,38,.28)", "--deep": "#2D2A26", "--brass": "#C9B79F", "--jwc-ink": "#2D2A26",
-      "--type": "'IBM Plex Mono', ui-monospace, monospace", "--serif": "'Playfair Display', Georgia, serif",
-      "--display": "'IBM Plex Mono', ui-monospace, monospace", "--body": "'EB Garamond', Georgia, serif" } };
-  
-  
+  /* House type (map audit, 2 Nov 2026): Cormorant Garamond display, Manrope text, IBM Plex Mono for days and coordinates. */
+  var THEME = { fontDisp: "'Cormorant Garamond', Georgia, 'Times New Roman', serif", fontText: "'Manrope', ui-sans-serif, system-ui, sans-serif",
+    fontMono: "'IBM Plex Mono', ui-monospace, monospace", dispWeight: 500, cartouche: "James Wild & Co",
+    vars: { "--leaf": "#FFFFFF", "--paper": "#FFFFFF", "--paper-2": "#F4F2EF", "--sepia": "#6B635A", "--jwc-ink-soft": "#6B635A",
+      "--rule": "#DCD7D0", "--deep": "#1A1816", "--brass": "#CFC8BF", "--jwc-ink": "#2E2B28",
+      "--type": "'IBM Plex Mono', ui-monospace, monospace", "--serif": "'Cormorant Garamond', Georgia, serif",
+      "--display": "'IBM Plex Mono', ui-monospace, monospace", "--body": "'Manrope', ui-sans-serif, system-ui, sans-serif" } };
   var MODE = { air: "a", flight: "a", plane: "a", sea: "s", ship: "s", vessel: "s", boat: "w", zodiac: "w",
     kayak: "w", land: "l", road: "l", rail: "l", drive: "l", transfer: "l", walk: "f", foot: "f", hike: "f",
     heli: "h", helicopter: "h" };
   var LEGEND = { a: "By air", s: "Under way", w: "By boat", l: "Overland", f: "On foot", h: "By helicopter" };
-  var LG_STYLE = { a: "dotted", s: "dashed", w: "dashed", l: "solid", f: "dotted", h: "dotted" };
+  var LG_STYLE = { a: "dashed", s: "dashed", w: "dashed", l: "solid", f: "dotted", h: "dotted" };
 
   function cssVars(v) { return Object.keys(v).map(function (k) { return k + ":" + v[k]; }).join(";"); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
@@ -61,7 +60,10 @@
       if (s.nolabel) w.nf = true;
       // "path": [[lng,lat], …] from the previous stop to this one. Its bends become unmarked steering
       // points (v), so the line follows the road or channel instead of a straight arc. At most 4 kept.
-      if (i > 0 && s.path && s.path.length > 2) {
+      // A sea lane (s.lane "sea": scripts/sealanes.py routed it round the charted land) is drawn whole, every turn
+      // kept, as one leg (w.p), so the line and the boat go round the islands exactly as the 3D map draws them.
+      if (i > 0 && s.lane === "sea" && s.path && s.path.length > 2) w.p = s.path.map(function (p) { return [+p[1], +p[0]]; });
+      else if (i > 0 && s.path && s.path.length > 2) {
         var inner = s.path.slice(1, -1), keep = Math.min(4, inner.length);
         for (var j = 0; j < keep; j++) {
           var p = inner[Math.round((j + 1) * (inner.length + 1) / (keep + 1)) - 1] || inner[j];
@@ -71,7 +73,7 @@
       wp.push(w);
     });
     var dt = {};
-    if (r.days && typeof r.days === "object") Object.keys(r.days).forEach(function (k) { dt[k] = r.days[k]; });
+    if (r.days && typeof r.days === "object") Object.keys(r.days).forEach(function (k) { var v = String(r.days[k] == null ? "" : r.days[k]); dt[k] = v.charAt(0).toUpperCase() + v.slice(1); });
     return { title: r.title, sub: r.subtitle || "", wp: wp, dt: dt };
   }
 
@@ -84,12 +86,15 @@
     }).join("");
     return '' +
       '<div class="jwc entrance" id="chart" style="--jwc-vol:' + o.pal.vol + ';' + cssVars(Object.assign({}, THEME.vars, o.pal.vars || {})) + '">' +
-      '<div class="stage" id="stage" tabindex="0" aria-label="Animated route map. Drag to turn the globe; use plus and minus to zoom.">' +
+      '<div class="head"><div class="ovk">' + esc(o.kicker) + '</div><h3 id="routeTitle"></h3><p id="routeSub"></p></div>' +
+      '<div class="stage" id="stage" tabindex="0" aria-label="Animated route map. Click the map, then scroll or press plus and minus to zoom; Ctrl or Cmd with the wheel zooms too. On a phone, use two fingers.">' +
       '<canvas id="globe" role="img" aria-label="' + esc(o.alt) + '"></canvas>' +
-      '<div class="overlay"><div class="ovk">' + esc(o.kicker) + '</div><h3 id="routeTitle"></h3><p id="routeSub"></p>' +
-      '<div class="readout" aria-live="polite"><div class="row1"><span id="day">DAY 01</span><span id="status">THE GLOBE</span></div><div class="coord" id="cx"></div><div class="way" id="way"></div></div></div>' +
+      '<div class="overlay"><div class="readout" aria-live="polite"><div class="row1"><span id="day">DAY 01</span><span id="status"></span></div><div class="way" id="way"></div><div class="coord" id="cx" hidden></div></div></div>' +
       '<div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="fs" aria-label="Full screen">⤢</button></div>' +
-      '<div class="hud" aria-hidden="true"><span id="hZoom">ZOOM ×1</span><span id="hStep">GRATICULE</span><span id="hCentre"></span><span id="hNote">LOADING…</span></div>' +
+      '<div class="hud" aria-hidden="true"><span class="bar" id="hBar"></span><span id="hScale"></span><span id="hCentre"></span></div>' +
+      '<p class="hint" id="hint" aria-hidden="true">Ctrl or Cmd and scroll to zoom</p>' +
+      '<button type="button" class="explore-btn" id="explore">Tap to explore</button>' +
+      '<button type="button" class="done-btn" id="done">Done</button>' +
       '</div>' +
       '<div class="ctrlbar">' +
       (o.routes.length > 1 ? '<div class="routes" role="group" aria-label="Choose a route">' + routeBtns + '</div>' : '<div class="routes" hidden>' + routeBtns + '</div>') +
@@ -188,8 +193,19 @@ function slerp(a,b,t){var A=toV(a[0],a[1]),B=toV(b[0],b[1]);var w=Math.acos(clam
   if(s<1e-9)return [a[0]+(b[0]-a[0])*t,a[1]+wrap(b[1]-a[1])*t];var k1=Math.sin((1-t)*w)/s,k2=Math.sin(t*w)/s;
   return toLL([k1*A[0]+k2*B[0],k1*A[1]+k2*B[1],k1*A[2]+k2*B[2]])}
 function gcd(a,b){var A=toV(a[0],a[1]),B=toV(b[0],b[1]);return Math.acos(clamp(A[0]*B[0]+A[1]*B[1]+A[2]*B[2],-1,1))/D}
+/* the route's bounding-box diagonal in km; the zoom cap and fit padding that follow from it */
+function spanKm(l){var la=l.map(function(c){return c[0]}),lo=l.map(function(c){return c[1]});return gcd([Math.min.apply(0,la),Math.min.apply(0,lo)],[Math.max.apply(0,la),Math.max.apply(0,lo)])*D*6371}
+function spanCap(km){return km>800?1.2:km>200?1.6:km>50?2.5:4}
+function fitPad(fm,km){return CFG.fitPad!=null?CFG.fitPad:Math.max(km<50?0.006:0.02,fm*(km<200?0.14:0.22))}
 var SEG=30;
 function legPts(a,b){var o=[];for(var j=0;j<=SEG;j++)o.push(slerp(a,b,j/SEG));return o}
+/* a routed sea lane as SEG+1 points like any leg (the boat samples legs by index): every turn kept, the SEG steps shared
+   by length between its segments */
+function lanePts(p){var n=p.length-1;if(n<1||n>SEG)return legPts(p[0],p[n]);var L=[],T=0,i,j;for(i=0;i<n;i++){L.push(gcd(p[i],p[i+1])||1e-9);T+=L[i]}var k=L.map(function(l){return Math.max(1,Math.floor(l/T*SEG))}),s=k.reduce(function(a,b){return a+b},0),bi,bv;while(s<SEG){bi=0;bv=-1;for(j=0;j<n;j++)if(L[j]/k[j]>bv){bv=L[j]/k[j];bi=j}k[bi]++;s++}while(s>SEG){bi=-1;bv=1e18;for(j=0;j<n;j++)if(k[j]>1&&L[j]/(k[j]-1)<bv){bv=L[j]/(k[j]-1);bi=j}if(bi<0)break;k[bi]--;s--}var o=[p[0]];for(i=0;i<n;i++)for(j=1;j<=k[i];j++)o.push(slerp(p[i],p[i+1],j/k[i]));return o}
+/* a flown leg (mode air or helicopter) bows into a gentle arc above the straight course, the way a flight is drawn on a
+   chart; the plane flies it. The bow is to the poleward side of the course, about a sixth of the leg's length. */
+function arcPts(a,b){var o=legPts(a,b),ml=Math.cos((a[0]+b[0])/2*Math.PI/180)||1e-6,dl=((b[1]-a[1]+540)%360)-180,dy=b[0]-a[0],dx=dl*ml,len=Math.hypot(dx,dy);if(len<1e-9)return o;
+ var nx=-dy/len,ny=dx/len;if(ny<0){nx=-nx;ny=-ny}var h=len*.17;return o.map(function(c,j){var k=Math.sin(Math.PI*j/SEG)*h;return [c[0]+ny*k,c[1]+nx*k/ml]})}
 function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
 function sampleAt(p,u){var f=clamp(u,0,1)*(p.length-1),i=Math.floor(f),r=f-i;if(i>=p.length-1)return p[p.length-1];return slerp(p[i],p[i+1],r)}
 function partU(p,u){var f=clamp(u,0,1)*(p.length-1),i=Math.floor(f),o=p.slice(0,i+1);o.push(sampleAt(p,u));return o}
@@ -200,17 +216,27 @@ function coord(c){return dms(c[0],'N','S',2)+'  '+dms(wrap(c[1]),'E','W',3)}
 function geoLine(p){return {type:'LineString',coordinates:p.map(function(c){return [c[1],c[0]]})}}
 
 var COL=CFG.col,INK=CFG.ink||'#24201A';
-var DASH={s:[8,5],w:[8,5],l:[],f:[1,6],a:[2,6],h:[2,4]};
+var DASH={s:[8,5],w:[8,5],l:[],f:[1,6],a:[5,5],h:[2,4]};
 var MODEWORD=Object.assign({s:'UNDERWAY',w:'ON THE WATER',l:'OVERLAND',f:'ON FOOT',a:'IN THE AIR',h:'BY HELICOPTER'},CFG.modeWord||{});
 var KEYS=Object.keys(J);
 KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=[];m.legA=[];
- for(var i=0;i<m.n;i++){var lp=legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
+ for(var i=0;i<m.n;i++){var am=m.wp[i+1].m,lp=(am==='a'||am==='h')?arcPts(m.wp[i].c,m.wp[i+1].c):m.wp[i+1].p?lanePts(m.wp[i+1].p):legPts(m.wp[i].c,m.wp[i+1].c);m.legs.push(lp);m.pts=m.pts.concat(i?lp.slice(1):lp);
   var c=centroid(lp),md=0;lp.forEach(function(p){md=Math.max(md,gcd(c,p))});m.legR.push(clamp(215/((md+(CFG.pad||0.12))*D),320,CFG.maxR||14000));m.legA.push(md*2)}
  m.dayStart={};m.dayWp={};m.wp.forEach(function(w,i){if(m.dayStart[w.d]==null)m.dayStart[w.d]=i;m.dayWp[w.d]=m.dayWp[w.d]||[];if(!w.nf)m.dayWp[w.d].push(w.c)});m.wp.forEach(function(w,i){if(!m.dayWp[w.d].length){m.dayWp[w.d].push(w.c);if(m.wp[i+1])m.dayWp[w.d].push(m.wp[i+1].c)}});m.days=Object.keys(m.dayStart).map(Number).sort(function(a,b){return a-b});
- m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=clamp(215/((md+(CFG.dayPad||0.05))*D),320,CFG.dayMaxR||CFG.maxR||14000)})});
+ /* region first (map audit, 2 Nov 2026): the whole route, padded, is the opening view. No day or chase zooms in further
+    than spanCap() times it (James, 3 Nov 2026: "perhaps zoom in more if shorter trips"): the cap follows the route's
+    bounding-box diagonal, and short routes get a tighter frame so they are not lost in open sea. */
+ var all=m.wp.filter(function(w){return !w.v}).map(function(w){return w.c}),fc=centroid(all),fm=0;all.forEach(function(p){fm=Math.max(fm,gcd(fc,p))});
+ m.spanKm=spanKm(all);
+ m.fitC=fc;m.fitR=clamp(215/((fm+fitPad(fm,m.spanKm))*D),320,CFG.maxR||14000);m.capR=m.fitR*(CFG.zoomCap||spanCap(m.spanKm));
+ m.legR=m.legR.map(function(r){return Math.min(r,m.capR)});
+ m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+Math.min(CFG.dayPad||0.05,Math.max(0.004,m.spanKm/111/12)))*D),320,CFG.maxR||14000))})});
 var HOLD=CFG.hold||1.2,HOLD_END=2.4,LNG=Math.log(270),START=CFG.start||[0,0];
 var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var COARSE=window.matchMedia&&matchMedia('(hover: none) and (pointer: coarse)').matches; /* touch screens: the day card steps aside for Tap to explore */
+var GLOBE=CFG.intro==='globe';
 var S={mode:KEYS[0],phase:'fly',lam:START[1],phi:START[0],lnR:LNG,k:0,t:0,u:0,speed:1,playing:!reduce,manual:false,follow:null,lastDay:null};
+if(!GLOBE){var m0=J[KEYS[0]];S.phi=m0.fitC[0];S.lam=m0.fitC[1];S.lnR=Math.log(m0.fitR)}
 var data={},userTs=0;['wheel','touchmove','keydown','pointerdown'].forEach(function(ev){addEventListener(ev,function(){userTs=Date.now()},{passive:true})});
 function headAt(m,u){return sampleAt(m.pts,u)}
 function viewAt(m,k){return k>=m.n?m.wp[m.n].c:centroid(m.legs[k])}
@@ -219,29 +245,33 @@ function startFly(toC,toLn){var from=[S.phi,S.lam],ang=gcd(from,toC),hi=Math.max
  var mid=Math.min(S.lnR,toLn,LNG+(hi-LNG)*(1-clamp(ang/25,0.12,1)));
  S.fly={from:from,to:toC,a:S.lnR,b:toLn,mid:mid,dur:clamp(1.8+ang/40,1.8,3.8)};S.phase='fly';S.t=0}
 function intro(){S.phase='intro';S.t=0;S.k=0;S.u=0}
-function setMode(k,keepFollow,quick){S.mode=k;S.k=0;S.t=0;S.u=0;S.manual=false;if(!keepFollow)S.follow=null;var m=J[k],d0=m.wp[0].d;if(quick||reduce)startFly(m.dayC[d0],Math.log(m.dayR[d0]));else intro();if(!reduce)S.playing=true;buildUI();syncButtons()}
+function setMode(k,keepFollow,quick){S.focus=false;S.mode=k;var sm=J[k];stage.dataset.spanKm=Math.round(sm.spanKm);stage.dataset.zoomCap=(sm.capR/sm.fitR).toFixed(1);S.k=0;S.t=0;S.u=0;S.manual=false;if(!keepFollow)S.follow=null;var m=J[k],d0=m.wp[0].d;if(quick||reduce)startFly(m.dayC[d0],Math.log(m.dayR[d0]));else intro();if(!reduce)S.playing=true;buildUI();syncButtons()}
 function jump(i){var m=J[S.mode];S.k=clamp(i,0,m.n);S.u=S.k/m.n;S.t=0;S.phase='hold';S.manual=false}
 function showDay(d){var m=J[S.mode];if(m.dayStart[d]==null)return;var i=m.dayStart[d];S.follow=d;S.manual=false;S.playing=true;
+ /* reduced motion: no leg is sailed or flown; the chart and the vehicle go straight to the day's stop */
+ if(reduce){jump(i);S.playing=false;syncButtons();return}
  if(i>0){jump(i-1);S.t=HOLD*.75}else jump(0)}
 function step(rdt){
  var dt=rdt*S.speed,m=J[S.mode],tc=null,tl=0;
+ if(S.phase==='intro'&&!GLOBE){var d1=m.wp[0].d;if(S.playing)S.t+=dt;var kf=1-Math.exp(-rdt*2.6);if(!S.manual){var fcn=slerp([S.phi,S.lam],m.fitC,kf);S.phi=fcn[0];S.lam=fcn[1];S.lnR+=(Math.log(m.fitR)-S.lnR)*kf}
+  if(S.t>=(CFG.introT||2.2)&&!S.manual){if(m.wp[0].nf)startFly(centroid(m.legs[0]),Math.log(m.legR[0]));else startFly(m.dayC[d1],Math.log(m.dayR[d1]))}if(S.lastDay!==d1){S.lastDay=d1;if(window.onChartDay)try{window.onChartDay(S.mode,d1,false)}catch(e){}}return}
  if(S.phase==='intro'){var d0=m.wp[0].d,T=m.dayC[d0];if(S.playing)S.t+=dt;var kz=1-Math.exp(-rdt*2);S.lnR+=(LNG-S.lnR)*kz;
   var targetLam=wrap(T[1]-40+S.t*16);S.lam=wrap(S.lam+wrap(targetLam-S.lam)*(1-Math.exp(-rdt*1.4)));S.phi+=(T[0]*.6-S.phi)*(1-Math.exp(-rdt*1.2));
   if(S.t>=(CFG.introT||3.2)&&!S.manual){if(m.wp[0].nf)startFly(centroid(m.legs[0]),Math.log(m.legR[0]));else startFly(T,Math.log(m.dayR[d0]))}if(S.lastDay!==d0){S.lastDay=d0;if(window.onChartDay)try{window.onChartDay(S.mode,d0,false)}catch(e){}}return}
- if(S.phase==='fly'){if(S.playing)S.t+=dt;var f=S.fly,uu=clamp(S.t/f.dur,0,1),e=ease(uu),c=slerp(f.from,f.to,e);
+ if(S.phase==='fly'){if(S.playing)S.t+=dt;var f=S.fly,uu=reduce?1:clamp(S.t/f.dur,0,1),e=ease(uu),c=slerp(f.from,f.to,e);
   S.phi=c[0];S.lam=c[1];S.lnR=uu<.5?f.a+(f.mid-f.a)*ease(uu*2):f.mid+(f.b-f.mid)*ease(uu*2-1);
-  if(uu>=1){S.phase='hold';S.k=0;S.u=0;S.t=0}return}
+  if(uu>=1){if(S.focus){S.t=f.dur;return}S.phase='hold';S.k=0;S.u=0;S.t=0}return}
  if(S.phase==='hold'){if(S.playing)S.t+=dt;S.u=S.k/m.n;var d=dayOf(m,S.k),hw=m.wp[S.k];if(hw.nf){var lk=S.k<m.n?S.k:S.k-1;tc=centroid(m.legs[lk]);tl=Math.log(m.legR[lk])}else{tc=m.dayC[d];tl=Math.log(m.dayR[d])}
   var gate=S.follow!=null&&S.k<m.n&&dayOf(m,S.k+1)>S.follow&&dayOf(m,S.k)>=S.follow;if(gate&&S.playing&&Date.now()-userTs>(CFG.resume||4000)&&S.t>HOLD*2){S.follow=null;gate=false}
   if(!gate&&S.t>=(S.k>=m.n?HOLD_END:(S.k>0&&m.wp[S.k].nf?0.05:HOLD))){if(S.k<m.n){S.phase='leg';S.t=0}else{S.follow=null;intro();return}}}
- else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;
+ else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;if(reduce)S.t=dur;
   var lu=clamp(S.t/dur,0,1),le=ease(lu);S.u=(S.k+le)/m.n;S.legU=lu;var d1=dayOf(m,S.k),d2=dayOf(m,S.k+1);
   var a=Math.log(m.dayR[d1]),b=Math.log(m.dayR[d2]),lg=Math.log(m.legR[S.k]);
-  var CH=CFG.chase||{},close=Math.log(Math.min(CFG.maxR||30000,CH[lmode]||CH.d||36000)),hd=headAt(m,S.u);
+  var CH=CFG.chase||{},close=Math.log(Math.min(CFG.maxR||30000,m.capR,Math.max(m.fitR,CH[lmode]||CH.d||36000))),hd=headAt(m,S.u);
   var w8=clamp((close-lg)/1.6,0,1),sn=Math.sin(Math.PI*lu);
   tc=slerp(hd,centroid(m.legs[S.k]),w8*Math.pow(sn,.8)*.9);tl=close+(Math.min(lg,close)-close)*Math.pow(sn,.7);S.chase=true;
   if(lu>=1){S.k++;S.phase='hold';S.t=0}}
- if(tc&&!S.manual){var fast=S.phase==='leg',kp=1-Math.exp(-rdt*(fast?9:4.5)),kz2=1-Math.exp(-rdt*(fast?4.5:3.2));var nc=slerp([S.phi,S.lam],tc,kp);S.phi=nc[0];S.lam=nc[1];S.lnR+=(tl-S.lnR)*kz2}
+ if(tc&&!S.manual){var fast=S.phase==='leg',kp=reduce?1:1-Math.exp(-rdt*(fast?9:4.5)),kz2=reduce?1:1-Math.exp(-rdt*(fast?4.5:3.2));var nc=slerp([S.phi,S.lam],tc,kp);S.phi=nc[0];S.lam=nc[1];S.lnR+=(tl-S.lnR)*kz2}
  var cd=S.phase==='fly'?m.wp[0].d:dayOf(m,S.phase==='leg'&&S.legU>.5?S.k+1:S.k);
  S.cardT=(S.cardT||0)+rdt;S.arrT=(S.arrT||0)+rdt;if(S.phase==='hold'&&S.holdK!==S.k){S.holdK=S.k;S.arrT=0}if(S.phase!=='hold')S.holdK=-1;
  if(cd!==S.lastDay){S.lastDay=cd;S.cardT=0;S.cardD=cd;if(window.onChartDay)try{window.onChartDay(S.mode,cd,S.playing&&!S.manual&&S.follow==null)}catch(e){}}
@@ -256,14 +286,14 @@ var SEAI=CFG.seaInk||'#7E8F93',LANDI=CFG.landInk||'#3A3328';
 var patF=makePat(12,6,function(x){x.strokeStyle=SEAI;x.lineWidth=.5;x.beginPath();x.moveTo(0,3);x.lineTo(6,3);x.stroke()});
 var patW=makePat(7,4,function(x){x.strokeStyle=CFG.waveInk||'#3E5560';x.lineWidth=.85;x.beginPath();x.moveTo(0,2);x.lineTo(5,2);x.stroke()});
 var patH=makePat(3.2,3.2,function(x){x.strokeStyle=LANDI;x.lineWidth=.75;x.beginPath();x.moveTo(1.6,-1);x.lineTo(1.6,4.2);x.stroke()},40);
-function rose(){ctx.save();ctx.translate(VW-70,600);ctx.strokeStyle=INK;ctx.fillStyle=INK;ctx.lineWidth=.8;
+function rose(){ctx.save();ctx.translate(VW-48,622);ctx.scale(.6,.6);ctx.strokeStyle=INK;ctx.fillStyle=INK;ctx.lineWidth=.8;
  ctx.beginPath();ctx.arc(0,0,38,0,2*Math.PI);ctx.stroke();ctx.setLineDash([1,3]);ctx.beginPath();ctx.arc(0,0,32,0,2*Math.PI);ctx.stroke();ctx.setLineDash([]);
  [[0,-52,5,-5],[0,52,-5,5],[-52,0,-5,-5],[52,0,5,5]].forEach(function(a){ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(a[2],a[3]);ctx.lineTo(0,0);ctx.closePath();ctx.fill()});
  [[0,-52,-5,-5],[0,52,5,5],[-52,0,-5,5],[52,0,5,-5]].forEach(function(a){ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(a[2],a[3]);ctx.lineTo(0,0);ctx.closePath();ctx.stroke()});
  ctx.fillStyle=CFG.roseInk||INK;ctx.beginPath();ctx.moveTo(0,-52);ctx.lineTo(4,-8);ctx.lineTo(0,0);ctx.closePath();ctx.fill();
  ctx.fillStyle=INK;ctx.font="600 17px "+FT;ctx.textAlign='center';ctx.fillText('N',0,-58);ctx.restore()}
 function label(txt,x,y,color,italic){ctx.font=italic?"italic "+FW+" 18px "+FD:"700 12.5px "+FM;ctx.lineJoin='round';ctx.lineWidth=4.5;ctx.strokeStyle=PAPER;ctx.strokeText(txt,x,y);ctx.fillStyle=color||INK;ctx.fillText(txt,x,y)}
-var PAPER=CFG.paper||'#FBF8F1';
+var PAPER=CFG.paper||'#FBF8F1',ACC=CFG.active||'#8B2525';
 function icon(mode,x,y,ang){var col=COL[mode]||INK;ctx.save();ctx.translate(x,y);
  ctx.beginPath();ctx.arc(0,0,11,0,7);ctx.fillStyle=PAPER;ctx.fill();ctx.strokeStyle=col;ctx.lineWidth=2.4;ctx.stroke();
  ctx.fillStyle=col;ctx.strokeStyle=col;
@@ -286,7 +316,9 @@ function vYacht(col,now,moving){
  ctx.fillStyle=PAPER;ctx.fillRect(-7,-3,8,6);ctx.strokeRect(-7,-3,8,6);ctx.strokeStyle=INK;hatchRect(-7,-3,8,6,1.6);
  ctx.fillStyle=INK;for(var w=0;w<4;w++)ctx.fillRect(3.4,-3+w*1.7,1.1,.9);
  ctx.beginPath();ctx.arc(9,0,1.3,0,7);ctx.stroke();ctx.beginPath();ctx.ellipse(-13.8,0,1.4,3.4,0,0,7);ctx.fillStyle=col;ctx.fill();
- ctx.fillStyle=col;ctx.fillRect(-15.5,-.5,2,1)}
+ ctx.fillStyle=col;ctx.fillRect(-15.5,-.5,2,1);
+ /* the house pennant at the masthead, streaming aft: the one crimson touch (House Standard) */
+ ctx.beginPath();ctx.moveTo(9,-.4);ctx.lineTo(1.5,-4.2);ctx.lineTo(3.6,-1.6);ctx.lineTo(1.5,1);ctx.closePath();ctx.fillStyle=ACC;ctx.fill();ctx.strokeStyle=PAPER;ctx.lineWidth=.5;ctx.stroke()}
 function vPlane(col,now,alt){
  var sh=alt*22;ctx.save();ctx.globalAlpha=.16+alt*.06;ctx.translate(sh,sh*1.1);ctx.scale(.94,.94);planeShape('rgba(36,32,26,1)','rgba(36,32,26,1)',now,true);ctx.restore();
  var sc=1+alt*.35;ctx.scale(sc,sc);planeShape(PAPER,INK,now,false,col)}
@@ -295,7 +327,7 @@ function planeShape(fill,ink,now,flat,col){ctx.lineJoin='round';ctx.fillStyle=fi
  ctx.beginPath();ctx.moveTo(15,0);ctx.bezierCurveTo(14,-2.6,10,-3,6,-3);ctx.lineTo(-17,-1.8);ctx.lineTo(-20,-.8);ctx.lineTo(-20,.8);ctx.lineTo(-17,1.8);ctx.lineTo(6,3);ctx.bezierCurveTo(10,3,14,2.6,15,0);ctx.fill();if(!flat)ctx.stroke();
  ctx.beginPath();ctx.moveTo(-15,-1.4);ctx.lineTo(-18,-8);ctx.lineTo(-20,-8);ctx.lineTo(-19.2,-1.2);ctx.moveTo(-15,1.4);ctx.lineTo(-18,8);ctx.lineTo(-20,8);ctx.lineTo(-19.2,1.2);ctx.fill();if(!flat)ctx.stroke();
  if(flat)return;
- ctx.fillStyle=col||ink;ctx.fillRect(-14,-.7,22,1.4);ctx.fillStyle=ink;for(var i=0;i<4;i++)ctx.fillRect(-1+i*2.4,-2.2,1.2,.8);
+ ctx.fillStyle=ACC;ctx.fillRect(-14,-.7,22,1.4);ctx.fillStyle=ink;for(var i=0;i<4;i++)ctx.fillRect(-1+i*2.4,-2.2,1.2,.8);
  ctx.save();ctx.translate(15.6,0);ctx.globalAlpha=.35;ctx.beginPath();ctx.ellipse(0,0,1.2,7,0,0,7);ctx.stroke();ctx.globalAlpha=1;ctx.rotate(Math.sin(now/22)*.9);ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(0,-6.5);ctx.lineTo(0,6.5);ctx.stroke();ctx.restore()}
 function vHeli(col,now,alt){var sh=alt*16;ctx.save();ctx.globalAlpha=.18;ctx.translate(sh,sh);ctx.fillStyle=INK;ctx.beginPath();ctx.ellipse(2,0,8,4.5,0,0,7);ctx.fill();ctx.fillRect(-15,-1,12,2);ctx.restore();
  ctx.lineJoin='round';ctx.fillStyle=PAPER;ctx.strokeStyle=INK;ctx.lineWidth=1.1;ctx.beginPath();ctx.moveTo(10,0);ctx.bezierCurveTo(10,-5,2,-5.5,-3,-3.5);ctx.lineTo(-4,-1);ctx.lineTo(-17,-.8);ctx.lineTo(-17,.8);ctx.lineTo(-4,1);ctx.lineTo(-3,3.5);ctx.bezierCurveTo(2,5.5,10,5,10,0);ctx.fill();ctx.stroke();
@@ -307,7 +339,7 @@ function vJeep(col,now,moving){
  ctx.lineJoin='round';ctx.fillStyle=PAPER;ctx.strokeStyle=INK;ctx.lineWidth=1.2;
  ctx.fillStyle=INK;[[-6.5,-5.2],[4.5,-5.2],[-6.5,4],[4.5,4]].forEach(function(w){ctx.fillRect(w[0],w[1],3.6,1.4)});
  ctx.fillStyle=PAPER;ctx.beginPath();ctx.moveTo(-10,-4.4);ctx.lineTo(8.5,-4.4);ctx.quadraticCurveTo(10.5,-4.4,10.5,-2.4);ctx.lineTo(10.5,2.4);ctx.quadraticCurveTo(10.5,4.4,8.5,4.4);ctx.lineTo(-10,4.4);ctx.closePath();ctx.fill();ctx.stroke();
- ctx.fillStyle=col;ctx.globalAlpha=.28;ctx.fillRect(-8,-3.4,13,6.8);ctx.globalAlpha=1;ctx.strokeRect(-8,-3.4,13,6.8);hatchRect(-7.5,-3,12,6,1.5);
+ ctx.fillStyle=col;ctx.globalAlpha=.28;ctx.fillRect(-8,-3.4,13,6.8);ctx.globalAlpha=1;ctx.strokeRect(-8,-3.4,13,6.8);hatchRect(-7.5,-3,12,6,1.5);ctx.fillStyle=ACC;ctx.fillRect(-7.5,-.6,12,1.2);
  ctx.fillStyle=INK;ctx.fillRect(5.2,-3.4,1.4,6.8);ctx.fillRect(8.6,-3,.8,6);ctx.beginPath();ctx.arc(-11.2,0,2.4,0,7);ctx.fillStyle=PAPER;ctx.fill();ctx.stroke();ctx.beginPath();ctx.arc(-11.2,0,.9,0,7);ctx.fillStyle=INK;ctx.fill();
  ctx.fillRect(6.2,-5.6,1.2,1.2);ctx.fillRect(6.2,4.4,1.2,1.2)}
 function vWalk(col,now,moving,ang){
@@ -323,7 +355,7 @@ function vDhow(col,now,moving){
  for(var r=-6;r<8;r+=3.2){ctx.beginPath();ctx.moveTo(r,-3.6);ctx.lineTo(r,3.6);ctx.lineWidth=.5;ctx.stroke()}
  ctx.beginPath();ctx.moveTo(10,1);ctx.quadraticCurveTo(0,-14,-12,-9);ctx.lineTo(-6,1.5);ctx.closePath();ctx.fillStyle=col;ctx.globalAlpha=.32;ctx.fill();ctx.globalAlpha=1;ctx.lineWidth=1;ctx.stroke();
  ctx.save();ctx.clip();ctx.strokeStyle=INK;hatchRect(-13,-14,24,16,2.4);ctx.restore();ctx.beginPath();ctx.arc(1,0,1.1,0,7);ctx.fillStyle=INK;ctx.fill()}
-function vehicle(mode,x,y,ang,alt,now,moving){var SZ=Object.assign({s:1,w:.8,a:.9,h:.9,l:.55,f:.7},CFG.vehSize||{}),R=Math.exp(S.lnR)*FIT,sc=clamp(R/(CFG.vehScale||9000),1,CFG.vehMax||1.7)*(SZ[mode]||1);
+function vehicle(mode,x,y,ang,alt,now,moving){if(!moving||reduce)now=0;var SZ=Object.assign({s:1,w:.8,a:.9,h:.9,l:.55,f:.7},CFG.vehSize||{}),R=Math.exp(S.lnR)*FIT,sc=clamp(R/(CFG.vehScale||9000),1,CFG.vehMax||1.7)*(SZ[mode]||1);
  if(R<(CFG.vehScale||9000)*1.15&&!(mode==='a'||mode==='h')){icon(mode,x,y,ang);return}
  var col=COL[mode]||INK;ctx.save();ctx.translate(x,y);ctx.scale(sc,sc);
  if(mode==='f'){vWalk(col,now,moving,ang);ctx.restore();return}
@@ -375,26 +407,28 @@ function draw(now){
  function at(c){if(d3.geoDistance([c[1],c[0]],[S.lam,S.phi])>VIS)return null;var q=pr([c[1],c[0]]);if(!q||Math.abs(q[0]-CX)>VW||Math.abs(q[1]-360)>900)return null;return q}
  function dot(c,r,fill,stroke,lw){var q=at(c);if(!q)return null;ctx.beginPath();ctx.arc(q[0],q[1],r,0,2*Math.PI);ctx.fillStyle=fill;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=lw||1.5;ctx.stroke()}return q}
  function line(pts,color,lw,dash,alpha){ctx.save();ctx.globalAlpha=alpha==null?1:alpha;ctx.setLineDash(dash||[]);ctx.strokeStyle=color;ctx.lineWidth=lw;ctx.lineCap='round';ctx.lineJoin='round';ctx.beginPath();path.context(ctx)(geoLine(pts));ctx.stroke();path.context(null);ctx.restore()}
- (CFG.places||[]).forEach(function(p){if(R<(p.minR||0))return;var q=at(p.c);if(q){ctx.save();ctx.font="600 "+(p.size||15)+"px "+FT;ctx.textAlign='center';ctx.fillStyle='rgba(36,32,26,.62)';ctx.fillText(p.n.split('').join(String.fromCharCode(8202)),q[0],q[1]);ctx.restore()}});
+ /* place names: only once the chart is at region level (never on the globe), and never on top of one another (map audit, 2 Nov 2026) */
+ var boxes=[];(CFG.places||[]).forEach(function(p){if(R<(p.minR||CFG.placeMinR||1800))return;var q=at(p.c);if(!q)return;ctx.save();ctx.font="600 "+(p.size||15)+"px "+FT;var t=p.n.split('').join(String.fromCharCode(8202)),w2=ctx.measureText(t).width/2+4,h2=(p.size||15)*.7,bx=[q[0]-w2,q[1]-h2*1.4,q[0]+w2,q[1]+h2*.6];
+  if(boxes.some(function(o){return bx[0]<o[2]&&bx[2]>o[0]&&bx[1]<o[3]&&bx[3]>o[1]})){ctx.restore();return}boxes.push(bx);ctx.textAlign='center';ctx.fillStyle='rgba(46,43,40,.6)';ctx.fillText(t,q[0],q[1]);ctx.restore()});
  if(R>2600){var eq=at([0,S.lam+span*.85]);if(eq)label('0°00′ — The Line',eq[0]+6,eq[1]-9,CFG.lineInk||'#A8843F',true)}
  var u=S.phase==='fly'?0:S.u,f=u*m.n,li=Math.min(m.n-1,Math.floor(f)),r=f-li;
- m.legs.forEach(function(lp,j){var md=m.wp[j+1].m;line(lp,COL[md],1.5,md==='l'?[1,4]:(DASH[md].length?DASH[md]:[1,4]),.4)});
+ m.legs.forEach(function(lp,j){var md=m.wp[j+1].m;line(lp,COL[md],1.8,md==='l'?[1,4]:(DASH[md].length?DASH[md]:[1,4]),.62)});
  if(u>.0005){m.legs.forEach(function(lp,j){var md=m.wp[j+1].m,seg=j<li?lp:(j===li?partU(lp,r):null);if(!seg)return;line(seg,PAPER,8);line(seg,COL[md],md==='a'?2.2:3.1,DASH[md])})}
- var drawn={},big=R>900;m.wp.forEach(function(w,j){if(w.v)return;var id=w.c.join();if(drawn[id])return;drawn[id]=1;var col=COL[(j?w.m:m.wp[1].m)],done=S.phase!=='fly'&&j<=S.k;var q=dot(w.c,big?10:4.6,done?col:PAPER,col,1.7);
+ var drawn={},big=R>900;S.hits=[];m.wp.forEach(function(w,j){if(w.v)return;var id=w.c.join();if(drawn[id])return;drawn[id]=1;var col=COL[(j?w.m:m.wp[1].m)],done=S.phase!=='fly'&&S.phase!=='intro'&&j<=S.k;if(done&&S.phase==='hold'&&j===S.k&&CFG.active)col=CFG.active;var q=dot(w.c,big?10:4.6,done?col:PAPER,col,1.7);if(q)S.hits.push([q[0],q[1],j]);
   if(q&&big){ctx.font="700 11px "+FM;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle=done?PAPER:col;ctx.fillText(String(w.d),q[0],q[1]+.5);ctx.textAlign='start';ctx.textBaseline='alphabetic'}});
  if(S.phase==='hold'){var w=m.wp[Math.min(S.k,m.n)],q=at(w.c);if(q){var rc=COL[S.k>0?w.m:m.wp[1].m]||INK;if(S.arrT<1.6&&!reduce){for(var ri=0;ri<2;ri++){var ph=clamp((S.arrT-ri*.35)/1.2,0,1);if(ph<=0||ph>=1)continue;ctx.save();ctx.globalAlpha=(1-ph)*.7;ctx.strokeStyle=rc;ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(q[0],q[1],10+ph*34,0,7);ctx.stroke();ctx.restore()}}
   ctx.save();ctx.globalAlpha=clamp(S.t/.5,0,1);label(w.n.split(' — ').pop(),q[0]+15,q[1]-13,INK,true);ctx.restore()}}
  var md2=m.wp[Math.min(m.n,li+1)].m,hq=at(sampleAt(m.pts,u));
  if(hq){var hp2=at(sampleAt(m.pts,Math.min(1,u+.003))),ang=hp2?Math.atan2(hp2[1]-hq[1],hp2[0]-hq[0]):0;var vm=S.phase==='leg'?md2:(S.k>0?m.wp[Math.min(S.k,m.n)].m:md2);if(S.phase!=='leg'&&S.lastAng!=null)ang=S.lastAng;if(S.phase==='leg')S.lastAng=ang;
   var alt=S.phase==='leg'&&(md2==='a'||md2==='h')?Math.sin(Math.PI*(S.legU||0)):0;if(S.phase==='leg'){var hr=26+8*Math.sin(now/380),hg=ctx.createRadialGradient(hq[0],hq[1],0,hq[0],hq[1],hr);hg.addColorStop(0,'rgba(255,253,246,.85)');hg.addColorStop(1,'rgba(255,253,246,0)');ctx.fillStyle=hg;ctx.beginPath();ctx.arc(hq[0],hq[1],hr,0,7);ctx.fill();vehicle(vm,hq[0],hq[1],ang,alt,now,true)}
-  else if(vm==='s'||vm==='w'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* a vessel at anchor stays on the chart between legs (and parked at the start with reduced motion) */
+  else if(vm!=='f'){vehicle(vm,hq[0],hq[1],ang,0,now,false)}   /* between legs the vehicle rests at the active stop, facing its heading: a vessel at anchor, a plane at the strip, the 4x4 at camp (and with reduced motion it only ever rests) */
   else{var mc=COL[vm]||INK;dot(sampleAt(m.pts,u),7,PAPER,mc,3.2);dot(sampleAt(m.pts,u),2.4,mc)}}
  var vg=ctx.createRadialGradient(CX,360,Math.min(VW,720)*.42,CX,360,Math.max(VW,720)*.78);vg.addColorStop(0,'rgba(36,32,26,0)');vg.addColorStop(1,'rgba(36,32,26,.13)');ctx.fillStyle=vg;ctx.fillRect(0,0,VW,720);
- var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';
-  ctx.font="italic "+FW+" 30px "+FD;var tw=Math.min(VW-60,ctx.measureText(DT).width+90);var bg=ctx.createLinearGradient(CX-tw/2-60,0,CX+tw/2+60,0);bg.addColorStop(0,'rgba(251,248,242,0)');bg.addColorStop(.18,'rgba(251,248,242,.92)');bg.addColorStop(.82,'rgba(251,248,242,.92)');bg.addColorStop(1,'rgba(251,248,242,0)');ctx.fillStyle=bg;ctx.fillRect(CX-tw/2-60,yy-50,tw+120,74);
+ var DT=(CFG.routes[S.mode].dt||{})[S.cardD];if(DT&&S.cardT<3.6&&S.phase!=='intro'&&!(COARSE&&!S.exploring)){var ca2=Math.min(clamp(S.cardT/.5,0,1),clamp((3.6-S.cardT)/.7,0,1)),yy=640-(1-ca2)*8;ctx.save();ctx.globalAlpha=ca2;ctx.textAlign='center';
+  var fsz=30;ctx.font="italic "+FW+" 30px "+FD;var maxW=Math.max(220,VW-220),mw=ctx.measureText(DT).width;if(mw+90>maxW)fsz=Math.max(17,30*(maxW-90)/mw);ctx.font="italic "+FW+" "+fsz+"px "+FD;var tw=Math.min(maxW,ctx.measureText(DT).width+90);var bg=ctx.createLinearGradient(CX-tw/2-60,0,CX+tw/2+60,0);bg.addColorStop(0,'rgba(251,248,242,0)');bg.addColorStop(.18,'rgba(251,248,242,.92)');bg.addColorStop(.82,'rgba(251,248,242,.92)');bg.addColorStop(1,'rgba(251,248,242,0)');ctx.fillStyle=bg;ctx.fillRect(CX-tw/2-60,yy-50,tw+120,74);
   ctx.fillStyle=CFG.roseInk||INK;ctx.font="700 12px "+FM;var dl='D A Y   '+pad(S.cardD,2);ctx.fillText(dl,CX,yy-26);ctx.strokeStyle=CFG.roseInk||INK;ctx.lineWidth=1;var dw=ctx.measureText(dl).width/2+12;ctx.beginPath();ctx.moveTo(CX-dw-60*ca2,yy-30);ctx.lineTo(CX-dw,yy-30);ctx.moveTo(CX+dw,yy-30);ctx.lineTo(CX+dw+60*ca2,yy-30);ctx.stroke();
-  ctx.fillStyle=INK;ctx.font="italic "+FW+" 30px "+FD;ctx.fillText(DT,CX,yy+8);ctx.restore()}
- ctx.save();ctx.beginPath();ctx.arc(VW-70,600,46,0,7);ctx.fillStyle=''+(CFG.roseBg||'rgba(249,248,243,.82)')+'';ctx.fill();ctx.restore();rose();
+  ctx.fillStyle=INK;ctx.font="italic "+FW+" "+fsz+"px "+FD;ctx.fillText(DT,CX,yy+8);ctx.restore()}
+ ctx.save();ctx.beginPath();ctx.arc(VW-48,622,30,0,7);ctx.fillStyle=''+(CFG.roseBg||'rgba(249,248,243,.82)')+'';ctx.fill();ctx.restore();rose();
  ctx.save();ctx.textAlign='right';ctx.font="italic "+FW+" 17px "+FD;ctx.lineWidth=4;ctx.strokeStyle=PAPER;ctx.strokeText(CFG.cartouche||'James Wild & Co.',VW-14,704);ctx.fillStyle=INK;ctx.fillText(CFG.cartouche||'James Wild & Co.',VW-14,704);ctx.restore();
  return {R:R,st:st,note:note||'LOADING COASTLINES…'};
 }
@@ -410,17 +444,19 @@ function buildUI(){var m=J[S.mode],days=el('days'),led=el('ledger');days.innerHT
   var n=rb.querySelector('.n');n.textContent='D'+pad(w.d,2)+(w.t?' '+w.t:'');n.style.color=col;n.style.borderColor=col;
   rb.querySelector('.c').textContent=coord(w.c)+(i?'  · '+({s:'by sea',w:'by boat',l:'by road',f:'on foot',a:'by air'})[w.m]:'');
   rb.querySelector('.p').textContent=w.n;rb.addEventListener('click',function(){jump(i)});li.appendChild(rb);led.appendChild(li)});cache.on=null}
-function updatePanel(info){var m=J[S.mode];
- setText('hZoom','ZOOM ×'+Math.max(1,Math.round(info.R/270)));setText('hStep','GRATICULE '+info.st+'°');setText('hCentre','CENTRE '+coord([S.phi,S.lam]));setText('hNote',info.note);
+function updatePanel(info){var m=J[S.mode];var rr=String(Math.round(info.R));if(cache.rr!==rr){cache.rr=rr;stage.dataset.r=rr;stage.dataset.phase=S.phase}
+ var kpp=(720/(stage.clientHeight||720))*6371/info.R,km=kpp*56,mag=Math.pow(10,Math.floor(Math.log10(km))),nk=[1,2,5,10].map(function(x){return x*mag}).filter(function(x){return x<=km}).pop()||mag;
+ setText('hScale',(nk>=1?Math.round(nk).toLocaleString('en-US')+' km':Math.round(nk*1000)+' m'));var bw=Math.round(nk/kpp)+'px';if(cache.bw!==bw){cache.bw=bw;el('hBar').style.width=bw}
+ setText('hCentre',coord([S.phi,S.lam]));
  setText('play',S.playing?'PAUSE':'PLAY');
  var u=S.phase==='fly'?0:S.u,kk=Math.min(S.k,m.n),li=Math.min(m.n-1,Math.floor(u*m.n+1e-9)),md=m.wp[li+1].m,w=m.wp[kk];
  setText('cx',coord(headAt(m,u)));el('cx').style.color=COL[S.phase==='leg'?md:(kk?w.m:'s')];
  var status,day,way;
- if(S.phase==='intro'){status='THE GLOBE';day='DAY '+pad(m.wp[0].d,2);way='Finding '+(CFG.placeName||m.wp[0].n.split(' — ')[0])+' on the globe'}else if(S.phase==='fly'){status='SETTING COURSE';day='DAY '+pad(m.wp[0].d,2);way='Bound for '+m.wp[0].n}
+ if(S.focus){status='';day=CFG.focusWord||'THE WATERS';way=S.focusName||''}else if(S.phase==='intro'){status=GLOBE?'THE GLOBE':'THE ROUTE';day='DAY '+pad(m.wp[0].d,2);way=GLOBE?'Finding '+(CFG.placeName||m.wp[0].n.split(' — ')[0])+' on the globe':m.title}else if(S.phase==='fly'){status='SETTING COURSE';day='DAY '+pad(m.wp[0].d,2);way='Bound for '+m.wp[0].n}
  else if(S.phase==='hold'){day='DAY '+pad(w.d,2)+(w.t?' · '+w.t:'');status=S.playing?(CFG.holdWord||'AT ANCHOR'):'PAUSED';way=w.n}
  else{var nw=m.wp[S.k+1];day='DAY '+pad(m.wp[S.k].d,2)+(nw.d!==m.wp[S.k].d?' → '+pad(nw.d,2):'');status=S.playing?MODEWORD[md]:'PAUSED';var fi=S.k,ti=S.k+1;while(fi>0&&m.wp[fi].v)fi--;while(ti<m.n&&m.wp[ti].v)ti++;way=m.wp[fi].n.split(' — ').pop()+'  →  '+m.wp[ti].n.split(' — ').pop()}
  if(S.manual)status='BY HAND';setText('day',day);setText('status',status);setText('way',way);
- var on=S.phase==='fly'?-1:kk;if(cache.on!==on+'|'+S.phase){cache.on=on+'|'+S.phase;var cd=on>=0?m.wp[on].d:-1;
+ var on=S.phase==='fly'||S.phase==='intro'?-1:kk;if(cache.on!==on+'|'+S.phase){cache.on=on+'|'+S.phase;var cd=on>=0?m.wp[on].d:-1;
   Array.prototype.forEach.call(el('days').children,function(b){var d=+b.dataset.d;b.setAttribute('aria-pressed',String(d===cd));b.classList.toggle('passed',S.phase!=='fly'&&on>=0&&d<cd)});
   Array.prototype.forEach.call(el('ledger').querySelectorAll('button'),function(b,i){b.classList.toggle('on',i===on)})}}
 document.querySelectorAll('[data-route]').forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.route)})});
@@ -428,21 +464,49 @@ document.querySelectorAll('[data-speed]').forEach(function(b){b.addEventListener
 el('play').addEventListener('click',function(){S.playing=!S.playing;if(S.playing){S.manual=false;S.follow=null}});
 el('prev').addEventListener('click',function(){S.follow=null;jump(S.phase==='leg'?S.k:S.k-1)});
 el('next').addEventListener('click',function(){S.follow=null;jump(S.k+1)});
-function zoomBy(z){S.manual=true;S.playing=false;S.lnR=clamp(S.lnR+z,Math.log(200),Math.log(CFG.zoomMax||90000))}
+function zoomBy(z){S.manual=true;S.manualTs=Date.now();S.playing=false;S.lnR=clamp(S.lnR+z,Math.log(200),Math.log(CFG.zoomMax||90000))}
 el('zin').addEventListener('click',function(){zoomBy(.45)});el('zout').addEventListener('click',function(){zoomBy(-.45)});
-stage.addEventListener('wheel',function(e){e.preventDefault();zoomBy(-e.deltaY*.0018)},{passive:false});
+/* scroll audit 2 Nov 2026: the wheel zooms only with Ctrl/Cmd held or once the reader has clicked into the chart; otherwise the page scrolls past it */
+stage.addEventListener('wheel',function(e){if(!(e.ctrlKey||e.metaKey||document.activeElement===stage)){var h=el('hint');if(h){h.classList.add('on');clearTimeout(h._t);h._t=setTimeout(function(){h.classList.remove('on')},1400)}return}e.preventDefault();zoomBy(-e.deltaY*.0018)},{passive:false});
+stage.addEventListener('pointerdown',function(e){if(e.pointerType!=='touch'&&!e.target.closest('button'))stage.focus({preventScroll:true})});
+/* phones: one finger always scrolls the page; two fingers pan the chart and pinch to zoom (map audit, 2 Nov 2026) */
+var tp={},pinch=null;function tpn(){return Object.keys(tp).length}
+stage.addEventListener('pointerdown',function(e){if(e.pointerType!=='touch')return;tp[e.pointerId]={x:e.clientX,y:e.clientY};if(tpn()===2){var k=Object.keys(tp),a=tp[k[0]],b=tp[k[1]];pinch={d:Math.hypot(a.x-b.x,a.y-b.y),ln:S.lnR}}},true);
+stage.addEventListener('pointermove',function(e){if(e.pointerType!=='touch'||!tp[e.pointerId])return;tp[e.pointerId]={x:e.clientX,y:e.clientY};if(pinch&&tpn()===2){var k=Object.keys(tp),a=tp[k[0]],b=tp[k[1]],d=Math.hypot(a.x-b.x,a.y-b.y);if(d>0&&pinch.d>0){S.manual=true;S.playing=false;S.lnR=clamp(pinch.ln+Math.log(d/pinch.d),Math.log(200),Math.log(CFG.zoomMax||90000))}}},true);
+function tpEnd(e){delete tp[e.pointerId];if(tpn()<2)pinch=null}stage.addEventListener('pointerup',tpEnd,true);stage.addEventListener('pointercancel',tpEnd,true);
 var drag=null;
-stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;drag={x:e.clientX,y:e.clientY,lam:S.lam,phi:S.phi,id:e.pointerId,moved:false}});
+stage.addEventListener('pointerdown',function(e){if(e.target.closest('button'))return;if(e.pointerType==='touch'&&tpn()<2&&!S.exploring){drag=null;return}drag={x:e.clientX,y:e.clientY,lam:S.lam,phi:S.phi,id:e.pointerId,moved:false}});
 stage.addEventListener('pointermove',function(e){if(!drag||e.pointerId!==drag.id)return;var dx=e.clientX-drag.x,dy=e.clientY-drag.y;
  if(!drag.moved&&Math.hypot(dx,dy)<4)return;if(!drag.moved){drag.moved=true;stage.setPointerCapture(e.pointerId);stage.classList.add('dragging');S.manual=true;S.playing=false}
  var R=Math.exp(S.lnR)*FIT,px=(stage.clientHeight||stage.clientWidth)/720,dpp=(1/(R*px))/D;S.lam=wrap(drag.lam-dx*dpp);S.phi=clamp(drag.phi+dy*dpp,-85,85)});
 function endDrag(){drag=null;stage.classList.remove('dragging')}
 stage.addEventListener('pointerup',endDrag);stage.addEventListener('pointercancel',endDrag);
 stage.setAttribute('tabindex','0');stage.addEventListener('keydown',function(e){var k=e.key;if(k===' '){e.preventDefault();el('play').click()}else if(k==='ArrowRight'){e.preventDefault();el('next').click()}else if(k==='ArrowLeft'){e.preventDefault();el('prev').click()}else if(k==='+'||k==='='){zoomBy(.45)}else if(k==='-'){zoomBy(-.45)}});
-var fsb=el('fs');if(fsb){var host=el('chart')||stage;var canFs=!!(host.requestFullscreen||host.webkitRequestFullscreen);if(!canFs)fsb.hidden=true;fsb.addEventListener('click',function(){try{var fe=document.fullscreenElement||document.webkitFullscreenElement;if(fe){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{var p=(host.requestFullscreen||host.webkitRequestFullscreen).call(host);if(p&&p.catch)p.catch(function(){fsb.hidden=true})}}catch(err){fsb.hidden=true}})}
-window.chartDay=function(k,d){if(!J[k])return;if(S.mode!==k)setMode(k,true,true);showDay(d)};
-window.chartRoute=function(k,scroll){if(J[k]){if(S.mode!==k)setMode(k,false,false);if(scroll)stage.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})}};
-[['l110',CFG.globe||'data/land-110m.geo.json'],['region',CFG.region],['overlay',CFG.overlay],['contours',CFG.contours],['terrain',CFG.terrain&&CFG.terrain.src]].forEach(function(p){if(!p[1])return;fetch(p[1]).then(function(r){return r.json()}).then(function(j){if(p[0]==='region'&&j&&j.features)j={type:'FeatureCollection',features:j.features.filter(function(f){var L=f.properties&&f.properties.layer;return !L||L==='land'})};if(p[0]==='terrain')j=j.map(function(q){return {c:[q[0],q[1]],v:toV(q[1],q[0]),t:q[2],l:q[3]}});data[p[0]]=j;landKey=''}).catch(function(){})});
+/* Explore (map audit, 3 Nov 2026; James on iPhone: "tap and zoom don't work"). On a page the chart never takes a
+   finger: one finger scrolls the page, and the chart's own buttons (+, -, full screen, the days) always work. "Tap to
+   explore" (touch screens) lifts the chart into a full-screen layer where one finger pans, two fingers pinch, a double
+   tap zooms in and a tap on a stop sails to it; "Done" puts it back. The full-screen button does the same where the
+   browser has no element full screen (iPhone Safari). While exploring, or for 15 s after a zoom by hand, the day log's
+   scroll no longer moves the chart. */
+var chartEl=el('chart'),home=null;
+function explore(on){if(on===!!S.exploring)return;S.exploring=on;
+ if(on){home=document.createComment('jwc');chartEl.parentNode.insertBefore(home,chartEl);document.body.appendChild(chartEl);document.documentElement.classList.add('jwc-locked');S.manual=true;S.manualTs=Date.now();S.playing=false}
+ else{if(home&&home.parentNode){home.parentNode.insertBefore(chartEl,home);home.remove()}document.documentElement.classList.remove('jwc-locked');S.manualTs=Date.now()}
+ chartEl.classList.toggle('exploring',on);var b=on?el('done'):el('explore');if(b)try{b.focus({preventScroll:true})}catch(e){}resize();landKey=''}
+el('explore').addEventListener('click',function(){explore(true)});el('done').addEventListener('click',function(){explore(false)});
+addEventListener('keydown',function(e){if(S.exploring&&e.key==='Escape')explore(false)});
+var lastTap=0,tapAt=null;function toUnits(cx,cy){var r=stage.getBoundingClientRect(),k=720/(stage.clientHeight||720);return [(cx-r.left)*k,(cy-r.top)*k]}
+stage.addEventListener('pointerup',function(e){if(e.target.closest('button')||(drag&&drag.moved)||tpn()>0)return;if(e.pointerType==='touch'&&!S.exploring)return;
+ var u=toUnits(e.clientX,e.clientY),now=Date.now();
+ if(now-lastTap<320&&tapAt&&Math.hypot(u[0]-tapAt[0],u[1]-tapAt[1])<40){lastTap=0;var R=Math.exp(S.lnR)*FIT,dpp=1/(R*D);S.lam=wrap(S.lam+(u[0]-CX)*dpp);S.phi=clamp(S.phi-(u[1]-360)*dpp,-85,85);zoomBy(.6);return}
+ lastTap=now;tapAt=u;var best=null,bd=28;(S.hits||[]).forEach(function(h){var d=Math.hypot(h[0]-u[0],h[1]-u[1]);if(d<bd){bd=d;best=h}});
+ if(best){var j=best[2];setTimeout(function(){if(lastTap&&Date.now()-lastTap>=300){S.follow=null;jump(j);S.playing=true;S.manual=false;S.t=HOLD*.5}},330)}},true);
+var fsb=el('fs');if(fsb){var host=el('chart')||stage;var canFs=!!(host.requestFullscreen||host.webkitRequestFullscreen);if(!canFs){fsb.setAttribute('aria-label','Explore full screen');fsb.addEventListener('click',function(){explore(!S.exploring)})}else fsb.addEventListener('click',function(){try{var fe=document.fullscreenElement||document.webkitFullscreenElement;if(fe){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}else{var p=(host.requestFullscreen||host.webkitRequestFullscreen).call(host);if(p&&p.catch)p.catch(function(){fsb.hidden=true})}}catch(err){fsb.hidden=true}})}
+window.chartDay=function(k,d,src){if(!J[k])return;if(src==='scroll'&&(S.exploring||(S.manual&&Date.now()-(S.manualTs||0)<15000)))return;if(S.mode!==k)setMode(k,true,true);showDay(d)};
+window.chartFocus=function(keys,name){keys=(keys||[]).filter(function(k){return J[k]});if(!keys.length)return;var pts=[];keys.forEach(function(k){J[k].wp.forEach(function(w){if(!w.v)pts.push(w.c)})});var c=centroid(pts),md=0;pts.forEach(function(p){md=Math.max(md,gcd(c,p))});
+ var r=clamp(215/((md+fitPad(md,spanKm(pts)))*D),320,CFG.maxR||14000);S.focus=true;S.focusName=name||'';S.follow=null;S.manual=false;S.playing=true;startFly(c,Math.log(r));if(name){setText('routeTitle',name);setText('routeSub',keys.length+(keys.length===1?' route':' routes')+'. Choose a ship and a route to sail one day by day.')}};
+window.chartRoute=function(k,scroll){if(J[k]){if(S.mode!==k||S.focus)setMode(k,false,false);if(scroll)stage.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})}};
+[['l110',CFG.globe||'data/land-110m.geo.json'],['region',CFG.region],['overlay',CFG.overlay],['contours',CFG.contours],['terrain',CFG.terrain&&CFG.terrain.src]].forEach(function(p){if(!p[1])return;fetch(p[1]).then(function(r){return r.json()}).then(function(j){if(p[0]==='region'&&j&&j.features)j={type:'FeatureCollection',features:j.features.filter(function(f){var L=f.properties&&f.properties.layer;return !L||L==='land'})};/* off the polar charts, Antarctica's antimeridian seam drew a band across the southern ocean (map audit, 2 Nov 2026) */if(p[0]==='l110'&&j&&j.features&&!/antarctica|polar/.test(String(CFG.region||''))&&!CFG.keepAntarctica)j={type:'FeatureCollection',features:j.features.filter(function(f){try{var b=d3.geoBounds(f);return b[1][1]>-60}catch(e){return true}})};if(p[0]==='terrain')j=j.map(function(q){return {c:[q[0],q[1]],v:toV(q[1],q[0]),t:q[2],l:q[3]}});data[p[0]]=j;landKey=''}).catch(function(){})});
 var IMG=null;if(CFG.img){var im=new Image();im.onload=function(){var c=document.createElement('canvas');c.width=im.width;c.height=im.height;var x=c.getContext('2d');var f=Math.round(Math.min(im.width,im.height)*.07);
  x.filter='blur('+Math.round(f*.6)+'px)';x.fillStyle='#000';x.fillRect(f,f,im.width-2*f,im.height-2*f);x.filter='none';x.globalCompositeOperation='source-in';x.drawImage(im,0,0);IMG=c};im.src=CFG.img.src}
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){landKey=''});

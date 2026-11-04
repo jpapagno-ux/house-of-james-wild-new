@@ -1,0 +1,133 @@
+{
+ "id": "galaxy-bonita-yacht-baltra-to-baltra-wednesday-to-sunday-4n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "Itinerary C: Eastern Route, 4 nights aboard Galaxy Bonita",
+ "subtitle": "4 nights · Baltra to Baltra, Wednesday to Sunday · Galaxy Bonita",
+ "days": {
+  "1": "arrive Baltra airport, transfer to the yacht and South Plaza",
+  "2": "Black Turtle Cove and Santa Cruz Highlands",
+  "3": "Darwin Bay and El Barranco",
+  "4": "Sullivan Bay, Santiago and Bartolome",
+  "5": "North Seymour, then transfer to Baltra airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "South Plaza",
+   "lat": -0.5833,
+   "lng": -90.1667,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Santa Cruz",
+   "lat": -0.49,
+   "lng": -90.33,
+   "mode": "sea",
+   "path": [
+    [
+     -90.1667,
+     -0.5833
+    ],
+    [
+     -90.1694,
+     -0.5485
+    ],
+    [
+     -90.1717,
+     -0.544
+    ],
+    [
+     -90.1829,
+     -0.5328
+    ],
+    [
+     -90.2458,
+     -0.4811
+    ],
+    [
+     -90.266,
+     -0.4721
+    ],
+    [
+     -90.3266,
+     -0.4879
+    ],
+    [
+     -90.33,
+     -0.49
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Genovesa",
+   "lat": 0.3167,
+   "lng": -89.9583,
+   "mode": "sea",
+   "path": [
+    [
+     -90.33,
+     -0.49
+    ],
+    [
+     -89.9583,
+     0.3167
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santiago",
+   "lat": -0.29,
+   "lng": -90.58,
+   "mode": "sea",
+   "path": [
+    [
+     -89.9583,
+     0.3167
+    ],
+    [
+     -90.58,
+     -0.29
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "North Seymour",
+   "lat": -0.3967,
+   "lng": -90.29,
+   "mode": "sea",
+   "path": [
+    [
+     -90.58,
+     -0.29
+    ],
+    [
+     -90.5401,
+     -0.2852
+    ],
+    [
+     -90.29,
+     -0.3967
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

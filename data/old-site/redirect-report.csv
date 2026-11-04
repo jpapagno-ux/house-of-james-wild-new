@@ -48,7 +48,7 @@ old path,new path,why,old title
 /book/casa-maya-kaan,/stays/casa-maya-kaan,booking page -> stay page,Book your stay at Casa Maya Kaan | Wild Earth Stays
 /book/castaway-island,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Castaway Island | Wild Earth Stays
 /book/castle-leslie,/stays/castle-leslie,booking page -> stay page,Book your stay at Castle Leslie | Wild Earth Stays
-/book/celestia-yacht,/stays/celestia-yacht,booking page -> stay page,Book your stay at Celestia Yacht | Wild Earth Stays
+/book/celestia-yacht,/voyages/ships/celestia,booking page -> Celestia vessel profile,Book your stay at Celestia Yacht | Wild Earth Stays
 /book/chable-yucatan,/stays/chable-yucatan,booking page -> stay page,Book your stay at Chable Yucatan | Wild Earth Stays
 /book/chamilandu-lodge,/stays/chamilandu-lodge,booking page -> stay page,Book your stay at Chamilandu Lodge | Wild Earth Stays
 /book/cheetah-plains,/stays/cheetah-plains,booking page -> stay page,Book your stay at Cheetah Plains | Wild Earth Stays
@@ -60,7 +60,7 @@ old path,new path,why,old title
 /book/como-parrot-cay,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (turks-caicos country page not built yet),Book your stay at Como Parrot Cay | Wild Earth Stays
 /book/como-shambhala-estate,/stays/como-shambhala-estate,booking page -> stay page,Book your stay at Como Shambhala Estate | Wild Earth Stays
 /book/como-uma-canggu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Canggu | Wild Earth Stays
-/book/como-uma-ubud,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Uma Ubud | Wild Earth Stays
+/book/como-uma-ubud,/stays/como-uma-ubud,booking page -> stay page,Book your stay at COMO Uma Ubud | Wild Earth Stays
 /book/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,booking page -> stay page,Book your stay at Conrad Tulum Riviera Maya | Wild Earth Stays
 /book/coot-club,/stays/coot-club,booking page -> stay page,Book your stay at Coot Club | Wild Earth Stays
 /book/cottars-1920-camp,/stays/cottars-1920-camp,booking page -> stay page,Book your stay at Cottars 1920 Camp | Wild Earth Stays
@@ -130,7 +130,7 @@ old path,new path,why,old title
 /book/kudadoo-private-island,/stays/kudadoo-private-island,booking page -> stay page,Book your stay at Kudadoo Private Island | Wild Earth Stays
 /book/kura-boutique-resort,/stays/kura-boutique-resort,booking page -> stay page,Book your stay at Kura Boutique Resort | Wild Earth Stays
 /book/la-cle-south-africa,/stays/la-cle,booking page -> stay page,Book your stay at La Clé | Wild Earth Stays
-/book/la-tahaa,/stays/la-tahaa,booking page -> stay page,Book your stay at Le Taha&#x27;a | Wild Earth Stays
+/book/la-tahaa,/stays/le-tahaa,"booking page -> renamed stay (slug typo), 2 Nov 2026",Book your stay at Le Taha&#x27;a | Wild Earth Stays
 /book/la-valise-tulum,/stays/la-valise-tulum,booking page -> stay page,Book your stay at La Valise Tulum | Wild Earth Stays
 /book/lake-manyara-tree-lodge-by-beyond,/stays/manyara-tree-lodge-by-and-beyond,booking page -> stay page,Book your stay at Lake Manyara Tree Lodge By &amp; Beyond | Wild Earth Stays
 /book/lalibela-reserve,/safaris/lalibela-reserve,booking page -> safari reserve,Book your stay at Lalibela Reserve | Wild Earth Stays
@@ -197,13 +197,13 @@ old path,new path,why,old title
 /book/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,booking page -> stay page,Book your stay at Pearl Resort Le Tikehau | Wild Earth Stays
 /book/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,booking page -> stay page,Book your stay at Pearl Resort Vahine Private Island | Wild Earth Stays
 /book/phinda-homestead-by-beyond,/stays/phinda-homestead-by-and-beyond,booking page -> stay page,Book your stay at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/book/pikaia-lodge,/destinations/south-america/ecuador-galapagos,booking page -> not on the new site yet; country page,Book your stay at Pikaia Lodge | Wild Earth Stays
+/book/pikaia-lodge,/stays/pikaia-lodge,booking page -> stay page,Book your stay at Pikaia Lodge | Wild Earth Stays
 /book/pods-camp-bay,/stays/pods-camp-bay,booking page -> stay page,Book your stay at Pods Camp Bay | Wild Earth Stays
 /book/ponto-dos-gachos,/destinations/south-america/brazil,booking page -> not on the new site yet; country page,Book your stay at Ponta Dos Ganchos | Wild Earth Stays
 /book/post-ranch-inn,/stays/post-ranch-inn,booking page -> stay page,Book your stay at Post Ranch Inn | Wild Earth Stays
 /book/puu-o-hoku-ranch,/stays/pu-u-hoko-ranch,booking page -> stay page,Book your stay at Pu&#x27;u O Hoku Ranch | Wild Earth Stays
 /book/radhoo-tulum,/stays/radhoo-tulum,booking page -> stay page,Book your stay at Radhoo Tulum | Wild Earth Stays
-/book/rascal-voyages,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Rascal Voyages | Wild Earth Stays
+/book/rascal-voyages,/partners/rascal-voyages,"booking page -> Rascal Voyages fleet: Rascal, Rebel and El Aleph",Book your stay at Rascal Voyages | Wild Earth Stays
 /book/rekero-camp-by-asilia,/stays/asilia-rekero-camp,booking page -> stay page,Book your stay at  Asilia Rekero Camp | Wild Earth Stays
 /book/roald-edmundsen,/destinations/polar-antarctica,booking page -> not on the new site yet; region page (antarctica-cruises country page not built yet),Book your stay at HX Cruise Roald Edmundsen | Wild Earth Stays
 /book/royal-davui-island-resort,/stays/royal-davui-island-resort,booking page -> stay page,Book your stay at Royal Davui Island Resort | Wild Earth Stays
@@ -223,7 +223,7 @@ old path,new path,why,old title
 /book/seseka-thornybush,/destinations/africa/south-africa,booking page -> not on the new site yet; country page,Book your stay at Seseka Thornybush  | Wild Earth Stays
 /book/shinta-mani-wild,/stays/shinta-mani-wild,booking page -> stay page,Book your stay at Shinta Mani Wild | Wild Earth Stays
 /book/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,booking page -> stay page,Book your stay at Shipwreck Lodge Namibia | Wild Earth Stays
-/book/silolona-sojourns,/stays/silolona-sojourns,booking page -> stay page,Book your stay at Silolona Sojourns  | Wild Earth Stays
+/book/silolona-sojourns,/voyages/ships/silolona,booking page -> Silolona vessel profile,Book your stay at Silolona Sojourns  | Wild Earth Stays
 /book/singita-boulders-lodge,/stays/singita-boulders,booking page -> stay page,Book your stay at Singita Boulders Lodge | Wild Earth Stays
 /book/singita-castleton,/stays/singita-castleton,booking page -> stay page,Book your stay at Singita Castleton | Wild Earth Stays
 /book/singita-ebony-lodge,/stays/singita-ebony,booking page -> stay page,Book your stay at Singita Ebony Lodge | Wild Earth Stays
@@ -257,7 +257,7 @@ old path,new path,why,old title
 /book/six-senses-residences-courchevel,/stays/six-senses-residences-courchevel,booking page -> stay page,Book your stay at ​Six Senses Residences Courchevel | Wild Earth Stays
 /book/six-senses-rome,/stays/six-senses-rome,booking page -> stay page,Book your stay at Six Senses Rome | Wild Earth Stays
 /book/six-senses-samui,/stays/six-senses-samui,booking page -> stay page,Book your stay at Six Senses Samui | Wild Earth Stays
-/book/six-senses-uluwatu,/stays/six-senses-uluwatu,booking page -> stay page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
+/book/six-senses-uluwatu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Six Senses Uluwatu | Wild Earth Stays
 /book/six-senses-yao-noi,/stays/six-senses-yao-noi,booking page -> stay page,Book your stay at Six Senses Yao Noi | Wild Earth Stays
 /book/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,booking page -> stay page,Book your stay at Six Senses Zil Pasyon | Wild Earth Stays
 /book/somalisa-acacia,/stays/somalisa-acacia,booking page -> stay page,Book your stay at Somalisa Acacia | Wild Earth Stays
@@ -495,7 +495,7 @@ old path,new path,why,old title
 /property/casa-maya-kaan,/stays/casa-maya-kaan,stay page,Casa Maya Kaan | Luxury Stays in Mexico | Wild Earth Stays
 /property/castaway-island,/destinations/oceania/fiji,not on the new site yet; country page,Castaway Island | Luxury Stays in Fiji | Wild Earth Stays
 /property/castle-leslie,/stays/castle-leslie,stay page,Castle Leslie | Luxury Stays in Ireland | Wild Earth Stays
-/property/celestia-yacht,/stays/celestia-yacht,stay page,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
+/property/celestia-yacht,/voyages/ships/celestia,Celestia vessel profile,Celestia Yacht | Luxury Stays in Indonesia | Wild Earth Stays
 /property/chable-yucatan,/stays/chable-yucatan,stay page,Chable Yucatan | Luxury Stays in Mexico | Wild Earth Stays
 /property/chamilandu-lodge,/stays/chamilandu-lodge,stay page,Chamilandu Lodge | Luxury Stays in Zambia | Wild Earth Stays
 /property/cheetah-plains,/stays/cheetah-plains,stay page,Cheetah Plains | Luxury Stays in South Africa | Wild Earth Stays
@@ -508,7 +508,7 @@ old path,new path,why,old title
 /property/como-canggu,/destinations/asia/indonesia,not on the new site yet; country page,COMO Canggu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/como-parrot-cay,/destinations/caribbean-mexico,not on the new site yet; region page (turks-caicos country page not built yet),Como Parrot Cay | Luxury Stays in Turks Caicos | Wild Earth Stays
 /property/como-shambhala-estate,/stays/como-shambhala-estate,stay page,Como Shambhala Estate | Luxury Stays in Indonesia | Wild Earth Stays
-/property/como-uma-ubud,/destinations/asia/indonesia,not on the new site yet; country page,COMO Uma Ubud | Luxury Stays in Indonesia | Wild Earth Stays
+/property/como-uma-ubud,/stays/como-uma-ubud,stay page,COMO Uma Ubud | Luxury Stays in Indonesia | Wild Earth Stays
 /property/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,stay page,Conrad Tulum Riviera Maya | Luxury Stays in Mexico | Wild Earth Stays
 /property/coot-club,/stays/coot-club,stay page,Coot Club | Luxury Stays in South Africa | Wild Earth Stays
 /property/corks-vienna-woods,/stays/corks-vienna-woods,stay page,Cork’s Vienna Woods | Luxury Stays in Ireland | Wild Earth Stays
@@ -606,7 +606,7 @@ old path,new path,why,old title
 /property/kwando-tau-pan,/stays/kwando-tau-pan,stay page,Kwando Tau Pan | Luxury Stays in Botswana | Wild Earth Stays
 /property/la-cle,/stays/la-cle,stay page,La Clé | Luxury Stays in South Africa | Wild Earth Stays
 /property/la-residence,/stays/la-residence,stay page,La Residence | Luxury Stays in South Africa | Wild Earth Stays
-/property/la-tahaa,/stays/la-tahaa,stay page,Le Taha&#x27;a | Luxury Stays in Tahiti | Wild Earth Stays
+/property/la-tahaa,/stays/le-tahaa,"renamed stay (slug typo), 2 Nov 2026",Le Taha&#x27;a | Luxury Stays in Tahiti | Wild Earth Stays
 /property/la-valise-tulum,/stays/la-valise-tulum,stay page,La Valise Tulum | Luxury Stays in Mexico | Wild Earth Stays
 /property/lalibela-reserve,/safaris/lalibela-reserve,safari reserve,Lalibela Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/lamai-serengeti,/destinations/africa/tanzania,not on the new site yet; country page,Lamai Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
@@ -681,15 +681,15 @@ old path,new path,why,old title
 /property/pearl-resort-le-tikehau,/stays/pearl-resort-le-tikehau,stay page,Pearl Resort Le Tikehau | Luxury Stays in Tahiti | Wild Earth Stays
 /property/pearl-resort-vahine-private-island,/stays/pearl-resort-vahine-private-island,stay page,Pearl Resort Vahine Private Island | Luxury Stays in Tahiti | Wild Earth Stays
 /property/phinda-homestead-by-and-beyond,/stays/phinda-homestead-by-and-beyond,stay page,Phinda Homestead by &amp;Beyond | Luxury Stays in South Africa | Wild Earth Stays
-/property/pikaia-lodge,/destinations/south-america/ecuador-galapagos,not on the new site yet; country page,Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
+/property/pikaia-lodge,/stays/pikaia-lodge,stay page,Pikaia Lodge | Luxury Stays in Ecuador &amp; Galapagos | Wild Earth Stays
 /property/pods-camp-bay,/stays/pods-camp-bay,stay page,Pods Camp Bay | Luxury Stays in South Africa | Wild Earth Stays
 /property/ponta-dos-ganchos,/destinations/south-america/brazil,not on the new site yet; country page,Ponta Dos Ganchos | Luxury Stays in Brazil | Wild Earth Stays
 /property/post-ranch-inn,/stays/post-ranch-inn,stay page,Post Ranch Inn | Luxury Stays in California | Wild Earth Stays
 /property/pu-u-hoko-ranch,/stays/pu-u-hoko-ranch,stay page,Pu&#x27;u O Hoku Ranch | Luxury Stays in Hawaii | Wild Earth Stays
 /property/quinlan-cooke-cahersiveen,/destinations/europe/ireland,not on the new site yet; country page,"Quinlan &amp; Cooke, Cahersiveen | Luxury Stays in Ireland | Wild Earth Stays"
 /property/radhoo-tulum,/stays/radhoo-tulum,stay page,Radhoo Tulum | Luxury Stays in Mexico | Wild Earth Stays
-/property/rascal-voyages,/destinations/asia/indonesia,not on the new site yet; country page,Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
-/property/rayvadee-resort,/stays/rayvadee-resort,stay page,Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
+/property/rascal-voyages,/partners/rascal-voyages,"Rascal Voyages fleet: Rascal, Rebel and El Aleph",Rascal Voyages | Luxury Stays in Indonesia | Wild Earth Stays
+/property/rayvadee-resort,/stays/rayavadee,slug typo fixed 2 Nov 2026 (Rayavadee),Rayvadee Resort | Luxury Stays in Thailand | Wild Earth Stays
 /property/royal-davui-island-resort,/stays/royal-davui-island-resort,stay page,Royal Davui Island Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/royal-malewane,/stays/royal-malewane,stay page,Royal Malewane | Luxury Stays in South Africa | Wild Earth Stays
 /property/rubondo-island-camp-asilia,/stays/rubondo-island-camp-asilia,stay page,Rubondo Island Camp by Asilia | Luxury Stays in Tanzania | Wild Earth Stays
@@ -708,7 +708,7 @@ old path,new path,why,old title
 /property/seseka-thornybush,/destinations/africa/south-africa,not on the new site yet; country page,Seseka Thornybush  | Luxury Stays in South Africa | Wild Earth Stays
 /property/shinta-mani-wild,/stays/shinta-mani-wild,stay page,Shinta Mani Wild | Luxury Stays in Cambodia | Wild Earth Stays
 /property/shipwreck-lodge-namibia,/stays/shipwreck-lodge-namibia,stay page,Shipwreck Lodge Namibia | Luxury Stays in Namibia | Wild Earth Stays
-/property/silolona-sojourns,/stays/silolona-sojourns,stay page,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
+/property/silolona-sojourns,/voyages/ships/silolona,Silolona vessel profile,Silolona Sojourns  | Luxury Stays in Indonesia | Wild Earth Stays
 /property/singita-boulders,/stays/singita-boulders,stay page,Singita Boulders Lodge | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-castleton,/stays/singita-castleton,stay page,Singita Castleton | Luxury Stays in South Africa | Wild Earth Stays
 /property/singita-ebony,/stays/singita-ebony,stay page,Singita Ebony Lodge | Luxury Stays in South Africa | Wild Earth Stays
@@ -744,7 +744,7 @@ old path,new path,why,old title
 /property/six-senses-residences-courchevel,/stays/six-senses-residences-courchevel,stay page,​Six Senses Residences Courchevel | Luxury Stays in France | Wild Earth Stays
 /property/six-senses-rome,/stays/six-senses-rome,stay page,Six Senses Rome | Luxury Stays in Italy | Wild Earth Stays
 /property/six-senses-samui,/stays/six-senses-samui,stay page,Six Senses Samui | Luxury Stays in Thailand | Wild Earth Stays
-/property/six-senses-uluwatu,/stays/six-senses-uluwatu,stay page,Six Senses Uluwatu | Luxury Stays in Indonesia | Wild Earth Stays
+/property/six-senses-uluwatu,/destinations/asia/indonesia,not on the new site yet; country page,Six Senses Uluwatu | Luxury Stays in Indonesia | Wild Earth Stays
 /property/six-senses-yao-noi,/stays/six-senses-yao-noi,stay page,Six Senses Yao Noi | Luxury Stays in Thailand | Wild Earth Stays
 /property/six-senses-zil-pasyon,/stays/six-senses-zil-pasyon,stay page,Six Senses Zil Pasyon | Luxury Stays in Seychelles | Wild Earth Stays
 /property/skybeds-khwai,/stays/skybeds-khwai,stay page,Skybeds Khwai | Luxury Stays in Botswana | Wild Earth Stays
@@ -1020,10 +1020,10 @@ old path,new path,why,old title
 /stay/castaway-island-north-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,North Beach Bure at Castaway Island | Wild Earth Stays
 /stay/castaway-island-ocean-view-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,Ocean View Bure at Castaway Island | Wild Earth Stays
 /stay/castaway-island-south-beach-bure,/destinations/oceania/fiji,room of castaway-island -> not on the new site yet; country page,South Beach Bure at Castaway Island | Wild Earth Stays
-/stay/celestia-deluxe-cabin,/stays/celestia-yacht,room of celestia-yacht -> stay page,Deluxe Cabin at Celestia Yacht | Wild Earth Stays
-/stay/celestia-master-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Master Suite at Celestia Yacht | Wild Earth Stays
-/stay/celestia-owners-suite,/stays/celestia-yacht,room of celestia-yacht -> stay page,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
-/stay/celestia-private-charter,/stays/celestia-yacht,room of celestia-yacht -> stay page,Celestia Private Charter at Celestia Yacht | Wild Earth Stays
+/stay/celestia-deluxe-cabin,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Deluxe Cabin at Celestia Yacht | Wild Earth Stays
+/stay/celestia-master-suite,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Master Suite at Celestia Yacht | Wild Earth Stays
+/stay/celestia-owners-suite,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Owner&#x27;s Suite at Celestia Yacht | Wild Earth Stays
+/stay/celestia-private-charter,/voyages/ships/celestia,room of celestia-yacht -> Celestia vessel profile,Celestia Private Charter at Celestia Yacht | Wild Earth Stays
 /stay/chable-yucatan-casita,/stays/chable-yucatan,room of chable-yucatan -> stay page,Casita at Chable Yucatan | Wild Earth Stays
 /stay/chable-yucatan-family-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Family Villa at Chable Yucatan | Wild Earth Stays
 /stay/chable-yucatan-presidential-villa,/stays/chable-yucatan,room of chable-yucatan -> stay page,Presidential Villa at Chable Yucatan | Wild Earth Stays
@@ -1081,13 +1081,13 @@ old path,new path,why,old title
 /stay/como-shambhala-estate-two-bedroom-pool-villa,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Two-bedroom Pool Villa at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-umabona,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Umabona at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-wanakasa,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Wanakasa at Como Shambhala Estate | Wild Earth Stays
-/stay/como-uma-ubud-como-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,COMO Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-garden-pool-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Garden Pool Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-pool-suite,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Pool Suite at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-terrace-room,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Terrace Room at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-ubud-room,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Ubud Room at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-uma-pool-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Uma Pool Villa at COMO Uma Ubud | Wild Earth Stays
-/stay/como-uma-ubud-uma-villa,/destinations/asia/indonesia,room of como-uma-ubud -> not on the new site yet; country page,Uma Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-como-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,COMO Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-garden-pool-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Garden Pool Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-pool-suite,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Pool Suite at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-terrace-room,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Terrace Room at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-ubud-room,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Ubud Room at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-uma-pool-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Uma Pool Villa at COMO Uma Ubud | Wild Earth Stays
+/stay/como-uma-ubud-uma-villa,/stays/como-uma-ubud,room of como-uma-ubud -> stay page,Uma Villa at COMO Uma Ubud | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-1-king-mobility-accessible-with-roll-in-shower,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,1 King Mobility Accessible with Roll in Shower at Conrad Tulum Riviera Maya | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-ceiba-governors-suite-1-king-bedroom,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,Ceiba Governors Suite 1 King Bedroom at Conrad Tulum Riviera Maya | Wild Earth Stays
 /stay/conrad-tulum-riviera-maya-ceiba-ocean-view-guestroom-with-2-queen-beds,/stays/conrad-tulum-riviera-maya,room of conrad-tulum-riviera-maya -> stay page,Ceiba Ocean View Guestroom with 2 Queen Beds at Conrad Tulum Riviera Maya | Wild Earth Stays
@@ -1268,14 +1268,14 @@ old path,new path,why,old title
 /stay/la-cle-galerie-villa,/stays/la-cle,room of la-cle -> stay page,Galerie Villa at La Clé | Wild Earth Stays
 /stay/la-cle-grange-villa,/stays/la-cle,room of la-cle -> stay page,Grange Villa at La Clé | Wild Earth Stays
 /stay/la-cle-village-rooms-and-suites,/stays/la-cle,room of la-cle -> stay page,Village Rooms and Suites at La Clé | Wild Earth Stays
-/stay/la-tahaa-bora-bora-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Bora Bora Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-end-of-pontoon-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,End‑of‑Pontoon Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-premium-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Premium Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-royal-pool-beach-villa,/stays/la-tahaa,room of la-tahaa -> stay page,Royal Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-sunset-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Sunset Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-tahaa-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Taha’a Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
-/stay/la-tahaa-tahaa-premium-overwater-suite,/stays/la-tahaa,room of la-tahaa -> stay page,Taha’a Premium Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-bora-bora-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Bora Bora Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-end-of-pontoon-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",End‑of‑Pontoon Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-premium-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Premium Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-royal-pool-beach-villa,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Royal Pool Beach Villa at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-sunset-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Sunset Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-tahaa-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Taha’a Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
+/stay/la-tahaa-tahaa-premium-overwater-suite,/stays/le-tahaa,"room of la-tahaa -> renamed stay (slug typo), 2 Nov 2026",Taha’a Premium Overwater Suite at Le Taha&#x27;a | Wild Earth Stays
 /stay/la-valise-tulum-beachfront-master-suite,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Beachfront Master Suite at La Valise Tulum | Wild Earth Stays
 /stay/la-valise-tulum-cenote-master-suite---jungle-side,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Cenote Master Suite - Jungle Side at La Valise Tulum | Wild Earth Stays
 /stay/la-valise-tulum-cenote-suite-lower---jungle-side,/stays/la-valise-tulum,room of la-valise-tulum -> stay page,Cenote Suite Lower - Jungle Side at La Valise Tulum | Wild Earth Stays
@@ -1534,10 +1534,10 @@ old path,new path,why,old title
 /stay/pearl-resort-vahine-private-island-overwater-bungalow,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Overwater Bungalow at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/pearl-resort-vahine-private-island-private-royal-villa,/stays/pearl-resort-vahine-private-island,room of pearl-resort-vahine-private-island -> stay page,Private Royal Villa at Pearl Resort Vahine Private Island | Wild Earth Stays
 /stay/phinda-homestead-by-beyond-exclusive-use-villa,/stays/phinda-homestead-by-and-beyond,room of phinda-homestead-by-and-beyond -> stay page,Exclusive Use Villa at Phinda Homestead by &amp;Beyond | Wild Earth Stays
-/stay/pikaia-lodge-balcony-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Balcony Rooms at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-garden-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Garden Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-pool-suite,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Pool Suite at Pikaia Lodge | Wild Earth Stays
-/stay/pikaia-lodge-terrace-rooms,/destinations/south-america/ecuador-galapagos,room of pikaia-lodge -> not on the new site yet; country page,Terrace Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-balcony-rooms,/stays/pikaia-lodge,room of pikaia-lodge -> stay page,Balcony Rooms at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-garden-suite,/stays/pikaia-lodge,room of pikaia-lodge -> stay page,Garden Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-pool-suite,/stays/pikaia-lodge,room of pikaia-lodge -> stay page,Pool Suite at Pikaia Lodge | Wild Earth Stays
+/stay/pikaia-lodge-terrace-rooms,/stays/pikaia-lodge,room of pikaia-lodge -> stay page,Terrace Rooms at Pikaia Lodge | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-full-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Full Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-coast-house-tree-ocean-view,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Coast House Tree &amp; Ocean View at Post Ranch Inn | Wild Earth Stays
 /stay/post-ranch-inn-lower-pacific-suite,/stays/post-ranch-inn,room of post-ranch-inn -> stay page,Lower Pacific Suite at Post Ranch Inn | Wild Earth Stays
@@ -1578,11 +1578,11 @@ old path,new path,why,old title
 /stay/senda-monteverde-lodge-senda-casita,/stays/senda-monteverde-lodge,room of senda-monteverde-lodge -> stay page,Senda Casita at Senda Monteverde Lodge | Wild Earth Stays
 /stay/senda-monteverde-lodge-superior-room,/stays/senda-monteverde-lodge,room of senda-monteverde-lodge -> stay page,Superior Room at Senda Monteverde Lodge | Wild Earth Stays
 /stay/serian-serengeti-lamai-camp,/stays/serengeti-lamai-camp-by-serian,room of serengeti-lamai-camp-by-serian -> stay page,Serian Lamai Tented Suite at Serengeti Lamai Camp by Serian | Wild Earth Stays
-/stay/silolona-sojourns-asmat-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Asmat Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-bali-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Bali Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-borneo-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Borneo Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-java-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Java Cabin at Silolona Sojourns  | Wild Earth Stays
-/stay/silolona-sojourns-sumba-cabin,/stays/silolona-sojourns,room of silolona-sojourns -> stay page,Sumba Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-asmat-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Asmat Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-bali-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Bali Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-borneo-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Borneo Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-java-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Java Cabin at Silolona Sojourns  | Wild Earth Stays
+/stay/silolona-sojourns-sumba-cabin,/voyages/ships/silolona,room of silolona-sojourns -> Silolona vessel profile,Sumba Cabin at Silolona Sojourns  | Wild Earth Stays
 /stay/singita-boulders-lodge-family-suite,/stays/singita-boulders,room of singita-boulders -> stay page,Family Suite at Singita Boulders Lodge | Wild Earth Stays
 /stay/singita-boulders-lodge-suite,/stays/singita-boulders,room of singita-boulders -> stay page,Suite at Singita Boulders Lodge | Wild Earth Stays
 /stay/singita-castleton-exclusive-use-villa,/stays/singita-castleton,room of singita-castleton -> stay page,Exclusive Use Villa at Singita Castleton | Wild Earth Stays
@@ -1734,15 +1734,15 @@ old path,new path,why,old title
 /stay/six-senses-samui-oceanfront-pool-villa-suites,/stays/six-senses-samui,room of six-senses-samui -> stay page,Oceanfront Pool Villa Suite at Six Senses Samui | Wild Earth Stays
 /stay/six-senses-samui-oceanfront-retreat,/stays/six-senses-samui,room of six-senses-samui -> stay page,Ocean Retreat at Six Senses Samui | Wild Earth Stays
 /stay/six-senses-samui-the-beach-reserve,/stays/six-senses-samui,room of six-senses-samui -> stay page,The Beach Reserve at Six Senses Samui | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villa-one-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa - One Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villa-two-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa Two-Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-cliff-pool-villathree-bedroom-residence,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Cliff Pool Villa Three-Bedroom Residence at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-ocean-view-villa,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Ocean View Villa at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-presidential-villa,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Presidential Villa at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-penthouse-with-pool---two-bedroom,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Penthouse with Pool - Two Bedroom at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-pool-suite,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Pool Suite at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-sky-suite,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,Sky Suite at Six Senses Uluwatu | Wild Earth Stays
-/stay/six-senses-uluwatu-the-retreat,/stays/six-senses-uluwatu,room of six-senses-uluwatu -> stay page,The Retreat at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villa-one-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa - One Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villa-two-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa Two-Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-cliff-pool-villathree-bedroom-residence,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Cliff Pool Villa Three-Bedroom Residence at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-ocean-view-villa,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Ocean View Villa at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-presidential-villa,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Presidential Villa at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-penthouse-with-pool---two-bedroom,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Penthouse with Pool - Two Bedroom at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-pool-suite,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Pool Suite at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-sky-suite,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,Sky Suite at Six Senses Uluwatu | Wild Earth Stays
+/stay/six-senses-uluwatu-the-retreat,/destinations/asia/indonesia,room of six-senses-uluwatu -> not on the new site yet; country page,The Retreat at Six Senses Uluwatu | Wild Earth Stays
 /stay/six-senses-yao-noi-beachfront-pool-villa,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Beachfront Pool Villa at Six Senses Yao Noi | Wild Earth Stays
 /stay/six-senses-yao-noi-beachfront-pool-villa-suite,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Beachfront Pool Villa Suite at Six Senses Yao Noi | Wild Earth Stays
 /stay/six-senses-yao-noi-hideaway-four-bedroom-pool-villa,/stays/six-senses-yao-noi,room of six-senses-yao-noi -> stay page,Hideaway Four-Bedroom Pool Villa at Six Senses Yao Noi | Wild Earth Stays

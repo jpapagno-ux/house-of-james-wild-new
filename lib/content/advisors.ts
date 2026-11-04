@@ -73,10 +73,12 @@ const CARDS: Advisor[] = [
     // he stayed at or walked, with the year; the marks are his own. While the
     // house is in testing he is the advisor on every page (DEFAULT_ADVISOR).
     desk: {
-      adv: "ADV-1982-000001", sample: false, since: 1983, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
+      adv: "ADV-1982-000001", sample: false, since: 1982, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
       countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
-      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road"],
+      // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
+      // URL to follow, so no link yet); surfing Tahiti since 1995.
+      specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Gold Certified Tahiti Specialist"],
       line: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
       entries: [
         { ledgerId: "STY-2026-056524", name: "Wilderness DumaTau", place: "Linyanti · Botswana", href: null, countrySlug: "botswana", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2026, favourite: true }, theirs: { mark: "Stayed", when: "May 2026" }, guests: 0, folios: [], last: "May 26", note: "Elephants cross the channel at four. Nobody is late for that." },
@@ -279,7 +281,14 @@ function withDna(a: Advisor): Advisor {
   const { slug: _s, ledgerId: _l, ...dna } = d;
   return { ...a, dna, line: a.line ?? dna.matchNote ?? null };
 }
-export const ADVISORS: Advisor[] = CARDS.map(withDna);
+/** Every advisor card on file, stand-ins included (`sample: true`: the invented advisors in advisor-samples.ts). */
+export const ALL_ADVISORS: Advisor[] = CARDS.map(withDna);
+/** Stand-ins never render on the public site (James, 3 Nov 2026: no invented people or facts). They stay in the data
+ *  and show only on a deployment that sets NEXT_PUBLIC_SHOW_STAND_INS=true (a preview, to test a layout). */
+export const SHOW_STAND_INS = process.env.NEXT_PUBLIC_SHOW_STAND_INS === "true";
+/** The advisors the site renders: the strip, the chip, "Who plans", /advisors and the profiles, the feed, search,
+ *  llms.txt and the JSON-LD all read this list, so a stand-in is hidden everywhere by this one filter. */
+export const ADVISORS: Advisor[] = SHOW_STAND_INS ? ALL_ADVISORS : ALL_ADVISORS.filter((a) => !a.sample);
 
 // In the field with us: partners who aren't James Wild & Co booking
 // advisors, shown with their own affiliation (old WES team page, 25 Oct 2026).
@@ -321,9 +330,20 @@ export const countryOfRecord = (ledgerId: string) => COUNTRY_OF_RECORD.get(ledge
 
 // Advisors who carry entries in a country, a region, a volume, or a specific
 // Ledger record; the ranking itself lives in lib/advisors/rank.ts (tested).
+/** Region of a country (from the Ledger's own records, already loaded above; no second import for the
+ *  client bundles), so a region page can name the advisors who state a country in it. */
+const REGION_OF_COUNTRY = new Map<string, string>(((staysData as { stays: { countrySlug: string | null; regionSlug: string | null }[] }).stays).filter((x) => x.countrySlug && x.regionSlug).map((x) => [x.countrySlug as string, x.regionSlug as string]));
+export const regionOfCountry = (countrySlug: string) => REGION_OF_COUNTRY.get(countrySlug) ?? null;
+
 export function advisorsFor(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }): AdvisorsFor {
   const pool = PLACE_ADVISORS.map((a) => ({ a, slug: a.slug, entries: a.desk?.entries ?? [], dna: a.dna, deskCountries: a.desk?.countries ?? [], deskVolumes: a.desk?.volumes ?? [] }));
-  return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord });
+  return rankAdvisors(pool, where, { defaultSlug: DEFAULT_ADVISOR, countryOfRecord, regionOf: regionOfCountry });
+}
+
+/** Real advisors who carry a Wild Pathway (Library DNA), James first, open or waitlisted only. */
+export function whoCarries(pathwayId: string): Advisor[] {
+  const real = ADVISORS.filter((a) => !a.sample && a.dna?.pathways.includes(pathwayId) && a.dna.availability !== "closed");
+  return real.sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0));
 }
 
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });
@@ -344,7 +364,7 @@ export const TEAM = {
     title: "Advisors Wanted: Learn the Ledger, Book With James Wild & Co",
     line: "New to travel, or new to us? James Wild & Co is a wholesaler and a hybrid host agency, and it's looking for advisors who'd rather sell what they know than what's in the brochure.",
     points: [
-      { icon: "compass", title: "Learn from the founder", line: "Training rooted in forty-four years on the road and journeys designed since 1983." },
+      { icon: "compass", title: "Learn from the founder", line: "Training rooted in forty-four years on the road and journeys designed since 1982." },
       { icon: "key", title: "Quote the Ledger", line: "Vetted stays, camps, ships and routes, each with a permanent ID and rates re-checked at enquiry." },
       { icon: "route", title: "Book under the house", line: "Plan and book as part of a hybrid host agency, with the house behind every booking." },
     ],

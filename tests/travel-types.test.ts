@@ -8,3 +8,9 @@ test("travel types come from the record's words", () => {
   assert.ok(suitedTo("Exclusive-use villa for groups of ten").includes("Private groups (exclusive use)"));
   assert.equal(suitedTo("wine wine wine spa", ["family"])[0], "Families & generations");
 });
+
+test("a place's own name never earns a type (Galapagos Safari Camp is not a Big Five safari)", () => {
+  const t = suitedTo("Galapagos Safari Camp suits families. Nine Safari Tents and two Family Safari Tents. Day boats from Galapagos Safari Camp.", [], 4, "Galapagos Safari Camp");
+  assert.ok(!t.includes("Big Five safari"));
+  assert.ok(t.includes("Families & generations"));
+});

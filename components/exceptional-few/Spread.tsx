@@ -11,7 +11,7 @@ export default function Spread({ ef, frames, heading = "Why It Made the Cut", af
   const paras = ef.whyItMadeTheCut;
   const sigs = ef.signals;
   return (
-    <section id="why" className="mt-14 md:mt-20 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="why-heading">
+    <section id="why" className="mt-14 md:mt-20" aria-labelledby="why-heading">
       <p className="ledger-eyebrow ef-eyebrow">The Exceptional Few</p>
       <h2 id="why-heading" className="ledger-display text-[2.2rem] md:text-[3.4rem] leading-[1.02] mt-2 max-w-3xl">{heading}</h2>
       <div className="mt-10 md:mt-16 space-y-16 md:space-y-28">

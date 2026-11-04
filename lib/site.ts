@@ -1,4 +1,4 @@
-import { volumeInk } from "@/lib/volumes";
+import { volumeLeather } from "@/lib/volumes";
 import { INBOXES } from "./inbox";
 
 // The house configuration: one place for the name, domain, contact details,
@@ -23,7 +23,7 @@ export const SITE = {
   },
   exploringSince: "1982",
   sailingSince: "1989",
-  designingSince: "1983",
+  designingSince: "1982",
   safariSince: "2011",
   phone: { display: "1.800.419.7000", tel: "+18004197000" },
   // hello@ is the house address: customer enquiries, Travel Notes and all
@@ -55,36 +55,38 @@ export type MegaMenu = {
   intro: string;
   browse: NavLink[];
   ledger: NavLink[]; // filled from the Ledger export in step 5
-  tone?: string; // the volume's colour (lib/volumes.ts, never a hex here): dots in the header, tabs in the footer
+  tone?: string; // the volume's base (lib/volumes.ts volumeLeather, never a hex here): the 5px tab in the menus and footer, the header dot
 };
 
 // Utility row: trust and contact, above the main bar.
 export const UTILITY_NAV: NavLink[] = [
+  { label: "How the house works", href: "/how-the-house-works" },
   { label: "The Compass", href: "/compass" },
   { label: "The Ledger", href: "/the-ledger" },
   { label: "Meet James", href: "/about/founder" },
   { label: "For Advisors", href: "/for-advisors" },
 ];
 
-// Main bar: the five volumes, then Destinations and Journal.
+// Main bar: the volumes in house order (I Stays, II Safaris, III Gatherings, IV Voyages,
+// V Europe, VI Overland: lib/volumes.ts), then Destinations and Journal.
 export const VOLUMES: MegaMenu[] = [
   {
     label: "Stays",
     href: "/stays",
-    tone: volumeInk("stays"),
+    tone: volumeLeather("stays"),
     intro: "Lodges, camps, islands and houses James has vetted in person.",
     browse: [
       { label: "By land", href: "/stays?by=land" },
       { label: "By water", href: "/stays?by=water" },
       { label: "New to the Ledger", href: "/stays/new" },
-      { label: "Stay longer, pay less", href: "/stays/promos" },
+      { label: "On the Horizon: offers", href: "/offers#stays" },
     ],
     ledger: [],
   },
   {
     label: "Safaris",
     href: "/safaris",
-    tone: volumeInk("safaris"),
+    tone: volumeLeather("safaris"),
     intro: "Camps by reserve, from the Sabi Sand to the Okavango.",
     browse: [
       { label: "By country", href: "/destinations/africa" },
@@ -96,7 +98,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Gatherings",
     href: "/gatherings",
-    tone: volumeInk("gatherings"),
+    tone: volumeLeather("gatherings"),
     intro: "Family residences for the generations who travel together.",
     browse: [
       { label: "Celebrations", href: "/gatherings?for=celebrations" },
@@ -107,7 +109,7 @@ export const VOLUMES: MegaMenu[] = [
   {
     label: "Voyages",
     href: "/voyages",
-    tone: volumeInk("voyages"),
+    tone: volumeLeather("voyages"),
     intro: "Small ships and sailing yachts, never the big ones.",
     browse: [
       { label: "By River", href: "/voyages/rivers" },
@@ -116,29 +118,30 @@ export const VOLUMES: MegaMenu[] = [
       { label: "The Whole Ship", href: "/voyages/charter" },
       { label: "The Nile", href: "/voyages/nile" },
       { label: "The Galápagos", href: "/voyages/galapagos" },
-    ],
-    ledger: [],
-  },
-  {
-    label: "Overland",
-    href: "/overland",
-    tone: volumeInk("overland"),
-    intro: "Land routes James designed, with what to expect and what to avoid.",
-    browse: [
-      { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
-      { label: "Designed by James", href: "/overland?stamp=designed" },
+      { label: "On the Horizon: offers", href: "/offers#voyages" },
     ],
     ledger: [],
   },
   {
     label: "Other Europe",
     href: "/europe",
-    tone: volumeInk("europe"),
+    tone: volumeLeather("europe"),
     intro: "Not the capitals and the queues. The valleys, islands and river towns James keeps going back to.",
     browse: [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },
       { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
       { label: "River cruises, before or after", href: "/voyages/rivers" },
+    ],
+    ledger: [],
+  },
+  {
+    label: "Overland",
+    href: "/overland",
+    tone: volumeLeather("overland"),
+    intro: "Land routes James designed, with what to expect and what to avoid.",
+    browse: [
+      { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
+      { label: "Designed by James", href: "/overland?stamp=designed" },
     ],
     ledger: [],
   },
@@ -190,6 +193,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     title: "Before You Go",
     links: [
       { label: "Plan with James", href: "/plan" },
+      { label: "On the Horizon: offers", href: "/offers" },
       { label: "The Compass", href: "/compass" },
       { label: "Free field guides", href: "/field-guides" },
       { label: "Find an advisor", href: "/about/team#advisors" },
@@ -257,6 +261,12 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/europe/greece/dodecanese", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/europe/greece/ionian-islands", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/europe/greece/zagori", priority: 0.8, changeFrequency: "monthly" },
+  // The Galápagos, a place inside Ecuador & Galápagos (James approved, 2 Nov 2026).
+  { path: "/destinations/south-america/ecuador-galapagos/galapagos", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/tahiti/tahaa", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/tahiti/bora-bora", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/tahiti/tuamotu", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/tahiti/marquesas", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
   // The Nile hub and the A&K Sanctuary ships: approved by James, 1 Nov 2026.
@@ -275,6 +285,12 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/amazon", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/galapagos", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/indonesia", priority: 0.8, changeFrequency: "monthly" },
+  // On the Horizon, the site-wide offers hub (James, 2 Nov 2026).
+  { path: "/offers", priority: 0.8, changeFrequency: "daily" },
+  // Voyages category pages (James, 2 Nov 2026), answer-first with a comparison table.
+  { path: "/voyages/honeymoon", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/family", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/voyages/solo", priority: 0.8, changeFrequency: "weekly" },
   { path: "/voyages/ships/beyond-amazon-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/aria-amazon", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/delfin-iii", priority: 0.7, changeFrequency: "monthly" },
@@ -285,6 +301,35 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/ecoventura-evolve-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/alya-catamaran-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/sirius-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  // The Galápagos portfolio: twelve more ship pages (James approved, 2 Nov 2026).
+  { path: "/voyages/ships/galapagos-horizon-trimaran", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/infinity-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/new-galapagos-sea-star", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/natural-paradise-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/grand-majestic-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galapagos-angel-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/calipso-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/monserrat-yacht-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-stella-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/ecogalaxy-catamaran", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-bonita-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/galaxy-orion-yacht", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/star-breeze", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/wind-star", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/tao-philippines", priority: 0.7, changeFrequency: "monthly" },
+  // The Indonesian fleets, partners and charter weeks (James approved, 2 Nov 2026).
+  { path: "/voyages/ships/rascal", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/rebel", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/el-aleph", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/silolona", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/si-datu-bua", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/celestia", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/indonesia/komodo-and-flores-charter", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/voyages/indonesia/raja-ampat-and-misool-charter", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/partners/rascal-voyages", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/silolona-sojourns", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-discoverer", priority: 0.7, changeFrequency: "monthly" },
   // Polar Crossings and the Antarctica21 voyages, and the Antarctica21 partner page (James, 2 Nov 2026).
@@ -299,6 +344,13 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/polar/falklands-south-georgia", priority: 0.7, changeFrequency: "weekly" },
   { path: "/voyages/polar/falklands-south-georgia-antarctica", priority: 0.7, changeFrequency: "weekly" },
   { path: "/partners/antarctica21", priority: 0.6, changeFrequency: "monthly" },
+  // The Galápagos partners (James approved, 2 Nov 2026).
+  { path: "/partners/royal-galapagos", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/galaxy-cruises", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/ecoventura", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/vianatura", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/windstar", priority: 0.6, changeFrequency: "monthly" },
+  { path: "/partners/pearl-resorts", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/komodo/aliikai-5-day-komodo-island", priority: 0.8, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/two-oceans-one-volcano", priority: 0.7, changeFrequency: "monthly" },
   // Journal post and House Sessions: approved 27 Oct 2026.
@@ -316,6 +368,10 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/overland/south-africa/leopards-through-the-lens", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/south-africa/three-generations-at-pioneer", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/south-africa/track-your-life-with-boyd-varty", priority: 0.7, changeFrequency: "monthly" },
+  // Central America Overland routes: approved by James, 2 Nov 2026.
+  { path: "/overland/mexico/yucatan-and-the-riviera-maya-with-chable", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/guatemala/guatemala-in-7-days", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/overland/belize/deep-belize", priority: 0.7, changeFrequency: "monthly" },
 ];
 
 /** Years on the road (exploring since 1982). The house says "44 years" in 2026. */

@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
+import { useSaveData } from "@/lib/useAmbientPlay";
 import type { ShortFilm } from "@/lib/content/films";
 
 // A YouTube Short, looped silently: privacy mode, no controls, nothing to click.
 // The still shows first; the player loads after (on view for panels, after first
 // paint for heroes) and fades in once YouTube's own loading flash has passed.
-// Reduced motion keeps the still.
+// Reduced motion and Save-Data keep the still (the house rule, lib/useAmbientPlay).
 const src = (id: string) =>
   `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&loop=1&playlist=${id}&controls=0&playsinline=1&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0`;
 
@@ -31,7 +32,7 @@ function Player({ film, on, className }: { film: ShortFilm; on: boolean; classNa
 
 function Credit({ film }: { film: ShortFilm }) {
   return (
-    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent text-white pointer-events-none">
+    <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-[rgba(38,20,22,0.88)] to-transparent text-white pointer-events-none">
       <p className="ledger-display text-[15px] leading-tight">James Wild &amp; Co.</p>
       <p className="ledger-eyebrow !text-[9px] !text-white/75 mt-1">{film.credit}</p>
     </div>
@@ -41,14 +42,15 @@ function Credit({ film }: { film: ShortFilm }) {
 /** A framed tall film for a page section. Loads only when scrolled near. */
 export function ShortFilmPanel({ film, className = "", sizes = "(max-width: 768px) 100vw, 300px" }: { film: ShortFilm; className?: string; sizes?: string }) {
   const reduce = useReducedMotionSafe();
+  const save = useSaveData();
   const ref = useRef<HTMLDivElement>(null);
   const [on, setOn] = useState(false);
   useEffect(() => {
-    if (reduce || !ref.current) return;
+    if (reduce || save || !ref.current) return;
     const io = new IntersectionObserver((e) => { if (e.some((x) => x.isIntersecting)) { setOn(true); io.disconnect(); } }, { rootMargin: "300px" });
     io.observe(ref.current);
     return () => io.disconnect();
-  }, [reduce]);
+  }, [reduce, save]);
   return (
     <figure ref={ref} className={`relative aspect-[9/16] overflow-hidden bg-ink ring-1 ring-black/10 ${className}`}>
       <Image src={film.poster} alt={film.alt} fill sizes={sizes} quality={85} className="object-cover" />
@@ -76,12 +78,13 @@ export function ShortFilmBackdrop({ film, top = 116, bottom = 52, frame }: { fil
     mq.addEventListener("change", f);
     return () => mq.removeEventListener("change", f);
   }, []);
+  const save = useSaveData();
   useEffect(() => {
-    if (reduce) return;
+    if (reduce || save) return;
     const go = () => setReady(true);
     const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
     if (w.requestIdleCallback) w.requestIdleCallback(go, { timeout: 1500 }); else setTimeout(go, 600);
-  }, [reduce]);
+  }, [reduce, save]);
   return (
     <>
       <div className="absolute inset-0 overflow-hidden landscape:hidden" aria-hidden="true">
@@ -99,4 +102,15 @@ export function ShortFilmBackdrop({ film, top = 116, bottom = 52, frame }: { fil
       <p className="absolute bottom-5 right-6 landscape:hidden ledger-eyebrow !text-[9px] !text-white/70 z-[1]">{film.credit}</p>
     </>
   );
+}
+
+/**
+ * A film hero with a photograph hero behind it: the film shows (its poster first,
+ * then the player), and where the film cannot play (reduced motion, Save-Data) the
+ * photo hero takes its place. The server renders the film; the swap happens on mount.
+ */
+export function FilmOrStill({ film, still }: { film: ReactNode; still: ReactNode }) {
+  const reduce = useReducedMotionSafe();
+  const save = useSaveData();
+  return <>{reduce || save ? still : film}</>;
 }

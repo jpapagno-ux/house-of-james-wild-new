@@ -92,7 +92,7 @@ export default function CostaRicaPreview() {
       <SiteHeader overlay />
       <main id="main">
         <HeroSlider slides={slides} label={`${D.name} in photographs`}>
-          <div className="h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-24 md:pb-28">
+          <div className="h-full w-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pt-[108px] lg:pt-[200px] pb-24 md:pb-28">
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{D.region.name} · Destination</p>
             <h1 className="ledger-display text-5xl md:text-7xl mt-3">{D.name}</h1>
             <p className="ledger-display italic text-xl md:text-2xl text-white/90 mt-2">{D.subtitle}</p>
@@ -106,7 +106,7 @@ export default function CostaRicaPreview() {
         </HeroSlider>
 
         {/* Region sub-navigation */}
-        <nav aria-label={`${D.region.name} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
+        <nav data-subnav aria-label={`${D.region.name} destinations`} className="border-b ledger-rule bg-paper sticky top-[76px] lg:top-[164px] z-30">
           <div className="max-w-ledger mx-auto px-5 md:px-10 h-12 flex items-center gap-6 overflow-x-auto whitespace-nowrap">
             <Link href="/destinations" className="ledger-eyebrow hover:ledger-crimson">Destinations</Link>
             <span className="ledger-eyebrow" aria-hidden="true">›</span>
@@ -129,7 +129,7 @@ export default function CostaRicaPreview() {
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {/* The Ledger map, directly under the hero */}
-          <section id="the-map" className="pt-10 md:pt-14 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="map-heading">
+          <section id="the-map" className="pt-10 md:pt-14" aria-labelledby="map-heading">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
               <div>
                 <p className="ledger-eyebrow ledger-crimson">The Ledger in {D.name} · {stays.length} filed</p>
@@ -165,7 +165,7 @@ export default function CostaRicaPreview() {
           {/* Journeys & voyages: one card per Overland route or voyage filed for the country */}
           <Journeys country={D.name} journeys={journeysFor("costa-rica")} chart={CHART_COSTA_RICA} />
 
-          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="stays-heading">
+          <section id="stays" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="stays-heading">
             <p className="ledger-eyebrow">Featured stays · from Wild Earth Stays</p>
             <h2 id="stays-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Filed in {D.name}</h2>
             <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -201,7 +201,7 @@ export default function CostaRicaPreview() {
           </Reveal>
 
           {/* The country story */}
-          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 scroll-mt-32 lg:scroll-mt-[212px] space-y-16" aria-label={`${D.name}, the story`}>
+          <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 space-y-16" aria-label={`${D.name}, the story`}>
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <Reveal>
                 <p className="ledger-eyebrow ledger-crimson">{D.name} · the place</p>

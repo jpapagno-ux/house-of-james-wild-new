@@ -69,7 +69,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
 
   if (state === "not_linking" || !host) {
     return (
-      <section id="host" className="scroll-mt-32 lg:scroll-mt-[212px] ledger-paper border ledger-border p-6 md:p-8" aria-labelledby="host-heading">
+      <section id="host" className=" ledger-paper border ledger-border p-6 md:p-8" aria-labelledby="host-heading">
         <p className="ledger-eyebrow ledger-crimson">Meet your host</p>
         <h2 id="host-heading" className="ledger-display text-2xl md:text-3xl mt-2">Speak with the house instead.</h2>
         <p className="mt-4 text-[16px] leading-relaxed max-w-2xl">
@@ -88,7 +88,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
   const seats = host.seats ?? 6;
   const k = KIND[kind];
   return (
-    <section id="host" className="scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="host-heading">
+    <section id="host" className="" aria-labelledby="host-heading">
       <div className="grid lg:grid-cols-[1.05fr_1fr] gap-8 lg:gap-12 items-start">
         <div>
           <p className="ledger-eyebrow ledger-crimson">{k.eyebrow}</p>
@@ -125,7 +125,7 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
             <p className="mt-2 text-[13px] ledger-muted">Families and groups: bring whoever has a say, or a veto. Everyone hears the same answers at once.</p>
           </div>
           <div className="mt-7 flex flex-wrap items-center gap-4">
-            <a href={host.calendlyUrl} className="ledger-btn inline-flex items-center gap-2 !bg-crimson !text-paper hover:!bg-ink hover:!border-ink" data-event="host_call_click" data-host-state="available" data-call="group">
+            <a href={host.calendlyUrl} className="ledger-btn ledger-btn--house inline-flex items-center gap-2" data-event="host_call_click" data-host-state="available" data-call="group">
               <span className="relative inline-flex" aria-hidden="true"><span className="jw-ripple absolute -inset-1 rounded-full border border-paper/70" /><PhoneCall className="jw-ring w-4 h-4" strokeWidth={1.7} /></span> Book the group call
             </a>
             <span className="text-[13px] ledger-muted">Calendly · 30 to 45 minutes · video · no obligation to book</span>

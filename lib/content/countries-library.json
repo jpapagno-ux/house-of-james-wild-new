@@ -1528,31 +1528,17 @@
    ],
    "facts": [],
    "faqs": [],
-   "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Ecuador & Galápagos",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "good",
-      "good",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good"
-     ]
-    }
+   "contentStatus": "needs_review",
+   "months": [],
+   "airports": [
+    [
+     "Seymour Airport (GPS)",
+     "Serves 2 stays in the Ledger here"
+    ]
    ],
-   "airports": [],
    "transfers": [],
-   "flyInto": "Ask James",
-   "bestShort": "Jun–Nov",
+   "flyInto": "GPS",
+   "bestShort": "Ask James",
    "atlasName": "Ecuador"
   },
   {
@@ -1924,7 +1910,7 @@
    "airports": [
     [
      "La Aurora International Airport (GUA)",
-     "Serves 1 stay in the Ledger here"
+     "Serves 3 stays in the Ledger here"
     ],
     [
      "Mundo Maya International Airport (FRS)",
@@ -2577,26 +2563,7 @@
    "facts": [],
    "faqs": [],
    "contentStatus": "none",
-   "months": [
-    {
-     "area": "Across Maldives",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "best",
-      "best"
-     ]
-    }
-   ],
+   "months": [],
    "airports": [
     [
      "Velana International Airport (MLE)",
@@ -2613,7 +2580,7 @@
    ],
    "transfers": [],
    "flyInto": "MLE · DRV",
-   "bestShort": "Nov–Apr",
+   "bestShort": "Ask James",
    "atlasName": "Maldives"
   },
   {
@@ -3349,12 +3316,72 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Palawan: December to April in El Nido (calmest seas), late November to May in Coron, November to May in Puerto Princesa. Siargao: March to September for the dry season, with the biggest surf from September to November. Visayas: November to May at Apo Island, December to May at Moalboal, both per the Department of Tourism."
+    ],
+    [
+     "Getting there",
+     "Fly into Manila, Clark or Cebu, then connect. Puerto Princesa International Airport (PPS) is about 1 hour 15 minutes from Manila. AirSwift flies to Lio Airport (ENI) in El Nido, about 1 hour 20 minutes from Manila. Coron is reached by flying to Busuanga, about 1 to 1.5 hours from Manila. Sayak Airport (IAO) on Siargao is about 2 hours from Manila and 1 hour from Cebu. Dumaguete Sibulan Airport (DGT) serves Dauin and Apo Island."
+    ],
+    [
+     "Who it suits",
+     "Island seekers, surfers, divers and families who want limestone lagoons, private islands and warm Filipino hospitality, from Palawan's Bacuit Bay and Calamian Islands to Siargao's breaks and the reefs of the Visayas."
+    ],
+    [
+     "Signature experiences",
+     "Island hopping in El Nido's Bacuit Archipelago of 45 islands and islets; Coron's lagoons and 1944 wrecks; the 8.2 km Puerto Princesa Underground River, a UNESCO site; surfing Cloud 9 on Siargao; Apo Island's community marine sanctuary; the sardine run at Moalboal; Tubbataha Reefs, a UNESCO marine park in the Sulu Sea."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit the Philippines?",
+     "a": "November to May is the dry season for most island areas. In El Nido the best window is December to April; in Coron, late November to May. Siargao's dry season runs March to September, and its biggest surf arrives September to November. June to October brings rain and boat cancellations."
+    },
+    {
+     "q": "Do I need a visa for the Philippines?",
+     "a": "Citizens of 157 countries, including the United States, United Kingdom, Canada, Australia and all EU states, may enter visa free for up to 30 days. You need a passport valid at least six months beyond your stay and a return or onward ticket. Extensions are made at a Bureau of Immigration office."
+    },
+    {
+     "q": "What is eTravel?",
+     "a": "eTravel is the free online arrival registration every arriving traveller completes, up to 72 hours before arrival, at etravel.gov.ph, the only official site. You show the QR code before boarding and on arrival."
+    },
+    {
+     "q": "How do you get to Palawan?",
+     "a": "Fly from Manila to Puerto Princesa (about 1 hour 15 minutes), to Lio Airport in El Nido on AirSwift (about 1 hour 20 minutes), or to Busuanga for Coron. Many island resorts then continue by boat."
+    },
+    {
+     "q": "What is the Puerto Princesa Underground River?",
+     "a": "It is an 8.2 km navigable river through limestone caves that flows straight into the sea, inside a UNESCO World Heritage park about 76 km northwest of Puerto Princesa. Visitor numbers are capped daily, so book two to four weeks ahead, especially December to May."
+    },
+    {
+     "q": "What are the Philippines' natural UNESCO World Heritage Sites?",
+     "a": "Tubbataha Reefs Natural Park, inscribed in 1993 and extended in 2006, and Puerto Princesa Subterranean River National Park, inscribed in 1999. The country has six World Heritage properties in all, including the Baroque Churches of the Philippines and the Rice Terraces of the Philippine Cordilleras."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Philippines",
+     "area": "Palawan",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    },
+    {
+     "area": "Siargao",
      "note": "From the Ledger's best-months notes",
      "months": [
       "good",
@@ -3367,20 +3394,46 @@
       "best",
       "best",
       "best",
-      "good",
+      "best",
       "good"
+     ]
+    },
+    {
+     "area": "Visayas",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
      ]
     }
    ],
    "airports": [
     [
-     "Sayak Airport (IAO)",
-     "Serves 1 stay in the Ledger here"
+     "El Nido (ENI)",
+     "Serves 6 stays in the Ledger here"
+    ],
+    [
+     "Busuanga (USU)",
+     "Serves 4 stays in the Ledger here"
+    ],
+    [
+     "Bohol-Panglao International Airport (TAG)",
+     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "IAO",
-   "bestShort": "Mar–Oct",
+   "flyInto": "ENI · USU",
+   "bestShort": "Year-round",
    "atlasName": "Philippines"
   },
   {
@@ -4051,7 +4104,7 @@
   },
   {
    "slug": "tahiti",
-   "name": "Tahiti",
+   "name": "French Polynesia (Tahiti)",
    "region": "oceania",
    "regionName": "Oceania",
    "ledgerId": "DST-2026-000056",
@@ -4059,7 +4112,7 @@
    "leading": "Luminous lagoons, volcanic peaks, and lush valleys define this island world where land and sea meet in vivid colour. Waterfalls slip through dense forest, black sand beaches curve along the coast, and flowers scent the warm air. Stays here offer tranquility framed by ocean horizons and tropical greenery. Experience the clarity of the lagoon through snorkeling or kayaking, explore coastal paths, or relax into the island’s unhurried pace. Tahiti invites deep rest shaped by nature’s beauty.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
-    "alt": "Tahiti, Oceania"
+    "alt": "French Polynesia (Tahiti), Oceania"
    },
    "story": [
     {
@@ -4084,7 +4137,7 @@
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
-      "alt": "Tahiti: A Remote Paradise of Water, Light, and Island Life"
+      "alt": "French Polynesia (Tahiti): A Remote Paradise of Water, Light, and Island Life"
      }
     },
     {
@@ -4109,49 +4162,99 @@
      ],
      "image": {
       "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
-      "alt": "Tahiti: Where Island Life and Ocean Beauty Flow Together"
+      "alt": "French Polynesia (Tahiti): Where Island Life and Ocean Beauty Flow Together"
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Dry season May to October, wet season November to April, 20 to 30°C year round. Society Islands: lagoons best May to October. Tuamotu: diving all year, warmest water November to April. Marquesas: year round. Austral: whales July to October. Gambier: lagoon outings November to May. Surf at Teahupo'o: May to October southern swells (Tahiti Tourisme)."
+    ],
+    [
+     "Getting there",
+     "All international flights land at Tahiti Faa'a International Airport (PPT). Nonstop from Los Angeles (about 8 hours), San Francisco (about 8h30) and Honolulu (about 6 hours). Air Tahiti then flies to all five archipelagos: Moorea in 15 minutes, Raiatea and Huahine 40 to 45, Bora Bora 50, Rangiroa 1 hour, Fakarava 1h10. Ferries cross to Moorea in about 30 minutes."
+    ],
+    [
+     "Who it suits",
+     "Couples on lagoon islands, divers in the Tuamotu passes, surfers at Teahupo'o, and travelers who want culture and hiking in the Marquesas."
+    ],
+    [
+     "Signature experiences",
+     "Diving Fakarava's Tumakohua Pass and Rangiroa's Tiputa Pass, watching Teahupo'o break, Taputapuātea on Raiatea and the Marquesas (both UNESCO World Heritage), and island hopping by air, ferry or small ship."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit French Polynesia?",
+     "a": "May to October is the dry season, with sunny days and lower humidity; November to April is warmer and wetter. Diving in the Tuamotu is good all year, and Teahupo'o's big swells come May to October."
+    },
+    {
+     "q": "Do US and EU travelers need a visa for Tahiti?",
+     "a": "EU citizens need no visa, and Tahiti Tourisme says many countries are exempt for tourist stays under three months. Everyone needs a valid passport. Check France's official visa site for your nationality before you book."
+    },
+    {
+     "q": "How do you fly to Tahiti?",
+     "a": "Every international flight lands at Tahiti Faa'a (PPT). Nonstops run from Los Angeles in about 8 hours, San Francisco in about 8h30 and Honolulu in about 6."
+    },
+    {
+     "q": "How do you get between the islands?",
+     "a": "Air Tahiti flies to all five archipelagos and sells multi island passes; ferries link Tahiti and Moorea in about 30 minutes and run to Huahine, Raiatea, Taha'a and Bora Bora two or three times a week; small ships such as Windstar and Aranui 5 cover longer routes."
+    },
+    {
+     "q": "What are the five archipelagos?",
+     "a": "The Society Islands (Tahiti, Moorea, Bora Bora, Taha'a), the Tuamotu (the largest chain of atolls in the world, with Rangiroa, Fakarava and Tikehau), the Marquesas, the Austral Islands and the Gambier."
+    },
+    {
+     "q": "Is any of French Polynesia a UNESCO site?",
+     "a": "Yes. Taputapuātea on Raiatea was inscribed in 2017 and Te Henua Enata, the Marquesas Islands, in 2024. Fakarava and six neighbouring atolls form a UNESCO biosphere reserve."
+    },
+    {
+     "q": "How do you get to Taha'a?",
+     "a": "Taha'a has no airport. Fly from Tahiti to Raiatea with Air Tahiti, then cross the shared lagoon by boat; Tahiti Tourisme puts the crossing at about 30 minutes."
+    },
+    {
+     "q": "Can you fly from Bora Bora straight to the atolls?",
+     "a": "Yes. Air Tahiti flies Bora Bora direct to Rangiroa, Tikehau and Fakarava, so a trip can go from the Society Islands to the Tuamotu without returning to Tahiti."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Tahiti",
+     "area": "Across French Polynesia (Tahiti)",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "good",
-      "good",
       "best",
       "best",
       "best",
       "best",
       "best",
       "best",
-      "good",
-      "good"
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best"
      ]
     }
    ],
    "airports": [
     [
      "Tahiti Faa'a International Airport (PPT)",
-     "Serves 6 stays in the Ledger here"
+     "Serves 7 stays in the Ledger here"
+    ],
+    [
+     "Bora Bora Airport (BOB)",
+     "Serves 3 stays in the Ledger here"
     ],
     [
      "Raiatea Airport (RFP)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Bora Bora Airport (BOB)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "PPT · RFP",
+   "flyInto": "PPT · BOB",
    "bestShort": "May–Oct",
    "atlasName": "Fr. Polynesia"
   },
@@ -4313,12 +4416,94 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Andaman coast (Phuket, Krabi, Phi Phi): November to April. Gulf islands (Samui, Phangan): December to June. The north (Chiang Mai, Chiang Rai): November to February, the cool season (Tourism Authority of Thailand)."
+    ],
+    [
+     "Getting there",
+     "Bangkok has two international airports, Suvarnabhumi (BKK) and Don Mueang (DMK); Chiang Mai, Chiang Rai, Phuket, Hat Yai, Udon Thani and Krabi also have international airports (Tourism Authority of Thailand). From 15 September 2026, nationals of 60 countries and territories, including the United States, United Kingdom, Canada, Australia and every EU member state, may stay up to 30 days visa free for tourism; everyone else applies at thaievisa.go.th (Tourism Authority of Thailand; Ministry of Foreign Affairs). Every non Thai national submits the Thailand Digital Arrival Card online within 3 days before arrival, with no fee (Immigration Bureau, tdac.immigration.go.th)."
+    ],
+    [
+     "Who it suits",
+     "Beach and island travellers, families, wellness seekers, divers, and anyone drawn to temples, food and the hill country of the north."
+    ],
+    [
+     "Signature experiences",
+     "Phang Nga Bay's limestone karsts; the Andaman marine parks, where the Similan Islands reopened on 15 October 2026 and Maya Bay on 1 October, with e tickets at six parks (Tourism Authority of Thailand); Samui's wellness retreats; the Golden Triangle on the Mekong; and nine UNESCO World Heritage properties, from Sukhothai and Ayutthaya to the Khao Yai forests (UNESCO)."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Thailand?",
+     "a": "November to February is the cool season, which the Tourism Authority of Thailand calls a fantastic time to travel. For beaches, the Andaman coast is best from November to April and the Gulf islands from December to June. Source: Tourism Authority of Thailand (tatnews.org, November 2020)."
+    },
+    {
+     "q": "Which coast should I choose, Andaman or Gulf?",
+     "a": "It depends on the month. Phuket, Krabi and Phi Phi on the Andaman side are best from November to April, while Samui and Phangan in the Gulf are best from December to June, so the two coasts cover most of the year between them. Source: Tourism Authority of Thailand."
+    },
+    {
+     "q": "Do I need a visa for Thailand?",
+     "a": "Not for short holidays from most Western countries. Since 15 September 2026, nationals of 60 countries and territories, including the US, UK, Canada, Australia and the EU, can stay up to 30 days visa free for tourism, and land border entries under the exemption are generally limited to twice a calendar year. Others apply on the official e Visa site, thaievisa.go.th. Sources: Tourism Authority of Thailand (tatnews.org, September 2026); Ministry of Foreign Affairs (mfa.go.th, 3 September 2026)."
+    },
+    {
+     "q": "What is the Thailand Digital Arrival Card?",
+     "a": "An online form that replaced the paper arrival card. All non Thai nationals must submit it within 3 days before arriving, at tdac.immigration.go.th, and the official site says no fee is required. Source: Thai Immigration Bureau (tdac.immigration.go.th)."
+    },
+    {
+     "q": "When can I visit the Similan Islands and Maya Bay?",
+     "a": "In the dry season. The Similan Islands reopened on 15 October 2026 after a five month monsoon closure and Maya Bay reopened on 1 October; six marine parks, including Similan, Surin and Phi Phi, have used e tickets since October 2025, and the dry season proper should settle in by December. Source: Tourism Authority of Thailand (tatnews.org, October 2026)."
+    },
+    {
+     "q": "Which airports serve Thailand?",
+     "a": "Bangkok's Suvarnabhumi and Don Mueang, plus international airports at Chiang Mai, Chiang Rai, Phuket, Hat Yai, Udon Thani and Krabi. Source: Tourism Authority of Thailand (tourismthailand.org)."
+    },
+    {
+     "q": "What are Thailand's UNESCO World Heritage sites?",
+     "a": "Thailand has nine. They include the historic towns of Sukhothai and Ayutthaya, Ban Chiang, the Thungyai Huai Kha Khaeng sanctuaries, the Dong Phayayen Khao Yai and Kaeng Krachan forest complexes, Si Thep (2023) and Phu Phrabat (2024). Source: UNESCO World Heritage Centre (whc.unesco.org)."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
-     "area": "Across Thailand",
+     "area": "Andaman coast (Phuket, Krabi, Phi Phi)",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best"
+     ]
+    },
+    {
+     "area": "Gulf islands (Samui, Phangan)",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good",
+      "good",
+      "good",
+      "good",
+      "best"
+     ]
+    },
+    {
+     "area": "The north (Chiang Mai, Chiang Rai)",
      "note": "From the Ledger's best-months notes",
      "months": [
       "best",
@@ -4338,21 +4523,21 @@
    ],
    "airports": [
     [
+     "Phuket International Airport (HKT)",
+     "Serves 5 stays in the Ledger here"
+    ],
+    [
      "Samui International Airport (USM)",
      "Serves 3 stays in the Ledger here"
     ],
     [
      "Krabi International Airport (KBV)",
      "Serves 2 stays in the Ledger here"
-    ],
-    [
-     "Chiang Mai International Airport (CNX)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "USM · KBV",
-   "bestShort": "Nov–Feb",
+   "flyInto": "HKT · USM",
+   "bestShort": "Nov–Jun",
    "atlasName": "Thailand"
   },
   {

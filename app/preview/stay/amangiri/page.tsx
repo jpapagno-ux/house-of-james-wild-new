@@ -145,7 +145,7 @@ export default function AmangiriPreview() {
           <Overview answer={answer} facts={facts} />
 
           {/* 04 The Place: landscape first, then the JW map */}
-          <section id="place" className="mt-16 md:mt-24 border-t ef-rule pt-8 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby="place-heading">
+          <section id="place" className="mt-16 md:mt-24 border-t ef-rule pt-8" aria-labelledby="place-heading">
             <p className="ledger-eyebrow ef-eyebrow">The place</p>
             <h2 id="place-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Canyon Point, and the Rock It Sits In</h2>
             <div className="mt-8 grid lg:grid-cols-[1.4fr_1fr] gap-8 lg:gap-12 items-start">
@@ -173,7 +173,7 @@ export default function AmangiriPreview() {
           {ef.worthAnotherNight && <WorthAnotherNight copy={ef.worthAnotherNight} />}
 
           {/* Questions answered plainly: no FAQ schema until the record is reviewed */}
-          <div id="questions" className="scroll-mt-32 lg:scroll-mt-[212px]"><FaqBlock faqs={faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
+          <div id="questions" className=""><FaqBlock faqs={faqs} title={`${NAME}, Answered Straight`} schema={false} /></div>
 
           {/* 10 Continue the journey · Host Connection / Human Compass */}
           <ContinueTheJourney pathways={pw ? [pw.primary, ...pw.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={journeys} exceptional={[]} compassHref="/compass" hostHref={null} />

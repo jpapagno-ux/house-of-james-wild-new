@@ -128,7 +128,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
 
   const planHref = folio ? toLocal(folio.plan) : null;
   return (
-    <section ref={hostRef} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="iggi-heading" data-iggi-panel>
+    <section ref={hostRef} id="iggi" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="iggi-heading" data-iggi-panel>
       <div className="flex items-start gap-4">
         <span className="text-coast shrink-0"><IggiMark size={44} /></span>
         <div>

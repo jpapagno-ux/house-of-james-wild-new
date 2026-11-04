@@ -61,6 +61,7 @@ FOUNDER_KNOWN = ["vahine", "lion sands", "monwana", "kirkman", "ellerman", "tswa
 def known(name): return 0 if any(k in name.lower() for k in FOUNDER_KNOWN) else 1
 def norm(name): return " ".join(re.sub(r"[^a-z ]", "", name.lower().replace("\u202f", " ")).split()[:2])
 
+LEAD = {"oceania": "tahiti"}
 MARK_ORDER = {"founder_returned": 0, "founder_visited": 1, "founder_vetted": 2, "house_approved": 3, "partner_verified": 4}
 
 out = []
@@ -69,7 +70,8 @@ for slug in REG_ORDER:
     if not r: continue
     countries = []
     region_stays = []
-    for d in sorted([d for d in live_dests if d.get("region_slug") == slug or rid_slug.get(d.get("region_id")) == slug], key=lambda d: d["name"]):
+    # A region page can be led by one country (James, 2 Nov 2026: Oceania is led by French Polynesia (Tahiti)).
+    for d in sorted([d for d in live_dests if d.get("region_slug") == slug or rid_slug.get(d.get("region_id")) == slug], key=lambda d: (0 if LEAD.get(slug) == d.get("webflow_slug") else 1, d["name"])):
         ds = [s for s in stays if s.get("destination_id") == d["id"]]
         for s in ds:
             region_stays.append((s, d))

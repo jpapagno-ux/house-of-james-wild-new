@@ -1,0 +1,254 @@
+{
+ "id": "new-galapagos-sea-star-baltra-to-san-cristobal-thursday-to-tuesday-5n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "6-day cruise C: Baltra to San Cristobal, 5 nights aboard New Galapagos Sea Star",
+ "subtitle": "5 nights · Baltra to San Cristobal, Thursday to Tuesday · New Galapagos Sea Star",
+ "days": {
+  "1": "arrive Baltra, transfer to the yacht and Fausto Llerena Breeding Center, Santa Cruz",
+  "2": "Tintoreras Islet and Sierra Negra Volcano and the Wetlands",
+  "3": "Moreno Point and Elizabeth Bay",
+  "4": "Espinoza Point, Fernandina and Tagus Cove, Isabela",
+  "5": "Espumilla Beach or Buccaneer Cove and Egas Port",
+  "6": "Lobos Island, San Cristobal, then transfer to San Cristobal airport"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Santa Cruz",
+   "lat": -0.7432,
+   "lng": -90.3134,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Isabela",
+   "lat": -0.956,
+   "lng": -90.965,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3134,
+     -0.7432
+    ],
+    [
+     -90.3144,
+     -0.7669
+    ],
+    [
+     -90.3323,
+     -0.7848
+    ],
+    [
+     -90.9281,
+     -0.9819
+    ],
+    [
+     -90.9371,
+     -0.9774
+    ],
+    [
+     -90.965,
+     -0.956
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 3,
+   "name": "Isabela",
+   "lat": -0.71,
+   "lng": -91.33,
+   "mode": "sea",
+   "path": [
+    [
+     -90.965,
+     -0.956
+    ],
+    [
+     -90.9808,
+     -0.9707
+    ],
+    [
+     -91.0495,
+     -1.0038
+    ],
+    [
+     -91.1589,
+     -1.0394
+    ],
+    [
+     -91.2505,
+     -1.0368
+    ],
+    [
+     -91.4134,
+     -1.0267
+    ],
+    [
+     -91.4236,
+     -1.0216
+    ],
+    [
+     -91.4795,
+     -0.9656
+    ],
+    [
+     -91.5126,
+     -0.8995
+    ],
+    [
+     -91.5101,
+     -0.8638
+    ],
+    [
+     -91.4948,
+     -0.8359
+    ],
+    [
+     -91.477,
+     -0.8104
+    ],
+    [
+     -91.4617,
+     -0.7926
+    ],
+    [
+     -91.4083,
+     -0.7392
+    ],
+    [
+     -91.3472,
+     -0.7086
+    ],
+    [
+     -91.33,
+     -0.71
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 4,
+   "name": "Fernandina",
+   "lat": -0.2667,
+   "lng": -91.4417,
+   "mode": "sea",
+   "path": [
+    [
+     -91.33,
+     -0.71
+    ],
+    [
+     -91.3892,
+     -0.307
+    ],
+    [
+     -91.3922,
+     -0.3009
+    ],
+    [
+     -91.4136,
+     -0.2796
+    ],
+    [
+     -91.4417,
+     -0.2667
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 5,
+   "name": "Santiago",
+   "lat": -0.245,
+   "lng": -90.86,
+   "mode": "sea",
+   "path": [
+    [
+     -91.4417,
+     -0.2667
+    ],
+    [
+     -91.5487,
+     -0.0945
+    ],
+    [
+     -91.6092,
+     -0.0247
+    ],
+    [
+     -91.6139,
+     -0.0108
+    ],
+    [
+     -91.6139,
+     0.0032
+    ],
+    [
+     -91.4975,
+     0.1149
+    ],
+    [
+     -91.3672,
+     0.1614
+    ],
+    [
+     -91.3347,
+     0.1614
+    ],
+    [
+     -90.86,
+     -0.245
+    ]
+   ],
+   "lane": "sea"
+  },
+  {
+   "day": 6,
+   "name": "San Cristobal",
+   "lat": -0.858,
+   "lng": -89.561,
+   "mode": "sea",
+   "path": [
+    [
+     -90.86,
+     -0.245
+    ],
+    [
+     -90.8848,
+     -0.2666
+    ],
+    [
+     -90.8401,
+     -0.3291
+    ],
+    [
+     -90.8222,
+     -0.3469
+    ],
+    [
+     -90.2507,
+     -0.472
+    ],
+    [
+     -89.561,
+     -0.858
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

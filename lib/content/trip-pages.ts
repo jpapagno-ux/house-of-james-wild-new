@@ -35,7 +35,7 @@ function builtMap(t: Trip, r: RouteFile, ink: string) {
   const items = r.stops.map((s) => `<li><span class="mono">Day ${esc(s.day)}</span> ${esc(s.name)}</li>`).join("");
   return `<div id="jwmap-${esc(t.id)}" data-keep="1" data-gen="1" class="jw-maps jw-site" data-jw-map="itinerary" style="--jw-overland: ${ink}; --jw-voyages: ${ink}; --jw-acc: ${ink}">` +
     `<script type="application/json">${cfg}</script>` +
-    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="Route of ${esc(r.title)}: ${esc(names.join(", "))}." style="margin: 0; background: #EEF2EE; padding: 18px 20px">` +
+    `<div class="jw-frame chart"><figure class="jw-fallback" role="img" aria-label="Route of ${esc(r.title)}: ${esc(names.join(", "))}." style="margin: 0; background: #F4F2EF; padding: 18px 20px">` +
     `<ol style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none">${items}</ol>` +
     `<figcaption style="display: flex; gap: 16px; font-size: 13px; background: #FBF8F1; padding: 10px 14px; margin: 14px -20px -18px"><span>${esc(r.subtitle ?? "")}</span><span class="mono" style="margin-left: auto; font-size: 10px; letter-spacing: .08em">POSITIONS APPROXIMATE</span></figcaption>` +
     `</figure></div></div>`;
@@ -132,6 +132,58 @@ const ZA_IMAGES: Record<string, TripImg> = {
   "PHOTO · LEEU SPA": ZA.leeuSpa, "Leeu spa": ZA.leeuSpa,
 };
 
+// Central America routes (2 Nov 2026): the stays' own photographs from their Ledger folders
+// (jwco/stays/<slug>), credited as on the stay pages (photo-credits.json), and the country pages' photos.
+const STAY = (slug: string, file: string, alt: string, by: string): TripImg => ({ url: `${CLD}jwco/stays/${slug}/${file}`, alt, credit: `Photograph courtesy of ${by}` });
+const CA = {
+  chableYucatan: STAY("chable-yucatan", "hero", "Chablé Yucatán, the hacienda in the Mayan forest near Mérida", "Chablé Yucatán"),
+  chableMaroma: STAY("chable-maroma", "hero", "Chablé Maroma, on Maroma Beach in the Riviera Maya", "Chablé"),
+  mezzanine: STAY("mezzanine-tulum", "hero", "Mezzanine Tulum, above the sea inside Jaguar Park", "Mezzanine Tulum"),
+  nomadeTulum: STAY("nomade-tulum", "hero", "Nômade Temple Tulum, on the beach at Tulum", "Nômade Temple Tulum"),
+  nomadeHolbox: STAY("nomade-holbox", "hero", "Nômade Temple Holbox, on Holbox Island", "Nômade Temple Holbox"),
+  bolontikuPool: STAY("boluntiku-hotel", "g4", "The pool and thatched roof at Bolontiku from above, beside Lake Petén Itzá", "Bolontiku"),
+  bolontikuNight: STAY("boluntiku-hotel", "g7", "The pool lit at night under a full moon at Bolontiku", "Bolontiku"),
+  bolontikuHero: STAY("boluntiku-hotel", "hero", "Bolontiku, on Lake Petén Itzá near Tikal", "Bolontiku"),
+  bokehHero: STAY("villa-bokeh", "hero", "Villa Bokéh, Antigua Guatemala", "Villa Bokéh"),
+  bokehSuite: STAY("villa-bokeh", "g4", "A suite at Villa Bokéh", "Villa Bokéh"),
+  bokehGrounds: STAY("villa-bokeh", "g2", "Villa Bokéh outside Antigua Guatemala", "Villa Bokéh"),
+  palopoHero: STAY("casa-palopo", "hero", "Casa Palopó on Lake Atitlán, Guatemala", "Casa Palopó"),
+  palopoLake: STAY("casa-palopo", "g1", "Casa Palopó above Lake Atitlán", "Casa Palopó"),
+  palopoSuite: STAY("casa-palopo", "g4", "A suite at Casa Palopó", "Casa Palopó"),
+  palopoVilla: STAY("casa-palopo", "g2", "Villa Palopó, the three-bedroom villa at Casa Palopó", "Casa Palopó"),
+  petenItza: { url: `${CLD}jwco/collections/cayuga-collection/offers/bolontiku-lake`, alt: "A forested shore of Lake Petén Itzá with boats at a jetty, from the air", credit: "Photograph courtesy of Bolontiku" },
+  guatemala: { url: `${CLD}jwco/destinations/guatemala/hero`, alt: "Guatemala, Central America" },
+  blancaneaux: STAY("blancaneaux-lodge", "hero", "Blancaneaux Lodge, above Privassion Creek in the Mountain Pine Ridge", "The Family Coppola Hideaways"),
+  hiddenValley: STAY("hidden-valley-lodge", "hero", "Hidden Valley Lodge, in its own reserve in the Mountain Pine Ridge", "Hidden Valley"),
+  thatchCaye: STAY("thatch-caye-resort", "hero", "Thatch Caye Resort, a private island off Dangriga", "Thatch Caye Resort"),
+  turtleInn: STAY("turtle-inn", "hero", "Turtle Inn, on the Placencia Peninsula", "The Family Coppola Hideaways"),
+  belize: { url: `${WF}68255840f3cf49a9b92d7770_GettyImages-2203385205.jpg`, alt: "Belize, Central America" },
+  belizeForest: { url: `${WF}697fa317fca78cf6a58ea3be__MGL2210.webp`, alt: "Belize: waterfalls, caves and the Maya world" },
+} satisfies Record<string, TripImg>;
+const MX_IMAGES: Record<string, TripImg> = {
+  "PHOTO · CHABLÉ YUCATÁN": CA.chableYucatan, "Chablé Yucatán": CA.chableYucatan,
+  "PHOTO · MEZZANINE TULUM": CA.mezzanine, "Mezzanine Tulum": CA.mezzanine,
+  "PHOTO · CHABLÉ MAROMA": CA.chableMaroma, "Chablé Maroma": CA.chableMaroma,
+  "Nômade Temple Tulum": CA.nomadeTulum, "Nômade Temple Holbox": CA.nomadeHolbox,
+};
+const GT_IMAGES: Record<string, TripImg> = {
+  "PHOTO · GUATEMALA": CA.guatemala,
+  "PHOTO · VILLA BOKÉH": CA.bokehHero, "Villa Bokéh": CA.bokehHero, "Villa Bokéh suite": CA.bokehSuite,
+  "PHOTO · VILLA BOKÉH GROUNDS": CA.bokehGrounds, "Villa Bokéh grounds": CA.bokehGrounds,
+  "PHOTO · CASA PALOPÓ": CA.palopoHero, "Casa Palopó": CA.palopoHero, "Casa Palopó suite": CA.palopoSuite, "Villa Palopó": CA.palopoVilla,
+  "PHOTO · LAKE ATITLÁN": CA.palopoLake, "The lake towns by boat": CA.palopoLake,
+  "PHOTO · BOLONTIKU POOL": CA.bolontikuPool, "Bolontiku pool": CA.bolontikuPool,
+  "PHOTO · LAKE PETÉN ITZÁ": CA.petenItza, "Lake Petén Itzá": CA.petenItza, "A swim in Lake Petén Itzá": CA.petenItza,
+  "PHOTO · BOLONTIKU AT NIGHT": CA.bolontikuNight, "Bolontiku at night": CA.bolontikuNight,
+};
+const BZ_IMAGES: Record<string, TripImg> = {
+  "PHOTO · BLANCANEAUX LODGE": CA.blancaneaux, "Blancaneaux Lodge": CA.blancaneaux,
+  "PHOTO · BELIZE RAINFOREST": CA.belizeForest, "Caracol and Xunantunich": CA.belizeForest,
+  "PHOTO · THATCH CAYE": CA.thatchCaye, "Thatch Caye Resort": CA.thatchCaye,
+  "Hidden Valley Lodge": CA.hiddenValley, "Turtle Inn": CA.turtleInn,
+  "PHOTO · BELIZE": CA.belize,
+};
+
 // Hero slides: the place first, then the people and the water. Cloudinary
 // originals where the house has them; Costa Rica has none for this route yet,
 // so its slides come from the country page and the route's stays in the library.
@@ -142,6 +194,9 @@ export const TRIP_SLIDES: Record<string, TripImg[]> = {
   "leopards-through-the-lens": [ZA.studio, ZA.wildDogs, ZA.cubsTree, ZA.vartyPool, ZA.sunsetBoulder],
   "track-your-life-with-boyd-varty": [ZA.retreat, ZA.soundTherapy, ZA.healing, ZA.pioneerSuite, ZA.sunsetBoulder],
   "three-generations-at-pioneer": [ZA.pioneerSuite, ZA.cubsDen, ZA.sandRiver, ZA.sunsetBoulder, ZA.ellAir],
+  "yucatan-and-the-riviera-maya-with-chable": [CA.chableYucatan, CA.mezzanine, CA.chableMaroma],
+  "guatemala-in-7-days": [CA.guatemala, CA.bokehHero, CA.palopoHero, CA.petenItza, CA.bolontikuPool],
+  "deep-belize": [CA.blancaneaux, CA.belizeForest, CA.thatchCaye, CA.belize],
   // Cayuga's own photos (cayugacollection.com gallery), re-hosted on Cloudinary with alt and place.
   "the-original-costa-route-7-days": [
     { url: CAY("senda-monteverde/senda-monteverde-04"), alt: "A balcony looking over the cloud forest at Senda Monteverde" },
@@ -200,6 +255,9 @@ export const TRIP_IMAGES: Record<string, { hero?: TripImg; images: Record<string
   "leopards-through-the-lens": { images: ZA_IMAGES },
   "track-your-life-with-boyd-varty": { images: ZA_IMAGES },
   "three-generations-at-pioneer": { images: ZA_IMAGES },
+  "yucatan-and-the-riviera-maya-with-chable": { images: MX_IMAGES },
+  "guatemala-in-7-days": { images: GT_IMAGES },
+  "deep-belize": { images: BZ_IMAGES },
   "5-day-komodo-island": {
     images: {
       "PHOTO · LABUAN BAJO HARBOUR": { url: `${KOM}labuan-bajo-harbour`, alt: "Labuan Bajo harbour, Flores, with boats at anchor in turquoise water" },

@@ -1,3 +1,4 @@
+import { HouseInvitation } from "@/components/ledger/SiteFooter";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
@@ -98,6 +99,8 @@ export default function Home() {
           <FaqBlock faqs={HOME.faqs} title="Questions, Answered" />
         </div>
         <AdvisorsScroll />
+        {/* "James knows a place": Talk to the house, with the seal (the one signature moment), above the footer */}
+        <HouseInvitation />
       </main>
       <JsonLd data={pageSchema} />
     </>

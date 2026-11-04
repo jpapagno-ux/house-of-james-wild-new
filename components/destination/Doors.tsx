@@ -33,7 +33,7 @@ export function DoorCard({ d }: { d: Door }) {
     <Wrap href={d.href}>
       <div className="relative aspect-[16/10] overflow-hidden border-b ledger-rule bg-paper-card">
         {d.image && <Image src={d.image} alt={d.imageAlt ?? d.name} fill sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-transparent to-transparent" />
         <h3 className="absolute bottom-3 left-4 ledger-display text-3xl text-white">{d.name}</h3>
         {d.compass && <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 bg-ink/85 text-paper px-2 py-1 text-[10px] uppercase tracking-[0.16em]"><CompassIcon className="w-3 h-3" strokeWidth={1.75} aria-hidden="true" />Compass ready</span>}
       </div>
@@ -51,7 +51,7 @@ export function DoorCard({ d }: { d: Door }) {
 export default function Doors({ id = "countries", eyebrow, title, intro, doors }: { id?: string; eyebrow: string; title: string; intro?: string; doors: Door[] }) {
   if (!doors.length) return null;
   return (
-    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32 lg:scroll-mt-[212px]" aria-labelledby={`${id}-heading`}>
+    <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
           <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>

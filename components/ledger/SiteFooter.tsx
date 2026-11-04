@@ -1,129 +1,168 @@
-import { VOLUME_ORDER, volumeInk, volumeLightInk } from "@/lib/volumes";
+import { VOLUME_STYLES, volumeForHref, volumeLeather } from "@/lib/volumes";
 import Link from "next/link";
+import Image from "next/image";
 import { FLAGS } from "@/lib/booking-live/flags";
-import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, LINKED_VOLUMES as ALL_VOLUMES, HOUSE_LINE, VOLUMES as EVERY_VOLUME } from "@/lib/site";
+import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, LINKED_VOLUMES, HOUSE_LINE } from "@/lib/site";
+import { defaultAdvisor } from "@/lib/content/advisors";
 import { live } from "@/lib/routes";
+import { FOOTER } from "@/lib/palette";
 import { JwcoSeal } from "./Marks";
 
-// SiteFooter — the Chart footer (house chrome, 30 Oct 2026), in the house crimson
-// (the seal's oxblood, deepening down the page):
-// the statement and the weekly sign-up, the six volumes as tabs with their
-// tones, the link columns, the credentials strip, the legal row. Link guard:
-// in production only built pages are listed; empty columns drop. Name,
-// address and phone match the Organization schema.
-const FOOTER_COLUMNS = ALL_COLUMNS.filter((c) => c.title !== "The Volumes").map((c) => ({ ...c, links: live(c.links) })).filter((c) => c.links.length);
+// The House Standard footer (James, 2 Nov 2026), in two parts:
+// 1. "James knows a place" / Talk to the house (HouseInvitation, on the homepage just above the footer): a Stone Mist band, James's portrait (4:5) with a
+//    5px crimson tab and the round JW seal, the headline, THE SEAL (Plan with James, used once) and the phone, three facts.
+// 2. The footer: a warm Ink ground, ivory and stone type, Plex Mono labels in soft crimson, five columns (The Volumes
+//    with a 3x14px tab in each Heritage pigment, Destinations, The House, Before You Go, Talk to the House), then
+//    the credentials and legal line. Every existing link and credential is kept, only regrouped: "For the trade"
+//    sits under The House. The volume cards strip that sat above the columns is gone: the Volumes column carries the
+//    same links on every page, and the homepage has its own volume strip.
+// Link guard: in production only built pages are listed; empty columns drop. Name, address and phone match the
+// Organization schema. Volume colours come only from lib/volumes.ts.
+const COL = Object.fromEntries(ALL_COLUMNS.map((c) => [c.title, live(c.links)]));
+const HOUSE_LINKS = [...(COL["The House"] ?? []), ...(COL["For the trade"] ?? [])];
+const BEFORE_LINKS = COL["Before You Go"] ?? [];
 const LEGAL_NAV = live(ALL_LEGAL);
-const VOLUMES = live(ALL_VOLUMES);
 const REGIONS = live(ALL_REGIONS);
-const NUM = ["I", "II", "III", "IV", "V", "VI"];
-// Each volume's light ink for the tabs on a dark footer, from the one palette (lib/volumes.ts).
-const LIGHT: Record<string, string> = Object.fromEntries(VOLUME_ORDER.map((k) => [volumeInk(k), volumeLightInk(k)]));
+// The linked volumes, each with its Heritage tab (Gatherings is named in the house line, never linked).
+const VOLUME_LINKS = live(LINKED_VOLUMES).map((v) => { const k = volumeForHref(v.href); return { label: v.label, href: v.href, roman: k ? VOLUME_STYLES[k].roman : "", tab: k ? volumeLeather(k) : "#8C8277" }; });
 
+// Kept for the footer-tones preview page; the House Standard has one footer.
+export type FooterTone = "ink" | "linen" | "parchment" | "stone" | "crimson";
 
-// Footer tones (James, 30 Oct 2026): the crimson block read too dark, so the
-// footer takes a light, warm ground that sits with all six volume colours.
-// Linen is the house default; the others stay for comparison.
-export type FooterTone = "linen" | "parchment" | "stone" | "crimson";
-const TONES: Record<FooterTone, { bg: string; ink: string; muted: string; accent: string; rule: string; btn: string; tabBg: string; tabHover: string; seal: "ink" | "light"; field: string; label: string }> = {
-  linen: { bg: "linear-gradient(180deg, #F3EEE6 0%, #EAE3D7 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.16)", btn: "#8B2525", tabBg: "rgba(255,255,255,0.55)", tabHover: "rgba(255,255,255,0.9)", seal: "ink", field: "rgba(45,42,38,0.35)", label: "Linen" },
-  parchment: { bg: "linear-gradient(180deg, #F8F4EC 0%, #EFE8DB 100%)", ink: "#2D2A26", muted: "rgba(45,42,38,0.68)", accent: "#8B2525", rule: "rgba(45,42,38,0.14)", btn: "#8B2525", tabBg: "rgba(255,255,255,0.6)", tabHover: "rgba(255,255,255,0.95)", seal: "ink", field: "rgba(45,42,38,0.3)", label: "Parchment" },
-  stone: { bg: "linear-gradient(180deg, #E9E5DE 0%, #DDD7CC 100%)", ink: "#2F4034", muted: "rgba(47,64,52,0.72)", accent: "#8B2525", rule: "rgba(47,64,52,0.18)", btn: "#2F4034", tabBg: "rgba(255,255,255,0.5)", tabHover: "rgba(255,255,255,0.85)", seal: "ink", field: "rgba(47,64,52,0.35)", label: "Stone" },
-  crimson: { bg: "linear-gradient(180deg, #8B2525 0%, #6E1C1C 55%, #4F1414 100%)", ink: "#F4F1ED", muted: "rgba(244,241,237,0.75)", accent: "#E8A598", rule: "rgba(244,241,237,0.18)", btn: "#F4F1ED", tabBg: "rgba(244,241,237,0.05)", tabHover: "rgba(244,241,237,0.1)", seal: "light", field: "rgba(244,241,237,0.4)", label: "Crimson" },
-};
-const DEFAULT_TONE: FooterTone = "linen";
+const F = FOOTER; // lib/palette.ts
+const label = "font-mono text-[10.5px] uppercase tracking-[0.22em]";
 
-export default function SiteFooter({ tone = DEFAULT_TONE }: { tone?: FooterTone }) {
-  const year = new Date().getFullYear();
-  const T = TONES[tone];
-  const dark = tone === "crimson";
+/** "James knows a place": the Talk to the house band (Stone Mist), above the footer. */
+export function HouseInvitation() {
+  const james = defaultAdvisor();
+  const facts: [string, string][] = [[String(SITE.exploringSince), "Exploring since"], ["44 years", "On the road"], ["J.W.", "Founder, goes first"]];
   return (
-    <footer className="mt-20 pb-16 lg:pb-0" style={{ background: T.bg, color: T.ink }}>
-      {/* statement + sign-up */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-14 md:pt-20 pb-10 grid lg:grid-cols-[1.3fr_1fr] gap-10 lg:gap-16 items-end">
+    <section className="jw-invitation bg-mist mt-16 md:mt-24" aria-labelledby="house-invitation-heading">
+      <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-16 md:py-[110px] grid md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-10 md:gap-16 items-center">
+        <figure className="relative max-w-[420px] w-full">
+          <div className="relative aspect-[4/5] bg-paper overflow-hidden">
+            {james?.portrait && <Image src={james.portrait.url} alt={james.portrait.alt} fill sizes="(min-width: 768px) 420px, 90vw" className="object-cover" />}
+          </div>
+          {/* the 5px crimson tab on the left edge, near the top */}
+          <span className="absolute -left-[5px] top-10 w-[5px] h-20 bg-house" aria-hidden="true" />
+          {/* the round JW seal in a double hairline, bottom right */}
+          <span className="absolute -right-5 -bottom-5 w-[92px] h-[92px] rounded-full bg-paper grid place-items-center jw-round" style={{ boxShadow: "0 0 0 1px #DCD7D0, 0 0 0 4px #FFFFFF, 0 0 0 5px #DCD7D0" }} aria-hidden="true">
+            <JwcoSeal size={64} tone="ink" />
+          </span>
+        </figure>
         <div>
-          <p className="ledger-eyebrow" style={{ color: T.accent }}>The House of James Wild &amp; Co · Exploring since {SITE.exploringSince}</p>
-          <p className="ledger-h1 mt-3">James knows a place.</p>
-          <p className="mt-5 text-[16px] max-w-xl leading-relaxed" style={{ color: T.muted }}>Forty-four years on the road, written into one Ledger. Six volumes. Nothing listed that hasn&rsquo;t been slept in, walked or sailed, and a named advisor for every journey.</p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link href={PLAN_CTA.href} className="ledger-btn" style={{ borderColor: T.btn, color: T.btn }}>{PLAN_CTA.label}</Link>
-            <a href={`tel:${SITE.phone.tel}`} className="ledger-btn" style={{ borderColor: T.rule, color: T.ink }}>{SITE.phone.display}</a>
+          <p className="font-mono text-[11px] uppercase tracking-[0.24em] text-house">Talk to the house</p>
+          <h2 id="house-invitation-heading" className="font-display font-normal text-[3.2rem] md:text-[4.6rem] lg:text-[92px] leading-[0.95] tracking-[-0.01em] mt-4" style={{ color: "#1A1816" }}>James knows a place.</h2>
+          <p className="mt-6 text-[16.5px] max-w-xl leading-relaxed" style={{ color: "#6B635A" }}>Forty-four years on the road, written into one Ledger. Six volumes. Nothing listed that hasn&rsquo;t been slept in, walked or sailed, and a named advisor for every journey.</p>
+          <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-6">
+            {/* THE SEAL: the signature moment, used once on the site (button family, James 2 Nov 2026). */}
+            <Link href={PLAN_CTA.href} className="jw-seal-cta" data-event="seal_plan_click">
+              <span className="jw-seal-cta__seal" aria-hidden="true">JW</span>
+              <span><span className="jw-seal-cta__label">{PLAN_CTA.label}</span><span className="jw-seal-cta__sub">He answers personally</span></span>
+            </Link>
+            <a href={`tel:${SITE.phone.tel}`} className="ledger-btn self-center">{SITE.phone.display}</a>
           </div>
+          <dl className="mt-10 pt-6 border-t border-[#DCD7D0] grid grid-cols-3 gap-4 max-w-xl">
+            {facts.map(([n, l]) => (
+              <div key={l}>
+                <dt className="sr-only">{l}</dt>
+                <dd className="ledger-display text-[1.6rem] md:text-[2rem] leading-none" style={{ color: "#1A1816" }}>{n}</dd>
+                <dd className="font-mono text-[10px] uppercase tracking-[0.18em] mt-2" style={{ color: "#6B635A" }}>{l}</dd>
+              </div>
+            ))}
+          </dl>
         </div>
-        <form action="/plan" method="get" className="border p-6 md:p-7 flex flex-col gap-3" style={{ borderColor: T.rule, background: dark ? "transparent" : "rgba(255,255,255,0.45)" }}>
-          <p className="ledger-eyebrow" style={{ color: T.accent }}>I Know a Place · the weekly entry</p>
-          <p className="ledger-display text-[1.5rem] leading-tight">One secret, one new place, one saving. Every week.</p>
-          <div className="flex gap-2 mt-1">
-            <label htmlFor="footer-email" className="sr-only">Email address</label>
-            <input id="footer-email" name="email" type="email" required placeholder="Your email" className="flex-1 h-11 bg-transparent border px-3.5 text-[14px] outline-none" style={{ borderColor: T.field, color: T.ink }} />
-            <button type="submit" className="h-11 px-5 ledger-eyebrow !text-[10.5px]" style={{ background: T.btn, color: dark ? "#6E1C1C" : "#F4F1ED" }}>Sign me up</button>
-          </div>
-          <p className="ledger-eyebrow !text-[9px]" style={{ color: T.muted }}>Traveller · Trade · Press — pick one on the next step</p>
-        </form>
       </div>
+    </section>
+  );
+}
 
-      {/* the six volumes as tabs */}
-      <nav aria-label="The volumes" className="max-w-[1400px] mx-auto px-5 md:px-10">
-        <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-0.5">
-          {VOLUMES.map((v) => (
-            <li key={v.href}>
-              <Link href={v.href} className="block h-full p-4 transition-colors" style={{ background: T.tabBg, borderTop: `3px solid ${dark ? LIGHT[v.tone ?? ""] ?? "#E8A598" : v.tone ?? "#8B2525"}` }}>
-                <span className="ledger-eyebrow !text-[9px]" style={{ color: T.muted }}>Volume {NUM[EVERY_VOLUME.findIndex((x) => x.href === v.href)]}</span>
-                <span className="block ledger-display text-[1.35rem] leading-none mt-1.5">{v.label}</span>
-                <span className="block text-[12.5px] leading-snug mt-2 line-clamp-2" style={{ color: T.muted }}>{v.intro}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-        {/* The house's lines in plain text; Gatherings is named, never linked (James, 2 Nov 2026). */}
-        <p className="mt-4 text-[14px]" style={{ color: T.muted }}><span className="ledger-eyebrow !text-[10px] mr-2">The House</span>{HOUSE_LINE.join(" · ")}</p>
-      </nav>
+function Column({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <nav aria-label={title}>
+      <p className={label} style={{ color: F.label }}>{title}</p>
+      <div className="mt-4">{children}</div>
+    </nav>
+  );
+}
 
-      {/* columns */}
-      <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-        <nav aria-label="Destinations">
-          <p className="ledger-eyebrow" style={{ color: T.accent }}>Destinations</p>
-          <ul className="mt-3 space-y-1.5">
-            {REGIONS.map((r) => <li key={r.href}><Link href={r.href} className="text-[14.5px] hover:underline underline-offset-4">{r.label}</Link></li>)}
-          </ul>
-        </nav>
-        {FOOTER_COLUMNS.map((col) => (
-          <nav key={col.title} aria-label={col.title}>
-            <p className="ledger-eyebrow" style={{ color: T.accent }}>{col.title}</p>
-            <ul className="mt-3 space-y-1.5">
-              {col.links.map((l) => <li key={l.href}><Link href={l.href} className="text-[14.5px] hover:underline underline-offset-4">{l.label}</Link></li>)}
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function SiteFooter({ tone }: { tone?: FooterTone }) {
+  const year = new Date().getFullYear();
+  const link = "text-[14.5px] hover:underline underline-offset-4";
+  return (
+    <>
+      <footer className="site-footer mt-20 pb-16 lg:pb-0" style={{ background: `linear-gradient(180deg, ${F.ground} 70%, ${F.groundEnd})`, color: F.body }}>
+        {/* top row: the seal and the house name; the weekly entry on the right */}
+        <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-14 md:pt-20 pb-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 border-b" style={{ borderColor: F.rule }}>
+          <div className="flex items-center gap-5">
+            <span className="shrink-0 opacity-95"><JwcoSeal size={64} tone="light" /></span>
+            <div>
+              <p className="font-display font-medium text-[34px] md:text-[40px] leading-none text-white">James Wild &amp; Co.</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.24em] mt-2.5" style={{ color: F.soft }}>Ledgered, not crowded · Exploring since {SITE.exploringSince}</p>
+            </div>
+          </div>
+          <form action="/plan" method="get" className="w-full lg:w-auto lg:min-w-[420px]">
+            <p className={label} style={{ color: F.label }}>I Know a Place · the weekly entry</p>
+            <p className="text-[14px] mt-2" style={{ color: F.soft }}>One secret, one new place, one saving. Every week.</p>
+            <div className="flex mt-3">
+              <label htmlFor="footer-email" className="sr-only">Email address</label>
+              <input id="footer-email" name="email" type="email" required placeholder="Your email" className="flex-1 min-w-0 h-11 bg-transparent border px-3.5 text-[14px] outline-none rounded-[2px] placeholder:text-[#8C8277] focus:border-[#B8AFA5]" style={{ borderColor: F.field, color: F.body }} />
+              <button type="submit" className="h-11 px-5 -ml-px border rounded-[2px] font-display font-semibold uppercase tracking-[0.18em] text-[14px] text-white hover:bg-white/5" style={{ borderColor: F.field }}>Subscribe</button>
+            </div>
+            <p className="font-mono text-[9.5px] uppercase tracking-[0.18em] mt-2" style={{ color: F.legal }}>Traveller, trade or press: pick one on the next step</p>
+          </form>
+        </div>
+
+        {/* five columns */}
+        <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10">
+          <Column title="The Volumes">
+            <ul className="space-y-2">
+              {VOLUME_LINKS.map((v) => (
+                <li key={v.href}><Link href={v.href} className={`${link} inline-flex items-center gap-2.5`}><span className="w-[3px] h-[14px] shrink-0" style={{ background: v.tab }} aria-hidden="true" /><span className="font-mono text-[10px] w-5" style={{ color: F.legal }}>{v.roman}</span>{v.label}</Link></li>
+              ))}
             </ul>
-          </nav>
-        ))}
-        <div>
-          <p className="ledger-eyebrow" style={{ color: T.accent }}>Talk to the house</p>
-          <ul className="mt-3 space-y-1.5 text-[14.5px]">
-            <li><a href={`tel:${SITE.phone.tel}`} className="ledger-display text-[1.2rem] hover:underline underline-offset-4">{SITE.phone.display}</a></li>
-            {SITE.email && <li><a href={`mailto:${SITE.email}`} className="hover:underline underline-offset-4">{SITE.email}</a></li>}
-            <li className="pt-1"><Link href={FLAGS.accounts ? "/account" : "/folio"} className="hover:underline underline-offset-4">My Folio</Link></li>
-          </ul>
-          <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1">
-            {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>{s.label}</a></li>)}
-          </ul>
+            {/* The house's lines in plain text; Gatherings is named, never linked (James, 2 Nov 2026). */}
+            <p className="mt-4 text-[12.5px]" style={{ color: F.soft }}>{HOUSE_LINE.join(" · ")}</p>
+          </Column>
+          {REGIONS.length > 0 && <Column title="Destinations">
+            <ul className="space-y-2">{REGIONS.map((r) => <li key={r.href}><Link href={r.href} className={link}>{r.label}</Link></li>)}</ul>
+          </Column>}
+          {HOUSE_LINKS.length > 0 && <Column title="The House">
+            <ul className="space-y-2">{HOUSE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
+          </Column>}
+          {BEFORE_LINKS.length > 0 && <Column title="Before You Go">
+            <ul className="space-y-2">{BEFORE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
+          </Column>}
+          <Column title="Talk to the House">
+            <ul className="space-y-2 text-[14.5px]">
+              <li><a href={`tel:${SITE.phone.tel}`} className="font-display text-[26px] leading-none text-white hover:underline underline-offset-4">{SITE.phone.display}</a></li>
+              {SITE.email && <li className="pt-1"><a href={`mailto:${SITE.email}`} className={link}>{SITE.email}</a></li>}
+              <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={link}>My Folio</Link></li>
+            </ul>
+            <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1.5">
+              {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="font-mono text-[10.5px] uppercase tracking-[0.18em] hover:underline underline-offset-4" style={{ color: F.soft }}>{s.label}</a></li>)}
+            </ul>
+          </Column>
         </div>
-      </div>
 
-      {/* credentials */}
-      <div className="border-t" style={{ borderColor: T.rule }}>
-        <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-          <p className="ledger-eyebrow leading-relaxed" style={{ color: T.muted }}>{SITE.credentials.map((c) => `${c.label} ${c.value}`).join(" · ")} · {SITE.memberships.join(" · ")} · {SITE.name} LLC, {SITE.address.locality}, Florida</p>
-          <span className="hidden md:block opacity-90"><JwcoSeal size={44} tone={T.seal} /></span>
-        </div>
-      </div>
-      <div className="border-t" style={{ borderColor: T.rule }}>
-        <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-4 flex flex-wrap items-center justify-between gap-3">
-          <p className="ledger-eyebrow" style={{ color: T.muted }}>© {year} {SITE.name} · Ledgered, not crowded</p>
-          <div className="flex items-center gap-4">
-            {LEGAL_NAV.map((l) => <Link key={l.href} href={l.href} className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>{l.label}</Link>)}
-            <a href="/llms.txt" className="ledger-eyebrow hover:underline underline-offset-4" style={{ color: T.muted }}>llms.txt</a>
-            <span className="ledger-hand text-xl" style={{ color: T.accent }}>J.W.</span>
+        {/* credentials, then copyright and legal */}
+        <div className="border-t" style={{ borderColor: F.rule }}>
+          <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-5">
+            <p className="font-mono text-[10px] uppercase tracking-[0.16em] leading-relaxed" style={{ color: F.legal }}>{SITE.credentials.map((c) => `${c.label} ${c.value}`).join(" · ")} · {SITE.memberships.join(" · ")} · {SITE.name} LLC, {SITE.address.locality}, Florida</p>
           </div>
         </div>
-      </div>
-    </footer>
+        <div className="border-t" style={{ borderColor: F.rule }}>
+          <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-4 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.16em]" style={{ color: F.legal }}>
+            <p>© {year} {SITE.name} · Ledgered, not crowded</p>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              {LEGAL_NAV.map((l) => <Link key={l.href} href={l.href} className="hover:underline underline-offset-4">{l.label}</Link>)}
+              <a href="/llms.txt" className="hover:underline underline-offset-4">llms.txt</a>
+              <span className="ledger-hand text-xl normal-case tracking-normal" style={{ color: F.soft }}>J.W.</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }

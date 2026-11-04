@@ -11,13 +11,17 @@ const FEATS = feature(topo, topo.objects.countries).features;
 // Small islands (the Galápagos zoom) draw from the 1:10m stock.
 const topo10 = require("world-atlas/countries-10m.json");
 const FEATS10 = feature(topo10, topo10.objects.countries).features;
+// The world chart draws from the 1:110m stock: a page-sized world needs no coastline detail, and the
+// Compass Atlas ships it to the browser.
+const topo110 = require("world-atlas/countries-110m.json");
+const FEATS110 = feature(topo110, topo110.objects.countries).features;
 const stays = require("../lib/content/stays.json").stays;
 const reserves = require("../lib/content/reserves.json");
 // Library country pages (scripts/export-countries.py). A destination card (staysComing, no stays yet:
 // Sri Lanka first, 1 Nov 2026) is inked on its region chart like a country with stays.
 const LIB_COUNTRIES = require("../lib/content/countries-library.json").countries;
 
-const W = 1000;
+const WIDTH = 1000;
 // Hand frames [w, s, e, n] and fixed focus countries where the stays alone would mislead.
 const REGIONS = {
   africa: { seas: [["Atlantic Ocean", -22, 4], ["Indian Ocean", -22, 50], ["Mozambique Channel", -18, 40.5]] },
@@ -79,6 +83,70 @@ const REGIONS = {
   europe: { frame: [-30, 35, 17, 57.5], seas: [["Atlantic Ocean", 50, -20], ["Mediterranean Sea", 37.5, 6], ["Bay of Biscay", 45.4, -4.8], ["Irish Sea", 53.6, -5.3]] },
   // Country guides without a library chart (Indonesia is told as a guide, by sea).
   indonesia: { country: "indonesia", frame: [102.5, -11.5, 135.5, 4.5], seas: [["Java Sea", -5.2, 111], ["Banda Sea", -5.6, 127.5], ["Indian Ocean", -10.4, 106], ["Pacific Ocean", 1.8, 134.5]] },
+  // Indonesia's island chains, closer (James, 2 Nov 2026: "zoom in on the island chains with some textures").
+  // 1:10m coastlines at a narrower width, so labels and pins read at phone size. The country guide opens on
+  // Bali and Lombok and flies between these frames (components/destination/ChainChartMap.tsx).
+  "indonesia-bali-lombok": { country: "indonesia", hires: true, width: 520, frame: [114.75, -9.12, 116.75, -7.95], focus: ["Indonesia"],
+    seas: [["Bali Sea", -8.08, 115.6], ["Indian Ocean", -9.05, 115.75], ["Lombok Strait", -8.5, 115.8]],
+    areas: [["Ubud", -8.27, 115.42], ["Bukit", -8.97, 115.02], ["Lombok", -8.6, 116.4]],
+    marks: [["Lombok ✈", -8.757, 116.276, "airport"]] },
+  "indonesia-sumba-flores": { country: "indonesia", hires: true, width: 520, frame: [116.9, -11.15, 123.9, -7.9], focus: ["Indonesia"],
+    seas: [["Flores Sea", -8.05, 121.0], ["Savu Sea", -9.75, 121.6], ["Indian Ocean", -10.95, 118.4]],
+    areas: [["Sumba", -9.72, 120.0], ["Flores", -8.43, 121.3], ["Sumbawa", -8.62, 117.65], ["Komodo", -8.9, 119.45], ["Rote", -11.08, 123.3]],
+    marks: [["Labuan Bajo ✈", -8.486, 119.889, "airport"], ["Tambolaka ✈", -9.409, 119.244, "airport"], ["Kupang ✈", -10.171, 123.671, "airport"]] },
+  "indonesia-raja-ampat": { country: "indonesia", hires: true, width: 520, frame: [129.0, -2.3, 131.9, 0.42], focus: ["Indonesia"],
+    seas: [["Pacific Ocean", 0.22, 131.0], ["Seram Sea", -2.15, 130.9]],
+    areas: [["Waigeo", -0.18, 130.75], ["Wayag", 0.2, 130.02], ["Misool", -1.72, 130.05], ["Batanta", -0.9, 130.6]],
+    marks: [["Sorong ✈", -0.926, 131.121, "airport"], ["Waisai", -0.43, 130.82, "town"]] },
+  "indonesia-sumatra-riau": { country: "indonesia", hires: true, width: 520, frame: [102.7, -0.25, 105.2, 1.75], focus: ["Indonesia"],
+    seas: [["South China Sea", 1.45, 104.85], ["Strait of Malacca", 1.55, 103.0]],
+    areas: [["Sumatra", 0.25, 103.05], ["Bintan", 1.05, 104.38], ["Riau Islands", 0.35, 104.4]],
+    marks: [["Singapore ✈", 1.364, 103.991, "airport"]] },
+  // Thailand's three coasts and the north, closer (James, 2 Nov 2026: region views "the way Indonesia was
+  // just done"). Same 1:10m stock and narrow width; the library country page opens on the Andaman coast and
+  // flies between these frames and the whole country (CHAINS in app/destinations/[region]/[country]/page.tsx).
+  "thailand-andaman": { country: "thailand", hires: true, width: 520, frame: [97.75, 7.45, 99.35, 8.95], focus: ["Thailand"],
+    seas: [["Andaman Sea", 7.62, 98.05], ["Phang Nga Bay", 8.2, 98.52]],
+    areas: [["Phuket", 7.88, 98.36], ["Khao Lak", 8.7, 98.36], ["Krabi", 8.18, 99.08]],
+    marks: [["Phuket ✈", 8.113, 98.317, "airport"], ["Krabi ✈", 8.099, 98.986, "airport"]] },
+  "thailand-gulf": { country: "thailand", hires: true, width: 520, frame: [99.55, 9.2, 100.4, 9.98], focus: ["Thailand"],
+    seas: [["Gulf of Thailand", 9.3, 100.2]],
+    areas: [["Koh Samui", 9.47, 99.93], ["Koh Phangan", 9.78, 100.03]],
+    marks: [["Samui ✈", 9.548, 100.062, "airport"]] },
+  "thailand-north": { country: "thailand", hires: true, width: 520, frame: [98.45, 18.35, 100.75, 20.55], focus: ["Thailand"],
+    areas: [["Chiang Mai", 18.92, 98.96], ["Golden Triangle", 20.47, 99.92]],
+    countries: [["MYANMAR", 20.15, 98.75], ["LAOS", 19.55, 100.55]],
+    marks: [["Chiang Mai ✈", 18.767, 98.963, "airport"], ["Chiang Rai ✈", 19.952, 99.883, "airport"]] },
+  // The Philippines by island group (James, 2 Nov 2026: a rich map, island-group views and dive flags). Same 1:10m
+  // stock and narrow width as Indonesia and Thailand. Dive flags ("dive") are one line each from the Department of
+  // Tourism and sit at the named island or reef, approximate; Tubbataha and the Underground River are UNESCO points.
+  "philippines-palawan": { country: "philippines", hires: true, width: 520, frame: [118.75, 10.0, 121.25, 12.45], focus: ["Philippines"],
+    seas: [["South China Sea", 11.75, 119.3], ["Sulu Sea", 10.35, 120.55], ["Linapacan Strait", 11.62, 119.75]],
+    areas: [["El Nido", 11.33, 119.33], ["Taytay", 10.86, 119.62], ["Calamian Islands", 12.3, 119.85], ["Linapacan", 11.45, 119.95], ["Cuyo Islands", 11.0, 120.95]],
+    marks: [["El Nido ✈", 11.2027, 119.4166, "airport"], ["Busuanga ✈", 12.1215, 120.1, "airport"], ["Coron wrecks", 11.9, 120.1, "dive"]],
+    unesco: ["652"], unescoLabels: { "652": "Underground River" } },
+  "philippines-sulu": { country: "philippines", hires: true, width: 520, frame: [118.4, 8.4, 121.3, 10.6], focus: ["Philippines"],
+    seas: [["Sulu Sea", 9.55, 120.6]],
+    areas: [["Palawan", 9.55, 118.55]],
+    marks: [["Puerto Princesa ✈", 9.7421, 118.759, "airport"], ["Tubbataha · UNESCO", 8.902705, 119.910237, "dive"]],
+    unesco: ["652"], unescoLabels: { "652": "Underground River" } },
+  "philippines-visayas": { country: "philippines", hires: true, width: 520, frame: [122.95, 8.9, 124.66, 10.55], focus: ["Philippines"],
+    seas: [["Bohol Sea", 9.08, 124.1], ["Cebu Strait", 10.05, 123.82], ["Tañon Strait", 10.2, 123.2]],
+    areas: [["Cebu", 10.42, 123.62], ["Bohol", 9.86, 124.18], ["Negros", 9.55, 123.05], ["Panglao", 9.64, 123.95], ["Anda", 9.82, 124.5]],
+    marks: [["Mactan ✈", 10.3075, 123.9794, "airport"], ["Panglao ✈", 9.5664, 123.7706, "airport"], ["Dumaguete ✈", 9.3337, 123.3002, "airport"], ["Dauin", 9.19, 123.26, "town"],
+      ["Apo Island", 9.0797, 123.2714, "dive"], ["Moalboal", 9.94, 123.37, "dive"], ["Balicasag", 9.517, 123.683, "dive"]] },
+  "philippines-siargao": { country: "philippines", hires: true, width: 520, frame: [125.85, 9.6, 126.3, 10.1], focus: ["Philippines"],
+    seas: [["Philippine Sea", 9.9, 126.24]],
+    areas: [["Siargao", 9.95, 126.05], ["General Luna", 9.79, 126.11]],
+    marks: [["Sayak ✈", 9.8591, 126.014, "airport"], ["Cloud 9", 9.811, 126.166, "town"]] },
+  "philippines-camiguin": { country: "philippines", hires: true, width: 520, frame: [124.58, 9.06, 124.88, 9.31], focus: ["Philippines"],
+    seas: [["Bohol Sea", 9.28, 124.62]],
+    areas: [["Camiguin", 9.17, 124.73], ["Hibok-Hibok", 9.2, 124.67]],
+    marks: [["Camiguin ✈", 9.2535, 124.707, "airport"], ["Mambajao", 9.25, 124.72, "town"], ["White Island", 9.26, 124.66, "water"]] },
+  // The world (3 Nov 2026): the Compass Atlas. Every country holding a Ledger record in ink; the
+  // reading's fits are flown to on it (components/compass/CompassAtlas.tsx). Frame leaves out the
+  // poles and the empty Pacific so the inhabited world fills the chart.
+  world: { all: true, lowres: true, frame: [-170, -56, 180, 72], seas: [["Pacific Ocean", -10, -140], ["Atlantic Ocean", 10, -35], ["Indian Ocean", -22, 78], ["Southern Ocean", -50, 30]] },
   "polar-antarctica": { frame: [-82, -72, -44, -50], focus: ["Antarctica"], seas: [["Drake Passage", -58.5, -64], ["Weddell Sea", -68, -50], ["Bellingshausen Sea", -69.5, -79], ["Scotia Sea", -56.5, -50]], areas: [["Antarctic Peninsula", -66.2, -64.6], ["Ushuaia", -55.3, -67.6], ["Punta Arenas", -52.7, -71.6], ["South Shetland Islands", -61.6, -57.4]] },
   "polar-arctic": { frame: [-62, 58, 34, 82], focus: ["Greenland", "Iceland", "Norway"], seas: [["Greenland Sea", 75, -8], ["Norwegian Sea", 68, 3], ["Baffin Bay", 72.5, -63], ["Denmark Strait", 67, -26], ["Barents Sea", 74.5, 31]], areas: [["Svalbard", 80.3, 20], ["Reykjavík", 63.6, -21.94]] },
 };
@@ -92,7 +160,8 @@ const inFeat = (pt, f) => polysOf(f.geometry).some((p) => pip(pt, p[0]));
 
 const points = (slug) => {
   const only = REGIONS[slug].country;
-  const pts = stays.filter((s) => (only ? s.countrySlug === only : s.regionSlug === slug) && s.coords).map((s) => [s.coords.lng, s.coords.lat]);
+  const all = !!REGIONS[slug].all; // the world chart (the Compass Atlas): every Ledger point
+  const pts = stays.filter((s) => (all || (only ? s.countrySlug === only : s.regionSlug === slug)) && s.coords).map((s) => [s.coords.lng, s.coords.lat]);
   for (const r of reserves.reserves || reserves) if (!only && r.stay && r.stay.regionSlug === slug && r.stay.coords) pts.push([r.stay.coords.lng, r.stay.coords.lat]);
   return pts;
 };
@@ -137,6 +206,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   }
   if (cfg.minN != null) B[3] = Math.max(B[3], cfg.minN); // keep Darwin and Wolf (Galápagos) on the chart
   const bounds = { w: +B[0].toFixed(3), s: +B[1].toFixed(3), e: +B[2].toFixed(3), n: +B[3].toFixed(3) };
+  const W = cfg.width || WIDTH; // the island-chain charts draw narrower, so labels and pins read at phone size
   const kx = W / (bounds.e - bounds.w), ky = kx / Math.cos(((bounds.s + bounds.n) / 2) * Math.PI / 180);
   const H = Math.round((bounds.n - bounds.s) * ky);
   const P = ([x, y]) => [+((x - bounds.w) * kx).toFixed(1), +((bounds.n - y) * ky).toFixed(1)];
@@ -156,7 +226,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
   const cards = cfg.country || cfg.focus ? [] : LIB_COUNTRIES.filter((c) => c.region === slug && c.staysComing).map((c) => c.atlasName);
   const focusNames = new Set(cfg.focus || [...FEATS.filter((f) => raw.some((p) => inFeat(p, f))).map((f) => f.properties.name), ...cards]);
   let focus = ""; const neighbors = [], flabels = [], nlabels = [];
-  for (const g of cfg.hires ? FEATS10 : FEATS) {
+  for (const g of cfg.hires ? FEATS10 : cfg.lowres ? FEATS110 : FEATS) {
     const d = geomPath(g.geometry); if (!d) continue;
     const big = polysOf(g.geometry).map((p) => S(p[0])).filter((r) => inside(ringBox(r))).sort((a, b) => area(b) - area(a))[0];
     const lab = big ? (() => { const [x, y] = centroid(big); return x > bounds.w && x < bounds.e && y > bounds.s && y < bounds.n ? { a: area(big), x: P([x, y])[0], y: P([x, y])[1], text: g.properties.name.replace("United Republic of ", "").replace("Dem. Rep. Congo", "DR Congo").replace("United States of America", "United States").replace(/^Macedonia$/, "North Macedonia").toUpperCase() } : null; })() : null;
@@ -179,7 +249,7 @@ for (const [slug, cfg] of Object.entries(REGIONS)) {
       areas: (cfg.areas || []).map(L),
     },
     lats, lngs,
-    ...(cfg.salt || cfg.unesco || cfg.reserves ? { overlays: overlays(cfg, P) } : {}),
+    ...(cfg.salt || cfg.unesco || cfg.reserves || cfg.marks ? { overlays: overlays(cfg, P) } : {}),
   };
   console.log(slug, W, H, "focus:", [...focusNames].join(", "), "points:", raw.length);
 }

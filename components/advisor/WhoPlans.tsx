@@ -6,6 +6,7 @@ import { COUNTRIES } from "@/lib/content/countries";
 import { GREEN_INK, VOLUME_LABEL, type DeskEntry, type Volume } from "@/lib/content/advisor-desk";
 import { absoluteUrl } from "@/lib/seo";
 import { ids } from "@/lib/schema";
+import { founderOceanForCountry } from "@/lib/content/founder-ocean";
 
 // "Who plans this" — the roster's answer for a place, rendered on the page
 // (31 Oct 2026). The same answer Iggi gives from /api/v1/advisors, as text a
@@ -55,7 +56,7 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
       {matched && (
         <p className="mt-3 text-[15.5px] leading-relaxed max-w-2xl">
           <Link href={matched.profileHref ?? "/about/team#advisors"} className="underline underline-offset-4 hover:ledger-crimson">{matched.name}</Link>
-          <span className="ledger-crimson"> · {matched.ledgerId}</span> knows {countryName}
+          <span className="ledger-id text-[12px]"> · {matched.ledgerId}</span> knows {countryName}
           {matched.dna?.pathways.length ? ` and carries ${matched.dna.pathways.slice(0, 2).map((p) => PATHWAY_NAMES[p as keyof typeof PATHWAY_NAMES] ?? p).join(" and ")}` : ""}
           {matched.line ? <>: &ldquo;{matched.line}&rdquo;</> : "."}
           {marks.length > 0 && <span className="block mt-1 text-[14px]" style={{ color: GREEN_INK }}>{marks.map((m) => `${m.mark}${m.when ? `, ${m.when}` : ""} · ${m.ledgerId}`).join(" · ")}</span>}
@@ -68,12 +69,13 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
         <div className="min-w-0">
           <p className="ledger-display text-[1.5rem] leading-tight"><Link href={lead.profileHref ?? "/about/team#advisors"} className="hover:ledger-crimson">{lead.name}</Link></p>
           <p className="ledger-eyebrow !text-[9.5px] mt-1" style={{ color: founder ? undefined : GREEN_INK }}>{lead.role}{lead.desk ? <span className="ledger-crimson"> · {lead.desk.adv}</span> : null}</p>
+          {founder && founderOceanForCountry(where.countrySlug) && <p className="mt-1.5 text-[14px]" style={{ color: GREEN_INK }}>{founderOceanForCountry(where.countrySlug)}</p>}
           {(lead.line ?? lead.desk?.line) && <p className="mt-3 ledger-display italic text-[1.1rem] leading-snug max-w-xl">&ldquo;{lead.line ?? lead.desk?.line}&rdquo;</p>}
           {entries.length > 0 && (
             <ul className="mt-4 grid gap-1.5 text-[15px]">
               {entries.map((e) => (
                 <li key={e.ledgerId} className="flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
-                  <span className="font-mono text-[11px] ledger-crimson tabular-nums">{e.ledgerId}</span>
+                  <span className="ledger-id text-[11px] tabular-nums">{e.ledgerId}</span>
                   <span>{e.href ? <Link href={e.href} className="underline underline-offset-4 hover:ledger-crimson">{e.name}</Link> : e.name}</span>
                   <span className="text-[13px]" style={{ color: founder ? "var(--jw-accent-hex)" : GREEN_INK }}>{e.theirs ? `${e.theirs.mark}${e.theirs.when ? `, ${e.theirs.when}` : ""}` : `${e.james.mark}${e.james.year ? ` ${e.james.year}` : ""}`}</span>
                   <span className="text-[12.5px] ledger-muted">{VOLUME_LABEL[e.volume]}</span>

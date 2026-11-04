@@ -13525,6 +13525,101 @@
    "placeSlug": "alentejo"
   },
   {
+   "slug": "belmond-eagle-island-lodge",
+   "name": "Eagle Island Lodge, A Belmond Safari",
+   "ledgerId": "STY-2026-000635",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Twelve tented rooms on Xaxaba Island, reached only by air, in the Okavango Delta",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-hero-delta",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-delta-from-the-air",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-thatched-rooms",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-veranda-sunset",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-tented-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-bathroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-fish-eagle-bar-sunset",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-mokoro",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge-leopard"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "Belmond does not name a single best time. Its month by month guide describes rains from mid November to February, a landscape drying out from May, and from July to October animals gathering at permanent water, with October heat above 40°C.",
+   "bestFor": [
+    "couples",
+    "luxury",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -19.544724,
+    "lng": 23.050243
+   },
+   "airport": "Maun International Airport (MUB)",
+   "airportDirections": "Reached only by light aircraft to the lodge's private airstrip and helipad on Xaxaba Island: about 20 minutes from Maun, 60 minutes from Kasane and 45 minutes from Savute Elephant Lodge, with flights from Maun and Kasane included in the rate, as Belmond states. Belmond or Mack Air staff assist at Maun and Kasane; soft-sided luggage is limited to 20 kg per person.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Tented Rooms, 82 square metres, for up to two adults. Oversized king bed and private plunge pool. Indoor shower and bathtub, and a walled outdoor shower with delta views."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Twelve tented rooms, each with a private plunge pool and deck",
+     "On Xaxaba Island in the Okavango Delta, a UNESCO World Heritage Site",
+     "Private airstrip and helipad, about 20 minutes by air from Maun",
+     "Mokoro, powerboat, game drives, walks and fishing included",
+     "The open-air Fish Eagle Bar",
+     "All meals and drinks included"
+    ]
+   },
+   "onlyHere": [
+    "Eagle Island Lodge sits on Xaxaba Island in the Okavango Delta, reachable only by plane. Belmond records that the island was home to the delta's first permanent safari camp in the early 1900s, a place once used by early explorers and crocodile hunters.",
+    "Each of the twelve tented rooms has a plunge pool and deck. Days run by water and by land: mokoro and powerboat trips, game drives, nature walks, fishing and birdwatching are included, with horseback and helicopter safaris at extra cost. Belmond's Botswana Safari Trilogy pairs the lodge with Savute Elephant Lodge and Sitatunga Private Island, which Belmond describes as two suites set high in an ebony tree canopy."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "The Delta by Water On Xaxaba Island, reachable only by plane, Eagle Island Lodge keeps the Okavango Delta close: a plunge pool on every deck, mokoro and powerboat trips included, and a private airstrip about 20 minutes from Maun. Belmond pairs it with Savute Elephant Lodge, 45 minutes away by air, for the Delta and Chobe in one journey."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "okavango_delta",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ecocamp-patagonia",
    "name": "EcoCamp Patagonia",
    "ledgerId": "STY-2026-000072",
@@ -31038,6 +31133,101 @@
    "placeSlug": null
   },
   {
+   "slug": "belmond-mount-nelson",
+   "name": "Mount Nelson, A Belmond Hotel",
+   "ledgerId": "STY-2026-000634",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hotel since 1899, painted pink since 1918, in nine acres of Cape Town gardens",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-exterior-table-mountain",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-exterior-facade",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-exterior-grounds",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-gardens",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-deluxe-suite-living-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-deluxe-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-afternoon-tea",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson-librisa-spa"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Cape Town International Airport (CPT)",
+   "airportDirections": "About 30 minutes by car from Cape Town International Airport, as Belmond states. The concierge arranges private airport transfers at extra cost, and a complimentary shuttle runs to the V&A Waterfront, about 10 to 15 minutes away. Parking is complimentary.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Rooms, 32 to 63 square metres",
+     "Suites, 44 to 377 square metres",
+     "Speciality Suites, including the Garden Cottage Suites",
+     "Signature Suites, 88 to 180 square metres",
+     "The Thebe Magugu Suite"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A hotel since 1899, in the Gardens district of Cape Town",
+     "Nine acres of gardens near Table Mountain",
+     "Librisa Spa, set in three restored Victorian heritage homes",
+     "Two outdoor pools, tennis courts and a Kids' Club",
+     "Afternoon tea in the Lounge",
+     "About 30 minutes by car from Cape Town International Airport"
+    ]
+   },
+   "onlyHere": [
+    "Mount Nelson opened as a hotel in 1899 in the Gardens district of Cape Town, on land first divided and sold in 1743 and later a grand house with gardens, as Belmond records it. It was painted pink in 1918 and is still known as The Nellie, set in nine acres of gardens near Table Mountain.",
+    "Librisa Spa is set in three restored Victorian heritage homes, and there are two outdoor pools and tennis courts. Dining runs from afternoon tea in the Lounge to The Verandah, Oasis and Planet Bar, and a complimentary shuttle runs to the V&A Waterfront."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Old Cape Town, Kept Well A hotel since 1899 and pink since 1918, Mount Nelson keeps nine acres of gardens in the city centre near Table Mountain, with a spa in restored Victorian homes and a shuttle to the V&A Waterfront. It is a calm city base to begin or end a southern Africa journey."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "city_cape_town",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "mutiara-laut",
    "name": "Mutiara Laut\n“Pearl of the Sea”",
    "ledgerId": "STY-2026-481277",
@@ -39678,6 +39868,98 @@
     "status": "approved",
     "classifiedBy": "James Papagno, 31 Oct 2026",
     "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "belmond-savute-elephant-lodge",
+   "name": "Savute Elephant Lodge, A Belmond Safari",
+   "ledgerId": "STY-2026-000636",
+   "country": "Botswana",
+   "countrySlug": "botswana",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Twelve tented rooms on the Savute Channel, with a hide over a permanent waterhole",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-exterior-savute-channel",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-view-over-the-plains",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-deck-elephants-waterhole",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-pool-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-tented-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-bathroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-elephants",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-spa-tent",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge-baobab"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "Belmond does not name a single best time. Its month by month guide describes rains from mid November to February, zebra and wildebeest moving through the Savute marshlands in March, and from July to October animals gathering at permanent water, with October heat above 40°C.",
+   "bestFor": [
+    "couples",
+    "family",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Kasane International Airport (BBK)",
+   "airportDirections": "Reached only by light aircraft to the lodge's airstrip and helipad: about 40 minutes from Kasane, 50 minutes from Maun and 45 minutes from Eagle Island Lodge, as Belmond states. Belmond or Mack Air staff assist at Maun and Kasane; soft-sided luggage is limited to 20 kg per person.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Tented Rooms, about 50 square metres, for up to two guests. Four-poster bed on a raised bamboo platform."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Twelve tented rooms on raised bamboo platforms",
+     "In the heart of the Savute Channel, Chobe National Park",
+     "Lookout hide over a permanent waterhole",
+     "Spa tent, and a pool with views over the plains",
+     "Airstrip and helipad, about 40 minutes by air from Kasane",
+     "All meals and drinks included"
+    ]
+   },
+   "onlyHere": [
+    "Savute Elephant Lodge sits in the heart of the Savute Channel, in a remote corner of Chobe National Park, reachable only by plane. Belmond describes Chobe as home to the world's largest elephant population. The channel's flow is unpredictable, but a permanent waterhole holds water all year, watched from the lodge's lookout hide.",
+    "Included days take in game drives, birdwatching, San Bushmen paintings, the baobab trees and stargazing. The spa tent offers treatments inspired by nature, with elephants heard in the distance, and the pool looks over the plains."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Elephants at the Water Savute Elephant Lodge sits on the Savute Channel in Chobe National Park, which Belmond calls the elephant capital of the world, with a hide over a permanent waterhole. It is 45 minutes by air from Eagle Island Lodge, and Belmond pairs the two for the Okavango Delta and Chobe in one journey."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "savute",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
    },
    "volumes": [
     "safaris",

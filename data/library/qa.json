@@ -659,6 +659,34 @@
    "released": true
   },
   {
+   "stay_id": "6aeb4d6b33f5f403bbf56e94",
+   "slug": "belmond-eagle-island-lodge",
+   "name": "Eagle Island Lodge, A Belmond Safari",
+   "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb4d6b33f5f403bbf56e93",
+   "slug": "belmond-mount-nelson",
+   "name": "Mount Nelson, A Belmond Hotel",
+   "country": "South Africa",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb4d6b33f5f403bbf56e95",
+   "slug": "belmond-savute-elephant-lodge",
+   "name": "Savute Elephant Lodge, A Belmond Safari",
+   "country": "Botswana",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b3",
    "slug": "benguerra-island-by-and-beyond",
    "name": "Benguerra Island by & Beyond",

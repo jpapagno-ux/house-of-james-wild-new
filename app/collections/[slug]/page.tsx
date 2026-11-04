@@ -11,6 +11,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { CAYUGA, GALLERY, OFFER_PROGRAMS, liveOffers } from "@/lib/content/collections/cayuga";
 import { COMO } from "@/lib/content/collections/como";
+import { BELMOND } from "@/lib/content/collections/belmond";
 import { POST_LIST } from "@/lib/content/journal/posts";
 import { TRIPS } from "@/lib/content/trips";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -34,7 +35,7 @@ type Photo = { url: string; alt: string; w: number; h: number; hotel: string };
 /** A partner collection (COMO first, James 4 Nov 2026): big photographs, the brand credited by name. */
 type Partner = { eyebrow: string; line: string; credit: string; creditUrl: string; story: Photo[] };
 type Collection = typeof CAYUGA & { orgName?: string; facts?: [string, string][]; copy?: Partial<Copy>; partner?: Partner };
-const COLLECTIONS: Record<string, Collection> = { [CAYUGA.slug]: { ...CAYUGA, orgName: "Cayuga Collection" }, [COMO.slug]: COMO as unknown as Collection };
+const COLLECTIONS: Record<string, Collection> = { [CAYUGA.slug]: { ...CAYUGA, orgName: "Cayuga Collection" }, [COMO.slug]: COMO as unknown as Collection, [BELMOND.slug]: BELMOND as unknown as Collection };
 const isCayuga = (c: Collection) => c.slug === CAYUGA.slug;
 type P = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;

@@ -55,10 +55,11 @@ const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
 }));
 
 const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
+  { key: "ef", label: "The Exceptional Few", match: (d) => d.k === "Collection" },
   { key: "dest", label: "Destinations", match: (d) => d.t === "destination" },
   { key: "camps", label: "Safari camps & lodges", match: (d) => d.t === "stay" && d.r === "africa" },
   { key: "ships", label: "Ships & voyages", match: (d) => (d.t === "stay" && d.k === "Ship") || d.k === "Voyage" },
-  { key: "stays", label: "Stays", match: (d) => d.t === "stay" && d.r !== "africa" && d.k !== "Ship" },
+  { key: "stays", label: "Stays", match: (d) => d.t === "stay" && d.r !== "africa" && d.k !== "Ship" && d.k !== "Collection" },
   { key: "routes", label: "Overland routes", match: (d) => d.t === "route" && d.k !== "Voyage" },
   // Places first, then the advisors who know them (James, 4 Nov 2026: "Ivory Lodge" must show the lodge on top).
   { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },

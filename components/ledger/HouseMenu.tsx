@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { EF_COUNT, EF_PATH } from "@/lib/content/exceptional-few";
 import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useRef, useState } from "react";
@@ -85,6 +86,13 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
                     </Link>
                   </li>
                 ))}
+                <li className="border-b ledger-border">
+                  <Link href={EF_PATH} onClick={onClose} className="min-h-[56px] flex items-center gap-4">
+                    <span className="w-1.5 h-8 shrink-0 bg-[#8B2525]" aria-hidden="true" />
+                    <span className="flex-1"><span className="ledger-display text-[1.3rem] leading-tight text-house">The Exceptional Few</span><span className="block ledger-eyebrow !text-[10px]">{EF_COUNT} hand-numbered places</span></span>
+                    <ChevronRight className="w-4 h-4 ledger-muted shrink-0" strokeWidth={1.2} aria-hidden="true" />
+                  </Link>
+                </li>
               </ul>
             </nav>
             <nav aria-label="Destinations and the house" className="py-5">
@@ -137,6 +145,11 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
               </li>
             ))}
           </ul>
+          <Link href={EF_PATH} onClick={onClose} className="group mt-4 flex items-baseline gap-4 py-2">
+            <span className="w-7 shrink-0 border-l-[5px] border-[#8B2525] pl-1.5 ledger-eyebrow text-house">No.</span>
+            <span className="ledger-display text-[1.6rem] lg:text-[1.9rem] leading-none text-house group-hover:underline underline-offset-4">The Exceptional Few</span>
+            <span className="ledger-eyebrow !text-[10px] ml-1">{EF_COUNT} places · across every volume</span>
+          </Link>
           <button type="button" onClick={() => { onClose(); onSearch(); }} className="mt-6 w-full flex items-center gap-3 h-12 px-4 border ledger-rule text-left hover:border-crimson">
             <Search className="w-4 h-4 ledger-crimson" strokeWidth={1.5} aria-hidden="true" />
             <span className="ledger-muted text-[15px]">Where to? A country, a camp, a ship, a feeling</span>

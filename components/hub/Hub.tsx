@@ -10,6 +10,8 @@ import { GUARD_ON, isBuilt } from "@/lib/routes";
 import type { NavLink } from "@/lib/site";
 import { volumeInk, type VolumeKey } from "@/lib/volumes";
 import type React from "react";
+import { EFStamp } from "@/components/exceptional-few/EFBadge";
+import { efForHref } from "@/lib/content/exceptional-few";
 
 // Hub shells: one frame for the volume and index pages (Stays, Safaris,
 // Gatherings, Voyages, Overland, Destinations, Journal). Each shows what's
@@ -71,9 +73,10 @@ export function HubSection({ eyebrow, title, id, children, more }: { eyebrow: st
 export function RecordCard({ name, id, line, image, href, eyebrow, volume }: { name: string; id: string; line: string; image: { url: string; alt: string }; href: string; eyebrow?: string; /** Ink the card by its volume (lib/volumes.ts): a top rule, the eyebrow and the hover border. */ volume?: VolumeKey }) {
   const ink = volume ? volumeInk(volume) : undefined;
   const linked = !GUARD_ON || isBuilt(href);
+  const ef = efForHref(href);
   const body = (
     <>
-      <div className="relative aspect-[4/3] bg-paper-card overflow-hidden"><Image src={image.url} alt={image.alt} fill sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 90vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" /></div>
+      <div className="relative aspect-[4/3] bg-paper-card overflow-hidden"><Image src={image.url} alt={image.alt} fill sizes="(min-width: 1024px) 300px, (min-width: 640px) 45vw, 90vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />{ef && <EFStamp no={ef.collectionNumber} size={104} rotate={-7} onPhoto className="absolute right-2 bottom-2 pointer-events-none" />}</div>
       <div className="p-4 flex flex-col flex-1">
         {eyebrow && <p className={`ledger-eyebrow ${ink ? "" : "ledger-crimson"}`} style={ink ? { color: ink } : undefined}>{eyebrow}</p>}
         <h3 className="ledger-display text-[1.3rem] leading-snug mt-0.5">{name}</h3>

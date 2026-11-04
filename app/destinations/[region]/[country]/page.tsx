@@ -67,6 +67,14 @@ import { countryBoard } from "@/lib/content/board";
 import { comingOn } from "@/lib/content/whats-coming";
 import { today } from "@/lib/dates";
 import CountryAtlas, { atlasNotes } from "@/components/maps/terrain/CountryAtlas";
+import EFRibbon from "@/components/exceptional-few/EFRibbon";
+import { efInCountry } from "@/lib/content/exceptional-few-cards";
+
+// The Exceptional Few in this country (cross-sell, James 4 Nov 2026). French Polynesia shows its own block.
+function EFCountry({ path, name }: { path: string; name: string }) {
+  const items = efInCountry(path);
+  return items.length ? <EFRibbon items={items} eyebrow={`The Exceptional Few™ in ${name}`} title={items.length === 1 ? `${items[0].label}: ${items[0].name}` : `${items.length} of the Few Are Here`} stamp={false} /> : null;
+}
 import { countryLayoutOn, liveBoardOn, showDrafts } from "@/lib/content/country-layout";
 import { liveBoard } from "@/lib/content/board";
 import { atlasOn } from "@/components/maps/terrain/flag";
@@ -217,9 +225,9 @@ export default async function CountryPage({ params }: { params: Promise<{ region
     if (countryLayoutOn(g.slug)) {
       const regionName = regionBySlug(g.region)?.name ?? g.region;
       const board = liveBoardOn(g.slug) ? liveBoard(comingOn(today()), { regionSlug: g.region, regionName, countrySlug: g.country }) : countryBoard(comingOn(today()), g.country);
-      return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} v2={{ atlas: <CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} />, board, boardLabel: `${g.name}: the live board`, notes: atlasNotes(g.slug), drafts: showDrafts() }} />;
+      return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} v2={{ atlas: <><CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /><EFCountry path={`/destinations/${g.region}/${g.slug}`} name={g.name} /></>, board, boardLabel: `${g.name}: the live board`, notes: atlasNotes(g.slug), drafts: showDrafts() }} />;
     }
-    return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} map={<>{guideMap(g.slug, g.name)}<CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /></>} />;
+    return <GuidePage g={g} geoInSchema={atlasOn(g.slug)} map={<>{guideMap(g.slug, g.name)}<CountryAtlas country={g.slug} name={g.name} regionSlug={g.region} /><EFCountry path={`/destinations/${g.region}/${g.slug}`} name={g.name} /></>} />;
   }
   if (!c) notFound();
   const region = regionBySlug(c.region);
@@ -335,6 +343,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}
             {/* Board 4: the 3D country atlas under the chart where it is switched on (components/maps/terrain/flag.ts). */}
             {!coming && atlasOn(c.slug) && <CountryAtlas country={c.slug} name={c.slug === "tahiti" ? "French Polynesia" : c.name} regionSlug={c.region} />}
+            {c.slug !== "tahiti" && <EFCountry path={path} name={c.name} />}
           </section>
 
           {/* French Polynesia (Tahiti): lagoon atlas, island-hopping routes, Windstar and Pearl (2 Nov 2026). */}

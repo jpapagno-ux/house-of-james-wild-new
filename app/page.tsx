@@ -1,3 +1,4 @@
+import ExceptionalFewBand from "@/components/home/ExceptionalFewBand";
 import { HouseInvitation } from "@/components/ledger/SiteFooter";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import FaqBlock from "@/components/ledger/FaqBlock";
@@ -123,6 +124,7 @@ export default function Home() {
         </div>
         {/* Act IV · The Ledger: the signature stays, the routes, the Compass */}
         <div id="act-4" className="scroll-mt-28 max-w-ledger mx-auto px-5 md:px-10">
+          <ExceptionalFewBand />
           <SignatureShelf />
           <OverlandRoutes />
           <CompassBand />

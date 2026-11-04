@@ -71,3 +71,11 @@ export function efPathways(e: ExceptionalFew, stayPathway?: { primary: string; s
 
 /** The page theme classes for a designation (globals.css .theme-ef, .theme-ef-<palette_key>). */
 export const efThemeClass = (e: ExceptionalFew) => `theme-ef theme-ef-${e.paletteKey}`;
+
+/** The collection's home page, and how many places it holds today (light enough for client components). */
+export const EF_PATH = "/the-exceptional-few";
+export const EF_COUNT = EXCEPTIONAL_FEW_LIVE.length;
+
+/** The designation for a page path, e.g. "/stays/amangiri" → the record (for the small mark on cards anywhere). */
+const EF_BY_HREF = new Map(EXCEPTIONAL_FEW_LIVE.map((e) => [efHref(e), e] as const));
+export const efForHref = (href: string | null | undefined) => (href ? EF_BY_HREF.get(href.replace(/[?#].*$/, "").replace(/\/$/, "")) ?? null : null);

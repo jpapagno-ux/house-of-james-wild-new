@@ -42,6 +42,7 @@ import PlanBand from "@/components/destination/PlanBand";
 import { AdvisorStrip } from "@/components/advisor/Desk";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
+import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
@@ -319,6 +320,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             intro="The stay's own pin with the red rock country round it raised in relief: mesas, buttes and the canyons cut between them. Press Turn the canyon country, or tilt the map yourself." />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />
+          <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : undefined} className="mt-8" />
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>

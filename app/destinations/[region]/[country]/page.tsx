@@ -14,6 +14,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
+import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import SafeLink from "@/components/ledger/SafeLink";
@@ -309,6 +310,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
               {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
               {!coming && <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />}
+              {/* The three instruments, one line (James, 3 Nov 2026): Read the Compass · Open the Atlas · Ask Iggi */}
+              <InstrumentsStrip atlasHref="#the-map" className="mt-6" />
             </div>
             <div className="md:pt-8 space-y-8">
               {COUNTRY_NOTES[c.slug] && <PlaceNote place={c.name} note={COUNTRY_NOTES[c.slug]} />}

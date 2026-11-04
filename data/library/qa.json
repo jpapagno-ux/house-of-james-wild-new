@@ -820,6 +820,14 @@
    "released": true
   },
   {
+   "stay_id": "6aeb223f920f39bd4e4419f0",
+   "slug": "borgo-santo-pietro",
+   "name": "Borgo Santo Pietro",
+   "country": "Italy",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a90de7cbbfb8d59e818a886",
    "slug": "breac-house",
    "name": "Breac.House",
@@ -935,6 +943,19 @@
    "country": "Mexico",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6aeb2219d4abdf07807c1333",
+   "slug": "casa-morgano",
+   "name": "Casa Morgano",
+   "country": "Italy",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a89a1aa4b2593a674df7997",
@@ -1119,6 +1140,16 @@
    "stay_id": "6aeb1393474e53a2437e3a2f",
    "slug": "como-alpina-dolomites",
    "name": "COMO Alpina Dolomites",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb22570b842ef5ff2d01f8",
+   "slug": "como-castello-del-nero",
+   "name": "COMO Castello Del Nero",
    "country": "Italy",
    "missing": [
     "coordinates"
@@ -2278,6 +2309,16 @@
    "released": false
   },
   {
+   "stay_id": "6aeb2219d4abdf07807c1332",
+   "slug": "jk-place-capri",
+   "name": "J.K. Place Capri",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9c3ddc48b7e640309dbc18",
    "slug": "ka-ana-resort",
    "name": "Ka'ana Resort",
@@ -2664,6 +2705,16 @@
    "released": true
   },
   {
+   "stay_id": "6aeb22570b842ef5ff2d01fa",
+   "slug": "la-bandita-townhouse",
+   "name": "La Bandita Townhouse",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93b",
    "slug": "la-cle",
    "name": "La Cle South Africa",
@@ -2677,6 +2728,16 @@
    "name": "La Residence",
    "country": "South Africa",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb2219d4abdf07807c1331",
+   "slug": "la-torretta-lodge",
+   "name": "La Torretta Lodge",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3066,6 +3127,16 @@
    "name": "Monachira Camp",
    "country": "Botswana",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6aeb223f920f39bd4e4419f1",
+   "slug": "monteverdi-tuscany",
+   "name": "Monteverdi Tuscany",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -4537,6 +4608,14 @@
    "released": true
   },
   {
+   "stay_id": "6aeb223f920f39bd4e4419f2",
+   "slug": "terre-bianche-dolceacqua",
+   "name": "Terre Bianche",
+   "country": "Italy",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a9c3ddc48b7e640309dbc1b",
    "slug": "thatch-caye-resort",
    "name": "Thatch Caye Resort",
@@ -4728,6 +4807,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6aeb22570b842ef5ff2d01f9",
+   "slug": "the-place-firenze",
+   "name": "The Place Firenze",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a9d46027650cc04166342db",

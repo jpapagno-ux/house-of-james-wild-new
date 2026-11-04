@@ -31,6 +31,8 @@ import type { Trip, TripImg } from "@/lib/content/trips";
 import { hostFor } from "@/lib/content/hosts";
 import { Stamp } from "@/components/notes/HeroMark";
 import RouteScrollSync from "./RouteScrollSync";
+import { SuitedMark, SuitedRow } from "@/components/ledger/SuitedIcon";
+import { suitedKey } from "@/lib/suited";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
@@ -95,6 +97,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // "From" price: the lowest per-person option on file, with what it's based on.
   const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
   const def = T.calc.opts[(T.calc as { opt0?: number }).opt0 ?? 0];
+  // "Who it suits" icons (James, 4 Nov 2026): the trip's own audience lines, best suited first.
+  const suited = [...(T.suits ?? [])].map(([who]) => ({ label: who, k: suitedKey(who) })).filter((x): x is { label: string; k: NonNullable<ReturnType<typeof suitedKey>> } => !!x.k)
+    .sort((a, b) => Number(b.label === T.bestFor?.who) - Number(a.label === T.bestFor?.who));
   const stops = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i);
   const route = stops.join(" → ");
   // One quiet line icon per fact in the at-a-glance strip (graphite, House Standard).
@@ -209,7 +214,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SectionHead eyebrow="Who it suits" title={voyage ? "Who Should Sail This" : "Who This Route Is For"} icon="tree-ring" />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[...T.suits].sort((a, b) => Number(b[0] === T.bestFor?.who) - Number(a[0] === T.bestFor?.who)).map(([who, wit, why]) => (
-          <li key={who} className={`border p-5 ${who === T.bestFor?.who ? "border-crimson bg-paper-card" : "ledger-border"}`}><p className="ledger-eyebrow ledger-crimson">{who}{who === T.bestFor?.who && <span className="ml-2 border border-crimson px-1.5 py-0.5 text-[9.5px]">Best suited</span>}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
+          <li key={who} className={`border p-5 ${who === T.bestFor?.who ? "border-crimson bg-paper-card" : "ledger-border"}`}>{suitedKey(who) && <span className="block mb-3"><SuitedMark k={suitedKey(who)!} size={20} best={who === T.bestFor?.who} /></span>}<p className="ledger-eyebrow ledger-crimson">{who}{who === T.bestFor?.who && <span className="ml-2 border border-crimson px-1.5 py-0.5 text-[9.5px]">Best suited</span>}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
         ))}
       </ul>
       {T.twice?.length > 0 && (
@@ -552,6 +557,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
               </div>
             ); })}
           </dl>
+          {suited.length > 0 && <div className="mt-4"><p className="ledger-eyebrow mb-2">Who it suits</p><SuitedRow items={suited} best={T.bestFor?.who} /></div>}
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
           {T.photoCredit && <p className="mt-2 text-[12px] ledger-muted">{T.photoCredit}</p>}
           <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> {T.vettedLine ?? "Vetted in person by James Wild"} · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>

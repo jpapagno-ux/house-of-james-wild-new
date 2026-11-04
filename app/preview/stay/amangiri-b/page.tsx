@@ -42,7 +42,7 @@ export default function AmangiriMockB() {
     <div className={efThemeClass(ef)}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <RecordHero image={{ url: mediaUrl(hero, { ratio: "21:9", width: 2560 }), alt: hero.alt }} eyebrow={`The Exceptional Few™ — ${collectionNo(ef.collectionNumber)}`} title={NAME} tagline="Canyon Point, Utah" credit={rightsOwner(hero)} height="h-[94svh] min-h-[640px]"
+        <RecordHero image={{ url: mediaUrl(hero, { ratio: "21:9", width: 2560 }), alt: hero.alt }} eyebrow={`The Exceptional Few™ · ${collectionNo(ef.collectionNumber)}`} title={NAME} tagline="Canyon Point, Utah" credit={rightsOwner(hero)} height="h-[94svh] min-h-[640px]"
           glance={<GlanceBar glance={{ facts: [["Setting", "Colorado Plateau · 900 acres"], ["Fly into", "Page (PGA) · 25 min"], ["Ledger ID", "STY-2026-000563"]], cta: { label: "Plan this journey", href: d.planHref } }} />} />
         <RecordNav items={nav} cta="Plan this journey" ctaHref={d.planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">

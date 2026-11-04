@@ -72,14 +72,15 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const ledgerRef = T.map_coord.match(/(ITN-[A-Z]+-\d{4}-\d+|JW-[A-Z0-9-]+)/)?.[1] ?? "";
   const entry = ledgerRef.match(/(\d{4,})$/)?.[1].slice(-4) ?? (ledgerRef.replace(/^JW-/, "") || "—");
   const volStamp = <InkStamp volume={voyage ? "voyages" : "overland"} no={entry} size={128} rotate={voyage ? -7 : 6} seed={voyage ? 23 : 47} />;
-  // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
   const waters = T.seo.path.split("/")[2];
-  const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo", antarctica: "/destinations/polar-antarctica" };
   // Where a voyage's waters sit for "compare the sailings": the place key journeysFor() files it under.
   const WATERS_PLACE: Record<string, { key: string; name: string; href: string }> = { "raja-ampat": { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, komodo: { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, antarctica: { key: "antarctica", name: "Antarctica", href: "/destinations/polar-antarctica" } };
   // The country crumb on an overland route goes to that country's destination page.
   const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa", mexico: "/destinations/caribbean-mexico/mexico", guatemala: "/destinations/central-america/guatemala", belize: "/destinations/central-america/belize" };
-  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
+  // The trail follows the volume (board 10, nav audit P2-8): a voyage's waters crumb opens its Voyages waters hub, an
+  // overland country crumb opens that country's routes on the Overland hub. The place guides stay linked in the page.
+  const VOYAGE_HUB: Record<string, string> = { "raja-ampat": "/voyages/indonesia", komodo: "/voyages/indonesia", antarctica: "/voyages/polar" };
+  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? VOYAGE_HUB[waters] ?? "/voyages" : `/overland#${waters}-h`, T.seo.path][i] }));
   const h = host ? hostFor(host.key) : null;
   const hostOn = !!h && h.state !== "off";
   const quote = strip(T.quote).replace(/\s*—\s*J\.\s*W\.\s*$/, "");

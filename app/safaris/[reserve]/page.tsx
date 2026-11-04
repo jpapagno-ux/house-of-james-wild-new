@@ -32,7 +32,6 @@ import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import { KIND_LABEL, RESERVES, campHref, campReady, campStatus, reserveBySlug, reserveFrom, usd, type Reserve } from "@/lib/content/reserves";
 import { stampForStatus, statusLine } from "@/lib/ledger/status";
 import { regionBySlug } from "@/lib/content/regions";
-import { isBuilt } from "@/lib/routes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
 import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
@@ -87,7 +86,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
     return { slug: c.slug, name: c.name, kind: c.kind, kindLabel: KIND_LABEL[c.kind], href: campHref(r, c), photos: [c.hero, ...c.gallery].filter((u, i, a): u is string => !!u && a.indexOf(u) === i).slice(0, 6), units, line: (c.intro || c.description).split(/(?<=\.)\s/)[0]?.slice(0, 180) ?? "", from: c.fromRate ? usd(c.fromRate) : null, fromBasis: c.kind === "camp" ? "per person, per night" : "as filed · basis with your quote", mark: st ? `${stampForStatus(st.status)} · ${st.date.slice(0, 4)}` : null };
   });
   const facts: [string, string][] = [["Ledger ID", r.rsv], ["Reserve", `${r.area} · ${r.province}`], ["On the reserve", `${lodges} ${lodges === 1 ? "lodge" : "lodges & camps"}${r.camps.length > lodges ? ` · ${r.camps.length - lodges} private` : ""}`], ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : []), ...(r.stay.airport ? [["Fly into", r.stay.airport] as [string, string]] : []), ["Booked through", "Wild & Co Safaris"]];
-  const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(countryPath && isBuilt(countryPath) ? [{ name: r.stay.country ?? "", path: countryPath }] : []), { name: r.name, path }];
+  const trail = [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, ...(r.stay.country ? [{ name: r.stay.country, path: "/safaris#countries-h" }] : []), { name: r.name, path }];
   const images = (r.stay.gallery ?? []).filter(Boolean).slice(0, 10).map((u, i) => ({ url: u, alt: `${r.name}, photograph ${i + 1}` }));
   const apart = momentsFor(`reserve:${r.slug}`, r.stay.features.items, images.slice(1));
   const days = momentsFor(`reserve:${r.slug}`, r.stay.experiences.items, images.slice(1), 3, apart);

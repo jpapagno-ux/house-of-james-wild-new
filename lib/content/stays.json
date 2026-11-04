@@ -7740,6 +7740,120 @@
    "placeSlug": null
   },
   {
+   "slug": "como-parrot-cay",
+   "name": "COMO Parrot Cay",
+   "ledgerId": "STY-2026-000575",
+   "country": "Turks and Caicos",
+   "countrySlug": "turks-caicos",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Modern luxury, and the good sense to let the island lead.",
+   "quote": "Parrot Cay is modern luxury that knows when to step back.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-beach-houses-and-trees",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-walking-the-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-building-on-the-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-dock-over-the-water",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-swimmer-clear-water",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-the-sanctuary-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/turks-and-caicos/parrot-cay/parrot-cay-como-shambhala"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "honeymoon",
+    "family",
+    "group_exclusive_use"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Providenciales International Airport (PLS)",
+   "airportDirections": "About 50 minutes from Providenciales airport, as stated by COMO: a 15-minute drive, then a 35-minute boat ride.",
+   "founderNote": "Vetted by James, who knows the COMO sales director. Not yet stayed; no founder stamp until he has.",
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Beach villas",
+     "Beach houses",
+     "Multi-room Residences",
+     "Estate homes",
+     "Every beach house, villa and Residence has its own private pool"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A private island of more than 1,000 acres",
+     "Arrival by boat from Providenciales",
+     "The COMO Shambhala Retreat",
+     "Private pools and direct beach access",
+     "Residences and estate homes can be booked whole",
+     "Complimentary bicycles"
+    ]
+   },
+   "onlyHere": [
+    "COMO Parrot Cay is a private island in the Turks and Caicos, set across more than 1,000 acres, about 50 minutes from Providenciales airport by road and boat, as COMO states. The beach villas, beach houses, Residences and estate homes each have a private pool, and the COMO Shambhala Retreat is on the island.",
+    "Guests who want the place to themselves can book entire Residences or estate homes. For anything larger, ask James."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [
+    {
+     "q": "Why is COMO Parrot Cay in The Exceptional Few?",
+     "a": "A great sense of place, attention to detail, and modern luxury in a natural setting: more than a thousand acres of private island, reached by boat, run on a philosophy close to our own."
+    },
+    {
+     "q": "Can you take Parrot Cay privately?",
+     "a": "COMO states that guests can book entire Residences or estate homes. For anything larger, ask James; it is arranged directly with COMO and depends on the dates."
+    },
+    {
+     "q": "How do you get to Parrot Cay?",
+     "a": "Fly into Providenciales (PLS). COMO states the transfer takes about 50 minutes: a 15-minute drive, then a 35-minute boat ride. James arranges it with your booking."
+    },
+    {
+     "q": "Is Parrot Cay worth another night?",
+     "a": "Five nights. The first two you are still arriving. By the third, the island has set your pace."
+    },
+    {
+     "q": "Who is Parrot Cay less ideal for?",
+     "a": "Nightlife-focused travellers, travellers who want a town to explore each evening, and travellers who prefer a large social resort. If that's you, the Human Compass will point you somewhere that is."
+    },
+    {
+     "q": "How do I book COMO Parrot Cay?",
+     "a": "Send an enquiry, call the house on 1.800.419.7000, or book a thirty-minute call. James or an advisor confirms dates, rates and what's included before anything is booked."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "como-uma-canggu",
    "name": "COMO Canggu",
    "ledgerId": "STY-2026-000579",

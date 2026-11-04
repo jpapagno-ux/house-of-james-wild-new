@@ -5,6 +5,12 @@ import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
 import CompassBand from "@/components/home/CompassBand";
 import AskHouse from "@/components/home/AskHouse";
+import ActRail from "@/components/home/ActRail";
+import ComingTicker from "@/components/coming/ComingTicker";
+import { mainBoard } from "@/lib/content/board";
+import { comingOn } from "@/lib/content/whats-coming";
+import { sortComing } from "@/lib/content/coming-view";
+import { today } from "@/lib/dates";
 import WhenToGoBand, { type WhenPlace } from "@/components/home/WhenToGoBand";
 import { COUNTRIES } from "@/lib/content/countries";
 import { CountedBand, VolumeStrip } from "@/components/home/Entrance";
@@ -88,32 +94,50 @@ const WHEN: WhenPlace[] = COUNTRIES.filter((c) => c.months.length).map((c) => ({
   .sort((a, b) => Number(!!COUNTRIES.find((c) => c.name === a.name)?.staysComing) - Number(!!COUNTRIES.find((c) => c.name === b.name)?.staysComing));
 
 export default function Home() {
+  const day = today();
+  const BOARD = mainBoard(sortComing(comingOn(day), "soonest"), day);
   return (
     <>
       <SiteHeader overlay />
       <main id="main">
-        <FilmHero {...HOME.hero} />
-        <AskHouse />
-        {/* The entrance (house chrome): counted, the stance, six volumes, advisor-forward */}
-        <CountedBand />
-        <div className="max-w-[1400px] mx-auto px-5 md:px-10"><ForTravellers /></div>
-        <VolumeStrip />
-        <div className="max-w-[1400px] mx-auto px-5 md:px-10">
-          <HouseUnderStrip />
-          <PathwaysBand />
+        <ActRail />
+        {/* Act I · The house: the film, the question box, the Ledger counted, the stance */}
+        <div id="act-1" className="scroll-mt-28">
+          <FilmHero {...HOME.hero} />
+          <AskHouse />
+          <CountedBand />
+          <div className="max-w-[1400px] mx-auto px-5 md:px-10"><ForTravellers /></div>
         </div>
-        <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <WhenToGoBand places={WHEN} />
-          <CompassBand />
+        {/* Act II · The volumes */}
+        <div id="act-2" className="scroll-mt-28">
+          <VolumeStrip />
+          <div className="max-w-[1400px] mx-auto px-5 md:px-10">
+            <HouseUnderStrip />
+            <PathwaysBand />
+          </div>
+        </div>
+        {/* Act III · On now: the live board (openings, offers, sailings) and where is best this month */}
+        <div id="act-3" className="scroll-mt-28 mt-16 md:mt-24">
+          {BOARD.length > 0 && <ComingTicker entries={BOARD} label="On now: coming and on offer" />}
+          <div className="max-w-ledger mx-auto px-5 md:px-10"><WhenToGoBand places={WHEN} /></div>
+        </div>
+        {/* Act IV · The Ledger: the signature stays, the routes, the Compass */}
+        <div id="act-4" className="scroll-mt-28 max-w-ledger mx-auto px-5 md:px-10">
           <SignatureShelf />
           <OverlandRoutes />
-          <FilmSection />
-          <HouseJournal />
-          <FaqBlock faqs={HOME.faqs} title="Questions, Answered" />
+          <CompassBand />
         </div>
-        <AdvisorsScroll />
-        {/* "James knows a place": Talk to the house, with the seal (the one signature moment), above the footer */}
-        <HouseInvitation />
+        {/* Act V · Go deeper: the film, the journal, questions, the advisors, the house */}
+        <div id="act-5" className="scroll-mt-28">
+          <div className="max-w-ledger mx-auto px-5 md:px-10">
+            <FilmSection />
+            <HouseJournal />
+            <FaqBlock faqs={HOME.faqs} title="Questions, Answered" />
+          </div>
+          <AdvisorsScroll />
+          {/* "James knows a place": Talk to the house, with the seal (the one signature moment), above the footer */}
+          <HouseInvitation />
+        </div>
       </main>
       <JsonLd data={pageSchema} />
     </>

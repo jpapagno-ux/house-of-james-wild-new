@@ -3,9 +3,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FLAGS } from "@/lib/booking-live/flags";
 
-// Tabs across the top of /account. Bookings and Payments arrive in Phases 3–4.
+// Tabs across the top of /account. Trips (requests, holds, bookings) arrived
+// with Phase 3a; Payments arrive with Phase 3b.
 const TABS = [
   { href: "/account", label: "My Folio" },
+  { href: "/account/trips", label: "Trips" },
   { href: "/account/favorites", label: "Saved stays" },
   { href: "/account/folios", label: "Journeys" },
   { href: "/account/settings", label: "Account & privacy" },

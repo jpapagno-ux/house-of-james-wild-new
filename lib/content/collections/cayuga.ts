@@ -33,7 +33,7 @@ export type CollectionOffer = {
 export type CollectionHotel = {
   slug: string; // stay page slug, when built
   name: string;
-  country: "Costa Rica" | "Panama" | "Nicaragua" | "Guatemala";
+  country: string;
   setting: string;
   where: string;
   bestFor: string[];

@@ -10,6 +10,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import PlanBand from "@/components/destination/PlanBand";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { CAYUGA, GALLERY, OFFER_PROGRAMS, liveOffers } from "@/lib/content/collections/cayuga";
+import { COMO } from "@/lib/content/collections/como";
 import { POST_LIST } from "@/lib/content/journal/posts";
 import { TRIPS } from "@/lib/content/trips";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
@@ -20,7 +21,21 @@ import { graph, ids } from "@/lib/schema";
 // built), how to pair them, what to ask, James's story, FAQs. Hidden from
 // search until James approves the copy.
 
-const COLLECTIONS = { [CAYUGA.slug]: CAYUGA };
+// Page words that differ by collection. Cayuga's are the defaults.
+type Copy = { hotelsHeading: string; hotelsLine: string; says: string; quoteOfficial: boolean; fitHeading: string; pairHeading: string; askHeading: string; askLine: string; faqTitle: string; source: string; planPlace: string; galleryCredit: string };
+const CAYUGA_COPY: Copy = {
+  hotelsHeading: "Seven Places, No Two Alike", hotelsLine: "Each keeps its own sense of place. The question isn\u2019t which is best, but which fits the journey.",
+  says: "Cayuga says", quoteOfficial: true, fitHeading: "Which Cayuga Hotel Fits Which Traveller", pairHeading: "Two or Three Places, Well Connected",
+  askHeading: "Questions Worth Asking Any \u2018Sustainable\u2019 Hotel", askLine: "A hotel doing serious work can answer these clearly. Much of what\u2019s published about Cayuga comes from the collection itself, so we ask too.",
+  faqTitle: "Questions About the Cayuga Collection", source: "Hotel details from the Cayuga Collection; the roster is confirmed before booking.",
+  planPlace: "Central America", galleryCredit: "Photographs: Cayuga Collection.",
+};
+type Photo = { url: string; alt: string; w: number; h: number; hotel: string };
+/** A partner collection (COMO first, James 4 Nov 2026): big photographs, the brand credited by name. */
+type Partner = { eyebrow: string; line: string; credit: string; creditUrl: string; story: Photo[] };
+type Collection = typeof CAYUGA & { orgName?: string; facts?: [string, string][]; copy?: Partial<Copy>; partner?: Partner };
+const COLLECTIONS: Record<string, Collection> = { [CAYUGA.slug]: { ...CAYUGA, orgName: "Cayuga Collection" }, [COMO.slug]: COMO as unknown as Collection };
+const isCayuga = (c: Collection) => c.slug === CAYUGA.slug;
 type P = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
 export function generateStaticParams() { return Object.keys(COLLECTIONS).map((slug) => ({ slug })); }
@@ -38,14 +53,17 @@ export default async function CollectionPage({ params }: P) {
   const c = COLLECTIONS[slug];
   if (!c) notFound();
   const posts = POST_LIST.filter((p) => p.stays.some((s) => c.hotels.some((h) => h.slug === s.slug)));
-  const offers = liveOffers();
-  const routes = Object.values(TRIPS).filter((t) => (t.offerRefs ?? []).some((r) => c.hotels.some((h) => h.slug === r)));
+  const cy = isCayuga(c);
+  const t: Copy = { ...CAYUGA_COPY, ...c.copy };
+  const offers = cy ? liveOffers() : [];
+  const gallery = cy ? GALLERY : [];
+  const routes = !cy ? [] : Object.values(TRIPS).filter((t) => (t.offerRefs ?? []).some((r) => c.hotels.some((h) => h.slug === r)));
   const slugOf = (name: string) => c.hotels.find((h) => h.name === name);
-  const facts: [string, string][] = [["Hotels", String(c.hotels.length)], ["Countries", String(c.countries.length)], ["Founded", c.founded], ["Founders", c.founders.join(" & ")]];
+  const facts: [string, string][] = c.facts ?? [["Hotels", String(c.hotels.length)], ["Countries", String(c.countries.length)], ["Founded", c.founded], ["Founders", c.founders.join(" & ")]];
   const url = absoluteUrl(c.path);
 
   const schema = graph(
-    { "@type": "Organization", "@id": `${url}#org`, name: "Cayuga Collection", alternateName: "Cayuga Hospitality", foundingDate: c.founded, founder: c.founders.map((name) => ({ "@type": "Person", name })), url: absoluteUrl(c.path), areaServed: c.countries.map((name) => ({ "@type": "Country", name })) },
+    { "@type": "Organization", "@id": `${url}#org`, name: c.orgName ?? c.name, ...(cy ? { alternateName: "Cayuga Hospitality" } : {}), ...(c.founded ? { foundingDate: c.founded } : {}), founder: c.founders.map((name) => ({ "@type": "Person", name })), url: absoluteUrl(c.path), areaServed: c.countries.map((name) => ({ "@type": "Country", name })) },
     { "@type": "CollectionPage", "@id": `${url}#page`, url, name: c.seo.title, description: c.seo.description, about: { "@id": `${url}#org` }, publisher: { "@id": ids.house },
       mainEntity: { "@type": "ItemList", itemListElement: c.hotels.map((h, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "LodgingBusiness", name: h.name, address: { "@type": "PostalAddress", addressLocality: h.where, addressCountry: h.country }, ...(h.built ? { url: absoluteUrl(`/stays/${h.slug}`) } : {}), ...(h.image ? { image: h.image.url } : {}) } })) } },
   );
@@ -72,11 +90,21 @@ export default async function CollectionPage({ params }: P) {
               {facts.map(([k, v]) => <div key={k} className="bg-paper p-4"><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[1.35rem] mt-1 leading-tight">{v}</dd></div>)}
             </dl>
           </div>
+          {c.partner && (
+            <p className="mt-2 text-[14px] ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-2">{c.partner.eyebrow}</span>{c.partner.line} <a href={c.partner.creditUrl} className="underline underline-offset-2 hover:text-ink" rel="noopener">{c.partner.credit}</a>.</p>
+          )}
 
+          {c.partner ? (
+            <section id="hotels" aria-labelledby="hotels-h" className={SEC}>
+              <p className="ledger-eyebrow ledger-crimson">The hotels</p>
+              <h2 id="hotels-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">{t.hotelsHeading}</h2>
+              <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">{t.hotelsLine}</p>
+            </section>
+          ) : (
           <section id="hotels" aria-labelledby="hotels-h" className={SEC}>
             <p className="ledger-eyebrow ledger-crimson">The hotels</p>
-            <h2 id="hotels-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">Seven Places, No Two Alike</h2>
-            <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">Each keeps its own sense of place. The question isn&rsquo;t which is best, but which fits the journey.</p>
+            <h2 id="hotels-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">{t.hotelsHeading}</h2>
+            <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">{t.hotelsLine}</p>
             <ul className="mt-8 grid md:grid-cols-2 gap-6">
               {c.hotels.map((h) => {
                 const inner = (
@@ -91,7 +119,7 @@ export default async function CollectionPage({ params }: P) {
                       <h3 className="ledger-display text-[1.6rem] leading-tight mt-1">{h.name}</h3>
                       <p className="text-[14px] ledger-muted mt-0.5">{h.where}</p>
                       <p className="mt-3 text-[16px] leading-relaxed">{h.line}</p>
-                      <p className="mt-3 text-[14.5px] leading-relaxed ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-1.5">Cayuga says</span>&ldquo;{h.official.who}&rdquo; {h.official.facts}</p>
+                      <p className="mt-3 text-[14.5px] leading-relaxed ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-1.5">{t.says}</span>{t.quoteOfficial ? <>&ldquo;{h.official.who}&rdquo;</> : h.official.who} {h.official.facts}</p>
                       <ul className="mt-4 flex flex-wrap gap-2">{h.bestFor.map((b) => <li key={b} className="border ledger-border px-2.5 py-0.5 text-[13px]">{b}</li>)}</ul>
                       {h.built
                         ? <span className="mt-5 inline-flex items-center gap-2 ledger-crimson text-[15px]">See {h.name} <ArrowRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></span>
@@ -103,10 +131,66 @@ export default async function CollectionPage({ params }: P) {
               })}
             </ul>
           </section>
+          )}
+        </div>
 
+        {c.partner && (
+          <ol className="mt-8 md:mt-12 space-y-14 md:space-y-24">
+            {c.hotels.map((h, i) => (
+              <li key={h.slug} id={h.slug}>
+                <figure className="relative w-full aspect-[4/5] sm:aspect-[16/10] lg:aspect-[21/9] max-h-[88svh] overflow-hidden bg-ink">
+                  {h.image && <Image src={h.image.url} alt={h.image.alt} fill sizes="100vw" quality={88} className="object-cover" />}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,24,22,0.78)] via-[rgba(26,24,22,0.10)] to-transparent" aria-hidden="true" />
+                  <figcaption className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-7 md:pb-12 text-white">
+                    <p className="ledger-eyebrow !text-white/80">{String(i + 1).padStart(2, "0")} · {h.country} · {h.setting}</p>
+                    <p className="ledger-display text-[2.2rem] md:text-[3.6rem] leading-[1.02] mt-2">{h.name}</p>
+                    <p className="mt-1 text-[15px] md:text-[17px] text-white/85">{h.where}</p>
+                  </div></figcaption>
+                </figure>
+                <div className="max-w-ledger mx-auto px-5 md:px-10 mt-6 md:mt-8 grid md:grid-cols-[1.3fr_1fr] gap-6 md:gap-14">
+                  <div>
+                    <p className="text-[17.5px] md:text-[19px] leading-relaxed">{h.line}</p>
+                    <p className="mt-3 text-[15px] leading-relaxed ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-1.5">{t.says}</span>{h.official.who} {h.official.facts}</p>
+                  </div>
+                  <div className="md:border-l md:ledger-border md:pl-8">
+                    <p className="ledger-eyebrow">James&rsquo;s call</p>
+                    <p className="mt-1 text-[16px] leading-relaxed">{h.choose}</p>
+                    <ul className="mt-4 flex flex-wrap gap-2">{h.bestFor.map((b) => <li key={b} className="house-chip border ledger-border px-2.5 py-0.5 text-[13px]">{b}</li>)}</ul>
+                    {h.built
+                      ? <Link href={`/stays/${h.slug}`} className="ledger-btn mt-5 inline-flex">See {h.name}</Link>
+                      : <p className="mt-5 text-[14px] ledger-muted italic">Its own page is being filed. Ask us about it in the meantime.</p>}
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
+
+        {c.partner && c.partner.story.length > 0 && (
+          <section id="story" aria-labelledby="story-h" className="mt-20 md:mt-32">
+            <div className="max-w-ledger mx-auto px-5 md:px-10">
+              <p className="ledger-eyebrow ledger-crimson">Across {c.name.replace(/ Hotels and Resorts$/, "")}</p>
+              <h2 id="story-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] mt-2">The Places Themselves</h2>
+            </div>
+            <ul className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-3 px-2 md:px-3">
+              {c.partner.story.map((g, i) => {
+                const span = ["md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-5 aspect-square", "md:col-span-7 aspect-[4/3] md:aspect-auto", "md:col-span-7 aspect-[4/3]", "md:col-span-5 aspect-[4/3] md:aspect-auto", "md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-6 aspect-square", "md:col-span-6 aspect-square"][i % 8];
+                return (
+                  <li key={g.url} className={`relative overflow-hidden bg-ink/5 ${span}`}>
+                    <Image src={g.url} alt={g.alt} fill sizes={span.includes("col-span-12") ? "100vw" : "(min-width: 768px) 60vw, 100vw"} quality={88} className="object-cover" />
+                    <span className="absolute left-3 bottom-3 bg-black/55 text-white text-[11px] tracking-[0.12em] uppercase px-2 py-0.5">{g.hotel}</span>
+                  </li>
+                );
+              })}
+            </ul>
+            <p className="max-w-ledger mx-auto px-5 md:px-10 mt-4 text-[12.5px] ledger-muted">{t.galleryCredit}</p>
+          </section>
+        )}
+
+        <div className="max-w-ledger mx-auto px-5 md:px-10">
           <section id="fit" aria-labelledby="fit-h" className={SEC}>
             <p className="ledger-eyebrow ledger-crimson">Who it suits</p>
-            <h2 id="fit-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">Which Cayuga Hotel Fits Which Traveller</h2>
+            <h2 id="fit-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">{t.fitHeading}</h2>
             <div className="mt-8 overflow-x-auto">
               <table className="w-full min-w-[640px] text-[15px] border-collapse">
                 <thead><tr className="border-b ledger-rule text-left"><th className="py-3 pr-4 ledger-eyebrow font-normal">Hotel</th><th className="py-3 pr-4 ledger-eyebrow font-normal">Setting</th><th className="py-3 pr-4 ledger-eyebrow font-normal">Best for</th><th className="py-3 ledger-eyebrow font-normal">James&rsquo;s call</th></tr></thead>
@@ -124,7 +208,7 @@ export default async function CollectionPage({ params }: P) {
 
           <section id="pairings" aria-labelledby="pair-h" className={SEC}>
             <p className="ledger-eyebrow ledger-crimson">How to combine them</p>
-            <h2 id="pair-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">Two or Three Places, Well Connected</h2>
+            <h2 id="pair-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">{t.pairHeading}</h2>
             <p className="mt-3 text-[16.5px] ledger-muted max-w-2xl">{c.rule}</p>
             <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {c.pairings.map((p) => <li key={p.title} className="border-t-2 border-crimson pt-4"><h3 className="ledger-display text-[1.25rem]">{p.title}</h3><p className="mt-1 ledger-eyebrow">{p.hotels.join(" + ")}</p><p className="mt-2 text-[15.5px] leading-relaxed ledger-muted">{p.line}</p></li>)}
@@ -188,14 +272,14 @@ export default async function CollectionPage({ params }: P) {
           )}
         </div>
 
-        {GALLERY.length > 0 && (
+        {gallery.length > 0 && (
           <section id="gallery" aria-labelledby="gal-h" className="mt-16 md:mt-24">
             <div className="max-w-ledger mx-auto px-5 md:px-10">
               <p className="ledger-eyebrow ledger-crimson">Across the collection</p>
               <h2 id="gal-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">The Places Themselves</h2>
-              <nav aria-label="Gallery themes" className="mt-5 flex flex-wrap gap-2">{GALLERY.map((grp) => <a key={grp.key} href={`#g-${grp.key}`} className="border ledger-border px-3 py-1 text-[13.5px] hover:border-crimson/60">{grp.label} <span className="ledger-muted">{grp.images.length}</span></a>)}</nav>
+              <nav aria-label="Gallery themes" className="mt-5 flex flex-wrap gap-2">{gallery.map((grp) => <a key={grp.key} href={`#g-${grp.key}`} className="border ledger-border px-3 py-1 text-[13.5px] hover:border-crimson/60">{grp.label} <span className="ledger-muted">{grp.images.length}</span></a>)}</nav>
             </div>
-            {GALLERY.map((grp) => (
+            {gallery.map((grp) => (
               <div key={grp.key} id={`g-${grp.key}`} className="mt-10">
                 <h3 className="max-w-ledger mx-auto px-5 md:px-10 ledger-display text-[1.35rem] md:text-[1.6rem] mb-4">{grp.label}</h3>
                 <ul className="grid grid-cols-2 md:grid-cols-4 gap-1.5 md:gap-2 px-1.5 md:px-2">
@@ -208,24 +292,24 @@ export default async function CollectionPage({ params }: P) {
                 </ul>
               </div>
             ))}
-            <p className="max-w-ledger mx-auto px-5 md:px-10 mt-4 text-[12.5px] ledger-muted">Photographs: Cayuga Collection.</p>
+            <p className="max-w-ledger mx-auto px-5 md:px-10 mt-4 text-[12.5px] ledger-muted">{t.galleryCredit}</p>
           </section>
         )}
 
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <section id="ask" aria-labelledby="ask-h" className={SEC}>
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-14">
-              <div><p className="ledger-eyebrow ledger-crimson">Before you book</p><h2 id="ask-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">Questions Worth Asking Any &lsquo;Sustainable&rsquo; Hotel</h2><p className="mt-3 text-[16.5px] ledger-muted">A hotel doing serious work can answer these clearly. Much of what&rsquo;s published about Cayuga comes from the collection itself, so we ask too.</p></div>
+              <div><p className="ledger-eyebrow ledger-crimson">Before you book</p><h2 id="ask-h" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2">{t.askHeading}</h2><p className="mt-3 text-[16.5px] ledger-muted">{t.askLine}</p></div>
               <ol className="grid gap-3">{c.questions.map((q, i) => <li key={q} className="grid grid-cols-[2.2rem_1fr] items-baseline border-b ledger-border pb-3 text-[16.5px]"><span className="font-mono text-[12px] ledger-crimson">{String(i + 1).padStart(2, "0")}</span>{q}</li>)}</ol>
             </div>
           </section>
 
           <FromTheJournal posts={posts} />
 
-          <FaqBlock faqs={c.faqs} title="Questions About the Cayuga Collection" />
-          <p className="mt-8 text-[13px] ledger-muted max-w-3xl">{c.disclosure} Hotel details from the Cayuga Collection; the roster is confirmed before booking.</p>
+          <FaqBlock faqs={c.faqs} title={t.faqTitle} />
+          <p className="mt-8 text-[13px] ledger-muted max-w-3xl">{c.disclosure} {t.source}</p>
 
-          <PlanBand place="Central America" compassHref="/compass" />
+          <PlanBand place={t.planPlace} compassHref="/compass" />
         </div>
       </main>
       <JsonLd data={schema} />

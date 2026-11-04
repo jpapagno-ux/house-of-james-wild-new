@@ -7263,6 +7263,103 @@
    "placeSlug": null
   },
   {
+   "slug": "borgo-santo-pietro",
+   "name": "Borgo Santo Pietro",
+   "ledgerId": "STY-2026-000628",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A Tuscan villa with its own farm, dairy and vineyards, in the hills near Siena",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-estate",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-pool-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-villa-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-valle-serena-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-saporium",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-trattoria",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/borgo-santo-pietro/borgo-santo-pietro-wine-cellar"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "honeymoon",
+    "wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 43.143308,
+    "lng": 11.128378
+   },
+   "airport": null,
+   "airportDirections": "Borgo Santo Pietro arranges airport collection on request (send flight details) and can arrange a rental car. The hotel does not publish a nearest airport or drive times; it describes itself as near Siena, San Gimignano and San Galgano and not far from Florence.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Villa Rooms and Suites",
+     "Garden Suites with Mediterranean Courtyard",
+     "Ultimate Seclusion Private Estate Garden Suites",
+     "Ultimate Seclusion Private Estate Pool Suites"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "22 rooms and suites, each styled on its own",
+     "A 300-acre estate with an organic farm, dairy and vineyards",
+     "13 acres of gardens: formal, water, wild and culinary",
+     "Saporium Chiusdino, with executive chef Ariel Hagen",
+     "Trattoria sull'Albero, built around two oak trees",
+     "A wine cellar of 1,500 labels",
+     "The Borgo SPA, home of the Seed to Skin range",
+     "A cooking school on the estate"
+    ]
+   },
+   "onlyHere": [
+    "Borgo Santo Pietro is a villa estate at Chiusdino, in the hills near Siena, San Gimignano and San Galgano, as the hotel describes it. Around the villa lie 13 acres of gardens and a 300-acre organic farm with a dairy, vineyards and culinary gardens, and the 22 rooms and suites are each furnished on their own, with antiques, fireplaces and views of the gardens or the countryside.",
+    "Saporium Chiusdino, under executive chef Ariel Hagen, cooks to a philosophy of biodiversity and regenerative agriculture, from the estate's gardens and produce. Trattoria sull'Albero is the informal table, built around two oak trees. There is a cooking school, a wine cellar of 1,500 labels and The Borgo SPA."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Farm That Feeds the Table Borgo Santo Pietro is a working estate as much as a hotel: 300 acres of organic farm, dairy and vineyards around a villa of 22 rooms and suites. The food at Saporium and the Trattoria starts in gardens a few steps from the door, and that is the reason to come."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "countryside",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "breac-house",
    "name": "Breac.House",
    "ledgerId": "STY-2026-000525",
@@ -7726,6 +7823,102 @@
      "PATH-05"
     ],
     "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "como-castello-del-nero",
+   "name": "COMO Castello Del Nero",
+   "ledgerId": "STY-2026-000625",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A twelfth-century castle on a 740-acre Chianti estate, between Florence and Siena",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-pool-castle-trees",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-estate-fields",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-dining-room-chandelier",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-dish-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-dish-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-como-shambhala"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "wine",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Florence Peretola Airport",
+   "airportDirections": "About 35 km and 35 to 45 minutes by car from Florence Peretola Airport, 1 hour 15 to 1 hour 30 from Pisa Airport, and about 3 hours from Rome Fiumicino, as COMO states. A complimentary shuttle runs to Florence or Siena on a set schedule, and helicopter arrival can be arranged.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Estate Rooms",
+     "Tavarnelle Rooms",
+     "Tavarnelle Suites",
+     "Loft Suites",
+     "Heritage Suites",
+     "COMO Suite",
+     "COMO Terrace Suite",
+     "Villa San Luigi, five bedrooms"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A twelfth-century castle on a 740-acre estate in Chianti",
+     "Renaissance frescoes; interiors by Paola Navone",
+     "50 rooms and suites, plus the five-bedroom Villa San Luigi",
+     "La Torre, with one Michelin star",
+     "COMO Shambhala Retreat with thermal suites and a 25-metre outdoor pool",
+     "Its own vineyards, olive groves, wine and olive oil"
+    ]
+   },
+   "onlyHere": [
+    "COMO Castello Del Nero is a twelfth-century castle on a 740-acre estate in Chianti, between Florence and Siena, as COMO describes it. Renaissance frescoes remain inside, and the interiors are by the Milanese designer Paola Navone. The castle holds 50 rooms and suites, and the estate adds Villa San Luigi, a five-bedroom villa with its own 16-metre pool.",
+    "The estate keeps its own vineyards and olive groves and makes its own wine and olive oil, with a chef's garden for the kitchens and four marked walking paths. La Torre holds one Michelin star; La Taverna sits in the castle's original kitchen. The COMO Shambhala Retreat has thermal suites, and a 25-metre heated pool opens outdoors in summer."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Working Chianti Estate This is a castle that still farms its land. The 740 acres around COMO Castello Del Nero carry vineyards, olive groves and a chef's garden, and the wine and olive oil come from the estate. Florence and Siena are each under an hour by car, so the city and the hill towns are day trips, with the castle to come back to."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "countryside",
     "intentions": [],
     "suitability": [],
     "status": "draft",
@@ -20712,6 +20905,105 @@
    "placeSlug": null
   },
   {
+   "slug": "jk-place-capri",
+   "name": "J.K. Place Capri",
+   "ledgerId": "STY-2026-000632",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Capri's old Hotel Continental at Marina Grande, now a J.K. Place facing the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-hotel-marina-grande",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-restaurant-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-penthouse-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-jk-master",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-jk-studio",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-deluxe-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/capri/jk-place-capri/jk-place-capri-private-dining"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "luxury",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Naples Capodichino (NAP)",
+   "airportDirections": "Naples Capodichino is about 20 minutes by car from the Naples ports, as J.K. Place states. Hydrofoils leave Molo Beverello for Capri in about 50 minutes, and ferries leave Calata Porta di Massa in 60 or 75 minutes; boats also run from Sorrento, and in summer from Amalfi, Positano, Salerno and Ischia. A helicopter from Naples to the Damecuta heliport in Anacapri takes about 20 minutes. The hotel's complimentary shuttle meets guests at Capri harbour.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "J.K. Classic, 30 sqm, Monte Solaro view",
+     "Hideaway Superior Room, 27 sqm, sea view",
+     "Deluxe Room, 28 to 38 sqm, sea view",
+     "J.K. Studio, 38 to 45 sqm, sea or pool view",
+     "Master Room, 45 to 50 sqm, sea view",
+     "J.K. Master, 50 to 55 sqm, sea view",
+     "Penthouse Room, 35 to 40 sqm, pool or marina view",
+     "J.K. Penthouse Room, 45 sqm, sea view",
+     "Penthouse Suite, 75 sqm, two bedrooms and two terraces"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "At Marina Grande, Capri",
+     "A building whose story begins with Villa Bovaro, built before 1878",
+     "Nine room and suite types, most with sea views",
+     "Restaurant on a panoramic terrace, JKitchen and a lounge bar",
+     "A pool, with a pool bar in the garden",
+     "J.K. Spa with a steam room, and a Technogym gym",
+     "Complimentary shuttle to Capri harbour and the main square"
+    ]
+   },
+   "onlyHere": [
+    "J.K. Place Capri stands at Marina Grande, on the first stretch of the old road down to the harbour. The building began as a private house, Villa Bovaro, built before 1878, and later became the Hotel Continental and then the Hotel Palatium; an 1899 guide described it as the only first-class hotel with a private path down to the beach below.",
+    "Today it has nine room and suite types, most facing the sea, up to the Penthouse Suite with two bedrooms and two terraces over the Bay of Naples and the marina. Meals are served on the restaurant's panoramic terrace, with a pool bar in the garden and the J.K. Spa below."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Capri From the Water's Edge J.K. Place is down at Marina Grande, in a house whose story goes back to before 1878, with most rooms facing the sea. The hotel's shuttle runs up to the main square and back when you want it, and the J.K. Experience walks to Monte Solaro, Villa Jovis and the Sentiero dei Fortini show the island on foot."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "island",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ja-manufaru-maldives",
    "name": "JA Manafaru Maldives \nLuxury Island Residences",
    "ledgerId": "STY-2026-000120",
@@ -25498,6 +25790,95 @@
    "placeSlug": null
   },
   {
+   "slug": "la-bandita-townhouse",
+   "name": "La Bandita Townhouse",
+   "ledgerId": "STY-2026-000627",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twelve rooms in a Renaissance convent in the centre of Pienza",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-welcome",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-pienza-countryside",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-pienza-town",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-hotel-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-room-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-caffe",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/la-bandita-townhouse/la-bandita-townhouse-food"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms, each with a queen-size bed. Suites for families."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "In the historic centre of Pienza, on Corso Il Rossellino",
+     "A former convent from the Renaissance era",
+     "12 rooms, including a couple of suites for families",
+     "Queen beds, parquet floors and wood-beamed ceilings",
+     "La Bandita Caffè, led by chef David Mangan",
+     "Dogs welcome"
+    ]
+   },
+   "onlyHere": [
+    "La Bandita Townhouse is a 12-room hotel in the historic centre of Pienza, in a convent from the Renaissance era where nuns once lived, as La Bandita describes it. The stone exterior and its original plaque were kept in the renovation, so from the street it can pass for a private house.",
+    "Owner John Voigtmann came to Tuscany from the music business in New York and lives in Pienza. He set out to make a relaxed place for friends, and friends of friends, to live the town's daily rhythm: rooms with beamed ceilings and parquet floors, and La Bandita Caffè, led by chef David Mangan since it opened, serving a casual take on Tuscan cooking from local ingredients."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Village Life in Pienza La Bandita Townhouse is about the town itself. Twelve rooms sit behind a convent's stone front on Corso Il Rossellino, the owner lives in Pienza, and La Bandita Caffè serves lunch and dinner, with Monday lunch the only gap. It suits travellers who would rather know a Tuscan village than tour past it."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "hill_town",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "la-cle",
    "name": "La Cle \n South Africa",
    "ledgerId": "STY-2026-000140",
@@ -25733,6 +26114,106 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "la-torretta-lodge",
+   "name": "La Torretta Lodge",
+   "ledgerId": "STY-2026-000631",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Suites inside an old tower in the centre of Manarola, looking out to the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-two-bedroom-tower-suite",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-panoramic-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-duplex-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-limonaia-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-design-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-romantic-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/la-torretta-lodge/la-torretta-lodge-classic-room"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": "About 10 minutes on foot from Manarola station, with no steps, as La Torretta states. Manarola is a pedestrian village, so there is no luggage transfer from the station. A taxi from La Spezia Centrale takes about 25 minutes. Guests arriving by car leave it at the Manarola public car park, where the lodge helps with luggage between 7.30am and 8pm; a private garage can be booked in advance.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Classic Room",
+     "Superior Room",
+     "Deluxe Room",
+     "Limonaia Suite",
+     "Panoramic Suite, in a separate building about two minutes away on foot",
+     "Romantic Suite",
+     "Design Suite",
+     "Duplex Suite",
+     "One Bedroom Suite",
+     "Two Bedroom Deluxe Suite",
+     "Two Bedroom Prestige Suite",
+     "Two Bedroom Tower Suite, over two floors",
+     "The Lodge, a whole house for groups, price on request"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Inside an ancient tower in the centre of Manarola",
+     "Within the Cinque Terre National Park",
+     "Sea views from many of the rooms and suites",
+     "Private terraces or balconies on most suites",
+     "About 10 minutes on foot from Manarola station, with no steps"
+    ]
+   },
+   "onlyHere": [
+    "La Torretta Lodge is set inside an ancient tower in the centre of Manarola, one of the five villages of the Cinque Terre, within the national park. The rooms and suites look out over the village and the bay, and most of the suites have a private terrace or balcony facing the sea.",
+    "Some rooms keep the character of the old house, with ceiling frescoes, a vaulted former lemon house and Carrara marble bathrooms. For a family or a group of friends there is The Lodge, a separate house with its own sea-view terrace, jacuzzi, garden and butler."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Tower in Manarola La Torretta puts you inside the village rather than above it: an old tower in the centre of Manarola, a short, step-free walk from the station, with sea-view terraces on most suites. You come back from the Cinque Terre to a quiet terrace over the bay at the end of the day."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "coastal_village",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -30195,6 +30676,102 @@
    "arrivalHubIds": [
     "6ae697423b5411a430e82331"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "monteverdi-tuscany",
+   "name": "Monteverdi Tuscany",
+   "ledgerId": "STY-2026-000629",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hilltop village in the Val d'Orcia, kept as one hotel of 31 bedrooms",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-village",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-village-and-church",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-private-village-house",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-tuscan-view-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-monte-cetona-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-village-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-oreade",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/monteverdi-tuscany/monteverdi-tuscany-spa"
+   ],
+   "bestMonths": "All year",
+   "bestMonthsNote": "Monteverdi says southern Tuscany is a delight to visit all year round, with some activities seasonal. The site does not publish opening or closing dates.",
+   "bestFor": [
+    "luxury",
+    "honeymoon",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Florence Airport (FLR)",
+   "airportDirections": "About 90 minutes by car from Florence (FLR) and two hours from Rome (FCO), as Monteverdi states. The nearest train station is Chiusi-Chianciano Terme, about 30 minutes by car; Sarteano is about 10 minutes below the village. Valet or self parking is complimentary.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Village Rooms",
+     "Village Suites",
+     "Tuscan View Suites",
+     "Monte Cetona Suite",
+     "Private Village Houses"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "31 bedrooms across the buildings of one hilltop village",
+     "Views over the Val d'Orcia, framed by Monte Cetona and Monte Amiata",
+     "Oreade, the fine dining restaurant, with chef Riccardo Bacciottini",
+     "Zita, the village osteria",
+     "A spa with saunas, cold plunges and an underground warm pool",
+     "A Culinary Academy with cooking classes four days a week",
+     "An art gallery and a concert series in the Chiesa di Sant'Andrea"
+    ]
+   },
+   "onlyHere": [
+    "Monteverdi Tuscany occupies the hilltop village of Castiglioncello del Trinoro in the Val d'Orcia, above Sarteano in the province of Siena. Its 31 bedrooms are spread across several of the village's buildings, from Village Rooms in wood and stone to Private Village Houses, and the hotel hosts up to 80 guests.",
+    "The village sits on an ancient volcanic crag framed by Monte Cetona and Monte Amiata; the hotel traces it back to Etruscan founders and Roman times. Days follow the village scale: dinner at Oreade or Zita, a spa with an underground warm pool, cooking classes at the Culinary Academy, a gallery and concerts in the Chiesa di Sant'Andrea."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Whole Village, One House Monteverdi is not a hotel in a village but the village itself, run as one place to stay on a crag above the Val d'Orcia. Walk from your room to the church, the gallery and the table at Oreade, and end the day on the terrace with an aperitivo and the view."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "hilltop",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -47681,6 +48258,101 @@
    "placeSlug": null
   },
   {
+   "slug": "terre-bianche-dolceacqua",
+   "name": "Terre Bianche",
+   "ledgerId": "STY-2026-000630",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A Rossese winery since 1870, with four farm apartments above Dolceacqua",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-stone-farmhouse",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-estate",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-casale-del-generale",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-caserma",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-generale-kitchen",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-caserma-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-caserma-entrance",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/liguria/terre-bianche-dolceacqua/terre-bianche-dolceacqua-rossese-vine"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wine",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 43.8435,
+    "lng": 7.611361
+   },
+   "airport": "Nice Airport (NCE)",
+   "airportDirections": "About 45 minutes by car from Nice airport and 25 minutes from the centre of Ventimiglia, as Terre Bianche states. From the Ventimiglia motorway exit it is about 20 minutes, from Bordighera about 30. Follow the family's directions, not a navigator: the direct road from Camporosso is private and gated.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "L'Appartamento del Generale, 140 square metres, two double rooms",
+     "Maggiorana, a Caserma apartment, 36 square metres",
+     "Ginepro, a Caserma apartment, 40 square metres",
+     "Salvia, a Caserma apartment, 45 square metres"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A family winery in the hills behind Dolceacqua, founded in 1870",
+     "Pigato and Vermentino as well",
+     "Certified organic",
+     "Four self-catering apartments in two farmhouses, for up to 18 guests",
+     "Views to the sea, the Alps and the castle of Dolceacqua",
+     "About 45 minutes by car from Nice airport"
+    ]
+   },
+   "onlyHere": [
+    "Terre Bianche is a winery and agriturismo in the hills behind Dolceacqua, 25 minutes from Ventimiglia, where Tommaso Rondelli planted the first Rossese vineyard in 1870. The estate takes its name from the Terrabianca cru, and its Rossese di Dolceacqua is grown across four named crus, each on its own soil, from blue marl to red clay and rock.",
+    "Guests stay in four apartments in two farmhouses. L'Appartamento del Generale has 140 square metres over two floors, two double rooms and a private garden with what the family calls the best view on the estate, to the sea, the Alps and Dolceacqua's castle. The three Caserma apartments sit in a building the Italian army used in the Second World War, each with a small private garden."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Rossese at the Source Terre Bianche is a place to stay with the people who make the wine. The Rondelli family has grown Rossese di Dolceacqua on this hill since 1870; the apartments are self-catering and set among the vineyards, under an hour from Nice and the Riviera."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "vineyard",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "thatch-caye-resort",
    "name": "Thatch Caye Resort",
    "ledgerId": "STY-2026-786208",
@@ -49057,6 +49729,100 @@
     "6ae697445c7b134365e994e7",
     "6ae69744c23ffff6bdd6ef40"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "the-place-firenze",
+   "name": "The Place Firenze",
+   "ledgerId": "STY-2026-000626",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family-owned Florence house on Piazza Santa Maria Novella, open since 2003",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-interior",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-santa-maria-novella-master-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-panoramic-loft",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-duomo-penthouse",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-junior-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-penthouse",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/florence/the-place-firenze/the-place-firenze-kitchen-and-bar"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Florence Airport (FLR)",
+   "airportDirections": "About 20 to 25 minutes by car or taxi from Florence Airport, and about an hour by car from Pisa Airport (PSA), or 1 hour 15 by train, as the hotel states. Santa Maria Novella station is a five-minute walk. There is no parking at the hotel; a partner garage close by offers valet, and the hotel registers your plate for the limited traffic zone.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "The Superior",
+     "The Deluxe",
+     "The Junior Suite",
+     "The Executive Suite",
+     "The Santa Maria Novella Master Suite",
+     "The Panoramic Loft",
+     "The Duomo Penthouse",
+     "The Super Penthouse",
+     "The Grand"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "On Piazza Santa Maria Novella, Florence",
+     "Owned and run by the Babini family since 2003",
+     "The Kitchen & The Bar, open all day",
+     "A 100 sqm terrace over the piazza",
+     "The Place on the Roof, looking to Brunelleschi's dome",
+     "Breakfast and minibar included in the room rate"
+    ]
+   },
+   "onlyHere": [
+    "The Place Firenze stands on Piazza Santa Maria Novella, a five-minute walk from the station and seven from the Duomo, as the hotel describes it. The Babini family owns and runs it, and it opened in 2003. There is no traditional check-in: guests ring the doorbell at the main entrance and are welcomed in while the details are done.",
+    "The rooms run from the Superior to the top-floor penthouses. The Santa Maria Novella Master Suite looks over the piazza and its Renaissance church, with Rubelli textiles and a fireplace; the Duomo Penthouse has a private altana over Brunelleschi's dome. The Kitchen & The Bar, led by chef Asso Migliore, serves all day, and The Place on the Roof can be reserved for private use."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Florence From the Piazza The Place Firenze is a small, family-owned house on Piazza Santa Maria Novella, with the station five minutes away and the Duomo seven. It runs more like a home than a hotel: you ring the doorbell to arrive, breakfast and the minibar are included, and the rooftop looks across to Brunelleschi's dome."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [],
+    "setting": "city",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-04"
+   },
+   "volumes": [
+    "europe",
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

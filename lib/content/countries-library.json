@@ -2239,7 +2239,7 @@
       }
      ],
      "image": {
-      "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a8183dfe_50e52b455_6a51131e95207a5cedcd047c_hotel-facade.jpg",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-snow-buildings-mountains",
       "alt": "Italy: Not the Queues, the Valleys"
      }
     },
@@ -2260,7 +2260,7 @@
       }
      ],
      "image": {
-      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-snow-buildings-mountains",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-pool-castle-trees",
       "alt": "Italy: The Dolomites, in Both Seasons"
      }
     }
@@ -2290,20 +2290,20 @@
    ],
    "airports": [
     [
+     "Florence Airport (FLR)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
      "Bolzano Airport (BZO)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Leonardo da Vinci International Airport (FCO)",
-     "Serves 1 stay in the Ledger here"
-    ],
-    [
-     "Ciampino Airport (CIA)",
+     "Naples Capodichino (NAP)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "BZO · FCO",
+   "flyInto": "FLR · BZO",
    "bestShort": "Dec–Mar",
    "atlasName": "Italy"
   },

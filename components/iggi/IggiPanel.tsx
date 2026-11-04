@@ -8,6 +8,7 @@ import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
 import { CRUX_HREF } from "@/lib/compass/pathway-adapter";
 import { folioFromCore, getFolio, isFolioId, saveFolio, type Folio } from "@/lib/folio/shelf";
 import { FLAGS } from "@/lib/booking-live/flags";
+import IggiAtlas, { type IggiPlace } from "@/components/iggi/IggiAtlas";
 
 // "Ask Iggi" panel — Stage 2 of the Iggi Intelligence Core (Contract C3).
 // Mints a same-origin embed token from /api/iggi/token, then loads the Iggi
@@ -39,6 +40,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   const [state, setState] = useState<"idle" | "loading" | "ready" | "off">("idle");
   const [height, setHeight] = useState(620);
   const [folio, setFolio] = useState<Folio | null>(null); // Stage 4: the Folio Iggi handed back
+  const [atlas, setAtlas] = useState<{ stays: IggiPlace[]; title: string | null; focus: number } | null>(null); // §D3: the places Iggi named, on the Atlas
 
   // Lazy: mint the token and set the iframe src only when the panel is near the viewport.
   useEffect(() => {
@@ -104,6 +106,17 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           if (Array.isArray(dl)) dl.push({ event: "iggi_folio", fol: f.fol, advisor: f.advisor?.adv ?? null, page: ctx.sourcePage });
         }
       }
+      // §D3 (4 Nov 2026): Iggi hands the places it named to the Atlas beneath the chat. The Core
+      // posts quietly when a journey is shaped and again, with focus, when the traveller asks to
+      // see them. Up to 12 places; only slug, Ledger ID, name and reason are read.
+      if (d.type === "ji:atlas") {
+        const m = d as { stays?: unknown; title?: unknown; focus?: unknown };
+        const str = (v: unknown, n: number) => (typeof v === "string" && v.trim() ? v.trim().slice(0, n) : null);
+        const stays = (Array.isArray(m.stays) ? m.stays : []).slice(0, 12).map((s) => { const o = (s && typeof s === "object" ? s : {}) as Record<string, unknown>; return { slug: str(o.slug, 120), ledger_id: str(o.ledger_id, 40), name: str(o.name, 120), reason: str(o.reason, 200) }; }).filter((s) => s.slug || s.ledger_id || s.name);
+        if (stays.length) setAtlas((prev) => ({ stays, title: str(m.title, 120), focus: m.focus ? (prev?.focus ?? 0) + 1 : prev?.focus ?? 0 }));
+        const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
+        if (Array.isArray(dl)) dl.push({ event: "iggi_atlas", places: stays.length, focus: !!m.focus, page: ctx.sourcePage });
+      }
       if (d.type === "ji:open_folio") location.assign(`/folio${typeof d.fol === "string" ? `?fol=${encodeURIComponent(d.fol)}` : ""}`);
       // Stage 5: Iggi hands the traveller to a person. The enquiry arrives on
       // /plan pre-addressed to the advisor on this page, with the Folio ID,
@@ -156,6 +169,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           <div className="p-6 text-[15px] ledger-muted" aria-live="polite">{state === "loading" ? "Iggi is opening the Ledger…" : "Scroll here and Iggi will open the Ledger for this page."}</div>
         )}
       </div>
+      {atlas && <IggiAtlas stays={atlas.stays} title={atlas.title} focus={atlas.focus} />}
       {folio && (
         <aside className="mt-4 border-l-2 border-crimson bg-paper-card px-5 py-4 flex flex-wrap items-center gap-x-6 gap-y-3" aria-live="polite" aria-label="Your Folio">
           <div className="min-w-0">

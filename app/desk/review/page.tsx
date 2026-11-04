@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { DecideRevision, DecideSubmission } from "@/components/platform/forms";
+import { DecideHost } from "@/components/platform/HostForms";
 import { Empty, LedgerId, Notice, PageHead, StatusPill } from "@/components/platform/ui";
 import { requireHouse } from "@/lib/platform/membership";
 import { FIELD_LABEL, REVISION_STATUS, SUBMISSION_STATUS, niceDate, showValue } from "@/lib/platform/labels";
@@ -33,6 +34,11 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
   // Publish run (D-18 A): approved property content waiting to reach the Library.
   const { data: queued } = await desk.sb.from("revisions").select("target_id, property:properties!property_id(name)")
     .eq("target_table", "entity_content").in("status", ["approved", "edited_approved"]).is("published_at", null).limit(500);
+  // Hosts proposed on the desk (James, 4 Nov 2026): the house approves who appears on a page's host card.
+  const { data: hostRows } = await desk.sb.from("site_hosts")
+    .select("id, page_key, name, card_line, place, partner_note, created_at, organization:organizations(name), page:host_pages(label)")
+    .eq("status", "proposed").order("created_at").limit(100);
+  const proposedHosts = (hostRows ?? []) as unknown as { id: string; page_key: string; name: string; card_line: string | null; place: string | null; partner_note: string | null; organization: { name: string } | null; page: { label: string } | null }[];
   const queuedStays = [...new Set(((queued ?? []) as unknown as { property: { name: string } | null }[]).map((q) => q.property?.name).filter(Boolean))];
   return (
     <div>
@@ -44,6 +50,23 @@ export default async function Review({ searchParams }: { searchParams: Promise<{
           <Link href="/desk/commission" className="ledger-btn-ghost uppercase self-center">Commission check</Link>
           <Link href="/partner" className="ledger-btn-ghost uppercase self-center">Partner Desk</Link>
         </>} />
+      {proposedHosts.length > 0 && (
+        <section className="mt-8 border ledger-border bg-white p-5" aria-label="Hosts to approve">
+          <p className="ledger-eyebrow">Hosts to approve · {proposedHosts.length}</p>
+          <ul className="mt-3 divide-y divide-ink/10">
+            {proposedHosts.map((h) => (
+              <li key={h.id} className="py-3 grid gap-2 sm:grid-cols-[1fr_auto] sm:items-center">
+                <div className="min-w-0">
+                  <p className="font-medium">{h.name}<span className="ml-2 text-[13.5px] ledger-muted">{h.card_line}</span></p>
+                  <p className="text-[13px] ledger-muted">{h.organization?.name} · {h.page?.label ?? h.page_key}{h.place ? ` · ${h.place}` : ""}</p>
+                  {h.partner_note && <p className="text-[13.5px] mt-1">{h.partner_note}</p>}
+                </div>
+                <DecideHost id={h.id} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {queuedStays.length > 0 && (
         <div className="mt-6"><Notice title="Approved, waiting for the publish run">
           Content for {queuedStays.join(", ")} goes to the Library in the next publish run: a pull request James merges, after which the stay pages follow. Room changes are live on the desk as soon as they are approved.

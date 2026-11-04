@@ -13,7 +13,7 @@ import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import PriceBuilder from "@/components/record/PriceBuilder";
 import Signature from "@/components/record/Signature";
-import HostPanel, { KIND as HOST_KIND, type HostKind } from "@/components/record/HostPanel";
+import { KIND as HOST_KIND, type HostKind } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
 import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
@@ -28,7 +28,8 @@ import { journeysFor } from "@/lib/content/preview/journeys";
 import { isBuilt } from "@/lib/routes";
 import { InkStamp } from "@/components/ledger/VolumeKit";
 import type { Trip, TripImg } from "@/lib/content/trips";
-import { hostFor } from "@/lib/content/hosts";
+import { HOSTS, hostFor } from "@/lib/content/hosts";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
 import { Stamp } from "@/components/notes/HeroMark";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
@@ -80,7 +81,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // The country crumb on an overland route goes to that country's destination page.
   const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa", mexico: "/destinations/caribbean-mexico/mexico", guatemala: "/destinations/central-america/guatemala", belize: "/destinations/central-america/belize" };
   const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
-  const h = host ? hostFor(host.key) : null;
+  // Voyage and overland routes (trip:<id>) show a host only once the Partner Desk sets one.
+  const h = host ? (host.key.startsWith("trip:") && !(host.key in HOSTS) ? { state: "off" as const } : hostFor(host.key)) : null;
   const hostOn = !!h && h.state !== "off";
   const quote = strip(T.quote).replace(/\s*—\s*J\.\s*W\.\s*$/, "");
   const field = T.founder.extra?.match(/href="([^"]+)"/)?.[1];
@@ -478,7 +480,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
     </Sec>
   );
 
-  const HostBlock = hostOn && h ? <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={h.state} host={h.host} stayName={host!.name} kind={host!.kind} /></div> : null;
+  const HostBlock = host && h ? <LiveHostPanel pageKey={host.key} initial={h} stayName={host.name} kind={host.kind} optional={host.key.startsWith("trip:")} /> : null;
 
   // Sibling routes and voyages in the same country, so a traveller can compare without going back up
   // to the hub (navigation audit, 30 Oct 2026). Only built pages are shown.

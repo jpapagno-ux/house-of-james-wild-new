@@ -21,7 +21,7 @@ declare
   ba1 uuid; ba2 uuid; pol uuid; pol2 uuid; dd uuid;
   csub uuid; crev uuid; crev2 uuid; jt text;
   rm1 uuid; rsub uuid; rrev uuid; rrev2 uuid;
-  rp1 uuid; rp2 uuid; dcm uuid;
+  rp1 uuid; rp2 uuid; dcm uuid; hs1 uuid; hs2 uuid; hs3 uuid;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -742,6 +742,54 @@ begin
     and public.publish_run_mark(array[crev, crev2], 'run-test-2') = 0
     and exists (select 1 from public.entity_content where id = k1 and published_at is not null)
     and not exists (select 1 from public.publish_run_pending() p where p.property_id = k1));
+
+  -- ===== (P) hosts on the desk: the partner proposes and toggles, the house approves (James, 4 Nov 2026)
+  perform set_config('role', 'postgres', true);
+  insert into public.host_pages (page_key, organization_id, label, volume) values
+    ('stay:rls-kayu-ubud', o_k, 'RLS Kayu Ubud', 'stays'), ('voyage:rls-more-yacht', o_m, 'RLS More yacht', 'voyages');
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  insert into public.site_hosts (page_key, organization_id, name, job_title, card_line) values ('stay:rls-kayu-ubud', o_k, 'Ayu Lestari', 'Guest Relations', 'Your host · Guest Relations') returning id into hs1;
+  r := r || jsonb_build_object('t', 'P01 a partner admin proposes a host for their page', 'pass', hs1 is not null);
+  begin insert into public.site_hosts (page_key, organization_id, name, status, show_on_site) values ('stay:rls-kayu-ubud', o_k, 'Self Approved', 'approved', true); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P02 a partner cannot approve or show their own host', 'pass', ok);
+  begin insert into public.site_hosts (page_key, organization_id, name) values ('voyage:rls-more-yacht', o_k, 'Not Mine'); ok := false;
+  exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P03 nor host another partner''s page', 'pass', ok);
+  begin update public.site_hosts set show_on_site = true where id = hs1; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P04 nothing shows before the house approves', 'pass', ok);
+  begin perform public.decide_host(hs1, 'approve'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P05 a partner cannot decide', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform public.decide_host(hs1, 'approve', 'Checked against their site');
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  select count(*) into n from public.site_host_cards where page_key = 'stay:rls-kayu-ubud' and state = 'available' and name = 'Ayu Lestari';
+  r := r || jsonb_build_object('t', 'P06 once approved the card is live on the page (shown by default)', 'pass', n = 1);
+  begin select count(*) into n from public.site_hosts; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P07 the public never reads the hosts table itself', 'pass', ok);
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  update public.site_hosts set show_on_site = false where id = hs1; get diagnostics n = row_count;
+  perform set_config('role', 'anon', true);
+  perform set_config('request.jwt.claims', '{"role":"anon"}', true);
+  r := r || jsonb_build_object('t', 'P08 the partner switches it off at once; the page shows the house instead', 'pass', n = 1
+    and exists (select 1 from public.site_host_cards where page_key = 'stay:rls-kayu-ubud' and state = 'not_linking' and name is null));
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
+  begin update public.site_hosts set name = 'Renamed' where id = hs1; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'P09 approved details change only by a new proposal', 'pass', ok);
+  insert into public.site_hosts (page_key, organization_id, name) values ('stay:rls-kayu-ubud', o_k, 'Made Wirawan') returning id into hs2;
+  perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
+  select count(*) into n from public.site_hosts;
+  r := r || jsonb_build_object('t', 'P10 another partner sees none of it', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform public.decide_host(hs2, 'approve');
+  r := r || jsonb_build_object('t', 'P11 a new host replaces the old one and keeps the partner''s toggle', 'pass',
+    (select status from public.site_hosts where id = hs1) = 'retired'
+    and exists (select 1 from public.site_hosts where id = hs2 and status = 'approved' and show_on_site = false));
+  perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;
 end $$;

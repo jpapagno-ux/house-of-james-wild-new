@@ -17,7 +17,7 @@ import type { Host, HostConnect } from "@/components/record/HostPanel";
 export const GROUP_CONNECT_ON = true;
 
 // PLACEHOLDER until James's live Calendly group event is set.
-const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
+export const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
 
 // SAMPLE host cards (sample: true): roles only, no names, until each property
 // confirms who takes the call. Topics come from the Ledger record.

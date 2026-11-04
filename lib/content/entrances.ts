@@ -167,10 +167,11 @@ export const ENTRANCES: Record<VolumeKey, Entrance> = {
     media: {
       kind: "slides",
       slides: [
-        { url: GETTY("906210770"), alt: "Two giraffes standing in golden grassland under a glowing sky, Serengeti, Tanzania" },
-        { url: GETTY("1201436116"), alt: "Elephants walking among drowned trees above still water at last light" },
+        // James, 4 Nov 2026: no Africa on the Overland entrance; other destinations, Patagonia first.
+        { url: `${CLD}/c_limit,w_2560/q_auto:good/f_jpg/wildco/chile/tierra-patagonia/lodge-aerial`, alt: "Snow-capped peaks above a lake at dusk in Chilean Patagonia (photograph courtesy of Beckons)" },
         { url: GETTY("1320314363"), alt: "A rafting team running white water on the Pacuare River, Costa Rica" },
-        { url: `${CLD}/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/sabi-sand/londolozi/londolozi-leopard-cubs-in-tree`, alt: "Leopard cubs in a tree at Londolozi, Sabi Sand, South Africa (photograph courtesy of Londolozi)" },
+        { url: GETTY("1378209643"), alt: "A red canoe on the clear blue water of Bacalar Lagoon, Mexico" },
+        { url: GETTY("1410796651"), alt: "A couple in ponchos looking out over the ruins of Machu Picchu, Peru" },
         { url: GETTY("1169946098"), alt: "A red-eyed tree frog climbing a stem in the Costa Rican rainforest" },
       ],
     },

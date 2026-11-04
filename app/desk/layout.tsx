@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
-import { PARTNER_DESK } from "@/lib/platform/flags";
 
-// /desk/*: the house's side of the Partner Desk (James Wild & Co editors only).
+// /desk/*: the house's side of the site. Two doors, each gated by its own
+// layout or page: /desk/review (Partner Desk, James Wild & Co editors,
+// requireHouse) and /desk/bookings (Booking Live, advisors and admins).
+// Never indexed.
 export const metadata: Metadata = {
   title: { default: "House desk", template: "%s · House desk · James Wild & Co" },
   robots: { index: false, follow: false, nocache: true, googleBot: { index: false, follow: false } },
@@ -11,7 +12,6 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default function HouseDeskLayout({ children }: { children: React.ReactNode }) {
-  if (!PARTNER_DESK) notFound();
   return (
     <>
       <SiteHeader />

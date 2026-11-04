@@ -9,8 +9,10 @@
 //   NEXT_PUBLIC_BOOKING_LIVE_SHARE     shared Folios and invitations (needs ACCOUNTS)
 // Phase 2
 //   NEXT_PUBLIC_BOOKING_LIVE_QUOTES    Check Availability, contracted-card quotes, Request to Reserve (needs ACCOUNTS)
+// Phase 3b
+//   NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS  Pay deposit / balance on a booking (needs QUOTES; the gateway itself is server env: PAYMENTS_PROVIDER, STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET)
 
-export type FlagName = "accounts" | "save" | "share" | "quotes";
+export type FlagName = "accounts" | "save" | "share" | "quotes" | "payments";
 
 type Env = Record<string, string | undefined>;
 
@@ -22,6 +24,7 @@ export function readFlags(env: Env) {
     save: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_SAVE"),
     share: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_SHARE"),
     quotes: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_QUOTES"),
+    payments: accounts && on("NEXT_PUBLIC_BOOKING_LIVE_QUOTES") && on("NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS"),
   } satisfies Record<FlagName, boolean>;
 }
 
@@ -31,6 +34,7 @@ export const FLAGS = readFlags({
   NEXT_PUBLIC_BOOKING_LIVE_SAVE: process.env.NEXT_PUBLIC_BOOKING_LIVE_SAVE,
   NEXT_PUBLIC_BOOKING_LIVE_SHARE: process.env.NEXT_PUBLIC_BOOKING_LIVE_SHARE,
   NEXT_PUBLIC_BOOKING_LIVE_QUOTES: process.env.NEXT_PUBLIC_BOOKING_LIVE_QUOTES,
+  NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS: process.env.NEXT_PUBLIC_BOOKING_LIVE_PAYMENTS,
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });

@@ -117,7 +117,7 @@ test("health: built only from records; missing rates and placeholders are flagge
   assert.equal(by.rates.state, "missing");
   assert.equal(by.rates.label, "2027 rates");
   assert.equal(by.rooms.state, "attention");
-  assert.equal(by.contacts.detail, "Placeholder contact still to replace");
+  assert.match(by.contacts.detail, /^\d+ contacts? on file, waiting for your confirmation$/);
   assert.match(by.property_info.detail, /public sources/);
   assert.ok(draft.score < ok.score);
   const stale = entityHealth({ ...base, rateCards: [{ label: "2026", effectiveTo: "2027-03-31", status: "published" }] });

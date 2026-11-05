@@ -5,16 +5,24 @@ import type { Tone } from "@/lib/platform/labels";
 // panels, hairline rules, Cormorant headings, Manrope text, square corners, no shadows.
 // Status tones use house chrome (forest, sea, rust), never a volume colour (CLAUDE.md).
 
+// A status is a quiet label, never a box: a boxed tag reads as a button (James, 4 Nov 2026).
 const TONE: Record<Tone, string> = {
-  neutral: "border-ink/25 text-ink/75 bg-paper",
-  progress: "border-sea-deep/35 text-sea-deep bg-coast-mist",
-  good: "border-forest/35 text-forest bg-mist",
-  attention: "border-rust/40 text-rust bg-rust-wash",
-  closed: "border-ink/15 text-ink/55 bg-paper-card",
+  neutral: "text-ink/75",
+  progress: "text-sea-deep",
+  good: "text-forest",
+  attention: "text-rust",
+  closed: "text-ink/55",
+};
+const DOT: Record<Tone, string> = {
+  neutral: "bg-ink/45",
+  progress: "bg-sea-deep",
+  good: "bg-forest",
+  attention: "bg-rust",
+  closed: "bg-ink/30",
 };
 
 export function StatusPill({ label, tone = "neutral" }: { label: string; tone?: Tone }) {
-  return <span className={`inline-flex items-center gap-1.5 border px-2 py-[3px] text-[10.5px] tracking-[0.14em] uppercase font-medium whitespace-nowrap ${TONE[tone]}`}>{label}</span>;
+  return <span className={`inline-flex items-center gap-1.5 py-[3px] text-[10.5px] tracking-[0.14em] uppercase font-medium whitespace-nowrap ${TONE[tone]}`}><span aria-hidden="true" className={`h-1.5 w-1.5 rounded-full ${DOT[tone]}`} />{label}</span>;
 }
 
 export function PageHead({ eyebrow, title, lead, actions }: { eyebrow: string; title: string; lead?: React.ReactNode; actions?: React.ReactNode }) {

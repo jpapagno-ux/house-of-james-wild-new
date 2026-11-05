@@ -236,7 +236,7 @@ export function InviteForm({ entities }: { entities: { id: string; name: string 
       <Msg err={err} done={done} />
       {link && (
         <div className="border ledger-border bg-paper p-3 text-[13.5px]">
-          <p>{link.emailed ? "We've emailed the invitation. You can also pass on this link:" : "Email isn't sent from previews or to .test addresses. Pass on this link yourself; it works once and expires in 14 days:"}</p>
+          <p>{link.emailed ? "We've emailed the invitation. You can also pass on this link:" : "Invitation emails aren't switched on yet. Copy this welcome link and send it yourself; it works once and expires in 14 days:"}</p>
           <p className="mt-2 font-mono text-[12px] break-all select-all">{link.url}</p>
         </div>
       )}

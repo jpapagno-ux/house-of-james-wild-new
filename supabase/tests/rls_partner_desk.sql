@@ -809,5 +809,21 @@ begin
   r := r || jsonb_build_object('t', 'Q06 partners are not affected: password only still sees their own', 'pass', n = 1);
   perform set_config('role', 'postgres', true);
 
+  -- ===== (R) Airtable copy (D-07): the snapshot is for the server job only, and leaves contracts out
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  begin perform public.partner_mirror_snapshot(); ok := false; exception when insufficient_privilege then ok := true; end;
+  r := r || jsonb_build_object('t', 'R01 not even the house can call the mirror snapshot from the browser', 'pass', ok);
+  perform set_config('role', 'anon', true);
+  begin perform public.partner_mirror_snapshot(); ok := false; exception when insufficient_privilege then ok := true; end;
+  r := r || jsonb_build_object('t', 'R02 nor anyone signed out', 'pass', ok);
+  perform set_config('role', 'service_role', true);
+  r := r || jsonb_build_object('t', 'R03 the job sees partners but not the house, and no QA accounts', 'pass',
+    (select bool_and(e->>'type' <> 'internal') from jsonb_array_elements(public.partner_mirror_snapshot()->'organizations') e)
+    and not exists (select 1 from jsonb_array_elements(public.partner_mirror_snapshot()->'contacts') e where e->>'email' like '%.test'));
+  r := r || jsonb_build_object('t', 'R04 rate sheets only: no contracts in the copy', 'pass',
+    not exists (select 1 from jsonb_array_elements(public.partner_mirror_snapshot()->'rate_sheets') e where e->>'kind' <> 'commercial'));
+  perform set_config('role', 'postgres', true);
+
   raise exception 'PARTNER_DESK_RLS %', r;
 end $$;

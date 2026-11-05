@@ -106,8 +106,8 @@ const CARDS: Advisor[] = [
     ledgerId: "ADV-2026-000001",
     name: "Kristina Larson",
     firstName: "Kristina",
-    role: "Travel Advisor",
-    roleApproved: false,
+    role: "Travel Advisor · Fiji Specialist",
+    roleApproved: true, // James, 5 Nov 2026: "Kristina Larson as a Fiji specialist"
     portrait: { url: `${CDN}/67d1f7cf2472ef3857bb48dd_team-kristina.avif`, alt: "Portrait of Kristina Larson, travel advisor at James Wild & Co" },
     intro: "Drawn to local cultures, outdoor adventures and the people you meet along the way.",
     bio: [
@@ -115,7 +115,7 @@ const CARDS: Advisor[] = [
       "Away from travel she runs a high-end catering business in Palm Beach, which means she notices the things that make a stay feel looked after: the table, the timing, the small touches nobody asked for.",
       "She also works with the house's content team, so she knows the Ledger's stays from the inside.",
     ],
-    specialties: [],
+    specialties: ["Fiji", "Africa", "Family journeys", "Island escapes"],
     traveled: [],
     profileHref: "/advisors/kristina-larson",
   },

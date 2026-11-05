@@ -1,6 +1,6 @@
 {
   "exportedOn": "2026-11-01",
-  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created)",
+  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created); EF-015 Laucala, EF-017 Six Senses Fiji six bedroom retreat, EF-018 Turtle Island added 5 Nov 2026 (Fiji build; Airtable rows created; EF-016 Kokomo and EF-019 Dolphin Island wait in Airtable as drafts for their stays). James notes drafted in Airtable for his approval, not published.",
   "records": [
     {
       "id": "EF-001",
@@ -482,6 +482,184 @@
       "publicationStatus": "published",
       "reviewStatus": "approved",
       "reviewDate": "2026-11-04"
+    },
+    {
+      "id": "EF-015",
+      "stayId": "STY-2026-000637",
+      "staySlug": "laucala",
+      "stayName": "Laucala",
+      "collectionNumber": 15,
+      "heroLine": "One island, twenty-four villas, and very little left to decide.",
+      "whyItMadeTheCut": [
+        "Place. A whole private island in Cakaudrove, Vanua Levu: reef, rainforest and an open horizon, with only twenty-four villas on it.",
+        "Privacy. Every villa has its own pool and its own horizon, opening to the ocean or to the jungle.",
+        "Ease. Dining, refreshments and most on-island experiences are included, a personal host manages the details, and you arrive on Air Laucala or your own jet."
+      ],
+      "signals": [
+        {
+          "key": "place",
+          "line": "A private island in Cakaudrove, Vanua Levu, with reef, rainforest, golf, horses and trails."
+        },
+        {
+          "key": "privacy",
+          "line": "Twenty-four villas, each with its own pool, opening to the ocean or the jungle."
+        },
+        {
+          "key": "access",
+          "line": "Arrive on Air Laucala or by private jet."
+        },
+        {
+          "key": "humanity",
+          "line": "A personal host for every stay."
+        },
+        {
+          "key": "rarity",
+          "line": "One island given over to twenty-four villas, with most of the island included."
+        }
+      ],
+      "pathwaysOverride": [
+        "between-tides",
+        "a-place-of-our-own",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Five nights. One to arrive, three for the reef, the horses and the hills, and one with nothing planned at all.",
+      "whoItSuits": [
+        "Couples marking a milestone",
+        "Families gathering across several villas",
+        "Golfers and riders",
+        "Travellers who want everything handled"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want a town or nightlife nearby",
+        "Travellers who like to move between islands every few days"
+      ],
+      "continueRefs": [
+        "stay:turtle-island",
+        "stay:namale-resort-and-spa",
+        "pathway:between-tides"
+      ],
+      "paletteKey": "laucala",
+      "designationStatus": "designated",
+      "selectionDate": "2026-11-05",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-05",
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "EF-017",
+      "stayId": "STY-2026-000265",
+      "staySlug": "six-senses-fiji",
+      "stayName": "Six-Bedroom Beachfront Pool Retreat, Six Senses Fiji",
+      "collectionNumber": 17,
+      "heroLine": "Six bedrooms on the beach at Malolo, for twelve.",
+      "whyItMadeTheCut": [
+        "Place. On the beach at Malolo, the largest of the Mamanuca Islands, 25 km from Nadi.",
+        "Scale. 760 square metres, six bedrooms and a private pool for up to twelve guests: a whole house for one family.",
+        "Care. A nanny eight hours a day, with Six Senses Spa, RaRa and Tovolea restaurants and surfing with Six Senses beyond the gate."
+      ],
+      "signals": [
+        {
+          "key": "place",
+          "line": "Beachfront on Malolo, the largest of the Mamanucas."
+        },
+        {
+          "key": "privacy",
+          "line": "Six bedrooms and a private pool for up to twelve."
+        },
+        {
+          "key": "access",
+          "line": "About 10 minutes by helicopter or 45 minutes by shared speedboat from Nadi."
+        },
+        {
+          "key": "humanity",
+          "line": "A nanny eight hours a day comes with the retreat."
+        }
+      ],
+      "pathwaysOverride": [
+        "a-place-of-our-own",
+        "between-tides",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Six nights. Long enough for the children to settle into the nanny's days and for the adults to find the spa and the surf.",
+      "whoItSuits": [
+        "Families travelling across generations",
+        "Groups of up to twelve",
+        "Milestone celebrations",
+        "Surfers travelling with family"
+      ],
+      "whoItMayNotSuit": [
+        "Couples travelling alone (a pool villa suits better)",
+        "Travellers who want a remote outer island"
+      ],
+      "continueRefs": [
+        "stay:laucala",
+        "stay:turtle-island",
+        "pathway:a-place-of-our-own"
+      ],
+      "paletteKey": "vahine",
+      "designationStatus": "designated",
+      "selectionDate": "2026-11-05",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-05",
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "EF-018",
+      "stayId": "STY-2026-000312",
+      "staySlug": "turtle-island",
+      "stayName": "Turtle Island",
+      "collectionNumber": 18,
+      "heroLine": "Fourteen villas on the Blue Lagoon, and a five night minimum.",
+      "whyItMadeTheCut": [
+        "Place. A family owned private island on the Blue Lagoon in the Yasawa group, thirty minutes from Nadi by seaplane.",
+        "Privacy. Fourteen villas in three styles, a five night minimum, and the whole island available by the week.",
+        "Humanity. All meals, drinks and most activities included, beach picnics and pontoon dinners, and kava, meke and lovo evenings with the island's Fijian team."
+      ],
+      "signals": [
+        {
+          "key": "place",
+          "line": "A family owned private island on the Blue Lagoon, Yasawa group."
+        },
+        {
+          "key": "privacy",
+          "line": "Fourteen villas; the whole island can be rented by the week."
+        },
+        {
+          "key": "access",
+          "line": "About 30 minutes by seaplane from Nadi."
+        },
+        {
+          "key": "humanity",
+          "line": "Kava, meke and lovo evenings; Family Time weeks with a nanny and children's programme."
+        }
+      ],
+      "pathwaysOverride": [
+        "between-tides",
+        "a-place-of-our-own",
+        "rooted-in-place"
+      ],
+      "worthAnotherNight": "Seven nights. The minimum is five, and the island is sold by the week for a reason.",
+      "whoItSuits": [
+        "Couples and honeymooners",
+        "Families in the set Family Time weeks",
+        "Groups taking the whole island",
+        "Travellers who want everything included"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers with fewer than five nights",
+        "Families with children outside the Family Time weeks"
+      ],
+      "continueRefs": [
+        "stay:laucala",
+        "stay:likuliku-lagoon-resort",
+        "pathway:between-tides"
+      ],
+      "paletteKey": "vahine",
+      "designationStatus": "designated",
+      "selectionDate": "2026-11-05",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-05",
+      "reviewStatus": "approved"
     }
   ]
 }

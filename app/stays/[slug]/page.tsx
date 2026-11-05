@@ -95,6 +95,8 @@ import PanFrame from "@/components/exceptional-few/PanFrame";
 import WhoItSuits from "@/components/exceptional-few/WhoItSuits";
 import WorthAnotherNight from "@/components/exceptional-few/WorthAnotherNight";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
+import AmbientFilm from "@/components/stay/AmbientFilm";
+import { STAY_FILMS } from "@/lib/content/stay-films";
 import Signature from "@/components/record/Signature";
 import ComingBanner from "@/components/coming/ComingBanner";
 import { assembleStayPage } from "@/lib/stay-page/assemble";
@@ -284,6 +286,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               {status && <p className="mt-6 ledger-eyebrow">{status}</p>}
             </section>
           )}
+          {STAY_FILMS[s.slug] && <AmbientFilm film={STAY_FILMS[s.slug]} eyebrow={ef ? `The Exceptional Few\u2122 \u00b7 ${collectionNo(ef.collectionNumber)}` : s.name} line={tagline ?? undefined} />}
           {ef && ef.whyItMadeTheCut.map((t, i) => { const a = efCuts[i]; return a ? (
             <DriftFrame key={i} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]" className={i === 0 ? "" : "mt-1"}>
               {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{ `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`}</p>}

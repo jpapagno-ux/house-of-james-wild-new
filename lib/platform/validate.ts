@@ -29,7 +29,13 @@ const opt = (v: unknown, max: number, multiline = false) => text(v, max, multili
 /** Same-site Partner Desk / house desk paths only (no open redirects). */
 export function safePartnerNext(next: string | null | undefined): string {
   if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return "/partner";
-  return /^\/(partner|desk)(\/[A-Za-z0-9_\-/]*)?(\?[\w=&%-]*)?$/.test(next) ? next : "/partner";
+  return /^\/(partner|desk|advisor)(\/[A-Za-z0-9_\-/]*)?(\?[\w=&%-]*)?$/.test(next) ? next : "/partner";
+}
+
+/** Where an advisor goes after signing in: an /advisor page, nothing else. */
+export function safeAdvisorNext(next: string | null | undefined): string {
+  if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return "/advisor";
+  return /^\/advisor(\/[A-Za-z0-9_\-/]*)?(\?[\w=&%-]*)?$/.test(next) ? next : "/advisor";
 }
 
 // ===== Contacts

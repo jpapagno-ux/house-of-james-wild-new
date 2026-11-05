@@ -15,3 +15,13 @@ export const PARTNER_DESK = readPartnerDeskFlag({
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
 });
+
+// Advisor Desk (/advisor). OFF unless NEXT_PUBLIC_ADVISOR_DESK is exactly "on" and Supabase is configured.
+export function readAdvisorDeskFlag(env: Env): boolean {
+  return env.NEXT_PUBLIC_ADVISOR_DESK === "on" && Boolean(env.NEXT_PUBLIC_SUPABASE_URL && env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+}
+export const ADVISOR_DESK = readAdvisorDeskFlag({
+  NEXT_PUBLIC_ADVISOR_DESK: process.env.NEXT_PUBLIC_ADVISOR_DESK,
+  NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+  NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+});
